@@ -35,7 +35,7 @@
 	.long	257                             # 0x101
 func000000000000001e:                   # @func000000000000001e
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero,zero,zero
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
 	retq
@@ -56,7 +56,7 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000a:                   # @func000000000000000a
 	vpsrld	$9, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$7, %ymm0, %ymm0
 	retq
@@ -97,7 +97,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	8388608                         # 0x800000
 func0000000000000014:                   # @func0000000000000014
 	vpshufb	.LCPI3_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero,zero,zero
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
 	retq

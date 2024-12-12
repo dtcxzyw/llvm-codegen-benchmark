@@ -36,8 +36,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
-; linux/optimized/maccess.ll
+; 13 occurrences:
 ; linux/optimized/pt.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll

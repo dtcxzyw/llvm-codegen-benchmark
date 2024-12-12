@@ -5,12 +5,17 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax
-	cmpb	$64, %sil
+	cmpb	$16, %sil
 	cmovael	%esi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	cmpb	$2, %sil
+	cmovbl	%esi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
-	cmpb	$2, %sil
+	cmpb	$-127, %sil
 	cmovbl	%esi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -20,6 +25,6 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%edi, %eax
-	cmpb	$73, %sil
+	cmpb	$97, %sil
 	cmovll	%esi, %eax
 	retq

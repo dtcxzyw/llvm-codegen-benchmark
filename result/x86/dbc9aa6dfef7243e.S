@@ -1,13 +1,3 @@
-func0000000000000000:                   # @func0000000000000000
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	shll	$5, %eax
-	andl	$187, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
-	orq	$4, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	testb	$1, %dl
 	movl	$1744830464, %eax               # imm = 0x68000000

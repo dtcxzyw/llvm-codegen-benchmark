@@ -22,3 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 3
 	subw	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	slli	a1, a1, 1
+	subw	a0, a0, a1
+	ret

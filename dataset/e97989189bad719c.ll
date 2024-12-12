@@ -24,7 +24,7 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
@@ -37,6 +37,7 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/t_x509.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
@@ -45,7 +46,7 @@ entry:
 define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4640
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nsw i32 %1, -208
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -106,10 +107,12 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/giaHash.c.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/gregorian.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
@@ -182,7 +185,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 5
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = mul nuw nsw i32 %0, 5
   %6 = add i32 %5, %4
   ret i32 %6
@@ -194,7 +197,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = mul nsw i32 %0, 10
   %6 = add nsw i32 %5, %4
   ret i32 %6
@@ -257,18 +260,6 @@ entry:
   %4 = add nsw i32 %3, %0
   %5 = mul i32 %1, 365
   %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; icu/optimized/gregoimp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 719162
-  %4 = add i32 %3, %1
-  %5 = mul i32 %0, -36524
-  %6 = add i32 %5, %4
   ret i32 %6
 }
 

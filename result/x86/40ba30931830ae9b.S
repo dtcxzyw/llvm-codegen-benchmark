@@ -1,4 +1,4 @@
-func000000000000025a:                   # @func000000000000025a
+func00000000000004aa:                   # @func00000000000004aa
 	movl	%edx, %eax
 	addl	$32766, %eax                    # imm = 0x7FFE
 	cltq
@@ -11,6 +11,6 @@ func000000000000025a:                   # @func000000000000025a
 	addl	%ecx, %eax
 	leal	(%rax,%rax,4), %eax
 	addl	%esi, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq

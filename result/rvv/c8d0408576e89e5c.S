@@ -8,7 +8,7 @@ func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vsll.vi	v10, v10, 2
 	add.uw	a0, a1, a0
 	vand.vx	v10, v10, a0
@@ -21,7 +21,7 @@ func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	slli	a0, a1, 32
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vsll.vi	v10, v10, 8
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
@@ -33,5 +33,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vi	v10, v10, 5
 	lui	a0, 16
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

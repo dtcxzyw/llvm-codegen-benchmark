@@ -1,9 +1,13 @@
 
-; 9 occurrences:
+; 13 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
 ; qemu/optimized/accel_tcg_tb-maint.c.ll
@@ -14,7 +18,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, -1028477379
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -29,7 +33,7 @@ define i32 @func0000000000000055(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = mul nsw i32 %3, 400
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -79,7 +83,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -91,7 +95,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl i32 %3, 1
   %5 = sub i32 %1, %4
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -115,7 +119,7 @@ define i32 @func00000000000000bf(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nuw nsw i32 %3, 3600
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -128,7 +132,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul nsw i32 %3, -10000
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -140,7 +144,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, -10000
   %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 83 occurrences:
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -8,17 +8,18 @@
 ; freetype/optimized/sdf.c.ll
 ; git/optimized/path.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/Scan.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/symtab.cpp.ll
 ; icu/optimized/erarules.ll
 ; icu/optimized/ustdio.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/eeepc-laptop.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bar.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; node/optimized/libnode.inspector_js_api.ll
 ; node/optimized/libnode.node_process_methods.ll
@@ -91,7 +92,7 @@ entry:
   ret i1 %4
 }
 
-; 53 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ioWriteBlif.c.ll
 ; abc/optimized/ioWriteEdgelist.c.ll
@@ -105,13 +106,19 @@ entry:
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
 ; linux/optimized/drm_dp_mst_topology.ll
+; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
+; llvm/optimized/Darwin.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/OSTargets.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; minetest/optimized/pipeline.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/memnode.ll
@@ -154,23 +161,11 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
-; casadi/optimized/dm_instantiator.cpp.ll
-; casadi/optimized/im_instantiator.cpp.ll
-; casadi/optimized/integrator.cpp.ll
-; casadi/optimized/mx_node.cpp.ll
-; casadi/optimized/sx_instantiator.cpp.ll
+; 2 occurrences:
 ; clamav/optimized/pdf.c.ll
-; hermes/optimized/HadesGC.cpp.ll
-; icu/optimized/collationcompare.ll
-; libjpeg-turbo/optimized/jdapistd.c.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/Targets.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
-; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
   %3 = icmp eq i64 %2, 0
@@ -178,7 +173,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -190,7 +185,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
-; wireshark/optimized/packet-ltp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
@@ -215,6 +209,29 @@ define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 65536
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 13 occurrences:
+; casadi/optimized/dm_instantiator.cpp.ll
+; casadi/optimized/im_instantiator.cpp.ll
+; casadi/optimized/integrator.cpp.ll
+; casadi/optimized/mx_node.cpp.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hermes/optimized/hbc-attribute.cpp.ll
+; icu/optimized/collationcompare.ll
+; libjpeg-turbo/optimized/jdapistd.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/Targets.cpp.ll
+; qemu/optimized/tcg.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294934528
+  %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
@@ -257,10 +274,21 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, -1
+  %4 = select i1 %3, i1 %0, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ltp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967292
+  %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }
@@ -272,7 +300,7 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0

@@ -30,9 +30,9 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000143(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 32768
+  %3 = icmp samesign ult i32 %2, 32768
   %4 = zext i1 %3 to i32
   %5 = or i32 %0, %1
   %6 = add nuw nsw i32 %5, %4

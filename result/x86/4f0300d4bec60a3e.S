@@ -1,9 +1,9 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	%esi
 	cmpl	%edi, %esi
 	setge	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarl	$29, %esi
 	cmpl	%edi, %esi
 	setl	%al

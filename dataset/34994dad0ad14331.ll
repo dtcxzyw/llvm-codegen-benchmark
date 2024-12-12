@@ -10,7 +10,7 @@
 define i32 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = sext i1 %4 to i32
   ret i32 %5
 }

@@ -32,7 +32,7 @@
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 4294967295
@@ -50,6 +50,20 @@ entry:
   %3 = and i64 %2, 4278190080
   %4 = icmp sgt i64 %0, 254
   %5 = select i1 %4, i64 0, i64 %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; meshlab/optimized/filter_create.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 120
+  %3 = and i64 %2, 4294967288
+  %4 = icmp eq i64 %0, 2
+  %5 = select i1 %4, i64 56, i64 %3
   ret i64 %5
 }
 
@@ -81,23 +95,11 @@ entry:
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %0, 4294967294
-  %5 = select i1 %4, i64 1, i64 %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; meshlab/optimized/filter_create.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw i64 %1, 2
-  %3 = and i64 %2, 4294967295
-  %4 = icmp eq i64 %0, 6
   %5 = select i1 %4, i64 1, i64 %3
   ret i64 %5
 }
@@ -112,7 +114,7 @@ entry:
 ; openblas/optimized/dsymm_thread_RL.c.ll
 ; openblas/optimized/dsymm_thread_RU.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 15
   %3 = and i64 %2, 9223372036854775792

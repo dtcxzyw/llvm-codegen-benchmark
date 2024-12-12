@@ -6,7 +6,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000087(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = icmp eq i32 %1, 0
@@ -18,12 +18,12 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -49,12 +49,12 @@ entry:
 ; fmt/optimized/format-impl-test.cc.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -127
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 -126, i32 %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -81,19 +81,19 @@ entry:
   %3 = add i32 %2, -16
   %4 = icmp ult i32 %1, 16
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 6
   %4 = icmp eq i32 %1, 2
   %5 = select i1 %4, i32 7, i32 %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgesvj.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000b1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %.not = icmp eq i32 %1, 0
@@ -124,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgesvj.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001b1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %.not = icmp eq i32 %1, 0

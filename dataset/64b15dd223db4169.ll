@@ -19,7 +19,7 @@ entry:
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp eq i16 %0, 0
@@ -32,7 +32,7 @@ entry:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i16 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i16 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp ult i16 %0, 1000

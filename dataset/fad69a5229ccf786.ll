@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -20,6 +20,7 @@
 ; meshlab/optimized/rimls.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll
+; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll

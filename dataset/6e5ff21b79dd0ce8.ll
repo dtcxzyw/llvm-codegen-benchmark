@@ -7,13 +7,12 @@ define i8 @func0000000000000005(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
   %3 = and i8 %2, 1
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; icu/optimized/ucnvmbcs.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/readahead.ll
@@ -28,11 +27,11 @@ define i8 @func0000000000000000(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 32
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
-; 66 occurrences:
+; 71 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/textio.ll
 ; curl/optimized/libcurl_la-mqtt.ll
@@ -81,6 +80,10 @@ entry:
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/game.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -99,12 +102,13 @@ entry:
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; yalantinglibs/optimized/binary_json_conformance_suite.cc.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 63
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -116,7 +120,7 @@ define i8 @func0000000000000007(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i8
   %3 = and i8 %2, 8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -128,7 +132,7 @@ define i8 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i8
   %3 = and i8 %2, -128
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

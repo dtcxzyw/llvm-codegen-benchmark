@@ -2,7 +2,7 @@
 	.long	128                             # 0x80
 .LCPI0_1:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}
@@ -11,7 +11,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	67108864                        # 0x4000000
 .LCPI1_1:
 	.long	1                               # 0x1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}
@@ -22,7 +22,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	5                               # 0x5
 .LCPI2_2:
 	.long	1                               # 0x1
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -35,7 +35,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	5                               # 0x5
 .LCPI3_2:
 	.long	1                               # 0x1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	.LCPI3_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI3_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -44,7 +44,7 @@ func0000000000000024:                   # @func0000000000000024
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}

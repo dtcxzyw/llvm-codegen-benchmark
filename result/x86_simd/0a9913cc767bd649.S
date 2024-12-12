@@ -18,7 +18,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovb2m	%xmm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpaddb	%xmm3, %xmm2, %xmm2
+	vpsubb	%xmm3, %xmm2, %xmm2
 	vpcmpgtb	%xmm3, %xmm2, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

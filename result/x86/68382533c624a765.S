@@ -19,3 +19,7 @@ func000000000000002b:                   # @func000000000000002b
 	leal	2(%rdi,%rdi), %eax
 	shlq	$2, %rax
 	retq
+func000000000000007f:                   # @func000000000000007f
+	leal	2(%rdi,%rdi), %eax
+	shlq	$3, %rax
+	retq

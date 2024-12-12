@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/hostid.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; linux/optimized/cdrom.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/sr.ll
 ; luajit/optimized/buildvm_lib.ll
 ; ruby/optimized/io.ll

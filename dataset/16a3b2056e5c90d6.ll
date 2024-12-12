@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 135 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -126,7 +126,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -136,7 +135,6 @@
 ; icu/optimized/bytestriebuilder.ll
 ; icu/optimized/ucharstriebuilder.ll
 ; nori/optimized/nanovg.c.ll
-; redis/optimized/module.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 26 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/OptimizeGraph.cpp.ll
@@ -13,8 +13,6 @@
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openjdk/optimized/g1FromCardCache.ll
 ; openusd/optimized/irregularPatchBuilder.cpp.ll

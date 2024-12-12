@@ -6,7 +6,7 @@ define i16 @func00000000000000f0(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 6
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

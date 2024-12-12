@@ -1,8 +1,10 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/khm16.ll
 ; spike/optimized/khm8.ll
@@ -18,13 +20,14 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/resize.cpp.ll
 ; spike/optimized/khmx16.ll
 ; Function Attrs: nounwind

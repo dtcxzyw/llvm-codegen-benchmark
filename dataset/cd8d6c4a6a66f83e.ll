@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = add nsw i32 %0, 1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/lossless.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = add i32 %0, 1

@@ -18,11 +18,11 @@
 define i1 @func000000000000000b(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
-; 165 occurrences:
+; 168 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -39,6 +39,8 @@ entry:
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within.ll
 ; bullet3/optimized/poly34.ll
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -188,16 +190,18 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
 ; yosys/optimized/Solver.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/lpkCut.c.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
@@ -246,11 +250,11 @@ entry:
 define i1 @func0000000000000005(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
-; 146 occurrences:
+; 149 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -261,6 +265,9 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -401,11 +408,13 @@ entry:
 define i1 @func0000000000000002(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/compare.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
@@ -422,11 +431,12 @@ entry:
 define i1 @func000000000000000a(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/within.ll
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/eneconv.cpp.ll
@@ -463,7 +473,7 @@ entry:
 define i1 @func0000000000000003(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
@@ -473,13 +483,15 @@ entry:
 define i1 @func0000000000000001(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp uno double %2, %0
+  %3 = fcmp uno double %0, %2
   ret i1 %3
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within.ll
 ; darktable/optimized/navigation.c.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -525,11 +537,13 @@ entry:
 define i1 @func0000000000000008(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/within.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
@@ -549,11 +563,12 @@ entry:
 define i1 @func000000000000000c(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; gromacs/optimized/enxio.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
@@ -565,7 +580,7 @@ entry:
 define i1 @func0000000000000007(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -583,7 +598,7 @@ entry:
 define i1 @func000000000000000d(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 

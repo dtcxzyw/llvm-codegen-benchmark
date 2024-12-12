@@ -1,9 +1,9 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	decl	%esi
 	shrl	%esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addl	$63, %esi
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax
@@ -13,7 +13,7 @@ func0000000000000034:                   # @func0000000000000034
 	shrl	$3, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	addl	$-5, %esi
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax
@@ -37,22 +37,22 @@ func0000000000000024:                   # @func0000000000000024
 	shrl	$3, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	incl	%esi
 	shrl	$6, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	incl	%esi
 	shrl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	addl	$160, %esi
 	shrl	%esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000027:                   # @func0000000000000027
 	leal	31(%rsi), %eax
 	andl	$-32, %eax
 	addq	%rdi, %rax

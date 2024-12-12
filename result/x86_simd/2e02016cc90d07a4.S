@@ -45,7 +45,7 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$14, %ymm1, %ymm1
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI7_0:
 	.long	65536                           # 0x10000

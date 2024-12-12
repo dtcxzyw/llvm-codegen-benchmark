@@ -11,7 +11,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -204
   %3 = udiv i32 %2, 40
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -25,7 +25,7 @@ define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 128
   %3 = udiv i32 %2, 257
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -46,17 +46,16 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = udiv i32 %2, 153
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
-; icu/optimized/gregoimp.ll
 ; postgres/optimized/localtime.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
@@ -64,7 +63,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
   %3 = udiv i32 %2, 5
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -76,11 +75,17 @@ define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 8
   %3 = udiv i32 %2, 9
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -89,7 +94,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = udiv i32 %2, 5
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -100,11 +105,13 @@ define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 11
   %3 = udiv i32 %2, 12
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/ErfDecoder.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; linux/optimized/vlv_dsi.ll
@@ -116,7 +123,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = udiv i32 %2, 1530
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -131,7 +138,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 11
   %3 = udiv i32 %2, 12
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -155,7 +162,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 47999
   %3 = udiv i32 %2, 48000
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -179,7 +186,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -128
   %3 = udiv i32 %2, 10
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

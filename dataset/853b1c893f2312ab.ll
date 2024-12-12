@@ -24,7 +24,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = and i32 %1, 1073741808
   %3 = add nuw nsw i32 %2, 104
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = and i32 %1, -16
   %3 = add i32 %2, 69
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -76,7 +76,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -93,7 +93,7 @@ entry:
   %2 = and i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -106,7 +106,7 @@ entry:
   %2 = and i32 %1, 3
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -118,19 +118,7 @@ entry:
   %2 = and i32 %1, -4
   %3 = add nsw i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; tinyrenderer/optimized/tgaimage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

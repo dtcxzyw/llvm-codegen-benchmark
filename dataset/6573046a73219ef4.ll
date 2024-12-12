@@ -21,7 +21,7 @@ entry:
   %3 = sub nsw i32 24, %2
   %4 = trunc i64 %1 to i32
   %5 = shl i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

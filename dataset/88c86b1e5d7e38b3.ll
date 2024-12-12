@@ -1,8 +1,9 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/slub.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -88,11 +89,11 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 5, i64 6
   %4 = select i1 %1, i64 7, i64 %3
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 38 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -115,6 +116,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; php/optimized/html.ll
 ; postgres/optimized/varlena.ll
+; protobuf/optimized/arena.cc.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
@@ -126,28 +128,23 @@ entry:
 ; typst-rs/optimized/481g0nj22rl2z9g.ll
 ; typst-rs/optimized/4khbogid70pr8yfn.ll
 ; velox/optimized/MemoryPool.cpp.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/non_aggregated_type.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1, i64 -1
   %4 = select i1 %1, i64 0, i64 %3
   %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; git/optimized/pack-redundant.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 36, i64 32
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 

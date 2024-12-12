@@ -1,4 +1,4 @@
-func0000000000000281:                   # @func0000000000000281
+func0000000000000d01:                   # @func0000000000000d01
 	leaq	1(%rdi), %rax
 	cmpq	%rsi, %rax
 	seta	%cl
@@ -6,7 +6,7 @@ func0000000000000281:                   # @func0000000000000281
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000c21:                   # @func0000000000000c21
 	leaq	16(%rdi), %rax
 	cmpq	%rsi, %rax
 	sete	%cl
@@ -14,7 +14,7 @@ func0000000000000211:                   # @func0000000000000211
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000291:                   # @func0000000000000291
+func0000000000000d21:                   # @func0000000000000d21
 	leaq	2(%rdi), %rax
 	cmpq	%rsi, %rax
 	setae	%cl
@@ -22,7 +22,7 @@ func0000000000000291:                   # @func0000000000000291
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	leaq	1(%rdi), %rax
 	cmpq	%rsi, %rax
 	seta	%cl

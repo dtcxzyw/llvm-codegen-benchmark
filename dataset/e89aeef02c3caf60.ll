@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; libquic/optimized/string_util.cc.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000034(i16 %0) #0 {
+define i16 @func0000000000000064(i16 %0) #0 {
 entry:
   %1 = add i16 %0, -65
   %2 = icmp ult i16 %1, 26
@@ -17,7 +17,7 @@ entry:
 ; libquic/optimized/string_util.cc.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0) #0 {
+define i16 @func0000000000000024(i16 %0) #0 {
 entry:
   %1 = add i16 %0, -97
   %2 = icmp ult i16 %1, 26

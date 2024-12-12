@@ -13,17 +13,20 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; linux/optimized/ring_buffer.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; opencv/optimized/resize.cpp.ll
+; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
+; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
-  %4 = add i64 %3, -1
+  %4 = add i64 %3, 1
   %5 = lshr i64 %4, 1
   ret i64 %5
 }

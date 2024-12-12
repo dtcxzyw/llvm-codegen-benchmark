@@ -2,6 +2,7 @@
 ; 127 occurrences:
 ; abc/optimized/ioReadBlifAig.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
+; boost/optimized/syslog_backend.ll
 ; clamav/optimized/client.c.ll
 ; clamav/optimized/cmddata.cpp.ll
 ; clamav/optimized/mbox.c.ll
@@ -52,7 +53,6 @@
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/Platform.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCExpr.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -151,7 +151,8 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/openssl.c.ll
 ; curl/optimized/libcurl_la-openssl.ll
 ; gromacs/optimized/pbc.cpp.ll
@@ -169,23 +170,22 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
-; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = icmp ugt i32 %1, 1
+  %2 = icmp samesign ugt i32 %1, 1
   %3 = select i1 %2, i32 -2, i32 1
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
@@ -194,8 +194,20 @@ entry:
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 0, i32 63
+  %2 = icmp slt i32 %1, 1
+  %3 = select i1 %2, i32 -1, i32 1
+  ret i32 %3
+}
+
+; 2 occurrences:
+; llvm/optimized/MicrosoftDemangle.cpp.ll
+; slurm/optimized/gres.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0) #0 {
+entry:
+  %1 = freeze i32 %0
+  %2 = icmp ugt i32 %1, -17
+  %3 = select i1 %2, i32 1, i32 4
   ret i32 %3
 }
 

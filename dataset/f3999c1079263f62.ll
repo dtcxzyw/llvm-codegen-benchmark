@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 63 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecPa.c.ll
 ; abc/optimized/acecTree.c.ll
@@ -15,12 +15,12 @@
 ; icu/optimized/rbbi_cache.ll
 ; icu/optimized/ucnvisci.ll
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/xhci-ring.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -31,6 +31,7 @@
 ; minetest/optimized/l_noise.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
+; minetest/optimized/mesh_compare.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/rollback_interface.cpp.ll
@@ -58,6 +59,9 @@
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {

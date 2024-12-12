@@ -1,8 +1,9 @@
 
-%struct.niels_s.2521027 = type { [1 x %struct.gf_s.2521025], [1 x %struct.gf_s.2521025], [1 x %struct.gf_s.2521025] }
-%struct.gf_s.2521025 = type { [8 x i64] }
-%struct.Vec_Int_t_.2764305 = type { i32, i32, ptr }
-%struct.ImGuiKeyRoutingData.3263747 = type { i16, i16, i8, i32, i32 }
+%struct.niels_s.2635511 = type { [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509] }
+%struct.gf_s.2635509 = type { [8 x i64] }
+%struct.Vec_Int_t_.2876566 = type { i32, i32, ptr }
+%struct.ImGuiKeyRoutingData.3454290 = type { i16, i16, i8, i32, i32 }
+%struct.pcpu_block_md.3538033 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 40 occurrences:
 ; abc/optimized/FxchMan.c.ll
@@ -42,25 +43,26 @@
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openusd/optimized/convolve.c.ll
+; openusd/optimized/mvref_common.c.ll
 ; raylib/optimized/raudio.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [1 x %struct.niels_s.2521027], ptr %0, i64 %3, i64 0, i32 1
+  %4 = getelementptr [1 x %struct.niels_s.2635511], ptr %0, i64 %3, i64 0, i32 1
   ret ptr %4
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; abc/optimized/bacPrsTrans.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
+; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/gf128mul.ll
 ; linux/optimized/percpu.ll
@@ -69,6 +71,8 @@ entry:
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
+; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
@@ -108,13 +112,11 @@ define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Vec_Int_t_.2764305, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.Vec_Int_t_.2876566, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
-; 4 occurrences:
-; linux/optimized/percpu.ll
-; postgres/optimized/tzparser.ll
+; 2 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
@@ -123,22 +125,46 @@ entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr float, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -32
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = ashr exact i32 %1, 16
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %struct.ImGuiKeyRoutingData.3454290, ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 2 occurrences:
+; linux/optimized/percpu.ll
+; postgres/optimized/tzparser.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 10
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %3, i32 2
+  ret ptr %4
+}
+
+; 3 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 16
+  %2 = ashr exact i32 %1, 24
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ImGuiKeyRoutingData.3263747, ptr %0, i64 %3, i32 1
-  ret ptr %4
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
 }
 
 ; 2 occurrences:

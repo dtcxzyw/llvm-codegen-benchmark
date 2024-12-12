@@ -2,9 +2,9 @@
 	.long	2                               # 0x2
 .LCPI0_1:
 	.long	1                               # 0x1
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vpandn	%ymm1, %ymm0, %ymm0

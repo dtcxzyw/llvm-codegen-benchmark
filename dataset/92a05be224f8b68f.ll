@@ -1,21 +1,4 @@
 
-; 6 occurrences:
-; linux/optimized/ht.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/Globals.cpp.ll
-; opencv/optimized/rmat.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; wireshark/optimized/packet-ansi_683.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = add nuw nsw i32 %2, 1
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %4, i32 0, i32 %3
-  ret i32 %5
-}
-
 ; 15 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -33,7 +16,7 @@ entry:
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -151
@@ -54,10 +37,25 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/Globals.cpp.ll
+; opencv/optimized/rmat.cpp.ll
+; wireshark/optimized/packet-ansi_683.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 33423360
+  %3 = add nuw nsw i32 %2, 131072
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %4, i32 0, i32 %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-rpc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = add nuw i32 %2, 4
@@ -66,11 +64,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/ustr.ll
+; 1 occurrences:
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741808
   %3 = add nuw nsw i32 %2, 16
@@ -82,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -128
   %3 = add nsw i32 %2, 128

@@ -1,7 +1,8 @@
 func0000000000000035:                   # @func0000000000000035
 	lui	a2, 256
-	lui	a3, 1048064
+	lui	a3, 1047552
 	add	a2, a2, a1
+	srli	a3, a3, 1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	sub	a0, a0, a2

@@ -12,29 +12,11 @@
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 4096
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = or disjoint i32 %4, 8192
-  %6 = icmp eq i64 %0, 0
-  %7 = select i1 %6, i32 %4, i32 %5
-  ret i32 %7
-}
-
-; 6 occurrences:
-; linux/optimized/aspm.ll
-; linux/optimized/hwgpe.ll
-; linux/optimized/lbr.ll
-; linux/optimized/x86_pkg_temp_thermal.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; redis/optimized/module.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %2, 262144
-  %4 = select i1 %1, i32 %2, i32 %3
-  %5 = or i32 %4, 524288
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i32 %4, i32 %5
   ret i32 %7
@@ -50,7 +32,20 @@ entry:
 ; hwloc/optimized/topology-x86.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 16
+  %4 = select i1 %1, i32 %2, i32 %3
+  %5 = or disjoint i32 %4, 8
+  %6 = icmp samesign ult i64 %0, 256
+  %7 = select i1 %6, i32 %4, i32 %5
+  ret i32 %7
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %2, i32 %3
@@ -60,12 +55,29 @@ entry:
   ret i32 %7
 }
 
+; 5 occurrences:
+; linux/optimized/aspm.ll
+; linux/optimized/hwgpe.ll
+; linux/optimized/lbr.ll
+; linux/optimized/x86_pkg_temp_thermal.ll
+; redis/optimized/module.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %2, 41943040
+  %4 = select i1 %1, i32 %2, i32 %3
+  %5 = or i32 %4, 75497472
+  %6 = icmp eq i64 %0, 0
+  %7 = select i1 %6, i32 %4, i32 %5
+  ret i32 %7
+}
+
 ; 3 occurrences:
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/lbr.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 2
   %4 = select i1 %1, i32 %2, i32 %3

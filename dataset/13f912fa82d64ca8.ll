@@ -19,9 +19,8 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/export.c.ll
-; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_adbc_nanoarrow.cpp.ll
 ; gromacs/optimized/coordstate.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll

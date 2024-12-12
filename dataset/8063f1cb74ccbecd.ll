@@ -6,7 +6,7 @@ define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = srem i16 %1, 100
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

@@ -15,7 +15,7 @@ entry:
   ret i64 %3
 }
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -57,7 +57,6 @@ entry:
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; llvm/optimized/MCAssembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; mold/optimized/main.cc.ALPHA.cc.ll
 ; mold/optimized/main.cc.ARM32.cc.ll
@@ -160,7 +159,7 @@ entry:
   ret i64 %3
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references.c.ll
@@ -185,7 +184,6 @@ entry:
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/read.ll
 ; linux/optimized/write.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll

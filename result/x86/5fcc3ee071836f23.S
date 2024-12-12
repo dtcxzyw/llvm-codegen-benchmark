@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andl	$3, %edx
 	xorl	%eax, %eax
 	cmpl	$1, %edx
@@ -8,7 +8,15 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000a26:                   # @func0000000000000a26
+	xorl	%eax, %eax
+	testb	%dl, %dl
+	sets	%al
+	leal	-1(%rsi,%rax,2), %eax
+	cmpl	%edi, %eax
+	setl	%al
+	retq
+func0000000000000086:                   # @func0000000000000086
 	shll	$30, %edx
 	sarl	$31, %edx
 	andl	$-2, %edx
@@ -16,7 +24,7 @@ func0000000000000046:                   # @func0000000000000046
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	andl	$3, %edx
 	xorl	%eax, %eax
 	cmpl	$1, %edx
@@ -25,7 +33,7 @@ func0000000000000048:                   # @func0000000000000048
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andl	$3, %edx
 	cmpl	$1, %edx
 	sbbl	$0, %esi
@@ -33,14 +41,14 @@ func0000000000000056:                   # @func0000000000000056
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shrl	$23, %edx
 	andl	$4, %edx
 	leal	4(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andl	$16711680, %edx                 # imm = 0xFF0000
 	cmpl	$1, %edx
 	sbbl	$0, %esi

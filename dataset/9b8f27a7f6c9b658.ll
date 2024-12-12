@@ -7,18 +7,18 @@
 ; cvc5/optimized/minisat.cpp.ll
 ; yosys/optimized/ezminisat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 2147483647
   %3 = add nuw nsw i32 %0, 2
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; git/optimized/object-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 47, %0
   %3 = icmp ult i32 %2, %1
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   ret i1 %3
 }
 

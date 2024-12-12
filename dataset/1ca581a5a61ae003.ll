@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; abseil-cpp/optimized/ascii_test.cc.ll
+; 7 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
@@ -13,20 +12,17 @@ define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -9
   %3 = icmp ult i32 %2, 5
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
-; 17 occurrences:
-; eastl/optimized/EAString.cpp.ll
+; 14 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
-; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
@@ -36,7 +32,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp ult i32 %2, -2
@@ -52,7 +48,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp slt i32 %2, 2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 

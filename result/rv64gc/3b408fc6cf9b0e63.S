@@ -17,14 +17,14 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a1, a1, 49
 	sltu	a0, a1, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 56
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 52
@@ -32,6 +32,12 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
+	sext.w	a0, a0
+	slli	a1, a1, 48
+	srli	a1, a1, 62
+	sltu	a0, a1, a0
+	ret
+func0000000000000038:                   # @func0000000000000038
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 49

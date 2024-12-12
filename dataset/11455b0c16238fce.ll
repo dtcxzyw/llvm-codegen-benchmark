@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; folly/optimized/Random.cpp.ll
@@ -32,7 +33,7 @@
 ; quantlib/optimized/yoyinflationcoupon.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000168(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add nsw i64 %2, 1
@@ -41,9 +42,11 @@ entry:
   ret i1 %5
 }
 
-; 58 occurrences:
+; 60 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/ext.ll
+; boost/optimized/process.ll
 ; casadi/optimized/integrator.cpp.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFunctionCommand.cxx.ll
@@ -101,7 +104,7 @@ entry:
 ; quantlib/optimized/treeswaptionengine.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, -1
@@ -111,6 +114,7 @@ entry:
 }
 
 ; 20 occurrences:
+; boost/optimized/posix_specific.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
@@ -123,7 +127,6 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; quantlib/optimized/curvestate.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gsr.ll
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mcperformanceengine.ll
@@ -132,7 +135,7 @@ entry:
 ; quantlib/optimized/utilities.ll
 ; velox/optimized/ByteStream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %2, -1

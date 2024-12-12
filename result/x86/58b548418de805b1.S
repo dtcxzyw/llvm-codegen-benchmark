@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$95, %edi
 	addl	$-91, %edi
 	xorl	%ecx, %ecx
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	movl	$349, %eax                      # imm = 0x15D
 	cmovbl	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	andl	$2032, %edi                     # imm = 0x7F0
 	addl	$-176, %edi
 	xorl	%eax, %eax
@@ -15,7 +15,7 @@ func0000000000000018:                   # @func0000000000000018
 	shll	$6, %eax
 	addl	$64, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpb	$2, %dil
 	sete	%al

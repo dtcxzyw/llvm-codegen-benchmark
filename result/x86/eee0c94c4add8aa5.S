@@ -7,3 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	shrxq	%rdx, %rsi, %rax
+	addq	%rdi, %rax
+	retq

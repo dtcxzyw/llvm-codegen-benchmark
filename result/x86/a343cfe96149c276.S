@@ -1,4 +1,4 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	cmpb	$3, %dl
 	setne	%cl
 	testb	%sil, %sil
@@ -6,7 +6,7 @@ func0000000000000182:                   # @func0000000000000182
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpb	$12, %dl
 	sete	%cl
 	cmpb	$16, %sil
@@ -14,7 +14,7 @@ func0000000000000022:                   # @func0000000000000022
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func0000000000000298:                   # @func0000000000000298
 	testb	%dl, %dl
 	setns	%cl
 	testb	%sil, %sil
@@ -22,13 +22,13 @@ func0000000000000158:                   # @func0000000000000158
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	xorb	$3, %sil
 	orb	%dl, %sil
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	cmpb	$2, %dl
 	setb	%cl
 	cmpb	$5, %sil
@@ -36,7 +36,7 @@ func0000000000000088:                   # @func0000000000000088
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	cmpb	$22, %dl
 	setae	%cl
 	cmpb	$22, %sil
@@ -44,7 +44,7 @@ func0000000000000110:                   # @func0000000000000110
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	cmpb	$5, %dl
 	setb	%cl
 	cmpb	$106, %sil
@@ -52,7 +52,7 @@ func0000000000000082:                   # @func0000000000000082
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	cmpb	$32, %dl
 	sete	%cl
 	cmpb	$5, %sil

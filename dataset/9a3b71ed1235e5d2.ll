@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

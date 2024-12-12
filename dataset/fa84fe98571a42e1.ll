@@ -7,19 +7,18 @@
 define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub nsw i64 0, %2
   %5 = and i64 %3, %4
   ret i64 %5
 }
 
-; 135 occurrences:
+; 133 occurrences:
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -109,7 +108,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -153,7 +151,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub i64 0, %2
   %5 = and i64 %3, %4
   ret i64 %5
@@ -186,7 +184,7 @@ entry:
   ret i64 %5
 }
 
-; 178 occurrences:
+; 177 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -320,7 +318,6 @@ entry:
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -369,7 +366,7 @@ entry:
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = sub i64 0, %2
   %5 = and i64 %3, %4
   ret i64 %5
@@ -381,7 +378,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 4096, %1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = sub i64 0, %2
   %5 = and i64 %3, %4
   ret i64 %5

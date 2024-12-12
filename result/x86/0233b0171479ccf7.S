@@ -1,5 +1,5 @@
 func0000000000000002:                   # @func0000000000000002
-	shrl	$12, %esi
+	shrl	$9, %esi
 	movzwl	%si, %ecx
 	movzwl	%di, %eax
 	imull	%ecx, %eax

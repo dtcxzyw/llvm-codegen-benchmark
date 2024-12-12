@@ -11,11 +11,10 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/commit.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/g4x_dp.ll
-; linux/optimized/mii.ll
 ; linux/optimized/route.ll
 ; linux/optimized/vfs_inode.ll
 ; qemu/optimized/block_file-posix.c.ll
@@ -23,7 +22,7 @@ entry:
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = or disjoint i32 %2, -2147483648
@@ -35,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/OGLPaints.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = or disjoint i32 %2, 4

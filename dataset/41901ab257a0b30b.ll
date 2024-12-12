@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/hda_hwdep.ll
+; 2 occurrences:
 ; linux/optimized/sky2.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind

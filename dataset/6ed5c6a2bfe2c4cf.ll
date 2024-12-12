@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 20
   %4 = sub i64 %0, %1
@@ -29,7 +29,7 @@ entry:
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; rocksdb/optimized/write_thread.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 100
   %4 = sub nsw i64 %0, %1
@@ -41,7 +41,7 @@ entry:
 ; openssl/optimized/libssl-lib-cc_newreno.ll
 ; openssl/optimized/libssl-shlib-cc_newreno.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 3
   %4 = sub nuw i64 %0, %1
@@ -59,7 +59,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 9216
   %4 = sub i64 %0, %1
@@ -71,7 +71,7 @@ entry:
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 40
   %4 = sub i64 %0, %1
@@ -102,7 +102,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 12
   %4 = sub i64 %0, %1
@@ -114,7 +114,7 @@ entry:
 ; clamav/optimized/unpack.cpp.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = sub i64 %0, %1
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 24
   %4 = sub nsw i64 %0, %1
@@ -136,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 12
   %4 = sub i64 %0, %1
@@ -147,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/mp2t.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 40608000000
   %4 = sub nuw nsw i64 %0, %1
@@ -158,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 86400
   %4 = sub nsw i64 %0, %1
@@ -169,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000
   %4 = sub nuw i64 %0, %1
@@ -180,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/streamutil.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000
   %4 = sub i64 %0, %1
@@ -191,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000000
   %4 = sub i64 %0, %1
@@ -202,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 5
   %4 = sub nsw i64 %0, %1
@@ -225,7 +225,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000185(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 24
   %4 = sub i64 %0, %1
@@ -236,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 12
   %4 = sub i64 %0, %1
@@ -247,7 +247,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ThreadPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ab(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000
   %4 = sub nsw i64 %0, %1

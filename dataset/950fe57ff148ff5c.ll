@@ -3,19 +3,19 @@
 ; clamav/optimized/vba_extract.c.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 7
   %5 = add nuw nsw i32 %4, %0
-  %6 = icmp ult i32 %5, 9
+  %6 = icmp samesign ult i32 %5, 9
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 7
@@ -28,12 +28,12 @@ entry:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 31
   %5 = add nuw nsw i32 %4, %0
-  %6 = icmp ult i32 %5, 6
+  %6 = icmp samesign ult i32 %5, 6
   ret i1 %6
 }
 
@@ -46,11 +46,11 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 15
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = icmp eq i32 %5, 1
   ret i1 %6
 }
@@ -59,23 +59,23 @@ entry:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/darCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 31
   %5 = add nuw nsw i32 %4, %0
-  %6 = icmp ugt i32 %5, 4
+  %6 = icmp samesign ugt i32 %5, 4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 16777215
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ndisc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 504
@@ -99,7 +99,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 4095
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = icmp ugt i32 %5, 4096
   ret i1 %6
 }
@@ -143,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/lossless.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 255

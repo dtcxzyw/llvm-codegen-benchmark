@@ -1,11 +1,11 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andb	$2, %dl
 	orb	%dil, %dl
 	andb	$1, %sil
 	orb	%dl, %sil
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	andb	$16, %dl
 	orb	%dil, %dl
 	andb	$4, %sil

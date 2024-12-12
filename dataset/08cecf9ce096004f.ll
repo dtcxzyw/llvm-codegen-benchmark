@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -7,31 +7,34 @@
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/kitTruth.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; cmake/optimized/zdict.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; freetype/optimized/sfnt.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
-; libquic/optimized/ntt.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/rescaler.c.ll
 ; linux/optimized/ff-memless.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/vlv_dsi.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -49,8 +52,6 @@
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/dlasd0.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/cornersubpix.cpp.ll
@@ -84,11 +85,13 @@ entry:
   ret i32 %4
 }
 
-; 158 occurrences:
+; 161 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -114,7 +117,6 @@ entry:
 ; libuv/optimized/idna.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
-; linux/optimized/acpi_lpat.ll
 ; linux/optimized/cpufreq_ondemand.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/drm_modes.ll
@@ -132,13 +134,18 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
-; llvm/optimized/CoreEngine.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/RegisterClassInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86PadShortFunction.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_array.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
@@ -164,7 +171,6 @@ entry:
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -205,7 +211,6 @@ entry:
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openspiel/optimized/Par.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
@@ -222,7 +227,6 @@ entry:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
@@ -281,7 +285,7 @@ entry:
   ret i32 %4
 }
 
-; 358 occurrences:
+; 376 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absOut.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
@@ -323,6 +327,9 @@ entry:
 ; abc/optimized/utilCex.c.ll
 ; abc/optimized/wlcGraft.c.ll
 ; abc/optimized/wlcSim.c.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -387,11 +394,28 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -429,7 +453,6 @@ entry:
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/thread.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -462,7 +485,6 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; opencv/optimized/approx.cpp.ll
@@ -648,7 +670,7 @@ entry:
   ret i32 %4
 }
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -659,14 +681,15 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/graph_generator.c.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
 ; icu/optimized/collationweights.ll
 ; libwebp/optimized/palette.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -738,18 +761,32 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
-  %4 = mul nuw i32 %3, %0
+  %4 = mul nuw i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
+  %4 = mul nuw nsw i32 %3, %0
+  ret i32 %4
+}
+
+; 4 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
+; g2o/optimized/marginal_covariance_cholesky.cpp.ll
+; libwebp/optimized/picture_tools_enc.c.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
   %4 = mul nuw nsw i32 %3, %0
   ret i32 %4
 }
@@ -772,18 +809,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 2 occurrences:
-; g2o/optimized/marginal_covariance_cholesky.cpp.ll
-; libwebp/optimized/picture_tools_enc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

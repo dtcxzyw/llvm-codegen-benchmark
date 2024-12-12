@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/ldt.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind

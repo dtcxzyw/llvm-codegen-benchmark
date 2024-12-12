@@ -1,4 +1,4 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003b:                   # @func000000000000003b
 	mulw	a2, a2, a1
 	sh1add	a0, a2, a0
 	sext.w	a1, a1

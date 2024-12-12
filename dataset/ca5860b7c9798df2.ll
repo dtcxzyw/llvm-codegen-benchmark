@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 19 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
@@ -8,13 +8,34 @@
 ; casadi/optimized/interpolant.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; lightgbm/optimized/bin.cpp.ll
+; luau/optimized/CodeGenAssembly.cpp.ll
+; luau/optimized/CodeGenContext.cpp.ll
+; openusd/optimized/testTs_HardToReach.cpp.ll
+; quantlib/optimized/genericlsregression.ll
+; quantlib/optimized/parametricexercise.ll
+; rocksdb/optimized/compaction_job.cc.ll
+; vcpkg/optimized/paragraphs.cpp.ll
+; velox/optimized/Type.cpp.ll
+; wasmedge/optimized/serial_module.cpp.ll
+; xgboost/optimized/quantile.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = sdiv exact i64 %4, 132
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
+  ret ptr %7
+}
+
+; 27 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; luau/optimized/CodeGenAssembly.cpp.ll
-; luau/optimized/CodeGenContext.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; mold/optimized/lto.cc.ALPHA.cc.ll
 ; mold/optimized/lto.cc.ARM32.cc.ll
@@ -35,22 +56,16 @@
 ; mold/optimized/lto.cc.SPARC64.cc.ll
 ; mold/optimized/lto.cc.X86_64.cc.ll
 ; opencv/optimized/matchers.cpp.ll
-; openusd/optimized/testTs_HardToReach.cpp.ll
-; rocksdb/optimized/compaction_job.cc.ll
-; vcpkg/optimized/paragraphs.cpp.ll
 ; velox/optimized/SignatureBinder.cpp.ll
-; velox/optimized/Type.cpp.ll
-; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
-; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
-  %5 = sdiv exact i64 %4, 132
+  %5 = sdiv exact i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -8
+  %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
 

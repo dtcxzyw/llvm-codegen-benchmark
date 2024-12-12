@@ -24,39 +24,14 @@ func0000000000000013:                   # @func0000000000000013
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI1_1:
-	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
-	vpcmpnltub	.LCPI1_0(%rip), %xmm1, %k1
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [4,4,4,4,4,4,4,4]
-	vpslld	$2, %ymm0, %ymm1 {%k1}
-	vmovdqa	%ymm1, %ymm0
-	retq
-.LCPI2_0:
 	.long	512                             # 0x200
 func0000000000000007:                   # @func0000000000000007
 	vptestmb	%xmm1, %xmm1, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [512,512,512,512,512,512,512,512]
+	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [512,512,512,512,512,512,512,512]
 	vpslld	$8, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
-.LCPI3_0:
+.LCPI2_0:
 	.byte	127                             # 0x7f
 	.byte	127                             # 0x7f
 	.byte	127                             # 0x7f
@@ -73,11 +48,11 @@ func0000000000000007:                   # @func0000000000000007
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI3_1:
+.LCPI2_1:
 	.long	4294967288                      # 0xfffffff8
 func0000000000000005:                   # @func0000000000000005
-	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
-	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [4294967288,4294967288,4294967288,4294967288,4294967288,4294967288,4294967288,4294967288]
+	vpcmpneqb	.LCPI2_0(%rip), %xmm1, %k1
+	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [4294967288,4294967288,4294967288,4294967288,4294967288,4294967288,4294967288,4294967288]
 	vpslld	$3, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

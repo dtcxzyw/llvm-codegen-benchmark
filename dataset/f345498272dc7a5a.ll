@@ -1,15 +1,12 @@
 
-; 23 occurrences:
+; 18 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/MD5.c.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/skat.cc.ll
@@ -20,40 +17,40 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; quantlib/optimized/sobolbrowniangenerator.ll
 ; ruby/optimized/md5.ll
-; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %notsub = add nsw i64 %0, -9
   %1 = icmp ult i64 %notsub, -64
   ret i1 %1
 }
 
-; 36 occurrences:
-; cpython/optimized/longobject.ll
+; 6 occurrences:
+; c3c/optimized/bigint.c.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; quantlib/optimized/sobolbrowniangenerator.ll
+; ruby/optimized/numeric.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0) #0 {
+entry:
+  %notsub = add nsw i64 %0, -1
+  %1 = icmp ult i64 %notsub, -63
+  ret i1 %1
+}
+
+; 23 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/sparse_set.cpp.ll
 ; entt/optimized/storage_entity.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
-; flac/optimized/bitreader.c.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/softfloat.cpp.ll
-; pocketpy/optimized/expr.cpp.ll
-; pocketpy/optimized/pocketpy.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
-; ruby/optimized/bignum.ll
 ; ruby/optimized/numeric.ll
-; rust-analyzer-rs/optimized/1g3jrunmnvdfsqij.ll
-; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
-; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
-; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f32_to_i64.ll
@@ -69,19 +66,41 @@ entry:
 ; spike/optimized/s_subMagsF64.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000034(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 4611686018427387903
   %2 = icmp ult i64 %1, 4611686018427387904
   ret i1 %2
 }
 
+; 13 occurrences:
+; cpython/optimized/longobject.ll
+; flac/optimized/bitreader.c.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; pocketpy/optimized/expr.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; ruby/optimized/bignum.ll
+; rust-analyzer-rs/optimized/1g3jrunmnvdfsqij.ll
+; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
+; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
+; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, -4294967297
+  %2 = icmp ult i64 %1, -4294967296
+  ret i1 %2
+}
+
 ; 38 occurrences:
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/archive-tar.ll
-; lua/optimized/lvm.ll
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
@@ -123,7 +142,7 @@ entry:
   ret i1 %1
 }
 
-; 51 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -175,6 +194,39 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0) #0 {
 entry:
@@ -182,7 +234,7 @@ entry:
   ret i1 %1
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; glog/optimized/symbolize.cc.ll
 ; linux/optimized/hugetlb.ll
@@ -190,6 +242,10 @@ entry:
 ; postgres/optimized/zic.ll
 ; redis/optimized/read.ll
 ; ruby/optimized/pack.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
@@ -198,14 +254,14 @@ entry:
   ret i1 %1
 }
 
-; 106 occurrences:
+; 104 occurrences:
+; boost/optimized/src.ll
 ; clamav/optimized/blake2s.cpp.ll
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; libsodium/optimized/libsodium_la-blake2b-ref.ll
 ; lief/optimized/File.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
-; lua/optimized/lvm.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; nix/optimized/attrs.ll
@@ -226,8 +282,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -310,6 +364,27 @@ define i1 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 8
   %2 = icmp ult i64 %1, 9
+  ret i1 %2
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; lua/optimized/lvm.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %notsub = add i64 %0, -1
+  %1 = icmp ult i64 %notsub, -36000000000
+  ret i1 %1
+}
+
+; 1 occurrences:
+; lua/optimized/lvm.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, -64
+  %2 = icmp ult i64 %1, -63
   ret i1 %2
 }
 

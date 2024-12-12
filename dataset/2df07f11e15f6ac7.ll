@@ -3,12 +3,12 @@
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; libwebp/optimized/io_dec.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; ncnn/optimized/diag.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll

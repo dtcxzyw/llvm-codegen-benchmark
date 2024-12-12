@@ -1,13 +1,11 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/giaTsim.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
@@ -97,7 +95,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -110,6 +108,7 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/unique_path.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll

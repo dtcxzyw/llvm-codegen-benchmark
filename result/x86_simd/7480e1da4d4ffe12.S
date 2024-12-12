@@ -58,3 +58,24 @@ func0000000000000003:                   # @func0000000000000003
 	vpsrad	$3, %ymm0, %ymm0
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+.LCPI5_0:
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+	.short	104                             # 0x68
+	.short	0                               # 0x0
+func0000000000000007:                   # @func0000000000000007
+	vpsrld	$16, %ymm0, %ymm0
+	vpmaddwd	.LCPI5_0(%rip), %ymm0, %ymm0    # [104,0,104,0,104,0,104,0,104,0,104,0,104,0,104,0]
+	retq

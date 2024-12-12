@@ -5,11 +5,11 @@
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = tail call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -20,11 +20,11 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 ; assimp/optimized/clipper.cpp.ll
 ; ocio/optimized/ImageDesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = tail call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -43,22 +43,22 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000b8(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

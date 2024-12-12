@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	or	a0, a0, a1
 	andi	a0, a0, 255
 	beqz	a0, .LBB0_2
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 .LBB0_2:
 	li	a0, 4
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	snez	a1, a1
@@ -17,7 +17,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	and	a0, a0, a1
 	slli	a0, a0, 16
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	snez	a1, a1
@@ -26,19 +26,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	negw	a0, a0
 	andi	a0, a0, 3
 	ret
-func000000000000008c:                   # @func000000000000008c
-	andi	a0, a0, 255
-	andi	a1, a1, 255
-	sltiu	a1, a1, 6
-	seqz	a0, a0
-	or	a0, a0, a1
-	beqz	a0, .LBB3_2
-	li	a0, 118
-	ret
-.LBB3_2:
-	li	a0, 123
-	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	sltiu	a1, a1, 15

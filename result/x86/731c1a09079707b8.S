@@ -13,6 +13,15 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	%edx, %esi
 	cmovbq	%rcx, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	notb	%dil
+	cmpl	%edx, %esi
+	setl	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	leaq	16(,%rax,8), %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	notb	%dil
 	cmpl	%edx, %esi

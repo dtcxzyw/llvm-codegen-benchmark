@@ -6,6 +6,20 @@ define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double -0.000000e+00
+  %5 = fadd double %0, %4
+  ret double %5
+}
+
+; 4 occurrences:
+; g2o/optimized/odometry_measurement.cpp.ll
+; ipopt/optimized/IpFilterLSAcceptor.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; proj/optimized/conversion.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, 1.000000e+01
+  %4 = select i1 %3, double %1, double 1.000000e+00
   %5 = fadd double %4, %0
   ret double %5
 }
@@ -20,7 +34,7 @@ define double @func0000000000000007(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double 1.000000e+00
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 
@@ -35,15 +49,13 @@ entry:
   ret double %5
 }
 
-; 3 occurrences:
-; g2o/optimized/odometry_measurement.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; proj/optimized/conversion.cpp.ll
+; 1 occurrences:
+; proj/optimized/healpix.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000004(double %0, double %1, double %2) #0 {
+define double @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp ogt double %2, 1.000000e-08
-  %4 = select i1 %3, double %1, double 0.000000e+00
+  %3 = fcmp ult double %2, 4.000000e+00
+  %4 = select i1 %3, double %1, double 0x4002D97C7F3321D2
   %5 = fadd double %4, %0
   ret double %5
 }
@@ -65,7 +77,7 @@ define double @func000000000000000e(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ord double %2, 0.000000e+00
   %4 = select i1 %3, double %1, double 0.000000e+00
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 
@@ -76,7 +88,7 @@ define double @func0000000000000006(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
   %4 = select i1 %3, double %1, double 1.000000e-08
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

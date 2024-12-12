@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/compileLog.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i32 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 100
   %3 = shl nsw i32 %1, 1
@@ -29,7 +29,7 @@ entry:
 ; abc/optimized/ioWriteBlifMv.c.ll
 ; abc/optimized/ioWritePla.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 10
   %3 = shl nsw i32 %1, 1

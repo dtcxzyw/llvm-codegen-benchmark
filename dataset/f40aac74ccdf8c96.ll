@@ -48,4 +48,17 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; boost/optimized/attribute_name.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 6
+  %4 = add nsw i64 %0, %1
+  %5 = add i64 %4, %3
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
 attributes #0 = { nounwind }

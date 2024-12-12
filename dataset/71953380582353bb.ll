@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; nghttp2/optimized/llhttp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = mul nuw i64 %0, 10
@@ -32,7 +32,7 @@ entry:
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = mul nsw i64 %0, 1000000
@@ -41,9 +41,20 @@ entry:
 }
 
 ; 1 occurrences:
+; git/optimized/tree-diff.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000168(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw i64 -58, %1
+  %3 = mul nuw nsw i64 %0, 72
+  %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 -58, %1
   %3 = mul nuw nsw i64 %0, 72
@@ -51,10 +62,34 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 47, %1
+  %3 = mul nuw i64 %0, 10
+  %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; clamav/optimized/rtf.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw i64 -9223372036854775761, %1
+  %3 = mul nsw i64 %0, 10
+  %4 = icmp sgt i64 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = mul nsw i64 %0, -19

@@ -1,8 +1,11 @@
 
-; 143 occurrences:
+; 150 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; box2d/optimized/b2_friction_joint.cpp.ll
@@ -53,9 +56,13 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/RegAllocEvictionAdvisor.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -201,7 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 66 occurrences:
+; 69 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -232,6 +239,9 @@ entry:
 ; gromacs/optimized/slagts.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
@@ -288,7 +298,9 @@ entry:
   ret i1 %5
 }
 
-; 95 occurrences:
+; 98 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -384,6 +396,7 @@ entry:
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(float %0, float %1, float %2) #0 {
 entry:
@@ -436,10 +449,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; openjdk/optimized/hb-ot-var.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(float %0, float %1, float %2) #0 {
 entry:
@@ -495,13 +509,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/edit_point.cpp.ll
 ; ncnn/optimized/roialign.cpp.ll
 ; ncnn/optimized/roialign_x86.cpp.ll
 ; ncnn/optimized/roialign_x86_avx.cpp.ll
 ; ncnn/optimized/roialign_x86_avx512.cpp.ll
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000004a(float %0, float %1, float %2) #0 {
 entry:
@@ -511,9 +526,12 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcTiming.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
@@ -569,10 +587,9 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btPolarDecomposition.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -613,6 +630,20 @@ entry:
   %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp ult float %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004d(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp ogt float %1, %2
+  %4 = select i1 %3, float %1, float %2
+  %5 = fcmp uge float %4, %0
   ret i1 %5
 }
 
@@ -723,18 +754,6 @@ entry:
 define i1 @func000000000000002d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
-  %4 = select i1 %3, float %1, float %2
-  %5 = fcmp uge float %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004d(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ogt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp uge float %4, %0
   ret i1 %5

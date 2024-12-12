@@ -33,12 +33,15 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0) #0 {
+define i64 @func0000000000000068(i64 %0) #0 {
 entry:
-  %1 = ashr exact i64 %0, 1
-  %.inv = icmp sgt i64 %0, -1
-  %2 = select i1 %.inv, i64 %1, i64 -1
+  %1 = call i64 @llvm.smax.i64(i64 %0, i64 -1)
+  %2 = ashr i64 %1, 1
   ret i64 %2
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smax.i64(i64, i64) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

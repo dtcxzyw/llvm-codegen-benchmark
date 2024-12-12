@@ -1,10 +1,10 @@
 
-%"struct.glslang::TTypeLoc.2799841" = type { ptr, %"struct.glslang::TSourceLoc.2799842" }
-%"struct.glslang::TSourceLoc.2799842" = type { ptr, i32, i32, i32 }
-%struct.ptr_info.2868564 = type { ptr, i32 }
+%"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610" = type { i16, i16, i16 }
+%"struct.glslang::TTypeLoc.2911887" = type { ptr, %"struct.glslang::TSourceLoc.2911888" }
+%"struct.glslang::TSourceLoc.2911888" = type { ptr, i32, i32, i32 }
+%struct.ptr_info.3062160 = type { ptr, i32 }
 
-; 38 occurrences:
-; assimp/optimized/HL1MDLLoader.cpp.ll
+; 37 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; jq/optimized/bytecode.ll
@@ -53,7 +53,20 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
+; 1 occurrences:
+; assimp/optimized/HL1MDLLoader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 1
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %3, -2
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 14 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; icu/optimized/messagepattern.ll
 ; lua/optimized/ldebug.ll
@@ -68,13 +81,12 @@ entry:
 ; yosys/optimized/ql_bram_merge.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
-; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000046(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"struct.glslang::TTypeLoc.2799841", ptr %0, i64 %3
+  %4 = getelementptr %"struct.glslang::TTypeLoc.2911887", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -85,9 +97,22 @@ entry:
 define ptr @func0000000000000026(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr %struct.ptr_info.2868564, ptr %0, i64 %2
+  %3 = getelementptr %struct.ptr_info.3062160, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -16
   ret ptr %4
+}
+
+; 2 occurrences:
+; luajit/optimized/minilua.ll
+; zxing/optimized/ReedSolomonDecoder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000047(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 30
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -4
+  ret ptr %5
 }
 
 ; 2 occurrences:

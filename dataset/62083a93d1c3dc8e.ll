@@ -73,7 +73,8 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; abc/optimized/giaFanout.c.ll
 ; cpython/optimized/memoryobject.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -95,7 +96,7 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; gromacs/optimized/manage_threading.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -103,7 +104,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll

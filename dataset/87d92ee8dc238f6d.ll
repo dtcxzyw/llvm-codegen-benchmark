@@ -1,9 +1,11 @@
 
-; 537 occurrences:
+; 546 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -76,9 +78,7 @@
 ; flac/optimized/decode.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/alltoall.cpp.ll
 ; gromacs/optimized/correlationhistory.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
@@ -536,6 +536,15 @@
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/gblinear.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -545,7 +554,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -563,6 +572,8 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; slurm/optimized/gres_select_util.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -571,7 +582,7 @@ entry:
   ret i64 %4
 }
 
-; 332 occurrences:
+; 331 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; cpython/optimized/longobject.ll
@@ -606,7 +617,6 @@ entry:
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/compute_io.cpp.ll
-; gromacs/optimized/gather.cpp.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -912,7 +922,7 @@ entry:
   ret i64 %4
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -969,7 +979,6 @@ entry:
 ; oiio/optimized/targainput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/sgemm_direct_performant.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
@@ -1002,7 +1011,7 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 28 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
@@ -1022,6 +1031,15 @@ entry:
 ; spike/optimized/rfb.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1030,7 +1048,7 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 43 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -1071,11 +1089,14 @@ entry:
 ; openusd/optimized/aom_image.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; slurm/optimized/job_mgr.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -1089,9 +1110,8 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; faiss/optimized/AutoTune.cpp.ll
-; gromacs/optimized/tng_io.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -1126,7 +1146,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

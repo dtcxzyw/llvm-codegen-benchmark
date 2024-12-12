@@ -1,5 +1,5 @@
 
-; 470 occurrences:
+; 472 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; git/optimized/apply.ll
@@ -8,6 +8,8 @@
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hermes/optimized/Object.cpp.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
+; linux/optimized/af_inet.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/ich8lan.ll
@@ -310,7 +312,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -468,6 +469,7 @@
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; Function Attrs: nounwind
@@ -490,7 +492,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 8
   %4 = and i16 %3, -2048
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   %6 = and i16 %1, 126
   %7 = or i16 %5, %6
   ret i16 %7
@@ -518,7 +520,7 @@ define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 9
   %4 = and i16 %3, 1536
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   %6 = and i16 %1, 8
   %7 = or i16 %5, %6
   ret i16 %7
@@ -532,26 +534,27 @@ define i16 @func0000000000000001(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 12
   %4 = and i16 %3, 4096
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   %6 = and i16 %1, 2048
   %7 = or disjoint i16 %5, %6
   ret i16 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/processor_idle.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl nuw nsw i16 %2, 6
-  %4 = and i16 %3, 64
+  %3 = shl nuw nsw i16 %2, 3
+  %4 = and i16 %3, 2016
   %5 = or disjoint i16 %4, %0
-  %6 = and i16 %1, 4096
+  %6 = and i16 %1, -2048
   %7 = or disjoint i16 %5, %6
   ret i16 %7
 }

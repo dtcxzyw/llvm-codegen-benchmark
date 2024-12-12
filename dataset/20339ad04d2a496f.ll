@@ -1,9 +1,11 @@
 
-; 65 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -69,7 +71,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3FE6E29740000000
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = fadd double %4, %0
   ret double %5
 }

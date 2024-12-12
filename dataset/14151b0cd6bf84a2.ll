@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 16 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; icu/optimized/genrb.ll
@@ -13,6 +13,9 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-dcom.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -39,17 +42,6 @@ entry:
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %0, i1 %1, i1 false
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cvc5/optimized/Solver.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 2
   %4 = select i1 %0, i1 %1, i1 false
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

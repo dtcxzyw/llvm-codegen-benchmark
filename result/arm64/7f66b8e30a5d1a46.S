@@ -1,14 +1,14 @@
-func0000000000000085:                   // @func0000000000000085
+func0000000000000105:                   // @func0000000000000105
 // %bb.0:                               // %entry
-	cmp	x2, x0
-	ccmp	x2, x1, #2, hs
-	cset	w0, lo
+	cmp	x0, x2
+	ccmp	x1, x2, #0, ls
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000a7:                   // @func00000000000000a7
+func0000000000000147:                   // @func0000000000000147
 // %bb.0:                               // %entry
-	cmp	x2, x0
-	ccmp	x2, x1, #0, ge
-	cset	w0, lt
+	cmp	x0, x2
+	ccmp	x1, x2, #4, le
+	cset	w0, gt
 	ret
                                         // -- End function

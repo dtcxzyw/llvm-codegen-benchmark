@@ -1,4 +1,4 @@
-func00000000000000dc:                   # @func00000000000000dc
+func000000000000019c:                   # @func000000000000019c
 	sext.w	a2, a0
 	zext.h	a1, a1
 	addi	a3, a1, 1

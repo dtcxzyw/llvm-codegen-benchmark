@@ -25,3 +25,14 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%esi, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%esi, %eax
+	shrl	$3, %eax
+	imulq	$381774871, %rax, %rax          # imm = 0x16C16C17
+	shrq	$34, %rax
+	imull	$360, %eax, %ecx                # imm = 0x168
+	movl	%esi, %eax
+	subl	%ecx, %eax
+	subl	%esi, %eax
+	addl	%edi, %eax
+	retq

@@ -1,5 +1,6 @@
 
-; 197 occurrences:
+; 203 occurrences:
+; boost/optimized/src.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
@@ -44,11 +45,9 @@
 ; linux/optimized/hosts.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/intel_dpt.ll
-; linux/optimized/intel_fbc.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/irq.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/tx.ll
@@ -83,9 +82,7 @@
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -96,9 +93,6 @@
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
-; minetest/optimized/voxel.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -123,6 +117,7 @@
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
+; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -173,9 +168,11 @@
 ; sqlite/optimized/sqlite3.ll
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3SplitAs.cpp.ll
 ; wasmtime-rs/optimized/2mzhr81bqzbenmxl.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-alp.c.ll
@@ -196,6 +193,15 @@
 ; z3/optimized/old_interval.cpp.ll
 ; z3/optimized/sat_drat.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {

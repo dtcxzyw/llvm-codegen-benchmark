@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = trunc nsw i64 %2 to i32
+  %4 = udiv i32 %3, 3600
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll

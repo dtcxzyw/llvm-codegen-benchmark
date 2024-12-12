@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$-1, %esi
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	xorl	%edi, %esi
 	setns	%al
@@ -19,7 +19,7 @@ func0000000000000006:                   # @func0000000000000006
 	xorl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	(%rsi,%rdx), %eax
 	xorl	%edi, %eax
 	shrl	$31, %eax

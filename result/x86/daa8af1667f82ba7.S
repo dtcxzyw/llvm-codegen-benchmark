@@ -5,14 +5,14 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	cmpq	$1, %rax
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	cmpq	$1, %rax
@@ -31,13 +31,13 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	setns	%al
 	andb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	cmpq	$4096, %rax                     # imm = 0x1000
@@ -50,13 +50,13 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	setns	%al
 	andb	%dil, %al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movl	%edx, %eax
 	addq	%rsi, %rax
 	setns	%al

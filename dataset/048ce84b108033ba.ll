@@ -1,5 +1,6 @@
 
 ; 287 occurrences:
+; boost/optimized/to_chars.ll
 ; c3c/optimized/c_abi.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -126,7 +127,6 @@
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -364,11 +364,12 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0) #0 {
 entry:
@@ -393,7 +394,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/operations.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -402,8 +404,8 @@ entry:
 define i32 @func000000000000001a(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
-  %2 = add nsw i32 %1, -1075
-  %3 = lshr i32 %2, 6
+  %2 = add nsw i32 %1, -1
+  %3 = lshr i32 %2, 1
   ret i32 %3
 }
 

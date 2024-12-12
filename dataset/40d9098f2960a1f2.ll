@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 189 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -26,6 +26,7 @@
 ; cvc5/optimized/tableau.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; darktable/optimized/metadata.c.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -47,7 +48,6 @@
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; libquic/optimized/base64.c.ll
 ; libquic/optimized/dsa.c.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/neighbour.ll
@@ -65,6 +65,7 @@
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -197,17 +198,17 @@ entry:
   ret i64 %3
 }
 
-; 196 occurrences:
+; 194 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cmdStarter.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/kitPla.c.ll
+; annoy/optimized/annoymodule.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
@@ -271,7 +272,6 @@ entry:
 ; libquic/optimized/pcy_tree.c.ll
 ; libquic/optimized/string_util.cc.ll
 ; libquic/optimized/v3_purp.c.ll
-; libquic/optimized/x509_trs.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; lief/optimized/TrieNode.cpp.ll
 ; linux/optimized/build_utility.ll
@@ -282,7 +282,6 @@ entry:
 ; linux/optimized/intel_color.ll
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/swnode.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
@@ -303,7 +302,6 @@ entry:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/ScalarEvolutionNormalization.cpp.ll
@@ -363,6 +361,7 @@ entry:
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/rangetypes_selfuncs.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
+; qemu/optimized/util_uri.c.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/faurersg.ll
 ; quantlib/optimized/gmres.ll
@@ -448,7 +447,7 @@ entry:
   ret i64 %3
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -463,6 +462,7 @@ entry:
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
+; llvm/optimized/SveEmitter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
@@ -498,7 +498,7 @@ entry:
   ret i64 %3
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -506,6 +506,7 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cfilters.c.ll
@@ -570,7 +571,8 @@ entry:
   ret i64 %3
 }
 
-; 246 occurrences:
+; 245 occurrences:
+; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -679,7 +681,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/dns_key.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; luajit/optimized/minilua.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -779,7 +780,6 @@ entry:
 ; php/optimized/zend_accelerator_blacklist.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/syslogger.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; quantlib/optimized/capletcoterminalswaptioncalibration.ll
 ; quantlib/optimized/svd.ll
 ; slurm/optimized/job_mgr.ll
@@ -861,7 +861,7 @@ entry:
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/hw_misc_ivshmem.c.ll
 ; quickjs/optimized/quickjs.ll
-; z3/optimized/cmd_context.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
@@ -979,7 +979,7 @@ entry:
   ret i64 %3
 }
 
-; 279 occurrences:
+; 278 occurrences:
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -1179,7 +1179,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll

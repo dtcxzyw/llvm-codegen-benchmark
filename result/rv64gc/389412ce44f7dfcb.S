@@ -7,13 +7,13 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 21
 	ret
 func0000000000000005:                   # @func0000000000000005
-	addi	a0, a0, -1000
+	addi	a0, a0, 55
 	lui	a1, 2
 	slli	a0, a0, 48
 	srli	a0, a0, 51
-	addiw	a1, a1, 197
+	addiw	a1, a1, 1171
 	mul	a0, a0, a1
-	srli	a0, a0, 20
+	srli	a0, a0, 16
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addi	a0, a0, 5

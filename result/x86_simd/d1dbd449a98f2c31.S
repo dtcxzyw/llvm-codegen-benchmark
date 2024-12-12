@@ -158,7 +158,7 @@ func000000000000000f:                   # @func000000000000000f
 	.quad	1000000                         # 0xf4240
 func0000000000000004:                   # @func0000000000000004
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$3667970486771497111, %rax      # imm = 0x32E73FB956A1B897

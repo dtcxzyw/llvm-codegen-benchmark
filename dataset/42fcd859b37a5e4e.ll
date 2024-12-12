@@ -1,12 +1,11 @@
 
-; 5 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
+; 4 occurrences:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll
 ; ockam-rs/optimized/2kn3t03vxm4q238t.ll
 ; openusd/optimized/event.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000184(i8 %0, i64 %1) #0 {
+define i8 @func0000000000000304(i8 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = lshr i64 283682623586305, %2

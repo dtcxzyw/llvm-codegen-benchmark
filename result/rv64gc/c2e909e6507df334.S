@@ -38,23 +38,10 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a0, a0, a1
 	srli	a0, a0, 8
 	ret
-func0000000000000004:                   # @func0000000000000004
-	lui	a1, 118350
-	addi	a1, a1, 1465
-	slli	a1, a1, 32
-	mul	a0, a0, a1
-	srli	a0, a0, 31
-	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a1, 80
 	mul	a0, a0, a1
 	srli	a0, a0, 20
-	ret
-func000000000000000c:                   # @func000000000000000c
-	slli	a1, a0, 3
-	slli	a0, a0, 5
-	sub	a0, a0, a1
-	srli	a0, a0, 2
 	ret
 func0000000000000012:                   # @func0000000000000012
 	slli	a1, a0, 32

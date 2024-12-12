@@ -1,10 +1,10 @@
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	imull	$-100, %esi, %eax
 	addl	%edx, %eax
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	imull	$-100, %esi, %eax
 	addl	%edx, %eax
 	cmpl	%edi, %eax

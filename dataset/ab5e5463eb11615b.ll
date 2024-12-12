@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/histogram.c.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_textarea.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
@@ -26,7 +27,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0) #0 {
+define i1 @func0000000000001082(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 17
   %2 = and i32 %0, -3

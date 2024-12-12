@@ -10,3 +10,11 @@ func000000000000000d:                   # @func000000000000000d
 	movl	%edi, %eax
 	subb	%sil, %al
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	%edi, %eax
+	subb	%sil, %al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movl	%edi, %eax
+	subb	%sil, %al
+	retq

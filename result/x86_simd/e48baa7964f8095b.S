@@ -4,20 +4,20 @@
 	.long	2                               # 0x2
 .LCPI0_2:
 	.long	146                             # 0x92
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k0
 	knotb	%k0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2 {%k1} {z} # ymm2 {%k1} {z} = [292,292,292,292,292,292,292,292]
 	vpcmpnltud	.LCPI0_1(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	32                              # 0x20
 .LCPI1_1:
 	.long	128                             # 0x80
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2 {%k1} {z} # ymm2 {%k1} {z} = [32,32,32,32,32,32,32,32]

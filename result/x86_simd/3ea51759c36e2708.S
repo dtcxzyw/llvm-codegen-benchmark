@@ -1,11 +1,13 @@
 .LCPI0_0:
-	.zero	16,16
+	.zero	16,3
 .LCPI0_1:
-	.zero	16,15
+	.zero	16,1
 .LCPI0_2:
-	.zero	4,15
+	.byte	3                               # 0x3
 func0000000000000001:                   # @func0000000000000001
-	vptestmb	.LCPI0_0(%rip), %xmm1, %k1
-	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
-	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
+	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+	vpand	%xmm2, %xmm1, %xmm1
+	vpcmpeqb	%xmm2, %xmm1, %k1
+	vpand	%xmm2, %xmm0, %xmm0
+	vmovdqu8	.LCPI0_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	retq

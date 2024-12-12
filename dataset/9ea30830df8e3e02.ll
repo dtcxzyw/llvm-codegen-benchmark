@@ -31,6 +31,7 @@ entry:
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; openssl/optimized/libcrypto-lib-punycode.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; quantlib/optimized/lmmdriftcalculator.ll
 ; quantlib/optimized/lmmnormaldriftcalculator.ll
@@ -56,7 +57,6 @@ entry:
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
@@ -231,21 +231,6 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; git/optimized/sha1.ll
-; linux/optimized/reciprocal_div.ll
-; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
-; wireshark/optimized/mp2t.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = shl i64 %3, 32
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
@@ -335,6 +320,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; git/optimized/sha1.ll
+; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
+; wireshark/optimized/mp2t.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = shl i64 %3, 3
+  ret i64 %4
+}
+
 ; 6 occurrences:
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -354,9 +352,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = zext nneg i32 %1 to i64
+  %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 %0, %2
   %4 = shl i64 %3, 3
   ret i64 %4

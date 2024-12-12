@@ -1,53 +1,43 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #7
-	movi	v3.4s, #1
-	ushr	v1.4s, v1.4s, #9
-	and	v1.16b, v1.16b, v2.16b
-	ushl	v1.4s, v3.4s, v1.4s
-	and	v0.16b, v1.16b, v0.16b
+	ubfx	w8, w1, #9, #3
+	mov	w9, #1                          // =0x1
+	lsl	w8, w9, w8
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	shrn	v1.2s, v1.2d, #31
-	movi	v3.4s, #30
-	shrn2	v1.4s, v2.2d, #31
-	movi	v2.4s, #1
-	and	v1.16b, v1.16b, v3.16b
-	ushl	v1.4s, v2.4s, v1.4s
-	and	v0.16b, v1.16b, v0.16b
+	lsr	x9, x1, #31
+	mov	w8, #1                          // =0x1
+	and	w9, w9, #0x1e
+	lsl	w8, w8, w9
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	shrn	v1.2s, v1.2d, #31
-	movi	v3.4s, #30
-	shrn2	v1.4s, v2.2d, #31
-	movi	v2.4s, #3
-	and	v1.16b, v1.16b, v3.16b
-	ushl	v1.4s, v2.4s, v1.4s
-	and	v0.16b, v1.16b, v0.16b
+	lsr	x9, x1, #31
+	mov	w8, #3                          // =0x3
+	and	w9, w9, #0x1e
+	lsl	w8, w8, w9
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	uzp2	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #3
-	ushr	v1.4s, v1.4s, #26
-	bic	v1.4s, #33
-	ushl	v1.4s, v2.4s, v1.4s
-	and	v0.16b, v1.16b, v0.16b
+	lsr	x9, x1, #58
+	mov	w8, #3                          // =0x3
+	and	w9, w9, #0x1e
+	lsl	w8, w8, w9
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v3.4s, #31
-	uzp2	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #1
-	and	v1.16b, v1.16b, v3.16b
-	ushl	v1.4s, v2.4s, v1.4s
-	and	v0.16b, v1.16b, v0.16b
+	lsr	x8, x1, #32
+	mov	w9, #1                          // =0x1
+	lsl	w8, w9, w8
+	and	w0, w0, w8
 	ret
                                         // -- End function

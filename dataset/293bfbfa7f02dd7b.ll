@@ -26,7 +26,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = sdiv i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = sdiv i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 

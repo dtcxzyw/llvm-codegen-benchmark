@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; lief/optimized/nist_kw.c.ll
 ; linux/optimized/nfs4proc.ll
@@ -7,6 +7,7 @@
 ; openjdk/optimized/perfData.ll
 ; postgres/optimized/sqlda.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:

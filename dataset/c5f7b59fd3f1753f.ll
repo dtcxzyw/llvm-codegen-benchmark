@@ -1,6 +1,15 @@
 
-; 79 occurrences:
+; 89 occurrences:
 ; abc/optimized/cuddApa.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/idas_ic.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/nvector_serial.c.ll
@@ -11,6 +20,7 @@
 ; graphviz/optimized/gvevent.c.ll
 ; graphviz/optimized/gvrender.c.ll
 ; graphviz/optimized/info.c.ll
+; graphviz/optimized/lab.c.ll
 ; graphviz/optimized/neatosplines.c.ll
 ; graphviz/optimized/position.c.ll
 ; gromacs/optimized/biasparams.cpp.ll
@@ -83,7 +93,7 @@
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -103,12 +113,14 @@ entry:
 define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
-; 68 occurrences:
+; 70 occurrences:
 ; abc/optimized/cuddApa.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/cvodes_bandpre.c.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
@@ -180,7 +192,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -198,7 +210,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
@@ -221,7 +233,7 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -235,7 +247,26 @@ entry:
 define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ule double %3, %0
+  %4 = fcmp uge double %0, %3
+  ret i1 %4
+}
+
+; 10 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; casadi/optimized/optistack_internal.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libjpeg-turbo/optimized/tjexample.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fdiv double %1, %2
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -252,19 +283,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ole double %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; casadi/optimized/optistack_internal.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; libjpeg-turbo/optimized/tjexample.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fdiv double %1, %2
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -275,7 +294,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp uge double %3, %0
+  %4 = fcmp ule double %0, %3
   ret i1 %4
 }
 

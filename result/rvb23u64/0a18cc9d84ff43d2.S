@@ -8,7 +8,7 @@ func0000000000000016:                   # @func0000000000000016
 	add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
 	slli	a1, a1, 4
 	sh2add	a1, a2, a1
@@ -30,10 +30,5 @@ func000000000000002e:                   # @func000000000000002e
 	sext.w	a2, a2
 	slli	a1, a1, 5
 	sh2add	a1, a2, a1
-	add	a0, a0, a1
-	ret
-func000000000000001e:                   # @func000000000000001e
-	slli	a1, a1, 5
-	sh3add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret

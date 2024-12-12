@@ -45,7 +45,7 @@
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 64
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %0, i64 %5
   ret ptr %6
@@ -75,15 +75,12 @@ entry:
   ret ptr %6
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; openblas/optimized/dsptrf.c.ll
@@ -99,8 +96,7 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 6 occurrences:
 ; openblas/optimized/dsptrf.c.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll

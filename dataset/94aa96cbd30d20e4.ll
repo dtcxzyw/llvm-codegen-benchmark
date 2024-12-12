@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/udataswp.ll
 ; linux/optimized/extents.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; re2/optimized/simplify.cc.ll
 ; slurm/optimized/setup.ll
@@ -17,7 +18,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; clamav/optimized/pe.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
@@ -29,7 +30,6 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/nl80211.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -49,7 +49,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/af_packet.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

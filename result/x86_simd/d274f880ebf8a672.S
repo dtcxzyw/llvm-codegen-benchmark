@@ -32,7 +32,7 @@
 	.short	32                              # 0x20
 	.short	32                              # 0x20
 	.short	32                              # 0x20
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpcmpltuw	.LCPI0_0(%rip), %ymm1, %k1
 	vpaddw	.LCPI0_1(%rip), %ymm0, %ymm0 {%k1}
 	retq
@@ -70,7 +70,7 @@ func0000000000000034:                   # @func0000000000000034
 	.short	65504                           # 0xffe0
 	.short	65504                           # 0xffe0
 	.short	65504                           # 0xffe0
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
 	vpaddw	.LCPI1_1(%rip), %ymm0, %ymm0 {%k1}
 	retq
@@ -108,7 +108,7 @@ func0000000000000014:                   # @func0000000000000014
 	.short	64256                           # 0xfb00
 	.short	64256                           # 0xfb00
 	.short	64256                           # 0xfb00
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqw	.LCPI2_0(%rip), %ymm1, %k1
 	vpaddw	.LCPI2_1(%rip), %ymm0, %ymm0 {%k1}
 	retq

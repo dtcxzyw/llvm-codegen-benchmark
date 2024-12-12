@@ -1,6 +1,8 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; stb/optimized/stb_image.c.ll
@@ -10,7 +12,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = xor i32 %2, 255
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -33,6 +35,17 @@ entry:
   %2 = and i32 %1, 65533
   %3 = xor i32 %2, 3
   %4 = mul i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 255
+  %3 = xor i32 %2, 255
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

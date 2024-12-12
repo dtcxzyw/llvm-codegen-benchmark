@@ -1,18 +1,16 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; libquic/optimized/time_support.c.ll
 ; linux/optimized/process_vm_access.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
+  %2 = lshr i64 %1, 6
   %3 = sub nsw i64 %0, %2
-  %4 = add nsw i64 %3, 31
+  %4 = add nsw i64 %3, 1
   ret i64 %4
 }
 
@@ -24,7 +22,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

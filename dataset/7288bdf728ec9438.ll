@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; icu/optimized/ubidi.ll
 ; libquic/optimized/t_x509.c.ll
 ; llvm/optimized/RawCommentList.cpp.ll
@@ -15,6 +15,7 @@
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/smv.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:

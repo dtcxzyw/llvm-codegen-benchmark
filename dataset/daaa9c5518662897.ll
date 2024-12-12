@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
@@ -45,7 +45,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -115,7 +114,7 @@ entry:
   ret i64 %3
 }
 
-; 189 occurrences:
+; 188 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/lbr.ll
@@ -238,7 +237,6 @@ entry:
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll

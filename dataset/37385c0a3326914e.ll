@@ -65,9 +65,10 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/date.ll
 ; gromacs/optimized/surfacearea.cpp.ll
+; openspiel/optimized/TransTableS.cpp.ll
 ; postgres/optimized/to_tsany.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
@@ -78,7 +79,8 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
@@ -86,6 +88,17 @@ entry:
   %1 = udiv i64 %0, 100000000
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 99999999
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = udiv i64 %0, 100000000
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ugt i32 %2, 999999
   ret i1 %3
 }
 

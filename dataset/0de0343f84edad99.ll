@@ -1,6 +1,7 @@
 
-; 160 occurrences:
+; 156 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -28,7 +29,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ObjectToString.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
 ; folly/optimized/SSLOptions.cpp.ll
@@ -49,7 +49,6 @@
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/xdot.c.ll
 ; gromacs/optimized/parser.cpp.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr.c.ll
@@ -77,16 +76,13 @@
 ; linux/optimized/fatent.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/page_io.ll
 ; linux/optimized/pt.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/xfrm_policy.ll
@@ -172,6 +168,9 @@ entry:
 ; arrow/optimized/bit_run_reader.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/mapped_file.ll
 ; c3c/optimized/sema_casts.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.ll
@@ -182,7 +181,6 @@ entry:
 ; cmake/optimized/cmLDConfigLDConfigTool.cxx.ll
 ; cmake/optimized/cmPlistParser.cxx.ll
 ; cmake/optimized/cmcmd.cxx.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/mpdecimal.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -193,7 +191,6 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -206,7 +203,6 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestStringView.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -336,7 +332,7 @@ entry:
   ret i64 %2
 }
 
-; 25 occurrences:
+; 28 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
@@ -362,6 +358,9 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -370,7 +369,8 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; php/optimized/logical_filters.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 49 occurrences:
 ; cvc5/optimized/cvc5.cpp.ll
 ; cvc5/optimized/extf_solver.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
@@ -47,6 +47,8 @@
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-communityid.c.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0) #0 {
 entry:

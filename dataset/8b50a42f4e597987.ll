@@ -1,18 +1,14 @@
 
-; 15 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
-; openblas/optimized/dsygst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/checker_model.cpp.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
@@ -38,7 +34,7 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -47,9 +43,7 @@ entry:
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:

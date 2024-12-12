@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -7,10 +7,8 @@
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_nat_core.ll
 ; oiio/optimized/iffinput.cpp.ll
-; postgres/optimized/bufpage.ll
 ; slurm/optimized/net.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rf4ce-secur.c.ll

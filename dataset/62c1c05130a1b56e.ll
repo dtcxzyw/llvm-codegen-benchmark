@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -10,6 +10,7 @@
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; icu/optimized/genbrk.ll
 ; oiio/optimized/benchmark.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:

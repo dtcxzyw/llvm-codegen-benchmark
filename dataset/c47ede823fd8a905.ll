@@ -1,5 +1,5 @@
 
-; 279 occurrences:
+; 278 occurrences:
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -278,7 +278,6 @@
 ; quantlib/optimized/triplebandlinearop.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

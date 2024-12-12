@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 71 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/fraSim.c.ll
@@ -7,6 +7,8 @@
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/st.c.ll
 ; abc/optimized/stmm.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -77,8 +79,10 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 27 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
@@ -91,6 +95,7 @@ entry:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/calibrate.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -110,9 +115,11 @@ entry:
   ret i1 %4
 }
 
-; 67 occurrences:
+; 69 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/plaRead.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; chibicc/optimized/parse.ll
 ; gromacs/optimized/angle.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -196,6 +203,18 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; faiss/optimized/sorting.cpp.ll
+; linux/optimized/skl_watermark.ll
+; lvgl/optimized/lv_dropdown.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %1, %2
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; yosys/optimized/pmux2shiftx.ll
@@ -239,17 +258,6 @@ define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp sle i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; faiss/optimized/sorting.cpp.ll
-; linux/optimized/skl_watermark.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %1, %2
-  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 

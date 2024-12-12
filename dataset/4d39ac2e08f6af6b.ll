@@ -84,7 +84,7 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; c3c/optimized/linker.c.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/clamd.c.ll
@@ -93,6 +93,7 @@ entry:
 ; flatbuffers/optimized/reflection.cpp.ll
 ; linux/optimized/esp6.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll

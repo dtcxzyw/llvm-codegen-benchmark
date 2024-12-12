@@ -1,8 +1,7 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; freetype/optimized/autofit.c.ll
-; linux/optimized/net-procfs.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -31,7 +30,7 @@ entry:
 ; ruby/optimized/range.ll
 ; ruby/optimized/rational.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0) #0 {
+define i1 @func00000000000001a4(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 60
   %2 = trunc nuw nsw i64 %1 to i32
@@ -46,7 +45,7 @@ entry:
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, -4294967296
   %1 = icmp eq i64 %.mask, 4294967296
@@ -60,7 +59,7 @@ entry:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; openjdk/optimized/parse2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0) #0 {
+define i1 @func0000000000000208(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -89,7 +88,7 @@ entry:
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0) #0 {
+define i1 @func0000000000000201(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
@@ -135,7 +134,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0) #0 {
+define i1 @func0000000000000204(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 4
   %2 = trunc i64 %1 to i32
@@ -183,7 +182,7 @@ entry:
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0) #0 {
+define i1 @func000000000000020a(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
@@ -220,7 +219,7 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0) #0 {
+define i1 @func0000000000000206(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
@@ -234,12 +233,12 @@ entry:
 ; gromacs/optimized/shake.cpp.ll
 ; minetest/optimized/mesh_compare.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0) #0 {
+define i1 @func0000000000000234(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 1
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -3
-  %4 = icmp ult i32 %3, 3
+  %4 = icmp samesign ult i32 %3, 3
   ret i1 %4
 }
 
@@ -261,10 +260,11 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; linux/optimized/intel_color.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; qemu/optimized/sdhci-cmd.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
@@ -281,7 +281,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0) #0 {
+define i1 @func000000000000024a(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -293,7 +293,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/mpmMan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 3
   %2 = trunc i64 %1 to i32
@@ -316,7 +316,7 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -332,7 +332,7 @@ entry:
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0) #0 {
+define i1 @func0000000000000228(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 3
   %2 = trunc i64 %1 to i32
@@ -342,9 +342,20 @@ entry:
 }
 
 ; 1 occurrences:
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000241(i64 %0) #0 {
+entry:
+  %1 = lshr exact i64 %0, 2
+  %2 = trunc i64 %1 to i32
+  %3 = icmp eq i32 %2, -2
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0) #0 {
+define i1 @func000000000000020c(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 1
   %2 = trunc i64 %1 to i32
@@ -361,7 +372,7 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0) #0 {
+define i1 @func0000000000000221(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -369,10 +380,23 @@ entry:
   ret i1 %3
 }
 
+; 2 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000214(i64 %0) #0 {
+entry:
+  %1 = lshr exact i64 %0, 2
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
+  %4 = icmp samesign ult i32 %3, 256
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/mmconfig-shared.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 4
   %2 = trunc i64 %1 to i32
@@ -383,7 +407,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0) #0 {
+define i1 @func000000000000022c(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32
@@ -395,7 +419,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0) #0 {
+define i1 @func0000000000000124(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -407,7 +431,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0) #0 {
+define i1 @func0000000000000121(i64 %0) #0 {
 entry:
   %.mask = and i64 %0, -4294967296
   %1 = icmp eq i64 %.mask, 4294967296
@@ -417,7 +441,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/assemble.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0) #0 {
+define i1 @func0000000000000108(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; c3c/optimized/parse_stmt.c.ll
 ; git/optimized/midx.ll
 ; hermes/optimized/DebugInfo.cpp.ll
@@ -18,7 +18,6 @@
 ; redis/optimized/ae.ll
 ; stockfish/optimized/position.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-stun.c.ll
 ; wireshark/optimized/packet-tn3270.c.ll
 ; Function Attrs: nounwind

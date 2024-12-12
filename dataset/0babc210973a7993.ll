@@ -1,5 +1,5 @@
 
-; 240 occurrences:
+; 241 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cutMan.c.ll
@@ -59,7 +59,6 @@
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -72,6 +71,9 @@
 ; libwebp/optimized/lossless_enc.c.ll
 ; lightgbm/optimized/metadata.cpp.ll
 ; lightgbm/optimized/sample_strategy.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
@@ -239,7 +241,6 @@
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
-; zxing/optimized/ResultPoint.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -248,7 +249,7 @@ entry:
   ret float %3
 }
 
-; 64 occurrences:
+; 66 occurrences:
 ; abc/optimized/sclLoad.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/global_toolbox.c.ll
@@ -262,6 +263,8 @@ entry:
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll

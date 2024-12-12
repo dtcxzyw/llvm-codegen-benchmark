@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 227 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -197,7 +197,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -268,7 +267,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; Function Attrs: nounwind

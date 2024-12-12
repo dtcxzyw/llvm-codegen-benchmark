@@ -1,11 +1,34 @@
 
-; 319 occurrences:
+; 345 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; box2d/optimized/b2_contact.cpp.ll
 ; c3c/optimized/sema_expr.c.ll
-; clamav/optimized/readdb.c.ll
 ; clamav/optimized/yc.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; crow/optimized/example.cpp.ll
@@ -112,12 +135,9 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/af_packet.ll
 ; linux/optimized/ip_tunnel_core.ll
-; linux/optimized/nsproxy.ll
 ; linux/optimized/open.ll
 ; linux/optimized/r8169_main.ll
-; linux/optimized/raw.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -148,6 +168,10 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -319,6 +343,8 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -329,7 +355,7 @@ entry:
   ret i1 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
@@ -344,7 +370,6 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/output.ll
-; postgres/optimized/procarray.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -355,10 +380,9 @@ entry:
   ret i1 %6
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; chibicc/optimized/codegen.ll
 ; cpython/optimized/unicodeobject.ll
-; git/optimized/wildmatch.ll
 ; icu/optimized/ustrtrns.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/io_uring.ll
@@ -390,19 +414,6 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = or i1 %0, %1
   %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; clamav/optimized/upx.c.ll
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 252
-  %4 = icmp ugt i32 %3, 195
-  %5 = or i1 %0, %1
-  %6 = or i1 %4, %5
   ret i1 %6
 }
 

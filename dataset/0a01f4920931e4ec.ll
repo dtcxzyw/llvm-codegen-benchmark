@@ -79,7 +79,7 @@ entry:
   ret i64 %3
 }
 
-; 203 occurrences:
+; 204 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -93,7 +93,6 @@ entry:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -114,10 +113,12 @@ entry:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; cmake/optimized/xxhash.c.ll
 ; cpython/optimized/blake2b_impl.ll
 ; cpython/optimized/setobject.ll
+; darktable/optimized/print_settings.c.ll
 ; draco/optimized/hash_utils.cc.ll
 ; draco/optimized/mesh_cleanup.cc.ll
 ; draco/optimized/point_attribute.cc.ll
@@ -287,7 +288,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8320639771003045937
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -316,7 +317,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -368,7 +369,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

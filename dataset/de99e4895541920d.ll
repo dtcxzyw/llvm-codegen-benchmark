@@ -10,8 +10,8 @@
 define i16 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = or disjoint i32 %0, %4
   %6 = trunc nsw i32 %5 to i16
   ret i16 %6
 }

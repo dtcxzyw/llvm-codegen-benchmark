@@ -1,5 +1,5 @@
 
-; 185 occurrences:
+; 182 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/align_util.cc.ll
@@ -73,7 +73,6 @@
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
@@ -96,8 +95,6 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_alloc.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -190,7 +187,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

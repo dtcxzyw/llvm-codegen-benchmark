@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 12
   %3 = select i1 %2, i8 12, i8 0
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/assembler_x86.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000143(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000283(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 15
   %3 = select i1 %2, i8 12, i8 4

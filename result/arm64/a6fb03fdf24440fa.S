@@ -1,52 +1,50 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #4
-	shl	v0.4s, v0.4s, #31
-	ssra	v1.4s, v0.4s, #31
-	add	v0.4s, v1.4s, v2.4s
+	and	w8, w0, #0x1
+	sub	w8, w1, w8
+	add	w0, w8, #4
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v2.4s, v2.4h, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	shl	v1.4s, v2.4s, #31
-	movi	v2.2d, #0xffffffffffffffff
-	ssra	v0.4s, v1.4s, #31
-	add	v0.4s, v0.4s, v2.4s
+	mvn	w8, w1
+	orr	w8, w8, #0xfffffffe
+	add	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000035:                   // @func0000000000000035
+// %bb.0:                               // %entry
+	and	w8, w1, #0x1
+	sub	w8, w0, w8
+	add	w0, w8, #248
+	ret
+                                        // -- End function
+func0000000000000030:                   // @func0000000000000030
+// %bb.0:                               // %entry
+	mvn	w8, w1
+	orr	w8, w8, #0xfffffffe
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #1
-	shl	v0.4s, v0.4s, #31
-	ssra	v1.4s, v0.4s, #31
-	add	v0.4s, v1.4s, v2.4s
+	and	w8, w0, #0x1
+	sub	w8, w1, w8
+	add	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v2.4s, v2.4h, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	shl	v1.4s, v2.4s, #31
-	movi	v2.2d, #0xffffffffffffffff
-	ssra	v0.4s, v1.4s, #31
-	add	v0.4s, v0.4s, v2.4s
+	mvn	w8, w1
+	orr	w8, w8, #0xfffffffe
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	mov	w8, #64108                      // =0xfa6c
-	movk	w8, #10, lsl #16
-	shl	v0.4s, v0.4s, #31
-	ssra	v1.4s, v0.4s, #31
-	dup	v0.4s, w8
-	add	v0.4s, v1.4s, v0.4s
+	and	w8, w0, #0x1
+	sub	w8, w1, w8
+	add	w8, w8, #175, lsl #12           // =716800
+	add	w0, w8, #2668
 	ret
                                         // -- End function

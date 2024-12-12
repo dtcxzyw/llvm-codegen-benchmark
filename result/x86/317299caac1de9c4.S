@@ -1,4 +1,4 @@
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	movl	%edi, %eax
 	movabsq	$17179869172, %rcx              # imm = 0x3FFFFFFF4
 	addq	%rax, %rcx
@@ -6,7 +6,7 @@ func0000000000000188:                   # @func0000000000000188
 	cmpl	$6, %ecx
 	setae	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	movl	%edi, %eax
 	movabsq	$34359738364, %rcx              # imm = 0x7FFFFFFFC
 	addq	%rax, %rcx
@@ -14,7 +14,7 @@ func0000000000000181:                   # @func0000000000000181
 	testl	%ecx, %ecx
 	sete	%al
 	retq
-func000000000000018a:                   # @func000000000000018a
+func000000000000030a:                   # @func000000000000030a
 	movl	%edi, %eax
 	movabsq	$34359738364, %rcx              # imm = 0x7FFFFFFFC
 	addq	%rax, %rcx
@@ -22,7 +22,7 @@ func000000000000018a:                   # @func000000000000018a
 	testl	%ecx, %ecx
 	setg	%al
 	retq
-func000000000000038a:                   # @func000000000000038a
+func000000000000070a:                   # @func000000000000070a
 	movl	%edi, %eax
 	movabsq	$17179869176, %rcx              # imm = 0x3FFFFFFF8
 	addq	%rax, %rcx

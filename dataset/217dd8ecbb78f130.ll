@@ -1,13 +1,14 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; image-rs/optimized/30755d6iao7ojcvl.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:
-  %1 = xor i8 %0, 4
-  %2 = shl nuw i8 15, %1
+  %1 = xor i8 %0, 7
+  %2 = shl nuw i8 1, %1
   ret i8 %2
 }
 

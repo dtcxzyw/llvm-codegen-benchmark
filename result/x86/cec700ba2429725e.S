@@ -16,3 +16,9 @@ func0000000000000002:                   # @func0000000000000002
 	shlb	%cl, %al
 	orb	%dil, %al
 	retq
+func0000000000000000:                   # @func0000000000000000
+	movl	%esi, %ecx
+	movb	$3, %al
+	shlb	%cl, %al
+	orb	%dil, %al
+	retq

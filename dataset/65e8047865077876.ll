@@ -10,7 +10,7 @@
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0) #0 {
+define i1 @func0000000000000481(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -9

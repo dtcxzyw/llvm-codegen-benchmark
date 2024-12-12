@@ -10,19 +10,21 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 65536
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; hermes/optimized/synth.cpp.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TemplateName.cpp.ll
 ; luau/optimized/Parser.cpp.ll
@@ -38,7 +40,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 4294967295
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

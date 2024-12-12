@@ -13,7 +13,7 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a0, 524304
 	addi	a0, a0, -8
 	vand.vx	v10, v12, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsll.vi	v9, v9, 16
 	vor.vv	v8, v8, v9
 	ret

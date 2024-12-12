@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/http1.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; curl/optimized/libcurl_la-http1.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll

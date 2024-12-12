@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000003021(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -19,7 +19,7 @@ entry:
 ; linux/optimized/xfrm_state.ll
 ; slurm/optimized/job_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000318c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -34,7 +34,7 @@ entry:
 ; slurm/optimized/job_scheduler.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/write.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000003181(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/processor_perflib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c14(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000003024(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 3
   %4 = icmp eq ptr %1, null
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 12
   %4 = icmp eq ptr %1, null
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(i32 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000302c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null

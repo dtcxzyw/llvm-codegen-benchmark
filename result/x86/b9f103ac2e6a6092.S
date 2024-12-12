@@ -1,10 +1,10 @@
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	xorq	$2, %rsi
 	andl	$16, %edi
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	addq	$-32768, %rsi                   # imm = 0x8000
 	cmpq	$1793, %rsi                     # imm = 0x701
 	setb	%cl
@@ -12,14 +12,14 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	cmpq	$1, %rsi
 	setne	%cl
 	testb	$3, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpq	$1, %rsi
 	setne	%cl
 	testb	$3, %dil

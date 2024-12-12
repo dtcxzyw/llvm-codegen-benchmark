@@ -1,15 +1,23 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
-%class.btVector3.2706490 = type { [4 x float] }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%class.btVector3.2819204 = type { [4 x float] }
 
-; 61 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -68,10 +76,10 @@
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a6(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 80
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -82,10 +90,10 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001ea(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %3 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -106,43 +114,44 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr %class.btVector3.2706490, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 16
-  %5 = icmp slt i32 %1, 3
-  %6 = select i1 %5, ptr %4, ptr %0
-  ret ptr %6
-}
-
-; 4 occurrences:
+; 7 occurrences:
 ; lz4/optimized/lz4hc.c.ll
+; ncnn/optimized/deformableconv2d_x86.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector_op.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr ptr, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -8
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 32
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }
 
-; 3 occurrences:
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
+; 1 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %class.btVector3.2819204, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  %5 = icmp slt i32 %1, 3
+  %6 = select i1 %5, ptr %4, ptr %0
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a8(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000158(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -65536
-  %5 = icmp ugt i32 %1, 65536
+  %5 = icmp samesign ugt i32 %1, 65536
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }
@@ -151,11 +160,24 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000a1(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000001e1(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = icmp eq i32 %1, 0
+  %6 = select i1 %5, ptr %4, ptr %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001d8(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -65536
+  %5 = icmp samesign ugt i32 %1, 65536
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
 }

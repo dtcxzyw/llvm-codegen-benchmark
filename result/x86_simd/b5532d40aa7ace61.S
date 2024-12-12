@@ -36,7 +36,7 @@
 	.long	10                              # 0xa
 .LCPI0_3:
 	.zero	4,48
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	vpmovdb	%ymm0, %xmm1
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm2
 	vpaddb	.LCPI0_1(%rip), %xmm1, %xmm1

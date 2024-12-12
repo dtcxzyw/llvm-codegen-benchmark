@@ -3,14 +3,14 @@ func0000000000000004:                   # @func0000000000000004
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andi	a2, a2, -2
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	lui	a3, 1047552
 	and	a2, a2, a3
 	add	a1, a1, a2

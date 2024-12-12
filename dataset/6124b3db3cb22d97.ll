@@ -13,7 +13,7 @@
 ; grpc/optimized/pick_first.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64
@@ -27,7 +27,7 @@ entry:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000488(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64

@@ -19,7 +19,8 @@ entry:
   ret i32 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -44,7 +45,7 @@ entry:
   ret i32 %6
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -52,15 +53,26 @@ entry:
 ; postgres/optimized/array_selfuncs.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-ppi-antenna.c.ll
-; wireshark/optimized/packet-ppi-gps.c.ll
-; wireshark/optimized/packet-ppi-sensor.c.ll
-; wireshark/optimized/packet-ppi-vector.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 65535
   %4 = select i1 %3, i32 16, i32 0
+  %5 = select i1 %0, i32 %1, i32 %4
+  %6 = or disjoint i32 %5, 4
+  ret i32 %6
+}
+
+; 4 occurrences:
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 8388607
+  %4 = select i1 %3, i32 3, i32 2
   %5 = select i1 %0, i32 %1, i32 %4
   %6 = or disjoint i32 %5, 4
   ret i32 %6

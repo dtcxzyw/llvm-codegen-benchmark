@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 115 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -68,6 +68,13 @@
 ; llvm/optimized/TokenLexer.cpp.ll
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/environment.cpp.ll
 ; oiio/optimized/texoptions.cpp.ll

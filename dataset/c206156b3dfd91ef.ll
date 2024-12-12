@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 209 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; assimp/optimized/PlyLoader.cpp.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -53,7 +53,6 @@
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/sasa.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/updategroupscog.cpp.ll
@@ -70,7 +69,6 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -219,7 +217,7 @@ entry:
   ret float %2
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -239,15 +237,17 @@ entry:
 ; minetest/optimized/gameui.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; opencv/optimized/align.cpp.ll
-; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/fast.cpp.ll
 ; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/softmax_layer.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_hexwave.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; yosys/optimized/sta.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

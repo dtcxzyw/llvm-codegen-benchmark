@@ -8,7 +8,7 @@
 ; postgres/optimized/d2s_srv.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1114112
   %3 = icmp eq i32 %2, 0
@@ -23,7 +23,7 @@ entry:
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp eq i32 %2, 0

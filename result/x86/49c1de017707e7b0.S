@@ -28,3 +28,8 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqss	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	vaddss	%xmm0, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	setb	%al
+	retq

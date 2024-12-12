@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/bbrImage.c.ll
 ; abc/optimized/extraBddImage.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -45,7 +45,6 @@
 ; postgres/optimized/rangetypes_selfuncs.ll
 ; postgres/optimized/selfuncs.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quantlib/optimized/beta.ll
@@ -65,7 +64,7 @@
 define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 
@@ -109,7 +108,7 @@ entry:
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

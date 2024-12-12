@@ -1,12 +1,18 @@
 
-; 5 occurrences:
+; 11 occurrences:
 ; linux/optimized/buffer.ll
 ; llvm/optimized/Minidump.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; ruby/optimized/strftime.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, %0
@@ -22,6 +28,7 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -59,7 +66,6 @@ entry:
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; openusd/optimized/testUsdStageThreading.cpp.ll
-; postgres/optimized/shm_toc.ll
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/particleswarmoptimization.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -74,7 +80,7 @@ entry:
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000110(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, %0
@@ -86,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = icmp sgt i64 %3, %1
@@ -98,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/basearith.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000248(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = icmp ult i64 %3, %0

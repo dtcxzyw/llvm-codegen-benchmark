@@ -1,7 +1,13 @@
 
-; 240 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -150,7 +156,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -237,15 +242,14 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp eq i64 %5, 128102389400760775
   ret i1 %6
 }
@@ -285,7 +289,7 @@ entry:
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -313,7 +317,7 @@ entry:
 ; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -329,16 +333,16 @@ entry:
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ult i64 %5, 8
   ret i1 %6
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; duckdb/optimized/ub_duckdb_function.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -348,7 +352,6 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/column_family.cc.ll
@@ -367,7 +370,7 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 80
@@ -376,7 +379,9 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -397,7 +402,7 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
@@ -406,16 +411,11 @@ entry:
   ret i1 %6
 }
 
-; 25 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestVector.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
+; 18 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
@@ -424,21 +424,19 @@ entry:
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; hyperscan/optimized/slot_manager.cpp.ll
 ; libquic/optimized/hpack_header_table.cc.ll
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
-; minetest/optimized/collector.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
   %5 = add nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 7
+  %6 = icmp samesign ult i64 %5, 7
   ret i1 %6
 }
 
@@ -450,7 +448,7 @@ entry:
 ; rocksdb/optimized/blob_source.cc.ll
 ; wireshark/optimized/interface_toolbar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
@@ -459,10 +457,43 @@ entry:
   ret i1 %6
 }
 
+; 10 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; gromacs/optimized/muParserBase.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/slot_manager.cpp.ll
+; minetest/optimized/collector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 36
+  %5 = add nsw i64 %4, %0
+  %6 = icmp ult i64 %5, 65536
+  ret i1 %6
+}
+
+; 1 occurrences:
+; quantlib/optimized/bumpinstrumentjacobian.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 24
+  %5 = sub i64 0, %0
+  %6 = icmp eq i64 %4, %5
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 64
@@ -474,7 +505,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 64
@@ -498,12 +529,24 @@ entry:
 ; wireshark/optimized/traffic_tree.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, -24
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp slt i64 %5, 1
+  ret i1 %6
+}
+
+; 1 occurrences:
+; protobuf/optimized/descriptor_database.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 40
+  %5 = sub i64 0, %0
+  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -511,11 +554,11 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6
 }
@@ -524,7 +567,7 @@ entry:
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 2
@@ -536,7 +579,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 19

@@ -1,5 +1,5 @@
 
-; 293 occurrences:
+; 295 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -29,6 +29,9 @@
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; casadi/optimized/idas_ic.c.ll
 ; ceres/optimized/context_impl.cc.ll
@@ -86,7 +89,6 @@
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; gromacs/optimized/stophandler.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
@@ -271,7 +273,6 @@
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; verilator/optimized/V3StatsReport.cpp.ll
 ; wireshark/optimized/packet-isi.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-ldss.c.ll
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
@@ -293,6 +294,7 @@
 ; xgboost/optimized/gradient_index_page_source.cc.ll
 ; xgboost/optimized/sparse_page_dmatrix.cc.ll
 ; yosys/optimized/qwp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0) #0 {
 entry:

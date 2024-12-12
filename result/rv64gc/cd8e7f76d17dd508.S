@@ -17,14 +17,6 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a1, a1, 15
 	and	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
-	lui	a1, 184659
-	addi	a1, a1, 957
-	slli	a1, a1, 32
-	mul	a0, a0, a1
-	slli	a0, a0, 1
-	srli	a0, a0, 32
-	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a1, 80
 	mul	a0, a0, a1

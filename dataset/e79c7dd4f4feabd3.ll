@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/trees.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/trees.c.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/tcp_ipv4.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luajit/optimized/buildvm_fold.ll
 ; miniaudio/optimized/unity.c.ll
 ; openusd/optimized/entdec.c.ll
@@ -35,14 +34,17 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/trees.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; cmake/optimized/trees.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll
+; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

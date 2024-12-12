@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/util_uri.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000060a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -22,13 +22,13 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; php/optimized/logical_filters.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i32 %0, i8 %1) #0 {
+define i1 @func00000000000003f8(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i32
   %4 = mul nuw nsw i32 %0, 10
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, 255
+  %6 = icmp samesign ugt i32 %5, 255
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000601(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000604(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -82,7 +82,7 @@ entry:
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -96,7 +96,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000006ac(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -126,7 +126,7 @@ entry:
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000338(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000668(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -139,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; proj/optimized/utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i32 %0, i8 %1) #0 {
+define i1 @func00000000000006aa(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -152,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; proj/optimized/utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i8 %1) #0 {
+define i1 @func00000000000006a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32
@@ -165,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000060c(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i32

@@ -25,4 +25,16 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; nuttx/optimized/lib_libvscanf.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i8 %0) #0 {
+entry:
+  %1 = trunc nuw i8 %0 to i1
+  %2 = xor i1 %1, true
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }

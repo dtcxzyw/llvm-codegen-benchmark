@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4                               # 0x4
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsllw	$15, %xmm2, %xmm0

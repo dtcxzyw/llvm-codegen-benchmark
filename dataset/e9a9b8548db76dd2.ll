@@ -1,6 +1,6 @@
 
 ; 79 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -88,14 +88,11 @@ entry:
   ret i32 %5
 }
 
-; 29 occurrences:
+; 19 occurrences:
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cpython/optimized/dtoa.ll
-; faiss/optimized/IndexRowwiseMinMax.cpp.ll
-; faiss/optimized/ScalarQuantizer.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; hermes/optimized/dtoa.c.ll
-; icu/optimized/umutablecptrie.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libwebp/optimized/upsampling.c.ll
@@ -104,25 +101,38 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
-; linux/optimized/gen8_engine_cs.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InlineOrder.cpp.ll
-; mitsuba3/optimized/x86emithelper.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
-; wireshark/optimized/packet-ppi-antenna.c.ll
-; wireshark/optimized/packet-ppi-gps.c.ll
-; wireshark/optimized/packet-ppi-sensor.c.ll
-; wireshark/optimized/packet-ppi-vector.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16, i32 0
   %4 = icmp ult i32 %1, 16777216
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 10 occurrences:
+; faiss/optimized/IndexRowwiseMinMax.cpp.ll
+; faiss/optimized/ScalarQuantizer.cpp.ll
+; icu/optimized/umutablecptrie.ll
+; linux/optimized/gen8_engine_cs.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; mitsuba3/optimized/x86emithelper.cpp.ll
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 125, i32 860
+  %4 = icmp samesign ult i32 %1, 10
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -170,10 +180,10 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16, i32 0
-  %4 = icmp ugt i32 %1, 255
+  %4 = icmp samesign ugt i32 %1, 255
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

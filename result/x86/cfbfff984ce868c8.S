@@ -2,7 +2,7 @@ func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
 	andq	$-65536, %rax                   # imm = 0xFFFF0000
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andq	$-64, %rdi
 	leaq	64(%rdi), %rax
 	retq

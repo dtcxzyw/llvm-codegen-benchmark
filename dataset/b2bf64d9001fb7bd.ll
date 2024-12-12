@@ -1,12 +1,7 @@
 
-; 7 occurrences:
+; 2 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
-; openusd/optimized/refinement.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -17,7 +12,7 @@ entry:
   ret ptr %5
 }
 
-; 202 occurrences:
+; 205 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -160,8 +155,11 @@ entry:
 ; openspiel/optimized/laser_tag.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
+; openusd/optimized/fvarLevel.cpp.ll
+; openusd/optimized/refinement.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
@@ -227,19 +225,6 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %1, %4
   %5 = getelementptr nusw i8, ptr %0, i64 %.neg
-  ret ptr %5
-}
-
-; 2 occurrences:
-; cmake/optimized/zstd_decompress_block.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000080(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %.neg = sub i64 %1, %4
-  %5 = getelementptr i8, ptr %0, i64 %.neg
   ret ptr %5
 }
 

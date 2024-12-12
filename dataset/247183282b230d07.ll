@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/test_codecvt.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; clamav/optimized/scanner.c.ll
 ; freetype/optimized/winfnt.c.ll
@@ -21,9 +22,8 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/vmcore.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
@@ -37,7 +37,6 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/blf.c.ll
-; wireshark/optimized/hcidump.c.ll
 ; wireshark/optimized/packet-bt-utp.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-ranap.c.ll

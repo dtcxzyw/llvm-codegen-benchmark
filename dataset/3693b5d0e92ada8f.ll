@@ -18,6 +18,20 @@ entry:
   ret i32 %4
 }
 
+; 4 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
+; linux/optimized/af_inet.ll
+; lvgl/optimized/lv_color.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 360
+  %3 = mul nuw nsw i32 %0, 213
+  %4 = add nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; libevent/optimized/bufferevent_ratelim.c.ll
 ; redis/optimized/ae.ll
@@ -43,19 +57,6 @@ entry:
   %2 = udiv i32 %1, 100000000
   %3 = mul nsw i32 %0, -10
   %4 = add nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/numbers.cc.ll
-; linux/optimized/af_inet.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = udiv i32 %1, 10000
-  %3 = mul nuw nsw i32 %0, 246
-  %4 = add nuw nsw i32 %3, %2
   ret i32 %4
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000acc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sge i32 %3, %0
@@ -11,7 +11,7 @@ entry:
   ret i1 %6
 }
 
-; 313 occurrences:
+; 311 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -120,8 +120,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -326,7 +324,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, -3
@@ -340,7 +338,7 @@ entry:
 ; velox/optimized/ElementAt.cpp.ll
 ; velox/optimized/Slice.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000996(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sge i32 %3, %0
@@ -354,7 +352,7 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -366,7 +364,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000028c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 1
@@ -379,7 +377,7 @@ entry:
 ; gromacs/optimized/nbsearch.cpp.ll
 ; openblas/optimized/dlaed4.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -391,11 +389,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000696(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001d16(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sge i32 %3, %0
-  %5 = icmp ult i32 %3, 5
+  %5 = icmp samesign ult i32 %3, 5
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -403,7 +401,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-arp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000194(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sgt i32 %3, %0
@@ -415,7 +413,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ult i32 %3, %0
@@ -427,7 +425,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gro.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, %0
@@ -439,7 +437,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000196(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sge i32 %3, %0
@@ -451,7 +449,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000634(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001854(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0

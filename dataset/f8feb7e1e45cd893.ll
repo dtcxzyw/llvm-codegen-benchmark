@@ -1,5 +1,5 @@
 
-; 192 occurrences:
+; 191 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -162,7 +162,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -237,7 +236,7 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cvc5/optimized/proof_cnf_stream.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -247,6 +246,7 @@ entry:
 ; minetest/optimized/craftdef.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
 ; opencv/optimized/rmat.cpp.ll
+; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:

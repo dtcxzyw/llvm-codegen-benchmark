@@ -29,15 +29,21 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdi, %rcx
 	setbe	%al
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	decq	%rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	setle	%al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	decq	%rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi
 	sete	%al
+	retq
+func0000000000000092:                   # @func0000000000000092
+	incq	%rsi
+	xorl	%eax, %eax
+	cmpq	%rdi, %rsi
+	setae	%al
 	retq

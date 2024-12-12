@@ -41,7 +41,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsll.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
 	ret
-func000000000000000e:                   # @func000000000000000e
+func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v14, -1
 	vsll.vv	v14, v14, v12
@@ -49,7 +49,7 @@ func000000000000000e:                   # @func000000000000000e
 	vsll.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v14, -1
 	vsll.vv	v14, v14, v12

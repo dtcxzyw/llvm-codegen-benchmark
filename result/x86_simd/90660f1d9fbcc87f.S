@@ -164,6 +164,7 @@ func000000000000000e:                   # @func000000000000000e
 	vzeroupper
 	retq
 .LCPI7_0:
+	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
 	.byte	1                               # 0x1
@@ -171,20 +172,19 @@ func000000000000000e:                   # @func000000000000000e
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-	.byte	0                               # 0x0
+	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
 	.byte	1                               # 0x1
-	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 .LCPI7_1:
+	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
 	.byte	1                               # 0x1
-	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0

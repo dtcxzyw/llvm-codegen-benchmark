@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$2, %rax
 	setae	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000054:                   # @func0000000000000054
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
@@ -22,7 +22,15 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	$4096, %rax                     # imm = 0x1000
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000104:                   # @func0000000000000104
+	movl	%edx, %ecx
+	leaq	(%rdi,%rsi), %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpq	$4096, %rax                     # imm = 0x1000
+	setb	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
@@ -30,7 +38,7 @@ func0000000000000028:                   # @func0000000000000028
 	shrq	$32, %rax
 	setne	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx

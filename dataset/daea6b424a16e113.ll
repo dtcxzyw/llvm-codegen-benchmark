@@ -6,7 +6,7 @@
 ; openusd/optimized/reference.cpp.ll
 ; postgres/optimized/dict_thesaurus.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i32 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = trunc i64 %3 to i32

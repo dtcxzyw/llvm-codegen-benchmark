@@ -31,7 +31,7 @@ func000000000000003c:                   # @func000000000000003c
 	subq	%rsi, %rax
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	movl	%edx, %eax
 	subq	%rsi, %rax
 	leaq	(%rdi,%rax,4), %rax

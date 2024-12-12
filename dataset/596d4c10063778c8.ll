@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = icmp slt i64 %1, 0

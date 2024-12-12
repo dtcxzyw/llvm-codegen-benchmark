@@ -91,6 +91,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nsw i64 -1, %3
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll

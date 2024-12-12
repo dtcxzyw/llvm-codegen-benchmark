@@ -1,4 +1,4 @@
-func00000000000008cc:                   # @func00000000000008cc
+func000000000000218c:                   # @func000000000000218c
 	imulq	$104, %rsi, %rax
 	imulq	$152, %rdi, %rcx
 	cmpq	%rax, %rcx

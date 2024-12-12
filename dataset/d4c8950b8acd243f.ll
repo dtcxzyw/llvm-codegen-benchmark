@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -62,9 +62,7 @@
 ; opencv/optimized/types.cpp.ll
 ; openjdk/optimized/c1_Instruction.ll
 ; openssl/optimized/libcrypto-lib-decoder_pkey.ll
-; openssl/optimized/libcrypto-lib-o_names.ll
 ; openssl/optimized/libcrypto-shlib-decoder_pkey.ll
-; openssl/optimized/libcrypto-shlib-o_names.ll
 ; openusd/optimized/tetMesh.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -97,7 +95,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

@@ -1,11 +1,10 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -45,9 +44,10 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/deflate.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; php/optimized/zend_alloc.ll

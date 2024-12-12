@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 103 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDsd.c.ll
@@ -62,7 +62,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -100,7 +99,6 @@
 ; tinyrenderer/optimized/model.cpp.ll
 ; wireshark/optimized/color_utils.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -109,7 +107,7 @@
 define i32 @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fptosi double %3 to i32
   ret i32 %4
 }

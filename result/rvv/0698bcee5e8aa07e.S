@@ -21,7 +21,7 @@ func00000000000000c3:                   # @func00000000000000c3
 	vsrl.vi	v8, v8, 4
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	lui	a0, 1048540
 	addi	a0, a0, 1359
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -32,5 +32,16 @@ func0000000000000043:                   # @func0000000000000043
 	vmulhu.vx	v8, v8, a0
 	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 15
+	vadd.vv	v8, v8, v10
+	ret
+func0000000000000183:                   # @func0000000000000183
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vi	v0, v10, 4
+	vmv.v.i	v10, 0
+	lui	a0, 838861
+	vmerge.vim	v10, v10, 1, v0
+	addi	a0, a0, -819
+	vmulhu.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 3
 	vadd.vv	v8, v8, v10
 	ret

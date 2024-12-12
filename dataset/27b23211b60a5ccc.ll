@@ -1,5 +1,6 @@
 
-; 27 occurrences:
+; 28 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/Host.cpp.ll
@@ -28,7 +29,7 @@
 ; wireshark/optimized/packet-wassp.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp eq i32 %2, 0
@@ -61,7 +62,7 @@ entry:
   %2 = shl i32 %1, 19
   %3 = and i32 %2, 134217728
   %4 = xor i32 %3, 134217728
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -69,7 +70,7 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %.not = icmp eq i32 %2, 0
@@ -81,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %.not = icmp eq i32 %2, 0

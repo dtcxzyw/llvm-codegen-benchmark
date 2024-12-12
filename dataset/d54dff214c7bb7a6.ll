@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; linux/optimized/genetlink.ll
 ; linux/optimized/netdev.ll
 ; openjdk/optimized/jfrDeprecationManager.ll
 ; openjdk/optimized/jfrTypeSet.ll
@@ -24,7 +25,7 @@ entry:
 define i1 @func000000000000000c(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 5, i16 8197
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   %4 = icmp ne i16 %3, 0
   ret i1 %4
 }

@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0

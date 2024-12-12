@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
@@ -35,12 +35,25 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 %0, %2
   %4 = mul nsw i64 %3, 24
+  ret i64 %4
+}
+
+; 2 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = sub nuw i64 %0, %2
+  %4 = mul i64 %3, 36
   ret i64 %4
 }
 

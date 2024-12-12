@@ -28,13 +28,11 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; c3c/optimized/sema_builtins.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; gromacs/optimized/dlarnv.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/intel_display.ll
@@ -117,9 +115,21 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_draw_label.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 64
+  %3 = zext i1 %2 to i32
+  %4 = shl nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 11 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
@@ -131,15 +141,13 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 4
+  %2 = icmp eq i32 %1, 9
   %3 = zext i1 %2 to i32
   %4 = shl nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
-; libwebp/optimized/pnmdec.c.ll
-; linux/optimized/isadma.ll
+; 1 occurrences:
 ; openusd/optimized/avif.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000043(i32 %0, i32 %1) #0 {

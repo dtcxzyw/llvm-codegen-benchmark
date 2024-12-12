@@ -10,11 +10,6 @@ func0000000000000007:                   # @func0000000000000007
 	srliw	a0, a0, 6
 	addi	a0, a0, 1
 	ret
-func00000000000000d7:                   # @func00000000000000d7
-	addi	a0, a0, -7
-	srliw	a0, a0, 3
-	addi	a0, a0, 1
-	ret
 func0000000000000017:                   # @func0000000000000017
 	addi	a0, a0, -2
 	srliw	a0, a0, 1

@@ -285,7 +285,7 @@ entry:
   ret i64 %6
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
@@ -326,6 +326,7 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i8 %0, i8 %1) #0 {
 entry:

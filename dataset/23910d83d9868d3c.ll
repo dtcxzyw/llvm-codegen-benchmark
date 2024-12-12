@@ -1,7 +1,9 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -25,7 +27,7 @@
 define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fadd float %4, %0
   ret float %5
 }
@@ -38,8 +40,8 @@ entry:
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %3, %1
-  %5 = fadd float %4, %0
+  %4 = fmul float %1, %3
+  %5 = fadd float %0, %4
   ret float %5
 }
 

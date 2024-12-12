@@ -27,13 +27,6 @@ func0000000000000025:                   # @func0000000000000025
 	li	a0, -6
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000000f:                   # @func000000000000000f
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 2
-	li	a0, 3
-	vmacc.vx	v8, a0, v10
-	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

@@ -20,7 +20,7 @@ entry:
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000165(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000265(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = icmp slt i32 %0, %1
@@ -37,7 +37,7 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000264(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %0, %2

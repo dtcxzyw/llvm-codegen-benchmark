@@ -14,3 +14,11 @@ func0000000000000002:                   # @func0000000000000002
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
+.LCPI2_0:
+	.long	4241489919                      # 0xfccfffff
+.LCPI2_1:
+	.long	52428800                        # 0x3200000
+func0000000000000001:                   # @func0000000000000001
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogd	$254, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
+	retq

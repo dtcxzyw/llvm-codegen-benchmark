@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i8 %0) #0 {
-entry:
-  %1 = zext nneg i8 %0 to i64
-  %2 = add nuw nsw i64 %1, 4294967282
-  %3 = and i64 %2, 4294967295
-  %4 = shl nsw i64 -1, %3
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; openjdk/optimized/PathCharsValidator.ll
 ; openusd/optimized/av1_inv_txfm1d.c.ll

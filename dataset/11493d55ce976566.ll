@@ -1,14 +1,14 @@
 
-%"class.std::__1::basic_string.2490584" = type { %"class.std::__1::__compressed_pair.10.2490585" }
-%"class.std::__1::__compressed_pair.10.2490585" = type { %"struct.std::__1::__compressed_pair_elem.11.2490586" }
-%"struct.std::__1::__compressed_pair_elem.11.2490586" = type { %"struct.std::__1::basic_string<char>::__rep.2490587" }
-%"struct.std::__1::basic_string<char>::__rep.2490587" = type { %union.anon.2490588 }
-%union.anon.2490588 = type { %"struct.std::__1::basic_string<char>::__long.2490589" }
-%"struct.std::__1::basic_string<char>::__long.2490589" = type { %struct.anon.12.2490590, i64, ptr }
-%struct.anon.12.2490590 = type { i64 }
-%"struct.mold::elf::ElfShdr.2522794" = type { %"class.mold::LittleEndian.2522760", %"class.mold::LittleEndian.2522760", %"class.mold::LittleEndian.3.2522777", %"class.mold::LittleEndian.3.2522777", %"class.mold::LittleEndian.3.2522777", %"class.mold::LittleEndian.3.2522777", %"class.mold::LittleEndian.2522760", %"class.mold::LittleEndian.2522760", %"class.mold::LittleEndian.3.2522777", %"class.mold::LittleEndian.3.2522777" }
-%"class.mold::LittleEndian.2522760" = type { [4 x i8] }
-%"class.mold::LittleEndian.3.2522777" = type { [8 x i8] }
+%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
+%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
+%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
+%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
+%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
+%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
+%struct.anon.12.2606011 = type { i64 }
+%"struct.mold::elf::ElfShdr.2637203" = type { %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186" }
+%"class.mold::LittleEndian.2637169" = type { [4 x i8] }
+%"class.mold::LittleEndian.3.2637186" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr %"class.std::__1::basic_string.2490584", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::__1::basic_string.2606005", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -75,11 +75,12 @@ entry:
   ret ptr %5
 }
 
-; 120 occurrences:
+; 121 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
+; cvc5/optimized/tableau.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -197,11 +198,11 @@ entry:
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw %"struct.mold::elf::ElfShdr.2522794", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.2637203", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -243,7 +244,7 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -254,6 +255,7 @@ entry:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
+; hwloc/optimized/topology-linux.ll
 ; icu/optimized/decNumber.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -299,7 +301,6 @@ entry:
 ; llvm/optimized/AArch64PostCoalescerPass.cpp.ll
 ; llvm/optimized/FormattedStream.cpp.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/PHIElimination.cpp.ll
@@ -311,6 +312,7 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -405,16 +407,15 @@ entry:
 ; yosys/optimized/yosys.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 3 occurrences:
-; cmake/optimized/cmCursesLongMessageForm.cxx.ll
+; 2 occurrences:
 ; lief/optimized/BinaryParser.cpp.ll
 ; openblas/optimized/utest_main.c.ll
 ; Function Attrs: nounwind
@@ -423,6 +424,28 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %3, %1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/InstrProfReader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; cmake/optimized/cmCursesLongMessageForm.cxx.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

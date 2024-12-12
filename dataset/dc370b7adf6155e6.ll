@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; cpython/optimized/cfield.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -60,7 +61,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -72,8 +73,8 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = and i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -83,7 +84,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

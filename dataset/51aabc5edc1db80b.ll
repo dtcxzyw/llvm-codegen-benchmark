@@ -1,9 +1,11 @@
 
-; 219 occurrences:
+; 221 occurrences:
 ; abseil-cpp/optimized/discrete_distribution.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/cvodes_io.c.ll
@@ -230,6 +232,8 @@ entry:
 ; 155 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -278,10 +282,8 @@ entry:
 ; oiio/optimized/benchmark.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlasd4.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; opencv/optimized/PnPProblem.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll
@@ -391,7 +393,9 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/transformationcoordinate.cpp.ll
 ; ipopt/optimized/IpExpansionMatrix.ll
@@ -416,8 +420,11 @@ entry:
   ret i1 %3
 }
 
-; 75 occurrences:
+; 78 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; casadi/optimized/sx_elem.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -500,8 +507,12 @@ entry:
   ret i1 %3
 }
 
-; 47 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -556,9 +567,11 @@ entry:
   ret i1 %3
 }
 
-; 107 occurrences:
+; 110 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -663,12 +676,23 @@ entry:
 ; sundials/optimized/idas_ls.c.ll
 ; sundials/optimized/nvector_serial.c.ll
 ; sundials/optimized/sunlinsol_sptfqmr.c.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, %1
   %3 = fcmp ugt double %2, 0.000000e+00
+  ret i1 %3
+}
+
+; 1 occurrences:
+; openjdk/optimized/compilerDefinitions.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %0, %1
+  %3 = fcmp ueq double %2, 0x7FF0000000000000
   ret i1 %3
 }
 
@@ -709,7 +733,7 @@ entry:
   ret i1 %3
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; icu/optimized/nfrs.ll
 ; openblas/optimized/dbdsqr.c.ll
@@ -742,7 +766,6 @@ entry:
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/gdal-image.cpp.ll
@@ -782,8 +805,10 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; opencv/optimized/colored_kinfu.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/dynafu.cpp.ll
@@ -796,7 +821,20 @@ entry:
 define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, %1
-  %3 = fcmp ule double %2, 9.210000e+00
+  %3 = fcmp ule double %2, 0.000000e+00
+  ret i1 %3
+}
+
+; 4 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; openblas/optimized/dbdsqr.c.ll
+; opencv/optimized/degeneracy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000d(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %0, %1
+  %3 = fcmp uge double %2, 0.000000e+00
   ret i1 %3
 }
 
@@ -820,17 +858,6 @@ define i1 @func000000000000000e(double %0, double %1) #0 {
 entry:
   %2 = fmul double %0, %1
   %3 = fcmp ord double %2, 0.000000e+00
-  ret i1 %3
-}
-
-; 2 occurrences:
-; openblas/optimized/dbdsqr.c.ll
-; opencv/optimized/degeneracy.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000d(double %0, double %1) #0 {
-entry:
-  %2 = fmul double %0, %1
-  %3 = fcmp uge double %2, 0.000000e+00
   ret i1 %3
 }
 

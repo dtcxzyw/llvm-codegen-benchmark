@@ -166,7 +166,7 @@
 ; ncnn/optimized/unaryop_x86_avx512.cpp.ll
 ; ncnn/optimized/unaryop_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 15
   %3 = add nuw nsw i32 %2, 16
@@ -184,7 +184,7 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; wireshark/optimized/charsets.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 3
   %3 = add i32 %2, 8
@@ -199,7 +199,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 7
   %3 = add nuw i32 %2, 8
@@ -216,7 +216,7 @@ entry:
 ; z3/optimized/maxcore.cpp.ll
 ; z3/optimized/totalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
   %3 = add i32 %2, 2

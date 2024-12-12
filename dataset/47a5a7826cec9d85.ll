@@ -1,5 +1,6 @@
 
-; 68 occurrences:
+; 89 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/vector_hash.cpp.ll
 ; linux/optimized/svcauth_unix.ll
@@ -68,6 +69,26 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9rc82w53bq52eg6b6q5l2akbg.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -94,12 +115,12 @@ entry:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/to_chars.ll
 ; freetype/optimized/autofit.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/cpu_entry_area.ll
-; linux/optimized/int_log.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -142,13 +163,27 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 20 occurrences:
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -158,45 +193,19 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; linux/optimized/lib.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = mul nuw nsw i64 %1, 15
   %3 = lshr i64 %2, 2
-  ret i64 %3
-}
-
-; 6 occurrences:
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/VTableBuilder.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0) #0 {
-entry:
-  %1 = zext nneg i32 %0 to i64
-  %2 = mul i64 %1, 2082041510483722240
-  %3 = lshr exact i64 %2, 31
-  ret i64 %3
-}
-
-; 2 occurrences:
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = zext i32 %0 to i64
-  %2 = mul i64 %1, 2082041510483722240
-  %3 = lshr exact i64 %2, 31
   ret i64 %3
 }
 

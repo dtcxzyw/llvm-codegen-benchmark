@@ -18,6 +18,11 @@ func000000000000006a:                   # @func000000000000006a
 	subl	%esi, %edi
 	leal	-38(%rdi), %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rsi,%rdx), %eax
+	notl	%eax
+	addl	%edi, %eax
+	retq
 func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	subl	%esi, %edi

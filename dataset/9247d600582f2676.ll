@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 3
   %3 = icmp eq i8 %2, %0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/Utf8ComponentClass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, -64
   %3 = icmp ult i8 %2, %0

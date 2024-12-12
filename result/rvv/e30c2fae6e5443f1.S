@@ -15,7 +15,7 @@ func000000000000001b:                   # @func000000000000001b
 	vsrl.vv	v10, v10, v14
 	li	a0, 255
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -25,5 +25,5 @@ func0000000000000019:                   # @func0000000000000019
 	vsrl.vv	v10, v10, v14
 	li	a0, 255
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

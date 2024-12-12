@@ -1,9 +1,11 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll

@@ -3,7 +3,7 @@
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741824
   %4 = icmp ne i32 %3, 0

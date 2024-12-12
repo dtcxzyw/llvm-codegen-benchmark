@@ -1,22 +1,11 @@
 
-%"union.std::aligned_storage<16, 8>::type.2571952" = type { [16 x i8] }
-%struct.NodeNeighbor.2578067 = type { %struct.MapNode.2578000, i8, %"class.irr::core::vector3d.2577966" }
-%struct.MapNode.2578000 = type { i16, i8, i8 }
-%"class.irr::core::vector3d.2577966" = type { i16, i16, i16 }
-%struct.VirtIOMMIOQueue.2594212 = type { i16, i8, [2 x i32], [2 x i32], [2 x i32] }
-%"class.std::optional.38.3123517" = type { %"struct.std::_Optional_base.39.3123518" }
-%"struct.std::_Optional_base.39.3123518" = type { %"struct.std::_Optional_payload.41.3123519" }
-%"struct.std::_Optional_payload.41.3123519" = type { %"struct.std::_Optional_payload.base.45.3123520", [7 x i8] }
-%"struct.std::_Optional_payload.base.45.3123520" = type { %"struct.std::_Optional_payload_base.base.44.3123521" }
-%"struct.std::_Optional_payload_base.base.44.3123521" = type { %"union.std::_Optional_payload_base<llvm::pdb::DbiStreamBuilder::DebugStream>::_Storage.3123522", i8 }
-%"union.std::_Optional_payload_base<llvm::pdb::DbiStreamBuilder::DebugStream>::_Storage.3123522" = type { %"struct.llvm::pdb::DbiStreamBuilder::DebugStream.3123523" }
-%"struct.llvm::pdb::DbiStreamBuilder::DebugStream.3123523" = type <{ %"class.std::function.3123513", i32, i16, [2 x i8] }>
-%"class.std::function.3123513" = type { %"class.std::_Function_base.3123514", ptr }
-%"class.std::_Function_base.3123514" = type { %"union.std::_Any_data.3123515", ptr }
-%"union.std::_Any_data.3123515" = type { %"union.std::_Nocopy_types.3123516" }
-%"union.std::_Nocopy_types.3123516" = type { { i64, i64 } }
-%struct.minstrel_mcs_group_data.3343087 = type { i8, i8, [4 x i16], i16, [10 x %struct.minstrel_rate_stats.3343088] }
-%struct.minstrel_rate_stats.3343088 = type { i16, i16, i16, i16, i32, i32, i16, i16, i8, i8, i8 }
+%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
+%struct.NodeNeighbor.2692241 = type { %struct.MapNode.2692174, i8, %"class.irr::core::vector3d.2692140" }
+%struct.MapNode.2692174 = type { i16, i8, i8 }
+%"class.irr::core::vector3d.2692140" = type { i16, i16, i16 }
+%struct.VirtIOMMIOQueue.2707831 = type { i16, i8, [2 x i32], [2 x i32], [2 x i32] }
+%struct.minstrel_mcs_group_data.3532037 = type { i8, i8, [4 x i16], i16, [10 x %struct.minstrel_rate_stats.3532038] }
+%struct.minstrel_rate_stats.3532038 = type { i16, i16, i16, i16, i32, i32, i16, i16, i8, i8, i8 }
 
 ; 16 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -36,14 +25,14 @@
 ; velox/optimized/InPredicate.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2571952"], ptr %0, i64 0, i64 %2, i32 0, i64 8
+  %3 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %0, i64 0, i64 %2, i32 0, i64 8
   ret ptr %3
 }
 
-; 35 occurrences:
+; 53 occurrences:
 ; abc/optimized/compress.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -68,22 +57,40 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openspiel/optimized/ABsearch.cpp.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/go_board.cc.ll
+; openspiel/optimized/phantom_go_board.cc.ll
+; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; typst-rs/optimized/5bbfp39e2yjrl2ey.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4geaf703ae2lxyqg.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr [6 x %struct.NodeNeighbor.2578067], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [6 x %struct.NodeNeighbor.2692241], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -102,24 +109,10 @@ entry:
 ; qemu/optimized/hw_virtio_virtio-mmio.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr [1024 x %struct.VirtIOMMIOQueue.2594212], ptr %0, i64 0, i64 %2, i32 2
-  ret ptr %3
-}
-
-; 5 occurrences:
-; llvm/optimized/DbiStreamBuilder.cpp.ll
-; openspiel/optimized/TransTableL.cpp.ll
-; openspiel/optimized/go_board.cc.ll
-; openspiel/optimized/phantom_go_board.cc.ll
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = getelementptr [11 x %"class.std::optional.38.3123517"], ptr %0, i64 0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr [1024 x %struct.VirtIOMMIOQueue.2707831], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -128,10 +121,10 @@ entry:
 ; linux/optimized/process_64.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr [42 x %struct.minstrel_mcs_group_data.3343087], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [42 x %struct.minstrel_mcs_group_data.3532037], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

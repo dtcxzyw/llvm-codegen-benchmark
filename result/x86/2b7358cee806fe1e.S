@@ -5,9 +5,9 @@ func000000000000000f:                   # @func000000000000000f
 	subq	%rdi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	incl	%esi
+	addl	$2, %esi
 	movslq	%esi, %rax
-	sarq	$3, %rdi
+	sarq	$2, %rdi
 	subq	%rdi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

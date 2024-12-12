@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000b02(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000858(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -53,7 +53,7 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -66,7 +66,7 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a18(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 1903126886
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000398(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000b18(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0

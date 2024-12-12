@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; linux/optimized/drm_format_helper.ll
@@ -16,7 +16,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -43,12 +42,12 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 24
   %3 = and i32 %2, 2130706432
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 16
   ret i32 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -58,12 +57,14 @@ entry:
 ; openjdk/optimized/utf_util.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = and i32 %2, 458752
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 16
   ret i32 %5
 }
@@ -76,7 +77,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 5
   %3 = and i32 %2, 3840
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr exact i32 %4, 6
   ret i32 %5
 }
@@ -97,7 +98,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
   %3 = and i32 %2, 786432
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 16
   ret i32 %5
 }
@@ -109,7 +110,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
   %3 = and i32 %2, 262144
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = lshr i32 %4, 8
   ret i32 %5
 }

@@ -2,7 +2,7 @@
 	.quad	-12                             # 0xfffffffffffffff4
 .LCPI0_1:
 	.quad	8589934584                      # 0x1fffffff8
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpandq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0

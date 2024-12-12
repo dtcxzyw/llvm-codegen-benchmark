@@ -1,5 +1,5 @@
 
-; 219 occurrences:
+; 218 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -190,7 +190,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -220,7 +219,7 @@
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
@@ -244,7 +243,7 @@ entry:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 1
@@ -252,28 +251,20 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libquic/optimized/d1_both.c.ll
-; llvm/optimized/BitcodeReader.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/flann_search_dataset.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
 ; openjdk/optimized/bitMap.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
-; quantlib/optimized/burley2020sobolrsg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = add nuw nsw i64 %2, 32
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
@@ -284,7 +275,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; velox/optimized/SequenceVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = add nuw nsw i64 %2, 8
@@ -292,15 +283,44 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 9 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/flann_search_dataset.cpp.ll
+; opencv/optimized/miniflann.cpp.ll
+; opencv/optimized/ppf_helpers.cpp.ll
+; opencv/optimized/warpfield.cpp.ll
+; quantlib/optimized/burley2020sobolrsg.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = add nuw nsw i64 %2, 1
+  %4 = icmp ult i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; vcpkg/optimized/cofffilereader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 2
+  %3 = add nsw i64 %2, -1
+  %4 = icmp samesign ult i64 %3, %0
+  ret i1 %4
+}
+
+; 5 occurrences:
 ; darktable/optimized/introspection_highpass.c.ll
 ; lua/optimized/ltable.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = add nsw i64 %2, -1
@@ -308,10 +328,15 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; lief/optimized/SignatureParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 2
@@ -322,7 +347,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, 1
@@ -333,7 +358,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nuw nsw i64 %2, 1
@@ -346,7 +371,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; linux/optimized/swap_state.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = add nsw i64 %2, -1
@@ -359,7 +384,7 @@ entry:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 37
   %3 = add nsw i64 %2, -1
@@ -370,22 +395,11 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/invblock.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 2
-  %3 = add nsw i64 %2, -1
-  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 
@@ -395,7 +409,7 @@ entry:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw i64 %2, 2
@@ -406,7 +420,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/set_memory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = add nsw i64 %2, -1
@@ -417,7 +431,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_bisectmodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = add nuw nsw i64 %2, 1

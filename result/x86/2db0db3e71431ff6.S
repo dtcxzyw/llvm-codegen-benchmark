@@ -22,3 +22,15 @@ func0000000000000045:                   # @func0000000000000045
 	sarq	$4, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000065:                   # @func0000000000000065
+	subq	%rsi, %rdx
+	leaq	16(%rdx), %rax
+	sarq	$4, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000064:                   # @func0000000000000064
+	subq	%rsi, %rdx
+	leaq	8(%rdx), %rax
+	sarq	$2, %rax
+	addq	%rdi, %rax
+	retq

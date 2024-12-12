@@ -27,10 +27,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/widget.cpp.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i1 %0, i32 %1, i64 %2) #0 {
 entry:

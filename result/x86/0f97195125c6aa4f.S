@@ -16,9 +16,3 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %al
 	movzbl	%al, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	$65536, %esi                    # imm = 0x10000
-	setb	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	retq

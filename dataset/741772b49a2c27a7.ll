@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/RISCVTargetParser.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

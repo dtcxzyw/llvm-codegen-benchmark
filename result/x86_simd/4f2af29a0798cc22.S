@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [64,64,64,64,64,64,64,64]
 	vptestnmd	%ymm3, %ymm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3 {%k1} # ymm3 {%k1} = [9,9,9,9,9,9,9,9]
-	vpternlogd	$254, %ymm1, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | ymm1
+	vpternlogd	$254, %ymm3, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm3
 	retq
 .LCPI1_0:
 	.long	14680064                        # 0xe00000
@@ -48,7 +48,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	143                             # 0x8f
 .LCPI4_2:
 	.long	32767                           # 0x7fff
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	.LCPI4_1(%rip){1to8}, %ymm2, %k1
 	vorps	.LCPI4_2(%rip){1to8}, %ymm1, %ymm1 {%k1}

@@ -10,14 +10,12 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; git/optimized/ewah_bitmap.ll
 ; linux/optimized/compress.ll
-; linux/optimized/machine_kexec_64.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/snapshot.ll
 ; llvm/optimized/VNCoercion.cpp.ll
@@ -32,7 +30,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
@@ -48,6 +46,7 @@ entry:
 ; qemu/optimized/system_physmem.c.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

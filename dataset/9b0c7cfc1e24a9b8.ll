@@ -47,7 +47,7 @@ define float @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = uitofp i64 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

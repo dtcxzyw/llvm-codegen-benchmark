@@ -11,7 +11,7 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp slt i32 %2, 0
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/DrawLine.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000069(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp sgt i32 %2, 0
@@ -38,12 +38,12 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i32 %2, 100
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -58,7 +58,7 @@ entry:
 ; openusd/optimized/string-to-double.cc.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i32 %2, 45
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000098(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp slt i32 %2, 0
@@ -79,9 +79,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; linux/optimized/extents.ll
+; lvgl/optimized/lv_scale.ll
 ; wireshark/optimized/packet-http2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -89,7 +90,7 @@ entry:
   %3 = sub i32 0, %1
   %4 = icmp eq i32 %2, 0
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -128,7 +129,7 @@ entry:
   %3 = sub i32 0, %1
   %.not = icmp eq i32 %2, 0
   %4 = select i1 %.not, i32 %1, i32 %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

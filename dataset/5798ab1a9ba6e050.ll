@@ -1,5 +1,5 @@
 
-; 221 occurrences:
+; 220 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/ioWriteBook.c.ll
@@ -25,7 +25,6 @@
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/index_decoder.c.ll
 ; cmake/optimized/index_encoder.c.ll
-; cmake/optimized/stream_buffer_encoder.c.ll
 ; cmake/optimized/uv-common.c.ll
 ; cpython/optimized/_testcapimodule.ll
 ; cpython/optimized/abstract.ll
@@ -50,7 +49,6 @@
 ; hdf5/optimized/H5TB.c.ll
 ; hdf5/optimized/h5stat.c.ll
 ; hwloc/optimized/topology-linux.ll
-; icu/optimized/cmemory.ll
 ; icu/optimized/locdspnm.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/translit.ll
@@ -83,10 +81,9 @@
 ; libwebp/optimized/webpdec.c.ll
 ; libzmq/optimized/proxy.cpp.ll
 ; lief/optimized/cmac.c.ll
-; linux/optimized/device.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/qos.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_obj_style.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; node/optimized/core.ll
@@ -220,18 +217,20 @@
 ; wolfssl/optimized/wc_port.c.ll
 ; wolfssl/optimized/wolfmath.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; cpython/optimized/pegen.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; git/optimized/midx.ll
@@ -255,22 +254,117 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; openssl/optimized/libdefault-lib-drbg_ctr.ll
 ; openssl/optimized/openssl-bin-x509.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/topocentric.cpp.ll
 ; qemu/optimized/net_socket.c.ll
 ; ruby/optimized/thread.ll
 ; wireshark/optimized/tshark.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000618(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
 }
 
-; 29 occurrences:
+; 125 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/contract.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/execution_monitor.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; clamav/optimized/pdfng.c.ll
 ; cpython/optimized/posixmodule.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -301,16 +395,16 @@ entry:
 ; slurm/optimized/gres.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000630(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6
 }
 
-; 250 occurrences:
+; 245 occurrences:
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/freshclam.c.ll
 ; cmake/optimized/filter_buffer_decoder.c.ll
@@ -341,7 +435,6 @@ entry:
 ; libwebp/optimized/webp_dec.c.ll
 ; linux/optimized/expfs.ll
 ; linux/optimized/led-triggers.ll
-; linux/optimized/qos.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/trace_events_filter.ll
@@ -375,14 +468,12 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-type_indexed.ll
 ; openmpi/optimized/libmpi_c_profile_la-type_vector.ll
 ; openssl/optimized/cmp_client_test-bin-cmp_mock_srv.ll
-; openssl/optimized/libcrypto-lib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-property.ll
 ; openssl/optimized/libcrypto-lib-srp_lib.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll
-; openssl/optimized/libcrypto-shlib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
@@ -405,7 +496,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
-; openssl/optimized/libtestutil-lib-tests.ll
 ; openssl/optimized/openssl-bin-cmp_mock_srv.ll
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -499,7 +589,6 @@ entry:
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/packet_list_record.cpp.ll
-; wireshark/optimized/plugin_if.c.ll
 ; wireshark/optimized/pref_models.cpp.ll
 ; wireshark/optimized/preference_editor_frame.cpp.ll
 ; wireshark/optimized/preferences_dialog.cpp.ll
@@ -562,10 +651,10 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000082(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -604,10 +693,10 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; qemu/optimized/net_socket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000098(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6
@@ -616,22 +705,35 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000602(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq ptr %0, null
   %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000604(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = or i1 %3, %0
+  %5 = icmp eq ptr %1, null
+  %6 = or i1 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; grpc/optimized/composite_credentials.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000b0(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = or i1 %4, %5
   ret i1 %6

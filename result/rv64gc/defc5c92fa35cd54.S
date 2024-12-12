@@ -3,20 +3,18 @@ func000000000000000a:                   # @func000000000000000a
 	mulw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func0000000000000184:                   # @func0000000000000184
+	lui	a1, 10486
+	addiw	a1, a1, -983
+	mulw	a0, a0, a1
+	sltu	a0, a0, a1
+	ret
+func000000000000018a:                   # @func000000000000018a
 	li	a1, 36
 	mulw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
-	lui	a1, 244
-	addi	a1, a1, 575
-	mulw	a0, a0, a1
-	lui	a1, 237
-	addiw	a1, a1, 838
-	sltu	a0, a0, a1
-	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	lui	a1, 49
 	addi	a1, a1, -703
 	mulw	a0, a0, a1
@@ -24,7 +22,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	addiw	a1, a1, -1635
 	sltu	a0, a1, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	lui	a1, 926933
 	addi	a1, a1, -688
 	mulw	a0, a0, a1

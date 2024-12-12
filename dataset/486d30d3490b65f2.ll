@@ -22,25 +22,14 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; ruby/optimized/gc.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw i64 %0, %2
-  ret i64 %3
-}
-
-; 3 occurrences:
-; freetype/optimized/winfnt.c.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
-; wireshark/optimized/camins.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = shl nuw nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -51,6 +40,17 @@ define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl i64 %0, %2
+  ret i64 %3
+}
+
+; 2 occurrences:
+; freetype/optimized/winfnt.c.ll
+; wireshark/optimized/camins.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = shl nuw nsw i64 %0, %2
   ret i64 %3
 }
 

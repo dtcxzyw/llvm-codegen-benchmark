@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -22,7 +22,6 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
@@ -37,7 +36,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -62,7 +61,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -79,7 +78,7 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -102,7 +101,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 59
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

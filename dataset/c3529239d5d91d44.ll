@@ -3,22 +3,20 @@
 ; ipopt/optimized/IpPardisoSolverInterface.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; grpc/optimized/tcp_posix.cc.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; openspiel/optimized/skat.cc.ll
-; openssl/optimized/libcrypto-lib-err_mark.ll
 ; openssl/optimized/libcrypto-lib-err_save.ll
-; openssl/optimized/libcrypto-shlib-err_mark.ll
 ; openssl/optimized/libcrypto-shlib-err_save.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
@@ -52,12 +50,13 @@ entry:
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %1, i32 %3, i32 15
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -69,18 +68,18 @@ define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -10
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -91,7 +90,7 @@ define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -192
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -102,21 +101,20 @@ define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; arrow/optimized/datum.cc.ll
 ; openspiel/optimized/skat.cc.ll
-; postgres/optimized/brin_revmap.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -127,18 +125,7 @@ define i1 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = icmp ult i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dsytrs_aa.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -2
-  %4 = select i1 %1, i32 %3, i32 1
-  %5 = icmp sle i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 

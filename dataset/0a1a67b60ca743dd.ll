@@ -33,7 +33,6 @@
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
-; php/optimized/is_simh.ll
 ; php/optimized/zend_compile.ll
 ; redis/optimized/redis-cli.ll
 ; ruby/optimized/parse.ll
@@ -42,6 +41,7 @@
 ; velox/optimized/MmapAllocator.cpp.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; z3/optimized/spacer_cluster.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -51,19 +51,16 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cpython/optimized/action_helpers.ll
 ; git/optimized/repack.ll
 ; hwloc/optimized/topology-xml.ll
 ; jq/optimized/builtin.ll
 ; lief/optimized/rsa.c.ll
-; linux/optimized/i915_module.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/RegionPrinter.cpp.ll
-; openblas/optimized/ddisna.c.ll
 ; openjdk/optimized/output.ll
-; openmpi/optimized/libprrte_la-hwloc_base_maffinity.ll
 ; openssl/optimized/openssl-bin-srp.ll
 ; proj/optimized/geod.cpp.ll
 ; wireshark/optimized/packet-e212.c.ll
@@ -79,18 +76,14 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
-; gromacs/optimized/topio.cpp.ll
-; icu/optimized/ucnv2022.ll
-; llvm/optimized/ASTStructuralEquivalence.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; wireshark/optimized/packet-aeron.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 9
+  %3 = icmp samesign ult i32 %2, 9
   %4 = select i1 %0, i1 true, i1 %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -128,15 +121,38 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/Triple.cpp.ll
 ; linux/optimized/cypress_ps2.ll
 ; llvm/optimized/Triple.cpp.ll
-; proj/optimized/log.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 1
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/topio.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 1048576
+  %4 = select i1 %0, i1 true, i1 %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; proj/optimized/log.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

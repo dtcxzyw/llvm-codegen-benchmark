@@ -1,5 +1,10 @@
 
-; 15 occurrences:
+; 19 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; opencv/optimized/mosseTracker.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
@@ -8,7 +13,6 @@
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/richardsonextrapolation.ll
 ; quantlib/optimized/tenorswaptionvts.ll

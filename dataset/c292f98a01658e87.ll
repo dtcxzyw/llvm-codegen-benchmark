@@ -1,12 +1,10 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; c3c/optimized/bigint.c.ll
-; icu/optimized/taiwncal.ll
-; opencv/optimized/calibinit.cpp.ll
 ; openjdk/optimized/linkResolver.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -10, %1
   %3 = icmp slt i32 %1, 0
@@ -31,7 +29,7 @@ entry:
 ; openmpi/optimized/pfexec_linux.ll
 ; openmpi/optimized/prte.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp eq i32 %1, 0
@@ -53,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nat-pmp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4, %1
   %3 = icmp eq i32 %1, 0
@@ -75,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/entropy_common.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = icmp slt i32 %1, 1
@@ -86,10 +84,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 1023, %1
-  %3 = icmp ugt i32 %1, 1022
+  %3 = icmp samesign ugt i32 %1, 1022
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -98,10 +96,10 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
-  %3 = icmp ugt i32 %1, 1
+  %3 = icmp samesign ugt i32 %1, 1
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -109,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -2147483648, %1
   %3 = icmp slt i32 %1, 0

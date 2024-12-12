@@ -1,6 +1,7 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
 ; darktable/optimized/camera.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll

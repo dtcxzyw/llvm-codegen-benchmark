@@ -51,7 +51,7 @@ func000000000000002b:                   # @func000000000000002b
 	testl	%esi, %esi
 	setg	%al
 	shll	$5, %eax
-	leal	2(%rax,%rdi), %eax
+	leal	2(%rdi,%rax), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax

@@ -6,7 +6,7 @@ define i1 @func000000000000000d(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %2, 0xBCD203AFA0000000
   %4 = fcmp uge double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %2, 0xBFAAB12320000000
   %4 = fcmp oeq double %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

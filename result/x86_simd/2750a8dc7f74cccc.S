@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	63                              # 0x3f
-func000000000000004c:                   # @func000000000000004c
+func000000000000028c:                   # @func000000000000028c
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
@@ -43,7 +43,7 @@ func000000000000004c:                   # @func000000000000004c
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1

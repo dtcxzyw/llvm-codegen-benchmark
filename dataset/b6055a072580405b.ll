@@ -29,7 +29,7 @@
 ; wireshark/optimized/file.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4096
   %3 = icmp eq i64 %1, 0
@@ -37,7 +37,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; git/optimized/push.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/blktrace.ll
@@ -47,7 +47,6 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
 ; openblas/optimized/cblas_dgemm.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/module.ll
 ; ruby/optimized/coverage.ll
@@ -74,10 +73,10 @@ entry:
 ; ruby/optimized/util.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1048576
-  %3 = icmp ult i64 %1, 4503599627370496
+  %3 = icmp samesign ult i64 %1, 4503599627370496
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -191,7 +190,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %.not = icmp eq i64 %1, 8589934592
@@ -200,12 +199,23 @@ entry:
 }
 
 ; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 16
+  %3 = icmp ult i64 %1, 65536
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; cvc5/optimized/tangent_plane_check.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 2
-  %3 = icmp ugt i64 %1, 1
+  %3 = icmp samesign ugt i64 %1, 1
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

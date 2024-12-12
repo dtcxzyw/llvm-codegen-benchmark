@@ -1,10 +1,10 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addq	%rsi, %rdi
 	cmpq	$16777216, %rdi                 # imm = 0x1000000
 	movl	$127, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addq	%rsi, %rdi
 	movabsq	$999999999999999999, %rcx       # imm = 0xDE0B6B3A763FFFF
 	xorl	%eax, %eax
@@ -26,19 +26,19 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$3, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addq	%rsi, %rdi
 	xorl	%eax, %eax
 	cmpq	$1000000000, %rdi               # imm = 0x3B9ACA00
 	setae	%al
 	leal	1(%rax,%rax,8), %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leaq	(%rdi,%rsi), %rax
 	sarq	$63, %rax
 	orl	$1, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	leaq	(%rdi,%rsi), %rax
 	sarq	$63, %rax
 	andl	$9, %eax

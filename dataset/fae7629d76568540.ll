@@ -12,7 +12,7 @@ entry:
   %4 = select i1 %3, float %2, float %0
   %5 = sitofp i32 %1 to float
   %6 = fsub float %5, %4
-  %7 = fadd float %6, %0
+  %7 = fadd float %0, %6
   ret float %7
 }
 

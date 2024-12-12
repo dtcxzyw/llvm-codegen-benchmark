@@ -19,10 +19,9 @@ entry:
   ret i32 %7
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/apply.ll
-; git/optimized/show-ref.ll
 ; icu/optimized/parse.ll
 ; icu/optimized/unistr_cnv.ll
 ; imgui/optimized/imgui_demo.cpp.ll

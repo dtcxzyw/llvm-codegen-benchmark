@@ -74,7 +74,7 @@
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0) #0 {
+define i1 @func00000000000000aa(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 4
   %2 = shl nsw i64 %1, 2
@@ -89,7 +89,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0) #0 {
+define i1 @func00000000000000a6(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 2
   %2 = shl nsw i64 %1, 1

@@ -27,9 +27,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
-; cmake/optimized/vli_decoder.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:

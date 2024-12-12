@@ -26,8 +26,7 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind

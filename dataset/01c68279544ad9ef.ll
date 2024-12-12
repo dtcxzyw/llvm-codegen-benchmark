@@ -31,7 +31,7 @@ entry:
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 3
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = or disjoint i16 %3, 4
   ret i16 %4
 }
@@ -42,7 +42,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 7
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = or i16 %3, 1
   ret i16 %4
 }
@@ -70,7 +70,7 @@ entry:
 define i16 @func000000000000000f(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 10
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = or disjoint i16 %3, 1
   ret i16 %4
 }
@@ -81,7 +81,7 @@ entry:
 define i16 @func000000000000000b(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 15
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = or disjoint i16 %3, 32
   ret i16 %4
 }

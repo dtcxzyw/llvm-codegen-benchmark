@@ -17,7 +17,7 @@
 ; abc/optimized/ioWriteBlifMv.c.ll
 ; abc/optimized/ioWritePla.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000069(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a9(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 10
   %3 = icmp sgt i32 %0, %1
@@ -35,7 +35,7 @@ entry:
 ; openexr/optimized/string_vector.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000059(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000099(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %1, %0
@@ -73,7 +73,7 @@ entry:
 ; git/optimized/transport.ll
 ; git/optimized/worktree.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006b(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000ab(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp sgt i32 %0, %1

@@ -12,10 +12,10 @@ func0000000000000004:                   # @func0000000000000004
 	vminps	%zmm1, %zmm2, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0
 	retq
+.LCPI2_0:
+	.long	0x3f800000                      # float 1
 func000000000000000a:                   # @func000000000000000a
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpleps	%zmm2, %zmm1, %k1
-	vsubps	%zmm1, %zmm0, %zmm1
-	vmovaps	%zmm0, %zmm1 {%k1}
-	vmovaps	%zmm1, %zmm0
+	vbroadcastss	.LCPI2_0(%rip), %zmm2   # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	vmaxps	%zmm1, %zmm2, %zmm1
+	vsubps	%zmm1, %zmm0, %zmm0
 	retq

@@ -18,8 +18,8 @@ func0000000000000041:                   # @func0000000000000041
 	retq
 func00000000000000a1:                   # @func00000000000000a1
 	xorl	%eax, %eax
-	testl	%esi, %esi
-	setg	%al
-	sarl	%edi
+	cmpl	$49156, %esi                    # imm = 0xC004
+	setge	%al
+	sarl	$27, %edi
 	addl	%edi, %eax
 	retq

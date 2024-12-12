@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::NameType.2522672" = type <{ %"class.std::basic_string_view.2522673", i32, i8, [3 x i8] }>
-%"class.std::basic_string_view.2522673" = type { i64, ptr }
+%"struct.mold::elf::NameType.2637081" = type <{ %"class.std::basic_string_view.2637082", i32, i8, [3 x i8] }>
+%"class.std::basic_string_view.2637082" = type { i64, ptr }
 
 ; 90 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -97,7 +97,7 @@
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"struct.mold::elf::NameType.2522672", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.mold::elf::NameType.2637081", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = sdiv exact i64 %6, 24

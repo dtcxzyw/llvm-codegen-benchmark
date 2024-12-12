@@ -9,7 +9,7 @@ define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
   %3 = and i16 %2, 32767
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -34,7 +34,7 @@ define i16 @func000000000000000b(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i16
   %3 = and i16 %2, 255
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 

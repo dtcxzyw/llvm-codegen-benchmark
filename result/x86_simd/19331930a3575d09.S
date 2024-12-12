@@ -1,6 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -16,7 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 	.short	26624                           # 0x6800
 func0000000000000001:                   # @func0000000000000001
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -31,7 +31,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	32                              # 0x20
 func0000000000000010:                   # @func0000000000000010
 	vpmovdw	%ymm1, %xmm1
-	vpaddw	%xmm0, %xmm1, %xmm0
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq

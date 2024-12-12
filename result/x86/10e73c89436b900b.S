@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	shrl	$3, %esi
 	andl	$63, %esi
 	leaq	1(%rsi,%rdi), %rax
@@ -14,14 +14,14 @@ func000000000000000c:                   # @func000000000000000c
 	decl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	shrl	$12, %esi
 	andl	$3, %esi
 	decl	%esi
 	leaq	(%rsi,%rsi,8), %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	shrl	$27, %esi
 	andl	$3, %esi
 	decl	%esi

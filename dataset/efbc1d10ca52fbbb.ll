@@ -11,7 +11,7 @@ define i8 @func0000000000000022(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, %1
   %3 = zext i1 %2 to i8
-  %4 = add nuw i8 %3, %0
+  %4 = add nuw i8 %0, %3
   ret i8 %4
 }
 
@@ -22,7 +22,7 @@ define i8 @func0000000000000020(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, %1
   %3 = zext i1 %2 to i8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   ret i8 %4
 }
 

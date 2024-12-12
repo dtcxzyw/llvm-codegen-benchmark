@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %edx
 	imulq	%rdi, %rdx
-	movabsq	$4835703278458516699, %rax      # imm = 0x431BDE82D7B634DB
+	movabsq	$-5853766786057164379, %rax     # imm = 0xAEC33E1F671529A5
 	mulxq	%rax, %rax, %rax
-	shrq	$18, %rax
+	shrq	$9, %rax
 	retq

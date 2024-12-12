@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; ncnn/optimized/padding.cpp.ll
@@ -26,7 +26,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -101,10 +100,11 @@ entry:
   ret i16 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; oiio/optimized/deepdata.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_copy.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_muldiv.cpp.ll
 ; oiio/optimized/imagebufalgo_orient.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
@@ -116,6 +116,17 @@ define i16 @func0000000000000007(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = lshr exact i32 %1, 16
+  %3 = trunc nuw nsw i32 %2 to i16
+  ret i16 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(float %0) #0 {
+entry:
+  %1 = bitcast float %0 to i32
+  %2 = lshr i32 %1, 23
   %3 = trunc nuw nsw i32 %2 to i16
   ret i16 %3
 }

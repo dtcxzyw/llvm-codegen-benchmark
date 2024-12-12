@@ -1,10 +1,10 @@
 
-; 120 occurrences:
+; 124 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/deflate.c.ll
-; abc/optimized/kitPla.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
@@ -111,12 +111,16 @@
 ; redis/optimized/read.ll
 ; ruby/optimized/parse.ll
 ; slurm/optimized/job_mgr.ll
-; soc-simulator/optimized/verilated.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
@@ -234,9 +238,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/gregocal.ll
-; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind

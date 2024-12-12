@@ -1,16 +1,16 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	addiw	a1, a1, -238
 	sltiu	a1, a1, -9
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addiw	a1, a1, -1
 	slti	a1, a1, 0
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	addiw	a1, a1, -1440
 	lui	a2, 1
 	sltiu	a1, a1, 25
@@ -19,21 +19,21 @@ func0000000000000082:                   # @func0000000000000082
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000282:                   # @func0000000000000282
+func0000000000000902:                   # @func0000000000000902
 	addiw	a1, a1, -5
 	addi	a0, a0, -2
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	addiw	a1, a1, -7
 	srli	a0, a0, 56
 	sltiu	a1, a1, -2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sext.w	a1, a1
 	addi	a0, a0, -31
 	addi	a1, a1, -38
@@ -41,28 +41,20 @@ func0000000000000022:                   # @func0000000000000022
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000298:                   # @func0000000000000298
+func0000000000000918:                   # @func0000000000000918
 	addiw	a1, a1, -5
 	sltiu	a1, a1, 2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000230:                   # @func0000000000000230
-	sext.w	a1, a1
-	sltiu	a0, a0, 756
-	addi	a1, a1, -1
-	seqz	a1, a1
-	xori	a0, a0, 1
-	or	a0, a0, a1
-	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	addiw	a1, a1, -64
 	sltiu	a0, a0, 2
 	sltiu	a1, a1, -128
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	lui	a2, 786432
 	addw	a1, a1, a2
 	addiw	a2, a2, 1
@@ -70,13 +62,13 @@ func0000000000000028:                   # @func0000000000000028
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000228:                   # @func0000000000000228
+func0000000000000848:                   # @func0000000000000848
 	addiw	a1, a1, -57
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000114:                   # @func0000000000000114
 	addiw	a1, a1, -1
 	li	a2, -1
 	sltiu	a1, a1, 8
@@ -84,39 +76,39 @@ func0000000000000094:                   # @func0000000000000094
 	slt	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000118:                   # @func0000000000000118
+func0000000000000218:                   # @func0000000000000218
 	addiw	a1, a1, -57
 	sltiu	a1, a1, -64
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	addiw	a1, a1, -3
 	sltiu	a1, a1, 2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000010c:                   # @func000000000000010c
+func000000000000020c:                   # @func000000000000020c
 	addiw	a1, a1, 1
 	sltiu	a0, a0, 256
 	slti	a1, a1, 2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	addiw	a1, a1, -3
 	sltiu	a1, a1, -2
 	slti	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000388:                   # @func0000000000000388
+func0000000000000b08:                   # @func0000000000000b08
 	addiw	a1, a1, -87
 	sltiu	a1, a1, -89
 	snez	a0, a0

@@ -1,5 +1,5 @@
 
-; 726 occurrences:
+; 723 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -133,7 +133,6 @@
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -165,7 +164,6 @@
 ; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/llb1Constr.c.ll
 ; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Bad.c.ll
 ; abc/optimized/llb2Core.c.ll
 ; abc/optimized/llb2Driver.c.ll
 ; abc/optimized/llb2Image.c.ll
@@ -189,7 +187,6 @@
 ; abc/optimized/reoTransfer.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/rwrUtil.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigConstr.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigDual.c.ll
@@ -215,6 +212,7 @@
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswLcorr.c.ll
+; abc/optimized/sswSat.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/verFormula.c.ll
@@ -223,7 +221,6 @@
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; bdwgc/optimized/gc.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -235,7 +232,6 @@
 ; graphviz/optimized/exeval.c.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/arp.ll
 ; linux/optimized/e1000_main.ll
@@ -726,11 +722,12 @@
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/dl_context.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

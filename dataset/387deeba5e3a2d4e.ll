@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/blk-lib.ll
 ; linux/optimized/i915_scatterlist.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
+; proj/optimized/mlfn.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -15,7 +16,7 @@ entry:
   ret i64 %3
 }
 
-; 177 occurrences:
+; 176 occurrences:
 ; llvm/optimized/APINotesManager.cpp.ll
 ; llvm/optimized/ARCMT.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -83,7 +84,6 @@ entry:
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
@@ -202,7 +202,7 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/intel_ring.ll
@@ -216,7 +216,6 @@ entry:
 ; llvm/optimized/PlistReporter.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
-; proj/optimized/mlfn.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll

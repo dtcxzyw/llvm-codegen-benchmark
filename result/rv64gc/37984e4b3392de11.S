@@ -36,3 +36,9 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a1, a1
+	sltiu	a1, a1, 17
+	neg	a1, a1
+	and	a0, a0, a1
+	ret

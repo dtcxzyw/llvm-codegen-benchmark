@@ -1,33 +1,32 @@
 
-%struct.dt_iop_colorzones_node_t.2761739 = type { float, float }
-%struct.cfg80211_ssid.3354226 = type { [32 x i8], i8 }
+%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
+%struct.cfg80211_ssid.3541768 = type { [32 x i8], i8 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/nwkTiming.c.ll
-; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; imgui/optimized/imgui.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000003a(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2761739]], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2761739, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000038(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2761739]], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.dt_iop_colorzones_node_t.2761739, ptr %4, i64 %5
+  %6 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -38,12 +37,12 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000030(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 152
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 152
   %4 = getelementptr [0 x ptr], ptr %3, i64 0, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.cfg80211_ssid.3354226, ptr %4, i64 %5
+  %6 = getelementptr %struct.cfg80211_ssid.3541768, ptr %4, i64 %5
   ret ptr %6
 }
 

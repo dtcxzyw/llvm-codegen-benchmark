@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
@@ -11,8 +12,9 @@ entry:
   ret i128 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/crt.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll

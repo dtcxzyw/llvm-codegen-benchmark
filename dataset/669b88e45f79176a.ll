@@ -12,9 +12,8 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/cuddPriority.c.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind

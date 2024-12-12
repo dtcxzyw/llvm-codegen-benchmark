@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/simSupp.c.ll
 ; git/optimized/object-file.ll
 ; icu/optimized/utf8collationiterator.ll
-; linux/optimized/fonts.ll
 ; llvm/optimized/MachineCSE.cpp.ll
 ; postgres/optimized/deadlock.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
@@ -14,7 +13,7 @@
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = and i32 %3, %1
@@ -28,7 +27,7 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 16, %2
   %4 = and i32 %3, %1
@@ -50,10 +49,10 @@ entry:
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -65,7 +64,7 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1

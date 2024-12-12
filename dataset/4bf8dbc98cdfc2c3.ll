@@ -11,7 +11,7 @@ define i16 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -16
   %4 = zext i8 %3 to i32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = trunc nsw i32 %6 to i16
   ret i16 %7

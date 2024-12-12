@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
@@ -26,6 +26,8 @@
 ; openusd/optimized/layer.cpp.ll
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; velox/optimized/Filter.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

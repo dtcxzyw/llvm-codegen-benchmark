@@ -2,6 +2,7 @@
 ; 53 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_ic.c.ll
@@ -22,7 +23,6 @@
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; mitsuba3/optimized/sensor.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll

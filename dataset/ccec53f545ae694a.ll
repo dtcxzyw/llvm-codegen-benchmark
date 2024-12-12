@@ -2,23 +2,11 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, 4294967296
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/psParallelCompact.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, 65535
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -28,9 +16,21 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000f0(i1 %0, i64 %1, i32 %2) #0 {
 entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp samesign ugt i64 %4, 65535
+  %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/psParallelCompact.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f0(i1 %0, i64 %1, i32 %2) #0 {
+entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ugt i64 %4, 65535
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp samesign ugt i64 %4, 65535
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -39,10 +39,10 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ugt i64 %4, 4294967295
   %6 = or i1 %5, %0
   ret i1 %6
@@ -61,9 +61,9 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 0, %1
-  %5 = icmp eq i64 %3, %4
-  %6 = or i1 %5, %0
+  %4 = sub nsw i64 0, %3
+  %5 = icmp eq i64 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -73,8 +73,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 0, %1
-  %5 = icmp ne i64 %3, %4
+  %4 = sub nsw i64 0, %3
+  %5 = icmp ne i64 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }

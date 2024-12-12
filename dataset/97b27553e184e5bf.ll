@@ -13,7 +13,7 @@ entry:
   %4 = shl nuw i128 %3, 64
   %5 = zext i64 %1 to i128
   %6 = or disjoint i128 %4, %5
-  %7 = mul i128 %6, %0
+  %7 = mul i128 %0, %6
   ret i128 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = shl nuw i128 %3, 64
   %5 = zext i64 %1 to i128
   %6 = or disjoint i128 %4, %5
-  %7 = mul nsw i128 %6, %0
+  %7 = mul nsw i128 %0, %6
   ret i128 %7
 }
 

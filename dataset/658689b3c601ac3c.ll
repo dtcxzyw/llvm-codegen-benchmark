@@ -6,7 +6,7 @@
 ; openspiel/optimized/pathfinding.cc.ll
 ; portaudio/optimized/pa_front.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   %3 = icmp sgt i32 %0, 0

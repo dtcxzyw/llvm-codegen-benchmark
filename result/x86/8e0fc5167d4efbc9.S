@@ -5,10 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	incl	%eax
 	retq
 func000000000000000b:                   # @func000000000000000b
-	leal	1(%rdx), %eax
+	leal	-1(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
-	decl	%eax
+	cmovnel	%edx, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	leal	2(%rdx), %eax

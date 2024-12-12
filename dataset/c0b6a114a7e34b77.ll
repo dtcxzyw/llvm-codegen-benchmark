@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_execlists_submission.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll

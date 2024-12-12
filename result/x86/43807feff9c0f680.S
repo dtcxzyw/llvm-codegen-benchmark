@@ -48,11 +48,6 @@ func0000000000000183:                   # @func0000000000000183
 	cmpq	$1, %rsi
 	sbbl	$-1, %eax
 	retq
-func0000000000000107:                   # @func0000000000000107
-	movq	%rdi, %rax
-	cmpq	$33554432, %rsi                 # imm = 0x2000000
-	sbbl	$-1, %eax
-	retq
 func0000000000000185:                   # @func0000000000000185
 	movq	%rdi, %rax
 	cmpq	$1, %rsi

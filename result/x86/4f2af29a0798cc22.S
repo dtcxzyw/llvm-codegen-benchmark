@@ -31,7 +31,7 @@ func0000000000000005:                   # @func0000000000000005
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	andl	$240, %edx
 	xorl	%ecx, %ecx
 	cmpl	$144, %edx

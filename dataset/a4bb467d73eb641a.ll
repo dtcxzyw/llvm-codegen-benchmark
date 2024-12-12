@@ -1,11 +1,10 @@
 
-; 196 occurrences:
+; 190 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
-; cmake/optimized/poll.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; cpython/optimized/pegen.ll
@@ -25,10 +24,8 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libevent/optimized/poll.c.ll
 ; libquic/optimized/des.c.ll
-; libuv/optimized/poll.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/anim_decode.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/blk-flush.ll
@@ -36,15 +33,12 @@
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/inet_timewait_sock.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/ioctl.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
@@ -109,7 +103,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; node/optimized/poll.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -186,7 +179,6 @@
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-icq.c.ll
@@ -196,13 +188,15 @@
 ; wireshark/optimized/packet-stt.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 64
   %5 = and i32 %1, 1024
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -233,18 +227,17 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = and i32 %3, 2097152
   %5 = and i32 %1, 524288
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
 
-; 18 occurrences:
+; 32 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; icu/optimized/umutablecptrie.ll
 ; jq/optimized/main.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/mii.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/FloatingPointMode.cpp.ll
@@ -253,6 +246,21 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openmpi/optimized/op_avx_component.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
@@ -263,7 +271,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 268435456
   %5 = and i32 %1, 2097152
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -280,7 +288,7 @@ entry:
   %3 = lshr exact i32 %2, 10
   %4 = and i32 %3, 992
   %5 = and i32 %1, 32768
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -293,7 +301,7 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1048576
   %5 = and i32 %1, 2097152
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -306,7 +314,7 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1024
   %5 = and i32 %1, 2048
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }

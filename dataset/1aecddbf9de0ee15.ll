@@ -44,7 +44,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/postaloc.ll

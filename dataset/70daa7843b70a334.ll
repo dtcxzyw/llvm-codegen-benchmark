@@ -1,5 +1,5 @@
 
-; 371 occurrences:
+; 372 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/cswCut.c.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
@@ -7,10 +7,11 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; c3c/optimized/linker.c.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
-; casadi/optimized/kinsol_spbcgs.c.ll
-; casadi/optimized/kinsol_sptfqmr.c.ll
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/archive_acl.c.ll
@@ -20,7 +21,6 @@
 ; csmith/optimized/Type.cpp.ll
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; cvc5/optimized/theory_sep_rewriter.cpp.ll
-; git/optimized/count-objects.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -32,7 +32,6 @@
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
 ; hdf5/optimized/h5import.c.ll
-; hdf5/optimized/h5tools_type.c.ll
 ; hyperscan/optimized/ng_split.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; icu/optimized/ctest.ll
@@ -176,7 +175,6 @@
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RecordStreamer.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -221,7 +219,6 @@
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
-; nuttx/optimized/lib_pathconf.c.ll
 ; ocio/optimized/BitDepthUtils.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
@@ -279,6 +276,7 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/blocked.ll
 ; rocksdb/optimized/cache_dump_load_impl.cc.ll
+; rocksdb/optimized/testutil.cc.ll
 ; rocksdb/optimized/write_stall_stats.cc.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/generator.ll
@@ -326,10 +324,8 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
-; wireshark/optimized/packet-asphodel.c.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
@@ -370,6 +366,11 @@
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/nla_core.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QRCodecMode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i8 %0) #0 {

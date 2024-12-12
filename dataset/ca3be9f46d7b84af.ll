@@ -1,16 +1,14 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; cpython/optimized/longobject.ll
 ; libquic/optimized/time_support.c.ll
 ; openjdk/optimized/psParallelCompact.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
+  %2 = lshr i64 %1, 19
   %3 = sub nsw i64 %0, %2
-  %4 = mul nsw i64 %3, 4000
+  %4 = mul nsw i64 %3, 40
   ret i64 %4
 }
 

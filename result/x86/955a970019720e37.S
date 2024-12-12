@@ -1,19 +1,17 @@
-func0000000000000058:                   # @func0000000000000058
-	xorl	%eax, %eax
-	btq	%rsi, %rdi
-	setb	%al
+func0000000000000098:                   # @func0000000000000098
+	shrxq	%rsi, %rdi, %rax
+	andl	$1, %eax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	xorl	%eax, %eax
 	btq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
-	xorl	%eax, %eax
-	btq	%rsi, %rdi
-	setb	%al
+func00000000000000d8:                   # @func00000000000000d8
+	shrxq	%rsi, %rdi, %rax
+	andl	$1, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	xorl	%eax, %eax
 	btq	%rsi, %rdi
 	setae	%al

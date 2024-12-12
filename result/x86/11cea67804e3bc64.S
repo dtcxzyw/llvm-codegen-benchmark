@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	leal	1(%rsi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	subl	%edi, %esi
 	addl	$-5, %esi
 	cmpl	$21, %esi
@@ -14,7 +14,7 @@ func000000000000000a:                   # @func000000000000000a
 	incl	%esi
 	setns	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subl	%edi, %esi
 	incl	%esi
 	cmpl	$3, %esi

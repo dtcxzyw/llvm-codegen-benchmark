@@ -3,7 +3,7 @@
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/giaLf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000616(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001826(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 6
   %4 = icmp slt i32 %1, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000416(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 117440511
   %4 = icmp slt i32 %1, 1

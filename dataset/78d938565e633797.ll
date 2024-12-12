@@ -16,14 +16,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
-; postgres/optimized/trigger.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add nuw nsw i32 %0, %1
@@ -41,12 +40,12 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = add nuw nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, 32
+  %6 = icmp samesign ugt i32 %5, 32
   ret i1 %6
 }
 
@@ -61,7 +60,7 @@ entry:
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/UndefBranchChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 48
   %4 = add nsw i32 %0, %1
@@ -75,7 +74,7 @@ entry:
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/TestAfterDivZeroChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 12
   %4 = add nuw nsw i32 %0, %1

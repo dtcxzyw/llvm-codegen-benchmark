@@ -26,7 +26,7 @@ func0000000000000063:                   # @func0000000000000063
 	.long	1                               # 0x1
 .LCPI2_1:
 	.long	4                               # 0x4
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0

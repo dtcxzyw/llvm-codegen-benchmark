@@ -1,5 +1,16 @@
 
-; 20 occurrences:
+; 2 occurrences:
+; icu/optimized/normalizer2impl.ll
+; pyo3-rs/optimized/249pdmmr5286g8h9.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i8 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ugt i8 %2, %0
+  %4 = select i1 %1, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 22 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/1h6chd9qxbb3rt70.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -20,11 +31,13 @@
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 %2, i8 0
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -34,17 +47,7 @@ entry:
 define i1 @func0000000000000005(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 %2, i8 0
-  %4 = icmp uge i8 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; icu/optimized/normalizer2impl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, %0
-  %4 = select i1 %1, i1 %3, i1 false
+  %4 = icmp ule i8 %0, %3
   ret i1 %4
 }
 

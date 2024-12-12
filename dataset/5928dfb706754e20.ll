@@ -1,5 +1,22 @@
 
-; 14 occurrences:
+; 33 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMinLut.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/ifSat.c.ll
+; abc/optimized/ifTune.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdLut.c.ll
+; abc/optimized/sfmSat.c.ll
+; abc/optimized/utilIsop.c.ll
+; abc/optimized/wlcBlast.c.ll
+; boost/optimized/get_turns.ll
 ; cpython/optimized/call.ll
 ; flac/optimized/decode.c.ll
 ; hermes/optimized/RegExp.cpp.ll
@@ -12,6 +29,8 @@
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
+; openjdk/optimized/loopopts.ll
+; openjdk/optimized/superword.ll
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/hw_riscv_boot.c.ll
 ; Function Attrs: nounwind

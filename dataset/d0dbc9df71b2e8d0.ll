@@ -14,8 +14,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
@@ -183,6 +184,18 @@ entry:
   %3 = shl nuw nsw i64 %2, 5
   %4 = add nuw nsw i64 %3, 1280
   %5 = sub nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; quest/optimized/QuEST_common.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw nsw i64 %3, 4
+  %5 = sub i64 %4, %0
   ret i64 %5
 }
 

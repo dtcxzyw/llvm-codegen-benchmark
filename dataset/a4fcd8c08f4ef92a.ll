@@ -1,5 +1,7 @@
 
 ; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cpython/optimized/floatobject.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/tethering.c.ll
@@ -12,13 +14,11 @@
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
-; openblas/optimized/dtgsna.c.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; openusd/optimized/typeRegistry.cpp.ll
 ; osqp/optimized/amd_2.c.ll
 ; postgres/optimized/brin_minmax_multi.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; stb/optimized/stb_hexwave.c.ll

@@ -5,7 +5,7 @@
 ; qemu/optimized/hw_input_virtio-input-host.c.ll
 ; slurm/optimized/file_functions.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i8 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i8 %1, -1
@@ -30,7 +30,7 @@ entry:
 ; abc/optimized/solver_api.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp eq i8 %1, 1

@@ -11,7 +11,8 @@ entry:
   ret i32 %6
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -161,6 +162,7 @@ entry:
 }
 
 ; 172 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -240,7 +242,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/vclock_gettime.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -521,6 +522,18 @@ entry:
   %4 = add nuw i64 %0, %1
   %5 = lshr i64 %4, %3
   %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = lshr i64 %4, %3
+  %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
 

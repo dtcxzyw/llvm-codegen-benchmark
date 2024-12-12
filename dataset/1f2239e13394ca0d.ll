@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 86 occurrences:
 ; c3c/optimized/parse_stmt.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/midx.ll
@@ -11,7 +11,7 @@
 ; hermes/optimized/Object.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; libzmq/optimized/socket_poller.cpp.ll
-; linux/optimized/dvo_ch7017.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_controller.ll
@@ -50,6 +50,11 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -60,9 +65,7 @@
 ; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/heapam.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/ae.ll
@@ -76,7 +79,6 @@
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/blf.c.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-cisco-fp-mim.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-kingfisher.c.ll
@@ -89,7 +91,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 11
   %3 = and i16 %2, 4
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -336,7 +338,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 4095
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

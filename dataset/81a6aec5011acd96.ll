@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/2difj0jdxbswpyo1.ll
 ; delta-rs/optimized/4hbajsv9e0zw688t.ll
@@ -20,6 +20,7 @@
 ; ockam-rs/optimized/bws0hnih6ct4ces.ll
 ; ockam-rs/optimized/lcclztcuaxx9mqt.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:

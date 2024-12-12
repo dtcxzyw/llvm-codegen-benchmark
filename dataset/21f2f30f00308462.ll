@@ -1,6 +1,7 @@
 
-; 724 occurrences:
+; 727 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/context.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
 ; coremark/optimized/core_matrix.c.ll
@@ -563,6 +564,8 @@
 ; llvm/optimized/YAMLParser.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mimalloc/optimized/alloc-aligned.c.ll
 ; mimalloc/optimized/alloc.c.ll
@@ -733,15 +736,12 @@ entry:
   ret ptr %3
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/create_thread_identity.cc.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openusd/optimized/yuv_scale.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0) #0 {

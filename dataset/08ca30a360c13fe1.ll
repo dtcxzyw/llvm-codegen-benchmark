@@ -13,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/archive_pathmatch.c.ll
@@ -39,7 +39,6 @@ entry:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_atomic_plane.ll
@@ -87,51 +86,49 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
-; hermes/optimized/Executor.cpp.ll
+; 2 occurrences:
 ; jq/optimized/regcomp.ll
-; linux/optimized/e1000_main.ll
-; linux/optimized/tg3.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
-; llvm/optimized/CGVTT.cpp.ll
-; llvm/optimized/CGVTables.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/FunctionImportUtils.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
-; llvm/optimized/InstrProfiling.cpp.ll
-; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/LTOCodeGenerator.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, -3
-  %3 = icmp ult i32 %1, 2
+  %3 = icmp samesign ult i32 %1, 2
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 2 occurrences:
-; libwebp/optimized/webp_dec.c.ll
+; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 3
-  %3 = icmp ugt i32 %1, 1610612735
+  %3 = icmp samesign ugt i32 %1, 1610612735
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
 
-; 2 occurrences:
+; 21 occurrences:
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; libquic/optimized/deflate.c.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; Function Attrs: nounwind
@@ -139,6 +136,27 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 3
   %3 = icmp sgt i32 %1, 2
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 11 occurrences:
+; hermes/optimized/Executor.cpp.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/tg3.ll
+; llvm/optimized/CGCXX.cpp.ll
+; llvm/optimized/CGVTT.cpp.ll
+; llvm/optimized/CGVTables.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/LTOCodeGenerator.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %0, 95
+  %3 = icmp ult i32 %1, 26
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -153,6 +171,17 @@ entry:
   %.not = icmp eq i32 %1, 0
   %3 = select i1 %.not, i32 %0, i32 %2
   ret i32 %3
+}
+
+; 1 occurrences:
+; libwebp/optimized/webp_dec.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %0, -2
+  %3 = icmp ugt i32 %1, 10
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

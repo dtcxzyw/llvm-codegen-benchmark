@@ -1,5 +1,6 @@
 
-; 42 occurrences:
+; 47 occurrences:
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/easy.c.ll
@@ -42,6 +43,10 @@
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

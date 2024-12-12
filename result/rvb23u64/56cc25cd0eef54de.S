@@ -21,20 +21,27 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	slli	a0, a0, 4
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	slt	a0, a1, a0
 	lui	a1, 524288
 	addiw	a1, a1, -86
 	czero.nez	a0, a1, a0
 	ret
+func0000000000000021:                   # @func0000000000000021
+	sub	a0, a0, a1
+	li	a1, -2
+	binvi	a0, a0, 63
+	czero.eqz	a0, a1, a0
+	bseti	a1, zero, 63
+	add	a0, a0, a1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1
-	sltiu	a0, a0, 33
-	li	a1, -2
-	czero.eqz	a0, a1, a0
-	addi	a0, a0, 3
+	sltiu	a0, a0, 17
+	xori	a0, a0, 1
+	slli	a0, a0, 4
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	slt	a0, a1, a0
 	addi	a0, a0, -1
 	ori	a0, a0, 1

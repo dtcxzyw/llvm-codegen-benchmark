@@ -1,15 +1,28 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; c3c/optimized/llvm_codegen_instr.c.ll
 ; linux/optimized/mballoc.ll
 ; opencv/optimized/convolution.cpp.ll
 ; postgres/optimized/mbutils.ll
-; qemu/optimized/net_dump.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 4 occurrences:
+; git/optimized/merge-ort.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/RawVector.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = sext i32 %0 to i64
+  %4 = icmp eq i64 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -31,18 +44,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %4 = icmp sgt i64 %3, %2
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; git/optimized/merge-ort.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = sext i32 %0 to i64
-  %4 = icmp eq i64 %3, %2
+  %4 = icmp slt i64 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -62,7 +64,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %4 = icmp slt i64 %3, %2
+  %4 = icmp sgt i64 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -73,7 +75,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp ult i64 %2, %3
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }
@@ -84,7 +86,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %.not = icmp sgt i64 %3, %2
+  %.not = icmp slt i64 %2, %3
   %4 = select i1 %.not, i32 %1, i32 %0
   ret i32 %4
 }

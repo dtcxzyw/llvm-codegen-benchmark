@@ -1,4 +1,4 @@
-func0000000000000286:                   # @func0000000000000286
+func0000000000000787:                   # @func0000000000000787
 	beqz	a0, .LBB0_2
 	addi	a0, a0, 24
 	addi	a0, a0, 32
@@ -7,30 +7,21 @@ func0000000000000286:                   # @func0000000000000286
 	addi	a0, a1, 32
 	addi	a0, a0, 32
 	ret
-func00000000000003c7:                   # @func00000000000003c7
+func0000000000000007:                   # @func0000000000000007
 	beqz	a0, .LBB1_2
-	addi	a0, a0, 8
-	addi	a0, a0, 8
-	ret
-.LBB1_2:
-	addi	a0, a1, 544
-	addi	a0, a0, 8
-	ret
-func0000000000000287:                   # @func0000000000000287
-	beqz	a0, .LBB2_2
-	addi	a0, a0, 18
-	addi	a0, a0, 4
-	ret
-.LBB2_2:
-	addi	a0, a1, 20
-	addi	a0, a0, 4
-	ret
-func0000000000000006:                   # @func0000000000000006
-	beqz	a0, .LBB3_2
 	addi	a0, a0, -1368
 	addi	a0, a0, 12
 	ret
-.LBB3_2:
+.LBB1_2:
 	addi	a0, a1, 272
 	addi	a0, a0, 12
+	ret
+func0000000000000004:                   # @func0000000000000004
+	beqz	a0, .LBB2_2
+	addi	a0, a0, 72
+	addi	a0, a0, 64
+	ret
+.LBB2_2:
+	addi	a0, a1, 488
+	addi	a0, a0, 64
 	ret

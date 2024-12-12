@@ -73,15 +73,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/he.ll
-; Function Attrs: nounwind
-define i8 @func000000000000001f(i8 %0) #0 {
-entry:
-  %1 = add i8 %0, 17
-  ret i8 %1
-}
-
-; 1 occurrences:
 ; ockam-rs/optimized/274k60s1efyiyv8u.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000015(i8 %0) #0 {

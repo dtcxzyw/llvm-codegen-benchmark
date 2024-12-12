@@ -1,51 +1,40 @@
-func00000000000000aa:                   // @func00000000000000aa
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
-	addhn	v0.2s, v0.2d, v2.2d
-	addhn2	v0.4s, v1.2d, v3.2d
-	cmgt	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x1
+	lsr	x8, x8, #32
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	movi	v2.4s, #9
-	shrn	v0.2s, v0.2d, #12
-	shrn2	v0.4s, v1.2d, #12
-	cmhi	v0.4s, v2.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x1
+	lsr	x8, x8, #12
+	cmp	w8, #9
+	cset	w0, lo
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	shrn	v0.2s, v0.2d, #12
-	shrn2	v0.4s, v1.2d, #12
-	cmgt	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x1
+	lsr	x8, x8, #12
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000086:                   // @func0000000000000086
+func0000000000000106:                   // @func0000000000000106
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	movi	v2.4s, #32
-	shrn	v0.2s, v0.2d, #16
-	shrn2	v0.4s, v1.2d, #16
-	cmgt	v0.4s, v2.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x1
+	lsr	x8, x8, #16
+	cmp	w8, #32
+	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000010a:                   // @func000000000000010a
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	movi	v2.4s, #16
-	shrn	v0.2s, v0.2d, #16
-	shrn2	v0.4s, v1.2d, #16
-	cmgt	v0.4s, v0.4s, v2.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x1
+	lsr	x8, x8, #16
+	cmp	w8, #16
+	cset	w0, gt
 	ret
                                         // -- End function

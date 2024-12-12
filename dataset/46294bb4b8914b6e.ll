@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 106 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -35,9 +35,7 @@
 ; linux/optimized/amd_nb.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/ebitmap.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/genalloc.ll
-; linux/optimized/gso.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/journal.ll
@@ -69,8 +67,6 @@
 ; openjdk/optimized/regmask.ll
 ; openjdk/optimized/zVerify.ll
 ; openspiel/optimized/pentago.cc.ll
-; openssl/optimized/libcrypto-lib-init.ll
-; openssl/optimized/libcrypto-shlib-init.ll
 ; php/optimized/php_date.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/acl.ll
@@ -108,6 +104,7 @@
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wireshark/optimized/packet-glusterfs.c.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
+; zed-rs/optimized/enul73o10k5w3gxzdsfqj1w26.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {

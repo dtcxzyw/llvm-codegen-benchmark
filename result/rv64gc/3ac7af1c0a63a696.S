@@ -84,10 +84,3 @@ func0000000000000020:                   # @func0000000000000020
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
-	sext.w	a2, a2
-	sltiu	a2, a2, 100
-	xori	a2, a2, 1
-	and	a1, a1, a2
-	addw	a0, a0, a1
-	ret

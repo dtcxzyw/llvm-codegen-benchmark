@@ -1,8 +1,6 @@
 
-; 16 occurrences:
-; abseil-cpp/optimized/examples_test.cc.ll
+; 14 occurrences:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
-; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -48,6 +46,20 @@ entry:
   %not. = xor i1 %0, true
   %6 = select i1 %not., i1 %5, i1 false
   ret i1 %6
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/examples_test.cc.ll
+; abseil-cpp/optimized/randen_engine_test.cc.ll
+; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i1 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = icmp eq i64 %1, %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

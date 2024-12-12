@@ -1,62 +1,4 @@
 
-; 48 occurrences:
-; assimp/optimized/FBXUtil.cpp.ll
-; casadi/optimized/slice.cpp.ll
-; cmake/optimized/hostcheck.c.ll
-; cpython/optimized/formatter_unicode.ll
-; curl/optimized/libcurl_la-hostcheck.ll
-; cvc5/optimized/theory_model.cpp.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
-; llvm/optimized/APInt.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/Archive.cpp.ll
-; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/CGCleanup.cpp.ll
-; llvm/optimized/CGObjCRuntime.cpp.ll
-; llvm/optimized/DebugChecksumsSubsection.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/GlobalISelEmitter.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/InstrProfiling.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MCAsmStreamer.cpp.ll
-; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/OffloadBinary.cpp.ll
-; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; llvm/optimized/StringTableBuilder.cpp.ll
-; llvm/optimized/TarWriter.cpp.ll
-; llvm/optimized/TypeLoc.cpp.ll
-; llvm/optimized/VNCoercion.cpp.ll
-; llvm/optimized/WindowsResource.cpp.ll
-; llvm/optimized/XCOFFObjectFile.cpp.ll
-; llvm/optimized/XCOFFObjectWriter.cpp.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
-; php/optimized/fopen_wrappers.ll
-; php/optimized/tm2unixtime.ll
-; proxygen/optimized/HTTP2Codec.cpp.ll
-; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
-; qemu/optimized/fpu_softfloat.c.ll
-; quickjs/optimized/libbf.ll
-; re2/optimized/re2.cc.ll
-; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
-; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
-; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
-; spike/optimized/f128_sqrt.ll
-; spike/optimized/s_mulAddF128.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
 ; 103 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -65,6 +7,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/Base64.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -99,8 +42,6 @@ entry:
 ; ockam-rs/optimized/40iecfzh8kpu4oof.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -155,6 +96,7 @@ entry:
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/zabr.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
 ; redis/optimized/bitops.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
@@ -165,7 +107,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -187,7 +129,64 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 47 occurrences:
+; assimp/optimized/FBXUtil.cpp.ll
+; casadi/optimized/slice.cpp.ll
+; cmake/optimized/hostcheck.c.ll
+; cpython/optimized/formatter_unicode.ll
+; curl/optimized/libcurl_la-hostcheck.ll
+; cvc5/optimized/theory_model.cpp.ll
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/AArch64CallLowering.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/Archive.cpp.ll
+; llvm/optimized/ArchiveWriter.cpp.ll
+; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/CGObjCRuntime.cpp.ll
+; llvm/optimized/DebugChecksumsSubsection.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/GlobalISelEmitter.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/MCAsmStreamer.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; llvm/optimized/OffloadBinary.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
+; llvm/optimized/StringTableBuilder.cpp.ll
+; llvm/optimized/TarWriter.cpp.ll
+; llvm/optimized/TypeLoc.cpp.ll
+; llvm/optimized/VNCoercion.cpp.ll
+; llvm/optimized/WindowsResource.cpp.ll
+; llvm/optimized/XCOFFObjectFile.cpp.ll
+; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
+; php/optimized/fopen_wrappers.ll
+; php/optimized/tm2unixtime.ll
+; proxygen/optimized/HTTP2Codec.cpp.ll
+; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; quickjs/optimized/libbf.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
+; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
+; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
+; spike/optimized/f128_sqrt.ll
+; spike/optimized/s_mulAddF128.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = sext i1 %2 to i64
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -205,7 +204,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -216,7 +215,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }

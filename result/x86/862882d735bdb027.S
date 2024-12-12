@@ -13,3 +13,10 @@ func0000000000000004:                   # @func0000000000000004
 	addl	$2, %edi
 	movslq	%edi, %rax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	leal	-3725(%rdi), %eax
+	addl	$-29, %edi
+	cmpb	$67, %sil
+	cmovael	%eax, %edi
+	movslq	%edi, %rax
+	retq

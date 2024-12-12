@@ -181,7 +181,7 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0) #0 {
+define i1 @func000000000000048c(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -11904
   %2 = icmp ult i32 %1, 30288
@@ -190,7 +190,7 @@ entry:
   ret i1 %4
 }
 
-; 181 occurrences:
+; 182 occurrences:
 ; abc/optimized/satStore.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -288,6 +288,7 @@ entry:
 ; openspiel/optimized/SolverIF.cpp.ll
 ; php/optimized/html.ll
 ; php/optimized/http_fopen_wrapper.ll
+; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/vacuum.ll
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -373,7 +374,7 @@ entry:
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0) #0 {
+define i1 @func000000000000008c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -67108865
   %2 = icmp ult i32 %1, -67108353
@@ -388,7 +389,7 @@ entry:
 ; openjdk/optimized/hb-buffer.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0) #0 {
+define i1 @func0000000000000088(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1114112
   %2 = icmp ult i32 %1, -1056768
@@ -398,10 +399,23 @@ entry:
 }
 
 ; 2 occurrences:
+; hermes/optimized/SemanticValidator.cpp.ll
+; openjdk/optimized/memnode.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -23
+  %2 = icmp ult i32 %1, -3
+  %3 = icmp ne i32 %0, 6
+  %4 = and i1 %2, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0) #0 {
+define i1 @func0000000000000488(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1114112
   %2 = icmp ult i32 %1, -1056768
@@ -411,13 +425,26 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0) #0 {
+define i1 @func0000000000000584(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -37
+  %2 = icmp ult i32 %1, -6
+  %3 = icmp ne i32 %0, 7
+  %4 = and i1 %2, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/SemaExprCXX.cpp.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000494(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -74
   %2 = icmp ult i32 %1, -3
-  %3 = icmp ult i32 %0, 79
+  %3 = icmp samesign ult i32 %0, 79
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -425,7 +452,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_ioctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -160
   %2 = icmp ult i32 %1, -96

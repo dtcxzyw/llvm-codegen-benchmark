@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; boost/optimized/gregorian.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %0, 4
+  %3 = select i1 %2, i32 0, i32 -7
+  %4 = add i32 %0, %1
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; taskflow/optimized/parallel_for.cpp.ll
 ; Function Attrs: nounwind
@@ -62,30 +75,6 @@ entry:
   %3 = add nsw i32 %0, %1
   %4 = add nsw i32 %3, %2
   ret i32 %4
-}
-
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 50
-  %3 = select i1 %2, i32 100, i32 0
-  %4 = add i32 %0, %1
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/big5.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 160
-  %3 = select i1 %2, i32 65438, i32 65472
-  %4 = add nsw i32 %0, %1
-  %5 = add nsw i32 %4, %3
-  ret i32 %5
 }
 
 ; 1 occurrences:

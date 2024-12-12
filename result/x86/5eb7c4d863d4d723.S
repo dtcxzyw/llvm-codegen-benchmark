@@ -6,12 +6,12 @@ func0000000000000000:                   # @func0000000000000000
 	imull	$1000, %edi, %eax               # imm = 0x3E8
 	addl	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	imull	$3600, %edi, %eax               # imm = 0xE10
-	addl	%esi, %eax
-	retq
 func0000000000000025:                   # @func0000000000000025
 	imull	$1000, %edi, %eax               # imm = 0x3E8
+	addl	%esi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	imull	$42123, %edi, %eax              # imm = 0xA48B
 	addl	%esi, %eax
 	retq
 func000000000000002f:                   # @func000000000000002f

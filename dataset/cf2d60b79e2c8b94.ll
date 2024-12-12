@@ -11,7 +11,7 @@ entry:
   %4 = zext i8 %1 to i32
   %5 = lshr i32 %4, %3
   %6 = and i32 %5, 15
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

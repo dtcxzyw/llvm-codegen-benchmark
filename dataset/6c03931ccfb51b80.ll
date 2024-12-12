@@ -1,5 +1,5 @@
 
-; 129 occurrences:
+; 126 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -69,6 +69,7 @@
 ; abc/optimized/saigOutDec.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sswAig.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswLcorr.c.ll
@@ -87,7 +88,6 @@
 ; linux/optimized/8250_port.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -103,13 +103,10 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
@@ -145,7 +142,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   ret i32 %4
 }

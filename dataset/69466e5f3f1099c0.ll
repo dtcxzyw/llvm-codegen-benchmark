@@ -11,24 +11,23 @@
 define i64 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 24
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = mul nsw i64 %6, 60
   ret i64 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/reoSwap.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul i64 %4, 12582917
   %6 = add i64 %5, %0
   %7 = mul i64 %6, 4256249
@@ -41,7 +40,7 @@ entry:
 define i64 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 60
   %6 = add nsw i64 %5, %0
   %7 = mul i64 %6, 1000000

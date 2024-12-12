@@ -2,7 +2,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpsrlq	$16, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$17, %ymm2, %ymm3, %ymm2        # ymm2 = ymm2[0],ymm3[1,2,3],ymm2[4],ymm3[5,6,7],ymm2[8],ymm3[9,10,11],ymm2[12],ymm3[13,14,15]
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	movabsq	$4223091239536077, %rax         # imm = 0xF00E10D2FC5CD

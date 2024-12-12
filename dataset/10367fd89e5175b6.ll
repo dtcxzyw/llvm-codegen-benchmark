@@ -13,7 +13,7 @@
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 15
   %3 = icmp sgt i32 %0, 16

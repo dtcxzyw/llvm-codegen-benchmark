@@ -1,6 +1,43 @@
 
-; 191 occurrences:
+; 227 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
+; assimp/optimized/FBXBinaryTokenizer.cpp.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; brotli/optimized/block_splitter.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_rawoverexposed.c.ll
@@ -21,7 +58,6 @@
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/parameters.cpp.ll
@@ -192,7 +228,7 @@
 ; wireshark/optimized/packet-ipmi-se.c.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 24, i64 23
   %3 = add nuw nsw i64 %0, 1
@@ -217,11 +253,11 @@ entry:
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 8, i64 2
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -241,7 +277,7 @@ entry:
 ; openspiel/optimized/backgammon.cc.ll
 ; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i1 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 18, i64 24
   %3 = add nuw nsw i64 %0, 1

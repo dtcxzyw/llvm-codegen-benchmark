@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/rational.ll
 ; cmake/optimized/ntlm.c.ll
 ; cpython/optimized/obmalloc.ll
 ; curl/optimized/libcurl_la-ntlm.ll

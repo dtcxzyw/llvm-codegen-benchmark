@@ -1,5 +1,6 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/numeric.ll
 ; clamav/optimized/7zIn.c.ll
 ; libevent/optimized/buffer.c.ll
 ; libquic/optimized/a_d2i_fp.c.ll
@@ -20,29 +21,7 @@
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; spike/optimized/mmu.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %2, %1
-  %4 = icmp eq i64 %3, -1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %2, -1
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

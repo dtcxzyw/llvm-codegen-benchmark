@@ -4,39 +4,39 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$15, %sil
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	subl	%edx, %esi
 	addl	%edi, %esi
 	andl	$2147483632, %esi               # imm = 0x7FFFFFF0
 	cmpl	$309, %esi                      # imm = 0x135
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%edx, %esi
 	addl	%edi, %esi
 	testb	$15, %sil
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	subl	%edx, %esi
 	addl	%edi, %esi
 	andl	$2147483632, %esi               # imm = 0x7FFFFFF0
 	cmpl	$309, %esi                      # imm = 0x135
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%edx, %esi
 	addl	%edi, %esi
 	testb	$1, %sil
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	subl	%edx, %esi
 	addl	%edi, %esi
 	testb	$15, %sil
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000098:                   # @func0000000000000098
 	subl	%edx, %esi
 	addl	%edi, %esi
 	andl	$2147483632, %esi               # imm = 0x7FFFFFF0

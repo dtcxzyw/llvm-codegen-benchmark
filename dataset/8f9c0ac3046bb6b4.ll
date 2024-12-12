@@ -9,7 +9,7 @@ entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 256, i64 64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = or i64 %5, 4
   ret i64 %6
 }

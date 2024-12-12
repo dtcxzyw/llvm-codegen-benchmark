@@ -45,7 +45,7 @@ define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %.masked = and i16 %1, -113
-  %4 = or i16 %3, %.masked
+  %4 = or i16 %.masked, %3
   %.masked1 = and i16 %0, -97
   %5 = or i16 %4, %.masked1
   ret i16 %5

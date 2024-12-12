@@ -2,12 +2,22 @@ func000000000000002f:                   # @func000000000000002f
 	shlq	$15, %rsi
 	leaq	32768(%rsi,%rdi), %rax
 	retq
+func000000000000001d:                   # @func000000000000001d
+	shlq	$4, %rsi
+	leaq	-16(%rsi,%rdi), %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	leaq	8(%rdi,%rsi,8), %rax
+	retq
+func0000000000000038:                   # @func0000000000000038
+	leaq	2(%rdi,%rsi,2), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shlq	$6, %rsi
 	leaq	-64(%rsi,%rdi), %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	leaq	8(%rdi,%rsi,8), %rax
+func0000000000000020:                   # @func0000000000000020
+	leaq	2(%rdi,%rsi,2), %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	shlq	$6, %rsi
@@ -16,8 +26,17 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000003f:                   # @func000000000000003f
 	leaq	2(%rdi,%rsi,2), %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
-	leaq	2(%rdi,%rsi,2), %rax
+func000000000000000a:                   # @func000000000000000a
+	shlq	$5, %rsi
+	leaq	32(%rsi,%rdi), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	shlq	$5, %rsi
+	leaq	32(%rsi,%rdi), %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	shlq	$4, %rsi
+	leaq	-16(%rsi,%rdi), %rax
 	retq
 func0000000000000015:                   # @func0000000000000015
 	leaq	2000(%rdi,%rsi,2), %rax

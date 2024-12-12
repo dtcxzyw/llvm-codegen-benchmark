@@ -1,20 +1,34 @@
-func0000000000000008:                   // @func0000000000000008
+func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4s, #16, lsl #8
-	sub	v0.4s, v0.4s, v1.4s
-	sub	v2.4s, v3.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	xtn	v0.4h, v0.4s
+	neg	w8, w2
+	sub	w9, w0, w1
+	cmp	w9, w8
+	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000002c8:                   // @func00000000000002c8
+func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	movi	v3.4s, #1, lsl #8
-	sub	v0.4s, v0.4s, v1.4s
-	sub	v2.4s, v3.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, #4096                       // =0x1000
+	sub	w9, w0, w1
+	sub	w8, w8, w2
+	cmp	w9, w8
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	neg	w8, w2
+	sub	w9, w0, w1
+	cmp	w9, w8
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000588:                   // @func0000000000000588
+// %bb.0:                               // %entry
+	mov	w8, #256                        // =0x100
+	sub	w9, w0, w1
+	sub	w8, w8, w2
+	cmp	w9, w8
+	cset	w0, hi
 	ret
                                         // -- End function

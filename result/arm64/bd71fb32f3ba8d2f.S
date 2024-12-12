@@ -1,7 +1,7 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #2097152                    // =0x200000
+	mov	x8, #-1                         // =0xffffffffffffffff
 	lsr	x8, x8, x1
-	add	x0, x0, x8, lsl #3
+	add	x0, x0, x8
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -25,8 +25,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -92,7 +90,7 @@ define i64 @func0000000000000180(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = mul i64 %0, 10
   %7 = sub i64 %6, %5
   ret i64 %7
@@ -106,7 +104,7 @@ define i64 @func0000000000000080(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = mul i64 %0, 10
   %7 = sub i64 %6, %5
   ret i64 %7

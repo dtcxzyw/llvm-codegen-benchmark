@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/ioReadPla.c.ll
@@ -10,7 +10,6 @@
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/buffered_read.ll
 ; linux/optimized/buffered_write.ll
-; linux/optimized/hugetlb.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nls_base.ll
@@ -29,6 +28,8 @@
 ; ruby/optimized/range.ll
 ; ruby/optimized/vm.ll
 ; stockfish/optimized/movegen.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

@@ -1,7 +1,14 @@
 func000000000000001f:                   # @func000000000000001f
-	andl	$7, %esi
-	shll	$16, %esi
-	leal	16777728(%rsi,%rdi), %eax
+	andl	$16, %esi
+	shll	$5, %esi
+	leal	1024(%rdi,%rsi), %eax
+	retq
+func000000000000001e:                   # @func000000000000001e
+	movl	%esi, %eax
+	andl	$15, %eax
+	shll	$6, %eax
+	orl	%edi, %eax
+	orl	$56320, %eax                    # imm = 0xDC00
 	retq
 func000000000000001c:                   # @func000000000000001c
 	movl	%esi, %eax

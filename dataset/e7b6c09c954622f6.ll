@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 86 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/sclLoad.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -22,6 +22,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll

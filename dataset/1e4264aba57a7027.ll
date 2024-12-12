@@ -1,11 +1,13 @@
 
-%struct._StackType.2596895 = type { i32, i32, %union.anon.3.2596896 }
-%union.anon.3.2596896 = type { %struct.anon.6.2596897 }
-%struct.anon.6.2596897 = type { ptr, %union.StkPtrType.2596898, %union.StkPtrType.2596898 }
-%union.StkPtrType.2596898 = type { i64 }
-%"struct.RunTimeClassInfo::RTVerifierConstraint.2617500" = type { i32, i32 }
+%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
+%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
+%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
+%union.StkPtrType.2710348 = type { i64 }
+%"struct.RunTimeClassInfo::RTVerifierConstraint.2730952" = type { i32, i32 }
+%struct.zend_shared_segment_shm.2792752 = type { %struct._zend_shared_segment.2792753, i32 }
+%struct._zend_shared_segment.2792753 = type { i64, i64, i64, ptr }
 
-; 70 occurrences:
+; 66 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -13,10 +15,9 @@
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
-; gromacs/optimized/lincs.cpp.ll
-; gromacs/optimized/updategroups.cpp.ll
 ; jq/optimized/regexec.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -25,7 +26,6 @@
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
-; opencv/optimized/triangulate.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/compileBroker.ll
@@ -69,40 +69,35 @@
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/spiel.cc.ll
-; openusd/optimized/aom_convolve.c.ll
-; openusd/optimized/convolve.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/skeleton.cc.ll
-; php/optimized/shared_alloc_shm.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %struct._StackType.2596895, ptr %5, i64 %0
+  %6 = getelementptr nusw %struct._StackType.2710345, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 5 occurrences:
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
+; 2 occurrences:
 ; openjdk/optimized/runTimeClassInfo.ll
 ; openjdk/optimized/systemDictionaryShared.ll
-; openspiel/optimized/best_response.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000013(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.RunTimeClassInfo::RTVerifierConstraint.2617500", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730952", ptr %5, i64 %0
   ret ptr %6
 }
 
-; 88 occurrences:
+; 82 occurrences:
 ; ceres/optimized/schur_eliminator_2_4_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_4_6.cc.ll
@@ -129,13 +124,12 @@ entry:
 ; g2o/optimized/vertex_point_xy.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
+; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
@@ -144,11 +138,10 @@ entry:
 ; linux/optimized/percpu.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -164,15 +157,12 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/denoising.cpp.ll
+; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; php/optimized/ir_sccp.ll
@@ -187,7 +177,6 @@ entry:
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/jsonpath.ll
 ; postgres/optimized/nbtsearch.ll
-; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/xlog.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
@@ -198,6 +187,29 @@ entry:
   %4 = shl nsw i64 %3, 2
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 12 occurrences:
+; bullet3/optimized/btDantzigLCP.ll
+; bullet3/optimized/btMLCPSolver.ll
+; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
+; gromacs/optimized/lincs.cpp.ll
+; gromacs/optimized/updategroups.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
+; opencv/optimized/emd.cpp.ll
+; opencv/optimized/triangulate.cpp.ll
+; openmpi/optimized/ompi_datatype_args.ll
+; openusd/optimized/aom_convolve.c.ll
+; openusd/optimized/convolve.c.ll
+; php/optimized/shared_alloc_shm.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = shl nsw i64 %3, 3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %struct.zend_shared_segment_shm.2792752, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -228,18 +240,6 @@ entry:
   %4 = shl nsw i64 %3, 2
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; opencv/optimized/emd.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

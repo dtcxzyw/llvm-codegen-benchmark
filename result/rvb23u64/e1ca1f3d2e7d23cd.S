@@ -1,20 +1,11 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	addiw	a1, a1, 1
 	not	a0, a0
 	sltiu	a1, a1, 16
 	bexti	a0, a0, 18
 	or	a0, a0, a1
 	ret
-func0000000000000230:                   # @func0000000000000230
-	andi	a1, a1, 8
-	andi	a0, a0, -4
-	seqz	a1, a1
-	sext.w	a0, a0
-	addi	a0, a0, -16
-	snez	a0, a0
-	or	a0, a0, a1
-	ret
-func0000000000000228:                   # @func0000000000000228
+func0000000000000848:                   # @func0000000000000848
 	andi	a1, a1, -2
 	addiw	a0, a0, -4
 	sext.w	a1, a1
@@ -23,7 +14,7 @@ func0000000000000228:                   # @func0000000000000228
 	sltiu	a0, a0, -3
 	or	a0, a0, a1
 	ret
-func0000000000000282:                   # @func0000000000000282
+func0000000000000902:                   # @func0000000000000902
 	addiw	a1, a1, -11
 	andi	a0, a0, 250
 	sltiu	a1, a1, 4
@@ -31,7 +22,7 @@ func0000000000000282:                   # @func0000000000000282
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	sext.w	a1, a1
 	andi	a0, a0, 1
 	addi	a1, a1, -2
@@ -39,20 +30,21 @@ func0000000000000182:                   # @func0000000000000182
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000188:                   # @func0000000000000188
-	andi	a1, a1, 3
-	addiw	a0, a0, -1
-	snez	a1, a1
-	sltiu	a0, a0, 2
-	or	a0, a0, a1
-	ret
-func0000000000000298:                   # @func0000000000000298
+func0000000000000918:                   # @func0000000000000918
 	addiw	a1, a1, -5
 	sltiu	a1, a1, -4
 	bexti	a0, a0, 18
 	or	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000308:                   # @func0000000000000308
+	bexti	a1, a1, 24
+	addiw	a0, a0, -1
+	lui	a2, 262144
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
+	or	a0, a0, a1
+	ret
+func0000000000000118:                   # @func0000000000000118
 	addiw	a1, a1, -1
 	lui	a2, 262144
 	addiw	a2, a2, -1
@@ -60,7 +52,7 @@ func0000000000000098:                   # @func0000000000000098
 	bexti	a0, a0, 25
 	or	a0, a0, a1
 	ret
-func0000000000000388:                   # @func0000000000000388
+func0000000000000b08:                   # @func0000000000000b08
 	andi	a1, a1, 253
 	addiw	a0, a0, -19
 	addi	a1, a1, -4
@@ -68,7 +60,7 @@ func0000000000000388:                   # @func0000000000000388
 	sltiu	a0, a0, -2
 	or	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	seqz	a1, a1
@@ -76,14 +68,14 @@ func0000000000000022:                   # @func0000000000000022
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	not	a1, a1
 	addiw	a0, a0, -3
 	bexti	a1, a1, 20
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret
-func0000000000000238:                   # @func0000000000000238
+func0000000000000858:                   # @func0000000000000858
 	sext.w	a0, a0
 	lui	a2, 1
 	addiw	a2, a2, 32
@@ -94,7 +86,7 @@ func0000000000000238:                   # @func0000000000000238
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000288:                   # @func0000000000000288
+func0000000000000d08:                   # @func0000000000000d08
 	andi	a1, a1, 14
 	addiw	a0, a0, -3
 	seqz	a1, a1

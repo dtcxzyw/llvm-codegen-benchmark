@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
 	li	a3, 536
 	slli	a0, a0, 3
@@ -14,4 +14,13 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 6
 	sub	a0, a0, a2
 	add	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	sext.w	a2, a2
+	slli	a0, a0, 2
+	slli	a3, a2, 4
+	slli	a2, a2, 6
+	sub	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret

@@ -97,26 +97,52 @@ func0000000000000005:                   # @func0000000000000005
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	retq
 .LCPI3_0:
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.byte	128                             # 0x80
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+	.byte	1                               # 0x1
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+	.byte	1                               # 0x1
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
 .LCPI3_1:
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_2:
+	.byte	4                               # 0x4
+	.byte	2                               # 0x2
+	.byte	1                               # 0x1
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI3_3:
 	.zero	4,128
 func0000000000000000:                   # @func0000000000000000
-	vpaddb	%xmm0, %xmm0, %xmm0
-	vpandd	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm0, %xmm0
+	vpandd	.LCPI3_3(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	retq

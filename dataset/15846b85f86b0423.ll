@@ -18,11 +18,12 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/nchybjntbm98czw.ll
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
 ; llvm/optimized/CommentBriefParser.cpp.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
 entry:

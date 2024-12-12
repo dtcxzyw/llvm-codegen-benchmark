@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/nfs4trace.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0) #0 {
@@ -23,7 +24,10 @@ entry:
   ret i32 %2
 }
 
-; 65 occurrences:
+; 62 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/message.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
@@ -38,11 +42,7 @@ entry:
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-procfs.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -52,7 +52,6 @@ entry:
 ; linux/optimized/softirq.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; node/optimized/libnode.env.ll
@@ -73,7 +72,6 @@ entry:
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
@@ -94,6 +92,28 @@ define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 13
   %2 = add i32 %1, 9216
+  ret i32 %2
+}
+
+; 13 occurrences:
+; abc/optimized/acbFunc.c.ll
+; linux/optimized/maple_tree.ll
+; linux/optimized/seg6.ll
+; meshlab/optimized/filter_create.cpp.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/joint_bilateral_filter.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; qemu/optimized/target_riscv_pmp.c.ll
+; wireshark/optimized/packet-fp_hint.c.ll
+; wireshark/optimized/packet-gsm_abis_pgsl.c.ll
+; wireshark/optimized/packet-reload.c.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 4
+  %2 = add i32 %1, 24
   ret i32 %2
 }
 
@@ -172,26 +192,6 @@ define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = add i32 %1, 7
-  ret i32 %2
-}
-
-; 11 occurrences:
-; abc/optimized/acbFunc.c.ll
-; linux/optimized/maple_tree.ll
-; linux/optimized/seg6.ll
-; meshlab/optimized/filter_create.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/joint_bilateral_filter.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; wireshark/optimized/packet-fp_hint.c.ll
-; wireshark/optimized/packet-gsm_abis_pgsl.c.ll
-; wireshark/optimized/packet-reload.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 1
-  %2 = add i32 %1, 5
   ret i32 %2
 }
 

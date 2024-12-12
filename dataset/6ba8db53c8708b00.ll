@@ -19,11 +19,11 @@ define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
@@ -31,7 +31,6 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; postgres/optimized/nbtxlog.ll
@@ -45,16 +44,14 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/xsatSolver.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/twixtboard.cc.ll
@@ -93,7 +90,7 @@ define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -140,7 +137,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 
@@ -163,7 +160,7 @@ define i32 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

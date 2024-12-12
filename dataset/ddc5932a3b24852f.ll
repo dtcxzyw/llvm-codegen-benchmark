@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/capability.ll
+; 5 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll

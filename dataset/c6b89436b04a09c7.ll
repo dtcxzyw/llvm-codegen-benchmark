@@ -11,7 +11,7 @@ entry:
   ret i1 %4
 }
 
-; 41 occurrences:
+; 46 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
@@ -53,6 +53,11 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

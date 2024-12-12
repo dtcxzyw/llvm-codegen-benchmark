@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -25,7 +25,7 @@ entry:
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; wireshark/optimized/field_information.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, -1
   %4 = select i1 %3, i1 %0, i1 false

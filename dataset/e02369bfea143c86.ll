@@ -22,11 +22,11 @@ entry:
 ; linux/optimized/af_inet.ll
 ; linux/optimized/hooks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0) #0 {
+define i1 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = shl i8 %0, 3
   %2 = and i8 %1, 120
-  %3 = icmp ult i8 %2, 9
+  %3 = icmp samesign ult i8 %2, 9
   ret i1 %3
 }
 
@@ -43,11 +43,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0) #0 {
+define i1 @func0000000000000018(i8 %0) #0 {
 entry:
   %1 = shl i8 %0, 2
   %2 = and i8 %1, 60
-  %3 = icmp ugt i8 %2, 21
+  %3 = icmp samesign ugt i8 %2, 21
   ret i1 %3
 }
 

@@ -1,7 +1,7 @@
-func00000000000000a2:                   # @func00000000000000a2
-	testq	%rsi, %rsi
-	sete	%cl
+func0000000000000142:                   # @func0000000000000142
 	testl	%edx, %edx
+	sete	%cl
+	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	orb	%dil, %al
@@ -13,10 +13,10 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
-	testq	%rsi, %rsi
-	sete	%cl
+func0000000000000042:                   # @func0000000000000042
 	testl	%edx, %edx
+	sete	%cl
+	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	orb	%dil, %al

@@ -8,13 +8,14 @@ func0000000000000005:                   # @func0000000000000005
 	orl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	notb	%sil
-	movzbl	%sil, %ecx
+	xorl	%ecx, %ecx
+	testb	%dl, %dl
+	setne	%cl
 	orl	$-2, %ecx
 	shll	$30, %ecx
-	testb	%dl, %dl
+	testb	$1, %sil
 	movl	$-2147483648, %eax              # imm = 0x80000000
-	cmovnel	%ecx, %eax
+	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000019:                   # @func0000000000000019

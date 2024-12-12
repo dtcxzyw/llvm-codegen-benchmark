@@ -6,10 +6,3 @@ func0000000000000009:                   # @func0000000000000009
 	cmovnel	%ecx, %edx
 	subq	%rdx, %rax
 	retq
-func0000000000000088:                   # @func0000000000000088
-	movq	%rdi, %rax
-	leal	2(%rsi), %ecx
-	testl	%esi, %esi
-	cmovel	%esi, %ecx
-	subq	%rcx, %rax
-	retq

@@ -10,10 +10,3 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$27, %ecx
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rdi, %rax
-	movl	%esi, %ecx
-	andl	$62, %ecx
-	cmpl	$54, %ecx
-	cmovaeq	%rsi, %rax
-	retq

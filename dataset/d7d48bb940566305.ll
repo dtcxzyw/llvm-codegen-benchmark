@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; casadi/optimized/cs_counts.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
@@ -21,8 +21,10 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -32,15 +34,13 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 4 occurrences:
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
-; php/optimized/is_simh.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -48,16 +48,15 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/x86_pkg_temp_thermal.ll
 ; opencv/optimized/Sobel_Demo.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; openmpi/optimized/group_strided.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -144,11 +143,34 @@ entry:
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ult i32 %0, 7
   %5 = select i1 %4, i32 8, i32 %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; graphviz/optimized/fmtesc.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %.not = icmp eq i32 %0, 0
+  %4 = select i1 %.not, i32 %3, i32 0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ShuffleDecode.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = icmp ugt i32 %0, 15
+  %5 = select i1 %4, i32 -2, i32 %3
   ret i32 %5
 }
 

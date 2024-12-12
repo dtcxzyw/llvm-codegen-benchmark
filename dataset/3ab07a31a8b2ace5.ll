@@ -18,7 +18,7 @@ entry:
   ret i32 %2
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dsc.c.ll
 ; arrow/optimized/message.cc.ll
@@ -37,7 +37,8 @@ entry:
 ; icu/optimized/umutablecptrie.ll
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/popup.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll

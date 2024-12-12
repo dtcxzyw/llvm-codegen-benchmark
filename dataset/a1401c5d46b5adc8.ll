@@ -1,5 +1,40 @@
 
-; 87 occurrences:
+; 8 occurrences:
+; clamav/optimized/bytecode_api.c.ll
+; git/optimized/path.ll
+; linux/optimized/libahci.ll
+; llvm/optimized/Host.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_lib.ll
+; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; qemu/optimized/hw_pci_pcie.c.ll
+; qemu/optimized/util_cpuinfo-i386.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -4
+  %4 = or i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = or i32 %5, 2
+  ret i32 %6
+}
+
+; 5 occurrences:
+; linux/optimized/intel_ddi.ll
+; linux/optimized/xhci.ll
+; openssl/optimized/libssl-lib-quic_wire_pkt.ll
+; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; php/optimized/zend_inference.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 191
+  %4 = or disjoint i32 %0, %1
+  %5 = or i32 %4, %3
+  %6 = or disjoint i32 %5, 64
+  ret i32 %6
+}
+
+; 85 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -24,10 +59,8 @@
 ; linux/optimized/fops.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/iosf_mbi.ll
@@ -44,7 +77,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -54,6 +86,7 @@
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
+; openjdk/optimized/gtk3_interface.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
@@ -90,50 +123,14 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 255
+  %3 = and i32 %2, 2145386496
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, 256
+  %6 = or disjoint i32 %5, 111
   ret i32 %6
 }
 
-; 8 occurrences:
-; clamav/optimized/bytecode_api.c.ll
-; git/optimized/path.ll
-; linux/optimized/libahci.ll
-; llvm/optimized/Host.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_lib.ll
-; openssl/optimized/libcrypto-shlib-bn_lib.ll
-; qemu/optimized/hw_pci_pcie.c.ll
-; qemu/optimized/util_cpuinfo-i386.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, -4
-  %4 = or i32 %0, %1
-  %5 = or i32 %4, %3
-  %6 = or i32 %5, 2
-  ret i32 %6
-}
-
-; 6 occurrences:
-; linux/optimized/intel_ddi.ll
-; linux/optimized/statfs.ll
-; linux/optimized/xhci.ll
-; openssl/optimized/libssl-lib-quic_wire_pkt.ll
-; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
-; php/optimized/zend_inference.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 191
-  %4 = or disjoint i32 %0, %1
-  %5 = or i32 %4, %3
-  %6 = or disjoint i32 %5, 64
-  ret i32 %6
-}
-
-; 28 occurrences:
+; 27 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_ddi.ll
@@ -147,7 +144,6 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll

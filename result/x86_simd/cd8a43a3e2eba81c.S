@@ -6,7 +6,7 @@
 	.byte	11                              # 0xb
 .LCPI0_3:
 	.byte	10                              # 0xa
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11]
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpcmpeqb	%xmm2, %xmm0, %k1
@@ -22,7 +22,7 @@ func0000000000000022:                   # @func0000000000000022
 	.zero	16,5
 .LCPI1_3:
 	.byte	163                             # 0xa3
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vpcmpneqb	.LCPI1_0(%rip), %xmm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -37,7 +37,7 @@ func0000000000000182:                   # @func0000000000000182
 	.zero	16,67
 .LCPI2_3:
 	.byte	65                              # 0x41
-func0000000000000110:                   # @func0000000000000110
+func0000000000000630:                   # @func0000000000000630
 	vpmaxub	%xmm1, %xmm0, %xmm0
 	vpcmpnleub	.LCPI2_0(%rip), %xmm0, %k1
 	vpbroadcastb	.LCPI2_3(%rip), %xmm0   # xmm0 = [65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]

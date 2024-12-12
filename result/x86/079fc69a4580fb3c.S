@@ -1,4 +1,4 @@
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007f4:                   # @func00000000000007f4
 	leaq	39(%rsi,%rsi), %rax
 	addq	$4, %rdi
 	cmpq	%rax, %rdi
@@ -10,13 +10,13 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rax, %rdi
 	setbe	%al
 	retq
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	shlq	$4, %rsi
 	addq	$31, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000794:                   # @func0000000000000794
 	leaq	4(%rsi,%rsi), %rax
 	incq	%rdi
 	cmpq	%rax, %rdi
@@ -28,9 +28,9 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shlq	$6, %rsi
 	orq	$63, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

@@ -1,9 +1,9 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	zext.h	a2, a2
 	subw	a1, a1, a2
 	sh1add	a0, a1, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
 	subw	a1, a1, a2
 	sh3add.uw	a0, a1, a0

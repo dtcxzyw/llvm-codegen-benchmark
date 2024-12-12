@@ -1,5 +1,8 @@
 
-; 23 occurrences:
+%"struct.std::pair.33.3483953" = type { i64, double }
+
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -8,15 +11,10 @@
 ; libwebp/optimized/analysis_enc.c.ll
 ; nanosvg/optimized/nanosvg.ll
 ; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/pentago.cc.ll
-; openspiel/optimized/skat.cc.ll
-; openspiel/optimized/spades.cc.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/yv12extend.c.ll
@@ -32,12 +30,14 @@ entry:
   ret ptr %4
 }
 
-; 143 occurrences:
+; 141 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
@@ -74,7 +74,6 @@ entry:
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; luajit/optimized/minilua.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -138,13 +137,10 @@ entry:
 ; openjdk/optimized/relocInfo.ll
 ; openspiel/optimized/DealerPar.cpp.ll
 ; openspiel/optimized/backgammon.cc.ll
-; openspiel/optimized/euchre.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
-; openspiel/optimized/hearts.cc.ll
 ; openspiel/optimized/nine_mens_morris.cc.ll
 ; openspiel/optimized/trade_comm.cc.ll
 ; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
-; openssl/optimized/libdefault-lib-kbkdf.ll
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/gen_scalers.c.ll
@@ -206,6 +202,21 @@ entry:
   ret ptr %4
 }
 
+; 5 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; openspiel/optimized/DealerPar.cpp.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openssl/optimized/libdefault-lib-kbkdf.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 4, %1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
 ; 1 occurrences:
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
@@ -239,10 +250,9 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
@@ -250,6 +260,20 @@ entry:
   %2 = sub nuw nsw i32 -2, %1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 4 occurrences:
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/pentago.cc.ll
+; openspiel/optimized/skat.cc.ll
+; openspiel/optimized/spades.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 52, %1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw %"struct.std::pair.33.3483953", ptr %0, i64 %3
   ret ptr %4
 }
 

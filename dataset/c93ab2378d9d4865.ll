@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1

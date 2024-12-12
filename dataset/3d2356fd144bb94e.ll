@@ -1,4 +1,13 @@
 
+%"class.std::tuple.2824823" = type { %"struct.std::_Tuple_impl.2824824" }
+%"struct.std::_Tuple_impl.2824824" = type { %"struct.std::_Tuple_impl.87.2824819", %"struct.std::_Head_base.90.2824825" }
+%"struct.std::_Tuple_impl.87.2824819" = type { %"struct.std::_Tuple_impl.88.2824820", %"struct.std::_Head_base.89.2824821" }
+%"struct.std::_Tuple_impl.88.2824820" = type { %"struct.std::_Head_base.2824822" }
+%"struct.std::_Head_base.2824822" = type { i64 }
+%"struct.std::_Head_base.89.2824821" = type { %class.aiVector3t.2824802 }
+%class.aiVector3t.2824802 = type { double, double, double }
+%"struct.std::_Head_base.90.2824825" = type { i64 }
+
 ; 4 occurrences:
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
@@ -15,50 +24,128 @@ entry:
   ret i1 %7
 }
 
-; 83 occurrences:
+; 157 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/unit_test_log.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
+; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; duckdb/optimized/ub_duckdb_function.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; faiss/optimized/AutoTune.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; gromacs/optimized/colvaratoms.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
-; gromacs/optimized/make_ndx.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/resall.cpp.ll
 ; gromacs/optimized/tomorse.cpp.ll
-; gromacs/optimized/topology.cpp.ll
 ; gromacs/optimized/topshake.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hyperscan/optimized/ng_limex_accel.cpp.ll
-; lief/optimized/pem.c.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/BranchFolding.cpp.ll
-; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/TargetPassConfig.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
-; llvm/optimized/WindowsResource.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -78,8 +165,6 @@ entry:
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
-; minetest/optimized/CMeshCache.cpp.ll
-; minetest/optimized/CNullDriver.cpp.ll
 ; ocio/optimized/CDLTransform.cpp.ll
 ; oiio/optimized/paramlist.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
@@ -92,18 +177,16 @@ entry:
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll
 ; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
 ; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; openusd/optimized/spline_KeyFrames.cpp.ll
-; php/optimized/is_simh.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; vcpkg/optimized/json.cpp.ll
 ; yosys/optimized/bugpoint.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000058a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 20
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 20
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp sgt i64 %6, 0
@@ -126,59 +209,231 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000581(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
-; 8 occurrences:
+; 25 occurrences:
+; boost/optimized/parser_utils.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
+; gromacs/optimized/make_ndx.cpp.ll
+; gromacs/optimized/topology.cpp.ll
+; lief/optimized/pem.c.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/MachineScheduler.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVBaseInfo.cpp.ll
+; llvm/optimized/RISCVISAInfo.cpp.ll
+; llvm/optimized/RISCVTargetMachine.cpp.ll
+; llvm/optimized/SelectionDAGISel.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/TargetPassConfig.cpp.ll
+; llvm/optimized/WindowsResource.cpp.ll
+; minetest/optimized/CMeshCache.cpp.ll
+; minetest/optimized/CNullDriver.cpp.ll
+; opencv/optimized/bagofwords_classification.cpp.ll
+; openusd/optimized/meshUtil.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; zstd/optimized/zstd_v01.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000078a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = icmp sgt i64 %6, 0
+  ret i1 %7
+}
+
+; 131 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/partition.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; fmt/optimized/format-test.cc.ll
+; fmt/optimized/format.cc.ll
+; fmt/optimized/gtest-extra.cc.ll
+; fmt/optimized/header-only-test.cc.ll
+; fmt/optimized/os-test.cc.ll
+; fmt/optimized/os.cc.ll
+; fmt/optimized/ostream-test.cc.ll
+; fmt/optimized/ranges-odr-test.cc.ll
+; fmt/optimized/ranges-test.cc.ll
 ; fmt/optimized/std-test.cc.ll
+; fmt/optimized/unicode-test.cc.ll
+; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; lightgbm/optimized/tree.cpp.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/tests.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
+; vcpkg/optimized/archives.cpp.ll
+; vcpkg/optimized/binarycaching.cpp.ll
+; vcpkg/optimized/binaryparagraph.cpp.ll
+; vcpkg/optimized/bundlesettings.cpp.ll
+; vcpkg/optimized/checks.cpp.ll
+; vcpkg/optimized/ci-baseline.cpp.ll
+; vcpkg/optimized/cmakevars.cpp.ll
+; vcpkg/optimized/cmd-parser.cpp.ll
+; vcpkg/optimized/cofffilereader.cpp.ll
+; vcpkg/optimized/commands.add-version.cpp.ll
+; vcpkg/optimized/commands.add.cpp.ll
+; vcpkg/optimized/commands.autocomplete.cpp.ll
+; vcpkg/optimized/commands.build.cpp.ll
+; vcpkg/optimized/commands.check-support.cpp.ll
+; vcpkg/optimized/commands.ci-clean.cpp.ll
+; vcpkg/optimized/commands.ci-verify-versions.cpp.ll
+; vcpkg/optimized/commands.ci.cpp.ll
+; vcpkg/optimized/commands.contact.cpp.ll
+; vcpkg/optimized/commands.create.cpp.ll
+; vcpkg/optimized/commands.depend-info.cpp.ll
+; vcpkg/optimized/commands.download.cpp.ll
+; vcpkg/optimized/commands.edit.cpp.ll
+; vcpkg/optimized/commands.env.cpp.ll
+; vcpkg/optimized/commands.export.cpp.ll
+; vcpkg/optimized/commands.find.cpp.ll
+; vcpkg/optimized/commands.format-manifest.cpp.ll
+; vcpkg/optimized/commands.generate-msbuild-props.cpp.ll
+; vcpkg/optimized/commands.help.cpp.ll
+; vcpkg/optimized/commands.init-registry.cpp.ll
+; vcpkg/optimized/commands.install.cpp.ll
+; vcpkg/optimized/commands.integrate.cpp.ll
+; vcpkg/optimized/commands.list.cpp.ll
+; vcpkg/optimized/commands.new.cpp.ll
+; vcpkg/optimized/commands.package-info.cpp.ll
+; vcpkg/optimized/commands.portsdiff.cpp.ll
+; vcpkg/optimized/commands.remove.cpp.ll
+; vcpkg/optimized/commands.set-installed.cpp.ll
+; vcpkg/optimized/commands.update-baseline.cpp.ll
+; vcpkg/optimized/commands.update.cpp.ll
+; vcpkg/optimized/commands.version.cpp.ll
+; vcpkg/optimized/commands.z-changelog.cpp.ll
+; vcpkg/optimized/commands.z-extract.cpp.ll
+; vcpkg/optimized/commands.z-generate-message-map.cpp.ll
+; vcpkg/optimized/configuration.cpp.ll
+; vcpkg/optimized/configure-environment.cpp.ll
+; vcpkg/optimized/dependencies.cpp.ll
+; vcpkg/optimized/downloads.cpp.ll
+; vcpkg/optimized/export.chocolatey.cpp.ll
+; vcpkg/optimized/export.ifw.cpp.ll
+; vcpkg/optimized/export.prefab.cpp.ll
+; vcpkg/optimized/files.cpp.ll
+; vcpkg/optimized/git.cpp.ll
+; vcpkg/optimized/hash.cpp.ll
+; vcpkg/optimized/input.cpp.ll
+; vcpkg/optimized/json.cpp.ll
+; vcpkg/optimized/message_sinks.cpp.ll
+; vcpkg/optimized/messages.cpp.ll
+; vcpkg/optimized/packagespec.cpp.ll
+; vcpkg/optimized/paragraphs.cpp.ll
+; vcpkg/optimized/parse.cpp.ll
+; vcpkg/optimized/platform-expression.cpp.ll
+; vcpkg/optimized/portfileprovider.cpp.ll
+; vcpkg/optimized/postbuildlint.cpp.ll
+; vcpkg/optimized/registries.cpp.ll
+; vcpkg/optimized/sourceparagraph.cpp.ll
+; vcpkg/optimized/spdx.cpp.ll
+; vcpkg/optimized/strings.cpp.ll
+; vcpkg/optimized/system.cpp.ll
+; vcpkg/optimized/system.process.cpp.ll
+; vcpkg/optimized/tools.cpp.ll
+; vcpkg/optimized/triplet.cpp.ll
+; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
+; vcpkg/optimized/vcpkgpaths.cpp.ll
+; vcpkg/optimized/versiondeserializers.cpp.ll
+; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000286(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000786(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp slt i64 %6, 1
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; assimp/optimized/IFCBoolean.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.std::tuple.2824823", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = icmp sgt i64 %6, 0
+  ret i1 %7
+}
+
+; 3 occurrences:
 ; casadi/optimized/bspline.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
 ; lief/optimized/ssl_client.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000588(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 2
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp ugt i64 %6, 1
   ret i1 %7
 }
 
-; 4 occurrences:
-; cmake/optimized/zstd_compress.c.ll
+; 2 occurrences:
 ; hdf5/optimized/H5Odtype.c.ll
 ; lief/optimized/ssl_tls.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000784(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 64
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 64
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp ult i64 %6, 4
@@ -198,6 +453,18 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; boost/optimized/any_params_iter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000781(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
 ; 4 occurrences:
 ; hdf5/optimized/H5Odtype.c.ll
 ; postgres/optimized/inet_net_ntop.ll
@@ -214,42 +481,48 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; zstd/optimized/zstd_v01.c.ll
+; 2 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000584(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 8
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 12
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
-  %7 = icmp sgt i64 %6, 0
+  %7 = icmp ult i64 %6, 4294836224
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/inline.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 40
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp ult i64 %6, 60
   ret i1 %7
 }
 
-; 1 occurrences:
-; cmake/optimized/cmCTestBinPacker.cxx.ll
+; 6 occurrences:
+; cvc5/optimized/function_const.cpp.ll
+; cvc5/optimized/lfsc_post_processor.cpp.ll
+; cvc5/optimized/quantifiers_attributes.cpp.ll
+; cvc5/optimized/quantifiers_rewriter.cpp.ll
+; cvc5/optimized/theory_ff_rewriter.cpp.ll
+; cvc5/optimized/theory_uf_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000788(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr ptr, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
-  %7 = icmp sgt i64 %6, 0
+  %7 = icmp ugt i64 %6, 9223372036854775800
   ret i1 %7
 }
 

@@ -1,20 +1,4 @@
 
-; 5 occurrences:
-; git/optimized/date.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0) #0 {
-entry:
-  %.fr = freeze i64 %0
-  %1 = urem i64 %.fr, 146097
-  %2 = sub nuw i64 %.fr, %1
-  %3 = add nuw nsw i64 %2, 3
-  ret i64 %3
-}
-
 ; 2 occurrences:
 ; php/optimized/unixtime2tm.ll
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
@@ -25,6 +9,20 @@ entry:
   %1 = urem i64 %.fr, 153
   %2 = sub nuw i64 %.fr, %1
   %3 = add nuw i64 %2, 2
+  ret i64 %3
+}
+
+; 3 occurrences:
+; git/optimized/date.ll
+; libquic/optimized/time_support.c.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0) #0 {
+entry:
+  %.fr = freeze i64 %0
+  %1 = urem i64 %.fr, 24
+  %2 = sub nuw i64 %.fr, %1
+  %3 = add nuw nsw i64 %2, 365
   ret i64 %3
 }
 
@@ -41,12 +39,10 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
-; cmake/optimized/crc32.c.ll
+; 3 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
-; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {
 entry:

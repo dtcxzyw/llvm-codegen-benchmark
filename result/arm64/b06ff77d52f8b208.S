@@ -1,17 +1,12 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fmov	v2.4s, #1.87500000
-	orr	v0.16b, v0.16b, v1.16b
-	eor	v0.16b, v0.16b, v2.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	orr	w8, w0, w1
+	eor	w0, w8, #0x3ff00000
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	orr	v0.16b, v0.16b, v1.16b
-	mvn	v0.16b, v0.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	orr	w8, w0, w1
+	mvn	w0, w8
 	ret
                                         // -- End function

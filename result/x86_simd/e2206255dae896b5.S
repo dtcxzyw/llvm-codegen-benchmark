@@ -10,10 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	.long	2139095040                      # 0x7f800000
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpbroadcastd	.LCPI1_0(%rip), %ymm4   # ymm4 = [2139095040,2139095040,2139095040,2139095040,2139095040,2139095040,2139095040,2139095040]
-	vpand	%ymm4, %ymm1, %ymm5
-	vpcmpneqd	%ymm4, %ymm5, %k1
-	vpcmpgtw	%xmm2, %xmm3, %k1 {%k1}
+	vpmovw2m	%xmm2, %k1
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [2139095040,2139095040,2139095040,2139095040,2139095040,2139095040,2139095040,2139095040]
+	vpand	%ymm2, %ymm1, %ymm3
+	vpcmpneqd	%ymm2, %ymm3, %k1 {%k1}
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

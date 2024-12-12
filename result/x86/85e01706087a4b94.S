@@ -1,4 +1,4 @@
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000bf:                   # @func00000000000000bf
 	movzwl	%dx, %eax
 	movzwl	%si, %ecx
 	subl	%eax, %ecx
@@ -11,7 +11,7 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rax, %rcx
 	leaq	40(%rdi,%rcx), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	movzwl	%dx, %eax
 	movzwl	%si, %ecx
 	subq	%rax, %rcx

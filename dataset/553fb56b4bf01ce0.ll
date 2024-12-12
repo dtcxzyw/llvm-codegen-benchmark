@@ -1,13 +1,13 @@
 
-%struct.Elf64_Shdr.2485416 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%"struct.mold::elf::CieRecord.2521559" = type { ptr, ptr, i32, i32, i32, i32, i8, %"class.std::span.460.2521560", %"class.std::basic_string_view.2521423" }
-%"class.std::span.460.2521560" = type { ptr, %"class.std::__detail::__extent_storage.2521512" }
-%"class.std::__detail::__extent_storage.2521512" = type { i64 }
-%"class.std::basic_string_view.2521423" = type { i64, ptr }
-%struct.NodeInfo.2592148 = type { i64, ptr, i8, i8, i8, i16, [128 x i8] }
-%struct.Odc_Obj_t_.2764023 = type { i16, i16, i16, i16, i32, i32 }
+%struct.Elf64_Shdr.2600898 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%"struct.mold::elf::CieRecord.2635968" = type { ptr, ptr, i32, i32, i32, i32, i8, %"class.std::span.460.2635969", %"class.std::basic_string_view.2635833" }
+%"class.std::span.460.2635969" = type { ptr, %"class.std::__detail::__extent_storage.2635921" }
+%"class.std::__detail::__extent_storage.2635921" = type { i64 }
+%"class.std::basic_string_view.2635833" = type { i64, ptr }
+%struct.FWCfgEntry.2709409 = type { i32, i8, ptr, ptr, ptr, ptr }
+%struct.Odc_Obj_t_.2876286 = type { i16, i16, i16, i16, i32, i32 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/optimizer.ll
 ; linux/optimized/af_netlink.ll
@@ -28,7 +28,6 @@
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/tsgistidx.ll
 ; qemu/optimized/disas_riscv.c.ll
-; qemu/optimized/hw_core_numa.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
@@ -44,17 +43,16 @@
 define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.Elf64_Shdr.2485416, ptr %0, i64 %2, i32 4
+  %3 = getelementptr %struct.Elf64_Shdr.2600898, ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
-; 174 occurrences:
+; 170 occurrences:
 ; abc/optimized/trees.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/recvol.cpp.ll
 ; cmake/optimized/cmELF.cxx.ll
-; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/trees.c.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -120,7 +118,6 @@ entry:
 ; llvm/optimized/TargetSchedule.cpp.ll
 ; llvm/optimized/X86DisassemblerTables.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/minilua.ll
@@ -199,10 +196,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; openjdk/optimized/abstractInterpreter.ll
-; openjdk/optimized/bytecodeTracer.ll
 ; openjdk/optimized/cmsnamed.ll
-; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/rewriter.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/y.cc.ll
@@ -221,22 +215,22 @@ entry:
 ; slurm/optimized/topology_tree.ll
 ; spike/optimized/elfloader.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; zlib/optimized/trees.c.ll
-; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw %"struct.mold::elf::CieRecord.2521559", ptr %0, i64 %2, i32 7
+  %3 = getelementptr nusw nuw %"struct.mold::elf::CieRecord.2635968", ptr %0, i64 %2, i32 7
   ret ptr %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/virtio_ring.ll
 ; linux/optimized/x_tables.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/relcache.ll
-; qemu/optimized/hw_core_numa.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -244,7 +238,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr %struct.NodeInfo.2592148, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.FWCfgEntry.2709409, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -256,10 +250,10 @@ entry:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw %struct.Odc_Obj_t_.2764023, ptr %0, i64 %2, i32 5
+  %3 = getelementptr nusw nuw %struct.Odc_Obj_t_.2876286, ptr %0, i64 %2, i32 5
   ret ptr %3
 }
 

@@ -3,7 +3,7 @@ func0000000000000016:                   // @func0000000000000016
 	cmp	w2, #0
 	mov	w8, #-2                         // =0xfffffffe
 	cinc	w8, w8, eq
-	add	w8, w8, w1
+	add	w8, w1, w8
 	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
@@ -12,7 +12,7 @@ func0000000000000062:                   // @func0000000000000062
 	cmp	w2, #4
 	mov	w8, #-6                         // =0xfffffffa
 	csel	w8, wzr, w8, lt
-	add	w8, w8, w1
+	add	w8, w1, w8
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function

@@ -1,11 +1,8 @@
 
-; 4 occurrences:
-; mini-lsm-rs/optimized/4ewvyiut5id4i5es.ll
-; mini-lsm-rs/optimized/4xntel1vrsy72qk8.ll
+; 1 occurrences:
 ; qemu/optimized/hw_nvme_dif.c.ll
-; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i8 %0) #0 {
+define i64 @func0000000000000048(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -1
   %2 = icmp ult i8 %1, 2
@@ -13,7 +10,7 @@ entry:
   ret i64 %3
 }
 
-; 61 occurrences:
+; 66 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; jemalloc/optimized/fxp.ll
@@ -21,6 +18,10 @@ entry:
 ; jemalloc/optimized/fxp.sym.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; llvm/optimized/MicrosoftMangle.cpp.ll
+; llvm/optimized/ParseDecl.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -75,6 +76,7 @@ entry:
 ; taskflow/optimized/while_loop.cpp.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i8 %0) #0 {
 entry:
@@ -108,6 +110,19 @@ define i64 @func0000000000000014(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 1
   %2 = icmp sgt i8 %1, 12
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 3 occurrences:
+; mini-lsm-rs/optimized/4ewvyiut5id4i5es.ll
+; mini-lsm-rs/optimized/4xntel1vrsy72qk8.ll
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000068(i8 %0) #0 {
+entry:
+  %1 = add nsw i8 %0, -3
+  %2 = icmp samesign ult i8 %1, -2
   %3 = zext i1 %2 to i64
   ret i64 %3
 }

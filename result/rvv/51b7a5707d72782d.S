@@ -3,13 +3,13 @@ func0000000000000010:                   # @func0000000000000010
 	vnsrl.wi	v10, v8, 0
 	li	a0, 512
 	vmsgtu.vx	v8, v10, a0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vmseq.vi	v8, v10, 0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 16
@@ -24,7 +24,7 @@ func0000000000000018:                   # @func0000000000000018
 	vnsrl.wi	v10, v8, 0
 	li	a0, 129
 	vmsne.vx	v8, v10, a0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret
 func0000000000000014:                   # @func0000000000000014
 	lui	a0, 8

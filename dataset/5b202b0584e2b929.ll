@@ -4,7 +4,7 @@
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/giaSim.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %0, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/camera.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %0, %3
@@ -39,7 +39,7 @@ entry:
 ; openblas/optimized/dgelq.c.ll
 ; openblas/optimized/dgeqr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %0, %3

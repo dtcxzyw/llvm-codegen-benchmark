@@ -1,7 +1,8 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; freetype/optimized/psaux.c.ll
+; lvgl/optimized/lv_math.ll
 ; openmpi/optimized/mpl_str.ll
 ; openssl/optimized/libcrypto-lib-property.ll
 ; openssl/optimized/libcrypto-shlib-property.ll

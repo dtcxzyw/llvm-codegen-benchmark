@@ -1,32 +1,32 @@
-func000000000000008a:                   // @func000000000000008a
+func000000000000008f:                   // @func000000000000008f
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, x8
 	add	x0, x8, #200
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, x8
 	add	x0, x8, #16
 	ret
                                         // -- End function
-func00000000000000fe:                   // @func00000000000000fe
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, w8, uxtw #1
 	add	x0, x8, #6
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, w8, uxtw #2
 	add	x0, x8, #1178
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, w8, uxtw #1
@@ -34,7 +34,7 @@ func000000000000007a:                   // @func000000000000007a
 	add	x0, x8, #2232
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	w8, w1, w2, uxth
 	add	x8, x0, w8, uxtw #3

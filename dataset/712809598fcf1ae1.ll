@@ -1,21 +1,8 @@
 
-; 2 occurrences:
-; gromacs/optimized/md5.c.ll
-; gromacs/optimized/md5.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 63
-  %4 = add nuw nsw i32 %3, 1
-  %5 = icmp ugt i32 %1, 64
-  %6 = select i1 %5, i32 %0, i32 %4
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -111
@@ -35,7 +22,7 @@ entry:
 ; wireshark/optimized/packet-kink.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 252
   %4 = add nuw nsw i32 %3, 20

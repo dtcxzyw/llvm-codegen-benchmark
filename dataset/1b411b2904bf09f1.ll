@@ -12,7 +12,7 @@
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, ptr %1, ptr null
@@ -20,21 +20,14 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
-; llvm/optimized/ADCE.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
-; llvm/optimized/LoopNestAnalysis.cpp.ll
-; llvm/optimized/MemberPointer.cpp.ll
-; llvm/optimized/SemaBoundsSafety.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; openjdk/optimized/library_call.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 9
   %4 = select i1 %3, ptr %1, ptr null
@@ -51,7 +44,7 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RunLoopAutoreleaseLeakChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 73
   %4 = select i1 %3, ptr %1, ptr null
@@ -62,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, ptr %1, ptr null

@@ -1,12 +1,6 @@
 
-; 115 occurrences:
+; 105 occurrences:
 ; hyperscan/optimized/scratch.c.ll
-; hyperscan/optimized/tamaramacompile.cpp.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
-; libwebp/optimized/frame_dec.c.ll
-; libwebp/optimized/webp_enc.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -105,10 +99,6 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; openjdk/optimized/generateOopMap.ll
-; openjdk/optimized/method.ll
-; openjdk/optimized/methodData.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
@@ -116,13 +106,49 @@
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 15
+  %7 = and i64 %6, 15
+  ret i64 %7
+}
+
+; 2 occurrences:
+; libwebp/optimized/webp_enc.c.ll
+; ropey-rs/optimized/1zgfltkx0c00yngh.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 15
+  %7 = and i64 %6, 15
+  ret i64 %7
+}
+
+; 10 occurrences:
+; hyperscan/optimized/tamaramacompile.cpp.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; libwebp/optimized/frame_dec.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; opencv/optimized/lapack.cpp.ll
+; openjdk/optimized/generateOopMap.ll
+; openjdk/optimized/method.ll
+; openjdk/optimized/methodData.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
-  %6 = add i64 %5, 15
-  %7 = and i64 %6, 15
+  %6 = add i64 %5, 3
+  %7 = and i64 %6, -4
   ret i64 %7
 }
 

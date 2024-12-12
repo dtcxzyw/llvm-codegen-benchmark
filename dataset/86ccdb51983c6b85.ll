@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -1
@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/rand.cpp.ll
 ; wireshark/optimized/packet-lapdm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777215
   %3 = add nuw nsw i32 %2, 1
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/NewGVN.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -64
   %3 = add i32 %2, 64
@@ -59,7 +59,7 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/netfilter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 131056
   %3 = add nuw nsw i32 %2, 24
@@ -72,19 +72,19 @@ entry:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = add nuw nsw i32 %2, 2
   %4 = trunc i64 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add nuw nsw i32 %2, 1

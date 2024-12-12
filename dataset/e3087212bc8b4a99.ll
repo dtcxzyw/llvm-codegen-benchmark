@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/fraMan.c.ll
@@ -20,6 +20,7 @@
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/splineutil.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

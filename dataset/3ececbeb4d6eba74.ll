@@ -55,9 +55,9 @@ entry:
 }
 
 ; 24 occurrences:
+; boost/optimized/cpu_timer.ll
 ; cvc5/optimized/metakind.cpp.ll
 ; icu/optimized/ucnvbocu.ll
-; linux/optimized/dmar.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/nfnetlink.ll
@@ -83,7 +83,7 @@ entry:
 define i64 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = select i1 %0, i64 1, i64 %2
+  %3 = select i1 %0, i64 9, i64 %2
   ret i64 %3
 }
 

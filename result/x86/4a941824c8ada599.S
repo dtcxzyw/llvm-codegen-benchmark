@@ -3,17 +3,17 @@ func0000000000000032:                   # @func0000000000000032
 	addq	%rdi, %rax
 	leaq	160(%rsi,%rax), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007b:                   # @func000000000000007b
 	movl	%edx, %eax
-	leaq	(%rdi,%rax,2), %rax
-	leaq	500(%rax,%rsi,2), %rax
+	leaq	(%rdi,%rsi,2), %rcx
+	leaq	500(%rcx,%rax,2), %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	movl	%edx, %eax
-	leaq	(%rdi,%rax,2), %rax
-	leaq	500(%rax,%rsi,2), %rax
+	leaq	(%rdi,%rsi,2), %rcx
+	leaq	500(%rcx,%rax,2), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	leaq	176(%rsi,%rax), %rax

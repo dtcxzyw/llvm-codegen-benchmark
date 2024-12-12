@@ -1,64 +1,56 @@
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%cl
 	cmpl	$64, %esi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	testl	%esi, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	testl	%esi, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testl	%esi, %esi
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000000ab:                   # @func00000000000000ab
+func000000000000014b:                   # @func000000000000014b
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	testl	%esi, %esi
 	setg	%al
 	orb	%cl, %al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	testl	%esi, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setge	%cl
+	cmpq	%rax, %rdi
+	setle	%cl
 	testl	%esi, %esi
 	setne	%al
-	orb	%cl, %al
-	retq
-func000000000000006a:                   # @func000000000000006a
-	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
-	testl	%esi, %esi
-	setle	%al
 	orb	%cl, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; coreutils-rs/optimized/2vd9rhgrl6pfdvv0.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
@@ -33,7 +33,6 @@
 ; postgres/optimized/spgtextproc.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/block_vpc.c.ll
-; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/54fx8hdjlkc0fd42.ll
 ; sqlite/optimized/sqlite3.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
@@ -41,6 +40,8 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {

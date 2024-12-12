@@ -64,7 +64,7 @@ entry:
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 63488
@@ -114,11 +114,11 @@ entry:
 ; llvm/optimized/StreamChecker.cpp.ll
 ; llvm/optimized/VLASizeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 267386880
-  %3 = icmp ult i32 %2, 240123904
+  %3 = icmp samesign ult i32 %2, 240123904
   ret i1 %3
 }
 

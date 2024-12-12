@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; darktable/optimized/PanasonicV6Decompressor.cpp.ll
+; 4 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/xlog.ll

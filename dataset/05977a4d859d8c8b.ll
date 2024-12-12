@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5HFhdr.c.ll
 ; hdf5/optimized/H5HFhuge.c.ll
@@ -8,7 +8,6 @@
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/enc_sse2.c.ll
 ; linux/optimized/arp.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
@@ -19,7 +18,6 @@
 ; qemu/optimized/hw_core_loader.c.ll
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-ecmp.c.ll
 ; Function Attrs: nounwind
@@ -44,7 +42,7 @@ entry:
   ret i32 %5
 }
 
-; 53 occurrences:
+; 62 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -98,6 +96,15 @@ entry:
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; velox/optimized/Reverse.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i8 %1) #0 {
 entry:

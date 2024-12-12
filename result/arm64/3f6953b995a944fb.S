@@ -1,11 +1,11 @@
-func0000000000000082:                   // @func0000000000000082
+func00000000000000c2:                   // @func00000000000000c2
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	add	x8, x8, x0
 	sub	x0, x8, #3
 	ret
                                         // -- End function
-func0000000000000086:                   // @func0000000000000086
+func00000000000000c6:                   // @func00000000000000c6
 // %bb.0:                               // %entry
 	mvn	x8, x2
 	add	x9, x0, x1

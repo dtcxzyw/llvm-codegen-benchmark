@@ -2,21 +2,34 @@
 ; 1 occurrences:
 ; ruby/optimized/printf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000048(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = getelementptr nusw i8, ptr %1, i64 -1
   %5 = icmp ugt ptr %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; postgres/optimized/bbstreamer_file.ll
+; qemu/optimized/util_uri.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 3
+  %4 = getelementptr i8, ptr %1, i64 1
+  %5 = icmp eq ptr %4, %3
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000001c8(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = getelementptr nusw i8, ptr %1, i64 -1
   %5 = icmp ugt ptr %4, %3
   %6 = and i1 %5, %0
@@ -54,7 +67,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 2
   %4 = getelementptr i8, ptr %1, i64 4
   %5 = icmp ult ptr %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -69,12 +82,74 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000064(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
-  %4 = getelementptr nusw i8, ptr %1, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
   %5 = icmp ult ptr %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %5 = icmp ult ptr %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e9(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %5 = icmp uge ptr %4, %3
   %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e8(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = icmp ugt ptr %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/PlaceSafepoints.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001ec(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 24
+  %5 = icmp ne ptr %4, %3
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000105(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = getelementptr i8, ptr %1, i64 4
+  %5 = icmp ule ptr %4, %3
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

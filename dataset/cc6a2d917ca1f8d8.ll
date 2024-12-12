@@ -1,7 +1,6 @@
 
-; 398 occurrences:
+; 400 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; bullet3/optimized/btGhostObject.ll
@@ -392,11 +391,14 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; z3/optimized/goal.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
@@ -408,11 +410,12 @@ entry:
   ret i32 %6
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/export_metadata.c.ll
 ; gromacs/optimized/md_support.cpp.ll
 ; linux/optimized/drm_edid.ll
+; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_ddi.ll
@@ -435,7 +438,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 0
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = select i1 %1, i32 4, i32 0
   %6 = or i32 %4, %5
   ret i32 %6
@@ -452,7 +455,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 131072
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = select i1 %1, i32 0, i32 262144
   %6 = or i32 %4, %5
   ret i32 %6
@@ -466,7 +469,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 512, i32 0
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = select i1 %1, i32 1024, i32 0
   %6 = or disjoint i32 %4, %5
   ret i32 %6

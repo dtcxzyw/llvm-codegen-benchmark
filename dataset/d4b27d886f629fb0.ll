@@ -31,7 +31,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000
   %3 = icmp sgt i64 %2, %0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 10
   %3 = sub nsw i64 %2, %0
@@ -57,18 +57,6 @@ entry:
   %2 = mul i64 %1, 19
   %3 = sub i64 %2, %0
   %4 = icmp ugt i64 %3, 2147483647
-  ret i1 %4
-}
-
-; 2 occurrences:
-; quickjs/optimized/libbf.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 19
-  %3 = sub i64 %2, %0
-  %4 = icmp ult i64 %3, 128
   ret i1 %4
 }
 

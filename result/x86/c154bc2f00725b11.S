@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	shlq	$41, %rax
 	sarq	$63, %rax
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	negl	%eax
 	andl	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	andq	$-4096, %rsi                    # imm = 0xF000
 	cmpq	$16385, %rsi                    # imm = 0x4001
 	movl	%edi, %ecx

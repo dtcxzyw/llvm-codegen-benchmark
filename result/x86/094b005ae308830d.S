@@ -9,3 +9,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$-3, %sil
 	cmovael	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movzbl	%dl, %eax
+	cmpb	$6, %sil
+	cmovael	%edi, %eax
+	retq

@@ -19,7 +19,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6
@@ -31,7 +31,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6
@@ -43,20 +43,21 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6
@@ -68,7 +69,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6
@@ -80,7 +81,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sub nsw i64 0, %1
   %6 = and i64 %4, %5
   ret i64 %6

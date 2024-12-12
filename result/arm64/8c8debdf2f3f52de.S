@@ -1,199 +1,46 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ldp	q16, q17, [sp]
-	fneg	v24.2d, v7.2d
-	ldp	q18, q19, [sp, #32]
-	fneg	v25.2d, v6.2d
-	ldp	q20, q21, [sp, #64]
-	fneg	v26.2d, v5.2d
-	ldp	q22, q23, [sp, #96]
-	fneg	v27.2d, v4.2d
-	fneg	v28.2d, v3.2d
-	fneg	v29.2d, v2.2d
-	fneg	v30.2d, v1.2d
-	fneg	v31.2d, v0.2d
-	fcmeq	v17.2d, v17.2d, #0.0
-	fcmeq	v16.2d, v16.2d, #0.0
-	fcmeq	v20.2d, v20.2d, #0.0
-	fcmeq	v19.2d, v19.2d, #0.0
-	fcmeq	v18.2d, v18.2d, #0.0
-	fcmeq	v23.2d, v23.2d, #0.0
-	fcmeq	v22.2d, v22.2d, #0.0
-	fcmeq	v21.2d, v21.2d, #0.0
-	bif	v0.16b, v31.16b, v16.16b
-	bif	v1.16b, v30.16b, v17.16b
-	bif	v2.16b, v29.16b, v18.16b
-	bif	v3.16b, v28.16b, v19.16b
-	bif	v4.16b, v27.16b, v20.16b
-	bif	v5.16b, v26.16b, v21.16b
-	bif	v6.16b, v25.16b, v22.16b
-	bif	v7.16b, v24.16b, v23.16b
+	fneg	d2, d0
+	fcmp	d1, #0.0
+	fcsel	d0, d2, d0, ne
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ldp	q16, q17, [sp]
-	fneg	v24.2d, v7.2d
-	ldp	q18, q19, [sp, #32]
-	fneg	v25.2d, v6.2d
-	ldp	q20, q21, [sp, #64]
-	fneg	v26.2d, v5.2d
-	ldp	q22, q23, [sp, #96]
-	fneg	v27.2d, v4.2d
-	fneg	v28.2d, v3.2d
-	fneg	v29.2d, v2.2d
-	fneg	v30.2d, v1.2d
-	fneg	v31.2d, v0.2d
-	fcmlt	v17.2d, v17.2d, #0.0
-	fcmlt	v16.2d, v16.2d, #0.0
-	fcmlt	v20.2d, v20.2d, #0.0
-	fcmlt	v19.2d, v19.2d, #0.0
-	fcmlt	v18.2d, v18.2d, #0.0
-	fcmlt	v23.2d, v23.2d, #0.0
-	fcmlt	v22.2d, v22.2d, #0.0
-	fcmlt	v21.2d, v21.2d, #0.0
-	bit	v0.16b, v31.16b, v16.16b
-	bit	v1.16b, v30.16b, v17.16b
-	bit	v2.16b, v29.16b, v18.16b
-	bit	v3.16b, v28.16b, v19.16b
-	bit	v4.16b, v27.16b, v20.16b
-	bit	v5.16b, v26.16b, v21.16b
-	bit	v6.16b, v25.16b, v22.16b
-	bit	v7.16b, v24.16b, v23.16b
+	fneg	d2, d0
+	fcmp	d1, #0.0
+	fcsel	d0, d2, d0, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ldp	q16, q17, [sp]
-	fneg	v24.2d, v7.2d
-	ldp	q18, q19, [sp, #32]
-	fneg	v25.2d, v6.2d
-	ldp	q20, q21, [sp, #64]
-	fneg	v26.2d, v5.2d
-	ldp	q22, q23, [sp, #96]
-	fneg	v27.2d, v4.2d
-	fneg	v28.2d, v3.2d
-	fneg	v29.2d, v2.2d
-	fneg	v30.2d, v1.2d
-	fneg	v31.2d, v0.2d
-	fcmgt	v17.2d, v17.2d, #0.0
-	fcmgt	v16.2d, v16.2d, #0.0
-	fcmgt	v20.2d, v20.2d, #0.0
-	fcmgt	v19.2d, v19.2d, #0.0
-	fcmgt	v18.2d, v18.2d, #0.0
-	fcmgt	v23.2d, v23.2d, #0.0
-	fcmgt	v22.2d, v22.2d, #0.0
-	fcmgt	v21.2d, v21.2d, #0.0
-	bit	v0.16b, v31.16b, v16.16b
-	bit	v1.16b, v30.16b, v17.16b
-	bit	v2.16b, v29.16b, v18.16b
-	bit	v3.16b, v28.16b, v19.16b
-	bit	v4.16b, v27.16b, v20.16b
-	bit	v5.16b, v26.16b, v21.16b
-	bit	v6.16b, v25.16b, v22.16b
-	bit	v7.16b, v24.16b, v23.16b
+	fneg	d2, d0
+	fcmp	d1, #0.0
+	fcsel	d0, d2, d0, gt
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ldp	q16, q17, [sp]
-	fneg	v24.2d, v7.2d
-	ldp	q18, q19, [sp, #32]
-	fneg	v25.2d, v6.2d
-	ldp	q20, q21, [sp, #64]
-	fneg	v26.2d, v5.2d
-	ldp	q22, q23, [sp, #96]
-	fneg	v27.2d, v4.2d
-	fneg	v28.2d, v3.2d
-	fneg	v29.2d, v2.2d
-	fneg	v30.2d, v1.2d
-	fneg	v31.2d, v0.2d
-	fcmge	v17.2d, v17.2d, #0.0
-	fcmge	v16.2d, v16.2d, #0.0
-	fcmge	v20.2d, v20.2d, #0.0
-	fcmge	v19.2d, v19.2d, #0.0
-	fcmge	v18.2d, v18.2d, #0.0
-	fcmge	v23.2d, v23.2d, #0.0
-	fcmge	v22.2d, v22.2d, #0.0
-	fcmge	v21.2d, v21.2d, #0.0
-	bif	v0.16b, v31.16b, v16.16b
-	bif	v1.16b, v30.16b, v17.16b
-	bif	v2.16b, v29.16b, v18.16b
-	bif	v3.16b, v28.16b, v19.16b
-	bif	v4.16b, v27.16b, v20.16b
-	bif	v5.16b, v26.16b, v21.16b
-	bif	v6.16b, v25.16b, v22.16b
-	bif	v7.16b, v24.16b, v23.16b
+	fneg	d2, d0
+	fcmp	d1, #0.0
+	fcsel	d0, d2, d0, lt
 	ret
                                         // -- End function
+.LCPI4_0:
+	.xword	0xbff921fb54442d18              // double -1.5707963267948966
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	str	d8, [sp, #-16]!                 // 8-byte Folded Spill
-	mov	x8, #11544                      // =0x2d18
-	ldp	q16, q17, [sp, #16]
-	movk	x8, #21572, lsl #16
-	ldp	q18, q19, [sp, #48]
-	movk	x8, #8699, lsl #32
-	ldp	q20, q21, [sp, #80]
-	movk	x8, #49145, lsl #48
-	ldp	q22, q23, [sp, #112]
-	dup	v25.2d, x8
-	fneg	v24.2d, v7.2d
-	fneg	v26.2d, v6.2d
-	fneg	v27.2d, v5.2d
-	fneg	v28.2d, v4.2d
-	fneg	v29.2d, v3.2d
-	fneg	v30.2d, v2.2d
-	fneg	v31.2d, v1.2d
-	fneg	v8.2d, v0.2d
-	fcmeq	v17.2d, v17.2d, v25.2d
-	fcmeq	v16.2d, v16.2d, v25.2d
-	fcmeq	v20.2d, v20.2d, v25.2d
-	fcmeq	v19.2d, v19.2d, v25.2d
-	fcmeq	v18.2d, v18.2d, v25.2d
-	fcmeq	v23.2d, v23.2d, v25.2d
-	fcmeq	v22.2d, v22.2d, v25.2d
-	fcmeq	v21.2d, v21.2d, v25.2d
-	bit	v0.16b, v8.16b, v16.16b
-	bit	v1.16b, v31.16b, v17.16b
-	bit	v4.16b, v28.16b, v20.16b
-	bit	v2.16b, v30.16b, v18.16b
-	bit	v3.16b, v29.16b, v19.16b
-	bit	v7.16b, v24.16b, v23.16b
-	bit	v5.16b, v27.16b, v21.16b
-	bit	v6.16b, v26.16b, v22.16b
-	ldr	d8, [sp], #16                   // 8-byte Folded Reload
+	adrp	x8, .LCPI4_0
+	fneg	d3, d0
+	ldr	d2, [x8, :lo12:.LCPI4_0]
+	fcmp	d1, d2
+	fcsel	d0, d3, d0, eq
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	ldp	q16, q17, [sp]
-	fneg	v24.2d, v7.2d
-	ldp	q18, q19, [sp, #32]
-	fneg	v25.2d, v6.2d
-	ldp	q20, q21, [sp, #64]
-	fneg	v26.2d, v5.2d
-	ldp	q22, q23, [sp, #96]
-	fneg	v27.2d, v4.2d
-	fneg	v28.2d, v3.2d
-	fneg	v29.2d, v2.2d
-	fneg	v30.2d, v1.2d
-	fneg	v31.2d, v0.2d
-	fcmgt	v17.2d, v17.2d, #0.0
-	fcmgt	v16.2d, v16.2d, #0.0
-	fcmgt	v20.2d, v20.2d, #0.0
-	fcmgt	v19.2d, v19.2d, #0.0
-	fcmgt	v18.2d, v18.2d, #0.0
-	fcmgt	v23.2d, v23.2d, #0.0
-	fcmgt	v22.2d, v22.2d, #0.0
-	fcmgt	v21.2d, v21.2d, #0.0
-	bif	v0.16b, v31.16b, v16.16b
-	bif	v1.16b, v30.16b, v17.16b
-	bif	v2.16b, v29.16b, v18.16b
-	bif	v3.16b, v28.16b, v19.16b
-	bif	v4.16b, v27.16b, v20.16b
-	bif	v5.16b, v26.16b, v21.16b
-	bif	v6.16b, v25.16b, v22.16b
-	bif	v7.16b, v24.16b, v23.16b
+	fneg	d2, d0
+	fcmp	d1, #0.0
+	fcsel	d0, d2, d0, le
 	ret
                                         // -- End function

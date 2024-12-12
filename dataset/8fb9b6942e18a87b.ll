@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; libpng/optimized/pngrtran.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/pngrtran.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0, i32 %1, i8 %2) #0 {

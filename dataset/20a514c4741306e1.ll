@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 84 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -16,12 +16,10 @@
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; delta-rs/optimized/v2ww4w96jtc8bk1.ll
 ; delta-rs/optimized/wrhqeq9ewpf5gr8.ll
-; hermes/optimized/ESTreeIRGen.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; llvm/optimized/COFFObjectFile.cpp.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
@@ -33,7 +31,6 @@
 ; ockam-rs/optimized/46b94rjbunmwfae6.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/5gojg14e35fgi63k.ll
-; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; ripgrep-rs/optimized/1mcmb1gm1tyx6mx.ll
 ; ripgrep-rs/optimized/1tu4ff7k1l20r9ex.ll
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
@@ -71,7 +68,6 @@
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; rustfmt-rs/optimized/llbxf4pclolbp5s.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tree-sitter-rs/optimized/1ntgh1gib5lvqmev.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; tree-sitter-rs/optimized/3cmrhtrctm3afl2k.ll
@@ -87,14 +83,26 @@
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000002(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
+  %4 = select i1 %1, ptr undef, ptr %3
+  %5 = insertvalue { ptr, ptr } poison, ptr %0, 0
+  %6 = insertvalue { ptr, ptr } %5, ptr %4, 1
+  ret { ptr, ptr } %6
+}
+
+; 4 occurrences:
+; hermes/optimized/ESTreeIRGen.cpp.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
+; ring-rs/optimized/4krjvpwhiya9iudo.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; Function Attrs: nounwind
+define { ptr, ptr } @func0000000000000003(ptr %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = select i1 %1, ptr undef, ptr %3
   %5 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %6 = insertvalue { ptr, ptr } %5, ptr %4, 1

@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 148 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcBm.c.ll
@@ -115,8 +115,6 @@
 ; abc/optimized/saigOutDec.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
-; abc/optimized/sbdCut.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sswSat.c.ll
@@ -125,6 +123,9 @@
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
@@ -163,7 +164,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 16
   %3 = and i32 %2, 255
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

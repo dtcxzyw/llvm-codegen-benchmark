@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 51 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -7,7 +7,6 @@
 ; gromacs/optimized/compiler.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/byd.ll
@@ -44,7 +43,6 @@
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/tcg.c.ll
 ; redis/optimized/sentinel.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parse.ll
@@ -58,7 +56,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 0, i32 32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -69,7 +67,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = select i1 %2, i32 2112, i32 64
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -112,6 +110,18 @@ entry:
   %2 = icmp ugt i64 %1, 4294967295
   %3 = select i1 %2, i32 32, i32 0
   %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bn_lib.ll
+; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 65535
+  %3 = select i1 %2, i32 16, i32 0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -386,14 +396,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/sparring_partner.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp sgt i64 %1, -1
-  %3 = select i1 %2, i32 2, i32 1
-  %4 = or i32 %3, %0
+  %2 = icmp sgt i64 %1, 1
+  %3 = select i1 %2, i32 3, i32 1
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -406,7 +417,7 @@ define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i32 2, i32 0
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -418,7 +429,7 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i32 -1073741824, i32 -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -429,7 +440,7 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i32 2, i32 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

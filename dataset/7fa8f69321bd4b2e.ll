@@ -14,11 +14,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_lib.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -47,12 +46,16 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
@@ -73,9 +76,9 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 20479
+  %3 = icmp samesign ugt i64 %2, 20479
   %4 = select i1 %3, i32 %1, i32 0
   %5 = add nsw i32 %4, %0
   ret i32 %5
@@ -109,22 +112,41 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
-; linux/optimized/io_uring.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
+; 1 occurrences:
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 31
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add i32 %4, %0
+  ret i32 %5
+}
+
+; 4 occurrences:
+; draco/optimized/adaptive_rans_bit_encoder.cc.ll
+; libwebp/optimized/vp8l_dec.c.ll
 ; openexr/optimized/parse_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; linux/optimized/io_uring.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 1
-  %4 = select i1 %3, i32 %1, i32 31
-  %5 = add i32 %4, %0
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i32 %1, i32 0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -147,7 +169,7 @@ define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %.not = icmp eq i64 %2, 0
   %3 = select i1 %.not, i32 0, i32 %1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

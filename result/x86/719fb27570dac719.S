@@ -1,5 +1,5 @@
-func00000000000006d1:                   # @func00000000000006d1
+func0000000000000da1:                   # @func0000000000000da1
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

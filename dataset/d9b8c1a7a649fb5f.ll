@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
@@ -91,12 +91,12 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2
-  %3 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %2, i64 %0
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %3, i64 %0
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %4, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %2, i64 %0
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %0
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %0
   ret ptr %5
 }
 

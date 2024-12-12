@@ -1,9 +1,8 @@
 
-; 79 occurrences:
+; 78 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftBody.ll
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/atom_requests.cpp.ll
 ; cvc5/optimized/attribute.cpp.ll

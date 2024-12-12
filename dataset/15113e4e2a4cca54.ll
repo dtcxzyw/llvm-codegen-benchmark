@@ -5,7 +5,7 @@
 ; spike/optimized/f32_to_ui32.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001826(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000006046(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 255
   %4 = icmp eq i64 %1, 0
@@ -15,11 +15,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; linux/optimized/insn-eval.ll
+; 1 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000224(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000844(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i64 %1, 0

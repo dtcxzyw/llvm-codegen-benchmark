@@ -1,5 +1,5 @@
 
-; 422 occurrences:
+; 413 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcTim.c.ll
@@ -19,6 +19,7 @@
 ; abc/optimized/retFlow.c.ll
 ; abc/optimized/sscClass.c.ll
 ; arrow/optimized/light_array.cc.ll
+; boost/optimized/sparring_partner.ll
 ; box2d/optimized/b2_contact.cpp.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/parse_global.c.ll
@@ -71,7 +72,6 @@
 ; git/optimized/blame.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/log.ll
-; git/optimized/multi-pack-index.ll
 ; git/optimized/push.ll
 ; git/optimized/read-cache.ll
 ; glslang/optimized/Initialize.cpp.ll
@@ -95,7 +95,6 @@
 ; libuv/optimized/tcp.c.ll
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/blk-flush.ll
@@ -113,7 +112,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-debug.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i915_hwmon.ll
@@ -121,7 +119,6 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_irq.ll
@@ -136,7 +133,6 @@
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/ioctl.ll
@@ -151,7 +147,6 @@
 ; linux/optimized/quota.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/reg.ll
-; linux/optimized/sch_fifo.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/syscalls.ll
@@ -180,7 +175,6 @@
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
-; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -334,7 +328,6 @@
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; postgres/optimized/latch.ll
-; postgres/optimized/lwlock.ll
 ; postgres/optimized/nodeNestloop.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
@@ -344,14 +337,12 @@
 ; qemu/optimized/block_block-copy.c.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/disas_riscv.c.ll
-; qemu/optimized/fsdev_qemu-fsdev.c.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -371,7 +362,6 @@
 ; redis/optimized/net.ll
 ; redis/optimized/rax.ll
 ; redis/optimized/sentinel.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parse.ll
@@ -422,6 +412,7 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
@@ -431,7 +422,8 @@ entry:
   ret i32 %4
 }
 
-; 54 occurrences:
+; 55 occurrences:
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/vp8_dec.c.ll

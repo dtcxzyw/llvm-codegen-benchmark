@@ -13,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -32,7 +32,6 @@ entry:
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -40,7 +39,6 @@ entry:
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/superAnd.c.ll

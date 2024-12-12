@@ -1,5 +1,5 @@
 
-%class.relocInfo.2620323 = type { i16 }
+%class.relocInfo.2733766 = type { i16 }
 
 ; 4 occurrences:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -7,11 +7,11 @@
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 16777215
-  %5 = getelementptr nusw %class.relocInfo.2620323, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

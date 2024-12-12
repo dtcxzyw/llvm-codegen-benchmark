@@ -40,18 +40,6 @@ func0000000000000031:                   # @func0000000000000031
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cltq
-	addq	%rdi, %rax
-	retq
-func0000000000000013:                   # @func0000000000000013
-	movl	$2, %eax
-	shlxl	%esi, %eax, %eax
-	cltq
-	addq	%rdi, %rax
-	retq
 func0000000000000011:                   # @func0000000000000011
 	movl	$3, %eax
 	shlxl	%esi, %eax, %eax

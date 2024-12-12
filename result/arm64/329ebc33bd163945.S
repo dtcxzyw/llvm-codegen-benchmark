@@ -32,11 +32,3 @@ func00000000000000c7:                   // @func00000000000000c7
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
-	fmov	d1, #1.00000000
-	fcmp	d0, d1
-	ccmp	x0, #0, #4, ge
-	cset	w0, ne
-	ret
-                                        // -- End function

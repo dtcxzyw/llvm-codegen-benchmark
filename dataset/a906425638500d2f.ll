@@ -13,20 +13,6 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %0, 1
-  %4 = mul i32 %3, %2
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll

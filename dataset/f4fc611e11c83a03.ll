@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0, i1 %1, i16 %2) #0 {
@@ -18,7 +17,7 @@ entry:
 ; linux/optimized/hda_codec.ll
 ; slurm/optimized/x11_util.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i32 %0, i1 %1, i16 %2) #0 {
+define i16 @func0000000000000061(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 2
   %4 = select i1 %1, i16 %3, i16 %2
@@ -31,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000021(i32 %0, i1 %1, i16 %2) #0 {
+define i16 @func0000000000000041(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 512
   %4 = select i1 %1, i16 %3, i16 %2

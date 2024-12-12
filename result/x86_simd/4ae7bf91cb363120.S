@@ -11,6 +11,6 @@ func0000000000000002:                   # @func0000000000000002
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
-	vpsrld	$1, %ymm0, %ymm1
+	vpsrld	$16, %ymm0, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	retq

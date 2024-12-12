@@ -1,7 +1,8 @@
 
-%class.relocInfo.2620323 = type { i16 }
+%class.relocInfo.2733766 = type { i16 }
 
-; 1 occurrences:
+; 2 occurrences:
+; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
@@ -53,16 +54,16 @@ entry:
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = lshr i64 %3, 3
   %5 = and i64 %4, 536870911
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 128 occurrences:
+; 130 occurrences:
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -83,6 +84,7 @@ entry:
 ; cvc5/optimized/enum_stream_substitution.cpp.ll
 ; cvc5/optimized/monomial_check.cpp.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; git/optimized/pack-revindex.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -190,14 +192,15 @@ entry:
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; yosys/optimized/proc_dlatch.ll
+; yosys/optimized/qwp.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -214,7 +217,7 @@ entry:
   ret ptr %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -232,15 +235,16 @@ entry:
 ; openjdk/optimized/hb-face-builder.ll
 ; php/optimized/dce.ll
 ; velox/optimized/LeadLag.cpp.ll
+; yosys/optimized/calc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 8
   %5 = and i64 %4, 16777215
-  %6 = getelementptr nusw %class.relocInfo.2620323, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %0, i64 %5
   ret ptr %6
 }
 

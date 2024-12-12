@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/e1000_main.ll
@@ -11,7 +11,6 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/logcat.c.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -36,7 +35,7 @@ entry:
   %4 = shl nuw nsw i16 %3, 8
   %5 = zext i8 %1 to i16
   %6 = or disjoint i16 %4, %5
-  %7 = add nuw nsw i16 %6, %0
+  %7 = add nuw nsw i16 %0, %6
   ret i16 %7
 }
 

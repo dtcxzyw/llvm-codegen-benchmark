@@ -70,3 +70,9 @@ func0000000000000075:                   # @func0000000000000075
 	subq	%rdi, %rax
 	addq	$8, %rax
 	retq
+func00000000000000cc:                   # @func00000000000000cc
+	leaq	(,%rsi,4), %rax
+	shlq	$2, %rdi
+	subq	%rdi, %rax
+	addq	$4, %rax
+	retq

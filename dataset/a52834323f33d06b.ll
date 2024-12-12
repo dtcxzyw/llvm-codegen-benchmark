@@ -1,12 +1,13 @@
 
-; 133 occurrences:
+; 132 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/tcp_timer.ll
@@ -64,7 +65,6 @@
 ; mitsuba3/optimized/path.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -132,7 +132,6 @@
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; yosys/optimized/fmt.ll
-; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -142,7 +141,9 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll

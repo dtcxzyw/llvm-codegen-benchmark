@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -11,7 +11,6 @@
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; clamav/optimized/entconv.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; eastl/optimized/EAString.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -30,7 +29,7 @@
 ; serde-rs-json/optimized/3o41byb1p1zh3720.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
-; wireshark/optimized/packet-hdmi.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -41,12 +40,11 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_bios.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; wireshark/optimized/packet-ehdlc.c.ll
-; wireshark/optimized/packet-hdmi.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0) #0 {
 entry:

@@ -1,9 +1,10 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll

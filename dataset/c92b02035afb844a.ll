@@ -1,6 +1,4 @@
 
-%"struct.cv::softfloat.3543320" = type { i32 }
-
 ; 4 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
@@ -15,26 +13,15 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
-; opencv/optimized/color_lab.cpp.ll
-; opencv/optimized/perf_matching.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 2
-  %3 = sub i64 4092, %2
-  %4 = getelementptr nusw %"struct.cv::softfloat.3543320", ptr %0, i64 %3
-  ret ptr %4
-}
-
 ; 1 occurrences:
-; hyperscan/optimized/limex_compile.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
-  %.neg = mul i64 %1, -4
-  %2 = getelementptr nusw i8, ptr %0, i64 %.neg
-  ret ptr %2
+  %2 = shl i64 %1, 3
+  %3 = sub i64 8, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

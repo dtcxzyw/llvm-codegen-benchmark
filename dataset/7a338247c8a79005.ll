@@ -125,17 +125,6 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, 2139095040
-  %2 = icmp ult i32 %1, 1065353216
-  %3 = zext i1 %2 to i64
-  ret i64 %3
-}
-
 ; 3 occurrences:
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll

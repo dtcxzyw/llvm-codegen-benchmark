@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	andn	a0, a2, a0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	sext.w	a2, a2
 	addi	a2, a2, -2
 	seqz	a2, a2

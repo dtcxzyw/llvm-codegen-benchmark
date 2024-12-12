@@ -1,7 +1,6 @@
-func0000000000000008:                   # @func0000000000000008
-	andl	$63, %edx
-	cmpl	$5, %edx
-	setae	%al
+func0000000000000001:                   # @func0000000000000001
+	testb	$1, %dl
+	sete	%al
 	andl	%esi, %edi
 	orb	%dil, %al
 	retq

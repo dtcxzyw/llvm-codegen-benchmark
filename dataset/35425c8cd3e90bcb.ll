@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; linux/optimized/hda_intel.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

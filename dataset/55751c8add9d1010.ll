@@ -24,9 +24,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -36,17 +37,10 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/value.cpp.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -59,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %.inv = icmp ugt i64 %1, 1
   %2 = and i64 %0, 12
@@ -70,10 +64,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgemv_n.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %.inv = icmp slt i64 %1, 2048
-  %2 = and i64 %0, 4294967288
+  %.inv = icmp ult i64 %1, 2048
+  %2 = and i64 %0, 4088
   %3 = select i1 %.inv, i64 %2, i64 2048
   ret i64 %3
 }

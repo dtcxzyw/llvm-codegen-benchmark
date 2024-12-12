@@ -1,6 +1,6 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%al
 	sete	%cl
 	andb	%al, %cl

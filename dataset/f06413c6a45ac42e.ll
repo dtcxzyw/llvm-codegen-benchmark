@@ -33,7 +33,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -7, i32 -9
   %5 = select i1 %1, i32 -7, i32 -9
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -46,7 +46,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -6, i32 0
   %5 = select i1 %1, i32 -6, i32 0
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -74,22 +74,34 @@ entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 0, i32 -4194304
   %5 = select i1 %1, i32 0, i32 4194304
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
 
-; 3 occurrences:
-; cpython/optimized/_codecs_jp.ll
-; cpython/optimized/_codecs_kr.ll
+; 1 occurrences:
 ; icu/optimized/mlbe.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000004f(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = icmp ult i32 %1, 65536
   %6 = select i1 %5, i32 1, i32 2
+  %7 = add nuw nsw i32 %6, %4
+  ret i32 %7
+}
+
+; 2 occurrences:
+; cpython/optimized/_codecs_jp.ll
+; cpython/optimized/_codecs_kr.ll
+; Function Attrs: nounwind
+define i32 @func000000000000014f(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 0, i32 94
+  %4 = add nuw nsw i32 %0, %3
+  %5 = icmp samesign ult i32 %1, 78
+  %6 = select i1 %5, i32 49, i32 67
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }

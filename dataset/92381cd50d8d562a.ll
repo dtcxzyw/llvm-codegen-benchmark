@@ -19,7 +19,6 @@
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/exec.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/swiotlb.ll
@@ -29,6 +28,7 @@
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; minetest/optimized/static_text.cpp.ll
 ; nuttx/optimized/fs_anonmap.c.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -69,12 +69,12 @@ entry:
 ; 73 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/cecCore.c.ll
-; abc/optimized/verStream.c.ll
 ; arrow/optimized/bit_block_counter.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/approximately_equals.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/lzxd.c.ll

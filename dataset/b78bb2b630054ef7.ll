@@ -16,7 +16,7 @@ entry:
   ret ptr %5
 }
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -82,6 +82,7 @@ entry:
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
+; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/gdal-image.cpp.ll
 ; opencv/optimized/geo_interpolation.cpp.ll
 ; opencv/optimized/hfs_core.cpp.ll
@@ -124,6 +125,19 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = ashr exact i64 %3, 29
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw i64 %2, 32
+  %4 = ashr exact i64 %3, 30
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

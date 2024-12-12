@@ -10,8 +10,8 @@ func0000000000000007:                   # @func0000000000000007
 	orl	%edi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	movzwl	%si, %eax
-	shll	$16, %edi
-	andl	$2147418112, %edi               # imm = 0x7FFF0000
-	orl	%edi, %eax
+	movzwl	%si, %ecx
+	movzbl	%dil, %eax
+	shll	$16, %eax
+	orl	%ecx, %eax
 	retq

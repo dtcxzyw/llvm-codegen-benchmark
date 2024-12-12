@@ -1,32 +1,17 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	-1(%rdx), %eax
+	leal	1(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
-	incl	%eax
+	cmovnel	%edx, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	leal	1(%rdx), %eax
+	leal	-1(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
-	decl	%eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	leal	4(%rdx), %eax
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	addl	$-4, %eax
+	cmovnel	%edx, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	leal	-1(%rdx), %eax
+	leal	1(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%esi, %eax
-	incl	%eax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	leal	-1(%rdx), %eax
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	incl	%eax
+	cmovnel	%edx, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	-1(%rdx), %eax
@@ -51,6 +36,12 @@ func000000000000000f:                   # @func000000000000000f
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	addl	$6, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leal	1(%rdx), %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	incl	%eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	409604(%rdx), %eax

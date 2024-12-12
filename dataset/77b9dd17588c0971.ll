@@ -39,7 +39,7 @@ entry:
   ret i8 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/scsi.ll
@@ -48,6 +48,7 @@ entry:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openusd/optimized/testHioImage.cpp.ll
 ; wireshark/optimized/packet-dpnss.c.ll
 ; wireshark/optimized/packet-gmr1_rach.c.ll

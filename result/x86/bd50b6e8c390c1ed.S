@@ -28,3 +28,9 @@ func000000000000000c:                   # @func000000000000000c
 	kmovd	%eax, %k1
 	vmovss	.LCPI3_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	retq
+func0000000000000006:                   # @func0000000000000006
+	testl	%edi, %edi
+	sets	%al
+	kmovd	%eax, %k1
+	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
+	retq

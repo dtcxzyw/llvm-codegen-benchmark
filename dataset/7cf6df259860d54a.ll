@@ -1,13 +1,14 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/graph.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
 ; openjdk/optimized/zRemembered.ll
+; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -22,7 +23,7 @@ entry:
 ; openmpi/optimized/opal_progress.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 28

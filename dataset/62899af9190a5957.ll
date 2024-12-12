@@ -4,7 +4,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
   %4 = select i1 %2, i32 %3, i32 %1

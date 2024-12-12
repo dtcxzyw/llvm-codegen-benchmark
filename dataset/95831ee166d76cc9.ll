@@ -1,6 +1,6 @@
 
-%struct._zend_op.2680429 = type { ptr, %union._znode_op.2680430, %union._znode_op.2680430, %union._znode_op.2680430, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2680430 = type { i32 }
+%struct._zend_op.2793229 = type { ptr, %union._znode_op.2793230, %union._znode_op.2793230, %union._znode_op.2793230, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793230 = type { i32 }
 
 ; 10 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
@@ -14,12 +14,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %struct._zend_op.2680429, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zend_op.2793229, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -41,12 +41,12 @@ entry:
 ; openmpi/optimized/preg_native.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -67,12 +67,12 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 30
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }

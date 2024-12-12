@@ -7,8 +7,8 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax
-	btl	$11, %esi
-	adcl	$-1, %eax
+	cmpl	$1, %esi
+	sbbl	$0, %eax
 	retq
 func0000000000000031:                   # @func0000000000000031
 	shlq	$44, %rsi

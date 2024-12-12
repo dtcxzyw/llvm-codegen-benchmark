@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 129 occurrences:
 ; gromacs/optimized/checkpoint.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/ESTreeJSONDumper.cpp.ll
@@ -71,6 +71,7 @@
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/Lanai.cpp.ll
+; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/M68k.cpp.ll

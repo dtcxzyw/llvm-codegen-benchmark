@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind

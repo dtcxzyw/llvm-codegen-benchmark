@@ -26,18 +26,17 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movabsq	$4607182418800017403, %rcx      # imm = 0x3FEFFFFFFFFFFFFB
-	xorl	%eax, %eax
-	cmpq	%rcx, %rdx
-	seta	%al
-	testb	$1, %dil
-	cmovnel	%esi, %eax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	sets	%al
+	testb	$1, %dil
+	cmovnel	%esi, %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpq	$11, %rdx
+	setae	%al
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq

@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/setobject.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkList.cpp.ll
@@ -34,8 +35,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 3
-  %3 = add i64 %2, -6
+  %2 = mul i64 %1, -80
+  %3 = add i64 %2, 80
   %4 = select i1 %0, i64 0, i64 %3
   ret i64 %4
 }

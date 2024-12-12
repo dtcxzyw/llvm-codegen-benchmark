@@ -24,7 +24,7 @@ func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	cmn	x2, x4
 	adc	x8, x3, x5
-	cmn	x8, x0
+	cmn	x0, x8
 	cinc	x0, x1, hs
 	ret
                                         // -- End function
@@ -32,7 +32,7 @@ func00000000000000d2:                   // @func00000000000000d2
 // %bb.0:                               // %entry
 	cmn	x2, x4
 	adc	x8, x3, x5
-	cmn	x8, x0
+	cmn	x0, x8
 	cinc	x0, x1, hs
 	ret
                                         // -- End function

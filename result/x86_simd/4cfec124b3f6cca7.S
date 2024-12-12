@@ -19,6 +19,12 @@ func000000000000000e:                   # @func000000000000000e
 	vcmpordps	%zmm2, %zmm0, %k1
 	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
 	retq
+.LCPI4_0:
+	.long	0x41102d33                      # float 9.01103496
+func000000000000000b:                   # @func000000000000000b
+	vcmpngtps	.LCPI4_0(%rip){1to16}, %zmm0, %k1
+	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqps	%zmm2, %zmm0, %k1
@@ -42,10 +48,5 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000005:                   # @func0000000000000005
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%zmm2, %zmm0, %k1
-	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
-	retq
-func000000000000000b:                   # @func000000000000000b
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnltps	%zmm0, %zmm2, %k1
 	vblendmps	%zmm0, %zmm1, %zmm0 {%k1}
 	retq

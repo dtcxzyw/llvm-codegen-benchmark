@@ -1,8 +1,9 @@
 
-; 91 occurrences:
+; 89 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; abc/optimized/wlnWlc.c.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/yara_lexer.c.ll
@@ -39,7 +40,6 @@
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; nix/optimized/lexer-tab.ll
@@ -61,10 +61,8 @@
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; openspiel/optimized/matrix_game.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
-; openssl/optimized/libcrypto-lib-err_prn.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-lib-v3_asid.ll
-; openssl/optimized/libcrypto-shlib-err_prn.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_asid.ll
 ; openusd/optimized/textFileFormat.lex.cpp.ll
@@ -101,7 +99,20 @@ entry:
   ret ptr %6
 }
 
-; 18 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-err_prn.ll
+; openssl/optimized/libcrypto-shlib-err_prn.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 17 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
@@ -111,7 +122,6 @@ entry:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; opencv/optimized/distransform.cpp.ll
@@ -130,14 +140,12 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
-; abc/optimized/extraUtilBitMatrix.c.ll
+; 7 occurrences:
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; opencv/optimized/einsum_layer.cpp.ll
-; openspiel/optimized/pathfinding.cc.ll
 ; php/optimized/zend_execute.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
@@ -164,6 +172,19 @@ entry:
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; abc/optimized/extraUtilBitMatrix.c.ll
+; openspiel/optimized/pathfinding.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000067(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 30
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -196,10 +217,11 @@ entry:
   ret ptr %6
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; linux/optimized/trace_uprobe.ll
 ; llama.cpp/optimized/common.cpp.ll
+; openblas/optimized/dsyr2k_kernel_L.c.ll
 ; postgres/optimized/bootscanner.ll
 ; postgres/optimized/exprscan.ll
 ; postgres/optimized/guc-file.ll

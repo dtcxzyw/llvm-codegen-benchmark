@@ -1,14 +1,15 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
+; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
 ; rust-analyzer-rs/optimized/59xtetyz59tgy0g8.ll
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:

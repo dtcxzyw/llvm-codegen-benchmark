@@ -1,7 +1,20 @@
 
-; 320 occurrences:
+; 332 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/file.cpp.ll
 ; cmake/optimized/cmGeneratorExpressionNode.cxx.ll
@@ -232,6 +245,7 @@
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openusd/optimized/fileIO.cpp.ll
+; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/materialBindingResolvingSceneIndex.cpp.ll
 ; openusd/optimized/rprim.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
@@ -240,11 +254,9 @@
 ; postgres/optimized/describe.ll
 ; postgres/optimized/pquery.ll
 ; postgres/optimized/zic.ll
-; proj/optimized/crs.cpp.ll
 ; protobuf/optimized/field.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
-; qdrant-rs/optimized/35v8qqto4jkxz482.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_monitor_block-hmp-cmds.c.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -276,10 +288,6 @@
 ; slurm/optimized/controller.ll
 ; slurm/optimized/gres_filter.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; stockfish/optimized/search.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -319,6 +327,10 @@
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/sat_th.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {

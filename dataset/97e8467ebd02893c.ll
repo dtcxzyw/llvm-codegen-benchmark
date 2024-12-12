@@ -11,7 +11,7 @@
 ; openjdk/optimized/jcmaster.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -24,7 +24,7 @@ entry:
 ; git/optimized/sequencer.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -44,7 +44,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -74,7 +74,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/read-tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -103,7 +103,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -112,15 +112,26 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/drm_edid.ll
+; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000494(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ult i32 %3, 32
+  %4 = icmp samesign ult i32 %3, 32
   %5 = icmp ult i32 %0, 33
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ugt i32 %3, -50331649
+  %5 = icmp ult i32 %0, 50331648
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }
@@ -128,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -140,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_u32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000428(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, 1114111
@@ -152,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -164,23 +175,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/moments.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp slt i32 %3, 0
   %5 = icmp sgt i32 %0, 3
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; libwebp/optimized/webpinfo.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 8388608
-  %5 = icmp ugt i32 %0, 8388608
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

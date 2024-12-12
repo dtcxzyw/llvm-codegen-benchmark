@@ -15,12 +15,10 @@ func000000000000000a:                   # @func000000000000000a
 	cmovnel	%esi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	movabsq	$2305843008139952128, %rax      # imm = 0x1FFFFFFFC0000000
-	cmpq	%rax, %rsi
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	movl	$1073741824, %ecx               # imm = 0x40000000
-	cmoval	%eax, %ecx
+	cmpq	$1048577, %rsi                  # imm = 0x100001
+	movl	$1, %ecx
+	sbbl	$-1, %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$1048576, %eax                  # imm = 0x100000
 	cmovnel	%ecx, %eax
 	retq

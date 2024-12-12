@@ -1,4 +1,4 @@
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	andl	$536870911, %edx                # imm = 0x1FFFFFFF
 	cmpl	%esi, %edx
 	setge	%cl
@@ -7,7 +7,7 @@ func00000000000000bc:                   # @func00000000000000bc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	andl	$536870911, %edx                # imm = 0x1FFFFFFF
 	cmpl	%esi, %edx
 	setl	%cl
@@ -16,7 +16,7 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$1, %edx
 	cmpl	%esi, %edx
 	sete	%cl
@@ -24,7 +24,7 @@ func000000000000001c:                   # @func000000000000001c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	andl	$524287, %edx                   # imm = 0x7FFFF
 	cmpl	%edi, %edx
 	sete	%cl
@@ -32,15 +32,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	andl	$1, %edx
-	cmpl	%esi, %edx
-	sete	%cl
-	cmpq	$257, %rdi                      # imm = 0x101
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1073741823, %edx               # imm = 0x3FFFFFFF
 	cmpl	%esi, %edx
 	sete	%cl
@@ -49,19 +41,11 @@ func0000000000000011:                   # @func0000000000000011
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	andl	$16777215, %edx                 # imm = 0xFFFFFF
 	cmpl	%esi, %edx
 	seta	%cl
 	testq	%rdi, %rdi
 	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000000c4:                   # @func00000000000000c4
-	andl	$1073741823, %edx               # imm = 0x3FFFFFFF
-	cmpl	%esi, %edx
-	setne	%cl
-	cmpq	$14, %rdi
-	setb	%al
 	andb	%cl, %al
 	retq

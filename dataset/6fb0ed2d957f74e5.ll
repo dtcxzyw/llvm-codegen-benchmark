@@ -1,13 +1,14 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
-; git/optimized/pack-redundant.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; qemu/optimized/dump_dump.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:

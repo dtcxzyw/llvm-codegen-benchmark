@@ -1,6 +1,10 @@
 
-; 43 occurrences:
+; 47 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; grpc/optimized/memory_quota.cc.ll

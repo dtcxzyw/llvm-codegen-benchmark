@@ -1,8 +1,8 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageLoaderJPG.cpp.ll
 ; minetest/optimized/png.cpp.ll
@@ -28,7 +28,6 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
-; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; raylib/optimized/raudio.c.ll

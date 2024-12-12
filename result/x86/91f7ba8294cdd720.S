@@ -1,53 +1,45 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	leaq	16(%rdi), %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%cl
 	cmpq	$-1, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
+func0000000000000110:                   # @func0000000000000110
 	leaq	1(%rdi), %rax
-	cmpq	%rsi, %rax
-	seta	%cl
+	cmpq	%rax, %rsi
+	setb	%cl
 	cmpq	$256, %rdi                      # imm = 0x100
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000510:                   # @func0000000000000510
+func0000000000001210:                   # @func0000000000001210
 	leaq	1(%rdi), %rax
-	cmpq	%rsi, %rax
-	setb	%cl
+	cmpq	%rax, %rsi
+	seta	%cl
 	cmpq	$2, %rdi
 	setae	%al
 	orb	%cl, %al
 	retq
-func00000000000006b0:                   # @func00000000000006b0
-	leaq	1(%rdi), %rax
-	cmpq	%rsi, %rax
-	setae	%cl
-	cmpq	$1023, %rdi                     # imm = 0x3FF
-	setae	%al
-	orb	%cl, %al
-	retq
-func00000000000000a2:                   # @func00000000000000a2
+func0000000000000142:                   # @func0000000000000142
 	incq	%rdi
 	sete	%cl
-	cmpq	%rsi, %rdi
+	cmpq	%rdi, %rsi
+	setbe	%al
+	orb	%cl, %al
+	retq
+func0000000000000242:                   # @func0000000000000242
+	subq	$1, %rdi
+	setb	%cl
+	cmpq	%rdi, %rsi
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000122:                   # @func0000000000000122
+func0000000000000a42:                   # @func0000000000000a42
 	subq	$1, %rdi
 	setb	%cl
-	cmpq	%rsi, %rdi
-	setbe	%al
-	orb	%cl, %al
-	retq
-func0000000000000322:                   # @func0000000000000322
-	subq	$1, %rdi
-	setb	%cl
-	cmpq	%rsi, %rdi
-	setbe	%al
+	cmpq	%rdi, %rsi
+	setae	%al
 	orb	%cl, %al
 	retq

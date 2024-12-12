@@ -10,6 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000015:                   # @func0000000000000015
 	subl	%esi, %edi
-	leal	2(%rdi,%rdi), %eax
-	cltq
+	shll	$20, %edi
+	addl	$1048576, %edi                  # imm = 0x100000
+	movslq	%edi, %rax
 	retq

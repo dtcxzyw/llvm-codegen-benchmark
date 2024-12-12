@@ -26,7 +26,7 @@ entry:
   %3 = fsub double %1, %2
   %4 = fcmp olt double %3, 0x7FEFFFFFFFFFFFFF
   %5 = select i1 %4, double %3, double 0x7FEFFFFFFFFFFFFF
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

@@ -1,17 +1,16 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifCut.c.ll
 ; git/optimized/read-cache.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
-; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -19,10 +18,10 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/tool.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp samesign ule i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -49,32 +48,22 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
-; wireshark/optimized/packet-aeron.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000032(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp samesign uge i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 13 occurrences:
-; abc/optimized/acecCover.c.ll
-; abc/optimized/cecSatG2.c.ll
-; abc/optimized/cecSatG3.c.ll
-; abc/optimized/giaBalAig.c.ll
-; abc/optimized/ifDsd.c.ll
-; draco/optimized/adaptive_rans_bit_decoder.cc.ll
-; draco/optimized/rans_bit_decoder.cc.ll
+; 4 occurrences:
 ; hermes/optimized/MD5.cpp.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
-; libwebp/optimized/predictor_enc.c.ll
 ; llvm/optimized/MD5.cpp.ll
 ; php/optimized/md5.ll
-; wireshark/optimized/packet-tftp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -109,13 +98,31 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; abc/optimized/acecCover.c.ll
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cecSatG3.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/ifDsd.c.ll
+; draco/optimized/adaptive_rans_bit_decoder.cc.ll
+; draco/optimized/rans_bit_decoder.cc.ll
+; libwebp/optimized/predictor_enc.c.ll
+; wireshark/optimized/packet-tftp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1
+  %3 = icmp samesign ult i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 6 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/fraClau.c.ll
 ; linux/optimized/ptp_chardev.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
@@ -134,6 +141,28 @@ define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
   %3 = icmp sge i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-aeron.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -32
+  %3 = icmp uge i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-tipc.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 131071
+  %3 = icmp ugt i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

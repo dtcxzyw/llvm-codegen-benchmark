@@ -32,5 +32,5 @@ func000000000000000e:                   # @func000000000000000e
 	vfdiv.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmfne.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	ret

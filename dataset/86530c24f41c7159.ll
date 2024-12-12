@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libquic/optimized/p256-64.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -35,13 +34,13 @@
 ; php/optimized/ir_cfg.ll
 ; php/optimized/ir_sccp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 63
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -81,26 +80,39 @@ entry:
 ; 1 occurrences:
 ; php/optimized/dce.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/SourceManager.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d7(ptr %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nsw i32 %2, -7
+  %4 = lshr i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f6(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000f7(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 36
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

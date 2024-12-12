@@ -34,4 +34,17 @@ entry:
   ret i8 %7
 }
 
+; 1 occurrences:
+; linux/optimized/keyboard.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i8 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i8 0, i8 48
+  %5 = and i8 %1, 2
+  %6 = or disjoint i8 %5, %4
+  %7 = or i8 %0, %6
+  ret i8 %7
+}
+
 attributes #0 = { nounwind }

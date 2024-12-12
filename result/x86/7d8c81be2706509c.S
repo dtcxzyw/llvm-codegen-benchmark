@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	cmovael	%esi, %eax
@@ -40,10 +40,38 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
+func0000000000000052:                   # @func0000000000000052
+	cmpl	$7, %edx
+	movl	$1, %eax
+	cmovael	%esi, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	cmpl	$7, %edx
+	movl	$1, %eax
+	cmovael	%esi, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	cmpl	$7, %edx
+	movl	$1, %eax
+	cmovgel	%esi, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpl	$7, %edx
 	movl	$1, %eax
 	cmovgel	%esi, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	cmpl	$2, %edx
+	movl	$4, %eax
+	cmovnel	%esi, %eax
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq

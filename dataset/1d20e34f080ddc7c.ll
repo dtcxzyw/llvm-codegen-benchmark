@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/mbr.c.ll
+; llama.cpp/optimized/ggml.c.ll
 ; php/optimized/zend_hash.ll
 ; rocksdb/optimized/file_util.cc.ll
 ; ruby/optimized/class.ll

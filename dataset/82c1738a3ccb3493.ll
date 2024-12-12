@@ -5,10 +5,10 @@
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/linux-user_fd-trans.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i64 %1) #0 {
 entry:
   %2 = zext i16 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = icmp ult i16 %0, 4
   %5 = or i1 %4, %3
   ret i1 %5

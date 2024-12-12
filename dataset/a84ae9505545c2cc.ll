@@ -5,7 +5,7 @@
 define i1 @func0000000000000005(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 1.000000e+00
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ugt float %4, 0.000000e+00
   ret i1 %5
 }
@@ -26,7 +26,7 @@ entry:
 define i1 @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ogt float %4, 0x3FE921FB60000000
   ret i1 %5
 }
@@ -37,7 +37,7 @@ entry:
 define i1 @func000000000000000b(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float %2, float 0.000000e+00
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ule float %4, 0.000000e+00
   ret i1 %5
 }

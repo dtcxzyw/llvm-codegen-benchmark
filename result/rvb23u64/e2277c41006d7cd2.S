@@ -5,6 +5,13 @@ func0000000000000005:                   # @func0000000000000005
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000051:                   # @func0000000000000051
+	andi	a1, a1, 128
+	negw	a2, a0
+	czero.eqz	a0, a0, a1
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret
 func0000000000000004:                   # @func0000000000000004
 	bexti	a1, a1, 14
 	li	a2, 270
@@ -17,7 +24,7 @@ func0000000000000007:                   # @func0000000000000007
 	li	a2, -2
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 8
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	lui	a2, 1
@@ -35,5 +42,5 @@ func0000000000000033:                   # @func0000000000000033
 	li	a2, 2
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 1
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

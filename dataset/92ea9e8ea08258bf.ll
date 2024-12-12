@@ -16,7 +16,7 @@
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %2, i32 %3
@@ -35,7 +35,7 @@ entry:
 ; redis/optimized/lolwut5.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %2, i32 %3
@@ -75,7 +75,7 @@ entry:
 ; php/optimized/zend_func_info.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 16384
   %4 = select i1 %1, i32 %2, i32 %3
@@ -89,12 +89,12 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = or disjoint i32 %4, 4
-  %6 = icmp ult i32 %0, 16
+  %6 = icmp samesign ult i32 %0, 16
   %7 = select i1 %6, i32 %4, i32 %5
   ret i32 %7
 }

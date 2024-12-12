@@ -1,32 +1,32 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	negq	%rdx
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	(%rsi,%rax,4), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000065:                   # @func0000000000000065
+func00000000000000c5:                   # @func00000000000000c5
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setae	%al
-	retq
-func0000000000000068:                   # @func0000000000000068
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
-func0000000000000049:                   # @func0000000000000049
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setbe	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c8:                   # @func00000000000000c8
 	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	seta	%al
+	retq
+func0000000000000089:                   # @func0000000000000089
+	subq	%rdx, %rsi
+	cmpq	%rsi, %rdi
+	setae	%al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	subq	%rdx, %rsi
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func00000000000000c4:                   # @func00000000000000c4
+	subq	%rdx, %rsi
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

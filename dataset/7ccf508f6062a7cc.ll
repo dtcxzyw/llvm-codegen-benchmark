@@ -14,6 +14,18 @@ entry:
   ret i8 %4
 }
 
+; 2 occurrences:
+; llvm/optimized/LoongArch.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 14
+  %3 = zext i1 %2 to i8
+  %4 = select i1 %0, i8 %3, i8 undef
+  ret i8 %4
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; Function Attrs: nounwind

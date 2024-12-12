@@ -3,7 +3,7 @@
 ; linux/optimized/filter.ll
 ; openjdk/optimized/cmscgats.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -127
   %3 = icmp ult i32 %2, -94
@@ -49,7 +49,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -12
   %3 = icmp ult i32 %2, -11
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000290(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000910(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -58
   %3 = icmp ult i32 %2, -10
@@ -70,21 +70,27 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; cvc5/optimized/type_node.cpp.ll
+; 1 occurrences:
+; llvm/optimized/UninitializedObjectChecker.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000908(i16 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -59
+  %3 = icmp ult i32 %2, -3
+  %4 = icmp ult i16 %0, -4
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; eastl/optimized/EASprintfOrdered.cpp.ll
-; llvm/optimized/ASTCommon.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
 ; llvm/optimized/X86FastTileConfig.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000902(i16 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -31
-  %3 = icmp ult i32 %2, 6
-  %4 = icmp eq i16 %0, 7
+  %2 = add nsw i32 %1, -284
+  %3 = icmp ult i32 %2, 8
+  %4 = icmp eq i16 %0, 347
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -92,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000318(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne i16 %0, 0
@@ -103,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp ne i16 %0, 1328
@@ -111,23 +117,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/StackColoring.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000288(i16 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -21
-  %3 = icmp ult i32 %2, 2
-  %4 = icmp ult i16 %0, 5
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -5
   %3 = icmp ult i32 %2, 2
@@ -137,21 +130,9 @@ entry:
 }
 
 ; 1 occurrences:
-; cvc5/optimized/theory_sep.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000228(i16 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -242
-  %3 = icmp ult i32 %2, -4
-  %4 = icmp eq i16 %0, 239
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = icmp eq i16 %0, 0

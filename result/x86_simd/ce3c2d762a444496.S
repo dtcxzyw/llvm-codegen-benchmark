@@ -39,7 +39,7 @@
 func000000000000000f:                   # @func000000000000000f
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpaddw	%ymm0, %ymm1, %ymm0
-	vpaddw	%ymm0, %ymm2, %ymm0
+	vpaddw	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	15                              # 0xf
@@ -89,7 +89,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000a:                   # @func000000000000000a
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm2
 	vpaddw	%ymm0, %ymm1, %ymm0
-	vpaddw	%ymm0, %ymm2, %ymm0
+	vpaddw	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.short	1                               # 0x1
@@ -139,5 +139,5 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	vpandd	.LCPI4_1(%rip){1to8}, %ymm2, %ymm2
 	vpaddw	%ymm0, %ymm1, %ymm0
-	vpaddw	%ymm0, %ymm2, %ymm0
+	vpaddw	%ymm2, %ymm0, %ymm0
 	retq

@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, -64
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	zext.w	a1, a1
 	addi	a1, a1, 3
 	andi	a1, a1, -4
@@ -15,6 +15,10 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, 1
 	andi	a1, a1, -32
 	add	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	addi	a1, a1, -1
+	sh3add.uw	a0, a1, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
 	addi	a1, a1, 7

@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 121 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
@@ -30,6 +30,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -119,6 +120,7 @@
 ; spike/optimized/vsse8_v.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

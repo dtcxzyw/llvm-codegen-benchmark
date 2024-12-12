@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	andl	$-2, %edi
@@ -6,7 +6,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	andl	$-2, %edi

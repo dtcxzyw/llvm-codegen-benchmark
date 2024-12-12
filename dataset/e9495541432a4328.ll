@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000369(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000cd9(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign uge i64 %3, %0
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -14,10 +14,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/superGate.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c9(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000d99(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign uge i64 %3, %0
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -31,10 +31,10 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000d18(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ugt i64 %3, %0
   %5 = icmp ugt i32 %1, 384
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %0
@@ -57,10 +57,10 @@ entry:
 ; icu/optimized/mlbe.ll
 ; icu/optimized/msgfmt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a9(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000d59(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign uge i64 %3, %0
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031b(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000c2b(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp sge i64 %3, %0
@@ -82,10 +82,10 @@ entry:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000d98(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 20
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ugt i64 %3, %0
   %5 = icmp ne i32 %1, 1313821514
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/limex_native.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp eq i64 %3, %0

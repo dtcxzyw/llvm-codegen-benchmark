@@ -29,18 +29,18 @@ func0000000000000031:                   # @func0000000000000031
 func000000000000002b:                   # @func000000000000002b
 	sext.w	a0, a0
 	slti	a0, a0, 3
-	li	a1, -1024
+	li	a1, -16
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 2047
-	addi	a0, a0, 1
+	addi	a0, a0, 832
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	sext.w	a0, a0
 	sltiu	a0, a0, 301
 	li	a1, -165
@@ -57,4 +57,9 @@ func0000000000000013:                   # @func0000000000000013
 	sext.w	a0, a0
 	sltiu	a0, a0, 192
 	xori	a0, a0, 3
+	ret
+func0000000000000053:                   # @func0000000000000053
+	srliw	a0, a0, 6
+	sltiu	a0, a0, 361
+	addi	a0, a0, 5
 	ret

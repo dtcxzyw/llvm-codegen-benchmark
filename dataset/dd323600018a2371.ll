@@ -1,13 +1,12 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/audio_audio.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw nsw i128 %4, %0
+  %5 = mul nuw nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -18,7 +17,7 @@ define i128 @func0000000000000007(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = zext nneg i64 %3 to i128
-  %5 = mul nuw nsw i128 %4, %0
+  %5 = mul nuw nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -29,7 +28,7 @@ define i128 @func000000000000001f(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = zext nneg i64 %3 to i128
-  %5 = mul nuw nsw i128 %4, %0
+  %5 = mul nuw nsw i128 %0, %4
   ret i128 %5
 }
 
@@ -43,7 +42,7 @@ define i128 @func0000000000000002(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   ret i128 %5
 }
 
@@ -55,7 +54,7 @@ define i128 @func0000000000000000(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul i128 %4, %0
+  %5 = mul i128 %0, %4
   ret i128 %5
 }
 
@@ -68,7 +67,7 @@ define i128 @func0000000000000012(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   ret i128 %5
 }
 

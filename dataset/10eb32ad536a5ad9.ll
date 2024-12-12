@@ -164,6 +164,7 @@ entry:
 ; linux/optimized/kcore.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openblas/optimized/daxpy_k.c.ll
 ; openblas/optimized/ddot_k.c.ll
 ; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
@@ -171,7 +172,6 @@ entry:
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dscal_k.c.ll
 ; openblas/optimized/dsdot_k.c.ll
-; openblas/optimized/dsum_k.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
 ; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll

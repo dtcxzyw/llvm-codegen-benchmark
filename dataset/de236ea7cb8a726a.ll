@@ -1,5 +1,6 @@
 
-; 177 occurrences:
+; 178 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -183,7 +184,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
   %5 = zext i64 %4 to i128
-  %6 = mul nuw i128 %5, %0
+  %6 = mul nuw i128 %0, %5
   ret i128 %6
 }
 
@@ -196,7 +197,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %1, %3
   %5 = zext i64 %4 to i128
-  %6 = mul nuw i128 %5, %0
+  %6 = mul nuw i128 %0, %5
   ret i128 %6
 }
 

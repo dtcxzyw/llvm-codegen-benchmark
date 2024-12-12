@@ -2,7 +2,6 @@
 ; 18 occurrences:
 ; bullet3/optimized/btMiniSDF.ll
 ; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; duckdb/optimized/generators.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
@@ -18,11 +17,12 @@
 ; openusd/optimized/ompEvaluator.cpp.ll
 ; openusd/optimized/patchBasis.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, %0
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

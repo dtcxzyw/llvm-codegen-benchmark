@@ -20,7 +20,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl i32 %4, 8
   ret i32 %5
 }
@@ -54,12 +54,12 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl i32 %4, 13
   ret i32 %5
 }
 
-; 46 occurrences:
+; 48 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -79,6 +79,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -104,13 +105,14 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image.c.ll
+; tev/optimized/ExrImageLoader.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl nsw i32 %4, 1
   ret i32 %5
 }
@@ -150,7 +152,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl nsw i32 %4, 2
   ret i32 %5
 }
@@ -167,7 +169,7 @@ entry:
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl nsw i32 %4, 1
   ret i32 %5
 }
@@ -189,21 +191,22 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = shl nuw i32 %4, 1
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
-  %5 = shl nuw nsw i32 %4, 1
+  %4 = add nuw nsw i32 %0, %3
+  %5 = shl nuw nsw i32 %4, 3
   ret i32 %5
 }
 

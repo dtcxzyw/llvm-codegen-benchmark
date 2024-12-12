@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/cmscgats.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -47,54 +47,12 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 15
   %3 = icmp eq i16 %2, 1
   %4 = add i32 %0, -12
   %5 = icmp ult i32 %4, -11
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 5 occurrences:
-; cvc5/optimized/type_node.cpp.ll
-; llvm/optimized/ASTCommon.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000282(i16 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -55
-  %3 = icmp ult i32 %2, 4
-  %4 = and i16 %0, 127
-  %5 = icmp eq i16 %4, 59
-  %6 = or i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/BitcodeReader.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 16368
-  %3 = icmp ne i16 %2, 1328
-  %4 = icmp eq i32 %0, -1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cvc5/optimized/theory_sep.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000228(i32 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 1023
-  %3 = icmp eq i16 %2, 239
-  %4 = add nsw i32 %0, -242
-  %5 = icmp ult i32 %4, -4
   %6 = or i1 %5, %3
   ret i1 %6
 }

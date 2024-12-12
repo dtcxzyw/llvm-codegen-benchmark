@@ -136,7 +136,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm1, %k0
 	knotw	%k0, %k2
 	vmovdqu16	.LCPI2_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384,16384]
-	vpor	%ymm0, %ymm1, %ymm1
+	vpor	%ymm1, %ymm0, %ymm1
 	vpord	.LCPI2_2(%rip){1to8}, %ymm1, %ymm0
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq

@@ -1,8 +1,7 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; c3c/optimized/context.c.ll
 ; folly/optimized/String.cpp.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; lief/optimized/Function.cpp.ll
 ; lief/optimized/debug.c.ll

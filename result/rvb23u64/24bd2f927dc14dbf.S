@@ -27,10 +27,10 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a1, a1, 16
-	slli	a0, a0, 8
-	add	a0, a0, a1
-	lui	a1, 8192
+	sh2add	a0, a1, a0
+	lui	a1, 360
+	slli	a0, a0, 10
+	addi	a1, a1, 328
 	addw	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068

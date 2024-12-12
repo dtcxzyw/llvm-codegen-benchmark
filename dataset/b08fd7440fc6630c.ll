@@ -4,12 +4,12 @@
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000008b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %.idx = mul i64 %3, 12
   %4 = getelementptr nusw i8, ptr %0, i64 %.idx
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -20,16 +20,16 @@ entry:
 ; openjdk/optimized/p11_keymgmt.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul i64 %3, 24
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   ret ptr %6
 }
 
-; 36 occurrences:
+; 43 occurrences:
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -64,8 +64,15 @@ entry:
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -79,16 +86,17 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/cmsmarket.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul i64 %3, 112
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; ocio/optimized/Lut3DOpData.cpp.ll
@@ -99,11 +107,11 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 2
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/kernel_ref_prune.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -114,6 +122,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000c8(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -141,23 +150,23 @@ entry:
 ; opencv/optimized/optflowgf.cpp.ll
 ; openusd/optimized/testHioImage.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/testHioAvif.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000fc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
@@ -179,17 +188,16 @@ entry:
 ; nori/optimized/bitmap.cpp.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 
-; 2 occurrences:
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
@@ -217,12 +225,12 @@ entry:
 ; 1 occurrences:
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 24
   ret ptr %6
 }
 

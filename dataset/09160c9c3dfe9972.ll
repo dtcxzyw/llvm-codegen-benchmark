@@ -4,7 +4,7 @@
 ; openjdk/optimized/machnode.ll
 ; re2/optimized/simplify.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -24,11 +24,11 @@ entry:
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-irda.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i16 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

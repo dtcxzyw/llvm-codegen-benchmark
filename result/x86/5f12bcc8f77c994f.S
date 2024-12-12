@@ -1,11 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
+	xorl	%eax, %eax
 	testq	%rsi, %rsi
+	setne	%al
 	leal	307(,%rax,4), %ecx
+	testb	$1, %dil
 	movl	$311, %eax                      # imm = 0x137
-	cmovel	%ecx, %eax
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	notb	%dil
@@ -17,9 +17,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmovael	%ecx, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	andl	$1, %edi
+	xorl	%eax, %eax
 	testq	%rsi, %rsi
-	leal	281(%rdi,%rdi), %ecx
+	setne	%al
+	leal	281(%rax,%rax), %ecx
+	testb	$1, %dil
 	movl	$281, %eax                      # imm = 0x119
 	cmovnel	%ecx, %eax
 	retq

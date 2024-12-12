@@ -1,18 +1,20 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 6
   %3 = and i16 %2, 7
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/sky2.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; php/optimized/zip.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -25,7 +27,7 @@ entry:
   ret i16 %4
 }
 
-; 100 occurrences:
+; 102 occurrences:
 ; grpc/optimized/writing.cc.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -70,9 +72,11 @@ entry:
 ; llvm/optimized/TransProtectedScope.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; node/optimized/simdutf.ll
 ; openusd/optimized/decodemv.c.ll
 ; openvdb/optimized/points.cc.ll
+; postgres/optimized/trigger.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

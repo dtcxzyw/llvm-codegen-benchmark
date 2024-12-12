@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	srli	a1, a1, 25
 	snez	a1, a1
 	addw	a0, a0, a1
@@ -21,7 +21,7 @@ func0000000000000061:                   # @func0000000000000061
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000040:                   # @func0000000000000040
+func00000000000000c0:                   # @func00000000000000c0
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	addw	a0, a0, a1
@@ -44,17 +44,24 @@ func000000000000000b:                   # @func000000000000000b
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
+func0000000000000040:                   # @func0000000000000040
+	srli	a1, a1, 32
+	snez	a1, a1
+	addw	a0, a0, a1
+	ret
+func0000000000000043:                   # @func0000000000000043
+	srli	a1, a1, 31
+	snez	a1, a1
+	addw	a0, a0, a1
+	ret
 func0000000000000053:                   # @func0000000000000053
 	slti	a1, a1, 0
 	xori	a1, a1, 1
 	addw	a0, a0, a1
 	ret
-.LCPI10_0:
-	.quad	999999999999999999              # 0xde0b6b3a763ffff
 func0000000000000041:                   # @func0000000000000041
-	lui	a2, %hi(.LCPI10_0)
-	ld	a2, %lo(.LCPI10_0)(a2)
-	sltu	a1, a2, a1
+	sltiu	a1, a1, 2
+	xori	a1, a1, 1
 	addw	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050
@@ -66,6 +73,11 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
+	addw	a0, a0, a1
+	ret
+func00000000000000c1:                   # @func00000000000000c1
+	sltiu	a1, a1, 5
+	xori	a1, a1, 1
 	addw	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051

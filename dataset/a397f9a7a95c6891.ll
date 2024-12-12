@@ -1,5 +1,5 @@
 
-; 251 occurrences:
+; 256 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -14,11 +14,11 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/arith_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -124,8 +124,6 @@
 ; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
@@ -241,9 +239,7 @@
 ; wireshark/optimized/packet-e164.c.ll
 ; wireshark/optimized/packet-ebhscr.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-hdmi.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-link16.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
@@ -251,6 +247,15 @@
 ; wireshark/optimized/packet-usbll.c.ll
 ; wireshark/optimized/str_util.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -259,8 +264,9 @@ entry:
   ret i8 %2
 }
 
-; 163 occurrences:
+; 164 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -382,7 +388,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -420,9 +425,10 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -431,7 +437,7 @@ entry:
   ret i8 %2
 }
 
-; 63 occurrences:
+; 52 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; icu/optimized/ubidi_props.ll
 ; linux/optimized/af_packet.ll
@@ -476,17 +482,6 @@ entry:
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f32.ll
-; spike/optimized/f16_to_f64.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-btle_rf.c.ll
@@ -494,7 +489,7 @@ entry:
 ; wireshark/optimized/packet-ehdlc.c.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; wireshark/optimized/packet-h265.c.ll
-; wireshark/optimized/packet-hdmi.c.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i16 %0) #0 {
 entry:

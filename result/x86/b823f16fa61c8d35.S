@@ -12,7 +12,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edi, %edi
 	cmovnsq	%rsi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orq	%rdx, %rsi
 	movabsq	$8589934592, %rax               # imm = 0x200000000
 	orq	%rsi, %rax

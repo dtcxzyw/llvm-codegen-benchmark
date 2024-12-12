@@ -1,8 +1,3 @@
-func0000000000000003:                   # @func0000000000000003
-	movzbl	%sil, %eax
-	andl	$1, %edi
-	leal	96(%rax,%rdi), %eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%sil, %eax
 	andl	$1, %edi
@@ -15,6 +10,11 @@ func0000000000000001:                   # @func0000000000000001
 	addl	$-55, %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movzbl	%sil, %eax
+	andl	$1, %edi
+	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%sil, %eax

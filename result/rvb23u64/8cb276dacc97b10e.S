@@ -20,6 +20,14 @@ func0000000000000015:                   # @func0000000000000015
 	subw	a1, a1, a0
 	addiw	a0, a1, 1023
 	ret
+func0000000000000010:                   # @func0000000000000010
+	li	a2, 1000
+	mul	a1, a1, a2
+	subw	a1, a1, a0
+	li	a0, 1526
+	sh3add	a0, a0, a1
+	sext.w	a0, a0
+	ret
 func0000000000000035:                   # @func0000000000000035
 	sh3add	a1, a1, a1
 	subw	a0, a1, a0

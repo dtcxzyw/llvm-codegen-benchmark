@@ -1,3 +1,9 @@
+func0000000000000024:                   # @func0000000000000024
+	leaq	(%rdx,%rdi), %rcx
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	cmovaeq	%rcx, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	(%rdx,%rdi), %rcx
 	xorl	%eax, %eax

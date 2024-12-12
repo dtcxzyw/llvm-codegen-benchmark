@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; protobuf/optimized/text_format.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i8 %0, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; pyo3-rs/optimized/23tgpgxnh0x411j4.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i8 %0, 2

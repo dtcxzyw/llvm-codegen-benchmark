@@ -3,48 +3,54 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	andi	a1, a1, 60
 	add	a0, a0, a1
 	addi	a0, a0, 26
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	srliw	a1, a1, 2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 44
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 63
 	add	a0, a0, a1
 	addi	a0, a0, 25
 	ret
-func0000000000000060:                   # @func0000000000000060
+func000000000000007e:                   # @func000000000000007e
+	slli	a1, a1, 35
+	srli	a1, a1, 35
+	add	a0, a0, a1
+	addi	a0, a0, -4
+	ret
+func0000000000000070:                   # @func0000000000000070
 	andi	a1, a1, 255
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func0000000000000068:                   # @func0000000000000068
+func000000000000007c:                   # @func000000000000007c
 	lui	a2, 32
 	addiw	a2, a2, -2
 	and	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret
-func000000000000006b:                   # @func000000000000006b
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 3
-	add	a0, a0, a1
-	addi	a0, a0, 160
-	ret
-func0000000000000062:                   # @func0000000000000062
+func0000000000000073:                   # @func0000000000000073
 	andi	a1, a1, 1
-	slli	a2, a1, 4
-	slli	a1, a1, 12
-	or	a1, a1, a2
-	lui	a2, 1
-	addiw	a2, a2, 776
-	add	a0, a0, a2
+	bnez	a1, .LBB7_2
+	li	a1, 8
+	add	a0, a0, a1
+	li	a1, 19
+	slli	a1, a1, 8
+	add	a0, a0, a1
+	ret
+.LBB7_2:
+	lui	a1, 1
+	addiw	a1, a1, 24
+	add	a0, a0, a1
+	li	a1, 19
+	slli	a1, a1, 8
 	add	a0, a0, a1
 	ret

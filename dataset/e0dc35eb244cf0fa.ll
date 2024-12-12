@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 81 occurrences:
 ; arrow/optimized/scalar_cast_boolean.cc.ll
 ; c3c/optimized/sema_expr.c.ll
 ; curl/optimized/libcurl_la-imap.ll
@@ -14,7 +14,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libevent/optimized/evmap.c.ll
 ; linux/optimized/8250_pci.ll
-; linux/optimized/dswexec.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/pata_amd.ll
@@ -22,7 +21,6 @@
 ; linux/optimized/socket.ll
 ; linux/optimized/xfrm_output.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -72,11 +70,17 @@
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
+; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/packet-slimp3.c.ll
 ; wireshark/optimized/packet-tplink-smarthome.c.ll
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/str_util.c.ll
 ; wireshark/optimized/tap-follow.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
@@ -85,8 +89,7 @@ entry:
   ret i8 %3
 }
 
-; 11 occurrences:
-; clamav/optimized/special.c.ll
+; 10 occurrences:
 ; icu/optimized/uidna.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll

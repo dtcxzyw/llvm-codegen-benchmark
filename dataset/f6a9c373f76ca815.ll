@@ -101,20 +101,21 @@
 define i32 @func0000000000000060(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = lshr i64 %4, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/dm-region-hash.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = lshr i64 %4, %5
   %7 = trunc i64 %6 to i32

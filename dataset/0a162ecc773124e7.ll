@@ -7,22 +7,22 @@
 ; abc/optimized/lpkSets.c.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sub nuw nsw i16 %1, %2
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sub nuw i16 %1, %2
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -37,11 +37,11 @@ entry:
 ; jemalloc/optimized/tcache.sym.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sub i16 %1, %2
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

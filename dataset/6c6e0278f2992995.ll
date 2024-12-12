@@ -8,7 +8,7 @@
 define i8 @func000000000000000f(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = add nuw nsw i8 %3, %0
+  %4 = add nuw nsw i8 %0, %3
   %5 = zext i1 %1 to i8
   %6 = add nuw nsw i8 %4, %5
   ret i8 %6
@@ -26,7 +26,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = add i8 %3, %0
+  %4 = add i8 %0, %3
   %5 = zext i1 %1 to i8
   %6 = add i8 %4, %5
   ret i8 %6
@@ -38,7 +38,7 @@ entry:
 define i8 @func0000000000000005(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i8
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   %5 = zext i1 %1 to i8
   %6 = add nsw i8 %4, %5
   ret i8 %6

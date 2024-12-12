@@ -9,11 +9,11 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 1619000832
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 110 occurrences:
+; 112 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
@@ -55,6 +55,7 @@ entry:
 ; glslang/optimized/linkValidate.cpp.ll
 ; glslang/optimized/reflection.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/e_rc2.c.ll
 ; libwebp/optimized/extras.c.ll
 ; lief/optimized/des.c.ll
@@ -93,6 +94,7 @@ entry:
 ; lua/optimized/lcode.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -133,7 +135,7 @@ entry:
   ret i32 %5
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/fraigNode.c.ll
@@ -150,11 +152,8 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/des.c.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/message.ll
 ; linux/optimized/nbcon.ll
@@ -171,14 +170,15 @@ entry:
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AliasSetTracker.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/trackerKCF.cpp.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; php/optimized/zend_inference.ll
-; postgres/optimized/regcomp.ll
 ; postgres/optimized/tsvector_op.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/qobject_json-parser.c.ll
 ; recastnavigation/optimized/Recast.cpp.ll
@@ -215,7 +215,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 196608
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

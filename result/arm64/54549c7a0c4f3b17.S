@@ -1,84 +1,47 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.4s, #7
-	add	v0.4s, v0.4s, v2.4s
 	mov	w8, #18725                      // =0x4925
-	add	v1.4s, v1.4s, v3.4s
+	add	w9, w0, w1
 	movk	w8, #9362, lsl #16
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	umull2	v3.2d, v0.4s, v2.4s
-	umull	v4.2d, v0.2s, v2.2s
-	umull2	v5.2d, v1.4s, v2.4s
-	umull	v2.2d, v1.2s, v2.2s
-	uzp2	v3.4s, v4.4s, v3.4s
-	uzp2	v2.4s, v2.4s, v5.4s
-	sub	v0.4s, v0.4s, v3.4s
-	sub	v1.4s, v1.4s, v2.4s
-	usra	v3.4s, v0.4s, #1
-	usra	v2.4s, v1.4s, #1
-	ushr	v0.4s, v3.4s, #2
-	ushr	v1.4s, v2.4s, #2
+	add	w9, w9, #7
+	umull	x8, w9, w8
+	lsr	x8, x8, #32
+	sub	w9, w9, w8
+	add	w8, w8, w9, lsr #1
+	lsr	w0, w8, #2
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v4.4s, #6
-	add	v0.4s, v0.4s, v2.4s
 	mov	w8, #43691                      // =0xaaab
-	add	v1.4s, v1.4s, v3.4s
+	add	w9, w0, w1
 	movk	w8, #43690, lsl #16
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	umull2	v3.2d, v0.4s, v2.4s
-	umull	v0.2d, v0.2s, v2.2s
-	umull2	v4.2d, v1.4s, v2.4s
-	umull	v1.2d, v1.2s, v2.2s
-	uzp2	v0.4s, v0.4s, v3.4s
-	uzp2	v1.4s, v1.4s, v4.4s
-	ushr	v0.4s, v0.4s, #1
-	ushr	v1.4s, v1.4s, #1
+	add	w9, w9, #6
+	umull	x8, w9, w8
+	lsr	x0, x8, #33
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v4.4s, #23
-	add	v0.4s, v0.4s, v2.4s
-	mov	w8, #18725                      // =0x4925
-	add	v1.4s, v1.4s, v3.4s
-	movk	w8, #9362, lsl #16
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	ushr	v0.4s, v0.4s, #2
-	ushr	v1.4s, v1.4s, #2
-	umull2	v3.2d, v0.4s, v2.4s
-	umull	v0.2d, v0.2s, v2.2s
-	umull2	v4.2d, v1.4s, v2.4s
-	umull	v1.2d, v1.2s, v2.2s
-	uzp2	v0.4s, v0.4s, v3.4s
-	uzp2	v1.4s, v1.4s, v4.4s
+	add	w8, w0, w1
+	mov	w9, #18725                      // =0x4925
+	add	w8, w8, #23
+	movk	w9, #9362, lsl #16
+	lsr	w8, w8, #2
+	umull	x8, w8, w9
+	lsr	x0, x8, #32
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	add	v0.4s, v0.4s, v2.4s
 	mov	w8, #43691                      // =0xaaab
-	add	v1.4s, v1.4s, v3.4s
+	add	w9, w0, w1
 	movk	w8, #43690, lsl #16
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	umull2	v3.2d, v0.4s, v2.4s
-	umull	v0.2d, v0.2s, v2.2s
-	umull2	v4.2d, v1.4s, v2.4s
-	umull	v1.2d, v1.2s, v2.2s
-	uzp2	v0.4s, v0.4s, v3.4s
-	uzp2	v1.4s, v1.4s, v4.4s
-	ushr	v0.4s, v0.4s, #3
-	ushr	v1.4s, v1.4s, #3
+	sub	w9, w9, #1
+	umull	x8, w9, w8
+	lsr	x0, x8, #35
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

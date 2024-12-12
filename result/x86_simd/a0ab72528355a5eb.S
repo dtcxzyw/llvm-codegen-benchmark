@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	3                               # 0x3
 .LCPI1_1:
 	.long	2                               # 0x2
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpsravd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
@@ -57,7 +57,7 @@ func0000000000000061:                   # @func0000000000000061
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpslld	$3, %ymm1, %ymm1
 	vpsravd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI2_1(%rip){1to8}, %ymm0, %k0

@@ -8,7 +8,7 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %.neg1 = mul i64 %.neg, %1
+  %.neg1 = mul i64 %1, %.neg
   %3 = add i64 %.neg1, %0
   ret i64 %3
 }
@@ -19,7 +19,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %.neg1 = mul i64 %.neg, %1
+  %.neg1 = mul i64 %1, %.neg
   %3 = add i64 %.neg1, %0
   ret i64 %3
 }

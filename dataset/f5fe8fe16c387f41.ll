@@ -15,7 +15,7 @@ entry:
   %2 = mul i32 %1, 5
   %3 = add i32 %2, 2
   %4 = udiv i32 %3, 153
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -32,11 +32,17 @@ entry:
   %2 = mul nsw i32 %1, 153
   %3 = add nsw i32 %2, 2
   %4 = udiv i32 %3, 5
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -45,7 +51,21 @@ entry:
   %2 = mul nuw nsw i32 %1, 153
   %3 = add nuw nsw i32 %2, 2
   %4 = udiv i32 %3, 5
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 5
+  %3 = add i32 %2, 2
+  %4 = udiv i32 %3, 1530
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -57,7 +77,7 @@ entry:
   %2 = mul i32 %1, -137
   %3 = add nuw nsw i32 %2, 136
   %4 = udiv i32 %3, 59
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -81,7 +101,7 @@ entry:
   %2 = mul i32 %1, 25
   %3 = add i32 %2, 99
   %4 = udiv i32 %3, 100
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -93,7 +113,7 @@ entry:
   %2 = mul nsw i32 %1, 36525
   %3 = add nsw i32 %2, 172251900
   %4 = udiv i32 %3, 100
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -105,7 +125,7 @@ entry:
   %2 = mul nuw nsw i32 %1, 36525
   %3 = add nuw nsw i32 %2, 172251900
   %4 = udiv i32 %3, 100
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

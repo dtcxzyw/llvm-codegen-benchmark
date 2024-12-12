@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
 ; luajit/optimized/minilua.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; redis/optimized/lgc.ll
+; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0, i1 %1) #0 {
 entry:

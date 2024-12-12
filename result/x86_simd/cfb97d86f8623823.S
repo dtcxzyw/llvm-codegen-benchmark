@@ -30,3 +30,13 @@ func000000000000000d:                   # @func000000000000000d
 	vorps	.LCPI2_2(%rip){1to8}, %ymm0, %ymm1 {%k1}
 	vmovaps	%ymm1, %ymm0
 	retq
+.LCPI3_0:
+	.long	3                               # 0x3
+.LCPI3_1:
+	.long	1024                            # 0x400
+func0000000000000009:                   # @func0000000000000009
+	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vbroadcastss	.LCPI3_1(%rip), %ymm1   # ymm1 = [1024,1024,1024,1024,1024,1024,1024,1024]
+	vorps	%ymm1, %ymm0, %ymm1 {%k1}
+	vmovaps	%ymm1, %ymm0
+	retq

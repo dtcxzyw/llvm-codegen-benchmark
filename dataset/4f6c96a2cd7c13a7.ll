@@ -6,7 +6,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 8585216
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = shl nuw i32 %1, 8
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -27,8 +27,7 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
-; hdf5/optimized/H5Zfletcher32.c.ll
+; 5 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/ohci-hcd.ll
@@ -39,7 +38,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 65472
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nuw nsw i32 %1, 26
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -52,7 +51,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = shl i32 %0, 16
   %7 = or i32 %6, %5
   ret i32 %7
@@ -65,7 +64,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 3840
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = shl nsw i32 %1, 6
   %7 = or i32 %5, %6
   ret i32 %7

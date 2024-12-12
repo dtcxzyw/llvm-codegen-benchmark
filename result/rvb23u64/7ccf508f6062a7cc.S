@@ -7,6 +7,11 @@ func0000000000000018:                   # @func0000000000000018
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
+func0000000000000002:                   # @func0000000000000002
+	sext.w	a1, a1
+	addi	a1, a1, -14
+	seqz	a0, a1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
 	sext.w	a1, a1

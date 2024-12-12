@@ -83,14 +83,14 @@ func0000000000000027:                   # @func0000000000000027
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	add	a0, a0, a1
 	addiw	a0, a0, -7
 	ret
-func000000000000010f:                   # @func000000000000010f
+func000000000000030f:                   # @func000000000000030f
 	sext.w	a1, a1
 	sltiu	a1, a1, 63
 	xori	a1, a1, 1
@@ -104,7 +104,7 @@ func000000000000014f:                   # @func000000000000014f
 	add	a0, a0, a1
 	addiw	a0, a0, 243
 	ret
-func000000000000008f:                   # @func000000000000008f
+func000000000000028f:                   # @func000000000000028f
 	sext.w	a1, a1
 	sltiu	a1, a1, 10
 	add	a0, a0, a1

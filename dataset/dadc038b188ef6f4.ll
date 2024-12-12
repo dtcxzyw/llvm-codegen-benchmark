@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i8 %1) #0 {
+define i1 @func00000000000004e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 2, %2
@@ -21,7 +21,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000007e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/lgc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000661(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2

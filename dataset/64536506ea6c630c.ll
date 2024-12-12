@@ -6,7 +6,7 @@
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 33, i32 1
   %3 = or disjoint i32 %2, 16
@@ -19,11 +19,11 @@ entry:
 ; abc/optimized/luckyFast16.c.ll
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000038(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 32, i32 0
   %3 = or disjoint i32 %2, 16
-  %4 = icmp ugt i64 %0, 65535
+  %4 = icmp samesign ugt i64 %0, 65535
   %5 = select i1 %4, i32 %3, i32 %2
   ret i32 %5
 }
@@ -54,7 +54,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 32, i32 0
   %3 = or disjoint i32 %2, 16

@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; spike/optimized/vsmul_vv.ll
 ; spike/optimized/vsmul_vx.ll

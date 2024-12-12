@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	1                               # 0x1
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vptestnmd	.LCPI0_1(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2q	%k0, %ymm0
@@ -42,7 +42,7 @@ func0000000000000022:                   # @func0000000000000022
 	.zero	1
 .LCPI1_1:
 	.long	32                              # 0x20
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k1
 	vptestmd	.LCPI1_1(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2q	%k0, %ymm0

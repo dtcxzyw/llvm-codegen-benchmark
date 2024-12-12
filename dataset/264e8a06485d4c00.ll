@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; postgres/optimized/formatting.ll
+; ruby/optimized/regexec.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 26
+  %3 = select i1 %2, i1 true, i1 %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; oiio/optimized/targainput.cpp.ll
@@ -18,17 +30,6 @@ entry:
 define i32 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = select i1 %2, i1 true, i1 %0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/formatting.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 26
   %3 = select i1 %2, i1 true, i1 %0
   %4 = zext i1 %3 to i32
   ret i32 %4

@@ -1,20 +1,14 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
+	fmov	x9, d0
 	mov	w8, #2                          // =0x2
-	shl	v1.2d, v1.2d, #3
-	shl	v0.2d, v0.2d, #3
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	orr	x0, x8, x9, lsl #3
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
+	fmov	x9, d0
 	mov	w8, #1                          // =0x1
-	add	v1.2d, v1.2d, v1.2d
-	add	v0.2d, v0.2d, v0.2d
-	dup	v2.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v2.16b
+	orr	x0, x8, x9, lsl #1
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; curl/optimized/libcurl_la-mqtt.ll
@@ -18,6 +18,7 @@
 ; rocksdb/optimized/block_builder.cc.ll
 ; rocksdb/optimized/table_cache.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

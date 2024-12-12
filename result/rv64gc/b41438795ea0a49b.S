@@ -1,4 +1,4 @@
-func0000000000000112:                   # @func0000000000000112
+func0000000000000a53:                   # @func0000000000000a53
 	andi	a1, a1, 255
 	li	a2, 224
 	bgeu	a1, a2, .LBB0_2
@@ -11,7 +11,7 @@ func0000000000000112:                   # @func0000000000000112
 	sub	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000087:                   # @func0000000000000087
 	andi	a1, a1, 255
 	li	a2, 1
 	beq	a1, a2, .LBB1_2
@@ -26,7 +26,19 @@ func0000000000000046:                   # @func0000000000000046
 .LBB1_4:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000110:                   # @func0000000000000110
+func0000000000000213:                   # @func0000000000000213
+	andi	a1, a1, 255
+	li	a2, 10
+	bgeu	a1, a2, .LBB2_2
+	li	a1, 1
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	sltiu	a1, a1, 100
+	xori	a1, a1, 3
+	add	a0, a0, a1
+	ret
+func0000000000000a50:                   # @func0000000000000a50
 	andi	a1, a1, 255
 	li	a2, 2
 	sltiu	a3, a1, 240

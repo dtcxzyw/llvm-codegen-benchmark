@@ -13,3 +13,10 @@ func0000000000000011:                   # @func0000000000000011
 	subq	%rcx, %rax
 	sarq	%rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	movq	%rdi, %rax
+	andl	$1023, %edx                     # imm = 0x3FF
+	leaq	(%rsi,%rdx,4), %rcx
+	subq	%rcx, %rax
+	sarq	$2, %rax
+	retq

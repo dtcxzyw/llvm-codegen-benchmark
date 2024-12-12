@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 39 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll
 ; libquic/optimized/time_support.c.ll
@@ -37,18 +37,14 @@
 ; opencv/optimized/cap_obsensor_capture.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/obsensor_stream_channel_v4l2.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/tm2unixtime.ll
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3ThreadPool.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0) #0 {
 entry:
-  %1 = add nsw i64 %0, 4000
-  %2 = sdiv i64 %1, 1461001
-  %3 = mul nsw i64 %2, 1461
+  %1 = add nsw i64 %0, 1
+  %2 = sdiv i64 %1, 2
+  %3 = mul nsw i64 %2, 24
   ret i64 %3
 }
 

@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

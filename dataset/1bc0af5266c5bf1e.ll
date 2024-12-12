@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 75 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/pdf.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; darktable/optimized/timeline.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; git/optimized/apply.ll
 ; git/optimized/parse-options.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -50,12 +49,9 @@
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/contours.cpp.ll
-; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; openjdk/optimized/c2_intelJccErratum_x86.ll
 ; openjdk/optimized/check_code.ll
-; openjdk/optimized/sharedRuntimeTrans.ll
-; openmpi/optimized/monitoring_test.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; php/optimized/html.ll
@@ -63,6 +59,7 @@
 ; postgres/optimized/pgstat_io.ll
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/target_riscv_csr.c.ll
 ; quantlib/optimized/china.ll
 ; quantlib/optimized/india.ll
 ; quantlib/optimized/newzealand.ll
@@ -83,13 +80,16 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 72 occurrences:
+; 75 occurrences:
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
@@ -103,7 +103,6 @@ entry:
 ; git/optimized/wildmatch.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
-; icu/optimized/collationfastlatinbuilder.ll
 ; icu/optimized/ushape.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -113,6 +112,7 @@ entry:
 ; linux/optimized/n_tty.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/uncore_nhmex.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
@@ -167,32 +167,7 @@ entry:
   %3 = and i32 %2, 897
   %4 = icmp ne i32 %3, 0
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; mitsuba3/optimized/x86instapi.cpp.ll
-; openjdk/optimized/check_code.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 248
-  %4 = icmp ugt i32 %3, 8
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/norm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 6
-  %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

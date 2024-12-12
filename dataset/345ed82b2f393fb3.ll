@@ -95,13 +95,13 @@
 ; yosys/optimized/extract.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = ashr i64 %2, 2
   %4 = add nsw i64 %3, -1
   %5 = sdiv i64 %4, 2
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 

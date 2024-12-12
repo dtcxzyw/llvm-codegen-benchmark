@@ -43,6 +43,13 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 32
 	vwsll.vx	v8, v10, a0
 	ret
+func000000000000002b:                   # @func000000000000002b
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v8, v8, v9
+	lui	a0, 983040
+	vadd.vx	v10, v8, a0
+	vwsll.vi	v8, v10, 28
+	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v8, v8, v9

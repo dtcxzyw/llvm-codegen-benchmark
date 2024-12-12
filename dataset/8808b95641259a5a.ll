@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = and i32 %3, 255
-  %5 = shl nuw nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind

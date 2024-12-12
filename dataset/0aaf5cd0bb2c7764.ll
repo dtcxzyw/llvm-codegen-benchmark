@@ -28,7 +28,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; lief/optimized/bignum.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; openusd/optimized/json.cpp.ll

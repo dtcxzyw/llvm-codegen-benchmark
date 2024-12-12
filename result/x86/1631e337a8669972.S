@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000006f:                   # @func000000000000006f
 	leal	(%rdx,%rdx,2), %eax
 	leaq	(%rdi,%rsi,4), %rcx
 	leaq	4(%rcx,%rax,4), %rax
@@ -9,7 +9,7 @@ func0000000000000190:                   # @func0000000000000190
 	leaq	(%rdi,%rsi,2), %rcx
 	leaq	-4(%rcx,%rax,2), %rax
 	retq
-func00000000000001da:                   # @func00000000000001da
+func00000000000001ff:                   # @func00000000000001ff
 	addl	%edx, %edx
 	leal	(%rdx,%rdx,2), %eax
 	addq	%rsi, %rdi
@@ -21,4 +21,12 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edx, %eax
 	addq	%rsi, %rdi
 	leaq	-1(%rax,%rdi), %rax
+	retq
+func00000000000001df:                   # @func00000000000001df
+	shll	$3, %edx
+	leal	(%rdx,%rdx,2), %eax
+	leaq	(%rsi,%rsi,4), %rcx
+	shlq	$4, %rcx
+	addq	%rdi, %rcx
+	leaq	8(%rax,%rcx), %rax
 	retq

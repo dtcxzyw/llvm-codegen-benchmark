@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000090(i8 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3
   %3 = icmp ult i64 %2, 3
@@ -60,7 +60,7 @@ entry:
 ; ninja/optimized/deps_log_test.cc.ll
 ; nix/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f0(i8 %0, i64 %1) #0 {
+define i1 @func00000000000001b0(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 80
   %3 = trunc i8 %0 to i1

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
@@ -9,6 +9,7 @@
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i64 %0) #0 {
 entry:

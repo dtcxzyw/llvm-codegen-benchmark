@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/gzwrite.c.ll
@@ -35,6 +35,7 @@
 ; wireshark/optimized/proto_data.c.ll
 ; yosys/optimized/shregmap.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
@@ -47,19 +48,29 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 6 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
-; clamav/optimized/petite.c.ll
 ; freetype/optimized/psnames.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
+; mitsuba3/optimized/qmc.cpp.ll
+; openssl/optimized/libcrypto-lib-rsa_pk1.ll
+; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, %1
+  %3 = sext i1 %2 to i32
+  ret i32 %3
+}
+
+; 11 occurrences:
+; clamav/optimized/petite.c.ll
+; freetype/optimized/psnames.c.ll
 ; lief/optimized/ecp_curves.c.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/ConstantRange.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
-; mitsuba3/optimized/qmc.cpp.ll
-; openssl/optimized/libcrypto-lib-rsa_pk1.ll
-; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
 ; postgres/optimized/multixact.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -72,23 +83,17 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
-; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
-; wireshark/optimized/packet-ipsec.c.ll
-; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp uge i32 %0, %1
+  %2 = icmp samesign uge i32 %0, %1
   %3 = sext i1 %2 to i32
   ret i32 %3
 }
@@ -227,7 +232,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
@@ -235,6 +240,7 @@ entry:
 ; icu/optimized/rbbitblb.ll
 ; libevent/optimized/event_tagging.c.ll
 ; linux/optimized/eventpoll.ll
+; lvgl/optimized/lv_math.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; postgres/optimized/indexcmds.ll
@@ -285,6 +291,21 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %0, %1
+  %3 = sext i1 %2 to i32
+  ret i32 %3
+}
+
+; 6 occurrences:
+; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
+; wireshark/optimized/packet-ipsec.c.ll
+; xgboost/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp uge i32 %0, %1
   %3 = sext i1 %2 to i32
   ret i32 %3
 }

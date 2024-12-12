@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
+; boost/optimized/process.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; postgres/optimized/autovacuum.ll

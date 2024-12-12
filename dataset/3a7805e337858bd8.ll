@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/pplastic.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(float %0, float %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, float %0, float %1
-  %5 = fcmp oge float %4, 0.000000e+00
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; mitsuba3/optimized/measured.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
@@ -24,12 +11,24 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; mitsuba3/optimized/measured.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000001c(float %0, float %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 4
+  %4 = select i1 %3, float %0, float %1
+  %5 = fcmp oge float %4, 0.000000e+00
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; minetest/optimized/l_env.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(float %0, float %1, i32 %2) #0 {
+define i1 @func0000000000000185(float %0, float %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 12000
+  %3 = icmp samesign ugt i32 %2, 12000
   %4 = select i1 %3, float %0, float %1
   %5 = fcmp ugt float %4, 4.625000e+03
   ret i1 %5
@@ -38,9 +37,9 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/l_env.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000083(float %0, float %1, i32 %2) #0 {
+define i1 @func0000000000000183(float %0, float %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 12000
+  %3 = icmp samesign ugt i32 %2, 12000
   %4 = select i1 %3, float %0, float %1
   %5 = fcmp ult float %4, 6.125000e+03
   ret i1 %5

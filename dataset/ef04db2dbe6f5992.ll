@@ -1,7 +1,10 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/static_string.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
@@ -48,11 +51,12 @@ entry:
   ret i64 %3
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/src.ll
 ; clamav/optimized/crypt.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
 ; grpc/optimized/slice.cc.ll
@@ -91,8 +95,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; logos-rs/optimized/r8lrmz9t8pnb4ov.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:

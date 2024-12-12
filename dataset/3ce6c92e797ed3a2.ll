@@ -37,7 +37,7 @@ entry:
   ret i64 %7
 }
 
-; 98 occurrences:
+; 96 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -67,8 +67,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -143,7 +141,7 @@ entry:
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -159,7 +157,7 @@ entry:
   %4 = and i64 %1, 65535
   %5 = mul nuw nsw i64 %4, %3
   %6 = lshr i64 %5, 15
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -172,7 +170,7 @@ entry:
   %4 = and i64 %1, 4294967295
   %5 = mul nuw i64 %4, %3
   %6 = lshr i64 %5, 32
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

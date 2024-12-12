@@ -4,7 +4,7 @@
 ; libuv/optimized/stream.c.ll
 ; node/optimized/stream.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 16
   %4 = xor i1 %1, true

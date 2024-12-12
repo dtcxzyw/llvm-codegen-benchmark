@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; icu/optimized/csrsbcs.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; opencv/optimized/seeds.cpp.ll

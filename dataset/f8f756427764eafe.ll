@@ -5,7 +5,7 @@
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = or disjoint i32 %1, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = or disjoint i32 %1, 1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stackblur.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0) #0 {
+define i1 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = or disjoint i32 %1, 1

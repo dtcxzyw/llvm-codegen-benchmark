@@ -36,7 +36,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
@@ -45,8 +46,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, 7
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = or disjoint i32 %2, 16777216
   %4 = select i1 %0, i32 %2, i32 %3
   ret i32 %4
 }

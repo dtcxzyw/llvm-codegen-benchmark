@@ -38,3 +38,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%sil, %dil
 	setae	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	setae	%al
+	retq

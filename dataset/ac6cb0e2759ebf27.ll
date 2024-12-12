@@ -13,17 +13,22 @@ entry:
   ret double %7
 }
 
-; 2 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; opencv/optimized/hough.cpp.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000022(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp olt double %1, %2
+  %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp olt double %4, 1.000000e+00
   %6 = select i1 %5, double 1.000000e+00, double %4
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 
@@ -69,7 +74,7 @@ entry:
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp ogt double %4, 1.000000e+00
   %6 = select i1 %5, double 1.000000e+00, double %4
-  %7 = fmul double %6, %0
+  %7 = fmul double %0, %6
   ret double %7
 }
 

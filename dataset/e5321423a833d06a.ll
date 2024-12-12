@@ -38,6 +38,18 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 4
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 16
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
@@ -47,19 +59,18 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
+; 4 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 5
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -72,6 +83,18 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = getelementptr nusw double, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; casadi/optimized/sparsity_internal.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
   ret ptr %6
 }
 

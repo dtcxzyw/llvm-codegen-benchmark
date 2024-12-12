@@ -1,11 +1,13 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; freetype/optimized/truetype.c.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/netdev.ll
 ; linux/optimized/nsnames.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; wireshark/optimized/packet-cemi.c.ll

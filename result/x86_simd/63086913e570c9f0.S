@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpslld	$31, %xmm0, %xmm0

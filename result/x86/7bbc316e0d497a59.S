@@ -6,12 +6,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$8, %rdx
 	setb	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leaq	2147483399(%rsi), %rax
 	testb	$1, %dl
 	cmoveq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax

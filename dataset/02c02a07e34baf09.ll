@@ -19,7 +19,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/percpu.ll
@@ -27,7 +27,6 @@ entry:
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
@@ -37,7 +36,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 5
+  %2 = add i32 %1, -1
   %3 = add i32 %2, %0
   %4 = sub i32 0, %1
   %5 = and i32 %3, %4

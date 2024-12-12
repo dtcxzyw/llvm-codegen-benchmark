@@ -43,7 +43,8 @@ entry:
   ret i64 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; libquic/optimized/curve25519.c.ll

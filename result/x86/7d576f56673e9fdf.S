@@ -9,8 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	imull	%ecx, %eax
 	retq
 func000000000000000b:                   # @func000000000000000b
-	movzbl	%sil, %ecx
-	movzwl	%di, %eax
+	movzwl	%si, %ecx
+	movzbl	%dil, %eax
 	imull	%ecx, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f

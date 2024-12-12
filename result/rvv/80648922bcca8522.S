@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmfgt.vf	v0, v16, fa5
 	vfdiv.vv	v16, v12, v16
 	vmerge.vvm	v12, v16, v12, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, min
@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v16, fa5
 	vfmerge.vfm	v16, v16, fa5, v0
 	vfdiv.vv	v12, v12, v16
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 .LCPI2_0:
 	.word	0x3a03126f                      # float 5.00000024E-4

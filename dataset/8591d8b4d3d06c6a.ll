@@ -1,5 +1,5 @@
 
-%struct.max_align_t.3536583 = type { i64, x86_fp80 }
+%struct.max_align_t.3717359 = type { i64, x86_fp80 }
 
 ; 5 occurrences:
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -8,16 +8,16 @@
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 259 occurrences:
+; 258 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/solver_api.c.ll
@@ -179,7 +179,6 @@ entry:
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
@@ -278,16 +277,16 @@ entry:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/reduce_args_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -311,6 +310,7 @@ entry:
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/ui_cursor.c.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -384,7 +384,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
-; git/optimized/pq.ll
 ; graphviz/optimized/stuff.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -407,6 +406,7 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
@@ -433,23 +433,21 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; cpython/optimized/optimizer.ll
-; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/virtio_net.ll
-; llvm/optimized/APFloat.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -497,9 +495,11 @@ entry:
   ret ptr %5
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; hermes/optimized/APInt.cpp.ll
+; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/runtime.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/vsprintf.ll
@@ -507,6 +507,7 @@ entry:
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; postgres/optimized/aclchk.ll
 ; postgres/optimized/alter.ll
+; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -550,7 +551,7 @@ entry:
   ret ptr %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -579,6 +580,7 @@ entry:
 ; openexr/optimized/ImfRleCompressor.cpp.ll
 ; openexr/optimized/ImfZip.cpp.ll
 ; php/optimized/dce.ll
+; php/optimized/zend_jit.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Undriven.cpp.ll
@@ -586,12 +588,12 @@ entry:
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -601,12 +603,12 @@ entry:
 ; llvm/optimized/CodeGenTarget.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -614,12 +616,12 @@ entry:
 ; abc/optimized/giaTransduction.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 160
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -627,12 +629,12 @@ entry:
 ; icu/optimized/uarrsort.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.max_align_t.3536583, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.max_align_t.3717359, ptr %0, i64 %4
   ret ptr %5
 }
 

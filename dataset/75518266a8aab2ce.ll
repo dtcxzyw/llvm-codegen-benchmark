@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; icu/optimized/bocsu.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/collationbuilder.ll
@@ -21,6 +21,7 @@
 ; icu/optimized/ustrcase.ll
 ; icu/optimized/ustring.ll
 ; icu/optimized/utf16collationiterator.ll
+; icu/optimized/utrie_swap.ll
 ; icu/optimized/uts46.ll
 ; icu/optimized/writesrc.ll
 ; icu/optimized/wrtxml.ll
@@ -39,11 +40,9 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/normalizer2impl.ll
-; icu/optimized/ubidiln.ll
-; icu/optimized/ubidiwrt.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll

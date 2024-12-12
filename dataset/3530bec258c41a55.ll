@@ -1,5 +1,5 @@
 
-; 1074 occurrences:
+; 1072 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -752,7 +752,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1062,7 +1061,6 @@
 ; nix/optimized/build-remote.ll
 ; nix/optimized/export-import.ll
 ; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/remote-store.ll
 ; nix/optimized/serialise.ll
 ; nix/optimized/serve-protocol-impl.ll
@@ -1082,7 +1080,7 @@ entry:
   ret i32 %3
 }
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -1101,6 +1099,7 @@ entry:
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/longobject.ll
+; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
@@ -1119,7 +1118,6 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
-; linux/optimized/8250_lpss.ll
 ; linux/optimized/bugs.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/extents.ll
@@ -1129,7 +1127,6 @@ entry:
 ; linux/optimized/ibs.ll
 ; linux/optimized/initramfs.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_migrate.ll
@@ -1227,7 +1224,7 @@ entry:
   ret i32 %3
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -1262,6 +1259,7 @@ entry:
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wireshark/optimized/oids.c.ll
 ; wireshark/optimized/packet-h248.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -1270,7 +1268,7 @@ entry:
   ret i32 %3
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; brotli/optimized/static_dict.c.ll
 ; cmake/optimized/ia64.c.ll
@@ -1319,7 +1317,6 @@ entry:
 ; spike/optimized/disasm.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; wireshark/optimized/packet-dof.c.ll
-; wireshark/optimized/packet-etag.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -1328,7 +1325,7 @@ entry:
   ret i32 %3
 }
 
-; 300 occurrences:
+; 299 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; c3c/optimized/bigint.c.ll
@@ -1542,7 +1539,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -1637,7 +1633,7 @@ entry:
   ret i32 %3
 }
 
-; 69 occurrences:
+; 73 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -1666,7 +1662,9 @@ entry:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
 ; hyperscan/optimized/trufflecompile.cpp.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; libquic/optimized/asn1_lib.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
@@ -1707,6 +1705,8 @@ entry:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

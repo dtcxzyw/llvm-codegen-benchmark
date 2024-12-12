@@ -6,7 +6,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -19,7 +19,7 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000c9(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lz4_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3

@@ -1,8 +1,8 @@
 
-%struct._zend_op.2676797 = type { ptr, %union._znode_op.2676806, %union._znode_op.2676806, %union._znode_op.2676806, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2676806 = type { i32 }
-%struct.code.3347009 = type { i8, i8, i16 }
-%union._Py_CODEUNIT.3795952 = type { i16 }
+%struct._zend_op.2789840 = type { ptr, %union._znode_op.2789849, %union._znode_op.2789849, %union._znode_op.2789849, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789849 = type { i32 }
+%struct.code.3535564 = type { i8, i8, i16 }
+%union._Py_CODEUNIT.3974162 = type { i16 }
 
 ; 10 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -16,10 +16,10 @@
 ; openjdk/optimized/klassVtable.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000039(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 3
@@ -38,10 +38,10 @@ entry:
 ; php/optimized/zend_compile.ll
 ; zlib/optimized/inftrees.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000019(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_op.2676797, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2789840, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 5
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.code.3347009, ptr %1, i64 %3
+  %4 = getelementptr %struct.code.3535564, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 2
@@ -65,10 +65,10 @@ entry:
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr i64 %6, 3
@@ -78,10 +78,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tflite_importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr i64 %6, 2
@@ -94,7 +94,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %union._Py_CODEUNIT.3795952, ptr %1, i64 %3
+  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 1

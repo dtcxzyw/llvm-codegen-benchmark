@@ -56,7 +56,7 @@ func0000000000000003:                   # @func0000000000000003
 	fadd.s	fa5, fa1, fa2
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa4, %lo(.LCPI5_0)(a0)
-	fadd.s	fa5, fa5, fa0
+	fadd.s	fa5, fa0, fa5
 	fli.s	fa3, 0.5
 	fmul.s	fa5, fa5, fa3
 	fle.s	a0, fa4, fa5

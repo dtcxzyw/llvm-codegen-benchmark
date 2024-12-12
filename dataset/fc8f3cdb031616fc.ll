@@ -1,5 +1,5 @@
 
-; 314 occurrences:
+; 311 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/IRRShared.cpp.ll
@@ -9,6 +9,8 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
@@ -82,8 +84,6 @@
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_plane.ll
 ; linux/optimized/ethtool.ll
-; linux/optimized/fixed_phy.ll
-; linux/optimized/glue.ll
 ; linux/optimized/hid-apple.ll
 ; linux/optimized/hid-input.ll
 ; linux/optimized/hid-lg-g15.ll
@@ -97,7 +97,6 @@
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mshyperv.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/perfctr-watchdog.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/seq_queue.ll
 ; linux/optimized/sme.ll
@@ -106,8 +105,6 @@
 ; linux/optimized/tty_buffer.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/umwait.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -157,6 +154,8 @@
 ; luajit/optimized/lj_opt_sink_dyn.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/ToString.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_obj_event.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -165,7 +164,6 @@
 ; minetest/optimized/connection.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
@@ -192,7 +190,6 @@
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagecache.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/lpsolver.cpp.ll
 ; opencv/optimized/tracker_mil_state.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
@@ -322,7 +319,7 @@ entry:
   ret i32 %2
 }
 
-; 65 occurrences:
+; 70 occurrences:
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -349,10 +346,15 @@ entry:
 ; linux/optimized/ldt.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_str.ll
 ; luajit/optimized/lj_str_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll

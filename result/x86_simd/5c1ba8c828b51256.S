@@ -30,7 +30,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 .LCPI1_0:
 	.quad	100                             # 0x64
-func0000000000000006:                   # @func0000000000000006
+func0000000000000004:                   # @func0000000000000004
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
@@ -59,8 +59,8 @@ func0000000000000006:                   # @func0000000000000006
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	100                             # 0x64
-func0000000000000004:                   # @func0000000000000004
+	.quad	1000000                         # 0xf4240
+func0000000000000006:                   # @func0000000000000006
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx

@@ -10,9 +10,9 @@ func0000000000000006:                   # @func0000000000000006
 	andl	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	cmpq	$385, %rsi                      # imm = 0x181
-	cmovael	%edi, %eax
+	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	movl	$8, %eax
+	cmoval	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax

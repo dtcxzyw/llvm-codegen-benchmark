@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/mcast_snoop.ll
 ; llvm/optimized/ConstraintSystem.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll

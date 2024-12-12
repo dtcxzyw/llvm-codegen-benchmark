@@ -70,7 +70,7 @@
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqw	.LCPI0_1(%rip), %ymm1, %k1
 	vpcmpeqw	.LCPI0_2(%rip), %ymm0, %k0 {%k1}

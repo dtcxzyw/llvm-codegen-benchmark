@@ -20,14 +20,7 @@ func0000000000000018:                   # @func0000000000000018
 	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	leal	(%rdx,%rdx,2), %eax
-	cltq
-	movslq	%esi, %rcx
-	leaq	(%rdi,%rcx,4), %rcx
-	leaq	(%rcx,%rax,4), %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000008:                   # @func0000000000000008
 	leal	(%rdx,%rdx,4), %eax
 	cltq
 	movslq	%esi, %rcx

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -15,7 +15,6 @@
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/gup.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rsrc.ll
@@ -81,13 +80,12 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationkeys.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; linux/optimized/tctx.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll

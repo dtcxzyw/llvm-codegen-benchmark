@@ -13,7 +13,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = icmp eq i16 %2, 126
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -25,7 +25,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = icmp sgt i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -46,15 +46,13 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
+; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
-  %3 = icmp ult i16 %2, 137
+  %3 = icmp ult i16 %2, 51
   %4 = and i1 %3, %0
   ret i1 %4
 }

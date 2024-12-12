@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrld	$31, %ymm1, %ymm2
 	vpsrad	$7, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	7                               # 0x7
@@ -23,16 +23,24 @@ func0000000000000009:                   # @func0000000000000009
 	vpsrld	$29, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrad	$3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI2_0:
-	.long	4294967283                      # 0xfffffff3
-.LCPI2_1:
-	.long	715827883                       # 0x2aaaaaab
 func0000000000000008:                   # @func0000000000000008
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpsrld	$31, %ymm1, %ymm2
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpsrad	$1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI3_0:
+	.long	4294966839                      # 0xfffffe37
+.LCPI3_1:
+	.long	1717986919                      # 0x66666667
+func0000000000000000:                   # @func0000000000000000
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
-	vpbroadcastd	.LCPI2_1(%rip), %ymm3   # ymm3 = [715827883,715827883,715827883,715827883,715827883,715827883,715827883,715827883]
+	vpbroadcastd	.LCPI3_1(%rip), %ymm3   # ymm3 = [1717986919,1717986919,1717986919,1717986919,1717986919,1717986919,1717986919,1717986919]
 	vpmuldq	%ymm3, %ymm2, %ymm2
 	vpmuldq	%ymm3, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm1              # ymm1 = ymm1[1,1,3,3,5,5,7,7]
@@ -40,17 +48,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpsrld	$31, %ymm1, %ymm2
 	vpsrad	$1, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI3_0:
-	.long	7012800                         # 0x6b01c0
-func0000000000000000:                   # @func0000000000000000
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm2
-	vpsrld	$30, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpsrad	$2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	31                              # 0x1f

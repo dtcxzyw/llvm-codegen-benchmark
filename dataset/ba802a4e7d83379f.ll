@@ -1,5 +1,7 @@
 
-; 79 occurrences:
+; 81 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; ceres/optimized/loss_function.cc.ll
@@ -83,7 +85,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

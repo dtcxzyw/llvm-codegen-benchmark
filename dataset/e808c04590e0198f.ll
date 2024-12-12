@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; stockfish/optimized/movepick.ll
 ; Function Attrs: nounwind

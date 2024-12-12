@@ -51,7 +51,7 @@
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
 ; recastnavigation/optimized/TestCase.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
@@ -89,7 +89,7 @@ entry:
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; quantlib/optimized/gaussian1dswaptionengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3

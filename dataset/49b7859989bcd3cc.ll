@@ -1,5 +1,5 @@
 
-; 196 occurrences:
+; 204 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -9,6 +9,8 @@
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; casadi/optimized/expm.cpp.ll
 ; clamav/optimized/volume.cpp.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
@@ -57,7 +59,6 @@
 ; just-rs/optimized/23nlf67cmm9na4ci.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/rsa.c.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dsi_vbt.ll
@@ -88,7 +89,6 @@
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
@@ -101,6 +101,9 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; logos-rs/optimized/33srodniyndbmve4.ll
+; lvgl/optimized/lv_draw_sw_border.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
@@ -145,8 +148,6 @@
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spi.ll
 ; proj/optimized/coordinatesystem.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; qemu/optimized/block_block-copy.c.ll
@@ -195,6 +196,13 @@
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1) #0 {

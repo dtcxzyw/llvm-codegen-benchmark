@@ -19,26 +19,22 @@ func0000000000000057:                   # @func0000000000000057
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI2_0:
-	.long	57                              # 0x39
-.LCPI2_1:
-	.long	42                              # 0x2a
-.LCPI2_2:
-	.long	50                              # 0x32
-func0000000000000043:                   # @func0000000000000043
-	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [42,42,42,42,42,42,42,42]
-	vpbroadcastd	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [50,50,50,50,50,50,50,50]
+	.long	255                             # 0xff
+func000000000000000b:                   # @func000000000000000b
+	vptestmd	%ymm1, %ymm1, %k1
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.long	1                               # 0x1
+	.long	57                              # 0x39
 .LCPI3_1:
-	.long	2                               # 0x2
-func000000000000000b:                   # @func000000000000000b
-	vptestnmd	%ymm1, %ymm1, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
-	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
+	.long	42                              # 0x2a
+.LCPI3_2:
+	.long	50                              # 0x32
+func0000000000000043:                   # @func0000000000000043
+	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [42,42,42,42,42,42,42,42]
+	vpbroadcastd	.LCPI3_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [50,50,50,50,50,50,50,50]
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq

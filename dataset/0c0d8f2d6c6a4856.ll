@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:

@@ -3,10 +3,10 @@
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = add nsw i32 %0, 1
   %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
@@ -24,10 +24,10 @@ entry:
 ; openmpi/optimized/pmix_ring_buffer.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = add nsw i32 %0, 1
   %5 = select i1 %3, i32 1, i32 %4
   ret i32 %5
@@ -43,7 +43,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = add i32 %0, 1
   %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5

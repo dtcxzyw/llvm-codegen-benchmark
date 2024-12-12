@@ -32,7 +32,7 @@ entry:
   ret i64 %3
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -54,6 +54,8 @@ entry:
 ; redis/optimized/acl.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:

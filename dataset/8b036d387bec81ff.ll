@@ -5,15 +5,13 @@
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -1
-  %3 = mul i32 %2, %1
-  %4 = add i32 %3, %0
+  %3 = mul i32 %1, %2
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
@@ -29,21 +27,17 @@ entry:
 define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 1
-  %3 = mul nuw nsw i32 %2, %1
+  %3 = mul nuw nsw i32 %1, %2
   %4 = add nuw i32 %3, %0
   ret i32 %4
 }
 
-; 36 occurrences:
+; 32 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -75,7 +69,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 1
-  %3 = mul nsw i32 %2, %1
+  %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
   ret i32 %4
 }
@@ -111,7 +105,7 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %0, 1
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   %4 = add i32 %3, %0
   ret i32 %4
 }
@@ -122,7 +116,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -1
-  %3 = mul nsw i32 %2, %1
+  %3 = mul nsw i32 %1, %2
   %4 = add i32 %3, %0
   ret i32 %4
 }
@@ -162,17 +156,6 @@ entry:
   %2 = add nuw nsw i32 %0, 1
   %3 = mul nsw i32 %2, %1
   %4 = add nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dlasyf_aa.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, 2
-  %3 = mul nsw i32 %2, %1
-  %4 = add i32 %3, %0
   ret i32 %4
 }
 

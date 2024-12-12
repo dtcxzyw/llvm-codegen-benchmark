@@ -18,7 +18,7 @@
 ; ruby/optimized/ossl_asn1.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = icmp eq i64 %0, 0
@@ -26,7 +26,7 @@ entry:
   ret i64 %4
 }
 
-; 97 occurrences:
+; 89 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -40,7 +40,6 @@ entry:
 ; cpython/optimized/frameobject.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
@@ -114,18 +113,11 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; rocksdb/optimized/c.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 5
   %3 = icmp ugt i64 %0, 34359737855999
@@ -148,7 +140,7 @@ entry:
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, -9223372036854775808
   %3 = icmp ult i64 %0, 8

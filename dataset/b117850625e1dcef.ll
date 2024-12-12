@@ -12,7 +12,7 @@
 ; slurm/optimized/KangarooTwelve.ll
 ; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000120(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000220(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %0 to i32
   %4 = icmp ult i64 %0, %2
@@ -22,17 +22,15 @@ entry:
   ret i64 %7
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/gzlib.c.ll
 ; cmake/optimized/gzlib.c.ll
-; libquic/optimized/gzlib.c.ll
 ; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000121(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000002a1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %0 to i32
-  %4 = icmp ult i64 %0, %2
+  %4 = icmp samesign ult i64 %0, %2
   %5 = select i1 %4, i32 %3, i32 %1
   %6 = zext i32 %5 to i64
   %7 = sub nsw i64 %0, %6

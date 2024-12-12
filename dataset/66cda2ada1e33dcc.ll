@@ -3,7 +3,7 @@
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 127
   %3 = select i1 %2, i32 2097152, i32 1048576
@@ -17,7 +17,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-dh_pmeth.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2047
   %3 = select i1 %2, i32 256, i32 160
@@ -51,7 +51,7 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; wasmtime-rs/optimized/1l4d79e6nzulcsk2.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 -49, i32 -55
@@ -69,7 +69,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
   %3 = select i1 %2, i32 1, i32 3
@@ -78,13 +78,12 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/formatter_unicode.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 6
   %3 = select i1 %2, i32 3, i32 0
@@ -94,21 +93,9 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/box_filter.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 5
-  %3 = select i1 %2, i32 5, i32 6
-  %4 = icmp slt i32 %0, 0
-  %5 = select i1 %4, i32 %3, i32 %0
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; graphviz/optimized/sfvscanf.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 99
   %2 = select i1 %.not, i32 1, i32 2147483647

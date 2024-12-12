@@ -14,7 +14,7 @@ func0000000000000003:                   # @func0000000000000003
 .LBB1_2:                                # %entry
 	ori	a0, a0, 4
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1
 	li	a3, 255
 	bltu	a3, a1, .LBB2_2
@@ -23,12 +23,20 @@ func0000000000000011:                   # @func0000000000000011
 .LBB2_2:                                # %entry
 	ori	a0, a0, 4
 	ret
+func0000000000000029:                   # @func0000000000000029
+	srliw	a1, a1, 22
+	beqz	a1, .LBB3_2
+	andi	a0, a2, 1
+	addi	a0, a0, 2
+.LBB3_2:                                # %entry
+	ori	a0, a0, 4
+	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
 	lui	a2, 8
-	beq	a1, a2, .LBB3_2
+	beq	a1, a2, .LBB4_2
 	li	a0, 2
 	ret
-.LBB3_2:
+.LBB4_2:
 	ori	a0, a0, 2
 	ret

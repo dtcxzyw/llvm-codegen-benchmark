@@ -15,7 +15,7 @@ func0000000000000013:                   # @func0000000000000013
 	retq
 func000000000000001f:                   # @func000000000000001f
 	leaq	(%rdi,%rsi), %rdx
-	movl	$38, %eax
+	movabsq	$3022314549036573, %rax         # imm = 0xABCC77118461D
 	mulxq	%rax, %rax, %rdx
 	retq
 func000000000000000f:                   # @func000000000000000f

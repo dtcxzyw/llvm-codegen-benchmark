@@ -27,17 +27,17 @@
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/s_subMagsF16.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = icmp ugt i64 %1, 9007199254740991
+  %2 = icmp samesign ugt i64 %1, 9007199254740991
   ret i1 %2
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 421 occurrences:
+; 438 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; assimp/optimized/Value.cpp.ll
@@ -459,6 +459,23 @@ declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 ; xgboost/optimized/loop.cc.ll
 ; xgboost/optimized/socket.cc.ll
 ; xgboost/optimized/tracker.cc.ll
+; zed-rs/optimized/0l5q95ei94dcvnozucoiwn5qf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/12xam7q4l70h0vr8y5wvb4s4a.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/539jqkovt0x6g7ilfg6ddwnop.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8ssoz06l7e5x2c5xnrblffvll.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/aktvc84j83s8sqq1xgqfsdyza.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -467,7 +484,7 @@ entry:
   ret i1 %2
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; freetype/optimized/autofit.c.ll
@@ -487,15 +504,16 @@ entry:
 ; spike/optimized/s_subMagsF32.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; z3/optimized/mpff.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000034(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = icmp ult i64 %1, 10000
+  %2 = icmp samesign ult i64 %1, 10000
   ret i1 %2
 }
 
-; 187 occurrences:
+; 185 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; assimp/optimized/Value.cpp.ll
@@ -557,8 +575,6 @@ entry:
 ; grpc/optimized/time.cc.ll
 ; grpc/optimized/transport_op_string.cc.ll
 ; hermes/optimized/ChromeTraceSerializer.cpp.ll
-; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
-; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; lief/optimized/DyldInfo.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
@@ -691,19 +707,18 @@ entry:
   ret i1 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/hbc-diff.cpp.ll
 ; libquic/optimized/quic_time.cc.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; nix/optimized/diff-closures.ll
 ; opencv/optimized/normal.cpp.ll
 ; openjdk/optimized/vectorization.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
-  %1 = call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = icmp ugt i64 %1, 32
+  %1 = tail call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
+  %2 = icmp samesign ugt i64 %1, 1073741823
   ret i1 %2
 }
 
@@ -718,7 +733,7 @@ entry:
 ; redis/optimized/t_set.ll
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.abs.i64(i64 %0, i1 true)
   %2 = icmp eq i64 %1, 1
@@ -746,16 +761,17 @@ entry:
 ; nanobind/optimized/common.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
-  %2 = icmp ult i64 %1, 2048
+  %2 = icmp samesign ult i64 %1, 2048
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
@@ -764,10 +780,22 @@ entry:
   ret i1 %2
 }
 
+; 3 occurrences:
+; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = call i64 @llvm.abs.i64(i64 %0, i1 false)
+  %2 = icmp samesign ult i64 %1, 5000000000000
+  ret i1 %2
+}
+
 ; 1 occurrences:
 ; z3/optimized/arith_sls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = tail call noundef i64 @llvm.abs.i64(i64 %0, i1 true)
   %2 = icmp eq i64 %1, 1
@@ -777,7 +805,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_set.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = call i64 @llvm.abs.i64(i64 %0, i1 true)
   %2 = icmp ne i64 %1, 1
@@ -789,7 +817,7 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = call noundef i64 @llvm.abs.i64(i64 %0, i1 false)
   %2 = icmp ugt i64 %1, 99

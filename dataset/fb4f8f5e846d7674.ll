@@ -10,7 +10,7 @@
 define i32 @func0000000000000015(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i1 %1 to i32
   %5 = add nsw i32 %3, %4
   %6 = shl nsw i32 %5, 3

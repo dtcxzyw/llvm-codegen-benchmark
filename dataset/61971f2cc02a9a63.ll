@@ -8,7 +8,7 @@
 ; quantlib/optimized/unitedkingdom.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = and i32 %0, -2
@@ -22,7 +22,7 @@ entry:
 ; proxygen/optimized/HTTPCodecPrinter.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 65536
   %3 = and i32 %0, 3

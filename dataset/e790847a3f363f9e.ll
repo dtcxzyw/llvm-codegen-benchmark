@@ -16,19 +16,18 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = ashr exact i32 %1, 24
-  %3 = and i32 %2, 1024
-  %4 = and i32 %0, 640
+  %2 = lshr exact i32 %1, 1
+  %3 = and i32 %2, 7
+  %4 = and i32 %0, 56
   %5 = or disjoint i32 %4, %3
   ret i32 %5
 }

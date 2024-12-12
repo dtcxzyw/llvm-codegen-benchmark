@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -128
   %3 = icmp ult i64 %2, -256
@@ -15,10 +15,12 @@ entry:
   ret i1 %5
 }
 
-; 97 occurrences:
+; 98 occurrences:
 ; arrow/optimized/interfaces.cc.ll
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/FBXExporter.cpp.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/target.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; cmake/optimized/cmCPackArchiveGenerator.cxx.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
@@ -91,7 +93,6 @@ entry:
 ; pocketpy/optimized/lexer.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/common.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; protobuf/optimized/versions.cc.ll
 ; qemu/optimized/tcg.c.ll
@@ -114,7 +115,7 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2147483648
   %3 = icmp ult i64 %2, -4294967296
@@ -129,7 +130,7 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/texturepaths.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = icmp ne i32 %0, 0
@@ -144,7 +145,7 @@ entry:
 ; nghttp2/optimized/nghttp2_submit.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -16381
   %3 = icmp ult i64 %2, -16385
@@ -156,7 +157,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -164,13 +165,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/index_hash.c.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2147483648
   %3 = icmp ult i64 %2, 4294967296
@@ -183,7 +185,7 @@ entry:
 ; abc/optimized/dauDsd.c.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000842(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 37
   %3 = icmp eq i32 %0, 31
@@ -194,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/rsa_impl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000b02(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2
   %3 = icmp eq i32 %0, 0
@@ -205,7 +207,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000918(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2147483645
   %3 = icmp ult i64 %2, -2147483644
@@ -217,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/dot11decrypt_util.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000210(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -255
   %3 = icmp ult i64 %2, -257
@@ -226,11 +228,68 @@ entry:
   ret i1 %5
 }
 
+; 46 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/inner_product_computer.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000b10(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -4294967297
+  %3 = icmp ult i64 %2, -4294967296
+  %4 = icmp ne i32 %0, 1
+  %5 = or i1 %3, %4
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; cpython/optimized/_elementtree.ll
 ; node/optimized/libnode.node_api.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp eq i32 %0, 1
@@ -241,7 +300,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2147483648
   %3 = icmp ult i64 %2, -4294967296
@@ -253,7 +312,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/binascii.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000314(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp sgt i64 %2, 0

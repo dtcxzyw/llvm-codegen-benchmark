@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.long	160                             # 0xa0
-func000000000000031a:                   # @func000000000000031a
+func000000000000062a:                   # @func000000000000062a
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
@@ -29,14 +29,14 @@ func000000000000031a:                   # @func000000000000031a
 	retq
 .LCPI3_0:
 	.long	160                             # 0xa0
-func000000000000030a:                   # @func000000000000030a
+func000000000000060a:                   # @func000000000000060a
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	vpaddd	%xmm2, %xmm2, %xmm3
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	%xmm3, %xmm0, %xmm0
@@ -44,7 +44,7 @@ func0000000000000096:                   # @func0000000000000096
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	vpaddd	%xmm2, %xmm2, %xmm3
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	%xmm3, %xmm0, %xmm0
@@ -52,7 +52,7 @@ func0000000000000196:                   # @func0000000000000196
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000011b:                   # @func000000000000011b
+func000000000000022b:                   # @func000000000000022b
 	vpaddd	%xmm2, %xmm2, %xmm3
 	vpaddd	%xmm0, %xmm2, %xmm0
 	vpaddd	%xmm3, %xmm0, %xmm0
@@ -65,7 +65,7 @@ func000000000000011b:                   # @func000000000000011b
 	.long	365                             # 0x16d
 func0000000000000001:                   # @func0000000000000001
 	vpmulld	.LCPI7_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper

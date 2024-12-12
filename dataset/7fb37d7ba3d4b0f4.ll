@@ -1,14 +1,28 @@
 
-%struct.page.3342170 = type { i64, %union.anon.9.3342171, %union.anon.17.3342172, %struct.atomic_t.3342128, [8 x i8] }
-%union.anon.9.3342171 = type { %struct.anon.10.3342173 }
-%struct.anon.10.3342173 = type { %union.anon.11.3342174, ptr, %union.anon.13.3342175, i64 }
-%union.anon.11.3342174 = type { %struct.list_head.3342134 }
-%struct.list_head.3342134 = type { ptr, ptr }
-%union.anon.13.3342175 = type { i64 }
-%union.anon.17.3342172 = type { %struct.atomic_t.3342128 }
-%struct.atomic_t.3342128 = type { i32 }
+%struct.page.3531253 = type { i64, %union.anon.9.3531254, %union.anon.17.3531255, %struct.atomic_t.3531211, [8 x i8] }
+%union.anon.9.3531254 = type { %struct.anon.10.3531256 }
+%struct.anon.10.3531256 = type { %union.anon.11.3531257, ptr, %union.anon.13.3531258, i64 }
+%union.anon.11.3531257 = type { %struct.list_head.3531217 }
+%struct.list_head.3531217 = type { ptr, ptr }
+%union.anon.13.3531258 = type { i64 }
+%union.anon.17.3531255 = type { %struct.atomic_t.3531211 }
+%struct.atomic_t.3531211 = type { i32 }
 
-; 49 occurrences:
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; brotli/optimized/backward_references.c.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 48 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -19,7 +33,6 @@
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/threadLocalAllocBuffer.ll
 ; openjdk/optimized/virtualMemoryTracker.ll
-; sqlite/optimized/sqlite3.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -62,7 +75,7 @@
 define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -78,7 +91,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr %struct.page.3342170, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3531253, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

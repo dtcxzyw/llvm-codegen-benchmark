@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 90 occurrences:
 ; arrow/optimized/bit_block_counter.cc.ll
 ; cmake/optimized/cmcmd.cxx.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
@@ -22,10 +22,7 @@
 ; linux/optimized/8250_port.ll
 ; linux/optimized/af_inet6.ll
 ; linux/optimized/cbc.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/udp.ll
@@ -42,6 +39,7 @@
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -68,8 +66,8 @@
 ; postgres/optimized/planner.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; qemu/optimized/fdt.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; quickjs/optimized/quickjs.ll
+; redis/optimized/rdb.ll
 ; redis/optimized/server.ll
 ; redis/optimized/util.ll
 ; ruby/optimized/parse.ll

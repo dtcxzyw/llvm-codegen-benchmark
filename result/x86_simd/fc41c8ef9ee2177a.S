@@ -20,36 +20,22 @@ func000000000000000c:                   # @func000000000000000c
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [33566765,33566765,33566765,33566765,33566765,33566765,33566765,33566765]
 	retq
 .LCPI2_0:
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
-	.short	65280                           # 0xff00
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
+	.short	65534                           # 0xfffe
 .LCPI2_1:
-	.long	65279                           # 0xfeff
+	.long	4294967292                      # 0xfffffffc
+.LCPI2_2:
+	.long	4294967294                      # 0xfffffffe
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpltuw	.LCPI2_0(%rip), %xmm1, %k1 {%k1}
-	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [65279,65279,65279,65279,65279,65279,65279,65279]
-	retq
-.LCPI3_0:
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-	.short	767                             # 0x2ff
-.LCPI3_1:
-	.long	768                             # 0x300
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpnleuw	.LCPI3_0(%rip), %xmm1, %k1 {%k1}
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [768,768,768,768,768,768,768,768]
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0   # ymm0 = [4294967292,4294967292,4294967292,4294967292,4294967292,4294967292,4294967292,4294967292]
+	vpbroadcastd	.LCPI2_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294]
 	retq

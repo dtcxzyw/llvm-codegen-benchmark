@@ -26,3 +26,10 @@ func000000000000001b:                   # @func000000000000001b
 	andl	$24568, %eax                    # imm = 0x5FF8
 	orl	%edx, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%esi, %eax
+	shll	$12, %edx
+	orl	%edi, %edx
+	andl	$2048, %eax                     # imm = 0x800
+	orl	%edx, %eax
+	retq

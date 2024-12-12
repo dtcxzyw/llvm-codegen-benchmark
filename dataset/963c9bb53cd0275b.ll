@@ -1,8 +1,8 @@
 
-%"struct.tbb::detail::d0::padded.2521506" = type { %"struct.tbb::detail::d0::padded_base.base.2521507", [7 x i8] }
-%"struct.tbb::detail::d0::padded_base.base.2521507" = type { %"struct.tbb::detail::d1::ets_element.base.2521508", [112 x i8] }
-%"struct.tbb::detail::d1::ets_element.base.2521508" = type { %"class.tbb::detail::d0::aligned_space.2521500", i8 }
-%"class.tbb::detail::d0::aligned_space.2521500" = type { [8 x i8] }
+%"struct.tbb::detail::d0::padded.2635915" = type { %"struct.tbb::detail::d0::padded_base.base.2635916", [7 x i8] }
+%"struct.tbb::detail::d0::padded_base.base.2635916" = type { %"struct.tbb::detail::d1::ets_element.base.2635917", [112 x i8] }
+%"struct.tbb::detail::d1::ets_element.base.2635917" = type { %"class.tbb::detail::d0::aligned_space.2635909", i8 }
+%"class.tbb::detail::d0::aligned_space.2635909" = type { [8 x i8] }
 
 ; 4 occurrences:
 ; linux/optimized/gre_offload.ll
@@ -24,11 +24,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -307,12 +307,12 @@ define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = sub i64 0, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2521506", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635915", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -376,7 +376,6 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll

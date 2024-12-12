@@ -21,12 +21,12 @@
 ; redis/optimized/ctl.sym.ll
 ; ruby/optimized/process.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 4
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -51,7 +51,7 @@ entry:
 ; qemu/optimized/libvduse.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne ptr %1, null
@@ -96,7 +96,7 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq ptr %1, null
@@ -110,19 +110,19 @@ entry:
 ; cpython/optimized/pyexpat.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = icmp eq ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/aom_integer.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ult i64 %1, 4294967296
@@ -136,7 +136,7 @@ entry:
 ; lz4/optimized/lz4hc.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000010c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 16415
   %4 = icmp ne ptr %1, null
@@ -149,12 +149,12 @@ entry:
 ; casadi/optimized/idas_interface.cpp.ll
 ; linux/optimized/dma-fence.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -176,12 +176,12 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/zlibmodule.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -193,12 +193,12 @@ entry:
 ; cpython/optimized/textio.ll
 ; cpython/optimized/zlibmodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ult i64 %1, 2
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

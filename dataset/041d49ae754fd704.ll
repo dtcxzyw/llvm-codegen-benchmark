@@ -1,6 +1,7 @@
 
-; 140 occurrences:
+; 141 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -141,7 +142,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0) #0 {
+define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
   %1 = add nuw nsw i64 %0, 63
   %.mask = and i64 %1, -64
@@ -152,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 63
   %.mask = and i64 %1, -64
@@ -160,7 +161,7 @@ entry:
   ret i1 %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -170,6 +171,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:

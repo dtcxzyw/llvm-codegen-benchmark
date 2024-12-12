@@ -3,7 +3,7 @@
 ; opencv/optimized/persistence.cpp.ll
 ; openvdb/optimized/Merge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 12
   %4 = add nsw i64 %0, %1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/Merge.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -12
   %3 = add nsw i64 %0, %1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %1
   %4 = shl i64 %2, 2
@@ -39,7 +39,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; postgres/optimized/timestamp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -1000000000
   %4 = add i64 %0, %1
@@ -62,6 +62,42 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000408(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = mul i64 %0, -10000000000
+  %5 = add i64 %4, %3
+  %6 = icmp ugt i64 %5, 5000000000
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000401(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = mul i64 %0, -10000000000
+  %5 = add i64 %4, %3
+  %6 = icmp eq i64 %5, 5000000000
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = mul i64 %0, -10000000000
+  %5 = sub i64 0, %3
+  %6 = icmp ne i64 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/WindowsResource.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
@@ -74,21 +110,9 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/date.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %2, 1000000
-  %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %5, 86399999999
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; postgres/optimized/timestamp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000000
   %4 = add i64 %0, %1
@@ -103,7 +127,7 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nsw i64 %0, -1000000
@@ -130,7 +154,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul nsw i64 %0, -1000000000
@@ -142,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 3
   %4 = add nsw i64 %0, %1
@@ -154,7 +178,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 5
   %4 = add nsw i64 %0, %1
@@ -166,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -5
   %3 = add nsw i64 %0, %1
@@ -177,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 21
   %4 = add nsw i64 %0, %1

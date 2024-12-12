@@ -1,10 +1,57 @@
 
-; 40 occurrences:
+; 7 occurrences:
+; freetype/optimized/type42.c.ll
+; icu/optimized/ucnv_u8.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
+; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
+; openusd/optimized/grain_synthesis.c.ll
+; wireshark/optimized/packet-umts_rlc.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 4
+  %3 = shl i32 %0, 3
+  %4 = add i32 %2, %3
+  ret i32 %4
+}
+
+; 4 occurrences:
+; hermes/optimized/RegexParser.cpp.ll
+; linux/optimized/r8169_main.ll
+; protobuf/optimized/tokenizer.cc.ll
+; qemu/optimized/target_riscv_pmp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 6
+  %3 = shl i32 %0, 4
+  %4 = add i32 %2, %3
+  ret i32 %4
+}
+
+; 7 occurrences:
+; abc/optimized/exorBits.c.ll
+; abc/optimized/fraigFeed.c.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; php/optimized/zend_strtod.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 6
+  %3 = shl i32 %0, 3
+  %4 = add i32 %2, %3
+  ret i32 %4
+}
+
+; 38 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/sparc.c.ll
-; cpython/optimized/dtoa.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/uprntf_p.ll
 ; icu/optimized/uscanf_p.ll
@@ -18,7 +65,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/to_tsany.ll
 ; postgres/optimized/tsvector_op.ll
-; ruby/optimized/util.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
 ; z3/optimized/aig.cpp.ll
@@ -43,42 +89,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 25
-  %3 = shl i32 %0, 20
-  %4 = add i32 %2, %3
-  ret i32 %4
-}
-
-; 7 occurrences:
-; freetype/optimized/type42.c.ll
-; icu/optimized/ucnv_u8.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
-; openusd/optimized/grain_synthesis.c.ll
-; wireshark/optimized/packet-umts_rlc.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 4
-  %3 = shl i32 %0, 3
-  %4 = add i32 %2, %3
-  ret i32 %4
-}
-
-; 7 occurrences:
-; abc/optimized/exorBits.c.ll
-; abc/optimized/fraigFeed.c.ll
-; hermes/optimized/dtoa.c.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; php/optimized/zend_strtod.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 6
-  %3 = shl i32 %0, 3
+  %2 = shl i32 %1, 20
+  %3 = shl i32 %0, 16
   %4 = add i32 %2, %3
   ret i32 %4
 }
@@ -113,25 +125,23 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 22
+  %3 = shl i32 %0, 10
+  %4 = add i32 %2, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 10
   %3 = shl i32 %0, 2
-  %4 = add i32 %2, %3
-  ret i32 %4
-}
-
-; 3 occurrences:
-; hermes/optimized/RegexParser.cpp.ll
-; linux/optimized/r8169_main.ll
-; protobuf/optimized/tokenizer.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 14
-  %3 = shl i32 %0, 10
   %4 = add i32 %2, %3
   ret i32 %4
 }

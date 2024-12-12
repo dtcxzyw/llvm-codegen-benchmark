@@ -1,11 +1,11 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	notb	%sil
 	andb	$1, %sil
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	notb	%sil
 	andb	$1, %sil
 	movzbl	%sil, %eax

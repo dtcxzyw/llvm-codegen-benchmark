@@ -1,6 +1,7 @@
 
-; 127 occurrences:
+; 128 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkMap.cpp.ll
 ; eastl/optimized/BenchmarkSet.cpp.ll
@@ -97,7 +98,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/cpu_entry_area.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/lib.ll
 ; linux/optimized/vsprintf.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -127,6 +127,7 @@
 ; wireshark/optimized/proto.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0) #0 {
 entry:
@@ -136,7 +137,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer.ll
 ; Function Attrs: nounwind
@@ -189,8 +191,9 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -297,23 +300,6 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/VTableBuilder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = mul i64 %0, 2082041510483722240
-  %2 = lshr exact i64 %1, 31
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
-}
-
 ; 2 occurrences:
 ; linux/optimized/intel_pstate.ll
 ; openspiel/optimized/mcts.cc.ll
@@ -322,21 +308,6 @@ define i32 @func0000000000000008(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, 80
   %2 = lshr i64 %1, 20
-  %3 = trunc i64 %2 to i32
-  ret i32 %3
-}
-
-; 5 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; linux/optimized/intel_pstate.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i64 %0) #0 {
-entry:
-  %1 = mul nsw i64 %0, 24
-  %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }

@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a3, a1
 	li	a4, 32
 	li	a2, 1
@@ -7,12 +7,21 @@ func000000000000004c:                   # @func000000000000004c
 .LBB0_2:                                # %entry
 	or	a0, a0, a2
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	sext.w	a3, a1
 	li	a4, 32
 	li	a2, 1
 	bgeu	a3, a4, .LBB1_2
 	sllw	a2, a2, a1
 .LBB1_2:                                # %entry
+	or	a0, a0, a2
+	ret
+func00000000000000a8:                   # @func00000000000000a8
+	sext.w	a3, a1
+	li	a4, 32
+	li	a2, 1
+	bgeu	a3, a4, .LBB2_2
+	sllw	a2, a2, a1
+.LBB2_2:                                # %entry
 	or	a0, a0, a2
 	ret

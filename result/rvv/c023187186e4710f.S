@@ -1,67 +1,60 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v10
 	vmsltu.vv	v14, v8, v12
 	vmslt.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v8, v12
 	vmsltu.vv	v14, v10, v12
 	vmsleu.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000049:                   # @func0000000000000049
+func0000000000000089:                   # @func0000000000000089
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v10
 	vmsltu.vv	v14, v8, v12
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v10
 	vmsleu.vv	v14, v8, v12
 	vmsleu.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000167:                   # @func0000000000000167
+func00000000000004c7:                   # @func00000000000004c7
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v8
 	vmslt.vv	v14, v10, v12
 	vmsle.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
 	ret
-func000000000000017b:                   # @func000000000000017b
+func00000000000004eb:                   # @func00000000000004eb
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v10
 	vmsle.vv	v14, v8, v12
 	vmsle.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func000000000000016b:                   # @func000000000000016b
+func00000000000004cb:                   # @func00000000000004cb
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v10, v12
 	vmslt.vv	v14, v8, v12
 	vmsle.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000169:                   # @func0000000000000169
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v12, v10, v12
-	vmslt.vv	v14, v8, v12
-	vmsleu.vv	v12, v10, v8
-	vmand.mm	v0, v12, v14
-	ret
-func000000000000006b:                   # @func000000000000006b
+func00000000000000cb:                   # @func00000000000000cb
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v10
 	vmslt.vv	v14, v8, v12
 	vmsle.vv	v12, v10, v8
 	vmand.mm	v0, v12, v14
 	ret
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v8
 	vmsleu.vv	v14, v10, v12

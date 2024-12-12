@@ -1,16 +1,16 @@
 
-%"class.absl::debian2::string_view.2486695" = type { ptr, i64 }
-%struct.TCGArgConstraint.2593567 = type <{ i40, i32 }>
-%"class.llvm::SDUse.3133248" = type { %"class.llvm::SDValue.3133249", ptr, ptr, ptr }
-%"class.llvm::SDValue.3133249" = type <{ ptr, i32, [4 x i8] }>
+%"class.absl::debian2::string_view.2602139" = type { ptr, i64 }
+%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%"struct.std::pair.1196.3326030" = type { %"class.llvm::SDValue.3325927", ptr }
+%"class.llvm::SDValue.3325927" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(ptr %0, i8 %1) #0 {
+define ptr @func00000000000000bf(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"class.absl::debian2::string_view.2486695", ptr %0, i64 %2
+  %3 = getelementptr %"class.absl::debian2::string_view.2602139", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -760
   ret ptr %4
 }
@@ -33,10 +33,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000b2(ptr %0, i8 %1) #0 {
+define ptr @func00000000000000b3(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %struct.TCGArgConstraint.2593567, ptr %0, i64 %2
+  %3 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -568
   ret ptr %4
 }
@@ -44,11 +44,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"class.llvm::SDUse.3133248", ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1272
+  %3 = getelementptr %"struct.std::pair.1196.3326030", ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -3136
   ret ptr %4
 }
 
@@ -57,7 +57,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2

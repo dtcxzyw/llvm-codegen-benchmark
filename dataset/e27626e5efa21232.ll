@@ -17,7 +17,24 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; boost/optimized/alloc_lib.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = xor i1 %2, true
+  %4 = icmp ne i32 %1, 0
+  %5 = or i1 %4, %3
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -30,23 +47,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp sgt i32 %1, 4
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 5 occurrences:
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; llvm/optimized/SemaExprObjC.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = icmp ne i32 %1, 0
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -62,18 +63,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; llvm/optimized/DWARFVerifier.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = xor i1 %2, true
-  %4 = icmp ult i32 %1, -4
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -83,7 +72,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp ugt i32 %1, 31
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

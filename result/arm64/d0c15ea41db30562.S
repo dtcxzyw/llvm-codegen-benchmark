@@ -1,14 +1,9 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	uaddw2	v3.4s, v3.4s, v4.8h
-	uaddw	v2.4s, v2.4s, v4.4h
-	ucvtf	v3.4s, v3.4s
-	ucvtf	v2.4s, v2.4s
-	fmul	v1.4s, v3.4s, v1.4s
-	fmov	v3.4s, #3.00000000
-	fmul	v0.4s, v2.4s, v0.4s
-	fdiv	v1.4s, v1.4s, v3.4s
-	fdiv	v0.4s, v0.4s, v3.4s
+	add	w8, w0, w1, uxtb
+	ucvtf	s1, w8
+	fmul	s0, s0, s1
+	fmov	s1, #3.00000000
+	fdiv	s0, s0, s1
 	ret
                                         // -- End function

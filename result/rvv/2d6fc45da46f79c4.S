@@ -1,7 +1,7 @@
 func0000000000000029:                   # @func0000000000000029
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	vmul.vv	v10, v12, v10
+	vmul.vv	v10, v10, v12
 	vsra.vi	v12, v10, 31
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v10, v10, v12
@@ -23,7 +23,7 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, 2
-	vmul.vv	v10, v12, v10
+	vmul.vv	v10, v10, v12
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1

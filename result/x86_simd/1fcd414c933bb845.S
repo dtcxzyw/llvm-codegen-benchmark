@@ -71,26 +71,20 @@ func0000000000000001:                   # @func0000000000000001
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	4294901760                      # 0xffff0000
-func000000000000000e:                   # @func000000000000000e
-	vpslld	$16, %ymm0, %ymm0
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI5_0:
 	.long	124                             # 0x7c
-.LCPI5_1:
+.LCPI4_1:
 	.long	4294967168                      # 0xffffff80
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$2, %ymm0, %ymm0
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
-	vpandd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI6_0:
+.LCPI5_0:
 	.long	56                              # 0x38
-.LCPI6_1:
+.LCPI5_1:
 	.long	4294967232                      # 0xffffffc0
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$3, %ymm0, %ymm0
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
-	vpandd	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
 	retq

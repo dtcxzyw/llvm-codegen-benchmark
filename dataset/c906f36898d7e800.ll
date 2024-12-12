@@ -1,5 +1,5 @@
 
-; 197 occurrences:
+; 183 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMap.c.ll
@@ -32,20 +32,6 @@
 ; hermes/optimized/JSProxy.cpp.ll
 ; hyperscan/optimized/ng_limex.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
-; icu/optimized/anytrans.ll
-; icu/optimized/datamap.ll
-; icu/optimized/derb.ll
-; icu/optimized/emojiprops.ll
-; icu/optimized/filterednormalizer2.ll
-; icu/optimized/messagepattern.ll
-; icu/optimized/msgfmt.ll
-; icu/optimized/name2uni.ll
-; icu/optimized/smpdtfmt.ll
-; icu/optimized/translit.ll
-; icu/optimized/uconv.ll
-; icu/optimized/uniset_closure.ll
-; icu/optimized/uts46.ll
-; icu/optimized/wrtxml.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/ds.ll
@@ -56,7 +42,6 @@
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/sch_generic.ll
-; linux/optimized/spectmgmt.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/trace_events.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -193,6 +178,7 @@
 ; openmpi/optimized/mca_base_pvar.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_object_handlers.ll
+; postgres/optimized/jsonfuncs.ll
 ; ruby/optimized/eval.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
@@ -216,17 +202,6 @@ entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, ptr null, ptr %0
   ret ptr %3
-}
-
-; 1 occurrences:
-; linux/optimized/maple_tree.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 3
-  %4 = select i1 %3, ptr %0, ptr null
-  ret ptr %4
 }
 
 attributes #0 = { nounwind }

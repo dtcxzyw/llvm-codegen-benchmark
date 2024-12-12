@@ -1,66 +1,28 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	usra	v1.2d, v1.2d, #63
-	usra	v0.2d, v0.2d, #63
-	ushr	v2.2d, v2.2d, #1
-	ushr	v3.2d, v3.2d, #1
-	sshr	v0.2d, v0.2d, #1
-	sshr	v1.2d, v1.2d, #1
-	cmgt	v1.2d, v1.2d, v3.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x0, x0, lsr #63
+	asr	x8, x8, #1
+	cmp	x8, x1, lsr #1
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	sshr	v0.2d, v0.2d, #3
-	sshr	v1.2d, v1.2d, #3
-	mov	x8, #-3689348814741910324       // =0xcccccccccccccccc
-	movk	x8, #52429
-	ushr	v2.2d, v2.2d, #62
-	ushr	v3.2d, v3.2d, #62
-	fmov	x9, d0
-	fmov	x11, d1
-	mov	x10, v0.d[1]
-	mov	x12, v1.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d0, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v0.d[1], x10
-	mov	v1.d[1], x8
-	cmhi	v0.2d, v0.2d, v2.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #3
+	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
+	movk	x9, #52429
+	mul	x8, x8, x9
+	cmp	x8, x1, lsr #62
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	sshr	v0.2d, v0.2d, #2
-	sshr	v1.2d, v1.2d, #2
-	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
-	movk	x8, #43691
-	ushr	v2.2d, v2.2d, #1
-	ushr	v3.2d, v3.2d, #1
-	fmov	x9, d0
-	fmov	x11, d1
-	mov	x10, v0.d[1]
-	mov	x12, v1.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d0, x9
-	mul	x8, x12, x8
-	fmov	d1, x11
-	mov	v0.d[1], x10
-	mov	v1.d[1], x8
-	cmhi	v0.2d, v2.2d, v0.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #2
+	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	movk	x9, #43691
+	mul	x8, x8, x9
+	cmp	x8, x1, lsr #1
+	cset	w0, lo
 	ret
                                         // -- End function

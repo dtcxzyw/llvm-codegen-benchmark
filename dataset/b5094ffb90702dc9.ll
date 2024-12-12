@@ -7,7 +7,7 @@
 define float @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = uitofp i64 %3 to float
   ret float %4
 }

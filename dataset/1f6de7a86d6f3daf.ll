@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000784(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = sub i64 %0, %3
@@ -16,7 +16,7 @@ entry:
 ; coreutils-rs/optimized/1si88ckqec3ipkyo.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %0
   %4 = sub i64 -2, %1
@@ -24,7 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -50,12 +50,24 @@ entry:
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %0
   %4 = sub i64 0, %1
   %5 = icmp eq i64 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %2, %0
+  %4 = sub i64 -3, %1
+  %5 = icmp ugt i64 %3, %4
   ret i1 %5
 }
 

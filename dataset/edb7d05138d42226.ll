@@ -22,9 +22,8 @@ entry:
   ret i16 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; linux/optimized/e1000_hw.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
@@ -36,6 +35,8 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; oiio/optimized/formatspec.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll

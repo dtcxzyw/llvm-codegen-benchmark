@@ -1,9 +1,9 @@
-func000000000000036c:                   # @func000000000000036c
+func0000000000000acc:                   # @func0000000000000acc
 	movswl	%si, %eax
 	addl	%eax, %edx
-	cmpl	%edi, %edx
-	setle	%cl
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%edx, %edi
+	setge	%cl
+	cmpl	%eax, %edi
+	setl	%al
 	orb	%cl, %al
 	retq

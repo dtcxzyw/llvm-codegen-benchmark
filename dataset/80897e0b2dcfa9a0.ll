@@ -4,7 +4,7 @@
 ; curl/optimized/libcurl_la-mime.ll
 ; openusd/optimized/rotation.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(ptr %0, i32 %1, ptr %2) #0 {
+define i32 @func0000000000000021(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %0, null

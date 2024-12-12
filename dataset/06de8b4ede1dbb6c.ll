@@ -51,10 +51,9 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_border.ll
+; lvgl/optimized/lv_label.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/COBJMeshFileLoader.cpp.ll
-; minetest/optimized/COpenGLExtensionHandler.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -115,6 +114,7 @@
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
+; wireshark/optimized/packet-wtls.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -124,16 +124,39 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; php/optimized/zend_jit.ll
-; raylib/optimized/raudio.c.ll
-; wireshark/optimized/packet-iec104.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -18
   %4 = icmp ult i8 %3, 6
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 3 occurrences:
+; icu/optimized/decNumber.ll
+; linux/optimized/cls_api.ll
+; lvgl/optimized/lv_flex.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 1
+  %.not = icmp eq i8 %3, 0
+  %4 = select i1 %.not, i32 %1, i32 %0
+  ret i32 %4
+}
+
+; 3 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; wireshark/optimized/packet-iec104.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 126
+  %4 = icmp samesign ult i8 %3, 70
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

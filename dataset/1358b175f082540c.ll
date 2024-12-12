@@ -1,8 +1,10 @@
 
-; 370 occurrences:
+; 366 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/pdrTsim.c.ll
+; boost/optimized/operations.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/multi.c.ll
@@ -68,7 +70,6 @@
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/pid_namespace.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sme.ll
 ; linux/optimized/tg3.ll
@@ -168,7 +169,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -186,8 +186,6 @@
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgsvj0.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -257,7 +255,6 @@
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/xlogreader.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/nbd_client.c.ll
 ; qemu/optimized/scsi_pr-manager-helper.c.ll
@@ -298,7 +295,6 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/ql_dsp_macc.ll
 ; yosys/optimized/simplify.ll
@@ -374,46 +370,25 @@
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 22, i32 23
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 68 occurrences:
+; 38 occurrences:
 ; assimp/optimized/clipper.cpp.ll
-; clamav/optimized/pdf.c.ll
-; flac/optimized/encode.c.ll
 ; git/optimized/bundle.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/umutablecptrie.ll
-; icu/optimized/wrtjava.ll
-; libjpeg-turbo/optimized/jcmainct.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; linux/optimized/e100.ll
-; linux/optimized/e1000_main.ll
-; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/insn-eval.ll
-; linux/optimized/reg.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/BuildLibCalls.cpp.ll
-; llvm/optimized/CallEvent.cpp.ll
-; llvm/optimized/ExprEngineCXX.cpp.ll
-; llvm/optimized/PPDirectives.cpp.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVOptWInstrs.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
-; opencv/optimized/contours_new.cpp.ll
-; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
 ; openjdk/optimized/c1_FrameMap_x86.ll
 ; openjdk/optimized/compile.ll
@@ -425,7 +400,6 @@ entry:
 ; openjdk/optimized/upcallLinker_x86_64.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; openssl/optimized/curve448_internal_test-bin-curve448_internal_test.ll
-; php/optimized/exec.ll
 ; postgres/optimized/nbtpage.ll
 ; postgres/optimized/network.ll
 ; postgres/optimized/wchar.ll
@@ -436,22 +410,14 @@ entry:
 ; ruby/optimized/regparse.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Undriven.cpp.ll
-; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/packet-ansi_a.c.ll
-; wireshark/optimized/packet-bt-dht.c.ll
-; wireshark/optimized/packet-h223.c.ll
-; wireshark/optimized/packet-ieee1722.c.ll
 ; wireshark/optimized/packet-metamako.c.ll
-; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
-; wireshark/optimized/packet-tls.c.ll
-; wireshark/optimized/pcapng.c.ll
 ; z3/optimized/sat_parallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 256, i32 128
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ult i32 %0, %2
   ret i1 %3
 }
 
@@ -495,7 +461,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 2
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -556,62 +522,35 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 1
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 46 occurrences:
+; 19 occurrences:
 ; brotli/optimized/encode.c.ll
-; clamav/optimized/arcread.cpp.ll
-; clamav/optimized/pdf.c.ll
-; cmake/optimized/json_reader.cpp.ll
 ; cpython/optimized/ast_unparse.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; icu/optimized/ucptrie.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
-; linux/optimized/e100.ll
 ; linux/optimized/intel_fbc.ll
-; linux/optimized/reg.ll
-; linux/optimized/scsiglue.ll
-; linux/optimized/tg3.ll
 ; linux/optimized/vlv_dsi_pll.ll
-; linux/optimized/xhci.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVLegalizerInfo.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/UnixAPIChecker.cpp.ll
-; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openjdk/optimized/loopTransform.ll
-; openjdk/optimized/machnode.ll
-; php/optimized/pcre2_compile.ll
-; php/optimized/zend_compile.ll
 ; postgres/optimized/network.ll
-; postgres/optimized/pg_dump.ll
-; postgres/optimized/wait_error.ll
-; postgres/optimized/wait_error_shlib.ll
-; postgres/optimized/wait_error_srv.ll
-; proj/optimized/geodesic.c.ll
-; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/tcg-op-gvec.c.ll
 ; ruby/optimized/time.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/TimestampConversion.cpp.ll
-; wireshark/optimized/packet-gsm_a_bssmap.c.ll
-; xgboost/optimized/context.cc.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 59
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -642,40 +581,115 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 32, i32 48
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
+; 36 occurrences:
+; clamav/optimized/pdf.c.ll
+; flac/optimized/encode.c.ll
+; icu/optimized/wrtjava.ll
+; libjpeg-turbo/optimized/jcmainct.c.ll
+; linux/optimized/e100.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/g4x_hdmi.ll
+; linux/optimized/reg.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/BuildLibCalls.cpp.ll
+; llvm/optimized/CallEvent.cpp.ll
+; llvm/optimized/ExprEngineCXX.cpp.ll
+; llvm/optimized/PPDirectives.cpp.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVOptWInstrs.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; opencv/optimized/contours_new.cpp.ll
+; openjdk/optimized/ad_x86.ll
+; openjdk/optimized/barrierSetAssembler_x86.ll
+; openjdk/optimized/c1_FrameMap_x86.ll
+; openjdk/optimized/foreignGlobals.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; openjdk/optimized/xBarrierSetAssembler_x86.ll
+; php/optimized/exec.ll
+; wireshark/optimized/dot11decrypt.c.ll
+; wireshark/optimized/packet-ansi_a.c.ll
+; wireshark/optimized/packet-bt-dht.c.ll
+; wireshark/optimized/packet-h223.c.ll
+; wireshark/optimized/packet-ieee1722.c.ll
+; wireshark/optimized/packet-metamako.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; wireshark/optimized/packet-tls.c.ll
+; wireshark/optimized/pcapng.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 50, i32 200
+  %3 = icmp ult i32 %0, %2
+  ret i1 %3
+}
+
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/reg.ll
-; llvm/optimized/AtomicExpandPass.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 5
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 27 occurrences:
+; clamav/optimized/arcread.cpp.ll
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/json_reader.cpp.ll
+; icu/optimized/ucptrie.ll
+; linux/optimized/e100.ll
+; linux/optimized/reg.ll
+; linux/optimized/tg3.ll
+; linux/optimized/xhci.ll
+; llvm/optimized/MDBuilder.cpp.ll
+; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
+; llvm/optimized/RISCVLegalizerInfo.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
+; llvm/optimized/UnixAPIChecker.cpp.ll
+; llvm/optimized/WinCOFFObjectWriter.cpp.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; openjdk/optimized/loopTransform.ll
+; openjdk/optimized/machnode.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/zend_compile.ll
+; postgres/optimized/pg_dump.ll
+; proj/optimized/geodesic.c.ll
+; qemu/optimized/hw_pci_pci.c.ll
+; qemu/optimized/tcg-op-gvec.c.ll
+; wireshark/optimized/packet-gsm_a_bssmap.c.ll
+; xgboost/optimized/context.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 256, i32 4096
+  %3 = icmp ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 5 occurrences:
 ; cvc5/optimized/instantiation_engine.cpp.ll
-; linux/optimized/intel_dpll_mgr.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openjdk/optimized/barrierSetC2.ll
 ; openjdk/optimized/jvmciCodeInstaller_x86.ll
-; openjdk/optimized/peephole_x86_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 336, i32 592
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp samesign uge i32 %0, %2
   ret i1 %3
 }
 
@@ -688,7 +702,31 @@ entry:
 define i1 @func000000000000000b(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 4, i32 5
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
+  ret i1 %3
+}
+
+; 5 occurrences:
+; linux/optimized/intel_dpll_mgr.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; openjdk/optimized/barrierSetC2.ll
+; openjdk/optimized/peephole_x86_64.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 64, i32 32
+  %3 = icmp uge i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/AtomicExpandPass.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 16, i32 8
+  %3 = icmp samesign ule i32 %0, %2
   ret i1 %3
 }
 
@@ -698,7 +736,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 12, i32 8
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 

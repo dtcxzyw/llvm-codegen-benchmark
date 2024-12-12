@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x0010000000000000              # double 2.2250738585072014E-308
-func00000000000003c2:                   # @func00000000000003c2
+func00000000000006c2:                   # @func00000000000006c2
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
@@ -9,7 +9,7 @@ func00000000000003c2:                   # @func00000000000003c2
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000003c8:                   # @func00000000000003c8
+func00000000000006c8:                   # @func00000000000006c8
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl

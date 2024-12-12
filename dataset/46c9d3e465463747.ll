@@ -11,7 +11,7 @@ define i32 @func0000000000000015(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = select i1 %1, i32 1, i32 %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sub nsw i32 24, %5
   ret i32 %6
 }

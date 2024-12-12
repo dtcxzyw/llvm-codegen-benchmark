@@ -1,6 +1,8 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/add-interactive.ll
@@ -36,7 +38,6 @@
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; wireshark/optimized/packet-epl.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll

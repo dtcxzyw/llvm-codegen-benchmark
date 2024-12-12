@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000030:                   # @func0000000000000030
 	andi	a2, a2, 255
-	addi	a2, a2, -20
+	addi	a2, a2, -22
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -37,6 +37,12 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a2, a2, 56
 	srai	a2, a2, 56
 	slti	a2, a2, 0
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000050:                   # @func0000000000000050
+	andi	a2, a2, 255
+	sltiu	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

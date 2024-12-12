@@ -1,12 +1,10 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/page_io.ll

@@ -1,4 +1,4 @@
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	leal	8(%rsi), %ecx
 	testl	%edx, %edx
 	cmovlel	%esi, %ecx
@@ -6,7 +6,7 @@ func0000000000000069:                   # @func0000000000000069
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func00000000000000e3:                   # @func00000000000000e3
+func00000000000001e3:                   # @func00000000000001e3
 	leal	317(%rsi), %ecx
 	cmpl	$701, %edx                      # imm = 0x2BD
 	cmovbl	%esi, %ecx
@@ -14,7 +14,7 @@ func00000000000000e3:                   # @func00000000000000e3
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000e1:                   # @func00000000000000e1
 	leal	-400(%rsi), %ecx
 	cmpl	$701, %edx                      # imm = 0x2BD
 	cmovbl	%esi, %ecx
@@ -22,7 +22,7 @@ func0000000000000061:                   # @func0000000000000061
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	leal	4(%rsi), %ecx
 	cmpl	$2, %edx
 	cmovnel	%esi, %ecx
@@ -30,7 +30,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	leal	10(%rsi), %ecx
 	cmpl	$1677721600, %edx               # imm = 0x64000000
 	cmovnel	%esi, %ecx

@@ -1,16 +1,16 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950" = type { %"class.std::shared_ptr.2.2496938", i8, %"class.std::shared_ptr.2496935", i64, i64, i64, %"class.std::shared_ptr.372.2496951" }
-%"class.std::shared_ptr.2.2496938" = type { %"class.std::__shared_ptr.3.2496939" }
-%"class.std::__shared_ptr.3.2496939" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::__shared_count.2496937" = type { ptr }
-%"class.std::shared_ptr.2496935" = type { %"class.std::__shared_ptr.2496936" }
-%"class.std::__shared_ptr.2496936" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::shared_ptr.372.2496951" = type { %"class.std::__shared_ptr.373.2496952" }
-%"class.std::__shared_ptr.373.2496952" = type { ptr, %"class.std::__shared_count.2496937" }
-%"struct.cv::FStructData.3550015" = type { %"class.std::__cxx11::basic_string.3550010", i32, i32 }
-%"class.std::__cxx11::basic_string.3550010" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011", i64, %union.anon.3550012 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3550011" = type { ptr }
-%union.anon.3550012 = type { i64, [8 x i8] }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
+%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
+%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::__shared_count.2612196" = type { ptr }
+%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
+%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
+%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
+%"struct.cv::FStructData.3730757" = type { %"class.std::__cxx11::basic_string.3730752", i32, i32 }
+%"class.std::__cxx11::basic_string.3730752" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753", i64, %union.anon.3730754 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753" = type { ptr }
+%union.anon.3730754 = type { i64, [8 x i8] }
 
 ; 6 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
@@ -20,9 +20,9 @@
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950", ptr %0, i64 %1
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -80
   %5 = getelementptr i8, ptr %4, i64 %2
   ret ptr %5
@@ -36,7 +36,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950", ptr %0, i64 %1
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -80
   %5 = getelementptr i8, ptr %4, i64 %2
   ret ptr %5
@@ -49,7 +49,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.cv::FStructData.3550015", ptr %3, i64 %2
+  %4 = getelementptr %"struct.cv::FStructData.3730757", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -80
   ret ptr %5
 }

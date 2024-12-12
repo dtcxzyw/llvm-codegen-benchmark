@@ -15,6 +15,6 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000018:                   # @func0000000000000018
 	fcvt.s.wu	fa5, a1
-	feq.s	a1, fa5, fa0
+	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

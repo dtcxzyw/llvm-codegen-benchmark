@@ -17,12 +17,10 @@ func0000000000000001:                   # @func0000000000000001
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq
 .LCPI2_0:
-	.long	31                              # 0x1f
-.LCPI2_1:
 	.long	1                               # 0x1
 func0000000000000002:                   # @func0000000000000002
-	vpxord	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpxor	%ymm1, %ymm0, %ymm0
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq

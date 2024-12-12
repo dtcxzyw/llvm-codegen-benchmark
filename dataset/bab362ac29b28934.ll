@@ -1,5 +1,5 @@
 
-; 226 occurrences:
+; 237 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -7,6 +7,16 @@
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -85,6 +95,7 @@
 ; ipopt/optimized/IpCGPenaltyCq.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -93,7 +104,6 @@
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -191,6 +201,7 @@
 ; quantlib/optimized/fftvanillaengine.ll
 ; quantlib/optimized/fftvariancegammaengine.ll
 ; quantlib/optimized/garch.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gausslobattointegral.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/hestonrndcalculator.ll

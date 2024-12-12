@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
@@ -24,7 +24,6 @@
 ; openjdk/optimized/signals_posix.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; pocketpy/optimized/lexer.cpp.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/proj_strtod.cpp.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
@@ -41,7 +40,7 @@
 ; wireshark/optimized/packet-dbus.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -1

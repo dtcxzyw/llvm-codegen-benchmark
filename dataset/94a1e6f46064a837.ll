@@ -213,7 +213,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = add nsw i32 %3, -48
@@ -227,7 +227,7 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = add nsw i32 %3, -528

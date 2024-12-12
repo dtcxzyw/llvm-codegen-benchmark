@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/hid-lg4ff.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

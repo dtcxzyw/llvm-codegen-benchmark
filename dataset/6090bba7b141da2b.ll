@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/manager.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -18,9 +18,10 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
-; openssl/optimized/algorithmid_test-bin-algorithmid_test.ll
 ; php/optimized/html.ll
 ; postgres/optimized/execExprInterp.ll
 ; qemu/optimized/ui_ui-hmp-cmds.c.ll
@@ -70,6 +71,8 @@ entry:
 ; linux/optimized/blk-map.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lbaselib.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -94,11 +97,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
-; openssl/optimized/libcrypto-lib-dh_asn1.ll
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
-; openssl/optimized/libcrypto-shlib-dh_asn1.ll
 ; php/optimized/interval.ll
 ; php/optimized/pack.ll
 ; postgres/optimized/preproc.ll
@@ -400,7 +401,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -409,7 +410,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/oracle_compat.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
 ; qemu/optimized/ui_vnc-clipboard.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -463,7 +463,7 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -485,13 +485,37 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; icu/optimized/hebrwcal.ll
+; postgres/optimized/oracle_compat.ll
+; wireshark/optimized/packet-giop.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ugt i32 %2, 5
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-resp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ult i32 %2, 100
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; cpython/optimized/assemble.ll
 ; graphviz/optimized/gvrender.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, 1

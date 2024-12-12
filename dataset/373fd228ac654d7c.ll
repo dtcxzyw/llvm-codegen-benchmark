@@ -1,5 +1,5 @@
 
-; 257 occurrences:
+; 256 occurrences:
 ; abc/optimized/cutMan.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; annoy/optimized/annoymodule.ll
@@ -7,6 +7,7 @@
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
+; boost/optimized/get_clusters.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -32,7 +33,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -51,16 +51,14 @@
 ; darktable/optimized/introspection_gamma.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
+; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
-; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; darktable/optimized/navigation.c.ll
 ; graphviz/optimized/stress.c.ll
@@ -154,11 +152,6 @@
 ; mitsuba3/optimized/spot.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/block.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -257,6 +250,12 @@
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4j81zvwpo3may7k9k6shk9eiu.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

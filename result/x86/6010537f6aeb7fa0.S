@@ -1,15 +1,15 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
+	cmpq	%rax, %rdi
+	setg	%cl
 	testq	%rdi, %rdi
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setle	%cl
+	cmpq	%rax, %rdi
+	setge	%cl
 	testq	%rdi, %rdi
 	sets	%al
 	orb	%cl, %al

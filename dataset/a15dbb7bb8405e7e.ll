@@ -21,15 +21,4 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; opencv/optimized/color_yuv.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i8 %0) #0 {
-entry:
-  %1 = xor i8 %0, 1
-  %2 = zext nneg i8 %1 to i32
-  %3 = sub nuw nsw i32 2, %2
-  ret i32 %3
-}
-
 attributes #0 = { nounwind }

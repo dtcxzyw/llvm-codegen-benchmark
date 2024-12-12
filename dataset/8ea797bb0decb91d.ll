@@ -14,7 +14,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -33,11 +33,12 @@ entry:
 ; diesel-rs/optimized/2phdoksmzkii6al2.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/wal_manager.cc.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -97,7 +98,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add i64 %3, -2
   ret i64 %4
 }

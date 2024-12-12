@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 9 occurrences:
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
@@ -9,10 +9,6 @@
 ; ruby/optimized/util.ll
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
-; wireshark/optimized/packet-ppi-antenna.c.ll
-; wireshark/optimized/packet-ppi-gps.c.ll
-; wireshark/optimized/packet-ppi-sensor.c.ll
-; wireshark/optimized/packet-ppi-vector.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -23,7 +19,8 @@ entry:
   ret i32 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -55,10 +52,25 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i32 @func0000000000000031(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16, i32 0
-  %4 = icmp ugt i32 %1, 255
+  %4 = icmp samesign ugt i32 %1, 255
+  %5 = select i1 %4, i32 %0, i32 %3
+  %6 = or disjoint i32 %5, 4
+  ret i32 %6
+}
+
+; 4 occurrences:
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 3, i32 2
+  %4 = icmp samesign ult i32 %1, 4194304
   %5 = select i1 %4, i32 %0, i32 %3
   %6 = or disjoint i32 %5, 4
   ret i32 %6

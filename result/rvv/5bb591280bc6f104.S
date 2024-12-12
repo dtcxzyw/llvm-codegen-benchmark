@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	lui	a0, 65536
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 8, v0.t
@@ -6,7 +6,7 @@ func0000000000000034:                   # @func0000000000000034
 	vor.vi	v10, v10, 4, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 8, v0.t
 	vmseq.vi	v0, v8, 0
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vi	v10, v10, 10, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
@@ -29,7 +29,7 @@ func0000000000000008:                   # @func0000000000000008
 	vor.vi	v10, v10, 2, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
@@ -48,14 +48,14 @@ func000000000000000a:                   # @func000000000000000a
 	vor.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 8, v0.t
 	vmsgtu.vi	v0, v8, 15
 	vor.vi	v10, v10, 4, v0.t
 	vmv.v.v	v8, v10
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
@@ -64,7 +64,16 @@ func000000000000003a:                   # @func000000000000003a
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func0000000000000068:                   # @func0000000000000068
+	li	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vor.vx	v10, v10, a0, v0.t
+	li	a0, 255
+	vmsgtu.vx	v0, v8, a0
+	vor.vi	v10, v10, 8, v0.t
+	vmv.v.v	v8, v10
+	ret
+func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 8, v0.t
 	vmsgt.vi	v0, v8, 0

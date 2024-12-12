@@ -22,9 +22,3 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [4,4,4,4,4,4,4,4]
 	retq
-.LCPI3_0:
-	.long	25                              # 0x19
-func0000000000000008:                   # @func0000000000000008
-	vpcmpnleud	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [25,25,25,25,25,25,25,25]
-	retq

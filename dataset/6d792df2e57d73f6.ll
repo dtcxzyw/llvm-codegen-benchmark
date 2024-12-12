@@ -5,7 +5,7 @@
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, float %1) #0 {
+define i1 @func0000000000000202(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 1.000000e+00
   %3 = icmp eq ptr %0, null
@@ -28,7 +28,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(ptr %0, float %1) #0 {
+define i1 @func0000000000000282(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 0.000000e+00
   %3 = icmp eq ptr %0, null
@@ -40,7 +40,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, float %1) #0 {
+define i1 @func0000000000000082(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp eq ptr %0, null

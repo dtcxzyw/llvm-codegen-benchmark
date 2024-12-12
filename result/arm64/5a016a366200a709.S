@@ -7,7 +7,7 @@ func0000000000000080:                   // @func0000000000000080
 	add	x0, x8, #7
 	ret
                                         // -- End function
-func00000000000000ca:                   // @func00000000000000ca
+func00000000000000ef:                   // @func00000000000000ef
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	w8, #46

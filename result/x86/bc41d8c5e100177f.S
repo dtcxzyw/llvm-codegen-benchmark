@@ -4,7 +4,7 @@ func0000000000000047:                   # @func0000000000000047
 	setae	%al
 	leal	1(%rdi,%rax,2), %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func00000000000000c2:                   # @func00000000000000c2
 	xorl	%eax, %eax
 	cmpl	$5, %esi
 	setae	%al
@@ -66,10 +66,15 @@ func0000000000000009:                   # @func0000000000000009
 	sete	%al
 	leal	-40(%rdi,%rax,8), %eax
 	retq
-func0000000000000027:                   # @func0000000000000027
+func00000000000000a7:                   # @func00000000000000a7
 	movl	%edi, %eax
-	cmpl	$2, %esi
+	cmpl	$9, %esi
 	adcl	$1, %eax
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	cmpl	$65536, %esi                    # imm = 0x10000
+	sbbl	$0, %edi
+	leal	2(%rdi), %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
@@ -77,6 +82,12 @@ func000000000000000a:                   # @func000000000000000a
 	sete	%al
 	notl	%eax
 	addl	%edi, %eax
+	retq
+func0000000000000027:                   # @func0000000000000027
+	xorl	%eax, %eax
+	cmpl	$254, %esi
+	setae	%al
+	leal	1(%rdi,%rax,4), %eax
 	retq
 func0000000000000022:                   # @func0000000000000022
 	xorl	%eax, %eax

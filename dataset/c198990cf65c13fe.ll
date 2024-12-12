@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 146 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -16,6 +16,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/dsig.c.ll
@@ -74,7 +75,6 @@
 ; meshlab/optimized/io_bre.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -141,12 +141,16 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wolfssl/optimized/ecc.c.ll
 ; wolfssl/optimized/keys.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/ODITFWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr nusw [10 x ptr], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [10 x ptr], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -158,10 +162,10 @@ entry:
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
-  %3 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -189,43 +193,64 @@ entry:
   ret ptr %3
 }
 
-; 15 occurrences:
+; 8 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/abcExact.c.ll
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
 ; libquic/optimized/digest.cc.ll
 ; libquic/optimized/digest_test.cc.ll
-; llvm/optimized/blake3.c.ll
 ; node/optimized/libnode.node_http_parser.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; openvdb/optimized/VectorTransformer.cc.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
-  %3 = getelementptr nusw [16 x double], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [16 x double], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 7 occurrences:
-; abc/optimized/cutPre22.c.ll
+; 10 occurrences:
+; abc/optimized/abcExact.c.ll
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; llvm/optimized/blake3.c.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 5
+  %3 = getelementptr nusw [8192 x float], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 5 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/bonded.cpp.ll
-; llvm/optimized/blake3.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
-  %3 = getelementptr nusw [200 x float], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [200 x float], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 2 occurrences:
+; abc/optimized/cutPre22.c.ll
+; llvm/optimized/blake3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 1
+  %3 = getelementptr nusw [18 x i16], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

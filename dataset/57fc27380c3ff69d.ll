@@ -22,13 +22,12 @@ entry:
   ret i64 %4
 }
 
-; 81 occurrences:
+; 78 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; git/optimized/add-interactive.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; llvm/optimized/LoopPredication.cpp.ll
@@ -101,8 +100,6 @@ entry:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
@@ -126,10 +123,11 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/cmStandardLevelResolver.cxx.ll
 ; git/optimized/quote.ll
 ; llvm/optimized/MCCodeView.cpp.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, ptr %1, ptr %2) #0 {
 entry:

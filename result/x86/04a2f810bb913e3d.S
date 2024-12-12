@@ -24,12 +24,3 @@ func0000000000000002:                   # @func0000000000000002
 	subl	%edx, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movq	%rdi, %rax
-	shrq	$30, %rax
-	leal	511(%rax), %ecx
-	testl	%eax, %eax
-	cmovnsl	%eax, %ecx
-	andl	$-512, %ecx                     # imm = 0xFE00
-	subl	%ecx, %eax
-	retq

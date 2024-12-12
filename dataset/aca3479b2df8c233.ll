@@ -6,13 +6,13 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 168618
-  %7 = getelementptr nusw [32768 x i16], ptr %6, i64 0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 168618
+  %7 = getelementptr nusw nuw [32768 x i16], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

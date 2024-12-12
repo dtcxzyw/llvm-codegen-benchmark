@@ -2,16 +2,16 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 49824
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 49824
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; gromacs/optimized/binsearch.cpp.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
@@ -32,7 +32,6 @@ entry:
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/tuplesortvariants.ll
-; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
@@ -43,10 +42,9 @@ entry:
   ret ptr %5
 }
 
-; 74 occurrences:
+; 73 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcLatch.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -89,7 +87,6 @@ entry:
 ; abc/optimized/llb2Core.c.ll
 ; abc/optimized/llb3Nonlin.c.ll
 ; abc/optimized/llb4Cex.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/saigDup.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -105,6 +102,7 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/key_map.cc.ll
+; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/bzlib.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -119,18 +117,17 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 456
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 456
   %5 = getelementptr nusw i64, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/wlnRead.c.ll
-; clamav/optimized/bzlib.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
@@ -163,11 +160,11 @@ entry:
 ; postgres/optimized/execTuples.ll
 ; postgres/optimized/heaptuple.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 48
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 48
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
 }

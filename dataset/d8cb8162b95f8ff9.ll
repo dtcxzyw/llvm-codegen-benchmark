@@ -14,4 +14,14 @@ entry:
   ret i16 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_arc.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %.v = select i1 %0, i16 %1, i16 %2
+  %3 = add i16 %.v, 90
+  ret i16 %3
+}
+
 attributes #0 = { nounwind }

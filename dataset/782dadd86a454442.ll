@@ -13,9 +13,11 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; folly/optimized/Symbolizer.cpp.ll
@@ -28,6 +30,7 @@ entry:
 ; postgres/optimized/slru.ll
 ; postgres/optimized/xloginsert.ll
 ; redis/optimized/sort.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -46,14 +49,15 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/segment-map.c.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, -1
+  %2 = xor i64 %1, 63
   %3 = sub nsw i64 %2, %0
   ret i64 %3
 }

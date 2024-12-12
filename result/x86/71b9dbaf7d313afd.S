@@ -1,16 +1,10 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	movzwl	%si, %eax
 	addl	$-65, %eax
 	shlq	$5, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000003b:                   # @func000000000000003b
-	movzwl	%si, %eax
-	decl	%eax
-	leaq	(%rax,%rax,4), %rax
-	leaq	8(%rdi,%rax,8), %rax
-	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	movzwl	%si, %eax
 	decl	%eax
 	shlq	$4, %rax

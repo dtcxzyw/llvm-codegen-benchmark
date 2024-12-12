@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<8, 8>::type.2569890" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
 
 ; 13 occurrences:
 ; cpython/optimized/_datetimemodule.ll
@@ -24,7 +24,7 @@ entry:
   ret ptr %4
 }
 
-; 62 occurrences:
+; 66 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/cuddAddWalsh.c.ll
@@ -54,6 +54,10 @@ entry:
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
+; gromacs/optimized/anadih.cpp.ll
+; gromacs/optimized/gmx_sigeps.cpp.ll
+; gromacs/optimized/gmx_wham.cpp.ll
+; gromacs/optimized/xvgr.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/HashTable.cpp.ll
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
@@ -88,11 +92,11 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2569890"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -103,11 +107,11 @@ entry:
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [2 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

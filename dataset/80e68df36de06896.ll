@@ -1,10 +1,10 @@
 
 ; 33 occurrences:
 ; abc/optimized/satSolver2.c.ll
+; boost/optimized/src.ll
 ; clamav/optimized/hfsplus.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
-; cpython/optimized/ceval.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -119,6 +119,7 @@ entry:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/double-to-string.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/message.ll
 ; c3c/optimized/stringutils.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/LzmaDec.c.ll
@@ -143,10 +144,8 @@ entry:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd7.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -204,6 +203,7 @@ entry:
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; minetest/optimized/camera.cpp.ll
@@ -284,7 +284,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 34 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -310,6 +310,15 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -383,9 +392,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/uloc_tag.ll
 ; openblas/optimized/dtgsyl.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -514,19 +524,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; libwebp/optimized/demux.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %0, %1
-  %3 = add i32 %2, 2
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
 ; 5 occurrences:
 ; gromacs/optimized/dlasd7.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
@@ -538,6 +535,17 @@ define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = add nuw i32 %2, 2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; libwebp/optimized/demux.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %0, %1
+  %3 = add i32 %2, -10
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

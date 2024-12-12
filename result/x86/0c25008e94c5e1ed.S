@@ -1,46 +1,30 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	decq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%cl
 	cmpq	$-1, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	decq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
-	addq	$-36, %rsi
-	cmpq	%rdi, %rsi
-	setb	%cl
-	cmpq	$8192, %rdi                     # imm = 0x2000
-	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000310:                   # @func0000000000000310
-	addq	$-36, %rsi
-	cmpq	%rdi, %rsi
-	setb	%cl
-	cmpq	$8192, %rdi                     # imm = 0x2000
-	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	decq	%rsi
-	cmpq	%rdi, %rsi
-	seta	%cl
+	cmpq	%rsi, %rdi
+	setb	%cl
 	cmpq	$-1, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000228:                   # @func0000000000000228
+func0000000000000848:                   # @func0000000000000848
 	decq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%cl
 	cmpq	$8, %rdi
 	setb	%al

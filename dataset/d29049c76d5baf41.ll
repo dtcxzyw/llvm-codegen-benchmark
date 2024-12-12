@@ -19,7 +19,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %.neg = xor i32 %3, -1
-  %4 = add i32 %.neg, %0
+  %4 = add i32 %0, %.neg
   ret i32 %4
 }
 

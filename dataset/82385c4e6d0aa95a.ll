@@ -1,10 +1,14 @@
 
-; 5 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/x8pbloshhgr8d49.ll
 ; influxdb-rs/optimized/26y592k8de9dg2n1.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; wasmtime-rs/optimized/3yirtpiqdnll1kue.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -38,7 +42,7 @@ entry:
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000087(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000107(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = shl i64 %1, 3
@@ -51,7 +55,7 @@ entry:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000090(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 64
   %3 = shl i64 %1, 6
@@ -64,7 +68,7 @@ entry:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000091(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 64
   %3 = shl i64 %1, 3
@@ -76,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_randommodule.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c7(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000187(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 0
   %3 = shl i64 %1, 2

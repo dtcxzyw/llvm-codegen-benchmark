@@ -22,7 +22,7 @@ entry:
   ret float %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
@@ -33,6 +33,7 @@ entry:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; bullet3/optimized/btRigidBody.ll
 ; opencv/optimized/tflite_importer.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:

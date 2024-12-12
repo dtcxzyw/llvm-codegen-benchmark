@@ -28,13 +28,14 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 -5, i32 %1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/filter.ll
@@ -77,7 +78,7 @@ entry:
 define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smin.i32(i32 %1, i32 65535)
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -87,7 +88,7 @@ entry:
 define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smin.i32(i32 %1, i32 65535)
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -133,7 +134,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 128
   %3 = select i1 %2, i32 127, i32 %1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libwebp/optimized/histogram_enc.c.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -8,6 +8,7 @@
 ; opencv/optimized/kalman.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/tvl1_optical_flow.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

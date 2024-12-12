@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 41 occurrences:
 ; arrow/optimized/UriResolve.c.ll
 ; clamav/optimized/scanners.c.ll
 ; cpython/optimized/ceval_gil.ll
@@ -13,7 +13,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/regexec.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; libevent/optimized/http.c.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/hub.ll
@@ -41,10 +40,9 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; slurm/optimized/assoc_mgr.ll
-; slurm/optimized/pam_ses.ll
 ; slurm/optimized/trigger_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp ne i32 %2, 0
@@ -53,7 +51,8 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/sparring_partner.ll
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; git/optimized/bulk-checkin.ll
@@ -71,7 +70,7 @@ entry:
 ; wireshark/optimized/dfilter.c.ll
 ; z3/optimized/occf_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0
@@ -80,8 +79,9 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; bullet3/optimized/btSimulationIslandManager.ll
+; freetype/optimized/truetype.c.ll
 ; libquic/optimized/v3_pci.c.ll
 ; linux/optimized/act_api.ll
 ; linux/optimized/build_utility.ll
@@ -106,7 +106,7 @@ entry:
 ; redis/optimized/t_string.ll
 ; wireshark/optimized/packet-cpfi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -115,9 +115,10 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; chibicc/optimized/parse.ll
 ; libquic/optimized/ssl_cert.c.ll
+; linux/optimized/mpiutil.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -136,7 +137,7 @@ entry:
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0

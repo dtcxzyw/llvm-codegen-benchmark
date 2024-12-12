@@ -8,7 +8,7 @@
 ; oniguruma/optimized/regexec.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -44,7 +44,7 @@ entry:
 ; openusd/optimized/triRefinement.cpp.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -78,7 +78,7 @@ entry:
 ; openusd/optimized/triRefinement.cpp.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -88,18 +88,11 @@ entry:
   ret i1 %7
 }
 
-; 9 occurrences:
+; 2 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; gromacs/optimized/updategroupscog.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -160,13 +153,32 @@ entry:
 ; linux/optimized/tty_io.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 30
   %6 = ashr exact i64 %5, 32
   %7 = icmp eq i64 %6, %0
+  ret i1 %7
+}
+
+; 7 occurrences:
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = shl i64 %4, 32
+  %6 = ashr exact i64 %5, 32
+  %7 = icmp samesign ult i64 %6, %0
   ret i1 %7
 }
 
@@ -180,6 +192,19 @@ entry:
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
   %7 = icmp slt i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; postgres/optimized/tsvector_op.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = shl i64 %4, 30
+  %6 = ashr i64 %5, 32
+  %7 = icmp eq i64 %6, %0
   ret i1 %7
 }
 

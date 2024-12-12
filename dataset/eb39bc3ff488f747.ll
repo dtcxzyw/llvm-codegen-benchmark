@@ -3,10 +3,10 @@
 ; linux/optimized/xhci-ring.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -18,20 +18,19 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %4, i32 1, i32 %0
   ret i32 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 2 occurrences:
 ; jq/optimized/decNumber.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
   %5 = select i1 %4, i32 7, i32 %0
   ret i32 %5
 }
@@ -45,7 +44,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
   ret i32 %5
 }
@@ -53,11 +52,22 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/mcsheng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i32 0, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = icmp ult i32 %1, %3
+  %5 = select i1 %4, i32 -1, i32 %0
   ret i32 %5
 }
 

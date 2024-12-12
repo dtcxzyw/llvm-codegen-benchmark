@@ -4,9 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	subq	%rdi, %rsi
-	movq	%rsi, %rax
-	shlq	$8, %rax
-	subq	%rsi, %rax
+	leaq	(%rsi,%rsi,2), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	subq	%rdi, %rsi

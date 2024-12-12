@@ -11,8 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; opencv/optimized/slice_layer.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/DrawGlyphList.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000033(i32 %0, i32 %1) #0 {

@@ -49,18 +49,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/MCWin64EH.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 5
-  %3 = select i1 %2, i32 32, i32 0
-  %4 = shl nuw nsw i32 %0, 6
-  %5 = or disjoint i32 %3, %4
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; luajit/optimized/minilua.ll

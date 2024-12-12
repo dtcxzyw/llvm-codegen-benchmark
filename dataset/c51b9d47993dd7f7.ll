@@ -5,7 +5,7 @@
 ; spike/optimized/s_roundPackToUI32.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
   %3 = icmp eq i64 %2, 64
@@ -87,23 +87,11 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000981(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1048576
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i8 %0, 3
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2147483646
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ugt i8 %0, 1
   %5 = and i1 %4, %3
   ret i1 %5
 }

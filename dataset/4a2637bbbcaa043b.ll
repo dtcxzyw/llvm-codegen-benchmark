@@ -30,6 +30,7 @@
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/PPCaching.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/accum.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -37,47 +38,13 @@
 ; quickjs/optimized/quickjs.ll
 ; velox/optimized/Sequence.cpp.ll
 ; z3/optimized/grobner.cpp.ll
-; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = and i32 %3, 31
   %5 = icmp eq i32 %4, 0
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 4 occurrences:
-; linux/optimized/acpi_pm.ll
-; linux/optimized/ehci-pci.ll
-; linux/optimized/xhci-ring.ll
-; velox/optimized/Sequence.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 255
-  %4 = and i32 %1, 255
-  %5 = icmp ugt i32 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 7 occurrences:
-; abc/optimized/giaSatLE.c.ll
-; libwebp/optimized/predictor_enc.c.ll
-; linux/optimized/intel_crt.ll
-; linux/optimized/libata-core.ll
-; openmpi/optimized/btl_sm_component.ll
-; openmpi/optimized/btl_sm_send.ll
-; openmpi/optimized/btl_sm_sendi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = and i32 %1, 15
-  %5 = icmp ule i32 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -100,31 +67,56 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; abc/optimized/sbdWin.c.ll
-; linux/optimized/intel_overlay.ll
-; linux/optimized/xhci-ring.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; 1 occurrences:
+; llvm/optimized/TokenLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 536870911
-  %4 = and i32 %1, 536870911
-  %5 = icmp ult i32 %4, %3
+  %3 = and i32 %2, 2147483647
+  %4 = and i32 %1, 2147483647
+  %5 = icmp samesign uge i32 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
-; 1 occurrences:
-; llvm/optimized/TokenLexer.cpp.ll
+; 3 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; linux/optimized/intel_crt.ll
+; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 2147483647
-  %4 = and i32 %1, 2147483647
-  %5 = icmp uge i32 %4, %3
+  %3 = and i32 %2, 255
+  %4 = and i32 %1, 255
+  %5 = icmp samesign ule i32 %4, %3
   %6 = and i1 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/intel_overlay.ll
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = and i32 %1, 255
+  %5 = icmp samesign ult i32 %4, %3
+  %6 = and i1 %0, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; linux/optimized/acpi_pm.ll
+; linux/optimized/ehci-pci.ll
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 2047
+  %4 = and i32 %1, 2047
+  %5 = icmp samesign ugt i32 %4, %3
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

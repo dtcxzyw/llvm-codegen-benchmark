@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; openssl/optimized/libssl-lib-ssl3_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = zext nneg i32 %0 to i64
-  %4 = add nuw nsw i64 %3, %2
-  %5 = add nuw nsw i64 %4, 8
-  ret i64 %5
-}
-
 ; 107 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll

@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [66,66,66,66,66,66,66,66]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm2   # ymm2 = [553647102,553647102,553647102,553647102,553647102,553647102,553647102,553647102]
 	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	8192                            # 0x2000
@@ -25,5 +25,5 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1   # ymm1 = [32768,32768,32768,32768,32768,32768,32768,32768]
 	vmovdqa32	%ymm1, %ymm2 {%k1} {z}
 	vmovdqa32	%ymm2, %ymm1 {%k2}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

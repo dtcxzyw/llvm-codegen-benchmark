@@ -31,16 +31,3 @@ func0000000000000008:                   # @func0000000000000008
 	sete	%al
 	addl	%edi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	andl	$61440, %esi                    # imm = 0xF000
-	xorl	%eax, %eax
-	negw	%si
-	seto	%al
-	addl	%edi, %eax
-	retq
-func0000000000000023:                   # @func0000000000000023
-	movl	%edi, %eax
-	andl	$15, %esi
-	cmpw	$11, %si
-	adcl	$0, %eax
-	retq

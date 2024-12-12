@@ -1,11 +1,11 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	movl	%esi, %eax
 	leaq	(%rdi,%rax,4), %rcx
 	movabsq	$17179869180, %rax              # imm = 0x3FFFFFFFC
 	andq	%rdx, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
 	shlq	$4, %rax
 	addq	%rdi, %rax

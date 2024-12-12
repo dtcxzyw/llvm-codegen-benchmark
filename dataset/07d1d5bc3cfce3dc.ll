@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 96 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -66,7 +67,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -95,10 +95,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64
@@ -108,7 +107,8 @@ entry:
   ret i1 %6
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/xml_grammar.ll
 ; folly/optimized/RangeCommon.cpp.ll
 ; grpc/optimized/percent_encoding.cc.ll
 ; grpc/optimized/validate_metadata.cc.ll
@@ -128,7 +128,7 @@ entry:
 ; proxygen/optimized/HPACKCodec.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64

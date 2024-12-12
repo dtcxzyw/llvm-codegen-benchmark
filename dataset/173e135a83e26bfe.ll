@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -72,7 +72,6 @@
 ; openjdk/optimized/zRelocationSetSelector.ll
 ; openmpi/optimized/pmix_hwloc.ll
 ; openmpi/optimized/shmem_mmap_module.ll
-; openmpi/optimized/threads_pthreads_yield.ll
 ; openusd/optimized/reporter.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/basic_functions.ll

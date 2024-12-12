@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -23,7 +23,6 @@
 ; lightgbm/optimized/sample_strategy.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; minetest/optimized/tileanimation.cpp.ll

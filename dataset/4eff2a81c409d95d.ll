@@ -1,10 +1,10 @@
 
-%class.b3Vector3.2704959 = type { %union.anon.34.2704960 }
-%union.anon.34.2704960 = type { [4 x float] }
-%struct.list_head.3346628 = type { ptr, ptr }
-%struct.scatterlist.3353112 = type { i64, i32, i32, i64, i32, i32 }
+%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
+%union.anon.34.2817675 = type { [4 x float] }
+%struct.list_head.3535195 = type { ptr, ptr }
+%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
 
-; 34 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -25,27 +25,37 @@
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; graphviz/optimized/imap.c.ll
 ; hwloc/optimized/bitmap.ll
-; icu/optimized/dayperiodrules.ll
-; icu/optimized/utrie2_builder.ll
-; imgui/optimized/imgui.cpp.ll
-; openmpi/optimized/name_fns.ll
-; openmpi/optimized/ompi_rte.ll
 ; openusd/optimized/matrix3d.cpp.ll
 ; openusd/optimized/matrix3f.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
-; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw [3 x %class.b3Vector3.2704959], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 6 occurrences:
+; graphviz/optimized/imap.c.ll
+; icu/optimized/dayperiodrules.ll
+; icu/optimized/utrie2_builder.ll
+; imgui/optimized/imgui.cpp.ll
+; openmpi/optimized/ompi_rte.ll
+; pbrt-v4/optimized/ArHosekSkyModel.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, -1
+  %3 = select i1 %2, i32 0, i32 %1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw [5 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -58,7 +68,7 @@ entry:
   %2 = icmp sgt i32 %1, 11
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [12 x %struct.list_head.3346628], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [12 x %struct.list_head.3535195], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -70,7 +80,7 @@ entry:
   %2 = icmp eq i32 %1, 18
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [19 x %struct.scatterlist.3353112], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [19 x %struct.scatterlist.3540839], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

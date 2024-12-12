@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/xmerge.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; ruby/optimized/util.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/packet-rsvd.c.ll
@@ -16,8 +15,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 2 occurrences:
 ; ruby/optimized/util.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind

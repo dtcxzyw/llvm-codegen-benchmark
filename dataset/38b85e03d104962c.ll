@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, float %1) #0 {
+define i1 @func0000000000000061(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, float %1) #0 {
+define i1 @func0000000000000021(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64

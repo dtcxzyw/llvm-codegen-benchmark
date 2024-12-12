@@ -1,20 +1,4 @@
 
-; 4 occurrences:
-; cmake/optimized/index.c.ll
-; folly/optimized/Subprocess.cpp.ll
-; hdf5/optimized/H5LT.c.ll
-; luau/optimized/Lexer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -8
-  %4 = add i64 %3, %1
-  %5 = and i64 %4, -8
-  %6 = add i64 %0, 8
-  %7 = add i64 %6, %5
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
@@ -25,6 +9,22 @@ entry:
   %5 = and i64 %4, -4096
   %6 = add i64 %0, -1
   %7 = add i64 %6, %5
+  ret i64 %7
+}
+
+; 4 occurrences:
+; cmake/optimized/index.c.ll
+; hdf5/optimized/H5LT.c.ll
+; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 7
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, -8
+  %6 = add i64 %0, 1
+  %7 = add i64 %5, %6
   ret i64 %7
 }
 
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 15
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, -16
   %6 = add nsw i64 %0, 15
   %7 = add i64 %6, %5
@@ -62,7 +62,7 @@ entry:
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 4294967288
   %6 = add nsw i64 %0, 112
   %7 = add nsw i64 %6, %5

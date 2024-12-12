@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
@@ -21,7 +21,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -40,7 +39,7 @@ define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = and i32 %3, 4
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -79,7 +78,7 @@ define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
@@ -109,6 +108,35 @@ entry:
   ret i64 %7
 }
 
+; 17 occurrences:
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; soc-simulator/optimized/sim_mycpu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 5
+  %4 = and i32 %3, 3840
+  %5 = or i32 %1, %4
+  %6 = or i32 %0, %5
+  %7 = zext nneg i32 %6 to i64
+  ret i64 %7
+}
+
 ; 3 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -118,23 +146,9 @@ define i64 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
-  ret i64 %7
-}
-
-; 2 occurrences:
-; llvm/optimized/ASTWriterDecl.cpp.ll
-; soc-simulator/optimized/sim_mycpu.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 2
-  %4 = and i32 %3, 16
-  %5 = or i32 %4, %1
-  %6 = or i32 %5, %0
-  %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
 
@@ -153,7 +167,7 @@ define i64 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
   ret i64 %7
@@ -166,7 +180,7 @@ define i64 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = zext nneg i32 %6 to i64
   ret i64 %7

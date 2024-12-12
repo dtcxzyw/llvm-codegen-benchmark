@@ -12,14 +12,6 @@ func000000000000000b:                   # @func000000000000000b
 	addiw	a1, a1, 2
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	andi	a1, a1, 255
-	slliw	a0, a0, 16
-	or	a0, a0, a1
-	lui	a1, 28672
-	addiw	a1, a1, 256
-	or	a0, a0, a1
-	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 255
 	slli	a0, a0, 8
@@ -36,6 +28,14 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -244
 	slliw	a0, a0, 4
+	or	a0, a0, a1
+	addi	a0, a0, 2
+	ret
+func000000000000000f:                   # @func000000000000000f
+	lui	a2, 1048320
+	addiw	a2, a2, -3
+	and	a1, a1, a2
+	slliw	a0, a0, 20
 	or	a0, a0, a1
 	addi	a0, a0, 2
 	ret

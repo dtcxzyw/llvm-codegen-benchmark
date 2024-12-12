@@ -31,8 +31,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; icu/optimized/gregoimp.ll
+; 3 occurrences:
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; sentencepiece/optimized/strutil.cc.ll

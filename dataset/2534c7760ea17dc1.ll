@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 106 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; c3c/optimized/codegen_general.c.ll
@@ -52,7 +52,6 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
@@ -61,14 +60,17 @@
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/psdinput.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -108,11 +110,11 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 52 occurrences:
+; 56 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -134,6 +136,13 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -142,9 +151,6 @@ entry:
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -169,34 +175,29 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 23 occurrences:
+; 18 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; minetest/optimized/CImage.cpp.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
 ; openspiel/optimized/checkers.cc.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; re2/optimized/onepass.cc.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -205,7 +206,7 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
@@ -213,20 +214,20 @@ entry:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
-; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 7
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
 ; draco/optimized/rans_bit_decoder.cc.ll
 ; openjdk/optimized/UshortGray.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -258,7 +259,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

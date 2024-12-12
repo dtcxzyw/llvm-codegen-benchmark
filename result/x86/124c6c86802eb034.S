@@ -23,6 +23,12 @@ func000000000000000d:                   # @func000000000000000d
 	shll	$16, %edi
 	orl	%edi, %eax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	orl	%edx, %esi
+	andl	$16777215, %esi                 # imm = 0xFFFFFF
+	shll	$24, %edi
+	leal	(%rdi,%rsi), %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	orl	%edx, %esi

@@ -1,6 +1,11 @@
 
-; 41 occurrences:
+; 79 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/format_args.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/2yom0llikg21u9sa.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
@@ -41,17 +46,52 @@
 ; wasmedge/optimized/codegen.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/mpq.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; flac/optimized/cuesheet.c.ll
 ; libquic/optimized/string_number_conversions.cc.ll
@@ -64,7 +104,7 @@ define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -308,11 +348,12 @@ define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; libquic/optimized/string_number_conversions.cc.ll
 ; openusd/optimized/stringUtils.cpp.ll
@@ -323,7 +364,7 @@ define i64 @func000000000000000d(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -338,7 +379,7 @@ define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -383,22 +424,7 @@ define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 5 occurrences:
-; arrow/optimized/decimal.cc.ll
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_numeric.cc.ll
-; flac/optimized/utils.c.ll
-; postgres/optimized/numutils.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
-entry:
-  %2 = add i8 %1, -48
-  %3 = zext nneg i8 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -406,6 +432,23 @@ entry:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/src.ll
+; flac/optimized/utils.c.ll
+; postgres/optimized/numutils.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -48
+  %3 = zext nneg i8 %2 to i64
+  %4 = add nuw i64 %0, %3
+  ret i64 %4
+}
+
+; 7 occurrences:
+; arrow/optimized/decimal.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/src.ll
 ; flac/optimized/cuesheet.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -414,7 +457,7 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -48
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -426,7 +469,7 @@ define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 8
   %3 = zext i8 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -449,7 +492,7 @@ define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -48
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -462,7 +505,7 @@ define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, 32
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -473,7 +516,7 @@ define i64 @func0000000000000013(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -484,7 +527,7 @@ define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -20
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

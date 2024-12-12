@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i64 %0, 2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i64 %0, 2
   %3 = icmp ne i32 %1, 2

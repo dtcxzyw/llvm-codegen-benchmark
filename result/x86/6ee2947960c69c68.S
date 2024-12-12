@@ -4,13 +4,13 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	%esi
 	andl	$4, %esi
 	orl	%edi, %esi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrl	$29, %esi
 	andl	$1, %esi
 	orl	%edi, %esi

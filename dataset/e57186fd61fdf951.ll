@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -20,8 +20,8 @@
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/prtime.cc.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/pci.ll
+; lvgl/optimized/lv_indev.ll
 ; meilisearch-rs/optimized/1onj4gqrvchfzpwo.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -49,7 +49,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; nix/optimized/fromTOML.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll

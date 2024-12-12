@@ -72,7 +72,7 @@ entry:
 define i1 @func0000000000000008(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oeq double %4, 0.000000e+00
   ret i1 %5
 }
@@ -85,7 +85,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ule double %4, 0.000000e+00
   ret i1 %5
 }
@@ -96,7 +96,7 @@ entry:
 define i1 @func000000000000000e(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }
@@ -107,7 +107,7 @@ entry:
 define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp uge double %4, 0.000000e+00
   ret i1 %5
 }
@@ -118,7 +118,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp oge double %4, 0.000000e+00
   ret i1 %5
 }

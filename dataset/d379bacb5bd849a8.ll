@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -17,7 +17,6 @@
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; php/optimized/unixtime2tm.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0, i64 %1) #0 {
@@ -41,7 +40,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; php/optimized/unixtime2tm.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
@@ -52,7 +52,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -60,7 +60,6 @@ entry:
 ; curl/optimized/libcurl_la-progress.ll
 ; freetype/optimized/sdf.c.ll
 ; php/optimized/parse_posix.ll
-; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:

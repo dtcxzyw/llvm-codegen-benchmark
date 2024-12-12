@@ -15,16 +15,18 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 2 occurrences:
+; 4 occurrences:
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/array.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -33,10 +35,9 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
@@ -55,7 +56,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -78,7 +79,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 
@@ -88,7 +89,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 false)
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 
@@ -98,7 +99,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -118,7 +119,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   ret i64 %3
 }
 

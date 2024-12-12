@@ -1,13 +1,9 @@
-func00000000000003e1:                   // @func00000000000003e1
+func00000000000007c1:                   // @func00000000000007c1
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #1
-	ushll	v0.4s, v0.4h, #0
-	add	v1.4s, v1.4s, v2.4s
-	neg	v0.4s, v0.4s
-	ushl	v0.4s, v1.4s, v0.4s
-	cmeq	v0.4s, v0.4s, #0
-	xtn	v0.4h, v0.4s
+	add	w8, w1, #1
+                                        // kill: def $w0 killed $w0 def $x0
+	lsr	w8, w8, w0
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function

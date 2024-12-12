@@ -5,7 +5,7 @@
 ; ruby/optimized/ripper.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -19,7 +19,7 @@ entry:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; folly/optimized/Zlib.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4294967296
   %3 = icmp eq i64 %2, 64424509440
@@ -33,7 +33,7 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; linux/optimized/svclock.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843009213693952
   %3 = icmp ne i64 %2, 0
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2048
   %3 = icmp eq i64 %2, 0

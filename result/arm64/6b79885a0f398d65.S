@@ -1,31 +1,31 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	mov	w8, #19923                      // =0x4dd3
+	mov	x9, #-1000                      // =0xfffffffffffffc18
 	movk	w8, #4194, lsl #16
-	dup	v3.4s, w8
-	mov	w8, #-1000                      // =0xfffffc18
-	umull2	v4.2d, v2.4s, v3.4s
-	umull	v2.2d, v2.2s, v3.2s
-	dup	v3.4s, w8
-	uzp2	v2.4s, v2.4s, v4.4s
-	ushr	v2.4s, v2.4s, #6
-	smlal2	v1.2d, v2.4s, v3.4s
-	smlal	v0.2d, v2.2s, v3.2s
+	umull	x8, w1, w8
+	lsr	x8, x8, #38
+	smaddl	x0, w8, w9, x0
+	ret
+                                        // -- End function
+func000000000000001f:                   // @func000000000000001f
+// %bb.0:                               // %entry
+	mov	w8, #46021                      // =0xb3c5
+	mov	w9, #-3600                      // =0xfffff1f0
+	movk	w8, #37282, lsl #16
+	umull	x8, w1, w8
+	lsr	x8, x8, #43
+	umaddl	x0, w8, w9, x0
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
 	mov	w8, #34079                      // =0x851f
+	mov	w9, #15025                      // =0x3ab1
 	movk	w8, #20971, lsl #16
-	dup	v3.4s, w8
-	mov	w8, #15025                      // =0x3ab1
-	movk	w8, #2, lsl #16
-	umull2	v4.2d, v2.4s, v3.4s
-	umull	v2.2d, v2.2s, v3.2s
-	dup	v3.4s, w8
-	uzp2	v2.4s, v2.4s, v4.4s
-	ushr	v2.4s, v2.4s, #7
-	umlal2	v1.2d, v2.4s, v3.4s
-	umlal	v0.2d, v2.2s, v3.2s
+	movk	w9, #2, lsl #16
+	umull	x8, w1, w8
+	lsr	x8, x8, #39
+	umaddl	x0, w8, w9, x0
 	ret
                                         // -- End function

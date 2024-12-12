@@ -12,3 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%dil, %sil
 	seta	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorb	$1, %sil
+	cmpb	%dil, %sil
+	setb	%al
+	retq

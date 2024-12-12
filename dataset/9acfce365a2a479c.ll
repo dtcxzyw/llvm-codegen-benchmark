@@ -5,9 +5,9 @@
 ; llvm/optimized/ModuleSummaryIndex.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, i16 %1, ptr %2) #0 {
+define i1 @func0000000000000c2c(ptr %0, i16 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %0
   %5 = and i16 %1, 128
   %6 = icmp ne i16 %5, 0
@@ -20,9 +20,9 @@ entry:
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, i16 %1, ptr %2) #0 {
+define i1 @func0000000000000c21(ptr %0, i16 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %0
   %5 = and i16 %1, -8192
   %6 = icmp eq i16 %5, 16384

@@ -1,96 +1,45 @@
-func00000000000000b6:                   // @func00000000000000b6
+func0000000000000166:                   // @func0000000000000166
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmge	v4.2d, v1.2d, v4.2d
-	cmgt	v1.2d, v2.2d, v1.2d
-	cmge	v2.2d, v0.2d, v3.2d
-	cmgt	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	cmp	x0, w1, sxtw
+	ccmp	x0, x8, #0, ge
+	cset	w0, ge
 	ret
                                         // -- End function
-func00000000000000a6:                   // @func00000000000000a6
+func0000000000000146:                   // @func0000000000000146
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v4.2d, v1.2d, v4.2d
-	cmgt	v1.2d, v2.2d, v1.2d
-	cmgt	v2.2d, v0.2d, v3.2d
-	cmgt	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	cmp	x0, w1, sxtw
+	ccmp	x0, x8, #0, ge
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmeq	v4.2d, v4.2d, v1.2d
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v2.2d, v3.2d, v0.2d
-	cmeq	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	cmp	x0, w1, sxtw
+	ccmp	x0, x8, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000b7:                   // @func00000000000000b7
+func0000000000000167:                   // @func0000000000000167
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmge	v4.2d, v1.2d, v4.2d
-	cmge	v1.2d, v2.2d, v1.2d
-	cmge	v2.2d, v0.2d, v3.2d
-	cmge	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	cmp	x0, w1, sxtw
+	ccmp	x0, x8, #0, gt
+	cset	w0, ge
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
+func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v4.2d, v1.2d, v4.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v2.2d, v0.2d, v3.2d
-	cmhi	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
-	ret
-                                        // -- End function
-func00000000000000a7:                   // @func00000000000000a7
-// %bb.0:                               // %entry
-	sshll2	v4.2d, v3.4s, #0
-	sshll	v3.2d, v3.2s, #0
-	sshll	v5.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmgt	v4.2d, v1.2d, v4.2d
-	cmge	v1.2d, v2.2d, v1.2d
-	cmgt	v2.2d, v0.2d, v3.2d
-	cmge	v0.2d, v5.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	cmp	x0, w1, sxtw
+	ccmp	x0, x8, #2, hs
+	cset	w0, hi
 	ret
                                         // -- End function

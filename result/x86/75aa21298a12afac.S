@@ -1,6 +1,6 @@
 func000000000000006f:                   # @func000000000000006f
 	movl	%edx, %eax
-	leaq	(%rax,%rax,8), %rax
+	leaq	(%rax,%rax,4), %rax
 	leaq	(%rdi,%rax,2), %rcx
 	movl	%esi, %eax
 	addq	%rcx, %rax

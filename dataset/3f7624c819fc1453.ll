@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/zlib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/zlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -27,7 +27,7 @@ entry:
 ; luau/optimized/StringUtils.cpp.ll
 ; minetest/optimized/settings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %0, -1
@@ -39,7 +39,7 @@ entry:
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %0, -1
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/spike-dasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/spike-dasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -69,23 +69,13 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/MicrosoftDemangle.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %0
-  %4 = sub i64 %1, %3
-  %5 = icmp ugt i64 %4, -7
-  ret i1 %5
-}
-
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
+; boost/optimized/shell.ll
 ; nix/optimized/installables.ll
 ; ripgrep-rs/optimized/1rzxgyr0fo8f0ob1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %0, -1
@@ -94,9 +84,20 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/MicrosoftDemangle.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, %0
+  %4 = sub i64 %1, %3
+  %5 = icmp ugt i64 %4, -7
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; grpc/optimized/json_object_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -107,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/retry_service_config.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -130,7 +131,7 @@ entry:
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = add i64 %.neg, 4

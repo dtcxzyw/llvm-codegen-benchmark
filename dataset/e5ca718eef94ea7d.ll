@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 27 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/darCut.c.ll
@@ -9,11 +9,21 @@
 ; jq/optimized/regcomp.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_display.ll
+; llvm/optimized/CGCUDANV.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/GlobalOpt.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/ir.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/regcomp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll

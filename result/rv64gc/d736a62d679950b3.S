@@ -69,12 +69,12 @@ func000000000000002c:                   # @func000000000000002c
 	bnez	a0, .LBB3_2
 	lui	a0, 258048
 	fmv.w.x	fa4, a0
-	fadd.s	fa4, fa4, fa0
+	fadd.s	fa4, fa0, fa4
 	fle.s	a0, fa5, fa4
 	ret
 .LBB3_2:
 	lui	a0, 782336
 	fmv.w.x	fa4, a0
-	fadd.s	fa4, fa4, fa0
+	fadd.s	fa4, fa0, fa4
 	fle.s	a0, fa5, fa4
 	ret

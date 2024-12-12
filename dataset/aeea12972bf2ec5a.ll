@@ -53,20 +53,6 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
-; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i16 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 32
-  %4 = zext nneg i16 %0 to i64
-  %5 = or disjoint i64 %3, %4
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
 ; Function Attrs: nounwind

@@ -29,7 +29,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -39,7 +39,6 @@ entry:
 ; icu/optimized/decNumber.ll
 ; linux/optimized/lib.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/output.ll
 ; Function Attrs: nounwind

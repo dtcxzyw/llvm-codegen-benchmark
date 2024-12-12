@@ -5,22 +5,10 @@ func0000000000000008:                   # @func0000000000000008
 	sarl	$3, %eax
 	addl	%esi, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	movslq	%edx, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
-	movq	%rax, %rcx
-	shrq	$63, %rcx
-	shrq	$32, %rax
-	addl	%ecx, %eax
-	addl	%esi, %eax
-	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000024:                   # @func0000000000000024
 	movslq	%edx, %rax
 	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
 	movq	%rax, %rcx
@@ -29,8 +17,20 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%ecx, %eax
 	addl	%esi, %eax
 	cltq
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setb	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movslq	%edx, %rax
+	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	addl	%esi, %eax
+	cltq
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movslq	%edx, %rax
@@ -41,6 +41,6 @@ func0000000000000006:                   # @func0000000000000006
 	addl	%ecx, %eax
 	addl	%esi, %eax
 	cltq
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq

@@ -40,8 +40,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; hermes/optimized/ESTreeIRGen-func.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
@@ -62,7 +63,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 544
   %4 = add nuw nsw i64 %3, 544
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -76,7 +77,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 56
   %4 = add nuw nsw i64 %3, 8
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

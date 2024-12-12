@@ -11,12 +11,14 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/594a9u59es5pyenu.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i8 %0, i64 %1, i64 %2) #0 {
 entry:

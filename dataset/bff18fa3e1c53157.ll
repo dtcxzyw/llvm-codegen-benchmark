@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 106 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -40,8 +40,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -117,7 +115,7 @@ entry:
   ret i64 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; flac/optimized/bitwriter.c.ll
@@ -138,7 +136,6 @@ entry:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

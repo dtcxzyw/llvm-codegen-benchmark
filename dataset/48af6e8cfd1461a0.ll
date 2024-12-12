@@ -59,14 +59,15 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 %2, 1
+  %3 = shl nsw i32 %2, 12
   %4 = add nsw i32 %0, %1
   %5 = add nsw i32 %4, %3
   %6 = zext i32 %5 to i64

@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaShow.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -13,6 +13,7 @@
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/netlabel_cipso_v4.ll
+; linux/optimized/nl80211.ll
 ; linux/optimized/selinuxfs.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -20,11 +21,17 @@
 ; minetest/optimized/content_cso.cpp.ll
 ; ninja/optimized/build_log_perftest.cc.ll
 ; nuklear/optimized/unity.c.ll
+; oiio/optimized/CineonHeader.cpp.ll
+; oiio/optimized/Writer.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/CUPSfuncs.ll
 ; openjdk/optimized/IntArgbPre.ll
 ; openjdk/optimized/UshortGray.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; qemu/optimized/hw_audio_ac97.c.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
@@ -34,6 +41,7 @@
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-mojito.c.ll
 ; wireshark/optimized/packet-mq.c.ll
+; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-zbee-zcl-general.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
@@ -102,7 +110,7 @@ entry:
   ret i32 %2
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; cpython/optimized/assemble.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -112,6 +120,7 @@ entry:
 ; linux/optimized/lbr.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; miniaudio/optimized/unity.c.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; php/optimized/parse_tz.ll

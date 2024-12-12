@@ -10,9 +10,9 @@
 define i32 @func0000000000000025(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 4
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = sext i1 %4 to i32
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }

@@ -83,7 +83,7 @@ func0000000000000042:                   # @func0000000000000042
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vmaxps	%zmm2, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -95,7 +95,13 @@ func0000000000000043:                   # @func0000000000000043
 	retq
 func0000000000000048:                   # @func0000000000000048
 	vmaxps	%zmm2, %zmm1, %zmm1
-	vcmpeqps	%zmm0, %zmm1, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000004d:                   # @func000000000000004d
+	vminps	%zmm2, %zmm1, %zmm1
+	vcmpnltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -113,7 +119,7 @@ func000000000000002d:                   # @func000000000000002d
 	retq
 func0000000000000027:                   # @func0000000000000027
 	vmaxps	%zmm2, %zmm1, %zmm1
-	vcmpneqps	%zmm0, %zmm1, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -130,6 +136,12 @@ func00000000000000c2:                   # @func00000000000000c2
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000047:                   # @func0000000000000047
+	vminps	%zmm2, %zmm1, %zmm1
+	vcmpneqps	%zmm1, %zmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000025:                   # @func0000000000000025
 	vmaxps	%zmm2, %zmm1, %zmm1
 	vcmpnleps	%zmm1, %zmm0, %k0
@@ -139,12 +151,6 @@ func0000000000000025:                   # @func0000000000000025
 func000000000000002b:                   # @func000000000000002b
 	vminps	%zmm2, %zmm1, %zmm1
 	vcmpnltps	%zmm0, %zmm1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000004d:                   # @func000000000000004d
-	vminps	%zmm2, %zmm1, %zmm1
-	vcmpnltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

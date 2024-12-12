@@ -98,10 +98,9 @@ func0000000000000008:                   # @func0000000000000008
 	vpinsrd	$3, %eax, %xmm3, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	retq
-.LCPI2_0:
-	.long	2                               # 0x2
 func0000000000000002:                   # @func0000000000000002
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpsubd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrd	$1, %xmm1, %eax

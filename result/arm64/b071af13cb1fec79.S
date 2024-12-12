@@ -1,53 +1,33 @@
-func0000000000000023:                   // @func0000000000000023
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	movi	v4.4s, #8
-	movi	v5.4s, #2
-	movi	v6.4s, #64
-	movi	v17.4s, #16
-	cmeq	v7.4s, v3.4s, v4.4s
-	cmeq	v16.4s, v2.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v17.4s
-	cmeq	v3.4s, v3.4s, v17.4s
-	bsl	v16.16b, v6.16b, v5.16b
-	bit	v5.16b, v6.16b, v7.16b
-	bsl	v3.16b, v4.16b, v5.16b
-	bsl	v2.16b, v4.16b, v16.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	mov	w8, #2                          // =0x2
+	cmp	w1, #8
+	mov	w9, #64                         // =0x40
+	csel	w8, w9, w8, eq
+	cmp	w1, #16
+	mov	w9, #8                          // =0x8
+	csel	w8, w9, w8, eq
+	orr	w0, w0, w8
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	movi	v4.4s, #2
-	movi	v5.4s, #1
-	cmeq	v6.4s, v3.4s, v4.4s
-	cmeq	v4.4s, v2.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v5.4s
-	cmeq	v3.4s, v3.4s, v5.4s
-	movi	v5.4s, #3
-	bic	v4.16b, v4.16b, v2.16b
-	bic	v6.16b, v6.16b, v3.16b
-	and	v4.16b, v4.16b, v5.16b
-	and	v6.16b, v6.16b, v5.16b
-	sub	v2.4s, v4.4s, v2.4s
-	sub	v3.4s, v6.4s, v3.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	mov	w8, #3                          // =0x3
+	cmp	w1, #2
+	csel	w8, w8, wzr, eq
+	cmp	w1, #1
+	csinc	w8, w8, wzr, ne
+	orr	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000103:                   // @func0000000000000103
+func0000000000000203:                   // @func0000000000000203
 // %bb.0:                               // %entry
-	movi	v4.4s, #128
-	movi	v5.4s, #64
-	cmhi	v6.4s, v4.4s, v3.4s
-	cmhi	v7.4s, v4.4s, v2.4s
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	bsl	v7.16b, v5.16b, v4.16b
-	bit	v4.16b, v5.16b, v6.16b
-	bic	v3.16b, v4.16b, v3.16b
-	bic	v2.16b, v7.16b, v2.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	mov	w8, #128                        // =0x80
+	cmp	w1, #128
+	mov	w9, #64                         // =0x40
+	csel	w8, w9, w8, lo
+	cmp	w1, #0
+	csel	w8, wzr, w8, eq
+	orr	w0, w0, w8
 	ret
                                         // -- End function

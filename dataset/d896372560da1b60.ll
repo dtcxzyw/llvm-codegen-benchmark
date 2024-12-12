@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/cmState.cxx.ll
 ; cmake/optimized/cmStateSnapshot.cxx.ll
 ; entt/optimized/storage.cpp.ll
@@ -11,6 +11,7 @@
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:

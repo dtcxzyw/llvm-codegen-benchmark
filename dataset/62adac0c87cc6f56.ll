@@ -30,15 +30,16 @@ entry:
   ret i32 %4
 }
 
-; 284 occurrences:
+; 282 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; abseil-cpp/optimized/bind_test.cc.ll
 ; abseil-cpp/optimized/parser.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
-; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/dlp.c.ll
 ; clamav/optimized/libfreshclam.c.ll
@@ -158,13 +159,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -337,8 +335,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/yc.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i8 %1) #0 {

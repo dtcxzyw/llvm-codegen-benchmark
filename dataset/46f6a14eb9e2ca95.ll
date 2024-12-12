@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 2
   %.not = icmp eq i8 %1, 98
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, -1073741824
   %4 = icmp eq i8 %1, 125
@@ -47,7 +47,7 @@ entry:
 ; clamav/optimized/strfn.cpp.ll
 ; linux/optimized/via-rng.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 48
   %4 = icmp ugt i8 %1, -97

@@ -1,25 +1,21 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v0.8b, v0.8b, v1.8b
-	sshll	v0.8h, v0.8b, #0
-	sshll2	v1.4s, v0.8h, #0
-	sshll	v0.4s, v0.4h, #0
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	csetm	w0, eq
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmhi	v0.8b, v1.8b, v0.8b
-	sshll	v0.8h, v0.8b, #0
-	sshll2	v1.4s, v0.8h, #0
-	sshll	v0.4s, v0.4h, #0
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	csetm	w0, lo
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmeq	v0.8b, v0.8b, v1.8b
-	mvn	v0.8b, v0.8b
-	sshll	v0.8h, v0.8b, #0
-	sshll2	v1.4s, v0.8h, #0
-	sshll	v0.4s, v0.4h, #0
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	csetm	w0, ne
 	ret
                                         // -- End function

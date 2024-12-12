@@ -12,10 +12,11 @@ func000000000000000b:                   # @func000000000000000b
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
 	sete	%cl
-	leal	2(%rcx,%rsi), %eax
-	orl	%esi, %ecx
+	leal	2(%rsi,%rcx), %eax
+	movl	%esi, %edx
+	orl	%ecx, %edx
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%edx, %eax
 	retq
 func0000000000000050:                   # @func0000000000000050
 	xorl	%ecx, %ecx

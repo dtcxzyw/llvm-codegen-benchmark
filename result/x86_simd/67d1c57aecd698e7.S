@@ -224,10 +224,10 @@ func000000000000003a:                   # @func000000000000003a
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI9_0:
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
-	.byte	32                              # 0x20
+	.byte	208                             # 0xd0
+	.byte	208                             # 0xd0
+	.byte	208                             # 0xd0
+	.byte	208                             # 0xd0
 	.zero	1
 	.zero	1
 	.zero	1
@@ -241,18 +241,18 @@ func000000000000003a:                   # @func000000000000003a
 	.zero	1
 	.zero	1
 .LCPI9_1:
-	.quad	60                              # 0x3c
-func000000000000003f:                   # @func000000000000003f
+	.quad	10                              # 0xa
+func000000000000001e:                   # @func000000000000001e
 	vpaddb	.LCPI9_0(%rip), %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpmullq	.LCPI9_1(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI10_0:
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
-	.byte	208                             # 0xd0
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
 	.zero	1
 	.zero	1
 	.zero	1
@@ -266,8 +266,8 @@ func000000000000003f:                   # @func000000000000003f
 	.zero	1
 	.zero	1
 .LCPI10_1:
-	.quad	10                              # 0xa
-func0000000000000038:                   # @func0000000000000038
+	.quad	60                              # 0x3c
+func000000000000003f:                   # @func000000000000003f
 	vpaddb	.LCPI10_0(%rip), %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpmullq	.LCPI10_1(%rip){1to4}, %ymm0, %ymm0
@@ -292,7 +292,7 @@ func0000000000000038:                   # @func0000000000000038
 	.zero	1
 .LCPI11_1:
 	.quad	10                              # 0xa
-func000000000000001e:                   # @func000000000000001e
+func0000000000000038:                   # @func0000000000000038
 	vpaddb	.LCPI11_0(%rip), %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpmullq	.LCPI11_1(%rip){1to4}, %ymm0, %ymm0

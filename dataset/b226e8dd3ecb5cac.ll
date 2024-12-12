@@ -1,17 +1,5 @@
 
 ; 1 occurrences:
-; quantlib/optimized/kahalesmilesection.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000bd(double %0, double %1) #0 {
-entry:
-  %2 = fsub double %0, %1
-  %3 = fcmp uge double %2, 0.000000e+00
-  %4 = fcmp ule double %2, 1.000000e+00
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000ac(double %0, double %1) #0 {

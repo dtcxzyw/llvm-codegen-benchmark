@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 54 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -15,9 +15,9 @@
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -26,6 +26,7 @@
 ; minetest/optimized/collision.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
+; minetest/optimized/voxel.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
@@ -46,6 +47,13 @@
 ; slurm/optimized/numa.ll
 ; spike/optimized/s_countLeadingZeros64.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:

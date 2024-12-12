@@ -54,16 +54,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-cp2179.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65535
-  %3 = icmp ugt i32 %2, 8
-  %4 = select i1 %0, i1 %3, i1 false
-  %5 = select i1 %4, i32 2, i32 -1
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

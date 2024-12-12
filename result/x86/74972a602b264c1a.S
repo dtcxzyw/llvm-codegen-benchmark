@@ -10,14 +10,14 @@ func0000000000000014:                   # @func0000000000000014
 	shlxq	%rdi, %rax, %rax
 	notl	%eax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	addb	$-4, %dil
+func000000000000003c:                   # @func000000000000003c
+	decb	%dil
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	notl	%eax
 	retq
-func000000000000003c:                   # @func000000000000003c
-	decb	%dil
+func0000000000000018:                   # @func0000000000000018
+	addb	$10, %dil
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	notl	%eax

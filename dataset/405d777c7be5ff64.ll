@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
-; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
@@ -16,8 +17,10 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; linux/optimized/aio.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind

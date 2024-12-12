@@ -18,7 +18,7 @@ entry:
   ret ptr %5
 }
 
-; 31 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; clamav/optimized/qsort.c.ll
@@ -26,7 +26,6 @@ entry:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
 ; memcached/optimized/murmur3_hash.ll
@@ -44,8 +43,6 @@ entry:
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/facemarkLBF.cpp.ll
-; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; pocketpy/optimized/lexer.cpp.ll
@@ -103,7 +100,7 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; libquic/optimized/pickle.cc.ll
 ; miniaudio/optimized/unity.c.ll
@@ -111,7 +108,6 @@ entry:
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrj.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
@@ -151,6 +147,20 @@ entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr i16, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; llvm/optimized/OMPIRBuilder.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -195,7 +205,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; Function Attrs: nounwind
@@ -204,7 +215,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 

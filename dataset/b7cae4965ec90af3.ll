@@ -1,19 +1,20 @@
 
-; 301 occurrences:
+; 295 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
-; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/encode.c.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
-; double_conversion/optimized/strtod.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
@@ -26,7 +27,6 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
-; icu/optimized/double-conversion-strtod.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -99,9 +99,7 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
@@ -109,6 +107,7 @@
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -130,8 +129,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -267,9 +264,7 @@
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
-; openusd/optimized/json.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/strtod.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
@@ -277,7 +272,6 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spike/optimized/s_mulAddF16.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -310,9 +304,12 @@ entry:
   ret i64 %4
 }
 
-; 74 occurrences:
+; 79 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
+; arrow/optimized/strtod.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -334,6 +331,7 @@ entry:
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
+; double_conversion/optimized/strtod.cc.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -349,6 +347,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/Conversions.cpp.ll
+; icu/optimized/double-conversion-strtod.ll
 ; libquic/optimized/shift.c.ll
 ; linux/optimized/bitmap.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -359,10 +358,13 @@ entry:
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/regmask.ll
+; openusd/optimized/json.cpp.ll
+; openusd/optimized/strtod.cc.ll
 ; php/optimized/PMurHash128.ll
 ; php/optimized/strtod.ll
 ; postgres/optimized/d2s.ll
@@ -382,9 +384,6 @@ entry:
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
@@ -394,7 +393,8 @@ entry:
   ret i64 %4
 }
 
-; 103 occurrences:
+; 104 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment.c.ll

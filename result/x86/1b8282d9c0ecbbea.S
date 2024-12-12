@@ -26,7 +26,7 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func000000000000001c:                   # @func000000000000001c
 	movzwl	%dx, %eax
-	shll	$8, %eax
+	shll	$7, %eax
 	orl	%esi, %eax
 	addl	%edi, %eax
 	retq

@@ -67,7 +67,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %2
   %4 = icmp sgt i64 %3, 1
@@ -98,7 +98,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %2
   %4 = icmp ugt i64 %3, 64
@@ -113,7 +113,7 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %2
   %not. = xor i1 %1, true

@@ -1,7 +1,9 @@
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/giaClp.c.ll
+; boost/optimized/pipe.ll
+; boost/optimized/test_iostream.ll
 ; cpython/optimized/_codecs_cn.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/i915_gpu_error.ll

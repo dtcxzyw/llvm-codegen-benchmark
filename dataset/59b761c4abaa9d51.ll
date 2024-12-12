@@ -11,7 +11,11 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 43 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; clamav/optimized/entconv.c.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -60,12 +64,11 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
-; clamav/optimized/conv.c.ll
 ; clamav/optimized/dmg.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; qemu/optimized/util_buffer.c.ll
@@ -82,7 +85,8 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll

@@ -10,7 +10,7 @@ func0000000000000145:                   # @func0000000000000145
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000141:                   # @func0000000000000141
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -52,7 +52,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000184:                   # @func0000000000000184
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -60,7 +60,7 @@ func0000000000000184:                   # @func0000000000000184
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI9_0:
 	.long	2                               # 0x2
@@ -76,5 +76,5 @@ func000000000000002c:                   # @func000000000000002c
 	vpbroadcastd	.LCPI10_0(%rip), %ymm3  # ymm3 = [18,18,18,18,18,18,18,18]
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

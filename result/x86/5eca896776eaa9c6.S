@@ -40,3 +40,18 @@ func0000000000000011:                   # @func0000000000000011
 	andb	$-5, %dil
 	orb	%dil, %al
 	retq
+func0000000000000002:                   # @func0000000000000002
+	testl	%esi, %esi
+	movl	$48, %eax
+	cmovel	%esi, %eax
+	andb	$2, %dil
+	orb	%dil, %al
+	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpl	$16385, %esi                    # imm = 0x4001
+	movl	$34, %ecx
+	movl	$10, %eax
+	cmovbl	%ecx, %eax
+	andb	$1, %dil
+	orb	%dil, %al
+	retq

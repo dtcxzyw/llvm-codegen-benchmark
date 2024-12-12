@@ -4,7 +4,7 @@
 ; hdf5/optimized/H5Olinfo.c.ll
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -14,7 +14,7 @@ entry:
   ret i1 %7
 }
 
-; 66 occurrences:
+; 25 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -39,6 +39,20 @@ entry:
 ; folly/optimized/Compression.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
 ; folly/optimized/MemoryMapping.cpp.ll
+; minetest/optimized/enriched_string.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = icmp ult i64 %4, 32
+  %6 = icmp ult i64 %0, 8
+  %7 = select i1 %6, i1 true, i1 %5
+  ret i1 %7
+}
+
+; 42 occurrences:
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -54,7 +68,6 @@ entry:
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/guiAnimatedImage.cpp.ll
 ; minetest/optimized/guiBackgroundImage.cpp.ll
 ; minetest/optimized/guiBox.cpp.ll
@@ -82,12 +95,12 @@ entry:
 ; minetest/optimized/profilergraph.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000094(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 32
-  %6 = icmp ult i64 %0, 8
+  %6 = icmp samesign ult i64 %0, 8
   %7 = select i1 %6, i1 true, i1 %5
   ret i1 %7
 }
@@ -95,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ascmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -105,14 +118,17 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000881(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %1, %3
@@ -128,7 +144,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -143,7 +159,7 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -158,7 +174,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -180,7 +196,7 @@ entry:
 ; hdf5/optimized/H5Osdspace.c.ll
 ; hdf5/optimized/H5Oshared.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

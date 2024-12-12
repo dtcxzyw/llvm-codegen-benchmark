@@ -49,7 +49,7 @@ entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 3
   %.masked = and i16 %0, -2049
-  %4 = or i16 %3, %.masked
+  %4 = or i16 %.masked, %3
   ret i16 %4
 }
 
@@ -60,7 +60,7 @@ define i16 @func0000000000000006(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 1
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = and i16 %4, -897
   ret i16 %5
 }

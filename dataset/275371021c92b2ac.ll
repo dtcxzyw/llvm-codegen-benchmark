@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i16 %1) #0 {

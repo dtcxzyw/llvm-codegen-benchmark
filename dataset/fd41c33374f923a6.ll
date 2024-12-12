@@ -5,7 +5,7 @@
 ; postgres/optimized/freespace.ll
 ; redis/optimized/lua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -220,7 +220,7 @@ entry:
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -285,7 +285,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -361,7 +361,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000326(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000646(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -376,7 +376,7 @@ entry:
 ; clamav/optimized/getopt.c.ll
 ; quantlib/optimized/gsrprocesscore.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -389,7 +389,7 @@ entry:
 ; abc/optimized/xsatSolver.c.ll
 ; openblas/optimized/dlasrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -441,7 +441,7 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000784(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -456,7 +456,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -468,7 +468,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000060c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -482,7 +482,7 @@ entry:
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -494,7 +494,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000781(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -518,7 +518,7 @@ entry:
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -531,7 +531,7 @@ entry:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -544,7 +544,7 @@ entry:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000701(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -557,7 +557,7 @@ entry:
 ; gromacs/optimized/grid.cpp.ll
 ; opencv/optimized/plane.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -569,7 +569,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/specbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000406(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 7
@@ -587,7 +587,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000268(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -127
@@ -611,7 +611,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -623,7 +623,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000032a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000064a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 3
@@ -632,10 +632,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; opencv/optimized/attention_layer.cpp.ll
+; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1

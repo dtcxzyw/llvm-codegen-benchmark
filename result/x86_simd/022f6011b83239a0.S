@@ -1,8 +1,8 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000005:                   # @func0000000000000005
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpabsq	%ymm0, %ymm0
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000007:                   # @func0000000000000007
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpabsq	%ymm0, %ymm0
 	retq

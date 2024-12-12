@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 99 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOut.c.ll
 ; abc/optimized/bmcCexCare.c.ll
@@ -74,7 +74,6 @@
 ; linux/optimized/mballoc.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/ptp_chardev.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/trace_output.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -94,13 +93,11 @@
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; ruby/optimized/vm_trace.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -120,7 +117,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -184,7 +181,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

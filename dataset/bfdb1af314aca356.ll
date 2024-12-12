@@ -7,7 +7,22 @@ define i64 @func0000000000000301(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
+  %5 = shl i64 %4, 32
+  %6 = ashr exact i64 %5, 32
+  ret i64 %6
+}
+
+; 3 occurrences:
+; abc/optimized/extraUtilBitMatrix.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/mvcUtils.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000319(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
@@ -21,7 +36,7 @@ define i64 @func0000000000000059(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
@@ -111,7 +126,7 @@ define i64 @func0000000000000051(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
@@ -166,19 +181,21 @@ define i64 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
@@ -188,7 +205,7 @@ define i64 @func000000000000005d(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6
@@ -206,7 +223,7 @@ define i64 @func0000000000000049(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   ret i64 %6

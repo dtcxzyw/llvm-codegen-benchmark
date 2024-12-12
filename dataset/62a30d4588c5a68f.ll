@@ -26,7 +26,7 @@
 ; abc/optimized/wlcBlast.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 100
   %3 = icmp ult i32 %0, 15
@@ -57,7 +57,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 10
   %3 = icmp sgt i32 %0, 131067
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp slt i32 %0, 0

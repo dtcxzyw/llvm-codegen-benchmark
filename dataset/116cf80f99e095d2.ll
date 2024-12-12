@@ -9,7 +9,7 @@ define i8 @func0000000000000004(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %1
+  %5 = and i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
@@ -28,7 +28,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %1
+  %5 = and i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }

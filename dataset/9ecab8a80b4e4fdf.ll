@@ -1,6 +1,6 @@
 
-%"struct.clang::CodeCompletionString::Chunk.3129503" = type { i32, %union.anon.3129504 }
-%union.anon.3129504 = type { ptr }
+%"struct.clang::CodeCompletionString::Chunk.3322186" = type { i32, %union.anon.3322187 }
+%union.anon.3322187 = type { ptr }
 
 ; 24 occurrences:
 ; arrow/optimized/feather.cc.ll
@@ -28,13 +28,13 @@
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -54,13 +54,13 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcRenode.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000013(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = getelementptr i8, ptr %1, i64 36
   %5 = getelementptr i32, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -81,13 +81,13 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = getelementptr nusw i8, ptr %1, i64 32
-  %5 = getelementptr nusw %"struct.clang::CodeCompletionString::Chunk.3129503", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %5 = getelementptr nusw nuw %"struct.clang::CodeCompletionString::Chunk.3322186", ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7
 }
 

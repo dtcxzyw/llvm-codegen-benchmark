@@ -11,11 +11,10 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; wireshark/optimized/io_graph_item.c.ll
 ; Function Attrs: nounwind

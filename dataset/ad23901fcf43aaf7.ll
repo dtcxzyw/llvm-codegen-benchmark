@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/nfs4renewd.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; mold/optimized/arch-sparc64.cc.ll

@@ -41,7 +41,7 @@ func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
 	vmovss	%xmm3, %xmm1, %xmm1 {%k1}
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI3_0(%rip), %xmm0
 	seta	%al
 	retq

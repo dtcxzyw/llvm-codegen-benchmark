@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = select i1 %3, i1 true, i1 %1
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = select i1 %3, i1 true, i1 %1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 true, i1 %1

@@ -60,18 +60,6 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; hdf5/optimized/H5HGdbg.c.ll
-; wireshark/optimized/msg_ucd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 94
-  %3 = select i1 %2, i8 %0, i8 46
-  %4 = zext i8 %3 to i32
-  ret i32 %4
-}
-
 ; 4 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll

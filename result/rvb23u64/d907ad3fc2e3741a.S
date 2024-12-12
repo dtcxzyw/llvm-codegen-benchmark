@@ -14,16 +14,17 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a0, a0, a1
 	ret
 .LCPI1_0:
-	.quad	4835703278458516699             # 0x431bde82d7b634db
+	.quad	153339145055128003              # 0x220c523d72c49c3
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	neg	a2, a0
 	max	a0, a0, a2
-	lui	a2, 244
-	mulhu	a1, a0, a1
-	srli	a1, a1, 18
-	addiw	a2, a2, 576
+	srli	a2, a0, 7
+	mulhu	a1, a2, a1
+	lui	a2, 7699
+	srli	a1, a1, 11
+	addiw	a2, a2, 896
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

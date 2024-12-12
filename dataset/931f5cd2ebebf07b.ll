@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/block.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {

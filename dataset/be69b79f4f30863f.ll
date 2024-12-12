@@ -1,12 +1,11 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; folly/optimized/EpollBackend.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
-; linux/optimized/thermal_trip.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
@@ -35,11 +34,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
-; linux/optimized/n_tty.ll
 ; llvm/optimized/NativeTypeFunctionSig.cpp.ll
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind

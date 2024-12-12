@@ -83,7 +83,7 @@
 ; postgres/optimized/expandedrecord.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000105(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ule ptr %0, %1
@@ -127,7 +127,7 @@ entry:
 ; node/optimized/libnode.util.ll
 ; openjdk/optimized/g1BarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -138,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000a8(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %2, %1
   %4 = icmp ugt ptr %0, %1
@@ -149,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/archiveBuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp uge ptr %0, %1
@@ -157,9 +157,48 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 67 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/extraBddMisc.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; c3c/optimized/sema_expr.c.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
@@ -187,7 +226,7 @@ entry:
 ; z3/optimized/karr_relation.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp eq ptr %0, %1
@@ -196,9 +235,20 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000129(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp uge ptr %2, %1
+  %4 = icmp uge ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, %1
   %4 = icmp ne ptr %0, %1
@@ -209,7 +259,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = icmp ult ptr %0, %1
@@ -220,7 +270,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000124(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %2, %1
   %4 = icmp ult ptr %0, %1

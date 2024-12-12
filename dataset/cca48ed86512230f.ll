@@ -1,6 +1,6 @@
 
-%union.IRIns.3498437 = type { %struct.GCRef.3498438 }
-%struct.GCRef.3498438 = type { i64 }
+%union.IRIns.3680610 = type { %struct.GCRef.3680611 }
+%struct.GCRef.3680611 = type { i64 }
 
 ; 13 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -31,13 +31,13 @@ entry:
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i8 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %union.IRIns.3498437, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %union.IRIns.3680610, ptr %0, i64 %4
   %6 = zext i8 %1 to i64
-  %7 = getelementptr nusw %union.IRIns.3498437, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %union.IRIns.3680610, ptr %5, i64 %6
   ret ptr %7
 }
 

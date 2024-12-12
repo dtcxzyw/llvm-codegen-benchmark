@@ -20,14 +20,14 @@ func0000000000000002:                   # @func0000000000000002
 	vcmpltps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000022:                   # @func0000000000000022
-	vpmovqd	%ymm1, %xmm1
-	vcmpltps	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm1, %xmm1
 	vcmpeqps	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000022:                   # @func0000000000000022
+	vpmovqd	%ymm1, %xmm1
+	vcmpltps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007

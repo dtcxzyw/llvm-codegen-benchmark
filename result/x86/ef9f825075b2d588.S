@@ -4,13 +4,13 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rax, %rcx
 	setns	%al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	-12(,%rax,4), %rax
 	cmpq	$384, %rax                      # imm = 0x180
 	setb	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	cmpq	$-3, %rdi
 	setne	%al
 	retq
@@ -32,10 +32,10 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$-6, %rax
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	xorl	%eax, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	(%rdi,%rdi,2), %rax
 	movabsq	$-2305843009213693952, %rcx     # imm = 0xE000000000000000
 	leaq	1(%rcx,%rax), %rax
@@ -43,19 +43,23 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	$7, %eax
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func00000000000000a4:                   # @func00000000000000a4
+	leaq	(%rdi,%rdi,4), %rax
+	leaq	9(%rdi,%rax,2), %rax
+	cmpq	$19, %rax
+	setb	%al
+	retq
+func0000000000000084:                   # @func0000000000000084
 	leaq	1(%rdi,%rdi,2), %rax
 	cmpq	$3, %rax
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
-	imulq	$104, %rdi, %rax
-	addq	$16, %rax
-	cmpq	$1025, %rax                     # imm = 0x401
-	setb	%al
+func00000000000001e1:                   # @func00000000000001e1
+	cmpq	$12, %rdi
+	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	leaq	(%rdi,%rdi,2), %rax
-	cmpq	$1, %rax
+func0000000000000021:                   # @func0000000000000021
+	movabsq	$558992244657865199, %rax       # imm = 0x7C1F07C1F07C1EF
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

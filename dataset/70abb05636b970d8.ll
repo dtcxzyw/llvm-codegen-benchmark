@@ -12,8 +12,7 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; linux/optimized/statfs.ll
+; 2 occurrences:
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind
@@ -32,7 +31,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or disjoint i32 %4, 12
   %6 = zext i32 %5 to i64
   ret i64 %6

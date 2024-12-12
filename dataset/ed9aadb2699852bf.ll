@@ -6,10 +6,10 @@
 ; openjdk/optimized/ProcessPath.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1024
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = icmp slt i32 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -27,10 +27,10 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = icmp eq i32 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

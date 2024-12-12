@@ -11,7 +11,7 @@
 define i1 @func000000000000000a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = icmp ult i32 %3, 256
   ret i1 %4
 }

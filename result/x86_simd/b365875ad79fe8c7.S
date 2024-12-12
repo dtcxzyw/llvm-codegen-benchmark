@@ -31,7 +31,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 .LCPI4_0:
 	.long	24                              # 0x18
-func000000000000002d:                   # @func000000000000002d
+func000000000000002f:                   # @func000000000000002f
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$3, %xmm0, %xmm0
 	vpbroadcastd	.LCPI4_0(%rip), %xmm1   # xmm1 = [24,24,24,24]
@@ -39,11 +39,11 @@ func000000000000002d:                   # @func000000000000002d
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	24                              # 0x18
-func000000000000002f:                   # @func000000000000002f
+	.long	128                             # 0x80
+func0000000000000035:                   # @func0000000000000035
 	vpmovqd	%ymm0, %xmm0
-	vpslld	$3, %xmm0, %xmm0
-	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [24,24,24,24]
+	vpslld	$4, %xmm0, %xmm0
+	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [128,128,128,128]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

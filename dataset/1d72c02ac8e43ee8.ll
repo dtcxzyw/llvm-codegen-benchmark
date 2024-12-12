@@ -1,9 +1,10 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll

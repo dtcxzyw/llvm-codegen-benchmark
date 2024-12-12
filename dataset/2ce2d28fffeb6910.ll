@@ -25,8 +25,25 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = lshr exact i32 %4, 3
+  ret i32 %5
+}
+
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; raylib/optimized/rtextures.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %1, %2
+  %4 = mul nuw nsw i32 %3, %0
+  %5 = lshr i32 %4, 16
   ret i32 %5
 }
 
@@ -38,17 +55,6 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = mul nsw i32 %3, %0
   %5 = lshr i32 %4, 8
-  ret i32 %5
-}
-
-; 1 occurrences:
-; raylib/optimized/rtextures.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
-  %5 = lshr i32 %4, 3
   ret i32 %5
 }
 

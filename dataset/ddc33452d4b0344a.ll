@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/dns.ll
 ; redis/optimized/hyperloglog.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:

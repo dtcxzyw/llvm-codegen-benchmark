@@ -26,12 +26,12 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/gc.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

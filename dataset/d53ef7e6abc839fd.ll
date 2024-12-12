@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -32,7 +32,6 @@
 ; llvm/optimized/JSON.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -94,7 +93,7 @@ entry:
   ret i64 %5
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -136,7 +135,6 @@ entry:
 ; llvm/optimized/JSON.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -225,9 +223,10 @@ entry:
   ret i64 %5
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/collate.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
@@ -283,9 +282,10 @@ entry:
   ret i64 %5
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/collate.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; casadi/optimized/getnonzeros.cpp.ll
@@ -382,6 +382,18 @@ entry:
   %3 = sub nuw nsw i64 %0, %2
   %4 = shl nsw i64 %3, 2
   %5 = add nsw i64 %4, -4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/nldiffusion_functions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 2
+  %3 = sub i64 %0, %2
+  %4 = shl i64 %3, 2
+  %5 = add i64 %4, 4
   ret i64 %5
 }
 

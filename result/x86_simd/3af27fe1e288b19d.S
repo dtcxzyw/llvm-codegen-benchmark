@@ -13,7 +13,7 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	1000000                         # 0xf4240
 func000000000000007f:                   # @func000000000000007f
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	vpmuludq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
@@ -37,7 +37,7 @@ func000000000000007f:                   # @func000000000000007f
 	.byte	3                               # 0x3
 func000000000000002a:                   # @func000000000000002a
 	vpaddd	%xmm1, %xmm1, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovsxbd	.LCPI2_1(%rip), %ymm1   # ymm1 = [0,0,1,1,2,2,3,3]
 	vpermd	%ymm0, %ymm1, %ymm0

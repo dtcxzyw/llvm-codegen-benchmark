@@ -23,6 +23,12 @@ func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a2, a2, 31
+	seqz	a2, a2
+	and	a0, a0, a1
+	and	a0, a0, a2
+	ret
 func0000000000000006:                   # @func0000000000000006
 	slti	a2, a2, 1
 	and	a0, a0, a1
@@ -30,6 +36,12 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sltiu	a2, a2, 1025
+	xori	a2, a2, 1
+	and	a0, a0, a1
+	and	a0, a0, a2
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sltiu	a2, a2, 3
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/pg_controldata.ll
 ; postgres/optimized/pg_rewind.ll
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

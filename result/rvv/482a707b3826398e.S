@@ -1,4 +1,4 @@
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	lui	a0, 524408
 	addi	a0, a0, 113
 	vsetivli	zero, 4, e32, m1, ta, ma

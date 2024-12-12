@@ -19,11 +19,6 @@ func000000000000007c:                   # @func000000000000007c
 	subq	%rsi, %rdi
 	leaq	64(%rdi), %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
-	shll	$4, %esi
-	subq	%rsi, %rdi
-	leaq	64(%rdi), %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax
 	shll	$2, %esi
