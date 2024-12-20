@@ -1,7 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	and	a1, a1, a2
 	sext.w	a1, a1
 	snez	a1, a1

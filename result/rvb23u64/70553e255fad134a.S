@@ -17,10 +17,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 5
-	lui	a2, 1040768
+	lui	a2, 7808
 	slli	a1, a1, 18
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 21
 	ret

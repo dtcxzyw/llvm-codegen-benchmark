@@ -24,9 +24,8 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000027:                   # @func0000000000000027

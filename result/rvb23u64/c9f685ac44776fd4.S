@@ -26,20 +26,18 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func000000000000000b:                   # @func000000000000000b
 	or	a1, a1, a2
-	lui	a2, 1047584
+	lui	a2, 992
 	slli	a0, a0, 59
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	srli	a0, a0, 42
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a2, a2, 59
 	or	a0, a0, a1
-	lui	a1, 1016832
+	lui	a1, 31744
 	srli	a2, a2, 37
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d

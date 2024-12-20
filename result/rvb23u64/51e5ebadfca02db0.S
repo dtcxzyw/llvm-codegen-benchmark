@@ -1,8 +1,7 @@
 func0000000000000021:                   # @func0000000000000021
 	zext.h	a1, a1
-	lui	a2, 2064
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 1046512
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, -514
 	seqz	a0, a0

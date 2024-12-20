@@ -7,8 +7,7 @@ func0000000000000184:                   # @func0000000000000184
 func00000000000001f5:                   # @func00000000000001f5
 	addw	a1, a1, a2
 	lui	a2, 524288
-	addi	a2, a2, -1
-	xor	a0, a0, a2
+	xnor	a0, a0, a2
 	sext.w	a0, a0
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

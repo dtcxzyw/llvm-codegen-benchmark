@@ -30,8 +30,7 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000068:                   # @func0000000000000068
 	lui	a2, 524288
-	addi	a2, a2, -1
-	xor	a1, a1, a2
+	xnor	a1, a1, a2
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret

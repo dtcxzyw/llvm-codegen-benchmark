@@ -54,9 +54,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000066:                   # @func0000000000000066
 	sext.w	a1, a1
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a0, a0, a2
+	bseti	a2, zero, 63
+	xnor	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

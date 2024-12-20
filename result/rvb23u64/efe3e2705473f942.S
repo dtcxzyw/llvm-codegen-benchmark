@@ -30,8 +30,7 @@ func00000000000000ea:                   # @func00000000000000ea
 	sext.w	a0, a0
 	slliw	a1, a1, 1
 	lui	a2, 524288
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
+	xnor	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func00000000000000aa:                   # @func00000000000000aa

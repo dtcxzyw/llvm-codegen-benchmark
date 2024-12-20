@@ -14,8 +14,7 @@ func0000000000000027:                   # @func0000000000000027
 	srli	a1, a1, 32
 	addw	a0, a0, a1
 	lui	a1, 524288
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	xnor	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srli	a1, a1, 32

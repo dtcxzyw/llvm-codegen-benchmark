@@ -3,9 +3,8 @@ func0000000000000005:                   # @func0000000000000005
 	sext.w	a0, a0
 	lui	a2, 16380
 	czero.eqz	a1, a2, a1
-	lui	a2, 4
-	addiw	a2, a2, -1
-	or	a1, a1, a2
+	lui	a2, 1048572
+	orn	a1, a1, a2
 	lui	a2, 128
 	addi	a0, a0, -1
 	addiw	a2, a2, -1

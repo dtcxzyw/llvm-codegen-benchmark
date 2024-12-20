@@ -8,10 +8,9 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a1, a1, -2048
-	li	a2, -1
+	bseti	a2, zero, 63
 	bclri	a1, a1, 11
-	srli	a2, a2, 1
 	sub	a1, a1, a0
-	xor	a0, a0, a2
+	xnor	a0, a0, a2
 	sltu	a0, a0, a1
 	ret

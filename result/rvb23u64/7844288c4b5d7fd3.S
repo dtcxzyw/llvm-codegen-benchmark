@@ -4,9 +4,8 @@ func0000000000000024:                   # @func0000000000000024
 	and	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	lui	a3, 256
-	addiw	a3, a3, -1
-	or	a2, a2, a3
+	lui	a3, 1048320
+	orn	a2, a2, a3
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	and	a0, a0, a1

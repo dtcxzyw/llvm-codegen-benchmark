@@ -4,9 +4,8 @@ func000000000000000f:                   # @func000000000000000f
 	addw	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	lui	a3, 16
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	lui	a3, 1048560
+	xnor	a2, a2, a3
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

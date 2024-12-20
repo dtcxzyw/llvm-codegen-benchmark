@@ -6,12 +6,11 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 48
-	lui	a2, 524272
+	lui	a2, 524304
 	srli	a1, a1, 16
-	addi	a2, a2, 1
-	slli	a2, a2, 32
 	addi	a2, a2, -1
-	and	a0, a0, a2
+	slli	a2, a2, 32
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -28,9 +27,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 48
-	lui	a2, 1032193
+	lui	a2, 16383
 	slli	a2, a2, 36
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

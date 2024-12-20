@@ -8,12 +8,10 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, 1016
 	lui	a2, 1048568
-	and	a1, a1, a0
-	add	a1, a1, a2
-	lui	a2, 1047560
-	addiw	a2, a2, -1
-	and	a0, a0, a2
-	or	a0, a0, a1
+	and	a3, a0, a1
+	add	a2, a2, a3
+	andn	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a1, 5

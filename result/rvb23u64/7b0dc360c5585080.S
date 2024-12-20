@@ -46,9 +46,8 @@ func000000000000000e:                   # @func000000000000000e
 	slli	a1, a1, 25
 	slli	a0, a0, 21
 	or	a0, a0, a1
-	lui	a1, 528896
-	addiw	a1, a1, -1
-	or	a0, a0, a1
+	lui	a1, 519680
+	orn	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 8

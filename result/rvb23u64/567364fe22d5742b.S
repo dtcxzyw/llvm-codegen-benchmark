@@ -1,7 +1,6 @@
 func0000000000000042:                   # @func0000000000000042
-	li	a3, -1
-	srli	a3, a3, 1
-	xor	a2, a2, a3
+	bseti	a3, zero, 63
+	xnor	a2, a2, a3
 	binvi	a1, a1, 63
 	or	a1, a1, a2
 	seqz	a1, a1

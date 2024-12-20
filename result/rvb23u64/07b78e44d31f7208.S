@@ -8,10 +8,9 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 63
-	lui	a2, 1016576
+	lui	a2, 32000
 	srli	a1, a1, 41
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -23,10 +22,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 61
-	lui	a2, 1019904
+	lui	a2, 28672
 	srli	a1, a1, 37
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

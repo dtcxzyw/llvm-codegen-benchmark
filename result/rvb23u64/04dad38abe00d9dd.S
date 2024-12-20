@@ -4,9 +4,8 @@ func0000000000000005:                   # @func0000000000000005
 	bseti	a0, a0, 20
 	ret
 func0000000000000001:                   # @func0000000000000001
-	lui	a1, 526336
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a1, 522240
+	andn	a0, a0, a1
 	lui	a1, 258048
 	or	a0, a0, a1
 	ret

@@ -33,9 +33,9 @@ func0000000000000181:                   # @func0000000000000181
 func00000000000002a4:                   # @func00000000000002a4
 	sext.w	a0, a0
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
+	srli	a1, a1, 33
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	sltiu	a0, a0, 31

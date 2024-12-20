@@ -1,7 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524032
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	ret
@@ -12,9 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 24
 	ret
 func0000000000000002:                   # @func0000000000000002
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524032
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	ret

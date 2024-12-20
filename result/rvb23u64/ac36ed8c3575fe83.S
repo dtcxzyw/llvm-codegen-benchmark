@@ -1,7 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -43,9 +42,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	ret
 func000000000000002a:                   # @func000000000000002a
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func0000000000000079:                   # @func0000000000000079
@@ -129,9 +127,8 @@ func0000000000000048:                   # @func0000000000000048
 	sltu	a0, a2, a0
 	ret
 func000000000000006a:                   # @func000000000000006a
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func000000000000004a:                   # @func000000000000004a

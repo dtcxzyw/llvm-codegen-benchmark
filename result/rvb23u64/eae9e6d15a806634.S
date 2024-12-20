@@ -31,8 +31,7 @@ func00000000000000ab:                   # @func00000000000000ab
 	ret
 func00000000000001b8:                   # @func00000000000001b8
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	subw	a0, a0, a1
 	sltu	a0, a2, a0
@@ -119,8 +118,7 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	subw	a0, a0, a1
 	sltu	a0, a2, a0

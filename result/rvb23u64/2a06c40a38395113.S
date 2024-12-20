@@ -28,9 +28,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	ret
 func0000000000000038:                   # @func0000000000000038
 	srai	a1, a1, 1
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func00000000000000e8:                   # @func00000000000000e8

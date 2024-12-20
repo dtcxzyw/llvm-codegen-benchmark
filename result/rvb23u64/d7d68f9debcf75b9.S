@@ -41,14 +41,13 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, 1048560
-	addi	a2, a2, 1
-	slli.uw	a2, a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	li	a2, 625
-	slli	a2, a2, 36
-	addi	a2, a2, 1
-	mul	a1, a1, a2
+	slli	a3, a2, 32
+	add.uw	a2, a2, a3
+	li	a3, 625
+	slli	a3, a3, 36
+	andn	a1, a1, a2
+	addi	a3, a3, 1
+	mul	a1, a1, a3
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

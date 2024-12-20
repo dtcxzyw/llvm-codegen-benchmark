@@ -7,14 +7,13 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000063:                   # @func0000000000000063
 	srli	a2, a2, 53
-	li	a3, 3
+	li	a3, -3
 	snez	a2, a2
 	slli	a3, a3, 52
 	slli	a2, a2, 52
-	addi	a3, a3, -1
-	and	a1, a1, a3
-	or	a0, a0, a2
+	andn	a1, a1, a3
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	snez	a1, a1

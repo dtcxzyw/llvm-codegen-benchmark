@@ -16,19 +16,17 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
 	lui	a2, 4096
 	czero.eqz	a1, a2, a1
-	lui	a2, 4112
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 1044464
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 26
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a1, a1
-	lui	a2, 1040328
+	lui	a2, 8248
 	sltiu	a1, a1, 1501
-	addiw	a2, a2, -1
 	xori	a1, a1, 1
 	slli	a1, a1, 5
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

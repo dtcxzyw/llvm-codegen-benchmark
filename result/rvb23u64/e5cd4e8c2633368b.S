@@ -63,12 +63,11 @@ func0000000000000602:                   # @func0000000000000602
 	ret
 func0000000000000094:                   # @func0000000000000094
 	sext.w	a2, a0
-	lui	a3, 266240
-	addiw	a3, a3, -1
+	lui	a3, 782336
+	andn	a0, a0, a3
 	slti	a2, a2, 0
-	and	a0, a0, a3
-	xori	a2, a2, 1
 	binvi	a0, a0, 30
+	xori	a2, a2, 1
 	seqz	a0, a0
 	or	a1, a1, a2
 	or	a0, a0, a1

@@ -33,8 +33,7 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000001d:                   # @func000000000000001d
 	slli	a2, a2, 23
 	or	a1, a1, a2
-	lui	a2, 3577
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 1044999
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	ret

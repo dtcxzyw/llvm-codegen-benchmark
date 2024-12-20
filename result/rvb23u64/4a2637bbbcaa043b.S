@@ -10,9 +10,9 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000019:                   # @func0000000000000019
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
+	srli	a1, a1, 33
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

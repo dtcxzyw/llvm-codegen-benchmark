@@ -2,9 +2,8 @@ func0000000000000541:                   # @func0000000000000541
 	sext.w	a2, a0
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
+	xnor	a0, a0, a3
 	addi	a2, a2, 1
-	xor	a0, a0, a3
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	seqz	a1, a2
@@ -31,8 +30,7 @@ func0000000000000d46:                   # @func0000000000000d46
 	sext.w	a2, a0
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a0, a0, a3
+	xnor	a0, a0, a3
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	slti	a1, a2, 0

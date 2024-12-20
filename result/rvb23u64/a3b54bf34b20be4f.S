@@ -21,9 +21,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a2, a2, 59
-	li	a3, -32
-	rori	a3, a3, 37
-	and	a1, a1, a3
+	li	a3, 31
+	slli	a3, a3, 27
+	andn	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

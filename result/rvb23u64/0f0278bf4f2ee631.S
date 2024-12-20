@@ -10,9 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 	zext.w	a0, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524032
+	andn	a1, a1, a2
 	slli	a0, a0, 20
 	or	a0, a0, a1
 	zext.w	a0, a0

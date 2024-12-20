@@ -47,9 +47,8 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	lui	a3, 788496
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	lui	a3, 260080
+	andn	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	bseti	a0, a0, 22

@@ -10,10 +10,9 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000d:                   # @func000000000000000d
 	sext.w	a2, a2
 	or	a1, a1, a2
-	lui	a2, 1015809
+	lui	a2, 32767
 	slli	a2, a2, 5
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	add.uw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007

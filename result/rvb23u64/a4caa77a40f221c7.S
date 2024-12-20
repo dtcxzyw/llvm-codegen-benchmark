@@ -40,9 +40,8 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000001b:                   # @func000000000000001b
 	slliw	a1, a1, 25
 	or	a0, a0, a1
-	lui	a1, 4608
-	addiw	a1, a1, -1
-	or	a0, a0, a1
+	lui	a1, 1043968
+	orn	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slliw	a1, a1, 25

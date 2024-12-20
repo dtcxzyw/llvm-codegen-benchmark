@@ -10,7 +10,6 @@ func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 255
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	lui	a1, 1048560
+	xnor	a0, a0, a1
 	ret

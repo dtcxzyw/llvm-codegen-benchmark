@@ -67,18 +67,16 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001c:                   # @func000000000000001c
 	slliw	a2, a2, 16
 	or	a0, a0, a2
-	lui	a2, 788496
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 260080
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slliw	a2, a2, 24
 	or	a0, a0, a2
-	lui	a2, 788496
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 260080
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret

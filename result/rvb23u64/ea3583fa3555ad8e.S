@@ -19,10 +19,9 @@ func0000000000000019:                   # @func0000000000000019
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 524288
 	or	a0, a0, a1
-	addiw	a2, a2, -1
-	xor	a0, a0, a2
+	lui	a1, 524288
+	xnor	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a2, a1

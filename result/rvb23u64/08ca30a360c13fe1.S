@@ -41,9 +41,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
-	lui	a2, 261632
-	addiw	a2, a2, -1
-	and	a2, a2, a0
+	lui	a2, 786944
+	andn	a2, a0, a2
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	ret

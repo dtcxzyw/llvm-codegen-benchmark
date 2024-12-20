@@ -8,8 +8,7 @@ func0000000000000026:                   # @func0000000000000026
 func0000000000000075:                   # @func0000000000000075
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
@@ -24,8 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000074:                   # @func0000000000000074
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	or	a0, a0, a1

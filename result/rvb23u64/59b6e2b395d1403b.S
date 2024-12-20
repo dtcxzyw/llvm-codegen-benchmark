@@ -15,13 +15,12 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000005:                   # @func0000000000000005
 	or	a1, a1, a2
-	lui	a2, 786432
+	lui	a2, 262144
 	slli	a1, a1, 63
-	addiw	a2, a2, -1
+	bseti	a2, a2, 31
 	srli	a1, a1, 1
-	bclri	a2, a2, 31
-	bclri	a2, a2, 62
-	and	a0, a0, a2
+	bseti	a2, a2, 62
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001

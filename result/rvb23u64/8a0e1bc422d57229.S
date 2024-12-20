@@ -62,10 +62,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000036:                   # @func0000000000000036
 	slliw	a2, a2, 24
-	lui	a3, 1046544
+	lui	a3, 2032
 	slliw	a0, a0, 16
-	addiw	a3, a3, -1
-	and	a1, a1, a3
+	andn	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

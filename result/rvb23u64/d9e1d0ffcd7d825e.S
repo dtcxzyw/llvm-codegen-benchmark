@@ -15,9 +15,8 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000004a:                   # @func000000000000004a
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	li	a3, -1
-	srli	a3, a3, 1
-	xor	a1, a1, a3
+	bseti	a3, zero, 63
+	xnor	a1, a1, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 2
 	slt	a0, a1, a0
@@ -49,9 +48,8 @@ func0000000000000048:                   # @func0000000000000048
 func00000000000000ca:                   # @func00000000000000ca
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	li	a3, -1
-	srli	a3, a3, 1
-	xor	a1, a1, a3
+	bseti	a3, zero, 63
+	xnor	a1, a1, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 2
 	slt	a0, a1, a0

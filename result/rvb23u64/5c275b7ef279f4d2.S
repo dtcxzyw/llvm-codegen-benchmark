@@ -1,10 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	slliw	a2, a2, 16
 	or	a0, a0, a1
-	lui	a1, 1046784
 	or	a0, a0, a2
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a1, 1792
+	andn	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a2, a2, 16

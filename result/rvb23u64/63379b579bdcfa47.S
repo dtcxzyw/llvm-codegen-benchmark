@@ -13,11 +13,10 @@ func0000000000000005:                   # @func0000000000000005
 	binvi	a2, a2, 17
 	seqz	a2, a2
 	or	a1, a1, a2
-	lui	a2, 1044736
-	addiw	a2, a2, -1
+	lui	a2, 3840
 	andi	a1, a1, 1
 	slli	a1, a1, 20
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -30,8 +29,7 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a1, a2, a1
 	lui	a2, 532544
 	add	a1, a1, a2
-	lui	a2, 1039296
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 9280
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

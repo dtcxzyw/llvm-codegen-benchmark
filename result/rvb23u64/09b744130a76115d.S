@@ -30,8 +30,7 @@ func0000000000000000:                   # @func0000000000000000
 	srai	a1, a0, 63
 	srli	a1, a1, 62
 	add	a0, a0, a1
-	li	a1, -1
 	srai	a0, a0, 2
-	srli	a1, a1, 1
-	xor	a0, a0, a1
+	bseti	a1, zero, 63
+	xnor	a0, a0, a1
 	ret

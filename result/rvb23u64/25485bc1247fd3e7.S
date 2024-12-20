@@ -31,9 +31,8 @@ func00000000000004ca:                   # @func00000000000004ca
 	or	a0, a0, a1
 	ret
 func0000000000000d46:                   # @func0000000000000d46
-	li	a3, -1
-	srli	a3, a3, 1
-	xor	a2, a2, a3
+	bseti	a3, zero, 63
+	xnor	a2, a2, a3
 	slt	a1, a2, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1

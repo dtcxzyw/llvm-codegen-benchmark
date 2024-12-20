@@ -1,9 +1,8 @@
 func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a2
-	lui	a2, 1047568
+	lui	a2, 1008
 	slli	a0, a0, 16
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	lui	a2, 523504
 	and	a0, a0, a2
 	or	a0, a0, a1

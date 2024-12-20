@@ -7,8 +7,7 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a2, 1048575
 	slli	a1, a1, 12
 	zext.w	a2, a2
-	not	a2, a2
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -19,9 +18,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 40
-	li	a2, -256
-	rori	a2, a2, 24
-	and	a0, a0, a2
+	li	a2, 255
+	slli	a2, a2, 40
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007

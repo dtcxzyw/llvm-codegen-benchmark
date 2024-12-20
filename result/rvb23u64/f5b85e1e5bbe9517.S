@@ -1,8 +1,7 @@
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
@@ -85,9 +84,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 func000000000000004a:                   # @func000000000000004a

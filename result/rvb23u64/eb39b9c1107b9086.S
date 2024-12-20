@@ -2,8 +2,7 @@ func00000000000000b8:                   # @func00000000000000b8
 	sext.w	a2, a0
 	lui	a3, 524288
 	addw	a0, a0, a1
-	addi	a3, a3, -1
-	xor	a1, a1, a3
+	xnor	a1, a1, a3
 	li	a3, -208
 	sext.w	a1, a1
 	sltu	a1, a1, a2

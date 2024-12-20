@@ -22,12 +22,11 @@ func0000000000000024:                   # @func0000000000000024
 	and	a0, a0, a1
 	ret
 func0000000000000424:                   # @func0000000000000424
-	lui	a2, 1048574
+	lui	a2, 1048448
 	addi	a0, a0, -31
-	addi	a2, a2, 1
-	slli.uw	a2, a2, 19
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	slli	a3, a2, 32
+	add.uw	a2, a2, a3
+	andn	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

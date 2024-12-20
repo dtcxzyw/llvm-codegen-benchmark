@@ -6,11 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000019:                   # @func0000000000000019
 	add	a1, a1, a2
-	lui	a2, 1044736
+	lui	a2, 3840
 	slli	a1, a1, 60
-	addiw	a2, a2, -1
 	srli	a1, a1, 40
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d

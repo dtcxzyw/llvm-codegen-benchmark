@@ -1,9 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
 	xor	a0, a0, a1
-	lui	a1, 524288
 	sraiw	a0, a0, 31
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	lui	a1, 524288
+	xnor	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1

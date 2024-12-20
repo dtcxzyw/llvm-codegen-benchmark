@@ -24,9 +24,8 @@ func0000000000000181:                   # @func0000000000000181
 	or	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
-	lui	a3, 524304
-	addi	a3, a3, -1
-	and	a2, a2, a3
+	lui	a3, 524272
+	andn	a2, a2, a3
 	srliw	a1, a1, 16
 	or	a1, a1, a2
 	sext.w	a1, a1

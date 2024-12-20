@@ -23,8 +23,7 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000078:                   # @func0000000000000078
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	and	a0, a0, a1
@@ -40,8 +39,7 @@ func000000000000002a:                   # @func000000000000002a
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	slt	a1, a2, a1
 	and	a0, a0, a1
@@ -63,8 +61,7 @@ func0000000000000027:                   # @func0000000000000027
 func0000000000000067:                   # @func0000000000000067
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	slt	a1, a2, a1
 	xori	a1, a1, 1
@@ -93,8 +90,7 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000035:                   # @func0000000000000035
 	sext.w	a1, a1
 	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a2, a2, a3
+	xnor	a2, a2, a3
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1

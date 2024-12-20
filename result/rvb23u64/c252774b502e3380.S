@@ -14,50 +14,50 @@ func0000000000000026:                   # @func0000000000000026
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 33
 	sltu	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 33
 	sltu	a0, a0, a1
 	ret
 func000000000000004a:                   # @func000000000000004a
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 33
 	slt	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 33
 	slt	a0, a1, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
-	lui	a3, 32
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	lui	a3, 1048544
+	slli	a1, a1, 47
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 47
 	sltu	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a1, a1, 33
+	andn	a2, a2, a3
 	addw	a0, a0, a2
-	and	a1, a1, a3
+	srli	a1, a1, 33
 	sltu	a0, a1, a0
 	ret
 func0000000000000068:                   # @func0000000000000068

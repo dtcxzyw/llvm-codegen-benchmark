@@ -2,11 +2,10 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
-	lui	a1, 14336
 	or	a0, a0, a2
-	andi	a2, a0, 1
-	add	a0, a0, a2
+	andi	a1, a0, 1
+	add	a0, a0, a1
 	srli	a0, a0, 1
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a1, 1034240
+	andn	a0, a0, a1
 	ret

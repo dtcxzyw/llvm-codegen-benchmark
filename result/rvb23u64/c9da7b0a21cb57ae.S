@@ -49,14 +49,13 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000038:                   # @func0000000000000038
 	sext.w	a1, a1
-	lui	a3, 1047560
-	addi	a3, a3, -1
-	and	a2, a2, a3
+	lui	a3, 1016
+	andn	a2, a2, a3
 	lui	a3, 20480
 	addiw	a3, a3, 1280
 	sltiu	a1, a1, 17
-	xori	a1, a1, 1
 	sext.w	a2, a2
+	xori	a1, a1, 1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	and	a0, a0, a1

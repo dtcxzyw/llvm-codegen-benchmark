@@ -23,10 +23,8 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a3, 7
 	and	a2, a2, a3
 	add	a1, a1, a2
-	lui	a2, 1048569
-	addiw	a2, a2, -1
 	and	a1, a1, a3
-	and	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

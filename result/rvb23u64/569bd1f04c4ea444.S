@@ -1,7 +1,6 @@
 func0000000000000d4a:                   # @func0000000000000d4a
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a2, a2, a0
+	bseti	a2, zero, 63
+	xnor	a2, a0, a2
 	slt	a1, a2, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

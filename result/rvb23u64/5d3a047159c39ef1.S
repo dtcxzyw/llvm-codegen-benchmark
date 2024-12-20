@@ -8,17 +8,15 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 59
-	lui	a2, 1015840
+	lui	a2, 32736
 	srli	a1, a1, 42
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 59
-	lui	a2, 524352
+	lui	a2, 524224
 	srli	a1, a1, 35
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

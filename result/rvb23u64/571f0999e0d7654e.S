@@ -14,9 +14,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000023:                   # @func0000000000000023
 	slliw	a1, a1, 24
-	lui	a2, 320
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 1048256
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 18
 	ret

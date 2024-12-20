@@ -27,9 +27,8 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 257
 	ret
 func0000000000000003:                   # @func0000000000000003
-	lui	a2, 524352
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524224
+	andn	a1, a1, a2
 	addi	a1, a1, -256
 	sh3add.uw	a0, a1, a0
 	ret

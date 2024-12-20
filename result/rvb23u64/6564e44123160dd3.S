@@ -59,9 +59,8 @@ func000000000000000d:                   # @func000000000000000d
 	addi	a0, a0, 225
 	ret
 func000000000000000c:                   # @func000000000000000c
-	lui	a2, 1044672
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 3904
+	andn	a1, a1, a2
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	bseti	a0, a0, 18

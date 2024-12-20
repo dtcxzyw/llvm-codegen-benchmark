@@ -25,10 +25,9 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 22
 	or	a0, a0, a1
-	lui	a1, 3577
 	or	a0, a0, a2
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a1, 1044999
+	andn	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1

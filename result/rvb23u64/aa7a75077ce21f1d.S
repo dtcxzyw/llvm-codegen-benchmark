@@ -27,11 +27,10 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000004:                   # @func0000000000000004
 	slli	a2, a2, 8
 	or	a0, a0, a1
-	li	a1, 255
+	li	a1, -255
 	or	a0, a0, a2
 	slli	a1, a1, 24
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 40

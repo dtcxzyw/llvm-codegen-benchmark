@@ -3,13 +3,12 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a3, a3, -1
 	slli	a3, a3, 32
 	and	a2, a2, a3
-	lui	a3, 786432
-	slli	a0, a0, 61
-	addi	a3, a3, 1
-	slli	a3, a3, 32
+	lui	a3, 262144
 	addi	a3, a3, -1
-	and	a1, a1, a3
-	or	a0, a0, a2
+	slli	a3, a3, 32
+	andn	a1, a1, a3
+	or	a1, a1, a2
+	slli	a0, a0, 61
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b

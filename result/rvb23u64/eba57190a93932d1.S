@@ -17,9 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
 	or	a1, a1, a2
-	lui	a2, 524304
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524272
+	andn	a1, a1, a2
 	andi	a0, a0, 63
 	or	a0, a0, a1
 	ret

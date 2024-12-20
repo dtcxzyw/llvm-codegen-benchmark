@@ -12,9 +12,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000021:                   # @func0000000000000021
 	binvi	a1, a1, 63
-	lui	a2, 8
-	addiw	a2, a2, -1
-	xor	a0, a0, a2
+	lui	a2, 1048568
+	xnor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

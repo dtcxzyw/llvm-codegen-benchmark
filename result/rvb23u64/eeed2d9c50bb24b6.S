@@ -15,10 +15,10 @@ func0000000000000054:                   # @func0000000000000054
 	sltu	a0, a1, a0
 	ret
 func0000000000000019:                   # @func0000000000000019
-	lui	a2, 131072
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
+	lui	a2, 917504
+	slli	a0, a0, 35
+	andn	a1, a1, a2
+	srli	a0, a0, 35
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -29,10 +29,10 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	lui	a2, 131072
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
+	lui	a2, 917504
+	slli	a0, a0, 35
+	andn	a1, a1, a2
+	srli	a0, a0, 35
 	sltu	a0, a1, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
@@ -41,10 +41,10 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a0, a1
 	ret
 func0000000000000058:                   # @func0000000000000058
-	lui	a2, 4096
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
+	lui	a2, 1044480
+	slli	a0, a0, 40
+	andn	a1, a1, a2
+	srli	a0, a0, 40
 	sltu	a0, a0, a1
 	ret
 func0000000000000061:                   # @func0000000000000061
@@ -54,9 +54,9 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000059:                   # @func0000000000000059
 	lui	a2, 524288
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	and	a0, a0, a2
+	slli	a0, a0, 33
+	andn	a1, a1, a2
+	srli	a0, a0, 33
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

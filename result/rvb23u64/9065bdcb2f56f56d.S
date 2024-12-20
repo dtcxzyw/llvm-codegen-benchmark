@@ -1,16 +1,14 @@
 func000000000000000e:                   # @func000000000000000e
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 524032
+	andn	a0, a0, a2
 	lui	a2, 247552
 	add	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524032
+	andn	a1, a1, a2
 	lui	a2, 13824
 	add	a0, a0, a2
 	or	a0, a0, a1

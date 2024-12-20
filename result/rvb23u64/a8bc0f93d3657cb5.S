@@ -1,11 +1,10 @@
 func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 32
 	or	a0, a0, a1
-	lui	a1, 917504
-	addi	a1, a1, 1
-	slli	a1, a1, 32
+	lui	a1, 131072
 	addi	a1, a1, -1
-	and	a0, a0, a1
+	slli	a1, a1, 32
+	andn	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000001d:                   # @func000000000000001d

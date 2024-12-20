@@ -30,18 +30,16 @@ func000000000000004e:                   # @func000000000000004e
 	slli	a0, a0, 25
 	slli	a1, a1, 21
 	or	a0, a0, a1
-	lui	a1, 528896
-	addiw	a1, a1, -1
-	or	a0, a0, a1
+	lui	a1, 519680
+	orn	a0, a0, a1
 	ret
 func000000000000007b:                   # @func000000000000007b
 	andi	a1, a1, 247
 	slliw	a0, a0, 25
 	slli	a1, a1, 21
 	or	a0, a0, a1
-	lui	a1, 4608
-	addiw	a1, a1, -1
-	or	a0, a0, a1
+	lui	a1, 1043968
+	orn	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 255

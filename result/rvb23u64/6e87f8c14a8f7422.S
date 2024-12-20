@@ -8,10 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	lui	a3, 31776
+	lui	a3, 1016800
 	slliw	a1, a1, 27
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	andn	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

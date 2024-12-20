@@ -7,9 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000f:                   # @func000000000000000f
 	lui	a2, 256
 	addw	a1, a1, a2
-	lui	a2, 1044496
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 4080
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e

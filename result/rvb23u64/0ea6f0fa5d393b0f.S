@@ -1,8 +1,8 @@
 func000000000000000f:                   # @func000000000000000f
-	lui	a3, 512
-	addiw	a3, a3, -1
-	and	a2, a2, a3
-	and	a1, a1, a3
+	lui	a3, 1048064
+	slli	a1, a1, 43
+	andn	a2, a2, a3
+	srli	a1, a1, 43
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

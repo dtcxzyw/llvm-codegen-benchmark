@@ -1,7 +1,6 @@
 func000000000000002a:                   # @func000000000000002a
-	lui	a2, 524544
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 524032
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	ret

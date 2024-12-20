@@ -166,9 +166,8 @@ func0000000000000c21:                   # @func0000000000000c21
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a1, a1, a2
+	bseti	a2, zero, 63
+	xnor	a1, a1, a2
 	orn	a0, a1, a0
 	seqz	a0, a0
 	ret

@@ -14,9 +14,8 @@ func0000000000000000:                   # @func0000000000000000
 	czero.eqz	a1, a3, a1
 	li	a3, 1040
 	czero.eqz	a0, a3, a0
-	lui	a3, 786560
 	or	a1, a1, a2
 	or	a0, a0, a1
-	addiw	a3, a3, -1
-	and	a0, a0, a3
+	lui	a1, 262016
+	andn	a0, a0, a1
 	ret

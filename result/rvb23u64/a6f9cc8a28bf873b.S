@@ -31,9 +31,8 @@ func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1
 	ret
 func000000000000002a:                   # @func000000000000002a
-	li	a3, -1
-	srli	a3, a3, 1
-	xor	a2, a2, a3
+	bseti	a3, zero, 63
+	xnor	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0
 	ret

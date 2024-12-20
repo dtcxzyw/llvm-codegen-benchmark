@@ -13,8 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	lui	a2, 15
-	addiw	a2, a2, -1
-	and	a1, a1, a2
+	lui	a2, 1048561
+	andn	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret

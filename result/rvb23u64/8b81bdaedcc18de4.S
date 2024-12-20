@@ -1,7 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	lui	a3, 4096
-	addi	a3, a3, -1
-	or	a2, a2, a3
+	lui	a3, 1044480
+	orn	a2, a2, a3
 	subw	a0, a1, a0
 	addw	a0, a0, a2
 	ret

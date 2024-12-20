@@ -6,11 +6,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 49
-	lui	a2, 1015809
+	lui	a2, 32767
 	srli	a1, a1, 32
 	slli	a2, a2, 20
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

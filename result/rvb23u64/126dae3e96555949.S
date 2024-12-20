@@ -31,9 +31,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slliw	a1, a1, 17
-	lui	a2, 1046560
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	lui	a2, 2016
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

@@ -44,9 +44,8 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a3, 32768
 	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
-	lui	a3, 1014016
-	addiw	a3, a3, -1
+	lui	a3, 34560
 	or	a1, a1, a2
-	and	a0, a0, a3
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret

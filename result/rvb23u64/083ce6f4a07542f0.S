@@ -12,10 +12,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	lui	a2, 16
+	lui	a2, 1048560
 	addi	a1, a1, -1
-	addi	a2, a2, -1
-	or	a1, a1, a2
+	orn	a1, a1, a2
 	li	a2, 255
 	addi	a0, a0, -1
 	czero.nez	a2, a2, a0

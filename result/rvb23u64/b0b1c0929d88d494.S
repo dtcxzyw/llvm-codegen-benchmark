@@ -15,9 +15,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, 60166
 	or	a1, a1, a2
-	lui	a2, 1043207
-	addi	a2, a2, -1
-	zext.w	a2, a2
-	and	a1, a1, a2
+	lui	a2, 529657
+	bclri	a2, a2, 31
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	ret

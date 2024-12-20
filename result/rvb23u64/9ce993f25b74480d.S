@@ -7,9 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
-	lui	a2, 918528
+	lui	a2, 130048
 	slli	a1, a1, 22
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

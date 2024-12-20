@@ -22,9 +22,8 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a1, a1, 32
 	slli	a0, a0, 32
 	or	a0, a0, a1
-	lui	a1, 65520
-	addiw	a1, a1, 1
+	lui	a1, 983056
+	addiw	a1, a1, -1
 	slli	a1, a1, 16
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret

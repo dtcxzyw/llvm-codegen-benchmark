@@ -47,9 +47,8 @@ func0000000000000184:                   # @func0000000000000184
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a2, a2, a0
-	li	a0, -1
-	srli	a0, a0, 1
-	xor	a0, a0, a1
+	bseti	a0, zero, 63
+	xnor	a0, a1, a0
 	slt	a0, a0, a2
 	ret
 func0000000000000188:                   # @func0000000000000188

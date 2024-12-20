@@ -5,8 +5,7 @@ func00000000000000e4:                   # @func00000000000000e4
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	slli.uw	a1, a1, 8
-	lui	a2, 16
-	addiw	a2, a2, -1
-	or	a1, a1, a2
+	lui	a2, 1048560
+	orn	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

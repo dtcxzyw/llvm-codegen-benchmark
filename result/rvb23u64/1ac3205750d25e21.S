@@ -18,10 +18,10 @@ func000000000000002f:                   # @func000000000000002f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	and	a2, a2, a3
+	slli	a0, a0, 33
+	andn	a2, a2, a3
 	add	a1, a1, a2
-	and	a0, a0, a3
+	srli	a0, a0, 33
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret

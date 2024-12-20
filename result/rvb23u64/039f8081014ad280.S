@@ -3,7 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	snez	a1, a1
 	slli	a1, a1, 13
 	or	a0, a0, a1
-	lui	a1, 1047560
-	addiw	a1, a1, -1
-	and	a0, a0, a1
+	lui	a1, 1016
+	andn	a0, a0, a1
 	ret

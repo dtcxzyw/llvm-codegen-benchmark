@@ -1,12 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
 	bseti	a3, zero, 35
 	and	a2, a2, a3
-	li	a3, 3
+	li	a3, -3
 	slli	a0, a0, 28
 	slli	a3, a3, 34
 	srli	a0, a0, 28
-	addi	a3, a3, -1
-	and	a1, a1, a3
+	andn	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
