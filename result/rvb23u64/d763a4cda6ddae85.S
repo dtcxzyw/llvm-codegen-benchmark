@@ -1,16 +1,16 @@
 func00000000000000fc:                   # @func00000000000000fc
 	slliw	a1, a1, 1
-	lui	a2, 2
-	slli	a1, a1, 2
-	addiw	a2, a2, 1292
-	ori	a1, a1, 1792
-	add	a0, a0, a2
+	ori	a1, a1, 448
+	sh2add	a0, a1, a0
+	lui	a1, 2
+	addiw	a1, a1, 1292
 	add	a0, a0, a1
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	slliw	a1, a1, 1
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 112
+	addi	a0, a0, 104
 	ret
 func000000000000002f:                   # @func000000000000002f
 	slli	a1, a1, 3
@@ -20,8 +20,9 @@ func000000000000002f:                   # @func000000000000002f
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	slliw	a1, a1, 1
+	addi	a1, a1, 1
 	sh2add	a0, a1, a0
-	addi	a0, a0, -516
+	addi	a0, a0, -520
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slliw	a1, a1, 1

@@ -8,8 +8,7 @@ func00000000000000fc:                   # @func00000000000000fc
 func00000000000000ff:                   # @func00000000000000ff
 	sh1add	a1, a1, a1
 	slliw	a1, a1, 2
-	slli	a1, a1, 2
-	ori	a1, a1, 128
-	add	a0, a0, a1
+	ori	a1, a1, 32
+	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret

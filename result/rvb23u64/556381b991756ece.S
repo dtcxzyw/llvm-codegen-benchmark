@@ -33,10 +33,12 @@ func00000000000000de:                   # @func00000000000000de
 	addi	a0, a0, 77
 	ret
 func000000000000019c:                   # @func000000000000019c
+	slli	a2, a2, 1
 	slli	a1, a1, 7
+	addi	a2, a2, 1
 	add	a0, a0, a1
-	sh2add	a0, a2, a0
-	addi	a0, a0, 22
+	sh1add	a0, a2, a0
+	addi	a0, a0, 20
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a2, a2, 4

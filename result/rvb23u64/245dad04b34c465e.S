@@ -1,6 +1,7 @@
 func0000000000000006:                   # @func0000000000000006
-	sh3add.uw	a0, a1, a0
-	addi	a0, a0, -8
+	zext.w	a1, a1
+	addi	a1, a1, -1
+	sh3add	a0, a1, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add.uw	a0, a1, a0

@@ -6,19 +6,22 @@ func0000000000000043:                   # @func0000000000000043
 	addi	a0, a0, 8
 	ret
 func0000000000000040:                   # @func0000000000000040
+	addi	a2, a2, 2
 	sh1add	a0, a1, a0
 	sh1add	a0, a2, a0
-	addi	a0, a0, 6
+	addi	a0, a0, 2
 	ret
 func000000000000007a:                   # @func000000000000007a
+	addi	a2, a2, 4
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
-	addi	a0, a0, 12
+	addi	a0, a0, -4
 	ret
 func000000000000007b:                   # @func000000000000007b
+	addi	a2, a2, 4
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
-	addi	a0, a0, 20
+	addi	a0, a0, 4
 	ret
 func000000000000006b:                   # @func000000000000006b
 	slli	a2, a2, 4

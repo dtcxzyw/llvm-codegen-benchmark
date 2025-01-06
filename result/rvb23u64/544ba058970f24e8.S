@@ -1,8 +1,8 @@
 func000000000000007f:                   # @func000000000000007f
-	slli	a2, a2, 7
-	slli	a1, a1, 6
+	slli	a2, a2, 5
+	slli	a1, a1, 4
 	or	a1, a1, a2
-	add	a0, a0, a1
+	sh2add	a0, a1, a0
 	ret
 func000000000000007c:                   # @func000000000000007c
 	slli	a2, a2, 9

@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	li	a3, 1
 	maxu	a2, a2, a3
+	addi	a2, a2, -1
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
-	addi	a0, a0, -4
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a3, 1

@@ -1,7 +1,7 @@
 func0000000000000034:                   # @func0000000000000034
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh1add	a0, a2, a0
-	addi	a0, a0, 2
 	ret
 func0000000000000036:                   # @func0000000000000036
 	sub	a2, a2, a1
@@ -20,13 +20,13 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func000000000000002a:                   # @func000000000000002a
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sub	a2, a2, a1
@@ -62,8 +62,8 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func000000000000003b:                   # @func000000000000003b
 	sub	a2, a2, a1
@@ -73,13 +73,13 @@ func000000000000003b:                   # @func000000000000003b
 	ret
 func000000000000001e:                   # @func000000000000001e
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh1add	a0, a2, a0
-	addi	a0, a0, 2
 	ret
 func0000000000000032:                   # @func0000000000000032
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh2add	a0, a2, a0
-	addi	a0, a0, 4
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a2, a2, a1
@@ -93,8 +93,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func0000000000000017:                   # @func0000000000000017
 	not	a1, a1
@@ -105,8 +105,8 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sub	a2, a2, a1
@@ -115,18 +115,18 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh2add	a0, a2, a0
-	addi	a0, a0, 4
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh2add	a0, a2, a0
-	addi	a0, a0, 4
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sub	a2, a2, a1
@@ -142,11 +142,11 @@ func000000000000003e:                   # @func000000000000003e
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sub	a2, a2, a1
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
-	addi	a0, a0, 8
 	ret

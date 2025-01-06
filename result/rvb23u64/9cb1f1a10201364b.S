@@ -10,8 +10,9 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func000000000000007b:                   # @func000000000000007b
 	sh3add	a0, a0, a2
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 24
+	addi	a0, a0, 16
 	ret
 func0000000000000013:                   # @func0000000000000013
 	li	a3, 912
@@ -28,6 +29,7 @@ func000000000000007e:                   # @func000000000000007e
 	ret
 func000000000000005a:                   # @func000000000000005a
 	add	a0, a0, a2
+	addi	a1, a1, 1
 	sh1add	a0, a1, a0
-	addi	a0, a0, -2
+	addi	a0, a0, -4
 	ret
