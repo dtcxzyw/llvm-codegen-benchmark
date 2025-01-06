@@ -1,6 +1,6 @@
 func0000000000000081:                   # @func0000000000000081
+	addi	a2, a2, 1
 	sh2add	a1, a2, a1
-	addi	a1, a1, 4
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

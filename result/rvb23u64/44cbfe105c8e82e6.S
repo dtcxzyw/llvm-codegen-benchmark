@@ -1,6 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 48
+	addi	a0, a0, 40
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a1, 3
@@ -25,43 +26,51 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
+	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -40
+	addi	a0, a0, -32
 	ret
 func000000000000003c:                   # @func000000000000003c
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 552
+	addi	a0, a0, 544
 	ret
 func000000000000001c:                   # @func000000000000001c
+	addi	a1, a1, -1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 10
+	addi	a0, a0, 14
 	ret
 func000000000000000f:                   # @func000000000000000f
+	addi	a1, a1, 8
 	sh3add	a0, a1, a0
-	addi	a0, a0, 1208
+	addi	a0, a0, 1144
 	ret
 func000000000000002e:                   # @func000000000000002e
 	add	a0, a0, a1
 	addi	a0, a0, 177
 	ret
 func0000000000000032:                   # @func0000000000000032
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 32
+	addi	a0, a0, 24
 	ret
 func000000000000003e:                   # @func000000000000003e
+	addi	a1, a1, 1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 36
+	addi	a0, a0, 32
 	ret
 func0000000000000012:                   # @func0000000000000012
+	addi	a1, a1, -226
 	sh2add	a0, a1, a0
 	lui	a1, 12
-	addiw	a1, a1, 120
+	addiw	a1, a1, 1024
 	add	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
+	addi	a1, a1, 2
 	sh2add	a0, a1, a0
 	lui	a1, 12
-	addiw	a1, a1, 1028
+	addiw	a1, a1, 1020
 	add	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
@@ -88,10 +97,12 @@ func0000000000000020:                   # @func0000000000000020
 	addi	a0, a0, 39
 	ret
 func000000000000003b:                   # @func000000000000003b
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, -24
+	addi	a0, a0, -32
 	ret
 func0000000000000013:                   # @func0000000000000013
+	addi	a1, a1, -1
 	sh2add	a0, a1, a0
-	addi	a0, a0, 876
+	addi	a0, a0, 880
 	ret

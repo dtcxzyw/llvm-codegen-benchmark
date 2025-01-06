@@ -12,9 +12,10 @@ func000000000000008a:                   # @func000000000000008a
 	ret
 func0000000000000310:                   # @func0000000000000310
 	li	a3, 272
+	addi	a0, a0, -1
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
-	li	a1, 1564
+	li	a1, 1565
 	sh3add	a0, a1, a0
 	ret

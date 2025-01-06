@@ -1,14 +1,13 @@
 func000000000000000f:                   # @func000000000000000f
-	srli	a1, a1, 14
-	andi	a1, a1, 1020
-	add	a0, a0, a1
-	addi	a0, a0, 1024
+	slli	a1, a1, 40
+	srli	a1, a1, 56
+	addi	a1, a1, 256
+	sh2add	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	srli	a1, a1, 3
-	andi	a1, a1, 508
-	add	a0, a0, a1
-	lui	a1, 5
-	addiw	a1, a1, 512
-	add	a0, a0, a1
+	slli	a1, a1, 52
+	srli	a1, a1, 57
+	li	a2, 1312
+	sh2add	a1, a2, a1
+	sh2add	a0, a1, a0
 	ret

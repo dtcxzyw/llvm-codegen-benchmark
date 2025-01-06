@@ -5,9 +5,9 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
-	srai	a1, a1, 1
-	add	a0, a0, a1
-	addi	a0, a0, -4
+	srai	a1, a1, 2
+	addi	a1, a1, -2
+	sh1add	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	srai	a1, a1, 4
@@ -17,9 +17,9 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	srai	a1, a1, 1
-	add	a0, a0, a1
-	addi	a0, a0, -4
+	srai	a1, a1, 2
+	addi	a1, a1, -2
+	sh1add	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
 	srai	a1, a1, 1

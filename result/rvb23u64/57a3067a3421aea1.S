@@ -16,8 +16,8 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000013:                   # @func0000000000000013
 	sext.w	a1, a1
 	max	a1, a1, zero
+	addi	a1, a1, 1
 	sh3add	a0, a1, a0
-	addi	a0, a0, 8
 	ret
 func000000000000003f:                   # @func000000000000003f
 	sext.w	a1, a1
