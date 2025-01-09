@@ -18,23 +18,20 @@ func0000000000000017:                   // @func0000000000000017
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	lsl	w8, w0, #23
-	and	w9, w1, #0xffff
-	orr	w0, w8, w9, lsl #13
+	ubfiz	w8, w1, #13, #16
+	orr	w0, w8, w0, lsl #23
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	lsl	w8, w0, #16
-	and	w9, w1, #0xffff
-	orr	w0, w8, w9, lsl #13
+	ubfiz	w8, w1, #13, #16
+	orr	w0, w8, w0, lsl #16
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	lsl	w8, w0, #1
-	and	w9, w1, #0xffff
-	orr	w0, w8, w9, lsl #9
+	ubfiz	w8, w1, #9, #16
+	orr	w0, w8, w0, lsl #1
 	ret
                                         // -- End function
 func0000000000000037:                   // @func0000000000000037
@@ -69,9 +66,8 @@ func0000000000000010:                   // @func0000000000000010
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	lsl	w8, w0, #12
-	and	w9, w1, #0xffff
-	orr	w0, w8, w9, lsl #4
+	ubfiz	w8, w1, #4, #16
+	orr	w0, w8, w0, lsl #12
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005

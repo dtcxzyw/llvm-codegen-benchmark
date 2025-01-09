@@ -1,7 +1,6 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	x8, x1, #0x1
-	lsl	x8, x8, #4
+	ubfiz	x8, x1, #4, #1
 	orr	x8, x8, x2, lsl #5
 	add	x0, x0, x8
 	ret
@@ -21,24 +20,22 @@ func0000000000000004:                   // @func0000000000000004
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	x8, x2, #0x38
-	lsl	x8, x8, #1
+	lsl	x8, x2, #1
+	and	x8, x8, #0x70
 	orr	x8, x8, x1, lsl #7
 	add	x0, x0, x8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	and	x8, x2, #0x1
-	lsl	x8, x8, #2
+	ubfiz	x8, x2, #2, #1
 	orr	x8, x8, x1, lsl #3
 	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
-	and	x8, x1, #0x3
-	lsl	x8, x8, #3
+	ubfiz	x8, x1, #3, #2
 	orr	x8, x8, x2, lsl #5
 	add	x0, x0, x8
 	ret

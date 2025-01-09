@@ -72,9 +72,9 @@ func00000000000000ea:                   // @func00000000000000ea
                                         // -- End function
 func00000000000000c8:                   // @func00000000000000c8
 // %bb.0:                               // %entry
-	and	w8, w2, #0xff
+	ubfiz	w8, w2, #4, #8
 	and	w9, w1, #0xff
-	orr	w8, w9, w8, lsl #4
+	orr	w8, w8, w9
 	cmp	w8, w0
 	cset	w0, hi
 	ret

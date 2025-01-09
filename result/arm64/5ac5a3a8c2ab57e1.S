@@ -5,9 +5,8 @@ func0000000000000007:                   // @func0000000000000007
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-                                        // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xc0
-	lsl	x0, x8, #8
+	lsl	w8, w0, #8
+	and	x0, x8, #0xc000
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006

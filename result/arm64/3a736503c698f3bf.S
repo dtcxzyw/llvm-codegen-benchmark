@@ -29,9 +29,9 @@ func0000000000000009:                   // @func0000000000000009
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xff
+	ubfiz	x8, x1, #1, #8
 	and	x9, x0, #0xfffffffffffffff9
-	orr	x0, x9, x8, lsl #1
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
@@ -43,8 +43,8 @@ func000000000000000d:                   // @func000000000000000d
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xff
+	ubfiz	x8, x1, #2, #8
 	and	x9, x0, #0xfffffffffffffffb
-	orr	x0, x9, x8, lsl #2
+	orr	x0, x9, x8
 	ret
                                         // -- End function

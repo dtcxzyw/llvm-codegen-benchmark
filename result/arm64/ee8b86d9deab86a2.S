@@ -7,8 +7,8 @@ func000000000000003f:                   // @func000000000000003f
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xf0
-	lsl	w8, w8, #16
+	lsl	w8, w1, #16
+	and	w8, w8, #0xf00000
 	orr	w8, w8, w0, lsl #24
 	and	w0, w8, #0xff00000
 	ret

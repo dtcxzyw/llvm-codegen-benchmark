@@ -16,8 +16,7 @@ func000000000000000f:                   // @func000000000000000f
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
                                         // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xfff0
-	lsr	x8, x8, #4
+	lsr	x8, x0, #4
 	mov	w0, #1048575                    // =0xfffff
 	bfi	x0, x8, #20, #12
 	ret

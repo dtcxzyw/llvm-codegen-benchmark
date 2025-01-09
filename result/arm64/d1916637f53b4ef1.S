@@ -1,9 +1,9 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	w8, #2040                       // =0x7f8
-	and	w9, w0, #0xff
-	movk	w8, #32768, lsl #16
-	eor	w0, w8, w9, lsl #3
+	ubfiz	w8, w0, #3, #8
+	mov	w9, #2040                       // =0x7f8
+	movk	w9, #32768, lsl #16
+	eor	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
@@ -14,8 +14,7 @@ func0000000000000006:                   // @func0000000000000006
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	lsl	w8, w8, #12
+	ubfiz	w8, w0, #12, #8
 	eor	w0, w8, #0x1000
 	ret
                                         // -- End function

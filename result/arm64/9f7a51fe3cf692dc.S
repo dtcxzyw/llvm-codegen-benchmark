@@ -8,10 +8,9 @@ func000000000000002f:                   // @func000000000000002f
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-                                        // kill: def $w2 killed $w2 def $x2
-	and	x8, x2, #0xff
+	lsl	w8, w2, #24
 	orr	x9, x0, x1
-	orr	x8, x9, x8, lsl #24
+	orr	x8, x9, x8
 	add	x0, x8, #30
 	ret
                                         // -- End function

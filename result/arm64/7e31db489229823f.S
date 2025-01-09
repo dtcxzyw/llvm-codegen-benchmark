@@ -1,7 +1,6 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	lsl	w8, w8, #3
+	ubfiz	w8, w1, #3, #16
 	bfi	w8, w0, #2, #1
 	mov	x0, x8
 	ret
@@ -29,9 +28,9 @@ func0000000000000011:                   // @func0000000000000011
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ubfiz	w8, w1, #30, #1
-	and	w9, w0, #0xffff
-	orr	w0, w8, w9, lsl #15
+	lsl	w8, w0, #15
+	orr	w8, w8, w1, lsl #30
+	and	w0, w8, #0x7fff8000
 	ret
                                         // -- End function
 func0000000000000039:                   // @func0000000000000039

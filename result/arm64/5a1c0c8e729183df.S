@@ -8,15 +8,15 @@ func0000000000000014:                   // @func0000000000000014
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w1, #8, #16
+	orr	w8, w8, w0
 	add	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w1, #8, #16
+	orr	w8, w8, w0
 	sub	w0, w8, #3072
 	ret
                                         // -- End function
@@ -34,8 +34,8 @@ func0000000000000015:                   // @func0000000000000015
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	orr	w8, w0, w8, lsl #1
+	ubfiz	w8, w1, #1, #16
+	orr	w8, w0, w8
 	add	w0, w8, #6
 	ret
                                         // -- End function

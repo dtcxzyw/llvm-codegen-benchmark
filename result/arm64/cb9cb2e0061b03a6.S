@@ -30,16 +30,16 @@ func0000000000000003:                   // @func0000000000000003
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #13, #16
 	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #13
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #13, #16
 	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #13
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
@@ -68,9 +68,9 @@ func000000000000001d:                   // @func000000000000001d
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #8, #16
 	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #8
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
@@ -87,9 +87,9 @@ func0000000000000019:                   // @func0000000000000019
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #8, #16
 	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #8
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
@@ -100,8 +100,8 @@ func000000000000000d:                   // @func000000000000000d
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #8, #16
 	orr	w9, w0, w1
-	orr	w0, w9, w8, lsl #8
+	orr	w0, w8, w9
 	ret
                                         // -- End function

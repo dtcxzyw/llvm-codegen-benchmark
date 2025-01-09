@@ -31,9 +31,9 @@ func00000000000000a8:                   // @func00000000000000a8
                                         // -- End function
 func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
+	ubfiz	w8, w1, #4, #8
 	and	w9, w0, #0xff
-	orr	w8, w9, w8, lsl #4
+	orr	w8, w8, w9
 	cmp	w8, #4095
 	cset	w0, eq
 	ret
@@ -64,9 +64,9 @@ func00000000000000b4:                   // @func00000000000000b4
                                         // -- End function
 func00000000000003ec:                   // @func00000000000003ec
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
+	ubfiz	w8, w1, #6, #8
 	and	w9, w0, #0xff
-	orr	w8, w9, w8, lsl #6
+	orr	w8, w8, w9
 	cmp	w8, #977
 	cset	w0, ne
 	ret
@@ -81,9 +81,9 @@ func00000000000002e1:                   // @func00000000000002e1
                                         // -- End function
 func00000000000003f4:                   // @func00000000000003f4
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
+	ubfiz	w8, w1, #5, #8
 	and	w9, w0, #0xff
-	orr	w8, w9, w8, lsl #5
+	orr	w8, w8, w9
 	cmp	w8, #1000
 	cset	w0, lo
 	ret

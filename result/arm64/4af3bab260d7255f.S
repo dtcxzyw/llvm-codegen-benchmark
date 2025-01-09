@@ -1,15 +1,13 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
                                         // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xffff
-	lsl	x0, x8, #1
+	ubfiz	x0, x0, #1, #16
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
                                         // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xffff
-	lsl	x0, x8, #20
+	ubfiz	x0, x0, #20, #16
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000

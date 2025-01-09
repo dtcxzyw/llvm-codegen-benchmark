@@ -16,8 +16,7 @@ func0000000000000041:                   // @func0000000000000041
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	lsr	x8, x0, x1
-	and	w8, w8, #0x1
-	lsl	w0, w8, #1
+	ubfiz	w0, w8, #1, #1
 	ret
                                         // -- End function
 func000000000000004c:                   // @func000000000000004c

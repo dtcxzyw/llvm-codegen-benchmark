@@ -18,12 +18,11 @@ func000000000000003f:                   // @func000000000000003f
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
+	lsl	w8, w1, #16
                                         // kill: def $w0 killed $w0 def $x0
-	and	x8, x0, #0xffff
-                                        // kill: def $w1 killed $w1 def $x1
 	mov	x9, #259484744155136            // =0xec0000000000
-	bfi	x8, x1, #16, #16
 	movk	x9, #47701, lsl #48
+	bfxil	x8, x0, #0, #16
 	orr	x0, x8, x9
 	ret
                                         // -- End function

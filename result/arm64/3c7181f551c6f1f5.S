@@ -6,36 +6,38 @@ func000000000000000a:                   // @func000000000000000a
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #8
+	ubfiz	w8, w1, #8, #8
+	orr	w8, w8, w0
 	lsr	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	and	w8, w1, #0xf0
-	orr	w8, w0, w8, lsl #12
+	lsl	w8, w1, #12
+	and	w8, w8, #0xf0000
+	orr	w8, w8, w0
 	lsr	w0, w8, #16
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #10
+	ubfiz	w8, w1, #10, #8
+	orr	w8, w0, w8
 	lsr	w0, w8, #6
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	orr	w8, w0, w8, lsl #5
+	ubfiz	w8, w1, #5, #8
+	orr	w8, w8, w0
 	lsr	w0, w8, #3
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xfc
-	orr	w8, w0, w8, lsl #16
+	lsl	w8, w1, #16
+	and	w8, w8, #0xfc0000
+	orr	w8, w8, w0
 	lsr	w0, w8, #18
 	ret
                                         // -- End function
@@ -47,8 +49,9 @@ func000000000000000b:                   // @func000000000000000b
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	and	w8, w1, #0xf0
-	orr	w8, w0, w8, lsl #12
+	lsl	w8, w1, #12
+	and	w8, w8, #0xf0000
+	orr	w8, w8, w0
 	lsr	w0, w8, #16
 	ret
                                         // -- End function

@@ -7,19 +7,17 @@ func0000000000000002:                   // @func0000000000000002
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
+	ubfiz	w9, w1, #10, #8
 	mov	w8, #4096                       // =0x1000
 	tst	w0, #0x1
-	lsl	w9, w9, #10
 	csel	w0, w8, w9, ne
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	and	w9, w1, #0xff
+	ubfiz	w9, w1, #10, #8
 	mov	w8, #16384                      // =0x4000
 	tst	w0, #0x1
-	lsl	w9, w9, #10
 	csel	w0, w8, w9, ne
 	ret
                                         // -- End function

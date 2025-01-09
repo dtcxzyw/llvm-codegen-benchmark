@@ -28,8 +28,7 @@ func0000000000000006:                   // @func0000000000000006
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	and	w8, w0, #0xff
-	lsl	w8, w8, #16
+	ubfiz	w8, w0, #16, #8
 	orr	w0, w8, w0, lsl #24
 	ret
                                         // -- End function

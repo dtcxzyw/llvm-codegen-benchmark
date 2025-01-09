@@ -15,9 +15,9 @@ func000000000000000f:                   // @func000000000000000f
 	mov	w8, #16777216                   // =0x1000000
 	movk	x9, #1, lsl #32
                                         // kill: def $w2 killed $w2 def $x2
+	ubfiz	x10, x2, #8, #8
 	csel	x8, x9, x8, ne
-	and	x9, x2, #0xff
 	orr	x8, x0, x8
-	orr	x0, x8, x9, lsl #8
+	orr	x0, x8, x10
 	ret
                                         // -- End function

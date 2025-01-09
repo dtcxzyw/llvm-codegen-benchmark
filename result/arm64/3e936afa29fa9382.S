@@ -21,9 +21,9 @@ func000000000000003c:                   // @func000000000000003c
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #8, #16
 	orr	w9, w0, w1
-	orr	w8, w9, w8, lsl #8
+	orr	w8, w9, w8
 	orr	w0, w8, #0xff
 	ret
                                         // -- End function

@@ -1,9 +1,9 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	mov	w9, #59                         // =0x3b
-	orr	w8, w0, w8, lsl #8
-	orr	w0, w8, w9
+	mov	w8, #59                         // =0x3b
+	ubfiz	w9, w1, #8, #8
+	orr	w8, w0, w8
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009

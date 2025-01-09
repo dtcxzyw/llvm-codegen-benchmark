@@ -30,9 +30,9 @@ func0000000000000013:                   // @func0000000000000013
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
+	ubfiz	w8, w2, #8, #16
 	and	w9, w1, #0xffff0000
-	orr	w8, w9, w8, lsl #8
-	orr	w0, w0, w8
+	orr	w9, w0, w9
+	orr	w0, w9, w8
 	ret
                                         // -- End function

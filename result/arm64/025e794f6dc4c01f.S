@@ -35,12 +35,12 @@ func000000000000003f:                   // @func000000000000003f
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	mov	w9, #1                          // =0x1
-	orr	w8, w1, w8, lsl #1
-	movk	w9, #16896, lsl #16
-	orr	w9, w0, w9
-	orr	w0, w8, w9
+	mov	w10, #1                         // =0x1
+	ubfiz	w8, w2, #1, #16
+	orr	w9, w1, w0
+	movk	w10, #16896, lsl #16
+	orr	w9, w9, w10
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d

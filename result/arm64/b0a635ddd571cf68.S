@@ -7,9 +7,9 @@ func000000000000003f:                   // @func000000000000003f
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	w8, #10240                      // =0x2800
-	add	w8, w1, w8
-	and	w8, w8, #0xffff
-	orr	w0, w0, w8, lsl #10
+	lsl	w8, w1, #10
+	add	w8, w8, #2560, lsl #12          // =10485760
+	and	w8, w8, #0x3fffc00
+	orr	w0, w8, w0
 	ret
                                         // -- End function

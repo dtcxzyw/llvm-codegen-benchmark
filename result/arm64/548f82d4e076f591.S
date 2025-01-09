@@ -5,13 +5,13 @@ func0000000000000007:                   // @func0000000000000007
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	w8, w0, #0xe0
-	lsl	w0, w8, #24
+	lsl	w8, w0, #24
+	and	w0, w8, #0xe0000000
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	and	w8, w0, #0xfc
-	lsl	w0, w8, #6
+	lsl	w8, w0, #6
+	and	w0, w8, #0x3f00
 	ret
                                         // -- End function

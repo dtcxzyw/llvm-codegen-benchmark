@@ -6,7 +6,7 @@ func0000000000000007:                   // @func0000000000000007
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	and	w8, w0, #0x8
-	lsl	w0, w8, #28
+	lsl	w8, w0, #28
+	and	w0, w8, #0x80000000
 	ret
                                         // -- End function

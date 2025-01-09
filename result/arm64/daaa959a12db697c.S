@@ -36,10 +36,10 @@ func000000000000001e:                   // @func000000000000001e
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
-	and	x8, x2, #0xff
+	ubfiz	x8, x2, #17, #8
 	and	x9, x1, #0xffffffffffff7fff
-	orr	x8, x9, x8, lsl #17
-	orr	x0, x8, x0
+	orr	x9, x9, x0
+	orr	x0, x9, x8
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c

@@ -1,17 +1,17 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	mov	w9, #4                          // =0x4
-	orr	w8, w0, w8, lsl #8
-	sub	w0, w9, w8
+	ubfiz	w9, w1, #8, #8
+	mov	w8, #4                          // =0x4
+	orr	w9, w9, w0
+	sub	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	mov	w9, #64148                      // =0xfa94
-	orr	w8, w0, w8, lsl #8
-	sub	w0, w9, w8
+	ubfiz	w9, w1, #8, #8
+	mov	w8, #64148                      // =0xfa94
+	orr	w9, w9, w0
+	sub	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014

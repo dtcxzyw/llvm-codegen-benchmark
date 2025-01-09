@@ -1,7 +1,6 @@
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	lsl	w8, w8, #8
+	ubfiz	w8, w1, #8, #8
 	orr	w0, w8, w0, lsl #16
 	ret
                                         // -- End function
@@ -20,8 +19,7 @@ func0000000000000017:                   // @func0000000000000017
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	lsl	w8, w8, #9
+	ubfiz	w8, w1, #9, #16
 	bfi	w8, w0, #1, #8
 	mov	x0, x8
 	ret
@@ -35,8 +33,7 @@ func000000000000005f:                   // @func000000000000005f
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	lsl	w8, w8, #15
+	ubfiz	w8, w1, #15, #8
 	orr	w0, w8, w0, lsl #23
 	ret
                                         // -- End function
@@ -48,8 +45,7 @@ func000000000000005d:                   // @func000000000000005d
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	lsl	w8, w8, #16
+	ubfiz	w8, w1, #16, #8
 	orr	w0, w8, w0, lsl #24
 	ret
                                         // -- End function

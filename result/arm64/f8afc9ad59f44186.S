@@ -12,15 +12,15 @@ func000000000000003f:                   // @func000000000000003f
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	orr	w8, w1, w8, lsl #4
-	orr	w0, w8, w0
+	ubfiz	w8, w2, #4, #16
+	orr	w9, w1, w0
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	and	w8, w2, #0xffff
-	orr	w8, w1, w8, lsl #8
-	orr	w0, w8, w0
+	ubfiz	w8, w2, #8, #16
+	orr	w9, w1, w0
+	orr	w0, w8, w9
 	ret
                                         // -- End function

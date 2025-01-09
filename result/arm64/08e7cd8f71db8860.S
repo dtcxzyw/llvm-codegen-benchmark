@@ -1,8 +1,7 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	and	x8, x1, #0xffff
-	lsl	x8, x8, #6
+	ubfiz	x8, x1, #6, #16
 	orr	x0, x8, x0, lsl #22
 	ret
                                         // -- End function
@@ -22,10 +21,9 @@ func0000000000000017:                   // @func0000000000000017
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	lsl	x8, x0, #15
                                         // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0xffff
-	orr	x0, x8, x9, lsl #10
+	ubfiz	x8, x1, #10, #16
+	orr	x0, x8, x0, lsl #15
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
@@ -37,10 +35,9 @@ func0000000000000019:                   // @func0000000000000019
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	lsl	x8, x0, #21
                                         // kill: def $w1 killed $w1 def $x1
-	and	x9, x1, #0xffff
-	orr	x0, x8, x9, lsl #13
+	ubfiz	x8, x1, #13, #16
+	orr	x0, x8, x0, lsl #21
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
@@ -66,8 +63,7 @@ func000000000000003d:                   // @func000000000000003d
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	lsl	x0, x0, #32
-                                        // kill: def $w1 killed $w1 def $x1
-	bfi	x0, x1, #16, #16
+	lsl	w8, w1, #16
+	orr	x0, x8, x0, lsl #32
 	ret
                                         // -- End function
