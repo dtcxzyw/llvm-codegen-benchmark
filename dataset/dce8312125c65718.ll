@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 119 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/aigObj.c.ll
@@ -49,6 +49,7 @@
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -520,6 +521,16 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %2
   ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/CGBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 25769803776
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
 }
 
 attributes #0 = { nounwind }

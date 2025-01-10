@@ -7,15 +7,6 @@ func0000000000000058:                   // @func0000000000000058
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000318:                   // @func0000000000000318
-// %bb.0:                               // %entry
-	cmp	w1, #272, lsl #12               // =1114112
-	ccmp	w2, w1, #4, ne
-	cset	w8, ne
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
-	ret
-                                        // -- End function
 func0000000000000194:                   // @func0000000000000194
 // %bb.0:                               // %entry
 	cmp	w1, #44

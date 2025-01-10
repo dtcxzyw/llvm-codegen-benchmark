@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
-%"class.hermes::vm::HermesValue.3081023" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3080988" = type { %"class.hermes::vm::HermesValue.3080989" }
+%"class.hermes::vm::HermesValue.3080989" = type { i64 }
 
 ; 3 occurrences:
 ; linux/optimized/d_path.ll
@@ -55,7 +55,7 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -64
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3080988", ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }

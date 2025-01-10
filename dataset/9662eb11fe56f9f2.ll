@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; graphviz/optimized/sfdpinit.c.ll
 ; linux/optimized/af_packet.ll
@@ -22,7 +22,9 @@
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-ncp.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind

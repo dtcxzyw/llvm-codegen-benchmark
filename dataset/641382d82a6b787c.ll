@@ -1,7 +1,9 @@
 
-; 16 occurrences:
+; 21 occurrences:
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/kfifo.ll
@@ -10,12 +12,15 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_output.ll
 ; miniaudio/optimized/unity.c.ll
+; php/optimized/KeccakSponge.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i32 %1, i32 %2) #0 {
 entry:

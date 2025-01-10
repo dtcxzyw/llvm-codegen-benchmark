@@ -41,16 +41,6 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 48
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
-	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a1, a1, a2
-	sltiu	a1, a1, 11
-	addi	a1, a1, -1
-	andi	a1, a1, 11
-	and	a0, a0, a2
-	add	a0, a0, a1
-	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a2, 16
 	addiw	a2, a2, -1

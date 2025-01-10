@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 27 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/introspection_vignette.c.ll
@@ -10,6 +10,21 @@
 ; opencv/optimized/outlier_rejection.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; openusd/optimized/nanocolor.c.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
 ; postgres/optimized/tsrank.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind

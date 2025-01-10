@@ -5,12 +5,33 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+func000000000000006a:                   # @func000000000000006a
+	cmpq	$246, %rsi
+	movl	$246, %eax
+	cmovbq	%rsi, %rax
+	cmpl	%eax, %edi
+	setg	%al
+	retq
 func0000000000000041:                   # @func0000000000000041
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	cmpq	%rax, %rsi
 	cmovbq	%rsi, %rax
 	cmpl	%eax, %edi
 	sete	%al
+	retq
+func0000000000000066:                   # @func0000000000000066
+	cmpq	$2, %rsi
+	movl	$2, %eax
+	cmovbq	%rsi, %rax
+	cmpl	%eax, %edi
+	setl	%al
+	retq
+func0000000000000067:                   # @func0000000000000067
+	cmpq	$2, %rsi
+	movl	$2, %eax
+	cmovbq	%rsi, %rax
+	cmpl	%eax, %edi
+	setle	%al
 	retq
 func0000000000000078:                   # @func0000000000000078
 	cmpq	$65535, %rsi                    # imm = 0xFFFF

@@ -1,7 +1,7 @@
 
-%"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610" = type { i16, i16, i16 }
-%struct.perf_msr.3546490 = type { i64, ptr, ptr, i8, i64 }
-%struct.ExpandedRange.3653047 = type { i64, i64, i8 }
+%"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822576" = type { i16, i16, i16 }
+%struct.perf_msr.3546456 = type { i64, ptr, ptr, i8, i64 }
+%struct.ExpandedRange.3653013 = type { i64, i64, i8 }
 
 ; 22 occurrences:
 ; abc/optimized/abcSop.c.ll
@@ -66,7 +66,7 @@ entry:
   ret ptr %5
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
@@ -78,6 +78,7 @@ entry:
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/apply.ll
 ; git/optimized/fsck.ll
+; git/optimized/xutils.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; icu/optimized/escapesrc.ll
 ; icu/optimized/messagepattern.ll
@@ -136,7 +137,7 @@ entry:
   ret ptr %5
 }
 
-; 247 occurrences:
+; 248 occurrences:
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/clipper.cpp.ll
 ; cmake/optimized/deflate.c.ll
@@ -146,6 +147,7 @@ entry:
 ; graphviz/optimized/partition.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/toppush.cpp.ll
 ; jq/optimized/bytecode.ll
 ; libquic/optimized/deflate.c.ll
 ; llvm/optimized/Delinearization.cpp.ll
@@ -407,9 +409,8 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
-; gromacs/optimized/toppush.cpp.ll
 ; luajit/optimized/minilua.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; quantlib/optimized/lognormalfwdrateiballand.ll
@@ -420,12 +421,11 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822576", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
-; git/optimized/xutils.ll
+; 3 occurrences:
 ; luajit/optimized/minilua.ll
 ; quantlib/optimized/fdmextoujumpop.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
@@ -436,18 +436,6 @@ entry:
   %3 = ashr exact i64 %2, 29
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 30
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
 
@@ -496,7 +484,7 @@ define ptr @func0000000000000034(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.perf_msr.3546490, ptr %0, i64 %3
+  %4 = getelementptr %struct.perf_msr.3546456, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -40
   ret ptr %5
 }
@@ -525,7 +513,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.ExpandedRange.3653047, ptr %0, i64 %4
+  %5 = getelementptr %struct.ExpandedRange.3653013, ptr %0, i64 %4
   ret ptr %5
 }
 

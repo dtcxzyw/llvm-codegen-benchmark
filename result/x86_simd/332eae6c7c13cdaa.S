@@ -21,25 +21,25 @@ func0000000000000284:                   # @func0000000000000284
 	vzeroupper
 	retq
 .LCPI2_0:
+	.long	999                             # 0x3e7
+.LCPI2_1:
+	.long	15                              # 0xf
+func00000000000002a4:                   # @func00000000000002a4
+	vpaddd	%ymm1, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	vpcmpltud	.LCPI2_1(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
 	.long	15                              # 0xf
 func0000000000000204:                   # @func0000000000000204
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
-	.long	999                             # 0x3e7
-.LCPI3_1:
-	.long	15                              # 0xf
-func00000000000002a4:                   # @func00000000000002a4
-	vpaddd	%ymm1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltud	.LCPI3_1(%rip){1to8}, %ymm0, %k0
+	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -67,9 +67,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 6 occurrences:
+; 5 occurrences:
 ; boost/optimized/to_chars.ll
-; cpython/optimized/pystrtod.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/X11Renderer.ll
 ; tinympc/optimized/tiny_api.cpp.ll

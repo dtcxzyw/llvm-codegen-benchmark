@@ -26,6 +26,12 @@ func0000000000000024:                   # @func0000000000000024
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func0000000000000035:                   # @func0000000000000035
+	vpmovqd	%ymm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -33,17 +39,9 @@ func0000000000000004:                   # @func0000000000000004
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI6_0:
 	.long	4294967275                      # 0xffffffeb
 func0000000000000005:                   # @func0000000000000005
-	vpmovqd	%ymm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI6_0:
-	.long	4294967288                      # 0xfffffff8
-func0000000000000015:                   # @func0000000000000015
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
@@ -51,23 +49,23 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 .LCPI7_0:
 	.long	4294967288                      # 0xfffffff8
-func0000000000000014:                   # @func0000000000000014
+func0000000000000015:                   # @func0000000000000015
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	4294967293                      # 0xfffffffd
-func0000000000000030:                   # @func0000000000000030
+	.long	4294967288                      # 0xfffffff8
+func0000000000000014:                   # @func0000000000000014
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI9_0:
-	.long	4294967290                      # 0xfffffffa
-func0000000000000035:                   # @func0000000000000035
+	.long	4294967293                      # 0xfffffffd
+func0000000000000030:                   # @func0000000000000030
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0

@@ -1,10 +1,10 @@
 
-%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
-%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
-%"class.hermes::vm::SymbolID.3078638" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
-%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
-%union.anon.3.3078640 = type { i32 }
+%"struct.std::pair.3078601" = type { %"class.hermes::vm::GCSymbolID.3078602", %"struct.hermes::vm::NamedPropertyDescriptor.3078603" }
+%"class.hermes::vm::GCSymbolID.3078602" = type { %"class.hermes::vm::SymbolID.3078604" }
+%"class.hermes::vm::SymbolID.3078604" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078603" = type { %"struct.hermes::vm::PropertyDescriptor.3078605" }
+%"struct.hermes::vm::PropertyDescriptor.3078605" = type { %union.anon.3.3078606, i32 }
+%union.anon.3.3078606 = type { i32 }
 
 ; 140 occurrences:
 ; hermes/optimized/Array.cpp.ll
@@ -234,7 +234,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 4
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %"struct.std::pair.3078635", ptr %3, i64 %4
+  %5 = getelementptr %"struct.std::pair.3078601", ptr %3, i64 %4
   ret ptr %5
 }
 

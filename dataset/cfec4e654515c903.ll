@@ -1,6 +1,6 @@
 
-%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
-%struct.Gia_Obj_t_.2877170 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876044 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877136 = type <{ i64, i32 }>
 
 ; 4 occurrences:
 ; linux/optimized/binfmt_elf.ll
@@ -40,7 +40,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876078, ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876044, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, -2
   %5 = inttoptr i64 %4 to ptr
@@ -53,7 +53,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.Gia_Obj_t_.2877170, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct.Gia_Obj_t_.2877136, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, -2
   %5 = inttoptr i64 %4 to ptr

@@ -23,6 +23,11 @@ func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
+func0000000000000024:                   # @func0000000000000024
+	or	a0, a0, a1
+	sext.w	a0, a0
+	sltiu	a0, a0, 128
+	ret
 func000000000000002c:                   # @func000000000000002c
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -66,11 +71,6 @@ func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	sltiu	a0, a0, 17
 	xori	a0, a0, 1
-	ret
-func0000000000000024:                   # @func0000000000000024
-	or	a0, a0, a1
-	sext.w	a0, a0
-	sltiu	a0, a0, 16
 	ret
 func0000000000000026:                   # @func0000000000000026
 	or	a0, a0, a1

@@ -1,10 +1,10 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
-%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394" = type { %"class.folly::SaturatingSemaphore.2683338", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683339" }
-%"class.folly::SaturatingSemaphore.2683338" = type { %"struct.std::atomic.20.2683271" }
-%"struct.std::atomic.20.2683271" = type { %"struct.std::__atomic_base.21.2683272" }
-%"struct.std::__atomic_base.21.2683272" = type { i32 }
-%"union.std::aligned_storage<64, 16>::type.2683339" = type { [64 x i8] }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
+%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683361" = type { %"class.folly::SaturatingSemaphore.2683305", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683306" }
+%"class.folly::SaturatingSemaphore.2683305" = type { %"struct.std::atomic.20.2683238" }
+%"struct.std::atomic.20.2683238" = type { %"struct.std::__atomic_base.21.2683239" }
+%"struct.std::__atomic_base.21.2683239" = type { i32 }
+%"union.std::aligned_storage<64, 16>::type.2683306" = type { [64 x i8] }
 
 ; 9 occurrences:
 ; linux/optimized/assoc_array.ll
@@ -22,7 +22,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = and i64 %0, 4294967295
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %3, i64 0, i64 %4
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -54,7 +54,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 128
   %4 = and i64 %0, 255
-  %5 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683361"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 

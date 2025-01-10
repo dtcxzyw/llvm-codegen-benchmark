@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector2d.2693290" = type { i32, i32 }
+%"class.irr::core::vector2d.2693256" = type { i32, i32 }
 
 ; 10 occurrences:
 ; hyperscan/optimized/crc32.c.ll
@@ -40,7 +40,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw %"class.irr::core::vector2d.2693290", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.irr::core::vector2d.2693256", ptr %0, i64 %4
   ret ptr %5
 }
 

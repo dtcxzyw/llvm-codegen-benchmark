@@ -18,6 +18,10 @@ func0000000000000004:                   # @func0000000000000004
 	cmpw	$9, %di
 	setb	%al
 	retq
+func0000000000000101:                   # @func0000000000000101
+	cmpw	$1, %di
+	sete	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpw	$-1, %di
 	setne	%al
@@ -29,10 +33,6 @@ func0000000000000024:                   # @func0000000000000024
 	retq
 func00000000000000a1:                   # @func00000000000000a1
 	cmpw	$11, %di
-	sete	%al
-	retq
-func0000000000000101:                   # @func0000000000000101
-	cmpw	$9, %di
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a

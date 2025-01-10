@@ -1,6 +1,6 @@
 
-%"class.draco::IndexType.113.3086516" = type { i32 }
-%"class.draco::IndexType.93.3086515" = type { i32 }
+%"class.draco::IndexType.113.3086482" = type { i32 }
+%"class.draco::IndexType.93.3086481" = type { i32 }
 
 ; 2 occurrences:
 ; icu/optimized/decNumber.ll
@@ -32,7 +32,7 @@ entry:
   %.v = select i1 %1, i32 -2, i32 1
   %3 = add i32 %2, %.v
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.draco::IndexType.113.3086516", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.draco::IndexType.113.3086482", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -47,7 +47,7 @@ entry:
   %.v = select i1 %1, i32 -1, i32 2
   %3 = add i32 %2, %.v
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.draco::IndexType.93.3086515", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.draco::IndexType.93.3086481", ptr %0, i64 %4
   ret ptr %5
 }
 

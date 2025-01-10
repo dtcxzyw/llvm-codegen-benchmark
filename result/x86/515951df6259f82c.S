@@ -1,3 +1,9 @@
+func00000000000001e1:                   # @func00000000000001e1
+	leal	(%rsi,%rdx), %ecx
+	leal	2(%rsi,%rdx), %eax
+	cmpl	$276, %edi                      # imm = 0x114
+	cmovnel	%ecx, %eax
+	retq
 func00000000000001e4:                   # @func00000000000001e4
 	leal	(%rsi,%rdx), %ecx
 	leal	3(%rsi,%rdx), %eax
@@ -33,12 +39,6 @@ func000000000000002a:                   # @func000000000000002a
 	leal	5(%rsi,%rdx), %eax
 	testl	%edi, %edi
 	cmovlel	%ecx, %eax
-	retq
-func00000000000001e1:                   # @func00000000000001e1
-	leal	(%rsi,%rdx), %ecx
-	leal	4(%rsi,%rdx), %eax
-	cmpl	$2, %edi
-	cmovnel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	(%rsi,%rdx), %ecx

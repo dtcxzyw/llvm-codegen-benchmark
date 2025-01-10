@@ -337,13 +337,6 @@ func0000000000000110:                   // @func0000000000000110
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000190:                   // @func0000000000000190
-// %bb.0:                               // %entry
-	cmp	x0, x1
-	ccmp	w2, #1, #8, ls
-	cset	w0, lt
-	ret
-                                        // -- End function
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
 	cmp	x0, x1

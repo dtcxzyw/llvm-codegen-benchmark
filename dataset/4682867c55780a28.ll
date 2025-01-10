@@ -1,6 +1,6 @@
 
-%struct.Gia_Obj_t_.2875985 = type <{ i64, i32 }>
-%struct.Gia_Obj_t_.2877299 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2875951 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877265 = type <{ i64, i32 }>
 
 ; 3 occurrences:
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -63,9 +63,9 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2875985, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2875951, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr %struct.Gia_Obj_t_.2875985, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.Gia_Obj_t_.2875951, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -78,9 +78,9 @@ entry:
 define ptr @func0000000000000068(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877299, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877265, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr %struct.Gia_Obj_t_.2877299, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.Gia_Obj_t_.2877265, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

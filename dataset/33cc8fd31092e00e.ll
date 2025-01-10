@@ -1,5 +1,5 @@
 
-%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2708985 = type { i32, i32, i32, i32, i32 }
 
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -310,7 +310,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -3120
   %4 = lshr i64 %3, 3
-  %5 = getelementptr %struct.chan.2709019, ptr %0, i64 %4
+  %5 = getelementptr %struct.chan.2708985, ptr %0, i64 %4
   ret ptr %5
 }
 

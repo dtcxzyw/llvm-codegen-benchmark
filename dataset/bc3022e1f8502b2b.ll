@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaMuxes.c.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/skbuff.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll

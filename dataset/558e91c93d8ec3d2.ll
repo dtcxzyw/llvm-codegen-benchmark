@@ -248,26 +248,14 @@ entry:
 }
 
 ; 1 occurrences:
-; tinyrenderer/optimized/tgaimage.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = add i64 %0, 1
-  %6 = icmp ugt i64 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; libwebp/optimized/alpha_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = add i64 %0, -1
-  %6 = icmp uge i64 %5, %4
+  %6 = icmp ult i64 %5, %4
   ret i1 %6
 }
 

@@ -14,13 +14,30 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 24 occurrences:
+; 6 occurrences:
+; clamav/optimized/recvol.cpp.ll
+; git/optimized/pkt-line.ll
+; llvm/optimized/BreakableToken.cpp.ll
+; llvm/optimized/Driver.cpp.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
+  %5 = sub i64 %0, %4
+  ret i64 %5
+}
+
+; 25 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; flac/optimized/encode.c.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hyperscan/optimized/match.c.ll
 ; libpng/optimized/pngpread.c.ll
+; linux/optimized/deflate.ll
 ; llvm/optimized/BTFParser.cpp.ll
 ; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/CVTypeVisitor.cpp.ll
@@ -43,20 +60,6 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = sub i64 %0, %4
-  ret i64 %5
-}
-
-; 4 occurrences:
-; clamav/optimized/recvol.cpp.ll
-; git/optimized/pkt-line.ll
-; llvm/optimized/BreakableToken.cpp.ll
-; llvm/optimized/Driver.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
   %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
   %5 = sub i64 %0, %4
   ret i64 %5

@@ -34,6 +34,12 @@ func000000000000002f:                   // @func000000000000002f
 	lsl	x0, x8, #3
 	ret
                                         // -- End function
+func000000000000001c:                   // @func000000000000001c
+// %bb.0:                               // %entry
+	umull	x8, w1, w0
+	lsl	x0, x8, #7
+	ret
+                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mul	w8, w1, w0

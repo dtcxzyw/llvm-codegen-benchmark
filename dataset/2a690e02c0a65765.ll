@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::NodeTemplate.3569813" = type { ptr }
+%"class.cvc5::internal::NodeTemplate.3569779" = type { ptr }
 
 ; 5 occurrences:
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
@@ -43,7 +43,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3569813", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3569779", ptr %0, i64 %4
   ret ptr %5
 }
 

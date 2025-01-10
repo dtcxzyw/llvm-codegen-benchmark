@@ -289,7 +289,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; g2o/optimized/marginal_covariance_cholesky.cpp.ll
@@ -305,7 +305,6 @@ entry:
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/slurmd.ll
@@ -319,7 +318,7 @@ entry:
   ret i64 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
@@ -343,6 +342,7 @@ entry:
 ; pbrt-v4/optimized/media.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/lolwut.ll
 ; stb/optimized/stb_tilemap_editor.c.ll

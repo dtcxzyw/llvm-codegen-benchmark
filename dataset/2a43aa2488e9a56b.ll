@@ -1,12 +1,12 @@
 
-%struct._zval_struct.2792479 = type { %union._zend_value.2792489, %union.anon.2792490, %union.anon.2.2792491 }
-%union._zend_value.2792489 = type { i64 }
-%union.anon.2792490 = type { i32 }
-%union.anon.2.2792491 = type { i32 }
-%"class.llvm::MachineOperand.3286536" = type { i32, %union.anon.302.3286537, ptr, %"union.llvm::MachineOperand::ContentsUnion.3286538" }
-%union.anon.302.3286537 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3286538" = type { %"class.llvm::ArrayRef.303.3286539" }
-%"class.llvm::ArrayRef.303.3286539" = type { ptr, i64 }
+%struct._zval_struct.2792445 = type { %union._zend_value.2792455, %union.anon.2792456, %union.anon.2.2792457 }
+%union._zend_value.2792455 = type { i64 }
+%union.anon.2792456 = type { i32 }
+%union.anon.2.2792457 = type { i32 }
+%"class.llvm::MachineOperand.3286502" = type { i32, %union.anon.302.3286503, ptr, %"union.llvm::MachineOperand::ContentsUnion.3286504" }
+%union.anon.302.3286503 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3286504" = type { %"class.llvm::ArrayRef.303.3286505" }
+%"class.llvm::ArrayRef.303.3286505" = type { ptr, i64 }
 
 ; 5 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
@@ -87,7 +87,7 @@ entry:
   %3 = select i1 %2, i32 2, i32 0
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._zval_struct.2792479, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zval_struct.2792445, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -127,7 +127,7 @@ entry:
   %3 = select i1 %2, i32 -2, i32 -3
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3286536", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3286502", ptr %0, i64 %5
   ret ptr %6
 }
 

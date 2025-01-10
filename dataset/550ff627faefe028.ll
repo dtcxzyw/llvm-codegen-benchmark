@@ -211,7 +211,7 @@ entry:
   ret i32 %5
 }
 
-; 115 occurrences:
+; 114 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaSatLE.c.ll
@@ -278,7 +278,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll

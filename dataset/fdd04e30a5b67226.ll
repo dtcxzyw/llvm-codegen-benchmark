@@ -17,8 +17,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 6 occurrences:
-; cmake/optimized/archive_read_support_format_cab.c.ll
+; 5 occurrences:
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll

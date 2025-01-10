@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 93 occurrences:
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
@@ -87,7 +87,6 @@
 ; redis/optimized/cluster_legacy.ll
 ; ruby/optimized/time.ll
 ; slurm/optimized/job_test.ll
-; slurm/optimized/step_mgr.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wireshark/optimized/packet-epl.c.ll

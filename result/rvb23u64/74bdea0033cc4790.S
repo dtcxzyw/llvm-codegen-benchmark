@@ -13,14 +13,6 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	sext.w	a1, a1
-	li	a2, 5
-	min	a1, a1, a2
-	sh1add	a1, a1, a1
-	sh2add	a0, a1, a0
-	addi	a0, a0, 8
-	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
 	lui	a2, 16

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
 ; folly/optimized/Conv.cpp.ll
@@ -11,7 +11,6 @@
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/loopfilter.c.ll

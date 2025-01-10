@@ -5,8 +5,8 @@ func0000000000000001:                   # @func0000000000000001
 	orb	$16, %al
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
-	andb	$1, %al
-	negb	%al
-	orb	$17, %al
+	testb	$1, %dil
+	movl	$63, %ecx
+	movl	$17, %eax
+	cmovnel	%ecx, %eax
 	retq

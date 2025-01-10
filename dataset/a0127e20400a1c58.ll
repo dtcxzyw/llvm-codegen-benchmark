@@ -1,5 +1,5 @@
 
-%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749" = type { i8, i8, i8, i8 }
+%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715" = type { i8, i8, i8, i8 }
 
 ; 3 occurrences:
 ; arrow/optimized/chunked_array.cc.ll
@@ -35,7 +35,7 @@ entry:
   %4 = add i32 %3, -1
   %5 = tail call i32 @llvm.smin.i32(i32 %1, i32 %4)
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715", ptr %0, i64 %6
   ret ptr %7
 }
 

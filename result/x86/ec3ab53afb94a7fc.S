@@ -8,9 +8,11 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	andl	$81920, %esi                    # imm = 0x14000
-	movl	$49152, %eax                    # imm = 0xC000
-	cmoveq	%rsi, %rax
-	andq	$-16385, %rdi                   # imm = 0xBFFF
-	orq	%rdi, %rax
+	andl	$8, %esi
+	shrl	$3, %esi
+	shlq	$35, %rsi
+	movabsq	$-42331734548481, %rax          # imm = 0xFFFFD97FDFFFDFFF
+	andq	%rdi, %rax
+	orq	%rsi, %rax
+	orq	$536870912, %rax                # imm = 0x20000000
 	retq

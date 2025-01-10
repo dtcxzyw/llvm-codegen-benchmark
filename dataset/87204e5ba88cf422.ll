@@ -1,5 +1,5 @@
 
-%struct.RoseLongLitHashEntry.3854681 = type { i32, i32 }
+%struct.RoseLongLitHashEntry.3854631 = type { i32, i32 }
 
 ; 3 occurrences:
 ; icu/optimized/uresdata.ll
@@ -61,7 +61,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = and i64 %1, 4294967295
-  %6 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3854681, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3854631, ptr %4, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -4
   ret ptr %7
 }

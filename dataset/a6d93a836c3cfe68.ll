@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; c3c/optimized/lexer.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -24,6 +24,7 @@
 ; luau/optimized/EmitInstructionX64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll

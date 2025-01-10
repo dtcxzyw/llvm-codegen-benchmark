@@ -1,5 +1,5 @@
 
-; 3654 occurrences:
+; 3657 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -719,6 +719,7 @@
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/cordbscs.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/area.ll
 ; boost/optimized/benchmark_fstream.ll
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/sub_launcher.ll
@@ -1133,6 +1134,7 @@
 ; git/optimized/revision.ll
 ; git/optimized/stack.ll
 ; git/optimized/tree-diff.ll
+; glog/optimized/logging.cc.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -3351,6 +3353,7 @@
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; stockfish/optimized/tbprobe.ll
 ; sundials/optimized/arkode_interp.c.ll
 ; sundials/optimized/arkode_sprk.c.ll
 ; sundials/optimized/cvodes.c.ll
@@ -3662,7 +3665,7 @@ entry:
   ret i64 %2
 }
 
-; 879 occurrences:
+; 876 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -3695,7 +3698,6 @@ entry:
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
-; boost/optimized/area.ll
 ; boost/optimized/boundary.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
@@ -3864,7 +3866,6 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; git/optimized/walker.ll
 ; git/optimized/worktree.ll
-; glog/optimized/logging.cc.ll
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/SymbolTable.cpp.ll
@@ -4463,7 +4464,6 @@ entry:
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
-; stockfish/optimized/tbprobe.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll

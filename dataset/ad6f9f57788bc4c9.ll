@@ -114,11 +114,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; boost/optimized/src.ll
 ; clamav/optimized/unarj.c.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -181,19 +179,6 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = sub i64 %0, %1
   %5 = icmp ugt i64 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i64
-  %4 = sub nuw i64 %0, %1
-  %5 = icmp ult i64 %4, %3
   ret i1 %5
 }
 

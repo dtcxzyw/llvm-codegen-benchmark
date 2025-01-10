@@ -38,12 +38,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	testl	$-256, %edi
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
-	shll	$6, %esi
-	orl	%esi, %edi
-	cmpl	$-1, %edi
-	setne	%al
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	shlq	$40, %rsi
 	orq	%rdi, %rsi

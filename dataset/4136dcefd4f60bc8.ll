@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/MD5.c.ll
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
-; cpython/optimized/pystrtod.ll
 ; grpc/optimized/json_object_loader.cc.ll
 ; grpc/optimized/load_balancer_api.cc.ll
 ; grpc/optimized/xds_api.cc.ll

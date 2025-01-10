@@ -1,8 +1,6 @@
 
-; 237 occurrences:
+; 234 occurrences:
 ; abc/optimized/abcSaucy.c.ll
-; abc/optimized/cbaReadVer.c.ll
-; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/UriFile.c.ll
 ; boost/optimized/named_scope_format_parser.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -62,7 +60,6 @@
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; ockam-rs/optimized/445trp5tofqtvmh3.ll
-; opencv/optimized/tree.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openusd/optimized/reconintra.c.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -244,7 +241,7 @@ entry:
   ret i1 %1
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/builder.cc.ll
@@ -278,6 +275,7 @@ entry:
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; minetest/optimized/reflowscan.cpp.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; opencv/optimized/evaluation.cpp.ll

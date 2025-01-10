@@ -54,8 +54,10 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; git/optimized/combine-diff.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

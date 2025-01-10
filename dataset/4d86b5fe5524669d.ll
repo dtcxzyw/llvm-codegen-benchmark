@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openmpi/optimized/bfrop_base_cmp.ll
 ; openssl/optimized/libcrypto-lib-bio_addr.ll

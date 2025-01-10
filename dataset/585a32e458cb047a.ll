@@ -1,13 +1,15 @@
 
-; 110 occurrences:
+; 112 occurrences:
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/marshal.ll
 ; cpython/optimized/unicodeobject.ll
+; darktable/optimized/history.c.ll
 ; linux/optimized/fair.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/convertnode.ll
+; postgres/optimized/regexp.ll
 ; qemu/optimized/block_io.c.ll
 ; ruby/optimized/marshal.ll
 ; tev/optimized/Common.cpp.ll

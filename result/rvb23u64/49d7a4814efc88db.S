@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	minu	a0, a0, a2
 	ret
 func000000000000000e:                   # @func000000000000000e
-	lui	a2, 2
+	li	a2, 64
 	subw	a2, a2, a1
-	minu	a0, a2, a0
+	minu	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	negw	a1, a1

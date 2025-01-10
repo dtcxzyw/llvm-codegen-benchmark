@@ -1,6 +1,6 @@
 
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%struct.p4d_t.3530391 = type { i64 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%struct.p4d_t.3530357 = type { i64 }
 
 ; 4 occurrences:
 ; cmake/optimized/nghttp2_map.c.ll
@@ -13,7 +13,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = and i64 %1, %4
-  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = and i64 %1, %4
-  %6 = getelementptr %struct.p4d_t.3530391, ptr %0, i64 %5
+  %6 = getelementptr %struct.p4d_t.3530357, ptr %0, i64 %5
   ret ptr %6
 }
 

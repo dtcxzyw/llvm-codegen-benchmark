@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/strtod.cc.ll

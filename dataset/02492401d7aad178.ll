@@ -1,5 +1,5 @@
 
-; 268 occurrences:
+; 262 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -38,11 +38,6 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/collationdata.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -207,7 +202,6 @@
 ; qemu/optimized/target_riscv_translate.c.ll
 ; ruby/optimized/utf_32le.ll
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; syn/optimized/2khi0xu1ufmhwoo.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll

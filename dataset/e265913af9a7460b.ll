@@ -257,7 +257,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
@@ -275,6 +275,7 @@ entry:
 ; llvm/optimized/EditedSource.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
+; slurm/optimized/step_mgr.ll
 ; wireshark/optimized/print_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/aigerparse.ll

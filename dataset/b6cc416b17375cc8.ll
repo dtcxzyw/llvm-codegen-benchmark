@@ -1,10 +1,6 @@
 
-; 9 occurrences:
+; 5 occurrences:
 ; clamav/optimized/upx.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/cmspack.ll

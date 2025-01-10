@@ -1,5 +1,5 @@
 
-; 5718 occurrences:
+; 5717 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -4994,7 +4994,6 @@
 ; wireshark/optimized/packet-pkcs12.c.ll
 ; wireshark/optimized/packet-pn-dcp.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
@@ -5725,7 +5724,7 @@ entry:
   ret i64 %1
 }
 
-; 6936 occurrences:
+; 6937 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -7718,6 +7717,7 @@ entry:
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/scsi_ioctl.ll
 ; linux/optimized/scsi_lib.ll
+; linux/optimized/scsi_logging.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/scsi_transport_spi.ll

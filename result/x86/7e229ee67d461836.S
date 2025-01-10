@@ -8,16 +8,6 @@ func0000000000000066:                   # @func0000000000000066
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%edx, %eax
-	shrl	$31, %eax
-	addl	%edx, %eax
-	sarl	%eax
-	cltq
-	addq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	31(%rdx), %eax
 	testl	%edx, %edx

@@ -1,5 +1,26 @@
 
-; 23 occurrences:
+; 8 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; git/optimized/sha256.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/mon_bin.ll
+; linux/optimized/net.ll
+; linux/optimized/scatterwalk.ll
+; qemu/optimized/migration_qemu-file.c.ll
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 25 occurrences:
 ; git/optimized/streaming.ll
 ; git/optimized/xutils.ll
 ; linux/optimized/bio.ll
@@ -21,6 +42,8 @@
 ; postgres/optimized/logtape.ll
 ; postgres/optimized/pqcomm.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; redis/optimized/networking.ll
 ; wireshark/optimized/to_str.c.ll
 ; Function Attrs: nounwind
@@ -32,27 +55,33 @@ entry:
   ret i32 %5
 }
 
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umin.i64(i64, i64) #1
-
-; 17 occurrences:
+; 26 occurrences:
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/xlm_extract.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/cmac.c.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
+; php/optimized/KeccakSponge.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_checksum.c.ll
+; raylib/optimized/raudio.c.ll
+; slurm/optimized/KangarooTwelve.ll
+; slurm/optimized/step_mgr.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -72,18 +101,6 @@ entry:
   %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
-}
-
-; 2 occurrences:
-; linux/optimized/mon_bin.ll
-; qemu/optimized/migration_qemu-file.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
-  %4 = trunc nuw nsw i64 %3 to i32
-  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -274,6 +291,20 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; git/optimized/remote-curl.ll
+; nuttx/optimized/lib_meminstream.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc i64 %3 to i32
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
@@ -295,17 +326,6 @@ entry:
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = trunc i64 %3 to i32
   %5 = add i32 %0, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
-  %4 = trunc i64 %3 to i32
-  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

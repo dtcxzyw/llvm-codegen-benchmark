@@ -1,6 +1,6 @@
 
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
-%struct.cfg80211_ssid.3541768 = type { [32 x i8], i8 }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
+%struct.cfg80211_ssid.3541734 = type { [32 x i8], i8 }
 
 ; 4 occurrences:
 ; abc/optimized/nwkTiming.c.ll
@@ -12,9 +12,9 @@ define ptr @func000000000000003a(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %4, i64 0, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2874016, ptr %5, i64 %6
+  %7 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2873982, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -25,9 +25,9 @@ define ptr @func0000000000000038(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %4, i64 0, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %5, i64 %6
+  %7 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 152
   %5 = getelementptr [0 x ptr], ptr %4, i64 0, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr %struct.cfg80211_ssid.3541768, ptr %5, i64 %6
+  %7 = getelementptr %struct.cfg80211_ssid.3541734, ptr %5, i64 %6
   ret ptr %7
 }
 

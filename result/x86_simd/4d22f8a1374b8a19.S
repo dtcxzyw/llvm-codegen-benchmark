@@ -51,21 +51,22 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI10_0:
+	.quad	17                              # 0x11
+func0000000000000002:                   # @func0000000000000002
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
+	retq
 func0000000000000006:                   # @func0000000000000006
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI11_0:
+.LCPI12_0:
 	.quad	7                               # 0x7
 func000000000000000a:                   # @func000000000000000a
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI11_0(%rip){1to4}, %ymm0, %ymm0
-	retq
-func0000000000000002:                   # @func0000000000000002
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpaddq	.LCPI12_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000009:                   # @func0000000000000009
 	vpaddq	%ymm0, %ymm1, %ymm0

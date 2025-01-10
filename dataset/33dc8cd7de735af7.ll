@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3184941" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3184907" = type { ptr, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; postgres/optimized/nbtdedup.ll
@@ -73,8 +73,8 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw %"class.llvm::Use.3184941", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3184941", ptr %5, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3184907", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3184907", ptr %5, i64 %4
   ret ptr %6
 }
 

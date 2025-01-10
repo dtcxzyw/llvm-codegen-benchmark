@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; linux/optimized/filter.ll
@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000010c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = and i64 %5, 4294967294
@@ -75,7 +75,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.OT::IntType.2742031", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.2741997", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = and i64 %5, 4294967288

@@ -1,9 +1,9 @@
 
-%"struct.clang::FunctionType::ExceptionType.3142408" = type { %"class.clang::QualType.3142149" }
-%"class.clang::QualType.3142149" = type { %"class.llvm::PointerIntPair.737.3142150" }
-%"class.llvm::PointerIntPair.737.3142150" = type { %"struct.llvm::detail::PunnedPointer.738.3142151" }
-%"struct.llvm::detail::PunnedPointer.738.3142151" = type { [8 x i8] }
-%"class.llvm::Use.3303003" = type { ptr, ptr, ptr, ptr }
+%"struct.clang::FunctionType::ExceptionType.3142374" = type { %"class.clang::QualType.3142115" }
+%"class.clang::QualType.3142115" = type { %"class.llvm::PointerIntPair.737.3142116" }
+%"class.llvm::PointerIntPair.737.3142116" = type { %"struct.llvm::detail::PunnedPointer.738.3142117" }
+%"struct.llvm::detail::PunnedPointer.738.3142117" = type { [8 x i8] }
+%"class.llvm::Use.3302969" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -131,7 +131,7 @@ define ptr @func000000000000008f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142408", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142374", ptr %0, i64 %1
   %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   ret ptr %6
 }
@@ -144,8 +144,8 @@ define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 10784
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw %"class.llvm::Use.3303003", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3303003", ptr %5, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3302969", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3302969", ptr %5, i64 %4
   ret ptr %6
 }
 

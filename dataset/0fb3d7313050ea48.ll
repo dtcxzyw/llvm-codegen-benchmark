@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3170955" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3170921" = type { ptr, ptr, ptr, ptr }
 
 ; 42 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
@@ -54,7 +54,7 @@ entry:
   ret ptr %6
 }
 
-; 33 occurrences:
+; 36 occurrences:
 ; cpython/optimized/sre.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -84,6 +84,9 @@ entry:
 ; opencv/optimized/dtfilter_cpu.cpp.ll
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/resize.cpp.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/libvduse.c.ll
+; qemu/optimized/libvhost-user.c.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; z3/optimized/mam.cpp.ll
@@ -210,7 +213,7 @@ entry:
   ret ptr %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -222,6 +225,7 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -275,7 +279,7 @@ define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3170955", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3170921", ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }

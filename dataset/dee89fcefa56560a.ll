@@ -1,41 +1,41 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.version_info.2884833 = type { %struct.object_id.2884826, i16 }
-%struct.object_id.2884826 = type { [32 x i8], i32 }
-%struct.intel_sdvo_ddc.3548986 = type { %struct.i2c_adapter.3548987, ptr, i8 }
-%struct.i2c_adapter.3548987 = type { ptr, i32, ptr, ptr, ptr, %struct.rt_mutex.3548988, %struct.rt_mutex.3548988, i32, i32, %struct.device.3548989, i64, i32, [48 x i8], %struct.completion.3548990, %struct.mutex.3548991, %struct.list_head.3548984, ptr, ptr, ptr, ptr, ptr }
-%struct.rt_mutex.3548988 = type { %struct.rt_mutex_base.3548992 }
-%struct.rt_mutex_base.3548992 = type { %struct.raw_spinlock.3548993, %struct.rb_root_cached.3548994, ptr }
-%struct.raw_spinlock.3548993 = type { %struct.qspinlock.3548995 }
-%struct.qspinlock.3548995 = type { %union.anon.0.3548996 }
-%union.anon.0.3548996 = type { %struct.atomic_t.3548997 }
-%struct.atomic_t.3548997 = type { i32 }
-%struct.rb_root_cached.3548994 = type { %struct.rb_root.3548998, ptr }
-%struct.rb_root.3548998 = type { ptr }
-%struct.device.3548989 = type { %struct.kobject.3548999, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3548991, %struct.dev_links_info.3549000, %struct.dev_pm_info.3549001, ptr, %struct.dev_msi_info.3549002, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3548984, ptr, %struct.dev_archdata.3549003, ptr, ptr, i32, i32, i32, %struct.spinlock.3549004, %struct.list_head.3548984, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
-%struct.kobject.3548999 = type { ptr, %struct.list_head.3548984, ptr, ptr, ptr, ptr, %struct.kref.3549005, i8 }
-%struct.kref.3549005 = type { %struct.refcount_struct.3549006 }
-%struct.refcount_struct.3549006 = type { %struct.atomic_t.3548997 }
-%struct.dev_links_info.3549000 = type { %struct.list_head.3548984, %struct.list_head.3548984, %struct.list_head.3548984, i32 }
-%struct.dev_pm_info.3549001 = type { %struct.pm_message.3549007, i16, i32, %struct.spinlock.3549004, %struct.list_head.3548984, %struct.completion.3548990, ptr, i8, %struct.hrtimer.3549008, i64, %struct.work_struct.3549009, %struct.wait_queue_head.3549010, ptr, %struct.atomic_t.3548997, %struct.atomic_t.3548997, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
-%struct.pm_message.3549007 = type { i32 }
-%struct.hrtimer.3549008 = type { %struct.timerqueue_node.3549011, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3549011 = type { %struct.rb_node.3549012, i64 }
-%struct.rb_node.3549012 = type { i64, ptr, ptr }
-%struct.work_struct.3549009 = type { %struct.atomic64_t.3549013, %struct.list_head.3548984, ptr }
-%struct.atomic64_t.3549013 = type { i64 }
-%struct.wait_queue_head.3549010 = type { %struct.spinlock.3549004, %struct.list_head.3548984 }
-%struct.dev_msi_info.3549002 = type { ptr, ptr }
-%struct.dev_archdata.3549003 = type {}
-%struct.spinlock.3549004 = type { %union.anon.3549014 }
-%union.anon.3549014 = type { %struct.raw_spinlock.3548993 }
-%struct.completion.3548990 = type { i32, %struct.swait_queue_head.3549015 }
-%struct.swait_queue_head.3549015 = type { %struct.raw_spinlock.3548993, %struct.list_head.3548984 }
-%struct.mutex.3548991 = type { %struct.atomic64_t.3549013, %struct.raw_spinlock.3548993, %struct.optimistic_spin_queue.3549016, %struct.list_head.3548984 }
-%struct.optimistic_spin_queue.3549016 = type { %struct.atomic_t.3548997 }
-%struct.list_head.3548984 = type { ptr, ptr }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.version_info.2884799 = type { %struct.object_id.2884792, i16 }
+%struct.object_id.2884792 = type { [32 x i8], i32 }
+%struct.intel_sdvo_ddc.3548952 = type { %struct.i2c_adapter.3548953, ptr, i8 }
+%struct.i2c_adapter.3548953 = type { ptr, i32, ptr, ptr, ptr, %struct.rt_mutex.3548954, %struct.rt_mutex.3548954, i32, i32, %struct.device.3548955, i64, i32, [48 x i8], %struct.completion.3548956, %struct.mutex.3548957, %struct.list_head.3548950, ptr, ptr, ptr, ptr, ptr }
+%struct.rt_mutex.3548954 = type { %struct.rt_mutex_base.3548958 }
+%struct.rt_mutex_base.3548958 = type { %struct.raw_spinlock.3548959, %struct.rb_root_cached.3548960, ptr }
+%struct.raw_spinlock.3548959 = type { %struct.qspinlock.3548961 }
+%struct.qspinlock.3548961 = type { %union.anon.0.3548962 }
+%union.anon.0.3548962 = type { %struct.atomic_t.3548963 }
+%struct.atomic_t.3548963 = type { i32 }
+%struct.rb_root_cached.3548960 = type { %struct.rb_root.3548964, ptr }
+%struct.rb_root.3548964 = type { ptr }
+%struct.device.3548955 = type { %struct.kobject.3548965, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3548957, %struct.dev_links_info.3548966, %struct.dev_pm_info.3548967, ptr, %struct.dev_msi_info.3548968, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3548950, ptr, %struct.dev_archdata.3548969, ptr, ptr, i32, i32, i32, %struct.spinlock.3548970, %struct.list_head.3548950, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
+%struct.kobject.3548965 = type { ptr, %struct.list_head.3548950, ptr, ptr, ptr, ptr, %struct.kref.3548971, i8 }
+%struct.kref.3548971 = type { %struct.refcount_struct.3548972 }
+%struct.refcount_struct.3548972 = type { %struct.atomic_t.3548963 }
+%struct.dev_links_info.3548966 = type { %struct.list_head.3548950, %struct.list_head.3548950, %struct.list_head.3548950, i32 }
+%struct.dev_pm_info.3548967 = type { %struct.pm_message.3548973, i16, i32, %struct.spinlock.3548970, %struct.list_head.3548950, %struct.completion.3548956, ptr, i8, %struct.hrtimer.3548974, i64, %struct.work_struct.3548975, %struct.wait_queue_head.3548976, ptr, %struct.atomic_t.3548963, %struct.atomic_t.3548963, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
+%struct.pm_message.3548973 = type { i32 }
+%struct.hrtimer.3548974 = type { %struct.timerqueue_node.3548977, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3548977 = type { %struct.rb_node.3548978, i64 }
+%struct.rb_node.3548978 = type { i64, ptr, ptr }
+%struct.work_struct.3548975 = type { %struct.atomic64_t.3548979, %struct.list_head.3548950, ptr }
+%struct.atomic64_t.3548979 = type { i64 }
+%struct.wait_queue_head.3548976 = type { %struct.spinlock.3548970, %struct.list_head.3548950 }
+%struct.dev_msi_info.3548968 = type { ptr, ptr }
+%struct.dev_archdata.3548969 = type {}
+%struct.spinlock.3548970 = type { %union.anon.3548980 }
+%union.anon.3548980 = type { %struct.raw_spinlock.3548959 }
+%struct.completion.3548956 = type { i32, %struct.swait_queue_head.3548981 }
+%struct.swait_queue_head.3548981 = type { %struct.raw_spinlock.3548959, %struct.list_head.3548950 }
+%struct.mutex.3548957 = type { %struct.atomic64_t.3548979, %struct.raw_spinlock.3548959, %struct.optimistic_spin_queue.3548982, %struct.list_head.3548950 }
+%struct.optimistic_spin_queue.3548982 = type { %struct.atomic_t.3548963 }
+%struct.list_head.3548950 = type { ptr, ptr }
 
 ; 4 occurrences:
 ; jq/optimized/jv.ll
@@ -46,7 +46,7 @@
 define ptr @func000000000000000e(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %3, i64 0, i64 %1
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -77,7 +77,7 @@ entry:
 define ptr @func000000000000000f(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 64
-  %4 = getelementptr nusw nuw [3 x %struct.version_info.2884833], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %struct.version_info.2884799], ptr %3, i64 0, i64 %1
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -92,7 +92,7 @@ entry:
 define ptr @func000000000000000c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 400
-  %4 = getelementptr [3 x %struct.intel_sdvo_ddc.3548986], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [3 x %struct.intel_sdvo_ddc.3548952], ptr %3, i64 0, i64 %1
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }

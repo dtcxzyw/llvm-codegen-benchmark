@@ -138,12 +138,13 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; hermes/optimized/JSArray.cpp.ll
 ; linux/optimized/seq_timer.ll
 ; linux/optimized/tcp.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/EditedSource.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
@@ -165,7 +166,7 @@ entry:
   ret i32 %4
 }
 
-; 209 occurrences:
+; 210 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; arrow/optimized/UriRecompose.c.ll
 ; arrow/optimized/tz.cpp.ll
@@ -176,6 +177,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

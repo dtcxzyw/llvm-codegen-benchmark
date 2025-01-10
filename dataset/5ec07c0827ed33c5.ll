@@ -50,6 +50,18 @@ entry:
 }
 
 ; 1 occurrences:
+; lua/optimized/ldebug.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 8
+  %4 = icmp eq i8 %3, 0
+  %5 = icmp ne i32 %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000050(i32 %0, i32 %1, i8 %2) #0 {

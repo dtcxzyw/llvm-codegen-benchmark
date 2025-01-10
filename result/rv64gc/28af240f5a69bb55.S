@@ -30,15 +30,6 @@ func000000000000003a:                   # @func000000000000003a
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func000000000000003e:                   # @func000000000000003e
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	slli	a3, a2, 13
-	slli	a2, a2, 15
-	subw	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 48
 	lui	a3, 1048571

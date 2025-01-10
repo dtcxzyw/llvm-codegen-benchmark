@@ -1,5 +1,5 @@
 
-%struct.pollfd.3100760 = type { i32, i16, i16 }
+%struct.pollfd.3100726 = type { i32, i16, i16 }
 
 ; 4 occurrences:
 ; box2d/optimized/b2_chain_shape.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %4 = icmp eq i32 %3, %1
   %5 = select i1 %4, i32 0, i32 %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %struct.pollfd.3100760, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct.pollfd.3100726, ptr %0, i64 %6
   ret ptr %7
 }
 

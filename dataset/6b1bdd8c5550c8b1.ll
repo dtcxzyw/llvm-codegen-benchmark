@@ -1,8 +1,8 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
-%"struct.duckdb::ArrowInterval.2953638" = type { i32, i32, i64 }
-%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
-%union.Value.3660450 = type { ptr }
+%class.aiVector3t.2823125 = type { double, double, double }
+%"struct.duckdb::ArrowInterval.2953604" = type { i32, i32, i64 }
+%struct.lua_TValue.3660399 = type { %union.Value.3660400, i32 }
+%union.Value.3660400 = type { ptr }
 
 ; 2 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -12,7 +12,7 @@ define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 3
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %class.aiVector3t.2823159, ptr %4, i64 %3, i32 1
+  %5 = getelementptr %class.aiVector3t.2823125, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -58,8 +58,8 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"struct.duckdb::ArrowInterval.2953638", ptr %0, i64 %1
-  %5 = getelementptr %"struct.duckdb::ArrowInterval.2953638", ptr %4, i64 %3, i32 2
+  %4 = getelementptr nusw %"struct.duckdb::ArrowInterval.2953604", ptr %0, i64 %1
+  %5 = getelementptr %"struct.duckdb::ArrowInterval.2953604", ptr %4, i64 %3, i32 2
   ret ptr %5
 }
 
@@ -71,8 +71,8 @@ entry:
 define ptr @func000000000000006f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %struct.lua_TValue.3660449, ptr %0, i64 %1
-  %5 = getelementptr nuw %struct.lua_TValue.3660449, ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw %struct.lua_TValue.3660399, ptr %0, i64 %1
+  %5 = getelementptr nuw %struct.lua_TValue.3660399, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

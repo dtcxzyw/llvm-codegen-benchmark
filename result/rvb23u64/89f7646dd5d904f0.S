@@ -49,3 +49,9 @@ func000000000000058c:                   # @func000000000000058c
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
+func0000000000000108:                   # @func0000000000000108
+	or	a1, a1, a2
+	maxu	a0, a1, a0
+	srli	a0, a0, 31
+	snez	a0, a0
+	ret

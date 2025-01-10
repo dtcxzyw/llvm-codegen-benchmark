@@ -1,5 +1,5 @@
 
-; 633 occurrences:
+; 634 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -440,6 +440,7 @@
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -905,12 +906,8 @@ entry:
   ret i32 %3
 }
 
-; 119 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -920,6 +917,7 @@ entry:
 ; gromacs/optimized/specbond.cpp.ll
 ; libquic/optimized/bio_mem.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; linux/optimized/ip6_output.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -951,36 +949,11 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/resize.c.ll
 ; ozz-animation/optimized/stream.cc.ll
+; pocketpy/optimized/collections.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
 ; qemu/optimized/migration_xbzrle.c.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; raylib/optimized/rtextures.c.ll
-; spike/optimized/vfwadd_vf.ll
-; spike/optimized/vfwadd_vv.ll
-; spike/optimized/vfwadd_wv.ll
-; spike/optimized/vfwcvt_f_f_v.ll
-; spike/optimized/vfwcvt_f_x_v.ll
-; spike/optimized/vfwcvt_f_xu_v.ll
-; spike/optimized/vfwcvt_rtz_x_f_v.ll
-; spike/optimized/vfwcvt_rtz_xu_f_v.ll
-; spike/optimized/vfwcvt_x_f_v.ll
-; spike/optimized/vfwcvt_xu_f_v.ll
-; spike/optimized/vfwcvtbf16_f_f_v.ll
-; spike/optimized/vfwmacc_vf.ll
-; spike/optimized/vfwmacc_vv.ll
-; spike/optimized/vfwmaccbf16_vf.ll
-; spike/optimized/vfwmaccbf16_vv.ll
-; spike/optimized/vfwmsac_vf.ll
-; spike/optimized/vfwmsac_vv.ll
-; spike/optimized/vfwmul_vf.ll
-; spike/optimized/vfwmul_vv.ll
-; spike/optimized/vfwnmacc_vf.ll
-; spike/optimized/vfwnmacc_vv.ll
-; spike/optimized/vfwnmsac_vf.ll
-; spike/optimized/vfwnmsac_vv.ll
-; spike/optimized/vfwsub_vf.ll
-; spike/optimized/vfwsub_vv.ll
-; spike/optimized/vfwsub_wv.ll
 ; spike/optimized/vloxei16_v.ll
 ; spike/optimized/vloxei32_v.ll
 ; spike/optimized/vloxei64_v.ll
@@ -989,40 +962,6 @@ entry:
 ; spike/optimized/vluxei32_v.ll
 ; spike/optimized/vluxei64_v.ll
 ; spike/optimized/vluxei8_v.ll
-; spike/optimized/vsext_vf2.ll
-; spike/optimized/vsext_vf4.ll
-; spike/optimized/vsext_vf8.ll
-; spike/optimized/vwadd_vv.ll
-; spike/optimized/vwadd_vx.ll
-; spike/optimized/vwadd_wv.ll
-; spike/optimized/vwaddu_vv.ll
-; spike/optimized/vwaddu_vx.ll
-; spike/optimized/vwaddu_wv.ll
-; spike/optimized/vwmacc_vv.ll
-; spike/optimized/vwmacc_vx.ll
-; spike/optimized/vwmaccsu_vv.ll
-; spike/optimized/vwmaccsu_vx.ll
-; spike/optimized/vwmaccu_vv.ll
-; spike/optimized/vwmaccu_vx.ll
-; spike/optimized/vwmaccus_vx.ll
-; spike/optimized/vwmul_vv.ll
-; spike/optimized/vwmul_vx.ll
-; spike/optimized/vwmulsu_vv.ll
-; spike/optimized/vwmulsu_vx.ll
-; spike/optimized/vwmulu_vv.ll
-; spike/optimized/vwmulu_vx.ll
-; spike/optimized/vwsll_vi.ll
-; spike/optimized/vwsll_vv.ll
-; spike/optimized/vwsll_vx.ll
-; spike/optimized/vwsub_vv.ll
-; spike/optimized/vwsub_vx.ll
-; spike/optimized/vwsub_wv.ll
-; spike/optimized/vwsubu_vv.ll
-; spike/optimized/vwsubu_vx.ll
-; spike/optimized/vwsubu_wv.ll
-; spike/optimized/vzext_vf2.ll
-; spike/optimized/vzext_vf4.ll
-; spike/optimized/vzext_vf8.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind

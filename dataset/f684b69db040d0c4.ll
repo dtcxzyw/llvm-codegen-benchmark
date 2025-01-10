@@ -1,5 +1,5 @@
 
-; 627 occurrences:
+; 628 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -134,7 +134,9 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/icuexportdata.ll
@@ -163,7 +165,6 @@
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/i2c-core-base.ll
-; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/msg.ll
@@ -640,11 +641,11 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; cvc5/optimized/sat_proof_manager.cpp.ll
 ; freetype/optimized/sdf.c.ll
+; hyperscan/optimized/ng_execute.cpp.ll
 ; linux/optimized/dma-fence.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll

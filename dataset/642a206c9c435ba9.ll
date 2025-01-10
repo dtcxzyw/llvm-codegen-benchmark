@@ -1,10 +1,10 @@
 
-%"struct.hermes::vm::PropertyCacheEntry.3081070" = type { %"class.hermes::vm::WeakRoot.3081071", i32 }
-%"class.hermes::vm::WeakRoot.3081071" = type { %"class.hermes::vm::WeakRootBase.3081072" }
-%"class.hermes::vm::WeakRootBase.3081072" = type { %"class.hermes::vm::CompressedPointer.3081073" }
-%"class.hermes::vm::CompressedPointer.3081073" = type { %"class.hermes::vm::BasedPointer.3081074" }
-%"class.hermes::vm::BasedPointer.3081074" = type { i32 }
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%"struct.hermes::vm::PropertyCacheEntry.3081036" = type { %"class.hermes::vm::WeakRoot.3081037", i32 }
+%"class.hermes::vm::WeakRoot.3081037" = type { %"class.hermes::vm::WeakRootBase.3081038" }
+%"class.hermes::vm::WeakRootBase.3081038" = type { %"class.hermes::vm::CompressedPointer.3081039" }
+%"class.hermes::vm::CompressedPointer.3081039" = type { %"class.hermes::vm::BasedPointer.3081040" }
+%"class.hermes::vm::BasedPointer.3081040" = type { i32 }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 8 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -39,7 +39,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 40
-  %7 = getelementptr nusw nuw %"struct.hermes::vm::PropertyCacheEntry.3081070", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.hermes::vm::PropertyCacheEntry.3081036", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -67,7 +67,7 @@ entry:
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 48
-  %7 = getelementptr %struct.bio_vec.3550063, ptr %6, i64 %5
+  %7 = getelementptr %struct.bio_vec.3550029, ptr %6, i64 %5
   ret ptr %7
 }
 

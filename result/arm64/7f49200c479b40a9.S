@@ -54,6 +54,14 @@ func0000000000000015:                   // @func0000000000000015
 	cset	w0, hi
 	ret
                                         // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	fmul	d1, d1, d2
+	fabs	d1, d1
+	fcmp	d1, d0
+	cset	w0, ge
+	ret
+                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	fmul	d1, d1, d2

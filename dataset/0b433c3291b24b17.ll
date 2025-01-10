@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -21,6 +21,7 @@
 ; meshlab/optimized/ssao.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/X11Color.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/gtk3_interface.ll

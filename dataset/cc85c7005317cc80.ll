@@ -30,30 +30,4 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp slt i64 %6, -12
-  ret i1 %7
-}
-
-; 1 occurrences:
-; pocketpy/optimized/error.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %4, %3
-  %6 = sub i64 %0, %5
-  %7 = icmp sgt i64 %6, -1
-  ret i1 %7
-}
-
 attributes #0 = { nounwind }

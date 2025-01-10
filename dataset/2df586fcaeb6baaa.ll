@@ -40,9 +40,8 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll

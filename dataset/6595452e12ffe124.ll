@@ -107,7 +107,7 @@ entry:
   ret ptr %6
 }
 
-; 895 occurrences:
+; 897 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -214,6 +214,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/xmlparse.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/print_settings.c.ll
@@ -865,6 +866,7 @@ entry:
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/onesided_aggregation.ll
+; openmpi/optimized/stacktrace.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
@@ -1013,16 +1015,10 @@ entry:
   ret ptr %6
 }
 
-; 10 occurrences:
-; darktable/optimized/introspection_bilateral.cc.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
+; 4 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll
-; openmpi/optimized/stacktrace.ll
-; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/restoration.c.ll
-; redis/optimized/debug.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
@@ -1034,7 +1030,7 @@ entry:
   ret ptr %6
 }
 
-; 191 occurrences:
+; 190 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; bullet3/optimized/btMultiBody.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -1181,7 +1177,6 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -1305,18 +1300,6 @@ entry:
   %4 = getelementptr i64, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i32, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -81,3 +81,10 @@ func0000000000000128:                   # @func0000000000000128
 	seta	%al
 	orb	%cl, %al
 	retq
+func0000000000000318:                   # @func0000000000000318
+	cmpl	%edx, %esi
+	seta	%cl
+	cmpl	%esi, %edi
+	seta	%al
+	orb	%cl, %al
+	retq

@@ -52,7 +52,127 @@ entry:
   ret i1 %1
 }
 
-; 116 occurrences:
+; 33 occurrences:
+; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/sparring_partner.ll
+; ceres/optimized/covariance_impl.cc.ll
+; freetype/optimized/pshinter.c.ll
+; graphviz/optimized/sfprint.c.ll
+; graphviz/optimized/sfvscanf.c.ll
+; linux/optimized/open.ll
+; linux/optimized/virtio_console.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; nuttx/optimized/fs_read.c.ll
+; opencv/optimized/homography_decomp.cpp.ll
+; openssl/optimized/libcrypto-lib-decoder_lib.ll
+; openssl/optimized/libcrypto-shlib-decoder_lib.ll
+; openssl/optimized/openssl-bin-x509.ll
+; qemu/optimized/virtio-9p-client.c.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; ruby/optimized/init.ll
+; ruby/optimized/string.ll
+; spike/optimized/kslra16.ll
+; spike/optimized/kslra16_u.ll
+; spike/optimized/kslra32.ll
+; spike/optimized/kslra32_u.ll
+; spike/optimized/kslra8.ll
+; spike/optimized/kslra8_u.ll
+; spike/optimized/kslraw.ll
+; spike/optimized/kslraw_u.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
+; yosys/optimized/blifparse.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp slt i32 %1, 1
+  ret i1 %2
+}
+
+; 69 occurrences:
+; abc/optimized/ioJson.c.ll
+; abc/optimized/mvcUtils.c.ll
+; annoy/optimized/annoymodule.ll
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; casadi/optimized/integration_tools.cpp.ll
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_sparse_matrix.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_decoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; eastl/optimized/EASprintfCore.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; graphviz/optimized/csettings.cpp.ll
+; gromacs/optimized/xvgr.cpp.ll
+; hermes/optimized/DebugInfo.cpp.ll
+; icu/optimized/utext.ll
+; jq/optimized/regexec.ll
+; linux/optimized/drm_file.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVRegisterInfo.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; oiio/optimized/color_ocio.cpp.ll
+; oniguruma/optimized/regexec.ll
+; openblas/optimized/dsyr2k_kernel_L.c.ll
+; openblas/optimized/dsyr2k_kernel_U.c.ll
+; opencv/optimized/softfloat.cpp.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/zip_util.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; postgres/optimized/fe-exec.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quickjs/optimized/quickjs.ll
+; raylib/optimized/rmodels.c.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
+; redis/optimized/quicklist.ll
+; ruby/optimized/io.ll
+; spike/optimized/s_roundPackToI32.ll
+; spike/optimized/s_roundToI32.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; wolfssl/optimized/api.c.ll
+; yosys/optimized/ql_bram_types.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp sgt i32 %1, 0
+  ret i1 %2
+}
+
+; 117 occurrences:
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/record_batch.cc.ll
 ; arrow/optimized/table.cc.ll
@@ -75,6 +195,7 @@ entry:
 ; git/optimized/combine-diff.ll
 ; git/optimized/dir.ll
 ; git/optimized/range-diff.ll
+; git/optimized/sequencer.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; graphviz/optimized/xdot.c.ll
 ; gromacs/optimized/bias.cpp.ll
@@ -177,47 +298,6 @@ entry:
   ret i1 %1
 }
 
-; 32 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
-; boost/optimized/on_exit.ll
-; boost/optimized/on_exit2.ll
-; boost/optimized/on_exit3.ll
-; boost/optimized/sparring_partner.ll
-; ceres/optimized/covariance_impl.cc.ll
-; freetype/optimized/pshinter.c.ll
-; graphviz/optimized/sfprint.c.ll
-; graphviz/optimized/sfvscanf.c.ll
-; linux/optimized/open.ll
-; linux/optimized/virtio_console.ll
-; llvm/optimized/SubtargetEmitter.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; nuttx/optimized/fs_read.c.ll
-; opencv/optimized/homography_decomp.cpp.ll
-; openssl/optimized/libcrypto-lib-decoder_lib.ll
-; openssl/optimized/libcrypto-shlib-decoder_lib.ll
-; openssl/optimized/openssl-bin-x509.ll
-; qemu/optimized/virtio-9p-client.c.ll
-; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; ruby/optimized/string.ll
-; spike/optimized/kslra16.ll
-; spike/optimized/kslra16_u.ll
-; spike/optimized/kslra32.ll
-; spike/optimized/kslra32_u.ll
-; spike/optimized/kslra8.ll
-; spike/optimized/kslra8_u.ll
-; spike/optimized/kslraw.ll
-; spike/optimized/kslraw_u.ll
-; yalantinglibs/optimized/tutorial.cpp.ll
-; yosys/optimized/blifparse.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
-entry:
-  %.mask = and i64 %0, 2147483648
-  %1 = icmp ne i64 %.mask, 0
-  ret i1 %1
-}
-
 ; 1 occurrences:
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
@@ -226,82 +306,6 @@ entry:
   %.mask = and i64 %0, 4611686018427387904
   %1 = icmp ne i64 %.mask, 0
   ret i1 %1
-}
-
-; 67 occurrences:
-; abc/optimized/ioJson.c.ll
-; abc/optimized/mvcUtils.c.ll
-; annoy/optimized/annoymodule.ll
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; casadi/optimized/integration_tools.cpp.ll
-; ceres/optimized/cgnr_solver.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_sparse_matrix.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
-; ceres/optimized/power_series_expansion_preconditioner.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/trust_region_minimizer.cc.ll
-; clamav/optimized/pdf.c.ll
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
-; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; draco/optimized/sequential_integer_attribute_encoder.cc.ll
-; draco/optimized/sequential_normal_attribute_decoder.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; graphviz/optimized/csettings.cpp.ll
-; gromacs/optimized/xvgr.cpp.ll
-; hermes/optimized/DebugInfo.cpp.ll
-; icu/optimized/utext.ll
-; jq/optimized/regexec.ll
-; linux/optimized/drm_file.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVRegisterInfo.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oniguruma/optimized/regexec.ll
-; openblas/optimized/dsyr2k_kernel_L.c.ll
-; openblas/optimized/dsyr2k_kernel_U.c.ll
-; opencv/optimized/softfloat.cpp.ll
-; openjdk/optimized/instanceKlass.ll
-; pbrt-v4/optimized/camera.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; postgres/optimized/fe-exec.ll
-; qemu/optimized/block_qcow2-refcount.c.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quickjs/optimized/quickjs.ll
-; raylib/optimized/rmodels.c.ll
-; recastnavigation/optimized/RecastRegion.cpp.ll
-; redis/optimized/quicklist.ll
-; spike/optimized/s_roundPackToI32.ll
-; spike/optimized/s_roundToI32.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; wolfssl/optimized/api.c.ll
-; yosys/optimized/ql_bram_types.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp sgt i32 %1, 8388608
-  ret i1 %2
 }
 
 ; 35 occurrences:

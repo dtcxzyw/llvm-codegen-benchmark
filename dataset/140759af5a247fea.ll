@@ -41,6 +41,18 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/spgtextproc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nsw i64 %2, -1
+  %4 = sext i32 %0 to i64
+  %5 = icmp ugt i64 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i32 %0, i32 %1) #0 {

@@ -304,6 +304,17 @@ entry:
 }
 
 ; 1 occurrences:
+; luau/optimized/lstrlib.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = sub nuw nsw i32 %2, %0
+  %4 = add nuw nsw i32 %3, 1
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000037(i32 %0, i64 %1) #0 {

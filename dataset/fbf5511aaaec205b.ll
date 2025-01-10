@@ -17,7 +17,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; openjdk/optimized/jvm.ll
 ; Function Attrs: nounwind

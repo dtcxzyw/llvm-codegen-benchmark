@@ -191,9 +191,8 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/writer.cc.ll
-; ceres/optimized/block_sparse_matrix.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/arena.c.ll
 ; spike/optimized/s_subMagsF128.ll

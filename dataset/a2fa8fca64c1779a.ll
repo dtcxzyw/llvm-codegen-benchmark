@@ -25,8 +25,10 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i1 %1, i64 %2) #0 {
 entry:

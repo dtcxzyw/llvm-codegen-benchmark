@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
-%"class.hermes::vm::HermesValue.3081023" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3080988" = type { %"class.hermes::vm::HermesValue.3080989" }
+%"class.hermes::vm::HermesValue.3080989" = type { i64 }
 
 ; 21 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -431,7 +431,7 @@ define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -64
-  %4 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %3, i64 %2
+  %4 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3080988", ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   ret ptr %5
 }

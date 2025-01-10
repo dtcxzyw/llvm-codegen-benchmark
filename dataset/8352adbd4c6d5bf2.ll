@@ -399,6 +399,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; freetype/optimized/sfnt.c.ll
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 8191
+  %3 = and i64 %2, -8192
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; hdf5/optimized/H5HL.c.ll
@@ -437,18 +450,6 @@ entry:
   %2 = add nsw i64 %1, 7
   %3 = and i64 %2, -8
   %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; boost/optimized/alloc_lib.ll
-; freetype/optimized/sfnt.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw i64 %1, 23
-  %3 = and i64 %2, -16
-  %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 

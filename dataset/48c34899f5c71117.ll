@@ -1,5 +1,5 @@
 
-; 1360 occurrences:
+; 1362 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
@@ -622,6 +622,7 @@
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -657,6 +658,7 @@
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; llvm/optimized/DivisionByConstantInfo.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
@@ -1693,7 +1695,6 @@ entry:
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/serport.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/skl_watermark.ll
@@ -1759,6 +1760,7 @@ entry:
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll

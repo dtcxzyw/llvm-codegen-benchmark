@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; postgres/optimized/formatting.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i8 %1) #0 {

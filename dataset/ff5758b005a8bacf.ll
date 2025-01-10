@@ -1,6 +1,17 @@
 
-; 45 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/attachListener_posix.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008b(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = icmp ult ptr %3, %2
+  %5 = zext i1 %4 to i64
+  %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
+  ret ptr %6
+}
+
+; 44 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; turborepo-rs/optimized/5x6vf5oc1gv1cmh03slcaf29a.ll
 ; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
@@ -48,22 +59,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000008f(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 } }, ptr %0, i64 %1
   %4 = icmp ult ptr %3, %2
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/attachListener_posix.ll
-; Function Attrs: nounwind
-define ptr @func000000000000008b(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = icmp ult ptr %3, %2
-  %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
+  %6 = getelementptr nusw nuw { { { i64, ptr, {} }, i64 } }, ptr %3, i64 %5
   ret ptr %6
 }
 

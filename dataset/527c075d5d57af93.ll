@@ -1,11 +1,11 @@
 
-%"struct.GUITable::Cell.2703225" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703211", i8, i32 }
-%"class.irr::video::SColor.2703211" = type { i32 }
-%struct.colormaprange.3651829 = type { i32, i32, i32 }
-%"class.std::vector.244.3824617" = type { %"struct.std::_Vector_base.245.3824618" }
-%"struct.std::_Vector_base.245.3824618" = type { %"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl.3824619" }
-%"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl.3824619" = type { %"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl_data.3824620" }
-%"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl_data.3824620" = type { ptr, ptr, ptr }
+%"struct.GUITable::Cell.2703191" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703177", i8, i32 }
+%"class.irr::video::SColor.2703177" = type { i32 }
+%struct.colormaprange.3651795 = type { i32, i32, i32 }
+%"class.std::vector.244.3824567" = type { %"struct.std::_Vector_base.245.3824568" }
+%"struct.std::_Vector_base.245.3824568" = type { %"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl.3824569" }
+%"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl.3824569" = type { %"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl_data.3824570" }
+%"struct.std::_Vector_base<vcg::Voxelfc, std::allocator<vcg::Voxelfc>>::_Vector_impl_data.3824570" = type { ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
@@ -41,7 +41,7 @@ entry:
   %3 = sdiv i32 %2, 2
   %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.GUITable::Cell.2703225", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"struct.GUITable::Cell.2703191", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -69,7 +69,7 @@ entry:
   %3 = sdiv i32 %2, 2
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.colormaprange.3651829, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.colormaprange.3651795, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -96,7 +96,7 @@ entry:
   %3 = sdiv i32 %2, 8
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.std::vector.244.3824617", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  %6 = getelementptr %"class.std::vector.244.3824567", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

@@ -220,18 +220,15 @@ entry:
   ret i1 %5
 }
 
-; 45 occurrences:
+; 42 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ioWriteDot.c.ll
 ; abc/optimized/sclBuffer.c.ll
-; darktable/optimized/recentcollect.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/islamcal.ll
 ; icu/optimized/locdispnames.ll

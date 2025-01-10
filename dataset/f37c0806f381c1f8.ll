@@ -64,7 +64,7 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
@@ -77,7 +77,6 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; nanobind/optimized/nb_func.cpp.ll
-; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/threads.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; php/optimized/zend_compile.ll

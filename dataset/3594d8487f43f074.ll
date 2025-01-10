@@ -52,17 +52,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; slurm/optimized/gres_sched.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %1, %3
-  %5 = icmp samesign ult i64 %4, %0
-  ret i1 %5
-}
-
 ; 4 occurrences:
 ; oiio/optimized/sgiinput.cpp.ll
 ; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll

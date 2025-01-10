@@ -17,7 +17,7 @@ entry:
   ret i32 %4
 }
 
-; 187 occurrences:
+; 188 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/exorLink.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -189,6 +189,7 @@ entry:
 ; wireshark/optimized/packet-couchbase.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-homeplug-av.c.ll

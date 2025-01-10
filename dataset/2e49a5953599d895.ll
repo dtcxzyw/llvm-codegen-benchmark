@@ -24,7 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; clamav/optimized/openioc.c.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -38,6 +38,7 @@ entry:
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i32 %0, i64 %1) #0 {

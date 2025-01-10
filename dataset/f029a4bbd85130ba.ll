@@ -38,10 +38,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/scsi_logging.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

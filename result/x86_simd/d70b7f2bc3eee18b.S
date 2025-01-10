@@ -10,12 +10,6 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrld	$31, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000000c:                   # @func000000000000000c
-	vpcmpgtq	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %xmm0
-	vpsrld	$31, %xmm0, %xmm0
-	vzeroupper
-	retq
 func0000000000000010:                   # @func0000000000000010
 	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -66,6 +60,12 @@ func000000000000002a:                   # @func000000000000002a
 	retq
 func0000000000000016:                   # @func0000000000000016
 	vpcmpnltq	%ymm1, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vpsrld	$31, %xmm0, %xmm0
+	vzeroupper
+	retq
+func000000000000000c:                   # @func000000000000000c
+	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vpsrld	$31, %xmm0, %xmm0
 	vzeroupper

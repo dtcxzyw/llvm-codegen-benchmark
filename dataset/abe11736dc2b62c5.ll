@@ -15,8 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; freetype/optimized/ftstroke.c.ll
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Ocopy.c.ll
 ; linux/optimized/blk-mq.ll

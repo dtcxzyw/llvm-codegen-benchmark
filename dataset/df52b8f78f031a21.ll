@@ -147,18 +147,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/Scalarizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ugt i32 %2, 1
-  %4 = icmp ult i32 %0, 2
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000008a(i32 %0, i32 %1) #0 {

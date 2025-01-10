@@ -1,7 +1,7 @@
 
-%"union.arrow::BinaryViewType::c_type.3799442" = type { %struct.anon.3799443 }
-%struct.anon.3799443 = type { i32, %"struct.std::array.3799444" }
-%"struct.std::array.3799444" = type { [12 x i8] }
+%"union.arrow::BinaryViewType::c_type.3799392" = type { %struct.anon.3799393 }
+%struct.anon.3799393 = type { i32, %"struct.std::array.3799394" }
+%"struct.std::array.3799394" = type { [12 x i8] }
 
 ; 2 occurrences:
 ; openjdk/optimized/block.ll
@@ -97,7 +97,7 @@ entry:
 define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"union.arrow::BinaryViewType::c_type.3799442", ptr %0, i64 %1
+  %4 = getelementptr nusw %"union.arrow::BinaryViewType::c_type.3799392", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6

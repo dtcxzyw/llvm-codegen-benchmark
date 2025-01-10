@@ -9,7 +9,7 @@ func000000000000002a:                   // @func000000000000002a
 func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
 	sxth	w8, w1
-	add	w8, w8, #2
+	add	w8, w8, #1
 	cmp	w8, w0, sxth
 	cset	w0, lt
 	ret

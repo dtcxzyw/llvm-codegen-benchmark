@@ -22,6 +22,12 @@ func0000000000000074:                   # @func0000000000000074
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
+func00000000000000c1:                   # @func00000000000000c1
+	andl	$7, %esi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
 func0000000000000061:                   # @func0000000000000061
 	andl	$-4, %esi
 	incq	%rdi
@@ -51,12 +57,6 @@ func00000000000000f8:                   # @func00000000000000f8
 	addq	$64, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
-	retq
-func00000000000000c1:                   # @func00000000000000c1
-	andl	$3, %esi
-	incq	%rdi
-	cmpq	%rsi, %rdi
-	sete	%al
 	retq
 func0000000000000075:                   # @func0000000000000075
 	andl	$-4, %esi

@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
-%union._zend_value.2791866 = type { i64 }
-%union.anon.0.2791867 = type { i32 }
-%union.anon.3.2791868 = type { i32 }
+%struct._zval_struct.2791824 = type { %union._zend_value.2791832, %union.anon.0.2791833, %union.anon.3.2791834 }
+%union._zend_value.2791832 = type { i64 }
+%union.anon.0.2791833 = type { i32 }
+%union.anon.3.2791834 = type { i32 }
 
 ; 3 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -14,8 +14,8 @@ entry:
   %3 = add i32 %2, 5
   %4 = zext i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %1
-  %7 = getelementptr nusw %struct._zval_struct.2791858, ptr %6, i64 %5
+  %6 = getelementptr nusw %struct._zval_struct.2791824, ptr %0, i64 %1
+  %7 = getelementptr nusw %struct._zval_struct.2791824, ptr %6, i64 %5
   ret ptr %7
 }
 

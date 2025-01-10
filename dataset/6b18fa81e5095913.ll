@@ -36,8 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; libquic/optimized/time.cc.ll
+; 6 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -53,8 +52,7 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
-; libquic/optimized/time.cc.ll
+; 7 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll

@@ -12,7 +12,7 @@ entry:
   ret i1 %3
 }
 
-; 748 occurrences:
+; 749 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaFx.c.ll
@@ -53,6 +53,7 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/libfreshclam.c.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
@@ -769,7 +770,7 @@ entry:
   ret i1 %3
 }
 
-; 328 occurrences:
+; 327 occurrences:
 ; abc/optimized/aigDfs.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
@@ -1090,7 +1091,6 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-windows-common.c.ll
 ; yosys/optimized/fstapi.ll
-; yyjson/optimized/yyjson.c.ll
 ; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll

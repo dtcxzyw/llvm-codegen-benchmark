@@ -12,6 +12,7 @@
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTune.c.ll
 ; bdwgc/optimized/gc.c.ll
+; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/sygus_explain.cpp.ll
 ; eastl/optimized/BenchmarkBitset.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -63,7 +64,6 @@
 ; openssl/optimized/libcrypto-lib-der_writer.ll
 ; openssl/optimized/libcrypto-shlib-der_writer.ll
 ; php/optimized/phpdbg_btree.ll
-; php/optimized/zend_alloc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/migration_ram.c.ll

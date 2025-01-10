@@ -41,7 +41,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; cpython/optimized/suggestions.ll
@@ -61,6 +61,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
+; qemu/optimized/block_vvfat.c.ll
 ; recastnavigation/optimized/Bench_rcVector.cpp.ll
 ; spike/optimized/max.ll
 ; tinympc/optimized/tiny_api.cpp.ll

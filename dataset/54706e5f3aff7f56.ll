@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/mesh.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, float 1.000000e+00, float 0.000000e+00
-  %3 = fadd float %2, %0
-  %4 = fcmp oeq float %3, 0.000000e+00
-  ret i1 %4
-}
-
 ; 5 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll

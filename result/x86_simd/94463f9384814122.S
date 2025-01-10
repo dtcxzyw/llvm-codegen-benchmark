@@ -39,7 +39,7 @@ func00000000000007f4:                   # @func00000000000007f4
 func0000000000000761:                   # @func0000000000000761
 	vpsllq	$32, %ymm2, %ymm2
 	vpsllq	$48, %ymm1, %ymm1
-	vpternlogq	$254, %ymm2, %ymm0, %ymm1 # ymm1 = ymm1 | ymm0 | ymm2
+	vpternlogq	$254, %ymm0, %ymm2, %ymm1 # ymm1 = ymm1 | ymm2 | ymm0
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

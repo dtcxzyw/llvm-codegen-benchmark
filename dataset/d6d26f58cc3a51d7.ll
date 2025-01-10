@@ -33,7 +33,7 @@ entry:
   ret i16 %2
 }
 
-; 227 occurrences:
+; 228 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/fretInit.c.ll
 ; assimp/optimized/3DSExporter.cpp.ll
@@ -186,6 +186,7 @@ entry:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; oiio/optimized/sgioutput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll

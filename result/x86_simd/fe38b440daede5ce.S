@@ -66,7 +66,7 @@ func0000000000000034:                   # @func0000000000000034
 	vzeroupper
 	retq
 .LCPI5_0:
-	.quad	8                               # 0x8
+	.quad	1                               # 0x1
 func000000000000018c:                   # @func000000000000018c
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

@@ -1,8 +1,8 @@
 
-%"struct.duckdb::string_t.2956831" = type { %union.anon.26.2956832 }
-%union.anon.26.2956832 = type { %struct.anon.2956833 }
-%struct.anon.2956833 = type { i32, [4 x i8], ptr }
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"struct.duckdb::string_t.2956797" = type { %union.anon.26.2956798 }
+%union.anon.26.2956798 = type { %struct.anon.2956799 }
+%struct.anon.2956799 = type { i32, [4 x i8], ptr }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 25 occurrences:
 ; arrow/optimized/light_array.cc.ll
@@ -96,8 +96,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"struct.duckdb::string_t.2956831", ptr %0, i64 %1
-  %5 = getelementptr %"struct.duckdb::string_t.2956831", ptr %4, i64 %3, i32 0, i32 0, i32 2
+  %4 = getelementptr %"struct.duckdb::string_t.2956797", ptr %0, i64 %1
+  %5 = getelementptr %"struct.duckdb::string_t.2956797", ptr %4, i64 %3, i32 0, i32 0, i32 2
   ret ptr %5
 }
 
@@ -177,8 +177,8 @@ entry:
 define ptr @func000000000000002c(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3251960", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %4, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3251926", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 35
   ret ptr %6
 }

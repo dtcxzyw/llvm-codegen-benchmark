@@ -66,4 +66,16 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl i64 8, %2
+  %4 = select i1 %0, i64 %3, i64 6
+  ret i64 %4
+}
+
 attributes #0 = { nounwind }

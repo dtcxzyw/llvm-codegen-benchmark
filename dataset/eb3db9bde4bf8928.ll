@@ -1,4 +1,20 @@
 
+; 6 occurrences:
+; openmpi/optimized/coll_basic_barrier.ll
+; openmpi/optimized/coll_basic_bcast.ll
+; openmpi/optimized/nbc_iallreduce.ll
+; openmpi/optimized/nbc_ireduce.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = shl nuw nsw i32 1, %0
+  %4 = select i1 %2, i32 1, i32 %3
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -91,18 +107,6 @@ entry:
   %3 = shl nsw i32 -1, %0
   %4 = select i1 %2, i32 -8, i32 %3
   ret i32 %4
-}
-
-; 4 occurrences:
-; openmpi/optimized/coll_basic_barrier.ll
-; openmpi/optimized/coll_basic_bcast.ll
-; openmpi/optimized/nbc_iallreduce.ll
-; openmpi/optimized/nbc_ireduce.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 1, %0
-  ret i32 %2
 }
 
 ; 1 occurrences:

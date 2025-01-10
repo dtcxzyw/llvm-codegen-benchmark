@@ -47,7 +47,8 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; abc/optimized/cmdApi.c.ll
 ; assimp/optimized/sweep.cc.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
@@ -124,8 +125,7 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
-; abc/optimized/cmdApi.c.ll
+; 2 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; quantlib/optimized/discretizedcallablefixedratebond.ll
 ; Function Attrs: nounwind
@@ -136,7 +136,8 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; abc/optimized/cmdApi.c.ll
 ; arrow/optimized/tdigest.cc.ll
 ; graphviz/optimized/routespl.c.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -169,16 +170,6 @@ define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e-02
   %3 = fcmp ule double %0, %2
-  ret i1 %3
-}
-
-; 1 occurrences:
-; abc/optimized/cmdApi.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(double %0, double %1) #0 {
-entry:
-  %2 = fadd double %1, -1.000000e+00
-  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 

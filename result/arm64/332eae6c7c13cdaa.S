@@ -14,18 +14,18 @@ func0000000000000284:                   // @func0000000000000284
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000204:                   // @func0000000000000204
-// %bb.0:                               // %entry
-	add	w8, w0, w1, lsl #1
-	sub	w8, w8, #1
-	cmp	w8, #15
-	cset	w0, lo
-	ret
-                                        // -- End function
 func00000000000002a4:                   // @func00000000000002a4
 // %bb.0:                               // %entry
 	add	w8, w0, w1, lsl #1
 	add	w8, w8, #999
+	cmp	w8, #15
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000204:                   // @func0000000000000204
+// %bb.0:                               // %entry
+	add	w8, w0, w1, lsl #1
+	sub	w8, w8, #1
 	cmp	w8, #15
 	cset	w0, lo
 	ret

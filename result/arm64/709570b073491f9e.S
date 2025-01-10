@@ -13,14 +13,6 @@ func0000000000000081:                   // @func0000000000000081
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000001e1:                   // @func00000000000001e1
-// %bb.0:                               // %entry
-	lsl	x8, x0, #2
-	add	x8, x8, #511
-	tst	x8, #0x1fffffe00
-	cset	w0, eq
-	ret
-                                        // -- End function
 func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
 	lsl	x8, x0, #1
@@ -45,18 +37,5 @@ func0000000000000008:                   // @func0000000000000008
 	and	x9, x9, #0xffffffffffffffc0
 	cmp	x9, x8
 	cset	w0, hi
-	ret
-                                        // -- End function
-func00000000000001c1:                   // @func00000000000001c1
-// %bb.0:                               // %entry
-	mov	w0, #0                          // =0x0
-	ret
-                                        // -- End function
-func00000000000001ec:                   // @func00000000000001ec
-// %bb.0:                               // %entry
-	lsl	x8, x0, #2
-	add	x8, x8, #7
-	tst	x8, #0x7fffffff8
-	cset	w0, ne
 	ret
                                         // -- End function

@@ -58,12 +58,11 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb2.c.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind

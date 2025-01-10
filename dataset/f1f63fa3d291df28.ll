@@ -1,5 +1,5 @@
 
-; 6883 occurrences:
+; 6886 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -21,6 +21,8 @@
 ; abc/optimized/bacWriteBlif.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/bmcFault.c.ll
+; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
@@ -1255,6 +1257,7 @@
 ; icu/optimized/number_modifiers.ll
 ; icu/optimized/number_utils.ll
 ; icu/optimized/numparse_affixes.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/pkgdata.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/rbt_rule.ll
@@ -6891,7 +6894,7 @@ entry:
   ret i1 %2
 }
 
-; 1456 occurrences:
+; 1458 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -7026,6 +7029,7 @@ entry:
 ; folly/optimized/Uri.cpp.ll
 ; folly/optimized/xlog.cpp.ll
 ; freetype/optimized/autofit.c.ll
+; freetype/optimized/ftstroke.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; g2o/optimized/hyper_graph.cpp.ll
 ; git/optimized/cache-tree.ll
@@ -8225,6 +8229,7 @@ entry:
 ; wireshark/optimized/packet-ippusb.c.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-juniper.c.ll
+; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll
 ; wireshark/optimized/packet-ldp.c.ll

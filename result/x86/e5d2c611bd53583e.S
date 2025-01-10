@@ -25,6 +25,13 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	shrl	$7, %edx
+	movzbl	%dl, %eax
+	cmpl	%esi, %eax
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000014:                   # @func0000000000000014
 	shrl	$2, %edx
 	andl	$7, %edx

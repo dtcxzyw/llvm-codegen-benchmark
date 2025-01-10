@@ -1,7 +1,7 @@
 
-%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
-%struct.anon.21.2601264 = type { ptr, i64 }
-%"class.cvc5::internal::NodeTemplate.3569935" = type { ptr }
+%union.iseq_inline_storage_entry.2601230 = type { %struct.anon.21.2601231 }
+%struct.anon.21.2601231 = type { ptr, i64 }
+%"class.cvc5::internal::NodeTemplate.3569901" = type { ptr }
 
 ; 3 occurrences:
 ; qemu/optimized/fdt_rw.c.ll
@@ -12,7 +12,7 @@ define i64 @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %0, i64 %4
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601230, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -106,7 +106,7 @@ define i64 @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3569935", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3569901", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

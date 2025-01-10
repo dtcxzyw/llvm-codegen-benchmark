@@ -31,13 +31,6 @@ func00000000000004ca:                   # @func00000000000004ca
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000ca:                   # @func00000000000000ca
-	add	a1, a1, a2
-	slti	a1, a1, 0
-	not	a1, a1
-	slti	a0, a0, 0
-	and	a0, a0, a1
-	ret
 func000000000000042c:                   # @func000000000000042c
 	add	a1, a1, a2
 	addi	a1, a1, -1

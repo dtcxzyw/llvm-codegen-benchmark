@@ -30,8 +30,7 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; lz4/optimized/lz4hc.c.ll
+; 3 occurrences:
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
 ; openjdk/optimized/stubs.ll
 ; openusd/optimized/yv12config.c.ll

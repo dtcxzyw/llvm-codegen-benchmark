@@ -977,7 +977,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -985,7 +985,6 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; openjdk/optimized/loopopts.ll
 ; openusd/optimized/fileSystem.cpp.ll
 ; z3/optimized/fpa_rewriter.cpp.ll

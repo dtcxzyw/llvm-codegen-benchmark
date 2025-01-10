@@ -38,10 +38,10 @@ func000000000000000a:                   // @func000000000000000a
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000036a:                   // @func000000000000036a
+func000000000000016a:                   // @func000000000000016a
 // %bb.0:                               // %entry
 	cmp	x0, #1
-	cset	w0, hi
+	cset	w0, gt
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
@@ -72,18 +72,6 @@ func0000000000000008:                   // @func0000000000000008
 	add	x8, x8, x0, lsl #27
 	lsr	x0, x8, #63
                                         // kill: def $w0 killed $w0 killed $x0
-	ret
-                                        // -- End function
-func000000000000016a:                   // @func000000000000016a
-// %bb.0:                               // %entry
-	cmp	x0, #1
-	cset	w0, gt
-	ret
-                                        // -- End function
-func000000000000034a:                   // @func000000000000034a
-// %bb.0:                               // %entry
-	cmp	x0, #5
-	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001

@@ -108,6 +108,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ea(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = call noundef i32 @llvm.smax.i32(i32 %0, i32 %1)
+  %5 = icmp sgt i32 %4, %3
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; oiio/optimized/formatspec.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll

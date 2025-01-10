@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -25,7 +25,7 @@ define ptr @func00000000000000ce(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %1
+  %5 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 -24
   ret ptr %7

@@ -1,11 +1,11 @@
 
-%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
-%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
-%"class.llvm::APInt.3214275" = type <{ %union.anon.3214276, i32, [4 x i8] }>
-%union.anon.3214276 = type { i64 }
-%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
-%"class.cv::Complex.3752634" = type { double, double }
+%"struct.rocksdb::FdWithKeyRange.2615345" = type { %"struct.rocksdb::FileDescriptor.2615346", ptr, %"class.rocksdb::Slice.2615314", %"class.rocksdb::Slice.2615314" }
+%"struct.rocksdb::FileDescriptor.2615346" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615314" = type { ptr, i64 }
+%"class.llvm::APInt.3214241" = type <{ %union.anon.3214242, i32, [4 x i8] }>
+%union.anon.3214242 = type { i64 }
+%struct.CommandTagBehavior.3652146 = type { ptr, i8, i8, i8, i8 }
+%"class.cv::Complex.3752584" = type { double, double }
 
 ; 4 occurrences:
 ; cpython/optimized/longobject.ll
@@ -44,7 +44,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615345", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -69,7 +69,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000014a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::APInt.3214275", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::APInt.3214241", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -82,7 +82,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000146(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::APInt.3214275", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::APInt.3214241", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -124,7 +124,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %2
+  %3 = getelementptr %struct.CommandTagBehavior.3652146, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -148,7 +148,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000161(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.cv::Complex.3752634", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.cv::Complex.3752584", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = icmp eq i32 %1, 2
   %6 = select i1 %5, ptr %0, ptr %4

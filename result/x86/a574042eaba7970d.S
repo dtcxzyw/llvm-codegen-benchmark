@@ -1,7 +1,8 @@
 func00000000000000aa:                   # @func00000000000000aa
 	cmpl	$-1, %edx
-	cmovel	%edx, %esi
-	cmpl	%esi, %edi
+	movl	$1, %eax
+	cmovnel	%esi, %eax
+	cmpl	%eax, %edi
 	setg	%al
 	retq
 func0000000000000086:                   # @func0000000000000086

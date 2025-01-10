@@ -1,5 +1,5 @@
 
-; 4083 occurrences:
+; 4082 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -2197,7 +2197,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -4516,7 +4515,7 @@ entry:
   ret i64 %3
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -4572,6 +4571,7 @@ entry:
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-ocb128.ll
 ; openssl/optimized/libcrypto-shlib-ocb128.ll
 ; rocksdb/optimized/clock_cache.cc.ll

@@ -128,9 +128,8 @@ entry:
   ret ptr %4
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; hermes/optimized/Lowering.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll

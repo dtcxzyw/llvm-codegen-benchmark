@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 223 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/amapRule.c.ll
@@ -83,6 +83,7 @@
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/AnalyzerStatsChecker.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/BugReporter.cpp.ll

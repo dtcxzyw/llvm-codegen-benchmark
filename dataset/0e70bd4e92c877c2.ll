@@ -1,11 +1,11 @@
 
-%union.anon.2876061 = type { %"struct.Gluco2::Lit.2876060" }
-%"struct.Gluco2::Lit.2876060" = type { i32 }
-%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
-%union.RelptrFreePageBtree.3653937 = type { ptr }
-%"class.ue2::CharReach.3855396" = type { %"class.ue2::bitfield.3855397" }
-%"class.ue2::bitfield.3855397" = type { %"struct.std::array.3855398" }
-%"struct.std::array.3855398" = type { [4 x i64] }
+%union.anon.2876027 = type { %"struct.Gluco2::Lit.2876026" }
+%"struct.Gluco2::Lit.2876026" = type { i32 }
+%struct.FreePageBtreeInternalKey.3653902 = type { i64, %union.RelptrFreePageBtree.3653903 }
+%union.RelptrFreePageBtree.3653903 = type { ptr }
+%"class.ue2::CharReach.3855346" = type { %"class.ue2::bitfield.3855347" }
+%"class.ue2::bitfield.3855347" = type { %"struct.std::array.3855348" }
+%"struct.std::array.3855348" = type { [4 x i64] }
 
 ; 7 occurrences:
 ; abc/optimized/Glucose.cpp.ll
@@ -21,7 +21,7 @@ entry:
   %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 12
   %5 = lshr exact i64 %0, 32
-  %6 = getelementptr nusw nuw [0 x %union.anon.2876061], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [0 x %union.anon.2876027], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 12
   %5 = lshr i64 %0, 32
-  %6 = getelementptr nusw nuw [0 x %union.anon.2876061], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [0 x %union.anon.2876027], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 23
   %5 = lshr i64 %0, 1
-  %6 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -61,7 +61,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.ue2::CharReach.3855396", ptr %1, i64 %2
+  %3 = getelementptr %"class.ue2::CharReach.3855346", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   %5 = lshr i64 %0, 6
   %6 = getelementptr nusw nuw [4 x i64], ptr %4, i64 0, i64 %5

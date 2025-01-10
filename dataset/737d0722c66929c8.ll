@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::NodeTemplate.3568746" = type { ptr }
+%"class.cvc5::internal::NodeTemplate.3568712" = type { ptr }
 
 ; 3 occurrences:
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, -1
   %5 = select i1 %1, i64 1, i64 %4
-  %6 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3568746", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3568712", ptr %0, i64 %5
   ret ptr %6
 }
 

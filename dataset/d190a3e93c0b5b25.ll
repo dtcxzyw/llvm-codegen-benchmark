@@ -1,15 +1,15 @@
 
-%struct.uart_port.3546867 = type { %struct.spinlock.3546868, i64, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32, i64, i32, i32, i8, i8, i8, i8, i32, i32, ptr, %struct.uart_icount.3546869, ptr, i64, i32, i8, i32, i32, i32, ptr, i32, i32, i32, i64, i64, ptr, ptr, i64, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, %struct.serial_rs485.3546870, %struct.serial_rs485.3546870, ptr, ptr, %struct.serial_iso7816.3546871, ptr }
-%struct.spinlock.3546868 = type { %union.anon.3546872 }
-%union.anon.3546872 = type { %struct.raw_spinlock.3546851 }
-%struct.raw_spinlock.3546851 = type { %struct.qspinlock.3546854 }
-%struct.qspinlock.3546854 = type { %union.anon.0.3546855 }
-%union.anon.0.3546855 = type { %struct.atomic_t.3546856 }
-%struct.atomic_t.3546856 = type { i32 }
-%struct.uart_icount.3546869 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
-%struct.serial_rs485.3546870 = type { i32, i32, i32, %union.anon.2.3546873 }
-%union.anon.2.3546873 = type { [5 x i32] }
-%struct.serial_iso7816.3546871 = type { i32, i32, i32, i32, i32, [5 x i32] }
+%struct.uart_port.3546833 = type { %struct.spinlock.3546834, i64, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32, i64, i32, i32, i8, i8, i8, i8, i32, i32, ptr, %struct.uart_icount.3546835, ptr, i64, i32, i8, i32, i32, i32, ptr, i32, i32, i32, i64, i64, ptr, ptr, i64, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, %struct.serial_rs485.3546836, %struct.serial_rs485.3546836, ptr, ptr, %struct.serial_iso7816.3546837, ptr }
+%struct.spinlock.3546834 = type { %union.anon.3546838 }
+%union.anon.3546838 = type { %struct.raw_spinlock.3546817 }
+%struct.raw_spinlock.3546817 = type { %struct.qspinlock.3546820 }
+%struct.qspinlock.3546820 = type { %union.anon.0.3546821 }
+%union.anon.0.3546821 = type { %struct.atomic_t.3546822 }
+%struct.atomic_t.3546822 = type { i32 }
+%struct.uart_icount.3546835 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.serial_rs485.3546836 = type { i32, i32, i32, %union.anon.2.3546839 }
+%union.anon.2.3546839 = type { [5 x i32] }
+%struct.serial_iso7816.3546837 = type { i32, i32, i32, i32, i32, [5 x i32] }
 
 ; 5 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -56,7 +56,7 @@ define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.uart_port.3546867, ptr %0, i64 %3
+  %4 = getelementptr %struct.uart_port.3546833, ptr %0, i64 %3
   ret ptr %4
 }
 

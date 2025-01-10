@@ -52,9 +52,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/intel_dp.ll
-; lua/optimized/ldebug.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i32 %0, i32 %1, i8 %2) #0 {

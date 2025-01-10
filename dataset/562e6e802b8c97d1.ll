@@ -1,9 +1,9 @@
 
-%"class.std::vector.24.3483053" = type { %"struct.std::_Vector_base.25.3483054" }
-%"struct.std::_Vector_base.25.3483054" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483055" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483055" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483056" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483056" = type { ptr, ptr, ptr }
-%"class.cv::Point_.3784201" = type { float, float }
+%"class.std::vector.24.3483019" = type { %"struct.std::_Vector_base.25.3483020" }
+%"struct.std::_Vector_base.25.3483020" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483021" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483021" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483022" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483022" = type { ptr, ptr, ptr }
+%"class.cv::Point_.3784151" = type { float, float }
 
 ; 2 occurrences:
 ; nori/optimized/layout.cpp.ll
@@ -13,7 +13,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.24.3483053", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.std::vector.24.3483019", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -37,7 +37,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 4
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.cv::Point_.3784201", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3784151", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

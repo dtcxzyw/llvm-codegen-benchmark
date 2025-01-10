@@ -1,7 +1,7 @@
 
-%"class.ParallelCompactData::RegionData.2744976" = type <{ ptr, i64, ptr, i32, i32, i32, [4 x i8] }>
-%union.xhci_trb.3547807 = type { %struct.xhci_link_trb.3547808 }
-%struct.xhci_link_trb.3547808 = type { i64, i32, i32 }
+%"class.ParallelCompactData::RegionData.2744942" = type <{ ptr, i64, ptr, i32, i32, i32, [4 x i8] }>
+%union.xhci_trb.3547773 = type { %struct.xhci_link_trb.3547774 }
+%struct.xhci_link_trb.3547774 = type { i64, i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/cardTable.ll
@@ -28,7 +28,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 19
-  %5 = getelementptr nuw %"class.ParallelCompactData::RegionData.2744976", ptr %0, i64 %4, i32 3
+  %5 = getelementptr nuw %"class.ParallelCompactData::RegionData.2744942", ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -54,7 +54,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 4
-  %5 = getelementptr %union.xhci_trb.3547807, ptr %0, i64 %4, i32 0, i32 2
+  %5 = getelementptr %union.xhci_trb.3547773, ptr %0, i64 %4, i32 0, i32 2
   ret ptr %5
 }
 

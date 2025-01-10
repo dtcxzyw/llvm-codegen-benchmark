@@ -1,5 +1,5 @@
 
-; 1289 occurrences:
+; 1284 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -328,7 +328,6 @@
 ; libwebp/optimized/sharpyuv.c.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/bignum.c.ll
-; lief/optimized/psa_crypto.c.ll
 ; lightgbm/optimized/boosting.cpp.ll
 ; lightgbm/optimized/config.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
@@ -612,7 +611,6 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
 ; minetest/optimized/collision.cpp.ll
-; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -623,7 +621,6 @@
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
-; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
@@ -1155,7 +1152,6 @@
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-telnet.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-v52.c.ll
 ; wireshark/optimized/packet-xmpp-utils.c.ll
 ; wireshark/optimized/radius_dict.c.ll
@@ -1164,7 +1160,6 @@
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; wolfssl/optimized/internal.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll

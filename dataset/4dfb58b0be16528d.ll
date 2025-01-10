@@ -1,5 +1,5 @@
 
-; 1540 occurrences:
+; 1541 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/cmdAuto.c.ll
@@ -596,6 +596,7 @@
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
+; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/IteratorModeling.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll

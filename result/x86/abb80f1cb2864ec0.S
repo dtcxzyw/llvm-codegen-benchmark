@@ -83,6 +83,12 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	orb	%dil, %al
 	retq
+func000000000000006c:                   # @func000000000000006c
+	addq	%rdx, %rsi
+	cmpq	$3, %rsi
+	setne	%al
+	orb	%dil, %al
+	retq
 func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	sets	%al

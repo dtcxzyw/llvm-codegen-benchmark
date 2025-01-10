@@ -6,6 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	zext.h	a0, a0
 	ret
+func0000000000000010:                   # @func0000000000000010
+	addi	a0, a0, -1
+	zext.h	a0, a0
+	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, -1
 	zext.h	a0, a0

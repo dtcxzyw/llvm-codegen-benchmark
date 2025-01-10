@@ -157,10 +157,10 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c0(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 4
-  %4 = shl nuw nsw i64 %3, 7
+  %4 = shl i64 %3, 7
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = shl i64 %1, 5
   %7 = getelementptr i8, ptr %5, i64 %6

@@ -1,8 +1,8 @@
 
-%class.default_map_entry.3612739 = type { %class.default_hash_entry.3612740 }
-%class.default_hash_entry.3612740 = type { i32, i32, %struct._key_data.161.3612725 }
-%struct._key_data.161.3612725 = type <{ %class.symbol.3612719, i32, [4 x i8] }>
-%class.symbol.3612719 = type { ptr }
+%class.default_map_entry.3612705 = type { %class.default_hash_entry.3612706 }
+%class.default_hash_entry.3612706 = type { i32, i32, %struct._key_data.161.3612691 }
+%struct._key_data.161.3612691 = type <{ %class.symbol.3612685, i32, [4 x i8] }>
+%class.symbol.3612685 = type { ptr }
 
 ; 121 occurrences:
 ; z3/optimized/ackr_bound_probe.cpp.ll
@@ -130,7 +130,7 @@
 define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.default_map_entry.3612739, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.default_map_entry.3612705, ptr %0, i64 %3
   %5 = icmp eq ptr %1, %4
   %6 = select i1 %5, ptr %0, ptr %1
   ret ptr %6

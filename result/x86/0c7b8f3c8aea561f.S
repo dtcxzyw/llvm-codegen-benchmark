@@ -3,7 +3,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dl, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000048:                   # @func0000000000000048
 	cmpl	%esi, %edi
 	seta	%al
 	andb	%dl, %al

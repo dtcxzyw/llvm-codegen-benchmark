@@ -4,6 +4,12 @@ func000000000000003f:                   // @func000000000000003f
 	add	x0, x8, w2, uxtw #2
 	ret
                                         // -- End function
+func0000000000000070:                   // @func0000000000000070
+// %bb.0:                               // %entry
+	add	x8, x0, w1, uxtw
+	add	x0, x8, w2, uxtw #2
+	ret
+                                        // -- End function
 func00000000000000f0:                   // @func00000000000000f0
 // %bb.0:                               // %entry
 	add	x8, x0, w1, uxtw

@@ -43,8 +43,7 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; abc/optimized/abc.c.ll
+; 4 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
@@ -58,7 +57,8 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {

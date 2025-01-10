@@ -1,8 +1,8 @@
 
-%"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.3085055" = type <{ ptr, ptr, %"class.hermes::vm::AssignableCompressedPointer.3085056", [4 x i8] }>
-%"class.hermes::vm::AssignableCompressedPointer.3085056" = type { %"class.hermes::vm::CompressedPointer.3085057" }
-%"class.hermes::vm::CompressedPointer.3085057" = type { %"class.hermes::vm::BasedPointer.3085058" }
-%"class.hermes::vm::BasedPointer.3085058" = type { i32 }
+%"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.3085021" = type <{ ptr, ptr, %"class.hermes::vm::AssignableCompressedPointer.3085022", [4 x i8] }>
+%"class.hermes::vm::AssignableCompressedPointer.3085022" = type { %"class.hermes::vm::CompressedPointer.3085023" }
+%"class.hermes::vm::CompressedPointer.3085023" = type { %"class.hermes::vm::BasedPointer.3085024" }
+%"class.hermes::vm::BasedPointer.3085024" = type { i32 }
 
 ; 2 occurrences:
 ; c3c/optimized/sema_name_resolution.c.ll
@@ -71,7 +71,7 @@ define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.3085055", ptr %0, i64 %4, i32 2
+  %5 = getelementptr %"struct.hermes::vm::HadesGC::OldGen::SegmentBucket.3085021", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

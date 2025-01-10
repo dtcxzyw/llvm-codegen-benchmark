@@ -1,14 +1,14 @@
 
-%struct.MapNode.2704626 = type { i16, i8, i8 }
-%"class.llvm::SmallDenseSet.994.3176281" = type { %"class.llvm::detail::DenseSetImpl.995.3176282" }
-%"class.llvm::detail::DenseSetImpl.995.3176282" = type { %"class.llvm::SmallDenseMap.996.3176283" }
-%"class.llvm::SmallDenseMap.996.3176283" = type { i32, i32, %"struct.llvm::AlignedCharArrayUnion.998.3176284" }
-%"struct.llvm::AlignedCharArrayUnion.998.3176284" = type { [64 x i8] }
-%"class.llvm::SDUse.3286993" = type { %"class.llvm::SDValue.3286982", ptr, ptr, ptr }
-%"class.llvm::SDValue.3286982" = type <{ ptr, i32, [4 x i8] }>
-%struct.t_dr_stats.3371558 = type { i32, i8, float, float, float, float, float, float, float }
-%"struct.OT::IntType.36.3883480" = type { %struct.BEInt.37.3883481 }
-%struct.BEInt.37.3883481 = type { [2 x i8] }
+%struct.MapNode.2704592 = type { i16, i8, i8 }
+%"class.llvm::SmallDenseSet.994.3176247" = type { %"class.llvm::detail::DenseSetImpl.995.3176248" }
+%"class.llvm::detail::DenseSetImpl.995.3176248" = type { %"class.llvm::SmallDenseMap.996.3176249" }
+%"class.llvm::SmallDenseMap.996.3176249" = type { i32, i32, %"struct.llvm::AlignedCharArrayUnion.998.3176250" }
+%"struct.llvm::AlignedCharArrayUnion.998.3176250" = type { [64 x i8] }
+%"class.llvm::SDUse.3286959" = type { %"class.llvm::SDValue.3286948", ptr, ptr, ptr }
+%"class.llvm::SDValue.3286948" = type <{ ptr, i32, [4 x i8] }>
+%struct.t_dr_stats.3371524 = type { i32, i8, float, float, float, float, float, float, float }
+%"struct.OT::IntType.36.3883430" = type { %struct.BEInt.37.3883431 }
+%struct.BEInt.37.3883431 = type { [2 x i8] }
 
 ; 12 occurrences:
 ; faiss/optimized/sorting.cpp.ll
@@ -86,7 +86,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %struct.MapNode.2704626, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.MapNode.2704592, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -172,7 +172,7 @@ define ptr @func000000000000004f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %"class.llvm::SmallDenseSet.994.3176281", ptr %0, i64 %4, i32 0, i32 0, i32 2
+  %5 = getelementptr nuw %"class.llvm::SmallDenseSet.994.3176247", ptr %0, i64 %4, i32 0, i32 0, i32 2
   ret ptr %5
 }
 
@@ -184,7 +184,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %"class.llvm::SDUse.3286993", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr nuw %"class.llvm::SDUse.3286959", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -201,7 +201,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %struct.t_dr_stats.3371558, ptr %0, i64 %4, i32 3
+  %5 = getelementptr nuw %struct.t_dr_stats.3371524, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -291,7 +291,7 @@ define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %"struct.OT::IntType.36.3883480", ptr %0, i64 %4, i32 0, i32 0, i64 1
+  %5 = getelementptr nuw %"struct.OT::IntType.36.3883430", ptr %0, i64 %4, i32 0, i32 0, i64 1
   ret ptr %5
 }
 

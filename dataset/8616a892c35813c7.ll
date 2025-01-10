@@ -1,11 +1,12 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; grpc/optimized/socket_utils_common_posix.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll

@@ -1,9 +1,9 @@
 
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 11 occurrences:
 ; cpython/optimized/sre.ll
@@ -290,7 +290,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = zext i32 %0 to i64
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635853", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635820", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -330,7 +330,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635821", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -592,10 +592,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %struct.lua_TValue.2923857, ptr %4, i64 %5
+  %6 = getelementptr %struct.lua_TValue.2923823, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -678,7 +678,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %struct.bio_vec.3550063, ptr %4, i64 %5
+  %6 = getelementptr %struct.bio_vec.3550029, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,8 +1,8 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
-%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
-%"class.std::thread::id.2636053" = type { i64 }
-%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021" = type { %"struct.std::atomic.742.2636022", ptr }
+%"struct.std::atomic.742.2636022" = type { %"class.std::thread::id.2636020" }
+%"class.std::thread::id.2636020" = type { i64 }
+%struct.FSE_decode_t.3533469 = type { i16, i8, i8 }
 
 ; 151 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -163,7 +163,7 @@ entry:
   %4 = xor i64 %3, -1
   %5 = and i64 %1, %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %7 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -177,7 +177,7 @@ entry:
   %4 = xor i64 %3, -1
   %5 = and i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 4
-  %7 = getelementptr %struct.FSE_decode_t.3533503, ptr %6, i64 %5
+  %7 = getelementptr %struct.FSE_decode_t.3533469, ptr %6, i64 %5
   ret ptr %7
 }
 

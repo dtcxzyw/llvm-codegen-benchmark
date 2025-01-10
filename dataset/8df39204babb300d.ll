@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/intel_display_irq.ll
@@ -7,6 +7,8 @@
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; rocksdb/optimized/thread_status_impl.cc.ll
 ; wireshark/optimized/packet-ssh.c.ll

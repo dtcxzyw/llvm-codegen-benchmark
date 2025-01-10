@@ -1,5 +1,5 @@
 
-; 1967 occurrences:
+; 1965 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/trees.c.ll
 ; abc/optimized/wlcMem.c.ll
@@ -1138,8 +1138,6 @@
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -1974,7 +1972,7 @@ entry:
   ret i16 %2
 }
 
-; 884 occurrences:
+; 883 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -2003,7 +2001,6 @@ entry:
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/deflate.c.ll

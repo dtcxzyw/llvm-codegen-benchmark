@@ -1381,7 +1381,7 @@ entry:
   ret i64 %3
 }
 
-; 135 occurrences:
+; 136 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -1392,6 +1392,7 @@ entry:
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/node_builder.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/graph.ll
 ; git/optimized/log.ll

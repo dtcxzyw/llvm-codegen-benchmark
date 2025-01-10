@@ -1,12 +1,12 @@
 
-%struct.page.3530296 = type { i64, %union.anon.53.3530297, %union.anon.61.3530298, %struct.atomic_t.3530299, [8 x i8] }
-%union.anon.53.3530297 = type { %struct.anon.54.3530300 }
-%struct.anon.54.3530300 = type { %union.anon.55.3530301, ptr, %union.anon.57.3530302, i64 }
-%union.anon.55.3530301 = type { %struct.list_head.3530294 }
-%struct.list_head.3530294 = type { ptr, ptr }
-%union.anon.57.3530302 = type { i64 }
-%union.anon.61.3530298 = type { %struct.atomic_t.3530299 }
-%struct.atomic_t.3530299 = type { i32 }
+%struct.page.3530262 = type { i64, %union.anon.53.3530263, %union.anon.61.3530264, %struct.atomic_t.3530265, [8 x i8] }
+%union.anon.53.3530263 = type { %struct.anon.54.3530266 }
+%struct.anon.54.3530266 = type { %union.anon.55.3530267, ptr, %union.anon.57.3530268, i64 }
+%union.anon.55.3530267 = type { %struct.list_head.3530260 }
+%struct.list_head.3530260 = type { ptr, ptr }
+%union.anon.57.3530268 = type { i64 }
+%union.anon.61.3530264 = type { %struct.atomic_t.3530265 }
+%struct.atomic_t.3530265 = type { i32 }
 
 ; 171 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -361,7 +361,7 @@ define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3530296, ptr %3, i64 %2
+  %4 = getelementptr %struct.page.3530262, ptr %3, i64 %2
   ret ptr %4
 }
 

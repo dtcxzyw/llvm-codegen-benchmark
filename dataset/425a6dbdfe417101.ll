@@ -1,8 +1,46 @@
 
-%struct.recurse_cache.2791231 = type { ptr, i32 }
-%class.btVector3.2818144 = type { [4 x float] }
+%struct.recurse_cache.2791197 = type { ptr, i32 }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
 
-; 30 occurrences:
+; 27 occurrences:
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/btGImpactBvh.ll
+; bullet3/optimized/btGImpactQuantizedBvh.ll
+; bullet3/optimized/btSoftBody.ll
+; draco/optimized/float_points_tree_encoder.cc.ll
+; eastl/optimized/EASprintfOrdered.cpp.ll
+; graphviz/optimized/imap.c.ll
+; hwloc/optimized/bitmap.ll
+; icu/optimized/dayperiodrules.ll
+; icu/optimized/ucnvscsu.ll
+; icu/optimized/utrie2_builder.ll
+; imgui/optimized/imgui.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; openblas/optimized/dgemmt.c.ll
+; openmpi/optimized/ompi_rte.ll
+; openusd/optimized/matrix3d.cpp.ll
+; openusd/optimized/matrix3f.cpp.ll
+; openusd/optimized/matrix4d.cpp.ll
+; openusd/optimized/matrix4f.cpp.ll
+; pbrt-v4/optimized/ArHosekSkyModel.c.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = select i1 %1, i64 7, i64 %3
+  %5 = getelementptr nusw [8 x %struct.recurse_cache.2791197], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 20 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -23,48 +61,12 @@
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; bullet3/optimized/btSoftBody.ll
-; hwloc/optimized/bitmap.ll
-; openblas/optimized/dgemmt.c.ll
-; openusd/optimized/matrix3d.cpp.ll
-; openusd/optimized/matrix3f.cpp.ll
-; openusd/optimized/matrix4d.cpp.ll
-; openusd/optimized/matrix4f.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/lightsamplers.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = select i1 %1, i64 7, i64 %3
-  %5 = getelementptr nusw nuw [8 x %struct.recurse_cache.2791231], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 16 occurrences:
-; bullet3/optimized/btGImpactBvh.ll
-; bullet3/optimized/btGImpactQuantizedBvh.ll
-; draco/optimized/float_points_tree_encoder.cc.ll
-; eastl/optimized/EASprintfOrdered.cpp.ll
-; graphviz/optimized/imap.c.ll
-; icu/optimized/dayperiodrules.ll
-; icu/optimized/ucnvscsu.ll
-; icu/optimized/utrie2_builder.ll
-; imgui/optimized/imgui.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; openmpi/optimized/ompi_rte.ll
-; pbrt-v4/optimized/ArHosekSkyModel.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = select i1 %1, i64 2, i64 %3
-  %5 = getelementptr nusw [3 x %class.btVector3.2818144], ptr %0, i64 0, i64 %4
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [3 x %class.b3Vector3.2817640], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

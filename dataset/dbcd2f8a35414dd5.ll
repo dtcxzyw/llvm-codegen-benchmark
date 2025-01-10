@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/trees.c.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; git/optimized/http-backend.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll

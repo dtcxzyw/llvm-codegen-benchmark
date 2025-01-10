@@ -1,5 +1,5 @@
 
-%struct.ring_info.3551191 = type { ptr, i32 }
+%struct.ring_info.3551157 = type { ptr, i32 }
 
 ; 2 occurrences:
 ; hermes/optimized/DictPropertyMap.cpp.ll
@@ -24,7 +24,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.ring_info.3551191, ptr %0, i64 %6
+  %7 = getelementptr %struct.ring_info.3551157, ptr %0, i64 %6
   ret ptr %7
 }
 

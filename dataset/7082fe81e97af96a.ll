@@ -1,6 +1,6 @@
 
-%"struct.TristateVisitor::RefStrength.2751168" = type <{ ptr, %class.VStrength.2751119, [7 x i8] }>
-%class.VStrength.2751119 = type { i8 }
+%"struct.TristateVisitor::RefStrength.2751134" = type <{ ptr, %class.VStrength.2751085, [7 x i8] }>
+%class.VStrength.2751085 = type { i8 }
 
 ; 244 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -313,7 +313,7 @@ entry:
   %3 = ashr i64 %2, 4
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751168", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751134", ptr %0, i64 %5
   ret ptr %6
 }
 

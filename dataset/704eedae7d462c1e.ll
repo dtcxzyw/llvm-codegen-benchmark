@@ -38,7 +38,7 @@ entry:
   ret i64 %6
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -50,6 +50,7 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll

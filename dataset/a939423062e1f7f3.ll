@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; git/optimized/sequencer.ll
+; 4 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; openjdk/optimized/ps_core_common.ll

@@ -1,0 +1,12 @@
+func000000000000000c:                   # @func000000000000000c
+	leaq	7(%rdx,%rsi), %rax
+	andq	$-8, %rax
+	shlq	$4, %rdi
+	addq	%rdi, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	leaq	7(%rdx,%rsi), %rax
+	andq	$-8, %rax
+	shlq	$4, %rdi
+	addq	%rdi, %rax
+	retq

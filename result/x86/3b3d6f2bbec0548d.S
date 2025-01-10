@@ -36,7 +36,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 func0000000000000015:                   # @func0000000000000015
 	movzbl	%sil, %eax
-	leal	-32(%rax,%rdi), %eax
+	leal	-1(%rax,%rdi), %eax
 	retq
 func0000000000000017:                   # @func0000000000000017
 	movzbl	%sil, %eax

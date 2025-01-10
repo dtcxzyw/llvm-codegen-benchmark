@@ -1108,6 +1108,7 @@ entry:
 ; meilisearch-rs/optimized/4spgntyrk3g2e624.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
@@ -1685,7 +1686,6 @@ entry:
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; wasmtime-rs/optimized/1diuaeh8guxl7hpm.ll
 ; wasmtime-rs/optimized/1snvv4k3ql5pu7kf.ll
 ; wasmtime-rs/optimized/1xbg7k9kapo8ag7l.ll
@@ -2594,7 +2594,7 @@ entry:
   ret i64 %2
 }
 
-; 284 occurrences:
+; 286 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -2628,6 +2628,7 @@ entry:
 ; freetype/optimized/ftstroke.c.ll
 ; git/optimized/xemit.ll
 ; grpc/optimized/address_filtering.cc.ll
+; libquic/optimized/time.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -2699,6 +2700,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/rtmutex_api.ll
 ; linux/optimized/thermal.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll

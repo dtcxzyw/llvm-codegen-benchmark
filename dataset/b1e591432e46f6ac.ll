@@ -1,5 +1,5 @@
 
-%struct.GCRef.3680707 = type { i64 }
+%struct.GCRef.3680657 = type { i64 }
 
 ; 12 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -47,7 +47,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 0, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw %struct.GCRef.3680707, ptr %4, i64 %3
+  %5 = getelementptr nusw %struct.GCRef.3680657, ptr %4, i64 %3
   ret ptr %5
 }
 

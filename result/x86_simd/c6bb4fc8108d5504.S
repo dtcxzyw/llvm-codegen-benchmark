@@ -46,6 +46,12 @@ func000000000000003c:                   # @func000000000000003c
 	vpsllq	$46, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
+func00000000000000fd:                   # @func00000000000000fd
+	vpsllq	$54, %ymm2, %ymm2
+	vpsllq	$55, %ymm1, %ymm1
+	vpsllq	$56, %ymm0, %ymm0
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	retq
 func000000000000002c:                   # @func000000000000002c
 	vpsllq	$62, %ymm2, %ymm2
 	vpsllq	$48, %ymm1, %ymm1

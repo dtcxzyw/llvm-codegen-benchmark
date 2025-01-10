@@ -1,26 +1,26 @@
 
-%"class.std::unique_ptr.49.2613431" = type { %"struct.std::__uniq_ptr_data.50.2613432" }
-%"struct.std::__uniq_ptr_data.50.2613432" = type { %"class.std::__uniq_ptr_impl.51.2613433" }
-%"class.std::__uniq_ptr_impl.51.2613433" = type { %"class.std::tuple.52.2613434" }
-%"class.std::tuple.52.2613434" = type { %"struct.std::_Tuple_impl.53.2613435" }
-%"struct.std::_Tuple_impl.53.2613435" = type { %"struct.std::_Head_base.56.2613436" }
-%"struct.std::_Head_base.56.2613436" = type { ptr }
-%"class.std::shared_ptr.462.2615316" = type { %"class.std::__shared_ptr.463.2615317" }
-%"class.std::__shared_ptr.463.2615317" = type { ptr, %"class.std::__shared_count.2615254" }
-%"class.std::__shared_count.2615254" = type { ptr }
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
-%struct.MapNode.2693048 = type { i16, i8, i8 }
-%"class.duckdb::Vector.2969553" = type { i8, %"struct.duckdb::LogicalType.2969424", ptr, %"struct.duckdb::ValidityMask.2969554", %"class.std::shared_ptr.451.2969555", %"class.std::shared_ptr.451.2969555" }
-%"struct.duckdb::LogicalType.2969424" = type { i8, i8, %"class.std::shared_ptr.2969434" }
-%"class.std::shared_ptr.2969434" = type { %"class.std::__shared_ptr.2969435" }
-%"class.std::__shared_ptr.2969435" = type { ptr, %"class.std::__shared_count.2969436" }
-%"class.std::__shared_count.2969436" = type { ptr }
-%"struct.duckdb::ValidityMask.2969554" = type { %"struct.duckdb::TemplatedValidityMask.2969556" }
-%"struct.duckdb::TemplatedValidityMask.2969556" = type { ptr, %"class.std::shared_ptr.448.2969557", i64 }
-%"class.std::shared_ptr.448.2969557" = type { %"class.std::__shared_ptr.449.2969558" }
-%"class.std::__shared_ptr.449.2969558" = type { ptr, %"class.std::__shared_count.2969436" }
-%"class.std::shared_ptr.451.2969555" = type { %"class.std::__shared_ptr.452.2969559" }
-%"class.std::__shared_ptr.452.2969559" = type { ptr, %"class.std::__shared_count.2969436" }
+%"class.std::unique_ptr.49.2613398" = type { %"struct.std::__uniq_ptr_data.50.2613399" }
+%"struct.std::__uniq_ptr_data.50.2613399" = type { %"class.std::__uniq_ptr_impl.51.2613400" }
+%"class.std::__uniq_ptr_impl.51.2613400" = type { %"class.std::tuple.52.2613401" }
+%"class.std::tuple.52.2613401" = type { %"struct.std::_Tuple_impl.53.2613402" }
+%"struct.std::_Tuple_impl.53.2613402" = type { %"struct.std::_Head_base.56.2613403" }
+%"struct.std::_Head_base.56.2613403" = type { ptr }
+%"class.std::shared_ptr.462.2615283" = type { %"class.std::__shared_ptr.463.2615284" }
+%"class.std::__shared_ptr.463.2615284" = type { ptr, %"class.std::__shared_count.2615221" }
+%"class.std::__shared_count.2615221" = type { ptr }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
+%struct.MapNode.2693014 = type { i16, i8, i8 }
+%"class.duckdb::Vector.2969519" = type { i8, %"struct.duckdb::LogicalType.2969390", ptr, %"struct.duckdb::ValidityMask.2969520", %"class.std::shared_ptr.451.2969521", %"class.std::shared_ptr.451.2969521" }
+%"struct.duckdb::LogicalType.2969390" = type { i8, i8, %"class.std::shared_ptr.2969400" }
+%"class.std::shared_ptr.2969400" = type { %"class.std::__shared_ptr.2969401" }
+%"class.std::__shared_ptr.2969401" = type { ptr, %"class.std::__shared_count.2969402" }
+%"class.std::__shared_count.2969402" = type { ptr }
+%"struct.duckdb::ValidityMask.2969520" = type { %"struct.duckdb::TemplatedValidityMask.2969522" }
+%"struct.duckdb::TemplatedValidityMask.2969522" = type { ptr, %"class.std::shared_ptr.448.2969523", i64 }
+%"class.std::shared_ptr.448.2969523" = type { %"class.std::__shared_ptr.449.2969524" }
+%"class.std::__shared_ptr.449.2969524" = type { ptr, %"class.std::__shared_count.2969402" }
+%"class.std::shared_ptr.451.2969521" = type { %"class.std::__shared_ptr.452.2969525" }
+%"class.std::__shared_ptr.452.2969525" = type { ptr, %"class.std::__shared_count.2969402" }
 
 ; 158 occurrences:
 ; arrow/optimized/caching.cc.ll
@@ -184,7 +184,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::unique_ptr.49.2613431", ptr %0, i64 %1
+  %3 = getelementptr %"class.std::unique_ptr.49.2613398", ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }
@@ -299,7 +299,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"class.std::shared_ptr.462.2615316", ptr %3, i64 %1
+  %4 = getelementptr %"class.std::shared_ptr.462.2615283", ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -420,7 +420,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %1
+  %3 = getelementptr %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }
@@ -595,7 +595,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.MapNode.2693048, ptr %0, i64 %1
+  %3 = getelementptr %struct.MapNode.2693014, ptr %0, i64 %1
   %4 = ashr exact i64 %2, 38
   %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5
@@ -688,8 +688,8 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = getelementptr %"class.duckdb::Vector.2969553", ptr %0, i64 %1
-  %5 = getelementptr %"class.duckdb::Vector.2969553", ptr %4, i64 %3
+  %4 = getelementptr %"class.duckdb::Vector.2969519", ptr %0, i64 %1
+  %5 = getelementptr %"class.duckdb::Vector.2969519", ptr %4, i64 %3
   ret ptr %5
 }
 

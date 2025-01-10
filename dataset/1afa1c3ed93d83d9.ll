@@ -1,5 +1,5 @@
 
-; 568 occurrences:
+; 569 occurrences:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -59,6 +59,7 @@
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/double-conversion-strtod.ll
+; icu/optimized/ucnvmbcs.ll
 ; jq/optimized/gb18030.ll
 ; jq/optimized/jv_dtoa.ll
 ; libpng/optimized/png.c.ll

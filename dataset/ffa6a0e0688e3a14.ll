@@ -1,8 +1,8 @@
 
-%"struct.irr::video::S3DVertex.2691827" = type { %"class.irr::core::vector3d.2691815", %"class.irr::core::vector3d.2691815", %"class.irr::video::SColor.2691814", %"class.irr::core::vector2d.2691828" }
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
-%"class.irr::video::SColor.2691814" = type { i32 }
-%"class.irr::core::vector2d.2691828" = type { float, float }
+%"struct.irr::video::S3DVertex.2691793" = type { %"class.irr::core::vector3d.2691781", %"class.irr::core::vector3d.2691781", %"class.irr::video::SColor.2691780", %"class.irr::core::vector2d.2691794" }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
+%"class.irr::video::SColor.2691780" = type { i32 }
+%"class.irr::core::vector2d.2691794" = type { float, float }
 
 ; 2 occurrences:
 ; minetest/optimized/sky.cpp.ll
@@ -12,7 +12,7 @@ define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.irr::video::S3DVertex.2691827", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.irr::video::S3DVertex.2691793", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

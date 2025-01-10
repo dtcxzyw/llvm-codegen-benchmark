@@ -1,10 +1,10 @@
 
-%"class.arrow::compute::InputType.3808547" = type { i32, %"class.std::shared_ptr.72.3808548", %"class.std::shared_ptr.33.3808526" }
-%"class.std::shared_ptr.72.3808548" = type { %"class.std::__shared_ptr.73.3808549" }
-%"class.std::__shared_ptr.73.3808549" = type { ptr, %"class.std::__shared_count.3808519" }
-%"class.std::__shared_count.3808519" = type { ptr }
-%"class.std::shared_ptr.33.3808526" = type { %"class.std::__shared_ptr.34.3808527" }
-%"class.std::__shared_ptr.34.3808527" = type { ptr, %"class.std::__shared_count.3808519" }
+%"class.arrow::compute::InputType.3808497" = type { i32, %"class.std::shared_ptr.72.3808498", %"class.std::shared_ptr.33.3808476" }
+%"class.std::shared_ptr.72.3808498" = type { %"class.std::__shared_ptr.73.3808499" }
+%"class.std::__shared_ptr.73.3808499" = type { ptr, %"class.std::__shared_count.3808469" }
+%"class.std::__shared_count.3808469" = type { ptr }
+%"class.std::shared_ptr.33.3808476" = type { %"class.std::__shared_ptr.34.3808477" }
+%"class.std::__shared_ptr.34.3808477" = type { ptr, %"class.std::__shared_count.3808469" }
 
 ; 2 occurrences:
 ; clamav/optimized/scanners.c.ll
@@ -150,7 +150,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = getelementptr %"class.arrow::compute::InputType.3808547", ptr %0, i64 %4, i32 2
+  %5 = getelementptr %"class.arrow::compute::InputType.3808497", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

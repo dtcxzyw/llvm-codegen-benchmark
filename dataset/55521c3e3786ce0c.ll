@@ -974,7 +974,7 @@ entry:
   ret i1 %5
 }
 
-; 95 occurrences:
+; 94 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
@@ -1001,7 +1001,6 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
@@ -1185,7 +1184,7 @@ entry:
   ret i1 %5
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -1201,6 +1200,7 @@ entry:
 ; boost/optimized/self_intersection_points.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll

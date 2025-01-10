@@ -11,10 +11,10 @@ func0000000000000041:                   # @func0000000000000041
 	sbbl	$0, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
 	testl	$536870912, %edi                # imm = 0x20000000
-	movl	$12, %ecx
-	movl	$18, %eax
-	cmovel	%ecx, %eax
+	sete	%al
+	leal	15(%rax,%rax,2), %eax
 	retq
 func0000000000000061:                   # @func0000000000000061
 	testb	$1, %dil

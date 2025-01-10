@@ -79,7 +79,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 24 occurrences:
+; 25 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/af_packet.ll
@@ -104,6 +104,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; z3/optimized/mpz.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 89 occurrences:
+; 91 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; boost/optimized/mapped_file.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -38,6 +39,7 @@
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
+; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll

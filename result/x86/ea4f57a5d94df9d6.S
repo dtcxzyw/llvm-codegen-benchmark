@@ -13,6 +13,11 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$6, %eax
 	cmovaeq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$32, %esi
+	movq	$-1, %rax
+	cmovbq	%rdi, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	$4, %esi
 	movq	$-1, %rax
@@ -20,11 +25,6 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$61, %esi
-	movq	$-1, %rax
-	cmovbq	%rdi, %rax
-	retq
-func0000000000000018:                   # @func0000000000000018
-	cmpl	$60, %esi
 	movq	$-1, %rax
 	cmovbq	%rdi, %rax
 	retq

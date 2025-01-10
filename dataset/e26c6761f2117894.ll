@@ -233,7 +233,7 @@ entry:
   ret i1 %4
 }
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -324,6 +324,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-acn.c.ll
+; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-couchbase.c.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll

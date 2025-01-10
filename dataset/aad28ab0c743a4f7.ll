@@ -130,7 +130,7 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -171,6 +171,7 @@ entry:
 ; redis/optimized/memtest.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; tinympc/optimized/codegen.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:

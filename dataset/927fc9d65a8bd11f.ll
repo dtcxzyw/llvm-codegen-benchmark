@@ -43,7 +43,7 @@ entry:
   ret ptr %4
 }
 
-; 366 occurrences:
+; 370 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -70,6 +70,7 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/transform.c.ll
 ; bullet3/optimized/b3FixedConstraint.ll
+; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btHingeConstraint.ll
@@ -356,6 +357,7 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BL_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/check_monitoring.ll
 ; openmpi/optimized/common_monitoring.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
@@ -367,7 +369,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/gen_scalers.c.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/matrix3d.cpp.ll
 ; openusd/optimized/matrix3f.cpp.ll
@@ -419,8 +423,7 @@ entry:
   ret ptr %4
 }
 
-; 90 occurrences:
-; bullet3/optimized/btBoxBoxDetector.ll
+; 84 occurrences:
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -503,12 +506,7 @@ entry:
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
 ; openexr/optimized/unpack.c.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/restoration.c.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {

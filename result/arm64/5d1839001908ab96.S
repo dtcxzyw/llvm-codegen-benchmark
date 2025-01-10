@@ -63,14 +63,6 @@ func000000000000000b:                   // @func000000000000000b
 	cset	w0, le
 	ret
                                         // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	fmov	d2, #-1.00000000
-	fadd	d1, d1, d2
-	fcmp	d0, d1
-	cset	w0, ge
-	ret
-                                        // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
 	mov	x8, #140737488355328            // =0x800000000000

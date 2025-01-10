@@ -1,5 +1,5 @@
 
-%"class.clang::Token.3227252" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
+%"class.clang::Token.3227218" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
 
 ; 1 occurrences:
 ; llvm/optimized/RewriteMacros.cpp.ll
@@ -10,7 +10,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.clang::Token.3227252", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.clang::Token.3227218", ptr %0, i64 %6
   ret ptr %7
 }
 

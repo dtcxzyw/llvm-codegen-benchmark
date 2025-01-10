@@ -1,8 +1,12 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
 ; folly/optimized/IOBuf.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/ELFAsmParser.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/WasmAsmParser.cpp.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {

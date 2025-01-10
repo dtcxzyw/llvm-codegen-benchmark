@@ -41,6 +41,19 @@ entry:
 }
 
 ; 1 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001f0(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 3
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = zext nneg i32 %3 to i64
+  %6 = getelementptr i8, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 32
+  ret ptr %7
+}
+
+; 1 occurrences:
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001fb(ptr %0, i64 %1, i32 %2) #0 {

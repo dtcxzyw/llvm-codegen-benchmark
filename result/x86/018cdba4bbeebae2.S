@@ -48,7 +48,3 @@ func0000000000000078:                   # @func0000000000000078
 	cmpq	$8161, %rax                     # imm = 0x1FE1
 	setae	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
-	testl	%edi, %edi
-	setne	%al
-	retq

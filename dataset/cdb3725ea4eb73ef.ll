@@ -1,5 +1,5 @@
 
-; 1642 occurrences:
+; 1643 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcAig.c.ll
@@ -174,6 +174,7 @@
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/mszipd.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/unicode.cpp.ll
 ; clamav/optimized/upack.c.ll

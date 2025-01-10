@@ -134,7 +134,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/btGhostObject.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
@@ -145,7 +145,6 @@ entry:
 ; openusd/optimized/frustum.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
 ; wireshark/optimized/vwr.c.ll

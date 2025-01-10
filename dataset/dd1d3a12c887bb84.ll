@@ -1,11 +1,11 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"class.std::basic_string_view.2685476" = type { i64, ptr }
-%"class.std::vector.13.2851001" = type { %"struct.std::_Vector_base.14.2851002" }
-%"struct.std::_Vector_base.14.2851002" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2851003" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2851003" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2851004" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2851004" = type { ptr, ptr, ptr }
-%class.QPointF.3450967 = type { double, double }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"class.std::basic_string_view.2685443" = type { i64, ptr }
+%"class.std::vector.13.2850967" = type { %"struct.std::_Vector_base.14.2850968" }
+%"struct.std::_Vector_base.14.2850968" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2850969" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2850969" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2850970" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2850970" = type { ptr, ptr, ptr }
+%class.QPointF.3450933 = type { double, double }
 
 ; 242 occurrences:
 ; abc/optimized/acbPush.c.ll
@@ -324,7 +324,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -363,7 +363,7 @@ entry:
   ret ptr %4
 }
 
-; 307 occurrences:
+; 308 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/amapLiberty.c.ll
@@ -456,6 +456,7 @@ entry:
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; hdf5/optimized/H5T.c.ll
 ; hermes/optimized/Exceptions.cpp.ll
+; icu/optimized/pkgitems.ll
 ; icu/optimized/uloc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll
@@ -759,14 +760,15 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 4
-  %3 = getelementptr %"class.std::basic_string_view.2685476", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"class.std::basic_string_view.2685443", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
-; 52 occurrences:
+; 55 occurrences:
 ; abc/optimized/verCore.c.ll
 ; bullet3/optimized/b3DNA.ll
 ; clamav/optimized/openioc.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -774,9 +776,11 @@ entry:
 ; opencv/optimized/termination.cpp.ll
 ; openjdk/optimized/wildcard.ll
 ; sentencepiece/optimized/structurally_valid.cc.ll
+; slurm/optimized/affinity.ll
 ; slurm/optimized/bitstring.ll
 ; slurm/optimized/env.ll
 ; slurm/optimized/file_functions.ll
+; slurm/optimized/numa.ll
 ; slurm/optimized/parse_config.ll
 ; slurm/optimized/schedutils.ll
 ; verilator/optimized/V3Active.cpp.ll
@@ -843,41 +847,14 @@ entry:
 }
 
 ; 2 occurrences:
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -2
-  ret ptr %4
-}
-
-; 3 occurrences:
-; icu/optimized/pkgitems.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = getelementptr nuw %"class.std::vector.13.2851001", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr nuw %"class.std::vector.13.2850967", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
-}
-
-; 4 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; opencv/optimized/rmat.cpp.ll
-; slurm/optimized/affinity.ll
-; slurm/optimized/numa.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  ret ptr %4
 }
 
 ; 4 occurrences:
@@ -908,8 +885,19 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr %class.QPointF.3450967, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %class.QPointF.3450933, ptr %0, i64 %2, i32 1
   ret ptr %3
+}
+
+; 1 occurrences:
+; opencv/optimized/rmat.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 2
+  %3 = getelementptr nusw nuw i64, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

@@ -11,12 +11,22 @@ func00000000000000b6:                   // @func00000000000000b6
 	csinc	w0, w8, wzr, ls
 	ret
                                         // -- End function
-.LCPI1_0:
+func00000000000000a6:                   // @func00000000000000a6
+// %bb.0:                               // %entry
+	fmov	d3, #1.00000000
+	fcmp	d0, d1
+	fadd	d2, d2, d3
+	cset	w8, lt
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, ls
+	ret
+                                        // -- End function
+.LCPI2_0:
 	.xword	0x3ddb7cdfd9d7bdbb              // double 1.0E-10
 func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI1_0
-	ldr	d3, [x8, :lo12:.LCPI1_0]
+	adrp	x8, .LCPI2_0
+	ldr	d3, [x8, :lo12:.LCPI2_0]
 	fadd	d2, d2, d3
 	fcmp	d0, d2
 	cset	w8, gt

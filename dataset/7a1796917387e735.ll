@@ -199,9 +199,10 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/atomprop.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; ocio/optimized/ParseUtils.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

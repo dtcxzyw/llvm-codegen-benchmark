@@ -1,8 +1,8 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%class.JVMFlag.2741318 = type { ptr, ptr, i32, i32 }
-%"class.base::ManualConstructor.3059902" = type { %"class.base::AlignedMemory.3059903" }
-%"class.base::AlignedMemory.3059903" = type { [16 x i8] }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%class.JVMFlag.2741284 = type { ptr, ptr, i32, i32 }
+%"class.base::ManualConstructor.3059868" = type { %"class.base::AlignedMemory.3059869" }
+%"class.base::AlignedMemory.3059869" = type { [16 x i8] }
 
 ; 8 occurrences:
 ; linux/optimized/nf_conntrack_sip.ll
@@ -16,7 +16,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %2
+  %3 = getelementptr %struct.redblack_node.2601262, ptr %1, i64 %2
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -112,7 +112,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %class.JVMFlag.2741318, ptr %1, i64 %2
+  %3 = getelementptr nusw %class.JVMFlag.2741284, ptr %1, i64 %2
   %4 = icmp eq i32 %0, -1
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -124,7 +124,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000066(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3059902", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3059868", ptr %1, i64 %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

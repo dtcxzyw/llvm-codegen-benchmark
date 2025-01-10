@@ -136,16 +136,6 @@ entry:
 }
 
 ; 1 occurrences:
-; lief/optimized/psa_crypto.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i64
-  %3 = icmp eq i64 %0, %2
-  ret i1 %3
-}
-
-; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a4(i64 %0, i8 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 1386 occurrences:
+; 1387 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -201,7 +201,6 @@
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/mbox.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/sigtool.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/unsp.c.ll
@@ -1034,6 +1033,7 @@
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/vmError.ll
 ; openmpi/optimized/btl_tcp.ll
+; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_comm_select.ll
 ; openmpi/optimized/coll_tuned_alltoallv_decision.ll
@@ -1357,6 +1357,7 @@
 ; wolfssl/optimized/test.c.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/gradient_index_page_source.cc.ll
+; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/sparse_page_dmatrix.cc.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
 ; yalantinglibs/optimized/data_def.pb.cc.ll
@@ -1396,7 +1397,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 163 occurrences:
+; 164 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -1522,6 +1523,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/sfprint.c.ll
 ; icu/optimized/measfmt.ll
 ; imgui/optimized/imgui.cpp.ll

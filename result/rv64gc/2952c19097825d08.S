@@ -10,6 +10,12 @@ func0000000000000013:                   # @func0000000000000013
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000002:                   # @func0000000000000002
+	slli	a2, a2, 46
+	srli	a2, a2, 63
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func0000000000000000:                   # @func0000000000000000
 	srli	a2, a2, 21
 	andi	a2, a2, 4
@@ -19,13 +25,6 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	srli	a2, a2, 21
 	andi	a2, a2, 224
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000002:                   # @func0000000000000002
-	srli	a2, a2, 13
-	lui	a3, 1
-	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

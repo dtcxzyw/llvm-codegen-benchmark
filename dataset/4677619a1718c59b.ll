@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; freetype/optimized/psaux.c.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll

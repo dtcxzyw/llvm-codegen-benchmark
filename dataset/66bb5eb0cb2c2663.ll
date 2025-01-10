@@ -52,16 +52,4 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 4
-  %4 = select i1 %1, i64 128, i64 96
-  %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %0, %5
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

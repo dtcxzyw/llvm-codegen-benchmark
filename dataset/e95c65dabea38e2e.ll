@@ -222,7 +222,7 @@ entry:
   ret i128 %1
 }
 
-; 246 occurrences:
+; 247 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -468,6 +468,7 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000002(i128 %0) #0 {
@@ -476,7 +477,7 @@ entry:
   ret i128 %1
 }
 
-; 261 occurrences:
+; 260 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -736,7 +737,6 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wolfssl/optimized/sp_int.c.ll
 ; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0) #0 {

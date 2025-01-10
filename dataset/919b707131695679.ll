@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
@@ -35,6 +35,8 @@
 ; openjdk/optimized/hb-set.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/AttributeSet.cc.ll
+; proj/optimized/cct.cpp.ll
+; proj/optimized/gie.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i64 %0, ptr %1) #0 {

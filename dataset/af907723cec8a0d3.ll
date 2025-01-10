@@ -39,16 +39,20 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; cpython/optimized/xmlparse.ll
 ; cpython/optimized/xmltok.ll
 ; git/optimized/kwset.ll
 ; luajit/optimized/buildvm.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 3
+  %1 = shl i32 %0, 2
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
   ret i64 %3

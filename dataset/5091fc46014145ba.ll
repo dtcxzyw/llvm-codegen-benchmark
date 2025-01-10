@@ -76,9 +76,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/wwunpack.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 1210 occurrences:
+; 1209 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -1181,7 +1181,6 @@
 ; wireshark/optimized/wimaxasncp_dict.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/internal.c.ll
-; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll

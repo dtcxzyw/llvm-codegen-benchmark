@@ -1,5 +1,16 @@
 
-; 25 occurrences:
+; 1 occurrences:
+; minetest/optimized/cavegen.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000002(float %0) #0 {
+entry:
+  %1 = fdiv float 1.000000e+00, %0
+  %2 = fcmp olt float %0, 0x3FA99999A0000000
+  %3 = select i1 %2, float 1.000000e+00, float %1
+  ret float %3
+}
+
+; 24 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
@@ -16,7 +27,6 @@
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; oiio/optimized/imagebufalgo_muldiv.cpp.ll
 ; opencv/optimized/linefit.cpp.ll
@@ -30,18 +40,7 @@ define float @func0000000000000008(float %0) #0 {
 entry:
   %1 = fdiv float 1.000000e+00, %0
   %2 = fcmp oeq float %0, 0.000000e+00
-  %3 = select i1 %2, float 0x3FD5555560000000, float %1
-  ret float %3
-}
-
-; 1 occurrences:
-; minetest/optimized/cavegen.cpp.ll
-; Function Attrs: nounwind
-define float @func0000000000000002(float %0) #0 {
-entry:
-  %1 = fdiv float 1.000000e+00, %0
-  %2 = fcmp olt float %0, 0x3FA99999A0000000
-  %3 = select i1 %2, float 1.000000e+00, float %1
+  %3 = select i1 %2, float 0x46293E5940000000, float %1
   ret float %3
 }
 

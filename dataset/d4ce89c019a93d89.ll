@@ -152,8 +152,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; yoga/optimized/Cache.cpp.ll
+; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0, float %1, float %2) #0 {

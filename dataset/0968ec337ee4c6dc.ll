@@ -1,7 +1,7 @@
 
-%struct.p9_poll_wait.3535411 = type { ptr, %struct.wait_queue_entry.3535412, ptr }
-%struct.wait_queue_entry.3535412 = type { i32, ptr, ptr, %struct.list_head.3535396 }
-%struct.list_head.3535396 = type { ptr, ptr }
+%struct.p9_poll_wait.3535377 = type { ptr, %struct.wait_queue_entry.3535378, ptr }
+%struct.wait_queue_entry.3535378 = type { i32, ptr, ptr, %struct.list_head.3535362 }
+%struct.list_head.3535362 = type { ptr, ptr }
 
 ; 37 occurrences:
 ; cpython/optimized/typeobject.ll
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -112
-  %3 = getelementptr [2 x %struct.p9_poll_wait.3535411], ptr %2, i64 0, i64 %0
+  %3 = getelementptr [2 x %struct.p9_poll_wait.3535377], ptr %2, i64 0, i64 %0
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }

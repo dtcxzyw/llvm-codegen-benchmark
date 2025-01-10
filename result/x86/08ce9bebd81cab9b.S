@@ -23,17 +23,10 @@ func0000000000000008:                   # @func0000000000000008
 	andnl	%esi, %eax, %eax
 	leal	(%rdi,%rax,2), %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
-	shll	$24, %eax
-	addl	%edi, %eax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
 	sarl	$31, %eax
 	andnl	%esi, %eax, %eax
-	shll	$16, %eax
+	shll	$11, %eax
 	addl	%edi, %eax
 	retq

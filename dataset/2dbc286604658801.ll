@@ -1,8 +1,8 @@
 
-%struct.pm_lex_mode.2600869 = type { i32, %union.anon.2600870, ptr }
-%union.anon.2600870 = type { %struct.anon.3.2600871 }
-%struct.anon.3.2600871 = type { ptr, i64, i32, i32, ptr, i64 }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
+%struct.pm_lex_mode.2600836 = type { i32, %union.anon.2600837, ptr }
+%union.anon.2600837 = type { %struct.anon.3.2600838 }
+%struct.anon.3.2600838 = type { ptr, i64, i32, i32, ptr, i64 }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
 
 ; 1397 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
@@ -1922,7 +1922,7 @@ entry:
 define ptr @func0000000000000033(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 32
-  %3 = getelementptr [4 x %struct.pm_lex_mode.2600869], ptr %2, i64 0, i64 %0
+  %3 = getelementptr [4 x %struct.pm_lex_mode.2600836], ptr %2, i64 0, i64 %0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   ret ptr %4
 }
@@ -2684,7 +2684,7 @@ entry:
 define ptr @func000000000000003e(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %2, i64 0, i64 %0
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }

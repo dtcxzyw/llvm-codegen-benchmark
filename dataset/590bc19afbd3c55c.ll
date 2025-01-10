@@ -1,7 +1,7 @@
 
-%struct.zip_record.3061980 = type { i32, i32, i32, i32, i16, i16, i32, ptr }
-%"struct.std::pair.186.3701352" = type { %"class.nix::Symbol.3701342", i32 }
-%"class.nix::Symbol.3701342" = type { i32 }
+%struct.zip_record.3061946 = type { i32, i32, i32, i32, i16, i16, i32, ptr }
+%"struct.std::pair.186.3701302" = type { %"class.nix::Symbol.3701292", i32 }
+%"class.nix::Symbol.3701292" = type { i32 }
 
 ; 1 occurrences:
 ; git/optimized/diff-delta.ll
@@ -47,8 +47,8 @@ define ptr @func0000000000000182(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 27
   %4 = zext i1 %3 to i64
-  %5 = getelementptr %struct.zip_record.3061980, ptr %0, i64 %1
-  %6 = getelementptr %struct.zip_record.3061980, ptr %5, i64 %4
+  %5 = getelementptr %struct.zip_record.3061946, ptr %0, i64 %1
+  %6 = getelementptr %struct.zip_record.3061946, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -72,8 +72,8 @@ define ptr @func0000000000000187(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr %"struct.std::pair.186.3701352", ptr %0, i64 %1
-  %6 = getelementptr %"struct.std::pair.186.3701352", ptr %5, i64 %4
+  %5 = getelementptr %"struct.std::pair.186.3701302", ptr %0, i64 %1
+  %6 = getelementptr %"struct.std::pair.186.3701302", ptr %5, i64 %4
   ret ptr %6
 }
 

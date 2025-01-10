@@ -197,7 +197,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; cmake/optimized/cmLocalUnixMakefileGenerator3.cxx.ll
 ; cvc5/optimized/regexp_solver.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
@@ -219,7 +219,6 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/spell.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {

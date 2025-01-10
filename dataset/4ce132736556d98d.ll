@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/util.cc.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/filemap.ll
+; postgres/optimized/inet_net_pton.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

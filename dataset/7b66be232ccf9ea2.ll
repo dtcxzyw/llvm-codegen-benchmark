@@ -1,5 +1,5 @@
 
-%"class.std::reference_wrapper.2688895" = type { ptr }
+%"class.std::reference_wrapper.2688861" = type { ptr }
 
 ; 49 occurrences:
 ; arrow/optimized/interfaces.cc.ll
@@ -69,7 +69,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
   %3 = freeze ptr %0
-  %4 = getelementptr nusw nuw %"class.std::reference_wrapper.2688895", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.std::reference_wrapper.2688861", ptr %3, i64 %2
   ret ptr %4
 }
 

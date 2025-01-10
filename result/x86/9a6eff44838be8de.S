@@ -32,13 +32,6 @@ func000000000000001d:                   # @func000000000000001d
 	orq	%rsi, %rax
 	orq	%rdx, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	movq	%rdi, %rax
-	andl	$128, %edx
-	shlq	$56, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	movq	%rdi, %rax
 	andl	$-65536, %edx                   # imm = 0xFFFF0000

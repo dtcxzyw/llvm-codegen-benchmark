@@ -1,9 +1,9 @@
 
-%struct.StructEntry.2708053 = type { ptr, i32, [2 x ptr], [2 x ptr], ptr, [2 x i32], [2 x i32], ptr }
-%struct.Lf_Bst_t_.2877719 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877720] }
-%struct.Lf_Plc_t_.2877720 = type { i32 }
-%struct.t_dih.3373191 = type { [4 x i32], i32, float, float }
-%struct.JSBinaryOperatorDefEntry.3435113 = type { i32, [14 x ptr] }
+%struct.StructEntry.2708019 = type { ptr, i32, [2 x ptr], [2 x ptr], ptr, [2 x i32], [2 x i32], ptr }
+%struct.Lf_Bst_t_.2877685 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877686] }
+%struct.Lf_Plc_t_.2877686 = type { i32 }
+%struct.t_dih.3373157 = type { [4 x i32], i32, float, float }
+%struct.JSBinaryOperatorDefEntry.3435079 = type { i32, [14 x ptr] }
 
 ; 61 occurrences:
 ; abc/optimized/absGlaOld.c.ll
@@ -91,7 +91,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.StructEntry.2708053, ptr %1, i64 %3, i32 2, i64 %0
+  %4 = getelementptr %struct.StructEntry.2708019, ptr %1, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
@@ -131,7 +131,7 @@ entry:
 define ptr @func0000000000000023(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Lf_Bst_t_.2877719, ptr %1, i64 %3, i32 2, i64 %0
+  %4 = getelementptr %struct.Lf_Bst_t_.2877685, ptr %1, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
@@ -142,7 +142,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.t_dih.3373191, ptr %1, i64 %3
+  %4 = getelementptr %struct.t_dih.3373157, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 28
   %6 = getelementptr nusw nuw [4 x i32], ptr %5, i64 0, i64 %0
   ret ptr %6
@@ -154,7 +154,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.JSBinaryOperatorDefEntry.3435113, ptr %1, i64 %3
+  %4 = getelementptr %struct.JSBinaryOperatorDefEntry.3435079, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -112
   %6 = getelementptr [14 x ptr], ptr %5, i64 0, i64 %0
   ret ptr %6

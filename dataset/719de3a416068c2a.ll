@@ -1,6 +1,6 @@
 
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
 
 ; 15 occurrences:
 ; icu/optimized/ucnv_ext.ll
@@ -40,7 +40,7 @@ entry:
 define ptr @func000000000000003a(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -64
   %6 = sext i32 %0 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6

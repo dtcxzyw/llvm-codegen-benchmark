@@ -1,5 +1,5 @@
 
-%"class.vcg::tri::UpdateFlags<vcg::AlignPair::A2Mesh>::EdgeSorter.3821360" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
+%"class.vcg::tri::UpdateFlags<vcg::AlignPair::A2Mesh>::EdgeSorter.3821310" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; libjpeg-turbo/optimized/wrgif.c.ll
@@ -42,7 +42,7 @@ entry:
   %3 = add nsw i32 %2, 3
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::AlignPair::A2Mesh>::EdgeSorter.3821360", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::AlignPair::A2Mesh>::EdgeSorter.3821310", ptr %0, i64 %5
   ret ptr %6
 }
 

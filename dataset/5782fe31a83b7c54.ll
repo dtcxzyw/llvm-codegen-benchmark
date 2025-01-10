@@ -10,7 +10,7 @@ entry:
   ret i1 %4
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -81,10 +81,8 @@ entry:
 ; fmt/optimized/std-test.cc.ll
 ; folly/optimized/FsUtil.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
-; hermes/optimized/APInt.cpp.ll
 ; libphonenumber/optimized/regexp_cache.cc.ll
 ; libphonenumber/optimized/regexp_cache_test.cc.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll

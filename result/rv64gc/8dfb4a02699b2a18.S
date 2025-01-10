@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000041:                   # @func0000000000000041
 	li	a1, 23
 	bne	a0, a1, .LBB0_2
 	li	a0, 25
@@ -16,12 +16,18 @@ func0000000000000004:                   # @func0000000000000004
 .LBB1_2:
 	addi	a0, a0, 32
 	ret
+func0000000000000001:                   # @func0000000000000001
+	addi	a1, a0, 2
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
 func0000000000000021:                   # @func0000000000000021
-	bnez	a0, .LBB2_2
+	bnez	a0, .LBB3_2
 	lui	a0, 4096
 	addiw	a0, a0, -1
 	ret
-.LBB2_2:
+.LBB3_2:
 	addi	a0, a0, -1
 	ret
 func0000000000000068:                   # @func0000000000000068
@@ -38,12 +44,6 @@ func0000000000000061:                   # @func0000000000000061
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1
-	ret
-func0000000000000041:                   # @func0000000000000041
-	addi	a0, a0, 1
-	snez	a1, a0
-	addi	a1, a1, -1
-	or	a0, a0, a1
 	ret
 func0000000000000078:                   # @func0000000000000078
 	lui	a1, 16

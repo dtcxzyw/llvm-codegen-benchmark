@@ -160,8 +160,9 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/XzDec.c.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
 ; opencv/optimized/bound_min.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {

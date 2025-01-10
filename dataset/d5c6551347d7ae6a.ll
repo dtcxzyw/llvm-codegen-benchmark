@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -9,7 +9,6 @@
 ; lief/optimized/psa_crypto_storage.c.ll
 ; linux/optimized/sky2.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/zip_util.ll
@@ -22,7 +21,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; redis/optimized/listpack.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll

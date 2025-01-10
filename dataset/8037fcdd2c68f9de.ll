@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
@@ -36,7 +36,6 @@
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; freetype/optimized/ftbase.c.ll
-; git/optimized/parallel-checkout.ll
 ; graphviz/optimized/pack.c.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll

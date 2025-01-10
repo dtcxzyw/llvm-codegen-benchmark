@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/log_message.cc.ll
+; php/optimized/fopen_wrappers.ll
 ; php/optimized/string.ll
 ; php/optimized/url_scanner_ex.ll
 ; yalantinglibs/optimized/channel.cpp.ll
@@ -24,8 +25,7 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; php/optimized/fopen_wrappers.ll
+; 2 occurrences:
 ; ripgrep-rs/optimized/1rzxgyr0fo8f0ob1.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
@@ -34,7 +34,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
-  %5 = getelementptr nusw nuw [4097 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

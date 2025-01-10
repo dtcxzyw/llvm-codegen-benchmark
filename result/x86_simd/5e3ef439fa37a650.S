@@ -95,13 +95,3 @@ func0000000000000066:                   # @func0000000000000066
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI10_0:
-	.quad	1073741824                      # 0x40000000
-func0000000000000006:                   # @func0000000000000006
-	vpmovsxdq	%xmm1, %ymm1
-	vpbroadcastq	.LCPI10_0(%rip), %ymm2  # ymm2 = [1073741824,1073741824,1073741824,1073741824]
-	vpsubq	%ymm0, %ymm2, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq

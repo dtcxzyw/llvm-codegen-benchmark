@@ -1,5 +1,5 @@
 
-; 260 occurrences:
+; 258 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -173,7 +173,6 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; opencv/optimized/deriv.cpp.ll
@@ -229,7 +228,6 @@
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/print.ll
 ; redis/optimized/tcache.ll

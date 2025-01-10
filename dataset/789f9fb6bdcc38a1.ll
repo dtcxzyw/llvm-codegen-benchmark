@@ -1,7 +1,7 @@
 
-%class.ShenandoahMarkTask.2732980 = type { i64 }
-%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
-%struct.Mig_Fan_t_.2877742 = type { i32 }
+%class.ShenandoahMarkTask.2732946 = type { i64 }
+%struct.Mig_Obj_t_.2877707 = type { [4 x %struct.Mig_Fan_t_.2877708] }
+%struct.Mig_Fan_t_.2877708 = type { i32 }
 
 ; 24 occurrences:
 ; linux/optimized/bitset.ll
@@ -192,7 +192,7 @@ entry:
   %2 = add i32 %1, 131071
   %3 = and i32 %2, 131071
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.ShenandoahMarkTask.2732980, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.ShenandoahMarkTask.2732946, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -215,7 +215,7 @@ entry:
   %2 = add i32 %1, 4095
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.Mig_Obj_t_.2877741, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.Mig_Obj_t_.2877707, ptr %0, i64 %4
   ret ptr %5
 }
 

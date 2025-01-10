@@ -10,7 +10,7 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; icu/optimized/edits.ll
 ; linux/optimized/huf_decompress.ll
@@ -18,7 +18,6 @@ entry:
 ; openjdk/optimized/elfFile.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; wireshark/optimized/packet-dis.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:

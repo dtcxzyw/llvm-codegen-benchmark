@@ -248,14 +248,6 @@ func0000000000000146:                   # @func0000000000000146
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
-func000000000000010a:                   # @func000000000000010a
-	sext.w	a0, a0
-	zext.h	a1, a1
-	sltiu	a1, a1, 4
-	slti	a0, a0, 4
-	or	a0, a0, a1
-	xori	a0, a0, 1
-	ret
 func00000000000000c4:                   # @func00000000000000c4
 	zext.h	a0, a0
 	sext.w	a1, a1
@@ -269,6 +261,14 @@ func0000000000000198:                   # @func0000000000000198
 	snez	a1, a1
 	sltiu	a0, a0, 4
 	andn	a0, a1, a0
+	ret
+func000000000000010a:                   # @func000000000000010a
+	sext.w	a0, a0
+	zext.h	a1, a1
+	sltiu	a1, a1, 13
+	slti	a0, a0, 7
+	or	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0

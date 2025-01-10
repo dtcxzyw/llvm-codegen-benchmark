@@ -1,6 +1,6 @@
 
-%struct.HashTablePermutohedralValue.2873702 = type { [2 x float] }
-%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
+%struct.HashTablePermutohedralValue.2873668 = type { [2 x float] }
+%struct.JSVarDef.3435063 = type { i32, i32, i32, i32 }
 
 ; 2 occurrences:
 ; libjpeg-turbo/optimized/jccoefct.c.ll
@@ -26,7 +26,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw %struct.HashTablePermutohedralValue.2873702, ptr %0, i64 %3, i32 0, i64 1
+  %4 = getelementptr nuw %struct.HashTablePermutohedralValue.2873668, ptr %0, i64 %3, i32 0, i64 1
   ret ptr %4
 }
 
@@ -51,7 +51,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.JSVarDef.3435063, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 

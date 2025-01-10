@@ -1,5 +1,5 @@
 
-; 2612 occurrences:
+; 2617 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/amapLiberty.c.ll
@@ -254,6 +254,7 @@
 ; cpython/optimized/resource.ll
 ; cpython/optimized/selectmodule.ll
 ; cpython/optimized/socketmodule.ll
+; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmlparse.ll
 ; cpython/optimized/zlibmodule.ll
 ; crow/optimized/example.cpp.ll
@@ -593,6 +594,7 @@
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; libevent/optimized/evdns.c.ll
 ; libevent/optimized/event_tagging.c.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libpng/optimized/png.c.ll
 ; libpng/optimized/pngpread.c.ll
@@ -923,6 +925,7 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/update.ll
 ; linux/optimized/user.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/virtgpu_gem.ll
 ; linux/optimized/virtgpu_object.ll
@@ -2024,6 +2027,7 @@
 ; postgres/optimized/gram.ll
 ; postgres/optimized/guc-file.ll
 ; postgres/optimized/heaptoast.ll
+; postgres/optimized/inet_net_pton.ll
 ; postgres/optimized/int.ll
 ; postgres/optimized/jsonpath_scan.ll
 ; postgres/optimized/latch.ll
@@ -2106,6 +2110,7 @@
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/chardev_char-ringbuf.c.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/chardev_wctablet.c.ll
 ; qemu/optimized/crypto_tlssession.c.ll
 ; qemu/optimized/fdt_overlay.c.ll
@@ -2620,7 +2625,7 @@ entry:
   ret i1 %2
 }
 
-; 2820 occurrences:
+; 2825 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -2849,6 +2854,7 @@ entry:
 ; bullet3/optimized/btMiniSDF.ll
 ; c3c/optimized/context.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
+; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
@@ -2931,6 +2937,7 @@ entry:
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/clamsubmit.c.ll
 ; clamav/optimized/dsig.c.ll
+; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/optparser.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -3050,6 +3057,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; eastl/optimized/eathread.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/AuxIndexStructures.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
@@ -3143,6 +3151,7 @@ entry:
 ; git/optimized/trailer.ll
 ; git/optimized/unpack-trees.ll
 ; git/optimized/writer.ll
+; git/optimized/xdiff-interface.ll
 ; git/optimized/xmerge.ll
 ; glog/optimized/logging_unittest.cc.ll
 ; glog/optimized/mock-log_unittest.cc.ll
@@ -3886,6 +3895,7 @@ entry:
 ; nori/optimized/tabwidget.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_itoa.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_nftw.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/lib_rawoutstream.c.ll
@@ -5449,7 +5459,7 @@ entry:
   ret i1 %2
 }
 
-; 1184 occurrences:
+; 1187 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaMan.c.ll
@@ -5458,6 +5468,7 @@ entry:
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/utilSort.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; arrow/optimized/UriNormalize.c.ll
@@ -5856,6 +5867,7 @@ entry:
 ; linux/optimized/seq_buf.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/seq_queue.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/skl_watermark.ll
@@ -6526,6 +6538,7 @@ entry:
 ; slurm/optimized/spawn.ll
 ; slurm/optimized/srun_job.ll
 ; slurm/optimized/step_io.ll
+; slurm/optimized/step_mgr.ll
 ; slurm/optimized/stepd_api.ll
 ; slurm/optimized/task.ll
 ; slurm/optimized/tree.ll
@@ -6642,7 +6655,7 @@ entry:
   ret i1 %2
 }
 
-; 833 occurrences:
+; 834 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/darScript.c.ll
@@ -6679,6 +6692,7 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; cpython/optimized/_datetimemodule.ll
+; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
@@ -7606,7 +7620,7 @@ entry:
   ret i1 %2
 }
 
-; 668 occurrences:
+; 669 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -7766,6 +7780,7 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libevent/optimized/evutil.c.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libquic/optimized/cached_network_parameters.pb.cc.ll
 ; libquic/optimized/rsa.c.ll
 ; libquic/optimized/source_address_token.pb.cc.ll
@@ -9014,7 +9029,7 @@ entry:
   ret i1 %2
 }
 
-; 567 occurrences:
+; 568 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/gzwrite.c.ll
@@ -9476,6 +9491,7 @@ entry:
 ; qemu/optimized/blockdev.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_net_rocker_rocker-hmp-cmds.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll

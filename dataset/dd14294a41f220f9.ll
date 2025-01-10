@@ -300,6 +300,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; flac/optimized/decode.c.ll
+; freetype/optimized/psaux.c.ll
 ; freetype/optimized/sdf.c.ll
 ; freetype/optimized/truetype.c.ll
 ; gromacs/optimized/deflate.c.ll
@@ -361,7 +362,6 @@ entry:
 ; postgres/optimized/visibilitymap.ll
 ; qemu/optimized/hw_acpi_core.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -397,7 +397,6 @@ entry:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; freetype/optimized/psaux.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
@@ -426,6 +425,7 @@ entry:
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
+; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; raylib/optimized/raudio.c.ll

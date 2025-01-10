@@ -3,6 +3,11 @@ func0000000000000019:                   # @func0000000000000019
 	zext.w	a0, a0
 	sub	a0, a0, a1
 	ret
+func000000000000001b:                   # @func000000000000001b
+	add.uw	a1, a2, a1
+	zext.w	a0, a0
+	sub	a0, a0, a1
+	ret
 func000000000000000b:                   # @func000000000000000b
 	add.uw	a1, a2, a1
 	zext.w	a0, a0

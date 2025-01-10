@@ -40,13 +40,6 @@ func0000000000000061:                   // @func0000000000000061
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
-// %bb.0:                               // %entry
-	sub	w8, w1, w2
-	cmp	x0, x8
-	cset	w0, hi
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	sub	w8, w1, w2
@@ -69,6 +62,13 @@ func0000000000000028:                   // @func0000000000000028
 	ret
                                         // -- End function
 func0000000000000218:                   // @func0000000000000218
+// %bb.0:                               // %entry
+	sub	w8, w1, w2
+	cmp	x0, x8
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000208:                   // @func0000000000000208
 // %bb.0:                               // %entry
 	sub	w8, w1, w2
 	cmp	x0, x8

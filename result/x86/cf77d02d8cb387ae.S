@@ -29,11 +29,3 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	$65536, %rsi                    # imm = 0x10000
 	cmovael	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	testb	$1, %dl
-	movl	$18, %ecx
-	movl	$12, %eax
-	cmovnel	%ecx, %eax
-	testq	%rsi, %rsi
-	cmovnel	%edi, %eax
-	retq

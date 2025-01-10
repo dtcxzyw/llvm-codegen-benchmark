@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

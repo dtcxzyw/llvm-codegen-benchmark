@@ -29,6 +29,19 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; luau/optimized/lstrlib.cpp.ll
+; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = call i32 @llvm.smax.i32(i32 %3, i32 1)
+  %5 = sub i32 %0, %4
+  ret i32 %5
+}
+
 ; 4 occurrences:
 ; openblas/optimized/dsbtrd.c.ll
 ; opencv/optimized/gaze_estimation.cpp.ll
@@ -38,18 +51,6 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
-  %5 = sub i32 %0, %4
-  ret i32 %5
-}
-
-; 2 occurrences:
-; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
   %4 = tail call i32 @llvm.smax.i32(i32 %3, i32 0)
   %5 = sub i32 %0, %4
   ret i32 %5

@@ -34,6 +34,12 @@ func00000000000007ec:                   # @func00000000000007ec
 	orq	%rsi, %rdi
 	setne	%al
 	retq
+func00000000000002a8:                   # @func00000000000002a8
+	shlq	$2, %rsi
+	leaq	(%rsi,%rdi,2), %rax
+	cmpq	$1033, %rax                     # imm = 0x409
+	setae	%al
+	retq
 func000000000000050a:                   # @func000000000000050a
 	addl	%esi, %edi
 	setns	%al

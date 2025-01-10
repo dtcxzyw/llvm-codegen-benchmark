@@ -82,14 +82,14 @@ func000000000000000a:                   // @func000000000000000a
 	orr	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
-	orr	x8, x1, x2, lsl #56
+	orr	x8, x1, x2, lsl #48
 	orr	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000003:                   // @func0000000000000003
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	orr	x8, x1, x2, lsl #48

@@ -1,5 +1,5 @@
 
-%struct.desc_struct.3532780 = type { i16, i16, i32 }
+%struct.desc_struct.3532746 = type { i16, i16, i32 }
 
 ; 6 occurrences:
 ; linux/optimized/ehci-hcd.ll
@@ -73,7 +73,7 @@ define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -12
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr [3 x %struct.desc_struct.3532780], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [3 x %struct.desc_struct.3532746], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

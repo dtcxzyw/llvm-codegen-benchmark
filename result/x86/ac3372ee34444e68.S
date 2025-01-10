@@ -3,6 +3,11 @@ func0000000000000000:                   # @func0000000000000000
 	cmovbq	%rsi, %rdx
 	leal	(%rdx,%rdi), %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	%rdx, %rsi
+	cmovbq	%rsi, %rdx
+	leal	(%rdx,%rdi), %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdx, %rsi
 	cmovbq	%rsi, %rdx
@@ -14,11 +19,6 @@ func000000000000001f:                   # @func000000000000001f
 	leal	(%rdx,%rdi), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpq	%rdx, %rsi
-	cmovbq	%rsi, %rdx
-	leal	(%rdx,%rdi), %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdx, %rsi
 	cmovbq	%rsi, %rdx
 	leal	(%rdx,%rdi), %eax

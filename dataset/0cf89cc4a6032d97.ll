@@ -1,13 +1,10 @@
 
-; 152 occurrences:
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
+; 147 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifTune.c.ll
 ; arrow/optimized/float16.cc.ll
 ; c3c/optimized/diagnostics.c.ll
-; cvc5/optimized/SimpSolver.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -113,7 +110,6 @@
 ; opencv/optimized/fundam.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; openjdk/optimized/defaultMethods.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -151,7 +147,6 @@
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; wireshark/optimized/packet-opus.c.ll
 ; wireshark/optimized/packet-x11.c.ll
-; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
 
 ; 97 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
@@ -309,8 +309,9 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/kitSop.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
@@ -407,8 +408,7 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 6 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; php/optimized/dfa_pass.ll
@@ -418,7 +418,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -64
   %5 = sext i32 %0 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5

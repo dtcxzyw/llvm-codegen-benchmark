@@ -2593,7 +2593,7 @@ entry:
   ret i32 %3
 }
 
-; 100 occurrences:
+; 101 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcMap.c.ll
@@ -2644,6 +2644,7 @@ entry:
 ; libquic/optimized/tls_cbc.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/dma-ring.ll
+; linux/optimized/i915_gem_shmem.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/UDTLayout.cpp.ll
 ; lvgl/optimized/lv_draw_sw_box_shadow.ll
@@ -2848,12 +2849,13 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifTruth.c.ll
 ; clamav/optimized/matcher.c.ll
 ; gromacs/optimized/bench_system.cpp.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/inline.ll
+; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:

@@ -203,6 +203,18 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = zext i32 %0 to i64
+  %6 = sub nuw nsw i64 %5, %4
+  ret i64 %6
+}
+
 ; 12 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll

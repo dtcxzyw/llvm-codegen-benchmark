@@ -978,9 +978,7 @@ entry:
   ret i64 %3
 }
 
-; 29 occurrences:
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
+; 25 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/arenaViolation.c.ll
@@ -990,7 +988,6 @@ entry:
 ; abc/optimized/timDump.c.ll
 ; abc/optimized/timMan.c.ll
 ; bullet3/optimized/btConvexHull.ll
-; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -1007,7 +1004,6 @@ entry:
 ; openjdk/optimized/compile.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
-; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

@@ -1,6 +1,8 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll

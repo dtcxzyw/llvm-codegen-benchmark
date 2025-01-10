@@ -16,9 +16,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/nl80211.ll
-; linux/optimized/set_memory.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:

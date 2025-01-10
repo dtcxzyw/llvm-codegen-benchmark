@@ -50,14 +50,6 @@ func0000000000000005:                   // @func0000000000000005
 	add	w0, w8, #56
 	ret
                                         // -- End function
-func000000000000002d:                   // @func000000000000002d
-// %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	orr	w8, w0, w8
-	add	w8, w1, w8
-	sub	w0, w8, #32
-	ret
-                                        // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
@@ -72,15 +64,6 @@ func0000000000000011:                   // @func0000000000000011
 	orr	w8, w1, w8
 	add	w8, w0, w8
 	add	w0, w8, #2
-	ret
-                                        // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	mov	w9, #16777216                   // =0x1000000
-	orr	w8, w0, w8
-	add	w9, w1, w9
-	add	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014

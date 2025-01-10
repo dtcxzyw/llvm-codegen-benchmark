@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind

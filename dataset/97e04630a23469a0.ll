@@ -1,5 +1,5 @@
 
-; 1309 occurrences:
+; 1307 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -424,7 +424,6 @@
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/hwregs.ll
-; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/i915_vma.ll
@@ -952,7 +951,6 @@
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; pbrt-v4/optimized/progressreporter.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/cdf.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/encoding.ll
@@ -1943,7 +1941,7 @@ entry:
   ret i64 %3
 }
 
-; 1883 occurrences:
+; 1882 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -3354,7 +3352,6 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
-; php/optimized/KeccakSponge.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/cdf.ll
 ; php/optimized/crypt_sha256.ll
@@ -4894,7 +4891,7 @@ entry:
   ret i64 %3
 }
 
-; 1318 occurrences:
+; 1317 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/deflate.c.ll
@@ -5299,7 +5296,6 @@ entry:
 ; linux/optimized/truncate.ll
 ; linux/optimized/uncore_snb.ll
 ; linux/optimized/uncore_snbep.ll
-; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; linux/optimized/vmcore.ll
@@ -6221,9 +6217,9 @@ entry:
   ret i64 %3
 }
 
-; 942 occurrences:
+; 939 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/gzlib.c.ll
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/inflate.c.ll
@@ -6314,9 +6310,7 @@ entry:
 ; cmake/optimized/cmCTestScriptHandler.cxx.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/gzread.c.ll
-; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/ntlm.c.ll
@@ -7159,7 +7153,6 @@ entry:
 ; zfp/optimized/zfp.c.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/gzread.c.ll
-; zlib/optimized/gzwrite.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll

@@ -1,10 +1,10 @@
 
-%struct.intel_uncore_extra_reg.3533108 = type { %struct.raw_spinlock.3533109, i64, i64, i64, %struct.atomic_t.3533105 }
-%struct.raw_spinlock.3533109 = type { %struct.qspinlock.3533110 }
-%struct.qspinlock.3533110 = type { %union.anon.4.3533111 }
-%union.anon.4.3533111 = type { %struct.atomic_t.3533105 }
-%struct.atomic_t.3533105 = type { i32 }
-%struct.list_head.3535195 = type { ptr, ptr }
+%struct.intel_uncore_extra_reg.3533074 = type { %struct.raw_spinlock.3533075, i64, i64, i64, %struct.atomic_t.3533071 }
+%struct.raw_spinlock.3533075 = type { %struct.qspinlock.3533076 }
+%struct.qspinlock.3533076 = type { %union.anon.4.3533077 }
+%union.anon.4.3533077 = type { %struct.atomic_t.3533071 }
+%struct.atomic_t.3533071 = type { i32 }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 6 occurrences:
 ; minetest/optimized/reflowscan.cpp.ll
@@ -33,7 +33,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 488
-  %7 = getelementptr [0 x %struct.intel_uncore_extra_reg.3533108], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [0 x %struct.intel_uncore_extra_reg.3533074], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
@@ -46,7 +46,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %7 = getelementptr [12 x %struct.list_head.3535195], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [12 x %struct.list_head.3535161], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

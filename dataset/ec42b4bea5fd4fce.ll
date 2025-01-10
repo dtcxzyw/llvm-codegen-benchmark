@@ -1,8 +1,8 @@
 
-%struct._zend_ssa_op.2793227 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
-%"struct.ZXing::PointT.0.3650140" = type { double, double }
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct._zend_ssa_op.2793193 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%"struct.ZXing::PointT.0.3650106" = type { double, double }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -38,7 +38,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nuw %struct._zend_ssa_op.2793227, ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %struct._zend_ssa_op.2793193, ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 5
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr nuw %"struct.ZXing::PointT.0.3650140", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"struct.ZXing::PointT.0.3650106", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr %struct.lua_TValue.3680875, ptr %0, i64 %5
+  %6 = getelementptr %struct.lua_TValue.3680825, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

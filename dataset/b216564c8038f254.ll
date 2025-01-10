@@ -1,28 +1,28 @@
 
-%struct.MapNode.2694056 = type { i16, i8, i8 }
-%struct.pollfd.2762625 = type { i32, i16, i16 }
-%struct.todo_item.2885576 = type { i32, ptr, i32, i32, i64, i64 }
-%struct.rcCompactSpan.3108323 = type { i16, i16, i32 }
-%"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.3121087" = type { %"struct.std::pair.371.3121005", i32, [4 x i8] }
-%"struct.std::pair.371.3121005" = type { %"struct.Yosys::RTLIL::IdString.3120912", [4 x i8], %"struct.(anonymous namespace)::mutate_once_queue_t.260.3121006" }
-%"struct.Yosys::RTLIL::IdString.3120912" = type { i32 }
-%"struct.(anonymous namespace)::mutate_once_queue_t.260.3121006" = type { %"class.Yosys::hashlib::dict.261.3121007" }
-%"class.Yosys::hashlib::dict.261.3121007" = type <{ %"class.std::vector.3.3120899", %"class.std::vector.262.3121008", %"struct.Yosys::hashlib::hash_ops.3120928", [7 x i8] }>
-%"class.std::vector.3.3120899" = type { %"struct.std::_Vector_base.4.3120902" }
-%"struct.std::_Vector_base.4.3120902" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120903" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120903" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120904" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120904" = type { ptr, ptr, ptr }
-%"class.std::vector.262.3121008" = type { %"struct.std::_Vector_base.263.3121009" }
-%"struct.std::_Vector_base.263.3121009" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl.3121010" }
-%"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl.3121010" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl_data.3121011" }
-%"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl_data.3121011" = type { ptr, ptr, ptr }
-%"struct.Yosys::hashlib::hash_ops.3120928" = type { i8 }
-%"class.llvm::MachineOperand.3159684" = type { i32, %union.anon.313.3159685, ptr, %"union.llvm::MachineOperand::ContentsUnion.3159686" }
-%union.anon.313.3159685 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3159686" = type { %"class.llvm::ArrayRef.314.3159687" }
-%"class.llvm::ArrayRef.314.3159687" = type { ptr, i64 }
-%"class.llvm::MCOperand.3189581" = type { i8, %union.anon.118.3189582 }
-%union.anon.118.3189582 = type { i64 }
+%struct.MapNode.2694022 = type { i16, i8, i8 }
+%struct.pollfd.2762591 = type { i32, i16, i16 }
+%struct.todo_item.2885542 = type { i32, ptr, i32, i32, i64, i64 }
+%struct.rcCompactSpan.3108289 = type { i16, i16, i32 }
+%"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.3121053" = type { %"struct.std::pair.371.3120971", i32, [4 x i8] }
+%"struct.std::pair.371.3120971" = type { %"struct.Yosys::RTLIL::IdString.3120878", [4 x i8], %"struct.(anonymous namespace)::mutate_once_queue_t.260.3120972" }
+%"struct.Yosys::RTLIL::IdString.3120878" = type { i32 }
+%"struct.(anonymous namespace)::mutate_once_queue_t.260.3120972" = type { %"class.Yosys::hashlib::dict.261.3120973" }
+%"class.Yosys::hashlib::dict.261.3120973" = type <{ %"class.std::vector.3.3120865", %"class.std::vector.262.3120974", %"struct.Yosys::hashlib::hash_ops.3120894", [7 x i8] }>
+%"class.std::vector.3.3120865" = type { %"struct.std::_Vector_base.4.3120868" }
+%"struct.std::_Vector_base.4.3120868" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120869" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120869" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120870" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120870" = type { ptr, ptr, ptr }
+%"class.std::vector.262.3120974" = type { %"struct.std::_Vector_base.263.3120975" }
+%"struct.std::_Vector_base.263.3120975" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl.3120976" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl.3120976" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl_data.3120977" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t, std::allocator<Yosys::hashlib::dict<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>::entry_t>>::_Vector_impl_data.3120977" = type { ptr, ptr, ptr }
+%"struct.Yosys::hashlib::hash_ops.3120894" = type { i8 }
+%"class.llvm::MachineOperand.3159650" = type { i32, %union.anon.313.3159651, ptr, %"union.llvm::MachineOperand::ContentsUnion.3159652" }
+%union.anon.313.3159651 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3159652" = type { %"class.llvm::ArrayRef.314.3159653" }
+%"class.llvm::ArrayRef.314.3159653" = type { ptr, i64 }
+%"class.llvm::MCOperand.3189547" = type { i8, %union.anon.118.3189548 }
+%union.anon.118.3189548 = type { i64 }
 
 ; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -36,7 +36,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.MapNode.2694056, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw nuw %struct.MapNode.2694022, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -150,7 +150,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.pollfd.2762625, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw nuw %struct.pollfd.2762591, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -164,7 +164,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.todo_item.2885576, ptr %0, i64 %4, i32 4
+  %5 = getelementptr nusw nuw %struct.todo_item.2885542, ptr %0, i64 %4, i32 4
   ret ptr %5
 }
 
@@ -180,7 +180,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.rcCompactSpan.3108323, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw nuw %struct.rcCompactSpan.3108289, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -193,7 +193,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.3121087", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw nuw %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, (anonymous namespace)::mutate_once_queue_t<std::__cxx11::basic_string<char>, (anonymous namespace)::mutate_queue_t>>::entry_t.3121053", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -205,7 +205,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.llvm::MachineOperand.3159684", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw nuw %"class.llvm::MachineOperand.3159650", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -217,7 +217,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.llvm::MCOperand.3189581", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.llvm::MCOperand.3189547", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

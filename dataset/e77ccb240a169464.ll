@@ -13,9 +13,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; opencv/optimized/hash_tsdf.cpp.ll

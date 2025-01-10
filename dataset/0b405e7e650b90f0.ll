@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
@@ -123,9 +123,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %0, i64 %2
+  %3 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
-  %5 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %4, i64 %1
+  %5 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %4, i64 %1
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
-%class.symbol.3613505 = type { ptr }
+%"class.clang::NestedNameSpecifierLoc.3182668" = type { ptr, ptr }
+%class.symbol.3613471 = type { ptr }
 
 ; 23 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -37,7 +37,7 @@ entry:
   ret ptr %7
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -53,6 +53,7 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/ucase.ll
+; icu/optimized/uresdata.ll
 ; libevent/optimized/event_tagging.c.ll
 ; libquic/optimized/strike_register.cc.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -111,7 +112,7 @@ entry:
   %3 = lshr exact i32 %2, 20
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182668", ptr %0, i64 %5
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
   ret ptr %7
 }
@@ -194,7 +195,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.symbol.3613471, ptr %0, i64 %5
   %7 = getelementptr ptr, ptr %6, i64 %4
   ret ptr %7
 }

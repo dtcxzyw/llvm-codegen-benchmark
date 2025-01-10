@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {

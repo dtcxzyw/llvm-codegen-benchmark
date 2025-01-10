@@ -15,10 +15,6 @@ func0000000000000060:                   # @func0000000000000060
 	subq	%rdx, %rsi
 	leaq	-1(%rsi,%rdi), %rax
 	retq
-func000000000000007f:                   # @func000000000000007f
-	subq	%rdx, %rsi
-	leaq	32(%rsi,%rdi), %rax
-	retq
 func000000000000006e:                   # @func000000000000006e
 	subq	%rdx, %rsi
 	leaq	84(%rsi,%rdi), %rax

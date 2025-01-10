@@ -18,16 +18,6 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000030:                   // @func0000000000000030
-// %bb.0:                               // %entry
-	add	x8, x2, #3
-	cmp	x2, #0
-	csel	x8, x8, x2, lt
-	lsr	x8, x8, #2
-	add	x8, x1, x8, lsl #7
-	add	x0, x8, x0
-	ret
-                                        // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
 	mov	x9, #3435986944                 // =0xcccd0000

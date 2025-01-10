@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 82 occurrences:
 ; abc/optimized/fraClau.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -68,9 +68,7 @@
 ; openmpi/optimized/pml_ob1_rdma.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openssl/optimized/libcrypto-lib-bf_readbuff.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; qemu/optimized/cache.ll
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/lauxlib.ll
@@ -197,12 +195,13 @@ entry:
   ret i1 %5
 }
 
-; 195 occurrences:
+; 196 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

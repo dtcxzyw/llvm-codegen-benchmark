@@ -1,5 +1,5 @@
 
-; 5121 occurrences:
+; 5137 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -84,6 +84,7 @@
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cecSynth.c.ll
+; abc/optimized/cmd.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/combination.c.ll
@@ -582,6 +583,7 @@
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/netcode.c.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/openioc.c.ll
 ; clamav/optimized/others.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -1173,6 +1175,7 @@
 ; gromacs/optimized/scanner.cpp.ll
 ; gromacs/optimized/scattering-debye.cpp.ll
 ; gromacs/optimized/selectioncollection.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; gromacs/optimized/simulatoralgorithm.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
@@ -2339,9 +2342,12 @@
 ; nuttx/optimized/fs_read.c.ll
 ; nuttx/optimized/lib_fputs.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/losetup.c.ll
+; nuttx/optimized/mempool_multiple.c.ll
 ; nuttx/optimized/serial.c.ll
+; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/ContextVariableUtils.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
@@ -2840,6 +2846,7 @@
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/constantTable.ll
@@ -2943,6 +2950,7 @@
 ; openjdk/optimized/zRemembered.ll
 ; openjdk/optimized/zStoreBarrierBuffer.ll
 ; openjdk/optimized/zVerify.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_aggregate.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
@@ -3058,6 +3066,7 @@
 ; openspiel/optimized/file.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; openspiel/optimized/game_parameters.cc.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/hearts.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/kuhn_poker.cc.ll
@@ -3171,6 +3180,7 @@
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/bufferSpec.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/colorSpace.cpp.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -3309,6 +3319,7 @@
 ; postgres/optimized/auth.ll
 ; postgres/optimized/autoinc.ll
 ; postgres/optimized/autovacuum.ll
+; postgres/optimized/backend_status.ll
 ; postgres/optimized/backup_manifest.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/bbstreamer_inject.ll
@@ -3316,6 +3327,7 @@
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/bootscanner.ll
 ; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/buffile.ll
 ; postgres/optimized/cash.ll
 ; postgres/optimized/checkpointer.ll
 ; postgres/optimized/compression.ll
@@ -3572,8 +3584,10 @@
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_usb_combined-packet.c.ll
+; qemu/optimized/hw_usb_core.c.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
@@ -3582,6 +3596,7 @@
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/libvhost-user.c.ll
+; qemu/optimized/linux-user_main.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/migration_block.c.ll
@@ -4379,6 +4394,7 @@
 ; velox/optimized/Compression.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/CoverageUtil.cpp.ll
 ; velox/optimized/CumeDist.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
@@ -6302,7 +6318,7 @@ entry:
   ret i64 %2
 }
 
-; 235 occurrences:
+; 236 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -6480,6 +6496,7 @@ entry:
 ; openssl/optimized/libssl-lib-rec_layer_d1.ll
 ; openssl/optimized/libssl-shlib-rec_layer_d1.ll
 ; php/optimized/ir.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll

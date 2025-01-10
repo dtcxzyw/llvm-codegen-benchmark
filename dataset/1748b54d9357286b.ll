@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -55,7 +55,6 @@
 ; openjdk/optimized/zBarrier.ll
 ; openjdk/optimized/zMark.ll
 ; openvdb/optimized/Merge.cc.ll
-; php/optimized/zend_alloc.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quantlib/optimized/cmsmarketcalibration.ll

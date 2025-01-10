@@ -114,12 +114,6 @@ func000000000000010c:                   # @func000000000000010c
 	cmpq	$-1, %rdi
 	setne	%al
 	retq
-func0000000000000191:                   # @func0000000000000191
-	leaq	(%rsi,%rdx,4), %rax
-	subq	%rax, %rdi
-	cmpq	$12, %rdi
-	sete	%al
-	retq
 func0000000000000114:                   # @func0000000000000114
 	addq	%rdx, %rsi
 	subq	%rsi, %rdi

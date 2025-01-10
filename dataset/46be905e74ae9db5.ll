@@ -1,9 +1,9 @@
 
-%struct._Bucket.2793443 = type { %struct._zval_struct.2793413, i64, ptr }
-%struct._zval_struct.2793413 = type { %union._zend_value.2793423, %union.anon.2793424, %union.anon.2.2793425 }
-%union._zend_value.2793423 = type { i64 }
-%union.anon.2793424 = type { i32 }
-%union.anon.2.2793425 = type { i32 }
+%struct._Bucket.2793409 = type { %struct._zval_struct.2793379, i64, ptr }
+%struct._zval_struct.2793379 = type { %union._zend_value.2793389, %union.anon.2793390, %union.anon.2.2793391 }
+%union._zend_value.2793389 = type { i64 }
+%union.anon.2793390 = type { i32 }
+%union.anon.2.2793391 = type { i32 }
 
 ; 5 occurrences:
 ; hwloc/optimized/distances.ll
@@ -18,7 +18,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = mul i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct._Bucket.2793443, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct._Bucket.2793409, ptr %0, i64 %6
   ret ptr %7
 }
 

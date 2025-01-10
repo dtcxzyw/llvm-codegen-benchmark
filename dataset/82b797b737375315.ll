@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/poll.ll
 ; linux/optimized/uhci-hcd.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll

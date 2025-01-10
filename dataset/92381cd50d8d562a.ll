@@ -1,72 +1,5 @@
 
-; 57 occurrences:
-; abc/optimized/llb3Image.c.ll
-; clamav/optimized/cert_util.c.ll
-; clamav/optimized/clamfi.c.ll
-; clamav/optimized/netcode.c.ll
-; darktable/optimized/collect.c.ll
-; darktable/optimized/filtering.c.ll
-; darktable/optimized/recentcollect.c.ll
-; git/optimized/apply.ll
-; git/optimized/http.ll
-; git/optimized/imap-send.ll
-; git/optimized/receive-pack.ll
-; git/optimized/sequencer.ll
-; git/optimized/strbuf.ll
-; git/optimized/unpack-trees.ll
-; git/optimized/ws.ll
-; gromacs/optimized/mempool.cpp.ll
-; libquic/optimized/spdy_framer.cc.ll
-; linux/optimized/drm_vblank.ll
-; linux/optimized/exec.ll
-; linux/optimized/iov_iter.ll
-; linux/optimized/scm.ll
-; linux/optimized/swiotlb.ll
-; linux/optimized/task_mmu.ll
-; llama.cpp/optimized/console.cpp.ll
-; llvm/optimized/BreakableToken.cpp.ll
-; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVFrameLowering.cpp.ll
-; lvgl/optimized/lv_lru.ll
-; minetest/optimized/static_text.cpp.ll
-; nuttx/optimized/fs_anonmap.c.ll
-; opencv/optimized/persistence.cpp.ll
-; openjdk/optimized/imageDecompressor.ll
-; openmpi/optimized/ad_io_coll.ll
-; openmpi/optimized/common_ompio_file_read_all.ll
-; openmpi/optimized/opal_datatype_fake_stack.ll
-; openssl/optimized/libcommon-lib-ciphercommon_gcm.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; php/optimized/zend_constants.ll
-; pocketpy/optimized/lexer.cpp.ll
-; qemu/optimized/accel_tcg_tcg-accel-ops-icount.c.ll
-; qemu/optimized/block_io.c.ll
-; qemu/optimized/block_mirror.c.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/hw_audio_es1370.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; quickjs/optimized/libregexp.ll
-; ruby/optimized/io.ll
-; sentencepiece/optimized/strutil.cc.ll
-; slurm/optimized/bitstring.ll
-; slurm/optimized/gres_ctld.ll
-; slurm/optimized/gres_sock_list.ll
-; velox/optimized/ConstantExpr.cpp.ll
-; velox/optimized/Timestamp.cpp.ll
-; wireshark/optimized/file-elf.c.ll
-; wireshark/optimized/iseries.c.ll
-; wireshark/optimized/tap-iostat.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = sub i64 %0, %3
-  ret i64 %4
-}
-
-; 73 occurrences:
+; 75 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/cecCore.c.ll
 ; arrow/optimized/bit_block_counter.cc.ll
@@ -105,6 +38,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/srp.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
+; nuttx/optimized/wd_start.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/feature.cpp.ll
@@ -124,6 +58,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; quickjs/optimized/quickjs.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/ripper.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; slurm/optimized/gres_ctld.ll
@@ -146,6 +81,77 @@ entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 61 occurrences:
+; abc/optimized/llb3Image.c.ll
+; clamav/optimized/cert_util.c.ll
+; clamav/optimized/clamfi.c.ll
+; clamav/optimized/netcode.c.ll
+; clamav/optimized/oabd.c.ll
+; darktable/optimized/collect.c.ll
+; darktable/optimized/filtering.c.ll
+; darktable/optimized/recentcollect.c.ll
+; git/optimized/apply.ll
+; git/optimized/http.ll
+; git/optimized/imap-send.ll
+; git/optimized/receive-pack.ll
+; git/optimized/remote-curl.ll
+; git/optimized/sequencer.ll
+; git/optimized/strbuf.ll
+; git/optimized/unpack-trees.ll
+; git/optimized/ws.ll
+; gromacs/optimized/mempool.cpp.ll
+; libquic/optimized/spdy_framer.cc.ll
+; linux/optimized/drm_vblank.ll
+; linux/optimized/exec.ll
+; linux/optimized/iov_iter.ll
+; linux/optimized/scm.ll
+; linux/optimized/swiotlb.ll
+; linux/optimized/task_mmu.ll
+; llama.cpp/optimized/console.cpp.ll
+; llvm/optimized/BreakableToken.cpp.ll
+; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/RISCVFrameLowering.cpp.ll
+; lvgl/optimized/lv_lru.ll
+; minetest/optimized/static_text.cpp.ll
+; nuttx/optimized/fs_anonmap.c.ll
+; opencv/optimized/persistence.cpp.ll
+; openjdk/optimized/imageDecompressor.ll
+; openmpi/optimized/ad_io_coll.ll
+; openmpi/optimized/common_ompio_file_read_all.ll
+; openmpi/optimized/opal_datatype_fake_stack.ll
+; openssl/optimized/libcommon-lib-ciphercommon_gcm.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; php/optimized/zend_constants.ll
+; pocketpy/optimized/lexer.cpp.ll
+; qemu/optimized/accel_tcg_tcg-accel-ops-icount.c.ll
+; qemu/optimized/block_io.c.ll
+; qemu/optimized/block_mirror.c.ll
+; qemu/optimized/block_qcow.c.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
+; qemu/optimized/hw_audio_es1370.c.ll
+; qemu/optimized/linux-user_syscall.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; quickjs/optimized/libregexp.ll
+; ruby/optimized/io.ll
+; sentencepiece/optimized/strutil.cc.ll
+; slurm/optimized/bitstring.ll
+; slurm/optimized/gres_ctld.ll
+; slurm/optimized/gres_sock_list.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/Timestamp.cpp.ll
+; wireshark/optimized/file-elf.c.ll
+; wireshark/optimized/iseries.c.ll
+; wireshark/optimized/tap-iostat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 32
+  %4 = sub i64 %0, %3
   ret i64 %4
 }
 

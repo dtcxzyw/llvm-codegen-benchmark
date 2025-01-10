@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 190 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -57,6 +57,7 @@
 ; linux/optimized/sd.ll
 ; linux/optimized/services.ll
 ; linux/optimized/unwind_orc.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -871,8 +872,7 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 5 occurrences:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; node/optimized/libnode.node_credentials.ll

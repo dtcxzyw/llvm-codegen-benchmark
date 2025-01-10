@@ -1,10 +1,11 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/cluster.c.ll
 ; cmake/optimized/transfer.c.ll
 ; curl/optimized/libcurl_la-transfer.ll
 ; darktable/optimized/introspection_censorize.c.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/io.cpp.ll
 ; git/optimized/http.ll
 ; git/optimized/remote-curl.ll
@@ -31,6 +32,7 @@
 ; openusd/optimized/skinningQuery.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; raylib/optimized/rmodels.c.ll
+; slurm/optimized/gres_filter.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/recordio.cc.ll

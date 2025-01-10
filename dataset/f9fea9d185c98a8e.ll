@@ -1,10 +1,7 @@
 
-; 14 occurrences:
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
+; 10 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; c3c/optimized/diagnostics.c.ll
-; cvc5/optimized/SimpSolver.cc.ll
 ; freetype/optimized/truetype.c.ll
 ; lief/optimized/ecp.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -13,7 +10,6 @@
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/packet-opus.c.ll
-; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

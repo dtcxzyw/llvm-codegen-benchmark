@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3238990" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; linux/optimized/lzo1x_compress.ll
@@ -496,7 +496,7 @@ entry:
 define i64 @func0000000000000010(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3238990", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %6, %5

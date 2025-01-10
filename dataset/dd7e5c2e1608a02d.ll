@@ -1,5 +1,5 @@
 
-%struct.ConvexVolume.3108435 = type { [36 x float], float, float, i32, i32 }
+%struct.ConvexVolume.3108401 = type { [36 x float], float, float, i32, i32 }
 
 ; 7 occurrences:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -65,7 +65,7 @@ define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.ConvexVolume.3108435, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.ConvexVolume.3108401, ptr %0, i64 %1
   %6 = getelementptr nusw float, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7

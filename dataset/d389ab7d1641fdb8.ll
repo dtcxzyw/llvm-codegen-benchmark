@@ -332,7 +332,7 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -344,7 +344,6 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/gcVMOperations.ll
 ; openjdk/optimized/matcher.ll
-; openjdk/optimized/zDirector.ll
 ; openspiel/optimized/cfr.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; z3/optimized/sat_solver.cpp.ll
@@ -353,6 +352,21 @@ define i1 @func0000000000000030(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; cvc5/optimized/sygus_enumerator.cpp.ll
+; llama.cpp/optimized/console.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; openjdk/optimized/zDirector.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000032(i8 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %1, %2
+  %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -473,20 +487,6 @@ define i1 @func0000000000000028(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = trunc i8 %0 to i1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 4 occurrences:
-; cvc5/optimized/sygus_enumerator.cpp.ll
-; llama.cpp/optimized/console.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000032(i8 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %1, %2
-  %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -19,6 +19,7 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; icu/optimized/collationdatawriter.ll
 ; icu/optimized/gencnvex.ll
 ; icu/optimized/swapimpl.ll
 ; icu/optimized/uprntf_p.ll
@@ -50,9 +51,11 @@
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ismacryp.c.ll
+; wireshark/optimized/packet-mpeg-audio.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/mpq_inf.cpp.ll
+; z3/optimized/theory_array_full.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -91,11 +94,12 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/saigSwitch.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-oampdu.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-ucp.c.ll
@@ -340,8 +344,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; icu/optimized/swapimpl.ll
+; 2 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
@@ -398,10 +401,11 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; cpython/optimized/mathmodule.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:

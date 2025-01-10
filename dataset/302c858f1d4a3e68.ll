@@ -1,13 +1,13 @@
 
-%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
-%union._zend_value.2791866 = type { i64 }
-%union.anon.0.2791867 = type { i32 }
-%union.anon.3.2791868 = type { i32 }
-%"class.hermes::vm::PinnedHermesValue.3077177" = type { %"class.hermes::vm::HermesValue.3077178" }
-%"class.hermes::vm::HermesValue.3077178" = type { i64 }
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
-%union.TValue.3680591 = type { i64 }
+%struct._zval_struct.2791824 = type { %union._zend_value.2791832, %union.anon.0.2791833, %union.anon.3.2791834 }
+%union._zend_value.2791832 = type { i64 }
+%union.anon.0.2791833 = type { i32 }
+%union.anon.3.2791834 = type { i32 }
+%"class.hermes::vm::PinnedHermesValue.3077143" = type { %"class.hermes::vm::HermesValue.3077144" }
+%"class.hermes::vm::HermesValue.3077144" = type { i64 }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
+%union.TValue.3680541 = type { i64 }
 
 ; 2 occurrences:
 ; linux/optimized/decompress_unlzma.ll
@@ -64,7 +64,7 @@ entry:
   %2 = add i32 %1, 5
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2791824, ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 48
   ret ptr %6
 }
@@ -91,7 +91,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3077177", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3077143", ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -104,7 +104,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %4
+  %5 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }
@@ -117,7 +117,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -132,7 +132,7 @@ entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %union.TValue.3680591, ptr %0, i64 %4
+  %5 = getelementptr nusw %union.TValue.3680541, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }

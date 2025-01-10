@@ -1,8 +1,8 @@
 
-%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
-%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
-%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
-%struct.QTailQLink.2706558 = type { ptr, ptr }
+%struct.OHCIPort.2706526 = type { %struct.USBPort.2706527, i32 }
+%struct.USBPort.2706527 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706528 }
+%union.anon.5.2706528 = type { %struct.QTailQLink.2706524 }
+%struct.QTailQLink.2706524 = type { ptr, ptr }
 
 ; 41 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -1328,7 +1328,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [15 x %struct.OHCIPort.2706526], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

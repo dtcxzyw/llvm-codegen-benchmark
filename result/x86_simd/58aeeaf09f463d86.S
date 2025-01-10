@@ -89,27 +89,14 @@ func0000000000000007:                   # @func0000000000000007
 	vpaddq	.LCPI6_2(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI7_0:
-	.quad	9223372036854775792             # 0x7ffffffffffffff0
-.LCPI7_1:
-	.quad	-16                             # 0xfffffffffffffff0
-.LCPI7_2:
-	.quad	16                              # 0x10
-func0000000000000004:                   # @func0000000000000004
-	vpandq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI7_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	.LCPI7_2(%rip){1to4}, %ymm0, %ymm0
-	retq
-.LCPI8_0:
 	.quad	-2                              # 0xfffffffffffffffe
-.LCPI8_1:
+.LCPI7_1:
 	.quad	2                               # 0x2
 func0000000000000006:                   # @func0000000000000006
-	vpbroadcastq	.LCPI8_0(%rip), %ymm1   # ymm1 = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
+	vpbroadcastq	.LCPI7_0(%rip), %ymm1   # ymm1 = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
 	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpand	%ymm1, %ymm0, %ymm0
-	vpaddq	.LCPI8_1(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI7_1(%rip){1to4}, %ymm0, %ymm0
 	retq

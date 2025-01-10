@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -17,7 +17,7 @@
 define i64 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 10
-  %4 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %3, i64 %1
+  %4 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = and i64 %6, 4294967294
@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3181429", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = and i64 %6, -128

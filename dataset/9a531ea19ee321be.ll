@@ -31,11 +31,10 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; linux/optimized/commoncap.ll
-; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 2350 occurrences:
+; 2353 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcFanOrder.c.ll
@@ -171,6 +171,7 @@
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/Glob.cxx.ll
 ; cmake/optimized/SystemTools.cxx.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -933,6 +934,7 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/lbaselib.ll
+; lua/optimized/ldebug.ll
 ; lua/optimized/ltable.ll
 ; lua/optimized/lua.ll
 ; lua/optimized/lvm.ll
@@ -1296,6 +1298,7 @@
 ; opencv/optimized/datafile.cpp.ll
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/filesystem.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/glob.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/perf_affine2d.cpp.ll
@@ -3457,7 +3460,7 @@ entry:
   ret i1 %3
 }
 
-; 1708 occurrences:
+; 1710 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/deflate.c.ll
@@ -4678,6 +4681,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oniguruma/optimized/iso8859_1.ll
 ; opencv/optimized/contours_new.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -5051,6 +5055,7 @@ entry:
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-atm.c.ll
+; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-cops.c.ll
@@ -5174,7 +5179,7 @@ entry:
   ret i1 %3
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cswCut.c.ll
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
@@ -5221,6 +5226,7 @@ entry:
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; qemu/optimized/block_vvfat.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; raylib/optimized/rtext.c.ll
 ; ruby/optimized/symbol.ll
 ; stb/optimized/stb_c_lexer.c.ll

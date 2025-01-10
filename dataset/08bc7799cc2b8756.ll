@@ -1,5 +1,5 @@
 
-; 4904 occurrences:
+; 4903 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -557,7 +557,6 @@
 ; diesel-rs/optimized/1ksci6wsu20op9cc.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; diesel-rs/optimized/462o5qgxgzqa9ugn.ll
-; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
 ; diesel-rs/optimized/6qvzky2suxi9qri.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
@@ -1586,6 +1585,7 @@
 ; linux/optimized/namei_vfat.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/net-sysfs.ll
+; linux/optimized/net.ll
 ; linux/optimized/net_namespace.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/netlabel_kapi.ll
@@ -3351,7 +3351,6 @@
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/compact_vars.ll
 ; php/optimized/crypt_freesec.ll

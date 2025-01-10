@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 106 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -84,7 +84,6 @@
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/chardev_char.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/tcg.c.ll
@@ -115,7 +114,7 @@ entry:
   ret i64 %3
 }
 
-; 659 occurrences:
+; 658 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -774,7 +773,6 @@ entry:
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

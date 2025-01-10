@@ -1,7 +1,7 @@
 
-%"class.clang::Qualifiers.3335873" = type { i64 }
-%"class.clang::FunctionEffect.3335875" = type { i8 }
-%"class.cv::Rect_.3743588" = type { i32, i32, i32, i32 }
+%"class.clang::Qualifiers.3335839" = type { i64 }
+%"class.clang::FunctionEffect.3335841" = type { i8 }
+%"class.cv::Rect_.3743538" = type { i32, i32, i32, i32 }
 
 ; 13 occurrences:
 ; abc/optimized/giaMinLut.c.ll
@@ -194,8 +194,8 @@ define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 37
   %4 = and i64 %3, 1
-  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335873", ptr %1, i64 %4
-  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335875", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335839", ptr %1, i64 %4
+  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335841", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -207,8 +207,8 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %"class.cv::Rect_.3743588", ptr %1, i64 %4
-  %6 = getelementptr %"class.cv::Rect_.3743588", ptr %5, i64 %0
+  %5 = getelementptr %"class.cv::Rect_.3743538", ptr %1, i64 %4
+  %6 = getelementptr %"class.cv::Rect_.3743538", ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -62,7 +62,7 @@ entry:
   ret i1 %5
 }
 
-; 119 occurrences:
+; 118 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -115,13 +115,13 @@ entry:
 ; darktable/optimized/TiffIFD.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; grpc/optimized/hpack_encoder_table.cc.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.I386.cc.ll
 ; mold/optimized/gc-sections.cc.LOONGARCH32.cc.ll
@@ -168,7 +168,6 @@ entry:
 ; qemu/optimized/block_qed.c.ll
 ; qemu/optimized/gen-vdso.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; raylib/optimized/raudio.c.ll
 ; redis/optimized/listpack.ll
 ; ruby/optimized/compile.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -191,7 +190,7 @@ entry:
   ret i1 %5
 }
 
-; 239 occurrences:
+; 238 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
@@ -199,7 +198,6 @@ entry:
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/src.ll
 ; brotli/optimized/block_splitter.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/filestr.cpp.ll
@@ -486,7 +484,7 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; clamav/optimized/sis.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -505,13 +503,11 @@ entry:
 ; llvm/optimized/LoopSimplifyCFG.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/xlogutils.ll
 ; qemu/optimized/block_parallels.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_qed-check.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
@@ -1475,7 +1471,7 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cmExportFileGenerator.cxx.ll
@@ -1517,14 +1513,12 @@ entry:
 ; libquic/optimized/d1_both.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/drm_edid.ll
-; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/bufpage.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; zstd/optimized/zstd_v05.c.ll
@@ -1716,6 +1710,20 @@ entry:
   ret i1 %5
 }
 
+; 4 occurrences:
+; clamav/optimized/hfsplus.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; linux/optimized/extents_status.ll
+; wireshark/optimized/packet-acn.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ne i64 %4, %0
+  ret i1 %5
+}
+
 ; 6 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; gromacs/optimized/redistribute.cpp.ll
@@ -1832,19 +1840,6 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
   %5 = icmp ule i64 %4, %0
-  ret i1 %5
-}
-
-; 3 occurrences:
-; clamav/optimized/hfsplus.c.ll
-; linux/optimized/extents_status.ll
-; wireshark/optimized/packet-acn.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
 

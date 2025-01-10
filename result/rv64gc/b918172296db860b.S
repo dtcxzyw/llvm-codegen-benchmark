@@ -17,6 +17,12 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
+func0000000000000050:                   # @func0000000000000050
+	not	a2, a2
+	addw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
 func000000000000005b:                   # @func000000000000005b
 	subw	a1, a1, a2
 	slli	a2, a1, 2

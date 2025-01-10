@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; flac/optimized/encode.c.ll
 ; linux/optimized/bio.ll
+; linux/optimized/tcp_input.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {

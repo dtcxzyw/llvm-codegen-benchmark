@@ -53,17 +53,16 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; hyperscan/optimized/stream_compress.c.ll
+; 2 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i64 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 29
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 52
-  %5 = add i64 %0, %4
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -75,6 +74,18 @@ entry:
   %2 = lshr i32 %1, 31
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 63
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/stream_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 2
+  %3 = and i32 %2, 1073741822
+  %4 = zext nneg i32 %3 to i64
   %5 = add i64 %0, %4
   ret i64 %5
 }

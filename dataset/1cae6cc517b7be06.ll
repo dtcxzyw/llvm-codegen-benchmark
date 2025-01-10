@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; cpython/optimized/dtoa.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/namei.ll
@@ -8,7 +8,6 @@
 ; openjdk/optimized/constMethod.ll
 ; qemu/optimized/fdt.c.ll
 ; ruby/optimized/util.ll
-; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll

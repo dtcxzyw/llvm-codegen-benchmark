@@ -1,7 +1,10 @@
 
-; 2 occurrences:
+; 5 occurrences:
 ; linux/optimized/rhashtable.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; raylib/optimized/rmodels.c.ll
+; slurm/optimized/gres_sched.ll
+; slurm/optimized/gres_select_util.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:

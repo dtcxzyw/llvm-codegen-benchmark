@@ -178,6 +178,28 @@ entry:
   ret i64 %4
 }
 
+; 12 occurrences:
+; arrow/optimized/expression.cc.ll
+; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
+; hyperscan/optimized/rose_build_infix.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; hyperscan/optimized/rose_in_util.cpp.ll
+; openusd/optimized/pathExpressionEval.cpp.ll
+; qemu/optimized/block_vvfat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = sub i64 %2, %0
+  %4 = shl i64 %3, 9
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; Function Attrs: nounwind
@@ -240,27 +262,6 @@ entry:
   %2 = shl i64 %0, 3
   %3 = sub i64 %1, %2
   %4 = and i64 %3, -8
-  ret i64 %4
-}
-
-; 11 occurrences:
-; arrow/optimized/expression.cc.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_compile.cpp.ll
-; hyperscan/optimized/rose_build_infix.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
-; hyperscan/optimized/rose_build_misc.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
-; openusd/optimized/pathExpressionEval.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %0, 32
-  %3 = sub i64 %1, %2
-  %4 = and i64 %3, -4294967296
   ret i64 %4
 }
 

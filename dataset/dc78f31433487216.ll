@@ -31,10 +31,9 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/sfnt.c.ll
-; linux/optimized/gup.ll
 ; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/game.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
@@ -79,8 +78,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; clamav/optimized/dll.cpp.ll
+; 3 occurrences:
 ; flac/optimized/lpc.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-myanmar.ll
@@ -127,11 +125,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; lief/optimized/sha256.c.ll
 ; lief/optimized/sha512.c.ll
 ; llvm/optimized/Driver.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i64 %2) #0 {
 entry:

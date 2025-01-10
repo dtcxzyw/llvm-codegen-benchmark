@@ -48,7 +48,7 @@ entry:
   ret i8 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; git/optimized/fsck.ll
 ; llvm/optimized/MallocChecker.cpp.ll
@@ -58,7 +58,6 @@ entry:
 ; openjdk/optimized/compilationPolicy.ll
 ; redis/optimized/ziplist.ll
 ; wireshark/optimized/packet-megaco.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-v52.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {

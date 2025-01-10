@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::ElfShdr.570.2636431" = type { %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432" }
-%"class.mold::BigEndian.2636432" = type { [4 x i8] }
-%struct.Elf32_Phdr.2707194 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%"struct.mold::elf::ElfShdr.570.2636398" = type { %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399" }
+%"class.mold::BigEndian.2636399" = type { [4 x i8] }
+%struct.Elf32_Phdr.2707160 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 43 occurrences:
 ; llvm/optimized/CoverageMappingReader.cpp.ll
@@ -53,7 +53,7 @@ entry:
   %3 = tail call noundef i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636431", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636398", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -102,7 +102,7 @@ entry:
   %3 = tail call i32 @llvm.bswap.i32(i32 %2)
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %struct.Elf32_Phdr.2707194, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %struct.Elf32_Phdr.2707160, ptr %5, i64 %0
   ret ptr %6
 }
 

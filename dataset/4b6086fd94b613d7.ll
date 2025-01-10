@@ -12,6 +12,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; openjdk/optimized/zDirector.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, double %1) #0 {
+entry:
+  %2 = fmul double %1, 1.000000e+02
+  %3 = fcmp ole double %2, 5.000000e+00
+  %4 = or i1 %0, %3
+  ret i1 %4
+}
+
 ; 8 occurrences:
 ; casadi/optimized/idas.c.ll
 ; openusd/optimized/capsuleMeshGenerator.cpp.ll

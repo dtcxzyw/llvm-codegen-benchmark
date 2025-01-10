@@ -1,10 +1,10 @@
 
-%struct.NodeInfo.2705929 = type { i64, ptr, i8, i8, i8, i16, [128 x i8] }
-%"class.btAxisSweep3Internal<unsigned short>::Handle.2819241" = type { %struct.btBroadphaseProxy.base.2819242, [3 x i16], [3 x i16], ptr }
-%struct.btBroadphaseProxy.base.2819242 = type <{ ptr, i32, i32, i32, %class.btVector3.2819243, %class.btVector3.2819243 }>
-%class.btVector3.2819243 = type { [4 x float] }
-%struct.Codebook.3100913 = type { i32, i32, ptr, float, float, i8, i8, i8, i8, i32, ptr, ptr, [1024 x i16], ptr, ptr, i32 }
-%struct.rx_ring_info.3543514 = type { ptr, i64, i32, [2 x i64] }
+%struct.NodeInfo.2705895 = type { i64, ptr, i8, i8, i8, i16, [128 x i8] }
+%"class.btAxisSweep3Internal<unsigned short>::Handle.2819207" = type { %struct.btBroadphaseProxy.base.2819208, [3 x i16], [3 x i16], ptr }
+%struct.btBroadphaseProxy.base.2819208 = type <{ ptr, i32, i32, i32, %class.btVector3.2819209, %class.btVector3.2819209 }>
+%class.btVector3.2819209 = type { [4 x float] }
+%struct.Codebook.3100879 = type { i32, i32, ptr, float, float, i8, i8, i8, i8, i32, ptr, ptr, [1024 x i16], ptr, ptr, i32 }
+%struct.rx_ring_info.3543480 = type { ptr, i64, i32, [2 x i64] }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_core_numa.c.ll
@@ -12,7 +12,7 @@
 define ptr @func000000000000004c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.NodeInfo.2705929, ptr %1, i64 %3, i32 6, i64 %0
+  %4 = getelementptr %struct.NodeInfo.2705895, ptr %1, i64 %3, i32 6, i64 %0
   ret ptr %4
 }
 
@@ -22,7 +22,7 @@ entry:
 define ptr @func000000000000003f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nuw %"class.btAxisSweep3Internal<unsigned short>::Handle.2819241", ptr %1, i64 %3, i32 1, i64 %0
+  %4 = getelementptr nuw %"class.btAxisSweep3Internal<unsigned short>::Handle.2819207", ptr %1, i64 %3, i32 1, i64 %0
   ret ptr %4
 }
 
@@ -32,7 +32,7 @@ entry:
 define ptr @func000000000000003e(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"class.btAxisSweep3Internal<unsigned short>::Handle.2819241", ptr %1, i64 %3, i32 1, i64 %0
+  %4 = getelementptr %"class.btAxisSweep3Internal<unsigned short>::Handle.2819207", ptr %1, i64 %3, i32 1, i64 %0
   ret ptr %4
 }
 
@@ -43,7 +43,7 @@ entry:
 define ptr @func000000000000007f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nuw %struct.Codebook.3100913, ptr %1, i64 %3, i32 12, i64 %0
+  %4 = getelementptr nuw %struct.Codebook.3100879, ptr %1, i64 %3, i32 12, i64 %0
   ret ptr %4
 }
 
@@ -56,7 +56,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %struct.rx_ring_info.3543514, ptr %1, i64 %3
+  %4 = getelementptr %struct.rx_ring_info.3543480, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 24
   %6 = getelementptr [2 x i64], ptr %5, i64 0, i64 %0
   ret ptr %6

@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; darktable/optimized/masks.c.ll
 ; linux/optimized/eventpoll.ll
 ; llvm/optimized/KnownBits.cpp.ll

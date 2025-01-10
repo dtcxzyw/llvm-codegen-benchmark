@@ -73,7 +73,7 @@ define i32 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 536870912
   %.not = icmp eq i64 %1, 0
-  %2 = select i1 %.not, i32 12, i32 18
+  %2 = select i1 %.not, i32 18, i32 15
   ret i32 %2
 }
 

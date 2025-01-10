@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 79 occurrences:
 ; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
@@ -76,7 +76,6 @@
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; ruby/optimized/pm_constant_pool.ll
 ; ruby/optimized/symbol.ll
-; yosys/optimized/ezsat.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; zstd/optimized/divsufsort.c.ll

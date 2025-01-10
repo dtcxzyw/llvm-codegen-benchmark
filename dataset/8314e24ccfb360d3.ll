@@ -208,7 +208,7 @@ entry:
   ret i1 %5
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -216,6 +216,7 @@ entry:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
+; bullet3/optimized/btMultiSphereShape.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; bullet3/optimized/btPolarDecomposition.ll
 ; bullet3/optimized/btQuantizedBvh.ll

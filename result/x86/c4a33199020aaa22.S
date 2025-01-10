@@ -6,7 +6,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	movl	$12, %ecx
+	movl	$1, %ecx
 	shlxq	%rsi, %rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax

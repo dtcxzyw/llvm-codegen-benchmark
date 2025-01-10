@@ -260,7 +260,7 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/deflate.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -277,6 +277,8 @@ entry:
 ; linux/optimized/rtc-mc146818-lib.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
@@ -427,7 +429,7 @@ entry:
   ret i32 %3
 }
 
-; 1096 occurrences:
+; 1099 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -736,6 +738,7 @@ entry:
 ; lief/optimized/ecdh.c.ll
 ; lief/optimized/pkparse.c.ll
 ; lief/optimized/psa_crypto.c.ll
+; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/psa_crypto_hash.c.ll
 ; lief/optimized/psa_crypto_storage.c.ll
 ; lief/optimized/rsa.c.ll
@@ -1334,6 +1337,7 @@ entry:
 ; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/thread.ll
 ; ruby/optimized/util.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
@@ -1482,6 +1486,7 @@ entry:
 ; wireshark/optimized/wtap.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/internal.c.ll
+; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls.c.ll
@@ -1568,7 +1573,7 @@ entry:
   ret i32 %3
 }
 
-; 55 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; clamav/optimized/rs16.cpp.ll
@@ -1600,11 +1605,9 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
 ; openjdk/optimized/hb-number.ll
 ; openjdk/optimized/templateTable.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/array_selfuncs.ll

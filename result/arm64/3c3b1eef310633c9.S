@@ -23,16 +23,6 @@ func000000000000000c:                   // @func000000000000000c
 	sub	w0, w0, w1
 	ret
                                         // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
-	sub	w0, w0, w1
-	ret
-                                        // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
-	sub	w0, w0, w1
-	ret
-                                        // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	sub	w0, w0, w1
@@ -79,6 +69,11 @@ func0000000000000005:                   // @func0000000000000005
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
+// %bb.0:                               // %entry
+	sub	w0, w0, w1
+	ret
+                                        // -- End function
+func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
 	sub	w0, w0, w1
 	ret

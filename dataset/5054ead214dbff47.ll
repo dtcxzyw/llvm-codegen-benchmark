@@ -1,5 +1,5 @@
 
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
 
 ; 21 occurrences:
 ; abc/optimized/giaCone.c.ll
@@ -29,7 +29,7 @@ entry:
   %3 = lshr i32 %2, 6
   %4 = urem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635821", ptr %0, i64 %5
   ret ptr %6
 }
 

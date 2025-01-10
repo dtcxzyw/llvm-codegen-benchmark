@@ -1,14 +1,14 @@
 
-%"struct.blender::MLoopTri.2609110" = type { [3 x i32], i32 }
-%"struct.blender::MPoly.2609111" = type { i32, i32, i16, i8, i8 }
-%struct.page.3547972 = type { i64, %union.anon.3547973, %union.anon.6.3547974, %struct.atomic_t.3547960, [8 x i8] }
-%union.anon.3547973 = type { %struct.anon.3547975 }
-%struct.anon.3547975 = type { %union.anon.0.3547976, ptr, %union.anon.2.3547977, i64 }
-%union.anon.0.3547976 = type { %struct.list_head.3547971 }
-%struct.list_head.3547971 = type { ptr, ptr }
-%union.anon.2.3547977 = type { i64 }
-%union.anon.6.3547974 = type { %struct.atomic_t.3547960 }
-%struct.atomic_t.3547960 = type { i32 }
+%"struct.blender::MLoopTri.2609077" = type { [3 x i32], i32 }
+%"struct.blender::MPoly.2609078" = type { i32, i32, i16, i8, i8 }
+%struct.page.3547938 = type { i64, %union.anon.3547939, %union.anon.6.3547940, %struct.atomic_t.3547926, [8 x i8] }
+%union.anon.3547939 = type { %struct.anon.3547941 }
+%struct.anon.3547941 = type { %union.anon.0.3547942, ptr, %union.anon.2.3547943, i64 }
+%union.anon.0.3547942 = type { %struct.list_head.3547937 }
+%struct.list_head.3547937 = type { ptr, ptr }
+%union.anon.2.3547943 = type { i64 }
+%union.anon.6.3547940 = type { %struct.atomic_t.3547926 }
+%struct.atomic_t.3547926 = type { i32 }
 
 ; 110 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -125,7 +125,7 @@
 define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw %"struct.blender::MLoopTri.2609110", ptr %2, i64 %0, i32 1
+  %3 = getelementptr nusw %"struct.blender::MLoopTri.2609077", ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 
@@ -151,7 +151,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw nuw %"struct.blender::MPoly.2609111", ptr %2, i64 %0, i32 3
+  %3 = getelementptr nusw nuw %"struct.blender::MPoly.2609078", ptr %2, i64 %0, i32 3
   ret ptr %3
 }
 
@@ -166,7 +166,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.page.3547972, ptr %2, i64 %0, i32 1
+  %3 = getelementptr %struct.page.3547938, ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 

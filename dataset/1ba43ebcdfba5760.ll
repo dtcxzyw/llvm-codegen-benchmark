@@ -538,7 +538,7 @@ entry:
   ret i64 %4
 }
 
-; 150 occurrences:
+; 151 occurrences:
 ; brotli/optimized/encode.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -638,6 +638,7 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; memcached/optimized/memcached_debug-storage.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compileBroker.ll

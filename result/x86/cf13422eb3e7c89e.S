@@ -1,16 +1,16 @@
+func0000000000000424:                   # @func0000000000000424
+	addl	$-127, %esi
+	cmpl	$-95, %esi
+	setb	%cl
+	cmpb	$32, %dil
+	sete	%al
+	orb	%cl, %al
+	retq
 func000000000000054c:                   # @func000000000000054c
 	cmpl	$1, %esi
 	setne	%cl
 	testb	%dil, %dil
 	setns	%al
-	orb	%cl, %al
-	retq
-func0000000000000424:                   # @func0000000000000424
-	addl	$-129, %esi
-	cmpl	$126, %esi
-	setb	%cl
-	cmpb	$1, %dil
-	sete	%al
 	orb	%cl, %al
 	retq
 func0000000000000484:                   # @func0000000000000484

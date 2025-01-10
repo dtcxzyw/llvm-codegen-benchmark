@@ -1,9 +1,9 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
+%class.aiVector3t.2823125 = type { double, double, double }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
 
 ; 27 occurrences:
 ; arrow/optimized/key_map.cc.ll
@@ -805,7 +805,7 @@ define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = mul i64 %3, %1
-  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4
+  %5 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -836,7 +836,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = mul i64 %1, %3
-  %5 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %4
   ret ptr %5
 }
 

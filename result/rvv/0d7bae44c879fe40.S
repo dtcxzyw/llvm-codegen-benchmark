@@ -300,7 +300,7 @@ func0000000000000148:                   # @func0000000000000148
 func0000000000000194:                   # @func0000000000000194
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vv	v14, v10, v12
-	li	a0, 48
+	li	a0, 52
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

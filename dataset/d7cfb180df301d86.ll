@@ -1,12 +1,12 @@
 
-%"struct.Stockfish::Stats.18.2878588" = type { %"struct.std::array.19.2878589" }
-%"struct.std::array.19.2878589" = type { [64 x %"class.Stockfish::StatsEntry.20.2878590"] }
-%"class.Stockfish::StatsEntry.20.2878590" = type { %"struct.Stockfish::Stats.21.2878591" }
-%"struct.Stockfish::Stats.21.2878591" = type { %"struct.std::array.22.2878592" }
-%"struct.std::array.22.2878592" = type { [16 x %"struct.Stockfish::Stats.23.2878593"] }
-%"struct.Stockfish::Stats.23.2878593" = type { %"struct.std::array.24.2878594" }
-%"struct.std::array.24.2878594" = type { [64 x %"class.Stockfish::StatsEntry.25.2878595"] }
-%"class.Stockfish::StatsEntry.25.2878595" = type { i16 }
+%"struct.Stockfish::Stats.18.2878554" = type { %"struct.std::array.19.2878555" }
+%"struct.std::array.19.2878555" = type { [64 x %"class.Stockfish::StatsEntry.20.2878556"] }
+%"class.Stockfish::StatsEntry.20.2878556" = type { %"struct.Stockfish::Stats.21.2878557" }
+%"struct.Stockfish::Stats.21.2878557" = type { %"struct.std::array.22.2878558" }
+%"struct.std::array.22.2878558" = type { [16 x %"struct.Stockfish::Stats.23.2878559"] }
+%"struct.Stockfish::Stats.23.2878559" = type { %"struct.std::array.24.2878560" }
+%"struct.std::array.24.2878560" = type { [64 x %"class.Stockfish::StatsEntry.25.2878561"] }
+%"class.Stockfish::StatsEntry.25.2878561" = type { i16 }
 
 ; 11 occurrences:
 ; linux/optimized/decompress_bunzip2.ll
@@ -336,7 +336,7 @@ define ptr @func0000000000000033(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2131968
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw [16 x %"struct.Stockfish::Stats.18.2878588"], ptr %4, i64 0, i64 %0
+  %5 = getelementptr nusw nuw [16 x %"struct.Stockfish::Stats.18.2878554"], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

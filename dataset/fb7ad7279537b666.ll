@@ -724,7 +724,7 @@ entry:
   ret i1 %3
 }
 
-; 546 occurrences:
+; 545 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; cvc5/optimized/nl_model.cpp.ll
@@ -1105,7 +1105,6 @@ entry:
 ; openjdk/optimized/deoptimization.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; openusd/optimized/reconintra.c.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/zend_inheritance.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/blockdev.c.ll

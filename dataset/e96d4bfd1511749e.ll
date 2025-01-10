@@ -112,11 +112,10 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cpython/optimized/pythonrun.ll
 ; linux/optimized/pci.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll

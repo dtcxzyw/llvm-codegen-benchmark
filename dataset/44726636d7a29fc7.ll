@@ -1,5 +1,5 @@
 
-%struct.LangTag.2738648 = type { i32, i32 }
+%struct.LangTag.2738614 = type { i32, i32 }
 
 ; 38 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -456,8 +456,8 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.LangTag.2738648, ptr %0, i64 %1
-  %5 = getelementptr %struct.LangTag.2738648, ptr %4, i64 %3
+  %4 = getelementptr %struct.LangTag.2738614, ptr %0, i64 %1
+  %5 = getelementptr %struct.LangTag.2738614, ptr %4, i64 %3
   ret ptr %5
 }
 

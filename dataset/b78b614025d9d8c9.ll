@@ -1,5 +1,5 @@
 
-%struct.ImVec2.3454338 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 5 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %3 = icmp eq i64 %1, %2
   %4 = and i64 %1, 4294967295
   %5 = select i1 %3, i64 0, i64 %4
-  %6 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %0, i64 %5
   ret ptr %6
 }
 

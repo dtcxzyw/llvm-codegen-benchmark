@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; node/optimized/libnode.string_bytes.ll
 ; qemu/optimized/util_oslib-posix.c.ll
@@ -15,8 +16,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/rpo.c.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {

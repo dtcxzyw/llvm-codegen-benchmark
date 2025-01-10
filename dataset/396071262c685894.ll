@@ -1,8 +1,8 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%struct.GuestFD.2706729 = type { i32, %union.anon.2706730 }
-%union.anon.2706730 = type { %struct.anon.2706731 }
-%struct.anon.2706731 = type { ptr, i64, i64 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%struct.GuestFD.2706695 = type { i32, %union.anon.2706696 }
+%union.anon.2706696 = type { %struct.anon.2706697 }
+%struct.anon.2706697 = type { ptr, i64, i64 }
 
 ; 8 occurrences:
 ; libquic/optimized/e_tls.c.ll
@@ -17,7 +17,7 @@
 define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %1, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000004(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.GuestFD.2706729, ptr %1, i64 %3
+  %4 = getelementptr %struct.GuestFD.2706695, ptr %1, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }

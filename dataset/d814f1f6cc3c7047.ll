@@ -1,5 +1,5 @@
 
-; 752 occurrences:
+; 751 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -57,7 +57,6 @@
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/mathmodule.ll
 ; cpython/optimized/selectmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll

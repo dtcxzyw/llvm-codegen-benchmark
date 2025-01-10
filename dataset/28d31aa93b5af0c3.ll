@@ -1,10 +1,10 @@
 
-%class.RegMask.2732334 = type { %union.anon.2732335, i32, i32 }
-%union.anon.2732335 = type { [11 x i64] }
-%class.RegMask.2739117 = type { %union.anon.2739118, i32, i32 }
-%union.anon.2739118 = type { [11 x i64] }
-%struct.Lf_Bst_t_.2877719 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877720] }
-%struct.Lf_Plc_t_.2877720 = type { i32 }
+%class.RegMask.2732300 = type { %union.anon.2732301, i32, i32 }
+%union.anon.2732301 = type { [11 x i64] }
+%class.RegMask.2739083 = type { %union.anon.2739084, i32, i32 }
+%union.anon.2739084 = type { [11 x i64] }
+%struct.Lf_Bst_t_.2877685 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877686] }
+%struct.Lf_Plc_t_.2877686 = type { i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
@@ -26,7 +26,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.RegMask.2732334, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.RegMask.2732300, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr nusw nuw [11 x i64], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -39,7 +39,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.RegMask.2739117, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.RegMask.2739083, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr nusw nuw [11 x i64], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -60,7 +60,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Lf_Bst_t_.2877719, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.Lf_Bst_t_.2877685, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr nusw nuw [3 x i32], ptr %4, i64 0, i64 %5
   ret ptr %6

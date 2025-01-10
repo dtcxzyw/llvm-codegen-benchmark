@@ -1,13 +1,13 @@
 
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
-%struct.uni_to_enc.2792554 = type { i16, i8 }
-%struct.Tab_Obj_t_.2877225 = type { i32, i32, i64 }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%struct.uni_to_enc.2792520 = type { i16, i8 }
+%struct.Tab_Obj_t_.2877191 = type { i32, i32, i64 }
 
-; 94 occurrences:
+; 95 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -102,6 +102,7 @@
 ; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
 ; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
@@ -111,7 +112,7 @@ entry:
   ret i1 %4
 }
 
-; 250 occurrences:
+; 251 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
@@ -275,6 +276,7 @@ entry:
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/attachListener_posix.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; php/optimized/funcs.ll
 ; php/optimized/ir_patch.ll
@@ -406,12 +408,14 @@ entry:
   ret i1 %4
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; boost/optimized/area.ll
 ; boost/optimized/decode.ll
 ; boost/optimized/pct_string_view.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -459,7 +463,6 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openjdk/optimized/attachListener_posix.ll
 ; php/optimized/zend_opcode.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
@@ -481,7 +484,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c4(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %0, i64 %1
   %3 = getelementptr nusw i8, ptr %2, i64 -12
   %4 = icmp ult ptr %0, %3
   ret i1 %4
@@ -599,7 +602,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c1(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %struct._Point.2744407, ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %struct._Point.2744373, ptr %0, i64 %1
   %3 = getelementptr nusw i8, ptr %2, i64 -56
   %4 = icmp eq ptr %0, %3
   ret i1 %4
@@ -642,7 +645,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.uni_to_enc.2792554, ptr %0, i64 %1
+  %2 = getelementptr %struct.uni_to_enc.2792520, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -4
   %4 = icmp ugt ptr %0, %3
   ret i1 %4
@@ -716,7 +719,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000164(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.Tab_Obj_t_.2877225, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct.Tab_Obj_t_.2877191, ptr %0, i64 %1
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = icmp ult ptr %0, %3
   ret i1 %4

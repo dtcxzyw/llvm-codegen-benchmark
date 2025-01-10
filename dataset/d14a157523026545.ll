@@ -1,7 +1,7 @@
 
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
-%"struct.duckdb::FrameBounds.2952135" = type { i64, i64 }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
+%"struct.duckdb::FrameBounds.2952101" = type { i64, i64 }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 1090 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -1925,7 +1925,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %1, i64 %3
+  %4 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = ashr exact i64 %6, 4
@@ -1941,7 +1941,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr %"struct.duckdb::FrameBounds.2952135", ptr %1, i64 %3
+  %4 = getelementptr %"struct.duckdb::FrameBounds.2952101", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = ashr exact i64 %6, 4
@@ -1967,7 +1967,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3181429", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = ashr i64 %6, 7

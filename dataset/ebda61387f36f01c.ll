@@ -1,7 +1,7 @@
 
-%struct.stbir__contributors.3100930 = type { i32, i32 }
-%struct.pcpu_block_md.3538033 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
-%"struct.ZXing::PointT.3649419" = type { double, double }
+%struct.stbir__contributors.3100896 = type { i32, i32 }
+%struct.pcpu_block_md.3537999 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%"struct.ZXing::PointT.3649385" = type { double, double }
 
 ; 5 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -28,9 +28,9 @@ entry:
 define i1 @func0000000000000104(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.stbir__contributors.3100930, ptr %0, i64 %3
+  %4 = getelementptr %struct.stbir__contributors.3100896, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  %6 = getelementptr nusw %struct.stbir__contributors.3100930, ptr %0, i64 %1
+  %6 = getelementptr nusw %struct.stbir__contributors.3100896, ptr %0, i64 %1
   %7 = icmp ult ptr %5, %6
   ret i1 %7
 }
@@ -57,9 +57,9 @@ entry:
 define i1 @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %3
+  %4 = getelementptr %struct.pcpu_block_md.3537999, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
-  %6 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %1
+  %6 = getelementptr %struct.pcpu_block_md.3537999, ptr %0, i64 %1
   %7 = icmp ult ptr %5, %6
   ret i1 %7
 }
@@ -70,9 +70,9 @@ entry:
 define i1 @func0000000000000561(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.ZXing::PointT.3649419", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.ZXing::PointT.3649385", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
-  %6 = getelementptr nusw %"struct.ZXing::PointT.3649419", ptr %0, i64 %1
+  %6 = getelementptr nusw %"struct.ZXing::PointT.3649385", ptr %0, i64 %1
   %7 = icmp eq ptr %5, %6
   ret i1 %7
 }

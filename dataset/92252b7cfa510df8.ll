@@ -1,6 +1,6 @@
 
-%struct.Gia_Obj_t_.2877955 = type <{ i64, i32 }>
-%struct.Run.3716793 = type { i32, i32, i32 }
+%struct.Gia_Obj_t_.2877921 = type <{ i64, i32 }>
+%struct.Run.3716743 = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -61,7 +61,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Gia_Obj_t_.2877955, ptr %1, i64 %2
+  %3 = getelementptr %struct.Gia_Obj_t_.2877921, ptr %1, i64 %2
   %.idx = mul i64 %0, 12
   %4 = getelementptr i8, ptr %3, i64 -4
   %5 = getelementptr i8, ptr %4, i64 %.idx
@@ -177,7 +177,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Run.3716793, ptr %1, i64 %2
+  %3 = getelementptr %struct.Run.3716743, ptr %1, i64 %2
   %.idx = mul i64 %0, 12
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = getelementptr i8, ptr %4, i64 %.idx

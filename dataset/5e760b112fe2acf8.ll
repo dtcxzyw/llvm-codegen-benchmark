@@ -1,12 +1,11 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; git/optimized/transport.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/uhci-hcd.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openjdk/optimized/klass.ll

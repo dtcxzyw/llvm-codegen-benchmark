@@ -1,13 +1,12 @@
 
-; 3 occurrences:
-; darktable/optimized/tagging.c.ll
+; 2 occurrences:
 ; libquic/optimized/url_util.cc.ll
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
-  %4 = select i1 %3, i32 -1, i32 %1
+  %4 = select i1 %3, i32 1, i32 %1
   %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }

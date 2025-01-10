@@ -1,14 +1,14 @@
 
-%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
-%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
-%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
-%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
-%struct.G1CollectionSetCandidateInfo.2737598 = type <{ ptr, double, i32, [4 x i8] }>
+%"struct.rocksdb::CompactionInputFiles.2623924" = type { i32, %"class.std::vector.0.2623911", %"class.std::vector.8.2623925" }
+%"class.std::vector.0.2623911" = type { %"struct.std::_Vector_base.1.2623912" }
+%"struct.std::_Vector_base.1.2623912" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623925" = type { %"struct.std::_Vector_base.9.2623926" }
+%"struct.std::_Vector_base.9.2623926" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" = type { ptr, ptr, ptr }
+%struct.G1CollectionSetCandidateInfo.2737564 = type <{ ptr, double, i32, [4 x i8] }>
 
 ; 106 occurrences:
 ; abc/optimized/abcDetect.c.ll
@@ -126,7 +126,7 @@ entry:
   ret ptr %5
 }
 
-; 464 occurrences:
+; 470 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -298,6 +298,8 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
 ; freetype/optimized/smooth.c.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
@@ -358,6 +360,7 @@ entry:
 ; icu/optimized/bytestriebuilder.ll
 ; icu/optimized/collationdatareader.ll
 ; icu/optimized/formattedval_sbimpl.ll
+; icu/optimized/messagepattern.ll
 ; icu/optimized/package.ll
 ; icu/optimized/sprintf.ll
 ; icu/optimized/ucbuf.ll
@@ -387,6 +390,8 @@ entry:
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/upsampling_sse41.c.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
@@ -420,6 +425,7 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
+; nanobind/optimized/nb_func.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -861,34 +867,19 @@ entry:
   ret ptr %5
 }
 
-; 21 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaNf.c.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; icu/optimized/messagepattern.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/upsampling_sse41.c.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
-; nanobind/optimized/nb_func.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; protobuf/optimized/wire_format.cc.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623924", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -920,7 +911,7 @@ define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.G1CollectionSetCandidateInfo.2737598, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.G1CollectionSetCandidateInfo.2737564, ptr %0, i64 %4
   ret ptr %5
 }
 

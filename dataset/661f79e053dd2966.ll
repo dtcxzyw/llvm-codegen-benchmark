@@ -1,7 +1,7 @@
 
-%struct.G1CollectionSetCandidateInfo.2741401 = type <{ ptr, double, i32, [4 x i8] }>
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.G1CollectionSetCandidateInfo.2741367 = type <{ ptr, double, i32, [4 x i8] }>
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 4 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
@@ -15,7 +15,7 @@ entry:
   %4 = sub i32 %1, %3
   %5 = add i32 %4, -2
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.G1CollectionSetCandidateInfo.2741401, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.G1CollectionSetCandidateInfo.2741367, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.lua_TValue.3680875, ptr %0, i64 %5
+  %6 = getelementptr %struct.lua_TValue.3680825, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }

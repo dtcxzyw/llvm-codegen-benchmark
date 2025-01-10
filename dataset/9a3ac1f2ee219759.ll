@@ -357,7 +357,7 @@ entry:
   ret i64 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -370,6 +370,7 @@ entry:
 ; linux/optimized/alternative.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/datagram.ll
+; linux/optimized/devio.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_gem.ll

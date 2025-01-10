@@ -21,9 +21,10 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
+; icu/optimized/uresdata.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; linux/optimized/intel_cx0_phy.ll

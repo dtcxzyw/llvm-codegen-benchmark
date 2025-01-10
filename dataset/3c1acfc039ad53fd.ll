@@ -1,6 +1,6 @@
 
-%"struct.drjit::half.2609360" = type { i16 }
-%struct.anon.12.2707816 = type { i32, i32 }
+%"struct.drjit::half.2609327" = type { i16 }
+%struct.anon.12.2707782 = type { i32, i32 }
 
 ; 20 occurrences:
 ; arrow/optimized/key_hash.cc.ll
@@ -508,7 +508,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul i64 %1, %3
-  %5 = getelementptr nusw %"struct.drjit::half.2609360", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.drjit::half.2609327", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -765,7 +765,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul i64 %1, %3
-  %5 = getelementptr %struct.anon.12.2707816, ptr %0, i64 %4
+  %5 = getelementptr %struct.anon.12.2707782, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1057,12 +1057,10 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; lvgl/optimized/lv_textarea.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; yalantinglibs/optimized/user_defined_serialization.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
@@ -1135,10 +1133,8 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; boost/optimized/ipc_reliable_message_queue.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:

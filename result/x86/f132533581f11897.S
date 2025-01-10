@@ -7,9 +7,6 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000014:                   # @func0000000000000014
 	leal	-1(%rdi,%rsi,2), %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	leal	-1(%rdi,%rsi,2), %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	-1(%rdi,%rsi,8), %eax
 	retq

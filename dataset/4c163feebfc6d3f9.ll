@@ -1,5 +1,5 @@
 
-; 242 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -48,6 +48,8 @@
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestString.cpp.ll
 ; html5ever-rs/optimized/126f7y4y0nk6dpjh.ll
 ; html5ever-rs/optimized/1c9wisiomueezeur.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
@@ -289,18 +291,6 @@ entry:
   %2 = lshr exact i64 %1, 1
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw ptr, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestString.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 56
-  %3 = sub nsw i64 23, %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

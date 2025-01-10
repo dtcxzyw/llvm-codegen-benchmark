@@ -6,12 +6,12 @@ func0000000000000002:                   // @func0000000000000002
 	cset	w0, mi
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	fadd	s1, s1, s2
 	fadd	s0, s0, s1
 	fcmp	s0, #0.0
-	cset	w0, eq
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
@@ -49,12 +49,12 @@ func000000000000000d:                   // @func000000000000000d
 	cset	w0, pl
 	ret
                                         // -- End function
-func0000000000000007:                   // @func0000000000000007
+func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	fadd	s1, s1, s2
-	fadd	s0, s0, s1
+	fadd	s0, s1, s0
 	fcmp	s0, #0.0
-	cset	w0, ne
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005

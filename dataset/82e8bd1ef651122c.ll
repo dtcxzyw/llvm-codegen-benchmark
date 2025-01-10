@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; linux/optimized/hdac_stream.ll
 ; openjdk/optimized/classes.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-bencode.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000042(i32 %0, i8 %1) #0 {

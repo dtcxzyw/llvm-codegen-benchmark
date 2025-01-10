@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 78 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; assimp/optimized/zip.c.ll
@@ -30,7 +30,6 @@
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
@@ -51,12 +50,10 @@
 ; mold/optimized/gdb-index.cc.SH4.cc.ll
 ; mold/optimized/gdb-index.cc.SPARC64.cc.ll
 ; mold/optimized/gdb-index.cc.X86_64.cc.ll
-; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; openjdk/optimized/dwarf.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
-; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/xloginsert.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
@@ -65,14 +62,11 @@
 ; ruby/optimized/prism.ll
 ; spike/optimized/csrs.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-gmr1_rr.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-irda.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
@@ -83,7 +77,6 @@
 ; wireshark/optimized/packet-telnet.c.ll
 ; wireshark/optimized/packet-v52.c.ll
 ; wolfssl/optimized/coding.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {
@@ -93,7 +86,7 @@ entry:
   ret i32 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
@@ -119,6 +112,7 @@ entry:
 ; spike/optimized/s_addM.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
+; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-ehdlc.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll

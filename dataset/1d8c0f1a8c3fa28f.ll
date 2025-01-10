@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2699639" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699640", i64, %union.anon.2699641 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699640" = type { ptr }
-%union.anon.2699641 = type { i64, [8 x i8] }
-%class.btVector3.2819204 = type { [4 x float] }
+%"class.std::__cxx11::basic_string.2699605" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699606", i64, %union.anon.2699607 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699606" = type { ptr }
+%union.anon.2699607 = type { i64, [8 x i8] }
+%class.btVector3.2819170 = type { [4 x float] }
 
 ; 3 occurrences:
 ; minetest/optimized/game.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nuw %"class.std::__cxx11::basic_string.2699639", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"class.std::__cxx11::basic_string.2699605", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nuw %class.btVector3.2819204, ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr nuw %class.btVector3.2819170, ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 

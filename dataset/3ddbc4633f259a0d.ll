@@ -168,7 +168,7 @@ entry:
   ret i1 %2
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
 ; abseil-cpp/optimized/crc_memcpy_test.cc.ll
@@ -192,6 +192,7 @@ entry:
 ; icu/optimized/ucnvsel.ll
 ; linux/optimized/devinet.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -231,9 +232,8 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll

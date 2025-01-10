@@ -1,5 +1,5 @@
 
-; 453 occurrences:
+; 446 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; arrow/optimized/bridge.cc.ll
@@ -170,22 +170,17 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; ockam-rs/optimized/111eznecj9pn2lkp.ll
-; ockam-rs/optimized/13hx4edwj16k9wur.ll
 ; ockam-rs/optimized/1pv5gnbequqkl6bi.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; ockam-rs/optimized/2n0s7h3mrzul4f05.ll
-; ockam-rs/optimized/2tygv1xclgfmwb14.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/3mx5f5nie5moube.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/42pqfg2vr8i3zvjq.ll
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4mxoiw4m4s1rw29y.ll
-; ockam-rs/optimized/4r08vyqwrxt6fmz0.ll
 ; ockam-rs/optimized/4t3y03rrak2rtjym.ll
 ; ockam-rs/optimized/548tb0vgebzwk35z.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; ockam-rs/optimized/7hitgxreqt236i.ll
 ; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
@@ -278,7 +273,6 @@
 ; tree-sitter-rs/optimized/3iovi93q4avxr89k.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
 ; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
-; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3efk6odw6ecl29p.ll
@@ -302,7 +296,6 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
-; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
 ; wireshark/optimized/capture_file_dialog.cpp.ll
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll

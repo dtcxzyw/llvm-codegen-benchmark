@@ -3232,7 +3232,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/alloc_lib.ll
 ; folly/optimized/CustomLogFormatter.cpp.ll
@@ -3244,7 +3244,6 @@ entry:
 ; linux/optimized/fair.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/link_watch.ll
-; linux/optimized/rtmutex_api.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll

@@ -15,7 +15,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 
-; 138 occurrences:
+; 135 occurrences:
 ; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; turborepo-rs/optimized/5acbtdg9xgmdrsj5fdxgf9kjz.ll
 ; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
@@ -31,7 +31,6 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; zed-rs/optimized/13vabw3h9sttos1r8ubgjg4y3.ll
 ; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
 ; zed-rs/optimized/1kvfz4vxu123bq0qsauyrtl3j.ll
-; zed-rs/optimized/1wpmjzbycj91s3t7c45lurwzs.ll
 ; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
 ; zed-rs/optimized/2gkjh80bnq0s3nveklufvkafu.ll
@@ -98,7 +97,6 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
 ; zed-rs/optimized/8zogyz7vs6pnjn0mpvvdxdnfr.ll
-; zed-rs/optimized/9by7xbrgipxjyx0u6qobo1s7j.ll
 ; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
 ; zed-rs/optimized/9hlwt18nr4jd7z0ubrvgn7np1.ll
 ; zed-rs/optimized/9kjcdkl0h4le3fai44smqnljl.ll
@@ -152,7 +150,6 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; zed-rs/optimized/embq99u9pdranu6vd6khfevbh.ll
 ; zed-rs/optimized/eow2gokgpdftx9l85da9ybxhu.ll
 ; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
-; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
 ; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {

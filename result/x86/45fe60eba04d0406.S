@@ -3,11 +3,6 @@ func0000000000000101:                   # @func0000000000000101
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
-	leaq	5(%rsi,%rdx), %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
 func0000000000000185:                   # @func0000000000000185
 	leaq	4(%rsi,%rdx), %rax
 	cmpq	%rdi, %rax

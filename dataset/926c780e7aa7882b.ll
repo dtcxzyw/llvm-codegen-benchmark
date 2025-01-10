@@ -130,7 +130,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; boost/optimized/gregorian.ll
 ; clamav/optimized/asn1.c.ll
@@ -145,7 +145,6 @@ entry:
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll

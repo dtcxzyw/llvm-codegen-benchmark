@@ -132,3 +132,11 @@ func0000000000000066:                   # @func0000000000000066
 	vadd.vv	v8, v8, v10
 	vmslt.vv	v0, v8, v12
 	ret
+func0000000000000048:                   # @func0000000000000048
+	li	a0, -7
+	srli	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v12, v12, a0
+	vadd.vv	v8, v8, v10
+	vmsltu.vv	v0, v12, v8
+	ret

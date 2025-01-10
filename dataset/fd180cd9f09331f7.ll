@@ -1,5 +1,5 @@
 
-%"struct.std::pair.3280201" = type { i32, i32 }
+%"struct.std::pair.3280167" = type { i32, i32 }
 
 ; 2 occurrences:
 ; llvm/optimized/InstrProfReader.cpp.ll
@@ -98,6 +98,25 @@ entry:
   ret ptr %6
 }
 
+; 8 occurrences:
+; cpython/optimized/Hacl_Hash_SHA1.ll
+; darktable/optimized/TableLookUp.cpp.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/reg.ll
+; llvm/optimized/ValueEnumerator.cpp.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/libvduse.c.ll
+; qemu/optimized/libvhost-user.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = shl nuw nsw i64 %1, 4
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
 ; 59 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -168,22 +187,6 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; cpython/optimized/Hacl_Hash_SHA1.ll
-; darktable/optimized/TableLookUp.cpp.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; linux/optimized/reg.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 8589934588
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = shl nuw nsw i64 %1, 1
-  %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
 ; 4 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; hermes/optimized/Operations.cpp.ll
@@ -209,7 +212,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3280167", ptr %0, i64 %3
   %5 = shl nsw i64 %1, 3
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6

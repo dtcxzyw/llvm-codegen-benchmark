@@ -82,7 +82,7 @@ entry:
   ret i1 %4
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/darCut.c.ll
@@ -117,8 +117,10 @@ entry:
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; opencv/optimized/hough.cpp.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openjdk/optimized/cmsalpha.ll
 ; openjdk/optimized/vm_version_x86.ll
+; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/jsonb_util.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
@@ -683,15 +685,13 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openmpi/optimized/btl_sm_send.ll
 ; openmpi/optimized/btl_sm_sendi.ll
-; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/md.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind

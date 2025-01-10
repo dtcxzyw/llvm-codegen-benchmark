@@ -192,6 +192,7 @@ entry:
 ; 1111 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bzlib.c.ll
+; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddHarwell.c.ll
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -883,7 +884,6 @@ entry:
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/has_non_zero.dispatch.cpp.ll
 ; opencv/optimized/histogram.cpp.ll
 ; opencv/optimized/lsd.cpp.ll
@@ -1309,7 +1309,7 @@ entry:
   ret i1 %3
 }
 
-; 843 occurrences:
+; 839 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -1351,7 +1351,6 @@ entry:
 ; clamav/optimized/sf_base64decode.c.ll
 ; cmake/optimized/Base64.c.ll
 ; cmake/optimized/archive_pathmatch.c.ll
-; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -1640,8 +1639,6 @@ entry:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
 ; llvm/optimized/LowerGlobalDtors.cpp.ll
@@ -1837,7 +1834,6 @@ entry:
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/emd_new.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/motempl.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -2260,6 +2256,7 @@ entry:
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -2282,7 +2279,6 @@ entry:
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/formatting.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll

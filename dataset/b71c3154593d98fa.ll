@@ -904,7 +904,8 @@ entry:
   ret i1 %6
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/calibration_handeye.cpp.ll

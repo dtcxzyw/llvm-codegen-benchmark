@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::OperandSignature.2602469" = type { i32 }
+%"struct.asmjit::_abi_1_10::OperandSignature.2602436" = type { i32 }
 
 ; 5 occurrences:
 ; icu/optimized/bmpset.ll
@@ -12,7 +12,7 @@ define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 7
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2602469"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2602436"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

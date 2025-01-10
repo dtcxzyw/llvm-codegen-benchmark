@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; lief/optimized/pkcs5.c.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/exconvrt.ll
@@ -10,6 +10,7 @@
 ; opencv/optimized/distransform.cpp.ll
 ; qemu/optimized/hw_ide_atapi.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

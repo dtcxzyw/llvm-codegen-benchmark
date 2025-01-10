@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll

@@ -1,6 +1,6 @@
 
-%"struct.entt::internal::dense_map_node.274.3104692" = type { i64, %"struct.std::pair.85.3104693" }
-%"struct.std::pair.85.3104693" = type { i32, i32 }
+%"struct.entt::internal::dense_map_node.274.3104658" = type { i64, %"struct.std::pair.85.3104659" }
+%"struct.std::pair.85.3104659" = type { i32, i32 }
 
 ; 360 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
@@ -379,7 +379,7 @@ entry:
 ; Function Attrs: nounwind
 define { ptr, ptr } @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"struct.entt::internal::dense_map_node.274.3104692", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"struct.entt::internal::dense_map_node.274.3104658", ptr %0, i64 %1
   %3 = insertvalue { ptr, ptr } poison, ptr %0, 0
   %4 = insertvalue { ptr, ptr } %3, ptr %2, 1
   ret { ptr, ptr } %4

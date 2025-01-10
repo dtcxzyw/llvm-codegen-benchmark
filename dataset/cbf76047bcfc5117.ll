@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll

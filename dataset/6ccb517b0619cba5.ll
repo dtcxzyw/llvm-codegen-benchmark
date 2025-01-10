@@ -1,11 +1,11 @@
 
-%"class.std::shared_ptr.11.2806134" = type { %"class.std::__shared_ptr.12.2806135" }
-%"class.std::__shared_ptr.12.2806135" = type { ptr, %"class.std::__shared_count.2806094" }
-%"class.std::__shared_count.2806094" = type { ptr }
-%"class.cv::Mat_.3744587" = type { %"class.cv::Mat.3744580" }
-%"class.cv::Mat.3744580" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3744581", %"struct.cv::MatStep.3744582" }
-%"struct.cv::MatSize.3744581" = type { ptr }
-%"struct.cv::MatStep.3744582" = type { ptr, [2 x i64] }
+%"class.std::shared_ptr.11.2806100" = type { %"class.std::__shared_ptr.12.2806101" }
+%"class.std::__shared_ptr.12.2806101" = type { ptr, %"class.std::__shared_count.2806060" }
+%"class.std::__shared_count.2806060" = type { ptr }
+%"class.cv::Mat_.3744537" = type { %"class.cv::Mat.3744530" }
+%"class.cv::Mat.3744530" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3744531", %"struct.cv::MatStep.3744532" }
+%"struct.cv::MatSize.3744531" = type { ptr }
+%"struct.cv::MatStep.3744532" = type { ptr, [2 x i64] }
 
 ; 4 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -19,7 +19,7 @@ entry:
   %4 = trunc i64 %1 to i32
   %5 = urem i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.std::shared_ptr.11.2806134", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.std::shared_ptr.11.2806100", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = trunc i64 %1 to i32
   %5 = urem i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cv::Mat_.3744587", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cv::Mat_.3744537", ptr %0, i64 %6
   ret ptr %7
 }
 

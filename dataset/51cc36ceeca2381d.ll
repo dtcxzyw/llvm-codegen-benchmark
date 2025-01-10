@@ -24,7 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -42,6 +42,7 @@ entry:
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/zend_dfg.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll

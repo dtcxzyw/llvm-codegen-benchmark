@@ -1,6 +1,6 @@
 
-%union.frame_entry.2821812 = type { %struct.closure.2821813 }
-%struct.closure.2821813 = type { ptr, i32 }
+%union.frame_entry.2821778 = type { %struct.closure.2821779 }
+%struct.closure.2821779 = type { ptr, i32 }
 
 ; 4 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -34,7 +34,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [0 x %union.frame_entry.2821812], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [0 x %union.frame_entry.2821778], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

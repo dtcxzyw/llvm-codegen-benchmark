@@ -63,28 +63,13 @@ func000000000000002b:                   # @func000000000000002b
 	leaq	(%rsi,%rax,8), %rax
 	leaq	-8(%rax,%rdi,8), %rax
 	retq
-func000000000000003c:                   # @func000000000000003c
-	movslq	%edx, %rax
-	leaq	(%rsi,%rax,4), %rax
-	leaq	12(%rax,%rdi,4), %rax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%edx, %rax
 	addq	%rsi, %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func000000000000003b:                   # @func000000000000003b
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	leaq	-4(%rdi,%rax), %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movslq	%edx, %rax
 	leaq	(%rsi,%rax,8), %rax
 	leaq	8(%rdi,%rax), %rax
-	retq
-func000000000000003a:                   # @func000000000000003a
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	leaq	-1(%rdi,%rax), %rax
 	retq

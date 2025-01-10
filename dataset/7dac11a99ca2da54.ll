@@ -1968,7 +1968,7 @@ entry:
   ret i64 %3
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -1984,7 +1984,6 @@ entry:
 ; cpython/optimized/dictobject.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/options_handler.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/multipletimestepping.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll

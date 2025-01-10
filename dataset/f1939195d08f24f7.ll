@@ -1,14 +1,14 @@
 
-%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533" = type { %"class.std::chrono::time_point.170.2776534", ptr }
-%"class.std::chrono::time_point.170.2776534" = type { %"class.std::chrono::duration.2776440" }
-%"class.std::chrono::duration.2776440" = type { i64 }
-%"class.QuantLib::Array.2847384" = type { %"class.std::unique_ptr.2847385", i64 }
-%"class.std::unique_ptr.2847385" = type { %"struct.std::__uniq_ptr_data.2847386" }
-%"struct.std::__uniq_ptr_data.2847386" = type { %"class.std::__uniq_ptr_impl.2847387" }
-%"class.std::__uniq_ptr_impl.2847387" = type { %"class.std::tuple.2847388" }
-%"class.std::tuple.2847388" = type { %"struct.std::_Tuple_impl.2847389" }
-%"struct.std::_Tuple_impl.2847389" = type { %"struct.std::_Head_base.21.2847390" }
-%"struct.std::_Head_base.21.2847390" = type { ptr }
+%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776499" = type { %"class.std::chrono::time_point.170.2776500", ptr }
+%"class.std::chrono::time_point.170.2776500" = type { %"class.std::chrono::duration.2776406" }
+%"class.std::chrono::duration.2776406" = type { i64 }
+%"class.QuantLib::Array.2847350" = type { %"class.std::unique_ptr.2847351", i64 }
+%"class.std::unique_ptr.2847351" = type { %"struct.std::__uniq_ptr_data.2847352" }
+%"struct.std::__uniq_ptr_data.2847352" = type { %"class.std::__uniq_ptr_impl.2847353" }
+%"class.std::__uniq_ptr_impl.2847353" = type { %"class.std::tuple.2847354" }
+%"class.std::tuple.2847354" = type { %"struct.std::_Tuple_impl.2847355" }
+%"struct.std::_Tuple_impl.2847355" = type { %"struct.std::_Head_base.21.2847356" }
+%"struct.std::_Head_base.21.2847356" = type { ptr }
 
 ; 28 occurrences:
 ; assimp/optimized/clipper.cpp.ll
@@ -46,7 +46,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 4
   %6 = add nsw i64 %5, -1
-  %7 = getelementptr nusw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533", ptr %0, i64 %6, i32 1
+  %7 = getelementptr nusw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776499", ptr %0, i64 %6, i32 1
   ret ptr %7
 }
 
@@ -64,7 +64,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 4
   %6 = add nsw i64 %5, -1
-  %7 = getelementptr nusw nuw %"class.QuantLib::Array.2847384", ptr %0, i64 %6, i32 1
+  %7 = getelementptr nusw nuw %"class.QuantLib::Array.2847350", ptr %0, i64 %6, i32 1
   ret ptr %7
 }
 

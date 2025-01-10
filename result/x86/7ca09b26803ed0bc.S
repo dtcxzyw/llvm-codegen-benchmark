@@ -5,8 +5,7 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	retq
 func000000000000002c:                   # @func000000000000002c
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	cmpl	$2146435072, %esi               # imm = 0x7FF00000
+	testb	$63, %sil
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al

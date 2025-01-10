@@ -1,5 +1,5 @@
 
-%struct.object_id.2883240 = type { [32 x i8], i32 }
+%struct.object_id.2883206 = type { [32 x i8], i32 }
 
 ; 3 occurrences:
 ; luau/optimized/BytecodeAnalysis.cpp.ll
@@ -61,7 +61,7 @@ entry:
   %3 = and i32 %2, 3
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [3 x %struct.object_id.2883240], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x %struct.object_id.2883206], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

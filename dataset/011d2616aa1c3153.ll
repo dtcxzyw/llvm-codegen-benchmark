@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -19,7 +19,6 @@
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/regex_list.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/_json.ll

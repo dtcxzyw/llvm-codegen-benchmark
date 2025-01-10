@@ -85,17 +85,6 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = tail call noundef i32 @llvm.smax.i32(i32 %2, i32 0)
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; recastnavigation/optimized/DetourPathCorridor.cpp.ll
-; Function Attrs: nounwind
 define i1 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %2, i32 0)

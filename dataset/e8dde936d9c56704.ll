@@ -1,5 +1,5 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
 
 ; 5 occurrences:
 ; linux/optimized/filter.ll
@@ -13,7 +13,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext i32 %0 to i64
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %3, i64 0, i64 %4
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -33,7 +33,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %3, i64 0, i64 %4
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 

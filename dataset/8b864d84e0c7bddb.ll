@@ -1,5 +1,5 @@
 
-; 372 occurrences:
+; 370 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
@@ -133,8 +133,6 @@
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll

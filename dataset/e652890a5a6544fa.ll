@@ -1,42 +1,20 @@
 
-; 80 occurrences:
+; 58 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/pdrUtil.c.ll
 ; cmake/optimized/archive_read.c.ll
-; icu/optimized/alphaindex.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdatabuilder.ll
-; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
-; icu/optimized/dtptngen.ll
-; icu/optimized/filteredbrk.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/nfrule.ll
-; icu/optimized/number_longnames.ll
-; icu/optimized/numfmt.ll
-; icu/optimized/plurfmt.ll
-; icu/optimized/rbnf.ll
-; icu/optimized/rbt_rule.ll
-; icu/optimized/reslist.ll
-; icu/optimized/selfmt.ll
-; icu/optimized/smpdtfmt.ll
 ; icu/optimized/stringpiece.ll
-; icu/optimized/timezone.ll
-; icu/optimized/tridpars.ll
-; icu/optimized/tzfmt.ll
-; icu/optimized/tzgnames.ll
-; icu/optimized/ucharstriebuilder.ll
-; icu/optimized/uniset.ll
 ; icu/optimized/uniset_props.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/unistr_cnv.ll
-; icu/optimized/units_router.ll
-; icu/optimized/uspoof_conf.ll
-; icu/optimized/vtzone.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll

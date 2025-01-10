@@ -24,18 +24,19 @@ func0000000000000061:                   # @func0000000000000061
 	mv	a0, a2
 .LBB3_2:                                # %entry
 	ret
-func000000000000006c:                   # @func000000000000006c
-	sext.w	a1, a1
-	beqz	a1, .LBB4_2
-	mv	a2, a0
-.LBB4_2:                                # %entry
-	mv	a0, a2
-	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
-	beqz	a1, .LBB5_2
+	li	a3, 238
+	beq	a1, a3, .LBB4_2
 	mv	a0, a2
+.LBB4_2:                                # %entry
+	ret
+func000000000000006c:                   # @func000000000000006c
+	sext.w	a1, a1
+	beqz	a1, .LBB5_2
+	mv	a2, a0
 .LBB5_2:                                # %entry
+	mv	a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1

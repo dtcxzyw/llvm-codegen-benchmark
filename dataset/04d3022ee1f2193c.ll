@@ -1,5 +1,5 @@
 
-%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2708985 = type { i32, i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -23,7 +23,7 @@ entry:
   %3 = add nsw i64 %2, -3120
   %4 = lshr i64 %3, 3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2912
-  %6 = getelementptr %struct.chan.2709019, ptr %5, i64 %4
+  %6 = getelementptr %struct.chan.2708985, ptr %5, i64 %4
   ret ptr %6
 }
 

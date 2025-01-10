@@ -614,7 +614,7 @@ entry:
   ret i8 %2
 }
 
-; 2513 occurrences:
+; 2512 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/deflate.c.ll
@@ -2343,7 +2343,6 @@ entry:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
-; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; qemu/optimized/hw_usb_dev-wacom.c.ll
@@ -3136,7 +3135,7 @@ entry:
   ret i8 %2
 }
 
-; 1578 occurrences:
+; 1579 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -4086,6 +4085,7 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
+; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; qemu/optimized/tcg.c.ll

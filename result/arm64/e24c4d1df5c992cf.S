@@ -251,14 +251,6 @@ func0000000000000146:                   // @func0000000000000146
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000010a:                   // @func000000000000010a
-// %bb.0:                               // %entry
-	and	w8, w1, #0xffff
-	cmp	w0, #3
-	ccmp	w8, #3, #0, gt
-	cset	w0, hi
-	ret
-                                        // -- End function
 func00000000000000c4:                   // @func00000000000000c4
 // %bb.0:                               // %entry
 	and	w8, w0, #0xffff
@@ -271,6 +263,14 @@ func0000000000000198:                   // @func0000000000000198
 // %bb.0:                               // %entry
 	tst	w1, #0xffff
 	ccmp	w0, #3, #0, ne
+	cset	w0, hi
+	ret
+                                        // -- End function
+func000000000000010a:                   // @func000000000000010a
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	cmp	w0, #6
+	ccmp	w8, #12, #0, gt
 	cset	w0, hi
 	ret
                                         // -- End function

@@ -33,7 +33,3 @@ func000000000000000c:                   # @func000000000000000c
 	subl	%esi, %eax
 	andl	$31, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	subl	%esi, %edi
-	movzwl	%di, %eax
-	retq

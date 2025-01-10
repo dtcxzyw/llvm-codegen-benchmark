@@ -384,6 +384,7 @@ entry:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unarj.c.ll
+; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
 ; libjpeg-turbo/optimized/jfdctfst.c.ll
@@ -400,7 +401,6 @@ entry:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -482,8 +482,9 @@ entry:
   ret i16 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/unarj.c.ll
+; openexr/optimized/ImfInputFile.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000a(i16 %0, i32 %1) #0 {
 entry:

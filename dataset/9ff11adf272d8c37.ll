@@ -1,19 +1,19 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
-%"class.std::vector.112.2823556" = type { %"struct.std::_Vector_base.113.2823557" }
-%"struct.std::_Vector_base.113.2823557" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" = type { ptr, ptr, ptr }
-%"struct.duckdb::UnifiedVectorFormat.2951771" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2951753", %"struct.duckdb::SelectionVector.2951772" }
-%"struct.duckdb::ValidityMask.2951753" = type { %"struct.duckdb::TemplatedValidityMask.2951755" }
-%"struct.duckdb::TemplatedValidityMask.2951755" = type { ptr, %"class.std::shared_ptr.58.2951756", i64 }
-%"class.std::shared_ptr.58.2951756" = type { %"class.std::__shared_ptr.59.2951757" }
-%"class.std::__shared_ptr.59.2951757" = type { ptr, %"class.std::__shared_count.2951731" }
-%"class.std::__shared_count.2951731" = type { ptr }
-%"struct.duckdb::SelectionVector.2951772" = type { ptr, %"class.std::shared_ptr.64.2951773" }
-%"class.std::shared_ptr.64.2951773" = type { %"class.std::__shared_ptr.65.2951774" }
-%"class.std::__shared_ptr.65.2951774" = type { ptr, %"class.std::__shared_count.2951731" }
-%"struct.llvm::ValueDFS.3317753" = type <{ i32, i32, i32, [4 x i8], ptr, ptr, ptr, i8, [7 x i8] }>
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456" = type { i32, i32, i32 }
+%"class.std::vector.112.2823522" = type { %"struct.std::_Vector_base.113.2823523" }
+%"struct.std::_Vector_base.113.2823523" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" = type { ptr, ptr, ptr }
+%"struct.duckdb::UnifiedVectorFormat.2951737" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2951719", %"struct.duckdb::SelectionVector.2951738" }
+%"struct.duckdb::ValidityMask.2951719" = type { %"struct.duckdb::TemplatedValidityMask.2951721" }
+%"struct.duckdb::TemplatedValidityMask.2951721" = type { ptr, %"class.std::shared_ptr.58.2951722", i64 }
+%"class.std::shared_ptr.58.2951722" = type { %"class.std::__shared_ptr.59.2951723" }
+%"class.std::__shared_ptr.59.2951723" = type { ptr, %"class.std::__shared_count.2951697" }
+%"class.std::__shared_count.2951697" = type { ptr }
+%"struct.duckdb::SelectionVector.2951738" = type { ptr, %"class.std::shared_ptr.64.2951739" }
+%"class.std::shared_ptr.64.2951739" = type { %"class.std::__shared_ptr.65.2951740" }
+%"class.std::__shared_ptr.65.2951740" = type { ptr, %"class.std::__shared_count.2951697" }
+%"struct.llvm::ValueDFS.3317719" = type <{ i32, i32, i32, [4 x i8], ptr, ptr, ptr, i8, [7 x i8] }>
 
 ; 153 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -175,7 +175,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, -12
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -187,7 +187,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 736
   %5 = getelementptr i8, ptr %0, i64 8
-  %6 = getelementptr %"class.std::vector.112.2823556", ptr %5, i64 %4
+  %6 = getelementptr %"class.std::vector.112.2823522", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -201,7 +201,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 104
   %5 = getelementptr i8, ptr %0, i64 8
-  %6 = getelementptr nusw %"struct.duckdb::UnifiedVectorFormat.2951771", ptr %5, i64 %4
+  %6 = getelementptr nusw %"struct.duckdb::UnifiedVectorFormat.2951737", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -213,7 +213,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, -48
   %5 = getelementptr nusw i8, ptr %0, i64 -48
-  %6 = getelementptr nusw %"struct.llvm::ValueDFS.3317753", ptr %5, i64 %4
+  %6 = getelementptr nusw %"struct.llvm::ValueDFS.3317719", ptr %5, i64 %4
   ret ptr %6
 }
 

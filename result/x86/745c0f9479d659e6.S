@@ -52,12 +52,6 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
-	movl	%edx, %eax
-	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
 func00000000000000a8:                   # @func00000000000000a8
 	movl	%edx, %eax
 	subq	%rax, %rsi

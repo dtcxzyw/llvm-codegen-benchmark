@@ -500,7 +500,7 @@ entry:
   ret i1 %3
 }
 
-; 1537 occurrences:
+; 1538 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -1582,6 +1582,7 @@ entry:
 ; php/optimized/url.ll
 ; php/optimized/versioning.ll
 ; php/optimized/xp_socket.ll
+; php/optimized/zend_accelerator_blacklist.ll
 ; php/optimized/zend_ast.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_inference.ll
@@ -2046,7 +2047,7 @@ entry:
   ret i1 %3
 }
 
-; 2069 occurrences:
+; 2070 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -3168,6 +3169,7 @@ entry:
 ; oniguruma/optimized/regenc.ll
 ; opencc/optimized/CommandLine.cpp.ll
 ; opencv/optimized/contours.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/logtagconfigparser.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -4533,7 +4535,7 @@ entry:
   ret i1 %3
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/superAnd.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -4559,7 +4561,6 @@ entry:
 ; linux/optimized/devio.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/tcp_input.ll
-; linux/optimized/trace_output.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; node/optimized/idna.ll

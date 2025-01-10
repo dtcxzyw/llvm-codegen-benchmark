@@ -49,11 +49,6 @@ func000000000000000d:                   # @func000000000000000d
 	andl	$2097144, %eax                  # imm = 0x1FFFF8
 	addq	$-136, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	leaq	8191(%rdi), %rax
-	andq	$-8192, %rax                    # imm = 0xE000
-	decq	%rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	leaq	1(%rdi), %rax
 	andq	$-2, %rax
@@ -64,6 +59,11 @@ func0000000000000002:                   # @func0000000000000002
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
 	incq	%rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leaq	15(%rdi), %rax
+	andq	$-16, %rax
+	addq	$32, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	leaq	-1(%rdi), %rax

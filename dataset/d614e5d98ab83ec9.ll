@@ -1,5 +1,5 @@
 
-; 3362 occurrences:
+; 3363 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -2178,6 +2178,7 @@
 ; opencv/optimized/joint_bilateral_filter.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
 ; opencv/optimized/kernels_imgproc.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/lda.cpp.ll
 ; opencv/optimized/linefit.cpp.ll
@@ -3370,7 +3371,7 @@ entry:
   ret i64 %2
 }
 
-; 4224 occurrences:
+; 4221 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -3610,7 +3611,6 @@ entry:
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/clamd.c.ll
 ; clamav/optimized/clamfi.c.ll
-; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -4299,7 +4299,6 @@ entry:
 ; linux/optimized/generic.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gss_rpc_xdr.ll
-; linux/optimized/gup.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hda_intel.ll
@@ -6467,7 +6466,6 @@ entry:
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_literals.ll
 ; php/optimized/compact_vars.ll
-; php/optimized/dce.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/funcs.ll
 ; php/optimized/hash_sha.ll
@@ -7603,7 +7601,7 @@ entry:
   ret i64 %2
 }
 
-; 3194 occurrences:
+; 3193 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -7682,7 +7680,6 @@ entry:
 ; arrow/optimized/builder_base.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -8472,6 +8469,7 @@ entry:
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
@@ -8968,7 +8966,6 @@ entry:
 ; node/optimized/libnode.node_file.ll
 ; node/optimized/libnode.node_perf.ll
 ; node/optimized/libnode.spawn_sync.ll
-; node/optimized/simdutf.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/canvas.cpp.ll
 ; nori/optimized/checkbox.cpp.ll

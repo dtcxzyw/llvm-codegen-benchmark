@@ -168,7 +168,7 @@ entry:
   ret i64 %3
 }
 
-; 593 occurrences:
+; 594 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/solver.c.ll
@@ -211,6 +211,7 @@ entry:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/bloom.ll
+; git/optimized/line-log.ll
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/pack-objects.ll
 ; git/optimized/read-cache.ll
@@ -1037,7 +1038,7 @@ entry:
   ret i64 %3
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; arrow/optimized/util_avx2.cc.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; hermes/optimized/IdentifierTable.cpp.ll
@@ -1066,7 +1067,6 @@ entry:
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/annotations.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/constMethod.ll

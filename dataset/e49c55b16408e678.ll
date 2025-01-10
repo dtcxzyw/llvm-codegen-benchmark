@@ -85,6 +85,32 @@ entry:
   ret i32 %6
 }
 
+; 3 occurrences:
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
+  %5 = add nsw i32 %4, -32
+  %6 = add nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ansi_a.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = or disjoint i32 %1, %3
+  %5 = add nsw i32 %4, -1
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind

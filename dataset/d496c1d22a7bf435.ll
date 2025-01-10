@@ -501,7 +501,7 @@ entry:
   ret i1 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaCSat3.c.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
@@ -515,7 +515,6 @@ entry:
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/drm_atomic.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll

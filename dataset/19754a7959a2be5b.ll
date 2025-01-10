@@ -1,6 +1,6 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
-%"struct.(anonymous namespace)::ValuePair.3899211" = type { i32, i32 }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
+%"struct.(anonymous namespace)::ValuePair.3899161" = type { i32, i32 }
 
 ; 215 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -240,7 +240,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -273,7 +273,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899211", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899161", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -24,18 +24,18 @@ func0000000000000041:                   # @func0000000000000041
 	movl	$16, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000061:                   # @func0000000000000061
-	movl	$65536, %eax                    # imm = 0x10000
-	shlxl	%esi, %eax, %ecx
-	xorl	%eax, %eax
-	cmpl	$3, %edi
-	cmovel	%ecx, %eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	$255, %ecx
 	shlxl	%esi, %ecx, %eax
 	cmpl	$6, %edi
 	cmovll	%ecx, %eax
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movl	$1, %eax
+	shlxl	%esi, %eax, %ecx
+	xorl	%eax, %eax
+	cmpl	$8192, %edi                     # imm = 0x2000
+	cmovel	%ecx, %eax
 	retq
 func0000000000000021:                   # @func0000000000000021
 	movl	$-1, %eax

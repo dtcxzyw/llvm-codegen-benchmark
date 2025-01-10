@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; folly/optimized/json.cpp.ll
 ; git/optimized/merge-ort.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; ruby/optimized/time.ll

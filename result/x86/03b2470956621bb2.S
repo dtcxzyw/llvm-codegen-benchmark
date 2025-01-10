@@ -40,13 +40,6 @@ func0000000000000028:                   # @func0000000000000028
 	addq	%rsi, %rax
 	leaq	8(%rax,%rdi,8), %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	movslq	%edx, %rax
-	imulq	$100, %rax, %rax
-	addq	%rsi, %rax
-	leaq	(%rdi,%rdi,4), %rcx
-	leaq	8(%rax,%rcx,4), %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movslq	%edx, %rax
 	shlq	$7, %rax

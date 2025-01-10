@@ -281,7 +281,7 @@ entry:
   ret i64 %3
 }
 
-; 415 occurrences:
+; 414 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
@@ -315,7 +315,6 @@ entry:
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/clamd.c.ll
 ; clamav/optimized/clamfi.c.ll
-; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/inotif.c.ll
@@ -706,7 +705,7 @@ entry:
   ret i64 %3
 }
 
-; 131 occurrences:
+; 132 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -747,6 +746,7 @@ entry:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll

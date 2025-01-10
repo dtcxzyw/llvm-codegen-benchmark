@@ -136,8 +136,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; git/optimized/pack-bitmap.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:

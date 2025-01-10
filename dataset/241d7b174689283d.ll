@@ -50,18 +50,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; quickjs/optimized/quickjs-libc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 4294966296
-  %4 = add i64 %1, %3
-  %5 = add i64 %4, %0
-  %6 = trunc i64 %5 to i32
-  ret i32 %6
-}
-
 ; 3 occurrences:
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
 ; pybind11/optimized/test_eigen_tensor.cpp.ll

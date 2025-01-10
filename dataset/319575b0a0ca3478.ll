@@ -307,7 +307,8 @@ entry:
   ret i1 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
+; abc/optimized/cmdApi.c.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; boost/optimized/convex_hull_sph_geo.ll
@@ -434,7 +435,8 @@ entry:
   ret i1 %4
 }
 
-; 44 occurrences:
+; 45 occurrences:
+; abc/optimized/cmdApi.c.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; boost/optimized/difference_pl_a.ll

@@ -1,5 +1,5 @@
 
-; 1389 occurrences:
+; 1392 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -982,6 +982,7 @@
 ; oiio/optimized/strutil.cpp.ll
 ; oniguruma/optimized/regexec.ll
 ; openblas/optimized/dgemmt.c.ll
+; openblas/optimized/dlarre.c.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -1070,8 +1071,10 @@
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
@@ -2152,7 +2155,7 @@ entry:
   ret i1 %3
 }
 
-; 117 occurrences:
+; 118 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absUtil.c.ll
@@ -2244,6 +2247,7 @@ entry:
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
 ; openssl/optimized/openssl-bin-pkey.ll
+; php/optimized/ascmagic.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll

@@ -1,11 +1,11 @@
 
-%struct.Expr_.2748223 = type { ptr, %union.SourceSpan.2748215, i16, %union.anon.61.2748224 }
-%union.SourceSpan.2748215 = type { i64 }
-%union.anon.61.2748224 = type { %struct.ExprAnySwitch.2748225 }
-%struct.ExprAnySwitch.2748225 = type { i8, %union.anon.63.2748226 }
-%union.anon.63.2748226 = type { %struct.anon.64.2748227 }
-%struct.anon.64.2748227 = type { ptr, %union.SourceSpan.2748215, ptr }
-%struct._zend_ssa_var.2789897 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
+%struct.Expr_.2748189 = type { ptr, %union.SourceSpan.2748181, i16, %union.anon.61.2748190 }
+%union.SourceSpan.2748181 = type { i64 }
+%union.anon.61.2748190 = type { %struct.ExprAnySwitch.2748191 }
+%struct.ExprAnySwitch.2748191 = type { i8, %union.anon.63.2748192 }
+%union.anon.63.2748192 = type { %struct.anon.64.2748193 }
+%struct.anon.64.2748193 = type { ptr, %union.SourceSpan.2748181, ptr }
+%struct._zend_ssa_var.2789863 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
 
 ; 10 occurrences:
 ; linux/optimized/indirect.ll
@@ -65,7 +65,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Expr_.2748223, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Expr_.2748189, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, 56
@@ -156,7 +156,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._zend_ssa_var.2789897, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct._zend_ssa_var.2789863, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, 48

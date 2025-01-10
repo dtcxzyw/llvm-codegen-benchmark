@@ -1,7 +1,7 @@
 
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 3 occurrences:
 ; qemu/optimized/hw_usb_dev-hub.c.ll
@@ -83,7 +83,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 12496
-  %5 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -215,7 +215,7 @@ entry:
   %2 = add nsw i32 %1, -5
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 60
-  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }

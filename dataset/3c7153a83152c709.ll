@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.8.2742035" = type { %struct.BEInt.9.2742036 }
-%struct.BEInt.9.2742036 = type { [4 x i8] }
+%"struct.OT::IntType.8.2742001" = type { %struct.BEInt.9.2742002 }
+%struct.BEInt.9.2742002 = type { [4 x i8] }
 
 ; 3 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = or disjoint i64 %1, %3
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.8.2742035"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.8.2742001"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

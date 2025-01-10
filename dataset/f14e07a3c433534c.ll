@@ -1,6 +1,6 @@
 
-%"struct.std::pair.15.2880894" = type { double, i64 }
-%"struct.std::pair.278.3078512" = type { double, ptr }
+%"struct.std::pair.15.2880860" = type { double, i64 }
+%"struct.std::pair.278.3078478" = type { double, ptr }
 
 ; 390 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -454,7 +454,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000821(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.15.2880894", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.std::pair.15.2880860", ptr %0, i64 %2
   %4 = icmp eq ptr %3, %1
   %5 = icmp eq ptr %0, %1
   %6 = select i1 %5, i1 true, i1 %4
@@ -488,7 +488,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000c21(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::pair.278.3078512", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.278.3078478", ptr %0, i64 %2
   %4 = icmp eq ptr %3, %1
   %5 = icmp eq ptr %0, %1
   %6 = select i1 %5, i1 true, i1 %4

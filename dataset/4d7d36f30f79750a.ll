@@ -155,8 +155,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/cancel.ll
+; linux/optimized/net.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; luau/optimized/main.cpp.ll

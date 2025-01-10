@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 108 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -106,6 +106,7 @@
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {

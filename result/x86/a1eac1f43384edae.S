@@ -14,8 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addq	%rsi, %rdi
-	movabsq	$9223372036854775793, %rax      # imm = 0x7FFFFFFFFFFFFFF1
-	cmpq	%rax, %rdi
+	cmpq	$2, %rdi
 	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c

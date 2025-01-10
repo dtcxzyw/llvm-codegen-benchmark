@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; hwloc/optimized/topology-linux.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/tzfmt.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll

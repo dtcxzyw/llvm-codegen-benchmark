@@ -1,4 +1,19 @@
 
+; 5 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; icu/optimized/decNumber.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = freeze i1 %4
+  ret i1 %5
+}
+
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
@@ -11,20 +26,6 @@
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = select i1 %0, i1 %3, i1 false
-  %5 = freeze i1 %4
-  ret i1 %5
-}
-
-; 4 occurrences:
-; boost/optimized/within_pointlike_geometry.ll
-; icu/optimized/decNumber.ll
-; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
-; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   %5 = freeze i1 %4
   ret i1 %5
@@ -92,6 +93,17 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = freeze i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; delta-rs/optimized/5d242f2by7re2olg.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ule i32 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   %5 = freeze i1 %4
   ret i1 %5

@@ -395,20 +395,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/mcast.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001a6(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = add nsw i32 %1, %3
-  %5 = icmp slt i32 %4, 9
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; linux/optimized/ip6_output.ll
 ; Function Attrs: nounwind
@@ -417,6 +403,18 @@ entry:
   %3 = add nuw nsw i32 %2, 40
   %4 = add nuw nsw i32 %1, %3
   %5 = icmp ne i32 %4, 40
+  %6 = select i1 %0, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/mcast.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a6(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 40
+  %4 = add nsw i32 %3, %1
+  %5 = icmp slt i32 %4, 24
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
 }

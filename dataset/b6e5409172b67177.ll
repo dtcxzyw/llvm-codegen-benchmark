@@ -1,7 +1,7 @@
 
-%"struct.facebook::velox::StringView.2796134" = type { i32, [4 x i8], %union.anon.112.2796135 }
-%union.anon.112.2796135 = type { ptr }
-%struct.Gia_Obj_t_.2876179 = type <{ i64, i32 }>
+%"struct.facebook::velox::StringView.2796100" = type { i32, [4 x i8], %union.anon.112.2796101 }
+%union.anon.112.2796101 = type { ptr }
+%struct.Gia_Obj_t_.2876145 = type <{ i64, i32 }>
 
 ; 7 occurrences:
 ; openusd/optimized/stencilBuilder.cpp.ll
@@ -16,7 +16,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.facebook::velox::StringView.2796134", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.facebook::velox::StringView.2796100", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -31,6 +31,23 @@ entry:
   %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 7 occurrences:
+; abc/optimized/giaResub.c.ll
+; abc/optimized/luckyFast16.c.ll
+; abc/optimized/saigSynch.c.ll
+; icu/optimized/messagepattern.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/plurfmt.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -79,23 +96,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876179, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 6 occurrences:
-; abc/optimized/giaResub.c.ll
-; abc/optimized/saigSynch.c.ll
-; icu/optimized/messagepattern.ll
-; icu/optimized/msgfmt.ll
-; icu/optimized/plurfmt.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = tail call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876145, ptr %0, i64 %4
   ret ptr %5
 }
 

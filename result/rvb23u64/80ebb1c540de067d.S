@@ -12,3 +12,9 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	xori	a0, a0, 3
 	ret
+func000000000000000a:                   # @func000000000000000a
+	slti	a0, a0, 0
+	li	a1, 8
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 8
+	ret

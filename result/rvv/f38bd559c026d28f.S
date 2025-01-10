@@ -17,10 +17,16 @@ func0000000000000029:                   # @func0000000000000029
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
-	lui	a0, 1048572
-	addiw	a0, a0, -1
+	li	a0, 65
+	slli	a0, a0, 29
+	vmv.v.x	v10, a0
+	lui	a0, 131072
+	vmerge.vxm	v10, v10, a0, v0
+	lui	a0, 969727
+	slli	a0, a0, 4
+	addi	a0, a0, -1
+	slli	a0, a0, 13
+	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
-	lui	a0, 12
-	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vv	v8, v8, v10
 	ret

@@ -1,5 +1,5 @@
 
-; 114 occurrences:
+; 112 occurrences:
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -21,9 +21,7 @@
 ; crow/optimized/example.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_highlights.c.ll
 ; graphviz/optimized/attr.c.ll
 ; graphviz/optimized/hedges.c.ll
 ; graphviz/optimized/solve.c.ll

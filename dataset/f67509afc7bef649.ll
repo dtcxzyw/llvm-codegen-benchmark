@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 2 occurrences:
 ; qemu/optimized/util_cutils.c.ll
@@ -45,7 +45,7 @@ entry:
 define i1 @func00000000000001c4(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.aiVector3t.2828902, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %class.aiVector3t.2828868, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -24
   %6 = icmp ult ptr %1, %5
   %7 = select i1 %0, i1 %6, i1 false

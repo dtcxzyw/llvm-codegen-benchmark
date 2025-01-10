@@ -267,15 +267,4 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; eastl/optimized/TestRingBuffer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000124(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp uge ptr %2, %1
-  %4 = icmp ult ptr %0, %1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
 attributes #0 = { nounwind }

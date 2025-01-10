@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; hermes/optimized/APFloat.cpp.ll
-; lvgl/optimized/lv_calendar.ll
-; ruby/optimized/bignum.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
-entry:
-  %2 = ashr exact i32 %1, 1
-  %3 = add nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, -1
-  ret i1 %4
-}
-
 ; 19 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; boost/optimized/from_chars.ll
@@ -227,6 +214,18 @@ entry:
   %2 = ashr exact i32 %1, 24
   %3 = add nsw i32 %2, %0
   %4 = icmp ult i32 %3, 25
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr exact i32 %1, 24
+  %3 = add nsw i32 %0, %2
+  %4 = icmp sgt i32 %3, 11
   ret i1 %4
 }
 

@@ -7,15 +7,6 @@ func0000000000000574:                   # @func0000000000000574
 	vadd.vi	v8, v8, 10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000426:                   # @func0000000000000426
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vsll.vi	v11, v11, 8
-	vor.vv	v10, v11, v10
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf2	v12, v10
-	vadd.vi	v8, v8, -3
-	vmslt.vv	v0, v8, v12
-	ret
 func0000000000000506:                   # @func0000000000000506
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsll.vi	v11, v11, 8

@@ -1,5 +1,5 @@
 
-%"class.std::basic_string_view.3470250" = type { i64, ptr }
+%"class.std::basic_string_view.3470216" = type { i64, ptr }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -41,7 +41,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw %"class.std::basic_string_view.3470250", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.std::basic_string_view.3470216", ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 80 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -11,7 +11,6 @@
 ; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/fileio.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-cfilters.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll

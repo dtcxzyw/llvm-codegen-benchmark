@@ -1,19 +1,19 @@
 
-%struct.NSVGgradientStop.2600676 = type { i32, float }
-%struct.pm_lex_mode.2600869 = type { i32, %union.anon.2600870, ptr }
-%union.anon.2600870 = type { %struct.anon.3.2600871 }
-%struct.anon.3.2600871 = type { ptr, i64, i32, i32, ptr, i64 }
-%"struct.asmjit::_abi_1_10::ConstPool::Tree.2602670" = type { %"class.asmjit::_abi_1_10::ZoneTree.2602671", i64, i64 }
-%"class.asmjit::_abi_1_10::ZoneTree.2602671" = type { ptr }
-%"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615560" = type { i32, i32, i32, i32 }
-%struct.tx_pkt_history_st.2634599 = type { %struct.ossl_list_st_tx_history.2634600, ptr, i64, i64 }
-%struct.ossl_list_st_tx_history.2634600 = type { ptr, ptr, i64 }
-%struct.NvmeSglDescriptor.2708933 = type { i64, i32, [3 x i8], i8 }
-%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
-%struct.CurveAnchorPoint.2872013 = type { float, float }
-%struct.desc_struct.3551583 = type { i16, i16, i32 }
+%struct.NSVGgradientStop.2600643 = type { i32, float }
+%struct.pm_lex_mode.2600836 = type { i32, %union.anon.2600837, ptr }
+%union.anon.2600837 = type { %struct.anon.3.2600838 }
+%struct.anon.3.2600838 = type { ptr, i64, i32, i32, ptr, i64 }
+%"struct.asmjit::_abi_1_10::ConstPool::Tree.2602637" = type { %"class.asmjit::_abi_1_10::ZoneTree.2602638", i64, i64 }
+%"class.asmjit::_abi_1_10::ZoneTree.2602638" = type { ptr }
+%"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615527" = type { i32, i32, i32, i32 }
+%struct.tx_pkt_history_st.2634566 = type { %struct.ossl_list_st_tx_history.2634567, ptr, i64, i64 }
+%struct.ossl_list_st_tx_history.2634567 = type { ptr, ptr, i64 }
+%struct.NvmeSglDescriptor.2708899 = type { i64, i32, [3 x i8], i8 }
+%struct.chan.2708985 = type { i32, i32, i32, i32, i32 }
+%struct.CurveAnchorPoint.2871979 = type { float, float }
+%struct.desc_struct.3551549 = type { i16, i16, i32 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/extraUtilCube.c.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
@@ -23,7 +23,6 @@
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; eastl/optimized/TestIntrusiveHash.cpp.ll
 ; eastl/optimized/TestIntrusiveSDList.cpp.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -52,7 +51,7 @@
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr nuw [1 x %struct.NSVGgradientStop.2600676], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [1 x %struct.NSVGgradientStop.2600643], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -63,15 +62,20 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = getelementptr [4 x %struct.pm_lex_mode.2600869], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [4 x %struct.pm_lex_mode.2600836], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   ret ptr %4
 }
 
-; 88 occurrences:
+; 97 occurrences:
+; abc/optimized/bmcMesh.c.ll
+; abc/optimized/bmcMesh2.c.ll
 ; git/optimized/apply.ll
+; gromacs/optimized/partition.cpp.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; icu/optimized/numparse_affixes.ll
+; icu/optimized/unormcmp.ll
+; icu/optimized/ustrcase.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jemalloc/optimized/tcache.ll
@@ -85,9 +89,12 @@ entry:
 ; node/optimized/libnode.node_http_parser.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/array.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/freak.cpp.ll
+; openspiel/optimized/Par.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openusd/optimized/decodemv.c.ll
+; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; redis/optimized/lapi.ll
 ; redis/optimized/t_zset.ll
 ; redis/optimized/tcache.ll
@@ -98,6 +105,7 @@ entry:
 ; spike/optimized/processor.ll
 ; sqlite/optimized/sqlite3.ll
 ; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
 ; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
@@ -161,11 +169,11 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.2602670"], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr [7 x %"struct.asmjit::_abi_1_10::ConstPool::Tree.2602637"], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
-; 326 occurrences:
+; 327 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -188,6 +196,7 @@ entry:
 ; delta-rs/optimized/4rnu0gt98xtph6lk.ll
 ; delta-rs/optimized/55vh0ifmkuogw8lk.ll
 ; delta-rs/optimized/58altwavzp897k60.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; eastl/optimized/TestSegmentedVector.cpp.ll
 ; git/optimized/attr.ll
 ; html5ever-rs/optimized/126f7y4y0nk6dpjh.ll
@@ -496,13 +505,11 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = getelementptr [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615560"], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615527"], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
-; 228 occurrences:
-; abc/optimized/bmcMesh.c.ll
-; abc/optimized/bmcMesh2.c.ll
+; 218 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; c3c/optimized/sema_asm.c.ll
@@ -511,13 +518,10 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
-; gromacs/optimized/partition.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
-; icu/optimized/unormcmp.ll
-; icu/optimized/ustrcase.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
@@ -525,21 +529,16 @@ entry:
 ; libquic/optimized/quic_spdy_session.cc.ll
 ; luau/optimized/isocline.c.ll
 ; opencv/optimized/array.cpp.ll
-; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/freak.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/vframeArray.ll
-; openspiel/optimized/Par.cpp.ll
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
-; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
-; tinyrenderer/optimized/main.cpp.ll
-; tinyrenderer/optimized/our_gl.cpp.ll
 ; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
@@ -733,7 +732,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr nuw [3 x %struct.tx_pkt_history_st.2634599], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [3 x %struct.tx_pkt_history_st.2634566], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -847,7 +846,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr [256 x %struct.NvmeSglDescriptor.2708933], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr [256 x %struct.NvmeSglDescriptor.2708899], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 
@@ -867,7 +866,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr [3 x %struct.chan.2709019], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr [3 x %struct.chan.2708985], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -901,8 +900,7 @@ entry:
   ret ptr %3
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; 2 occurrences:
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; Function Attrs: nounwind
@@ -913,18 +911,19 @@ entry:
   ret ptr %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr [20 x %struct.CurveAnchorPoint.2872013], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [20 x %struct.CurveAnchorPoint.2871979], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -936,7 +935,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr [3 x %struct.desc_struct.3551583], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr [3 x %struct.desc_struct.3551549], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 

@@ -55,17 +55,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; openjdk/optimized/SpanClipRenderer.ll
-; Function Attrs: nounwind
-define i1 @func000000000000098c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sle i32 %1, %2
-  %4 = icmp slt i32 %0, 1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer.ll

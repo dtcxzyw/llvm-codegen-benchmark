@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; draco/optimized/obj_encoder.cc.ll
@@ -37,6 +37,8 @@
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

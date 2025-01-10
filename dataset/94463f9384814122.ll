@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000761(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = or disjoint i64 %0, %3
+  %4 = or disjoint i64 %3, %0
   %5 = shl nuw i64 %1, 48
   %6 = or disjoint i64 %4, %5
   %7 = icmp eq i64 %6, 0

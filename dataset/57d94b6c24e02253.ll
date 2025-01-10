@@ -1,7 +1,7 @@
 
-%struct.xSAT_WatchList_t_.2876397 = type { i32, i32, ptr }
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.xSAT_WatchList_t_.2876363 = type { i32, i32, ptr }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 133 occurrences:
 ; abc/optimized/FxchMan.c.ll
@@ -142,7 +142,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.xSAT_WatchList_t_.2876397, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.xSAT_WatchList_t_.2876363, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -161,7 +161,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.xSAT_WatchList_t_.2876397, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.xSAT_WatchList_t_.2876363, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -186,7 +186,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

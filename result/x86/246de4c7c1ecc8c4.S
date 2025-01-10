@@ -17,3 +17,10 @@ func0000000000000000:                   # @func0000000000000000
 	shll	$5, %eax
 	addq	%rdi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movzwl	%dx, %eax
+	cmpq	%rax, %rsi
+	cmovbq	%rsi, %rax
+	movl	%eax, %eax
+	leaq	(%rdi,%rax,8), %rax
+	retq

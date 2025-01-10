@@ -1,11 +1,10 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"class.std::__cxx11::basic_string.2687076" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2687077", i64, %union.anon.2687078 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2687077" = type { ptr }
-%union.anon.2687078 = type { i64, [8 x i8] }
-%struct.Align16.3897760 = type { i32, [12 x i8] }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"class.std::__cxx11::basic_string.2687042" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2687043", i64, %union.anon.2687044 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2687043" = type { ptr }
+%union.anon.2687044 = type { i64, [8 x i8] }
 
-; 255 occurrences:
+; 257 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/acecPo.c.ll
@@ -51,6 +50,7 @@
 ; freetype/optimized/type1.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/daemon.ll
+; git/optimized/diff-tree.ll
 ; git/optimized/fmt-merge-msg.ll
 ; git/optimized/fsmonitor.ll
 ; git/optimized/json-writer.ll
@@ -186,6 +186,7 @@
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openjdk/optimized/ProcessImpl_md.ll
 ; openjdk/optimized/SDE.ll
+; openjdk/optimized/disassembler.ll
 ; openjdk/optimized/eventFilter.ll
 ; openjdk/optimized/g1CodeRootSet.ll
 ; openjdk/optimized/jvmtiImpl.ll
@@ -318,7 +319,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %3
+  %4 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -690,7 +691,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -8
   %3 = ashr exact i64 %2, 3
-  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2687076", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2687042", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -774,22 +775,19 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
-; git/optimized/diff-tree.ll
-; gromacs/optimized/toppush.cpp.ll
 ; opencv/optimized/darknet_importer.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; openjdk/optimized/disassembler.ll
 ; quantlib/optimized/capletcoterminalswaptioncalibration.ll
 ; quantlib/optimized/svd.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 4294967296
-  %3 = ashr exact i64 %2, 32
+  %2 = add i64 %1, -4294967296
+  %3 = ashr exact i64 %2, 29
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
@@ -859,17 +857,6 @@ entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; eastl/optimized/TestHeap.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -1
-  %3 = ashr i64 %2, 1
-  %4 = getelementptr nusw nuw %struct.Align16.3897760, ptr %0, i64 %3
   ret ptr %4
 }
 

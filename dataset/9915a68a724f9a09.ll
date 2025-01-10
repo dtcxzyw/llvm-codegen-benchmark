@@ -80,10 +80,10 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %0, %1
+  %3 = add nsw i64 %1, %2
+  %4 = sdiv i64 %0, 2
   %5 = add i64 %4, %3
   %6 = shl i64 %5, 1
   ret i64 %6
@@ -101,16 +101,15 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; ceres/optimized/dense_cholesky.cc.ll
-; freetype/optimized/sdf.c.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv i64 %2, 4
-  %4 = add nsw i64 %0, %1
+  %3 = add nsw i64 %1, %2
+  %4 = sdiv i64 %0, 4
   %5 = add nsw i64 %4, %3
   %6 = shl i64 %5, 2
   ret i64 %6
@@ -138,6 +137,18 @@ entry:
   %4 = sdiv i64 %0, -2
   %5 = add i64 %4, %3
   %6 = shl nsw i64 %5, 1
+  ret i64 %6
+}
+
+; 1 occurrences:
+; freetype/optimized/sdf.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv i64 %2, 64
+  %4 = add nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  %6 = shl i64 %5, 32
   ret i64 %6
 }
 

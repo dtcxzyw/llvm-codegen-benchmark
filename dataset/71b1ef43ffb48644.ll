@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; jq/optimized/jv.ll
 ; linux/optimized/namei.ll
@@ -8,6 +8,8 @@
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; node/optimized/libnode.node_file.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/string.ll

@@ -1,5 +1,5 @@
 
-; 462 occurrences:
+; 463 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -208,6 +208,7 @@
 ; linux/optimized/s1g.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/scsi_lib.ll
+; linux/optimized/scsi_logging.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sky2.ll

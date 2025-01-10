@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -20,7 +20,6 @@
 ; icu/optimized/gencnval.ll
 ; icu/optimized/locutil.ll
 ; icu/optimized/messagepattern.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/servlk.ll
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/translit.ll

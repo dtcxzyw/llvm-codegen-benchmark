@@ -16,7 +16,7 @@ define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 65536
   %2 = and i32 %1, 1
-  %3 = or disjoint i32 %2, -6
+  %3 = or disjoint i32 %2, 24
   ret i32 %3
 }
 

@@ -1,6 +1,6 @@
 
-%struct.AC97BusMasterRegs.2708809 = type { i32, i8, i8, i16, i16, i8, i8, i32, %struct.BD.2708810 }
-%struct.BD.2708810 = type { i32, i32 }
+%struct.AC97BusMasterRegs.2708775 = type { i32, i8, i8, i16, i16, i8, i8, i32, %struct.BD.2708776 }
+%struct.BD.2708776 = type { i32, i32 }
 
 ; 2 occurrences:
 ; linux/optimized/hugetlb_cgroup.ll
@@ -12,7 +12,7 @@ entry:
   %3 = lshr i32 %2, 4
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2656
-  %6 = getelementptr [3 x %struct.AC97BusMasterRegs.2708809], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [3 x %struct.AC97BusMasterRegs.2708775], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

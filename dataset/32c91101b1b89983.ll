@@ -23,7 +23,7 @@ entry:
   ret i32 %6
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -46,6 +46,7 @@ entry:
 ; wireshark/optimized/packet-lustre.c.ll
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-pathport.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind

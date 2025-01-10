@@ -1,7 +1,7 @@
 
-%"class.glslang::TConstUnion.2911511" = type <{ %union.anon.0.2911512, i32, [4 x i8] }>
-%union.anon.0.2911512 = type { i64 }
-%struct.t_nbparam.3378887 = type { i8, [4 x float] }
+%"class.glslang::TConstUnion.2911477" = type <{ %union.anon.0.2911478, i32, [4 x i8] }>
+%union.anon.0.2911478 = type { i64 }
+%struct.t_nbparam.3378853 = type { i8, [4 x float] }
 
 ; 3 occurrences:
 ; opencv/optimized/scansegment.cpp.ll
@@ -30,7 +30,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.glslang::TConstUnion.2911511", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.glslang::TConstUnion.2911477", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.t_nbparam.3378887, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.t_nbparam.3378853, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

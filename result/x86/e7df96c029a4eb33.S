@@ -16,15 +16,6 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	testl	%edi, %edi
 	cmovel	%ecx, %eax
 	retq
-func0000000000001481:                   # @func0000000000001481
-	xorl	%eax, %eax
-	xorl	%ecx, %ecx
-	cmpl	%edx, %esi
-	setbe	%al
-	setb	%cl
-	testl	%edi, %edi
-	cmovel	%ecx, %eax
-	retq
 func00000000000028c1:                   # @func00000000000028c1
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx

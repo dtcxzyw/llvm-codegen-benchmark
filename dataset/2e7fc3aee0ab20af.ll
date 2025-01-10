@@ -197,6 +197,18 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/formatting.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000484(i8 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -58
+  %3 = icmp ult i32 %2, -10
+  %4 = icmp ult i8 %0, -26
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i8 %0, i32 %1) #0 {

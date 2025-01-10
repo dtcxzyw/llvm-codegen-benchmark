@@ -23,15 +23,9 @@ func0000000000000008:                   // @func0000000000000008
 	add	w0, w0, w8, lsl #1
 	ret
                                         // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	bic	w8, w1, w1, asr #31
-	add	w0, w0, w8, lsl #24
-	ret
-                                        // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	bic	w8, w1, w1, asr #31
-	add	w0, w0, w8, lsl #16
+	add	w0, w0, w8, lsl #11
 	ret
                                         // -- End function

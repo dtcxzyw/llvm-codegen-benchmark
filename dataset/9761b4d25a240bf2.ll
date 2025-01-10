@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/trans_fd.ll
+; linux/optimized/vc_screen.ll
 ; slurm/optimized/backfill.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {

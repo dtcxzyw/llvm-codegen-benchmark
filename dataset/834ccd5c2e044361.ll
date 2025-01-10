@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; libquic/optimized/time.cc.ll
 ; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; ruby/optimized/unicode.ll
 ; wireshark/optimized/i4btrace.c.ll
 ; zstd/optimized/zstd_compress.c.ll

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; icu/optimized/ubidiwrt.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/sky2.ll
 ; slurm/optimized/assoc_mgr.ll
 ; wireshark/optimized/packet-dnp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {

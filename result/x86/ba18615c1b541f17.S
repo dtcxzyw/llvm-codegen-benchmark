@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	movzwl	%si, %eax
 	cmpl	%eax, %edi
 	cmovbl	%edi, %eax
-	cmpl	$2, %eax
+	cmpl	$17, %eax
 	setae	%al
 	retq
 func0000000000000014:                   # @func0000000000000014

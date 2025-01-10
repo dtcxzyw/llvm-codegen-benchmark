@@ -1,7 +1,7 @@
 
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
 
 ; 14 occurrences:
 ; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
@@ -43,7 +43,7 @@ entry:
   %2 = lshr i32 %1, 20
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -258,7 +258,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.Mig_Obj_t_.2876713, ptr %0, i64 %4, i32 0, i64 3
+  %5 = getelementptr %struct.Mig_Obj_t_.2876679, ptr %0, i64 %4, i32 0, i64 3
   ret ptr %5
 }
 

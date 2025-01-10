@@ -5,7 +5,7 @@ func000000000000000f:                   # @func000000000000000f
 	cmoveq	%rdx, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+func000000000000000a:                   # @func000000000000000a
 	leaq	1(%rdx), %rcx
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -20,14 +20,6 @@ func0000000000000002:                   # @func0000000000000002
 	cmoveq	%rdx, %rax
 	imulq	$920, %rax, %rax                # imm = 0x398
 	addq	%rdi, %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	incq	%rdx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmoveq	%rdx, %rax
-	leaq	(%rax,%rax,2), %rax
-	leaq	(%rdi,%rax,4), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	incq	%rdx

@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.long	16                              # 0x10
+	.long	2048                            # 0x800
 func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

@@ -1,9 +1,9 @@
 
-%struct._Bucket.2791473 = type { %struct._zval_struct.2791459, i64, ptr }
-%struct._zval_struct.2791459 = type { %union._zend_value.2791467, %union.anon.9.2791468, %union.anon.12.2791469 }
-%union._zend_value.2791467 = type { i64 }
-%union.anon.9.2791468 = type { i32 }
-%union.anon.12.2791469 = type { i32 }
+%struct._Bucket.2791439 = type { %struct._zval_struct.2791425, i64, ptr }
+%struct._zval_struct.2791425 = type { %union._zend_value.2791433, %union.anon.9.2791434, %union.anon.12.2791435 }
+%union._zend_value.2791433 = type { i64 }
+%union.anon.9.2791434 = type { i32 }
+%union.anon.12.2791435 = type { i32 }
 
 ; 21 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
@@ -34,18 +34,19 @@ entry:
   %4 = shl nuw nsw i64 %3, 2
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %struct._Bucket.2791473, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %struct._Bucket.2791439, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000f0(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 1
+  %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr i8, ptr %5, i64 %6

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/zip.c.ll
@@ -7,12 +7,10 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Ofill.c.ll
 ; hdf5/optimized/H5S.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; lief/optimized/psa_crypto_storage.c.ll
 ; linux/optimized/sky2.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/multiVis.ll
@@ -29,7 +27,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; redis/optimized/listpack.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll

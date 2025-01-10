@@ -1,8 +1,8 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.FreePageBtreeLeafKey.3653901 = type { i64, i64 }
 
 ; 1 occurrences:
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
@@ -23,7 +23,7 @@ entry:
 define ptr @func000000000000001b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %1, i64 0, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
@@ -55,7 +55,7 @@ entry:
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653901], ptr %1, i64 0, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6

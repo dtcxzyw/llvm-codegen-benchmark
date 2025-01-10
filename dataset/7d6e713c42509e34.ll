@@ -9,7 +9,7 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -42,7 +42,6 @@ entry:
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; raylib/optimized/rtextures.c.ll
-; slurm/optimized/job_mgr.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
@@ -97,7 +96,7 @@ entry:
   ret i1 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -114,7 +113,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

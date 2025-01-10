@@ -21,22 +21,22 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastq	.LCPI2_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [6,6,6,6]
 	retq
 .LCPI3_0:
-	.long	3                               # 0x3
-func000000000000000a:                   # @func000000000000000a
-	vpcmpgtd	.LCPI3_0(%rip){1to4}, %xmm1, %k1
+	.long	31                              # 0x1f
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	.LCPI3_0(%rip){1to4}, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI4_0:
-	.long	60                              # 0x3c
-func0000000000000008:                   # @func0000000000000008
-	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
+	.long	3                               # 0x3
+func000000000000000a:                   # @func000000000000000a
+	vpcmpgtd	.LCPI4_0(%rip){1to4}, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	59                              # 0x3b
-func0000000000000018:                   # @func0000000000000018
+	.long	60                              # 0x3c
+func0000000000000008:                   # @func0000000000000008
 	vpcmpnleud	.LCPI5_0(%rip){1to4}, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm1, %ymm0 {%k1}

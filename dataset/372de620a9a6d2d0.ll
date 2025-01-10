@@ -1,5 +1,5 @@
 
-; 448 occurrences:
+; 450 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -189,6 +189,8 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luajit/optimized/buildvm_asm.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -456,7 +458,7 @@ entry:
   ret i32 %3
 }
 
-; 499 occurrences:
+; 497 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -722,8 +724,6 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luajit/optimized/lj_record.ll

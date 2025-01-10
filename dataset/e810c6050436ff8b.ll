@@ -14,7 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
 ; Function Attrs: nounwind

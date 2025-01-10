@@ -1,6 +1,6 @@
 
-%"struct.re2::Splice.2601793" = type { ptr, ptr, i32, i32 }
-%"struct.std::pair.3449273" = type { i32, i32 }
+%"struct.re2::Splice.2601760" = type { ptr, ptr, i32, i32 }
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 7569 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -7578,7 +7578,7 @@ entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 384307168202282325)
   %4 = icmp ult i64 %1, %2
   %5 = select i1 %4, i64 384307168202282325, i64 %3
-  %6 = getelementptr nusw nuw %"struct.re2::Splice.2601793", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.re2::Splice.2601760", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -7594,7 +7594,7 @@ entry:
   %3 = call i64 @llvm.umin.i64(i64 %1, i64 1152921504606846975)
   %4 = icmp ult i64 %1, %2
   %5 = select i1 %4, i64 1152921504606846975, i64 %3
-  %6 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %5
   ret ptr %6
 }
 

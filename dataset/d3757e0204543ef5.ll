@@ -1,9 +1,9 @@
 
-%"struct.std::pair.256.3322046" = type { %"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321998", %"class.std::__cxx11::basic_string.3321941" }
-%"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321998" = type { %"class.std::__cxx11::basic_string.3321941", i32, i32, i32, %"class.std::__cxx11::basic_string.3321941", %"class.std::__cxx11::basic_string.3321941", %"class.std::__cxx11::basic_string.3321941" }
-%"class.std::__cxx11::basic_string.3321941" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321942", i64, %union.anon.3321943 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321942" = type { ptr }
-%union.anon.3321943 = type { i64, [8 x i8] }
+%"struct.std::pair.256.3322012" = type { %"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321964", %"class.std::__cxx11::basic_string.3321907" }
+%"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321964" = type { %"class.std::__cxx11::basic_string.3321907", i32, i32, i32, %"class.std::__cxx11::basic_string.3321907", %"class.std::__cxx11::basic_string.3321907", %"class.std::__cxx11::basic_string.3321907" }
+%"class.std::__cxx11::basic_string.3321907" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321908", i64, %union.anon.3321909 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321908" = type { ptr }
+%union.anon.3321909 = type { i64, [8 x i8] }
 
 ; 12 occurrences:
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -74,7 +74,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %.neg = xor i64 %2, -1
-  %3 = getelementptr nusw %"struct.std::pair.256.3322046", ptr %0, i64 %.neg
+  %3 = getelementptr nusw %"struct.std::pair.256.3322012", ptr %0, i64 %.neg
   ret ptr %3
 }
 

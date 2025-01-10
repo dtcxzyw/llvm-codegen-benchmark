@@ -40,3 +40,9 @@ func000000000000008a:                   # @func000000000000008a
 	cmpl	%edx, %edi
 	setg	%al
 	retq
+func00000000000000c6:                   # @func00000000000000c6
+	cmpl	%edx, %esi
+	cmovll	%esi, %edx
+	cmpl	%edx, %edi
+	setl	%al
+	retq

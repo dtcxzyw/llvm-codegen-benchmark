@@ -1,7 +1,7 @@
 
-%struct.crawlerstats_t.2897136 = type { [61 x i64], i64, i64, i64, i64, i32, i32, i8 }
-%struct.gmx_domdec_zone_size.3356930 = type { %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881" }
-%"class.gmx::BasicVector.102.3356881" = type { [3 x float] }
+%struct.crawlerstats_t.2897102 = type { [61 x i64], i64, i64, i64, i64, i32, i32, i8 }
+%struct.gmx_domdec_zone_size.3356896 = type { %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847" }
+%"class.gmx::BasicVector.102.3356847" = type { [3 x float] }
 
 ; 10 occurrences:
 ; memcached/optimized/memcached-crawler.ll
@@ -18,7 +18,7 @@
 define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [256 x %struct.crawlerstats_t.2897136], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [256 x %struct.crawlerstats_t.2897102], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw [61 x i64], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -37,13 +37,14 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr [3 x float], ptr %1, i64 0, i64 %3
-  %5 = getelementptr [8 x %struct.gmx_domdec_zone_size.3356930], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [8 x %struct.gmx_domdec_zone_size.3356896], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/partition.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
@@ -53,7 +54,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [8 x %struct.gmx_domdec_zone_size.3356930], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [8 x %struct.gmx_domdec_zone_size.3356896], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw [3 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

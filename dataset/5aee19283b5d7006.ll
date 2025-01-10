@@ -170,8 +170,9 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abseil-cpp/optimized/proto.cc.ll
 ; graphviz/optimized/gvusershape.c.ll

@@ -12,3 +12,10 @@ func0000000000000002:                   # @func0000000000000002
 	cmovll	%edi, %eax
 	cltq
 	retq
+func0000000000000000:                   # @func0000000000000000
+	subl	%esi, %edi
+	cmpl	$11, %edi
+	movl	$11, %eax
+	cmovll	%edi, %eax
+	cltq
+	retq

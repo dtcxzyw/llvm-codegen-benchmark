@@ -204,8 +204,7 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
-; minetest/optimized/treegen.cpp.ll
+; 10 occurrences:
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/gistscan.ll
 ; postgres/optimized/nbtutils.ll
@@ -220,7 +219,7 @@ entry:
 define i32 @func0000000000000003(i16 %0) #0 {
 entry:
   %1 = sext i16 %0 to i32
-  %2 = add nuw nsw i32 %1, 2
+  %2 = add nuw nsw i32 %1, 1
   ret i32 %2
 }
 

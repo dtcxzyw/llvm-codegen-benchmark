@@ -11,10 +11,9 @@ entry:
   ret i16 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libquic/optimized/deflate.c.ll
@@ -24,7 +23,6 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; zlib/optimized/deflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

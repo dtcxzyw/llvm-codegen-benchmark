@@ -1,6 +1,6 @@
 
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
 
 ; 29 occurrences:
 ; git/optimized/http-push.ll
@@ -38,7 +38,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 8
   %4 = ashr exact i64 %2, 1
   %5 = getelementptr nusw i8, ptr %3, i64 %4
-  %6 = getelementptr nusw %"class.mold::LittleEndian.2635853", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.mold::LittleEndian.2635820", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 16
   %4 = ashr exact i64 %2, 28
   %5 = getelementptr i8, ptr %3, i64 %4
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %5, i64 %0
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::OperandSignature.2603616" = type { i32 }
+%"struct.asmjit::_abi_1_10::OperandSignature.2603583" = type { i32 }
 
 ; 49 occurrences:
 ; cpython/optimized/ceval.ll
@@ -278,7 +278,7 @@ entry:
   %2 = lshr i32 %1, 24
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 20
-  %5 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2603616"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2603583"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

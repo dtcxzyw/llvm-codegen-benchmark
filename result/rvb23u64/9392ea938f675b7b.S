@@ -272,11 +272,6 @@ func0000000000000024:                   # @func0000000000000024
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000146:                   # @func0000000000000146
-	sgtz	a2, a2
-	slt	a0, a0, a1
-	and	a0, a0, a2
-	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slt	a1, a1, a2
 	sgtz	a0, a0
@@ -321,6 +316,11 @@ func0000000000000147:                   # @func0000000000000147
 	sgtz	a2, a2
 	slt	a0, a1, a0
 	andn	a0, a2, a0
+	ret
+func0000000000000146:                   # @func0000000000000146
+	sgtz	a2, a2
+	slt	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slt	a1, a1, a2

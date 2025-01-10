@@ -1,18 +1,52 @@
 
-%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
-%"struct.(anonymous namespace)::CFIInstrInserter::MBBCFAInfo.3206798" = type <{ ptr, i64, i64, i32, i32, %"class.llvm::BitVector.3206762", %"class.llvm::BitVector.3206762", i8, [7 x i8] }>
-%"class.llvm::BitVector.3206762" = type <{ %"class.llvm::SmallVector.19.3206763", i32, [4 x i8] }>
-%"class.llvm::SmallVector.19.3206763" = type { %"class.llvm::SmallVectorImpl.20.3206764", %"struct.llvm::SmallVectorStorage.23.3206765" }
-%"class.llvm::SmallVectorImpl.20.3206764" = type { %"class.llvm::SmallVectorTemplateBase.21.3206766" }
-%"class.llvm::SmallVectorTemplateBase.21.3206766" = type { %"class.llvm::SmallVectorTemplateCommon.22.3206767" }
-%"class.llvm::SmallVectorTemplateCommon.22.3206767" = type { %"class.llvm::SmallVectorBase.3206737" }
-%"class.llvm::SmallVectorBase.3206737" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.23.3206765" = type { [48 x i8] }
-%"struct.clang::format::(anonymous namespace)::AnnotatingParser::Context.3236448" = type { i16, i32, i8, i32, i8, i8, i8, ptr, ptr, i8, i8, i8, i8, i8, i8, i8, i8, i8, i32 }
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
+%"struct.(anonymous namespace)::CFIInstrInserter::MBBCFAInfo.3206764" = type <{ ptr, i64, i64, i32, i32, %"class.llvm::BitVector.3206728", %"class.llvm::BitVector.3206728", i8, [7 x i8] }>
+%"class.llvm::BitVector.3206728" = type <{ %"class.llvm::SmallVector.19.3206729", i32, [4 x i8] }>
+%"class.llvm::SmallVector.19.3206729" = type { %"class.llvm::SmallVectorImpl.20.3206730", %"struct.llvm::SmallVectorStorage.23.3206731" }
+%"class.llvm::SmallVectorImpl.20.3206730" = type { %"class.llvm::SmallVectorTemplateBase.21.3206732" }
+%"class.llvm::SmallVectorTemplateBase.21.3206732" = type { %"class.llvm::SmallVectorTemplateCommon.22.3206733" }
+%"class.llvm::SmallVectorTemplateCommon.22.3206733" = type { %"class.llvm::SmallVectorBase.3206703" }
+%"class.llvm::SmallVectorBase.3206703" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.23.3206731" = type { [48 x i8] }
+%"struct.clang::format::(anonymous namespace)::AnnotatingParser::Context.3236414" = type { i16, i32, i8, i32, i8, i8, i8, ptr, ptr, i8, i8, i8, i8, i8, i8, i8, i8, i8, i32 }
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"class.ZXing::Trit.3649621" = type { i8 }
 
-; 32 occurrences:
+; 22 occurrences:
+; linux/optimized/cistpl.ll
+; linux/optimized/extents.ll
+; linux/optimized/fse_decompress.ll
+; linux/optimized/kobject_uevent.ll
+; linux/optimized/lz4_decompress.ll
+; linux/optimized/nf_conntrack_irc.ll
+; linux/optimized/xxhash.ll
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/oracle_compat.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/vm.ll
+; wireshark/optimized/packet-kafka.c.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i16, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
+  %5 = getelementptr i8, ptr %0, i64 -2
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 35 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -38,6 +72,9 @@
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/regcomp.ll
+; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
@@ -63,28 +100,6 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 1
   %5 = getelementptr nusw i8, ptr %0, i64 -1
-  %6 = icmp ugt ptr %5, %4
-  ret i1 %6
-}
-
-; 11 occurrences:
-; linux/optimized/cistpl.ll
-; linux/optimized/extents.ll
-; linux/optimized/fse_decompress.ll
-; linux/optimized/kobject_uevent.ll
-; linux/optimized/lz4_decompress.ll
-; linux/optimized/nf_conntrack_irc.ll
-; linux/optimized/xxhash.ll
-; postgres/optimized/oracle_compat.ll
-; ruby/optimized/vm.ll
-; wireshark/optimized/packet-kafka.c.ll
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i64, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 56
-  %5 = getelementptr i8, ptr %0, i64 -56
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }
@@ -248,16 +263,19 @@ entry:
   ret i1 %6
 }
 
-; 132 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
+; abc/optimized/giaSif.c.ll
 ; abc/optimized/mvcUtils.c.ll
+; abc/optimized/sbdCore.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/pdf.c.ll
+; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/hist.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -276,6 +294,8 @@ entry:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/stream.c.ll
@@ -285,6 +305,7 @@ entry:
 ; just-rs/optimized/4mdvpwvrpdu4jonv.ll
 ; libquic/optimized/dtoa.cc.ll
 ; lief/optimized/ecjpake.c.ll
+; llvm/optimized/StringRef.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; memcached/optimized/memcached-proto_text.ll
@@ -295,6 +316,7 @@ entry:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; oniguruma/optimized/regcomp.ll
+; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/handles.ll
 ; openmpi/optimized/keyval_lex.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -303,7 +325,6 @@ entry:
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/iconv.ll
 ; php/optimized/math.ll
-; php/optimized/php_pcre.ll
 ; php/optimized/sanitizing_filters.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_execute.ll
@@ -358,6 +379,7 @@ entry:
 ; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
 ; yosys/optimized/lz4.ll
+; yyjson/optimized/yyjson.c.ll
 ; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
@@ -996,7 +1018,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000761(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._Point.2744407, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._Point.2744373, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -56
   %5 = getelementptr nusw nuw i8, ptr %0, i64 56
   %6 = icmp eq ptr %5, %4
@@ -1210,7 +1232,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000056c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3188737", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3188703", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp ne ptr %5, %4
@@ -1222,7 +1244,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000005e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::CFIInstrInserter::MBBCFAInfo.3206798", ptr %1, i64 %2, i32 6
+  %3 = getelementptr %"struct.(anonymous namespace)::CFIInstrInserter::MBBCFAInfo.3206764", ptr %1, i64 %2, i32 6
   %4 = getelementptr nusw nuw i8, ptr %0, i64 32
   %5 = icmp eq ptr %4, %3
   ret i1 %5
@@ -1233,7 +1255,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000541(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.clang::format::(anonymous namespace)::AnnotatingParser::Context.3236448", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.clang::format::(anonymous namespace)::AnnotatingParser::Context.3236414", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -112
   %5 = getelementptr nusw i8, ptr %0, i64 -56
   %6 = icmp eq ptr %5, %4
@@ -1276,7 +1298,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %1, i64 %2, i32 1
+  %3 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %1, i64 %2, i32 1
   %4 = getelementptr i8, ptr %0, i64 1
   %5 = icmp eq ptr %4, %3
   ret i1 %5
@@ -1320,6 +1342,18 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -3
   %5 = getelementptr i8, ptr %0, i64 4
+  %6 = icmp uge ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000069(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.ZXing::Trit.3649621", ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -7
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp uge ptr %5, %4
   ret i1 %6
 }

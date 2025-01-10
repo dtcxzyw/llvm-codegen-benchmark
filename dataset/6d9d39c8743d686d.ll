@@ -1,13 +1,13 @@
 
-%struct._HufDec.3395209 = type { i32, i32, ptr }
-%struct.io_hash_bucket.3557155 = type { %struct.spinlock.3557156, %struct.hlist_head.3557157, [48 x i8] }
-%struct.spinlock.3557156 = type { %union.anon.9.3557158 }
-%union.anon.9.3557158 = type { %struct.raw_spinlock.3557159 }
-%struct.raw_spinlock.3557159 = type { %struct.qspinlock.3557160 }
-%struct.qspinlock.3557160 = type { %union.anon.6.3557161 }
-%union.anon.6.3557161 = type { %struct.atomic_t.3557146 }
-%struct.atomic_t.3557146 = type { i32 }
-%struct.hlist_head.3557157 = type { ptr }
+%struct._HufDec.3395175 = type { i32, i32, ptr }
+%struct.io_hash_bucket.3557121 = type { %struct.spinlock.3557122, %struct.hlist_head.3557123, [48 x i8] }
+%struct.spinlock.3557122 = type { %union.anon.9.3557124 }
+%union.anon.9.3557124 = type { %struct.raw_spinlock.3557125 }
+%struct.raw_spinlock.3557125 = type { %struct.qspinlock.3557126 }
+%struct.qspinlock.3557126 = type { %union.anon.6.3557127 }
+%union.anon.6.3557127 = type { %struct.atomic_t.3557112 }
+%struct.atomic_t.3557112 = type { i32 }
+%struct.hlist_head.3557123 = type { ptr }
 
 ; 4 occurrences:
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -20,7 +20,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 16383
-  %6 = getelementptr nuw %struct._HufDec.3395209, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct._HufDec.3395175, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr %struct.io_hash_bucket.3557155, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.io_hash_bucket.3557121, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

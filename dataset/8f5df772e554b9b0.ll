@@ -1,5 +1,5 @@
 
-%struct.Pair.3884931 = type { i64, i64, double }
+%struct.Pair.3884881 = type { i64, i64, double }
 
 ; 2 occurrences:
 ; bullet3/optimized/b3GpuSapBroadphase.ll
@@ -33,7 +33,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
-  %3 = getelementptr nusw %struct.Pair.3884931, ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw %struct.Pair.3884881, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

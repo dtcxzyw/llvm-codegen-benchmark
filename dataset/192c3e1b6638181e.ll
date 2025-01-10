@@ -1217,7 +1217,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/decNumber.ll
@@ -1226,7 +1226,6 @@ entry:
 ; jq/optimized/decNumber.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/intel_cursor.ll
-; linux/optimized/trace_output.ll
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll

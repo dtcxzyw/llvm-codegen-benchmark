@@ -1,10 +1,10 @@
 
-%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
-%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
-%"class.llvm::MachineOperand.3156275" = type { i32, %union.anon.431.3156276, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156277" }
-%union.anon.431.3156276 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3156277" = type { %"class.llvm::ArrayRef.432.3156278" }
-%"class.llvm::ArrayRef.432.3156278" = type { ptr, i64 }
+%"class.hermes::vm::GCHermesValueBase.3085326" = type { %"class.hermes::vm::HermesValue32.3085325" }
+%"class.hermes::vm::HermesValue32.3085325" = type { i32 }
+%"class.llvm::MachineOperand.3156241" = type { i32, %union.anon.431.3156242, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156243" }
+%union.anon.431.3156242 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3156243" = type { %"class.llvm::ArrayRef.432.3156244" }
+%"class.llvm::ArrayRef.432.3156244" = type { ptr, i64 }
 
 ; 7 occurrences:
 ; clamav/optimized/clamd.c.ll
@@ -34,7 +34,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3085360", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3085326", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156275", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156241", ptr %0, i64 %6
   ret ptr %7
 }
 

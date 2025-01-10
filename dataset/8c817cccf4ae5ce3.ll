@@ -14,7 +14,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 1 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {

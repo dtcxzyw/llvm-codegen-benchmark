@@ -1,5 +1,5 @@
 
-; 1375 occurrences:
+; 1374 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -1230,7 +1230,6 @@
 ; redis/optimized/networking.ll
 ; redis/optimized/print.ll
 ; redis/optimized/rax.ll
-; redis/optimized/rdb.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/sha1.ll
 ; redis/optimized/t_zset.ll

@@ -24,6 +24,12 @@ func0000000000000017:                   # @func0000000000000017
 	subq	%rdi, %rsi
 	leaq	(,%rsi,4), %rax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movq	%rsi, %rax
+	sarq	$32, %rax
+	subq	%rdi, %rax
+	shlq	$9, %rax
+	retq
 func000000000000001d:                   # @func000000000000001d
 	sarq	$3, %rsi
 	subq	%rdi, %rsi
@@ -51,12 +57,6 @@ func0000000000000014:                   # @func0000000000000014
 	shlq	$3, %rdi
 	subq	%rdi, %rax
 	andq	$-8, %rax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	shlq	$32, %rdi
-	subq	%rdi, %rsi
-	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
-	andq	%rsi, %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	movq	%rsi, %rax

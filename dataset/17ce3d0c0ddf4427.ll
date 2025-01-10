@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -75,7 +75,6 @@
 ; luau/optimized/Simplify.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
 ; luau/optimized/Subtyping.test.cpp.ll
-; luau/optimized/TableShape.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll

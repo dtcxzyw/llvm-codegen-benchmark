@@ -1,5 +1,5 @@
 
-; 445 occurrences:
+; 443 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -409,9 +409,7 @@
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/btsnoop.c.ll
 ; wireshark/optimized/mpeg.c.ll
@@ -579,7 +577,7 @@ entry:
   ret i64 %5
 }
 
-; 373 occurrences:
+; 375 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/key_map.cc.ll
@@ -937,6 +935,8 @@ entry:
 ; spike/optimized/triggers.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
 ; yalantinglibs/optimized/conformance.struct_pb.cc.ll

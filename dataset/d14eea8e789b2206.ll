@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.3683502" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683530", i64, %union.anon.32.3683531 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683530" = type { ptr }
-%union.anon.32.3683531 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3683452" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683480", i64, %union.anon.32.3683481 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3683480" = type { ptr }
+%union.anon.32.3683481 = type { i64, [8 x i8] }
 
 ; 37 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
@@ -86,7 +86,7 @@ define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8191
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3683502", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3683452", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 118 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ivyHaig.c.ll
@@ -43,7 +43,6 @@
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdmi.ll
-; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/poll.ll
@@ -101,6 +100,8 @@
 ; openjdk/optimized/net_util.ll
 ; openmpi/optimized/mca_base_framework.ll
 ; openmpi/optimized/pmix_mca_base_framework.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/zend_inference.ll

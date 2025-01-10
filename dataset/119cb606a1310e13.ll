@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -14,7 +14,6 @@
 ; cpython/optimized/fileio.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/xmltok.ll
-; freetype/optimized/ftstroke.c.ll
 ; git/optimized/describe.ll
 ; git/optimized/gc.ll
 ; git/optimized/transport.ll
@@ -60,7 +59,6 @@
 ; opencv/optimized/persistence.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/methodData.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -92,7 +90,6 @@
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll

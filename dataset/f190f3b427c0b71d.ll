@@ -1,5 +1,5 @@
 
-; 1712 occurrences:
+; 1711 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -980,7 +980,6 @@
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlarrf.c.ll
-; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dsyevx.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll

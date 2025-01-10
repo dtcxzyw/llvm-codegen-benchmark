@@ -1,6 +1,6 @@
 
-%struct.BLOCK.2634343 = type { [128 x i64] }
-%struct.block_.3088346 = type { [128 x i64] }
+%struct.BLOCK.2634310 = type { [128 x i64] }
+%struct.block_.3088312 = type { [128 x i64] }
 
 ; 13 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
@@ -22,7 +22,7 @@ entry:
   %3 = mul i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.BLOCK.2634343, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.BLOCK.2634310, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = mul i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.block_.3088346, ptr %0, i64 %5
+  %6 = getelementptr %struct.block_.3088312, ptr %0, i64 %5
   ret ptr %6
 }
 

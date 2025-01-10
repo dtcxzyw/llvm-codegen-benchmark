@@ -1,5 +1,5 @@
 
-; 738 occurrences:
+; 737 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -69,7 +69,6 @@
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll

@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	notl	%edi
+	xorl	$3, %edi
 	shlxl	%esi, %edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

@@ -1,6 +1,6 @@
 
-%struct.Codebook.3100913 = type { i32, i32, ptr, float, float, i8, i8, i8, i8, i32, ptr, ptr, [1024 x i16], ptr, ptr, i32 }
-%struct.stbi__huffman.3100960 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
+%struct.Codebook.3100879 = type { i32, i32, ptr, float, float, i8, i8, i8, i8, i32, ptr, ptr, [1024 x i16], ptr, ptr, i32 }
+%struct.stbi__huffman.3100926 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
 
 ; 4 occurrences:
 ; hyperscan/optimized/flood_compile.cpp.ll
@@ -11,7 +11,7 @@
 define ptr @func000000000000003f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nuw %struct.Codebook.3100913, ptr %1, i64 %3, i32 12, i64 %0
+  %4 = getelementptr nuw %struct.Codebook.3100879, ptr %1, i64 %3, i32 12, i64 %0
   ret ptr %4
 }
 
@@ -26,7 +26,7 @@ entry:
 define ptr @func000000000000007f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nuw %struct.stbi__huffman.3100960, ptr %1, i64 %3, i32 2, i64 %0
+  %4 = getelementptr nuw %struct.stbi__huffman.3100926, ptr %1, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 

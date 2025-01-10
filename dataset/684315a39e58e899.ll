@@ -2483,7 +2483,7 @@ entry:
   ret i32 %2
 }
 
-; 1077 occurrences:
+; 1076 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -2783,7 +2783,6 @@ entry:
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/ldt.ll

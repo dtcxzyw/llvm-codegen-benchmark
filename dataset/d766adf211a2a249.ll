@@ -1,5 +1,5 @@
 
-; 674 occurrences:
+; 675 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -185,6 +185,7 @@
 ; icu/optimized/uchar.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/unistr.ll
+; icu/optimized/uresdata.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll

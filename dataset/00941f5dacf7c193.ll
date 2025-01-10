@@ -1,9 +1,9 @@
 
-%"struct.G1PLABAllocator::PLABData.2739290" = type <{ ptr, i64, i64, i64, i64, i64, i32, [4 x i8] }>
-%struct.dt_liquify_path_data_t.2873560 = type { %struct.dt_liquify_path_header_t.2873561, %struct.dt_liquify_warp_t.2873562, %struct.dt_liquify_node_t.2873563 }
-%struct.dt_liquify_path_header_t.2873561 = type { i32, i32, i32, i32, i8, i8, i8 }
-%struct.dt_liquify_warp_t.2873562 = type { { float, float }, { float, float }, { float, float }, float, float, i32, i32 }
-%struct.dt_liquify_node_t.2873563 = type { { float, float }, { float, float } }
+%"struct.G1PLABAllocator::PLABData.2739256" = type <{ ptr, i64, i64, i64, i64, i64, i32, [4 x i8] }>
+%struct.dt_liquify_path_data_t.2873526 = type { %struct.dt_liquify_path_header_t.2873527, %struct.dt_liquify_warp_t.2873528, %struct.dt_liquify_node_t.2873529 }
+%struct.dt_liquify_path_header_t.2873527 = type { i32, i32, i32, i32, i8, i8, i8 }
+%struct.dt_liquify_warp_t.2873528 = type { { float, float }, { float, float }, { float, float }, float, float, i32, i32 }
+%struct.dt_liquify_node_t.2873529 = type { { float, float }, { float, float } }
 
 ; 74 occurrences:
 ; abc/optimized/abcRec3.c.ll
@@ -85,7 +85,7 @@ define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [2 x %"struct.G1PLABAllocator::PLABData.2739290"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [2 x %"struct.G1PLABAllocator::PLABData.2739256"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -96,7 +96,7 @@ define ptr @func0000000000000000(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 18
-  %4 = getelementptr [100 x %struct.dt_liquify_path_data_t.2873560], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [100 x %struct.dt_liquify_path_data_t.2873526], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_op.2792342 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct._zend_ssa_op.2792308 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 7 occurrences:
 ; postgres/optimized/gram.ll
@@ -765,7 +765,7 @@ entry:
 define ptr @func000000000000005f(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
-  %3 = getelementptr %struct._zend_ssa_op.2792342, ptr %0, i64 %2
+  %3 = getelementptr %struct._zend_ssa_op.2792308, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 40
   ret ptr %4
 }

@@ -1951,7 +1951,7 @@ entry:
   ret i64 %3
 }
 
-; 124 occurrences:
+; 125 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -2063,6 +2063,7 @@ entry:
 ; postgres/optimized/dt_common.ll
 ; protobuf/optimized/retention.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; quantlib/optimized/seasonality.ll
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; rocksdb/optimized/merge_helper.cc.ll

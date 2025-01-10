@@ -1,8 +1,8 @@
 
-%"class.llvm::Use.3140259" = type { ptr, ptr, ptr, ptr }
-%"class.clang::TemplateArgument.3261764" = type { %union.anon.991.3261766 }
-%union.anon.991.3261766 = type { %"struct.clang::TemplateArgument::DA.3261767" }
-%"struct.clang::TemplateArgument::DA.3261767" = type { i32, ptr, ptr }
+%"class.llvm::Use.3140225" = type { ptr, ptr, ptr, ptr }
+%"class.clang::TemplateArgument.3261730" = type { %union.anon.991.3261732 }
+%union.anon.991.3261732 = type { %"struct.clang::TemplateArgument::DA.3261733" }
+%"struct.clang::TemplateArgument::DA.3261733" = type { i32, ptr, ptr }
 
 ; 3 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -67,7 +67,7 @@ define ptr @func000000000000000a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
   %4 = getelementptr nusw i8, ptr %3, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3140259", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3140225", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -90,7 +90,7 @@ define ptr @func000000000000000c(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
-  %5 = getelementptr %"class.clang::TemplateArgument.3261764", ptr %4, i64 %0
+  %5 = getelementptr %"class.clang::TemplateArgument.3261730", ptr %4, i64 %0
   ret ptr %5
 }
 

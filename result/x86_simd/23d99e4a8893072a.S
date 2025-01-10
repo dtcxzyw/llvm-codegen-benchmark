@@ -62,3 +62,14 @@ func0000000000000155:                   # @func0000000000000155
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI5_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI6_0:
+	.quad	56                              # 0x38
+.LCPI6_1:
+	.quad	135                             # 0x87
+func0000000000000030:                   # @func0000000000000030
+	vpmullq	.LCPI6_0(%rip){1to4}, %ymm2, %ymm2
+	vpsllq	$3, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpaddq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0
+	retq

@@ -27,6 +27,20 @@ entry:
   ret i64 %7
 }
 
+; 2 occurrences:
+; libquic/optimized/poly1305_vec.c.ll
+; qemu/optimized/util_host-utils.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000128(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = add nuw i128 %1, %2
+  %4 = lshr i128 %3, 64
+  %5 = trunc nuw i128 %4 to i64
+  %6 = trunc nuw i128 %0 to i64
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
 ; 4 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; libquic/optimized/p256-64.c.ll
@@ -36,19 +50,6 @@ entry:
 define i64 @func0000000000000028(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add i128 %1, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc nuw i128 %4 to i64
-  %6 = trunc nuw i128 %0 to i64
-  %7 = add i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; libquic/optimized/poly1305_vec.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000128(i128 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = add nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   %6 = trunc nuw i128 %0 to i64

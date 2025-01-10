@@ -23,10 +23,10 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%edi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	andl	$16, %edx
-	leal	(,%rdx,8), %ecx
-	xorl	%eax, %eax
+	andl	$8, %edx
+	shll	$4, %edx
 	testb	$1, %sil
-	cmovnel	%ecx, %eax
+	movl	$128, %eax
+	cmovnel	%edx, %eax
 	orl	%edi, %eax
 	retq

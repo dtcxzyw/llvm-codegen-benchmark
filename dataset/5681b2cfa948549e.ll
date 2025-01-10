@@ -57,8 +57,10 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:

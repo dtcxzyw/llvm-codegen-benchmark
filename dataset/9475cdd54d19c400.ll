@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/numeric.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000186(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ne i64 %1, 0
-  %3 = icmp slt i64 %0, 0
-  %4 = and i1 %3, %2
-  %5 = select i1 %4, i64 3, i64 1
-  ret i64 %5
-}
-
 ; 5 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
@@ -44,18 +32,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; libquic/optimized/time.cc.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000ca(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
-  %3 = icmp sgt i64 %0, -1
-  %4 = and i1 %3, %2
-  %5 = select i1 %4, i64 -9223372036854775807, i64 9223372036854775807
-  ret i64 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/memory.ll
 ; linux/optimized/set_memory.ll
@@ -67,18 +43,6 @@ entry:
   %3 = icmp ne i64 %0, 0
   %4 = and i1 %3, %2
   %5 = select i1 %4, i64 8, i64 0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000c1(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
-  %3 = icmp eq i64 %0, 0
-  %4 = and i1 %3, %2
-  %5 = select i1 %4, i64 9223372036854775807, i64 -9223372036854775808
   ret i64 %5
 }
 

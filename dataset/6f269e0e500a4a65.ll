@@ -1,19 +1,19 @@
 
-%struct.pm_constant_t.2600929 = type { ptr, i64 }
-%"struct.mitsuba::Struct::Field.2606038" = type { %"class.std::__1::basic_string.2606005", i32, i64, i64, i32, double, %"class.std::__1::vector.43.2606039" }
-%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
-%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
-%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
-%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
-%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
-%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
-%struct.anon.12.2606011 = type { i64 }
-%"class.std::__1::vector.43.2606039" = type { ptr, ptr, %"class.std::__1::__compressed_pair.44.2606040" }
-%"class.std::__1::__compressed_pair.44.2606040" = type { %"struct.std::__1::__compressed_pair_elem.45.2606041" }
-%"struct.std::__1::__compressed_pair_elem.45.2606041" = type { ptr }
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
+%struct.pm_constant_t.2600896 = type { ptr, i64 }
+%"struct.mitsuba::Struct::Field.2606005" = type { %"class.std::__1::basic_string.2605972", i32, i64, i64, i32, double, %"class.std::__1::vector.43.2606006" }
+%"class.std::__1::basic_string.2605972" = type { %"class.std::__1::__compressed_pair.10.2605973" }
+%"class.std::__1::__compressed_pair.10.2605973" = type { %"struct.std::__1::__compressed_pair_elem.11.2605974" }
+%"struct.std::__1::__compressed_pair_elem.11.2605974" = type { %"struct.std::__1::basic_string<char>::__rep.2605975" }
+%"struct.std::__1::basic_string<char>::__rep.2605975" = type { %union.anon.2605976 }
+%union.anon.2605976 = type { %"struct.std::__1::basic_string<char>::__long.2605977" }
+%"struct.std::__1::basic_string<char>::__long.2605977" = type { %struct.anon.12.2605978, i64, ptr }
+%struct.anon.12.2605978 = type { i64 }
+%"class.std::__1::vector.43.2606006" = type { ptr, ptr, %"class.std::__1::__compressed_pair.44.2606007" }
+%"class.std::__1::__compressed_pair.44.2606007" = type { %"struct.std::__1::__compressed_pair_elem.45.2606008" }
+%"struct.std::__1::__compressed_pair_elem.45.2606008" = type { ptr }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
 
 ; 84 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
@@ -105,7 +105,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741823
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.pm_constant_t.2600929, ptr %0, i64 %3
+  %4 = getelementptr %struct.pm_constant_t.2600896, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -451,7 +451,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.mitsuba::Struct::Field.2606038", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mitsuba::Struct::Field.2606005", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 312
   ret ptr %5
 }
@@ -511,7 +511,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -591,7 +591,7 @@ define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.Mig_Obj_t_.2876713, ptr %0, i64 %3, i32 0, i64 3
+  %4 = getelementptr %struct.Mig_Obj_t_.2876679, ptr %0, i64 %3, i32 0, i64 3
   ret ptr %4
 }
 

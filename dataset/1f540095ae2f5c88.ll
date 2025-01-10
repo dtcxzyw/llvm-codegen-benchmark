@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3146725" = type { i32 }
+%"class.clang::SourceLocation.3146691" = type { i32 }
 
 ; 20 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -73,7 +73,7 @@ entry:
 define i1 @func0000000000000781(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 20
-  %4 = getelementptr nusw nuw %"class.clang::SourceLocation.3146725", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"class.clang::SourceLocation.3146691", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = icmp eq i64 %6, -1

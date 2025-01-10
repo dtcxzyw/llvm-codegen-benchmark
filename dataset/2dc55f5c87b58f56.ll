@@ -48,7 +48,7 @@ entry:
   ret ptr %6
 }
 
-; 141 occurrences:
+; 142 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cuddExact.c.ll
@@ -186,6 +186,7 @@ entry:
 ; spike/optimized/fdt_rw.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/GenericWriter.cpp.ll
+; wolfssl/optimized/api.c.ll
 ; yosys/optimized/booth.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/shregmap.ll
@@ -200,7 +201,7 @@ entry:
   ret ptr %6
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaSweep.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
@@ -217,6 +218,7 @@ entry:
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
+; icu/optimized/swapimpl.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgbbrd.c.ll
@@ -297,6 +299,7 @@ entry:
 ; double_conversion/optimized/bignum.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
+; git/optimized/xutils.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
@@ -323,7 +326,6 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/number_modifiers.ll
 ; icu/optimized/propsvec.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnvsel.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/pem_lib.c.ll
@@ -459,7 +461,7 @@ entry:
   ret ptr %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; icu/optimized/ucptrie.ll
 ; openblas/optimized/dsptrf.c.ll
@@ -470,6 +472,7 @@ entry:
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/methodComparator.ll
+; raylib/optimized/rcore.c.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
@@ -524,8 +527,9 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/kitPla.c.ll
+; abc/optimized/luckyFast16.c.ll
 ; bullet3/optimized/btMultiBody.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; openblas/optimized/dlatms.c.ll
@@ -533,6 +537,7 @@ entry:
 ; opencv/optimized/region_layer.cpp.ll
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; openjdk/optimized/bootstrapInfo.ll
+; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -543,7 +548,7 @@ entry:
   ret ptr %6
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -567,6 +572,7 @@ entry:
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openspiel/optimized/crazy_eights.cc.ll
@@ -581,19 +587,6 @@ entry:
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
-; abc/optimized/luckyFast16.c.ll
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %2, 1
-  %4 = add i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -613,19 +606,6 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; git/optimized/xutils.ll
-; openusd/optimized/patchMap.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 2
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 1 occurrences:
 ; libquic/optimized/url_util.cc.ll
 ; Function Attrs: nounwind
@@ -635,18 +615,6 @@ entry:
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = add nsw i32 %1, %3
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -679,42 +647,6 @@ entry:
   %4 = add nuw nsw i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; wolfssl/optimized/api.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 7
-  %4 = add i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; opencv/optimized/essential_solver.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 40
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw double, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = add i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

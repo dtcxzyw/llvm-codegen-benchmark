@@ -65,10 +65,11 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/md-bitmap.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind

@@ -1,12 +1,12 @@
 
-%"struct.std::pair.678.2613355" = type { ptr, ptr }
-%struct.GC_ms_entry.2705283 = type { ptr, %union.word_ptr_ao_u.2705284 }
-%union.word_ptr_ao_u.2705284 = type { i64 }
-%"struct.std::pair.315.3285983" = type { ptr, %struct.Info.3285972 }
-%struct.Info.3285972 = type { %"class.clang::SourceLocation.3285934", i32, i64, i64 }
-%"class.clang::SourceLocation.3285934" = type { i32 }
-%struct.dx_entry.3548008 = type { i32, i32 }
-%struct.RoleNameItem.3652826 = type { i32, ptr }
+%"struct.std::pair.678.2613322" = type { ptr, ptr }
+%struct.GC_ms_entry.2705249 = type { ptr, %union.word_ptr_ao_u.2705250 }
+%union.word_ptr_ao_u.2705250 = type { i64 }
+%"struct.std::pair.315.3285949" = type { ptr, %struct.Info.3285938 }
+%struct.Info.3285938 = type { %"class.clang::SourceLocation.3285900", i32, i64, i64 }
+%"class.clang::SourceLocation.3285900" = type { i32 }
+%struct.dx_entry.3547974 = type { i32, i32 }
+%struct.RoleNameItem.3652792 = type { i32, ptr }
 
 ; 116 occurrences:
 ; boost/optimized/convex_hull_multi.ll
@@ -130,7 +130,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %"struct.std::pair.678.2613355", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.678.2613322", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -154,7 +154,7 @@ define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %struct.GC_ms_entry.2705283, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.GC_ms_entry.2705249, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -166,7 +166,7 @@ define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %"struct.std::pair.315.3285983", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.315.3285949", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -182,7 +182,7 @@ define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %struct.dx_entry.3548008, ptr %0, i64 %3
+  %4 = getelementptr %struct.dx_entry.3547974, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -194,7 +194,7 @@ define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %struct.RoleNameItem.3652826, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.RoleNameItem.3652792, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

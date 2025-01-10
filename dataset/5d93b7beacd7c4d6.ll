@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/crc32.c.ll
 ; freetype/optimized/cff.c.ll
@@ -17,6 +17,8 @@
 ; linux/optimized/siphash.ll
 ; linux/optimized/svcauth_unix.ll
 ; linux/optimized/tcp_metrics.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; postgres/optimized/hashfunc.ll
 ; postgres/optimized/resowner.ll
 ; quantlib/optimized/burley2020sobolrsg.ll

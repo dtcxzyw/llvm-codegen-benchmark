@@ -1,5 +1,5 @@
 
-%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
+%"struct.boost::container::dtl::pair.2685178" = type { i32, i32 }
 
 ; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
@@ -19,7 +19,7 @@ entry:
   %3 = shl i64 %2, 3
   %4 = add i64 %3, 8
   %5 = and i64 %4, -32
-  %6 = getelementptr %"struct.boost::container::dtl::pair.2685211", ptr %0, i64 %1
+  %6 = getelementptr %"struct.boost::container::dtl::pair.2685178", ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }

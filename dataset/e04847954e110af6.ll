@@ -887,7 +887,7 @@ entry:
   ret i32 %3
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigCuts.c.ll
@@ -908,7 +908,6 @@ entry:
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/sbdSat.c.ll
 ; cpython/optimized/obmalloc.ll
-; grpc/optimized/posix_endpoint.cc.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/ucbuf.ll

@@ -43,7 +43,7 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; brotli/optimized/transform.c.ll
 ; bullet3/optimized/b3Solver.ll
@@ -62,7 +62,6 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_draw_sw_img.ll
 ; minetest/optimized/ieee_float.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_CommonUtils.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
@@ -94,15 +93,12 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; icu/optimized/collationdata.ll
 ; libquic/optimized/error_correction.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll

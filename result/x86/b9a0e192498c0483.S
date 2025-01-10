@@ -23,8 +23,9 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$11, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	leal	(%rdi,%rsi), %eax
-	shll	$24, %eax
+	movzwl	%si, %eax
+	addl	%edi, %eax
+	shll	$2, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	movzwl	%si, %eax

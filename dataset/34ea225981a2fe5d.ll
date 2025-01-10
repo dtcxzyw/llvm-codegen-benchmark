@@ -198,4 +198,28 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; opencv/optimized/resize.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = add nsw i64 %0, %4
+  %6 = icmp ugt i64 %5, 1032
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003aa(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = add nsw i64 %4, %0
+  %6 = icmp sgt i64 %5, 65536
+  ret i1 %6
+}
+
 attributes #0 = { nounwind }

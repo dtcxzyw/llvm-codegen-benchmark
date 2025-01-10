@@ -4,6 +4,12 @@ func000000000000003f:                   # @func000000000000003f
 	addq	%rdi, %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
+func0000000000000070:                   # @func0000000000000070
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	addq	%rdi, %rcx
+	leaq	(%rcx,%rax,4), %rax
+	retq
 func00000000000000f0:                   # @func00000000000000f0
 	movl	%edx, %eax
 	movl	%esi, %ecx

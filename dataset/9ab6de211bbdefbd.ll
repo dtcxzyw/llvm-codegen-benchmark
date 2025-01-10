@@ -50,11 +50,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifMap.c.ll
-; lightgbm/optimized/dataset.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; Function Attrs: nounwind

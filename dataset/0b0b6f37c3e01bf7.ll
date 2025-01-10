@@ -1,6 +1,6 @@
 
-%"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165705" = type { ptr, ptr, [216 x i8] }
-%"struct.(anonymous namespace)::FrameObject.3276313" = type { i8, i32, i32, i8, i8, i32 }
+%"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165671" = type { ptr, ptr, [216 x i8] }
+%"struct.(anonymous namespace)::FrameObject.3276279" = type { i8, i32, i32, i8, i8, i32 }
 
 ; 12 occurrences:
 ; linux/optimized/acpi_video.ll
@@ -182,7 +182,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165705", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165671", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -197,7 +197,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::FrameObject.3276313", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::FrameObject.3276279", ptr %0, i64 %5
   ret ptr %6
 }
 

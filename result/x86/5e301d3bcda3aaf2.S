@@ -4,13 +4,13 @@ func0000000000000030:                   # @func0000000000000030
 	movl	%esi, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func000000000000000d:                   # @func000000000000000d
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
 	subq	%rcx, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
+func0000000000000005:                   # @func0000000000000005
 	movl	%edx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx

@@ -97,17 +97,6 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; lvgl/optimized/lv_tlsf.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000025(i64 %0) #0 {
-entry:
-  %1 = trunc nuw i64 %0 to i32
-  %2 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %1, i1 true)
-  %3 = sub nsw i32 26, %2
-  ret i32 %3
-}
-
 ; 11 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll

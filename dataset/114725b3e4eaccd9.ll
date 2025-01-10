@@ -1,11 +1,11 @@
 
-%"class.std::__1::basic_string.2609965" = type { %"class.std::__1::__compressed_pair.5.2609966" }
-%"class.std::__1::__compressed_pair.5.2609966" = type { %"struct.std::__1::__compressed_pair_elem.6.2609967" }
-%"struct.std::__1::__compressed_pair_elem.6.2609967" = type { %"struct.std::__1::basic_string<char>::__rep.2609968" }
-%"struct.std::__1::basic_string<char>::__rep.2609968" = type { %union.anon.2609969 }
-%union.anon.2609969 = type { %"struct.std::__1::basic_string<char>::__long.2609970" }
-%"struct.std::__1::basic_string<char>::__long.2609970" = type { %struct.anon.7.2609971, i64, ptr }
-%struct.anon.7.2609971 = type { i64 }
+%"class.std::__1::basic_string.2609932" = type { %"class.std::__1::__compressed_pair.5.2609933" }
+%"class.std::__1::__compressed_pair.5.2609933" = type { %"struct.std::__1::__compressed_pair_elem.6.2609934" }
+%"struct.std::__1::__compressed_pair_elem.6.2609934" = type { %"struct.std::__1::basic_string<char>::__rep.2609935" }
+%"struct.std::__1::basic_string<char>::__rep.2609935" = type { %union.anon.2609936 }
+%union.anon.2609936 = type { %"struct.std::__1::basic_string<char>::__long.2609937" }
+%"struct.std::__1::basic_string<char>::__long.2609937" = type { %struct.anon.7.2609938, i64, ptr }
+%struct.anon.7.2609938 = type { i64 }
 
 ; 127 occurrences:
 ; abc/optimized/wlcMem.c.ll
@@ -173,7 +173,7 @@ define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 72
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"class.std::__1::basic_string.2609965", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.std::__1::basic_string.2609932", ptr %4, i64 %0
   ret ptr %5
 }
 

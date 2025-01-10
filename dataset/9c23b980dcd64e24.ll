@@ -1,5 +1,5 @@
 
-; 1236 occurrences:
+; 1237 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -96,6 +96,7 @@
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/typeobject.ll
+; cpython/optimized/unicodeobject.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/enum_stream_substitution.cpp.ll
@@ -1244,7 +1245,7 @@ entry:
   ret i64 %2
 }
 
-; 4333 occurrences:
+; 4347 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigMffc.c.ll
@@ -3403,6 +3404,7 @@ entry:
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; meilisearch-rs/optimized/58fku9bygcs6t7yq.ll
 ; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; memcached/optimized/memcached-hash.ll
@@ -3782,6 +3784,7 @@ entry:
 ; ockam-rs/optimized/1kf3nciefeyq4tfp.ll
 ; ockam-rs/optimized/1l1yexp2yu73yat8.ll
 ; ockam-rs/optimized/1p7irsir7pcyegbj.ll
+; ockam-rs/optimized/1pv5gnbequqkl6bi.ll
 ; ockam-rs/optimized/1rhd9bblljt0sgxb.ll
 ; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
 ; ockam-rs/optimized/1u6h88ugr8rwmiaw.ll
@@ -3817,6 +3820,7 @@ entry:
 ; ockam-rs/optimized/2qz3huiqqut486jt.ll
 ; ockam-rs/optimized/2rihuzhmont6zqqo.ll
 ; ockam-rs/optimized/2tmak98bqpx7zrgd.ll
+; ockam-rs/optimized/2tygv1xclgfmwb14.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/2v5jo34gglxi7dx1.ll
 ; ockam-rs/optimized/2wmaz4egimtz3sac.ll
@@ -3843,6 +3847,7 @@ entry:
 ; ockam-rs/optimized/3mikojidw926fus2.ll
 ; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
 ; ockam-rs/optimized/3mx0spe4b10ptbw0.ll
+; ockam-rs/optimized/3mx5f5nie5moube.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/3pjzu1cfy8ymmm8m.ll
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
@@ -3864,8 +3869,10 @@ entry:
 ; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
 ; ockam-rs/optimized/4j4a1v5i1sqbggrm.ll
 ; ockam-rs/optimized/4kvhnp2ywtthbq6d.ll
+; ockam-rs/optimized/4mxoiw4m4s1rw29y.ll
 ; ockam-rs/optimized/4o6a2p97oy1nlemw.ll
 ; ockam-rs/optimized/4op0lm10vgcgt7cp.ll
+; ockam-rs/optimized/4r08vyqwrxt6fmz0.ll
 ; ockam-rs/optimized/4t3y03rrak2rtjym.ll
 ; ockam-rs/optimized/4u1bjhkuz3nkthw0.ll
 ; ockam-rs/optimized/52hk8y4wcm3nv0fi.ll
@@ -4553,6 +4560,7 @@ entry:
 ; rust-analyzer-rs/optimized/3ojrwagwutxscby0.ll
 ; rust-analyzer-rs/optimized/43lb6ni48vyk0mse.ll
 ; rust-analyzer-rs/optimized/43nczfbfdd1c6gc3.ll
+; rust-analyzer-rs/optimized/43ziu3sspt3bixjk.ll
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; rust-analyzer-rs/optimized/45r7ra5b0dw60rxb.ll
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
@@ -4770,6 +4778,7 @@ entry:
 ; wasmtime-rs/optimized/1kan0u7yfu7u6hal.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/1swth1h1xb2uamky.ll
 ; wasmtime-rs/optimized/1vk9ndqtrqpdgown.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
@@ -4798,14 +4807,19 @@ entry:
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
+; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
+; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
+; wasmtime-rs/optimized/4xi420g2tcwi30s2.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
 ; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
+; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/about_dialog.cpp.ll
 ; wireshark/optimized/additional_toolbar.cpp.ll
@@ -5367,6 +5381,7 @@ entry:
 ; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
 ; zed-rs/optimized/9lkxb3wr7oqpe4y4naurquros.ll
 ; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
+; zed-rs/optimized/9lyc7v6rglrrimjbrgra5wxbm.ll
 ; zed-rs/optimized/9oud1h62u03nz2mcyi55yd787.ll
 ; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
 ; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
@@ -5586,7 +5601,7 @@ entry:
   ret i64 %2
 }
 
-; 2055 occurrences:
+; 2056 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcExtract.c.ll
@@ -5689,6 +5704,7 @@ entry:
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/bzlib.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/filefn.cpp.ll
 ; clamav/optimized/js-norm.c.ll
 ; clamav/optimized/pe.c.ll

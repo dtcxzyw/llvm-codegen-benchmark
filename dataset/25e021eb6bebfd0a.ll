@@ -1,9 +1,9 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549", i32, i32 }
-%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549" = type { ptr, [40 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515", i32, i32 }
+%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515" = type { ptr, [40 x i8] }
 
-; 405 occurrences:
+; 404 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -115,7 +115,6 @@
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/apply.ll
-; git/optimized/writer.ll
 ; gromacs/optimized/colvardeps.cpp.ll
 ; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/hbond.cpp.ll
@@ -418,7 +417,7 @@ entry:
   ret i64 %4
 }
 
-; 239 occurrences:
+; 240 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bdcDec.c.ll
@@ -585,6 +584,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_realpath.c.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/bytecodeAssembler.ll
 ; openjdk/optimized/cardTable.ll
@@ -667,7 +667,7 @@ entry:
   ret i64 %4
 }
 
-; 612 occurrences:
+; 613 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -883,6 +883,7 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/fast-import.ll
 ; git/optimized/receive-pack.ll
+; git/optimized/writer.ll
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -1289,7 +1290,7 @@ entry:
   ret i64 %4
 }
 
-; 514 occurrences:
+; 515 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -1317,6 +1318,7 @@ entry:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -1813,7 +1815,7 @@ entry:
   ret i64 %4
 }
 
-; 85 occurrences:
+; 84 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; bdwgc/optimized/gc.c.ll
@@ -1823,7 +1825,6 @@ entry:
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
@@ -1984,7 +1985,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -56
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4

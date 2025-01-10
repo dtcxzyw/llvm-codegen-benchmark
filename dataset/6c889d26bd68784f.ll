@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
 
 ; 113 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -180,8 +180,8 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %0, i64 %1
-  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %0, i64 %1
+  %7 = getelementptr %struct.lua_TValue.2923823, ptr %6, i64 %5
   ret ptr %7
 }
 

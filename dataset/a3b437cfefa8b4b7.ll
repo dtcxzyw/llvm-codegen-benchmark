@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; cpython/optimized/codecs.ll
@@ -16,6 +16,7 @@
 ; opencc/optimized/bit-vector.cc.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openspiel/optimized/TransTableL.cpp.ll
+; qemu/optimized/block_vvfat.c.ll
 ; z3/optimized/dl_mk_unbound_compressor.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
@@ -25,7 +26,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub i32 %2, %0
-  %4 = shl i32 %3, 1
+  %4 = shl i32 %3, 4
   ret i32 %4
 }
 

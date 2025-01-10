@@ -23,8 +23,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 18
-	bseti	a0, zero, 51
+	vsll.vi	v12, v12, 8
+	bseti	a0, zero, 62
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12

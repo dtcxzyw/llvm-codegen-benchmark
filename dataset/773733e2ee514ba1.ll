@@ -1,5 +1,5 @@
 
-; 312 occurrences:
+; 313 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -26,6 +26,7 @@
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/correlationhistory.cpp.ll
 ; gromacs/optimized/gmx_clustsize.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; ipopt/optimized/IpAugRestoSystemSolver.ll
 ; ipopt/optimized/IpBacktrackingLineSearch.ll

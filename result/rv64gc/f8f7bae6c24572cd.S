@@ -6,8 +6,8 @@ func000000000000001b:                   # @func000000000000001b
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func0000000000000000:                   # @func0000000000000000
-	addi	a2, a2, -1
+func0000000000000003:                   # @func0000000000000003
+	addi	a2, a2, 2
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	bltu	a1, a2, .LBB1_2
@@ -15,8 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
-	addi	a2, a2, 8
+func0000000000000000:                   # @func0000000000000000
+	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	bltu	a1, a2, .LBB2_2

@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/trie.cc.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; node/optimized/libnode.string_decoder.ll
@@ -11,6 +12,7 @@
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/migration_ram.c.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:

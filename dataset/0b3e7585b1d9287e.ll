@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; libwebp/optimized/bit_writer_utils.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/uncore_nhmex.ll
 ; nix/optimized/util.ll

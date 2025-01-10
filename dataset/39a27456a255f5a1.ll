@@ -1,8 +1,8 @@
 
-%struct.ge_cached.2634118 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
-%struct.NCQTransferState.2709092 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709108, %struct.BlockAcctCookie.2709106, i32, i64, i8, i8, i8, i8, i8 }
-%struct.QEMUSGList.2709108 = type { ptr, i32, i32, i64, ptr, ptr }
-%struct.BlockAcctCookie.2709106 = type { i64, i64, i32 }
+%struct.ge_cached.2634085 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
+%struct.NCQTransferState.2709058 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709074, %struct.BlockAcctCookie.2709072, i32, i64, i8, i8, i8, i8, i8 }
+%struct.QEMUSGList.2709074 = type { ptr, i32, i32, i64, ptr, ptr }
+%struct.BlockAcctCookie.2709072 = type { i64, i64, i32 }
 
 ; 37 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
@@ -47,7 +47,7 @@ define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw [8 x %struct.ge_cached.2634118], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x %struct.ge_cached.2634085], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -63,7 +63,7 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [32 x %struct.NCQTransferState.2709092], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [32 x %struct.NCQTransferState.2709058], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,8 +1,7 @@
 
-; 404 occurrences:
+; 403 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/bdcSpfd.c.ll
-; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/extraBddThresh.c.ll

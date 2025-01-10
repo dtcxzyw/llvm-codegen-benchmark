@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3139219" = type { ptr, ptr, ptr, ptr }
-%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
+%"class.llvm::Use.3139185" = type { ptr, ptr, ptr, ptr }
+%struct.dx_map_entry.3547978 = type { i32, i16, i16 }
 
 ; 2 occurrences:
 ; linux/optimized/nf_conntrack_sip.ll
@@ -126,7 +126,7 @@ define i1 @func00000000000002c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3139219", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3139185", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -163,7 +163,7 @@ define i1 @func0000000000000284(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.dx_map_entry.3548012, ptr %1, i64 %4
+  %5 = getelementptr %struct.dx_map_entry.3547978, ptr %1, i64 %4
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }

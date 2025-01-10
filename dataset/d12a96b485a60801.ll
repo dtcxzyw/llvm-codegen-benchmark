@@ -1,8 +1,8 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.2710927" = type { %union.anon.172.2710928 }
-%union.anon.172.2710928 = type { ptr }
-%"class.openvdb::v11_0::tree::NodeUnion.190.2711048" = type { %union.anon.191.2711049 }
-%union.anon.191.2711049 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.2710893" = type { %union.anon.172.2710894 }
+%union.anon.172.2710894 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.190.2711014" = type { %union.anon.191.2711015 }
+%union.anon.191.2711015 = type { ptr }
 
 ; 25 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -37,7 +37,7 @@ entry:
   %4 = and i32 %3, 31
   %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2710927"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2710893"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -65,7 +65,7 @@ entry:
   %4 = and i32 %3, 15
   %5 = or i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711048"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711014"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

@@ -1,6 +1,8 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; node/optimized/libnode.crypto_context.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll

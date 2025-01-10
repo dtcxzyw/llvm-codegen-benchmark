@@ -1,6 +1,6 @@
 
-%struct.AHCICmdHdr.2709110 = type { i16, i16, i32, i64, [4 x i32] }
-%struct._zend_ssa_op.2794603 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.AHCICmdHdr.2709076 = type { i16, i16, i32, i64, [4 x i32] }
+%struct._zend_ssa_op.2794569 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 5 occurrences:
 ; linux/optimized/event_inode.ll
@@ -11,7 +11,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.AHCICmdHdr.2709110, ptr %0, i64 %1
+  %2 = getelementptr %struct.AHCICmdHdr.2709076, ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
@@ -35,7 +35,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000107(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct._zend_ssa_op.2794603, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct._zend_ssa_op.2794569, ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4

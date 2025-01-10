@@ -27,7 +27,3 @@ func000000000000000c:                   # @func000000000000000c
 	shlxq	%rdx, %rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	shlxq	%rdx, %rsi, %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq

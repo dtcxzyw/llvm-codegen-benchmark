@@ -1,5 +1,5 @@
 
-; 175 occurrences:
+; 176 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_base.cc.ll
@@ -124,6 +124,7 @@
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; openjdk/optimized/SctpChannelImpl.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_io_coll.ll
@@ -184,7 +185,7 @@ entry:
   ret i64 %4
 }
 
-; 220 occurrences:
+; 222 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb3Image.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -237,6 +238,7 @@ entry:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -294,6 +296,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/cluster.ll
 ; redis/optimized/linenoise.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/sprintf.ll
 ; sentencepiece/optimized/strutil.cc.ll

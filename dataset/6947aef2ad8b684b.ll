@@ -183,7 +183,7 @@ entry:
   ret i32 %4
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -231,7 +231,6 @@ entry:
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; openjdk/optimized/constMethod.ll
-; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/nativeLookup.ll
 ; openjdk/optimized/runtime.ll
@@ -802,7 +801,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
 ; icu/optimized/coleitr.ll
@@ -819,6 +818,7 @@ entry:
 ; icu/optimized/uchar.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
+; linux/optimized/printk.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; openspiel/optimized/havannah.cc.ll
 ; wireshark/optimized/packet-ansi_637.c.ll

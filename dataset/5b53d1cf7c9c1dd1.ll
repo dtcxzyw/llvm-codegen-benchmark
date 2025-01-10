@@ -1,5 +1,5 @@
 
-; 177 occurrences:
+; 180 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; boost/optimized/algorithm.ll
@@ -123,11 +123,13 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; libquic/optimized/string16.cc.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/compaction.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
@@ -139,6 +141,7 @@
 ; opencv/optimized/nms.cpp.ll
 ; opencv/optimized/parallel_impl.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/dataSourcePrim.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll

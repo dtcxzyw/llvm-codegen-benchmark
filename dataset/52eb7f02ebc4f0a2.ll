@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002f(i32 %0, i1 %1, i32 %2) #0 {

@@ -24,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -58,7 +58,9 @@ entry:
 ; node/optimized/libnode.preferredaddress.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/util.ll

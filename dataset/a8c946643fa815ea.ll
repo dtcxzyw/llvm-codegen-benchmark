@@ -32,7 +32,8 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/hub.ll
 ; wireshark/optimized/packet-rf4ce-profile.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i8 %1, i32 %2) #0 {

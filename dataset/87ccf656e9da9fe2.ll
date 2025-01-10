@@ -142,7 +142,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
-  %3 = select i1 %.not, i32 12, i32 18
+  %3 = select i1 %.not, i32 18, i32 15
   %4 = select i1 %0, i32 %1, i32 %3
   ret i32 %4
 }

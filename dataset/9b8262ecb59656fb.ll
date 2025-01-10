@@ -1,6 +1,7 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll

@@ -1,10 +1,3 @@
-func0000000000000030:                   # @func0000000000000030
-	leaq	7(%rdx), %rax
-	andq	$-8, %rax
-	shlq	$4, %rsi
-	addq	%rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000050:                   # @func0000000000000050
 	leaq	7(%rdx), %rcx
 	andq	$-8, %rcx

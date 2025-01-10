@@ -1,7 +1,7 @@
 
-%"struct.nix::Attr.3692213" = type { %"class.nix::Symbol.3692214", %"class.nix::PosIdx.3692208", ptr }
-%"class.nix::Symbol.3692214" = type { i32 }
-%"class.nix::PosIdx.3692208" = type { i32 }
+%"struct.nix::Attr.3692163" = type { %"class.nix::Symbol.3692164", %"class.nix::PosIdx.3692158", ptr }
+%"class.nix::Symbol.3692164" = type { i32 }
+%"class.nix::PosIdx.3692158" = type { i32 }
 
 ; 1 occurrences:
 ; nix/optimized/attr-set.ll
@@ -11,7 +11,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp uge i32 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.nix::Attr.3692213", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.nix::Attr.3692163", ptr %0, i64 %5
   ret ptr %6
 }
 

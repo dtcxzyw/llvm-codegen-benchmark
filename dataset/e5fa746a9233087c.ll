@@ -1,5 +1,5 @@
 
-%struct.lz_match.2747992 = type { i16, i16 }
+%struct.lz_match.2747958 = type { i16, i16 }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuationFreezeThaw.ll
@@ -22,7 +22,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -4
-  %5 = getelementptr nusw %struct.lz_match.2747992, ptr %4, i64 %3
+  %5 = getelementptr nusw %struct.lz_match.2747958, ptr %4, i64 %3
   ret ptr %5
 }
 

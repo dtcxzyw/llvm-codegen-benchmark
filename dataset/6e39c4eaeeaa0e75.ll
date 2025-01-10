@@ -1,5 +1,6 @@
 
-; 165 occurrences:
+; 178 occurrences:
+; abc/optimized/cmd.c.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
@@ -98,7 +99,10 @@
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; brotli/optimized/metablock.c.ll
+; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/sfnt.c.ll
+; git/optimized/line-log.ll
+; git/optimized/sequencer.ll
 ; gromacs/optimized/angle.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
@@ -118,6 +122,7 @@
 ; hermes/optimized/hermes.cpp.ll
 ; hermes/optimized/rust-api.cpp.ll
 ; hermes/optimized/synth.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; libquic/optimized/wnaf.c.ll
 ; linux/optimized/buffer.ll
@@ -128,9 +133,12 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MCSubtargetInfo.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
@@ -139,6 +147,7 @@
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
+; nuttx/optimized/mempool_multiple.c.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/camera_calibration.cpp.ll
 ; openusd/optimized/adapterManager.cpp.ll
@@ -153,13 +162,17 @@
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; php/optimized/ir_emit.ll
+; postgres/optimized/varlena.ll
 ; postgres/optimized/worker.ll
 ; qemu/optimized/block_blkdebug.c.ll
 ; qemu/optimized/block_nvme.c.ll
+; qemu/optimized/linux-user_main.c.ll
 ; redis/optimized/server.ll
 ; rocksdb/optimized/persistent_stats_history.cc.ll
 ; sentencepiece/optimized/builder.cc.ll
+; slurm/optimized/gres_filter.ll
 ; velox/optimized/ArrayShuffle.cpp.ll
+; velox/optimized/CoverageUtil.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/MapConcat.cpp.ll
 ; yosys/optimized/calc.ll
@@ -176,6 +189,23 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umax.i64(i64, i64) #1
 
+; 8 occurrences:
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; linux/optimized/device_pm.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/UninitializedValues.cpp.ll
+; qemu/optimized/block_cloop.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call i64 @llvm.umax.i64(i64 %0, i64 %1)
+  %3 = trunc nuw i64 %2 to i32
+  ret i32 %3
+}
+
 ; 2 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
@@ -184,22 +214,6 @@ define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %1)
   %3 = trunc i64 %2 to i32
-  ret i32 %3
-}
-
-; 7 occurrences:
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; linux/optimized/device_pm.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/UninitializedValues.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = tail call i64 @llvm.umax.i64(i64 %0, i64 %1)
-  %3 = trunc nuw i64 %2 to i32
   ret i32 %3
 }
 

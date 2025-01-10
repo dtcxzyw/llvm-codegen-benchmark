@@ -18,22 +18,6 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; abc/optimized/dauDsd.c.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
-; minetest/optimized/servermap.cpp.ll
-; openjdk/optimized/metaspaceArena.ll
-; openspiel/optimized/chess_board.cc.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
-entry:
-  %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %0, -1
-  %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
 ; 15 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -56,6 +40,21 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = add nuw nsw i32 %0, 1
   %4 = icmp slt i32 %3, %2
+  ret i1 %4
+}
+
+; 5 occurrences:
+; abc/optimized/dauDsd.c.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; openjdk/optimized/metaspaceArena.ll
+; openspiel/optimized/chess_board.cc.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i32
+  %3 = add nsw i32 %0, -1
+  %4 = icmp sgt i32 %3, %2
   ret i1 %4
 }
 

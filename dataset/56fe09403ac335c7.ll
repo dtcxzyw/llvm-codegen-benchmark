@@ -1,9 +1,8 @@
 
-%struct.rb_builtin_function.2601343 = type { ptr, i32, i32, ptr }
-%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
-%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
-%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
+%struct.rb_builtin_function.2601310 = type { ptr, i32, i32, ptr }
+%"struct.folly::Subprocess::Pipe.2685236" = type <{ %"class.folly::File.2685228", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685228" = type <{ i32, i8, [3 x i8] }>
+%struct.CommandTagBehavior.3652146 = type { ptr, i8, i8, i8, i8 }
 
 ; 15 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -25,7 +24,7 @@
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr %struct.rb_builtin_function.2601343, ptr %0, i64 %2
+  %3 = getelementptr %struct.rb_builtin_function.2601310, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -105,15 +104,16 @@ entry:
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685236", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -138,8 +138,9 @@ entry:
   ret i64 %4
 }
 
-; 233 occurrences:
-; arrow/optimized/coo_converter.cc.ll
+; 237 occurrences:
+; abc/optimized/giaIso.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -157,6 +158,8 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; hyperscan/optimized/Parser.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -228,6 +231,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; luajit/optimized/minilua.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -373,26 +377,10 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  ret i64 %4
-}
-
-; 6 occurrences:
-; abc/optimized/giaIso.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/control_verbs.cpp.ll
-; luajit/optimized/minilua.ll
-; tev/optimized/ImageViewer.cpp.ll
-; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2876078, ptr %0, i64 %2
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -403,7 +391,18 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 5
-  %3 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %2
+  %3 = getelementptr %struct.CommandTagBehavior.3652146, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; arrow/optimized/coo_converter.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 32
+  %3 = getelementptr nusw nuw i64, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

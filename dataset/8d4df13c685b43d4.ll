@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -89,6 +89,7 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/linenoise.ll
 ; redis/optimized/replication.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

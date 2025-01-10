@@ -40,12 +40,6 @@ func0000000000000052:                   # @func0000000000000052
 	cmpl	%ecx, %edi
 	setae	%al
 	retq
-func000000000000006a:                   # @func000000000000006a
-	movzbl	%sil, %ecx
-	xorl	%eax, %eax
-	cmpl	%ecx, %edi
-	setbe	%al
-	retq
 func0000000000000016:                   # @func0000000000000016
 	movzbl	%sil, %ecx
 	xorl	%eax, %eax

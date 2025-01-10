@@ -1,6 +1,7 @@
 
-%struct.timeval.2707021 = type { i64, i64 }
-%struct.ImGuiDebugAllocEntry.3454253 = type { i32, i16, i16 }
+%struct.timeval.2706987 = type { i64, i64 }
+%struct.RangeCheck.2741450 = type { ptr, i32 }
+%struct.ImGuiDebugAllocEntry.3454219 = type { i32, i16, i16 }
 
 ; 2 occurrences:
 ; linux/optimized/libata-eh.ll
@@ -11,21 +12,22 @@ entry:
   %2 = add i32 %1, 9
   %3 = srem i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [10 x %struct.timeval.2707021], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [10 x %struct.timeval.2706987], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
+; openjdk/optimized/ifnode.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, 1
-  %3 = srem i32 %2, 6
+  %2 = add nsw i32 %1, -2
+  %3 = srem i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [6 x %struct.ImGuiDebugAllocEntry.3454253], ptr %0, i64 0, i64 %4, i32 2
+  %5 = getelementptr [3 x %struct.RangeCheck.2741450], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -37,7 +39,7 @@ entry:
   %2 = add i32 %1, 6
   %3 = srem i32 %2, 6
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [6 x %struct.ImGuiDebugAllocEntry.3454253], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [6 x %struct.ImGuiDebugAllocEntry.3454219], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

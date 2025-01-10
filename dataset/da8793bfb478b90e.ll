@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000007c(ptr %0, i32 %1) #0 {

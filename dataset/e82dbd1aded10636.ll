@@ -1,5 +1,5 @@
 
-; 584 occurrences:
+; 585 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -79,6 +79,7 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libquic/optimized/quic_utils.cc.ll
 ; libquic/optimized/sys_info_linux.cc.ll
+; libquic/optimized/t1_lib.c.ll
 ; libuv/optimized/linux.c.ll
 ; libwebp/optimized/get_disto.c.ll
 ; linux/optimized/cpu_entry_area.ll

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -29,7 +29,6 @@
 ; luajit/optimized/lj_cconv_dyn.ll
 ; nanobind/optimized/nb_func.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
-; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/threads.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll

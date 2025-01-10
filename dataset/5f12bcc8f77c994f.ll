@@ -33,12 +33,14 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
@@ -48,9 +50,8 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/absGlaOld.c.ll
-; abc/optimized/bacBlast.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaIso3.c.ll
 ; linux/optimized/cpuset.ll

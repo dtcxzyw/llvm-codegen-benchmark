@@ -1,13 +1,5 @@
 
-; 31 occurrences:
-; linux/optimized/check.ll
-; linux/optimized/i915_gem_shmem.ll
-; linux/optimized/i915_vma.ll
-; linux/optimized/intel_migrate.ll
-; linux/optimized/mm_init.ll
-; linux/optimized/page.ll
-; linux/optimized/shmem.ll
-; linux/optimized/truncate.ll
+; 21 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/class.cpp.ll
@@ -15,8 +7,6 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; rocksdb/optimized/concurrent_arena.cc.ll
-; rocksdb/optimized/memtable.cc.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll
@@ -32,9 +22,29 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0) #0 {
+define i64 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 1
+  %2 = or i64 %1, 7
+  %3 = add nuw i64 %2, 1
+  ret i64 %3
+}
+
+; 10 occurrences:
+; linux/optimized/check.ll
+; linux/optimized/i915_gem_shmem.ll
+; linux/optimized/i915_vma.ll
+; linux/optimized/intel_migrate.ll
+; linux/optimized/mm_init.ll
+; linux/optimized/page.ll
+; linux/optimized/shmem.ll
+; linux/optimized/truncate.ll
+; rocksdb/optimized/concurrent_arena.cc.ll
+; rocksdb/optimized/memtable.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, -1
   %2 = or i64 %1, 7
   %3 = add i64 %2, 1
   ret i64 %3

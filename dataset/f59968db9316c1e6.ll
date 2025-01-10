@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -14,7 +14,6 @@
 ; opencv/optimized/datastructs.cpp.ll
 ; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/block_vhdx-log.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/time.ll

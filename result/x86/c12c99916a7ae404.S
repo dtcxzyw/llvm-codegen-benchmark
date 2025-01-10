@@ -38,8 +38,3 @@ func0000000000000060:                   # @func0000000000000060
 	movl	%esi, %eax
 	leaq	-4(%rdi,%rax), %rax
 	retq
-func00000000000000fe:                   # @func00000000000000fe
-	subq	%rdx, %rdi
-	movl	%esi, %eax
-	leaq	-8(%rdi,%rax), %rax
-	retq

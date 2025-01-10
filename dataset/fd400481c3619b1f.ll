@@ -1,5 +1,5 @@
 
-%struct.KEYWORD.2739307 = type { ptr, i32 }
+%struct.KEYWORD.2739273 = type { ptr, i32 }
 
 ; 15 occurrences:
 ; arrow/optimized/light_array.cc.ll
@@ -22,7 +22,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.KEYWORD.2739307, ptr %0, i64 %3
+  %4 = getelementptr %struct.KEYWORD.2739273, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

@@ -111,19 +111,6 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-dns.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 8
-  %5 = add i32 %1, %4
-  %6 = shl nuw nsw i32 %0, 8
-  %7 = add i32 %6, %5
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000001cc(i32 %0, i32 %1, i8 %2) #0 {

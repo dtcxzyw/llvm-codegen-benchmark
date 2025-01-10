@@ -1,11 +1,11 @@
 
-%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
-%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
-%"class.hermes::vm::SymbolID.3075365" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
-%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
-%union.anon.174.3075389 = type { i32 }
-%"class.llvm::Use.3227940" = type { ptr, ptr, ptr, ptr }
+%"struct.std::pair.177.3075357" = type { %"class.hermes::vm::GCSymbolID.3075358", %"struct.hermes::vm::NamedPropertyDescriptor.3075353" }
+%"class.hermes::vm::GCSymbolID.3075358" = type { %"class.hermes::vm::SymbolID.3075331" }
+%"class.hermes::vm::SymbolID.3075331" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075353" = type { %"struct.hermes::vm::PropertyDescriptor.3075354" }
+%"struct.hermes::vm::PropertyDescriptor.3075354" = type { %union.anon.174.3075355, i32 }
+%union.anon.174.3075355 = type { i32 }
+%"class.llvm::Use.3227906" = type { ptr, ptr, ptr, ptr }
 
 ; 15 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -56,7 +56,7 @@ entry:
 define i64 @func0000000000000079(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 28
-  %4 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"struct.std::pair.177.3075357", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr exact i64 %6, 2
@@ -70,7 +70,7 @@ entry:
 define i64 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.llvm::Use.3227940", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3227906", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr exact i64 %6, 5

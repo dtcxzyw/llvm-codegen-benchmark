@@ -1,5 +1,5 @@
 
-; 865 occurrences:
+; 866 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -653,6 +653,7 @@
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_input.c.ll
 ; quantlib/optimized/sobolrsg.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -874,7 +875,7 @@ entry:
   ret i1 %4
 }
 
-; 644 occurrences:
+; 645 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -1345,6 +1346,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/seg_common.c.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
 ; pbrt-v4/optimized/scene.cpp.ll

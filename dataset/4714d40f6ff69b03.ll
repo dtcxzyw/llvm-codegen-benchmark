@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; icu/optimized/locid.ll
@@ -19,6 +19,7 @@
 ; redis/optimized/listpack.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/ruby.ll
+; ruby/optimized/sprintf.ll
 ; wireshark/optimized/packet-http.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, ptr %1, i64 %2) #0 {

@@ -1,6 +1,6 @@
 
-%struct.dtNode.3108381 = type { [3 x float], float, float, i32, i32 }
-%union.TValue.3680757 = type { i64 }
+%struct.dtNode.3108347 = type { [3 x float], float, float, i32, i32 }
+%union.TValue.3680707 = type { i64 }
 
 ; 2 occurrences:
 ; ozz-animation/optimized/animation.cc.ll
@@ -9,7 +9,7 @@
 define i1 @func0000000000000c21(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.dtNode.3108381, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.dtNode.3108347, ptr %1, i64 %3
   %5 = icmp eq i32 %0, 0
   %6 = icmp eq ptr %4, null
   %7 = select i1 %5, i1 true, i1 %6
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000001c81(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %union.TValue.3680757, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %union.TValue.3680707, ptr %1, i64 %3
   %5 = icmp ult i32 %0, 65536
   %6 = icmp eq ptr %4, null
   %7 = select i1 %5, i1 true, i1 %6

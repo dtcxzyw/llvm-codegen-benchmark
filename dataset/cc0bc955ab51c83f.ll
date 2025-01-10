@@ -95,9 +95,10 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; postgres/optimized/fe-connect.ll
 ; postgres/optimized/pg_aggregate.ll
@@ -156,10 +157,9 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/intel_dp.ll
 ; llvm/optimized/DomTreeUpdater.cpp.ll
-; lua/optimized/ldebug.ll
 ; opencv/optimized/contours.cpp.ll
 ; php/optimized/phpdbg_list.ll
 ; redis/optimized/ldebug.ll

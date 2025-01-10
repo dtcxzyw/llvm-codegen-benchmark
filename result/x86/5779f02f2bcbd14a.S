@@ -37,13 +37,13 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rsi, %rax
 	addq	%rdx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rdx, %rax
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	sarq	%rax
 	addq	%rdi, %rax
+	sarq	%rax
 	addq	%rsi, %rax
+	addq	%rdx, %rax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	movq	%rdi, %rax
@@ -70,11 +70,10 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movq	%rdi, %rax
-	shrq	$63, %rax
-	addq	%rdi, %rax
-	sarq	%rax
+func0000000000000004:                   # @func0000000000000004
+	sarq	$3, %rdi
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
+	imulq	%rdi, %rax
 	addq	%rsi, %rax
 	addq	%rdx, %rax
 	retq

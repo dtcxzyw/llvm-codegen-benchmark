@@ -143,13 +143,14 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/skl_watermark.ll

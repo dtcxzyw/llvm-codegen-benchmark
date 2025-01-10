@@ -14,17 +14,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = icmp ugt i64 %0, %4
-  ret i1 %5
-}
-
 ; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll

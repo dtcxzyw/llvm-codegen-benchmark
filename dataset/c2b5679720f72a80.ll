@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3081275" = type { %"class.hermes::vm::HermesValue32.3081276" }
-%"class.hermes::vm::HermesValue32.3081276" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3081241" = type { %"class.hermes::vm::HermesValue32.3081242" }
+%"class.hermes::vm::HermesValue32.3081242" = type { i32 }
 
 ; 6 occurrences:
 ; cmake/optimized/huf_compress.c.ll
@@ -15,7 +15,7 @@ entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = and i64 %0, 1023
-  %6 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3081275"], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3081241"], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

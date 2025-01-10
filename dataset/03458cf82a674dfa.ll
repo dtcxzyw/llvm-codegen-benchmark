@@ -1,21 +1,4 @@
 
-; 7 occurrences:
-; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; freetype/optimized/ftbase.c.ll
-; libevent/optimized/bufferevent_sock.c.ll
-; linux/optimized/ntp.ll
-; linux/optimized/ptp.ll
-; lua/optimized/lbaselib.ll
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, i64 %0, i64 %1
-  %5 = trunc i64 %4 to i32
-  ret i32 %5
-}
-
 ; 89 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -153,6 +136,22 @@ entry:
 define i32 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = trunc i64 %4 to i32
+  ret i32 %5
+}
+
+; 6 occurrences:
+; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; freetype/optimized/ftbase.c.ll
+; libevent/optimized/bufferevent_sock.c.ll
+; linux/optimized/ntp.ll
+; linux/optimized/ptp.ll
+; lua/optimized/lbaselib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = trunc i64 %4 to i32
   ret i32 %5

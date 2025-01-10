@@ -1,12 +1,12 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%"class.doctest::String.2946892" = type { %union.anon.7.2946893 }
-%union.anon.7.2946893 = type { %"struct.doctest::String::view.2946894", [8 x i8] }
-%"struct.doctest::String::view.2946894" = type { ptr, i32, i32 }
-%"class.llvm::Use.3170955" = type { ptr, ptr, ptr, ptr }
-%struct.PagetableEntry.3653389 = type { i32, i8, i8, i8, [5 x i64] }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%"class.doctest::String.2946858" = type { %union.anon.7.2946859 }
+%union.anon.7.2946859 = type { %"struct.doctest::String::view.2946860", [8 x i8] }
+%"struct.doctest::String::view.2946860" = type { ptr, i32, i32 }
+%"class.llvm::Use.3170921" = type { ptr, ptr, ptr, ptr }
+%struct.PagetableEntry.3653355 = type { i32, i8, i8, i8, [5 x i64] }
 
 ; 32 occurrences:
 ; casadi/optimized/bspline.cpp.ll
@@ -65,7 +65,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nuw %"struct.OT::HBFixed.2730714", ptr %3, i64 %0, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw %"struct.OT::HBFixed.2730680", ptr %3, i64 %0, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -79,7 +79,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr %"class.doctest::String.2946892", ptr %3, i64 %0
+  %4 = getelementptr %"class.doctest::String.2946858", ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -94,7 +94,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw %"class.llvm::Use.3170955", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3170921", ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -105,7 +105,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr %struct.PagetableEntry.3653389, ptr %3, i64 %0, i32 4
+  %4 = getelementptr %struct.PagetableEntry.3653355, ptr %3, i64 %0, i32 4
   ret ptr %4
 }
 

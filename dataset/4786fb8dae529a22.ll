@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; boost/optimized/static_string.ll
@@ -22,7 +22,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"class.llvm::Use.3168253", ptr %0, i64 %1
+  %2 = getelementptr nusw %"class.llvm::Use.3168219", ptr %0, i64 %1
   %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64

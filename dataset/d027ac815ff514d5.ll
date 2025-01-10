@@ -1,4 +1,6 @@
 
+%"class.ZXing::Trit.3649621" = type { i8 }
+
 ; 2 occurrences:
 ; ruby/optimized/vm.ll
 ; wireshark/optimized/packet-kafka.c.ll
@@ -97,6 +99,19 @@ entry:
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = getelementptr nusw nuw i8, ptr %0, i64 104
   %7 = icmp eq ptr %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001869(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 7
+  %4 = getelementptr %"class.ZXing::Trit.3649621", ptr %3, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 -7
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %7 = icmp uge ptr %6, %5
   ret i1 %7
 }
 

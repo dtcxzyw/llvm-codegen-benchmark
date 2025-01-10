@@ -1,7 +1,7 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
-%"class.cv::Rect_.3743588" = type { i32, i32, i32, i32 }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372" = type { i8, [7 x i8] }
+%"class.cv::Rect_.3743538" = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
@@ -49,8 +49,8 @@ define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 59
   %4 = and i64 %3, 1
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
@@ -75,8 +75,8 @@ define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %"class.cv::Rect_.3743588", ptr %1, i64 %4
-  %6 = getelementptr %"class.cv::Rect_.3743588", ptr %5, i64 %0, i32 2
+  %5 = getelementptr %"class.cv::Rect_.3743538", ptr %1, i64 %4
+  %6 = getelementptr %"class.cv::Rect_.3743538", ptr %5, i64 %0, i32 2
   ret ptr %6
 }
 

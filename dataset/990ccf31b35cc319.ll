@@ -1,6 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::Operand_.2604140" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604128", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2604128" = type { i32 }
+%"struct.asmjit::_abi_1_10::Operand_.2604107" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604095", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2604095" = type { i32 }
 
 ; 77 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -85,7 +85,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604140"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604107"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,10 +1,10 @@
 
-%"class.asmjit::_abi_1_10::Operand.2607746" = type { %"struct.asmjit::_abi_1_10::Operand_.2607747" }
-%"struct.asmjit::_abi_1_10::Operand_.2607747" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607743", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2607743" = type { i32 }
-%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549", i32, i32 }
-%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549" = type { ptr, [40 x i8] }
+%"class.asmjit::_abi_1_10::Operand.2607713" = type { %"struct.asmjit::_abi_1_10::Operand_.2607714" }
+%"struct.asmjit::_abi_1_10::Operand_.2607714" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607710", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2607710" = type { i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515", i32, i32 }
+%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515" = type { ptr, [40 x i8] }
 
 ; 114 occurrences:
 ; abc/optimized/FxchMan.c.ll
@@ -217,14 +217,14 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607746", ptr %1, i64 %2, i32 0, i32 1
+  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607713", ptr %1, i64 %2, i32 0, i32 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5
   ret i64 %6
 }
 
-; 198 occurrences:
+; 199 occurrences:
 ; abc/optimized/bblif.c.ll
 ; casadi/optimized/bspline.cpp.ll
 ; cmake/optimized/archive_string.c.ll
@@ -235,6 +235,7 @@ entry:
 ; cmake/optimized/zstd_ldm.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -491,13 +492,12 @@ entry:
   ret i64 %7
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; boost/optimized/url_view_base.ll
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/Number.cpp.ll
@@ -578,7 +578,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -56
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64

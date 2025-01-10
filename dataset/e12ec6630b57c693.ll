@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/dtrsm.cpp.ll
@@ -15,7 +15,6 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
-; linux/optimized/vc_screen.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DWARFVerifier.cpp.ll

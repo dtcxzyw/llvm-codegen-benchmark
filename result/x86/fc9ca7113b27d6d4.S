@@ -21,14 +21,6 @@ func0000000000000002:                   # @func0000000000000002
 	leaq	23(,%rdi,8), %rax
 	andq	$-16, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	leaq	23(,%rdi,8), %rax
-	andq	$-16, %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	leaq	23(,%rdi,8), %rax
-	andq	$-16, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	17(%rdi,%rdi), %rax
 	andq	$-16, %rax

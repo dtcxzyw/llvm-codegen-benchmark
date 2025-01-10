@@ -38,15 +38,15 @@ func0000000000000007:                   # @func0000000000000007
 	cmpl	%esi, %edi
 	setg	%al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpl	%esi, %edi
+	setb	%al
+	retq
 func0000000000000015:                   # @func0000000000000015
 	cmpl	%esi, %edi
 	seta	%al
 	retq
 func0000000000000019:                   # @func0000000000000019
-	cmpl	%esi, %edi
-	setb	%al
-	retq
-func0000000000000009:                   # @func0000000000000009
 	cmpl	%esi, %edi
 	setb	%al
 	retq

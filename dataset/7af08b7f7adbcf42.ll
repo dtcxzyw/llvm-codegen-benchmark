@@ -167,12 +167,11 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; lightgbm/optimized/boosting.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind

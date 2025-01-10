@@ -48,16 +48,9 @@ func000000000000000b:                   # @func000000000000000b
 	setbe	%al
 	retq
 .LCPI7_0:
-	.quad	0xbff0000000000000              # double -1
-func000000000000000c:                   # @func000000000000000c
-	vaddsd	.LCPI7_0(%rip), %xmm1, %xmm1
-	vucomisd	%xmm1, %xmm0
-	setae	%al
-	retq
-.LCPI8_0:
 	.quad	0x4076800000000000              # double 360
 func000000000000000d:                   # @func000000000000000d
-	vaddsd	.LCPI8_0(%rip), %xmm1, %xmm1
+	vaddsd	.LCPI7_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
 	retq

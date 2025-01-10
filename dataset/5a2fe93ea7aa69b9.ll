@@ -795,6 +795,110 @@ entry:
   ret i1 %3
 }
 
+; 95 occurrences:
+; abseil-cpp/optimized/convert_test.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cpython/optimized/_decimal.ll
+; cpython/optimized/mathmodule.ll
+; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; g2o/optimized/types_icp.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; g2o/optimized/vertex_cam.cpp.ll
+; g2o/optimized/vertex_intrinsics.cpp.ll
+; g2o/optimized/vertex_line2d.cpp.ll
+; g2o/optimized/vertex_line3d.cpp.ll
+; g2o/optimized/vertex_odom_differential_params.cpp.ll
+; g2o/optimized/vertex_plane.cpp.ll
+; g2o/optimized/vertex_point_xy.cpp.ll
+; g2o/optimized/vertex_pointxyz.cpp.ll
+; g2o/optimized/vertex_se2.cpp.ll
+; g2o/optimized/vertex_se3.cpp.ll
+; g2o/optimized/vertex_se3_euler.cpp.ll
+; g2o/optimized/vertex_se3_expmap.cpp.ll
+; g2o/optimized/vertex_segment2d.cpp.ll
+; gromacs/optimized/dlarrex.cpp.ll
+; gromacs/optimized/forcetable.cpp.ll
+; hermes/optimized/IR.cpp.ll
+; hermes/optimized/ISel.cpp.ll
+; hermes/optimized/SerializedLiteralGenerator.cpp.ll
+; lightgbm/optimized/c_api.cpp.ll
+; luajit/optimized/lj_ctype.ll
+; luajit/optimized/lj_ctype_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshlab/optimized/shell.cpp.ll
+; openblas/optimized/dgesvdq.c.ll
+; opencv/optimized/erfilter.cpp.ll
+; openjdk/optimized/gcm.ll
+; openusd/optimized/utils.c.ll
+; postgres/optimized/arrayfuncs.ll
+; postgres/optimized/costsize.ll
+; postgres/optimized/date.ll
+; postgres/optimized/float.ll
+; postgres/optimized/geo_ops.ll
+; postgres/optimized/gistproc.ll
+; qemu/optimized/monitor_hmp.c.ll
+; quickjs/optimized/quickjs.ll
+; ruby/optimized/complex.ll
+; ruby/optimized/nextafter.ll
+; stat-rs/optimized/1957ju1ns40544yq.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stat-rs/optimized/4bf6omib3d9godoe.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; tomlplusplus/optimized/toml.cpp.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/3rk2ctuzbghb17s4.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; xgboost/optimized/gradient_index.cc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000002(i1 %0, double %1) #0 {
+entry:
+  %2 = fcmp uno double %1, 0.000000e+00
+  %3 = or i1 %2, %0
+  ret i1 %3
+}
+
 ; 72 occurrences:
 ; abc/optimized/epd.c.ll
 ; assimp/optimized/clipper.cpp.ll
@@ -1040,110 +1144,7 @@ entry:
   ret i1 %3
 }
 
-; 94 occurrences:
-; abseil-cpp/optimized/convert_test.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; cpython/optimized/_decimal.ll
-; cpython/optimized/mathmodule.ll
-; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; g2o/optimized/types_icp.cpp.ll
-; g2o/optimized/types_seven_dof_expmap.cpp.ll
-; g2o/optimized/vertex_cam.cpp.ll
-; g2o/optimized/vertex_intrinsics.cpp.ll
-; g2o/optimized/vertex_line2d.cpp.ll
-; g2o/optimized/vertex_line3d.cpp.ll
-; g2o/optimized/vertex_odom_differential_params.cpp.ll
-; g2o/optimized/vertex_plane.cpp.ll
-; g2o/optimized/vertex_point_xy.cpp.ll
-; g2o/optimized/vertex_pointxyz.cpp.ll
-; g2o/optimized/vertex_se2.cpp.ll
-; g2o/optimized/vertex_se3.cpp.ll
-; g2o/optimized/vertex_se3_euler.cpp.ll
-; g2o/optimized/vertex_se3_expmap.cpp.ll
-; g2o/optimized/vertex_segment2d.cpp.ll
-; gromacs/optimized/dlarrex.cpp.ll
-; gromacs/optimized/forcetable.cpp.ll
-; hermes/optimized/IR.cpp.ll
-; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/SerializedLiteralGenerator.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
-; luajit/optimized/lj_ctype.ll
-; luajit/optimized/lj_ctype_dyn.ll
-; lvgl/optimized/lv_sprintf_builtin.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; meshlab/optimized/shell.cpp.ll
-; openblas/optimized/dgesvdq.c.ll
-; opencv/optimized/erfilter.cpp.ll
-; openjdk/optimized/gcm.ll
-; openusd/optimized/utils.c.ll
-; postgres/optimized/arrayfuncs.ll
-; postgres/optimized/costsize.ll
-; postgres/optimized/date.ll
-; postgres/optimized/float.ll
-; postgres/optimized/geo_ops.ll
-; postgres/optimized/gistproc.ll
-; qemu/optimized/monitor_hmp.c.ll
-; quickjs/optimized/quickjs.ll
-; ruby/optimized/nextafter.ll
-; stat-rs/optimized/1957ju1ns40544yq.ll
-; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
-; stat-rs/optimized/4bf6omib3d9godoe.ll
-; stat-rs/optimized/4d9pj14shc9lbmph.ll
-; stat-rs/optimized/n94tvlll45kxl7r.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; tomlplusplus/optimized/toml.cpp.ll
-; typst-rs/optimized/1ru1rhojhbz2vfey.ll
-; typst-rs/optimized/3rk2ctuzbghb17s4.ll
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; xgboost/optimized/gradient_index.cc.ll
-; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
-; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
-; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
-; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
-; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
-; zxing/optimized/QRDetector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000002(i1 %0, double %1) #0 {
-entry:
-  %2 = fcmp uno double %1, 0.000000e+00
-  %3 = or i1 %2, %0
-  ret i1 %3
-}
-
-; 75 occurrences:
+; 76 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; casadi/optimized/idas_ic.c.ll
 ; casadi/optimized/kinsol_io.c.ll
@@ -1168,6 +1169,7 @@ entry:
 ; opencv/optimized/pnp_solver.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; openjdk/optimized/OGLBlitLoops.ll
+; openjdk/optimized/zDirector.ll
 ; openspiel/optimized/oos.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; openusd/optimized/authoring.cpp.ll

@@ -6,6 +6,14 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
+func0000000000000068:                   // @func0000000000000068
+// %bb.0:                               // %entry
+	lsr	x8, x1, #3
+	and	x8, x8, #0x1ffffffffffffff8
+	cmp	x8, x0
+	cset	w0, hi
+	ret
+                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	lsl	x8, x1, #1

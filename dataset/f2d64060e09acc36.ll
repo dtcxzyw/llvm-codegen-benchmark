@@ -1,18 +1,18 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%"struct.llvh::detail::DenseMapPair.98.3077883" = type { %"struct.std::pair.99.3077884" }
-%"struct.std::pair.99.3077884" = type { ptr, %"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077885" }
-%"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077885" = type { i32, ptr, %"class.std::vector.72.3077886" }
-%"class.std::vector.72.3077886" = type { %"struct.std::_Vector_base.73.3077887" }
-%"struct.std::_Vector_base.73.3077887" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077888" }
-%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077888" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077889" }
-%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077889" = type { ptr, ptr, ptr }
-%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
-%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
-%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%"struct.llvh::detail::DenseMapPair.98.3077849" = type { %"struct.std::pair.99.3077850" }
+%"struct.std::pair.99.3077850" = type { ptr, %"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077851" }
+%"struct.hermes::hbc::HBCISel::SwitchImmInfo.3077851" = type { i32, ptr, %"class.std::vector.72.3077852" }
+%"class.std::vector.72.3077852" = type { %"struct.std::_Vector_base.73.3077853" }
+%"struct.std::_Vector_base.73.3077853" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077854" }
+%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl.3077854" = type { %"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077855" }
+%"struct.std::_Vector_base<hermes::BasicBlock *, std::allocator<hermes::BasicBlock *>>::_Vector_impl_data.3077855" = type { ptr, ptr, ptr }
+%class.TrafficTypesRowData.3443338 = type <{ i32, [4 x i8], %class.QString.3443327, i8, [7 x i8] }>
+%class.QString.3443327 = type { %struct.QArrayDataPointer.3443328 }
+%struct.QArrayDataPointer.3443328 = type { ptr, ptr, i64 }
 
 ; 1160 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -1181,7 +1181,7 @@ entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr nusw %"struct.std::pair.2601858", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.std::pair.2601825", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1272,7 +1272,7 @@ entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.98.3077883", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.98.3077849", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1293,7 +1293,7 @@ entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr %class.TrafficTypesRowData.3443372, ptr %0, i64 %5
+  %6 = getelementptr %class.TrafficTypesRowData.3443338, ptr %0, i64 %5
   ret ptr %6
 }
 

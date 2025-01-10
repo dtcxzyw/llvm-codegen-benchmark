@@ -1,5 +1,5 @@
 
-; 13452 occurrences:
+; 13448 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -2821,7 +2821,6 @@
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
-; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/collationtailoring.ll
 ; icu/optimized/csr2022.ll
@@ -2874,7 +2873,6 @@
 ; icu/optimized/rbbi.ll
 ; icu/optimized/rbbiscan.ll
 ; icu/optimized/rbbisetb.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_rule.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/reslist.ll
@@ -2920,7 +2918,6 @@
 ; icu/optimized/unisetspan.ll
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/units_converter.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/uprops.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/uscript_props.ll
@@ -7135,7 +7132,6 @@
 ; ockam-rs/optimized/qxtmaqcgbb7tk7b.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
-; ockam-rs/optimized/u40izb4s9621smy.ll
 ; ockam-rs/optimized/v91rpx6k3uxsm6j.ll
 ; ockam-rs/optimized/xqqthbl2d203wsg.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll

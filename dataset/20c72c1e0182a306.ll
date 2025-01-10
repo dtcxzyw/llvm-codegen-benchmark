@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -8,6 +8,7 @@
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/uncore_snbep.ll
 ; openjdk/optimized/compilerDirectives.ll

@@ -1,7 +1,7 @@
 
-%"struct.std::pair.2749024" = type { i32, i32 }
-%"struct.std::pair.2909097" = type <{ i32, i8, [3 x i8] }>
-%"struct.std::pair.3449273" = type { i32, i32 }
+%"struct.std::pair.2748990" = type { i32, i32 }
+%"struct.std::pair.2909063" = type <{ i32, i8, [3 x i8] }>
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 61 occurrences:
 ; boost/optimized/within_pointlike_geometry.ll
@@ -70,7 +70,7 @@ define ptr @func00000000000000bb(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2749024", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.2748990", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
@@ -94,7 +94,7 @@ define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2909097", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.2909063", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
@@ -107,7 +107,7 @@ define ptr @func00000000000000b3(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }

@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
 ; 32 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -416,7 +416,7 @@ entry:
 define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602074", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

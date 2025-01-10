@@ -1,6 +1,6 @@
 
-%struct.ieee80211_tx_queue_params.3543188 = type { i16, i16, i16, i8, i8, i8, i8, %struct.ieee80211_he_mu_edca_param_ac_rec.3543189 }
-%struct.ieee80211_he_mu_edca_param_ac_rec.3543189 = type { i8, i8, i8 }
+%struct.ieee80211_tx_queue_params.3543154 = type { i16, i16, i16, i8, i8, i8, i8, %struct.ieee80211_he_mu_edca_param_ac_rec.3543155 }
+%struct.ieee80211_he_mu_edca_param_ac_rec.3543155 = type { i8, i8, i8 }
 
 ; 59 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
@@ -98,7 +98,7 @@ entry:
   %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 3)
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 3840
-  %5 = getelementptr [4 x %struct.ieee80211_tx_queue_params.3543188], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [4 x %struct.ieee80211_tx_queue_params.3543154], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

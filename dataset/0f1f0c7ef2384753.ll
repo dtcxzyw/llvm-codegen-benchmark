@@ -1,7 +1,7 @@
 
-%"struct.std::__1::pair.248.2607584" = type { i32, i32 }
-%struct.IOTest.2710232 = type { ptr, %struct.EventNotifier.2710233, i8, i32, i8, ptr, i32 }
-%struct.EventNotifier.2710233 = type { i32, i32, i8 }
+%"struct.std::__1::pair.248.2607551" = type { i32, i32 }
+%struct.IOTest.2710198 = type { ptr, %struct.EventNotifier.2710199, i8, i32, i8, ptr, i32 }
+%struct.EventNotifier.2710199 = type { i32, i32, i8 }
 
 ; 9 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
@@ -19,7 +19,7 @@ entry:
   %3 = mul i32 %2, 3
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"struct.std::__1::pair.248.2607584", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"struct.std::__1::pair.248.2607551", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.IOTest.2710232, ptr %0, i64 %5, i32 5
+  %6 = getelementptr %struct.IOTest.2710198, ptr %0, i64 %5, i32 5
   ret ptr %6
 }
 

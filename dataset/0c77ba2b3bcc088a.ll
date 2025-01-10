@@ -1,7 +1,7 @@
 
-%struct.ssl_mac_buf_st.2633442 = type { ptr, i32 }
-%struct.dtMeshTile.3108389 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
-%"class.clang::tooling::Range.3279330" = type { i32, i32 }
+%struct.ssl_mac_buf_st.2633409 = type { ptr, i32 }
+%struct.dtMeshTile.3108355 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
+%"class.clang::tooling::Range.3279296" = type { i32, i32 }
 
 ; 16 occurrences:
 ; arrow/optimized/interfaces.cc.ll
@@ -24,7 +24,7 @@
 define ptr @func000000000000000b(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr %struct.ssl_mac_buf_st.2633442, ptr %2, i64 %0, i32 1
+  %3 = getelementptr %struct.ssl_mac_buf_st.2633409, ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 
@@ -51,7 +51,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr nuw %struct.dtMeshTile.3108389, ptr %2, i64 %0, i32 2
+  %3 = getelementptr nuw %struct.dtMeshTile.3108355, ptr %2, i64 %0, i32 2
   ret ptr %3
 }
 
@@ -62,7 +62,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr %"class.clang::tooling::Range.3279330", ptr %2, i64 %0, i32 1
+  %3 = getelementptr %"class.clang::tooling::Range.3279296", ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 
@@ -73,7 +73,7 @@ entry:
 define ptr @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = getelementptr %"class.clang::tooling::Range.3279330", ptr %2, i64 %0, i32 1
+  %3 = getelementptr %"class.clang::tooling::Range.3279296", ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 

@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 81 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/str_format_test.cc.ll
@@ -50,8 +50,6 @@
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
 ; openspiel/optimized/hex.cc.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; php/optimized/logical_filters.ll
 ; php/optimized/zend_object_handlers.ll
 ; postgres/optimized/float.ll

@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
-	andl	$31, %esi
-	shll	$13, %esi
-	leal	512(%rdi), %eax
+	leal	512(%rsi), %eax
 	andl	$7680, %eax                     # imm = 0x1E00
-	orl	%esi, %eax
+	andl	$31, %edi
+	shll	$13, %edi
+	orl	%edi, %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	leal	-1(%rsi), %eax

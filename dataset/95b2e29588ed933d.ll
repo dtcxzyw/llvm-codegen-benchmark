@@ -1,5 +1,5 @@
 
-; 4453 occurrences:
+; 4451 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -27,7 +27,6 @@
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/cecSplit.c.ll
-; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/cuddApprox.c.ll
@@ -3585,7 +3584,6 @@
 ; wireshark/optimized/msg_rng_req.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-aim.c.ll
-; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-arp.c.ll
@@ -4461,7 +4459,7 @@ entry:
   ret i1 %3
 }
 
-; 2377 occurrences:
+; 2378 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
@@ -4878,6 +4876,7 @@ entry:
 ; glslang/optimized/iomapper.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/generate-constraints.cpp.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/gvmap.c.ll
 ; graphviz/optimized/strmatch.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -6847,7 +6846,7 @@ entry:
   ret i1 %3
 }
 
-; 598 occurrences:
+; 600 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/inflate.c.ll
@@ -7176,6 +7175,7 @@ entry:
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/XCore.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; logos-rs/optimized/3iimw0083jctljf1.ll
 ; logos-rs/optimized/4u2jgzug3prpt2ik.ll
 ; luajit/optimized/lib_jit.ll
@@ -7292,6 +7292,7 @@ entry:
 ; postgres/optimized/check.ll
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/dt_common.ll
+; postgres/optimized/formatting.ll
 ; postgres/optimized/index.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/mbprint.ll
@@ -7454,7 +7455,7 @@ entry:
   ret i1 %3
 }
 
-; 1707 occurrences:
+; 1703 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -7716,7 +7717,6 @@ entry:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -8624,7 +8624,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-lib-bss_conn.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-cms_smime.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
 ; openssl/optimized/libcrypto-lib-digest.ll
@@ -8642,7 +8641,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bss_conn.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
 ; openssl/optimized/libcrypto-shlib-digest.ll
@@ -8852,7 +8850,6 @@ entry:
 ; re2/optimized/re2.cc.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
@@ -9170,7 +9167,7 @@ entry:
   ret i1 %3
 }
 
-; 642 occurrences:
+; 643 occurrences:
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -9247,6 +9244,7 @@ entry:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/dtoa.ll
+; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/zlibmodule.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll

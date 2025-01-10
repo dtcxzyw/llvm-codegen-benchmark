@@ -40,7 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
 ; hyperscan/optimized/mpv.c.ll
@@ -51,6 +51,7 @@ entry:
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xprt.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
+; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -61,14 +62,52 @@ entry:
 }
 
 ; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  ret i64 %5
+}
+
+; 3 occurrences:
+; brotli/optimized/encode.c.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  ret i64 %5
+}
+
+; 4 occurrences:
 ; hyperscan/optimized/rose_build_infix.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; nuttx/optimized/fs_procfsutil.c.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %0, %1
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  ret i64 %5
+}
+
+; 1 occurrences:
+; pocketpy/optimized/collections.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
   ret i64 %5
 }
 

@@ -6,6 +6,14 @@ func0000000000000187:                   // @func0000000000000187
 	add	x0, x0, w8, sxtw #4
 	ret
                                         // -- End function
+func0000000000000186:                   // @func0000000000000186
+// %bb.0:                               // %entry
+	add	w8, w1, #1
+	cmp	w8, #3
+	csinc	w8, wzr, w1, eq
+	add	x0, x0, w8, sxtw #3
+	ret
+                                        // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	add	w8, w1, #1

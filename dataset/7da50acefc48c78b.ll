@@ -1,5 +1,5 @@
 
-%struct.b2Vec2.3651021 = type { float, float }
+%struct.b2Vec2.3650987 = type { float, float }
 
 ; 7 occurrences:
 ; html5ever-rs/optimized/3yf7dd26qc4nc3nw.ll
@@ -37,7 +37,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw [8 x %struct.b2Vec2.3651021], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr nuw [8 x %struct.b2Vec2.3650987], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

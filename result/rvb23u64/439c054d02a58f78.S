@@ -8,6 +8,6 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
-	bseti	a0, a0, 24
-	zext.w	a0, a0
+	bseti	a1, zero, 32
+	add.uw	a0, a0, a1
 	ret

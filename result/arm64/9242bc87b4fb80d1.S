@@ -23,12 +23,6 @@ func000000000000000a:                   // @func000000000000000a
 	smaddl	x0, w8, w9, x0
 	ret
                                         // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	lsl	w8, w1, w2
-	add	x0, x0, w8, sxtw #3
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	lsl	w8, w1, w2

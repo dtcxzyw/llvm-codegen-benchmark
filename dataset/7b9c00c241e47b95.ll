@@ -65,6 +65,19 @@ entry:
 }
 
 ; 1 occurrences:
+; opencv/optimized/subdivision2d.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, 2147483644
+  %5 = add nuw nsw i32 %0, 1
+  %6 = icmp eq i32 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000204(i32 %0, i64 %1) #0 {

@@ -151,7 +151,7 @@ entry:
   ret i64 %3
 }
 
-; 272 occurrences:
+; 273 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
@@ -343,6 +343,7 @@ entry:
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/scdf.ll
 ; php/optimized/zend_dfg.ll
 ; php/optimized/zend_inference.ll

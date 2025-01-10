@@ -26,7 +26,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AttrImpl.cpp.ll
@@ -40,7 +40,6 @@ entry:
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/ThreadSafetyTIL.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/libvduse.c.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; Function Attrs: nounwind

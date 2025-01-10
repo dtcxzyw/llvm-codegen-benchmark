@@ -1,9 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
+	andl	$1, %edi
+	movl	$2, %ecx
+	subq	%rdi, %rcx
 	xorl	%eax, %eax
-	testb	$16, %sil
-	leaq	4(,%rcx,4), %rcx
+	testb	$7, %sil
 	cmovneq	%rcx, %rax
 	retq

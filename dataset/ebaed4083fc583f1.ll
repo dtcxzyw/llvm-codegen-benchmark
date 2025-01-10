@@ -1,9 +1,9 @@
 
-%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627" = type { i32, %"class.std::vector.28.2703628" }
-%"class.std::vector.28.2703628" = type { %"struct.std::_Vector_base.29.2703629" }
-%"struct.std::_Vector_base.29.2703629" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" = type { ptr, ptr, ptr }
+%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703593" = type { i32, %"class.std::vector.28.2703594" }
+%"class.std::vector.28.2703594" = type { %"struct.std::_Vector_base.29.2703595" }
+%"struct.std::_Vector_base.29.2703595" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703596" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703596" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703597" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703597" = type { ptr, ptr, ptr }
 
 ; 47 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -57,7 +57,7 @@
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627", ptr %2, i64 %0
+  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703593", ptr %2, i64 %0
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

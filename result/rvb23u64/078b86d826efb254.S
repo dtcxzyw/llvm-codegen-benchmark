@@ -10,7 +10,7 @@ func0000000000000021:                   # @func0000000000000021
 	lui	a2, 524288
 	addi	a2, a2, -2
 	and	a0, a0, a2
-	xori	a0, a0, 8
+	xori	a0, a0, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0

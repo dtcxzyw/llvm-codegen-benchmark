@@ -1,5 +1,5 @@
 
-; 722 occurrences:
+; 715 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -33,7 +33,6 @@
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cmdUtils.c.ll
-; abc/optimized/cuddApa.c.ll
 ; abc/optimized/dauEnum.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -132,7 +131,6 @@
 ; faiss/optimized/index_factory.cpp.ll
 ; flac/optimized/encode.c.ll
 ; folly/optimized/json.cpp.ll
-; freetype/optimized/ftstroke.c.ll
 ; git/optimized/add.ll
 ; git/optimized/am.ll
 ; git/optimized/convert.ll
@@ -422,7 +420,6 @@
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
 ; opencv/optimized/tldUtils.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/EventRequestImpl.ll
 ; openjdk/optimized/FileSystemSupport_md.ll
@@ -458,11 +455,8 @@
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libcrypto-lib-bf_prefix.ll
 ; openssl/optimized/libcrypto-lib-err_prn.ll
-; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-bf_prefix.ll
 ; openssl/optimized/libcrypto-shlib-err_prn.ll
-; openssl/optimized/libcrypto-shlib-txt_db.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-file_store.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
@@ -637,7 +631,6 @@
 ; wireshark/optimized/packet-juniper.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; wireshark/optimized/packet-lls-slt.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
@@ -730,7 +723,61 @@ entry:
   ret i32 %2
 }
 
-; 433 occurrences:
+; 45 occurrences:
+; abc/optimized/acbUtil.c.ll
+; c3c/optimized/lexer.c.ll
+; cmake/optimized/url.c.ll
+; cpython/optimized/mpdecimal.ll
+; curl/optimized/libcurl_la-url.ll
+; hermes/optimized/StringRef.cpp.ll
+; jq/optimized/euc_kr.ll
+; jq/optimized/euc_tw.ll
+; libpng/optimized/pngrutil.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; lief/optimized/ssl_ciphersuites.c.ll
+; linux/optimized/lifebook.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/ExprClassification.cpp.ll
+; llvm/optimized/MLInlineAdvisor.cpp.ll
+; llvm/optimized/StringRef.cpp.ll
+; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; lua/optimized/lapi.ll
+; meshoptimizer/optimized/indexcodec.cpp.ll
+; oniguruma/optimized/euc_kr.ll
+; oniguruma/optimized/euc_tw.ll
+; openjdk/optimized/archiveBuilder.ll
+; openjdk/optimized/constantPool.ll
+; openjdk/optimized/pngrutil.ll
+; openssl/optimized/libcrypto-lib-fcrypt.ll
+; openssl/optimized/libcrypto-shlib-fcrypt.ll
+; openusd/optimized/pred_common.c.ll
+; openusd/optimized/reconintra.c.ll
+; postgres/optimized/like_support.ll
+; qemu/optimized/hw_sd_sd.c.ll
+; raylib/optimized/raudio.c.ll
+; ruby/optimized/euc_kr.ll
+; ruby/optimized/euc_tw.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; stb/optimized/stb_image.c.ll
+; stb/optimized/stb_vorbis.c.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; wireshark/optimized/packet-caneth.c.ll
+; wireshark/optimized/packet-dvbci.c.ll
+; wireshark/optimized/packet-giop.c.ll
+; wireshark/optimized/packet-nano.c.ll
+; wireshark/optimized/packet-tls-utils.c.ll
+; wireshark/optimized/packet-umts_fp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i8 %0) #0 {
+entry:
+  %1 = icmp ult i8 %0, 127
+  %2 = zext i1 %1 to i32
+  ret i32 %2
+}
+
+; 429 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcFanOrder.c.ll
@@ -945,8 +992,6 @@ entry:
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/regcomp.c.ll
 ; lua/optimized/ltable.ll
-; luajit/optimized/lib_string.ll
-; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_gc.ll
@@ -1079,8 +1124,6 @@ entry:
 ; redis/optimized/db.ll
 ; redis/optimized/lapi.ll
 ; redis/optimized/t_set.ll
-; ruby/optimized/raddrinfo.ll
-; ruby/optimized/regexec.ll
 ; ruby/optimized/sprintf.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; slurm/optimized/xlate.ll
@@ -1167,66 +1210,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i8 %0) #0 {
 entry:
-  %1 = icmp ne i8 %0, 0
-  %2 = zext i1 %1 to i32
-  ret i32 %2
-}
-
-; 50 occurrences:
-; abc/optimized/acbUtil.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
-; c3c/optimized/lexer.c.ll
-; cmake/optimized/url.c.ll
-; cpython/optimized/mpdecimal.ll
-; curl/optimized/libcurl_la-url.ll
-; hermes/optimized/StringRef.cpp.ll
-; jq/optimized/euc_kr.ll
-; jq/optimized/euc_tw.ll
-; libpng/optimized/pngrutil.c.ll
-; libwebp/optimized/vp8l_dec.c.ll
-; lief/optimized/ssl_ciphersuites.c.ll
-; linux/optimized/lifebook.ll
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/ExprClassification.cpp.ll
-; llvm/optimized/MLInlineAdvisor.cpp.ll
-; llvm/optimized/StringRef.cpp.ll
-; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; lua/optimized/lapi.ll
-; meshoptimizer/optimized/indexcodec.cpp.ll
-; oniguruma/optimized/euc_kr.ll
-; oniguruma/optimized/euc_tw.ll
-; openjdk/optimized/archiveBuilder.ll
-; openjdk/optimized/constantPool.ll
-; openjdk/optimized/pngrutil.ll
-; openssl/optimized/libcrypto-lib-fcrypt.ll
-; openssl/optimized/libcrypto-shlib-fcrypt.ll
-; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconintra.c.ll
-; postgres/optimized/like_support.ll
-; qemu/optimized/hw_sd_sd.c.ll
-; raylib/optimized/raudio.c.ll
-; ruby/optimized/euc_kr.ll
-; ruby/optimized/euc_tw.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; stb/optimized/stb_image.c.ll
-; stb/optimized/stb_vorbis.c.ll
-; verilator/optimized/V3Fork.cpp.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
-; wireshark/optimized/packet-caneth.c.ll
-; wireshark/optimized/packet-dvbci.c.ll
-; wireshark/optimized/packet-giop.c.ll
-; wireshark/optimized/packet-nano.c.ll
-; wireshark/optimized/packet-tls-utils.c.ll
-; wireshark/optimized/packet-umts_fp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i8 %0) #0 {
-entry:
-  %1 = icmp ult i8 %0, 127
+  %1 = icmp ne i8 %0, 48
   %2 = zext i1 %1 to i32
   ret i32 %2
 }
@@ -1340,7 +1324,7 @@ entry:
   ret i32 %2
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -1352,7 +1336,6 @@ entry:
 ; openjdk/optimized/ciInstanceKlass.ll
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/ir_ra.ll
-; php/optimized/zend_execute.ll
 ; postgres/optimized/numeric.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/camins.c.ll

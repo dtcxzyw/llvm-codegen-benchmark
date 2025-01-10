@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -95,7 +95,7 @@ entry:
   %2 = shl nuw i64 %1, 1
   %3 = add nuw nsw i64 %2, 2
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nuw %"class.llvm::Use.3188737", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.llvm::Use.3188703", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

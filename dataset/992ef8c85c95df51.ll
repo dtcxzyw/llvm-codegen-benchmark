@@ -1,17 +1,17 @@
 
-%"class.rocksdb::LRUList.2616085" = type { ptr, %"class.rocksdb::port::Mutex.2616086", ptr, ptr }
-%"class.rocksdb::port::Mutex.2616086" = type { %union.pthread_mutex_t.2616087 }
-%union.pthread_mutex_t.2616087 = type { %struct.__pthread_mutex_s.2616088 }
-%struct.__pthread_mutex_s.2616088 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2616089 }
-%struct.__pthread_internal_list.2616089 = type { ptr, ptr }
-%"struct.rocksdb::PlainTableIndexBuilder::IndexRecord.2616327" = type { i32, i32, ptr }
-%"struct.folly::detail::SingleElementQueue.2691228" = type { %"union.std::aligned_storage<112, 16>::type.2691092", %"struct.folly::detail::TurnSequencer.2691229", [12 x i8] }
-%"union.std::aligned_storage<112, 16>::type.2691092" = type { [112 x i8] }
-%"struct.folly::detail::TurnSequencer.2691229" = type { %"struct.std::atomic.33.2691037" }
-%"struct.std::atomic.33.2691037" = type { %"struct.std::__atomic_base.34.2691038" }
-%"struct.std::__atomic_base.34.2691038" = type { i32 }
-%class.aiVector3t.2828902 = type { double, double, double }
-%"class.cv::Point_.3732832" = type { float, float }
+%"class.rocksdb::LRUList.2616052" = type { ptr, %"class.rocksdb::port::Mutex.2616053", ptr, ptr }
+%"class.rocksdb::port::Mutex.2616053" = type { %union.pthread_mutex_t.2616054 }
+%union.pthread_mutex_t.2616054 = type { %struct.__pthread_mutex_s.2616055 }
+%struct.__pthread_mutex_s.2616055 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2616056 }
+%struct.__pthread_internal_list.2616056 = type { ptr, ptr }
+%"struct.rocksdb::PlainTableIndexBuilder::IndexRecord.2616294" = type { i32, i32, ptr }
+%"struct.folly::detail::SingleElementQueue.2691194" = type { %"union.std::aligned_storage<112, 16>::type.2691058", %"struct.folly::detail::TurnSequencer.2691195", [12 x i8] }
+%"union.std::aligned_storage<112, 16>::type.2691058" = type { [112 x i8] }
+%"struct.folly::detail::TurnSequencer.2691195" = type { %"struct.std::atomic.33.2691003" }
+%"struct.std::atomic.33.2691003" = type { %"struct.std::__atomic_base.34.2691004" }
+%"struct.std::__atomic_base.34.2691004" = type { i32 }
+%class.aiVector3t.2828868 = type { double, double, double }
+%"class.cv::Point_.3732782" = type { float, float }
 
 ; 38 occurrences:
 ; brotli/optimized/block_splitter.c.ll
@@ -56,7 +56,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = getelementptr nuw %"class.rocksdb::LRUList.2616085", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"class.rocksdb::LRUList.2616052", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -88,7 +88,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = getelementptr %"struct.rocksdb::PlainTableIndexBuilder::IndexRecord.2616327", ptr %0, i64 %3, i32 2
+  %4 = getelementptr %"struct.rocksdb::PlainTableIndexBuilder::IndexRecord.2616294", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -106,7 +106,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2691228", ptr %0, i64 %3
+  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2691194", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 128
   ret ptr %5
 }
@@ -118,7 +118,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -128,7 +128,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
-  %4 = getelementptr %"class.cv::Point_.3732832", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3732782", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

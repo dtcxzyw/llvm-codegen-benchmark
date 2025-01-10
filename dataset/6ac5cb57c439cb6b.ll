@@ -1,5 +1,5 @@
 
-%"struct.std::pair.3280201" = type { i32, i32 }
+%"struct.std::pair.3280167" = type { i32, i32 }
 
 ; 6 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
@@ -183,7 +183,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3280167", ptr %0, i64 %3
   %5 = and i64 %1, -32
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

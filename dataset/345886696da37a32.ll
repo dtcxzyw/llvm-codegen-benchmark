@@ -15,7 +15,7 @@ entry:
   ret i64 %4
 }
 
-; 773 occurrences:
+; 774 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -376,6 +376,7 @@ entry:
 ; luau/optimized/Analyze.cpp.ll
 ; luau/optimized/Reduce.cpp.ll
 ; luau/optimized/TopoSortStatements.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll

@@ -67,7 +67,7 @@ entry:
   ret i1 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -97,7 +97,6 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/metaphone.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/zend_accelerator_blacklist.ll
 ; postgres/optimized/auth.ll
 ; postgres/optimized/datetime.ll
 ; postgres/optimized/dt_common.ll
@@ -543,6 +542,23 @@ entry:
   ret i1 %4
 }
 
+; 7 occurrences:
+; eastl/optimized/EADateTime.cpp.ll
+; freetype/optimized/truetype.c.ll
+; linux/optimized/task_mmu.ll
+; oiio/optimized/strutil.cpp.ll
+; php/optimized/zend_accelerator_blacklist.ll
+; soc-simulator/optimized/verilated.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 12279
+  %3 = icmp ne i8 %0, 0
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; git/optimized/packfile.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
@@ -553,22 +569,6 @@ define i1 @func0000000000000286(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp samesign ult i64 %1, 19
   %3 = icmp slt i8 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 6 occurrences:
-; eastl/optimized/EADateTime.cpp.ll
-; freetype/optimized/truetype.c.ll
-; linux/optimized/task_mmu.ll
-; oiio/optimized/strutil.cpp.ll
-; soc-simulator/optimized/verilated.ll
-; stb/optimized/stb_sprintf.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 8190
-  %3 = icmp ne i8 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

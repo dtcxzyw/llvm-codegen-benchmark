@@ -1,9 +1,9 @@
 
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
-%"struct.Assimp::LWO::Key.2824478" = type <{ double, float, i32, [5 x float], [4 x i8] }>
-%"class.llvm::SDUse.3325926" = type { %"class.llvm::SDValue.3325927", ptr, ptr, ptr }
-%"class.llvm::SDValue.3325927" = type <{ ptr, i32, [4 x i8] }>
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
+%"struct.Assimp::LWO::Key.2824444" = type <{ double, float, i32, [5 x float], [4 x i8] }>
+%"class.llvm::SDUse.3325892" = type { %"class.llvm::SDValue.3325893", ptr, ptr, ptr }
+%"class.llvm::SDValue.3325893" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; openjdk/optimized/check_code.ll
@@ -44,7 +44,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.Assimp::LWO::Key.2824478", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.Assimp::LWO::Key.2824444", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -121,7 +121,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3325926", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3325892", ptr %0, i64 %5
   ret ptr %6
 }
 

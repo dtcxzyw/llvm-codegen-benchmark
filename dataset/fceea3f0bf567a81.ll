@@ -1,7 +1,7 @@
 
-%struct.nbap_dch_channel_info_t.3449097 = type { i32, i32, i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
-%struct.snd_pcm_hw_rule.3549998 = type { i32, i32, [5 x i32], ptr, ptr }
-%"class.sat::cut.3630013" = type { i32, i32, [5 x i32], i64, i64 }
+%struct.nbap_dch_channel_info_t.3449063 = type { i32, i32, i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
+%struct.snd_pcm_hw_rule.3549964 = type { i32, i32, [5 x i32], ptr, ptr }
+%"class.sat::cut.3629979" = type { i32, i32, [5 x i32], i64, i64 }
 
 ; 6 occurrences:
 ; linux/optimized/ip6_output.ll
@@ -15,7 +15,7 @@ define ptr @func000000000000009c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.nbap_dch_channel_info_t.3449097, ptr %0, i64 %1, i32 4, i64 %4
+  %5 = getelementptr %struct.nbap_dch_channel_info_t.3449063, ptr %0, i64 %1, i32 4, i64 %4
   ret ptr %5
 }
 
@@ -39,7 +39,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.snd_pcm_hw_rule.3549998, ptr %0, i64 %1, i32 2, i64 %4
+  %5 = getelementptr %struct.snd_pcm_hw_rule.3549964, ptr %0, i64 %1, i32 2, i64 %4
   ret ptr %5
 }
 
@@ -53,7 +53,7 @@ define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %"class.sat::cut.3630013", ptr %0, i64 %1, i32 2, i64 %4
+  %5 = getelementptr nuw %"class.sat::cut.3629979", ptr %0, i64 %1, i32 2, i64 %4
   ret ptr %5
 }
 

@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; jq/optimized/jv.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {

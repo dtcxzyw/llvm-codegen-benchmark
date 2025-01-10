@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; cpython/optimized/_json.ll
@@ -32,6 +32,8 @@
 ; opencv/optimized/grfmt_png.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; openjdk/optimized/cmspack.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll

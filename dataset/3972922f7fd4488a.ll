@@ -1,5 +1,5 @@
 
-; 5366 occurrences:
+; 5363 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
@@ -793,7 +793,6 @@
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/limex_simd256.c.ll
@@ -804,7 +803,6 @@
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -1730,7 +1728,6 @@
 ; linux/optimized/xhci-trace.ll
 ; linux/optimized/xhci.ll
 ; linux/optimized/xprtsock.ll
-; linux/optimized/xstate.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; linux/optimized/xt_addrtype.ll
 ; linux/optimized/xt_conntrack.ll

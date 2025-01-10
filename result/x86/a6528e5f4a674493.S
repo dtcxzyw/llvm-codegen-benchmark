@@ -22,6 +22,12 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$9, %eax
 	sbbq	$0, %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
+	leaq	2(%rcx), %rax
+	addq	%rsi, %rdi
+	cmovsq	%rcx, %rax
+	retq
 func0000000000000078:                   # @func0000000000000078
 	addq	%rsi, %rdi
 	xorl	%eax, %eax

@@ -16,12 +16,3 @@ func0000000000000051:                   # @func0000000000000051
 	cmovael	%edi, %eax
 	decl	%eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	leal	(%rax,%rax,4), %eax
-	testl	%esi, %esi
-	cmovnel	%edi, %eax
-	addl	$10, %eax
-	retq

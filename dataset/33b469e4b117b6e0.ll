@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; lz4/optimized/lz4hc.c.ll
+; 2 occurrences:
 ; openjdk/optimized/stubs.ll
 ; openusd/optimized/yv12config.c.ll
 ; Function Attrs: nounwind

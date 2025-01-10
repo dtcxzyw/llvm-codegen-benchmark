@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 155 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; arrow/optimized/hdfs.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -48,6 +48,7 @@
 ; ceres/optimized/triplet_sparse_matrix.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; clamav/optimized/cabd.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cpython/optimized/ceval.ll
@@ -60,6 +61,7 @@
 ; eastl/optimized/EATextUtil.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
+; freetype/optimized/smooth.c.ll
 ; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
@@ -73,6 +75,7 @@
 ; g2o/optimized/vertex_se3_euler.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; git/optimized/pack-write.ll
+; git/optimized/xdiff-interface.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; icu/optimized/utext.ll
@@ -80,6 +83,7 @@
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/ring_buffer.ll
+; linux/optimized/vsprintf.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; lua/optimized/lbaselib.ll
@@ -106,13 +110,16 @@
 ; node/optimized/libnode.heap_utils.ll
 ; node/optimized/libnode.js_stream.ll
 ; oiio/optimized/texturesys.cpp.ll
+; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openssl/optimized/libcrypto-lib-bf_buff.ll
@@ -121,8 +128,8 @@
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/detokenize.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; php/optimized/pack.ll
 ; postgres/optimized/array_typanalyze.ll
+; postgres/optimized/buffile.ll
 ; postgres/optimized/data.ll
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/pg_lzcompress.ll
@@ -132,22 +139,27 @@
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/svd.ll
+; raylib/optimized/rcore.c.ll
+; ruby/optimized/encoding.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/string.ll
 ; slurm/optimized/bitstring.ll
 ; slurm/optimized/libfile_bcast_la-file_bcast.ll
 ; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = call i64 @llvm.smin.i64(i64 %0, i64 %2)
+  %3 = call i64 @llvm.smin.i64(i64 %2, i64 %0)
   ret i64 %3
 }
 

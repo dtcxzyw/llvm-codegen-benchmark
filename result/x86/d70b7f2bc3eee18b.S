@@ -8,11 +8,6 @@ func0000000000000002:                   # @func0000000000000002
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	xorl	%eax, %eax
-	cmpq	%rsi, %rdi
-	setl	%al
-	retq
 func0000000000000010:                   # @func0000000000000010
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
@@ -57,6 +52,11 @@ func0000000000000016:                   # @func0000000000000016
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setge	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setl	%al
 	retq
 func000000000000000e:                   # @func000000000000000e
 	xorl	%eax, %eax

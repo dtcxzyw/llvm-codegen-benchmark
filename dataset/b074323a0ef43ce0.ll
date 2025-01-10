@@ -1,13 +1,13 @@
 
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
-%"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207792" = type { %"class.llvm::PointerIntPair.1173.3207793", %"class.llvm::ArrayRef.3207794" }
-%"class.llvm::PointerIntPair.1173.3207793" = type { %"struct.llvm::detail::PunnedPointer.1008.3207795" }
-%"struct.llvm::detail::PunnedPointer.1008.3207795" = type { [8 x i8] }
-%"class.llvm::ArrayRef.3207794" = type { ptr, i64 }
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
+%"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207758" = type { %"class.llvm::PointerIntPair.1173.3207759", %"class.llvm::ArrayRef.3207760" }
+%"class.llvm::PointerIntPair.1173.3207759" = type { %"struct.llvm::detail::PunnedPointer.1008.3207761" }
+%"struct.llvm::detail::PunnedPointer.1008.3207761" = type { [8 x i8] }
+%"class.llvm::ArrayRef.3207760" = type { ptr, i64 }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 37 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
@@ -152,7 +152,7 @@ entry:
 define ptr @func00000000000000eb(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -64
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
@@ -198,9 +198,9 @@ entry:
 define ptr @func00000000000001f0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
-  %6 = getelementptr %struct.lua_TValue.2923857, ptr %5, i64 %0
+  %6 = getelementptr %struct.lua_TValue.2923823, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }
@@ -298,7 +298,7 @@ entry:
 define ptr @func00000000000000c3(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207792", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207758", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = getelementptr i8, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
@@ -341,7 +341,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 48
-  %6 = getelementptr %struct.bio_vec.3550063, ptr %5, i64 %0
+  %6 = getelementptr %struct.bio_vec.3550029, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }

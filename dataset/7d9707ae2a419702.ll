@@ -47,19 +47,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; hermes/optimized/BytecodeStream.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 31
-  %3 = or disjoint i32 %2, %0
-  %4 = or i32 %3, -16777216
-  ret i32 %4
-}
-
-; 7 occurrences:
+; 8 occurrences:
+; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -70,8 +59,20 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 6
+  %2 = lshr i32 %1, 2
   %3 = or i32 %0, %2
+  %4 = or i32 %3, -16777216
+  ret i32 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/BytecodeStream.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 31
+  %3 = or disjoint i32 %2, %0
   %4 = or i32 %3, -16777216
   ret i32 %4
 }

@@ -579,7 +579,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/init_64.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
@@ -592,7 +592,6 @@ entry:
 ; openjdk/optimized/zPageCache.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; openjdk/optimized/zThreadLocalAllocBuffer.ll
-; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -649,19 +648,6 @@ entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; brotli/optimized/encode.c.ll
-; cpython/optimized/socketmodule.ll
-; git/optimized/sha256.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 63
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
@@ -786,6 +772,18 @@ entry:
   %2 = and i64 %1, 262140
   %3 = add nuw nsw i64 %2, 4
   %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; brotli/optimized/encode.c.ll
+; cpython/optimized/socketmodule.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = add nuw nsw i64 %2, 4
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 

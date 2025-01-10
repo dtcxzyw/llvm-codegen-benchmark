@@ -27,7 +27,7 @@ entry:
   ret i16 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
@@ -50,6 +50,7 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; wireshark/optimized/packet-moldudp.c.ll
 ; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i32 %1) #0 {
@@ -59,7 +60,7 @@ entry:
   ret i16 %3
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -139,6 +140,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/ngsniffer.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll

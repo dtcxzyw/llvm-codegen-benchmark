@@ -1,6 +1,6 @@
 
-%"struct.open_spiel::chess::Piece.3479215" = type { i8, i8 }
-%struct.e1000_shadow_ram.3538596 = type { i16, i8 }
+%"struct.open_spiel::chess::Piece.3479181" = type { i8, i8 }
+%struct.e1000_shadow_ram.3538562 = type { i16, i8 }
 
 ; 4 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479215"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479181"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [2048 x %struct.e1000_shadow_ram.3538596], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [2048 x %struct.e1000_shadow_ram.3538562], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

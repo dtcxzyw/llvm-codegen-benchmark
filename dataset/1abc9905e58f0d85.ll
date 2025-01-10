@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nfs2xdr.ll
 ; linux/optimized/nfs4xdr.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; postgres/optimized/walreceiver.ll
-; qemu/optimized/dump_dump.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

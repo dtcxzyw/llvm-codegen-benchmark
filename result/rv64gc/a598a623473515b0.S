@@ -19,6 +19,11 @@ func0000000000000000:                   # @func0000000000000000
 	sub	a0, a1, a0
 	addi	a0, a0, 8
 	ret
+func00000000000000b0:                   # @func00000000000000b0
+	add	a1, a1, a2
+	sub	a1, a1, a0
+	addi	a0, a1, 40
+	ret
 func0000000000000020:                   # @func0000000000000020
 	add	a1, a1, a2
 	not	a0, a0

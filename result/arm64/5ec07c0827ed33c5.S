@@ -28,6 +28,13 @@ func0000000000000118:                   // @func0000000000000118
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
+func0000000000000058:                   // @func0000000000000058
+// %bb.0:                               // %entry
+	tst	w2, #0x8
+	ccmp	w0, w1, #0, ne
+	cset	w0, ne
+	ret
+                                        // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	tst	w2, #0x7f

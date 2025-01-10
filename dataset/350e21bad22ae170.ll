@@ -692,7 +692,7 @@ entry:
   ret i1 %5
 }
 
-; 420 occurrences:
+; 422 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -901,8 +901,10 @@ entry:
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/LinePrinter.cpp.ll
+; lua/optimized/lstrlib.ll
 ; lua/optimized/ltablib.ll
 ; luau/optimized/VecDeque.test.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll

@@ -1,7 +1,7 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
-	asr	x8, x8, #3
+	asr	x8, x8, #5
 	cmp	x8, x0
 	csel	x0, x8, x0, hi
                                         // kill: def $w0 killed $w0 killed $x0

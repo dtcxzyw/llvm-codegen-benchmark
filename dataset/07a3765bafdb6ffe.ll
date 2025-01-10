@@ -12,10 +12,11 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/dma-iommu.ll
+; linux/optimized/vc_screen.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll

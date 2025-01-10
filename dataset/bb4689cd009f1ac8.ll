@@ -1,9 +1,6 @@
 
-; 40 occurrences:
-; abc/optimized/ivyFastMap.c.ll
+; 33 occurrences:
 ; clamav/optimized/explode.c.ll
-; clamav/optimized/matcher-bm.c.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; icu/optimized/number_grouping.ll
@@ -11,7 +8,6 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; libevent/optimized/evmap.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/public_key.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -20,7 +16,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_draw_arc.ll
-; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
@@ -33,8 +28,6 @@
 ; qemu/optimized/virtio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/bignum.ll
-; slurm/optimized/job_mgr.ll
-; slurm/optimized/job_test.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; wireshark/optimized/packet-epl.c.ll
@@ -48,7 +41,7 @@ entry:
   ret i16 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; icu/optimized/unames.ll
@@ -59,8 +52,6 @@ entry:
 ; postgres/optimized/dsa.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/hashutil.ll
-; slurm/optimized/gres_filter.ll
-; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i16 %1, i32 %2) #0 {

@@ -22,7 +22,7 @@
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = lshr i64 652188559272970764, %1
+  %2 = lshr i64 652177563988262924, %1
   %3 = trunc i64 %2 to i8
   ret i8 %3
 }

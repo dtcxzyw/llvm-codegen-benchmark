@@ -1,8 +1,9 @@
 
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
-%struct.P256_POINT_AFFINE.2634391 = type { [4 x i64], [4 x i64] }
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3266061" = type { ptr, ptr, ptr, ptr }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
+%struct.P256_POINT_AFFINE.2634358 = type { [4 x i64], [4 x i64] }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3266027" = type { ptr, ptr, ptr, ptr }
+%"class.cv::(anonymous namespace)::ufixedpoint16.3781658" = type { i16 }
 
 ; 53 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
@@ -238,7 +239,7 @@ entry:
   ret ptr %5
 }
 
-; 164 occurrences:
+; 165 occurrences:
 ; abc/optimized/acecBo.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
@@ -273,6 +274,7 @@ entry:
 ; cmake/optimized/zstd_fast.c.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; darktable/optimized/introspection_liquify.c.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -408,11 +410,11 @@ define ptr @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw [16 x %struct.P256_POINT.2634394], ptr %4, i64 %0
+  %5 = getelementptr nusw [16 x %struct.P256_POINT.2634361], ptr %4, i64 %0
   ret ptr %5
 }
 
-; 290 occurrences:
+; 296 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/kitIsop.c.ll
@@ -442,6 +444,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
@@ -469,6 +472,9 @@ entry:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/filters_sse2.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -693,6 +699,8 @@ entry:
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/ldo.ll
 ; redis/optimized/lvm.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; snappy/optimized/snappy.cc.ll
 ; spike/optimized/fdt_rw.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -708,7 +716,7 @@ define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw [64 x %struct.P256_POINT_AFFINE.2634391], ptr %4, i64 %0
+  %5 = getelementptr nusw nuw [64 x %struct.P256_POINT_AFFINE.2634358], ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -746,20 +754,6 @@ entry:
   %3 = sub nuw nsw i64 64, %2
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 4 occurrences:
-; boost/optimized/to_chars.ll
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; openssl/optimized/libcrypto-lib-sha1dgst.ll
-; openssl/optimized/libcrypto-shlib-sha1dgst.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 64, %2
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -931,16 +925,14 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
+; 1 occurrences:
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 16, %2
+  %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -965,8 +957,8 @@ entry:
 define ptr @func0000000000000012(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3191562", ptr %1, i64 %3
-  %5 = getelementptr nusw %"class.llvm::Use.3191562", ptr %4, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3191528", ptr %1, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3191528", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -979,8 +971,20 @@ entry:
 define ptr @func0000000000000013(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3266061", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3266061", ptr %4, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3266027", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3266027", ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781658", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781658", ptr %4, i64 %0
   ret ptr %5
 }
 

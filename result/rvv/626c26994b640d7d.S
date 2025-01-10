@@ -1,8 +1,3 @@
-func0000000000000005:                   # @func0000000000000005
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vor.vi	v8, v10, -6
-	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

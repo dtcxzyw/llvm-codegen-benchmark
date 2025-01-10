@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll

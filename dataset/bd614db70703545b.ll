@@ -1,13 +1,13 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%struct.Expr_.2748223 = type { ptr, %union.SourceSpan.2748215, i16, %union.anon.61.2748224 }
-%union.SourceSpan.2748215 = type { i64 }
-%union.anon.61.2748224 = type { %struct.ExprAnySwitch.2748225 }
-%struct.ExprAnySwitch.2748225 = type { i8, %union.anon.63.2748226 }
-%union.anon.63.2748226 = type { %struct.anon.64.2748227 }
-%struct.anon.64.2748227 = type { ptr, %union.SourceSpan.2748215, ptr }
-%struct._zend_ssa_var.2789897 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
-%struct.Indirect.3530524 = type { ptr, i32, ptr }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%struct.Expr_.2748189 = type { ptr, %union.SourceSpan.2748181, i16, %union.anon.61.2748190 }
+%union.SourceSpan.2748181 = type { i64 }
+%union.anon.61.2748190 = type { %struct.ExprAnySwitch.2748191 }
+%struct.ExprAnySwitch.2748191 = type { i8, %union.anon.63.2748192 }
+%union.anon.63.2748192 = type { %struct.anon.64.2748193 }
+%struct.anon.64.2748193 = type { ptr, %union.SourceSpan.2748181, ptr }
+%struct._zend_ssa_var.2789863 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
+%struct.Indirect.3530490 = type { ptr, i32, ptr }
 
 ; 2 occurrences:
 ; postgres/optimized/tidbitmap.ll
@@ -16,7 +16,7 @@
 define i64 @func0000000000000001(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 24
@@ -46,7 +46,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Expr_.2748223, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.Expr_.2748189, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 56
@@ -65,7 +65,7 @@ entry:
 define i64 @func0000000000000039(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_ssa_var.2789897, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_ssa_var.2789863, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 48
@@ -78,7 +78,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.Indirect.3530524, ptr %1, i64 %3
+  %4 = getelementptr %struct.Indirect.3530490, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 24

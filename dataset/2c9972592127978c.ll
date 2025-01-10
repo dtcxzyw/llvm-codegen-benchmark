@@ -1401,7 +1401,8 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; luajit/optimized/minilua.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000d2(i1 %0, ptr %1, ptr %2) #0 {

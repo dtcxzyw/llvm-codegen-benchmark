@@ -175,8 +175,9 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abseil-cpp/optimized/proto.cc.ll

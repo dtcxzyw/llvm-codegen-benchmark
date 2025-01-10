@@ -63,15 +63,15 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rax, %rcx
 	movq	%rcx, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000008:                   # @func0000000000000008
 	movq	%rdx, %rcx
 	shrq	$63, %rcx
 	addq	%rdx, %rcx
 	sarq	%rcx
-	addq	%rdi, %rcx
-	movq	%rsi, %rax
+	addq	%rsi, %rcx
+	movq	%rdi, %rax
 	shrq	$63, %rax
-	addq	%rsi, %rax
+	addq	%rdi, %rax
 	sarq	%rax
 	addq	%rcx, %rax
 	retq
@@ -100,15 +100,15 @@ func0000000000000034:                   # @func0000000000000034
 	imulq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addq	%rdx, %rax
 	sarq	%rax
-	addq	%rsi, %rax
-	movq	%rdi, %rcx
+	addq	%rdi, %rax
+	movq	%rsi, %rcx
 	shrq	$63, %rcx
-	addq	%rdi, %rcx
+	addq	%rsi, %rcx
 	sarq	%rcx
 	subq	%rcx, %rax
 	retq

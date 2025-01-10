@@ -1,5 +1,5 @@
 
-; 2939 occurrences:
+; 2938 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -1609,7 +1609,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll

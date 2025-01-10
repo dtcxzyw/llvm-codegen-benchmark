@@ -3014,7 +3014,7 @@ entry:
   ret i1 %4
 }
 
-; 1339 occurrences:
+; 1340 occurrences:
 ; abc/optimized/ivyCheck.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -4241,6 +4241,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; turborepo-rs/optimized/4w2esflvo3af23i5beiirhnry.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; vcpkg/optimized/registries.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll

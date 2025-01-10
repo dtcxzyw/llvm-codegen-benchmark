@@ -1,13 +1,13 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
-%"class.rocksdb::autovector.2614733" = type { i64, [16 x i8], ptr, %"class.std::vector.7.2614734" }
-%"class.std::vector.7.2614734" = type { %"struct.std::_Vector_base.8.2614735" }
-%"struct.std::_Vector_base.8.2614735" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614736" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614736" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614737" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614737" = type { ptr, ptr, ptr }
-%struct.Vmxnet3TxqDescr.2708029 = type { %struct.Vmxnet3Ring.2708030, %struct.Vmxnet3Ring.2708030, i8, i64, %struct.UPT1_TxStats.2708031 }
-%struct.Vmxnet3Ring.2708030 = type { i64, i32, i32, i32, i8 }
-%struct.UPT1_TxStats.2708031 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
+%"class.rocksdb::autovector.2614700" = type { i64, [16 x i8], ptr, %"class.std::vector.7.2614701" }
+%"class.std::vector.7.2614701" = type { %"struct.std::_Vector_base.8.2614702" }
+%"struct.std::_Vector_base.8.2614702" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614703" }
+%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2614703" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614704" }
+%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2614704" = type { ptr, ptr, ptr }
+%struct.Vmxnet3TxqDescr.2707995 = type { %struct.Vmxnet3Ring.2707996, %struct.Vmxnet3Ring.2707996, i8, i64, %struct.UPT1_TxStats.2707997 }
+%struct.Vmxnet3Ring.2707996 = type { i64, i32, i32, i32, i8 }
+%struct.UPT1_TxStats.2707997 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
 
 ; 27 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -41,7 +41,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -426,7 +426,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
-  %3 = getelementptr nuw [128 x %"class.rocksdb::autovector.2614733"], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr nuw [128 x %"class.rocksdb::autovector.2614700"], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 
@@ -439,7 +439,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2708029], ptr %0, i64 0, i64 %2, i32 0, i32 4
+  %3 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2707995], ptr %0, i64 0, i64 %2, i32 0, i32 4
   ret ptr %3
 }
 

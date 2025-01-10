@@ -1,12 +1,12 @@
 
-%"class.WasmEdge::Variant.2772702" = type { %"union.WasmEdge::VariadicUnion.2772703" }
-%"union.WasmEdge::VariadicUnion.2772703" = type { %"union.WasmEdge::VariadicUnion.50.2772704" }
-%"union.WasmEdge::VariadicUnion.50.2772704" = type { %"union.WasmEdge::VariadicUnion.51.2772705" }
-%"union.WasmEdge::VariadicUnion.51.2772705" = type { %"union.WasmEdge::VariadicUnion.52.2772706" }
-%"union.WasmEdge::VariadicUnion.52.2772706" = type { %"union.WasmEdge::VariadicUnion.53.2772707" }
-%"union.WasmEdge::VariadicUnion.53.2772707" = type { %"union.WasmEdge::VariadicUnion.54.2772708" }
-%"union.WasmEdge::VariadicUnion.54.2772708" = type { %"union.WasmEdge::VariadicUnion.55.2772709" }
-%"union.WasmEdge::VariadicUnion.55.2772709" = type { i128 }
+%"class.WasmEdge::Variant.2772668" = type { %"union.WasmEdge::VariadicUnion.2772669" }
+%"union.WasmEdge::VariadicUnion.2772669" = type { %"union.WasmEdge::VariadicUnion.50.2772670" }
+%"union.WasmEdge::VariadicUnion.50.2772670" = type { %"union.WasmEdge::VariadicUnion.51.2772671" }
+%"union.WasmEdge::VariadicUnion.51.2772671" = type { %"union.WasmEdge::VariadicUnion.52.2772672" }
+%"union.WasmEdge::VariadicUnion.52.2772672" = type { %"union.WasmEdge::VariadicUnion.53.2772673" }
+%"union.WasmEdge::VariadicUnion.53.2772673" = type { %"union.WasmEdge::VariadicUnion.54.2772674" }
+%"union.WasmEdge::VariadicUnion.54.2772674" = type { %"union.WasmEdge::VariadicUnion.55.2772675" }
+%"union.WasmEdge::VariadicUnion.55.2772675" = type { i128 }
 
 ; 24 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
@@ -39,7 +39,7 @@ entry:
   %3 = xor i64 %2, -1
   %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %"class.WasmEdge::Variant.2772702", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.WasmEdge::Variant.2772668", ptr %0, i64 %5
   ret ptr %6
 }
 

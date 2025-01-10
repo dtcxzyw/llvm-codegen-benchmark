@@ -63,7 +63,7 @@ entry:
   ret i1 %5
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaSatMap.c.ll
@@ -75,7 +75,6 @@ entry:
 ; bullet3/optimized/btQuantizedBvh.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
 ; icu/optimized/ucasemap.ll

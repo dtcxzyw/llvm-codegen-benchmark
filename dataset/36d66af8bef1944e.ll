@@ -1,17 +1,17 @@
 
-%struct.rb_code_location_struct.2600702 = type { %struct.rb_code_position_struct.2600703, %struct.rb_code_position_struct.2600703 }
-%struct.rb_code_position_struct.2600703 = type { i32, i32 }
-%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
-%struct.rb_code_position_struct.2601677 = type { i32, i32 }
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%struct.TestObject.3898407 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.rb_code_location_struct.2600669 = type { %struct.rb_code_position_struct.2600670, %struct.rb_code_position_struct.2600670 }
+%struct.rb_code_position_struct.2600670 = type { i32, i32 }
+%struct.rb_code_location_struct.2601643 = type { %struct.rb_code_position_struct.2601644, %struct.rb_code_position_struct.2601644 }
+%struct.rb_code_position_struct.2601644 = type { i32, i32 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%struct.TestObject.3898357 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; ruby/optimized/parse.ll
@@ -20,7 +20,7 @@ define ptr @func00000000000000d3(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %struct.rb_code_location_struct.2600702, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %struct.rb_code_location_struct.2600669, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -31,7 +31,7 @@ define ptr @func00000000000000db(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %struct.rb_code_location_struct.2601676, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %struct.rb_code_location_struct.2601643, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -42,7 +42,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = sub nuw i64 %3, %1
-  %5 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -191,7 +191,7 @@ define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 3
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %struct.TestObject.3898407, ptr %0, i64 %4, i32 4
+  %5 = getelementptr %struct.TestObject.3898357, ptr %0, i64 %4, i32 4
   ret ptr %5
 }
 

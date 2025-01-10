@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.3093053" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3093054", i64, %union.anon.13.3093055 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3093054" = type { ptr }
-%union.anon.13.3093055 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3093019" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3093020", i64, %union.anon.13.3093021 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3093020" = type { ptr }
+%union.anon.13.3093021 = type { i64, [8 x i8] }
 
 ; 4 occurrences:
 ; cpython/optimized/sre.ll
@@ -43,7 +43,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, %2
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3093053", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3093019", ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -29,7 +29,7 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/linkmodes.ll
 ; linux/optimized/trace_events_filter.ll
@@ -37,7 +37,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
-; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {

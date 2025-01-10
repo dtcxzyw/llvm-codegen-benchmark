@@ -244,7 +244,7 @@ entry:
   ret i1 %4
 }
 
-; 125 occurrences:
+; 124 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -284,7 +284,6 @@ entry:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CallAndMessageChecker.cpp.ll
 ; llvm/optimized/CheckExprLifetime.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/DeclTemplate.cpp.ll

@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3264091" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3264057" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 6 occurrences:
 ; gromacs/optimized/colvarcomp.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 64
   %4 = select i1 %3, i64 -1738, i64 -1737
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3264091", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3264057", ptr %0, i64 %4
   ret ptr %5
 }
 

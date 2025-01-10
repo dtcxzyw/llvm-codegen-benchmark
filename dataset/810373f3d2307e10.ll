@@ -1,6 +1,6 @@
 
-%struct.envelope.3368666 = type { i32, ptr, ptr, ptr, ptr, i64, ptr, i32, %struct.tMPI_Atomic.3368667, i32, ptr, ptr, i32, ptr, ptr, ptr, ptr }
-%struct.tMPI_Atomic.3368667 = type { i32, [60 x i8] }
+%struct.envelope.3368632 = type { i32, ptr, ptr, ptr, ptr, i64, ptr, i32, %struct.tMPI_Atomic.3368633, i32, ptr, ptr, i32, ptr, ptr, ptr, ptr }
+%struct.tMPI_Atomic.3368633 = type { i32, [60 x i8] }
 
 ; 10 occurrences:
 ; actix-rs/optimized/3r4ha69xj2bs6l86.ll
@@ -27,7 +27,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000001f4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.envelope.3368666, ptr %2, i64 %0
+  %3 = getelementptr nusw nuw %struct.envelope.3368632, ptr %2, i64 %0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 184
   %5 = icmp samesign ult i64 %0, %1
   %6 = select i1 %5, ptr %4, ptr null

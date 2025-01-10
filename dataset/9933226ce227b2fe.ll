@@ -1,5 +1,5 @@
 
-%"struct.re2::CaseFold.2601764" = type { i32, i32, i32 }
+%"struct.re2::CaseFold.2601731" = type { i32, i32, i32 }
 
 ; 5 occurrences:
 ; abc/optimized/fretFlow.c.ll
@@ -13,7 +13,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw nuw %"struct.re2::CaseFold.2601764", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.re2::CaseFold.2601731", ptr %0, i64 %5
   ret ptr %6
 }
 

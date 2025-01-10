@@ -1,5 +1,5 @@
 
-; 659 occurrences:
+; 660 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/aigJust.c.ll
@@ -618,6 +618,7 @@
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-pcp.c.ll
 ; wireshark/optimized/packet-per.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll

@@ -33,8 +33,3 @@ func000000000000000c:                   // @func000000000000000c
 	mul	w0, w0, w1
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mul	w0, w0, w1
-	ret
-                                        // -- End function

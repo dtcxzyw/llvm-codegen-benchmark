@@ -35,11 +35,6 @@ func000000000000001b:                   # @func000000000000001b
 	shlq	$4, %rax
 	leaq	4(%rdi,%rax), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
-	subl	%edx, %esi
-	movslq	%esi, %rax
-	leaq	-2(%rdi,%rax), %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	subl	%edx, %esi
 	movslq	%esi, %rax
@@ -50,12 +45,6 @@ func0000000000000008:                   # @func0000000000000008
 	subl	%edx, %esi
 	movslq	%esi, %rax
 	leaq	8(%rdi,%rax,4), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	subl	%edx, %esi
-	movslq	%esi, %rax
-	leaq	(%rax,%rax,2), %rax
-	leaq	4(%rdi,%rax,4), %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	subl	%edx, %esi

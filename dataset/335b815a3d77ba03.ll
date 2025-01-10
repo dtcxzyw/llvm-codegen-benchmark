@@ -37,6 +37,7 @@
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -44,7 +45,6 @@
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
-; postgres/optimized/formatting.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll

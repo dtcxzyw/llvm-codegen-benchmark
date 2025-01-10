@@ -299,13 +299,10 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; boost/optimized/exit_code.ll
-; ceres/optimized/dense_cholesky.cc.ll
 ; freetype/optimized/sdf.c.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
 ; libquic/optimized/time_support.c.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
@@ -332,6 +329,7 @@ entry:
 }
 
 ; 64 occurrences:
+; arrow/optimized/diff.cc.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -368,7 +366,6 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; freetype/optimized/autofit.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -397,17 +394,20 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %0, %3
-  %5 = sdiv i64 %1, 2
-  %6 = add i64 %4, %5
+  %4 = add nsw i64 %1, %3
+  %5 = sdiv i64 %0, 2
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; ceres/optimized/dense_cholesky.cc.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
 ; libquic/optimized/time_support.c.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -431,14 +431,14 @@ entry:
 }
 
 ; 1 occurrences:
-; arrow/optimized/diff.cc.ll
+; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %1, %3
-  %5 = sdiv i64 %0, -2
-  %6 = add i64 %5, %4
+  %4 = add nsw i64 %3, %0
+  %5 = sdiv i64 %1, -2
+  %6 = add i64 %4, %5
   ret i64 %6
 }
 

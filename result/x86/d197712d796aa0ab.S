@@ -28,3 +28,8 @@ func000000000000006a:                   # @func000000000000006a
 	movslq	%edx, %rcx
 	leaq	30(%rax,%rcx,2), %rax
 	retq
+func0000000000000060:                   # @func0000000000000060
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq

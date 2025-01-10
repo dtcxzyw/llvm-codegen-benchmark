@@ -45,7 +45,7 @@ entry:
   ret i64 %4
 }
 
-; 106 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -99,7 +99,9 @@ entry:
 ; node/optimized/libnode.preferredaddress.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/array.cpp.ll
 ; openusd/optimized/assetLocalizationDelegate.cpp.ll

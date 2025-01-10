@@ -681,6 +681,7 @@
 ; graphviz/optimized/cvtgxl.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/edge_distinct_coloring.c.ll
+; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gml2gv.c.ll
 ; graphviz/optimized/graphml2gv.c.ll
@@ -3919,7 +3920,6 @@
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
@@ -3929,7 +3929,7 @@ entry:
   ret ptr %4
 }
 
-; 393 occurrences:
+; 392 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -4322,7 +4322,6 @@ entry:
 ; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
 entry:

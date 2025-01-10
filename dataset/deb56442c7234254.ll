@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/print_settings.c.ll
+; icu/optimized/pkgitems.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll

@@ -4,8 +4,8 @@ func0000000000000003:                   # @func0000000000000003
 	addq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
-	andl	$1, %eax
+	movq	%rdi, %rax
+	andq	$-16, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

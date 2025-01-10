@@ -291,7 +291,7 @@ entry:
   ret i1 %5
 }
 
-; 390 occurrences:
+; 389 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -321,7 +321,6 @@ entry:
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abc/optimized/trees.c.ll
-; abc/optimized/utilSort.c.ll
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnWlc.c.ll
@@ -1119,7 +1118,7 @@ entry:
   ret i1 %5
 }
 
-; 602 occurrences:
+; 603 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -1252,6 +1251,7 @@ entry:
 ; abc/optimized/sclUpsize.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmTim.c.ll
+; abc/optimized/utilSort.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNtk.c.ll

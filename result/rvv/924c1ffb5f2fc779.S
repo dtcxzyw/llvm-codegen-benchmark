@@ -1,10 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v10, 7
+	vmseq.vi	v0, v10, 0
 	vzext.vf2	v10, v8
-	li	a0, -1
-	srli	a0, a0, 32
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vim	v8, v10, 0, v0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,9 +1,9 @@
 
-%"struct.std::pair.3739795" = type <{ %"struct.cv::Ptr.25.3739785", float, [4 x i8] }>
-%"struct.cv::Ptr.25.3739785" = type { %"class.std::shared_ptr.26.3739786" }
-%"class.std::shared_ptr.26.3739786" = type { %"class.std::__shared_ptr.27.3739787" }
-%"class.std::__shared_ptr.27.3739787" = type { ptr, %"class.std::__shared_count.3739773" }
-%"class.std::__shared_count.3739773" = type { ptr }
+%"struct.std::pair.3739745" = type <{ %"struct.cv::Ptr.25.3739735", float, [4 x i8] }>
+%"struct.cv::Ptr.25.3739735" = type { %"class.std::shared_ptr.26.3739736" }
+%"class.std::shared_ptr.26.3739736" = type { %"class.std::__shared_ptr.27.3739737" }
+%"class.std::__shared_ptr.27.3739737" = type { ptr, %"class.std::__shared_count.3739723" }
+%"class.std::__shared_count.3739723" = type { ptr }
 
 ; 1 occurrences:
 ; php/optimized/zend_execute.ll
@@ -77,7 +77,7 @@ entry:
   %4 = add nuw i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = getelementptr nusw %"struct.std::pair.3739795", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.std::pair.3739745", ptr %0, i64 %6
   ret ptr %7
 }
 

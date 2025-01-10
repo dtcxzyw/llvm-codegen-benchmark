@@ -1,10 +1,13 @@
 
-; 17 occurrences:
+; 22 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; boost/optimized/environment.ll
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; darktable/optimized/MosDecoder.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/drm_ioctl.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; minetest/optimized/ban.cpp.ll
@@ -16,6 +19,8 @@
 ; openssl/optimized/libssl-lib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
 ; qemu/optimized/util_iov.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {

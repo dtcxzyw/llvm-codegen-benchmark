@@ -1,16 +1,17 @@
 
-%struct._zval_struct.2790368 = type { %union._zend_value.2790378, %union.anon.2790379, %union.anon.2.2790380 }
-%union._zend_value.2790378 = type { i64 }
-%union.anon.2790379 = type { i32 }
-%union.anon.2.2790380 = type { i32 }
-%struct.cset.3062332 = type { ptr, i8, i8 }
-%"class.std::set.182.3132880" = type { %"class.std::_Rb_tree.183.3132881" }
-%"class.std::_Rb_tree.183.3132881" = type { %"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132882" }
-%"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132882" = type { %"struct.std::_Rb_tree_key_compare.13.3132795", %"struct.std::_Rb_tree_header.3132796" }
-%"struct.std::_Rb_tree_key_compare.13.3132795" = type { %"struct.std::less.14.3132797" }
-%"struct.std::less.14.3132797" = type { i8 }
-%"struct.std::_Rb_tree_header.3132796" = type { %"struct.std::_Rb_tree_node_base.3132798", i64 }
-%"struct.std::_Rb_tree_node_base.3132798" = type { i32, ptr, ptr, ptr }
+%struct._zval_struct.2790334 = type { %union._zend_value.2790344, %union.anon.2790345, %union.anon.2.2790346 }
+%union._zend_value.2790344 = type { i64 }
+%union.anon.2790345 = type { i32 }
+%union.anon.2.2790346 = type { i32 }
+%struct.cset.3062298 = type { ptr, i8, i8 }
+%"class.std::set.182.3132846" = type { %"class.std::_Rb_tree.183.3132847" }
+%"class.std::_Rb_tree.183.3132847" = type { %"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132848" }
+%"struct.std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>>::_Rb_tree_impl.3132848" = type { %"struct.std::_Rb_tree_key_compare.13.3132761", %"struct.std::_Rb_tree_header.3132762" }
+%"struct.std::_Rb_tree_key_compare.13.3132761" = type { %"struct.std::less.14.3132763" }
+%"struct.std::less.14.3132763" = type { i8 }
+%"struct.std::_Rb_tree_header.3132762" = type { %"struct.std::_Rb_tree_node_base.3132764", i64 }
+%"struct.std::_Rb_tree_node_base.3132764" = type { i32, ptr, ptr, ptr }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 10 occurrences:
 ; linux/optimized/fast_commit.ll
@@ -162,7 +163,8 @@ entry:
   ret i1 %6
 }
 
-; 110 occurrences:
+; 111 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/sfprint.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; lz4/optimized/lz4.c.ll
@@ -335,13 +337,14 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct._zval_struct.2790368, ptr %1, i64 %3
+  %4 = getelementptr %struct._zval_struct.2790334, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 80
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; cmake/optimized/frm_driver.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/namei.ll
@@ -349,6 +352,7 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
+; opencv/optimized/brisk.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
@@ -390,7 +394,7 @@ entry:
 define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.cset.3062332, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.cset.3062298, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   %6 = icmp eq ptr %0, %5
   ret i1 %6
@@ -435,7 +439,7 @@ entry:
 define i1 @func000000000000016c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::set.182.3132880", ptr %1, i64 %3, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.std::set.182.3132846", ptr %1, i64 %3, i32 0, i32 0, i32 1
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
@@ -478,6 +482,18 @@ entry:
 }
 
 ; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %"class.ZXing::Trit.3649621", ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -7
+  %6 = icmp uge ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; graphviz/optimized/scan.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, ptr %1, i32 %2) #0 {
@@ -486,18 +502,6 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
   %6 = icmp ne ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 20919 occurrences:
+; 20929 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -1460,6 +1460,7 @@
 ; c3c/optimized/llvm_codegen_debug_info.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
+; c3c/optimized/llvm_codegen_instr.c.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
 ; c3c/optimized/malloc.c.ll
@@ -1670,10 +1671,12 @@
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/crypto.c.ll
 ; clamav/optimized/cvd.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/dsig.c.ll
 ; clamav/optimized/elf.c.ll
 ; clamav/optimized/entconv.c.ll
+; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/filefn.cpp.ll
 ; clamav/optimized/filestr.cpp.ll
 ; clamav/optimized/fmap.c.ll
@@ -1955,6 +1958,7 @@
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/ftplistparser.c.ll
 ; cmake/optimized/getinfo.c.ll
+; cmake/optimized/gzread.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/hist.c.ll
 ; cmake/optimized/hostip.c.ll
@@ -4167,6 +4171,7 @@
 ; git/optimized/pack-revindex.ll
 ; git/optimized/pack-write.ll
 ; git/optimized/packfile.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/parse.ll
 ; git/optimized/patch-id.ll
@@ -5695,6 +5700,7 @@
 ; libquic/optimized/file_util_posix.cc.ll
 ; libquic/optimized/gcm.c.ll
 ; libquic/optimized/gcm_test.c.ll
+; libquic/optimized/gzread.c.ll
 ; libquic/optimized/gzwrite.c.ll
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/hkdf.cc.ll
@@ -10547,6 +10553,7 @@
 ; nuttx/optimized/lib_libfwrite.c.ll
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_nftw.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
@@ -10661,6 +10668,7 @@
 ; ockam-rs/optimized/1kf3nciefeyq4tfp.ll
 ; ockam-rs/optimized/1l1yexp2yu73yat8.ll
 ; ockam-rs/optimized/1p7irsir7pcyegbj.ll
+; ockam-rs/optimized/1pv5gnbequqkl6bi.ll
 ; ockam-rs/optimized/1rhd9bblljt0sgxb.ll
 ; ockam-rs/optimized/1sna1kukcpmrcv4c.ll
 ; ockam-rs/optimized/1u6h88ugr8rwmiaw.ll
@@ -10779,6 +10787,7 @@
 ; ockam-rs/optimized/4j4a1v5i1sqbggrm.ll
 ; ockam-rs/optimized/4jyxbm4i1a8dsfue.ll
 ; ockam-rs/optimized/4kvhnp2ywtthbq6d.ll
+; ockam-rs/optimized/4mxoiw4m4s1rw29y.ll
 ; ockam-rs/optimized/4o6a2p97oy1nlemw.ll
 ; ockam-rs/optimized/4op0lm10vgcgt7cp.ll
 ; ockam-rs/optimized/4puou0360m10nij5.ll
@@ -20842,6 +20851,7 @@
 ; zlib/optimized/adler32.c.ll
 ; zlib/optimized/crc32.c.ll
 ; zlib/optimized/deflate.c.ll
+; zlib/optimized/gzread.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll

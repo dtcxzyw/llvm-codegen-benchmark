@@ -24,11 +24,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smax.i64(i64, i64) #1
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/shmem.ll
+; luau/optimized/isocline.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/t_zset.ll
@@ -152,7 +153,7 @@ entry:
   ret i64 %2
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -205,7 +206,6 @@ entry:
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll

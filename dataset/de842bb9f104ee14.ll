@@ -606,12 +606,12 @@ entry:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000861(i64 %0, i64 %1) #0 {
+define i1 @func000000000000086c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 16383
   %3 = zext i1 %2 to i64
   %4 = add nuw nsw i64 %0, %3
-  %5 = icmp eq i64 %4, 3
+  %5 = icmp ne i64 %4, 3
   ret i1 %5
 }
 

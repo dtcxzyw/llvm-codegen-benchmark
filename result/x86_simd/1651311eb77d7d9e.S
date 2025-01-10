@@ -64,9 +64,9 @@ func000000000000000d:                   # @func000000000000000d
 	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI5_0:
-	.long	32                              # 0x20
+	.long	256                             # 0x100
 func0000000000000006:                   # @func0000000000000006
-	vpaddw	%xmm1, %xmm1, %xmm1
+	vpsllw	$5, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero,xmm1[4],zero,xmm1[5],zero,xmm1[6],zero,xmm1[7],zero
 	vpternlogd	$248, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

@@ -1,5 +1,5 @@
 
-%struct.CurveAnchorPoint.2874017 = type { float, float }
+%struct.CurveAnchorPoint.2873983 = type { float, float }
 
 ; 56 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -97,7 +97,7 @@ entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 24
-  %5 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2874017], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2873983], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,7 +1,7 @@
 
-%struct.list_head.3542417 = type { ptr, ptr }
-%struct.ve_node.3549928 = type { %struct.rb_node.3549929, i32 }
-%struct.rb_node.3549929 = type { i64, ptr, ptr }
+%struct.list_head.3542383 = type { ptr, ptr }
+%struct.ve_node.3549894 = type { %struct.rb_node.3549895, i32 }
+%struct.rb_node.3549895 = type { i64, ptr, ptr }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -53,7 +53,7 @@ entry:
   %3 = sub nsw i64 -208, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 208
-  %6 = getelementptr [14 x %struct.list_head.3542417], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [14 x %struct.list_head.3542383], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = sub nuw nsw i64 -6320, %2
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 6320
-  %6 = getelementptr [27 x %struct.ve_node.3549928], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [27 x %struct.ve_node.3549894], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

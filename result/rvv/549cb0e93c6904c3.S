@@ -73,6 +73,11 @@ func0000000000000038:                   # @func0000000000000038
 	vminu.vv	v10, v10, v12
 	vmsltu.vv	v0, v10, v8
 	ret
+func000000000000000b:                   # @func000000000000000b
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vminu.vv	v10, v10, v12
+	vmsle.vv	v0, v10, v8
+	ret
 func0000000000000025:                   # @func0000000000000025
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vminu.vv	v10, v10, v12

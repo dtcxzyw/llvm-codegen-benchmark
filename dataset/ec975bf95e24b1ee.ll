@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
 
 ; 58 occurrences:
 ; clamav/optimized/autoit.c.ll
@@ -139,10 +139,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000001f0(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %struct.lua_TValue.2923857, ptr %4, i64 %5
+  %6 = getelementptr %struct.lua_TValue.2923823, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

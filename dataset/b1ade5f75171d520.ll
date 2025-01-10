@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/ls-tree.ll
@@ -24,6 +24,8 @@
 ; openmpi/optimized/pcomm_ishrink.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/ps_title.ll

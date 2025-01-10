@@ -1,7 +1,8 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/ifMan.c.ll
 ; icu/optimized/islamcal.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
@@ -36,10 +37,9 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; opencv/optimized/brisk.cpp.ll

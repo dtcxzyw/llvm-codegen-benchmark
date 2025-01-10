@@ -14,6 +14,14 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	%eax, %edi
 	setl	%al
 	retq
+func00000000000000aa:                   # @func00000000000000aa
+	movl	%esi, %eax
+	sarl	$31, %eax
+	andl	%esi, %eax
+	decl	%edi
+	cmpl	%eax, %edi
+	setg	%al
+	retq
 func0000000000000066:                   # @func0000000000000066
 	cmpl	$8, %esi
 	movl	$8, %eax

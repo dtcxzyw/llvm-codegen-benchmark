@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3309293" = type { i32 }
+%"class.clang::SourceLocation.3309259" = type { i32 }
 
 ; 5 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -27,7 +27,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = add nuw i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3309293", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3309259", ptr %0, i64 %6
   ret ptr %7
 }
 

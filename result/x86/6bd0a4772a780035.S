@@ -26,15 +26,6 @@ func000000000000002c:                   # @func000000000000002c
 	movzbl	%cl, %eax
 	shll	$8, %eax
 	retq
-func000000000000018c:                   # @func000000000000018c
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	testq	%rdi, %rdi
-	leal	15(%rax,%rax,2), %ecx
-	movl	$18, %eax
-	cmovnel	%ecx, %eax
-	retq
 func000000000000010c:                   # @func000000000000010c
 	shrq	$32, %rsi
 	setne	%al
@@ -70,4 +61,13 @@ func0000000000000084:                   # @func0000000000000084
 	andb	%al, %cl
 	movzbl	%cl, %eax
 	shll	$2, %eax
+	retq
+func000000000000018c:                   # @func000000000000018c
+	xorl	%eax, %eax
+	testq	%rsi, %rsi
+	setne	%al
+	cmpl	$2, %edi
+	leal	5(%rax,%rax,2), %ecx
+	movl	$5, %eax
+	cmovnel	%ecx, %eax
 	retq

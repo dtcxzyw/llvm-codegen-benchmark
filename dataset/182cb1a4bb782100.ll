@@ -419,7 +419,7 @@ entry:
   ret i32 %3
 }
 
-; 91 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; boost/optimized/formatter.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -476,7 +476,6 @@ entry:
 ; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; snappy/optimized/snappy.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/triggers.ll

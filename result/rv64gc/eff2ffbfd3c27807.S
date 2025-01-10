@@ -18,8 +18,8 @@ func0000000000000061:                   # @func0000000000000061
 .LBB2_2:                                # %entry
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a2, a2, 34
-	bgez	a2, .LBB3_2
+	andi	a2, a2, 16
+	beqz	a2, .LBB3_2
 	mv	a1, a0
 .LBB3_2:                                # %entry
 	mv	a0, a1

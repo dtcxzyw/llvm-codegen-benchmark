@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; flac/optimized/bitreader.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -23,6 +23,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; postgres/optimized/md.ll
 ; qemu/optimized/block_vhdx-log.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

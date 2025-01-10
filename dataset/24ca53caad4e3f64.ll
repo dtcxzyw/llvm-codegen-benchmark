@@ -1,7 +1,9 @@
 
-; 79 occurrences:
+; 81 occurrences:
 ; clamav/optimized/vba_extract.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; git/optimized/pretty.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll

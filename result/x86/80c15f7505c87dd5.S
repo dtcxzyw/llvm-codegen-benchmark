@@ -7,7 +7,7 @@ func000000000000006f:                   # @func000000000000006f
 	retq
 func00000000000000f0:                   # @func00000000000000f0
 	movl	%edx, %eax
-	leaq	(%rdi,%rax,2), %rcx
+	leaq	(%rdi,%rax,8), %rcx
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq

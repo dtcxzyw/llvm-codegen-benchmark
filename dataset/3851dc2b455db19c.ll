@@ -125,7 +125,8 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
 ; openjdk/optimized/parse3.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind

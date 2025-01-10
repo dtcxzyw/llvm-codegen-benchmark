@@ -1,6 +1,6 @@
 
-%"class.tbb::detail::d1::blocked_range.2635870" = type { i64, i64, i64 }
-%"class.tbb::detail::d1::blocked_range.2637472" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2635837" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2637439" = type { i64, i64, i64 }
 
 ; 214 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
@@ -224,7 +224,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635870", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635837", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -293,7 +293,7 @@ entry:
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2637472", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2637439", ptr %5, i64 %4
   ret ptr %6
 }
 

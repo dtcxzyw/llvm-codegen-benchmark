@@ -46,11 +46,3 @@ func0000000000000174:                   // @func0000000000000174
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000001f4:                   // @func00000000000001f4
-// %bb.0:                               // %entry
-	lsr	w8, w2, #1
-	add	x8, x0, x8
-	cmp	x8, w1, uxtw
-	cset	w0, lo
-	ret
-                                        // -- End function

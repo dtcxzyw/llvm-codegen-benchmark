@@ -1,5 +1,5 @@
 
-%"class.std::complex.2845632" = type { { double, double } }
+%"class.std::complex.2845598" = type { { double, double } }
 
 ; 2 occurrences:
 ; opencv/optimized/checker_model.cpp.ll
@@ -9,7 +9,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr %"class.std::complex.2845632", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %"class.std::complex.2845598", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 

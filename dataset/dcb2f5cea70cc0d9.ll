@@ -36,6 +36,21 @@ entry:
   ret i64 %4
 }
 
+; 5 occurrences:
+; brotli/optimized/encode.c.ll
+; clamav/optimized/dll.cpp.ll
+; cpython/optimized/longobject.ll
+; faiss/optimized/hamming.cpp.ll
+; freetype/optimized/truetype.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw nsw i64 %3, 17179869180
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; Function Attrs: nounwind
@@ -56,20 +71,6 @@ entry:
   %2 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
   %3 = shl i64 %2, 2
   %4 = add i64 %3, 34359738360
-  ret i64 %4
-}
-
-; 4 occurrences:
-; brotli/optimized/encode.c.ll
-; cpython/optimized/longobject.ll
-; faiss/optimized/hamming.cpp.ll
-; freetype/optimized/truetype.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = call i64 @llvm.umin.i64(i64 %0, i64 %1)
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 8
   ret i64 %4
 }
 

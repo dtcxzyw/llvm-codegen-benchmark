@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/type.cc.ll
 ; boost/optimized/matches_relation_factory.ll
@@ -33,6 +33,7 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/serialFullGC.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll

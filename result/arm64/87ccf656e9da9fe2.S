@@ -29,8 +29,8 @@ func000000000000000a:                   // @func000000000000000a
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	cmp	w2, #0
-	mov	w8, #18                         // =0x12
-	mov	w9, #12                         // =0xc
+	mov	w8, #15                         // =0xf
+	mov	w9, #18                         // =0x12
 	csel	w8, w9, w8, eq
 	tst	w0, #0x1
 	csel	w0, w1, w8, ne

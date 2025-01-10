@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/introspection_invert.c.ll

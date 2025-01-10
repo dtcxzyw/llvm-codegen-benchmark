@@ -1708,7 +1708,7 @@ entry:
   ret i32 %4
 }
 
-; 974 occurrences:
+; 973 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -1982,7 +1982,6 @@ entry:
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_migrate.ll
-; linux/optimized/intel_reset.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-scsi.ll

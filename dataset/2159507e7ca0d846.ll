@@ -1,6 +1,6 @@
 
-%struct.FormData_pg_attribute.3653303 = type { i32, %struct.nameData.3653304, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
-%struct.nameData.3653304 = type { [64 x i8] }
+%struct.FormData_pg_attribute.3653269 = type { i32, %struct.nameData.3653270, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
+%struct.nameData.3653270 = type { [64 x i8] }
 
 ; 6 occurrences:
 ; abc/optimized/trees.c.ll
@@ -43,7 +43,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
   %6 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %7 = getelementptr [0 x %struct.FormData_pg_attribute.3653303], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [0 x %struct.FormData_pg_attribute.3653269], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

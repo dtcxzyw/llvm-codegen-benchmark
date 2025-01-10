@@ -1,7 +1,7 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
-%struct.anon.1.3440501 = type { i32, i32, i32 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
+%struct.anon.1.3440467 = type { i32, i32, i32 }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
@@ -32,7 +32,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 100
-  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700202], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700168], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -115,7 +115,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 824
-  %6 = getelementptr [512 x %struct.anon.1.3440501], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [512 x %struct.anon.1.3440467], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

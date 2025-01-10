@@ -1,5 +1,6 @@
 
-; 26 occurrences:
+; 28 occurrences:
+; abc/optimized/ivyFastMap.c.ll
 ; cmake/optimized/frm_data.c.ll
 ; linux/optimized/hosts.ll
 ; linux/optimized/scm.ll
@@ -8,6 +9,7 @@
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
+; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/fast_score.cpp.ll

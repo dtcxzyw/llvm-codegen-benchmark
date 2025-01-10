@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/date.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002a(i32 %0, i32 %1) #0 {

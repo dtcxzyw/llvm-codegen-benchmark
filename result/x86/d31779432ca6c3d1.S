@@ -40,6 +40,22 @@ func0000000000000768:                   # @func0000000000000768
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
+func0000000000000804:                   # @func0000000000000804
+	movl	%edx, %eax
+	shlq	$7, %rax
+	leaq	25216(%rsi,%rax), %rax
+	addq	$25216, %rdi                    # imm = 0x6280
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
+func0000000000000808:                   # @func0000000000000808
+	movl	%edx, %eax
+	shlq	$7, %rax
+	leaq	25216(%rsi,%rax), %rax
+	addq	$25216, %rdi                    # imm = 0x6280
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
 func0000000000000fe8:                   # @func0000000000000fe8
 	movl	%edx, %eax
 	leaq	4(%rsi,%rax), %rax

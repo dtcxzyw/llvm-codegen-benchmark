@@ -1,7 +1,7 @@
 
-%"class.tsl::detail_robin_hash::bucket_entry.318.3088727" = type { %"class.tsl::detail_robin_hash::bucket_entry_hash.3088724", i16, i8, i8, %"union.std::aligned_storage<48, 8>::type.3088728" }
-%"class.tsl::detail_robin_hash::bucket_entry_hash.3088724" = type { i32 }
-%"union.std::aligned_storage<48, 8>::type.3088728" = type { [48 x i8] }
+%"class.tsl::detail_robin_hash::bucket_entry.318.3088693" = type { %"class.tsl::detail_robin_hash::bucket_entry_hash.3088690", i16, i8, i8, %"union.std::aligned_storage<48, 8>::type.3088694" }
+%"class.tsl::detail_robin_hash::bucket_entry_hash.3088690" = type { i32 }
+%"union.std::aligned_storage<48, 8>::type.3088694" = type { [48 x i8] }
 
 ; 78 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -105,7 +105,7 @@ entry:
   %3 = sdiv exact i64 %2, 56
   %4 = add nsw i64 %3, 1
   %5 = and i64 %4, %1
-  %6 = getelementptr %"class.tsl::detail_robin_hash::bucket_entry.318.3088727", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.tsl::detail_robin_hash::bucket_entry.318.3088693", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

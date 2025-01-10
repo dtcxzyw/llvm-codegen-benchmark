@@ -688,9 +688,10 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; git/optimized/revision.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; linux/optimized/net.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; lua/optimized/lvm.ll

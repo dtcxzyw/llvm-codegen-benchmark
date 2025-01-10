@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
 
 ; 18 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -52,8 +52,8 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 -32
-  %6 = getelementptr nusw %"class.llvm::Use.3241632", ptr %5, i64 %0
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3241632", ptr %6, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3241598", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3241598", ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -75,7 +75,8 @@ func000000000000003f:                   # @func000000000000003f
 	retq
 func0000000000000017:                   # @func0000000000000017
 	imulq	%rdx, %rsi
-	leaq	(%rdi,%rsi,4), %rax
+	shlq	$6, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq
 func0000000000000013:                   # @func0000000000000013
 	imulq	%rdx, %rsi

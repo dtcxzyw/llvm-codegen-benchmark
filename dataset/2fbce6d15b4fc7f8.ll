@@ -1,10 +1,10 @@
 
-%"struct.OT::OffsetTo.250.2736983" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.std_timing.3531788 = type { i8, i8 }
-%struct.bio_vec.3533318 = type { ptr, i32, i32 }
+%"struct.OT::OffsetTo.250.2736949" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.std_timing.3531754 = type { i8, i8 }
+%struct.bio_vec.3533284 = type { ptr, i32, i32 }
 
 ; 11 occurrences:
 ; abc/optimized/giaKf.c.ll
@@ -81,7 +81,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.250.2736983"], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.250.2736949"], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -145,7 +145,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 5
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 5
-  %6 = getelementptr [6 x %struct.std_timing.3531788], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [6 x %struct.std_timing.3531754], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -157,7 +157,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 -40
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -272
-  %6 = getelementptr [17 x %struct.bio_vec.3533318], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [17 x %struct.bio_vec.3533284], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

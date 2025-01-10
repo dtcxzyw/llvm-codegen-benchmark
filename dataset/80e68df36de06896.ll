@@ -114,7 +114,7 @@ entry:
   ret i64 %4
 }
 
-; 141 occurrences:
+; 142 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/double-to-string.cc.ll
@@ -234,6 +234,7 @@ entry:
 ; postgres/optimized/pgc.ll
 ; quantlib/optimized/bspline.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/zipmap.ll
 ; rocksdb/optimized/version_set.cc.ll

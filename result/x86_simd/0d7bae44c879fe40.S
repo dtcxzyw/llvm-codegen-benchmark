@@ -392,7 +392,7 @@ func0000000000000148:                   # @func0000000000000148
 	vzeroupper
 	retq
 .LCPI48_0:
-	.long	48                              # 0x30
+	.long	52                              # 0x34
 func0000000000000194:                   # @func0000000000000194
 	vpcmpneqd	%ymm2, %ymm1, %k0
 	vpcmpltud	.LCPI48_0(%rip){1to8}, %ymm0, %k1

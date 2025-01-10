@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
 
 ; 4 occurrences:
 ; graphviz/optimized/dthash.c.ll
@@ -13,7 +13,7 @@ entry:
   %2 = freeze i32 %1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct.lua_TValue.2923857, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.lua_TValue.2923823, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -301,15 +301,13 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/aigSplit.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/vsprintf.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:

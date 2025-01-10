@@ -40,31 +40,24 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a2, 1
 .LBB5_2:                                # %entry
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000000:                   # @func0000000000000000
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB6_2
-	addiw	a0, a2, -5
+	addiw	a0, a2, -1
 .LBB6_2:                                # %entry
 	ret
-func0000000000000000:                   # @func0000000000000000
+func0000000000000007:                   # @func0000000000000007
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB7_2
 	addiw	a0, a2, -1
 .LBB7_2:                                # %entry
 	ret
-func0000000000000007:                   # @func0000000000000007
-	andi	a3, a0, 1
-	mv	a0, a1
-	bnez	a3, .LBB8_2
-	addiw	a0, a2, -1
-.LBB8_2:                                # %entry
-	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a3, a0, 1
 	mv	a0, a1
-	bnez	a3, .LBB9_2
+	bnez	a3, .LBB8_2
 	addiw	a0, a2, 1
-.LBB9_2:                                # %entry
+.LBB8_2:                                # %entry
 	ret

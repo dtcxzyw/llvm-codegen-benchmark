@@ -1,12 +1,12 @@
 
-%"class.mitsuba::filesystem::path.2603450" = type <{ %"class.std::__1::vector.2603413", i8, [7 x i8] }>
-%"class.std::__1::vector.2603413" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603414" }
-%"class.std::__1::__compressed_pair.55.2603414" = type { %"struct.std::__1::__compressed_pair_elem.56.2603415" }
-%"struct.std::__1::__compressed_pair_elem.56.2603415" = type { ptr }
-%struct._zval_struct.2792090 = type { %union._zend_value.2792100, %union.anon.0.2792101, %union.anon.3.2792102 }
-%union._zend_value.2792100 = type { i64 }
-%union.anon.0.2792101 = type { i32 }
-%union.anon.3.2792102 = type { i32 }
+%"class.mitsuba::filesystem::path.2603417" = type <{ %"class.std::__1::vector.2603380", i8, [7 x i8] }>
+%"class.std::__1::vector.2603380" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603381" }
+%"class.std::__1::__compressed_pair.55.2603381" = type { %"struct.std::__1::__compressed_pair_elem.56.2603382" }
+%"struct.std::__1::__compressed_pair_elem.56.2603382" = type { ptr }
+%struct._zval_struct.2792056 = type { %union._zend_value.2792066, %union.anon.0.2792067, %union.anon.3.2792068 }
+%union._zend_value.2792066 = type { i64 }
+%union.anon.0.2792067 = type { i32 }
+%union.anon.3.2792068 = type { i32 }
 
 ; 6 occurrences:
 ; lightgbm/optimized/gbdt.cpp.ll
@@ -20,11 +20,11 @@ define ptr @func0000000000000007(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = getelementptr nusw nuw %"class.mitsuba::filesystem::path.2603450", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.mitsuba::filesystem::path.2603417", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -51,13 +51,15 @@ entry:
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; msgpack/optimized/stream.cpp.ll
 ; opencv/optimized/ts_arrtest.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/zend_gc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = select i1 %1, i64 64, i64 %3
-  %5 = getelementptr nusw %struct._zval_struct.2792090, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2792056, ptr %0, i64 %4
   ret ptr %5
 }
 

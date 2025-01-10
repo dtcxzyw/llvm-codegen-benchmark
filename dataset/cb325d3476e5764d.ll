@@ -13,7 +13,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 40 occurrences:
+; 41 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
@@ -53,6 +53,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/variational_refinement.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; slurm/optimized/common_topo.ll
 ; yosys/optimized/simplec.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {

@@ -118,6 +118,14 @@ func000000000000002a:                   # @func000000000000002a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+func0000000000000186:                   # @func0000000000000186
+	andi	a1, a1, 255
+	lui	a2, 3
+	snez	a1, a1
+	addiw	a2, a2, -9
+	slt	a0, a0, a2
+	and	a0, a0, a1
+	ret
 func0000000000000148:                   # @func0000000000000148
 	sext.b	a1, a1
 	slti	a1, a1, 0
@@ -169,12 +177,6 @@ func0000000000000088:                   # @func0000000000000088
 	sltiu	a1, a1, 6
 	sltiu	a0, a0, 2
 	andn	a0, a1, a0
-	ret
-func0000000000000186:                   # @func0000000000000186
-	sext.b	a0, a0
-	snez	a1, a1
-	slti	a0, a0, 58
-	and	a0, a0, a1
 	ret
 func0000000000000188:                   # @func0000000000000188
 	andi	a1, a1, 255

@@ -1,17 +1,17 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
-%struct.btMultibodyLink.2818498 = type { float, %class.btVector3.2818499, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %struct.btSpatialMotionVector.2818501, %struct.btSpatialMotionVector.2818501, [6 x %struct.btSpatialMotionVector.2818501], i32, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2818502, ptr, ptr, ptr, float, float, float, float, float, float }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%class.btQuaternion.2818500 = type { %class.btQuadWord.2818503 }
-%class.btQuadWord.2818503 = type { [4 x float] }
-%class.btVector3.2818499 = type { [4 x float] }
-%class.btTransform.2818502 = type { %class.btMatrix3x3.2818504, %class.btVector3.2818499 }
-%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
-%"class.clang::Token.3326696" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
+%struct.btMultibodyLink.2818464 = type { float, %class.btVector3.2818465, i32, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btVector3.2818465, %struct.btSpatialMotionVector.2818467, %struct.btSpatialMotionVector.2818467, [6 x %struct.btSpatialMotionVector.2818467], i32, i32, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2818468, ptr, ptr, ptr, float, float, float, float, float, float }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%class.btQuaternion.2818466 = type { %class.btQuadWord.2818469 }
+%class.btQuadWord.2818469 = type { [4 x float] }
+%class.btVector3.2818465 = type { [4 x float] }
+%class.btTransform.2818468 = type { %class.btMatrix3x3.2818470, %class.btVector3.2818465 }
+%class.btMatrix3x3.2818470 = type { [3 x %class.btVector3.2818465] }
+%"class.clang::Token.3326662" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 72 occurrences:
 ; cmake/optimized/smb.c.ll
@@ -448,7 +448,7 @@ define ptr @func00000000000000f0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 6
-  %5 = getelementptr %"struct.OT::IntType.139.2736869", ptr %4, i64 %0
+  %5 = getelementptr %"struct.OT::IntType.139.2736835", ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -2
   ret ptr %6
 }
@@ -530,7 +530,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000eb(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -64
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
@@ -567,7 +567,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000f3(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %struct.btMultibodyLink.2818498, ptr %1, i64 %2, i32 8, i64 0, i32 1
+  %3 = getelementptr nuw %struct.btMultibodyLink.2818464, ptr %1, i64 %2, i32 8, i64 0, i32 1
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
@@ -702,9 +702,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000ab(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.clang::Token.3326696", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.clang::Token.3326662", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -24
-  %5 = getelementptr nusw %"class.clang::Token.3326696", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.clang::Token.3326662", ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 24
   ret ptr %6
 }
@@ -814,7 +814,7 @@ define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
-  %5 = getelementptr %struct.bio_vec.3550063, ptr %4, i64 %0
+  %5 = getelementptr %struct.bio_vec.3550029, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }

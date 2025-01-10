@@ -8,11 +8,12 @@ func000000000000000f:                   # @func000000000000000f
 	leal	(%rdi,%rsi), %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	shll	$4, %edx
+	shll	$20, %edx
 	andl	$1, %esi
-	leal	(%rdx,%rsi,4), %eax
+	shll	$13, %esi
+	leal	(%rsi,%rdx), %eax
 	andl	$1, %edi
-	xorl	$3, %edi
+	shll	$15, %edi
 	orl	%edi, %eax
 	retq
 func000000000000000b:                   # @func000000000000000b

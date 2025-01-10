@@ -1,11 +1,11 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
 
 ; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -19,7 +19,7 @@ define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %0, i64 1
   %3 = sext i8 %1 to i64
-  %4 = getelementptr %"struct.OT::IntType.167.2730712", ptr %2, i64 %3
+  %4 = getelementptr %"struct.OT::IntType.167.2730678", ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 1
   ret ptr %5
 }
@@ -49,7 +49,7 @@ entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -83,7 +83,7 @@ entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %4, i64 %3
   ret ptr %5
 }
 

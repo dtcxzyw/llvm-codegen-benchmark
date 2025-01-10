@@ -1,32 +1,32 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%"struct.rocksdb::DbPath.2621850" = type { %"class.std::__cxx11::basic_string.2621830", i64 }
-%"class.std::__cxx11::basic_string.2621830" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621831", i64, %union.anon.2621832 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621831" = type { ptr }
-%union.anon.2621832 = type { i64, [8 x i8] }
-%struct.tls_sigalg_info_st.2633831 = type { ptr, i16, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32 }
-%"struct.boost::sub_match.2685972" = type <{ %"struct.std::pair.2685976", i8, [7 x i8] }>
-%"struct.std::pair.2685976" = type { %"class.__gnu_cxx::__normal_iterator.25.2685971", %"class.__gnu_cxx::__normal_iterator.25.2685971" }
-%"class.__gnu_cxx::__normal_iterator.25.2685971" = type { ptr }
-%struct.hb_glyph_info_t.2730675 = type { i32, i32, i32, %union._hb_var_int_t.2730676, %union._hb_var_int_t.2730676 }
-%union._hb_var_int_t.2730676 = type { i32 }
-%class.BasicBlock.2731852 = type { i8, i32, i32, i32, i32, ptr, i32, i32 }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
-%struct.H5G_entry_t.3055460 = type { i32, %union.H5G_cache_t.3055461, i64, i64 }
-%union.H5G_cache_t.3055461 = type { %struct.anon.3055462 }
-%struct.anon.3055462 = type { i64, i64 }
-%"class.llvm::MachineOperand.3288929" = type { i32, %union.anon.233.3288930, ptr, %"union.llvm::MachineOperand::ContentsUnion.3288931" }
-%union.anon.233.3288930 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3288931" = type { %"class.llvm::ArrayRef.234.3288932" }
-%"class.llvm::ArrayRef.234.3288932" = type { ptr, i64 }
-%struct.JSClass.3435083 = type { i32, i32, ptr, ptr, ptr, ptr }
-%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
-%struct.bio_vec.3546550 = type { ptr, i32, i32 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%"struct.rocksdb::DbPath.2621817" = type { %"class.std::__cxx11::basic_string.2621797", i64 }
+%"class.std::__cxx11::basic_string.2621797" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621798", i64, %union.anon.2621799 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621798" = type { ptr }
+%union.anon.2621799 = type { i64, [8 x i8] }
+%struct.tls_sigalg_info_st.2633798 = type { ptr, i16, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32 }
+%"struct.boost::sub_match.2685939" = type <{ %"struct.std::pair.2685943", i8, [7 x i8] }>
+%"struct.std::pair.2685943" = type { %"class.__gnu_cxx::__normal_iterator.25.2685938", %"class.__gnu_cxx::__normal_iterator.25.2685938" }
+%"class.__gnu_cxx::__normal_iterator.25.2685938" = type { ptr }
+%struct.hb_glyph_info_t.2730641 = type { i32, i32, i32, %union._hb_var_int_t.2730642, %union._hb_var_int_t.2730642 }
+%union._hb_var_int_t.2730642 = type { i32 }
+%class.BasicBlock.2731818 = type { i8, i32, i32, i32, i32, ptr, i32, i32 }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%"class.rapidjson::GenericMember.2825502" = type { %"class.rapidjson::GenericValue.2825277", %"class.rapidjson::GenericValue.2825277" }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
+%struct.H5G_entry_t.3055426 = type { i32, %union.H5G_cache_t.3055427, i64, i64 }
+%union.H5G_cache_t.3055427 = type { %struct.anon.3055428 }
+%struct.anon.3055428 = type { i64, i64 }
+%"class.llvm::MachineOperand.3288895" = type { i32, %union.anon.233.3288896, ptr, %"union.llvm::MachineOperand::ContentsUnion.3288897" }
+%union.anon.233.3288896 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3288897" = type { %"class.llvm::ArrayRef.234.3288898" }
+%"class.llvm::ArrayRef.234.3288898" = type { ptr, i64 }
+%struct.JSClass.3435049 = type { i32, i32, ptr, ptr, ptr, ptr }
+%struct.JSVarDef.3435063 = type { i32, i32, i32, i32 }
+%struct.bio_vec.3546516 = type { ptr, i32, i32 }
 
 ; 21 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -55,7 +55,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -315,7 +315,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.rocksdb::DbPath.2621850", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::DbPath.2621817", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -355,7 +355,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -9
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.tls_sigalg_info_st.2633831, ptr %0, i64 %3, i32 10
+  %4 = getelementptr nusw nuw %struct.tls_sigalg_info_st.2633798, ptr %0, i64 %3, i32 10
   ret ptr %4
 }
 
@@ -379,7 +379,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.boost::sub_match.2685972", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.boost::sub_match.2685939", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -390,7 +390,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.hb_glyph_info_t.2730675, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.hb_glyph_info_t.2730641, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -411,7 +411,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.BasicBlock.2731852, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %class.BasicBlock.2731818, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -446,7 +446,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794548, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -461,7 +461,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.rapidjson::GenericMember.2825536", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.rapidjson::GenericMember.2825502", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -473,7 +473,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.H5G_entry_t.3055460, ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw nuw %struct.H5G_entry_t.3055426, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -484,7 +484,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.llvm::MachineOperand.3288929", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.llvm::MachineOperand.3288895", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -497,7 +497,7 @@ define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 38
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSClass.3435083, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSClass.3435049, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -510,7 +510,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -536870912
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.JSVarDef.3435063, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -522,7 +522,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.bio_vec.3546550, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.bio_vec.3546516, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

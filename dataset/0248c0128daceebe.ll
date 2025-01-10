@@ -221,7 +221,7 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 40 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; chibicc/optimized/preprocess.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
@@ -242,6 +242,8 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/imageDecompressor.ll
 ; openjdk/optimized/relocator.ll
@@ -254,6 +256,7 @@ entry:
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/mapFunction.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; ozz-animation/optimized/local_to_model_job.cc.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll

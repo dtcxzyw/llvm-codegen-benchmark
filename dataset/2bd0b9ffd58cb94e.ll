@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; icu/optimized/ucnv_u8.ll
+; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/netlabel_kapi.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; wireshark/optimized/packet-ber.c.ll

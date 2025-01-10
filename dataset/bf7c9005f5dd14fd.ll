@@ -31,7 +31,7 @@ entry:
   ret i1 %4
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/others_common.c.ll
@@ -55,6 +55,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -242,13 +243,11 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libquic/optimized/aead_test.cc.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; mold/optimized/compress.cc.ll
 ; node/optimized/libnode.node_errors.ll
-; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
-; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:

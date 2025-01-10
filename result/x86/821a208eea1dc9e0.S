@@ -16,8 +16,8 @@ func0000000000000144:                   # @func0000000000000144
 	leal	(%rsi,%rdx,4), %eax
 	retq
 func0000000000000330:                   # @func0000000000000330
-	leal	(%rdi,%rsi,2), %eax
-	leal	(%rax,%rdx,2), %eax
+	addl	%esi, %edx
+	leal	(%rdi,%rdx,2), %eax
 	retq
 func0000000000000310:                   # @func0000000000000310
 	addl	%esi, %edx

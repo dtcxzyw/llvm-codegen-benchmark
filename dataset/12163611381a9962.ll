@@ -1,5 +1,5 @@
 
-%struct.hlist_head.3550203 = type { ptr }
+%struct.hlist_head.3550169 = type { ptr }
 
 ; 4 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -43,7 +43,7 @@ entry:
   %4 = and i32 %1, 63
   %5 = or disjoint i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.hlist_head.3550203, ptr %0, i64 %6
+  %7 = getelementptr %struct.hlist_head.3550169, ptr %0, i64 %6
   ret ptr %7
 }
 

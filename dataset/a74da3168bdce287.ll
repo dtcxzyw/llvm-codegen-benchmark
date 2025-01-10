@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -23,6 +23,8 @@
 ; rust-analyzer-rs/optimized/vux7x0s1st8za9f.ll
 ; rust-analyzer-rs/optimized/yi4ld7f3458brcr.ll
 ; spike/optimized/csrs.ll
+; spike/optimized/s_sub256M.ll
+; spike/optimized/s_subM.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll

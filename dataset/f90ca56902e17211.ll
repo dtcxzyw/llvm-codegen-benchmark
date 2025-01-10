@@ -27,7 +27,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -53,6 +53,7 @@ entry:
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:

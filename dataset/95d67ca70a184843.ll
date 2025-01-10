@@ -12,9 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000006f(i32 %0) #0 {
 entry:

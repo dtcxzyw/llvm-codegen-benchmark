@@ -25,11 +25,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
 ; linux/optimized/ff-memless.ll
-; linux/optimized/printk.ll
 ; openjdk/optimized/utf8.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind

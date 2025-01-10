@@ -29,11 +29,12 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; msdfgen/optimized/msdfgen.cpp.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; spike/optimized/triggers.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

@@ -407,7 +407,7 @@ entry:
   ret i1 %3
 }
 
-; 271 occurrences:
+; 270 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -550,7 +550,6 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/printk.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
@@ -2028,7 +2027,7 @@ entry:
   ret i1 %3
 }
 
-; 155 occurrences:
+; 154 occurrences:
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcLut.c.ll
@@ -2111,7 +2110,6 @@ entry:
 ; linux/optimized/route.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/xhci-ring.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll

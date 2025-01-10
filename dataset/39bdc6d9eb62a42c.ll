@@ -1,5 +1,5 @@
 
-%struct.Answer.2705487 = type { i8, i8 }
+%struct.Answer.2705453 = type { i8, i8 }
 
 ; 48 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -72,7 +72,7 @@ entry:
   %3 = srem i32 %2, 128
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 74720
-  %6 = getelementptr [128 x %struct.Answer.2705487], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [128 x %struct.Answer.2705453], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

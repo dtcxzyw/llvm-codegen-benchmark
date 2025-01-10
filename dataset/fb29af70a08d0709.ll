@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/src.ll
 ; clamav/optimized/filtering.c.ll
@@ -46,7 +46,6 @@ entry:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/palette.c.ll
-; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/n_tty.ll
@@ -62,10 +61,8 @@ entry:
 ; openjdk/optimized/pngrtran.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; php/optimized/pcre2_jit_compile.ll
-; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i8 %1, i8 %2) #0 {

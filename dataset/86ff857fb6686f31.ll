@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::BlockCacheLookupContext.2613155" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613069", i64, i64, %"class.std::__cxx11::basic_string.2613069", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.2613069" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070", i64, %union.anon.2613071 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070" = type { ptr }
-%union.anon.2613071 = type { i64, [8 x i8] }
-%struct.AHCICmdHdr.2709110 = type { i16, i16, i32, i64, [4 x i32] }
+%"struct.rocksdb::BlockCacheLookupContext.2613122" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613036", i64, i64, %"class.std::__cxx11::basic_string.2613036", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.2613036" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037", i64, %union.anon.2613038 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037" = type { ptr }
+%union.anon.2613038 = type { i64, [8 x i8] }
+%struct.AHCICmdHdr.2709076 = type { i16, i16, i32, i64, [4 x i32] }
 
 ; 23 occurrences:
 ; abc/optimized/abcTiming.c.ll
@@ -32,7 +32,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613155", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613122", ptr %1, i64 %2
   %4 = select i1 %0, ptr null, ptr %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
@@ -49,7 +49,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.AHCICmdHdr.2709110, ptr %1, i64 %2
+  %3 = getelementptr %struct.AHCICmdHdr.2709076, ptr %1, i64 %2
   %4 = select i1 %0, ptr null, ptr %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5

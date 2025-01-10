@@ -59,14 +59,6 @@ func0000000000000054:                   # @func0000000000000054
 	andb	%al, %cl
 	movzbl	%cl, %eax
 	retq
-func0000000000000198:                   # @func0000000000000198
-	testl	%esi, %esi
-	sets	%al
-	testl	%edi, %edi
-	setne	%cl
-	andb	%al, %cl
-	movzbl	%cl, %eax
-	retq
 func0000000000000210:                   # @func0000000000000210
 	cmpl	$65536, %esi                    # imm = 0x10000
 	setae	%al

@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3139227" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3139193" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 18 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -41,9 +41,9 @@ define ptr @func00000000000000ab(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3139227", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3139193", ptr %0, i64 %4
   %6 = zext i16 %1 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3139227", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3139193", ptr %5, i64 %6
   ret ptr %7
 }
 

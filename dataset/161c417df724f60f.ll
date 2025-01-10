@@ -89,11 +89,9 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
@@ -132,10 +130,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; postgres/optimized/bufpage.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i64 %0, i64 %1, i32 %2) #0 {
 entry:

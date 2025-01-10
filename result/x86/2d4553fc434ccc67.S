@@ -14,18 +14,18 @@ func0000000000000003:                   # @func0000000000000003
 	leaq	8(%rdi,%rax), %rax
 	retq
 func000000000000001b:                   # @func000000000000001b
-	incl	%esi
+	addl	$-2, %esi
 	movslq	%esi, %rax
-	imulq	$715827883, %rax, %rcx          # imm = 0x2AAAAAAB
+	imulq	$1431655766, %rax, %rcx         # imm = 0x55555556
 	movq	%rcx, %rdx
 	shrq	$63, %rdx
 	shrq	$32, %rcx
 	addl	%edx, %ecx
-	addl	%ecx, %ecx
 	leal	(%rcx,%rcx,2), %ecx
 	subl	%ecx, %eax
 	cltq
-	leaq	6(%rdi,%rax,8), %rax
+	shlq	$4, %rax
+	leaq	8(%rdi,%rax), %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	addl	$6, %esi

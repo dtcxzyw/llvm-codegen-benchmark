@@ -135,7 +135,7 @@ entry:
   ret i64 %5
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; arrow/optimized/message.cc.ll
@@ -201,6 +201,7 @@ entry:
 ; qemu/optimized/util_cutils.c.ll
 ; quantlib/optimized/date.ll
 ; quantlib/optimized/twofactormodel.ll
+; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/hyperloglog.ll
 ; ruby/optimized/time.ll

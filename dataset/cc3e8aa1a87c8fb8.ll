@@ -410,4 +410,16 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

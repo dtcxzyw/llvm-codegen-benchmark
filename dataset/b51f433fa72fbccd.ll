@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3154084" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3154050" = type { ptr, ptr, ptr, ptr }
 
 ; 10 occurrences:
 ; boost/optimized/instantiate_cpp_exprgrammar.ll
@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3154084", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3154050", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = and i64 %6, 137438953344

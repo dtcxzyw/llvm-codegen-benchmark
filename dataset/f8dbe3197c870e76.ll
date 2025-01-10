@@ -39,47 +39,5 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 
-; 5 occurrences:
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 17
-  %3 = shl nuw i64 %0, 5
-  %4 = add i64 %3, %2
-  %5 = icmp ult i64 %4, 9223372036854775793
-  ret i1 %5
-}
-
-; 5 occurrences:
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %0, 5
-  %3 = sub i64 -17, %1
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; ockam-rs/optimized/111eznecj9pn2lkp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %0, 5
-  %3 = sub i64 -17, %1
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
-}
-
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

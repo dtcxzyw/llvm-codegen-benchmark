@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 112 occurrences:
 ; abc/optimized/abcAig.c.ll
@@ -272,7 +272,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4
+  %5 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %4
   ret ptr %5
 }
 

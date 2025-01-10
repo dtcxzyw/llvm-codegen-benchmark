@@ -76,7 +76,7 @@ entry:
   ret i64 %6
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/darLib.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
@@ -96,6 +96,7 @@ entry:
 ; llvm/optimized/StackMaps.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
+; node/optimized/simdutf.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
@@ -105,6 +106,7 @@ entry:
 ; redis/optimized/listpack.ll
 ; redis/optimized/siphash.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wireshark/optimized/packet-flexray.c.ll

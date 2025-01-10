@@ -1,5 +1,5 @@
 
-; 329 occurrences:
+; 352 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -9,7 +9,30 @@
 ; arrow/optimized/builder_run_end.cc.ll
 ; arrow/optimized/ree_util.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll

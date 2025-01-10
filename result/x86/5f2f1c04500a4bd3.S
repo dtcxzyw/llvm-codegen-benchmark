@@ -8,5 +8,6 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movswq	%si, %rax
-	leaq	(%rdi,%rax,4), %rax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq

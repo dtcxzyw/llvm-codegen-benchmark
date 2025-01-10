@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3294323" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3294289" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 6 occurrences:
 ; linux/optimized/ip6_fib.ll
@@ -38,7 +38,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 -15057, i64 -15086
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3294323", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3294289", ptr %0, i64 %5
   ret ptr %6
 }
 

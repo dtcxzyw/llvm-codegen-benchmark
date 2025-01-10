@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; boost/optimized/buffer_piece_border.ll
-; openblas/optimized/dlarre.c.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; postgres/optimized/pathnode.ll
 ; Function Attrs: nounwind

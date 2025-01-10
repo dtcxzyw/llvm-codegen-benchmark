@@ -628,6 +628,18 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; wireshark/optimized/packet-locamation-im.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = sub nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
 ; 5 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -688,17 +700,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw i64 %0, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-locamation-im.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %1, %3
-  %5 = sub nuw nsw i64 %0, %4
   ret i64 %5
 }
 

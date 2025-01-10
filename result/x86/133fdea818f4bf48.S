@@ -11,18 +11,18 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000146:                   # @func0000000000000146
-	testb	%dl, %dl
-	setns	%cl
-	cmpb	%sil, %dil
-	setl	%al
-	andb	%cl, %al
-	retq
 func00000000000000ca:                   # @func00000000000000ca
 	cmpb	%dl, %sil
 	setl	%cl
 	testb	%dil, %dil
 	setns	%al
+	andb	%cl, %al
+	retq
+func0000000000000146:                   # @func0000000000000146
+	testb	%dl, %dl
+	setns	%cl
+	cmpb	%sil, %dil
+	setl	%al
 	andb	%cl, %al
 	retq
 func0000000000000024:                   # @func0000000000000024

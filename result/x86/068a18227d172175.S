@@ -38,8 +38,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	%dil, %sil
 	seta	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
-	shrb	%sil
-	cmpb	%dil, %sil
-	setae	%al
-	retq

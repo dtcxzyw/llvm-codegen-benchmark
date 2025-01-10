@@ -447,7 +447,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/ioReadBench.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -462,6 +462,7 @@ entry:
 ; meshlab/optimized/packing.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/tm_tree.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/optimize.c.ll
@@ -480,7 +481,7 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; flac/optimized/lpc.c.ll
@@ -495,6 +496,7 @@ entry:
 ; linux/optimized/svcsock.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll

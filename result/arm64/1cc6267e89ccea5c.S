@@ -104,15 +104,6 @@ func000000000000010c:                   // @func000000000000010c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000194:                   // @func0000000000000194
-// %bb.0:                               // %entry
-	mov	w8, #55296                      // =0xd800
-	and	x9, x0, #0x1ff800
-	cmp	x0, #272, lsl #12               // =1114112
-	ccmp	x9, x8, #4, lo
-	cset	w0, ne
-	ret
-                                        // -- End function
 func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
 	mov	w8, #257                        // =0x101

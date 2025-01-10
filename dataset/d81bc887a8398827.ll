@@ -68,6 +68,33 @@ entry:
   ret i1 %6
 }
 
+; 16 occurrences:
+; cmake/optimized/openssl.c.ll
+; cmake/optimized/test_int_C.c.ll
+; cmake/optimized/test_int_CXX.cxx.ll
+; curl/optimized/libcurl_la-openssl.ll
+; libquic/optimized/persistent_memory_allocator.cc.ll
+; libquic/optimized/quic_connection.cc.ll
+; linux/optimized/fault.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; postgres/optimized/snprintf.ll
+; postgres/optimized/snprintf_shlib.ll
+; postgres/optimized/snprintf_srv.ll
+; quickjs/optimized/libbf.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = and i1 %3, %0
+  %5 = icmp eq i32 %1, 1116
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
 ; 12 occurrences:
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -101,31 +128,6 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = and i1 %0, %3
   %5 = icmp ult i32 %1, 8
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 14 occurrences:
-; cmake/optimized/test_int_C.c.ll
-; cmake/optimized/test_int_CXX.cxx.ll
-; libquic/optimized/persistent_memory_allocator.cc.ll
-; libquic/optimized/quic_connection.cc.ll
-; linux/optimized/fault.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/CGException.cpp.ll
-; postgres/optimized/snprintf.ll
-; postgres/optimized/snprintf_shlib.ll
-; postgres/optimized/snprintf_srv.ll
-; quickjs/optimized/libbf.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
-  %5 = icmp eq i32 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
 }

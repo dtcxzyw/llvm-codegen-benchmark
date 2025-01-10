@@ -1,15 +1,15 @@
 
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
-%"class.std::tuple.2824823" = type { %"struct.std::_Tuple_impl.2824824" }
-%"struct.std::_Tuple_impl.2824824" = type { %"struct.std::_Tuple_impl.87.2824819", %"struct.std::_Head_base.90.2824825" }
-%"struct.std::_Tuple_impl.87.2824819" = type { %"struct.std::_Tuple_impl.88.2824820", %"struct.std::_Head_base.89.2824821" }
-%"struct.std::_Tuple_impl.88.2824820" = type { %"struct.std::_Head_base.2824822" }
-%"struct.std::_Head_base.2824822" = type { i64 }
-%"struct.std::_Head_base.89.2824821" = type { %class.aiVector3t.2824802 }
-%class.aiVector3t.2824802 = type { double, double, double }
-%"struct.std::_Head_base.90.2824825" = type { i64 }
-%"struct.llvm::rdf::NodeAddr.141.3208530" = type <{ ptr, i32, [4 x i8] }>
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
+%"class.std::tuple.2824789" = type { %"struct.std::_Tuple_impl.2824790" }
+%"struct.std::_Tuple_impl.2824790" = type { %"struct.std::_Tuple_impl.87.2824785", %"struct.std::_Head_base.90.2824791" }
+%"struct.std::_Tuple_impl.87.2824785" = type { %"struct.std::_Tuple_impl.88.2824786", %"struct.std::_Head_base.89.2824787" }
+%"struct.std::_Tuple_impl.88.2824786" = type { %"struct.std::_Head_base.2824788" }
+%"struct.std::_Head_base.2824788" = type { i64 }
+%"struct.std::_Head_base.89.2824787" = type { %class.aiVector3t.2824768 }
+%class.aiVector3t.2824768 = type { double, double, double }
+%"struct.std::_Head_base.90.2824791" = type { i64 }
+%"struct.llvm::rdf::NodeAddr.141.3208496" = type <{ ptr, i32, [4 x i8] }>
 
 ; 9 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -32,9 +32,8 @@ entry:
   ret i64 %7
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/upack.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; glog/optimized/signalhandler.cc.ll
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
@@ -327,7 +326,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
@@ -340,7 +339,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::tuple.2824823", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::tuple.2824789", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
@@ -353,7 +352,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.llvm::rdf::NodeAddr.141.3208530", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.llvm::rdf::NodeAddr.141.3208496", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64

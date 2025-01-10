@@ -1,13 +1,13 @@
 
-%"class.std::__cxx11::basic_string.3479210" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3479211", i64, %union.anon.3479212 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3479211" = type { ptr }
-%union.anon.3479212 = type { i64, [8 x i8] }
-%"class.open_spiel::chess_common::ZobristTable.63.3479275" = type { %"class.std::vector.64.3479276" }
-%"class.std::vector.64.3479276" = type { %"struct.std::_Vector_base.65.3479277" }
-%"struct.std::_Vector_base.65.3479277" = type { %"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl.3479278" }
-%"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl.3479278" = type { %"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl_data.3479279" }
-%"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl_data.3479279" = type { ptr, ptr, ptr }
-%struct.among.3651288 = type { i32, ptr, i32, i32, ptr }
+%"class.std::__cxx11::basic_string.3479176" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3479177", i64, %union.anon.3479178 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3479177" = type { ptr }
+%union.anon.3479178 = type { i64, [8 x i8] }
+%"class.open_spiel::chess_common::ZobristTable.63.3479241" = type { %"class.std::vector.64.3479242" }
+%"class.std::vector.64.3479242" = type { %"struct.std::_Vector_base.65.3479243" }
+%"struct.std::_Vector_base.65.3479243" = type { %"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl.3479244" }
+%"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl.3479244" = type { %"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl_data.3479245" }
+%"struct.std::_Vector_base<open_spiel::chess_common::ZobristTable<unsigned long, 7>, std::allocator<open_spiel::chess_common::ZobristTable<unsigned long, 7>>>::_Vector_impl_data.3479245" = type { ptr, ptr, ptr }
+%struct.among.3651254 = type { i32, ptr, i32, i32, ptr }
 
 ; 27 occurrences:
 ; abc/optimized/Fxch.c.ll
@@ -106,7 +106,7 @@ entry:
   %3 = ashr exact i32 %2, 24
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.3479210", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.3479176", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -119,7 +119,7 @@ entry:
   %3 = ashr exact i32 %2, 24
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.open_spiel::chess_common::ZobristTable.63.3479275", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.open_spiel::chess_common::ZobristTable.63.3479241", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -131,7 +131,7 @@ entry:
   %3 = ashr i32 %2, 1
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.among.3651288, ptr %0, i64 %5
+  %6 = getelementptr %struct.among.3651254, ptr %0, i64 %5
   ret ptr %6
 }
 

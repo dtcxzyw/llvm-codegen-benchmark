@@ -1,4 +1,4 @@
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000144:                   # @func0000000000000144
 	subq	%rdx, %rsi
 	addq	$3100, %rsi                     # imm = 0xC1C
 	cmpq	%rsi, %rdi

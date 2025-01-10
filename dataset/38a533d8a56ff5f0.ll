@@ -1,6 +1,6 @@
 
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
-%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957" = type { float, %"class.irr::core::quaternion.2702954" }
+%"class.irr::core::quaternion.2702954" = type { float, float, float, float }
 
 ; 114 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -185,7 +185,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; llvm/optimized/CGExprConstant.cpp.ll

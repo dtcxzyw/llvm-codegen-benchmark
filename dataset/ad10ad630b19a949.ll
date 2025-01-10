@@ -56,19 +56,21 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; php/optimized/html.ll
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 48
-  %4 = icmp eq i32 %3, 32
-  %5 = icmp eq i64 %1, 4
-  %6 = and i1 %4, %5
-  %7 = and i1 %0, %6
+  %3 = and i32 %2, -8388608
+  %4 = icmp eq i32 %3, 167772160
+  %5 = icmp eq i64 %1, 0
+  %6 = and i1 %5, %4
+  %7 = and i1 %6, %0
   ret i1 %7
 }
 

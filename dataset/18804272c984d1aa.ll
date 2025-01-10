@@ -556,14 +556,13 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/cecSweep.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cpython/optimized/_json.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; openjdk/optimized/IntArgbBm.ll
 ; openusd/optimized/stream.c.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; postgres/optimized/regcomp.ll
@@ -599,7 +598,7 @@ entry:
   ret i32 %3
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -648,6 +647,7 @@ entry:
 ; openusd/optimized/bitreader_buffer.c.ll
 ; openusd/optimized/stream.c.ll
 ; php/optimized/ZendAccelerator.ll
+; php/optimized/crypt_blowfish.ll
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/ae.ll

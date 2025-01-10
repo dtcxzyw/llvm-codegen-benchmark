@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 229 occurrences:
+; 230 occurrences:
 ; abc/optimized/fxuCreate.c.ll
 ; abc/optimized/giaSatMap.c.ll
 ; arrow/optimized/bignum.cc.ll
@@ -21,6 +21,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

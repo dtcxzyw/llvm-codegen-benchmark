@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; postgres/optimized/slru.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/migration_block.c.ll
 ; Function Attrs: nounwind
@@ -13,7 +14,7 @@ entry:
   ret i64 %7
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; luajit/optimized/minilua.ll
@@ -21,6 +22,7 @@ entry:
 ; luau/optimized/lgcdebug.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; postgres/optimized/slru.ll
+; quickjs/optimized/quickjs.ll
 ; redis/optimized/lgc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {

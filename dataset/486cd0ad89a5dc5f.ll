@@ -1,5 +1,5 @@
 
-; 790 occurrences:
+; 797 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -178,6 +178,9 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; jsonnet/optimized/parser.cpp.ll
@@ -267,6 +270,7 @@
 ; linux/optimized/buffered_write.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/filemap.ll
+; linux/optimized/gup.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/memory.ll
@@ -735,6 +739,9 @@
 ; quantlib/optimized/tapcorrelations.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
+; redis/optimized/dict.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/liolib.ll
 ; redis/optimized/t_set.ll
 ; ripgrep-rs/optimized/4rymer90zmfu5xtd.ll
@@ -801,7 +808,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 447 occurrences:
+; 449 occurrences:
 ; abc/optimized/luckyFast6.c.ll
 ; abseil-cpp/optimized/match.cc.ll
 ; abseil-cpp/optimized/str_replace_test.cc.ll
@@ -972,6 +979,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/filemap.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/ip6_output.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/mpage.ll
 ; linux/optimized/n_tty.ll
@@ -1175,6 +1183,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; quantlib/optimized/particleswarmoptimization.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; redis/optimized/dict.ll
 ; redis/optimized/expire.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; rocksdb/optimized/mock_env.cc.ll
@@ -2643,6 +2652,16 @@ define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = icmp ule i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/scsi_logging.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = icmp samesign uge i64 %0, %3
   ret i1 %4
 }
 

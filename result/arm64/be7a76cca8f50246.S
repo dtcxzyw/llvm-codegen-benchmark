@@ -22,7 +22,7 @@ func0000000000000007:                   // @func0000000000000007
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
-	ubfx	x8, x8, #3, #32
+	ubfx	x8, x8, #3, #31
 	mul	x0, x0, x8
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 94 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -275,7 +275,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.JSShapeProperty.3435093, ptr %0, i64 %2
+  %3 = getelementptr %struct.JSShapeProperty.3435059, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
@@ -287,7 +287,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.JSShapeProperty.3435093, ptr %0, i64 %2
+  %3 = getelementptr %struct.JSShapeProperty.3435059, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }

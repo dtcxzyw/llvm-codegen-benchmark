@@ -1,7 +1,7 @@
 
-%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3266061" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138384" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3266027" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; recastnavigation/optimized/fastlz.c.ll
@@ -17,10 +17,13 @@ entry:
   ret ptr %7
 }
 
-; 144 occurrences:
+; 149 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -162,13 +165,15 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.llvm::Use.3138418", ptr %1, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3138384", ptr %1, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
@@ -183,7 +188,7 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3181429", ptr %1, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
 }
@@ -196,8 +201,8 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %"class.llvm::Use.3266061", ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3266061", ptr %6, i64 %0
+  %6 = getelementptr %"class.llvm::Use.3266027", ptr %1, i64 %5
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3266027", ptr %6, i64 %0
   ret ptr %7
 }
 

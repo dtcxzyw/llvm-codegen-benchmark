@@ -1,7 +1,5 @@
 
-%"struct.Yosys::RTLIL::SigBit.3126281" = type <{ ptr, %union.anon.574.3126282, [4 x i8] }>
-%union.anon.574.3126282 = type { i32 }
-%"class.cv::Complex.3752634" = type { double, double }
+%"class.cv::Complex.3752584" = type { double, double }
 
 ; 1 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -28,15 +26,16 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; git/optimized/xutils.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3126281", ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -8
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
 }
 
@@ -60,7 +59,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.cv::Complex.3752634", ptr %0, i64 %4
+  %5 = getelementptr %"class.cv::Complex.3752584", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }

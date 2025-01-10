@@ -1,9 +1,10 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cpython/optimized/binascii.ll
+; cpython/optimized/pystrtod.ll
 ; gromacs/optimized/enerdata_utils.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/JSError.cpp.ll

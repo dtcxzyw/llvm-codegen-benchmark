@@ -12,14 +12,14 @@ func000000000000003f:                   # @func000000000000003f
 	shlq	$40, %rdi
 	orq	%rdi, %rax
 	retq
-func000000000000003d:                   # @func000000000000003d
+func000000000000003b:                   # @func000000000000003b
 	movl	%edx, %eax
 	shlq	$32, %rsi
 	orq	%rsi, %rax
-	shlq	$40, %rdi
+	shlq	$48, %rdi
 	orq	%rdi, %rax
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000003d:                   # @func000000000000003d
 	movl	%edx, %eax
 	shlq	$32, %rsi
 	orq	%rsi, %rax

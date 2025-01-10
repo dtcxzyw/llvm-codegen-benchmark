@@ -100,3 +100,9 @@ func0000000000000304:                   # @func0000000000000304
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+func00000000000003e6:                   # @func00000000000003e6
+	movl	%edx, %eax
+	leaq	1(%rsi,%rax), %rax
+	cmpq	%rdi, %rax
+	setl	%al
+	retq

@@ -1,12 +1,10 @@
 
-; 83 occurrences:
+; 79 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cloud.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/nwkMerge.c.ll
-; abc/optimized/wlnNtk.c.ll
 ; assimp/optimized/Importer.cpp.ll
 ; bullet3/optimized/btContactProcessing.ll
 ; bullet3/optimized/gim_contact.ll
@@ -27,7 +25,6 @@
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpvcompile.cpp.ll
-; icu/optimized/swapimpl.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; ipopt/optimized/IpStdAugSystemSolver.ll
@@ -74,7 +71,6 @@
 ; wireshark/optimized/packet-dcerpc-nt.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
 ; wireshark/optimized/packet-ismacryp.c.ll
-; wireshark/optimized/packet-mpeg-audio.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-osi.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
@@ -92,16 +88,15 @@ entry:
   ret i32 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; arrow/optimized/tz.cpp.ll
 ; freetype/optimized/psaux.c.ll
-; icu/optimized/swapimpl.ll
+; icu/optimized/collationdatawriter.ll
 ; libquic/optimized/mul.c.ll
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; ncnn/optimized/padding_x86.cpp.ll
@@ -132,7 +127,7 @@ entry:
   ret i32 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; boost/optimized/src.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -151,9 +146,7 @@ entry:
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/xhci-mem.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
@@ -179,7 +172,7 @@ entry:
   ret i32 %5
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/giaGig.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -195,6 +188,7 @@ entry:
 ; git/optimized/archive-zip.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationdatawriter.ll
+; icu/optimized/swapimpl.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; mixbox/optimized/mixbox.ll
@@ -424,8 +418,9 @@ entry:
   ret i32 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; icu/optimized/genmbcs.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -518,17 +513,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw i32 %2, 24
-  %4 = add nuw nsw i32 %0, %1
-  %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
-}
-
 ; 2 occurrences:
 ; hermes/optimized/JSLexer.cpp.ll
 ; yaml-cpp/optimized/exp.cpp.ll
@@ -582,17 +566,6 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %0, %1
   %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 14
-  %4 = add nuw nsw i32 %0, %1
-  %5 = add nuw i32 %4, %3
   ret i32 %5
 }
 

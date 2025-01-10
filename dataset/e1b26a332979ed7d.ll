@@ -1,16 +1,5 @@
 
 ; 1 occurrences:
-; ruby/optimized/complex.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001c(i1 %0, double %1) #0 {
-entry:
-  %2 = fcmp ord double %1, 0.000000e+00
-  %3 = and i1 %2, %0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; lua/optimized/lvm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, double %1) #0 {

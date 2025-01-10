@@ -1,7 +1,7 @@
 
-%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533" = type { %"class.std::chrono::time_point.170.2776534", ptr }
-%"class.std::chrono::time_point.170.2776534" = type { %"class.std::chrono::duration.2776440" }
-%"class.std::chrono::duration.2776440" = type { i64 }
+%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776499" = type { %"class.std::chrono::time_point.170.2776500", ptr }
+%"class.std::chrono::time_point.170.2776500" = type { %"class.std::chrono::duration.2776406" }
+%"class.std::chrono::duration.2776406" = type { i64 }
 
 ; 30 occurrences:
 ; boost/optimized/async.ll
@@ -39,7 +39,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776499", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -80,7 +80,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776499", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

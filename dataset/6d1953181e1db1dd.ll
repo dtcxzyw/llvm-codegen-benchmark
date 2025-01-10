@@ -1,6 +1,6 @@
 
-%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
-%struct.Mig_Fan_t_.2877742 = type { i32 }
+%struct.Mig_Obj_t_.2877707 = type { [4 x %struct.Mig_Fan_t_.2877708] }
+%struct.Mig_Fan_t_.2877708 = type { i32 }
 
 ; 416 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -465,7 +465,7 @@ entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.Mig_Obj_t_.2877741, ptr %0, i64 %4
+  %5 = getelementptr %struct.Mig_Obj_t_.2877707, ptr %0, i64 %4
   ret ptr %5
 }
 

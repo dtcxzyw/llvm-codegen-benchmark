@@ -63,7 +63,7 @@ entry:
   ret i64 %5
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -118,6 +118,7 @@ entry:
 ; proxygen/optimized/RFC1867.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libbf.ll

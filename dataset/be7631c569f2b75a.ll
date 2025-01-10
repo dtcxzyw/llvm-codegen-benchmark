@@ -1,5 +1,5 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915" = type { i16, [6 x i8] }
 
 ; 3 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
@@ -117,7 +117,7 @@ entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
   %5 = and i64 %0, 1
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915", ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -168,7 +168,8 @@ entry:
   ret i64 %5
 }
 
-; 44 occurrences:
+; 45 occurrences:
+; cmake/optimized/lzma_decoder.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll

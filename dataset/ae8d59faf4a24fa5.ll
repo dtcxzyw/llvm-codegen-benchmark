@@ -1,5 +1,5 @@
 
-; 3074 occurrences:
+; 3052 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/deflate.c.ll
@@ -1394,12 +1394,9 @@
 ; nuttx/optimized/sem_wait.c.ll
 ; nuttx/optimized/serial.c.ll
 ; nuttx/optimized/serial_io.c.ll
-; ocio/optimized/CPUProcessor.cpp.ll
-; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
-; ocio/optimized/Lut1DOpData.cpp.ll
 ; ockam-rs/optimized/111eznecj9pn2lkp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/13hx4edwj16k9wur.ll
@@ -1497,20 +1494,10 @@
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
-; openexr/optimized/ImfAcesFile.cpp.ll
-; openexr/optimized/ImfCRgbaFile.cpp.ll
-; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
-; openexr/optimized/ImfConvert.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/ImfLut.cpp.ll
-; openexr/optimized/ImfMisc.cpp.ll
 ; openexr/optimized/ImfPizCompressor.cpp.ll
-; openexr/optimized/ImfRgbaYca.cpp.ll
-; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openexr/optimized/internal_piz.c.ll
-; openexr/optimized/pack.c.ll
-; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/Inet4AddressImpl.ll
 ; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/bytecodeTracer.ll
@@ -1662,15 +1649,6 @@
 ; openusd/optimized/vec3h.cpp.ll
 ; openusd/optimized/write.c.ll
 ; openusd/optimized/zipFile.cpp.ll
-; openvdb/optimized/Archive.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/points.cc.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; php/optimized/avl.ll
 ; php/optimized/cdf.ll
@@ -3081,7 +3059,7 @@ entry:
   ret i16 %1
 }
 
-; 556 occurrences:
+; 557 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -3605,6 +3583,7 @@ entry:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-vcdu.c.ll
 ; wireshark/optimized/packet-wai.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
@@ -3645,7 +3624,7 @@ entry:
   ret i16 %1
 }
 
-; 793 occurrences:
+; 795 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcShow.c.ll
@@ -3754,6 +3733,7 @@ entry:
 ; icu/optimized/nfrule.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/number_skeletons.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/punycode.ll
 ; icu/optimized/putil.ll
 ; icu/optimized/rbt_pars.ll
@@ -3816,6 +3796,7 @@ entry:
 ; linux/optimized/nvm.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/pci.ll
+; linux/optimized/printk.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/rscalc.ll
 ; linux/optimized/rx.ll
@@ -4446,7 +4427,7 @@ entry:
   ret i16 %1
 }
 
-; 229 occurrences:
+; 255 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ivyFastMap.c.ll
@@ -4561,11 +4542,27 @@ entry:
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; nuttx/optimized/fs_procfs.c.ll
 ; nuttx/optimized/fs_procfsproc.c.ll
+; ocio/optimized/CPUProcessor.cpp.ll
+; ocio/optimized/CTFTransform.cpp.ll
+; ocio/optimized/Lut1DOpCPU.cpp.ll
+; ocio/optimized/Lut1DOpData.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; opencc/optimized/SerializedValues.cpp.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
+; openexr/optimized/ImfAcesFile.cpp.ll
+; openexr/optimized/ImfCRgbaFile.cpp.ll
+; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
+; openexr/optimized/ImfConvert.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/ImfLut.cpp.ll
+; openexr/optimized/ImfMisc.cpp.ll
+; openexr/optimized/ImfRgbaYca.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openexr/optimized/pack.c.ll
+; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
@@ -4575,7 +4572,17 @@ entry:
 ; openusd/optimized/exif.c.ll
 ; openusd/optimized/integerCoding.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pathNode.cpp.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/points.cc.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/dsa.ll

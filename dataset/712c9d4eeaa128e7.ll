@@ -1,10 +1,12 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/signal.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; ruby/optimized/compile.ll

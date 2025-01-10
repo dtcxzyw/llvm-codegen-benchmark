@@ -1,9 +1,8 @@
 
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"class.folly::hazptr_tc_entry.2688612" = type { ptr }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"class.folly::hazptr_tc_entry.2688578" = type { ptr }
 
-; 46 occurrences:
-; abc/optimized/ifTune.c.ll
+; 45 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
@@ -54,7 +53,7 @@ define ptr @func0000000000000017(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -67,11 +66,11 @@ define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr nusw nuw [9 x %"class.folly::hazptr_tc_entry.2688612"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [9 x %"class.folly::hazptr_tc_entry.2688578"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -82,7 +81,9 @@ entry:
 ; luajit/optimized/minilua.ll
 ; lvgl/optimized/lv_draw_sw_gradient.ll
 ; nuttx/optimized/fs_procfs.c.ll
+; nuttx/optimized/lib_libvsprintf.c.ll
 ; openusd/optimized/decodemv.c.ll
+; php/optimized/crypt_freesec.ll
 ; redis/optimized/lparser.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; slurm/optimized/cpu_frequency.ll
@@ -153,16 +154,26 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; abc/optimized/ifTune.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add nsw i64 %2, -97
+  %4 = getelementptr nusw [32 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
-; php/optimized/crypt_freesec.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -196,17 +207,6 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr [15 x ptr], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw [96 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

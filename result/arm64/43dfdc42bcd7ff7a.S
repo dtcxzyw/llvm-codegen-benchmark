@@ -6,16 +6,6 @@ func0000000000000003:                   // @func0000000000000003
 	orr	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	x8, #-16385                     // =0xffffffffffffbfff
-	and	x9, x1, #0xffffffffffffbfff
-	movk	x8, #65471, lsl #32
-	orr	x9, x0, x9
-	and	x8, x2, x8
-	orr	x0, x9, x8
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	and	x8, x2, #0x10000000

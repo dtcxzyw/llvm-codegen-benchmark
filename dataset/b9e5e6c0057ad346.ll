@@ -1,6 +1,6 @@
 
-%"class.asio::const_buffer.2912368" = type { ptr, i64 }
-%struct.prefix_code_node.3436900 = type { i16, i8, [2 x i16] }
+%"class.asio::const_buffer.2912334" = type { ptr, i64 }
+%struct.prefix_code_node.3436866 = type { i16, i8, [2 x i16] }
 
 ; 1 occurrences:
 ; ruby/optimized/unicode.ll
@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 122 occurrences:
+; 120 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -74,8 +74,6 @@ entry:
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quantlib/optimized/curvestate.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; quickjs/optimized/cutils.ll
 ; ruby/optimized/string.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
@@ -808,7 +806,7 @@ entry:
   ret i1 %5
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; boost/optimized/decode.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -856,7 +854,6 @@ entry:
 ; mold/optimized/passes.cc.RV32BE.cc.ll
 ; mold/optimized/passes.cc.RV32LE.cc.ll
 ; mold/optimized/passes.cc.SH4.cc.ll
-; openjdk/optimized/attachListener_posix.ll
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/ir_patch.ll
 ; redis/optimized/lzf_c.ll
@@ -1723,7 +1720,7 @@ entry:
 define i1 @func00000000000001cc(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw %"class.asio::const_buffer.2912368", ptr %0, i64 %1
+  %4 = getelementptr nusw %"class.asio::const_buffer.2912334", ptr %0, i64 %1
   %5 = icmp ne ptr %4, %3
   ret i1 %5
 }
@@ -1786,7 +1783,7 @@ entry:
 define i1 @func0000000000000189(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8200
-  %4 = getelementptr %struct.prefix_code_node.3436900, ptr %0, i64 %1
+  %4 = getelementptr %struct.prefix_code_node.3436866, ptr %0, i64 %1
   %5 = icmp uge ptr %4, %3
   ret i1 %5
 }

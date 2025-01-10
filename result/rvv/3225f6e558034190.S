@@ -437,6 +437,15 @@ func000000000000298a:                   # @func000000000000298a
 	vmand.mm	v8, v14, v10
 	vmand.mm	v0, v8, v12
 	ret
+func00000000000018c1:                   # @func00000000000018c1
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vx	v14, v12, a0
+	vmslt.vx	v12, v10, a0
+	vmand.mm	v10, v12, v14
+	vmseq.vi	v11, v8, 0
+	vmand.mm	v0, v10, v11
+	ret
 func0000000000001886:                   # @func0000000000001886
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma

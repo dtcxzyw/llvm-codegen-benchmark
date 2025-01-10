@@ -33,7 +33,7 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -48,7 +48,6 @@ entry:
 ; openjdk/optimized/check_code.ll
 ; quickjs/optimized/libunicode.ll
 ; wireshark/optimized/file-elf.c.ll
-; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i8 %2) #0 {

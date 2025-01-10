@@ -1,5 +1,5 @@
 
-; 296 occurrences:
+; 295 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/aigTiming.c.ll
@@ -176,7 +176,6 @@
 ; openjdk/optimized/barrierSetC2.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/img_colors.ll
-; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/nativeInst_x86.ll

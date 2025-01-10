@@ -1,3 +1,7 @@
+func00000000000000aa:                   # @func00000000000000aa
+	cmpl	%esi, %edi
+	setg	%al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	subl	%esi, %edi
 	testl	%edi, %edi
@@ -12,21 +16,9 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$63, %edi
 	setb	%al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
-	cmpl	%esi, %edi
-	setl	%al
-	retq
-func000000000000002a:                   # @func000000000000002a
-	cmpl	%esi, %edi
-	setg	%al
-	retq
 func0000000000000121:                   # @func0000000000000121
 	cmpl	%esi, %edi
 	sete	%al
-	retq
-func000000000000012a:                   # @func000000000000012a
-	cmpl	%esi, %edi
-	setg	%al
 	retq
 func0000000000000026:                   # @func0000000000000026
 	cmpl	%esi, %edi
@@ -65,10 +57,23 @@ func000000000000010c:                   # @func000000000000010c
 	cmpl	%esi, %edi
 	setne	%al
 	retq
+func000000000000002a:                   # @func000000000000002a
+	cmpl	%esi, %edi
+	setg	%al
+	retq
 func0000000000000104:                   # @func0000000000000104
 	subl	%esi, %edi
 	cmpl	$2, %edi
 	setb	%al
+	retq
+func000000000000012a:                   # @func000000000000012a
+	subl	%esi, %edi
+	cmpl	$65536, %edi                    # imm = 0x10000
+	setge	%al
+	retq
+func00000000000001aa:                   # @func00000000000001aa
+	cmpl	%esi, %edi
+	setg	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
 	cmpl	%esi, %edi
@@ -83,15 +88,6 @@ func00000000000001a1:                   # @func00000000000001a1
 	subl	%esi, %edi
 	cmpl	$1, %edi
 	sete	%al
-	retq
-func00000000000001aa:                   # @func00000000000001aa
-	cmpl	%esi, %edi
-	setg	%al
-	retq
-func00000000000000aa:                   # @func00000000000000aa
-	subl	%esi, %edi
-	cmpl	$5, %edi
-	setge	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	subl	%esi, %edi
@@ -117,6 +113,11 @@ func0000000000000034:                   # @func0000000000000034
 	subl	%esi, %edi
 	cmpl	$5, %edi
 	setb	%al
+	retq
+func00000000000001a6:                   # @func00000000000001a6
+	subl	%esi, %edi
+	cmpl	$7, %edi
+	setl	%al
 	retq
 func000000000000018a:                   # @func000000000000018a
 	subl	%esi, %edi

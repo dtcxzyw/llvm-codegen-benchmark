@@ -49,7 +49,7 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -62,6 +62,7 @@ entry:
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {

@@ -1,8 +1,8 @@
 
-%struct.__wasi_event_t.2766947 = type { i64, i16, i8, %struct.__wasi_event_fd_readwrite_t.2766948 }
-%struct.__wasi_event_fd_readwrite_t.2766948 = type { i64, i16 }
-%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%class.btVector3.2818499 = type { [4 x float] }
+%struct.__wasi_event_t.2766913 = type { i64, i16, i8, %struct.__wasi_event_fd_readwrite_t.2766914 }
+%struct.__wasi_event_fd_readwrite_t.2766914 = type { i64, i16 }
+%struct.btSpatialForceVector.2818471 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%class.btVector3.2818465 = type { [4 x float] }
 
 ; 20 occurrences:
 ; arrow/optimized/key_map.cc.ll
@@ -29,7 +29,7 @@
 define ptr @func000000000000000f(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = getelementptr nuw %struct.__wasi_event_t.2766947, ptr %3, i64 %0, i32 1
+  %4 = getelementptr nuw %struct.__wasi_event_t.2766913, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 
@@ -49,7 +49,7 @@ entry:
 define ptr @func000000000000000b(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr %2, ptr null
-  %4 = getelementptr %struct.btSpatialForceVector.2818505, ptr %3, i64 %0, i32 0, i32 0, i64 2
+  %4 = getelementptr %struct.btSpatialForceVector.2818471, ptr %3, i64 %0, i32 0, i32 0, i64 2
   ret ptr %4
 }
 

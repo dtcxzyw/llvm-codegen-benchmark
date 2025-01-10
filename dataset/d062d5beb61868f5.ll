@@ -1,5 +1,5 @@
 
-%struct.aiString.2823060 = type { i32, [1024 x i8] }
+%struct.aiString.2823026 = type { i32, [1024 x i8] }
 
 ; 8 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -15,7 +15,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 6
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %struct.aiString.2823060, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.aiString.2823026, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

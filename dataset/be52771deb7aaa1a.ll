@@ -1,22 +1,52 @@
 
-; 17 occurrences:
+; 7 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; git/optimized/sha256.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/mon_bin.ll
+; linux/optimized/net.ll
+; linux/optimized/scatterwalk.ll
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002c(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
+  %5 = trunc nuw nsw i64 %4 to i32
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 26 occurrences:
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/xlm_extract.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/cmac.c.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
+; php/optimized/KeccakSponge.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_checksum.c.ll
+; raylib/optimized/raudio.c.ll
+; slurm/optimized/KangarooTwelve.ll
+; slurm/optimized/step_mgr.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -26,9 +56,6 @@ entry:
   %6 = add i32 %0, %5
   ret i32 %6
 }
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umin.i64(i64, i64) #1
 
 ; 177 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
@@ -215,18 +242,6 @@ entry:
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
   %5 = trunc nuw i64 %4 to i32
   %6 = add nsw i32 %0, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/mon_bin.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %1)
-  %5 = trunc nuw nsw i64 %4 to i32
-  %6 = add i32 %0, %5
   ret i32 %6
 }
 

@@ -1,24 +1,24 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
-%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
-%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::__shared_count.2612196" = type { ptr }
-%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
-%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
-%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
-%struct.typed_ext_descr_t.2705285 = type { i64, i32 }
-%"class.std::__cxx11::basic_string.2811822" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823", i64, %union.anon.2811824 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823" = type { ptr }
-%union.anon.2811824 = type { i64, [8 x i8] }
-%"struct.Yosys::RTLIL::SigBit.3129946" = type <{ ptr, %union.anon.205.3129947, [4 x i8] }>
-%union.anon.205.3129947 = type { i32 }
-%"struct.cv::FStructData.3730757" = type { %"class.std::__cxx11::basic_string.3730752", i32, i32 }
-%"class.std::__cxx11::basic_string.3730752" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753", i64, %union.anon.3730754 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753" = type { ptr }
-%union.anon.3730754 = type { i64, [8 x i8] }
-%"class.casadi::MX.3926170" = type { %"class.casadi::SharedObject.3926169" }
-%"class.casadi::SharedObject.3926169" = type { ptr }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176" = type { %"class.std::shared_ptr.2.2612164", i8, %"class.std::shared_ptr.2612161", i64, i64, i64, %"class.std::shared_ptr.372.2612177" }
+%"class.std::shared_ptr.2.2612164" = type { %"class.std::__shared_ptr.3.2612165" }
+%"class.std::__shared_ptr.3.2612165" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::__shared_count.2612163" = type { ptr }
+%"class.std::shared_ptr.2612161" = type { %"class.std::__shared_ptr.2612162" }
+%"class.std::__shared_ptr.2612162" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::shared_ptr.372.2612177" = type { %"class.std::__shared_ptr.373.2612178" }
+%"class.std::__shared_ptr.373.2612178" = type { ptr, %"class.std::__shared_count.2612163" }
+%struct.typed_ext_descr_t.2705251 = type { i64, i32 }
+%"class.std::__cxx11::basic_string.2811788" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811789", i64, %union.anon.2811790 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811789" = type { ptr }
+%union.anon.2811790 = type { i64, [8 x i8] }
+%"struct.Yosys::RTLIL::SigBit.3129912" = type <{ ptr, %union.anon.205.3129913, [4 x i8] }>
+%union.anon.205.3129913 = type { i32 }
+%"struct.cv::FStructData.3730707" = type { %"class.std::__cxx11::basic_string.3730702", i32, i32 }
+%"class.std::__cxx11::basic_string.3730702" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730703", i64, %union.anon.3730704 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730703" = type { ptr }
+%union.anon.3730704 = type { i64, [8 x i8] }
+%"class.casadi::MX.3926120" = type { %"class.casadi::SharedObject.3926119" }
+%"class.casadi::SharedObject.3926119" = type { ptr }
 
 ; 189 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
@@ -348,9 +348,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %2
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -80
-  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %4, i64 %1
+  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -459,8 +459,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.typed_ext_descr_t.2705285, ptr %0, i64 %1
-  %4 = getelementptr %struct.typed_ext_descr_t.2705285, ptr %3, i64 %2
+  %3 = getelementptr %struct.typed_ext_descr_t.2705251, ptr %0, i64 %1
+  %4 = getelementptr %struct.typed_ext_descr_t.2705251, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -12
   ret ptr %5
 }
@@ -614,9 +614,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::__cxx11::basic_string.2811788", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
-  %5 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %4, i64 %1
+  %5 = getelementptr %"class.std::__cxx11::basic_string.2811788", ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -699,9 +699,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129946", ptr %0, i64 %2
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129912", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
-  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129946", ptr %4, i64 %1
+  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129912", ptr %4, i64 %1
   ret ptr %5
 }
 
@@ -753,8 +753,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.cv::FStructData.3730757", ptr %0, i64 %1
-  %4 = getelementptr %"struct.cv::FStructData.3730757", ptr %3, i64 %2
+  %3 = getelementptr %"struct.cv::FStructData.3730707", ptr %0, i64 %1
+  %4 = getelementptr %"struct.cv::FStructData.3730707", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -80
   ret ptr %5
 }
@@ -775,8 +775,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.casadi::MX.3926170", ptr %0, i64 %1
-  %4 = getelementptr %"class.casadi::MX.3926170", ptr %3, i64 %2
+  %3 = getelementptr %"class.casadi::MX.3926120", ptr %0, i64 %1
+  %4 = getelementptr %"class.casadi::MX.3926120", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }

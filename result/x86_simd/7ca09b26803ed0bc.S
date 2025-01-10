@@ -9,12 +9,9 @@ func0000000000000021:                   # @func0000000000000021
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	2147483647                      # 0x7fffffff
-.LCPI1_1:
-	.long	2146435072                      # 0x7ff00000
+	.long	63                              # 0x3f
 func000000000000002c:                   # @func000000000000002c
-	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqd	.LCPI1_1(%rip){1to4}, %xmm1, %k1
+	vptestnmd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
 	vpmovqd	%ymm0, %xmm0
 	vptestmd	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0

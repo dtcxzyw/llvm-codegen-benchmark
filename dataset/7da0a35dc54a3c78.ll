@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 98 occurrences:
 ; cmake/optimized/cmake.cxx.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; darktable/optimized/geotagging.c.ll
@@ -59,6 +59,7 @@
 ; openusd/optimized/layer.cpp.ll
 ; postgres/optimized/guc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll

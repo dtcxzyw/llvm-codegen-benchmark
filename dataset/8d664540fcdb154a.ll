@@ -1,10 +1,6 @@
 
-; 6 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; quantlib/optimized/tqreigendecomposition.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {

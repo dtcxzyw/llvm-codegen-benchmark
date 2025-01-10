@@ -1,7 +1,7 @@
 
-%"class.boost::wave::util::flex_string.2978838" = type { %"class.boost::wave::util::CowString.2978839" }
-%"class.boost::wave::util::CowString.2978839" = type { %union.anon.2978840 }
-%union.anon.2978840 = type { ptr }
+%"class.boost::wave::util::flex_string.2978804" = type { %"class.boost::wave::util::CowString.2978805" }
+%"class.boost::wave::util::CowString.2978805" = type { %union.anon.2978806 }
+%union.anon.2978806 = type { ptr }
 
 ; 7 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -296,7 +296,7 @@ entry:
   %2 = and i32 %1, -2147221505
   %3 = add i32 %2, -256
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.boost::wave::util::flex_string.2978838", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.boost::wave::util::flex_string.2978804", ptr %0, i64 %4
   ret ptr %5
 }
 

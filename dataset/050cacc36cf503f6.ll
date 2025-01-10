@@ -1,5 +1,5 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
+%"struct.CFF::number_t.2732152" = type { double }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_pcnet-pci.c.ll
@@ -37,7 +37,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

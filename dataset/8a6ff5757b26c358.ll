@@ -451,9 +451,8 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/bblif.c.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

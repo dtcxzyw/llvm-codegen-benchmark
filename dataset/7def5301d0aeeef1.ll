@@ -117,7 +117,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/sclBufSize.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -170,6 +170,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; wireshark/optimized/opcua.c.ll
 ; wireshark/optimized/packet-dcerpc-mapi.c.ll
 ; wireshark/optimized/packet-giop.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind

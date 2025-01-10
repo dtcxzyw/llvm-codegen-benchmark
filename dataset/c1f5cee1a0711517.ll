@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/autofit.c.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
 ; Function Attrs: nounwind
@@ -14,10 +13,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
-; linux/optimized/memory.ll
 ; linux/optimized/n_tty.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind

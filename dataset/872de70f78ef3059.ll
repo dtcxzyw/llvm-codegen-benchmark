@@ -1,8 +1,8 @@
 
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
-%"struct.folly::f14::detail::F14Chunk.2684259" = type { %"struct.std::array.59.2684260", i8, i8, %"struct.std::array.60.2684261" }
-%"struct.std::array.59.2684260" = type { [14 x i8] }
-%"struct.std::array.60.2684261" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684258"] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2684226" = type { %"struct.std::array.59.2684227", i8, i8, %"struct.std::array.60.2684228" }
+%"struct.std::array.59.2684227" = type { [14 x i8] }
+%"struct.std::array.60.2684228" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684225"] }
 
 ; 2 occurrences:
 ; folly/optimized/dynamic.cpp.ll
@@ -12,7 +12,7 @@ define i64 @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %4, i64 0, i64 %0
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %4, i64 0, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -28,8 +28,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2684259", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2684226", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %3, i64 0, i64 %0
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

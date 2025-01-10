@@ -1,5 +1,5 @@
 
-%struct.FT_StrokeBorderRec_.3881817 = type { i32, i32, ptr, ptr, i8, i32, ptr, i8 }
+%struct.FT_StrokeBorderRec_.3881767 = type { i32, i32, ptr, ptr, i8, i32, ptr, i8 }
 
 ; 5 occurrences:
 ; eastl/optimized/TestString.cpp.ll
@@ -103,7 +103,7 @@ entry:
   %2 = icmp sgt i64 %1, -1
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 112
-  %5 = getelementptr nusw nuw %struct.FT_StrokeBorderRec_.3881817, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.FT_StrokeBorderRec_.3881767, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -421,7 +421,7 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; lua/optimized/lapi.ll
@@ -431,7 +431,6 @@ entry:
 ; wireshark/optimized/packet-ansi_683.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-btle.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-isis-clv.c.ll
 ; wireshark/optimized/packet-lldp.c.ll

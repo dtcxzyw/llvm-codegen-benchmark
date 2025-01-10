@@ -1,5 +1,5 @@
 
-; 9108 occurrences:
+; 9079 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1211,7 +1211,6 @@
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/_testbuffer.ll
 ; cpython/optimized/_testmultiphase.ll
-; cpython/optimized/_threadmodule.ll
 ; cpython/optimized/_warnings.ll
 ; cpython/optimized/_weakref.ll
 ; cpython/optimized/_xxinterpchannelsmodule.ll
@@ -1283,7 +1282,6 @@
 ; cpython/optimized/pyexpat.ll
 ; cpython/optimized/pylifecycle.ll
 ; cpython/optimized/pystate.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/rangeobject.ll
 ; cpython/optimized/readline.ll
 ; cpython/optimized/readline_tokenizer.ll
@@ -1884,7 +1882,6 @@
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftlzw.c.ll
 ; freetype/optimized/ftstroke.c.ll
-; freetype/optimized/pfr.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/sdf.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -2478,7 +2475,6 @@
 ; hdf5/optimized/H5Pint.c.ll
 ; hdf5/optimized/H5Rint.c.ll
 ; hdf5/optimized/H5S.c.ll
-; hdf5/optimized/H5SL.c.ll
 ; hdf5/optimized/H5SM.c.ll
 ; hdf5/optimized/H5SMcache.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -2598,7 +2594,6 @@
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/order.cpp.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -2711,7 +2706,6 @@
 ; icu/optimized/unistr.ll
 ; icu/optimized/uprops.ll
 ; icu/optimized/uregex.ll
-; icu/optimized/uresdata.ll
 ; icu/optimized/uscanf_p.ll
 ; icu/optimized/usearch.ll
 ; icu/optimized/ushape.ll
@@ -2949,7 +2943,6 @@
 ; libuv/optimized/thread-common.c.ll
 ; libuv/optimized/thread.c.ll
 ; libuv/optimized/uv-common.c.ll
-; libwebp/optimized/alpha_dec.c.ll
 ; libwebp/optimized/alpha_enc.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/alpha_processing_sse2.c.ll
@@ -3318,7 +3311,6 @@
 ; linux/optimized/ialloc.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/icmp.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/inet6_hashtables.ll
@@ -3370,12 +3362,10 @@
 ; linux/optimized/iommu.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/ip6_fib.ll
-; linux/optimized/ip6_input.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_forward.ll
 ; linux/optimized/ip_fragment.ll
-; linux/optimized/ip_input.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/ip_tunnel_core.ll
@@ -3518,7 +3508,6 @@
 ; linux/optimized/rmap.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rpcb_clnt.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/runtime.ll
 ; linux/optimized/rw.ll
@@ -3566,11 +3555,9 @@
 ; linux/optimized/static_call.ll
 ; linux/optimized/stop_machine.ll
 ; linux/optimized/suspend.ll
-; linux/optimized/svc4proc.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcauth_unix.ll
-; linux/optimized/svcproc.ll
 ; linux/optimized/svcsock.ll
 ; linux/optimized/svcsubs.ll
 ; linux/optimized/synaptics.ll
@@ -5176,7 +5163,6 @@
 ; opencv/optimized/linearize.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/matrix_c.cpp.ll
@@ -5299,7 +5285,6 @@
 ; openjdk/optimized/IntRgb.ll
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/JPLISAgent.ll
-; openjdk/optimized/LCMS.ll
 ; openjdk/optimized/LinuxSocketOptions.ll
 ; openjdk/optimized/LinuxSysInfo.ll
 ; openjdk/optimized/NativeUtil.ll
@@ -5901,7 +5886,6 @@
 ; openssl/optimized/libcrypto-lib-cms_enc.ll
 ; openssl/optimized/libcrypto-lib-cms_env.ll
 ; openssl/optimized/libcrypto-lib-cms_ess.ll
-; openssl/optimized/libcrypto-lib-cms_kari.ll
 ; openssl/optimized/libcrypto-lib-cms_lib.ll
 ; openssl/optimized/libcrypto-lib-cms_rsa.ll
 ; openssl/optimized/libcrypto-lib-cms_sd.ll
@@ -6026,7 +6010,6 @@
 ; openssl/optimized/libcrypto-lib-ts_conf.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_verify.ll
-; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-lib-ui_openssl.ll
 ; openssl/optimized/libcrypto-lib-ui_util.ll
 ; openssl/optimized/libcrypto-lib-v3_asid.ll
@@ -6085,7 +6068,6 @@
 ; openssl/optimized/libcrypto-shlib-cms_enc.ll
 ; openssl/optimized/libcrypto-shlib-cms_env.ll
 ; openssl/optimized/libcrypto-shlib-cms_ess.ll
-; openssl/optimized/libcrypto-shlib-cms_kari.ll
 ; openssl/optimized/libcrypto-shlib-cms_lib.ll
 ; openssl/optimized/libcrypto-shlib-cms_rsa.ll
 ; openssl/optimized/libcrypto-shlib-cms_sd.ll
@@ -6210,7 +6192,6 @@
 ; openssl/optimized/libcrypto-shlib-ts_conf.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_verify.ll
-; openssl/optimized/libcrypto-shlib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-ui_openssl.ll
 ; openssl/optimized/libcrypto-shlib-ui_util.ll
 ; openssl/optimized/libcrypto-shlib-v3_asid.ll
@@ -6239,7 +6220,6 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_ocb.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_poly1305_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_null.ll
 ; openssl/optimized/libdefault-lib-decode_der2key.ll
@@ -6721,7 +6701,6 @@
 ; php/optimized/xpath_callbacks.ll
 ; php/optimized/zend_API.ll
 ; php/optimized/zend_accelerator_module.ll
-; php/optimized/zend_alloc.ll
 ; php/optimized/zend_attributes.ll
 ; php/optimized/zend_builtin_functions.ll
 ; php/optimized/zend_cfg.ll
@@ -7117,7 +7096,6 @@
 ; qemu/optimized/hw_virtio_vhost-user.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
-; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
 ; qemu/optimized/hw_virtio_virtio-iommu.c.ll
 ; qemu/optimized/hw_virtio_virtio-mmio.c.ll
@@ -7183,7 +7161,6 @@
 ; qemu/optimized/util_qemu-option.c.ll
 ; qemu/optimized/util_qemu-thread-posix.c.ll
 ; qemu/optimized/util_range.c.ll
-; qemu/optimized/util_thread-context.c.ll
 ; qemu/optimized/util_timed-average.c.ll
 ; qemu/optimized/util_uuid.c.ll
 ; qemu/optimized/util_vfio-helpers.c.ll
@@ -7433,7 +7410,6 @@
 ; ruby/optimized/proc.ll
 ; ruby/optimized/process.ll
 ; ruby/optimized/ractor.ll
-; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/random.ll
 ; ruby/optimized/range.ll
 ; ruby/optimized/rational.ll
@@ -7673,7 +7649,6 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_subM.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-log-parser.ll
@@ -7837,7 +7812,6 @@
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; verilator/optimized/V3File.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
-; verilator/optimized/V3Fork.cpp.ll
 ; verilator/optimized/V3Gate.cpp.ll
 ; verilator/optimized/V3Graph.cpp.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll
@@ -8113,7 +8087,6 @@
 ; wireshark/optimized/packet-afs.c.ll
 ; wireshark/optimized/packet-ajp13.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
-; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-amr.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
@@ -8125,7 +8098,6 @@
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-beep.c.ll
-; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-bpsec.c.ll
 ; wireshark/optimized/packet-bpv7.c.ll
@@ -8279,7 +8251,6 @@
 ; wireshark/optimized/packet-lapb.c.ll
 ; wireshark/optimized/packet-lapd.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; wireshark/optimized/packet-lbmsrs.c.ll

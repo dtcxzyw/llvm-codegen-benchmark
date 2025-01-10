@@ -1,7 +1,7 @@
 
-%"class.rocksdb::port::RWMutex.2616090" = type { %union.pthread_rwlock_t.2616091 }
-%union.pthread_rwlock_t.2616091 = type { %struct.__pthread_rwlock_arch_t.2616092 }
-%struct.__pthread_rwlock_arch_t.2616092 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
+%"class.rocksdb::port::RWMutex.2616057" = type { %union.pthread_rwlock_t.2616058 }
+%union.pthread_rwlock_t.2616058 = type { %struct.__pthread_rwlock_arch_t.2616059 }
+%struct.__pthread_rwlock_arch_t.2616059 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
 
 ; 12 occurrences:
 ; boost/optimized/src.ll
@@ -21,7 +21,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = urem i64 %1, %3
-  %5 = getelementptr nusw nuw %"class.rocksdb::port::RWMutex.2616090", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.rocksdb::port::RWMutex.2616057", ptr %0, i64 %4
   ret ptr %5
 }
 

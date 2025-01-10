@@ -1,10 +1,10 @@
 func0000000000000021:                   # @func0000000000000021
-	movzwl	%di, %eax
+	andl	$7, %edi
 	xorl	%ecx, %ecx
-	cmpl	$204, %eax
+	cmpl	$1, %edi
 	setne	%cl
-	shll	$5, %ecx
-	cmpl	$267, %eax                      # imm = 0x10B
-	movl	$1024, %eax                     # imm = 0x400
+	incq	%rcx
+	xorl	%eax, %eax
+	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq

@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000c:                   # @func000000000000000c
 	orq	%rdx, %rsi
-	testq	%rdi, %rsi
+	testq	%rsi, %rdi
 	setne	%al
 	retq
 func0000000000000021:                   # @func0000000000000021

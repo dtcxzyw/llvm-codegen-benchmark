@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/Conv.cpp.ll
-; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/evgpeblk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0, i16 %1) #0 {

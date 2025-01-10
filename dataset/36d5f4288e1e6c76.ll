@@ -127,7 +127,7 @@ entry:
   ret i32 %5
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -169,7 +169,6 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/minimap.cpp.ll

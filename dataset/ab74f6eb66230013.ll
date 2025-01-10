@@ -26,10 +26,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/p256-x86_64.c.ll
 ; linux/optimized/yenta_socket.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openusd/optimized/patchBuilder.cpp.ll

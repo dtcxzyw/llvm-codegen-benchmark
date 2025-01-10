@@ -1683,7 +1683,7 @@ entry:
   ret i1 %4
 }
 
-; 146 occurrences:
+; 147 occurrences:
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/giaBalLut.c.ll
 ; bullet3/optimized/btManifoldResult.ll
@@ -1691,6 +1691,7 @@ entry:
 ; clamav/optimized/server-th.c.ll
 ; cmake/optimized/openssl.c.ll
 ; cpython/optimized/fileutils.ll
+; cpython/optimized/unicodeobject.ll
 ; csmith/optimized/Variable.cpp.ll
 ; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-rtsp.ll

@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/sbd.c.ll
@@ -32,7 +32,6 @@
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/vc_screen.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -106,7 +105,7 @@ entry:
   ret i32 %3
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -138,6 +137,7 @@ entry:
 ; opencv/optimized/msd.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll

@@ -28,7 +28,7 @@ func000000000000001d:                   # @func000000000000001d
 	retq
 .LCPI4_0:
 	.long	16079                           # 0x3ecf
-func0000000000000005:                   # @func0000000000000005
+func0000000000000007:                   # @func0000000000000007
 	vpslld	$14, %ymm1, %ymm1
 	vpord	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

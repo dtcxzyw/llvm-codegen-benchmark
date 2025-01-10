@@ -109,3 +109,10 @@ func0000000000000066:                   # @func0000000000000066
 	add	a0, a0, a1
 	slt	a0, a0, a2
 	ret
+func0000000000000048:                   # @func0000000000000048
+	li	a3, -7
+	srli	a3, a3, 1
+	and	a2, a2, a3
+	add	a0, a0, a1
+	sltu	a0, a2, a0
+	ret

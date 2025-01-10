@@ -45,20 +45,6 @@ entry:
   ret i16 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; opencv/optimized/color_rgb.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i16 @func000000000000003f(i16 %0, i16 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i16
-  %4 = shl nuw nsw i16 %3, 3
-  %5 = shl nuw nsw i16 %1, 3
-  %6 = or disjoint i16 %0, %5
-  %7 = or disjoint i16 %6, %4
-  ret i16 %7
-}
-
 ; 1 occurrences:
 ; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
@@ -110,6 +96,19 @@ entry:
   %5 = shl nuw nsw i16 %1, 13
   %6 = or i16 %0, %5
   %7 = or i16 %6, %4
+  ret i16 %7
+}
+
+; 1 occurrences:
+; opencv/optimized/color_rgb.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i16 @func000000000000003f(i16 %0, i16 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i16
+  %4 = shl nuw nsw i16 %3, 7
+  %5 = shl nuw nsw i16 %1, 2
+  %6 = or disjoint i16 %5, %0
+  %7 = or disjoint i16 %6, %4
   ret i16 %7
 }
 

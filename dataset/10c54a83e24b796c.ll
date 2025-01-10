@@ -24,11 +24,10 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/scsi_lib.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll

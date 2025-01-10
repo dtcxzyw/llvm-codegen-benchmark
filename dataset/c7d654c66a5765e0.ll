@@ -90,18 +90,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; clamav/optimized/xlm_extract.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i16 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i16
-  %3 = shl nuw i16 %2, 8
-  %4 = or i16 %3, %0
-  %5 = zext i16 %4 to i32
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-gmr1_rach.c.ll

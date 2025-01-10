@@ -39,6 +39,15 @@ func0000000000000015:                   # @func0000000000000015
 	add	a0, a0, a2
 	addi	a0, a0, 135
 	ret
+func0000000000000018:                   # @func0000000000000018
+	lui	a3, 1048574
+	srli	a3, a3, 1
+	and	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -2048
+	addi	a0, a0, -2048
+	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 33
 	srli	a2, a2, 33

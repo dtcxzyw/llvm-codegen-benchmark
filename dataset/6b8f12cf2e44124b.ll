@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.3682118" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3682119", i64, %union.anon.3682120 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3682119" = type { ptr }
-%union.anon.3682120 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3682068" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3682069", i64, %union.anon.3682070 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3682069" = type { ptr }
+%union.anon.3682070 = type { i64, [8 x i8] }
 
 ; 6 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
@@ -69,7 +69,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8191
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw %"class.std::__cxx11::basic_string.3682118", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"class.std::__cxx11::basic_string.3682068", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

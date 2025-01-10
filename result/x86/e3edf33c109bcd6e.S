@@ -6,7 +6,7 @@ func000000000000007f:                   # @func000000000000007f
 	addq	%rdx, %rdi
 	leaq	8(%rdi,%rsi,8), %rax
 	retq
-func0000000000000070:                   # @func0000000000000070
+func0000000000000072:                   # @func0000000000000072
 	leaq	(%rdi,%rdx), %rcx
 	shlq	$52, %rsi
 	addq	%rsi, %rcx

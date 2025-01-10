@@ -1,16 +1,15 @@
 
-; 7 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; flac/optimized/bitwriter.c.ll
-; grpc/optimized/bin_encoder.cc.ll
-; hyperscan/optimized/stream.c.ll
+; 6 occurrences:
+; cmake/optimized/zstd_compress_sequences.c.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
-; qemu/optimized/hw_scsi_esp-pci.c.ll
+; oiio/optimized/tiffinput.cpp.ll
 ; ruby/optimized/bignum.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = zext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %0, %1
   %5 = or i64 %4, %3
   ret i64 %5
@@ -129,6 +128,22 @@ entry:
   ret i64 %5
 }
 
+; 6 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; flac/optimized/bitwriter.c.ll
+; grpc/optimized/bin_encoder.cc.ll
+; hyperscan/optimized/stream.c.ll
+; libjpeg-turbo/optimized/jchuff.c.ll
+; qemu/optimized/hw_scsi_esp-pci.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl i64 %0, %1
+  %5 = or i64 %4, %3
+  ret i64 %5
+}
+
 ; 5 occurrences:
 ; boost/optimized/src.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -140,21 +155,6 @@ define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %0, %1
-  %5 = or i64 %4, %3
-  ret i64 %5
-}
-
-; 5 occurrences:
-; cmake/optimized/zstd_compress_sequences.c.ll
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; libjpeg-turbo/optimized/jchuff.c.ll
-; oiio/optimized/tiffinput.cpp.ll
-; zstd/optimized/zstd_compress_sequences.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl i64 %0, %1
   %5 = or i64 %4, %3
   ret i64 %5
 }

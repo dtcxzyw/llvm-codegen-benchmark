@@ -19,8 +19,8 @@ func000000000000000b:                   # @func000000000000000b
 	orq	%rdx, %rax
 	retq
 func000000000000000e:                   # @func000000000000000e
-	shlq	$18, %rdx
-	movabsq	$2251799813685248, %rax         # imm = 0x8000000000000
+	shlq	$8, %rdx
+	movabsq	$4611686018427387904, %rax      # imm = 0x4000000000000000
 	andq	%rdx, %rax
 	orq	%rsi, %rdi
 	orq	%rdi, %rax

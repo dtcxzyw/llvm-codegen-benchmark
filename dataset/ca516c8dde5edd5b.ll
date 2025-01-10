@@ -486,8 +486,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/compress.c.ll
+; git/optimized/column.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:

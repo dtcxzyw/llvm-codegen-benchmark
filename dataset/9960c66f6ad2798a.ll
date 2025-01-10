@@ -1,5 +1,5 @@
 
-%"class.boost::geometry::model::point.2980740" = type { [2 x double] }
+%"class.boost::geometry::model::point.2980706" = type { [2 x double] }
 
 ; 10 occurrences:
 ; boost/optimized/copy_segment_point.ll
@@ -71,7 +71,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = srem i64 %1, %2
-  %4 = getelementptr nusw nuw %"class.boost::geometry::model::point.2980740", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.boost::geometry::model::point.2980706", ptr %0, i64 %3
   ret ptr %4
 }
 

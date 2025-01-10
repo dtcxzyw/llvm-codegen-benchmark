@@ -1,5 +1,5 @@
 
-; 1985 occurrences:
+; 1986 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -409,6 +409,7 @@
 ; icu/optimized/ucharstrieiterator.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ucnv_u7.ll
+; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/uregex.ll
 ; icu/optimized/ushape.ll

@@ -1,7 +1,7 @@
 
-%struct.eventfs_attr.3545354 = type { i32, %struct.kuid_t.3545355, %struct.kgid_t.3545356 }
-%struct.kuid_t.3545355 = type { i32 }
-%struct.kgid_t.3545356 = type { i32 }
+%struct.eventfs_attr.3545320 = type { i32, %struct.kuid_t.3545321, %struct.kgid_t.3545322 }
+%struct.kuid_t.3545321 = type { i32 }
+%struct.kgid_t.3545322 = type { i32 }
 
 ; 5 occurrences:
 ; hermes/optimized/escape.cpp.ll
@@ -65,7 +65,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.eventfs_attr.3545354, ptr %0, i64 %1
+  %2 = getelementptr %struct.eventfs_attr.3545320, ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
   %4 = icmp eq ptr %2, null
   %5 = select i1 %3, i1 true, i1 %4

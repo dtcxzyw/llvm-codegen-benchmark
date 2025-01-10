@@ -29,10 +29,11 @@ entry:
   ret i1 %6
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; git/optimized/remote.ll
 ; icu/optimized/ustream.ll
 ; openspiel/optimized/twixtboard.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; quantlib/optimized/argentina.ll
 ; quantlib/optimized/austria.ll
 ; quantlib/optimized/botswana.ll

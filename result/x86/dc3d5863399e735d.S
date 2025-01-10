@@ -3,9 +3,6 @@ func00000000000001a1:                   # @func00000000000001a1
 	testb	$2, %al
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	xorl	%eax, %eax
-	retq
 func0000000000000081:                   # @func0000000000000081
 	leal	-1(%rdi,%rsi), %eax
 	testb	$32, %al

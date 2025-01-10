@@ -11,6 +11,12 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vpminsq	%ymm2, %ymm1, %ymm1
+	vpmovqd	%ymm1, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000086:                   # @func0000000000000086
 	vpminsq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1

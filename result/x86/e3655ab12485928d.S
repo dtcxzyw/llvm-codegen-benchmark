@@ -121,13 +121,6 @@ func0000000000000074:                   # @func0000000000000074
 	cmpl	$577, %edx                      # imm = 0x241
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	incl	%edx
-	testb	$1, %dil
-	cmovnel	%esi, %edx
-	cmpl	$2, %edx
-	setae	%al
-	retq
 func000000000000002c:                   # @func000000000000002c
 	decl	%edx
 	testb	$1, %dil
@@ -141,4 +134,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %edx
 	cmpl	$64, %edx
 	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	addl	$32, %edx
+	testb	$1, %dil
+	cmovnel	%esi, %edx
+	cmpl	$8, %edx
+	setae	%al
 	retq

@@ -1,8 +1,8 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
-%struct.anon.2635512 = type { [1 x %struct.niels_s.2635511], [1 x %struct.gf_s.2635509] }
-%struct.niels_s.2635511 = type { [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509] }
-%struct.gf_s.2635509 = type { [8 x i64] }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
+%struct.anon.2635479 = type { [1 x %struct.niels_s.2635478], [1 x %struct.gf_s.2635476] }
+%struct.niels_s.2635478 = type { [1 x %struct.gf_s.2635476], [1 x %struct.gf_s.2635476], [1 x %struct.gf_s.2635476] }
+%struct.gf_s.2635476 = type { [8 x i64] }
 
 ; 4 occurrences:
 ; linux/optimized/mm_init.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %0, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -40,7 +40,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [8 x [1 x %struct.anon.2635512]], ptr %0, i64 0, i64 %3, i64 0, i32 1
+  %4 = getelementptr nuw [8 x [1 x %struct.anon.2635479]], ptr %0, i64 0, i64 %3, i64 0, i32 1
   ret ptr %4
 }
 

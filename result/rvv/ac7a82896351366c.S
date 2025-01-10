@@ -35,6 +35,13 @@ func0000000000000182:                   # @func0000000000000182
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
+func0000000000000050:                   # @func0000000000000050
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, -3
+	vmsltu.vv	v14, v12, v8
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v0, v14, v8
+	ret
 func0000000000000052:                   # @func0000000000000052
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1

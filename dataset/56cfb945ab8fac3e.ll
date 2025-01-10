@@ -1,7 +1,7 @@
 
-%"class.ue2::CharReach.3850649" = type { %"class.ue2::bitfield.3850650" }
-%"class.ue2::bitfield.3850650" = type { %"struct.std::array.3850651" }
-%"struct.std::array.3850651" = type { [4 x i64] }
+%"class.ue2::CharReach.3850599" = type { %"class.ue2::bitfield.3850600" }
+%"class.ue2::bitfield.3850600" = type { %"struct.std::array.3850601" }
+%"struct.std::array.3850601" = type { [4 x i64] }
 
 ; 1 occurrences:
 ; ninja/optimized/graph.cc.ll
@@ -24,8 +24,8 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = sub nsw i64 0, %3
   %5 = sub i64 0, %1
-  %6 = getelementptr nusw %"class.ue2::CharReach.3850649", ptr %0, i64 %5
-  %7 = getelementptr nusw %"class.ue2::CharReach.3850649", ptr %6, i64 %4
+  %6 = getelementptr nusw %"class.ue2::CharReach.3850599", ptr %0, i64 %5
+  %7 = getelementptr nusw %"class.ue2::CharReach.3850599", ptr %6, i64 %4
   ret ptr %7
 }
 

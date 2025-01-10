@@ -1,6 +1,6 @@
 
-%struct.boneIndexWeightPair.2826126 = type { i32, float }
-%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389" = type { i32, i32, float }
+%struct.boneIndexWeightPair.2826092 = type { i32, float }
+%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423355" = type { i32, i32, float }
 
 ; 2 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000016f(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nuw %struct.boneIndexWeightPair.2826126, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.boneIndexWeightPair.2826092, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -24,7 +24,7 @@ define ptr @func00000000000001af(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp uge float %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nuw %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423355", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

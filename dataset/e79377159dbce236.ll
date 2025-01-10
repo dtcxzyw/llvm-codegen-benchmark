@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/trace_output.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; wireshark/optimized/packet-macsec.c.ll
 ; Function Attrs: nounwind

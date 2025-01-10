@@ -36,9 +36,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaFanout.c.ll
-; abc/optimized/giaMf.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind

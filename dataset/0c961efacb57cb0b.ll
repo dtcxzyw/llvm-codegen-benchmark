@@ -1,5 +1,5 @@
 
-; 299 occurrences:
+; 296 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -184,9 +184,6 @@
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll

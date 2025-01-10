@@ -1,5 +1,5 @@
 
-%struct.hlist_head.3550203 = type { ptr }
+%struct.hlist_head.3550169 = type { ptr }
 
 ; 4 occurrences:
 ; brotli/optimized/encode.c.ll
@@ -27,7 +27,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 112
-  %7 = getelementptr %struct.hlist_head.3550203, ptr %6, i64 %5
+  %7 = getelementptr %struct.hlist_head.3550169, ptr %6, i64 %5
   ret ptr %7
 }
 

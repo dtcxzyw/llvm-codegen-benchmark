@@ -11,8 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 	addb	$-126, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	xorl	%eax, %eax
-	cmpl	$1, %edi
-	sbbl	%eax, %eax
-	orb	$17, %al
+	testl	%edi, %edi
+	movl	$63, %ecx
+	movl	$17, %eax
+	cmovel	%ecx, %eax
 	retq

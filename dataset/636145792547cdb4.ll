@@ -1,14 +1,12 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/string_helpers.ll
 ; linux/optimized/tty_audit.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/node_mgr.ll

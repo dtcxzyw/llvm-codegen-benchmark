@@ -37,7 +37,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = tail call i64 @llvm.umax.i64(i64 range(i64 0, -105) %1, i64 256)
+  %2 = tail call i64 @llvm.umax.i64(i64 range(i64 16, -105) %1, i64 256)
   %3 = sub nuw i64 %0, %2
   ret i64 %3
 }

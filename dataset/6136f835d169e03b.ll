@@ -1,8 +1,9 @@
 
-; 699 occurrences:
+; 700 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cgtAig.c.ll
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddBridge.c.ll

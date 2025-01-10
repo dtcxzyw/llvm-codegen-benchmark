@@ -1,7 +1,7 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%"struct.CFF::number_t.2732152" = type { double }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 8 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -22,7 +22,7 @@ entry:
   ret ptr %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; git/optimized/checkout.ll
@@ -35,6 +35,7 @@ entry:
 ; lvgl/optimized/lv_draw_sw_gradient.ll
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
+; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
@@ -92,24 +93,23 @@ entry:
   %2 = and i32 %1, -2
   %3 = add i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; php/optimized/zend_jit.ll
-; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 268435455
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

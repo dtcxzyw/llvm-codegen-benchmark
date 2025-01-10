@@ -1,7 +1,7 @@
 
-%"class.clang::OffsetOfNode.3205071" = type { %"class.clang::SourceRange.3204750", i64 }
-%"class.clang::SourceRange.3204750" = type { %"class.clang::SourceLocation.3204757", %"class.clang::SourceLocation.3204757" }
-%"class.clang::SourceLocation.3204757" = type { i32 }
+%"class.clang::OffsetOfNode.3205037" = type { %"class.clang::SourceRange.3204716", i64 }
+%"class.clang::SourceRange.3204716" = type { %"class.clang::SourceLocation.3204723", %"class.clang::SourceLocation.3204723" }
+%"class.clang::SourceLocation.3204723" = type { i32 }
 
 ; 36 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -79,7 +79,7 @@ entry:
   %3 = lshr i64 %2, 2
   %4 = and i64 %3, 4294967295
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.clang::OffsetOfNode.3205071", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::OffsetOfNode.3205037", ptr %0, i64 %5
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
   ret ptr %7
 }

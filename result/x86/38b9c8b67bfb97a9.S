@@ -26,3 +26,10 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	$8, %eax
+	shlxq	%rsi, %rax, %rcx
+	testb	$1, %dil
+	movl	$6, %eax
+	cmovneq	%rcx, %rax
+	retq

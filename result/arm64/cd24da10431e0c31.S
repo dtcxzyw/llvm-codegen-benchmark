@@ -29,7 +29,7 @@ func0000000000000008:                   // @func0000000000000008
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
 	add	w8, w2, w1
-	sub	w8, w8, #1
+	add	w8, w8, #16, lsl #12            // =65536
 	lsr	w0, w8, w0
 	ret
                                         // -- End function

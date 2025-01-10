@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 28 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; brotli/optimized/utf8_util.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -14,6 +14,9 @@
 ; luau/optimized/isocline.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/simdutf.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll

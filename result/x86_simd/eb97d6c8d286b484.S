@@ -20,12 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
-func0000000000000018:                   # @func0000000000000018
-	vptestmb	%xmm0, %xmm0, %k0
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
-	retq
-.LCPI2_0:
+.LCPI1_0:
 	.byte	127                             # 0x7f
 	.byte	127                             # 0x7f
 	.byte	127                             # 0x7f
@@ -43,7 +38,29 @@ func0000000000000018:                   # @func0000000000000018
 	.zero	1
 	.zero	1
 func0000000000000008:                   # @func0000000000000008
-	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k0
+	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq
+.LCPI2_0:
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000018:                   # @func0000000000000018
+	vpcmpneqb	.LCPI2_0(%rip), %xmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

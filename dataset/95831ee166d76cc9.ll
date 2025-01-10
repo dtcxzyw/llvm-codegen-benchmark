@@ -1,6 +1,6 @@
 
-%struct._zend_op.2793229 = type { ptr, %union._znode_op.2793230, %union._znode_op.2793230, %union._znode_op.2793230, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793230 = type { i32 }
+%struct._zend_op.2793195 = type { ptr, %union._znode_op.2793196, %union._znode_op.2793196, %union._znode_op.2793196, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793196 = type { i32 }
 
 ; 10 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
@@ -19,7 +19,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %struct._zend_op.2793229, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zend_op.2793195, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7
 }

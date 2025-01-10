@@ -1,5 +1,5 @@
 
-%struct.ItemIdData.3652500 = type { i32 }
+%struct.ItemIdData.3652466 = type { i32 }
 
 ; 3 occurrences:
 ; cmake/optimized/md4.c.ll
@@ -37,7 +37,7 @@ entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -1
-  %5 = getelementptr [0 x %struct.ItemIdData.3652500], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.ItemIdData.3652466], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

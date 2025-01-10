@@ -1,10 +1,9 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
-; git/optimized/sequencer.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/sm_same.cpp.ll
 ; gromacs/optimized/xtc2.c.ll

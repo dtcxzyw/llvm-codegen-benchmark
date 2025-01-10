@@ -1,5 +1,5 @@
 
-%struct.dynamic_lcid_drb_mapping_t.3449484 = type { i32, i32, i32, i32, i8 }
+%struct.dynamic_lcid_drb_mapping_t.3449450 = type { i32, i32, i32, i32, i8 }
 
 ; 6 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -25,7 +25,7 @@ define ptr @func0000000000000013(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr [33 x %struct.dynamic_lcid_drb_mapping_t.3449484], ptr %1, i64 0, i64 %4
+  %5 = getelementptr [33 x %struct.dynamic_lcid_drb_mapping_t.3449450], ptr %1, i64 0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }

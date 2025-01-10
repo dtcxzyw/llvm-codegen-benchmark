@@ -414,7 +414,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -429,9 +429,6 @@ entry:
 ; ripgrep-rs/optimized/rwbxp5vay147miz.ll
 ; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
-; typst-rs/optimized/1c2qpu6zljc8gscz.ll
-; typst-rs/optimized/377uk5tkmxagdt0q.ll
-; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
@@ -475,6 +472,20 @@ define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = sub nsw i64 65, %0
+  %5 = icmp ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; typst-rs/optimized/1c2qpu6zljc8gscz.ll
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sub nsw i64 11, %0
   %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }

@@ -1,7 +1,7 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
 
 ; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -19,7 +19,7 @@ define ptr @func0000000000000003(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %0, ptr null, ptr %1
-  %5 = getelementptr nusw nuw %"struct.OT::HBFixed.2730714", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::HBFixed.2730680", ptr %4, i64 %3
   ret ptr %5
 }
 

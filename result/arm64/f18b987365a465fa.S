@@ -108,3 +108,13 @@ func0000000000000002:                   // @func0000000000000002
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
+func0000000000000312:                   // @func0000000000000312
+// %bb.0:                               // %entry
+	add	x8, x2, #16
+	add	x9, x1, #16
+	cmp	x9, x8
+	cset	w8, hs
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function

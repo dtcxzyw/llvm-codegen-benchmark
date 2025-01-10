@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<16, 16>::type.2802987" = type { [16 x i8] }
+%"union.std::aligned_storage<16, 16>::type.2802953" = type { [16 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/hugetlb.ll
@@ -20,7 +20,7 @@ entry:
 define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
-  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 16>::type.2802987"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 16>::type.2802953"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

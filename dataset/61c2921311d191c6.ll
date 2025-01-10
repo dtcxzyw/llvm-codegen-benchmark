@@ -60,29 +60,4 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; lief/optimized/des.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = xor i32 %1, %2
-  %4 = shl nuw i32 %3, 16
-  %5 = xor i32 %4, %0
-  %6 = lshr i32 %5, 4
-  ret i32 %6
-}
-
-; 3 occurrences:
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = xor i32 %1, %2
-  %4 = lshr exact i32 %0, 24
-  %5 = xor i32 %4, %3
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

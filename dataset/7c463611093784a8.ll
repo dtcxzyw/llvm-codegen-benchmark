@@ -1,6 +1,6 @@
 
-%"class.boost::geometry::model::point.3015592" = type { [2 x double] }
-%"struct.boost::geometry::detail::overlay::indexed_turn_operation.3019795" = type { i64, i64, i8, ptr, ptr }
+%"class.boost::geometry::model::point.3015558" = type { [2 x double] }
+%"struct.boost::geometry::detail::overlay::indexed_turn_operation.3019761" = type { i64, i64, i8, ptr, ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
@@ -78,7 +78,7 @@ define ptr @func0000000000000004(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr %"class.boost::geometry::model::point.3015592", ptr %0, i64 %4
+  %5 = getelementptr %"class.boost::geometry::model::point.3015558", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -89,7 +89,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw nuw %"struct.boost::geometry::detail::overlay::indexed_turn_operation.3019795", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.boost::geometry::detail::overlay::indexed_turn_operation.3019761", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,7 +1,8 @@
 
-%struct.atomic64_t.3537652 = type { i64 }
+%struct.atomic64_t.3537618 = type { i64 }
 
-; 36 occurrences:
+; 37 occurrences:
+; abc/optimized/dsdTree.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -47,8 +48,7 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; abc/optimized/dsdTree.c.ll
+; 1 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
@@ -68,7 +68,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %struct.atomic64_t.3537652, ptr %0, i64 %4
+  %5 = getelementptr %struct.atomic64_t.3537618, ptr %0, i64 %4
   ret ptr %5
 }
 

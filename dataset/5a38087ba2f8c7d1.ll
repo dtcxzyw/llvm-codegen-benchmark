@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3199737" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3199703" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/jfrEventClassTransformer.ll
@@ -57,7 +57,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, ptr %3, ptr null
-  %6 = getelementptr nusw %"class.llvm::Use.3199737", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.llvm::Use.3199703", ptr %5, i64 %0
   ret ptr %6
 }
 

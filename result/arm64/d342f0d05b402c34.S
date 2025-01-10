@@ -21,9 +21,8 @@ func0000000000000008:                   // @func0000000000000008
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	mov	w8, #376                        // =0x178
-	smaddl	x8, w1, w8, x0
-	sub	x0, x8, #364
+	add	x8, x0, w1, sxtw
+	add	x0, x8, #6
 	ret
                                         // -- End function
 func0000000000000053:                   // @func0000000000000053

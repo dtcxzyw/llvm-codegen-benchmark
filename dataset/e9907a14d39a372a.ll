@@ -22,8 +22,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
-; clamav/optimized/matcher-bm.c.ll
+; 12 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/skbuff.ll

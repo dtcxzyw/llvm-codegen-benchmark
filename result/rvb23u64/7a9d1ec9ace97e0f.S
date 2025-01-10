@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
-	fmv.x.d	a0, fa0
-	srli	a0, a0, 63
-	ret
 func000000000000000a:                   # @func000000000000000a
 	fmv.x.d	a0, fa0
 	slti	a0, a0, 0
 	xori	a0, a0, 1
+	ret
+func0000000000000006:                   # @func0000000000000006
+	fmv.x.d	a0, fa0
+	srli	a0, a0, 63
 	ret
 func0000000000000014:                   # @func0000000000000014
 	fmv.x.d	a0, fa0

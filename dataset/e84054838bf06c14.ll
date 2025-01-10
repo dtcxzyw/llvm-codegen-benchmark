@@ -1,6 +1,5 @@
 
-; 12 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 11 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; linux/optimized/page-writeback.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll

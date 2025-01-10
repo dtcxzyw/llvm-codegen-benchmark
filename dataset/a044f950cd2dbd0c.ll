@@ -1,13 +1,13 @@
 
-%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
-%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
-%union.anon.2790010 = type { i32 }
-%union.anon.4.2790011 = type { i32 }
-%union.anon.5.2790009 = type { %union._ir_val.2790012 }
-%union._ir_val.2790012 = type { double }
-%struct.ExprEvalStep.3654220 = type { i64, ptr, ptr, %union.anon.3654221 }
-%union.anon.3654221 = type { %struct.anon.22.3654222 }
-%struct.anon.22.3654222 = type { ptr, ptr, i32, i32, ptr, ptr }
+%struct._ir_insn.2789973 = type { %struct.anon.2789974, %union.anon.5.2789975 }
+%struct.anon.2789974 = type { %union.anon.2789976, %union.anon.4.2789977 }
+%union.anon.2789976 = type { i32 }
+%union.anon.4.2789977 = type { i32 }
+%union.anon.5.2789975 = type { %union._ir_val.2789978 }
+%union._ir_val.2789978 = type { double }
+%struct.ExprEvalStep.3654186 = type { i64, ptr, ptr, %union.anon.3654187 }
+%union.anon.3654187 = type { %struct.anon.22.3654188 }
+%struct.anon.22.3654188 = type { ptr, ptr, i32, i32, ptr, ptr }
 
 ; 263 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -303,7 +303,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct._ir_insn.2789973, ptr %0, i64 %3
   %5 = select i1 %1, i64 4, i64 8
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
@@ -332,7 +332,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ExprEvalStep.3654220, ptr %0, i64 %3
+  %4 = getelementptr %struct.ExprEvalStep.3654186, ptr %0, i64 %3
   %5 = select i1 %1, i64 40, i64 24
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6

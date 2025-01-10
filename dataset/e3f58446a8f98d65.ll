@@ -1,11 +1,11 @@
 
-%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
-%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
-%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
-%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
-%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
-%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
-%"struct.std::_Head_base.386.3474879" = type { ptr }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474839" = type { %"class.std::unique_ptr.379.3474840" }
+%"class.std::unique_ptr.379.3474840" = type { %"struct.std::__uniq_ptr_data.380.3474841" }
+%"struct.std::__uniq_ptr_data.380.3474841" = type { %"class.std::__uniq_ptr_impl.381.3474842" }
+%"class.std::__uniq_ptr_impl.381.3474842" = type { %"class.std::tuple.382.3474843" }
+%"class.std::tuple.382.3474843" = type { %"struct.std::_Tuple_impl.383.3474844" }
+%"struct.std::_Tuple_impl.383.3474844" = type { %"struct.std::_Head_base.386.3474845" }
+%"struct.std::_Head_base.386.3474845" = type { ptr }
 
 ; 2 occurrences:
 ; meshlab/optimized/matching.cpp.ll
@@ -116,7 +116,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %0, i64 %2
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = shl nuw nsw i64 %1, 3
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5

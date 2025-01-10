@@ -1,7 +1,7 @@
 
-%struct.rb_ifaddr_tag.2601717 = type { i32, ptr }
-%class.btVector3.2819402 = type { [4 x float] }
-%union._Py_CODEUNIT.3967078 = type { i16 }
+%struct.rb_ifaddr_tag.2601684 = type { i32, ptr }
+%class.btVector3.2819368 = type { [4 x float] }
+%union._Py_CODEUNIT.3967028 = type { i16 }
 
 ; 2 occurrences:
 ; cpython/optimized/ceval.ll
@@ -27,7 +27,7 @@ define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.rb_ifaddr_tag.2601717, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.rb_ifaddr_tag.2601684, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -46,7 +46,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.rb_ifaddr_tag.2601717, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.rb_ifaddr_tag.2601684, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -58,7 +58,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 3, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.btVector3.2819402, ptr %0, i64 %3, i32 0, i64 1
+  %4 = getelementptr %class.btVector3.2819368, ptr %0, i64 %3, i32 0, i64 1
   ret ptr %4
 }
 
@@ -109,7 +109,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %union._Py_CODEUNIT.3967078, ptr %0, i64 %3
+  %4 = getelementptr %union._Py_CODEUNIT.3967028, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }

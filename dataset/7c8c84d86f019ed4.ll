@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3195182" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3195148" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 13 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -34,7 +34,7 @@ entry:
   %3 = icmp eq i32 %2, 4
   %4 = select i1 %3, i64 -12915, i64 -12917
   %5 = select i1 %1, i64 -12913, i64 %4
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3195182", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3195148", ptr %0, i64 %5
   ret ptr %6
 }
 

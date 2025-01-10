@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:

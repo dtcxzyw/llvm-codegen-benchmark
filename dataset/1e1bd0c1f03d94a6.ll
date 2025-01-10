@@ -1,7 +1,7 @@
 
-%struct.btSolverConstraint.2817833 = type { %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, float, float, float, float, float, float, float, float, float, %union.anon.24.2817835, i32, i32, i32, i32 }
-%class.btVector3.2817834 = type { [4 x float] }
-%union.anon.24.2817835 = type { ptr }
+%struct.btSolverConstraint.2817799 = type { %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, float, float, float, float, float, float, float, float, float, %union.anon.24.2817801, i32, i32, i32, i32 }
+%class.btVector3.2817800 = type { [4 x float] }
+%union.anon.24.2817801 = type { ptr }
 
 ; 5 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -44,7 +44,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.btSolverConstraint.2817833, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.btSolverConstraint.2817799, ptr %0, i64 %5
   ret ptr %6
 }
 

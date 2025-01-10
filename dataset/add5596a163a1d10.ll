@@ -1,7 +1,7 @@
 
-%"class.llvm::DenseMap.222.3201889" = type <{ ptr, i32, i32, i32, [4 x i8] }>
-%"class.llvm::SDUse.3276506" = type { %"class.llvm::SDValue.3276492", ptr, ptr, ptr }
-%"class.llvm::SDValue.3276492" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::DenseMap.222.3201855" = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%"class.llvm::SDUse.3276472" = type { %"class.llvm::SDValue.3276458", ptr, ptr, ptr }
+%"class.llvm::SDValue.3276458" = type <{ ptr, i32, [4 x i8] }>
 
 ; 2 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
@@ -28,7 +28,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201889", ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201855", ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::SDUse.3276506", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr nuw %"class.llvm::SDUse.3276472", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 

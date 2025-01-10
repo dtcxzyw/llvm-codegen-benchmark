@@ -14,7 +14,7 @@ func000000000000004c:                   // @func000000000000004c
 	and	w8, w0, #0xff
 	and	x9, x1, #0x7
 	lsr	w8, w8, w9
-	ubfx	w0, w8, #1, #1
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021

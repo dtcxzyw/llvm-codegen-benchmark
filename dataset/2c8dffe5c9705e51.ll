@@ -1,11 +1,11 @@
 
-%struct._ir_insn.2791076 = type { %struct.anon.2791077, %union.anon.5.2791078 }
-%struct.anon.2791077 = type { %union.anon.2791079, %union.anon.4.2791080 }
-%union.anon.2791079 = type { i32 }
-%union.anon.4.2791080 = type { i32 }
-%union.anon.5.2791078 = type { %union._ir_val.2791081 }
-%union._ir_val.2791081 = type { double }
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct._ir_insn.2791042 = type { %struct.anon.2791043, %union.anon.5.2791044 }
+%struct.anon.2791043 = type { %union.anon.2791045, %union.anon.4.2791046 }
+%union.anon.2791045 = type { i32 }
+%union.anon.4.2791046 = type { i32 }
+%union.anon.5.2791044 = type { %union._ir_val.2791047 }
+%union._ir_val.2791047 = type { double }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 8 occurrences:
 ; clamav/optimized/qsort.c.ll
@@ -19,7 +19,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct._ir_insn.2791076, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct._ir_insn.2791042, ptr %0, i64 %1
   %3 = freeze ptr %2
   ret ptr %3
 }
@@ -33,7 +33,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.JSShapeProperty.3435093, ptr %0, i64 %1
+  %2 = getelementptr %struct.JSShapeProperty.3435059, ptr %0, i64 %1
   %3 = freeze ptr %2
   ret ptr %3
 }

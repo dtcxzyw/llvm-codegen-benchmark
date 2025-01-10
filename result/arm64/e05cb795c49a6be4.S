@@ -14,11 +14,3 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	add	x8, x0, x0, lsl #2
-	lsl	x8, x8, #3
-	cmn	x8, #15
-	cset	w0, lo
-	ret
-                                        // -- End function

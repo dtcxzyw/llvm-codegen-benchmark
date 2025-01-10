@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; openblas/optimized/dlarrd.c.ll
+; 1 occurrences:
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018c(i32 %0, i32 %1) #0 {

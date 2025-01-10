@@ -374,31 +374,6 @@ entry:
 }
 
 ; 1 occurrences:
-; zxing/optimized/QRMaskUtil.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000186(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 7
-  %4 = getelementptr i8, ptr %1, i64 -7
-  %5 = icmp slt i64 %0, 7
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
-}
-
-; 2 occurrences:
-; casadi/optimized/integrator.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000066(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 -7
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 7
-  %5 = icmp slt i64 %0, 7
-  %6 = select i1 %5, ptr %4, ptr %3
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; tev/optimized/MultiGraph.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001e4(i64 %0, ptr %1, ptr %2) #0 {
@@ -406,6 +381,18 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 232
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
   %5 = icmp ult i64 %0, 3
+  %6 = select i1 %5, ptr %4, ptr %3
+  ret ptr %6
+}
+
+; 1 occurrences:
+; casadi/optimized/integrator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000066(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 -8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1544
+  %5 = icmp slt i64 %0, 1
   %6 = select i1 %5, ptr %4, ptr %3
   ret ptr %6
 }

@@ -182,7 +182,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -195,7 +195,6 @@ entry:
 ; llvm/optimized/DivRemPairs.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; openjdk/optimized/hb-set.ll
-; postgres/optimized/regexec.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/cellaigs.ll

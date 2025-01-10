@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::NodeTemplate.298.3570047" = type { ptr }
+%"class.cvc5::internal::NodeTemplate.298.3570013" = type { ptr }
 
 ; 3 occurrences:
 ; git/optimized/xhistogram.ll
@@ -39,7 +39,7 @@ entry:
   %4 = xor i32 %1, -1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.298.3570047", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.298.3570013", ptr %0, i64 %6
   ret ptr %7
 }
 

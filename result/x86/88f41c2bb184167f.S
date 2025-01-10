@@ -24,13 +24,13 @@ func0000000000000030:                   # @func0000000000000030
 	movl	$4294967294, %eax               # imm = 0xFFFFFFFE
 	addq	%rcx, %rax
 	retq
-func00000000000000dd:                   # @func00000000000000dd
-	shlq	$6, %rdi
-	leaq	760(%rdi,%rsi,8), %rax
-	retq
 func00000000000000ff:                   # @func00000000000000ff
 	shlq	$4, %rdi
 	leaq	32(%rdi,%rsi,8), %rax
+	retq
+func00000000000000dd:                   # @func00000000000000dd
+	shlq	$3, %rdi
+	leaq	64(%rdi,%rsi,4), %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	shlq	$3, %rdi

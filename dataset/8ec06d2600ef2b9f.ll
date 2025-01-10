@@ -1,13 +1,14 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_zonesystem.c.ll
+; icu/optimized/number_compact.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw [24 x float], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [24 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -22,17 +23,6 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
   %5 = getelementptr [0 x i32], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; icu/optimized/number_compact.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw [21 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

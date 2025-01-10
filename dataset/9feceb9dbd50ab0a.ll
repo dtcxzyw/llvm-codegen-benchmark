@@ -1,7 +1,5 @@
 
-; 4 occurrences:
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
+; 2 occurrences:
 ; php/optimized/ir.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
@@ -38,18 +36,6 @@ entry:
   %4 = add i32 %0, %3
   %5 = shl nuw nsw i32 %1, 16
   %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16711680
-  %4 = add nuw nsw i32 %0, %3
-  %5 = shl nuw i32 %1, 24
-  %6 = add nuw nsw i32 %4, %5
   ret i32 %6
 }
 

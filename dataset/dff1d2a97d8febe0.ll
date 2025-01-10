@@ -1,9 +1,9 @@
 
-%struct.rb_builtin_function.2601343 = type { ptr, i32, i32, ptr }
-%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.rb_builtin_function.2601310 = type { ptr, i32, i32, ptr }
+%"struct.folly::Subprocess::Pipe.2685236" = type <{ %"class.folly::File.2685228", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685228" = type <{ i32, i8, [3 x i8] }>
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 7 occurrences:
 ; git/optimized/sequencer.ll
@@ -18,7 +18,7 @@ define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_builtin_function.2601343, ptr %0, i64 %3
+  %4 = getelementptr %struct.rb_builtin_function.2601310, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -85,7 +85,7 @@ define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685236", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -114,7 +114,7 @@ define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %struct.lua_TValue.3680875, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.lua_TValue.3680825, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

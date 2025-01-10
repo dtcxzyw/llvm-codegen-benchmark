@@ -1,5 +1,5 @@
 
-%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108105" = type { ptr, ptr }
 
 ; 5 occurrences:
 ; cpython/optimized/xmltok.ll
@@ -395,9 +395,10 @@ entry:
   ret i1 %6
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmWindowsRegistry.cxx.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
@@ -717,9 +718,8 @@ entry:
   ret i1 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; boost/optimized/static_string.ll
 ; cmake/optimized/hostip.c.ll
 ; curl/optimized/libcurl_la-hostip.ll
 ; hdf5/optimized/H5Odtype.c.ll
@@ -848,7 +848,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %1, i64 %2
+  %3 = getelementptr %"class.Catch::TestCaseHandle.3108105", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = icmp ugt i64 %5, 9223372036854775792
@@ -865,18 +865,6 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = icmp ne i64 %5, -1
-  ret i1 %6
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = sub i64 %0, %4
-  %6 = icmp samesign eq i64 %5, 12
   ret i1 %6
 }
 

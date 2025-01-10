@@ -1,5 +1,5 @@
 
-%struct.dynbuf.2762605 = type { ptr, i64, i64, i64 }
+%struct.dynbuf.2762571 = type { ptr, i64, i64, i64 }
 
 ; 12 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -99,7 +99,7 @@ define ptr @func0000000000000063(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %struct.dynbuf.2762605], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %struct.dynbuf.2762571], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

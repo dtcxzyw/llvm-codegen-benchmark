@@ -1,6 +1,6 @@
 
-%struct.bb_commit.2883685 = type { ptr, ptr, ptr, i8, i32 }
-%class.mpz.3616116 = type { i32, i8, ptr }
+%struct.bb_commit.2883651 = type { ptr, ptr, ptr, i8, i32 }
+%class.mpz.3616082 = type { i32, i8, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
@@ -63,7 +63,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.bb_commit.2883685, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.bb_commit.2883651, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -114,7 +114,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %class.mpz.3616116, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %class.mpz.3616082, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3139227" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3139193" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 100 occurrences:
 ; abc/optimized/giaMan.c.ll
@@ -141,7 +141,7 @@ entry:
   ret ptr %4
 }
 
-; 1670 occurrences:
+; 1669 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -815,7 +815,6 @@ entry:
 ; linux/optimized/raw.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/runtime.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/scsi_lib.ll
@@ -1821,7 +1820,7 @@ entry:
   ret ptr %4
 }
 
-; 2072 occurrences:
+; 2073 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
@@ -2566,6 +2565,7 @@ entry:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; icu/optimized/filterrb.ll
 ; icu/optimized/udbgutil.ll
+; icu/optimized/uresdata.ll
 ; ipopt/optimized/IpDenseVector.ll
 ; ipopt/optimized/IpOptionsList.ll
 ; ipopt/optimized/IpRegOptions.ll
@@ -4641,7 +4641,7 @@ define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 8
   %3 = select i1 %2, i64 -13805, i64 -13807
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3139227", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3139193", ptr %0, i64 %3
   ret ptr %4
 }
 

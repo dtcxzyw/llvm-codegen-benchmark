@@ -12,21 +12,6 @@ entry:
   ret i16 %4
 }
 
-; 5 occurrences:
-; linux/optimized/ip6_offload.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; wireshark/optimized/packet-moldudp.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 %0, %1
-  %3 = trunc i32 %2 to i16
-  %4 = add i16 %3, -2
-  ret i16 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ethtool.ll
@@ -36,6 +21,19 @@ entry:
   %2 = sub nsw i32 %0, %1
   %3 = trunc i32 %2 to i16
   %4 = add i16 %3, 1
+  ret i16 %4
+}
+
+; 3 occurrences:
+; linux/optimized/ip6_offload.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  %4 = add i16 %3, -40
   ret i16 %4
 }
 

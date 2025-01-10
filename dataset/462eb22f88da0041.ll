@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -10,6 +10,7 @@
 ; jq/optimized/execute.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/Archive.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

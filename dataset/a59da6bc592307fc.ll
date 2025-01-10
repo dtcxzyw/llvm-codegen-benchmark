@@ -1,6 +1,6 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%struct.cert_pkey_st.2633834 = type { ptr, ptr, ptr, ptr, i64 }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%struct.cert_pkey_st.2633801 = type { ptr, ptr, ptr, ptr, i64 }
 
 ; 29 occurrences:
 ; abc/optimized/acecPool.c.ll
@@ -36,7 +36,7 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %2, i32 5
+  %3 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %2, i32 5
   ret ptr %3
 }
 
@@ -243,7 +243,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
-  %3 = getelementptr nusw nuw %struct.cert_pkey_st.2633834, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %struct.cert_pkey_st.2633801, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

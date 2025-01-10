@@ -1,6 +1,6 @@
 
-%"class.asio::io_context.2781109" = type { %"class.asio::execution_context.2781110", ptr }
-%"class.asio::execution_context.2781110" = type { ptr }
+%"class.asio::io_context.2781075" = type { %"class.asio::execution_context.2781076", ptr }
+%"class.asio::execution_context.2781076" = type { ptr }
 
 ; 4 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -12,7 +12,7 @@ define i64 @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw %"class.asio::io_context.2781109", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.asio::io_context.2781075", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

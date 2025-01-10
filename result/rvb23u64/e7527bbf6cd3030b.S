@@ -70,7 +70,7 @@ func000000000000003b:                   # @func000000000000003b
 	sh3add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
@@ -81,13 +81,4 @@ func0000000000000038:                   # @func0000000000000038
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 14
-	ret
-func000000000000002a:                   # @func000000000000002a
-	sh2add	a2, a2, a2
-	sh2add	a0, a0, a0
-	slli	a2, a2, 4
-	add	a1, a1, a2
-	slli	a0, a0, 4
-	add	a0, a0, a1
-	addi	a0, a0, -80
 	ret

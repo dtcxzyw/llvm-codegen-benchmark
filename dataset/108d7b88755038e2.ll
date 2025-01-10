@@ -648,7 +648,7 @@ entry:
   ret i32 %3
 }
 
-; 683 occurrences:
+; 682 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -887,7 +887,6 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dp_aux.ll

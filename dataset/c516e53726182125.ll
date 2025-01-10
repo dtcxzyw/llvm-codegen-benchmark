@@ -1,7 +1,7 @@
 
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 8 occurrences:
 ; icu/optimized/bmpset.ll
@@ -31,7 +31,7 @@ entry:
   %2 = lshr i32 %1, 24
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -61,7 +61,7 @@ entry:
   %2 = lshr exact i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -77,7 +77,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

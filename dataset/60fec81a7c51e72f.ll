@@ -1,9 +1,9 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.190.2711048" = type { %union.anon.191.2711049 }
-%union.anon.191.2711049 = type { ptr }
-%"class.openvdb::v11_0::tree::NodeUnion.2710927" = type { %union.anon.172.2710928 }
-%union.anon.172.2710928 = type { ptr }
-%struct.SpGistLastUsedPage.3654355 = type { i32, i32 }
+%"class.openvdb::v11_0::tree::NodeUnion.190.2711014" = type { %union.anon.191.2711015 }
+%union.anon.191.2711015 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.2710893" = type { %union.anon.172.2710894 }
+%union.anon.172.2710894 = type { ptr }
+%struct.SpGistLastUsedPage.3654321 = type { i32, i32 }
 
 ; 43 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -81,7 +81,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711048"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711014"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -107,7 +107,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2710927"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.2710893"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -130,7 +130,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.3654355], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.3654321], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

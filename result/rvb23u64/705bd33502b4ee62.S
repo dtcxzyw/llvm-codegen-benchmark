@@ -6,19 +6,19 @@ func0000000000000024:                   # @func0000000000000024
 	not	a0, a0
 	bexti	a0, a0, 31
 	ret
-func0000000000000028:                   # @func0000000000000028
-	srliw	a0, a0, 31
-	ret
 func0000000000000026:                   # @func0000000000000026
+	sext.w	a0, a0
+	slti	a0, a0, 1
+	ret
+func000000000000002a:                   # @func000000000000002a
+	sext.w	a0, a0
+	sgtz	a0, a0
+	ret
+func0000000000000028:                   # @func0000000000000028
 	srliw	a0, a0, 31
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	bexti	a0, a0, 62
-	ret
-func000000000000002a:                   # @func000000000000002a
-	sext.w	a0, a0
-	lui	a1, 2048
-	slt	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	bexti	a0, a0, 33

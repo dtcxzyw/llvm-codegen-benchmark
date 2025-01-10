@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::VersionPattern.2640461" = type <{ %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", i16, i8, [5 x i8] }>
-%"class.std::basic_string_view.2640338" = type { i64, ptr }
-%"class.std::valarray.2831683" = type { i64, ptr }
+%"struct.mold::elf::VersionPattern.2640428" = type <{ %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", i16, i8, [5 x i8] }>
+%"class.std::basic_string_view.2640305" = type { i64, ptr }
+%"class.std::valarray.2831649" = type { i64, ptr }
 
 ; 22 occurrences:
 ; arrow/optimized/diff.cc.ll
@@ -30,7 +30,7 @@
 define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640461", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640428", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -328,7 +328,7 @@ entry:
 define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr nusw nuw %"class.std::valarray.2831683", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::valarray.2831649", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

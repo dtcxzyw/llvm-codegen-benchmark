@@ -1,5 +1,5 @@
 
-; 17749 occurrences:
+; 17750 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -4106,6 +4106,7 @@
 ; gromacs/optimized/multisim.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/nbnxm.cpp.ll
+; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/nm2type.cpp.ll
 ; gromacs/optimized/nosehooverchains.cpp.ll

@@ -61,10 +61,10 @@ func0000000000000034:                   # @func0000000000000034
 	cmovaeq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movl	$8, %eax
+	movl	$4, %eax
 	shlxq	%rsi, %rax, %rcx
-	cmpl	$2, %edi
-	movl	$6, %eax
+	xorl	%eax, %eax
+	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000058:                   # @func0000000000000058

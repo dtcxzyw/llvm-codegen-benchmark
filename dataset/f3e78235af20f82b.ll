@@ -191,7 +191,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
 ; icu/optimized/ustdio.ll
@@ -199,6 +199,7 @@ entry:
 ; linux/optimized/reg.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
 ; lvgl/optimized/lv_draw_sw_mask.ll
 ; openexr/optimized/decoding.c.ll

@@ -159,7 +159,7 @@ entry:
   ret i16 %3
 }
 
-; 459 occurrences:
+; 457 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
@@ -346,8 +346,6 @@ entry:
 ; minetest/optimized/mapnode.cpp.ll
 ; minetest/optimized/pointabilities.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll

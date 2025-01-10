@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func0000000000000041:                   # @func0000000000000041
-	movabsq	$549755813888, %rax             # imm = 0x8000000000
+	movabsq	$8796093022208, %rax            # imm = 0x80000000000
 	andq	%rdx, %rax
 	orq	%rsi, %rax
 	orq	%rdi, %rax

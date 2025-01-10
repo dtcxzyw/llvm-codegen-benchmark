@@ -1,6 +1,6 @@
 
-%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
-%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
+%union.acpi_object.3547831 = type { %struct.anon.8.3547832 }
+%struct.anon.8.3547832 = type { i32, i32, i64, i32 }
 
 ; 10 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -50,7 +50,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr %union.acpi_object.3547831, ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 

@@ -1,8 +1,8 @@
 
-%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
-%struct.Mig_Fan_t_.2877742 = type { i32 }
-%"class.llvm::Use.3145316" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
+%struct.Mig_Obj_t_.2877707 = type { [4 x %struct.Mig_Fan_t_.2877708] }
+%struct.Mig_Fan_t_.2877708 = type { i32 }
+%"class.llvm::Use.3145282" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; libdeflate/optimized/deflate_decompress.c.ll
@@ -33,7 +33,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %0, i64 -16
-  %6 = getelementptr %struct.Mig_Obj_t_.2877741, ptr %5, i64 %4
+  %6 = getelementptr %struct.Mig_Obj_t_.2877707, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -108,7 +108,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 -24
-  %6 = getelementptr nusw %"class.llvm::Use.3145316", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3145282", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -122,7 +122,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr %"class.llvm::Use.3241632", ptr %5, i64 %4
+  %6 = getelementptr %"class.llvm::Use.3241598", ptr %5, i64 %4
   ret ptr %6
 }
 

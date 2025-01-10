@@ -892,7 +892,7 @@ entry:
   ret i64 %3
 }
 
-; 276 occurrences:
+; 275 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff-common.cc.ll
@@ -1073,7 +1073,6 @@ entry:
 ; qemu/optimized/migration_xbzrle.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rcore.c.ll
-; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; sqlite/optimized/sqlite3.ll

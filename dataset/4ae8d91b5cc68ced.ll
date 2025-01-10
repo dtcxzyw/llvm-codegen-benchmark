@@ -22,10 +22,11 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/wildmatch.ll
 ; icu/optimized/uniset.ll
 ; lightgbm/optimized/bin.cpp.ll
+; lua/optimized/ldebug.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {

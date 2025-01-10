@@ -1,13 +1,13 @@
 
-%"class.llvm::TinyPtrVector.3225054" = type { %"class.llvm::PointerUnion.3225055" }
-%"class.llvm::PointerUnion.3225055" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.3225056" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.3225056" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.67.3225057" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.67.3225057" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.68.3225058" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.68.3225058" = type { %"class.llvm::PointerIntPair.69.3225059" }
-%"class.llvm::PointerIntPair.69.3225059" = type { %"struct.llvm::detail::PunnedPointer.70.3225060" }
-%"struct.llvm::detail::PunnedPointer.70.3225060" = type { [8 x i8] }
-%"class.llvm::ReachingDef.3225066" = type { i64 }
-%struct.bitmap_page.3537964 = type { ptr, i32 }
+%"class.llvm::TinyPtrVector.3225020" = type { %"class.llvm::PointerUnion.3225021" }
+%"class.llvm::PointerUnion.3225021" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.3225022" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.3225022" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.67.3225023" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.67.3225023" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.68.3225024" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.68.3225024" = type { %"class.llvm::PointerIntPair.69.3225025" }
+%"class.llvm::PointerIntPair.69.3225025" = type { %"struct.llvm::detail::PunnedPointer.70.3225026" }
+%"struct.llvm::detail::PunnedPointer.70.3225026" = type { [8 x i8] }
+%"class.llvm::ReachingDef.3225032" = type { i64 }
+%struct.bitmap_page.3537930 = type { ptr, i32 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -55,8 +55,8 @@ define ptr @func000000000000010f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw %"class.llvm::TinyPtrVector.3225054", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.llvm::ReachingDef.3225066", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::TinyPtrVector.3225020", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::ReachingDef.3225032", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -81,7 +81,7 @@ define ptr @func0000000000000300(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp samesign ugt i64 %2, 2047
   %4 = zext i1 %3 to i64
-  %5 = getelementptr %struct.bitmap_page.3537964, ptr %0, i64 %1
+  %5 = getelementptr %struct.bitmap_page.3537930, ptr %0, i64 %1
   %6 = getelementptr i16, ptr %5, i64 %4
   ret ptr %6
 }

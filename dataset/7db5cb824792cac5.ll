@@ -1,6 +1,6 @@
 
-%"struct.irr::gui::CGUIButton::ButtonSprite.2692517" = type <{ i32, %"class.irr::video::SColor.2692518", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2692518" = type { i32 }
+%"struct.irr::gui::CGUIButton::ButtonSprite.2692483" = type <{ i32, %"class.irr::video::SColor.2692484", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2692484" = type { i32 }
 
 ; 249 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
@@ -257,7 +257,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 4, i64 5
   %3 = getelementptr nusw nuw i8, ptr %0, i64 308
-  %4 = getelementptr nusw nuw [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2692517"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [7 x %"struct.irr::gui::CGUIButton::ButtonSprite.2692483"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

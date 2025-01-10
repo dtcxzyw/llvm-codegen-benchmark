@@ -63,12 +63,12 @@ func000000000000002c:                   // @func000000000000002c
 	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000000ca:                   // @func00000000000000ca
+func00000000000000c7:                   // @func00000000000000c7
 // %bb.0:                               // %entry
 	cmp	x2, #1
 	csinv	x8, x1, xzr, ge
 	cmp	x8, x0
-	cset	w0, gt
+	cset	w0, le
 	ret
                                         // -- End function
 func0000000000000288:                   // @func0000000000000288

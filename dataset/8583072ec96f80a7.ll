@@ -1,6 +1,6 @@
 
-%"class.clang::Qualifiers.3142438" = type { i64 }
-%"class.clang::FunctionEffect.3142439" = type { i8 }
+%"class.clang::Qualifiers.3142404" = type { i64 }
+%"class.clang::FunctionEffect.3142405" = type { i8 }
 
 ; 29 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
@@ -37,8 +37,8 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %4, i64 %1
-  %6 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3142404", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142405", ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
 
 ; 10 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -24,7 +24,7 @@ entry:
   ret i64 %7
 }
 
-; 330 occurrences:
+; 331 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; boost/optimized/calculate_point_order.ll
@@ -35,6 +35,7 @@ entry:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -380,9 +381,8 @@ entry:
   ret i64 %7
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; arrow/optimized/decimal.cc.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
@@ -438,7 +438,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000071(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2792291, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

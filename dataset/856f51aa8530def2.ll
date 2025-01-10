@@ -608,8 +608,9 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/acbFunc.c.ll
+; abc/optimized/cuddExact.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/mvcLits.c.ll

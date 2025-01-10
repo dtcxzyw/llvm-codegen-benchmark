@@ -1,7 +1,7 @@
 
-%"class.rocksdb::port::RWMutex.2616090" = type { %union.pthread_rwlock_t.2616091 }
-%union.pthread_rwlock_t.2616091 = type { %struct.__pthread_rwlock_arch_t.2616092 }
-%struct.__pthread_rwlock_arch_t.2616092 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
+%"class.rocksdb::port::RWMutex.2616057" = type { %union.pthread_rwlock_t.2616058 }
+%union.pthread_rwlock_t.2616058 = type { %struct.__pthread_rwlock_arch_t.2616059 }
+%struct.__pthread_rwlock_arch_t.2616059 = type { i32, i32, i32, i32, i32, i32, i32, i32, i8, [7 x i8], i64, i32 }
 
 ; 7 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -17,7 +17,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = urem i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.rocksdb::port::RWMutex.2616090", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.rocksdb::port::RWMutex.2616057", ptr %0, i64 %5
   ret ptr %6
 }
 

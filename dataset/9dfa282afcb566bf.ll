@@ -1,7 +1,7 @@
 
-%struct.Mio_Cell_t_.2876323 = type { ptr, i32, float, i64, [6 x float] }
-%struct.nf_conn_counter.3558356 = type { %struct.atomic64_t.3558288, %struct.atomic64_t.3558288 }
-%struct.atomic64_t.3558288 = type { i64 }
+%struct.Mio_Cell_t_.2876289 = type { ptr, i32, float, i64, [6 x float] }
+%struct.nf_conn_counter.3558322 = type { %struct.atomic64_t.3558254, %struct.atomic64_t.3558254 }
+%struct.atomic64_t.3558254 = type { i64 }
 
 ; 1 occurrences:
 ; abc/optimized/mioUtils.c.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nuw %struct.Mio_Cell_t_.2876323, ptr %0, i64 %3, i32 3
+  %4 = getelementptr nuw %struct.Mio_Cell_t_.2876289, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -63,7 +63,7 @@ define ptr @func0000000000000303(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp samesign ugt i64 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.nf_conn_counter.3558356, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.nf_conn_counter.3558322, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -374,7 +374,7 @@ entry:
   ret i32 %3
 }
 
-; 535 occurrences:
+; 530 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
@@ -448,11 +448,7 @@ entry:
 ; hermes/optimized/TypeInference.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/limex_native.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; hyperscan/optimized/state_compress.c.ll
@@ -829,7 +825,6 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/spike-log-parser.ll
 ; stb/optimized/stb_image_write.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll

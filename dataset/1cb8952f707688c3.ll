@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/ree_util.cc.ll
 ; cpython/optimized/blob.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -8,7 +8,6 @@
 ; postgres/optimized/ts_parse.ll
 ; postgres/optimized/tsquery.ll
 ; postgres/optimized/tsvector.ll
-; qemu/optimized/block_vvfat.c.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/transcode.ll

@@ -314,11 +314,7 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
+; 4 occurrences:
 ; icu/optimized/unistr.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll

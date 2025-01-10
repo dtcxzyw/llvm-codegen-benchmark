@@ -1,18 +1,18 @@
 
-%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
-%union.anon.2802904 = type { i64, [8 x i8] }
-%"class.QuantLib::Array.2844508" = type { %"class.std::unique_ptr.2844509", i64 }
-%"class.std::unique_ptr.2844509" = type { %"struct.std::__uniq_ptr_data.2844510" }
-%"struct.std::__uniq_ptr_data.2844510" = type { %"class.std::__uniq_ptr_impl.2844511" }
-%"class.std::__uniq_ptr_impl.2844511" = type { %"class.std::tuple.2844512" }
-%"class.std::tuple.2844512" = type { %"struct.std::_Tuple_impl.2844513" }
-%"struct.std::_Tuple_impl.2844513" = type { %"struct.std::_Head_base.21.2844514" }
-%"struct.std::_Head_base.21.2844514" = type { ptr }
-%class.QVariant.3444369 = type { %"struct.QVariant::Private.3444370" }
-%"struct.QVariant::Private.3444370" = type { %union.anon.3444371, i64 }
-%union.anon.3444371 = type { ptr, [16 x i8] }
-%"class.ue2::graph_detail::vertex_descriptor.3852076" = type { ptr, i64 }
+%"class.std::__cxx11::basic_string.2802868" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869", i64, %union.anon.2802870 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869" = type { ptr }
+%union.anon.2802870 = type { i64, [8 x i8] }
+%"class.QuantLib::Array.2844474" = type { %"class.std::unique_ptr.2844475", i64 }
+%"class.std::unique_ptr.2844475" = type { %"struct.std::__uniq_ptr_data.2844476" }
+%"struct.std::__uniq_ptr_data.2844476" = type { %"class.std::__uniq_ptr_impl.2844477" }
+%"class.std::__uniq_ptr_impl.2844477" = type { %"class.std::tuple.2844478" }
+%"class.std::tuple.2844478" = type { %"struct.std::_Tuple_impl.2844479" }
+%"struct.std::_Tuple_impl.2844479" = type { %"struct.std::_Head_base.21.2844480" }
+%"struct.std::_Head_base.21.2844480" = type { ptr }
+%class.QVariant.3444335 = type { %"struct.QVariant::Private.3444336" }
+%"struct.QVariant::Private.3444336" = type { %union.anon.3444337, i64 }
+%union.anon.3444337 = type { ptr, [16 x i8] }
+%"class.ue2::graph_detail::vertex_descriptor.3852026" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -135,7 +135,7 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = add nuw nsw i64 %1, 1
   %5 = sub nuw i64 %4, %3
-  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802868", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -189,8 +189,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = xor i64 %3, -1
-  %5 = getelementptr %"class.QuantLib::Array.2844508", ptr %0, i64 %1
-  %6 = getelementptr %"class.QuantLib::Array.2844508", ptr %5, i64 %4
+  %5 = getelementptr %"class.QuantLib::Array.2844474", ptr %0, i64 %1
+  %6 = getelementptr %"class.QuantLib::Array.2844474", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -226,7 +226,7 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = add nuw nsw i64 %1, 1
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr %class.QVariant.3444369, ptr %0, i64 %5
+  %6 = getelementptr %class.QVariant.3444335, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -239,7 +239,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add i64 %1, 1
   %5 = sub i64 %4, %3
-  %6 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852076", ptr %0, i64 %5
+  %6 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852026", ptr %0, i64 %5
   ret ptr %6
 }
 

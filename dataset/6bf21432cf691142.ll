@@ -1,8 +1,7 @@
 
-; 399 occurrences:
+; 398 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll

@@ -1,4 +1,24 @@
 
+; 10 occurrences:
+; cpython/optimized/compile.ll
+; flac/optimized/stream_encoder.c.ll
+; hdf5/optimized/H5Ctag.c.ll
+; lief/optimized/BinaryStream.cpp.ll
+; ruby/optimized/bignum.ll
+; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = select i1 %0, i32 -1, i32 %3
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
@@ -9,25 +29,6 @@
 define i32 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = select i1 %0, i32 0, i32 %3
-  ret i32 %4
-}
-
-; 9 occurrences:
-; cpython/optimized/compile.ll
-; flac/optimized/stream_encoder.c.ll
-; hdf5/optimized/H5Ctag.c.ll
-; lief/optimized/BinaryStream.cpp.ll
-; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
-; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
-; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
-; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
-; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 0, i32 %3
   ret i32 %4

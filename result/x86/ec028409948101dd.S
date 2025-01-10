@@ -13,3 +13,8 @@ func0000000000000044:                   # @func0000000000000044
 	movl	$65535, %eax                    # imm = 0xFFFF
 	cmovbl	%esi, %eax
 	retq
+func0000000000000041:                   # @func0000000000000041
+	xorl	%eax, %eax
+	testl	%edi, %edi
+	cmovel	%esi, %eax
+	retq

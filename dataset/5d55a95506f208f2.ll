@@ -1,5 +1,5 @@
 
-; 498 occurrences:
+; 496 occurrences:
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/giaBidec.c.ll
@@ -380,10 +380,8 @@
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; openusd/optimized/decodetxb.c.ll

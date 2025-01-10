@@ -30,11 +30,10 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/checkout-index.ll
 ; git/optimized/revision.ll
 ; hdf5/optimized/H5Centry.c.ll
-; hwloc/optimized/hwloc-bind.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; postgres/optimized/interval.ll

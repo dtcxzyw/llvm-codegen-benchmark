@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
-%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
+%"struct.rocksdb::FdWithKeyRange.2614326" = type { %"struct.rocksdb::FileDescriptor.2614327", ptr, %"class.rocksdb::Slice.2614306", %"class.rocksdb::Slice.2614306" }
+%"struct.rocksdb::FileDescriptor.2614327" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614306" = type { ptr, i64 }
 
 ; 11 occurrences:
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -18,7 +18,7 @@
 ; Function Attrs: nounwind
 define i64 @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614326", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 34 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -8,6 +8,9 @@
 ; abc/optimized/sbdCore.c.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; clamav/optimized/rs.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/JSArray.cpp.ll
 ; icu/optimized/number_decimalquantity.ll

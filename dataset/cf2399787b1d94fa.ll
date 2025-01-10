@@ -1,5 +1,5 @@
 
-; 715 occurrences:
+; 717 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -273,7 +273,9 @@
 ; lz4/optimized/lz4frame.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/Scanner.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

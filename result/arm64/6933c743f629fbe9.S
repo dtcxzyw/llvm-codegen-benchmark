@@ -27,14 +27,6 @@ func00000000000002d8:                   // @func00000000000002d8
 	csinc	w0, w8, wzr, lt
 	ret
                                         // -- End function
-func0000000000000302:                   // @func0000000000000302
-// %bb.0:                               // %entry
-	and	x8, x2, #0x7ffffffffffffff0
-	cmp	x8, #16
-	ccmp	w0, w1, #0, ne
-	cset	w0, ne
-	ret
-                                        // -- End function
 func0000000000000142:                   // @func0000000000000142
 // %bb.0:                               // %entry
 	and	x8, x2, #0x7
@@ -57,6 +49,13 @@ func00000000000002c2:                   // @func00000000000002c2
 	bics	xzr, x8, x2
 	ccmp	w0, w1, #0, ne
 	cset	w0, ge
+	ret
+                                        // -- End function
+func0000000000000302:                   // @func0000000000000302
+// %bb.0:                               // %entry
+	tst	x2, #0x100000000
+	ccmp	w0, w1, #0, ne
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000242:                   // @func0000000000000242

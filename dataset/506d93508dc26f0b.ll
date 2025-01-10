@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; llvm/optimized/xxhash.cpp.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
@@ -57,7 +57,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; node/optimized/simdutf.ll
 ; ocio/optimized/HashUtils.cpp.ll
 ; rocksdb/optimized/hash.cc.ll
 ; ruby/optimized/random.ll

@@ -87,10 +87,9 @@ entry:
   ret i1 %7
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll

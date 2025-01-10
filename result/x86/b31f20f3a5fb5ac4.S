@@ -26,19 +26,19 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%ecx, %eax
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
-	movzwl	%si, %eax
-	addl	$-3, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
-	setl	%al
-	retq
 func000000000000002a:                   # @func000000000000002a
 	movzwl	%si, %eax
 	decl	%eax
 	movzwl	%di, %ecx
 	cmpl	%ecx, %eax
 	setg	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
+	movzwl	%si, %eax
+	addl	$-42, %eax
+	movzwl	%di, %ecx
+	cmpl	%ecx, %eax
+	setl	%al
 	retq
 func0000000000000078:                   # @func0000000000000078
 	movzwl	%si, %eax

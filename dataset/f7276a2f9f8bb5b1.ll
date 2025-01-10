@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; git/optimized/imap-send.ll
 ; git/optimized/receive-pack.ll
 ; git/optimized/sequencer.ll
@@ -13,7 +13,6 @@
 ; icu/optimized/wrtxml.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; php/optimized/getopt.ll
-; ruby/optimized/io.ll
 ; slurm/optimized/info_assoc_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {

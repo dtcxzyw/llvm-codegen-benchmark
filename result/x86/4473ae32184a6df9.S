@@ -83,6 +83,11 @@ func0000000000000048:                   # @func0000000000000048
 	seta	%al
 	orb	%dil, %al
 	retq
+func0000000000000068:                   # @func0000000000000068
+	cmpl	%edx, %esi
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpl	%edx, %esi
 	seta	%al
@@ -111,11 +116,6 @@ func0000000000000044:                   # @func0000000000000044
 func000000000000006c:                   # @func000000000000006c
 	cmpl	%edx, %esi
 	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000068:                   # @func0000000000000068
-	cmpl	%edx, %esi
-	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000021:                   # @func0000000000000021

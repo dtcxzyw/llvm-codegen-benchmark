@@ -925,7 +925,7 @@ entry:
   ret ptr %4
 }
 
-; 1283 occurrences:
+; 1284 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -1647,6 +1647,7 @@ entry:
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; rustfmt-rs/optimized/4ns0rlx88oaf4rkk.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; spike/optimized/memif.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -2217,7 +2218,7 @@ entry:
   ret ptr %4
 }
 
-; 580 occurrences:
+; 579 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/inffast.c.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -2670,7 +2671,6 @@ entry:
 ; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
 ; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
-; spike/optimized/memif.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll

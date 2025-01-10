@@ -76,12 +76,6 @@ func0000000000000184:                   # @func0000000000000184
 	cmpq	%rsi, %rax
 	setb	%al
 	retq
-func00000000000007c4:                   # @func00000000000007c4
-	leaq	-1(%rdi,%rdx), %rax
-	addq	%rdi, %rsi
-	cmpq	%rsi, %rax
-	setb	%al
-	retq
 func00000000000005c4:                   # @func00000000000005c4
 	leaq	-1(%rdi,%rdx), %rax
 	addq	%rdi, %rsi

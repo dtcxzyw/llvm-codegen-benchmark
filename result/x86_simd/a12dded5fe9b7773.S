@@ -23,15 +23,14 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	23                              # 0x17
+	.quad	8191                            # 0x1fff
 .LCPI2_1:
-	.quad	-16                             # 0xfffffffffffffff0
-.LCPI2_2:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	-8192                           # 0xffffffffffffe000
 func0000000000000048:                   # @func0000000000000048
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpandq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
-	vpandq	.LCPI2_2(%rip){1to4}, %ymm0, %ymm0
+	vpbroadcastq	.LCPI2_1(%rip), %ymm2   # ymm2 = [18446744073709543424,18446744073709543424,18446744073709543424,18446744073709543424]
+	vpand	%ymm2, %ymm1, %ymm1
+	vpand	%ymm2, %ymm0, %ymm0
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

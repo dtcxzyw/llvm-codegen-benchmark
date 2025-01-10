@@ -1,8 +1,8 @@
 
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
-%struct.audit_node.3545998 = type { %struct.list_head.3545989, ptr, i32 }
-%struct.list_head.3545989 = type { ptr, ptr }
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
+%struct.audit_node.3545964 = type { %struct.list_head.3545955, ptr, i32 }
+%struct.list_head.3545955 = type { ptr, ptr }
 
 ; 192 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -220,7 +220,7 @@ entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876679, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }
@@ -247,7 +247,7 @@ entry:
   %2 = and i32 %1, 2147483647
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.audit_node.3545998, ptr %0, i64 %4
+  %5 = getelementptr %struct.audit_node.3545964, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }

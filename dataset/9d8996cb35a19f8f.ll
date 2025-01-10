@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
-%"struct.eastl::pair.25.3895736" = type { %struct.TestObject.3895737, %struct.TestObject.3895737 }
-%struct.TestObject.3895737 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
+%"struct.eastl::pair.25.3895686" = type { %struct.TestObject.3895687, %struct.TestObject.3895687 }
+%struct.TestObject.3895687 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 8 occurrences:
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
@@ -18,7 +18,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %1, %3
   %5 = sub i64 0, %4
-  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = ashr exact i64 %2, 1
   %4 = add nsw i64 %1, %3
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"struct.eastl::pair.25.3895736", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.eastl::pair.25.3895686", ptr %0, i64 %5
   ret ptr %6
 }
 

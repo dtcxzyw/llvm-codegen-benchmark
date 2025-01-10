@@ -13,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -72,7 +72,6 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/tty.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/OGLBufImgOps.ll
 ; openjdk/optimized/g1YoungCollector.ll
 ; openjdk/optimized/gtk3_interface.ll

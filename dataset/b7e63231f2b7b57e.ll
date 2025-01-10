@@ -1,6 +1,6 @@
 
-%struct.curltime.2762606 = type { i64, i32 }
-%struct.list_head.3535195 = type { ptr, ptr }
+%struct.curltime.2762572 = type { i64, i32 }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 5 occurrences:
 ; git/optimized/merge-ort.ll
@@ -27,7 +27,7 @@ entry:
   %3 = icmp sgt i32 %2, 4
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [6 x %struct.curltime.2762606], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [6 x %struct.curltime.2762572], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0, !prof !0
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [12 x %struct.list_head.3535195], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [12 x %struct.list_head.3535161], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

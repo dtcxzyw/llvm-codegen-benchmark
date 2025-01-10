@@ -99,10 +99,11 @@ entry:
   ret i8 %3
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; boost/optimized/static_string.ll
+; lief/optimized/psa_crypto.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; opencc/optimized/PhraseExtract.cpp.ll

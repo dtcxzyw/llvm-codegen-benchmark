@@ -52,13 +52,14 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/darCut.c.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; jsonnet/optimized/static_analysis.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; sentencepiece/optimized/strutil.cc.ll

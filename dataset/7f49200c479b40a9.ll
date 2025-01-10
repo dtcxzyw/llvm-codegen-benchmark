@@ -56,8 +56,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; proj/optimized/gnom.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/normaldistribution.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
@@ -106,6 +105,17 @@ entry:
   %3 = fmul double %1, %2
   %4 = call noundef double @llvm.fabs.f64(double %3)
   %5 = fcmp ugt double %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; proj/optimized/gnom.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fmul double %1, %2
+  %4 = call double @llvm.fabs.f64(double %3)
+  %5 = fcmp oge double %4, %0
   ret i1 %5
 }
 

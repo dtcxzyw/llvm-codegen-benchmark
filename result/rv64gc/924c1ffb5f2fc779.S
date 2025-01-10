@@ -1,11 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
-	li	a2, 7
-	bne	a1, a2, .LBB0_2
-	li	a0, -1
-	srli	a0, a0, 32
-	ret
-.LBB0_2:
+	seqz	a1, a1
 	sext.w	a0, a0
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	bnez	a1, .LBB1_2

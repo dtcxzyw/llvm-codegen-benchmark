@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 99 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -52,7 +52,6 @@
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll

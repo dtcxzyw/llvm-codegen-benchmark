@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.172.2736847" = type { %struct.BEInt.173.2736848 }
-%struct.BEInt.173.2736848 = type { i8 }
+%"struct.OT::IntType.172.2736813" = type { %struct.BEInt.173.2736814 }
+%struct.BEInt.173.2736814 = type { i8 }
 
 ; 3 occurrences:
 ; opencv/optimized/bgfg_KNN.cpp.ll
@@ -64,7 +64,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.172.2736847", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.172.2736813", ptr %0, i64 %5
   ret ptr %6
 }
 

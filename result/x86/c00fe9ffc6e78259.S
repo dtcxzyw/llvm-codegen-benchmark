@@ -49,6 +49,13 @@ func000000000000014a:                   # @func000000000000014a
 	setg	%al
 	orb	%cl, %al
 	retq
+func0000000000000281:                   # @func0000000000000281
+	cmpl	$128, %esi
+	setb	%cl
+	testl	%edi, %edi
+	sete	%al
+	orb	%cl, %al
+	retq
 func00000000000000c1:                   # @func00000000000000c1
 	cmpl	$51, %esi
 	setl	%cl
@@ -306,13 +313,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	setl	%cl
 	testl	%edi, %edi
 	setg	%al
-	orb	%cl, %al
-	retq
-func0000000000000281:                   # @func0000000000000281
-	cmpl	$65536, %esi                    # imm = 0x10000
-	setb	%cl
-	cmpl	$55296, %edi                    # imm = 0xD800
-	sete	%al
 	orb	%cl, %al
 	retq
 func00000000000000d4:                   # @func00000000000000d4

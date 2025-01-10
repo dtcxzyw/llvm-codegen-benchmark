@@ -1,5 +1,5 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
 
 ; 26 occurrences:
 ; cpython/optimized/longobject.ll
@@ -1582,8 +1582,8 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %3
-  %5 = getelementptr %struct.GC_hblk_s.2705275, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %1, i64 %3
+  %5 = getelementptr %struct.GC_hblk_s.2705241, ptr %4, i64 %0
   ret ptr %5
 }
 

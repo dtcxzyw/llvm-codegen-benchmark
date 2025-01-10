@@ -94,7 +94,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/cmSetCommand.cxx.ll
 ; freetype/optimized/pfr.c.ll
@@ -103,6 +103,7 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll
 ; openssl/optimized/libcrypto-lib-a_time.ll

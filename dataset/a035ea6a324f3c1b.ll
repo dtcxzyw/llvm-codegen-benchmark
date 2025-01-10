@@ -1,9 +1,9 @@
 
-%"struct.irr::gui::CGUIComboBox::SComboData.2691837" = type <{ %"class.irr::core::string.2691838", i32, [4 x i8] }>
-%"class.irr::core::string.2691838" = type { %"class.std::__cxx11::basic_string.2691839" }
-%"class.std::__cxx11::basic_string.2691839" = type { %"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691840", i64, %union.anon.2691841 }
-%"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691840" = type { ptr }
-%union.anon.2691841 = type { i64, [8 x i8] }
+%"struct.irr::gui::CGUIComboBox::SComboData.2691803" = type <{ %"class.irr::core::string.2691804", i32, [4 x i8] }>
+%"class.irr::core::string.2691804" = type { %"class.std::__cxx11::basic_string.2691805" }
+%"class.std::__cxx11::basic_string.2691805" = type { %"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691806", i64, %union.anon.2691807 }
+%"struct.std::__cxx11::basic_string<wchar_t>::_Alloc_hider.2691806" = type { ptr }
+%union.anon.2691807 = type { i64, [8 x i8] }
 
 ; 402 occurrences:
 ; darktable/optimized/Camera.cpp.ll
@@ -430,7 +430,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.irr::gui::CGUIComboBox::SComboData.2691837", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.irr::gui::CGUIComboBox::SComboData.2691803", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = getelementptr nusw i8, ptr %0, i64 %5

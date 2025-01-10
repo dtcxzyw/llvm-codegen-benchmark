@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_6.cc.ll
@@ -14,7 +14,6 @@
 ; g2o/optimized/edge_project_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz2uv.cpp.ll
 ; g2o/optimized/edge_project_xyz_onlypose.cpp.ll
-; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
 ; g2o/optimized/types_icp.cpp.ll
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll

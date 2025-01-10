@@ -150,6 +150,10 @@ func000000000000006c:                   # @func000000000000006c
 	cmpl	%esi, %edi
 	setne	%al
 	retq
+func0000000000000067:                   # @func0000000000000067
+	cmpl	%esi, %edi
+	setle	%al
+	retq
 func000000000000002c:                   # @func000000000000002c
 	cmpl	%esi, %edi
 	setne	%al

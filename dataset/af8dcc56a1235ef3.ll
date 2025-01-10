@@ -18,10 +18,12 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; php/optimized/hash_gost.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:

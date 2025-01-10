@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 106 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -71,8 +71,6 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; lua/optimized/ldo.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_image.ll
 ; lvgl/optimized/lv_obj_scroll.ll
 ; lvgl/optimized/lv_obj_style.ll

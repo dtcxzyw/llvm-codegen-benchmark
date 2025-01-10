@@ -1,5 +1,5 @@
 
-%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%class.btRotationalLimitMotor2.2818830 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
 
 ; 17 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -24,7 +24,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %4, i32 21
+  %5 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818830], ptr %0, i64 0, i64 %4, i32 21
   ret ptr %5
 }
 

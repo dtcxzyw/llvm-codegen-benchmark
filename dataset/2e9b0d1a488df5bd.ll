@@ -85,18 +85,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; lief/optimized/ssl_msg.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = sub nuw nsw i32 %1, %3
-  %5 = zext nneg i32 %4 to i64
-  %6 = icmp samesign ugt i64 %0, %5
-  ret i1 %6
-}
-
 ; 4 occurrences:
 ; boost/optimized/src.ll
 ; libquic/optimized/padding.c.ll
@@ -112,14 +100,12 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/gzwrite.c.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; zlib/optimized/deflate.c.ll
-; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -151,6 +137,18 @@ entry:
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = icmp samesign ugt i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/CVSymbolVisitor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000208(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = sub i32 %1, %3
+  %5 = zext i32 %4 to i64
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 

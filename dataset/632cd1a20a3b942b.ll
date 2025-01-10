@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
@@ -15,7 +15,6 @@
 ; lvgl/optimized/lv_span.ll
 ; msdfgen/optimized/main.cpp.ll
 ; nix/optimized/parser-tab.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/rewriter.ll
 ; php/optimized/phpdbg_parser.ll

@@ -1,5 +1,5 @@
 
-; 153 occurrences:
+; 152 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/plaCom.c.ll
@@ -27,7 +27,6 @@
 ; linux/optimized/radix-tree.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; mitsuba3/optimized/string.cpp.ll

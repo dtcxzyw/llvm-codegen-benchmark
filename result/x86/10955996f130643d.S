@@ -1,13 +1,13 @@
-func000000000000003f:                   # @func000000000000003f
-	movl	%esi, %ecx
-	movl	%edi, %eax
-	addq	%rcx, %rax
-	addq	%rax, %rax
-	retq
 func00000000000000ef:                   # @func00000000000000ef
 	shlq	$48, %rsi
 	shlq	$32, %rdi
 	leaq	(%rdi,%rsi), %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
+	movl	%esi, %eax
+	shlq	$9, %rax
+	movl	%edi, %ecx
+	leaq	(%rax,%rcx,4), %rax
 	retq
 func00000000000000bf:                   # @func00000000000000bf
 	movl	%esi, %eax

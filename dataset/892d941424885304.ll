@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3085840" = type { %"class.hermes::vm::HermesValue.3085841" }
-%"class.hermes::vm::HermesValue.3085841" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3085806" = type { %"class.hermes::vm::HermesValue.3085807" }
+%"class.hermes::vm::HermesValue.3085807" = type { i64 }
 
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -238,7 +238,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -56
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085840", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085806", ptr %4, i64 %3
   ret ptr %5
 }
 

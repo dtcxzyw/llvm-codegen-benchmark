@@ -8,11 +8,6 @@ func000000000000000f:                   # @func000000000000000f
 	subq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movslq	%esi, %rax
-	subq	%rdi, %rax
-	shlq	$9, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	movslq	%esi, %rax
 	subq	%rdi, %rax
@@ -22,6 +17,11 @@ func0000000000000007:                   # @func0000000000000007
 	movslq	%esi, %rax
 	subq	%rdi, %rax
 	shlq	$3, %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	movslq	%esi, %rax
+	subq	%rdi, %rax
+	shlq	$12, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax

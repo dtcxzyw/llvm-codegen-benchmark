@@ -1,4 +1,4 @@
-func0000000000000003:                   # @func0000000000000003
+func0000000000000002:                   # @func0000000000000002
 	sarl	%esi
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,8), %rax
@@ -13,19 +13,8 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	sarl	$24, %esi
-	movslq	%esi, %rax
-	leaq	(%rax,%rax,4), %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	sarl	%esi
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	sarl	%esi
-	movslq	%esi, %rax
-	addq	%rdi, %rax
 	retq

@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
 
 ; 27 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -34,8 +34,8 @@ define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 8, %1
   %3 = tail call i64 @llvm.umax.i64(i64 %1, i64 %2)
-  %4 = getelementptr %"class.irr::core::vector3d.2691815", ptr %0, i64 %3
-  %5 = getelementptr %"class.irr::core::vector3d.2691815", ptr %4, i64 %1
+  %4 = getelementptr %"class.irr::core::vector3d.2691781", ptr %0, i64 %3
+  %5 = getelementptr %"class.irr::core::vector3d.2691781", ptr %4, i64 %1
   ret ptr %5
 }
 

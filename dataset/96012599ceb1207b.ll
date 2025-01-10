@@ -40,7 +40,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; clamav/optimized/pe.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; icu/optimized/ubidi.ll
@@ -62,6 +62,7 @@ entry:
 ; openjdk/optimized/systemDictionaryShared.ll
 ; openjdk/optimized/unsafe.ll
 ; postgres/optimized/auth.ll
+; slurm/optimized/step_mgr.ll
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i16 %1) #0 {

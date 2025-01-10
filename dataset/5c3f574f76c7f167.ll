@@ -86,7 +86,7 @@ entry:
   ret i64 %4
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -113,7 +113,6 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cpython/optimized/bufferedio.ll
-; cpython/optimized/pystrtod.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll

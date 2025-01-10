@@ -1,12 +1,12 @@
 
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
-%class.aiVector3t.2824802 = type { double, double, double }
-%"class.llvm::MCInstrDesc.3139227" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
+%class.aiVector3t.2824768 = type { double, double, double }
+%"class.llvm::MCInstrDesc.3139193" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 3 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
@@ -17,7 +17,7 @@ define ptr @func0000000000000043(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.NetClientState.2706049, ptr %1, i64 %4
+  %5 = getelementptr %struct.NetClientState.2706015, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 24
   ret ptr %7
@@ -64,8 +64,8 @@ define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %class.aiVector3t.2824802, ptr %1, i64 %4
-  %6 = getelementptr nuw %class.aiVector3t.2824802, ptr %5, i64 %0, i32 1
+  %5 = getelementptr nusw %class.aiVector3t.2824768, ptr %1, i64 %4
+  %6 = getelementptr nuw %class.aiVector3t.2824768, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -146,8 +146,8 @@ define ptr @func000000000000016f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3139227", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3139227", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3139193", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3139193", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 32
   ret ptr %7
 }
@@ -161,8 +161,8 @@ define ptr @func0000000000000060(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3241632", ptr %1, i64 %4
-  %6 = getelementptr %"class.llvm::Use.3241632", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3241598", ptr %1, i64 %4
+  %6 = getelementptr %"class.llvm::Use.3241598", ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
@@ -175,8 +175,8 @@ define ptr @func000000000000006c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3251960", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3251926", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 35
   ret ptr %7
 }

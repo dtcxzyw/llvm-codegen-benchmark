@@ -382,11 +382,12 @@ entry:
   ret i1 %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/aigMan.c.ll
 ; abc/optimized/giaAig.c.ll
 ; icu/optimized/number_patternstring.ll
 ; libdeflate/optimized/deflate_compress.c.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/cpuhotplug.ll
 ; linux/optimized/cstate.ll
@@ -583,7 +584,7 @@ entry:
   ret i1 %4
 }
 
-; 116 occurrences:
+; 117 occurrences:
 ; abc/optimized/gzwrite.c.ll
 ; assimp/optimized/clipper.cpp.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
@@ -687,6 +688,7 @@ entry:
 ; postgres/optimized/signalfuncs.ll
 ; postgres/optimized/spell.ll
 ; qemu/optimized/block_file-posix.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; quickjs/optimized/libunicode.ll

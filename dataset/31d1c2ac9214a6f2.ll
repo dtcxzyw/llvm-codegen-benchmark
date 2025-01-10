@@ -30,7 +30,7 @@ entry:
   ret i1 %5
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -57,6 +57,8 @@ entry:
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; postgres/optimized/arrayfuncs.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; ruby/optimized/bignum.ll
@@ -654,7 +656,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/build_policy.ll
 ; ozz-animation/optimized/import2ozz_config.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; redis/optimized/quicklist.ll

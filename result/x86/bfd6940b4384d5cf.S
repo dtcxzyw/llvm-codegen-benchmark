@@ -92,14 +92,6 @@ func0000000000000158:                   # @func0000000000000158
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000301:                   # @func0000000000000301
-	xorl	%eax, %eax
-	cmpl	$52, %esi
-	movl	$-52, %ecx
-	cmovbl	%eax, %ecx
-	cmpl	%edi, %ecx
-	sete	%al
-	retq
 func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	cmpl	$1, %esi

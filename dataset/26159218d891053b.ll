@@ -1,7 +1,7 @@
 
-%"struct.OT::HBGlyphID16.2744805" = type { %"struct.OT::IntType.2744806" }
-%"struct.OT::IntType.2744806" = type { %struct.BEInt.2744807 }
-%struct.BEInt.2744807 = type { [2 x i8] }
+%"struct.OT::HBGlyphID16.2744771" = type { %"struct.OT::IntType.2744772" }
+%"struct.OT::IntType.2744772" = type { %struct.BEInt.2744773 }
+%struct.BEInt.2744773 = type { [2 x i8] }
 
 ; 7 occurrences:
 ; linux/optimized/drm_buddy.ll
@@ -297,7 +297,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -332,7 +332,6 @@ entry:
 ; protobuf/optimized/parser.cc.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; snappy/optimized/snappy.cc.ll
-; tomlplusplus/optimized/toml.cpp.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -649,7 +648,7 @@ entry:
 define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"struct.OT::HBGlyphID16.2744805", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::HBGlyphID16.2744771", ptr %1, i64 %3
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }

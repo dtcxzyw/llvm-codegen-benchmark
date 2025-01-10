@@ -1,5 +1,5 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
 
 ; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -11,7 +11,7 @@ entry:
   %4 = sub i64 0, %1
   %5 = and i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %6, i64 %0
   ret ptr %7
 }
 

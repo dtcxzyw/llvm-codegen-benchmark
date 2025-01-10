@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 64 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
@@ -33,7 +33,6 @@
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/Host.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll

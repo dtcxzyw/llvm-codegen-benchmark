@@ -131,13 +131,6 @@ func0000000000000066:                   # @func0000000000000066
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	ret
-func000000000000005f:                   # @func000000000000005f
-	slli	a2, a2, 56
-	andi	a1, a1, 255
-	or	a0, a0, a2
-	slli	a1, a1, 48
-	or	a0, a0, a1
-	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 255
 	slli	a1, a1, 40

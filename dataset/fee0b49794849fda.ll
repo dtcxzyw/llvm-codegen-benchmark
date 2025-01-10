@@ -10,12 +10,11 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cvc5/optimized/theory_bv.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; gromacs/optimized/tng_io.c.ll
 ; hdf5/optimized/H5Odtype.c.ll
 ; hwloc/optimized/memattrs.ll

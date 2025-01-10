@@ -1,14 +1,14 @@
 
-%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
-%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
-%"class.hermes::vm::SymbolID.3075365" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
-%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
-%union.anon.174.3075389 = type { i32 }
-%"class.hermes::vm::detail::DPMHashPair.3075393" = type { %struct.anon.234.3075394 }
-%struct.anon.234.3075394 = type { i32 }
-%"class.clang::NestedNameSpecifierLoc.3187997" = type { ptr, ptr }
-%"class.llvm::Attribute.3332310" = type { ptr }
+%"struct.std::pair.177.3075357" = type { %"class.hermes::vm::GCSymbolID.3075358", %"struct.hermes::vm::NamedPropertyDescriptor.3075353" }
+%"class.hermes::vm::GCSymbolID.3075358" = type { %"class.hermes::vm::SymbolID.3075331" }
+%"class.hermes::vm::SymbolID.3075331" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075353" = type { %"struct.hermes::vm::PropertyDescriptor.3075354" }
+%"struct.hermes::vm::PropertyDescriptor.3075354" = type { %union.anon.174.3075355, i32 }
+%union.anon.174.3075355 = type { i32 }
+%"class.hermes::vm::detail::DPMHashPair.3075359" = type { %struct.anon.234.3075360 }
+%struct.anon.234.3075360 = type { i32 }
+%"class.clang::NestedNameSpecifierLoc.3187963" = type { ptr, ptr }
+%"class.llvm::Attribute.3332276" = type { ptr }
 
 ; 7 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -24,8 +24,8 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 28
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %4, i64 %5
-  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075393", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.std::pair.177.3075357", ptr %4, i64 %5
+  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075359", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187997", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187963", ptr %4, i64 %5
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
   ret ptr %7
 }
@@ -58,8 +58,8 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 56
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::Attribute.3332310", ptr %4, i64 %5
-  %7 = getelementptr nusw %"class.llvm::Attribute.3332310", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"class.llvm::Attribute.3332276", ptr %4, i64 %5
+  %7 = getelementptr nusw %"class.llvm::Attribute.3332276", ptr %6, i64 %0
   ret ptr %7
 }
 

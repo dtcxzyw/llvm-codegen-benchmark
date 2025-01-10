@@ -87,6 +87,14 @@ func0000000000000c2c:                   // @func0000000000000c2c
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000029:                   // @func0000000000000029
+// %bb.0:                               // %entry
+	sub	x8, x2, #7
+	cmp	x0, x8
+	ccmp	x1, #4, #4, lo
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	add	x8, x2, #2

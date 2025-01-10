@@ -1,5 +1,5 @@
 
-; 346 occurrences:
+; 350 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/absGla.c.ll
@@ -261,7 +261,11 @@
 ; openssl/optimized/libcrypto-shlib-ec_ameth.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openssl/optimized/openssl-bin-rsa.ll

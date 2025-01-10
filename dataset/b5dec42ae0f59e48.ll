@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
-; linux/optimized/vc_screen.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

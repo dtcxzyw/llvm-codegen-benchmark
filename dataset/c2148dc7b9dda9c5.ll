@@ -1,5 +1,5 @@
 
-%"class.btConvexHullComputer::Edge.2817933" = type { i32, i32, i32 }
+%"class.btConvexHullComputer::Edge.2817899" = type { i32, i32, i32 }
 
 ; 12 occurrences:
 ; bullet3/optimized/btPolyhedralConvexShape.ll
@@ -18,9 +18,9 @@
 define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %4, i64 %5, i32 2
+  %6 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %4, i64 %5, i32 2
   ret ptr %6
 }
 

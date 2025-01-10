@@ -1,5 +1,5 @@
 
-%struct.posix_acl_xattr_entry.3548205 = type { i16, i16, i32 }
+%struct.posix_acl_xattr_entry.3548171 = type { i16, i16, i32 }
 
 ; 10 occurrences:
 ; abc/optimized/utilSort.c.ll
@@ -175,7 +175,7 @@ define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %struct.posix_acl_xattr_entry.3548205, ptr %1, i64 %4
+  %5 = getelementptr %struct.posix_acl_xattr_entry.3548171, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

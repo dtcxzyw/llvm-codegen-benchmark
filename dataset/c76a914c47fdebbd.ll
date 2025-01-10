@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
-%"class.hermes::vm::GCHermesValueBase.3076197" = type { %"class.hermes::vm::HermesValue32.3076198" }
-%"class.hermes::vm::HermesValue32.3076198" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076163" = type { %"class.hermes::vm::HermesValue32.3076164" }
+%"class.hermes::vm::HermesValue32.3076164" = type { i32 }
 
 ; 1 occurrences:
 ; abc/optimized/giaSatMap.c.ll
@@ -47,7 +47,7 @@ entry:
   %4 = add i32 %3, -4097
   %5 = lshr i32 %4, 10
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -71,7 +71,7 @@ entry:
   %4 = add i32 %3, -4096
   %5 = lshr i32 %4, 10
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076197", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076163", ptr %0, i64 %6
   ret ptr %7
 }
 

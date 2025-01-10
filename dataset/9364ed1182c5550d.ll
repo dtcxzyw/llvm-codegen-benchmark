@@ -17,17 +17,15 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 4 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 2 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = trunc nsw i64 %2 to i32
-  %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 1)
+  %4 = call i32 @llvm.smin.i32(i32 %3, i32 128)
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

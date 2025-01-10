@@ -7,7 +7,7 @@ func000000000000000f:                   # @func000000000000000f
 	and	a1, a1, a3
 	slli	a1, a1, 3
 	add	a0, a0, a1
-	addi	a0, a0, 1160
+	addi	a0, a0, 264
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a3, a2, 1

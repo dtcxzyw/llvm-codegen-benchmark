@@ -27,7 +27,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmovael	%edi, %eax
 	retq
 func0000000000000019:                   # @func0000000000000019
-	movl	$131072, %ecx                   # imm = 0x20000
+	movl	$8, %ecx
 	subl	%esi, %ecx
 	xorl	%eax, %eax
 	subl	%ecx, %edi

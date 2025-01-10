@@ -1,9 +1,8 @@
 
-; 107 occurrences:
+; 106 occurrences:
 ; abc/optimized/cnfFast.c.ll
 ; arrow/optimized/exec.cc.ll
 ; assimp/optimized/unzip.c.ll
-; boost/optimized/approximately_equals.ll
 ; boost/optimized/segments_encoded_ref.ll
 ; boost/optimized/segments_ref.ll
 ; boost/optimized/url_base.ll

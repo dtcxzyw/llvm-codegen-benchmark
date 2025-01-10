@@ -1,9 +1,9 @@
 
-%"struct.std::array.25.2701729" = type { [3 x %"struct.irr::video::S3DVertex.2701725"] }
-%"struct.irr::video::S3DVertex.2701725" = type { %"class.irr::core::vector3d.2701726", %"class.irr::core::vector3d.2701726", %"class.irr::video::SColor.2701727", %"class.irr::core::vector2d.2701728" }
-%"class.irr::core::vector3d.2701726" = type { float, float, float }
-%"class.irr::video::SColor.2701727" = type { i32 }
-%"class.irr::core::vector2d.2701728" = type { float, float }
+%"struct.std::array.25.2701695" = type { [3 x %"struct.irr::video::S3DVertex.2701691"] }
+%"struct.irr::video::S3DVertex.2701691" = type { %"class.irr::core::vector3d.2701692", %"class.irr::core::vector3d.2701692", %"class.irr::video::SColor.2701693", %"class.irr::core::vector2d.2701694" }
+%"class.irr::core::vector3d.2701692" = type { float, float, float }
+%"class.irr::video::SColor.2701693" = type { i32 }
+%"class.irr::core::vector2d.2701694" = type { float, float }
 
 ; 10 occurrences:
 ; gromacs/optimized/convertGmxToNblib.cpp.ll
@@ -66,7 +66,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = sdiv i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.std::array.25.2701729", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.std::array.25.2701695", ptr %0, i64 %4
   ret ptr %5
 }
 

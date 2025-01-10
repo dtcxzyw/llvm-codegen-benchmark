@@ -1,7 +1,7 @@
 
-%"struct.TristateVisitor::RefStrength.2751168" = type <{ ptr, %class.VStrength.2751119, [7 x i8] }>
-%class.VStrength.2751119 = type { i8 }
-%class.QCPGraphData.3451166 = type { double, double }
+%"struct.TristateVisitor::RefStrength.2751134" = type <{ ptr, %class.VStrength.2751085, [7 x i8] }>
+%class.VStrength.2751085 = type { i8 }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 239 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -671,7 +671,7 @@ entry:
   %2 = ashr i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751168", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.TristateVisitor::RefStrength.2751134", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -702,7 +702,7 @@ entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %4
   ret ptr %5
 }
 

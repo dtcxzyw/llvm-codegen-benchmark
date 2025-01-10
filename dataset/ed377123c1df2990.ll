@@ -16,9 +16,10 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
+; icu/optimized/pkgitems.ll
 ; opencv/optimized/tree.cpp.ll
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind

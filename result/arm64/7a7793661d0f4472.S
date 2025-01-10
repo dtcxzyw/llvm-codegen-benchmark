@@ -60,6 +60,15 @@ func00000000000000a8:                   // @func00000000000000a8
 	cset	w0, hi
 	ret
                                         // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	mov	w8, #11                         // =0xb
+	sub	x9, x1, x2
+	sub	x8, x8, x0
+	cmp	x8, x9
+	cset	w0, hi
+	ret
+                                        // -- End function
 func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
 	mov	x8, #1152921504606846975        // =0xfffffffffffffff

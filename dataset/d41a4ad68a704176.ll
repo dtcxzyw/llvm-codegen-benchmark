@@ -1,5 +1,5 @@
 
-; 1343 occurrences:
+; 1342 occurrences:
 ; abc/optimized/dauEnum.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -859,7 +859,6 @@
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/pngrutil.ll
-; openjdk/optimized/shenandoahFullGC.ll
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/util.ll
 ; openmpi/optimized/coll_base_util.ll

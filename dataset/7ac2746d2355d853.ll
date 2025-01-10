@@ -13,19 +13,6 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, %1
-  %4 = icmp ne i32 %1, 1114112
-  %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-mq.c.ll
 ; Function Attrs: nounwind

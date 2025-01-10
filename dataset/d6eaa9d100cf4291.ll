@@ -1,4 +1,24 @@
 
+; 10 occurrences:
+; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
+; hdf5/optimized/H5Fint.c.ll
+; jq/optimized/gb18030.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/synaptics.ll
+; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; oniguruma/optimized/gb18030.ll
+; ruby/optimized/raddrinfo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp eq i8 %1, 32
+  %3 = icmp ult i32 %0, -95
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
 ; 53 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -344,25 +364,6 @@ define i1 @func0000000000000186(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp slt i32 %0, 0
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 9 occurrences:
-; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
-; hdf5/optimized/H5Fint.c.ll
-; jq/optimized/gb18030.ll
-; linux/optimized/ich8lan.ll
-; linux/optimized/synaptics.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; oniguruma/optimized/gb18030.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
-entry:
-  %2 = icmp eq i8 %1, 1
-  %3 = icmp ult i32 %0, 126
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

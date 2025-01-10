@@ -1,5 +1,5 @@
 
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
 
 ; 77 occurrences:
 ; abc/optimized/aigCuts.c.ll
@@ -139,8 +139,8 @@ entry:
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %2
-  %4 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %3, i64 %2
+  %3 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %3, i64 %2
   ret ptr %4
 }
 

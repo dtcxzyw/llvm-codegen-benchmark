@@ -1,6 +1,5 @@
 
-; 29 occurrences:
-; abseil-cpp/optimized/cord_analysis.cc.ll
+; 28 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; boost/optimized/area_geo.ll
 ; boost/optimized/area_sph_geo.ll

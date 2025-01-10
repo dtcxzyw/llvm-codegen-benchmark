@@ -1,5 +1,5 @@
 
-; 234 occurrences:
+; 235 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
@@ -158,6 +158,7 @@
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/describe.ll
 ; postgres/optimized/index.ll
+; postgres/optimized/regexec.ll
 ; proj/optimized/axisswap.cpp.ll
 ; proxygen/optimized/FileServerListGenerator.cpp.ll
 ; proxygen/optimized/ServerListGenerator.cpp.ll
@@ -242,7 +243,7 @@ entry:
   ret i1 %3
 }
 
-; 210 occurrences:
+; 209 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
@@ -396,7 +397,6 @@ entry:
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/describe.ll
 ; postgres/optimized/index.ll
-; postgres/optimized/regexec.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/syslogger.ll
 ; proj/optimized/axisswap.cpp.ll

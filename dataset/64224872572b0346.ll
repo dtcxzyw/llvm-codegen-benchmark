@@ -17,8 +17,9 @@ entry:
   ret i64 %6
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; eastl/optimized/EACallback.cpp.ll
@@ -60,8 +61,7 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
-; boost/optimized/static_string.ll
+; 10 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

@@ -1,13 +1,13 @@
 
-%struct.lua_TValue.2931968 = type { %union.Value.2931969, [1 x i32], i32 }
-%union.Value.2931969 = type { ptr }
-%"struct.hermes::CodePointRange.3076869" = type { i32, i32 }
-%union.TValue.3680638 = type { i64 }
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
-%"class.cv::KeyPoint.3748925" = type { %"class.cv::Point_.3748926", float, float, float, i32, i32 }
-%"class.cv::Point_.3748926" = type { float, float }
-%struct.FT_Vector_.3881816 = type { i64, i64 }
+%struct.lua_TValue.2931934 = type { %union.Value.2931935, [1 x i32], i32 }
+%union.Value.2931935 = type { ptr }
+%"struct.hermes::CodePointRange.3076835" = type { i32, i32 }
+%union.TValue.3680588 = type { i64 }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
+%"class.cv::KeyPoint.3748875" = type { %"class.cv::Point_.3748876", float, float, float, i32, i32 }
+%"class.cv::Point_.3748876" = type { float, float }
+%struct.FT_Vector_.3881766 = type { i64, i64 }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -166,10 +166,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000208(ptr %0, ptr %1, i32 %2) #0 {
 entry:
@@ -205,7 +206,7 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; icu/optimized/ustring.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
@@ -213,12 +214,13 @@ entry:
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; postgres/optimized/clog.ll
+; postgres/optimized/predicate.ll
 ; redis/optimized/lapi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000204(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.2931968, ptr %1, i64 %3
+  %4 = getelementptr %struct.lua_TValue.2931934, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = icmp ult ptr %5, %0
   ret i1 %6
@@ -235,7 +237,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.hermes::CodePointRange.3076869", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.hermes::CodePointRange.3076835", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   %6 = icmp eq ptr %5, %0
   ret i1 %6
@@ -300,7 +302,7 @@ entry:
 define i1 @func00000000000003c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %union.TValue.3680638, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %union.TValue.3680588, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   %6 = icmp ult ptr %5, %0
   ret i1 %6
@@ -312,7 +314,7 @@ entry:
 define i1 @func0000000000000209(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.3680875, ptr %1, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3680825, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = icmp uge ptr %5, %0
   ret i1 %6
@@ -324,7 +326,7 @@ entry:
 define i1 @func00000000000003c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.cv::KeyPoint.3748925", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.cv::KeyPoint.3748875", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -28
   %6 = icmp eq ptr %5, %0
   ret i1 %6
@@ -336,7 +338,7 @@ entry:
 define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.FT_Vector_.3881816, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.FT_Vector_.3881766, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   %6 = icmp ult ptr %5, %0
   ret i1 %6

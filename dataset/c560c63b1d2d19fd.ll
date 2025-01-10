@@ -1,6 +1,6 @@
 
-%"class.llvm::SDUse.3150383" = type { %"class.llvm::SDValue.3150307", ptr, ptr, ptr }
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDUse.3150349" = type { %"class.llvm::SDValue.3150273", ptr, ptr, ptr }
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -10,7 +10,7 @@ entry:
   %3 = sub i32 0, %2
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3150383", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3150349", ptr %0, i64 %5
   ret ptr %6
 }
 

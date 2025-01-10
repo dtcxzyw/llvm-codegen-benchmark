@@ -1,5 +1,5 @@
 
-%union.qoi_rgba_t.2729473 = type { i32 }
+%union.qoi_rgba_t.2729439 = type { i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -26,7 +26,7 @@ entry:
   %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, 63
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729473], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729439], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

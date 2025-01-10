@@ -1,7 +1,22 @@
 
-; 23 occurrences:
+; 5 occurrences:
+; icu/optimized/rematch.ll
+; ruby/optimized/io.ll
+; ruby/optimized/ripper.ll
+; spike/optimized/ksubh.ll
+; spike/optimized/ksubw.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = icmp sle i64 %0, %2
+  ret i1 %3
+}
+
+; 25 occurrences:
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/netcode.c.ll
+; clamav/optimized/oabd.c.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; git/optimized/apply.ll
 ; git/optimized/strbuf.ll
@@ -20,6 +35,7 @@
 ; openmpi/optimized/common_ompio_file_read_all.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_mirror.c.ll
+; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; ruby/optimized/io.ll
 ; wireshark/optimized/tap-iostat.c.ll
@@ -50,19 +66,6 @@ define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = icmp sgt i64 %0, %2
-  ret i1 %3
-}
-
-; 4 occurrences:
-; icu/optimized/rematch.ll
-; ruby/optimized/ripper.ll
-; spike/optimized/ksubh.ll
-; spike/optimized/ksubw.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
@@ -1189,7 +1192,9 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
+; clamav/optimized/lzxd.c.ll
+; clamav/optimized/mszipd.c.ll
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -1220,8 +1225,9 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/ree_util.cc.ll
+; clamav/optimized/mszipd.c.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; icu/optimized/putil.ll

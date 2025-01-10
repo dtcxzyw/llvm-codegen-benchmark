@@ -1,10 +1,11 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/ifDelay.c.ll
 ; arrow/optimized/builder_primitive.cc.ll
 ; casadi/optimized/mx.cpp.ll
 ; cpython/optimized/obmalloc.ll
+; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/proof_circuit_propagator.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; duckdb/optimized/null_operations.cpp.ll

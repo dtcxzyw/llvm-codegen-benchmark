@@ -1,7 +1,7 @@
 
-%struct.VirtIONetQueue.2708511 = type { ptr, ptr, ptr, ptr, i32, %struct.anon.8.2708512, ptr }
-%struct.anon.8.2708512 = type { ptr }
-%struct.Odc_Obj_t_.2876286 = type { i16, i16, i16, i16, i32, i32 }
+%struct.VirtIONetQueue.2708477 = type { ptr, ptr, ptr, ptr, i32, %struct.anon.8.2708478, ptr }
+%struct.anon.8.2708478 = type { ptr }
+%struct.Odc_Obj_t_.2876252 = type { i16, i16, i16, i16, i32, i32 }
 
 ; 2 occurrences:
 ; postgres/optimized/refint.ll
@@ -24,7 +24,7 @@ define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.VirtIONetQueue.2708511, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.VirtIONetQueue.2708477, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -36,7 +36,7 @@ define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nuw %struct.Odc_Obj_t_.2876286, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %struct.Odc_Obj_t_.2876252, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -47,7 +47,7 @@ define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.Odc_Obj_t_.2876286, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.Odc_Obj_t_.2876252, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 

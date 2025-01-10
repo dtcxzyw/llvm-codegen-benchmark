@@ -6,3 +6,10 @@ func0000000000000006:                   # @func0000000000000006
 	cmoveq	%rcx, %rax
 	andq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	$1, %ecx
+	shlxq	%rdx, %rcx, %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
+	andq	%rdi, %rax
+	retq

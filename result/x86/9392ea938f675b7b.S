@@ -346,13 +346,6 @@ func0000000000000024:                   # @func0000000000000024
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000146:                   # @func0000000000000146
-	testq	%rdx, %rdx
-	setg	%cl
-	cmpq	%rsi, %rdi
-	setl	%al
-	andb	%cl, %al
-	retq
 func00000000000000ca:                   # @func00000000000000ca
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -407,6 +400,13 @@ func0000000000000147:                   # @func0000000000000147
 	setg	%cl
 	cmpq	%rsi, %rdi
 	setle	%al
+	andb	%cl, %al
+	retq
+func0000000000000146:                   # @func0000000000000146
+	testq	%rdx, %rdx
+	setg	%cl
+	cmpq	%rsi, %rdi
+	setl	%al
 	andb	%cl, %al
 	retq
 func00000000000000c1:                   # @func00000000000000c1

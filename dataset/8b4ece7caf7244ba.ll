@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/tcp.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; Function Attrs: nounwind
@@ -29,12 +30,14 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; clamav/optimized/dll.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; linux/optimized/gup.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/arena.ll
@@ -43,8 +46,8 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
-  %4 = shl nuw nsw i64 %3, 3
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }
 

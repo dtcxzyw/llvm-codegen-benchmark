@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vlv_dsi.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll

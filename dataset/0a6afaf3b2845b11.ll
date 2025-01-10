@@ -1,5 +1,5 @@
 
-%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
+%class.itableOffsetEntry.2747717 = type <{ ptr, i32, [4 x i8] }>
 
 ; 8 occurrences:
 ; cpython/optimized/unicodedata.ll
@@ -276,7 +276,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 464
   %5 = getelementptr nusw i64, ptr %4, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr %class.itableOffsetEntry.2747751, ptr %5, i64 %6
+  %7 = getelementptr %class.itableOffsetEntry.2747717, ptr %5, i64 %6
   ret ptr %7
 }
 

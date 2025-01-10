@@ -1380,7 +1380,7 @@ entry:
   ret i1 %4
 }
 
-; 86 occurrences:
+; 87 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -1415,6 +1415,7 @@ entry:
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/MemProfiler.cpp.ll
+; lua/optimized/ldebug.ll
 ; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

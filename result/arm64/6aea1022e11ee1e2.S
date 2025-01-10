@@ -104,7 +104,7 @@ func000000000000003f:                   // @func000000000000003f
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
 	mul	x8, x1, x2
-	add	x0, x0, x8, lsl #2
+	add	x0, x0, x8, lsl #6
 	ret
                                         // -- End function
 func0000000000000013:                   // @func0000000000000013

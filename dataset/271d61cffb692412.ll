@@ -12480,7 +12480,6 @@ entry:
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -14744,6 +14743,7 @@ entry:
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; openexr/optimized/ImfLut.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
@@ -16293,7 +16293,7 @@ entry:
   ret i32 %2
 }
 
-; 7351 occurrences:
+; 7350 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -22475,7 +22475,6 @@ entry:
 ; recastnavigation/optimized/ChunkyTriMesh.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
@@ -23672,6 +23671,7 @@ entry:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/bmcFault.c.ll
+; abc/optimized/cnfMap.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraBddCas.c.ll
@@ -24194,7 +24194,6 @@ entry:
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/binary_codes_reader.c.ll
 ; openusd/optimized/bitreader_buffer.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll

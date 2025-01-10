@@ -15,22 +15,6 @@ func0000000000000021:                   # @func0000000000000021
 	li	a1, 9
 	czero.nez	a0, a1, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
-	sext.w	a0, a0
-	addi	a0, a0, -2
-	seqz	a0, a0
-	and	a0, a0, a1
-	slli	a0, a0, 8
-	ret
-func000000000000018c:                   # @func000000000000018c
-	sext.w	a0, a0
-	srli	a1, a1, 61
-	snez	a0, a0
-	and	a0, a0, a1
-	li	a1, 3
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 15
-	ret
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	not	a1, a1

@@ -630,7 +630,7 @@ entry:
   ret i32 %5
 }
 
-; 212 occurrences:
+; 211 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -710,7 +710,6 @@ entry:
 ; gromacs/optimized/sstein.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/unesctrn.ll
 ; jq/optimized/decNumber.ll
 ; libquic/optimized/error_correction.c.ll
@@ -852,7 +851,7 @@ entry:
   ret i32 %5
 }
 
-; 104 occurrences:
+; 103 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; assimp/optimized/zip.c.ll
@@ -891,7 +890,6 @@ entry:
 ; linux/optimized/ipmr.ll
 ; linux/optimized/nf_reject_ipv6.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/vlv_dsi.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -971,6 +969,7 @@ entry:
 ; abc/optimized/aigCheck.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/dauTree.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMfs.c.ll
@@ -1040,7 +1039,6 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/simpletz.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvsel.ll
 ; icu/optimized/usprep.ll
@@ -1311,8 +1309,9 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
+; icu/optimized/swapimpl.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlarrv.c.ll

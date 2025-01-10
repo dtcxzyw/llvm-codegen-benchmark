@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 117 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; abc/optimized/rwrPrint.c.ll
@@ -36,6 +36,7 @@
 ; linux/optimized/host.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_bios.ll
+; linux/optimized/pci.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/xhci-hub.ll
@@ -273,11 +274,10 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; linux/optimized/cls_api.ll
-; linux/optimized/pci.ll
 ; linux/optimized/virtio_ring.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -302,7 +302,8 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll

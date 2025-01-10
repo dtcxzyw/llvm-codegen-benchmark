@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; libwebp/optimized/palette.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind

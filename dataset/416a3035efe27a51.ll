@@ -3114,7 +3114,6 @@
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; llvm/optimized/TargetID.cpp.ll
 ; llvm/optimized/TargetInfo.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
@@ -3337,6 +3336,7 @@
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
 ; memcached/optimized/memcached-memcached.ll

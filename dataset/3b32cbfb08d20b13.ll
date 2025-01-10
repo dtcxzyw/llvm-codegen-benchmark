@@ -1,7 +1,7 @@
 
-%union.TValue.3680640 = type { i64 }
-%struct.yyjson_val.3789967 = type { i64, %union.yyjson_val_uni.3789966 }
-%union.yyjson_val_uni.3789966 = type { i64 }
+%union.TValue.3680590 = type { i64 }
+%struct.yyjson_val.3789917 = type { i64, %union.yyjson_val_uni.3789916 }
+%union.yyjson_val_uni.3789916 = type { i64 }
 
 ; 5 occurrences:
 ; linux/optimized/memory.ll
@@ -41,7 +41,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr nusw nuw %union.TValue.3680640, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %union.TValue.3680590, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = add nuw nsw i64 %2, 8
   %.not = icmp eq i32 %1, 0
   %4 = select i1 %.not, i64 %3, i64 24
-  %5 = getelementptr %struct.yyjson_val.3789967, ptr %0, i64 %4
+  %5 = getelementptr %struct.yyjson_val.3789917, ptr %0, i64 %4
   ret ptr %5
 }
 

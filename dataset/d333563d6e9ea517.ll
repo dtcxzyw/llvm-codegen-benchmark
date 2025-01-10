@@ -18,7 +18,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 19 occurrences:
+; 20 occurrences:
+; clamav/optimized/matcher-ac.c.ll
 ; libwebp/optimized/jpegdec.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/decompress_bunzip2.ll

@@ -2010,7 +2010,7 @@ entry:
   ret i8 %2
 }
 
-; 96 occurrences:
+; 95 occurrences:
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/GenFaceNormalsProcess.cpp.ll
@@ -2039,7 +2039,6 @@ entry:
 ; icu/optimized/uprops.ll
 ; icu/optimized/uscript_props.ll
 ; imgui/optimized/imgui.cpp.ll
-; imgui/optimized/imgui_tables.cpp.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; libquic/optimized/x25519-x86_64.c.ll

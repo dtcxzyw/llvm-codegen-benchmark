@@ -925,12 +925,8 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
-; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
-; openblas/optimized/dgemm_small_kernel_nn.c.ll
-; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
-; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
 ; Function Attrs: nounwind
@@ -942,7 +938,7 @@ entry:
   ret i64 %3
 }
 
-; 48 occurrences:
+; 52 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -977,10 +973,14 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; openblas/optimized/daxpy_k.c.ll
 ; openblas/optimized/ddot_k.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dsdot_k.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
@@ -1033,23 +1033,6 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
-; jemalloc/optimized/base.ll
-; jemalloc/optimized/base.pic.ll
-; jemalloc/optimized/base.sym.ll
-; php/optimized/pcre2_jit_compile.ll
-; redis/optimized/base.ll
-; redis/optimized/base.sym.ll
-; wireshark/optimized/wmem_allocator_block.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = add nuw i64 %0, 8191
-  %2 = and i64 %1, -8192
-  %3 = add i64 %2, -1
-  ret i64 %3
-}
-
 ; 3 occurrences:
 ; jq/optimized/decNumber.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
@@ -1082,6 +1065,22 @@ entry:
   %1 = add i64 %0, 9223372036854775807
   %2 = and i64 %1, 9223372036854775807
   %3 = add nuw i64 %2, 1
+  ret i64 %3
+}
+
+; 6 occurrences:
+; jemalloc/optimized/base.ll
+; jemalloc/optimized/base.pic.ll
+; jemalloc/optimized/base.sym.ll
+; redis/optimized/base.ll
+; redis/optimized/base.sym.ll
+; wireshark/optimized/wmem_allocator_block.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0) #0 {
+entry:
+  %1 = add nuw i64 %0, 15
+  %2 = and i64 %1, -16
+  %3 = add i64 %2, 32
   ret i64 %3
 }
 

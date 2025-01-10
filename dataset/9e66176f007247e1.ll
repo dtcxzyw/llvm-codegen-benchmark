@@ -1,9 +1,9 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.version_info.2884833 = type { %struct.object_id.2884826, i16 }
-%struct.object_id.2884826 = type { [32 x i8], i32 }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.version_info.2884799 = type { %struct.object_id.2884792, i16 }
+%struct.object_id.2884792 = type { [32 x i8], i32 }
 
 ; 3 occurrences:
 ; jq/optimized/jv.ll
@@ -13,7 +13,7 @@
 define ptr @func00000000000001c1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %3, i64 0, i64 %1
   %5 = icmp eq i32 %0, -1
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6
@@ -40,7 +40,7 @@ entry:
 define ptr @func00000000000001e1(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 64
-  %4 = getelementptr nusw nuw [3 x %struct.version_info.2884833], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %struct.version_info.2884799], ptr %3, i64 0, i64 %1
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6

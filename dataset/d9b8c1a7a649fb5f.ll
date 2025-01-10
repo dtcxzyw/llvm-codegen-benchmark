@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
@@ -94,9 +94,9 @@ entry:
 define ptr @func00000000000000ff(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 2
-  %3 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %2, i64 %0
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %0
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %0
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %2, i64 %0
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %3, i64 %0
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %4, i64 %0
   ret ptr %5
 }
 

@@ -1,9 +1,9 @@
 
-%struct.rb_backtrace_location_struct.2601598 = type { ptr, ptr, ptr }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
-%struct.mi_page_s.4024222 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024223, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024223 = type { i8 }
+%struct.rb_backtrace_location_struct.2601565 = type { ptr, ptr, ptr }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
+%struct.mi_page_s.4024172 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024173, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024173 = type { i8 }
 
 ; 1 occurrences:
 ; ruby/optimized/vm_backtrace.ll
@@ -11,8 +11,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr [1 x %struct.rb_backtrace_location_struct.2601598], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.rb_backtrace_location_struct.2601598, ptr %4, i64 %3
+  %4 = getelementptr [1 x %struct.rb_backtrace_location_struct.2601565], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.rb_backtrace_location_struct.2601565, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -44,7 +44,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %0, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -57,7 +57,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024222], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024172], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }

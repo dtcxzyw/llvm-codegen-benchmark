@@ -1,5 +1,5 @@
 
-%struct.insn_desc_t.2900170 = type { i64, i64, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr }
+%struct.insn_desc_t.2900136 = type { i64, i64, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -36,7 +36,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 8191
   %3 = getelementptr nusw nuw i8, ptr %0, i64 4288
-  %4 = getelementptr nusw nuw [8191 x %struct.insn_desc_t.2900170], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [8191 x %struct.insn_desc_t.2900136], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

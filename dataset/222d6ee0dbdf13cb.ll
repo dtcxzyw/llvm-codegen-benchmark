@@ -1,7 +1,7 @@
 
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
-%"class.ZXing::Trit.3649655" = type { i8 }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 5 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
@@ -40,7 +40,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000eb(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -64
   %5 = sext i32 %0 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
@@ -185,10 +185,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.ZXing::Trit.3649655", ptr %1, i64 %2
+  %3 = getelementptr %"class.ZXing::Trit.3649621", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 7
   %5 = sext i32 %0 to i64
-  %6 = getelementptr %"class.ZXing::Trit.3649655", ptr %4, i64 %5
+  %6 = getelementptr %"class.ZXing::Trit.3649621", ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -7
   ret ptr %7
 }

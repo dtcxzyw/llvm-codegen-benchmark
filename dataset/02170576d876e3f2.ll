@@ -61,17 +61,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; clamav/optimized/xlm_extract.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = or i16 %1, %2
-  %4 = zext i16 %3 to i32
-  %5 = icmp slt i32 %0, %4
-  ret i1 %5
-}
-
 ; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; freetype/optimized/sfnt.c.ll

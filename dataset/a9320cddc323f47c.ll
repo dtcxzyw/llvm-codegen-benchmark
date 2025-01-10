@@ -1,6 +1,6 @@
 
-%struct.anon.6.2709376 = type { ptr, i64 }
-%"struct.Compile::AliasCacheEntry.2739910" = type { ptr, i32 }
+%struct.anon.6.2709342 = type { ptr, i64 }
+%"struct.Compile::AliasCacheEntry.2739876" = type { ptr, i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
@@ -9,7 +9,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 4095
-  %5 = getelementptr [4096 x %struct.anon.6.2709376], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [4096 x %struct.anon.6.2709342], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -22,7 +22,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
   %4 = and i64 %3, 63
-  %5 = getelementptr nuw [64 x %"struct.Compile::AliasCacheEntry.2739910"], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr nuw [64 x %"struct.Compile::AliasCacheEntry.2739876"], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2708985 = type { i32, i32, i32, i32, i32 }
 
 ; 6 occurrences:
 ; brotli/optimized/encode.c.ll
@@ -71,7 +71,7 @@ entry:
   %2 = add nsw i64 %1, -3120
   %3 = lshr i64 %2, 3
   %4 = getelementptr nusw nuw i8, ptr %0, i64 2912
-  %5 = getelementptr %struct.chan.2709019, ptr %4, i64 %3
+  %5 = getelementptr %struct.chan.2708985, ptr %4, i64 %3
   ret ptr %5
 }
 

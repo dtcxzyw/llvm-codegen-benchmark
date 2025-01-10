@@ -180,6 +180,13 @@ func000000000000000a:                   // @func000000000000000a
 	cset	w0, gt
 	ret
                                         // -- End function
+func000000000000002b:                   // @func000000000000002b
+// %bb.0:                               // %entry
+	sub	w8, w2, w1
+	cmp	w0, w8
+	cset	w0, ge
+	ret
+                                        // -- End function
 func0000000000000106:                   // @func0000000000000106
 // %bb.0:                               // %entry
 	sub	w8, w2, w1

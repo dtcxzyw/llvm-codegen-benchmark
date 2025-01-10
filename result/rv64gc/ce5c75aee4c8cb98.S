@@ -182,12 +182,6 @@ func0000000000000149:                   # @func0000000000000149
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func00000000000001c9:                   # @func00000000000001c9
-	add	a1, a1, a2
-	addi	a0, a0, -4
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	ret
 func000000000000018c:                   # @func000000000000018c
 	add	a1, a1, a2
 	addi	a0, a0, 8

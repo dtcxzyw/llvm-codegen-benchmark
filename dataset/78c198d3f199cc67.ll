@@ -1,5 +1,5 @@
 
-; 1610 occurrences:
+; 1615 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -129,6 +129,7 @@
 ; cmake/optimized/cf-socket.c.ll
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/http.c.ll
@@ -359,6 +360,7 @@
 ; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/zip.c.ll
+; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/topology-x86.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -1409,6 +1411,7 @@
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -1428,6 +1431,7 @@
 ; quantlib/optimized/sweden.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -1557,6 +1561,7 @@
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
 ; wireshark/optimized/packet-ppi.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-rtp-ed137.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll

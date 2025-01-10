@@ -23,6 +23,11 @@ func0000000000000030:                   # @func0000000000000030
 	setne	%al
 	andb	%dil, %al
 	retq
+func0000000000000032:                   # @func0000000000000032
+	cmpl	%edx, %esi
+	setne	%al
+	andb	%dil, %al
+	retq
 func0000000000000022:                   # @func0000000000000022
 	cmpl	%edx, %esi
 	seta	%al
@@ -66,11 +71,6 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000028:                   # @func0000000000000028
 	cmpl	%edx, %esi
 	setg	%al
-	andb	%dil, %al
-	retq
-func0000000000000032:                   # @func0000000000000032
-	cmpl	%edx, %esi
-	setne	%al
 	andb	%dil, %al
 	retq
 func0000000000000024:                   # @func0000000000000024

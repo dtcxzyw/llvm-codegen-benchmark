@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
-	sltiu	a0, a0, 2
+	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014

@@ -35,13 +35,6 @@ func0000000000000661:                   # @func0000000000000661
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func00000000000007e1:                   # @func00000000000007e1
-	subl	%edx, %esi
-	incl	%esi
-	incq	%rdi
-	cmpq	%rsi, %rdi
-	sete	%al
-	retq
 func00000000000004e1:                   # @func00000000000004e1
 	movq	$-2, %rax
 	subq	%rdi, %rax

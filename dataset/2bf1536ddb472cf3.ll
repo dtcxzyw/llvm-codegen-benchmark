@@ -1,5 +1,5 @@
 
-; 633 occurrences:
+; 635 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -140,10 +140,12 @@
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/inflate.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/setopt.c.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/difradix2.ll
 ; curl/optimized/libcurl_la-http.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; cvc5/optimized/inst_strategy.cpp.ll
 ; cvc5/optimized/tangent_plane_check.cpp.ll

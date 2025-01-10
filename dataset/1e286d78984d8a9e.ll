@@ -84,7 +84,7 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; casadi/optimized/cs_lu.c.ll
 ; graphviz/optimized/route.c.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -102,7 +102,6 @@ entry:
 ; opencv/optimized/tldUtils.cpp.ll
 ; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/rdtsc_x86.ll
-; openjdk/optimized/zDirector.ll
 ; xgboost/optimized/auc.cc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, double %1) #0 {

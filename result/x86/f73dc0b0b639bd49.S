@@ -22,6 +22,12 @@ func0000000000000064:                   # @func0000000000000064
 	setb	%al
 	andb	%dil, %al
 	retq
+func000000000000006c:                   # @func000000000000006c
+	decl	%edx
+	cmpq	%rdx, %rsi
+	setne	%al
+	andb	%dil, %al
+	retq
 func0000000000000019:                   # @func0000000000000019
 	incl	%edx
 	cmpq	%rdx, %rsi

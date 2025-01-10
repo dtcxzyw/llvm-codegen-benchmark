@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3339754" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3339720" = type { ptr, ptr, ptr, ptr }
 
 ; 10 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -22,10 +22,9 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
@@ -198,8 +197,8 @@ define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw %"class.llvm::Use.3339754", ptr %4, i64 %1
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3339754", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3339720", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3339720", ptr %5, i64 %0
   ret ptr %6
 }
 

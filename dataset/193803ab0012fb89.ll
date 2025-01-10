@@ -1,7 +1,43 @@
 
-; 242 occurrences:
+; 306 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; casadi/optimized/bspline.cpp.ll
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -14,8 +50,23 @@
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/dquot.ll
@@ -231,6 +282,17 @@
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
 ; nix/optimized/gc.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/shenandoahAdaptiveHeuristics.ll
@@ -241,7 +303,9 @@
 ; openjdk/optimized/shenandoahPassiveHeuristics.ll
 ; openjdk/optimized/shenandoahStaticHeuristics.ll
 ; openjdk/optimized/shenandoahVerifier.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; ruby/optimized/bignum.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -497,83 +561,19 @@ entry:
   ret i64 %5
 }
 
-; 76 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/dense_normal_cholesky_solver.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/manifold.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; hyperscan/optimized/ng_calc_components.cpp.ll
 ; libquic/optimized/quic_crypto_client_config.cc.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
 ; mold/optimized/perf.cc.ll
 ; opencv/optimized/canny.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -633,12 +633,76 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 69 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; entt/optimized/meta_container.cpp.ll
 ; freetype/optimized/smooth.c.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; soc-simulator/optimized/verilated.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -734,87 +798,6 @@ entry:
   ret i64 %5
 }
 
-; 71 occurrences:
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/dense_normal_cholesky_solver.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/manifold.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; proj/optimized/isea.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 1
-  %4 = add i64 %3, %1
-  %5 = sub nsw i64 %0, %4
-  ret i64 %5
-}
-
 ; 5 occurrences:
 ; luajit/optimized/lj_func.ll
 ; luajit/optimized/lj_func_dyn.ll
@@ -885,6 +868,23 @@ entry:
   %3 = shl nuw nsw i64 %2, 4
   %4 = add i64 %1, %3
   %5 = sub nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 7 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; proj/optimized/isea.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, %1
+  %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
 

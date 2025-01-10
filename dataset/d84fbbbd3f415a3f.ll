@@ -1,25 +1,8 @@
 
-; 6 occurrences:
-; libpng/optimized/pngrtran.c.ll
-; linux/optimized/consolemap.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; openjdk/optimized/pngrtran.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = shl nuw i64 %3, 1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 5 occurrences:
+; 4 occurrences:
 ; minetest/optimized/database.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
@@ -43,6 +26,21 @@ entry:
   ret i64 %6
 }
 
+; 4 occurrences:
+; libpng/optimized/pngrtran.c.ll
+; linux/optimized/consolemap.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; openjdk/optimized/pngrtran.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 10
+  %4 = shl nuw nsw i64 %1, 5
+  %5 = add nuw nsw i64 %4, %3
+  %6 = add nuw nsw i64 %0, %5
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
@@ -55,8 +53,7 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
-; casadi/optimized/qrqp.cpp.ll
+; 6 occurrences:
 ; node/optimized/libnode.node_trace_buffer.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; redis/optimized/object.ll

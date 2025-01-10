@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; libquic/optimized/tasn_dec.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
+; openjdk/optimized/zip_util.ll
 ; openssl/optimized/libcrypto-lib-tasn_dec.ll
 ; openssl/optimized/libcrypto-shlib-tasn_dec.ll
 ; sqlite/optimized/sqlite3.ll

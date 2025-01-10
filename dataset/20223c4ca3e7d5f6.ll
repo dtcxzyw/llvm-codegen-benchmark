@@ -1,5 +1,5 @@
 
-; 950 occurrences:
+; 957 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -269,6 +269,7 @@
 ; linux/optimized/dma-fence-chain.ll
 ; linux/optimized/dma-resv.ll
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_request.ll
 ; linux/optimized/intel_sdvo.ll
@@ -298,6 +299,7 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/CallAndMessageChecker.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/ConstantHoisting.cpp.ll
@@ -312,6 +314,8 @@
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
@@ -332,6 +336,7 @@
 ; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LoopFlatten.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
 ; llvm/optimized/LoopRotationUtils.cpp.ll
@@ -390,6 +395,7 @@
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
+; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86FixupInstTuning.cpp.ll
@@ -452,6 +458,7 @@
 ; mitsuba3/optimized/class.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll

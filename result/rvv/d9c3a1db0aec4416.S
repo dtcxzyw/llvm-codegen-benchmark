@@ -56,15 +56,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
 	ret
-func000000000000002c:                   # @func000000000000002c
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 6
-	li	a0, -1
-	vor.vv	v8, v8, v10
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
-	vmsne.vx	v0, v8, a0
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,5 +1,5 @@
 
-; 2854 occurrences:
+; 2851 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -1067,7 +1067,6 @@
 ; linux/optimized/rsrc_nonstatic.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
-; linux/optimized/scatterwalk.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sch_frag.ll
 ; linux/optimized/scsi_transport_spi.ll
@@ -1075,7 +1074,6 @@
 ; linux/optimized/selection.ll
 ; linux/optimized/seq_buf.ll
 ; linux/optimized/seq_file.ll
-; linux/optimized/serial_core.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/sit.ll
@@ -1725,7 +1723,6 @@
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_fnmatch.c.ll
 ; nuttx/optimized/lib_itoa.c.ll
-; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/mempool_multiple.c.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -2879,7 +2876,7 @@ entry:
   ret i32 %3
 }
 
-; 565 occurrences:
+; 564 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -2923,6 +2920,7 @@ entry:
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; clamav/optimized/others_common.c.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/content_encoding.c.ll
 ; cpython/optimized/dtoa.ll
@@ -3266,7 +3264,6 @@ entry:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stubs.ll
 ; openjdk/optimized/verifier.ll
-; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_nfs_read.ll
@@ -3393,7 +3390,6 @@ entry:
 ; redis/optimized/sort.ll
 ; rocksdb/optimized/fault_injection_env.cc.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/io.ll
 ; ruby/optimized/util.ll
 ; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
 ; slurm/optimized/backfill.ll
@@ -3453,7 +3449,7 @@ entry:
   ret i32 %3
 }
 
-; 67 occurrences:
+; 64 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -3466,7 +3462,6 @@ entry:
 ; abc/optimized/wlnRead.c.ll
 ; boost/optimized/to_chars.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/pdf.c.ll
@@ -3491,7 +3486,6 @@ entry:
 ; linux/optimized/rsrc.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_offload.ll
-; linux/optimized/vc_screen.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -3520,7 +3514,6 @@ entry:
 ; snappy/optimized/snappy.cc.ll
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpz.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
@@ -3529,15 +3522,13 @@ entry:
   ret i32 %3
 }
 
-; 95 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; assimp/optimized/unzip.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; crow/optimized/example_session.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -3598,7 +3589,6 @@ entry:
 ; openusd/optimized/testHdSortedIds.cpp.ll
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
-; php/optimized/KeccakSponge.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/random.ll
 ; qemu/optimized/accel_tcg_translator.c.ll
@@ -3656,7 +3646,7 @@ entry:
   ret i32 %3
 }
 
-; 82 occurrences:
+; 81 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -3705,7 +3695,6 @@ entry:
 ; node/optimized/libnode.string_bytes.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_meminstream.c.ll
 ; opencv/optimized/backend.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
@@ -3747,10 +3736,9 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; clamav/optimized/Bra86.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; folly/optimized/Dump.cpp.ll
@@ -3852,20 +3840,6 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; libpng/optimized/pngrutil.c.ll
-; linux/optimized/bio.ll
-; lua/optimized/lstrlib.ll
-; openjdk/optimized/pngrutil.ll
-; qemu/optimized/block_cloop.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw i64 %0, %1
-  %3 = trunc nuw nsw i64 %2 to i32
-  ret i32 %3
-}
-
 ; 35 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -3910,9 +3884,8 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.env.ll
 ; opencv/optimized/container_avi.cpp.ll
@@ -3928,17 +3901,15 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; hwloc/optimized/topology-synthetic.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/rematch.ll
-; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; openjdk/optimized/pngrutil.ll
 ; spike/optimized/s_addMagsF32.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -3960,6 +3931,17 @@ define i32 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %0, %1
   %3 = trunc nsw i64 %2 to i32
+  ret i32 %3
+}
+
+; 2 occurrences:
+; linux/optimized/bio.ll
+; lua/optimized/lstrlib.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw i64 %0, %1
+  %3 = trunc nuw nsw i64 %2 to i32
   ret i32 %3
 }
 

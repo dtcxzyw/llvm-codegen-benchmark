@@ -60,7 +60,7 @@ entry:
   ret i32 %5
 }
 
-; 526 occurrences:
+; 525 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -219,7 +219,6 @@ entry:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

@@ -1,11 +1,11 @@
 
-%"struct.eastl::pair.84.3895783" = type <{ %"class.eastl::basic_string.73.3895772", i32, [4 x i8] }>
-%"class.eastl::basic_string.73.3895772" = type { %"class.eastl::compressed_pair.74.3895773" }
-%"class.eastl::compressed_pair.74.3895773" = type { %"class.eastl::compressed_pair_imp.75.3895774" }
-%"class.eastl::compressed_pair_imp.75.3895774" = type { %"struct.eastl::basic_string<char>::Layout.3895775" }
-%"struct.eastl::basic_string<char>::Layout.3895775" = type { %union.anon.76.3895776 }
-%union.anon.76.3895776 = type { %"struct.eastl::basic_string<char>::HeapLayout.3895777" }
-%"struct.eastl::basic_string<char>::HeapLayout.3895777" = type { ptr, i64, i64 }
+%"struct.eastl::pair.84.3895733" = type <{ %"class.eastl::basic_string.73.3895722", i32, [4 x i8] }>
+%"class.eastl::basic_string.73.3895722" = type { %"class.eastl::compressed_pair.74.3895723" }
+%"class.eastl::compressed_pair.74.3895723" = type { %"class.eastl::compressed_pair_imp.75.3895724" }
+%"class.eastl::compressed_pair_imp.75.3895724" = type { %"struct.eastl::basic_string<char>::Layout.3895725" }
+%"struct.eastl::basic_string<char>::Layout.3895725" = type { %union.anon.76.3895726 }
+%union.anon.76.3895726 = type { %"struct.eastl::basic_string<char>::HeapLayout.3895727" }
+%"struct.eastl::basic_string<char>::HeapLayout.3895727" = type { ptr, i64, i64 }
 
 ; 4 occurrences:
 ; cpython/optimized/dictobject.ll
@@ -82,7 +82,7 @@ define ptr @func000000000000005e(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 23, %3
-  %5 = getelementptr nusw nuw %"struct.eastl::pair.84.3895783", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.eastl::pair.84.3895733", ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }

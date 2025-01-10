@@ -70,15 +70,15 @@ func0000000000000044:                   # @func0000000000000044
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000074:                   # @func0000000000000074
-	vpmovdb	%ymm1, %xmm1
-	vpcmpltub	%xmm1, %xmm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
 func0000000000000005:                   # @func0000000000000005
 	vpmovdb	%ymm1, %xmm1
 	vpcmpleub	%xmm1, %xmm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000074:                   # @func0000000000000074
+	vpmovdb	%ymm1, %xmm1
+	vpcmpltub	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

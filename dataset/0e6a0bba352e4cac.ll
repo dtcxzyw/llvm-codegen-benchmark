@@ -1,7 +1,7 @@
 
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
 
-; 22 occurrences:
+; 23 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/sre.ll
@@ -19,6 +19,7 @@
 ; oiio/optimized/maketexture.cpp.ll
 ; openmpi/optimized/ad_aggregate.ll
 ; postgres/optimized/brin.ll
+; postgres/optimized/dynahash.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/spgxlog.ll
 ; ruby/optimized/addr2line.ll
@@ -570,8 +571,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %1, i64 %0
-  %3 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %2, i64 %0
+  %2 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %1, i64 %0
+  %3 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %2, i64 %0
   ret ptr %3
 }
 

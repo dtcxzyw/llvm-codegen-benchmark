@@ -1,8 +1,8 @@
 
-%struct.fdt_reserve_entry.2706131 = type { i64, i64 }
-%"class.cv::Complex.13.3754032" = type { float, float }
-%struct.ED_.3881841 = type { i32, %struct.FT_Vector_.3881842, i8 }
-%struct.FT_Vector_.3881842 = type { i64, i64 }
+%struct.fdt_reserve_entry.2706097 = type { i64, i64 }
+%"class.cv::Complex.13.3753982" = type { float, float }
+%struct.ED_.3881791 = type { i32, %struct.FT_Vector_.3881792, i8 }
+%struct.FT_Vector_.3881792 = type { i64, i64 }
 
 ; 37 occurrences:
 ; abc/optimized/abcDetect.c.ll
@@ -109,11 +109,11 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.fdt_reserve_entry.2706131, ptr %4, i64 %3, i32 1
+  %5 = getelementptr %struct.fdt_reserve_entry.2706097, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
@@ -153,7 +153,6 @@ entry:
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; openjdk/optimized/zip_util.ll
-; openusd/optimized/decodetxb.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -728,8 +727,8 @@ entry:
 define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %0, i64 %1
-  %5 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %0, i64 %1
+  %5 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -739,8 +738,8 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %1
-  %5 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %1
+  %5 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -750,8 +749,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ED_.3881841, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.ED_.3881841, ptr %4, i64 %3
+  %4 = getelementptr %struct.ED_.3881791, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.ED_.3881791, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -32
   ret ptr %6
 }
@@ -762,8 +761,8 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ED_.3881841, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.ED_.3881841, ptr %4, i64 %3
+  %4 = getelementptr %struct.ED_.3881791, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.ED_.3881791, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }

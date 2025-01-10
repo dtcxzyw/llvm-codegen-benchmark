@@ -18,11 +18,6 @@ func00000000000000f0:                   # @func00000000000000f0
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func00000000000000f5:                   # @func00000000000000f5
-	sh3add.uw	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 760
-	ret
 func00000000000001ff:                   # @func00000000000001ff
 	sext.w	a2, a2
 	sh2add	a1, a2, a1

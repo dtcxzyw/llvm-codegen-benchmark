@@ -11,13 +11,26 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 3 occurrences:
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = add i32 %1, %3
+  %5 = icmp ult i32 %4, 4096
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 6 occurrences:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; opencv/optimized/hfs_core.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/slic.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i1 %0, i32 %1, i64 %2) #0 {

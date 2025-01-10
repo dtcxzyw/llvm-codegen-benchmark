@@ -1,5 +1,5 @@
 
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
 
 ; 16 occurrences:
 ; abc/optimized/cloud.c.ll
@@ -24,7 +24,7 @@ entry:
   %3 = mul i32 %2, -1640531527
   %4 = lshr i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %5
   ret ptr %6
 }
 

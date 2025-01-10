@@ -1,12 +1,12 @@
 
-%struct.page.3531253 = type { i64, %union.anon.9.3531254, %union.anon.17.3531255, %struct.atomic_t.3531211, [8 x i8] }
-%union.anon.9.3531254 = type { %struct.anon.10.3531256 }
-%struct.anon.10.3531256 = type { %union.anon.11.3531257, ptr, %union.anon.13.3531258, i64 }
-%union.anon.11.3531257 = type { %struct.list_head.3531217 }
-%struct.list_head.3531217 = type { ptr, ptr }
-%union.anon.13.3531258 = type { i64 }
-%union.anon.17.3531255 = type { %struct.atomic_t.3531211 }
-%struct.atomic_t.3531211 = type { i32 }
+%struct.page.3531219 = type { i64, %union.anon.9.3531220, %union.anon.17.3531221, %struct.atomic_t.3531177, [8 x i8] }
+%union.anon.9.3531220 = type { %struct.anon.10.3531222 }
+%struct.anon.10.3531222 = type { %union.anon.11.3531223, ptr, %union.anon.13.3531224, i64 }
+%union.anon.11.3531223 = type { %struct.list_head.3531183 }
+%struct.list_head.3531183 = type { ptr, ptr }
+%union.anon.13.3531224 = type { i64 }
+%union.anon.17.3531221 = type { %struct.atomic_t.3531177 }
+%struct.atomic_t.3531177 = type { i32 }
 
 ; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -91,7 +91,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr %struct.page.3531253, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3531219, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

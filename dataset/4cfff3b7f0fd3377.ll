@@ -401,9 +401,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/zdict.c.ll
-; pocketpy/optimized/collections.cpp.ll
 ; postgres/optimized/xid8funcs.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind

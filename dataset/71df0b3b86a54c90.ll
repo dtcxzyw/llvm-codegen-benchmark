@@ -1,53 +1,53 @@
 
-%"struct.rocksdb::BufferInfo.2627093" = type { %"class.rocksdb::AlignedBuffer.2627094", i64, i64, i8, ptr, %"class.std::function.2.2627095", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2627094" = type { i64, %"class.std::unique_ptr.2627096", i64, i64, ptr }
-%"class.std::unique_ptr.2627096" = type { %"struct.std::__uniq_ptr_data.2627097" }
-%"struct.std::__uniq_ptr_data.2627097" = type { %"class.std::__uniq_ptr_impl.2627098" }
-%"class.std::__uniq_ptr_impl.2627098" = type { %"class.std::tuple.2627099" }
-%"class.std::tuple.2627099" = type { %"struct.std::_Tuple_impl.2627100" }
-%"struct.std::_Tuple_impl.2627100" = type { %"struct.std::_Head_base.1.2627101" }
-%"struct.std::_Head_base.1.2627101" = type { ptr }
-%"class.std::function.2.2627095" = type { %"class.std::_Function_base.2627102", ptr }
-%"class.std::_Function_base.2627102" = type { %"union.std::_Any_data.2627103", ptr }
-%"union.std::_Any_data.2627103" = type { %"union.std::_Nocopy_types.2627104" }
-%"union.std::_Nocopy_types.2627104" = type { { i64, i64 } }
-%"struct.folly::threadlocal_detail::ElementWrapper.2690986" = type { ptr, %union.anon.2690987, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2690988" }
-%union.anon.2690987 = type { ptr }
-%"struct.folly::threadlocal_detail::ThreadEntryNode.2690988" = type { i32, ptr, ptr, ptr }
-%struct.FlatRange.2708358 = type { ptr, i64, %struct.AddrRange.2708359, i8, i8, i8, i8, i8 }
-%struct.AddrRange.2708359 = type { i128, i128 }
-%struct.drm_vblank_crtc.3532377 = type { ptr, %struct.wait_queue_head.3532378, %struct.timer_list.3532379, %struct.seqlock_t.3532380, %struct.atomic64_t.3532381, i64, %struct.atomic_t.3532369, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3532382, i8, ptr, %struct.list_head.3532383, %struct.wait_queue_head.3532378 }
-%struct.timer_list.3532379 = type { %struct.hlist_node.3532384, i64, ptr, i32 }
-%struct.hlist_node.3532384 = type { ptr, ptr }
-%struct.seqlock_t.3532380 = type { %struct.seqcount_spinlock.3532385, %struct.spinlock.3532386 }
-%struct.seqcount_spinlock.3532385 = type { %struct.seqcount.3532387 }
-%struct.seqcount.3532387 = type { i32 }
-%struct.spinlock.3532386 = type { %union.anon.1.3532388 }
-%union.anon.1.3532388 = type { %struct.raw_spinlock.3532389 }
-%struct.raw_spinlock.3532389 = type { %struct.qspinlock.3532390 }
-%struct.qspinlock.3532390 = type { %union.anon.3532391 }
-%union.anon.3532391 = type { %struct.atomic_t.3532369 }
-%struct.atomic64_t.3532381 = type { i64 }
-%struct.atomic_t.3532369 = type { i32 }
-%struct.drm_display_mode.3532382 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3532383, [32 x i8], i32, i32 }
-%struct.list_head.3532383 = type { ptr, ptr }
-%struct.wait_queue_head.3532378 = type { %struct.spinlock.3532386, %struct.list_head.3532383 }
-%struct.send_queue.3557093 = type { ptr, [19 x %struct.scatterlist.3557082], [16 x i8], %struct.virtnet_sq_stats.3557094, %struct.virtnet_interrupt_coalesce.3557079, %struct.napi_struct.3557055, i8 }
-%struct.scatterlist.3557082 = type { i64, i32, i32, i64, i32, i32 }
-%struct.virtnet_sq_stats.3557094 = type { %struct.u64_stats_sync.3557084, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085 }
-%struct.u64_stats_sync.3557084 = type {}
-%struct.u64_stats_t.3557085 = type { %struct.local64_t.3557086 }
-%struct.local64_t.3557086 = type { %struct.local_t.3557087 }
-%struct.local_t.3557087 = type { %struct.atomic64_t.3557088 }
-%struct.atomic64_t.3557088 = type { i64 }
-%struct.virtnet_interrupt_coalesce.3557079 = type { i32, i32 }
-%struct.napi_struct.3557055 = type { %struct.list_head.3557051, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3557059], ptr, %struct.list_head.3557051, i32, i32, %struct.hrtimer.3557060, ptr, %struct.list_head.3557051, %struct.hlist_node.3557061, i32 }
-%struct.gro_list.3557059 = type { %struct.list_head.3557051, i32 }
-%struct.hrtimer.3557060 = type { %struct.timerqueue_node.3557062, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3557062 = type { %struct.rb_node.3557063, i64 }
-%struct.rb_node.3557063 = type { i64, ptr, ptr }
-%struct.list_head.3557051 = type { ptr, ptr }
-%struct.hlist_node.3557061 = type { ptr, ptr }
+%"struct.rocksdb::BufferInfo.2627060" = type { %"class.rocksdb::AlignedBuffer.2627061", i64, i64, i8, ptr, %"class.std::function.2.2627062", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2627061" = type { i64, %"class.std::unique_ptr.2627063", i64, i64, ptr }
+%"class.std::unique_ptr.2627063" = type { %"struct.std::__uniq_ptr_data.2627064" }
+%"struct.std::__uniq_ptr_data.2627064" = type { %"class.std::__uniq_ptr_impl.2627065" }
+%"class.std::__uniq_ptr_impl.2627065" = type { %"class.std::tuple.2627066" }
+%"class.std::tuple.2627066" = type { %"struct.std::_Tuple_impl.2627067" }
+%"struct.std::_Tuple_impl.2627067" = type { %"struct.std::_Head_base.1.2627068" }
+%"struct.std::_Head_base.1.2627068" = type { ptr }
+%"class.std::function.2.2627062" = type { %"class.std::_Function_base.2627069", ptr }
+%"class.std::_Function_base.2627069" = type { %"union.std::_Any_data.2627070", ptr }
+%"union.std::_Any_data.2627070" = type { %"union.std::_Nocopy_types.2627071" }
+%"union.std::_Nocopy_types.2627071" = type { { i64, i64 } }
+%"struct.folly::threadlocal_detail::ElementWrapper.2690952" = type { ptr, %union.anon.2690953, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2690954" }
+%union.anon.2690953 = type { ptr }
+%"struct.folly::threadlocal_detail::ThreadEntryNode.2690954" = type { i32, ptr, ptr, ptr }
+%struct.FlatRange.2708324 = type { ptr, i64, %struct.AddrRange.2708325, i8, i8, i8, i8, i8 }
+%struct.AddrRange.2708325 = type { i128, i128 }
+%struct.drm_vblank_crtc.3532343 = type { ptr, %struct.wait_queue_head.3532344, %struct.timer_list.3532345, %struct.seqlock_t.3532346, %struct.atomic64_t.3532347, i64, %struct.atomic_t.3532335, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3532348, i8, ptr, %struct.list_head.3532349, %struct.wait_queue_head.3532344 }
+%struct.timer_list.3532345 = type { %struct.hlist_node.3532350, i64, ptr, i32 }
+%struct.hlist_node.3532350 = type { ptr, ptr }
+%struct.seqlock_t.3532346 = type { %struct.seqcount_spinlock.3532351, %struct.spinlock.3532352 }
+%struct.seqcount_spinlock.3532351 = type { %struct.seqcount.3532353 }
+%struct.seqcount.3532353 = type { i32 }
+%struct.spinlock.3532352 = type { %union.anon.1.3532354 }
+%union.anon.1.3532354 = type { %struct.raw_spinlock.3532355 }
+%struct.raw_spinlock.3532355 = type { %struct.qspinlock.3532356 }
+%struct.qspinlock.3532356 = type { %union.anon.3532357 }
+%union.anon.3532357 = type { %struct.atomic_t.3532335 }
+%struct.atomic64_t.3532347 = type { i64 }
+%struct.atomic_t.3532335 = type { i32 }
+%struct.drm_display_mode.3532348 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3532349, [32 x i8], i32, i32 }
+%struct.list_head.3532349 = type { ptr, ptr }
+%struct.wait_queue_head.3532344 = type { %struct.spinlock.3532352, %struct.list_head.3532349 }
+%struct.send_queue.3557059 = type { ptr, [19 x %struct.scatterlist.3557048], [16 x i8], %struct.virtnet_sq_stats.3557060, %struct.virtnet_interrupt_coalesce.3557045, %struct.napi_struct.3557021, i8 }
+%struct.scatterlist.3557048 = type { i64, i32, i32, i64, i32, i32 }
+%struct.virtnet_sq_stats.3557060 = type { %struct.u64_stats_sync.3557050, %struct.u64_stats_t.3557051, %struct.u64_stats_t.3557051, %struct.u64_stats_t.3557051, %struct.u64_stats_t.3557051, %struct.u64_stats_t.3557051, %struct.u64_stats_t.3557051 }
+%struct.u64_stats_sync.3557050 = type {}
+%struct.u64_stats_t.3557051 = type { %struct.local64_t.3557052 }
+%struct.local64_t.3557052 = type { %struct.local_t.3557053 }
+%struct.local_t.3557053 = type { %struct.atomic64_t.3557054 }
+%struct.atomic64_t.3557054 = type { i64 }
+%struct.virtnet_interrupt_coalesce.3557045 = type { i32, i32 }
+%struct.napi_struct.3557021 = type { %struct.list_head.3557017, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3557025], ptr, %struct.list_head.3557017, i32, i32, %struct.hrtimer.3557026, ptr, %struct.list_head.3557017, %struct.hlist_node.3557027, i32 }
+%struct.gro_list.3557025 = type { %struct.list_head.3557017, i32 }
+%struct.hrtimer.3557026 = type { %struct.timerqueue_node.3557028, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3557028 = type { %struct.rb_node.3557029, i64 }
+%struct.rb_node.3557029 = type { i64, ptr, ptr }
+%struct.list_head.3557017 = type { ptr, ptr }
+%struct.hlist_node.3557027 = type { ptr, ptr }
 
 ; 182 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -236,7 +236,7 @@
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nuw %"struct.rocksdb::BufferInfo.2627093", ptr %0, i64 %2, i32 5, i32 0, i32 1
+  %3 = getelementptr nuw %"struct.rocksdb::BufferInfo.2627060", ptr %0, i64 %2, i32 5, i32 0, i32 1
   ret ptr %3
 }
 
@@ -276,7 +276,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nuw %"struct.folly::threadlocal_detail::ElementWrapper.2690986", ptr %0, i64 %2, i32 3, i32 2
+  %3 = getelementptr nuw %"struct.folly::threadlocal_detail::ElementWrapper.2690952", ptr %0, i64 %2, i32 3, i32 2
   ret ptr %3
 }
 
@@ -286,7 +286,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.FlatRange.2708358, ptr %0, i64 %2, i32 2, i32 1
+  %3 = getelementptr %struct.FlatRange.2708324, ptr %0, i64 %2, i32 2, i32 1
   ret ptr %3
 }
 
@@ -297,7 +297,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.drm_vblank_crtc.3532377, ptr %0, i64 %2, i32 13, i32 25
+  %3 = getelementptr %struct.drm_vblank_crtc.3532343, ptr %0, i64 %2, i32 13, i32 25
   ret ptr %3
 }
 
@@ -307,7 +307,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.send_queue.3557093, ptr %0, i64 %2, i32 5, i32 2
+  %3 = getelementptr %struct.send_queue.3557059, ptr %0, i64 %2, i32 5, i32 2
   ret ptr %3
 }
 

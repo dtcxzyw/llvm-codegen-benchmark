@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/bmcMaj.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/giaLf.c.ll

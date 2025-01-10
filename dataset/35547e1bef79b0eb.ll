@@ -245,7 +245,7 @@ entry:
   ret i32 %4
 }
 
-; 213 occurrences:
+; 207 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/builder.cc.ll
@@ -274,11 +274,6 @@ entry:
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationfastlatin.ll
@@ -423,7 +418,6 @@ entry:
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/net_colo.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/btsnoop.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll

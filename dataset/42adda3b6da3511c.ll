@@ -1,16 +1,16 @@
 
-%"struct.std::pair.295.2614743" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2614732" }
-%"struct.rocksdb::TrackedTrxInfo.2614732" = type { %"class.rocksdb::autovector.50.2614717", i32, i8, %"class.std::__cxx11::basic_string.2614727" }
-%"class.rocksdb::autovector.50.2614717" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2614718" }
-%"class.std::vector.51.2614718" = type { %"struct.std::_Vector_base.52.2614719" }
-%"struct.std::_Vector_base.52.2614719" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614720" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614721" = type { ptr, ptr, ptr }
-%"class.std::__cxx11::basic_string.2614727" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728", i64, %union.anon.2614729 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614728" = type { ptr }
-%union.anon.2614729 = type { i64, [8 x i8] }
-%"class.QuantLib::Date.2835313" = type { i64 }
-%struct.Vec_Int_t_.2876606 = type { i32, i32, ptr }
+%"struct.std::pair.295.2614710" = type { i64, %"struct.rocksdb::TrackedTrxInfo.2614699" }
+%"struct.rocksdb::TrackedTrxInfo.2614699" = type { %"class.rocksdb::autovector.50.2614684", i32, i8, %"class.std::__cxx11::basic_string.2614694" }
+%"class.rocksdb::autovector.50.2614684" = type { i64, [64 x i8], ptr, %"class.std::vector.51.2614685" }
+%"class.std::vector.51.2614685" = type { %"struct.std::_Vector_base.52.2614686" }
+%"struct.std::_Vector_base.52.2614686" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614687" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2614687" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614688" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2614688" = type { ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.2614694" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614695", i64, %union.anon.2614696 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2614695" = type { ptr }
+%union.anon.2614696 = type { i64, [8 x i8] }
+%"class.QuantLib::Date.2835279" = type { i64 }
+%struct.Vec_Int_t_.2876572 = type { i32, i32, ptr }
 
 ; 5 occurrences:
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
@@ -21,8 +21,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.std::pair.295.2614743", ptr %0, i64 %1
-  %4 = getelementptr %"struct.std::pair.295.2614743", ptr %3, i64 %2
+  %3 = getelementptr %"struct.std::pair.295.2614710", ptr %0, i64 %1
+  %4 = getelementptr %"struct.std::pair.295.2614710", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -304
   ret ptr %5
 }
@@ -43,8 +43,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.QuantLib::Date.2835313", ptr %0, i64 %1
-  %4 = getelementptr %"class.QuantLib::Date.2835313", ptr %3, i64 %2
+  %3 = getelementptr %"class.QuantLib::Date.2835279", ptr %0, i64 %1
+  %4 = getelementptr %"class.QuantLib::Date.2835279", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -66,8 +66,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Vec_Int_t_.2876606, ptr %0, i64 %1
-  %4 = getelementptr %struct.Vec_Int_t_.2876606, ptr %3, i64 %2
+  %3 = getelementptr %struct.Vec_Int_t_.2876572, ptr %0, i64 %1
+  %4 = getelementptr %struct.Vec_Int_t_.2876572, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 20
   ret ptr %5
 }

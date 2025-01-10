@@ -1,5 +1,5 @@
 
-%struct.HIDPointerEvent.2706129 = type { i32, i32, i32, i32 }
+%struct.HIDPointerEvent.2706095 = type { i32, i32, i32, i32 }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -11,7 +11,7 @@ entry:
   %4 = add i32 %3, 15
   %5 = and i32 %4, 15
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr [16 x %struct.HIDPointerEvent.2706129], ptr %0, i64 0, i64 %6
+  %7 = getelementptr [16 x %struct.HIDPointerEvent.2706095], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

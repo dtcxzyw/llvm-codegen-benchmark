@@ -1,7 +1,7 @@
 
-%struct.NCQTransferState.2709092 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709108, %struct.BlockAcctCookie.2709106, i32, i64, i8, i8, i8, i8, i8 }
-%struct.QEMUSGList.2709108 = type { ptr, i32, i32, i64, ptr, ptr }
-%struct.BlockAcctCookie.2709106 = type { i64, i64, i32 }
+%struct.NCQTransferState.2709058 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709074, %struct.BlockAcctCookie.2709072, i32, i64, i8, i8, i8, i8, i8 }
+%struct.QEMUSGList.2709074 = type { ptr, i32, i32, i64, ptr, ptr }
+%struct.BlockAcctCookie.2709072 = type { i64, i64, i32 }
 
 ; 14 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
@@ -38,7 +38,7 @@ entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 2496
-  %5 = getelementptr [32 x %struct.NCQTransferState.2709092], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [32 x %struct.NCQTransferState.2709058], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

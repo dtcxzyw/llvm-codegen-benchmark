@@ -5,9 +5,3 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -1
 	vminu.vx	v8, v8, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmerge.vvm	v8, v10, v8, v0
-	li	a0, 29
-	vminu.vx	v8, v8, a0
-	ret

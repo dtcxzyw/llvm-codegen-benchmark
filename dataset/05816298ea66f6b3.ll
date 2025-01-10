@@ -1,6 +1,6 @@
 
-%union.IRIns.3680915 = type { %struct.GCRef.3680916 }
-%struct.GCRef.3680916 = type { i64 }
+%union.IRIns.3680865 = type { %struct.GCRef.3680866 }
+%struct.GCRef.3680866 = type { i64 }
 
 ; 3 occurrences:
 ; php/optimized/pass1.ll
@@ -78,7 +78,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000f0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %union.IRIns.3680915, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %union.IRIns.3680865, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 2147483648

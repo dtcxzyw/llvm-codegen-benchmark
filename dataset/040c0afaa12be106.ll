@@ -1,5 +1,5 @@
 
-%"struct.Yosys::RTLIL::IdString.3130787" = type { i32 }
+%"struct.Yosys::RTLIL::IdString.3130753" = type { i32 }
 
 ; 51 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
@@ -83,7 +83,7 @@ entry:
 define i1 @func0000000000000041(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = getelementptr nusw %"struct.Yosys::RTLIL::IdString.3130787", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.Yosys::RTLIL::IdString.3130753", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

@@ -1,21 +1,4 @@
 
-; 7 occurrences:
-; darktable/optimized/Cr2Decompressor.cpp.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/Singleton.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000012a(i32 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %0, %3
-  ret i1 %4
-}
-
 ; 3 occurrences:
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
@@ -96,6 +79,18 @@ entry:
   %4 = sub i32 %0, %3
   %5 = icmp ult i32 %4, 8
   ret i1 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000012a(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = icmp sge i32 %0, %3
+  ret i1 %4
 }
 
 ; 2 occurrences:

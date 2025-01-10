@@ -10,3 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	cmovaq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	movq	%rsi, %rax
+	imulq	%rdx, %rax
+	cmpq	%rax, %rdi
+	cmovaq	%rdi, %rax
+	retq

@@ -1,10 +1,10 @@
 
-%struct.__subtree_lvl.3445005 = type { i32, ptr, ptr }
-%"union.absl::container_internal::map_slot_type.3459920" = type { %"struct.std::pair.1868.3459848" }
-%"struct.std::pair.1868.3459848" = type { i32, %"class.std::__cxx11::basic_string.3459054" }
-%"class.std::__cxx11::basic_string.3459054" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3459055", i64, %union.anon.3459056 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3459055" = type { ptr }
-%union.anon.3459056 = type { i64, [8 x i8] }
+%struct.__subtree_lvl.3444971 = type { i32, ptr, ptr }
+%"union.absl::container_internal::map_slot_type.3459886" = type { %"struct.std::pair.1868.3459814" }
+%"struct.std::pair.1868.3459814" = type { i32, %"class.std::__cxx11::basic_string.3459020" }
+%"class.std::__cxx11::basic_string.3459020" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3459021", i64, %union.anon.3459022 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3459021" = type { ptr }
+%union.anon.3459022 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; openjdk/optimized/imageFile.ll
@@ -50,7 +50,7 @@ define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.__subtree_lvl.3445005, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.__subtree_lvl.3444971, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -67,7 +67,7 @@ define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nuw %"union.absl::container_internal::map_slot_type.3459920", ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr nuw %"union.absl::container_internal::map_slot_type.3459886", ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 

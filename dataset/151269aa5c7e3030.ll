@@ -1,5 +1,5 @@
 
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 9 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000601(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 64
-  %3 = getelementptr %struct.JSShapeProperty.3435093, ptr %2, i64 %0
+  %3 = getelementptr %struct.JSShapeProperty.3435059, ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = icmp eq ptr %4, null
   ret i1 %5

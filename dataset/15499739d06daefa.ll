@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -76,7 +76,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
@@ -116,8 +115,7 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 2 occurrences:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; redis/optimized/siphash.ll
 ; Function Attrs: nounwind
@@ -130,9 +128,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ifDec07.c.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/vm_version_x86.ll
@@ -285,8 +282,7 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 2 occurrences:
 ; redis/optimized/siphash.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
@@ -311,7 +307,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_image.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {

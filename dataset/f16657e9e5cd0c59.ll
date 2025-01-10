@@ -1891,10 +1891,11 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/date.ll
 ; php/optimized/filestat.ll
 ; wireshark/optimized/packet-fcoib.c.ll
+; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 11 occurrences:
 ; linux/optimized/kyber-iosched.ll
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000601(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 664
-  %4 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [512 x %struct.TCGTemp.2707191], ptr %3, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 56
   %6 = icmp eq ptr %0, %5
   ret i1 %6

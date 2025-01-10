@@ -77,12 +77,6 @@ func0000000000000026:                   # @func0000000000000026
 	sets	%al
 	andb	%dil, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	addq	%rdx, %rsi
-	cmpq	$3, %rsi
-	sete	%al
-	andb	%dil, %al
-	retq
 func0000000000000044:                   # @func0000000000000044
 	addq	%rdx, %rsi
 	movabsq	$1000000000000000001, %rax      # imm = 0xDE0B6B3A7640001

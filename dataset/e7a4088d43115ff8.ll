@@ -14,9 +14,10 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/absOldSim.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/exorUtil.c.ll
 ; abc/optimized/extraBddKmap.c.ll

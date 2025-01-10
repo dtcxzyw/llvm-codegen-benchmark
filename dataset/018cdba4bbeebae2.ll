@@ -1,12 +1,9 @@
 
-; 9 occurrences:
+; 6 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
-; lvgl/optimized/lv_style.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; raylib/optimized/raudio.c.ll
 ; ruby/optimized/compile.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -170,16 +167,6 @@ entry:
   %3 = and i64 %2, 8589934584
   %4 = icmp samesign ugt i64 %3, 8160
   ret i1 %4
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0) #0 {
-entry:
-  %1 = icmp ne i32 %0, 0
-  ret i1 %1
 }
 
 attributes #0 = { nounwind }

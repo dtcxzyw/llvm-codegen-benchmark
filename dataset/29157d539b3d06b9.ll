@@ -1,5 +1,5 @@
 
-%"class.mold::LittleEndian.2637079" = type { [4 x i8] }
+%"class.mold::LittleEndian.2637046" = type { [4 x i8] }
 
 ; 4 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -47,7 +47,7 @@ entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2637079", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2637046", ptr %5, i64 %4
   ret ptr %6
 }
 

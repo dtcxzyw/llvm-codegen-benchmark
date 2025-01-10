@@ -205,11 +205,12 @@ entry:
   ret i16 %3
 }
 
-; 62 occurrences:
+; 64 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -267,6 +268,7 @@ entry:
 ; wireshark/optimized/packet-osi.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {

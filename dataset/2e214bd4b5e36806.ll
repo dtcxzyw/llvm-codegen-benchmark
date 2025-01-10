@@ -158,7 +158,7 @@ entry:
   ret i1 %4
 }
 
-; 128 occurrences:
+; 126 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
@@ -176,7 +176,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/vector_hash.cpp.ll
-; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
@@ -256,7 +255,6 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; rocksdb/optimized/block_cache_tier.cc.ll
-; slurm/optimized/gres_select_util.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; spike/optimized/vmv1r_v.ll
 ; spike/optimized/vmv2r_v.ll
@@ -1021,10 +1019,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; gromacs/optimized/genconf.cpp.ll
-; slurm/optimized/gres_sched.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {

@@ -7,9 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$64, %rax
 	setb	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
-	xorl	%eax, %eax
-	retq
 func00000000000001f4:                   # @func00000000000001f4
 	imulq	$1103515245, %rdi, %rax         # imm = 0x41C64E6D
 	addq	$12345, %rax                    # imm = 0x3039

@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff-common.cc.ll
@@ -12,6 +13,7 @@
 ; openjdk/optimized/hb-set.ll
 ; qemu/optimized/fdt_ro.c.ll
 ; spike/optimized/fdt_ro.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

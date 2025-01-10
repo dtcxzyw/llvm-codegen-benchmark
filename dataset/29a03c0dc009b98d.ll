@@ -10,14 +10,15 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; hwloc/optimized/bitmap.ll
 ; linux/optimized/xarray.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or i64 %0, %1
+  %2 = or i64 %1, %0
   %3 = icmp eq i64 %0, %2
   ret i1 %3
 }

@@ -14,18 +14,6 @@ entry:
 }
 
 ; 2 occurrences:
-; cpython/optimized/longobject.ll
-; rocksdb/optimized/replayer_impl.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %2, 1000
-  %4 = add nsw i64 %3, %1
-  %5 = icmp sle i64 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; minetest/optimized/guiChatConsole.cpp.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
@@ -71,6 +59,18 @@ entry:
   %4 = add nsw i64 %3, %1
   %5 = sub nsw i64 %4, %0
   %6 = icmp sgt i64 %5, 1024
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002a6(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 30
+  %4 = add nsw i64 %3, %1
+  %5 = sub nsw i64 %4, %0
+  %6 = icmp slt i64 %5, -1075
   ret i1 %6
 }
 

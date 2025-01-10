@@ -33,7 +33,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lief/optimized/psa_crypto.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll

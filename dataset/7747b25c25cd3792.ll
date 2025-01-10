@@ -1,5 +1,5 @@
 
-%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
+%struct.dx_map_entry.3547978 = type { i32, i16, i16 }
 
 ; 3 occurrences:
 ; lz4/optimized/lz4.c.ll
@@ -25,7 +25,7 @@ entry:
   %4 = select i1 %3, i32 11, i32 %1
   %5 = zext nneg i32 %4 to i64
   %6 = sub nsw i64 0, %5
-  %7 = getelementptr %struct.dx_map_entry.3548012, ptr %0, i64 %6
+  %7 = getelementptr %struct.dx_map_entry.3547978, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -7,9 +7,9 @@ func0000000000000007:                   // @func0000000000000007
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmn	w1, #1
+	cmp	w1, #3
 	csel	w8, wzr, w1, eq
-	add	x0, x0, w8, sxtw
+	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028

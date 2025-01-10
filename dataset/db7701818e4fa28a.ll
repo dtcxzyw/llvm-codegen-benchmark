@@ -186,17 +186,6 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; fmt/optimized/format-impl-test.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(i64 %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = sext i8 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
-  ret ptr %5
-}
-
 ; 2 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; arrow/optimized/builder.cc.ll
@@ -209,8 +198,9 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; icu/optimized/ucnv_lmb.ll
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i8 %2) #0 {
@@ -229,17 +219,6 @@ entry:
   %3 = sext i8 %2 to i64
   %4 = getelementptr [5 x i16], ptr %1, i64 %3
   %5 = getelementptr nusw nuw i16, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 1 occurrences:
-; icu/optimized/ucnv_lmb.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = sext i8 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

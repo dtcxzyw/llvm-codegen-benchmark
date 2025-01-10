@@ -1,13 +1,13 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = lshr i64 %5, 12
   ret i64 %6

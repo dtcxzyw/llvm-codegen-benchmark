@@ -23,3 +23,8 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	addl	%edx, %esi
+	cmpl	%esi, %edi
+	setg	%al
+	retq

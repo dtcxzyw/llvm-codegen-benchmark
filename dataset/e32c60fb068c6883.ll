@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ivyTable.c.ll
 ; git/optimized/read-cache.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
-; lua/optimized/ldebug.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/accum.cpp.ll
 ; opencv/optimized/arithm.cpp.ll

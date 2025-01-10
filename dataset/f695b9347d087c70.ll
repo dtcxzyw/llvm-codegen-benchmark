@@ -1,12 +1,12 @@
 
-%struct.page.3544300 = type { i64, %union.anon.4.3544301, %union.anon.12.3544302, %struct.atomic_t.3544262, [8 x i8] }
-%union.anon.4.3544301 = type { %struct.anon.5.3544303 }
-%struct.anon.5.3544303 = type { %union.anon.6.3544304, ptr, %union.anon.8.3544305, i64 }
-%union.anon.6.3544304 = type { %struct.list_head.3544269 }
-%struct.list_head.3544269 = type { ptr, ptr }
-%union.anon.8.3544305 = type { i64 }
-%union.anon.12.3544302 = type { %struct.atomic_t.3544262 }
-%struct.atomic_t.3544262 = type { i32 }
+%struct.page.3544266 = type { i64, %union.anon.4.3544267, %union.anon.12.3544268, %struct.atomic_t.3544228, [8 x i8] }
+%union.anon.4.3544267 = type { %struct.anon.5.3544269 }
+%struct.anon.5.3544269 = type { %union.anon.6.3544270, ptr, %union.anon.8.3544271, i64 }
+%union.anon.6.3544270 = type { %struct.list_head.3544235 }
+%struct.list_head.3544235 = type { ptr, ptr }
+%union.anon.8.3544271 = type { i64 }
+%union.anon.12.3544268 = type { %struct.atomic_t.3544228 }
+%struct.atomic_t.3544228 = type { i32 }
 
 ; 40 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
@@ -68,7 +68,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4503599627369984
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 %1)
-  %5 = getelementptr %struct.page.3544300, ptr %0, i64 %4
+  %5 = getelementptr %struct.page.3544266, ptr %0, i64 %4
   ret ptr %5
 }
 

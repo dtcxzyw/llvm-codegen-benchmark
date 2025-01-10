@@ -14,3 +14,11 @@ func0000000000000072:                   # @func0000000000000072
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func0000000000000052:                   # @func0000000000000052
+	slli	a2, a2, 48
+	add	a0, a0, a1
+	li	a1, 1023
+	add	a0, a0, a2
+	slli	a1, a1, 52
+	add	a0, a0, a1
+	ret

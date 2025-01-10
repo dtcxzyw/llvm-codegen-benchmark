@@ -564,6 +564,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = icmp ne i64 %3, 3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; freetype/optimized/pfr.c.ll

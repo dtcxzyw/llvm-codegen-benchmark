@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; minetest/optimized/treegen.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1
-  %3 = or disjoint i32 %2, -6
-  %4 = icmp sgt i32 %3, %0
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; openjdk/optimized/jquant2.ll

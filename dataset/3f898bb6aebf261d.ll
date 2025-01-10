@@ -1,6 +1,6 @@
 
-%struct.ractor_newobj_size_pool_cache.2601051 = type { ptr, ptr }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%struct.ractor_newobj_size_pool_cache.2601018 = type { ptr, ptr }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
 
 ; 6257 occurrences:
 ; abc/optimized/Glucose.cpp.ll
@@ -10163,7 +10163,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 80
-  %3 = getelementptr [5 x %struct.ractor_newobj_size_pool_cache.2601051], ptr %2, i64 0, i64 %0
+  %3 = getelementptr [5 x %struct.ractor_newobj_size_pool_cache.2601018], ptr %2, i64 0, i64 %0
   ret ptr %3
 }
 
@@ -10289,7 +10289,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -112
-  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %2, i64 0, i64 %0
   ret ptr %3
 }
 

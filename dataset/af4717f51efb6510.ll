@@ -1,8 +1,8 @@
 
-%struct.pmp_entry_t.2710180 = type { i64, i8 }
-%"struct.CFF::number_t.2735326" = type { double }
-%struct.BEValue.2748051 = type { i8, i32, ptr, ptr, ptr }
-%struct.intel_wm_level.3545524 = type { i8, i32, i32, i32, i32 }
+%struct.pmp_entry_t.2710146 = type { i64, i8 }
+%"struct.CFF::number_t.2735292" = type { double }
+%struct.BEValue.2748017 = type { i8, i32, ptr, ptr, ptr }
+%struct.intel_wm_level.3545490 = type { i8, i32, i32, i32, i32 }
 
 ; 5 occurrences:
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
@@ -28,7 +28,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [16 x %struct.pmp_entry_t.2710146], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -46,7 +46,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2735326"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2735292"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -84,7 +84,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw [256 x %struct.BEValue.2748051], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [256 x %struct.BEValue.2748017], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -159,7 +159,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [5 x %struct.intel_wm_level.3545524], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [5 x %struct.intel_wm_level.3545490], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

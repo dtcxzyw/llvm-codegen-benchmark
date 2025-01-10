@@ -169,6 +169,18 @@ entry:
 }
 
 ; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000029(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 -7
+  %4 = icmp uge ptr %0, %3
+  %5 = icmp eq i64 %1, 4
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {

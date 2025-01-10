@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -28,7 +28,6 @@
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/OMPContext.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/Linter.cpp.ll

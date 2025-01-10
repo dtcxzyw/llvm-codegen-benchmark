@@ -97,8 +97,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; proj/optimized/grids.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0, double %1) #0 {
@@ -188,8 +187,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; lightgbm/optimized/tree.cpp.ll
+; proj/optimized/grids.cpp.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll

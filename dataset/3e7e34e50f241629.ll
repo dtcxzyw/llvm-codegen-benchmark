@@ -1,6 +1,6 @@
 
-%union.qoi_rgba_t.2729473 = type { i32 }
-%"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.2963020" = type { i64, i64 }
+%union.qoi_rgba_t.2729439 = type { i32 }
+%"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.2962986" = type { i64, i64 }
 
 ; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 11
   %4 = add nuw nsw i64 %1, %3
   %5 = and i64 %4, 63
-  %6 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729473], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729439], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = mul nsw i64 %2, 5
   %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 127
-  %6 = getelementptr nusw nuw [128 x %"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.2963020"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [128 x %"struct.duckdb_jaro_winkler::common::BitvectorHashmap::MapElem.2962986"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.quad	3471480559860788781             # 0x302d2d2d2f2d2e2d
+	.quad	3458764514609081901             # 0x300000002f002e2d
 func0000000000000008:                   # @func0000000000000008
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
-	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [3471480559860788781,3471480559860788781,3471480559860788781,3471480559860788781]
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1   # ymm1 = [3458764514609081901,3458764514609081901,3458764514609081901,3458764514609081901]
 	vpsrlvq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
 	vzeroupper

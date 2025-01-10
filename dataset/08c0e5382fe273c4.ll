@@ -1,8 +1,8 @@
 
-%"struct.re2::DFA::StartInfo.2601902" = type { %"struct.std::atomic.6.2601890" }
-%"struct.std::atomic.6.2601890" = type { %"struct.std::__atomic_base.7.2601891" }
-%"struct.std::__atomic_base.7.2601891" = type { ptr }
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"struct.re2::DFA::StartInfo.2601869" = type { %"struct.std::atomic.6.2601857" }
+%"struct.std::atomic.6.2601857" = type { %"struct.std::__atomic_base.7.2601858" }
+%"struct.std::__atomic_base.7.2601858" = type { ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 53 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -62,7 +62,7 @@
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = getelementptr nusw nuw [8 x %"struct.re2::DFA::StartInfo.2601902"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x %"struct.re2::DFA::StartInfo.2601869"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -89,7 +89,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [512 x %struct.TCGTemp.2707191], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

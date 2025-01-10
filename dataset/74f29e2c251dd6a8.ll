@@ -11,19 +11,14 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 14 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; icu/optimized/number_grouping.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/nls_base.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; spike/optimized/kcras16.ll
 ; spike/optimized/kcrsa16.ll
 ; spike/optimized/kstas16.ll

@@ -1,10 +1,10 @@
 
-%struct.qht_bucket.2708813 = type { %struct.QemuSpin.2708814, %struct.QemuSeqLock.2708815, [4 x i32], [4 x ptr], ptr }
-%struct.QemuSpin.2708814 = type { i32 }
-%struct.QemuSeqLock.2708815 = type { i32 }
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%struct.code.3539872 = type { i8, i8, i16 }
-%struct.code.3859912 = type { i8, i8, i16 }
+%struct.qht_bucket.2708779 = type { %struct.QemuSpin.2708780, %struct.QemuSeqLock.2708781, [4 x i32], [4 x ptr], ptr }
+%struct.QemuSpin.2708780 = type { i32 }
+%struct.QemuSeqLock.2708781 = type { i32 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%struct.code.3539838 = type { i8, i8, i16 }
+%struct.code.3859862 = type { i8, i8, i16 }
 
 ; 2 occurrences:
 ; linux/optimized/namei.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr %struct.qht_bucket.2708813, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.qht_bucket.2708779, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -49,7 +49,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -61,7 +61,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr %struct.code.3539872, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct.code.3539838, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -72,7 +72,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr nuw %struct.code.3859912, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.code.3859862, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

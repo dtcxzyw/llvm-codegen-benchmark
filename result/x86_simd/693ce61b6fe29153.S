@@ -427,13 +427,3 @@ func00000000000018c8:                   # @func00000000000018c8
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI38_0:
-	.long	254                             # 0xfe
-func000000000000294c:                   # @func000000000000294c
-	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	.LCPI38_0(%rip){1to8}, %ymm1, %k0
-	vptestmd	%ymm0, %ymm0, %k1
-	korb	%k1, %k0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

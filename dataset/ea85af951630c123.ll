@@ -72,9 +72,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openusd/optimized/detokenize.c.ll
-; openusd/optimized/reconintra.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -84,7 +83,8 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openusd/optimized/reconintra.c.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-%"class.std::__1::shared_ptr.24.3843661" = type { ptr, ptr }
+%"class.std::__1::shared_ptr.24.3843611" = type { ptr, ptr }
 
 ; 36 occurrences:
 ; boost/optimized/args_cmd.ll
@@ -69,7 +69,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %"class.std::__1::shared_ptr.24.3843661", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.std::__1::shared_ptr.24.3843611", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

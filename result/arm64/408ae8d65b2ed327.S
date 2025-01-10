@@ -8,3 +8,12 @@ func000000000000000e:                   // @func000000000000000e
 	and	x0, x0, x8
 	ret
                                         // -- End function
+func000000000000000f:                   // @func000000000000000f
+// %bb.0:                               // %entry
+	cmp	w2, #0
+	mov	w8, #1                          // =0x1
+	csel	w9, wzr, w1, eq
+	lsl	x8, x8, x9
+	and	x0, x8, x0
+	ret
+                                        // -- End function

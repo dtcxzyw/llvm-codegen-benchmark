@@ -27,7 +27,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; grpc/optimized/posix_endpoint.cc.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {

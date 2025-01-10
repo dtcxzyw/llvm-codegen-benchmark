@@ -60,11 +60,11 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %5 = getelementptr nusw i32, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   %7 = getelementptr i32, ptr %6, i64 %0
   ret ptr %7

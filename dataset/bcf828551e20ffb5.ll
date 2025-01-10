@@ -45,8 +45,7 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; llvm/optimized/AArch64CallingConvention.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll

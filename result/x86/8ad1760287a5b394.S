@@ -4,12 +4,6 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	$10, %eax
-	subl	%esi, %eax
-	cltq
-	addq	%rdi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	shlq	$32, %rsi
 	movabsq	$4294967296, %rax               # imm = 0x100000000
@@ -17,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	sarq	$30, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000002:                   # @func0000000000000002
 	shlq	$30, %rsi
 	movabsq	$171798691840, %rax             # imm = 0x2800000000
 	subq	%rsi, %rax

@@ -1290,7 +1290,7 @@ entry:
   ret i64 %5
 }
 
-; 3045 occurrences:
+; 3048 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauDsd.c.ll
@@ -1383,6 +1383,7 @@ entry:
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/spawn.ll
 ; boost/optimized/start_dir.ll
+; boost/optimized/static_string.ll
 ; boost/optimized/sub_launcher.ll
 ; boost/optimized/system_test1.ll
 ; boost/optimized/system_test2.ll
@@ -1720,6 +1721,7 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; git/optimized/urlmatch.ll
 ; git/optimized/ws.ll
+; git/optimized/xutils.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -3717,6 +3719,7 @@ entry:
 ; rocksdb/optimized/ldb_cmd.cc.ll
 ; rocksdb/optimized/memtable_list.cc.ll
 ; rocksdb/optimized/options_helper.cc.ll
+; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/range_tree_lock_manager.cc.ll
@@ -4345,7 +4348,7 @@ entry:
   ret i64 %5
 }
 
-; 828 occurrences:
+; 827 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -4568,7 +4571,6 @@ entry:
 ; git/optimized/replace.ll
 ; git/optimized/urlmatch.ll
 ; git/optimized/xdiff-interface.ll
-; git/optimized/xutils.ll
 ; grpc/optimized/event_log.cc.ll
 ; grpc/optimized/ring_hash.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

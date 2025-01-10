@@ -178,11 +178,11 @@ func000000000000046c:                   # @func000000000000046c
 	.quad	16383                           # 0x3fff
 .LCPI16_1:
 	.quad	3                               # 0x3
-func0000000000000861:                   # @func0000000000000861
+func000000000000086c:                   # @func000000000000086c
 	vpcmpnleuq	.LCPI16_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpeqq	.LCPI16_1(%rip){1to4}, %ymm0, %k0
+	vpcmpneqq	.LCPI16_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

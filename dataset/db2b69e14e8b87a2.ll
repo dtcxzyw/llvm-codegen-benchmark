@@ -474,7 +474,7 @@ entry:
   ret i1 %3
 }
 
-; 1353 occurrences:
+; 1352 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/demangle.cc.ll
@@ -715,7 +715,6 @@ entry:
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; cvc5/optimized/theory_datatypes.cpp.ll
-; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
@@ -4716,7 +4715,7 @@ entry:
   ret i1 %3
 }
 
-; 777 occurrences:
+; 778 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/extraUtilMacc.c.ll
@@ -5127,6 +5126,7 @@ entry:
 ; llvm/optimized/MachineOutliner.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/RemarkParser.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
@@ -6045,7 +6045,7 @@ entry:
   ret i1 %3
 }
 
-; 91 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; arrow/optimized/type.cc.ll
 ; boost/optimized/url_base.ll
@@ -6059,6 +6059,7 @@ entry:
 ; coreutils-rs/optimized/587j0fb2c03kybfp.ll
 ; coreutils-rs/optimized/e91jxawjj55dy9t.ll
 ; coreutils-rs/optimized/zwic7u1s3rhxg4g.ll
+; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
 ; duckdb/optimized/boolean_operators.cpp.ll

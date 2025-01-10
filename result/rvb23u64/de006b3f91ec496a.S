@@ -1,9 +1,3 @@
-func00000000000003aa:                   # @func00000000000003aa
-	srli	a1, a1, 1
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	xori	a0, a0, 1
-	ret
 func0000000000000126:                   # @func0000000000000126
 	srli	a1, a1, 32
 	addw	a0, a0, a1

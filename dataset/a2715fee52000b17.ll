@@ -13,8 +13,7 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; linux/optimized/gup.ll
+; 3 occurrences:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

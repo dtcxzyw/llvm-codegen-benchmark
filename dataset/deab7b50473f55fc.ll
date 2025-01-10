@@ -1,6 +1,6 @@
 
-%"class.clang::SourceLocation.3309293" = type { i32 }
-%"class.cvc5::internal::NodeTemplate.3580154" = type { ptr }
+%"class.clang::SourceLocation.3309259" = type { i32 }
+%"class.cvc5::internal::NodeTemplate.3580120" = type { ptr }
 
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %4 = and i32 %3, 1
   %5 = add nuw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3309293", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3309259", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -37,7 +37,7 @@ entry:
   %4 = and i32 %3, 1
   %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3580154", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3580120", ptr %0, i64 %6
   ret ptr %7
 }
 

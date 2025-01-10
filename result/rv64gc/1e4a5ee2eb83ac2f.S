@@ -7,9 +7,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	add	a0, a0, a1
 	srai	a0, a0, 1
 	ret
-func0000000000000082:                   # @func0000000000000082
-	slli	a2, a2, 2
-	slli	a1, a1, 1
+func0000000000000020:                   # @func0000000000000020
+	slli	a2, a2, 1
+	slli	a1, a1, 2
 	add	a1, a1, a2
 	sub	a0, a0, a1
 	srli	a1, a0, 63

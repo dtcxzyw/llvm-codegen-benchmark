@@ -1,6 +1,6 @@
 
-%struct.hb_bit_page_t.2733381 = type { i32, %struct.hb_vector_size_t.2733382 }
-%struct.hb_vector_size_t.2733382 = type { [8 x i64] }
+%struct.hb_bit_page_t.2733347 = type { i32, %struct.hb_vector_size_t.2733348 }
+%struct.hb_vector_size_t.2733348 = type { [8 x i64] }
 
 ; 13 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -20,7 +20,7 @@
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733381, ptr %1, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733347, ptr %1, i64 %3, i32 1
   %5 = getelementptr nusw nuw [8 x i64], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

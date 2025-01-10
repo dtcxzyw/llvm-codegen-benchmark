@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -59,7 +59,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -24
-  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3181429", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

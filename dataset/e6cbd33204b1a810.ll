@@ -1,6 +1,7 @@
 
-; 815 occurrences:
+; 818 occurrences:
 ; abc/optimized/abcPrint.c.ll
+; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -225,6 +226,7 @@
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/pcy_tree.c.ll
 ; libquic/optimized/quic_session.cc.ll
+; libquic/optimized/simple.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/audit_tree.ll
@@ -493,6 +495,7 @@
 ; qemu/optimized/system_vl.c.ll
 ; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
 ; qemu/optimized/trace_control.c.ll
+; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll

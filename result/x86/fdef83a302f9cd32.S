@@ -13,13 +13,6 @@ func000000000000001a:                   # @func000000000000001a
 	cltq
 	addq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovel	%esi, %eax
-	cltq
-	addq	%rdi, %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	$2, %edx

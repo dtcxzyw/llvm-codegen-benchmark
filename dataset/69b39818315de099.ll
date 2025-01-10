@@ -1,6 +1,6 @@
 
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 3 occurrences:
 ; hermes/optimized/DictPropertyMap.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794548, ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }

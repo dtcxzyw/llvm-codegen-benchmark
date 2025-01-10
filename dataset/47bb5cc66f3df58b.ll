@@ -1,5 +1,5 @@
 
-; 729 occurrences:
+; 728 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -654,7 +654,6 @@
 ; spike/optimized/socketif.ll
 ; spike/optimized/triggers.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; stockfish/optimized/search.ll
 ; tev/optimized/Image.cpp.ll

@@ -1,8 +1,8 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
 
 ; 82 occurrences:
 ; abc/optimized/blocksort.c.ll
@@ -90,8 +90,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %1
-  %4 = getelementptr %union.YYSTYPE.2600710, ptr %3, i64 %2
+  %3 = getelementptr %union.yyalloc.2600678, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.2600677, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -118,7 +118,7 @@ entry:
   ret ptr %5
 }
 
-; 860 occurrences:
+; 861 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -772,6 +772,7 @@ entry:
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
@@ -982,13 +983,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %1
-  %4 = getelementptr %union.YYSTYPE.2601679, ptr %3, i64 %2
+  %3 = getelementptr nusw %union.yyalloc.2601647, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.2601646, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
-; 676 occurrences:
+; 675 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -1442,7 +1443,6 @@ entry:
 ; openusd/optimized/matrix4f.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
@@ -1689,7 +1689,7 @@ entry:
   ret ptr %5
 }
 
-; 161 occurrences:
+; 160 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/thread_pool.cc.ll
@@ -1815,7 +1815,6 @@ entry:
 ; openusd/optimized/copyUtils.cpp.ll
 ; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
 ; openusd/optimized/extComputationUtils.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -1920,7 +1919,7 @@ entry:
   ret ptr %5
 }
 
-; 247 occurrences:
+; 248 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acbPush.c.ll
@@ -2156,6 +2155,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/scale_common.c.ll
 ; php/optimized/ir.ll
 ; protobuf/optimized/parser.cc.ll
@@ -2511,7 +2511,7 @@ entry:
   ret ptr %5
 }
 
-; 52 occurrences:
+; 56 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -2525,6 +2525,8 @@ entry:
 ; linux/optimized/reg.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgejsv.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgtrfs.c.ll
 ; openblas/optimized/dgtts2.c.ll
@@ -2538,6 +2540,8 @@ entry:
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsyequb.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
@@ -2717,9 +2721,8 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; darktable/optimized/introspection_zonesystem.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -2732,8 +2735,9 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
 ; gromacs/optimized/dlansy.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll

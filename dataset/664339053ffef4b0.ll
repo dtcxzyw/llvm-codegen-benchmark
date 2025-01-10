@@ -1,5 +1,5 @@
 
-; 578 occurrences:
+; 577 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -83,7 +83,6 @@
 ; jq/optimized/jv_dtoa.ll
 ; jq/optimized/main.ll
 ; libevent/optimized/bufferevent_openssl.c.ll
-; libevent/optimized/event.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngwrite.c.ll

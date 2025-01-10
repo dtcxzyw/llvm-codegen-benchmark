@@ -11,7 +11,8 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; darktable/optimized/introspection_bilateral.cc.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -26,7 +27,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }
 

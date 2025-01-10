@@ -14,7 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -42,6 +42,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; openjdk/optimized/ifg.ll
 ; slurm/optimized/dist_tasks.ll
 ; wireshark/optimized/packet-ipx.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll

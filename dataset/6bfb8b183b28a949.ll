@@ -23,10 +23,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001a6(i64 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -18,7 +18,6 @@
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll

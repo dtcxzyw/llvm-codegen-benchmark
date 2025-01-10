@@ -1,11 +1,10 @@
 
-; 265 occurrences:
+; 262 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/aigJust.c.ll
-; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -29,10 +28,12 @@
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/archive_options.c.ll
 ; cmake/optimized/ftp.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; curl/optimized/libcurl_la-ftp.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; cvc5/optimized/cegis_unif.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; flac/optimized/format.c.ll
@@ -92,7 +93,6 @@
 ; linux/optimized/svclock.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/uncore_snb.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/waitq.ll
@@ -112,14 +112,12 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/EHPersonalities.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
@@ -127,7 +125,6 @@
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
-; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll

@@ -5036,7 +5036,7 @@ entry:
   ret i64 %4
 }
 
-; 301 occurrences:
+; 302 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/pdrSat.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
@@ -5307,6 +5307,7 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f16_sqrt.ll
 ; sqlite/optimized/sqlite3.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
@@ -5346,7 +5347,7 @@ entry:
   ret i64 %4
 }
 
-; 680 occurrences:
+; 679 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -5445,7 +5446,6 @@ entry:
 ; cpython/optimized/ast_unparse.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesobject.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/unicodeobject.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; csmith/optimized/CVQualifiers.cpp.ll

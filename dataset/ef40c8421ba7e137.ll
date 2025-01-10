@@ -1,9 +1,9 @@
 
-%"struct.re2::RuneRange.2602074" = type { i32, i32 }
-%struct.tcaches_s.3660910 = type { %union.anon.16.3660911 }
-%union.anon.16.3660911 = type { ptr }
-%struct.lua_TValue.3660943 = type { %union.Value.3660945, i32 }
-%union.Value.3660945 = type { ptr }
+%"struct.re2::RuneRange.2602041" = type { i32, i32 }
+%struct.tcaches_s.3660860 = type { %union.anon.16.3660861 }
+%union.anon.16.3660861 = type { ptr }
+%struct.lua_TValue.3660893 = type { %union.Value.3660895, i32 }
+%union.Value.3660895 = type { ptr }
 
 ; 27 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
@@ -38,7 +38,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"struct.re2::RuneRange.2602074", ptr %0, i64 %3
+  %4 = getelementptr %"struct.re2::RuneRange.2602041", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -182,7 +182,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.tcaches_s.3660910, ptr %0, i64 %3
+  %4 = getelementptr %struct.tcaches_s.3660860, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -195,7 +195,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.3660943, ptr %0, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3660893, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

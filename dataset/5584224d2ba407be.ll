@@ -24,12 +24,14 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/compress.c.ll
 ; llvm/optimized/PtrState.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

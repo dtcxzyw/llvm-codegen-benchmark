@@ -1,23 +1,23 @@
 
-%struct.OnigCaseFoldCodeItem.2600851 = type { i32, i32, [3 x i32] }
-%"struct.rocksdb::HistogramStat.2625928" = type { %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", [109 x %"struct.std::atomic.2625929"], i64 }
-%"struct.std::atomic.2625929" = type { %"struct.std::__atomic_base.2625930" }
-%"struct.std::__atomic_base.2625930" = type { i64 }
-%struct.loopargs_st.2633793 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
-%struct.CalloutNameListEntry.2710291 = type { i32, i32, ptr, ptr, i32, i32, [4 x i32], [4 x %union.OnigValue.2710292], ptr }
-%union.OnigValue.2710292 = type { %struct.anon.2710293 }
-%struct.anon.2710293 = type { ptr, ptr }
-%struct.CalloutListEntry.2710294 = type { i32, i32, i32, i32, ptr, ptr, i32, ptr, ptr, %union.anon.2710295 }
-%union.anon.2710295 = type { %struct.anon.1.2710296 }
-%struct.anon.1.2710296 = type { i32, i32, [4 x i32], [4 x %union.OnigValue.2710292] }
-%struct.CalloutData.2710338 = type { i32, [5 x %struct.anon.2710339] }
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
-%struct.Lf_Bst_t_.2877719 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877720] }
-%struct.Lf_Plc_t_.2877720 = type { i32 }
-%struct.JSBinaryOperatorDefEntry.3435113 = type { i32, [14 x ptr] }
-%struct.quic_pp_cipher.3436945 = type { ptr, [12 x i8] }
+%struct.OnigCaseFoldCodeItem.2600818 = type { i32, i32, [3 x i32] }
+%"struct.rocksdb::HistogramStat.2625895" = type { %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", [109 x %"struct.std::atomic.2625896"], i64 }
+%"struct.std::atomic.2625896" = type { %"struct.std::__atomic_base.2625897" }
+%"struct.std::__atomic_base.2625897" = type { i64 }
+%struct.loopargs_st.2633760 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
+%struct.CalloutNameListEntry.2710257 = type { i32, i32, ptr, ptr, i32, i32, [4 x i32], [4 x %union.OnigValue.2710258], ptr }
+%union.OnigValue.2710258 = type { %struct.anon.2710259 }
+%struct.anon.2710259 = type { ptr, ptr }
+%struct.CalloutListEntry.2710260 = type { i32, i32, i32, i32, ptr, ptr, i32, ptr, ptr, %union.anon.2710261 }
+%union.anon.2710261 = type { %struct.anon.1.2710262 }
+%struct.anon.1.2710262 = type { i32, i32, [4 x i32], [4 x %union.OnigValue.2710258] }
+%struct.CalloutData.2710304 = type { i32, [5 x %struct.anon.2710305] }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
+%struct.Lf_Bst_t_.2877685 = type { [3 x i32], [3 x float], [2 x %struct.Lf_Plc_t_.2877686] }
+%struct.Lf_Plc_t_.2877686 = type { i32 }
+%struct.JSBinaryOperatorDefEntry.3435079 = type { i32, [14 x ptr] }
+%struct.quic_pp_cipher.3436911 = type { ptr, [12 x i8] }
 
 ; 82 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -105,7 +105,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.OnigCaseFoldCodeItem.2600851, ptr %1, i64 %2, i32 2, i64 %0
+  %3 = getelementptr %struct.OnigCaseFoldCodeItem.2600818, ptr %1, i64 %2, i32 2, i64 %0
   ret ptr %3
 }
 
@@ -396,7 +396,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::HistogramStat.2625928", ptr %1, i64 %2, i32 5, i64 %0
+  %3 = getelementptr %"struct.rocksdb::HistogramStat.2625895", ptr %1, i64 %2, i32 5, i64 %0
   ret ptr %3
 }
 
@@ -625,7 +625,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %struct.loopargs_st.2633793, ptr %1, i64 %2, i32 10, i64 %0
+  %3 = getelementptr nuw %struct.loopargs_st.2633760, ptr %1, i64 %2, i32 10, i64 %0
   ret ptr %3
 }
 
@@ -658,7 +658,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutNameListEntry.2710291, ptr %1, i64 %2, i32 6, i64 %0
+  %3 = getelementptr %struct.CalloutNameListEntry.2710257, ptr %1, i64 %2, i32 6, i64 %0
   ret ptr %3
 }
 
@@ -680,7 +680,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutListEntry.2710294, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutListEntry.2710260, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -80
   %5 = getelementptr nusw nuw [4 x i32], ptr %4, i64 0, i64 %0
   ret ptr %5
@@ -696,9 +696,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutData.2710338, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutData.2710304, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -120
-  %5 = getelementptr nusw [5 x %struct.anon.2710339], ptr %4, i64 0, i64 %0
+  %5 = getelementptr nusw [5 x %struct.anon.2710305], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -734,7 +734,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Lf_Bst_t_.2877719, ptr %1, i64 %2, i32 2, i64 %0
+  %3 = getelementptr %struct.Lf_Bst_t_.2877685, ptr %1, i64 %2, i32 2, i64 %0
   ret ptr %3
 }
 
@@ -762,7 +762,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.JSBinaryOperatorDefEntry.3435113, ptr %1, i64 %2
+  %3 = getelementptr %struct.JSBinaryOperatorDefEntry.3435079, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -112
   %5 = getelementptr [14 x ptr], ptr %4, i64 0, i64 %0
   ret ptr %5
@@ -779,7 +779,7 @@ define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
-  %5 = getelementptr [2 x %struct.quic_pp_cipher.3436945], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [2 x %struct.quic_pp_cipher.3436911], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

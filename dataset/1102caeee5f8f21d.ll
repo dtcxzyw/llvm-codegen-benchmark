@@ -1,5 +1,5 @@
 
-%struct.stbtt__edge.3063033 = type { float, float, float, float, i32 }
+%struct.stbtt__edge.3062999 = type { float, float, float, float, i32 }
 
 ; 13 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -63,7 +63,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw nuw %struct.stbtt__edge.3063033, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.stbtt__edge.3062999, ptr %0, i64 %5
   ret ptr %6
 }
 

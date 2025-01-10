@@ -42,14 +42,6 @@ func000000000000001d:                   # @func000000000000001d
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	shll	$4, %edx
-	orl	%edi, %edx
-	cmpl	$1, %esi
-	movl	$3, %eax
-	sbbl	$0, %eax
-	orl	%edx, %eax
-	retq
 func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	cmpl	$1, %edx

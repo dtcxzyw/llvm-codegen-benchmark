@@ -25,6 +25,11 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$7, %rcx
 	subq	%rcx, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	notq	%rsi
+	andq	$-16, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$7, %esi
 	subq	%rsi, %rdi
@@ -34,9 +39,4 @@ func0000000000000007:                   # @func0000000000000007
 	movq	%rdi, %rax
 	andq	$-8, %rsi
 	subq	%rsi, %rax
-	retq
-func000000000000000e:                   # @func000000000000000e
-	andl	$248, %esi
-	subq	%rsi, %rdi
-	leaq	-8(%rdi), %rax
 	retq

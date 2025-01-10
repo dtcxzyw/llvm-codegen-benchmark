@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll

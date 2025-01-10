@@ -95,8 +95,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
 ; postgres/optimized/snapmgr.ll

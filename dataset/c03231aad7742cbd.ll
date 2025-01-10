@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/gres.ll
-; slurm/optimized/gres_filter.ll
 ; velox/optimized/ExprCompiler.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind

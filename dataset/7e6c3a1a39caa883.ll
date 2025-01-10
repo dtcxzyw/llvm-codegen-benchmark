@@ -47,7 +47,7 @@ entry:
   ret i16 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; luajit/optimized/lj_ffrecord.ll
@@ -60,7 +60,6 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0) #0 {
 entry:

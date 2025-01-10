@@ -1,13 +1,13 @@
 
-%"struct.OT::Record.358.2736875" = type { %"struct.OT::Tag.2736876", %"struct.OT::OffsetTo.359.2736877" }
-%"struct.OT::Tag.2736876" = type { %"struct.OT::IntType.2736878" }
-%"struct.OT::IntType.2736878" = type { %struct.BEInt.2736879 }
-%struct.BEInt.2736879 = type { [4 x i8] }
-%"struct.OT::OffsetTo.359.2736877" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.kgid_t.3545671 = type { i32 }
+%"struct.OT::Record.358.2736841" = type { %"struct.OT::Tag.2736842", %"struct.OT::OffsetTo.359.2736843" }
+%"struct.OT::Tag.2736842" = type { %"struct.OT::IntType.2736844" }
+%"struct.OT::IntType.2736844" = type { %struct.BEInt.2736845 }
+%struct.BEInt.2736845 = type { [4 x i8] }
+%"struct.OT::OffsetTo.359.2736843" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.kgid_t.3545637 = type { i32 }
 
 ; 3 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -36,7 +36,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::Record.358.2736875"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::Record.358.2736841"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [0 x %struct.kgid_t.3545671], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [0 x %struct.kgid_t.3545637], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

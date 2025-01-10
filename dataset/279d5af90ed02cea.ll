@@ -171,11 +171,11 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
+  %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 2
-  %5 = add i64 %0, %4
+  %5 = add i64 %4, %0
   %6 = shl i64 %5, 1
   ret i64 %6
 }
@@ -202,6 +202,20 @@ entry:
   %4 = sdiv i64 %3, 64
   %5 = add nsw i64 %4, %0
   %6 = shl nuw nsw i64 %5, 3
+  ret i64 %6
+}
+
+; 3 occurrences:
+; ceres/optimized/dense_cholesky.cc.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv i64 %3, 4
+  %5 = add nsw i64 %4, %0
+  %6 = shl i64 %5, 2
   ret i64 %6
 }
 

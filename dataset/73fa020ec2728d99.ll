@@ -1,5 +1,5 @@
 
-; 1065 occurrences:
+; 1067 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -718,7 +718,9 @@
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-v3_purp.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; openssl/optimized/openssl-bin-speed.ll
 ; openusd/optimized/idct.c.ll
@@ -1073,7 +1075,7 @@ entry:
   ret i1 %2
 }
 
-; 305 occurrences:
+; 304 occurrences:
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/simUtils.c.ll
 ; c3c/optimized/diagnostics.c.ll
@@ -1097,7 +1099,6 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; icu/optimized/collationbuilder.ll
-; icu/optimized/ucnvmbcs.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/devio.ll
@@ -1387,7 +1388,7 @@ entry:
   ret i1 %2
 }
 
-; 196 occurrences:
+; 194 occurrences:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -1533,8 +1534,6 @@ entry:
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/BufImgSurfaceData.ll
 ; openjdk/optimized/jvmtiExport.ll
-; openssl/optimized/libssl-lib-quic_channel.ll
-; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; php/optimized/hash_haval.ll
 ; php/optimized/hash_md.ll

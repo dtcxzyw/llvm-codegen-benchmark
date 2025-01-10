@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::LevelFilesBrief.2615437" = type { i64, ptr }
-%"class.folly::test::DSchedTimestamp.2685533" = type { i64 }
-%"class.openvdb::v11_0::math::Vec4.114.2720400" = type { %"class.openvdb::v11_0::math::Tuple.115.2720401" }
-%"class.openvdb::v11_0::math::Tuple.115.2720401" = type { [4 x i32] }
-%struct.nbnxn_cj_t.3365531 = type { i32, i32 }
+%"struct.rocksdb::LevelFilesBrief.2615404" = type { i64, ptr }
+%"class.folly::test::DSchedTimestamp.2685500" = type { i64 }
+%"class.openvdb::v11_0::math::Vec4.114.2720366" = type { %"class.openvdb::v11_0::math::Tuple.115.2720367" }
+%"class.openvdb::v11_0::math::Tuple.115.2720367" = type { [4 x i32] }
+%struct.nbnxn_cj_t.3365497 = type { i32, i32 }
 
 ; 265 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -580,7 +580,7 @@ entry:
   %3 = ashr exact i64 %1, 4
   %4 = sub nuw i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw %"struct.rocksdb::LevelFilesBrief.2615437", ptr %5, i64 %4
+  %6 = getelementptr nusw %"struct.rocksdb::LevelFilesBrief.2615404", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -710,7 +710,7 @@ entry:
   %3 = ashr exact i64 %1, 3
   %4 = sub nuw i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.folly::test::DSchedTimestamp.2685533", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.folly::test::DSchedTimestamp.2685500", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -722,7 +722,7 @@ entry:
   %3 = ashr exact i64 %1, 4
   %4 = sub nuw i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr %"class.openvdb::v11_0::math::Vec4.114.2720400", ptr %5, i64 %4
+  %6 = getelementptr %"class.openvdb::v11_0::math::Vec4.114.2720366", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -780,7 +780,7 @@ entry:
   %3 = ashr exact i64 %1, 3
   %4 = sub nuw nsw i64 %2, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr %struct.nbnxn_cj_t.3365531, ptr %5, i64 %4
+  %6 = getelementptr %struct.nbnxn_cj_t.3365497, ptr %5, i64 %4
   ret ptr %6
 }
 

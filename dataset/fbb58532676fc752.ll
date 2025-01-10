@@ -135,9 +135,10 @@ entry:
   ret ptr %6
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; cmake/optimized/cmDocumentation.cxx.ll
+; git/optimized/xutils.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
@@ -169,8 +170,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; git/optimized/xutils.ll
+; 3 occurrences:
 ; libzmq/optimized/ctx.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
@@ -179,8 +179,8 @@ define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 1
+  %5 = getelementptr ptr, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }
 

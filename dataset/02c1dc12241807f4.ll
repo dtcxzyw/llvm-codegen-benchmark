@@ -1,4 +1,27 @@
 
+; 11 occurrences:
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; ruby/optimized/parse.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i16, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
+  %5 = getelementptr i16, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -2
+  %7 = icmp ugt ptr %6, %4
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -13,12 +36,13 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/nf_conntrack_sip.ll
+; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -55,6 +79,20 @@ entry:
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 3
   %7 = icmp ult ptr %6, %4
+  ret i1 %7
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001768(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  %7 = icmp ugt ptr %6, %4
   ret i1 %7
 }
 

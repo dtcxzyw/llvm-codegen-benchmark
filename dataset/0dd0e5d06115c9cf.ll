@@ -1,5 +1,5 @@
 
-; 354 occurrences:
+; 355 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -58,6 +58,7 @@
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/uchar.ll
 ; icu/optimized/ucptrie.ll
+; icu/optimized/uresdata.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll

@@ -1,5 +1,5 @@
 
-%"class.cv::(anonymous namespace)::ufixedpoint16.3781708" = type { i16 }
+%"class.cv::(anonymous namespace)::ufixedpoint16.3781658" = type { i16 }
 
 ; 6 occurrences:
 ; cpython/optimized/ceval.ll
@@ -383,8 +383,8 @@ define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"class.cv::(anonymous namespace)::ufixedpoint16.3781708", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781708", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.cv::(anonymous namespace)::ufixedpoint16.3781658", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781658", ptr %5, i64 %0
   ret ptr %6
 }
 

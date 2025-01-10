@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	2(%rdi), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	orq	$4095, %rdi                     # imm = 0xFFF
+	orq	$7, %rdi
 	leaq	1(%rdi), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001

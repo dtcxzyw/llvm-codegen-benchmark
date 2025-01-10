@@ -9,3 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpminsd	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000003:                   # @func0000000000000003
+	vpminsd	%ymm1, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpminsd	%ymm1, %ymm0, %ymm0
+	retq

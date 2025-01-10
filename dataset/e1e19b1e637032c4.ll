@@ -1,5 +1,5 @@
 
-%struct.prefix_code_symbol.3436898 = type { i16, i16 }
+%struct.prefix_code_symbol.3436864 = type { i16, i16 }
 
 ; 14 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -38,10 +38,10 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = getelementptr nusw nuw [258 x float], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [258 x float], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   ret ptr %4
 }
@@ -52,7 +52,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = getelementptr [512 x %struct.prefix_code_symbol.3436898], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [512 x %struct.prefix_code_symbol.3436864], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

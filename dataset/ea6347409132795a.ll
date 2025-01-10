@@ -560,7 +560,7 @@ entry:
   ret i32 %3
 }
 
-; 1273 occurrences:
+; 1272 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -714,7 +714,6 @@ entry:
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/packlibs.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/unsp.c.ll
 ; clamav/optimized/upack.c.ll
@@ -1000,6 +999,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_backlight.ll
+; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_cx0_phy.ll
@@ -1743,7 +1743,6 @@ entry:
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
-; yosys/optimized/ezsat.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/jsonparse.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
@@ -2153,7 +2152,7 @@ entry:
   ret i32 %3
 }
 
-; 2492 occurrences:
+; 2491 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -3025,7 +3024,6 @@ entry:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
@@ -4722,7 +4720,7 @@ entry:
   ret i32 %3
 }
 
-; 926 occurrences:
+; 923 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -4905,8 +4903,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -5458,7 +5454,6 @@ entry:
 ; rust-analyzer-rs/optimized/557t1ercvtihjjps.ll
 ; rust-analyzer-rs/optimized/563918kfdqef84tz.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/sim_mycpu.ll
@@ -5657,7 +5652,7 @@ entry:
   ret i32 %3
 }
 
-; 321 occurrences:
+; 322 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -5978,6 +5973,7 @@ entry:
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; yosys/optimized/Solver.ll
+; yosys/optimized/ezsat.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

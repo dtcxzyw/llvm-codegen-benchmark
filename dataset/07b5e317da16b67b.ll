@@ -39,4 +39,26 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; wireshark/optimized/packet-dof.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp slt i8 %1, 0
+  %3 = select i1 %2, i8 %0, i8 %1
+  %4 = zext nneg i8 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-btbredr_rf.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp slt i8 %1, 0
+  %3 = select i1 %2, i8 %0, i8 %1
+  %4 = zext i8 %3 to i32
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

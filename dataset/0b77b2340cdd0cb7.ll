@@ -1,11 +1,11 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
-%"class.std::__cxx11::basic_string.2800706" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800708", i64, %union.anon.2800709 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800708" = type { ptr }
-%union.anon.2800709 = type { i64, [8 x i8] }
-%class.aiVector3t.2825657 = type { double, double, double }
-%"class.llvm::Use.3186598" = type { ptr, ptr, ptr, ptr }
-%struct.stbir__contributors.3790120 = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
+%"class.std::__cxx11::basic_string.2800672" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800674", i64, %union.anon.2800675 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800674" = type { ptr }
+%union.anon.2800675 = type { i64, [8 x i8] }
+%class.aiVector3t.2825623 = type { double, double, double }
+%"class.llvm::Use.3186564" = type { ptr, ptr, ptr, ptr }
+%struct.stbir__contributors.3790070 = type { i32, i32 }
 
 ; 17 occurrences:
 ; clamav/optimized/pdf.c.ll
@@ -310,14 +310,13 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %1
+  %2 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %1
   %3 = getelementptr nusw i8, ptr %2, i64 -8
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
-; 4 occurrences:
-; clamav/optimized/extinfo.cpp.ll
+; 3 occurrences:
 ; git/optimized/packed-backend.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; proj/optimized/horner.cpp.ll
@@ -330,11 +329,12 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; clamav/optimized/mbox.c.ll
 ; freetype/optimized/ftbase.c.ll
@@ -375,10 +375,9 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; git/optimized/diff-delta.ll
 ; hyperscan/optimized/Parser.cpp.ll
@@ -409,7 +408,8 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; clamav/optimized/extinfo.cpp.ll
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/openioc.c.ll
 ; git/optimized/credential.ll
@@ -434,7 +434,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c1(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2800706", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2800672", ptr %0, i64 %1
   %3 = getelementptr nusw i8, ptr %2, i64 -32
   %4 = icmp eq ptr %3, %0
   ret i1 %4
@@ -449,7 +449,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000164(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %class.aiVector3t.2825657, ptr %0, i64 %1
+  %2 = getelementptr nusw %class.aiVector3t.2825623, ptr %0, i64 %1
   %3 = getelementptr nusw nuw i8, ptr %2, i64 24
   %4 = icmp ult ptr %3, %0
   ret i1 %4
@@ -590,7 +590,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000010c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"class.llvm::Use.3186598", ptr %0, i64 %1
+  %2 = getelementptr nusw %"class.llvm::Use.3186564", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 64
   %4 = icmp ne ptr %3, %0
   ret i1 %4
@@ -612,7 +612,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000149(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.stbir__contributors.3790120, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct.stbir__contributors.3790070, ptr %0, i64 %1
   %3 = getelementptr nusw i8, ptr %2, i64 -8
   %4 = icmp uge ptr %3, %0
   ret i1 %4

@@ -87,12 +87,13 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036a(i64 %0) #0 {
+define i1 @func000000000000016a(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 1
+  %1 = icmp sgt i64 %0, 1
   ret i1 %1
 }
 
@@ -146,24 +147,6 @@ entry:
   %2 = add i64 %1, 4294967296
   %3 = icmp slt i64 %2, 0
   ret i1 %3
-}
-
-; 1 occurrences:
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0) #0 {
-entry:
-  %1 = icmp sgt i64 %0, 1
-  ret i1 %1
-}
-
-; 1 occurrences:
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000034a(i64 %0) #0 {
-entry:
-  %1 = icmp ugt i64 %0, 5
-  ret i1 %1
 }
 
 ; 2 occurrences:

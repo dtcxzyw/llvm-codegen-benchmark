@@ -595,8 +595,9 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; libevent/optimized/event.c.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind

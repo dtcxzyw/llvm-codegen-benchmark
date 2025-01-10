@@ -39,7 +39,8 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind

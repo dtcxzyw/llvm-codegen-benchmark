@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076269" = type { %"class.hermes::vm::HermesValue32.3076270" }
-%"class.hermes::vm::HermesValue32.3076270" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076235" = type { %"class.hermes::vm::HermesValue32.3076236" }
+%"class.hermes::vm::HermesValue32.3076236" = type { i32 }
 
 ; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -46,7 +46,7 @@ define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967291
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076269", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076235", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

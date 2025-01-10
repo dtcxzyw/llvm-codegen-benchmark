@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/mmp.ll
 ; linux/optimized/nlattr.ll
 ; php/optimized/pcre2_substitute.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {

@@ -8,6 +8,13 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a1, a1, 1
 	sh2add.uw	a0, a1, a0
 	ret
+func000000000000007c:                   # @func000000000000007c
+	li	a2, 544
+	mulw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2047
+	addi	a0, a0, 129
+	ret
 func000000000000002c:                   # @func000000000000002c
 	li	a2, 544
 	mulw	a1, a1, a2
@@ -41,12 +48,6 @@ func0000000000000068:                   # @func0000000000000068
 	sh1add	a1, a1, a1
 	slli	a1, a1, 2
 	add.uw	a0, a1, a0
-	ret
-func000000000000007c:                   # @func000000000000007c
-	sh1add	a1, a1, a1
-	slliw	a1, a1, 3
-	add	a0, a0, a1
-	addi	a0, a0, 16
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sh1add	a1, a1, a1

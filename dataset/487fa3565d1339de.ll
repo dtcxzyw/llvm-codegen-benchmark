@@ -1,5 +1,5 @@
 
-; 428 occurrences:
+; 426 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcLib.c.ll
@@ -165,7 +165,6 @@
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/patternprops.ll
@@ -332,7 +331,6 @@
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; php/optimized/hash_whirlpool.ll

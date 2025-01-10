@@ -40,8 +40,8 @@ func0000000000000121:                   # @func0000000000000121
 	seqz	a0, a0
 	ret
 func0000000000000167:                   # @func0000000000000167
-	sext.w	a2, a2
-	subw	a3, a0, a1
+	sext.w	a3, a2
+	subw	a2, a0, a1
 	sext.w	a0, a0
 	bltu	a2, a3, .LBB4_2
 	mv	a2, a3

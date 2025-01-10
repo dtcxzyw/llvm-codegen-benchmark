@@ -91,24 +91,25 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI7_0:
-	.long	9                               # 0x9
-func00000000000001a6:                   # @func00000000000001a6
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	vpaddd	%ymm1, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI7_0(%rip){1to8}, %ymm0, %k1
-	korb	%k1, %k0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
 func00000000000001ec:                   # @func00000000000001ec
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddd	%ymm1, %ymm2, %ymm0
 	vptestmd	%ymm0, %ymm0, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
+	.long	40                              # 0x28
+.LCPI8_1:
+	.long	24                              # 0x18
+func00000000000001a6:                   # @func00000000000001a6
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vpaddd	%ymm1, %ymm2, %ymm0
+	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
+	vpcmpltd	.LCPI8_1(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

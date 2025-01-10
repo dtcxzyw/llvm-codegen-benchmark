@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/lzxd.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -28,7 +28,6 @@
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; qemu/optimized/monitor_hmp-cmds-target.c.ll
 ; re2/optimized/re2.cc.ll
-; ruby/optimized/io.ll
 ; slurm/optimized/cbuf.ll
 ; sqlite/optimized/sqlite3.ll
 ; zxing/optimized/BitSource.cpp.ll

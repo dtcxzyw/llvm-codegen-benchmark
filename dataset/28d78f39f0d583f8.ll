@@ -1,25 +1,25 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%struct.GC_ms_entry.2705283 = type { ptr, %union.word_ptr_ao_u.2705284 }
-%union.word_ptr_ao_u.2705284 = type { i64 }
-%"class.std::vector.112.2823556" = type { %"struct.std::_Vector_base.113.2823557" }
-%"struct.std::_Vector_base.113.2823557" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" = type { ptr, ptr, ptr }
-%"class.std::vector.96.2825723" = type { %"struct.std::_Vector_base.97.2825724" }
-%"struct.std::_Vector_base.97.2825724" = type { %"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl.2825725" }
-%"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl.2825725" = type { %"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl_data.2825726" }
-%"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl_data.2825726" = type { ptr, ptr, ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403307" = type { [3 x i32] }
-%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
-%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
-%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
-%struct.QueryRepresentationOperand.3654117 = type { i8, i8, i32, [16384 x i16] }
-%struct.llama_token_data.3719890 = type { i32, float, float }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%struct.GC_ms_entry.2705249 = type { ptr, %union.word_ptr_ao_u.2705250 }
+%union.word_ptr_ao_u.2705250 = type { i64 }
+%"class.std::vector.112.2823522" = type { %"struct.std::_Vector_base.113.2823523" }
+%"struct.std::_Vector_base.113.2823523" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" = type { ptr, ptr, ptr }
+%"class.std::vector.96.2825689" = type { %"struct.std::_Vector_base.97.2825690" }
+%"struct.std::_Vector_base.97.2825690" = type { %"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl.2825691" }
+%"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl.2825691" = type { %"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl_data.2825692" }
+%"struct.std::_Vector_base<Assimp::IFC::TempOpening *, std::allocator<Assimp::IFC::TempOpening *>>::_Vector_impl_data.2825692" = type { ptr, ptr, ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403273" = type { [3 x i32] }
+%class.TrafficTypesRowData.3443338 = type <{ i32, [4 x i8], %class.QString.3443327, i8, [7 x i8] }>
+%class.QString.3443327 = type { %struct.QArrayDataPointer.3443328 }
+%struct.QArrayDataPointer.3443328 = type { ptr, ptr, i64 }
+%struct.QueryRepresentationOperand.3654083 = type { i8, i8, i32, [16384 x i16] }
+%struct.llama_token_data.3719840 = type { i32, float, float }
 
 ; 555 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -581,7 +581,7 @@
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr %"struct.std::pair.2601858", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.std::pair.2601825", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -699,7 +699,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -723,7 +723,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr nusw %struct.GC_ms_entry.2705283, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.GC_ms_entry.2705249, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }
@@ -763,7 +763,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 736
-  %3 = getelementptr %"class.std::vector.112.2823556", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::vector.112.2823522", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -24
   ret ptr %4
 }
@@ -831,7 +831,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 104
-  %3 = getelementptr %"class.std::vector.96.2825723", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"class.std::vector.96.2825689", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
 }
 
@@ -842,7 +842,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403307", ptr %0, i64 %2, i32 0, i64 1
+  %3 = getelementptr nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403273", ptr %0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 
@@ -859,7 +859,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr %class.TrafficTypesRowData.3443372, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %class.TrafficTypesRowData.3443338, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -869,7 +869,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
-  %3 = getelementptr %struct.QueryRepresentationOperand.3654117, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.QueryRepresentationOperand.3654083, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -879,7 +879,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr %struct.llama_token_data.3719890, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.llama_token_data.3719840, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

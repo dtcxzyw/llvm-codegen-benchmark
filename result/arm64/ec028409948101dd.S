@@ -16,3 +16,9 @@ func0000000000000044:                   // @func0000000000000044
 	csinv	w0, w1, wzr, lo
 	ret
                                         // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	csel	w0, w1, wzr, eq
+	ret
+                                        // -- End function

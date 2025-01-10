@@ -73,11 +73,13 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; php/optimized/hash_xxhash.ll
 ; rocksdb/optimized/xxhash.cc.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -213,9 +215,33 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
+; 40 occurrences:
 ; boost/optimized/approximately_equals.ll
 ; casadi/optimized/idas_interface.cpp.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -240,8 +266,12 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
+; zfp/optimized/encode4d.c.ll
+; zfp/optimized/encode4f.c.ll
+; zfp/optimized/encode4i.c.ll
+; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -483,31 +513,7 @@ entry:
   ret ptr %6
 }
 
-; 28 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; 4 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
@@ -650,34 +656,6 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 7
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = shl i64 %1, 5
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 4 occurrences:
-; zfp/optimized/encode4d.c.ll
-; zfp/optimized/encode4f.c.ll
-; zfp/optimized/encode4i.c.ll
-; zfp/optimized/encode4l.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 9
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = shl nuw nsw i64 %1, 5
-  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 7
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = shl i64 %1, 5
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -843,18 +821,6 @@ entry:
   %5 = shl i64 %1, 5
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
-}
-
-; 1 occurrences:
-; opencv/optimized/imgwarp.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %.idx = shl nuw nsw i64 %1, 2
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
-  ret ptr %5
 }
 
 ; 1 occurrences:

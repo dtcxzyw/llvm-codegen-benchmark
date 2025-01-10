@@ -1,23 +1,23 @@
 
-%"struct.llvh::detail::DenseMapPair.3084552" = type { %"struct.std::pair.3084553" }
-%"struct.std::pair.3084553" = type { ptr, %"class.std::unique_ptr.3084554" }
-%"class.std::unique_ptr.3084554" = type { %"struct.std::__uniq_ptr_data.3084555" }
-%"struct.std::__uniq_ptr_data.3084555" = type { %"class.std::__uniq_ptr_impl.3084556" }
-%"class.std::__uniq_ptr_impl.3084556" = type { %"class.std::tuple.3084557" }
-%"class.std::tuple.3084557" = type { %"struct.std::_Tuple_impl.3084558" }
-%"struct.std::_Tuple_impl.3084558" = type { %"struct.std::_Head_base.1.3084559" }
-%"struct.std::_Head_base.1.3084559" = type { ptr }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3259506" = type { %struct.anon.3259507 }
-%struct.anon.3259507 = type { [4 x i8] }
-%struct.sk_buff_head.3547489 = type { %union.anon.4.3547490, i32, %struct.spinlock.3547483 }
-%union.anon.4.3547490 = type { %struct.anon.5.3547491 }
-%struct.anon.5.3547491 = type { ptr, ptr }
-%struct.spinlock.3547483 = type { %union.anon.3547484 }
-%union.anon.3547484 = type { %struct.raw_spinlock.3547485 }
-%struct.raw_spinlock.3547485 = type { %struct.qspinlock.3547486 }
-%struct.qspinlock.3547486 = type { %union.anon.0.3547487 }
-%union.anon.0.3547487 = type { %struct.atomic_t.3547475 }
-%struct.atomic_t.3547475 = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3084518" = type { %"struct.std::pair.3084519" }
+%"struct.std::pair.3084519" = type { ptr, %"class.std::unique_ptr.3084520" }
+%"class.std::unique_ptr.3084520" = type { %"struct.std::__uniq_ptr_data.3084521" }
+%"struct.std::__uniq_ptr_data.3084521" = type { %"class.std::__uniq_ptr_impl.3084522" }
+%"class.std::__uniq_ptr_impl.3084522" = type { %"class.std::tuple.3084523" }
+%"class.std::tuple.3084523" = type { %"struct.std::_Tuple_impl.3084524" }
+%"struct.std::_Tuple_impl.3084524" = type { %"struct.std::_Head_base.1.3084525" }
+%"struct.std::_Head_base.1.3084525" = type { ptr }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3259472" = type { %struct.anon.3259473 }
+%struct.anon.3259473 = type { [4 x i8] }
+%struct.sk_buff_head.3547455 = type { %union.anon.4.3547456, i32, %struct.spinlock.3547449 }
+%union.anon.4.3547456 = type { %struct.anon.5.3547457 }
+%struct.anon.5.3547457 = type { ptr, ptr }
+%struct.spinlock.3547449 = type { %union.anon.3547450 }
+%union.anon.3547450 = type { %struct.raw_spinlock.3547451 }
+%struct.raw_spinlock.3547451 = type { %struct.qspinlock.3547452 }
+%struct.qspinlock.3547452 = type { %union.anon.0.3547453 }
+%union.anon.0.3547453 = type { %struct.atomic_t.3547441 }
+%struct.atomic_t.3547441 = type { i32 }
 
 ; 3 occurrences:
 ; openjdk/optimized/nmethod.ll
@@ -97,7 +97,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3084552", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3084518", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -109,7 +109,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"struct.llvm::support::detail::packed_endian_specific_integral.3259506", ptr %1, i64 %4
+  %5 = getelementptr %"struct.llvm::support::detail::packed_endian_specific_integral.3259472", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -121,7 +121,7 @@ define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.sk_buff_head.3547489, ptr %1, i64 %4
+  %5 = getelementptr %struct.sk_buff_head.3547455, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

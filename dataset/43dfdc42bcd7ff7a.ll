@@ -72,18 +72,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; verilator/optimized/V3SplitVar.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -274877923329
-  %.masked = and i64 %1, -16385
-  %4 = or i64 %3, %.masked
-  %5 = or i64 %0, %4
-  ret i64 %5
-}
-
 ; 15 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll

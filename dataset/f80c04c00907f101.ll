@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.6.2735340" = type { %struct.BEInt.7.2735341 }
-%struct.BEInt.7.2735341 = type { [4 x i8] }
+%"struct.OT::IntType.6.2735306" = type { %struct.BEInt.7.2735307 }
+%struct.BEInt.7.2735307 = type { [4 x i8] }
 
 ; 37 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -70,7 +70,7 @@ entry:
   %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 5
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.6.2735340", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.6.2735306", ptr %6, i64 %5
   ret ptr %7
 }
 

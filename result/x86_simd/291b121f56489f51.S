@@ -40,6 +40,11 @@ func000000000000000d:                   # @func000000000000000d
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000002:                   # @func0000000000000002
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpmullq	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -49,11 +54,6 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
-	retq
-func0000000000000002:                   # @func0000000000000002
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

@@ -1,10 +1,10 @@
 
-%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
-%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
-%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
-%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"class.std::function.2636116" = type { %"class.std::_Function_base.2636117", ptr }
+%"class.std::_Function_base.2636117" = type { %"union.std::_Any_data.2636118", ptr }
+%"union.std::_Any_data.2636118" = type { %"union.std::_Nocopy_types.2636119" }
+%"union.std::_Nocopy_types.2636119" = type { { i64, i64 } }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372" = type { i8, [7 x i8] }
 
 ; 28 occurrences:
 ; mold/optimized/main.cc.ALPHA.cc.ll
@@ -40,8 +40,8 @@ define ptr @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw %"class.std::function.2636149", ptr %4, i64 %3
-  %6 = getelementptr %"class.std::function.2636149", ptr %5, i64 %0, i32 0, i32 1
+  %5 = getelementptr nusw %"class.std::function.2636116", ptr %4, i64 %3
+  %6 = getelementptr %"class.std::function.2636116", ptr %5, i64 %0, i32 0, i32 1
   ret ptr %6
 }
 
@@ -77,8 +77,8 @@ define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %4, i64 %3
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }

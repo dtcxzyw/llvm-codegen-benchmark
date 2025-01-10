@@ -8,12 +8,12 @@ func000000000000000d:                   # @func000000000000000d
 	vpternlogq	$254, .LCPI0_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
 .LCPI1_0:
-	.quad	1572864                         # 0x180000
+	.quad	167772160                       # 0xa000000
 .LCPI1_1:
-	.quad	2                               # 0x2
+	.quad	4194304                         # 0x400000
 func0000000000000008:                   # @func0000000000000008
-	vpsrlq	$21, %ymm2, %ymm2
-	vpor	%ymm2, %ymm0, %ymm2
-	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
-	vpternlogq	$254, .LCPI1_1(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
+	vpsrlq	$38, %ymm2, %ymm2
+	vpor	%ymm2, %ymm1, %ymm1
+	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$254, .LCPI1_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

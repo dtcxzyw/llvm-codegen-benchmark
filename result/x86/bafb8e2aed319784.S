@@ -8,3 +8,8 @@ func000000000000000c:                   # @func000000000000000c
 	shrl	$13, %eax
 	orl	%edi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	(%rsi,%rdx), %eax
+	shrl	$2, %eax
+	orl	%edi, %eax
+	retq

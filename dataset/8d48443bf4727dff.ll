@@ -20,29 +20,7 @@ entry:
   ret i1 %5
 }
 
-; 53 occurrences:
-; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; 31 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll

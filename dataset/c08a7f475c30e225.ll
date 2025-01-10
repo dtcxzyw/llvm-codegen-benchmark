@@ -1,5 +1,5 @@
 
-; 530 occurrences:
+; 531 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/bignum.cc.ll
@@ -372,6 +372,7 @@
 ; pocketpy/optimized/lexer.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/dt_common.ll
+; postgres/optimized/formatting.ll
 ; postgres/optimized/localtime.ll
 ; proj/optimized/geod.cpp.ll
 ; proj/optimized/proj.cpp.ll

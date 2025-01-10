@@ -1,5 +1,5 @@
 
-; 270 occurrences:
+; 269 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/aigTiming.c.ll
@@ -108,7 +108,6 @@
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
-; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
@@ -583,7 +582,7 @@ entry:
   ret i1 %4
 }
 
-; 460 occurrences:
+; 461 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -1001,6 +1000,7 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
@@ -1215,7 +1215,7 @@ entry:
   ret i1 %4
 }
 
-; 174 occurrences:
+; 173 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -1309,7 +1309,6 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/softmagic.ll
-; pocketpy/optimized/collections.cpp.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xid8funcs.ll
 ; protobuf/optimized/printer.cc.ll

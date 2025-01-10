@@ -313,7 +313,7 @@ entry:
   ret i1 %4
 }
 
-; 452 occurrences:
+; 447 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -375,9 +375,6 @@ entry:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jq/optimized/execute.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -696,8 +693,6 @@ entry:
 ; re2/optimized/set.cc.ll
 ; re2/optimized/simplify.cc.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; rust-analyzer-rs/optimized/47txxwz9tojfkorr.ll
 ; slurm/optimized/acct_gather_energy_gpu.ll
 ; slurm/optimized/common_topo.ll

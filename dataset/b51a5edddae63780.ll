@@ -69,7 +69,7 @@ entry:
 define i1 @func0000000000000167(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %0, %1
-  %4 = tail call i32 @llvm.umin.i32(i32 %2, i32 %3)
+  %4 = tail call i32 @llvm.umin.i32(i32 %3, i32 %2)
   %5 = add nuw nsw i32 %4, %1
   %6 = icmp sle i32 %5, %0
   ret i1 %6

@@ -1,6 +1,6 @@
 
-%struct.FSE_decode_t.3496612 = type { i16, i8, i8 }
-%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
+%struct.FSE_decode_t.3496578 = type { i16, i8, i8 }
+%struct.FSE_decode_t.3533469 = type { i16, i8, i8 }
 
 ; 10 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
@@ -17,9 +17,9 @@
 define ptr @func0000000000000183(i64 %0, i16 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr %struct.FSE_decode_t.3496612, ptr %3, i64 %0
+  %4 = getelementptr %struct.FSE_decode_t.3496578, ptr %3, i64 %0
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.FSE_decode_t.3496612, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.FSE_decode_t.3496578, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -85,9 +85,9 @@ entry:
 define ptr @func0000000000000003(i64 %0, i16 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 4
-  %4 = getelementptr %struct.FSE_decode_t.3533503, ptr %3, i64 %0
+  %4 = getelementptr %struct.FSE_decode_t.3533469, ptr %3, i64 %0
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.FSE_decode_t.3533503, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.FSE_decode_t.3533469, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

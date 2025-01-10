@@ -1,10 +1,10 @@
 
-%"class.llvm::MCOperand.3141251" = type { i8, %union.anon.343.3141252 }
-%union.anon.343.3141252 = type { i64 }
-%"class.llvm::SDUse.3150383" = type { %"class.llvm::SDValue.3150307", ptr, ptr, ptr }
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
-%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
-%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
+%"class.llvm::MCOperand.3141217" = type { i8, %union.anon.343.3141218 }
+%union.anon.343.3141218 = type { i64 }
+%"class.llvm::SDUse.3150349" = type { %"class.llvm::SDValue.3150273", ptr, ptr, ptr }
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
+%union.acpi_object.3547831 = type { %struct.anon.8.3547832 }
+%struct.anon.8.3547832 = type { i32, i32, i64, i32 }
 
 ; 3 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -30,7 +30,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::MCOperand.3141251", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MCOperand.3141217", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -55,7 +55,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 8
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"class.llvm::SDUse.3150383", ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr nuw %"class.llvm::SDUse.3150349", ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
@@ -80,7 +80,7 @@ define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %union.acpi_object.3547831, ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 

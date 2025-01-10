@@ -1,7 +1,7 @@
 func0000000000000081:                   # @func0000000000000081
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v10, -9
-	vmsleu.vi	v14, v12, 1
+	vadd.vi	v12, v10, -1
+	vmsleu.vi	v14, v12, 3
 	vmseq.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
 	ret

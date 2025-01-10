@@ -1,6 +1,6 @@
 
-%"struct.drjit::divisor.2602697" = type <{ i32, i32, i8 }>
-%class.Polynomial.17.3820760 = type { [3 x double] }
+%"struct.drjit::divisor.2602664" = type <{ i32, i32, i8 }>
+%class.Polynomial.17.3820710 = type { [3 x double] }
 
 ; 18 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
@@ -25,7 +25,7 @@
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
-  %3 = getelementptr nuw [3 x %"struct.drjit::divisor.2602697"], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [3 x %"struct.drjit::divisor.2602664"], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -45,7 +45,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
-  %3 = getelementptr nuw [3 x %class.Polynomial.17.3820760], ptr %0, i64 0, i64 %2, i32 0, i64 1
+  %3 = getelementptr nuw [3 x %class.Polynomial.17.3820710], ptr %0, i64 0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 
@@ -55,7 +55,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
-  %3 = getelementptr [3 x %class.Polynomial.17.3820760], ptr %0, i64 0, i64 %2, i32 0, i64 1
+  %3 = getelementptr [3 x %class.Polynomial.17.3820710], ptr %0, i64 0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 

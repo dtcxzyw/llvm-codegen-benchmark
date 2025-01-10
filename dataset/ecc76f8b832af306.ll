@@ -1,8 +1,8 @@
 
-%"class.std::vector.268.3569047" = type { %"struct.std::_Vector_base.269.3569048" }
-%"struct.std::_Vector_base.269.3569048" = type { %"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl.3569049" }
-%"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl.3569049" = type { %"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl_data.3569050" }
-%"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl_data.3569050" = type { ptr, ptr, ptr }
+%"class.std::vector.268.3569013" = type { %"struct.std::_Vector_base.269.3569014" }
+%"struct.std::_Vector_base.269.3569014" = type { %"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl.3569015" }
+%"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl.3569015" = type { %"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl_data.3569016" }
+%"struct.std::_Vector_base<cvc5::internal::NodeTemplate<true>, std::allocator<cvc5::internal::NodeTemplate<true>>>::_Vector_impl_data.3569016" = type { ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; oiio/optimized/SHA1.cpp.ll
@@ -107,7 +107,7 @@ define ptr @func00000000000000c3(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp samesign ugt i64 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %"class.std::vector.268.3569047"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %"class.std::vector.268.3569013"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

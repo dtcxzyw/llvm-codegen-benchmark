@@ -1,6 +1,6 @@
 
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 20 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -64,8 +64,8 @@ entry:
 define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %2
-  %4 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %3, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %0, i64 %2
+  %4 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -87,8 +87,8 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %2
-  %4 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %3, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %2
+  %4 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 

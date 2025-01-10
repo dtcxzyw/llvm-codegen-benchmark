@@ -68,8 +68,7 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; libquic/optimized/time.cc.ll
+; 1 occurrences:
 ; openjdk/optimized/convertnode.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {

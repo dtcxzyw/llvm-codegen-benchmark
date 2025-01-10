@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	leaq	(%rcx,%rcx,4), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002f:                   # @func000000000000002f
+func000000000000002e:                   # @func000000000000002e
 	leaq	2(%rdx,%rdx), %rcx
 	leaq	1(%rdx,%rdx), %rax
 	testb	$1, %sil

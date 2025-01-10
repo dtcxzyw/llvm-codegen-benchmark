@@ -1,5 +1,5 @@
 
-; 268 occurrences:
+; 269 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/verCore.c.ll
 ; arrow/optimized/api_aggregate.cc.ll
@@ -168,6 +168,7 @@
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openexr/optimized/decoding.c.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/c1_MacroAssembler_x86.ll
 ; openjdk/optimized/machnode.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll

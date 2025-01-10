@@ -20,18 +20,3 @@ func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, -4
 	slt	a0, a0, a1
 	ret
-func000000000000002b:                   # @func000000000000002b
-	li	a2, 4
-	blt	a2, a1, .LBB1_2
-	li	a1, 4
-.LBB1_2:                                # %entry
-	blt	a1, a0, .LBB1_4
-	mv	a1, a0
-.LBB1_4:                                # %entry
-	srai	a0, a1, 63
-	srli	a0, a0, 62
-	add	a0, a0, a1
-	andi	a0, a0, -4
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	ret

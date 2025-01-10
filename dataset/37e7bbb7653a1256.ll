@@ -1,10 +1,15 @@
 
-; 57 occurrences:
+; 67 occurrences:
+; abc/optimized/gzlib.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/unicode.cpp.ll
+; cmake/optimized/gzlib.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; flac/optimized/encode.c.ll
 ; folly/optimized/EventBaseBackendBase.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -13,6 +18,7 @@
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; hermes/optimized/zip.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; libpng/optimized/pngpread.c.ll
 ; libquic/optimized/cmac.c.ll
 ; libquic/optimized/pkcs8.c.ll
@@ -55,8 +61,12 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; php/optimized/KeccakSponge.ll
+; php/optimized/softmagic.ll
 ; ruby/optimized/zlib.ll
+; slurm/optimized/KangarooTwelve.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -69,8 +79,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 14 occurrences:
+; 17 occurrences:
 ; git/optimized/pkt-line.ll
+; git/optimized/sha256.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
@@ -78,8 +89,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; nuttx/optimized/lib_hexdumpstream.c.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; pocketpy/optimized/expr.cpp.ll
@@ -93,11 +106,13 @@ entry:
   ret ptr %5
 }
 
-; 12 occurrences:
+; 15 occurrences:
 ; hdf5/optimized/H5FDonion.c.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/vc_screen.ll
 ; linux/optimized/xstate.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; qemu/optimized/block_vdi.c.ll
@@ -106,6 +121,7 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_sprintf.c.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -115,10 +131,12 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/n_tty.ll
+; linux/optimized/scatterwalk.ll
 ; postgres/optimized/bbstreamer_tar.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind

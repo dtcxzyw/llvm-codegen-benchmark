@@ -11,7 +11,7 @@ func0000000000000341:                   # @func0000000000000341
 	sete	%al
 	retq
 func00000000000003e4:                   # @func00000000000003e4
-	movl	$18, %eax
+	movl	$4, %eax
 	subl	%esi, %eax
 	cmpq	%rax, %rdi
 	setb	%al

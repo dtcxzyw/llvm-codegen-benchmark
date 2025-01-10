@@ -1,15 +1,15 @@
 
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"struct.OT::MathGlyphVariantRecord.2734517" = type { %"struct.OT::HBGlyphID16.2734518", %"struct.OT::IntType.2734512" }
-%"struct.OT::HBGlyphID16.2734518" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
-%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
-%struct.BEInt.156.2734510 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
-%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"struct.OT::MathGlyphVariantRecord.2734483" = type { %"struct.OT::HBGlyphID16.2734484", %"struct.OT::IntType.2734478" }
+%"struct.OT::HBGlyphID16.2734484" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%"struct.OT::MathValueRecord.2734473" = type { %"struct.OT::IntType.155.2734474", %"struct.OT::OffsetTo.157.2734475" }
+%"struct.OT::IntType.155.2734474" = type { %struct.BEInt.156.2734476 }
+%struct.BEInt.156.2734476 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734475" = type { %"struct.OT::Offset.2734477" }
+%"struct.OT::Offset.2734477" = type { %"struct.OT::IntType.2734478" }
 
 ; 7 occurrences:
 ; oiio/optimized/iffoutput.cpp.ll
@@ -280,9 +280,9 @@ define ptr @func000000000000006f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635821", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2635853", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2635820", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -303,9 +303,9 @@ define ptr @func000000000000007f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734517", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734483", ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734517", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734483", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -372,9 +372,9 @@ define ptr @func00000000000000ef(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 2
-  %5 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734473", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734473", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -432,13 +432,12 @@ entry:
   ret ptr %7
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/filter.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/tty_buffer.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000060(i32 %0, ptr %1, i32 %2) #0 {
 entry:

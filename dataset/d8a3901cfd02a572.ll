@@ -1285,6 +1285,7 @@
 ; linux/optimized/sort.ll
 ; linux/optimized/sqpoll.ll
 ; linux/optimized/srcutree.ll
+; linux/optimized/sta_info.ll
 ; linux/optimized/stats.ll
 ; linux/optimized/string.ll
 ; linux/optimized/strset.ll
@@ -2562,7 +2563,6 @@
 ; php/optimized/spl_array.ll
 ; php/optimized/spl_dllist.ll
 ; php/optimized/userspace.ll
-; php/optimized/zend_alloc.ll
 ; php/optimized/zend_gc.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_language_scanner.ll
@@ -3460,7 +3460,7 @@ entry:
   ret i32 %2
 }
 
-; 1427 occurrences:
+; 1425 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDec.c.ll
@@ -4376,7 +4376,6 @@ entry:
 ; linux/optimized/semaphore.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/slub.ll
-; linux/optimized/sta_info.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tg3.ll
@@ -4661,7 +4660,6 @@ entry:
 ; opencv/optimized/knn_matching.cpp.ll
 ; opencv/optimized/mapper.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
 ; opencv/optimized/perf_layer.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll

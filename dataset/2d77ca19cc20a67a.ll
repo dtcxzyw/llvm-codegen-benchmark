@@ -11,8 +11,7 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
+; 4 occurrences:
 ; lief/optimized/RichHeader.cpp.ll
 ; openjdk/optimized/altHashing.ll
 ; wireshark/optimized/packet-someip.c.ll

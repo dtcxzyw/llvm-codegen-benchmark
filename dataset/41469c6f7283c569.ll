@@ -1239,13 +1239,14 @@ entry:
   ret ptr %3
 }
 
-; 468 occurrences:
+; 492 occurrences:
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; arrow/optimized/bridge.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -1270,6 +1271,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
+; coreutils-rs/optimized/2y94il9ncyebrpt0.ll
 ; coreutils-rs/optimized/3l08u1tfq6vahgiy.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -1283,6 +1285,7 @@ entry:
 ; darktable/optimized/pdf.c.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
 ; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/3r9vx3p2jzork50q.ll
 ; delta-rs/optimized/3w98mau10rb6qf7d.ll
 ; delta-rs/optimized/43rqrp2cinp33t64.ll
@@ -1400,6 +1403,7 @@ entry:
 ; hyperscan/optimized/rose_build_misc.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/2du585cd6kvsz0m5.ll
 ; jq/optimized/jv.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -1419,6 +1423,7 @@ entry:
 ; llvm/optimized/MLRegAllocEvictAdvisor.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -1566,6 +1571,7 @@ entry:
 ; ockam-rs/optimized/13hx4edwj16k9wur.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; ockam-rs/optimized/2n0s7h3mrzul4f05.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/548tb0vgebzwk35z.ll
 ; oiio/optimized/hdrinput.cpp.ll
@@ -1633,12 +1639,18 @@ entry:
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/regexec.ll
 ; rust-analyzer-rs/optimized/16ss3ngd5xjxotkj.ll
+; rust-analyzer-rs/optimized/1d113v6a3epuvh5y.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
+; rust-analyzer-rs/optimized/2fcy4m9e2fxieax4.ll
 ; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
+; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
+; rust-analyzer-rs/optimized/4dy7ijwwbie8y9pm.ll
 ; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
+; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; sqlite/optimized/sqlite3.ll
 ; taskflow/optimized/async.cpp.ll
@@ -1683,6 +1695,7 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
 ; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
@@ -1697,16 +1710,27 @@ entry:
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/5b6rejgre7fzh1ir.ll
+; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
 ; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
 ; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
 ; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
 ; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4dosr1o8lu0ztcoospq0oxi0c.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
 ; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
 ; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/7dlcu72xy2qwyr8vttt104wn3.ll
+; zed-rs/optimized/7v472zdqnk6m560xtqo5n2d2r.ll
 ; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
 ; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
+; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
 ; zed-rs/optimized/9zapxybzyqo7as5l1oow5wvsl.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
 ; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
@@ -4215,7 +4239,7 @@ entry:
   ret ptr %2
 }
 
-; 566 occurrences:
+; 567 occurrences:
 ; abc/optimized/extraUtilCube.c.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
@@ -4531,6 +4555,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
 ; rust-analyzer-rs/optimized/1d113v6a3epuvh5y.ll
 ; rust-analyzer-rs/optimized/1inhtflzeuuko7d8.ll
@@ -4846,20 +4871,17 @@ entry:
   ret ptr %3
 }
 
-; 15 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; boost/optimized/src.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; quantlib/optimized/cmsmarket.ll
 ; quantlib/optimized/tapcorrelations.ll
-; raylib/optimized/raudio.c.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; xgboost/optimized/auc.cc.ll
 ; Function Attrs: nounwind

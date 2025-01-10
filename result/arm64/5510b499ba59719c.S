@@ -46,13 +46,6 @@ func0000000000000141:                   // @func0000000000000141
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000054c:                   // @func000000000000054c
-// %bb.0:                               // %entry
-	cmp	w0, #1
-	ccmp	w1, w2, #4, ne
-	cset	w0, gt
-	ret
-                                        // -- End function
 func0000000000000481:                   // @func0000000000000481
 // %bb.0:                               // %entry
 	sub	w8, w1, w2
@@ -142,6 +135,13 @@ func0000000000000581:                   // @func0000000000000581
 	cmp	w8, #3
 	ccmp	w0, #0, #4, eq
 	cset	w0, ne
+	ret
+                                        // -- End function
+func000000000000054c:                   // @func000000000000054c
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w1, w2, #4, ne
+	cset	w0, gt
 	ret
                                         // -- End function
 func000000000000054a:                   // @func000000000000054a

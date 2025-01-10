@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; git/optimized/diff.ll
-; opencv/optimized/tree.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i8 %1) #0 {

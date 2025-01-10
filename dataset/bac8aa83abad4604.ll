@@ -18,7 +18,8 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; abc/optimized/bmcMaj.c.ll
 ; flac/optimized/encode.c.ll
 ; git/optimized/userdiff.ll
 ; oiio/optimized/dpxoutput.cpp.ll

@@ -13,9 +13,9 @@ func0000000000000007:                   # @func0000000000000007
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI2_0:
-	.quad	65536                           # 0x10000
+	.quad	524288                          # 0x80000
 func0000000000000004:                   # @func0000000000000004
-	vpsrlq	$12, %ymm2, %ymm2
+	vpsrlq	$14, %ymm2, %ymm2
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

@@ -176,16 +176,6 @@ func0000000000000298:                   # @func0000000000000298
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
-	sext.w	a1, a1
-	sext.w	a0, a0
-	lui	a3, 1
-	addiw	a3, a3, -1880
-	xor	a2, a2, a3
-	seqz	a2, a2
-	sltu	a0, a0, a1
-	or	a0, a0, a2
-	ret
 func0000000000000282:                   # @func0000000000000282
 	sext.w	a1, a1
 	sext.w	a2, a2

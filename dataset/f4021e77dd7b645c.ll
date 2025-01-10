@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/aigOper.c.ll
 ; bullet3/optimized/btCapsuleShape.ll
@@ -8,6 +8,7 @@
 ; bullet3/optimized/btConvexShape.ll
 ; git/optimized/name-hash.ll
 ; gromacs/optimized/collective.cpp.ll
+; icu/optimized/cal.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; nuttx/optimized/fs_files.c.ll

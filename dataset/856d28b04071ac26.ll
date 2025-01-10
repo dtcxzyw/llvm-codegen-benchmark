@@ -1,5 +1,5 @@
 
-%"class.clang::NestedNameSpecifierLoc.3155020" = type { ptr, ptr }
+%"class.clang::NestedNameSpecifierLoc.3154986" = type { ptr, ptr }
 
 ; 3 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
@@ -39,7 +39,7 @@ entry:
 define ptr @func000000000000003f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 32
-  %4 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3155020", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3154986", ptr %3, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %1, i64 16
   %6 = select i1 %0, ptr %5, ptr %4
   ret ptr %6

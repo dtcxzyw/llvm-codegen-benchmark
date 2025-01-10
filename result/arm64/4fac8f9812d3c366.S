@@ -28,9 +28,10 @@ func0000000000000033:                   // @func0000000000000033
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
 // %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
+	mov	w8, w2
 	add	x9, x0, x1
-	umaddl	x0, w2, w8, x9
+	add	x8, x8, w2, uxtw #1
+	add	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010

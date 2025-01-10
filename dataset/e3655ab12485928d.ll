@@ -91,13 +91,12 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; flac/optimized/stream_encoder.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gup.ll
 ; linux/optimized/vt.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
@@ -576,18 +575,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cpython/optimized/longobject.ll
-; linux/optimized/gup.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ugt i32 %4, 1
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; Function Attrs: nounwind
@@ -608,6 +595,17 @@ entry:
   %3 = add i32 %2, 1
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = icmp ult i32 %4, 64
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp ugt i32 %4, 7
   ret i1 %5
 }
 

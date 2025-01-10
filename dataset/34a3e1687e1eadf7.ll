@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/fs.c.ll
@@ -32,7 +32,6 @@
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
 ; nori/optimized/screen.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/brightedges.cpp.ll
 ; openjdk/optimized/cmstypes.ll

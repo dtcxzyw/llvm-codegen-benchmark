@@ -14,6 +14,25 @@ entry:
   ret i64 %6
 }
 
+; 8 occurrences:
+; libjpeg-turbo/optimized/jidctint.c.ll
+; mold/optimized/arch-i386.cc.ll
+; mold/optimized/arch-sh4.cc.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; qemu/optimized/hw_intc_riscv_aclint.c.ll
+; slurm/optimized/job_mgr.ll
+; wireshark/optimized/packet-ieee80211-radio.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = sub nsw i64 %4, %5
+  ret i64 %6
+}
+
 ; 18 occurrences:
 ; linux/optimized/kfifo.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -38,25 +57,6 @@ define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %0, %3
-  %5 = zext i32 %1 to i64
-  %6 = sub nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 8 occurrences:
-; libjpeg-turbo/optimized/jidctint.c.ll
-; mold/optimized/arch-i386.cc.ll
-; mold/optimized/arch-sh4.cc.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; slurm/optimized/job_mgr.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = sub nsw i64 %4, %5
   ret i64 %6

@@ -1,12 +1,12 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
-%struct.ctl_node.3555496 = type { %struct.rb_node.3555497, ptr }
-%struct.rb_node.3555497 = type { i64, ptr, ptr }
-%struct.ctl_table.3555470 = type { ptr, ptr, i32, i16, i32, ptr, ptr, ptr, ptr }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
+%struct.ctl_node.3555462 = type { %struct.rb_node.3555463, ptr }
+%struct.rb_node.3555463 = type { i64, ptr, ptr }
+%struct.ctl_table.3555436 = type { ptr, ptr, i32, i16, i32, ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; openjdk/optimized/generateOopMap.ll
@@ -54,9 +54,9 @@ entry:
 define ptr @func000000000000007a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %3, i64 %0
+  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %3, i64 %0
   %5 = sext i32 %2 to i64
-  %6 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %4, i64 %5
+  %6 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -40
   ret ptr %7
 }
@@ -84,8 +84,8 @@ entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 80
-  %6 = getelementptr %struct.ctl_node.3555496, ptr %5, i64 %0
-  %7 = getelementptr %struct.ctl_table.3555470, ptr %6, i64 %4
+  %6 = getelementptr %struct.ctl_node.3555462, ptr %5, i64 %0
+  %7 = getelementptr %struct.ctl_table.3555436, ptr %6, i64 %4
   ret ptr %7
 }
 

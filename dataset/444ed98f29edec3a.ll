@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 162 occurrences:
 ; boost/optimized/area.ll
 ; boost/optimized/area_geo.ll
 ; boost/optimized/area_multi.ll
@@ -91,6 +91,7 @@
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openspiel/optimized/cfr.cc.ll
+; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/simplify.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VectorTransformer.cc.ll

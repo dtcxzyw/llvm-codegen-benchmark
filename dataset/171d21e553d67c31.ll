@@ -62,16 +62,15 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; node/optimized/simdutf.ll
+; 2 occurrences:
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i64 @func000000000000001e(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 52
-  %4 = add i64 %0, %3
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -94,6 +93,17 @@ entry:
   %2 = zext nneg i16 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = shl nuw nsw i64 %2, 1
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

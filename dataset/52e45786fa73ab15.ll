@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; linux/optimized/select.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll

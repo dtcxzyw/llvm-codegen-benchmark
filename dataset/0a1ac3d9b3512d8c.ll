@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_op.2789887 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct._zend_ssa_op.2789853 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 2 occurrences:
 ; openvdb/optimized/Filter.cc.ll
@@ -24,7 +24,7 @@ entry:
   %2 = lshr exact i64 %1, 5
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nuw %struct._zend_ssa_op.2789887, ptr %0, i64 %4, i32 3
+  %5 = getelementptr nuw %struct._zend_ssa_op.2789853, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 

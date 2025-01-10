@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2631296" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631297", i64, %union.anon.2631298 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631297" = type { ptr }
-%union.anon.2631298 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2631263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631264", i64, %union.anon.2631265 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631264" = type { ptr }
+%union.anon.2631265 = type { i64, [8 x i8] }
 
 ; 13 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -23,7 +23,7 @@ entry:
   %3 = ashr exact i64 %2, 5
   %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 %1)
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2631296", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2631263", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -62,11 +62,12 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
+; gromacs/optimized/libxdrf.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll

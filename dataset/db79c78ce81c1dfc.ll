@@ -1,8 +1,8 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -17,7 +17,7 @@ define ptr @func0000000000000007(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw nuw %"struct.OT::HBFixed.2730714", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"struct.OT::HBFixed.2730680", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -46,7 +46,7 @@ define ptr @func0000000000000032(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 85
   %3 = select i1 %.not, ptr %1, ptr null
-  %4 = getelementptr nusw %"class.llvm::Use.3157992", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3157958", ptr %3, i64 %0
   ret ptr %4
 }
 

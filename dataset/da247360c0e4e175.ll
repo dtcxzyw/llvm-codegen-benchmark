@@ -1,5 +1,5 @@
 
-%struct.uni_to_enc.2792554 = type { i16, i8 }
+%struct.uni_to_enc.2792520 = type { i16, i8 }
 
 ; 2 occurrences:
 ; lief/optimized/bignum.c.ll
@@ -7,7 +7,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.uni_to_enc.2792554, ptr %1, i64 %2
+  %3 = getelementptr %struct.uni_to_enc.2792520, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -4
   %5 = icmp ugt ptr %1, %4
   %6 = or i1 %0, %5

@@ -1,9 +1,8 @@
 
-; 78 occurrences:
+; 77 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; boost/optimized/area.ll
-; cpython/optimized/unicodeobject.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/printf-test.cc.ll
@@ -966,12 +965,13 @@ entry:
   ret i1 %4
 }
 
-; 46 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; boost/optimized/to_chars.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/openssl.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/_functoolsmodule.ll
 ; cpython/optimized/posixmodule.ll
 ; curl/optimized/libcurl_la-openssl.ll
@@ -1013,6 +1013,7 @@ entry:
 ; slurm/optimized/reservation.ll
 ; turborepo-rs/optimized/073xkjbb0bs34qvdns32a3q3u.ll
 ; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-%struct.lz_match.2747992 = type { i16, i16 }
+%struct.lz_match.2747958 = type { i16, i16 }
 
 ; 10 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -17,7 +17,7 @@ define i64 @func0000000000000068(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -4
-  %5 = getelementptr nusw %struct.lz_match.2747992, ptr %4, i64 %3
+  %5 = getelementptr nusw %struct.lz_match.2747958, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

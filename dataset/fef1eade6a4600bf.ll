@@ -30,7 +30,7 @@ entry:
   ret i1 %3
 }
 
-; 40 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -44,18 +44,13 @@ entry:
 ; linux/optimized/rock.ll
 ; linux/optimized/xfrm_input.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
-; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/network_selfuncs.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_easy_font.c.ll
-; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_vorbis.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-eap.c.ll
 ; wireshark/optimized/packet-geneve.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll

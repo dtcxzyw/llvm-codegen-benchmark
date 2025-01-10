@@ -1,5 +1,5 @@
 
-; 922 occurrences:
+; 923 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -642,6 +642,7 @@
 ; openusd/optimized/bitreader_buffer.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll

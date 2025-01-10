@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -24,7 +24,6 @@
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
 ; lief/optimized/pkcs12.c.ll
-; linux/optimized/vlv_dsi.ll
 ; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll

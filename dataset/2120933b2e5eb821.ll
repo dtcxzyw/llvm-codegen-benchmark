@@ -526,7 +526,7 @@ entry:
   ret i64 %4
 }
 
-; 169 occurrences:
+; 170 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaEnable.c.ll
@@ -600,6 +600,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; oniguruma/optimized/regenc.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dgghd3.c.ll

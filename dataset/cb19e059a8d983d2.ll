@@ -42,19 +42,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; opencc/optimized/bit-vector.cc.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %0, 1
-  %4 = sub nsw i64 %3, %2
-  ret i64 %4
-}
-
 ; 18 occurrences:
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/readpage.ll
@@ -90,6 +77,17 @@ define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nsw i64 %0, 3
+  %4 = sub nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; opencc/optimized/bit-vector.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %0, 9
   %4 = sub nsw i64 %3, %2
   ret i64 %4
 }

@@ -113,12 +113,60 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI4_0:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI4_1:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k0
+	vpsrld	$7, %ymm2, %ymm0
+	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
+	vpcmpnleud	%ymm1, %ymm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	7                               # 0x7
 func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsrld	$2, %ymm2, %ymm0
-	vpandd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

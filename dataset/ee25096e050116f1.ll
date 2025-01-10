@@ -12,6 +12,21 @@ entry:
   ret i32 %7
 }
 
+; 3 occurrences:
+; gromacs/optimized/gmx_bar.cpp.ll
+; openjdk/optimized/javaClasses.ll
+; wireshark/optimized/packet-tns.c.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000bf(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 273
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %1, %4
+  %6 = add nuw nsw i32 %5, %0
+  %7 = add nuw nsw i32 %6, 2
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
@@ -61,20 +76,6 @@ entry:
   %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   %7 = add nuw nsw i32 %6, 2
-  ret i32 %7
-}
-
-; 2 occurrences:
-; gromacs/optimized/gmx_bar.cpp.ll
-; wireshark/optimized/packet-tns.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000bf(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 6
-  %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %1, %4
-  %6 = add nuw nsw i32 %0, %5
-  %7 = add nuw nsw i32 %6, 1
   ret i32 %7
 }
 

@@ -129,11 +129,12 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; linux/optimized/dev_ioctl.ll
 ; linux/optimized/yenta_socket.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; postgres/optimized/data.ll
 ; qemu/optimized/audio_audio.c.ll
 ; Function Attrs: nounwind

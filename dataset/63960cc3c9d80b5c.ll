@@ -1,5 +1,5 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
+%"struct.CFF::number_t.2732152" = type { double }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -16,7 +16,7 @@ entry:
   %3 = add i32 %2, 3
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

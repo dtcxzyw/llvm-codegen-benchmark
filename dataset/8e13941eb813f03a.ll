@@ -89,16 +89,4 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr exact i32 %0, 24
-  %3 = xor i32 %2, %1
-  ret i32 %3
-}
-
 attributes #0 = { nounwind }

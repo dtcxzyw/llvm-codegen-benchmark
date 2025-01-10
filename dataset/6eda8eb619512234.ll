@@ -1,7 +1,7 @@
 
-%union.YYSTYPE.2600710 = type { i64 }
-%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
-%struct.rb_code_position_struct.2601677 = type { i32, i32 }
+%union.YYSTYPE.2600677 = type { i64 }
+%struct.rb_code_location_struct.2601643 = type { %struct.rb_code_position_struct.2601644, %struct.rb_code_position_struct.2601644 }
+%struct.rb_code_position_struct.2601644 = type { i32, i32 }
 
 ; 10 occurrences:
 ; postgres/optimized/bootparse.ll
@@ -19,11 +19,11 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 1, %2
-  %4 = getelementptr %union.YYSTYPE.2600710, ptr %0, i64 %3
+  %4 = getelementptr %union.YYSTYPE.2600677, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; arrow/optimized/csx_converter.cc.ll
 ; boost/optimized/area.ll
 ; clamav/optimized/yara_grammar.c.ll
@@ -47,6 +47,7 @@ entry:
 ; graphviz/optimized/grammar.c.ll
 ; graphviz/optimized/htmlparse.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
+; icu/optimized/ucnv.ll
 ; icu/optimized/ucnvmbcs.ll
 ; jq/optimized/parser.ll
 ; nix/optimized/parser-tab.ll
@@ -72,13 +73,12 @@ define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.rb_code_location_struct.2601676, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.rb_code_location_struct.2601643, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; boost/optimized/src.ll
-; icu/optimized/ucnv.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll

@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 140 occurrences:
 ; arrow/optimized/writer.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
@@ -115,6 +115,7 @@
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; linux/optimized/blk-map.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll

@@ -27,5 +27,5 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	leal	-3(,%rsi,4), %eax
+	leal	-1(,%rsi,8), %eax
 	retq

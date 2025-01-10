@@ -1,5 +1,5 @@
 
-%struct.i915_engine_class_instance.3538708 = type { i16, i16 }
+%struct.i915_engine_class_instance.3538674 = type { i16, i16 }
 
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
@@ -130,7 +130,7 @@ entry:
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr nusw nuw i8, ptr %0, i64 72
-  %7 = getelementptr [0 x %struct.i915_engine_class_instance.3538708], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [0 x %struct.i915_engine_class_instance.3538674], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

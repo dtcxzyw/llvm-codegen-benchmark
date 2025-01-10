@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

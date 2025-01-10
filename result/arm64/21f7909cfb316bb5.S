@@ -26,6 +26,16 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, lo
 	ret
                                         // -- End function
+func0000000000000048:                   // @func0000000000000048
+// %bb.0:                               // %entry
+	mov	w8, #8191                       // =0x1fff
+	and	x9, x0, #0xffffffffffffe000
+	add	x8, x1, x8
+	and	x8, x8, #0xffffffffffffe000
+	cmp	x9, x8
+	cset	w0, hi
+	ret
+                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	mov	w8, #11                         // =0xb

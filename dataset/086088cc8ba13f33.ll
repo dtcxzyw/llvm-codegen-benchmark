@@ -1,5 +1,5 @@
 
-%struct.Indirect.3530524 = type { ptr, i32, ptr }
+%struct.Indirect.3530490 = type { ptr, i32, ptr }
 
 ; 6 occurrences:
 ; clamav/optimized/upx.c.ll
@@ -175,7 +175,7 @@ define i64 @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -24
-  %4 = getelementptr %struct.Indirect.3530524, ptr %3, i64 %2
+  %4 = getelementptr %struct.Indirect.3530490, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

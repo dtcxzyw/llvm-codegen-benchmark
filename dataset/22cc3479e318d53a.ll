@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; boost/optimized/src.ll
 ; cvc5/optimized/extended_rewrite.cpp.ll
 ; cvc5/optimized/oracle_engine.cpp.ll
 ; cvc5/optimized/pattern_term_selector.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
-; gromacs/optimized/pme_spread.cpp.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
@@ -48,7 +47,8 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; libevent/optimized/http.c.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
@@ -77,11 +77,11 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000027(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000026(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = add i64 %1, %3
-  %5 = getelementptr nusw nuw [0 x i128], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [0 x i128], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -98,13 +98,13 @@ entry:
 }
 
 ; 1 occurrences:
-; libevent/optimized/http.c.ll
+; gromacs/optimized/pme_spread.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
+  %3 = sub nuw nsw i64 %1, %2
   %4 = add nsw i64 %3, -2
-  %5 = getelementptr nusw nuw [64 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [12 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -114,22 +114,23 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nuw nsw i64 %1, %2
-  %4 = add nsw i64 %3, -2
+  %3 = xor i64 %2, -1
+  %4 = add i64 %1, %3
   %5 = getelementptr nusw nuw [12 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
+; gromacs/optimized/pme_spread.cpp.ll
 ; openusd/optimized/cdef_block.c.ll
 ; sundials/optimized/ida.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, 3
-  %5 = getelementptr nusw [15 x i32], ptr %0, i64 0, i64 %4
+  %4 = add nsw i64 %3, -2
+  %5 = getelementptr nusw [12 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

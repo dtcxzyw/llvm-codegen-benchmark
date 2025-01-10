@@ -1,5 +1,5 @@
 
-; 833 occurrences:
+; 810 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -135,10 +135,6 @@
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; chibicc/optimized/parse.ll
-; clamav/optimized/cabd.c.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/mszipd.c.ll
-; clamav/optimized/oabd.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -390,14 +386,11 @@
 ; linux/optimized/hygon.ll
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/ip6_output.ll
-; linux/optimized/memory.ll
 ; linux/optimized/msync.ll
 ; linux/optimized/parser.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/recovery.ll
 ; linux/optimized/resize.ll
-; linux/optimized/scm.ll
 ; linux/optimized/scsi_proc.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -408,7 +401,6 @@
 ; linux/optimized/uncore.ll
 ; linux/optimized/vc_screen.ll
 ; linux/optimized/vmstat.ll
-; linux/optimized/vsprintf.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/x_tables.ll
 ; linux/optimized/xhci.ll
@@ -477,8 +469,6 @@
 ; nori/optimized/textbox.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_b16sin.c.ll
-; nuttx/optimized/lib_meminstream.c.ll
-; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/FileFormat3DL.cpp.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
@@ -573,7 +563,6 @@
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/ciMethodData.ll
-; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/convertnode.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/jchuff.ll
@@ -684,9 +673,7 @@
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/aset.ll
-; postgres/optimized/backend_status.ll
 ; postgres/optimized/bbstreamer_tar.ll
-; postgres/optimized/buffile.ll
 ; postgres/optimized/data.ll
 ; postgres/optimized/dynahash.ll
 ; postgres/optimized/geo_ops.ll
@@ -719,23 +706,14 @@
 ; postgres/optimized/walreceiver.ll
 ; postgres/optimized/walwriter.ll
 ; postgres/optimized/xlog.ll
-; postgres/optimized/xlogreader.ll
 ; postgres/optimized/zic.ll
 ; proxygen/optimized/RendezvousHash.cpp.ll
-; qemu/optimized/block_qcow.c.ll
-; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/hw_usb_core.c.ll
-; qemu/optimized/hw_usb_desc-msos.c.ll
-; qemu/optimized/hw_usb_dev-network.c.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/util_readline.c.ll
 ; quantlib/optimized/lmdif.ll
 ; quest/optimized/QuEST_common.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; re2/optimized/re2.cc.ll
@@ -750,7 +728,6 @@
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/date_parse.ll
-; ruby/optimized/init.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/regcomp.ll

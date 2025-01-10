@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecPa.c.ll
@@ -54,9 +54,6 @@
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; php/optimized/engine_mt19937.ll
 ; php/optimized/hash_gost.ll
 ; pocketpy/optimized/random.cpp.ll

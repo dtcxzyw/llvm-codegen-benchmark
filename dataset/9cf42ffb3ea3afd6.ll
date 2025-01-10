@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 2 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -22,7 +22,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 4294957292, %1
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw [1 x %struct.lua_TValue.3680875], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %struct.lua_TValue.3680825], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

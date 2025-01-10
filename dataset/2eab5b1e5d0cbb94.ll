@@ -30,12 +30,12 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i128 @func000000000000003c(i128 %0, i64 %1) #0 {
+define i128 @func000000000000003e(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
   %3 = shl nuw nsw i128 %2, 64
   %4 = or disjoint i128 %3, %0
-  %5 = mul i128 %4, 1844674407370955161
+  %5 = mul nuw i128 %4, 1844674407370955161
   ret i128 %5
 }
 

@@ -6,14 +6,6 @@ func0000000000000101:                   // @func0000000000000101
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000181:                   // @func0000000000000181
-// %bb.0:                               // %entry
-	add	x8, x1, x2
-	add	x8, x8, #5
-	cmp	x8, x0
-	cset	w0, eq
-	ret
-                                        // -- End function
 func0000000000000185:                   // @func0000000000000185
 // %bb.0:                               // %entry
 	add	x8, x1, x2

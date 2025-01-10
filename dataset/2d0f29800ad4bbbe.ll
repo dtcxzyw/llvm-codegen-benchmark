@@ -1,6 +1,6 @@
 
-%"class.asmjit::_abi_1_10::JitAllocatorPool.2610451" = type { %"class.asmjit::_abi_1_10::ZoneList.2610452", ptr, i32, i16, i8, i8, i64, i64, i64 }
-%"class.asmjit::_abi_1_10::ZoneList.2610452" = type { [2 x ptr] }
+%"class.asmjit::_abi_1_10::JitAllocatorPool.2610418" = type { %"class.asmjit::_abi_1_10::ZoneList.2610419", ptr, i32, i16, i8, i8, i64, i64, i64 }
+%"class.asmjit::_abi_1_10::ZoneList.2610419" = type { [2 x ptr] }
 
 ; 7 occurrences:
 ; arrow/optimized/grouper.cc.ll
@@ -14,7 +14,7 @@
 define ptr @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %4 = getelementptr nusw %"class.asmjit::_abi_1_10::JitAllocatorPool.2610451", ptr %1, i64 %2
+  %4 = getelementptr nusw %"class.asmjit::_abi_1_10::JitAllocatorPool.2610418", ptr %1, i64 %2
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %3
   ret ptr %6

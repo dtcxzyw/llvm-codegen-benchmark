@@ -139,17 +139,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	vzeroupper
 	retq
 .LCPI6_0:
-	.quad	4294967295                      # 0xffffffff
-func000000000000002c:                   # @func000000000000002c
-	vpsllq	$6, %ymm1, %ymm1
-	vpor	%ymm1, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
-	vpcmpneqq	.LCPI6_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI7_0:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -182,9 +171,9 @@ func000000000000002c:                   # @func000000000000002c
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
-.LCPI7_1:
+.LCPI6_1:
 	.quad	46186417356800                  # 0x2a019d000000
-.LCPI7_2:
+.LCPI6_2:
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -195,8 +184,8 @@ func000000000000002c:                   # @func000000000000002c
 	.byte	0                               # 0x0
 func00000000000000c1:                   # @func00000000000000c1
 	vpsllq	$40, %ymm1, %ymm1
-	vpternlogq	$168, .LCPI7_2(%rip){1to4}, %ymm0, %ymm1 # ymm1 = mem & (ymm1 | ymm0)
-	vpcmpeqq	.LCPI7_1(%rip){1to4}, %ymm1, %k0
+	vpternlogq	$168, .LCPI6_2(%rip){1to4}, %ymm0, %ymm1 # ymm1 = mem & (ymm1 | ymm0)
+	vpcmpeqq	.LCPI6_1(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

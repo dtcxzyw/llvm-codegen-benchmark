@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3291703" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3291669" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 9 occurrences:
 ; flatbuffers/optimized/idl_gen_kotlin.cpp.ll
@@ -41,7 +41,7 @@ entry:
   %3 = icmp eq i32 %2, 14
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i64 -4858, i64 -4857
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3291703", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3291669", ptr %0, i64 %5
   ret ptr %6
 }
 

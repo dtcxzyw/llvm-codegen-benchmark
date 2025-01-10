@@ -1,9 +1,9 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.bio_vec.3533318 = type { ptr, i32, i32 }
-%struct.hid_report_enum.3538081 = type { i32, %struct.list_head.3538075, [256 x ptr] }
-%struct.list_head.3538075 = type { ptr, ptr }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.bio_vec.3533284 = type { ptr, i32, i32 }
+%struct.hid_report_enum.3538047 = type { i32, %struct.list_head.3538041, [256 x ptr] }
+%struct.list_head.3538041 = type { ptr, ptr }
 
 ; 5 occurrences:
 ; abc/optimized/giaKf.c.ll
@@ -18,7 +18,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 4
-  %7 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %6, i64 0, i64 %0
+  %7 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %6, i64 0, i64 %0
   ret ptr %7
 }
 
@@ -44,7 +44,7 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 -40
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -272
-  %7 = getelementptr [17 x %struct.bio_vec.3533318], ptr %6, i64 0, i64 %0
+  %7 = getelementptr [17 x %struct.bio_vec.3533284], ptr %6, i64 0, i64 %0
   ret ptr %7
 }
 
@@ -55,7 +55,7 @@ define ptr @func00000000000001c0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 80
-  %5 = getelementptr %struct.hid_report_enum.3538081, ptr %4, i64 %3
+  %5 = getelementptr %struct.hid_report_enum.3538047, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -2048
   %7 = getelementptr [256 x ptr], ptr %6, i64 0, i64 %0
   ret ptr %7

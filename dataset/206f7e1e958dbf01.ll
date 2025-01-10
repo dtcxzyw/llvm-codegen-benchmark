@@ -1,5 +1,5 @@
 
-; 2226 occurrences:
+; 2227 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -1542,6 +1542,7 @@
 ; openusd/optimized/aggregateTreeBuilder.cpp.ll
 ; openusd/optimized/assetLocalization.cpp.ll
 ; openusd/optimized/changes.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/copyUtils.cpp.ll
 ; openusd/optimized/dataBuffer.cpp.ll
 ; openusd/optimized/env.cpp.ll

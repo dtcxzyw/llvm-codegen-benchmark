@@ -27,13 +27,6 @@ func000000000000003a:                   # @func000000000000003a
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func000000000000003e:                   # @func000000000000003e
-	zext.h	a2, a2
-	sh1add	a2, a2, a2
-	slli	a2, a2, 13
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret
 func0000000000000015:                   # @func0000000000000015
 	zext.h	a2, a2
 	lui	a3, 1048571

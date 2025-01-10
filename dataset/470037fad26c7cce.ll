@@ -1,9 +1,9 @@
 
-%struct.__wasi_subscription_t.2766943 = type { i64, %struct.__wasi_subscription_u_t.2766944 }
-%struct.__wasi_subscription_u_t.2766944 = type { i8, %union.__wasi_subscription_u_u_t.2766945 }
-%union.__wasi_subscription_u_u_t.2766945 = type { %struct.__wasi_subscription_clock_t.2766946 }
-%struct.__wasi_subscription_clock_t.2766946 = type { i32, i64, i64, i16 }
-%struct.__wasi_iovec_t.2766954 = type { i32, i32 }
+%struct.__wasi_subscription_t.2766909 = type { i64, %struct.__wasi_subscription_u_t.2766910 }
+%struct.__wasi_subscription_u_t.2766910 = type { i8, %union.__wasi_subscription_u_u_t.2766911 }
+%union.__wasi_subscription_u_u_t.2766911 = type { %struct.__wasi_subscription_clock_t.2766912 }
+%struct.__wasi_subscription_clock_t.2766912 = type { i32, i64, i64, i16 }
+%struct.__wasi_iovec_t.2766920 = type { i32, i32 }
 
 ; 12 occurrences:
 ; arrow/optimized/feather.cc.ll
@@ -23,7 +23,7 @@ define ptr @func0000000000000003(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %0, ptr %1, ptr null
-  %5 = getelementptr nusw nuw %struct.__wasi_subscription_t.2766943, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.__wasi_subscription_t.2766909, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -47,7 +47,7 @@ define ptr @func0000000000000007(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %0, ptr %1, ptr null
-  %5 = getelementptr nusw nuw %struct.__wasi_iovec_t.2766954, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.__wasi_iovec_t.2766920, ptr %4, i64 %3
   ret ptr %5
 }
 

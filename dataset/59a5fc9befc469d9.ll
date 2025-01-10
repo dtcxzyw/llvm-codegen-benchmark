@@ -102,7 +102,7 @@ entry:
   ret i1 %4
 }
 
-; 93 occurrences:
+; 94 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
@@ -171,6 +171,7 @@ entry:
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/pg_rewind.ll
+; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/syncrep.ll
 ; proj/optimized/defmodel.cpp.ll
 ; quickjs/optimized/quickjs-libc.ll

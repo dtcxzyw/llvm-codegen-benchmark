@@ -1,11 +1,10 @@
 
-%struct.pm_options_scope.2601139 = type { i64, ptr }
-%class.SwitchRange.2747980 = type { i32, i32, i32, float }
-%struct.Vec_Int_t_.2877379 = type { i32, i32, ptr }
-%"class.gmx::BasicVector.3373767" = type { [3 x float] }
-%struct.genl_split_ops.3552105 = type { %union.anon.7.3552106, ptr, i32, i8, i8, i8, i8 }
-%union.anon.7.3552106 = type { %struct.anon.8.3552107 }
-%struct.anon.8.3552107 = type { ptr, ptr, ptr }
+%struct.pm_options_scope.2601106 = type { i64, ptr }
+%class.SwitchRange.2747946 = type { i32, i32, i32, float }
+%struct.Vec_Int_t_.2877345 = type { i32, i32, ptr }
+%struct.genl_split_ops.3552071 = type { %union.anon.7.3552072, ptr, i32, i8, i8, i8, i8 }
+%union.anon.7.3552072 = type { %struct.anon.8.3552073 }
+%struct.anon.8.3552073 = type { ptr, ptr, ptr }
 
 ; 21 occurrences:
 ; abc/optimized/abcUtil.c.ll
@@ -47,7 +46,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pm_options_scope.2601139, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.pm_options_scope.2601106, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -69,8 +68,9 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
 ; icu/optimized/unisetspan.ll
 ; jq/optimized/execute.ll
 ; libquic/optimized/v3_ncons.c.ll
@@ -180,20 +180,8 @@ define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %class.SwitchRange.2747980, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %class.SwitchRange.2747946, ptr %0, i64 %4, i32 1
   ret ptr %5
-}
-
-; 1 occurrences:
-; fmt/optimized/chrono-test.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 -2
-  ret ptr %6
 }
 
 ; 6 occurrences:
@@ -208,7 +196,7 @@ define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Vec_Int_t_.2877379, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.Vec_Int_t_.2877345, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -227,24 +215,13 @@ entry:
 }
 
 ; 1 occurrences:
-; gromacs/optimized/tpi.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nuw %"class.gmx::BasicVector.3373767", ptr %0, i64 %4, i32 0, i64 1
-  ret ptr %5
-}
-
-; 1 occurrences:
 ; linux/optimized/genetlink.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.genl_split_ops.3552105, ptr %0, i64 %4, i32 5
+  %5 = getelementptr %struct.genl_split_ops.3552071, ptr %0, i64 %4, i32 5
   ret ptr %5
 }
 

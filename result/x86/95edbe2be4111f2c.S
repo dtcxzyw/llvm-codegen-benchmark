@@ -4,9 +4,9 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	2(%rdi,%rdx,4), %rax
 	retq
 func000000000000007f:                   # @func000000000000007f
-	shrl	$16, %edx
+	shrl	%edx
 	addl	%esi, %edx
-	leaq	28(%rdi,%rdx,4), %rax
+	leaq	4(%rdi,%rdx,4), %rax
 	retq
 func000000000000007b:                   # @func000000000000007b
 	shrl	%edx

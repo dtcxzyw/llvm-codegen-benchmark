@@ -1,8 +1,8 @@
 
-%struct.code.2876641 = type { i8, i8, i16 }
-%"class.llvm::SDUse.3276506" = type { %"class.llvm::SDValue.3276492", ptr, ptr, ptr }
-%"class.llvm::SDValue.3276492" = type <{ ptr, i32, [4 x i8] }>
-%struct.code.3550467 = type { i8, i8, i16 }
+%struct.code.2876607 = type { i8, i8, i16 }
+%"class.llvm::SDUse.3276472" = type { %"class.llvm::SDValue.3276458", ptr, ptr, ptr }
+%"class.llvm::SDValue.3276458" = type <{ ptr, i32, [4 x i8] }>
+%struct.code.3550433 = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
@@ -154,7 +154,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2876607, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -182,7 +182,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3276506", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3276472", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -232,7 +232,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.code.3550467, ptr %0, i64 %5
+  %6 = getelementptr %struct.code.3550433, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2824361 = type { float, float, float }
+%class.aiVector3t.2824327 = type { float, float, float }
 
 ; 6 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 768614336404564650)
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, i64 768614336404564650, i64 %3
-  %6 = getelementptr nusw nuw %class.aiVector3t.2824361, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.aiVector3t.2824327, ptr %0, i64 %5
   ret ptr %6
 }
 

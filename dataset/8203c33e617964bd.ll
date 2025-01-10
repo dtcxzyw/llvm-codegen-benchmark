@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2940023 = type { %union.Value.2940024, [1 x i32], i32 }
-%union.Value.2940024 = type { ptr }
+%struct.lua_TValue.2939989 = type { %union.Value.2939990, [1 x i32], i32 }
+%union.Value.2939990 = type { ptr }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -29,9 +29,9 @@ define ptr @func000000000000009e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct.lua_TValue.2940023, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.lua_TValue.2939989, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 16
-  %7 = getelementptr nusw %struct.lua_TValue.2940023, ptr %6, i64 %4
+  %7 = getelementptr nusw %struct.lua_TValue.2939989, ptr %6, i64 %4
   ret ptr %7
 }
 

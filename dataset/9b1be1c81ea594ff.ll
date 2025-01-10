@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
 
 ; 29 occurrences:
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -74,7 +74,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = icmp eq i64 %1, 4294967294
   %6 = select i1 %5, i64 1, i64 %4
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3188737", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3188703", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -89,7 +89,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = icmp eq i64 %1, 4294967294
   %6 = select i1 %5, i64 1, i64 %4
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3188737", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3188703", ptr %0, i64 %6
   ret ptr %7
 }
 

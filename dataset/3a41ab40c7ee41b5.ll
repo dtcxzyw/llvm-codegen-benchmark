@@ -1,5 +1,5 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
 
 ; 4 occurrences:
 ; linux/optimized/nfs.ll
@@ -13,7 +13,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %6
+  %7 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %6
   ret ptr %7
 }
 

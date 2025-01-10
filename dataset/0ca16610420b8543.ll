@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 57 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; clamav/optimized/mbr.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -35,6 +36,8 @@
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/snapmgr.ll
@@ -63,7 +66,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 21 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
@@ -75,7 +78,6 @@ entry:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; openexr/optimized/ImfDeepImageChannel.cpp.ll
@@ -86,7 +88,6 @@ entry:
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/snapbuild.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

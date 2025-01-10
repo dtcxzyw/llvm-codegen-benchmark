@@ -47,17 +47,12 @@ func0000000000000009:                   # @func0000000000000009
 	sllw	a0, a1, a0
 	not	a0, a0
 	ret
-func000000000000000f:                   # @func000000000000000f
-	negw	a1, a0
-	and	a0, a0, a1
-	not	a0, a0
-	ret
 func0000000000000007:                   # @func0000000000000007
 	negw	a1, a0
 	and	a0, a0, a1
 	not	a0, a0
 	ret
-.LCPI7_0:                               # -- Begin function func0000000000000005
+.LCPI6_0:                               # -- Begin function func0000000000000005
 	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
 func0000000000000005:                   # @func0000000000000005
 	negw	a1, a0
@@ -66,8 +61,8 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
-	lui	a1, %hi(.LCPI7_0)
-	addi	a1, a1, %lo(.LCPI7_0)
+	lui	a1, %hi(.LCPI6_0)
+	addi	a1, a1, %lo(.LCPI6_0)
 	add	a0, a0, a1
 	lbu	a0, 0(a0)
 	li	a1, -1

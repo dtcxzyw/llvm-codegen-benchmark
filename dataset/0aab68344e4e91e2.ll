@@ -1,5 +1,5 @@
 
-; 278 occurrences:
+; 279 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
@@ -233,6 +233,7 @@
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/euchre.cc.ll
@@ -288,7 +289,7 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; arrow/optimized/key_map.cc.ll
@@ -296,6 +297,7 @@ entry:
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; php/optimized/ir_ra.ll
@@ -308,30 +310,6 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i64, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %2, 2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
   ret ptr %6
 }
 

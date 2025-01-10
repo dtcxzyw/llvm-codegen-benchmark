@@ -292,7 +292,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; libquic/optimized/des.c.ll
 ; lief/optimized/aes.c.ll
 ; lief/optimized/des.c.ll
@@ -304,9 +304,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll

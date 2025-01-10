@@ -1,8 +1,8 @@
 
-%"class.std::vector.248.2638986" = type { %"struct.std::_Vector_base.249.2638987" }
-%"struct.std::_Vector_base.249.2638987" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638988" }
-%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638988" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638989" }
-%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638989" = type { ptr, ptr, ptr }
+%"class.std::vector.248.2638953" = type { %"struct.std::_Vector_base.249.2638954" }
+%"struct.std::_Vector_base.249.2638954" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638955" }
+%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638955" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638956" }
+%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638956" = type { ptr, ptr, ptr }
 
 ; 25 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -36,7 +36,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = xor i8 %2, 1
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw nuw %"class.std::vector.248.2638986", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::vector.248.2638953", ptr %0, i64 %4
   ret ptr %5
 }
 

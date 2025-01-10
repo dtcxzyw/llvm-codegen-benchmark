@@ -1,9 +1,9 @@
 
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
-%"struct.RunTimeClassInfo::RTVerifierConstraint.2730952" = type { i32, i32 }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
+%"struct.RunTimeClassInfo::RTVerifierConstraint.2730918" = type { i32, i32 }
 
 ; 7 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -349,37 +349,13 @@ entry:
   ret ptr %4
 }
 
-; 128 occurrences:
+; 101 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; bullet3/optimized/btMultiBody.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; clamav/optimized/rijndael.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -464,9 +440,6 @@ entry:
 ; qemu/optimized/fdt_addresses.c.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/libvduse.c.ll
-; qemu/optimized/libvhost-user.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/raudio.c.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
@@ -514,7 +487,7 @@ entry:
   ret ptr %5
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/7zIn.c.ll
@@ -551,6 +524,8 @@ entry:
 ; proxygen/optimized/RequestHandlerAdaptor.cpp.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; xgboost/optimized/gradient_index.cc.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -648,7 +623,7 @@ entry:
   ret ptr %5
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/mioFunc.c.ll
@@ -706,7 +681,6 @@ entry:
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/lewis_signaling_test.cc.ll
@@ -854,7 +828,7 @@ entry:
   ret ptr %5
 }
 
-; 103 occurrences:
+; 105 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -954,6 +928,8 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
@@ -1128,7 +1104,7 @@ define ptr @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct._StackType.2710345, ptr %4, i64 %0
+  %5 = getelementptr nusw %struct._StackType.2710311, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -1140,7 +1116,7 @@ define ptr @func0000000000000013(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730952", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730918", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -1670,34 +1646,6 @@ define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 7
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 6 occurrences:
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
-; zfp/optimized/encode4d.c.ll
-; zfp/optimized/encode4f.c.ll
-; zfp/optimized/encode4i.c.ll
-; zfp/optimized/encode4l.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 9
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 2 occurrences:
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 7
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }

@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; boost/optimized/approximately_equals.ll
 ; boost/optimized/default_formatter_factory.ll
 ; cmake/optimized/pingpong.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll

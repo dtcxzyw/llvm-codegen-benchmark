@@ -49,9 +49,3 @@ func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
-func00000000000000fe:                   # @func00000000000000fe
-	sub	a0, a0, a2
-	sext.w	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, -8
-	ret

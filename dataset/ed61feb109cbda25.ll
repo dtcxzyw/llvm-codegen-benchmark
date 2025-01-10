@@ -1,10 +1,10 @@
 
-%"class.llvm::SDUse.3242400" = type { %"class.llvm::SDValue.3242380", ptr, ptr, ptr }
-%"class.llvm::SDValue.3242380" = type <{ ptr, i32, [4 x i8] }>
-%struct.conversation_element.3449322 = type { i32, %union.anon.3449323 }
-%union.anon.3449323 = type { %struct._address.3449321 }
-%struct._address.3449321 = type { i32, i32, ptr, ptr }
-%struct.VP8LBackwardRefs.3895034 = type { i32, i32, ptr, ptr, ptr, ptr }
+%"class.llvm::SDUse.3242366" = type { %"class.llvm::SDValue.3242346", ptr, ptr, ptr }
+%"class.llvm::SDValue.3242346" = type <{ ptr, i32, [4 x i8] }>
+%struct.conversation_element.3449288 = type { i32, %union.anon.3449289 }
+%union.anon.3449289 = type { %struct._address.3449287 }
+%struct._address.3449287 = type { i32, i32, ptr, ptr }
+%struct.VP8LBackwardRefs.3894984 = type { i32, i32, ptr, ptr, ptr, ptr }
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
@@ -558,7 +558,7 @@ define ptr @func00000000000000cf(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 1, i64 2
-  %3 = getelementptr nuw %"class.llvm::SDUse.3242400", ptr %0, i64 %2, i32 0, i32 1
+  %3 = getelementptr nuw %"class.llvm::SDUse.3242366", ptr %0, i64 %2, i32 0, i32 1
   ret ptr %3
 }
 
@@ -582,7 +582,7 @@ define ptr @func00000000000000c3(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 2, i64 1
-  %3 = getelementptr %struct.conversation_element.3449322, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.conversation_element.3449288, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -718,7 +718,7 @@ define ptr @func00000000000000cc(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 1, i64 2
-  %3 = getelementptr %struct.VP8LBackwardRefs.3895034, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.VP8LBackwardRefs.3894984, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

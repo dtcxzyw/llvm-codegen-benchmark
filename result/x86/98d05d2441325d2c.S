@@ -51,7 +51,7 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000001d:                   # @func000000000000001d
 	movl	%esi, %eax
 	subq	%rax, %rdi
-	leaq	1(%rdi), %rax
+	leaq	1073741824(%rdi), %rax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movl	%esi, %eax

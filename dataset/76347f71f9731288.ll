@@ -1,7 +1,5 @@
 
-; 291 occurrences:
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
+; 288 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcLut.c.ll
@@ -283,7 +281,6 @@
 ; wireshark/optimized/packet-z3950.c.ll
 ; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/pwdbased.c.ll
-; yosys/optimized/SimpSolver.ll
 ; z3/optimized/euf_internalize.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
@@ -302,7 +299,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 1339 occurrences:
+; 1340 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -1533,6 +1530,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/superword.ll
+; openjdk/optimized/type.ll
 ; openjdk/optimized/xLiveMap.ll
 ; openjdk/optimized/zLiveMap.ll
 ; openspiel/optimized/phantom_go.cc.ll

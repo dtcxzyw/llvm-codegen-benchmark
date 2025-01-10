@@ -101,11 +101,12 @@ entry:
   ret i1 %2
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/threadaffinity.cpp.ll
 ; hwloc/optimized/topology.ll
+; linux/optimized/rtmutex_api.ll
 ; lvgl/optimized/lv_draw_sw_border.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -201,6 +202,24 @@ entry:
   ret i1 %.not
 }
 
+; 10 occurrences:
+; cmake/optimized/huf_compress.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/rose_build_dedupe.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/stream.c.ll
+; lodepng/optimized/lodepng.cpp.ll
+; quickjs/optimized/quickjs.ll
+; z3/optimized/qe_arith_plugin.cpp.ll
+; z3/optimized/sat_simplifier.cpp.ll
+; zstd/optimized/huf_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %.not = icmp ult i32 %0, %1
+  ret i1 %.not
+}
+
 ; 2 occurrences:
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
@@ -217,23 +236,6 @@ entry:
 define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp samesign ult i32 %0, %1
-  ret i1 %.not
-}
-
-; 9 occurrences:
-; cmake/optimized/huf_compress.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/rose_build_dedupe.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
-; hyperscan/optimized/stream.c.ll
-; quickjs/optimized/quickjs.ll
-; z3/optimized/qe_arith_plugin.cpp.ll
-; z3/optimized/sat_simplifier.cpp.ll
-; zstd/optimized/huf_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
-entry:
-  %.not = icmp ult i32 %0, %1
   ret i1 %.not
 }
 

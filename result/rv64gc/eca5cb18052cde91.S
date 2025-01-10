@@ -5,13 +5,6 @@ func0000000000000174:                   # @func0000000000000174
 	addiw	a0, a0, 10
 	sltu	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
-	or	a1, a1, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	addiw	a0, a0, -3
-	slt	a0, a0, a1
-	ret
 func0000000000000106:                   # @func0000000000000106
 	or	a1, a1, a2
 	slli	a1, a1, 48

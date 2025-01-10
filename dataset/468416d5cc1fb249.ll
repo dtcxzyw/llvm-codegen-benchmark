@@ -84,7 +84,9 @@ entry:
   ret i1 %7
 }
 
-; 33 occurrences:
+; 35 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll

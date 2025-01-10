@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/str_format_test.cc.ll
@@ -15,8 +15,6 @@
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; php/optimized/logical_filters.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; ruby/optimized/enumerator.ll

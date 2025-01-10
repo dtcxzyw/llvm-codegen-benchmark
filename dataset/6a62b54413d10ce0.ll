@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3200070" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3200036" = type { ptr, ptr, ptr, ptr }
 
 ; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -49,7 +49,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 -32
-  %6 = getelementptr nusw %"class.llvm::Use.3200070", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3200036", ptr %5, i64 %4
   ret ptr %6
 }
 

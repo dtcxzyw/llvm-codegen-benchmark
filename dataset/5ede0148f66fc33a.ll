@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -20,7 +20,6 @@ entry:
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/drm_dsc_helper.ll

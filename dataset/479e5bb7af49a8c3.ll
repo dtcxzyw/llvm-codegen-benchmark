@@ -1,5 +1,5 @@
 
-%struct.dynamic_lcid_drb_mapping_t.3449484 = type { i32, i32, i32, i32, i8 }
+%struct.dynamic_lcid_drb_mapping_t.3449450 = type { i32, i32, i32, i32, i8 }
 
 ; 2 occurrences:
 ; libpng/optimized/pngpread.c.ll
@@ -88,7 +88,7 @@ entry:
 define ptr @func0000000000000013(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [33 x %struct.dynamic_lcid_drb_mapping_t.3449484], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [33 x %struct.dynamic_lcid_drb_mapping_t.3449450], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }

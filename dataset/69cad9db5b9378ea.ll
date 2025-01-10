@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; meilisearch-rs/optimized/2wt0tk1rjionlq9o.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
@@ -8,7 +8,6 @@
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
-; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll

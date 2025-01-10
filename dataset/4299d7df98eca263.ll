@@ -1,15 +1,15 @@
 
-%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
-%"struct.std::array.2683308" = type { [14 x i8] }
-%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"struct.folly::f14::detail::F14Chunk.2684259" = type { %"struct.std::array.59.2684260", i8, i8, %"struct.std::array.60.2684261" }
-%"struct.std::array.59.2684260" = type { [14 x i8] }
-%"struct.std::array.60.2684261" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684258"] }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
-%struct.phasor_info.3447545 = type { [256 x i8], i32, i32, float, float }
-%struct.HistogramLiteral.3843297 = type { [256 x i32], i64, double }
-%struct.HistogramLiteral.3843314 = type { [256 x i32], i64, double }
+%"struct.folly::f14::detail::F14Chunk.2683274" = type { %"struct.std::array.2683275", i8, i8, %"struct.std::array.53.2683276" }
+%"struct.std::array.2683275" = type { [14 x i8] }
+%"struct.std::array.53.2683276" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683234"] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2684226" = type { %"struct.std::array.59.2684227", i8, i8, %"struct.std::array.60.2684228" }
+%"struct.std::array.59.2684227" = type { [14 x i8] }
+%"struct.std::array.60.2684228" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684225"] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
+%struct.phasor_info.3447511 = type { [256 x i8], i32, i32, float, float }
+%struct.HistogramLiteral.3843247 = type { [256 x i32], i64, double }
+%struct.HistogramLiteral.3843264 = type { [256 x i32], i64, double }
 
 ; 10 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -26,7 +26,7 @@
 define ptr @func000000000000001b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2683274", ptr %0, i64 %1
   %5 = getelementptr nusw nuw [14 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -47,7 +47,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2684259", ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2684226", ptr %0, i64 %1
   %5 = getelementptr nusw nuw [14 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -88,7 +88,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.phasor_info.3447545, ptr %0, i64 %1
+  %4 = getelementptr %struct.phasor_info.3447511, ptr %0, i64 %1
   %5 = getelementptr [256 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -112,7 +112,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.HistogramLiteral.3843297, ptr %0, i64 %1
+  %4 = getelementptr %struct.HistogramLiteral.3843247, ptr %0, i64 %1
   %5 = getelementptr nusw nuw [256 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -123,7 +123,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %struct.HistogramLiteral.3843314, ptr %0, i64 %1
+  %4 = getelementptr nusw %struct.HistogramLiteral.3843264, ptr %0, i64 %1
   %5 = getelementptr nusw nuw [256 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

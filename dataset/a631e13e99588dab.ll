@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,8 +15,6 @@
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/gc.ll

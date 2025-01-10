@@ -1,27 +1,7 @@
 
-; 11 occurrences:
-; boost/optimized/graphml.ll
-; diesel-rs/optimized/2gwia6lwj254vbd7.ll
-; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; folly/optimized/Elf.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; opencv/optimized/matmul.dispatch.cpp.ll
-; raylib/optimized/raudio.c.ll
-; raylib/optimized/rcore.c.ll
-; wasmedge/optimized/wasmedge.cpp.ll
-; wolfssl/optimized/pkcs12.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 33 occurrences:
+; 34 occurrences:
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
+; folly/optimized/Elf.cpp.ll
 ; icu/optimized/genbrk.ll
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/wrtxml.ll
@@ -60,6 +40,26 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 10 occurrences:
+; boost/optimized/graphml.ll
+; diesel-rs/optimized/2gwia6lwj254vbd7.ll
+; diesel-rs/optimized/3btvyztn2iiarpvf.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
+; wasmedge/optimized/wasmedge.cpp.ll
+; wolfssl/optimized/pkcs12.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 1262 occurrences:
+; 1260 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -333,8 +333,6 @@
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; mini-lsm-rs/optimized/4g3rsyfgzieucq3l.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll

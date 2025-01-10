@@ -1,5 +1,5 @@
 
-%struct.ImVec2.3454338 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 30 occurrences:
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -177,8 +177,8 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %5
-  %7 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %6, i64 %4
+  %6 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %6, i64 %4
   ret ptr %7
 }
 

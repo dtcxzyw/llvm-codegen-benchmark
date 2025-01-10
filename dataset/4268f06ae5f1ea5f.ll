@@ -13,9 +13,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:

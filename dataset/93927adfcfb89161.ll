@@ -1,9 +1,10 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; gromacs/optimized/angle.cpp.ll
 ; grpc/optimized/outlier_detection.cc.ll
 ; lightgbm/optimized/objective_function.cpp.ll
+; linux/optimized/scsi_logging.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll

@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; linux/optimized/mballoc.ll
 ; php/optimized/pcre2_jit_compile.ll
-; postgres/optimized/regexec.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
 
 ; 64 occurrences:
 ; casadi/optimized/interpolant.cpp.ll
@@ -420,8 +420,8 @@ entry:
 define i64 @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3191562", ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.llvm::Use.3191562", ptr %4, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3191528", ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.llvm::Use.3191528", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

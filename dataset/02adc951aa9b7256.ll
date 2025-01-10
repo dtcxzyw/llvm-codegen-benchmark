@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; arrow/optimized/basic_decimal.cc.ll
+; 4 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll

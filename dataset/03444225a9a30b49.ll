@@ -1,12 +1,12 @@
 
-%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
-%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
-%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
-%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
-%"class.clang::Qualifiers.3335873" = type { i64 }
-%"class.clang::FunctionEffect.3335875" = type { i8 }
+%"class.std::function.2636116" = type { %"class.std::_Function_base.2636117", ptr }
+%"class.std::_Function_base.2636117" = type { %"union.std::_Any_data.2636118", ptr }
+%"union.std::_Any_data.2636118" = type { %"union.std::_Nocopy_types.2636119" }
+%"union.std::_Nocopy_types.2636119" = type { { i64, i64 } }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914" = type { i8, [7 x i8] }
+%"class.clang::Qualifiers.3335839" = type { i64 }
+%"class.clang::FunctionEffect.3335841" = type { i8 }
 
 ; 28 occurrences:
 ; mold/optimized/main.cc.ALPHA.cc.ll
@@ -42,8 +42,8 @@ define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw %"class.std::function.2636149", ptr %4, i64 %3
-  %6 = getelementptr nusw %"class.std::function.2636149", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.std::function.2636116", ptr %4, i64 %3
+  %6 = getelementptr nusw %"class.std::function.2636116", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -145,8 +145,8 @@ define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %4, i64 %3
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -157,8 +157,8 @@ define ptr @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335873", ptr %4, i64 %3
-  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335875", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.clang::Qualifiers.3335839", ptr %4, i64 %3
+  %6 = getelementptr nusw %"class.clang::FunctionEffect.3335841", ptr %5, i64 %0
   ret ptr %6
 }
 

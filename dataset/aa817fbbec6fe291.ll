@@ -120,7 +120,7 @@ entry:
   ret i32 %4
 }
 
-; 81 occurrences:
+; 79 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -148,7 +148,6 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/regcomp.ll
 ; jq/optimized/regparse.ll
-; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/hdac_stream.ll
@@ -194,7 +193,6 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-atalk.c.ll
-; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; wireshark/optimized/packet-dcerpc-ndr.c.ll

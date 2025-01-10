@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; icu/optimized/coleitr.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/early-lookup.ll
@@ -35,7 +35,6 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -89,6 +88,24 @@ entry:
   ret i32 %7
 }
 
+; 6 occurrences:
+; linux/optimized/buffer.ll
+; linux/optimized/inotify_user.ll
+; linux/optimized/lbr.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGClass.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = lshr i32 %3, 17
+  %5 = and i32 %4, 1
+  %6 = or disjoint i32 %1, %5
+  %7 = or i32 %6, %0
+  ret i32 %7
+}
+
 ; 3 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -115,23 +132,6 @@ entry:
   %5 = and i32 %4, 224
   %6 = or i32 %1, %5
   %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
-; 5 occurrences:
-; linux/optimized/buffer.ll
-; linux/optimized/inotify_user.ll
-; linux/optimized/lbr.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/CGClass.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = lshr i32 %3, 13
-  %5 = and i32 %4, 4096
-  %6 = or disjoint i32 %1, %5
-  %7 = or i32 %6, %0
   ret i32 %7
 }
 

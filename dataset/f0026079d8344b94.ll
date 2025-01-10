@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
-%union._zend_value.2791866 = type { i64 }
-%union.anon.0.2791867 = type { i32 }
-%union.anon.3.2791868 = type { i32 }
+%struct._zval_struct.2791824 = type { %union._zend_value.2791832, %union.anon.0.2791833, %union.anon.3.2791834 }
+%union._zend_value.2791832 = type { i64 }
+%union.anon.0.2791833 = type { i32 }
+%union.anon.3.2791834 = type { i32 }
 
 ; 6 occurrences:
 ; cmake/optimized/archive_write_set_format_ar.c.ll
@@ -133,7 +133,7 @@ entry:
   %2 = add i32 %1, 5
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2791824, ptr %0, i64 %4
   ret ptr %5
 }
 

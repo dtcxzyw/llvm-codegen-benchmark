@@ -37,9 +37,6 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$2001, %rdi                     # imm = 0x7D1
 	setae	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	xorl	%eax, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	notl	%edi
 	testb	$15, %dil
@@ -61,6 +58,11 @@ func0000000000000008:                   # @func0000000000000008
 	andq	$-1048576, %rdi                 # imm = 0xFFF00000
 	cmpq	$268435457, %rdi                # imm = 0x10000001
 	setae	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	notl	%edi
+	testb	$15, %dil
+	sete	%al
 	retq
 func0000000000000048:                   # @func0000000000000048
 	addq	$15, %rdi

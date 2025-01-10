@@ -13,10 +13,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; linux/optimized/ksysfs.ll
 ; node/optimized/libnode.node_buffer.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind
@@ -110,7 +111,7 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -118,6 +119,8 @@ entry:
 ; luau/optimized/VecDeque.test.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -179,7 +182,10 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; opencv/optimized/arithm.cpp.ll
 ; postgres/optimized/sha1.ll
 ; postgres/optimized/sha1_shlib.ll

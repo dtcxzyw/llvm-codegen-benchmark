@@ -33,15 +33,15 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.long	18                              # 0x12
+	.long	15                              # 0xf
 .LCPI3_1:
-	.long	12                              # 0xc
+	.long	18                              # 0x12
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestnmd	%ymm2, %ymm2, %k2
-	vpbroadcastd	.LCPI3_0(%rip), %ymm0   # ymm0 = [18,18,18,18,18,18,18,18]
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k2} # ymm0 {%k2} = [12,12,12,12,12,12,12,12]
+	vpbroadcastd	.LCPI3_0(%rip), %ymm0   # ymm0 = [15,15,15,15,15,15,15,15]
+	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k2} # ymm0 {%k2} = [18,18,18,18,18,18,18,18]
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI4_0:

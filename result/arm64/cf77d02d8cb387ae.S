@@ -37,13 +37,3 @@ func0000000000000018:                   // @func0000000000000018
 	csel	w0, w0, w9, ne
 	ret
                                         // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	tst	w2, #0x1
-	mov	w8, #12                         // =0xc
-	mov	w9, #18                         // =0x12
-	csel	w8, w9, w8, ne
-	cmp	x1, #0
-	csel	w0, w8, w0, eq
-	ret
-                                        // -- End function

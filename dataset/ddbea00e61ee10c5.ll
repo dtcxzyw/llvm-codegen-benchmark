@@ -1,8 +1,8 @@
 
-%"struct.RunTimeClassInfo::RTVerifierConstraint.2730952" = type { i32, i32 }
-%struct.zend_shared_segment_shm.2792752 = type { %struct._zend_shared_segment.2792753, i32 }
-%struct._zend_shared_segment.2792753 = type { i64, i64, i64, ptr }
-%struct.aiTexel.2822513 = type { i8, i8, i8, i8 }
+%"struct.RunTimeClassInfo::RTVerifierConstraint.2730918" = type { i32, i32 }
+%struct.zend_shared_segment_shm.2792718 = type { %struct._zend_shared_segment.2792719, i32 }
+%struct._zend_shared_segment.2792719 = type { i64, i64, i64, ptr }
+%struct.aiTexel.2822479 = type { i8, i8, i8, i8 }
 
 ; 14 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -179,7 +179,7 @@ define ptr @func000000000000004f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730952", ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730918", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -208,7 +208,7 @@ define ptr @func000000000000006f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %struct.zend_shared_segment_shm.2792752, ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %struct.zend_shared_segment_shm.2792718, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -225,7 +225,7 @@ define ptr @func000000000000007f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 5
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %struct.aiTexel.2822513, ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %struct.aiTexel.2822479, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -435,7 +435,9 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
@@ -446,19 +448,6 @@ entry:
   %3 = shl i64 %2, 7
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
-  ret ptr %6
-}
-
-; 2 occurrences:
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 7
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw double, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   ret ptr %6
 }

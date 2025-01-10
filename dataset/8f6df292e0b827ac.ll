@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::VersionBuilder::Rep::LevelState.2615255" = type { %"class.std::unordered_set.2615256", %"class.std::unordered_map.362.2615257" }
-%"class.std::unordered_set.2615256" = type { %"class.std::_Hashtable.349.2615258" }
-%"class.std::_Hashtable.349.2615258" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615259", i64, %"struct.std::__detail::_Prime_rehash_policy.2615260", ptr }
-%"struct.std::__detail::_Hash_node_base.2615259" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2615260" = type { float, i64 }
-%"class.std::unordered_map.362.2615257" = type { %"class.std::_Hashtable.363.2615261" }
-%"class.std::_Hashtable.363.2615261" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615259", i64, %"struct.std::__detail::_Prime_rehash_policy.2615260", ptr }
-%struct.sortedSymbol_t.3543338 = type { i8 }
+%"struct.rocksdb::VersionBuilder::Rep::LevelState.2615222" = type { %"class.std::unordered_set.2615223", %"class.std::unordered_map.362.2615224" }
+%"class.std::unordered_set.2615223" = type { %"class.std::_Hashtable.349.2615225" }
+%"class.std::_Hashtable.349.2615225" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615226", i64, %"struct.std::__detail::_Prime_rehash_policy.2615227", ptr }
+%"struct.std::__detail::_Hash_node_base.2615226" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2615227" = type { float, i64 }
+%"class.std::unordered_map.362.2615224" = type { %"class.std::_Hashtable.363.2615228" }
+%"class.std::_Hashtable.363.2615228" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615226", i64, %"struct.std::__detail::_Prime_rehash_policy.2615227", ptr }
+%struct.sortedSymbol_t.3543304 = type { i8 }
 
 ; 6 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -165,7 +165,7 @@ define i1 @func0000000000000761(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %"struct.rocksdb::VersionBuilder::Rep::LevelState.2615255", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.rocksdb::VersionBuilder::Rep::LevelState.2615222", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 112
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -272,7 +272,7 @@ define i1 @func0000000000000601(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 736
-  %5 = getelementptr %struct.sortedSymbol_t.3543338, ptr %4, i64 %3
+  %5 = getelementptr %struct.sortedSymbol_t.3543304, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %0, i64 1
   %7 = icmp eq ptr %6, %5
   ret i1 %7

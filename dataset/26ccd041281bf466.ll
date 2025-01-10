@@ -1,6 +1,6 @@
 
-%"class.llvm::TypeSize.3346916" = type { %"class.llvm::details::FixedOrScalableQuantity.base.3346917", [7 x i8] }
-%"class.llvm::details::FixedOrScalableQuantity.base.3346917" = type <{ i64, i8 }>
+%"class.llvm::TypeSize.3346882" = type { %"class.llvm::details::FixedOrScalableQuantity.base.3346883", [7 x i8] }
+%"class.llvm::details::FixedOrScalableQuantity.base.3346883" = type <{ i64, i8 }>
 
 ; 2 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -20,7 +20,7 @@ entry:
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 24
-  %4 = getelementptr nusw nuw %"class.llvm::TypeSize.3346916", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.llvm::TypeSize.3346882", ptr %3, i64 %2
   %5 = select i1 %0, ptr %1, ptr %4
   ret ptr %5
 }

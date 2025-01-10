@@ -1,5 +1,5 @@
 
-%struct.pmp_entry_t.2710180 = type { i64, i8 }
+%struct.pmp_entry_t.2710146 = type { i64, i8 }
 
 ; 3 occurrences:
 ; linux/optimized/ich8lan.ll
@@ -23,7 +23,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [16 x %struct.pmp_entry_t.2710146], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

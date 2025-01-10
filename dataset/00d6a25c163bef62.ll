@@ -25,14 +25,13 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/devio.ll
+; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000003e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = sub nuw nsw i32 18, %2
+  %3 = sub nuw nsw i32 4, %2
   %4 = zext nneg i32 %3 to i64
   %5 = icmp ult i64 %0, %4
   ret i1 %5

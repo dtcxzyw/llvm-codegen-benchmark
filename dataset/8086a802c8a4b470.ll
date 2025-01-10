@@ -1,5 +1,5 @@
 
-; 1008 occurrences:
+; 1007 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -333,7 +333,6 @@
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luau/optimized/lapi.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_mem_core_builtin.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll

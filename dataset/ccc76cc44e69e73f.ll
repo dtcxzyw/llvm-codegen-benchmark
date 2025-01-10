@@ -1,21 +1,21 @@
 
-%"struct.drjit::Mask.198.2603227" = type { %"struct.drjit::MaskBase.199.2603228" }
-%"struct.drjit::MaskBase.199.2603228" = type { %"struct.drjit::StaticArrayImpl.200.2603229" }
-%"struct.drjit::StaticArrayImpl.200.2603229" = type { [4 x %"struct.drjit::Mask.203.2603230"] }
-%"struct.drjit::Mask.203.2603230" = type { %"struct.drjit::MaskBase.204.2603231" }
-%"struct.drjit::MaskBase.204.2603231" = type { %"struct.drjit::StaticArrayImpl.205.2603232" }
-%"struct.drjit::StaticArrayImpl.205.2603232" = type { %"struct.drjit::KMaskBase.2603233" }
-%"struct.drjit::KMaskBase.2603233" = type { i8 }
-%struct.igb_tx.2705958 = type { [2 x %struct.e1000_adv_tx_context_desc.2705959], i32, i32, i8, i8, ptr }
-%struct.e1000_adv_tx_context_desc.2705959 = type { i32, i32, i32, i32 }
-%"struct.rawspeed::VC5Decompressor::Channel.2871937" = type { %"struct.std::array.59.2871938" }
-%"struct.std::array.59.2871938" = type { [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871939"] }
-%"class.rawspeed::VC5Decompressor::Wavelet.2871939" = type <{ i32, i32, i16, [6 x i8], %"class.std::vector.2871940", i32, [4 x i8] }>
-%"class.std::vector.2871940" = type { %"struct.std::_Vector_base.2871941" }
-%"struct.std::_Vector_base.2871941" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871942" }
-%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871942" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871943" }
-%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871943" = type { ptr, ptr, ptr }
-%struct.g4x_pipe_wm.3545527 = type { [8 x i16], i16 }
+%"struct.drjit::Mask.198.2603194" = type { %"struct.drjit::MaskBase.199.2603195" }
+%"struct.drjit::MaskBase.199.2603195" = type { %"struct.drjit::StaticArrayImpl.200.2603196" }
+%"struct.drjit::StaticArrayImpl.200.2603196" = type { [4 x %"struct.drjit::Mask.203.2603197"] }
+%"struct.drjit::Mask.203.2603197" = type { %"struct.drjit::MaskBase.204.2603198" }
+%"struct.drjit::MaskBase.204.2603198" = type { %"struct.drjit::StaticArrayImpl.205.2603199" }
+%"struct.drjit::StaticArrayImpl.205.2603199" = type { %"struct.drjit::KMaskBase.2603200" }
+%"struct.drjit::KMaskBase.2603200" = type { i8 }
+%struct.igb_tx.2705924 = type { [2 x %struct.e1000_adv_tx_context_desc.2705925], i32, i32, i8, i8, ptr }
+%struct.e1000_adv_tx_context_desc.2705925 = type { i32, i32, i32, i32 }
+%"struct.rawspeed::VC5Decompressor::Channel.2871903" = type { %"struct.std::array.59.2871904" }
+%"struct.std::array.59.2871904" = type { [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871905"] }
+%"class.rawspeed::VC5Decompressor::Wavelet.2871905" = type <{ i32, i32, i16, [6 x i8], %"class.std::vector.2871906", i32, [4 x i8] }>
+%"class.std::vector.2871906" = type { %"struct.std::_Vector_base.2871907" }
+%"struct.std::_Vector_base.2871907" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871908" }
+%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871908" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871909" }
+%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871909" = type { ptr, ptr, ptr }
+%struct.g4x_pipe_wm.3545493 = type { [8 x i16], i16 }
 
 ; 68 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
@@ -90,8 +90,8 @@
 define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw [4 x %"struct.drjit::Mask.198.2603227"], ptr %3, i64 0, i64 %1
-  %5 = getelementptr nusw nuw [4 x %"struct.drjit::Mask.203.2603230"], ptr %4, i64 0, i64 %0
+  %4 = getelementptr nusw nuw [4 x %"struct.drjit::Mask.198.2603194"], ptr %3, i64 0, i64 %1
+  %5 = getelementptr nusw nuw [4 x %"struct.drjit::Mask.203.2603197"], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -123,8 +123,8 @@ entry:
 define ptr @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 133200
-  %4 = getelementptr [16 x %struct.igb_tx.2705958], ptr %3, i64 0, i64 %1
-  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705959], ptr %4, i64 0, i64 %0
+  %4 = getelementptr [16 x %struct.igb_tx.2705924], ptr %3, i64 0, i64 %1
+  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705925], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -140,8 +140,8 @@ entry:
 define ptr @func000000000000003e(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 232
-  %4 = getelementptr nusw nuw [4 x %"struct.rawspeed::VC5Decompressor::Channel.2871937"], ptr %3, i64 0, i64 %1
-  %5 = getelementptr nusw [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871939"], ptr %4, i64 0, i64 %0
+  %4 = getelementptr nusw nuw [4 x %"struct.rawspeed::VC5Decompressor::Channel.2871903"], ptr %3, i64 0, i64 %1
+  %5 = getelementptr nusw [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871905"], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -187,7 +187,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1708
-  %4 = getelementptr [3 x %struct.g4x_pipe_wm.3545527], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [3 x %struct.g4x_pipe_wm.3545493], ptr %3, i64 0, i64 %1
   %5 = getelementptr [8 x i16], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

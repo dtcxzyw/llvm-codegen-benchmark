@@ -1,5 +1,5 @@
 
-; 401 occurrences:
+; 400 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absRpmOld.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -140,7 +140,6 @@
 ; gromacs/optimized/xtc3.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
 ; icu/optimized/genrb.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/unesctrn.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
@@ -410,7 +409,7 @@ entry:
   ret i64 %5
 }
 
-; 341 occurrences:
+; 342 occurrences:
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -543,6 +542,7 @@ entry:
 ; hdf5/optimized/H5Ocache.c.ll
 ; icu/optimized/collationdatawriter.ll
 ; icu/optimized/dictbe.ll
+; icu/optimized/swapimpl.ll
 ; icu/optimized/ucptrie.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ipopt/optimized/IpEquilibrationScaling.ll

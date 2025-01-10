@@ -1,20 +1,20 @@
 
-%"struct.re2::PrefilterTree::Entry.2602102" = type { i32, %"class.std::vector.0.2602103", %"class.std::vector.0.2602103" }
-%"class.std::vector.0.2602103" = type { %"struct.std::_Vector_base.1.2602104" }
-%"struct.std::_Vector_base.1.2602104" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" = type { ptr, ptr, ptr }
-%struct.QuorumChildRequest.2705819 = type { ptr, %struct.QEMUIOVector.2705820, ptr, i32, ptr }
-%struct.QEMUIOVector.2705820 = type { ptr, i32, %union.anon.16.2705821 }
-%union.anon.16.2705821 = type { %struct.anon.17.2705822 }
-%struct.anon.17.2705822 = type { i32, %struct.iovec.2705823 }
-%struct.iovec.2705823 = type { ptr, i64 }
-%struct.NvmeCopySourceRangeFormat1.2708959 = type { [8 x i8], i64, i16, [8 x i8], [10 x i8], i16, i16 }
-%"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.3135601" = type { ptr, %"class.std::vector.159.3135602" }
-%"class.std::vector.159.3135602" = type { %"struct.std::_Vector_base.160.3135603" }
-%"struct.std::_Vector_base.160.3135603" = type { %"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl.3135604" }
-%"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl.3135604" = type { %"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl_data.3135605" }
-%"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl_data.3135605" = type { ptr, ptr, ptr }
+%"struct.re2::PrefilterTree::Entry.2602069" = type { i32, %"class.std::vector.0.2602070", %"class.std::vector.0.2602070" }
+%"class.std::vector.0.2602070" = type { %"struct.std::_Vector_base.1.2602071" }
+%"struct.std::_Vector_base.1.2602071" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" = type { ptr, ptr, ptr }
+%struct.QuorumChildRequest.2705785 = type { ptr, %struct.QEMUIOVector.2705786, ptr, i32, ptr }
+%struct.QEMUIOVector.2705786 = type { ptr, i32, %union.anon.16.2705787 }
+%union.anon.16.2705787 = type { %struct.anon.17.2705788 }
+%struct.anon.17.2705788 = type { i32, %struct.iovec.2705789 }
+%struct.iovec.2705789 = type { ptr, i64 }
+%struct.NvmeCopySourceRangeFormat1.2708925 = type { [8 x i8], i64, i16, [8 x i8], [10 x i8], i16, i16 }
+%"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.3135567" = type { ptr, %"class.std::vector.159.3135568" }
+%"class.std::vector.159.3135568" = type { %"struct.std::_Vector_base.160.3135569" }
+%"struct.std::_Vector_base.160.3135569" = type { %"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl.3135570" }
+%"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl.3135570" = type { %"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl_data.3135571" }
+%"struct.std::_Vector_base<(anonymous namespace)::OptMuxtreeWorker::portinfo_t, std::allocator<(anonymous namespace)::OptMuxtreeWorker::portinfo_t>>::_Vector_impl_data.3135571" = type { ptr, ptr, ptr }
 
 ; 136 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -157,7 +157,7 @@
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"struct.re2::PrefilterTree::Entry.2602102", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"struct.re2::PrefilterTree::Entry.2602069", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
 }
 
@@ -178,7 +178,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.QuorumChildRequest.2705819, ptr %0, i64 %2, i32 1, i32 1
+  %3 = getelementptr %struct.QuorumChildRequest.2705785, ptr %0, i64 %2, i32 1, i32 1
   ret ptr %3
 }
 
@@ -188,7 +188,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.NvmeCopySourceRangeFormat1.2708959, ptr %0, i64 %2, i32 4, i64 4
+  %3 = getelementptr %struct.NvmeCopySourceRangeFormat1.2708925, ptr %0, i64 %2, i32 4, i64 4
   ret ptr %3
 }
 
@@ -199,7 +199,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.3135601", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"struct.(anonymous namespace)::OptMuxtreeWorker::muxinfo_t.3135567", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
 }
 

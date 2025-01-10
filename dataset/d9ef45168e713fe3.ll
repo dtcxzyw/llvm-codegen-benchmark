@@ -1,5 +1,5 @@
 
-; 1032 occurrences:
+; 1033 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -829,6 +829,7 @@
 ; ruby/optimized/pm_newline_list.ll
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/transcode.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; soc-simulator/optimized/verilated.ll

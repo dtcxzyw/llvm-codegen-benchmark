@@ -47,8 +47,9 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/kcore.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll

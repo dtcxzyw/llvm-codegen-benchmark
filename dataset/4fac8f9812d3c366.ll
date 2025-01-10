@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 1 occurrences:
 ; minetest/optimized/CImage.cpp.ll
@@ -54,12 +54,13 @@ define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %1
+  %5 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; postgres/optimized/mcv.ll
 ; stb/optimized/stb_connected_components.c.ll
@@ -67,7 +68,7 @@ entry:
 define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, 12
+  %4 = mul nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6

@@ -273,6 +273,13 @@ func0000000000000114:                   # @func0000000000000114
 	setb	%al
 	andb	%cl, %al
 	retq
+func0000000000000188:                   # @func0000000000000188
+	testq	%rsi, %rsi
+	setne	%cl
+	cmpl	$65, %edi
+	setae	%al
+	andb	%cl, %al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	testq	%rsi, %rsi
 	sete	%cl
@@ -327,13 +334,6 @@ func000000000000008a:                   # @func000000000000008a
 	setb	%cl
 	testl	%edi, %edi
 	setns	%al
-	andb	%cl, %al
-	retq
-func0000000000000188:                   # @func0000000000000188
-	testq	%rsi, %rsi
-	setne	%cl
-	cmpl	$-2, %edi
-	setae	%al
 	andb	%cl, %al
 	retq
 func00000000000000ca:                   # @func00000000000000ca

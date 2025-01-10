@@ -35,13 +35,6 @@ func00000000000004ca:                   # @func00000000000004ca
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
-	addq	%rdx, %rsi
-	setns	%cl
-	testq	%rdi, %rdi
-	sets	%al
-	andb	%cl, %al
-	retq
 func000000000000042c:                   # @func000000000000042c
 	addq	%rdx, %rsi
 	cmpq	$1, %rsi

@@ -1,5 +1,5 @@
 
-; 343 occurrences:
+; 344 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -130,6 +130,7 @@
 ; node/optimized/simdutf.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/system.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll

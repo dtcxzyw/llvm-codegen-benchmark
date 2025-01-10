@@ -56,10 +56,12 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; clamav/optimized/dll.cpp.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; lvgl/optimized/lv_string_builtin.ll
 ; openjdk/optimized/ps_proc.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

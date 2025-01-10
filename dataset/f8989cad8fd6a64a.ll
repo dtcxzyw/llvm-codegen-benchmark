@@ -1,25 +1,25 @@
 
-%"struct.clang::CodeGen::CallArg.3148612" = type { %union.anon.1314.3148613, i8, i8, [6 x i8], %"class.clang::QualType.3148556" }
-%union.anon.1314.3148613 = type { %"class.clang::CodeGen::LValue.3148553" }
-%"class.clang::CodeGen::LValue.3148553" = type { i32, %union.anon.388.3148554, %union.anon.389.3148555, %"class.clang::QualType.3148556", %"class.clang::Qualifiers.3148557", i8, %"class.clang::CodeGen::LValueBaseInfo.3148558", %"struct.clang::CodeGen::TBAAAccessInfo.3148559", ptr }
-%union.anon.388.3148554 = type { %"class.clang::CodeGen::Address.3148499" }
-%"class.clang::CodeGen::Address.3148499" = type { %"class.llvm::PointerIntPair.384.3148497", ptr, %"class.clang::CharUnits.3148476", %"class.clang::CodeGen::CGPointerAuthInfo.3148500", ptr }
-%"class.llvm::PointerIntPair.384.3148497" = type { %"struct.llvm::detail::PunnedPointer.385.3148498" }
-%"struct.llvm::detail::PunnedPointer.385.3148498" = type { [8 x i8] }
-%"class.clang::CharUnits.3148476" = type { i64 }
-%"class.clang::CodeGen::CGPointerAuthInfo.3148500" = type { i8, ptr }
-%union.anon.389.3148555 = type { ptr }
-%"class.clang::Qualifiers.3148557" = type { i64 }
-%"class.clang::CodeGen::LValueBaseInfo.3148558" = type { i32 }
-%"struct.clang::CodeGen::TBAAAccessInfo.3148559" = type { i32, ptr, ptr, i64, i64 }
-%"class.clang::QualType.3148556" = type { %"class.llvm::PointerIntPair.257.3148560" }
-%"class.llvm::PointerIntPair.257.3148560" = type { %"struct.llvm::detail::PunnedPointer.258.3148561" }
-%"struct.llvm::detail::PunnedPointer.258.3148561" = type { [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::VtArray.707.3381152" = type { %"class.pxrInternal_v0_24__pxrReserved__::Vt_ArrayBase.3381150", ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::Vt_ArrayBase.3381150" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Vt_ShapeData.3381151", ptr }
-%"struct.pxrInternal_v0_24__pxrReserved__::Vt_ShapeData.3381151" = type { i64, [3 x i32] }
-%struct.PendingWriteback.3651956 = type { %struct.buftag.3651957 }
-%struct.buftag.3651957 = type { i32, i32, i32, i32, i32 }
+%"struct.clang::CodeGen::CallArg.3148578" = type { %union.anon.1314.3148579, i8, i8, [6 x i8], %"class.clang::QualType.3148522" }
+%union.anon.1314.3148579 = type { %"class.clang::CodeGen::LValue.3148519" }
+%"class.clang::CodeGen::LValue.3148519" = type { i32, %union.anon.388.3148520, %union.anon.389.3148521, %"class.clang::QualType.3148522", %"class.clang::Qualifiers.3148523", i8, %"class.clang::CodeGen::LValueBaseInfo.3148524", %"struct.clang::CodeGen::TBAAAccessInfo.3148525", ptr }
+%union.anon.388.3148520 = type { %"class.clang::CodeGen::Address.3148465" }
+%"class.clang::CodeGen::Address.3148465" = type { %"class.llvm::PointerIntPair.384.3148463", ptr, %"class.clang::CharUnits.3148442", %"class.clang::CodeGen::CGPointerAuthInfo.3148466", ptr }
+%"class.llvm::PointerIntPair.384.3148463" = type { %"struct.llvm::detail::PunnedPointer.385.3148464" }
+%"struct.llvm::detail::PunnedPointer.385.3148464" = type { [8 x i8] }
+%"class.clang::CharUnits.3148442" = type { i64 }
+%"class.clang::CodeGen::CGPointerAuthInfo.3148466" = type { i8, ptr }
+%union.anon.389.3148521 = type { ptr }
+%"class.clang::Qualifiers.3148523" = type { i64 }
+%"class.clang::CodeGen::LValueBaseInfo.3148524" = type { i32 }
+%"struct.clang::CodeGen::TBAAAccessInfo.3148525" = type { i32, ptr, ptr, i64, i64 }
+%"class.clang::QualType.3148522" = type { %"class.llvm::PointerIntPair.257.3148526" }
+%"class.llvm::PointerIntPair.257.3148526" = type { %"struct.llvm::detail::PunnedPointer.258.3148527" }
+%"struct.llvm::detail::PunnedPointer.258.3148527" = type { [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::VtArray.707.3381118" = type { %"class.pxrInternal_v0_24__pxrReserved__::Vt_ArrayBase.3381116", ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::Vt_ArrayBase.3381116" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Vt_ShapeData.3381117", ptr }
+%"struct.pxrInternal_v0_24__pxrReserved__::Vt_ShapeData.3381117" = type { i64, [3 x i32] }
+%struct.PendingWriteback.3651922 = type { %struct.buftag.3651923 }
+%struct.buftag.3651923 = type { i32, i32, i32, i32, i32 }
 
 ; 33 occurrences:
 ; eastl/optimized/TestExtra.cpp.ll
@@ -59,8 +59,8 @@
 define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -152
-  %3 = getelementptr nusw %"struct.clang::CodeGen::CallArg.3148612", ptr %0, i64 %1
-  %4 = getelementptr nusw %"struct.clang::CodeGen::CallArg.3148612", ptr %3, i64 %.neg
+  %3 = getelementptr nusw %"struct.clang::CodeGen::CallArg.3148578", ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.clang::CodeGen::CallArg.3148578", ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -75,7 +75,7 @@ define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -40
   %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %4 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::VtArray.707.3381152", ptr %3, i64 %.neg
+  %4 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::VtArray.707.3381118", ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -86,8 +86,8 @@ entry:
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -20
-  %3 = getelementptr %struct.PendingWriteback.3651956, ptr %0, i64 %1
-  %4 = getelementptr %struct.PendingWriteback.3651956, ptr %3, i64 %.neg
+  %3 = getelementptr %struct.PendingWriteback.3651922, ptr %0, i64 %1
+  %4 = getelementptr %struct.PendingWriteback.3651922, ptr %3, i64 %.neg
   ret ptr %4
 }
 

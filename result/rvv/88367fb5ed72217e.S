@@ -89,17 +89,11 @@ func0000000000000026:                   # @func0000000000000026
 	vmsle.vi	v10, v8, -1
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000061:                   # @func0000000000000061
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	vmseq.vi	v10, v8, 3
-	vmand.mm	v0, v0, v10
-	ret
-.LCPI15_0:
+.LCPI14_0:
 	.quad	1000000000000000001             # 0xde0b6b3a7640001
 func0000000000000044:                   # @func0000000000000044
-	lui	a0, %hi(.LCPI15_0)
-	ld	a0, %lo(.LCPI15_0)(a0)
+	lui	a0, %hi(.LCPI14_0)
+	ld	a0, %lo(.LCPI14_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	vmsltu.vx	v10, v8, a0

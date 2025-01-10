@@ -1,7 +1,7 @@
 
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
 
 ; 26 occurrences:
 ; cpython/optimized/optimizer.ll
@@ -469,9 +469,9 @@ entry:
 define ptr @func000000000000006f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635821", ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635853", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635820", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -496,13 +496,12 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/filter.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/tty_buffer.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; postgres/optimized/jsonb_util.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
 ; Function Attrs: nounwind
@@ -616,9 +615,9 @@ entry:
 define ptr @func000000000000004b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3213948", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3213914", ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3213948", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3213914", ptr %4, i64 %5
   ret ptr %6
 }
 

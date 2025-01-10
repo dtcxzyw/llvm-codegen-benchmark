@@ -14,8 +14,8 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
-	shrl	$12, %edx
-	andl	$65536, %edx                    # imm = 0x10000
+	shrq	$14, %rdx
+	andl	$524288, %edx                   # imm = 0x80000
 	orq	%rsi, %rax
 	orq	%rdx, %rax
 	retq

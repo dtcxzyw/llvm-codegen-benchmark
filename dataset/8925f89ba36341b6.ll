@@ -1,5 +1,5 @@
 
-%union._Py_CODEUNIT.3988293 = type { i16 }
+%union._Py_CODEUNIT.3988243 = type { i16 }
 
 ; 10 occurrences:
 ; c3c/optimized/file_utils.c.ll
@@ -87,7 +87,7 @@ entry:
   %4 = shl i64 %3, 31
   %5 = ashr i64 %4, 32
   %6 = getelementptr nusw nuw i8, ptr %0, i64 200
-  %7 = getelementptr %union._Py_CODEUNIT.3988293, ptr %6, i64 %5
+  %7 = getelementptr %union._Py_CODEUNIT.3988243, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -100,7 +100,7 @@ entry:
   %4 = shl i64 %3, 31
   %5 = ashr i64 %4, 32
   %6 = getelementptr i8, ptr %0, i64 202
-  %7 = getelementptr %union._Py_CODEUNIT.3988293, ptr %6, i64 %5
+  %7 = getelementptr %union._Py_CODEUNIT.3988243, ptr %6, i64 %5
   ret ptr %7
 }
 

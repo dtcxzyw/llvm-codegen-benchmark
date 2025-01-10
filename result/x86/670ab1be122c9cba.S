@@ -1,4 +1,4 @@
 func0000000000000000:                   # @func0000000000000000
-	cmpq	$-15, %rdi
-	setb	%al
+	cmpq	$-1, %rdi
+	setne	%al
 	retq

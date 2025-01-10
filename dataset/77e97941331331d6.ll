@@ -130,12 +130,11 @@ entry:
   ret i64 %6
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

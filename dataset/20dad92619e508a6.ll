@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%"class.llvm::Use.3157751" = type { ptr, ptr, ptr, ptr }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%"class.llvm::Use.3157717" = type { ptr, ptr, ptr, ptr }
 
 ; 10 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
@@ -20,7 +20,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = getelementptr nuw %"struct.OT::IntType.0.2735699", ptr %5, i64 %4, i32 0, i32 0, i64 1
+  %6 = getelementptr nuw %"struct.OT::IntType.0.2735665", ptr %5, i64 %4, i32 0, i32 0, i64 1
   ret ptr %6
 }
 
@@ -72,8 +72,8 @@ define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.llvm::Use.3157751", ptr %0, i64 %1
-  %6 = getelementptr nuw %"class.llvm::Use.3157751", ptr %5, i64 %4, i32 1
+  %5 = getelementptr nusw %"class.llvm::Use.3157717", ptr %0, i64 %1
+  %6 = getelementptr nuw %"class.llvm::Use.3157717", ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 

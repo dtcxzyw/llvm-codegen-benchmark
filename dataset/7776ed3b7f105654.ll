@@ -1,7 +1,7 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct.hpdata_age_heap_t.3660674 = type { %struct.ph_s.3660675 }
-%struct.ph_s.3660675 = type { ptr, i64 }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.hpdata_age_heap_t.3660624 = type { %struct.ph_s.3660625 }
+%struct.ph_s.3660625 = type { ptr, i64 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call range(i64 0, 65) i64 @llvm.cttz.i64(i64 range(i64 1, 0) %2, i1 true)
   %4 = or disjoint i64 %3, %1
-  %5 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [512 x %struct.TCGTemp.2707191], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -33,7 +33,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call range(i64 0, 65) i64 @llvm.cttz.i64(i64 range(i64 1, 0) %2, i1 true)
   %4 = or disjoint i64 %1, %3
-  %5 = getelementptr nusw nuw [64 x %struct.hpdata_age_heap_t.3660674], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [64 x %struct.hpdata_age_heap_t.3660624], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

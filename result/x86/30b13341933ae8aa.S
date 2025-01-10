@@ -1,3 +1,9 @@
+func00000000000000ff:                   # @func00000000000000ff
+	leaq	7(%rsi,%rdx,4), %rcx
+	movabsq	$137438953464, %rax             # imm = 0x1FFFFFFFF8
+	andq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	32(%rsi,%rdx,2), %rcx
 	movabsq	$9223372036854775800, %rax      # imm = 0x7FFFFFFFFFFFFFF8

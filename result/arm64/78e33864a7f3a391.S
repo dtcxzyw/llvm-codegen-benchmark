@@ -162,12 +162,6 @@ func0000000000000006:                   // @func0000000000000006
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	cmp	x0, w1, uxtw
-	cset	w0, ne
-	ret
-                                        // -- End function
 func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	cmp	x0, w1, uxtw

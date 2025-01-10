@@ -1,5 +1,5 @@
 
-%"class.mold::BigEndian.238.2637112" = type { [8 x i8] }
+%"class.mold::BigEndian.238.2637079" = type { [8 x i8] }
 
 ; 42 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -495,7 +495,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = getelementptr nusw %"class.mold::BigEndian.238.2637112", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.mold::BigEndian.238.2637079", ptr %0, i64 %3
   ret ptr %4
 }
 

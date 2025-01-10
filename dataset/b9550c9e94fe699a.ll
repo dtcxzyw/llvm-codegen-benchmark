@@ -1,5 +1,5 @@
 
-; 1281 occurrences:
+; 1285 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
@@ -147,6 +147,7 @@
 ; clamav/optimized/client.c.ll
 ; clamav/optimized/optparser.c.ll
 ; clamav/optimized/scanner.c.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -426,6 +427,7 @@
 ; hyperscan/optimized/ng_som_util.cpp.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; hyperscan/optimized/rose_build_dedupe.cpp.ll
@@ -1142,6 +1144,8 @@
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
 ; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -1289,7 +1293,7 @@ entry:
   ret i1 %2
 }
 
-; 105 occurrences:
+; 106 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/sparse_tensor.cc.ll
 ; boost/optimized/async.ll
@@ -1345,6 +1349,7 @@ entry:
 ; jq/optimized/regerror.ll
 ; linux/optimized/esrt.ll
 ; linux/optimized/md.ll
+; linux/optimized/rtmutex_api.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
@@ -1403,7 +1408,7 @@ entry:
   ret i1 %2
 }
 
-; 67 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -1463,8 +1468,6 @@ entry:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; slurm/optimized/numa.ll
 ; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll

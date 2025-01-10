@@ -1,6 +1,6 @@
 
-%struct.focaltech_finger_state.3536784 = type { i8, i8, i32, i32 }
-%struct.bio_vec.3540840 = type { ptr, i32, i32 }
+%struct.focaltech_finger_state.3536750 = type { i8, i8, i32, i32 }
+%struct.bio_vec.3540806 = type { ptr, i32, i32 }
 
 ; 15 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -122,7 +122,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr [5 x %struct.focaltech_finger_state.3536784], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [5 x %struct.focaltech_finger_state.3536750], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -134,7 +134,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = getelementptr i8, ptr %0, i64 -272
-  %5 = getelementptr [17 x %struct.bio_vec.3540840], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [17 x %struct.bio_vec.3540806], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%struct.HUF_DEltX2.3496702 = type { i16, i8, i8 }
-%struct.HUF_DEltX2.3543339 = type { i16, i8, i8 }
+%struct.HUF_DEltX2.3496668 = type { i16, i8, i8 }
+%struct.HUF_DEltX2.3543305 = type { i16, i8, i8 }
 
 ; 3 occurrences:
 ; linux/optimized/decompress_unlzma.ll
@@ -45,9 +45,9 @@ define ptr @func000000000000006b(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw %struct.HUF_DEltX2.3496702, ptr %4, i64 %3
+  %5 = getelementptr nusw %struct.HUF_DEltX2.3496668, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw nuw %struct.HUF_DEltX2.3496702, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %struct.HUF_DEltX2.3496668, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -58,9 +58,9 @@ define ptr @func0000000000000000(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 4
-  %5 = getelementptr %struct.HUF_DEltX2.3543339, ptr %4, i64 %3
+  %5 = getelementptr %struct.HUF_DEltX2.3543305, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr %struct.HUF_DEltX2.3543339, ptr %5, i64 %6
+  %7 = getelementptr %struct.HUF_DEltX2.3543305, ptr %5, i64 %6
   ret ptr %7
 }
 

@@ -1,8 +1,10 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; graphviz/optimized/sfdpinit.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
+; slurm/optimized/common_topo.ll
 ; slurm/optimized/gres_select_filter.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i16 %1) #0 {

@@ -13,13 +13,6 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x0, w8, sxtw
 	ret
                                         // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	cmp	w2, #0
-	csel	w8, w1, wzr, eq
-	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	cmp	w2, #2

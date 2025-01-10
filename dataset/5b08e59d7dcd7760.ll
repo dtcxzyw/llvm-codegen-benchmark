@@ -1,5 +1,5 @@
 
-; 1483 occurrences:
+; 1485 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -1068,6 +1068,7 @@
 ; protobuf/optimized/lexer.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/parser.cc.ll
+; protobuf/optimized/unparser.cc.ll
 ; proxygen/optimized/FileServerListGenerator.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
@@ -1128,6 +1129,7 @@
 ; qemu/optimized/migration_migration.c.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/util_qemu-option.c.ll
 ; qemu/optimized/util_userfaultfd.c.ll
 ; quantlib/optimized/capletcoterminalmaxhomogeneity.ll

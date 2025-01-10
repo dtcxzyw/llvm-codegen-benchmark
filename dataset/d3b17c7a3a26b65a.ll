@@ -1,5 +1,5 @@
 
-; 488 occurrences:
+; 486 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -216,7 +216,6 @@
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/SymbolSize.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/ThreadPool.cpp.ll
 ; llvm/optimized/UnifyFunctionExitNodes.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
@@ -389,7 +388,6 @@
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/changes.cpp.ll
-; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/collisionGroup.cpp.ll
 ; openusd/optimized/connectableAPI.cpp.ll
 ; openusd/optimized/containerDataSourceEditor.cpp.ll

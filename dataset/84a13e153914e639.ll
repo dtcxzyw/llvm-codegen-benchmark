@@ -5776,7 +5776,7 @@ entry:
   ret i32 %2
 }
 
-; 700 occurrences:
+; 699 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -6377,7 +6377,6 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll

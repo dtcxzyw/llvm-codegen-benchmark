@@ -1,6 +1,6 @@
 
-%"struct.std::array.21.3086947" = type { [3 x %"class.draco::IndexType.22.3086948"] }
-%"class.draco::IndexType.22.3086948" = type { i32 }
+%"struct.std::array.21.3086913" = type { [3 x %"class.draco::IndexType.22.3086914"] }
+%"class.draco::IndexType.22.3086914" = type { i32 }
 
 ; 11 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
@@ -47,7 +47,7 @@ entry:
   %4 = sub i32 %3, %1
   %5 = add i32 %4, 1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.std::array.21.3086947", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::array.21.3086913", ptr %0, i64 %6
   ret ptr %7
 }
 

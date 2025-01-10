@@ -1,21 +1,26 @@
 
-; 36 occurrences:
+; 41 occurrences:
 ; clamav/optimized/recvol.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/virtio_input.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dorgtsqr.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
+; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_builtin_functions.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; zfp/optimized/decode4d.c.ll
 ; zfp/optimized/decode4f.c.ll
 ; zfp/optimized/decode4i.c.ll

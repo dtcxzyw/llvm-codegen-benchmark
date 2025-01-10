@@ -1,6 +1,6 @@
 
-%"struct.clang::CodeCompletionString::Chunk.3322186" = type { i32, %union.anon.3322187 }
-%union.anon.3322187 = type { ptr }
+%"struct.clang::CodeCompletionString::Chunk.3322152" = type { i32, %union.anon.3322153 }
+%union.anon.3322153 = type { ptr }
 
 ; 24 occurrences:
 ; arrow/optimized/feather.cc.ll
@@ -85,7 +85,7 @@ define ptr @func000000000000007f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
   %4 = getelementptr nusw nuw i8, ptr %1, i64 32
-  %5 = getelementptr nusw nuw %"struct.clang::CodeCompletionString::Chunk.3322186", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.clang::CodeCompletionString::Chunk.3322152", ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7

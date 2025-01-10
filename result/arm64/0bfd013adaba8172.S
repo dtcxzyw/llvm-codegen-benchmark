@@ -30,11 +30,3 @@ func0000000000000013:                   // @func0000000000000013
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	cmp	w2, #0
-	add	x8, x0, x1, lsl #4
-	cset	w9, ne
-	add	x0, x8, w9, uxtw #3
-	ret
-                                        // -- End function

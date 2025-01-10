@@ -19,18 +19,6 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 3 occurrences:
-; minetest/optimized/CLimitReadFile.cpp.ll
-; spike/optimized/socketif.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = tail call i64 @llvm.smin.i64(i64 %1, i64 %2)
-  %4 = icmp slt i64 %3, %0
-  ret i1 %4
-}
-
 ; 67 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll

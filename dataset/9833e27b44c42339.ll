@@ -457,11 +457,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; faiss/optimized/IndexBinaryHNSW.cpp.ll
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; icu/optimized/pkgitems.ll
 ; libquic/optimized/wnaf.c.ll
+; linux/optimized/net.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -475,10 +476,11 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cpython/optimized/flowgraph.ll
+; git/optimized/sha256.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; llvm/optimized/LegalizeTypes.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll

@@ -49,3 +49,11 @@ func000000000000006c:                   # @func000000000000006c
 	cmpq	%rax, %rcx
 	setne	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	andl	$1, %edx
+	addq	%rdi, %rdx
+	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
+	andq	%rsi, %rax
+	cmpq	%rax, %rdx
+	seta	%al
+	retq

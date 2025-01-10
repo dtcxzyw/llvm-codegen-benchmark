@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
-	shrq	$2, %rsi
-	xorl	%eax, %eax
+	shrq	$32, %rsi
 	testb	$1, %dil
+	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	cmoveq	%rsi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001

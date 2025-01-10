@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.162.2742033" = type { %struct.BEInt.163.2742038 }
-%struct.BEInt.163.2742038 = type { [2 x i8] }
+%"struct.OT::IntType.162.2741999" = type { %struct.BEInt.163.2742004 }
+%struct.BEInt.163.2742004 = type { [2 x i8] }
 
 ; 9 occurrences:
 ; grpc/optimized/work_stealing_thread_pool.cc.ll
@@ -90,7 +90,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.162.2742033", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.162.2741999", ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-%class.symbol.3613505 = type { ptr }
+%class.symbol.3613471 = type { ptr }
 
 ; 16 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
@@ -284,7 +284,7 @@ define ptr @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %class.symbol.3613471, ptr %4, i64 %3
   %6 = getelementptr ptr, ptr %5, i64 %0
   ret ptr %6
 }

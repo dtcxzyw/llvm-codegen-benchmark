@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; casadi/optimized/idas.c.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
@@ -9,6 +9,7 @@
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; osqp/optimized/auxil.c.ll
 ; osqp/optimized/osqp_api.c.ll
+; postgres/optimized/float.ll
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, i1 %2) #0 {

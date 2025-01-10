@@ -230,9 +230,9 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i128 %0) #0 {
+define i64 @func0000000000000048(i128 %0) #0 {
 entry:
-  %1 = mul i128 %0, 1844674407370955161
+  %1 = mul nuw i128 %0, 1844674407370955161
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
   %4 = mul i64 %3, -10

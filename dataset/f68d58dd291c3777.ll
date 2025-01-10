@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; gromacs/optimized/xtc3.c.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/tbdata.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/trace_output.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_opt_mem.ll

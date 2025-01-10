@@ -196,7 +196,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
@@ -217,7 +217,6 @@ entry:
 ; openspiel/optimized/pathfinding.cc.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; spike/optimized/fdt_rw.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {

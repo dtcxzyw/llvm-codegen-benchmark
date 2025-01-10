@@ -1,5 +1,5 @@
 
-%class.XMMRegister.2733288 = type { i32 }
+%class.XMMRegister.2733254 = type { i32 }
 
 ; 3 occurrences:
 ; linux/optimized/sha512_generic.ll
@@ -31,7 +31,7 @@ entry:
   %2 = and i32 %1, 2
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [4 x %class.XMMRegister.2733288], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x %class.XMMRegister.2733254], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

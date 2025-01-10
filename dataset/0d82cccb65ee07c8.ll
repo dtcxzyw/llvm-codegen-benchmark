@@ -1,9 +1,9 @@
 
-%class.LRG.2734622 = type { double, double, double, ptr, i32, i32, i32, i32, i32, i32, %class.RegMask.2734623, i32, i16, i32, i16, i16 }
-%class.RegMask.2734623 = type { %union.anon.2734624, i32, i32 }
-%union.anon.2734624 = type { [11 x i64] }
-%struct.Gla_Obj_t_.2876719 = type { i32, i32, [4 x i32], %struct.Vec_Int_t_.2876720 }
-%struct.Vec_Int_t_.2876720 = type { i32, i32, ptr }
+%class.LRG.2734588 = type { double, double, double, ptr, i32, i32, i32, i32, i32, i32, %class.RegMask.2734589, i32, i16, i32, i16, i16 }
+%class.RegMask.2734589 = type { %union.anon.2734590, i32, i32 }
+%union.anon.2734590 = type { [11 x i64] }
+%struct.Gla_Obj_t_.2876685 = type { i32, i32, [4 x i32], %struct.Vec_Int_t_.2876686 }
+%struct.Vec_Int_t_.2876686 = type { i32, i32, ptr }
 
 ; 12 occurrences:
 ; abc/optimized/giaEmbed.c.ll
@@ -23,7 +23,7 @@ define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %class.LRG.2734622, ptr %0, i64 %1, i32 10
+  %5 = getelementptr nuw %class.LRG.2734588, ptr %0, i64 %1, i32 10
   %6 = getelementptr nusw nuw [11 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -42,7 +42,7 @@ define ptr @func000000000000005f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.Gla_Obj_t_.2876719, ptr %0, i64 %1, i32 2, i64 %4
+  %5 = getelementptr %struct.Gla_Obj_t_.2876685, ptr %0, i64 %1, i32 2, i64 %4
   ret ptr %5
 }
 

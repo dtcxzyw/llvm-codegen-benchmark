@@ -1,5 +1,5 @@
 
-; 18004 occurrences:
+; 18002 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -109,7 +109,6 @@
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/cuddAddWalsh.c.ll
-; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddDecomp.c.ll
@@ -2478,6 +2477,7 @@
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; delta-rs/optimized/50ulyw4u3j3q45m6.ll
 ; delta-rs/optimized/52n0zllxvyme4vg7.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; delta-rs/optimized/f3qrlbdk00xfer1.ll
 ; delta-rs/optimized/fhoj0ycmzgl7mm8.ll
@@ -2941,7 +2941,6 @@
 ; freetype/optimized/ftglyph.c.ll
 ; freetype/optimized/ftstroke.c.ll
 ; freetype/optimized/pcf.c.ll
-; freetype/optimized/pfr.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/raster.c.ll
@@ -3246,6 +3245,7 @@
 ; graphviz/optimized/gvdevice_xlib.c.ll
 ; graphviz/optimized/gvevent.c.ll
 ; graphviz/optimized/gvgen.c.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/gvmap.c.ll
 ; graphviz/optimized/gvplugin.c.ll
 ; graphviz/optimized/gvpr.c.ll
@@ -10853,7 +10853,6 @@
 ; openssl/optimized/libcrypto-lib-encode.ll
 ; openssl/optimized/libcrypto-lib-encoder_lib.ll
 ; openssl/optimized/libcrypto-lib-encoder_meth.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-eng_cnf.ll
 ; openssl/optimized/libcrypto-lib-eng_list.ll
 ; openssl/optimized/libcrypto-lib-err.ll
@@ -10991,7 +10990,6 @@
 ; openssl/optimized/libcrypto-shlib-encode.ll
 ; openssl/optimized/libcrypto-shlib-encoder_lib.ll
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-eng_cnf.ll
 ; openssl/optimized/libcrypto-shlib-eng_list.ll
 ; openssl/optimized/libcrypto-shlib-err.ll

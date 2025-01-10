@@ -19,6 +19,13 @@ func0000000000000075:                   // @func0000000000000075
 	cset	w0, hs
 	ret
                                         // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	and	w8, w1, #0x1e
+	cmp	w8, w0, lsl #2
+	cset	w0, hi
+	ret
+                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	and	w8, w1, #0x3ffffff8

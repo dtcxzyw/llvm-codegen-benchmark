@@ -683,4 +683,15 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nsw i64 %2 to i32
+  %4 = icmp slt i32 %1, %3
+  %5 = or i1 %4, %0
+  ret i1 %5
+}
+
 attributes #0 = { nounwind }

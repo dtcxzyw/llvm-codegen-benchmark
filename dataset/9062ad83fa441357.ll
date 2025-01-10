@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::DynamicPattern.2639935" = type <{ %"class.std::basic_string_view.2639862", %"class.std::basic_string_view.2639862", i8, [7 x i8] }>
-%"class.std::basic_string_view.2639862" = type { i64, ptr }
-%class.aiVector3t.2823159 = type { double, double, double }
+%"struct.mold::elf::DynamicPattern.2639902" = type <{ %"class.std::basic_string_view.2639829", %"class.std::basic_string_view.2639829", i8, [7 x i8] }>
+%"class.std::basic_string_view.2639829" = type { i64, ptr }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 118 occurrences:
 ; abc/optimized/abcRec3.c.ll
@@ -126,7 +126,7 @@
 define i64 @func0000000000000031(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639902", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, -40
@@ -213,7 +213,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr nusw %class.aiVector3t.2823159, ptr %1, i64 %3
+  %4 = getelementptr nusw %class.aiVector3t.2823125, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, -24

@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; casadi/optimized/cs_maxtrans.c.ll
 ; cpython/optimized/ceval.ll
-; cpython/optimized/pystrtod.ll
 ; linux/optimized/raw.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; ruby/optimized/regexec.ll

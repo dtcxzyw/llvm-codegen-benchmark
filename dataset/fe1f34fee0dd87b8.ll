@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2683008" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2683009", i64, %union.anon.2683010 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2683009" = type { ptr }
-%union.anon.2683010 = type { i64, [8 x i8] }
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
+%"class.std::__cxx11::basic_string.2682975" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2682976", i64, %union.anon.2682977 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2682976" = type { ptr }
+%union.anon.2682977 = type { i64, [8 x i8] }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
 
 ; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -21,7 +21,7 @@ entry:
   %3 = ashr exact i64 %0, 5
   %4 = ashr exact i64 %2, 5
   %5 = sub nuw nsw i64 %4, %3
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2683008", ptr %1, i64 %5
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2682975", ptr %1, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }
@@ -45,7 +45,7 @@ entry:
   %3 = ashr exact i64 %0, 4
   %4 = ashr exact i64 %2, 4
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %1, i64 %5
+  %6 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %1, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }

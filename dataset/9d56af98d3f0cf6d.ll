@@ -1,9 +1,9 @@
 
-%"struct.google::protobuf::internal::TcParseTableBase::FastFieldEntry.3668384" = type { %"struct.std::atomic.13.3668385", %"struct.google::protobuf::internal::TcFieldData.3668386" }
-%"struct.std::atomic.13.3668385" = type { %"struct.std::__atomic_base.14.3668387" }
-%"struct.std::__atomic_base.14.3668387" = type { ptr }
-%"struct.google::protobuf::internal::TcFieldData.3668386" = type { %union.anon.3668388 }
-%union.anon.3668388 = type { i64 }
+%"struct.google::protobuf::internal::TcParseTableBase::FastFieldEntry.3668334" = type { %"struct.std::atomic.13.3668335", %"struct.google::protobuf::internal::TcFieldData.3668336" }
+%"struct.std::atomic.13.3668335" = type { %"struct.std::__atomic_base.14.3668337" }
+%"struct.std::__atomic_base.14.3668337" = type { ptr }
+%"struct.google::protobuf::internal::TcFieldData.3668336" = type { %union.anon.3668338 }
+%union.anon.3668338 = type { i64 }
 
 ; 2 occurrences:
 ; linux/optimized/kbuf.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 3
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::TcParseTableBase::FastFieldEntry.3668384", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::TcParseTableBase::FastFieldEntry.3668334", ptr %0, i64 %3
   ret ptr %4
 }
 

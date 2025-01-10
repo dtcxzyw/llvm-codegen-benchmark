@@ -1,13 +1,13 @@
 
-%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
-%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
-%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
-%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
-%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
-%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
-%struct.anon.12.2606011 = type { i64 }
-%struct._zend_arg_info.2789883 = type { ptr, %struct.zend_type.2789884, ptr }
-%struct.zend_type.2789884 = type { ptr, i32 }
+%"class.std::__1::basic_string.2605972" = type { %"class.std::__1::__compressed_pair.10.2605973" }
+%"class.std::__1::__compressed_pair.10.2605973" = type { %"struct.std::__1::__compressed_pair_elem.11.2605974" }
+%"struct.std::__1::__compressed_pair_elem.11.2605974" = type { %"struct.std::__1::basic_string<char>::__rep.2605975" }
+%"struct.std::__1::basic_string<char>::__rep.2605975" = type { %union.anon.2605976 }
+%union.anon.2605976 = type { %"struct.std::__1::basic_string<char>::__long.2605977" }
+%"struct.std::__1::basic_string<char>::__long.2605977" = type { %struct.anon.12.2605978, i64, ptr }
+%struct.anon.12.2605978 = type { i64 }
+%struct._zend_arg_info.2789849 = type { ptr, %struct.zend_type.2789850, ptr }
+%struct.zend_type.2789850 = type { ptr, i32 }
 
 ; 8 occurrences:
 ; cpython/optimized/ast_opt.ll
@@ -24,8 +24,8 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 4, i64 5
-  %6 = getelementptr %"class.std::__1::basic_string.2606005", ptr %1, i64 %5
-  %7 = getelementptr %"class.std::__1::basic_string.2606005", ptr %6, i64 %0
+  %6 = getelementptr %"class.std::__1::basic_string.2605972", ptr %1, i64 %5
+  %7 = getelementptr %"class.std::__1::basic_string.2605972", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -56,7 +56,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 0, i64 -32
   %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %struct._zend_arg_info.2789883, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %struct._zend_arg_info.2789849, ptr %6, i64 %0
   ret ptr %7
 }
 

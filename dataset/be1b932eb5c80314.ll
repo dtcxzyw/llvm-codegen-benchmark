@@ -1,6 +1,6 @@
 
-%struct.hb_glyph_info_t.2735113 = type { i32, i32, i32, %union._hb_var_int_t.2735114, %union._hb_var_int_t.2735114 }
-%union._hb_var_int_t.2735114 = type { i32 }
+%struct.hb_glyph_info_t.2735079 = type { i32, i32, i32, %union._hb_var_int_t.2735080, %union._hb_var_int_t.2735080 }
+%union._hb_var_int_t.2735080 = type { i32 }
 
 ; 7 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -14,9 +14,9 @@
 define ptr @func00000000000000df(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735113, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735079, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = getelementptr %struct.hb_glyph_info_t.2735113, ptr %5, i64 %0
+  %6 = getelementptr %struct.hb_glyph_info_t.2735079, ptr %5, i64 %0
   ret ptr %6
 }
 

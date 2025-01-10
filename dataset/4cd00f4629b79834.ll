@@ -1,7 +1,7 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
-%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
-%"class.std::thread::id.2636053" = type { i64 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021" = type { %"struct.std::atomic.742.2636022", ptr }
+%"struct.std::atomic.742.2636022" = type { %"class.std::thread::id.2636020" }
+%"class.std::thread::id.2636020" = type { i64 }
 
 ; 3 occurrences:
 ; cpython/optimized/dictobject.ll
@@ -174,7 +174,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021", ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; arrow/optimized/int_util.cc.ll
@@ -23,7 +23,6 @@
 ; mitsuba3/optimized/rectangle.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
-; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/nbtinsert.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; rocksdb/optimized/block_based_table_builder.cc.ll

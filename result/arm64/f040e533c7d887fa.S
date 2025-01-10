@@ -25,6 +25,13 @@ func000000000000000c:                   // @func000000000000000c
 	cset	w0, ne
 	ret
                                         // -- End function
+func0000000000000181:                   // @func0000000000000181
+// %bb.0:                               // %entry
+	add	w8, w0, w1
+	tst	w8, #0x3f
+	cset	w0, eq
+	ret
+                                        // -- End function
 func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
 	add	w8, w0, w1

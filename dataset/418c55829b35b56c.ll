@@ -1,5 +1,5 @@
 
-; 2535 occurrences:
+; 2534 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -466,6 +466,7 @@
 ; glslang/optimized/intermOut.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
+; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/input.c.ll
 ; graphviz/optimized/poly.c.ll
@@ -748,7 +749,6 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -1503,7 +1503,6 @@
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; openjdk/optimized/ad_x86.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/awt_parseImage.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/classLoader.ll

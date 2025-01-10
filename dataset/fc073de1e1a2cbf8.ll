@@ -1,10 +1,10 @@
 
-%"struct.clang::Builtin::Info.3193452" = type <{ %"class.llvm::StringLiteral.3193453", ptr, ptr, ptr, %"struct.clang::HeaderDesc.3193451", i16, [4 x i8] }>
-%"class.llvm::StringLiteral.3193453" = type { %"class.llvm::StringRef.3193454" }
-%"class.llvm::StringRef.3193454" = type { ptr, i64 }
-%"struct.clang::HeaderDesc.3193451" = type { i16 }
-%"class.ZXing::Nullable.0.3649179" = type { i8, %"class.ZXing::Pdf417::Codeword.3649180" }
-%"class.ZXing::Pdf417::Codeword.3649180" = type { i32, i32, i32, i32, i32 }
+%"struct.clang::Builtin::Info.3193418" = type <{ %"class.llvm::StringLiteral.3193419", ptr, ptr, ptr, %"struct.clang::HeaderDesc.3193417", i16, [4 x i8] }>
+%"class.llvm::StringLiteral.3193419" = type { %"class.llvm::StringRef.3193420" }
+%"class.llvm::StringRef.3193420" = type { ptr, i64 }
+%"struct.clang::HeaderDesc.3193417" = type { i16 }
+%"class.ZXing::Nullable.0.3649145" = type { i8, %"class.ZXing::Pdf417::Codeword.3649146" }
+%"class.ZXing::Pdf417::Codeword.3649146" = type { i32, i32, i32, i32, i32 }
 
 ; 3 occurrences:
 ; linux/optimized/kobject.ll
@@ -128,7 +128,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.clang::Builtin::Info.3193452", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.clang::Builtin::Info.3193418", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -169,7 +169,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.ZXing::Nullable.0.3649179", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.ZXing::Nullable.0.3649145", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/get_turn_info.ll
@@ -21,7 +21,6 @@
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/date_core.ll
 ; spike/optimized/s_mul128MTo256M.ll
-; spike/optimized/s_subM.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

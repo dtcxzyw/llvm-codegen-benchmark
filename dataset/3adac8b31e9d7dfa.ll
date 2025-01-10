@@ -1,10 +1,11 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/net.ll
 ; wireshark/optimized/packet-giop.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll

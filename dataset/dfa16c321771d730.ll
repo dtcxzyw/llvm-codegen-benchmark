@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; folly/optimized/Compression.cpp.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/alps.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
-; llvm/optimized/SROA.cpp.ll
 ; openssl/optimized/libcrypto-lib-encode.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
 ; ruby/optimized/parser.ll
@@ -888,7 +887,7 @@ entry:
   ret i64 %4
 }
 
-; 110 occurrences:
+; 111 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -927,6 +926,7 @@ entry:
 ; linux/optimized/psargs.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
+; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SipHash.cpp.ll
 ; llvm/optimized/blake3.c.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
@@ -1008,7 +1008,7 @@ entry:
   ret i64 %4
 }
 
-; 404 occurrences:
+; 403 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
@@ -1390,7 +1390,6 @@ entry:
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/scanner.c.ll
 ; wolfssl/optimized/internal.c.ll

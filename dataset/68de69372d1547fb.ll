@@ -1,5 +1,5 @@
 
-; 534 occurrences:
+; 536 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -363,7 +363,9 @@
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/packettest-bin-packettest.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; openusd/optimized/animMapper.cpp.ll

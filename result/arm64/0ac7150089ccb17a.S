@@ -254,6 +254,13 @@ func000000000000030c:                   // @func000000000000030c
 	cset	w0, lt
 	ret
                                         // -- End function
+func0000000000000298:                   // @func0000000000000298
+// %bb.0:                               // %entry
+	tst	w0, #0xff
+	ccmp	w1, w2, #0, eq
+	cset	w0, gt
+	ret
+                                        // -- End function
 func0000000000000312:                   // @func0000000000000312
 // %bb.0:                               // %entry
 	tst	w2, #0xff

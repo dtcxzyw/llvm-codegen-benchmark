@@ -11,9 +11,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
-; libwebp/optimized/alpha_dec.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:

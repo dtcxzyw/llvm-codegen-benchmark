@@ -142,15 +142,34 @@ func00000000000000f5:                   # @func00000000000000f5
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
+func00000000000000aa:                   # @func00000000000000aa
+	movl	%esi, %eax
+	decq	%rax
+	cmpq	%rdi, %rax
+	setg	%al
+	retq
 func00000000000000a8:                   # @func00000000000000a8
 	movl	%esi, %eax
 	decq	%rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
+func00000000000000e6:                   # @func00000000000000e6
+	movl	%esi, %eax
+	incq	%rax
+	cmpq	%rdi, %rax
+	setl	%al
+	retq
 func0000000000000079:                   # @func0000000000000079
 	movl	%esi, %eax
 	incq	%rax
 	cmpq	%rdi, %rax
 	setae	%al
+	retq
+func000000000000006a:                   # @func000000000000006a
+	movl	%esi, %eax
+	movabsq	$-9223372036854775744, %rcx     # imm = 0x8000000000000040
+	addq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	setg	%al
 	retq

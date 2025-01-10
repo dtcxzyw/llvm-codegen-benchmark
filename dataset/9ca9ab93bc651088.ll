@@ -13,9 +13,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {

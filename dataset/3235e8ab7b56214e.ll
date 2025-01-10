@@ -1,25 +1,25 @@
 
-%"struct.Yosys::hashlib::dict<std::tuple<Yosys::RTLIL::IdString, Yosys::RTLIL::IdString, int>, (anonymous namespace)::mutate_queue_t>::entry_t.3121084" = type { %"struct.std::pair.334.3121036", i32, [4 x i8] }
-%"struct.std::pair.334.3121036" = type { %"class.std::tuple.296.3121029", [4 x i8], %"struct.(anonymous namespace)::mutate_queue_t.3121014" }
-%"class.std::tuple.296.3121029" = type { %"struct.std::_Tuple_impl.297.3121030" }
-%"struct.std::_Tuple_impl.297.3121030" = type { %"struct.std::_Tuple_impl.298.3121031", %"struct.std::_Head_base.295.3121032" }
-%"struct.std::_Tuple_impl.298.3121031" = type { %"struct.std::_Tuple_impl.299.3121033", %"struct.std::_Head_base.294.3121034" }
-%"struct.std::_Tuple_impl.299.3121033" = type { %"struct.std::_Head_base.300.3121035" }
-%"struct.std::_Head_base.300.3121035" = type { i32 }
-%"struct.std::_Head_base.294.3121034" = type { %"struct.Yosys::RTLIL::IdString.3120912" }
-%"struct.Yosys::RTLIL::IdString.3120912" = type { i32 }
-%"struct.std::_Head_base.295.3121032" = type { %"struct.Yosys::RTLIL::IdString.3120912" }
-%"struct.(anonymous namespace)::mutate_queue_t.3121014" = type { %"class.Yosys::hashlib::pool.318.3121015" }
-%"class.Yosys::hashlib::pool.318.3121015" = type <{ %"class.std::vector.3.3120899", %"class.std::vector.319.3121016", %"struct.Yosys::hashlib::hash_ptr_ops.3121017", [7 x i8] }>
-%"class.std::vector.3.3120899" = type { %"struct.std::_Vector_base.4.3120902" }
-%"struct.std::_Vector_base.4.3120902" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120903" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120903" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120904" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120904" = type { ptr, ptr, ptr }
-%"class.std::vector.319.3121016" = type { %"struct.std::_Vector_base.320.3121018" }
-%"struct.std::_Vector_base.320.3121018" = type { %"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl.3121019" }
-%"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl.3121019" = type { %"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl_data.3121020" }
-%"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl_data.3121020" = type { ptr, ptr, ptr }
-%"struct.Yosys::hashlib::hash_ptr_ops.3121017" = type { i8 }
+%"struct.Yosys::hashlib::dict<std::tuple<Yosys::RTLIL::IdString, Yosys::RTLIL::IdString, int>, (anonymous namespace)::mutate_queue_t>::entry_t.3121050" = type { %"struct.std::pair.334.3121002", i32, [4 x i8] }
+%"struct.std::pair.334.3121002" = type { %"class.std::tuple.296.3120995", [4 x i8], %"struct.(anonymous namespace)::mutate_queue_t.3120980" }
+%"class.std::tuple.296.3120995" = type { %"struct.std::_Tuple_impl.297.3120996" }
+%"struct.std::_Tuple_impl.297.3120996" = type { %"struct.std::_Tuple_impl.298.3120997", %"struct.std::_Head_base.295.3120998" }
+%"struct.std::_Tuple_impl.298.3120997" = type { %"struct.std::_Tuple_impl.299.3120999", %"struct.std::_Head_base.294.3121000" }
+%"struct.std::_Tuple_impl.299.3120999" = type { %"struct.std::_Head_base.300.3121001" }
+%"struct.std::_Head_base.300.3121001" = type { i32 }
+%"struct.std::_Head_base.294.3121000" = type { %"struct.Yosys::RTLIL::IdString.3120878" }
+%"struct.Yosys::RTLIL::IdString.3120878" = type { i32 }
+%"struct.std::_Head_base.295.3120998" = type { %"struct.Yosys::RTLIL::IdString.3120878" }
+%"struct.(anonymous namespace)::mutate_queue_t.3120980" = type { %"class.Yosys::hashlib::pool.318.3120981" }
+%"class.Yosys::hashlib::pool.318.3120981" = type <{ %"class.std::vector.3.3120865", %"class.std::vector.319.3120982", %"struct.Yosys::hashlib::hash_ptr_ops.3120983", [7 x i8] }>
+%"class.std::vector.3.3120865" = type { %"struct.std::_Vector_base.4.3120868" }
+%"struct.std::_Vector_base.4.3120868" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120869" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3120869" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120870" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3120870" = type { ptr, ptr, ptr }
+%"class.std::vector.319.3120982" = type { %"struct.std::_Vector_base.320.3120984" }
+%"struct.std::_Vector_base.320.3120984" = type { %"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl.3120985" }
+%"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl.3120985" = type { %"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl_data.3120986" }
+%"struct.std::_Vector_base<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t, std::allocator<Yosys::hashlib::pool<(anonymous namespace)::mutate_t *, Yosys::hashlib::hash_ptr_ops>::entry_t>>::_Vector_impl_data.3120986" = type { ptr, ptr, ptr }
+%"struct.Yosys::hashlib::hash_ptr_ops.3120983" = type { i8 }
 
 ; 7 occurrences:
 ; abc/optimized/cecCorr.c.ll
@@ -49,7 +49,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.Yosys::hashlib::dict<std::tuple<Yosys::RTLIL::IdString, Yosys::RTLIL::IdString, int>, (anonymous namespace)::mutate_queue_t>::entry_t.3121084", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.Yosys::hashlib::dict<std::tuple<Yosys::RTLIL::IdString, Yosys::RTLIL::IdString, int>, (anonymous namespace)::mutate_queue_t>::entry_t.3121050", ptr %0, i64 %6
   ret ptr %7
 }
 

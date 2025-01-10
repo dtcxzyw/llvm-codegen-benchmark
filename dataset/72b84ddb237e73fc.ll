@@ -1,5 +1,5 @@
 
-; 632 occurrences:
+; 631 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -250,7 +250,6 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; miniaudio/optimized/unity.c.ll

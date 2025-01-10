@@ -172,6 +172,13 @@ func00000000000000ac:                   # @func00000000000000ac
 	setne	%al
 	orb	%cl, %al
 	retq
+func00000000000000e6:                   # @func00000000000000e6
+	cmpq	%rdx, %rsi
+	setle	%cl
+	testq	%rdi, %rdi
+	sets	%al
+	orb	%cl, %al
+	retq
 func0000000000000024:                   # @func0000000000000024
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -254,14 +261,6 @@ func0000000000000321:                   # @func0000000000000321
 	setae	%cl
 	cmpq	$1, %rdi
 	sete	%al
-	orb	%cl, %al
-	retq
-func00000000000000e6:                   # @func00000000000000e6
-	cmpq	%rdx, %rsi
-	setle	%cl
-	movl	$2147483648, %eax               # imm = 0x80000000
-	cmpq	%rax, %rdi
-	setl	%al
 	orb	%cl, %al
 	retq
 func00000000000000c4:                   # @func00000000000000c4

@@ -120,7 +120,7 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; git/optimized/path.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; linux/optimized/vht.ll
@@ -128,7 +128,6 @@ entry:
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll

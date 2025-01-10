@@ -1,11 +1,13 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; node/optimized/libnode.node_file.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/string.ll

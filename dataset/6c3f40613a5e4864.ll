@@ -1,8 +1,8 @@
 
-%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
-%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%"struct.rocksdb::FdWithKeyRange.2614326" = type { %"struct.rocksdb::FileDescriptor.2614327", ptr, %"class.rocksdb::Slice.2614306", %"class.rocksdb::Slice.2614306" }
+%"struct.rocksdb::FileDescriptor.2614327" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614306" = type { ptr, i64 }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
 
 ; 65 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -74,7 +74,7 @@
 define ptr @func00000000000001e6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614326", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = icmp slt i32 %1, 0
   %7 = select i1 %6, ptr %5, ptr %0
@@ -89,7 +89,7 @@ entry:
 define ptr @func00000000000001ea(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = icmp sgt i32 %1, 0
   %7 = select i1 %6, ptr %5, ptr %0

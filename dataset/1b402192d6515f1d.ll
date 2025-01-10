@@ -1,5 +1,5 @@
 
-%struct.extCard.3484972 = type { i32, i32, i32 }
+%struct.extCard.3484938 = type { i32, i32, i32 }
 
 ; 6 occurrences:
 ; linux/optimized/intel_bw.ll
@@ -50,7 +50,7 @@ entry:
   %.idx = mul nsw i64 %3, 220
   %4 = getelementptr i8, ptr %1, i64 112
   %5 = getelementptr i8, ptr %4, i64 %.idx
-  %6 = getelementptr nusw [4 x %struct.extCard.3484972], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw [4 x %struct.extCard.3484938], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

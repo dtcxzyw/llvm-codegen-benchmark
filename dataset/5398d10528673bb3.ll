@@ -1,7 +1,7 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%"struct.CFF::number_t.2732152" = type { double }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 5 occurrences:
 ; icu/optimized/rbt_set.ll
@@ -88,7 +88,7 @@ entry:
   %3 = add i32 %2, -4
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -103,7 +103,7 @@ entry:
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 60
-  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

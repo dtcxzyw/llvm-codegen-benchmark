@@ -14,7 +14,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abc/optimized/abcPrint.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; darktable/optimized/metadata.c.ll
 ; Function Attrs: nounwind

@@ -26,7 +26,7 @@ entry:
   ret i32 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -42,7 +42,6 @@ entry:
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; minetest/optimized/map.cpp.ll

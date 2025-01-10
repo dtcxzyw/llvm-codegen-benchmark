@@ -1,5 +1,5 @@
 
-; 22431 occurrences:
+; 22433 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -2236,6 +2236,7 @@
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/dconf.c.ll
 ; clamav/optimized/disasm.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/dlp.c.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/dsig.c.ll
@@ -2998,6 +2999,7 @@
 ; cpython/optimized/pyexpat.ll
 ; cpython/optimized/pystate.ll
 ; cpython/optimized/pystrhex.ll
+; cpython/optimized/pystrtod.ll
 ; cpython/optimized/readline.ll
 ; cpython/optimized/row.ll
 ; cpython/optimized/selectmodule.ll
@@ -22438,7 +22440,7 @@ entry:
   ret i64 %1
 }
 
-; 22727 occurrences:
+; 22726 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -32756,7 +32758,6 @@ entry:
 ; mitsuba3/optimized/disk.cpp.ll
 ; mitsuba3/optimized/distant.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
-; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/film.cpp.ll
 ; mitsuba3/optimized/formatter.cpp.ll
 ; mitsuba3/optimized/fstream.cpp.ll
@@ -45173,7 +45174,7 @@ entry:
   ret i64 %1
 }
 
-; 16367 occurrences:
+; 16368 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -59281,6 +59282,7 @@ entry:
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
+; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/1jbfz0m1n0wz4a3e.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
@@ -61548,7 +61550,7 @@ entry:
   ret i64 %1
 }
 
-; 11993 occurrences:
+; 11995 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -65898,6 +65900,7 @@ entry:
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/radiancemeter.cpp.ll
+; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rayleigh.cpp.ll
 ; mitsuba3/optimized/rectangle.cpp.ll
@@ -71441,6 +71444,7 @@ entry:
 ; tev/optimized/EmptyImageLoader.cpp.ll
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; tev/optimized/ExrImageSaver.cpp.ll
+; tev/optimized/HelpWindow.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/ImageButton.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll

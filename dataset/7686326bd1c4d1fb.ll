@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector2d.2693290" = type { i32, i32 }
+%"class.irr::core::vector2d.2693256" = type { i32, i32 }
 
 ; 7 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %4 = and i64 %2, 4294967295
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %"class.irr::core::vector2d.2693290", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"class.irr::core::vector2d.2693256", ptr %6, i64 %5
   ret ptr %7
 }
 

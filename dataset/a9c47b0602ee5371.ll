@@ -1,11 +1,11 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
-%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
-%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
-%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
-%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%"struct.rocksdb::CacheAlignedWrapper.2615938" = type { %"class.rocksdb::port::Mutex.2615939", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615939" = type { %union.pthread_mutex_t.2615940 }
+%union.pthread_mutex_t.2615940 = type { %struct.__pthread_mutex_s.2615941 }
+%struct.__pthread_mutex_s.2615941 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615942 }
+%struct.__pthread_internal_list.2615942 = type { ptr, ptr }
 
-; 778 occurrences:
+; 779 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -588,6 +588,7 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgsource.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
@@ -4442,11 +4443,11 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %3
+  %4 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615938", ptr %0, i64 %3
   ret ptr %4
 }
 
-; 175 occurrences:
+; 172 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -4489,8 +4490,6 @@ entry:
 ; lvgl/optimized/lv_roller.ll
 ; lvgl/optimized/lv_textarea.ll
 ; lvgl/optimized/lv_utils.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; nori/optimized/texture_gl.cpp.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; oiio/optimized/pngoutput.cpp.ll
@@ -4616,7 +4615,6 @@ entry:
 ; quantlib/optimized/vannavolgabarrierengine.ll
 ; quantlib/optimized/yoycapfloortermpricesurface.ll
 ; quantlib/optimized/zabr.ll
-; raylib/optimized/raudio.c.ll
 ; xgboost/optimized/allreduce.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
@@ -4630,15 +4628,13 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; boost/optimized/ipc_reliable_message_queue.ll
-; miniaudio/optimized/unity.c.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/fixedlocalvolsurface.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -4677,7 +4673,7 @@ entry:
   ret ptr %4
 }
 
-; 48 occurrences:
+; 46 occurrences:
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -4720,8 +4716,6 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; tinympc/optimized/codegen.cpp.ll

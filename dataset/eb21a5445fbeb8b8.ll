@@ -13,6 +13,18 @@ entry:
   ret i16 %3
 }
 
+; 3 occurrences:
+; llvm/optimized/DebugInfoMetadata.cpp.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %0, %1
+  %3 = select i1 %2, i16 %0, i16 0
+  ret i16 %3
+}
+
 ; 2 occurrences:
 ; opencv/optimized/gfluidcore.cpp.ll
 ; opencv/optimized/thresh.cpp.ll

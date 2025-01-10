@@ -1,5 +1,5 @@
 
-%struct._HufDec.3395209 = type { i32, i32, ptr }
+%struct._HufDec.3395175 = type { i32, i32, ptr }
 
 ; 4 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
@@ -13,7 +13,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = and i64 %5, 16383
-  %7 = getelementptr nusw nuw %struct._HufDec.3395209, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct._HufDec.3395175, ptr %0, i64 %6
   ret ptr %7
 }
 

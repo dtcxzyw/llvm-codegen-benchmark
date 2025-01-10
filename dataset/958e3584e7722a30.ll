@@ -1,5 +1,5 @@
 
-%struct.e1000_shadow_ram.3538596 = type { i16, i8 }
+%struct.e1000_shadow_ram.3538562 = type { i16, i8 }
 
 ; 4 occurrences:
 ; arrow/optimized/bignum.cc.ll
@@ -36,7 +36,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1178
-  %6 = getelementptr [2048 x %struct.e1000_shadow_ram.3538596], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [2048 x %struct.e1000_shadow_ram.3538562], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

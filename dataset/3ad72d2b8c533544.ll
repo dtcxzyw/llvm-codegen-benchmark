@@ -83,8 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; faiss/optimized/AutoTune.cpp.ll
+; 2 occurrences:
 ; luau/optimized/TypeFamily.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind

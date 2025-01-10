@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
 
 ; 21 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -45,7 +45,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -16,12 +16,6 @@ func000000000000003a:                   # @func000000000000003a
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
-func000000000000003e:                   # @func000000000000003e
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vsll.vi	v12, v12, 6
-	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v12, v12, 4

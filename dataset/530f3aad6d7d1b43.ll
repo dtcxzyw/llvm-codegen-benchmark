@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; brotli/optimized/block_splitter.c.ll
@@ -18,6 +18,7 @@
 ; hyperscan/optimized/ng_util.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/ng_width.cpp.ll
+; icu/optimized/ucnv_u8.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -36,20 +37,19 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/fpsycltpd003ini.ll
 ; linux/optimized/mlme.ll
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
-; ruby/optimized/regexec.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
-  %3 = shl nuw i8 2, %2
-  %4 = and i8 %3, %0
+  %3 = shl nuw i8 1, %2
+  %4 = and i8 %0, %3
   %5 = icmp ne i8 %4, 0
   ret i1 %5
 }

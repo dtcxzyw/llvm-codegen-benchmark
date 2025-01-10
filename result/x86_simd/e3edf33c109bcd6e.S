@@ -15,7 +15,7 @@ func000000000000007f:                   # @func000000000000007f
 	retq
 .LCPI2_0:
 	.quad	4607182418800017408             # 0x3ff0000000000000
-func0000000000000070:                   # @func0000000000000070
+func0000000000000072:                   # @func0000000000000072
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$52, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

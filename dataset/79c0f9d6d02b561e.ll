@@ -1,5 +1,6 @@
 
 ; 44 occurrences:
+; casadi/optimized/integrator.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -25,7 +26,6 @@
 ; folly/optimized/dynamic.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll

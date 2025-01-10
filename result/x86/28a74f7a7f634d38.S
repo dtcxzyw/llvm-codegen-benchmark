@@ -1,3 +1,10 @@
+func000000000000001f:                   # @func000000000000001f
+	movl	%edx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmoveq	%rax, %rcx
+	leaq	8(%rdi,%rcx,4), %rax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%edx, %eax
 	xorl	%ecx, %ecx
@@ -5,13 +12,6 @@ func000000000000000b:                   # @func000000000000000b
 	cmoveq	%rax, %rcx
 	shlq	$6, %rcx
 	leaq	-192(%rdi,%rcx), %rax
-	retq
-func000000000000001f:                   # @func000000000000001f
-	movl	%edx, %eax
-	testb	$1, %sil
-	movl	$8, %ecx
-	cmoveq	%rax, %rcx
-	leaq	648(%rdi,%rcx,8), %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edx, %eax

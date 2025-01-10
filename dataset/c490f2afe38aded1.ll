@@ -1,21 +1,21 @@
 
-%struct.tls_rl_record_st.2633441 = type { i32, i32, i64, i64, i64, ptr, ptr, ptr, i16, [8 x i8] }
-%"class.boost::intrusive::list.2684294" = type { %"class.boost::intrusive::list_impl.2684295" }
-%"class.boost::intrusive::list_impl.2684295" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" = type { %"struct.boost::intrusive::detail::default_header_holder.2684298" }
-%"struct.boost::intrusive::detail::default_header_holder.2684298" = type { %"struct.boost::intrusive::list_node.2684299" }
-%"struct.boost::intrusive::list_node.2684299" = type { ptr, ptr }
-%struct.TCGTemp.2708295 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct.list_head.3535195 = type { ptr, ptr }
-%struct.WordEntry.3654110 = type { i32 }
-%"struct.nix::Attr.3687030" = type { %"class.nix::Symbol.3687031", %"class.nix::PosIdx.3686595", ptr }
-%"class.nix::Symbol.3687031" = type { i32 }
-%"class.nix::PosIdx.3686595" = type { i32 }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
-%struct.mi_page_s.4024255 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024256, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024256 = type { i8 }
+%struct.tls_rl_record_st.2633408 = type { i32, i32, i64, i64, i64, ptr, ptr, ptr, i16, [8 x i8] }
+%"class.boost::intrusive::list.2684261" = type { %"class.boost::intrusive::list_impl.2684262" }
+%"class.boost::intrusive::list_impl.2684262" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" = type { %"struct.boost::intrusive::detail::default_header_holder.2684265" }
+%"struct.boost::intrusive::detail::default_header_holder.2684265" = type { %"struct.boost::intrusive::list_node.2684266" }
+%"struct.boost::intrusive::list_node.2684266" = type { ptr, ptr }
+%struct.TCGTemp.2708261 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.list_head.3535161 = type { ptr, ptr }
+%struct.WordEntry.3654076 = type { i32 }
+%"struct.nix::Attr.3686980" = type { %"class.nix::Symbol.3686981", %"class.nix::PosIdx.3686545", ptr }
+%"class.nix::Symbol.3686981" = type { i32 }
+%"class.nix::PosIdx.3686545" = type { i32 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
+%struct.mi_page_s.4024205 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024206, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024206 = type { i8 }
 
 ; 3 occurrences:
 ; linux/optimized/intel_gt_buffer_pool.ll
@@ -41,7 +41,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 1744
-  %4 = getelementptr nusw [32 x %struct.tls_rl_record_st.2633441], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [32 x %struct.tls_rl_record_st.2633408], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -114,7 +114,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 240
-  %4 = getelementptr nusw nuw [256 x %"class.boost::intrusive::list.2684294"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [256 x %"class.boost::intrusive::list.2684261"], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -154,7 +154,7 @@ entry:
 define i1 @func0000000000000181(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 664
-  %4 = getelementptr [512 x %struct.TCGTemp.2708295], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [512 x %struct.TCGTemp.2708261], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -184,7 +184,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 912
-  %4 = getelementptr [4 x %struct.list_head.3535195], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [4 x %struct.list_head.3535161], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -196,7 +196,7 @@ entry:
 define i1 @func0000000000000184(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr [0 x %struct.WordEntry.3654110], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.WordEntry.3654076], ptr %3, i64 0, i64 %1
   %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
@@ -208,7 +208,7 @@ entry:
 define i1 @func00000000000001ec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw [0 x %"struct.nix::Attr.3687030"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [0 x %"struct.nix::Attr.3686980"], ptr %3, i64 0, i64 %1
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
@@ -219,7 +219,7 @@ entry:
 define i1 @func0000000000000188(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %3, i64 0, i64 %1
   %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
@@ -230,7 +230,7 @@ entry:
 define i1 @func00000000000001c4(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024255], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024205], ptr %3, i64 0, i64 %1
   %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
@@ -241,7 +241,7 @@ entry:
 define i1 @func00000000000001c8(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024255], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024205], ptr %3, i64 0, i64 %1
   %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }

@@ -1,7 +1,7 @@
 
-%struct.stbcc__clump.3100977 = type { %union.stbcc__global_clumpid.3100978, i8, i8, i8, i8 }
-%union.stbcc__global_clumpid.3100978 = type { %struct.anon.3100979 }
-%struct.anon.3100979 = type { i32 }
+%struct.stbcc__clump.3100943 = type { %union.stbcc__global_clumpid.3100944, i8, i8, i8, i8 }
+%union.stbcc__global_clumpid.3100944 = type { %struct.anon.3100945 }
+%struct.anon.3100945 = type { i32 }
 
 ; 3 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -28,7 +28,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = mul nsw i64 %3, 4356
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100977], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100943], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

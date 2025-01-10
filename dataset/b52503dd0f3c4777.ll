@@ -1,37 +1,37 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
-%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
-%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::__shared_count.2612196" = type { ptr }
-%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
-%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
-%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
-%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
-%class.CEdgeO.3812613 = type { %"class.vcg::Edge.3812614" }
-%"class.vcg::Edge.3812614" = type { %"class.vcg::EdgeArityMax.3812615" }
-%"class.vcg::EdgeArityMax.3812615" = type { %"class.vcg::Arity10.186.3812616" }
-%"class.vcg::Arity10.186.3812616" = type { %"class.vcg::DefaultDeriver.187.3812617" }
-%"class.vcg::DefaultDeriver.187.3812617" = type { %"class.vcg::Arity9.188.3812618" }
-%"class.vcg::Arity9.188.3812618" = type { %"class.vcg::DefaultDeriver.189.3812619" }
-%"class.vcg::DefaultDeriver.189.3812619" = type { %"class.vcg::Arity8.190.3812620" }
-%"class.vcg::Arity8.190.3812620" = type { %"class.vcg::DefaultDeriver.191.3812621" }
-%"class.vcg::DefaultDeriver.191.3812621" = type { %"class.vcg::Arity7.192.3812622" }
-%"class.vcg::Arity7.192.3812622" = type { %"class.vcg::DefaultDeriver.193.3812623" }
-%"class.vcg::DefaultDeriver.193.3812623" = type { %"class.vcg::Arity6.194.3812624" }
-%"class.vcg::Arity6.194.3812624" = type { %"class.vcg::DefaultDeriver.195.3812625" }
-%"class.vcg::DefaultDeriver.195.3812625" = type { %"class.vcg::Arity5.196.3812626" }
-%"class.vcg::Arity5.196.3812626" = type { %"class.vcg::DefaultDeriver.197.3812627" }
-%"class.vcg::DefaultDeriver.197.3812627" = type { %"class.vcg::Arity4.198.3812628" }
-%"class.vcg::Arity4.198.3812628" = type { %"class.vcg::DefaultDeriver.199.3812629" }
-%"class.vcg::DefaultDeriver.199.3812629" = type { %"class.vcg::Arity3.200.3812630" }
-%"class.vcg::Arity3.200.3812630" = type { %"class.vcg::edge::EEAdj.3812631" }
-%"class.vcg::edge::EEAdj.3812631" = type { %"class.vcg::Arity2.201.3812632", [2 x ptr], [2 x i32] }
-%"class.vcg::Arity2.201.3812632" = type { %"class.vcg::edge::EVAdj.3812633" }
-%"class.vcg::edge::EVAdj.3812633" = type { %"class.vcg::edge::VertexRef.3812634" }
-%"class.vcg::edge::VertexRef.3812634" = type { %"class.vcg::Arity1.202.3812635", [2 x ptr] }
-%"class.vcg::Arity1.202.3812635" = type { %"class.vcg::edge::BitFlags.3812636" }
-%"class.vcg::edge::BitFlags.3812636" = type { i32 }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176" = type { %"class.std::shared_ptr.2.2612164", i8, %"class.std::shared_ptr.2612161", i64, i64, i64, %"class.std::shared_ptr.372.2612177" }
+%"class.std::shared_ptr.2.2612164" = type { %"class.std::__shared_ptr.3.2612165" }
+%"class.std::__shared_ptr.3.2612165" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::__shared_count.2612163" = type { ptr }
+%"class.std::shared_ptr.2612161" = type { %"class.std::__shared_ptr.2612162" }
+%"class.std::__shared_ptr.2612162" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::shared_ptr.372.2612177" = type { %"class.std::__shared_ptr.373.2612178" }
+%"class.std::__shared_ptr.373.2612178" = type { ptr, %"class.std::__shared_count.2612163" }
+%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
+%class.CEdgeO.3812563 = type { %"class.vcg::Edge.3812564" }
+%"class.vcg::Edge.3812564" = type { %"class.vcg::EdgeArityMax.3812565" }
+%"class.vcg::EdgeArityMax.3812565" = type { %"class.vcg::Arity10.186.3812566" }
+%"class.vcg::Arity10.186.3812566" = type { %"class.vcg::DefaultDeriver.187.3812567" }
+%"class.vcg::DefaultDeriver.187.3812567" = type { %"class.vcg::Arity9.188.3812568" }
+%"class.vcg::Arity9.188.3812568" = type { %"class.vcg::DefaultDeriver.189.3812569" }
+%"class.vcg::DefaultDeriver.189.3812569" = type { %"class.vcg::Arity8.190.3812570" }
+%"class.vcg::Arity8.190.3812570" = type { %"class.vcg::DefaultDeriver.191.3812571" }
+%"class.vcg::DefaultDeriver.191.3812571" = type { %"class.vcg::Arity7.192.3812572" }
+%"class.vcg::Arity7.192.3812572" = type { %"class.vcg::DefaultDeriver.193.3812573" }
+%"class.vcg::DefaultDeriver.193.3812573" = type { %"class.vcg::Arity6.194.3812574" }
+%"class.vcg::Arity6.194.3812574" = type { %"class.vcg::DefaultDeriver.195.3812575" }
+%"class.vcg::DefaultDeriver.195.3812575" = type { %"class.vcg::Arity5.196.3812576" }
+%"class.vcg::Arity5.196.3812576" = type { %"class.vcg::DefaultDeriver.197.3812577" }
+%"class.vcg::DefaultDeriver.197.3812577" = type { %"class.vcg::Arity4.198.3812578" }
+%"class.vcg::Arity4.198.3812578" = type { %"class.vcg::DefaultDeriver.199.3812579" }
+%"class.vcg::DefaultDeriver.199.3812579" = type { %"class.vcg::Arity3.200.3812580" }
+%"class.vcg::Arity3.200.3812580" = type { %"class.vcg::edge::EEAdj.3812581" }
+%"class.vcg::edge::EEAdj.3812581" = type { %"class.vcg::Arity2.201.3812582", [2 x ptr], [2 x i32] }
+%"class.vcg::Arity2.201.3812582" = type { %"class.vcg::edge::EVAdj.3812583" }
+%"class.vcg::edge::EVAdj.3812583" = type { %"class.vcg::edge::VertexRef.3812584" }
+%"class.vcg::edge::VertexRef.3812584" = type { %"class.vcg::Arity1.202.3812585", [2 x ptr] }
+%"class.vcg::Arity1.202.3812585" = type { %"class.vcg::edge::BitFlags.3812586" }
+%"class.vcg::edge::BitFlags.3812586" = type { i32 }
 
 ; 4 occurrences:
 ; rocksdb/optimized/memtable_list.cc.ll
@@ -43,7 +43,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %1
+  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -60,7 +60,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040", ptr %5, i64 %1
+  %6 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007", ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -93,7 +93,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %class.CEdgeO.3812613, ptr %5, i64 %1
+  %6 = getelementptr %class.CEdgeO.3812563, ptr %5, i64 %1
   ret ptr %6
 }
 

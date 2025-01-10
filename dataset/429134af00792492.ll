@@ -13,9 +13,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 2 occurrences:
+; 3 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; quickjs/optimized/quickjs-libc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

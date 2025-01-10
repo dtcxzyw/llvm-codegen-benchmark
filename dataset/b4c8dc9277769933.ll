@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cmake/optimized/cmCTest.cxx.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; icu/optimized/vtzone.ll
@@ -9,6 +9,7 @@
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; ncnn/optimized/cpu.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/tarok.cc.ll

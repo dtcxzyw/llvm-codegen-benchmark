@@ -30,20 +30,6 @@ func0000000000000058:                   // @func0000000000000058
 	csel	w0, w0, wzr, ne
 	ret
                                         // -- End function
-func000000000000010c:                   // @func000000000000010c
-// %bb.0:                               // %entry
-	cmp	w2, #96
-	ccmp	w1, #3, #8, hs
-	csel	w0, w0, wzr, lt
-	ret
-                                        // -- End function
-func000000000000004c:                   // @func000000000000004c
-// %bb.0:                               // %entry
-	cmp	w2, #0
-	ccmp	w1, #1, #8, ne
-	csinv	w0, w0, wzr, lt
-	ret
-                                        // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	cmp	w2, #0

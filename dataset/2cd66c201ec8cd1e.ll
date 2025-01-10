@@ -1,29 +1,29 @@
 
-%"struct.folly::f14::detail::F14Chunk.151.2686301" = type { %"struct.std::array.2686281", i8, i8, %"struct.std::array.152.2686302" }
-%"struct.std::array.2686281" = type { [14 x i8] }
-%"struct.std::array.152.2686302" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2686303"] }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.anon.18.2707490 = type { %union.mfi_pd_ref.2707491, i16, %struct.anon.19.2707492 }
-%union.mfi_pd_ref.2707491 = type { i32 }
-%struct.anon.19.2707492 = type { i8, i8 }
-%struct.CalloutNameListEntry.2710291 = type { i32, i32, ptr, ptr, i32, i32, [4 x i32], [4 x %union.OnigValue.2710292], ptr }
-%union.OnigValue.2710292 = type { %struct.anon.2710293 }
-%struct.anon.2710293 = type { ptr, ptr }
-%struct.CalloutListEntry.2710294 = type { i32, i32, i32, i32, ptr, ptr, i32, ptr, ptr, %union.anon.2710295 }
-%union.anon.2710295 = type { %struct.anon.1.2710296 }
-%struct.anon.1.2710296 = type { i32, i32, [4 x i32], [4 x %union.OnigValue.2710292] }
-%struct.CalloutData.2710338 = type { i32, [5 x %struct.anon.2710339] }
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
-%"struct.folly::f14::detail::F14Chunk.2799401" = type { %"struct.std::array.2799402", i8, i8, %"struct.std::array.48.2799403" }
-%"struct.std::array.2799402" = type { [14 x i8] }
-%"struct.std::array.48.2799403" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2799400"] }
-%"union.std::aligned_storage<16, 8>::type.2799400" = type { [16 x i8] }
-%"struct.folly::f14::detail::F14Chunk.773.2800762" = type { %"struct.std::array.2800763", i8, i8, %"struct.std::array.774.2800764" }
-%"struct.std::array.2800763" = type { [14 x i8] }
-%"struct.std::array.774.2800764" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2800765"] }
-%"union.std::aligned_storage<16, 8>::type.2800765" = type { [16 x i8] }
+%"struct.folly::f14::detail::F14Chunk.151.2686267" = type { %"struct.std::array.2686247", i8, i8, %"struct.std::array.152.2686268" }
+%"struct.std::array.2686247" = type { [14 x i8] }
+%"struct.std::array.152.2686268" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2686269"] }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.anon.18.2707456 = type { %union.mfi_pd_ref.2707457, i16, %struct.anon.19.2707458 }
+%union.mfi_pd_ref.2707457 = type { i32 }
+%struct.anon.19.2707458 = type { i8, i8 }
+%struct.CalloutNameListEntry.2710257 = type { i32, i32, ptr, ptr, i32, i32, [4 x i32], [4 x %union.OnigValue.2710258], ptr }
+%union.OnigValue.2710258 = type { %struct.anon.2710259 }
+%struct.anon.2710259 = type { ptr, ptr }
+%struct.CalloutListEntry.2710260 = type { i32, i32, i32, i32, ptr, ptr, i32, ptr, ptr, %union.anon.2710261 }
+%union.anon.2710261 = type { %struct.anon.1.2710262 }
+%struct.anon.1.2710262 = type { i32, i32, [4 x i32], [4 x %union.OnigValue.2710258] }
+%struct.CalloutData.2710304 = type { i32, [5 x %struct.anon.2710305] }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
+%"struct.folly::f14::detail::F14Chunk.2799367" = type { %"struct.std::array.2799368", i8, i8, %"struct.std::array.48.2799369" }
+%"struct.std::array.2799368" = type { [14 x i8] }
+%"struct.std::array.48.2799369" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2799366"] }
+%"union.std::aligned_storage<16, 8>::type.2799366" = type { [16 x i8] }
+%"struct.folly::f14::detail::F14Chunk.773.2800728" = type { %"struct.std::array.2800729", i8, i8, %"struct.std::array.774.2800730" }
+%"struct.std::array.2800729" = type { [14 x i8] }
+%"struct.std::array.774.2800730" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2800731"] }
+%"union.std::aligned_storage<16, 8>::type.2800731" = type { [16 x i8] }
 
 ; 41 occurrences:
 ; abc/optimized/giaStr.c.ll
@@ -70,8 +70,8 @@
 ; Function Attrs: nounwind
 define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.151.2686301", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %0, i32 0, i64 8
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.151.2686267", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %0, i32 0, i64 8
   ret ptr %4
 }
 
@@ -80,8 +80,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000fe(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.151.2686301", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.151.2686267", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -163,8 +163,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000bf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.151.2686301", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %0, i32 0, i64 8
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.151.2686267", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %0, i32 0, i64 8
   ret ptr %4
 }
 
@@ -209,7 +209,7 @@ define ptr @func0000000000000033(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
-  %5 = getelementptr [32 x %struct.anon.18.2707490], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [32 x %struct.anon.18.2707456], ptr %4, i64 0, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -221,7 +221,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000fb(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutNameListEntry.2710291, ptr %1, i64 %2, i32 7, i64 %0, i32 0, i32 1
+  %3 = getelementptr %struct.CalloutNameListEntry.2710257, ptr %1, i64 %2, i32 7, i64 %0, i32 0, i32 1
   ret ptr %3
 }
 
@@ -233,7 +233,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutListEntry.2710294, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutListEntry.2710260, ptr %1, i64 %2
   %.idx = shl nuw i64 %0, 4
   %4 = getelementptr i8, ptr %3, i64 -56
   %5 = getelementptr i8, ptr %4, i64 %.idx
@@ -246,7 +246,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutData.2710338, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutData.2710304, ptr %1, i64 %2
   %.idx = mul i64 %0, 24
   %4 = getelementptr i8, ptr %3, i64 -112
   %5 = getelementptr i8, ptr %4, i64 %.idx
@@ -258,8 +258,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000be(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2799401", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2799400"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2799367", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2799366"], ptr %3, i64 0, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -269,8 +269,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000bc(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.773.2800762", ptr %1, i64 %2, i32 3
-  %4 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800765"], ptr %3, i64 0, i64 %0, i32 0, i64 8
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.773.2800728", ptr %1, i64 %2, i32 3
+  %4 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800731"], ptr %3, i64 0, i64 %0, i32 0, i64 8
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-; 125 occurrences:
+; 127 occurrences:
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/area.ll
@@ -95,6 +95,8 @@
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll

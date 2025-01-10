@@ -146,7 +146,7 @@ entry:
   ret i1 %6
 }
 
-; 77 occurrences:
+; 76 occurrences:
 ; cmake/optimized/cmPolicies.cxx.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; freetype/optimized/sdf.c.ll
@@ -170,7 +170,6 @@ entry:
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; ncnn/optimized/packing_x86.cpp.ll
 ; ncnn/optimized/packing_x86_avx.cpp.ll

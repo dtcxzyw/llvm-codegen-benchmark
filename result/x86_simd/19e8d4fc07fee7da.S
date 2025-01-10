@@ -32,9 +32,9 @@ func000000000000000d:                   # @func000000000000000d
 	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]
 	retq
 .LCPI5_0:
-	.quad	-512                            # 0xfffffffffffffe00
+	.quad	-8                              # 0xfffffffffffffff8
 func000000000000000c:                   # @func000000000000000c
-	vpsllq	$4, %ymm1, %ymm1
+	vpsllq	$3, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	retq

@@ -1,12 +1,10 @@
 
-; 19 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; libwebp/optimized/io_dec.c.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll

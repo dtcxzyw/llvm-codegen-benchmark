@@ -1,5 +1,5 @@
 
-%struct.pollfd.3539972 = type { i32, i16, i16 }
+%struct.pollfd.3539938 = type { i32, i16, i16 }
 
 ; 91 occurrences:
 ; abc/optimized/giaEmbed.c.ll
@@ -282,9 +282,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.pollfd.3539972, ptr %0, i64 %3
+  %4 = getelementptr %struct.pollfd.3539938, ptr %0, i64 %3
   %5 = sub i64 0, %1
-  %6 = getelementptr %struct.pollfd.3539972, ptr %4, i64 %5
+  %6 = getelementptr %struct.pollfd.3539938, ptr %4, i64 %5
   ret ptr %6
 }
 

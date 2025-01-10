@@ -1,4 +1,22 @@
 
+; 7 occurrences:
+; libwebp/optimized/huffman_encode_utils.c.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; ruby/optimized/class.ll
+; xgboost/optimized/charconv.cc.ll
+; z3/optimized/emonics.cpp.ll
+; z3/optimized/int_solver.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i32
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; Function Attrs: nounwind
@@ -78,23 +96,6 @@ entry:
   %3 = icmp ugt i32 %2, 1
   %4 = zext i1 %3 to i32
   %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
-}
-
-; 6 occurrences:
-; libwebp/optimized/huffman_encode_utils.c.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; xgboost/optimized/charconv.cc.ll
-; z3/optimized/emonics.cpp.ll
-; z3/optimized/int_solver.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000060(i32 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = add i32 %0, %4
   ret i32 %5
 }
 

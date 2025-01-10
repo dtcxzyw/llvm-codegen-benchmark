@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 29 occurrences:
 ; arrow/optimized/key_map.cc.ll
@@ -92,7 +92,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = mul i64 %1, %3
-  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

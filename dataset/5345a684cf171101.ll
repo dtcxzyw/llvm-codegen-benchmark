@@ -58,7 +58,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/packfile.ll
 ; hdf5/optimized/H5Shyper.c.ll
@@ -66,7 +66,6 @@ entry:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/amd_bus.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; php/optimized/dce.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll

@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3321779" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3321745" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; mitsuba3/optimized/moment.cpp.ll
@@ -262,7 +262,8 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; linux/optimized/d_path.ll
 ; linux/optimized/namei.ll
@@ -313,7 +314,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3321779", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3321745", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = sub i64 0, %0
   %6 = getelementptr nusw i8, ptr %4, i64 %5

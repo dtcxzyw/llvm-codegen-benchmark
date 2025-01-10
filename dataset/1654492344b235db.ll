@@ -1,12 +1,12 @@
 
-%"struct.std::pair.177.3075391" = type { %"class.hermes::vm::GCSymbolID.3075392", %"struct.hermes::vm::NamedPropertyDescriptor.3075387" }
-%"class.hermes::vm::GCSymbolID.3075392" = type { %"class.hermes::vm::SymbolID.3075365" }
-%"class.hermes::vm::SymbolID.3075365" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3075387" = type { %"struct.hermes::vm::PropertyDescriptor.3075388" }
-%"struct.hermes::vm::PropertyDescriptor.3075388" = type { %union.anon.174.3075389, i32 }
-%union.anon.174.3075389 = type { i32 }
-%"class.hermes::vm::detail::DPMHashPair.3075393" = type { %struct.anon.234.3075394 }
-%struct.anon.234.3075394 = type { i32 }
+%"struct.std::pair.177.3075357" = type { %"class.hermes::vm::GCSymbolID.3075358", %"struct.hermes::vm::NamedPropertyDescriptor.3075353" }
+%"class.hermes::vm::GCSymbolID.3075358" = type { %"class.hermes::vm::SymbolID.3075331" }
+%"class.hermes::vm::SymbolID.3075331" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3075353" = type { %"struct.hermes::vm::PropertyDescriptor.3075354" }
+%"struct.hermes::vm::PropertyDescriptor.3075354" = type { %union.anon.174.3075355, i32 }
+%union.anon.174.3075355 = type { i32 }
+%"class.hermes::vm::detail::DPMHashPair.3075359" = type { %struct.anon.234.3075360 }
+%struct.anon.234.3075360 = type { i32 }
 
 ; 17 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -31,9 +31,9 @@ define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 28
-  %5 = getelementptr nusw nuw %"struct.std::pair.177.3075391", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.std::pair.177.3075357", ptr %4, i64 %3
   %6 = and i64 %0, 4294967295
-  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075393", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::detail::DPMHashPair.3075359", ptr %5, i64 %6
   ret ptr %7
 }
 

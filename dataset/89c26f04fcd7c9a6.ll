@@ -2032,7 +2032,7 @@ entry:
   ret i64 %2
 }
 
-; 263 occurrences:
+; 264 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/utilSort.c.ll
@@ -2125,6 +2125,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/BasicBlockSections.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/CtorUtils.cpp.ll

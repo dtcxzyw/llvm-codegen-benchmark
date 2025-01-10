@@ -1,7 +1,7 @@
 
-%struct.hb_glyph_position_t.2736924 = type { i32, i32, i32, i32, %union._hb_var_int_t.2736913 }
-%union._hb_var_int_t.2736913 = type { i32 }
-%struct.ImGuiTabItem.3454394 = type <{ i32, i32, i32, i32, float, float, float, float, i32, i16, i16, i8, [3 x i8] }>
+%struct.hb_glyph_position_t.2736890 = type { i32, i32, i32, i32, %union._hb_var_int_t.2736879 }
+%union._hb_var_int_t.2736879 = type { i32 }
+%struct.ImGuiTabItem.3454360 = type <{ i32, i32, i32, i32, float, float, float, float, i32, i16, i16, i8, [3 x i8] }>
 
 ; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -12,7 +12,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.hb_glyph_position_t.2736924, ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %struct.hb_glyph_position_t.2736890, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %struct.ImGuiTabItem.3454394, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.ImGuiTabItem.3454360, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

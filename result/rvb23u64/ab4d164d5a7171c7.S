@@ -6,16 +6,13 @@ func0000000000000033:                   # @func0000000000000033
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	addi	a0, a0, -2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	addi	a0, a0, 9
-	ret
-func000000000000001a:                   # @func000000000000001a
-	sh1add	a0, a1, a0
 	ret
 func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
@@ -85,11 +82,13 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, -8
 	ret
 func000000000000000f:                   # @func000000000000000f
-	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, 40
+	addi	a0, a0, 23
 	ret
 func000000000000000e:                   # @func000000000000000e
+	sh3add	a0, a1, a0
+	ret
+func000000000000001e:                   # @func000000000000001e
 	sh3add	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a

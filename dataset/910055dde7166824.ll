@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 157 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -117,7 +117,6 @@
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/assembler.ll
-; openjdk/optimized/dependencies.ll
 ; openssl/optimized/libcrypto-lib-a_strex.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll

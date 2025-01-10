@@ -1,6 +1,6 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
-%"struct.std::pair.3449273" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 295 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -370,7 +370,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 3
   %5 = or i64 %4, 1
-  %6 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %5
+  %6 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }
@@ -401,7 +401,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = or i64 %4, 1
-  %6 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

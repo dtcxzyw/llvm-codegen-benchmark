@@ -1,9 +1,9 @@
-func0000000000000007:                   # @func0000000000000007
+func000000000000000a:                   # @func000000000000000a
 	movq	%rdx, %rax
 	xorl	%edx, %edx
 	divl	%esi
 	cmpl	%eax, %edi
-	setle	%al
+	setg	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdx, %rax
@@ -25,6 +25,13 @@ func0000000000000001:                   # @func0000000000000001
 	divl	%esi
 	cmpl	%eax, %edi
 	sete	%al
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rdx, %rax
+	xorl	%edx, %edx
+	divl	%esi
+	cmpl	%eax, %edi
+	setne	%al
 	retq
 func00000000000000c1:                   # @func00000000000000c1
 	movq	%rdx, %rax

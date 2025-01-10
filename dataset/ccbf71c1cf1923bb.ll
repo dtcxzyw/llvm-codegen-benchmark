@@ -1,5 +1,5 @@
 
-; 718 occurrences:
+; 717 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -398,7 +398,6 @@
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll

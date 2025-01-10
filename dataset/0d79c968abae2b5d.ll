@@ -333,7 +333,7 @@ entry:
   ret i1 %4
 }
 
-; 567 occurrences:
+; 568 occurrences:
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlnNdr.c.ll
@@ -671,6 +671,7 @@ entry:
 ; openexr/optimized/decoding.c.ll
 ; openjdk/optimized/Net.ll
 ; openjdk/optimized/X11SurfaceData.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/callnode.ll

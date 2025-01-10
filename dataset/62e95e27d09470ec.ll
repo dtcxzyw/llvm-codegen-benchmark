@@ -1,19 +1,19 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
-%struct.netdev_queue.3545812 = type { ptr, %struct.netdevice_tracker.3545813, ptr, ptr, %struct.kobject.3545814, i32, i64, %struct.atomic64_t.3545815, ptr, ptr, %struct.spinlock.3545766, i32, i64, i64, [40 x i8], %struct.dql.3545816 }
-%struct.netdevice_tracker.3545813 = type {}
-%struct.kobject.3545814 = type { ptr, %struct.list_head.3545767, ptr, ptr, ptr, ptr, %struct.kref.3545817, i8 }
-%struct.list_head.3545767 = type { ptr, ptr }
-%struct.kref.3545817 = type { %struct.refcount_struct.3545818 }
-%struct.refcount_struct.3545818 = type { %struct.atomic_t.3545772 }
-%struct.atomic_t.3545772 = type { i32 }
-%struct.atomic64_t.3545815 = type { i64 }
-%struct.spinlock.3545766 = type { %union.anon.0.3545768 }
-%union.anon.0.3545768 = type { %struct.raw_spinlock.3545769 }
-%struct.raw_spinlock.3545769 = type { %struct.qspinlock.3545770 }
-%struct.qspinlock.3545770 = type { %union.anon.1.3545771 }
-%union.anon.1.3545771 = type { %struct.atomic_t.3545772 }
-%struct.dql.3545816 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
+%struct.netdev_queue.3545778 = type { ptr, %struct.netdevice_tracker.3545779, ptr, ptr, %struct.kobject.3545780, i32, i64, %struct.atomic64_t.3545781, ptr, ptr, %struct.spinlock.3545732, i32, i64, i64, [40 x i8], %struct.dql.3545782 }
+%struct.netdevice_tracker.3545779 = type {}
+%struct.kobject.3545780 = type { ptr, %struct.list_head.3545733, ptr, ptr, ptr, ptr, %struct.kref.3545783, i8 }
+%struct.list_head.3545733 = type { ptr, ptr }
+%struct.kref.3545783 = type { %struct.refcount_struct.3545784 }
+%struct.refcount_struct.3545784 = type { %struct.atomic_t.3545738 }
+%struct.atomic_t.3545738 = type { i32 }
+%struct.atomic64_t.3545781 = type { i64 }
+%struct.spinlock.3545732 = type { %union.anon.0.3545734 }
+%union.anon.0.3545734 = type { %struct.raw_spinlock.3545735 }
+%struct.raw_spinlock.3545735 = type { %struct.qspinlock.3545736 }
+%struct.qspinlock.3545736 = type { %union.anon.1.3545737 }
+%union.anon.1.3545737 = type { %struct.atomic_t.3545738 }
+%struct.dql.3545782 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
 
 ; 53 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -78,12 +78,11 @@ entry:
   ret ptr %5
 }
 
-; 72 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
-; cmake/optimized/signal.c.ll
 ; cvc5/optimized/dio_solver.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
@@ -98,7 +97,6 @@ entry:
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hyperscan/optimized/ng.cpp.ll
-; libuv/optimized/signal.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -140,7 +138,6 @@ entry:
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; ninja/optimized/build_test.cc.ll
-; node/optimized/signal.ll
 ; openspiel/optimized/TimerGroup.cpp.ll
 ; quantlib/optimized/fdminnervaluecalculator.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
@@ -156,11 +153,11 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 31
-  %5 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/buffered-io.ll
@@ -176,6 +173,7 @@ entry:
 ; postgres/optimized/pg_lsn.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/block_parallels.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -254,6 +252,19 @@ entry:
   ret ptr %5
 }
 
+; 3 occurrences:
+; cmake/optimized/signal.c.ll
+; libuv/optimized/signal.c.ll
+; node/optimized/signal.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = and i64 %3, -16
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/read.ll
 ; Function Attrs: nounwind
@@ -272,7 +283,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.netdev_queue.3545812, ptr %0, i64 %4
+  %5 = getelementptr %struct.netdev_queue.3545778, ptr %0, i64 %4
   ret ptr %5
 }
 

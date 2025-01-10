@@ -18,6 +18,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$4096, %rsi                     # imm = 0x1000
 	setb	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	addq	$8191, %rsi                     # imm = 0x1FFF
+	andq	$-8192, %rsi                    # imm = 0xE000
+	andq	$-8192, %rdi                    # imm = 0xE000
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
 func0000000000000061:                   # @func0000000000000061
 	decl	%esi
 	andl	$11, %esi

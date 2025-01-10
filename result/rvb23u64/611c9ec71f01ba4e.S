@@ -36,11 +36,6 @@ func00000000000000fe:                   # @func00000000000000fe
 	sh2add	a0, a1, a0
 	addi	a0, a0, 544
 	ret
-func00000000000000d5:                   # @func00000000000000d5
-	add	a0, a0, a2
-	sh3add	a0, a1, a0
-	addi	a0, a0, 760
-	ret
 func0000000000000044:                   # @func0000000000000044
 	add	a0, a0, a2
 	sh1add	a0, a1, a0
@@ -70,6 +65,11 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a2
 	sh1add	a0, a1, a0
 	addi	a0, a0, 64
+	ret
+func00000000000000d5:                   # @func00000000000000d5
+	add	a1, a1, a2
+	sh1add	a0, a0, a1
+	addi	a0, a0, 2
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	add	a0, a0, a2

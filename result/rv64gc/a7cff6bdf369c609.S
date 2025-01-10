@@ -1,18 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, -16
-	add	a0, a0, a1
-	li	a1, -29
-	addi	a0, a0, 17
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
-	ret
-func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, -16
-	li	a2, -17
-	sub	a2, a2, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
-	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, -16
 	add	a0, a0, a1
@@ -51,14 +36,6 @@ func0000000000000088:                   # @func0000000000000088
 	addi	a0, a0, 16
 	srli	a1, a1, 1
 	sltu	a0, a1, a0
-	ret
-func00000000000000c4:                   # @func00000000000000c4
-	andi	a0, a0, -16
-	add	a0, a0, a1
-	li	a1, -29
-	addi	a0, a0, 17
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, -16

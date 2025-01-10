@@ -30,7 +30,7 @@ entry:
   ret i1 %4
 }
 
-; 225 occurrences:
+; 226 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -159,6 +159,7 @@ entry:
 ; opencv/optimized/gms.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
 ; openspiel/optimized/System.cpp.ll
 ; openspiel/optimized/ThreadMgr.cpp.ll
 ; openspiel/optimized/amazons.cc.ll
@@ -796,8 +797,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; 1 occurrences:
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000006a(i32 %0, i64 %1) #0 {

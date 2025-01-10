@@ -101,7 +101,7 @@ entry:
   ret i32 %7
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
@@ -115,7 +115,6 @@ entry:
 ; libevent/optimized/evutil_rand.c.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/rx.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll

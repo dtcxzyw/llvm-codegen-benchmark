@@ -22,6 +22,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; flac/optimized/stream_encoder.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw i32 %1, %2
+  %4 = lshr i32 %3, 1
+  %5 = sub i32 %0, %4
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
 ; postgres/optimized/tsvector_op.ll
@@ -38,11 +49,11 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 %1, %2
+  %3 = sub nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 19
-  %5 = sub i32 %0, %4
+  %5 = sub nsw i32 %0, %4
   ret i32 %5
 }
 

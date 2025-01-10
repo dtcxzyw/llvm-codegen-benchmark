@@ -4,14 +4,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	vmovmskpd	%xmm0, %eax
-	andl	$1, %eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	vmovq	%xmm0, %rax
 	testq	%rax, %rax
 	setns	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vmovmskpd	%xmm0, %eax
+	andl	$1, %eax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	vmovq	%xmm0, %rax

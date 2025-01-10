@@ -1,16 +1,5 @@
 
 ; 1 occurrences:
-; ruby/optimized/complex.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006e(double %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
-  %3 = fcmp ord double %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e8(i64 %0, double %1) #0 {
@@ -28,17 +17,6 @@ define i1 @func000000000000014c(i64 %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 0x10000000000000
   %3 = icmp ne i64 %0, 0
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; qemu/optimized/fpu_softfloat.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %1, 0.000000e+00
-  %3 = icmp sgt i64 %0, -1
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -65,17 +43,6 @@ define i1 @func0000000000000044(i64 %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0x3FC99999A0000000
   %3 = icmp ult i64 %0, 100000
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; lightgbm/optimized/serial_tree_learner.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, double %1) #0 {
-entry:
-  %2 = fcmp ogt double %1, 0x3CD203AFA0000000
-  %3 = icmp sgt i64 %0, 0
   %4 = and i1 %3, %2
   ret i1 %4
 }

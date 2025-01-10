@@ -128,6 +128,11 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edx, %edi
 	setg	%al
 	retq
+func000000000000002b:                   # @func000000000000002b
+	subl	%esi, %edx
+	cmpl	%edx, %edi
+	setge	%al
+	retq
 func0000000000000106:                   # @func0000000000000106
 	subl	%esi, %edx
 	cmpl	%edx, %edi

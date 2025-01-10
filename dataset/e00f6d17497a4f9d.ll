@@ -1,23 +1,23 @@
 
-%"struct.asmjit::_abi_1_10::FuncNode::ArgPack.2603614" = type { [4 x %"struct.asmjit::_abi_1_10::RegOnly.2603615"] }
-%"struct.asmjit::_abi_1_10::RegOnly.2603615" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2603616", i32 }
-%"struct.asmjit::_abi_1_10::OperandSignature.2603616" = type { i32 }
-%"class.std::vector.2690952" = type { %"struct.std::_Vector_base.2690953" }
-%"struct.std::_Vector_base.2690953" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" = type { ptr, ptr, ptr }
-%union.CPUTLBEntry.2707265 = type { %struct.anon.2.2707267 }
-%struct.anon.2.2707267 = type { i64, i64, i64, i64 }
-%struct.gmx_moltype_t.3371853 = type { ptr, %struct.t_atoms.3371854, %"struct.std::array.3371855", %"class.gmx::ListOfLists.3371856" }
-%struct.t_atoms.3371854 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
-%"struct.std::array.3371855" = type { [94 x %struct.InteractionList.3371857] }
-%struct.InteractionList.3371857 = type { %"class.std::vector.50.3371858" }
-%"class.std::vector.50.3371858" = type { %"struct.std::_Vector_base.51.3371859" }
-%"struct.std::_Vector_base.51.3371859" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" = type { ptr, ptr, ptr }
-%"class.gmx::ListOfLists.3371856" = type { %"class.std::vector.50.3371858", %"class.std::vector.50.3371858" }
-%struct.absRankType.3487000 = type { i8, i8 }
+%"struct.asmjit::_abi_1_10::FuncNode::ArgPack.2603581" = type { [4 x %"struct.asmjit::_abi_1_10::RegOnly.2603582"] }
+%"struct.asmjit::_abi_1_10::RegOnly.2603582" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2603583", i32 }
+%"struct.asmjit::_abi_1_10::OperandSignature.2603583" = type { i32 }
+%"class.std::vector.2690918" = type { %"struct.std::_Vector_base.2690919" }
+%"struct.std::_Vector_base.2690919" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" = type { ptr, ptr, ptr }
+%union.CPUTLBEntry.2707231 = type { %struct.anon.2.2707233 }
+%struct.anon.2.2707233 = type { i64, i64, i64, i64 }
+%struct.gmx_moltype_t.3371819 = type { ptr, %struct.t_atoms.3371820, %"struct.std::array.3371821", %"class.gmx::ListOfLists.3371822" }
+%struct.t_atoms.3371820 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
+%"struct.std::array.3371821" = type { [94 x %struct.InteractionList.3371823] }
+%struct.InteractionList.3371823 = type { %"class.std::vector.50.3371824" }
+%"class.std::vector.50.3371824" = type { %"struct.std::_Vector_base.51.3371825" }
+%"struct.std::_Vector_base.51.3371825" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371826" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371826" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371827" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371827" = type { ptr, ptr, ptr }
+%"class.gmx::ListOfLists.3371822" = type { %"class.std::vector.50.3371824", %"class.std::vector.50.3371824" }
+%struct.absRankType.3486966 = type { i8, i8 }
 
 ; 36 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -59,8 +59,8 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::FuncNode::ArgPack.2603614", ptr %1, i64 %2
-  %4 = getelementptr nuw [4 x %"struct.asmjit::_abi_1_10::RegOnly.2603615"], ptr %3, i64 0, i64 %0, i32 1
+  %3 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::FuncNode::ArgPack.2603581", ptr %1, i64 %2
+  %4 = getelementptr nuw [4 x %"struct.asmjit::_abi_1_10::RegOnly.2603582"], ptr %3, i64 0, i64 %0, i32 1
   ret ptr %4
 }
 
@@ -132,7 +132,7 @@ entry:
 define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nuw [2 x %"class.std::vector.2690952"], ptr %3, i64 0, i64 %0, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr nuw [2 x %"class.std::vector.2690918"], ptr %3, i64 0, i64 %0, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -324,7 +324,7 @@ entry:
   ret ptr %4
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; clap-rs/optimized/58cs3pckwcmstm46.ll
 ; just-rs/optimized/52uhuxfcop8n85cu.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
@@ -420,7 +420,6 @@ entry:
 ; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
-; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
@@ -436,7 +435,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %3, i64 0, i64 %0, i32 0, i32 1
+  %4 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %3, i64 0, i64 %0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -447,7 +446,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %3, i64 0, i64 %0, i32 0, i32 2
+  %4 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %3, i64 0, i64 %0, i32 0, i32 2
   ret ptr %4
 }
 
@@ -475,8 +474,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.gmx_moltype_t.3371853, ptr %1, i64 %2
-  %4 = getelementptr nuw [94 x %struct.InteractionList.3371857], ptr %3, i64 0, i64 %0, i32 0, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %struct.gmx_moltype_t.3371819, ptr %1, i64 %2
+  %4 = getelementptr nuw [94 x %struct.InteractionList.3371823], ptr %3, i64 0, i64 %0, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -488,7 +487,7 @@ entry:
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr [4 x %struct.absRankType.3487000], ptr %3, i64 0, i64 %0, i32 1
+  %4 = getelementptr [4 x %struct.absRankType.3486966], ptr %3, i64 0, i64 %0, i32 1
   ret ptr %4
 }
 

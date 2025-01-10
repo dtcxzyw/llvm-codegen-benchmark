@@ -202,7 +202,7 @@ entry:
   ret i1 %5
 }
 
-; 250 occurrences:
+; 249 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -269,7 +269,6 @@ entry:
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
@@ -821,7 +820,7 @@ entry:
   ret i1 %5
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -863,6 +862,8 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -881,7 +882,7 @@ entry:
   ret i1 %5
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -917,6 +918,8 @@ entry:
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -935,7 +938,7 @@ entry:
   ret i1 %5
 }
 
-; 45 occurrences:
+; 47 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -972,6 +975,8 @@ entry:
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -1047,14 +1052,15 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/sasum_k.c.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = and i64 %3, 9223372036854775552
+  %4 = and i64 %3, 65535
   %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }

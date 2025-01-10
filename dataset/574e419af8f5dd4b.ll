@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
@@ -45,7 +45,6 @@
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
-; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/heapDumper.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
@@ -99,8 +98,9 @@ entry:
   ret i16 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; coremark/optimized/core_list_join.c.ll
+; openexr/optimized/ImfInputFile.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll

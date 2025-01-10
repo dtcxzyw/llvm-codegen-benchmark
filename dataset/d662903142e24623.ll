@@ -19,7 +19,19 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 2 occurrences:
+; flac/optimized/metadata_object.c.ll
+; linux/optimized/iov_iter.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 4
+  %4 = sub nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 20 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cpython/optimized/obmalloc.ll
@@ -31,8 +43,6 @@ entry:
 ; llvm/optimized/SmallPtrSet.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; mimalloc/optimized/segment.c.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; postgres/optimized/varbit.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/map.cc.ll
@@ -46,20 +56,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = sub nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; flac/optimized/metadata_object.c.ll
-; linux/optimized/iov_iter.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 4
-  %4 = sub nuw nsw i64 %3, %0
+  %4 = sub nsw i64 %3, %0
   ret i64 %4
 }
 

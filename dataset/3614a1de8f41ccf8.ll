@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; openjdk/optimized/javaClasses.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; wireshark/optimized/packet-scte35.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 7
+  %4 = select i1 %1, i32 %3, i32 %2
+  %5 = add nuw nsw i32 %0, %4
+  %6 = add nuw nsw i32 %5, 2
+  ret i32 %6
+}
+
 ; 4 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -24,19 +38,6 @@ entry:
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = add i32 %4, %0
   %6 = add i32 %5, -7
-  ret i32 %6
-}
-
-; 2 occurrences:
-; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
-; wireshark/optimized/packet-scte35.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 10
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nuw nsw i32 %0, %4
-  %6 = add nuw nsw i32 %5, 10
   ret i32 %6
 }
 

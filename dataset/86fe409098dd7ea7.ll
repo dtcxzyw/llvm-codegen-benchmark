@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3257801" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3257767" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/stackValue.ll
@@ -40,9 +40,9 @@ define ptr @func0000000000000112(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 -32
-  %5 = getelementptr %"class.llvm::Use.3191562", ptr %4, i64 %3
+  %5 = getelementptr %"class.llvm::Use.3191528", ptr %4, i64 %3
   %6 = sub nsw i64 0, %0
-  %7 = getelementptr nusw %"class.llvm::Use.3191562", ptr %5, i64 %6
+  %7 = getelementptr nusw %"class.llvm::Use.3191528", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -53,9 +53,9 @@ define ptr @func0000000000000192(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -56
-  %5 = getelementptr %"class.llvm::Use.3257801", ptr %4, i64 %3
+  %5 = getelementptr %"class.llvm::Use.3257767", ptr %4, i64 %3
   %6 = sub nsw i64 0, %0
-  %7 = getelementptr nusw %"class.llvm::Use.3257801", ptr %5, i64 %6
+  %7 = getelementptr nusw %"class.llvm::Use.3257767", ptr %5, i64 %6
   ret ptr %7
 }
 

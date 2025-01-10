@@ -1,10 +1,10 @@
 
-%"class.std::vector.15.3650747" = type { %"struct.std::_Bvector_base.3650748" }
-%"struct.std::_Bvector_base.3650748" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650749" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650749" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650750" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650750" = type { %"struct.std::_Bit_iterator.3650751", %"struct.std::_Bit_iterator.3650751", ptr }
-%"struct.std::_Bit_iterator.3650751" = type { %"struct.std::_Bit_iterator_base.base.3650752", [4 x i8] }
-%"struct.std::_Bit_iterator_base.base.3650752" = type <{ ptr, i32 }>
+%"class.std::vector.15.3650713" = type { %"struct.std::_Bvector_base.3650714" }
+%"struct.std::_Bvector_base.3650714" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650715" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3650715" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650716" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3650716" = type { %"struct.std::_Bit_iterator.3650717", %"struct.std::_Bit_iterator.3650717", ptr }
+%"struct.std::_Bit_iterator.3650717" = type { %"struct.std::_Bit_iterator_base.base.3650718", [4 x i8] }
+%"struct.std::_Bit_iterator_base.base.3650718" = type <{ ptr, i32 }>
 
 ; 1 occurrences:
 ; qemu/optimized/hw_vfio_pci.c.ll
@@ -111,7 +111,7 @@ entry:
   %3 = zext i32 %2 to i64
   %.idx = mul i64 %1, 320
   %4 = getelementptr i8, ptr %0, i64 %.idx
-  %5 = getelementptr %"class.std::vector.15.3650747", ptr %4, i64 %3
+  %5 = getelementptr %"class.std::vector.15.3650713", ptr %4, i64 %3
   ret ptr %5
 }
 

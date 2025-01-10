@@ -110,17 +110,17 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI16_0:
-	.quad	8                               # 0x8
-func0000000000000034:                   # @func0000000000000034
-	vpminuq	%ymm1, %ymm0, %ymm0
-	vpcmpltuq	.LCPI16_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func0000000000000011:                   # @func0000000000000011
 	vpminuq	%ymm1, %ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI17_0:
+	.quad	8                               # 0x8
+func0000000000000034:                   # @func0000000000000034
+	vpminuq	%ymm1, %ymm0, %ymm0
+	vpcmpltuq	.LCPI17_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

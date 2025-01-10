@@ -1,5 +1,5 @@
 
-; 327 occurrences:
+; 326 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -12,7 +12,6 @@
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll

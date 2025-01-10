@@ -1,12 +1,10 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; git/optimized/scalar.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/page-writeback.ll
 ; openssl/optimized/openssl-bin-dsa.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_match.ll
 ; redis/optimized/db.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll

@@ -1,5 +1,5 @@
 
-%struct.ImVec2.3454338 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
@@ -164,8 +164,8 @@ define ptr @func00000000000000cf(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %1
-  %6 = getelementptr nuw %struct.ImVec2.3454338, ptr %5, i64 %4, i32 1
+  %5 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %1
+  %6 = getelementptr nuw %struct.ImVec2.3454304, ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 
@@ -177,8 +177,8 @@ define ptr @func00000000000001cf(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %1
-  %6 = getelementptr nuw %struct.ImVec2.3454338, ptr %5, i64 %4, i32 1
+  %5 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %1
+  %6 = getelementptr nuw %struct.ImVec2.3454304, ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 

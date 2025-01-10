@@ -11,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 132 occurrences:
+; 133 occurrences:
 ; abc/optimized/ifUtil.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/sswCore.c.ll
@@ -36,6 +36,7 @@ entry:
 ; graphviz/optimized/sgd.c.ll
 ; gromacs/optimized/compute_io.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
+; grpc/optimized/posix_endpoint.cc.ll
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; icu/optimized/calendar.ll
@@ -152,7 +153,7 @@ entry:
   ret i32 %3
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/ceval.ll
@@ -229,7 +230,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll

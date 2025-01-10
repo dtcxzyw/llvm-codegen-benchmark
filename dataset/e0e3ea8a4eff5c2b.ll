@@ -1,9 +1,9 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
 
 ; 2 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -32,8 +32,8 @@ define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %1, i64 %4
-  %6 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %5, i64 %0
+  %5 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %1, i64 %4
+  %6 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,4 +1,26 @@
 
+; 12 occurrences:
+; assimp/optimized/SplitLargeMeshes.cpp.ll
+; clamav/optimized/server-th.c.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/psaux.c.ll
+; hyperscan/optimized/repeat.c.ll
+; llvm/optimized/CGVTT.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; postgres/optimized/dynahash.ll
+; qemu/optimized/block_vvfat.c.ll
+; stb/optimized/stb_hexwave.c.ll
+; xgboost/optimized/updater_coordinate.cc.ll
+; xgboost/optimized/updater_shotgun.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = trunc i64 %0 to i32
+  %5 = sub i32 %4, %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; stb/optimized/stb_hexwave.c.ll
@@ -21,27 +43,6 @@ define i32 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = trunc nuw nsw i64 %0 to i32
-  %5 = sub i32 %4, %3
-  ret i32 %5
-}
-
-; 11 occurrences:
-; assimp/optimized/SplitLargeMeshes.cpp.ll
-; clamav/optimized/server-th.c.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/psaux.c.ll
-; hyperscan/optimized/repeat.c.ll
-; llvm/optimized/CGVTT.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; postgres/optimized/dynahash.ll
-; stb/optimized/stb_hexwave.c.ll
-; xgboost/optimized/updater_coordinate.cc.ll
-; xgboost/optimized/updater_shotgun.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = trunc i64 %0 to i32
   %5 = sub i32 %4, %3
   ret i32 %5
 }

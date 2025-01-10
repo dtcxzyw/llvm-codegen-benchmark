@@ -27,7 +27,8 @@ entry:
   ret ptr %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; openusd/optimized/range3d.cpp.ll
 ; openusd/optimized/range3f.cpp.ll

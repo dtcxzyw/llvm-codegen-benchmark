@@ -1,9 +1,9 @@
 
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%class.aiVector3t.2828902 = type { double, double, double }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 12 occurrences:
 ; hyperscan/optimized/block.c.ll
@@ -23,7 +23,7 @@ define i1 @func0000000000000f64(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -12
   %7 = icmp ult ptr %4, %6
   ret i1 %7
@@ -58,15 +58,14 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000744(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %class.aiVector3t.2828902, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %class.aiVector3t.2828902, ptr %4, i64 %3
+  %4 = getelementptr nusw %class.aiVector3t.2828868, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.aiVector3t.2828868, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -24
   %7 = icmp ult ptr %4, %6
   ret i1 %7

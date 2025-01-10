@@ -146,7 +146,7 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; actix-rs/optimized/3ueqfq5tvn084yrz.ll
 ; boost/optimized/from_chars.ll
 ; boost/optimized/src.ll
@@ -161,7 +161,6 @@ entry:
 ; linux/optimized/migrate.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/vgaarb.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll

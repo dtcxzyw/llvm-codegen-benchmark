@@ -8,6 +8,11 @@ func0000000000000001:                   # @func0000000000000001
 	cltq
 	addq	%rdi, %rax
 	retq
+func0000000000000021:                   # @func0000000000000021
+	shlxl	%esi, %edx, %eax
+	cltq
+	addq	%rdi, %rax
+	retq
 func0000000000000031:                   # @func0000000000000031
 	shlxl	%esi, %edx, %eax
 	cltq

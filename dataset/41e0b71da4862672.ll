@@ -66,10 +66,11 @@ entry:
   ret i32 %6
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/nwkMerge.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; assimp/optimized/Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -214,7 +215,8 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; icu/optimized/swapimpl.ll
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
@@ -309,18 +311,6 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %1, 2
   %5 = add i32 %4, %3
-  %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; icu/optimized/swapimpl.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 128
-  %4 = shl i32 %1, 1
-  %5 = add nsw i32 %4, %3
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

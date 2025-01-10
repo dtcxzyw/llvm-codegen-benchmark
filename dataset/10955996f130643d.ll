@@ -1,22 +1,4 @@
 
-; 7 occurrences:
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; php/optimized/ir.ll
-; php/optimized/zend_hash.ll
-; php/optimized/zend_inheritance.ll
-; php/optimized/zend_persist.ll
-; qemu/optimized/block_vmdk.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = zext i32 %0 to i64
-  %4 = add nuw nsw i64 %3, %2
-  %5 = shl nuw nsw i64 %4, 1
-  ret i64 %5
-}
-
 ; 3 occurrences:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
@@ -28,6 +10,23 @@ entry:
   %3 = shl nuw i64 %2, 48
   %4 = zext nneg i32 %0 to i64
   %5 = shl nuw nsw i64 %4, 32
+  %6 = add nuw nsw i64 %5, %3
+  ret i64 %6
+}
+
+; 5 occurrences:
+; php/optimized/ir.ll
+; php/optimized/zend_hash.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_persist.ll
+; qemu/optimized/block_vmdk.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 9
+  %4 = zext i32 %0 to i64
+  %5 = shl nuw nsw i64 %4, 2
   %6 = add nuw nsw i64 %5, %3
   ret i64 %6
 }

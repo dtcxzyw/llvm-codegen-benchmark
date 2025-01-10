@@ -1,9 +1,9 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
-%"class.asmjit::_abi_1_10::ZoneVector.4.2603647" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" }
-%"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" = type { ptr, i32, i32 }
-%struct.gro_list.3550070 = type { %struct.list_head.3550046, i32 }
-%struct.list_head.3550046 = type { ptr, ptr }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
+%"class.asmjit::_abi_1_10::ZoneVector.4.2603614" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" }
+%"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" = type { ptr, i32, i32 }
+%struct.gro_list.3550036 = type { %struct.list_head.3550012, i32 }
+%struct.list_head.3550012 = type { ptr, ptr }
 
 ; 19 occurrences:
 ; cpython/optimized/typeobject.ll
@@ -30,7 +30,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -86,7 +86,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603647"], ptr %0, i64 0, i64 %3, i32 0, i32 2
+  %4 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603614"], ptr %0, i64 0, i64 %3, i32 0, i32 2
   ret ptr %4
 }
 
@@ -97,7 +97,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [8 x %struct.gro_list.3550070], ptr %0, i64 0, i64 %3, i32 0, i32 1
+  %4 = getelementptr [8 x %struct.gro_list.3550036], ptr %0, i64 0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 

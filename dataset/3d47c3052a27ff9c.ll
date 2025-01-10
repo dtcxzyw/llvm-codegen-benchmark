@@ -57,10 +57,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

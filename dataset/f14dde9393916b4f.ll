@@ -1,28 +1,28 @@
 
-%struct.rb_size_pool_struct.2601024 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2601025, %struct.rb_heap_struct.2601025 }
-%struct.rb_heap_struct.2601025 = type { ptr, %struct.ccan_list_head.2601026, ptr, ptr, i64, ptr, i64, i64 }
-%struct.ccan_list_head.2601026 = type { %struct.ccan_list_node.2601027 }
-%struct.ccan_list_node.2601027 = type { ptr, ptr }
-%class.XMarkStripe.2733578 = type { %class.XStackList.0.2733579, [56 x i8], %class.XStackList.0.2733579, [56 x i8] }
-%class.XStackList.0.2733579 = type { ptr }
-%class.ZMarkStripe.2737375 = type { %class.ZStackList.1.2737376, %class.ZStackList.1.2737376 }
-%class.ZStackList.1.2737376 = type { i64, ptr, [48 x i8] }
-%"class.facebook::velox::CompactDoubleList.2799404" = type { i32, i32, i16, i16 }
-%"struct.zmq::command_t.3454530" = type { ptr, i32, %"union.zmq::command_t::args_t.3454531", [24 x i8] }
-%"union.zmq::command_t::args_t.3454531" = type { %struct.anon.19.3454532 }
-%struct.anon.19.3454532 = type { i64, ptr, ptr }
-%struct.zone.3535217 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3535199, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3535218, [11 x %struct.free_area.3535219], i64, %struct.spinlock.3535194, [28 x i8], %struct.cacheline_padding.3535218, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3535218, [10 x %struct.atomic64_t.3535199], [6 x %struct.atomic64_t.3535199] }
-%struct.atomic64_t.3535199 = type { i64 }
-%struct.free_area.3535219 = type { [4 x %struct.list_head.3535195], i64 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%struct.spinlock.3535194 = type { %union.anon.18.3535196 }
-%union.anon.18.3535196 = type { %struct.raw_spinlock.3535188 }
-%struct.raw_spinlock.3535188 = type { %struct.qspinlock.3535189 }
-%struct.qspinlock.3535189 = type { %union.anon.19.3535190 }
-%union.anon.19.3535190 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
-%struct.cacheline_padding.3535218 = type { [0 x i8] }
-%struct.mi_span_queue_s.3949295 = type { ptr, ptr, i64 }
+%struct.rb_size_pool_struct.2600991 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2600992, %struct.rb_heap_struct.2600992 }
+%struct.rb_heap_struct.2600992 = type { ptr, %struct.ccan_list_head.2600993, ptr, ptr, i64, ptr, i64, i64 }
+%struct.ccan_list_head.2600993 = type { %struct.ccan_list_node.2600994 }
+%struct.ccan_list_node.2600994 = type { ptr, ptr }
+%class.XMarkStripe.2733544 = type { %class.XStackList.0.2733545, [56 x i8], %class.XStackList.0.2733545, [56 x i8] }
+%class.XStackList.0.2733545 = type { ptr }
+%class.ZMarkStripe.2737341 = type { %class.ZStackList.1.2737342, %class.ZStackList.1.2737342 }
+%class.ZStackList.1.2737342 = type { i64, ptr, [48 x i8] }
+%"class.facebook::velox::CompactDoubleList.2799370" = type { i32, i32, i16, i16 }
+%"struct.zmq::command_t.3454496" = type { ptr, i32, %"union.zmq::command_t::args_t.3454497", [24 x i8] }
+%"union.zmq::command_t::args_t.3454497" = type { %struct.anon.19.3454498 }
+%struct.anon.19.3454498 = type { i64, ptr, ptr }
+%struct.zone.3535183 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3535165, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3535184, [11 x %struct.free_area.3535185], i64, %struct.spinlock.3535160, [28 x i8], %struct.cacheline_padding.3535184, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3535184, [10 x %struct.atomic64_t.3535165], [6 x %struct.atomic64_t.3535165] }
+%struct.atomic64_t.3535165 = type { i64 }
+%struct.free_area.3535185 = type { [4 x %struct.list_head.3535161], i64 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%struct.spinlock.3535160 = type { %union.anon.18.3535162 }
+%union.anon.18.3535162 = type { %struct.raw_spinlock.3535154 }
+%struct.raw_spinlock.3535154 = type { %struct.qspinlock.3535155 }
+%struct.qspinlock.3535155 = type { %union.anon.19.3535156 }
+%union.anon.19.3535156 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
+%struct.cacheline_padding.3535184 = type { [0 x i8] }
+%struct.mi_span_queue_s.3949245 = type { ptr, ptr, i64 }
 
 ; 5 occurrences:
 ; darktable/optimized/introspection_rgbcurve.c.ll
@@ -61,7 +61,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [5 x %struct.rb_size_pool_struct.2601024], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [5 x %struct.rb_size_pool_struct.2600991], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -81,7 +81,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [16 x %class.XMarkStripe.2733578], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [16 x %class.XMarkStripe.2733544], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -91,7 +91,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [16 x %class.ZMarkStripe.2737375], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [16 x %class.ZMarkStripe.2737341], ptr %1, i64 0, i64 %2
   %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
@@ -117,7 +117,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799404"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799370"], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -151,7 +151,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3454530"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3454496"], ptr %1, i64 0, i64 %2
   %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
@@ -161,7 +161,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [4 x %struct.zone.3535217], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [4 x %struct.zone.3535183], ptr %1, i64 0, i64 %2
   %4 = icmp ne ptr %3, %0
   ret i1 %4
 }
@@ -181,7 +181,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [36 x %struct.mi_span_queue_s.3949295], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [36 x %struct.mi_span_queue_s.3949245], ptr %1, i64 0, i64 %2
   %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }

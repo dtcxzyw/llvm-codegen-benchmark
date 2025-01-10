@@ -1,8 +1,8 @@
 
-%"struct.std::atomic.265.2638962" = type { %"struct.std::__atomic_base.266.2638963" }
-%"struct.std::__atomic_base.266.2638963" = type { ptr }
-%class.ZForwardingEntry.2737251 = type { i64 }
-%struct.p4d_t.3530391 = type { i64 }
+%"struct.std::atomic.265.2638929" = type { %"struct.std::__atomic_base.266.2638930" }
+%"struct.std::__atomic_base.266.2638930" = type { ptr }
+%class.ZForwardingEntry.2737217 = type { i64 }
+%struct.p4d_t.3530357 = type { i64 }
 
 ; 44 occurrences:
 ; mold/optimized/icf.cc.ALPHA.cc.ll
@@ -54,7 +54,7 @@ define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw %"struct.std::atomic.265.2638962", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.std::atomic.265.2638929", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -67,7 +67,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw nuw %class.ZForwardingEntry.2737251, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %class.ZForwardingEntry.2737217, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -97,7 +97,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.p4d_t.3530391, ptr %4, i64 %3
+  %5 = getelementptr %struct.p4d_t.3530357, ptr %4, i64 %3
   ret ptr %5
 }
 

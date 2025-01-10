@@ -1,4 +1,4 @@
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	addiw	a1, a1, 1
 	lui	a2, 349525
 	addiw	a2, a2, 1366
@@ -10,16 +10,6 @@ func0000000000000007:                   # @func0000000000000007
 	subw	a1, a1, a2
 	subw	a1, a1, a3
 	slli	a1, a1, 3
-	add	a0, a0, a1
-	ret
-func0000000000000006:                   # @func0000000000000006
-	addi	a1, a1, 1
-	sraiw	a2, a1, 31
-	srliw	a2, a2, 28
-	add	a2, a2, a1
-	andi	a2, a2, -16
-	subw	a1, a1, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

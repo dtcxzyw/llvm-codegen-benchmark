@@ -1,26 +1,16 @@
 .LCPI0_0:
-	.long	1                               # 0x1
-func000000000000054c:                   # @func000000000000054c
-	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
-	korb	%k1, %k0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI1_0:
-	.long	4294967167                      # 0xffffff7f
-.LCPI1_1:
-	.long	126                             # 0x7e
-.LCPI1_2:
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
-	.byte	1                               # 0x1
+	.long	4294967169                      # 0xffffff81
+.LCPI0_1:
+	.long	4294967201                      # 0xffffffa1
+.LCPI0_2:
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
+	.byte	32                              # 0x20
 	.zero	1
 	.zero	1
 	.zero	1
@@ -30,9 +20,19 @@ func000000000000054c:                   # @func000000000000054c
 	.zero	1
 	.zero	1
 func0000000000000424:                   # @func0000000000000424
-	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqb	.LCPI1_2(%rip), %xmm0, %k1
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm1, %k0
+	vpcmpeqb	.LCPI0_2(%rip), %xmm0, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI1_0:
+	.long	1                               # 0x1
+func000000000000054c:                   # @func000000000000054c
+	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpcmpgtb	%xmm1, %xmm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

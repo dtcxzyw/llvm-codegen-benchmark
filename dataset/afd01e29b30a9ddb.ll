@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -31,6 +31,7 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cpython/optimized/_collectionsmodule.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll

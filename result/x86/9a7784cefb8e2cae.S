@@ -58,12 +58,6 @@ func000000000000002a:                   # @func000000000000002a
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	movslq	%esi, %rax
-	sarq	$32, %rdi
-	cmpq	%rax, %rdi
-	setb	%al
-	retq
 func000000000000002c:                   # @func000000000000002c
 	movslq	%esi, %rax
 	sarq	$3, %rdi

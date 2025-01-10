@@ -1,8 +1,8 @@
 
-%"struct.clang::Builtin::Info.3193452" = type <{ %"class.llvm::StringLiteral.3193453", ptr, ptr, ptr, %"struct.clang::HeaderDesc.3193451", i16, [4 x i8] }>
-%"class.llvm::StringLiteral.3193453" = type { %"class.llvm::StringRef.3193454" }
-%"class.llvm::StringRef.3193454" = type { ptr, i64 }
-%"struct.clang::HeaderDesc.3193451" = type { i16 }
+%"struct.clang::Builtin::Info.3193418" = type <{ %"class.llvm::StringLiteral.3193419", ptr, ptr, ptr, %"struct.clang::HeaderDesc.3193417", i16, [4 x i8] }>
+%"class.llvm::StringLiteral.3193419" = type { %"class.llvm::StringRef.3193420" }
+%"class.llvm::StringRef.3193420" = type { ptr, i64 }
+%"struct.clang::HeaderDesc.3193417" = type { i16 }
 
 ; 2 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
@@ -42,7 +42,7 @@ entry:
   %4 = add i32 %1, -1408
   %5 = sub i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.clang::Builtin::Info.3193452", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.clang::Builtin::Info.3193418", ptr %0, i64 %6
   ret ptr %7
 }
 

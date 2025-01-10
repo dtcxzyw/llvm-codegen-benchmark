@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -22,6 +22,7 @@
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
+; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll

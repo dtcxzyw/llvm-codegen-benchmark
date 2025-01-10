@@ -1,11 +1,11 @@
 
-%struct.MapNode.2704966 = type { i16, i8, i8 }
-%struct._zval_struct.2790368 = type { %union._zend_value.2790378, %union.anon.2790379, %union.anon.2.2790380 }
-%union._zend_value.2790378 = type { i64 }
-%union.anon.2790379 = type { i32 }
-%union.anon.2.2790380 = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.3076269" = type { %"class.hermes::vm::HermesValue32.3076270" }
-%"class.hermes::vm::HermesValue32.3076270" = type { i32 }
+%struct.MapNode.2704932 = type { i16, i8, i8 }
+%struct._zval_struct.2790334 = type { %union._zend_value.2790344, %union.anon.2790345, %union.anon.2.2790346 }
+%union._zend_value.2790344 = type { i64 }
+%union.anon.2790345 = type { i32 }
+%union.anon.2.2790346 = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076235" = type { %"class.hermes::vm::HermesValue32.3076236" }
+%"class.hermes::vm::HermesValue32.3076236" = type { i32 }
 
 ; 28 occurrences:
 ; clamav/optimized/upx.c.ll
@@ -42,7 +42,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.MapNode.2704966, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2704932, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -283,7 +283,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = sub nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._zval_struct.2790368, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zval_struct.2790334, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -310,7 +310,7 @@ entry:
   %3 = xor i32 %1, -1
   %4 = add i32 %2, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076269", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076235", ptr %0, i64 %5
   ret ptr %6
 }
 

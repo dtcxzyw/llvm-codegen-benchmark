@@ -1,5 +1,5 @@
 
-; 1836 occurrences:
+; 1837 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -1356,7 +1356,6 @@
 ; lua/optimized/lmathlib.ll
 ; luau/optimized/EmitInstructionX64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -1795,8 +1794,10 @@
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -1844,7 +1845,7 @@ entry:
   ret i64 %4
 }
 
-; 1096 occurrences:
+; 1095 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -2389,6 +2390,7 @@ entry:
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; lvgl/optimized/lv_image.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -2835,7 +2837,6 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
@@ -2844,7 +2845,6 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
@@ -2994,7 +2994,7 @@ entry:
   ret i64 %4
 }
 
-; 239 occurrences:
+; 238 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -3105,7 +3105,6 @@ entry:
 ; llvm/optimized/FrontendActions.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/IndexSymbol.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InvalidPtrChecker.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll

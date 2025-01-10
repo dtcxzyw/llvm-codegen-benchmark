@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; 3 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll

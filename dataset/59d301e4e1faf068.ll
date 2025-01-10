@@ -1,5 +1,5 @@
 
-; 1545 occurrences:
+; 1544 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRewrite.c.ll
@@ -100,6 +100,7 @@
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
 ; cmake/optimized/formdata.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -125,6 +126,7 @@
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; csmith/optimized/Type.cpp.ll
 ; curl/optimized/libcurl_la-formdata.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-urlapi.ll
 ; cvc5/optimized/arith_poly_norm.cpp.ll
 ; cvc5/optimized/cardinality_class.cpp.ll
@@ -632,7 +634,6 @@
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/X86RecognizableInstr.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/Repl.cpp.ll
@@ -1247,8 +1248,6 @@
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll

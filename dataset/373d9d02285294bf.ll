@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

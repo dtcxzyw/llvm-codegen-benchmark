@@ -38,8 +38,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%esi, %edi
 	cmovbel	%edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	xorl	%eax, %eax
-	cmpl	%esi, %edi
-	cmovel	%edi, %eax
-	retq

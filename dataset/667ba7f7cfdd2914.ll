@@ -1,7 +1,7 @@
 
-%"struct.mu::SToken.3367771" = type { i32, %union.anon.3.3367772 }
-%union.anon.3.3367772 = type { %struct.anon.3367773 }
-%struct.anon.3367773 = type { ptr, double, double }
+%"struct.mu::SToken.3367737" = type { i32, %union.anon.3.3367738 }
+%union.anon.3.3367738 = type { %struct.anon.3367739 }
+%struct.anon.3367739 = type { ptr, double, double }
 
 ; 9 occurrences:
 ; boost/optimized/area_sph_geo.ll
@@ -36,7 +36,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mu::SToken.3367771", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.mu::SToken.3367737", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = ashr exact i64 %5, 5

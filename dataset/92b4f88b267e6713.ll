@@ -1070,7 +1070,7 @@ entry:
   ret i1 %4
 }
 
-; 133 occurrences:
+; 134 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/pdrCore.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -1085,6 +1085,7 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
 ; c3c/optimized/sema_expr.c.ll
+; clamav/optimized/mbox.c.ll
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; cpython/optimized/connection.ll
@@ -1345,7 +1346,7 @@ entry:
   ret i1 %4
 }
 
-; 341 occurrences:
+; 340 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -1504,7 +1505,6 @@ entry:
 ; llvm/optimized/DynamicLibrary.cpp.ll
 ; llvm/optimized/InductiveRangeCheckElimination.cpp.ll
 ; llvm/optimized/InputFile.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/IntrinsicInst.cpp.ll
 ; llvm/optimized/LoopUnrollRuntime.cpp.ll

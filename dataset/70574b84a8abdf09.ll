@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3141442" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3141408" = type { ptr, ptr, ptr, ptr }
 
 ; 19 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -86,11 +86,14 @@ entry:
   ret ptr %7
 }
 
-; 77 occurrences:
+; 82 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -163,15 +166,17 @@ entry:
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000ab(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3141442", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3141408", ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3141442", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3141408", ptr %5, i64 %6
   ret ptr %7
 }
 

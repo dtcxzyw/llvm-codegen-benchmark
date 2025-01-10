@@ -35,7 +35,7 @@ entry:
   ret i32 %6
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/dec.c.ll
@@ -47,7 +47,6 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
-; linux/optimized/vlv_dsi.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll

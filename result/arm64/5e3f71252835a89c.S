@@ -37,6 +37,14 @@ func0000000000000098:                   // @func0000000000000098
 	and	x0, x8, #0xfffffffffffffffc
 	ret
                                         // -- End function
+func0000000000000030:                   // @func0000000000000030
+// %bb.0:                               // %entry
+	add	x8, x2, x0
+	add	x8, x8, x1, lsl #3
+	add	x8, x8, #135
+	and	x0, x8, #0xfffffffffffffff8
+	ret
+                                        // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	add	w8, w2, w0

@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
 
 ; 2 occurrences:
 ; folly/optimized/ThreadedExecutor.cpp.ll
@@ -8,7 +8,7 @@
 define ptr @func00000000000003eb(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 14

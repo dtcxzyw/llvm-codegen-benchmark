@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 209 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -124,7 +124,6 @@
 ; postgres/optimized/bitmapset.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; raylib/optimized/rcore.c.ll
-; slurm/optimized/bitstring.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll

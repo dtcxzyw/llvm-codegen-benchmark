@@ -1,5 +1,5 @@
 
-; 3102 occurrences:
+; 3101 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -2457,7 +2457,6 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/export.ifw.cpp.ll
@@ -3521,7 +3520,7 @@ entry:
   ret i1 %4
 }
 
-; 671 occurrences:
+; 670 occurrences:
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddClip.c.ll
 ; abc/optimized/extraBddSymm.c.ll
@@ -4021,7 +4020,6 @@ entry:
 ; openjdk/optimized/c1_Optimizer.ll
 ; openjdk/optimized/c1_ValueMap.ll
 ; openjdk/optimized/cfgnode.ll
-; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/g1DirtyCardQueue.ll
 ; openjdk/optimized/gcm.ll

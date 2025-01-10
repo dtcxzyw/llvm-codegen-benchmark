@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -39,7 +39,6 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; linux/optimized/trace_events.ll
-; linux/optimized/vc_screen.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

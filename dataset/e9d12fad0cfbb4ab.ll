@@ -86,7 +86,7 @@ entry:
   ret i32 %4
 }
 
-; 623 occurrences:
+; 624 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -304,6 +304,7 @@ entry:
 ; opencv/optimized/icp.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; opencv/optimized/plot.cpp.ll

@@ -225,7 +225,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaScript.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; git/optimized/remote.ll
@@ -235,6 +235,7 @@ entry:
 ; icu/optimized/messagepattern.ll
 ; ninja/optimized/build_test.cc.ll
 ; opencv/optimized/datablock.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind

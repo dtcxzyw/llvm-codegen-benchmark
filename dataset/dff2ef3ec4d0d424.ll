@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.6.2735340" = type { %struct.BEInt.7.2735341 }
-%struct.BEInt.7.2735341 = type { [4 x i8] }
-%struct.hlist_head.3550203 = type { ptr }
+%"struct.OT::IntType.6.2735306" = type { %struct.BEInt.7.2735307 }
+%struct.BEInt.7.2735307 = type { [4 x i8] }
+%struct.hlist_head.3550169 = type { ptr }
 
 ; 45 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -78,7 +78,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 5
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.6.2735340", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.6.2735306", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -103,7 +103,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 112
-  %6 = getelementptr %struct.hlist_head.3550203, ptr %5, i64 %4
+  %6 = getelementptr %struct.hlist_head.3550169, ptr %5, i64 %4
   ret ptr %6
 }
 

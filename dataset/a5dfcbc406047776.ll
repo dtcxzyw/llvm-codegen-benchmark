@@ -1,5 +1,5 @@
 
-%struct.m256.3850194 = type { <2 x i64>, <2 x i64> }
+%struct.m256.3850144 = type { <2 x i64>, <2 x i64> }
 
 ; 2 occurrences:
 ; linux/optimized/af_packet.ll
@@ -60,7 +60,7 @@ entry:
   %4 = add i32 %3, 1216
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw %struct.m256.3850194, ptr %6, i64 %0
+  %7 = getelementptr nusw %struct.m256.3850144, ptr %6, i64 %0
   ret ptr %7
 }
 

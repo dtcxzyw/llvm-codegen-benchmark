@@ -1,5 +1,5 @@
 
-%struct.list_head.3549476 = type { ptr, ptr }
+%struct.list_head.3549442 = type { ptr, ptr }
 
 ; 10 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -56,7 +56,7 @@ entry:
   %3 = and i32 %2, 32767
   %4 = sub nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3549476, ptr %0, i64 %5
+  %6 = getelementptr %struct.list_head.3549442, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -10,7 +10,7 @@ func0000000000000014:                   # @func0000000000000014
 	andq	$-8, %rsi
 	leaq	-8(%rsi,%rdi), %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000036:                   # @func0000000000000036
 	movabsq	$9223372036854771712, %rax      # imm = 0x7FFFFFFFFFFFF000
 	leaq	4094(%rax), %rcx
 	andq	%rsi, %rcx

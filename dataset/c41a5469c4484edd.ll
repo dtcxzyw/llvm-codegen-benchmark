@@ -1,6 +1,6 @@
 
-%struct.list_head.3535195 = type { ptr, ptr }
-%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%struct.scatterlist.3540805 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 5 occurrences:
 ; graphviz/optimized/imap.c.ll
@@ -29,7 +29,7 @@ entry:
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr [12 x %struct.list_head.3535195], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [12 x %struct.list_head.3535161], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -42,7 +42,7 @@ entry:
   %3 = select i1 %2, i32 0, i32 %1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr [19 x %struct.scatterlist.3540839], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [19 x %struct.scatterlist.3540805], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

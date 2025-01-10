@@ -1,11 +1,9 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/mvcContain.c.ll
-; abc/optimized/mvcUtils.c.ll
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/core.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll

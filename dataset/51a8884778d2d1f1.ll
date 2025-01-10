@@ -597,7 +597,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; hermes/optimized/AST2JS.cpp.ll
@@ -611,7 +611,6 @@ entry:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/UTF8.cpp.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
-; linux/optimized/intel_reset.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; php/optimized/html.ll
 ; sentencepiece/optimized/util.cc.ll

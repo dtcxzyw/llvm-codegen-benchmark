@@ -288,7 +288,7 @@ entry:
   ret i16 %3
 }
 
-; 419 occurrences:
+; 417 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
@@ -444,8 +444,6 @@ entry:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -859,10 +857,9 @@ entry:
   ret i16 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/ole2_extract.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; hdf5/optimized/H5Pgcpl.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/ata_piix.ll

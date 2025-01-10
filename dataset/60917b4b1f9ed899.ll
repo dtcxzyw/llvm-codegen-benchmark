@@ -116,7 +116,7 @@ entry:
   ret i1 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; boost/optimized/src.ll
 ; boost/optimized/to_chars.ll
@@ -154,7 +154,6 @@ entry:
 ; openjdk/optimized/ciMethodData.ll
 ; openmpi/optimized/coll_base_barrier.ll
 ; openmpi/optimized/nbc_iallreduce.ll
-; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -215,7 +214,7 @@ entry:
   ret i1 %4
 }
 
-; 491 occurrences:
+; 493 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/inftrees.c.ll
 ; abc/optimized/ioUtil.c.ll
@@ -539,6 +538,8 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-a_print.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/pointInstancer.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll

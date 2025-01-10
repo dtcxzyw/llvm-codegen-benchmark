@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -42,7 +42,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 14
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %6, i64 %5
   ret ptr %7
 }
 

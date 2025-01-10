@@ -61,6 +61,14 @@ func0000000000000008:                   // @func0000000000000008
 	and	w0, w0, w8
 	ret
                                         // -- End function
+func0000000000000024:                   // @func0000000000000024
+// %bb.0:                               // %entry
+	fcmp	d0, d1
+	cset	w8, eq
+	csinc	w8, w8, wzr, vc
+	and	w0, w0, w8
+	ret
+                                        // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
 	fcmp	d0, d1

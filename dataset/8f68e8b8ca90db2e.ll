@@ -556,7 +556,9 @@ entry:
   ret i64 %3
 }
 
-; 193 occurrences:
+; 197 occurrences:
+; abc/optimized/SimpSolver.cpp.ll
+; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -568,6 +570,7 @@ entry:
 ; bullet3/optimized/btGjkEpa2.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/pe.c.ll
+; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pfr.c.ll
@@ -749,6 +752,7 @@ entry:
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/recordio.cc.ll
 ; xgboost/optimized/recordio_split.cc.ll
+; yosys/optimized/SimpSolver.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {

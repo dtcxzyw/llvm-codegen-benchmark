@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 39 occurrences:
 ; abc/optimized/amapUniq.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; arrow/optimized/compare.cc.ll
@@ -9,6 +9,7 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/qtmd.c.ll
+; clamav/optimized/xlm_extract.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; freetype/optimized/raster.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -36,6 +37,8 @@
 ; velox/optimized/LambdaExpr.cpp.ll
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/VectorPrinter.cpp.ll
+; wireshark/optimized/packet-qnet6.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

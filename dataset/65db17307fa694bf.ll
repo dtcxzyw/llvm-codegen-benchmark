@@ -1,8 +1,8 @@
 
-%"struct.OT::OffsetTo.619.2737021" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
+%"struct.OT::OffsetTo.619.2736987" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
 
 ; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -34,7 +34,7 @@ define i64 @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2737021"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2736987"], ptr %3, i64 0, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

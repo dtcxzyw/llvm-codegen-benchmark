@@ -414,7 +414,7 @@ entry:
   ret i64 %3
 }
 
-; 135 occurrences:
+; 136 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
@@ -471,6 +471,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/BasicBlockSections.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/Decl.cpp.ll

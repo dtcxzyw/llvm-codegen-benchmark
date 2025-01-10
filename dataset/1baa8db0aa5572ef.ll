@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; sqlite/optimized/sqlite3.ll

@@ -1,6 +1,6 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
-%struct.extCard.3484972 = type { i32, i32, i32 }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
+%struct.extCard.3484938 = type { i32, i32, i32 }
 
 ; 15 occurrences:
 ; linux/optimized/drm_edid.ll
@@ -22,7 +22,7 @@
 define ptr @func00000000000000cc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 48
-  %4 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = getelementptr [8 x i64], ptr %5, i64 0, i64 %0
   ret ptr %6
@@ -141,7 +141,7 @@ entry:
   %.idx = mul i64 %1, 220
   %3 = getelementptr i8, ptr %2, i64 112
   %4 = getelementptr i8, ptr %3, i64 %.idx
-  %5 = getelementptr nusw [4 x %struct.extCard.3484972], ptr %4, i64 0, i64 %0
+  %5 = getelementptr nusw [4 x %struct.extCard.3484938], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

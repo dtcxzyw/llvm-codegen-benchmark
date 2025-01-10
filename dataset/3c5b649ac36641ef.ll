@@ -1,6 +1,6 @@
 
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
 
 ; 16 occurrences:
 ; abc/optimized/giaEmbed.c.ll
@@ -54,9 +54,9 @@ entry:
 define ptr @func000000000000017a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876679, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.Mig_Obj_t_.2876679, ptr %4, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }

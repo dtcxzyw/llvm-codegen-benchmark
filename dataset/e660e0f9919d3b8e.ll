@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaJf.c.ll
+; abc/optimized/luckyFast6.c.ll
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xfrm_policy.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
@@ -37,6 +38,20 @@ entry:
   ret i32 %2
 }
 
+; 5 occurrences:
+; abc/optimized/luckyFast6.c.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; regex-rs/optimized/43rm3k0zg7aeemwj.ll
+; regex-rs/optimized/4qhif1ofea978syx.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = xor i32 %0, 1
+  %2 = add nsw i32 %1, -4
+  ret i32 %2
+}
+
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
@@ -57,19 +72,6 @@ define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 32
   %2 = xor i32 %1, 56
-  ret i32 %2
-}
-
-; 4 occurrences:
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; regex-rs/optimized/43rm3k0zg7aeemwj.ll
-; regex-rs/optimized/4qhif1ofea978syx.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -1
-  %2 = xor i32 %1, 55296
   ret i32 %2
 }
 

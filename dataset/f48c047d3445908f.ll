@@ -13,19 +13,6 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; abc/optimized/bacBlast.c.ll
-; linux/optimized/intel_cdclk.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %.not = icmp eq i32 %2, 0
-  %3 = select i1 %.not, i32 12, i32 18
-  %4 = select i1 %1, i32 15, i32 18
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; linux/optimized/sg.ll
 ; Function Attrs: nounwind
@@ -36,6 +23,18 @@ entry:
   %5 = select i1 %1, i32 -3, i32 -1
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6
+}
+
+; 1 occurrences:
+; linux/optimized/intel_cdclk.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %.not = icmp eq i32 %2, 0
+  %3 = select i1 %.not, i32 200000, i32 266667
+  %4 = select i1 %1, i32 320000, i32 333333
+  %5 = select i1 %0, i32 %4, i32 %3
+  ret i32 %5
 }
 
 ; 1 occurrences:

@@ -59,6 +59,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; clamav/optimized/matcher-ac.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i8 %1, i32 %2) #0 {
+entry:
+  %3 = trunc i32 %2 to i8
+  %4 = icmp ult i8 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

@@ -1,7 +1,7 @@
 
-%class.rational.3615514 = type { %class.mpq.3615515 }
-%class.mpq.3615515 = type { %class.mpz.3615516, %class.mpz.3615516 }
-%class.mpz.3615516 = type { i32, i8, ptr }
+%class.rational.3615480 = type { %class.mpq.3615481 }
+%class.mpq.3615481 = type { %class.mpz.3615482, %class.mpz.3615482 }
+%class.mpz.3615482 = type { i32, i8, ptr }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -152,7 +152,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = or disjoint i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %class.rational.3615514, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.rational.3615480, ptr %0, i64 %5
   ret ptr %6
 }
 

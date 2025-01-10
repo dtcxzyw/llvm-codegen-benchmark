@@ -22,3 +22,9 @@ func00000000000000df:                   # @func00000000000000df
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000005d:                   # @func000000000000005d
+	leal	-1(%rdx), %eax
+	shrl	%eax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq

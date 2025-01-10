@@ -1,9 +1,9 @@
 
-%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
-%struct.scatterlist.3530599 = type { i64, i32, i32, i64, i32, i32 }
+%"class.rapidjson::GenericMember.2825502" = type { %"class.rapidjson::GenericValue.2825277", %"class.rapidjson::GenericValue.2825277" }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
+%struct.scatterlist.3530565 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 8 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -56,7 +56,7 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = zext i32 %0 to i64
-  %5 = getelementptr nuw %"class.rapidjson::GenericMember.2825536", ptr %3, i64 %4, i32 0, i32 0, i32 0, i32 1
+  %5 = getelementptr nuw %"class.rapidjson::GenericMember.2825502", ptr %3, i64 %4, i32 0, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -69,7 +69,7 @@ entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %struct.scatterlist.3530599, ptr %3, i64 %4, i32 1
+  %5 = getelementptr %struct.scatterlist.3530565, ptr %3, i64 %4, i32 1
   ret ptr %5
 }
 

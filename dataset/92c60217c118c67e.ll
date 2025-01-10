@@ -100,29 +100,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = call noundef i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = add nsw i32 %3, %0
-  %5 = icmp slt i32 %4, 9
-  ret i1 %5
-}
-
-; 1 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = call noundef i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = add i32 %3, %0
-  %5 = icmp sgt i32 %4, 0
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind

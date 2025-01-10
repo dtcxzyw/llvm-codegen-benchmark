@@ -25,9 +25,9 @@ func0000000000000026:                   # @func0000000000000026
 	slt	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, -2
+	andi	a0, a0, -9
 	sext.w	a0, a0
-	addi	a0, a0, -2
+	addi	a0, a0, 9
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038

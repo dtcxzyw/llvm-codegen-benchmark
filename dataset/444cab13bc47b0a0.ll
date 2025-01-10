@@ -64,8 +64,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll

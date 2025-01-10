@@ -16,7 +16,7 @@ func0000000000000341:                   // @func0000000000000341
                                         // -- End function
 func00000000000003e4:                   // @func00000000000003e4
 // %bb.0:                               // %entry
-	mov	w8, #18                         // =0x12
+	mov	w8, #4                          // =0x4
 	sub	w8, w8, w1
 	cmp	x0, x8
 	cset	w0, lo

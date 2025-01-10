@@ -8,13 +8,13 @@ func0000000000000284:                   # @func0000000000000284
 	cmpl	$15, %eax
 	setb	%al
 	retq
-func0000000000000204:                   # @func0000000000000204
-	leal	-1(%rdi,%rsi,2), %eax
+func00000000000002a4:                   # @func00000000000002a4
+	leal	999(%rdi,%rsi,2), %eax
 	cmpl	$15, %eax
 	setb	%al
 	retq
-func00000000000002a4:                   # @func00000000000002a4
-	leal	999(%rdi,%rsi,2), %eax
+func0000000000000204:                   # @func0000000000000204
+	leal	-1(%rdi,%rsi,2), %eax
 	cmpl	$15, %eax
 	setb	%al
 	retq

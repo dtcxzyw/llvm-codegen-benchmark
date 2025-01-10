@@ -26,20 +26,6 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; hyperscan/optimized/scratch.c.ll
-; llvm/optimized/SourceManager.cpp.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -8
-  %4 = add i64 %0, %3
-  %5 = shl nuw nsw i64 %1, 4
-  %6 = add i64 %4, %5
-  ret i64 %6
-}
-
 ; 5 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -56,7 +42,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/SourceManager.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
@@ -65,6 +52,19 @@ entry:
   %3 = and i64 %2, 72057594021150720
   %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %1, 53
+  %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/scratch.c.ll
+; llvm/optimized/SourceManager.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967288
+  %4 = add i64 %0, %3
+  %5 = shl nuw nsw i64 %1, 4
   %6 = add i64 %4, %5
   ret i64 %6
 }

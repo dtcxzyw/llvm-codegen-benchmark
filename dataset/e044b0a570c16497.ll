@@ -458,6 +458,19 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; openusd/optimized/avif_obu.c.ll
+; wireshark/optimized/file-elf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = sub i32 %0, %1
+  %5 = icmp ugt i32 %4, %3
+  ret i1 %5
+}
+
 ; 6 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -599,18 +612,6 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %0, %1
   %5 = icmp ult i32 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; openusd/optimized/avif_obu.c.ll
-; wireshark/optimized/file-elf.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = sub i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
   ret i1 %5
 }
 

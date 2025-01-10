@@ -12,19 +12,19 @@ func0000000000000284:                   # @func0000000000000284
 	vadd.vi	v8, v8, -1
 	vmsleu.vi	v0, v8, 14
 	ret
-func0000000000000204:                   # @func0000000000000204
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v10
-	vadd.vv	v8, v8, v10
-	vadd.vi	v8, v8, -1
-	vmsleu.vi	v0, v8, 14
-	ret
 func00000000000002a4:                   # @func00000000000002a4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vadd.vv	v8, v10, v8
 	li	a0, 999
 	vadd.vx	v8, v8, a0
+	vmsleu.vi	v0, v8, 14
+	ret
+func0000000000000204:                   # @func0000000000000204
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v10, v10, v10
+	vadd.vv	v8, v8, v10
+	vadd.vi	v8, v8, -1
 	vmsleu.vi	v0, v8, 14
 	ret
 func00000000000000a4:                   # @func00000000000000a4

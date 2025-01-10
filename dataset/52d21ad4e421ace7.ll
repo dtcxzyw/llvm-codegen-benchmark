@@ -362,8 +362,9 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 56 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cxxopts/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_order.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
@@ -417,6 +418,7 @@ entry:
 ; slurm/optimized/gres_select_filter.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:

@@ -21,7 +21,7 @@ entry:
   ret ptr %7
 }
 
-; 98 occurrences:
+; 100 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -92,9 +92,11 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/yv12extend.c.ll
 ; php/optimized/ir_gcm.ll

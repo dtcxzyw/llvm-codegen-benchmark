@@ -1,9 +1,9 @@
 
-%"class.std::vector.2690952" = type { %"struct.std::_Vector_base.2690953" }
-%"struct.std::_Vector_base.2690953" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" = type { ptr, ptr, ptr }
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"class.std::vector.2690918" = type { %"struct.std::_Vector_base.2690919" }
+%"struct.std::_Vector_base.2690919" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" = type { ptr, ptr, ptr }
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
 ; 2 occurrences:
 ; linux/optimized/hugetlb_cgroup.ll
@@ -35,7 +35,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw [2 x %"class.std::vector.2690952"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %"class.std::vector.2690918"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -92,7 +92,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
-  %4 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %1
+  %4 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %0, i64 %1
   %5 = getelementptr [128 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

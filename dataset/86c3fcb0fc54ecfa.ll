@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; gromacs/optimized/huffman.c.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; ruby/optimized/pm_constant_pool.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
@@ -13,7 +12,7 @@ entry:
   ret i32 %3
 }
 
-; 130 occurrences:
+; 133 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -64,6 +63,8 @@ entry:
 ; node/optimized/simdutf.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-aat-map.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -98,6 +99,7 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_chacha20_poly1305_hw.ll
 ; openssl/optimized/liblegacy-lib-cipher_rc4_hmac_md5_hw.ll
 ; openssl/optimized/ossltest-dso-e_ossltest.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
@@ -152,7 +154,7 @@ entry:
   ret i32 %3
 }
 
-; 303 occurrences:
+; 304 occurrences:
 ; abc/optimized/utilBridge.c.ll
 ; bullet3/optimized/b3PrefixScanCL.ll
 ; bullet3/optimized/b3PrefixScanFloat4CL.ll
@@ -278,6 +280,7 @@ entry:
 ; linux/optimized/util.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; lua/optimized/ltable.ll
 ; luau/optimized/lvmload.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
@@ -619,7 +622,7 @@ entry:
   ret i32 %3
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -692,7 +695,6 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_truetype.c.ll

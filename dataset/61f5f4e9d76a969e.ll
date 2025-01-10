@@ -363,7 +363,7 @@ entry:
   ret i32 %2
 }
 
-; 94 occurrences:
+; 93 occurrences:
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/gif.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -455,7 +455,6 @@ entry:
 ; wireshark/optimized/packet-redbackli.c.ll
 ; wireshark/optimized/packet-smc.c.ll
 ; wolfssl/optimized/tls.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind

@@ -248,7 +248,7 @@ entry:
   ret i1 %5
 }
 
-; 180 occurrences:
+; 181 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -332,6 +332,7 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -438,7 +439,7 @@ entry:
   ret i1 %5
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/io.c.ll
@@ -458,7 +459,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -511,7 +511,7 @@ entry:
   ret i1 %5
 }
 
-; 62 occurrences:
+; 60 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -548,9 +548,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; openjdk/optimized/g1HeapRegionManager.ll
-; php/optimized/KeccakSponge.ll
 ; postgres/optimized/tableam.ll
-; postgres/optimized/xlogreader.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -607,12 +605,10 @@ entry:
   ret i1 %5
 }
 
-; 52 occurrences:
+; 49 occurrences:
 ; brotli/optimized/backward_references.c.ll
-; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/matcher.c.ll
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/gzwrite.c.ll
 ; draco/optimized/mesh_cleanup.cc.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; linux/optimized/tty_buffer.ll
@@ -659,7 +655,6 @@ entry:
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; zlib/optimized/deflate.c.ll
-; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -852,10 +847,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/FiffParser.cpp.ll
-; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:

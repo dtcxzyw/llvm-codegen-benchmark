@@ -135,7 +135,7 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; boost/optimized/to_chars.ll
@@ -161,6 +161,7 @@ entry:
 ; proxygen/optimized/Service.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/xxhash.cc.ll
+; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i128 %0) #0 {
 entry:
@@ -170,9 +171,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libquic/optimized/quic_utils.cc.ll
-; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i128 %0) #0 {
 entry:

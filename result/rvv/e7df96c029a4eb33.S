@@ -16,15 +16,6 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	vmand.mm	v9, v15, v10
 	vmor.mm	v0, v9, v8
 	ret
-func0000000000001481:                   # @func0000000000001481
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vv	v14, v10, v12
-	vmsltu.vv	v15, v10, v12
-	vmseq.vi	v10, v8, 0
-	vmandn.mm	v8, v14, v10
-	vmand.mm	v9, v15, v10
-	vmor.mm	v0, v9, v8
-	ret
 func00000000000028c1:                   # @func00000000000028c1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v14, v12, v10

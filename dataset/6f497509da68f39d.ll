@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/sjis.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/sjis.ll
-; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -16,9 +15,10 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; git/optimized/apply.ll
 ; icu/optimized/package.ll
+; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
 entry:

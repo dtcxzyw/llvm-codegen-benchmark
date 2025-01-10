@@ -14,18 +14,20 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
   %4 = add i64 %2, %3
-  %5 = getelementptr nusw nuw [0 x i128], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [0 x i128], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; oiio/optimized/sysutil.cpp.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
@@ -58,10 +60,9 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; boost/optimized/addr2line.ll
 ; boost/optimized/basic.ll
-; oiio/optimized/sysutil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -102,17 +103,6 @@ entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = sub nuw nsw i64 %3, %1
   %5 = getelementptr nusw nuw [15 x i32], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %1, -1
-  %4 = add i64 %2, %3
-  %5 = getelementptr nusw [0 x { { { i64, ptr, {} }, i64 }, i64 }], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

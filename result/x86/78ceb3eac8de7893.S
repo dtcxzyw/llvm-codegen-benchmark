@@ -14,6 +14,11 @@ func000000000000003c:                   # @func000000000000003c
 	shll	$4, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	leal	(%rdi,%rax,4), %eax
+	retq
 func000000000000003e:                   # @func000000000000003e
 	movzwl	%dx, %eax
 	addl	%esi, %eax

@@ -11,7 +11,7 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; assimp/optimized/B3DImporter.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -22,7 +22,6 @@ entry:
 ; linux/optimized/indirect.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll

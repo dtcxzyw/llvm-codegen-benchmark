@@ -29,7 +29,7 @@ func0000000000000081:                   // @func0000000000000081
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	orr	x8, x2, x1
+	orr	x8, x1, x2
 	cmp	x8, #0
 	cset	w8, eq
 	and	w0, w0, w8

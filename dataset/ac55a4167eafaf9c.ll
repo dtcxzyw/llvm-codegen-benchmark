@@ -18,7 +18,7 @@ define i64 @func000000000000000e(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 3
   %2 = zext nneg i32 %1 to i64
-  %3 = lshr i64 652188559272970764, %2
+  %3 = lshr i64 652177563988262924, %2
   ret i64 %3
 }
 

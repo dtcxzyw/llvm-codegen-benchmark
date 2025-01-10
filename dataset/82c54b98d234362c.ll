@@ -1,34 +1,34 @@
 
-%class.bucket.2735647 = type { i32, i32, ptr }
-%struct.Abc_ZddEnt_.2877750 = type { i32, i32, i32, i32 }
-%"struct.llvh::detail::DenseMapPair.213.3083546" = type { %"struct.std::pair.base.216.3083547", [4 x i8] }
-%"struct.std::pair.base.216.3083547" = type <{ ptr, %"class.hermes::Register.3083548" }>
-%"class.hermes::Register.3083548" = type { i32 }
-%"struct.Yosys::RTLIL::SigSpec.3119336" = type { i32, i64, %"class.std::vector.174.3119337", %"class.std::vector.179.3119338" }
-%"class.std::vector.174.3119337" = type { %"struct.std::_Vector_base.175.3119339" }
-%"struct.std::_Vector_base.175.3119339" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3119340" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3119340" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3119341" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3119341" = type { ptr, ptr, ptr }
-%"class.std::vector.179.3119338" = type { %"struct.std::_Vector_base.180.3119342" }
-%"struct.std::_Vector_base.180.3119342" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3119343" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3119343" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3119344" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3119344" = type { ptr, ptr, ptr }
-%"struct.llvm::detail::DenseMapPair.3160798" = type { %"struct.std::pair.1657.3160799" }
-%"struct.std::pair.1657.3160799" = type { %"class.(anonymous namespace)::CatchHandlerType.3160800", ptr }
-%"class.(anonymous namespace)::CatchHandlerType.3160800" = type { %"class.clang::QualType.3160553", i8, [7 x i8] }
-%"class.clang::QualType.3160553" = type { %"class.llvm::PointerIntPair.3160554" }
-%"class.llvm::PointerIntPair.3160554" = type { %"struct.llvm::detail::PunnedPointer.3160555" }
-%"struct.llvm::detail::PunnedPointer.3160555" = type { [8 x i8] }
-%"struct.llvm::detail::DenseMapPair.3182479" = type { %"struct.std::pair.base.3182480", [4 x i8] }
-%"struct.std::pair.base.3182480" = type <{ %"class.llvm::ValueMapCallbackVH.3182481", %"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182482" }>
-%"class.llvm::ValueMapCallbackVH.3182481" = type { %"class.llvm::CallbackVH.3182483", ptr }
-%"class.llvm::CallbackVH.3182483" = type { ptr, %"class.llvm::ValueHandleBase.3182484" }
-%"class.llvm::ValueHandleBase.3182484" = type { %"class.llvm::PointerIntPair.3182485", ptr, ptr }
-%"class.llvm::PointerIntPair.3182485" = type { %"struct.llvm::detail::PunnedPointer.3182486" }
-%"struct.llvm::detail::PunnedPointer.3182486" = type { [8 x i8] }
-%"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182482" = type <{ i32, i32, i8, [3 x i8] }>
-%struct.pipe_buffer.3531261 = type { ptr, i32, i32, ptr, i32, i64 }
-%struct.list_head.3550850 = type { ptr, ptr }
+%class.bucket.2735613 = type { i32, i32, ptr }
+%struct.Abc_ZddEnt_.2877716 = type { i32, i32, i32, i32 }
+%"struct.llvh::detail::DenseMapPair.213.3083512" = type { %"struct.std::pair.base.216.3083513", [4 x i8] }
+%"struct.std::pair.base.216.3083513" = type <{ ptr, %"class.hermes::Register.3083514" }>
+%"class.hermes::Register.3083514" = type { i32 }
+%"struct.Yosys::RTLIL::SigSpec.3119302" = type { i32, i64, %"class.std::vector.174.3119303", %"class.std::vector.179.3119304" }
+%"class.std::vector.174.3119303" = type { %"struct.std::_Vector_base.175.3119305" }
+%"struct.std::_Vector_base.175.3119305" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3119306" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3119306" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3119307" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3119307" = type { ptr, ptr, ptr }
+%"class.std::vector.179.3119304" = type { %"struct.std::_Vector_base.180.3119308" }
+%"struct.std::_Vector_base.180.3119308" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3119309" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3119309" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3119310" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3119310" = type { ptr, ptr, ptr }
+%"struct.llvm::detail::DenseMapPair.3160764" = type { %"struct.std::pair.1657.3160765" }
+%"struct.std::pair.1657.3160765" = type { %"class.(anonymous namespace)::CatchHandlerType.3160766", ptr }
+%"class.(anonymous namespace)::CatchHandlerType.3160766" = type { %"class.clang::QualType.3160519", i8, [7 x i8] }
+%"class.clang::QualType.3160519" = type { %"class.llvm::PointerIntPair.3160520" }
+%"class.llvm::PointerIntPair.3160520" = type { %"struct.llvm::detail::PunnedPointer.3160521" }
+%"struct.llvm::detail::PunnedPointer.3160521" = type { [8 x i8] }
+%"struct.llvm::detail::DenseMapPair.3182445" = type { %"struct.std::pair.base.3182446", [4 x i8] }
+%"struct.std::pair.base.3182446" = type <{ %"class.llvm::ValueMapCallbackVH.3182447", %"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182448" }>
+%"class.llvm::ValueMapCallbackVH.3182447" = type { %"class.llvm::CallbackVH.3182449", ptr }
+%"class.llvm::CallbackVH.3182449" = type { ptr, %"class.llvm::ValueHandleBase.3182450" }
+%"class.llvm::ValueHandleBase.3182450" = type { %"class.llvm::PointerIntPair.3182451", ptr, ptr }
+%"class.llvm::PointerIntPair.3182451" = type { %"struct.llvm::detail::PunnedPointer.3182452" }
+%"struct.llvm::detail::PunnedPointer.3182452" = type { [8 x i8] }
+%"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182448" = type <{ i32, i32, i8, [3 x i8] }>
+%struct.pipe_buffer.3531227 = type { ptr, i32, i32, ptr, i32, i64 }
+%struct.list_head.3550816 = type { ptr, ptr }
 
 ; 344 occurrences:
 ; c3c/optimized/types.c.ll
@@ -381,7 +381,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %class.bucket.2735647, ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %class.bucket.2735613, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -393,7 +393,7 @@ entry:
   %3 = add nuw nsw i32 %2, 9638941
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %struct.Abc_ZddEnt_.2877750, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.Abc_ZddEnt_.2877716, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -520,7 +520,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %"struct.llvh::detail::DenseMapPair.213.3083546", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr nuw %"struct.llvh::detail::DenseMapPair.213.3083512", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -534,7 +534,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %"struct.Yosys::RTLIL::SigSpec.3119336", ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %"struct.Yosys::RTLIL::SigSpec.3119302", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -551,7 +551,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3160798", ptr %0, i64 %5, i32 0, i32 0, i32 1
+  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3160764", ptr %0, i64 %5, i32 0, i32 0, i32 1
   ret ptr %6
 }
 
@@ -563,7 +563,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3182479", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1, i32 2
+  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3182445", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1, i32 2
   ret ptr %6
 }
 
@@ -592,7 +592,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.pipe_buffer.3531261, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.pipe_buffer.3531227, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -604,7 +604,7 @@ entry:
   %3 = add i32 %2, 2147483647
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3550850, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.list_head.3550816, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

@@ -85,9 +85,7 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
-; abc/optimized/giaSif.c.ll
-; abc/optimized/sbdCore.c.ll
+; 8 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll

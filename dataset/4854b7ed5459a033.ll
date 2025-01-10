@@ -97,16 +97,4 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i64 128, i64 96
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %0, %5
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

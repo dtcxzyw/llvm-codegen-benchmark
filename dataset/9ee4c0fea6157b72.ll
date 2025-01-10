@@ -1423,7 +1423,7 @@ entry:
   ret i1 %4
 }
 
-; 79 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
@@ -1436,7 +1436,6 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; cpython/optimized/_randommodule.ll
 ; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
@@ -1502,7 +1501,6 @@ entry:
 ; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:

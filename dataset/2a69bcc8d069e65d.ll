@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/darCut.c.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; libwebp/optimized/enc.c.ll
 ; linux/optimized/intel_rps.ll
-; postgres/optimized/varlena.ll
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/process.ll
 ; ruby/optimized/strftime.ll

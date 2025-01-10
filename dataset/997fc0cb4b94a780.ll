@@ -1,5 +1,5 @@
 
-; 434 occurrences:
+; 437 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/amapMerge.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaKf.c.ll
+; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/llb1Hint.c.ll
 ; abc/optimized/sbdCut.c.ll
@@ -24,6 +25,7 @@
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; clamav/optimized/unpack.cpp.ll
+; clamav/optimized/xlm_extract.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -204,6 +206,7 @@
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/chat.cpp.ll
+; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; mitsuba3/optimized/rgb2spec.c.ll
 ; ncnn/optimized/binaryop.cpp.ll
@@ -552,7 +555,7 @@ entry:
   ret i32 %3
 }
 
-; 140 occurrences:
+; 141 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -685,6 +688,7 @@ entry:
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-jxta.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-turbocell.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3182706" = type { i32 }
+%"class.clang::SourceLocation.3182672" = type { i32 }
 
 ; 6 occurrences:
 ; cmake/optimized/huf_compress.c.ll
@@ -12,7 +12,7 @@
 define i64 @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw ptr, ptr %1, i64 %0
-  %3 = getelementptr nusw nuw %"class.clang::SourceLocation.3182706", ptr %2, i64 %0
+  %3 = getelementptr nusw nuw %"class.clang::SourceLocation.3182672", ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

@@ -1,5 +1,5 @@
 
-; 624 occurrences:
+; 623 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/cnf_reader.c.ll
@@ -457,7 +457,6 @@
 ; wireshark/optimized/file-mp4.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/lemon.c.ll
-; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-a21.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-acn.c.ll

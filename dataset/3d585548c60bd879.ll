@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 95 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/key_map.cc.ll
@@ -16,7 +16,6 @@
 ; freetype/optimized/cff.c.ll
 ; graphviz/optimized/sgd.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -64,11 +63,9 @@
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; openusd/optimized/integerCoding.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; php/optimized/image.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/network_spgist.ll
 ; postgres/optimized/varbit.ll

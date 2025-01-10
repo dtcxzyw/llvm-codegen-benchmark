@@ -1,6 +1,6 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"struct.llvm::reassociate::ValueEntry.3349310" = type { i32, ptr }
 
 ; 8 occurrences:
 ; linux/optimized/dmar.ll
@@ -16,7 +16,7 @@ define i64 @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.TCGTemp.2707225, ptr %0, i64 %3
+  %4 = getelementptr %struct.TCGTemp.2707191, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -220,7 +220,7 @@ define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349310", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

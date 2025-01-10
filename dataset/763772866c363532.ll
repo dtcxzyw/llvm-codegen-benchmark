@@ -1,8 +1,8 @@
 
-%class.SwitchRange.2747980 = type { i32, i32, i32, float }
-%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
-%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%class.SwitchRange.2747946 = type { i32, i32, i32, float }
+%"struct.V3NumberData::ValueAndX.2754125" = type { i32, i32 }
+%struct.drm_color_lut.3530975 = type { i16, i16, i16, i16 }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 7 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -73,7 +73,7 @@ define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.SwitchRange.2747980, ptr %0, i64 %3
+  %4 = getelementptr nusw %class.SwitchRange.2747946, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -91,7 +91,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %3
+  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2754125", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -103,7 +103,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 511
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.drm_color_lut.3530975, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -114,7 +114,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

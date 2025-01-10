@@ -127,6 +127,17 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; Function Attrs: nounwind
+define i1 @func0000000000000024(i8 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ueq double %1, %2
+  %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; graphviz/optimized/dotsplines.c.ll
+; Function Attrs: nounwind
 define i1 @func0000000000000034(i8 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %1, %2

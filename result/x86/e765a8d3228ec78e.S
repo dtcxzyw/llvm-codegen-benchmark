@@ -22,3 +22,11 @@ func0000000000000018:                   # @func0000000000000018
 	subl	%ecx, %edi
 	cmovael	%edi, %eax
 	retq
+func000000000000002d:                   # @func000000000000002d
+	movl	$4294967295, %ecx               # imm = 0xFFFFFFFF
+	cmpq	%rcx, %rsi
+	cmovbq	%rsi, %rcx
+	xorl	%eax, %eax
+	subl	%ecx, %edi
+	cmovael	%edi, %eax
+	retq

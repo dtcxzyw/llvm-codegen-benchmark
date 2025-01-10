@@ -1,5 +1,5 @@
 
-; 2265 occurrences:
+; 2263 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
@@ -165,7 +165,6 @@
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cmCPackLog.cxx.ll
-; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cm_utf8.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -1870,7 +1869,6 @@
 ; quest/optimized/QuEST_qasm.c.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll

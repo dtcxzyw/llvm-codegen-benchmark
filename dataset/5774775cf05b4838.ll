@@ -1,5 +1,5 @@
 
-%"struct.Luau::CodeGen::StoreRegInfo.2935726" = type <{ i32, i32, i32, i8, i8, [2 x i8] }>
+%"struct.Luau::CodeGen::StoreRegInfo.2935692" = type <{ i32, i32, i32, i8, i8, [2 x i8] }>
 
 ; 13 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -69,7 +69,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw [256 x %"struct.Luau::CodeGen::StoreRegInfo.2935726"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [256 x %"struct.Luau::CodeGen::StoreRegInfo.2935692"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

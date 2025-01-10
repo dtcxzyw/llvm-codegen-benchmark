@@ -1,6 +1,6 @@
 
-%"class.colvarmodule::rvector.3353209" = type { double, double, double }
-%struct.Vector3.3789992 = type { float, float, float }
+%"class.colvarmodule::rvector.3353175" = type { double, double, double }
+%struct.Vector3.3789942 = type { float, float, float }
 
 ; 549 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -751,7 +751,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 16, i64 0
-  %5 = getelementptr nusw nuw %"class.colvarmodule::rvector.3353209", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.colvarmodule::rvector.3353175", ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -778,7 +778,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 -24, i64 -12
-  %5 = getelementptr nusw nuw %struct.Vector3.3789992, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.Vector3.3789942, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

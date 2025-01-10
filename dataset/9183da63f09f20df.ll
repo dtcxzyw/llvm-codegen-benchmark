@@ -26,7 +26,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 276 occurrences:
+; 279 occurrences:
 ; abc/optimized/rpo.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/alloc_lib.ll
@@ -66,6 +66,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; hdf5/optimized/H5Odtype.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
+; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; icu/optimized/utext.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -149,6 +150,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/mm_init.ll
 ; linux/optimized/swnode.ll
 ; linux/optimized/vmalloc.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -275,6 +277,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; quickjs/optimized/quickjs-libc.ll
 ; redis/optimized/cluster.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

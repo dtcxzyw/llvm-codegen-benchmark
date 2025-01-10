@@ -16,8 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func000000000000001b:                   # @func000000000000001b
 	movslq	%esi, %rax
-	imulq	$376, %rax, %rax                # imm = 0x178
-	leaq	-364(%rdi,%rax), %rax
+	leaq	6(%rdi,%rax), %rax
 	retq
 func0000000000000053:                   # @func0000000000000053
 	movslq	%esi, %rax

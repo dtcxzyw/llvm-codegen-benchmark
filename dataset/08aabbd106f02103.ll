@@ -1,5 +1,5 @@
 
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -10,7 +10,7 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 16
   %5 = ashr exact i64 %3, 28
   %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %6, i64 %0
+  %7 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %6, i64 %0
   ret ptr %7
 }
 

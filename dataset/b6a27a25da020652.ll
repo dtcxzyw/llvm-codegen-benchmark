@@ -1,7 +1,7 @@
 
-%"class.llvm::Use.3151881" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3151847" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194121" = type { ptr, ptr, ptr, ptr }
 
 ; 32 occurrences:
 ; git/optimized/dir.ll
@@ -219,7 +219,7 @@ entry:
   %2 = shl nuw i64 %1, 1
   %3 = add nuw nsw i64 %2, 2
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3151881", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3151847", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -231,7 +231,7 @@ entry:
   %2 = shl i64 %1, 1
   %3 = add nsw i64 %2, 2
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3188737", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3188703", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -243,7 +243,7 @@ entry:
   %2 = shl nsw i64 %1, 1
   %3 = add i64 %2, 2
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3194121", ptr %0, i64 %4
   ret ptr %5
 }
 

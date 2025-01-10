@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 19 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -12,9 +12,12 @@
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
@@ -28,7 +31,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 11 occurrences:
+; 13 occurrences:
 ; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
@@ -36,6 +39,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

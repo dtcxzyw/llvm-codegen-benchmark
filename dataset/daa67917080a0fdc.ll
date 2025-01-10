@@ -31,7 +31,7 @@ entry:
   ret i1 %6
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
 ; cpython/optimized/mpdecimal.ll
@@ -39,7 +39,6 @@ entry:
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; freetype/optimized/psaux.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/class.cpp.ll

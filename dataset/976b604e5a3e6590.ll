@@ -176,10 +176,11 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; boost/optimized/to_chars.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll

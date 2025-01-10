@@ -70,9 +70,8 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; libpng/optimized/pngrtran.c.ll
-; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/scsi_common.ll
 ; opencv/optimized/fast.cpp.ll

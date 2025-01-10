@@ -9,6 +9,12 @@ func00000000000000e1:                   # @func00000000000000e1
 	orl	%edi, %esi
 	sete	%al
 	retq
+func0000000000000024:                   # @func0000000000000024
+	shll	$8, %esi
+	orl	%edi, %esi
+	cmpl	$128, %esi
+	setb	%al
+	retq
 func00000000000000ec:                   # @func00000000000000ec
 	shll	$8, %esi
 	orl	%edi, %esi
@@ -147,12 +153,6 @@ func00000000000000b8:                   # @func00000000000000b8
 	orl	%edi, %esi
 	cmpl	$2, %esi
 	setae	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	shll	$8, %esi
-	orl	%edi, %esi
-	cmpl	$128, %esi
-	setb	%al
 	retq
 func0000000000000026:                   # @func0000000000000026
 	shll	$6, %esi

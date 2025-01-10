@@ -1,15 +1,15 @@
 
-%"struct.mold::elf::ElfShdr.570.2636431" = type { %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432" }
-%"class.mold::BigEndian.2636432" = type { [4 x i8] }
-%"struct.OpenImageIO_v2_6_0::PSDInput::ChannelInfo.3089153" = type { i32, i16, i64, i64, i16, %"class.std::vector.68.3089154", %"class.std::vector.73.3089155" }
-%"class.std::vector.68.3089154" = type { %"struct.std::_Vector_base.69.3089156" }
-%"struct.std::_Vector_base.69.3089156" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3089157" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3089157" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3089158" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3089158" = type { ptr, ptr, ptr }
-%"class.std::vector.73.3089155" = type { %"struct.std::_Vector_base.74.3089159" }
-%"struct.std::_Vector_base.74.3089159" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.3089160" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.3089160" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.3089161" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.3089161" = type { ptr, ptr, ptr }
+%"struct.mold::elf::ElfShdr.570.2636398" = type { %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399" }
+%"class.mold::BigEndian.2636399" = type { [4 x i8] }
+%"struct.OpenImageIO_v2_6_0::PSDInput::ChannelInfo.3089119" = type { i32, i16, i64, i64, i16, %"class.std::vector.68.3089120", %"class.std::vector.73.3089121" }
+%"class.std::vector.68.3089120" = type { %"struct.std::_Vector_base.69.3089122" }
+%"struct.std::_Vector_base.69.3089122" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3089123" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3089123" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3089124" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3089124" = type { ptr, ptr, ptr }
+%"class.std::vector.73.3089121" = type { %"struct.std::_Vector_base.74.3089125" }
+%"struct.std::_Vector_base.74.3089125" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.3089126" }
+%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.3089126" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.3089127" }
+%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.3089127" = type { ptr, ptr, ptr }
 
 ; 26 occurrences:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
@@ -43,7 +43,7 @@ define i1 @func0000000000000161(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = tail call noundef i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636431", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636398", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -59,7 +59,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = call i16 @llvm.bswap.i16(i16 %2)
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OpenImageIO_v2_6_0::PSDInput::ChannelInfo.3089153", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OpenImageIO_v2_6_0::PSDInput::ChannelInfo.3089119", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

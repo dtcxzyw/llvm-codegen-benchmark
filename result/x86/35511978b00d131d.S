@@ -75,3 +75,10 @@ func0000000000000029:                   # @func0000000000000029
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	subq	%rdx, %rsi
+	cmovaeq	%rsi, %rax
+	cmpq	%rdi, %rax
+	setae	%al
+	retq

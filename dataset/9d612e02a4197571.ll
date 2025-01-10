@@ -1,17 +1,15 @@
 
-; 16 occurrences:
+; 14 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
-; libjpeg-turbo/optimized/jdmarker.c.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ialloc.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/TargetPassConfig.cpp.ll
-; openjdk/optimized/jdmarker.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll

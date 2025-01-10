@@ -15,10 +15,6 @@ func00000000000000f3:                   # @func00000000000000f3
 	leaq	(%rdi,%rsi,2), %rax
 	leaq	4(%rax,%rdx,4), %rax
 	retq
-func00000000000000f0:                   # @func00000000000000f0
-	addq	%rsi, %rdi
-	leaq	64(%rdi,%rdx,2), %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rdi
 	leaq	-8(%rdi,%rdx,8), %rax
@@ -32,6 +28,11 @@ func0000000000000070:                   # @func0000000000000070
 	shlq	$4, %rdx
 	addq	%rsi, %rdi
 	leaq	-16(%rdx,%rdi), %rax
+	retq
+func00000000000000f0:                   # @func00000000000000f0
+	shlq	$7, %rdx
+	addq	%rsi, %rdi
+	leaq	128(%rdx,%rdi), %rax
 	retq
 func000000000000001a:                   # @func000000000000001a
 	shlq	$5, %rdx

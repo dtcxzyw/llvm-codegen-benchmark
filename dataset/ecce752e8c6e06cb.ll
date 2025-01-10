@@ -1,5 +1,5 @@
 
-%"class.std::complex.2845632" = type { { double, double } }
+%"class.std::complex.2845598" = type { { double, double } }
 
 ; 1 occurrences:
 ; quantlib/optimized/garch.ll
@@ -9,7 +9,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = and i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr %"class.std::complex.2845632", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr %"class.std::complex.2845598", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 

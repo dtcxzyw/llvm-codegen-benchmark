@@ -5,13 +5,6 @@ func00000000000003ff:                   // @func00000000000003ff
 	add	x0, x8, #352
 	ret
                                         // -- End function
-func00000000000003d5:                   // @func00000000000003d5
-// %bb.0:                               // %entry
-	add	x8, x0, x2, lsl #3
-	add	x8, x8, x1, lsl #3
-	add	x0, x8, #760
-	ret
-                                        // -- End function
 func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
 	add	x8, x0, x2, lsl #3

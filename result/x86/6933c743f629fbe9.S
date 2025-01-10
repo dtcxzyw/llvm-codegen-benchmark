@@ -27,15 +27,6 @@ func00000000000002d8:                   # @func00000000000002d8
 	setge	%al
 	orb	%dl, %al
 	retq
-func0000000000000302:                   # @func0000000000000302
-	movabsq	$9223372036854775792, %rax      # imm = 0x7FFFFFFFFFFFFFF0
-	andq	%rdx, %rax
-	cmpq	$16, %rax
-	sete	%cl
-	cmpl	%esi, %edi
-	setne	%al
-	orb	%cl, %al
-	retq
 func0000000000000142:                   # @func0000000000000142
 	andl	$7, %edx
 	cmpl	$2, %edx
@@ -58,6 +49,13 @@ func00000000000002c2:                   # @func00000000000002c2
 	sete	%cl
 	cmpl	%esi, %edi
 	setge	%al
+	orb	%cl, %al
+	retq
+func0000000000000302:                   # @func0000000000000302
+	btq	$32, %rdx
+	setae	%cl
+	cmpl	%esi, %edi
+	setne	%al
 	orb	%cl, %al
 	retq
 func0000000000000242:                   # @func0000000000000242

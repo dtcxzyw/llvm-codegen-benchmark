@@ -43,7 +43,7 @@ func000000000000002c:                   // @func000000000000002c
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
 	cmp	w2, #0
-	ccmp	w1, #0, #4, ne
+	ccmp	w1, #1, #4, ne
 	cset	w8, gt
 	and	w0, w8, w0
 	ret

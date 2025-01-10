@@ -283,12 +283,12 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0) #0 {
+define i64 @func000000000000001b(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 3
   %2 = and i32 %1, 1020
   %3 = add nsw i32 %2, -2
-  %4 = zext i32 %3 to i64
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

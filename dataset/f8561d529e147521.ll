@@ -2581,7 +2581,7 @@ entry:
   ret i1 %4
 }
 
-; 856 occurrences:
+; 855 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
@@ -2883,7 +2883,6 @@ entry:
 ; linux/optimized/aio.ll
 ; linux/optimized/base.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/crash_core.ll
@@ -4314,9 +4313,8 @@ entry:
   ret i1 %4
 }
 
-; 596 occurrences:
+; 595 occurrences:
 ; abc/optimized/abcRestruct.c.ll
-; abc/optimized/cuddApa.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/sbdCut2.c.ll

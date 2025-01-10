@@ -335,7 +335,7 @@ entry:
   ret i8 %3
 }
 
-; 112 occurrences:
+; 111 occurrences:
 ; boost/optimized/bind_stdin.ll
 ; boost/optimized/pipe.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -366,7 +366,6 @@ entry:
 ; hermes/optimized/Path.cpp.ll
 ; hyperscan/optimized/compiler.cpp.ll
 ; icu/optimized/rematch.ll
-; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/80003es2lan.ll

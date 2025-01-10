@@ -1,5 +1,5 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
 
 ; 447 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -454,7 +454,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %3
   ret ptr %4
 }
 

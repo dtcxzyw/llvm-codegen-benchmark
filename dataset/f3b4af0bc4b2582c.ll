@@ -328,23 +328,6 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
-; brotli/optimized/backward_references.c.ll
-; brotli/optimized/backward_references_hq.c.ll
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/encode.c.ll
-; freetype/optimized/ftbase.c.ll
-; freetype/optimized/ftbbox.c.ll
-; lvgl/optimized/lv_tlsf.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i32 %0) #0 {
-entry:
-  %1 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %0, i1 true)
-  %2 = sub nsw i32 26, %1
-  %3 = zext nneg i32 %2 to i64
-  ret i64 %3
-}
-
 ; 15 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
@@ -434,6 +417,22 @@ entry:
   %1 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %0, i1 true)
   %2 = sub nsw i32 30, %1
   %3 = zext i32 %2 to i64
+  ret i64 %3
+}
+
+; 6 occurrences:
+; brotli/optimized/backward_references.c.ll
+; brotli/optimized/backward_references_hq.c.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/encode.c.ll
+; freetype/optimized/ftbase.c.ll
+; freetype/optimized/ftbbox.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i32 %0) #0 {
+entry:
+  %1 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %0, i1 true)
+  %2 = sub nsw i32 30, %1
+  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

@@ -1,8 +1,8 @@
 
-%struct.hb_glyph_info_t.2742027 = type { i32, i32, i32, %union._hb_var_int_t.2742028, %union._hb_var_int_t.2742028 }
-%union._hb_var_int_t.2742028 = type { i32 }
+%struct.hb_glyph_info_t.2741993 = type { i32, i32, i32, %union._hb_var_int_t.2741994, %union._hb_var_int_t.2741994 }
+%union._hb_var_int_t.2741994 = type { i32 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/chmd.c.ll
@@ -24,7 +24,6 @@
 ; gromacs/optimized/inflate.c.ll
 ; hdf5/optimized/H5Zshuffle.c.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; libquic/optimized/inflate.c.ll
@@ -164,8 +163,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2742027, ptr %0, i64 %5
-  %7 = getelementptr nusw %struct.hb_glyph_info_t.2742027, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2741993, ptr %0, i64 %5
+  %7 = getelementptr nusw %struct.hb_glyph_info_t.2741993, ptr %6, i64 %4
   ret ptr %7
 }
 

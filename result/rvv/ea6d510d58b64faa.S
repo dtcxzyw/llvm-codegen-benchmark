@@ -207,10 +207,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	vadd.vi	v8, v8, 1
 	vmsgtu.vi	v0, v8, 1
 	ret
-func00000000000001aa:                   # @func00000000000001aa
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vv	v0, v8, v10
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v10, v8

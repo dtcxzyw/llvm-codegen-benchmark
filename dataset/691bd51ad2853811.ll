@@ -1,9 +1,9 @@
 
-%"struct.folly::HugePageSize.2686054" = type { i64, %"class.boost::filesystem::path.2685977", i64 }
-%"class.boost::filesystem::path.2685977" = type { %"class.std::__cxx11::basic_string.2685919" }
-%"class.std::__cxx11::basic_string.2685919" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2685920", i64, %union.anon.2685921 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2685920" = type { ptr }
-%union.anon.2685921 = type { i64, [8 x i8] }
+%"struct.folly::HugePageSize.2686021" = type { i64, %"class.boost::filesystem::path.2685944", i64 }
+%"class.boost::filesystem::path.2685944" = type { %"class.std::__cxx11::basic_string.2685886" }
+%"class.std::__cxx11::basic_string.2685886" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2685887", i64, %union.anon.2685888 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2685887" = type { ptr }
+%union.anon.2685888 = type { i64, [8 x i8] }
 
 ; 13 occurrences:
 ; boost/optimized/get_turns_areal_areal.ll
@@ -24,7 +24,7 @@ define i1 @func0000000000000761(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr %"struct.folly::HugePageSize.2686054", ptr %1, i64 %4, i32 1, i32 0, i32 2
+  %5 = getelementptr %"struct.folly::HugePageSize.2686021", ptr %1, i64 %4, i32 1, i32 0, i32 2
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

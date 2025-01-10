@@ -1,22 +1,8 @@
 
-%"struct.mold::elf::ElfSym.2638306" = type { %"class.mold::LittleEndian.2638307", %"class.mold::LittleEndian.2638307", %"class.mold::LittleEndian.2638307", i16, %"class.mold::LittleEndian.320.2638308" }
-%"class.mold::LittleEndian.2638307" = type { [4 x i8] }
-%"class.mold::LittleEndian.320.2638308" = type { [2 x i8] }
-%"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165834" = type { i64, i64, i64, i8, double, i64, i64, i64, i64 }
-
-; 4 occurrences:
-; postgres/optimized/gram.ll
-; postgres/optimized/pl_gram.ll
-; postgres/optimized/preproc.ll
-; ruby/optimized/parse.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i16, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 2
-  %5 = icmp ugt ptr %0, %4
-  ret i1 %5
-}
+%"struct.mold::elf::ElfSym.2638273" = type { %"class.mold::LittleEndian.2638274", %"class.mold::LittleEndian.2638274", %"class.mold::LittleEndian.2638274", i16, %"class.mold::LittleEndian.320.2638275" }
+%"class.mold::LittleEndian.2638274" = type { [4 x i8] }
+%"class.mold::LittleEndian.320.2638275" = type { [2 x i8] }
+%"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800" = type { i64, i64, i64, i8, double, i64, i64, i64, i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
@@ -1108,7 +1094,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.mold::elf::ElfSym.2638306", ptr %1, i64 %2
+  %3 = getelementptr %"struct.mold::elf::ElfSym.2638273", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -1416,7 +1402,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165834", ptr %1, i64 %2
+  %3 = getelementptr %"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 288
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -1446,15 +1432,9 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 2 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/dm-ioctl.ll
-; postgres/optimized/bootparse.ll
-; postgres/optimized/exprparse.ll
-; postgres/optimized/jsonpath_gram.ll
-; postgres/optimized/repl_gram.ll
-; postgres/optimized/specparse.ll
-; postgres/optimized/syncrep_gram.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:

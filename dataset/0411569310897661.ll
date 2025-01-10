@@ -1,6 +1,6 @@
 
-%struct.hart_debug_state_t.2901908 = type { i8, i8, i8, i8 }
-%struct.RoseLongLitHashEntry.3856800 = type { i32, i32 }
+%struct.hart_debug_state_t.2901874 = type { i8, i8, i8, i8 }
+%struct.RoseLongLitHashEntry.3856750 = type { i32, i32 }
 
 ; 15 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
@@ -78,7 +78,7 @@ entry:
   %3 = shl nuw i32 1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 1, i64 %4
-  %6 = getelementptr %struct.hart_debug_state_t.2901908, ptr %0, i64 %5
+  %6 = getelementptr %struct.hart_debug_state_t.2901874, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = shl i32 2, %2
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 2, i64 %4
-  %6 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3856800, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3856750, ptr %0, i64 %5
   ret ptr %6
 }
 

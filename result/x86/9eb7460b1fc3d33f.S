@@ -16,12 +16,6 @@ func0000000000000082:                   # @func0000000000000082
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
-	decl	%edx
-	cmpq	%rdx, %rsi
-	sete	%al
-	orb	%dil, %al
-	retq
 func00000000000001c8:                   # @func00000000000001c8
 	addl	$10, %edx
 	cmpq	%rdx, %rsi
@@ -56,6 +50,12 @@ func00000000000000d8:                   # @func00000000000000d8
 	decl	%edx
 	cmpq	%rdx, %rsi
 	setne	%al
+	orb	%dil, %al
+	retq
+func00000000000000c2:                   # @func00000000000000c2
+	decl	%edx
+	cmpq	%rdx, %rsi
+	sete	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a

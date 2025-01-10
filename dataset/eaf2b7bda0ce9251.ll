@@ -1,5 +1,5 @@
 
-%struct._wsp_pdu_t.3440967 = type { ptr, i32 }
+%struct._wsp_pdu_t.3440933 = type { ptr, i32 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -58,8 +58,8 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct._wsp_pdu_t.3440967, ptr %0, i64 %1
-  %6 = getelementptr %struct._wsp_pdu_t.3440967, ptr %5, i64 %4
+  %5 = getelementptr %struct._wsp_pdu_t.3440933, ptr %0, i64 %1
+  %6 = getelementptr %struct._wsp_pdu_t.3440933, ptr %5, i64 %4
   ret ptr %6
 }
 

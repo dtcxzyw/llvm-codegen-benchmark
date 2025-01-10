@@ -16,7 +16,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 13 occurrences:
+; 15 occurrences:
 ; boost/optimized/async.ll
 ; boost/optimized/async_fut.ll
 ; boost/optimized/async_pipe.ll
@@ -28,6 +28,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/system_test1.ll
 ; boost/optimized/system_test2.ll
 ; git/optimized/object-file.ll
+; git/optimized/remote-curl.ll
+; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/hdrinput.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind

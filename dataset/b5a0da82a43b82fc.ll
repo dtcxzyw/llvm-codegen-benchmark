@@ -1,6 +1,6 @@
 
-%class.QString.3440839 = type { %struct.QArrayDataPointer.0.3440840 }
-%struct.QArrayDataPointer.0.3440840 = type { ptr, ptr, i64 }
+%class.QString.3440805 = type { %struct.QArrayDataPointer.0.3440806 }
+%struct.QArrayDataPointer.0.3440806 = type { ptr, ptr, i64 }
 
 ; 2 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -143,7 +143,7 @@ entry:
 define ptr @func0000000000000006(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %.v = call i64 @llvm.smax.i64(i64 %0, i64 %1)
-  %3 = getelementptr %class.QString.3440839, ptr %2, i64 %.v
+  %3 = getelementptr %class.QString.3440805, ptr %2, i64 %.v
   ret ptr %3
 }
 

@@ -279,7 +279,7 @@ entry:
   ret i1 %2
 }
 
-; 132 occurrences:
+; 127 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -317,7 +317,6 @@ entry:
 ; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/tethering.c.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkMap.cpp.ll
@@ -356,7 +355,6 @@ entry:
 ; linux/optimized/inflate.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/intel_renderstate.ll
-; linux/optimized/io_uring.ll
 ; linux/optimized/numa.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/trans_virtio.ll
@@ -371,8 +369,6 @@ entry:
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
-; lvgl/optimized/lv_style.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
@@ -388,7 +384,6 @@ entry:
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; quantlib/optimized/sobolrsg.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
@@ -1758,74 +1753,6 @@ entry:
   ret i1 %3
 }
 
-; 61 occurrences:
-; ceres/optimized/line_search_direction.cc.ll
-; cmake/optimized/archive_read_support_format_tar.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; cpython/optimized/difradix2.ll
-; darktable/optimized/AbstractLJpegDecoder.cpp.ll
-; darktable/optimized/Cr2LJpegDecoder.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/DngOpcodes.cpp.ll
-; darktable/optimized/LJpegDecoder.cpp.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/PentaxDecompressor.cpp.ll
-; darktable/optimized/TableLookUp.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
-; folly/optimized/IOBuf.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; nghttp2/optimized/deflate.c.ll
-; openjdk/optimized/ostream.ll
-; pbrt-v4/optimized/parser.cpp.ll
-; proxygen/optimized/Logging.cpp.ll
-; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
-; zed-rs/optimized/0pbj35jdb0n0bb6blyk493qkr.ll
-; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
-; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
-; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
-; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
-; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
-; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
-; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
-; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
-; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
-; zed-rs/optimized/3p631vu9oxnxxo7ycky8j4ebp.ll
-; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
-; zed-rs/optimized/54arwywyn44uhdmfvofjwixkx.ll
-; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
-; zed-rs/optimized/5bbqzb8q5kgxioclo37bxny1o.ll
-; zed-rs/optimized/5uzqbdqe1c2211uhbr477llbz.ll
-; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
-; zed-rs/optimized/7upr0o9ppxwcohq9brd8pyu8y.ll
-; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
-; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
-; zed-rs/optimized/8wv9z8bsh382qkns7z2j1g5g5.ll
-; zed-rs/optimized/95avnjj492qn9kfp6atrvkp2o.ll
-; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
-; zed-rs/optimized/axxbjhn7tbipaimusvotj6onb.ll
-; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
-; zed-rs/optimized/bpfch6rcllnvcfn46n7uygw1d.ll
-; zed-rs/optimized/cxppv5uyg2fe82gyndrbhshb4.ll
-; zed-rs/optimized/d5b8zvtgw734y7w1gjv52oafa.ll
-; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
-; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
-; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
-; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
-entry:
-  ret i1 false
-}
-
 ; 265 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -2117,20 +2044,13 @@ entry:
   ret i1 %3
 }
 
-; 15 occurrences:
+; 8 occurrences:
 ; cmake/optimized/huf_compress.c.ll
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
 ; linux/optimized/ipmr.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; nix/optimized/terminal.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; raylib/optimized/raudio.c.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; slurm/optimized/bitstring.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
@@ -2175,6 +2095,45 @@ entry:
   %2 = and i64 %1, -1048576
   %3 = icmp ugt i64 %2, 268435456
   ret i1 %3
+}
+
+; 30 occurrences:
+; ceres/optimized/line_search_direction.cc.ll
+; cmake/optimized/archive_read_support_format_tar.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cpython/optimized/difradix2.ll
+; darktable/optimized/AbstractLJpegDecoder.cpp.ll
+; darktable/optimized/Cr2LJpegDecoder.cpp.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; darktable/optimized/DngOpcodes.cpp.ll
+; darktable/optimized/LJpegDecoder.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PentaxDecompressor.cpp.ll
+; darktable/optimized/TableLookUp.cpp.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; nghttp2/optimized/deflate.c.ll
+; openjdk/optimized/ostream.ll
+; pbrt-v4/optimized/parser.cpp.ll
+; proxygen/optimized/Logging.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 15
+  %2 = icmp eq i64 %1, 15
+  ret i1 %2
 }
 
 ; 4 occurrences:

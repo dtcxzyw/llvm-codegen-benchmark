@@ -1,5 +1,5 @@
 
-%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
+%struct.FreePageBtreeLeafKey.3653901 = type { i64, i64 }
 
 ; 3 occurrences:
 ; darktable/optimized/introspection_liquify.c.ll
@@ -20,7 +20,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653901], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %3, null
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

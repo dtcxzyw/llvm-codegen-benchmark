@@ -1,5 +1,5 @@
 
-; 520 occurrences:
+; 521 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -372,6 +372,7 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgsource.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
@@ -1854,15 +1855,13 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/IndexNSG.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; libwebp/optimized/picture_enc.c.ll
 ; lightgbm/optimized/boosting.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:

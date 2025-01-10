@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2901378" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379", i64, %union.anon.2901380 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379" = type { ptr }
-%union.anon.2901380 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2901344" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901345", i64, %union.anon.2901346 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901345" = type { ptr }
+%union.anon.2901346 = type { i64, [8 x i8] }
 
 ; 2 occurrences:
 ; cmake/optimized/mprintf.c.ll
@@ -55,7 +55,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.usub.sat.i64(i64 %1, i64 %2)
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2901378", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2901344", ptr %0, i64 %3
   ret ptr %4
 }
 

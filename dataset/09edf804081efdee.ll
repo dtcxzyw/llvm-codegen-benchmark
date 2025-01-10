@@ -1,5 +1,5 @@
 
-; 507 occurrences:
+; 506 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ioReadPla.c.ll
@@ -139,7 +139,6 @@
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

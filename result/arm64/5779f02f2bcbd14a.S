@@ -53,10 +53,10 @@ func0000000000000005:                   // @func0000000000000005
 	madd	x0, x8, x9, x10
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	x8, x2, x2, lsr #63
-	add	x9, x0, x1
+	add	x8, x0, x0, lsr #63
+	add	x9, x1, x2
 	add	x0, x9, x8, asr #1
 	ret
                                         // -- End function
@@ -90,11 +90,12 @@ func0000000000000014:                   // @func0000000000000014
 	madd	x0, x8, x9, x10
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	add	x8, x0, x0, lsr #63
-	add	x9, x1, x2
-	add	x0, x9, x8, asr #1
+	asr	x8, x0, #3
+	mov	x9, #6148914691236517205        // =0x5555555555555555
+	add	x10, x1, x2
+	madd	x0, x8, x9, x10
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011

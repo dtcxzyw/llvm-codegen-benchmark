@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/textnorm.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/fatent.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/PrecompiledPreamble.cpp.ll

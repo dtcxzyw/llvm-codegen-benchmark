@@ -28,8 +28,3 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	16(%rdx), %eax
-	testb	$1, %dil
-	cmovnel	%esi, %eax
-	retq

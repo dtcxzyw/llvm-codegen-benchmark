@@ -84,13 +84,6 @@ func0000000000000688:                   // @func0000000000000688
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000554:                   // @func0000000000000554
-// %bb.0:                               // %entry
-	cmp	x0, w2, uxtw
-	ccmp	w1, #0, #4, lo
-	cset	w0, gt
-	ret
-                                        // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	cmp	x0, w2, uxtw
@@ -124,6 +117,13 @@ func0000000000000021:                   // @func0000000000000021
 	cmp	x0, w2, uxtw
 	ccmp	w1, #1, #0, eq
 	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000554:                   // @func0000000000000554
+// %bb.0:                               // %entry
+	cmp	x0, w2, uxtw
+	ccmp	w1, #0, #4, lo
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000088:                   // @func0000000000000088

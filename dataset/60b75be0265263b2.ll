@@ -128,9 +128,8 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaFanout.c.ll
-; abc/optimized/giaMf.c.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; llvm/optimized/HotColdSplitting.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll

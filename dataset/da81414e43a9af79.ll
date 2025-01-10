@@ -1,18 +1,18 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"struct.std::pair.2749024" = type { i32, i32 }
-%struct._zval_struct.2792825 = type { %union._zend_value.2792826, %union.anon.2792827, %union.anon.2.2792828 }
-%union._zend_value.2792826 = type { i64 }
-%union.anon.2792827 = type { i32 }
-%union.anon.2.2792828 = type { i32 }
-%class.QPointF.3450967 = type { double, double }
-%"class.cv::Point_.3747481" = type { float, float }
-%"class.eastl::tuple.62.3895347" = type { %"struct.eastl::Internal::TupleImpl.63.3895348" }
-%"struct.eastl::Internal::TupleImpl.63.3895348" = type { %"class.eastl::Internal::TupleLeaf.28.3895349", %"class.eastl::Internal::TupleLeaf.64.3895350" }
-%"class.eastl::Internal::TupleLeaf.28.3895349" = type { i64 }
-%"class.eastl::Internal::TupleLeaf.64.3895350" = type { %struct.PaddingStruct.3895351 }
-%struct.PaddingStruct.3895351 = type { [56 x i8] }
-%"struct.(anonymous namespace)::ValuePair.3898876" = type { i32, i32 }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"struct.std::pair.2748990" = type { i32, i32 }
+%struct._zval_struct.2792791 = type { %union._zend_value.2792792, %union.anon.2792793, %union.anon.2.2792794 }
+%union._zend_value.2792792 = type { i64 }
+%union.anon.2792793 = type { i32 }
+%union.anon.2.2792794 = type { i32 }
+%class.QPointF.3450933 = type { double, double }
+%"class.cv::Point_.3747431" = type { float, float }
+%"class.eastl::tuple.62.3895297" = type { %"struct.eastl::Internal::TupleImpl.63.3895298" }
+%"struct.eastl::Internal::TupleImpl.63.3895298" = type { %"class.eastl::Internal::TupleLeaf.28.3895299", %"class.eastl::Internal::TupleLeaf.64.3895300" }
+%"class.eastl::Internal::TupleLeaf.28.3895299" = type { i64 }
+%"class.eastl::Internal::TupleLeaf.64.3895300" = type { %struct.PaddingStruct.3895301 }
+%struct.PaddingStruct.3895301 = type { [56 x i8] }
+%"struct.(anonymous namespace)::ValuePair.3898826" = type { i32, i32 }
 
 ; 3 occurrences:
 ; linux/optimized/memblock.ll
@@ -23,7 +23,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -68,7 +68,7 @@ define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = ashr exact i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2749024", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.2748990", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -84,7 +84,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 21474836480
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct._zval_struct.2792825, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct._zval_struct.2792791, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -143,7 +143,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %class.QPointF.3450967, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.QPointF.3450933, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -154,7 +154,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -8589934592
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"class.cv::Point_.3747481", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3747431", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -183,7 +183,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1
-  %4 = getelementptr %"class.eastl::tuple.62.3895347", ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %"class.eastl::tuple.62.3895297", ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
@@ -194,7 +194,7 @@ define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1
-  %4 = getelementptr %"struct.(anonymous namespace)::ValuePair.3898876", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.(anonymous namespace)::ValuePair.3898826", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

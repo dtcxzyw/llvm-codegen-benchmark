@@ -1,5 +1,5 @@
 
-; 437 occurrences:
+; 439 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -51,6 +51,7 @@
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/glTFCommon.cpp.ll
+; boost/optimized/area.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/clamdtop.c.ll
 ; clamav/optimized/clamfi.c.ll
@@ -125,6 +126,7 @@
 ; icu/optimized/ctest.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/ucnv_ext.ll
+; icu/optimized/ucnv_lmb.ll
 ; icu/optimized/ucnvbocu.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/uscanf_p.ll
@@ -626,16 +628,11 @@ entry:
   ret ptr %3
 }
 
-; 21 occurrences:
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/ifDec16.c.ll
-; boost/optimized/area.ll
+; 14 occurrences:
 ; boost/optimized/basic_text_oprimitive.ll
 ; boost/optimized/basic_text_woprimitive.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
-; fmt/optimized/format-impl-test.cc.ll
-; icu/optimized/ucnv_lmb.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -646,8 +643,6 @@ entry:
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; openusd/optimized/decodemv.c.ll
-; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:

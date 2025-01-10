@@ -1,10 +1,10 @@
 
-%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
-%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
-%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
-%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
+%"class.std::function.2636116" = type { %"class.std::_Function_base.2636117", ptr }
+%"class.std::_Function_base.2636117" = type { %"union.std::_Any_data.2636118", ptr }
+%"union.std::_Any_data.2636118" = type { %"union.std::_Nocopy_types.2636119" }
+%"union.std::_Nocopy_types.2636119" = type { { i64, i64 } }
 
-; 110 occurrences:
+; 112 occurrences:
 ; gromacs/optimized/force.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
@@ -115,6 +115,8 @@
 ; openjdk/optimized/zVerify.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -177,15 +179,14 @@ entry:
 define ptr @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.std::function.2636149", ptr %3, i64 %1
-  %5 = getelementptr nusw %"class.std::function.2636149", ptr %4, i64 %0
+  %4 = getelementptr nusw %"class.std::function.2636116", ptr %3, i64 %1
+  %5 = getelementptr nusw %"class.std::function.2636116", ptr %4, i64 %0
   ret ptr %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind

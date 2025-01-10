@@ -1,5 +1,5 @@
 
-; 1436 occurrences:
+; 1459 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcLutmin.c.ll
@@ -194,7 +194,30 @@
 ; boost/optimized/within_pointlike_geometry.ll
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
+; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/pdfng.c.ll

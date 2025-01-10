@@ -26,7 +26,7 @@ func0000000000000009:                   # @func0000000000000009
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 255
 	slli	a1, a1, 1
 	andi	a0, a0, -7
@@ -38,9 +38,11 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 255
-	slli	a1, a1, 2
-	andi	a0, a0, -5
+	lui	a2, 1048568
+	slli	a1, a1, 17
+	addiw	a2, a2, -1
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

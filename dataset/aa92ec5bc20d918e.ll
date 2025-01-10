@@ -1,5 +1,5 @@
 
-; 671 occurrences:
+; 672 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApprox.c.ll
@@ -426,6 +426,7 @@
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/1n6t6n716s6vtscg.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/1x0y9zi6lpw009zm.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll

@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -70,7 +70,6 @@
 ; php/optimized/parse_date.ll
 ; php/optimized/zend_language_scanner.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
-; postgres/optimized/formatting.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/tab-complete.ll
 ; proj/optimized/metadata.cpp.ll
@@ -117,7 +116,7 @@ entry:
   ret i1 %3
 }
 
-; 881 occurrences:
+; 882 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -774,6 +773,7 @@ entry:
 ; rocksdb/optimized/option_change_migration.cc.ll
 ; ruby/optimized/pack.ll
 ; ruby/optimized/parser_st.ll
+; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/st.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll

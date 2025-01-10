@@ -1,5 +1,5 @@
 
-; 9044 occurrences:
+; 9047 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -93,6 +93,7 @@
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauEnum.c.ll
 ; abc/optimized/dauMerge.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/decompress.c.ll
@@ -1592,6 +1593,7 @@
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; gromacs/optimized/deflate.c.ll
+; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/dlaev2.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
@@ -1898,6 +1900,7 @@
 ; hyperscan/optimized/ng_corpus_properties.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll

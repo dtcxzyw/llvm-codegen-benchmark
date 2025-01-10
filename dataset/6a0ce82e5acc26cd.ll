@@ -117,7 +117,7 @@ entry:
   ret i1 %3
 }
 
-; 280 occurrences:
+; 281 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -344,6 +344,7 @@ entry:
 ; php/optimized/mem.ll
 ; php/optimized/optimize_func_calls.ll
 ; php/optimized/optimize_temp_vars_5.ll
+; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/scdf.ll
 ; php/optimized/tar.ll
 ; php/optimized/zend_API.ll

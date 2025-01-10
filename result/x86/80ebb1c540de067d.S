@@ -14,3 +14,7 @@ func0000000000000006:                   # @func0000000000000006
 	shrq	$63, %rax
 	xorq	$3, %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	shrq	$63, %rdi
+	leaq	8(,%rdi,8), %rax
+	retq

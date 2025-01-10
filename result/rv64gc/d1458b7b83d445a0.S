@@ -32,14 +32,6 @@ func0000000000000146:                   # @func0000000000000146
 	srli	a1, a1, 48
 	slt	a0, a0, a1
 	ret
-func0000000000000106:                   # @func0000000000000106
-	sext.w	a0, a0
-	slli	a2, a2, 8
-	or	a1, a1, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slt	a0, a0, a1
-	ret
 func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	slli	a2, a2, 8

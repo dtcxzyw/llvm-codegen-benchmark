@@ -41,7 +41,11 @@ entry:
   ret i32 %1
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/sbdCut.c.ll
 ; php/optimized/util.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i64 %0) #0 {

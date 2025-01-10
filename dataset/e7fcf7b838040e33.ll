@@ -1,5 +1,5 @@
 
-%struct.i915_engine_class_instance.3538708 = type { i16, i16 }
+%struct.i915_engine_class_instance.3538674 = type { i16, i16 }
 
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
@@ -13,16 +13,59 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 45 occurrences:
+; cvc5/optimized/alethe_post_processor.cpp.ll
+; cvc5/optimized/alf_node_converter.cpp.ll
+; cvc5/optimized/base_solver.cpp.ll
+; cvc5/optimized/bool_to_bv.cpp.ll
+; cvc5/optimized/ce_guided_single_inv.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; cvc5/optimized/cvc5.cpp.ll
+; cvc5/optimized/dtype_cons.cpp.ll
+; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/first_order_model_fmc.cpp.ll
+; cvc5/optimized/full_model_check.cpp.ll
+; cvc5/optimized/fun_def_fmf.cpp.ll
+; cvc5/optimized/inst_match.cpp.ll
+; cvc5/optimized/inst_match_generator.cpp.ll
+; cvc5/optimized/inst_match_generator_simple.cpp.ll
+; cvc5/optimized/inst_strategy_pool.cpp.ll
+; cvc5/optimized/instantiate.cpp.ll
+; cvc5/optimized/justification_strategy.cpp.ll
+; cvc5/optimized/lfsc_post_processor.cpp.ll
+; cvc5/optimized/node_traversal.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; cvc5/optimized/quant_rep_bound_ext.cpp.ll
+; cvc5/optimized/quantifiers_registry.cpp.ll
+; cvc5/optimized/quantifiers_rewriter.cpp.ll
+; cvc5/optimized/regexp_operation.cpp.ll
+; cvc5/optimized/relevant_domain.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
+; cvc5/optimized/smt2_printer.cpp.ll
+; cvc5/optimized/sygus_eval_unfold.cpp.ll
+; cvc5/optimized/sygus_inst.cpp.ll
+; cvc5/optimized/sygus_process_conj.cpp.ll
+; cvc5/optimized/synth_conjecture.cpp.ll
+; cvc5/optimized/term_context_node.cpp.ll
+; cvc5/optimized/term_context_stack.cpp.ll
+; cvc5/optimized/term_tuple_enumerator.cpp.ll
+; cvc5/optimized/theory_fp_rewriter.cpp.ll
+; cvc5/optimized/theory_fp_type_rules.cpp.ll
+; cvc5/optimized/theory_model.cpp.ll
+; cvc5/optimized/theory_sets_rewriter.cpp.ll
+; cvc5/optimized/theory_sets_type_rules.cpp.ll
+; cvc5/optimized/theory_uf_type_rules.cpp.ll
+; cvc5/optimized/type_checker.cpp.ll
+; cvc5/optimized/type_node.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw nuw [20 x double], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [20 x double], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -41,7 +84,7 @@ entry:
   ret ptr %6
 }
 
-; 79 occurrences:
+; 80 occurrences:
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/arith_poly_norm.cpp.ll
@@ -120,6 +163,7 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
+; openblas/optimized/dpbtrf.c.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
@@ -139,61 +183,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr [0 x %struct.i915_engine_class_instance.3538708], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 43 occurrences:
-; cvc5/optimized/alethe_post_processor.cpp.ll
-; cvc5/optimized/alf_node_converter.cpp.ll
-; cvc5/optimized/base_solver.cpp.ll
-; cvc5/optimized/bool_to_bv.cpp.ll
-; cvc5/optimized/ce_guided_single_inv.cpp.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/cvc5.cpp.ll
-; cvc5/optimized/dtype_cons.cpp.ll
-; cvc5/optimized/equality_query.cpp.ll
-; cvc5/optimized/first_order_model_fmc.cpp.ll
-; cvc5/optimized/full_model_check.cpp.ll
-; cvc5/optimized/fun_def_fmf.cpp.ll
-; cvc5/optimized/inst_match.cpp.ll
-; cvc5/optimized/inst_match_generator.cpp.ll
-; cvc5/optimized/inst_match_generator_simple.cpp.ll
-; cvc5/optimized/inst_strategy_pool.cpp.ll
-; cvc5/optimized/instantiate.cpp.ll
-; cvc5/optimized/justification_strategy.cpp.ll
-; cvc5/optimized/lfsc_post_processor.cpp.ll
-; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/quant_conflict_find.cpp.ll
-; cvc5/optimized/quant_rep_bound_ext.cpp.ll
-; cvc5/optimized/quantifiers_registry.cpp.ll
-; cvc5/optimized/quantifiers_rewriter.cpp.ll
-; cvc5/optimized/regexp_operation.cpp.ll
-; cvc5/optimized/relevant_domain.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
-; cvc5/optimized/smt2_printer.cpp.ll
-; cvc5/optimized/sygus_eval_unfold.cpp.ll
-; cvc5/optimized/sygus_inst.cpp.ll
-; cvc5/optimized/sygus_process_conj.cpp.ll
-; cvc5/optimized/synth_conjecture.cpp.ll
-; cvc5/optimized/term_context_node.cpp.ll
-; cvc5/optimized/term_context_stack.cpp.ll
-; cvc5/optimized/term_tuple_enumerator.cpp.ll
-; cvc5/optimized/theory_fp_rewriter.cpp.ll
-; cvc5/optimized/theory_fp_type_rules.cpp.ll
-; cvc5/optimized/theory_model.cpp.ll
-; cvc5/optimized/theory_sets_rewriter.cpp.ll
-; cvc5/optimized/theory_sets_type_rules.cpp.ll
-; cvc5/optimized/theory_uf_type_rules.cpp.ll
-; cvc5/optimized/type_checker.cpp.ll
-; cvc5/optimized/type_node.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw [0 x ptr], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [0 x %struct.i915_engine_class_instance.3538674], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -235,18 +225,6 @@ entry:
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
   %6 = getelementptr nusw [0 x ptr], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openblas/optimized/dpbtrf.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000047(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw nuw [1056 x double], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

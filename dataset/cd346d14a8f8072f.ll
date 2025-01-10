@@ -28,29 +28,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
-; abc/optimized/mioUtils.c.ll
-; cpython/optimized/memoryobject.ll
-; darktable/optimized/export.c.ll
-; lua/optimized/ltable.ll
-; lua/optimized/lvm.ll
-; luajit/optimized/lj_api.ll
-; luajit/optimized/lj_api_dyn.ll
-; luau/optimized/Compiler.cpp.ll
-; luau/optimized/lvmexecute.cpp.ll
-; openssl/optimized/params_conversion_test-bin-params_conversion_test.ll
-; quickjs/optimized/quickjs.ll
-; ruby/optimized/complex.ll
-; wasmedge/optimized/engine.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oeq double %0, %1
-  %3 = zext i1 %2 to i32
-  ret i32 %3
-}
-
-; 74 occurrences:
+; 73 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; boost/optimized/buffer_piece_border.ll
@@ -84,7 +62,6 @@ entry:
 ; lightgbm/optimized/sample_strategy.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; lua/optimized/lvm.ll
-; openblas/optimized/dlarre.c.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll
 ; opencv/optimized/downhill_simplex.cpp.ll
@@ -149,6 +126,26 @@ entry:
 define i32 @func0000000000000018(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+; 11 occurrences:
+; abc/optimized/mioUtils.c.ll
+; cpython/optimized/memoryobject.ll
+; darktable/optimized/export.c.ll
+; lua/optimized/lvm.ll
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
+; luau/optimized/Compiler.cpp.ll
+; luau/optimized/lvmexecute.cpp.ll
+; openssl/optimized/params_conversion_test-bin-params_conversion_test.ll
+; quickjs/optimized/quickjs.ll
+; wasmedge/optimized/engine.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(double %0, double %1) #0 {
+entry:
+  %2 = fcmp oeq double %0, %1
   %3 = zext i1 %2 to i32
   ret i32 %3
 }
@@ -242,16 +239,6 @@ entry:
 define i32 @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fcmp ugt double %0, %1
-  %3 = zext i1 %2 to i32
-  ret i32 %3
-}
-
-; 1 occurrences:
-; proj/optimized/gnom.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ult double %0, %1
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

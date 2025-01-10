@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -9,7 +8,6 @@
 ; openjdk/optimized/hb-set.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_prob.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

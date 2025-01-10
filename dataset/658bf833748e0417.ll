@@ -20,12 +20,13 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; lvgl/optimized/lv_style.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/resize.cpp.ll

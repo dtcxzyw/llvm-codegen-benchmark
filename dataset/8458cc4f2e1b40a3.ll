@@ -1,5 +1,5 @@
 
-%struct.hlist_head.3533974 = type { ptr }
+%struct.hlist_head.3533940 = type { ptr }
 
 ; 4 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -23,7 +23,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 7046029254386353131
   %3 = lshr i64 %2, 58
-  %4 = getelementptr [64 x %struct.hlist_head.3533974], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [64 x %struct.hlist_head.3533940], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

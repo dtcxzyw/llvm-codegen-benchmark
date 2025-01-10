@@ -1,5 +1,5 @@
 
-; 371 occurrences:
+; 370 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/saigMiter.c.ll
 ; boost/optimized/to_chars.ll
@@ -86,7 +86,6 @@
 ; linux/optimized/commoncap.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/mprotect.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/xstate.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -458,8 +457,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; libquic/optimized/time.cc.ll
+; 2 occurrences:
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/convertnode.ll
 ; Function Attrs: nounwind

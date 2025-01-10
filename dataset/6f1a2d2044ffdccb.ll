@@ -32,8 +32,7 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; llvm/optimized/ASTDumper.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/Decl.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; redis/optimized/networking.ll

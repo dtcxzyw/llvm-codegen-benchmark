@@ -30,15 +30,4 @@ entry:
   ret i1 %1
 }
 
-; 3 occurrences:
-; cmake/optimized/cmTarget.cxx.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; wireshark/optimized/packet-ieee1722.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000002(i4 %0) #0 {
-entry:
-  %1 = trunc nuw i4 %0 to i1
-  ret i1 %1
-}
-
 attributes #0 = { nounwind }

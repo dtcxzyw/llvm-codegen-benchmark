@@ -1,5 +1,5 @@
 
-; 34664 occurrences:
+; 34663 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -26653,7 +26653,6 @@
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
@@ -34671,7 +34670,7 @@ entry:
   ret i1 %1
 }
 
-; 15407 occurrences:
+; 15405 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCut.c.ll
@@ -43192,7 +43191,6 @@ entry:
 ; openjdk/optimized/InvocationAdapter.ll
 ; openjdk/optimized/JPLISAgent.ll
 ; openjdk/optimized/JavaExceptions.ll
-; openjdk/optimized/LCMS.ll
 ; openjdk/optimized/LinuxDebuggerLocal.ll
 ; openjdk/optimized/MaskBlit.ll
 ; openjdk/optimized/MaskFill.ll
@@ -45037,7 +45035,6 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_convert.ll
 ; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/pdo_dbh.ll

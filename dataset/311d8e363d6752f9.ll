@@ -1,5 +1,5 @@
 
-; 594 occurrences:
+; 606 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
@@ -38,6 +38,7 @@
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/lz_decoder.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
@@ -77,6 +78,7 @@
 ; git/optimized/archive-tar.ll
 ; git/optimized/diffcore-break.ll
 ; git/optimized/ewah_rlw.ll
+; git/optimized/sha256.ll
 ; git/optimized/streaming.ll
 ; hdf5/optimized/H5Dcontig.c.ll
 ; hdf5/optimized/H5Defl.c.ll
@@ -120,21 +122,26 @@
 ; lief/optimized/gcm.c.ll
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/blk-lib.ll
 ; linux/optimized/datagram.ll
+; linux/optimized/devio.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/filter.ll
+; linux/optimized/gup.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/i915_gem.ll
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/initramfs.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/ip6_output.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/lzo1x_compress.ll
@@ -150,6 +157,7 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/scatterlist.ll
+; linux/optimized/scatterwalk.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sparse.ll
 ; linux/optimized/tables.ll
@@ -512,8 +520,10 @@
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/crypt_sha512.ll
 ; php/optimized/shared_alloc_shm.ll
+; php/optimized/softmagic.ll
 ; php/optimized/streams.ll
 ; portaudio/optimized/pa_process.c.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/libpq_source.ll
 ; postgres/optimized/logtape.ll
@@ -569,6 +579,7 @@
 ; ruby/optimized/gc.ll
 ; sentencepiece/optimized/bytestream.cc.ll
 ; sentencepiece/optimized/stringpiece.cc.ll
+; slurm/optimized/KangarooTwelve.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/gres_ctld.ll
 ; slurm/optimized/setproctitle.ll
@@ -591,6 +602,7 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -604,13 +616,15 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 88 occurrences:
+; 92 occurrences:
+; abc/optimized/gzlib.c.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_write.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/longobject.ll
@@ -630,6 +644,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; curl/optimized/libcurl_la-mprintf.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/archive-tar.ll
+; git/optimized/sha256.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/SourceMgr.cpp.ll
@@ -690,6 +705,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_vfio_migration.c.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll

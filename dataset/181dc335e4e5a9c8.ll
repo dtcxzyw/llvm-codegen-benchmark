@@ -1,6 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
 
 ; 5 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -15,7 +15,7 @@ entry:
   %4 = lshr i32 %1, %3
   %5 = and i32 %4, 255
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -1,5 +1,5 @@
 
-%"struct.eastl::pair.0.3895732" = type { i32, i32 }
+%"struct.eastl::pair.0.3895682" = type { i32, i32 }
 
 ; 2 occurrences:
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
@@ -48,7 +48,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -4
   %.neg1 = sub i64 %.neg, %1
-  %3 = getelementptr nusw %"struct.eastl::pair.0.3895732", ptr %0, i64 %.neg1
+  %3 = getelementptr nusw %"struct.eastl::pair.0.3895682", ptr %0, i64 %.neg1
   ret ptr %3
 }
 
@@ -63,7 +63,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = mul i64 %2, -4
   %.neg1 = sub i64 %.neg, %1
-  %3 = getelementptr nusw %"struct.eastl::pair.0.3895732", ptr %0, i64 %.neg1
+  %3 = getelementptr nusw %"struct.eastl::pair.0.3895682", ptr %0, i64 %.neg1
   ret ptr %3
 }
 

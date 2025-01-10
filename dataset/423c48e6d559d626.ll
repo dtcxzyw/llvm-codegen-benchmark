@@ -1,5 +1,5 @@
 
-; 172 occurrences:
+; 173 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
@@ -103,6 +103,7 @@
 ; openjdk/optimized/jfrResolution.ll
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/verifier.ll
+; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/layer.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; openusd/optimized/tessellation.cpp.ll

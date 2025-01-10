@@ -35,13 +35,10 @@ func000000000000020a:                   # @func000000000000020a
 	retq
 .LCPI3_0:
 	.long	4294967288                      # 0xfffffff8
-.LCPI3_1:
-	.long	7                               # 0x7
 func00000000000000aa:                   # @func00000000000000aa
 	vpslld	$3, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpsubd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpgtd	.LCPI3_1(%rip){1to8}, %ymm0, %k0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -621,7 +621,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
 ; php/optimized/string.ll
 ; php/optimized/url_scanner_ex.ll
 ; Function Attrs: nounwind
@@ -878,15 +879,6 @@ entry:
   %3 = sub nuw nsw i64 %2, %0
   %4 = icmp samesign ugt i64 %3, 1
   ret i1 %4
-}
-
-; 1 occurrences:
-; arrow/optimized/basic_decimal.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sge i64 %1, %0
-  ret i1 %2
 }
 
 ; 4 occurrences:

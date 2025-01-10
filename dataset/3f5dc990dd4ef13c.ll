@@ -1,5 +1,5 @@
 
-%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
+%struct.drm_color_lut.3530975 = type { i16, i16, i16, i16 }
 
 ; 1 occurrences:
 ; oiio/optimized/Codec.cpp.ll
@@ -43,7 +43,7 @@ entry:
   %4 = mul i32 %1, %3
   %5 = sdiv i32 %4, 511
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %6
+  %7 = getelementptr %struct.drm_color_lut.3530975, ptr %0, i64 %6
   ret ptr %7
 }
 

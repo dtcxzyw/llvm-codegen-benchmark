@@ -83,13 +83,6 @@ func0000000000000688:                   # @func0000000000000688
 	sltiu	a1, a1, 60
 	and	a0, a0, a1
 	ret
-func0000000000000554:                   # @func0000000000000554
-	sext.w	a1, a1
-	sext.w	a2, a2
-	sltu	a0, a0, a2
-	sgtz	a1, a1
-	and	a0, a0, a1
-	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
 	zext.w	a2, a2
@@ -128,6 +121,13 @@ func0000000000000021:                   # @func0000000000000021
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	seqz	a0, a0
+	ret
+func0000000000000554:                   # @func0000000000000554
+	sext.w	a1, a1
+	sext.w	a2, a2
+	sltu	a0, a0, a2
+	sgtz	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a1, a1

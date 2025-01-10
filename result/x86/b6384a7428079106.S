@@ -84,6 +84,14 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000029:                   # @func0000000000000029
+	addq	$-7, %rdx
+	cmpq	%rdx, %rdi
+	setae	%cl
+	cmpq	$4, %rsi
+	sete	%al
+	orb	%cl, %al
+	retq
 func0000000000000021:                   # @func0000000000000021
 	addq	$2, %rdx
 	cmpq	%rdx, %rdi

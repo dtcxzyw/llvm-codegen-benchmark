@@ -1,31 +1,5 @@
 
-; 16 occurrences:
-; cpython/optimized/obmalloc.ll
-; linux/optimized/alternative.ll
-; postgres/optimized/bootparse.ll
-; postgres/optimized/exprparse.ll
-; postgres/optimized/gram.ll
-; postgres/optimized/jsonpath_gram.ll
-; postgres/optimized/pl_gram.ll
-; postgres/optimized/predicate.ll
-; postgres/optimized/preproc.ll
-; postgres/optimized/repl_gram.ll
-; postgres/optimized/specparse.ll
-; postgres/optimized/syncrep_gram.ll
-; ruby/optimized/parse.ll
-; ruby/optimized/re.ll
-; ruby/optimized/regenc.ll
-; ruby/optimized/string.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i16, ptr %0, i64 %2
-  %4 = getelementptr i16, ptr %0, i64 %1
-  %5 = icmp ugt ptr %4, %3
-  ret i1 %5
-}
-
-; 40 occurrences:
+; 39 occurrences:
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/textio.ll
 ; cpython/optimized/unicodeobject.ll
@@ -46,7 +20,6 @@ entry:
 ; minetest/optimized/mapnode.cpp.ll
 ; postgres/optimized/backup_label.ll
 ; postgres/optimized/pqcomm.ll
-; postgres/optimized/predicate.ll
 ; postgres/optimized/ps_status.ll
 ; postgres/optimized/qsort.ll
 ; postgres/optimized/qsort_arg.ll
@@ -72,6 +45,21 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %0, i64 %1
   %5 = icmp ult ptr %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; cpython/optimized/obmalloc.ll
+; linux/optimized/alternative.ll
+; ruby/optimized/re.ll
+; ruby/optimized/regenc.ll
+; ruby/optimized/string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %0, i64 %1
+  %5 = icmp ugt ptr %4, %3
   ret i1 %5
 }
 

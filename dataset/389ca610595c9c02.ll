@@ -1,5 +1,5 @@
 
-; 350 occurrences:
+; 329 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/EmbedTexturesProcess.cpp.ll
@@ -160,18 +160,8 @@
 ; meshoptimizer/optimized/stripifier.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; minetest/optimized/filesys.cpp.ll
-; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/class.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
-; mitsuba3/optimized/filesystem.cpp.ll
-; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/moment.cpp.ll
-; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/xml.cpp.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; node/optimized/libnode.bindingdata.ll
 ; node/optimized/libnode.node_buffer.ll
@@ -259,20 +249,9 @@
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; spdlog/optimized/async.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/HelpWindow.cpp.ll
 ; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
@@ -610,7 +589,7 @@ entry:
   ret i64 %3
 }
 
-; 83 occurrences:
+; 107 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -650,7 +629,16 @@ entry:
 ; luau/optimized/VecDeque.test.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
+; mitsuba3/optimized/aov.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/class.cpp.ll
+; mitsuba3/optimized/filesystem.cpp.ll
+; mitsuba3/optimized/logger.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/moment.cpp.ll
+; mitsuba3/optimized/plugin.cpp.ll
+; mitsuba3/optimized/xml.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/model.cpp.ll
@@ -689,6 +677,21 @@ entry:
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; quantlib/optimized/faurersg.ll
 ; re2/optimized/prog.cc.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/HelpWindow.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll

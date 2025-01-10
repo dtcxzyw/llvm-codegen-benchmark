@@ -48,10 +48,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -95,18 +96,6 @@ entry:
   %3 = shl i64 %2, 60
   %4 = or disjoint i64 %3, %0
   %5 = select i1 %1, i64 -9223372036854775808, i64 0
-  %6 = or i64 %4, %5
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %2, 56
-  %4 = or i64 %0, %3
-  %5 = select i1 %1, i64 11, i64 12
   %6 = or i64 %4, %5
   ret i64 %6
 }

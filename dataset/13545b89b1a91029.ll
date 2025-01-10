@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -122,7 +122,7 @@ entry:
 define i1 @func0000000000000506(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3213948", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3213914", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp slt i64 %6, 0

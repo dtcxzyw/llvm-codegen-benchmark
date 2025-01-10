@@ -1,14 +1,14 @@
 
-%struct.chunk_info.2633451 = type { %struct.ossl_quic_frame_stream_st.2633452, i64, [2 x %struct.ossl_qtx_iovec_st.2633453], i64, i32 }
-%struct.ossl_quic_frame_stream_st.2633452 = type { i64, i64, i64, ptr, i8 }
-%struct.ossl_qtx_iovec_st.2633453 = type { ptr, i64 }
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%struct.mbedtls_x509_crt_verify_chain_item.2887493 = type { ptr, i32 }
-%struct.free_area.3535219 = type { [4 x %struct.list_head.3535195], i64 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%struct.rtree_ctx_cache_elm_s.3659902 = type { i64, ptr }
+%struct.chunk_info.2633418 = type { %struct.ossl_quic_frame_stream_st.2633419, i64, [2 x %struct.ossl_qtx_iovec_st.2633420], i64, i32 }
+%struct.ossl_quic_frame_stream_st.2633419 = type { i64, i64, i64, ptr, i8 }
+%struct.ossl_qtx_iovec_st.2633420 = type { ptr, i64 }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%struct.mbedtls_x509_crt_verify_chain_item.2887459 = type { ptr, i32 }
+%struct.free_area.3535185 = type { [4 x %struct.list_head.3535161], i64 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%struct.rtree_ctx_cache_elm_s.3659852 = type { i64, ptr }
 
 ; 4 occurrences:
 ; boost/optimized/get_turns.ll
@@ -20,7 +20,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = xor i64 %2, 1
-  %4 = getelementptr nuw [2 x %struct.chunk_info.2633451], ptr %0, i64 0, i64 %3, i32 3
+  %4 = getelementptr nuw [2 x %struct.chunk_info.2633418], ptr %0, i64 0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -32,7 +32,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %3, i32 5
+  %4 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %0, i64 0, i64 %3, i32 5
   ret ptr %4
 }
 
@@ -70,7 +70,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967291
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
@@ -96,7 +96,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nuw [10 x %struct.mbedtls_x509_crt_verify_chain_item.2887493], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr nuw [10 x %struct.mbedtls_x509_crt_verify_chain_item.2887459], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -110,7 +110,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [11 x %struct.free_area.3535219], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [11 x %struct.free_area.3535185], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -171,7 +171,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nuw [8 x %struct.rtree_ctx_cache_elm_s.3659902], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr nuw [8 x %struct.rtree_ctx_cache_elm_s.3659852], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

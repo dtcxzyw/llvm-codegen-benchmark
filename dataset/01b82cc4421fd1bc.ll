@@ -43,14 +43,13 @@ entry:
   ret i64 %7
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
 ; boost/optimized/instantiate_re2c_lexer_str.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/barrierSetStackChunk.ll
 ; openjdk/optimized/cardTableRS.ll

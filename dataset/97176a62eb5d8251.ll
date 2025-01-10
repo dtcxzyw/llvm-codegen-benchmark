@@ -1,34 +1,34 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
-%"struct.re2::PatchList.2601724" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::RAStackGap.2609273" = type { i32, i32 }
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
-%"class.irr::core::vector3d.2702987" = type { float, float, float }
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
-%struct.IOVAMapping.2707794 = type { ptr, i64, i64 }
-%"struct.OT::IntType.141.2730700" = type { %struct.BEInt.142.2730701 }
-%struct.BEInt.142.2730701 = type { [4 x i8] }
-%struct.stack_item_type.2733819 = type { i32, ptr }
-%struct.hb_glyph_info_t.2734381 = type { i32, i32, i32, %union._hb_var_int_t.2734382, %union._hb_var_int_t.2734382 }
-%union._hb_var_int_t.2734382 = type { i32 }
-%struct.hb_glyph_info_t.2735113 = type { i32, i32, i32, %union._hb_var_int_t.2735114, %union._hb_var_int_t.2735114 }
-%union._hb_var_int_t.2735114 = type { i32 }
-%struct.hb_glyph_info_t.2736912 = type { i32, i32, i32, %union._hb_var_int_t.2736913, %union._hb_var_int_t.2736913 }
-%union._hb_var_int_t.2736913 = type { i32 }
-%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
-%struct.Vec_Int_t_.2877207 = type { i32, i32, ptr }
-%struct.axset.3447355 = type { ptr, i32, i32, i32 }
-%union.BufferDescPadded.3651961 = type { %struct.BufferDesc.3651962, [12 x i8] }
-%struct.BufferDesc.3651962 = type { %struct.buftag.3651957, i32, %struct.pg_atomic_uint32.3651963, i32, i32, %struct.LWLock.3651964 }
-%struct.buftag.3651957 = type { i32, i32, i32, i32, i32 }
-%struct.pg_atomic_uint32.3651963 = type { i32 }
-%struct.LWLock.3651964 = type { i16, %struct.pg_atomic_uint32.3651963, %struct.proclist_head.3651965 }
-%struct.proclist_head.3651965 = type { i32, i32 }
-%struct.FT_Vector_.3881692 = type { i64, i64 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%"struct.re2::Frag.2601690" = type <{ i32, %"struct.re2::PatchList.2601691", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601691" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::RAStackGap.2609240" = type { i32, i32 }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955" = type { float, %"class.irr::core::vector3d.2702953" }
+%"class.irr::core::vector3d.2702953" = type { float, float, float }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
+%struct.IOVAMapping.2707760 = type { ptr, i64, i64 }
+%"struct.OT::IntType.141.2730666" = type { %struct.BEInt.142.2730667 }
+%struct.BEInt.142.2730667 = type { [4 x i8] }
+%struct.stack_item_type.2733785 = type { i32, ptr }
+%struct.hb_glyph_info_t.2734347 = type { i32, i32, i32, %union._hb_var_int_t.2734348, %union._hb_var_int_t.2734348 }
+%union._hb_var_int_t.2734348 = type { i32 }
+%struct.hb_glyph_info_t.2735079 = type { i32, i32, i32, %union._hb_var_int_t.2735080, %union._hb_var_int_t.2735080 }
+%union._hb_var_int_t.2735080 = type { i32 }
+%struct.hb_glyph_info_t.2736878 = type { i32, i32, i32, %union._hb_var_int_t.2736879, %union._hb_var_int_t.2736879 }
+%union._hb_var_int_t.2736879 = type { i32 }
+%"class.rapidjson::GenericMember.2825502" = type { %"class.rapidjson::GenericValue.2825277", %"class.rapidjson::GenericValue.2825277" }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2877173 = type { i32, i32, ptr }
+%struct.axset.3447321 = type { ptr, i32, i32, i32 }
+%union.BufferDescPadded.3651927 = type { %struct.BufferDesc.3651928, [12 x i8] }
+%struct.BufferDesc.3651928 = type { %struct.buftag.3651923, i32, %struct.pg_atomic_uint32.3651929, i32, i32, %struct.LWLock.3651930 }
+%struct.buftag.3651923 = type { i32, i32, i32, i32, i32 }
+%struct.pg_atomic_uint32.3651929 = type { i32 }
+%struct.LWLock.3651930 = type { i16, %struct.pg_atomic_uint32.3651929, %struct.proclist_head.3651931 }
+%struct.proclist_head.3651931 = type { i32, i32 }
+%struct.FT_Vector_.3881642 = type { i64, i64 }
 
 ; 30 occurrences:
 ; cmake/optimized/ftplistparser.c.ll
@@ -140,7 +140,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -181,7 +181,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"struct.re2::Frag.2601723", ptr %0, i64 %2
+  %3 = getelementptr %"struct.re2::Frag.2601690", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
@@ -599,7 +599,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"struct.asmjit::_abi_1_10::RAStackGap.2609273", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"struct.asmjit::_abi_1_10::RAStackGap.2609240", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -852,7 +852,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -865,7 +865,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %2
+  %3 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -568
   ret ptr %4
 }
@@ -881,7 +881,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.IOVAMapping.2707794, ptr %0, i64 %3
+  %4 = getelementptr %struct.IOVAMapping.2707760, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
 }
@@ -896,7 +896,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.IOVAMapping.2707794, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.IOVAMapping.2707760, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -944,7 +944,7 @@ define ptr @func000000000000004f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"struct.OT::IntType.141.2730700", ptr %0, i64 %3, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw %"struct.OT::IntType.141.2730666", ptr %0, i64 %3, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -996,7 +996,7 @@ entry:
 define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.stack_item_type.2733819, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.stack_item_type.2733785, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -1023,7 +1023,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.hb_glyph_info_t.2734381, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.hb_glyph_info_t.2734347, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -1035,7 +1035,7 @@ define ptr @func000000000000004c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.hb_glyph_info_t.2735113, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.hb_glyph_info_t.2735079, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -1052,7 +1052,7 @@ define ptr @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.hb_glyph_info_t.2736912, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.hb_glyph_info_t.2736878, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -1082,7 +1082,7 @@ define ptr @func000000000000006f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"class.rapidjson::GenericMember.2825536", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr nuw %"class.rapidjson::GenericMember.2825502", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -1107,7 +1107,7 @@ entry:
 define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.Vec_Int_t_.2877207, ptr %0, i64 %2
+  %3 = getelementptr %struct.Vec_Int_t_.2877173, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }
@@ -1168,7 +1168,7 @@ entry:
 define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.axset.3447355, ptr %0, i64 %2
+  %3 = getelementptr %struct.axset.3447321, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 36
   ret ptr %4
 }
@@ -1180,7 +1180,7 @@ define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.BufferDescPadded.3651961, ptr %0, i64 %3, i32 0, i32 2
+  %4 = getelementptr %union.BufferDescPadded.3651927, ptr %0, i64 %3, i32 0, i32 2
   ret ptr %4
 }
 
@@ -1191,7 +1191,7 @@ entry:
 define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.FT_Vector_.3881692, ptr %0, i64 %2
+  %3 = getelementptr %struct.FT_Vector_.3881642, ptr %0, i64 %2
   ret ptr %3
 }
 

@@ -28,7 +28,8 @@ entry:
   ret ptr %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; boost/optimized/async_pipe.ll
 ; boost/optimized/bind_stderr.ll

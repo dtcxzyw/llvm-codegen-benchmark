@@ -1,6 +1,6 @@
 
-%"class.llvm::SDUse.3146036" = type { %"class.llvm::SDValue.3146037", ptr, ptr, ptr }
-%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDUse.3146002" = type { %"class.llvm::SDValue.3146003", ptr, ptr, ptr }
+%"class.llvm::SDValue.3146003" = type <{ ptr, i32, [4 x i8] }>
 
 ; 5 occurrences:
 ; abc/optimized/giaSupps.c.ll
@@ -26,7 +26,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.llvm::SDUse.3146036", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::SDUse.3146002", ptr %0, i64 %4
   ret ptr %5
 }
 

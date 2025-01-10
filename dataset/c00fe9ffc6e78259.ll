@@ -263,7 +263,7 @@ entry:
   ret i1 %4
 }
 
-; 873 occurrences:
+; 872 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -602,7 +602,6 @@ entry:
 ; linux/optimized/aspm.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/boot.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/cs.ll
@@ -1146,7 +1145,7 @@ entry:
   ret i1 %4
 }
 
-; 347 occurrences:
+; 346 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -1302,7 +1301,6 @@ entry:
 ; oiio/optimized/pngoutput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dlarrd.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/age_gender_emotion_recognition.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
@@ -1879,7 +1877,7 @@ entry:
   ret i1 %4
 }
 
-; 971 occurrences:
+; 968 occurrences:
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
@@ -1913,11 +1911,7 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
 ; abc/optimized/hopBalance.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/inftrees.c.ll
@@ -2048,6 +2042,7 @@ entry:
 ; freetype/optimized/sdf.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
+; git/optimized/advice.ll
 ; git/optimized/base85.ll
 ; git/optimized/commit.ll
 ; git/optimized/diff-no-index.ll
@@ -2931,7 +2926,7 @@ entry:
   ret i1 %4
 }
 
-; 143 occurrences:
+; 142 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -2946,7 +2941,6 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/flowgraph.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -3080,6 +3074,27 @@ define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp sgt i32 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 11 occurrences:
+; abc/optimized/aigOper.c.ll
+; ceres/optimized/parallel_vector_ops.cc.ll
+; gromacs/optimized/tpi.cpp.ll
+; libphonenumber/optimized/rune.c.ll
+; linux/optimized/af_netlink.ll
+; llvm/optimized/SemaType.cpp.ll
+; luajit/optimized/buildvm_fold.ll
+; ruby/optimized/regcomp.ll
+; slurm/optimized/reservation.ll
+; slurm/optimized/scontrol.ll
+; wireshark/optimized/packet-geonw.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 128
+  %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -3576,9 +3591,10 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/scanner.c.ll
+; cpython/optimized/unicodeobject.ll
 ; freetype/optimized/sfnt.c.ll
 ; grpc/optimized/parse_address.cc.ll
 ; linux/optimized/acpi-cpufreq.ll
@@ -3606,7 +3622,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -3635,7 +3651,6 @@ entry:
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/unicode.ll
 ; opencv/optimized/rho.cpp.ll
 ; openjdk/optimized/LCMS.ll
@@ -3936,8 +3951,9 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/zip.c.ll
+; cpython/optimized/dtoa.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/zip.c.ll
@@ -4339,26 +4355,6 @@ define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, -5
   %3 = icmp sgt i32 %0, 0
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 10 occurrences:
-; abc/optimized/aigOper.c.ll
-; ceres/optimized/parallel_vector_ops.cc.ll
-; gromacs/optimized/tpi.cpp.ll
-; libphonenumber/optimized/rune.c.ll
-; linux/optimized/af_netlink.ll
-; llvm/optimized/SemaType.cpp.ll
-; luajit/optimized/buildvm_fold.ll
-; slurm/optimized/reservation.ll
-; slurm/optimized/scontrol.ll
-; wireshark/optimized/packet-geonw.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000281(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp samesign ult i32 %1, 65536
-  %3 = icmp eq i32 %0, 55296
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

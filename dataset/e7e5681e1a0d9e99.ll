@@ -1,6 +1,6 @@
 
-%struct.va_input.2762719 = type { i32, %union.anon.2762720 }
-%union.anon.2762720 = type { ptr }
+%struct.va_input.2762685 = type { i32, %union.anon.2762686 }
+%union.anon.2762686 = type { ptr }
 
 ; 9 occurrences:
 ; graphviz/optimized/multispline.c.ll
@@ -75,7 +75,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.va_input.2762719, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.va_input.2762685, ptr %0, i64 %5
   ret ptr %6
 }
 

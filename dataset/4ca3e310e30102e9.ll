@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 85 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -24,6 +24,7 @@
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/AnalyzerStatsChecker.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll

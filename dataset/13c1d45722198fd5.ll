@@ -1,7 +1,7 @@
 
-%class.CellTypeState.2731841 = type { i32 }
+%class.CellTypeState.2731807 = type { i32 }
 
-; 202 occurrences:
+; 204 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -78,6 +78,7 @@
 ; gromacs/optimized/matio.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/package.ll
 ; icu/optimized/pkgitems.ll
@@ -161,6 +162,7 @@
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/scopedMemoryAccess.ll
 ; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; openmpi/optimized/keyval_lex.ll
@@ -462,23 +464,9 @@ entry:
 define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.CellTypeState.2731841, ptr %0, i64 %3
+  %4 = getelementptr nusw %class.CellTypeState.2731807, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.CellTypeState.2731841, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 3 occurrences:
-; fmt/optimized/format-impl-test.cc.ll
-; hyperscan/optimized/program_runtime.c.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
+  %6 = getelementptr %class.CellTypeState.2731807, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,7 +1,7 @@
 
-%"class.re2::Prog::Inst.2601887" = type { i32, %union.anon.43.2601888 }
-%union.anon.43.2601888 = type { i32 }
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"class.re2::Prog::Inst.2601854" = type { i32, %union.anon.43.2601855 }
+%union.anon.43.2601855 = type { i32 }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
 ; 846 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -853,7 +853,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601887", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601854", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
@@ -1127,7 +1127,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602074", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4

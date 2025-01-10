@@ -1,5 +1,5 @@
 
-; 452 occurrences:
+; 450 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -284,8 +284,6 @@
 ; openssl/optimized/libdefault-lib-dh_kmgmt.ll
 ; openssl/optimized/libdefault-lib-dsa_kmgmt.ll
 ; openssl/optimized/libdefault-lib-ec_kmgmt.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/openssl-bin-cms.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/dirtyList.cpp.ll

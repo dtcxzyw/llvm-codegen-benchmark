@@ -1,5 +1,5 @@
 
-%class.XForwardingEntry.2734592 = type { i64 }
+%class.XForwardingEntry.2734558 = type { i64 }
 
 ; 10 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -37,7 +37,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = add i64 %2, 136
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw %class.XForwardingEntry.2734592, ptr %4, i64 %0
+  %5 = getelementptr nusw %class.XForwardingEntry.2734558, ptr %4, i64 %0
   ret ptr %5
 }
 

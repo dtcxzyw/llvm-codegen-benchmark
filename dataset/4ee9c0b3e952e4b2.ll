@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind

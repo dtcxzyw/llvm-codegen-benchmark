@@ -72,7 +72,7 @@ func000000000000003e:                   # @func000000000000003e
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 760
+	addi	a0, a0, 23
 	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
@@ -125,6 +125,12 @@ func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	add	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -2048
+	addi	a0, a0, -2048
 	ret
 func0000000000000037:                   # @func0000000000000037
 	add	a1, a1, a2

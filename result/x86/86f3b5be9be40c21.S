@@ -34,6 +34,12 @@ func0000000000000015:                   # @func0000000000000015
 	addq	%rsi, %rdx
 	leaq	135(%rdi,%rdx), %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movabsq	$9223372036854771712, %rax      # imm = 0x7FFFFFFFFFFFF000
+	andq	%rdx, %rax
+	addq	%rsi, %rax
+	leaq	-4096(%rdi,%rax), %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	addq	%rsi, %rdx

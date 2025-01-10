@@ -1,5 +1,5 @@
 
-%"class.clang::Token.3326696" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
+%"class.clang::Token.3326662" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
 
 ; 10 occurrences:
 ; cmake/optimized/smb.c.ll
@@ -162,7 +162,7 @@ entry:
 define i64 @func000000000000002b(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -24
-  %3 = getelementptr nusw %"class.clang::Token.3326696", ptr %2, i64 %0
+  %3 = getelementptr nusw %"class.clang::Token.3326662", ptr %2, i64 %0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

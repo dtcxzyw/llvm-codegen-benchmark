@@ -12,8 +12,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; quickjs/optimized/quickjs.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind

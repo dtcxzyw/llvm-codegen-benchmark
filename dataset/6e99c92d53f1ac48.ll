@@ -1,12 +1,12 @@
 
-%"class.WasmEdge::Variant.2765249" = type { %"union.WasmEdge::VariadicUnion.2765250" }
-%"union.WasmEdge::VariadicUnion.2765250" = type { %"union.WasmEdge::VariadicUnion.5.2765251" }
-%"union.WasmEdge::VariadicUnion.5.2765251" = type { %"union.WasmEdge::VariadicUnion.6.2765252" }
-%"union.WasmEdge::VariadicUnion.6.2765252" = type { %"union.WasmEdge::VariadicUnion.7.2765253" }
-%"union.WasmEdge::VariadicUnion.7.2765253" = type { %"union.WasmEdge::VariadicUnion.8.2765254" }
-%"union.WasmEdge::VariadicUnion.8.2765254" = type { %"union.WasmEdge::VariadicUnion.9.2765255" }
-%"union.WasmEdge::VariadicUnion.9.2765255" = type { %"union.WasmEdge::VariadicUnion.10.2765256" }
-%"union.WasmEdge::VariadicUnion.10.2765256" = type { i128 }
+%"class.WasmEdge::Variant.2765215" = type { %"union.WasmEdge::VariadicUnion.2765216" }
+%"union.WasmEdge::VariadicUnion.2765216" = type { %"union.WasmEdge::VariadicUnion.5.2765217" }
+%"union.WasmEdge::VariadicUnion.5.2765217" = type { %"union.WasmEdge::VariadicUnion.6.2765218" }
+%"union.WasmEdge::VariadicUnion.6.2765218" = type { %"union.WasmEdge::VariadicUnion.7.2765219" }
+%"union.WasmEdge::VariadicUnion.7.2765219" = type { %"union.WasmEdge::VariadicUnion.8.2765220" }
+%"union.WasmEdge::VariadicUnion.8.2765220" = type { %"union.WasmEdge::VariadicUnion.9.2765221" }
+%"union.WasmEdge::VariadicUnion.9.2765221" = type { %"union.WasmEdge::VariadicUnion.10.2765222" }
+%"union.WasmEdge::VariadicUnion.10.2765222" = type { i128 }
 
 ; 10 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %4 = icmp ult i64 %3, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %3, i64 576460752303423487)
   %6 = select i1 %4, i64 576460752303423487, i64 %5
-  %7 = getelementptr nusw nuw %"class.WasmEdge::Variant.2765249", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.WasmEdge::Variant.2765215", ptr %0, i64 %6
   ret ptr %7
 }
 

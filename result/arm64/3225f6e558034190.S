@@ -440,6 +440,15 @@ func000000000000298a:                   // @func000000000000298a
 	cset	w0, ne
 	ret
                                         // -- End function
+func00000000000018c1:                   // @func00000000000018c1
+// %bb.0:                               // %entry
+	cmp	w1, #255
+	mov	w8, #255                        // =0xff
+	ccmp	w2, w8, #0, lt
+	ccmp	w0, #0, #0, lt
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000001886:                   // @func0000000000001886
 // %bb.0:                               // %entry
 	cmp	w2, #128

@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -15,6 +15,7 @@
 ; darktable/optimized/introspection_shadhi.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/long_range_correction.cpp.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll

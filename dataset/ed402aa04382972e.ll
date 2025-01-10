@@ -94,4 +94,16 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = add nuw i64 %0, %3
+  %5 = and i64 %1, 9223372036854775804
+  %6 = icmp ugt i64 %4, %5
+  ret i1 %6
+}
+
 attributes #0 = { nounwind }

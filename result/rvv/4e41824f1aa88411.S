@@ -23,9 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 	vssubu.vv	v8, v8, v10
 	ret
 func0000000000000019:                   # @func0000000000000019
-	lui	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v10, v10, a0
+	vrsub.vi	v10, v10, 8
 	vssubu.vv	v8, v8, v10
 	ret
 func000000000000001c:                   # @func000000000000001c

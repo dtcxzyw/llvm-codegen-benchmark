@@ -1,6 +1,6 @@
 
-%"class.llvm::SDUse.3150383" = type { %"class.llvm::SDValue.3150307", ptr, ptr, ptr }
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDUse.3150349" = type { %"class.llvm::SDValue.3150273", ptr, ptr, ptr }
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
 
 ; 3 occurrences:
 ; lief/optimized/RelocationSizes.cpp.ll
@@ -24,7 +24,7 @@ define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i64 0, i64 2
-  %5 = getelementptr nuw %"class.llvm::SDUse.3150383", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr nuw %"class.llvm::SDUse.3150349", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 

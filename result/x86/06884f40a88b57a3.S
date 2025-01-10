@@ -112,8 +112,8 @@ func0000000000000287:                   # @func0000000000000287
 	setle	%al
 	retq
 func0000000000000024:                   # @func0000000000000024
-	cmpl	$2, %edx
-	movl	$6, %eax
+	testl	%edx, %edx
+	movl	$1, %eax
 	cmovneq	%rsi, %rax
 	cmpq	%rax, %rdi
 	setb	%al

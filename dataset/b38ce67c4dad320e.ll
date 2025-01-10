@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3554398 = type { i32, i8 }
+%struct.alps_nibble_commands.3554364 = type { i32, i8 }
 
 ; 93 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
@@ -113,7 +113,7 @@ entry:
   %2 = lshr i32 49864, %1
   %3 = and i32 %2, 14
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %4
+  %5 = getelementptr %struct.alps_nibble_commands.3554364, ptr %0, i64 %4
   ret ptr %5
 }
 

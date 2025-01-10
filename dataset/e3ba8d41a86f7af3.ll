@@ -1,5 +1,5 @@
 
-; 893 occurrences:
+; 894 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -349,6 +349,7 @@
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/InstrOrderFile.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
@@ -901,7 +902,7 @@ entry:
   ret i64 %3
 }
 
-; 193 occurrences:
+; 191 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -1021,7 +1022,6 @@ entry:
 ; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/InnerPointerChecker.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InvalidPtrChecker.cpp.ll
 ; llvm/optimized/Iterator.cpp.ll
 ; llvm/optimized/IteratorModeling.cpp.ll
@@ -1091,7 +1091,6 @@ entry:
 ; slurm/optimized/reservation.ll
 ; spike/optimized/csrs.ll
 ; spike/optimized/mmu.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/hwf.cpp.ll

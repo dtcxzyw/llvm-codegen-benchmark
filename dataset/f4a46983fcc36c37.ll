@@ -1,6 +1,6 @@
 
-%"class.casadi::MX.3920444" = type { %"class.casadi::SharedObject.3920445" }
-%"class.casadi::SharedObject.3920445" = type { ptr }
+%"class.casadi::MX.3920394" = type { %"class.casadi::SharedObject.3920395" }
+%"class.casadi::SharedObject.3920395" = type { ptr }
 
 ; 4 occurrences:
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
@@ -80,7 +80,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp slt i64 %1, %2
   %5 = select i1 %4, i64 %1, i64 %3
-  %6 = getelementptr nusw %"class.casadi::MX.3920444", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.casadi::MX.3920394", ptr %0, i64 %5
   ret ptr %6
 }
 

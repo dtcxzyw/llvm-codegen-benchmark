@@ -25,12 +25,3 @@ func000000000000000c:                   // @func000000000000000c
 	csel	x0, xzr, x8, ne
 	ret
                                         // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	cmp	x1, x2
-	cset	w8, eq
-	tst	w0, w8
-	mov	w8, #2                          // =0x2
-	cinc	x0, x8, eq
-	ret
-                                        // -- End function

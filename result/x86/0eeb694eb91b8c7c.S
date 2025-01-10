@@ -68,3 +68,8 @@ func000000000000000d:                   # @func000000000000000d
 	movl	$-1, %eax
 	shlxl	%edi, %eax, %eax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	addb	$-10, %dil
+	movl	$-1, %eax
+	shlxl	%edi, %eax, %eax
+	retq

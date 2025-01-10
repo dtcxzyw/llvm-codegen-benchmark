@@ -1,5 +1,5 @@
 
-; 281 occurrences:
+; 282 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCec.c.ll
@@ -102,6 +102,7 @@
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/namei.ll
+; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/pi.ll

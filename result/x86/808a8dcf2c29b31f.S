@@ -19,10 +19,3 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	%edi, %ecx
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	movzwl	%dx, %eax
-	movzbl	%sil, %ecx
-	addl	%eax, %ecx
-	cmpl	%edi, %ecx
-	setb	%al
-	retq

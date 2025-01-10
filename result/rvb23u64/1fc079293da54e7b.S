@@ -1,8 +1,3 @@
-func00000000000001d5:                   # @func00000000000001d5
-	sh3add	a0, a2, a0
-	sh3add	a0, a0, a1
-	addi	a0, a0, 760
-	ret
 func0000000000000110:                   # @func0000000000000110
 	slli	a2, a2, 4
 	add	a1, a1, a2

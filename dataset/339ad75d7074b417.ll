@@ -1,5 +1,6 @@
 
-; 27 occurrences:
+; 30 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/qopen.cpp.ll
 ; clamav/optimized/sis.c.ll
@@ -17,6 +18,8 @@
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
+; linux/optimized/scatterwalk.ll
+; linux/optimized/serial_core.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -39,9 +42,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 81 occurrences:
+; 82 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; folly/optimized/EventBaseBackendBase.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -172,10 +176,13 @@ entry:
   ret i64 %5
 }
 
-; 45 occurrences:
+; 50 occurrences:
+; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/ole2_extract.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -193,6 +200,7 @@ entry:
 ; linux/optimized/page-io.ll
 ; linux/optimized/pagelist.ll
 ; linux/optimized/tcp.ll
+; linux/optimized/vsprintf.ll
 ; linux/optimized/xprtsock.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/BreakableToken.cpp.ll
@@ -210,6 +218,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/imageioJPEG.ll
+; php/optimized/KeccakSponge.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -257,6 +266,25 @@ entry:
   ret i64 %5
 }
 
+; 9 occurrences:
+; clamav/optimized/bytecode_api.c.ll
+; clamav/optimized/cpio.c.ll
+; clamav/optimized/libmspack.c.ll
+; clamav/optimized/sis.c.ll
+; clamav/optimized/tnef.c.ll
+; clamav/optimized/unarj.c.ll
+; libpng/optimized/pngrutil.c.ll
+; opencv/optimized/copy.cpp.ll
+; openjdk/optimized/pngrutil.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  ret i64 %5
+}
+
 ; 7 occurrences:
 ; cmake/optimized/transfer.c.ll
 ; curl/optimized/libcurl_la-transfer.ll
@@ -274,7 +302,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lief/optimized/ssl_msg.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -295,23 +324,6 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %0, %1
   %5 = tail call noundef i64 @llvm.umin.i64(i64 %4, i64 %3)
-  ret i64 %5
-}
-
-; 7 occurrences:
-; clamav/optimized/bytecode_api.c.ll
-; clamav/optimized/cpio.c.ll
-; clamav/optimized/libmspack.c.ll
-; clamav/optimized/sis.c.ll
-; clamav/optimized/tnef.c.ll
-; clamav/optimized/unarj.c.ll
-; opencv/optimized/copy.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw i64 %1, %2
-  %4 = zext nneg i32 %0 to i64
-  %5 = tail call i64 @llvm.umin.i64(i64 range(i64 0, 2147483648) %4, i64 %3)
   ret i64 %5
 }
 

@@ -195,7 +195,7 @@ entry:
   ret i64 %4
 }
 
-; 427 occurrences:
+; 426 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/unzip.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -497,7 +497,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-http_lib.ll
 ; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; openusd/optimized/openexr-c.c.ll
-; php/optimized/streams.ll
 ; postgres/optimized/pg_backup_tar.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll

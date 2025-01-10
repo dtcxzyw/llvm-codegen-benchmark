@@ -243,7 +243,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; boost/optimized/dec_octet_rule.ll
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/parsedate.c.ll
@@ -253,6 +253,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libquic/optimized/a_gentm.c.ll
 ; libquic/optimized/a_utctm.c.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/php_pcre.ll
 ; quickjs/optimized/libregexp.ll
@@ -271,7 +274,7 @@ entry:
   ret i32 %4
 }
 
-; 241 occurrences:
+; 240 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/doh.c.ll
@@ -495,7 +498,6 @@ entry:
 ; wireshark/optimized/packet-uci.c.ll
 ; wireshark/optimized/packet-ucp.c.ll
 ; wireshark/optimized/packet-unistim.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-v52.c.ll
 ; wireshark/optimized/packet-vuze-dht.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll

@@ -1,7 +1,7 @@
 
-%struct.ImGuiKeyData.3454249 = type { i8, float, float, float }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%struct.ImGuiKeyData.3454215 = type { i8, float, float, float }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -30,7 +30,7 @@ define i64 @func0000000000000038(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 3692
   %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr nusw [666 x %struct.ImGuiKeyData.3454249], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw [666 x %struct.ImGuiKeyData.3454215], ptr %0, i64 0, i64 %1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %4
   ret i64 %7
@@ -43,7 +43,7 @@ define i64 @func0000000000000030(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
   %4 = ptrtoint ptr %3 to i64
-  %5 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %1
+  %5 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %0, i64 0, i64 %1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %4
   ret i64 %7

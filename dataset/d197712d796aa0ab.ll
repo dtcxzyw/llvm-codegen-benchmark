@@ -1,6 +1,6 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialForceVector.2818471 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
 
 ; 4 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -29,9 +29,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %1
+  %3 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %1
   %4 = sext i32 %2 to i64
-  %5 = getelementptr %struct.btSpatialForceVector.2818505, ptr %3, i64 %4
+  %5 = getelementptr %struct.btSpatialForceVector.2818471, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 36
   ret ptr %6
 }
@@ -73,6 +73,17 @@ entry:
   %5 = getelementptr i16, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 30
   ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/brisk.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000060(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

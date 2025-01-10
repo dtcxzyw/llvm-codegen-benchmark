@@ -1,5 +1,5 @@
 
-; 3612 occurrences:
+; 3613 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
@@ -806,6 +806,7 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

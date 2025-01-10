@@ -1,6 +1,6 @@
 
-%"struct.llvm::gi::PatFrag::Param.3207045" = type <{ %"class.llvm::StringRef.3207012", i32, [4 x i8] }>
-%"class.llvm::StringRef.3207012" = type { ptr, i64 }
+%"struct.llvm::gi::PatFrag::Param.3207011" = type <{ %"class.llvm::StringRef.3206978", i32, [4 x i8] }>
+%"class.llvm::StringRef.3206978" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; luau/optimized/IrAnalysis.cpp.ll
@@ -31,9 +31,9 @@ entry:
 ; Function Attrs: nounwind
 define { ptr, ptr } @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.llvm::gi::PatFrag::Param.3207045", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.llvm::gi::PatFrag::Param.3207011", ptr %0, i64 %2
   %4 = insertvalue { ptr, ptr } poison, ptr %3, 0
-  %5 = getelementptr nusw %"struct.llvm::gi::PatFrag::Param.3207045", ptr %0, i64 %1
+  %5 = getelementptr nusw %"struct.llvm::gi::PatFrag::Param.3207011", ptr %0, i64 %1
   %6 = insertvalue { ptr, ptr } %4, ptr %5, 1
   ret { ptr, ptr } %6
 }

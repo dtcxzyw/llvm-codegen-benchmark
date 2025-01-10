@@ -125,7 +125,7 @@ entry:
   ret i32 %1
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/dauDivs.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/extraBddKmap.c.ll
@@ -183,7 +183,6 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; yosys/optimized/celledges.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind

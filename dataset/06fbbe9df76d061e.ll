@@ -1,6 +1,6 @@
 
-%struct.nk_vec2.3063019 = type { float, float }
-%struct.ImVec2.3454338 = type { float, float }
+%struct.nk_vec2.3062985 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 2 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
@@ -78,8 +78,8 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, -2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.nk_vec2.3063019, ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %struct.nk_vec2.3063019, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw %struct.nk_vec2.3062985, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw %struct.nk_vec2.3062985, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -91,8 +91,8 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, -2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %6, i64 %5
+  %6 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %6, i64 %5
   ret ptr %7
 }
 

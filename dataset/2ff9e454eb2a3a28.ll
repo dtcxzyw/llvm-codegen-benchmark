@@ -1,7 +1,7 @@
 
-%struct.acpi_gpe_event_info.3542402 = type { %union.acpi_gpe_dispatch_info.3542403, ptr, i8, i8, i8, i8 }
-%union.acpi_gpe_dispatch_info.3542403 = type { ptr }
-%"struct.ozz::animation::internal::Float3Key.3655591" = type { [3 x i16] }
+%struct.acpi_gpe_event_info.3542368 = type { %union.acpi_gpe_dispatch_info.3542369, ptr, i8, i8, i8, i8 }
+%union.acpi_gpe_dispatch_info.3542369 = type { ptr }
+%"struct.ozz::animation::internal::Float3Key.3655557" = type { [3 x i16] }
 
 ; 9 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -74,7 +74,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nuw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.acpi_gpe_event_info.3542402, ptr %0, i64 %5
+  %6 = getelementptr %struct.acpi_gpe_event_info.3542368, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -86,7 +86,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.ozz::animation::internal::Float3Key.3655591", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.ozz::animation::internal::Float3Key.3655557", ptr %0, i64 %5
   ret ptr %6
 }
 

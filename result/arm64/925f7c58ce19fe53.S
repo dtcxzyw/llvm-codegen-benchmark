@@ -26,15 +26,6 @@ func000000000000000f:                   // @func000000000000000f
 	add	w0, w8, w0, uxth
 	ret
                                         // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
-	and	w9, w1, #0xffff
-	mov	w8, #11                         // =0xb
-	cmp	w9, #11
-	csel	w8, wzr, w8, lo
-	add	w0, w8, w0, uxth
-	ret
-                                        // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
 	mov	w8, #-12                        // =0xfffffff4

@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/numeric.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/update-index.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
@@ -15,24 +16,13 @@
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
+; openssl/optimized/bntest-bin-bntest.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub i64 47244640256, %1
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; boost/optimized/numeric.ll
-; openssl/optimized/bntest-bin-bntest.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 42949672960, %1
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -50,11 +40,11 @@ entry:
 ; 1 occurrences:
 ; boost/optimized/numeric.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub i64 171798691840, %1
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw i32, ptr %0, i64 %3
   ret ptr %4
 }
 

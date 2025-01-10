@@ -1,5 +1,5 @@
 
-; 241 occurrences:
+; 242 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -153,6 +153,7 @@
 ; openvdb/optimized/AttributeArrayString.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/zend_inference.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll

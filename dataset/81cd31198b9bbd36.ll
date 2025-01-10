@@ -143,7 +143,7 @@ entry:
   ret i64 %2
 }
 
-; 335 occurrences:
+; 336 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; arrow/optimized/float16.cc.ll
@@ -286,6 +286,7 @@ entry:
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll

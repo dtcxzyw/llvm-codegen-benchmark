@@ -1,3 +1,8 @@
+func0000000000000002:                   # @func0000000000000002
+	leaq	19(,%rsi,4), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	4095(,%rsi,8), %rax
 	andq	$-4096, %rax                    # imm = 0xF000
@@ -39,11 +44,6 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func000000000000002a:                   # @func000000000000002a
 	leaq	15(,%rsi,8), %rax
-	andq	$-16, %rax
-	addq	%rdi, %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	leaq	19(,%rsi,4), %rax
 	andq	$-16, %rax
 	addq	%rdi, %rax
 	retq

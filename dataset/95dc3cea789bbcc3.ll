@@ -2094,7 +2094,7 @@ entry:
   ret i1 %3
 }
 
-; 6330 occurrences:
+; 6328 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -2759,7 +2759,6 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/json_reader.cpp.ll
-; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/jsoncpp_json_serializer.cpp.ll
 ; cmake/optimized/protocol_events.cpp.ll
 ; cmake/optimized/protocol_requests.cpp.ll
@@ -5979,7 +5978,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; oniguruma/optimized/regexec.ll
-; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dtrsm_kernel_RT.c.ll
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/DictGroup.cpp.ll
@@ -17423,7 +17421,7 @@ entry:
   ret i1 %3
 }
 
-; 9048 occurrences:
+; 9047 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -18151,7 +18149,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
-; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write.c.ll
 ; cmake/optimized/archive_write_add_filter_program.c.ll
@@ -26479,7 +26476,7 @@ entry:
   ret i1 %2
 }
 
-; 1208 occurrences:
+; 1206 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -26492,7 +26489,6 @@ entry:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
-; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/builder_adaptive.cc.ll
@@ -26663,7 +26659,6 @@ entry:
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/mszipd.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/SystemTools.cxx.ll
@@ -27369,6 +27364,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemm_thread_nn.c.ll
@@ -27504,7 +27500,6 @@ entry:
 ; php/optimized/cast.ll
 ; php/optimized/interval.ll
 ; php/optimized/streams.ll
-; php/optimized/tm2unixtime.ll
 ; php/optimized/zend_hash.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
@@ -31968,15 +31963,14 @@ entry:
   ret i1 %3
 }
 
-; 289 occurrences:
-; abc/optimized/cuddExact.c.ll
+; 285 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; arrow/optimized/basic_decimal.cc.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; bdwgc/optimized/gc.c.ll
-; boost/optimized/approximately_equals.ll
 ; boost/optimized/process.ll
 ; boost/optimized/rational.ll
 ; boost/optimized/target.ll
@@ -31996,7 +31990,6 @@ entry:
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/pdf.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/archive_read.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
@@ -32185,7 +32178,6 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/sentinel.ll
 ; rocksdb/optimized/block.cc.ll
-; rocksdb/optimized/replayer_impl.cc.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/ripper.ll
@@ -32257,7 +32249,6 @@ entry:
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
@@ -35465,7 +35456,7 @@ entry:
   ret i1 %3
 }
 
-; 200 occurrences:
+; 201 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; clamav/optimized/filtering.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -35476,6 +35467,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -36041,8 +36033,7 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; 4 occurrences:
 ; casadi/optimized/integration_tools.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; llvm/optimized/DebugFrameDataSubsection.cpp.ll

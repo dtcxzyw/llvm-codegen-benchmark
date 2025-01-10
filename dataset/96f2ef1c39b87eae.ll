@@ -34,17 +34,16 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/encode.c.ll
-; lvgl/optimized/lv_tlsf.ll
+; brotli/optimized/compress_fragment.c.ll
+; brotli/optimized/metablock.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %1, i1 true)
-  %3 = sub nsw i32 26, %2
+  %3 = sub nsw i32 30, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %0, %4
   ret i64 %5
@@ -53,10 +52,10 @@ entry:
 ; 4 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; brotli/optimized/compress_fragment.c.ll
-; brotli/optimized/metablock.c.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = tail call range(i32 0, 33) i32 @llvm.ctlz.i32(i32 %1, i1 true)
   %3 = sub nsw i32 30, %2

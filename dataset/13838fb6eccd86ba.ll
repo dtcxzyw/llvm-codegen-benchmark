@@ -44,12 +44,11 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind

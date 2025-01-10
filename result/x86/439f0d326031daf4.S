@@ -18,9 +18,8 @@ func0000000000000005:                   # @func0000000000000005
 	negq	%rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movq	%rdi, %rax
-	notq	%rax
-	shlq	$5, %rax
+	notq	%rdi
+	leaq	(,%rdi,8), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	notq	%rdi
@@ -30,11 +29,6 @@ func0000000000000004:                   # @func0000000000000004
 	shlq	$2, %rdi
 	movl	$1244, %eax                     # imm = 0x4DC
 	subq	%rdi, %rax
-	retq
-func0000000000000009:                   # @func0000000000000009
-	movq	%rdi, %rax
-	shlq	$5, %rax
-	negq	%rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	addq	%rdi, %rdi

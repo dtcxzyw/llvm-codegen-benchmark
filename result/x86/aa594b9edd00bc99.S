@@ -13,11 +13,6 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
-	orl	$-6, %esi
-	cmpl	%edi, %esi
-	setg	%al
-	retq
 func0000000000000034:                   # @func0000000000000034
 	orl	$1, %esi
 	cmpl	%edi, %esi
@@ -52,6 +47,11 @@ func0000000000000024:                   # @func0000000000000024
 	orl	$1, %esi
 	cmpl	%edi, %esi
 	setb	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	orl	$-2147483648, %esi              # imm = 0x80000000
+	cmpl	%edi, %esi
+	setg	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	orl	$1, %esi

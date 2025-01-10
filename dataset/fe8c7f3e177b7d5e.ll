@@ -1,5 +1,5 @@
 
-; 368 occurrences:
+; 367 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -243,7 +243,6 @@
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pdo_stmt.ll
 ; php/optimized/proc_open.ll

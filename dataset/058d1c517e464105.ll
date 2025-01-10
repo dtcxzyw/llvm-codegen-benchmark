@@ -728,6 +728,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; php/optimized/zend_accelerator_blacklist.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/edif.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000186(i64 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ne i8 %1, 0
+  %3 = icmp slt i64 %0, 12279
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; php/optimized/quot_print.ll
 ; Function Attrs: nounwind
@@ -839,18 +852,6 @@ define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 6
   %3 = icmp ugt i64 %0, 1
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; sqlite/optimized/sqlite3.ll
-; yosys/optimized/edif.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000186(i8 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ne i64 %1, 0
-  %3 = icmp slt i8 %0, 58
   %4 = and i1 %3, %2
   ret i1 %4
 }

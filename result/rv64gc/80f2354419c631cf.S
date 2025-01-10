@@ -82,6 +82,18 @@ func0000000000000101:                   # @func0000000000000101
 	addi	a0, a0, 2
 	seqz	a0, a0
 	ret
+func0000000000000044:                   # @func0000000000000044
+	add	a0, a0, a1
+	li	a1, -29
+	addi	a0, a0, 17
+	srli	a1, a1, 1
+	sltu	a0, a0, a1
+	ret
+func0000000000000041:                   # @func0000000000000041
+	addi	a1, a1, 17
+	or	a0, a0, a1
+	seqz	a0, a0
+	ret
 func00000000000001f4:                   # @func00000000000001f4
 	add	a0, a0, a1
 	addi	a0, a0, 1
@@ -221,18 +233,6 @@ func0000000000000086:                   # @func0000000000000086
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	srli	a0, a0, 63
-	ret
-func0000000000000041:                   # @func0000000000000041
-	addi	a1, a1, 17
-	or	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000044:                   # @func0000000000000044
-	add	a0, a0, a1
-	li	a1, -29
-	addi	a0, a0, 17
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	add	a0, a0, a1

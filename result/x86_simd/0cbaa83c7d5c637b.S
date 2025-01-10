@@ -25,12 +25,3 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
-	.long	64                              # 0x40
-func000000000000008c:                   # @func000000000000008c
-	vpcmpltud	.LCPI3_0(%rip){1to4}, %xmm2, %k1
-	vpandq	%ymm1, %ymm0, %ymm0 {%k1}
-	vptestmq	%ymm0, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq

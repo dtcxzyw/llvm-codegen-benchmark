@@ -1,5 +1,5 @@
 
-; 3712 occurrences:
+; 3710 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/amapUniq.c.ll
@@ -167,7 +167,6 @@
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/match.cpp.ll
 ; clamav/optimized/matcher-ac.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -183,7 +182,6 @@
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/unsp.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; clamav/optimized/yc.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -3283,6 +3281,7 @@
 ; wireshark/optimized/packet-meta.c.ll
 ; wireshark/optimized/packet-mih.c.ll
 ; wireshark/optimized/packet-mip6.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; wireshark/optimized/packet-msnlb.c.ll
 ; wireshark/optimized/packet-mstp.c.ll
@@ -3321,7 +3320,6 @@
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-q931.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-quake2.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-rdp.c.ll
@@ -4264,7 +4262,7 @@ entry:
   ret i16 %1
 }
 
-; 836 occurrences:
+; 835 occurrences:
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -4520,6 +4518,7 @@ entry:
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
+; linux/optimized/printk.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/quota.ll
@@ -4684,7 +4683,6 @@ entry:
 ; minetest/optimized/test_random.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -5033,7 +5031,6 @@ entry:
 ; wireshark/optimized/packet-pldm.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rf4ce-nwk.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
@@ -5108,7 +5105,7 @@ entry:
   ret i16 %1
 }
 
-; 1301 occurrences:
+; 1299 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/compress.c.ll
@@ -5179,6 +5176,7 @@ entry:
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/matcher-ac.c.ll
+; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/matcher.c.ll
 ; clamav/optimized/others_common.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -5596,7 +5594,6 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-ring.ll
 ; linux/optimized/xhci.ll
-; linux/optimized/xstate.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -6217,6 +6214,7 @@ entry:
 ; slurm/optimized/read_config.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; slurm/optimized/slurmdbd_pack.ll
+; soc-simulator/optimized/verilated.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/f32_to_bf16.ll
@@ -6318,16 +6316,13 @@ entry:
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-mint.c.ll
 ; wireshark/optimized/packet-moldudp.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-mqtt-sn.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-rtls.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
-; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; wireshark/optimized/packet-smb.c.ll

@@ -1,8 +1,8 @@
 
-%"struct.cv::FStructData.3730757" = type { %"class.std::__cxx11::basic_string.3730752", i32, i32 }
-%"class.std::__cxx11::basic_string.3730752" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753", i64, %union.anon.3730754 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730753" = type { ptr }
-%union.anon.3730754 = type { i64, [8 x i8] }
+%"struct.cv::FStructData.3730707" = type { %"class.std::__cxx11::basic_string.3730702", i32, i32 }
+%"class.std::__cxx11::basic_string.3730702" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730703", i64, %union.anon.3730704 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3730703" = type { ptr }
+%union.anon.3730704 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -82,7 +82,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.cv::FStructData.3730757", ptr %0, i64 %1
+  %3 = getelementptr %"struct.cv::FStructData.3730707", ptr %0, i64 %1
   %.idx = mul i64 %2, 480
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr i8, ptr %4, i64 -80

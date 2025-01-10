@@ -44,6 +44,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; clamav/optimized/pe_icons.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 6
+  %3 = and i32 %2, -256
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; linux/optimized/forcedeth.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll

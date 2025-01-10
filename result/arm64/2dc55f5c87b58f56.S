@@ -61,13 +61,6 @@ func0000000000000006:                   // @func0000000000000006
 	add	x0, x0, w8, sxtw
 	ret
                                         // -- End function
-func0000000000000023:                   // @func0000000000000023
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	add	x0, x0, w8, sxtw #3
-	ret
-                                        // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
 	add	w8, w2, w1
@@ -75,24 +68,10 @@ func0000000000000034:                   // @func0000000000000034
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #2
-	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
 	add	w8, w2, w1
 	add	w8, w8, #1
-	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
-func0000000000000037:                   // @func0000000000000037
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #4
 	add	x0, x0, w8, sxtw
 	ret
                                         // -- End function
@@ -108,27 +87,6 @@ func000000000000003c:                   // @func000000000000003c
 	add	w8, w2, w1
 	add	w8, w8, #2
 	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #7
-	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #40
-	add	x0, x0, w8, sxtw #3
-	ret
-                                        // -- End function
-func0000000000000033:                   // @func0000000000000033
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030

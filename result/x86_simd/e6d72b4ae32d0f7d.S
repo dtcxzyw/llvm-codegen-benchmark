@@ -66,23 +66,11 @@ func0000000000000002:                   # @func0000000000000002
 	vporq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI7_0:
-	.quad	12                              # 0xc
-.LCPI7_1:
-	.quad	11                              # 0xb
-func0000000000000008:                   # @func0000000000000008
-	vpslld	$31, %xmm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vpsllq	$56, %ymm2, %ymm1
-	vpbroadcastq	.LCPI7_0(%rip), %ymm2   # ymm2 = [12,12,12,12]
-	vpbroadcastq	.LCPI7_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [11,11,11,11]
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
-	retq
-.LCPI8_0:
 	.quad	536870912                       # 0x20000000
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpsllq	$32, %ymm2, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
-	vporq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vporq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

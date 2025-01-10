@@ -30,13 +30,6 @@ func0000000000000050:                   # @func0000000000000050
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000098c:                   # @func000000000000098c
-	cmpl	%edx, %esi
-	setle	%cl
-	testl	%edi, %edi
-	setle	%al
-	orb	%cl, %al
-	retq
 func0000000000000048:                   # @func0000000000000048
 	subl	%edx, %esi
 	cmpl	$2, %esi

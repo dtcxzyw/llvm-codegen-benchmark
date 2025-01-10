@@ -31,3 +31,15 @@ func00000000000002a4:                   # @func00000000000002a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI3_0:
+	.quad	-19                             # 0xffffffffffffffed
+.LCPI3_1:
+	.quad	-15                             # 0xfffffffffffffff1
+func00000000000000a8:                   # @func00000000000000a8
+	vpsllq	$32, %ymm0, %ymm0
+	vpsraq	$32, %ymm0, %ymm0
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpltuq	.LCPI3_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

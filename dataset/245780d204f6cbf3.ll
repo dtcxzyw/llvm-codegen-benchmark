@@ -45,9 +45,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
+; proj/optimized/grids.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000aaa(double %0, double %1, double %2) #0 {
 entry:

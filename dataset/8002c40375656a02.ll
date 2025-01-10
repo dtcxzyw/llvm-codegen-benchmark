@@ -1,10 +1,6 @@
 
-; 361 occurrences:
+; 355 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/rwrEva.c.ll
@@ -193,7 +189,6 @@
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
@@ -227,7 +222,6 @@
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/php_http_parser.ll

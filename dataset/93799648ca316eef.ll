@@ -1,5 +1,5 @@
 
-; 408 occurrences:
+; 409 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -286,6 +286,7 @@
 ; quantlib/optimized/schedule.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
@@ -411,8 +412,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
-  %3 = select i1 %0, i64 0, i64 %2
+  %2 = lshr i64 %1, 32
+  %3 = select i1 %0, i64 4294967295, i64 %2
   ret i64 %3
 }
 

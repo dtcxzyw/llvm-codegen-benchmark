@@ -71,14 +71,6 @@ func00000000000001e5:                   # @func00000000000001e5
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rsi, %rax
-	shlq	$8, %rax
-	subq	%rsi, %rax
-	addq	$18, %rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
 func00000000000000a6:                   # @func00000000000000a6
 	leaq	2(%rsi,%rsi,2), %rax
 	cmpq	%rdi, %rax

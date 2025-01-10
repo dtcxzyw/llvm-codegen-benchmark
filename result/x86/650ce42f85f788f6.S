@@ -5,6 +5,12 @@ func0000000000000017:                   # @func0000000000000017
 	shll	$4, %eax
 	addq	%rdi, %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	sarq	$32, %rdx
+	leaq	(%rdx,%rsi), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000013:                   # @func0000000000000013
 	shrq	$2, %rdx
 	leal	(%rdx,%rsi), %eax

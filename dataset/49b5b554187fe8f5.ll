@@ -1,5 +1,6 @@
 
 ; 298 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -45,7 +46,6 @@
 ; git/optimized/revision.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/reflection.cpp.ll
-; gromacs/optimized/tng_io.c.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; hdf5/optimized/H5Sselect.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
@@ -1214,8 +1214,7 @@ entry:
   ret i1 %4
 }
 
-; 302 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 301 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sscSim.c.ll
@@ -1526,12 +1525,13 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/cmsysTestsCxx.cxx.ll
 ; lief/optimized/nist_kw.c.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/SemaAMDGPU.cpp.ll
+; openjdk/optimized/jdmarker.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
 ; php/optimized/zend_jit.ll

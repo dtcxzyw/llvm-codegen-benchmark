@@ -56,8 +56,9 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; boost/optimized/to_chars.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; llvm/optimized/SemaObjC.cpp.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll

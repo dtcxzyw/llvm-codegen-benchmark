@@ -1812,7 +1812,7 @@ entry:
   ret i1 %3
 }
 
-; 170 occurrences:
+; 169 occurrences:
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -1831,7 +1831,6 @@ entry:
 ; flac/optimized/stream_decoder.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/diff-delta.ll
-; git/optimized/line-log.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll

@@ -118,7 +118,7 @@ entry:
   ret i1 %5
 }
 
-; 215 occurrences:
+; 214 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -303,7 +303,6 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/ldebug.ll

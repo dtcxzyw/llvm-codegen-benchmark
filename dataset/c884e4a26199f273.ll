@@ -1,5 +1,5 @@
 
-%struct.list_head.3535195 = type { ptr, ptr }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -24,7 +24,7 @@ entry:
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 0, !prof !0
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr [12 x %struct.list_head.3535195], ptr %0, i64 0, i64 %6
+  %7 = getelementptr [12 x %struct.list_head.3535161], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

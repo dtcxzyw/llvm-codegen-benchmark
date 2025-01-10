@@ -1,7 +1,8 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/iov_iter.ll
 ; llvm/optimized/Replacement.cpp.ll
@@ -9,6 +10,7 @@
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; raylib/optimized/raudio.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind

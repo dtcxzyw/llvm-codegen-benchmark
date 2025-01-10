@@ -48,9 +48,8 @@ func0000000000000034:                   // @func0000000000000034
 func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	cmp	x1, #0
-	ubfx	x8, x2, #3, #1
-	cset	w9, ne
-	and	w9, w9, w0
-	and	w0, w9, w8
+	and	w9, w0, w2
+	cset	w8, ne
+	and	w0, w8, w9
 	ret
                                         // -- End function

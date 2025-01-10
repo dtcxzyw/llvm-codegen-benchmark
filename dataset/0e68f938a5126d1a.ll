@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
 
-; 146 occurrences:
+; 145 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -139,7 +139,6 @@
 ; stb/optimized/stb_image.c.ll
 ; tev/optimized/Common.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; tomlplusplus/optimized/toml.cpp.ll
 ; yosys/optimized/lz4.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
@@ -157,7 +156,7 @@ entry:
   ret ptr %5
 }
 
-; 150 occurrences:
+; 151 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -308,6 +307,7 @@ entry:
 ; ruby/optimized/gbk.ll
 ; ruby/optimized/shift_jis.ll
 ; ruby/optimized/windows_31j.ll
+; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1729,7 +1729,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %3, 31
-  %5 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %4
   ret ptr %5
 }
 

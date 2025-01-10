@@ -130,7 +130,7 @@ entry:
   ret i1 %6
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
@@ -146,6 +146,7 @@ entry:
 ; ocio/optimized/FileFormatSpi3D.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; php/optimized/dce.ll
+; php/optimized/zend_alloc.ll
 ; php/optimized/zend_cfg.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll

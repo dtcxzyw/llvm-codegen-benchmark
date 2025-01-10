@@ -53,6 +53,13 @@ func00000000000001cc:                   # @func00000000000001cc
 	setl	%al
 	orb	%cl, %al
 	retq
+func0000000000000252:                   # @func0000000000000252
+	cmpl	%edx, %esi
+	setae	%cl
+	cmpl	%esi, %edi
+	setae	%al
+	orb	%cl, %al
+	retq
 func000000000000004c:                   # @func000000000000004c
 	cmpl	%edi, %edx
 	sete	%cl

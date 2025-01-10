@@ -35,13 +35,15 @@ func0000000000000181:                   # @func0000000000000181
 	vzeroupper
 	retq
 .LCPI3_0:
-	.quad	7                               # 0x7
+	.long	1116                            # 0x45c
+.LCPI3_1:
+	.quad	2147483648                      # 0x80000000
 func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
-	vptestnmd	%xmm1, %xmm1, %k1
-	vptestnmq	.LCPI3_0(%rip){1to4}, %ymm2, %k1 {%k1}
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm0, %xmm1, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpeqd	.LCPI3_0(%rip){1to4}, %xmm1, %k1
+	vptestnmq	.LCPI3_1(%rip){1to4}, %ymm2, %k1 {%k1}
+	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

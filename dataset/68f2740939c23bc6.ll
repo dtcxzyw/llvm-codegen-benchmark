@@ -1,11 +1,12 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/erf.c.ll
+; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; z3/optimized/pb_pb.cpp.ll
 ; Function Attrs: nounwind

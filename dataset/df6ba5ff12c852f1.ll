@@ -1,5 +1,5 @@
 
-%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
+%struct.mstate_aux.3855306 = type { i32, i32, i16, i32 }
 
 ; 2 occurrences:
 ; linux/optimized/scsi_lib.ll
@@ -155,7 +155,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -64
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.mstate_aux.3855306, ptr %4, i64 %5
   ret ptr %6
 }
 

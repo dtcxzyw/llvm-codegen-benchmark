@@ -15,12 +15,12 @@ func000000000000006d:                   # @func000000000000006d
 	adcq	%r8, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000048:                   # @func0000000000000048
 	addq	%rcx, %rsi
 	adcq	%r8, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000008:                   # @func0000000000000008
 	addq	%rcx, %rsi
 	adcq	%r8, %rdx
 	leaq	(%rdx,%rdi), %rax

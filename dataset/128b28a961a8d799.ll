@@ -1,10 +1,10 @@
 
-%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
-%union.anon.2802904 = type { i64, [8 x i8] }
-%"class.clang::DeclAccessPair.3137956" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137957" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3137957" = type { %struct.anon.3137958 }
-%struct.anon.3137958 = type { [8 x i8] }
+%"class.std::__cxx11::basic_string.2802868" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869", i64, %union.anon.2802870 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869" = type { ptr }
+%union.anon.2802870 = type { i64, [8 x i8] }
+%"class.clang::DeclAccessPair.3137922" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137923" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3137923" = type { %struct.anon.3137924 }
+%struct.anon.3137924 = type { [8 x i8] }
 
 ; 2 occurrences:
 ; freetype/optimized/autofit.c.ll
@@ -13,7 +13,7 @@
 define ptr @func000000000000000e(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802868", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = select i1 %0, ptr null, ptr %5
   ret ptr %6
@@ -99,7 +99,7 @@ entry:
 define ptr @func000000000000001f(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137956", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137922", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = select i1 %0, ptr null, ptr %5
   ret ptr %6

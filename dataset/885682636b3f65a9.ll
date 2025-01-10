@@ -1,5 +1,5 @@
 
-; 643 occurrences:
+; 641 occurrences:
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -287,8 +287,6 @@
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -651,7 +649,7 @@ entry:
   ret i8 %2
 }
 
-; 164 occurrences:
+; 165 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -755,6 +753,7 @@ entry:
 ; node/optimized/simdutf.ll
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openjdk/optimized/compilerEvent.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; openjdk/optimized/jfrThreadLocal.ll

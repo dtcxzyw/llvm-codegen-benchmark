@@ -1,8 +1,8 @@
 
-%struct.hart_debug_state_t.2901908 = type { i8, i8, i8, i8 }
-%union.IRIns.3680605 = type { %struct.GCRef.3680606 }
-%struct.GCRef.3680606 = type { i64 }
-%struct.FT_Vector_.3881692 = type { i64, i64 }
+%struct.hart_debug_state_t.2901874 = type { i8, i8, i8, i8 }
+%union.IRIns.3680555 = type { %struct.GCRef.3680556 }
+%struct.GCRef.3680556 = type { i64 }
+%struct.FT_Vector_.3881642 = type { i64, i64 }
 
 ; 9 occurrences:
 ; abc/optimized/abcSop.c.ll
@@ -191,7 +191,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 1, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.hart_debug_state_t.2901908, ptr %0, i64 %5
+  %6 = getelementptr %struct.hart_debug_state_t.2901874, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -216,7 +216,7 @@ entry:
   %3 = icmp ugt i32 %2, 255
   %4 = select i1 %3, i32 128, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %union.IRIns.3680605, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %union.IRIns.3680555, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -228,7 +228,7 @@ entry:
   %3 = icmp ugt i32 %2, 65535
   %4 = select i1 %3, i32 65535, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.FT_Vector_.3881692, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.FT_Vector_.3881642, ptr %0, i64 %5
   ret ptr %6
 }
 

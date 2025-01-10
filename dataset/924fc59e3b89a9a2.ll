@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2877402 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877368 = type <{ i64, i32 }>
 
 ; 4 occurrences:
 ; abc/optimized/giaFanout.c.ll
@@ -10,7 +10,7 @@
 define i1 @func00000000000000c1(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877402, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877368, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = icmp eq i64 %0, %5
   ret i1 %6

@@ -21,25 +21,11 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; abc/optimized/cuddTable.c.ll
-; postgres/optimized/snapmgr.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000dd(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 760
-  %5 = shl nsw i64 %0, 6
-  %6 = add nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/diff-delta.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprObjC.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; quickjs/optimized/quickjs.ll
@@ -66,6 +52,20 @@ entry:
   %4 = add nuw nsw i64 %3, 64
   %5 = shl nuw nsw i64 %0, 2
   %6 = add nuw nsw i64 %4, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; postgres/optimized/snapmgr.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000dd(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw nsw i64 %3, 64
+  %5 = shl nsw i64 %0, 3
+  %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 

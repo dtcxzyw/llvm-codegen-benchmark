@@ -14,7 +14,7 @@ entry:
   ret i64 %7
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -27,6 +27,7 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/ustdio.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/huffman_utils.c.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll

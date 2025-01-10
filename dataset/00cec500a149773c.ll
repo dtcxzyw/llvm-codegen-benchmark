@@ -35,7 +35,7 @@ entry:
   ret ptr %6
 }
 
-; 69 occurrences:
+; 71 occurrences:
 ; abc/optimized/inflate.c.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; boost/optimized/xml_woarchive.ll
@@ -49,6 +49,7 @@ entry:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; eastl/optimized/TestVector.cpp.ll
+; glog/optimized/symbolize.cc.ll
 ; gromacs/optimized/inflate.c.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
@@ -94,6 +95,7 @@ entry:
 ; spike/optimized/cachesim.ll
 ; stb/optimized/stb_include.c.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
+; wolfssl/optimized/suites.c.ll
 ; yosys/optimized/lz4.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
@@ -115,7 +117,7 @@ entry:
   ret ptr %6
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -139,7 +141,6 @@ entry:
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; cvc5/optimized/theory_ff_rewriter.cpp.ll
 ; cvc5/optimized/theory_uf_rewriter.cpp.ll
-; glog/optimized/symbolize.cc.ll
 ; grpc/optimized/address_filtering.cc.ll
 ; libquic/optimized/ip_address.cc.ll
 ; luau/optimized/TypeInfer.cpp.ll
@@ -147,7 +148,6 @@ entry:
 ; opencv/optimized/pooling_layer.cpp.ll
 ; php/optimized/iconv.ll
 ; quantlib/optimized/liborforwardmodel.ll
-; wolfssl/optimized/suites.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, i64 %1, ptr %2) #0 {
 entry:

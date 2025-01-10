@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.30.2777666" = type { %"struct.std::__atomic_base.31.2777676" }
-%"struct.std::__atomic_base.31.2777676" = type { i64 }
+%"struct.std::atomic.30.2777632" = type { %"struct.std::__atomic_base.31.2777642" }
+%"struct.std::__atomic_base.31.2777642" = type { i64 }
 
 ; 161 occurrences:
 ; abc/optimized/bmcClp.c.ll
@@ -180,7 +180,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr nusw [2 x %"struct.std::atomic.30.2777666"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [2 x %"struct.std::atomic.30.2777632"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

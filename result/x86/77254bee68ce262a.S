@@ -15,6 +15,13 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	%eax, %edi
 	cmovll	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%edx, %eax
+	shll	$8, %eax
+	orl	%esi, %eax
+	cmpl	%eax, %edi
+	cmovll	%edi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edx, %eax
 	shll	$8, %eax

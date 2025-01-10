@@ -1,5 +1,5 @@
 
-; 184 occurrences:
+; 187 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/crc32c_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -79,6 +79,7 @@
 ; lief/optimized/bignum.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/datagram.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/iov_iter.ll
@@ -149,7 +150,9 @@
 ; openmpi/optimized/opal_datatype_unpack.ll
 ; openmpi/optimized/osc_base_obj_convert.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_block.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-sha3.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-sha3.ll
 ; openusd/optimized/read.c.ll
 ; php/optimized/php_http_parser.ll

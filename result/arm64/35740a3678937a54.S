@@ -13,13 +13,13 @@ func000000000000000f:                   // @func000000000000000f
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	tst	w1, #0x1
-	mov	w8, #4                          // =0x4
-	mov	w9, #2                          // =0x2
+	mov	w8, #8192                       // =0x2000
+	mov	w9, #32768                      // =0x8000
 	csel	w8, w8, wzr, ne
 	tst	w0, #0x1
-	orr	w8, w8, w2, lsl #4
-	cinc	w9, w9, eq
-	orr	w0, w9, w8
+	orr	w8, w8, w2, lsl #20
+	csel	w9, w9, wzr, ne
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b

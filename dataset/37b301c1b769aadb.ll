@@ -1,10 +1,10 @@
 
-%"class.asmjit::_abi_1_10::Operand.2607746" = type { %"struct.asmjit::_abi_1_10::Operand_.2607747" }
-%"struct.asmjit::_abi_1_10::Operand_.2607747" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607743", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2607743" = type { i32 }
-%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549", i32, i32 }
-%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549" = type { ptr, [40 x i8] }
+%"class.asmjit::_abi_1_10::Operand.2607713" = type { %"struct.asmjit::_abi_1_10::Operand_.2607714" }
+%"struct.asmjit::_abi_1_10::Operand_.2607714" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607710", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2607710" = type { i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515", i32, i32 }
+%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515" = type { ptr, [40 x i8] }
 
 ; 147 occurrences:
 ; abc/optimized/FxchMan.c.ll
@@ -164,7 +164,7 @@ entry:
   ret i64 %6
 }
 
-; 178 occurrences:
+; 177 occurrences:
 ; boost/optimized/console_buffer.ll
 ; boost/optimized/dump_avx2.ll
 ; boost/optimized/numeric.ll
@@ -195,7 +195,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; git/optimized/writer.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -346,13 +345,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607746", ptr %1, i64 %2, i32 0, i32 1
+  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607713", ptr %1, i64 %2, i32 0, i32 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   ret i64 %5
 }
 
-; 477 occurrences:
+; 478 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -376,6 +375,7 @@ entry:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -840,7 +840,7 @@ entry:
   ret i64 %6
 }
 
-; 77 occurrences:
+; 76 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; boost/optimized/read_graphviz_new.ll
@@ -848,7 +848,6 @@ entry:
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
@@ -928,7 +927,7 @@ entry:
   ret i64 %6
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
@@ -956,6 +955,7 @@ entry:
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
 ; git/optimized/fast-import.ll
+; git/optimized/writer.ll
 ; grpc/optimized/client_channel.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -1067,7 +1067,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -56
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

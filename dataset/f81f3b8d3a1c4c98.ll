@@ -793,7 +793,7 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; coremark/optimized/core_list_join.c.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -805,7 +805,6 @@ entry:
 ; php/optimized/tokenizer.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; sqlite/optimized/sqlite3.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000007e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -1008,6 +1007,18 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; verilator/optimized/V3OrderParallel.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e4(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 

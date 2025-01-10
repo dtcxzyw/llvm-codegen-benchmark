@@ -1,13 +1,13 @@
 
-%"class.QuantLib::Matrix.2850986" = type { %"class.std::unique_ptr.33.2850987", i64, i64 }
-%"class.std::unique_ptr.33.2850987" = type { %"struct.std::__uniq_ptr_data.34.2850988" }
-%"struct.std::__uniq_ptr_data.34.2850988" = type { %"class.std::__uniq_ptr_impl.35.2850989" }
-%"class.std::__uniq_ptr_impl.35.2850989" = type { %"class.std::tuple.36.2850990" }
-%"class.std::tuple.36.2850990" = type { %"struct.std::_Tuple_impl.37.2850991" }
-%"struct.std::_Tuple_impl.37.2850991" = type { %"struct.std::_Head_base.40.2850992" }
-%"struct.std::_Head_base.40.2850992" = type { ptr }
-%"class.glslang::TConstUnion.2911511" = type <{ %union.anon.0.2911512, i32, [4 x i8] }>
-%union.anon.0.2911512 = type { i64 }
+%"class.QuantLib::Matrix.2850952" = type { %"class.std::unique_ptr.33.2850953", i64, i64 }
+%"class.std::unique_ptr.33.2850953" = type { %"struct.std::__uniq_ptr_data.34.2850954" }
+%"struct.std::__uniq_ptr_data.34.2850954" = type { %"class.std::__uniq_ptr_impl.35.2850955" }
+%"class.std::__uniq_ptr_impl.35.2850955" = type { %"class.std::tuple.36.2850956" }
+%"class.std::tuple.36.2850956" = type { %"struct.std::_Tuple_impl.37.2850957" }
+%"struct.std::_Tuple_impl.37.2850957" = type { %"struct.std::_Head_base.40.2850958" }
+%"struct.std::_Head_base.40.2850958" = type { ptr }
+%"class.glslang::TConstUnion.2911477" = type <{ %union.anon.0.2911478, i32, [4 x i8] }>
+%union.anon.0.2911478 = type { i64 }
 
 ; 27 occurrences:
 ; clamav/optimized/cabd.c.ll
@@ -88,7 +88,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.QuantLib::Matrix.2850986", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.QuantLib::Matrix.2850952", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -106,7 +106,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.glslang::TConstUnion.2911511", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.glslang::TConstUnion.2911477", ptr %0, i64 %5
   ret ptr %6
 }
 

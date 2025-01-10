@@ -25,6 +25,6 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%esi, %eax
-	andb	$3, %al
+	andb	$7, %al
 	orb	%dil, %al
 	retq

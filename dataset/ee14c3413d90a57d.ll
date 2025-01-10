@@ -25,7 +25,7 @@ entry:
   ret i32 %6
 }
 
-; 370 occurrences:
+; 371 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/light_array.cc.ll
@@ -150,6 +150,7 @@ entry:
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/Expr.cpp.ll

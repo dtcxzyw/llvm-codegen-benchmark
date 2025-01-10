@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; linux/optimized/gup.ll
@@ -228,8 +228,8 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw %"class.llvm::Use.3191562", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3191562", ptr %5, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3191528", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3191528", ptr %5, i64 %4
   ret ptr %6
 }
 

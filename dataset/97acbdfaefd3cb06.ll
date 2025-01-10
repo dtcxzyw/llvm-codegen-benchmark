@@ -17,7 +17,7 @@ entry:
   ret i16 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; git/optimized/skipping.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; lvgl/optimized/lv_draw_arc.ll
@@ -42,7 +42,6 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ppcap.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind

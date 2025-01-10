@@ -1,5 +1,5 @@
 
-%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
+%struct.mstate_aux.3855306 = type { i32, i32, i16, i32 }
 
 ; 3 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
@@ -65,7 +65,7 @@ entry:
   %4 = getelementptr nusw i8, ptr %1, i64 -64
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext nneg i16 %0 to i64
-  %7 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %struct.mstate_aux.3855306, ptr %5, i64 %6
   ret ptr %7
 }
 

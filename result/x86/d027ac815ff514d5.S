@@ -40,3 +40,9 @@ func0000000000001fe1:                   # @func0000000000001fe1
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+func0000000000001869:                   # @func0000000000001869
+	addq	%rdx, %rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	setae	%al
+	retq

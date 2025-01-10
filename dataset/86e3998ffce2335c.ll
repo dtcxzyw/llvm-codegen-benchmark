@@ -3294,7 +3294,7 @@ entry:
   ret i1 %4
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; cvc5/optimized/didyoumean.cpp.ll
 ; cvc5/optimized/lfsc_printer.cpp.ll
@@ -3351,6 +3351,7 @@ entry:
 ; quantlib/optimized/squarerootclvmodel.ll
 ; rocksdb/optimized/compaction_job.cc.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
+; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; wasmedge/optimized/environ.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
@@ -4009,7 +4010,7 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; arrow/optimized/string.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -4061,6 +4062,7 @@ entry:
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/subperiodcoupon.ll
 ; quantlib/optimized/utilities.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/spank.ll
 ; stockfish/optimized/tbprobe.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll

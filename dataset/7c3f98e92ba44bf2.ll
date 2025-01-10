@@ -1,5 +1,5 @@
 
-; 410 occurrences:
+; 412 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; clamav/optimized/pdfdecode.c.ll
@@ -186,6 +186,7 @@
 ; linux/optimized/xt_policy.ll
 ; linux/optimized/xt_tcpudp.ll
 ; llvm/optimized/Lexer.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; openjdk/optimized/methodData.ll
 ; postgres/optimized/amvalidate.ll
@@ -241,6 +242,7 @@
 ; qemu/optimized/trace_control.c.ll
 ; qemu/optimized/util_fdmon-io_uring.c.ll
 ; quickjs/optimized/quickjs.ll
+; raylib/optimized/raudio.c.ll
 ; ruby/optimized/gc.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/regparse.ll
@@ -418,7 +420,7 @@ entry:
   ret i1 %3
 }
 
-; 131 occurrences:
+; 129 occurrences:
 ; coreutils-rs/optimized/2xf0tcanjahg0sla.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
@@ -437,7 +439,6 @@ entry:
 ; linux/optimized/ptp_chardev.ll
 ; linux/optimized/quirks.ll
 ; linux/optimized/xfrm_input.ll
-; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; postgres/optimized/allpaths.ll
 ; postgres/optimized/analyze.ll
@@ -482,7 +483,6 @@ entry:
 ; postgres/optimized/zic.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
-; raylib/optimized/raudio.c.ll
 ; redis/optimized/listpack.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; ripgrep-rs/optimized/2425miidforqaenw.ll

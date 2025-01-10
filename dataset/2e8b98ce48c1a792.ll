@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
 
 ; 2 occurrences:
 ; libpng/optimized/pngrutil.c.ll
@@ -28,7 +28,7 @@ define i64 @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

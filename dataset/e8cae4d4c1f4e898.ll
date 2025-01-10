@@ -1,15 +1,13 @@
 
-; 153 occurrences:
+; 151 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/city.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; folly/optimized/farmhash.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/kaslr.ll

@@ -1,7 +1,7 @@
 
-%"class.llvm::SlotIndex.3143181" = type { %"class.llvm::PointerIntPair.3143182" }
-%"class.llvm::PointerIntPair.3143182" = type { %"struct.llvm::detail::PunnedPointer.3143183" }
-%"struct.llvm::detail::PunnedPointer.3143183" = type { [8 x i8] }
+%"class.llvm::SlotIndex.3143147" = type { %"class.llvm::PointerIntPair.3143148" }
+%"class.llvm::PointerIntPair.3143148" = type { %"struct.llvm::detail::PunnedPointer.3143149" }
+%"struct.llvm::detail::PunnedPointer.3143149" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; php/optimized/zend_alloc.ll
@@ -33,7 +33,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %0 to ptr
   %5 = getelementptr nusw nuw i8, ptr %4, i64 96
-  %6 = getelementptr nusw nuw [12 x %"class.llvm::SlotIndex.3143181"], ptr %5, i64 0, i64 %3
+  %6 = getelementptr nusw nuw [12 x %"class.llvm::SlotIndex.3143147"], ptr %5, i64 0, i64 %3
   ret ptr %6
 }
 

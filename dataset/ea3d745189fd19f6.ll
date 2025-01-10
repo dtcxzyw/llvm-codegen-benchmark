@@ -1,5 +1,5 @@
 
-%struct.aiFace.2822415 = type { i32, ptr }
+%struct.aiFace.2822381 = type { i32, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
@@ -71,14 +71,15 @@ define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.aiFace.2822415, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.aiFace.2822381, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
+; linux/optimized/libata-core.ll
 ; postgres/optimized/data.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {

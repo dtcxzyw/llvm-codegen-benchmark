@@ -1,9 +1,13 @@
 
-; 31 occurrences:
+; 35 occurrences:
 ; boost/optimized/src.ll
 ; cmake/optimized/cmString.cxx.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
 ; freetype/optimized/ftlzw.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; libquic/optimized/ripemd_test.cc.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/sg.ll
@@ -43,7 +47,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 91 occurrences:
+; 95 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -55,6 +59,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/src.ll
 ; boost/optimized/test_filebuf.ll
 ; clamav/optimized/Lzma2Dec.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
@@ -108,6 +113,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
+; php/optimized/KeccakSponge.ll
 ; postgres/optimized/basebackup.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
@@ -125,6 +131,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/rio.ll
 ; rocksdb/optimized/mock_env.cc.ll
 ; slurm/optimized/gres_ctld.ll

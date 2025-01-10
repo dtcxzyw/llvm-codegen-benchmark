@@ -42,8 +42,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; linux/optimized/memory.ll
+; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
@@ -160,17 +159,6 @@ define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 9223372036854775807, %0
-  %4 = icmp slt i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/buffile.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = sub i64 1073741824, %0
   %4 = icmp slt i64 %3, %2
   ret i1 %4
 }

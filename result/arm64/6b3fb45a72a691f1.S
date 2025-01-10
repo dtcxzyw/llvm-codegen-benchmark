@@ -40,6 +40,12 @@ func000000000000006b:                   // @func000000000000006b
 	ubfiz	x0, x8, #3, #32
 	ret
                                         // -- End function
+func000000000000007f:                   // @func000000000000007f
+// %bb.0:                               // %entry
+	lsl	w8, w0, #4
+	add	w0, w8, #64
+	ret
+                                        // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	lsl	w8, w0, #4
@@ -51,13 +57,6 @@ func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	lsl	w8, w0, #3
 	add	w8, w8, #576
-	lsl	x0, x8, #32
-	ret
-                                        // -- End function
-func000000000000007f:                   // @func000000000000007f
-// %bb.0:                               // %entry
-	lsl	w8, w0, #3
-	add	w8, w8, #80
 	lsl	x0, x8, #32
 	ret
                                         // -- End function

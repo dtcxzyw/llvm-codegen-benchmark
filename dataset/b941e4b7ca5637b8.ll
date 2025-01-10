@@ -1,5 +1,5 @@
 
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
 
 ; 1075 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -1110,7 +1110,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %0, i64 %5
+  %6 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

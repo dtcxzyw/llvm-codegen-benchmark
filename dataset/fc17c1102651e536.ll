@@ -50,9 +50,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/cutPre22.c.ll
-; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

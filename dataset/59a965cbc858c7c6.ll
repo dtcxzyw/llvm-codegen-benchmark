@@ -1008,7 +1008,7 @@ entry:
   ret i1 %3
 }
 
-; 411 occurrences:
+; 412 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcCexCare.c.ll
@@ -1420,6 +1420,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinympc/optimized/codegen.cpp.ll
 ; yosys/optimized/subcircuit.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
@@ -1779,13 +1780,14 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll

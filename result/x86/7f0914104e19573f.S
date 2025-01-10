@@ -12,3 +12,10 @@ func0000000000000040:                   # @func0000000000000040
 	subq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	32(%rsi), %rax
+	cmpq	%rdx, %rax
+	cmovaeq	%rdx, %rax
+	subq	%rsi, %rax
+	addq	%rdi, %rax
+	retq

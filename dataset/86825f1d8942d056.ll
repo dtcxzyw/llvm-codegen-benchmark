@@ -1,5 +1,5 @@
 
-; 99 occurrences:
+; 100 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; arrow/optimized/crc32.cc.ll
@@ -10,6 +10,7 @@
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/binascii.ll
 ; cpython/optimized/readline.ll
+; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/zlibmodule.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestSet.cpp.ll
@@ -108,7 +109,7 @@ entry:
   ret i1 %4
 }
 
-; 323 occurrences:
+; 321 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/saigIoa.c.ll
 ; abseil-cpp/optimized/int128_stream_test.cc.ll
@@ -184,7 +185,6 @@ entry:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/recvol.cpp.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/compile.ll
@@ -431,7 +431,6 @@ entry:
 ; zed-rs/optimized/byetpqxts7g45vq87gqqiy5uv.ll
 ; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
 ; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
@@ -441,7 +440,7 @@ entry:
   ret i1 %4
 }
 
-; 223 occurrences:
+; 222 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; assimp/optimized/unzip.c.ll
 ; boost/optimized/cmdline.ll
@@ -452,7 +451,6 @@ entry:
 ; clamav/optimized/js-norm.c.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/archive_match.c.ll
-; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/file.c.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
@@ -1601,6 +1599,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; hermes/optimized/APInt.cpp.ll
+; linux/optimized/rsrc.ll
+; redis/optimized/module.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ne i64 %1, 0
+  %3 = icmp ugt i32 %0, 64
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 8 occurrences:
 ; hermes/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/gtest-all.cc.ll
@@ -1702,18 +1713,6 @@ define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 256
   %3 = icmp sgt i32 %0, -1
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 2 occurrences:
-; linux/optimized/rsrc.ll
-; redis/optimized/module.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ne i64 %1, 0
-  %3 = icmp ugt i32 %0, -3
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

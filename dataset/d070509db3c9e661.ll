@@ -18,7 +18,7 @@ entry:
   ret i1 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -38,6 +38,7 @@ entry:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/ndisc.ll

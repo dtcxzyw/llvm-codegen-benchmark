@@ -1,5 +1,5 @@
 
-%"struct.std::__1::pair.248.2607584" = type { i32, i32 }
+%"struct.std::__1::pair.248.2607551" = type { i32, i32 }
 
 ; 7 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %4 = mul i32 %1, 3
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607584", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607551", ptr %0, i64 %6
   ret ptr %7
 }
 

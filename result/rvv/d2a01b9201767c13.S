@@ -58,13 +58,6 @@ func0000000000000108:                   # @func0000000000000108
 	vmsltu.vv	v12, v8, v10
 	vmand.mm	v0, v14, v12
 	ret
-func0000000000000181:                   # @func0000000000000181
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v12, -1
-	lui	a0, 131072
-	vmerge.vxm	v10, v10, a0, v0
-	vmseq.vv	v0, v10, v8
-	ret
 func0000000000000081:                   # @func0000000000000081
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v0, v12, 1

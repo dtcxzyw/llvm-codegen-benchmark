@@ -72,7 +72,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/mapperCreate.c.ll
@@ -84,6 +84,7 @@ entry:
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/swap_state.ll
+; linux/optimized/xstate.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; Function Attrs: nounwind

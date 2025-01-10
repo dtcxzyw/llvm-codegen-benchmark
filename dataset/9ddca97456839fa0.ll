@@ -349,26 +349,6 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
-; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/VTableBuilder.cpp.ll
-; openusd/optimized/tetMesh.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
-; z3/optimized/maxlex.cpp.ll
-; z3/optimized/spacer_convex_closure.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
-entry:
-  %.idx = shl i64 %1, 5
-  %2 = getelementptr i8, ptr %0, i64 %.idx
-  %3 = getelementptr i8, ptr %2, i64 40
-  ret ptr %3
-}
-
 ; 3 occurrences:
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
@@ -423,6 +403,25 @@ entry:
   %.idx = shl i64 %1, 7
   %2 = getelementptr i8, ptr %0, i64 %.idx
   %3 = getelementptr i8, ptr %2, i64 -48
+  ret ptr %3
+}
+
+; 9 occurrences:
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
+; openusd/optimized/tetMesh.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; z3/optimized/maxlex.cpp.ll
+; z3/optimized/spacer_convex_closure.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+entry:
+  %.idx = mul i64 %1, 48
+  %2 = getelementptr i8, ptr %0, i64 %.idx
+  %3 = getelementptr i8, ptr %2, i64 64
   ret ptr %3
 }
 

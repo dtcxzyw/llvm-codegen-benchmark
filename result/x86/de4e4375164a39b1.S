@@ -1,11 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
-	cmpl	$100, %edi
-	movl	$100, %eax
+	cmpl	$49, %edi
+	movl	$49, %eax
 	cmovll	%edi, %eax
 	movl	%eax, %ecx
 	sarl	$31, %ecx
 	andnl	%eax, %ecx, %eax
-	addl	%eax, %eax
+	shll	$3, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	cmpl	$255, %edi

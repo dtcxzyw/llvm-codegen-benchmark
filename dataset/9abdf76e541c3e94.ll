@@ -1,5 +1,5 @@
 
-%struct.absRankType.3487000 = type { i8, i8 }
+%struct.absRankType.3486966 = type { i8, i8 }
 
 ; 8 occurrences:
 ; postgres/optimized/dsa.ll
@@ -149,7 +149,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 120
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4968
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw [4 x %struct.absRankType.3487000], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw [4 x %struct.absRankType.3486966], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

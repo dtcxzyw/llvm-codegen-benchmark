@@ -1,7 +1,7 @@
 
-%"union.std::aligned_storage<16, 16>::type.2802987" = type { [16 x i8] }
-%union.anon.2876061 = type { %"struct.Gluco2::Lit.2876060" }
-%"struct.Gluco2::Lit.2876060" = type { i32 }
+%"union.std::aligned_storage<16, 16>::type.2802953" = type { [16 x i8] }
+%union.anon.2876027 = type { %"struct.Gluco2::Lit.2876026" }
+%"struct.Gluco2::Lit.2876026" = type { i32 }
 
 ; 6 occurrences:
 ; abc/optimized/lpkCut.c.ll
@@ -16,7 +16,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = and i64 %0, 15
-  %6 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 16>::type.2802987"], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 16>::type.2802953"], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 12
   %5 = and i64 %0, 4294967295
-  %6 = getelementptr nusw nuw [0 x %union.anon.2876061], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [0 x %union.anon.2876027], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

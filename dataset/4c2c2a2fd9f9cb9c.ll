@@ -1,13 +1,13 @@
 
-%struct.xt_af.3534894 = type { %struct.mutex.3534895, %struct.list_head.3534882, %struct.list_head.3534882 }
-%struct.mutex.3534895 = type { %struct.atomic64_t.3534896, %struct.raw_spinlock.3534877, %struct.optimistic_spin_queue.3534897, %struct.list_head.3534882 }
-%struct.atomic64_t.3534896 = type { i64 }
-%struct.raw_spinlock.3534877 = type { %struct.qspinlock.3534878 }
-%struct.qspinlock.3534878 = type { %union.anon.3534879 }
-%union.anon.3534879 = type { %struct.atomic_t.3534880 }
-%struct.atomic_t.3534880 = type { i32 }
-%struct.optimistic_spin_queue.3534897 = type { %struct.atomic_t.3534880 }
-%struct.list_head.3534882 = type { ptr, ptr }
+%struct.xt_af.3534860 = type { %struct.mutex.3534861, %struct.list_head.3534848, %struct.list_head.3534848 }
+%struct.mutex.3534861 = type { %struct.atomic64_t.3534862, %struct.raw_spinlock.3534843, %struct.optimistic_spin_queue.3534863, %struct.list_head.3534848 }
+%struct.atomic64_t.3534862 = type { i64 }
+%struct.raw_spinlock.3534843 = type { %struct.qspinlock.3534844 }
+%struct.qspinlock.3534844 = type { %union.anon.3534845 }
+%union.anon.3534845 = type { %struct.atomic_t.3534846 }
+%struct.atomic_t.3534846 = type { i32 }
+%struct.optimistic_spin_queue.3534863 = type { %struct.atomic_t.3534846 }
+%struct.list_head.3534848 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/xhci-mem.ll
@@ -28,7 +28,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.xt_af.3534894, ptr %1, i64 %3, i32 1
+  %4 = getelementptr %struct.xt_af.3534860, ptr %1, i64 %3, i32 1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; grpc/optimized/uri_parser.cc.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:

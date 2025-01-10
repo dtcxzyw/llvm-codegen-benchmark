@@ -59,20 +59,9 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
-; llvm/optimized/LoopVectorize.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %1, 32
-  %5 = or disjoint i64 %4, %3
-  %6 = shl nuw i64 %0, 40
-  %7 = or disjoint i64 %6, %5
-  ret i64 %7
-}
-
-; 1 occurrences:
+; 3 occurrences:
+; node/optimized/simdutf.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
@@ -82,6 +71,20 @@ entry:
   %5 = or disjoint i64 %4, %3
   %6 = shl nuw i64 %0, 48
   %7 = or disjoint i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/LoopVectorize.cpp.ll
+; simdjson/optimized/simdjson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %1, 32
+  %5 = or disjoint i64 %4, %3
+  %6 = shl nuw i64 %0, 48
+  %7 = or disjoint i64 %6, %5
   ret i64 %7
 }
 

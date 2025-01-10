@@ -428,6 +428,7 @@
 ; libsodium/optimized/libsodium_la-argon2-encoding.ll
 ; libuv/optimized/idna.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
+; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; libwebp/optimized/image_enc.c.ll
@@ -859,7 +860,6 @@
 ; minetest/optimized/s_async.cpp.ll
 ; minetest/optimized/serialize.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/settings.cpp.ll
 ; minetest/optimized/sha1.cpp.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
@@ -8951,7 +8951,7 @@ entry:
   ret i8 %1
 }
 
-; 3390 occurrences:
+; 3391 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -9450,7 +9450,6 @@ entry:
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/ftlzw.c.ll
 ; freetype/optimized/pfr.c.ll
-; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/raster.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -9791,6 +9790,7 @@ entry:
 ; libzmq/optimized/socks_connecter.cpp.ll
 ; libzmq/optimized/stream.cpp.ll
 ; libzmq/optimized/ws_encoder.cpp.ll
+; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -11225,6 +11225,7 @@ entry:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
+; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
 ; qemu/optimized/hw_virtio_vhost-backend.c.ll
@@ -12426,7 +12427,6 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; libquic/optimized/wnaf.c.ll
-; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/calipso.ll
@@ -12474,6 +12474,7 @@ entry:
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; minetest/optimized/servermap.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; msgpack/optimized/speed_test.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll

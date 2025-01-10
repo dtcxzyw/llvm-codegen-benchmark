@@ -30,8 +30,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; linux/optimized/vc_screen.ll
+; 3 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/calibinit.cpp.ll

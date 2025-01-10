@@ -64,20 +64,20 @@ func00000000000000a1:                   // @func00000000000000a1
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func00000000000001a6:                   // @func00000000000001a6
-// %bb.0:                               // %entry
-	add	w8, w2, w1
-	add	w8, w8, #1
-	cmp	w8, #9
-	cset	w8, lt
-	orr	w8, w0, w8
-	and	w0, w8, #0x1
-	ret
-                                        // -- End function
 func00000000000001ec:                   // @func00000000000001ec
 // %bb.0:                               // %entry
 	cmn	w2, w1
 	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
+	ret
+                                        // -- End function
+func00000000000001a6:                   // @func00000000000001a6
+// %bb.0:                               // %entry
+	add	w8, w2, w1
+	add	w8, w8, #40
+	cmp	w8, #24
+	cset	w8, lt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

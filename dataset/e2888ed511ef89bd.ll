@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; Function Attrs: nounwind

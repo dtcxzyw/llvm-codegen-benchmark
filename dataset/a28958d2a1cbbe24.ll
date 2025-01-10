@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
-%union.anon.2802904 = type { i64, [8 x i8] }
-%"class.ue2::graph_detail::vertex_descriptor.3852076" = type { ptr, i64 }
+%"class.std::__cxx11::basic_string.2802868" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869", i64, %union.anon.2802870 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869" = type { ptr }
+%union.anon.2802870 = type { i64, [8 x i8] }
+%"class.ue2::graph_detail::vertex_descriptor.3852026" = type { ptr, i64 }
 
 ; 45 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -54,7 +54,7 @@
 define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2802868", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
@@ -68,7 +68,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852076", ptr %1, i64 %3
+  %4 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852026", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6

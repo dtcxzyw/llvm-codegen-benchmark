@@ -35,7 +35,6 @@
 ; boost/optimized/area.ll
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/btMultiSphereShape.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/sigtool.c.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
@@ -227,6 +226,7 @@
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-wtp.c.ll
 ; wireshark/optimized/print.c.ll
+; xgboost/optimized/learner.cc.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll

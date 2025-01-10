@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/brkeng.ll
 ; icu/optimized/rematch.ll
 ; lvgl/optimized/lv_obj_tree.ll
@@ -9,7 +9,6 @@
 ; opencv/optimized/trackerKCF.cpp.ll
 ; openexr/optimized/ImfRle.cpp.ll
 ; php/optimized/pack.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:

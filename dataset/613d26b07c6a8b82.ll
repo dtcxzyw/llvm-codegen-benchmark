@@ -1,5 +1,5 @@
 
-%"struct.rawspeed::Spline<>::Segment.2873472" = type { double, double, double, double }
+%"struct.rawspeed::Spline<>::Segment.2873438" = type { double, double, double, double }
 
 ; 81 occurrences:
 ; abc/optimized/amapLiberty.c.ll
@@ -93,7 +93,7 @@ entry:
   ret i1 %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/ioJson.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -103,6 +103,7 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -123,7 +124,8 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/diff.ll
 ; openjdk/optimized/codeBuffer.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -139,25 +141,13 @@ entry:
 }
 
 ; 1 occurrences:
-; openjdk/optimized/UnixOperatingSystem.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873472", ptr %1, i64 %4
+  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873438", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -187,20 +177,6 @@ entry:
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
-  ret i1 %6
-}
-
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
-; linux/optimized/string_helpers.ll
-; wireshark/optimized/protobuf_lang_tree.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -268,6 +244,19 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; linux/optimized/string_helpers.ll
+; wireshark/optimized/protobuf_lang_tree.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
@@ -289,18 +278,6 @@ entry:
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = icmp ule ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 

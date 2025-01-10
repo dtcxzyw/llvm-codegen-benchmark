@@ -11,6 +11,18 @@ func0000000000000001:                   // @func0000000000000001
 	csel	w0, w9, w8, ne
 	ret
                                         // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	mov	w8, #15                         // =0xf
+	tst	w1, #0x20000000
+	mov	w9, #18                         // =0x12
+	mov	w10, #12                        // =0xc
+	csel	w8, w9, w8, eq
+	csel	w9, w10, w9, eq
+	tst	w0, #0x1
+	csel	w0, w9, w8, ne
+	ret
+                                        // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	and	w9, w1, #0xff

@@ -1,3 +1,10 @@
+func00000000000000c6:                   # @func00000000000000c6
+	testb	%sil, %sil
+	setg	%cl
+	testb	%dil, %dil
+	setle	%al
+	andb	%cl, %al
+	retq
 func0000000000000034:                   # @func0000000000000034
 	testb	%sil, %sil
 	sete	%cl

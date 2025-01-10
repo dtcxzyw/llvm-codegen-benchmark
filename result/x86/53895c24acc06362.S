@@ -1,3 +1,9 @@
+func0000000000000024:                   # @func0000000000000024
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	cmpl	$128, %eax
+	setb	%al
+	retq
 func0000000000000034:                   # @func0000000000000034
 	movzbl	%sil, %eax
 	orl	%edi, %eax
@@ -54,12 +60,6 @@ func0000000000000028:                   # @func0000000000000028
 	orl	%edi, %eax
 	cmpl	$17, %eax
 	setae	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	movzbl	%sil, %eax
-	orl	%edi, %eax
-	cmpl	$16, %eax
-	setb	%al
 	retq
 func0000000000000026:                   # @func0000000000000026
 	movzbl	%sil, %eax

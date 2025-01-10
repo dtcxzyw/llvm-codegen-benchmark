@@ -1,13 +1,13 @@
 
-%"struct.rocksdb::HistogramStat.2625928" = type { %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", [109 x %"struct.std::atomic.2625929"], i64 }
-%"struct.std::atomic.2625929" = type { %"struct.std::__atomic_base.2625930" }
-%"struct.std::__atomic_base.2625930" = type { i64 }
-%class.aiVector3t.2823159 = type { double, double, double }
-%class.aiVector3t.2824802 = type { double, double, double }
-%class.aiVector3t.2828902 = type { double, double, double }
-%"class.boost::shared_ptr.48.2832786" = type { ptr, %"class.boost::detail::shared_count.2832698" }
-%"class.boost::detail::shared_count.2832698" = type { ptr }
-%"class.cv::Point_.3732832" = type { float, float }
+%"struct.rocksdb::HistogramStat.2625895" = type { %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", [109 x %"struct.std::atomic.2625896"], i64 }
+%"struct.std::atomic.2625896" = type { %"struct.std::__atomic_base.2625897" }
+%"struct.std::__atomic_base.2625897" = type { i64 }
+%class.aiVector3t.2823125 = type { double, double, double }
+%class.aiVector3t.2824768 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
+%"class.boost::shared_ptr.48.2832752" = type { ptr, %"class.boost::detail::shared_count.2832664" }
+%"class.boost::detail::shared_count.2832664" = type { ptr }
+%"class.cv::Point_.3732782" = type { float, float }
 
 ; 1 occurrences:
 ; rocksdb/optimized/histogram_windowing.cc.ll
@@ -16,7 +16,7 @@ define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %"struct.rocksdb::HistogramStat.2625928", ptr %0, i64 %4, i32 5
+  %5 = getelementptr %"struct.rocksdb::HistogramStat.2625895", ptr %0, i64 %4, i32 5
   ret ptr %5
 }
 
@@ -31,7 +31,7 @@ define ptr @func000000000000002b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -46,7 +46,7 @@ define ptr @func000000000000003f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nuw %class.aiVector3t.2824802, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %class.aiVector3t.2824768, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -57,7 +57,7 @@ define ptr @func0000000000000033(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -68,7 +68,7 @@ define ptr @func000000000000001f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nuw %"class.boost::shared_ptr.48.2832786", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.boost::shared_ptr.48.2832752", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -104,7 +104,7 @@ define ptr @func0000000000000028(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %"class.cv::Point_.3732832", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Point_.3732782", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

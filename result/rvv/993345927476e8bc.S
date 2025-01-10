@@ -26,7 +26,7 @@ func000000000000003c:                   # @func000000000000003c
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000001e:                   # @func000000000000001e
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 29
 	li	a0, 52
@@ -41,4 +41,12 @@ func0000000000000018:                   # @func0000000000000018
 	vwsll.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
+	ret
+func000000000000001c:                   # @func000000000000001c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsrl.vi	v10, v10, 2
+	lui	a0, 262144
+	addi	a0, a0, -2
+	vand.vx	v10, v10, a0
+	vwaddu.wv	v8, v8, v10
 	ret

@@ -22,19 +22,11 @@ func00000000000001a6:                   # @func00000000000001a6
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	$42, %eax
-	subl	%edx, %eax
-	cmpl	%esi, %eax
-	cmovael	%esi, %eax
-	cmpq	%rax, %rdi
-	setb	%al
-	retq
-func00000000000001a4:                   # @func00000000000001a4
+func00000000000001a8:                   # @func00000000000001a8
 	movl	$4096, %eax                     # imm = 0x1000
 	subl	%edx, %eax
 	cmpl	%esi, %eax
 	cmovael	%esi, %eax
 	cmpq	%rax, %rdi
-	setb	%al
+	seta	%al
 	retq

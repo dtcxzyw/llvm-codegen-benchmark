@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -9,7 +9,6 @@
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spgvacuum.ll
 ; qemu/optimized/net_colo.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i16 %1) #0 {

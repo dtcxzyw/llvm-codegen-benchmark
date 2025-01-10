@@ -1,5 +1,5 @@
 
-%union._Py_CODEUNIT.3988293 = type { i16 }
+%union._Py_CODEUNIT.3988243 = type { i16 }
 
 ; 38 occurrences:
 ; abc/optimized/llb2Flow.c.ll
@@ -225,7 +225,7 @@ entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw nuw i8, ptr %0, i64 200
-  %5 = getelementptr %union._Py_CODEUNIT.3988293, ptr %4, i64 %3
+  %5 = getelementptr %union._Py_CODEUNIT.3988243, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -237,7 +237,7 @@ entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
   %4 = getelementptr i8, ptr %0, i64 202
-  %5 = getelementptr %union._Py_CODEUNIT.3988293, ptr %4, i64 %3
+  %5 = getelementptr %union._Py_CODEUNIT.3988243, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -1,10 +1,10 @@
 
-%class.aiVector3t.2822608 = type { float, float, float }
-%"class.std::vector.14.2908984" = type { %"struct.std::_Vector_base.15.2908985" }
-%"struct.std::_Vector_base.15.2908985" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" = type { ptr, ptr, ptr }
-%struct.cvEMDNode.3769350 = type { [3 x i32], float, i32, i32, ptr, ptr, ptr }
+%class.aiVector3t.2822574 = type { float, float, float }
+%"class.std::vector.14.2908950" = type { %"struct.std::_Vector_base.15.2908951" }
+%"struct.std::_Vector_base.15.2908951" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" = type { ptr, ptr, ptr }
+%struct.cvEMDNode.3769300 = type { [3 x i32], float, i32, i32, ptr, ptr, ptr }
 
 ; 26 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
@@ -39,8 +39,8 @@ entry:
   %.neg = sdiv exact i64 %1, -12
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr %class.aiVector3t.2822608, ptr %4, i64 %.neg
-  %6 = getelementptr %class.aiVector3t.2822608, ptr %5, i64 %3
+  %5 = getelementptr %class.aiVector3t.2822574, ptr %4, i64 %.neg
+  %6 = getelementptr %class.aiVector3t.2822574, ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -52,8 +52,8 @@ entry:
   %.neg = sdiv exact i64 %1, -24
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr %"class.std::vector.14.2908984", ptr %4, i64 %.neg
-  %6 = getelementptr %"class.std::vector.14.2908984", ptr %5, i64 %3
+  %5 = getelementptr %"class.std::vector.14.2908950", ptr %4, i64 %.neg
+  %6 = getelementptr %"class.std::vector.14.2908950", ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -66,8 +66,8 @@ entry:
   %.neg = sdiv exact i64 %1, -48
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.cvEMDNode.3769350, ptr %4, i64 %.neg
-  %6 = getelementptr %struct.cvEMDNode.3769350, ptr %5, i64 %3
+  %5 = getelementptr %struct.cvEMDNode.3769300, ptr %4, i64 %.neg
+  %6 = getelementptr %struct.cvEMDNode.3769300, ptr %5, i64 %3
   ret ptr %6
 }
 

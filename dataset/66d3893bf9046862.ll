@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
-%"class.hermes::vm::HermesValue.3076856" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076821" = type { %"class.hermes::vm::HermesValue.3076822" }
+%"class.hermes::vm::HermesValue.3076822" = type { i64 }
 
 ; 2 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -73,7 +73,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076821", ptr %6, i64 %0
   ret ptr %7
 }
 

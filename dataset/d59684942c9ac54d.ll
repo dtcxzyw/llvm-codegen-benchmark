@@ -18,7 +18,7 @@ entry:
   ret i32 %4
 }
 
-; 84 occurrences:
+; 81 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -49,7 +49,6 @@ entry:
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/deflate.c.ll
@@ -82,11 +81,9 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
-; openusd/optimized/reconintra.c.ll
 ; php/optimized/hash_whirlpool.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/varbit.ll

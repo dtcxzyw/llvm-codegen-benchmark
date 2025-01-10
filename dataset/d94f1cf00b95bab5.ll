@@ -1159,14 +1159,13 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaCTas.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; icu/optimized/bytestriebuilder.ll
 ; linux/optimized/drm_edid.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; php/optimized/ir_dump.ll
-; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {

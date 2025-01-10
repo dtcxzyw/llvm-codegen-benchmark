@@ -131,11 +131,12 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; c3c/optimized/target.c.ll
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {

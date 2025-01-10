@@ -285,7 +285,7 @@ entry:
   ret i64 %6
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
@@ -319,6 +319,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -362,10 +363,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; folly/optimized/IPAddressV6.cpp.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i8 %0, i8 %1) #0 {
 entry:

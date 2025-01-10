@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; icu/optimized/rulebasedcollator.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/early-quirks.ll
@@ -15,6 +15,8 @@
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; php/optimized/html.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
@@ -25,9 +27,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 16
+  %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %0, i64 4, i64 8
+  %4 = select i1 %0, i64 1, i64 2
   %5 = select i1 %3, i64 0, i64 %4
   ret i64 %5
 }

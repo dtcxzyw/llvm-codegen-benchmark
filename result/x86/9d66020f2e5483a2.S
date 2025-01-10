@@ -10,9 +10,3 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movl	%edx, %eax
-	shrl	$24, %eax
-	xorl	%esi, %eax
-	orl	%edi, %eax
-	retq

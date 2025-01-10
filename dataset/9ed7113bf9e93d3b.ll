@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 96 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; assimp/optimized/zip.c.ll
@@ -41,7 +41,6 @@
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; node/optimized/simdutf.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/bytecodeAssembler.ll
@@ -74,7 +73,6 @@
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; redis/optimized/listpack.ll
 ; ruby/optimized/addr2line.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/execute.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; wasmtime-rs/optimized/27y5mf4j2qnj7fax.ll

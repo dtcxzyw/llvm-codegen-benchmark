@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; linux/optimized/sr.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
@@ -11,6 +11,7 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; qemu/optimized/block_preallocate.c.ll
 ; qemu/optimized/block_vmdk.c.ll
+; slurm/optimized/backfill.ll
 ; slurm/optimized/scancel.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {

@@ -1,8 +1,0 @@
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 1
-	bnez	a1, .LBB0_2
-	li	a2, 258
-	sub	a2, a2, a0
-.LBB0_2:                                # %entry
-	addw	a0, a0, a2
-	ret

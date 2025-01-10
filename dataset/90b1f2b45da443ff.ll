@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector2d.2693290" = type { i32, i32 }
+%"class.irr::core::vector2d.2693256" = type { i32, i32 }
 
 ; 10 occurrences:
 ; draco/optimized/point_cloud_encoder.cc.ll
@@ -18,8 +18,8 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nuw nsw i64 %3, %1
   %5 = call i64 @llvm.umax.i64(i64 %1, i64 %4)
-  %6 = getelementptr %"class.irr::core::vector2d.2693290", ptr %0, i64 %5
-  %7 = getelementptr %"class.irr::core::vector2d.2693290", ptr %6, i64 %1
+  %6 = getelementptr %"class.irr::core::vector2d.2693256", ptr %0, i64 %5
+  %7 = getelementptr %"class.irr::core::vector2d.2693256", ptr %6, i64 %1
   ret ptr %7
 }
 

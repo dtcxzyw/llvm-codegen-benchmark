@@ -1,5 +1,5 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
 
 ; 27 occurrences:
 ; cpython/optimized/optimizer.ll
@@ -112,7 +112,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6

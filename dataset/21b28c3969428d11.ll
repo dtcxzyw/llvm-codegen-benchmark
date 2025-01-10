@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libquic/optimized/quic_packet_creator.cc.ll
@@ -7,6 +7,7 @@
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; redis/optimized/sds.ll
+; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -55,10 +56,11 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; mimalloc/optimized/page.c.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

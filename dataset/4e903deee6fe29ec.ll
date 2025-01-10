@@ -18,11 +18,13 @@ entry:
   ret i1 %6
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; boost/optimized/text_file_backend.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGException.cpp.ll

@@ -176,7 +176,7 @@ entry:
   ret i32 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; git/optimized/read-cache.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
@@ -192,6 +192,7 @@ entry:
 ; qemu/optimized/dump_dump.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rmodels.c.ll
+; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; z3/optimized/lp_primal_core_solver.cpp.ll

@@ -55,3 +55,10 @@ func00000000000000e1:                   # @func00000000000000e1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+func00000000000000f4:                   # @func00000000000000f4
+	sext.w	a2, a2
+	slli	a1, a1, 48
+	add	a0, a0, a2
+	srli	a1, a1, 48
+	sltu	a0, a0, a1
+	ret

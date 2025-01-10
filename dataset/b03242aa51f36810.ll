@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; redis/optimized/acl.ll
 ; spike/optimized/vfsgnj_vf.ll

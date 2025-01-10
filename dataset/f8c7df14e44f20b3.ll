@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:

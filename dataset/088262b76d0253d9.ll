@@ -51,8 +51,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/frame_x86.ll
+; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000128(ptr %0, ptr %1, ptr %2) #0 {

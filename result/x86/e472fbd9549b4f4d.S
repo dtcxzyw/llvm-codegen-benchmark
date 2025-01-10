@@ -14,7 +14,3 @@ func000000000000000e:                   # @func000000000000000e
 	addl	%esi, %edi
 	shrxl	%edx, %edi, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	addl	%esi, %edi
-	shrxl	%edx, %edi, %eax
-	retq

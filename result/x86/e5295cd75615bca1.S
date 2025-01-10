@@ -7,6 +7,15 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rcx, %rdi
 	sete	%al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	$8, %eax
+	shlxq	%rdx, %rax, %rax
+	testb	$1, %sil
+	movl	$6, %ecx
+	cmovneq	%rax, %rcx
+	cmpq	%rcx, %rdi
+	setb	%al
+	retq
 func0000000000000066:                   # @func0000000000000066
 	movl	$1, %eax
 	shlxq	%rdx, %rax, %rcx

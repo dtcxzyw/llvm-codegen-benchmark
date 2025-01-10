@@ -1,17 +1,17 @@
 
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%struct.stbcc__clump.3100977 = type { %union.stbcc__global_clumpid.3100978, i8, i8, i8, i8 }
-%union.stbcc__global_clumpid.3100978 = type { %struct.anon.3100979 }
-%struct.anon.3100979 = type { i32 }
-%struct.tg3_napi.3545810 = type { %struct.napi_struct.3545795, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3545811, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
-%struct.napi_struct.3545795 = type { %struct.list_head.3545767, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3545798], ptr, %struct.list_head.3545767, i32, i32, %struct.hrtimer.3545799, ptr, %struct.list_head.3545767, %struct.hlist_node.3545800, i32 }
-%struct.gro_list.3545798 = type { %struct.list_head.3545767, i32 }
-%struct.hrtimer.3545799 = type { %struct.timerqueue_node.3545801, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3545801 = type { %struct.rb_node.3545802, i64 }
-%struct.rb_node.3545802 = type { i64, ptr, ptr }
-%struct.list_head.3545767 = type { ptr, ptr }
-%struct.hlist_node.3545800 = type { ptr, ptr }
-%struct.tg3_rx_prodring_set.3545811 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%struct.stbcc__clump.3100943 = type { %union.stbcc__global_clumpid.3100944, i8, i8, i8, i8 }
+%union.stbcc__global_clumpid.3100944 = type { %struct.anon.3100945 }
+%struct.anon.3100945 = type { i32 }
+%struct.tg3_napi.3545776 = type { %struct.napi_struct.3545761, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3545777, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
+%struct.napi_struct.3545761 = type { %struct.list_head.3545733, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3545764], ptr, %struct.list_head.3545733, i32, i32, %struct.hrtimer.3545765, ptr, %struct.list_head.3545733, %struct.hlist_node.3545766, i32 }
+%struct.gro_list.3545764 = type { %struct.list_head.3545733, i32 }
+%struct.hrtimer.3545765 = type { %struct.timerqueue_node.3545767, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3545767 = type { %struct.rb_node.3545768, i64 }
+%struct.rb_node.3545768 = type { i64, ptr, ptr }
+%struct.list_head.3545733 = type { ptr, ptr }
+%struct.hlist_node.3545766 = type { ptr, ptr }
+%struct.tg3_rx_prodring_set.3545777 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
 
 ; 33 occurrences:
 ; cpython/optimized/ceval.ll
@@ -396,7 +396,7 @@ define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -419,7 +419,7 @@ define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 4
-  %4 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100977], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100943], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -433,7 +433,7 @@ define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 2624
-  %4 = getelementptr [5 x %struct.tg3_napi.3545810], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [5 x %struct.tg3_napi.3545776], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

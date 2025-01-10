@@ -1,7 +1,6 @@
 
-%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
-%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
+%"struct.folly::Subprocess::Pipe.2685236" = type <{ %"class.folly::File.2685228", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685228" = type <{ i32, i8, [3 x i8] }>
 
 ; 32 occurrences:
 ; abc/optimized/abcHieGia.c.ll
@@ -40,14 +39,16 @@
 define i64 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685236", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
   ret i64 %7
 }
 
-; 232 occurrences:
+; 237 occurrences:
+; abc/optimized/giaIso.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -65,6 +66,8 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; hyperscan/optimized/Parser.cpp.ll
+; hyperscan/optimized/control_verbs.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -136,6 +139,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; luajit/optimized/minilua.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -281,27 +285,10 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  %6 = ptrtoint ptr %0 to i64
-  %7 = sub i64 %5, %6
-  ret i64 %7
-}
-
-; 5 occurrences:
-; abc/optimized/giaIso.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
-; hyperscan/optimized/Parser.cpp.ll
-; hyperscan/optimized/control_verbs.cpp.ll
-; luajit/optimized/minilua.ll
-; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876078, ptr %1, i64 %3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6

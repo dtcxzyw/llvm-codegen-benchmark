@@ -227,9 +227,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/kwset.ll
-; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
 ; Function Attrs: nounwind

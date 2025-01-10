@@ -1,9 +1,9 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 6 occurrences:
 ; libquic/optimized/base64_bio.c.ll
@@ -100,7 +100,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %6 = getelementptr nusw nuw %"struct.OT::HBFixed.2730714", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::HBFixed.2730680", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -280,7 +280,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %5, i64 %4
   ret ptr %6
 }
 

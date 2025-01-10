@@ -1,11 +1,11 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
-%"class.llvm::SmallVector.4.3138012" = type { %"class.llvm::SmallVectorImpl.5.3138013", %"struct.llvm::SmallVectorStorage.8.3138014" }
-%"class.llvm::SmallVectorImpl.5.3138013" = type { %"class.llvm::SmallVectorTemplateBase.6.3138015" }
-%"class.llvm::SmallVectorTemplateBase.6.3138015" = type { %"class.llvm::SmallVectorTemplateCommon.7.3138016" }
-%"class.llvm::SmallVectorTemplateCommon.7.3138016" = type { %"class.llvm::SmallVectorBase.3137985" }
-%"class.llvm::SmallVectorBase.3137985" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.8.3138014" = type { [32 x i8] }
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
+%"class.llvm::SmallVector.4.3137978" = type { %"class.llvm::SmallVectorImpl.5.3137979", %"struct.llvm::SmallVectorStorage.8.3137980" }
+%"class.llvm::SmallVectorImpl.5.3137979" = type { %"class.llvm::SmallVectorTemplateBase.6.3137981" }
+%"class.llvm::SmallVectorTemplateBase.6.3137981" = type { %"class.llvm::SmallVectorTemplateCommon.7.3137982" }
+%"class.llvm::SmallVectorTemplateCommon.7.3137982" = type { %"class.llvm::SmallVectorBase.3137951" }
+%"class.llvm::SmallVectorBase.3137951" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.8.3137980" = type { [32 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/thread.ll
@@ -49,7 +49,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000d24(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %4, %5
@@ -876,7 +876,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000889(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::SmallVector.4.3138012", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::SmallVector.4.3137978", ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = icmp uge ptr %0, %1
   %6 = and i1 %5, %4

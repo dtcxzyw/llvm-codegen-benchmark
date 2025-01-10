@@ -1,6 +1,5 @@
 
-; 85 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 84 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; assimp/optimized/AssbinLoader.cpp.ll

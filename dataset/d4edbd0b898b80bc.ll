@@ -1,5 +1,5 @@
 
-%struct.WordEntry.3654110 = type { i32 }
+%struct.WordEntry.3654076 = type { i32 }
 
 ; 2 occurrences:
 ; php/optimized/url.ll
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000604(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr [0 x %struct.WordEntry.3654110], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.WordEntry.3654076], ptr %3, i64 0, i64 %1
   %5 = getelementptr i8, ptr %0, i64 4
   %6 = icmp ult ptr %5, %4
   ret i1 %6

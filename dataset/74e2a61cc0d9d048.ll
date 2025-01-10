@@ -553,7 +553,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -568,7 +568,6 @@ entry:
 ; cmake/optimized/blocksort.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/decNumber.ll

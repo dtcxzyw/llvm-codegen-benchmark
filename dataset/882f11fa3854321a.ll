@@ -1,7 +1,6 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
-; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/ubidi.ll

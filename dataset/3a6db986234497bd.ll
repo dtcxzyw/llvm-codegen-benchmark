@@ -1,9 +1,10 @@
 
-; 57 occurrences:
+; 60 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -13,6 +14,8 @@
 ; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/optparser.c.ll
 ; cmake/optimized/blocksort.c.ll
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; darktable/optimized/masks.c.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; linux/optimized/addrconf.ll

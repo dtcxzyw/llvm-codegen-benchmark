@@ -82,11 +82,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:

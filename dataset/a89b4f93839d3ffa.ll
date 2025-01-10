@@ -1,5 +1,5 @@
 
-%class.mpz.3616116 = type { i32, i8, ptr }
+%class.mpz.3616082 = type { i32, i8, ptr }
 
 ; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -39,7 +39,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %class.mpz.3616116, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %class.mpz.3616082, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

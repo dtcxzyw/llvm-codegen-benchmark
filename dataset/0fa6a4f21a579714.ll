@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 110 occurrences:
 ; eastl/optimized/TestMemory.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; hermes/optimized/TDZDedup.cpp.ll
@@ -8,7 +8,6 @@
 ; icu/optimized/uconv.ll
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll

@@ -1,5 +1,5 @@
 
-%struct.RARPPM_SEE2_CONTEXT.3062744 = type { i16, i8, i8 }
+%struct.RARPPM_SEE2_CONTEXT.3062710 = type { i16, i8, i8 }
 
 ; 712 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -1291,7 +1291,7 @@ define ptr @func0000000000000063(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp samesign ugt i32 %1, %2
   %4 = select i1 %3, i64 2, i64 0
-  %5 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062744, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062710, ptr %0, i64 %4
   ret ptr %5
 }
 

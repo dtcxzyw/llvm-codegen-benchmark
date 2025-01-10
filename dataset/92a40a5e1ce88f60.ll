@@ -88,18 +88,6 @@ entry:
 }
 
 ; 1 occurrences:
-; libquic/optimized/time.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = icmp sgt i64 %3, -1
-  %5 = icmp slt i64 %0, 0
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000042c(i64 %0, i64 %1, i64 %2) #0 {

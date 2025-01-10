@@ -4,6 +4,7 @@ func000000000000009a:                   # @func000000000000009a
 	movl	$7, %ecx
 	cmovgl	%eax, %ecx
 	movslq	%ecx, %rax
+	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000086:                   # @func0000000000000086

@@ -60,6 +60,18 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 8, %1
+  %.not = icmp eq i32 %0, 2
+  %3 = select i1 %.not, i64 6, i64 %2
+  ret i64 %3
+}
+
 ; 4 occurrences:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/mpv.c.ll

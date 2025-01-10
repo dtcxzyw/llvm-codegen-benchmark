@@ -1,11 +1,3 @@
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	fmov	x8, d0
-	cmp	x8, #0
-	cset	w8, lt
-	and	w0, w0, w8
-	ret
-                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	fmov	x8, d0
@@ -21,6 +13,14 @@ func0000000000000008:                   // @func0000000000000008
 	cmp	x8, #0
 	cset	w8, ne
 	and	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	fmov	x8, d0
+	cmp	x8, #0
+	cset	w8, lt
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004

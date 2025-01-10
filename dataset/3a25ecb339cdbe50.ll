@@ -1,10 +1,11 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
 ; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/fse_compress.c.ll
+; git/optimized/parallel-checkout.ll
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; linux/optimized/aperfmperf.ll

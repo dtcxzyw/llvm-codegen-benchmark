@@ -6,11 +6,6 @@ func0000000000000081:                   # @func0000000000000081
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v8, 9
 	ret
-func000000000000018c:                   # @func000000000000018c
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v8, v8, -1
-	vmsleu.vi	v0, v8, -3
-	ret
 func0000000000000141:                   # @func0000000000000141
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v8, 0

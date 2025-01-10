@@ -11,13 +11,12 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; boost/optimized/get_turns_areal_areal.ll
 ; boost/optimized/rational.ll
 ; linux/optimized/ata_piix.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

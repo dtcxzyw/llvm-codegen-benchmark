@@ -12,10 +12,11 @@ func0000000000000026:                   # @func0000000000000026
 	slti	a0, a0, 32
 	ret
 func000000000000002a:                   # @func000000000000002a
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	slt	a0, a1, a0
+	subw	a0, a0, a1
+	slti	a0, a0, 128
+	xori	a0, a0, 1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0

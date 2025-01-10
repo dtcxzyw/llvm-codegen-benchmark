@@ -1,5 +1,5 @@
 
-; 656 occurrences:
+; 658 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -585,8 +585,10 @@
 ; quantlib/optimized/particleswarmoptimization.ll
 ; quantlib/optimized/swapforwardmappings.ll
 ; quest/optimized/QuEST_cpu.c.ll
+; quickjs/optimized/quickjs-libc.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/linenoise.ll
 ; rocksdb/optimized/clock_cache.cc.ll
@@ -1035,7 +1037,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; ceres/optimized/dense_cholesky.cc.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_diffuse.c.ll
@@ -1047,6 +1049,7 @@ entry:
 ; linux/optimized/badblocks.ll
 ; luau/optimized/isocline.c.ll
 ; minetest/optimized/emerge.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
 ; qemu/optimized/migration_ram.c.ll
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -1080,7 +1083,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; brotli/optimized/encode.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -1092,6 +1095,7 @@ entry:
 ; linux/optimized/i915_ttm_buddy_manager.ll
 ; linux/optimized/swapfile.ll
 ; lz4/optimized/lz4hc.c.ll
+; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-packet.ll
 ; openssl/optimized/libcrypto-shlib-packet.ll
 ; openssl/optimized/libssl-shlib-packet.ll
@@ -1099,6 +1103,7 @@ entry:
 ; openusd/optimized/path.cpp.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -8,10 +8,10 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
-	cmpl	$-1, %esi
+	cmpl	$3, %esi
 	cmovnel	%esi, %eax
 	cltq
-	addq	%rdi, %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax

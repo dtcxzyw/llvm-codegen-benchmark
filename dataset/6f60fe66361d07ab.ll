@@ -1,5 +1,5 @@
 
-; 3355 occurrences:
+; 3353 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -3215,7 +3215,6 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
@@ -3230,7 +3229,6 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; wasmtime-rs/optimized/54t9ocdc59n5s71e.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
@@ -3363,7 +3361,7 @@ entry:
   ret i64 %3
 }
 
-; 1021 occurrences:
+; 1022 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSweep.c.ll
@@ -4355,15 +4353,16 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; verilator/optimized/V3Task.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/1kan0u7yfu7u6hal.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll

@@ -38,12 +38,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	testl	%esi, %esi
 	setg	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
-	cmpl	%edi, %esi
-	cmovll	%esi, %edi
-	cmpl	$6, %edi
-	setl	%al
-	retq
 func00000000000000e6:                   # @func00000000000000e6
 	cmpl	%esi, %edi
 	cmovll	%edi, %esi
@@ -61,6 +55,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmovll	%edi, %esi
 	cmpl	$66, %esi
 	setae	%al
+	retq
+func00000000000000c6:                   # @func00000000000000c6
+	movq	%rsi, %rax
+	orl	%edi, %eax
+	shrl	$31, %eax
 	retq
 func0000000000000046:                   # @func0000000000000046
 	cmpl	%esi, %edi

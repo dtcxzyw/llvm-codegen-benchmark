@@ -1,5 +1,5 @@
 
-; 776 occurrences:
+; 777 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -330,6 +330,7 @@
 ; linux/optimized/build_policy.ll
 ; linux/optimized/md.ll
 ; linux/optimized/output.ll
+; linux/optimized/rtmutex_api.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/vmalloc.ll
 ; llama.cpp/optimized/common.cpp.ll

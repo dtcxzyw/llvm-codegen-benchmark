@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; llama.cpp/optimized/train.cpp.ll
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 %0, %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
-  ret i1 %6
-}
-
 ; 18 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -38,18 +25,6 @@ entry:
   %4 = sub nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_usb_desc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 

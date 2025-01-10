@@ -128,8 +128,7 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; git/optimized/parallel-checkout.ll
+; 2 occurrences:
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind

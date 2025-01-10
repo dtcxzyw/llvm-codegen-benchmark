@@ -1,5 +1,5 @@
 
-; 1519 occurrences:
+; 1518 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -117,7 +117,6 @@
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/cf-h2-proxy.c.ll
-; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
@@ -1764,7 +1763,7 @@ entry:
   ret i1 %4
 }
 
-; 447 occurrences:
+; 446 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcRestruct.c.ll
@@ -1853,7 +1852,6 @@ entry:
 ; hermes/optimized/DateUtil.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hwloc/optimized/hwloc-bind.ll
-; hwloc/optimized/topology-linux.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/olsontz.ll
@@ -2221,7 +2219,7 @@ entry:
   ret i1 %4
 }
 
-; 782 occurrences:
+; 780 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
@@ -2285,7 +2283,6 @@ entry:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; darktable/optimized/filtering.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/apply.ll
 ; git/optimized/check-ref-format.ll
 ; git/optimized/checkout-index.ll
@@ -2886,7 +2883,6 @@ entry:
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/util_osdep.c.ll
 ; quickjs/optimized/libbf.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; redis/optimized/ae.ll
@@ -3107,7 +3103,7 @@ entry:
   ret i1 %4
 }
 
-; 195 occurrences:
+; 194 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/extraBddMisc.c.ll
@@ -3249,7 +3245,6 @@ entry:
 ; openjdk/optimized/OGLBlitLoops.ll
 ; openjdk/optimized/OGLMaskBlit.ll
 ; openjdk/optimized/OGLRenderer.ll
-; openjdk/optimized/SpanClipRenderer.ll
 ; openjdk/optimized/X11PMBlitLoops.ll
 ; openjdk/optimized/X11Renderer.ll
 ; openjdk/optimized/awt_ImageRep.ll
@@ -3401,7 +3396,7 @@ entry:
   ret i1 %4
 }
 
-; 263 occurrences:
+; 264 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/ifSat.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -3568,6 +3563,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; meshlab/optimized/Scanner.cpp.ll
@@ -4837,11 +4833,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/vtzone.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/cdrom.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; rocksdb/optimized/log_writer.cc.ll
 ; wireshark/optimized/packet-ocp1.c.ll
 ; Function Attrs: nounwind

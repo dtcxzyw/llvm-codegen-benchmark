@@ -25,13 +25,3 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	sext.w	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, 40
-	ret
-func000000000000000e:                   # @func000000000000000e
-	sext.w	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, -1
-	ret

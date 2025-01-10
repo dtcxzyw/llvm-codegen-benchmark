@@ -328,7 +328,7 @@ entry:
   ret i32 %6
 }
 
-; 510 occurrences:
+; 508 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
@@ -496,7 +496,6 @@ entry:
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -506,7 +505,6 @@ entry:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nom-rs/optimized/2mhjsvr4l103ztah.ll
-; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/29qo5g7aujs2ujt.ll
 ; ockam-rs/optimized/2kfsy1g3v370u61t.ll
@@ -992,9 +990,8 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/intel_color.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; spike/optimized/debug_module.ll

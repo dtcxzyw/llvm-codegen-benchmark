@@ -53,7 +53,7 @@ entry:
   ret i64 %2
 }
 
-; 240 occurrences:
+; 241 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/dictionary.cc.ll
@@ -92,6 +92,7 @@ entry:
 ; entt/optimized/organizer.cpp.ll
 ; folly/optimized/IOBuf.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
+; git/optimized/sequencer.ll
 ; gromacs/optimized/biasgrid.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll

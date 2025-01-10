@@ -1,5 +1,5 @@
 
-; 201 occurrences:
+; 202 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; bullet3/optimized/b3OpenCLUtils.ll
 ; casadi/optimized/idas_interface.cpp.ll
@@ -161,6 +161,7 @@
 ; openmpi/optimized/pml_ob1.ll
 ; openmpi/optimized/support.ll
 ; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/jsonSerialization.cpp.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll

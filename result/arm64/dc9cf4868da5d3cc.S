@@ -164,14 +164,6 @@ func0000000000000074:                   // @func0000000000000074
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #4096                       // =0x1000
-	sub	w8, w8, w1
-	cmp	x0, x8
-	cset	w0, lt
-	ret
-                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	neg	w8, w1

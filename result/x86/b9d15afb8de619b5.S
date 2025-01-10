@@ -28,17 +28,12 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	addl	%esi, %edx
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq
 func0000000000000026:                   # @func0000000000000026
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	addl	%esi, %edx
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,4), %rax

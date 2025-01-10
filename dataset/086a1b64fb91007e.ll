@@ -1,10 +1,10 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%class.QString.3450596 = type { %struct.QArrayDataPointer.5.3450597 }
-%struct.QArrayDataPointer.5.3450597 = type { ptr, ptr, i64 }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%class.QString.3450562 = type { %struct.QArrayDataPointer.5.3450563 }
+%struct.QArrayDataPointer.5.3450563 = type { ptr, ptr, i64 }
 
 ; 211 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -225,7 +225,7 @@ entry:
   %4 = or disjoint i64 %2, 1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %3
-  %7 = getelementptr nusw %"struct.std::pair.2601858", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.std::pair.2601825", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -275,7 +275,7 @@ entry:
   %4 = or disjoint i64 %2, 1
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, i64 %4, i64 %3
-  %7 = getelementptr %class.QString.3450596, ptr %0, i64 %6
+  %7 = getelementptr %class.QString.3450562, ptr %0, i64 %6
   ret ptr %7
 }
 

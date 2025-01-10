@@ -238,6 +238,13 @@ func00000000000002d4:                   # @func00000000000002d4
 	setns	%al
 	orb	%cl, %al
 	retq
+func00000000000002cc:                   # @func00000000000002cc
+	cmpq	%rdx, %rsi
+	setge	%cl
+	testq	%rdi, %rdi
+	sets	%al
+	orb	%cl, %al
+	retq
 func0000000000000062:                   # @func0000000000000062
 	cmpq	$2, %rdx
 	sete	%cl
@@ -377,13 +384,6 @@ func0000000000000070:                   # @func0000000000000070
 	seto	%cl
 	cmpq	%rsi, %rdi
 	seta	%al
-	orb	%cl, %al
-	retq
-func00000000000002cc:                   # @func00000000000002cc
-	cmpq	%rdx, %rsi
-	setge	%cl
-	testq	%rdi, %rdi
-	sets	%al
 	orb	%cl, %al
 	retq
 func0000000000000670:                   # @func0000000000000670

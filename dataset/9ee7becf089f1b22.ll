@@ -1,7 +1,6 @@
 
-; 280 occurrences:
+; 278 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; linux/optimized/hugetlb.ll
@@ -279,7 +278,6 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; wireshark/optimized/wmem_map.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

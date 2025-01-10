@@ -1,5 +1,5 @@
 
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 1 occurrences:
 ; openjdk/optimized/klassVtable.ll
@@ -73,9 +73,9 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2
-  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %3, i64 %0
+  %4 = getelementptr %union._Py_CODEUNIT.3974112, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %union._Py_CODEUNIT.3974162, ptr %4, i64 %5
+  %6 = getelementptr %union._Py_CODEUNIT.3974112, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

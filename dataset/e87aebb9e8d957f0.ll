@@ -1,9 +1,9 @@
 
-%"struct.duckdb::string_t.2955629" = type { %union.anon.295.2955630 }
-%union.anon.295.2955630 = type { %struct.anon.2955631 }
-%struct.anon.2955631 = type { i32, [4 x i8], ptr }
+%"struct.duckdb::string_t.2955595" = type { %union.anon.295.2955596 }
+%union.anon.295.2955596 = type { %struct.anon.2955597 }
+%struct.anon.2955597 = type { i32, [4 x i8], ptr }
 
-; 649 occurrences:
+; 650 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcGen.c.ll
@@ -444,6 +444,7 @@
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/scopedMemoryAccess.ll
 ; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stackValue.ll
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
@@ -662,7 +663,7 @@ entry:
   ret ptr %5
 }
 
-; 141 occurrences:
+; 140 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -746,7 +747,6 @@ entry:
 ; linux/optimized/wpa.ll
 ; linux/optimized/xfrm_input.ll
 ; linux/optimized/xt_TCPMSS.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
@@ -813,7 +813,7 @@ entry:
   ret ptr %5
 }
 
-; 220 occurrences:
+; 221 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
@@ -834,6 +834,7 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_rawoverexposed.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -2126,7 +2127,7 @@ entry:
   ret ptr %5
 }
 
-; 373 occurrences:
+; 376 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/utilNam.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -2141,7 +2142,6 @@ entry:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; bullet3/optimized/btMultiBodySphericalJointMotor.ll
 ; casadi/optimized/cs_amd.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upack.c.ll
@@ -2171,7 +2171,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; hwloc/optimized/topology-linux.ll
 ; hyperscan/optimized/mcsheng.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/package.ll
 ; icu/optimized/rbbidata.ll
 ; icu/optimized/ucnv_io.ll
@@ -2181,6 +2180,9 @@ entry:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/s3_srvr.c.ll
@@ -2480,6 +2482,8 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; redis/optimized/ziplist.ll
 ; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; ruby/optimized/ripper.ll
@@ -2509,7 +2513,7 @@ entry:
   ret ptr %5
 }
 
-; 432 occurrences:
+; 429 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcQuant.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -2857,7 +2861,6 @@ entry:
 ; openjdk/optimized/pngread.ll
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/runTimeClassInfo.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/socketTransport.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/zStat.ll
@@ -2865,11 +2868,9 @@ entry:
 ; openspiel/optimized/maedn.cc.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openssl/optimized/libcrypto-lib-cmp_status.ll
-; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-cmp_status.ll
-; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
@@ -3114,7 +3115,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.duckdb::string_t.2955629", ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.duckdb::string_t.2955595", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

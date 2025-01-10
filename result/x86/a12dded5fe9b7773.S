@@ -12,9 +12,9 @@ func0000000000000001:                   # @func0000000000000001
 	setb	%al
 	retq
 func0000000000000048:                   # @func0000000000000048
-	addq	$23, %rsi
-	andq	$-16, %rsi
-	andq	$-8, %rdi
+	addq	$8191, %rsi                     # imm = 0x1FFF
+	andq	$-8192, %rsi                    # imm = 0xE000
+	andq	$-8192, %rdi                    # imm = 0xE000
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq

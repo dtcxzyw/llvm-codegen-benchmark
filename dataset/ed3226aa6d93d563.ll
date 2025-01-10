@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/superGate.c.ll
 ; gromacs/optimized/check.cpp.ll
@@ -13,7 +13,6 @@
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; icu/optimized/mlbe.ll
 ; icu/optimized/msgfmt.ll
-; linux/optimized/scsi_logging.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; openusd/optimized/json.cpp.ll
 ; postgres/optimized/ts_parse.ll

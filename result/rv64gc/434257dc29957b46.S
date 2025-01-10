@@ -19,17 +19,10 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	ret
-func000000000000000e:                   # @func000000000000000e
-	sext.w	a2, a0
-	addiw	a0, a1, -1
-	blt	a2, a0, .LBB3_2
-	mv	a0, a2
-.LBB3_2:                                # %entry
-	ret
 func000000000000001f:                   # @func000000000000001f
 	sext.w	a0, a0
 	addiw	a1, a1, 1
-	blt	a1, a0, .LBB4_2
+	blt	a1, a0, .LBB3_2
 	mv	a0, a1
-.LBB4_2:                                # %entry
+.LBB3_2:                                # %entry
 	ret

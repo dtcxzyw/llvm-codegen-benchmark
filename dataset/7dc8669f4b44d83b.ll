@@ -1,6 +1,6 @@
 
-%struct.FWCfgEntry.2709409 = type { i32, i8, ptr, ptr, ptr, ptr }
-%"struct.std::pair.3655324" = type { i32, i32 }
+%struct.FWCfgEntry.2709375 = type { i32, i8, ptr, ptr, ptr, ptr }
+%"struct.std::pair.3655290" = type { i32, i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
@@ -10,7 +10,7 @@ entry:
   %2 = add i16 %1, 32
   %3 = and i16 %2, 16383
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr %struct.FWCfgEntry.2709409, ptr %0, i64 %4
+  %5 = getelementptr %struct.FWCfgEntry.2709375, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -78,7 +78,7 @@ entry:
   %2 = add i16 %1, 3
   %3 = and i16 %2, -4
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.std::pair.3655324", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.std::pair.3655290", ptr %0, i64 %4
   ret ptr %5
 }
 

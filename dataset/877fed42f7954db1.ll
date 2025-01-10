@@ -14,10 +14,11 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; git/optimized/diffcore-delta.ll
 ; libwebp/optimized/iterator_enc.c.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:

@@ -21,6 +21,11 @@ func0000000000000001:                   # @func0000000000000001
 	sh3add	a1, a2, a1
 	or	a0, a0, a1
 	ret
+func000000000000001d:                   # @func000000000000001d
+	slli	a2, a2, 52
+	add	a1, a1, a2
+	or	a0, a0, a1
+	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a2, a2, 52
 	add	a1, a1, a2

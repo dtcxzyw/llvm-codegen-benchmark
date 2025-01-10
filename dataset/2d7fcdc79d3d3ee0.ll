@@ -29,7 +29,7 @@ entry:
   %4 = shl nuw nsw i32 %3, 1
   %5 = add nuw nsw i32 %0, %1
   %6 = add nuw nsw i32 %5, %4
-  %7 = lshr i32 %6, 3
+  %7 = lshr i32 %6, 4
   ret i32 %7
 }
 

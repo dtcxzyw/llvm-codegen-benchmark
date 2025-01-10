@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openspiel/optimized/go_board.cc.ll
+; openspiel/optimized/y.cc.ll
 ; postgres/optimized/xloginsert.ll
 ; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll

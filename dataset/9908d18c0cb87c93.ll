@@ -1,8 +1,8 @@
 
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
 
 ; 10 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
@@ -35,7 +35,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
   %6 = getelementptr nusw nuw i8, ptr %3, i64 %5
-  %7 = getelementptr nusw nuw %"class.boost::json::value.2995760", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"class.boost::json::value.2995726", ptr %6, i64 %0
   ret ptr %7
 }
 

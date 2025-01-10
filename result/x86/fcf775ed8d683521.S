@@ -46,13 +46,13 @@ func0000000000000044:                   # @func0000000000000044
 	cmpb	%sil, %dil
 	setb	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	cmpb	%sil, %dil
-	setb	%al
-	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpb	%sil, %dil
 	setbe	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	cmpb	%sil, %dil
+	setb	%al
 	retq
 func0000000000000009:                   # @func0000000000000009
 	cmpb	%sil, %dil

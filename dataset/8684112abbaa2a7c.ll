@@ -410,9 +410,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
+; php/optimized/pack.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:

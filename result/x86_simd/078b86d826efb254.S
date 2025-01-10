@@ -10,7 +10,7 @@ func000000000000042c:                   # @func000000000000042c
 .LCPI1_0:
 	.long	2147483646                      # 0x7ffffffe
 .LCPI1_1:
-	.long	8                               # 0x8
+	.long	16                              # 0x10
 func0000000000000021:                   # @func0000000000000021
 	vpor	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0

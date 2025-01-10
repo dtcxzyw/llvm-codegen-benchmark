@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
@@ -8,7 +8,6 @@
 ; boost/optimized/src.ll
 ; casadi/optimized/getnonzeros.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
-; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll

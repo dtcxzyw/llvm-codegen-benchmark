@@ -42,15 +42,6 @@ func000000000000001d:                   // @func000000000000001d
 	orr	w0, w8, w9, lsl #7
 	ret
                                         // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	orr	w8, w0, w2, lsl #4
-	cmp	w1, #0
-	mov	w9, #2                          // =0x2
-	cinc	w9, w9, ne
-	orr	w0, w9, w8
-	ret
-                                        // -- End function
 func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	cmp	w2, #1

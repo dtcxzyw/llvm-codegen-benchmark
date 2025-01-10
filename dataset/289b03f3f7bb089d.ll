@@ -1,11 +1,11 @@
 
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
-%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
-%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
+%struct.Str_Mux_t_.2877096 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877095] }
+%struct.Str_Edg_t_.2877095 = type { i32, i32, i32, i32 }
 
 ; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
@@ -57,7 +57,7 @@ define ptr @func000000000000006b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr [16 x %struct.P256_POINT.2634394], ptr %4, i64 %0, i64 0, i32 1
+  %5 = getelementptr [16 x %struct.P256_POINT.2634361], ptr %4, i64 %0, i64 0, i32 1
   ret ptr %5
 }
 
@@ -119,7 +119,7 @@ entry:
 define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.NetClientState.2706049, ptr %1, i64 %3
+  %4 = getelementptr %struct.NetClientState.2706015, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 24
   ret ptr %6
@@ -264,8 +264,8 @@ entry:
 define ptr @func000000000000006c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %1, i64 %3
-  %5 = getelementptr %struct.Str_Mux_t_.2877130, ptr %4, i64 %0, i32 4, i64 0, i32 2
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877096, ptr %1, i64 %3
+  %5 = getelementptr %struct.Str_Mux_t_.2877096, ptr %4, i64 %0, i32 4, i64 0, i32 2
   ret ptr %5
 }
 

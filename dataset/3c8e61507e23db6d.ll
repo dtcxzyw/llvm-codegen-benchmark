@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -29,7 +29,7 @@ entry:
 define i64 @func000000000000006c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3168219", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

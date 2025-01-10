@@ -1,6 +1,7 @@
 
-; 120 occurrences:
+; 121 occurrences:
 ; abc/optimized/bmcFault.c.ll
+; abc/optimized/cuddTable.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/message.cc.ll
 ; boost/optimized/gregorian.ll

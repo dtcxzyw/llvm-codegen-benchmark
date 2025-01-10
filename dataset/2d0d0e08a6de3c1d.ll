@@ -1,5 +1,5 @@
 
-; 829 occurrences:
+; 828 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
@@ -100,7 +100,6 @@
 ; libquic/optimized/quic_data_writer.cc.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; libquic/optimized/tls_record.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll

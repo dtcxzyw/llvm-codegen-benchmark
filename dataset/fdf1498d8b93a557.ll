@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::prop::SatLiteral.3562034" = type { i64 }
+%"class.cvc5::internal::prop::SatLiteral.3562000" = type { i64 }
 
 ; 2 occurrences:
 ; openjdk/optimized/block.ll
@@ -46,7 +46,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.cvc5::internal::prop::SatLiteral.3562034", ptr %0, i64 %4
+  %5 = getelementptr %"class.cvc5::internal::prop::SatLiteral.3562000", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }

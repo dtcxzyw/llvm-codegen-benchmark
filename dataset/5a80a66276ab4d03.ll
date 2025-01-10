@@ -1,7 +1,7 @@
 
-%class.rational.3615514 = type { %class.mpq.3615515 }
-%class.mpq.3615515 = type { %class.mpz.3615516, %class.mpz.3615516 }
-%class.mpz.3615516 = type { i32, i8, ptr }
+%class.rational.3615480 = type { %class.mpq.3615481 }
+%class.mpq.3615481 = type { %class.mpz.3615482, %class.mpz.3615482 }
+%class.mpz.3615482 = type { i32, i8, ptr }
 
 ; 2 occurrences:
 ; ruby/optimized/regparse.ll
@@ -161,7 +161,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.rational.3615514, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.rational.3615480, ptr %0, i64 %4
   ret ptr %5
 }
 

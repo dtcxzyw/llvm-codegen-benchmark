@@ -20,7 +20,7 @@ entry:
   ret i1 %6
 }
 
-; 91 occurrences:
+; 92 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -57,6 +57,7 @@ entry:
 ; darktable/optimized/ThreefrDecoder.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; grpc/optimized/hpack_encoder_table.cc.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
 ; linux/optimized/nfs4xdr.ll
@@ -389,6 +390,19 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; wireshark/optimized/packet-acn.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %3
+  %5 = zext i32 %1 to i64
+  %6 = icmp ne i64 %4, %5
+  ret i1 %6
+}
+
 ; 31 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -431,7 +445,7 @@ entry:
   ret i1 %6
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; darktable/optimized/AbstractDngDecompressor.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/Cr2LJpegDecoder.cpp.ll
@@ -454,8 +468,6 @@ entry:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -466,7 +478,7 @@ entry:
   ret i1 %6
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; darktable/optimized/AbstractDngDecompressor.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
@@ -492,11 +504,9 @@ entry:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; libquic/optimized/d1_both.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -529,7 +539,7 @@ entry:
   ret i1 %6
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -548,7 +558,6 @@ entry:
 ; openblas/optimized/dlansf.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
@@ -735,10 +744,8 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -771,18 +778,6 @@ entry:
   %4 = add nsw i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = icmp ult i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-acn.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %3
-  %5 = zext i32 %1 to i64
-  %6 = icmp ne i64 %4, %5
   ret i1 %6
 }
 
@@ -868,19 +863,6 @@ entry:
   %4 = add i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = icmp ult i64 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp ugt i64 %4, %5
   ret i1 %6
 }
 

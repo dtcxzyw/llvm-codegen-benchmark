@@ -1,5 +1,5 @@
 
-; 1342 occurrences:
+; 1344 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -368,6 +368,7 @@
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -1185,6 +1186,7 @@
 ; pbrt-v4/optimized/materials.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/noise.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll

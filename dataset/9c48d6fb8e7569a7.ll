@@ -1,5 +1,5 @@
 
-%struct.hash_bucket_type.2733816 = type { ptr, i32, ptr, i16, i16, i8 }
+%struct.hash_bucket_type.2733782 = type { ptr, i32, ptr, i16, i16, i8 }
 
 ; 10 occurrences:
 ; abseil-cpp/optimized/escaping.cc.ll
@@ -17,7 +17,7 @@ define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %struct.hash_bucket_type.2733816, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.hash_bucket_type.2733782, ptr %0, i64 %3
   ret ptr %4
 }
 

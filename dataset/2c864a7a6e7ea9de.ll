@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -40,7 +40,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %1, 4294967294
   %5 = select i1 %4, i64 1, i64 %3
-  %6 = getelementptr nuw %"class.llvm::Use.3188737", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"class.llvm::Use.3188703", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

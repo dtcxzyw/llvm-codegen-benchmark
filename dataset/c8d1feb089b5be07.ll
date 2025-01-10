@@ -1,13 +1,13 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2684645" = type <{ %"struct.std::atomic.10.2684642", %"struct.std::atomic.67.2684649", i32, [4 x i8] }>
-%"struct.std::atomic.10.2684642" = type { %"struct.std::__atomic_base.11.2684651" }
-%"struct.std::__atomic_base.11.2684651" = type { i64 }
-%"struct.std::atomic.67.2684649" = type { %"class.std::thread::id.2684650" }
-%"class.std::thread::id.2684650" = type { i64 }
-%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
-%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
-%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
-%struct.QTailQLink.2706558 = type { ptr, ptr }
+%"class.folly::hazptr_detail::shared_head_only_list.2684612" = type <{ %"struct.std::atomic.10.2684609", %"struct.std::atomic.67.2684616", i32, [4 x i8] }>
+%"struct.std::atomic.10.2684609" = type { %"struct.std::__atomic_base.11.2684618" }
+%"struct.std::__atomic_base.11.2684618" = type { i64 }
+%"struct.std::atomic.67.2684616" = type { %"class.std::thread::id.2684617" }
+%"class.std::thread::id.2684617" = type { i64 }
+%struct.OHCIPort.2706526 = type { %struct.USBPort.2706527, i32 }
+%struct.USBPort.2706527 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706528 }
+%union.anon.5.2706528 = type { %struct.QTailQLink.2706524 }
+%struct.QTailQLink.2706524 = type { ptr, ptr }
 
 ; 6 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -57,7 +57,7 @@ entry:
   %2 = add i64 %1, 1
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 7
-  %5 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2684645"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2684612"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -70,7 +70,7 @@ entry:
   %2 = add nuw nsw i64 %1, 17179869100
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [15 x %struct.OHCIPort.2706526], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -53,7 +53,7 @@ entry:
   ret i32 %6
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; gromacs/optimized/gmx_nmens.cpp.ll
@@ -83,7 +83,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/modelbin.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
 ; openspiel/optimized/TransTableL.cpp.ll

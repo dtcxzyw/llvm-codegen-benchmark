@@ -34,20 +34,6 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = call i32 @llvm.smax.i32(i32 range(i32 -2147483648, 31) %2, i32 range(i32 -2147483648, 30) %0)
-  %4 = icmp samesign ult i32 %3, 6
-  ret i1 %4
-}
-
 ; 12 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/giaCut.c.ll

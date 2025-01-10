@@ -1,14 +1,3 @@
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	cmp	x0, #60
-	cset	w0, hi
-	ret
-                                        // -- End function
-func0000000000000141:                   // @func0000000000000141
-// %bb.0:                               // %entry
-	mov	w0, #0                          // =0x0
-	ret
-                                        // -- End function
 func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
 	mov	w8, #16                         // =0x10

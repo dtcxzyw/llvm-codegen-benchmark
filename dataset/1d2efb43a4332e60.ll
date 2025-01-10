@@ -1,8 +1,8 @@
 
-%"class.clang::QualType.3244496" = type { %"class.llvm::PointerIntPair.3244497" }
-%"class.llvm::PointerIntPair.3244497" = type { %"struct.llvm::detail::PunnedPointer.3244498" }
-%"struct.llvm::detail::PunnedPointer.3244498" = type { [8 x i8] }
-%"class.clang::SourceLocation.3244478" = type { i32 }
+%"class.clang::QualType.3244462" = type { %"class.llvm::PointerIntPair.3244463" }
+%"class.llvm::PointerIntPair.3244463" = type { %"struct.llvm::detail::PunnedPointer.3244464" }
+%"struct.llvm::detail::PunnedPointer.3244464" = type { [8 x i8] }
+%"class.clang::SourceLocation.3244444" = type { i32 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -12,8 +12,8 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = and i64 %1, 65535
-  %6 = getelementptr nusw nuw %"class.clang::QualType.3244496", ptr %4, i64 %5
-  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3244478", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3244462", ptr %4, i64 %5
+  %7 = getelementptr nusw nuw %"class.clang::SourceLocation.3244444", ptr %6, i64 %0
   ret ptr %7
 }
 

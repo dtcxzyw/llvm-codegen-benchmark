@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -56,7 +56,6 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll

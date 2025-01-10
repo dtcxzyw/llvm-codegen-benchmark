@@ -1,76 +1,5 @@
 
-; 59 occurrences:
-; abc/optimized/blocksort.c.ll
-; abc/optimized/cuddInteract.c.ll
-; abc/optimized/cuddReorder.c.ll
-; cmake/optimized/blocksort.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_highlights.c.ll
-; draco/optimized/symbol_encoding.cc.ll
-; gromacs/optimized/gmx_anaeig.cpp.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
-; icu/optimized/unisetspan.ll
-; linux/optimized/filter.ll
-; linux/optimized/mballoc.ll
-; lua/optimized/lcode.ll
-; lvgl/optimized/lv_refr.ll
-; lz4/optimized/lz4hc.c.ll
-; minetest/optimized/server.cpp.ll
-; ncnn/optimized/psroipooling.cpp.ll
-; ncnn/optimized/roipooling.cpp.ll
-; oiio/optimized/deepdata.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dsbgst.c.ll
-; opencv/optimized/cloning_gui.cpp.ll
-; opencv/optimized/disparity_filters.cpp.ll
-; opencv/optimized/dpm_feature.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/fgs_filter.cpp.ll
-; opencv/optimized/floodfill.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; opencv/optimized/run_length_morphology.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
-; opencv/optimized/sparse_match_interpolators.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
-; opencv/optimized/text_detector_swt.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
-; opencv/optimized/variational_refinement.cpp.ll
-; openexr/optimized/ImfAcesFile.cpp.ll
-; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
-; openexr/optimized/ImfTiledInputFile.cpp.ll
-; openjdk/optimized/gifdecoder.ll
-; openusd/optimized/restoration.c.ll
-; pbrt-v4/optimized/image.cpp.ll
-; postgres/optimized/oracle_compat.ll
-; postgres/optimized/vacuum.ll
-; qemu/optimized/chardev_wctablet.c.ll
-; qemu/optimized/hw_usb_dev-serial.c.ll
-; qemu/optimized/ui_console-vc.c.ll
-; qemu/optimized/ui_vnc.c.ll
-; ruby/optimized/io.ll
-; slurm/optimized/cbuf.ll
-; stb/optimized/stb_tilemap_editor.c.ll
-; stockfish/optimized/thread.ll
-; wireshark/optimized/packet_list.cpp.ll
-; wolfssl/optimized/api.c.ll
-; xgboost/optimized/updater_approx.cc.ll
-; xgboost/optimized/updater_quantile_hist.cc.ll
-; yosys/optimized/liberty.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = sub i32 %0, %3
-  ret i32 %4
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
-; 184 occurrences:
+; 123 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -144,7 +73,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
@@ -176,32 +104,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; raylib/optimized/rcore.c.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; slurm/optimized/ring.ll
-; spike/optimized/vfwadd_vf.ll
-; spike/optimized/vfwadd_vv.ll
-; spike/optimized/vfwadd_wv.ll
-; spike/optimized/vfwcvt_f_f_v.ll
-; spike/optimized/vfwcvt_f_x_v.ll
-; spike/optimized/vfwcvt_f_xu_v.ll
-; spike/optimized/vfwcvt_rtz_x_f_v.ll
-; spike/optimized/vfwcvt_rtz_xu_f_v.ll
-; spike/optimized/vfwcvt_x_f_v.ll
-; spike/optimized/vfwcvt_xu_f_v.ll
-; spike/optimized/vfwcvtbf16_f_f_v.ll
-; spike/optimized/vfwmacc_vf.ll
-; spike/optimized/vfwmacc_vv.ll
-; spike/optimized/vfwmaccbf16_vf.ll
-; spike/optimized/vfwmaccbf16_vv.ll
-; spike/optimized/vfwmsac_vf.ll
-; spike/optimized/vfwmsac_vv.ll
-; spike/optimized/vfwmul_vf.ll
-; spike/optimized/vfwmul_vv.ll
-; spike/optimized/vfwnmacc_vf.ll
-; spike/optimized/vfwnmacc_vv.ll
-; spike/optimized/vfwnmsac_vf.ll
-; spike/optimized/vfwnmsac_vv.ll
-; spike/optimized/vfwsub_vf.ll
-; spike/optimized/vfwsub_vv.ll
-; spike/optimized/vfwsub_wv.ll
 ; spike/optimized/vloxei16_v.ll
 ; spike/optimized/vloxei32_v.ll
 ; spike/optimized/vloxei64_v.ll
@@ -210,40 +112,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; spike/optimized/vluxei32_v.ll
 ; spike/optimized/vluxei64_v.ll
 ; spike/optimized/vluxei8_v.ll
-; spike/optimized/vsext_vf2.ll
-; spike/optimized/vsext_vf4.ll
-; spike/optimized/vsext_vf8.ll
-; spike/optimized/vwadd_vv.ll
-; spike/optimized/vwadd_vx.ll
-; spike/optimized/vwadd_wv.ll
-; spike/optimized/vwaddu_vv.ll
-; spike/optimized/vwaddu_vx.ll
-; spike/optimized/vwaddu_wv.ll
-; spike/optimized/vwmacc_vv.ll
-; spike/optimized/vwmacc_vx.ll
-; spike/optimized/vwmaccsu_vv.ll
-; spike/optimized/vwmaccsu_vx.ll
-; spike/optimized/vwmaccu_vv.ll
-; spike/optimized/vwmaccu_vx.ll
-; spike/optimized/vwmaccus_vx.ll
-; spike/optimized/vwmul_vv.ll
-; spike/optimized/vwmul_vx.ll
-; spike/optimized/vwmulsu_vv.ll
-; spike/optimized/vwmulsu_vx.ll
-; spike/optimized/vwmulu_vv.ll
-; spike/optimized/vwmulu_vx.ll
-; spike/optimized/vwsll_vi.ll
-; spike/optimized/vwsll_vv.ll
-; spike/optimized/vwsll_vx.ll
-; spike/optimized/vwsub_vv.ll
-; spike/optimized/vwsub_vx.ll
-; spike/optimized/vwsub_wv.ll
-; spike/optimized/vwsubu_vv.ll
-; spike/optimized/vwsubu_vx.ll
-; spike/optimized/vwsubu_wv.ll
-; spike/optimized/vzext_vf2.ll
-; spike/optimized/vzext_vf4.ll
-; spike/optimized/vzext_vf8.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; stockfish/optimized/search.ll
@@ -260,6 +128,76 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sub nsw i32 %0, %3
+  ret i32 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 58 occurrences:
+; abc/optimized/blocksort.c.ll
+; abc/optimized/cuddInteract.c.ll
+; abc/optimized/cuddReorder.c.ll
+; cmake/optimized/blocksort.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; draco/optimized/symbol_encoding.cc.ll
+; gromacs/optimized/gmx_anaeig.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; icu/optimized/unisetspan.ll
+; linux/optimized/filter.ll
+; linux/optimized/mballoc.ll
+; lua/optimized/lcode.ll
+; lvgl/optimized/lv_refr.ll
+; lz4/optimized/lz4hc.c.ll
+; minetest/optimized/server.cpp.ll
+; ncnn/optimized/psroipooling.cpp.ll
+; ncnn/optimized/roipooling.cpp.ll
+; oiio/optimized/deepdata.cpp.ll
+; oiio/optimized/texturesys.cpp.ll
+; openblas/optimized/dorgql.c.ll
+; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/cloning_gui.cpp.ll
+; opencv/optimized/disparity_filters.cpp.ll
+; opencv/optimized/dpm_feature.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/fgs_filter.cpp.ll
+; opencv/optimized/floodfill.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; opencv/optimized/run_length_morphology.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/sparse_match_interpolators.cpp.ll
+; opencv/optimized/stereobm.cpp.ll
+; opencv/optimized/text_detector_swt.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
+; opencv/optimized/variational_refinement.cpp.ll
+; openexr/optimized/ImfAcesFile.cpp.ll
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
+; openexr/optimized/ImfTiledInputFile.cpp.ll
+; openjdk/optimized/gifdecoder.ll
+; openusd/optimized/restoration.c.ll
+; pbrt-v4/optimized/image.cpp.ll
+; postgres/optimized/oracle_compat.ll
+; postgres/optimized/vacuum.ll
+; qemu/optimized/chardev_wctablet.c.ll
+; qemu/optimized/hw_usb_dev-serial.c.ll
+; qemu/optimized/ui_console-vc.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; slurm/optimized/cbuf.ll
+; stb/optimized/stb_tilemap_editor.c.ll
+; stockfish/optimized/thread.ll
+; wireshark/optimized/packet_list.cpp.ll
+; wolfssl/optimized/api.c.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; yosys/optimized/liberty.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
+  %4 = sub i32 %0, %3
   ret i32 %4
 }
 

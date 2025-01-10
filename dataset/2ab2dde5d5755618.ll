@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 104 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absRef.c.ll
@@ -73,7 +73,6 @@
 ; openjdk/optimized/xPageAllocator.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/xUncommitter.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; openjdk/optimized/zStat.ll

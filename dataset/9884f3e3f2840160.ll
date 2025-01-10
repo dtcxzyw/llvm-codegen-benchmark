@@ -1,5 +1,5 @@
 
-; 752 occurrences:
+; 749 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -338,7 +338,6 @@
 ; mini-lsm-rs/optimized/u6nvp81ar93vbt8.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/dielectric.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/thindielectric.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; ninja/optimized/build_test.cc.ll
@@ -396,7 +395,6 @@
 ; opencv/optimized/persistence_yml.cpp.ll
 ; opencv/optimized/segment_objects.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openjdk/optimized/DrawPolygons.ll
@@ -497,7 +495,6 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phar.ll
 ; php/optimized/phar_object.ll
-; php/optimized/zend_execute.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/attmap.ll
 ; postgres/optimized/bitmapset.ll

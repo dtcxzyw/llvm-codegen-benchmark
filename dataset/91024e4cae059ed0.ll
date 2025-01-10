@@ -43,6 +43,7 @@
 ; curl/optimized/libcurl_la-select.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; flac/optimized/metadata_object.c.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/bulk-checkin.ll
 ; git/optimized/diff.ll
 ; git/optimized/files-backend.ll
@@ -181,7 +182,6 @@
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/crypt_sha256.ll
-; php/optimized/crypt_sha512.ll
 ; php/optimized/math.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/phpdbg_info.ll

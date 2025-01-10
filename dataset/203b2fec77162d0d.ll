@@ -1,6 +1,6 @@
 
-%struct.Fxch_SCHashTable_Entry_t_.2877822 = type { ptr, i32 }
-%struct.hlist_head.3536566 = type { ptr }
+%struct.Fxch_SCHashTable_Entry_t_.2877788 = type { ptr, i32 }
+%struct.hlist_head.3536532 = type { ptr }
 
 ; 2 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -12,7 +12,7 @@ entry:
   %4 = xor i32 %3, %2
   %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.Fxch_SCHashTable_Entry_t_.2877822, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.Fxch_SCHashTable_Entry_t_.2877788, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -28,7 +28,7 @@ entry:
   %4 = xor i32 %3, %2
   %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %struct.hlist_head.3536566, ptr %0, i64 %6
+  %7 = getelementptr %struct.hlist_head.3536532, ptr %0, i64 %6
   ret ptr %7
 }
 

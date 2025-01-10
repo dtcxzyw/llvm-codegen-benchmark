@@ -13,13 +13,15 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 9 occurrences:
+; 11 occurrences:
 ; faiss/optimized/IndexPQ.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
+; openblas/optimized/dasum_k.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
@@ -32,7 +34,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -50,6 +52,8 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; node/optimized/libnode.js_stream.ll
+; openblas/optimized/dasum_k.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:

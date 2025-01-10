@@ -977,7 +977,7 @@ entry:
   ret i64 %5
 }
 
-; 152 occurrences:
+; 153 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -1014,6 +1014,7 @@ entry:
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/pt.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll

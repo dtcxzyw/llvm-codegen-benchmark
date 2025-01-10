@@ -1,16 +1,16 @@
 
-%"class.llvm::CCValAssign.3242526" = type <{ %"class.std::variant.3242527", i32, i8, i8, %"class.llvm::MVT.3242369", %"class.llvm::MVT.3242369", [6 x i8] }>
-%"class.std::variant.3242527" = type { %"struct.std::__detail::__variant::_Variant_base.base.3242528", [7 x i8] }
-%"struct.std::__detail::__variant::_Variant_base.base.3242528" = type { %"struct.std::__detail::__variant::_Move_assign_base.base.3242529" }
-%"struct.std::__detail::__variant::_Move_assign_base.base.3242529" = type { %"struct.std::__detail::__variant::_Copy_assign_base.base.3242530" }
-%"struct.std::__detail::__variant::_Copy_assign_base.base.3242530" = type { %"struct.std::__detail::__variant::_Move_ctor_base.base.3242531" }
-%"struct.std::__detail::__variant::_Move_ctor_base.base.3242531" = type { %"struct.std::__detail::__variant::_Copy_ctor_base.base.3242532" }
-%"struct.std::__detail::__variant::_Copy_ctor_base.base.3242532" = type { %"struct.std::__detail::__variant::_Variant_storage.base.3242533" }
-%"struct.std::__detail::__variant::_Variant_storage.base.3242533" = type <{ %"union.std::__detail::__variant::_Variadic_union.3242534", i8 }>
-%"union.std::__detail::__variant::_Variadic_union.3242534" = type { %"union.std::__detail::__variant::_Variadic_union.588.3242535" }
-%"union.std::__detail::__variant::_Variadic_union.588.3242535" = type { %"struct.std::__detail::__variant::_Uninitialized.589.3242536" }
-%"struct.std::__detail::__variant::_Uninitialized.589.3242536" = type { i64 }
-%"class.llvm::MVT.3242369" = type { i16 }
+%"class.llvm::CCValAssign.3242492" = type <{ %"class.std::variant.3242493", i32, i8, i8, %"class.llvm::MVT.3242335", %"class.llvm::MVT.3242335", [6 x i8] }>
+%"class.std::variant.3242493" = type { %"struct.std::__detail::__variant::_Variant_base.base.3242494", [7 x i8] }
+%"struct.std::__detail::__variant::_Variant_base.base.3242494" = type { %"struct.std::__detail::__variant::_Move_assign_base.base.3242495" }
+%"struct.std::__detail::__variant::_Move_assign_base.base.3242495" = type { %"struct.std::__detail::__variant::_Copy_assign_base.base.3242496" }
+%"struct.std::__detail::__variant::_Copy_assign_base.base.3242496" = type { %"struct.std::__detail::__variant::_Move_ctor_base.base.3242497" }
+%"struct.std::__detail::__variant::_Move_ctor_base.base.3242497" = type { %"struct.std::__detail::__variant::_Copy_ctor_base.base.3242498" }
+%"struct.std::__detail::__variant::_Copy_ctor_base.base.3242498" = type { %"struct.std::__detail::__variant::_Variant_storage.base.3242499" }
+%"struct.std::__detail::__variant::_Variant_storage.base.3242499" = type <{ %"union.std::__detail::__variant::_Variadic_union.3242500", i8 }>
+%"union.std::__detail::__variant::_Variadic_union.3242500" = type { %"union.std::__detail::__variant::_Variadic_union.588.3242501" }
+%"union.std::__detail::__variant::_Variadic_union.588.3242501" = type { %"struct.std::__detail::__variant::_Uninitialized.589.3242502" }
+%"struct.std::__detail::__variant::_Uninitialized.589.3242502" = type { i64 }
+%"class.llvm::MVT.3242335" = type { i16 }
 
 ; 3 occurrences:
 ; cmake/optimized/xmltok.c.ll
@@ -39,7 +39,7 @@ entry:
   %3 = and i8 %2, 126
   %4 = icmp eq i8 %3, 22
   %5 = select i1 %4, i64 24, i64 22
-  %6 = getelementptr nusw nuw %"class.llvm::CCValAssign.3242526", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::CCValAssign.3242492", ptr %0, i64 %1
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }

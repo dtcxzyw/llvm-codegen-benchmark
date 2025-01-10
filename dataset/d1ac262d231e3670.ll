@@ -1,5 +1,5 @@
 
-; 847 occurrences:
+; 848 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cmdUtils.c.ll
+; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cutCut.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauEnum.c.ll
@@ -428,7 +429,6 @@
 ; llvm/optimized/SPIR.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
-; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SarifDiagnostics.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -609,6 +609,8 @@
 ; openspiel/optimized/tabular_best_response_mdp.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
@@ -659,7 +661,6 @@
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
-; protobuf/optimized/unparser.cc.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -1880,7 +1881,7 @@ entry:
   ret i1 %4
 }
 
-; 117 occurrences:
+; 118 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; boost/optimized/recycled.ll
@@ -1895,6 +1896,7 @@ entry:
 ; hdf5/optimized/H5Faccum.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; just-rs/optimized/15iymzte00kmcyqz.ll
+; linux/optimized/build_policy.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -2049,7 +2051,7 @@ entry:
   ret i1 %4
 }
 
-; 290 occurrences:
+; 289 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -2263,7 +2265,6 @@ entry:
 ; php/optimized/rfc1867.ll
 ; php/optimized/softmagic.ll
 ; php/optimized/streams.ll
-; pocketpy/optimized/collections.cpp.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/xid8funcs.ll
@@ -2348,7 +2349,7 @@ entry:
   ret i1 %4
 }
 
-; 618 occurrences:
+; 619 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/log_entry_test.cc.ll
 ; abseil-cpp/optimized/str_join_test.cc.ll
@@ -2396,6 +2397,7 @@ entry:
 ; coreutils-rs/optimized/jzu2v52gceikjdv.ll
 ; coreutils-rs/optimized/nchybjntbm98czw.ll
 ; cpython/optimized/formatter_unicode.ll
+; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -3099,7 +3101,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
@@ -3115,6 +3117,7 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; luau/optimized/isocline.c.ll
 ; postgres/optimized/zic.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; quantlib/optimized/averagebmacoupon.ll

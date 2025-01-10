@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 7 occurrences:
 ; linux/optimized/blk-merge.ll
@@ -73,7 +73,7 @@ entry:
 define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1125899902648320
   ret i64 %5

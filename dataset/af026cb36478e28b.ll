@@ -1,5 +1,5 @@
 
-; 935 occurrences:
+; 939 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -41,6 +41,7 @@
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cnfMan.c.ll
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -348,6 +349,7 @@
 ; gromacs/optimized/xtc3.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/dictionarydata.ll
 ; icu/optimized/flagparser.ll
 ; icu/optimized/formatted_string_builder.ll
@@ -749,6 +751,7 @@
 ; openjdk/optimized/serialFullGC.ll
 ; openjdk/optimized/serialHeap.ll
 ; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahCodeRoots.ll
 ; openjdk/optimized/shenandoahConcurrentGC.ll
@@ -847,6 +850,7 @@
 ; openusd/optimized/refinerFactory.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; openusd/optimized/resize.c.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/sparseSelector.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
@@ -944,7 +948,7 @@ entry:
   ret ptr %5
 }
 
-; 738 occurrences:
+; 737 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -1442,7 +1446,6 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/msd.cpp.ll
@@ -1692,7 +1695,7 @@ entry:
   ret ptr %5
 }
 
-; 1528 occurrences:
+; 1536 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -1972,6 +1975,7 @@ entry:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/theory_datatypes.cpp.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -2149,6 +2153,7 @@ entry:
 ; libjpeg-turbo/optimized/jdphuff.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libquic/optimized/bio_test.cc.ll
 ; libquic/optimized/e_aes.c.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; libquic/optimized/url_canon_host.cc.ll
@@ -2958,6 +2963,7 @@ entry:
 ; openjdk/optimized/serialFullGC.ll
 ; openjdk/optimized/serialHeap.ll
 ; openjdk/optimized/sharedRuntime.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahFullGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -2994,6 +3000,7 @@ entry:
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/onesided_aggregation.ll
+; openmpi/optimized/stacktrace.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/bridge.cc.ll
@@ -3015,15 +3022,19 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
+; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
+; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/aom_scale.c.ll
@@ -3230,23 +3241,37 @@ entry:
   ret ptr %5
 }
 
-; 17 occurrences:
-; darktable/optimized/introspection_bilateral.cc.ll
+; 16 occurrences:
+; abc/optimized/bmcInse.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; graphviz/optimized/power.c.ll
+; libquic/optimized/exponentiation.c.ll
+; ncnn/optimized/lstm_x86_avx512.cpp.ll
+; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; openexr/optimized/unpack.c.ll
+; openjdk/optimized/mlib_ImageConvMxN_Fp.ll
+; openjdk/optimized/mlib_ImageLookUp_64.ll
+; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; openspiel/optimized/oh_hell_test.cc.ll
+; openssl/optimized/libcrypto-lib-bn_exp.ll
+; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 5 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
-; libquic/optimized/bio_test.cc.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; openmpi/optimized/stacktrace.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
-; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/restoration.c.ll
-; redis/optimized/debug.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
@@ -3257,38 +3282,7 @@ entry:
   ret ptr %5
 }
 
-; 21 occurrences:
-; abc/optimized/bmcInse.c.ll
-; abc/optimized/dauNonDsd.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; fmt/optimized/format-impl-test.cc.ll
-; graphviz/optimized/power.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; libquic/optimized/exponentiation.c.ll
-; ncnn/optimized/lstm_x86_avx512.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; opencv/optimized/dxt.cpp.ll
-; openexr/optimized/unpack.c.ll
-; openjdk/optimized/mlib_ImageConvMxN_Fp.ll
-; openjdk/optimized/mlib_ImageLookUp_64.ll
-; openjdk/optimized/mlib_c_ImageLookUp_f.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; openspiel/optimized/oh_hell_test.cc.ll
-; openssl/optimized/libcrypto-lib-bn_exp.ll
-; openssl/optimized/libcrypto-shlib-bn_exp.ll
-; openusd/optimized/cpuKernel.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/restoration.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 349 occurrences:
+; 350 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/giaFrames.c.ll
@@ -3353,6 +3347,7 @@ entry:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
+; darktable/optimized/introspection_zonesystem.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -3567,7 +3562,6 @@ entry:
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
@@ -3608,6 +3602,7 @@ entry:
 ; openspiel/optimized/first_sealed_auction.cc.ll
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/cdef.c.ll
+; openusd/optimized/convolve.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -3698,20 +3693,6 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr double, ptr %1, i64 %3
   %5 = getelementptr nusw nuw double, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 4 occurrences:
-; darktable/optimized/introspection_zonesystem.c.ll
-; openusd/optimized/cdef.c.ll
-; openusd/optimized/convolve.c.ll
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw float, ptr %1, i64 %3
-  %5 = getelementptr float, ptr %4, i64 %0
   ret ptr %5
 }
 

@@ -91,18 +91,6 @@ entry:
 }
 
 ; 1 occurrences:
-; hyperscan/optimized/repeat.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 6
-  %3 = or disjoint i64 %0, %2
-  %4 = and i64 %3, 4294967295
-  %5 = icmp ne i64 %4, 4294967295
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; libwebp/optimized/quality_estimate.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {

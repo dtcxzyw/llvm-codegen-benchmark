@@ -1,6 +1,6 @@
 
-%"class.Gluco2::vec.5.2876062" = type { ptr, i32, i32 }
-%struct.Vec_Int_t_.2876566 = type { i32, i32, ptr }
+%"class.Gluco2::vec.5.2876028" = type { ptr, i32, i32 }
+%struct.Vec_Int_t_.2876532 = type { i32, i32, ptr }
 
 ; 38 occurrences:
 ; abc/optimized/Glucose.cpp.ll
@@ -46,7 +46,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.Gluco2::vec.5.2876062", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"class.Gluco2::vec.5.2876028", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -57,7 +57,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Vec_Int_t_.2876566, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.Vec_Int_t_.2876532, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -72,7 +72,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Vec_Int_t_.2876566, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.Vec_Int_t_.2876532, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

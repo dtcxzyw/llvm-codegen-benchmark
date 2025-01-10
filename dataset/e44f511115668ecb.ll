@@ -1,5 +1,5 @@
 
-%struct.ldmEntry_t.3496624 = type { i32, i32 }
+%struct.ldmEntry_t.3496590 = type { i32, i32 }
 
 ; 5 occurrences:
 ; miniaudio/optimized/unity.c.ll
@@ -58,7 +58,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = getelementptr nusw %struct.ldmEntry_t.3496624, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.ldmEntry_t.3496590, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -70,7 +70,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = getelementptr nusw %struct.ldmEntry_t.3496624, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.ldmEntry_t.3496590, ptr %0, i64 %4
   ret ptr %5
 }
 

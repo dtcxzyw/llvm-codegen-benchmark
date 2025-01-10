@@ -43,10 +43,10 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, -16
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a2, 152
+	li	a2, -96
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 20
+	addi	a0, a0, -96
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sh1add	a1, a1, a1
@@ -120,9 +120,4 @@ func0000000000000037:                   # @func0000000000000037
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
-	ret
-func000000000000000c:                   # @func000000000000000c
-	sh1add	a1, a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, 2
 	ret

@@ -145,10 +145,7 @@ entry:
   ret i64 %6
 }
 
-; 23 occurrences:
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
+; 18 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
@@ -161,8 +158,6 @@ entry:
 ; linux/optimized/fs_context.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/large.ll
@@ -215,6 +210,27 @@ entry:
   %4 = add nsw i64 %3, 135
   %5 = add nsw i64 %4, %1
   %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 10 occurrences:
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 9223372036854771712
+  %4 = add nsw i64 %3, -4096
+  %5 = add nuw i64 %4, %1
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 

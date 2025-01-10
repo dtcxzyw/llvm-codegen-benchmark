@@ -334,10 +334,9 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftstroke.c.ll
 ; icu/optimized/normalizer2impl.ll
@@ -389,7 +388,7 @@ entry:
   ret i1 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -416,7 +415,6 @@ entry:
 ; wireshark/optimized/packet-iax2.c.ll
 ; wireshark/optimized/packet-iperf.c.ll
 ; wireshark/optimized/packet-isi.c.ll
-; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-xra.c.ll
 ; Function Attrs: nounwind
@@ -870,7 +868,7 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; linux/optimized/bio.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/dmi_scan.ll
@@ -882,7 +880,6 @@ entry:
 ; linux/optimized/xt_policy.ll
 ; postgres/optimized/network_gist.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-openflow_v4.c.ll
 ; wireshark/optimized/packet-openflow_v5.c.ll
 ; wireshark/optimized/packet-openflow_v6.c.ll
@@ -930,19 +927,6 @@ entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add i32 %0, 64
   %4 = icmp slt i32 %3, %2
-  ret i1 %4
-}
-
-; 3 occurrences:
-; postgres/optimized/network_gist.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; wolfssl/optimized/tls13.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = add i32 %0, -40
-  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -1057,6 +1041,18 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %0, 1
   %4 = icmp samesign uge i32 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; postgres/optimized/network_gist.ll
+; wolfssl/optimized/tls13.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add i32 %0, -1
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

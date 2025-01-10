@@ -1,7 +1,7 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"class.llvm::Use.3185630" = type { ptr, ptr, ptr, ptr }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"class.llvm::Use.3185596" = type { ptr, ptr, ptr, ptr }
 
 ; 25 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -39,7 +39,7 @@ entry:
   ret ptr %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; linux/optimized/aes.ll
@@ -66,7 +66,6 @@ entry:
 ; linux/optimized/tty_buffer.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/wpa.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; qemu/optimized/fdt_rw.c.ll
@@ -80,9 +79,9 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %5
+  %6 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -1498,7 +1497,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::Use.3185630", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::Use.3185596", ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr ptr, ptr %4, i64 %5
   ret ptr %6

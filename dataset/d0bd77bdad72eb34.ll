@@ -1,5 +1,5 @@
 
-; 1021 occurrences:
+; 1023 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -788,6 +788,8 @@
 ; sundials/optimized/kinsol_io.c.ll
 ; syn/optimized/10g9nn9r9o3auy7y.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

@@ -13,7 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 56 occurrences:
+; 58 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
@@ -47,6 +47,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
+; node/optimized/simdutf.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/54dfm57uiwuw9jbd.ll
@@ -61,6 +62,7 @@ entry:
 ; rust-analyzer-rs/optimized/5cv6fzh8luwt5r60.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wireshark/optimized/packet-aoe.c.ll

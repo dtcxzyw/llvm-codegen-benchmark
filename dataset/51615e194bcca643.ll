@@ -1,5 +1,5 @@
 
-%struct.ldmEntry_t.3496624 = type { i32, i32 }
+%struct.ldmEntry_t.3496590 = type { i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/g1RemSet.ll
@@ -22,7 +22,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = getelementptr nusw %struct.ldmEntry_t.3496624, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.ldmEntry_t.3496590, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = shl i64 %4, %3
-  %6 = getelementptr nusw %struct.ldmEntry_t.3496624, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.ldmEntry_t.3496590, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -26,10 +26,3 @@ func000000000000000e:                   // @func000000000000000e
 	lsr	w0, w8, w2
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	add	w8, w0, w1
-                                        // kill: def $w2 killed $w2 def $x2
-	lsr	w0, w8, w2
-	ret
-                                        // -- End function

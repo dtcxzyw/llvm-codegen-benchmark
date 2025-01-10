@@ -82,9 +82,3 @@ func0000000000000003:                   // @func0000000000000003
 	add	x0, x8, w2, uxtw
 	ret
                                         // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-	sub	x8, x0, x1
-	add	x0, x8, w2, uxtw
-	ret
-                                        // -- End function

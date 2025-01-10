@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; hermes/optimized/zip.c.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
@@ -19,8 +20,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/tcp_output.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0, i64 %1) #0 {

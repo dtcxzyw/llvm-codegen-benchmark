@@ -1,5 +1,5 @@
 
-%struct.PhysPageEntry.2709868 = type { i32 }
+%struct.PhysPageEntry.2709834 = type { i32 }
 
 ; 13 occurrences:
 ; abc/optimized/utilSort.c.ll
@@ -158,7 +158,7 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 511
-  %4 = getelementptr %struct.PhysPageEntry.2709868, ptr %1, i64 %3
+  %4 = getelementptr %struct.PhysPageEntry.2709834, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }

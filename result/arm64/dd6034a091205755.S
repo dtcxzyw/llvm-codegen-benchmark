@@ -10,7 +10,7 @@ func000000000000000e:                   // @func000000000000000e
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	cmp	w1, #0
-	mov	w8, #12                         // =0xc
+	mov	w8, #1                          // =0x1
 	csel	w9, wzr, w0, eq
 	lsl	x0, x8, x9
 	ret

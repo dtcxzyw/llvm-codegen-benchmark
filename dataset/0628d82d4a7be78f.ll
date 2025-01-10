@@ -1,7 +1,7 @@
 
-%"class.doctest::String.2946892" = type { %union.anon.7.2946893 }
-%union.anon.7.2946893 = type { %"struct.doctest::String::view.2946894", [8 x i8] }
-%"struct.doctest::String::view.2946894" = type { ptr, i32, i32 }
+%"class.doctest::String.2946858" = type { %union.anon.7.2946859 }
+%union.anon.7.2946859 = type { %"struct.doctest::String::view.2946860", [8 x i8] }
+%"struct.doctest::String::view.2946860" = type { ptr, i32, i32 }
 
 ; 5 occurrences:
 ; arrow/optimized/builder_nested.cc.ll
@@ -27,7 +27,7 @@ define ptr @func0000000000000004(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr %"class.doctest::String.2946892", ptr %4, i64 %0
+  %5 = getelementptr %"class.doctest::String.2946858", ptr %4, i64 %0
   ret ptr %5
 }
 

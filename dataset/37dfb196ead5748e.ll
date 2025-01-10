@@ -101,9 +101,8 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/fileio.ll
-; cpython/optimized/pystrtod.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i64 %0, i32 %1) #0 {

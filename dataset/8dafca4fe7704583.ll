@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
 
 ; 42 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -67,7 +67,7 @@ entry:
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, ptr %0, ptr %1
   %6 = lshr i64 %2, 1
-  %7 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %5, i64 %6
+  %7 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %5, i64 %6
   ret ptr %7
 }
 

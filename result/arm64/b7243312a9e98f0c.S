@@ -24,21 +24,6 @@ func0000000000000088:                   // @func0000000000000088
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-.LCPI2_0:
-	.xword	0x402921fb54442d18              // double 12.566370614359172
-func0000000000000055:                   // @func0000000000000055
-// %bb.0:                               // %entry
-	fabs	d1, d1
-	adrp	x8, .LCPI2_0
-	ldr	d2, [x8, :lo12:.LCPI2_0]
-	fcmp	d1, d2
-	cset	w8, hi
-	fcmp	d0, d2
-	csinc	w8, w8, wzr, ls
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
-	ret
-                                        // -- End function
 func0000000000000022:                   // @func0000000000000022
 // %bb.0:                               // %entry
 	fabs	d1, d1
@@ -51,13 +36,13 @@ func0000000000000022:                   // @func0000000000000022
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-.LCPI4_0:
+.LCPI3_0:
 	.xword	0x3eb0c6f7a0b5ed8d              // double 9.9999999999999995E-7
 func00000000000000a2:                   // @func00000000000000a2
 // %bb.0:                               // %entry
 	fabs	d1, d1
-	adrp	x8, .LCPI4_0
-	ldr	d2, [x8, :lo12:.LCPI4_0]
+	adrp	x8, .LCPI3_0
+	ldr	d2, [x8, :lo12:.LCPI3_0]
 	fcmp	d1, d2
 	cset	w8, mi
 	fcmp	d0, #0.0

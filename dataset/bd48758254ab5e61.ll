@@ -38,17 +38,21 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; git/optimized/kwset.ll
 ; luajit/optimized/buildvm.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 3
+  %2 = shl i32 %1, 2
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw float, ptr %0, i64 %4
   ret ptr %5
 }
 

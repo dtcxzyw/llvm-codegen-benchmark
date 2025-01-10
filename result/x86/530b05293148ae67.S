@@ -19,6 +19,6 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax
 	shrl	$12, %eax
-	andl	$65536, %eax                    # imm = 0x10000
+	andl	$262144, %eax                   # imm = 0x40000
 	orq	%rdi, %rax
 	retq

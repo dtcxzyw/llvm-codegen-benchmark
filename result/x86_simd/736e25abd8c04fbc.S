@@ -82,19 +82,21 @@ func000000000000002a:                   # @func000000000000002a
 	vzeroupper
 	retq
 .LCPI11_0:
-	.long	1114112                         # 0x110000
-.LCPI11_1:
-	.long	127                             # 0x7f
-func0000000000000028:                   # @func0000000000000028
-	vpcmpneqd	.LCPI11_0(%rip){1to8}, %ymm0, %k1
-	vpcmpnleud	.LCPI11_1(%rip){1to8}, %ymm0, %k0 {%k1}
+	.long	4294967294                      # 0xfffffffe
+func000000000000002c:                   # @func000000000000002c
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpcmpltud	.LCPI11_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI12_0:
-	.long	4                               # 0x4
-func000000000000002c:                   # @func000000000000002c
-	vpcmpneqd	.LCPI12_0(%rip){1to8}, %ymm0, %k0
+	.long	1114112                         # 0x110000
+.LCPI12_1:
+	.long	127                             # 0x7f
+func0000000000000028:                   # @func0000000000000028
+	vpcmpneqd	.LCPI12_0(%rip){1to8}, %ymm0, %k1
+	vpcmpnleud	.LCPI12_1(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

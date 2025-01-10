@@ -35,7 +35,7 @@ entry:
   ret i32 %4
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/mbox.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
@@ -103,6 +103,7 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-turbocell.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {

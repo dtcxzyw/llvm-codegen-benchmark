@@ -10,6 +10,11 @@ func00000000000000c0:                   # @func00000000000000c0
 	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
+func0000000000000022:                   # @func0000000000000022
+	incq	%rdx
+	imulq	%rsi, %rdx
+	leaq	-1(%rdi,%rdx), %rax
+	retq
 func000000000000005c:                   # @func000000000000005c
 	decq	%rdx
 	imulq	%rdi, %rdx

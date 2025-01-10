@@ -68,16 +68,3 @@ func0000000000000037:                   # @func0000000000000037
 	add	a1, a1, a0
 	mv	a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
-	srli	a4, a2, 63
-	sh1add	a2, a2, a0
-	sh1add	a3, a3, a4
-	li	a4, -1
-	sltu	a5, a2, a0
-	slli	a0, a4, 32
-	add	a1, a1, a3
-	add	a0, a0, a2
-	add	a1, a1, a5
-	sltu	a2, a0, a2
-	add	a1, a1, a2
-	ret

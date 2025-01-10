@@ -1,8 +1,8 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialForceVector.2818471 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 3 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -12,8 +12,8 @@
 define ptr @func00000000000000ef(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %3
-  %5 = getelementptr %struct.btSpatialForceVector.2818505, ptr %4, i64 %1
+  %4 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %3
+  %5 = getelementptr %struct.btSpatialForceVector.2818471, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 40
   ret ptr %6
 }
@@ -24,8 +24,8 @@ entry:
 define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %3
-  %5 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %4, i64 %1
+  %4 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %3
+  %5 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }
@@ -36,8 +36,8 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %0, i64 %3
-  %5 = getelementptr %"class.cv::Complex.13.3754032", ptr %4, i64 %1
+  %4 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %0, i64 %3
+  %5 = getelementptr %"class.cv::Complex.13.3753982", ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }

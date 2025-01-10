@@ -143,8 +143,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; lief/optimized/Builder.cpp.ll
+; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:

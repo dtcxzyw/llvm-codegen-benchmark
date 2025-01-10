@@ -450,6 +450,24 @@ entry:
   ret i1 %4
 }
 
+; 8 occurrences:
+; clamav/optimized/explode.c.ll
+; libquic/optimized/a_utf8.c.ll
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; linux/optimized/ehci-hcd.ll
+; ruby/optimized/shift_jis.ll
+; ruby/optimized/windows_31j.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 8
+  %3 = or disjoint i32 %2, %0
+  %4 = icmp ult i32 %3, 128
+  ret i1 %4
+}
+
 ; 40 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -621,7 +639,7 @@ entry:
   ret i1 %4
 }
 
-; 89 occurrences:
+; 84 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -643,10 +661,6 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Snone.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/tree.ll
@@ -700,7 +714,6 @@ entry:
 ; qemu/optimized/ui_vnc.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/fdt.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -1102,22 +1115,6 @@ entry:
   %2 = shl nuw i32 %1, 24
   %3 = or disjoint i32 %0, %2
   %4 = icmp samesign ugt i32 %3, 1
-  ret i1 %4
-}
-
-; 6 occurrences:
-; clamav/optimized/explode.c.ll
-; libquic/optimized/a_utf8.c.ll
-; libquic/optimized/bio.c.ll
-; libquic/optimized/cbs.c.ll
-; linux/optimized/ehci-hcd.ll
-; yosys/optimized/fstapi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 8
-  %3 = or disjoint i32 %2, %0
-  %4 = icmp ult i32 %3, 128
   ret i1 %4
 }
 

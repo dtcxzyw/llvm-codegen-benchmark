@@ -43,8 +43,10 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/bwt.c.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
@@ -55,12 +57,10 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; icu/optimized/ubidi.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

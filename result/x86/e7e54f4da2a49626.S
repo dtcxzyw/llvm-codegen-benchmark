@@ -18,6 +18,11 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	andb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpb	%dl, %sil
+	setb	%al
+	andb	%dil, %al
+	retq
 func0000000000000009:                   # @func0000000000000009
 	cmpb	%dl, %sil
 	setae	%al

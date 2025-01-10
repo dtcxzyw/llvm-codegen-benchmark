@@ -1,8 +1,6 @@
 
-; 7 occurrences:
-; llvm/optimized/MachineInstr.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll

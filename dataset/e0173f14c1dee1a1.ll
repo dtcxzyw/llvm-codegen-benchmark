@@ -148,8 +148,9 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; git/optimized/column.ll
 ; grpc/optimized/posix_endpoint.cc.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll

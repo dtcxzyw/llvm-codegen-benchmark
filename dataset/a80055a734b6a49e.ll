@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/31ndbnr1d3v04hlo.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; Function Attrs: nounwind
@@ -12,9 +11,10 @@ entry:
   ret ptr %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; php/optimized/string.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
@@ -55,10 +55,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = getelementptr nusw nuw [87 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [87 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

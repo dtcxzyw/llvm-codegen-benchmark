@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2790528 = type { %union._zend_value.2790538, %union.anon.2790539, %union.anon.2.2790540 }
-%union._zend_value.2790538 = type { i64 }
-%union.anon.2790539 = type { i32 }
-%union.anon.2.2790540 = type { i32 }
+%struct._zval_struct.2790494 = type { %union._zend_value.2790504, %union.anon.2790505, %union.anon.2.2790506 }
+%union._zend_value.2790504 = type { i64 }
+%union.anon.2790505 = type { i32 }
+%union.anon.2.2790506 = type { i32 }
 
 ; 3 occurrences:
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -26,9 +26,9 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct._zval_struct.2790528, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2790494, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %struct._zval_struct.2790528, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %struct._zval_struct.2790494, ptr %5, i64 %6
   ret ptr %7
 }
 

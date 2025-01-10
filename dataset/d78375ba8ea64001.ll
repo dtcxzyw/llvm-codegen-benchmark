@@ -93,9 +93,8 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/cppc_acpi.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; minetest/optimized/subgames.cpp.ll

@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; freetype/optimized/ftcache.c.ll
 ; linux/optimized/pt.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/subtrans.ll

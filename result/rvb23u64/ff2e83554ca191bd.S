@@ -19,10 +19,3 @@ func0000000000000008:                   # @func0000000000000008
 	min	a1, a1, a3
 	addw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	sext.w	a1, a1
-	li	a3, 7
-	subw	a3, a3, a2
-	min	a1, a1, a3
-	addw	a0, a0, a1
-	ret

@@ -15,9 +15,8 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
-; git/optimized/line-log.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/huf_decompress.ll
 ; openjdk/optimized/cmsnamed.ll

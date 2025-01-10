@@ -15,9 +15,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; boost/optimized/message.ll
-; clamav/optimized/LzmaDec.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-memcached.ll

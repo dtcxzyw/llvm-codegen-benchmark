@@ -27,7 +27,7 @@ func0000000000000004:                   # @func0000000000000004
 	sarq	$30, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000006f:                   # @func000000000000006f
+func000000000000006e:                   # @func000000000000006e
 	decl	%esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax

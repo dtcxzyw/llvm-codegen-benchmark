@@ -1,5 +1,89 @@
 
-; 274 occurrences:
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+
+; 72 occurrences:
+; freetype/optimized/autofit.c.ll
+; hdf5/optimized/H5Bcache.c.ll
+; hdf5/optimized/H5Fsuper_cache.c.ll
+; hdf5/optimized/H5Gcache.c.ll
+; hdf5/optimized/H5HGcache.c.ll
+; hdf5/optimized/H5HLcache.c.ll
+; hdf5/optimized/H5Oainfo.c.ll
+; hdf5/optimized/H5Oattr.c.ll
+; hdf5/optimized/H5Obtreek.c.ll
+; hdf5/optimized/H5Ocache.c.ll
+; hdf5/optimized/H5Ocache_image.c.ll
+; hdf5/optimized/H5Odrvinfo.c.ll
+; hdf5/optimized/H5Oefl.c.ll
+; hdf5/optimized/H5Ofill.c.ll
+; hdf5/optimized/H5Ofsinfo.c.ll
+; hdf5/optimized/H5Oginfo.c.ll
+; hdf5/optimized/H5Olayout.c.ll
+; hdf5/optimized/H5Olinfo.c.ll
+; hdf5/optimized/H5Olink.c.ll
+; hdf5/optimized/H5Omtime.c.ll
+; hdf5/optimized/H5Opline.c.ll
+; hdf5/optimized/H5Osdspace.c.ll
+; hdf5/optimized/H5Oshared.c.ll
+; hdf5/optimized/H5Oshmesg.c.ll
+; hdf5/optimized/H5Shyper.c.ll
+; hdf5/optimized/H5Spoint.c.ll
+; linux/optimized/cistpl.ll
+; linux/optimized/entropy_common.ll
+; linux/optimized/extents.ll
+; linux/optimized/fast_commit.ll
+; linux/optimized/fatent.ll
+; linux/optimized/filter.ll
+; linux/optimized/fse_decompress.ll
+; linux/optimized/huf_decompress.ll
+; linux/optimized/kobject_uevent.ll
+; linux/optimized/lz4_decompress.ll
+; linux/optimized/namei.ll
+; linux/optimized/nf_conntrack_irc.ll
+; linux/optimized/virtio_net.ll
+; linux/optimized/xxhash.ll
+; linux/optimized/zstd_decompress_block.ll
+; luajit/optimized/lj_snap.ll
+; luajit/optimized/lj_snap_dyn.ll
+; lz4/optimized/lz4.c.ll
+; openjdk/optimized/os_linux.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/file.ll
+; php/optimized/zend_language_scanner.ll
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/oracle_compat.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; re2/optimized/parse.cc.ll
+; redis/optimized/zipmap.ll
+; rocksdb/optimized/log_buffer.cc.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/printf.ll
+; ruby/optimized/vm.ll
+; velox/optimized/ByteStream.cpp.ll
+; velox/optimized/Scanner.cpp.ll
+; verilator/optimized/V3ParseLex.cpp.ll
+; wireshark/optimized/packet-kafka.c.ll
+; yosys/optimized/lz4.ll
+; yosys/optimized/rtlil_lexer.ll
+; yosys/optimized/verilog_lexer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i16, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
+  %5 = icmp ugt ptr %0, %4
+  ret i1 %5
+}
+
+; 276 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/giaSif.c.ll
@@ -11,6 +95,7 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/pdf.c.ll
+; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/hist.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -65,6 +150,7 @@
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; eastl/optimized/TestString.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -104,6 +190,7 @@
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; oniguruma/optimized/regcomp.ll
+; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/handles.ll
 ; openmpi/optimized/keyval_lex.ll
@@ -114,7 +201,6 @@
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/iconv.ll
 ; php/optimized/math.ll
-; php/optimized/php_pcre.ll
 ; php/optimized/sanitizing_filters.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_execute.ll
@@ -126,6 +212,7 @@
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
+; postgres/optimized/predicate.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/string_utils.ll
 ; qdrant-rs/optimized/1sx1pjpbst7gikiv.ll
@@ -149,8 +236,6 @@
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; quantlib/optimized/normalclvmodel.ll
 ; quantlib/optimized/sabrvolsurface.ll
 ; quantlib/optimized/strippedoptionletadapter.ll
@@ -214,6 +299,7 @@
 ; xgboost/optimized/data.cc.ll
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
+; yyjson/optimized/yyjson.c.ll
 ; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
 ; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
 ; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
@@ -283,78 +369,7 @@ entry:
   ret i1 %5
 }
 
-; 61 occurrences:
-; freetype/optimized/autofit.c.ll
-; hdf5/optimized/H5Bcache.c.ll
-; hdf5/optimized/H5Fsuper_cache.c.ll
-; hdf5/optimized/H5Gcache.c.ll
-; hdf5/optimized/H5HGcache.c.ll
-; hdf5/optimized/H5HLcache.c.ll
-; hdf5/optimized/H5Oainfo.c.ll
-; hdf5/optimized/H5Oattr.c.ll
-; hdf5/optimized/H5Obtreek.c.ll
-; hdf5/optimized/H5Ocache.c.ll
-; hdf5/optimized/H5Ocache_image.c.ll
-; hdf5/optimized/H5Odrvinfo.c.ll
-; hdf5/optimized/H5Oefl.c.ll
-; hdf5/optimized/H5Ofill.c.ll
-; hdf5/optimized/H5Ofsinfo.c.ll
-; hdf5/optimized/H5Oginfo.c.ll
-; hdf5/optimized/H5Olayout.c.ll
-; hdf5/optimized/H5Olinfo.c.ll
-; hdf5/optimized/H5Olink.c.ll
-; hdf5/optimized/H5Omtime.c.ll
-; hdf5/optimized/H5Opline.c.ll
-; hdf5/optimized/H5Osdspace.c.ll
-; hdf5/optimized/H5Oshared.c.ll
-; hdf5/optimized/H5Oshmesg.c.ll
-; hdf5/optimized/H5Shyper.c.ll
-; hdf5/optimized/H5Spoint.c.ll
-; linux/optimized/cistpl.ll
-; linux/optimized/entropy_common.ll
-; linux/optimized/extents.ll
-; linux/optimized/fast_commit.ll
-; linux/optimized/fatent.ll
-; linux/optimized/filter.ll
-; linux/optimized/fse_decompress.ll
-; linux/optimized/huf_decompress.ll
-; linux/optimized/kobject_uevent.ll
-; linux/optimized/lz4_decompress.ll
-; linux/optimized/namei.ll
-; linux/optimized/nf_conntrack_irc.ll
-; linux/optimized/virtio_net.ll
-; linux/optimized/xxhash.ll
-; linux/optimized/zstd_decompress_block.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
-; lz4/optimized/lz4.c.ll
-; openjdk/optimized/os_linux.ll
-; openusd/optimized/lz4.cpp.ll
-; php/optimized/file.ll
-; php/optimized/zend_language_scanner.ll
-; postgres/optimized/oracle_compat.ll
-; re2/optimized/parse.cc.ll
-; redis/optimized/zipmap.ll
-; rocksdb/optimized/log_buffer.cc.ll
-; ruby/optimized/printf.ll
-; ruby/optimized/vm.ll
-; velox/optimized/ByteStream.cpp.ll
-; velox/optimized/Scanner.cpp.ll
-; verilator/optimized/V3ParseLex.cpp.ll
-; wireshark/optimized/packet-kafka.c.ll
-; yosys/optimized/lz4.ll
-; yosys/optimized/rtlil_lexer.ll
-; yosys/optimized/verilog_lexer.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 1
-  %5 = icmp ugt ptr %0, %4
-  ret i1 %5
-}
-
-; 480 occurrences:
+; 481 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
@@ -641,6 +656,7 @@ entry:
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/attachListener_posix.ll
 ; openjdk/optimized/nmethod.ll
 ; openssl/optimized/libcrypto-lib-bss_fd.ll
 ; openssl/optimized/libcrypto-shlib-bss_fd.ll
@@ -1797,7 +1813,7 @@ entry:
   ret i1 %5
 }
 
-; 174 occurrences:
+; 175 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/entropy_common.c.ll
@@ -1814,6 +1830,7 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cmake/optimized/zstd_opt.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/dir.ll
@@ -1981,7 +1998,7 @@ entry:
   ret i1 %5
 }
 
-; 583 occurrences:
+; 582 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -2088,7 +2105,6 @@ entry:
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/zip.c.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/tamaramacompile.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -2587,35 +2603,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
-; boost/optimized/test_convert.ll
-; eastl/optimized/TestHeap.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hyperscan/optimized/castle.c.ll
-; icu/optimized/decNumber.ll
-; icu/optimized/ustring.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/StructurizeCFG.cpp.ll
-; llvm/optimized/VPlanRecipes.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; minetest/optimized/guiFormSpecMenu.cpp.ll
-; minetest/optimized/guiScene.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
-; openusd/optimized/textParserHelpers.cpp.ll
-; redis/optimized/ziplist.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -16
-  %5 = icmp eq ptr %0, %4
-  ret i1 %5
-}
-
-; 86 occurrences:
+; 87 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
@@ -2681,6 +2669,7 @@ entry:
 ; minetest/optimized/clientlauncher.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; minetest/optimized/guiScene.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
@@ -2767,57 +2756,6 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = icmp ugt ptr %0, %4
-  ret i1 %5
-}
-
-; 41 occurrences:
-; assimp/optimized/LWOMaterial.cpp.ll
-; boost/optimized/alloc_lib.ll
-; boost/optimized/decode.ll
-; boost/optimized/pct_string_view.ll
-; c3c/optimized/lexer.c.ll
-; clamav/optimized/packlibs.c.ll
-; clamav/optimized/petite.c.ll
-; clamav/optimized/unsp.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/huf_decompress.c.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; freetype/optimized/ftstroke.c.ll
-; freetype/optimized/type1cid.c.ll
-; glog/optimized/signalhandler.cc.ll
-; graphviz/optimized/dtstrhash.c.ll
-; grpc/optimized/ring_hash.cc.ll
-; hermes/optimized/APInt.cpp.ll
-; hyperscan/optimized/block.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/stream.c.ll
-; icu/optimized/unistr.ll
-; jq/optimized/decNumber.ll
-; lightgbm/optimized/sample_strategy.cpp.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
-; llvm/optimized/Float2Int.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_str.ll
-; luajit/optimized/lj_str_dyn.ll
-; lz4/optimized/lz4.c.ll
-; openjdk/optimized/attachListener_posix.ll
-; php/optimized/softmagic.ll
-; redis/optimized/ziplist.ll
-; sentencepiece/optimized/strutil.cc.ll
-; z3/optimized/nnf.cpp.ll
-; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -2933,6 +2871,31 @@ entry:
   ret i1 %5
 }
 
+; 15 occurrences:
+; boost/optimized/test_convert.ll
+; eastl/optimized/TestHeap.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hyperscan/optimized/castle.c.ll
+; icu/optimized/decNumber.ll
+; icu/optimized/ustring.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/StructurizeCFG.cpp.ll
+; llvm/optimized/VPlanRecipes.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; openjdk/optimized/ProcessPath.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
+; redis/optimized/ziplist.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %struct._Point.2744373, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -56
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
 ; 6 occurrences:
 ; assimp/optimized/OFFLoader.cpp.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -2978,6 +2941,56 @@ entry:
   ret i1 %5
 }
 
+; 40 occurrences:
+; assimp/optimized/LWOMaterial.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/decode.ll
+; boost/optimized/pct_string_view.ll
+; c3c/optimized/lexer.c.ll
+; clamav/optimized/packlibs.c.ll
+; clamav/optimized/petite.c.ll
+; clamav/optimized/unsp.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; cmake/optimized/huf_decompress.c.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; freetype/optimized/ftstroke.c.ll
+; freetype/optimized/type1cid.c.ll
+; glog/optimized/signalhandler.cc.ll
+; graphviz/optimized/dtstrhash.c.ll
+; grpc/optimized/ring_hash.cc.ll
+; hermes/optimized/APInt.cpp.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/stream.c.ll
+; icu/optimized/unistr.ll
+; jq/optimized/decNumber.ll
+; lightgbm/optimized/sample_strategy.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; llvm/optimized/Float2Int.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; luajit/optimized/lj_str.ll
+; luajit/optimized/lj_str_dyn.ll
+; lz4/optimized/lz4.c.ll
+; php/optimized/softmagic.ll
+; redis/optimized/ziplist.ll
+; sentencepiece/optimized/strutil.cc.ll
+; z3/optimized/nnf.cpp.ll
+; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c4(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
 ; 20 occurrences:
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
@@ -3008,7 +3021,7 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; boost/optimized/any_params_iter.ll
 ; boost/optimized/any_segments_iter.ll
@@ -3016,7 +3029,6 @@ entry:
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/huf_decompress.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/dtstrhash.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -3192,9 +3204,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/namei.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(ptr %0, ptr %1, i64 %2) #0 {
 entry:

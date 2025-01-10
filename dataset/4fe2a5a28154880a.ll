@@ -1,5 +1,5 @@
 
-%struct.pud_t.3557544 = type { i64 }
+%struct.pud_t.3557510 = type { i64 }
 
 ; 33 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -53,7 +53,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 30
   %4 = and i64 %3, 511
-  %5 = getelementptr %struct.pud_t.3557544, ptr %0, i64 %4
+  %5 = getelementptr %struct.pud_t.3557510, ptr %0, i64 %4
   ret ptr %5
 }
 

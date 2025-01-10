@@ -1,5 +1,5 @@
 
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 10 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -31,7 +31,7 @@ entry:
   %2 = sdiv i32 %1, 3
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

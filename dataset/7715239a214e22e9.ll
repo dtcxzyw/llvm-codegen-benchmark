@@ -1,5 +1,5 @@
 
-; 627 occurrences:
+; 630 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -137,6 +137,7 @@
 ; lief/optimized/DylinkerCommand.cpp.ll
 ; lief/optimized/Note.cpp.ll
 ; linux/optimized/binfmt_elf.ll
+; linux/optimized/blk-map.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/conditional.ll
@@ -160,12 +161,14 @@
 ; linux/optimized/policydb.ll
 ; linux/optimized/process_vm_access.ll
 ; linux/optimized/scatterlist.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/strnlen_user.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/update.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vmcore.ll
 ; linux/optimized/vmscan.ll
@@ -635,7 +638,7 @@ entry:
   ret i64 %3
 }
 
-; 363 occurrences:
+; 368 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -686,6 +689,7 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUnate.c.ll
 ; abc/optimized/giaUtil.c.ll
+; abc/optimized/gzread.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -702,6 +706,8 @@ entry:
 ; boost/optimized/wait.ll
 ; c3c/optimized/unzipper.c.ll
 ; ceres/optimized/line_search_direction.cc.ll
+; clamav/optimized/extract.cpp.ll
+; cmake/optimized/gzread.c.ll
 ; cpython/optimized/marshal.ll
 ; cpython/optimized/mpdecimal.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -726,6 +732,7 @@ entry:
 ; libjpeg-turbo/optimized/md5hl.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/curve25519.c.ll
+; libquic/optimized/gzread.c.ll
 ; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
@@ -999,6 +1006,7 @@ entry:
 ; velox/optimized/ExprCompiler.cpp.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
+; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -1079,8 +1087,9 @@ entry:
   ret i64 %3
 }
 
-; 159 occurrences:
+; 160 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; boost/optimized/dump_ssse3.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; darktable/optimized/camera.c.ll

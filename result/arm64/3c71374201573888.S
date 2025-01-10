@@ -28,13 +28,6 @@ func0000000000000008:                   // @func0000000000000008
 	and	w0, w0, w8
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
-	fcmp	d0, d0
-	cset	w8, vc
-	and	w0, w8, w0
-	ret
-                                        // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mov	x8, #-4336966441157787648       // =0xc3d0000000000000
@@ -59,6 +52,13 @@ func000000000000000a:                   // @func000000000000000a
 	fcmp	d0, d1
 	cset	w8, ls
 	and	w0, w0, w8
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	fcmp	d0, d0
+	cset	w8, vc
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006

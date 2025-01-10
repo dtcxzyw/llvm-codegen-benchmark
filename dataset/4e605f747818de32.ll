@@ -1,9 +1,9 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2730954" = type { i32, i8, i8 }
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2730920" = type { i32, i8, i8 }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
 
 ; 203 occurrences:
 ; abc/optimized/cutCut.c.ll
@@ -214,8 +214,8 @@ define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -330,7 +330,7 @@ entry:
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730954", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730920", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -342,8 +342,8 @@ define ptr @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %4
-  %6 = getelementptr %struct.lua_TValue.2923857, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %4
+  %6 = getelementptr %struct.lua_TValue.2923823, ptr %5, i64 %0
   ret ptr %6
 }
 

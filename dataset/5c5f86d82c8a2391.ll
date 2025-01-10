@@ -642,7 +642,7 @@ entry:
   ret i1 %6
 }
 
-; 49 occurrences:
+; 51 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -683,6 +683,8 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -702,7 +704,7 @@ entry:
   ret i1 %6
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -738,6 +740,8 @@ entry:
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll

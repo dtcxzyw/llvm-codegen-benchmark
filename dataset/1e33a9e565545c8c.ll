@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3294323" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3294289" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -23,7 +23,7 @@ entry:
   %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i64 -15057, i64 -15086
-  %7 = getelementptr nusw %"class.llvm::MCInstrDesc.3294323", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.llvm::MCInstrDesc.3294289", ptr %0, i64 %6
   ret ptr %7
 }
 

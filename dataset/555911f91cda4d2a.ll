@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
 ; darktable/optimized/timeline.c.ll
@@ -13,7 +13,6 @@
 ; opencv/optimized/face_beautification.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll

@@ -1,5 +1,5 @@
 
-; 584 occurrences:
+; 583 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/strip_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -58,7 +58,6 @@
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/ftbase.c.ll
-; freetype/optimized/psaux.c.ll
 ; freetype/optimized/raster.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll

@@ -29,3 +29,11 @@ func0000000000000081:                   # @func0000000000000081
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000d8c:                   # @func0000000000000d8c
+	addq	%rdx, %rsi
+	cmpq	$3, %rsi
+	setne	%cl
+	cmpl	$2, %edi
+	setne	%al
+	orb	%cl, %al
+	retq

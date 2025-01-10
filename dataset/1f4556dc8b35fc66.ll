@@ -1,10 +1,10 @@
 
-%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
-%union.anon.34.2817675 = type { [4 x float] }
-%class.btVector3.2818863 = type { [4 x float] }
-%class.btVector3.2819523 = type { [4 x float] }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
-%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
+%class.btVector3.2818829 = type { [4 x float] }
+%class.btVector3.2819489 = type { [4 x float] }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
+%struct.Abc_IffObj_t_.2876931 = type { [7 x float] }
 
 ; 20 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -31,12 +31,12 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817640], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw float, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/nwkTiming.c.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -47,12 +47,13 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; openspiel/optimized/DealerPar.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x %class.btVector3.2818863], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw [3 x %class.btVector3.2818829], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw float, ptr %4, i64 %3
   ret ptr %5
 }
@@ -71,7 +72,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819489], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw float, ptr %4, i64 %3
   ret ptr %5
 }
@@ -82,7 +83,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %class.btVector3.2819489], ptr %0, i64 0, i64 %1
   %5 = getelementptr float, ptr %4, i64 %3
   ret ptr %5
 }
@@ -95,8 +96,8 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -107,8 +108,8 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -129,7 +130,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr [7 x float], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.Abc_IffObj_t_.2876965, ptr %4, i64 %3
+  %5 = getelementptr %struct.Abc_IffObj_t_.2876931, ptr %4, i64 %3
   ret ptr %5
 }
 

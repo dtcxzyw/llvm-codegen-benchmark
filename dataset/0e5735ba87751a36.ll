@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 113 occurrences:
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -67,6 +67,7 @@
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
+; icu/optimized/swapimpl.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/ethtool.ll
@@ -121,14 +122,13 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; icu/optimized/store.ll
-; icu/optimized/swapimpl.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libquic/optimized/mul.c.ll
 ; openblas/optimized/dlaqr5.c.ll
@@ -314,7 +314,7 @@ entry:
   ret i64 %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
@@ -338,7 +338,6 @@ entry:
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
-; icu/optimized/swapimpl.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; meshlab/optimized/edit_align.cpp.ll

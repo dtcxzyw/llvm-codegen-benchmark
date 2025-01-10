@@ -64,10 +64,8 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 3
 	andi	a0, a0, 1020
 	addi	a0, a0, -2
-	slli	a0, a0, 32
-	srli	a0, a0, 32
 	ret

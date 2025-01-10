@@ -1,13 +1,13 @@
 
-%"struct.folly::detail::SingleElementQueue.2691228" = type { %"union.std::aligned_storage<112, 16>::type.2691092", %"struct.folly::detail::TurnSequencer.2691229", [12 x i8] }
-%"union.std::aligned_storage<112, 16>::type.2691092" = type { [112 x i8] }
-%"struct.folly::detail::TurnSequencer.2691229" = type { %"struct.std::atomic.33.2691037" }
-%"struct.std::atomic.33.2691037" = type { %"struct.std::__atomic_base.34.2691038" }
-%"struct.std::__atomic_base.34.2691038" = type { i32 }
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
+%"struct.folly::detail::SingleElementQueue.2691194" = type { %"union.std::aligned_storage<112, 16>::type.2691058", %"struct.folly::detail::TurnSequencer.2691195", [12 x i8] }
+%"union.std::aligned_storage<112, 16>::type.2691058" = type { [112 x i8] }
+%"struct.folly::detail::TurnSequencer.2691195" = type { %"struct.std::atomic.33.2691003" }
+%"struct.std::atomic.33.2691003" = type { %"struct.std::__atomic_base.34.2691004" }
+%"struct.std::__atomic_base.34.2691004" = type { i32 }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
 
 ; 2 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -16,7 +16,7 @@
 define i1 @func0000000000000761(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 272
-  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2691228", ptr %3, i64 %2
+  %4 = getelementptr %"struct.folly::detail::SingleElementQueue.2691194", ptr %3, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %0, i64 128
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -57,7 +57,7 @@ entry:
 define i1 @func00000000000007c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 32
-  %4 = getelementptr %"class.boost::json::value.2995760", ptr %3, i64 %2
+  %4 = getelementptr %"class.boost::json::value.2995726", ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %0, i64 -24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -69,7 +69,7 @@ entry:
 define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 32
-  %4 = getelementptr %"class.boost::json::value.2995760", ptr %3, i64 %2
+  %4 = getelementptr %"class.boost::json::value.2995726", ptr %3, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6

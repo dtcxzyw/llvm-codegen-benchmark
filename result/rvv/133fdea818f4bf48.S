@@ -11,17 +11,17 @@ func000000000000008c:                   # @func000000000000008c
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
-func0000000000000146:                   # @func0000000000000146
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsgt.vi	v10, v10, -1
-	vmslt.vv	v8, v8, v9
-	vmand.mm	v0, v8, v10
-	ret
 func00000000000000ca:                   # @func00000000000000ca
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmslt.vv	v9, v9, v10
 	vmsgt.vi	v8, v8, -1
 	vmand.mm	v0, v8, v9
+	ret
+func0000000000000146:                   # @func0000000000000146
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmsgt.vi	v10, v10, -1
+	vmslt.vv	v8, v8, v9
+	vmand.mm	v0, v8, v10
 	ret
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 16, e8, m1, ta, ma

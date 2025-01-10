@@ -1,10 +1,10 @@
 
-%"struct.Stockfish::Search::RootMove.2878303" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.30.2878304" }
-%"class.std::vector.30.2878304" = type { %"struct.std::_Vector_base.31.2878305" }
-%"struct.std::_Vector_base.31.2878305" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878306" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878306" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878307" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878307" = type { ptr, ptr, ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::GfVec4i.3411831" = type { [4 x i32] }
+%"struct.Stockfish::Search::RootMove.2878269" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.30.2878270" }
+%"class.std::vector.30.2878270" = type { %"struct.std::_Vector_base.31.2878271" }
+%"struct.std::_Vector_base.31.2878271" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878272" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878272" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878273" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878273" = type { ptr, ptr, ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::GfVec4i.3411797" = type { [4 x i32] }
 
 ; 4 occurrences:
 ; libpng/optimized/pngrutil.c.ll
@@ -56,7 +56,7 @@ define i1 @func0000000000000de1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw %"struct.Stockfish::Search::RootMove.2878303", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.Stockfish::Search::RootMove.2878269", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 56
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -93,7 +93,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec4i.3411831", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec4i.3411797", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7

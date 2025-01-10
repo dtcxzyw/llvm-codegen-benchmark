@@ -50,7 +50,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cpython/optimized/dtoa.ll
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
@@ -73,17 +74,6 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 32767
-  %4 = sub i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/dtoa.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr exact i32 %1, 20
-  %3 = and i32 %2, 2047
   %4 = sub i32 %3, %0
   ret i32 %4
 }

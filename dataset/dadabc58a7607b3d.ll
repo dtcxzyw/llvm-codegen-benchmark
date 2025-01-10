@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/PlyExporter.cpp.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
@@ -22,6 +22,7 @@
 ; linux/optimized/xz_dec_lzma2.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/ad_x86_pipeline.ll
+; php/optimized/crypt_blowfish.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
@@ -47,12 +48,11 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; boost/optimized/to_chars.ll
 ; lief/optimized/constant_time.c.ll
 ; linux/optimized/vt.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/ir.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/regcomp.ll

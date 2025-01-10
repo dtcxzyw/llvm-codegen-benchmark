@@ -1,8 +1,10 @@
 
-; 89 occurrences:
+; 91 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
+; linux/optimized/gup.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/CodeViewRecordIO.cpp.ll

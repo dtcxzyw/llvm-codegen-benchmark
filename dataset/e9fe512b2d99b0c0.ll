@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; boost/optimized/test_filebuf.ll
 ; libquic/optimized/pair.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/inetpeer.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; openssl/optimized/libcrypto-lib-bss_bio.ll
 ; openssl/optimized/libcrypto-shlib-bss_bio.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
@@ -57,9 +58,10 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/ewah_rlw.ll
 ; linux/optimized/sg.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll

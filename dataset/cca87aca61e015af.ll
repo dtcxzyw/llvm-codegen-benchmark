@@ -1,5 +1,5 @@
 
-; 584 occurrences:
+; 585 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/rpo.c.ll
@@ -102,6 +102,7 @@
 ; fmt/optimized/printf-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; freetype/optimized/ftstroke.c.ll
+; git/optimized/line-log.ll
 ; git/optimized/midx.ll
 ; grpc/optimized/transport.cc.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll

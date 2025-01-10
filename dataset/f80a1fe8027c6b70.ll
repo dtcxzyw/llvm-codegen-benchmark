@@ -1,5 +1,5 @@
 
-%class.IndexSet.2740318 = type { i32, i32, ptr, [16 x ptr], i32, ptr }
+%class.IndexSet.2740284 = type { i32, i32, ptr, [16 x ptr], i32, ptr }
 
 ; 3 occurrences:
 ; brotli/optimized/cluster.c.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umax.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %class.IndexSet.2740318, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %class.IndexSet.2740284, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

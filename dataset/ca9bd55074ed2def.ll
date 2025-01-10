@@ -1,12 +1,11 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/cecClass.c.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/insn-eval.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openjdk/optimized/shenandoahBarrierSetAssembler_x86.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll

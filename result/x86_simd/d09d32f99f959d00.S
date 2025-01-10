@@ -1,32 +1,26 @@
-func000000000000012a:                   # @func000000000000012a
-	vpsrlq	$32, %ymm1, %ymm1
-	vpmovqd	%ymm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
 func0000000000000126:                   # @func0000000000000126
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
+.LCPI1_0:
 	.long	2                               # 0x2
 func0000000000000104:                   # @func0000000000000104
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm0, %k0
+	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI3_0:
+.LCPI2_0:
 	.long	1                               # 0x1
 func000000000000022a:                   # @func000000000000022a
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpbroadcastd	.LCPI3_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -38,14 +32,21 @@ func000000000000020a:                   # @func000000000000020a
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	8                               # 0x8
 func0000000000000204:                   # @func0000000000000204
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpcmpltud	.LCPI5_0(%rip){1to4}, %xmm0, %k0
+	vpcmpltud	.LCPI4_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func000000000000012a:                   # @func000000000000012a
+	vpsrlq	$32, %ymm1, %ymm1
+	vpmovqd	%ymm1, %xmm1
+	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
 func000000000000000a:                   # @func000000000000000a

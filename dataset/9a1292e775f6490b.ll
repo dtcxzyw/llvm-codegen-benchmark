@@ -52,10 +52,11 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; git/optimized/dir.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
@@ -89,19 +90,6 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr double, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 32
-  ret ptr %6
-}
-
-; 2 occurrences:
-; libjpeg-turbo/optimized/jcphuff.c.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 

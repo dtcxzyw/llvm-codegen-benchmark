@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2789327 = type { %struct.anon.2789328, %union.anon.5.2789329 }
-%struct.anon.2789328 = type { %union.anon.2789330, %union.anon.4.2789331 }
-%union.anon.2789330 = type { i32 }
-%union.anon.4.2789331 = type { i32 }
-%union.anon.5.2789329 = type { %union._ir_val.2789332 }
-%union._ir_val.2789332 = type { double }
+%struct._ir_insn.2789293 = type { %struct.anon.2789294, %union.anon.5.2789295 }
+%struct.anon.2789294 = type { %union.anon.2789296, %union.anon.4.2789297 }
+%union.anon.2789296 = type { i32 }
+%union.anon.4.2789297 = type { i32 }
+%union.anon.5.2789295 = type { %union._ir_val.2789298 }
+%union._ir_val.2789298 = type { double }
 
 ; 2 occurrences:
 ; git/optimized/diff.ll
@@ -25,7 +25,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000005e1(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._ir_insn.2789327, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct._ir_insn.2789293, ptr %1, i64 %2
   %4 = icmp eq i8 %0, 92
   %.v = select i1 %4, i64 8, i64 12
   %5 = getelementptr nusw nuw i8, ptr %3, i64 %.v

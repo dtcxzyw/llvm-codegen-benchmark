@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
 
 ; 6 occurrences:
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef range(i32 0, 33) i32 @llvm.ctpop.i32(i32 %1)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %0, i64 %3
   ret ptr %4
 }
 

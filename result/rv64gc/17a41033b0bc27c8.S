@@ -139,6 +139,12 @@ func0000000000000704:                   # @func0000000000000704
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
 	ret
+func0000000000000064:                   # @func0000000000000064
+	add	a1, a1, a2
+	addi	a1, a1, 24
+	addi	a0, a0, 1
+	sltu	a0, a0, a1
+	ret
 func000000000000076c:                   # @func000000000000076c
 	add	a1, a1, a2
 	addi	a1, a1, 16
@@ -177,12 +183,6 @@ func0000000000000641:                   # @func0000000000000641
 	addi	a0, a0, -4
 	xor	a0, a0, a1
 	seqz	a0, a0
-	ret
-func0000000000000064:                   # @func0000000000000064
-	add	a1, a1, a2
-	addi	a1, a1, 2
-	addi	a0, a0, 1
-	sltu	a0, a0, a1
 	ret
 func0000000000000609:                   # @func0000000000000609
 	lui	a3, 1

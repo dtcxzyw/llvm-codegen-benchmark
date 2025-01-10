@@ -19,10 +19,9 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/mpdecimal.ll
-; cpython/optimized/pystrtod.ll
 ; duckdb/optimized/ub_duckdb_operator_order.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/exeval.c.ll

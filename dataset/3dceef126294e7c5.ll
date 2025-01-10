@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -40,7 +40,6 @@
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind

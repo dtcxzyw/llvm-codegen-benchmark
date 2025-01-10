@@ -16,15 +16,6 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
-func000000000000004b:                   # @func000000000000004b
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vclz.v	v8, v10
-	li	a0, 26
-	vrsub.vx	v10, v8, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
-	ret
 func000000000000004f:                   # @func000000000000004f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

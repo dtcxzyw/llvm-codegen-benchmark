@@ -1,7 +1,7 @@
 
-%class.aiVector3t.2824618 = type { float, float, float }
-%class.aiVector3t.2830034 = type { float, float, float }
-%"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778098" = type { i32, i32, i32 }
+%class.aiVector3t.2824584 = type { float, float, float }
+%class.aiVector3t.2830000 = type { float, float, float }
+%"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778048" = type { i32, i32, i32 }
 
 ; 2 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -11,8 +11,8 @@ define ptr @func000000000000003f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = zext nneg i32 %1 to i64
-  %4 = getelementptr %class.aiVector3t.2824618, ptr %0, i64 %.neg
-  %5 = getelementptr %class.aiVector3t.2824618, ptr %4, i64 %3
+  %4 = getelementptr %class.aiVector3t.2824584, ptr %0, i64 %.neg
+  %5 = getelementptr %class.aiVector3t.2824584, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -28,8 +28,8 @@ define ptr @func000000000000002f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = zext i32 %1 to i64
-  %4 = getelementptr %class.aiVector3t.2830034, ptr %0, i64 %.neg
-  %5 = getelementptr %class.aiVector3t.2830034, ptr %4, i64 %3
+  %4 = getelementptr %class.aiVector3t.2830000, ptr %0, i64 %.neg
+  %5 = getelementptr %class.aiVector3t.2830000, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -40,8 +40,8 @@ define ptr @func000000000000003c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = zext nneg i32 %1 to i64
-  %4 = getelementptr %"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778098", ptr %0, i64 %.neg
-  %5 = getelementptr %"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778098", ptr %4, i64 %3
+  %4 = getelementptr %"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778048", ptr %0, i64 %.neg
+  %5 = getelementptr %"struct.cv::ximgproc::ScanSegmentImpl::WSNode.3778048", ptr %4, i64 %3
   ret ptr %5
 }
 

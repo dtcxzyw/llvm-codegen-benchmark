@@ -1,5 +1,5 @@
 
-; 1670 occurrences:
+; 1671 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/utilNam.c.ll
@@ -908,7 +908,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -1343,6 +1342,8 @@
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
+; proj/optimized/cct.cpp.ll
+; proj/optimized/gie.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/descriptor.cc.ll

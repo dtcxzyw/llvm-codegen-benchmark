@@ -1,10 +1,12 @@
 
-; 155 occurrences:
+; 157 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; clamav/optimized/cert_util.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/crc32.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/longobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/masks.c.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll

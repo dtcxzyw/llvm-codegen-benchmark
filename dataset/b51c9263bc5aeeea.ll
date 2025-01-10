@@ -1,5 +1,5 @@
 
-%struct.aiFace.2823748 = type { i32, ptr }
+%struct.aiFace.2823714 = type { i32, ptr }
 
 ; 6 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -13,7 +13,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 12
   %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr nusw nuw %struct.aiFace.2823748, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %struct.aiFace.2823714, ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -38,10 +38,16 @@ func000000000000000a:                   # @func000000000000000a
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpcmpgtb	%xmm1, %xmm0, %xmm0
 	retq
-.LCPI7_0:
+func000000000000002c:                   # @func000000000000002c
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpaddb	%xmm2, %xmm1, %xmm1
+	vpcmpeqb	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	retq
+.LCPI8_0:
 	.zero	16,2
 func0000000000000064:                   # @func0000000000000064
-	vpaddb	.LCPI7_0(%rip), %xmm1, %xmm1
+	vpaddb	.LCPI8_0(%rip), %xmm1, %xmm1
 	vpcmpltub	%xmm1, %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -1,15 +1,15 @@
 
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
-%struct.audit_node.3545998 = type { %struct.list_head.3545989, ptr, i32 }
-%struct.list_head.3545989 = type { ptr, ptr }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
+%struct.audit_node.3545964 = type { %struct.list_head.3545955, ptr, i32 }
+%struct.list_head.3545955 = type { ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/attachListener_posix.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 3101, %2
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
   %6 = icmp ult ptr %0, %5
   ret i1 %6
@@ -172,7 +172,7 @@ entry:
 define i1 @func000000000000034c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3188737", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3188703", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = icmp ne ptr %0, %5
   ret i1 %6
@@ -184,7 +184,7 @@ entry:
 define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.audit_node.3545998, ptr %1, i64 %3
+  %4 = getelementptr %struct.audit_node.3545964, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -80
   %6 = icmp eq ptr %0, %5
   ret i1 %6

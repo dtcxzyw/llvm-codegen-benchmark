@@ -1,8 +1,8 @@
 
-%struct.TileSpec.2701562 = type { i8, i8, i8, [5 x i8], [2 x %struct.TileLayer.2701563] }
-%struct.TileLayer.2701563 = type <{ ptr, ptr, ptr, i32, i32, i16, i16, i8, i8, i8, i8, ptr, %"class.irr::video::SColor.2701564", i8, [3 x i8] }>
-%"class.irr::video::SColor.2701564" = type { i32 }
-%"struct.glslang::TSourceLoc.2911723" = type { ptr, i32, i32, i32 }
+%struct.TileSpec.2701528 = type { i8, i8, i8, [5 x i8], [2 x %struct.TileLayer.2701529] }
+%struct.TileLayer.2701529 = type <{ ptr, ptr, ptr, i32, i32, i16, i16, i8, i8, i8, i8, ptr, %"class.irr::video::SColor.2701530", i8, [3 x i8] }>
+%"class.irr::video::SColor.2701530" = type { i32 }
+%"struct.glslang::TSourceLoc.2911689" = type { ptr, i32, i32, i32 }
 
 ; 26 occurrences:
 ; abc/optimized/llb1Hint.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.TileSpec.2701562, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.TileSpec.2701528, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = tail call noundef i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.glslang::TSourceLoc.2911723", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.glslang::TSourceLoc.2911689", ptr %0, i64 %5
   ret ptr %6
 }
 

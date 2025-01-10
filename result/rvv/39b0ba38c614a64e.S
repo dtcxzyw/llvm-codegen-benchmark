@@ -24,6 +24,14 @@ func0000000000000481:                   # @func0000000000000481
 	vmseq.vi	v8, v8, 0
 	vmor.mm	v0, v8, v9
 	ret
+func0000000000000081:                   # @func0000000000000081
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v10, v10, -1
+	vmsleu.vi	v9, v10, 1
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vmseq.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
+	ret
 func000000000000048c:                   # @func000000000000048c
 	li	a0, -97
 	vsetivli	zero, 8, e32, m2, ta, ma

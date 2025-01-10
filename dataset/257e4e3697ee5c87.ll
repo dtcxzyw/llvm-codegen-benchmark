@@ -1,5 +1,5 @@
 
-%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108105" = type { ptr, ptr }
 
 ; 5 occurrences:
 ; cpython/optimized/xmltok.ll
@@ -848,7 +848,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %1, i64 %2
+  %3 = getelementptr %"class.Catch::TestCaseHandle.3108105", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
@@ -867,19 +867,6 @@ entry:
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
   %7 = icmp ne i64 %6, -1
-  ret i1 %7
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000191(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
-  %4 = ptrtoint ptr %3 to i64
-  %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %5, %4
-  %7 = icmp samesign eq i64 %6, 12
   ret i1 %7
 }
 

@@ -910,7 +910,7 @@ entry:
   ret ptr %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; boost/optimized/copy_segment_point.ll
 ; casadi/optimized/integrator.cpp.ll
 ; linux/optimized/build_utility.ll
@@ -929,7 +929,6 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000066(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -1011,15 +1010,14 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 -7
-  %4 = icmp slt i64 %1, 7
+  %3 = getelementptr i8, ptr %2, i64 16
+  %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
 }

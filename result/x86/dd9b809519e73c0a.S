@@ -82,12 +82,6 @@ func0000000000000098:                   # @func0000000000000098
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
-	addl	$3, %esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	sete	%al
-	retq
 func00000000000000d6:                   # @func00000000000000d6
 	incl	%esi
 	xorl	%eax, %eax
@@ -111,4 +105,10 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setb	%al
+	retq
+func00000000000000c2:                   # @func00000000000000c2
+	incl	%esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	sete	%al
 	retq

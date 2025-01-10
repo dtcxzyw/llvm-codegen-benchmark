@@ -2,9 +2,8 @@ func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	x8, #11821                      // =0x2e2d
                                         // kill: def $w0 killed $w0 def $x0
-	movk	x8, #12077, lsl #16
-	movk	x8, #11565, lsl #32
-	movk	x8, #12333, lsl #48
+	movk	x8, #12032, lsl #16
+	movk	x8, #12288, lsl #48
 	lsr	x0, x8, x0
                                         // kill: def $w0 killed $w0 killed $x0
 	ret

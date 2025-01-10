@@ -1,7 +1,7 @@
 
-%class.relocInfo.2733766 = type { i16 }
-%struct._zend_op.2793229 = type { ptr, %union._znode_op.2793230, %union._znode_op.2793230, %union._znode_op.2793230, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793230 = type { i32 }
+%class.relocInfo.2733732 = type { i16 }
+%struct._zend_op.2793195 = type { ptr, %union._znode_op.2793196, %union._znode_op.2793196, %union._znode_op.2793196, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793196 = type { i32 }
 
 ; 7 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -126,7 +126,7 @@ define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 16777215
-  %4 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -143,7 +143,7 @@ define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %struct._zend_op.2793229, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2793195, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

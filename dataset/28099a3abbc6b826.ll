@@ -134,8 +134,7 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
-; abc/optimized/dauNonDsd.c.ll
+; 16 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; git/optimized/rebase.ll

@@ -35,15 +35,16 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 %1, 1
-  %3 = add nuw nsw i64 %0, 1
+  %2 = add i64 %1, 7
+  %3 = shl nuw nsw i64 %0, 3
   %4 = add i64 %3, %2
-  %5 = and i64 %4, -1024
+  %5 = and i64 %4, -8
   ret i64 %5
 }
 
@@ -89,6 +90,21 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; llvm/optimized/OpenMPClause.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; postgres/optimized/multirangetypes.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = add nuw nsw i64 %0, 7
+  %4 = add nuw nsw i64 %3, %2
+  %5 = and i64 %4, 137438953464
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/percpu.ll
 ; Function Attrs: nounwind
@@ -111,20 +127,6 @@ entry:
   %3 = add i64 %0, -16
   %4 = add i64 %3, %2
   %5 = and i64 %4, -8
-  ret i64 %5
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; postgres/optimized/multirangetypes.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 2
-  %3 = add nuw nsw i64 %0, 19
-  %4 = add nuw nsw i64 %3, %2
-  %5 = and i64 %4, 34359738360
   ret i64 %5
 }
 

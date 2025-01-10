@@ -272,7 +272,7 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/csrmbcs.ll
 ; icu/optimized/ubidi.ll
@@ -283,7 +283,6 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; php/optimized/encoding.ll

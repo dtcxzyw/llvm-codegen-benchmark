@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ompEvaluator.cpp.ll
@@ -18,7 +17,7 @@ define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fdiv float 1.000000e+00, %3
-  %5 = select i1 %0, float 0x3FD5555560000000, float %4
+  %5 = select i1 %0, float 0.000000e+00, float %4
   ret float %5
 }
 

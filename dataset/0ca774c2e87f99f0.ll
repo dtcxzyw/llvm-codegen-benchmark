@@ -162,11 +162,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/UriCommon.c.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; openmpi/optimized/tm_tree.ll
-; redis/optimized/lbaselib.ll
 ; slurm/optimized/hostlist.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind

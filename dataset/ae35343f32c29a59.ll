@@ -1,6 +1,6 @@
 
-%struct.hpdata_age_heap_t.3660674 = type { %struct.ph_s.3660675 }
-%struct.ph_s.3660675 = type { ptr, i64 }
+%struct.hpdata_age_heap_t.3660624 = type { %struct.ph_s.3660625 }
+%struct.ph_s.3660625 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -51,7 +51,7 @@ entry:
   %3 = shl i64 %2, 6
   %4 = and i64 %3, 4294967232
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw nuw [64 x %struct.hpdata_age_heap_t.3660674], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %struct.hpdata_age_heap_t.3660624], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

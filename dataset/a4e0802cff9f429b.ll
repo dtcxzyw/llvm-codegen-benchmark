@@ -683,7 +683,7 @@ entry:
   ret i64 %6
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
@@ -746,7 +746,6 @@ entry:
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-dhcp.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/xprop.ll
 ; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll

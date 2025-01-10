@@ -13,16 +13,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 12 occurrences:
-; abc/optimized/acec2Mult.c.ll
+; 8 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bmcCexTools.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/plaSimple.c.ll
-; abc/optimized/sbdCut.c.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; opencv/optimized/resize.cpp.ll

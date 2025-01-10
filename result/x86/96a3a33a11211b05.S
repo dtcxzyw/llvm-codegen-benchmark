@@ -53,10 +53,3 @@ func0000000000000104:                   # @func0000000000000104
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000124:                   # @func0000000000000124
-	cmpq	%rsi, %rdx
-	setae	%cl
-	cmpq	%rsi, %rdi
-	setb	%al
-	andb	%cl, %al
-	retq

@@ -106,12 +106,6 @@ func0000000000000008:                   // @func0000000000000008
 	add	w0, w8, w0, lsl #24
 	ret
                                         // -- End function
-func000000000000002f:                   // @func000000000000002f
-// %bb.0:                               // %entry
-	add	w8, w0, w1
-	add	w0, w8, w2, lsl #24
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	add	w8, w0, w1
@@ -140,11 +134,5 @@ func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	add	w8, w0, w1
 	add	w0, w8, w2, lsl #1
-	ret
-                                        // -- End function
-func000000000000003e:                   // @func000000000000003e
-// %bb.0:                               // %entry
-	add	w8, w0, w1
-	add	w0, w8, w2, lsl #14
 	ret
                                         // -- End function

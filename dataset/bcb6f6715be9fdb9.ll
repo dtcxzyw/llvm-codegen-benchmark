@@ -49,8 +49,7 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; linux/optimized/serial_core.ll
+; 2 occurrences:
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; Function Attrs: nounwind
@@ -83,19 +82,6 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
   %5 = zext i32 %1 to i64
-  %6 = icmp ult i64 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; libpng/optimized/pngrutil.c.ll
-; openjdk/optimized/pngrutil.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001a4(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %0, %3
-  %5 = zext nneg i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
@@ -165,14 +151,13 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/pe.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; libquic/optimized/base64.c.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/i915_gem_tiling.ll
 ; linux/optimized/i915_vma.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/ELF.cpp.ll
 ; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-bipbuffer.ll

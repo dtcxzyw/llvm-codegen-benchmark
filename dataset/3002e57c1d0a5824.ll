@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; folly/optimized/Conv.cpp.ll
@@ -21,6 +21,7 @@
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-ipx.c.ll
 ; wireshark/optimized/packet-reload.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i16 %0, i16 %1, i16 %2) #0 {

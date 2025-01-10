@@ -1,9 +1,9 @@
 
-%struct.NSVGgradientStop.2600676 = type { i32, float }
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"union.absl::debian2::container_internal::map_slot_type.2601725" = type { i64, [8 x i8] }
+%struct.NSVGgradientStop.2600643 = type { i32, float }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"union.absl::debian2::container_internal::map_slot_type.2601692" = type { i64, [8 x i8] }
 
-; 3446 occurrences:
+; 3443 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -190,7 +190,6 @@
 ; abc/optimized/wlnWriteVer.c.ll
 ; abc/optimized/xsatSolverAPI.c.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
-; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; abseil-cpp/optimized/symbolize_test.cc.ll
@@ -1745,8 +1744,6 @@
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
-; luau/optimized/DataFlowGraph.cpp.ll
-; luau/optimized/Differ.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
@@ -3453,7 +3450,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %struct.NSVGgradientStop.2600676, ptr %0, i64 %1, i32 1
+  %2 = getelementptr nusw nuw %struct.NSVGgradientStop.2600643, ptr %0, i64 %1, i32 1
   ret ptr %2
 }
 
@@ -4361,11 +4358,11 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %1, i32 1
+  %2 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %1, i32 1
   ret ptr %2
 }
 
-; 3277 occurrences:
+; 3279 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -4539,6 +4536,7 @@ entry:
 ; abc/optimized/wlnRetime.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -5751,6 +5749,7 @@ entry:
 ; luau/optimized/DataFlowGraph.cpp.ll
 ; luau/optimized/DcrLogger.cpp.ll
 ; luau/optimized/DenseHash.test.cpp.ll
+; luau/optimized/Differ.cpp.ll
 ; luau/optimized/Fixture.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
 ; luau/optimized/Frontend.test.cpp.ll
@@ -7646,7 +7645,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2601725", ptr %0, i64 %1, i32 1
+  %2 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2601692", ptr %0, i64 %1, i32 1
   ret ptr %2
 }
 

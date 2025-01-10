@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; faiss/optimized/IndexIVF.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; quantlib/optimized/svd.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

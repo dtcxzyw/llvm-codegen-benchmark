@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/ring_buffer.ll
 ; luau/optimized/isocline.c.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; velox/optimized/ComplexVector.cpp.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:

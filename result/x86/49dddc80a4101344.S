@@ -28,18 +28,6 @@ func0000000000000066:                   # @func0000000000000066
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
-	movzwl	%dx, %eax
-	imull	%esi, %eax
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000026:                   # @func0000000000000026
-	movzwl	%dx, %eax
-	imull	%esi, %eax
-	cmpl	%edi, %eax
-	setl	%al
-	retq
 func000000000000002a:                   # @func000000000000002a
 	movzwl	%dx, %eax
 	imull	%esi, %eax
@@ -57,6 +45,18 @@ func0000000000000064:                   # @func0000000000000064
 	imull	%esi, %eax
 	cmpl	%edi, %eax
 	setb	%al
+	retq
+func0000000000000078:                   # @func0000000000000078
+	movzwl	%dx, %eax
+	imull	%esi, %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
+	movzwl	%dx, %eax
+	imull	%esi, %eax
+	cmpl	%edi, %eax
+	setl	%al
 	retq
 func0000000000000088:                   # @func0000000000000088
 	movzwl	%dx, %eax

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
 
 ; 13 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -53,7 +53,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = ashr exact i64 %0, 32
   %6 = getelementptr nusw i8, ptr %4, i64 %5

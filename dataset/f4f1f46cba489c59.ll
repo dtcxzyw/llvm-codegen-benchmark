@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; cmake/optimized/mime.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; curl/optimized/libcurl_la-mime.ll
@@ -24,6 +24,7 @@
 ; postgres/optimized/bloomfilter.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; quantlib/optimized/pseudosqrt.ll
+; redis/optimized/dict.ll
 ; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
 ; taskflow/optimized/dependent_async_algorithm.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll

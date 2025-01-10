@@ -154,10 +154,9 @@ entry:
   ret i64 %6
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; diesel-rs/optimized/4l2dlnns3xjar0un.ll
 ; egg-rs/optimized/3vlwzyp0day7srdg.ll
 ; html5ever-rs/optimized/4f0kix4z793pb47k.ll

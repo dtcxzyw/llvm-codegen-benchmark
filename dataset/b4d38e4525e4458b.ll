@@ -1,8 +1,8 @@
 
-%"struct.rapidjson::GenericMember.2749222" = type { %"class.rapidjson::GenericValue.2749211", %"class.rapidjson::GenericValue.2749211" }
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
+%"struct.rapidjson::GenericMember.2749188" = type { %"class.rapidjson::GenericValue.2749177", %"class.rapidjson::GenericValue.2749177" }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
 
 ; 9 occurrences:
 ; abc/optimized/giaHash.c.ll
@@ -45,7 +45,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 281474976710655
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749222", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749188", ptr %4, i64 %0
   ret ptr %5
 }
 

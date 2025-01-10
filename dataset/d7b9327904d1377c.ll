@@ -1,5 +1,5 @@
 
-%struct.prefix_code_node.3436900 = type { i16, i8, [2 x i16] }
+%struct.prefix_code_node.3436866 = type { i16, i8, [2 x i16] }
 
 ; 1 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000789(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %3 = getelementptr %struct.prefix_code_node.3436900, ptr %2, i64 %0
+  %3 = getelementptr %struct.prefix_code_node.3436866, ptr %2, i64 %0
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8200
   %5 = icmp uge ptr %3, %4
   ret i1 %5

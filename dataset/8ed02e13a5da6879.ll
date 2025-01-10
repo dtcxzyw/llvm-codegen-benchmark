@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 92 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/tiff.c.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
@@ -32,7 +31,6 @@
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/tx.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
@@ -84,8 +82,6 @@
 ; wireshark/optimized/packet-openflow_v5.c.ll
 ; wireshark/optimized/packet-openflow_v6.c.ll
 ; wireshark/optimized/packet-ppcap.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-sdp.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
@@ -104,7 +100,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/boot.ll
@@ -133,7 +129,6 @@ entry:
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-packetbb.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i16 %1, i16 %2) #0 {
 entry:

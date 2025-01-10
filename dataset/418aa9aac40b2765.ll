@@ -1,9 +1,12 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; clamav/optimized/secpassword.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; linux/optimized/profile.ll
 ; llvm/optimized/HeaderIncludes.cpp.ll
+; lz4/optimized/lz4hc.c.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/spectrum.cpp.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; Function Attrs: nounwind
@@ -56,6 +59,17 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
   %4 = shl nuw i64 %3, 1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/dll.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 1
+  %3 = call i64 @llvm.umin.i64(i64 %2, i64 %0)
+  %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }
 

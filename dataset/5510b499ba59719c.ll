@@ -128,22 +128,6 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; abc/optimized/cuddSubsetSP.c.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %1, %2
-  %4 = icmp ne i32 %0, 1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
 ; 5 occurrences:
 ; quantlib/optimized/austria.ll
 ; quantlib/optimized/czechrepublic.ll
@@ -313,6 +297,20 @@ entry:
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %4, %5
   ret i1 %6
+}
+
+; 4 occurrences:
+; abc/optimized/cuddSubsetSP.c.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, %2
+  %4 = icmp ne i32 %0, 0
+  %5 = and i1 %4, %3
+  ret i1 %5
 }
 
 ; 7 occurrences:

@@ -1,8 +1,8 @@
 
-%"class.std::vector.6.3493440" = type { %"struct.std::_Vector_base.7.3493441" }
-%"struct.std::_Vector_base.7.3493441" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3493442" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3493442" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3493443" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3493443" = type { ptr, ptr, ptr }
+%"class.std::vector.6.3493406" = type { %"struct.std::_Vector_base.7.3493407" }
+%"struct.std::_Vector_base.7.3493407" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3493408" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3493408" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3493409" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3493409" = type { ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; cpython/optimized/bytes_methods.ll
@@ -545,7 +545,7 @@ define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 14
   %4 = select i1 %3, i64 %1, i64 %2
-  %5 = getelementptr nusw %"class.std::vector.6.3493440", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.std::vector.6.3493406", ptr %0, i64 %4
   ret ptr %5
 }
 

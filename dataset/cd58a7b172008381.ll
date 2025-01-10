@@ -41,14 +41,13 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; cpython/optimized/pyhash.ll
 ; g2o/optimized/optimization_algorithm_dogleg.cpp.ll
 ; gromacs/optimized/colvarbias_restraint.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
-; openusd/optimized/frustum.cpp.ll
 ; php/optimized/php_dom.ll
 ; php/optimized/spprintf.ll
 ; php/optimized/zend_operators.ll
@@ -99,8 +98,7 @@ entry:
   ret i64 %2
 }
 
-; 4 occurrences:
-; graphviz/optimized/edges.c.ll
+; 3 occurrences:
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
 ; ruby/optimized/bignum.ll

@@ -84,11 +84,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 11235 occurrences:
+; 11236 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -2443,7 +2443,6 @@
 ; graphviz/optimized/dtstrhash.c.ll
 ; graphviz/optimized/edge.c.ll
 ; graphviz/optimized/edgepaintmain.c.ll
-; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/exeval.c.ll
 ; graphviz/optimized/fastgr.c.ll
@@ -7357,6 +7356,7 @@
 ; openssl/optimized/libssl-lib-quic_reactor.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll
@@ -7382,6 +7382,7 @@
 ; openssl/optimized/libssl-shlib-quic_reactor.ll
 ; openssl/optimized/libssl-shlib-quic_rx_depack.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
@@ -7499,7 +7500,6 @@
 ; openusd/optimized/fileIO.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/flattenUtils.cpp.ll
-; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/function.cpp.ll
 ; openusd/optimized/generativeProceduralAdapter.cpp.ll
 ; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
@@ -7890,6 +7890,7 @@
 ; postgres/optimized/ifaddr.ll
 ; postgres/optimized/indexcmds.ll
 ; postgres/optimized/indextuple.ll
+; postgres/optimized/inet_net_pton.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll

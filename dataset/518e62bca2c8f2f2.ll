@@ -1,5 +1,5 @@
 
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 3 occurrences:
 ; opencv/optimized/dxt.cpp.ll
@@ -52,9 +52,9 @@ define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %4, i64 %5
   ret ptr %6
 }
 

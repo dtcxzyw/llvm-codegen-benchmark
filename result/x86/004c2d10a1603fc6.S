@@ -28,11 +28,6 @@ func0000000000000008:                   # @func0000000000000008
 	cmovael	%edi, %eax
 	cltq
 	retq
-func000000000000000c:                   # @func000000000000000c
-	testl	%esi, %esi
-	cmovel	%esi, %edi
-	movslq	%edi, %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpl	$3, %esi

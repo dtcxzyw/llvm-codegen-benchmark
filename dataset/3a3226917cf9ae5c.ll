@@ -1,15 +1,15 @@
 
-%"struct.rocksdb::BlockBasedTableIterator::BlockHandleInfo.2625193" = type { %"class.rocksdb::BlockHandle.2625179", i8, [7 x i8], %"class.rocksdb::CachableEntry.2625194", %"class.rocksdb::Slice.2625166", %"class.std::unique_ptr.99.2625195" }
-%"class.rocksdb::BlockHandle.2625179" = type { i64, i64 }
-%"class.rocksdb::CachableEntry.2625194" = type <{ ptr, ptr, ptr, i8, [7 x i8] }>
-%"class.rocksdb::Slice.2625166" = type { ptr, i64 }
-%"class.std::unique_ptr.99.2625195" = type { %"struct.std::__uniq_ptr_data.100.2625196" }
-%"struct.std::__uniq_ptr_data.100.2625196" = type { %"class.std::__uniq_ptr_impl.101.2625197" }
-%"class.std::__uniq_ptr_impl.101.2625197" = type { %"class.std::tuple.102.2625198" }
-%"class.std::tuple.102.2625198" = type { %"struct.std::_Tuple_impl.103.2625199" }
-%"struct.std::_Tuple_impl.103.2625199" = type { %"struct.std::_Head_base.106.2625174" }
-%"struct.std::_Head_base.106.2625174" = type { ptr }
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%"struct.rocksdb::BlockBasedTableIterator::BlockHandleInfo.2625160" = type { %"class.rocksdb::BlockHandle.2625146", i8, [7 x i8], %"class.rocksdb::CachableEntry.2625161", %"class.rocksdb::Slice.2625133", %"class.std::unique_ptr.99.2625162" }
+%"class.rocksdb::BlockHandle.2625146" = type { i64, i64 }
+%"class.rocksdb::CachableEntry.2625161" = type <{ ptr, ptr, ptr, i8, [7 x i8] }>
+%"class.rocksdb::Slice.2625133" = type { ptr, i64 }
+%"class.std::unique_ptr.99.2625162" = type { %"struct.std::__uniq_ptr_data.100.2625163" }
+%"struct.std::__uniq_ptr_data.100.2625163" = type { %"class.std::__uniq_ptr_impl.101.2625164" }
+%"class.std::__uniq_ptr_impl.101.2625164" = type { %"class.std::tuple.102.2625165" }
+%"class.std::tuple.102.2625165" = type { %"struct.std::_Tuple_impl.103.2625166" }
+%"struct.std::_Tuple_impl.103.2625166" = type { %"struct.std::_Head_base.106.2625141" }
+%"struct.std::_Head_base.106.2625141" = type { ptr }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
 
 ; 228 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -245,7 +245,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"struct.rocksdb::BlockBasedTableIterator::BlockHandleInfo.2625193", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.rocksdb::BlockBasedTableIterator::BlockHandleInfo.2625160", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -263,7 +263,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sub i64 0, %3
-  %5 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %4
   ret ptr %5
 }
 

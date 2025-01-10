@@ -14,7 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 217 occurrences:
+; 221 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/zip.c.ll
@@ -144,6 +144,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/string16.cc.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cache.ll
@@ -152,6 +153,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/BreakableToken.cpp.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
@@ -186,6 +188,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; opencv/optimized/nms.cpp.ll
 ; opencv/optimized/parallel_impl.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/dataSourcePrim.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
@@ -199,6 +202,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/cache.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/curvestate.ll

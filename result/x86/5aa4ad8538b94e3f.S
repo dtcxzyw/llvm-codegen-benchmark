@@ -38,8 +38,9 @@ func0000000000000b61:                   # @func0000000000000b61
 	retq
 func0000000000000b64:                   # @func0000000000000b64
 	shlq	$6, %rdx
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
+	leaq	64(%rsi,%rdx), %rax
+	addq	$64, %rdi
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
 func0000000000001fe4:                   # @func0000000000001fe4

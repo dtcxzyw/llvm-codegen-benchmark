@@ -1,5 +1,5 @@
 
-; 14933 occurrences:
+; 14932 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -4439,7 +4439,6 @@
 ; linux/optimized/rsa-pkcs1pad.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rsrc_nonstatic.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/rwsem.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/scan.ll

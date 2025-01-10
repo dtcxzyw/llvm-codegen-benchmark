@@ -1,16 +1,18 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
 ; coreutils-rs/optimized/jfj1amq69fu0agb.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; folly/optimized/Base64SWAR.cpp.ll
 ; git/optimized/diff.ll
 ; hyperscan/optimized/hwlm.c.ll
+; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; spike/optimized/syscall.ll
+; stb/optimized/stb_sprintf.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
@@ -39,10 +41,8 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
-; oiio/optimized/strutil.cpp.ll
-; stb/optimized/stb_sprintf.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind

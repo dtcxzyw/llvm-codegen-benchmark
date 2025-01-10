@@ -24,7 +24,7 @@ entry:
   ret i1 %3
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -57,7 +57,6 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/util.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
-; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/file-pcapng.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll

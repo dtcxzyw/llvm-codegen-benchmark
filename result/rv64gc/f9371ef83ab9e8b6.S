@@ -32,7 +32,7 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
+func0000000000000041:                   # @func0000000000000041
 	addi	a1, a1, 1
 	slli	a0, a0, 33
 	srli	a0, a0, 33
@@ -58,6 +58,13 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, 32
 	andi	a0, a0, -4
 	sltu	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	addi	a1, a1, -88
+	slli	a0, a0, 33
+	srli	a0, a0, 33
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
 	addi	a1, a1, 2

@@ -1,9 +1,9 @@
 
-%"class.rocksdb::Slice.2618140" = type { ptr, i64 }
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
-%"class.WasmEdge::LLVM::Value.2763231" = type { ptr }
-%"class.QuantLib::Date.2830831" = type { i64 }
-%"class.rc::Shrinkable.37.3699389" = type { ptr }
+%"class.rocksdb::Slice.2618107" = type { ptr, i64 }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
+%"class.WasmEdge::LLVM::Value.2763197" = type { ptr }
+%"class.QuantLib::Date.2830797" = type { i64 }
+%"class.rc::Shrinkable.37.3699339" = type { ptr }
 
 ; 815 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -970,7 +970,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr nusw %"class.rocksdb::Slice.2618140", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.rocksdb::Slice.2618107", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1056,7 +1056,7 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %0, i64 %4
+  %5 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1101,7 +1101,7 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nuw i64 %3, %1
-  %5 = getelementptr nusw %"class.WasmEdge::LLVM::Value.2763231", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::LLVM::Value.2763197", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1241,7 +1241,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw %"class.QuantLib::Date.2830831", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.QuantLib::Date.2830797", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1276,7 +1276,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub i64 %3, %1
-  %5 = getelementptr nusw nuw %"class.rc::Shrinkable.37.3699389", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.rc::Shrinkable.37.3699339", ptr %0, i64 %4
   ret ptr %5
 }
 

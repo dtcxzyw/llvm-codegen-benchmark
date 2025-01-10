@@ -1,6 +1,7 @@
 
-; 163 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; actix-rs/optimized/comsm606o4zjj7a.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/async.ll
 ; boost/optimized/async_fut.ll
@@ -13,6 +14,7 @@
 ; boost/optimized/url_base.ll
 ; boost/optimized/wait.ll
 ; brotli/optimized/entropy_encode.c.ll
+; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -91,6 +93,7 @@
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/skcipher.ll
+; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/tcp_input.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -172,13 +175,15 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openspiel/optimized/pentago.cc.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
@@ -190,7 +195,8 @@ entry:
   ret i64 %5
 }
 
-; 665 occurrences:
+; 668 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -730,6 +736,7 @@ entry:
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -760,6 +767,7 @@ entry:
 ; spike/optimized/htif.ll
 ; spike/optimized/spike-log-parser.ll
 ; spike/optimized/tsi.ll
+; sqlite/optimized/sqlite3.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -865,7 +873,7 @@ entry:
   ret i64 %5
 }
 
-; 125 occurrences:
+; 126 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -962,6 +970,7 @@ entry:
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
 ; pocketpy/optimized/collections.cpp.ll
+; postgres/optimized/slru.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; qemu/optimized/migration_block.c.ll
@@ -1000,8 +1009,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; casadi/optimized/integrator.cpp.ll
 ; rocksdb/optimized/hash.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
@@ -1115,13 +1125,27 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 22 occurrences:
 ; boost/optimized/url_base.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/typeobject.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; node/optimized/simdutf.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; qemu/optimized/block_bochs.c.ll
@@ -1181,6 +1205,28 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl nsw i64 %3, 3
   %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; casadi/optimized/nlpsol.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = shl i64 %3, 2
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

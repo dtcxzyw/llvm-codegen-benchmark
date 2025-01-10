@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -10,7 +10,6 @@
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
-; cpython/optimized/unicodeobject.ll
 ; lief/optimized/net_sockets.c.ll
 ; linux/optimized/hw_breakpoint.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll

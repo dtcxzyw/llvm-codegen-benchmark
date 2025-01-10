@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 62 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; cmake/optimized/mprintf.c.ll
@@ -11,6 +11,32 @@
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/h5ls.c.ll
+; icu/optimized/alphaindex.ll
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/collationruleparser.ll
+; icu/optimized/collationsets.ll
+; icu/optimized/dtptngen.ll
+; icu/optimized/filteredbrk.ll
+; icu/optimized/msgfmt.ll
+; icu/optimized/nfrule.ll
+; icu/optimized/number_longnames.ll
+; icu/optimized/numfmt.ll
+; icu/optimized/plurfmt.ll
+; icu/optimized/rbnf.ll
+; icu/optimized/rbt_rule.ll
+; icu/optimized/reslist.ll
+; icu/optimized/selfmt.ll
+; icu/optimized/smpdtfmt.ll
+; icu/optimized/timezone.ll
+; icu/optimized/tridpars.ll
+; icu/optimized/tzfmt.ll
+; icu/optimized/tzgnames.ll
+; icu/optimized/ucharstriebuilder.ll
+; icu/optimized/uniset.ll
+; icu/optimized/unistr.ll
+; icu/optimized/units_router.ll
+; icu/optimized/uspoof_conf.ll
+; icu/optimized/vtzone.ll
 ; libquic/optimized/histogram.cc.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dp.ll

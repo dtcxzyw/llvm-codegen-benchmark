@@ -1,6 +1,6 @@
 
-%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791401 = type { i32 }
+%struct._zend_op.2791358 = type { ptr, %union._znode_op.2791367, %union._znode_op.2791367, %union._znode_op.2791367, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791367 = type { i32 }
 
 ; 4 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -10,8 +10,8 @@
 ; Function Attrs: nounwind
 define i1 @func00000000000007c4(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %0, i64 %1
-  %4 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = icmp ult ptr %5, %3
   ret i1 %6
@@ -68,20 +68,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
-; Function Attrs: nounwind
-define i1 @func00000000000005c1(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw { { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %0, i64 %1
-  %4 = getelementptr nusw { { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 -24
-  %6 = icmp eq ptr %5, %3
-  ret i1 %6
-}
-
 ; 7 occurrences:
 ; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
 ; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
@@ -93,9 +79,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000541(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw { { { { i64, ptr, {} }, i64 } }, { i64, [10 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [8 x i64] }, { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %0, i64 %1
-  %4 = getelementptr nusw { { { { i64, ptr, {} }, i64 } }, { i64, [10 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [8 x i64] }, { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 -304
+  %3 = getelementptr nusw { { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %0, i64 %1
+  %4 = getelementptr nusw { { i32, [1 x i32] }, { { i32, i32 }, { i32, i32 } } }, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -24
   %6 = icmp eq ptr %5, %3
   ret i1 %6
 }

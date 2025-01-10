@@ -116,7 +116,8 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; linux/optimized/mballoc.ll
 ; linux/optimized/sbitmap.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll

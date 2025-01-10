@@ -1,5 +1,5 @@
 
-%"class.draco::IndexType.130.3087044" = type { i32 }
+%"class.draco::IndexType.130.3087010" = type { i32 }
 
 ; 2 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %2, 2
   %4 = select i1 %1, i32 %2, i32 %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.draco::IndexType.130.3087044", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.draco::IndexType.130.3087010", ptr %0, i64 %5
   ret ptr %6
 }
 

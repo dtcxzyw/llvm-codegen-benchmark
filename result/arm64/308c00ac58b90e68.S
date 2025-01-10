@@ -1,3 +1,9 @@
+func000000000000023f:                   // @func000000000000023f
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	sub	x0, x8, #24
+	ret
+                                        // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x0, x2

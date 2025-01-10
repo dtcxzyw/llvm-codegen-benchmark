@@ -1,9 +1,9 @@
 
-%"class.base::ManualConstructor.3059902" = type { %"class.base::AlignedMemory.3059903" }
-%"class.base::AlignedMemory.3059903" = type { [16 x i8] }
-%struct._SPI_connection.3655203 = type { i64, ptr, i32, %struct.slist_head.3655204, ptr, ptr, ptr, i32, ptr, i8, i8, i64, ptr, i32 }
-%struct.slist_head.3655204 = type { %struct.slist_node.3655205 }
-%struct.slist_node.3655205 = type { ptr }
+%"class.base::ManualConstructor.3059868" = type { %"class.base::AlignedMemory.3059869" }
+%"class.base::AlignedMemory.3059869" = type { [16 x i8] }
+%struct._SPI_connection.3655169 = type { i64, ptr, i32, %struct.slist_head.3655170, ptr, ptr, ptr, i32, ptr, i8, i8, i64, ptr, i32 }
+%struct.slist_head.3655170 = type { %struct.slist_node.3655171 }
+%struct.slist_node.3655171 = type { ptr }
 
 ; 24 occurrences:
 ; abc/optimized/solver.c.ll
@@ -47,7 +47,7 @@ entry:
 define ptr @func00000000000000e6(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3059902", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3059868", ptr %1, i64 %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -71,7 +71,7 @@ entry:
 define ptr @func0000000000000086(i32 %0, ptr %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = getelementptr %struct._SPI_connection.3655203, ptr %1, i64 %2
+  %3 = getelementptr %struct._SPI_connection.3655169, ptr %1, i64 %2
   %4 = icmp slt i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

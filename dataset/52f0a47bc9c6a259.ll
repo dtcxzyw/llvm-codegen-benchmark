@@ -1,5 +1,5 @@
 
-%struct.bio_vec.3554876 = type { ptr, i32, i32 }
+%struct.bio_vec.3554842 = type { ptr, i32, i32 }
 
 ; 10 occurrences:
 ; openjdk/optimized/ByteGray.ll
@@ -45,7 +45,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.bio_vec.3554876, ptr %0, i64 %6
+  %7 = getelementptr %struct.bio_vec.3554842, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -5,7 +5,7 @@
 define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp eq i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5

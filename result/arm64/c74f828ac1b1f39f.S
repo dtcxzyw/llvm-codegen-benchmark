@@ -74,7 +74,7 @@ func0000000000000046:                   // @func0000000000000046
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	and	w8, w0, #0x3
+	and	w8, w0, #0xffffffc0
 	cmp	w8, w1
 	cset	w0, gt
 	ret

@@ -1,5 +1,5 @@
 
-%struct.WordEntry.3651816 = type { i32 }
+%struct.WordEntry.3651782 = type { i32 }
 
 ; 5 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -31,7 +31,7 @@ entry:
   %3 = lshr i32 %2, 12
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %6 = getelementptr [0 x %struct.WordEntry.3651816], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [0 x %struct.WordEntry.3651782], ptr %5, i64 0, i64 %0
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }

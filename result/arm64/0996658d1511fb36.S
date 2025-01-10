@@ -55,6 +55,14 @@ func000000000000000c:                   // @func000000000000000c
 	cset	w0, ne
 	ret
                                         // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	tst	w1, #0x1
+	csinv	x8, x2, xzr, eq
+	cmp	x8, x0
+	cset	w0, le
+	ret
+                                        // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	tst	w1, #0x1

@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 103 occurrences:
 ; bullet3/optimized/btDefaultCollisionConfiguration.ll
 ; casadi/optimized/integrator.cpp.ll
 ; cmake/optimized/archive_read_support_format_ar.c.ll
@@ -77,6 +77,7 @@
 ; php/optimized/html.ll
 ; php/optimized/php_cli.ll
 ; php/optimized/zend_jit.ll
+; postgres/optimized/formatting.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/encoding.ll

@@ -1,11 +1,11 @@
 
-%struct.MapNode.2695129 = type { i16, i8, i8 }
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
+%struct.MapNode.2695095 = type { i16, i8, i8 }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
 
 ; 29 occurrences:
 ; arrow/optimized/hdfs.cc.ll
@@ -55,7 +55,7 @@ entry:
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
-  %4 = getelementptr %struct.MapNode.2695129, ptr %0, i64 %1
+  %4 = getelementptr %struct.MapNode.2695095, ptr %0, i64 %1
   %5 = ashr exact i64 %3, 42
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -82,11 +82,11 @@ entry:
   %3 = shl i64 %2, 27
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct._StackType.2710345, ptr %5, i64 %4
+  %6 = getelementptr nusw %struct._StackType.2710311, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/topology.ll
@@ -105,6 +105,7 @@ entry:
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/fmt-merge-msg.ll
 ; icu/optimized/package.ll
+; icu/optimized/pkgitems.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -187,12 +188,11 @@ entry:
   ret ptr %6
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; git/optimized/apply.ll
 ; git/optimized/ref-filter.ll
 ; icu/optimized/gencnval.ll
-; icu/optimized/pkgitems.ll
 ; imgui/optimized/imgui.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -223,7 +223,7 @@ define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }

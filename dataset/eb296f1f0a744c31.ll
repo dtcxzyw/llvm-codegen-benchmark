@@ -1,13 +1,13 @@
 
-%"class.std::complex.2839348" = type { { double, double } }
-%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
-%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
-%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
-%union.anon.6.3535215 = type { %struct.list_head.3535195 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%union.anon.8.3535216 = type { i64 }
-%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
+%"class.std::complex.2839314" = type { { double, double } }
+%struct.page.3535177 = type { i64, %union.anon.4.3535178, %union.anon.12.3535179, %struct.atomic_t.3535145, [8 x i8] }
+%union.anon.4.3535178 = type { %struct.anon.5.3535180 }
+%struct.anon.5.3535180 = type { %union.anon.6.3535181, ptr, %union.anon.8.3535182, i64 }
+%union.anon.6.3535181 = type { %struct.list_head.3535161 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%union.anon.8.3535182 = type { i64 }
+%union.anon.12.3535179 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/moment.cpp.ll
@@ -44,8 +44,8 @@ entry:
 define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"class.std::complex.2839348", ptr %0, i64 %1
-  %5 = getelementptr nuw %"class.std::complex.2839348", ptr %4, i64 %3, i32 0, i32 1
+  %4 = getelementptr nusw %"class.std::complex.2839314", ptr %0, i64 %1
+  %5 = getelementptr nuw %"class.std::complex.2839314", ptr %4, i64 %3, i32 0, i32 1
   ret ptr %5
 }
 
@@ -55,8 +55,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = getelementptr %struct.page.3535211, ptr %0, i64 %1
-  %5 = getelementptr %struct.page.3535211, ptr %4, i64 %3
+  %4 = getelementptr %struct.page.3535177, ptr %0, i64 %1
+  %5 = getelementptr %struct.page.3535177, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }

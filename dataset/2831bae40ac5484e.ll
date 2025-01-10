@@ -38,7 +38,7 @@ entry:
   ret ptr %6
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
@@ -53,7 +53,6 @@ entry:
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
-; icu/optimized/swapimpl.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -151,7 +150,7 @@ entry:
   ret ptr %6
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -204,6 +203,7 @@ entry:
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
+; icu/optimized/swapimpl.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dlalsa.c.ll
@@ -242,10 +242,9 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; openusd/optimized/decodetxb.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {

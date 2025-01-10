@@ -39,7 +39,7 @@ entry:
   ret i1 %5
 }
 
-; 208 occurrences:
+; 209 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/retArea.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
@@ -123,7 +123,6 @@ entry:
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; llvm/optimized/MinGW.cpp.ll
 ; llvm/optimized/PHIElimination.cpp.ll
-; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -227,6 +226,8 @@ entry:
 ; ruby/optimized/parse.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/ripper.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -257,7 +258,7 @@ entry:
   ret i1 %5
 }
 
-; 84 occurrences:
+; 85 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
@@ -300,6 +301,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; mimalloc/optimized/page.c.ll
 ; nuklear/optimized/unity.c.ll

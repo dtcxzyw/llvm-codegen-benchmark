@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 57 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -36,6 +36,8 @@
 ; opencv/optimized/opencv-onnx.pb.cc.ll
 ; opencv/optimized/p3p.cpp.ll
 ; openjdk/optimized/node.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/multirangetypes.ll

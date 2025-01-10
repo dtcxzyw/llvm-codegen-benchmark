@@ -1,5 +1,5 @@
 
-%struct.dtOffMeshConnection.3108551 = type { [6 x float], float, i16, i8, i8, i32 }
+%struct.dtOffMeshConnection.3108517 = type { [6 x float], float, i16, i8, i8, i32 }
 
 ; 2 occurrences:
 ; hermes/optimized/APInt.cpp.ll
@@ -46,7 +46,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = sub i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.dtOffMeshConnection.3108551, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.dtOffMeshConnection.3108517, ptr %0, i64 %6
   ret ptr %7
 }
 

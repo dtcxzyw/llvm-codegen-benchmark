@@ -1,10 +1,9 @@
 
-%struct._phpdbg_param.2792421 = type { i32, i64, i64, %struct.anon.2792422, %struct.anon.0.2792423, ptr, i64, ptr, ptr }
-%struct.anon.2792422 = type { ptr, i64 }
-%struct.anon.0.2792423 = type { ptr, ptr }
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
-%union.YYSTYPE.3651301 = type { i64 }
+%struct._phpdbg_param.2792387 = type { i32, i64, i64, %struct.anon.2792388, %struct.anon.0.2792389, ptr, i64, ptr, ptr }
+%struct.anon.2792388 = type { ptr, i64 }
+%struct.anon.0.2792389 = type { ptr, ptr }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 6 occurrences:
 ; grpc/optimized/uri_parser.cc.ll
@@ -36,7 +35,7 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr %struct._phpdbg_param.2792421, ptr %0, i64 %3
+  %4 = getelementptr %struct._phpdbg_param.2792387, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -70,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
@@ -81,11 +80,22 @@ entry:
 ; 1 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000008f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -24
+  %5 = getelementptr i8, ptr %4, i64 -72
   ret ptr %5
 }
 
@@ -95,7 +105,7 @@ entry:
 define ptr @func00000000000000fb(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %3
+  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 40
   ret ptr %5
 }
@@ -123,7 +133,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr %union.YYSTYPE.3651301, ptr %0, i64 %3
+  %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
 

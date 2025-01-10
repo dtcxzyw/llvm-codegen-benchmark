@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/dauMerge.c.ll
+; git/optimized/sequencer.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll

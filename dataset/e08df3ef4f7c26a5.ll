@@ -204,6 +204,7 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hwloc/optimized/topology-x86.ll
 ; hyperscan/optimized/ComponentWordBoundary.cpp.ll
+; hyperscan/optimized/ng_violet.cpp.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/number_decimalquantity.ll
@@ -353,7 +354,6 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/trackpoint.ll
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/usblp.ll

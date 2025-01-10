@@ -23,9 +23,10 @@ entry:
   ret i16 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/mlme.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
+; soc-simulator/optimized/verilated.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll

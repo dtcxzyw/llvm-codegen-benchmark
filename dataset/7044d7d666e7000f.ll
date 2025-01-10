@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
 ; boost/optimized/instantiate_re2c_lexer_str.ll
 ; faiss/optimized/sorting.cpp.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/clocksource.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind

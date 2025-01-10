@@ -157,17 +157,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %.not = icmp eq i32 %1, 0
-  %2 = select i1 %.not, i32 0, i32 %0
-  %3 = sext i32 %2 to i64
-  ret i64 %3
-}
-
 ; 38 occurrences:
 ; graphviz/optimized/exparse.c.ll
 ; opencv/optimized/AKAZE_match.cpp.ll

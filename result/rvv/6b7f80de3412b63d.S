@@ -22,5 +22,6 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 17
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.x	v8, a0
-	vmerge.vim	v8, v8, -1, v0
+	li	a0, 63
+	vmerge.vxm	v8, v8, a0, v0
 	ret

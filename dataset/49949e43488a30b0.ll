@@ -1,9 +1,9 @@
 
-%"struct.mold::elf::ElfRel.2635966" = type { %"class.mold::LittleEndian.3.2635854", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.295.2635967" }
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"class.mold::LittleEndian.295.2635967" = type { [8 x i8] }
-%struct.IOVAMapping.2707794 = type { ptr, i64, i64 }
+%"struct.mold::elf::ElfRel.2635933" = type { %"class.mold::LittleEndian.3.2635821", %"class.mold::LittleEndian.2635820", %"class.mold::LittleEndian.2635820", %"class.mold::LittleEndian.295.2635934" }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"class.mold::LittleEndian.295.2635934" = type { [8 x i8] }
+%struct.IOVAMapping.2707760 = type { ptr, i64, i64 }
 
 ; 63 occurrences:
 ; arrow/optimized/tz.cpp.ll
@@ -75,7 +75,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 48
-  %5 = getelementptr nusw %"struct.mold::elf::ElfRel.2635966", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.mold::elf::ElfRel.2635933", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -92,7 +92,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 48
-  %5 = getelementptr %struct.IOVAMapping.2707794, ptr %0, i64 %4
+  %5 = getelementptr %struct.IOVAMapping.2707760, ptr %0, i64 %4
   ret ptr %5
 }
 

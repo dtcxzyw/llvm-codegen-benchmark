@@ -641,7 +641,7 @@ entry:
   ret i1 %6
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -654,7 +654,6 @@ entry:
 ; llvm/optimized/LoopNestAnalysis.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openusd/optimized/aggregateTreeBuilder.cpp.ll
@@ -942,7 +941,7 @@ entry:
 define i1 @func000000000000060c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %1, %3
+  %4 = add i64 %3, %1
   %5 = sub i64 0, %0
   %6 = icmp ne i64 %4, %5
   ret i1 %6

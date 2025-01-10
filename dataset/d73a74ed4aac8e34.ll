@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/amaze.cc.ll
+; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:

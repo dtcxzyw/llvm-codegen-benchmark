@@ -1,15 +1,14 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 19
-  %4 = and i32 %3, 1048576
-  %5 = shl nuw nsw i32 %1, 19
-  %6 = or disjoint i32 %0, %5
+  %3 = shl nuw nsw i32 %2, 4
+  %4 = or disjoint i32 %3, %0
+  %5 = shl i32 %1, 10
+  %6 = and i32 %5, 31744
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

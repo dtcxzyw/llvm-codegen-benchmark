@@ -1,5 +1,5 @@
 
-; 153 occurrences:
+; 152 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
@@ -31,7 +31,6 @@
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/filemap.ll
-; linux/optimized/gup.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/iov_iter.ll
@@ -443,7 +442,7 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; cmake/optimized/proctitle.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -469,8 +468,6 @@ entry:
 ; postgres/optimized/slru.ll
 ; ruby/optimized/strftime.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
@@ -639,10 +636,11 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:

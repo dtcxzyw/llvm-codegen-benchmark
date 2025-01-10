@@ -28,7 +28,7 @@ entry:
   ret i64 %5
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -90,6 +90,7 @@ entry:
 ; ozz-animation/optimized/animation.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; postgres/optimized/brin.ll
@@ -208,8 +209,9 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/bmcFault.c.ll
+; abc/optimized/cuddTable.c.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -268,7 +270,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {

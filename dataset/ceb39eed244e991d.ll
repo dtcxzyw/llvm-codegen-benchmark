@@ -1,10 +1,10 @@
 
-%"struct.drjit::Array.257.2603434" = type { %"struct.drjit::StaticArrayImpl.258.2603435" }
-%"struct.drjit::StaticArrayImpl.258.2603435" = type { %"struct.drjit::StaticArrayImpl.259.2603436" }
-%"struct.drjit::StaticArrayImpl.259.2603436" = type { <4 x double> }
-%"struct.blender::MLoopTri.2609110" = type { [3 x i32], i32 }
-%"struct.std::array.26.2701739" = type { [4 x i32] }
-%struct.btQuantizedBvhNode.2818263 = type { [3 x i16], [3 x i16], i32 }
+%"struct.drjit::Array.257.2603401" = type { %"struct.drjit::StaticArrayImpl.258.2603402" }
+%"struct.drjit::StaticArrayImpl.258.2603402" = type { %"struct.drjit::StaticArrayImpl.259.2603403" }
+%"struct.drjit::StaticArrayImpl.259.2603403" = type { <4 x double> }
+%"struct.blender::MLoopTri.2609077" = type { [3 x i32], i32 }
+%"struct.std::array.26.2701705" = type { [4 x i32] }
+%struct.btQuantizedBvhNode.2818229 = type { [3 x i16], [3 x i16], i32 }
 
 ; 9 occurrences:
 ; linux/optimized/hugetlb_cgroup.ll
@@ -382,7 +382,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw double, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw [3 x %"struct.drjit::Array.257.2603434"], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw nuw [3 x %"struct.drjit::Array.257.2603401"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
@@ -911,12 +911,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.blender::MLoopTri.2609110", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.blender::MLoopTri.2609077", ptr %1, i64 %2
   %4 = getelementptr nusw nuw [3 x i32], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
-; 438 occurrences:
+; 439 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
@@ -1354,6 +1354,7 @@ entry:
 ; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
+; zed-rs/optimized/f2p4o1tfqflk9ggs4gjk0qweh.ll
 ; zed-rs/optimized/f2qsfrlgh226gsylx7h444e9w.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
@@ -1363,7 +1364,7 @@ entry:
   ret ptr %4
 }
 
-; 186 occurrences:
+; 179 occurrences:
 ; actix-rs/optimized/x5wdyzwp9hx5e8t.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clap-rs/optimized/58cs3pckwcmstm46.ll
@@ -1395,7 +1396,6 @@ entry:
 ; mini-lsm-rs/optimized/29sn4tiur79wqexc.ll
 ; mini-lsm-rs/optimized/3dzgrf412bf8lbyt.ll
 ; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
-; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; openjdk/optimized/jcphuff.ll
@@ -1416,7 +1416,6 @@ entry:
 ; rust-analyzer-rs/optimized/28z1fnr7ozphfmoa.ll
 ; rust-analyzer-rs/optimized/2krx4e4b007960a3.ll
 ; rust-analyzer-rs/optimized/2z79z3pj3t0p2c2c.ll
-; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/4mw28hhoa59adomg.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
@@ -1424,7 +1423,6 @@ entry:
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
-; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
@@ -1434,7 +1432,6 @@ entry:
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; turborepo-rs/optimized/2nr6c96xnmy9oph33ghqn67cs.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
-; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/aovf7fvpf4y65zc.ll
 ; wasmtime-rs/optimized/1kan0u7yfu7u6hal.ll
@@ -1461,7 +1458,6 @@ entry:
 ; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
 ; zed-rs/optimized/186ffj9uswcj8t36dkme83b2g.ll
-; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
 ; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
@@ -1546,14 +1542,12 @@ entry:
 ; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
 ; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
-; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
-; zed-rs/optimized/f2p4o1tfqflk9ggs4gjk0qweh.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::array.26.2701739", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::array.26.2701705", ptr %1, i64 %2
   %4 = getelementptr nusw [4 x i32], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
@@ -1586,7 +1580,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.btQuantizedBvhNode.2818263, ptr %1, i64 %2
+  %3 = getelementptr %struct.btQuantizedBvhNode.2818229, ptr %1, i64 %2
   %4 = getelementptr nusw nuw [3 x i16], ptr %3, i64 0, i64 %0
   ret ptr %4
 }

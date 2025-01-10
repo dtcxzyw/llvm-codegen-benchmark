@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %3, %0
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
-  ret i1 %6
-}
-
 ; 18 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -37,18 +25,6 @@ entry:
   %4 = sub nsw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_cadence_gem.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000186(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub i64 %3, %0
-  %5 = zext nneg i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
   ret i1 %6
 }
 
@@ -85,18 +61,6 @@ entry:
   %4 = sub nuw nsw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = icmp samesign ugt i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; assimp/optimized/unzip.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 
@@ -185,18 +149,6 @@ entry:
   %4 = sub nuw i64 %3, %0
   %5 = zext i32 %1 to i64
   %6 = icmp samesign ult i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/vc_screen.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000126(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = icmp slt i64 %4, %5
   ret i1 %6
 }
 

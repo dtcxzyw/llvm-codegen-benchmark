@@ -1,6 +1,6 @@
 
-%"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081" = type { ptr, ptr }
-%struct.list_head.3535195 = type { ptr, ptr }
+%"struct.tf::ObjectPool<tf::Node>::Blocklist.3063047" = type { ptr, ptr }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 38 occurrences:
 ; taskflow/optimized/async.cpp.ll
@@ -46,7 +46,7 @@ define i1 @func00000000000001e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 40
-  %5 = getelementptr nusw nuw [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081"], ptr %4, i64 0, i64 %1
+  %5 = getelementptr nusw nuw [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.3063047"], ptr %4, i64 0, i64 %1
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -61,7 +61,7 @@ define i1 @func0000000000000181(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
-  %5 = getelementptr [12 x %struct.list_head.3535195], ptr %4, i64 0, i64 %1
+  %5 = getelementptr [12 x %struct.list_head.3535161], ptr %4, i64 0, i64 %1
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

@@ -4,7 +4,7 @@ func0000000000000010:                   // @func0000000000000010
 	add	x9, x2, x2, lsr #63
 	lsr	x8, x8, #1
 	add	x8, x8, x9, lsr #1
-	add	x8, x8, x0
+	add	x8, x0, x8
 	lsl	x0, x8, #1
 	ret
                                         // -- End function
@@ -18,7 +18,7 @@ func0000000000000014:                   // @func0000000000000014
 	csel	x9, x9, x1, lt
 	lsr	x9, x9, #2
 	add	x8, x9, x8, lsr #2
-	add	x8, x8, x0
+	add	x8, x0, x8
 	lsl	x0, x8, #2
 	ret
                                         // -- End function

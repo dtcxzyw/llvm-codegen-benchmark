@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.172.2736847" = type { %struct.BEInt.173.2736848 }
-%struct.BEInt.173.2736848 = type { i8 }
+%"struct.OT::IntType.172.2736813" = type { %struct.BEInt.173.2736814 }
+%struct.BEInt.173.2736814 = type { i8 }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
@@ -28,7 +28,7 @@ entry:
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.172.2736847", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.172.2736813", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = mul nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.172.2736847", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.172.2736813", ptr %6, i64 %5
   ret ptr %7
 }
 

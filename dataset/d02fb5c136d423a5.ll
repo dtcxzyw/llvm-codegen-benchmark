@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/gzwrite.c.ll
 ; qemu/optimized/block_vdi.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-%struct.software_node.3553102 = type { ptr, ptr, ptr }
+%struct.software_node.3553068 = type { ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -42,7 +42,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, 2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.software_node.3553102, ptr %0, i64 %5
+  %6 = getelementptr %struct.software_node.3553068, ptr %0, i64 %5
   ret ptr %6
 }
 

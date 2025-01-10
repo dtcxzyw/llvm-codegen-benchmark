@@ -91,18 +91,6 @@ func0000000000000002:                   // @func0000000000000002
 	add	x0, x8, #23
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
-// %bb.0:                               // %entry
-	lsl	x8, x0, #3
-	add	x0, x8, #23
-	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
-// %bb.0:                               // %entry
-	lsl	x8, x0, #3
-	add	x0, x8, #23
-	ret
-                                        // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	mov	w8, #20988                      // =0x51fc

@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/nulsft.c.ll
@@ -31,7 +31,6 @@
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openmpi/optimized/pmix_server_get.ll
-; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/geo_spgist.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/hw_vfio_common.c.ll

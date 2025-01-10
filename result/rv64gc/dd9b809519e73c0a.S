@@ -78,12 +78,6 @@ func0000000000000098:                   # @func0000000000000098
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000c2:                   # @func00000000000000c2
-	sext.w	a0, a0
-	addiw	a1, a1, 3
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
 func00000000000000d6:                   # @func00000000000000d6
 	sext.w	a0, a0
 	addiw	a1, a1, 1
@@ -108,4 +102,10 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a2, a2, -1536
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
+	ret
+func00000000000000c2:                   # @func00000000000000c2
+	sext.w	a0, a0
+	addiw	a1, a1, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

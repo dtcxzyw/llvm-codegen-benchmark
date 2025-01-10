@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 193 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -22,7 +22,6 @@
 ; cpython/optimized/typevarobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/modulegroups.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; git/optimized/checkout-index.ll
 ; git/optimized/combine-diff.ll
@@ -202,7 +201,7 @@ entry:
   ret i1 %3
 }
 
-; 1081 occurrences:
+; 1082 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -332,6 +331,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/masks.c.ll
+; darktable/optimized/modulegroups.c.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -1292,10 +1292,11 @@ entry:
   ret i1 %3
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/cuddZddUtil.c.ll
 ; clamav/optimized/matcher.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cpython/optimized/socketmodule.ll
 ; folly/optimized/JsonTestUtil.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -1518,7 +1519,7 @@ entry:
   ret i1 %3
 }
 
-; 835 occurrences:
+; 833 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -1695,8 +1696,6 @@ entry:
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/som_stream.c.ll
@@ -2362,7 +2361,57 @@ entry:
   ret i1 %3
 }
 
-; 99 occurrences:
+; 41 occurrences:
+; clamav/optimized/chmd.c.ll
+; clamav/optimized/explode.c.ll
+; clamav/optimized/packlibs.c.ll
+; coreutils-rs/optimized/12183t08bisz8vo8.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/H5Sselect.c.ll
+; libpng/optimized/pngwutil.c.ll
+; libquic/optimized/a_utf8.c.ll
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; libquic/optimized/url_canon_host.cc.ll
+; libwebp/optimized/webpinfo.c.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/qspinlock.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-cff2-table.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; php/optimized/pcre2_jit_compile.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_ro.c.ll
+; qemu/optimized/fdt_rw.c.ll
+; raylib/optimized/raudio.c.ll
+; ruby/optimized/shift_jis.ll
+; ruby/optimized/windows_31j.ll
+; spike/optimized/fdt.ll
+; spike/optimized/fdt_ro.ll
+; spike/optimized/fdt_rw.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/iptrace.c.ll
+; wireshark/optimized/k12.c.ll
+; yosys/optimized/fstapi.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = icmp ult i32 %2, 128
+  ret i1 %3
+}
+
+; 98 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -2440,7 +2489,6 @@ entry:
 ; php/optimized/avifinfo.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/image.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/ginget.ll
@@ -3333,54 +3381,6 @@ define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp ugt i32 %2, 16
-  ret i1 %3
-}
-
-; 39 occurrences:
-; clamav/optimized/chmd.c.ll
-; clamav/optimized/explode.c.ll
-; clamav/optimized/packlibs.c.ll
-; coreutils-rs/optimized/12183t08bisz8vo8.ll
-; freetype/optimized/sfnt.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Sselect.c.ll
-; libpng/optimized/pngwutil.c.ll
-; libquic/optimized/a_utf8.c.ll
-; libquic/optimized/bio.c.ll
-; libquic/optimized/cbs.c.ll
-; libquic/optimized/url_canon_host.cc.ll
-; libwebp/optimized/webpinfo.c.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/qspinlock.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-ot-cff2-table.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; php/optimized/pcre2_jit_compile.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_ro.c.ll
-; qemu/optimized/fdt_rw.c.ll
-; raylib/optimized/raudio.c.ll
-; spike/optimized/fdt.ll
-; spike/optimized/fdt_ro.ll
-; spike/optimized/fdt_rw.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/iptrace.c.ll
-; wireshark/optimized/k12.c.ll
-; yosys/optimized/fstapi.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or disjoint i32 %0, %1
-  %3 = icmp ult i32 %2, 16
   ret i1 %3
 }
 

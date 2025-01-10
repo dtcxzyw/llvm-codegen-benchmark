@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; grpc/optimized/socket_utils_posix.cc.ll
@@ -20,6 +20,7 @@ entry:
 ; linux/optimized/intel_migrate.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openjdk/optimized/type.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll

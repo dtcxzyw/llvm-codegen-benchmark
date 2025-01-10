@@ -1,5 +1,5 @@
 
-; 1756 occurrences:
+; 1755 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -169,7 +169,6 @@
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -1965,7 +1964,8 @@ entry:
   ret ptr %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/crypt_sha512.ll
 ; Function Attrs: nounwind

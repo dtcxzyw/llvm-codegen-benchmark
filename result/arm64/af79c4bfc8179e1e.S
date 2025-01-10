@@ -7,15 +7,6 @@ func0000000000000302:                   // @func0000000000000302
 	csinc	w0, w8, wzr, ne
 	ret
                                         // -- End function
-func0000000000000052:                   // @func0000000000000052
-// %bb.0:                               // %entry
-	cmp	w0, #1
-	cset	w8, eq
-	cmp	w0, w1
-	and	w8, w8, w2
-	csinc	w0, w8, wzr, lo
-	ret
-                                        // -- End function
 func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
 	cmp	w0, #20
@@ -86,5 +77,14 @@ func0000000000000298:                   // @func0000000000000298
 	cmp	w0, w1
 	and	w8, w2, w8
 	csinc	w0, w8, wzr, eq
+	ret
+                                        // -- End function
+func0000000000000052:                   // @func0000000000000052
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w8, eq
+	cmp	w0, w1
+	and	w8, w2, w8
+	csinc	w0, w8, wzr, lo
 	ret
                                         // -- End function

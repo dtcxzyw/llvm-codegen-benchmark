@@ -82,6 +82,14 @@ func0000000000000074:                   // @func0000000000000074
 	cset	w0, lo
 	ret
                                         // -- End function
+func0000000000000078:                   // @func0000000000000078
+// %bb.0:                               // %entry
+	mov	w8, w1
+	sub	x8, x8, x0
+	cmp	x8, #1
+	cset	w0, hi
+	ret
+                                        // -- End function
 func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
 	mov	w8, w1
@@ -124,7 +132,7 @@ func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
 	mov	w8, w1
 	sub	x8, x8, x0
-	cmn	x8, #2
+	cmp	x8, #1
 	cset	w0, gt
 	ret
                                         // -- End function
@@ -150,14 +158,6 @@ func000000000000000a:                   // @func000000000000000a
 	sub	x8, x8, x0
 	cmp	x8, #0
 	cset	w0, gt
-	ret
-                                        // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
-	mov	w8, w1
-	sub	x8, x8, x0
-	cmp	x8, #1
-	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008

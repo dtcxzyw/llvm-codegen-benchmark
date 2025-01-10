@@ -110,6 +110,14 @@ func0000000000000586:                   # @func0000000000000586
 	sets	%al
 	andb	%cl, %al
 	retq
+func0000000000000484:                   # @func0000000000000484
+	addl	$-58, %esi
+	cmpl	$-10, %esi
+	setb	%cl
+	cmpb	$-26, %dil
+	setb	%al
+	andb	%cl, %al
+	retq
 func000000000000018c:                   # @func000000000000018c
 	cmpl	$1, %esi
 	setne	%cl

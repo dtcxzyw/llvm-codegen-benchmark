@@ -28,7 +28,7 @@ func0000000000000001:                   # @func0000000000000001
 	leaq	-8(%rdi), %rax
 	sarq	$3, %rax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func0000000000000051:                   # @func0000000000000051
 	leaq	(%rsi,%rdx,2), %rax
 	subq	%rax, %rdi
 	leaq	2(%rdi), %rax

@@ -14,16 +14,16 @@ func0000000000000007:                   # @func0000000000000007
 .LBB1_2:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a2, a2
+func0000000000000003:                   # @func0000000000000003
+	slli	a2, a2, 32
+	srli	a2, a2, 32
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
-	slli	a2, a2, 32
-	srli	a2, a2, 32
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a2, a2
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:                                # %entry

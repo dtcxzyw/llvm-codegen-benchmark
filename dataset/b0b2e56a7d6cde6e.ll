@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; ruby/optimized/bignum.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, 31
+  %5 = select i1 %4, i64 -1, i64 %0
+  ret i64 %5
+}
+
 ; 7 occurrences:
 ; ipopt/optimized/IpEquilibrationScaling.ll
 ; ipopt/optimized/SensIndexSchurData.ll
@@ -86,6 +97,17 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; abseil-cpp/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = icmp sgt i32 %3, 971
+  %5 = select i1 %4, i64 0, i64 %0
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
@@ -97,6 +119,17 @@ entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 15, i64 %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; linux/optimized/aspm.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 33
+  %5 = select i1 %4, i64 31, i64 %0
   ret i64 %5
 }
 

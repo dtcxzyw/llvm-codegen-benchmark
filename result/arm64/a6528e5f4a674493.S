@@ -30,6 +30,14 @@ func0000000000000004:                   // @func0000000000000004
 	cinc	x0, x8, ne
 	ret
                                         // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	add	x9, x0, x1
+	mov	x8, #-9223372036854775807       // =0x8000000000000001
+	cmp	x9, #0
+	cneg	x0, x8, lt
+	ret
+                                        // -- End function
 func0000000000000078:                   // @func0000000000000078
 // %bb.0:                               // %entry
 	add	x8, x0, x1

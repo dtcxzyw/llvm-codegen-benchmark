@@ -22,7 +22,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/usage_config_test.cc.ll
 ; clamav/optimized/scanners.c.ll
@@ -42,6 +42,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; entt/optimized/version.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/lzo1x_compress.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
@@ -151,10 +152,11 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; boost/optimized/url_view_base.ll
 ; freetype/optimized/type1cid.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:

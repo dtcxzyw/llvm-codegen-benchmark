@@ -6184,7 +6184,7 @@ entry:
   ret i8 %1
 }
 
-; 2093 occurrences:
+; 2092 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -7137,7 +7137,6 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_lcidm.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
-; openssl/optimized/recordlentest-bin-recordlentest.ll
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/double-to-string.cc.ll

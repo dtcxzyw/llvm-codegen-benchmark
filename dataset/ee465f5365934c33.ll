@@ -1,5 +1,5 @@
 
-%"class.std::complex.2839348" = type { { double, double } }
+%"class.std::complex.2839314" = type { { double, double } }
 
 ; 20 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -276,7 +276,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = or disjoint i64 %1, %3
-  %5 = getelementptr nusw %"class.std::complex.2839348", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.std::complex.2839314", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,7 +1,7 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
 
 ; 6 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -43,7 +43,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr [0 x %struct.object_slot.2821745], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [0 x %struct.object_slot.2821711], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

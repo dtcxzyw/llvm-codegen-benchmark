@@ -54,8 +54,3 @@ func00000000000000e1:                   // @func00000000000000e1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
-	mov	w0, #0                          // =0x0
-	ret
-                                        // -- End function

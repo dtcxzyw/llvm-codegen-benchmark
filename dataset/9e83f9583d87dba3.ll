@@ -184,7 +184,7 @@ entry:
   ret i1 %5
 }
 
-; 245 occurrences:
+; 246 occurrences:
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -198,6 +198,7 @@ entry:
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cpython/optimized/dtoa.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll

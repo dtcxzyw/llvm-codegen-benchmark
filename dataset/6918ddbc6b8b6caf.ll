@@ -27,4 +27,18 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
+; ockam-rs/optimized/4df8gyzy0u3roc94.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 135
+  %3 = and i64 %2, -16
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

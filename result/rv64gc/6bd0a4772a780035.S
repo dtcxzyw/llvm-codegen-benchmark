@@ -28,17 +28,6 @@ func000000000000002c:                   # @func000000000000002c
 	and	a0, a0, a1
 	slli	a0, a0, 8
 	ret
-func000000000000018c:                   # @func000000000000018c
-	sext.w	a1, a1
-	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
-	bnez	a0, .LBB3_2
-	li	a0, 18
-	ret
-.LBB3_2:
-	li	a0, 15
-	ret
 func000000000000010c:                   # @func000000000000010c
 	sext.w	a0, a0
 	srli	a1, a1, 32
@@ -52,10 +41,10 @@ func0000000000000024:                   # @func0000000000000024
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB4_2
 	li	a0, 1
 	ret
-.LBB5_2:
+.LBB4_2:
 	li	a0, 3
 	ret
 func0000000000000184:                   # @func0000000000000184
@@ -74,4 +63,16 @@ func0000000000000084:                   # @func0000000000000084
 	sltiu	a0, a0, 1025
 	and	a0, a0, a1
 	slli	a0, a0, 2
+	ret
+func000000000000018c:                   # @func000000000000018c
+	sext.w	a0, a0
+	snez	a1, a1
+	addi	a0, a0, -2
+	snez	a0, a0
+	and	a0, a0, a1
+	bnez	a0, .LBB7_2
+	li	a0, 5
+	ret
+.LBB7_2:
+	li	a0, 8
 	ret

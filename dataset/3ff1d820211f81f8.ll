@@ -1,27 +1,27 @@
 
-%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
-%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
-%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
-%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
-%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
-%"struct.std::_Head_base.48.2612583" = type { ptr }
-%struct.USBHubPort.2705857 = type { %struct.USBPort.2705858, i16, i16 }
-%struct.USBPort.2705858 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705859 }
-%union.anon.1.2705859 = type { %struct.QTailQLink.2705860 }
-%struct.QTailQLink.2705860 = type { ptr, ptr }
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%"struct.OT::OffsetTo.253.2736566" = type { %"struct.OT::Offset.144.2736562" }
-%"struct.OT::Offset.144.2736562" = type { %"struct.OT::IntType.139.2736552" }
-%"struct.OT::IntType.139.2736552" = type { %struct.BEInt.140.2736553 }
-%struct.BEInt.140.2736553 = type { [4 x i8] }
-%"struct.AAT::FTStringRange.2742068" = type { %"struct.OT::OffsetTo.334.2742069", %"struct.OT::IntType.2742031" }
-%"struct.OT::OffsetTo.334.2742069" = type { %"struct.OT::Offset.184.2742045" }
-%"struct.OT::Offset.184.2742045" = type { %"struct.OT::IntType.2742031" }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
-%struct.xhci_virt_ep.3539131 = type { ptr, i32, ptr, ptr, ptr, i32, i32, %struct.list_head.3539128, ptr, ptr, ptr, i8, %struct.xhci_bw_info.3539132, %struct.list_head.3539128, i32, i8 }
-%struct.xhci_bw_info.3539132 = type { i32, i32, i32, i32, i32, i32 }
-%struct.list_head.3539128 = type { ptr, ptr }
+%"class.std::unique_ptr.41.2612545" = type { %"struct.std::__uniq_ptr_data.42.2612546" }
+%"struct.std::__uniq_ptr_data.42.2612546" = type { %"class.std::__uniq_ptr_impl.43.2612547" }
+%"class.std::__uniq_ptr_impl.43.2612547" = type { %"class.std::tuple.44.2612548" }
+%"class.std::tuple.44.2612548" = type { %"struct.std::_Tuple_impl.45.2612549" }
+%"struct.std::_Tuple_impl.45.2612549" = type { %"struct.std::_Head_base.48.2612550" }
+%"struct.std::_Head_base.48.2612550" = type { ptr }
+%struct.USBHubPort.2705823 = type { %struct.USBPort.2705824, i16, i16 }
+%struct.USBPort.2705824 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705825 }
+%union.anon.1.2705825 = type { %struct.QTailQLink.2705826 }
+%struct.QTailQLink.2705826 = type { ptr, ptr }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%"struct.OT::OffsetTo.253.2736532" = type { %"struct.OT::Offset.144.2736528" }
+%"struct.OT::Offset.144.2736528" = type { %"struct.OT::IntType.139.2736518" }
+%"struct.OT::IntType.139.2736518" = type { %struct.BEInt.140.2736519 }
+%struct.BEInt.140.2736519 = type { [4 x i8] }
+%"struct.AAT::FTStringRange.2742034" = type { %"struct.OT::OffsetTo.334.2742035", %"struct.OT::IntType.2741997" }
+%"struct.OT::OffsetTo.334.2742035" = type { %"struct.OT::Offset.184.2742011" }
+%"struct.OT::Offset.184.2742011" = type { %"struct.OT::IntType.2741997" }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
+%struct.xhci_virt_ep.3539097 = type { ptr, i32, ptr, ptr, ptr, i32, i32, %struct.list_head.3539094, ptr, ptr, ptr, i8, %struct.xhci_bw_info.3539098, %struct.list_head.3539094, i32, i8 }
+%struct.xhci_bw_info.3539098 = type { i32, i32, i32, i32, i32, i32 }
+%struct.list_head.3539094 = type { ptr, ptr }
 
 ; 32 occurrences:
 ; abc/optimized/bblif.c.ll
@@ -540,7 +540,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612545"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -586,7 +586,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 5888
-  %5 = getelementptr [8 x %struct.USBHubPort.2705857], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [8 x %struct.USBHubPort.2705823], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -629,7 +629,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 12336
-  %5 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -771,7 +771,7 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.253.2736566"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.253.2736532"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -803,7 +803,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 12
-  %5 = getelementptr nusw nuw [1 x %"struct.AAT::FTStringRange.2742068"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [1 x %"struct.AAT::FTStringRange.2742034"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -816,7 +816,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %5 = getelementptr [31 x %struct.xhci_virt_ep.3539131], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [31 x %struct.xhci_virt_ep.3539097], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

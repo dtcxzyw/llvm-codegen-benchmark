@@ -1,5 +1,5 @@
 
-; 663 occurrences:
+; 664 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -210,6 +210,7 @@
 ; ceres/optimized/scratch_evaluate_preparer.cc.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/frm_driver.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
@@ -1445,9 +1446,8 @@ entry:
   ret ptr %5
 }
 
-; 77 occurrences:
+; 75 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_bilateral.cc.ll
 ; draco/optimized/ply_reader.cc.ll
 ; gromacs/optimized/atomdistribution.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
@@ -1504,7 +1504,6 @@ entry:
 ; opencv/optimized/unicomblock.cpp.ll
 ; openspiel/optimized/clobber.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
-; openusd/optimized/convolve.c.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll

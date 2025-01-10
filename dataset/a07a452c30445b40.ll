@@ -299,9 +299,7 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
-; boost/optimized/matches_relation_factory.ll
-; boost/optimized/read_graphviz_new.ll
+; 8 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; linux/optimized/n_tty.ll

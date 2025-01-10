@@ -215,13 +215,6 @@ func0000000000000065:                   // @func0000000000000065
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000167:                   // @func0000000000000167
-// %bb.0:                               // %entry
-	add	w8, w0, w1
-	cmp	w8, w2
-	cset	w0, le
-	ret
-                                        // -- End function
 func0000000000000161:                   // @func0000000000000161
 // %bb.0:                               // %entry
 	add	w8, w0, w1

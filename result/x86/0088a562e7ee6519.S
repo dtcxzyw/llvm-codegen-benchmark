@@ -1,3 +1,10 @@
+func000000000000004c:                   # @func000000000000004c
+	movl	%esi, %eax
+	cmpq	%rax, %rdi
+	cmovbq	%rdi, %rax
+	testq	%rax, %rax
+	setne	%al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
 	cmpq	%rax, %rdi
@@ -25,6 +32,13 @@ func0000000000000038:                   # @func0000000000000038
 	cmovbq	%rax, %rdi
 	cmpl	$4, %edi
 	setae	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	movl	%esi, %eax
+	cmpq	%rax, %rdi
+	cmovbq	%rdi, %rax
+	testq	%rax, %rax
+	sete	%al
 	retq
 func0000000000000054:                   # @func0000000000000054
 	movl	%esi, %eax

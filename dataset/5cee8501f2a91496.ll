@@ -1121,19 +1121,15 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; grpc/optimized/alts_handshaker_client.cc.ll
-; grpc/optimized/load_balancer_api.cc.ll
-; grpc/optimized/status_helper.cc.ll
-; grpc/optimized/xds_api.cc.ll
+; 2 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
-; redis/optimized/t_zset.ll
+; xgboost/optimized/iterative_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 8191
   %3 = and i64 %2, -8192
-  %4 = icmp ult i64 %0, %3
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -1220,6 +1216,21 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; grpc/optimized/alts_handshaker_client.cc.ll
+; grpc/optimized/load_balancer_api.cc.ll
+; grpc/optimized/status_helper.cc.ll
+; grpc/optimized/xds_api.cc.ll
+; redis/optimized/t_zset.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 31
+  %3 = and i64 %2, -8
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -1255,17 +1266,6 @@ entry:
   %2 = add nuw nsw i64 %1, 6
   %3 = and i64 %2, 4294967295
   %4 = icmp slt i64 %0, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; xgboost/optimized/iterative_dmatrix.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw i64 %1, 1
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

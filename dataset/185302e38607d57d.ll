@@ -122,17 +122,6 @@ entry:
 }
 
 ; 1 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.neg = sub i64 %2, %1
-  %3 = add i64 %.neg, %0
-  %4 = trunc nuw i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; hyperscan/optimized/noodle_engine.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {

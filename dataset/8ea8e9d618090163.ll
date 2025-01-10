@@ -1,5 +1,5 @@
 
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
 
 ; 1298 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -1461,7 +1461,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %1, i64 %2
+  %3 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = ashr exact i64 %5, 4

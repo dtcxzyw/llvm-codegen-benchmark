@@ -74,7 +74,7 @@ entry:
   ret ptr %3
 }
 
-; 144 occurrences:
+; 145 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -195,6 +195,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-sha3.ll
 ; pbrt-v4/optimized/scene.cpp.ll
+; php/optimized/plain_wrapper.ll
 ; php/optimized/string.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
@@ -227,7 +228,7 @@ entry:
   ret ptr %3
 }
 
-; 110 occurrences:
+; 109 occurrences:
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/area.ll
@@ -330,7 +331,6 @@ entry:
 ; minetest/optimized/texturepaths.cpp.ll
 ; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
-; php/optimized/plain_wrapper.ll
 ; php/optimized/string.ll
 ; quantlib/optimized/fdklugeextouspreadengine.ll
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll

@@ -29,7 +29,8 @@ func0000000000000004:                   // @func0000000000000004
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	tst	w2, #0xff
+	and	w8, w2, #0xff
+	cmp	w8, #92
 	cset	w8, ne
 	tst	w0, #0x1
 	csel	w8, w8, w1, ne

@@ -1,5 +1,5 @@
 func0000000000000038:                   # @func0000000000000038
 	shlb	$3, %dil
-	movabsq	$3471480559860788781, %rax      # imm = 0x302D2D2D2F2D2E2D
+	movabsq	$3458764514609081901, %rax      # imm = 0x300000002F002E2D
 	shrxq	%rdi, %rax, %rax
 	retq

@@ -1,10 +1,10 @@
 
-%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
-%union._zend_value.2791866 = type { i64 }
-%union.anon.0.2791867 = type { i32 }
-%union.anon.3.2791868 = type { i32 }
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
+%struct._zval_struct.2791824 = type { %union._zend_value.2791832, %union.anon.0.2791833, %union.anon.3.2791834 }
+%union._zend_value.2791832 = type { i64 }
+%union.anon.0.2791833 = type { i32 }
+%union.anon.3.2791834 = type { i32 }
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
 
 ; 5 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -53,8 +53,8 @@ define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct._zval_struct.2791858, ptr %5, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2791824, ptr %0, i64 %1
+  %6 = getelementptr nusw %struct._zval_struct.2791824, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 48
   ret ptr %7
 }
@@ -89,8 +89,8 @@ define ptr @func000000000000017a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876679, ptr %0, i64 %1
+  %6 = getelementptr nusw %struct.Mig_Obj_t_.2876679, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }

@@ -3,6 +3,11 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-8, %rsi
 	leaq	16(%rdi,%rsi), %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	addq	$39, %rsi
+	andq	$-16, %rsi
+	leaq	17(%rdi,%rsi), %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	addl	$64, %esi
 	andl	$-4, %esi
@@ -51,11 +56,6 @@ func0000000000000022:                   # @func0000000000000022
 	retq
 func0000000000000026:                   # @func0000000000000026
 	addq	$15, %rsi
-	andq	$-16, %rsi
-	leaq	17(%rdi,%rsi), %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	addq	$19, %rsi
 	andq	$-16, %rsi
 	leaq	17(%rdi,%rsi), %rax
 	retq

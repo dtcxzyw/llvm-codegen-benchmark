@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; grpc/optimized/executor.cc.ll
 ; grpc/optimized/memory_quota.cc.ll
 ; grpc/optimized/timer.cc.ll
 ; grpc/optimized/timer_generic.cc.ll
 ; luau/optimized/Differ.cpp.ll
-; luau/optimized/TableShape.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll

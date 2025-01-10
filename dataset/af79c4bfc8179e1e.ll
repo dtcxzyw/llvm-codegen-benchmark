@@ -12,19 +12,6 @@ entry:
 }
 
 ; 2 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; lodepng/optimized/lodepng.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000052(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = icmp eq i32 %0, 1
-  %4 = and i1 %3, %2
-  %5 = icmp uge i32 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
 ; linux/optimized/inet_connection_sock.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
@@ -120,6 +107,18 @@ entry:
   %3 = icmp sgt i32 %0, 3
   %4 = and i1 %2, %3
   %5 = icmp ne i32 %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000052(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = icmp eq i32 %0, 0
+  %4 = and i1 %2, %3
+  %5 = icmp uge i32 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
 }

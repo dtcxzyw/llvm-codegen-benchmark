@@ -177,7 +177,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; openjdk/optimized/jvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {

@@ -27,10 +27,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; 1 occurrences:
 ; openexr/optimized/internal_pxr24.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, float %1) #0 {
 entry:

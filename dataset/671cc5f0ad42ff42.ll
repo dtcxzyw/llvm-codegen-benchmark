@@ -1,5 +1,5 @@
 
-%struct.list_head.3549476 = type { ptr, ptr }
+%struct.list_head.3549442 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
@@ -38,7 +38,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = sub nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3549476, ptr %0, i64 %5
+  %6 = getelementptr %struct.list_head.3549442, ptr %0, i64 %5
   ret ptr %6
 }
 

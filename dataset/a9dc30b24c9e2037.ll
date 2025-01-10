@@ -1,5 +1,5 @@
 
-%struct.transaction.2705455 = type { i32, i16, i16, [8 x i8] }
+%struct.transaction.2705421 = type { i32, i16, i16, [8 x i8] }
 
 ; 17 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -39,7 +39,7 @@ entry:
   %4 = and i32 %3, 3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 7940
-  %7 = getelementptr [4 x %struct.transaction.2705455], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [4 x %struct.transaction.2705421], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

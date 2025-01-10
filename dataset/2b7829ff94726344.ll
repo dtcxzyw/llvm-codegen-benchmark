@@ -1,12 +1,12 @@
 
-%"class.std::unordered_set.3105044" = type { %"class.std::_Hashtable.3105045" }
-%"class.std::_Hashtable.3105045" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3105046", i64, %"struct.std::__detail::_Prime_rehash_policy.3105047", ptr }
-%"struct.std::__detail::_Hash_node_base.3105046" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.3105047" = type { float, i64 }
-%"struct.(anonymous namespace)::ChainUsers.3190220" = type { %"class.llvm::SmallPtrSet.544.3190015", %"class.llvm::SmallPtrSet.544.3190015" }
-%"class.llvm::SmallPtrSet.544.3190015" = type { %"class.llvm::SmallPtrSetImpl.base.71.3190016", [4 x ptr] }
-%"class.llvm::SmallPtrSetImpl.base.71.3190016" = type { %"class.llvm::SmallPtrSetImplBase.base.3189953" }
-%"class.llvm::SmallPtrSetImplBase.base.3189953" = type <{ ptr, ptr, i32, i32, i32 }>
+%"class.std::unordered_set.3105010" = type { %"class.std::_Hashtable.3105011" }
+%"class.std::_Hashtable.3105011" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3105012", i64, %"struct.std::__detail::_Prime_rehash_policy.3105013", ptr }
+%"struct.std::__detail::_Hash_node_base.3105012" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.3105013" = type { float, i64 }
+%"struct.(anonymous namespace)::ChainUsers.3190186" = type { %"class.llvm::SmallPtrSet.544.3189981", %"class.llvm::SmallPtrSet.544.3189981" }
+%"class.llvm::SmallPtrSet.544.3189981" = type { %"class.llvm::SmallPtrSetImpl.base.71.3189982", [4 x ptr] }
+%"class.llvm::SmallPtrSetImpl.base.71.3189982" = type { %"class.llvm::SmallPtrSetImplBase.base.3189919" }
+%"class.llvm::SmallPtrSetImplBase.base.3189919" = type <{ ptr, ptr, i32, i32, i32 }>
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
@@ -88,7 +88,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1023
   %4 = and i64 %3, 1023
-  %5 = getelementptr nusw nuw %"class.std::unordered_set.3105044", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::unordered_set.3105010", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -115,7 +115,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 15
-  %5 = getelementptr nusw nuw %"struct.(anonymous namespace)::ChainUsers.3190220", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.(anonymous namespace)::ChainUsers.3190186", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

@@ -4,5 +4,5 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnsl	%edi, %eax
 	shrl	$16, %eax
 	andl	$1, %eax
-	orl	$-6, %eax
+	orl	$24, %eax
 	retq

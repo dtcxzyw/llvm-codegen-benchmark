@@ -1,6 +1,6 @@
 
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
 
 ; 146 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -200,7 +200,7 @@ entry:
 define i64 @func000000000000000e(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -32, i64 0
-  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct._zend_op.2792291, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

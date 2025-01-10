@@ -1,10 +1,10 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
-%struct.ossl_qrl_enc_level_st.2634709 = type { %struct.quic_hdr_protector_st.2634710, ptr, [2 x ptr], ptr, ptr, i64, i64, i32, i32, i8, i8, [2 x [16 x i8]], [64 x i8] }
-%struct.quic_hdr_protector_st.2634710 = type { ptr, ptr, ptr, ptr, i32 }
-%"struct.gjkepa2_impl::GJK::sSimplex.2818447" = type { [4 x ptr], [4 x float], i32 }
-%struct.tinfl_huff_table.2828286 = type { [288 x i8], [1024 x i16], [576 x i16] }
-%struct.anon.134.3541755 = type { i32, [10 x i8], [8 x i16], [8 x i16], i32, i32, i32 }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
+%struct.ossl_qrl_enc_level_st.2634676 = type { %struct.quic_hdr_protector_st.2634677, ptr, [2 x ptr], ptr, ptr, i64, i64, i32, i32, i8, i8, [2 x [16 x i8]], [64 x i8] }
+%struct.quic_hdr_protector_st.2634677 = type { ptr, ptr, ptr, ptr, i32 }
+%"struct.gjkepa2_impl::GJK::sSimplex.2818413" = type { [4 x ptr], [4 x float], i32 }
+%struct.tinfl_huff_table.2828252 = type { [288 x i8], [1024 x i16], [576 x i16] }
+%struct.anon.134.3541721 = type { i32, [10 x i8], [8 x i16], [8 x i16], i32, i32, i32 }
 
 ; 6 occurrences:
 ; postgres/optimized/dsa.ll
@@ -17,7 +17,7 @@
 define ptr @func000000000000004c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = getelementptr [8 x i64], ptr %5, i64 0, i64 %0
   ret ptr %6
@@ -38,7 +38,7 @@ entry:
 define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [4 x %struct.ossl_qrl_enc_level_st.2634709], ptr %1, i64 0, i64 %3, i32 2, i64 %0
+  %4 = getelementptr nuw [4 x %struct.ossl_qrl_enc_level_st.2634676], ptr %1, i64 0, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
@@ -55,7 +55,7 @@ entry:
 define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw [2 x %"struct.gjkepa2_impl::GJK::sSimplex.2818447"], ptr %1, i64 0, i64 %3, i32 1, i64 %0
+  %4 = getelementptr nuw [2 x %"struct.gjkepa2_impl::GJK::sSimplex.2818413"], ptr %1, i64 0, i64 %3, i32 1, i64 %0
   ret ptr %4
 }
 
@@ -69,7 +69,7 @@ entry:
 define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x %struct.tinfl_huff_table.2828286], ptr %1, i64 0, i64 %3, i32 2, i64 %0
+  %4 = getelementptr [3 x %struct.tinfl_huff_table.2828252], ptr %1, i64 0, i64 %3, i32 2, i64 %0
   ret ptr %4
 }
 
@@ -91,7 +91,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [6 x %struct.anon.134.3541755], ptr %1, i64 0, i64 %3, i32 1, i64 %0
+  %4 = getelementptr [6 x %struct.anon.134.3541721], ptr %1, i64 0, i64 %3, i32 1, i64 %0
   ret ptr %4
 }
 

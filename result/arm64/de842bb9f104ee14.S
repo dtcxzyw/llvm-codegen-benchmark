@@ -136,12 +136,12 @@ func000000000000046c:                   // @func000000000000046c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000861:                   // @func0000000000000861
+func000000000000086c:                   // @func000000000000086c
 // %bb.0:                               // %entry
 	tst	x1, #0xffffffffffffc000
 	cinc	x8, x0, ne
 	cmp	x8, #3
-	cset	w0, eq
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000c44:                   // @func0000000000000c44

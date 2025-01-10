@@ -996,7 +996,7 @@ entry:
   ret i1 %3
 }
 
-; 276 occurrences:
+; 277 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -1074,6 +1074,7 @@ entry:
 ; darktable/optimized/modulegroups.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; freetype/optimized/psaux.c.ll
+; graphviz/optimized/Multilevel.c.ll
 ; graphviz/optimized/lab.c.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll

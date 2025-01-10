@@ -1,5 +1,5 @@
 
-%struct.ring_info.3551191 = type { ptr, i32 }
+%struct.ring_info.3551157 = type { ptr, i32 }
 
 ; 11 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -46,7 +46,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.ring_info.3551191, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.ring_info.3551157, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

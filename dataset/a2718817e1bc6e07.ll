@@ -1,5 +1,5 @@
 
-%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108105" = type { ptr, ptr }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -38,7 +38,7 @@ define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = mul i64 %1, %3
-  %5 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %0, i64 %4
+  %5 = getelementptr %"class.Catch::TestCaseHandle.3108105", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

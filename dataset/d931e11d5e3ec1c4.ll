@@ -291,11 +291,10 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll

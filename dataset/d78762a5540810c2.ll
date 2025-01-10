@@ -1,5 +1,5 @@
 
-%union.TValue.3680757 = type { i64 }
+%union.TValue.3680707 = type { i64 }
 
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -98,7 +98,7 @@ define ptr @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw nuw %union.TValue.3680757, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %union.TValue.3680707, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }

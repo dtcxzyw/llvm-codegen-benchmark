@@ -96,3 +96,10 @@ func000000000000000d:                   // @func000000000000000d
 	lsl	w0, w8, w9
 	ret
                                         // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	mov	w8, #-1                         // =0xffffffff
+	sub	w9, w0, #10
+	lsl	w0, w8, w9
+	ret
+                                        // -- End function

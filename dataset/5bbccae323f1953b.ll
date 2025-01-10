@@ -10,10 +10,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; boost/optimized/src.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
-; lief/optimized/psa_crypto.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i8 %1, i8 %2) #0 {
 entry:

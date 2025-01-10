@@ -23,13 +23,23 @@ func0000000000000002:                   # @func0000000000000002
 	cmpq	%rdi, %rax
 	cmovaeq	%rdi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	leaq	(%rsi,%rdx), %rax
 	cmpq	%rdi, %rax
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func000000000000001b:                   # @func000000000000001b
 	leaq	(%rsi,%rdx), %rax
-	cmpq	%rax, %rdi
-	cmovbq	%rdi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	leaq	(%rsi,%rdx), %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
 	retq

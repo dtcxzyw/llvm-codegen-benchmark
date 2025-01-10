@@ -576,13 +576,14 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/key_value_metadata.cc.ll
 ; casadi/optimized/integrator.cpp.ll
 ; eastl/optimized/BenchmarkHeap.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/exclusionblocks.cpp.ll

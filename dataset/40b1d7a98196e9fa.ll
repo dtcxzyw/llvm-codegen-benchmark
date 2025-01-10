@@ -1,6 +1,6 @@
 
-%"struct.irr::CIrrDeviceSDL::SKeyMap.2702549" = type { i32, i32 }
-%struct.reg_default.3531699 = type { i32, i32 }
+%"struct.irr::CIrrDeviceSDL::SKeyMap.2702515" = type { i32, i32 }
+%struct.reg_default.3531665 = type { i32, i32 }
 
 ; 7 occurrences:
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %"struct.irr::CIrrDeviceSDL::SKeyMap.2702549", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %"struct.irr::CIrrDeviceSDL::SKeyMap.2702515", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr %struct.reg_default.3531699, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.reg_default.3531665, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

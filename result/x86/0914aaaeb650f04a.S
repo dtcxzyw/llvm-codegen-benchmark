@@ -49,6 +49,11 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vucomisd	%xmm1, %xmm0
+	sete	%al
+	andb	%dil, %al
+	retq
 func0000000000000034:                   # @func0000000000000034
 	vucomisd	%xmm0, %xmm1
 	setbe	%al

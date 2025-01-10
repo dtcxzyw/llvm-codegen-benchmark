@@ -1,10 +1,10 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%"class.re2::Prog::Inst.2602248" = type { i32, %union.anon.20.2602249 }
-%union.anon.20.2602249 = type { i32 }
-%"class.asmjit::_abi_1_10::RASharedAssignment.2603646" = type { i32, %"class.asmjit::_abi_1_10::ZoneBitVector.2603621", ptr }
-%"class.asmjit::_abi_1_10::ZoneBitVector.2603621" = type { ptr, i32, i32 }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%"class.re2::Prog::Inst.2602215" = type { i32, %union.anon.20.2602216 }
+%union.anon.20.2602216 = type { i32 }
+%"class.asmjit::_abi_1_10::RASharedAssignment.2603613" = type { i32, %"class.asmjit::_abi_1_10::ZoneBitVector.2603588", ptr }
+%"class.asmjit::_abi_1_10::ZoneBitVector.2603588" = type { ptr, i32, i32 }
 
 ; 69 occurrences:
 ; abc/optimized/acbPush.c.ll
@@ -80,7 +80,7 @@
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -219,7 +219,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.redblack_node.2601295, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.redblack_node.2601262, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -952,7 +952,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.re2::Prog::Inst.2602248", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %"class.re2::Prog::Inst.2602215", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -2171,7 +2171,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RASharedAssignment.2603646", ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RASharedAssignment.2603613", ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

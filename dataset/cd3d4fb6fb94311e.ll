@@ -1,5 +1,5 @@
 
-; 6499 occurrences:
+; 6495 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -648,7 +648,6 @@
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/crtmgr.c.ll
 ; clamav/optimized/disasm.c.ll
-; clamav/optimized/dlp.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/hash.c.ll
@@ -755,7 +754,6 @@
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -790,7 +788,6 @@
 ; cpython/optimized/cfield.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/dtoa.ll
-; cpython/optimized/errors.ll
 ; cpython/optimized/fileutils.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/frameobject.ll
@@ -923,6 +920,7 @@
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -3989,6 +3987,7 @@
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/genericgf.cpp.ll
@@ -4661,7 +4660,6 @@
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/array.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/avifinfo.ll
 ; php/optimized/basic_functions.ll
 ; php/optimized/block_pass.ll
@@ -5162,7 +5160,6 @@
 ; redis/optimized/prof_data.sym.ll
 ; redis/optimized/quicklist.ll
 ; redis/optimized/rax.ll
-; redis/optimized/rdb.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/script_lua.ll
 ; redis/optimized/sentinel.ll
@@ -6460,7 +6457,6 @@
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_fast.c.ll

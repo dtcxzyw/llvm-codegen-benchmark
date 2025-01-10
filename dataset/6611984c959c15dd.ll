@@ -1,5 +1,5 @@
 
-%struct.code.3539872 = type { i8, i8, i16 }
+%struct.code.3539838 = type { i8, i8, i16 }
 
 ; 6 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -30,7 +30,7 @@ entry:
   %4 = xor i32 %3, -1
   %5 = zext nneg i32 %4 to i64
   %6 = and i64 %1, %5
-  %7 = getelementptr %struct.code.3539872, ptr %0, i64 %6
+  %7 = getelementptr %struct.code.3539838, ptr %0, i64 %6
   ret ptr %7
 }
 

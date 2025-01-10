@@ -156,7 +156,7 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/rpo.c.ll
 ; arrow/optimized/compare.cc.ll
@@ -178,6 +178,7 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; zlib/optimized/deflate.c.ll

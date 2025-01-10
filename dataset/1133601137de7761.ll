@@ -1,11 +1,11 @@
 
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
-%struct.epoll_event.2822079 = type <{ i32, %union.epoll_data.2822080 }>
-%union.epoll_data.2822080 = type { ptr }
-%struct.dsa_area_pool.3653142 = type { %struct.LWLock.3653143, [4 x i64] }
-%struct.LWLock.3653143 = type { i16, %struct.pg_atomic_uint32.3653144, %struct.proclist_head.3653145 }
-%struct.pg_atomic_uint32.3653144 = type { i32 }
-%struct.proclist_head.3653145 = type { i32, i32 }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
+%struct.epoll_event.2822045 = type <{ i32, %union.epoll_data.2822046 }>
+%union.epoll_data.2822046 = type { ptr }
+%struct.dsa_area_pool.3653108 = type { %struct.LWLock.3653109, [4 x i64] }
+%struct.LWLock.3653109 = type { i16, %struct.pg_atomic_uint32.3653110, %struct.proclist_head.3653111 }
+%struct.pg_atomic_uint32.3653110 = type { i32 }
+%struct.proclist_head.3653111 = type { i32, i32 }
 
 ; 4 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
@@ -38,7 +38,7 @@ entry:
 define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw [256 x %struct.epoll_event.2822079], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [256 x %struct.epoll_event.2822045], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -64,7 +64,7 @@ entry:
 define i64 @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr [38 x %struct.dsa_area_pool.3653142], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [38 x %struct.dsa_area_pool.3653108], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

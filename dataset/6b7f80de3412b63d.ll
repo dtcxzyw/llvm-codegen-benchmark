@@ -41,7 +41,7 @@ entry:
 define i8 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
-  %2 = select i1 %1, i8 -1, i8 17
+  %2 = select i1 %1, i8 63, i8 17
   ret i8 %2
 }
 

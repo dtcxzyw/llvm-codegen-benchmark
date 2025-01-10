@@ -1,12 +1,12 @@
 
-%struct.page.3554044 = type { i64, %union.anon.2.3554045, %union.anon.10.3554046, %struct.atomic_t.3554036, [8 x i8] }
-%union.anon.2.3554045 = type { %struct.anon.3.3554047 }
-%struct.anon.3.3554047 = type { %union.anon.4.3554048, ptr, %union.anon.6.3554049, i64 }
-%union.anon.4.3554048 = type { %struct.list_head.3554050 }
-%struct.list_head.3554050 = type { ptr, ptr }
-%union.anon.6.3554049 = type { i64 }
-%union.anon.10.3554046 = type { %struct.atomic_t.3554036 }
-%struct.atomic_t.3554036 = type { i32 }
+%struct.page.3554010 = type { i64, %union.anon.2.3554011, %union.anon.10.3554012, %struct.atomic_t.3554002, [8 x i8] }
+%union.anon.2.3554011 = type { %struct.anon.3.3554013 }
+%struct.anon.3.3554013 = type { %union.anon.4.3554014, ptr, %union.anon.6.3554015, i64 }
+%union.anon.4.3554014 = type { %struct.list_head.3554016 }
+%struct.list_head.3554016 = type { ptr, ptr }
+%union.anon.6.3554015 = type { i64 }
+%union.anon.10.3554012 = type { %struct.atomic_t.3554002 }
+%struct.atomic_t.3554002 = type { i32 }
 
 ; 3 occurrences:
 ; libjpeg-turbo/optimized/jdcolor.c.ll
@@ -16,9 +16,9 @@
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = getelementptr %struct.page.3554044, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3554010, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.page.3554044, ptr %4, i64 %5
+  %6 = getelementptr %struct.page.3554010, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,9 +1,9 @@
 
-%"class.folly::UnboundedQueue<folly::Function<void ()>, false, false, true>::Entry.2683337" = type { %"class.folly::SaturatingSemaphore.2683338", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683339" }
-%"class.folly::SaturatingSemaphore.2683338" = type { %"struct.std::atomic.20.2683271" }
-%"struct.std::atomic.20.2683271" = type { %"struct.std::__atomic_base.21.2683272" }
-%"struct.std::__atomic_base.21.2683272" = type { i32 }
-%"union.std::aligned_storage<64, 16>::type.2683339" = type { [64 x i8] }
+%"class.folly::UnboundedQueue<folly::Function<void ()>, false, false, true>::Entry.2683304" = type { %"class.folly::SaturatingSemaphore.2683305", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683306" }
+%"class.folly::SaturatingSemaphore.2683305" = type { %"struct.std::atomic.20.2683238" }
+%"struct.std::atomic.20.2683238" = type { %"struct.std::__atomic_base.21.2683239" }
+%"struct.std::__atomic_base.21.2683239" = type { i32 }
+%"union.std::aligned_storage<64, 16>::type.2683306" = type { [64 x i8] }
 
 ; 13 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -24,7 +24,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 27
   %3 = and i64 %2, 255
-  %4 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<void ()>, false, false, true>::Entry.2683337"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<void ()>, false, false, true>::Entry.2683304"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-; 827 occurrences:
+; 828 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -82,6 +82,7 @@
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/mszipd.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/easy.c.ll
@@ -836,7 +837,7 @@ entry:
   ret i32 %4
 }
 
-; 920 occurrences:
+; 918 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/bzlib.c.ll
@@ -1231,7 +1232,6 @@ entry:
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -1249,7 +1249,6 @@ entry:
 ; node/optimized/libnode.string_bytes.ll
 ; node/optimized/simdutf.ll
 ; nom-rs/optimized/2mhjsvr4l103ztah.ll
-; nuklear/optimized/unity.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
@@ -2081,7 +2080,7 @@ entry:
   ret i32 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/mpdecimal.ll
@@ -2103,7 +2102,6 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll

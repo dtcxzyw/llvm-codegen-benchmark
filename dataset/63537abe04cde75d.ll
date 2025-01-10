@@ -1,6 +1,6 @@
 
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
 
 ; 3 occurrences:
 ; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
@@ -27,7 +27,7 @@ entry:
   %3 = lshr i64 %2, 16
   %4 = and i64 %3, 65535
   %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr nusw nuw [0 x %struct.jv.2821743], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [0 x %struct.jv.2821709], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

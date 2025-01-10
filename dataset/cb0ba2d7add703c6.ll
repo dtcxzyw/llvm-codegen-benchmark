@@ -1,6 +1,6 @@
 
-%class.QModelIndex.3441682 = type { i32, i32, i64, ptr }
-%"struct.cv::ximgproc::Box.3735437" = type { i32, i32, i32, i32, float }
+%class.QModelIndex.3441648 = type { i32, i32, i64, ptr }
+%"struct.cv::ximgproc::Box.3735387" = type { i32, i32, i32, i32, float }
 
 ; 76 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -107,7 +107,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
   %4 = sdiv exact i64 %3, -24
-  %5 = getelementptr %class.QModelIndex.3441682, ptr %0, i64 %4
+  %5 = getelementptr %class.QModelIndex.3441648, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -119,7 +119,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %2, %1
   %4 = sdiv i64 %3, -40
-  %5 = getelementptr nusw %"struct.cv::ximgproc::Box.3735437", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.cv::ximgproc::Box.3735387", ptr %0, i64 %4
   ret ptr %5
 }
 

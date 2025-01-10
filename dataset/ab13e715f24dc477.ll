@@ -1,8 +1,8 @@
 
-%"class.absl::debian2::string_view.2602139" = type { ptr, i64 }
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
-%"struct.std::pair.1196.3326030" = type { %"class.llvm::SDValue.3325927", ptr }
-%"class.llvm::SDValue.3325927" = type <{ ptr, i32, [4 x i8] }>
+%"class.absl::debian2::string_view.2602106" = type { ptr, i64 }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
+%"struct.std::pair.1196.3325996" = type { %"class.llvm::SDValue.3325893", ptr }
+%"class.llvm::SDValue.3325893" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; re2/optimized/re2.cc.ll
@@ -10,7 +10,7 @@
 define ptr @func00000000000000bf(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"class.absl::debian2::string_view.2602139", ptr %0, i64 %2
+  %3 = getelementptr %"class.absl::debian2::string_view.2602106", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -760
   ret ptr %4
 }
@@ -36,7 +36,7 @@ entry:
 define ptr @func00000000000000b3(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %2
+  %3 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -568
   ret ptr %4
 }
@@ -47,7 +47,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"struct.std::pair.1196.3326030", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::pair.1196.3325996", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -3136
   ret ptr %4
 }

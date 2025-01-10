@@ -12,8 +12,9 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/slub.ll
+; luau/optimized/isocline.c.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {

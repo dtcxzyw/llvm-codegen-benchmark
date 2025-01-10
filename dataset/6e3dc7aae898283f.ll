@@ -273,7 +273,7 @@ entry:
   ret i32 %2
 }
 
-; 3994 occurrences:
+; 4001 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCut.c.ll
@@ -323,6 +323,7 @@ entry:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/dauEnum.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/decompress.c.ll
@@ -423,6 +424,7 @@ entry:
 ; assimp/optimized/OgreMaterial.cpp.ll
 ; assimp/optimized/OgreStructs.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
+; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/RawLoader.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
@@ -595,6 +597,7 @@ entry:
 ; cmake/optimized/cmLoadCommandCommand.cxx.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; cmake/optimized/cmProcessOutput.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
 ; cmake/optimized/cmakemain.cxx.ll
 ; cmake/optimized/connect.c.ll
@@ -821,7 +824,6 @@ entry:
 ; darktable/optimized/snapshots.c.ll
 ; darktable/optimized/tagging.c.ll
 ; darktable/optimized/tiff.c.ll
-; darktable/optimized/timeline.c.ll
 ; darktable/optimized/viewswitcher.c.ll
 ; darktable/optimized/xcf.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -1035,6 +1037,7 @@ entry:
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; gromacs/optimized/deflate.c.ll
+; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/espio.cpp.ll
 ; gromacs/optimized/firstorderpressurecoupling.cpp.ll
@@ -1051,6 +1054,7 @@ entry:
 ; gromacs/optimized/mshift.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
+; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/p2p_wait.cpp.ll
 ; gromacs/optimized/pairlistparams.cpp.ll
 ; gromacs/optimized/params.cpp.ll
@@ -2755,7 +2759,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; openjdk/optimized/img_colors.ll
 ; openjdk/optimized/interpreterRT_x86_64.ll
-; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jcapistd.ll
 ; openjdk/optimized/jdapistd.ll
 ; openjdk/optimized/jdmaster.ll
@@ -2991,9 +2994,11 @@ entry:
 ; openssl/optimized/libdefault-lib-sm2_sig.ll
 ; openssl/optimized/libdefault-lib-sskdf.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_demux.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_tserver.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
@@ -3007,9 +3012,11 @@ entry:
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-lib-tls_srp.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_demux.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_tserver.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
@@ -4773,7 +4780,6 @@ entry:
 ; git/optimized/sha1.ll
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/inflate.c.ll
-; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; gromacs/optimized/xtc3.c.ll
@@ -4836,6 +4842,7 @@ entry:
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/page_alloc.ll
+; linux/optimized/printk.ll
 ; linux/optimized/sch_generic.ll
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -5731,7 +5738,7 @@ entry:
   ret i32 %2
 }
 
-; 367 occurrences:
+; 366 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/deflate.c.ll
@@ -6092,7 +6099,6 @@ entry:
 ; wireshark/optimized/packet-ppi-gps.c.ll
 ; wireshark/optimized/packet-ppi-sensor.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
-; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-usb.c.ll

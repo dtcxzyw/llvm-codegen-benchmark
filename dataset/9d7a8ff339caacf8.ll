@@ -2638,7 +2638,7 @@ entry:
   ret i1 %1
 }
 
-; 1032 occurrences:
+; 1033 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -3442,6 +3442,7 @@ entry:
 ; rocksdb/optimized/wal_manager.cc.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/enum.ll
+; ruby/optimized/init.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/vm_dump.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
@@ -3678,7 +3679,7 @@ entry:
   ret i1 %1
 }
 
-; 1684 occurrences:
+; 1685 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -4401,6 +4402,7 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Multilib.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/OptParserEmitter.cpp.ll
@@ -5370,7 +5372,7 @@ entry:
   ret i1 %1
 }
 
-; 3272 occurrences:
+; 3274 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ioJson.c.ll
@@ -7653,6 +7655,7 @@ entry:
 ; openjdk/optimized/JvmLauncher.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/zMark.ll
+; openjdk/optimized/zip_util.ll
 ; openspiel/optimized/afce.cc.ll
 ; openspiel/optimized/amazons.cc.ll
 ; openspiel/optimized/backgammon.cc.ll
@@ -8223,6 +8226,7 @@ entry:
 ; rocksdb/optimized/write_prepared_txn_db.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; rocksdb/optimized/write_unprepared_txn_db.cc.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
 ; ruby/optimized/vm_dump.ll
@@ -8650,7 +8654,7 @@ entry:
   ret i1 %1
 }
 
-; 1719 occurrences:
+; 1720 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -8978,6 +8982,7 @@ entry:
 ; git/optimized/dir.ll
 ; git/optimized/levenshtein.ll
 ; git/optimized/range-diff.ll
+; git/optimized/sequencer.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll

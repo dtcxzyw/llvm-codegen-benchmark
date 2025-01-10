@@ -79,11 +79,12 @@ entry:
   ret ptr %4
 }
 
-; 1415 occurrences:
+; 1416 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cgtAig.c.ll
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/cuddBridge.c.ll
@@ -2290,7 +2291,7 @@ entry:
   ret ptr %4
 }
 
-; 187 occurrences:
+; 186 occurrences:
 ; arrow/optimized/sparse_tensor.cc.ll
 ; arrow/optimized/tensor.cc.ll
 ; boost/optimized/copy_segment_point.ll
@@ -2477,7 +2478,6 @@ entry:
 ; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
 ; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
 ; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, ptr %1, i64 %2) #0 {
 entry:

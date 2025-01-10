@@ -300,8 +300,9 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/XFileParser.cpp.ll
+; eastl/optimized/TestString.cpp.ll
 ; quantlib/optimized/curvestate.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {

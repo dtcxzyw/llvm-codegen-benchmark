@@ -1,9 +1,9 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.85.2860615" = type { %"struct.std::pair.43.2860616" }
-%"struct.std::pair.43.2860616" = type { %"class.std::__cxx11::basic_string.2860583", %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.85.2860581" = type { %"struct.std::pair.43.2860582" }
+%"struct.std::pair.43.2860582" = type { %"class.std::__cxx11::basic_string.2860549", %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
 
 ; 7 occurrences:
 ; gromacs/optimized/binsearch.cpp.ll
@@ -104,7 +104,7 @@ entry:
   %4 = ashr i32 %3, 1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.85.2860615", ptr %6, i64 %5
+  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.85.2860581", ptr %6, i64 %5
   ret ptr %7
 }
 

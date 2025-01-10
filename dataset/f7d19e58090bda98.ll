@@ -269,7 +269,7 @@ entry:
   ret i64 %3
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/trie.cc.ll
@@ -298,7 +298,6 @@ entry:
 ; libzmq/optimized/mechanism.cpp.ll
 ; libzmq/optimized/options.cpp.ll
 ; lief/optimized/cipher.c.ll
-; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_aead.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/namei.ll

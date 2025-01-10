@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2877402 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877368 = type <{ i64, i32 }>
 
 ; 23 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -69,8 +69,9 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaFanout.c.ll
+; boost/optimized/static_string.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
@@ -83,7 +84,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2877402, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2877368, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = icmp eq i64 %0, %4
   ret i1 %5

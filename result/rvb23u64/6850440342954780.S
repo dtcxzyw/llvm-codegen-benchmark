@@ -40,12 +40,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	min	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func00000000000000c6:                   # @func00000000000000c6
-	sext.w	a0, a0
-	sext.w	a1, a1
-	min	a0, a1, a0
-	slti	a0, a0, 6
-	ret
 func00000000000000e6:                   # @func00000000000000e6
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -65,6 +59,12 @@ func0000000000000008:                   # @func0000000000000008
 	min	a0, a0, a1
 	sltiu	a0, a0, 66
 	xori	a0, a0, 1
+	ret
+func00000000000000c6:                   # @func00000000000000c6
+	sext.w	a0, a0
+	sext.w	a1, a1
+	min	a0, a1, a0
+	slti	a0, a0, 0
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a0, a0

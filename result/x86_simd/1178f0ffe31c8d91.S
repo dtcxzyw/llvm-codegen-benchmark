@@ -67,7 +67,7 @@ func0000000000000028:                   # @func0000000000000028
 	retq
 .LCPI12_0:
 	.quad	-8                              # 0xfffffffffffffff8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000015:                   # @func0000000000000015
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI12_0(%rip){1to4}, %ymm0, %ymm0
 	retq

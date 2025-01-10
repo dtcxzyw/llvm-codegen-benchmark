@@ -18,10 +18,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmovll	%esi, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	movl	$7, %eax
-	subl	%edx, %eax
-	cmpl	%eax, %esi
-	cmovll	%esi, %eax
-	addl	%edi, %eax
-	retq

@@ -1,24 +1,24 @@
 
-%struct.hb_bit_page_t.2730117 = type { i32, %struct.hb_vector_size_t.2730118 }
-%struct.hb_vector_size_t.2730118 = type { [8 x i64] }
-%class.LRG.2734622 = type { double, double, double, ptr, i32, i32, i32, i32, i32, i32, %class.RegMask.2734623, i32, i16, i32, i16, i16 }
-%class.RegMask.2734623 = type { %union.anon.2734624, i32, i32 }
-%union.anon.2734624 = type { [11 x i64] }
-%"struct.OT::OffsetTo.833.2737029" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.nbap_dch_channel_info_t.3449097 = type { i32, i32, i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
-%struct.hid_report_enum.3538081 = type { i32, %struct.list_head.3538075, [256 x ptr] }
-%struct.list_head.3538075 = type { ptr, ptr }
-%struct.kyber_ctx_queue.3557339 = type { %struct.spinlock.3557340, [4 x %struct.list_head.3557319], [56 x i8] }
-%struct.spinlock.3557340 = type { %union.anon.7.3557341 }
-%union.anon.7.3557341 = type { %struct.raw_spinlock.3557342 }
-%struct.raw_spinlock.3557342 = type { %struct.qspinlock.3557343 }
-%struct.qspinlock.3557343 = type { %union.anon.4.3557344 }
-%union.anon.4.3557344 = type { %struct.atomic_t.3557313 }
-%struct.atomic_t.3557313 = type { i32 }
-%struct.list_head.3557319 = type { ptr, ptr }
+%struct.hb_bit_page_t.2730083 = type { i32, %struct.hb_vector_size_t.2730084 }
+%struct.hb_vector_size_t.2730084 = type { [8 x i64] }
+%class.LRG.2734588 = type { double, double, double, ptr, i32, i32, i32, i32, i32, i32, %class.RegMask.2734589, i32, i16, i32, i16, i16 }
+%class.RegMask.2734589 = type { %union.anon.2734590, i32, i32 }
+%union.anon.2734590 = type { [11 x i64] }
+%"struct.OT::OffsetTo.833.2736995" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.nbap_dch_channel_info_t.3449063 = type { i32, i32, i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
+%struct.hid_report_enum.3538047 = type { i32, %struct.list_head.3538041, [256 x ptr] }
+%struct.list_head.3538041 = type { ptr, ptr }
+%struct.kyber_ctx_queue.3557305 = type { %struct.spinlock.3557306, [4 x %struct.list_head.3557285], [56 x i8] }
+%struct.spinlock.3557306 = type { %union.anon.7.3557307 }
+%union.anon.7.3557307 = type { %struct.raw_spinlock.3557308 }
+%struct.raw_spinlock.3557308 = type { %struct.qspinlock.3557309 }
+%struct.qspinlock.3557309 = type { %union.anon.4.3557310 }
+%union.anon.4.3557310 = type { %struct.atomic_t.3557279 }
+%struct.atomic_t.3557279 = type { i32 }
+%struct.list_head.3557285 = type { ptr, ptr }
 
 ; 22 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -47,7 +47,7 @@
 define ptr @func000000000000007f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2730117, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2730083, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr nusw nuw [8 x i64], ptr %5, i64 0, i64 %6
@@ -84,7 +84,7 @@ entry:
 define ptr @func000000000000006f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %class.LRG.2734622, ptr %1, i64 %3, i32 10
+  %4 = getelementptr nuw %class.LRG.2734588, ptr %1, i64 %3, i32 10
   %5 = zext i32 %0 to i64
   %6 = getelementptr nusw nuw [11 x i64], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -107,7 +107,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.833.2737029"], ptr %5, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.833.2736995"], ptr %5, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -123,7 +123,7 @@ define ptr @func000000000000001c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %struct.nbap_dch_channel_info_t.3449097, ptr %1, i64 %3, i32 4, i64 %4
+  %5 = getelementptr %struct.nbap_dch_channel_info_t.3449063, ptr %1, i64 %3, i32 4, i64 %4
   ret ptr %5
 }
 
@@ -133,7 +133,7 @@ entry:
 define ptr @func0000000000000090(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.hid_report_enum.3538081, ptr %1, i64 %3
+  %4 = getelementptr %struct.hid_report_enum.3538047, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -2048
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr [256 x ptr], ptr %5, i64 0, i64 %6
@@ -146,7 +146,7 @@ entry:
 define ptr @func0000000000000080(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.hid_report_enum.3538081, ptr %1, i64 %3
+  %4 = getelementptr %struct.hid_report_enum.3538047, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -2048
   %6 = zext i32 %0 to i64
   %7 = getelementptr [256 x ptr], ptr %5, i64 0, i64 %6
@@ -160,7 +160,7 @@ define ptr @func000000000000000c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %0 to i64
-  %5 = getelementptr %struct.kyber_ctx_queue.3557339, ptr %1, i64 %3, i32 1, i64 %4
+  %5 = getelementptr %struct.kyber_ctx_queue.3557305, ptr %1, i64 %3, i32 1, i64 %4
   ret ptr %5
 }
 

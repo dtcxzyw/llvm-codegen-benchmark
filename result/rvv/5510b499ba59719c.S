@@ -41,12 +41,6 @@ func0000000000000141:                   # @func0000000000000141
 	vmseq.vi	v10, v8, 1
 	vmand.mm	v0, v10, v12
 	ret
-func000000000000054c:                   # @func000000000000054c
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v14, v12, v10
-	vmsne.vi	v10, v8, 1
-	vmand.mm	v0, v10, v14
-	ret
 func0000000000000481:                   # @func0000000000000481
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
@@ -130,6 +124,12 @@ func0000000000000581:                   # @func0000000000000581
 	vmseq.vi	v12, v10, 3
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
+	ret
+func000000000000054c:                   # @func000000000000054c
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vv	v14, v12, v10
+	vmsne.vi	v10, v8, 0
+	vmand.mm	v0, v10, v14
 	ret
 func000000000000054a:                   # @func000000000000054a
 	vsetivli	zero, 8, e32, m2, ta, ma

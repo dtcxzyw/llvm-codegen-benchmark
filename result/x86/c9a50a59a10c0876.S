@@ -153,3 +153,8 @@ func000000000000008c:                   # @func000000000000008c
 	setl	%al
 	orb	%dil, %al
 	retq
+func000000000000004c:                   # @func000000000000004c
+	cmpl	%edx, %esi
+	setl	%al
+	orb	%dil, %al
+	retq

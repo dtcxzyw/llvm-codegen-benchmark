@@ -1,8 +1,8 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
-%struct._ir_use_list.2791082 = type { i32, i32 }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
+%struct._ir_use_list.2791048 = type { i32, i32 }
 
 ; 235 occurrences:
 ; abc/optimized/FxchDiv.c.ll
@@ -244,7 +244,7 @@
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -1531,7 +1531,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -1548,7 +1548,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw %struct._ir_use_list.2791082, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %struct._ir_use_list.2791048, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

@@ -28,9 +28,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/stream_encoder.c.ll
-; git/optimized/line-log.ll
 ; linux/optimized/hda_codec.ll
 ; z3/optimized/dl_mk_synchronize.cpp.ll
 ; Function Attrs: nounwind

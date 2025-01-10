@@ -1,8 +1,8 @@
 
-%"struct.ue2::(anonymous namespace)::SAccelScheme.3857662" = type <{ %"class.ue2::CharReach.3857649", i32, [4 x i8] }>
-%"class.ue2::CharReach.3857649" = type { %"class.ue2::bitfield.3857660" }
-%"class.ue2::bitfield.3857660" = type { %"struct.std::array.3857661" }
-%"struct.std::array.3857661" = type { [4 x i64] }
+%"struct.ue2::(anonymous namespace)::SAccelScheme.3857612" = type <{ %"class.ue2::CharReach.3857599", i32, [4 x i8] }>
+%"class.ue2::CharReach.3857599" = type { %"class.ue2::bitfield.3857610" }
+%"class.ue2::bitfield.3857610" = type { %"struct.std::array.3857611" }
+%"struct.std::array.3857611" = type { [4 x i64] }
 
 ; 5 occurrences:
 ; cpython/optimized/basearith.ll
@@ -36,7 +36,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 80
-  %4 = getelementptr nusw nuw %"struct.ue2::(anonymous namespace)::SAccelScheme.3857662", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.ue2::(anonymous namespace)::SAccelScheme.3857612", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }

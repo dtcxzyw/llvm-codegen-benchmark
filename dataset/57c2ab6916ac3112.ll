@@ -1,5 +1,5 @@
 
-%class.relocInfo.2733766 = type { i16 }
+%class.relocInfo.2733732 = type { i16 }
 
 ; 3 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -85,7 +85,7 @@ entry:
   ret i64 %6
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -98,7 +98,6 @@ entry:
 ; git/optimized/commit-graph.ll
 ; gromacs/optimized/inftrees.c.ll
 ; icu/optimized/ustrtrns.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libquic/optimized/inftrees.c.ll
 ; libuv/optimized/stream.c.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
@@ -117,14 +116,14 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 1
   ret i64 %6
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -142,6 +141,7 @@ entry:
 ; hyperscan/optimized/Parser.cpp.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/ustdio.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/huffman_utils.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

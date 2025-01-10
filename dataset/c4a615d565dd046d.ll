@@ -306,7 +306,7 @@ entry:
   ret i64 %5
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/rawread.cpp.ll
@@ -395,7 +395,6 @@ entry:
 ; protobuf/optimized/arena.cc.ll
 ; proxygen/optimized/RFC1867.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/plain_table_builder.cc.ll

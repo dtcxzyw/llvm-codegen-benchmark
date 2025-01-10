@@ -1,5 +1,5 @@
 
-; 707 occurrences:
+; 708 occurrences:
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -550,6 +550,7 @@
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -715,7 +716,7 @@ entry:
   ret i1 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
@@ -740,6 +741,7 @@ entry:
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openspiel/optimized/spiel.cc.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; ruby/optimized/prism.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -1965,12 +1967,13 @@ entry:
   ret i1 %3
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/grouper.cc.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
@@ -2302,7 +2305,8 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cmake/optimized/lzma_decoder.c.ll
 ; spike/optimized/ukcras32.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i32 %0, i64 %1) #0 {

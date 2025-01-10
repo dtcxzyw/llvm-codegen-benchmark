@@ -1,5 +1,5 @@
 
-; 5832 occurrences:
+; 5829 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -133,7 +133,6 @@
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/dchSat.c.ll
@@ -1189,8 +1188,6 @@
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/cpuid_flags.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/literals.cpp.ll
 ; hyperscan/optimized/match.c.ll
@@ -5839,7 +5836,7 @@ entry:
   ret i32 %2
 }
 
-; 5033 occurrences:
+; 5034 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -6496,6 +6493,7 @@ entry:
 ; cmake/optimized/inet.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/md4.c.ll
 ; cmake/optimized/mime.c.ll
 ; cmake/optimized/mprintf.c.ll

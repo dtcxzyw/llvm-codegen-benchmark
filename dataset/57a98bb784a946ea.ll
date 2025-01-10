@@ -790,7 +790,7 @@ entry:
   ret i1 %4
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -827,7 +827,6 @@ entry:
 ; openjdk/optimized/hb-ot-var.ll
 ; openjdk/optimized/utf8.ll
 ; php/optimized/image.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/ginget.ll
 ; raylib/optimized/raudio.c.ll

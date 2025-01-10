@@ -1,5 +1,5 @@
 
-%struct.FT_Vector_.3881816 = type { i64, i64 }
+%struct.FT_Vector_.3881766 = type { i64, i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -34,7 +34,7 @@ define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.FT_Vector_.3881816, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.FT_Vector_.3881766, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   %7 = icmp ult ptr %0, %6
   ret i1 %7

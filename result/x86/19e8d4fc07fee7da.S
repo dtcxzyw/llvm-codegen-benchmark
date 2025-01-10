@@ -19,9 +19,8 @@ func000000000000000d:                   # @func000000000000000d
 	leal	(%rdi,%rsi), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	shlq	$4, %rsi
-	leaq	(%rsi,%rdi), %rax
-	andq	$-512, %rax                     # imm = 0xFE00
+	leaq	(%rdi,%rsi,8), %rax
+	andq	$-8, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b
 	leal	(%rdi,%rsi,2), %eax

@@ -1,5 +1,5 @@
 
-%"class.gmx::BasicVector.3361322" = type { [3 x float] }
+%"class.gmx::BasicVector.3361288" = type { [3 x float] }
 
 ; 102 occurrences:
 ; gromacs/optimized/force.cpp.ll
@@ -142,13 +142,12 @@ define ptr @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr %"class.gmx::BasicVector.3361322", ptr %4, i64 %3
-  %6 = getelementptr %"class.gmx::BasicVector.3361322", ptr %5, i64 %0
+  %5 = getelementptr %"class.gmx::BasicVector.3361288", ptr %4, i64 %3
+  %6 = getelementptr %"class.gmx::BasicVector.3361288", ptr %5, i64 %0
   ret ptr %6
 }
 
-; 3 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; 2 occurrences:
 ; opencv/optimized/pyramids.cpp.ll
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind

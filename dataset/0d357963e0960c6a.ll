@@ -216,12 +216,11 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_rms.cpp.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; opencv/optimized/geo_interpolation.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001aa(i1 %0, i32 %1, i64 %2) #0 {

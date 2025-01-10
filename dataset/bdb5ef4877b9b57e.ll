@@ -14,12 +14,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/skbuff.ll
-; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

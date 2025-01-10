@@ -1,5 +1,5 @@
 
-; 239 occurrences:
+; 238 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; abseil-cpp/optimized/exception_safety_testing_test.cc.ll
@@ -164,7 +164,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; mitsuba3/optimized/ralocal.cpp.ll
 ; ms-gsl/optimized/algorithm_tests.cpp.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll

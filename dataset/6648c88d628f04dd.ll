@@ -1,7 +1,7 @@
 
-%"class.hermes::vm::GCHermesValueBase.177.3075353" = type { %"class.hermes::vm::HermesValue32.3075354" }
-%"class.hermes::vm::HermesValue32.3075354" = type { i32 }
-%struct.rlimit.3536714 = type { i64, i64 }
+%"class.hermes::vm::GCHermesValueBase.177.3075319" = type { %"class.hermes::vm::HermesValue32.3075320" }
+%"class.hermes::vm::HermesValue32.3075320" = type { i32 }
+%struct.rlimit.3536680 = type { i64, i64 }
 
 ; 9 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -19,7 +19,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.177.3075353", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.177.3075319", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 672
-  %6 = getelementptr %struct.rlimit.3536714, ptr %5, i64 %4
+  %6 = getelementptr %struct.rlimit.3536680, ptr %5, i64 %4
   ret ptr %6
 }
 

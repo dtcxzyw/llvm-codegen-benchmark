@@ -8,7 +8,3 @@ func0000000000000002:                   # @func0000000000000002
 	not	a1, a1
 	bclr	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
-	not	a1, a1
-	bclr	a0, a0, a1
-	ret

@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/dtoa.ll
 ; linux/optimized/memfd.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; postgres/optimized/int.ll
 ; ruby/optimized/util.ll
-; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:

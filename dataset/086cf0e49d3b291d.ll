@@ -1,5 +1,5 @@
 
-; 3780 occurrences:
+; 3782 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -97,6 +97,7 @@
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/giaUtil.c.ll
+; abc/optimized/gzread.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -403,6 +404,7 @@
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/fs.c.ll
+; cmake/optimized/gzread.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -415,7 +417,6 @@
 ; cmake/optimized/sha1.c.ll
 ; cmake/optimized/sha256.c.ll
 ; cmake/optimized/sha512.c.ll
-; cmake/optimized/signal.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -783,6 +784,7 @@
 ; graphviz/optimized/lu.c.ll
 ; graphviz/optimized/multispline.c.ll
 ; graphviz/optimized/shapes.c.ll
+; graphviz/optimized/shortest.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
 ; graphviz/optimized/triang.c.ll
 ; gromacs/optimized/biasgrid.cpp.ll
@@ -1112,6 +1114,7 @@
 ; libquic/optimized/file_enumerator_posix.cc.ll
 ; libquic/optimized/file_util_posix.cc.ll
 ; libquic/optimized/gcm.c.ll
+; libquic/optimized/gzread.c.ll
 ; libquic/optimized/gzwrite.c.ll
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/hpack_header_table.cc.ll
@@ -1132,7 +1135,6 @@
 ; libquic/optimized/xts.c.ll
 ; libuv/optimized/fs.c.ll
 ; libuv/optimized/pipe.c.ll
-; libuv/optimized/signal.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; libwebp/optimized/muxinternal.c.ll
@@ -2199,7 +2201,6 @@
 ; node/optimized/libnode.node_serdes.ll
 ; node/optimized/libnode.string_bytes.ll
 ; node/optimized/pipe.ll
-; node/optimized/signal.ll
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -2599,6 +2600,7 @@
 ; openjdk/optimized/shenandoahPhaseTimings.ll
 ; openjdk/optimized/shenandoahSupport.ll
 ; openjdk/optimized/shenandoahUtils.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; openjdk/optimized/splashscreen_png.ll
 ; openjdk/optimized/superword.ll
 ; openjdk/optimized/symbolTable.ll
@@ -3143,7 +3145,6 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; tomlplusplus/optimized/toml.cpp.ll
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -3764,6 +3765,7 @@
 ; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; zlib/optimized/deflate.c.ll
+; zlib/optimized/gzread.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/cover.c.ll
@@ -3788,7 +3790,7 @@ entry:
   ret ptr %3
 }
 
-; 3570 occurrences:
+; 3573 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -4945,6 +4947,7 @@ entry:
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/selinuxfs.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/services.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup_percpu.ll
@@ -4969,6 +4972,7 @@ entry:
 ; linux/optimized/trace_output.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/uncore.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_input.ll
 ; linux/optimized/virtio_net.ll
@@ -6832,6 +6836,7 @@ entry:
 ; wireshark/optimized/conversation_table.c.ll
 ; wireshark/optimized/expert_info_proxy_model.cpp.ll
 ; wireshark/optimized/file.c.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/ftype-integer.c.ll
 ; wireshark/optimized/interface_sort_filter_model.cpp.ll
 ; wireshark/optimized/lemon.c.ll
@@ -7367,7 +7372,7 @@ entry:
   ret ptr %3
 }
 
-; 781 occurrences:
+; 784 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -7401,6 +7406,7 @@ entry:
 ; cmake/optimized/crc32_fast.c.ll
 ; cmake/optimized/crc64_fast.c.ll
 ; cmake/optimized/rhash.c.ll
+; cmake/optimized/signal.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/1rno21l8yxg9vs0k.ll
@@ -7515,6 +7521,7 @@ entry:
 ; libquic/optimized/ripemd.c.ll
 ; libquic/optimized/sha1.c.ll
 ; libquic/optimized/sha256.c.ll
+; libuv/optimized/signal.c.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
@@ -7764,6 +7771,7 @@ entry:
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; ncnn/optimized/mat.cpp.ll
+; node/optimized/signal.ll
 ; node/optimized/simdutf.ll
 ; nuttx/optimized/mm_free.c.ll
 ; nuttx/optimized/mm_malloc.c.ll

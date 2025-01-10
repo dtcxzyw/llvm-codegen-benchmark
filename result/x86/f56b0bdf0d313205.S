@@ -230,14 +230,6 @@ func0000000000000128:                   # @func0000000000000128
 	setb	%al
 	orb	%cl, %al
 	retq
-func000000000000010c:                   # @func000000000000010c
-	addl	$-292, %esi                     # imm = 0xFEDC
-	cmpl	$96, %esi
-	setb	%cl
-	cmpl	$3, %edi
-	setl	%al
-	orb	%cl, %al
-	retq
 func0000000000000a08:                   # @func0000000000000a08
 	addl	$-38, %esi
 	cmpl	$3, %esi
@@ -274,6 +266,14 @@ func0000000000000054:                   # @func0000000000000054
 	sete	%cl
 	cmpl	$1023, %edi                     # imm = 0x3FF
 	setge	%al
+	orb	%cl, %al
+	retq
+func000000000000010c:                   # @func000000000000010c
+	incl	%esi
+	cmpl	$9, %esi
+	setb	%cl
+	cmpl	$11, %edi
+	setl	%al
 	orb	%cl, %al
 	retq
 func0000000000000518:                   # @func0000000000000518

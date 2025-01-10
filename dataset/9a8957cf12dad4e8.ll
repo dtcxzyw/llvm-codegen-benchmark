@@ -1,6 +1,6 @@
 
-%struct._HufDec.3395209 = type { i32, i32, ptr }
-%struct.HUF_DEltX1.3543336 = type { i8, i8 }
+%struct._HufDec.3395175 = type { i32, i32, ptr }
+%struct.HUF_DEltX1.3543302 = type { i8, i8 }
 
 ; 18 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
@@ -52,7 +52,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr nuw %struct._HufDec.3395209, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %struct._HufDec.3395175, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -62,7 +62,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr %struct.HUF_DEltX1.3543336, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.HUF_DEltX1.3543302, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

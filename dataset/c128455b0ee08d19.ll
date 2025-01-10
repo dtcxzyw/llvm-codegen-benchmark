@@ -1,6 +1,6 @@
 
-%struct.amd_northbridge.3556109 = type { ptr, ptr, ptr, %struct.amd_l3_cache.3556110, ptr }
-%struct.amd_l3_cache.3556110 = type { i32, [4 x i8] }
+%struct.amd_northbridge.3556075 = type { ptr, ptr, ptr, %struct.amd_l3_cache.3556076, ptr }
+%struct.amd_l3_cache.3556076 = type { i32, [4 x i8] }
 
 ; 67 occurrences:
 ; actix-rs/optimized/1e8u217hm6qvrsw6.ll
@@ -122,7 +122,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %struct.amd_northbridge.3556109, ptr %2, i64 %0
+  %3 = getelementptr %struct.amd_northbridge.3556075, ptr %2, i64 %0
   %4 = icmp samesign ult i64 %0, %1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

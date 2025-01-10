@@ -52,8 +52,3 @@ func0000000000000009:                   # @func0000000000000009
 	vpand	%ymm2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000000f:                   # @func000000000000000f
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubd	%ymm0, %ymm1, %ymm1
-	vpand	%ymm1, %ymm0, %ymm0
-	retq

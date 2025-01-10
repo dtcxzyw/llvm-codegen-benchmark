@@ -10,14 +10,13 @@ entry:
   ret i16 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/extents.ll
-; linux/optimized/printk.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll

@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; boost/optimized/options_description.ll
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -95,6 +95,7 @@
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qed-cluster.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -173,11 +174,12 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libwebp/optimized/palette.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tcp_output.ll

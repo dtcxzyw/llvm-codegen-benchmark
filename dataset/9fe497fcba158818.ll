@@ -141,11 +141,10 @@ entry:
   ret ptr %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/h5tools_str.c.ll
 ; linux/optimized/intel_guc_ct.ll
 ; linux/optimized/intel_uncore.ll
-; linux/optimized/vc_screen.ll
 ; llvm/optimized/PDBStringTableBuilder.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll

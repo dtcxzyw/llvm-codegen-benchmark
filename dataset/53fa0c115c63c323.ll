@@ -1,10 +1,9 @@
 
-; 47 occurrences:
+; 44 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/DIE.cpp.ll
@@ -13,7 +12,6 @@
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
-; node/optimized/simdutf.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/bytecodeAssembler.ll
@@ -35,7 +33,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/execute.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; wireshark/optimized/lanalyzer.c.ll

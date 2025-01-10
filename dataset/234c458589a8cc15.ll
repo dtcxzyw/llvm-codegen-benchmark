@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/vmalloc.ll

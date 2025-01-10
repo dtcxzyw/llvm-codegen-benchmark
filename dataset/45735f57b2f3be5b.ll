@@ -1,11 +1,11 @@
 
-%class.relocInfo.2733766 = type { i16 }
-%struct.LuaNode.2938891 = type { %struct.lua_TValue.2938889, %struct.TKey.2938892 }
-%struct.lua_TValue.2938889 = type { %union.Value.2938890, [1 x i32], i32 }
-%union.Value.2938890 = type { ptr }
-%struct.TKey.2938892 = type { %union.Value.2938890, [1 x i32], i32 }
+%class.relocInfo.2733732 = type { i16 }
+%struct.LuaNode.2938857 = type { %struct.lua_TValue.2938855, %struct.TKey.2938858 }
+%struct.lua_TValue.2938855 = type { %union.Value.2938856, [1 x i32], i32 }
+%union.Value.2938856 = type { ptr }
+%struct.TKey.2938858 = type { %union.Value.2938856, [1 x i32], i32 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -14,7 +14,6 @@
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; git/optimized/commit-graph.ll
 ; icu/optimized/ustrtrns.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libuv/optimized/stream.c.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -29,7 +28,7 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 1
@@ -54,7 +53,7 @@ entry:
   ret i32 %7
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/absVta.c.ll
@@ -70,6 +69,7 @@ entry:
 ; hyperscan/optimized/Parser.cpp.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/ustdio.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
@@ -109,7 +109,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.LuaNode.2938891, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.LuaNode.2938857, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr i64 %5, 1

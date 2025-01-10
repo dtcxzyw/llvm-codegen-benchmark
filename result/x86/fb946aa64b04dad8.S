@@ -20,14 +20,6 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
-	orl	%edx, %esi
-	cmpl	$4, %esi
-	setb	%cl
-	cmpl	$4, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
 func000000000000058c:                   # @func000000000000058c
 	orl	%edx, %esi
 	setne	%cl

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; boost/optimized/src.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/channel_init.cc.ll
@@ -19,7 +19,6 @@
 ; minetest/optimized/clientenvironment.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; velox/optimized/Filter.cpp.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i16 %2) #0 {

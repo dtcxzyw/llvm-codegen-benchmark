@@ -1205,7 +1205,7 @@ entry:
   ret i1 %4
 }
 
-; 218 occurrences:
+; 217 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -1263,7 +1263,6 @@ entry:
 ; cpython/optimized/xmltok.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; eastl/optimized/EAString.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1cid.c.ll
@@ -3376,7 +3375,7 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; boost/optimized/url_base.ll
 ; clamav/optimized/upack.c.ll
@@ -3384,6 +3383,7 @@ entry:
 ; cmake/optimized/entropy_common.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
 ; git/optimized/dir.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libquic/optimized/aead.c.ll

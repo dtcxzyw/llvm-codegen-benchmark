@@ -1,9 +1,3 @@
-func00000000000000f4:                   # @func00000000000000f4
-	andl	$63, %esi
-	incl	%esi
-	cmpl	%edi, %esi
-	setb	%al
-	retq
 func00000000000000f8:                   # @func00000000000000f8
 	movl	%esi, %eax
 	addq	$4096, %rax                     # imm = 0x1000

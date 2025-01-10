@@ -311,7 +311,7 @@ entry:
   ret i1 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -326,6 +326,7 @@ entry:
 ; linux/optimized/seq_file.ll
 ; linux/optimized/smpboot.ll
 ; linux/optimized/trans_fd.ll
+; linux/optimized/vc_screen.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll

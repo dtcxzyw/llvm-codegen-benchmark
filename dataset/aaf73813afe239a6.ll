@@ -23,15 +23,14 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/unzip.c.ll
-; php/optimized/streams.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %.not = icmp eq i64 %0, -1
-  %4 = select i1 %.not, i64 536870912, i64 %3
+  %.not = icmp eq i64 %0, 0
+  %4 = select i1 %.not, i64 0, i64 %3
   ret i64 %4
 }
 

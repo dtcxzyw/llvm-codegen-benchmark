@@ -109,8 +109,7 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 3 occurrences:
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
@@ -122,14 +121,6 @@ entry:
   %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
   ret i1 %4
-}
-
-; 1 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0) #0 {
-entry:
-  ret i1 false
 }
 
 attributes #0 = { nounwind }

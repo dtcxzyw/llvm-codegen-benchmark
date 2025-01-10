@@ -1,5 +1,5 @@
 
-%class.SwitchRange.2747980 = type { i32, i32, i32, float }
+%class.SwitchRange.2747946 = type { i32, i32, i32, float }
 
 ; 7 occurrences:
 ; icu/optimized/decNumber.ll
@@ -19,7 +19,7 @@ entry:
   ret ptr %5
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/satSolver.c.ll
@@ -50,6 +50,7 @@ entry:
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openjdk/optimized/samplePriorityQueue.ll
+; openmpi/optimized/test_overhead.ll
 ; openssl/optimized/dsa_no_digest_size_test-bin-dsa_no_digest_size_test.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
@@ -127,20 +128,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.SwitchRange.2747980, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; openmpi/optimized/osc_sm_component.ll
-; openmpi/optimized/test_overhead.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 63
-  %3 = sdiv i32 %2, 64
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.SwitchRange.2747946, ptr %0, i64 %4
   ret ptr %5
 }
 

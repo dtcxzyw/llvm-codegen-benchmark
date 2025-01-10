@@ -3721,7 +3721,7 @@ entry:
   ret i64 %2
 }
 
-; 2130 occurrences:
+; 2129 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -5657,7 +5657,6 @@ entry:
 ; verilator/optimized/V3Tristate.cpp.ll
 ; wasmedge/optimized/environ.cpp.ll
 ; wasmedge/optimized/serial_module.cpp.ll
-; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; wireshark/optimized/main_application.cpp.ll
@@ -5860,7 +5859,7 @@ entry:
   ret i64 %2
 }
 
-; 634 occurrences:
+; 635 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/satTruth.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -5893,6 +5892,7 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/args_handling.ll
@@ -6653,10 +6653,9 @@ entry:
   ret i64 %2
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; clamav/optimized/sis.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll

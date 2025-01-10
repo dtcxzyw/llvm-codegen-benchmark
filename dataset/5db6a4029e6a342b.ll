@@ -1,9 +1,9 @@
 
-%"class.std::vector.2690952" = type { %"struct.std::_Vector_base.2690953" }
-%"struct.std::_Vector_base.2690953" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" = type { ptr, ptr, ptr }
-%struct.NvmeFdpEvent.2708956 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
+%"class.std::vector.2690918" = type { %"struct.std::_Vector_base.2690919" }
+%"struct.std::_Vector_base.2690919" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" = type { ptr, ptr, ptr }
+%struct.NvmeFdpEvent.2708922 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
 
 ; 1 occurrences:
 ; folly/optimized/AsyncLogWriter.cpp.ll
@@ -12,7 +12,7 @@ define ptr @func000000000000000b(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 -96
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw [2 x %"class.std::vector.2690952"], ptr %4, i64 0, i64 %0
+  %5 = getelementptr nusw nuw [2 x %"class.std::vector.2690918"], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -27,7 +27,7 @@ define ptr @func000000000000000c(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8700, i64 4656
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr [63 x %struct.NvmeFdpEvent.2708956], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [63 x %struct.NvmeFdpEvent.2708922], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

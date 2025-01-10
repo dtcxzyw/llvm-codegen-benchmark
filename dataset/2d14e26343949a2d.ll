@@ -390,9 +390,10 @@ entry:
   ret i64 %3
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; boost/optimized/static_string.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -429,6 +430,7 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; zed-rs/optimized/3di65m17000bk7br774s5jqap.ll
 ; Function Attrs: nounwind

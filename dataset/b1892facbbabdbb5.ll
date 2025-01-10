@@ -1,6 +1,6 @@
 
-%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSpatialForceVector.2818471 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%class.btVector3.2818465 = type { [4 x float] }
 
 ; 2 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -23,7 +23,7 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, ptr %0, ptr null
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.btSpatialForceVector.2818505, ptr %4, i64 %5
+  %6 = getelementptr %struct.btSpatialForceVector.2818471, ptr %4, i64 %5
   ret ptr %6
 }
 

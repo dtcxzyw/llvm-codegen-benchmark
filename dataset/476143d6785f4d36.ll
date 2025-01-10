@@ -1,5 +1,5 @@
 
-; 1308 occurrences:
+; 1310 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -310,6 +310,7 @@
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -440,6 +441,7 @@
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/xhci.ll
 ; linux/optimized/xprt.ll
+; linux/optimized/xstate.ll
 ; linux/optimized/yenta_socket.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll

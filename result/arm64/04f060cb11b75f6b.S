@@ -28,23 +28,13 @@ func00000000000001a6:                   // @func00000000000001a6
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	w8, #42                         // =0x2a
-	sub	w8, w8, w2
-	cmp	w8, w1
-	csel	w8, w8, w1, lo
-	cmp	x0, x8
-	cset	w0, lo
-	ret
-                                        // -- End function
-func00000000000001a4:                   // @func00000000000001a4
+func00000000000001a8:                   // @func00000000000001a8
 // %bb.0:                               // %entry
 	mov	w8, #4096                       // =0x1000
 	sub	w8, w8, w2
 	cmp	w8, w1
 	csel	w8, w8, w1, lo
 	cmp	x0, x8
-	cset	w0, lo
+	cset	w0, hi
 	ret
                                         // -- End function

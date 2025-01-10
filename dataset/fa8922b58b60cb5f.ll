@@ -1,15 +1,15 @@
 
-%struct.EventNotifier.2707726 = type { i32, i32, i8 }
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
+%struct.EventNotifier.2707692 = type { i32, i32, i8 }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
 
-; 270 occurrences:
+; 274 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -36,6 +36,7 @@
 ; cmake/optimized/cmGccDepfileLexer.cxx.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cmake/optimized/frm_driver.c.ll
+; cmake/optimized/inet.c.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; draco/optimized/attribute_quantization_transform.cc.ll
@@ -50,10 +51,12 @@
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; icu/optimized/localeprioritylist.ll
 ; icu/optimized/locid.ll
+; icu/optimized/pkgitems.ll
 ; jq/optimized/lexer.ll
 ; jq/optimized/regcomp.ll
 ; jq/optimized/regexec.ll
 ; libquic/optimized/v3_alt.c.ll
+; libuv/optimized/inet.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
@@ -206,6 +209,7 @@
 ; nix/optimized/verify.ll
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
+; node/optimized/inet.ll
 ; nori/optimized/nanovg.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regexec.ll
@@ -291,21 +295,15 @@ entry:
   ret ptr %7
 }
 
-; 42 occurrences:
+; 24 occurrences:
 ; arrow/optimized/record_batch.cc.ll
 ; arrow/optimized/table.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
-; cmake/optimized/inet.c.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
-; icu/optimized/pkgitems.ll
 ; ipopt/optimized/IpStdAugSystemSolver.ll
-; libuv/optimized/inet.c.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; node/optimized/inet.ll
-; nori/optimized/nanovg.c.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
@@ -314,7 +312,6 @@ entry:
 ; opencv/optimized/lda.cpp.ll
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
@@ -322,18 +319,7 @@ entry:
 ; openspiel/optimized/matrix_game.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/patchTree.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; protobuf/optimized/wire_format.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -456,11 +442,11 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 28
   %6 = ashr i64 %5, 32
-  %7 = getelementptr %struct.EventNotifier.2707726, ptr %0, i64 %6
+  %7 = getelementptr %struct.EventNotifier.2707692, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/saigSimMv.c.ll
@@ -468,6 +454,7 @@ entry:
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/UriRecompose.c.ll
+; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/data.cc.ll
 ; boost/optimized/init_from_settings.ll
 ; boost/optimized/record_ostream.ll
@@ -546,11 +533,11 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 27
   %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw %struct._StackType.2710345, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct._StackType.2710311, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
@@ -581,7 +568,6 @@ entry:
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/reed_solomon_decoder.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
@@ -590,7 +576,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %6
   ret ptr %7
 }
 

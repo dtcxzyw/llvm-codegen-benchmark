@@ -32,11 +32,3 @@ func0000000000000001:                   # @func0000000000000001
 	shlxl	%edx, %esi, %eax
 	addl	%edi, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	notb	%dl
-	andb	$1, %dl
-	addb	%dl, %dl
-	incb	%dl
-	shlxl	%edx, %esi, %eax
-	addl	%edi, %eax
-	retq

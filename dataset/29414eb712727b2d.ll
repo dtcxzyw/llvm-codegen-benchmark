@@ -417,10 +417,9 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/progress.c.ll
 ; cpython/optimized/fileio.ll
-; cpython/optimized/pystrtod.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; freetype/optimized/psaux.c.ll
 ; gromacs/optimized/tng_io.c.ll

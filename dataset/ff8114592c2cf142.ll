@@ -1,6 +1,6 @@
 
-%"class.llvm::MCInstrDesc.3150508" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::MCInstrDesc.3336223" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3150474" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3336189" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 299 occurrences:
 ; actix-rs/optimized/190uhijawk1lki5o.ll
@@ -428,7 +428,7 @@ define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nuw nsw i64 -4870, %2
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3150508", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3150474", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -439,7 +439,7 @@ define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = sub nuw nsw i64 -7350, %2
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3336223", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3336189", ptr %0, i64 %3
   ret ptr %4
 }
 

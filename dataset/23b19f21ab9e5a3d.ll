@@ -93,7 +93,7 @@ entry:
   ret i8 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; icu/optimized/punycode.ll
@@ -104,6 +104,7 @@ entry:
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i16 %0) #0 {
@@ -113,7 +114,7 @@ entry:
   ret i8 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
@@ -127,7 +128,6 @@ entry:
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i16 %0) #0 {

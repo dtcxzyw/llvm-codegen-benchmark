@@ -1,6 +1,6 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
-%struct.list_head.3535195 = type { ptr, ptr }
+%class.btVector3.2818110 = type { [4 x float] }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 13 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -22,7 +22,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 2, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw [3 x %class.btVector3.2818110], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr [12 x %struct.list_head.3535195], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [12 x %struct.list_head.3535161], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -508,8 +508,9 @@ entry:
   ret i64 %4
 }
 
-; 251 occurrences:
+; 252 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll

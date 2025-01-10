@@ -511,17 +511,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
-; Function Attrs: nounwind
-define i1 @func000000000000024a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp uge i32 %0, %2
-  %4 = icmp ule i32 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; linux/optimized/tcp_output.ll

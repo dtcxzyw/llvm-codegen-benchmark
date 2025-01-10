@@ -1,7 +1,7 @@
 
-%struct.Elf64_Shdr.2600898 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%struct.Elf64_Shdr.2902191 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%struct.Elf32_Shdr.2902188 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.Elf64_Shdr.2600865 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%struct.Elf64_Shdr.2902157 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%struct.Elf32_Shdr.2902154 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 2 occurrences:
 ; cpython/optimized/ceval.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.Elf64_Shdr.2600898, ptr %4, i64 %3, i32 4
+  %5 = getelementptr %struct.Elf64_Shdr.2600865, ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 
@@ -23,7 +23,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.Elf64_Shdr.2902191, ptr %4, i64 %3, i32 4
+  %5 = getelementptr nusw nuw %struct.Elf64_Shdr.2902157, ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 
@@ -39,7 +39,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.Elf32_Shdr.2902188, ptr %4, i64 %3, i32 4
+  %5 = getelementptr nusw nuw %struct.Elf32_Shdr.2902154, ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 

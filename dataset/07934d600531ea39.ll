@@ -16,7 +16,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 12 occurrences:
+; 13 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/intel_vrr.ll
@@ -25,6 +25,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; slurm/optimized/job_mgr.ll
+; slurm/optimized/job_test.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll

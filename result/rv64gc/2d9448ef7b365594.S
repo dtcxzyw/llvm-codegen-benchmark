@@ -1,3 +1,12 @@
+func00000000000000ff:                   # @func00000000000000ff
+	slli	a1, a1, 2
+	slli	a0, a0, 3
+	add	a0, a0, a1
+	lui	a1, 786432
+	addi	a0, a0, 7
+	srli	a1, a1, 27
+	and	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 1
 	slli	a0, a0, 3

@@ -912,7 +912,7 @@ entry:
   ret i64 %2
 }
 
-; 412 occurrences:
+; 411 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/extraUtilMult.c.ll
@@ -1295,7 +1295,6 @@ entry:
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
-; redis/optimized/dict.ll
 ; redis/optimized/lgc.ll
 ; slurm/optimized/backfill.ll
 ; slurm/optimized/config_info.ll

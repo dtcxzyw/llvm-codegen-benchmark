@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2825972" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975", i64, %union.anon.32.2825976 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975" = type { ptr }
-%union.anon.32.2825976 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2825938" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825941", i64, %union.anon.32.2825942 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825941" = type { ptr }
+%union.anon.32.2825942 = type { i64, [8 x i8] }
 
 ; 7 occurrences:
 ; cpython/optimized/codeobject.ll
@@ -197,7 +197,7 @@ entry:
   %3 = shl nuw i32 %2, 24
   %4 = or disjoint i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2825972", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2825938", ptr %0, i64 %5
   ret ptr %6
 }
 

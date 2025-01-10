@@ -8,7 +8,7 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000010:                   # @func0000000000000010
 	addl	%edi, %edx
-	leal	(%rdx,%rsi,2), %eax
+	leal	(%rdx,%rsi,4), %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%edi, %edx

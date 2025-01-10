@@ -25,9 +25,9 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func000000000000001c:                   # @func000000000000001c
 	movq	%rsi, %rax
-	shlq	$18, %rdx
+	shlq	$8, %rdx
 	orq	%rdi, %rdx
-	shrq	$21, %rax
+	shrq	$29, %rax
 	orq	%rdx, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007

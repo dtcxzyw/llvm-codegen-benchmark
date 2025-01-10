@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; abc/optimized/ivyFastMap.c.ll
+; 1 occurrences:
 ; libevent/optimized/evmap.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i1 %0, i16 %1, i32 %2) #0 {

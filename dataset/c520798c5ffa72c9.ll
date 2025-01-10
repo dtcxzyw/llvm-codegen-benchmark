@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 169 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/gzwrite.c.ll
@@ -136,6 +136,7 @@
 ; wireshark/optimized/packet-awdl.c.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/packet-http.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-knxip.c.ll

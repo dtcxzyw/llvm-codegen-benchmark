@@ -30,7 +30,7 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
-func000000000000007c:                   # @func000000000000007c
+func000000000000006c:                   # @func000000000000006c
 	slli	a3, a2, 1
 	slli	a0, a0, 2
 	addw	a2, a2, a3

@@ -1,7 +1,7 @@
 
-%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
-%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
-%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
+%class.TrafficTypesRowData.3443338 = type <{ i32, [4 x i8], %class.QString.3443327, i8, [7 x i8] }>
+%class.QString.3443327 = type { %struct.QArrayDataPointer.3443328 }
+%struct.QArrayDataPointer.3443328 = type { ptr, ptr, i64 }
 
 ; 13 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -141,7 +141,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.TrafficTypesRowData.3443372, ptr %1, i64 %2
+  %3 = getelementptr %class.TrafficTypesRowData.3443338, ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5

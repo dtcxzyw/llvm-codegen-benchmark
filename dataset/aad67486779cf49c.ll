@@ -93,11 +93,10 @@ entry:
   ret i1 %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; cmake/optimized/cmCommonTargetGenerator.cxx.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/parsedate.c.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; flac/optimized/main.c.ll

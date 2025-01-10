@@ -1,6 +1,6 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"class.facebook::velox::CompactDoubleList.2799404" = type { i32, i32, i16, i16 }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"class.facebook::velox::CompactDoubleList.2799370" = type { i32, i32, i16, i16 }
 
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
@@ -24,7 +24,7 @@ define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 664
-  %5 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [512 x %struct.TCGTemp.2707191], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -37,7 +37,7 @@ define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 152
-  %5 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799404"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799370"], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

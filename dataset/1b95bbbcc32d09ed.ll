@@ -1,5 +1,5 @@
 
-%struct.TestObject.3897129 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.TestObject.3897079 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 722 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
@@ -893,10 +893,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.TestObject.3897129, ptr %0, i64 %2
+  %3 = getelementptr %struct.TestObject.3897079, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.TestObject.3897129, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct.TestObject.3897079, ptr %4, i64 %5
   ret ptr %6
 }
 

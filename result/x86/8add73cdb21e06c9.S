@@ -7,11 +7,11 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movq	%rsi, %rax
-	shrq	$24, %rax
-	andl	$1572864, %eax                  # imm = 0x180000
+	shrq	$16, %rsi
+	movabsq	$6442450944, %rax               # imm = 0x180000000
+	andq	%rsi, %rax
 	orq	%rdi, %rax
-	orq	$2, %rax
+	orq	$512, %rax                      # imm = 0x200
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax

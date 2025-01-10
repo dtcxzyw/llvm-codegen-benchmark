@@ -65,12 +65,13 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; boost/optimized/approximately_equals.ll
 ; flac/optimized/encode.c.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/shmem.ll
+; linux/optimized/tcp_input.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; ring-rs/optimized/2y22w349mvmovez2.ll
 ; Function Attrs: nounwind

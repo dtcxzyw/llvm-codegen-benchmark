@@ -1,15 +1,15 @@
 
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%struct.boneIndexWeightPair.2826126 = type { i32, float }
-%"class.llvm::cfg::Update.3230406" = type { ptr, %"class.llvm::PointerIntPair.3230407" }
-%"class.llvm::PointerIntPair.3230407" = type { %"struct.llvm::detail::PunnedPointer.3230408" }
-%"struct.llvm::detail::PunnedPointer.3230408" = type { [8 x i8] }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%struct.boneIndexWeightPair.2826092 = type { i32, float }
+%"class.llvm::cfg::Update.3230372" = type { ptr, %"class.llvm::PointerIntPair.3230373" }
+%"class.llvm::PointerIntPair.3230373" = type { %"struct.llvm::detail::PunnedPointer.3230374" }
+%"struct.llvm::detail::PunnedPointer.3230374" = type { [8 x i8] }
 
 ; 14 occurrences:
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -49,11 +49,10 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
@@ -184,7 +183,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__1::basic_string.2603405", ptr %0, i64 %1
+  %3 = getelementptr %"class.std::__1::basic_string.2603372", ptr %0, i64 %1
   %.idx = mul i64 %2, 96
   %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
@@ -288,7 +287,7 @@ entry:
   ret ptr %4
 }
 
-; 40 occurrences:
+; 43 occurrences:
 ; casadi/optimized/lsqr.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -296,6 +295,7 @@ entry:
 ; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
+; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
@@ -327,7 +327,9 @@ entry:
 ; ncnn/optimized/scale_x86_fma.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; openspiel/optimized/cliff_walking.cc.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
+; verilator/optimized/V3ParseGrammar.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
@@ -370,29 +372,6 @@ entry:
   ret ptr %4
 }
 
-; 13 occurrences:
-; arrow/optimized/api_scalar.cc.ll
-; arrow/optimized/diff.cc.ll
-; casadi/optimized/fmu2.cpp.ll
-; cmake/optimized/cmDependsJavaParser.cxx.ll
-; draco/optimized/adaptive_rans_bit_encoder.cc.ll
-; hyperscan/optimized/ng_depth.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
-; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
-; opencv/optimized/layers_common.cpp.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
-; quantlib/optimized/laplaceinterpolation.ll
-; verilator/optimized/V3ParseGrammar.cpp.ll
-; yosys/optimized/rtlil.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 1
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  ret ptr %5
-}
-
 ; 6 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; jemalloc/optimized/ckh.ll
@@ -403,9 +382,29 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.boneIndexWeightPair.2826126, ptr %0, i64 %1
+  %3 = getelementptr %struct.boneIndexWeightPair.2826092, ptr %0, i64 %1
   %.idx = shl i64 %2, 5
   %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
+}
+
+; 10 occurrences:
+; arrow/optimized/api_scalar.cc.ll
+; arrow/optimized/diff.cc.ll
+; casadi/optimized/fmu2.cpp.ll
+; draco/optimized/adaptive_rans_bit_encoder.cc.ll
+; hyperscan/optimized/ng_depth.cpp.ll
+; nlohmann_json/optimized/unit-regression1.cpp.ll
+; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
+; opencv/optimized/layers_common.cpp.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.idx = shl i64 %2, 6
+  %3 = getelementptr i8, ptr %0, i64 %.idx
+  %4 = getelementptr i64, ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -530,7 +529,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.llvm::cfg::Update.3230406", ptr %0, i64 %1
+  %3 = getelementptr %"class.llvm::cfg::Update.3230372", ptr %0, i64 %1
   %.idx = shl i64 %2, 5
   %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4

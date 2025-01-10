@@ -8937,7 +8937,7 @@ entry:
   ret i1 %1
 }
 
-; 755 occurrences:
+; 754 occurrences:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -9241,7 +9241,6 @@ entry:
 ; libquic/optimized/spdy_framer.cc.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/acct.ll
 ; linux/optimized/aio.ll
@@ -9700,7 +9699,7 @@ entry:
   ret i1 %1
 }
 
-; 2115 occurrences:
+; 2114 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/infback.c.ll
@@ -10259,7 +10258,6 @@ entry:
 ; linux/optimized/pci.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/posix_acl.ll
-; linux/optimized/printk.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/protocol.ll
 ; linux/optimized/psparse.ll
@@ -12672,7 +12670,7 @@ entry:
   ret i1 %1
 }
 
-; 1202 occurrences:
+; 1201 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -13792,7 +13790,6 @@ entry:
 ; wireshark/optimized/packet-pppoe.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-q931.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-ranap.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-rmt-norm.c.ll
@@ -14232,7 +14229,7 @@ entry:
   ret i1 %1
 }
 
-; 2815 occurrences:
+; 2812 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/fretTime.c.ll
@@ -14669,6 +14666,7 @@ entry:
 ; icu/optimized/parse.ll
 ; icu/optimized/punycode.ll
 ; icu/optimized/rbbiscan.ll
+; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/region.ll
@@ -14700,6 +14698,7 @@ entry:
 ; icu/optimized/uidna.ll
 ; icu/optimized/unames.ll
 ; icu/optimized/uniset.ll
+; icu/optimized/uniset_props.ll
 ; icu/optimized/unisetspan.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_cnv.ll
@@ -14733,9 +14732,6 @@ entry:
 ; influxdb-rs/optimized/4wajdfme3vgzs83j.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jq/optimized/decNumber.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; just-rs/optimized/15iymzte00kmcyqz.ll
@@ -16256,8 +16252,6 @@ entry:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/acl.ll
 ; redis/optimized/cli_common.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/llex.ll
 ; redis/optimized/socket.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll

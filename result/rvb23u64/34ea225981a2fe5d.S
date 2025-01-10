@@ -73,3 +73,15 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+func00000000000002a8:                   # @func00000000000002a8
+	add	a1, a1, a2
+	sh2add	a0, a1, a0
+	sltiu	a0, a0, 1033
+	xori	a0, a0, 1
+	ret
+func00000000000003aa:                   # @func00000000000003aa
+	add	a1, a1, a2
+	sh1add	a0, a1, a0
+	lui	a1, 16
+	slt	a0, a1, a0
+	ret

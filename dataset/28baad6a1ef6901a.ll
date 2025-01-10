@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 4 occurrences:
 ; linux/optimized/intel_engine_cs.ll
@@ -30,7 +30,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -67,7 +67,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %0, i64 %4
   ret ptr %5
 }
 

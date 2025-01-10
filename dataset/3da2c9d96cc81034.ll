@@ -42,8 +42,12 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_vibrance.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:

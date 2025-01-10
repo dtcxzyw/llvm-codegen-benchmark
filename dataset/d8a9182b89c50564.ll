@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cpython/optimized/compile.ll
 ; darktable/optimized/export.c.ll
@@ -46,6 +46,7 @@
 ; qemu/optimized/net_stream.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/rdb.ll
+; ruby/optimized/bignum.ll
 ; ruby/optimized/regcomp.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; taskflow/optimized/async.cpp.ll

@@ -25,21 +25,6 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006d(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 2
-  %4 = and i32 %3, 60
-  %5 = or disjoint i32 %4, %0
-  %6 = add nsw i32 %1, -32
-  %7 = add nsw i32 %5, %6
-  ret i32 %7
-}
-
 ; 2 occurrences:
 ; icu/optimized/ucptrie.ll
 ; wireshark/optimized/k12.c.ll

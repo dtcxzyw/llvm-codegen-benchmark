@@ -1,5 +1,5 @@
 
-; 584 occurrences:
+; 585 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -199,6 +199,7 @@
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
+; lua/optimized/ldebug.ll
 ; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll

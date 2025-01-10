@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 42 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -105,7 +105,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 28
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }
@@ -118,7 +118,7 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = ashr exact i64 %3, 28
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }

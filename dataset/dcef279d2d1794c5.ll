@@ -1,8 +1,8 @@
 
-%struct.USBEndpoint.2708164 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708165 }
-%union.anon.0.2708165 = type { %struct.QTailQLink.2708166 }
-%struct.QTailQLink.2708166 = type { ptr, ptr }
-%struct.CPpmd_See.3063009 = type { i16, i8, i8 }
+%struct.USBEndpoint.2708130 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708131 }
+%union.anon.0.2708131 = type { %struct.QTailQLink.2708132 }
+%struct.QTailQLink.2708132 = type { ptr, ptr }
+%struct.CPpmd_See.3062975 = type { i16, i8, i8 }
 
 ; 2 occurrences:
 ; postgres/optimized/oracle_compat.ll
@@ -13,7 +13,7 @@ entry:
   %3 = select i1 %2, i64 4432, i64 5032
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.USBEndpoint.2708164, ptr %4, i64 %5
+  %6 = getelementptr %struct.USBEndpoint.2708130, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -40
   ret ptr %7
 }
@@ -98,9 +98,9 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw nuw %struct.CPpmd_See.3063009, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.CPpmd_See.3062975, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nuw %struct.CPpmd_See.3063009, ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.CPpmd_See.3062975, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

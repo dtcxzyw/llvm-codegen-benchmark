@@ -1,16 +1,16 @@
 
-%"struct.hb_hashmap_t<unsigned int, hb_set_t>::item_t.2737010" = type { i32, i32, %struct.hb_set_t.2736886 }
-%struct.hb_set_t.2736886 = type { %struct.hb_sparseset_t.2736887 }
-%struct.hb_sparseset_t.2736887 = type { %struct.hb_object_header_t.2736888, %struct.hb_bit_set_invertible_t.2736889 }
-%struct.hb_object_header_t.2736888 = type { %struct.hb_reference_count_t.2736890, %struct.hb_atomic_int_t.2736891, %struct.hb_atomic_ptr_t.2736892 }
-%struct.hb_reference_count_t.2736890 = type { %struct.hb_atomic_int_t.2736891 }
-%struct.hb_atomic_int_t.2736891 = type { i32 }
-%struct.hb_atomic_ptr_t.2736892 = type { ptr }
-%struct.hb_bit_set_invertible_t.2736889 = type <{ %struct.hb_bit_set_t.2736893, i8, [7 x i8] }>
-%struct.hb_bit_set_t.2736893 = type { i8, i32, %struct.hb_atomic_int_t.2736891, %struct.hb_vector_t.190.2736894, %struct.hb_vector_t.191.2736895 }
-%struct.hb_vector_t.190.2736894 = type { i32, i32, ptr }
-%struct.hb_vector_t.191.2736895 = type { i32, i32, ptr }
-%struct.code.3535564 = type { i8, i8, i16 }
+%"struct.hb_hashmap_t<unsigned int, hb_set_t>::item_t.2736976" = type { i32, i32, %struct.hb_set_t.2736852 }
+%struct.hb_set_t.2736852 = type { %struct.hb_sparseset_t.2736853 }
+%struct.hb_sparseset_t.2736853 = type { %struct.hb_object_header_t.2736854, %struct.hb_bit_set_invertible_t.2736855 }
+%struct.hb_object_header_t.2736854 = type { %struct.hb_reference_count_t.2736856, %struct.hb_atomic_int_t.2736857, %struct.hb_atomic_ptr_t.2736858 }
+%struct.hb_reference_count_t.2736856 = type { %struct.hb_atomic_int_t.2736857 }
+%struct.hb_atomic_int_t.2736857 = type { i32 }
+%struct.hb_atomic_ptr_t.2736858 = type { ptr }
+%struct.hb_bit_set_invertible_t.2736855 = type <{ %struct.hb_bit_set_t.2736859, i8, [7 x i8] }>
+%struct.hb_bit_set_t.2736859 = type { i8, i32, %struct.hb_atomic_int_t.2736857, %struct.hb_vector_t.190.2736860, %struct.hb_vector_t.191.2736861 }
+%struct.hb_vector_t.190.2736860 = type { i32, i32, ptr }
+%struct.hb_vector_t.191.2736861 = type { i32, i32, ptr }
+%struct.code.3535530 = type { i8, i8, i16 }
 
 ; 23 occurrences:
 ; abc/optimized/acec2Mult.c.ll
@@ -77,7 +77,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, hb_set_t>::item_t.2737010", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, hb_set_t>::item_t.2736976", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -119,7 +119,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.code.3535564, ptr %0, i64 %3
+  %4 = getelementptr %struct.code.3535530, ptr %0, i64 %3
   ret ptr %4
 }
 

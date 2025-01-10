@@ -17,7 +17,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -25,6 +25,7 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
@@ -59,10 +60,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; openblas/optimized/dlansf.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i64 %1, i32 %2) #0 {
 entry:

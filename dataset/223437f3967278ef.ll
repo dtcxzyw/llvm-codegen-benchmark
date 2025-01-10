@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/e100.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/nlattr.ll
-; linux/optimized/printk.ll
 ; linux/optimized/xt_TCPMSS.ll
 ; lvgl/optimized/lv_obj_style.ll
 ; lvgl/optimized/lv_spinbox.ll
@@ -44,7 +43,7 @@ entry:
   ret i1 %3
 }
 
-; 247 occurrences:
+; 243 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/inftrees.c.ll
@@ -59,7 +58,6 @@ entry:
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -195,7 +193,6 @@ entry:
 ; re2/optimized/simplify.cc.ll
 ; re2/optimized/tostring.cc.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
-; slurm/optimized/common_topo.ll
 ; slurm/optimized/cpu_frequency.ll
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/forward.ll
@@ -252,7 +249,6 @@ entry:
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mikey.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-ntp.c.ll
 ; wireshark/optimized/packet-olsr.c.ll
@@ -262,7 +258,6 @@ entry:
 ; wireshark/optimized/packet-openwire.c.ll
 ; wireshark/optimized/packet-pagp.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rdp.c.ll
 ; wireshark/optimized/packet-rdt.c.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -1268,7 +1263,7 @@ entry:
   ret i1 %3
 }
 
-; 381 occurrences:
+; 380 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -1608,7 +1603,6 @@ entry:
 ; wireshark/optimized/packet-pcep.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
@@ -1685,19 +1679,17 @@ entry:
   ret i1 %3
 }
 
-; 228 occurrences:
+; 225 occurrences:
 ; assimp/optimized/MD2Loader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/matcher-ac.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/matcher.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; coremark/optimized/core_main.c.ll
 ; cpython/optimized/unicodeobject.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; flac/optimized/encode.c.ll
 ; freetype/optimized/ftcache.c.ll
 ; freetype/optimized/ftgasp.c.ll
@@ -1863,7 +1855,6 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; rocksdb/optimized/block.cc.ll
 ; slurm/optimized/eval_nodes.ll
-; slurm/optimized/gres_filter.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/job_resources.ll
 ; slurm/optimized/job_test.ll
@@ -1948,7 +1939,7 @@ entry:
   ret i1 %3
 }
 
-; 188 occurrences:
+; 186 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/inftrees.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -2013,7 +2004,6 @@ entry:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; lvgl/optimized/lv_draw_sw_mask.ll
 ; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -2029,7 +2019,6 @@ entry:
 ; oiio/optimized/iffinput.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/minmax.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/awt_GraphicsEnv.ll
@@ -2145,7 +2134,7 @@ entry:
   ret i1 %3
 }
 
-; 263 occurrences:
+; 260 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -2336,7 +2325,6 @@ entry:
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/gres_sock_list.ll
 ; slurm/optimized/job_mgr.ll
-; slurm/optimized/job_test.ll
 ; slurm/optimized/reservation.ll
 ; slurm/optimized/select_linear.ll
 ; slurm/optimized/setup.ll
@@ -2374,7 +2362,6 @@ entry:
 ; wireshark/optimized/packet-iso15765.c.ll
 ; wireshark/optimized/packet-jxta.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; wireshark/optimized/packet-obex.c.ll
@@ -2385,7 +2372,6 @@ entry:
 ; wireshark/optimized/packet-ppi.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-reload.c.ll
-; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-sapms.c.ll
 ; wireshark/optimized/packet-ses.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -2417,7 +2403,7 @@ entry:
   ret i1 %3
 }
 
-; 194 occurrences:
+; 192 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
@@ -2498,7 +2484,6 @@ entry:
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/xfrm_user.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/lapi.ll
@@ -2558,7 +2543,6 @@ entry:
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/gang.ll
-; slurm/optimized/job_mgr.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/node_scheduler.ll
 ; slurm/optimized/read_config.ll

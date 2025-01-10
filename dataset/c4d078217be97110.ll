@@ -31,7 +31,7 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; influxdb-rs/optimized/xf9idvr5og46ibq.ll
 ; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
@@ -41,7 +41,6 @@ entry:
 ; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2dr4z69w9sk0c61w.ll

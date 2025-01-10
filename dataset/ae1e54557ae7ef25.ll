@@ -1,9 +1,9 @@
 
-%"class.boost::geometry::model::d2::point_xy.2976739" = type { %"class.boost::geometry::model::point.2976741" }
-%"class.boost::geometry::model::point.2976741" = type { [2 x double] }
-%"struct.tf::Pipeline<tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:40:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:50:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:55:36)>>::Line.3064202" = type { %"struct.std::atomic.3064130" }
-%"struct.std::atomic.3064130" = type { %"struct.std::__atomic_base.3064132" }
-%"struct.std::__atomic_base.3064132" = type { i64 }
+%"class.boost::geometry::model::d2::point_xy.2976705" = type { %"class.boost::geometry::model::point.2976707" }
+%"class.boost::geometry::model::point.2976707" = type { [2 x double] }
+%"struct.tf::Pipeline<tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:40:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:50:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:55:36)>>::Line.3064168" = type { %"struct.std::atomic.3064096" }
+%"struct.std::atomic.3064096" = type { %"struct.std::__atomic_base.3064098" }
+%"struct.std::__atomic_base.3064098" = type { i64 }
 
 ; 1 occurrences:
 ; folly/optimized/Random.cpp.ll
@@ -26,7 +26,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = urem i64 %2, 3
-  %4 = getelementptr nusw nuw [3 x %"class.boost::geometry::model::d2::point_xy.2976739"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %"class.boost::geometry::model::d2::point_xy.2976705"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -48,7 +48,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = urem i64 %2, 3
-  %4 = getelementptr nusw nuw [3 x %"struct.tf::Pipeline<tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:40:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:50:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:55:36)>>::Line.3064202"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %"struct.tf::Pipeline<tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:40:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:50:36)>, tf::Pipe<(lambda at /home/dtcxzyw/WorkSpace/Projects/compilers/llvm-opt-benchmark/bench/taskflow/taskflow/examples/parallel_graph_pipeline.cpp:55:36)>>::Line.3064168"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

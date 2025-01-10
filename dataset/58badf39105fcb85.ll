@@ -34,6 +34,17 @@ entry:
 }
 
 ; 1 occurrences:
+; clamav/optimized/matcher-bm.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i32 %0) #0 {
+entry:
+  %1 = trunc nuw i32 %0 to i16
+  %2 = add i16 %1, -1
+  %3 = zext i16 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i32 %0) #0 {

@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.29.2625758" = type { %"struct.std::__atomic_base.30.2625759" }
-%"struct.std::__atomic_base.30.2625759" = type { ptr }
+%"struct.std::atomic.29.2625725" = type { %"struct.std::__atomic_base.30.2625726" }
+%"struct.std::__atomic_base.30.2625726" = type { ptr }
 
 ; 3 occurrences:
 ; hermes/optimized/Function.cpp.ll
@@ -45,7 +45,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"struct.std::atomic.29.2625758", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.std::atomic.29.2625725", ptr %0, i64 %4
   ret ptr %5
 }
 

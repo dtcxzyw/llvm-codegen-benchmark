@@ -1,10 +1,3 @@
-func0000000000000241:                   # @func0000000000000241
-	cmpl	$61, %edi
-	setae	%al
-	retq
-func0000000000000341:                   # @func0000000000000341
-	xorl	%eax, %eax
-	retq
 func0000000000000074:                   # @func0000000000000074
 	movl	$16, %eax
 	shlxq	%rdi, %rax, %rax

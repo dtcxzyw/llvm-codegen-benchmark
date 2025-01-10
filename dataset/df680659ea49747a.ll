@@ -14,7 +14,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/xhci-ring.ll
@@ -29,6 +29,7 @@ entry:
 ; wireshark/optimized/packet-gmhdr.c.ll
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-turbocell.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i16 %1) #0 {
 entry:

@@ -439,6 +439,7 @@
 ; libquic/optimized/spdy_framer.cc.ll
 ; libquic/optimized/string_util.cc.ll
 ; libquic/optimized/sys_info_linux.cc.ll
+; libquic/optimized/t1_lib.c.ll
 ; libuv/optimized/linux.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/get_disto.c.ll
@@ -1113,7 +1114,6 @@
 ; openjdk/optimized/xUnmapper.ll
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSetRuntime.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zDriverPort.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMark.ll
@@ -3293,12 +3293,13 @@ entry:
   ret i1 %3
 }
 
-; 199 occurrences:
+; 200 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/memory.cc.ll
 ; arrow/optimized/validate.cc.ll
 ; arrow/optimized/value_parsing.cc.ll

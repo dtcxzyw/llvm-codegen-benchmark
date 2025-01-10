@@ -20,7 +20,7 @@ func0000000000000042:                   # @func0000000000000042
 	testl	%edx, %edx
 	sete	%al
 	andb	%dil, %al
-	cmpl	$2, %esi
+	testl	%esi, %esi
 	sete	%cl
 	andb	%al, %cl
 	movzbl	%cl, %eax

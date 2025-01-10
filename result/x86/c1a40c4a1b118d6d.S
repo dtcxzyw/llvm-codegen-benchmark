@@ -22,11 +22,3 @@ func0000000000001208:                   # @func0000000000001208
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000001a08:                   # @func0000000000001a08
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
-	seta	%cl
-	cmpq	%rsi, %rdi
-	setb	%al
-	orb	%cl, %al
-	retq

@@ -1,9 +1,9 @@
 
-%struct.name_entry.2884835 = type { %struct.object_id.2884826, ptr, i32, i32 }
-%struct.object_id.2884826 = type { [32 x i8], i32 }
-%struct.code.3057945 = type { i8, i8, i16 }
-%union.e1000_rx_desc_extended.3531524 = type { %struct.anon.39.3531525 }
-%struct.anon.39.3531525 = type { i64, i64 }
+%struct.name_entry.2884801 = type { %struct.object_id.2884792, ptr, i32, i32 }
+%struct.object_id.2884792 = type { [32 x i8], i32 }
+%struct.code.3057911 = type { i8, i8, i16 }
+%union.e1000_rx_desc_extended.3531490 = type { %struct.anon.39.3531491 }
+%struct.anon.39.3531491 = type { i64, i64 }
 
 ; 4 occurrences:
 ; abc/optimized/dauTree.c.ll
@@ -42,7 +42,7 @@ define ptr @func000000000000001f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nuw %struct.name_entry.2884835, ptr %0, i64 %4, i32 3
+  %5 = getelementptr nuw %struct.name_entry.2884801, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -58,7 +58,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nuw %struct.code.3057945, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.code.3057911, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -87,7 +87,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %union.e1000_rx_desc_extended.3531524, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %union.e1000_rx_desc_extended.3531490, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 

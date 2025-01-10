@@ -17,20 +17,3 @@ func0000000000000088:                   # @func0000000000000088
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	0x4009220092718f51              # double 3.1416026535897932
-.LCPI2_1:
-	.quad	0x402921fb54442d18              # double 12.566370614359172
-func0000000000000055:                   # @func0000000000000055
-	lui	a1, %hi(.LCPI2_0)
-	lui	a2, %hi(.LCPI2_1)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fld	fa4, %lo(.LCPI2_1)(a2)
-	fabs.d	fa3, fa1
-	fle.d	a1, fa3, fa5
-	fle.d	a2, fa0, fa4
-	xori	a1, a1, 1
-	xori	a2, a2, 1
-	or	a0, a0, a2
-	or	a0, a0, a1
-	ret

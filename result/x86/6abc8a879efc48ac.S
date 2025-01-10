@@ -14,9 +14,3 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	movl	%edx, %eax
-	shll	$24, %eax
-	xorl	%esi, %eax
-	orl	%edi, %eax
-	retq

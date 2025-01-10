@@ -1,5 +1,5 @@
 
-%struct.lz_match.2747992 = type { i16, i16 }
+%struct.lz_match.2747958 = type { i16, i16 }
 
 ; 103 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
@@ -127,7 +127,7 @@ define i64 @func0000000000000018(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct.lz_match.2747992, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct.lz_match.2747958, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

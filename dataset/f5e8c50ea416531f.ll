@@ -339,10 +339,9 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; hdf5/optimized/H5FDonion_index.c.ll

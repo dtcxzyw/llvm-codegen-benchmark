@@ -1,6 +1,6 @@
 
-%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
-%struct.dtPoly.3108532 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
+%class.itableOffsetEntry.2747717 = type <{ ptr, i32, [4 x i8] }>
+%struct.dtPoly.3108498 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
 
 ; 2 occurrences:
 ; linux/optimized/huf_decompress.ll
@@ -74,7 +74,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 464
   %5 = getelementptr nusw i64, ptr %4, i64 %3
-  %6 = getelementptr %class.itableOffsetEntry.2747751, ptr %5, i64 %0
+  %6 = getelementptr %class.itableOffsetEntry.2747717, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
@@ -94,7 +94,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 100
   %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nuw %struct.dtPoly.3108532, ptr %5, i64 %0, i32 4
+  %6 = getelementptr nuw %struct.dtPoly.3108498, ptr %5, i64 %0, i32 4
   ret ptr %6
 }
 

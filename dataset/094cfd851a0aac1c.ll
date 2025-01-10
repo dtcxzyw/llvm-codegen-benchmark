@@ -1,6 +1,6 @@
 
-%struct.in6_addr.3530600 = type { %union.anon.24.3530601 }
-%union.anon.24.3530601 = type { [4 x i32] }
+%struct.in6_addr.3530566 = type { %union.anon.24.3530567 }
+%union.anon.24.3530567 = type { [4 x i32] }
 
 ; 3 occurrences:
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -208,7 +208,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr %struct.in6_addr.3530600, ptr %5, i64 %4
+  %6 = getelementptr %struct.in6_addr.3530566, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -976,7 +976,7 @@ entry:
   ret i32 %3
 }
 
-; 140 occurrences:
+; 141 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -1086,6 +1086,7 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; php/optimized/array.ll
 ; portaudio/optimized/pa_process.c.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll

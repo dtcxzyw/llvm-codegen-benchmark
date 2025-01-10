@@ -52,15 +52,6 @@ func0000000000000026:                   // @func0000000000000026
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	add	x8, x1, #1
-	cmp	x8, w2, sxtw
-	cset	w8, eq
-	orr	w8, w0, w8
-	and	w0, w8, #0x1
-	ret
-                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	add	x8, x1, #1

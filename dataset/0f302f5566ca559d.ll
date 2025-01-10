@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll

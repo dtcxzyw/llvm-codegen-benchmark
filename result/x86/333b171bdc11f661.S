@@ -10,13 +10,13 @@ func0000000000000007:                   # @func0000000000000007
 	cmovbq	%rdi, %rsi
 	addq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %eax
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
 	addq	%rsi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %eax
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi

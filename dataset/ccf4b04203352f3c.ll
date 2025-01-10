@@ -1,8 +1,8 @@
 
-%"class.clang::DesignatedInitExpr::Designator.3182703" = type { i32, %union.anon.853.3182704 }
-%union.anon.853.3182704 = type { %"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182705" }
-%"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182705" = type { i64, %"class.clang::SourceLocation.3182706", %"class.clang::SourceLocation.3182706" }
-%"class.clang::SourceLocation.3182706" = type { i32 }
+%"class.clang::DesignatedInitExpr::Designator.3182669" = type { i32, %union.anon.853.3182670 }
+%union.anon.853.3182670 = type { %"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182671" }
+%"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182671" = type { i64, %"class.clang::SourceLocation.3182672", %"class.clang::SourceLocation.3182672" }
+%"class.clang::SourceLocation.3182672" = type { i32 }
 
 ; 2 occurrences:
 ; hermes/optimized/APInt.cpp.ll
@@ -36,10 +36,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000fe1(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182703", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182669", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182703", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182669", ptr %0, i64 %5
   %7 = icmp eq ptr %6, %4
   ret i1 %7
 }

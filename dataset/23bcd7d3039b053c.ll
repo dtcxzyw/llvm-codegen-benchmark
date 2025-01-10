@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; casadi/optimized/cs_lu.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -17,7 +17,6 @@
 ; osqp/optimized/SuiteSparse_config.c.ll
 ; php/optimized/math.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/gnom.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/phi2.cpp.ll
 ; proj/optimized/robin.cpp.ll
@@ -1153,9 +1152,10 @@ entry:
   ret i1 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
+; proj/optimized/gnom.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/blackkarasinski.ll

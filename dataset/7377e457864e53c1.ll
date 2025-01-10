@@ -1,5 +1,5 @@
 
-%struct.desc_struct.3532780 = type { i16, i16, i32 }
+%struct.desc_struct.3532746 = type { i16, i16, i32 }
 
 ; 7 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -51,7 +51,7 @@ define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 12
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.desc_struct.3532780, ptr %3, i64 %2
+  %4 = getelementptr %struct.desc_struct.3532746, ptr %3, i64 %2
   ret ptr %4
 }
 

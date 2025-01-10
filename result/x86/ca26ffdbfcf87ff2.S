@@ -12,6 +12,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$999999977, %rdx                # imm = 0x3B9AC9E9
 	setae	%al
 	retq
+func0000000000000088:                   # @func0000000000000088
+	cmpl	%edx, %esi
+	cmovbl	%esi, %edx
+	imulq	%rdi, %rdx
+	cmpq	$1000000001, %rdx               # imm = 0x3B9ACA01
+	setae	%al
+	retq
 func00000000000000e1:                   # @func00000000000000e1
 	cmpl	%edx, %esi
 	cmovbl	%esi, %edx

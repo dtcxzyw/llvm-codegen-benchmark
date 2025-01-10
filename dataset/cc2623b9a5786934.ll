@@ -14,7 +14,7 @@ entry:
   ret i1 %4
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; clamav/optimized/tiff.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/cmELF.cxx.ll
@@ -79,7 +79,6 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/packet-epl.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rdm.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
@@ -105,7 +104,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -120,8 +119,6 @@ entry:
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-dhcp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; Function Attrs: nounwind
@@ -132,13 +129,12 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/printk.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/clrs16.ll
 ; spike/optimized/clz16.ll
@@ -153,14 +149,9 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
+; 4 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; slurm/optimized/job_test.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind

@@ -1,7 +1,6 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; c3c/optimized/sema_expr.c.ll
-; freetype/optimized/psaux.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/drm_dp_helper.ll

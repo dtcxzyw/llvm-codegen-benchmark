@@ -176,8 +176,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
-; git/optimized/sequencer.ll
+; 36 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayDistinct.cpp.ll

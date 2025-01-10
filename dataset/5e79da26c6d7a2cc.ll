@@ -249,12 +249,13 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cpython/optimized/listobject.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; slurm/optimized/job_test.ll

@@ -1,6 +1,6 @@
 
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
@@ -89,7 +89,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %4
+  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }

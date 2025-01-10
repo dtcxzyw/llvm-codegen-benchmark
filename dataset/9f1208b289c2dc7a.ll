@@ -28,7 +28,7 @@ entry:
   ret i1 %4
 }
 
-; 161 occurrences:
+; 163 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; cjson/optimized/cJSON.c.ll
@@ -132,7 +132,9 @@ entry:
 ; openmpi/optimized/pmix_server.ll
 ; openmpi/optimized/pmix_tool.ll
 ; openssl/optimized/endecode_test-bin-endecode_test.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-ec_backend.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-ec_backend.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll

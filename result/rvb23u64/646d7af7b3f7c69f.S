@@ -13,7 +13,7 @@ func0000000000000060:                   # @func0000000000000060
 func000000000000007a:                   # @func000000000000007a
 	andi	a1, a1, 255
 	sh1add	a0, a1, a0
-	srliw	a0, a0, 3
+	srliw	a0, a0, 4
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	srliw	a0, a0, 12

@@ -1,5 +1,5 @@
 
-; 289 occurrences:
+; 290 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRewrite.c.ll
@@ -17,9 +17,11 @@
 ; cmake/optimized/cmGetSourceFilePropertyCommand.cxx.ll
 ; cmake/optimized/cmPolicies.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/sygus_repair_const.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -135,7 +137,6 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86DisassemblerTables.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; mimalloc/optimized/arena.c.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -298,7 +299,7 @@ entry:
   ret i1 %5
 }
 
-; 511 occurrences:
+; 509 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRewrite.c.ll
@@ -669,8 +670,6 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tomlplusplus/optimized/toml.cpp.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll

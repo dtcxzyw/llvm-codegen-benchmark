@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -11,7 +11,6 @@
 ; ceres/optimized/schur_eliminator_2_3_d.cc.ll
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; darktable/optimized/introspection_temperature.c.ll
-; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll

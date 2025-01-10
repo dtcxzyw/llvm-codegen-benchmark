@@ -13,7 +13,8 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; icu/optimized/swapimpl.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
@@ -88,19 +89,6 @@ entry:
   %5 = add nsw i32 %4, %3
   %6 = sext i32 %5 to i64
   %7 = getelementptr double, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; icu/optimized/swapimpl.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 128
-  %4 = shl i32 %1, 1
-  %5 = add nsw i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

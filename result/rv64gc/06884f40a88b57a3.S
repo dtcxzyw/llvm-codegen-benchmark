@@ -121,9 +121,8 @@ func0000000000000287:                   # @func0000000000000287
 	ret
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a2, a2
-	li	a3, 2
-	bne	a2, a3, .LBB16_2
-	li	a1, 6
+	bnez	a2, .LBB16_2
+	li	a1, 1
 .LBB16_2:                               # %entry
 	sltu	a0, a0, a1
 	ret

@@ -1,5 +1,5 @@
 
-%struct.VlWide.2897710 = type { [3 x i32] }
+%struct.VlWide.2897676 = type { [3 x i32] }
 
 ; 5 occurrences:
 ; libevent/optimized/bufferevent_ssl.c.ll
@@ -14,7 +14,7 @@ entry:
   %3 = and i8 %2, 3
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 10336
-  %6 = getelementptr nusw nuw [4 x %struct.VlWide.2897710], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [4 x %struct.VlWide.2897676], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
+%class.btVector3.2818110 = type { [4 x float] }
 
 ; 7 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -13,7 +13,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [3 x %class.btVector3.2818110], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw float, ptr %4, i64 %3
   ret ptr %5
 }

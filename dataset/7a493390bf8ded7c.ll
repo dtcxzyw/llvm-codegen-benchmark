@@ -58,7 +58,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind

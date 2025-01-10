@@ -34,12 +34,10 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; boost/optimized/src.ll
-; lief/optimized/psa_crypto.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_subMagsF32.ll
-; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1, i64 %2) #0 {
 entry:

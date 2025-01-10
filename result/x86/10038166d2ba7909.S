@@ -12,7 +12,8 @@ func0000000000000026:                   # @func0000000000000026
 	retq
 func000000000000002a:                   # @func000000000000002a
 	movswl	%si, %eax
-	cmpl	%eax, %edi
+	subl	%eax, %edi
+	cmpl	$127, %edi
 	setg	%al
 	retq
 func0000000000000021:                   # @func0000000000000021

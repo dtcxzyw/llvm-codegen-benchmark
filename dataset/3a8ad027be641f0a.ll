@@ -264,7 +264,7 @@ entry:
   ret i64 %3
 }
 
-; 142 occurrences:
+; 143 occurrences:
 ; abc/optimized/giaShow.c.ll
 ; arrow/optimized/data.cc.ll
 ; boost/optimized/src.ll
@@ -273,6 +273,7 @@ entry:
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/outqueue.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/pfr.c.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VF.cpp.ll

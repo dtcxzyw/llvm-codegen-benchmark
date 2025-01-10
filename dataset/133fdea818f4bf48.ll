@@ -49,10 +49,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000000ca(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp sgt i8 %2, -1
-  %4 = icmp slt i8 %0, %1
+  %3 = icmp slt i8 %1, %2
+  %4 = icmp sgt i8 %0, -1
   %5 = and i1 %4, %3
   ret i1 %5
 }
@@ -60,10 +60,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000146(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp slt i8 %1, %2
-  %4 = icmp sgt i8 %0, -1
+  %3 = icmp sgt i8 %2, -1
+  %4 = icmp slt i8 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 150 occurrences:
+; 151 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -138,6 +138,7 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-s101.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-sml.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/packet-usb.c.ll

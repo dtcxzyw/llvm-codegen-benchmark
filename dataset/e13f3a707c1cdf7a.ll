@@ -1,11 +1,11 @@
 
-%struct.NodeLinks.2819557 = type { %class.btAlignedObjectArray.104.2819558 }
-%class.btAlignedObjectArray.104.2819558 = type <{ %class.btAlignedAllocator.105.2819559, [3 x i8], i32, i32, [4 x i8], ptr, i8, [7 x i8] }>
-%class.btAlignedAllocator.105.2819559 = type { i8 }
-%struct.io_tlb_slot.3537771 = type { i64, i64, i32 }
-%union.TValue.3680757 = type { i64 }
+%struct.NodeLinks.2819523 = type { %class.btAlignedObjectArray.104.2819524 }
+%class.btAlignedObjectArray.104.2819524 = type <{ %class.btAlignedAllocator.105.2819525, [3 x i8], i32, i32, [4 x i8], ptr, i8, [7 x i8] }>
+%class.btAlignedAllocator.105.2819525 = type { i8 }
+%struct.io_tlb_slot.3537737 = type { i64, i64, i32 }
+%union.TValue.3680707 = type { i64 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; boost/optimized/topology.ll
 ; git/optimized/apply.ll
@@ -14,6 +14,7 @@
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/scattering-debye.cpp.ll
+; icu/optimized/pkgitems.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
@@ -52,7 +53,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 24
   %5 = ashr i64 %4, 32
-  %6 = getelementptr %struct.NodeLinks.2819557, ptr %0, i64 %5, i32 0, i32 2
+  %6 = getelementptr %struct.NodeLinks.2819523, ptr %0, i64 %5, i32 0, i32 2
   ret ptr %6
 }
 
@@ -141,7 +142,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 21
   %5 = ashr i64 %4, 32
-  %6 = getelementptr %struct.io_tlb_slot.3537771, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.io_tlb_slot.3537737, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -154,7 +155,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
   %5 = ashr i64 %4, 32
-  %6 = getelementptr nusw %union.TValue.3680757, ptr %0, i64 %5
+  %6 = getelementptr nusw %union.TValue.3680707, ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }

@@ -27,9 +27,10 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
 ; hyperscan/optimized/stream.c.ll

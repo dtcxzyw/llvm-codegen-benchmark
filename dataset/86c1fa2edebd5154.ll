@@ -1,5 +1,5 @@
 
-; 1533 occurrences:
+; 1536 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -83,6 +83,7 @@
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/ftp.c.ll
@@ -1022,10 +1023,12 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; openssl/optimized/libdefault-lib-rsa_sig.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-lib-tls13_enc.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll

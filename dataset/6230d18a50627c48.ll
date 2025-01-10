@@ -1,5 +1,5 @@
 
-; 1675 occurrences:
+; 1674 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -206,7 +206,6 @@
 ; cmake/optimized/openssl.c.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; cpython/optimized/compile.ll
-; cpython/optimized/dtoa.ll
 ; cpython/optimized/optimizer.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -1785,7 +1784,7 @@ entry:
   ret i1 %4
 }
 
-; 367 occurrences:
+; 366 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cnfUtil.c.ll
@@ -1825,7 +1824,6 @@ entry:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
@@ -2648,7 +2646,7 @@ entry:
   ret i1 %4
 }
 
-; 182 occurrences:
+; 183 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -2766,6 +2764,7 @@ entry:
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/ui_dbus-console.c.ll
 ; quantlib/optimized/ctsmmcapletcalibration.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
@@ -2851,7 +2850,6 @@ entry:
 ; boost/optimized/xml_grammar.ll
 ; boost/optimized/xml_wgrammar.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -3190,6 +3188,7 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-ged125.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; yosys/optimized/opt_lut.ll
 ; yosys/optimized/select.ll
 ; yosys/optimized/shregmap.ll
 ; z3/optimized/bv_decl_plugin.cpp.ll
@@ -3208,7 +3207,7 @@ entry:
   ret i1 %4
 }
 
-; 189 occurrences:
+; 188 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddZddGroup.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -3266,7 +3265,6 @@ entry:
 ; rocksdb/optimized/partitioned_index_reader.cc.ll
 ; rust-analyzer-rs/optimized/18mvp67rh7l1u2ho.ll
 ; slurm/optimized/eval_nodes_tree.ll
-; slurm/optimized/job_test.ll
 ; slurm/optimized/node_scheduler.ll
 ; slurm/optimized/slurm_pmi.ll
 ; sqlite/optimized/sqlite3.ll

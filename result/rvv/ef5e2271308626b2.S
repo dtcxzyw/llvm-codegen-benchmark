@@ -70,6 +70,13 @@ func00000000000000d5:                   # @func00000000000000d5
 	vsll.vi	v8, v8, 13
 	vadd.vv	v8, v8, v10
 	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 56
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a0, v12
+	vsll.vi	v10, v10, 3
+	vadd.vv	v8, v8, v10
+	ret
 func00000000000000f0:                   # @func00000000000000f0
 	li	a0, 360
 	vsetivli	zero, 4, e64, m2, ta, ma

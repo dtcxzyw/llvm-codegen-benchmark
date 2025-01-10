@@ -54,13 +54,3 @@ func0000000000000037:                   // @func0000000000000037
 	add	x1, x8, x9
 	ret
                                         // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	extr	x8, x3, x2, #63
-	adds	x9, x0, x2, lsl #1
-	mov	x10, #-4294967296               // =0xffffffff00000000
-	adc	x8, x1, x8
-	adds	x0, x9, x10
-	cinc	x1, x8, hs
-	ret
-                                        // -- End function

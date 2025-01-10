@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; freetype/optimized/autofit.c.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/netdev.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/indexcmds.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-mausb.c.ll

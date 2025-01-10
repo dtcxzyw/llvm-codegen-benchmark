@@ -1,13 +1,13 @@
 
-%"struct.OT::OffsetTo.619.2737021" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.ProcSignalSlot.3654747 = type { i32, [14 x i32], %struct.pg_atomic_uint64.3654748, %struct.pg_atomic_uint32.3654749, %struct.ConditionVariable.3654750 }
-%struct.pg_atomic_uint64.3654748 = type { i64 }
-%struct.pg_atomic_uint32.3654749 = type { i32 }
-%struct.ConditionVariable.3654750 = type { i8, %struct.proclist_head.3654751 }
-%struct.proclist_head.3654751 = type { i32, i32 }
+%"struct.OT::OffsetTo.619.2736987" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.ProcSignalSlot.3654713 = type { i32, [14 x i32], %struct.pg_atomic_uint64.3654714, %struct.pg_atomic_uint32.3654715, %struct.ConditionVariable.3654716 }
+%struct.pg_atomic_uint64.3654714 = type { i64 }
+%struct.pg_atomic_uint32.3654715 = type { i32 }
+%struct.ConditionVariable.3654716 = type { i8, %struct.proclist_head.3654717 }
+%struct.proclist_head.3654717 = type { i32, i32 }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -39,7 +39,7 @@ entry:
 define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2737021"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2736987"], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
@@ -51,7 +51,7 @@ entry:
 define i64 @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr [0 x %struct.ProcSignalSlot.3654747], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [0 x %struct.ProcSignalSlot.3654713], ptr %0, i64 0, i64 %2, i32 1
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

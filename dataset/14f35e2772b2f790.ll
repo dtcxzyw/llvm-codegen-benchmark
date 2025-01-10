@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:

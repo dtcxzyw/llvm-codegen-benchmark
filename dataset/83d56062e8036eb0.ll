@@ -1,10 +1,8 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; zlib/optimized/deflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

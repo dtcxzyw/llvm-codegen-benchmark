@@ -1,5 +1,5 @@
 
-; 774 occurrences:
+; 772 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; arrow/optimized/bridge.cc.ll
@@ -304,7 +304,6 @@
 ; linux/optimized/n_tty.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/rock.ll
-; linux/optimized/vsprintf.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -509,7 +508,6 @@
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/jfrEmergencyDump.ll
-; openjdk/optimized/splashscreen_impl.ll
 ; openjdk/optimized/zip_util.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/gin_rummy_test.cc.ll
@@ -783,7 +781,7 @@ entry:
   ret i1 %5
 }
 
-; 108 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/async_pipe.ll
@@ -810,13 +808,10 @@ entry:
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/xmltok.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/multibytecodec.ll
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmltok.ll
 ; cpython/optimized/zlibmodule.ll
-; darktable/optimized/history.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -862,7 +857,6 @@ entry:
 ; proxygen/optimized/ProxyStatus.cpp.ll
 ; proxygen/optimized/StructuredHeadersEncoder.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/lapi.ll
 ; redis/optimized/ldo.ll
@@ -890,8 +884,6 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
 entry:

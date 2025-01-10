@@ -12,8 +12,9 @@ entry:
   ret ptr %1
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; boost/optimized/area_sph_geo.ll
+; cmake/optimized/json_value.cpp.ll
 ; gromacs/optimized/muParserTest.cpp.ll
 ; hermes/optimized/GraphWriter.cpp.ll
 ; llvm/optimized/GraphWriter.cpp.ll

@@ -1,6 +1,6 @@
 
-%struct.yyjson_val.3789967 = type { i64, %union.yyjson_val_uni.3789966 }
-%union.yyjson_val_uni.3789966 = type { i64 }
+%struct.yyjson_val.3789917 = type { i64, %union.yyjson_val_uni.3789916 }
+%union.yyjson_val_uni.3789916 = type { i64 }
 
 ; 2 occurrences:
 ; quickjs/optimized/quickjs.ll
@@ -65,7 +65,7 @@ entry:
   %3 = and i32 %2, 2
   %.not = icmp eq i32 %3, 0
   %4 = select i1 %.not, i64 %1, i64 24
-  %5 = getelementptr %struct.yyjson_val.3789967, ptr %0, i64 %4
+  %5 = getelementptr %struct.yyjson_val.3789917, ptr %0, i64 %4
   ret ptr %5
 }
 

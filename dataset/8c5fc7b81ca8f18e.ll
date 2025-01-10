@@ -1,5 +1,5 @@
 
-; 814 occurrences:
+; 815 occurrences:
 ; abc/optimized/dchClass.c.ll
 ; abc/optimized/dchSweep.c.ll
 ; abc/optimized/fraInd.c.ll
@@ -301,6 +301,7 @@
 ; meilisearch-rs/optimized/4nfen0oz6o4cyiq8.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

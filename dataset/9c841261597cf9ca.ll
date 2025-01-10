@@ -1,5 +1,5 @@
 
-; 23430 occurrences:
+; 23428 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -97,7 +97,6 @@
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/cuddAPI.c.ll
-; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddHarwell.c.ll
@@ -19485,7 +19484,6 @@
 ; spike/optimized/s_roundToI64.ll
 ; spike/optimized/s_roundToUI32.ll
 ; spike/optimized/s_shiftRightJam256M.ll
-; spike/optimized/s_sub256M.ll
 ; spike/optimized/s_subMagsF128.ll
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
@@ -32836,7 +32834,7 @@ entry:
   ret i1 %1
 }
 
-; 6289 occurrences:
+; 6291 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -32864,6 +32862,7 @@ entry:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cmd.c.ll
 ; abc/optimized/cmdAuto.c.ll
+; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddHarwell.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
@@ -35046,6 +35045,7 @@ entry:
 ; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/DeclarationName.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/DeltaTree.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/DereferenceChecker.cpp.ll
@@ -35544,8 +35544,6 @@ entry:
 ; lua/optimized/ltable.ll
 ; lua/optimized/ltm.ll
 ; lua/optimized/lvm.ll
-; luajit/optimized/lib_string.ll
-; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_asm.ll
@@ -36912,6 +36910,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-provider_core.ll
 ; openssl/optimized/libcrypto-lib-store_meth.ll
 ; openssl/optimized/libcrypto-lib-tasn_dec.ll
+; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
@@ -36935,6 +36934,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; openssl/optimized/libcrypto-shlib-store_meth.ll
 ; openssl/optimized/libcrypto-shlib-tasn_dec.ll
+; openssl/optimized/libcrypto-shlib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
@@ -37691,9 +37691,7 @@ entry:
 ; ruby/optimized/pm_char.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/process.ll
-; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/re.ll
-; ruby/optimized/regexec.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/rjit.ll
 ; ruby/optimized/ruby.ll
@@ -38264,6 +38262,7 @@ entry:
 ; wireshark/optimized/packet-bat.c.ll
 ; wireshark/optimized/packet-batadv.c.ll
 ; wireshark/optimized/packet-beep.c.ll
+; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-bmc.c.ll
@@ -38350,6 +38349,7 @@ entry:
 ; wireshark/optimized/packet-juniper.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-knxip_decrypt.c.ll
+; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll

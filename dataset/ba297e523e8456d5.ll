@@ -39,8 +39,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/Scalarizer.cpp.ll
+; 1 occurrences:
 ; slurm/optimized/tree.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {

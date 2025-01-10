@@ -240,7 +240,7 @@ entry:
   ret i1 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GpuGridBroadphase.ll
 ; darktable/optimized/introspection_primaries.c.ll
@@ -255,6 +255,7 @@ entry:
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/state.cpp.ll
+; libwebp/optimized/alpha_dec.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -330,7 +331,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -347,7 +348,6 @@ entry:
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/checker_model.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/gemm_layer.cpp.ll
@@ -390,8 +390,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; libwebp/optimized/alpha_dec.c.ll
+; 1 occurrences:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000029(i64 %0, i32 %1, i32 %2) #0 {

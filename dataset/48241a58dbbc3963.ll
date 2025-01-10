@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 157 occurrences:
 ; abc/optimized/aigDfs.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -155,7 +155,6 @@
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
-; yyjson/optimized/yyjson.c.ll
 ; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
 ; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind

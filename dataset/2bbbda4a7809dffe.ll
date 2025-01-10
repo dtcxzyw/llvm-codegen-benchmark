@@ -1,15 +1,15 @@
 
-%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
-%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
-%struct.BEInt.156.2734510 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
-%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%"class.hermes::vm::GCHermesValueBase.3082186" = type { %"class.hermes::vm::HermesValue32.3082187" }
-%"class.hermes::vm::HermesValue32.3082187" = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.3082646" = type { %"class.hermes::vm::HermesValue.3082534" }
-%"class.hermes::vm::HermesValue.3082534" = type { i64 }
+%"struct.OT::MathValueRecord.2734473" = type { %"struct.OT::IntType.155.2734474", %"struct.OT::OffsetTo.157.2734475" }
+%"struct.OT::IntType.155.2734474" = type { %struct.BEInt.156.2734476 }
+%struct.BEInt.156.2734476 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734475" = type { %"struct.OT::Offset.2734477" }
+%"struct.OT::Offset.2734477" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%"class.hermes::vm::GCHermesValueBase.3082152" = type { %"class.hermes::vm::HermesValue32.3082153" }
+%"class.hermes::vm::HermesValue32.3082153" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3082612" = type { %"class.hermes::vm::HermesValue.3082500" }
+%"class.hermes::vm::HermesValue.3082500" = type { i64 }
 
 ; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -23,7 +23,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %7 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734473", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -57,7 +57,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082186", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082152", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -70,7 +70,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082646", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082612", ptr %6, i64 %5
   ret ptr %7
 }
 

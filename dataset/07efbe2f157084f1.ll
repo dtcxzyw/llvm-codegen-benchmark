@@ -1,5 +1,5 @@
 
-%struct.CurveAnchorPoint.2874017 = type { float, float }
+%struct.CurveAnchorPoint.2873983 = type { float, float }
 
 ; 120 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -140,7 +140,7 @@ entry:
   %2 = and i64 %1, 240
   %3 = or disjoint i64 %2, 8
   %4 = getelementptr i8, ptr %0, i64 24
-  %5 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2874017], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2873983], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

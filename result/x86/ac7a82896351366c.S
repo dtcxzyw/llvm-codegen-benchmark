@@ -38,6 +38,14 @@ func0000000000000182:                   # @func0000000000000182
 	seto	%al
 	orb	%cl, %al
 	retq
+func0000000000000050:                   # @func0000000000000050
+	addq	$-3, %rdx
+	cmpq	%rdx, %rdi
+	seta	%cl
+	testq	%rsi, %rsi
+	sete	%al
+	orb	%cl, %al
+	retq
 func0000000000000052:                   # @func0000000000000052
 	incq	%rdx
 	cmpq	%rdx, %rdi

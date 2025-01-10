@@ -1,10 +1,10 @@
 
-%"class.llvm::SmallVector.1346.3148529" = type { %"class.llvm::SmallVectorImpl.1212.3148505", %"struct.llvm::SmallVectorStorage.1347.3148530" }
-%"class.llvm::SmallVectorImpl.1212.3148505" = type { %"class.llvm::SmallVectorTemplateBase.1213.3148507" }
-%"class.llvm::SmallVectorTemplateBase.1213.3148507" = type { %"class.llvm::SmallVectorTemplateCommon.1214.3148508" }
-%"class.llvm::SmallVectorTemplateCommon.1214.3148508" = type { %"class.llvm::SmallVectorBase.3148468" }
-%"class.llvm::SmallVectorBase.3148468" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.1347.3148530" = type { [32 x i8] }
+%"class.llvm::SmallVector.1346.3148495" = type { %"class.llvm::SmallVectorImpl.1212.3148471", %"struct.llvm::SmallVectorStorage.1347.3148496" }
+%"class.llvm::SmallVectorImpl.1212.3148471" = type { %"class.llvm::SmallVectorTemplateBase.1213.3148473" }
+%"class.llvm::SmallVectorTemplateBase.1213.3148473" = type { %"class.llvm::SmallVectorTemplateCommon.1214.3148474" }
+%"class.llvm::SmallVectorTemplateCommon.1214.3148474" = type { %"class.llvm::SmallVectorBase.3148434" }
+%"class.llvm::SmallVectorBase.3148434" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.1347.3148496" = type { [32 x i8] }
 
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -35,7 +35,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = getelementptr nuw [4 x %"class.llvm::SmallVector.1346.3148529"], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr nuw [4 x %"class.llvm::SmallVector.1346.3148495"], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

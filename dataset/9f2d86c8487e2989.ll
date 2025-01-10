@@ -1,5 +1,5 @@
 
-%struct.perf_guest_switch_msr.3533249 = type { i32, i64, i64 }
+%struct.perf_guest_switch_msr.3533215 = type { i32, i64, i64 }
 
 ; 9 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -307,7 +307,7 @@ define ptr @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 3552
-  %4 = getelementptr %struct.perf_guest_switch_msr.3533249, ptr %3, i64 %0
+  %4 = getelementptr %struct.perf_guest_switch_msr.3533215, ptr %3, i64 %0
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }

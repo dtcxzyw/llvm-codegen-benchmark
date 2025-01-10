@@ -1,6 +1,6 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct.ImGuiKeyData.3454249 = type { i8, float, float, float }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.ImGuiKeyData.3454215 = type { i8, float, float, float }
 
 ; 6 occurrences:
 ; cpython/optimized/frame.ll
@@ -12,7 +12,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [512 x %struct.TCGTemp.2707191], ptr %1, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   ret i64 %5
@@ -44,7 +44,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [666 x %struct.ImGuiKeyData.3454249], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [666 x %struct.ImGuiKeyData.3454215], ptr %1, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   ret i64 %5

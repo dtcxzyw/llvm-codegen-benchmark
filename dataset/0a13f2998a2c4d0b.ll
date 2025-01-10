@@ -1,14 +1,14 @@
 
-%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
-%"union.absl::debian2::container_internal::map_slot_type.3489309" = type { %"struct.std::pair.35.3489310" }
-%"struct.std::pair.35.3489310" = type { i64, %"struct.std::pair.23.3489311" }
-%"struct.std::pair.23.3489311" = type { double, %"class.std::unique_ptr.25.3489312" }
-%"class.std::unique_ptr.25.3489312" = type { %"struct.std::__uniq_ptr_data.26.3489313" }
-%"struct.std::__uniq_ptr_data.26.3489313" = type { %"class.std::__uniq_ptr_impl.27.3489314" }
-%"class.std::__uniq_ptr_impl.27.3489314" = type { %"class.std::tuple.28.3489315" }
-%"class.std::tuple.28.3489315" = type { %"struct.std::_Tuple_impl.29.3489316" }
-%"struct.std::_Tuple_impl.29.3489316" = type { %"struct.std::_Head_base.32.3489317" }
-%"struct.std::_Head_base.32.3489317" = type { ptr }
+%"class.llvm::SDValue.3146003" = type <{ ptr, i32, [4 x i8] }>
+%"union.absl::debian2::container_internal::map_slot_type.3489275" = type { %"struct.std::pair.35.3489276" }
+%"struct.std::pair.35.3489276" = type { i64, %"struct.std::pair.23.3489277" }
+%"struct.std::pair.23.3489277" = type { double, %"class.std::unique_ptr.25.3489278" }
+%"class.std::unique_ptr.25.3489278" = type { %"struct.std::__uniq_ptr_data.26.3489279" }
+%"struct.std::__uniq_ptr_data.26.3489279" = type { %"class.std::__uniq_ptr_impl.27.3489280" }
+%"class.std::__uniq_ptr_impl.27.3489280" = type { %"class.std::tuple.28.3489281" }
+%"class.std::tuple.28.3489281" = type { %"struct.std::_Tuple_impl.29.3489282" }
+%"struct.std::_Tuple_impl.29.3489282" = type { %"struct.std::_Head_base.32.3489283" }
+%"struct.std::_Head_base.32.3489283" = type { ptr }
 
 ; 71 occurrences:
 ; boost/optimized/matches_relation_factory.ll
@@ -243,7 +243,7 @@ entry:
   ret ptr %6
 }
 
-; 27 occurrences:
+; 30 occurrences:
 ; cpython/optimized/dictobject.ll
 ; git/optimized/dir.ll
 ; hermes/optimized/gtest-all.cc.ll
@@ -253,6 +253,9 @@ entry:
 ; opencv/optimized/ts_gtest.cpp.ll
 ; postgres/optimized/execTuples.ll
 ; qemu/optimized/dump_dump.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/libvduse.c.ll
+; qemu/optimized/libvhost-user.c.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
@@ -460,7 +463,7 @@ define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294901761
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"class.llvm::SDValue.3146037", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::SDValue.3146003", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -476,8 +479,8 @@ define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %1, i64 %4
-  %6 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.3489275", ptr %1, i64 %4
+  %6 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.3489275", ptr %5, i64 %0
   ret ptr %6
 }
 

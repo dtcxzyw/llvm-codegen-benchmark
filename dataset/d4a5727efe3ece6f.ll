@@ -211,7 +211,7 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -233,6 +233,7 @@ entry:
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; slurm/optimized/slurmdb_defs.ll
+; slurm/optimized/step_mgr.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind

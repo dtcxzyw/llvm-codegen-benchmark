@@ -72,12 +72,3 @@ func000000000000008c:                   # @func000000000000008c
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
-func0000000000000101:                   # @func0000000000000101
-	sext.w	a0, a0
-	and	a1, a1, a2
-	sext.w	a1, a1
-	sltiu	a0, a0, 2
-	seqz	a1, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
-	ret

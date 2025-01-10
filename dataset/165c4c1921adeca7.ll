@@ -1,5 +1,5 @@
 
-; 2147 occurrences:
+; 2145 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cmd.c.ll
 ; abc/optimized/giaAiger.c.ll
@@ -855,7 +855,6 @@
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCDXContainerWriter.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/MCObjectFileInfo.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachineCombiner.cpp.ll
@@ -1374,7 +1373,6 @@
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
-; openusd/optimized/variableExpressionParser.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll

@@ -1,8 +1,8 @@
 
-%"struct.mold::elf::FdeRecord.2637478" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2637479", i8 }>
-%"struct.mold::Atomic.2637479" = type { %"struct.std::atomic.94.2637403" }
-%"struct.std::atomic.94.2637403" = type { %"struct.std::__atomic_base.95.2637406" }
-%"struct.std::__atomic_base.95.2637406" = type { i8 }
+%"struct.mold::elf::FdeRecord.2637445" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2637446", i8 }>
+%"struct.mold::Atomic.2637446" = type { %"struct.std::atomic.94.2637370" }
+%"struct.std::atomic.94.2637370" = type { %"struct.std::__atomic_base.95.2637373" }
+%"struct.std::__atomic_base.95.2637373" = type { i8 }
 
 ; 127 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
@@ -138,7 +138,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = icmp eq i32 %2, -1
   %5 = select i1 %4, i64 %1, i64 %3
-  %6 = getelementptr nusw %"struct.mold::elf::FdeRecord.2637478", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::FdeRecord.2637445", ptr %0, i64 %5
   ret ptr %6
 }
 

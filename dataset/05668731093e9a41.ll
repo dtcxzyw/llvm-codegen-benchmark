@@ -1,5 +1,5 @@
 
-%"struct.re2::Splice.2601793" = type { ptr, ptr, i32, i32 }
+%"struct.re2::Splice.2601760" = type { ptr, ptr, i32, i32 }
 
 ; 72 occurrences:
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -82,7 +82,8 @@ entry:
   ret ptr %4
 }
 
-; 218 occurrences:
+; 223 occurrences:
+; abc/optimized/dsdTree.c.ll
 ; abc/optimized/giaDfs.c.ll
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaTruth.c.ll
@@ -142,6 +143,7 @@ entry:
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; folly/optimized/Elf.cpp.ll
 ; folly/optimized/LogStream.cpp.ll
 ; folly/optimized/ShutdownSocketSet.cpp.ll
 ; graphviz/optimized/blockpath.c.ll
@@ -191,6 +193,7 @@ entry:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; mitsuba3/optimized/irregular.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
@@ -234,6 +237,8 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/fileSystem.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/zend_gc.ll
 ; php/optimized/zend_hash.ll
 ; php/optimized/zend_sort.ll
@@ -309,10 +314,9 @@ entry:
   ret ptr %4
 }
 
-; 7801 occurrences:
+; 7798 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
-; abc/optimized/dsdTree.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/absl_check_test.cc.ll
@@ -1851,7 +1855,6 @@ entry:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll
-; eastl/optimized/EAMemory.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
@@ -1980,7 +1983,6 @@ entry:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/Elf.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
 ; folly/optimized/EnvUtil.cpp.ll
 ; folly/optimized/ExceptionTracerLib.cpp.ll
@@ -8115,7 +8117,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 384307168202282325, i64 %2
-  %4 = getelementptr nusw nuw %"struct.re2::Splice.2601793", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.re2::Splice.2601760", ptr %0, i64 %3
   ret ptr %4
 }
 

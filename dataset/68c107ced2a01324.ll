@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823000 = type { float, float, float }
+%class.aiVector3t.2822966 = type { float, float, float }
 
 ; 5 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -24,8 +24,8 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %class.aiVector3t.2823000, ptr %0, i64 %1
-  %6 = getelementptr %class.aiVector3t.2823000, ptr %5, i64 %4
+  %5 = getelementptr %class.aiVector3t.2822966, ptr %0, i64 %1
+  %6 = getelementptr %class.aiVector3t.2822966, ptr %5, i64 %4
   ret ptr %6
 }
 

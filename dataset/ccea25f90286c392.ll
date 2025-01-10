@@ -1,5 +1,5 @@
 
-; 632 occurrences:
+; 634 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/casCore.c.ll
@@ -39,6 +39,7 @@
 ; cmake/optimized/inffast.c.ll
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -50,6 +51,7 @@
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/xmlparse.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll

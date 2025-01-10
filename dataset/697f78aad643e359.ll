@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 191 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
@@ -30,6 +30,7 @@
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/residual_block_utils.cc.ll
 ; clamav/optimized/rs.cpp.ll
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll

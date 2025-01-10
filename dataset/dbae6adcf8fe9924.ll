@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
-%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3085326" = type { %"class.hermes::vm::HermesValue32.3085325" }
+%"class.hermes::vm::HermesValue32.3085325" = type { i32 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -104,7 +104,7 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
-  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085360", ptr %4, i64 %0
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085326", ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -196
   ret ptr %6
 }

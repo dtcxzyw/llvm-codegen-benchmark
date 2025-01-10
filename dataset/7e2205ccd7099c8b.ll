@@ -1,5 +1,5 @@
 
-; 1658 occurrences:
+; 1660 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -682,6 +682,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/regcomp.c.ll
+; lua/optimized/lstrlib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.test.cpp.ll
@@ -702,6 +703,7 @@
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll

@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::ConcurrentArena::Shard.2625629" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625630", ptr, %"struct.std::atomic.2625631" }
-%"class.rocksdb::SpinMutex.2625630" = type { %"struct.std::atomic.94.2625632" }
-%"struct.std::atomic.94.2625632" = type { %"struct.std::__atomic_base.95.2625633" }
-%"struct.std::__atomic_base.95.2625633" = type { i8 }
-%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
-%"struct.std::__atomic_base.2625634" = type { i64 }
-%"struct.std::atomic.265.2638962" = type { %"struct.std::__atomic_base.266.2638963" }
-%"struct.std::__atomic_base.266.2638963" = type { ptr }
+%"struct.rocksdb::ConcurrentArena::Shard.2625596" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625597", ptr, %"struct.std::atomic.2625598" }
+%"class.rocksdb::SpinMutex.2625597" = type { %"struct.std::atomic.94.2625599" }
+%"struct.std::atomic.94.2625599" = type { %"struct.std::__atomic_base.95.2625600" }
+%"struct.std::__atomic_base.95.2625600" = type { i8 }
+%"struct.std::atomic.2625598" = type { %"struct.std::__atomic_base.2625601" }
+%"struct.std::__atomic_base.2625601" = type { i64 }
+%"struct.std::atomic.265.2638929" = type { %"struct.std::__atomic_base.266.2638930" }
+%"struct.std::__atomic_base.266.2638930" = type { ptr }
 
 ; 9 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
@@ -222,7 +222,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr nusw nuw %"struct.rocksdb::ConcurrentArena::Shard.2625629", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::ConcurrentArena::Shard.2625596", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -273,7 +273,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr nusw %"struct.std::atomic.265.2638962", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.std::atomic.265.2638929", ptr %0, i64 %4
   ret ptr %5
 }
 

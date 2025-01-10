@@ -37,8 +37,8 @@ func0000000000000026:                   // @func0000000000000026
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	w8, w0, #0xfffffffe
-	cmp	w8, #2
+	mov	w8, #-9                         // =0xfffffff7
+	bics	wzr, w8, w0
 	cset	w0, eq
 	ret
                                         // -- End function

@@ -287,6 +287,15 @@ func000000000000008a:                   // @func000000000000008a
 	csel	w0, wzr, w8, le
 	ret
                                         // -- End function
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+	cmp	w2, #255
+	cset	w8, lt
+	cmp	w1, #0
+	and	w8, w8, w0
+	csel	w0, wzr, w8, ne
+	ret
+                                        // -- End function
 func0000000000000086:                   // @func0000000000000086
 // %bb.0:                               // %entry
 	cmp	w2, #3

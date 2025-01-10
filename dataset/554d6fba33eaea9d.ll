@@ -106,6 +106,17 @@ entry:
   ret i1 %3
 }
 
+; 2 occurrences:
+; clamav/optimized/matcher-bm.c.ll
+; wireshark/optimized/packet-bgp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i32 %0) #0 {
+entry:
+  %1 = trunc nuw i32 %0 to i16
+  %2 = icmp eq i16 %1, 1
+  ret i1 %2
+}
+
 ; 8 occurrences:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -141,16 +152,6 @@ define i1 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i16
   %2 = icmp eq i16 %1, 11
-  ret i1 %2
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-bgp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0) #0 {
-entry:
-  %1 = trunc nuw i32 %0 to i16
-  %2 = icmp eq i16 %1, 9
   ret i1 %2
 }
 

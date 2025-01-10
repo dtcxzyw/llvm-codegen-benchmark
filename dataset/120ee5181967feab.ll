@@ -199,17 +199,6 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 255
-  %3 = add i64 %2, 18
-  %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
 ; 4 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll

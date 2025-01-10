@@ -1,9 +1,9 @@
 
-%"class.std::__cxx11::basic_string.3866719" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866720", i64, %union.anon.3866721 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866720" = type { ptr }
-%union.anon.3866721 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3866669" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866670", i64, %union.anon.3866671 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3866670" = type { ptr }
+%union.anon.3866671 = type { i64, [8 x i8] }
 
-; 329 occurrences:
+; 352 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -13,7 +13,30 @@
 ; arrow/optimized/builder_run_end.cc.ll
 ; arrow/optimized/ree_util.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -373,7 +396,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.3866719", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.3866669", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = select i1 %0, ptr %1, ptr %4
   %6 = ptrtoint ptr %5 to i64

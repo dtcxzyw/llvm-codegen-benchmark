@@ -633,7 +633,7 @@ entry:
   ret i32 %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/rwrLib.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
@@ -649,7 +649,6 @@ entry:
 ; linux/optimized/iosf_mbi.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/map.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; spike/optimized/debug_module.ll
 ; stockfish/optimized/tbprobe.ll

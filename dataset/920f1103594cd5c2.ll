@@ -535,7 +535,7 @@ entry:
   ret i64 %2
 }
 
-; 1529 occurrences:
+; 1530 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/deflate.c.ll
@@ -738,6 +738,7 @@ entry:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/chunk-format.ll
 ; git/optimized/diff-lib.ll
+; git/optimized/line-log.ll
 ; git/optimized/parallel-checkout.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/revision.ll
@@ -2844,7 +2845,7 @@ entry:
   ret i64 %2
 }
 
-; 263 occurrences:
+; 264 occurrences:
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifTune.c.ll
@@ -2980,6 +2981,7 @@ entry:
 ; openblas/optimized/dlansf.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; opencc/optimized/bit-vector.cc.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/signal_resample.cpp.ll

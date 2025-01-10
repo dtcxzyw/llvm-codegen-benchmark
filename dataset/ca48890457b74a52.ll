@@ -1,7 +1,10 @@
 
-; 16 occurrences:
+; 20 occurrences:
+; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/ole2_extract.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -13,6 +16,7 @@
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; php/optimized/KeccakSponge.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
@@ -66,7 +70,25 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; clamav/optimized/bytecode_api.c.ll
+; clamav/optimized/sis.c.ll
+; clamav/optimized/tnef.c.ll
+; clamav/optimized/unarj.c.ll
+; libpng/optimized/pngrutil.c.ll
+; openjdk/optimized/pngrutil.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002b(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  %6 = trunc nuw nsw i64 %5 to i32
+  ret i32 %6
+}
+
+; 2 occurrences:
+; lief/optimized/ssl_msg.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
@@ -78,8 +100,11 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/qopen.cpp.ll
+; linux/optimized/scatterwalk.ll
+; linux/optimized/serial_core.ll
 ; postgres/optimized/bbstreamer_tar.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000023(i64 %0, i64 %1, i32 %2) #0 {
@@ -87,21 +112,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = trunc nuw nsw i64 %5 to i32
-  ret i32 %6
-}
-
-; 4 occurrences:
-; clamav/optimized/bytecode_api.c.ll
-; clamav/optimized/sis.c.ll
-; clamav/optimized/tnef.c.ll
-; clamav/optimized/unarj.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002b(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw i64 %1, %2
-  %4 = zext nneg i32 %0 to i64
-  %5 = call i64 @llvm.umin.i64(i64 range(i64 1, 4294967296) %4, i64 %3)
   %6 = trunc nuw nsw i64 %5 to i32
   ret i32 %6
 }

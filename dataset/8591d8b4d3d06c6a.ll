@@ -1,5 +1,5 @@
 
-%struct.max_align_t.3717359 = type { i64, x86_fp80 }
+%struct.max_align_t.3717309 = type { i64, x86_fp80 }
 
 ; 5 occurrences:
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -634,7 +634,7 @@ entry:
   %2 = add nuw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.max_align_t.3717359, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.max_align_t.3717309, ptr %0, i64 %4
   ret ptr %5
 }
 

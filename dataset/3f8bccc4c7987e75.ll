@@ -1,7 +1,7 @@
 
-%struct.CXzFilter.3062977 = type { i64, i32, [20 x i8] }
-%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
-%union.RelptrFreePageBtree.3653937 = type { ptr }
+%struct.CXzFilter.3062943 = type { i64, i32, [20 x i8] }
+%struct.FreePageBtreeInternalKey.3653902 = type { i64, %union.RelptrFreePageBtree.3653903 }
+%union.RelptrFreePageBtree.3653903 = type { ptr }
 
 ; 15 occurrences:
 ; boost/optimized/static_string.ll
@@ -109,7 +109,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw nuw [4 x %struct.CXzFilter.3062977], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [4 x %struct.CXzFilter.3062943], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -132,7 +132,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 24
-  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

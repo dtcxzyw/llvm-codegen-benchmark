@@ -7,9 +7,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v12, 12
+	vsrl.vi	v12, v12, 16
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
-	li	a0, 16
+	lui	a0, 512
 	vor.vx	v8, v8, a0
 	ret

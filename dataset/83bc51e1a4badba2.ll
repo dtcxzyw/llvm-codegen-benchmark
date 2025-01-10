@@ -1,8 +1,8 @@
 
-%struct.Lf_Plc_t_.2877720 = type { i32 }
-%"class.llvm::APInt.3287071" = type <{ %union.anon.240.3287072, i32, [4 x i8] }>
-%union.anon.240.3287072 = type { i64 }
-%struct.ssh_peer_data.3453394 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
+%struct.Lf_Plc_t_.2877686 = type { i32 }
+%"class.llvm::APInt.3287037" = type <{ %union.anon.240.3287038, i32, [4 x i8] }>
+%union.anon.240.3287038 = type { i64 }
+%struct.ssh_peer_data.3453360 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; abc/optimized/amapMatch.c.ll
@@ -62,7 +62,7 @@ define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %struct.Lf_Plc_t_.2877720], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %struct.Lf_Plc_t_.2877686], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -84,7 +84,7 @@ define ptr @func000000000000004b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %"class.llvm::APInt.3287071"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %"class.llvm::APInt.3287037"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -106,7 +106,7 @@ define ptr @func0000000000000060(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr [2 x %struct.ssh_peer_data.3453394], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [2 x %struct.ssh_peer_data.3453360], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

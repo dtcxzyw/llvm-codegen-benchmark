@@ -223,7 +223,7 @@ entry:
 ; libquic/optimized/packeted_bio.cc.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/af_unix.ll
-; linux/optimized/i915_gem_shmem.ll
+; linux/optimized/ip6_output.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
@@ -443,8 +443,7 @@ entry:
   ret i1 %3
 }
 
-; 28 occurrences:
-; cmake/optimized/gzwrite.c.ll
+; 21 occurrences:
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/limex_simd128.c.ll
@@ -452,26 +451,20 @@ entry:
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/gup.ll
 ; linux/optimized/iterator.ll
-; linux/optimized/vc_screen.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; llvm/optimized/circular_raw_ostream.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/png.ll
-; portaudio/optimized/pa_sndio.c.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
-; raylib/optimized/raudio.c.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
-; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
@@ -581,16 +574,6 @@ entry:
   %3 = sub i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
-}
-
-; 1 occurrences:
-; slurm/optimized/KangarooTwelve.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = icmp ne i64 %0, %2
-  ret i1 %3
 }
 
 ; 2 occurrences:

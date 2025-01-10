@@ -76,7 +76,7 @@ entry:
   ret i32 %6
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmListFileLexer.c.ll
@@ -88,7 +88,6 @@ entry:
 ; curl/optimized/libcurl_la-hostip.ll
 ; git/optimized/apply.ll
 ; git/optimized/ref-filter.ll
-; git/optimized/xutils.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -188,6 +187,7 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/sparse-index.ll
 ; git/optimized/unpack-trees.ll
+; git/optimized/xutils.ll
 ; gromacs/optimized/inffast.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -249,7 +249,6 @@ entry:
 ; protobuf/optimized/parse_context.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
 ; proxygen/optimized/ZlibStreamDecompressor.cpp.ll
-; raylib/optimized/rcore.c.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; slurm/optimized/xstring.ll

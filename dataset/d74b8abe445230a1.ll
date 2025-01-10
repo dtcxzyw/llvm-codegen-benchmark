@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 50 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -7,6 +7,7 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; cpython/optimized/dtoa.ll
+; darktable/optimized/IiqDecoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -22,6 +23,8 @@
 ; llvm/optimized/APInt.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; oiio/optimized/iptc.cpp.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -30,6 +33,7 @@
 ; opencv/optimized/sum.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_mod.ll
 ; openssl/optimized/libcrypto-shlib-bn_mod.ll
+; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/md.ll
 ; postgres/optimized/snprintf.ll
@@ -40,6 +44,8 @@
 ; qemu/optimized/net_net.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/util.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-awdl.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
@@ -54,7 +60,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 149 occurrences:
+; 151 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/infback.c.ll
@@ -144,6 +150,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wireshark/optimized/packet-netlink.c.ll
@@ -157,6 +164,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; wolfssl/optimized/chacha.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls13.c.ll

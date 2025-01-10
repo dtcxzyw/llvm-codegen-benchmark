@@ -786,21 +786,6 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; icu/optimized/collationiterator.ll
-; linux/optimized/intel_ddi.ll
-; linux/optimized/intel_display.ll
-; linux/optimized/intel_dp_aux.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ugt i16 %1, 3
-  %3 = icmp sgt i32 %0, 3
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
 ; 3 occurrences:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; wireshark/optimized/packet-rtps.c.ll
@@ -822,6 +807,20 @@ define i1 @func0000000000000198(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp samesign ugt i32 %0, 3
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 4 occurrences:
+; icu/optimized/collationiterator.ll
+; linux/optimized/intel_ddi.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/intel_dp_aux.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 12
+  %3 = icmp sgt i32 %0, 6
   %4 = and i1 %3, %2
   ret i1 %4
 }

@@ -5,7 +5,7 @@ func000000000000000f:                   # @func000000000000000f
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovel	%eax, %ecx
-	leaq	1160(%rdi,%rcx,8), %rax
+	leaq	264(%rdi,%rcx,8), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	notb	%dl

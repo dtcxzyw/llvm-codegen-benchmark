@@ -11,10 +11,6 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 64
 	vmsltu.vx	v0, v10, a0
 	ret
-func00000000000001c1:                   # @func00000000000001c1
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmclr.m	v0
-	ret
 func00000000000001f4:                   # @func00000000000001f4
 	lui	a0, 3
 	addiw	a0, a0, 57

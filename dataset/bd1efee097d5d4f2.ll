@@ -1,13 +1,13 @@
 
-%struct.Gia_Obj_t_.2877640 = type <{ i64, i32 }>
-%struct.page.3545490 = type { i64, %union.anon.8.3545491, %union.anon.16.3545492, %struct.atomic_t.3545493, [8 x i8] }
-%union.anon.8.3545491 = type { %struct.anon.9.3545494 }
-%struct.anon.9.3545494 = type { %union.anon.10.3545495, ptr, %union.anon.12.3545496, i64 }
-%union.anon.10.3545495 = type { %struct.list_head.3545497 }
-%struct.list_head.3545497 = type { ptr, ptr }
-%union.anon.12.3545496 = type { i64 }
-%union.anon.16.3545492 = type { %struct.atomic_t.3545493 }
-%struct.atomic_t.3545493 = type { i32 }
+%struct.Gia_Obj_t_.2877606 = type <{ i64, i32 }>
+%struct.page.3545456 = type { i64, %union.anon.8.3545457, %union.anon.16.3545458, %struct.atomic_t.3545459, [8 x i8] }
+%union.anon.8.3545457 = type { %struct.anon.9.3545460 }
+%struct.anon.9.3545460 = type { %union.anon.10.3545461, ptr, %union.anon.12.3545462, i64 }
+%union.anon.10.3545461 = type { %struct.list_head.3545463 }
+%struct.list_head.3545463 = type { ptr, ptr }
+%union.anon.12.3545462 = type { i64 }
+%union.anon.16.3545458 = type { %struct.atomic_t.3545459 }
+%struct.atomic_t.3545459 = type { i32 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -28,7 +28,7 @@ define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877640, ptr %4, i64 %1
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877606, ptr %4, i64 %1
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -52,7 +52,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %struct.page.3545490, ptr %4, i64 %1
+  %5 = getelementptr %struct.page.3545456, ptr %4, i64 %1
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

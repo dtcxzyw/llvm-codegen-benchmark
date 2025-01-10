@@ -1,8 +1,8 @@
 
-%struct.CPUTLBEntryFull.2707266 = type { i64, i64, %struct.MemTxAttrs.2707268, i8, i8, [3 x i8], %union.anon.3.2707269 }
-%struct.MemTxAttrs.2707268 = type { i32 }
-%union.anon.3.2707269 = type { %struct.anon.4.2707270 }
-%struct.anon.4.2707270 = type { i8, i8, i8 }
+%struct.CPUTLBEntryFull.2707232 = type { i64, i64, %struct.MemTxAttrs.2707234, i8, i8, [3 x i8], %union.anon.3.2707235 }
+%struct.MemTxAttrs.2707234 = type { i32 }
+%union.anon.3.2707235 = type { %struct.anon.4.2707236 }
+%struct.anon.4.2707236 = type { i8, i8, i8 }
 
 ; 4 occurrences:
 ; linux/optimized/buffer.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.CPUTLBEntryFull.2707266, ptr %0, i64 %4
+  %5 = getelementptr %struct.CPUTLBEntryFull.2707232, ptr %0, i64 %4
   ret ptr %5
 }
 

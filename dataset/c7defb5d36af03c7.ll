@@ -11,6 +11,7 @@
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; linux/optimized/dma-fence-chain.ll
 ; linux/optimized/dma-resv.ll
+; linux/optimized/hub.ll
 ; linux/optimized/ttm_bo_util.ll
 ; linux/optimized/virtgpu_fence.ll
 ; llvm/optimized/DFAEmitter.cpp.ll
@@ -28,7 +29,6 @@
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/s_sub256M.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

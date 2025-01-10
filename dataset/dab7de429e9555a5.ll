@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 44 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -114,7 +114,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %3
+  %4 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 28
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

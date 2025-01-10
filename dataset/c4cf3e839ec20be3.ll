@@ -1,5 +1,5 @@
 
-%struct.be128.3558475 = type { i64, i64 }
+%struct.be128.3558441 = type { i64, i64 }
 
 ; 11 occurrences:
 ; abc/optimized/abcIvy.c.ll
@@ -71,7 +71,7 @@ entry:
   %2 = shl i32 %1, 25
   %3 = ashr i32 %2, 31
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.be128.3558475, ptr %0, i64 %4
+  %5 = getelementptr %struct.be128.3558441, ptr %0, i64 %4
   ret ptr %5
 }
 

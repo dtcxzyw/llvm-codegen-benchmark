@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; darktable/optimized/metadata_view.c.ll
 ; git/optimized/add-interactive.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/xfrm_policy.ll
 ; minetest/optimized/touchscreengui.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hyperscan/optimized/order.cpp.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/memory.ll
 ; linux/optimized/nvs.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/shmem.ll
@@ -17,6 +18,7 @@
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:

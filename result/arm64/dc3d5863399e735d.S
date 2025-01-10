@@ -6,11 +6,6 @@ func00000000000001a1:                   // @func00000000000001a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	mov	w0, #0                          // =0x0
-	ret
-                                        // -- End function
 func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
 	add	w8, w0, w1

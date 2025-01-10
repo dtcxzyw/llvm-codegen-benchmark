@@ -1,5 +1,5 @@
 
-; 242 occurrences:
+; 244 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/value_semantic.ll
@@ -42,6 +42,7 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -117,6 +118,7 @@
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -251,7 +253,7 @@ entry:
   ret i1 %4
 }
 
-; 499 occurrences:
+; 500 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -375,6 +377,7 @@ entry:
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -886,7 +889,7 @@ entry:
   ret i1 %4
 }
 
-; 465 occurrences:
+; 466 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
@@ -994,6 +997,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -1781,7 +1785,7 @@ entry:
   ret i1 %4
 }
 
-; 142 occurrences:
+; 140 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; casadi/optimized/map.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -1848,7 +1852,6 @@ entry:
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; luau/optimized/isocline.c.ll
@@ -1908,7 +1911,6 @@ entry:
 ; slurm/optimized/bitstring.ll
 ; sundials/optimized/sundials_dense.c.ll
 ; sundials/optimized/sunmatrix_dense.c.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tokio-rs/optimized/58zica37k9qw0rn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
@@ -3051,7 +3053,7 @@ entry:
   ret i1 %4
 }
 
-; 41 occurrences:
+; 39 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -3075,7 +3077,6 @@ entry:
 ; hdf5/optimized/H5Lexternal.c.ll
 ; hdf5/optimized/H5TB.c.ll
 ; hermes/optimized/Math.cpp.ll
-; libquic/optimized/time.cc.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -3084,7 +3085,6 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/convertnode.ll
-; php/optimized/tm2unixtime.ll
 ; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/time_util.cc.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -3387,11 +3387,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; linux/optimized/gen6_ppgtt.ll
-; linux/optimized/nls_base.ll
 ; linux/optimized/sock.ll
 ; redis/optimized/object.ll
 ; Function Attrs: nounwind

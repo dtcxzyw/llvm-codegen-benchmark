@@ -1,5 +1,5 @@
 
-; 986 occurrences:
+; 988 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -257,6 +257,7 @@
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/collation.ll
+; icu/optimized/collationdatawriter.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/gencnvex.ll
 ; icu/optimized/genmbcs.ll
@@ -958,6 +959,7 @@
 ; z3/optimized/smt_enode.cpp.ll
 ; z3/optimized/smt_justification.cpp.ll
 ; z3/optimized/smt_model_generator.cpp.ll
+; z3/optimized/theory_array_full.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
@@ -994,7 +996,7 @@ entry:
   ret i32 %3
 }
 
-; 279 occurrences:
+; 277 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -1143,13 +1145,11 @@ entry:
 ; lvgl/optimized/lv_binfont_loader.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; lz4/optimized/lz4frame.c.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_etheraton.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openblas/optimized/dtrsyl3.c.ll
@@ -1972,7 +1972,7 @@ entry:
   ret i32 %3
 }
 
-; 211 occurrences:
+; 209 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -1994,7 +1994,6 @@ entry:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -2035,7 +2034,6 @@ entry:
 ; icu/optimized/cecal.ll
 ; icu/optimized/genmbcs.ll
 ; icu/optimized/store.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/wrtjava.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; jq/optimized/jv_dtoa.ll
@@ -2487,7 +2485,7 @@ entry:
   ret i32 %3
 }
 
-; 150 occurrences:
+; 149 occurrences:
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -2527,7 +2525,6 @@ entry:
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/csrsbcs.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -2773,7 +2770,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -2785,7 +2782,6 @@ entry:
 ; linux/optimized/hidraw.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
-; nuklear/optimized/unity.c.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll

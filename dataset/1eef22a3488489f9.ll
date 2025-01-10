@@ -1,5 +1,5 @@
 
-; 251 occurrences:
+; 250 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -110,7 +110,6 @@
 ; ncnn/optimized/mat.cpp.ll
 ; node/optimized/simdutf.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/constantPool.ll

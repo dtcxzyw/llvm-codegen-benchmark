@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/StringMap.cpp.ll
 ; llvm/optimized/StringMap.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
+; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

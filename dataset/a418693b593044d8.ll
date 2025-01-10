@@ -1,5 +1,5 @@
 
-%struct.HistogramLiteral.3843252 = type { [256 x i32], i64, double }
+%struct.HistogramLiteral.3843202 = type { [256 x i32], i64, double }
 
 ; 5 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -40,7 +40,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %struct.HistogramLiteral.3843252, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %struct.HistogramLiteral.3843202, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

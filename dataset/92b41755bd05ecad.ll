@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653" = type { i8, i8, [6 x i8] }
 
 ; 24 occurrences:
 ; gromacs/optimized/matio.cpp.ll
@@ -32,7 +32,7 @@ entry:
   %3 = lshr i32 %2, 22
   %4 = and i32 %3, 31
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653", ptr %1, i64 %5
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

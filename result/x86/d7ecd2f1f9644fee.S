@@ -48,9 +48,10 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	shll	$4, %edx
+	shll	$20, %edx
 	andl	$1, %esi
-	leal	(%rdx,%rsi,4), %eax
+	shll	$13, %esi
+	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001

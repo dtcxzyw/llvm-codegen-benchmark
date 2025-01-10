@@ -25,7 +25,7 @@ entry:
   ret i64 %4
 }
 
-; 107 occurrences:
+; 109 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -82,7 +82,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-ecx_backend.ll
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/array.cpp.ll
 ; openusd/optimized/assetLocalizationDelegate.cpp.ll

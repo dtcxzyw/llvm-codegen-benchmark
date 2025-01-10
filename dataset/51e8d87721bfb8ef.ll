@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/sr.ll
 ; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
@@ -13,6 +13,7 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; qemu/optimized/block_preallocate.c.ll
 ; qemu/optimized/block_vmdk.c.ll
+; slurm/optimized/backfill.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/scancel.ll
 ; Function Attrs: nounwind

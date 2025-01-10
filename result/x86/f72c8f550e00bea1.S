@@ -90,12 +90,12 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	$4, %rdi
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000011:                   # @func0000000000000011
 	cmpq	$3, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpq	$3, %rdi
+func0000000000000031:                   # @func0000000000000031
+	cmpq	$8, %rdi
 	sete	%al
 	retq
 func000000000000007c:                   # @func000000000000007c

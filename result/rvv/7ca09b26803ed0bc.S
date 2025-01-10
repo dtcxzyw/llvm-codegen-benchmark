@@ -9,13 +9,11 @@ func0000000000000021:                   # @func0000000000000021
 	vmand.mm	v0, v9, v8
 	ret
 func000000000000002c:                   # @func000000000000002c
-	lui	a0, 524288
-	addi	a0, a0, -1
+	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
-	lui	a0, 524032
 	vnsrl.wi	v11, v8, 0
-	vmseq.vx	v8, v10, a0
+	vand.vx	v8, v10, a0
+	vmseq.vi	v8, v8, 0
 	vmsne.vi	v9, v11, 0
 	vmand.mm	v0, v9, v8
 	ret

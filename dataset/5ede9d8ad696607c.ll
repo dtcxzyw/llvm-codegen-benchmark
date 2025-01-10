@@ -1,5 +1,5 @@
 
-; 2109 occurrences:
+; 2107 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/deflate.c.ll
@@ -1110,8 +1110,6 @@
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_connection.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v2.cc.ll

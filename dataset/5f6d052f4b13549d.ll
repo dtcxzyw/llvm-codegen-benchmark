@@ -1,5 +1,5 @@
 
-; 865 occurrences:
+; 866 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec07.c.ll
@@ -560,6 +560,7 @@
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/scdf.ll
 ; php/optimized/zend_dfg.ll
 ; php/optimized/zend_inference.ll

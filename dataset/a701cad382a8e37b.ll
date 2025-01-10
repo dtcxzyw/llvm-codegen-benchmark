@@ -55,6 +55,17 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.uadd.sat.i64(i64, i64) #1
 
+; 2 occurrences:
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call i64 @llvm.uadd.sat.i64(i64 %1, i64 4)
+  %3 = icmp uge i64 %2, %0
+  ret i1 %3
+}
+
 ; 5 occurrences:
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
@@ -66,6 +77,16 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.uadd.sat.i64(i64 %1, i64 4)
   %3 = icmp ult i64 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cvc5/optimized/prop_engine.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.uadd.sat.i64(i64 %1, i64 1)
+  %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
 
 ; 2 occurrences:
 ; php/optimized/dfa_pass.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 -32
   %7 = getelementptr nusw i8, ptr %6, i64 %4
   ret ptr %7

@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
+; minetest/optimized/servermap.cpp.ll
 ; opencv/optimized/minmax.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -11,7 +12,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = tail call i32 @llvm.smax.i32(i32 %0, i32 %2)
+  %3 = call i32 @llvm.smax.i32(i32 %0, i32 %2)
   ret i32 %3
 }
 

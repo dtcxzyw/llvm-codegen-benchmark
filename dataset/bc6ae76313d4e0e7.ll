@@ -135,10 +135,9 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; ceres/optimized/dense_qr_solver.cc.ll
 ; clamav/optimized/file.cpp.ll
-; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/inet.c.ll
 ; libquic/optimized/url_canon_ip.cc.ll
 ; libuv/optimized/inet.c.ll
@@ -149,7 +148,6 @@ entry:
 ; openmpi/optimized/nbc_ireduce.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
-; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -267,6 +265,18 @@ entry:
   %3 = select i1 %1, i32 -16, i32 %2
   %4 = add nsw i32 %0, %3
   %5 = icmp ult i32 %4, 65
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/fse_compress.c.ll
+; zstd/optimized/fse_compress.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 0, i32 %2
+  %4 = add nsw i32 %3, %0
+  %5 = icmp ne i32 %4, 1
   ret i1 %5
 }
 

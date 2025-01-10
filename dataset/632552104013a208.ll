@@ -10,6 +10,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; php/optimized/dce.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = and i64 %2, 2305843009213693944
+  %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll

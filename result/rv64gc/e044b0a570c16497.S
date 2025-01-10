@@ -117,6 +117,11 @@ func0000000000000108:                   # @func0000000000000108
 	subw	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
+func0000000000000188:                   # @func0000000000000188
+	sext.w	a2, a2
+	subw	a0, a0, a1
+	sltu	a0, a2, a0
+	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a2
 	subw	a0, a0, a1
@@ -149,11 +154,6 @@ func0000000000000024:                   # @func0000000000000024
 	sext.w	a2, a2
 	subw	a0, a0, a1
 	sltu	a0, a0, a2
-	ret
-func0000000000000188:                   # @func0000000000000188
-	sext.w	a2, a2
-	subw	a0, a0, a1
-	sltu	a0, a2, a0
 	ret
 func0000000000000186:                   # @func0000000000000186
 	sext.w	a2, a2

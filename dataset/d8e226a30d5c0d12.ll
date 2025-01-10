@@ -1,9 +1,9 @@
 
-%"struct.OT::HBGlyphID16.2735729" = type { %"struct.OT::IntType.0.2735699" }
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
+%"struct.OT::HBGlyphID16.2735695" = type { %"struct.OT::IntType.0.2735665" }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
 
 ; 28 occurrences:
 ; clamav/optimized/sis.c.ll
@@ -73,7 +73,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735729"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735695"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -85,7 +85,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2742031"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2741997"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -100,7 +100,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2742031"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2741997"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1604,6 +1604,7 @@ entry:
 ; libquic/optimized/url_canon_host.cc.ll
 ; linux/optimized/intel_fbc.ll
 ; linux/optimized/ohci-hcd.ll
+; linux/optimized/trace_output.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; opencv/optimized/ts.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
@@ -1615,7 +1616,6 @@ entry:
 ; openssl/optimized/quicfaultstest-bin-noisydgrambio.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/php_pcre.ll
-; postgres/optimized/inet_net_pton.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll

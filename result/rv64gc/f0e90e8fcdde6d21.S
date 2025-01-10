@@ -60,11 +60,6 @@ func0000000000000046:                   # @func0000000000000046
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
-	addiw	a1, a1, -4
-	sltiu	a1, a1, 48
-	or	a0, a0, a1
-	ret
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a1, a1
 	addi	a1, a1, -2

@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/list.cpp.ll
@@ -29,6 +29,7 @@
 ; linux/optimized/sky2.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/trace_output.ll
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll

@@ -1,22 +1,22 @@
 
-%struct.blk_rq_stat.3554510 = type { i64, i64, i64, i32, i64 }
-%struct.bin_s.3659892 = type { %struct.malloc_mutex_s.3659865, %struct.bin_stats_s.3659891, ptr, %struct.edata_heap_t.3659893, %struct.edata_list_active_t.3659894 }
-%struct.malloc_mutex_s.3659865 = type { %union.anon.3659867 }
-%union.anon.3659867 = type { %struct.anon.1.3659868 }
-%struct.anon.1.3659868 = type { %struct.mutex_prof_data_t.3659869, %union.pthread_mutex_t.3659870, %struct.atomic_b_t.3659871 }
-%struct.mutex_prof_data_t.3659869 = type { %struct.nstime_t.3659872, %struct.nstime_t.3659872, i64, i64, i32, %struct.atomic_u32_t.3659873, i64, ptr, i64 }
-%struct.nstime_t.3659872 = type { i64 }
-%struct.atomic_u32_t.3659873 = type { i32 }
-%union.pthread_mutex_t.3659870 = type { %struct.__pthread_mutex_s.3659874 }
-%struct.__pthread_mutex_s.3659874 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.3659875 }
-%struct.__pthread_internal_list.3659875 = type { ptr, ptr }
-%struct.atomic_b_t.3659871 = type { i8 }
-%struct.bin_stats_s.3659891 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%struct.edata_heap_t.3659893 = type { %struct.ph_s.3659895 }
-%struct.ph_s.3659895 = type { ptr, i64 }
-%struct.edata_list_active_t.3659894 = type { %struct.anon.3.3659896 }
-%struct.anon.3.3659896 = type { ptr }
-%struct.TestObject.3895455 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.blk_rq_stat.3554476 = type { i64, i64, i64, i32, i64 }
+%struct.bin_s.3659842 = type { %struct.malloc_mutex_s.3659815, %struct.bin_stats_s.3659841, ptr, %struct.edata_heap_t.3659843, %struct.edata_list_active_t.3659844 }
+%struct.malloc_mutex_s.3659815 = type { %union.anon.3659817 }
+%union.anon.3659817 = type { %struct.anon.1.3659818 }
+%struct.anon.1.3659818 = type { %struct.mutex_prof_data_t.3659819, %union.pthread_mutex_t.3659820, %struct.atomic_b_t.3659821 }
+%struct.mutex_prof_data_t.3659819 = type { %struct.nstime_t.3659822, %struct.nstime_t.3659822, i64, i64, i32, %struct.atomic_u32_t.3659823, i64, ptr, i64 }
+%struct.nstime_t.3659822 = type { i64 }
+%struct.atomic_u32_t.3659823 = type { i32 }
+%union.pthread_mutex_t.3659820 = type { %struct.__pthread_mutex_s.3659824 }
+%struct.__pthread_mutex_s.3659824 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.3659825 }
+%struct.__pthread_internal_list.3659825 = type { ptr, ptr }
+%struct.atomic_b_t.3659821 = type { i8 }
+%struct.bin_stats_s.3659841 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
+%struct.edata_heap_t.3659843 = type { %struct.ph_s.3659845 }
+%struct.ph_s.3659845 = type { ptr, i64 }
+%struct.edata_list_active_t.3659844 = type { %struct.anon.3.3659846 }
+%struct.anon.3.3659846 = type { ptr }
+%struct.TestObject.3895405 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 21 occurrences:
 ; openjdk/optimized/c1_Runtime1.ll
@@ -245,7 +245,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %struct.blk_rq_stat.3554510, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.blk_rq_stat.3554476, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -266,7 +266,7 @@ define ptr @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nuw %struct.bin_s.3659892, ptr %4, i64 %0, i32 0, i32 0, i32 0, i32 1
+  %5 = getelementptr nuw %struct.bin_s.3659842, ptr %4, i64 %0, i32 0, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -278,7 +278,7 @@ define ptr @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %struct.TestObject.3895455, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.TestObject.3895405, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

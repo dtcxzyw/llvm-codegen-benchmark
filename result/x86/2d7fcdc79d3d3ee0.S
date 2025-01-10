@@ -9,7 +9,7 @@ func000000000000007e:                   # @func000000000000007e
 	movzbl	%dl, %eax
 	addl	%esi, %edi
 	leal	(%rdi,%rax,2), %eax
-	shrl	$3, %eax
+	shrl	$4, %eax
 	retq
 func00000000000000fe:                   # @func00000000000000fe
 	movzbl	%dl, %eax

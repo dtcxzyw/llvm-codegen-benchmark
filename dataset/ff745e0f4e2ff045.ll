@@ -85,8 +85,7 @@ entry:
   ret i32 %3
 }
 
-; 75 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 74 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; c3c/optimized/c_abi.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll

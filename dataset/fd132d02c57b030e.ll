@@ -11,7 +11,7 @@ entry:
   ret ptr %5
 }
 
-; 81 occurrences:
+; 82 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -89,6 +89,7 @@ entry:
 ; openjdk/optimized/virtualspace.ll
 ; openjdk/optimized/whitebox.ll
 ; protobuf/optimized/arena.cc.ll
+; xgboost/optimized/json.cc.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -116,12 +117,11 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; openjdk/optimized/psCardTable.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
-; xgboost/optimized/json.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:

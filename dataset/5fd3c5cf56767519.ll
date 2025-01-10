@@ -34,7 +34,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

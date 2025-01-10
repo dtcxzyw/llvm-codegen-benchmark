@@ -4,12 +4,6 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%esi, %edi
 	leal	512(%rdi), %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	notl	%esi
-	shrl	%esi
-	orl	$-65536, %esi                   # imm = 0xFFFF0000
-	leal	(%rsi,%rdi), %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	shrl	$9, %esi
 	andl	$63, %esi

@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; clamav/optimized/asn1.c.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; openusd/optimized/decodemv.c.ll
-; postgres/optimized/formatting.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i8 %0, i8 %1) #0 {

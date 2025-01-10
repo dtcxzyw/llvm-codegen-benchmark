@@ -18,11 +18,6 @@ func000000000000001f:                   # @func000000000000001f
 	movl	$32, %eax
 	subl	%ecx, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	lzcntl	%edi, %ecx
-	movl	$26, %eax
-	subl	%ecx, %eax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	lzcntl	%edi, %ecx
 	movl	$31, %eax
@@ -44,6 +39,11 @@ func0000000000000002:                   # @func0000000000000002
 	subl	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
+	lzcntl	%edi, %ecx
+	movl	$30, %eax
+	subl	%ecx, %eax
+	retq
+func000000000000000b:                   # @func000000000000000b
 	lzcntl	%edi, %ecx
 	movl	$30, %eax
 	subl	%ecx, %eax

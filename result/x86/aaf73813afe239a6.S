@@ -5,10 +5,10 @@ func0000000000000008:                   # @func0000000000000008
 	cmovaeq	%rsi, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	subq	%rdx, %rsi
-	cmpq	$-1, %rdi
-	movl	$536870912, %eax                # imm = 0x20000000
-	cmovneq	%rsi, %rax
+	movq	%rsi, %rax
+	subq	%rdx, %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	subq	%rdx, %rsi

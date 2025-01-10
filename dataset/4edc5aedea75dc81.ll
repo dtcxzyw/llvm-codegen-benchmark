@@ -85,9 +85,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/mathmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/hw_breakpoint.ll

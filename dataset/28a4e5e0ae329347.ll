@@ -1,9 +1,10 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; cmake/optimized/cfilters.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; curl/optimized/libcurl_la-cfilters.ll
 ; freetype/optimized/sfnt.c.ll
+; libwebp/optimized/cwebp.c.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/libata-core.ll
@@ -574,11 +575,10 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; freetype/optimized/raster.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; libwebp/optimized/cwebp.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i32 %1) #0 {

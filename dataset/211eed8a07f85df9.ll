@@ -1,5 +1,21 @@
 
 ; 2 occurrences:
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; proj/optimized/grids.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = tail call double @llvm.fabs.f64(double %2)
+  %4 = fcmp ole double %3, 0x7FEFFFFFFFFFFFFF
+  %5 = select i1 %4, i1 %1, i1 false
+  %6 = select i1 %5, i1 %0, i1 false
+  ret i1 %6
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare double @llvm.fabs.f64(double) #1
+
+; 2 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; Function Attrs: nounwind
@@ -11,9 +27,6 @@ entry:
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare double @llvm.fabs.f64(double) #1
 
 ; 2 occurrences:
 ; casadi/optimized/fmu2.cpp.ll

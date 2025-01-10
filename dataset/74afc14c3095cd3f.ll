@@ -1,9 +1,9 @@
 
-%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586" = type { %"struct.std::atomic.2776319", %"struct.std::atomic.111.2776389" }
-%"struct.std::atomic.2776319" = type { %"struct.std::__atomic_base.2776332" }
-%"struct.std::__atomic_base.2776332" = type { i64 }
-%"struct.std::atomic.111.2776389" = type { %"struct.std::__atomic_base.112.2776390" }
-%"struct.std::__atomic_base.112.2776390" = type { ptr }
+%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776552" = type { %"struct.std::atomic.2776285", %"struct.std::atomic.111.2776355" }
+%"struct.std::atomic.2776285" = type { %"struct.std::__atomic_base.2776298" }
+%"struct.std::__atomic_base.2776298" = type { i64 }
+%"struct.std::atomic.111.2776355" = type { %"struct.std::__atomic_base.112.2776356" }
+%"struct.std::__atomic_base.112.2776356" = type { ptr }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -37,7 +37,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = getelementptr nusw nuw i8, ptr %1, i64 40
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
-  %6 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586", ptr %5, i64 %0, i32 1
+  %6 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776552", ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

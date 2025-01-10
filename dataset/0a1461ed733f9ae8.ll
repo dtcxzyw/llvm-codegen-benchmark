@@ -1,6 +1,5 @@
 
-; 55 occurrences:
-; abc/optimized/cuddApprox.c.ll
+; 54 occurrences:
 ; gromacs/optimized/pargs.cpp.ll
 ; lief/optimized/pem.c.ll
 ; linux/optimized/efi_64.ll
@@ -58,9 +57,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 3
-  %2 = and i64 %1, 8
-  %3 = xor i64 %2, 8
+  %1 = shl i64 %0, 2
+  %2 = and i64 %1, 4
+  %3 = xor i64 %2, 4
   ret i64 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -11,6 +11,7 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; opencv/optimized/grayscale_bitmap.cpp.ll
 ; qemu/optimized/tcg-op.c.ll
+; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:

@@ -197,8 +197,7 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
+; 3 occurrences:
 ; libwebp/optimized/alpha_processing.c.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -206,8 +205,8 @@ entry:
 define i8 @func0000000000000005(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = and i8 %2, 3
-  %4 = or disjoint i8 %0, %3
+  %3 = and i8 %2, 7
+  %4 = or disjoint i8 %3, %0
   ret i8 %4
 }
 

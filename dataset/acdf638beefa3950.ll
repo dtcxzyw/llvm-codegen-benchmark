@@ -1,5 +1,5 @@
 
-%union.TValue.3680757 = type { i64 }
+%union.TValue.3680707 = type { i64 }
 
 ; 7 occurrences:
 ; abc/optimized/dauTree.c.ll
@@ -29,7 +29,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
   %5 = inttoptr i64 %1 to ptr
-  %6 = getelementptr nusw nuw %union.TValue.3680757, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %union.TValue.3680707, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }

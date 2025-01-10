@@ -1,9 +1,9 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
-%"class.std::shared_ptr.2957475" = type { %"class.std::__shared_ptr.2957476" }
-%"class.std::__shared_ptr.2957476" = type { ptr, %"class.std::__shared_count.2957477" }
-%"class.std::__shared_count.2957477" = type { ptr }
-%"class.ue2::graph_detail::vertex_descriptor.3850769" = type { ptr, i64 }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
+%"class.std::shared_ptr.2957441" = type { %"class.std::__shared_ptr.2957442" }
+%"class.std::__shared_ptr.2957442" = type { ptr, %"class.std::__shared_count.2957443" }
+%"class.std::__shared_count.2957443" = type { ptr }
+%"class.ue2::graph_detail::vertex_descriptor.3850719" = type { ptr, i64 }
 
 ; 875 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -884,7 +884,7 @@
 ; Function Attrs: nounwind
 define i1 @func000000000000022a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.std::pair.28.2602074", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = icmp sgt i64 %5, 0
@@ -1088,7 +1088,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::shared_ptr.2957475", ptr %1, i64 %2
+  %3 = getelementptr %"class.std::shared_ptr.2957441", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = icmp sgt i64 %5, 0
@@ -1140,7 +1140,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000226(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.ue2::graph_detail::vertex_descriptor.3850769", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.ue2::graph_detail::vertex_descriptor.3850719", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = icmp slt i64 %5, 0

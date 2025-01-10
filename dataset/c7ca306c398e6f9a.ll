@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.150.2729544" = type { %struct.BEInt.151.2729545 }
-%struct.BEInt.151.2729545 = type { i8 }
+%"struct.OT::IntType.150.2729510" = type { %struct.BEInt.151.2729511 }
+%struct.BEInt.151.2729511 = type { i8 }
 
 ; 14 occurrences:
 ; clamav/optimized/autoit.c.ll
@@ -24,7 +24,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.150.2729544", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.150.2729510", ptr %5, i64 %6
   ret ptr %7
 }
 

@@ -24,7 +24,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/gausstransform.cpp.ll
@@ -34,7 +34,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll

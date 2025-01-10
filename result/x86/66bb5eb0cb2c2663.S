@@ -24,10 +24,3 @@ func000000000000003c:                   # @func000000000000003c
 	orq	%rdx, %rsi
 	leaq	56(%rdi,%rsi), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	shlq	$4, %rdx
-	andl	$1, %esi
-	shll	$5, %esi
-	addq	%rdx, %rsi
-	leaq	96(%rdi,%rsi), %rax
-	retq

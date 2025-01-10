@@ -142,7 +142,7 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -161,7 +161,6 @@ entry:
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/phantom_go.cc.ll
 ; postgres/optimized/receivelog.ll
-; protobuf/optimized/unparser.cc.ll
 ; qemu/optimized/hw_9pfs_9p-synth.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; Function Attrs: nounwind

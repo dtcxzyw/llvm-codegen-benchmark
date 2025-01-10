@@ -1,4 +1,19 @@
 
+; 3 occurrences:
+; llvm/optimized/OpenMPClause.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = add nuw nsw i64 %3, 7
+  %5 = add nuw nsw i64 %4, %1
+  %6 = and i64 %5, 137438953464
+  %7 = add nuw nsw i64 %0, %6
+  ret i64 %7
+}
+
 ; 1 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; Function Attrs: nounwind

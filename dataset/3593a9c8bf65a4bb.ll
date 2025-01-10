@@ -1,5 +1,5 @@
 
-; 4066 occurrences:
+; 4067 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1322,6 +1322,7 @@
 ; gromacs/optimized/muParserBase.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; gromacs/optimized/nbnxm.cpp.ll
+; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/nm2type.cpp.ll
 ; gromacs/optimized/nosehooverchains.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
@@ -4074,7 +4075,7 @@ entry:
   ret i64 %2
 }
 
-; 2492 occurrences:
+; 2491 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -5002,7 +5003,6 @@ entry:
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; node/optimized/libnode.cares_wrap.ll
-; node/optimized/libnode.node_zlib.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/exif-canon.cpp.ll

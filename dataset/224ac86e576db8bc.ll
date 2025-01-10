@@ -1,6 +1,6 @@
 
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
 
 ; 334 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -4585,7 +4585,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 33
-  %3 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %2
   ret ptr %3
 }
 

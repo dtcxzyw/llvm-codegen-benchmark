@@ -145,11 +145,12 @@ entry:
   ret i1 %3
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
@@ -267,6 +268,16 @@ define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ult i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; openjdk/optimized/dependencies.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp sle i32 %2, %0
   ret i1 %3
 }
 

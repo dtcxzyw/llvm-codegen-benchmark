@@ -22,7 +22,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 72 occurrences:
+; 53 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -42,39 +42,20 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/collationdatabuilder.ll
-; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/dtitvinf.ll
-; icu/optimized/dtptngen.ll
 ; icu/optimized/extradata.ll
 ; icu/optimized/filteredbrk.ll
 ; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/listformatter.ll
 ; icu/optimized/locutil.ll
-; icu/optimized/msgfmt.ll
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfrule.ll
-; icu/optimized/number_longnames.ll
-; icu/optimized/numfmt.ll
-; icu/optimized/plurfmt.ll
 ; icu/optimized/rbnf.ll
-; icu/optimized/rbt_rule.ll
-; icu/optimized/reslist.ll
-; icu/optimized/selfmt.ll
 ; icu/optimized/smpdtfmt.ll
-; icu/optimized/timezone.ll
-; icu/optimized/tridpars.ll
 ; icu/optimized/tzfmt.ll
-; icu/optimized/tzgnames.ll
 ; icu/optimized/tznames_impl.ll
-; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/ucnvsel.ll
-; icu/optimized/uniset.ll
-; icu/optimized/unistr.ll
-; icu/optimized/units_router.ll
-; icu/optimized/uspoof_conf.ll
-; icu/optimized/vtzone.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; miniaudio/optimized/unity.c.ll

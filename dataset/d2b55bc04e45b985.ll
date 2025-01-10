@@ -1,11 +1,11 @@
 
-%"struct.mold::elf::ElfRel.2637475" = type { %"class.mold::LittleEndian.2637474", i8, %"class.mold::LittleEndian.417.2637476", %"class.mold::LittleEndian.418.2637477" }
-%"class.mold::LittleEndian.2637474" = type { [4 x i8] }
-%"class.mold::LittleEndian.417.2637476" = type { [3 x i8] }
-%"class.mold::LittleEndian.418.2637477" = type { [4 x i8] }
-%"struct.mold::elf::VersionPattern.2640461" = type <{ %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", i16, i8, [5 x i8] }>
-%"class.std::basic_string_view.2640338" = type { i64, ptr }
-%class.aiVector3t.2828902 = type { double, double, double }
+%"struct.mold::elf::ElfRel.2637442" = type { %"class.mold::LittleEndian.2637441", i8, %"class.mold::LittleEndian.417.2637443", %"class.mold::LittleEndian.418.2637444" }
+%"class.mold::LittleEndian.2637441" = type { [4 x i8] }
+%"class.mold::LittleEndian.417.2637443" = type { [3 x i8] }
+%"class.mold::LittleEndian.418.2637444" = type { [4 x i8] }
+%"struct.mold::elf::VersionPattern.2640428" = type <{ %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", i16, i8, [5 x i8] }>
+%"class.std::basic_string_view.2640305" = type { i64, ptr }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 63 occurrences:
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
@@ -75,7 +75,7 @@
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 12
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637475", ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637442", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -129,7 +129,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 56
-  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640461", ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640428", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -373,7 +373,7 @@ entry:
   ret ptr %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_6.cc.ll
@@ -409,6 +409,7 @@ entry:
 ; llvm/optimized/PPCaching.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -521,7 +522,7 @@ entry:
   ret ptr %5
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
@@ -553,7 +554,6 @@ entry:
 ; gromacs/optimized/qmmmoptions.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
 ; openmpi/optimized/common_monitoring.ll
@@ -652,7 +652,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 24
-  %4 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %1
+  %4 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -682,7 +682,7 @@ entry:
   ret ptr %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
@@ -694,7 +694,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
-; openusd/optimized/cdef.c.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
@@ -742,6 +741,23 @@ entry:
   ret ptr %5
 }
 
+; 7 occurrences:
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; openusd/optimized/cdef.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 288
+  %4 = getelementptr nusw i16, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 31 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -780,22 +796,6 @@ entry:
   %3 = mul i64 %2, 24
   %4 = getelementptr double, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 6 occurrences:
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw nsw i64 %2, 24
-  %4 = getelementptr nusw double, ptr %0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 

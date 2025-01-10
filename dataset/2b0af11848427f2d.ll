@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 4 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
@@ -39,7 +39,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }

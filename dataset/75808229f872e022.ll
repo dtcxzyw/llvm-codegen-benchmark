@@ -22,7 +22,7 @@ entry:
   ret i16 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -36,7 +36,6 @@ entry:
 ; openjdk/optimized/awt_parseImage.ll
 ; openusd/optimized/mvref_common.c.ll
 ; slurm/optimized/gres_filter.ll
-; slurm/optimized/job_mgr.ll
 ; spike/optimized/vwmaccu_vv.ll
 ; spike/optimized/vwmaccu_vx.ll
 ; spike/optimized/vwmulu_vv.ll
@@ -49,7 +48,7 @@ entry:
   ret i16 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; linux/optimized/alps.ll
@@ -57,7 +56,6 @@ entry:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/decodeframe.c.ll
-; slurm/optimized/common_topo.ll
 ; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
@@ -120,16 +118,6 @@ define i16 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = trunc i32 %2 to i16
-  ret i16 %3
-}
-
-; 1 occurrences:
-; slurm/optimized/gres_filter.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %0, %1
-  %3 = trunc nuw i32 %2 to i16
   ret i16 %3
 }
 

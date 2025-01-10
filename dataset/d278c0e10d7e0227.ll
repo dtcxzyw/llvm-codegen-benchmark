@@ -13,10 +13,11 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; icu/optimized/messagepattern.ll
 ; ninja/optimized/build_test.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000821(i64 %0, i64 %1) #0 {

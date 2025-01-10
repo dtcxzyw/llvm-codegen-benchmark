@@ -1,5 +1,5 @@
 
-; 789 occurrences:
+; 787 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -21,6 +21,7 @@
 ; abc/optimized/resWin.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; abc/optimized/utilSort.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -362,7 +363,6 @@
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -635,7 +635,6 @@
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
-; stb/optimized/stb_image_write.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
@@ -658,7 +657,6 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
@@ -2521,13 +2519,13 @@ entry:
 ; clamav/optimized/matcher-ac.c.ll
 ; gromacs/optimized/gmx_current.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; luau/optimized/lstrlib.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
 ; slurm/optimized/read_config.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
@@ -2565,11 +2563,10 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/giaSatMap.c.ll
-; abc/optimized/utilSort.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/infblock.c.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll

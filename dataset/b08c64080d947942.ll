@@ -303,7 +303,7 @@ entry:
   ret i1 %4
 }
 
-; 150 occurrences:
+; 149 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
@@ -361,7 +361,6 @@ entry:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
@@ -480,7 +479,7 @@ entry:
   ret i1 %4
 }
 
-; 166 occurrences:
+; 169 occurrences:
 ; hermes/optimized/TypedArray.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; jsonnet/optimized/string_utils.cpp.ll
@@ -507,6 +506,7 @@ entry:
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/DebugCheckers.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/DeclTemplate.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -572,7 +572,9 @@ entry:
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
 ; lvgl/optimized/lv_svg_render.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-arm64.cc.ll

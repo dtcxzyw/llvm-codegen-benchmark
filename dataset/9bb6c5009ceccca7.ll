@@ -399,8 +399,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 4 occurrences:
 ; spike/optimized/pkbb16.ll
 ; spike/optimized/pkbt16.ll
 ; spike/optimized/pktb16.ll
@@ -413,8 +412,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/key_map.cc.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; spike/optimized/insb.ll
 ; spike/optimized/mmu.ll
 ; spike/optimized/triggers.ll

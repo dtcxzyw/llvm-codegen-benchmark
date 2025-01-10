@@ -8,11 +8,6 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	%eax, %edi
 	cmovll	%edi, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
-	leal	-1(%rsi), %eax
-	cmpl	%edi, %eax
-	cmovgel	%edi, %eax
-	retq
 func000000000000001a:                   # @func000000000000001a
 	leal	1(%rsi), %eax
 	cmpl	%edi, %eax

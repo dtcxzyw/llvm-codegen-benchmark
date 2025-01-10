@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/mainReal.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; flac/optimized/encode.c.ll
@@ -7,7 +7,6 @@
 ; llvm/optimized/BareMetal.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/verifier.ll
 ; ruby/optimized/unicode.ll
 ; wireshark/optimized/i4btrace.c.ll

@@ -360,7 +360,7 @@ entry:
   ret i8 %2
 }
 
-; 1144 occurrences:
+; 1142 occurrences:
 ; abc/optimized/giaCSat2.c.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -510,7 +510,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
@@ -727,7 +726,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-xts128gb.ll
 ; openssl/optimized/libcrypto-shlib-xts128gb.ll
-; openssl/optimized/recordlentest-bin-recordlentest.ll
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; php/optimized/array.ll
@@ -1513,7 +1511,7 @@ entry:
   ret i8 %2
 }
 
-; 1808 occurrences:
+; 1809 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/deflate.c.ll
@@ -2795,6 +2793,7 @@ entry:
 ; openssl/optimized/quicapitest-bin-quicapitest.ll
 ; openssl/optimized/quicapitest-bin-quictestlib.ll
 ; openssl/optimized/quicfaultstest-bin-quictestlib.ll
+; openssl/optimized/recordlentest-bin-recordlentest.ll
 ; openssl/optimized/tls13secretstest-bin-quic_vlint.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; openusd/optimized/crateData.cpp.ll

@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 140 occurrences:
 ; boost/optimized/area.ll
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
@@ -14,7 +14,6 @@
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/core.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
@@ -141,7 +140,6 @@
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; yosys/optimized/calc.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:

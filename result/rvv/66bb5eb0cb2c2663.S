@@ -36,13 +36,3 @@ func000000000000003c:                   # @func000000000000003c
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret
-func0000000000000015:                   # @func0000000000000015
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 4
-	li	a0, 96
-	vmv.v.x	v12, a0
-	li	a0, 128
-	vmerge.vxm	v12, v12, a0, v0
-	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
-	ret

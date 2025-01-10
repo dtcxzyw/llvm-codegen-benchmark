@@ -37,7 +37,7 @@ func000000000000000e:                   # @func000000000000000e
 	testb	$1, %sil
 	movl	$1, %eax
 	cmoveq	%rdx, %rax
-	leaq	-8(%rdi,%rax,8), %rax
+	leaq	-1(%rdi,%rax), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax

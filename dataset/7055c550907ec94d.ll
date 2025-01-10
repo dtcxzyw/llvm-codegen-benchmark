@@ -1,5 +1,5 @@
 
-%struct.dtMeshTile.3108389 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
+%struct.dtMeshTile.3108355 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
 
 ; 3 occurrences:
 ; llvm/optimized/ItaniumCXXABI.cpp.ll
@@ -23,7 +23,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = freeze ptr %2
-  %4 = getelementptr nusw nuw %struct.dtMeshTile.3108389, ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %struct.dtMeshTile.3108355, ptr %3, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

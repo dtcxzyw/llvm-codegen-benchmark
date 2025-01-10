@@ -65,12 +65,11 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/sre.ll
 ; darktable/optimized/filtering.c.ll
 ; jq/optimized/linker.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind

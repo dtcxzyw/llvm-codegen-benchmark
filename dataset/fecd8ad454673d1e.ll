@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+%"class.cv::Complex.13.3753982" = type { float, float }
+
+; 21 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -14,6 +16,7 @@
 ; opencv/optimized/dxt.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -46,16 +49,15 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/dxt.cpp.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 2
+  %2 = sdiv i32 %1, 3
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %4
   ret ptr %5
 }
 

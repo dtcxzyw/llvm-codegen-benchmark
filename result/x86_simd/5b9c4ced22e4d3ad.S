@@ -111,8 +111,11 @@ func0000000000000546:                   # @func0000000000000546
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI10_0:
+	.quad	5                               # 0x5
 func0000000000000426:                   # @func0000000000000426
-	vpcmpleq	%ymm2, %ymm1, %k0
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpltq	.LCPI10_0(%rip){1to4}, %ymm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0

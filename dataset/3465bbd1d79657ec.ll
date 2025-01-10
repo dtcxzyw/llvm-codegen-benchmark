@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3151881" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3151847" = type { ptr, ptr, ptr, ptr }
 
 ; 8 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -85,7 +85,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3151881", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3151847", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = lshr exact i64 %5, 5

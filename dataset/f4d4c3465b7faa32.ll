@@ -1,6 +1,6 @@
 
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%"struct.net::HpackHuffmanTable::DecodeEntry.3061345" = type { i8, i8, i16 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%"struct.net::HpackHuffmanTable::DecodeEntry.3061311" = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/lru_cache.cc.ll
@@ -47,7 +47,7 @@ entry:
   %3 = sub i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = sub nsw i32 32, %2
   %4 = lshr i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.3061345", ptr %0, i64 %5
+  %6 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.3061311", ptr %0, i64 %5
   ret ptr %6
 }
 

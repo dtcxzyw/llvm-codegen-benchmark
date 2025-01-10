@@ -1,5 +1,5 @@
 
-; 1668 occurrences:
+; 1667 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/dauMerge.c.ll
@@ -325,7 +325,6 @@
 ; icu/optimized/edits.ll
 ; icu/optimized/gencmn.ll
 ; icu/optimized/gensprep.ll
-; icu/optimized/gregocal.ll
 ; icu/optimized/icupkg.ll
 ; icu/optimized/locid.ll
 ; icu/optimized/makeconv.ll

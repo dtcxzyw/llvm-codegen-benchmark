@@ -46,14 +46,6 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
-	movl	%edx, %eax
-	sarl	$31, %eax
-	andnl	%edx, %eax, %eax
-	addl	%esi, %eax
-	cmpl	%edi, %eax
-	setg	%al
-	retq
 func00000000000000ea:                   # @func00000000000000ea
 	movl	%edx, %eax
 	sarl	$31, %eax

@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 111 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -18,6 +18,7 @@
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; grpc/optimized/completion_queue.cc.ll
@@ -196,7 +197,7 @@ entry:
   ret ptr %3
 }
 
-; 279 occurrences:
+; 278 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -248,7 +249,6 @@ entry:
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/pshinter.c.ll
-; git/optimized/diffcore-delta.ll
 ; git/optimized/merge-ort.ll
 ; git/optimized/tree-diff.ll
 ; gromacs/optimized/partition.cpp.ll

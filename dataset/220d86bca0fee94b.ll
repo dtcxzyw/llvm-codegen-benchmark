@@ -1,9 +1,9 @@
 
-%struct.code.2876641 = type { i8, i8, i16 }
-%"class.llvm::SDUse.3276506" = type { %"class.llvm::SDValue.3276492", ptr, ptr, ptr }
-%"class.llvm::SDValue.3276492" = type <{ ptr, i32, [4 x i8] }>
-%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
-%struct.code.3550467 = type { i8, i8, i16 }
+%struct.code.2876607 = type { i8, i8, i16 }
+%"class.llvm::SDUse.3276472" = type { %"class.llvm::SDValue.3276458", ptr, ptr, ptr }
+%"class.llvm::SDValue.3276458" = type <{ ptr, i32, [4 x i8] }>
+%struct.JSVarDef.3435063 = type { i32, i32, i32, i32 }
+%struct.code.3550433 = type { i8, i8, i16 }
 
 ; 3 occurrences:
 ; linux/optimized/sr.ll
@@ -50,7 +50,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.code.2876641, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.code.2876607, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::SDUse.3276506", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr nuw %"class.llvm::SDUse.3276472", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.JSVarDef.3435063, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.code.3550467, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.code.3550433, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

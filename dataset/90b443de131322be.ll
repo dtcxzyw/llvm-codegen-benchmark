@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/bitmap.ll
@@ -12,6 +12,7 @@
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll

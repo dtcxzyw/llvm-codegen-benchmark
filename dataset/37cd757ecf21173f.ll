@@ -94,7 +94,7 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -148,7 +148,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/regcomp.ll
-; slurm/optimized/common_topo.ll
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/select_cons_tres.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
@@ -862,7 +861,7 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -873,7 +872,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; slurm/optimized/dist_tasks.ll
-; slurm/optimized/job_mgr.ll
 ; slurm/optimized/read_config.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

@@ -1,5 +1,5 @@
 
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
 ; 309 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -354,7 +354,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = lshr i64 %3, 7
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %5
+  %6 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %0, i64 %5
   ret ptr %6
 }
 

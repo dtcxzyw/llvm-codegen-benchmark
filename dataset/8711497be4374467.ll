@@ -1,20 +1,20 @@
 
-%struct.page.3532352 = type { i64, %union.anon.3532353, %union.anon.6.3532354, %struct.atomic_t.3532355, [8 x i8] }
-%union.anon.3532353 = type { %struct.anon.3532356 }
-%struct.anon.3532356 = type { %union.anon.0.3532357, ptr, %union.anon.2.3532358, i64 }
-%union.anon.0.3532357 = type { %struct.list_head.3532359 }
-%struct.list_head.3532359 = type { ptr, ptr }
-%union.anon.2.3532358 = type { i64 }
-%union.anon.6.3532354 = type { %struct.atomic_t.3532355 }
-%struct.atomic_t.3532355 = type { i32 }
-%struct.page.3532500 = type { i64, %union.anon.35.3532501, %union.anon.43.3532502, %struct.atomic_t.3532484, [8 x i8] }
-%union.anon.35.3532501 = type { %struct.anon.36.3532503 }
-%struct.anon.36.3532503 = type { %union.anon.37.3532504, ptr, %union.anon.39.3532505, i64 }
-%union.anon.37.3532504 = type { %struct.list_head.3532496 }
-%struct.list_head.3532496 = type { ptr, ptr }
-%union.anon.39.3532505 = type { i64 }
-%union.anon.43.3532502 = type { %struct.atomic_t.3532484 }
-%struct.atomic_t.3532484 = type { i32 }
+%struct.page.3532318 = type { i64, %union.anon.3532319, %union.anon.6.3532320, %struct.atomic_t.3532321, [8 x i8] }
+%union.anon.3532319 = type { %struct.anon.3532322 }
+%struct.anon.3532322 = type { %union.anon.0.3532323, ptr, %union.anon.2.3532324, i64 }
+%union.anon.0.3532323 = type { %struct.list_head.3532325 }
+%struct.list_head.3532325 = type { ptr, ptr }
+%union.anon.2.3532324 = type { i64 }
+%union.anon.6.3532320 = type { %struct.atomic_t.3532321 }
+%struct.atomic_t.3532321 = type { i32 }
+%struct.page.3532466 = type { i64, %union.anon.35.3532467, %union.anon.43.3532468, %struct.atomic_t.3532450, [8 x i8] }
+%union.anon.35.3532467 = type { %struct.anon.36.3532469 }
+%struct.anon.36.3532469 = type { %union.anon.37.3532470, ptr, %union.anon.39.3532471, i64 }
+%union.anon.37.3532470 = type { %struct.list_head.3532462 }
+%struct.list_head.3532462 = type { ptr, ptr }
+%union.anon.39.3532471 = type { i64 }
+%union.anon.43.3532468 = type { %struct.atomic_t.3532450 }
+%struct.atomic_t.3532450 = type { i32 }
 
 ; 2 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
@@ -100,7 +100,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, %3
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3532352, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3532318, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -112,7 +112,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %1, %3
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3532500, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3532466, ptr %0, i64 %5
   ret ptr %6
 }
 

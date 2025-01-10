@@ -1,14 +1,14 @@
 
-%struct.Odc_Obj_t_.2876286 = type { i16, i16, i16, i16, i32, i32 }
-%struct.code.2877665 = type { i8, i8, i16 }
-%struct.code.3535564 = type { i8, i8, i16 }
+%struct.Odc_Obj_t_.2876252 = type { i16, i16, i16, i16, i32, i32 }
+%struct.code.2877631 = type { i8, i8, i16 }
+%struct.code.3535530 = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.Odc_Obj_t_.2876286, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.Odc_Obj_t_.2876252, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 3
@@ -26,7 +26,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.code.2877665, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.code.2877631, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 2
@@ -40,7 +40,7 @@ entry:
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.code.3535564, ptr %1, i64 %2
+  %3 = getelementptr %struct.code.3535530, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 2

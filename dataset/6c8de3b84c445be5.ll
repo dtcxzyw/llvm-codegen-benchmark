@@ -298,7 +298,7 @@ entry:
   ret i32 %4
 }
 
-; 536 occurrences:
+; 535 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -583,7 +583,6 @@ entry:
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/minimap.cpp.ll

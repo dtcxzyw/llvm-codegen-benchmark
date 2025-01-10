@@ -186,7 +186,7 @@ entry:
   ret i64 %2
 }
 
-; 294 occurrences:
+; 295 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -403,6 +403,7 @@ entry:
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/cmslut.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/jccoefct.ll

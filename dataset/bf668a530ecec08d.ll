@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; graphviz/optimized/htmltable.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -28,6 +28,7 @@
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i8 %0, i8 %1) #0 {

@@ -65,8 +65,3 @@ func0000000000000003:                   # @func0000000000000003
 	subq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	movl	%edx, %eax
-	subq	%rsi, %rax
-	addq	%rdi, %rax
-	retq

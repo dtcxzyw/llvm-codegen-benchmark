@@ -165,11 +165,11 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0) #0 {
+define i64 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = tail call range(i64 0, 65) i64 @llvm.ctlz.i64(i64 %0, i1 true)
   %2 = xor i64 %1, 63
-  %3 = shl nuw nsw i64 1, %2
+  %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
   ret i64 %4
 }

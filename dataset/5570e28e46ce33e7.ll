@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -74,6 +74,7 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clamav/optimized/cabd.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cpython/optimized/longobject.ll
 ; cvc5/optimized/cadical.cpp.ll

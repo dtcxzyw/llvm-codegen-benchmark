@@ -120,7 +120,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	1020                            # 0x3fc
 .LCPI10_2:
 	.long	4294967294                      # 0xfffffffe
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	.LCPI10_2(%rip){1to4}, %xmm0, %xmm0

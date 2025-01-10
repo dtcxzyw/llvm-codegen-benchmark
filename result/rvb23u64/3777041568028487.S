@@ -8,7 +8,7 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
 	sext.w	a0, a0
 	max	a0, a0, a1
-	addiw	a0, a0, 1
+	addiw	a0, a0, 2
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1

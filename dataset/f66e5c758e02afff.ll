@@ -1,5 +1,5 @@
 
-%"class.boost::geometry::model::point.3020911" = type { [2 x double] }
+%"class.boost::geometry::model::point.3020877" = type { [2 x double] }
 
 ; 2 occurrences:
 ; cpython/optimized/listobject.ll
@@ -24,8 +24,8 @@ define ptr @func0000000000000066(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 0
-  %5 = getelementptr %"class.boost::geometry::model::point.3020911", ptr %0, i64 %4
-  %6 = getelementptr %"class.boost::geometry::model::point.3020911", ptr %5, i64 %1
+  %5 = getelementptr %"class.boost::geometry::model::point.3020877", ptr %0, i64 %4
+  %6 = getelementptr %"class.boost::geometry::model::point.3020877", ptr %5, i64 %1
   ret ptr %6
 }
 

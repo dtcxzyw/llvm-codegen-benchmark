@@ -464,7 +464,7 @@ entry:
   ret i1 %1
 }
 
-; 243 occurrences:
+; 244 occurrences:
 ; abseil-cpp/optimized/statusor_test.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/chunk_resolver.cc.ll
@@ -568,6 +568,7 @@ entry:
 ; llvm/optimized/Metadata.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll

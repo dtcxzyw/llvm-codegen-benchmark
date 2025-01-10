@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%"struct.OT::IntType.273.2742070" = type { %struct.BEInt.274.2742071 }
-%struct.BEInt.274.2742071 = type { i8 }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%"struct.OT::IntType.273.2742036" = type { %struct.BEInt.274.2742037 }
+%struct.BEInt.274.2742037 = type { i8 }
 
 ; 6 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -28,7 +28,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -40,7 +40,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.273.2742070"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.273.2742036"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

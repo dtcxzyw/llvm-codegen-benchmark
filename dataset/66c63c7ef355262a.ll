@@ -74,16 +74,15 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/genmbcs.ll
-; linux/optimized/trace_output.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000186(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000186(i32 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = icmp slt i8 %0, 0
+  %2 = icmp ne i8 %1, 0
+  %3 = icmp slt i32 %0, 8192
   %4 = and i1 %3, %2
-  %5 = select i1 %4, i32 68, i32 100
+  %5 = select i1 %4, i32 60, i32 63
   ret i32 %5
 }
 

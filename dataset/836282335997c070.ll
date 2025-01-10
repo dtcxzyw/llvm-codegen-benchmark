@@ -369,7 +369,7 @@ entry:
   ret i32 %7
 }
 
-; 131 occurrences:
+; 129 occurrences:
 ; abc/optimized/darCut.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; arrow/optimized/utf8.cc.ll
@@ -430,7 +430,6 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -440,7 +439,6 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
@@ -620,10 +618,11 @@ entry:
   ret i32 %7
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; lief/optimized/des.c.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -687,9 +686,8 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; lief/optimized/des.c.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/Ushort565Rgb.ll

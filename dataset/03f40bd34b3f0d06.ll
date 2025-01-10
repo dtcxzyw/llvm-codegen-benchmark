@@ -232,7 +232,7 @@ entry:
   ret i1 %3
 }
 
-; 145 occurrences:
+; 144 occurrences:
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ivyRwr.c.ll
@@ -278,7 +278,6 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
-; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/emerge.cpp.ll

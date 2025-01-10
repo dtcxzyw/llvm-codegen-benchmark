@@ -1,9 +1,9 @@
 func0000000000000007:                   # @func0000000000000007
 	movl	%edx, %eax
+	xorl	%ecx, %ecx
 	testb	$1, %sil
-	movl	$1073741823, %ecx               # imm = 0x3FFFFFFF
 	cmoveq	%rax, %rcx
-	leaq	(%rdi,%rcx,2), %rax
+	leaq	(%rdi,%rcx,4), %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %eax

@@ -1,12 +1,12 @@
 
-%struct.LangTag.2738648 = type { i32, i32 }
-%"class.std::shared_ptr.266.2812879" = type { %"class.std::__shared_ptr.267.2812880" }
-%"class.std::__shared_ptr.267.2812880" = type { ptr, %"class.std::__shared_count.2812786" }
-%"class.std::__shared_count.2812786" = type { ptr }
-%struct.Vec_Int_t_.2876211 = type { i32, i32, ptr }
-%"struct.Yosys::RTLIL::SigBit.3121414" = type <{ ptr, %union.anon.164.3121415, [4 x i8] }>
-%union.anon.164.3121415 = type { i32 }
-%"class.cv::Point_.18.3744171" = type { i32, i32 }
+%struct.LangTag.2738614 = type { i32, i32 }
+%"class.std::shared_ptr.266.2812845" = type { %"class.std::__shared_ptr.267.2812846" }
+%"class.std::__shared_ptr.267.2812846" = type { ptr, %"class.std::__shared_count.2812752" }
+%"class.std::__shared_count.2812752" = type { ptr }
+%struct.Vec_Int_t_.2876177 = type { i32, i32, ptr }
+%"struct.Yosys::RTLIL::SigBit.3121380" = type <{ ptr, %union.anon.164.3121381, [4 x i8] }>
+%union.anon.164.3121381 = type { i32 }
+%"class.cv::Point_.18.3744121" = type { i32, i32 }
 
 ; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -16,8 +16,8 @@
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.LangTag.2738648, ptr %0, i64 %1
-  %5 = getelementptr %struct.LangTag.2738648, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %struct.LangTag.2738614, ptr %0, i64 %1
+  %5 = getelementptr %struct.LangTag.2738614, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -65,8 +65,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::shared_ptr.266.2812879", ptr %0, i64 %1
-  %5 = getelementptr %"class.std::shared_ptr.266.2812879", ptr %4, i64 %3, i32 0, i32 1
+  %4 = getelementptr %"class.std::shared_ptr.266.2812845", ptr %0, i64 %1
+  %5 = getelementptr %"class.std::shared_ptr.266.2812845", ptr %4, i64 %3, i32 0, i32 1
   ret ptr %5
 }
 
@@ -129,8 +129,8 @@ entry:
 define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Vec_Int_t_.2876211, ptr %0, i64 %1
-  %5 = getelementptr %struct.Vec_Int_t_.2876211, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %struct.Vec_Int_t_.2876177, ptr %0, i64 %1
+  %5 = getelementptr %struct.Vec_Int_t_.2876177, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -159,8 +159,8 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121414", ptr %0, i64 %1
-  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121414", ptr %4, i64 %3, i32 1
+  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121380", ptr %0, i64 %1
+  %5 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121380", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -170,8 +170,8 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.cv::Point_.18.3744171", ptr %0, i64 %1
-  %5 = getelementptr %"class.cv::Point_.18.3744171", ptr %4, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.18.3744121", ptr %0, i64 %1
+  %5 = getelementptr %"class.cv::Point_.18.3744121", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

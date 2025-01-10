@@ -54,10 +54,6 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, 2000
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmclr.m	v0
-	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, 15
@@ -89,6 +85,11 @@ func0000000000000008:                   # @func0000000000000008
 	vand.vx	v8, v8, a0
 	lui	a0, 65536
 	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000041:                   # @func0000000000000041
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v8, v8, 15
+	vmseq.vi	v0, v8, 15
 	ret
 func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 4, e64, m2, ta, ma

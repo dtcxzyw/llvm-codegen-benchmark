@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.245.3081069" = type { %"class.hermes::vm::HermesValue.3081023" }
-%"class.hermes::vm::HermesValue.3081023" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.245.3081035" = type { %"class.hermes::vm::HermesValue.3080989" }
+%"class.hermes::vm::HermesValue.3080989" = type { i64 }
 
 ; 5 occurrences:
 ; abc/optimized/ivyFraig.c.ll
@@ -69,7 +69,7 @@ entry:
   %3 = lshr i64 %2, 10
   %4 = and i64 %3, 4194303
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32776
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.245.3081069", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.245.3081035", ptr %5, i64 %4
   ret ptr %6
 }
 

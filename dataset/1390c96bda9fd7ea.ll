@@ -255,7 +255,7 @@ entry:
   ret i1 %3
 }
 
-; 66 occurrences:
+; 71 occurrences:
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -279,7 +279,6 @@ entry:
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -307,13 +306,19 @@ entry:
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
 ; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; pbrt-v4/optimized/vecmath.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -330,7 +335,7 @@ entry:
   ret i1 %3
 }
 
-; 75 occurrences:
+; 76 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
@@ -383,6 +388,7 @@ entry:
 ; meshlab/optimized/trackmode.cpp.ll
 ; mitsuba3/optimized/disk.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

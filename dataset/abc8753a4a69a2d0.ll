@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.151.2684691" = type { %"struct.std::__uniq_ptr_data.152.2684692" }
-%"struct.std::__uniq_ptr_data.152.2684692" = type { %"class.std::__uniq_ptr_impl.153.2684693" }
-%"class.std::__uniq_ptr_impl.153.2684693" = type { %"class.std::tuple.154.2684694" }
-%"class.std::tuple.154.2684694" = type { %"struct.std::_Tuple_impl.155.2684695" }
-%"struct.std::_Tuple_impl.155.2684695" = type { %"struct.std::_Head_base.158.2684696" }
-%"struct.std::_Head_base.158.2684696" = type { ptr }
+%"class.std::unique_ptr.151.2684658" = type { %"struct.std::__uniq_ptr_data.152.2684659" }
+%"struct.std::__uniq_ptr_data.152.2684659" = type { %"class.std::__uniq_ptr_impl.153.2684660" }
+%"class.std::__uniq_ptr_impl.153.2684660" = type { %"class.std::tuple.154.2684661" }
+%"class.std::tuple.154.2684661" = type { %"struct.std::_Tuple_impl.155.2684662" }
+%"struct.std::_Tuple_impl.155.2684662" = type { %"struct.std::_Head_base.158.2684663" }
+%"struct.std::_Head_base.158.2684663" = type { ptr }
 
 ; 12 occurrences:
 ; boost/optimized/partition.ll
@@ -81,7 +81,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = ashr exact i64 %4, 3
   %6 = urem i64 %1, %5
-  %7 = getelementptr nusw %"class.std::unique_ptr.151.2684691", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.std::unique_ptr.151.2684658", ptr %0, i64 %6
   ret ptr %7
 }
 

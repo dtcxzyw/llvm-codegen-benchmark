@@ -1,8 +1,8 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
-%"class.std::__cxx11::basic_string.2760304" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323", i64, %union.anon.2760324 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323" = type { ptr }
-%union.anon.2760324 = type { i64, [8 x i8] }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
+%"class.std::__cxx11::basic_string.2760270" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760289", i64, %union.anon.2760290 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760289" = type { ptr }
+%union.anon.2760290 = type { i64, [8 x i8] }
 
 ; 46 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
@@ -479,7 +479,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
-  %3 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %0, i64 %.neg
+  %3 = getelementptr nusw %"struct.std::pair.28.2602074", ptr %0, i64 %.neg
   ret ptr %3
 }
 
@@ -1059,7 +1059,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub nsw i64 %2, %1
-  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.2760304", ptr %0, i64 %.neg
+  %3 = getelementptr nusw %"class.std::__cxx11::basic_string.2760270", ptr %0, i64 %.neg
   ret ptr %3
 }
 

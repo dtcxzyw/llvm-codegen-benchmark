@@ -1,5 +1,5 @@
 
-; 505 occurrences:
+; 504 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/darLib.c.ll
@@ -131,7 +131,6 @@
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; llvm/optimized/DXILResource.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
 ; llvm/optimized/InlineAsm.cpp.ll
@@ -590,7 +589,7 @@ entry:
   ret i1 %4
 }
 
-; 464 occurrences:
+; 463 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcMinBase.c.ll
@@ -893,7 +892,6 @@ entry:
 ; postgres/optimized/procarray.ll
 ; postgres/optimized/reconstruct.ll
 ; postgres/optimized/snapmgr.ll
-; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/worker.ll
@@ -1478,7 +1476,7 @@ entry:
   ret i1 %4
 }
 
-; 239 occurrences:
+; 238 occurrences:
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -1714,7 +1712,6 @@ entry:
 ; wireshark/optimized/welcome_page.cpp.ll
 ; wolfssl/optimized/asn.c.ll
 ; yosys/optimized/genrtlil.ll
-; yosys/optimized/opt_lut.ll
 ; yosys/optimized/simplify.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
@@ -2264,7 +2261,7 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -2281,6 +2278,7 @@ entry:
 ; linux/optimized/config.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/utresrc.ll
+; lua/optimized/ldebug.ll
 ; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

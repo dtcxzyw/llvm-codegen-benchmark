@@ -16,3 +16,9 @@ func0000000000000000:                   # @func0000000000000000
 .LBB2_2:                                # %entry
 	subw	a0, a1, a0
 	ret
+func000000000000000c:                   # @func000000000000000c
+	bltu	a1, a2, .LBB3_2
+	mv	a1, a2
+.LBB3_2:                                # %entry
+	subw	a0, a1, a0
+	ret

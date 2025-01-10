@@ -1,10 +1,10 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
-%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
-%class.bucket.2735647 = type { i32, i32, ptr }
-%struct.SEntry.2748811 = type { ptr, ptr }
-%struct.code.2877665 = type { i8, i8, i16 }
-%struct.Abc_ZddEnt_.2877750 = type { i32, i32, i32, i32 }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
+%struct.pm_constant_pool_bucket_t.2600897 = type { i32, i32 }
+%class.bucket.2735613 = type { i32, i32, ptr }
+%struct.SEntry.2748777 = type { ptr, ptr }
+%struct.code.2877631 = type { i8, i8, i16 }
+%struct.Abc_ZddEnt_.2877716 = type { i32, i32, i32, i32 }
 
 ; 4 occurrences:
 ; linux/optimized/drm_ioctl.ll
@@ -17,7 +17,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %5
+  %6 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -69,7 +69,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %5
+  %6 = getelementptr %struct.pm_constant_pool_bucket_t.2600897, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1642,7 +1642,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %class.bucket.2735647, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.bucket.2735613, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1686,7 +1686,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.SEntry.2748811, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.SEntry.2748777, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -2621,7 +2621,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.code.2877665, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2877631, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -2634,7 +2634,7 @@ entry:
   %3 = add nuw nsw i32 %2, 9638941
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.Abc_ZddEnt_.2877750, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.Abc_ZddEnt_.2877716, ptr %0, i64 %5
   ret ptr %6
 }
 

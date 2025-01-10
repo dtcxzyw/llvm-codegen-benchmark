@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3227940" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3227906" = type { ptr, ptr, ptr, ptr }
 
 ; 19 occurrences:
 ; gromacs/optimized/grid.cpp.ll
@@ -329,7 +329,7 @@ entry:
 define ptr @func00000000000000bb(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.llvm::Use.3227940", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3227906", ptr %3, i64 %0
   %5 = shl nuw nsw i64 %1, 5
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6

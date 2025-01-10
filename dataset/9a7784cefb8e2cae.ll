@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 39 occurrences:
 ; cmake/optimized/System.c.ll
 ; cmake/optimized/cmGeneratorExpressionNode.cxx.ll
 ; freetype/optimized/psaux.c.ll
@@ -15,9 +15,9 @@
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
-; openusd/optimized/childrenUtils.cpp.ll
 ; php/optimized/array.ll
 ; php/optimized/var.ll
 ; php/optimized/var_unserializer.ll
@@ -29,8 +29,14 @@
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/zic.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; ruby/optimized/array.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
@@ -1874,23 +1880,6 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = ashr exact i64 %0, 2
   %4 = icmp sgt i64 %3, %2
-  ret i1 %4
-}
-
-; 7 occurrences:
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = ashr exact i64 %0, 32
-  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

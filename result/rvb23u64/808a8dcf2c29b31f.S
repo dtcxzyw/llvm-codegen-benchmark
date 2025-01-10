@@ -20,10 +20,3 @@ func0000000000000061:                   # @func0000000000000061
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
-	sext.w	a0, a0
-	zext.h	a2, a2
-	andi	a1, a1, 255
-	add	a1, a1, a2
-	sltu	a0, a1, a0
-	ret

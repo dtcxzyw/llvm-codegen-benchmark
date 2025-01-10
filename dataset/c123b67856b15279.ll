@@ -1,13 +1,13 @@
 
-%"class.WasmEdge::Variant.2764046" = type { %"union.WasmEdge::VariadicUnion.2764047" }
-%"union.WasmEdge::VariadicUnion.2764047" = type { %"union.WasmEdge::VariadicUnion.37.2764048" }
-%"union.WasmEdge::VariadicUnion.37.2764048" = type { %"union.WasmEdge::VariadicUnion.38.2764049" }
-%"union.WasmEdge::VariadicUnion.38.2764049" = type { %"union.WasmEdge::VariadicUnion.39.2764050" }
-%"union.WasmEdge::VariadicUnion.39.2764050" = type { %"union.WasmEdge::VariadicUnion.40.2764051" }
-%"union.WasmEdge::VariadicUnion.40.2764051" = type { %"union.WasmEdge::VariadicUnion.41.2764052" }
-%"union.WasmEdge::VariadicUnion.41.2764052" = type { %"union.WasmEdge::VariadicUnion.42.2764053" }
-%"union.WasmEdge::VariadicUnion.42.2764053" = type { i128 }
-%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
+%"class.WasmEdge::Variant.2764012" = type { %"union.WasmEdge::VariadicUnion.2764013" }
+%"union.WasmEdge::VariadicUnion.2764013" = type { %"union.WasmEdge::VariadicUnion.37.2764014" }
+%"union.WasmEdge::VariadicUnion.37.2764014" = type { %"union.WasmEdge::VariadicUnion.38.2764015" }
+%"union.WasmEdge::VariadicUnion.38.2764015" = type { %"union.WasmEdge::VariadicUnion.39.2764016" }
+%"union.WasmEdge::VariadicUnion.39.2764016" = type { %"union.WasmEdge::VariadicUnion.40.2764017" }
+%"union.WasmEdge::VariadicUnion.40.2764017" = type { %"union.WasmEdge::VariadicUnion.41.2764018" }
+%"union.WasmEdge::VariadicUnion.41.2764018" = type { %"union.WasmEdge::VariadicUnion.42.2764019" }
+%"union.WasmEdge::VariadicUnion.42.2764019" = type { i128 }
+%"class.llvm::Use.3238990" = type { ptr, ptr, ptr, ptr }
 
 ; 95 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -151,7 +151,7 @@ define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.WasmEdge::Variant.2764046", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.WasmEdge::Variant.2764012", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -165,7 +165,7 @@ define i64 @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3239024", ptr %0, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3238990", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

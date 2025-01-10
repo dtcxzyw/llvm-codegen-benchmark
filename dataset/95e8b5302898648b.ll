@@ -52,7 +52,7 @@
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 3471480559860788781, %0
+  %1 = lshr i64 3458764514609081901, %0
   %2 = trunc i64 %1 to i8
   ret i8 %2
 }

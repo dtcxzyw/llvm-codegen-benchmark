@@ -1,11 +1,11 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.ss_lru_item_t.3651899 = type { ptr, ptr, %struct.ss_scan_location_t.3651900 }
-%struct.ss_scan_location_t.3651900 = type { %struct.RelFileLocator.3651901, i32 }
-%struct.RelFileLocator.3651901 = type { i32, i32, i32 }
-%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.ss_lru_item_t.3651865 = type { ptr, ptr, %struct.ss_scan_location_t.3651866 }
+%struct.ss_scan_location_t.3651866 = type { %struct.RelFileLocator.3651867, i32 }
+%struct.RelFileLocator.3651867 = type { i32, i32, i32 }
+%struct.FreePageBtreeLeafKey.3653901 = type { i64, i64 }
 
 ; 18 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
@@ -42,7 +42,7 @@ entry:
 define ptr @func0000000000000006(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %1, i64 0, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -78,7 +78,7 @@ entry:
 define ptr @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [0 x %struct.ss_lru_item_t.3651899], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [0 x %struct.ss_lru_item_t.3651865], ptr %1, i64 0, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }
@@ -89,7 +89,7 @@ entry:
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653901], ptr %1, i64 0, i64 %3
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
 }

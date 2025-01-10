@@ -1,10 +1,10 @@
 
-%"class.std::__cxx11::basic_string.2612206" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207", i64, %union.anon.2612208 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207" = type { ptr }
-%union.anon.2612208 = type { i64, [8 x i8] }
-%"class.std::__cxx11::basic_string.3051576" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3051577", i64, %union.anon.3051578 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3051577" = type { ptr }
-%union.anon.3051578 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2612173" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174", i64, %union.anon.2612175 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174" = type { ptr }
+%union.anon.2612175 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3051542" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3051543", i64, %union.anon.3051544 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3051543" = type { ptr }
+%union.anon.3051544 = type { i64, [8 x i8] }
 
 ; 480 occurrences:
 ; abc/optimized/saigSwitch.c.ll
@@ -1378,7 +1378,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
-  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612206", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612173", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1419,7 +1419,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3051576", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3051542", ptr %0, i64 %4
   ret ptr %5
 }
 

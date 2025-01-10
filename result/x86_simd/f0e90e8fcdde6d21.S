@@ -127,37 +127,24 @@ func0000000000000046:                   # @func0000000000000046
 	vzeroupper
 	retq
 .LCPI11_0:
-	.long	4294967292                      # 0xfffffffc
-.LCPI11_1:
-	.long	48                              # 0x30
-func0000000000000014:                   # @func0000000000000014
+	.long	2                               # 0x2
+func000000000000006c:                   # @func000000000000006c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpaddd	.LCPI11_0(%rip){1to8}, %ymm1, %ymm0
-	vpcmpltud	.LCPI11_1(%rip){1to8}, %ymm0, %k1
+	vpcmpneqd	.LCPI11_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI12_0:
-	.long	2                               # 0x2
-func000000000000006c:                   # @func000000000000006c
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	vpcmpneqd	.LCPI12_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI13_0:
 	.long	354                             # 0x162
-.LCPI13_1:
+.LCPI12_1:
 	.long	6                               # 0x6
 func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpaddd	.LCPI13_0(%rip){1to8}, %ymm1, %ymm0
-	vpcmpltud	.LCPI13_1(%rip){1to8}, %ymm0, %k1
+	vpaddd	.LCPI12_0(%rip){1to8}, %ymm1, %ymm0
+	vpcmpltud	.LCPI12_1(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

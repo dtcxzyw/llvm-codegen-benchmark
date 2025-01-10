@@ -114,7 +114,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; pocketpy/optimized/collections.cpp.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; spike/optimized/vloxei16_v.ll
 ; spike/optimized/vloxei32_v.ll

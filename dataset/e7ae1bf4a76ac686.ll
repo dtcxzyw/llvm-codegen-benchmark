@@ -100,7 +100,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 150 occurrences:
+; 144 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; clamav/optimized/XzDec.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -147,9 +147,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; meilisearch-rs/optimized/3boqjkyppnj30yn0.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/socket.cpp.ll
-; nori/optimized/bitmap.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/2qz3huiqqut486jt.ll
 ; ockam-rs/optimized/368texf7kw4palgx.ll
@@ -164,9 +162,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; openjdk/optimized/debugInfoRec.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openusd/optimized/reconinter.c.ll
-; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
-; raylib/optimized/rtextures.c.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/12jtvy3iayrg5nam.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
@@ -201,8 +197,6 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; slurm/optimized/scontrol.ll
 ; stb/optimized/stb_image_write.c.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll

@@ -1,5 +1,5 @@
 
-; 2215 occurrences:
+; 2217 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -866,6 +866,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/regcomp.c.ll
+; lua/optimized/lstrlib.ll
 ; lua/optimized/ltablib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -888,6 +889,7 @@
 ; luau/optimized/Unifier2.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll

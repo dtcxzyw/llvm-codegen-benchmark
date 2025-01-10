@@ -14,6 +14,14 @@ func0000000000000278:                   // @func0000000000000278
 	cset	w0, hi
 	ret
                                         // -- End function
+func000000000000006c:                   // @func000000000000006c
+// %bb.0:                               // %entry
+	mov	w8, w1
+	add	x8, x8, w2, uxtw
+	cmp	x8, w0, uxtw
+	cset	w0, ne
+	ret
+                                        // -- End function
 func0000000000000274:                   // @func0000000000000274
 // %bb.0:                               // %entry
 	mov	w8, w1

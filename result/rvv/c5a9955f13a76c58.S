@@ -82,12 +82,6 @@ func00000000000001d8:                   # @func00000000000001d8
 	vmsne.vv	v12, v8, v10
 	vmor.mm	v0, v12, v14
 	ret
-func000000000000024a:                   # @func000000000000024a
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vv	v14, v12, v8
-	vmsleu.vv	v12, v8, v10
-	vmor.mm	v0, v12, v14
-	ret
 func000000000000018c:                   # @func000000000000018c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v14, v8, v12

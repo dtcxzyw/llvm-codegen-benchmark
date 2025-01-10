@@ -98,6 +98,13 @@ func0000000000000182:                   // @func0000000000000182
 	cset	w0, lt
 	ret
                                         // -- End function
+func0000000000000282:                   // @func0000000000000282
+// %bb.0:                               // %entry
+	cmp	x0, #1
+	ccmp	w1, #2, #0, ne
+	cset	w0, gt
+	ret
+                                        // -- End function
 func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	cmp	w1, #1

@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/filtering.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/yenta_socket.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/User.cpp.ll

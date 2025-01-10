@@ -1,11 +1,11 @@
 
-%struct._zval_struct.2791708 = type { %union._zend_value.2791718, %union.anon.2791719, %union.anon.2.2791720 }
-%union._zend_value.2791718 = type { i64 }
-%union.anon.2791719 = type { i32 }
-%union.anon.2.2791720 = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.3082946" = type { %"class.hermes::vm::HermesValue32.3082945" }
-%"class.hermes::vm::HermesValue32.3082945" = type { i32 }
-%struct.dx_entry.3548008 = type { i32, i32 }
+%struct._zval_struct.2791674 = type { %union._zend_value.2791684, %union.anon.2791685, %union.anon.2.2791686 }
+%union._zend_value.2791684 = type { i64 }
+%union.anon.2791685 = type { i32 }
+%union.anon.2.2791686 = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3082912" = type { %"class.hermes::vm::HermesValue32.3082911" }
+%"class.hermes::vm::HermesValue32.3082911" = type { i32 }
+%struct.dx_entry.3547974 = type { i32, i32 }
 
 ; 1 occurrences:
 ; php/optimized/zend_builtin_functions.ll
@@ -15,7 +15,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 80
-  %6 = getelementptr nusw nuw %struct._zval_struct.2791708, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %struct._zval_struct.2791674, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082946", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082912", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -54,7 +54,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr %struct.dx_entry.3548008, ptr %5, i64 %4
+  %6 = getelementptr %struct.dx_entry.3547974, ptr %5, i64 %4
   ret ptr %6
 }
 

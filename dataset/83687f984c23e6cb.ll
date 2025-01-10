@@ -1,12 +1,12 @@
 
-%"class.std::vector.297.2615370" = type { %"struct.std::_Vector_base.298.2615371" }
-%"struct.std::_Vector_base.298.2615371" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615372" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615372" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615373" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615373" = type { ptr, ptr, ptr }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%struct.s_slice.3976795 = type { %struct.sortslice.3976794, i64, i32 }
-%struct.sortslice.3976794 = type { ptr, ptr }
+%"class.std::vector.297.2615337" = type { %"struct.std::_Vector_base.298.2615338" }
+%"struct.std::_Vector_base.298.2615338" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615339" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615339" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615340" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615340" = type { ptr, ptr, ptr }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%struct.s_slice.3976745 = type { %struct.sortslice.3976744, i64, i32 }
+%struct.sortslice.3976744 = type { ptr, ptr }
 
 ; 1 occurrences:
 ; rocksdb/optimized/version_set.cc.ll
@@ -15,7 +15,7 @@ define ptr @func00000000000000ff(ptr %0, i32 %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %0, i64 8
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %"class.std::vector.297.2615370", ptr %2, i64 %3
+  %4 = getelementptr %"class.std::vector.297.2615337", ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -77,7 +77,7 @@ entry:
   %2 = add nsw i32 %1, -5
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 60
-  %5 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794548, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -166,7 +166,7 @@ define ptr @func00000000000000f0(ptr %0, i32 %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %0, i64 56
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %struct.s_slice.3976795, ptr %2, i64 %3
+  %4 = getelementptr %struct.s_slice.3976745, ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -80
   ret ptr %5
 }

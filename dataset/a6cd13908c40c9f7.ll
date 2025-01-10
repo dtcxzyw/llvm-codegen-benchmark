@@ -331,17 +331,6 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = shl i64 %3, 3
-  %5 = icmp sgt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/inet_net_pton.ll
-; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2

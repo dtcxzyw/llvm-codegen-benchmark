@@ -22,10 +22,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr exact i64 %2, 12
+  %3 = lshr exact i64 %2, 16
   %4 = or i64 %1, %3
   %5 = or i64 %4, %0
-  %6 = or i64 %5, 16
+  %6 = or i64 %5, 2097152
   ret i64 %6
 }
 

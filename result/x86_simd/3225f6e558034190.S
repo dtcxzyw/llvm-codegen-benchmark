@@ -520,13 +520,22 @@ func000000000000298a:                   # @func000000000000298a
 	vzeroupper
 	retq
 .LCPI54_0:
+	.long	255                             # 0xff
+func00000000000018c1:                   # @func00000000000018c1
+	vpmaxsd	%ymm2, %ymm1, %ymm1
+	vpcmpltd	.LCPI54_0(%rip){1to8}, %ymm1, %k1
+	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI55_0:
 	.long	128                             # 0x80
-.LCPI54_1:
+.LCPI55_1:
 	.long	3                               # 0x3
 func0000000000001886:                   # @func0000000000001886
 	vpmaxsd	%ymm0, %ymm2, %ymm0
-	vpcmpltd	.LCPI54_0(%rip){1to8}, %ymm0, %k1
-	vpcmpltud	.LCPI54_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpcmpltd	.LCPI55_0(%rip){1to8}, %ymm0, %k1
+	vpcmpltud	.LCPI55_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

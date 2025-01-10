@@ -1,20 +1,20 @@
 
-%"class.std::__1::tuple.2602961" = type { %"struct.std::__1::__tuple_impl.2602962" }
-%"struct.std::__1::__tuple_impl.2602962" = type <{ %"class.std::__1::__tuple_leaf.2602963", %"class.std::__1::__tuple_leaf.50.2602964", %"class.std::__1::__tuple_leaf.51.2602965", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2602963" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::basic_string.2602914" = type { %"class.std::__1::__compressed_pair.1.2602915" }
-%"class.std::__1::__compressed_pair.1.2602915" = type { %"struct.std::__1::__compressed_pair_elem.2.2602916" }
-%"struct.std::__1::__compressed_pair_elem.2.2602916" = type { %"struct.std::__1::basic_string<char>::__rep.2602917" }
-%"struct.std::__1::basic_string<char>::__rep.2602917" = type { %union.anon.2602918 }
-%union.anon.2602918 = type { %"struct.std::__1::basic_string<char>::__long.2602919" }
-%"struct.std::__1::basic_string<char>::__long.2602919" = type { %struct.anon.3.2602920, i64, ptr }
-%struct.anon.3.2602920 = type { i64 }
-%"class.std::__1::__tuple_leaf.50.2602964" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::__tuple_leaf.51.2602965" = type { i8 }
-%"class.std::vector.112.2823556" = type { %"struct.std::_Vector_base.113.2823557" }
-%"struct.std::_Vector_base.113.2823557" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" = type { ptr, ptr, ptr }
+%"class.std::__1::tuple.2602928" = type { %"struct.std::__1::__tuple_impl.2602929" }
+%"struct.std::__1::__tuple_impl.2602929" = type <{ %"class.std::__1::__tuple_leaf.2602930", %"class.std::__1::__tuple_leaf.50.2602931", %"class.std::__1::__tuple_leaf.51.2602932", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2602930" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::basic_string.2602881" = type { %"class.std::__1::__compressed_pair.1.2602882" }
+%"class.std::__1::__compressed_pair.1.2602882" = type { %"struct.std::__1::__compressed_pair_elem.2.2602883" }
+%"struct.std::__1::__compressed_pair_elem.2.2602883" = type { %"struct.std::__1::basic_string<char>::__rep.2602884" }
+%"struct.std::__1::basic_string<char>::__rep.2602884" = type { %union.anon.2602885 }
+%union.anon.2602885 = type { %"struct.std::__1::basic_string<char>::__long.2602886" }
+%"struct.std::__1::basic_string<char>::__long.2602886" = type { %struct.anon.3.2602887, i64, ptr }
+%struct.anon.3.2602887 = type { i64 }
+%"class.std::__1::__tuple_leaf.50.2602931" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::__tuple_leaf.51.2602932" = type { i8 }
+%"class.std::vector.112.2823522" = type { %"struct.std::_Vector_base.113.2823523" }
+%"struct.std::_Vector_base.113.2823523" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823524" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823525" = type { ptr, ptr, ptr }
 
 ; 585 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -609,7 +609,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = sdiv exact i64 %5, -56
-  %7 = getelementptr nusw %"class.std::__1::tuple.2602961", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.std::__1::tuple.2602928", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -1153,7 +1153,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = sdiv i64 %5, 736
-  %7 = getelementptr %"class.std::vector.112.2823556", ptr %0, i64 %6
+  %7 = getelementptr %"class.std::vector.112.2823522", ptr %0, i64 %6
   ret ptr %7
 }
 

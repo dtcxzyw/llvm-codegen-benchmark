@@ -1,13 +1,13 @@
 
-%class.aiVector2t.2825654 = type { double, double }
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
-%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820" = type { %"struct.std::atomic.3063608" }
-%"struct.std::atomic.3063608" = type { %"struct.std::__atomic_base.3063610" }
-%"struct.std::__atomic_base.3063610" = type { i64 }
-%struct.CvPoint.3733826 = type { i32, i32 }
+%class.aiVector2t.2825620 = type { double, double }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
+%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786" = type { %"struct.std::atomic.3063574" }
+%"struct.std::atomic.3063574" = type { %"struct.std::__atomic_base.3063576" }
+%"struct.std::__atomic_base.3063576" = type { i64 }
+%struct.CvPoint.3733776 = type { i32, i32 }
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -47,7 +47,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nuw i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr nusw %class.aiVector2t.2825654, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.aiVector2t.2825620, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nuw i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -85,7 +85,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820", ptr %0, i64 %5
+  %6 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -98,7 +98,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nuw nsw i64 %1, 1
   %5 = urem i64 %4, %3
-  %6 = getelementptr nusw nuw %struct.CvPoint.3733826, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.CvPoint.3733776, ptr %0, i64 %5
   ret ptr %6
 }
 

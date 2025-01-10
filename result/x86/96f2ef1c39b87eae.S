@@ -10,13 +10,13 @@ func000000000000001e:                   # @func000000000000001e
 	subb	%al, %cl
 	shrxq	%rcx, %rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000014:                   # @func0000000000000014
 	lzcntl	%esi, %eax
-	movb	$26, %cl
+	movb	$30, %cl
 	subb	%al, %cl
 	shrxq	%rcx, %rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000016:                   # @func0000000000000016
 	lzcntl	%esi, %eax
 	movb	$30, %cl
 	subb	%al, %cl

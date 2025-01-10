@@ -1,4 +1,19 @@
 
+; 4 occurrences:
+; hyperscan/optimized/limex_simd384.c.ll
+; hyperscan/optimized/limex_simd512.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; wireshark/optimized/packet-rtp-midi.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 20
+  %3 = and i32 %2, 63
+  %4 = add nuw nsw i32 %0, 1
+  %5 = sub nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -35,20 +50,6 @@ entry:
   %3 = and i32 %2, 63
   %4 = add nuw nsw i32 %0, 32
   %5 = sub nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; hyperscan/optimized/limex_simd384.c.ll
-; hyperscan/optimized/limex_simd512.c.ll
-; wireshark/optimized/packet-rtp-midi.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 4
-  %3 = and i32 %2, 15
-  %4 = add nuw nsw i32 %0, 1
-  %5 = sub nuw nsw i32 %4, %3
   ret i32 %5
 }
 

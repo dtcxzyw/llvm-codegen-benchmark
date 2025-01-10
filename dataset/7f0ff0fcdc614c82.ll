@@ -1,5 +1,5 @@
 
-; 782 occurrences:
+; 781 occurrences:
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inffast.c.ll
@@ -129,7 +129,6 @@
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; hyperscan/optimized/mcsheng.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
@@ -790,7 +789,7 @@ entry:
   ret i64 %2
 }
 
-; 730 occurrences:
+; 734 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -1357,6 +1356,10 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; msdfgen/optimized/rasterization.cpp.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencc/optimized/bit-vector.cc.ll

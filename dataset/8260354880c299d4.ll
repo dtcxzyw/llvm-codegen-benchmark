@@ -1,20 +1,4 @@
 
-; 5 occurrences:
-; abc/optimized/bdcSpfd.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
-; Function Attrs: nounwind
-define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %1, %2
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp ne i64 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -61,6 +45,20 @@ define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
+  %5 = icmp ne i64 %0, 0
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; abc/optimized/bdcSpfd.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; openjdk/optimized/hb-ot-layout.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = icmp ne i64 %3, 0
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

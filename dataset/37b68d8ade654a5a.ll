@@ -21,6 +21,18 @@ entry:
 declare i64 @llvm.umin.i64(i64, i64) #1
 
 ; 2 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; qemu/optimized/hw_scsi_scsi-generic.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.umin.i64(i64 %1, i64 246)
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp sgt i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; wasmedge/optimized/loader.cpp.ll
 ; Function Attrs: nounwind
@@ -29,6 +41,28 @@ entry:
   %2 = call i64 @llvm.umin.i64(i64 %1, i64 4294967295)
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.umin.i64(i64 %1, i64 2)
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp slt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000067(i32 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.umin.i64(i64 %1, i64 2)
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 

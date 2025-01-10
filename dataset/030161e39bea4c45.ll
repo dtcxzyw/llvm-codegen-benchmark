@@ -112,8 +112,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaGlitch.c.ll
+; assimp/optimized/ProcessHelper.cpp.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; spike/optimized/debug_module.ll

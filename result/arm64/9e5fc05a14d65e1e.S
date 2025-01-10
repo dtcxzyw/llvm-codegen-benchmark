@@ -28,6 +28,12 @@ func0000000000000003:                   // @func0000000000000003
 	csel	x0, xzr, x8, lo
 	ret
                                         // -- End function
+func0000000000000009:                   // @func0000000000000009
+// %bb.0:                               // %entry
+	subs	x8, x0, w1, uxtw
+	csel	x0, xzr, x8, lo
+	ret
+                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	subs	x8, x0, w1, uxtw

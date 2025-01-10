@@ -1,8 +1,9 @@
 
-; 1248 occurrences:
+; 1250 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcResub.c.ll
+; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -359,6 +360,7 @@
 ; libquic/optimized/quic_session.cc.ll
 ; libquic/optimized/rand.cc.ll
 ; libquic/optimized/s3_lib.c.ll
+; libquic/optimized/simple.c.ll
 ; libwebp/optimized/image_enc.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; linux/optimized/8250_pci.ll

@@ -184,12 +184,6 @@ func0000000000000065:                   # @func0000000000000065
 	vadd.vv	v8, v8, v9
 	vmsleu.vv	v0, v8, v12
 	ret
-func0000000000000167:                   # @func0000000000000167
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vadd.vv	v8, v8, v9
-	vmsle.vv	v0, v8, v12
-	ret
 func0000000000000161:                   # @func0000000000000161
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0

@@ -19,13 +19,6 @@ func0000000000000086:                   # @func0000000000000086
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000106:                   # @func0000000000000106
-	vpsrlq	$3, %ymm2, %ymm2
-	vpmovqd	%ymm2, %xmm2
-	vpminsd	%xmm2, %xmm1, %xmm1
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
 func0000000000000001:                   # @func0000000000000001
 	vpsrlq	$8, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
@@ -46,12 +39,5 @@ func000000000000008b:                   # @func000000000000008b
 	vpminsd	%xmm1, %xmm2, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	vzeroupper
-	retq
-func000000000000010a:                   # @func000000000000010a
-	vpsrlq	$1, %ymm2, %ymm2
-	vpmovqd	%ymm2, %xmm2
-	vpminsd	%xmm2, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

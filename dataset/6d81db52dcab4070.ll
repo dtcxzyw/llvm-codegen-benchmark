@@ -1,8 +1,8 @@
 
-%struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822251 = type { ptr, ptr, i32 }
-%struct.iax_call_dirdata.3441413 = type { i32, i32, i32 }
-%class.svector.17.3626198 = type { %class.vector.18.3626199 }
-%class.vector.18.3626199 = type { ptr }
+%struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822217 = type { ptr, ptr, i32 }
+%struct.iax_call_dirdata.3441379 = type { i32, i32, i32 }
+%class.svector.17.3626164 = type { %class.vector.18.3626165 }
+%class.vector.18.3626165 = type { ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/audio_audio.c.ll
@@ -366,7 +366,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 14920
-  %5 = getelementptr nusw nuw [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822251], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822217], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -440,7 +440,7 @@ entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 76
-  %5 = getelementptr [2 x %struct.iax_call_dirdata.3441413], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [2 x %struct.iax_call_dirdata.3441379], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -469,7 +469,7 @@ entry:
   %2 = icmp sgt i32 %1, -1
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 1024
-  %5 = getelementptr nusw nuw [2 x %class.svector.17.3626198], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %class.svector.17.3626164], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

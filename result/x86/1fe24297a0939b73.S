@@ -40,15 +40,15 @@ func00000000000000a1:                   # @func00000000000000a1
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
-	leal	1(%rdx,%rsi), %eax
-	cmpl	$9, %eax
-	setl	%al
-	orb	%dil, %al
-	retq
 func00000000000001ec:                   # @func00000000000001ec
 	addl	%edx, %esi
 	setne	%al
+	orb	%dil, %al
+	retq
+func00000000000001a6:                   # @func00000000000001a6
+	leal	40(%rdx,%rsi), %eax
+	cmpl	$24, %eax
+	setl	%al
 	orb	%dil, %al
 	retq
 func00000000000001a1:                   # @func00000000000001a1

@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.49.2613431" = type { %"struct.std::__uniq_ptr_data.50.2613432" }
-%"struct.std::__uniq_ptr_data.50.2613432" = type { %"class.std::__uniq_ptr_impl.51.2613433" }
-%"class.std::__uniq_ptr_impl.51.2613433" = type { %"class.std::tuple.52.2613434" }
-%"class.std::tuple.52.2613434" = type { %"struct.std::_Tuple_impl.53.2613435" }
-%"struct.std::_Tuple_impl.53.2613435" = type { %"struct.std::_Head_base.56.2613436" }
-%"struct.std::_Head_base.56.2613436" = type { ptr }
+%"class.std::unique_ptr.49.2613398" = type { %"struct.std::__uniq_ptr_data.50.2613399" }
+%"struct.std::__uniq_ptr_data.50.2613399" = type { %"class.std::__uniq_ptr_impl.51.2613400" }
+%"class.std::__uniq_ptr_impl.51.2613400" = type { %"class.std::tuple.52.2613401" }
+%"class.std::tuple.52.2613401" = type { %"struct.std::_Tuple_impl.53.2613402" }
+%"struct.std::_Tuple_impl.53.2613402" = type { %"struct.std::_Head_base.56.2613403" }
+%"struct.std::_Head_base.56.2613403" = type { ptr }
 
 ; 11 occurrences:
 ; bullet3/optimized/btConvexShape.ll
@@ -22,7 +22,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.smax.i64(i64 %1, i64 0)
-  %3 = getelementptr nusw nuw %"class.std::unique_ptr.49.2613431", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::unique_ptr.49.2613398", ptr %0, i64 %2
   ret ptr %3
 }
 

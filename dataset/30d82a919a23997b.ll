@@ -1,7 +1,7 @@
 
-%"struct.asmjit::_abi_1_10::FuncValuePack.2603617" = type { [4 x %"struct.asmjit::_abi_1_10::FuncValue.2603618"] }
-%"struct.asmjit::_abi_1_10::FuncValue.2603618" = type { i32 }
-%struct.h223_call_direction_data.3439087 = type { [16 x ptr] }
+%"struct.asmjit::_abi_1_10::FuncValuePack.2603584" = type { [4 x %"struct.asmjit::_abi_1_10::FuncValue.2603585"] }
+%"struct.asmjit::_abi_1_10::FuncValue.2603585" = type { i32 }
+%struct.h223_call_direction_data.3439053 = type { [16 x ptr] }
 
 ; 5 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -13,8 +13,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw nuw [16 x %"struct.asmjit::_abi_1_10::FuncValuePack.2603617"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::FuncValue.2603618"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x %"struct.asmjit::_abi_1_10::FuncValuePack.2603584"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::FuncValue.2603585"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -58,7 +58,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [2 x %struct.h223_call_direction_data.3439087], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [2 x %struct.h223_call_direction_data.3439053], ptr %0, i64 0, i64 %1
   %5 = getelementptr [16 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

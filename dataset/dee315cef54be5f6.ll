@@ -1,5 +1,5 @@
 
-%"class.irr::video::SColor.2697847" = type { i32 }
+%"class.irr::video::SColor.2697813" = type { i32 }
 
 ; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
@@ -11,7 +11,7 @@
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.irr::video::SColor.2697847", ptr %0, i64 %3
+  %4 = getelementptr %"class.irr::video::SColor.2697813", ptr %0, i64 %3
   %5 = shl i64 %1, 2
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

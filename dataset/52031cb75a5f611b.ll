@@ -91,9 +91,8 @@ entry:
   ret i1 %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/trace_events_filter.ll
 ; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/areastore.cpp.ll

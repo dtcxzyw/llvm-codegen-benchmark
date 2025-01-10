@@ -14,5 +14,5 @@ func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
-	shlq	$3, %rax
+	shlq	$2, %rax
 	retq

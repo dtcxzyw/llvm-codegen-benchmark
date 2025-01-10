@@ -907,7 +907,34 @@ entry:
   ret i64 %3
 }
 
-; 75 occurrences:
+; 18 occurrences:
+; bdwgc/optimized/gc.c.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; openblas/optimized/dgemm_kernel.c.ll
+; openblas/optimized/dtrmm_kernel_LN.c.ll
+; openblas/optimized/dtrmm_kernel_LT.c.ll
+; openblas/optimized/dtrmm_kernel_RN.c.ll
+; openblas/optimized/dtrmm_kernel_RT.c.ll
+; openblas/optimized/sgemm_kernel.c.ll
+; qemu/optimized/hw_block_virtio-blk.c.ll
+; rustfmt-rs/optimized/5genfix4t5066ss.ll
+; zfp/optimized/decode1d.c.ll
+; zfp/optimized/decode1l.c.ll
+; zfp/optimized/decode2d.c.ll
+; zfp/optimized/decode2l.c.ll
+; zfp/optimized/decode3d.c.ll
+; zfp/optimized/decode3l.c.ll
+; zfp/optimized/decode4d.c.ll
+; zfp/optimized/decode4l.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 4
+  %3 = sub nsw i64 %2, %0
+  ret i64 %3
+}
+
+; 73 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -939,8 +966,6 @@ entry:
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
@@ -986,34 +1011,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 1
-  %3 = sub nsw i64 %2, %0
-  ret i64 %3
-}
-
-; 18 occurrences:
-; bdwgc/optimized/gc.c.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
-; openblas/optimized/dgemm_kernel.c.ll
-; openblas/optimized/dtrmm_kernel_LN.c.ll
-; openblas/optimized/dtrmm_kernel_LT.c.ll
-; openblas/optimized/dtrmm_kernel_RN.c.ll
-; openblas/optimized/dtrmm_kernel_RT.c.ll
-; openblas/optimized/sgemm_kernel.c.ll
-; qemu/optimized/hw_block_virtio-blk.c.ll
-; rustfmt-rs/optimized/5genfix4t5066ss.ll
-; zfp/optimized/decode1d.c.ll
-; zfp/optimized/decode1l.c.ll
-; zfp/optimized/decode2d.c.ll
-; zfp/optimized/decode2l.c.ll
-; zfp/optimized/decode3d.c.ll
-; zfp/optimized/decode3l.c.ll
-; zfp/optimized/decode4d.c.ll
-; zfp/optimized/decode4l.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 4
+  %2 = shl nuw nsw i64 %1, 4
   %3 = sub nsw i64 %2, %0
   ret i64 %3
 }

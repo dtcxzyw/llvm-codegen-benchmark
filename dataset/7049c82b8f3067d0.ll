@@ -1,39 +1,39 @@
 
-%struct.png_color_struct.2730614 = type { i8, i8, i8 }
-%"struct.draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalDecoder>::AttributeData.3086977" = type { i32, %"class.draco::MeshAttributeCornerTable.3086978", i8, [7 x i8], %"struct.draco::MeshAttributeIndicesEncodingData.3086979", %"class.std::vector.2.3086980" }
-%"class.draco::MeshAttributeCornerTable.3086978" = type { %"class.std::vector.17.3086981", %"class.std::vector.17.3086981", i8, %"class.std::vector.39.3086982", %"class.std::vector.3086983", %"class.std::vector.44.3086984", ptr, %"class.draco::ValenceCache.3086985" }
-%"class.std::vector.17.3086981" = type { %"struct.std::_Bvector_base.3086986" }
-%"struct.std::_Bvector_base.3086986" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3086987" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3086987" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3086988" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3086988" = type { %"struct.std::_Bit_iterator.3086989", %"struct.std::_Bit_iterator.3086989", ptr }
-%"struct.std::_Bit_iterator.3086989" = type { %"struct.std::_Bit_iterator_base.base.3086990", [4 x i8] }
-%"struct.std::_Bit_iterator_base.base.3086990" = type <{ ptr, i32 }>
-%"class.std::vector.39.3086982" = type { %"struct.std::_Vector_base.40.3086991" }
-%"struct.std::_Vector_base.40.3086991" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl.3086992" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl.3086992" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl_data.3086993" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl_data.3086993" = type { ptr, ptr, ptr }
-%"class.std::vector.3086983" = type { %"struct.std::_Vector_base.3086994" }
-%"struct.std::_Vector_base.3086994" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl.3086995" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl.3086995" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl_data.3086996" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl_data.3086996" = type { ptr, ptr, ptr }
-%"class.std::vector.44.3086984" = type { %"struct.std::_Vector_base.45.3086997" }
-%"struct.std::_Vector_base.45.3086997" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl.3086998" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl.3086998" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl_data.3086999" }
-%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl_data.3086999" = type { ptr, ptr, ptr }
-%"class.draco::ValenceCache.3086985" = type { ptr, %"class.draco::IndexTypeVector.3087000", %"class.draco::IndexTypeVector.54.3087001" }
-%"class.draco::IndexTypeVector.3087000" = type { %"class.std::vector.49.3087002" }
-%"class.std::vector.49.3087002" = type { %"struct.std::_Vector_base.50.3087003" }
-%"struct.std::_Vector_base.50.3087003" = type { %"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl.3087004" }
-%"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl.3087004" = type { %"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl_data.3087005" }
-%"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl_data.3087005" = type { ptr, ptr, ptr }
-%"class.draco::IndexTypeVector.54.3087001" = type { %"class.std::vector.2.3086980" }
-%"struct.draco::MeshAttributeIndicesEncodingData.3086979" = type <{ %"class.std::vector.3086983", %"class.std::vector.2.3086980", i32, [4 x i8] }>
-%"class.std::vector.2.3086980" = type { %"struct.std::_Vector_base.3.3087006" }
-%"struct.std::_Vector_base.3.3087006" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3087007" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3087007" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3087008" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3087008" = type { ptr, ptr, ptr }
-%struct.algo_parameters_t.3440941 = type { i8, ptr }
-%struct.crumb_spec_t.3445021 = type { i32, i8 }
+%struct.png_color_struct.2730580 = type { i8, i8, i8 }
+%"struct.draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalDecoder>::AttributeData.3086943" = type { i32, %"class.draco::MeshAttributeCornerTable.3086944", i8, [7 x i8], %"struct.draco::MeshAttributeIndicesEncodingData.3086945", %"class.std::vector.2.3086946" }
+%"class.draco::MeshAttributeCornerTable.3086944" = type { %"class.std::vector.17.3086947", %"class.std::vector.17.3086947", i8, %"class.std::vector.39.3086948", %"class.std::vector.3086949", %"class.std::vector.44.3086950", ptr, %"class.draco::ValenceCache.3086951" }
+%"class.std::vector.17.3086947" = type { %"struct.std::_Bvector_base.3086952" }
+%"struct.std::_Bvector_base.3086952" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3086953" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3086953" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3086954" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3086954" = type { %"struct.std::_Bit_iterator.3086955", %"struct.std::_Bit_iterator.3086955", ptr }
+%"struct.std::_Bit_iterator.3086955" = type { %"struct.std::_Bit_iterator_base.base.3086956", [4 x i8] }
+%"struct.std::_Bit_iterator_base.base.3086956" = type <{ ptr, i32 }>
+%"class.std::vector.39.3086948" = type { %"struct.std::_Vector_base.40.3086957" }
+%"struct.std::_Vector_base.40.3086957" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl.3086958" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl.3086958" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl_data.3086959" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::VertexIndex_tag_type_>>>::_Vector_impl_data.3086959" = type { ptr, ptr, ptr }
+%"class.std::vector.3086949" = type { %"struct.std::_Vector_base.3086960" }
+%"struct.std::_Vector_base.3086960" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl.3086961" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl.3086961" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl_data.3086962" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::CornerIndex_tag_type_>>>::_Vector_impl_data.3086962" = type { ptr, ptr, ptr }
+%"class.std::vector.44.3086950" = type { %"struct.std::_Vector_base.45.3086963" }
+%"struct.std::_Vector_base.45.3086963" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl.3086964" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl.3086964" = type { %"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl_data.3086965" }
+%"struct.std::_Vector_base<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>, std::allocator<draco::IndexType<unsigned int, draco::AttributeValueIndex_tag_type_>>>::_Vector_impl_data.3086965" = type { ptr, ptr, ptr }
+%"class.draco::ValenceCache.3086951" = type { ptr, %"class.draco::IndexTypeVector.3086966", %"class.draco::IndexTypeVector.54.3086967" }
+%"class.draco::IndexTypeVector.3086966" = type { %"class.std::vector.49.3086968" }
+%"class.std::vector.49.3086968" = type { %"struct.std::_Vector_base.50.3086969" }
+%"struct.std::_Vector_base.50.3086969" = type { %"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl.3086970" }
+%"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl.3086970" = type { %"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl_data.3086971" }
+%"struct.std::_Vector_base<signed char, std::allocator<signed char>>::_Vector_impl_data.3086971" = type { ptr, ptr, ptr }
+%"class.draco::IndexTypeVector.54.3086967" = type { %"class.std::vector.2.3086946" }
+%"struct.draco::MeshAttributeIndicesEncodingData.3086945" = type <{ %"class.std::vector.3086949", %"class.std::vector.2.3086946", i32, [4 x i8] }>
+%"class.std::vector.2.3086946" = type { %"struct.std::_Vector_base.3.3086972" }
+%"struct.std::_Vector_base.3.3086972" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3086973" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3086973" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3086974" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3086974" = type { ptr, ptr, ptr }
+%struct.algo_parameters_t.3440907 = type { i8, ptr }
+%struct.crumb_spec_t.3444987 = type { i32, i8 }
 
 ; 28 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -68,7 +68,7 @@
 define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw nuw %struct.png_color_struct.2730614, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %struct.png_color_struct.2730580, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -81,7 +81,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr nusw nuw %"struct.draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalDecoder>::AttributeData.3086977", ptr %0, i64 %2, i32 4
+  %3 = getelementptr nusw nuw %"struct.draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalDecoder>::AttributeData.3086943", ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -92,7 +92,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr %struct.algo_parameters_t.3440941, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.algo_parameters_t.3440907, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -108,7 +108,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %struct.crumb_spec_t.3445021, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.crumb_spec_t.3444987, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

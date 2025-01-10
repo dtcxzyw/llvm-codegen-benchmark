@@ -1,6 +1,6 @@
 
-%struct.ssl_mac_buf_st.2633660 = type { ptr, i32 }
-%struct.CollSeq.3662201 = type { ptr, i8, ptr, ptr, ptr }
+%struct.ssl_mac_buf_st.2633627 = type { ptr, i32 }
+%struct.CollSeq.3662151 = type { ptr, i8, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; gromacs/optimized/msd.cpp.ll
@@ -9,7 +9,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000161(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.ssl_mac_buf_st.2633660, ptr %0, i64 %1, i32 1
+  %2 = getelementptr %struct.ssl_mac_buf_st.2633627, ptr %0, i64 %1, i32 1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
@@ -34,7 +34,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.CollSeq.3662201, ptr %0, i64 %1
+  %2 = getelementptr %struct.CollSeq.3662151, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -40
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr null, ptr %3

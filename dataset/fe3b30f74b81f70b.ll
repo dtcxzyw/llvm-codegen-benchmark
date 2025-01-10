@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3554398 = type { i32, i8 }
+%struct.alps_nibble_commands.3554364 = type { i32, i8 }
 
 ; 4 occurrences:
 ; libpng/optimized/pngread.c.ll
@@ -24,7 +24,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %5
+  %6 = getelementptr %struct.alps_nibble_commands.3554364, ptr %0, i64 %5
   ret ptr %6
 }
 

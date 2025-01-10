@@ -8,12 +8,12 @@ func00000000000001ac:                   # @func00000000000001ac
 	adcq	%r9, %rcx
 	leaq	(%rcx,%rdi), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000128:                   # @func0000000000000128
 	addq	%r8, %rdx
 	adcq	%r9, %rcx
 	leaq	(%rcx,%rdi), %rax
 	retq
-func0000000000000128:                   # @func0000000000000128
+func0000000000000028:                   # @func0000000000000028
 	addq	%r8, %rdx
 	adcq	%r9, %rcx
 	leaq	(%rcx,%rdi), %rax

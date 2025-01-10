@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; arrow/optimized/message.cc.ll
@@ -32,8 +32,6 @@
 ; openjdk/optimized/c1_Optimizer.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/regmask.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll

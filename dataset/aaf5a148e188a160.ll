@@ -347,7 +347,7 @@ entry:
   ret i1 %4
 }
 
-; 387 occurrences:
+; 386 occurrences:
 ; abc/optimized/cuddMatMult.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddZddReord.c.ll
@@ -732,7 +732,6 @@ entry:
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; zfp/optimized/zfp.c.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -743,7 +742,7 @@ entry:
   ret i1 %4
 }
 
-; 381 occurrences:
+; 380 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -1008,7 +1007,6 @@ entry:
 ; opencv/optimized/grayscale_bitmap.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/linearize.cpp.ll

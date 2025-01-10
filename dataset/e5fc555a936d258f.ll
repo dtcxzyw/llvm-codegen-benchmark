@@ -1,5 +1,5 @@
 
-; 263 occurrences:
+; 261 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaScl.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -122,7 +122,6 @@
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
-; libquic/optimized/time.cc.ll
 ; libwebp/optimized/pnmdec.c.ll
 ; libzmq/optimized/socket_base.cpp.ll
 ; linux/optimized/intel_bios.ll
@@ -178,7 +177,6 @@
 ; llvm/optimized/Pragma.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SafeStackLayout.cpp.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll

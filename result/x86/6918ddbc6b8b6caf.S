@@ -12,3 +12,9 @@ func0000000000000036:                   # @func0000000000000036
 	movzbl	%sil, %ecx
 	subq	%rcx, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdi, %rax
+	addq	$135, %rsi
+	andq	$-16, %rsi
+	subq	%rsi, %rax
+	retq

@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -85,6 +85,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-scalar.ll
+; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yyjson/optimized/yyjson.c.ll

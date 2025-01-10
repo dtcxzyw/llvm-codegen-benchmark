@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	leal	-8(%rdi,%rsi), %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000a:                   # @func000000000000000a
 	orl	%esi, %edi
 	leal	1(%rdi), %eax
 	retq

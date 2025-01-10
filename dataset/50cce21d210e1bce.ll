@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 99 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; git/optimized/mem-pool.ll
 ; grpc/optimized/alts_handshaker_client.cc.ll
@@ -31,7 +31,6 @@
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; linux/optimized/sys_x86_64.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll

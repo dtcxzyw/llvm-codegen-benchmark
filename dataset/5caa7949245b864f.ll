@@ -410,8 +410,7 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 1 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000014c(i1 %0, i32 %1, i32 %2) #0 {

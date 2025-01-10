@@ -14,7 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/decompress.c.ll
 ; brotli/optimized/block_splitter.c.ll
@@ -24,6 +24,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; cpython/optimized/unicodeobject.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu_debugfs.ll
@@ -31,6 +32,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/PtrState.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll

@@ -5,6 +5,13 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	leaq	7(%rdx), %rax
+	andq	$-8, %rax
+	shlq	$4, %rsi
+	addq	%rsi, %rax
+	addq	%rdi, %rax
+	retq
 func000000000000002a:                   # @func000000000000002a
 	leaq	-1(%rdx), %rax
 	andq	$-1024, %rax                    # imm = 0xFC00

@@ -21,6 +21,14 @@ func000000000000016a:                   # @func000000000000016a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
+func0000000000000c2a:                   # @func0000000000000c2a
+	sext.w	a0, a0
+	sext.w	a1, a1
+	xor	a1, a1, a0
+	seqz	a1, a1
+	sgtz	a0, a0
+	and	a0, a0, a1
+	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -44,6 +52,14 @@ func000000000000002a:                   # @func000000000000002a
 	slti	a0, a0, 0
 	seqz	a1, a1
 	not	a0, a0
+	and	a0, a0, a1
+	ret
+func0000000000000cea:                   # @func0000000000000cea
+	sext.w	a0, a0
+	sext.w	a1, a1
+	slt	a1, a1, a0
+	xori	a1, a1, 1
+	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000010c:                   # @func000000000000010c

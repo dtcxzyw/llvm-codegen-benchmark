@@ -1,7 +1,7 @@
 
-%class.relocInfo.2733766 = type { i16 }
-%struct.aiFace.2823562 = type { i32, ptr }
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%class.relocInfo.2733732 = type { i16 }
+%struct.aiFace.2823528 = type { i32, ptr }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
@@ -12,7 +12,7 @@ entry:
   %4 = lshr i64 %3, 8
   %5 = and i64 %4, 16777215
   %6 = getelementptr nusw nuw i8, ptr %0, i64 30
-  %7 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -31,7 +31,7 @@ entry:
   %4 = lshr exact i64 %3, 2
   %5 = and i64 %4, 4294967295
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw nuw %struct.aiFace.2823562, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %struct.aiFace.2823528, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -45,7 +45,7 @@ entry:
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
   %6 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %7 = getelementptr %struct.JSShapeProperty.3435093, ptr %6, i64 %5
+  %7 = getelementptr %struct.JSShapeProperty.3435059, ptr %6, i64 %5
   ret ptr %7
 }
 

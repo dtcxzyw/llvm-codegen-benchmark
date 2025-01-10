@@ -1,8 +1,8 @@
 
-%struct.anon.1.2884049 = type { i32, %struct.child_process.2884050, %struct.strbuf.2884035, ptr }
-%struct.child_process.2884050 = type { %struct.strvec.2884033, %struct.strvec.2884033, i32, i32, i64, ptr, ptr, i32, i32, i32, ptr, i16, ptr }
-%struct.strvec.2884033 = type { ptr, i64, i64 }
-%struct.strbuf.2884035 = type { i64, i64, ptr }
+%struct.anon.1.2884015 = type { i32, %struct.child_process.2884016, %struct.strbuf.2884001, ptr }
+%struct.child_process.2884016 = type { %struct.strvec.2883999, %struct.strvec.2883999, i32, i32, i64, ptr, ptr, i32, i32, i32, ptr, i16, ptr }
+%struct.strvec.2883999 = type { ptr, i64, i64 }
+%struct.strbuf.2884001 = type { i64, i64, ptr }
 
 ; 3 occurrences:
 ; c3c/optimized/build_options.c.ll
@@ -30,7 +30,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000161(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.anon.1.2884049, ptr %1, i64 %2, i32 2
+  %3 = getelementptr %struct.anon.1.2884015, ptr %1, i64 %2, i32 2
   %4 = icmp eq i8 %0, 0
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

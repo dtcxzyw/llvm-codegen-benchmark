@@ -1,5 +1,5 @@
 
-%"struct.clang::ObjCDictionaryLiteral_KeyValuePair.3189498" = type { ptr, ptr }
+%"struct.clang::ObjCDictionaryLiteral_KeyValuePair.3189464" = type { ptr, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/svc_xprt.ll
@@ -22,7 +22,7 @@ entry:
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
-  %4 = getelementptr nusw nuw %"struct.clang::ObjCDictionaryLiteral_KeyValuePair.3189498", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.clang::ObjCDictionaryLiteral_KeyValuePair.3189464", ptr %1, i64 %3
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }

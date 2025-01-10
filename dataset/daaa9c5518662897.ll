@@ -95,8 +95,7 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
-; faiss/optimized/IndexPQ.cpp.ll
+; 9 occurrences:
 ; faiss/optimized/sorting.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; llvm/optimized/Record.cpp.ll

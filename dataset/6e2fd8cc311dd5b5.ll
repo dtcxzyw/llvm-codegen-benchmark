@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -71,7 +71,6 @@
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -100,8 +99,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 1 occurrences:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
@@ -114,8 +112,7 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 2 occurrences:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
@@ -129,8 +126,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 1 occurrences:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
@@ -173,7 +169,8 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_image.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {

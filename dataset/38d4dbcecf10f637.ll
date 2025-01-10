@@ -1,5 +1,5 @@
 
-%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
+%struct.FreePageBtreeLeafKey.3653901 = type { i64, i64 }
 
 ; 2 occurrences:
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
@@ -21,7 +21,7 @@ entry:
 define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = add i64 %0, -1
-  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653901], ptr %1, i64 0, i64 %2
   %4 = icmp eq i64 %0, 0
   %5 = icmp eq ptr %3, null
   %6 = select i1 %4, i1 true, i1 %5

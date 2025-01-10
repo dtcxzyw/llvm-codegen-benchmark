@@ -1,7 +1,7 @@
 
-%struct.b3Int4.2818248 = type { %union.anon.2818249 }
-%union.anon.2818249 = type { %struct.anon.2818250 }
-%struct.anon.2818250 = type { i32, i32, i32, i32 }
+%struct.b3Int4.2818214 = type { %union.anon.2818215 }
+%union.anon.2818215 = type { %struct.anon.2818216 }
+%struct.anon.2818216 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
@@ -33,7 +33,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.b3Int4.2818248, ptr %0, i64 %5, i32 0, i32 0, i32 1
+  %6 = getelementptr %struct.b3Int4.2818214, ptr %0, i64 %5, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

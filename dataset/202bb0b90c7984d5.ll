@@ -42,9 +42,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:

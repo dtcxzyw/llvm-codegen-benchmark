@@ -1,10 +1,9 @@
 
-; 130 occurrences:
+; 129 occurrences:
 ; abc/optimized/giaOf.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; clamav/optimized/clamdtop.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll

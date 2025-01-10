@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -17,6 +17,7 @@
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind

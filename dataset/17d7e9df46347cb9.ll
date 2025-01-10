@@ -1,5 +1,5 @@
 
-; 707 occurrences:
+; 709 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -504,7 +504,9 @@
 ; openmpi/optimized/mca_base_framework.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openmpi/optimized/pmix_mca_base_framework.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; openusd/optimized/bignum-dtoa.cc.ll
 ; openusd/optimized/fast-dtoa.cc.ll
@@ -754,11 +756,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/file.cpp.ll
 ; git/optimized/revision.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/pipe.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/klassVtable.ll

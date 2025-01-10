@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/textio.ll
@@ -8,6 +8,7 @@
 ; gromacs/optimized/xtc2.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwrite.c.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/pred_common.c.ll
 ; php/optimized/pcre2_auto_possess.ll

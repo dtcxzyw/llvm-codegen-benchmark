@@ -1,6 +1,6 @@
 
-%struct.MapNode.2693048 = type { i16, i8, i8 }
-%struct.MapNode.2699889 = type { i16, i8, i8 }
+%struct.MapNode.2693014 = type { i16, i8, i8 }
+%struct.MapNode.2699855 = type { i16, i8, i8 }
 
 ; 1 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
@@ -39,7 +39,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 8
   %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %struct.MapNode.2693048, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2693014, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -51,7 +51,19 @@ entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %struct.MapNode.2699889, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2699855, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; qemu/optimized/hw_virtio_virtio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, -8
+  %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -308,10 +308,11 @@ entry:
   ret i64 %4
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
+; abc/optimized/cuddTable.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; boost/optimized/area.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll

@@ -46,6 +46,15 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
+func0000000000000007:                   # @func0000000000000007
+	andb	$1, %sil
+	xorl	%eax, %eax
+	negb	%sil
+	sbbq	%rax, %rax
+	orq	%rdx, %rax
+	cmpq	%rdi, %rax
+	setle	%al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	testb	$1, %sil
 	movl	$1, %eax

@@ -1,16 +1,16 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
-%struct.mdio_bus_stats.3549566 = type { %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_sync.3549568 }
-%struct.u64_stats_t.3549567 = type { %struct.local64_t.3549569 }
-%struct.local64_t.3549569 = type { %struct.local_t.3549570 }
-%struct.local_t.3549570 = type { %struct.atomic64_t.3549571 }
-%struct.atomic64_t.3549571 = type { i64 }
-%struct.u64_stats_sync.3549568 = type {}
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
+%struct.mdio_bus_stats.3549532 = type { %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_sync.3549534 }
+%struct.u64_stats_t.3549533 = type { %struct.local64_t.3549535 }
+%struct.local64_t.3549535 = type { %struct.local_t.3549536 }
+%struct.local_t.3549536 = type { %struct.atomic64_t.3549537 }
+%struct.atomic64_t.3549537 = type { i64 }
+%struct.u64_stats_sync.3549534 = type {}
 
 ; 11 occurrences:
 ; clamav/optimized/bzlib.c.ll
@@ -28,9 +28,9 @@
 define ptr @func000000000000007f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %3, i64 0, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -42,7 +42,7 @@ entry:
 define ptr @func000000000000006b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %3, i64 0, i64 %0
   %5 = zext i32 %1 to i64
   %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   ret ptr %6
@@ -54,9 +54,9 @@ entry:
 define ptr @func0000000000000078(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %5
+  %6 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -73,9 +73,9 @@ entry:
 define ptr @func000000000000007b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -134,7 +134,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1072
-  %4 = getelementptr [32 x %struct.mdio_bus_stats.3549566], ptr %3, i64 0, i64 %0
+  %4 = getelementptr [32 x %struct.mdio_bus_stats.3549532], ptr %3, i64 0, i64 %0
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

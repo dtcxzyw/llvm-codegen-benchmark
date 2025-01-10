@@ -724,7 +724,7 @@ entry:
   ret i32 %2
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -733,7 +733,6 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/cfield.ll
 ; cpython/optimized/syslogmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; flac/optimized/lpc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/cacheinfo.ll

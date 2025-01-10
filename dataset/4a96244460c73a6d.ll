@@ -1,5 +1,5 @@
 
-%struct.entry.2884192 = type { i64, i64, i64, ptr, ptr, i8 }
+%struct.entry.2884158 = type { i64, i64, i64, ptr, ptr, i8 }
 
 ; 1 occurrences:
 ; minetest/optimized/sound_manager.cpp.ll
@@ -25,7 +25,7 @@ entry:
   %3 = urem i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr %struct.entry.2884192, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.entry.2884158, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

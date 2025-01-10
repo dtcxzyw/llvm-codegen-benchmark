@@ -132,10 +132,8 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; boost/optimized/ipc_reliable_message_queue.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:

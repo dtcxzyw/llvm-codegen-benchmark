@@ -1,5 +1,5 @@
 
-%struct.anon.6.2707272 = type { ptr, i64 }
+%struct.anon.6.2707238 = type { ptr, i64 }
 
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -8,7 +8,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4032
   %4 = or disjoint i64 %1, %3
-  %5 = getelementptr [4096 x %struct.anon.6.2707272], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [4096 x %struct.anon.6.2707238], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

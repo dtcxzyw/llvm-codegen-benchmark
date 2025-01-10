@@ -12,10 +12,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; llama.cpp/optimized/ggml.c.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; openusd/optimized/meshGeneratorBase.cpp.ll
 ; Function Attrs: nounwind

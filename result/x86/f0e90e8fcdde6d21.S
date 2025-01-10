@@ -60,12 +60,6 @@ func0000000000000046:                   # @func0000000000000046
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	$-4, %esi
-	cmpl	$48, %esi
-	setb	%al
-	orb	%dil, %al
-	retq
 func000000000000006c:                   # @func000000000000006c
 	cmpl	$2, %esi
 	setne	%al

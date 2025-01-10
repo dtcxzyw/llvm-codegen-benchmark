@@ -46,7 +46,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 107 occurrences:
+; 106 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -101,7 +101,6 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; cmake/optimized/archive_read.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/smb.c.ll
-; curl/optimized/libcurl_la-rtsp.ll
 ; curl/optimized/libcurl_la-smb.ll
 ; faiss/optimized/IndexBinaryFromFloat.cpp.ll
 ; g2o/optimized/edge_se3_euler.cpp.ll

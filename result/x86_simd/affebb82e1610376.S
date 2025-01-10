@@ -22,15 +22,3 @@ func0000000000000154:                   # @func0000000000000154
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
-func0000000000000156:                   # @func0000000000000156
-	vpsrlq	$3, %ymm2, %ymm2
-	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpsllq	$2, %ymm1, %ymm3
-	vpaddq	%ymm1, %ymm3, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vzeroupper
-	retq

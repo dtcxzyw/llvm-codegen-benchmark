@@ -81,28 +81,4 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; opencv/optimized/imgwarp.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
-  %5 = shl nsw i64 %4, 2
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; tev/optimized/Image.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %1, %3
-  %.idx = shl i64 %4, 4
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
-  ret ptr %5
-}
-
 attributes #0 = { nounwind }

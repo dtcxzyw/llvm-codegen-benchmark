@@ -3090,7 +3090,7 @@ entry:
   ret i1 %3
 }
 
-; 175 occurrences:
+; 171 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/crc32.c.ll
@@ -3170,10 +3170,6 @@ entry:
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
-; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
-; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
-; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
-; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/dictionary.ll

@@ -68,18 +68,19 @@ func000000000000002a:                   // @func000000000000002a
 	cset	w0, gt
 	ret
                                         // -- End function
+func000000000000002c:                   // @func000000000000002c
+// %bb.0:                               // %entry
+	sub	w8, w0, #1
+	cmn	w8, #2
+	cset	w0, lo
+	ret
+                                        // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	mov	w8, #127                        // =0x7f
 	cmp	w0, #272, lsl #12               // =1114112
 	ccmp	w0, w8, #0, ne
 	cset	w0, hi
-	ret
-                                        // -- End function
-func000000000000002c:                   // @func000000000000002c
-// %bb.0:                               // %entry
-	cmp	w0, #4
-	cset	w0, ne
 	ret
                                         // -- End function
 func000000000000014a:                   // @func000000000000014a

@@ -85,7 +85,7 @@ entry:
   ret i1 %4
 }
 
-; 1086 occurrences:
+; 1088 occurrences:
 ; abc/optimized/abcSweep.c.ll
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/cuddUtil.c.ll
@@ -576,6 +576,7 @@ entry:
 ; libquic/optimized/ssl_cipher.c.ll
 ; libuv/optimized/linux.c.ll
 ; libuv/optimized/signal.c.ll
+; lightgbm/optimized/json11.cpp.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/compaction.ll
@@ -1149,6 +1150,7 @@ entry:
 ; xgboost/optimized/recordio_split.cc.ll
 ; yosys/optimized/blifparse.ll
 ; yosys/optimized/firrtl.ll
+; yosys/optimized/json11.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/bool_rewriter.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll

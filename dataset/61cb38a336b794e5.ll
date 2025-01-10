@@ -521,8 +521,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
-; clamav/optimized/matcher-ac.c.ll
+; 9 occurrences:
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
@@ -597,7 +596,8 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; clamav/optimized/matcher-ac.c.ll
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll

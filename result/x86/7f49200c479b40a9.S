@@ -56,9 +56,17 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 .LCPI7_0:
 	.quad	0x7fffffffffffffff              # double NaN
-func000000000000000a:                   # @func000000000000000a
+func000000000000000c:                   # @func000000000000000c
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vandpd	.LCPI7_0(%rip){1to2}, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setae	%al
+	retq
+.LCPI8_0:
+	.quad	0x7fffffffffffffff              # double NaN
+func000000000000000a:                   # @func000000000000000a
+	vmulsd	%xmm2, %xmm1, %xmm1
+	vandpd	.LCPI8_0(%rip){1to2}, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setae	%al
 	retq

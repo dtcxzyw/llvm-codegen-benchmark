@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; libjpeg-turbo/optimized/md5hl.c.ll
-; php/optimized/pack.ll
 ; redis/optimized/geo.ll
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind

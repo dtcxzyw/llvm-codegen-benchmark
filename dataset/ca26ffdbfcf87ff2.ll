@@ -14,8 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 2 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 1 occurrences:
 ; openjdk/optimized/jmemmgr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
@@ -24,6 +23,18 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = mul i64 %0, %4
   %6 = icmp ugt i64 %5, 999999976
+  ret i1 %6
+}
+
+; 1 occurrences:
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
+  %4 = zext nneg i32 %3 to i64
+  %5 = mul i64 %0, %4
+  %6 = icmp ugt i64 %5, 1000000000
   ret i1 %6
 }
 

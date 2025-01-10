@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; libquic/optimized/time_support.c.ll
 ; qemu/optimized/hw_ide_core.c.ll
+; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

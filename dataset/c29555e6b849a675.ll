@@ -1,8 +1,8 @@
 
-%struct._zend_op.2789840 = type { ptr, %union._znode_op.2789849, %union._znode_op.2789849, %union._znode_op.2789849, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789849 = type { i32 }
-%struct.code.3535564 = type { i8, i8, i16 }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%struct._zend_op.2789806 = type { ptr, %union._znode_op.2789815, %union._znode_op.2789815, %union._znode_op.2789815, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789815 = type { i32 }
+%struct.code.3535530 = type { i8, i8, i16 }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 10 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000019(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2789840, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2789806, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 5
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.code.3535564, ptr %1, i64 %3
+  %4 = getelementptr %struct.code.3535530, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 2
@@ -94,7 +94,7 @@ entry:
 define i64 @func0000000000000021(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %1, i64 %3
+  %4 = getelementptr %union._Py_CODEUNIT.3974112, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 1

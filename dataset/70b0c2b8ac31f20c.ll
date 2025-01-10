@@ -1,8 +1,8 @@
 
-%"class.llvm::MachineOperand.3146958" = type { i32, %union.anon.331.3146959, ptr, %"union.llvm::MachineOperand::ContentsUnion.3146960" }
-%union.anon.331.3146959 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3146960" = type { %"class.llvm::ArrayRef.332.3146961" }
-%"class.llvm::ArrayRef.332.3146961" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3146924" = type { i32, %union.anon.331.3146925, ptr, %"union.llvm::MachineOperand::ContentsUnion.3146926" }
+%union.anon.331.3146925 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3146926" = type { %"class.llvm::ArrayRef.332.3146927" }
+%"class.llvm::ArrayRef.332.3146927" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; openjdk/optimized/runTimeClassInfo.ll
@@ -40,7 +40,7 @@ entry:
   %4 = select i1 %3, i64 0, i64 64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3146958", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3146924", ptr %5, i64 %6
   ret ptr %7
 }
 

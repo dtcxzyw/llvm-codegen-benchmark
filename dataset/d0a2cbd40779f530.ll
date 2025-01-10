@@ -128,7 +128,7 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/amapLiberty.c.ll
@@ -149,6 +149,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll

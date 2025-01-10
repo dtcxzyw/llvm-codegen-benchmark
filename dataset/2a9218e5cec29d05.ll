@@ -1,5 +1,51 @@
 
-; 129 occurrences:
+; 37 occurrences:
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; darktable/optimized/introspection_filmic.c.ll
+; draco/optimized/obj_encoder.cc.ll
+; icu/optimized/package.ll
+; llvm/optimized/blake3.c.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
+; mini-lsm-rs/optimized/1fz4nd3pxmha003h.ll
+; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
+; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
+; mini-lsm-rs/optimized/29sn4tiur79wqexc.ll
+; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
+; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
+; mini-lsm-rs/optimized/45avienzelzw747t.ll
+; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
+; mini-lsm-rs/optimized/59xebgypolxascxr.ll
+; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
+; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
+; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
+; opencv/optimized/sift.dispatch.cpp.ll
+; php/optimized/readcdf.ll
+; re2/optimized/prog.cc.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 9, i64 %2
+  %4 = getelementptr nusw [10 x i16], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 126 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
@@ -12,16 +58,13 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
 ; c3c/optimized/sema_decls.c.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; draco/optimized/obj_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; icu/optimized/number_simple.ll
-; icu/optimized/package.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
-; llvm/optimized/blake3.c.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_ffrecord.ll
@@ -76,16 +119,16 @@
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; openusd/optimized/ray.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/readcdf.ll
 ; php/optimized/tm2unixtime.ll
 ; proj/optimized/chamb.cpp.ll
-; re2/optimized/prog.cc.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; taskflow/optimized/async.cpp.ll
@@ -132,8 +175,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 9, i64 %2
-  %4 = getelementptr nusw nuw [10 x i16], ptr %0, i64 0, i64 %3
+  %3 = select i1 %1, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [3 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -153,46 +196,6 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 126, i64 %2
   %4 = getelementptr [128 x i8], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 31 occurrences:
-; darktable/optimized/introspection_filmic.c.ll
-; draco/optimized/obj_encoder.cc.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
-; mini-lsm-rs/optimized/1fz4nd3pxmha003h.ll
-; mini-lsm-rs/optimized/1p3sopfakd9d715u.ll
-; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
-; mini-lsm-rs/optimized/29sn4tiur79wqexc.ll
-; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
-; mini-lsm-rs/optimized/3jirohyl4so2bgw0.ll
-; mini-lsm-rs/optimized/45avienzelzw747t.ll
-; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
-; mini-lsm-rs/optimized/59xebgypolxascxr.ll
-; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
-; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
-; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
-; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
-; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
-; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
-; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
-; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 65535, i64 %2
-  %4 = getelementptr nusw [65536 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

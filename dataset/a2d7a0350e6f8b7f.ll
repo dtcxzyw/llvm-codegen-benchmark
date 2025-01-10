@@ -416,7 +416,7 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/cordz_test.cc.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; boost/optimized/static_string.ll
@@ -438,8 +438,6 @@ entry:
 ; linux/optimized/nl80211.ll
 ; linux/optimized/string.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; lvgl/optimized/lv_sprintf_builtin.ll
@@ -841,17 +839,6 @@ define i1 @func0000000000000104(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1844674407370955161
   %3 = icmp ult i8 %0, -10
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; cmake/optimized/archive_read_support_filter_uu.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 1
-  %3 = icmp eq i8 %0, 0
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

@@ -1,7 +1,7 @@
 
-%struct.obj_info.2884205 = type { i64, %struct.object_id.2884200, ptr }
-%struct.object_id.2884200 = type { [32 x i8], i32 }
-%struct.intel_forcewake_range.3538576 = type { i32, i32, i32 }
+%struct.obj_info.2884171 = type { i64, %struct.object_id.2884166, ptr }
+%struct.object_id.2884166 = type { [32 x i8], i32 }
+%struct.intel_forcewake_range.3538542 = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; git/optimized/midx.ll
@@ -14,7 +14,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.obj_info.2884205, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.obj_info.2884171, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -42,7 +42,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %struct.intel_forcewake_range.3538576, ptr %0, i64 %6
+  %7 = getelementptr %struct.intel_forcewake_range.3538542, ptr %0, i64 %6
   ret ptr %7
 }
 

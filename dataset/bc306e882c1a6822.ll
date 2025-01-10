@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
@@ -9,7 +9,6 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; openblas/optimized/dlansf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
@@ -23,7 +22,7 @@ entry:
   ret i32 %3
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -58,6 +57,7 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/fast_norm.cpp.ll
 ; opencv/optimized/matrix.cpp.ll

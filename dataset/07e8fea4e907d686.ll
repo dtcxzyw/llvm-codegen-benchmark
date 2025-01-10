@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
-%union.anon.2694471 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2694435" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436", i64, %union.anon.2694437 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436" = type { ptr }
+%union.anon.2694437 = type { i64, [8 x i8] }
 
 ; 5 occurrences:
 ; boost/optimized/difference_pl_l.ll
@@ -431,7 +431,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 2, i64 3
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2694469", ptr %0, i64 %3
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2694435", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }

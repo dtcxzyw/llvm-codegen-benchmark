@@ -1,5 +1,5 @@
 
-; 3896 occurrences:
+; 3897 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -3820,6 +3820,7 @@
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/ezminisat.ll
+; yosys/optimized/ezsat.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/fsm_expand.ll
 ; yosys/optimized/fsm_export.ll
@@ -3903,7 +3904,7 @@ entry:
   ret i32 %1
 }
 
-; 1823 occurrences:
+; 1817 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -4384,8 +4385,6 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_lbr.cpp.ll
@@ -5117,9 +5116,6 @@ entry:
 ; openusd/optimized/unitTestDelegate.cpp.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -5390,7 +5386,6 @@ entry:
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/assoc_mgr.ll
 ; slurm/optimized/job_info.ll
 ; slurm/optimized/pack.ll
@@ -5734,7 +5729,7 @@ entry:
   ret i32 %1
 }
 
-; 8289 occurrences:
+; 8287 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -7809,7 +7804,6 @@ entry:
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
@@ -13185,7 +13179,6 @@ entry:
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_counter.ll
 ; yosys/optimized/extract_fa.ll
-; yosys/optimized/ezsat.ll
 ; yosys/optimized/flowmap.ll
 ; yosys/optimized/fsm_detect.ll
 ; yosys/optimized/fsm_expand.ll
@@ -15231,6 +15224,7 @@ entry:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -16547,7 +16541,6 @@ entry:
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll

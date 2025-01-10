@@ -1,4 +1,19 @@
 
+; 4 occurrences:
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; ruby/optimized/shift_jis.ll
+; ruby/optimized/windows_31j.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = shl i32 %0, 8
+  %4 = or disjoint i32 %3, %2
+  %5 = icmp ult i32 %4, 128
+  ret i1 %5
+}
+
 ; 166 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
@@ -593,19 +608,6 @@ entry:
   %3 = shl nuw i32 %0, 24
   %4 = or disjoint i32 %3, %2
   %5 = icmp ne i32 %4, 0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; libquic/optimized/bio.c.ll
-; libquic/optimized/cbs.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = icmp ult i32 %4, 128
   ret i1 %5
 }
 

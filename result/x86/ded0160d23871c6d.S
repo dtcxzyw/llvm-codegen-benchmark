@@ -30,14 +30,6 @@ func000000000000028c:                   # @func000000000000028c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000581:                   # @func0000000000000581
-	movl	%edx, %eax
-	cmpq	%rax, %rsi
-	setne	%cl
-	testb	%dil, %dil
-	sete	%al
-	andb	%cl, %al
-	retq
 func0000000000000684:                   # @func0000000000000684
 	movl	%edx, %eax
 	cmpq	%rax, %rsi

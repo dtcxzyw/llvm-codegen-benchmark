@@ -40,6 +40,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; clamav/optimized/autoit.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 30
+  %3 = shl i32 %0, 2
+  %4 = icmp ult i32 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/InstructionCombining.cpp.ll

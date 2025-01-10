@@ -1,6 +1,6 @@
 
-%struct.in6_addr.3530600 = type { %union.anon.24.3530601 }
-%union.anon.24.3530601 = type { [4 x i32] }
+%struct.in6_addr.3530566 = type { %union.anon.24.3530567 }
+%union.anon.24.3530567 = type { [4 x i32] }
 
 ; 3 occurrences:
 ; oiio/optimized/icoinput.cpp.ll
@@ -24,7 +24,7 @@ define ptr @func0000000000000010(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr %struct.in6_addr.3530600, ptr %0, i64 %3
+  %4 = getelementptr %struct.in6_addr.3530566, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

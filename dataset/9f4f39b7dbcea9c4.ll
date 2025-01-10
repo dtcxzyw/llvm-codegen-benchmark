@@ -68,9 +68,11 @@ entry:
   ret i64 %3
 }
 
-; 517 occurrences:
+; 521 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
+; abc/optimized/SimpSolver.cpp.ll
+; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -212,6 +214,7 @@ entry:
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cmake/optimized/ia64.c.ll
+; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -580,6 +583,7 @@ entry:
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-uds.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/smt_internalizer.cpp.ll

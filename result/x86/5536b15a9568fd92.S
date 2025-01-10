@@ -9,6 +9,12 @@ func0000000000000057:                   # @func0000000000000057
 	addl	%esi, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	movslq	%edx, %rax
+	addq	%rsi, %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	shlq	$2, %rdx
 	sarq	$63, %rdx

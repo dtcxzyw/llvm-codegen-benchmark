@@ -1,13 +1,13 @@
 
-%"struct.(anonymous namespace)::EnumConstant.3168443" = type { %"class.llvm::StringRef.3168368", %"struct.(anonymous namespace)::AvailabilityItem.3168369", %"class.std::optional.3168372", %"class.llvm::StringRef.3168368" }
-%"struct.(anonymous namespace)::AvailabilityItem.3168369" = type { i32, %"class.llvm::StringRef.3168368" }
-%"class.std::optional.3168372" = type { %"struct.std::_Optional_base.3168404" }
-%"struct.std::_Optional_base.3168404" = type { %"struct.std::_Optional_payload.3168405" }
-%"struct.std::_Optional_payload.3168405" = type { %"struct.std::_Optional_payload_base.3168406" }
-%"struct.std::_Optional_payload_base.3168406" = type { %"union.std::_Optional_payload_base<bool>::_Storage.3168407", i8 }
-%"union.std::_Optional_payload_base<bool>::_Storage.3168407" = type { %"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168408" }
-%"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168408" = type { i8 }
-%"class.llvm::StringRef.3168368" = type { ptr, i64 }
+%"struct.(anonymous namespace)::EnumConstant.3168409" = type { %"class.llvm::StringRef.3168334", %"struct.(anonymous namespace)::AvailabilityItem.3168335", %"class.std::optional.3168338", %"class.llvm::StringRef.3168334" }
+%"struct.(anonymous namespace)::AvailabilityItem.3168335" = type { i32, %"class.llvm::StringRef.3168334" }
+%"class.std::optional.3168338" = type { %"struct.std::_Optional_base.3168370" }
+%"struct.std::_Optional_base.3168370" = type { %"struct.std::_Optional_payload.3168371" }
+%"struct.std::_Optional_payload.3168371" = type { %"struct.std::_Optional_payload_base.3168372" }
+%"struct.std::_Optional_payload_base.3168372" = type { %"union.std::_Optional_payload_base<bool>::_Storage.3168373", i8 }
+%"union.std::_Optional_payload_base<bool>::_Storage.3168373" = type { %"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168374" }
+%"struct.std::_Optional_payload_base<bool>::_Empty_byte.3168374" = type { i8 }
+%"class.llvm::StringRef.3168334" = type { ptr, i64 }
 
 ; 83 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -116,7 +116,7 @@ entry:
   %3 = ashr exact i64 %1, 6
   %4 = sub nuw i64 %2, %3
   %5 = call i64 @llvm.umax.i64(i64 %3, i64 range(i64 -144115188075855870, 144115192370823169) %4)
-  %6 = getelementptr %"struct.(anonymous namespace)::EnumConstant.3168443", ptr %0, i64 %5
+  %6 = getelementptr %"struct.(anonymous namespace)::EnumConstant.3168409", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %1
   ret ptr %7
 }

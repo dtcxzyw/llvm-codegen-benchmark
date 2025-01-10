@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/io_pgtable.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

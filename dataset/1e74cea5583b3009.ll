@@ -1,13 +1,10 @@
 
-%"class.std::vector.42.2615501" = type { %"struct.std::_Vector_base.43.2615502" }
-%"struct.std::_Vector_base.43.2615502" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2615503" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2615503" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2615504" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2615504" = type { ptr, ptr, ptr }
+%"class.std::vector.42.2615468" = type { %"struct.std::_Vector_base.43.2615469" }
+%"struct.std::_Vector_base.43.2615469" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2615470" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2615470" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2615471" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2615471" = type { ptr, ptr, ptr }
 
-; 21 occurrences:
-; abc/optimized/giaIf.c.ll
-; abc/optimized/ifDec75.c.ll
-; abc/optimized/ifMap.c.ll
+; 16 occurrences:
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; icu/optimized/package.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
@@ -22,8 +19,6 @@
 ; openjdk/optimized/jccoefct.ll
 ; openjdk/optimized/jcprepct.ll
 ; openjdk/optimized/jquant1.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openusd/optimized/openexr-c.c.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
@@ -31,7 +26,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::vector.42.2615501", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::vector.42.2615468", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -62,10 +57,12 @@ entry:
   ret ptr %4
 }
 
-; 32 occurrences:
+; 36 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifMap.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -87,7 +84,9 @@ entry:
 ; openjdk/optimized/jcprepct.ll
 ; openjdk/optimized/mlib_ImageConvMxN_ext.ll
 ; openssl/optimized/libcrypto-lib-a_strex.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll

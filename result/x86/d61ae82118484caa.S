@@ -22,15 +22,15 @@ func0000000000000008:                   # @func0000000000000008
 	movslq	%esi, %rax
 	leaq	-1(%rdi,%rax), %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movslq	%esi, %rax
+	leaq	1(%rdi,%rax), %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movslq	%esi, %rax
-	leaq	-2(%rdi,%rax), %rax
+	leaq	-8(%rdi,%rax,8), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	movslq	%esi, %rax
-	leaq	4(%rdi,%rax), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
 	movslq	%esi, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq

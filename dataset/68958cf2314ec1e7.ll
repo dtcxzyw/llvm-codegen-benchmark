@@ -11,6 +11,18 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; abc/optimized/cmdApi.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fadd double %2, 1.000000e+00
+  %4 = fcmp ugt double %0, %3
+  %5 = fcmp ult double %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; proj/optimized/igh.cpp.ll
 ; proj/optimized/igh_o.cpp.ll

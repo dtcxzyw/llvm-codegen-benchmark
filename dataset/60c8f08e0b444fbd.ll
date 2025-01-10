@@ -110,7 +110,7 @@ entry:
   ret i1 %5
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/cecSolveG.c.ll
@@ -142,7 +142,6 @@ entry:
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/vmalloc.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -248,9 +247,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/codeobject.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll

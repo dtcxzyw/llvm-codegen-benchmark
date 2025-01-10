@@ -1,11 +1,9 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -309,7 +307,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
 ; Function Attrs: nounwind

@@ -526,7 +526,7 @@ entry:
   ret ptr %4
 }
 
-; 307 occurrences:
+; 308 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -630,6 +630,7 @@ entry:
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/libahci.ll
+; linux/optimized/libata-core.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/strset.ll
 ; llvm/optimized/AIX.cpp.ll
@@ -843,7 +844,7 @@ entry:
   ret ptr %4
 }
 
-; 93 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -871,7 +872,6 @@ entry:
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/libata-core.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/page_alloc.ll

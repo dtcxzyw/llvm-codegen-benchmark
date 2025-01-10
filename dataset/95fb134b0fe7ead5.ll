@@ -24,16 +24,15 @@ entry:
   ret i16 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/aspm.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl nuw nsw i16 %2, 3
+  %3 = shl nuw nsw i16 %2, 8
   %4 = or disjoint i16 %1, %3
   %5 = add nuw nsw i16 %4, %0
   ret i16 %5

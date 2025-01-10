@@ -1,12 +1,12 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%struct.RamblockDirtyInfo.2706259 = type { [256 x i8], ptr, i64, ptr, i64, i64, ptr }
-%struct.edid.3531786 = type { [8 x i8], [2 x i8], [2 x i8], i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, %struct.est_timings.3531787, [8 x %struct.std_timing.3531788], [4 x %struct.detailed_timing.3531789], i8, i8 }
-%struct.est_timings.3531787 = type { i8, i8, i8 }
-%struct.std_timing.3531788 = type { i8, i8 }
-%struct.detailed_timing.3531789 = type { i16, %union.anon.3531790 }
-%union.anon.3531790 = type { %struct.detailed_pixel_timing.3531791 }
-%struct.detailed_pixel_timing.3531791 = type { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%struct.RamblockDirtyInfo.2706225 = type { [256 x i8], ptr, i64, ptr, i64, i64, ptr }
+%struct.edid.3531752 = type { [8 x i8], [2 x i8], [2 x i8], i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, %struct.est_timings.3531753, [8 x %struct.std_timing.3531754], [4 x %struct.detailed_timing.3531755], i8, i8 }
+%struct.est_timings.3531753 = type { i8, i8, i8 }
+%struct.std_timing.3531754 = type { i8, i8 }
+%struct.detailed_timing.3531755 = type { i16, %union.anon.3531756 }
+%union.anon.3531756 = type { %struct.detailed_pixel_timing.3531757 }
+%struct.detailed_pixel_timing.3531757 = type { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 }
 
 ; 70 occurrences:
 ; clamav/optimized/pdfdecode.c.ll
@@ -83,12 +83,12 @@
 define i1 @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.redblack_node.2601295, ptr %0, i64 %2
+  %3 = getelementptr %struct.redblack_node.2601262, ptr %0, i64 %2
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; linux/optimized/calipso.ll
 ; linux/optimized/evgpe.ll
 ; linux/optimized/flow_dissector.ll
@@ -112,10 +112,12 @@ entry:
 ; linux/optimized/route.ll
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/stackdepot.ll
+; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/md.ll
 ; qemu/optimized/fdt.c.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
 ; qemu/optimized/semihosting_guestfd.c.ll
+; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-tpncp.c.ll
@@ -124,7 +126,7 @@ entry:
 define i1 @func0000000000000081(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.RamblockDirtyInfo.2706259, ptr %0, i64 %2
+  %3 = getelementptr %struct.RamblockDirtyInfo.2706225, ptr %0, i64 %2
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }
@@ -177,18 +179,16 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/drm_edid.ll
-; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/analyze.ll
 ; postgres/optimized/execExpr.ll
 ; postgres/optimized/parse_relation.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000008c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.edid.3531786, ptr %0, i64 %2
+  %3 = getelementptr %struct.edid.3531752, ptr %0, i64 %2
   %4 = icmp ne ptr %3, null
   ret i1 %4
 }

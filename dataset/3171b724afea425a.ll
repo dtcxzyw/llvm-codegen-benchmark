@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3309293" = type { i32 }
+%"class.clang::SourceLocation.3309259" = type { i32 }
 
 ; 82 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -94,7 +94,7 @@ entry:
   ret ptr %6
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -111,6 +111,7 @@ entry:
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ucptrie.ll
+; icu/optimized/uresdata.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
@@ -187,7 +188,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.clang::SourceLocation.3309293", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::SourceLocation.3309259", ptr %0, i64 %5
   ret ptr %6
 }
 

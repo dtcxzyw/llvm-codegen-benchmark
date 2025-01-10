@@ -35,13 +35,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	sub	a2, a2, a0
 	sltu	a0, a2, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
-	slli	a1, a1, 32
-	li	a2, 4
-	srli	a1, a1, 32
-	sub	a2, a2, a0
-	sltu	a0, a2, a1
-	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 32
 	li	a2, -1
@@ -104,6 +97,14 @@ func00000000000000a8:                   # @func00000000000000a8
 	li	a2, 960
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
+	ret
+func0000000000000074:                   # @func0000000000000074
+	slli	a1, a1, 32
+	lui	a2, 16
+	srli	a1, a1, 32
+	addiw	a2, a2, 39
+	sub	a2, a2, a0
+	sltu	a0, a2, a1
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a1, a1

@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; gromacs/optimized/genion.cpp.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
@@ -24,9 +23,10 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; openblas/optimized/dlaed0.c.ll

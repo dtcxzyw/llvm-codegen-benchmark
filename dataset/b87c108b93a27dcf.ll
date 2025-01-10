@@ -1,12 +1,10 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

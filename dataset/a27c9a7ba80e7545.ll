@@ -1,5 +1,5 @@
 
-%struct.be128.3558475 = type { i64, i64 }
+%struct.be128.3558441 = type { i64, i64 }
 
 ; 73 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -205,7 +205,7 @@ define ptr @func0000000000000143(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp sgt i8 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.be128.3558475, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.be128.3558441, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

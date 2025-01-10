@@ -13,8 +13,8 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	retq
 func0000000000000058:                   # @func0000000000000058
-	cmpq	$16, %rdi
-	movl	$16, %eax
+	cmpq	$75, %rdi
+	movl	$75, %eax
 	cmovbq	%rdi, %rax
 	cmpl	%esi, %eax
 	seta	%al

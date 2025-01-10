@@ -4,11 +4,6 @@ func000000000000000b:                   # @func000000000000000b
 	shlq	$4, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	movsbq	%sil, %rax
-	imulq	$76, %rax, %rax
-	leaq	8(%rdi,%rax), %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	movsbq	%sil, %rax
 	imulq	$76, %rax, %rax

@@ -22,14 +22,3 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllvd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI2_0:
-	.long	3                               # 0x3
-.LCPI2_1:
-	.long	1                               # 0x1
-func000000000000001f:                   # @func000000000000001f
-	vptestnmd	%ymm2, %ymm2, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [3,3,3,3,3,3,3,3]
-	vpbroadcastd	.LCPI2_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1,1,1,1,1,1,1,1]
-	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	retq

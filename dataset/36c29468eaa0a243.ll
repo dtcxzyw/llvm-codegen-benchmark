@@ -297,14 +297,4 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; llvm/optimized/DebugInfoMetadata.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
-entry:
-  %.not = icmp eq i32 %0, %1
-  %2 = select i1 %.not, i32 %0, i32 0
-  ret i32 %2
-}
-
 attributes #0 = { nounwind }

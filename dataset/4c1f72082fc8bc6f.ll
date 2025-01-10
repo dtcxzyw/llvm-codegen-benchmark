@@ -1,5 +1,5 @@
 
-; 428 occurrences:
+; 430 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; actix-rs/optimized/h71pcgvmobkrtmz.ll
 ; boost/optimized/algorithm.ll
@@ -222,6 +222,7 @@
 ; openjdk/optimized/hb-ot-shape.ll
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/macro.ll
+; openjdk/optimized/zDirector.ll
 ; openmpi/optimized/bml_r2.ll
 ; php/optimized/spprintf.ll
 ; php/optimized/zend_API.ll
@@ -271,6 +272,7 @@
 ; rust-analyzer-rs/optimized/43pdur0jxhus3hd4.ll
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
+; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/4mnb5su7whazh2aj.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
@@ -1162,7 +1164,6 @@ entry:
 ; openjdk/optimized/vmThread.ll
 ; openjdk/optimized/weakHandle.ll
 ; openjdk/optimized/xRelocate.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; openjdk/optimized/zThreadLocalAllocBuffer.ll
 ; openmpi/optimized/coll_han_scatter.ll
@@ -1188,6 +1189,7 @@ entry:
 ; openspiel/optimized/observation_history.cc.ll
 ; openusd/optimized/aggregateTreeBuilder.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
 ; openusd/optimized/jsonSerialization.cpp.ll

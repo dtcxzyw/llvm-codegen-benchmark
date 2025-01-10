@@ -1,5 +1,5 @@
 
-%struct.dsa_segment_map.3653146 = type { ptr, ptr, ptr, ptr, ptr }
+%struct.dsa_segment_map.3653112 = type { ptr, ptr, ptr, ptr, ptr }
 
 ; 35 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -84,7 +84,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 40
-  %3 = getelementptr [1024 x %struct.dsa_segment_map.3653146], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [1024 x %struct.dsa_segment_map.3653112], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

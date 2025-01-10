@@ -7,5 +7,5 @@ func000000000000003f:                   # @func000000000000003f
 	movzwl	%dx, %eax
 	addl	%edi, %eax
 	addl	%esi, %eax
-	addl	%eax, %eax
+	shll	$2, %eax
 	retq

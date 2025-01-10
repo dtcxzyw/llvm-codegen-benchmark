@@ -1,10 +1,3 @@
-func000000000000014a:                   # @func000000000000014a
-	subl	%esi, %edi
-	setg	%cl
-	testl	%edi, %edi
-	setg	%al
-	andb	%cl, %al
-	retq
 func0000000000000104:                   # @func0000000000000104
 	subl	%edi, %esi
 	seta	%cl

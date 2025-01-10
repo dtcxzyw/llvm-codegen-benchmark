@@ -70,6 +70,19 @@ entry:
 }
 
 ; 1 occurrences:
+; hyperscan/optimized/castlecompile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 135
+  %4 = add i64 %3, %0
+  %5 = shl nuw nsw i64 %1, 3
+  %6 = add i64 %4, %5
+  %7 = and i64 %6, -8
+  ret i64 %7
+}
+
+; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {

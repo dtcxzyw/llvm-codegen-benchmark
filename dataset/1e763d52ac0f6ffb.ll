@@ -23,4 +23,14 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; delta-rs/optimized/5d242f2by7re2olg.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %1, 1000000000
+  %3 = icmp samesign ule i32 %2, %0
+  ret i1 %3
+}
+
 attributes #0 = { nounwind }

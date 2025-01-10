@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 6 occurrences:
 ; cpython/optimized/sre.ll
@@ -149,7 +149,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %4, i64 %3
   ret ptr %5
 }
 

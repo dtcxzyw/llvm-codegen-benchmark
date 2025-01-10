@@ -1,5 +1,5 @@
 
-; 3771 occurrences:
+; 3773 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -477,6 +477,7 @@
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/noproxy.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/pipe.c.ll
 ; cmake/optimized/rhash.c.ll
 ; cmake/optimized/select.c.ll
@@ -522,6 +523,7 @@
 ; curl/optimized/libcurl_la-headers.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; curl/optimized/libcurl_la-noproxy.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; curl/optimized/libcurl_la-select.ll
 ; curl/optimized/libcurl_la-transfer.ll
@@ -2625,6 +2627,7 @@
 ; qemu/optimized/virtio-pci.c.ll
 ; quantlib/optimized/bespokecalendar.ll
 ; quantlib/optimized/sobolrsg.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -3277,7 +3280,6 @@
 ; wireshark/optimized/tvbuff_lznt1.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
-; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; xgboost/optimized/broadcast.cc.ll
@@ -3830,7 +3832,7 @@ entry:
   ret i1 %3
 }
 
-; 617 occurrences:
+; 616 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -3881,7 +3883,6 @@ entry:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/mvcContain.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/pdrInv.c.ll
 ; abc/optimized/plaMan.c.ll

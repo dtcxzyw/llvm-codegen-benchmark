@@ -236,13 +236,6 @@ func0000000000000068:                   // @func0000000000000068
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
-	mul	w8, w1, w2
-	cmp	x0, x8
-	cset	w0, hi
-	ret
-                                        // -- End function
 func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	mul	w8, w1, w2

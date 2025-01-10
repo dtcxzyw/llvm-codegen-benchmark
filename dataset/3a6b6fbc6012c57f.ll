@@ -1,6 +1,6 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.190.2711048" = type { %union.anon.191.2711049 }
-%union.anon.191.2711049 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.190.2711014" = type { %union.anon.191.2711015 }
+%union.anon.191.2711015 = type { ptr }
 
 ; 33 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -69,7 +69,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = or i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711048"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [4096 x %"class.openvdb::v11_0::tree::NodeUnion.190.2711014"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,34 @@
 
 ; 19 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; assimp/optimized/ColladaLoader.cpp.ll
+; box2d/optimized/b2_distance_joint.cpp.ll
+; box2d/optimized/b2_weld_joint.cpp.ll
+; bullet3/optimized/b3CpuRigidBodyPipeline.ll
+; bullet3/optimized/b3GpuNarrowPhase.ll
+; bullet3/optimized/btRigidBody.ll
+; darktable/optimized/introspection_colorbalance.c.ll
+; gromacs/optimized/coordinatetransformation.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; llama.cpp/optimized/ggml-quants.c.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; ncnn/optimized/mat_pixel_affine.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; openusd/optimized/rigidBodyAPI.cpp.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define float @func0000000000000007(float %0) #0 {
+entry:
+  %1 = fdiv float 1.000000e+00, %0
+  %2 = fcmp une float %0, 0.000000e+00
+  %3 = select i1 %2, float %1, float 0x3FD5555560000000
+  ret float %3
+}
+
+; 19 occurrences:
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_gear_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -24,34 +53,6 @@ define float @func0000000000000004(float %0) #0 {
 entry:
   %1 = fdiv float 1.000000e+00, %0
   %2 = fcmp ogt float %0, 0.000000e+00
-  %3 = select i1 %2, float %1, float 0.000000e+00
-  ret float %3
-}
-
-; 18 occurrences:
-; assimp/optimized/3DSLoader.cpp.ll
-; assimp/optimized/ColladaLoader.cpp.ll
-; box2d/optimized/b2_distance_joint.cpp.ll
-; box2d/optimized/b2_weld_joint.cpp.ll
-; bullet3/optimized/b3CpuRigidBodyPipeline.ll
-; bullet3/optimized/b3GpuNarrowPhase.ll
-; bullet3/optimized/btRigidBody.ll
-; darktable/optimized/introspection_colorbalance.c.ll
-; gromacs/optimized/coordinatetransformation.cpp.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; llama.cpp/optimized/ggml-quants.c.ll
-; ncnn/optimized/mat_pixel_affine.cpp.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; openusd/optimized/rigidBodyAPI.cpp.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; stb/optimized/stb_truetype.c.ll
-; Function Attrs: nounwind
-define float @func0000000000000007(float %0) #0 {
-entry:
-  %1 = fdiv float 1.000000e+00, %0
-  %2 = fcmp une float %0, 0.000000e+00
   %3 = select i1 %2, float %1, float 0.000000e+00
   ret float %3
 }

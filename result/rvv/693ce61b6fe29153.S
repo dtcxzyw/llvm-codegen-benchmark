@@ -319,12 +319,3 @@ func00000000000018c8:                   # @func00000000000018c8
 	vmsgtu.vi	v11, v8, 12
 	vmor.mm	v0, v10, v11
 	ret
-func000000000000294c:                   # @func000000000000294c
-	li	a0, 254
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vx	v14, v12, a0
-	vmsgt.vx	v12, v10, a0
-	vmor.mm	v10, v12, v14
-	vmsne.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
-	ret

@@ -1,8 +1,8 @@
 
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
 
 ; 446 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -752,7 +752,7 @@ entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.boost::json::value.2995760", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.boost::json::value.2995726", ptr %5, i64 %0
   ret ptr %6
 }
 

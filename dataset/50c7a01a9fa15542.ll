@@ -1,5 +1,5 @@
 
-; 770 occurrences:
+; 768 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -47,7 +47,6 @@
 ; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
 ; coreutils-rs/optimized/4qccn4mjmdouwvjm.ll
-; cpython/optimized/action_helpers.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/specialize.ll
 ; curl/optimized/libcurl_la-cookie.ll
@@ -94,7 +93,6 @@
 ; git/optimized/unpack-trees.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/write.c.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll

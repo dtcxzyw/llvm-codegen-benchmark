@@ -570,8 +570,9 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
+; faiss/optimized/lattice_Zn.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
@@ -602,10 +603,9 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; openjdk/optimized/g1Arguments.ll
 ; openjdk/optimized/g1CardSet.ll

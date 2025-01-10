@@ -306,12 +306,6 @@ func0000000000000024:                   # @func0000000000000024
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
-func0000000000000146:                   # @func0000000000000146
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgt.vi	v14, v12, 0
-	vmslt.vv	v12, v8, v10
-	vmand.mm	v0, v12, v14
-	ret
 func00000000000000ca:                   # @func00000000000000ca
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v14, v10, v12
@@ -362,6 +356,12 @@ func0000000000000147:                   # @func0000000000000147
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v14, v12, 0
 	vmsle.vv	v12, v8, v10
+	vmand.mm	v0, v12, v14
+	ret
+func0000000000000146:                   # @func0000000000000146
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgt.vi	v14, v12, 0
+	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
 	ret
 func00000000000000c1:                   # @func00000000000000c1

@@ -38,6 +38,18 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/packet-synphasor.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = shl i32 %4, 2
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i32 %1, i16 %2) #0 {

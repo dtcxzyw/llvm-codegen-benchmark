@@ -1,10 +1,6 @@
 
-; 1719 occurrences:
+; 1713 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -1031,7 +1027,6 @@
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
@@ -1099,7 +1094,6 @@
 ; php/optimized/escape_analysis.ll
 ; php/optimized/funcs.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll

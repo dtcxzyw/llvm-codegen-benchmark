@@ -16651,7 +16651,7 @@ entry:
   ret i64 %1
 }
 
-; 8612 occurrences:
+; 8613 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -18627,6 +18627,7 @@ entry:
 ; git/optimized/attr.ll
 ; git/optimized/bloom.ll
 ; git/optimized/commit-reach.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/linear-assignment.ll
 ; git/optimized/log.ll
@@ -25271,7 +25272,7 @@ entry:
   ret i64 %1
 }
 
-; 14859 occurrences:
+; 14870 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -25381,6 +25382,7 @@ entry:
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cecSynth.c.ll
+; abc/optimized/cmd.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cmdHist.c.ll
 ; abc/optimized/cnf_reader.c.ll
@@ -26411,6 +26413,7 @@ entry:
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/netcode.c.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/openioc.c.ll
 ; clamav/optimized/others.c.ll
@@ -28538,6 +28541,7 @@ entry:
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/selection.cpp.ll
 ; gromacs/optimized/selectioncollection.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
@@ -32310,6 +32314,7 @@ entry:
 ; nuttx/optimized/lib_fputs.c.ll
 ; nuttx/optimized/lib_glob.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/lib_strstr.c.ll
 ; nuttx/optimized/lib_wcslcat.c.ll
@@ -32318,6 +32323,7 @@ entry:
 ; nuttx/optimized/mempool_multiple.c.ll
 ; nuttx/optimized/serial.c.ll
 ; nuttx/optimized/task_setup.c.ll
+; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/AllocationTransform.cpp.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -33362,6 +33368,7 @@ entry:
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/compilerDefinitions.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openjdk/optimized/compressedKlass.ll
@@ -34275,6 +34282,7 @@ entry:
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/changeTracker.cpp.ll
 ; openusd/optimized/changes.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/clip.cpp.ll
 ; openusd/optimized/clipCache.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
@@ -34845,6 +34853,7 @@ entry:
 ; postgres/optimized/auth.ll
 ; postgres/optimized/autoinc.ll
 ; postgres/optimized/autovacuum.ll
+; postgres/optimized/backend_status.ll
 ; postgres/optimized/backup_manifest.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/basebackup_incremental.ll
@@ -35427,8 +35436,10 @@ entry:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_usb_combined-packet.c.ll
+; qemu/optimized/hw_usb_core.c.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
@@ -35441,6 +35452,7 @@ entry:
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/io_channel-socket.c.ll
 ; qemu/optimized/libvhost-user.c.ll
+; qemu/optimized/linux-user_main.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/migration_block-dirty-bitmap.c.ll
@@ -40138,7 +40150,7 @@ entry:
   ret i64 %1
 }
 
-; 6579 occurrences:
+; 6580 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -40336,6 +40348,7 @@ entry:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/data.cc.ll
+; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; arrow/optimized/exec.cc.ll
@@ -41459,7 +41472,6 @@ entry:
 ; hyperscan/optimized/ng_vacuous.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/ng_width.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rdfa_graph.cpp.ll
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; hyperscan/optimized/report_manager.cpp.ll
@@ -42136,6 +42148,7 @@ entry:
 ; llvm/optimized/RegisterBankInfo.cpp.ll
 ; llvm/optimized/RelocationResolver.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
@@ -44569,6 +44582,7 @@ entry:
 ; postgres/optimized/user.ll
 ; postgres/optimized/walsummary.ll
 ; postgres/optimized/xact.ll
+; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
 ; postgres/optimized/zic.ll
 ; proj/optimized/grids.cpp.ll
@@ -46375,7 +46389,6 @@ entry:
 ; zed-rs/optimized/9kjcdkl0h4le3fai44smqnljl.ll
 ; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
-; zed-rs/optimized/9lyc7v6rglrrimjbrgra5wxbm.ll
 ; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; zed-rs/optimized/9m6pb7xfonzy0fntd1p7uja7t.ll
 ; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll

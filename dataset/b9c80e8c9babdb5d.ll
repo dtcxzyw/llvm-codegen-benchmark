@@ -1,8 +1,8 @@
 
-%"struct.boost::geometry::detail::overlay::turn_operation.2974281" = type <{ i32, [4 x i8], %"struct.boost::geometry::segment_identifier.2974282", %"class.boost::geometry::segment_ratio.2973886", i32, [4 x i8] }>
-%"struct.boost::geometry::segment_identifier.2974282" = type { i64, i64, i64, i64, i64 }
-%"class.boost::geometry::segment_ratio.2973886" = type { i32, i32, double }
-%struct.ip_ct_tcp_state.3554972 = type { i32, i32, i32, i32, i8, i8 }
+%"struct.boost::geometry::detail::overlay::turn_operation.2974247" = type <{ i32, [4 x i8], %"struct.boost::geometry::segment_identifier.2974248", %"class.boost::geometry::segment_ratio.2973852", i32, [4 x i8] }>
+%"struct.boost::geometry::segment_identifier.2974248" = type { i64, i64, i64, i64, i64 }
+%"class.boost::geometry::segment_ratio.2973852" = type { i32, i32, double }
+%struct.ip_ct_tcp_state.3554938 = type { i32, i32, i32, i32, i8, i8 }
 
 ; 2 occurrences:
 ; linux/optimized/zstd_decompress_block.ll
@@ -51,7 +51,7 @@ define ptr @func0000000000000063(ptr %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 1
   %2 = zext i1 %.not to i64
-  %3 = getelementptr nusw nuw [2 x %"struct.boost::geometry::detail::overlay::turn_operation.2974281"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [2 x %"struct.boost::geometry::detail::overlay::turn_operation.2974247"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
@@ -62,7 +62,7 @@ define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x %struct.ip_ct_tcp_state.3554972], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [2 x %struct.ip_ct_tcp_state.3554938], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -229,10 +229,9 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
-; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003b(i32 %0, i32 %1, i32 %2) #0 {
 entry:

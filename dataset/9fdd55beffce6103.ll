@@ -1,7 +1,7 @@
 
-%"struct.folly::threadlocal_detail::ElementWrapper.2683350" = type { ptr, %union.anon.144.2683351, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" }
-%union.anon.144.2683351 = type { ptr }
-%"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" = type { i32, ptr, ptr, ptr }
+%"struct.folly::threadlocal_detail::ElementWrapper.2683317" = type { ptr, %union.anon.144.2683318, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2683319" }
+%union.anon.144.2683318 = type { ptr }
+%"struct.folly::threadlocal_detail::ThreadEntryNode.2683319" = type { i32, ptr, ptr, ptr }
 
 ; 16 occurrences:
 ; folly/optimized/Future.cpp.ll
@@ -24,7 +24,7 @@
 define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.folly::threadlocal_detail::ElementWrapper.2683350", ptr %1, i64 %3, i32 3
+  %4 = getelementptr nusw nuw %"struct.folly::threadlocal_detail::ElementWrapper.2683317", ptr %1, i64 %3, i32 3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

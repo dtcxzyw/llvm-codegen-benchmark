@@ -1,5 +1,5 @@
 
-%struct.boneIndexWeightPair.2826126 = type { i32, float }
+%struct.boneIndexWeightPair.2826092 = type { i32, float }
 
 ; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -42,7 +42,7 @@ define ptr @func000000000000005b(ptr %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw %struct.boneIndexWeightPair.2826126, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.boneIndexWeightPair.2826092, ptr %0, i64 %4
   ret ptr %5
 }
 

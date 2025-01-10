@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/reflection_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -14,6 +14,7 @@
 ; linux/optimized/scatterlist.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; portaudio/optimized/pa_process.c.ll
 ; postgres/optimized/basebackup.ll

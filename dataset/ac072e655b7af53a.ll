@@ -473,7 +473,6 @@
 ; llvm/optimized/regerror.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lcode.ll
-; lua/optimized/ldebug.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/buildvm_fold.ll
 ; luajit/optimized/lj_parse.ll
@@ -597,6 +596,7 @@
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
@@ -905,7 +905,7 @@ entry:
   ret i1 %3
 }
 
-; 150 occurrences:
+; 149 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/aigTiming.c.ll
@@ -933,7 +933,6 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; node/optimized/libnode.env.ll
 ; opencv/optimized/channels.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/transientareassegmentationmodule.cpp.ll
 ; openmpi/optimized/opal_interval_tree.ll
@@ -1624,7 +1623,7 @@ entry:
   ret i1 %3
 }
 
-; 95 occurrences:
+; 96 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -1690,6 +1689,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lua/optimized/ldebug.ll
 ; mimalloc/optimized/page.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/contours.cpp.ll

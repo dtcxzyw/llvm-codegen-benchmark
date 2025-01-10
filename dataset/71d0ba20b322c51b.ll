@@ -1,15 +1,15 @@
 
-%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
-%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
-%union.anon.2619710 = type { i64, [8 x i8] }
-%"struct.boost::sub_match.2683504" = type <{ %"struct.std::pair.2683509", i8, [7 x i8] }>
-%"struct.std::pair.2683509" = type { ptr, ptr }
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
-%"class.std::vector.133.3852102" = type { %"struct.std::_Vector_base.134.3852103" }
-%"struct.std::_Vector_base.134.3852103" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852104" }
-%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852104" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852105" }
-%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852105" = type { ptr, ptr, ptr }
+%"struct.rocksdb::TableReader::Anchor.2619962" = type { %"class.std::__cxx11::basic_string.2619675", i64 }
+%"class.std::__cxx11::basic_string.2619675" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676", i64, %union.anon.2619677 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676" = type { ptr }
+%union.anon.2619677 = type { i64, [8 x i8] }
+%"struct.boost::sub_match.2683471" = type <{ %"struct.std::pair.2683476", i8, [7 x i8] }>
+%"struct.std::pair.2683476" = type { ptr, ptr }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
+%"class.std::vector.133.3852052" = type { %"struct.std::_Vector_base.134.3852053" }
+%"struct.std::_Vector_base.134.3852053" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852054" }
+%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl.3852054" = type { %"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852055" }
+%"struct.std::_Vector_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::RoseGraph, ue2::RoseVertexProps, ue2::RoseEdgeProps>>>>::_Vector_impl_data.3852055" = type { ptr, ptr, ptr }
 
 ; 113 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
@@ -129,7 +129,7 @@
 define i1 @func000000000000030a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619962", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 0
@@ -344,7 +344,7 @@ entry:
 define i1 @func000000000000010a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr nusw %"struct.boost::sub_match.2683504", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.boost::sub_match.2683471", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 0
@@ -371,7 +371,7 @@ entry:
 define i1 @func0000000000000306(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3213948", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3213914", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp slt i64 %6, 0
@@ -424,7 +424,7 @@ entry:
 define i1 @func000000000000020a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.std::vector.133.3852102", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::vector.133.3852052", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, 0

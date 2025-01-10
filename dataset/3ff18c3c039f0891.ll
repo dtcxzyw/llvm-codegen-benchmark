@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/tty_buffer.ll
@@ -12,6 +12,7 @@
 ; luajit/optimized/lj_bcread_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
+; slurm/optimized/backfill.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/stats_tree.c.ll
 ; Function Attrs: nounwind

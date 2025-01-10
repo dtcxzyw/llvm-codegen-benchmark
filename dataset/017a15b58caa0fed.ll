@@ -1,9 +1,9 @@
 
-%struct.HIDPointerEvent.2706129 = type { i32, i32, i32, i32 }
-%class.u_map.335.3633627 = type { %class.map.336.3633628 }
-%class.map.336.3633628 = type { %class.table2map.337.3633629 }
-%class.table2map.337.3633629 = type { %class.core_hashtable.338.3633630 }
-%class.core_hashtable.338.3633630 = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%struct.HIDPointerEvent.2706095 = type { i32, i32, i32, i32 }
+%class.u_map.335.3633593 = type { %class.map.336.3633594 }
+%class.map.336.3633594 = type { %class.table2map.337.3633595 }
+%class.table2map.337.3633595 = type { %class.core_hashtable.338.3633596 }
+%class.core_hashtable.338.3633596 = type <{ ptr, i32, i32, i32, [4 x i8] }>
 
 ; 21 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -47,7 +47,7 @@ entry:
   %2 = add i32 %1, 15
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.HIDPointerEvent.2706129], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [16 x %struct.HIDPointerEvent.2706095], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -120,7 +120,7 @@ entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %class.u_map.335.3633627], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %class.u_map.335.3633593], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -40,16 +40,6 @@
 ; linux/optimized/tree.ll
 ; linux/optimized/truncate.ll
 ; linux/optimized/update.ll
-; mitsuba3/optimized/aov.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/class.cpp.ll
-; mitsuba3/optimized/filesystem.cpp.ll
-; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/moment.cpp.ll
-; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/xml.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/clipCache.cpp.ll
 ; openusd/optimized/dependencies.cpp.ll
@@ -68,6 +58,29 @@
 ; rocksdb/optimized/memtable.cc.ll
 ; ruby/optimized/hash.ll
 ; ruby/optimized/thread.ll
+; tokio-rs/optimized/4brh9kql6tjayli1.ll
+; velox/optimized/AllocationPool.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = or i64 %0, 1
+  %2 = add i64 %1, 2
+  ret i64 %2
+}
+
+; 27 occurrences:
+; git/optimized/ewah_bitmap.ll
+; mitsuba3/optimized/aov.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/class.cpp.ll
+; mitsuba3/optimized/filesystem.cpp.ll
+; mitsuba3/optimized/logger.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/moment.cpp.ll
+; mitsuba3/optimized/plugin.cpp.ll
+; mitsuba3/optimized/xml.cpp.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -83,22 +96,10 @@
 ; tev/optimized/StbiImageLoader.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; tokio-rs/optimized/4brh9kql6tjayli1.ll
-; velox/optimized/AllocationPool.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = or i64 %0, 1
-  %2 = add i64 %1, 2
-  ret i64 %2
-}
-
-; 1 occurrences:
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:
-  %1 = or i64 %0, 4095
+  %1 = or i64 %0, 7
   %2 = add nuw i64 %1, 1
   ret i64 %2
 }

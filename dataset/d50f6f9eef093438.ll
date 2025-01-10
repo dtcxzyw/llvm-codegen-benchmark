@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2876108 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876074 = type <{ i64, i32 }>
 
 ; 11 occurrences:
 ; folly/optimized/Barrier.cpp.ll
@@ -49,7 +49,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2876108, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2876074, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = or disjoint i64 %0, %4
   ret i64 %5

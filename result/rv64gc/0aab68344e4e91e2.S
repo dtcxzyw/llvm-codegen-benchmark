@@ -17,24 +17,6 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
-	srliw	a3, a2, 31
-	slli	a0, a0, 3
-	addw	a2, a2, a3
-	slli	a2, a2, 2
-	andi	a2, a2, -8
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
-func000000000000000e:                   # @func000000000000000e
-	srliw	a3, a2, 31
-	slli	a0, a0, 3
-	addw	a2, a2, a3
-	slli	a2, a2, 2
-	andi	a2, a2, -8
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 29

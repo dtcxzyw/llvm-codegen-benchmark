@@ -1,5 +1,5 @@
 
-; 1294 occurrences:
+; 1292 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -641,7 +641,6 @@
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/inputext.ll
 ; icu/optimized/locid.ll
-; icu/optimized/number_affixutils.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/prscmnts.ll
@@ -918,7 +917,6 @@
 ; opencv/optimized/tr_chars_benchmark.cpp.ll
 ; opencv/optimized/train_svmsgd.cpp.ll
 ; opencv/optimized/travelsalesman.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; opencv/optimized/webcam_demo.cpp.ll
@@ -3180,6 +3178,7 @@ entry:
 ; icu/optimized/japancal.ll
 ; icu/optimized/localeprioritylist.ll
 ; icu/optimized/msgfmt.ll
+; icu/optimized/number_affixutils.ll
 ; icu/optimized/number_patternstring.ll
 ; icu/optimized/number_rounding.ll
 ; icu/optimized/regexcmp.ll
@@ -3605,7 +3604,6 @@ entry:
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/linearize.cpp.ll
 ; opencv/optimized/lsc.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll

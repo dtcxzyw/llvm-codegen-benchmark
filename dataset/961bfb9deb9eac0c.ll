@@ -1,7 +1,7 @@
 
-%union.Node.3713520 = type { %struct.NodeKey.3713521 }
-%struct.NodeKey.3713521 = type { %union.Value.3713522, i8, i8, i32, %union.Value.3713522 }
-%union.Value.3713522 = type { ptr }
+%union.Node.3713470 = type { %struct.NodeKey.3713471 }
+%struct.NodeKey.3713471 = type { %union.Value.3713472, i8, i8, i32, %union.Value.3713472 }
+%union.Value.3713472 = type { ptr }
 
 ; 1 occurrences:
 ; openusd/optimized/restoration.c.ll
@@ -35,7 +35,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %union.Node.3713520, ptr %0, i64 %4
+  %5 = getelementptr nusw %union.Node.3713470, ptr %0, i64 %4
   ret ptr %5
 }
 

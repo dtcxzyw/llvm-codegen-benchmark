@@ -1,3 +1,8 @@
+func000000000000000f:                   # @func000000000000000f
+	testl	%edx, %edx
+	cmovel	%edx, %esi
+	leaq	(%rdi,%rsi,8), %rax
+	retq
 func0000000000000027:                   # @func0000000000000027
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -14,12 +19,6 @@ func0000000000000037:                   # @func0000000000000037
 	testl	%edx, %edx
 	cmovnsl	%esi, %eax
 	leaq	(%rdi,%rax,8), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	xorl	%eax, %eax
-	cmpl	$64, %edx
-	cmovnel	%esi, %eax
-	addq	%rdi, %rax
 	retq
 func00000000000000c7:                   # @func00000000000000c7
 	cmpl	$1000, %edx                     # imm = 0x3E8

@@ -1,5 +1,5 @@
 
-; 1169 occurrences:
+; 1166 occurrences:
 ; actix-rs/optimized/13h928g7964mzia7.ll
 ; actix-rs/optimized/17gccfd4i2cipdks.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -751,11 +751,9 @@
 ; wasmtime-rs/optimized/4e6qh6p6vske1jz4.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
 ; wasmtime-rs/optimized/4krmo5yuqbsteeuo.ll
-; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
-; wasmtime-rs/optimized/4xi420g2tcwi30s2.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/4zfyij6ubn2ogcve.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
@@ -771,7 +769,6 @@
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
 ; wasmtime-rs/optimized/l3869xz334uj87z.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
-; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll

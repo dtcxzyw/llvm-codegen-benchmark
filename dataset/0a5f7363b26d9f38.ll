@@ -1,5 +1,5 @@
 
-%"class.vcg::Point3.3840533" = type { [3 x float] }
+%"class.vcg::Point3.3840483" = type { [3 x float] }
 
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -63,7 +63,7 @@ entry:
   %4 = lshr exact i32 %3, 1
   %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"class.vcg::Point3.3840533", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.vcg::Point3.3840483", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -76,7 +76,7 @@ entry:
   %4 = lshr exact i32 %3, 1
   %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"class.vcg::Point3.3840533", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.vcg::Point3.3840483", ptr %0, i64 %6
   ret ptr %7
 }
 

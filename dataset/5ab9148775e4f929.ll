@@ -32,21 +32,6 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = shl nuw nsw i32 %3, 2
-  %5 = and i32 %4, 60
-  %6 = or disjoint i32 %5, %1
-  %7 = add nsw i32 %6, %0
-  ret i32 %7
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind

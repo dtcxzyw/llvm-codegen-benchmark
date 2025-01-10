@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -42,7 +42,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-bencode.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i8 %1) #0 {

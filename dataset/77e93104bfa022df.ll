@@ -1,5 +1,5 @@
 
-%"struct.std::pair.3280201" = type { i32, i32 }
+%"struct.std::pair.3280167" = type { i32, i32 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/block.cc.ll
@@ -40,7 +40,7 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = and i64 %3, -32
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.3280167", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }

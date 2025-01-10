@@ -60,7 +60,7 @@ entry:
   ret i64 %4
 }
 
-; 352 occurrences:
+; 353 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -164,6 +164,7 @@ entry:
 ; luau/optimized/IrCallWrapperX64.test.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
@@ -422,7 +423,7 @@ entry:
   ret i64 %4
 }
 
-; 102 occurrences:
+; 103 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; arrow/optimized/float16.cc.ll
@@ -510,6 +511,7 @@ entry:
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -534,7 +536,7 @@ entry:
   ret i64 %4
 }
 
-; 98 occurrences:
+; 96 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -545,7 +547,6 @@ entry:
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; folly/optimized/IPAddressV6.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -623,7 +624,6 @@ entry:
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-mysql.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
@@ -720,10 +720,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; draco/optimized/hash_utils.cc.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; luau/optimized/isocline.c.ll
 ; openjdk/optimized/java.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind

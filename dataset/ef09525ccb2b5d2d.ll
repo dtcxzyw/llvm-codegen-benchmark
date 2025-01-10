@@ -1,7 +1,6 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
-; clamav/optimized/xlm_extract.c.ll
 ; freetype/optimized/psaux.c.ll
 ; hdf5/optimized/H5B2internal.c.ll
 ; hermes/optimized/zip.c.ll

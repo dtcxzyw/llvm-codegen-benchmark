@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 164 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOut.c.ll
@@ -47,6 +47,7 @@
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
@@ -173,7 +174,7 @@ entry:
   ret i1 %5
 }
 
-; 588 occurrences:
+; 584 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
@@ -297,7 +298,6 @@ entry:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
-; llvm/optimized/AnalysisDeclContext.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
@@ -323,7 +323,6 @@ entry:
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; llvm/optimized/CGSCCPassManager.cpp.ll
@@ -380,7 +379,6 @@ entry:
 ; llvm/optimized/ErrnoModeling.cpp.ll
 ; llvm/optimized/EvaluationResult.cpp.ll
 ; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/ExplodedGraph.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
@@ -396,7 +394,6 @@ entry:
 ; llvm/optimized/FixItRewriter.cpp.ll
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/FunctionLoweringInfo.cpp.ll
-; llvm/optimized/GTestChecker.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/HLSLExternalSemaSource.cpp.ll
@@ -772,7 +769,7 @@ entry:
   ret i1 %5
 }
 
-; 767 occurrences:
+; 734 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -962,11 +959,7 @@ entry:
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/rwsem.ll
 ; linux/optimized/serial_core.ll
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -978,7 +971,6 @@ entry:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
-; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -1001,10 +993,8 @@ entry:
 ; llvm/optimized/AnalysisDeclContext.cpp.ll
 ; llvm/optimized/ArrayBoundCheckerV2.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
-; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/AsmPrinterDwarf.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; llvm/optimized/BasicBlockPathCloning.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/BinaryStreamWriter.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -1080,7 +1070,6 @@ entry:
 ; llvm/optimized/DereferenceChecker.cpp.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/Disasm.cpp.ll
-; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
@@ -1097,11 +1086,8 @@ entry:
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/FileIndexRecord.cpp.ll
-; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
-; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
 ; llvm/optimized/FunctionPointer.cpp.ll
-; llvm/optimized/GIMatchTableExecutor.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
@@ -1109,8 +1095,6 @@ entry:
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IdentifierResolver.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexDecl.cpp.ll
 ; llvm/optimized/IndexSymbol.cpp.ll
@@ -1138,7 +1122,6 @@ entry:
 ; llvm/optimized/LayoutOverrideSource.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
@@ -1151,19 +1134,14 @@ entry:
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MIGChecker.cpp.ll
 ; llvm/optimized/MIRCanonicalizerPass.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/MacOSXAPIChecker.cpp.ll
-; llvm/optimized/MachineCSE.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/MachineLICM.cpp.ll
-; llvm/optimized/MachineModuleSlotTracker.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineSSAUpdater.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
@@ -1194,17 +1172,13 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
-; llvm/optimized/PrintfFormatString.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -1223,7 +1197,6 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SVals.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
-; llvm/optimized/ScanfFormatString.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
@@ -1231,7 +1204,6 @@ entry:
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaBoundsSafety.cpp.ll
 ; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -1262,8 +1234,6 @@ entry:
 ; llvm/optimized/ShrinkWrap.cpp.ll
 ; llvm/optimized/StackAddrEscapeChecker.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
-; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
-; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/StdVariantChecker.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenACC.cpp.ll
@@ -1271,7 +1241,6 @@ entry:
 ; llvm/optimized/StmtProfile.cpp.ll
 ; llvm/optimized/StraightLineStrengthReduce.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
-; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
@@ -1307,17 +1276,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InsertPrefetch.cpp.ll

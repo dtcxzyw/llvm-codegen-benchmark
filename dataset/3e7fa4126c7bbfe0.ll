@@ -1,5 +1,5 @@
 
-; 227 occurrences:
+; 226 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/inflate.c.ll
@@ -30,7 +30,6 @@
 ; folly/optimized/AsyncSocket.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftbase.c.ll
-; freetype/optimized/psaux.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/blame.ll
 ; git/optimized/date.ll

@@ -1,5 +1,5 @@
 
-%struct.vhost_memory_region.2705390 = type { i64, i64, i64, i64 }
+%struct.vhost_memory_region.2705356 = type { i64, i64, i64, i64 }
 
 ; 10 occurrences:
 ; linux/optimized/intel_bios.ll
@@ -32,7 +32,7 @@ entry:
 define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %3 = getelementptr %struct.vhost_memory_region.2705390, ptr %2, i64 %0
+  %3 = getelementptr %struct.vhost_memory_region.2705356, ptr %2, i64 %0
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }

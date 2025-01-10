@@ -1,7 +1,5 @@
 
-; 6 occurrences:
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
+; 4 occurrences:
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll

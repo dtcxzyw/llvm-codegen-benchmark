@@ -31,10 +31,3 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a0, 65536
 	vor.vx	v8, v10, a0, v0.t
 	ret
-func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vsll.vi	v10, v8, 28
-	vmv.v.i	v8, 0
-	lui	a0, 524288
-	vor.vx	v8, v10, a0, v0.t
-	ret

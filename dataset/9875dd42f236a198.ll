@@ -23,9 +23,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/BenchmarkBitset.cpp.ll
-; php/optimized/zend_alloc.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {

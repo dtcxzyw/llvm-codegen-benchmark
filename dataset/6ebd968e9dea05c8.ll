@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 63 occurrences:
 ; llvm/optimized/xxhash.cpp.ll
 ; luau/optimized/Config.test.cpp.ll
 ; luau/optimized/Parser.test.cpp.ll
@@ -60,7 +60,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
-; node/optimized/simdutf.ll
 ; ocio/optimized/HashUtils.cpp.ll
 ; rocksdb/optimized/hash.cc.ll
 ; ruby/optimized/random.ll

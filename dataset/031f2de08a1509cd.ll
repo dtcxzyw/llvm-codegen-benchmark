@@ -1,5 +1,5 @@
 
-%struct.pud_t.3545274 = type { i64 }
+%struct.pud_t.3545240 = type { i64 }
 
 ; 2 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -50,7 +50,7 @@ entry:
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 30
   %6 = and i64 %5, 511
-  %7 = getelementptr %struct.pud_t.3545274, ptr %0, i64 %6
+  %7 = getelementptr %struct.pud_t.3545240, ptr %0, i64 %6
   ret ptr %7
 }
 

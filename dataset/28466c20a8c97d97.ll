@@ -1,9 +1,9 @@
 
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
-%"struct.clang::FunctionType::ExceptionType.3142408" = type { %"class.clang::QualType.3142149" }
-%"class.clang::QualType.3142149" = type { %"class.llvm::PointerIntPair.737.3142150" }
-%"class.llvm::PointerIntPair.737.3142150" = type { %"struct.llvm::detail::PunnedPointer.738.3142151" }
-%"struct.llvm::detail::PunnedPointer.738.3142151" = type { [8 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372" = type { i8, [7 x i8] }
+%"struct.clang::FunctionType::ExceptionType.3142374" = type { %"class.clang::QualType.3142115" }
+%"class.clang::QualType.3142115" = type { %"class.llvm::PointerIntPair.737.3142116" }
+%"class.llvm::PointerIntPair.737.3142116" = type { %"struct.llvm::detail::PunnedPointer.738.3142117" }
+%"struct.llvm::detail::PunnedPointer.738.3142117" = type { [8 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/ioam6.ll
@@ -59,8 +59,8 @@ entry:
   %3 = lshr i16 %2, 10
   %4 = and i16 %3, 1
   %5 = zext nneg i16 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142408", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372", ptr %1, i64 %5
+  %7 = getelementptr nusw nuw %"struct.clang::FunctionType::ExceptionType.3142374", ptr %6, i64 %0
   ret ptr %7
 }
 

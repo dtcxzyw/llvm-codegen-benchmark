@@ -43,9 +43,10 @@ entry:
   ret i1 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; clamav/optimized/clamd.c.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; icu/optimized/loclikely.ll
 ; icu/optimized/package.ll
 ; linux/optimized/cgroup.ll
@@ -272,13 +273,14 @@ entry:
   ret i1 %4
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; ceres/optimized/residual_block.cc.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/qopen.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; freetype/optimized/raster.c.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/refs.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll

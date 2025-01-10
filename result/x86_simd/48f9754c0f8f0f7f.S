@@ -57,12 +57,3 @@ func000000000000058c:                   # @func000000000000058c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
-	.quad	2147483647                      # 0x7fffffff
-func0000000000000108:                   # @func0000000000000108
-	vpor	%ymm2, %ymm1, %ymm1
-	vpmaxuq	%ymm1, %ymm0, %ymm0
-	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq

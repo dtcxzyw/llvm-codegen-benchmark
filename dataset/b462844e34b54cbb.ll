@@ -1,7 +1,7 @@
 
-%"class.irr::video::SColor.2697847" = type { i32 }
-%"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703632" = type { i32, %"struct.sound::RAIIALSoundBuffer.2703619" }
-%"struct.sound::RAIIALSoundBuffer.2703619" = type { i32 }
+%"class.irr::video::SColor.2697813" = type { i32 }
+%"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703598" = type { i32, %"struct.sound::RAIIALSoundBuffer.2703585" }
+%"struct.sound::RAIIALSoundBuffer.2703585" = type { i32 }
 
 ; 662 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -934,7 +934,7 @@ entry:
   %4 = sub i64 %3, %2
   %5 = ashr exact i64 %4, 2
   %6 = sub nsw i64 %1, %5
-  %7 = getelementptr %"class.irr::video::SColor.2697847", ptr %0, i64 %6
+  %7 = getelementptr %"class.irr::video::SColor.2697813", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -1004,7 +1004,7 @@ entry:
   %4 = sub i64 %3, %2
   %5 = ashr exact i64 %4, 3
   %6 = sub nsw i64 %1, %5
-  %7 = getelementptr nusw %"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703632", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.sound::SoundDataOpenStream::SoundBufferUntil.2703598", ptr %0, i64 %6
   ret ptr %7
 }
 

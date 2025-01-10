@@ -1,6 +1,6 @@
 
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
 
 ; 4 occurrences:
 ; libquic/optimized/p256-x86_64.c.ll
@@ -27,7 +27,7 @@ entry:
   %3 = lshr exact i32 %2, 4
   %4 = add nsw i32 %3, -5
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

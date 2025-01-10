@@ -1,10 +1,10 @@
 
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
-%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
-%struct.hb_glyph_info_t.2737182 = type { i32, i32, i32, %union._hb_var_int_t.2737183, %union._hb_var_int_t.2737183 }
-%union._hb_var_int_t.2737183 = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.3076197" = type { %"class.hermes::vm::HermesValue32.3076198" }
-%"class.hermes::vm::HermesValue32.3076198" = type { i32 }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957" = type { float, %"class.irr::core::quaternion.2702954" }
+%"class.irr::core::quaternion.2702954" = type { float, float, float, float }
+%struct.hb_glyph_info_t.2737148 = type { i32, i32, i32, %union._hb_var_int_t.2737149, %union._hb_var_int_t.2737149 }
+%union._hb_var_int_t.2737149 = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076163" = type { %"class.hermes::vm::HermesValue32.3076164" }
+%"class.hermes::vm::HermesValue32.3076164" = type { i32 }
 
 ; 10 occurrences:
 ; cpython/optimized/unicodeobject.ll
@@ -780,7 +780,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -838,7 +838,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737182, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737148, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -876,7 +876,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076197", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076163", ptr %0, i64 %4
   ret ptr %5
 }
 

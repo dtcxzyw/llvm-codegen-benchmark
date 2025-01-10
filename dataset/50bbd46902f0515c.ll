@@ -22,11 +22,10 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/split.q.c.ll
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/idec_dec.c.ll
-; linux/optimized/relay.ll
 ; qemu/optimized/linux-user_signal.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind

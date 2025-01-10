@@ -1,6 +1,6 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372" = type { i8, [7 x i8] }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -50,8 +50,8 @@ define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %4, i64 %1
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373", ptr %4, i64 %1
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }

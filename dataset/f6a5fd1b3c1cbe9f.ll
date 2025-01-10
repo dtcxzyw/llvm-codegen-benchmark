@@ -64,8 +64,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
-; freetype/optimized/ftstroke.c.ll
+; 12 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Ocopy.c.ll
 ; hermes/optimized/Interpreter.cpp.ll

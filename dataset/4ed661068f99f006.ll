@@ -1,6 +1,6 @@
 
-%class.ZMarkStripe.2730265 = type { %class.ZStackList.2.2730266, %class.ZStackList.2.2730266 }
-%class.ZStackList.2.2730266 = type { i64, ptr, [48 x i8] }
+%class.ZMarkStripe.2730231 = type { %class.ZStackList.2.2730232, %class.ZStackList.2.2730232 }
+%class.ZStackList.2.2730232 = type { i64, ptr, [48 x i8] }
 
 ; 17 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -24,7 +24,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr nusw nuw [16 x %class.ZMarkStripe.2730265], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x %class.ZMarkStripe.2730231], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

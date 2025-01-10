@@ -1,7 +1,7 @@
 
-%"struct.drjit::Array.19.2602378" = type { %"struct.drjit::StaticArrayImpl.20.2602379" }
-%"struct.drjit::StaticArrayImpl.20.2602379" = type { <4 x float> }
-%struct.sqlite3_index_constraint.3662210 = type { i32, i8, i8, i32 }
+%"struct.drjit::Array.19.2602345" = type { %"struct.drjit::StaticArrayImpl.20.2602346" }
+%"struct.drjit::StaticArrayImpl.20.2602346" = type { <4 x float> }
+%struct.sqlite3_index_constraint.3662160 = type { i32, i8, i8, i32 }
 
 ; 44 occurrences:
 ; bullet3/optimized/IDMath.ll
@@ -51,7 +51,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw [4 x %"struct.drjit::Array.19.2602378"], ptr %1, i64 0, i64 %0
+  %2 = getelementptr nusw nuw [4 x %"struct.drjit::Array.19.2602345"], ptr %1, i64 0, i64 %0
   %3 = getelementptr nusw nuw float, ptr %2, i64 %0
   ret ptr %3
 }
@@ -62,7 +62,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw [1 x ptr], ptr %1, i64 0, i64 %0
-  %3 = getelementptr nusw %struct.sqlite3_index_constraint.3662210, ptr %2, i64 %0
+  %3 = getelementptr nusw %struct.sqlite3_index_constraint.3662160, ptr %2, i64 %0
   ret ptr %3
 }
 

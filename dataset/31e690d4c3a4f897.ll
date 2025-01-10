@@ -1,7 +1,7 @@
 
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
-%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
+%struct.dx_map_entry.3547978 = type { i32, i16, i16 }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 1 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -44,7 +44,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 -24
-  %6 = getelementptr nusw %"class.llvm::Use.3157992", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3157958", ptr %5, i64 %4
   %7 = icmp eq ptr %6, %0
   ret i1 %7
 }
@@ -71,7 +71,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 -8
-  %6 = getelementptr %struct.dx_map_entry.3548012, ptr %5, i64 %4
+  %6 = getelementptr %struct.dx_map_entry.3547978, ptr %5, i64 %4
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
@@ -97,7 +97,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 4
-  %6 = getelementptr %union._Py_CODEUNIT.3974162, ptr %5, i64 %4
+  %6 = getelementptr %union._Py_CODEUNIT.3974112, ptr %5, i64 %4
   %7 = icmp ne ptr %6, %0
   ret i1 %7
 }

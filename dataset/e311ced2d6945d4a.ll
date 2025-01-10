@@ -184,9 +184,8 @@ entry:
   ret i32 %3
 }
 
-; 39 occurrences:
+; 37 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
-; git/optimized/sequencer.ll
 ; git/optimized/unpack-trees.ll
 ; gromacs/optimized/grid.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
@@ -218,7 +217,6 @@ entry:
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogrecovery.ll
 ; protobuf/optimized/struct.pb.cc.ll
-; qemu/optimized/block_vvfat.c.ll
 ; redis/optimized/networking.ll
 ; spike/optimized/fdt_sw.ll
 ; sqlite/optimized/sqlite3.ll

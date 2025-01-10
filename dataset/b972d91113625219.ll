@@ -311,7 +311,8 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; graphviz/optimized/edges.c.ll
 ; openusd/optimized/plane.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, ptr %1, double %2) #0 {

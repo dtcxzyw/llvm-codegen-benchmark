@@ -20,6 +20,18 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003a6(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = call noundef i32 @llvm.smax.i32(i32 %1, i32 %2)
+  %4 = add nsw i32 %3, 1
+  %5 = trunc nuw nsw i64 %0 to i32
+  %6 = icmp slt i32 %4, %5
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; lua/optimized/ldebug.ll
 ; sqlite/optimized/sqlite3.ll

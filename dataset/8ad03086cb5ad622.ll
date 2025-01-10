@@ -1,7 +1,7 @@
 
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
 
 ; 3 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
@@ -148,7 +148,7 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = and i64 %0, 4294967295
-  %5 = getelementptr nusw nuw %"class.rapidjson::GenericValue.2825311", ptr %3, i64 %4
+  %5 = getelementptr nusw nuw %"class.rapidjson::GenericValue.2825277", ptr %3, i64 %4
   ret ptr %5
 }
 

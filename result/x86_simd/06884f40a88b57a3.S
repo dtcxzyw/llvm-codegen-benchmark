@@ -138,12 +138,10 @@ func0000000000000287:                   # @func0000000000000287
 	vzeroupper
 	retq
 .LCPI16_0:
-	.long	2                               # 0x2
-.LCPI16_1:
-	.quad	6                               # 0x6
+	.quad	1                               # 0x1
 func0000000000000024:                   # @func0000000000000024
-	vpcmpeqd	.LCPI16_0(%rip){1to4}, %xmm2, %k1
-	vpbroadcastq	.LCPI16_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [6,6,6,6]
+	vptestnmd	%xmm2, %xmm2, %k1
+	vpbroadcastq	.LCPI16_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1]
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

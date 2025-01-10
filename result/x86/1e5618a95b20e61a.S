@@ -48,3 +48,10 @@ func00000000000000e1:                   # @func00000000000000e1
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
+func00000000000000f4:                   # @func00000000000000f4
+	movl	%edx, %eax
+	addq	%rdi, %rax
+	movzwl	%si, %ecx
+	cmpq	%rcx, %rax
+	setb	%al
+	retq

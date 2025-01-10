@@ -11,9 +11,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000000c:                   # @func000000000000000c
 	bexti	a0, a0, 29
-	li	a1, -6
+	li	a1, 3
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 18
+	addi	a0, a0, 15
 	ret
 func0000000000000061:                   # @func0000000000000061
 	andi	a0, a0, 1

@@ -28,7 +28,7 @@ func0000000000000024:                   # @func0000000000000024
 	add	a0, a0, a1
 	slli	a0, a0, 1
 	ret
-func0000000000000020:                   # @func0000000000000020
+func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a2
 	srli	a2, a1, 63
 	add	a1, a1, a2
@@ -56,6 +56,15 @@ func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
 	slli	a0, a0, 3
 	ret
+func0000000000000004:                   # @func0000000000000004
+	sub	a1, a1, a2
+	srai	a2, a1, 63
+	srli	a2, a2, 62
+	add	a1, a1, a2
+	srli	a1, a1, 2
+	add	a0, a0, a1
+	slli	a0, a0, 2
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sub	a1, a1, a2
 	lui	a2, 838861
@@ -67,11 +76,11 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	ret
-.LCPI7_0:
+.LCPI8_0:
 	.quad	3353953467947191203             # 0x2e8ba2e8ba2e8ba3
 func0000000000000015:                   # @func0000000000000015
-	lui	a3, %hi(.LCPI7_0)
-	ld	a3, %lo(.LCPI7_0)(a3)
+	lui	a3, %hi(.LCPI8_0)
+	ld	a3, %lo(.LCPI8_0)(a3)
 	sub	a1, a1, a2
 	srai	a1, a1, 3
 	mul	a1, a1, a3

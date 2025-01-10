@@ -64,6 +64,13 @@ func00000000000001e1:                   # @func00000000000001e1
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
+func00000000000003e4:                   # @func00000000000003e4
+	shlq	$4, %rdx
+	addq	%rsi, %rdx
+	addq	$16, %rdi
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq
 func0000000000000364:                   # @func0000000000000364
 	leaq	(%rsi,%rdx,4), %rax
 	addq	$4, %rdi

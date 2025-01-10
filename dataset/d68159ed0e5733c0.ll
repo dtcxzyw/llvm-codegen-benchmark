@@ -1,5 +1,5 @@
 
-; 191 occurrences:
+; 189 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -98,7 +98,6 @@
 ; minetest/optimized/renderingengine.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
-; node/optimized/simdutf.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openexr/optimized/unpack.c.ll
@@ -145,7 +144,6 @@
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; redis/optimized/listpack.ll
 ; ruby/optimized/addr2line.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/execute.ll
 ; spike/optimized/sunpkd810.ll
 ; spike/optimized/sunpkd820.ll

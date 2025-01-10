@@ -98,8 +98,7 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 6 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; flac/optimized/metadata_object.c.ll
 ; freetype/optimized/sfnt.c.ll

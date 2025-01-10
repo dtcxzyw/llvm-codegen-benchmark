@@ -1,7 +1,7 @@
 
-%"struct.facebook::velox::StringView.2813632" = type { i32, [4 x i8], %union.anon.576.2813633 }
-%union.anon.576.2813633 = type { ptr }
-%"struct.std::pair.3778075" = type { i32, i32 }
+%"struct.facebook::velox::StringView.2813598" = type { i32, [4 x i8], %union.anon.576.2813599 }
+%union.anon.576.2813599 = type { ptr }
+%"struct.std::pair.3778025" = type { i32, i32 }
 
 ; 31 occurrences:
 ; gromacs/optimized/pdb2gmx.cpp.ll
@@ -41,7 +41,7 @@ entry:
   %2 = lshr exact i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nuw %"struct.facebook::velox::StringView.2813632", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %"struct.facebook::velox::StringView.2813598", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nuw %"struct.std::pair.3778075", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.std::pair.3778025", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

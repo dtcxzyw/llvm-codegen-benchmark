@@ -1,13 +1,10 @@
 
-; 8 occurrences:
+; 5 occurrences:
 ; libquic/optimized/des.c.ll
 ; lief/optimized/des.c.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:

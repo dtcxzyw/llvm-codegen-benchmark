@@ -1,3 +1,8 @@
+func00000000000001f0:                   # @func00000000000001f0
+	leaq	(%rdi,%rsi,8), %rax
+	movslq	%edx, %rcx
+	leaq	32(%rcx,%rax), %rax
+	retq
 func00000000000001d0:                   # @func00000000000001d0
 	leaq	(%rdi,%rsi,2), %rax
 	movslq	%edx, %rcx

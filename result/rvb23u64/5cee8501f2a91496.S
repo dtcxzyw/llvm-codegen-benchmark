@@ -106,13 +106,13 @@ func0000000000000006:                   # @func0000000000000006
 	zext.w	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000048:                   # @func0000000000000048
 	lui	a2, 2
 	addiw	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 1048574
 	and	a1, a1, a2
-	sltu	a0, a0, a1
+	sltu	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, 1024
@@ -142,6 +142,11 @@ func0000000000000026:                   # @func0000000000000026
 	andi	a1, a1, -4
 	slt	a0, a0, a1
 	ret
+func0000000000000044:                   # @func0000000000000044
+	addi	a1, a1, 31
+	andi	a1, a1, -8
+	sltu	a0, a0, a1
+	ret
 func000000000000006c:                   # @func000000000000006c
 	addi	a1, a1, -1
 	zext.w	a1, a1
@@ -160,9 +165,4 @@ func0000000000000066:                   # @func0000000000000066
 	addi	a1, a1, 6
 	zext.w	a1, a1
 	slt	a0, a0, a1
-	ret
-func0000000000000048:                   # @func0000000000000048
-	addi	a1, a1, 1
-	zext.w	a1, a1
-	sltu	a0, a1, a0
 	ret

@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::MDOperand.3220007" = type { ptr }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::MDOperand.3219973" = type { ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
@@ -68,7 +68,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3213948", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3213914", ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -32
   ret ptr %6
 }
@@ -82,7 +82,7 @@ entry:
   %2 = and i64 %1, 15
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -16
-  %5 = getelementptr nusw %"class.llvm::MDOperand.3220007", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::MDOperand.3219973", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }

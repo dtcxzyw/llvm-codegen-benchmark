@@ -33,7 +33,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 14 occurrences:
+; 15 occurrences:
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll

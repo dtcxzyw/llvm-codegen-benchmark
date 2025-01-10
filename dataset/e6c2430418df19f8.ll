@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
 
 ; 17 occurrences:
 ; folly/optimized/Dump.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 -112
-  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

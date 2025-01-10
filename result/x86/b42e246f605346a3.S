@@ -110,3 +110,10 @@ func0000000000000074:                   # @func0000000000000074
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
+func0000000000000079:                   # @func0000000000000079
+	cmpq	%rdx, %rsi
+	cmovbq	%rsi, %rdx
+	incq	%rdi
+	cmpq	%rdx, %rdi
+	setae	%al
+	retq

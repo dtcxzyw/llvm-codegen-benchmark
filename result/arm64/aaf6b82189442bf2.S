@@ -66,9 +66,3 @@ func0000000000000009:                   // @func0000000000000009
 	lsl	w0, w8, w9
 	ret
                                         // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	neg	w8, w0
-	and	w0, w0, w8
-	ret
-                                        // -- End function

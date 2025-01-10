@@ -79,3 +79,14 @@ func0000000000000018:                   # @func0000000000000018
 	sltiu	a0, a2, 3
 	xori	a0, a0, 1
 	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a0, a0, 1
+	beqz	a0, .LBB6_2
+	andi	a2, a2, 1
+	li	a1, 2
+	sub	a1, a1, a2
+.LBB6_2:                                # %entry
+	sext.w	a1, a1
+	addi	a1, a1, -1
+	snez	a0, a1
+	ret

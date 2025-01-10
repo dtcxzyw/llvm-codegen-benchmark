@@ -8,11 +8,6 @@ func0000000000000138:                   # @func0000000000000138
 	addiw	a1, a1, 1060
 	sltu	a0, a1, a0
 	ret
-func00000000000001aa:                   # @func00000000000001aa
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	xori	a0, a0, 1
-	ret
 func0000000000000006:                   # @func0000000000000006
 	addw	a0, a0, a1
 	slti	a0, a0, 1
@@ -185,6 +180,11 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000186:                   # @func0000000000000186
 	addw	a0, a0, a1
 	slti	a0, a0, 0
+	ret
+func00000000000001aa:                   # @func00000000000001aa
+	addw	a0, a0, a1
+	slti	a0, a0, 0
+	xori	a0, a0, 1
 	ret
 func00000000000001a8:                   # @func00000000000001a8
 	addw	a0, a0, a1

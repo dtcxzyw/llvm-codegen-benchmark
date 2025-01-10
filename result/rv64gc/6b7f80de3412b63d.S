@@ -17,7 +17,9 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0
-	snez	a0, a0
-	addi	a0, a0, -1
-	ori	a0, a0, 17
+	beqz	a0, .LBB2_2
+	li	a0, 17
+	ret
+.LBB2_2:
+	li	a0, 63
 	ret

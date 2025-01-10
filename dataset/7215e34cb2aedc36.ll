@@ -1,10 +1,10 @@
 
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%struct.in6_addr.3555181 = type { %union.anon.31.3555182 }
-%union.anon.31.3555182 = type { [4 x i32] }
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" = type { %union.anon.8.3671434, i8, i8, i8, i8, i32, ptr }
-%union.anon.8.3671434 = type { i64 }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%struct.in6_addr.3555147 = type { %union.anon.31.3555148 }
+%union.anon.31.3555148 = type { [4 x i32] }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671382" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671383" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3671383" = type { %union.anon.8.3671384, i8, i8, i8, i8, i32, ptr }
+%union.anon.8.3671384 = type { i64 }
 
 ; 7 occurrences:
 ; linux/optimized/arp.ll
@@ -128,7 +128,7 @@ entry:
 define ptr @func0000000000000030(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 35
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
@@ -142,7 +142,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  %6 = getelementptr %struct.in6_addr.3555181, ptr %5, i64 %0
+  %6 = getelementptr %struct.in6_addr.3555147, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -153,9 +153,9 @@ entry:
 define ptr @func000000000000007e(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671382", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  %6 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %5, i64 %0
+  %6 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671382", ptr %5, i64 %0
   ret ptr %6
 }
 

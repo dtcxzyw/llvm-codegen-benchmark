@@ -3825,7 +3825,7 @@ entry:
   ret i1 %4
 }
 
-; 391 occurrences:
+; 392 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/compress.c.ll
@@ -3980,6 +3980,7 @@ entry:
 ; flatbuffers/optimized/idl_gen_kotlin_kmp.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; freetype/optimized/autofit.c.ll
+; git/optimized/column.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/xemit.ll
 ; gromacs/optimized/atomprop.cpp.ll

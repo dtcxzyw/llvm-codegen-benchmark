@@ -33,18 +33,4 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7936
-  %3 = xor i32 %0, %2
-  %4 = lshr exact i32 %3, 8
-  ret i32 %4
-}
-
 attributes #0 = { nounwind }

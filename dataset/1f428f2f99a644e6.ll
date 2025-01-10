@@ -1,5 +1,5 @@
 
-%struct.SplitPoint.3652096 = type { i16, i16, i16, i16, i8 }
+%struct.SplitPoint.3652062 = type { i16, i16, i16, i16, i8 }
 
 ; 63 occurrences:
 ; flac/optimized/metadata.cpp.ll
@@ -93,7 +93,7 @@ entry:
 define ptr @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.SplitPoint.3652096, ptr %1, i64 %3
+  %4 = getelementptr %struct.SplitPoint.3652062, ptr %1, i64 %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6

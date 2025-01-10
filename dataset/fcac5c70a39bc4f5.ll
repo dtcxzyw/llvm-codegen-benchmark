@@ -1428,7 +1428,7 @@ entry:
   ret i32 %2
 }
 
-; 1423 occurrences:
+; 1422 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -1661,7 +1661,6 @@ entry:
 ; git/optimized/notes.ll
 ; git/optimized/record.ll
 ; git/optimized/resolve-undo.ll
-; git/optimized/sha256.ll
 ; git/optimized/show-branch.ll
 ; git/optimized/split-index.ll
 ; git/optimized/unpack-trees.ll
@@ -2860,7 +2859,7 @@ entry:
   ret i32 %2
 }
 
-; 466 occurrences:
+; 461 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -3063,7 +3062,6 @@ entry:
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; jq/optimized/lexer.ll
-; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/convert.c.ll
 ; libquic/optimized/e_aes.c.ll
@@ -3124,7 +3122,6 @@ entry:
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; minetest/optimized/gameui.cpp.ll
@@ -3188,8 +3185,6 @@ entry:
 ; openssl/optimized/ssl_test-bin-handshake.ll
 ; openusd/optimized/obu.c.ll
 ; openusd/optimized/refinerFactory.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/ir.ll
 ; php/optimized/ir_emit.ll
@@ -3243,7 +3238,6 @@ entry:
 ; regex-rs/optimized/3q3ceyp25m3d5uar.ll
 ; regex-rs/optimized/rrg5bgs95wzff0u.ll
 ; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
-; ruby/optimized/bignum.ll
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/st.ll
@@ -4421,7 +4415,7 @@ entry:
   ret i32 %2
 }
 
-; 1598 occurrences:
+; 1599 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcAig.c.ll
@@ -4672,6 +4666,7 @@ entry:
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/sre.ll
+; cpython/optimized/unicodeobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -6028,9 +6023,7 @@ entry:
   ret i32 %2
 }
 
-; 29 occurrences:
-; clamav/optimized/dll.cpp.ll
-; cmake/optimized/deflate.c.ll
+; 25 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; coreutils-rs/optimized/p2ic31m8j7cwnae.ll
 ; cpython/optimized/xmlparse.ll
@@ -6043,7 +6036,6 @@ entry:
 ; influxdb-rs/optimized/xf9idvr5og46ibq.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
-; openjdk/optimized/jdmarker.ll
 ; postgres/optimized/fe-exec.ll
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
@@ -6057,7 +6049,6 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
-; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {
 entry:
@@ -6299,7 +6290,7 @@ entry:
   ret i32 %2
 }
 
-; 1192 occurrences:
+; 1193 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -7025,6 +7016,7 @@ entry:
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/ecc.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/mpih-div.ll
@@ -7,6 +7,7 @@
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/numeric.ll
+; raylib/optimized/rcore.c.ll
 ; ruby/optimized/util.ll
 ; wireshark/optimized/packet-dhcpv6.c.ll
 ; wireshark/optimized/text_import.c.ll

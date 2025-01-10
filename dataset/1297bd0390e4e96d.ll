@@ -229,12 +229,12 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, %3
   %5 = ashr i64 %4, 32
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -256,12 +256,12 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000022(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, %3
   %5 = ashr i64 %4, 32
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

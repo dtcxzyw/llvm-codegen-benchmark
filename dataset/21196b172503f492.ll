@@ -1,5 +1,5 @@
 
-%struct.Run.3719341 = type { i32, i32, i32 }
+%struct.Run.3719291 = type { i32, i32, i32 }
 
 ; 74 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -133,7 +133,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.Run.3719341, ptr %0, i64 %5
+  %6 = getelementptr %struct.Run.3719291, ptr %0, i64 %5
   ret ptr %6
 }
 

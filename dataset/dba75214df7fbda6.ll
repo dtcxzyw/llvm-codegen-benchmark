@@ -1,5 +1,5 @@
 
-%"class.llvm::MDOperand.3298617" = type { ptr }
+%"class.llvm::MDOperand.3298583" = type { ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
@@ -49,7 +49,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  %6 = getelementptr nusw %"class.llvm::MDOperand.3298617", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.llvm::MDOperand.3298583", ptr %5, i64 %0
   ret ptr %6
 }
 

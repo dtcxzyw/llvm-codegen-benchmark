@@ -1,5 +1,5 @@
 
-; 303 occurrences:
+; 305 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -259,6 +259,8 @@
 ; openjdk/optimized/icache.ll
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/vm_version_x86.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/openssl-bin-passwd.ll
 ; php/optimized/html.ll
 ; php/optimized/pcre2_jit_compile.ll

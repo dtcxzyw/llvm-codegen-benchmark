@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3257801" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3314774" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3257767" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3314740" = type { ptr, ptr, ptr, ptr }
 
 ; 5 occurrences:
 ; cmake/optimized/huf_compress.c.ll
@@ -64,7 +64,7 @@ define ptr @func0000000000000000(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr i8, ptr %3, i64 -32
-  %5 = getelementptr %"class.llvm::Use.3257801", ptr %4, i64 %0
+  %5 = getelementptr %"class.llvm::Use.3257767", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -75,7 +75,7 @@ define ptr @func000000000000000a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3314774", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3314740", ptr %4, i64 %0
   ret ptr %5
 }
 

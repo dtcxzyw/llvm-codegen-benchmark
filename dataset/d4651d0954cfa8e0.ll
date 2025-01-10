@@ -37,8 +37,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
+; 1 occurrences:
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {

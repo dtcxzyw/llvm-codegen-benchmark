@@ -160,7 +160,7 @@ entry:
   ret i32 %5
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; faiss/optimized/sorting.cpp.ll
 ; freetype/optimized/smooth.c.ll
@@ -193,6 +193,7 @@ entry:
 ; openspiel/optimized/oh_hell.cc.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/cred.ll

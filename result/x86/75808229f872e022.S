@@ -26,7 +26,3 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	imull	%esi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	%edi, %eax
-	imull	%esi, %eax
-	retq

@@ -12,14 +12,6 @@ func000000000000000b:                   # @func000000000000000b
 	cltq
 	leaq	1(%rdi,%rax), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	cmpl	$5, %esi
-	movl	$5, %eax
-	cmovll	%esi, %eax
-	cltq
-	leaq	(%rax,%rax,2), %rax
-	leaq	8(%rdi,%rax,4), %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	$65536, %esi                    # imm = 0x10000
 	movl	$65536, %eax                    # imm = 0x10000

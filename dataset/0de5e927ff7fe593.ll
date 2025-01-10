@@ -1,5 +1,5 @@
 
-; 6045 occurrences:
+; 6044 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -645,7 +645,6 @@
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/json_reader.cpp.ll
-; cmake/optimized/json_value.cpp.ll
 ; cmake/optimized/jsoncpp_json_serializer.cpp.ll
 ; cmake/optimized/protocol_events.cpp.ll
 ; cmake/optimized/protocol_requests.cpp.ll
@@ -27261,8 +27260,7 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; 4 occurrences:
 ; casadi/optimized/integration_tools.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; llvm/optimized/DebugFrameDataSubsection.cpp.ll

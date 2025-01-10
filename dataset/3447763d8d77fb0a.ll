@@ -59,7 +59,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
 ; Function Attrs: nounwind
@@ -85,10 +86,9 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0) #0 {
 entry:

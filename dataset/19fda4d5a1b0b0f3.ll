@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2876250 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876216 = type <{ i64, i32 }>
 
 ; 6 occurrences:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -28,9 +28,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Gia_Obj_t_.2876250, ptr %1, i64 %2
+  %3 = getelementptr %struct.Gia_Obj_t_.2876216, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876250, ptr %4, i64 %0
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876216, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

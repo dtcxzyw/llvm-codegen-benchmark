@@ -92,14 +92,13 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; slurm/optimized/slurmdb_defs.ll
 ; wireshark/optimized/packet-rdp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:

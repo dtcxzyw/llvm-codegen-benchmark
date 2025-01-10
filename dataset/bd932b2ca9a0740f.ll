@@ -58,7 +58,7 @@ entry:
   ret i1 %5
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -118,7 +118,6 @@ entry:
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/procarray.ll
-; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_core_gpio.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -162,9 +161,8 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
-; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; arrow/optimized/hdfs.cc.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; bullet3/optimized/b3RadixSort32CL.ll
@@ -574,7 +572,7 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/codeobject.ll
@@ -587,7 +585,6 @@ entry:
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openjdk/optimized/generateOopMap.ll
-; qemu/optimized/block_vvfat.c.ll
 ; slurm/optimized/parse.ll
 ; velox/optimized/Ntile.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

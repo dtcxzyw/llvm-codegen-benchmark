@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; libquic/optimized/time.cc.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; ruby/optimized/array.ll

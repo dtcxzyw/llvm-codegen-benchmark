@@ -17,10 +17,10 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 1000000000
-  %3 = shl i64 %2, 32
+  %3 = shl nuw i64 %2, 32
   %4 = or i64 %0, %3
   ret i64 %4
 }

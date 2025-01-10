@@ -662,7 +662,7 @@ entry:
   ret i1 %3
 }
 
-; 1087 occurrences:
+; 1088 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -1306,6 +1306,7 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/conv.ll
+; php/optimized/dce.ll
 ; php/optimized/hash_whirlpool.ll
 ; php/optimized/random.ll
 ; php/optimized/zend_dfg.ll

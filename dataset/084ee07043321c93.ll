@@ -29,33 +29,6 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; abc/optimized/dauTree.c.ll
-; linux/optimized/svclock.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 1
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp eq i32 %0, 2
-  %5 = and i1 %3, %4
-  %6 = select i1 %5, i32 256, i32 0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; abc/optimized/bacBlast.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000018c(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2305843009213693952
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ne i32 %0, 0
-  %5 = and i1 %3, %4
-  %6 = select i1 %5, i32 15, i32 18
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; Function Attrs: nounwind

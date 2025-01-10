@@ -1,11 +1,11 @@
 
-%struct.cert_pkey_st.2633834 = type { ptr, ptr, ptr, ptr, i64 }
-%"struct.ceres::internal::CompressedList.3526940" = type { %"struct.ceres::internal::Block.3526941", %"class.std::vector.8.3526942", i32, i32 }
-%"struct.ceres::internal::Block.3526941" = type { i32, i32 }
-%"class.std::vector.8.3526942" = type { %"struct.std::_Vector_base.9.3526943" }
-%"struct.std::_Vector_base.9.3526943" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526944" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526944" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526945" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526945" = type { ptr, ptr, ptr }
+%struct.cert_pkey_st.2633801 = type { ptr, ptr, ptr, ptr, i64 }
+%"struct.ceres::internal::CompressedList.3526906" = type { %"struct.ceres::internal::Block.3526907", %"class.std::vector.8.3526908", i32, i32 }
+%"struct.ceres::internal::Block.3526907" = type { i32, i32 }
+%"class.std::vector.8.3526908" = type { %"struct.std::_Vector_base.9.3526909" }
+%"struct.std::_Vector_base.9.3526909" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526910" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526910" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526911" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526911" = type { ptr, ptr, ptr }
 
 ; 51 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
@@ -64,7 +64,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %2, 2147483647
-  %4 = getelementptr nusw nuw %struct.cert_pkey_st.2633834, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.cert_pkey_st.2633801, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -89,7 +89,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = and i64 %2, 2147483647
-  %4 = getelementptr %"struct.ceres::internal::CompressedList.3526940", ptr %0, i64 %3
+  %4 = getelementptr %"struct.ceres::internal::CompressedList.3526906", ptr %0, i64 %3
   ret ptr %4
 }
 

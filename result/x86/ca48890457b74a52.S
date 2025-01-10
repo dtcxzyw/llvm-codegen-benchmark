@@ -22,6 +22,12 @@ func000000000000001a:                   # @func000000000000001a
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
 	retq
+func000000000000002b:                   # @func000000000000002b
+	movl	%edx, %eax
+	subq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	cmovbq	%rdi, %rax
+	retq
 func000000000000003b:                   # @func000000000000003b
 	movl	%edx, %eax
 	subq	%rsi, %rdi
@@ -33,12 +39,6 @@ func0000000000000023:                   # @func0000000000000023
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
-	retq
-func000000000000002b:                   # @func000000000000002b
-	subq	%rdx, %rsi
-	movl	%edi, %eax
-	cmpq	%rsi, %rax
-	cmovaeq	%rsi, %rax
 	retq
 func0000000000000022:                   # @func0000000000000022
 	subq	%rdx, %rsi

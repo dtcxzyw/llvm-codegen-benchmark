@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2908898" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2908899", i64, %union.anon.2908900 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2908899" = type { ptr }
-%union.anon.2908900 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2908864" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2908865", i64, %union.anon.2908866 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2908865" = type { ptr }
+%union.anon.2908866 = type { i64, [8 x i8] }
 
 ; 4 occurrences:
 ; lightgbm/optimized/dataset_loader.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = srem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2908898", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2908864", ptr %0, i64 %5
   ret ptr %6
 }
 

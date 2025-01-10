@@ -1,5 +1,5 @@
 
-; 631 occurrences:
+; 630 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -31,7 +31,6 @@
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_posixsubprocess.ll
 ; cpython/optimized/bytesobject.ll
-; cpython/optimized/dtoa.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/unicodeobject.ll
 ; csmith/optimized/Lhs.cpp.ll
@@ -832,7 +831,7 @@ entry:
   ret i1 %5
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/cmList.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -849,7 +848,6 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openssl/optimized/libcrypto-lib-evp_rand.ll
 ; openssl/optimized/libcrypto-shlib-evp_rand.ll
 ; openusd/optimized/cdef.c.ll
@@ -1047,7 +1045,7 @@ entry:
   ret i1 %5
 }
 
-; 64 occurrences:
+; 65 occurrences:
 ; abc/optimized/retDelay.c.ll
 ; boost/optimized/args_handling.ll
 ; boost/optimized/async.ll
@@ -1067,6 +1065,7 @@ entry:
 ; boost/optimized/system_test1.ll
 ; boost/optimized/wait.ll
 ; cpython/optimized/assemble.ll
+; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; git/optimized/add.ll
 ; gromacs/optimized/fft5d.cpp.ll

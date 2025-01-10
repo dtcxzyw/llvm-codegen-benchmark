@@ -47,19 +47,6 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; abc/optimized/bacBlast.c.ll
-; linux/optimized/cpuset.ll
-; Function Attrs: nounwind
-define i32 @func000000000000018c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = icmp ne i64 %0, 0
-  %4 = and i1 %3, %2
-  %5 = select i1 %4, i32 15, i32 18
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; Function Attrs: nounwind
@@ -106,6 +93,18 @@ entry:
   %3 = icmp ult i64 %0, 1025
   %4 = and i1 %3, %2
   %5 = select i1 %4, i32 4, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/cpuset.ll
+; Function Attrs: nounwind
+define i32 @func000000000000018c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ne i64 %1, 0
+  %3 = icmp ne i32 %0, 2
+  %4 = and i1 %3, %2
+  %5 = select i1 %4, i32 8, i32 5
   ret i32 %5
 }
 

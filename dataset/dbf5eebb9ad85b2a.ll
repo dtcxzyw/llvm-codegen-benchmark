@@ -41,17 +41,6 @@ entry:
 }
 
 ; 1 occurrences:
-; slurm/optimized/gres_filter.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i64
-  %3 = mul i64 %0, %2
-  %4 = trunc nuw i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/hid-ntrig.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i16 %1) #0 {

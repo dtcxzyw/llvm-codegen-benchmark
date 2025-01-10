@@ -12,7 +12,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a1, a1
-	li	a2, 16
+	li	a2, 75
 	minu	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

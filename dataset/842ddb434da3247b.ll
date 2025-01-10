@@ -84,7 +84,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; flac/optimized/metadata_object.c.ll
 ; flac/optimized/replaygain_analysis.c.ll
@@ -99,7 +99,6 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libdefault-lib-blake2s_prov.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
-; php/optimized/crypt_sha512.ll
 ; postgres/optimized/dsa.ll
 ; qemu/optimized/block_vpc.c.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

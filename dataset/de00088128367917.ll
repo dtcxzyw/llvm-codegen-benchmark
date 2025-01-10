@@ -1,8 +1,9 @@
 
-%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/nf_conntrack_irc.ll
+; postgres/optimized/predicate.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
@@ -98,7 +99,7 @@ entry:
 define i1 @func0000000000000f61(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._Point.2744407, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._Point.2744373, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -56
   %6 = getelementptr nusw nuw i8, ptr %0, i64 56
   %7 = icmp eq ptr %6, %5
@@ -146,10 +147,9 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; freetype/optimized/ftstroke.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000764(ptr %0, ptr %1, i32 %2) #0 {
@@ -394,9 +394,10 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/nf_conntrack_irc.ll
 ; postgres/optimized/oracle_compat.ll
+; postgres/optimized/predicate.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000808(ptr %0, ptr %1, i32 %2) #0 {

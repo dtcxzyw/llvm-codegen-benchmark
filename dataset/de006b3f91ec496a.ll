@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/bignum.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003aa(i32 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %0, %3
-  %5 = icmp sgt i32 %4, -1
-  ret i1 %5
-}
-
 ; 74 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

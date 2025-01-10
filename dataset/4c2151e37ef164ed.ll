@@ -1,8 +1,8 @@
 
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
-%struct.mi_page_s.4024255 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024256, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024256 = type { i8 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
+%struct.mi_page_s.4024205 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024206, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024206 = type { i8 }
 
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
@@ -33,7 +33,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.mi_page_s.3949290, ptr %1, i64 %2
+  %3 = getelementptr %struct.mi_page_s.3949240, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -80
   %5 = icmp ugt ptr %4, %0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -45,7 +45,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000148(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.mi_page_s.4024255, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.mi_page_s.4024205, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -80
   %5 = icmp ugt ptr %4, %0
   %6 = select i1 %5, ptr %0, ptr %4

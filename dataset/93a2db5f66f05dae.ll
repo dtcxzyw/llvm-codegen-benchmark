@@ -1,5 +1,5 @@
 
-%struct.curltime.2762606 = type { i64, i32 }
+%struct.curltime.2762572 = type { i64, i32 }
 
 ; 2 occurrences:
 ; cmake/optimized/progress.c.ll
@@ -11,7 +11,7 @@ entry:
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 3040
-  %7 = getelementptr nusw nuw [6 x %struct.curltime.2762606], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [6 x %struct.curltime.2762572], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

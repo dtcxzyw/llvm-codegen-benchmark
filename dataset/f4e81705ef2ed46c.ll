@@ -1,9 +1,9 @@
 
-%struct.rb_ractor_basket.2601380 = type { %union.anon.13.2601381, i64, %union.anon.14.2601382 }
-%union.anon.13.2601381 = type { i32 }
-%union.anon.14.2601382 = type { %struct.anon.15.2601383 }
-%struct.anon.15.2601383 = type { i64, i8 }
-%struct.FrameSpec.2699064 = type { i32, ptr, ptr, ptr }
+%struct.rb_ractor_basket.2601347 = type { %union.anon.13.2601348, i64, %union.anon.14.2601349 }
+%union.anon.13.2601348 = type { i32 }
+%union.anon.14.2601349 = type { %struct.anon.15.2601350 }
+%struct.anon.15.2601350 = type { i64, i8 }
+%struct.FrameSpec.2699030 = type { i32, ptr, ptr, ptr }
 
 ; 10 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -21,7 +21,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.rb_ractor_basket.2601380, ptr %0, i64 %4
+  %5 = getelementptr %struct.rb_ractor_basket.2601347, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -293,7 +293,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.FrameSpec.2699064, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.FrameSpec.2699030, ptr %0, i64 %4
   ret ptr %5
 }
 

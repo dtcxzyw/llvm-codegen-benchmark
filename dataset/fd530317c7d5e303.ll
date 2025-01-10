@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -9,6 +9,7 @@
 ; icu/optimized/unames.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/radiotap.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll

@@ -1,5 +1,5 @@
 
-%struct.b2Vec2.3651021 = type { float, float }
+%struct.b2Vec2.3650987 = type { float, float }
 
 ; 5 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
@@ -25,7 +25,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = urem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [8 x %struct.b2Vec2.3651021], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [8 x %struct.b2Vec2.3650987], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

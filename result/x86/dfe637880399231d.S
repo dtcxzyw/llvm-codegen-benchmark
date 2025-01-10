@@ -1,10 +1,3 @@
-func0000000000000006:                   # @func0000000000000006
-	andl	$-8, %esi
-	addl	$16, %esi
-	movslq	%esi, %rax
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
 func0000000000000026:                   # @func0000000000000026
 	andl	$15, %esi
 	decl	%esi
@@ -18,13 +11,6 @@ func0000000000000021:                   # @func0000000000000021
 	cltq
 	cmpq	%rax, %rdi
 	sete	%al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$-8, %esi
-	addl	$16, %esi
-	movslq	%esi, %rax
-	cmpq	%rax, %rdi
-	setb	%al
 	retq
 func000000000000002a:                   # @func000000000000002a
 	movzbl	%sil, %eax

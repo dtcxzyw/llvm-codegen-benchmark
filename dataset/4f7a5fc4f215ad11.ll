@@ -1,5 +1,5 @@
 
-%union.StkPtrType.2710348 = type { i64 }
+%union.StkPtrType.2710314 = type { i64 }
 
 ; 198 occurrences:
 ; abc/optimized/acbPush.c.ll
@@ -210,9 +210,10 @@ entry:
   ret ptr %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/kitSop.c.ll
 ; casadi/optimized/tinyxml2.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; libquic/optimized/e_aes.c.ll
@@ -431,9 +432,9 @@ entry:
 define ptr @func000000000000002f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %union.StkPtrType.2710348, ptr %1, i64 %3
+  %4 = getelementptr nusw %union.StkPtrType.2710314, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  %6 = getelementptr nusw nuw %union.StkPtrType.2710348, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %union.StkPtrType.2710314, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -614,10 +615,11 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; icu/optimized/package.ll
 ; opencv/optimized/lrn_layer.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -643,13 +645,14 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
+; redis/optimized/networking.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -657,18 +660,6 @@ entry:
   %4 = getelementptr nusw double, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   %6 = getelementptr nusw nuw double, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/restoration.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 12
-  %6 = getelementptr i32, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -684,18 +675,6 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
-; redis/optimized/networking.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -4
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; libwebp/optimized/filters.c.ll
 ; opencv/optimized/tree.cpp.ll
@@ -706,18 +685,6 @@ entry:
   %4 = getelementptr double, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

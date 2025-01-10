@@ -24,17 +24,17 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000026:                   # @func0000000000000026
-	zext.h	a1, a1
-	addi	a1, a1, -3
-	zext.h	a0, a0
-	slt	a0, a1, a0
-	ret
 func000000000000002a:                   # @func000000000000002a
 	zext.h	a1, a1
 	addi	a1, a1, -1
 	zext.h	a0, a0
 	slt	a0, a0, a1
+	ret
+func0000000000000026:                   # @func0000000000000026
+	zext.h	a1, a1
+	addi	a1, a1, -42
+	zext.h	a0, a0
+	slt	a0, a1, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
 	zext.h	a1, a1

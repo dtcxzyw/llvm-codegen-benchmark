@@ -84,8 +84,7 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; abc/optimized/cuddApa.c.ll
+; 5 occurrences:
 ; hwloc/optimized/topology.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll

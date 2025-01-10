@@ -44,6 +44,14 @@ func00000000000007ec:                   // @func00000000000007ec
 	cset	w0, ne
 	ret
                                         // -- End function
+func00000000000002a8:                   // @func00000000000002a8
+// %bb.0:                               // %entry
+	lsl	x8, x0, #1
+	add	x8, x8, x1, lsl #2
+	cmp	x8, #1032
+	cset	w0, hi
+	ret
+                                        // -- End function
 func000000000000050a:                   // @func000000000000050a
 // %bb.0:                               // %entry
 	add	w8, w0, w1

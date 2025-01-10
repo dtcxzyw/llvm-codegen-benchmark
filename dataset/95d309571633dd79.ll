@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.67.2777650" = type { %"struct.std::__atomic_base.68.2777685" }
-%"struct.std::__atomic_base.68.2777685" = type { i8 }
+%"struct.std::atomic.67.2777616" = type { %"struct.std::__atomic_base.68.2777651" }
+%"struct.std::__atomic_base.68.2777651" = type { i8 }
 
 ; 7 occurrences:
 ; abseil-cpp/optimized/log_message.cc.ll
@@ -16,7 +16,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, 32
   %5 = getelementptr nusw nuw i8, ptr %0, i64 272
-  %6 = getelementptr nusw [32 x %"struct.std::atomic.67.2777650"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw [32 x %"struct.std::atomic.67.2777616"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

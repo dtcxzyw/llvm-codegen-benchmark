@@ -22,11 +22,12 @@ entry:
   ret i1 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/uts46.ll
 ; linux/optimized/xhci-hub.ll

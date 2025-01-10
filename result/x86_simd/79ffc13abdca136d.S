@@ -43,13 +43,13 @@ func0000000000000009:                   # @func0000000000000009
 	vpsraq	$63, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000011:                   # @func0000000000000011
-	vpsraq	$3, %ymm2, %ymm2
+func000000000000001d:                   # @func000000000000001d
+	vpsraq	$32, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
-func000000000000001d:                   # @func000000000000001d
-	vpsraq	$4, %ymm2, %ymm2
+func0000000000000011:                   # @func0000000000000011
+	vpsraq	$3, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

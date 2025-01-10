@@ -1,6 +1,6 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
 
 ; 3 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -11,8 +11,8 @@ define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %4
-  %6 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %5, i64 %1
+  %5 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %4
+  %6 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %5, i64 %1
   %7 = getelementptr i8, ptr %6, i64 32
   ret ptr %7
 }

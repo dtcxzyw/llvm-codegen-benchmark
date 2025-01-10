@@ -18,8 +18,10 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; darktable/optimized/amaze.cc.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,7 +1,7 @@
 
-%struct.transaction.2705455 = type { i32, i16, i16, [8 x i8] }
-%struct.HIDPointerEvent.2706129 = type { i32, i32, i32, i32 }
-%union.qoi_rgba_t.2729473 = type { i32 }
+%struct.transaction.2705421 = type { i32, i16, i16, [8 x i8] }
+%struct.HIDPointerEvent.2706095 = type { i32, i32, i32, i32 }
+%union.qoi_rgba_t.2729439 = type { i32 }
 
 ; 35 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -57,7 +57,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [4 x %struct.transaction.2705455], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [4 x %struct.transaction.2705421], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -71,7 +71,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 15
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.HIDPointerEvent.2706129], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [16 x %struct.HIDPointerEvent.2706095], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -104,7 +104,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729473], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729439], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

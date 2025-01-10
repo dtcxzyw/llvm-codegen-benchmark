@@ -1,10 +1,10 @@
 
-%"struct.OT::DataMap.2732749" = type { %"struct.OT::Tag.2732750", %"struct.OT::OffsetTo.2732751", %"struct.OT::IntType.2732752" }
-%"struct.OT::Tag.2732750" = type { %"struct.OT::IntType.2732752" }
-%"struct.OT::OffsetTo.2732751" = type { %"struct.OT::Offset.2732753" }
-%"struct.OT::Offset.2732753" = type { %"struct.OT::IntType.2732752" }
-%"struct.OT::IntType.2732752" = type { %struct.BEInt.2732754 }
-%struct.BEInt.2732754 = type { [4 x i8] }
+%"struct.OT::DataMap.2732715" = type { %"struct.OT::Tag.2732716", %"struct.OT::OffsetTo.2732717", %"struct.OT::IntType.2732718" }
+%"struct.OT::Tag.2732716" = type { %"struct.OT::IntType.2732718" }
+%"struct.OT::OffsetTo.2732717" = type { %"struct.OT::Offset.2732719" }
+%"struct.OT::Offset.2732719" = type { %"struct.OT::IntType.2732718" }
+%"struct.OT::IntType.2732718" = type { %struct.BEInt.2732720 }
+%struct.BEInt.2732720 = type { [4 x i8] }
 
 ; 17 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -28,7 +28,7 @@
 define i64 @func000000000000003f(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = getelementptr nusw nuw [1 x %"struct.OT::DataMap.2732749"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [1 x %"struct.OT::DataMap.2732715"], ptr %2, i64 0, i64 %0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 12
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

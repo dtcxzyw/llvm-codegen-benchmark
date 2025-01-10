@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 68 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; cpython/optimized/obmalloc.ll
 ; freetype/optimized/sfnt.c.ll
@@ -64,6 +64,7 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/lgc.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll

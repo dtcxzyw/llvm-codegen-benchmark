@@ -57,6 +57,18 @@ func0000000000000055:                   # @func0000000000000055
 	add	a0, a0, a2
 	addi	a0, a0, 135
 	ret
+func00000000000000d8:                   # @func00000000000000d8
+	lui	a3, 1
+	addiw	a3, a3, -1
+	add	a2, a2, a3
+	lui	a3, 1048574
+	srli	a3, a3, 1
+	and	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -2048
+	addi	a0, a0, -2048
+	ret
 func00000000000000d0:                   # @func00000000000000d0
 	lui	a3, 1
 	addiw	a3, a3, -1

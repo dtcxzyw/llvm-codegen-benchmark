@@ -154,7 +154,6 @@
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/disasm.c.ll
-; clamav/optimized/dlp.c.ll
 ; clamav/optimized/getopt.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/list.cpp.ll
@@ -794,6 +793,7 @@
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/timeout.ll
+; linux/optimized/trace_output.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/tx.ll
@@ -2003,7 +2003,6 @@
 ; wireshark/optimized/packet-kink.c.ll
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/packet-lapd.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-lbmsrs.c.ll
 ; wireshark/optimized/packet-ldap.c.ll
@@ -2156,6 +2155,7 @@
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/simplify.ll
 ; yosys/optimized/techmap.ll
+; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/dd_fdd.cpp.ll
@@ -3374,8 +3374,7 @@ entry:
   ret i32 %4
 }
 
-; 78 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 76 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -3412,7 +3411,6 @@ entry:
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/udp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

@@ -1,5 +1,5 @@
 
-%struct.XineramaScreenInfo.2731356 = type { i32, i16, i16, i16, i16 }
+%struct.XineramaScreenInfo.2731322 = type { i32, i16, i16, i16, i16 }
 
 ; 6 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
@@ -315,7 +315,7 @@ define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw nuw %struct.XineramaScreenInfo.2731356, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.XineramaScreenInfo.2731322, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1732,7 +1732,7 @@ entry:
   ret i1 %4
 }
 
-; 183 occurrences:
+; 182 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/topology.ll
@@ -1741,7 +1741,6 @@ entry:
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/xmlparse.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/string.cpp.ll
 ; freetype/optimized/bdf.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -2539,7 +2538,7 @@ entry:
   ret i1 %4
 }
 
-; 759 occurrences:
+; 760 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
@@ -3077,6 +3076,7 @@ entry:
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/videocapture_gphoto2_autofocus.cpp.ll
 ; openjdk/optimized/buildOopMap.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/heapShared.ll
@@ -3307,8 +3307,9 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/unpack.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; icu/optimized/uparse.ll
 ; linux/optimized/ip6_tables.ll

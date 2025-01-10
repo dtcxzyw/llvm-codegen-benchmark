@@ -1,6 +1,6 @@
 
-%struct.dt_iop_basecurve_node_t.2872160 = type { float, float }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%struct.dt_iop_basecurve_node_t.2872126 = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 4 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -12,7 +12,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %3, %1
-  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %0, i64 %4
+  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872126, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }
@@ -27,7 +27,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %3, %1
-  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %0, i64 %4
+  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872126, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -56
   ret ptr %6
 }
@@ -70,7 +70,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %"class.cv::Complex.13.3754032", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Complex.13.3753982", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

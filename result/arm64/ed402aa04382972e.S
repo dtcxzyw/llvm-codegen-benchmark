@@ -53,3 +53,12 @@ func000000000000006c:                   // @func000000000000006c
 	cset	w0, ne
 	ret
                                         // -- End function
+func0000000000000048:                   // @func0000000000000048
+// %bb.0:                               // %entry
+	and	x8, x2, #0x1
+	and	x9, x1, #0x7ffffffffffffffc
+	add	x8, x0, x8
+	cmp	x8, x9
+	cset	w0, hi
+	ret
+                                        // -- End function

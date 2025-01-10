@@ -363,40 +363,40 @@ func0000000000000128:                   # @func0000000000000128
 	vzeroupper
 	retq
 .LCPI30_0:
-	.long	4294967004                      # 0xfffffedc
+	.long	4294967258                      # 0xffffffda
 .LCPI30_1:
-	.long	96                              # 0x60
-.LCPI30_2:
 	.long	3                               # 0x3
-func000000000000010c:                   # @func000000000000010c
+.LCPI30_2:
+	.long	1                               # 0x1
+func0000000000000a08:                   # @func0000000000000a08
 	vpaddd	.LCPI30_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI30_1(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI30_2(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	vpcmpnleud	.LCPI30_2(%rip){1to8}, %ymm0, %k1
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI31_0:
-	.long	4294967258                      # 0xffffffda
+	.long	17                              # 0x11
 .LCPI31_1:
-	.long	3                               # 0x3
-.LCPI31_2:
-	.long	1                               # 0x1
-func0000000000000a08:                   # @func0000000000000a08
-	vpaddd	.LCPI31_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpltud	.LCPI31_1(%rip){1to8}, %ymm1, %k0
-	vpcmpnleud	.LCPI31_2(%rip){1to8}, %ymm0, %k1
+	.long	4                               # 0x4
+func0000000000000202:                   # @func0000000000000202
+	vpcmpeqd	.LCPI31_0(%rip){1to8}, %ymm1, %k0
+	vpcmpnleud	.LCPI31_1(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI32_0:
-	.long	17                              # 0x11
+	.long	4294909952                      # 0xffff2000
 .LCPI32_1:
-	.long	4                               # 0x4
-func0000000000000202:                   # @func0000000000000202
-	vpcmpeqd	.LCPI32_0(%rip){1to8}, %ymm1, %k0
-	vpcmpnleud	.LCPI32_1(%rip){1to8}, %ymm0, %k1
+	.long	1056768                         # 0x102000
+.LCPI32_2:
+	.long	55296                           # 0xd800
+func0000000000000d28:                   # @func0000000000000d28
+	vpaddd	.LCPI32_0(%rip){1to8}, %ymm1, %ymm1
+	vpcmpltud	.LCPI32_1(%rip){1to8}, %ymm1, %k0
+	vpcmpltud	.LCPI32_2(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -407,7 +407,7 @@ func0000000000000202:                   # @func0000000000000202
 	.long	1056768                         # 0x102000
 .LCPI33_2:
 	.long	55296                           # 0xd800
-func0000000000000d28:                   # @func0000000000000d28
+func0000000000000d08:                   # @func0000000000000d08
 	vpaddd	.LCPI33_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI33_1(%rip){1to8}, %ymm1, %k0
 	vpcmpltud	.LCPI33_2(%rip){1to8}, %ymm0, %k1
@@ -416,26 +416,25 @@ func0000000000000d28:                   # @func0000000000000d28
 	vzeroupper
 	retq
 .LCPI34_0:
-	.long	4294909952                      # 0xffff2000
+	.long	2                               # 0x2
 .LCPI34_1:
-	.long	1056768                         # 0x102000
-.LCPI34_2:
-	.long	55296                           # 0xd800
-func0000000000000d08:                   # @func0000000000000d08
-	vpaddd	.LCPI34_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpltud	.LCPI34_1(%rip){1to8}, %ymm1, %k0
-	vpcmpltud	.LCPI34_2(%rip){1to8}, %ymm0, %k1
-	korb	%k1, %k0, %k0
+	.long	1022                            # 0x3fe
+func0000000000000054:                   # @func0000000000000054
+	vpcmpeqd	.LCPI34_0(%rip){1to8}, %ymm1, %k0
+	vpcmpgtd	.LCPI34_1(%rip){1to8}, %ymm0, %k1
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI35_0:
-	.long	2                               # 0x2
+	.long	9                               # 0x9
 .LCPI35_1:
-	.long	1022                            # 0x3fe
-func0000000000000054:                   # @func0000000000000054
-	vpcmpeqd	.LCPI35_0(%rip){1to8}, %ymm1, %k0
-	vpcmpgtd	.LCPI35_1(%rip){1to8}, %ymm0, %k1
+	.long	11                              # 0xb
+func000000000000010c:                   # @func000000000000010c
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpcmpltud	.LCPI35_0(%rip){1to8}, %ymm1, %k0
+	vpcmpltd	.LCPI35_1(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

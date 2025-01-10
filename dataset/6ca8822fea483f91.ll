@@ -13,7 +13,7 @@ entry:
   %1 = shl i8 %0, 3
   %2 = add i8 %1, -8
   %3 = zext nneg i8 %2 to i64
-  %4 = lshr i64 3471480559860788781, %3
+  %4 = lshr i64 3458764514609081901, %3
   %5 = trunc i64 %4 to i8
   ret i8 %5
 }

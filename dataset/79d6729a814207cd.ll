@@ -2091,13 +2091,12 @@ entry:
   ret ptr %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; bullet3/optimized/btMultiBody.ll
-; clamav/optimized/mszipd.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/export.c.ll

@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
 
 ; 59 occurrences:
 ; abc/optimized/darLib.c.ll
@@ -72,7 +72,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = getelementptr nusw nuw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw nuw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

@@ -1,6 +1,6 @@
 
-%"class.boost::shared_ptr.29.2841526" = type { ptr, %"class.boost::detail::shared_count.2841522" }
-%"class.boost::detail::shared_count.2841522" = type { ptr }
+%"class.boost::shared_ptr.29.2841492" = type { ptr, %"class.boost::detail::shared_count.2841488" }
+%"class.boost::detail::shared_count.2841488" = type { ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahNumberSeq.ll
@@ -27,7 +27,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nuw %"class.boost::shared_ptr.29.2841526", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.boost::shared_ptr.29.2841492", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

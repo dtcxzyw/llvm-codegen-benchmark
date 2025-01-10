@@ -418,7 +418,7 @@ entry:
   ret i64 %6
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/commit-graph.ll
@@ -449,7 +449,6 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/xprop.ll
 ; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll

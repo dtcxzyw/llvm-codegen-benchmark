@@ -58,7 +58,7 @@ entry:
   ret i64 %5
 }
 
-; 132 occurrences:
+; 131 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
@@ -83,7 +83,6 @@ entry:
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/vt.ll
 ; lua/optimized/lstrlib.ll
-; lz4/optimized/lz4hc.c.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll

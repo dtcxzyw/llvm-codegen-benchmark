@@ -1,10 +1,11 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; boost/optimized/sort_by_side.ll
 ; casadi/optimized/cvodes_band.c.ll
 ; casadi/optimized/cvodes_dense.c.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; csmith/optimized/Lhs.cpp.ll
 ; git/optimized/rev-parse.ll
 ; graphviz/optimized/emit.c.ll
@@ -26,6 +27,7 @@
 ; postgres/optimized/interval.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:

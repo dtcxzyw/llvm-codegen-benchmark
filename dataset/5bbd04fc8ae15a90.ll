@@ -1,5 +1,5 @@
 
-; 1318 occurrences:
+; 1317 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -240,7 +240,6 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; hermes/optimized/Triple.cpp.ll
@@ -358,7 +357,6 @@
 ; llvm/optimized/AArch64StackTaggingPreRA.cpp.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/AArch64TargetStreamer.cpp.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -468,7 +466,6 @@
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MemoryTaggingSupport.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
@@ -773,6 +770,7 @@
 ; pcg-cpp/optimized/cppref-sample.cpp.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
+; php/optimized/ascmagic.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phpdbg_prompt.ll
 ; php/optimized/zend_jit.ll
@@ -1042,6 +1040,7 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/1r2x5absurxbrq18.ll
 ; wasmtime-rs/optimized/2kevz0g5e1myujwd.ll
@@ -1693,7 +1692,7 @@ entry:
   ret i64 %4
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; boost/optimized/url_base.ll
 ; clamav/optimized/untar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -1724,6 +1723,7 @@ entry:
 ; llvm/optimized/VectorBuilder.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; node/optimized/libnode.crypto_tls.ll
+; php/optimized/ascmagic.ll
 ; postgres/optimized/int.ll
 ; postgres/optimized/int8.ll
 ; postgres/optimized/selfuncs.ll

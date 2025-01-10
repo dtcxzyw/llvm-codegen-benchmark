@@ -206,7 +206,7 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 14 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/saigSimMv.c.ll
 ; boost/optimized/message.ll
@@ -217,9 +217,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-des_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; spike/optimized/aes32esmi.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll

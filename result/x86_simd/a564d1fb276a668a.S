@@ -61,20 +61,11 @@ func000000000000000c:                   # @func000000000000000c
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	60                              # 0x3c
+	.long	1984                            # 0x7c0
 .LCPI3_1:
-	.long	4294967264                      # 0xffffffe0
-func000000000000000d:                   # @func000000000000000d
+	.long	16777216                        # 0x1000000
+func000000000000000f:                   # @func000000000000000f
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI4_0:
-	.long	1984                            # 0x7c0
-.LCPI4_1:
-	.long	16777216                        # 0x1000000
-func000000000000000f:                   # @func000000000000000f
-	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq

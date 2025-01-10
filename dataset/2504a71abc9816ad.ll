@@ -1168,7 +1168,7 @@ entry:
   ret i1 %1
 }
 
-; 383 occurrences:
+; 384 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcShow.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
@@ -1227,6 +1227,7 @@ entry:
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/dtptngen.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/punycode.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/ucnv2022.ll

@@ -120,7 +120,7 @@ entry:
   ret ptr %7
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -134,6 +134,7 @@ entry:
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
+; openusd/optimized/restoration.c.ll
 ; php/optimized/ir.ll
 ; spike/optimized/fdt_rw.ll
 ; velox/optimized/PrestoSerializer.cpp.ll

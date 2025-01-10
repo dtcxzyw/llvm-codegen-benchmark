@@ -1,6 +1,4 @@
 
-%"class.pbrt::RGB.3647248" = type { float, float, float }
-
 ; 12 occurrences:
 ; boost/optimized/area.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -27,9 +25,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/putil.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
@@ -38,17 +37,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/textures.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = tail call i32 @llvm.smin.i32(i32 %1, i32 5)
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nuw %"class.pbrt::RGB.3647248", ptr %0, i64 %3, i32 2
-  ret ptr %4
 }
 
 ; 1 occurrences:

@@ -825,7 +825,7 @@ entry:
   ret i1 %3
 }
 
-; 230 occurrences:
+; 229 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/dauTree.c.ll
 ; boost/optimized/alloc_lib.ll
@@ -1024,7 +1024,6 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
-; raylib/optimized/rcore.c.ll
 ; redis/optimized/evict.ll
 ; redis/optimized/expire.ll
 ; soc-simulator/optimized/verilated.ll

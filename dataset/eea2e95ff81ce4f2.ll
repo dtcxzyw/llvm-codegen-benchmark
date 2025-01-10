@@ -1,7 +1,7 @@
 
-%class.aiVector3t.2825657 = type { double, double, double }
-%"class.llvm::Use.3156484" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3186598" = type { ptr, ptr, ptr, ptr }
+%class.aiVector3t.2825623 = type { double, double, double }
+%"class.llvm::Use.3156450" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3186564" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
@@ -10,7 +10,7 @@
 define i1 @func0000000000000364(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw %class.aiVector3t.2825657, ptr %0, i64 %2
+  %3 = getelementptr nusw %class.aiVector3t.2825623, ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   %5 = icmp ult ptr %4, %0
   ret i1 %5
@@ -63,7 +63,7 @@ entry:
 define i1 @func0000000000000361(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw %"class.llvm::Use.3156484", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3156450", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = icmp eq ptr %4, %0
   ret i1 %5
@@ -75,7 +75,7 @@ entry:
 define i1 @func000000000000030c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw %"class.llvm::Use.3186598", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3186564", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 64
   %5 = icmp ne ptr %4, %0
   ret i1 %5

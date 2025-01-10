@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 105 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCec.c.ll
 ; abc/optimized/fraCore.c.ll
@@ -38,12 +38,14 @@
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/ipv6_sockglue.ll
+; linux/optimized/net.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; llvm/optimized/LoopUnrollAndJam.cpp.ll
 ; llvm/optimized/MCObjectFileInfo.cpp.ll

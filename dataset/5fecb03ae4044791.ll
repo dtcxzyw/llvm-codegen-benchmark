@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3082646" = type { %"class.hermes::vm::HermesValue.3082534" }
-%"class.hermes::vm::HermesValue.3082534" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3082612" = type { %"class.hermes::vm::HermesValue.3082500" }
+%"class.hermes::vm::HermesValue.3082500" = type { i64 }
 
 ; 7 occurrences:
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
@@ -30,7 +30,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = inttoptr i64 %0 to ptr
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082646", ptr %6, i64 %4
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082612", ptr %6, i64 %4
   ret ptr %7
 }
 

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/linux-user_syscall.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -8
-  %3 = add i32 %2, 16
-  %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %0, %4
-  ret i1 %5
-}
-
 ; 6 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -38,18 +26,6 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
   %5 = icmp eq i64 %0, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/scm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -8
-  %3 = add i32 %2, 16
-  %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

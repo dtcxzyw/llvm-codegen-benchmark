@@ -10,3 +10,9 @@ func0000000000000040:                   # @func0000000000000040
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func0000000000000002:                   # @func0000000000000002
+	addi	a3, a1, 32
+	minu	a2, a3, a2
+	sub	a0, a0, a1
+	add	a0, a0, a2
+	ret

@@ -152,6 +152,13 @@ func0000000000000108:                   // @func0000000000000108
 	cset	w0, hi
 	ret
                                         // -- End function
+func0000000000000188:                   // @func0000000000000188
+// %bb.0:                               // %entry
+	sub	w8, w0, w1
+	cmp	w8, w2
+	cset	w0, hi
+	ret
+                                        // -- End function
 func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
 	sub	w8, w0, w1
@@ -192,13 +199,6 @@ func0000000000000024:                   // @func0000000000000024
 	sub	w8, w0, w1
 	cmp	w8, w2
 	cset	w0, lo
-	ret
-                                        // -- End function
-func0000000000000188:                   // @func0000000000000188
-// %bb.0:                               // %entry
-	sub	w8, w0, w1
-	cmp	w8, w2
-	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000186:                   // @func0000000000000186

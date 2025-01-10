@@ -77,13 +77,8 @@ func0000000000000030:                   # @func0000000000000030
 	shlq	$7, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movl	%edx, %eax
-	imulq	%rsi, %rax
-	leaq	(%rdi,%rax,2), %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edx, %eax
 	imulq	%rsi, %rax
-	leaq	(%rdi,%rax,4), %rax
+	leaq	(%rdi,%rax,2), %rax
 	retq

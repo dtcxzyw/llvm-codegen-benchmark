@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 59 occurrences:
 ; assimp/optimized/LWOAnimation.cpp.ll
@@ -116,7 +116,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c4(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %class.aiVector3t.2828902, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %class.aiVector3t.2828868, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -24
   %5 = icmp ult ptr %1, %4
   %6 = select i1 %0, i1 %5, i1 false

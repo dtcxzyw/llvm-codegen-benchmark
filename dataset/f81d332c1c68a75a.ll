@@ -1,9 +1,9 @@
 
-%union.CPUTLBEntry.2707265 = type { %struct.anon.2.2707267 }
-%struct.anon.2.2707267 = type { i64, i64, i64, i64 }
-%struct.absRankType.3487000 = type { i8, i8 }
-%struct.v4l2_plane.3774799 = type { i32, i32, %union.anon.0.3774801, i32, [11 x i32] }
-%union.anon.0.3774801 = type { i64 }
+%union.CPUTLBEntry.2707231 = type { %struct.anon.2.2707233 }
+%struct.anon.2.2707233 = type { i64, i64, i64, i64 }
+%struct.absRankType.3486966 = type { i8, i8 }
+%struct.v4l2_plane.3774749 = type { i32, i32, %union.anon.0.3774751, i32, [11 x i32] }
+%union.anon.0.3774751 = type { i64 }
 
 ; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -26,7 +26,7 @@ define ptr @func00000000000000c0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 568
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %4, i64 0, i64 %0, i32 0, i32 1
+  %5 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %4, i64 0, i64 %0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -37,7 +37,7 @@ define ptr @func00000000000000c3(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 568
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %4, i64 0, i64 %0, i32 0, i32 2
+  %5 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %4, i64 0, i64 %0, i32 0, i32 2
   ret ptr %5
 }
 
@@ -48,7 +48,7 @@ define ptr @func0000000000000040(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 568
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %4, i64 0, i64 %0, i32 0, i32 1
+  %5 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %4, i64 0, i64 %0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -59,7 +59,7 @@ define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 568
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %4, i64 0, i64 %0, i32 0, i32 2
+  %5 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %4, i64 0, i64 %0, i32 0, i32 2
   ret ptr %5
 }
 
@@ -71,7 +71,7 @@ define ptr @func00000000000000cb(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 120
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [4 x %struct.absRankType.3487000], ptr %4, i64 0, i64 %0, i32 1
+  %5 = getelementptr [4 x %struct.absRankType.3486966], ptr %4, i64 0, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -82,7 +82,7 @@ define ptr @func00000000000000cf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 736
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nuw [8 x %struct.v4l2_plane.3774799], ptr %4, i64 0, i64 %0, i32 3
+  %5 = getelementptr nuw [8 x %struct.v4l2_plane.3774749], ptr %4, i64 0, i64 %0, i32 3
   ret ptr %5
 }
 

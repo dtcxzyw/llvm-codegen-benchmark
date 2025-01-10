@@ -145,9 +145,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i32 %0, i32 %1, i8 %2) #0 {

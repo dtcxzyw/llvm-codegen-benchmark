@@ -40,13 +40,6 @@ func0000000000000026:                   # @func0000000000000026
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	movslq	%edx, %rax
-	incq	%rsi
-	cmpq	%rax, %rsi
-	sete	%al
-	orb	%dil, %al
-	retq
 func0000000000000061:                   # @func0000000000000061
 	movslq	%edx, %rax
 	incq	%rsi

@@ -23,6 +23,18 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; linux/optimized/mballoc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = shl i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
 ; 2 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
 ; quest/optimized/QuEST_common.c.ll

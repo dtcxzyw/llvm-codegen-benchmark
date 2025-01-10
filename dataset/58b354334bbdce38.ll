@@ -1,5 +1,5 @@
 
-; 558 occurrences:
+; 556 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTim.c.ll
@@ -207,7 +207,6 @@
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/quota.ll
 ; linux/optimized/recovery.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/udp.ll
@@ -233,7 +232,6 @@
 ; llvm/optimized/CoverageMappingGen.cpp.ll
 ; llvm/optimized/Host.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/MCObjectFileInfo.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll

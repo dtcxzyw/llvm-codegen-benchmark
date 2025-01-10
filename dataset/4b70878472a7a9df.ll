@@ -12,8 +12,9 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -22,19 +23,6 @@ entry:
   %5 = or disjoint i64 %0, %4
   %6 = select i1 %1, i64 140737488355328, i64 0
   %7 = or disjoint i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 %3, 56
-  %5 = or i64 %0, %4
-  %6 = select i1 %1, i64 11, i64 12
-  %7 = or i64 %5, %6
   ret i64 %7
 }
 

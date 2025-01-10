@@ -1,8 +1,8 @@
 
-%"struct.tbb::detail::d0::padded.2635915" = type { %"struct.tbb::detail::d0::padded_base.base.2635916", [7 x i8] }
-%"struct.tbb::detail::d0::padded_base.base.2635916" = type { %"struct.tbb::detail::d1::ets_element.base.2635917", [112 x i8] }
-%"struct.tbb::detail::d1::ets_element.base.2635917" = type { %"class.tbb::detail::d0::aligned_space.2635909", i8 }
-%"class.tbb::detail::d0::aligned_space.2635909" = type { [8 x i8] }
+%"struct.tbb::detail::d0::padded.2635882" = type { %"struct.tbb::detail::d0::padded_base.base.2635883", [7 x i8] }
+%"struct.tbb::detail::d0::padded_base.base.2635883" = type { %"struct.tbb::detail::d1::ets_element.base.2635884", [112 x i8] }
+%"struct.tbb::detail::d1::ets_element.base.2635884" = type { %"class.tbb::detail::d0::aligned_space.2635876", i8 }
+%"class.tbb::detail::d0::aligned_space.2635876" = type { [8 x i8] }
 
 ; 4 occurrences:
 ; linux/optimized/gre_offload.ll
@@ -307,7 +307,7 @@ define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = sub i64 0, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635915", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635882", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

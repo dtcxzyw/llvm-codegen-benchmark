@@ -77,7 +77,7 @@ entry:
   ret i32 %3
 }
 
-; 160 occurrences:
+; 157 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
@@ -156,7 +156,6 @@ entry:
 ; llvm/optimized/Object.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lib_io.ll
 ; luajit/optimized/lib_io_dyn.ll
@@ -206,9 +205,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/db.ll
 ; ruby/optimized/class.ll
-; ruby/optimized/complex.ll
 ; ruby/optimized/iseq.ll
-; ruby/optimized/rational.ll
 ; ruby/optimized/ruby.ll
 ; ruby/optimized/symbol.ll
 ; ruby/optimized/thread.ll
@@ -242,59 +239,6 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
-  %3 = zext i1 %2 to i32
-  ret i32 %3
-}
-
-; 44 occurrences:
-; abc/optimized/giaDup.c.ll
-; abc/optimized/giaStg.c.ll
-; abc/optimized/ioJson.c.ll
-; abc/optimized/sbdWin.c.ll
-; assimp/optimized/clipper.cpp.ll
-; boost/optimized/gregorian.ll
-; clamav/optimized/clamdtop.c.ll
-; cmake/optimized/archive_write_disk_posix.c.ll
-; cpython/optimized/listobject.ll
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/unicodeobject.ll
-; darktable/optimized/collect.c.ll
-; flatbuffers/optimized/reflection.cpp.ll
-; freetype/optimized/ftbase.c.ll
-; git/optimized/fsck.ll
-; libwebp/optimized/frame_enc.c.ll
-; libwebp/optimized/predictor_enc.c.ll
-; libwebp/optimized/quant_enc.c.ll
-; linux/optimized/blk-map.ll
-; linux/optimized/kcmp.ll
-; lua/optimized/lvm.ll
-; luau/optimized/Conformance.test.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; opencv/optimized/binary_descriptor_matcher.cpp.ll
-; openjdk/optimized/c1_Instruction.ll
-; openmpi/optimized/netpatterns_nary_tree.ll
-; openusd/optimized/bitreader.c.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; php/optimized/pdo_stmt.ll
-; php/optimized/php_dom.ll
-; php/optimized/softmagic.ll
-; postgres/optimized/localtime.ll
-; redis/optimized/module.ll
-; redis/optimized/sentinel.ll
-; ruby/optimized/rational.ll
-; slurm/optimized/group_cache.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
-; wasmedge/optimized/engine.cpp.ll
-; wireshark/optimized/packet-ipp.c.ll
-; yosys/optimized/memory_libmap.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %0, %1
   %3 = zext i1 %2 to i32
   ret i32 %3
 }
@@ -438,7 +382,7 @@ entry:
   ret i32 %3
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/luckyFast6.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -458,7 +402,6 @@ entry:
 ; libzmq/optimized/socket_poller.cpp.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/memtype.ll
-; linux/optimized/relay.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/DeclarationName.cpp.ll
 ; llvm/optimized/RegBankSelect.cpp.ll
@@ -523,7 +466,7 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
@@ -535,7 +478,6 @@ entry:
 ; hdf5/optimized/H5HFsection.c.ll
 ; hyperscan/optimized/lbr.c.ll
 ; libquic/optimized/cbs.c.ll
-; libwebp/optimized/alpha_dec.c.ll
 ; linux/optimized/bts.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/hw_breakpoint.ll
@@ -650,6 +592,58 @@ entry:
 define i32 @func0000000000000016(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sge i64 %0, %1
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+; 43 occurrences:
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/ioJson.c.ll
+; abc/optimized/sbdWin.c.ll
+; assimp/optimized/clipper.cpp.ll
+; boost/optimized/gregorian.ll
+; clamav/optimized/clamdtop.c.ll
+; cmake/optimized/archive_write_disk_posix.c.ll
+; cpython/optimized/listobject.ll
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/unicodeobject.ll
+; darktable/optimized/collect.c.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; freetype/optimized/ftbase.c.ll
+; git/optimized/fsck.ll
+; libwebp/optimized/frame_enc.c.ll
+; libwebp/optimized/predictor_enc.c.ll
+; libwebp/optimized/quant_enc.c.ll
+; linux/optimized/blk-map.ll
+; linux/optimized/kcmp.ll
+; lua/optimized/lvm.ll
+; luau/optimized/Conformance.test.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; opencv/optimized/binary_descriptor_matcher.cpp.ll
+; openjdk/optimized/c1_Instruction.ll
+; openmpi/optimized/netpatterns_nary_tree.ll
+; openusd/optimized/bitreader.c.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; php/optimized/pdo_stmt.ll
+; php/optimized/php_dom.ll
+; php/optimized/softmagic.ll
+; postgres/optimized/localtime.ll
+; redis/optimized/module.ll
+; redis/optimized/sentinel.ll
+; slurm/optimized/group_cache.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
+; wasmedge/optimized/engine.cpp.ll
+; wireshark/optimized/packet-ipp.c.ll
+; yosys/optimized/memory_libmap.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %0, %1
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

@@ -365,7 +365,7 @@ entry:
   ret i64 %3
 }
 
-; 139 occurrences:
+; 140 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/cswCut.c.ll
@@ -486,6 +486,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll
+; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; redis/optimized/blocked.ll
 ; ruby/optimized/bignum.ll
@@ -578,7 +579,7 @@ entry:
   ret i64 %3
 }
 
-; 213 occurrences:
+; 212 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/dtoa.ll
@@ -786,7 +787,6 @@ entry:
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/varbit.ll
-; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll

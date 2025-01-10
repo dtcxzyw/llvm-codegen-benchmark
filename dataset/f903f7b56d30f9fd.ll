@@ -39,8 +39,7 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
-; lief/optimized/hmac_drbg.c.ll
+; 6 occurrences:
 ; quantlib/optimized/brownianbridge.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
@@ -56,7 +55,7 @@ entry:
   ret ptr %5
 }
 
-; 171 occurrences:
+; 172 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; delta-rs/optimized/20d38kflwyye7r28.ll
 ; delta-rs/optimized/2ee2hrnmlgpyifuq.ll
@@ -67,6 +66,7 @@ entry:
 ; gromacs/optimized/manyautocorrelation.cpp.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; libquic/optimized/common_cert_set.cc.ll
+; lief/optimized/hmac_drbg.c.ll
 ; logos-rs/optimized/2i9knbv5rbr37ccz.ll
 ; logos-rs/optimized/l82l31q4dxfnso7.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll

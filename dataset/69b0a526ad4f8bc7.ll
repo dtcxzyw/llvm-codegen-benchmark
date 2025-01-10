@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; abc/optimized/bmcMaj.c.ll
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/value_semantic.ll
 ; darktable/optimized/introspection_demosaic.c.ll

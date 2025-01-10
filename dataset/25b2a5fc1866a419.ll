@@ -1,11 +1,11 @@
 
-%"class.std::__1::basic_string.2603838" = type { %"class.std::__1::__compressed_pair.1.2603839" }
-%"class.std::__1::__compressed_pair.1.2603839" = type { %"struct.std::__1::__compressed_pair_elem.2.2603840" }
-%"struct.std::__1::__compressed_pair_elem.2.2603840" = type { %"struct.std::__1::basic_string<char>::__rep.2603841" }
-%"struct.std::__1::basic_string<char>::__rep.2603841" = type { %union.anon.2603842 }
-%union.anon.2603842 = type { %"struct.std::__1::basic_string<char>::__long.2603843" }
-%"struct.std::__1::basic_string<char>::__long.2603843" = type { %struct.anon.3.2603844, i64, ptr }
-%struct.anon.3.2603844 = type { i64 }
+%"class.std::__1::basic_string.2603805" = type { %"class.std::__1::__compressed_pair.1.2603806" }
+%"class.std::__1::__compressed_pair.1.2603806" = type { %"struct.std::__1::__compressed_pair_elem.2.2603807" }
+%"struct.std::__1::__compressed_pair_elem.2.2603807" = type { %"struct.std::__1::basic_string<char>::__rep.2603808" }
+%"struct.std::__1::basic_string<char>::__rep.2603808" = type { %union.anon.2603809 }
+%union.anon.2603809 = type { %"struct.std::__1::basic_string<char>::__long.2603810" }
+%"struct.std::__1::basic_string<char>::__long.2603810" = type { %struct.anon.3.2603811, i64, ptr }
+%struct.anon.3.2603811 = type { i64 }
 
 ; 5 occurrences:
 ; mitsuba3/optimized/argparser.cpp.ll
@@ -18,7 +18,7 @@ define ptr @func0000000000000007(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = getelementptr nusw nuw %"class.std::__1::basic_string.2603838", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__1::basic_string.2603805", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
+; 2 occurrences:
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind

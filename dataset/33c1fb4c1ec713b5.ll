@@ -17,10 +17,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/vc_screen.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:

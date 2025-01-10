@@ -1,5 +1,5 @@
 
-; 181 occurrences:
+; 182 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -160,6 +160,7 @@
 ; qemu/optimized/hw_ide_core.c.ll
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/lgc.ll

@@ -19,20 +19,19 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/libahci.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/LLParser.cpp.ll
-; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
-  %3 = and i64 %2, 4278190079
-  %4 = or disjoint i64 %3, 16777216
+  %3 = and i64 %2, 4294967295
+  %4 = or disjoint i64 %3, 4294967296
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll

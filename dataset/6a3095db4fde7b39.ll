@@ -1,15 +1,15 @@
 
-%"class.std::map.2695442" = type { %"class.std::_Rb_tree.2695443" }
-%"class.std::_Rb_tree.2695443" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" }
-%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" = type { %"struct.std::_Rb_tree_key_compare.2695445", %"struct.std::_Rb_tree_header.2695446" }
-%"struct.std::_Rb_tree_key_compare.2695445" = type { %"struct.std::less.2695447" }
-%"struct.std::less.2695447" = type { i8 }
-%"struct.std::_Rb_tree_header.2695446" = type { %"struct.std::_Rb_tree_node_base.2695448", i64 }
-%"struct.std::_Rb_tree_node_base.2695448" = type { i32, ptr, ptr, ptr }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
-%union.RelptrFreePageBtree.3653937 = type { ptr }
+%"class.std::map.2695408" = type { %"class.std::_Rb_tree.2695409" }
+%"class.std::_Rb_tree.2695409" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695410" }
+%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695410" = type { %"struct.std::_Rb_tree_key_compare.2695411", %"struct.std::_Rb_tree_header.2695412" }
+%"struct.std::_Rb_tree_key_compare.2695411" = type { %"struct.std::less.2695413" }
+%"struct.std::less.2695413" = type { i8 }
+%"struct.std::_Rb_tree_header.2695412" = type { %"struct.std::_Rb_tree_node_base.2695414", i64 }
+%"struct.std::_Rb_tree_node_base.2695414" = type { i32, ptr, ptr, ptr }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.FreePageBtreeInternalKey.3653902 = type { i64, %union.RelptrFreePageBtree.3653903 }
+%union.RelptrFreePageBtree.3653903 = type { ptr }
 
 ; 49 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -308,7 +308,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 48
-  %5 = getelementptr nusw nuw [12 x %"class.std::map.2695442"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [12 x %"class.std::map.2695408"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -362,7 +362,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw [0 x %struct.jv.2821743], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [0 x %struct.jv.2821709], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -438,7 +438,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 23
-  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

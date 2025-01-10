@@ -32,9 +32,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/fse_compress.c.ll
-; icu/optimized/swapimpl.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
 ; openmpi/optimized/odls_base_default_fns.ll
 ; velox/optimized/DenseHll.cpp.ll
@@ -132,8 +131,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
+; icu/optimized/swapimpl.ll
 ; lvgl/optimized/lv_slider.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll

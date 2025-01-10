@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/scsi_ioctl.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -8,6 +9,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; stb/optimized/stb_dxt.c.ll
 ; wolfssl/optimized/asn.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:

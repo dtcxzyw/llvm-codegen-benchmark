@@ -884,6 +884,31 @@ entry:
   ret i1 %4
 }
 
+; 15 occurrences:
+; abc/optimized/abcBm.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hermes/optimized/gtest-all.cc.ll
+; hyperscan/optimized/gtest-all.cc.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; icu/optimized/usearch.ll
+; icu/optimized/ustrtrns.ll
+; memcached/optimized/memcached-slabs.ll
+; memcached/optimized/memcached_debug-slabs.ll
+; opencv/optimized/imagecut.cpp.ll
+; opencv/optimized/ts_gtest.cpp.ll
+; postgres/optimized/compression.ll
+; postgres/optimized/compression_shlib.ll
+; postgres/optimized/compression_srv.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ea(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sle i32 %0, %1
+  %3 = icmp sgt i32 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; icu/optimized/number_rounding.ll
 ; luajit/optimized/buildvm.ll
@@ -930,30 +955,6 @@ define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, -1
   %3 = icmp eq i32 %0, %1
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 14 occurrences:
-; abc/optimized/abcBm.c.ll
-; hermes/optimized/gtest-all.cc.ll
-; hyperscan/optimized/gtest-all.cc.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; icu/optimized/usearch.ll
-; icu/optimized/ustrtrns.ll
-; memcached/optimized/memcached-slabs.ll
-; memcached/optimized/memcached_debug-slabs.ll
-; opencv/optimized/imagecut.cpp.ll
-; opencv/optimized/ts_gtest.cpp.ll
-; postgres/optimized/compression.ll
-; postgres/optimized/compression_shlib.ll
-; postgres/optimized/compression_srv.ll
-; quantlib/optimized/date.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ea(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sle i32 %0, %1
-  %3 = icmp sgt i32 %0, 0
   %4 = and i1 %3, %2
   ret i1 %4
 }

@@ -55,18 +55,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; openusd/optimized/restoration.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000012a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %0, %1
-  %4 = tail call i32 @llvm.smin.i32(i32 %2, i32 %3)
-  %5 = add nsw i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
-  ret i1 %6
-}
-
 ; 4 occurrences:
 ; linux/optimized/netconsole.ll
 ; linux/optimized/tcp_output.ll

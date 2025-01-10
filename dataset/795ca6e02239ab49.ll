@@ -1,6 +1,6 @@
 
-%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
-%"struct.re2::PatchList.2601724" = type { i32, i32 }
+%"struct.re2::Frag.2601690" = type <{ i32, %"struct.re2::PatchList.2601691", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601691" = type { i32, i32 }
 
 ; 387 occurrences:
 ; arrow/optimized/builder.cc.ll
@@ -585,7 +585,7 @@ entry:
   ret ptr %3
 }
 
-; 1079 occurrences:
+; 1074 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/darPrec.c.ll
@@ -804,9 +804,6 @@ entry:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
@@ -1556,8 +1553,6 @@ entry:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/lparser.ll
 ; rocksdb/optimized/data_block_hash_index.cc.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
@@ -1669,7 +1664,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw nuw %"struct.re2::Frag.2601723", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.re2::Frag.2601690", ptr %0, i64 %2
   ret ptr %3
 }
 

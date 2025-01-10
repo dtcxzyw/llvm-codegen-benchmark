@@ -275,10 +275,14 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; cmake/optimized/sha1.c.ll
 ; darktable/optimized/introspection_vibrance.c.ll
 ; linux/optimized/ndisc.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; postgres/optimized/ginxlog.ll
 ; qemu/optimized/util_bitmap.c.ll
 ; Function Attrs: nounwind
@@ -290,7 +294,8 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; graphviz/optimized/shortest.c.ll
 ; openblas/optimized/dtrsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_RT.c.ll

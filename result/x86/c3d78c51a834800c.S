@@ -38,6 +38,13 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000d0c:                   # @func0000000000000d0c
+	cmpl	%edx, %esi
+	seta	%cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
 func0000000000000946:                   # @func0000000000000946
 	cmpl	%edx, %esi
 	setg	%cl
@@ -85,6 +92,13 @@ func0000000000000144:                   # @func0000000000000144
 	setg	%cl
 	cmpl	$-17, %edi
 	setb	%al
+	orb	%cl, %al
+	retq
+func0000000000000c2c:                   # @func0000000000000c2c
+	cmpl	%edx, %esi
+	sete	%cl
+	cmpl	$55296, %edi                    # imm = 0xD800
+	setne	%al
 	orb	%cl, %al
 	retq
 func000000000000098c:                   # @func000000000000098c

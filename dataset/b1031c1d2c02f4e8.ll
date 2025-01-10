@@ -1,5 +1,5 @@
 
-%"class.folly::Promise.2688641" = type { i8, ptr }
+%"class.folly::Promise.2688607" = type { i8, ptr }
 
 ; 3 occurrences:
 ; folly/optimized/Barrier.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = getelementptr %"class.folly::Promise.2688641", ptr %3, i64 %0
+  %4 = getelementptr %"class.folly::Promise.2688607", ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -22,7 +22,7 @@ define ptr @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 -8
-  %4 = getelementptr %"class.folly::Promise.2688641", ptr %3, i64 %0
+  %4 = getelementptr %"class.folly::Promise.2688607", ptr %3, i64 %0
   ret ptr %4
 }
 

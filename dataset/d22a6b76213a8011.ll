@@ -1,9 +1,9 @@
 
-%"struct.OT::OffsetTo.161.2729538" = type { %"struct.OT::Offset.159.2729539" }
-%"struct.OT::Offset.159.2729539" = type { %"struct.OT::IntType.152.2729540" }
-%"struct.OT::IntType.152.2729540" = type { %struct.BEInt.153.2729541 }
-%struct.BEInt.153.2729541 = type { [4 x i8] }
-%struct.SpGistLastUsedPage.3654355 = type { i32, i32 }
+%"struct.OT::OffsetTo.161.2729504" = type { %"struct.OT::Offset.159.2729505" }
+%"struct.OT::Offset.159.2729505" = type { %"struct.OT::IntType.152.2729506" }
+%"struct.OT::IntType.152.2729506" = type { %struct.BEInt.153.2729507 }
+%struct.BEInt.153.2729507 = type { [4 x i8] }
+%struct.SpGistLastUsedPage.3654321 = type { i32, i32 }
 
 ; 13 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -25,7 +25,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.161.2729538"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.161.2729504"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %6 = getelementptr [8 x %struct.SpGistLastUsedPage.3654355], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [8 x %struct.SpGistLastUsedPage.3654321], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

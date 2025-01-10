@@ -55,7 +55,7 @@ entry:
   ret i64 %3
 }
 
-; 1913 occurrences:
+; 1916 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ioReadBlif.c.ll
@@ -88,6 +88,7 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/comsm606o4zjj7a.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -157,6 +158,7 @@ entry:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
+; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
@@ -774,6 +776,7 @@ entry:
 ; linux/optimized/show_mem.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/skcipher.ll
+; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/sparse.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tcp_cubic.ll
@@ -1977,10 +1980,11 @@ entry:
   ret i64 %3
 }
 
-; 893 occurrences:
+; 895 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/pdrIncr.c.ll
@@ -2719,6 +2723,7 @@ entry:
 ; qemu/optimized/migration_block.c.ll
 ; quantlib/optimized/date.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -4088,7 +4093,7 @@ entry:
   ret i64 %3
 }
 
-; 368 occurrences:
+; 372 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -4142,6 +4147,7 @@ entry:
 ; gromacs/optimized/redistribute.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
@@ -4191,6 +4197,7 @@ entry:
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
@@ -4304,7 +4311,9 @@ entry:
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/pentago.cc.ll
 ; openspiel/optimized/skat.cc.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-lib-ocb128.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-ocb128.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
 ; openusd/optimized/instancing.cpp.ll
@@ -4491,7 +4500,7 @@ entry:
   ret i64 %3
 }
 
-; 234 occurrences:
+; 235 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -4519,6 +4528,7 @@ entry:
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; cmake/optimized/SystemTools.cxx.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/cmNinjaNormalTargetGenerator.cxx.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
@@ -4734,12 +4744,13 @@ entry:
   ret i64 %3
 }
 
-; 198 occurrences:
+; 199 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/34v80y29y6uwgxas.ll
 ; assimp/optimized/clipper.cpp.ll
 ; brotli/optimized/static_dict.c.ll
 ; c3c/optimized/bigint.c.ll
+; casadi/optimized/integrator.cpp.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll

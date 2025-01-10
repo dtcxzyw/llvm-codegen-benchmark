@@ -1,10 +1,10 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
-%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
-%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
-%"struct.std::__atomic_base.108.2637633" = type { i64 }
-%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
-%"struct.std::__atomic_base.110.2637634" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637597", %"struct.std::atomic.109.2637598" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637597" = type { %"struct.std::atomic.107.2637599" }
+%"struct.std::atomic.107.2637599" = type { %"struct.std::__atomic_base.108.2637600" }
+%"struct.std::__atomic_base.108.2637600" = type { i64 }
+%"struct.std::atomic.109.2637598" = type { %"struct.std::__atomic_base.110.2637601" }
+%"struct.std::__atomic_base.110.2637601" = type { ptr }
 
 ; 2 occurrences:
 ; jq/optimized/decNumber.ll
@@ -18,20 +18,9 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; mitsuba3/optimized/qmc.cpp.ll
-; z3/optimized/pb2bv_tactic.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 65535
-  %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 116 occurrences:
+; 117 occurrences:
 ; clamav/optimized/regexec.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; git/optimized/diff-delta.ll
 ; git/optimized/tree-walk.ll
 ; graphviz/optimized/csettings.cpp.ll
@@ -152,7 +141,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = sub i64 %1, %3
-  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -250,7 +239,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775806
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -435,17 +424,6 @@ entry:
   %3 = and i64 %2, 15
   %4 = sub nuw nsw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = sub i64 %1, %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -4,12 +4,6 @@ func0000000000000101:                   # @func0000000000000101
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000181:                   # @func0000000000000181
-	add	a1, a1, a2
-	addi	a1, a1, 5
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
 func0000000000000185:                   # @func0000000000000185
 	add	a1, a1, a2
 	addi	a1, a1, 4

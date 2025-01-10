@@ -14,7 +14,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; git/optimized/date.ll
@@ -22,7 +22,6 @@ entry:
 ; libquic/optimized/url_parse.cc.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; openblas/optimized/dlarre.c.ll
 ; openjdk/optimized/DrawPolygons.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_compile.ll

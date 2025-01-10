@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 181 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -157,7 +157,6 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

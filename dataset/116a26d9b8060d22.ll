@@ -197,11 +197,10 @@ entry:
   ret i1 %5
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll

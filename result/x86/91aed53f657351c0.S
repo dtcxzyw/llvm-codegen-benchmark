@@ -3,17 +3,17 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movq	%rdx, %rax
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdx, %rax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
+	movq	%rdx, %rax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	movq	%rdx, %rax
 	testb	$1, %dil
 	cmovel	%esi, %eax

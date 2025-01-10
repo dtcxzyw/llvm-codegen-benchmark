@@ -1,5 +1,6 @@
 
-; 148 occurrences:
+; 150 occurrences:
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -74,6 +75,7 @@
 ; openblas/optimized/dstebz.c.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openexr/optimized/ImfRle.cpp.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/FourByteAbgrPre.ll

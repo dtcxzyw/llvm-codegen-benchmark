@@ -1,5 +1,5 @@
 
-%struct.CommentItem.3652820 = type { ptr, i32, i32, i32 }
+%struct.CommentItem.3652786 = type { ptr, i32, i32, i32 }
 
 ; 34 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -62,7 +62,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.CommentItem.3652820, ptr %0, i64 %2
+  %3 = getelementptr %struct.CommentItem.3652786, ptr %0, i64 %2
   %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }

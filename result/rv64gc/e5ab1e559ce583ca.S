@@ -50,6 +50,14 @@ func0000000000000186:                   # @func0000000000000186
 	and	a1, a1, a2
 	slt	a0, a0, a1
 	ret
+func0000000000000184:                   # @func0000000000000184
+	sext.w	a2, a2
+	li	a3, 2
+	bne	a2, a3, .LBB6_2
+	li	a1, 6
+.LBB6_2:                                # %entry
+	sltu	a0, a0, a1
+	ret
 func0000000000000146:                   # @func0000000000000146
 	sext.w	a2, a2
 	slti	a2, a2, 100
@@ -67,9 +75,9 @@ func000000000000018a:                   # @func000000000000018a
 func0000000000000026:                   # @func0000000000000026
 	sext.w	a2, a2
 	li	a3, 1
-	beq	a2, a3, .LBB8_2
+	beq	a2, a3, .LBB9_2
 	li	a1, 1
-.LBB8_2:                                # %entry
+.LBB9_2:                                # %entry
 	slt	a0, a0, a1
 	ret
 func0000000000000148:                   # @func0000000000000148

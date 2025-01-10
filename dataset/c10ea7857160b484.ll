@@ -52,10 +52,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
-; llama.cpp/optimized/ggml.c.ll
 ; openjdk/optimized/X11Renderer.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
@@ -66,12 +65,11 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/double-to-string.cc.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; gromacs/optimized/gmx_sham.cpp.ll

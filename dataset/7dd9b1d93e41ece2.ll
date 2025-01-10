@@ -1,5 +1,5 @@
 
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 9 occurrences:
 ; clamav/optimized/autoit.c.ll
@@ -70,7 +70,7 @@ define i64 @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %4 = getelementptr %struct.JSShapeProperty.3435093, ptr %3, i64 %2
+  %4 = getelementptr %struct.JSShapeProperty.3435059, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -8
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

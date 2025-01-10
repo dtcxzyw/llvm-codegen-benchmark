@@ -15,9 +15,10 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/kobject.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
 ; php/optimized/dtoa.ll
 ; postgres/optimized/execute.ll

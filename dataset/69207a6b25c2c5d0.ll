@@ -1972,9 +1972,8 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll

@@ -5,3 +5,9 @@ func000000000000000e:                   # @func000000000000000e
 	shll	$9, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	cmpl	$1, %esi
+	movl	$3, %eax
+	sbbl	$0, %eax
+	orl	%edi, %eax
+	retq

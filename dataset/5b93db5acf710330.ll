@@ -1,10 +1,9 @@
 
-; 431 occurrences:
+; 430 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cmd.c.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/giaEra.c.ll
-; abc/optimized/giaSwitch.c.ll
 ; arrow/optimized/double-to-string.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -442,7 +441,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 318 occurrences:
+; 317 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -664,7 +663,6 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/simple_adaptive_binarizer.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/Any3Byte.ll
@@ -769,7 +767,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -779,7 +777,6 @@ entry:
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaTruth.c.ll
-; abc/optimized/sbdPath.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/compilationPolicy.ll

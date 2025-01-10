@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 106 occurrences:
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/args_handling.ll
 ; boost/optimized/async.ll
@@ -86,6 +86,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; node/optimized/libnode.Protocol.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; opencv/optimized/persistence.cpp.ll

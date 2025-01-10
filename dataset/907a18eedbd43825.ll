@@ -1005,9 +1005,10 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cpython/optimized/bytearrayobject.ll

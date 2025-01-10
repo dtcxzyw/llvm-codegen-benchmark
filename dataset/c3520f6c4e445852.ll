@@ -1,32 +1,32 @@
 
-%"class.WasmEdge::Variant.2772702" = type { %"union.WasmEdge::VariadicUnion.2772703" }
-%"union.WasmEdge::VariadicUnion.2772703" = type { %"union.WasmEdge::VariadicUnion.50.2772704" }
-%"union.WasmEdge::VariadicUnion.50.2772704" = type { %"union.WasmEdge::VariadicUnion.51.2772705" }
-%"union.WasmEdge::VariadicUnion.51.2772705" = type { %"union.WasmEdge::VariadicUnion.52.2772706" }
-%"union.WasmEdge::VariadicUnion.52.2772706" = type { %"union.WasmEdge::VariadicUnion.53.2772707" }
-%"union.WasmEdge::VariadicUnion.53.2772707" = type { %"union.WasmEdge::VariadicUnion.54.2772708" }
-%"union.WasmEdge::VariadicUnion.54.2772708" = type { %"union.WasmEdge::VariadicUnion.55.2772709" }
-%"union.WasmEdge::VariadicUnion.55.2772709" = type { i128 }
-%"struct.Assimp::Blender::MCol.2828839" = type <{ %"struct.Assimp::Blender::ElemBase.2828715", i8, i8, i8, i8, [4 x i8] }>
-%"struct.Assimp::Blender::ElemBase.2828715" = type { ptr, ptr }
-%"class.llvm::MachineOperand.3336210" = type { i32, %union.anon.269.3336211, ptr, %"union.llvm::MachineOperand::ContentsUnion.3336212" }
-%union.anon.269.3336211 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3336212" = type { %"class.llvm::ArrayRef.270.3336213" }
-%"class.llvm::ArrayRef.270.3336213" = type { ptr, i64 }
-%struct.netdev_queue.3545812 = type { ptr, %struct.netdevice_tracker.3545813, ptr, ptr, %struct.kobject.3545814, i32, i64, %struct.atomic64_t.3545815, ptr, ptr, %struct.spinlock.3545766, i32, i64, i64, [40 x i8], %struct.dql.3545816 }
-%struct.netdevice_tracker.3545813 = type {}
-%struct.kobject.3545814 = type { ptr, %struct.list_head.3545767, ptr, ptr, ptr, ptr, %struct.kref.3545817, i8 }
-%struct.list_head.3545767 = type { ptr, ptr }
-%struct.kref.3545817 = type { %struct.refcount_struct.3545818 }
-%struct.refcount_struct.3545818 = type { %struct.atomic_t.3545772 }
-%struct.atomic_t.3545772 = type { i32 }
-%struct.atomic64_t.3545815 = type { i64 }
-%struct.spinlock.3545766 = type { %union.anon.0.3545768 }
-%union.anon.0.3545768 = type { %struct.raw_spinlock.3545769 }
-%struct.raw_spinlock.3545769 = type { %struct.qspinlock.3545770 }
-%struct.qspinlock.3545770 = type { %union.anon.1.3545771 }
-%union.anon.1.3545771 = type { %struct.atomic_t.3545772 }
-%struct.dql.3545816 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
+%"class.WasmEdge::Variant.2772668" = type { %"union.WasmEdge::VariadicUnion.2772669" }
+%"union.WasmEdge::VariadicUnion.2772669" = type { %"union.WasmEdge::VariadicUnion.50.2772670" }
+%"union.WasmEdge::VariadicUnion.50.2772670" = type { %"union.WasmEdge::VariadicUnion.51.2772671" }
+%"union.WasmEdge::VariadicUnion.51.2772671" = type { %"union.WasmEdge::VariadicUnion.52.2772672" }
+%"union.WasmEdge::VariadicUnion.52.2772672" = type { %"union.WasmEdge::VariadicUnion.53.2772673" }
+%"union.WasmEdge::VariadicUnion.53.2772673" = type { %"union.WasmEdge::VariadicUnion.54.2772674" }
+%"union.WasmEdge::VariadicUnion.54.2772674" = type { %"union.WasmEdge::VariadicUnion.55.2772675" }
+%"union.WasmEdge::VariadicUnion.55.2772675" = type { i128 }
+%"struct.Assimp::Blender::MCol.2828805" = type <{ %"struct.Assimp::Blender::ElemBase.2828681", i8, i8, i8, i8, [4 x i8] }>
+%"struct.Assimp::Blender::ElemBase.2828681" = type { ptr, ptr }
+%"class.llvm::MachineOperand.3336176" = type { i32, %union.anon.269.3336177, ptr, %"union.llvm::MachineOperand::ContentsUnion.3336178" }
+%union.anon.269.3336177 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3336178" = type { %"class.llvm::ArrayRef.270.3336179" }
+%"class.llvm::ArrayRef.270.3336179" = type { ptr, i64 }
+%struct.netdev_queue.3545778 = type { ptr, %struct.netdevice_tracker.3545779, ptr, ptr, %struct.kobject.3545780, i32, i64, %struct.atomic64_t.3545781, ptr, ptr, %struct.spinlock.3545732, i32, i64, i64, [40 x i8], %struct.dql.3545782 }
+%struct.netdevice_tracker.3545779 = type {}
+%struct.kobject.3545780 = type { ptr, %struct.list_head.3545733, ptr, ptr, ptr, ptr, %struct.kref.3545783, i8 }
+%struct.list_head.3545733 = type { ptr, ptr }
+%struct.kref.3545783 = type { %struct.refcount_struct.3545784 }
+%struct.refcount_struct.3545784 = type { %struct.atomic_t.3545738 }
+%struct.atomic_t.3545738 = type { i32 }
+%struct.atomic64_t.3545781 = type { i64 }
+%struct.spinlock.3545732 = type { %union.anon.0.3545734 }
+%union.anon.0.3545734 = type { %struct.raw_spinlock.3545735 }
+%struct.raw_spinlock.3545735 = type { %struct.qspinlock.3545736 }
+%struct.qspinlock.3545736 = type { %union.anon.1.3545737 }
+%union.anon.1.3545737 = type { %struct.atomic_t.3545738 }
+%struct.dql.3545782 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
 
 ; 1 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
@@ -53,7 +53,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"class.WasmEdge::Variant.2772702", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.WasmEdge::Variant.2772668", ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -72,7 +72,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nuw %"struct.Assimp::Blender::MCol.2828839", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.Assimp::Blender::MCol.2828805", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -101,7 +101,7 @@ define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %"class.llvm::MachineOperand.3336210", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.llvm::MachineOperand.3336176", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -112,7 +112,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.netdev_queue.3545812, ptr %0, i64 %4, i32 15
+  %5 = getelementptr %struct.netdev_queue.3545778, ptr %0, i64 %4, i32 15
   ret ptr %5
 }
 

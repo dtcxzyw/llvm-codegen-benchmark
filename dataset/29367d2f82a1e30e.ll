@@ -1,6 +1,6 @@
 
-%struct.NvmeFdpEvent.2708956 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
-%"class.llvm::Use.3230429" = type { ptr, ptr, ptr, ptr }
+%struct.NvmeFdpEvent.2708922 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
+%"class.llvm::Use.3230395" = type { ptr, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
@@ -25,7 +25,7 @@ entry:
   %2 = sub i32 63, %1
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 64
-  %5 = getelementptr %struct.NvmeFdpEvent.2708956, ptr %4, i64 %3
+  %5 = getelementptr %struct.NvmeFdpEvent.2708922, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -80,7 +80,7 @@ entry:
   %2 = sub i32 1, %1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 -64
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3230429", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3230395", ptr %4, i64 %3
   ret ptr %5
 }
 

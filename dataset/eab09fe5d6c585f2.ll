@@ -1,9 +1,9 @@
 
-%"class.icu_75::UnicodeString.3718191" = type { %"class.icu_75::Replaceable.3718192", %"union.icu_75::UnicodeString::StackBufferOrFields.3718193" }
-%"class.icu_75::Replaceable.3718192" = type { %"class.icu_75::UObject.3718194" }
-%"class.icu_75::UObject.3718194" = type { ptr }
-%"union.icu_75::UnicodeString::StackBufferOrFields.3718193" = type { %struct.anon.0.3718195, [32 x i8] }
-%struct.anon.0.3718195 = type { i16, i32, i32, ptr }
+%"class.icu_75::UnicodeString.3718141" = type { %"class.icu_75::Replaceable.3718142", %"union.icu_75::UnicodeString::StackBufferOrFields.3718143" }
+%"class.icu_75::Replaceable.3718142" = type { %"class.icu_75::UObject.3718144" }
+%"class.icu_75::UObject.3718144" = type { ptr }
+%"union.icu_75::UnicodeString::StackBufferOrFields.3718143" = type { %struct.anon.0.3718145, [32 x i8] }
+%struct.anon.0.3718145 = type { i16, i32, i32, ptr }
 
 ; 4 occurrences:
 ; cmake/optimized/index.c.ll
@@ -28,7 +28,7 @@ entry:
 define ptr @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, 17
-  %4 = getelementptr nusw nuw [29 x %"class.icu_75::UnicodeString.3718191"], ptr %2, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [29 x %"class.icu_75::UnicodeString.3718141"], ptr %2, i64 0, i64 %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6

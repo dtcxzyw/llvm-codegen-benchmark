@@ -34,7 +34,7 @@ entry:
   ret i32 %5
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/huffman.c.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -46,6 +46,7 @@ entry:
 ; git/optimized/index-pack.ll
 ; graphviz/optimized/pack.c.ll
 ; gromacs/optimized/energyoutput.cpp.ll
+; gromacs/optimized/libxdrf.cpp.ll
 ; gromacs/optimized/mdebin_bar.cpp.ll
 ; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/ndisc.ll

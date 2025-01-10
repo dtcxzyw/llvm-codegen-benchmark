@@ -1,5 +1,5 @@
 
-; 402 occurrences:
+; 403 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaEdge.c.ll
@@ -372,6 +372,7 @@
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; wireshark/optimized/tshark.c.ll
+; wolfssl/optimized/api.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll

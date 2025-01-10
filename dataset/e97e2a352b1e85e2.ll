@@ -1,7 +1,7 @@
 
-%struct.s_hv.2872359 = type { float, float }
-%"struct.Gluco2::Solver::JustKey.2877453" = type { double, i32, i32 }
-%struct.pcpu_block_md.3538033 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.s_hv.2872325 = type { float, float }
+%"struct.Gluco2::Solver::JustKey.2877419" = type { double, i32, i32 }
+%struct.pcpu_block_md.3537999 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -11,7 +11,7 @@ entry:
   %2 = add i32 %1, -161
   %3 = ashr i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.s_hv.2872359, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.s_hv.2872325, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -28,7 +28,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = ashr i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.Gluco2::Solver::JustKey.2877453", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.Gluco2::Solver::JustKey.2877419", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -40,7 +40,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = ashr i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %4, i32 3
+  %5 = getelementptr %struct.pcpu_block_md.3537999, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -52,7 +52,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = ashr i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %4
+  %5 = getelementptr %struct.pcpu_block_md.3537999, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
 }

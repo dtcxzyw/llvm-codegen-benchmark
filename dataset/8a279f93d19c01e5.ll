@@ -10,14 +10,11 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cpython/optimized/basearith.ll
 ; git/optimized/fast-import.ll
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
@@ -32,8 +29,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_cert_comp.ll
 ; openusd/optimized/json.cpp.ll
 ; quickjs/optimized/libbf.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/large.ll
@@ -120,8 +115,18 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 11 occurrences:
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/mpih-div.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:

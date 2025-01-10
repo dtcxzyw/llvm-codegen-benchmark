@@ -56,3 +56,11 @@ func000000000000006c:                   # @func000000000000006c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+func0000000000000048:                   # @func0000000000000048
+	andi	a2, a2, 1
+	add	a0, a0, a2
+	li	a2, -7
+	srli	a2, a2, 1
+	and	a1, a1, a2
+	sltu	a0, a1, a0
+	ret

@@ -46,13 +46,14 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/intel_pch_refclk.ll
+; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xhci-mem.ll
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll

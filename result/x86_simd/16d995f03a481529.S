@@ -260,18 +260,18 @@ func000000000000010c:                   # @func000000000000010c
 	vzeroupper
 	retq
 .LCPI16_0:
-	.quad	19                              # 0x13
-func0000000000000286:                   # @func0000000000000286
-	vpmovb2m	%xmm0, %k1
-	vpcmpltuq	.LCPI16_0(%rip){1to4}, %ymm1, %k0 {%k1}
+	.quad	12279                           # 0x2ff7
+func00000000000000cc:                   # @func00000000000000cc
+	vptestmb	%xmm0, %xmm0, %k1
+	vpcmpltq	.LCPI16_0(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI17_0:
-	.quad	8190                            # 0x1ffe
-func00000000000000cc:                   # @func00000000000000cc
-	vptestmb	%xmm0, %xmm0, %k1
-	vpcmpltq	.LCPI17_0(%rip){1to4}, %ymm1, %k0 {%k1}
+	.quad	19                              # 0x13
+func0000000000000286:                   # @func0000000000000286
+	vpmovb2m	%xmm0, %k1
+	vpcmpltuq	.LCPI17_0(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

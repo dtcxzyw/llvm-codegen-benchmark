@@ -84,10 +84,11 @@ entry:
   ret i32 %5
 }
 
-; 89 occurrences:
+; 90 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/wlcNtk.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll

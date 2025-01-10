@@ -19,14 +19,11 @@ func0000000000000318:                   # @func0000000000000318
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
-.LCPI2_0:
-	.long	2                               # 0x2
 func0000000000000042:                   # @func0000000000000042
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vptestnmd	%ymm2, %ymm2, %k1 {%k1}
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpor	%ymm1, %ymm2, %ymm0
+	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/initramfs.ll
@@ -7,10 +7,6 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/pci.c.ll
 ; ruby/optimized/bignum.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -52,8 +48,12 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:

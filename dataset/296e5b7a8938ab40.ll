@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3778048" = type { float, float }
+%"class.cv::Point_.3777998" = type { float, float }
 
 ; 16 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -96,7 +96,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.cv::Point_.3778048", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::Point_.3777998", ptr %0, i64 %5
   ret ptr %6
 }
 

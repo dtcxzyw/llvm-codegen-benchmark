@@ -1,9 +1,8 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

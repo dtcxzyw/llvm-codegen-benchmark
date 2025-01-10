@@ -1,19 +1,19 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%"class.mold::LittleEndian.2666054" = type { [4 x i8] }
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2730954" = type { i32, i8, i8 }
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%"class.mold::LittleEndian.2666021" = type { [4 x i8] }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2730920" = type { i32, i8, i8 }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
 
 ; 11 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -31,8 +31,8 @@
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %1, i64 %3
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %0, i32 0, i32 1
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %1, i64 %3
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -203,8 +203,8 @@ entry:
 define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %1, i64 %3
-  %5 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %4, i64 %0, i32 2
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %1, i64 %3
+  %5 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %4, i64 %0, i32 2
   ret ptr %5
 }
 
@@ -512,7 +512,7 @@ define ptr @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -12
   ret ptr %6
 }
@@ -535,7 +535,7 @@ define ptr @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %"class.mold::LittleEndian.2666054", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.mold::LittleEndian.2666021", ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
@@ -568,7 +568,7 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr %struct.direntry_t.2705800, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.direntry_t.2705766, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -581,7 +581,7 @@ define ptr @func000000000000004f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730954", ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730920", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -660,7 +660,7 @@ entry:
 define ptr @func000000000000007b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2792291, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 29
   ret ptr %6
@@ -866,8 +866,8 @@ entry:
 define ptr @func000000000000007a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876713, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876679, ptr %1, i64 %3
+  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876679, ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }

@@ -15,6 +15,11 @@ func0000000000000010:                   # @func0000000000000010
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000001d:                   # @func000000000000001d
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func0000000000000050:                   # @func0000000000000050
 	movswq	%dx, %rax
 	shlq	$32, %rax
@@ -22,11 +27,6 @@ func0000000000000050:                   # @func0000000000000050
 	addq	%rsi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	movslq	%edx, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
-	retq
-func000000000000001d:                   # @func000000000000001d
 	movslq	%edx, %rax
 	addq	%rdi, %rax
 	addq	%rsi, %rax

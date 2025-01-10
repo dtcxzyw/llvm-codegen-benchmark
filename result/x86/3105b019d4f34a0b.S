@@ -4,16 +4,16 @@ func0000000000000484:                   # @func0000000000000484
 	cmpl	$3, %edi
 	setb	%al
 	retq
+func00000000000006a1:                   # @func00000000000006a1
+	incl	%esi
+	cmpl	%esi, %edi
+	sete	%al
+	retq
 func0000000000000084:                   # @func0000000000000084
 	subl	%esi, %edi
 	incl	%edi
 	cmpl	$3, %edi
 	setb	%al
-	retq
-func00000000000006a1:                   # @func00000000000006a1
-	subl	%esi, %edi
-	cmpl	$37, %edi
-	sete	%al
 	retq
 func0000000000000406:                   # @func0000000000000406
 	subl	%esi, %edi

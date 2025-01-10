@@ -1,5 +1,5 @@
 
-; 531 occurrences:
+; 528 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -325,9 +325,6 @@
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openvdb/optimized/Merge.cc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll

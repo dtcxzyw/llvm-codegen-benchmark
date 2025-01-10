@@ -1043,81 +1043,7 @@ entry:
   ret i1 %5
 }
 
-; 64 occurrences:
-; casadi/optimized/cvodes_band.c.ll
-; casadi/optimized/idas_band.c.ll
-; casadi/optimized/kinsol_band.c.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/manifold.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; cpython/optimized/rangeobject.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; gromacs/optimized/tng_io.c.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
-; llvm/optimized/Record.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
-; slurm/optimized/bitstring.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, 0
-  %4 = icmp slt i64 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 59 occurrences:
+; 57 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -1166,8 +1092,6 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/Record.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -1272,6 +1196,67 @@ define i1 @func0000000000000147(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = icmp sle i64 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 51 occurrences:
+; casadi/optimized/cvodes_band.c.ll
+; casadi/optimized/idas_band.c.ll
+; casadi/optimized/kinsol_band.c.ll
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cpython/optimized/rangeobject.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; gromacs/optimized/tng_io.c.ll
+; llvm/optimized/Record.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; slurm/optimized/bitstring.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, 0
+  %4 = icmp slt i64 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

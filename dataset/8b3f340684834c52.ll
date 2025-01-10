@@ -29,15 +29,4 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
-  ret i1 %5
-}
-
 attributes #0 = { nounwind }

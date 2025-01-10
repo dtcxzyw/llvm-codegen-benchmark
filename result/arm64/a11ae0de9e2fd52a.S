@@ -72,11 +72,10 @@ func0000000000000034:                   // @func0000000000000034
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #8                          // =0x8
-	cmp	w0, #2
-	mov	w9, #6                          // =0x6
+	mov	w8, #4                          // =0x4
+	cmp	w0, #0
 	lsl	x8, x8, x1
-	csel	x0, x9, x8, eq
+	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function
 func0000000000000058:                   // @func0000000000000058

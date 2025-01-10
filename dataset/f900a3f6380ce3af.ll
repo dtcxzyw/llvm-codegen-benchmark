@@ -1,14 +1,16 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; abc/optimized/fretMain.c.ll
 ; freetype/optimized/psaux.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/seq_memory.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll

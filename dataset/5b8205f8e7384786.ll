@@ -1,15 +1,15 @@
 
-%"struct.rocksdb::clock_cache::FixedHyperClockTable::HandleImpl.2630066" = type <{ %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::RelaxedAtomic.2.2630068", i8, [11 x i8] }>
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"class.rocksdb::RelaxedAtomic.2.2630068" = type { %"struct.std::atomic.3.2630073" }
-%"struct.std::atomic.3.2630073" = type { %"struct.std::__atomic_base.4.2630074" }
-%"struct.std::__atomic_base.4.2630074" = type { i32 }
+%"struct.rocksdb::clock_cache::FixedHyperClockTable::HandleImpl.2630033" = type <{ %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::RelaxedAtomic.2.2630035", i8, [11 x i8] }>
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"class.rocksdb::RelaxedAtomic.2.2630035" = type { %"struct.std::atomic.3.2630040" }
+%"struct.std::atomic.3.2630040" = type { %"struct.std::__atomic_base.4.2630041" }
+%"struct.std::__atomic_base.4.2630041" = type { i32 }
 
 ; 65 occurrences:
 ; abc/optimized/dauNpn.c.ll
@@ -82,7 +82,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw %"struct.rocksdb::clock_cache::FixedHyperClockTable::HandleImpl.2630066", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::clock_cache::FixedHyperClockTable::HandleImpl.2630033", ptr %0, i64 %4
   ret ptr %5
 }
 

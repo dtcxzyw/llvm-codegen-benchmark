@@ -13,12 +13,16 @@ func0000000000000029:                   # @func0000000000000029
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	seqz	a1, a1
-	lui	a2, 12
+	lui	a2, 131072
+	beqz	a1, .LBB2_2
+	li	a2, 65
+	slli	a2, a2, 29
+.LBB2_2:                                # %entry
+	lui	a1, 969727
+	slli	a1, a1, 4
 	addi	a1, a1, -1
-	and	a1, a1, a2
-	lui	a2, 1048572
-	addiw	a2, a2, -1
-	and	a0, a0, a2
-	or	a0, a0, a1
+	slli	a1, a1, 13
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	or	a0, a0, a2
 	ret

@@ -16,10 +16,13 @@ func0000000000000004:                   # @func0000000000000004
 	addq	%rdi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	shrl	$31, %eax
-	addl	%esi, %eax
-	andl	$-2, %eax
+	movslq	%esi, %rax
+	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
+	movq	%rax, %rcx
+	shrq	$63, %rcx
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	addl	%eax, %eax
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq

@@ -1,7 +1,7 @@
 
-%"class.openvdb::v11_0::math::Vec3.236.2716960" = type { %"class.openvdb::v11_0::math::Tuple.237.2716961" }
-%"class.openvdb::v11_0::math::Tuple.237.2716961" = type { [3 x float] }
-%"class.gmx::BasicVector.94.3354019" = type { [3 x float] }
+%"class.openvdb::v11_0::math::Vec3.236.2716926" = type { %"class.openvdb::v11_0::math::Tuple.237.2716927" }
+%"class.openvdb::v11_0::math::Tuple.237.2716927" = type { [3 x float] }
+%"class.gmx::BasicVector.94.3353985" = type { [3 x float] }
 
 ; 2 occurrences:
 ; opencv/optimized/gpc_evaluate.cpp.ll
@@ -10,7 +10,7 @@
 define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"class.openvdb::v11_0::math::Vec3.236.2716960", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.openvdb::v11_0::math::Vec3.236.2716926", ptr %1, i64 %3
   %5 = getelementptr nusw nuw [3 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -23,7 +23,7 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw %"class.gmx::BasicVector.94.3354019", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.gmx::BasicVector.94.3353985", ptr %1, i64 %3
   %5 = getelementptr nusw nuw [3 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

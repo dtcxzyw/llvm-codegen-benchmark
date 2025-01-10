@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2800706" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800708", i64, %union.anon.2800709 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800708" = type { ptr }
-%union.anon.2800709 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2800672" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800674", i64, %union.anon.2800675 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2800674" = type { ptr }
+%union.anon.2800675 = type { i64, [8 x i8] }
 
 ; 15 occurrences:
 ; git/optimized/diff-delta.ll
@@ -37,7 +37,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2800706", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2800672", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = icmp eq ptr %4, %0
   ret i1 %5

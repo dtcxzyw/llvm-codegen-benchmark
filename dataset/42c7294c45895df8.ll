@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; boost/optimized/src.ll
@@ -40,6 +40,7 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/Format.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
@@ -86,7 +87,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/badblocks.ll
@@ -94,7 +95,6 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

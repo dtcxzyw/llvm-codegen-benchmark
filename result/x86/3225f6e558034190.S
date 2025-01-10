@@ -494,6 +494,16 @@ func000000000000298a:                   # @func000000000000298a
 	andb	%cl, %al
 	andb	%dl, %al
 	retq
+func00000000000018c1:                   # @func00000000000018c1
+	cmpl	$255, %edx
+	setl	%al
+	cmpl	$255, %esi
+	setl	%cl
+	andb	%al, %cl
+	testl	%edi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
 func0000000000001886:                   # @func0000000000001886
 	cmpl	$128, %edx
 	setl	%cl

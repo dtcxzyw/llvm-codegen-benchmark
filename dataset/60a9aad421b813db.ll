@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 94 occurrences:
 ; assimp/optimized/STLLoader.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
@@ -64,7 +64,6 @@
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openexr/optimized/decoding.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/generic_xlog.ll

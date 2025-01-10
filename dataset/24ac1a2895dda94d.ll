@@ -1,7 +1,7 @@
 
-%struct.Gia_Obj_t_.2875971 = type <{ i64, i32 }>
-%struct.Wlc_Obj_t_.2876161 = type { i16, i32, i32, i32, %union.anon.2876162 }
-%union.anon.2876162 = type { [1 x ptr] }
+%struct.Gia_Obj_t_.2875937 = type <{ i64, i32 }>
+%struct.Wlc_Obj_t_.2876127 = type { i16, i32, i32, i32, %union.anon.2876128 }
+%union.anon.2876128 = type { [1 x ptr] }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_audio_intel-hda.c.ll
@@ -163,7 +163,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2875971, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2875937, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, 12
@@ -211,7 +211,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Wlc_Obj_t_.2876161, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Wlc_Obj_t_.2876127, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, 24

@@ -501,11 +501,10 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; icu/optimized/decNumber.ll
 ; icu/optimized/uts46.ll
 ; jq/optimized/decNumber.ll
-; linux/optimized/trace_output.ll
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; spike/optimized/csrs.ll

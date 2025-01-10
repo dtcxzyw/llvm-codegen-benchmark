@@ -1,7 +1,7 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
-%struct.GCRef.3680589 = type { i64 }
-%struct.GCRef.3680642 = type { i64 }
+%class.btVector3.2818110 = type { [4 x float] }
+%struct.GCRef.3680539 = type { i64 }
+%struct.GCRef.3680592 = type { i64 }
 
 ; 80 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -90,7 +90,7 @@ entry:
   %3 = icmp eq i64 %2, 3
   %4 = select i1 %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818110], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -129,7 +129,7 @@ entry:
   %3 = icmp ult i64 %2, -13
   %4 = select i1 %3, i64 35, i64 %1
   %5 = getelementptr nusw i8, ptr %0, i64 -304
-  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680589], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680539], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -144,7 +144,7 @@ entry:
   %3 = icmp ult i64 %2, -13
   %4 = select i1 %3, i64 35, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 424
-  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680642], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680592], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

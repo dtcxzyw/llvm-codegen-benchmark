@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector2d.2702129" = type { i32, i32 }
+%"class.irr::core::vector2d.2702095" = type { i32, i32 }
 
 ; 1 occurrences:
 ; minetest/optimized/CGUISpriteBank.cpp.ll
@@ -10,7 +10,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = tail call i32 @llvm.umin.i32(i32 %1, i32 %4)
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.irr::core::vector2d.2702129", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.irr::core::vector2d.2702095", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -21,8 +21,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
+; nuttx/optimized/wd_start.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
 entry:

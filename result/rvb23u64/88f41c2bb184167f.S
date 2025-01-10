@@ -30,15 +30,15 @@ func0000000000000030:                   # @func0000000000000030
 	zext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func00000000000000dd:                   # @func00000000000000dd
-	sh3add	a0, a0, a1
-	slli	a0, a0, 3
-	addi	a0, a0, 760
-	ret
 func00000000000000ff:                   # @func00000000000000ff
 	sh1add	a0, a0, a1
 	slli	a0, a0, 3
 	addi	a0, a0, 32
+	ret
+func00000000000000dd:                   # @func00000000000000dd
+	sh1add	a0, a0, a1
+	slli	a0, a0, 2
+	addi	a0, a0, 64
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sh1add	a0, a0, a1

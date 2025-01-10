@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 154 occurrences:
 ; abc/optimized/abcFxu.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/ioWriteDot.c.ll
@@ -98,7 +98,9 @@
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/_ssl.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/poll.ll

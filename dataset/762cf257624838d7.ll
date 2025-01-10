@@ -1,5 +1,5 @@
 
-; 1706 occurrences:
+; 1708 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -313,6 +313,7 @@
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/mszipd.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/sis.c.ll
 ; clamav/optimized/timefn.cpp.ll
 ; clamav/optimized/upack.c.ll
@@ -1314,6 +1315,7 @@
 ; php/optimized/array.ll
 ; php/optimized/basic_functions.ll
 ; php/optimized/block_pass.ll
+; php/optimized/crypt_blowfish.ll
 ; php/optimized/crypt_freesec.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/dfa_pass.ll
@@ -1854,7 +1856,7 @@ entry:
   ret i32 %2
 }
 
-; 1239 occurrences:
+; 1237 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -2388,7 +2390,6 @@ entry:
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -2413,7 +2414,6 @@ entry:
 ; node/optimized/libnode.string_bytes.ll
 ; node/optimized/simdutf.ll
 ; nom-rs/optimized/2mhjsvr4l103ztah.ll
-; nuklear/optimized/unity.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll

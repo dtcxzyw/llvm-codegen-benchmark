@@ -1,8 +1,9 @@
 
-; 152 occurrences:
+; 143 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
+; cpython/optimized/listobject.ll
 ; cpython/optimized/multibytecodec.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/sre.ll
@@ -93,17 +94,10 @@
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/state.ll
 ; php/optimized/streams.ll
-; postgres/optimized/bootparse.ll
 ; postgres/optimized/copyto.ll
-; postgres/optimized/exprparse.ll
 ; postgres/optimized/formatting.ll
-; postgres/optimized/gram.ll
-; postgres/optimized/jsonpath_gram.ll
 ; postgres/optimized/pg_dump.ll
-; postgres/optimized/pl_gram.ll
 ; postgres/optimized/pl_scanner.ll
-; postgres/optimized/predicate.ll
-; postgres/optimized/preproc.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/prompt.ll
 ; postgres/optimized/qsort.ll
@@ -113,9 +107,6 @@
 ; postgres/optimized/qsort_interruptible.ll
 ; postgres/optimized/qsort_shlib.ll
 ; postgres/optimized/qsort_srv.ll
-; postgres/optimized/repl_gram.ll
-; postgres/optimized/specparse.ll
-; postgres/optimized/syncrep_gram.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -155,7 +146,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i16, ptr %1, i64 %2
+  %3 = getelementptr i8, ptr %1, i64 %2
   %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }
@@ -362,6 +353,7 @@ entry:
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/phpdbg_watch.ll
 ; postgres/optimized/backup_label.ll
+; postgres/optimized/dynahash.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/fd.ll
 ; postgres/optimized/formatting.ll
@@ -377,7 +369,6 @@ entry:
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/pl_scanner.ll
 ; postgres/optimized/pqcomm.ll
-; postgres/optimized/predicate.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/ps_status.ll
 ; postgres/optimized/qsort.ll
@@ -581,7 +572,7 @@ entry:
   ret i1 %4
 }
 
-; 1776 occurrences:
+; 1777 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -2283,6 +2274,7 @@ entry:
 ; xgboost/optimized/gradient_index_page_source.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/io.cc.ll
+; xgboost/optimized/json.cc.ll
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/loop.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -2589,7 +2581,7 @@ entry:
   ret i1 %4
 }
 
-; 771 occurrences:
+; 772 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/aigMem.c.ll
 ; abc/optimized/extraUtilMemory.c.ll
@@ -2638,6 +2630,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -3387,7 +3380,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/fse_decompress.ll
@@ -3395,6 +3388,7 @@ entry:
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/namei.ll
+; openjdk/optimized/os_linux.ll
 ; php/optimized/streams.ll
 ; ruby/optimized/strftime.ll
 ; ruby/optimized/string.ll
@@ -3434,7 +3428,7 @@ entry:
   ret i1 %4
 }
 
-; 983 occurrences:
+; 979 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecPo.c.ll
@@ -3867,7 +3861,6 @@ entry:
 ; llvm/optimized/YAMLParser.cpp.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/ldebug.ll
-; lua/optimized/lstrlib.ll
 ; luajit/optimized/lib_debug.ll
 ; luajit/optimized/lib_debug_dyn.ll
 ; luajit/optimized/lib_math.ll
@@ -3892,7 +3885,6 @@ entry:
 ; luau/optimized/Analyze.cpp.ll
 ; luau/optimized/Reduce.cpp.ll
 ; luau/optimized/TopoSortStatements.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -4016,7 +4008,6 @@ entry:
 ; opencv/optimized/trace.cpp.ll
 ; opencv/optimized/tracking_by_matching.cpp.ll
 ; opencv/optimized/tracklet.cpp.ll
-; openjdk/optimized/attachListener_posix.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/compiledIC.ll
@@ -4327,7 +4318,6 @@ entry:
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/filesys.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
-; xgboost/optimized/json.cc.ll
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/loop.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -4426,7 +4416,7 @@ entry:
   ret i1 %4
 }
 
-; 1056 occurrences:
+; 1052 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/absIter.c.ll
@@ -4799,7 +4789,6 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/git.ll
 ; git/optimized/line-range.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/dthash.c.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; gromacs/optimized/selvalue.cpp.ll
@@ -5197,7 +5186,6 @@ entry:
 ; ocio/optimized/CTFTransform.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
@@ -5273,7 +5261,6 @@ entry:
 ; php/optimized/zend_alloc.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zip.ll
-; pocketpy/optimized/str.cpp.ll
 ; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/enum_lite.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
@@ -5369,7 +5356,6 @@ entry:
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_sprintf.c.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/main.cpp.ll
@@ -5491,7 +5477,7 @@ entry:
   ret i1 %4
 }
 
-; 3857 occurrences:
+; 3859 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bblif.c.ll
@@ -8560,6 +8546,7 @@ entry:
 ; php/optimized/zend_language_parser.ll
 ; php/optimized/zend_sort.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
+; pocketpy/optimized/str.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/c_api.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
@@ -8717,6 +8704,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-log-parser.ll
 ; spike/optimized/spike.ll
+; stb/optimized/stb_sprintf.c.ll
 ; stockfish/optimized/benchmark.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
@@ -10182,7 +10170,7 @@ entry:
   ret i1 %4
 }
 
-; 380 occurrences:
+; 379 occurrences:
 ; abc/optimized/gzread.c.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -10334,7 +10322,6 @@ entry:
 ; darktable/optimized/TiffIFD.cpp.ll
 ; darktable/optimized/gallery.c.ll
 ; darktable/optimized/latex.c.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; freetype/optimized/autofit.c.ll

@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaEnable.c.ll
@@ -13,7 +13,6 @@
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/powerpc.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
-; cpython/optimized/dtoa.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; freetype/optimized/psaux.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -117,7 +116,7 @@ entry:
   ret i32 %3
 }
 
-; 258 occurrences:
+; 259 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -157,6 +156,7 @@ entry:
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
 ; cpython/optimized/_codecs_tw.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/mpdecimal.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll

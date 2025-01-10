@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
 ; boost/optimized/from_chars.ll
@@ -9,7 +9,6 @@
 ; chibicc/optimized/hashmap.ll
 ; cmake/optimized/archive_string_sprintf.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; git/optimized/parallel-checkout.ll
 ; git/optimized/ws.ll
 ; libzmq/optimized/pipe.cpp.ll
 ; lief/optimized/bignum.c.ll

@@ -15,3 +15,8 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	xori	a0, a0, 3
 	ret
+func000000000000000a:                   # @func000000000000000a
+	srli	a0, a0, 60
+	andi	a0, a0, 8
+	addi	a0, a0, 8
+	ret

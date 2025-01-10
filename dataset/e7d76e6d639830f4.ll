@@ -1,5 +1,5 @@
 
-; 343 occurrences:
+; 342 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -27,7 +27,6 @@
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/inflate.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/action_helpers.ll
 ; cpython/optimized/specialize.ll
 ; cvc5/optimized/arith_msum.cpp.ll
@@ -142,6 +141,7 @@
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -170,7 +170,6 @@
 ; llvm/optimized/X86InstComments.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86MCAsmInfo.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86RecognizableInstr.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
@@ -314,6 +313,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/busmaster_scanner.c.ll
@@ -341,7 +341,6 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; zlib/optimized/inflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {

@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
-%"struct.std::__atomic_base.2625634" = type { i64 }
+%"struct.std::atomic.2625598" = type { %"struct.std::__atomic_base.2625601" }
+%"struct.std::__atomic_base.2625601" = type { i64 }
 
 ; 16 occurrences:
 ; clamav/optimized/rs16.cpp.ll
@@ -24,7 +24,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.std::atomic.2625631", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.std::atomic.2625598", ptr %0, i64 %4
   ret ptr %5
 }
 

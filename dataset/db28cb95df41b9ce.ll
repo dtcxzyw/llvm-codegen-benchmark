@@ -1,5 +1,5 @@
 
-; 3378 occurrences:
+; 3397 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -22,7 +22,6 @@
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cuddAddAbs.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -477,7 +476,12 @@
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/1gvxr6i1no6imw7.ll
+; coreutils-rs/optimized/28bc720kv1ca2ji3.ll
+; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
 ; coreutils-rs/optimized/2ifu8k2kcnip7wh5.ll
+; coreutils-rs/optimized/2nqetp4aeyokg7z8.ll
+; coreutils-rs/optimized/2qo70e4zd6mgrgtt.ll
+; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
 ; coreutils-rs/optimized/2tikf1yvlgbemzkv.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/3jbb9tw7701fm28c.ll
@@ -485,8 +489,12 @@
 ; coreutils-rs/optimized/3ovky1nu4e8ycm16.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/49fwg0b0m19bdvio.ll
+; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
+; coreutils-rs/optimized/4ebr33npwdm3i540.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
+; coreutils-rs/optimized/5362q9qekdi7amtn.ll
 ; coreutils-rs/optimized/54eylnaq7kgp46eq.ll
+; coreutils-rs/optimized/5bynua1et0hks54.ll
 ; coreutils-rs/optimized/x8pbloshhgr8d49.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -604,6 +612,7 @@
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
+; diesel-rs/optimized/4sfj60patc6ec44s.ll
 ; diesel-rs/optimized/6dg2gvwvziet763.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; draco/optimized/corner_table.cc.ll
@@ -991,6 +1000,7 @@
 ; jsonnet/optimized/utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
+; just-rs/optimized/2sotx4bdu006z307.ll
 ; just-rs/optimized/4mdvpwvrpdu4jonv.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; libevent/optimized/evutil_rand.c.ll
@@ -998,7 +1008,6 @@
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
-; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/a_strex.c.ll
 ; libquic/optimized/div.c.ll
 ; libquic/optimized/exponentiation.c.ll
@@ -2292,6 +2301,7 @@
 ; openjdk/optimized/util.ll
 ; openjdk/optimized/vframe_hp.ll
 ; openjdk/optimized/vm_version_x86.ll
+; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_barrier.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; openmpi/optimized/coll_han_dynamic_file.ll
@@ -2839,12 +2849,12 @@
 ; redis/optimized/evict.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
-; redis/optimized/t_zset.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/12jtvy3iayrg5nam.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; ripgrep-rs/optimized/544b63jf571x6ld1.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
+; ripgrep-rs/optimized/n2o0pbfhrfss8aa.ll
 ; ripgrep-rs/optimized/vfmkapehee5qzol.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -2877,10 +2887,12 @@
 ; rust-analyzer-rs/optimized/1fcqow6r9ggl3wao.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/224jp53fx6iljbn5.ll
 ; rust-analyzer-rs/optimized/28jcyytu5knrz2fd.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
+; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
 ; rust-analyzer-rs/optimized/2o0d131ok2fe9kmx.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
@@ -2889,6 +2901,7 @@
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; rust-analyzer-rs/optimized/3alfnpbt0togb9gu.ll
 ; rust-analyzer-rs/optimized/3fqz5uk7bi62noyj.ll
+; rust-analyzer-rs/optimized/3fxp92r9t1x66wd0.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; rust-analyzer-rs/optimized/3grrv27bmryurv9l.ll
 ; rust-analyzer-rs/optimized/3jjg9gby3m7lsfsh.ll
@@ -2898,10 +2911,12 @@
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
+; rust-analyzer-rs/optimized/4jvd7t10e7ozxalq.ll
 ; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
 ; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
 ; rust-analyzer-rs/optimized/52aa8v8uctwm4asi.ll
+; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
@@ -2911,6 +2926,7 @@
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/9ipmi6my0zkv4p.ll
+; rust-analyzer-rs/optimized/bdopwa51jybvqli.ll
 ; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; rust-analyzer-rs/optimized/h7mtydzcy9xo30w.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
@@ -3014,6 +3030,7 @@
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5edwf61672v3jzil.ll
+; tree-sitter-rs/optimized/sw0aazrl08me20d.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
@@ -3030,6 +3047,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; typst-rs/optimized/avdrw26ojy6f9qt.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
@@ -3135,6 +3153,7 @@
 ; wasmedge/optimized/section.cpp.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
+; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/2rq7jdvcgv8h6zge.ll
@@ -3386,7 +3405,7 @@ entry:
   ret i1 %2
 }
 
-; 319 occurrences:
+; 321 occurrences:
 ; abc/optimized/Options.cpp.ll
 ; abc/optimized/Options2.cpp.ll
 ; abc/optimized/abcLut.c.ll
@@ -3421,12 +3440,14 @@ entry:
 ; cpython/optimized/_ctypes.ll
 ; cpython/optimized/_testclinic.ll
 ; cpython/optimized/_xxinterpqueuesmodule.ll
+; cpython/optimized/arraymodule.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/boolobject.ll
 ; cpython/optimized/exceptions.ll
 ; cpython/optimized/intrinsics.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/memoryobject.ll
+; cpython/optimized/pystrtod.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; cvc5/optimized/arith_static_learner.cpp.ll
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
@@ -3714,7 +3735,7 @@ entry:
   ret i1 %2
 }
 
-; 409 occurrences:
+; 412 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcLutmin.c.ll
@@ -3781,6 +3802,7 @@ entry:
 ; cmake/optimized/cmScriptGenerator.cxx.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/openssl.c.ll
+; cpython/optimized/arraymodule.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/test_lock.ll
@@ -3998,6 +4020,7 @@ entry:
 ; openjdk/optimized/ciTypeFlow.ll
 ; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/cmsio0.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/forte.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -4085,6 +4108,7 @@ entry:
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; redis/optimized/db.ll
 ; redis/optimized/redis-cli.ll
+; redis/optimized/t_zset.ll
 ; rocksdb/optimized/manager.cc.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/io.ll
@@ -4132,7 +4156,7 @@ entry:
   ret i1 %2
 }
 
-; 196 occurrences:
+; 197 occurrences:
 ; abc/optimized/cuddBddIte.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
@@ -4281,6 +4305,7 @@ entry:
 ; redis/optimized/db.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; ruby/optimized/bignum.ll
+; ruby/optimized/class.ll
 ; ruby/optimized/signal.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll

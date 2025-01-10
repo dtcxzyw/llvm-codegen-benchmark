@@ -1,5 +1,5 @@
 
-%struct.PyDictUnicodeEntry.3967079 = type { ptr, ptr }
+%struct.PyDictUnicodeEntry.3967029 = type { ptr, ptr }
 
 ; 1 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -68,7 +68,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = and i64 %1, 65535
-  %6 = getelementptr %struct.PyDictUnicodeEntry.3967079, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.PyDictUnicodeEntry.3967029, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

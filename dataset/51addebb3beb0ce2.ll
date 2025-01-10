@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 116 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
@@ -35,7 +35,6 @@
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/direct.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; nanosvg/optimized/nanosvg.ll

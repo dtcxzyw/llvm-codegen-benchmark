@@ -45,7 +45,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/aigScl.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSweep.c.ll
@@ -72,12 +72,10 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
-; postgres/optimized/buffile.ll
 ; postgres/optimized/funcapi.ll
 ; postgres/optimized/namespace.ll
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/tuplestore.ll
-; qemu/optimized/block_qcow.c.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
@@ -130,7 +128,7 @@ entry:
   ret i1 %5
 }
 
-; 243 occurrences:
+; 249 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -279,7 +277,6 @@ entry:
 ; darktable/optimized/introspection_equalizer.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; freetype/optimized/pshinter.c.ll
-; git/optimized/xdiff-interface.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/fft.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
@@ -339,6 +336,7 @@ entry:
 ; opencv/optimized/joint_bilateral_filter.cpp.ll
 ; opencv/optimized/lbph_faces.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -371,7 +369,13 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
 ; redis/optimized/db.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
@@ -380,30 +384,6 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = icmp slt i64 %0, %4
-  ret i1 %5
-}
-
-; 14 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
-; gromacs/optimized/makebondedlinks.cpp.ll
-; linux/optimized/datagram.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
-; llvm/optimized/StackSlotColoring.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
-; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
-; openexr/optimized/ImfMisc.cpp.ll
-; qemu/optimized/hw_usb_core.c.ll
-; qemu/optimized/hw_usb_dev-network.c.ll
-; wireshark/optimized/proto.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -504,6 +484,28 @@ entry:
   ret i1 %5
 }
 
+; 12 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; gromacs/optimized/makebondedlinks.cpp.ll
+; linux/optimized/datagram.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/StackSlotColoring.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
+; openexr/optimized/ImfMisc.cpp.ll
+; wireshark/optimized/proto.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = icmp ult i64 %0, %4
+  ret i1 %5
+}
+
 ; 8 occurrences:
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -552,23 +554,6 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = icmp ugt i64 %0, %4
-  ret i1 %5
-}
-
-; 7 occurrences:
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 

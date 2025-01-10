@@ -12,9 +12,10 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/dmar.ll
+; luau/optimized/isocline.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i64 %0, i64 %1, i64 %2) #0 {

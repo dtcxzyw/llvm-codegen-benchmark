@@ -13,11 +13,10 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/Float2Int.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll

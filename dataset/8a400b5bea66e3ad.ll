@@ -1,6 +1,5 @@
 
-; 13 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 12 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; libquic/optimized/convert.c.ll
 ; linux/optimized/resize.ll

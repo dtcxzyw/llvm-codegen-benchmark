@@ -1,7 +1,7 @@
 
-%"class.cv::Mat.3727747" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3727748", %"struct.cv::MatStep.3727749" }
-%"struct.cv::MatSize.3727748" = type { ptr }
-%"struct.cv::MatStep.3727749" = type { ptr, [2 x i64] }
+%"class.cv::Mat.3727697" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3727698", %"struct.cv::MatStep.3727699" }
+%"struct.cv::MatSize.3727698" = type { ptr }
+%"struct.cv::MatStep.3727699" = type { ptr, [2 x i64] }
 
 ; 213 occurrences:
 ; abc/optimized/abcDar.c.ll
@@ -296,7 +296,7 @@ entry:
   %2 = sdiv i64 %1, 96
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw %"class.cv::Mat.3727747", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.cv::Mat.3727697", ptr %0, i64 %4
   ret ptr %5
 }
 

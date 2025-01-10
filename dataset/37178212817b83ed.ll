@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -7,7 +7,6 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
-; luau/optimized/TableShape.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
@@ -22,9 +21,9 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 9
+  %3 = lshr i64 %2, 47
   %4 = xor i64 %0, %3
-  %5 = lshr i64 %1, 9
+  %5 = lshr i64 %1, 32
   %6 = xor i64 %4, %5
   ret i64 %6
 }

@@ -33,6 +33,11 @@ func000000000000000a:                   # @func000000000000000a
 	cmpb	%sil, %dil
 	setg	%al
 	retq
+func000000000000002c:                   # @func000000000000002c
+	decb	%sil
+	cmpb	%sil, %dil
+	setne	%al
+	retq
 func0000000000000064:                   # @func0000000000000064
 	addb	$2, %sil
 	cmpb	%sil, %dil

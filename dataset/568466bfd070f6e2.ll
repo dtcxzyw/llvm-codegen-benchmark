@@ -19,7 +19,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -34,7 +34,6 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -55,9 +54,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hdf5/optimized/H5FDonion_index.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -76,6 +74,17 @@ entry:
   %3 = shl nsw i32 %2, 4
   %4 = or i32 %1, %3
   %5 = and i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; yosys/optimized/ezsat.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 1
+  %4 = or disjoint i32 %1, %3
+  %5 = and i32 %4, %0
   ret i32 %5
 }
 

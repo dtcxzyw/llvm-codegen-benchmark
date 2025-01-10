@@ -1,5 +1,5 @@
 
-%struct.vec.3496575 = type { double, double, double }
+%struct.vec.3496541 = type { double, double, double }
 
 ; 5 occurrences:
 ; folly/optimized/Dump.cpp.ll
@@ -74,7 +74,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 40
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = add nsw i64 %1, -1
-  %6 = getelementptr [2 x %struct.vec.3496575], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [2 x %struct.vec.3496541], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

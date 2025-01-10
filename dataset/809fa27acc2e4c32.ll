@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; freetype/optimized/autofit.c.ll
@@ -21,7 +21,6 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/indexcmds.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll

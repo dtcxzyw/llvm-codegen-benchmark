@@ -1,5 +1,9 @@
 
-; 4 occurrences:
+; 8 occurrences:
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/sbdCut.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; linux/optimized/rapl.ll
 ; openjdk/optimized/xHeuristics.ll
@@ -195,8 +199,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 1 occurrences:
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i64 %0) #0 {

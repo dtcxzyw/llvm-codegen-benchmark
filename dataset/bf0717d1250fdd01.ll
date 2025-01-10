@@ -1,5 +1,5 @@
 
-%"class.draco::IndexType.132.3087969" = type { i32 }
+%"class.draco::IndexType.132.3087935" = type { i32 }
 
 ; 1 occurrences:
 ; php/optimized/tm2unixtime.ll
@@ -29,7 +29,7 @@ entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %1, 2
   %4 = select i1 %3, i64 0, i64 %2
-  %5 = getelementptr nusw nuw [3 x %"class.draco::IndexType.132.3087969"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x %"class.draco::IndexType.132.3087935"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %1, 0
   %4 = select i1 %3, i64 2, i64 %2
-  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087969"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087935"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

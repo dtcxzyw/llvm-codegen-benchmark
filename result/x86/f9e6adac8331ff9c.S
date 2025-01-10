@@ -6,6 +6,14 @@ func000000000000002d:                   # @func000000000000002d
 	subl	%eax, %edi
 	leal	1(%rdi), %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	addl	%edx, %esi
+	cmpl	$2, %esi
+	movl	$1, %eax
+	cmovgel	%esi, %eax
+	subl	%eax, %edi
+	leal	1(%rdi), %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	%edx, %esi
 	movl	%esi, %eax

@@ -1,10 +1,10 @@
 
-%struct.rb_builtin_function.2601343 = type { ptr, i32, i32, ptr }
-%struct.NodeLinks.2819557 = type { %class.btAlignedObjectArray.104.2819558 }
-%class.btAlignedObjectArray.104.2819558 = type <{ %class.btAlignedAllocator.105.2819559, [3 x i8], i32, i32, [4 x i8], ptr, i8, [7 x i8] }>
-%class.btAlignedAllocator.105.2819559 = type { i8 }
-%struct.io_tlb_slot.3537771 = type { i64, i64, i32 }
-%union.TValue.3680757 = type { i64 }
+%struct.rb_builtin_function.2601310 = type { ptr, i32, i32, ptr }
+%struct.NodeLinks.2819523 = type { %class.btAlignedObjectArray.104.2819524 }
+%class.btAlignedObjectArray.104.2819524 = type <{ %class.btAlignedAllocator.105.2819525, [3 x i8], i32, i32, [4 x i8], ptr, i8, [7 x i8] }>
+%class.btAlignedAllocator.105.2819525 = type { i8 }
+%struct.io_tlb_slot.3537737 = type { i64, i64, i32 }
+%union.TValue.3680707 = type { i64 }
 
 ; 222 occurrences:
 ; abc/optimized/acbPush.c.ll
@@ -263,11 +263,11 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_builtin_function.2601343, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.rb_builtin_function.2601310, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
-; 229 occurrences:
+; 230 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/amapLiberty.c.ll
@@ -339,6 +339,7 @@ entry:
 ; grpc/optimized/tcp_client_posix.cc.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; hdf5/optimized/H5T.c.ll
+; icu/optimized/pkgitems.ll
 ; icu/optimized/uloc.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll
@@ -549,19 +550,22 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; abc/optimized/verCore.c.ll
 ; bullet3/optimized/b3DNA.ll
 ; clamav/optimized/openioc.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/termination.cpp.ll
 ; openjdk/optimized/wildcard.ll
 ; sentencepiece/optimized/structurally_valid.cc.ll
+; slurm/optimized/affinity.ll
 ; slurm/optimized/bitstring.ll
 ; slurm/optimized/env.ll
 ; slurm/optimized/file_functions.ll
+; slurm/optimized/numa.ll
 ; slurm/optimized/parse_config.ll
 ; slurm/optimized/schedutils.ll
 ; Function Attrs: nounwind
@@ -593,7 +597,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 24
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct.NodeLinks.2819557, ptr %0, i64 %3, i32 0, i32 2
+  %4 = getelementptr %struct.NodeLinks.2819523, ptr %0, i64 %3, i32 0, i32 2
   ret ptr %4
 }
 
@@ -607,20 +611,6 @@ entry:
   %3 = ashr exact i64 %2, 28
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 3 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; slurm/optimized/affinity.ll
-; slurm/optimized/numa.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -1
   ret ptr %5
 }
 
@@ -644,7 +634,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 21
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct.io_tlb_slot.3537771, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.io_tlb_slot.3537737, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -656,20 +646,8 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %union.TValue.3680757, ptr %0, i64 %3
+  %4 = getelementptr nusw %union.TValue.3680707, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  ret ptr %5
-}
-
-; 1 occurrences:
-; icu/optimized/pkgitems.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 

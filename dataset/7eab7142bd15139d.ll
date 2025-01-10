@@ -37,7 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/blk-map.ll
@@ -47,6 +47,7 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; postgres/optimized/md.ll
 ; postgres/optimized/xlogreader.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:

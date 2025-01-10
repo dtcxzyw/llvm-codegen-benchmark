@@ -1,6 +1,6 @@
 
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 1 occurrences:
 ; abc/optimized/abcSat.c.ll
@@ -24,7 +24,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = add nsw i64 %1, -1
   %6 = mul nsw i64 %5, %4
-  %7 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %6
   ret ptr %7
 }
 

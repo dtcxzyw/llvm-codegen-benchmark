@@ -1,5 +1,6 @@
 
-; 36 occurrences:
+; 37 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -155,8 +156,7 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 9 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sscSim.c.ll
 ; linux/optimized/intel_cdclk.ll

@@ -5,6 +5,12 @@ func0000000000000017:                   # @func0000000000000017
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
+func0000000000000016:                   # @func0000000000000016
+	srai	a2, a2, 32
+	add	a1, a1, a2
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	ret
 func0000000000000013:                   # @func0000000000000013
 	srli	a2, a2, 2
 	add	a1, a1, a2

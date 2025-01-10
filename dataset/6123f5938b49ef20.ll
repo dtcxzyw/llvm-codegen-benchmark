@@ -1,5 +1,5 @@
 
-; 1113 occurrences:
+; 1114 occurrences:
 ; abc/optimized/bmcCexMin2.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -85,6 +85,7 @@
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGExprCXX.cpp.ll

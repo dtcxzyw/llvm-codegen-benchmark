@@ -48,14 +48,6 @@ func0000000000000026:                   // @func0000000000000026
 	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	add	w8, w8, w1
-	cmp	w8, w0
-	cset	w0, gt
-	ret
-                                        // -- End function
 func00000000000000ea:                   // @func00000000000000ea
 // %bb.0:                               // %entry
 	bic	w8, w2, w2, asr #31

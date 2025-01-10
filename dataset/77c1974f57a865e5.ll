@@ -1,8 +1,8 @@
 
-%struct.TCGTempSet.2707224 = type { [8 x i64] }
-%struct.combine_diff_parent.2886114 = type { i8, i32, %struct.object_id.2886115, %struct.strbuf.2886111 }
-%struct.object_id.2886115 = type { [32 x i8], i32 }
-%struct.strbuf.2886111 = type { i64, i64, ptr }
+%struct.TCGTempSet.2707190 = type { [8 x i64] }
+%struct.combine_diff_parent.2886080 = type { i8, i32, %struct.object_id.2886081, %struct.strbuf.2886077 }
+%struct.object_id.2886081 = type { [32 x i8], i32 }
+%struct.strbuf.2886077 = type { i64, i64, ptr }
 
 ; 3 occurrences:
 ; qemu/optimized/block_file-posix.c.ll
@@ -12,7 +12,7 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
-  %4 = getelementptr [6 x %struct.TCGTempSet.2707224], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [6 x %struct.TCGTempSet.2707190], ptr %1, i64 0, i64 %3
   %5 = getelementptr i64, ptr %4, i64 %0
   ret ptr %5
 }
@@ -38,7 +38,7 @@ entry:
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
-  %4 = getelementptr nusw nuw [0 x %struct.combine_diff_parent.2886114], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x %struct.combine_diff_parent.2886080], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }

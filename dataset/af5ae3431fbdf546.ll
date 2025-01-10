@@ -50,8 +50,9 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/dev_ioctl.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; qemu/optimized/audio_audio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {

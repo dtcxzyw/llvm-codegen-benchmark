@@ -57,12 +57,12 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.long	1                               # 0x1
 func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpcmpgtd	.LCPI5_0(%rip){1to8}, %ymm1, %k1 {%k1}
 	vptestmd	%ymm2, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -20,15 +20,11 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 1
-	bnez	a2, .LBB2_2
-	li	a2, 96
-	add	a1, a1, a2
-	slli	a0, a0, 4
+	lui	a3, 1
+	slli	a1, a1, 2
+	addi	a2, a2, -1
+	addiw	a3, a3, -2017
+	and	a2, a2, a3
 	add	a0, a0, a1
-	ret
-.LBB2_2:
-	li	a2, 128
-	add	a1, a1, a2
-	slli	a0, a0, 4
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret

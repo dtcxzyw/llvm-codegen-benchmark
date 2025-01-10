@@ -68,12 +68,6 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
-// %bb.0:                               // %entry
-	cmp	x0, w1, sxtw
-	cset	w0, hi
-	ret
-                                        // -- End function
 func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
 	lsl	x8, x1, #32

@@ -124,7 +124,7 @@ entry:
   ret i1 %5
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -170,7 +170,6 @@ entry:
 ; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/strftime.ll
 ; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/redis-cli.ll

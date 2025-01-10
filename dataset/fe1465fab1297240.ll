@@ -1,5 +1,5 @@
 
-%class.relocInfo.2733766 = type { i16 }
+%class.relocInfo.2733732 = type { i16 }
 
 ; 2 occurrences:
 ; minetest/optimized/clientmap.cpp.ll
@@ -244,7 +244,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 8
   %5 = and i64 %4, 16777215
-  %6 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
-; nuttx/optimized/wd_start.c.ll
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
 ; postgres/optimized/md.ll
@@ -52,8 +51,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; cmake/optimized/lzma_decoder.c.ll
+; 4 occurrences:
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/scatterlist.ll
 ; postgres/optimized/receivelog.ll

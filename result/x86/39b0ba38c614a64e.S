@@ -21,6 +21,14 @@ func0000000000000481:                   # @func0000000000000481
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000081:                   # @func0000000000000081
+	decl	%esi
+	cmpl	$2, %esi
+	setb	%cl
+	testw	%di, %di
+	sete	%al
+	orb	%cl, %al
+	retq
 func000000000000048c:                   # @func000000000000048c
 	addl	$-97, %esi
 	cmpl	$6, %esi

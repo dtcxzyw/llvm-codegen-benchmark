@@ -1,7 +1,7 @@
 
-%union.StackValue.3713429 = type { %struct.TValue.3713430 }
-%struct.TValue.3713430 = type { %union.Value.3713431, i8 }
-%union.Value.3713431 = type { ptr }
+%union.StackValue.3713379 = type { %struct.TValue.3713380 }
+%struct.TValue.3713380 = type { %union.Value.3713381, i8 }
+%union.Value.3713381 = type { ptr }
 
 ; 5 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
@@ -151,7 +151,7 @@ define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw nuw %union.StackValue.3713429, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %union.StackValue.3713379, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }

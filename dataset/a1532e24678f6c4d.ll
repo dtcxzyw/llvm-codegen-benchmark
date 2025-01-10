@@ -1,5 +1,5 @@
 
-%"struct.re2::Splice.2601793" = type { ptr, ptr, i32, i32 }
+%"struct.re2::Splice.2601760" = type { ptr, ptr, i32, i32 }
 
 ; 3338 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -3347,7 +3347,7 @@ entry:
   %4 = icmp ult i64 %1, %3
   %5 = tail call i64 @llvm.umin.i64(i64 %1, i64 384307168202282325)
   %6 = select i1 %4, i64 384307168202282325, i64 %5
-  %7 = getelementptr nusw nuw %"struct.re2::Splice.2601793", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.re2::Splice.2601760", ptr %0, i64 %6
   ret ptr %7
 }
 

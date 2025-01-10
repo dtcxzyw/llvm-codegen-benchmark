@@ -17,19 +17,6 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
-; abc/optimized/cuddTable.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000003d5(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 760
-  %5 = add nsw i64 %4, %0
-  %6 = shl nsw i64 %1, 3
-  %7 = add nsw i64 %5, %6
-  ret i64 %7
-}
-
 ; 2 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll

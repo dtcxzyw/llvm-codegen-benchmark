@@ -179,7 +179,8 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; clamav/optimized/chmd.c.ll
 ; linux/optimized/kfifo.ll
 ; llvm/optimized/DAGCombiner.cpp.ll

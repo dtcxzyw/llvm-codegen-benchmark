@@ -69,11 +69,10 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/abc.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
-; cpython/optimized/action_helpers.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; git/optimized/unpack-trees.ll

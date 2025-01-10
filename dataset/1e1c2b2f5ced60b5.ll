@@ -1,5 +1,5 @@
 
-; 286 occurrences:
+; 284 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -60,7 +60,6 @@
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/cmUVJobServerClient.cxx.ll
 ; cpython/optimized/typeobject.ll
-; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/metadata_view.c.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
@@ -148,7 +147,6 @@
 ; opencv/optimized/net_impl.cpp.ll
 ; opencv/optimized/perform_substitution.cpp.ll
 ; openjdk/optimized/arguments.ll
-; openjdk/optimized/g1CollectionSetCandidates.ll
 ; openjdk/optimized/hb-jdk-font-p.ll
 ; openjdk/optimized/imageFile.ll
 ; openjdk/optimized/jvmtiEnvThreadState.ll

@@ -1,5 +1,5 @@
 
-%struct.HistogramLiteral.3843297 = type { [256 x i32], i64, double }
+%struct.HistogramLiteral.3843247 = type { [256 x i32], i64, double }
 
 ; 4 occurrences:
 ; cmake/optimized/base64.c.ll
@@ -35,7 +35,7 @@ define ptr @func0000000000000000(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
   %4 = zext i8 %3 to i64
-  %5 = getelementptr %struct.HistogramLiteral.3843297, ptr %0, i64 %4
+  %5 = getelementptr %struct.HistogramLiteral.3843247, ptr %0, i64 %4
   ret ptr %5
 }
 

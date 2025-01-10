@@ -70,7 +70,7 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = sub nsw i64 %1, %3
   %5 = sdiv i64 %4, 2
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

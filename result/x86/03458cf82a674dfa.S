@@ -1,8 +1,3 @@
-func0000000000000018:                   # @func0000000000000018
-	movq	%rsi, %rax
-	testq	%rdx, %rdx
-	cmovsl	%edi, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rsi, %rax
 	cmpq	$1, %rdx
@@ -22,6 +17,11 @@ func0000000000000028:                   # @func0000000000000028
 	movq	%rsi, %rax
 	testq	%rdx, %rdx
 	cmovgl	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rsi, %rax
+	testq	%rdx, %rdx
+	cmovsl	%edi, %eax
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movq	%rsi, %rax

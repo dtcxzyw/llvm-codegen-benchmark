@@ -21,11 +21,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; Function Attrs: nounwind

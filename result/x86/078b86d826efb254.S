@@ -7,7 +7,7 @@ func000000000000042c:                   # @func000000000000042c
 func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	andl	$2147483646, %edi               # imm = 0x7FFFFFFE
-	xorl	$8, %edi
+	xorl	$16, %edi
 	orl	%esi, %edi
 	sete	%al
 	retq

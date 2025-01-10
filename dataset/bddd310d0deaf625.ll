@@ -14,6 +14,18 @@ entry:
 declare i32 @llvm.smax.i32(i32, i32) #1
 
 ; 2 occurrences:
+; meshlab/optimized/filter_colorproc.cpp.ll
+; nuklear/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = or disjoint i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/Recast.cpp.ll
 ; Function Attrs: nounwind
@@ -34,6 +46,17 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = shl i32 %2, 16
   %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_colorproc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call noundef i32 @llvm.smax.i32(i32 %1, i32 0)
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

@@ -1,14 +1,14 @@
 
-%struct._zval_struct.2790528 = type { %union._zend_value.2790538, %union.anon.2790539, %union.anon.2.2790540 }
-%union._zend_value.2790538 = type { i64 }
-%union.anon.2790539 = type { i32 }
-%union.anon.2.2790540 = type { i32 }
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
-%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067" = type { i32, i64 }
+%struct._zval_struct.2790494 = type { %union._zend_value.2790504, %union.anon.2790505, %union.anon.2.2790506 }
+%union._zend_value.2790504 = type { i64 }
+%union.anon.2790505 = type { i32 }
+%union.anon.2.2790506 = type { i32 }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
+%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434033" = type { i32, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -44,7 +44,7 @@ define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct._zval_struct.2790528, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2790494, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %0, i64 -16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -93,7 +93,7 @@ entry:
 define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %1, i64 %3
+  %4 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -40
   %6 = getelementptr nusw nuw i8, ptr %0, i64 40
   %7 = icmp eq ptr %6, %5
@@ -152,7 +152,7 @@ entry:
 define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067", ptr %1, i64 %3
+  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434033", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 12
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5

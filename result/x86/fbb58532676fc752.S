@@ -36,7 +36,7 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000017:                   # @func0000000000000017
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	leaq	1(%rdi,%rax), %rax
+	leaq	16(%rdi,%rax,8), %rax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	addl	%edx, %esi

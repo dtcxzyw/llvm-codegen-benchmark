@@ -1,17 +1,14 @@
 
-; 27 occurrences:
+; 24 occurrences:
 ; cmake/optimized/sha1.c.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; git/optimized/sha1.ll
-; git/optimized/sha256.ll
 ; libquic/optimized/md5.cc.ll
 ; lief/optimized/md5.c.ll
 ; lief/optimized/ripemd160.c.ll
 ; lief/optimized/sha1.c.ll
 ; lief/optimized/sha256.c.ll
 ; lief/optimized/sha512.c.ll
-; linux/optimized/devio.ll
-; linux/optimized/i915_gem_shmem.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeTypes.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
@@ -65,13 +62,8 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
-; assimp/optimized/zip.c.ll
-; clamav/optimized/XzDec.c.ll
+; 8 occurrences:
 ; clamav/optimized/clamfi.c.ll
-; hermes/optimized/zip.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-siphash.ll
@@ -79,7 +71,6 @@ entry:
 ; postgres/optimized/md5.ll
 ; postgres/optimized/md5_shlib.ll
 ; postgres/optimized/md5_srv.ll
-; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
@@ -156,8 +147,7 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; git/optimized/sha256.ll
+; 3 occurrences:
 ; php/optimized/md5.ll
 ; php/optimized/sha1.ll
 ; postgres/optimized/xlogreader.ll
@@ -329,17 +319,6 @@ entry:
   %2 = sub nsw i32 2048, %1
   %3 = zext nneg i32 %2 to i64
   %4 = icmp samesign ult i64 %0, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/blk-map.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 4096, %1
-  %3 = zext i32 %2 to i64
-  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 

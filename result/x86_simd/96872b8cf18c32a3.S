@@ -6,6 +6,14 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000042c:                   # @func000000000000042c
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpcmpeqq	%ymm2, %ymm1, %k0
+	vptestmd	%xmm0, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000021:                   # @func0000000000000021
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpeqq	%ymm2, %ymm1, %k0
@@ -14,19 +22,9 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
+.LCPI3_0:
 	.long	167772160                       # 0xa000000
 func000000000000050c:                   # @func000000000000050c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpcmpnleuq	%ymm2, %ymm1, %k0
-	vpcmpneqd	.LCPI2_0(%rip){1to4}, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
-	.long	1                               # 0x1
-func000000000000010c:                   # @func000000000000010c
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vpcmpneqd	.LCPI3_0(%rip){1to4}, %xmm0, %k1
@@ -35,11 +33,21 @@ func000000000000010c:                   # @func000000000000010c
 	vzeroupper
 	retq
 .LCPI4_0:
+	.long	1                               # 0x1
+func000000000000010c:                   # @func000000000000010c
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpcmpnleuq	%ymm2, %ymm1, %k0
+	vpcmpneqd	.LCPI4_0(%rip){1to4}, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	2                               # 0x2
 func0000000000000721:                   # @func0000000000000721
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpnltuq	%ymm2, %ymm1, %k0
-	vpcmpeqd	.LCPI4_0(%rip){1to4}, %xmm0, %k1
+	vpcmpeqd	.LCPI5_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -52,42 +60,42 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
+.LCPI7_0:
 	.long	1                               # 0x1
 func00000000000000ac:                   # @func00000000000000ac
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpleuq	%ymm2, %ymm1, %k0
-	vpcmpneqd	.LCPI6_0(%rip){1to4}, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI7_0:
-	.long	4                               # 0x4
-func0000000000000114:                   # @func0000000000000114
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpcmpnleuq	%ymm2, %ymm1, %k0
-	vpcmpltud	.LCPI7_0(%rip){1to4}, %xmm0, %k1
+	vpcmpneqd	.LCPI7_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	1                               # 0x1
-func0000000000000106:                   # @func0000000000000106
+	.long	4                               # 0x4
+func0000000000000114:                   # @func0000000000000114
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpnleuq	%ymm2, %ymm1, %k0
-	vpcmpltd	.LCPI8_0(%rip){1to4}, %xmm0, %k1
+	vpcmpltud	.LCPI8_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI9_0:
+	.long	1                               # 0x1
+func0000000000000106:                   # @func0000000000000106
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpcmpnleuq	%ymm2, %ymm1, %k0
+	vpcmpltd	.LCPI9_0(%rip){1to4}, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI10_0:
 	.long	10                              # 0xa
 func0000000000000028:                   # @func0000000000000028
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpeqq	%ymm2, %ymm1, %k0
-	vpcmpnleud	.LCPI9_0(%rip){1to4}, %xmm0, %k1
+	vpcmpnleud	.LCPI10_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -100,12 +108,12 @@ func0000000000000101:                   # @func0000000000000101
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI11_0:
+.LCPI12_0:
 	.long	4                               # 0x4
 func0000000000000104:                   # @func0000000000000104
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpnleuq	%ymm2, %ymm1, %k0
-	vpcmpltud	.LCPI11_0(%rip){1to4}, %xmm0, %k1
+	vpcmpltud	.LCPI12_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -114,14 +122,6 @@ func0000000000000421:                   # @func0000000000000421
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000042c:                   # @func000000000000042c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpcmpeqq	%ymm2, %ymm1, %k0
-	vptestmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

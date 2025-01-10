@@ -473,7 +473,7 @@ entry:
   ret i64 %7
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; freetype/optimized/ftbase.c.ll
@@ -503,7 +503,6 @@ entry:
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wireshark/optimized/packet-dhcp.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind

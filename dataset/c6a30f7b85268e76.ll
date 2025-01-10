@@ -22,7 +22,7 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/ree_util.cc.ll
 ; casadi/optimized/sundials_dense.c.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -30,6 +30,7 @@ entry:
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/regcomp.c.ll
 ; nuklear/optimized/unity.c.ll
+; openblas/optimized/dgemm_itcopy.c.ll
 ; ruby/optimized/zlib.ll
 ; sundials/optimized/sundials_dense.c.ll
 ; Function Attrs: nounwind
@@ -721,17 +722,6 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = sub nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dgemm_itcopy.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -16
-  %3 = sub i64 %0, %2
-  %4 = icmp sgt i64 %3, 23
   ret i1 %4
 }
 

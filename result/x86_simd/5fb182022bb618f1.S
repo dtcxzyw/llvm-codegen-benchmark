@@ -98,15 +98,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001e1:                   # @func00000000000001e1
-	vpsubd	%xmm2, %xmm1, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm1, %xmm1
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpcmpeqq	%ymm1, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func0000000000000019:                   # @func0000000000000019
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -125,11 +116,11 @@ func00000000000001cc:                   # @func00000000000001cc
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI14_0:
+.LCPI13_0:
 	.long	2                               # 0x2
 func000000000000018c:                   # @func000000000000018c
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	.LCPI14_0(%rip){1to4}, %xmm1, %xmm1
+	vpaddd	.LCPI13_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpcmpneqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -195,21 +186,21 @@ func0000000000000218:                   # @func0000000000000218
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI22_0:
+.LCPI21_0:
 	.long	5                               # 0x5
 func0000000000000154:                   # @func0000000000000154
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	.LCPI22_0(%rip){1to4}, %xmm1, %xmm1
+	vpaddd	.LCPI21_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI23_0:
+.LCPI22_0:
 	.long	4294967294                      # 0xfffffffe
 func0000000000000178:                   # @func0000000000000178
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpaddd	.LCPI23_0(%rip){1to4}, %xmm1, %xmm1
+	vpaddd	.LCPI22_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

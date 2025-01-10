@@ -16,6 +16,12 @@ func0000000000000075:                   # @func0000000000000075
 	cmpl	%esi, %edi
 	setbe	%al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$30, %esi
+	shll	$2, %edi
+	cmpl	%esi, %edi
+	setb	%al
+	retq
 func0000000000000061:                   # @func0000000000000061
 	andl	$1073741816, %esi               # imm = 0x3FFFFFF8
 	shll	$3, %edi

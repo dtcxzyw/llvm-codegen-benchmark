@@ -45,6 +45,18 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 8191
+  %3 = and i64 %2, -8192
+  %4 = and i64 %0, -8192
+  %5 = icmp ugt i64 %4, %3
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll

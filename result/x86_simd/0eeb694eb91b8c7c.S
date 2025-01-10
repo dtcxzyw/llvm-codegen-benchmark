@@ -132,3 +132,12 @@ func000000000000000d:                   # @func000000000000000d
 	vpsllvd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+.LCPI14_0:
+	.long	4294967286                      # 0xfffffff6
+func0000000000000011:                   # @func0000000000000011
+	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI14_0(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsllvd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

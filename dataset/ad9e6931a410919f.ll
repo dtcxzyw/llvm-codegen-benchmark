@@ -1,8 +1,8 @@
 
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
-%struct.scatterlist.3530599 = type { i64, i32, i32, i64, i32, i32 }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
+%struct.scatterlist.3530565 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 17 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -84,7 +84,7 @@ define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %"class.rapidjson::GenericValue.2749211", ptr %3, i64 %0, i32 0, i32 0, i32 2
+  %4 = getelementptr %"class.rapidjson::GenericValue.2749177", ptr %3, i64 %0, i32 0, i32 0, i32 2
   ret ptr %4
 }
 
@@ -118,7 +118,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.scatterlist.3530599, ptr %3, i64 %0, i32 1
+  %4 = getelementptr %struct.scatterlist.3530565, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 

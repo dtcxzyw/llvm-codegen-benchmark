@@ -13,18 +13,6 @@ func000000000000008c:                   # @func000000000000008c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000146:                   # @func0000000000000146
-	slli	a1, a1, 56
-	slli	a0, a0, 56
-	slli	a2, a2, 56
-	srai	a1, a1, 56
-	srai	a0, a0, 56
-	srai	a2, a2, 56
-	slti	a2, a2, 0
-	xori	a2, a2, 1
-	slt	a0, a0, a1
-	and	a0, a0, a2
-	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a0, a0, 56
 	slli	a2, a2, 56
@@ -36,6 +24,18 @@ func00000000000000ca:                   # @func00000000000000ca
 	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
+	ret
+func0000000000000146:                   # @func0000000000000146
+	slli	a1, a1, 56
+	slli	a0, a0, 56
+	slli	a2, a2, 56
+	srai	a1, a1, 56
+	srai	a0, a0, 56
+	srai	a2, a2, 56
+	slti	a2, a2, 0
+	xori	a2, a2, 1
+	slt	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 255

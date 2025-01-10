@@ -30,12 +30,13 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/rpo.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/swnode.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; quickjs/optimized/quickjs-libc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

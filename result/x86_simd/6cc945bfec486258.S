@@ -23,13 +23,38 @@ func0000000000000301:                   # @func0000000000000301
 	vzeroupper
 	retq
 .LCPI2_0:
+	.long	4294967291                      # 0xfffffffb
+.LCPI2_1:
+	.long	1                               # 0x1
+func0000000000000058:                   # @func0000000000000058
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k0
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm0
+	vpcmpeqd	.LCPI2_1(%rip){1to4}, %xmm0, %k1
+	korw	%k1, %k0, %k1
+	vptestmq	%ymm1, %ymm1, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
 	.long	1024                            # 0x400
 func0000000000000041:                   # @func0000000000000041
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
-	vptestnmd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
+	vptestnmd	.LCPI3_0(%rip){1to4}, %xmm2, %k1
 	korw	%k0, %k1, %k1
 	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	64                              # 0x40
+func0000000000000318:                   # @func0000000000000318
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k0
+	vptestmd	.LCPI4_0(%rip){1to4}, %xmm2, %k1
+	korw	%k0, %k1, %k1
+	vptestmq	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

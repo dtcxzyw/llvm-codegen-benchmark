@@ -1,7 +1,3 @@
-func0000000000000546:                   # @func0000000000000546
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v0, v8, v10
-	ret
 func000000000000058c:                   # @func000000000000058c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v12, v8, v10

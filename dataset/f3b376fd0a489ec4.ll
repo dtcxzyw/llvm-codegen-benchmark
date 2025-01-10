@@ -1,8 +1,8 @@
 
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2730954" = type { i32, i8, i8 }
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2735627" = type { i32, i8, i8 }
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2730920" = type { i32, i8, i8 }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2735593" = type { i32, i8, i8 }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
 
 ; 8 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -49,7 +49,7 @@ entry:
   %4 = and i32 %3, 8
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730954", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730920", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -237,7 +237,7 @@ entry:
   %4 = and i32 %3, 8
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2735627", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2735593", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -263,8 +263,8 @@ entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %5
-  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %5
+  %7 = getelementptr %struct.lua_TValue.2923823, ptr %6, i64 %0
   ret ptr %7
 }
 

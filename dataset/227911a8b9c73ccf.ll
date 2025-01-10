@@ -16,8 +16,9 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll

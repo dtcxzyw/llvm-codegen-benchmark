@@ -149,28 +149,28 @@ func0000000000000074:                   # @func0000000000000074
 	sext.w	a1, a1
 	sltiu	a0, a1, 577
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a0, a0, 1
-	bnez	a0, .LBB18_2
-	addi	a1, a2, 1
-.LBB18_2:                               # %entry
-	sext.w	a1, a1
-	sltiu	a0, a1, 2
-	xori	a0, a0, 1
-	ret
 func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
-	bnez	a0, .LBB19_2
+	bnez	a0, .LBB18_2
 	addi	a1, a2, -1
-.LBB19_2:                               # %entry
+.LBB18_2:                               # %entry
 	sext.w	a1, a1
 	snez	a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
-	bnez	a0, .LBB20_2
+	bnez	a0, .LBB19_2
 	addi	a1, a2, 1
-.LBB20_2:                               # %entry
+.LBB19_2:                               # %entry
 	sext.w	a1, a1
 	sltiu	a0, a1, 64
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a0, a0, 1
+	bnez	a0, .LBB20_2
+	addi	a1, a2, 32
+.LBB20_2:                               # %entry
+	sext.w	a1, a1
+	sltiu	a0, a1, 8
+	xori	a0, a0, 1
 	ret

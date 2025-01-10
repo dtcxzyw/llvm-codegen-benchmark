@@ -45,13 +45,6 @@ func00000000000000b0:                   // @func00000000000000b0
 	add	w0, w8, w1, lsl #16
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
-	and	w8, w2, #0xff
-	add	w8, w1, w8, lsl #8
-	add	w0, w8, w0, lsl #8
-	ret
-                                        // -- End function
 func00000000000001cc:                   // @func00000000000001cc
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff

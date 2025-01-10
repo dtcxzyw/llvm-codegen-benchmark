@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 150 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -38,7 +38,6 @@
 ; g2o/optimized/edge_project_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz2uv.cpp.ll
 ; g2o/optimized/edge_project_xyz_onlypose.cpp.ll
-; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
 ; g2o/optimized/parameter_camera.cpp.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll

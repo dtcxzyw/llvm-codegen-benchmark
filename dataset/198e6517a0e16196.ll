@@ -29,16 +29,6 @@ entry:
 }
 
 ; 1 occurrences:
-; php/optimized/ascmagic.ll
-; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -1
-  %2 = icmp ult i32 %1, -2
-  ret i1 %2
-}
-
-; 1 occurrences:
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(i32 %0) #0 {

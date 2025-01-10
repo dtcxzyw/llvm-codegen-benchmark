@@ -1,5 +1,5 @@
 
-%struct.anon.32.3540151 = type { ptr, ptr, i32 }
+%struct.anon.32.3540117 = type { ptr, ptr, i32 }
 
 ; 9 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
@@ -27,7 +27,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [6 x %struct.anon.32.3540151], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [6 x %struct.anon.32.3540117], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

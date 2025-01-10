@@ -1,6 +1,12 @@
 
-; 2 occurrences:
+; 8 occurrences:
+; linux/optimized/vsprintf.ll
 ; openmpi/optimized/ad_nfs_write.ll
+; postgres/optimized/buffile.ll
+; qemu/optimized/block_qcow.c.ll
+; qemu/optimized/linux-user_syscall.c.ll
+; raylib/optimized/rcore.c.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/libfile_bcast_la-file_bcast.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

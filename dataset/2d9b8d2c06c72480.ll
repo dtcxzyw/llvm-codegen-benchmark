@@ -1,8 +1,8 @@
 
-%"struct.OT::OffsetTo.619.2737021" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
+%"struct.OT::OffsetTo.619.2736987" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
 
 ; 2 occurrences:
 ; linux/optimized/gro.ll
@@ -43,7 +43,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2737021"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2736987"], ptr %5, i64 0, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }

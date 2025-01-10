@@ -1,5 +1,5 @@
 
-; 3969 occurrences:
+; 3970 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -1356,6 +1356,7 @@
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -3977,7 +3978,7 @@ entry:
   ret i1 %3
 }
 
-; 1054 occurrences:
+; 1058 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -4075,6 +4076,7 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
@@ -4302,6 +4304,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/DynamicTypeChecker.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
@@ -4422,6 +4425,7 @@ entry:
 ; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/ValistChecker.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -5027,6 +5031,7 @@ entry:
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
@@ -5040,7 +5045,7 @@ entry:
   ret i1 %3
 }
 
-; 3232 occurrences:
+; 3236 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
@@ -6113,6 +6118,7 @@ entry:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
@@ -6161,6 +6167,7 @@ entry:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; llvm/optimized/DivisionByConstantInfo.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -7741,6 +7748,8 @@ entry:
 ; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
@@ -8281,7 +8290,7 @@ entry:
   ret i1 %3
 }
 
-; 803 occurrences:
+; 801 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -8568,7 +8577,6 @@ entry:
 ; libquic/optimized/asn1_lib.c.ll
 ; libquic/optimized/asn1_par.c.ll
 ; libquic/optimized/pkcs12.cc.ll
-; libquic/optimized/time.cc.ll
 ; libquic/optimized/time_posix.cc.ll
 ; libzmq/optimized/v1_decoder.cpp.ll
 ; libzmq/optimized/v2_decoder.cpp.ll
@@ -8940,7 +8948,6 @@ entry:
 ; php/optimized/simplexml.ll
 ; php/optimized/spl_dllist.ll
 ; php/optimized/streams.ll
-; php/optimized/tm2unixtime.ll
 ; php/optimized/url.ll
 ; php/optimized/userspace.ll
 ; php/optimized/var_unserializer.ll
@@ -9093,7 +9100,7 @@ entry:
   ret i1 %3
 }
 
-; 275 occurrences:
+; 273 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
@@ -9181,7 +9188,6 @@ entry:
 ; libevent/optimized/buffer.c.ll
 ; libevent/optimized/event.c.ll
 ; libevent/optimized/http.c.ll
-; libquic/optimized/time.cc.ll
 ; libuv/optimized/idna.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
@@ -9257,8 +9263,8 @@ entry:
 ; php/optimized/array.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/php_pcre.ll
-; php/optimized/tm2unixtime.ll
 ; php/optimized/url.ll
+; php/optimized/zend_accelerator_blacklist.ll
 ; postgres/optimized/informix.ll
 ; postgres/optimized/numeric.ll
 ; postgres/optimized/spell.ll
@@ -9281,7 +9287,6 @@ entry:
 ; redis/optimized/util.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/complex.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/numeric.ll
@@ -10875,7 +10880,6 @@ entry:
 ; linux/optimized/mod.ll
 ; linux/optimized/mutex.ll
 ; linux/optimized/net.ll
-; linux/optimized/nls_base.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/pci_link.ll
 ; linux/optimized/processor_idle.ll
@@ -10932,6 +10936,7 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/contours.cpp.ll
+; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/jfrEventThrottler.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/zVerify.ll

@@ -1,9 +1,15 @@
 
-; 7 occurrences:
+; 13 occurrences:
+; darktable/optimized/history.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; git/optimized/diffcore-rename.ll
+; git/optimized/merge-ort.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
+; openspiel/optimized/TransTableL.cpp.ll
 ; php/optimized/zend_compile.ll
+; postgres/optimized/regexp.ll
+; qemu/optimized/block_vvfat.c.ll
 ; redis/optimized/ltable.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; slurm/optimized/eval_nodes.ll

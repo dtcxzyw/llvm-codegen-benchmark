@@ -1,11 +1,12 @@
 
-; 366 occurrences:
+; 367 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; boost/optimized/operations.ll
 ; boost/optimized/topology.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/socks.c.ll

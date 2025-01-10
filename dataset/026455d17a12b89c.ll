@@ -51,11 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
+; 1 occurrences:
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i64 %1) #0 {

@@ -53,11 +53,6 @@ func0000000000000013:                   # @func0000000000000013
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	li	a2, -276
-	mul	a0, a0, a2
-	add.uw	a0, a1, a0
-	ret
 func000000000000001e:                   # @func000000000000001e
 	sext.w	a1, a1
 	slli	a2, a0, 1

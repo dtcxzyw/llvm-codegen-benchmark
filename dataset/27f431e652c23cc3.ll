@@ -34,12 +34,13 @@ entry:
   ret i32 %3
 }
 
-; 46 occurrences:
+; 52 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/decompress.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/decompress.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/pkcs5.c.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/devinet.ll
@@ -61,6 +62,8 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
@@ -76,11 +79,14 @@ entry:
 ; regex-rs/optimized/mw6ona3r0wpdmlf.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wolfssl/optimized/asn.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:

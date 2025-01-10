@@ -7,8 +7,8 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	retq
 func0000000000000aa6:                   # @func0000000000000aa6
-	leal	(%rdi,%rdx,2), %eax
-	leal	(%rax,%rsi,2), %eax
+	addl	%edx, %esi
+	leal	(%rdi,%rsi,2), %eax
 	shrl	$31, %eax
 	retq
 func0000000000000aa4:                   # @func0000000000000aa4

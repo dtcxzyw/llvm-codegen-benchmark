@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
+; qemu/optimized/util_host-utils.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000004(i128 %0, i128 %1) #0 {

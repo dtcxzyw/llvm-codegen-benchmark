@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 40 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; draco/optimized/point_cloud.cc.ll
 ; folly/optimized/OpenSSLCertUtils.cpp.ll
@@ -35,8 +35,6 @@
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
 ; php/optimized/node.ll
 ; postgres/optimized/planner.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; ruby/optimized/ruby.ll
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/jobcomp_filetxt.ll

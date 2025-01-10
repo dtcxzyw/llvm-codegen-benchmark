@@ -111,18 +111,18 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
+func00000000000000cc:                   # @func00000000000000cc
+	cmpq	$12279, %rsi                    # imm = 0x2FF7
+	setl	%cl
+	testb	%dil, %dil
+	setne	%al
+	andb	%cl, %al
+	retq
 func0000000000000286:                   # @func0000000000000286
 	cmpq	$19, %rsi
 	setb	%cl
 	testb	%dil, %dil
 	sets	%al
-	andb	%cl, %al
-	retq
-func00000000000000cc:                   # @func00000000000000cc
-	cmpq	$8190, %rsi                     # imm = 0x1FFE
-	setl	%cl
-	testb	%dil, %dil
-	setne	%al
 	andb	%cl, %al
 	retq
 func00000000000000c1:                   # @func00000000000000c1

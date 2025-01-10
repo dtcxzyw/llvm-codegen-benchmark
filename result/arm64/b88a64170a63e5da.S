@@ -22,13 +22,9 @@ func000000000000000a:                   // @func000000000000000a
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	add	x8, x1, x2
-	mov	x9, #-8608480567731124088       // =0x8888888888888888
 	sub	x8, x0, x8
-	movk	x9, #34953
-	smulh	x9, x8, x9
-	add	x8, x9, x8
-	asr	x9, x8, #5
-	add	x0, x9, x8, lsr #63
+	add	x8, x8, x8, lsr #63
+	asr	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001

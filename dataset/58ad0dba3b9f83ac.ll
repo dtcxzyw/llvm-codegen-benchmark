@@ -83,14 +83,15 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openblas/optimized/dlaln2.c.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = shl i32 %3, 2
-  %5 = add nsw i32 %4, -3
+  %4 = shl i32 %3, 3
+  %5 = add nsw i32 %4, -1
   ret i32 %5
 }
 

@@ -60,7 +60,7 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; ncnn/optimized/deconvolutiondepthwise.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
@@ -70,7 +70,6 @@ entry:
 ; opencv/optimized/charuco_detector.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {

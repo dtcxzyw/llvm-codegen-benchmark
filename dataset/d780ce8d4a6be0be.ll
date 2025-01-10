@@ -1,15 +1,15 @@
 
-%"struct.OT::LongMetric.2730688" = type { %"struct.OT::IntType.2730689", %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
-%"class.gmx::BasicVector.3352761" = type { [3 x float] }
-%struct.ImVec2.3454247 = type { float, float }
-%struct.skl_plane_wm.3534310 = type { [8 x %struct.skl_wm_level.3534311], [8 x %struct.skl_wm_level.3534311], %struct.skl_wm_level.3534311, %struct.anon.58.3534312, i8 }
-%struct.skl_wm_level.3534311 = type { i16, i16, i8, i8, i8, i8 }
-%struct.anon.58.3534312 = type { %struct.skl_wm_level.3534311, %struct.skl_wm_level.3534311 }
+%"struct.OT::LongMetric.2730654" = type { %"struct.OT::IntType.2730655", %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%struct.Abc_IffObj_t_.2876931 = type { [7 x float] }
+%"class.gmx::BasicVector.3352727" = type { [3 x float] }
+%struct.ImVec2.3454213 = type { float, float }
+%struct.skl_plane_wm.3534276 = type { [8 x %struct.skl_wm_level.3534277], [8 x %struct.skl_wm_level.3534277], %struct.skl_wm_level.3534277, %struct.anon.58.3534278, i8 }
+%struct.skl_wm_level.3534277 = type { i16, i16, i8, i8, i8, i8 }
+%struct.anon.58.3534278 = type { %struct.skl_wm_level.3534277, %struct.skl_wm_level.3534277 }
 
 ; 7 occurrences:
 ; linux/optimized/io_uring.ll
@@ -99,8 +99,8 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730688"], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.145.2730690", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730654"], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.145.2730656", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -124,7 +124,7 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr [7 x float], ptr %1, i64 0, i64 %3
-  %5 = getelementptr %struct.Abc_IffObj_t_.2876965, ptr %4, i64 %0
+  %5 = getelementptr %struct.Abc_IffObj_t_.2876931, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -137,7 +137,7 @@ define ptr @func0000000000000013(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr [3 x float], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw %"class.gmx::BasicVector.3352761", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.gmx::BasicVector.3352727", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -181,7 +181,7 @@ entry:
 define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %struct.ImVec2.3454247], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %struct.ImVec2.3454213], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw float, ptr %4, i64 %0
   ret ptr %5
 }
@@ -192,7 +192,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %struct.skl_plane_wm.3534310], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [8 x %struct.skl_plane_wm.3534276], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }

@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3214856" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3214822" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -79,7 +79,7 @@ define ptr @func00000000000000ef(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = getelementptr nusw %"class.llvm::Use.3214856", ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.llvm::Use.3214822", ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 32
   ret ptr %7

@@ -51,6 +51,16 @@ entry:
 }
 
 ; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call noundef i32 @llvm.smin.i32(i32 %1, i32 0)
+  %3 = icmp slt i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {

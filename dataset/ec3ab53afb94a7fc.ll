@@ -35,17 +35,16 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/CGDebugInfo.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 81920
+  %2 = and i64 %1, 8
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 49152
-  %5 = and i64 %0, -16385
-  %6 = or i64 %4, %5
+  %4 = select i1 %3, i64 536870912, i64 34896609280
+  %5 = and i64 %0, -42331734548481
+  %6 = or i64 %5, %4
   ret i64 %6
 }
 

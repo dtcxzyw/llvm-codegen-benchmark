@@ -1,9 +1,9 @@
 
-%"struct.drjit::half.2609360" = type { i16 }
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
+%"struct.drjit::half.2609327" = type { i16 }
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
 
 ; 28 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
@@ -40,7 +40,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.drjit::half.2609360", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.drjit::half.2609327", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -103,7 +103,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -121,7 +121,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.2742031", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.2741997", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -399,8 +399,9 @@ entry:
   ret i1 %5
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; cpython/optimized/formatter_unicode.ll
+; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; linux/optimized/cpuset.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -479,6 +480,18 @@ define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
   %4 = icmp ne i64 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; luau/optimized/isocline.c.ll
+; postgres/optimized/zic.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sle i64 %1, %2
+  %4 = icmp slt i64 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
@@ -655,17 +668,6 @@ define i1 @func0000000000000321(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp samesign uge i64 %1, %2
   %4 = icmp eq i64 %0, 1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/zic.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sle i64 %1, %2
-  %4 = icmp slt i64 %0, 2147483648
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

@@ -1,8 +1,8 @@
 
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
 
 ; 1 occurrences:
 ; qemu/optimized/net_net.c.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.NetClientState.2706049, ptr %0, i64 %4
+  %5 = getelementptr %struct.NetClientState.2706015, ptr %0, i64 %4
   %6 = sub i64 0, %1
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7

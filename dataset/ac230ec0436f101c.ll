@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; boost/optimized/get_turns_areal_areal.ll
 ; boost/optimized/url_base.ll
@@ -59,7 +59,6 @@
 ; openusd/optimized/renderIndex.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/unparser.cc.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; qemu/optimized/io_channel-tls.c.ll
 ; qemu/optimized/io_channel-websock.c.ll
@@ -84,7 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 273 occurrences:
+; 275 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/absRpm.c.ll
@@ -264,6 +263,8 @@ entry:
 ; openmpi/optimized/pmix_bitmap.ll
 ; openspiel/optimized/pig.cc.ll
 ; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
 ; openusd/optimized/primGather.cpp.ll
 ; openusd/optimized/read.c.ll

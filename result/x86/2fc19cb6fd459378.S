@@ -31,11 +31,3 @@ func0000000000000015:                   # @func0000000000000015
 	subl	%eax, %edx
 	leal	-1(%rdi,%rdx), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leal	3(%rsi), %eax
-	testl	%esi, %esi
-	cmovnsl	%esi, %eax
-	shrl	$2, %eax
-	leal	(%rax,%rax,4), %eax
-	leal	1092(%rdi,%rax,4), %eax
-	retq

@@ -1,7 +1,7 @@
 
-%"struct.mitsuba::Point.2604586" = type { %"struct.drjit::StaticArrayImpl.29.2604587" }
-%"struct.drjit::StaticArrayImpl.29.2604587" = type { %"struct.drjit::StaticArrayImpl.30.2604588" }
-%"struct.drjit::StaticArrayImpl.30.2604588" = type { <4 x float> }
+%"struct.mitsuba::Point.2604553" = type { %"struct.drjit::StaticArrayImpl.29.2604554" }
+%"struct.drjit::StaticArrayImpl.29.2604554" = type { %"struct.drjit::StaticArrayImpl.30.2604555" }
+%"struct.drjit::StaticArrayImpl.30.2604555" = type { <4 x float> }
 
 ; 155 occurrences:
 ; abc/optimized/abcPrint.c.ll
@@ -164,7 +164,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 100
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.mitsuba::Point.2604586", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mitsuba::Point.2604553", ptr %0, i64 %3
   ret ptr %4
 }
 

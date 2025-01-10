@@ -20,6 +20,14 @@ func0000000000000021:                   # @func0000000000000021
 	orq	%rsi, %rax
 	sete	%al
 	retq
+func0000000000000181:                   # @func0000000000000181
+	movl	%edx, %eax
+	cmpq	%rax, %rdi
+	sete	%cl
+	testq	%rsi, %rsi
+	setne	%al
+	andb	%cl, %al
+	retq
 func0000000000000194:                   # @func0000000000000194
 	movl	%edx, %eax
 	cmpq	%rax, %rdi

@@ -1,5 +1,5 @@
 
-%"class.vcg::SimpleVoxel.3816348" = type { float }
+%"class.vcg::SimpleVoxel.3816298" = type { float }
 
 ; 14 occurrences:
 ; gromacs/optimized/freeenergyparameters.cpp.ll
@@ -61,7 +61,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.vcg::SimpleVoxel.3816348", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.vcg::SimpleVoxel.3816298", ptr %0, i64 %5
   ret ptr %6
 }
 

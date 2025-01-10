@@ -1,5 +1,5 @@
 
-; 295 occurrences:
+; 294 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -107,7 +107,6 @@
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
-; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/string.cpp.ll

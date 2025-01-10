@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/ewah_rlw.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/ui_vnc-jobs.c.ll
 ; Function Attrs: nounwind
@@ -16,8 +17,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 1 occurrences:
+; 2 occurrences:
 ; libquic/optimized/pair.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:

@@ -1,21 +1,21 @@
 
-%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
-%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
-%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
-%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
-%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
-%"struct.std::_Head_base.48.2612583" = type { ptr }
-%struct.USBHubPort.2705857 = type { %struct.USBPort.2705858, i16, i16 }
-%struct.USBPort.2705858 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705859 }
-%union.anon.1.2705859 = type { %struct.QTailQLink.2705860 }
-%struct.QTailQLink.2705860 = type { ptr, ptr }
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%"struct.OT::OffsetTo.253.2736566" = type { %"struct.OT::Offset.144.2736562" }
-%"struct.OT::Offset.144.2736562" = type { %"struct.OT::IntType.139.2736552" }
-%"struct.OT::IntType.139.2736552" = type { %struct.BEInt.140.2736553 }
-%struct.BEInt.140.2736553 = type { [4 x i8] }
+%"class.std::unique_ptr.41.2612545" = type { %"struct.std::__uniq_ptr_data.42.2612546" }
+%"struct.std::__uniq_ptr_data.42.2612546" = type { %"class.std::__uniq_ptr_impl.43.2612547" }
+%"class.std::__uniq_ptr_impl.43.2612547" = type { %"class.std::tuple.44.2612548" }
+%"class.std::tuple.44.2612548" = type { %"struct.std::_Tuple_impl.45.2612549" }
+%"struct.std::_Tuple_impl.45.2612549" = type { %"struct.std::_Head_base.48.2612550" }
+%"struct.std::_Head_base.48.2612550" = type { ptr }
+%struct.USBHubPort.2705823 = type { %struct.USBPort.2705824, i16, i16 }
+%struct.USBPort.2705824 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705825 }
+%union.anon.1.2705825 = type { %struct.QTailQLink.2705826 }
+%struct.QTailQLink.2705826 = type { ptr, ptr }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%"struct.OT::OffsetTo.253.2736532" = type { %"struct.OT::Offset.144.2736528" }
+%"struct.OT::Offset.144.2736528" = type { %"struct.OT::IntType.139.2736518" }
+%"struct.OT::IntType.139.2736518" = type { %struct.BEInt.140.2736519 }
+%struct.BEInt.140.2736519 = type { [4 x i8] }
 
-; 168 occurrences:
+; 169 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -167,6 +167,7 @@
 ; proj/optimized/igh_o.cpp.ll
 ; proj/optimized/imoll.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtext.c.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/prog.cc.ll
@@ -754,11 +755,11 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612545"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -792,7 +793,6 @@ entry:
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/zend_jit.ll
-; raylib/optimized/rcore.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
@@ -839,7 +839,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %struct.USBHubPort.2705857], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [8 x %struct.USBHubPort.2705823], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -938,7 +938,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -1010,7 +1010,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.253.2736566"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.253.2736532"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -6,14 +6,6 @@ func0000000000000058:                   # @func0000000000000058
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
-	cmpl	%esi, %edx
-	setne	%cl
-	cmpl	$1114112, %esi                  # imm = 0x110000
-	setne	%al
-	andb	%cl, %al
-	orb	%dil, %al
-	retq
 func0000000000000194:                   # @func0000000000000194
 	cmpl	%esi, %edx
 	setl	%cl

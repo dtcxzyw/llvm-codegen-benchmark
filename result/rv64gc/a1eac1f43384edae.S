@@ -15,9 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
-	li	a1, -29
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
+	sltiu	a0, a0, 2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	neg	a1, a1

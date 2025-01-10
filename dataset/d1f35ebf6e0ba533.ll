@@ -1,8 +1,8 @@
 
-%struct.stbcc__clump.3100977 = type { %union.stbcc__global_clumpid.3100978, i8, i8, i8, i8 }
-%union.stbcc__global_clumpid.3100978 = type { %struct.anon.3100979 }
-%struct.anon.3100979 = type { i32 }
-%struct.std_timing.3531788 = type { i8, i8 }
+%struct.stbcc__clump.3100943 = type { %union.stbcc__global_clumpid.3100944, i8, i8, i8, i8 }
+%union.stbcc__global_clumpid.3100944 = type { %struct.anon.3100945 }
+%struct.anon.3100945 = type { i32 }
+%struct.std_timing.3531754 = type { i8, i8 }
 
 ; 2 occurrences:
 ; openspiel/optimized/CalcTables.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %3 = mul nsw i64 %2, 4356
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100977], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100943], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = mul nsw i64 %2, 4356
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
-  %6 = getelementptr nusw [512 x %struct.stbcc__clump.3100977], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw [512 x %struct.stbcc__clump.3100943], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 18
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 5
-  %6 = getelementptr [6 x %struct.std_timing.3531788], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [6 x %struct.std_timing.3531754], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

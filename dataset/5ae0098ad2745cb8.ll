@@ -1,6 +1,6 @@
 
-%struct.CType.3680801 = type { i32, i32, i16, i16, %struct.GCRef.3680802 }
-%struct.GCRef.3680802 = type { i64 }
+%struct.CType.3680751 = type { i32, i32, i16, i16, %struct.GCRef.3680752 }
+%struct.GCRef.3680752 = type { i64 }
 
 ; 3 occurrences:
 ; flac/optimized/format.c.ll
@@ -56,7 +56,7 @@ entry:
 define i32 @func00000000000001c2(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.CType.3680801, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.CType.3680751, ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   %6 = zext i1 %5 to i32
   ret i32 %6

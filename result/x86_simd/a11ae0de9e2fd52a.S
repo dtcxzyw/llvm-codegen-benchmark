@@ -73,16 +73,11 @@ func0000000000000034:                   # @func0000000000000034
 	vpsllvq	%ymm1, %ymm2, %ymm0 {%k1} {z}
 	retq
 .LCPI9_0:
-	.quad	8                               # 0x8
-.LCPI9_2:
-	.quad	6                               # 0x6
-.LCPI9_1:
-	.long	2                               # 0x2
+	.quad	4                               # 0x4
 func0000000000000001:                   # @func0000000000000001
-	vpbroadcastq	.LCPI9_0(%rip), %ymm2   # ymm2 = [8,8,8,8]
-	vpcmpneqd	.LCPI9_1(%rip){1to4}, %xmm0, %k1
-	vpbroadcastq	.LCPI9_2(%rip), %ymm0   # ymm0 = [6,6,6,6]
-	vpsllvq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpbroadcastq	.LCPI9_0(%rip), %ymm2   # ymm2 = [4,4,4,4]
+	vptestmd	%xmm0, %xmm0, %k1
+	vpsllvq	%ymm1, %ymm2, %ymm0 {%k1} {z}
 	retq
 .LCPI10_0:
 	.quad	1                               # 0x1

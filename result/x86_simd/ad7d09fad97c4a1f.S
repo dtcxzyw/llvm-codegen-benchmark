@@ -17,7 +17,7 @@ func0000000000000014:                   # @func0000000000000014
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	16                              # 0x10
+	.quad	75                              # 0x4b
 func0000000000000058:                   # @func0000000000000058
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpminuq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

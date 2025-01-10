@@ -1,11 +1,11 @@
 
-%struct.t_pull_coord.3351164 = type { i32, %"class.std::__cxx11::basic_string.3351015", i32, %"class.std::__cxx11::basic_string.3351015", double, i32, %"struct.std::array.262.3351165", %"class.gmx::BasicVector.263.3351166", %"class.gmx::BasicVector.3351136", %"class.gmx::BasicVector.3351136", i8, float, float, float, float, i32 }
-%"class.std::__cxx11::basic_string.3351015" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3351016", i64, %union.anon.3351017 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3351016" = type { ptr }
-%union.anon.3351017 = type { i64, [8 x i8] }
-%"struct.std::array.262.3351165" = type { [6 x i32] }
-%"class.gmx::BasicVector.263.3351166" = type { [3 x i32] }
-%"class.gmx::BasicVector.3351136" = type { [3 x float] }
+%struct.t_pull_coord.3351130 = type { i32, %"class.std::__cxx11::basic_string.3350981", i32, %"class.std::__cxx11::basic_string.3350981", double, i32, %"struct.std::array.262.3351131", %"class.gmx::BasicVector.263.3351132", %"class.gmx::BasicVector.3351102", %"class.gmx::BasicVector.3351102", i8, float, float, float, float, i32 }
+%"class.std::__cxx11::basic_string.3350981" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3350982", i64, %union.anon.3350983 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3350982" = type { ptr }
+%union.anon.3350983 = type { i64, [8 x i8] }
+%"struct.std::array.262.3351131" = type { [6 x i32] }
+%"class.gmx::BasicVector.263.3351132" = type { [3 x i32] }
+%"class.gmx::BasicVector.3351102" = type { [3 x float] }
 
 ; 4 occurrences:
 ; opencv/optimized/ts_perf.cpp.ll
@@ -47,7 +47,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.t_pull_coord.3351164, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.t_pull_coord.3351130, ptr %0, i64 %4
   ret ptr %5
 }
 

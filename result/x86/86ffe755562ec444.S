@@ -3,11 +3,6 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	shrxl	%edx, %esi, %eax
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shrxl	%edx, %esi, %eax
 	cmpq	%rax, %rdi

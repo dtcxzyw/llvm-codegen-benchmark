@@ -1,8 +1,8 @@
 
-%"class.llvm::MachineOperand.3156275" = type { i32, %union.anon.431.3156276, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156277" }
-%union.anon.431.3156276 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3156277" = type { %"class.llvm::ArrayRef.432.3156278" }
-%"class.llvm::ArrayRef.432.3156278" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3156241" = type { i32, %union.anon.431.3156242, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156243" }
+%union.anon.431.3156242 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3156243" = type { %"class.llvm::ArrayRef.432.3156244" }
+%"class.llvm::ArrayRef.432.3156244" = type { ptr, i64 }
 
 ; 2 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -61,7 +61,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156275", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156241", ptr %0, i64 %6
   ret ptr %7
 }
 

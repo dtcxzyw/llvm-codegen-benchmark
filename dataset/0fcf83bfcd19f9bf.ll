@@ -198,16 +198,4 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %2, 24576
-  %4 = add nuw nsw i32 %0, %3
-  %5 = shl nuw nsw i32 %1, 14
-  %6 = add nuw i32 %4, %5
-  ret i32 %6
-}
-
 attributes #0 = { nounwind }

@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 3 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -168,7 +168,7 @@ entry:
   %2 = add i32 %1, 1023
   %3 = and i32 %2, 1023
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %4
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3074963", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }

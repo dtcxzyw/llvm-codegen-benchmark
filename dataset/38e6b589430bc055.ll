@@ -1,12 +1,11 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; coremark/optimized/core_main.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/InstSimplify.cpp.ll
 ; libevent/optimized/evutil.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/intel_pps.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/HeaderIncludes.cpp.ll

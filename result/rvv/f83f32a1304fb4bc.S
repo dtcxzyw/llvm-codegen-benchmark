@@ -40,6 +40,14 @@ func00000000000007ec:                   # @func00000000000007ec
 	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
+func00000000000002a8:                   # @func00000000000002a8
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 2
+	vadd.vv	v8, v8, v8
+	vadd.vv	v8, v8, v10
+	li	a0, 1032
+	vmsgtu.vx	v0, v8, a0
+	ret
 func000000000000050a:                   # @func000000000000050a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10

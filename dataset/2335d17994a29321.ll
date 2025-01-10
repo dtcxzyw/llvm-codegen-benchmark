@@ -1,5 +1,5 @@
 
-; 528 occurrences:
+; 529 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -288,6 +288,7 @@
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/random.ll
 ; php/optimized/zend_dfg.ll
 ; php/optimized/zend_inference.ll

@@ -1689,7 +1689,7 @@ entry:
   ret i1 %3
 }
 
-; 3788 occurrences:
+; 3789 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -5095,6 +5095,7 @@ entry:
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-at.c.ll
+; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
@@ -6484,7 +6485,7 @@ entry:
   ret i1 %3
 }
 
-; 5669 occurrences:
+; 5670 occurrences:
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -7036,7 +7037,6 @@ entry:
 ; cmake/optimized/cmPolicies.cxx.ll
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
 ; cmake/optimized/cmStandardLevelResolver.cxx.ll
-; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetPropCommandBase.cxx.ll
 ; cmake/optimized/cmTryRunCommand.cxx.ll
 ; cmake/optimized/cmWriteFileCommand.cxx.ll
@@ -11499,6 +11499,8 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
@@ -12705,7 +12707,7 @@ entry:
   ret i1 %3
 }
 
-; 160 occurrences:
+; 161 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pe.c.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
@@ -12850,6 +12852,7 @@ entry:
 ; wireshark/optimized/packet-flip.c.ll
 ; wireshark/optimized/packet-hartip.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-t30.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
@@ -12874,7 +12877,7 @@ entry:
   ret i1 %3
 }
 
-; 1930 occurrences:
+; 1928 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -13484,7 +13487,6 @@ entry:
 ; linux/optimized/raw.ll
 ; linux/optimized/rw.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsi_logging.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/sem.ll
 ; linux/optimized/seq_timer.ll
@@ -13546,7 +13548,6 @@ entry:
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll

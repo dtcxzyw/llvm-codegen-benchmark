@@ -1,10 +1,10 @@
 
-%struct.H5E_entry_t.3055251 = type { i8, %struct.H5E_error2_t.3055253 }
-%struct.H5E_error2_t.3055253 = type { i64, i64, i64, i32, ptr, ptr, ptr }
-%"struct.OT::OffsetTo.437.3883539" = type { %"struct.OT::Offset.3883536" }
-%"struct.OT::Offset.3883536" = type { %"struct.OT::IntType.3883421" }
-%"struct.OT::IntType.3883421" = type { %struct.BEInt.3883422 }
-%struct.BEInt.3883422 = type { [2 x i8] }
+%struct.H5E_entry_t.3055217 = type { i8, %struct.H5E_error2_t.3055219 }
+%struct.H5E_error2_t.3055219 = type { i64, i64, i64, i32, ptr, ptr, ptr }
+%"struct.OT::OffsetTo.437.3883489" = type { %"struct.OT::Offset.3883486" }
+%"struct.OT::Offset.3883486" = type { %"struct.OT::IntType.3883371" }
+%"struct.OT::IntType.3883371" = type { %struct.BEInt.3883372 }
+%struct.BEInt.3883372 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5Eint.c.ll
@@ -14,7 +14,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw [32 x %struct.H5E_entry_t.3055251], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw [32 x %struct.H5E_entry_t.3055217], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 10
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.437.3883539"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.437.3883489"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -1,7 +1,7 @@
 
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%struct.lsinfo.3651525 = type { i64, i64 }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%struct.lsinfo.3651491 = type { i64, i64 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -26,7 +26,7 @@ entry:
   %2 = add nuw nsw i64 %1, 4294967291
   %3 = and i64 %2, 4294967295
   %4 = getelementptr nusw nuw i8, ptr %0, i64 60
-  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
@@ -73,7 +73,7 @@ entry:
   %2 = add i64 %1, 2147483647
   %3 = and i64 %2, 2147483647
   %4 = getelementptr nusw nuw i8, ptr %0, i64 22632
-  %5 = getelementptr [50 x %struct.lsinfo.3651525], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [50 x %struct.lsinfo.3651491], ptr %4, i64 0, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }

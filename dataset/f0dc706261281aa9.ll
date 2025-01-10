@@ -1,7 +1,7 @@
 
-%"struct.OT::HBFixed.2742040" = type { %"struct.OT::IntType.181.2742043" }
-%"struct.OT::IntType.181.2742043" = type { %struct.BEInt.182.2742044 }
-%struct.BEInt.182.2742044 = type { [4 x i8] }
+%"struct.OT::HBFixed.2742006" = type { %"struct.OT::IntType.181.2742009" }
+%"struct.OT::IntType.181.2742009" = type { %struct.BEInt.182.2742010 }
+%struct.BEInt.182.2742010 = type { [4 x i8] }
 
 ; 20 occurrences:
 ; cmake/optimized/ftplistparser.c.ll
@@ -620,7 +620,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"struct.OT::HBFixed.2742040", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::HBFixed.2742006", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -875,10 +875,11 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; boost/optimized/to_chars.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/intel_bios.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
@@ -890,7 +891,7 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = sext i32 %2 to i64
   %5 = getelementptr i8, ptr %3, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 4
+  %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
 }
 

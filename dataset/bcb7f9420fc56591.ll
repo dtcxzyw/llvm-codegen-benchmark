@@ -1,12 +1,12 @@
 
-%"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207792" = type { %"class.llvm::PointerIntPair.1173.3207793", %"class.llvm::ArrayRef.3207794" }
-%"class.llvm::PointerIntPair.1173.3207793" = type { %"struct.llvm::detail::PunnedPointer.1008.3207795" }
-%"struct.llvm::detail::PunnedPointer.1008.3207795" = type { [8 x i8] }
-%"class.llvm::ArrayRef.3207794" = type { ptr, i64 }
-%"class.Eigen::Matrix.1393.3793029" = type { %"class.Eigen::PlainObjectBase.1394.3793030" }
-%"class.Eigen::PlainObjectBase.1394.3793030" = type { %"class.Eigen::DenseStorage.1401.3793031" }
-%"class.Eigen::DenseStorage.1401.3793031" = type { %"struct.Eigen::internal::plain_array.3793032" }
-%"struct.Eigen::internal::plain_array.3793032" = type { [9 x double] }
+%"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207758" = type { %"class.llvm::PointerIntPair.1173.3207759", %"class.llvm::ArrayRef.3207760" }
+%"class.llvm::PointerIntPair.1173.3207759" = type { %"struct.llvm::detail::PunnedPointer.1008.3207761" }
+%"struct.llvm::detail::PunnedPointer.1008.3207761" = type { [8 x i8] }
+%"class.llvm::ArrayRef.3207760" = type { ptr, i64 }
+%"class.Eigen::Matrix.1393.3792979" = type { %"class.Eigen::PlainObjectBase.1394.3792980" }
+%"class.Eigen::PlainObjectBase.1394.3792980" = type { %"class.Eigen::DenseStorage.1401.3792981" }
+%"class.Eigen::DenseStorage.1401.3792981" = type { %"struct.Eigen::internal::plain_array.3792982" }
+%"struct.Eigen::internal::plain_array.3792982" = type { [9 x double] }
 
 ; 3 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -146,7 +146,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000d0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207792", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.clang::MultiLevelTemplateArgumentList::ArgumentListLevel.3207758", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -16
   %5 = mul nsw i64 %0, -24
   %6 = getelementptr i8, ptr %4, i64 %5
@@ -258,7 +258,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000fc(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"class.Eigen::Matrix.1393.3793029", ptr %1, i64 %2, i32 0, i32 0, i32 0, i32 0, i64 1
+  %3 = getelementptr nuw %"class.Eigen::Matrix.1393.3792979", ptr %1, i64 %2, i32 0, i32 0, i32 0, i32 0, i64 1
   %4 = mul nuw nsw i64 %0, 24
   %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5

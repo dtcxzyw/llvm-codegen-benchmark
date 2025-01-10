@@ -87,15 +87,6 @@ func000000000000010c:                   # @func000000000000010c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000194:                   # @func0000000000000194
-	movl	%edi, %eax
-	andl	$2095104, %eax                  # imm = 0x1FF800
-	cmpl	$55296, %eax                    # imm = 0xD800
-	setne	%cl
-	cmpq	$1114112, %rdi                  # imm = 0x110000
-	setb	%al
-	andb	%cl, %al
-	retq
 func0000000000000081:                   # @func0000000000000081
 	testl	$257, %edi                      # imm = 0x101
 	sete	%cl

@@ -33,7 +33,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; bullet3/optimized/b3File.ll
 ; clamav/optimized/sigtool.c.ll
@@ -55,6 +55,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/graph.pb.cc.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/parse_context.cc.ll
@@ -77,11 +78,8 @@ entry:
   ret ptr %4
 }
 
-; 6 occurrences:
-; bullet3/optimized/b3File.ll
-; clamav/optimized/sigtool.c.ll
+; 3 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
-; pbrt-v4/optimized/textures.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind

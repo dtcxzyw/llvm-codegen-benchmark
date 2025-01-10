@@ -1,7 +1,7 @@
 
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
-%"struct.cv::softfloat.3724068" = type { i32 }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
+%"struct.cv::softfloat.3724018" = type { i32 }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 10 occurrences:
 ; postgres/optimized/qsort.ll
@@ -2017,7 +2017,7 @@ entry:
 define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3157992", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3157958", ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -2064,7 +2064,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 1023, %2
-  %4 = getelementptr nusw nuw %"struct.cv::softfloat.3724068", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.cv::softfloat.3724018", ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -2098,7 +2098,7 @@ entry:
 define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %1, i64 %3
+  %4 = getelementptr %union._Py_CODEUNIT.3974112, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }

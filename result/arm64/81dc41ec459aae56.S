@@ -51,12 +51,3 @@ func000000000000006e:                   // @func000000000000006e
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	mov	x8, #-7378697629483820647       // =0x9999999999999999
-	movk	x8, #6553, lsl #48
-	umulh	x9, x2, x8
-	madd	x8, x3, x8, x9
-	add	x0, x0, x8
-	ret
-                                        // -- End function

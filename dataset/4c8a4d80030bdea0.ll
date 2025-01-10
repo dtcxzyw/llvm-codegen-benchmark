@@ -1,30 +1,30 @@
 
-%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%struct._zval_struct.2789124 = type { %union._zend_value.2789134, %union.anon.2789135, %union.anon.2.2789136 }
-%union._zend_value.2789134 = type { i64 }
-%union.anon.2789135 = type { i32 }
-%union.anon.2.2789136 = type { i32 }
-%struct.boneIndexWeightPair.2826126 = type { i32, float }
-%struct.Vec_Int_t_.2876191 = type { i32, i32, ptr }
-%"struct.llvm::wasm::WasmSignature.3323298" = type { %"class.llvm::SmallVector.3323299", %"class.llvm::SmallVector.118.3323300", i32, i32 }
-%"class.llvm::SmallVector.3323299" = type <{ %"class.llvm::SmallVectorImpl.3323301", %"struct.llvm::SmallVectorStorage.3323302", [4 x i8] }>
-%"class.llvm::SmallVectorImpl.3323301" = type { %"class.llvm::SmallVectorTemplateBase.3323303" }
-%"class.llvm::SmallVectorTemplateBase.3323303" = type { %"class.llvm::SmallVectorTemplateCommon.3323304" }
-%"class.llvm::SmallVectorTemplateCommon.3323304" = type { %"class.llvm::SmallVectorBase.3323305" }
-%"class.llvm::SmallVectorBase.3323305" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.3323302" = type { [4 x i8] }
-%"class.llvm::SmallVector.118.3323300" = type { %"class.llvm::SmallVectorImpl.3323301", %"struct.llvm::SmallVectorStorage.119.3323306" }
-%"struct.llvm::SmallVectorStorage.119.3323306" = type { [16 x i8] }
-%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
-%"class.cv::detail::GCGraph<float>::Vtx.3732154" = type { ptr, i32, i32, i32, i32, float, i8 }
+%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%struct._zval_struct.2789090 = type { %union._zend_value.2789100, %union.anon.2789101, %union.anon.2.2789102 }
+%union._zend_value.2789100 = type { i64 }
+%union.anon.2789101 = type { i32 }
+%union.anon.2.2789102 = type { i32 }
+%struct.boneIndexWeightPair.2826092 = type { i32, float }
+%struct.Vec_Int_t_.2876157 = type { i32, i32, ptr }
+%"struct.llvm::wasm::WasmSignature.3323264" = type { %"class.llvm::SmallVector.3323265", %"class.llvm::SmallVector.118.3323266", i32, i32 }
+%"class.llvm::SmallVector.3323265" = type <{ %"class.llvm::SmallVectorImpl.3323267", %"struct.llvm::SmallVectorStorage.3323268", [4 x i8] }>
+%"class.llvm::SmallVectorImpl.3323267" = type { %"class.llvm::SmallVectorTemplateBase.3323269" }
+%"class.llvm::SmallVectorTemplateBase.3323269" = type { %"class.llvm::SmallVectorTemplateCommon.3323270" }
+%"class.llvm::SmallVectorTemplateCommon.3323270" = type { %"class.llvm::SmallVectorBase.3323271" }
+%"class.llvm::SmallVectorBase.3323271" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.3323268" = type { [4 x i8] }
+%"class.llvm::SmallVector.118.3323266" = type { %"class.llvm::SmallVectorImpl.3323267", %"struct.llvm::SmallVectorStorage.119.3323272" }
+%"struct.llvm::SmallVectorStorage.119.3323272" = type { [16 x i8] }
+%struct.FSE_decode_t.3533469 = type { i16, i8, i8 }
+%"class.cv::detail::GCGraph<float>::Vtx.3732104" = type { ptr, i32, i32, i32, i32, float, i8 }
 
 ; 17 occurrences:
 ; abc/optimized/abcOdc.c.ll
@@ -48,7 +48,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -69,7 +69,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040", ptr %0, i64 %3, i32 4
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007", ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -81,7 +81,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -115,7 +115,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nusw nuw %struct._zval_struct.2789124, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %struct._zval_struct.2789090, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -152,7 +152,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nusw %struct.boneIndexWeightPair.2826126, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %struct.boneIndexWeightPair.2826092, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -162,7 +162,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr %struct.Vec_Int_t_.2876191, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.Vec_Int_t_.2876157, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -172,7 +172,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr nusw nuw %"struct.llvm::wasm::WasmSignature.3323298", ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw nuw %"struct.llvm::wasm::WasmSignature.3323264", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -182,7 +182,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = getelementptr %struct.FSE_decode_t.3533503, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.FSE_decode_t.3533469, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -192,7 +192,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr nusw nuw %"class.cv::detail::GCGraph<float>::Vtx.3732154", ptr %0, i64 %3, i32 6
+  %4 = getelementptr nusw nuw %"class.cv::detail::GCGraph<float>::Vtx.3732104", ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 

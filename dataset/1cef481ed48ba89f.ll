@@ -149,11 +149,8 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 30 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
@@ -175,8 +172,6 @@ entry:
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/migration_ram.c.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/large.ll
@@ -429,7 +424,17 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 12 occurrences:
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; slurm/optimized/job_mgr.ll
 ; velox/optimized/Base64.cpp.ll
 ; Function Attrs: nounwind

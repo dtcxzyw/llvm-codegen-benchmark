@@ -14,7 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 26 occurrences:
+; 28 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/blk-iocost.ll
@@ -27,7 +27,9 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; z3/optimized/pb_card.cpp.ll

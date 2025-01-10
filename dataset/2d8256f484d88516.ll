@@ -1,10 +1,11 @@
 
-%struct.FormData_pg_attribute.3653303 = type { i32, %struct.nameData.3653304, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
-%struct.nameData.3653304 = type { [64 x i8] }
+%struct.FormData_pg_attribute.3653269 = type { i32, %struct.nameData.3653270, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
+%struct.nameData.3653270 = type { [64 x i8] }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; git/optimized/diffcore-delta.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
 entry:
@@ -21,7 +22,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr [0 x %struct.FormData_pg_attribute.3653303], ptr %0, i64 0, i64 %4, i32 17
+  %5 = getelementptr [0 x %struct.FormData_pg_attribute.3653269], ptr %0, i64 0, i64 %4, i32 17
   ret ptr %5
 }
 

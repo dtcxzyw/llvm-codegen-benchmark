@@ -37,8 +37,9 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/Sema.cpp.ll
+; postgres/optimized/formatting.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i32 %0, i8 %1) #0 {
 entry:

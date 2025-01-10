@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/yenta_socket.ll
 ; lvgl/optimized/lv_label.ll

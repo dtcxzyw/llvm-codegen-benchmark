@@ -1,5 +1,5 @@
 
-; 987 occurrences:
+; 988 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cutPre22.c.ll
@@ -177,6 +177,7 @@
 ; glslang/optimized/Constant.cpp.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
+; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/labels.c.ll
 ; graphviz/optimized/ortho.c.ll

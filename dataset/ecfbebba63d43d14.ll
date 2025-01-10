@@ -61,16 +61,15 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 255)
-  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
+  %1 = tail call i32 @llvm.smin.i32(i32 range(i32 -2147483646, -2147483648) %0, i32 512)
+  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 4)
   %3 = trunc i32 %2 to i8
   ret i8 %3
 }

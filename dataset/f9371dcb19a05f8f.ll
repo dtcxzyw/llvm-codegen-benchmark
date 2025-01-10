@@ -1,5 +1,5 @@
 
-; 285 occurrences:
+; 284 occurrences:
 ; cmake/optimized/byte_order.c.ll
 ; cpython/optimized/pyhash.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/SemaPPC.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luau/optimized/isocline.c.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/copy.cpp.ll

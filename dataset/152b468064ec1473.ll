@@ -37,7 +37,7 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 48 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/regexec.c.ll
 ; hdf5/optimized/H5FDonion.c.ll
@@ -78,6 +78,8 @@ entry:
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; mold/optimized/perf.cc.ll
 ; openjdk/optimized/zMark.ll
+; openssl/optimized/libssl-lib-s3_lib.ll
+; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openusd/optimized/registry.cpp.ll
 ; openvdb/optimized/Filter.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll

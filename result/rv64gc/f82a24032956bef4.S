@@ -15,15 +15,14 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a3, a1
-	lui	a4, 4
 	andi	a0, a0, 1
-	blt	a3, a4, .LBB1_3
+	bltz	a3, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:                                # %entry
 	mv	a0, a1
 	ret
 .LBB1_3:                                # %entry
-	lui	a2, 1048572
+	li	a2, 1
 	bnez	a0, .LBB1_2
 .LBB1_4:                                # %entry
 	mv	a0, a2

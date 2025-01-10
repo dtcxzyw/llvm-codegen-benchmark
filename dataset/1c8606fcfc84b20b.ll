@@ -1,8 +1,8 @@
 
-%"struct.OT::OffsetTo.435.3883845" = type { %"struct.OT::Offset.3883536" }
-%"struct.OT::Offset.3883536" = type { %"struct.OT::IntType.3883421" }
-%"struct.OT::IntType.3883421" = type { %struct.BEInt.3883422 }
-%struct.BEInt.3883422 = type { [2 x i8] }
+%"struct.OT::OffsetTo.435.3883795" = type { %"struct.OT::Offset.3883486" }
+%"struct.OT::Offset.3883486" = type { %"struct.OT::IntType.3883371" }
+%"struct.OT::IntType.3883371" = type { %struct.BEInt.3883372 }
+%struct.BEInt.3883372 = type { [2 x i8] }
 
 ; 133 occurrences:
 ; folly/optimized/farmhash.cpp.ll
@@ -148,7 +148,7 @@ entry:
   ret i1 %6
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; folly/optimized/SpookyHashV1.cpp.ll
@@ -177,7 +177,6 @@ entry:
 ; protobuf/optimized/parser.cc.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; snappy/optimized/snappy.cc.ll
-; tomlplusplus/optimized/toml.cpp.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -379,7 +378,7 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmltok.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -389,6 +388,7 @@ entry:
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; linux/optimized/libata-core.ll
 ; postgres/optimized/data.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
@@ -489,7 +489,7 @@ entry:
 define i1 @func00000000000001ec(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"struct.OT::OffsetTo.435.3883845", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::OffsetTo.435.3883795", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2
   %6 = icmp ne ptr %5, %4
   ret i1 %6

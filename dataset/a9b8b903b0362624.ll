@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; abc/optimized/ivyFastMap.c.ll
+; 15 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -25,11 +24,10 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; minetest/optimized/mapgen_flat.cpp.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll

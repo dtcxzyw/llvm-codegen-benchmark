@@ -1,8 +1,8 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
-%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
-%"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3418008" = type { i16, i32, i32, i32, float, float, %"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3418009" }
-%"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3418009" = type { ptr, i32, i32, [120 x i8], ptr }
+%class.btVector3.2818110 = type { [4 x float] }
+%class.btRotationalLimitMotor2.2818830 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3417974" = type { i16, i32, i32, i32, float, float, %"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3417975" }
+%"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3417975" = type { ptr, i32, i32, [120 x i8], ptr }
 
 ; 44 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -56,7 +56,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %7 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [3 x %class.btVector3.2818110], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
@@ -69,7 +69,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 2, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 992
-  %7 = getelementptr nusw nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [3 x %class.btRotationalLimitMotor2.2818830], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
@@ -99,7 +99,7 @@ entry:
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 2, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %7 = getelementptr nusw nuw [3 x %"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3418008"], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [3 x %"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3417974"], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

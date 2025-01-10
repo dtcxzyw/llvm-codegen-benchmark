@@ -49,11 +49,12 @@ func000000000000002c:                   # @func000000000000002c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000c7:                   # @func00000000000000c7
 	slti	a2, a2, 1
 	neg	a2, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func0000000000000288:                   # @func0000000000000288
 	li	a3, 23

@@ -36,6 +36,13 @@ func00000000000007ec:                   # @func00000000000007ec
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
+func00000000000002a8:                   # @func00000000000002a8
+	slli	a1, a1, 2
+	slli	a0, a0, 1
+	add	a0, a0, a1
+	sltiu	a0, a0, 1033
+	xori	a0, a0, 1
+	ret
 func000000000000050a:                   # @func000000000000050a
 	add	a0, a0, a1
 	srliw	a0, a0, 31

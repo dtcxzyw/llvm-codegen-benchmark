@@ -1,5 +1,5 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/util.ll
@@ -26,7 +26,7 @@ define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
   %3 = lshr i64 %2, 12
-  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

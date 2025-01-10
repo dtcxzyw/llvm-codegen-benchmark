@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 273 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -260,6 +260,7 @@
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/dump_dump.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/nbd_client.c.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -363,7 +364,7 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -379,6 +380,7 @@ entry:
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/vmcore.ll
+; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll

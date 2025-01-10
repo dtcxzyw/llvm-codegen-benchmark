@@ -38,12 +38,6 @@ func0000000000000052:                   # @func0000000000000052
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func000000000000006a:                   # @func000000000000006a
-	sext.w	a0, a0
-	andi	a1, a1, 255
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
 	andi	a1, a1, 255

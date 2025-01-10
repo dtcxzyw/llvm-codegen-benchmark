@@ -1072,7 +1072,7 @@ entry:
   ret i64 %5
 }
 
-; 78 occurrences:
+; 80 occurrences:
 ; abc/optimized/darLib.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -1120,6 +1120,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; minetest/optimized/guiHyperText.cpp.ll
+; node/optimized/simdutf.ll
 ; openjdk/optimized/multiVis.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-lib-siphash.ll
@@ -1141,6 +1142,7 @@ entry:
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/563918kfdqef84tz.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wireshark/optimized/packet-flexray.c.ll

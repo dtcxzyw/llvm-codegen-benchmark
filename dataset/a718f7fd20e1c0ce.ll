@@ -1,7 +1,7 @@
 
-%"class.cv::Mat.3735326" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3735327", %"struct.cv::MatStep.3735328" }
-%"struct.cv::MatSize.3735327" = type { ptr }
-%"struct.cv::MatStep.3735328" = type { ptr, [2 x i64] }
+%"class.cv::Mat.3735276" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3735277", %"struct.cv::MatStep.3735278" }
+%"struct.cv::MatSize.3735277" = type { ptr }
+%"struct.cv::MatStep.3735278" = type { ptr, [2 x i64] }
 
 ; 3 occurrences:
 ; openjdk/optimized/signature.ll
@@ -42,7 +42,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.cv::Mat.3735326", ptr %0, i64 %5, i32 2
+  %6 = getelementptr %"class.cv::Mat.3735276", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

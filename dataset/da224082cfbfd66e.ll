@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3230429" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3230395" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; clamav/optimized/mpool.c.ll
@@ -44,7 +44,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %0, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3230429", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3230395", ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -16,7 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/absRef.c.ll
 ; cpython/optimized/obmalloc.ll
 ; jq/optimized/jv.ll
@@ -27,7 +27,6 @@ entry:
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; re2/optimized/dfa.cc.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
@@ -71,8 +70,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 5 occurrences:
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll
 ; postgres/optimized/snapmgr.ll

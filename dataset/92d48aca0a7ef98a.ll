@@ -1,23 +1,4 @@
 
-; 9 occurrences:
-; cpython/optimized/codeobject.ll
-; hermes/optimized/Dumper.cpp.ll
-; hermes/optimized/IR.cpp.ll
-; hermes/optimized/ISel.cpp.ll
-; hermes/optimized/Math.cpp.ll
-; hermes/optimized/Passes.cpp.ll
-; hermes/optimized/SerializedLiteralGenerator.cpp.ll
-; luau/optimized/Compiler.cpp.ll
-; ruby/optimized/complex.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, double %1) #0 {
-entry:
-  %2 = bitcast double %1 to i64
-  %3 = icmp slt i64 %2, 0
-  %4 = and i1 %0, %3
-  ret i1 %4
-}
-
 ; 5 occurrences:
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/Math.cpp.ll
@@ -121,6 +102,24 @@ entry:
   %2 = bitcast double %1 to i64
   %3 = icmp ugt i64 %2, 9007199254740991
   %4 = and i1 %3, %0
+  ret i1 %4
+}
+
+; 8 occurrences:
+; cpython/optimized/codeobject.ll
+; hermes/optimized/Dumper.cpp.ll
+; hermes/optimized/IR.cpp.ll
+; hermes/optimized/ISel.cpp.ll
+; hermes/optimized/Math.cpp.ll
+; hermes/optimized/Passes.cpp.ll
+; hermes/optimized/SerializedLiteralGenerator.cpp.ll
+; luau/optimized/Compiler.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, double %1) #0 {
+entry:
+  %2 = bitcast double %1 to i64
+  %3 = icmp slt i64 %2, 0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

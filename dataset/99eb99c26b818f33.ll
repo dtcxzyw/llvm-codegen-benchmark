@@ -1,10 +1,12 @@
 
-; 50 occurrences:
+; 53 occurrences:
+; assimp/optimized/unzip.c.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; linux/optimized/gup.ll
 ; llvm/optimized/BTFParser.cpp.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -48,6 +50,7 @@
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
 ; qemu/optimized/backends_tpm_tpm_util.c.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/dict.ll
 ; soc-simulator/optimized/verilated.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind
@@ -62,7 +65,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 12 occurrences:
+; 13 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/AsyncSocketException.cpp.ll
@@ -74,6 +77,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; folly/optimized/ObserverManager.cpp.ll
 ; folly/optimized/OpenSSLHash.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
+; linux/optimized/ip6_output.ll
 ; linux/optimized/n_tty.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
@@ -84,12 +88,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; brotli/optimized/encode.c.ll
 ; linux/optimized/transaction.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/NativeEnumInjectedSources.cpp.ll
 ; minetest/optimized/chat.cpp.ll
+; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:

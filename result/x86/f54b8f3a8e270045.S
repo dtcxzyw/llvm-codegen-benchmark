@@ -22,8 +22,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+func000000000000000b:                   # @func000000000000000b
 	movl	$16, %eax
+	shrxl	%esi, %eax, %eax
+	cmpl	%eax, %edi
+	setge	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	$32, %eax
 	shrxl	%esi, %eax, %eax
 	cmpl	%eax, %edi
 	setl	%al

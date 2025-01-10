@@ -1,10 +1,10 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"struct.GUITable::Row.2703192" = type { ptr, i32, i32, i32 }
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
-%struct.FONSatlasNode.3611428 = type { i16, i16, i16 }
-%struct.SplitInterval.3651739 = type { double, double }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"struct.GUITable::Row.2703158" = type { ptr, i32, i32, i32 }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
+%struct.FONSatlasNode.3611394 = type { i16, i16, i16 }
+%struct.SplitInterval.3651705 = type { double, double }
 
 ; 30 occurrences:
 ; cpython/optimized/flowgraph.ll
@@ -42,7 +42,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -128,7 +128,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.GUITable::Row.2703192", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw %"struct.GUITable::Row.2703158", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -142,7 +142,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_op.2792325, ptr %0, i64 %3, i32 6
+  %4 = getelementptr nusw %struct._zend_op.2792291, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 
@@ -153,7 +153,7 @@ define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_op.2792325, ptr %0, i64 %3, i32 6
+  %4 = getelementptr nusw %struct._zend_op.2792291, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 
@@ -164,7 +164,7 @@ define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.FONSatlasNode.3611428, ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw %struct.FONSatlasNode.3611394, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -177,7 +177,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.SplitInterval.3651739, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.SplitInterval.3651705, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

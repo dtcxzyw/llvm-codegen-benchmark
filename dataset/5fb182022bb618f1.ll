@@ -43,9 +43,10 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cuddWindow.c.ll
+; abc/optimized/utilSort.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -170,18 +171,6 @@ entry:
   %4 = add nuw nsw i32 %3, 8
   %5 = zext nneg i32 %4 to i64
   %6 = icmp samesign ugt i64 %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; abc/optimized/utilSort.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

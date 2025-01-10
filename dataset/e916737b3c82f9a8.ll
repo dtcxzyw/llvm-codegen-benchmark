@@ -1,9 +1,9 @@
 
-%"struct.re2::PrefilterTree::Entry.2602102" = type { i32, %"class.std::vector.0.2602103", %"class.std::vector.0.2602103" }
-%"class.std::vector.0.2602103" = type { %"struct.std::_Vector_base.1.2602104" }
-%"struct.std::_Vector_base.1.2602104" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" = type { ptr, ptr, ptr }
+%"struct.re2::PrefilterTree::Entry.2602069" = type { i32, %"class.std::vector.0.2602070", %"class.std::vector.0.2602070" }
+%"class.std::vector.0.2602070" = type { %"struct.std::_Vector_base.1.2602071" }
+%"struct.std::_Vector_base.1.2602071" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" = type { ptr, ptr, ptr }
 
 ; 762 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -774,7 +774,7 @@ entry:
   %3 = sdiv exact i64 %2, 56
   %4 = add nuw nsw i64 %1, %3
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 164703072086692425)
-  %6 = getelementptr nusw nuw %"struct.re2::PrefilterTree::Entry.2602102", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.re2::PrefilterTree::Entry.2602069", ptr %0, i64 %5
   ret ptr %6
 }
 

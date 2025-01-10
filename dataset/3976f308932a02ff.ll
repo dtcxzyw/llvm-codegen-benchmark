@@ -395,7 +395,7 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; boost/optimized/matches_relation_factory.ll
@@ -403,6 +403,7 @@ entry:
 ; libquic/optimized/tasn_dec.c.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
+; openjdk/optimized/zip_util.ll
 ; openssl/optimized/libcrypto-lib-tasn_dec.ll
 ; openssl/optimized/libcrypto-shlib-tasn_dec.ll
 ; sqlite/optimized/sqlite3.ll

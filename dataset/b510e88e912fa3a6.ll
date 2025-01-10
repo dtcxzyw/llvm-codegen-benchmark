@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind

@@ -1,9 +1,8 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/zstd_decompress_block.ll

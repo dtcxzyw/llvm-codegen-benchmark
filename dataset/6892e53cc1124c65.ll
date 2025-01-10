@@ -1,7 +1,7 @@
 
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%class.mpz.3616116 = type { i32, i8, ptr }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%class.mpz.3616082 = type { i32, i8, ptr }
 
 ; 1 occurrences:
 ; minetest/optimized/chat.cpp.ll
@@ -39,7 +39,7 @@ entry:
   %4 = add i32 %3, -2
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794548, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -88,7 +88,7 @@ entry:
   %4 = add i32 %3, -1
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %class.mpz.3616116, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %class.mpz.3616082, ptr %0, i64 %6
   ret ptr %7
 }
 

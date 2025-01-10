@@ -16,10 +16,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sext.w	a1, a1
-	li	a2, 376
-	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, -364
+	addi	a0, a0, 6
 	ret
 func0000000000000053:                   # @func0000000000000053
 	sext.w	a1, a1

@@ -26,6 +26,13 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	$1, %rsi
 	sete	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	addq	$-32, %rsi
+	cmpq	%rdi, %rsi
+	cmovaeq	%rdi, %rsi
+	cmpq	$14, %rsi
+	setb	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	decq	%rsi
 	cmpq	%rdi, %rsi

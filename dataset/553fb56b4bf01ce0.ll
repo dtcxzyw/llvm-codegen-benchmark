@@ -1,11 +1,11 @@
 
-%struct.Elf64_Shdr.2600898 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%"struct.mold::elf::CieRecord.2635968" = type { ptr, ptr, i32, i32, i32, i32, i8, %"class.std::span.460.2635969", %"class.std::basic_string_view.2635833" }
-%"class.std::span.460.2635969" = type { ptr, %"class.std::__detail::__extent_storage.2635921" }
-%"class.std::__detail::__extent_storage.2635921" = type { i64 }
-%"class.std::basic_string_view.2635833" = type { i64, ptr }
-%struct.FWCfgEntry.2709409 = type { i32, i8, ptr, ptr, ptr, ptr }
-%struct.Odc_Obj_t_.2876286 = type { i16, i16, i16, i16, i32, i32 }
+%struct.Elf64_Shdr.2600865 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%"struct.mold::elf::CieRecord.2635935" = type { ptr, ptr, i32, i32, i32, i32, i8, %"class.std::span.460.2635936", %"class.std::basic_string_view.2635800" }
+%"class.std::span.460.2635936" = type { ptr, %"class.std::__detail::__extent_storage.2635888" }
+%"class.std::__detail::__extent_storage.2635888" = type { i64 }
+%"class.std::basic_string_view.2635800" = type { i64, ptr }
+%struct.FWCfgEntry.2709375 = type { i32, i8, ptr, ptr, ptr, ptr }
+%struct.Odc_Obj_t_.2876252 = type { i16, i16, i16, i16, i32, i32 }
 
 ; 31 occurrences:
 ; cpython/optimized/ceval.ll
@@ -43,7 +43,7 @@
 define ptr @func0000000000000000(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.Elf64_Shdr.2600898, ptr %0, i64 %2, i32 4
+  %3 = getelementptr %struct.Elf64_Shdr.2600865, ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -222,7 +222,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw nuw %"struct.mold::elf::CieRecord.2635968", ptr %0, i64 %2, i32 7
+  %3 = getelementptr nusw nuw %"struct.mold::elf::CieRecord.2635935", ptr %0, i64 %2, i32 7
   ret ptr %3
 }
 
@@ -238,7 +238,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr %struct.FWCfgEntry.2709409, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.FWCfgEntry.2709375, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -253,7 +253,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw nuw %struct.Odc_Obj_t_.2876286, ptr %0, i64 %2, i32 5
+  %3 = getelementptr nusw nuw %struct.Odc_Obj_t_.2876252, ptr %0, i64 %2, i32 5
   ret ptr %3
 }
 

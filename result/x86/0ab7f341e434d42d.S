@@ -1,9 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
 	movl	%esi, %eax
-	andl	$2, %edx
-	shll	$19, %edx
-	shll	$19, %eax
-	orl	%edi, %eax
+	shll	$4, %edx
+	orl	%edi, %edx
+	andl	$31, %eax
+	shll	$10, %eax
 	orl	%edx, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

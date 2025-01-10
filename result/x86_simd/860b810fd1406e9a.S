@@ -66,11 +66,11 @@ func000000000000002c:                   # @func000000000000002c
 	retq
 .LCPI8_0:
 	.quad	1                               # 0x1
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000c7:                   # @func00000000000000c7
 	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vmovdqa64	%ymm2, %ymm1 {%k1}
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpleq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -83,27 +83,18 @@ func00000000000001ea:                   # @func00000000000001ea
 .LBB11_2:                               # %entry
 	addi	a0, a2, 8
 	ret
-func0000000000000186:                   # @func0000000000000186
-	li	a3, 7
-	blt	a0, a3, .LBB12_2
-	addi	a0, a2, 7
-	ret
-.LBB12_2:
-	addi	a0, a1, -7
-	ret
-func0000000000000066:                   # @func0000000000000066
-	li	a3, 7
-	blt	a0, a3, .LBB13_2
-	addi	a0, a2, -7
-	ret
-.LBB13_2:
-	addi	a0, a1, 7
-	ret
 func00000000000001e4:                   # @func00000000000001e4
 	li	a3, 3
-	bltu	a0, a3, .LBB14_2
+	bltu	a0, a3, .LBB12_2
 	addi	a0, a2, 232
 	ret
-.LBB14_2:
+.LBB12_2:
 	addi	a0, a1, 8
+	ret
+func0000000000000066:                   # @func0000000000000066
+	blez	a0, .LBB13_2
+	addi	a0, a2, -8
+	ret
+.LBB13_2:
+	addi	a0, a1, 1544
 	ret

@@ -31,8 +31,9 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/ewah_rlw.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/ui_vnc-jobs.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
@@ -58,7 +59,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; nuttx/optimized/lib_memoutstream.c.ll
 ; zxing/optimized/HRI.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3746786" = type { i32, i32 }
+%"class.cv::Point_.3746736" = type { i32, i32 }
 
 ; 11 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -59,7 +59,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr %"class.cv::Point_.3746786", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.cv::Point_.3746736", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

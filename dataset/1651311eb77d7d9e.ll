@@ -162,16 +162,15 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = shl nuw nsw i32 %2, 1
-  %4 = and i32 %3, 32
+  %3 = shl nuw nsw i32 %2, 5
+  %4 = and i32 %3, 256
   %5 = or i32 %0, %4
   ret i32 %5
 }

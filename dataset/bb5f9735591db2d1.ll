@@ -1,6 +1,6 @@
 
-%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
-%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
+%struct.Str_Mux_t_.2877096 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877095] }
+%struct.Str_Edg_t_.2877095 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; php/optimized/cdf.ll
@@ -82,7 +82,7 @@ entry:
 define ptr @func00000000000001f0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.Str_Mux_t_.2877130, ptr %1, i64 %3, i32 4, i64 0, i32 2
+  %4 = getelementptr %struct.Str_Mux_t_.2877096, ptr %1, i64 %3, i32 4, i64 0, i32 2
   %5 = shl nuw nsw i64 %0, 4
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

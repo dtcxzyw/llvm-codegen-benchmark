@@ -103,7 +103,7 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; arrow/optimized/key_hash.cc.ll
 ; boost/optimized/url_base.ll
@@ -121,7 +121,6 @@ entry:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/cacheinfo.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll

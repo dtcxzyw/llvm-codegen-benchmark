@@ -1,9 +1,3 @@
-func00000000000003aa:                   # @func00000000000003aa
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 1
-	vadd.vv	v8, v8, v9
-	vmsgt.vi	v0, v8, -1
-	ret
 func0000000000000126:                   # @func0000000000000126
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma

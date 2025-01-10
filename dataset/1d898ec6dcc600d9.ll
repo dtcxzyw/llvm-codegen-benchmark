@@ -1,5 +1,5 @@
 
-%struct.Map_TimeStruct_t_.2877527 = type { float, float, float }
+%struct.Map_TimeStruct_t_.2877493 = type { float, float, float }
 
 ; 40 occurrences:
 ; abc/optimized/mapperTime.c.ll
@@ -47,7 +47,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nuw %struct.Map_TimeStruct_t_.2877527, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %struct.Map_TimeStruct_t_.2877493, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

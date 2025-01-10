@@ -79,10 +79,9 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/hdmi_chmap.ll
 ; openusd/optimized/childrenUtils.cpp.ll
-; postgres/optimized/spgdoinsert.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-pppoe.c.ll
 ; Function Attrs: nounwind

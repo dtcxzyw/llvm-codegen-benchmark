@@ -393,13 +393,12 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:

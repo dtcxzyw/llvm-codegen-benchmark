@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -7,6 +7,7 @@
 ; git/optimized/diffcore-delta.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,6 +1,6 @@
 
-%"class.clang::SourceRange.3170609" = type { %"class.clang::SourceLocation.3170592", %"class.clang::SourceLocation.3170592" }
-%"class.clang::SourceLocation.3170592" = type { i32 }
+%"class.clang::SourceRange.3170575" = type { %"class.clang::SourceLocation.3170558", %"class.clang::SourceLocation.3170558" }
+%"class.clang::SourceLocation.3170558" = type { i32 }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -50,6 +50,19 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
+define ptr @func00000000000001c0(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 -524
+  %4 = sext i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2176
+  %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
 define ptr @func00000000000000c0(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 -540
@@ -86,7 +99,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
-  %7 = getelementptr nusw nuw %"class.clang::SourceRange.3170609", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"class.clang::SourceRange.3170575", ptr %6, i64 %0
   ret ptr %7
 }
 

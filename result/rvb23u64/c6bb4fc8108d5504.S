@@ -52,6 +52,13 @@ func000000000000003c:                   # @func000000000000003c
 	slli	a0, a0, 46
 	or	a0, a0, a1
 	ret
+func00000000000000fd:                   # @func00000000000000fd
+	slli	a2, a2, 54
+	slli	a1, a1, 55
+	or	a1, a1, a2
+	slli	a0, a0, 56
+	or	a0, a0, a1
+	ret
 func000000000000002c:                   # @func000000000000002c
 	slli	a2, a2, 62
 	slli	a1, a1, 48

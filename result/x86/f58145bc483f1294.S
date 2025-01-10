@@ -13,9 +13,8 @@ func000000000000003f:                   # @func000000000000003f
 	leaq	32(%rsi,%rax), %rax
 	retq
 func0000000000000015:                   # @func0000000000000015
-	andl	$1, %edx
-	shll	$5, %edx
-	addq	%rsi, %rdx
-	shlq	$4, %rdi
-	leaq	96(%rdi,%rdx), %rax
+	leaq	2079(%rdi), %rax
+	testb	$1, %dl
+	cmovneq	%rdi, %rax
+	leaq	(%rax,%rsi,4), %rax
 	retq

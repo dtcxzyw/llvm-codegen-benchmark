@@ -12,10 +12,9 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; llvm/optimized/Architecture.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2708985 = type { i32, i32, i32, i32, i32 }
 
 ; 44 occurrences:
 ; cpython/optimized/mpdecimal.ll
@@ -2585,7 +2585,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3120
   %3 = lshr i64 %2, 3
-  %4 = getelementptr %struct.chan.2709019, ptr %0, i64 %3
+  %4 = getelementptr %struct.chan.2708985, ptr %0, i64 %3
   ret ptr %4
 }
 

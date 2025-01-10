@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/giaMini.c.ll
@@ -8,7 +8,6 @@
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
-; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

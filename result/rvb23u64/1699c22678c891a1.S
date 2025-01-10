@@ -43,6 +43,13 @@ func000000000000000a:                   # @func000000000000000a
 	sext.b	a1, a1
 	slt	a0, a1, a0
 	ret
+func000000000000002c:                   # @func000000000000002c
+	andi	a0, a0, 255
+	addi	a1, a1, -1
+	andi	a1, a1, 255
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
 func0000000000000064:                   # @func0000000000000064
 	andi	a0, a0, 255
 	addi	a1, a1, 2

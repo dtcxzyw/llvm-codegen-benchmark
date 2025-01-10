@@ -1,5 +1,5 @@
 
-; 739 occurrences:
+; 741 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -155,7 +155,9 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/icuexportdata.ll
@@ -194,7 +196,6 @@
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/md.ll
 ; linux/optimized/memory.ll
@@ -210,6 +211,7 @@
 ; linux/optimized/sys.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/trans_fd.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vmalloc.ll

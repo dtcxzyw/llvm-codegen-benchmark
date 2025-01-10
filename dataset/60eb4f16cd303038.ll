@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 16 occurrences:
 ; bullet3/optimized/b3ConvexUtility.ll
@@ -38,7 +38,7 @@ entry:
   %4 = icmp eq i64 %1, %3
   %5 = and i64 %1, 4294967295
   %6 = select i1 %4, i64 0, i64 %5
-  %7 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %6
+  %7 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %6
   ret ptr %7
 }
 

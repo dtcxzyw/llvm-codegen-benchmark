@@ -1,11 +1,12 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; draco/optimized/ply_reader.cc.ll
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/chunk-format.ll
 ; git/optimized/diff.ll
+; git/optimized/sequencer.ll
 ; git/optimized/server-info.ll
 ; gromacs/optimized/makebondedlinks.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
@@ -29,6 +30,7 @@
 ; qemu/optimized/block_mirror.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; slurm/optimized/gres.ll
+; slurm/optimized/gres_filter.ll
 ; soc-simulator/optimized/verilated.ll
 ; velox/optimized/ArrayShuffle.cpp.ll
 ; velox/optimized/FromUtf8.cpp.ll

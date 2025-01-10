@@ -46,6 +46,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edx, %esi
 	sete	%al
 	retq
+func00000000000000ea:                   # @func00000000000000ea
+	cmpl	%esi, %edi
+	cmovgl	%edi, %esi
+	cmpl	%edx, %esi
+	setg	%al
+	retq
 func000000000000008a:                   # @func000000000000008a
 	cmpl	%esi, %edi
 	cmovgl	%edi, %esi

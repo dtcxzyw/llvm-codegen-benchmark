@@ -114,10 +114,12 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
+; quantlib/optimized/lmmdriftcalculator.ll
+; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; Function Attrs: nounwind

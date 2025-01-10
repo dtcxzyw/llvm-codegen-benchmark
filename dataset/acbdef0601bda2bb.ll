@@ -89,20 +89,6 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/X86FloatingPoint.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = xor i32 %2, -1
-  %4 = and i32 %0, %3
-  %5 = icmp eq i32 %4, 0
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; Function Attrs: nounwind
@@ -121,6 +107,19 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 255, %1
+  %3 = xor i32 %2, -1
+  %4 = and i32 %0, %3
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 1, %1
   %3 = xor i32 %2, -1
   %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0

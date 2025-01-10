@@ -1,9 +1,3 @@
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	cmpq	%rax, %rsi
-	movl	$8, %eax
-	cmovel	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %ecx
 	xorl	%eax, %eax
@@ -15,12 +9,6 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rax, %rsi
 	movl	$-1, %eax
 	cmoval	%edi, %eax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	movl	%edi, %eax
-	cmpq	%rax, %rsi
-	movl	$-1, %eax
-	cmovel	%edi, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %ecx

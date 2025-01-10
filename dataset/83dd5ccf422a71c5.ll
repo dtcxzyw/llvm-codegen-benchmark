@@ -1,5 +1,5 @@
 
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
 
 ; 8 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -184,8 +184,8 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.TCGArgConstraint.2707243, ptr %1, i64 %3
-  %5 = getelementptr %struct.TCGArgConstraint.2707243, ptr %4, i64 %0
+  %4 = getelementptr %struct.TCGArgConstraint.2707209, ptr %1, i64 %3
+  %5 = getelementptr %struct.TCGArgConstraint.2707209, ptr %4, i64 %0
   ret ptr %5
 }
 

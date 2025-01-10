@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {

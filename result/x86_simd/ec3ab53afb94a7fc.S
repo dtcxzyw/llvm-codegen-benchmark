@@ -12,13 +12,16 @@ func0000000000000003:                   # @func0000000000000003
 	vorpd	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
-	.quad	81920                           # 0x14000
+	.quad	8                               # 0x8
 .LCPI1_1:
-	.quad	-16385                          # 0xffffffffffffbfff
+	.quad	34896609280                     # 0x820000000
 .LCPI1_2:
-	.quad	49152                           # 0xc000
+	.quad	536870912                       # 0x20000000
+.LCPI1_3:
+	.quad	-42331734548481                 # 0xffffd97fdfffdfff
 func0000000000000002:                   # @func0000000000000002
-	vptestmq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
-	vandpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
-	vorpd	.LCPI1_2(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
+	vpbroadcastq	.LCPI1_1(%rip), %ymm1   # ymm1 = [34896609280,34896609280,34896609280,34896609280]
+	vpbroadcastq	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [536870912,536870912,536870912,536870912]
+	vpternlogq	$236, .LCPI1_3(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

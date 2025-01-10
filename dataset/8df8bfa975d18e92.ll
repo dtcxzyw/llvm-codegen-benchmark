@@ -13,11 +13,9 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; curl/optimized/libcurl_la-mqtt.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll

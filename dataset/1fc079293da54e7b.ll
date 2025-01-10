@@ -1,18 +1,5 @@
 
 ; 1 occurrences:
-; abc/optimized/cuddTable.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000001d5(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 6
-  %4 = add nuw nsw i64 %1, 760
-  %5 = add nsw i64 %4, %3
-  %6 = shl nsw i64 %0, 3
-  %7 = add nsw i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
 ; luau/optimized/lgc.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000110(i64 %0, i64 %1, i64 %2) #0 {
@@ -25,8 +12,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; casadi/optimized/integrator.cpp.ll
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

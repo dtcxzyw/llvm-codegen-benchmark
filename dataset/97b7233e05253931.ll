@@ -1,5 +1,5 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
 
 ; 4 occurrences:
 ; linux/optimized/mm_init.ll
@@ -12,7 +12,7 @@ entry:
   %2 = lshr i32 %1, 9
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 48
-  %5 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }

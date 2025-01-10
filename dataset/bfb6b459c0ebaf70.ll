@@ -1,5 +1,5 @@
 
-; 1918 occurrences:
+; 1917 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDetect.c.ll
@@ -1496,7 +1496,6 @@
 ; velox/optimized/SwitchExpr.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; wasmedge/optimized/allocator.cpp.ll
 ; wasmedge/optimized/refInstr.cpp.ll
@@ -1926,7 +1925,7 @@ entry:
   ret ptr %3
 }
 
-; 589 occurrences:
+; 590 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -2422,6 +2421,7 @@ entry:
 ; postgres/optimized/regress.ll
 ; postgres/optimized/rowtypes.ll
 ; postgres/optimized/sinvaladt.ll
+; postgres/optimized/slru.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/spgscan.ll
@@ -5012,7 +5012,8 @@ entry:
   ret ptr %3
 }
 
-; 674 occurrences:
+; 682 occurrences:
+; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/span_test.cc.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -5042,12 +5043,14 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; clamav/optimized/7zIn.c.ll
+; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/stats_json.c.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/nghttp2_frame.c.ll
 ; cmake/optimized/nghttp2_submit.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
+; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; coreutils-rs/optimized/50z74lntrf1cjp27.ll
 ; coreutils-rs/optimized/5csmbnxbvn5bvzoy.ll
@@ -5343,6 +5346,7 @@ entry:
 ; ockam-rs/optimized/4t3y03rrak2rtjym.ll
 ; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
 ; oiio/optimized/deepdata.cpp.ll
+; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/hdrinput.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; openblas/optimized/dgemv_n.c.ll
@@ -5464,6 +5468,7 @@ entry:
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
+; openssl/optimized/libdefault-lib-ec_kem.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/nanocolor.c.ll
@@ -5518,9 +5523,11 @@ entry:
 ; proxygen/optimized/StructuredHeadersEncoder.cpp.ll
 ; qdrant-rs/optimized/3pzdaqjo344xoo11.ll
 ; qdrant-rs/optimized/5df3kwa3vgb8d75f.ll
+; quest/optimized/QuEST_common.c.ll
 ; raylib/optimized/raudio.c.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; redis/optimized/call_reply.ll
+; ring-rs/optimized/2y22w349mvmovez2.ll
 ; ring-rs/optimized/4prppzcttbsz5zvc.ll
 ; ripgrep-rs/optimized/f8chif48dhkcb7u.ll
 ; rocksdb/optimized/env_encryption.cc.ll
@@ -5557,6 +5564,7 @@ entry:
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
+; snappy/optimized/snappy.cc.ll
 ; spike/optimized/vector_unit.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
@@ -5695,7 +5703,7 @@ entry:
   ret ptr %3
 }
 
-; 1801 occurrences:
+; 1802 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -7497,6 +7505,7 @@ entry:
 ; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/fse_decompress.c.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
@@ -7505,7 +7514,7 @@ entry:
   ret ptr %3
 }
 
-; 987 occurrences:
+; 984 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -7735,7 +7744,6 @@ entry:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ipopt/optimized/SensMetadataMeasurement.ll
-; jq/optimized/regexec.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libquic/optimized/quic_crypto_client_config.cc.ll
 ; libquic/optimized/quic_crypto_server_config.cc.ll
@@ -7984,7 +7992,6 @@ entry:
 ; oiio/optimized/targaoutput.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; oniguruma/optimized/regexec.ll
 ; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dtrsm_kernel_RN.c.ll
 ; opencc/optimized/louds-trie.cc.ll
@@ -8025,7 +8032,6 @@ entry:
 ; opencv/optimized/gemm_layer.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; opencv/optimized/homography_solver.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/infer_ssd_onnx.cpp.ll
 ; opencv/optimized/layer.cpp.ll
 ; opencv/optimized/layer_norm.cpp.ll
@@ -8235,6 +8241,7 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; verilator/optimized/V3DfgRegularize.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmedge/optimized/canon.cpp.ll
 ; wasmedge/optimized/executor.cpp.ll
 ; wasmedge/optimized/formchecker.cpp.ll
@@ -8492,7 +8499,6 @@ entry:
 ; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
@@ -8554,12 +8560,13 @@ entry:
   ret ptr %3
 }
 
-; 169 occurrences:
+; 170 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; arrow/optimized/string.cc.ll
 ; clamav/optimized/7zIn.c.ll
+; clamav/optimized/stats_json.c.ll
 ; cmake/optimized/curl_ntlm_core.c.ll
 ; cmake/optimized/ntlm.c.ll
 ; cmake/optimized/udp.c.ll
@@ -8732,8 +8739,7 @@ entry:
   ret ptr %2
 }
 
-; 85 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
+; 70 occurrences:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -8742,8 +8748,6 @@ entry:
 ; boost/optimized/collate.ll
 ; boost/optimized/lock_pool.ll
 ; boost/optimized/url_base.ll
-; clamav/optimized/crypt.cpp.ll
-; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/kmeans1d.cpp.ll
@@ -8768,10 +8772,8 @@ entry:
 ; ncnn/optimized/pooling_x86_avx.cpp.ll
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
-; oiio/optimized/exif.cpp.ll
 ; opencv/optimized/agast.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
-; openssl/optimized/libdefault-lib-ec_kem.ll
 ; openvdb/optimized/SignedFloodFill.cc.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; php/optimized/cdf.ll
@@ -8799,25 +8801,15 @@ entry:
 ; quantlib/optimized/sampledcurve.ll
 ; quantlib/optimized/strippedoptionletadapter.ll
 ; quantlib/optimized/zabr.ll
-; quest/optimized/QuEST_common.c.ll
 ; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
-; ring-rs/optimized/2y22w349mvmovez2.ll
 ; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
-; rocksdb/optimized/xxhash.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
-; snappy/optimized/snappy.cc.ll
 ; tev/optimized/Image.cpp.ll
 ; verilator/optimized/V3SchedAcyclic.cpp.ll
 ; yosys/optimized/ast.ll
 ; yosys/optimized/rtlil.ll
 ; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
 ; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
-; zfp/optimized/encode4d.c.ll
-; zfp/optimized/encode4f.c.ll
-; zfp/optimized/encode4i.c.ll
-; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
@@ -8826,14 +8818,13 @@ entry:
   ret ptr %2
 }
 
-; 103 occurrences:
+; 102 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; boost/optimized/pattern.ll
-; clamav/optimized/stats_json.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dstegr.cpp.ll

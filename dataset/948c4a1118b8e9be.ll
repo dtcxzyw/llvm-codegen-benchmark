@@ -1,13 +1,13 @@
 
-%"class.std::unique_ptr.151.2684691" = type { %"struct.std::__uniq_ptr_data.152.2684692" }
-%"struct.std::__uniq_ptr_data.152.2684692" = type { %"class.std::__uniq_ptr_impl.153.2684693" }
-%"class.std::__uniq_ptr_impl.153.2684693" = type { %"class.std::tuple.154.2684694" }
-%"class.std::tuple.154.2684694" = type { %"struct.std::_Tuple_impl.155.2684695" }
-%"struct.std::_Tuple_impl.155.2684695" = type { %"struct.std::_Head_base.158.2684696" }
-%"struct.std::_Head_base.158.2684696" = type { ptr }
-%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820" = type { %"struct.std::atomic.3063608" }
-%"struct.std::atomic.3063608" = type { %"struct.std::__atomic_base.3063610" }
-%"struct.std::__atomic_base.3063610" = type { i64 }
+%"class.std::unique_ptr.151.2684658" = type { %"struct.std::__uniq_ptr_data.152.2684659" }
+%"struct.std::__uniq_ptr_data.152.2684659" = type { %"class.std::__uniq_ptr_impl.153.2684660" }
+%"class.std::__uniq_ptr_impl.153.2684660" = type { %"class.std::tuple.154.2684661" }
+%"class.std::tuple.154.2684661" = type { %"struct.std::_Tuple_impl.155.2684662" }
+%"struct.std::_Tuple_impl.155.2684662" = type { %"struct.std::_Head_base.158.2684663" }
+%"struct.std::_Head_base.158.2684663" = type { ptr }
+%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786" = type { %"struct.std::atomic.3063574" }
+%"struct.std::atomic.3063574" = type { %"struct.std::__atomic_base.3063576" }
+%"struct.std::__atomic_base.3063576" = type { i64 }
 
 ; 16 occurrences:
 ; assimp/optimized/clipper.cpp.ll
@@ -106,7 +106,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = urem i64 %1, %3
-  %5 = getelementptr nusw %"class.std::unique_ptr.151.2684691", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.std::unique_ptr.151.2684658", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -119,7 +119,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = urem i64 %1, %3
-  %5 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820", ptr %0, i64 %4
+  %5 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786", ptr %0, i64 %4
   ret ptr %5
 }
 

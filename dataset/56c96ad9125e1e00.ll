@@ -63,7 +63,7 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
@@ -73,7 +73,6 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/CGCall.cpp.ll
-; openblas/optimized/dorbdb1.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; wireshark/optimized/packet-ldp.c.ll

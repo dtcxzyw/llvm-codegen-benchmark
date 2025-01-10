@@ -37,14 +37,6 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-2, %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	leaq	3(%rsi), %rax
-	testq	%rsi, %rsi
-	cmovnsq	%rsi, %rax
-	shlq	$5, %rax
-	andq	$-128, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi

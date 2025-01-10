@@ -404,7 +404,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -447,7 +447,6 @@ entry:
 ; postgres/optimized/tablesync.ll
 ; postgres/optimized/zic.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/rjit_c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -646,7 +645,7 @@ entry:
   ret i1 %4
 }
 
-; 173 occurrences:
+; 172 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; boost/optimized/conversion.ll
@@ -696,7 +695,6 @@ entry:
 ; faiss/optimized/NSG.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/diff.ll
-; git/optimized/dir.ll
 ; git/optimized/server-info.ll
 ; git/optimized/wrapper.ll
 ; glslang/optimized/Pp.cpp.ll
@@ -848,7 +846,7 @@ entry:
   ret i1 %4
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -867,7 +865,6 @@ entry:
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
-; postgres/optimized/backend_status.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/dsa.ll
 ; postgres/optimized/pgbench.ll

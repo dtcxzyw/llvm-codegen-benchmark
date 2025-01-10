@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.long	416                             # 0x1a0
-func0000000000000000:                   # @func0000000000000000
+func0000000000000005:                   # @func0000000000000005
 	vcvttpd2dq	%zmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	432                             # 0x1b0
-func0000000000000005:                   # @func0000000000000005
+	.long	208                             # 0xd0
+func0000000000000000:                   # @func0000000000000000
 	vcvttpd2dq	%zmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0

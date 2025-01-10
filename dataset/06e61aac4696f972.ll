@@ -26,11 +26,12 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001f0(ptr %0, i64 %1, i32 %2) #0 {

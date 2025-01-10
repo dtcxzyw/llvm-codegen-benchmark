@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
@@ -9,6 +9,7 @@
 ; php/optimized/hash_xxhash.ll
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/xxhash.cc.ll
+; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000048(i64 %0, i128 %1) #0 {
 entry:
@@ -135,18 +136,6 @@ entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
   %5 = add nuw i64 %0, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i128 %1) #0 {
-entry:
-  %2 = mul i128 %1, 1844674407370955161
-  %3 = lshr i128 %2, 64
-  %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %0, %4
   ret i64 %5
 }
 

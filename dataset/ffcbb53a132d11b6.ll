@@ -1,6 +1,6 @@
 
-%struct.Map_TimeStruct_t_.2877423 = type { float, float, float }
-%"class.llvm::Use.3280005" = type { ptr, ptr, ptr, ptr }
+%struct.Map_TimeStruct_t_.2877389 = type { float, float, float }
+%"class.llvm::Use.3279971" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -33,7 +33,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 96
-  %4 = getelementptr nusw nuw %struct.Map_TimeStruct_t_.2877423, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %struct.Map_TimeStruct_t_.2877389, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -81,7 +81,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
   %3 = getelementptr nusw i8, ptr %0, i64 -64
-  %4 = getelementptr nusw nuw %"class.llvm::Use.3280005", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.llvm::Use.3279971", ptr %3, i64 %2
   ret ptr %4
 }
 

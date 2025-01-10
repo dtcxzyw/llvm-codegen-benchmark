@@ -1,5 +1,5 @@
 
-; 783 occurrences:
+; 784 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -470,6 +470,7 @@
 ; minetest/optimized/pipeline.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; minetest/optimized/socket.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll

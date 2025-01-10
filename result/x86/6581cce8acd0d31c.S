@@ -16,15 +16,6 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000000b:                   # @func000000000000000b
-	cmpq	$5, %rdx
-	movl	$4, %eax
-	cmovgeq	%rdx, %rax
-	cmpq	%rsi, %rax
-	cmovgeq	%rsi, %rax
-	cmpq	%rax, %rdi
-	setge	%al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rdx, %rax
 	sarq	$63, %rax

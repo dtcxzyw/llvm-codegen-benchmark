@@ -35,10 +35,6 @@ func0000000000000058:                   # @func0000000000000058
 	shlq	$4, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
-	movslq	%esi, %rax
-	leaq	-1(%rdi,%rax), %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	shrq	$3, %rsi
 	movslq	%esi, %rax
@@ -54,8 +50,4 @@ func000000000000000a:                   # @func000000000000000a
 	shrq	$3, %rsi
 	movslq	%esi, %rax
 	leaq	-16(%rdi,%rax,8), %rax
-	retq
-func000000000000001f:                   # @func000000000000001f
-	movslq	%esi, %rax
-	leaq	4(%rdi,%rax), %rax
 	retq

@@ -406,7 +406,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -424,7 +424,6 @@ entry:
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openusd/optimized/reconintra.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/tvbuff_rdp.c.ll
 ; z3/optimized/zstring.cpp.ll
@@ -466,6 +465,16 @@ define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef range(i32 0, 1114112) i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = icmp samesign ugt i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; openusd/optimized/reconintra.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 

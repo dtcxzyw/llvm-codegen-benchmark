@@ -226,8 +226,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; git/optimized/sha256.ll
+; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; spike/optimized/s_subMagsF32.ll
@@ -235,7 +234,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %0, 1
+  %3 = add nuw nsw i64 %0, 1073741824
   %4 = sub nsw i64 %3, %2
   ret i64 %4
 }

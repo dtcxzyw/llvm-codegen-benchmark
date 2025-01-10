@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/lpkSets.c.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -16,7 +15,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

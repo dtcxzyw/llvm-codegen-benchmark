@@ -16,7 +16,7 @@ func0000000000000016:                   # @func0000000000000016
 	sub	a2, a2, a3
 	add	a0, a0, a2
 	ret
-func0000000000000003:                   # @func0000000000000003
+func0000000000000002:                   # @func0000000000000002
 	li	a3, -96
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -39,12 +39,6 @@ func0000000000000013:                   # @func0000000000000013
 	slli	a2, a2, 9
 	add	a0, a0, a1
 	sub	a2, a2, a3
-	add	a0, a0, a2
-	ret
-func0000000000000002:                   # @func0000000000000002
-	slli	a3, a2, 1
-	add	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000003e:                   # @func000000000000003e

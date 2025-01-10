@@ -1,8 +1,8 @@
 
-%"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610" = type { i16, i16, i16 }
-%"struct.glslang::TTypeLoc.2911887" = type { ptr, %"struct.glslang::TSourceLoc.2911888" }
-%"struct.glslang::TSourceLoc.2911888" = type { ptr, i32, i32, i32 }
-%struct.ptr_info.3062160 = type { ptr, i32 }
+%"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822576" = type { i16, i16, i16 }
+%"struct.glslang::TTypeLoc.2911853" = type { ptr, %"struct.glslang::TSourceLoc.2911854" }
+%"struct.glslang::TSourceLoc.2911854" = type { ptr, i32, i32, i32 }
+%struct.ptr_info.3062126 = type { ptr, i32 }
 
 ; 37 occurrences:
 ; assimp/optimized/clipper.cpp.ll
@@ -62,7 +62,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822610", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::HalfLife::HL1MeshFace.2822576", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -86,7 +86,7 @@ define ptr @func0000000000000046(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"struct.glslang::TTypeLoc.2911887", ptr %0, i64 %3
+  %4 = getelementptr %"struct.glslang::TTypeLoc.2911853", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -97,7 +97,7 @@ entry:
 define ptr @func0000000000000026(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr %struct.ptr_info.3062160, ptr %0, i64 %2
+  %3 = getelementptr %struct.ptr_info.3062126, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -16
   ret ptr %4
 }

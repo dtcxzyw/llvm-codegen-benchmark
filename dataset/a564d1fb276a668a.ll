@@ -39,20 +39,6 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 60
-  %4 = or disjoint i32 %3, %0
-  %5 = add nsw i32 %1, -32
-  %6 = add nsw i32 %4, %5
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; brotli/optimized/transform.c.ll
 ; Function Attrs: nounwind

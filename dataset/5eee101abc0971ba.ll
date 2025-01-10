@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; cpython/optimized/pylifecycle.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -13,7 +13,6 @@
 ; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; openblas/optimized/dlarre.c.ll
 ; openjdk/optimized/DrawPolygons.ll
 ; openssl/optimized/libcrypto-lib-cmp_ctx.ll
 ; openssl/optimized/libcrypto-shlib-cmp_ctx.ll

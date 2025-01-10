@@ -6,13 +6,13 @@ func0000000000000057:                   # @func0000000000000057
 	addq	%rsi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movq	%rdx, %rax
+func0000000000000020:                   # @func0000000000000020
+	movq	%rdi, %rax
 	shrq	$63, %rax
-	addq	%rdx, %rax
-	shrq	%rax
 	addq	%rdi, %rax
+	shrq	%rax
 	addq	%rsi, %rax
+	addq	%rdx, %rax
 	addq	%rax, %rax
 	retq
 func0000000000000034:                   # @func0000000000000034
@@ -27,13 +27,13 @@ func0000000000000034:                   # @func0000000000000034
 	addl	%esi, %eax
 	shlq	$32, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	leaq	3(%rdx), %rax
-	testq	%rdx, %rdx
-	cmovnsq	%rdx, %rax
+func0000000000000024:                   # @func0000000000000024
+	leaq	3(%rdi), %rax
+	testq	%rdi, %rdi
+	cmovnsq	%rdi, %rax
 	shrq	$2, %rax
-	addq	%rdi, %rax
 	addq	%rsi, %rax
+	addq	%rdx, %rax
 	shlq	$2, %rax
 	retq
 func0000000000000040:                   # @func0000000000000040
@@ -52,6 +52,15 @@ func0000000000000021:                   # @func0000000000000021
 	shrq	%rcx
 	subq	%rcx, %rax
 	addq	%rax, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	leaq	63(%rdx), %rax
+	testq	%rdx, %rdx
+	cmovnsq	%rdx, %rax
+	shrq	$6, %rax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	shlq	$32, %rax
 	retq
 func0000000000000054:                   # @func0000000000000054
 	sarq	$3, %rdx

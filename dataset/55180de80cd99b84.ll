@@ -1,19 +1,6 @@
 
 ; 3 occurrences:
-; cmake/optimized/http1.c.ll
-; curl/optimized/libcurl_la-http1.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = xor i64 %3, -1
-  %5 = add i64 %1, %4
-  %6 = getelementptr nusw nuw [8192 x i8], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 2 occurrences:
 ; php/optimized/php_reflection.ll
 ; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind

@@ -935,12 +935,13 @@ entry:
   ret i1 %4
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/inflate.c.ll
+; cpython/optimized/dtoa.ll
 ; gromacs/optimized/inflate.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/zip.c.ll

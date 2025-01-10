@@ -1,21 +1,21 @@
 
-%"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844355" = type { %"class.QuantLib::Array.2844331", %"class.QuantLib::Array.2844331", %"class.QuantLib::Array.2844331", %"class.boost::shared_ptr.86.2844330" }
-%"class.QuantLib::Array.2844331" = type { %"class.std::unique_ptr.2844332", i64 }
-%"class.std::unique_ptr.2844332" = type { %"struct.std::__uniq_ptr_data.2844333" }
-%"struct.std::__uniq_ptr_data.2844333" = type { %"class.std::__uniq_ptr_impl.2844334" }
-%"class.std::__uniq_ptr_impl.2844334" = type { %"class.std::tuple.2844335" }
-%"class.std::tuple.2844335" = type { %"struct.std::_Tuple_impl.2844336" }
-%"struct.std::_Tuple_impl.2844336" = type { %"struct.std::_Head_base.44.2844337" }
-%"struct.std::_Head_base.44.2844337" = type { ptr }
-%"class.boost::shared_ptr.86.2844330" = type { ptr, %"class.boost::detail::shared_count.2844318" }
-%"class.boost::detail::shared_count.2844318" = type { ptr }
-%struct.HydrogenGridCell.3365940 = type { %"struct.gmx::EnumerationArray.121.3365941", %"struct.gmx::EnumerationArray.121.3365941" }
-%"struct.gmx::EnumerationArray.121.3365941" = type { [3 x %struct.HydrogenCellType.3365939] }
-%struct.HydrogenCellType.3365939 = type { %"class.std::vector.3365808" }
-%"class.std::vector.3365808" = type { %"struct.std::_Vector_base.3365815" }
-%"struct.std::_Vector_base.3365815" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3365816" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3365816" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3365817" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3365817" = type { ptr, ptr, ptr }
+%"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844321" = type { %"class.QuantLib::Array.2844297", %"class.QuantLib::Array.2844297", %"class.QuantLib::Array.2844297", %"class.boost::shared_ptr.86.2844296" }
+%"class.QuantLib::Array.2844297" = type { %"class.std::unique_ptr.2844298", i64 }
+%"class.std::unique_ptr.2844298" = type { %"struct.std::__uniq_ptr_data.2844299" }
+%"struct.std::__uniq_ptr_data.2844299" = type { %"class.std::__uniq_ptr_impl.2844300" }
+%"class.std::__uniq_ptr_impl.2844300" = type { %"class.std::tuple.2844301" }
+%"class.std::tuple.2844301" = type { %"struct.std::_Tuple_impl.2844302" }
+%"struct.std::_Tuple_impl.2844302" = type { %"struct.std::_Head_base.44.2844303" }
+%"struct.std::_Head_base.44.2844303" = type { ptr }
+%"class.boost::shared_ptr.86.2844296" = type { ptr, %"class.boost::detail::shared_count.2844284" }
+%"class.boost::detail::shared_count.2844284" = type { ptr }
+%struct.HydrogenGridCell.3365906 = type { %"struct.gmx::EnumerationArray.121.3365907", %"struct.gmx::EnumerationArray.121.3365907" }
+%"struct.gmx::EnumerationArray.121.3365907" = type { [3 x %struct.HydrogenCellType.3365905] }
+%struct.HydrogenCellType.3365905 = type { %"class.std::vector.3365774" }
+%"class.std::vector.3365774" = type { %"struct.std::_Vector_base.3365781" }
+%"struct.std::_Vector_base.3365781" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3365782" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3365782" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3365783" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3365783" = type { ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; abc/optimized/sclSize.c.ll
@@ -24,8 +24,8 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844355", ptr %1, i64 %2
-  %4 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844355", ptr %1, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844321", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844321", ptr %1, i64 %2, i32 1
   %5 = select i1 %0, ptr %4, ptr %3
   ret ptr %5
 }
@@ -39,8 +39,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.HydrogenGridCell.3365940, ptr %1, i64 %2
-  %4 = getelementptr nusw %struct.HydrogenGridCell.3365940, ptr %1, i64 %2, i32 1
+  %3 = getelementptr nusw %struct.HydrogenGridCell.3365906, ptr %1, i64 %2
+  %4 = getelementptr nusw %struct.HydrogenGridCell.3365906, ptr %1, i64 %2, i32 1
   %5 = select i1 %0, ptr %4, ptr %3
   ret ptr %5
 }

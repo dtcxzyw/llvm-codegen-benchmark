@@ -1,11 +1,11 @@
 
-%struct.rb_code_location_struct.2600702 = type { %struct.rb_code_position_struct.2600703, %struct.rb_code_position_struct.2600703 }
-%struct.rb_code_position_struct.2600703 = type { i32, i32 }
-%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
-%struct.rb_code_position_struct.2601677 = type { i32, i32 }
-%"class.std::__cxx11::basic_string.3864298" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864299", i64, %union.anon.3864300 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864299" = type { ptr }
-%union.anon.3864300 = type { i64, [8 x i8] }
+%struct.rb_code_location_struct.2600669 = type { %struct.rb_code_position_struct.2600670, %struct.rb_code_position_struct.2600670 }
+%struct.rb_code_position_struct.2600670 = type { i32, i32 }
+%struct.rb_code_location_struct.2601643 = type { %struct.rb_code_position_struct.2601644, %struct.rb_code_position_struct.2601644 }
+%struct.rb_code_position_struct.2601644 = type { i32, i32 }
+%"class.std::__cxx11::basic_string.3864248" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864249", i64, %union.anon.3864250 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864249" = type { ptr }
+%union.anon.3864250 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/parse.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000053(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %struct.rb_code_location_struct.2600702, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %struct.rb_code_location_struct.2600669, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -25,7 +25,7 @@ define ptr @func000000000000005b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %struct.rb_code_location_struct.2601676, ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %struct.rb_code_location_struct.2601643, ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -103,7 +103,7 @@ define ptr @func0000000000000050(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %"class.std::__cxx11::basic_string.3864298", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::__cxx11::basic_string.3864248", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -96
   ret ptr %6
 }

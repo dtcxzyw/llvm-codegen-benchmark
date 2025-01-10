@@ -14,10 +14,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; git/optimized/remote.ll
 ; minetest/optimized/CFileSystem.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

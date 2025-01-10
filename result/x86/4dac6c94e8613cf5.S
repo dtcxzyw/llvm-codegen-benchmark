@@ -1,7 +1,7 @@
 func0000000000000130:                   # @func0000000000000130
 	movl	%edx, %eax
 	addq	%rsi, %rax
-	leaq	-540(%rax,%rdi,4), %rax
+	leaq	-524(%rax,%rdi,4), %rax
 	retq
 func00000000000001ff:                   # @func00000000000001ff
 	movl	%edx, %eax

@@ -1,7 +1,7 @@
 
-%"class.cv::Mat.3727747" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3727748", %"struct.cv::MatStep.3727749" }
-%"struct.cv::MatSize.3727748" = type { ptr }
-%"struct.cv::MatStep.3727749" = type { ptr, [2 x i64] }
+%"class.cv::Mat.3727697" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3727698", %"struct.cv::MatStep.3727699" }
+%"struct.cv::MatSize.3727698" = type { ptr }
+%"struct.cv::MatStep.3727699" = type { ptr, [2 x i64] }
 
 ; 14 occurrences:
 ; arrow/optimized/light_array.cc.ll
@@ -37,7 +37,7 @@ entry:
   %3 = sdiv i64 %2, 96
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw %"class.cv::Mat.3727747", ptr %1, i64 %5
+  %6 = getelementptr nusw %"class.cv::Mat.3727697", ptr %1, i64 %5
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

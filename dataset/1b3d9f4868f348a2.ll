@@ -1,5 +1,5 @@
 
-%"class.clang::detail::CXXOperatorIdName.3240489" = type { i32, ptr }
+%"class.clang::detail::CXXOperatorIdName.3240455" = type { i32, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/rhashtable.ll
@@ -36,7 +36,7 @@ define i64 @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 17384
-  %4 = getelementptr nusw nuw [46 x %"class.clang::detail::CXXOperatorIdName.3240489"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [46 x %"class.clang::detail::CXXOperatorIdName.3240455"], ptr %3, i64 0, i64 %2
   %5 = ptrtoint ptr %4 to i64
   %6 = or disjoint i64 %5, 6
   ret i64 %6

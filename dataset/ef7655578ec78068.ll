@@ -1,12 +1,12 @@
 
-%struct.vfio_region_sparse_mmap_area.2707559 = type { i64, i64 }
-%struct.CalloutData.2710338 = type { i32, [5 x %struct.anon.2710339] }
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
-%"class.btAxisSweep3Internal<unsigned short>::Handle.2819241" = type { %struct.btBroadphaseProxy.base.2819242, [3 x i16], [3 x i16], ptr }
-%struct.btBroadphaseProxy.base.2819242 = type <{ ptr, i32, i32, i32, %class.btVector3.2819243, %class.btVector3.2819243 }>
-%class.btVector3.2819243 = type { [4 x float] }
+%struct.vfio_region_sparse_mmap_area.2707525 = type { i64, i64 }
+%struct.CalloutData.2710304 = type { i32, [5 x %struct.anon.2710305] }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
+%"class.btAxisSweep3Internal<unsigned short>::Handle.2819207" = type { %struct.btBroadphaseProxy.base.2819208, [3 x i16], [3 x i16], ptr }
+%struct.btBroadphaseProxy.base.2819208 = type <{ ptr, i32, i32, i32, %class.btVector3.2819209, %class.btVector3.2819209 }>
+%class.btVector3.2819209 = type { [4 x float] }
 
 ; 26 occurrences:
 ; linux/optimized/datagram.ll
@@ -41,7 +41,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = sext i32 %0 to i64
-  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.2707559], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.2707525], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -53,10 +53,10 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutData.2710338, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutData.2710304, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -120
   %5 = sext i32 %0 to i64
-  %6 = getelementptr nusw [5 x %struct.anon.2710339], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw [5 x %struct.anon.2710305], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -125,7 +125,7 @@ entry:
 define ptr @func000000000000003e(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %0 to i64
-  %4 = getelementptr %"class.btAxisSweep3Internal<unsigned short>::Handle.2819241", ptr %1, i64 %2, i32 1, i64 %3
+  %4 = getelementptr %"class.btAxisSweep3Internal<unsigned short>::Handle.2819207", ptr %1, i64 %2, i32 1, i64 %3
   ret ptr %4
 }
 

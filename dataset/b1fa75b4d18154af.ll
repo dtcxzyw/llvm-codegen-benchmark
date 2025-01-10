@@ -1,6 +1,47 @@
 
-; 65 occurrences:
+; 30 occurrences:
+; cpython/optimized/obmalloc.ll
+; cpython/optimized/unicodeobject.ll
+; linux/optimized/cistpl.ll
+; linux/optimized/extents.ll
+; linux/optimized/fse_decompress.ll
+; linux/optimized/kobject_uevent.ll
+; linux/optimized/lz4_decompress.ll
+; linux/optimized/namei.ll
+; linux/optimized/nf_conntrack_irc.ll
+; linux/optimized/seq_file.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/xxhash.ll
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/oracle_compat.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/regproc.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; ruby/optimized/parse.ll
+; ruby/optimized/vm.ll
+; wireshark/optimized/blf.c.ll
+; wireshark/optimized/ngsniffer.c.ll
+; wireshark/optimized/packet-kafka.c.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 -2
+  %3 = getelementptr i8, ptr %0, i64 -2
+  %4 = icmp ugt ptr %3, %2
+  ret i1 %4
+}
+
+; 70 occurrences:
 ; cpython/optimized/listobject.ll
+; cpython/optimized/obmalloc.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -47,18 +88,22 @@
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
 ; postgres/optimized/jsonapi_srv.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/regcomp.ll
 ; postgres/optimized/wchar.ll
 ; postgres/optimized/wchar_shlib.ll
 ; postgres/optimized/wchar_srv.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
+; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
+; ruby/optimized/dir.ll
 ; ruby/optimized/encoding.ll
 ; ruby/optimized/error.ll
 ; ruby/optimized/parse.ll
@@ -71,36 +116,6 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 -2
   %3 = getelementptr i8, ptr %0, i64 4
   %4 = icmp ult ptr %3, %2
-  ret i1 %4
-}
-
-; 20 occurrences:
-; cpython/optimized/obmalloc.ll
-; cpython/optimized/unicodeobject.ll
-; linux/optimized/cistpl.ll
-; linux/optimized/extents.ll
-; linux/optimized/fse_decompress.ll
-; linux/optimized/kobject_uevent.ll
-; linux/optimized/lz4_decompress.ll
-; linux/optimized/namei.ll
-; linux/optimized/nf_conntrack_irc.ll
-; linux/optimized/seq_file.ll
-; linux/optimized/tcp_input.ll
-; linux/optimized/xxhash.ll
-; postgres/optimized/oracle_compat.ll
-; postgres/optimized/regproc.ll
-; ruby/optimized/parse.ll
-; ruby/optimized/vm.ll
-; wireshark/optimized/blf.c.ll
-; wireshark/optimized/ngsniffer.c.ll
-; wireshark/optimized/packet-kafka.c.ll
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 -2
-  %3 = getelementptr i8, ptr %0, i64 2
-  %4 = icmp ugt ptr %3, %2
   ret i1 %4
 }
 
@@ -1399,16 +1414,19 @@ entry:
   ret i1 %4
 }
 
-; 137 occurrences:
+; 145 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
+; abc/optimized/giaSif.c.ll
 ; abc/optimized/mvcUtils.c.ll
+; abc/optimized/sbdCore.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/pdf.c.ll
+; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/hist.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -1429,6 +1447,8 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/stream.c.ll
@@ -1438,6 +1458,7 @@ entry:
 ; just-rs/optimized/4mdvpwvrpdu4jonv.ll
 ; libquic/optimized/dtoa.cc.ll
 ; lief/optimized/ecjpake.c.ll
+; llvm/optimized/StringRef.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; memcached/optimized/memcached-proto_text.ll
@@ -1448,6 +1469,7 @@ entry:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; oniguruma/optimized/regcomp.ll
+; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/handles.ll
 ; openmpi/optimized/keyval_lex.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -1457,7 +1479,6 @@ entry:
 ; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/iconv.ll
 ; php/optimized/math.ll
-; php/optimized/php_pcre.ll
 ; php/optimized/sanitizing_filters.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_execute.ll
@@ -1512,6 +1533,7 @@ entry:
 ; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
 ; yosys/optimized/lz4.ll
+; yyjson/optimized/yyjson.c.ll
 ; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
@@ -1537,6 +1559,7 @@ entry:
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/AZDetector.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
@@ -2337,6 +2360,28 @@ entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -8
   %3 = getelementptr i8, ptr %0, i64 4
   %4 = icmp ule ptr %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000069(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %1, i64 -7
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %4 = icmp uge ptr %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; luajit/optimized/minilua.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000189(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %3 = getelementptr i8, ptr %0, i64 16
+  %4 = icmp uge ptr %3, %2
   ret i1 %4
 }
 

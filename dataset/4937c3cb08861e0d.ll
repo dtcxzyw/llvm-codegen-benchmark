@@ -432,8 +432,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -1,10 +1,10 @@
 
-%"class.open_spiel::euchre::Trick.3481306" = type { i32, i32, i32, i8, i32, i32, %"class.std::vector.28.3481307" }
-%"class.std::vector.28.3481307" = type { %"struct.std::_Vector_base.29.3481308" }
-%"struct.std::_Vector_base.29.3481308" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3481309" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3481309" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3481310" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3481310" = type { ptr, ptr, ptr }
-%struct.list_head.3551785 = type { ptr, ptr }
+%"class.open_spiel::euchre::Trick.3481272" = type { i32, i32, i32, i8, i32, i32, %"class.std::vector.28.3481273" }
+%"class.std::vector.28.3481273" = type { %"struct.std::_Vector_base.29.3481274" }
+%"struct.std::_Vector_base.29.3481274" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3481275" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3481275" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3481276" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3481276" = type { ptr, ptr, ptr }
+%struct.list_head.3551751 = type { ptr, ptr }
 
 ; 23 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
@@ -53,7 +53,7 @@ entry:
   %2 = tail call noundef i32 @llvm.smin.i32(i32 %1, i32 5)
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 176
-  %5 = getelementptr nusw [5 x %"class.open_spiel::euchre::Trick.3481306"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [5 x %"class.open_spiel::euchre::Trick.3481272"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -65,7 +65,7 @@ entry:
   %2 = tail call i32 @llvm.smin.i32(i32 %1, i32 9)
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %5 = getelementptr [10 x %struct.list_head.3551785], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [10 x %struct.list_head.3551751], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

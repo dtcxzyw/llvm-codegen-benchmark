@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 160 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -25,6 +25,7 @@
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; libquic/optimized/quic_utils.cc.ll
+; libquic/optimized/t1_lib.c.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/radix-tree.ll
@@ -32,12 +33,8 @@
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll

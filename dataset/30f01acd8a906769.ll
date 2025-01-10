@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {

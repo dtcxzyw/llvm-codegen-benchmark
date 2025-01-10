@@ -274,17 +274,16 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/maple_tree.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
+define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
-  %2 = and i64 %1, -16385
-  %3 = select i1 %0, i64 0, i64 49152
+  %2 = select i1 %1, i64 33556480, i64 33554432
+  %3 = and i64 %0, -1040187393
   %4 = or i64 %3, %2
   ret i64 %4
 }

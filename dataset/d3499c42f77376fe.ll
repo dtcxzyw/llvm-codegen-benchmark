@@ -118,9 +118,10 @@ entry:
   ret i64 %5
 }
 
-; 75 occurrences:
+; 77 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; gromacs/optimized/stringutil.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -194,6 +195,7 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -203,12 +205,14 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; hermes/optimized/String.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
+; miniaudio/optimized/unity.c.ll
 ; php/optimized/softmagic.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -229,10 +233,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:

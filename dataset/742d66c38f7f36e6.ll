@@ -24,13 +24,14 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/bitset.ll
 ; linux/optimized/message.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/tcp.ll
 ; llvm/optimized/PtrState.cpp.ll
 ; slurm/optimized/dist_tasks.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind

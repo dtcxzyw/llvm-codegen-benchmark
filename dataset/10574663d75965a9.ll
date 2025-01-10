@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; c3c/optimized/diagnostics.c.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll

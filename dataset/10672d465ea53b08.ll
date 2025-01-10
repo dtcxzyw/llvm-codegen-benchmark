@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; hdf5/optimized/H5FDcore.c.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll

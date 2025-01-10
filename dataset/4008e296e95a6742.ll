@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
@@ -30,7 +30,6 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; lvgl/optimized/lv_table.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; wireshark/optimized/packet-kink.c.ll
 ; Function Attrs: nounwind

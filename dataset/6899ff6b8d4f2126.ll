@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 2 occurrences:
 ; linux/optimized/intel_dpll.ll
 ; openjdk/optimized/jmemmgr.ll
 ; Function Attrs: nounwind

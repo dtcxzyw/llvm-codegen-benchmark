@@ -1,6 +1,6 @@
 
-%"struct.std::__1::pair.248.2607584" = type { i32, i32 }
-%"class.draco::IndexType.3087043" = type { i32 }
+%"struct.std::__1::pair.248.2607551" = type { i32, i32 }
+%"class.draco::IndexType.3087009" = type { i32 }
 
 ; 5 occurrences:
 ; draco/optimized/corner_table.cc.ll
@@ -15,7 +15,7 @@ entry:
   %4 = mul i32 %3, 3
   %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607584", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607551", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -59,7 +59,7 @@ entry:
   %4 = mul i32 %3, 3
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.draco::IndexType.3087043", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.draco::IndexType.3087009", ptr %0, i64 %6
   ret ptr %7
 }
 

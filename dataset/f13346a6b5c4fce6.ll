@@ -212,7 +212,7 @@ entry:
   ret i8 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -223,6 +223,7 @@ entry:
 ; lvgl/optimized/lv_bin_decoder.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
+; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i8 %0, i8 %1) #0 {

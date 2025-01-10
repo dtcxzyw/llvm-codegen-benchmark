@@ -1,9 +1,12 @@
 
-; 124 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; boost/optimized/test_filebuf.ll
+; c3c/optimized/llvm_codegen_instr.c.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -12,15 +15,21 @@
 ; darktable/optimized/introspection_censorize.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_invert.c.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; folly/optimized/SSLContext.cpp.ll
+; git/optimized/apply.ll
+; git/optimized/dir.ll
 ; git/optimized/ewah_rlw.ll
+; git/optimized/parallel-checkout.ll
+; git/optimized/remote-curl.ll
 ; git/optimized/streaming.ll
 ; libquic/optimized/d1_both.c.ll
 ; libquic/optimized/pair.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; libquic/optimized/ssl_session.c.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/badblocks.ll
@@ -29,7 +38,10 @@
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/inetpeer.ll
 ; linux/optimized/keyctl.ll
+; linux/optimized/memory.ll
 ; linux/optimized/ptp_chardev.ll
+; linux/optimized/scm.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tcp_output.ll
@@ -41,6 +53,7 @@
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -53,18 +66,23 @@
 ; node/optimized/libnode.string_bytes.ll
 ; nuttx/optimized/fs_procfsutil.c.ll
 ; nuttx/optimized/lib_hexdumpstream.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; oiio/optimized/hdrinput.cpp.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; opencv/optimized/parallel_impl.cpp.ll
+; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; openssl/optimized/libcrypto-lib-bss_bio.ll
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-bss_bio.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; openssl/optimized/libdefault-lib-krb5kdf.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/filters.cpp.ll
@@ -76,6 +94,7 @@
 ; pocketpy/optimized/compiler.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
+; postgres/optimized/backend_status.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/gindatapage.ll
@@ -91,12 +110,15 @@
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/crypto_block.c.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_audio_virtio-snd.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -105,10 +127,12 @@
 ; qemu/optimized/ui_vnc-jobs.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; redis/optimized/lua_struct.ll
+; ruby/optimized/bignum.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; slurm/optimized/setproctitle.ll
+; slurm/optimized/step_mgr.ll
 ; soc-simulator/optimized/verilated.ll
 ; stockfish/optimized/search.ll
 ; taskflow/optimized/parallel_for.cpp.ll
@@ -128,7 +152,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
   ret i64 %3
 }
 

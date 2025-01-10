@@ -15,6 +15,14 @@ func000000000000002f:                   # @func000000000000002f
 	vor.vv	v8, v8, v14
 	vor.vv	v8, v8, v12
 	ret
+func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vwsll.vi	v12, v11, 3
+	vsetvli	zero, zero, e16, m2, ta, ma
+	vzext.vf2	v14, v10
+	vor.vv	v8, v8, v14
+	vor.vv	v8, v8, v12
+	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwsll.vi	v12, v11, 3

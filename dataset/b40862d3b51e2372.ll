@@ -1,12 +1,12 @@
 
-%"struct.mold::elf::ElfRel.2645797" = type { %"class.mold::LittleEndian.251.2645770", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.374.2645798" }
-%"class.mold::LittleEndian.251.2645770" = type { [8 x i8] }
-%"class.mold::LittleEndian.250.2645769" = type { [4 x i8] }
-%"class.mold::LittleEndian.374.2645798" = type { [8 x i8] }
-%"struct.pbrt::ImageChannelValues.3646709" = type { %"class.pbrt::InlinedVector.81.3646710" }
-%"class.pbrt::InlinedVector.81.3646710" = type { %"class.pstd::pmr::polymorphic_allocator.14.3646654", ptr, %union.anon.82.3646711, i64, i64 }
-%"class.pstd::pmr::polymorphic_allocator.14.3646654" = type { ptr }
-%union.anon.82.3646711 = type { [4 x float] }
+%"struct.mold::elf::ElfRel.2645764" = type { %"class.mold::LittleEndian.251.2645737", %"class.mold::LittleEndian.250.2645736", %"class.mold::LittleEndian.250.2645736", %"class.mold::LittleEndian.374.2645765" }
+%"class.mold::LittleEndian.251.2645737" = type { [8 x i8] }
+%"class.mold::LittleEndian.250.2645736" = type { [4 x i8] }
+%"class.mold::LittleEndian.374.2645765" = type { [8 x i8] }
+%"struct.pbrt::ImageChannelValues.3646675" = type { %"class.pbrt::InlinedVector.81.3646676" }
+%"class.pbrt::InlinedVector.81.3646676" = type { %"class.pstd::pmr::polymorphic_allocator.14.3646620", ptr, %union.anon.82.3646677, i64, i64 }
+%"class.pstd::pmr::polymorphic_allocator.14.3646620" = type { ptr }
+%union.anon.82.3646677 = type { [4 x float] }
 
 ; 4 occurrences:
 ; gromacs/optimized/tng_io.c.ll
@@ -63,7 +63,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000051(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2645797", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2645764", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -24
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -77,7 +77,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000059(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.pbrt::ImageChannelValues.3646709", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.pbrt::ImageChannelValues.3646675", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

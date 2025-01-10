@@ -330,7 +330,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/multi.c.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/sre.ll
 ; curl/optimized/libcurl_la-multi.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -502,6 +501,7 @@ entry:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/tcg.c.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/config.ll
 ; redis/optimized/script.ll
@@ -550,7 +550,7 @@ entry:
   ret i1 %5
 }
 
-; 251 occurrences:
+; 253 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcHieCec.c.ll
 ; abc/optimized/amapMatch.c.ll
@@ -569,6 +569,7 @@ entry:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; flac/optimized/stream_decoder.c.ll
@@ -771,6 +772,7 @@ entry:
 ; postgres/optimized/refint.ll
 ; postgres/optimized/regcomp.ll
 ; pugixml/optimized/pugixml.cpp.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/migration_migration.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -812,7 +814,7 @@ entry:
   ret i1 %5
 }
 
-; 260 occurrences:
+; 261 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; abc/optimized/ivyObj.c.ll
@@ -862,6 +864,7 @@ entry:
 ; hdf5/optimized/H5Cint.c.ll
 ; hdf5/optimized/H5LT.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
+; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/topology-x86.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -1226,7 +1229,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; git/optimized/ws.ll
 ; graphviz/optimized/stress.c.ll
@@ -1244,6 +1247,7 @@ entry:
 ; qemu/optimized/util_mmap-alloc.c.ll
 ; re2/optimized/onepass.cc.ll
 ; wireshark/optimized/charsets.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018a(i32 %0, i32 %1) #0 {
 entry:

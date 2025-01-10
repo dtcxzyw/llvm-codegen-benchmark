@@ -1,16 +1,17 @@
 
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3266061" = type { ptr, ptr, ptr, ptr }
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3266027" = type { ptr, ptr, ptr, ptr }
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/petite.c.ll
 ; cmake/optimized/zstd_fast.c.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; libquic/optimized/padding.c.ll
@@ -40,20 +41,6 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; openssl/optimized/libcrypto-lib-sha1dgst.ll
-; openssl/optimized/libcrypto-shlib-sha1dgst.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 64, %3
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
 ; 10 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
@@ -70,7 +57,7 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.NetClientState.2706049, ptr %1, i64 %4
+  %5 = getelementptr %struct.NetClientState.2706015, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -98,12 +85,13 @@ entry:
   ret ptr %6
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/lz_encoder_mf.c.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/mcsheng.c.ll
@@ -165,12 +153,15 @@ entry:
   ret ptr %6
 }
 
-; 159 occurrences:
+; 164 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -323,6 +314,8 @@ entry:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/ldo.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; spike/optimized/fdt_rw.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
@@ -331,18 +324,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 16, %3
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -374,7 +355,7 @@ define ptr @func0000000000000058(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3181429", ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -388,8 +369,8 @@ define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3241632", ptr %1, i64 %4
-  %6 = getelementptr %"class.llvm::Use.3241632", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3241598", ptr %1, i64 %4
+  %6 = getelementptr %"class.llvm::Use.3241598", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -400,8 +381,8 @@ define ptr @func0000000000000053(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"class.llvm::Use.3266061", ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3266061", ptr %5, i64 %0
+  %5 = getelementptr %"class.llvm::Use.3266027", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3266027", ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,17 +1,5 @@
 
-; 1 occurrences:
-; spike/optimized/spike.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 4095
-  %4 = add i64 %3, %1
-  %5 = and i64 %4, -4096
-  %6 = add i64 %0, %5
-  ret i64 %6
-}
-
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; cmake/optimized/index.c.ll
@@ -29,14 +17,27 @@ entry:
 ; luau/optimized/Lexer.cpp.ll
 ; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.spawn_sync.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 7
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, -8
   %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; spike/optimized/spike.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 4095
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, -4096
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -55,9 +56,10 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; hdf5/optimized/H5Gstab.c.ll
 ; hdf5/optimized/H5HL.c.ll
+; llvm/optimized/OpenMPClause.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; Function Attrs: nounwind

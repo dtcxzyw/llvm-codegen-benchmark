@@ -4572,7 +4572,7 @@ entry:
   ret i1 %2
 }
 
-; 919 occurrences:
+; 920 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -4751,6 +4751,7 @@ entry:
 ; linux/optimized/hw-me.ll
 ; linux/optimized/hwregs.ll
 ; linux/optimized/i2c-core-smbus.ll
+; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/intel-nhlt.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dp_link_training.ll
@@ -5712,7 +5713,7 @@ entry:
   ret i1 %2
 }
 
-; 569 occurrences:
+; 571 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -6204,6 +6205,7 @@ entry:
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/1ewejz0ibz9296z1.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -6233,6 +6235,7 @@ entry:
 ; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; wireshark/optimized/enabled_protocols_model.cpp.ll
 ; wireshark/optimized/lemon.c.ll
+; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-cip.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -7362,14 +7365,13 @@ entry:
   ret i1 %2
 }
 
-; 105 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; boost/optimized/static_string.ll
 ; clamav/optimized/bytecode_vm.c.ll
-; clamav/optimized/matcher-ac.c.ll
 ; duckdb/optimized/ub_duckdb_planner_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/TestStringView.cpp.ll
@@ -7380,7 +7382,6 @@ entry:
 ; libzmq/optimized/trie.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -7475,10 +7476,11 @@ entry:
   ret i1 %2
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; boost/optimized/static_string.ll
 ; clamav/optimized/bytecode_vm.c.ll
+; clamav/optimized/matcher-ac.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll

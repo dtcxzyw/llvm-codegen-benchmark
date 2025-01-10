@@ -1,6 +1,6 @@
 
-%struct.Tim_Obj_t_.2877611 = type { i32, i32, i32, i32, float, float }
-%class.QCPGraphData.3451166 = type { double, double }
+%struct.Tim_Obj_t_.2877577 = type { i32, i32, i32, i32, float, float }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 14 occurrences:
 ; abc/optimized/kitSop.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %struct.Tim_Obj_t_.2877611, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.Tim_Obj_t_.2877577, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %5
   ret ptr %6
 }
 

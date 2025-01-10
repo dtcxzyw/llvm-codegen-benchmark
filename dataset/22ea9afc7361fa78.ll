@@ -438,9 +438,11 @@ entry:
   ret i1 %7
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
+; abc/optimized/giaSif.c.ll
+; abc/optimized/sbdCore.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll

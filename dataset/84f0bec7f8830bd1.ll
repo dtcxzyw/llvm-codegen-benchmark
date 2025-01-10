@@ -1,5 +1,5 @@
 
-%"class.ZXing::Trit.3649655" = type { i8 }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 592 occurrences:
 ; abc/optimized/Fxch.c.ll
@@ -603,7 +603,7 @@ entry:
   ret ptr %5
 }
 
-; 238 occurrences:
+; 237 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; bullet3/optimized/btMultiBody.ll
@@ -778,7 +778,6 @@ entry:
 ; opencv/optimized/letter_recog.cpp.ll
 ; opencv/optimized/lpsolver.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
@@ -851,7 +850,7 @@ entry:
   ret ptr %5
 }
 
-; 1546 occurrences:
+; 1553 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -974,6 +973,7 @@ entry:
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; darktable/optimized/collect.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_dither.c.ll
@@ -1111,6 +1111,7 @@ entry:
 ; icu/optimized/lstmbe.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/package.ll
+; icu/optimized/pkgitems.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/rbbidata.ll
 ; icu/optimized/swapimpl.ll
@@ -1444,6 +1445,10 @@ entry:
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll
@@ -2164,6 +2169,7 @@ entry:
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; openmpi/optimized/onesided_aggregation.ll
+; openmpi/optimized/stacktrace.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/bridge.cc.ll
@@ -2407,7 +2413,7 @@ entry:
   ret ptr %5
 }
 
-; 254 occurrences:
+; 247 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbFunc.c.ll
@@ -2483,7 +2489,6 @@ entry:
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/divsufsort.c.ll
-; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
@@ -2506,7 +2511,6 @@ entry:
 ; icu/optimized/decNumber.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/genrb.ll
-; icu/optimized/pkgitems.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/ucmndata.ll
 ; icu/optimized/ucptrie.ll
@@ -2542,7 +2546,6 @@ entry:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
@@ -2587,21 +2590,18 @@ entry:
 ; openjdk/optimized/oopMap.ll
 ; openjdk/optimized/relocInfo.ll
 ; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/stacktrace.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; openssl/optimized/libcrypto-lib-rsa_pss.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
-; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/reconintra.c.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/dfa_pass.ll
@@ -2636,7 +2636,6 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; redis/optimized/debug.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/geo.ll
 ; redis/optimized/lvm.ll
@@ -2671,7 +2670,7 @@ entry:
   ret ptr %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
@@ -2717,7 +2716,6 @@ entry:
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; openjdk/optimized/zip_util.ll
-; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/restoration.c.ll
 ; postgres/optimized/mbutils.ll
@@ -2933,8 +2931,8 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"class.ZXing::Trit.3649655", ptr %4, i64 %3
+  %4 = getelementptr %"class.ZXing::Trit.3649621", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.ZXing::Trit.3649621", ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -637,7 +637,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; clamav/optimized/asn1.c.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
@@ -647,7 +647,6 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; openusd/optimized/decodemv.c.ll
-; postgres/optimized/formatting.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind

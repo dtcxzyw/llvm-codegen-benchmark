@@ -37,10 +37,9 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/pe.c.ll
-; linux/optimized/vsprintf.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
@@ -59,11 +58,10 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/af_unix.ll
-; linux/optimized/serial_core.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
@@ -80,29 +78,6 @@ entry:
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i64 %0 to i32
-  %3 = sub i32 %2, %1
-  ret i32 %3
-}
-
-; 3 occurrences:
-; hwloc/optimized/topology-synthetic.ll
-; libpng/optimized/pngrutil.c.ll
-; openjdk/optimized/pngrutil.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000017(i64 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i64 %0 to i32
-  %3 = sub i32 %2, %1
-  ret i32 %3
-}
-
-; 2 occurrences:
-; libpng/optimized/pngrutil.c.ll
-; openjdk/optimized/pngrutil.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %2, %1
@@ -215,6 +190,16 @@ entry:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i64 %0 to i32
+  %3 = sub i32 %2, %1
+  ret i32 %3
+}
+
+; 1 occurrences:
+; hwloc/optimized/topology-synthetic.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %2, %1

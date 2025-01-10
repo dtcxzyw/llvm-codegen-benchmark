@@ -148,8 +148,7 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
-; abc/optimized/cmdApi.c.ll
+; 53 occurrences:
 ; boost/optimized/buffer_piece_border.ll
 ; gromacs/optimized/read_params.cpp.ll
 ; proj/optimized/defmodel.cpp.ll

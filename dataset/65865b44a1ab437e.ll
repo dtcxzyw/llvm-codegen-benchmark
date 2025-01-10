@@ -1,5 +1,5 @@
 
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; linux/optimized/regmap.ll
@@ -25,7 +25,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = getelementptr %"class.llvm::SDValue.3150307", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.llvm::SDValue.3150273", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

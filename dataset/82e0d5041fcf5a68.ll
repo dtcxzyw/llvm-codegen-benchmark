@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 200 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -65,6 +65,7 @@
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

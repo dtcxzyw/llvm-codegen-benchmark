@@ -1,5 +1,5 @@
 
-%struct.GroupNumRemap.2600730 = type { i32 }
+%struct.GroupNumRemap.2600697 = type { i32 }
 
 ; 33 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
@@ -40,7 +40,7 @@ define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.GroupNumRemap.2600730, ptr %3, i64 %2
+  %4 = getelementptr %struct.GroupNumRemap.2600697, ptr %3, i64 %2
   ret ptr %4
 }
 

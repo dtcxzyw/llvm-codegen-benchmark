@@ -424,7 +424,7 @@ entry:
   ret i1 %2
 }
 
-; 66 occurrences:
+; 64 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
@@ -464,9 +464,7 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; qemu/optimized/block_vhdx-log.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll

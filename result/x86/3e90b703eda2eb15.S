@@ -1,7 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
-	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	cmovael	%edi, %eax
+	movl	%esi, %eax
+	andl	$4095, %eax                     # imm = 0xFFF
+	cmpl	%eax, %edi
+	cmovbl	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax

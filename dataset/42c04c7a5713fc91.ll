@@ -300,17 +300,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-pw-atm.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 4, %2
-  %4 = icmp ne i32 %1, %3
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; openmpi/optimized/coll_han_topo.ll
 ; wireshark/optimized/packet-pw-atm.c.ll

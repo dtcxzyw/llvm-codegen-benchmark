@@ -1,50 +1,4 @@
 
-; 33 occurrences:
-; gromacs/optimized/gmx_anaeig.cpp.ll
-; gromacs/optimized/grid.cpp.ll
-; linux/optimized/lz4_decompress.ll
-; linux/optimized/mballoc.ll
-; linux/optimized/nlattr.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/trans_virtio.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; openblas/optimized/dgels.c.ll
-; openblas/optimized/dgelsy.c.ll
-; opencv/optimized/bardetect.cpp.ll
-; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/copyfromparse.ll
-; postgres/optimized/formatting.ll
-; postgres/optimized/multirangetypes_selfuncs.ll
-; postgres/optimized/rangetypes_selfuncs.ll
-; postgres/optimized/tablesync.ll
-; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/chardev_testdev.c.ll
-; qemu/optimized/chardev_wctablet.c.ll
-; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_usb_dev-serial.c.ll
-; quantlib/optimized/cmsmmdriftcalculator.ll
-; ruby/optimized/io.ll
-; wireshark/optimized/packet-jxta.c.ll
-; yosys/optimized/ezsat.ll
-; zxing/optimized/HybridBinarizer.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
 ; 143 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/amapUniq.c.ll
@@ -195,6 +149,51 @@ entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 32 occurrences:
+; gromacs/optimized/gmx_anaeig.cpp.ll
+; gromacs/optimized/grid.cpp.ll
+; linux/optimized/lz4_decompress.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/nlattr.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/trans_virtio.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; openblas/optimized/dgels.c.ll
+; openblas/optimized/dgelsy.c.ll
+; opencv/optimized/bardetect.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/stereobm.cpp.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/copyfromparse.ll
+; postgres/optimized/formatting.ll
+; postgres/optimized/multirangetypes_selfuncs.ll
+; postgres/optimized/rangetypes_selfuncs.ll
+; postgres/optimized/tablesync.ll
+; qemu/optimized/block_vvfat.c.ll
+; qemu/optimized/chardev_testdev.c.ll
+; qemu/optimized/chardev_wctablet.c.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; qemu/optimized/hw_usb_dev-serial.c.ll
+; quantlib/optimized/cmsmmdriftcalculator.ll
+; wireshark/optimized/packet-jxta.c.ll
+; yosys/optimized/ezsat.ll
+; zxing/optimized/HybridBinarizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 

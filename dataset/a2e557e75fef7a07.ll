@@ -528,10 +528,11 @@ entry:
   ret i1 %1
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
+; abseil-cpp/optimized/cord_analysis.cc.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/ucnv2022.ll

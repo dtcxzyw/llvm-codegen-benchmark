@@ -1,12 +1,12 @@
 
-%struct.page.3541702 = type { i64, %union.anon.6.3541703, %union.anon.14.3541704, %struct.atomic_t.3541705, [8 x i8] }
-%union.anon.6.3541703 = type { %struct.anon.7.3541706 }
-%struct.anon.7.3541706 = type { %union.anon.8.3541707, ptr, %union.anon.10.3541708, i64 }
-%union.anon.8.3541707 = type { %struct.list_head.3541709 }
-%struct.list_head.3541709 = type { ptr, ptr }
-%union.anon.10.3541708 = type { i64 }
-%union.anon.14.3541704 = type { %struct.atomic_t.3541705 }
-%struct.atomic_t.3541705 = type { i32 }
+%struct.page.3541668 = type { i64, %union.anon.6.3541669, %union.anon.14.3541670, %struct.atomic_t.3541671, [8 x i8] }
+%union.anon.6.3541669 = type { %struct.anon.7.3541672 }
+%struct.anon.7.3541672 = type { %union.anon.8.3541673, ptr, %union.anon.10.3541674, i64 }
+%union.anon.8.3541673 = type { %struct.list_head.3541675 }
+%struct.list_head.3541675 = type { ptr, ptr }
+%union.anon.10.3541674 = type { i64 }
+%union.anon.14.3541670 = type { %struct.atomic_t.3541671 }
+%struct.atomic_t.3541671 = type { i32 }
 
 ; 61 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -123,8 +123,8 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3541702, ptr %3, i64 %1
-  %5 = getelementptr %struct.page.3541702, ptr %4, i64 %2
+  %4 = getelementptr %struct.page.3541668, ptr %3, i64 %1
+  %5 = getelementptr %struct.page.3541668, ptr %4, i64 %2
   ret ptr %5
 }
 

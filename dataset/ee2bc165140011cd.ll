@@ -1,7 +1,6 @@
 
-; 45 occurrences:
+; 42 occurrences:
 ; abc/optimized/gzread.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/gzread.c.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -12,11 +11,9 @@
 ; flac/optimized/bitwriter.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/truetype.c.ll
-; git/optimized/line-log.ll
 ; hdf5/optimized/H5HFtiny.c.ll
 ; libquic/optimized/gzread.c.ll
 ; lief/optimized/Builder.cpp.ll
-; linux/optimized/gup.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/netdev.ll
@@ -54,14 +51,13 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/introspection_defringe.c.ll
 ; git/optimized/remote.ll
 ; graphviz/optimized/hedges.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/usearch.ll

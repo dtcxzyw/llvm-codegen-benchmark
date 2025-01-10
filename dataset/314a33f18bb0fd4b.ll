@@ -51,6 +51,7 @@
 ; llvm/optimized/BinaryStreamReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CallAndMessageChecker.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/ConstantHoisting.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
@@ -146,7 +147,6 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/csrs.ll
 ; spike/optimized/s_mul128MTo256M.ll
-; spike/optimized/s_subM.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; velox/optimized/SimpleComparisonMatcher.cpp.ll

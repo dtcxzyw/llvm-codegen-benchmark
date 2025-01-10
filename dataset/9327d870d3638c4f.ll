@@ -1,12 +1,12 @@
 
-%"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178094" = type { %"class.llvm::BitVector.3178079" }
-%"class.llvm::BitVector.3178079" = type <{ %"class.llvm::SmallVector.3178080", i32, [4 x i8] }>
-%"class.llvm::SmallVector.3178080" = type { %"class.llvm::SmallVectorImpl.3178081", %"struct.llvm::SmallVectorStorage.3178082" }
-%"class.llvm::SmallVectorImpl.3178081" = type { %"class.llvm::SmallVectorTemplateBase.3178083" }
-%"class.llvm::SmallVectorTemplateBase.3178083" = type { %"class.llvm::SmallVectorTemplateCommon.3178084" }
-%"class.llvm::SmallVectorTemplateCommon.3178084" = type { %"class.llvm::SmallVectorBase.3178085" }
-%"class.llvm::SmallVectorBase.3178085" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.3178082" = type { [48 x i8] }
+%"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178060" = type { %"class.llvm::BitVector.3178045" }
+%"class.llvm::BitVector.3178045" = type <{ %"class.llvm::SmallVector.3178046", i32, [4 x i8] }>
+%"class.llvm::SmallVector.3178046" = type { %"class.llvm::SmallVectorImpl.3178047", %"struct.llvm::SmallVectorStorage.3178048" }
+%"class.llvm::SmallVectorImpl.3178047" = type { %"class.llvm::SmallVectorTemplateBase.3178049" }
+%"class.llvm::SmallVectorTemplateBase.3178049" = type { %"class.llvm::SmallVectorTemplateCommon.3178050" }
+%"class.llvm::SmallVectorTemplateCommon.3178050" = type { %"class.llvm::SmallVectorBase.3178051" }
+%"class.llvm::SmallVectorBase.3178051" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.3178048" = type { [48 x i8] }
 
 ; 68 occurrences:
 ; crow/optimized/example.cpp.ll
@@ -158,7 +158,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178094", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178060", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

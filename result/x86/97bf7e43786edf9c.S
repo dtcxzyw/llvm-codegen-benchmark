@@ -10,3 +10,11 @@ func0000000000000004:                   # @func0000000000000004
 	addq	%rdx, %rcx
 	movq	%rcx, %rdx
 	retq
+func0000000000000006:                   # @func0000000000000006
+	orq	%rdi, %rdx
+	orq	%rcx, %rsi
+	movabsq	$1844674407370955161, %rax      # imm = 0x1999999999999999
+	imulq	%rax, %rsi
+	mulxq	%rax, %rax, %rdx
+	addq	%rsi, %rdx
+	retq

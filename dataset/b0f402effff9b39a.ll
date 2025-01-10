@@ -1,6 +1,6 @@
 
-%struct.MyArc.3786878 = type { double, double, double, double, double, double, double, i32, i32, i32, i32, i32, i32, ptr, ptr, i32, i8, %struct.EllipseEquation.3786873, double }
-%struct.EllipseEquation.3786873 = type { [7 x double] }
+%struct.MyArc.3786828 = type { double, double, double, double, double, double, double, i32, i32, i32, i32, i32, i32, ptr, ptr, i32, i8, %struct.EllipseEquation.3786823, double }
+%struct.EllipseEquation.3786823 = type { [7 x double] }
 
 ; 3 occurrences:
 ; openblas/optimized/dlaed0.c.ll
@@ -81,7 +81,7 @@ entry:
   %4 = add i32 %3, 2
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %struct.MyArc.3786878, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct.MyArc.3786828, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -86,7 +86,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 60 occurrences:
+; 61 occurrences:
 ; cmake/optimized/udp.c.ll
 ; cpython/optimized/dtoa.ll
 ; gromacs/optimized/gmx_dielectric.cpp.ll
@@ -96,6 +96,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; linux/optimized/filter.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/virtio_net.ll
+; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; node/optimized/udp.ll
@@ -155,8 +156,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/4zcw438fefceam0r.ll
+; luau/optimized/lstrlib.cpp.ll
 ; re2/optimized/regexp.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

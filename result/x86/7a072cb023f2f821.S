@@ -18,15 +18,15 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	$1, %esi
 	cmovel	%edi, %eax
 	retq
+func0000000000000041:                   # @func0000000000000041
+	movq	%rdx, %rax
+	cmpl	$238, %esi
+	cmovel	%edi, %eax
+	retq
 func000000000000006c:                   # @func000000000000006c
 	movq	%rdx, %rax
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
-	retq
-func0000000000000041:                   # @func0000000000000041
-	movq	%rdx, %rax
-	testl	%esi, %esi
-	cmovel	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rdx, %rax

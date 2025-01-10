@@ -59,14 +59,6 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 3
 	addi	a0, a0, 23
 	ret
-func000000000000001a:                   # @func000000000000001a
-	slli	a0, a0, 3
-	addi	a0, a0, 23
-	ret
-func000000000000000a:                   # @func000000000000000a
-	slli	a0, a0, 3
-	addi	a0, a0, 23
-	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 2
 	lui	a1, 5

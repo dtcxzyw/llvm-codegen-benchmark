@@ -42,10 +42,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; php/optimized/parse_tz.ll
-; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -176,9 +175,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openmpi/optimized/group.ll
-; openusd/optimized/reconintra.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
@@ -189,9 +187,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,9 +1,9 @@
 
-%"struct.std::pair.3739795" = type <{ %"struct.cv::Ptr.25.3739785", float, [4 x i8] }>
-%"struct.cv::Ptr.25.3739785" = type { %"class.std::shared_ptr.26.3739786" }
-%"class.std::shared_ptr.26.3739786" = type { %"class.std::__shared_ptr.27.3739787" }
-%"class.std::__shared_ptr.27.3739787" = type { ptr, %"class.std::__shared_count.3739773" }
-%"class.std::__shared_count.3739773" = type { ptr }
+%"struct.std::pair.3739745" = type <{ %"struct.cv::Ptr.25.3739735", float, [4 x i8] }>
+%"struct.cv::Ptr.25.3739735" = type { %"class.std::shared_ptr.26.3739736" }
+%"class.std::shared_ptr.26.3739736" = type { %"class.std::__shared_ptr.27.3739737" }
+%"class.std::__shared_ptr.27.3739737" = type { ptr, %"class.std::__shared_count.3739723" }
+%"class.std::__shared_count.3739723" = type { ptr }
 
 ; 7 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -91,7 +91,7 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr %"struct.std::pair.3739795", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  %6 = getelementptr %"struct.std::pair.3739745", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

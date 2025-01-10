@@ -1,6 +1,6 @@
 
-%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791401 = type { i32 }
+%struct._zend_op.2791358 = type { ptr, %union._znode_op.2791367, %union._znode_op.2791367, %union._znode_op.2791367, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791367 = type { i32 }
 
 ; 26 occurrences:
 ; abc/optimized/deflate.c.ll
@@ -67,7 +67,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000e0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5

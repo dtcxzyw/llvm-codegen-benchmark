@@ -17,10 +17,3 @@ func000000000000002e:                   # @func000000000000002e
 	leaq	(%rdi,%rdi,2), %rcx
 	leaq	76(%rax,%rcx,4), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
-	movslq	%edx, %rax
-	leaq	(%rax,%rax,4), %rax
-	shlq	$4, %rax
-	addq	%rsi, %rax
-	leaq	48(%rdi,%rax), %rax
-	retq

@@ -1,7 +1,5 @@
 
-; 5 occurrences:
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
+; 3 occurrences:
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/ciMethod.ll
@@ -27,12 +25,10 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/fraInd.c.ll
 ; hermes/optimized/GCBase.cpp.ll
 ; linux/optimized/xarray.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind

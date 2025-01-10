@@ -28,3 +28,8 @@ func0000000000000301:                   # @func0000000000000301
 	sete	%al
 	andb	%cl, %al
 	retq
+func0000000000000021:                   # @func0000000000000021
+	movabsq	$25769803776, %rax              # imm = 0x600000000
+	testq	%rax, %rdi
+	sete	%al
+	retq

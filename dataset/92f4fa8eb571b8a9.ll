@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/huf_compress.c.ll
+; cpython/optimized/unicodeobject.ll
 ; linux/optimized/mtrr.ll
 ; wireshark/optimized/text_import.c.ll
 ; zstd/optimized/huf_compress.c.ll

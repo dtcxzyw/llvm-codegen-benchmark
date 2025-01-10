@@ -1,6 +1,6 @@
 
-%"struct.glslang::TSourceLoc.2911723" = type { ptr, i32, i32, i32 }
-%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749" = type { i8, i8, i8, i8 }
+%"struct.glslang::TSourceLoc.2911689" = type { ptr, i32, i32, i32 }
+%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715" = type { i8, i8, i8, i8 }
 
 ; 1 occurrences:
 ; glslang/optimized/Pp.cpp.ll
@@ -9,7 +9,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call noundef i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.glslang::TSourceLoc.2911723", ptr %0, i64 %4, i32 3
+  %5 = getelementptr nusw %"struct.glslang::TSourceLoc.2911689", ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -26,7 +26,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

@@ -19,10 +19,3 @@ func0000000000000003:                   # @func0000000000000003
 	cmovnel	%edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	orl	$-2147483648, %edx              # imm = 0x80000000
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovnel	%edx, %eax
-	orl	%edi, %eax
-	retq

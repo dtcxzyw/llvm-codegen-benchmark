@@ -1,9 +1,9 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.anon.1.3440501 = type { i32, i32, i32 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.anon.1.3440467 = type { i32, i32, i32 }
 
 ; 1 occurrences:
 ; minetest/optimized/minimap.cpp.ll
@@ -12,7 +12,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr nuw [262144 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %4, i32 2
+  %5 = getelementptr nuw [262144 x %struct.MinimapPixel.2700168], ptr %0, i64 0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -24,7 +24,7 @@ define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr nuw [0 x %struct.jv.2821743], ptr %0, i64 0, i64 %4, i32 4
+  %5 = getelementptr nuw [0 x %struct.jv.2821709], ptr %0, i64 0, i64 %4, i32 4
   ret ptr %5
 }
 
@@ -47,7 +47,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr [512 x %struct.anon.1.3440501], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [512 x %struct.anon.1.3440467], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

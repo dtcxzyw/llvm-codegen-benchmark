@@ -1,5 +1,5 @@
 
-; 5255 occurrences:
+; 5257 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1464,6 +1464,7 @@
 ; graphviz/optimized/flat.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/gvdevice_xlib.c.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/heap.c.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/mainwindow.cpp.ll
@@ -2690,6 +2691,7 @@
 ; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/fitellipse.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
@@ -18189,7 +18191,7 @@ entry:
   ret i1 %3
 }
 
-; 3613 occurrences:
+; 3612 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcBm.c.ll
@@ -18982,7 +18984,6 @@ entry:
 ; git/optimized/revision.ll
 ; git/optimized/rm.ll
 ; git/optimized/sequencer.ll
-; git/optimized/sha256.ll
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
 ; git/optimized/sparse-checkout.ll
@@ -21811,7 +21812,7 @@ entry:
   ret i1 %3
 }
 
-; 1342 occurrences:
+; 1343 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -22314,6 +22315,7 @@ entry:
 ; git/optimized/xdiffi.ll
 ; git/optimized/xemit.ll
 ; git/optimized/xpatience.ll
+; graphviz/optimized/Multilevel.c.ll
 ; graphviz/optimized/SparseMatrix.c.ll
 ; graphviz/optimized/cluster.c.ll
 ; graphviz/optimized/clustering.c.ll
@@ -23608,7 +23610,7 @@ entry:
   ret i1 %3
 }
 
-; 6920 occurrences:
+; 6923 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -25937,6 +25939,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; logos-rs/optimized/3ih0g5a6fbccjl2z.ll
 ; logos-rs/optimized/c1wmn335sjbonly.ll
+; lua/optimized/lstrlib.ll
 ; lua/optimized/ltablib.ll
 ; luau/optimized/Analyze.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
@@ -26038,6 +26041,7 @@ entry:
 ; luau/optimized/VisitType.test.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lgcdebug.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_string_builtin.ll
 ; lz4/optimized/lz4.c.ll
 ; meilisearch-rs/optimized/134vr9xz294dqnvo.ll
@@ -26366,6 +26370,7 @@ entry:
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/radiancemeter.cpp.ll
+; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rayleigh.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
@@ -32220,7 +32225,7 @@ entry:
   ret i1 %3
 }
 
-; 3383 occurrences:
+; 3382 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
@@ -32949,7 +32954,6 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/attr.ll
 ; git/optimized/bitmap.ll
-; git/optimized/column.ll
 ; git/optimized/commit-reach.ll
 ; git/optimized/git.ll
 ; git/optimized/line-log.ll
@@ -35612,7 +35616,7 @@ entry:
   ret i1 %3
 }
 
-; 3280 occurrences:
+; 3275 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauNpn.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -35830,7 +35834,6 @@ entry:
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/consio.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
-; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/encname.cpp.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/file.cpp.ll
@@ -36376,6 +36379,7 @@ entry:
 ; libsodium/optimized/libaesni_la-aead_aes256gcm_aesni.ll
 ; libsodium/optimized/libsodium_la-core_h2c.ll
 ; libsodium/optimized/libsodium_la-utils.ll
+; libwebp/optimized/alpha_dec.c.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; libzmq/optimized/lb.cpp.ll
@@ -36705,7 +36709,6 @@ entry:
 ; luau/optimized/main.cpp.ll
 ; lvgl/optimized/lv_text.ll
 ; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1f5rio4m04ghssoy.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -37460,7 +37463,6 @@ entry:
 ; openjdk/optimized/g1RootProcessor.ll
 ; openjdk/optimized/g1YoungCollector.ll
 ; openjdk/optimized/heapDumper.ll
-; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/jfrVirtualMemory.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/logFileOutput.ll
@@ -37654,11 +37656,9 @@ entry:
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/cdf.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/decode.ll
@@ -37684,7 +37684,6 @@ entry:
 ; php/optimized/metaphone.ll
 ; php/optimized/output.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_valid_utf.ll
 ; php/optimized/pdo.ll
 ; php/optimized/php_cli_server.ll
@@ -44481,6 +44480,7 @@ entry:
 ; hdf5/optimized/H5RS.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
+; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/CSE.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
@@ -46971,7 +46971,6 @@ entry:
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/shm_mq.ll
 ; postgres/optimized/shmem.ll
-; postgres/optimized/varlena.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/walsummarizer.ll
 ; postgres/optimized/xlogutils.ll
@@ -48521,7 +48520,7 @@ entry:
   ret i1 %3
 }
 
-; 151 occurrences:
+; 149 occurrences:
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/proto.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -48568,7 +48567,6 @@ entry:
 ; graphviz/optimized/gvdevice_kitty.c.ll
 ; gromacs/optimized/trees.c.ll
 ; hdf5/optimized/H5Dbtree.c.ll
-; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -48582,7 +48580,6 @@ entry:
 ; linux/optimized/devio.ll
 ; linux/optimized/msg.ll
 ; linux/optimized/static_call_inline.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -48681,7 +48678,7 @@ entry:
   ret i1 %3
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cpython/optimized/_elementtree.ll
 ; cpython/optimized/_functoolsmodule.ll
@@ -48713,7 +48710,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; jq/optimized/jv_dtoa.ll
-; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; linux/optimized/buffered_read.ll
@@ -50171,7 +50167,7 @@ entry:
   ret i1 %3
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; boost/optimized/graphml.ll
@@ -50179,6 +50175,7 @@ entry:
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestList.cpp.ll
+; git/optimized/column.ll
 ; grpc/optimized/posix_endpoint.cc.ll
 ; grpc/optimized/tcp_posix.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -51099,7 +51096,7 @@ entry:
   ret i1 %3
 }
 
-; 191 occurrences:
+; 190 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; boost/optimized/matches_relation_factory.ll
@@ -51125,7 +51122,6 @@ entry:
 ; grpc/optimized/slice.cc.ll
 ; hdf5/optimized/H5Dcontig.c.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
-; libwebp/optimized/alpha_dec.c.ll
 ; libzmq/optimized/options.cpp.ll
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/drm_buddy.ll

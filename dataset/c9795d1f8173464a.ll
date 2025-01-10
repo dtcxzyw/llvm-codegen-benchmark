@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2629050" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629051", i64, %union.anon.2629052 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629051" = type { ptr }
-%union.anon.2629052 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2629017" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629018", i64, %union.anon.2629019 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629018" = type { ptr }
+%union.anon.2629019 = type { i64, [8 x i8] }
 
 ; 27 occurrences:
 ; abc/optimized/utilIsop.c.ll
@@ -178,7 +178,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %"class.std::__cxx11::basic_string.2629050", ptr %0, i64 %1
+  %2 = getelementptr nusw %"class.std::__cxx11::basic_string.2629017", ptr %0, i64 %1
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4

@@ -1,19 +1,15 @@
 
-; 8 occurrences:
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
-; cvc5/optimized/SimpSolver.cc.ll
+; 4 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; postgres/optimized/twophase.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
-; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = and i32 %1, 2147483646
-  %3 = tail call i32 @llvm.umax.i32(i32 %2, i32 2)
+  %1 = add nuw nsw i32 %0, 63
+  %2 = and i32 %1, 268435392
+  %3 = call i32 @llvm.umax.i32(i32 %2, i32 1)
   ret i32 %3
 }
 

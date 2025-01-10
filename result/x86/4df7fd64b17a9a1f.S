@@ -1,7 +1,7 @@
 func000000000000000e:                   # @func000000000000000e
 	shlb	$3, %dil
 	addb	$-8, %dil
-	movabsq	$3471480559860788781, %rax      # imm = 0x302D2D2D2F2D2E2D
+	movabsq	$3458764514609081901, %rax      # imm = 0x300000002F002E2D
 	shrxq	%rdi, %rax, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e

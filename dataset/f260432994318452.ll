@@ -1,6 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
+; cpython/optimized/unicodeobject.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll

@@ -1,13 +1,13 @@
 
-%class.InteractionOfType.3378880 = type { %"class.std::vector.10.3378881", %"struct.std::array.3378868", %"class.std::__cxx11::basic_string.3378852" }
-%"class.std::vector.10.3378881" = type { %"struct.std::_Vector_base.11.3378882" }
-%"struct.std::_Vector_base.11.3378882" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" = type { ptr, ptr, ptr }
-%"struct.std::array.3378868" = type { [12 x float] }
-%"class.std::__cxx11::basic_string.3378852" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853", i64, %union.anon.3378854 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853" = type { ptr }
-%union.anon.3378854 = type { i64, [8 x i8] }
+%class.InteractionOfType.3378846 = type { %"class.std::vector.10.3378847", %"struct.std::array.3378834", %"class.std::__cxx11::basic_string.3378818" }
+%"class.std::vector.10.3378847" = type { %"struct.std::_Vector_base.11.3378848" }
+%"struct.std::_Vector_base.11.3378848" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378849" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378849" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378850" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378850" = type { ptr, ptr, ptr }
+%"struct.std::array.3378834" = type { [12 x float] }
+%"class.std::__cxx11::basic_string.3378818" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378819", i64, %union.anon.3378820 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378819" = type { ptr }
+%union.anon.3378820 = type { i64, [8 x i8] }
 
 ; 11 occurrences:
 ; abc/optimized/wlnRetime.c.ll
@@ -563,7 +563,7 @@ entry:
 define ptr @func0000000000000070(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = getelementptr nusw nuw %class.InteractionOfType.3378880, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %class.InteractionOfType.3378846, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 24
   ret ptr %6

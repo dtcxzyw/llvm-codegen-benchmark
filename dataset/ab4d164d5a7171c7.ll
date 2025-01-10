@@ -1,33 +1,32 @@
 
-%struct.iovec.2600959 = type { ptr, i64 }
-%"class.absl::debian2::string_view.2602139" = type { ptr, i64 }
-%"class.std::__1::basic_string.2603838" = type { %"class.std::__1::__compressed_pair.1.2603839" }
-%"class.std::__1::__compressed_pair.1.2603839" = type { %"struct.std::__1::__compressed_pair_elem.2.2603840" }
-%"struct.std::__1::__compressed_pair_elem.2.2603840" = type { %"struct.std::__1::basic_string<char>::__rep.2603841" }
-%"struct.std::__1::basic_string<char>::__rep.2603841" = type { %union.anon.2603842 }
-%union.anon.2603842 = type { %"struct.std::__1::basic_string<char>::__long.2603843" }
-%"struct.std::__1::basic_string<char>::__long.2603843" = type { %struct.anon.3.2603844, i64, ptr }
-%struct.anon.3.2603844 = type { i64 }
-%"class.rocksdb::WideColumn.2617401" = type { %"class.rocksdb::Slice.2617400", %"class.rocksdb::Slice.2617400" }
-%"class.rocksdb::Slice.2617400" = type { ptr, i64 }
-%"struct.mold::elf::ElfRel.2637204" = type { %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.245.2637205" }
-%"class.mold::LittleEndian.3.2637186" = type { [8 x i8] }
-%"class.mold::LittleEndian.2637169" = type { [4 x i8] }
-%"class.mold::LittleEndian.245.2637205" = type { [8 x i8] }
-%"struct.mold::elf::FdeRecord.2637571" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2637572", i8 }>
-%"struct.mold::Atomic.2637572" = type { %"struct.std::atomic.2637514" }
-%"struct.std::atomic.2637514" = type { %"struct.std::__atomic_base.2637517" }
-%"struct.std::__atomic_base.2637517" = type { i8 }
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
-%class.ZPhysicalMemorySegment.2737563 = type <{ i64, i64, i8, [7 x i8] }>
-%struct.SortingRecord.356.2761109 = type { i64, i32, i8 }
-%struct.object_id.2883377 = type { [32 x i8], i32 }
-%struct.object_id.2883661 = type { [32 x i8], i32 }
-%class.QModelIndex.3444560 = type { i32, i32, i64, ptr }
-%struct.memblock_region.3537144 = type { i64, i64, i32, i32 }
+%struct.iovec.2600926 = type { ptr, i64 }
+%"class.absl::debian2::string_view.2602106" = type { ptr, i64 }
+%"class.std::__1::basic_string.2603805" = type { %"class.std::__1::__compressed_pair.1.2603806" }
+%"class.std::__1::__compressed_pair.1.2603806" = type { %"struct.std::__1::__compressed_pair_elem.2.2603807" }
+%"struct.std::__1::__compressed_pair_elem.2.2603807" = type { %"struct.std::__1::basic_string<char>::__rep.2603808" }
+%"struct.std::__1::basic_string<char>::__rep.2603808" = type { %union.anon.2603809 }
+%union.anon.2603809 = type { %"struct.std::__1::basic_string<char>::__long.2603810" }
+%"struct.std::__1::basic_string<char>::__long.2603810" = type { %struct.anon.3.2603811, i64, ptr }
+%struct.anon.3.2603811 = type { i64 }
+%"class.rocksdb::WideColumn.2617368" = type { %"class.rocksdb::Slice.2617367", %"class.rocksdb::Slice.2617367" }
+%"class.rocksdb::Slice.2617367" = type { ptr, i64 }
+%"struct.mold::elf::ElfRel.2637171" = type { %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.245.2637172" }
+%"class.mold::LittleEndian.3.2637153" = type { [8 x i8] }
+%"class.mold::LittleEndian.2637136" = type { [4 x i8] }
+%"class.mold::LittleEndian.245.2637172" = type { [8 x i8] }
+%"struct.mold::elf::FdeRecord.2637538" = type <{ i32, i32, i32, i16, %"struct.mold::Atomic.2637539", i8 }>
+%"struct.mold::Atomic.2637539" = type { %"struct.std::atomic.2637481" }
+%"struct.std::atomic.2637481" = type { %"struct.std::__atomic_base.2637484" }
+%"struct.std::__atomic_base.2637484" = type { i8 }
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
+%class.ZPhysicalMemorySegment.2737529 = type <{ i64, i64, i8, [7 x i8] }>
+%struct.object_id.2883343 = type { [32 x i8], i32 }
+%struct.object_id.2883627 = type { [32 x i8], i32 }
+%class.QModelIndex.3444526 = type { i32, i32, i64, ptr }
+%struct.memblock_region.3537110 = type { i64, i64, i32, i32 }
 
 ; 74 occurrences:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
@@ -127,141 +126,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.iovec.2600959, ptr %0, i64 %1
+  %2 = getelementptr %struct.iovec.2600926, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 24
   ret ptr %3
 }
 
-; 49 occurrences:
-; boost/optimized/area.ll
-; boost/optimized/args_cmd.ll
-; boost/optimized/args_handling.ll
-; boost/optimized/async.ll
-; boost/optimized/async_fut.ll
-; boost/optimized/attribute_name.ll
-; boost/optimized/bind_stderr.ll
-; boost/optimized/bind_stdin.ll
-; boost/optimized/bind_stdin_stdout.ll
-; boost/optimized/bind_stdout.ll
-; boost/optimized/bind_stdout_stderr.ll
-; boost/optimized/close_stderr.ll
-; boost/optimized/close_stdin.ll
-; boost/optimized/close_stdout.ll
-; boost/optimized/cmd_test.ll
-; boost/optimized/env.ll
-; boost/optimized/exit_code.ll
-; boost/optimized/extensions.ll
-; boost/optimized/filter_parser.ll
-; boost/optimized/group.ll
-; boost/optimized/group_wait.ll
-; boost/optimized/limit_fd.ll
-; boost/optimized/on_exit.ll
-; boost/optimized/on_exit2.ll
-; boost/optimized/on_exit3.ll
-; boost/optimized/pipe_fwd.ll
-; boost/optimized/posix_specific.ll
-; boost/optimized/run_exe.ll
-; boost/optimized/run_exe_path.ll
-; boost/optimized/self_intersection_points.ll
-; boost/optimized/shared_work.ll
-; boost/optimized/sort_by_side.ll
-; boost/optimized/sort_by_side_basic.ll
-; boost/optimized/spawn.ll
-; boost/optimized/start_dir.ll
-; boost/optimized/sub_launcher.ll
-; boost/optimized/system_test1.ll
-; boost/optimized/system_test2.ll
-; boost/optimized/terminate.ll
-; boost/optimized/text_file_backend.ll
-; boost/optimized/topology.ll
-; boost/optimized/wait.ll
-; boost/optimized/wait_for.ll
-; boost/optimized/wargs_cmd.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; openexr/optimized/internal_huf.c.ll
-; openusd/optimized/openexr-c.c.ll
-; quantlib/optimized/date.ll
-; ruby/optimized/objspace_dump.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 -2
-  ret ptr %3
-}
-
-; 62 occurrences:
-; arrow/optimized/bridge.cc.ll
-; cmake/optimized/http1.c.ll
-; coreutils-rs/optimized/12t1ilskwpg6ujrn.ll
-; coreutils-rs/optimized/32w7px3m4px9sisi.ll
-; coreutils-rs/optimized/36bfqdbr81ll9nie.ll
-; coreutils-rs/optimized/394sgi2xuawacybl.ll
-; coreutils-rs/optimized/3ms64fx2j1h00m7c.ll
-; cpython/optimized/sre.ll
-; curl/optimized/libcurl_la-http1.ll
-; delta-rs/optimized/11f8x98axanecwnw.ll
-; entt/optimized/sigh.cpp.ll
-; folly/optimized/AsyncSSLSocket.cpp.ll
-; graphviz/optimized/graph_generator.c.ll
-; graphviz/optimized/graphml2gv.c.ll
-; graphviz/optimized/gxl2gv.c.ll
-; jsonnet/optimized/rapidyaml.cpp.ll
-; just-rs/optimized/2sblcsgax6v4zfcc.ll
-; llvm/optimized/CodeLayout.cpp.ll
-; llvm/optimized/SemaSwift.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
-; openjdk/optimized/dfsClosure.ll
-; ozz-animation/optimized/gltf2ozz.cc.ll
-; pbrt-v4/optimized/spectrum.cpp.ll
-; postgres/optimized/bootparse.ll
-; postgres/optimized/exprparse.ll
-; postgres/optimized/jsonpath_gram.ll
-; postgres/optimized/reorderbuffer.ll
-; postgres/optimized/repl_gram.ll
-; postgres/optimized/scan.ll
-; postgres/optimized/specparse.ll
-; postgres/optimized/syncrep_gram.ll
-; postgres/optimized/zic.ll
-; quantlib/optimized/blackkarasinski.ll
-; quantlib/optimized/generalizedhullwhite.ll
-; quantlib/optimized/hullwhite.ll
-; quantlib/optimized/onefactormodel.ll
-; quantlib/optimized/tqreigendecomposition.ll
-; quantlib/optimized/twofactormodel.ll
-; ripgrep-rs/optimized/3ujtdws8zoe4o3t7.ll
-; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
-; rocksdb/optimized/blob_source.cc.ll
-; rocksdb/optimized/compaction_merging_iterator.cc.ll
-; rocksdb/optimized/db_impl.cc.ll
-; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
-; rocksdb/optimized/flush_job.cc.ll
-; rocksdb/optimized/merging_iterator.cc.ll
-; rocksdb/optimized/point_lock_manager.cc.ll
-; rocksdb/optimized/range_del_aggregator.cc.ll
-; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
-; rocksdb/optimized/version_set.cc.ll
-; ruby/optimized/dir.ll
-; ruby/optimized/pm_integer.ll
-; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
-; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
-; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
-; tree-sitter-rs/optimized/5edwf61672v3jzil.ll
-; wireshark/optimized/manuf_dialog.cpp.ll
-; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
-; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
-; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
-; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 9
-  ret ptr %3
-}
-
-; 746 occurrences:
+; 747 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -884,6 +754,7 @@ entry:
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_prepared_txn_db.cc.ll
+; ruby/optimized/objspace_dump.ll
 ; ruby/optimized/ripper.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; soc-simulator/optimized/verilated.ll
@@ -1011,11 +882,83 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr i16, ptr %0, i64 %1
-  ret ptr %2
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 -2
+  ret ptr %3
 }
 
-; 246 occurrences:
+; 62 occurrences:
+; arrow/optimized/bridge.cc.ll
+; cmake/optimized/http1.c.ll
+; coreutils-rs/optimized/12t1ilskwpg6ujrn.ll
+; coreutils-rs/optimized/32w7px3m4px9sisi.ll
+; coreutils-rs/optimized/36bfqdbr81ll9nie.ll
+; coreutils-rs/optimized/394sgi2xuawacybl.ll
+; coreutils-rs/optimized/3ms64fx2j1h00m7c.ll
+; cpython/optimized/sre.ll
+; curl/optimized/libcurl_la-http1.ll
+; delta-rs/optimized/11f8x98axanecwnw.ll
+; entt/optimized/sigh.cpp.ll
+; folly/optimized/AsyncSSLSocket.cpp.ll
+; graphviz/optimized/graph_generator.c.ll
+; graphviz/optimized/graphml2gv.c.ll
+; graphviz/optimized/gxl2gv.c.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
+; just-rs/optimized/2sblcsgax6v4zfcc.ll
+; llvm/optimized/CodeLayout.cpp.ll
+; llvm/optimized/SemaSwift.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
+; openjdk/optimized/dfsClosure.ll
+; ozz-animation/optimized/gltf2ozz.cc.ll
+; pbrt-v4/optimized/spectrum.cpp.ll
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/reorderbuffer.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/scan.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; postgres/optimized/zic.ll
+; quantlib/optimized/blackkarasinski.ll
+; quantlib/optimized/generalizedhullwhite.ll
+; quantlib/optimized/hullwhite.ll
+; quantlib/optimized/onefactormodel.ll
+; quantlib/optimized/tqreigendecomposition.ll
+; quantlib/optimized/twofactormodel.ll
+; ripgrep-rs/optimized/3ujtdws8zoe4o3t7.ll
+; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
+; rocksdb/optimized/blob_source.cc.ll
+; rocksdb/optimized/compaction_merging_iterator.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
+; rocksdb/optimized/flush_job.cc.ll
+; rocksdb/optimized/merging_iterator.cc.ll
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/range_del_aggregator.cc.ll
+; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; ruby/optimized/dir.ll
+; ruby/optimized/pm_integer.ll
+; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
+; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; tree-sitter-rs/optimized/5edwf61672v3jzil.ll
+; wireshark/optimized/manuf_dialog.cpp.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 9
+  ret ptr %3
+}
+
+; 237 occurrences:
 ; abc/optimized/cuddZddMisc.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -1035,7 +978,6 @@ entry:
 ; cmake/optimized/zdict.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
-; cvc5/optimized/safe_print.cpp.ll
 ; eastl/optimized/BenchmarkHeap.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
@@ -1049,7 +991,6 @@ entry:
 ; git/optimized/dir.ll
 ; git/optimized/rebase-interactive.ll
 ; git/optimized/tree-walk.ll
-; graphviz/optimized/sfprint.c.ll
 ; graphviz/optimized/shortest.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
@@ -1072,7 +1013,6 @@ entry:
 ; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/messagepattern.ll
-; icu/optimized/numparse_impl.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/ubidiln.ll
@@ -1116,7 +1056,6 @@ entry:
 ; llvm/optimized/SampleContextTracker.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
-; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
@@ -1137,8 +1076,6 @@ entry:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
@@ -1179,11 +1116,8 @@ entry:
 ; openjdk/optimized/zPhysicalMemory.ll
 ; openmpi/optimized/coll_han_dynamic.ll
 ; openspiel/optimized/tensor_game_utils.cc.ll
-; openspiel/optimized/twixt.cc.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
 ; openusd/optimized/thread_common.c.ll
@@ -2109,7 +2043,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"class.absl::debian2::string_view.2602139", ptr %0, i64 %1
+  %2 = getelementptr %"class.absl::debian2::string_view.2602106", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 24
   ret ptr %3
 }
@@ -2876,12 +2810,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"class.std::__1::basic_string.2603838", ptr %0, i64 %1
+  %2 = getelementptr %"class.std::__1::basic_string.2603805", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 32
   ret ptr %3
 }
 
-; 439 occurrences:
+; 443 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/reoSift.c.ll
@@ -2950,6 +2884,7 @@ entry:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
 ; cvc5/optimized/nonlinear_extension.cpp.ll
+; cvc5/optimized/safe_print.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
 ; cvc5/optimized/sygus_qe_preproc.cpp.ll
@@ -2976,6 +2911,7 @@ entry:
 ; glslang/optimized/ShaderLang.cpp.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/position.c.ll
+; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/atomprop.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
@@ -3018,6 +2954,7 @@ entry:
 ; llvm/optimized/IdentifierResolver.cpp.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
+; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; lua/optimized/lapi.ll
@@ -3068,6 +3005,7 @@ entry:
 ; openspiel/optimized/twixt.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; php/optimized/compact_literals.ll
 ; php/optimized/dce.ll
@@ -3450,12 +3388,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"class.rocksdb::WideColumn.2617401", ptr %0, i64 %1
+  %2 = getelementptr %"class.rocksdb::WideColumn.2617368", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 72
   ret ptr %3
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -3478,6 +3416,7 @@ entry:
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
@@ -3522,7 +3461,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.mold::elf::ElfRel.2637204", ptr %0, i64 %1
+  %2 = getelementptr %"struct.mold::elf::ElfRel.2637171", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -16
   ret ptr %3
 }
@@ -3554,7 +3493,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.mold::elf::FdeRecord.2637571", ptr %0, i64 %1
+  %2 = getelementptr %"struct.mold::elf::FdeRecord.2637538", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 28
   ret ptr %3
 }
@@ -3864,12 +3803,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.NetClientState.2706049, ptr %0, i64 %1
+  %2 = getelementptr %struct.NetClientState.2706015, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -360
   ret ptr %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -3883,7 +3822,6 @@ entry:
 ; git/optimized/dir.ll
 ; git/optimized/tree-walk.ll
 ; jsonnet/optimized/vm.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; openjdk/optimized/xPhysicalMemory.ll
 ; openjdk/optimized/zPhysicalMemory.ll
@@ -3893,12 +3831,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %class.ZPhysicalMemorySegment.2737563, ptr %0, i64 %1
+  %2 = getelementptr %class.ZPhysicalMemorySegment.2737529, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -8
   ret ptr %3
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
@@ -3931,7 +3869,6 @@ entry:
 ; typst-rs/optimized/avdrw26ojy6f9qt.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; z3/optimized/maxlex.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/spacer_convex_closure.cpp.ll
@@ -3940,8 +3877,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.SortingRecord.356.2761109, ptr %0, i64 %1
-  %3 = getelementptr i8, ptr %2, i64 40
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 23
   ret ptr %3
 }
 
@@ -3980,6 +3917,62 @@ entry:
   ret ptr %2
 }
 
+; 48 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/internal_huf.c.ll
+; openusd/optimized/openexr-c.c.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr ptr, ptr %0, i64 %1
+  ret ptr %2
+}
+
 ; 12 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -3996,7 +3989,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.object_id.2883377, ptr %0, i64 %1
+  %2 = getelementptr %struct.object_id.2883343, ptr %0, i64 %1
   ret ptr %2
 }
 
@@ -4005,7 +3998,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.object_id.2883661, ptr %0, i64 %1
+  %2 = getelementptr %struct.object_id.2883627, ptr %0, i64 %1
   ret ptr %2
 }
 
@@ -4044,7 +4037,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %class.QModelIndex.3444560, ptr %0, i64 %1
+  %2 = getelementptr %class.QModelIndex.3444526, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 52
   ret ptr %3
 }
@@ -4054,7 +4047,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.memblock_region.3537144, ptr %0, i64 %1
+  %2 = getelementptr %struct.memblock_region.3537110, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 32
   ret ptr %3
 }

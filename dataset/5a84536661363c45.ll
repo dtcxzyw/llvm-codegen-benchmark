@@ -1,5 +1,5 @@
 
-%struct.IntelHDAStream.2707409 = type { i32, i32, i32, i32, i32, i32, i32, ptr, i32, i32, i32, i32 }
+%struct.IntelHDAStream.2707375 = type { i32, i32, i32, i32, i32, i32, i32, ptr, i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_audio_intel-hda.c.ll
@@ -8,7 +8,7 @@ define ptr @func0000000000000003(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %.v = select i1 %1, i64 472, i64 248
   %3 = getelementptr i8, ptr %2, i64 %.v
-  %4 = getelementptr %struct.IntelHDAStream.2707409, ptr %3, i64 %0, i32 7
+  %4 = getelementptr %struct.IntelHDAStream.2707375, ptr %3, i64 %0, i32 7
   ret ptr %4
 }
 

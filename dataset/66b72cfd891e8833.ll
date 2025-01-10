@@ -1,8 +1,8 @@
 
-%"class.asmjit::_abi_1_10::Operand.2607746" = type { %"struct.asmjit::_abi_1_10::Operand_.2607747" }
-%"struct.asmjit::_abi_1_10::Operand_.2607747" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607743", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2607743" = type { i32 }
-%struct.Vec_Int_t_.2877150 = type { i32, i32, ptr }
+%"class.asmjit::_abi_1_10::Operand.2607713" = type { %"struct.asmjit::_abi_1_10::Operand_.2607714" }
+%"struct.asmjit::_abi_1_10::Operand_.2607714" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607710", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2607710" = type { i32 }
+%struct.Vec_Int_t_.2877116 = type { i32, i32, ptr }
 
 ; 3 occurrences:
 ; jq/optimized/decNumber.ll
@@ -11,7 +11,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000079(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607746", ptr %1, i64 %2, i32 0, i32 1
+  %3 = getelementptr nuw %"class.asmjit::_abi_1_10::Operand.2607713", ptr %1, i64 %2, i32 0, i32 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 2
@@ -110,7 +110,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Vec_Int_t_.2877150, ptr %1, i64 %2
+  %3 = getelementptr %struct.Vec_Int_t_.2877116, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

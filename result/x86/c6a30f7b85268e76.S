@@ -208,12 +208,6 @@ func00000000000000a8:                   # @func00000000000000a8
 	cmpq	$4, %rdi
 	setae	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
-	subq	%rsi, %rdi
-	addq	$16, %rdi
-	cmpq	$24, %rdi
-	setge	%al
-	retq
 func000000000000014a:                   # @func000000000000014a
 	subq	%rdi, %rsi
 	cmpq	$-1, %rsi

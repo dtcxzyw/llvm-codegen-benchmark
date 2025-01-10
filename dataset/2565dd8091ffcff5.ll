@@ -27,7 +27,8 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/bmcMaj.c.ll
 ; git/optimized/rebase.ll
 ; git/optimized/userdiff.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll

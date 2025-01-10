@@ -45,7 +45,7 @@ entry:
   ret i64 %5
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; curl/optimized/libcurl_la-mqtt.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -72,6 +72,7 @@ entry:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
+; php/optimized/ascmagic.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll

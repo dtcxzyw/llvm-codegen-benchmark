@@ -12,7 +12,7 @@ entry:
   ret ptr %4
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -85,7 +85,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
 entry:

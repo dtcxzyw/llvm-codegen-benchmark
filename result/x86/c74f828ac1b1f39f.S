@@ -54,7 +54,7 @@ func0000000000000046:                   # @func0000000000000046
 	setl	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
-	andl	$3, %edi
+	andl	$-64, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq

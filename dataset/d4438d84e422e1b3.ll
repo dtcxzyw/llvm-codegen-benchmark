@@ -1,6 +1,6 @@
 
-%"struct.std::array.35.3491014" = type { [6 x %"struct.open_spiel::havannah::Move.3491015"] }
-%"struct.open_spiel::havannah::Move.3491015" = type { i8, i8, i16 }
+%"struct.std::array.35.3490980" = type { [6 x %"struct.open_spiel::havannah::Move.3490981"] }
+%"struct.open_spiel::havannah::Move.3490981" = type { i8, i8, i16 }
 
 ; 2 occurrences:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -52,7 +52,7 @@ entry:
   %4 = add nsw i32 %3, -1
   %5 = sext i32 %4 to i64
   %6 = mul nsw i64 %1, %5
-  %7 = getelementptr %"struct.std::array.35.3491014", ptr %0, i64 %6
+  %7 = getelementptr %"struct.std::array.35.3490980", ptr %0, i64 %6
   ret ptr %7
 }
 

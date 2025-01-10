@@ -1,5 +1,5 @@
 
-%"struct.open_spiel::State::PlayerAction.3483931" = type { i32, i64 }
+%"struct.open_spiel::State::PlayerAction.3483897" = type { i32, i64 }
 
 ; 4 occurrences:
 ; casadi/optimized/casadi_c.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = ashr exact i64 %1, 4
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr %"struct.open_spiel::State::PlayerAction.3483931", ptr %0, i64 %5
+  %6 = getelementptr %"struct.open_spiel::State::PlayerAction.3483897", ptr %0, i64 %5
   ret ptr %6
 }
 

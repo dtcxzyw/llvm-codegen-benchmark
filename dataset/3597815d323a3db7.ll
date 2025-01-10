@@ -1,5 +1,5 @@
 
-; 6760 occurrences:
+; 6758 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -2494,7 +2494,6 @@
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EHPersonalities.cpp.ll
-; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
@@ -2588,7 +2587,6 @@
 ; llvm/optimized/LoopTraversal.cpp.ll
 ; llvm/optimized/LoopUnrolling.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowLevelType.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
@@ -4890,7 +4888,6 @@
 ; ruby/optimized/dir.ll
 ; ruby/optimized/enum.ll
 ; ruby/optimized/enumerator.ll
-; ruby/optimized/error.ll
 ; ruby/optimized/file.ll
 ; ruby/optimized/hash.ll
 ; ruby/optimized/instrumentation.ll
@@ -5766,6 +5763,7 @@
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
 ; wasmtime-rs/optimized/4ttv0mw4yesuute3.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/4v5zacq1pia1727a.ll
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll

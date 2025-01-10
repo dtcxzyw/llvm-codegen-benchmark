@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -41,7 +41,7 @@ entry:
   %4 = shl nuw nsw i64 %3, 1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %5, i64 %6
   ret ptr %7
 }
 

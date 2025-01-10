@@ -103,7 +103,7 @@ entry:
   ret i32 %2
 }
 
-; 153 occurrences:
+; 151 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcGraft.c.ll
@@ -247,11 +247,9 @@ entry:
 ; wireshark/optimized/packet-shicp.c.ll
 ; wireshark/optimized/packet-smb-direct.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
-; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-v5dl.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
@@ -265,12 +263,11 @@ entry:
   ret i32 %2
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; cpython/optimized/unicodectype.ll
 ; flac/optimized/encode.c.ll
 ; icu/optimized/dtitvfmt.ll
-; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/ushape.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/i9xx_wm.ll
@@ -306,7 +303,7 @@ entry:
   ret i32 %2
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -326,7 +323,6 @@ entry:
 ; openusd/optimized/detokenize.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i16 %0) #0 {
 entry:

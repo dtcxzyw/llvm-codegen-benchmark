@@ -1,5 +1,5 @@
 
-%struct.aiFace.2825500 = type { i32, ptr }
+%struct.aiFace.2825466 = type { i32, ptr }
 
 ; 4 occurrences:
 ; git/optimized/ws.ll
@@ -50,7 +50,7 @@ entry:
   %3 = sext i1 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.aiFace.2825466, ptr %0, i64 %5
   ret ptr %6
 }
 

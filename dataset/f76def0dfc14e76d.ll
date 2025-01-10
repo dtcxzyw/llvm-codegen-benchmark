@@ -1,16 +1,16 @@
 
-%"struct.llvh::detail::DenseMapPair.3080718" = type { %"struct.std::pair.247.3080719" }
-%"struct.std::pair.247.3080719" = type { i64, %"class.std::__cxx11::basic_string.3080715" }
-%"class.std::__cxx11::basic_string.3080715" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080716", i64, %union.anon.3080717 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080716" = type { ptr }
-%union.anon.3080717 = type { i64, [8 x i8] }
-%"struct.llvm::detail::DenseMapPair.653.3176296" = type { %"struct.std::pair.654.3176297" }
-%"struct.std::pair.654.3176297" = type { i32, i32 }
-%"struct.llvm::detail::DenseMapPair.3185615" = type { %"struct.std::pair.289.3185616" }
-%"struct.std::pair.289.3185616" = type { i32, i32 }
-%"struct.llvm::detail::DenseMapPair.3251978" = type { %"struct.std::pair.3251979" }
-%"struct.std::pair.3251979" = type { %"class.llvm::MCRegister.3251977", i32 }
-%"class.llvm::MCRegister.3251977" = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3080684" = type { %"struct.std::pair.247.3080685" }
+%"struct.std::pair.247.3080685" = type { i64, %"class.std::__cxx11::basic_string.3080681" }
+%"class.std::__cxx11::basic_string.3080681" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080682", i64, %union.anon.3080683 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080682" = type { ptr }
+%union.anon.3080683 = type { i64, [8 x i8] }
+%"struct.llvm::detail::DenseMapPair.653.3176262" = type { %"struct.std::pair.654.3176263" }
+%"struct.std::pair.654.3176263" = type { i32, i32 }
+%"struct.llvm::detail::DenseMapPair.3185581" = type { %"struct.std::pair.289.3185582" }
+%"struct.std::pair.289.3185582" = type { i32, i32 }
+%"struct.llvm::detail::DenseMapPair.3251944" = type { %"struct.std::pair.3251945" }
+%"struct.std::pair.3251945" = type { %"class.llvm::MCRegister.3251943", i32 }
+%"class.llvm::MCRegister.3251943" = type { i32 }
 
 ; 71 occurrences:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
@@ -91,7 +91,7 @@ entry:
   %4 = mul i32 %3, 37
   %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080718", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080684", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -105,7 +105,7 @@ entry:
   %4 = mul i32 %3, 37
   %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.653.3176296", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.653.3176262", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -122,7 +122,7 @@ entry:
   %4 = mul i32 %3, 37
   %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3185615", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3185581", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -135,7 +135,7 @@ entry:
   %4 = mul i32 %3, 37
   %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3251978", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3251944", ptr %0, i64 %6
   ret ptr %7
 }
 

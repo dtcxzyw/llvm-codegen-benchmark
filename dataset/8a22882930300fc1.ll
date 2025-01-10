@@ -29,7 +29,7 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/fse_decompress.ll
@@ -39,7 +39,6 @@ entry:
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll

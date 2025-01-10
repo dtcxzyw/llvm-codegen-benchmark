@@ -1,13 +1,15 @@
 
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
-%struct.aiTexel.2830043 = type { i8, i8, i8, i8 }
-%struct.AFM_KernPairRec_.3882042 = type { i32, i32, i32, i32 }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%struct.aiTexel.2830009 = type { i8, i8, i8, i8 }
+%struct.AFM_KernPairRec_.3881992 = type { i32, i32, i32, i32 }
 
-; 18 occurrences:
+; 20 occurrences:
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; graphviz/optimized/dtstrhash.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -30,13 +32,13 @@
 define i1 @func00000000000003c4(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -12
   %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
@@ -46,7 +48,6 @@ entry:
 ; hermes/optimized/RegexParser.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -99,7 +100,7 @@ entry:
 define i1 @func00000000000003c1(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw nuw %struct._Point.2744407, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct._Point.2744373, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -56
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -112,7 +113,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %struct.aiTexel.2830043, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct.aiTexel.2830009, ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -186,7 +187,7 @@ entry:
 define i1 @func00000000000001c8(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %struct.AFM_KernPairRec_.3882042, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct.AFM_KernPairRec_.3881992, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = icmp ugt ptr %0, %4
   ret i1 %5

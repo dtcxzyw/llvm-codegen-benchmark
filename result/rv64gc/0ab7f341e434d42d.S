@@ -1,9 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
-	andi	a2, a2, 2
-	slliw	a1, a1, 19
-	slli	a2, a2, 19
-	or	a0, a0, a1
+	slliw	a2, a2, 4
+	slli	a1, a1, 59
 	or	a0, a0, a2
+	srli	a1, a1, 49
+	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a2, a2, 60

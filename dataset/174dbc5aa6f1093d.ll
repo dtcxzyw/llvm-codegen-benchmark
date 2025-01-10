@@ -221,7 +221,7 @@ entry:
   ret i8 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -244,6 +244,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wolfssl/optimized/sha3.c.ll
 ; yosys/optimized/lz4.ll
 ; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll

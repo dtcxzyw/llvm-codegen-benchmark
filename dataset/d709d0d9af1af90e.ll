@@ -1,8 +1,9 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/reoSift.c.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
@@ -140,9 +141,8 @@ entry:
   ret i32 %2
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/cuddApa.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clahe.c.ll

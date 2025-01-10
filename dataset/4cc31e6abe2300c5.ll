@@ -1,5 +1,5 @@
 
-%struct.FT_Vector_.3881692 = type { i64, i64 }
+%struct.FT_Vector_.3881642 = type { i64, i64 }
 
 ; 3 occurrences:
 ; libpng/optimized/pngwrite.c.ll
@@ -36,7 +36,7 @@ entry:
   %3 = and i32 %2, -8
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 65535, i64 %4
-  %6 = getelementptr nusw nuw %struct.FT_Vector_.3881692, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.FT_Vector_.3881642, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -50,14 +50,6 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$63, %rax
 	orq	%rdx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	shlq	$56, %rdx
-	orq	%rdi, %rdx
-	andl	$1, %esi
-	movl	$12, %eax
-	subq	%rsi, %rax
-	orq	%rdx, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
 	shlq	$32, %rdx

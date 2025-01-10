@@ -1,6 +1,7 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcExact.c.ll
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll

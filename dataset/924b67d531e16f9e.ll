@@ -1,18 +1,18 @@
 
-%"struct.rocksdb::BufferInfo.2613152" = type { %"class.rocksdb::AlignedBuffer.2613153", i64, i64, i8, ptr, %"class.std::function.182.2613116", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2613153" = type { i64, %"class.std::unique_ptr.186.2613120", i64, i64, ptr }
-%"class.std::unique_ptr.186.2613120" = type { %"struct.std::__uniq_ptr_data.187.2613121" }
-%"struct.std::__uniq_ptr_data.187.2613121" = type { %"class.std::__uniq_ptr_impl.188.2613122" }
-%"class.std::__uniq_ptr_impl.188.2613122" = type { %"class.std::tuple.189.2613123" }
-%"class.std::tuple.189.2613123" = type { %"struct.std::_Tuple_impl.190.2613124" }
-%"struct.std::_Tuple_impl.190.2613124" = type { %"struct.std::_Head_base.135.2613084" }
-%"struct.std::_Head_base.135.2613084" = type { ptr }
-%"class.std::function.182.2613116" = type { %"class.std::_Function_base.2613117", ptr }
-%"class.std::_Function_base.2613117" = type { %"union.std::_Any_data.2613118", ptr }
-%"union.std::_Any_data.2613118" = type { %"union.std::_Nocopy_types.2613119" }
-%"union.std::_Nocopy_types.2613119" = type { { i64, i64 } }
-%struct.VFIOMSIVector.2708537 = type { %struct.EventNotifier.2708538, %struct.EventNotifier.2708538, ptr, i32, i8 }
-%struct.EventNotifier.2708538 = type { i32, i32, i8 }
+%"struct.rocksdb::BufferInfo.2613119" = type { %"class.rocksdb::AlignedBuffer.2613120", i64, i64, i8, ptr, %"class.std::function.182.2613083", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2613120" = type { i64, %"class.std::unique_ptr.186.2613087", i64, i64, ptr }
+%"class.std::unique_ptr.186.2613087" = type { %"struct.std::__uniq_ptr_data.187.2613088" }
+%"struct.std::__uniq_ptr_data.187.2613088" = type { %"class.std::__uniq_ptr_impl.188.2613089" }
+%"class.std::__uniq_ptr_impl.188.2613089" = type { %"class.std::tuple.189.2613090" }
+%"class.std::tuple.189.2613090" = type { %"struct.std::_Tuple_impl.190.2613091" }
+%"struct.std::_Tuple_impl.190.2613091" = type { %"struct.std::_Head_base.135.2613051" }
+%"struct.std::_Head_base.135.2613051" = type { ptr }
+%"class.std::function.182.2613083" = type { %"class.std::_Function_base.2613084", ptr }
+%"class.std::_Function_base.2613084" = type { %"union.std::_Any_data.2613085", ptr }
+%"union.std::_Any_data.2613085" = type { %"union.std::_Nocopy_types.2613086" }
+%"union.std::_Nocopy_types.2613086" = type { { i64, i64 } }
+%struct.VFIOMSIVector.2708503 = type { %struct.EventNotifier.2708504, %struct.EventNotifier.2708504, ptr, i32, i8 }
+%struct.EventNotifier.2708504 = type { i32, i32, i8 }
 
 ; 52 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
@@ -786,7 +786,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 48, i64 24
-  %4 = getelementptr nusw nuw %"struct.rocksdb::BufferInfo.2613152", ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::BufferInfo.2613119", ptr %0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -820,7 +820,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 12
-  %4 = getelementptr %struct.VFIOMSIVector.2708537, ptr %0, i64 %1
+  %4 = getelementptr %struct.VFIOMSIVector.2708503, ptr %0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }

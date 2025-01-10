@@ -92,7 +92,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llama.cpp/optimized/ggml.c.ll
 ; taskflow/optimized/dependent_async_algorithm.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {

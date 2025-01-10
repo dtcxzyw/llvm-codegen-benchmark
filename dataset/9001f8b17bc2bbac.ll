@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -70,7 +70,7 @@ define ptr @func000000000000000a(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
   %4 = select i1 %1, ptr %3, ptr null
-  %5 = getelementptr nusw %"class.llvm::Use.3157992", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3157958", ptr %4, i64 %0
   ret ptr %5
 }
 

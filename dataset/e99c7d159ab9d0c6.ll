@@ -2218,7 +2218,7 @@ entry:
   ret i32 %4
 }
 
-; 812 occurrences:
+; 811 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -2740,7 +2740,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openssl/optimized/openssl-bin-x509.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/av1_inv_txfm1d.c.ll
@@ -3105,10 +3104,9 @@ entry:
   ret i32 %4
 }
 
-; 236 occurrences:
+; 235 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/aigRet.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraBddUnate.c.ll
 ; abc/optimized/extraUtilTruth.c.ll

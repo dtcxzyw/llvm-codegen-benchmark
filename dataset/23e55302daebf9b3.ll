@@ -1,14 +1,4 @@
 
-; 2 occurrences:
-; minetest/optimized/servermap.cpp.ll
-; redis/optimized/geohash_helper.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000017(i8 %0) #0 {
-entry:
-  %1 = add i8 %0, -1
-  ret i8 %1
-}
-
 ; 25 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; hdf5/optimized/H5Tbit.c.ll
@@ -102,6 +92,15 @@ entry:
 define i8 @func000000000000000e(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 1
+  ret i8 %1
+}
+
+; 1 occurrences:
+; redis/optimized/geohash_helper.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000017(i8 %0) #0 {
+entry:
+  %1 = add i8 %0, -1
   ret i8 %1
 }
 

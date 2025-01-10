@@ -102,11 +102,12 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll

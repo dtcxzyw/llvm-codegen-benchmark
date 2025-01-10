@@ -1,7 +1,5 @@
 
-; 19 occurrences:
-; abc/optimized/cbaReadVer.c.ll
-; abc/optimized/wlcReadVer.c.ll
+; 17 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll

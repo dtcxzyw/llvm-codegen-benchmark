@@ -1,5 +1,5 @@
 
-%struct.ext4_extent.3555770 = type { i32, i16, i16, i32 }
+%struct.ext4_extent.3555736 = type { i32, i16, i16, i32 }
 
 ; 47 occurrences:
 ; boost/optimized/static_string.ll
@@ -122,7 +122,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12
-  %5 = getelementptr %struct.ext4_extent.3555770, ptr %4, i64 %3
+  %5 = getelementptr %struct.ext4_extent.3555736, ptr %4, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

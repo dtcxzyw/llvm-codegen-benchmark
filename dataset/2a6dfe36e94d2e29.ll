@@ -16,7 +16,7 @@ entry:
   ret ptr %5
 }
 
-; 125 occurrences:
+; 126 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecTree.c.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -141,6 +141,7 @@ entry:
 ; gromacs/optimized/vsite.cpp.ll
 ; openblas/optimized/dstemr.c.ll
 ; openjdk/optimized/ThreeByteBgr.ll
+; openmpi/optimized/test_overhead.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
@@ -152,12 +153,11 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openmpi/optimized/test_overhead.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:

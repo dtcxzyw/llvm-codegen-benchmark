@@ -6,11 +6,8 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	ret
 func000000000000002c:                   # @func000000000000002c
-	slli	a1, a1, 33
-	lui	a2, 524032
+	andi	a1, a1, 63
 	sext.w	a0, a0
-	srli	a1, a1, 33
-	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

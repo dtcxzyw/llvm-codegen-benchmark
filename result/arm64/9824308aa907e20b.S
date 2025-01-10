@@ -5,6 +5,13 @@ func0000000000000000:                   // @func0000000000000000
 	sub	w0, w8, #4
 	ret
                                         // -- End function
+func000000000000000f:                   // @func000000000000000f
+// %bb.0:                               // %entry
+	and	w8, w1, #0x3f
+	sub	w8, w0, w8
+	add	w0, w8, #1
+	ret
+                                        // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	and	w8, w1, #0x7
@@ -17,13 +24,6 @@ func0000000000000004:                   // @func0000000000000004
 	and	w8, w1, #0xfffffffc
 	sub	w8, w0, w8
 	sub	w0, w8, #4
-	ret
-                                        // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	and	w8, w1, #0x20
-	sub	w8, w0, w8
-	add	w0, w8, #97
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d

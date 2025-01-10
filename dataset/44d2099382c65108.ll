@@ -1,6 +1,6 @@
 
-%struct.aiVectorKey.2824220 = type <{ double, %class.aiVector3t.2824221, [4 x i8] }>
-%class.aiVector3t.2824221 = type { float, float, float }
+%struct.aiVectorKey.2824186 = type <{ double, %class.aiVector3t.2824187, [4 x i8] }>
+%class.aiVector3t.2824187 = type { float, float, float }
 
 ; 94 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -170,7 +170,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %1, i64 %2)
-  %4 = getelementptr nusw nuw %struct.aiVectorKey.2824220, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.aiVectorKey.2824186, ptr %0, i64 %3
   ret ptr %4
 }
 

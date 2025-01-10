@@ -29,3 +29,9 @@ func0000000000000301:                   # @func0000000000000301
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+func0000000000000021:                   # @func0000000000000021
+	li	a1, 3
+	slli	a1, a1, 33
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret

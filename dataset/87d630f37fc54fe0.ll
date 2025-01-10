@@ -1,5 +1,5 @@
 
-; 500 occurrences:
+; 502 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -146,6 +146,7 @@
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; influxdb-rs/optimized/2rfehyqstyicagph.ll
 ; libquic/optimized/ssl_lib.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; lief/optimized/psa_crypto_ecp.c.ll
 ; linux/optimized/access.ll
 ; linux/optimized/af_inet.ll
@@ -202,6 +203,7 @@
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll

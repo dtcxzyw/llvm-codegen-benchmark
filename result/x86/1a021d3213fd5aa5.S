@@ -23,11 +23,6 @@ func0000000000000027:                   # @func0000000000000027
 	movl	$32, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000025:                   # @func0000000000000025
-	lzcntl	%edi, %ecx
-	movl	$26, %eax
-	subl	%ecx, %eax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	lzcntl	%edi, %ecx
 	movl	$31, %eax

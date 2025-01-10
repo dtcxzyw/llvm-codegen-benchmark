@@ -1,11 +1,11 @@
 
-%"class.openvdb::v11_0::tree::LeafBuffer.2710611" = type <{ %union.anon.187.2710612, %"struct.std::atomic.188.2710476", %"class.tbb::detail::d1::spin_mutex.2710613", [3 x i8] }>
-%union.anon.187.2710612 = type { ptr }
-%"struct.std::atomic.188.2710476" = type { %"struct.std::__atomic_base.189.2710483" }
-%"struct.std::__atomic_base.189.2710483" = type { i32 }
-%"class.tbb::detail::d1::spin_mutex.2710613" = type { %"struct.std::atomic.190.2710614" }
-%"struct.std::atomic.190.2710614" = type { %"struct.std::__atomic_base.191.2710615" }
-%"struct.std::__atomic_base.191.2710615" = type { i8 }
+%"class.openvdb::v11_0::tree::LeafBuffer.2710577" = type <{ %union.anon.187.2710578, %"struct.std::atomic.188.2710442", %"class.tbb::detail::d1::spin_mutex.2710579", [3 x i8] }>
+%union.anon.187.2710578 = type { ptr }
+%"struct.std::atomic.188.2710442" = type { %"struct.std::__atomic_base.189.2710449" }
+%"struct.std::__atomic_base.189.2710449" = type { i32 }
+%"class.tbb::detail::d1::spin_mutex.2710579" = type { %"struct.std::atomic.190.2710580" }
+%"struct.std::atomic.190.2710580" = type { %"struct.std::__atomic_base.191.2710581" }
+%"struct.std::__atomic_base.191.2710581" = type { i8 }
 
 ; 42 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -125,7 +125,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw %"class.openvdb::v11_0::tree::LeafBuffer.2710611", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.openvdb::v11_0::tree::LeafBuffer.2710577", ptr %4, i64 %3
   ret ptr %5
 }
 

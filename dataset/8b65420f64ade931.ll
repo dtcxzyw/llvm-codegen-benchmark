@@ -16,7 +16,7 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; gromacs/optimized/gmx_dielectric.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
@@ -29,7 +29,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/model.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; opencv/optimized/trackerCSRTSegmentation.cpp.ll

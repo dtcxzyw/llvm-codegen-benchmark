@@ -1,5 +1,5 @@
 
-%struct.aiFace.2822611 = type { i32, ptr }
+%struct.aiFace.2822577 = type { i32, ptr }
 
 ; 13 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
@@ -20,7 +20,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 6
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %struct.aiFace.2822611, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.aiFace.2822577, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

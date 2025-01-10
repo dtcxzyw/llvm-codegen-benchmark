@@ -1,5 +1,5 @@
 
-%"struct.std::pair.63.3850924" = type <{ double, i32, [4 x i8] }>
+%"struct.std::pair.63.3850874" = type <{ double, i32, [4 x i8] }>
 
 ; 27 occurrences:
 ; abc/optimized/abcSop.c.ll
@@ -414,7 +414,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = mul nsw i64 %1, %4
-  %6 = getelementptr nusw %"struct.std::pair.63.3850924", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.std::pair.63.3850874", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,9 +1,8 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/sha1.c.ll
 ; duckdb/optimized/ub_duckdb_common_crypto.cpp.ll
 ; git/optimized/sha1.ll
-; git/optimized/sha256.ll
 ; libquic/optimized/md5.cc.ll
 ; lief/optimized/md5.c.ll
 ; lief/optimized/ripemd160.c.ll
@@ -28,8 +27,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; git/optimized/sha256.ll
+; 2 occurrences:
 ; php/optimized/md5.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind

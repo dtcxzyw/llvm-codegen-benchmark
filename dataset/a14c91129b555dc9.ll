@@ -1,43 +1,43 @@
 
-%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
-%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
-%union.anon.2619710 = type { i64, [8 x i8] }
-%class.ItemPartColor.2694342 = type <{ %"class.irr::video::SColor.2694338", %"class.irr::video::SColor.2694338", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2694338" = type { i32 }
-%struct.ModSpec.2702491 = type { %"class.std::__cxx11::basic_string.2702448", %"class.std::__cxx11::basic_string.2702448", %"class.std::__cxx11::basic_string.2702448", %"class.std::__cxx11::basic_string.2702448", i32, %"class.std::unordered_set.2702492", %"class.std::unordered_set.2702492", %"class.std::unordered_set.2702492", i8, i8, %"class.std::__cxx11::basic_string.2702448", %"class.std::vector.2702493", %"class.std::map.2702456" }
-%"class.std::unordered_set.2702492" = type { %"class.std::_Hashtable.2702494" }
-%"class.std::_Hashtable.2702494" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2702468", i64, %"struct.std::__detail::_Prime_rehash_policy.2702469", ptr }
-%"struct.std::__detail::_Hash_node_base.2702468" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2702469" = type { float, i64 }
-%"class.std::__cxx11::basic_string.2702448" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702449", i64, %union.anon.2702450 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702449" = type { ptr }
-%union.anon.2702450 = type { i64, [8 x i8] }
-%"class.std::vector.2702493" = type { %"struct.std::_Vector_base.2702495" }
-%"struct.std::_Vector_base.2702495" = type { %"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl.2702496" }
-%"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl.2702496" = type { %"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl_data.2702497" }
-%"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl_data.2702497" = type { ptr, ptr, ptr }
-%"class.std::map.2702456" = type { %"class.std::_Rb_tree.2702457" }
-%"class.std::_Rb_tree.2702457" = type { %"struct.std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, ModSpec>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, ModSpec>>, std::less<std::__cxx11::basic_string<char>>>::_Rb_tree_impl.2702458" }
-%"struct.std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, ModSpec>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, ModSpec>>, std::less<std::__cxx11::basic_string<char>>>::_Rb_tree_impl.2702458" = type { %"struct.std::_Rb_tree_key_compare.2702459", %"struct.std::_Rb_tree_header.2702460" }
-%"struct.std::_Rb_tree_key_compare.2702459" = type { %"struct.std::less.2702461" }
-%"struct.std::less.2702461" = type { i8 }
-%"struct.std::_Rb_tree_header.2702460" = type { %"struct.std::_Rb_tree_node_base.2702462", i64 }
-%"struct.std::_Rb_tree_node_base.2702462" = type { i32, ptr, ptr, ptr }
-%class.aiVector3t.2822608 = type { float, float, float }
-%"struct.vcpkg::SectionTableHeader.2864717" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
-%"struct.absl::status_internal::Payload.3478242" = type { %"class.std::__cxx11::basic_string.3478243", %"class.absl::Cord.3478236" }
-%"class.std::__cxx11::basic_string.3478243" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3478244", i64, %union.anon.3478245 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3478244" = type { ptr }
-%union.anon.3478245 = type { i64, [8 x i8] }
-%"class.absl::Cord.3478236" = type { %"class.absl::Cord::InlineRep.3478237" }
-%"class.absl::Cord::InlineRep.3478237" = type { %"class.absl::cord_internal::InlineData.3478238" }
-%"class.absl::cord_internal::InlineData.3478238" = type { %"struct.absl::cord_internal::InlineData::Rep.3478239" }
-%"struct.absl::cord_internal::InlineData::Rep.3478239" = type { %union.anon.3.3478240 }
-%union.anon.3.3478240 = type { %"struct.absl::cord_internal::InlineData::Rep::AsTree.3478241" }
-%"struct.absl::cord_internal::InlineData::Rep::AsTree.3478241" = type { i64, ptr }
-%"class.std::__1::sub_match.3843880" = type <{ %"struct.std::__1::pair.82.3843883", i8, [7 x i8] }>
-%"struct.std::__1::pair.82.3843883" = type { ptr, ptr }
+%"struct.rocksdb::TableReader::Anchor.2619962" = type { %"class.std::__cxx11::basic_string.2619675", i64 }
+%"class.std::__cxx11::basic_string.2619675" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676", i64, %union.anon.2619677 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676" = type { ptr }
+%union.anon.2619677 = type { i64, [8 x i8] }
+%class.ItemPartColor.2694308 = type <{ %"class.irr::video::SColor.2694304", %"class.irr::video::SColor.2694304", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2694304" = type { i32 }
+%struct.ModSpec.2702457 = type { %"class.std::__cxx11::basic_string.2702414", %"class.std::__cxx11::basic_string.2702414", %"class.std::__cxx11::basic_string.2702414", %"class.std::__cxx11::basic_string.2702414", i32, %"class.std::unordered_set.2702458", %"class.std::unordered_set.2702458", %"class.std::unordered_set.2702458", i8, i8, %"class.std::__cxx11::basic_string.2702414", %"class.std::vector.2702459", %"class.std::map.2702422" }
+%"class.std::unordered_set.2702458" = type { %"class.std::_Hashtable.2702460" }
+%"class.std::_Hashtable.2702460" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2702434", i64, %"struct.std::__detail::_Prime_rehash_policy.2702435", ptr }
+%"struct.std::__detail::_Hash_node_base.2702434" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2702435" = type { float, i64 }
+%"class.std::__cxx11::basic_string.2702414" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702415", i64, %union.anon.2702416 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702415" = type { ptr }
+%union.anon.2702416 = type { i64, [8 x i8] }
+%"class.std::vector.2702459" = type { %"struct.std::_Vector_base.2702461" }
+%"struct.std::_Vector_base.2702461" = type { %"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl.2702462" }
+%"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl.2702462" = type { %"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl_data.2702463" }
+%"struct.std::_Vector_base<const char *, std::allocator<const char *>>::_Vector_impl_data.2702463" = type { ptr, ptr, ptr }
+%"class.std::map.2702422" = type { %"class.std::_Rb_tree.2702423" }
+%"class.std::_Rb_tree.2702423" = type { %"struct.std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, ModSpec>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, ModSpec>>, std::less<std::__cxx11::basic_string<char>>>::_Rb_tree_impl.2702424" }
+%"struct.std::_Rb_tree<std::__cxx11::basic_string<char>, std::pair<const std::__cxx11::basic_string<char>, ModSpec>, std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, ModSpec>>, std::less<std::__cxx11::basic_string<char>>>::_Rb_tree_impl.2702424" = type { %"struct.std::_Rb_tree_key_compare.2702425", %"struct.std::_Rb_tree_header.2702426" }
+%"struct.std::_Rb_tree_key_compare.2702425" = type { %"struct.std::less.2702427" }
+%"struct.std::less.2702427" = type { i8 }
+%"struct.std::_Rb_tree_header.2702426" = type { %"struct.std::_Rb_tree_node_base.2702428", i64 }
+%"struct.std::_Rb_tree_node_base.2702428" = type { i32, ptr, ptr, ptr }
+%class.aiVector3t.2822574 = type { float, float, float }
+%"struct.vcpkg::SectionTableHeader.2864683" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
+%"struct.absl::status_internal::Payload.3478208" = type { %"class.std::__cxx11::basic_string.3478209", %"class.absl::Cord.3478202" }
+%"class.std::__cxx11::basic_string.3478209" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3478210", i64, %union.anon.3478211 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3478210" = type { ptr }
+%union.anon.3478211 = type { i64, [8 x i8] }
+%"class.absl::Cord.3478202" = type { %"class.absl::Cord::InlineRep.3478203" }
+%"class.absl::Cord::InlineRep.3478203" = type { %"class.absl::cord_internal::InlineData.3478204" }
+%"class.absl::cord_internal::InlineData.3478204" = type { %"struct.absl::cord_internal::InlineData::Rep.3478205" }
+%"struct.absl::cord_internal::InlineData::Rep.3478205" = type { %union.anon.3.3478206 }
+%union.anon.3.3478206 = type { %"struct.absl::cord_internal::InlineData::Rep::AsTree.3478207" }
+%"struct.absl::cord_internal::InlineData::Rep::AsTree.3478207" = type { i64, ptr }
+%"class.std::__1::sub_match.3843830" = type <{ %"struct.std::__1::pair.82.3843833", i8, [7 x i8] }>
+%"struct.std::__1::pair.82.3843833" = type { ptr, ptr }
 
 ; 143 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
@@ -187,8 +187,8 @@
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -40
-  %3 = getelementptr %"struct.rocksdb::TableReader::Anchor.2619995", ptr %0, i64 %.neg
-  %4 = getelementptr %"struct.rocksdb::TableReader::Anchor.2619995", ptr %3, i64 %1
+  %3 = getelementptr %"struct.rocksdb::TableReader::Anchor.2619962", ptr %0, i64 %.neg
+  %4 = getelementptr %"struct.rocksdb::TableReader::Anchor.2619962", ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -364,8 +364,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
-  %3 = getelementptr %class.ItemPartColor.2694342, ptr %0, i64 %.neg
-  %4 = getelementptr %class.ItemPartColor.2694342, ptr %3, i64 %1
+  %3 = getelementptr %class.ItemPartColor.2694308, ptr %0, i64 %.neg
+  %4 = getelementptr %class.ItemPartColor.2694308, ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -388,8 +388,8 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -416
-  %3 = getelementptr %struct.ModSpec.2702491, ptr %0, i64 %.neg
-  %4 = getelementptr %struct.ModSpec.2702491, ptr %3, i64 %1
+  %3 = getelementptr %struct.ModSpec.2702457, ptr %0, i64 %.neg
+  %4 = getelementptr %struct.ModSpec.2702457, ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -454,8 +454,8 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
-  %3 = getelementptr %class.aiVector3t.2822608, ptr %0, i64 %.neg
-  %4 = getelementptr %class.aiVector3t.2822608, ptr %3, i64 %1
+  %3 = getelementptr %class.aiVector3t.2822574, ptr %0, i64 %.neg
+  %4 = getelementptr %class.aiVector3t.2822574, ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -469,8 +469,8 @@ entry:
 define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -40
-  %3 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %0, i64 %.neg
-  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %3, i64 %1
+  %3 = getelementptr %"struct.vcpkg::SectionTableHeader.2864683", ptr %0, i64 %.neg
+  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2864683", ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -483,8 +483,8 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -48
-  %3 = getelementptr %"struct.absl::status_internal::Payload.3478242", ptr %0, i64 %.neg
-  %4 = getelementptr %"struct.absl::status_internal::Payload.3478242", ptr %3, i64 %1
+  %3 = getelementptr %"struct.absl::status_internal::Payload.3478208", ptr %0, i64 %.neg
+  %4 = getelementptr %"struct.absl::status_internal::Payload.3478208", ptr %3, i64 %1
   ret ptr %4
 }
 
@@ -494,8 +494,8 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -24
-  %3 = getelementptr %"class.std::__1::sub_match.3843880", ptr %0, i64 %.neg
-  %4 = getelementptr %"class.std::__1::sub_match.3843880", ptr %3, i64 %1
+  %3 = getelementptr %"class.std::__1::sub_match.3843830", ptr %0, i64 %.neg
+  %4 = getelementptr %"class.std::__1::sub_match.3843830", ptr %3, i64 %1
   ret ptr %4
 }
 

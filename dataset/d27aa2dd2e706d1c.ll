@@ -106,8 +106,9 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/BreakableToken.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {

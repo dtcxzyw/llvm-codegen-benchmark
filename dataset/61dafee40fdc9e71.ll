@@ -1,14 +1,14 @@
 
-%"struct.rocksdb::BlockCacheLookupContext.2613155" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613069", i64, i64, %"class.std::__cxx11::basic_string.2613069", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.2613069" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070", i64, %union.anon.2613071 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070" = type { ptr }
-%union.anon.2613071 = type { i64, [8 x i8] }
-%struct.Expr_.2748223 = type { ptr, %union.SourceSpan.2748215, i16, %union.anon.61.2748224 }
-%union.SourceSpan.2748215 = type { i64 }
-%union.anon.61.2748224 = type { %struct.ExprAnySwitch.2748225 }
-%struct.ExprAnySwitch.2748225 = type { i8, %union.anon.63.2748226 }
-%union.anon.63.2748226 = type { %struct.anon.64.2748227 }
-%struct.anon.64.2748227 = type { ptr, %union.SourceSpan.2748215, ptr }
+%"struct.rocksdb::BlockCacheLookupContext.2613122" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613036", i64, i64, %"class.std::__cxx11::basic_string.2613036", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.2613036" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037", i64, %union.anon.2613038 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037" = type { ptr }
+%union.anon.2613038 = type { i64, [8 x i8] }
+%struct.Expr_.2748189 = type { ptr, %union.SourceSpan.2748181, i16, %union.anon.61.2748190 }
+%union.SourceSpan.2748181 = type { i64 }
+%union.anon.61.2748190 = type { %struct.ExprAnySwitch.2748191 }
+%struct.ExprAnySwitch.2748191 = type { i8, %union.anon.63.2748192 }
+%union.anon.63.2748192 = type { %struct.anon.64.2748193 }
+%struct.anon.64.2748193 = type { ptr, %union.SourceSpan.2748181, ptr }
 
 ; 11 occurrences:
 ; cpython/optimized/listobject.ll
@@ -56,7 +56,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613155", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613122", ptr %1, i64 %2
   %4 = icmp eq ptr %3, null
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
@@ -120,7 +120,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Expr_.2748223, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Expr_.2748189, ptr %1, i64 %2
   %4 = icmp ne ptr %3, null
   %not. = xor i1 %0, true
   %5 = select i1 %not., i1 %4, i1 false

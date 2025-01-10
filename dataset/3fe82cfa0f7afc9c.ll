@@ -1,9 +1,9 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%"class.std::reference_wrapper.2688895" = type { ptr }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%"class.std::reference_wrapper.2688861" = type { ptr }
 
 ; 6 occurrences:
 ; postgres/optimized/gram.ll
@@ -17,11 +17,11 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 15
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %3
+  %4 = getelementptr %union.yyalloc.2600678, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1542 occurrences:
+; 1549 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -247,6 +247,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
@@ -750,13 +751,17 @@ entry:
 ; meshlab/optimized/transferfunction.cpp.ll
 ; minetest/optimized/CFileList.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
+; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/CMeshCache.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/l_server.cpp.ll
 ; minetest/optimized/mesh_compare.cpp.ll
+; minetest/optimized/mg_biome.cpp.ll
+; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/sound.cpp.ll
@@ -1406,6 +1411,8 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/context.cc.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/quantile_obj.cc.ll
@@ -1569,11 +1576,11 @@ define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 15
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %3
+  %4 = getelementptr nusw %union.yyalloc.2601647, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 82 occurrences:
+; 76 occurrences:
 ; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -1582,10 +1589,7 @@ entry:
 ; cvc5/optimized/theory_preprocessor.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
@@ -1595,8 +1599,6 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/CIrrDeviceSDL.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; nix/optimized/binary-cache-store.ll
@@ -1654,14 +1656,13 @@ entry:
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw nuw %"class.std::reference_wrapper.2688895", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::reference_wrapper.2688861", ptr %0, i64 %3
   ret ptr %4
 }
 

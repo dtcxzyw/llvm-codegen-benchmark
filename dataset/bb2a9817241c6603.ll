@@ -24,19 +24,25 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 12 occurrences:
+; 18 occurrences:
 ; clamav/optimized/hfsplus.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; libquic/optimized/cmac.c.ll
 ; libquic/optimized/pkcs8.c.ll
 ; linux/optimized/dm-io.ll
+; linux/optimized/gup.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/message.ll
 ; llvm/optimized/FormatUtil.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/raw_ostream.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
+; raylib/optimized/raudio.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
@@ -45,10 +51,11 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/iov_iter.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
+; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
@@ -57,8 +64,10 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; linux/optimized/blk-lib.ll
+; linux/optimized/i915_gem_shmem.ll
+; linux/optimized/ip6_output.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i64 %0, i32 %1) #0 {

@@ -1383,7 +1383,6 @@ entry:
 ; cpython/optimized/_json.ll
 ; cpython/optimized/_struct.ll
 ; cpython/optimized/abstract.ll
-; cpython/optimized/action_helpers.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/binascii.ll
 ; cpython/optimized/blake2b_impl.ll
@@ -2321,6 +2320,7 @@ entry:
 ; ruby/optimized/time.ll
 ; ruby/optimized/variable.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll

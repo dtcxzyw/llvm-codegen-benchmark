@@ -22,23 +22,23 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 175921860444160
-  %3 = or i64 %0, %2
-  ret i64 %3
-}
-
 ; 2 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 721554505728
+  %2 = and i64 %1, 10737418240
+  %3 = or i64 %0, %2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 175921860444160
   %3 = or i64 %0, %2
   ret i64 %3
 }

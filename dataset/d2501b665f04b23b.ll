@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; boost/optimized/default_formatter_factory.ll
@@ -22,6 +22,8 @@
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/crypto_tlssession.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll
 ; ruby/optimized/marshal.ll

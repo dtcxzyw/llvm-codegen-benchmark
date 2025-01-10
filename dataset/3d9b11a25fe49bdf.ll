@@ -65,7 +65,8 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; linux/optimized/devio.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_ttm.ll

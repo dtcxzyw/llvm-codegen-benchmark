@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; clamav/optimized/unarj.c.ll
 ; gromacs/optimized/huffman.c.ll
+; gromacs/optimized/libxdrf.cpp.ll
 ; libquic/optimized/exponentiation.c.ll
 ; linux/optimized/decompress_bunzip2.ll
 ; luajit/optimized/lj_cconv.ll

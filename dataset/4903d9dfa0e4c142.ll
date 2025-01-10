@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; clamav/optimized/dll.cpp.ll
+; 2 occurrences:
 ; linux/optimized/tbdata.ll
 ; ncnn/optimized/pooling3d.cpp.ll
 ; Function Attrs: nounwind

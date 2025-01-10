@@ -1,11 +1,11 @@
 
-%"struct.open_spiel::chess::Piece.3479215" = type { i8, i8 }
-%"class.std::unique_ptr.3494813" = type { %"struct.std::__uniq_ptr_data.3494814" }
-%"struct.std::__uniq_ptr_data.3494814" = type { %"class.std::__uniq_ptr_impl.3494815" }
-%"class.std::__uniq_ptr_impl.3494815" = type { %"class.std::tuple.3494816" }
-%"class.std::tuple.3494816" = type { %"struct.std::_Tuple_impl.3494817" }
-%"struct.std::_Tuple_impl.3494817" = type { %"struct.std::_Head_base.7.3494818" }
-%"struct.std::_Head_base.7.3494818" = type { ptr }
+%"struct.open_spiel::chess::Piece.3479181" = type { i8, i8 }
+%"class.std::unique_ptr.3494779" = type { %"struct.std::__uniq_ptr_data.3494780" }
+%"struct.std::__uniq_ptr_data.3494780" = type { %"class.std::__uniq_ptr_impl.3494781" }
+%"class.std::__uniq_ptr_impl.3494781" = type { %"class.std::tuple.3494782" }
+%"class.std::tuple.3494782" = type { %"struct.std::_Tuple_impl.3494783" }
+%"struct.std::_Tuple_impl.3494783" = type { %"struct.std::_Head_base.7.3494784" }
+%"struct.std::_Head_base.7.3494784" = type { ptr }
 
 ; 5 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -66,7 +66,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479215"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479181"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [9 x %"class.std::unique_ptr.3494813"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [9 x %"class.std::unique_ptr.3494779"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

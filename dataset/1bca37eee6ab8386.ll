@@ -1,7 +1,7 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
-; 38 occurrences:
+; 39 occurrences:
 ; boost/optimized/from_chars.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -28,6 +28,7 @@
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quantlib/optimized/indexmanager.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/pack.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/transcode.ll
@@ -51,7 +52,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 442 occurrences:
+; 443 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -113,6 +114,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/archive_read.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
@@ -498,7 +500,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smin.i64(i64 %1, i64 %2)
-  %4 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.std::pair.28.2602074", ptr %0, i64 %3
   ret ptr %4
 }
 

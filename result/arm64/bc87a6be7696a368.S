@@ -11,9 +11,9 @@ func000000000000018f:                   // @func000000000000018f
 func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	tst	w1, #0x1
-	mov	w8, #4                          // =0x4
-	csel	w8, w8, wzr, ne
-	cmp	w2, #166
+	mov	w8, #1                          // =0x1
+	cinc	w8, w8, eq
+	cmp	w2, #0
 	add	w8, w0, w8
 	cinc	w0, w8, eq
 	ret

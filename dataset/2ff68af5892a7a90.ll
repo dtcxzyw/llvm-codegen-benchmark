@@ -31,14 +31,13 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/inffast.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
 ; gromacs/optimized/inffast.c.ll
 ; hdf5/optimized/H5FDonion.c.ll
-; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:

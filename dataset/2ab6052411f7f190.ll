@@ -586,7 +586,8 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; linux/optimized/string_helpers.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000182(i64 %0, i8 %1) #0 {

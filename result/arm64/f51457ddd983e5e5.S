@@ -24,18 +24,3 @@ func0000000000000088:                   // @func0000000000000088
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-.LCPI2_0:
-	.xword	0x402921fb54442d18              // double 12.566370614359172
-func0000000000000055:                   // @func0000000000000055
-// %bb.0:                               // %entry
-	adrp	x8, .LCPI2_0
-	fabs	d1, d1
-	ldr	d2, [x8, :lo12:.LCPI2_0]
-	fcmp	d0, d2
-	cset	w8, hi
-	fcmp	d1, d2
-	csinc	w8, w8, wzr, ls
-	orr	w8, w8, w0
-	and	w0, w8, #0x1
-	ret
-                                        // -- End function

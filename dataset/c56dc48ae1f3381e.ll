@@ -1,6 +1,6 @@
 
-%"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768624" = type { %"class.cv::Point3_.3768623", i32, i64, i64 }
-%"class.cv::Point3_.3768623" = type { float, float, float }
+%"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768574" = type { %"class.cv::Point3_.3768573", i32, i64, i64 }
+%"class.cv::Point3_.3768573" = type { float, float, float }
 
 ; 82 occurrences:
 ; abc/optimized/Fxch.c.ll
@@ -568,7 +568,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768624", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768574", ptr %0, i64 %5
   ret ptr %6
 }
 

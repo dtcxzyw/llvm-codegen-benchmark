@@ -30,14 +30,6 @@ func0000000000000064:                   // @func0000000000000064
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
-	and	w8, w1, #0xff
-	sub	w8, w8, #1
-	cmp	w8, w0
-	cset	w0, gt
-	ret
-                                        // -- End function
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff

@@ -19,6 +19,10 @@ func0000000000000033:                   # @func0000000000000033
 	sh3add	a0, a1, a0
 	sh3add	a0, a1, a0
 	ret
+func0000000000000000:                   # @func0000000000000000
+	sh3add	a0, a1, a0
+	sh3add	a0, a1, a0
+	ret
 func0000000000000010:                   # @func0000000000000010
 	sh3add	a0, a1, a0
 	sh3add	a0, a1, a0

@@ -1,13 +1,13 @@
 
-%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627" = type { i32, %"class.std::vector.28.2703628" }
-%"class.std::vector.28.2703628" = type { %"struct.std::_Vector_base.29.2703629" }
-%"struct.std::_Vector_base.29.2703629" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703630" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" }
-%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703631" = type { ptr, ptr, ptr }
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
-%struct.scatterlist.3530599 = type { i64, i32, i32, i64, i32, i32 }
+%"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703593" = type { i32, %"class.std::vector.28.2703594" }
+%"class.std::vector.28.2703594" = type { %"struct.std::_Vector_base.29.2703595" }
+%"struct.std::_Vector_base.29.2703595" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703596" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl.2703596" = type { %"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703597" }
+%"struct.std::_Vector_base<sound::SoundDataOpenStream::SoundBufferUntil, std::allocator<sound::SoundDataOpenStream::SoundBufferUntil>>::_Vector_impl_data.2703597" = type { ptr, ptr, ptr }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
+%struct.scatterlist.3530565 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 192 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -343,7 +343,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703627", ptr %2, i64 %0
+  %3 = getelementptr nusw %"struct.sound::SoundDataOpenStream::ContiguousBuffers.2703593", ptr %2, i64 %0
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   ret ptr %4
 }
@@ -569,7 +569,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %"class.rapidjson::GenericValue.2749211", ptr %2, i64 %0, i32 0, i32 0, i32 2
+  %3 = getelementptr %"class.rapidjson::GenericValue.2749177", ptr %2, i64 %0, i32 0, i32 0, i32 2
   ret ptr %3
 }
 
@@ -618,7 +618,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.scatterlist.3530599, ptr %2, i64 %0, i32 1
+  %3 = getelementptr %struct.scatterlist.3530565, ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 

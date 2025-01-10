@@ -12,7 +12,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/numfmt.ll
 ; linux/optimized/mempolicy.ll

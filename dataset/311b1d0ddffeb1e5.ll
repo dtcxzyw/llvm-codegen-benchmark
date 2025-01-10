@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 63 occurrences:
 ; abc/optimized/abc.c.ll
@@ -75,7 +75,7 @@ entry:
   ret ptr %6
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; darktable/optimized/collect.c.ll
@@ -91,6 +91,7 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; gromacs/optimized/atomdistribution.cpp.ll
+; icu/optimized/pkgitems.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/udata.ll
 ; jq/optimized/regexec.ll
@@ -135,8 +136,8 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 23
   %4 = ashr i64 %3, 63
-  %5 = getelementptr %struct.TCGTemp.2707225, ptr %1, i64 %4
-  %6 = getelementptr %struct.TCGTemp.2707225, ptr %5, i64 %0
+  %5 = getelementptr %struct.TCGTemp.2707191, ptr %1, i64 %4
+  %6 = getelementptr %struct.TCGTemp.2707191, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -224,18 +225,6 @@ entry:
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
   %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; icu/optimized/pkgitems.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

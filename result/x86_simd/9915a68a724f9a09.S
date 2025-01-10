@@ -7,12 +7,12 @@ func0000000000000057:                   # @func0000000000000057
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0
 	retq
-func0000000000000010:                   # @func0000000000000010
-	vpsrlq	$63, %ymm2, %ymm3
-	vpaddq	%ymm3, %ymm2, %ymm2
-	vpsraq	$1, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm0, %ymm0
+func0000000000000020:                   # @func0000000000000020
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsrlq	$63, %ymm0, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsraq	$1, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 func0000000000000034:                   # @func0000000000000034
@@ -53,13 +53,13 @@ func0000000000000034:                   # @func0000000000000034
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq
-func0000000000000014:                   # @func0000000000000014
-	vpsraq	$63, %ymm2, %ymm3
-	vpsrlq	$62, %ymm3, %ymm3
-	vpaddq	%ymm3, %ymm2, %ymm2
-	vpsrlq	$2, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm0, %ymm0
+func0000000000000024:                   # @func0000000000000024
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsraq	$63, %ymm0, %ymm2
+	vpsrlq	$62, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$2, %ymm0, %ymm0
 	retq
 .LCPI4_0:
@@ -79,20 +79,29 @@ func0000000000000021:                   # @func0000000000000021
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
-.LCPI6_0:
+func0000000000000014:                   # @func0000000000000014
+	vpsraq	$63, %ymm2, %ymm3
+	vpsrlq	$58, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm2, %ymm2
+	vpsrlq	$6, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsllq	$32, %ymm0, %ymm0
+	retq
+.LCPI7_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 func0000000000000054:                   # @func0000000000000054
 	vpsraq	$3, %ymm2, %ymm2
-	vpmullq	.LCPI6_0(%rip){1to4}, %ymm2, %ymm2
+	vpmullq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 func0000000000000055:                   # @func0000000000000055
 	vpsraq	$3, %ymm2, %ymm2
-	vpmullq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
+	vpmullq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0

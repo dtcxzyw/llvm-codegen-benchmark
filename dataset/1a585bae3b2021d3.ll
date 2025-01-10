@@ -110,7 +110,6 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; boost/optimized/approximately_equals.ll
 ; boost/optimized/console_buffer.ll
 ; boost/optimized/default_formatter_factory.ll
 ; boost/optimized/options_description.ll
@@ -137,7 +136,6 @@ entry:
 ; cpython/optimized/abstract.ll
 ; cpython/optimized/fuzzer.ll
 ; cpython/optimized/memoryobject.ll
-; cpython/optimized/unicodeobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -584,7 +582,9 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/bignum-dtoa.cc.ll
 ; openusd/optimized/blockd.c.ll
 ; openusd/optimized/daemon.cpp.ll

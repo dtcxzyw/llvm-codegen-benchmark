@@ -41,10 +41,8 @@ func0000000000000034:                   # @func0000000000000034
 	andb	%cl, %al
 	retq
 func000000000000018c:                   # @func000000000000018c
-	andl	$8, %edx
-	shrl	$3, %edx
 	testq	%rsi, %rsi
 	setne	%al
-	andb	%dil, %al
+	andb	%dil, %dl
 	andb	%dl, %al
 	retq

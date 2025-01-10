@@ -1,5 +1,5 @@
 
-%class.btVector3.2818288 = type { [4 x float] }
+%class.btVector3.2818254 = type { [4 x float] }
 
 ; 63 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -69,7 +69,7 @@
 define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 2, i64 %2
-  %4 = getelementptr nuw [3 x %class.btVector3.2818288], ptr %0, i64 0, i64 %3, i32 0, i64 2
+  %4 = getelementptr nuw [3 x %class.btVector3.2818254], ptr %0, i64 0, i64 %3, i32 0, i64 2
   ret ptr %4
 }
 

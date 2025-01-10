@@ -1,5 +1,5 @@
 
-; 2785 occurrences:
+; 2786 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -1188,6 +1188,7 @@
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/Taint.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TensorSpec.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll

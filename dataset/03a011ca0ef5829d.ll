@@ -1,5 +1,5 @@
 
-; 527 occurrences:
+; 525 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
@@ -190,7 +190,6 @@
 ; llvm/optimized/RISCVCallLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
@@ -490,7 +489,6 @@
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-s101.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/scanner.c.ll
@@ -535,7 +533,7 @@ entry:
   ret i64 %2
 }
 
-; 1300 occurrences:
+; 1301 occurrences:
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -1043,6 +1041,7 @@ entry:
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
+; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll

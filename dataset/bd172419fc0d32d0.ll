@@ -1,5 +1,5 @@
 
-%"class.llvm::MDOperand.3140254" = type { ptr }
+%"class.llvm::MDOperand.3140220" = type { ptr }
 
 ; 152 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -161,7 +161,7 @@ entry:
   %3 = and i64 %2, 15
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 -16
-  %6 = getelementptr nusw %"class.llvm::MDOperand.3140254", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.llvm::MDOperand.3140220", ptr %5, i64 %4
   ret ptr %6
 }
 

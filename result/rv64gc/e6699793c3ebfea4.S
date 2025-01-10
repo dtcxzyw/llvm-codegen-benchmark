@@ -36,18 +36,25 @@ func000000000000000a:                   # @func000000000000000a
 	mv	a0, a1
 .LBB4_2:                                # %entry
 	ret
-func0000000000000002:                   # @func0000000000000002
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	addi	a0, a0, -1
+func000000000000000e:                   # @func000000000000000e
+	sext.w	a1, a1
+	addi	a0, a0, 1
 	bltu	a0, a1, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a1
-	addi	a0, a0, 1
+func0000000000000002:                   # @func0000000000000002
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	addi	a0, a0, -1
 	bltu	a0, a1, .LBB6_2
 	mv	a0, a1
 .LBB6_2:                                # %entry
+	ret
+func0000000000000008:                   # @func0000000000000008
+	sext.w	a1, a1
+	addi	a0, a0, 1
+	bltu	a0, a1, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
 	ret

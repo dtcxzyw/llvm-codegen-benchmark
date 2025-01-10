@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -9,7 +9,6 @@
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
-; minetest/optimized/treegen.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll

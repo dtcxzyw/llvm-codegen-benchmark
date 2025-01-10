@@ -1,5 +1,5 @@
 
-%"class.rocksdb::Slice.2625460" = type { ptr, i64 }
+%"class.rocksdb::Slice.2625427" = type { ptr, i64 }
 
 ; 21 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -29,7 +29,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %3, 1
   %5 = sub nsw i64 %4, %1
-  %6 = getelementptr nusw %"class.rocksdb::Slice.2625460", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.rocksdb::Slice.2625427", ptr %0, i64 %5
   ret ptr %6
 }
 

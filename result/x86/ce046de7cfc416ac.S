@@ -97,6 +97,13 @@ func0000000000000182:                   # @func0000000000000182
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000282:                   # @func0000000000000282
+	cmpl	$3, %esi
+	setge	%cl
+	cmpq	$1, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
 func000000000000018c:                   # @func000000000000018c
 	testl	%esi, %esi
 	setle	%cl

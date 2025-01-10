@@ -44,7 +44,7 @@ func0000000000000302:                   // @func0000000000000302
                                         // -- End function
 func0000000000000318:                   // @func0000000000000318
 // %bb.0:                               // %entry
-	orr	w8, w2, w1
+	orr	w8, w1, w2
 	cmp	w8, #0
 	cset	w8, ne
 	orr	w8, w0, w8

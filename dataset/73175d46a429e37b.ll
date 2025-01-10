@@ -1,8 +1,8 @@
 
-%"class.std::shared_ptr.0.2685337" = type { %"class.std::__shared_ptr.1.2685338" }
-%"class.std::__shared_ptr.1.2685338" = type { ptr, %"class.std::__shared_count.2685339" }
-%"class.std::__shared_count.2685339" = type { ptr }
-%struct.CvPoint.3733826 = type { i32, i32 }
+%"class.std::shared_ptr.0.2685304" = type { %"class.std::__shared_ptr.1.2685305" }
+%"class.std::__shared_ptr.1.2685305" = type { ptr, %"class.std::__shared_count.2685306" }
+%"class.std::__shared_count.2685306" = type { ptr }
+%struct.CvPoint.3733776 = type { i32, i32 }
 
 ; 9 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -19,7 +19,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = urem i64 %1, %3
-  %5 = getelementptr %"class.std::shared_ptr.0.2685337", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %"class.std::shared_ptr.0.2685304", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 
@@ -31,7 +31,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = urem i64 %1, %3
-  %5 = getelementptr nuw %struct.CvPoint.3733826, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.CvPoint.3733776, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

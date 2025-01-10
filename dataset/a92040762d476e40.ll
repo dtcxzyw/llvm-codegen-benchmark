@@ -1,8 +1,8 @@
 
-%"struct.asmjit::_abi_1_10::OpRWInfo.2608698" = type { i32, i8, i8, i8, [1 x i8], i64, i64, i64 }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%"union.std::aligned_storage<16, 8>::type.2800765" = type { [16 x i8] }
-%"class.llvm::FunctionCallee.3155605" = type { ptr, ptr }
+%"struct.asmjit::_abi_1_10::OpRWInfo.2608665" = type { i32, i8, i8, i8, [1 x i8], i64, i64, i64 }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%"union.std::aligned_storage<16, 8>::type.2800731" = type { [16 x i8] }
+%"class.llvm::FunctionCallee.3155571" = type { ptr, ptr }
 
 ; 9 occurrences:
 ; folly/optimized/ThreadedExecutor.cpp.ll
@@ -19,7 +19,7 @@ define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [6 x %"struct.asmjit::_abi_1_10::OpRWInfo.2608698"], ptr %0, i64 0, i64 %3, i32 2
+  %4 = getelementptr nuw [6 x %"struct.asmjit::_abi_1_10::OpRWInfo.2608665"], ptr %0, i64 0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -34,7 +34,7 @@ define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
 entry:
   %2 = call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %0, i64 0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -46,7 +46,7 @@ define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = call noundef range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 true)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800765"], ptr %0, i64 0, i64 %3, i32 0, i64 8
+  %4 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800731"], ptr %0, i64 0, i64 %3, i32 0, i64 8
   ret ptr %4
 }
 
@@ -58,7 +58,7 @@ define ptr @func000000000000005f(ptr %0, i32 %1) #0 {
 entry:
   %2 = call noundef range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [5 x %"class.llvm::FunctionCallee.3155605"], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr nuw [5 x %"class.llvm::FunctionCallee.3155571"], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; boost/optimized/src.ll
-; lief/optimized/psa_crypto.c.ll
-; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i8 %1, i64 %2) #0 {
 entry:

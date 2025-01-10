@@ -12,10 +12,9 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; boost/optimized/area.ll
-; freetype/optimized/psaux.c.ll
 ; git/optimized/diff.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; icu/optimized/genmbcs.ll

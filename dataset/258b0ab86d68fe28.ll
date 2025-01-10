@@ -1,9 +1,7 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
-; node/optimized/simdutf.ll
 ; postgres/optimized/pg_basebackup.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {

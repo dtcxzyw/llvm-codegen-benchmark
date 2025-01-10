@@ -178,7 +178,7 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; arrow/optimized/validate.cc.ll
 ; boost/optimized/default_filter_factory.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -207,7 +207,6 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/regexec.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; Function Attrs: nounwind
@@ -549,7 +548,7 @@ entry:
   ret i1 %3
 }
 
-; 618 occurrences:
+; 617 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -1155,7 +1154,6 @@ entry:
 ; wireshark/optimized/packet-xip.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wolfssl/optimized/internal.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll

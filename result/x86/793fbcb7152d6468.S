@@ -1,8 +1,3 @@
-func0000000000000088:                   # @func0000000000000088
-	leaq	2(%rsi,%rdx,2), %rax
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func0000000000000181:                   # @func0000000000000181
 	leaq	4(%rsi,%rdx,4), %rax
 	cmpq	%rax, %rdi

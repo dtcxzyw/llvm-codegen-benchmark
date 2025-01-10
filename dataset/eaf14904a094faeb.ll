@@ -1,6 +1,6 @@
 
-%struct.code.2877665 = type { i8, i8, i16 }
-%struct.code.3535564 = type { i8, i8, i16 }
+%struct.code.2877631 = type { i8, i8, i16 }
+%struct.code.3535530 = type { i8, i8, i16 }
 
 ; 6 occurrences:
 ; abc/optimized/inftrees.c.ll
@@ -14,7 +14,7 @@ define i64 @func000000000000004c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.code.2877665, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.code.2877631, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -27,7 +27,7 @@ define i64 @func0000000000000040(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.code.3535564, ptr %1, i64 %4
+  %5 = getelementptr %struct.code.3535530, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

@@ -1,11 +1,12 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/luckyFast6.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %0, -1
+  %3 = xor i32 %0, 3
   %4 = shl i32 %3, %2
   ret i32 %4
 }

@@ -137,7 +137,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/alps.ll
@@ -148,7 +148,6 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/utf8.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_inference.ll
 ; slurm/optimized/priority_multifactor.ll
 ; Function Attrs: nounwind

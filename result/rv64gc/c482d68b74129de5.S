@@ -47,11 +47,6 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
-	andi	a1, a1, 63
-	addi	a1, a1, 1
-	sltu	a0, a1, a0
-	ret
 func0000000000000024:                   # @func0000000000000024
 	slli	a1, a1, 32
 	srli	a1, a1, 32
@@ -108,4 +103,10 @@ func0000000000000068:                   # @func0000000000000068
 	and	a1, a1, a2
 	addi	a1, a1, 4
 	sltu	a0, a0, a1
+	ret
+func0000000000000074:                   # @func0000000000000074
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	addi	a1, a1, 4
+	sltu	a0, a1, a0
 	ret

@@ -1,9 +1,9 @@
 
-%struct.btSolverBody.2819150 = type { %class.btTransform.2819151, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, %class.btVector3.2819148, ptr }
-%class.btTransform.2819151 = type { %class.btMatrix3x3.2819152, %class.btVector3.2819148 }
-%class.btMatrix3x3.2819152 = type { [3 x %class.btVector3.2819148] }
-%class.btVector3.2819148 = type { [4 x float] }
-%struct._someip_payload_parameter_item.3440340 = type { i32, ptr, i32, i32, ptr, ptr }
+%struct.btSolverBody.2819116 = type { %class.btTransform.2819117, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, %class.btVector3.2819114, ptr }
+%class.btTransform.2819117 = type { %class.btMatrix3x3.2819118, %class.btVector3.2819114 }
+%class.btMatrix3x3.2819118 = type { [3 x %class.btVector3.2819114] }
+%class.btVector3.2819114 = type { [4 x float] }
+%struct._someip_payload_parameter_item.3440306 = type { i32, ptr, i32, i32, ptr, ptr }
 
 ; 2 occurrences:
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -11,7 +11,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.btSolverBody.2819150, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.btSolverBody.2819116, ptr %1, i64 %2
   %4 = icmp eq ptr %3, null
   %not. = xor i1 %0, true
   %5 = select i1 %not., i1 true, i1 %4
@@ -26,7 +26,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct._someip_payload_parameter_item.3440340, ptr %1, i64 %2
+  %3 = getelementptr %struct._someip_payload_parameter_item.3440306, ptr %1, i64 %2
   %4 = icmp eq ptr %3, null
   %not. = xor i1 %0, true
   %5 = select i1 %not., i1 true, i1 %4

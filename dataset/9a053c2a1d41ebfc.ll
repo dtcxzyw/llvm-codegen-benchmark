@@ -130,17 +130,20 @@ entry:
   ret ptr %4
 }
 
-; 36 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
+; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauDivs.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -151,11 +154,13 @@ entry:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mpmTruth.c.ll
+; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/utilIsop.c.ll
@@ -166,6 +171,7 @@ entry:
 ; lua/optimized/lgc.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
@@ -173,30 +179,6 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i64, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 14 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauDivs.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNpn.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaJf.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifMap.c.ll
-; abc/optimized/sbdCut.c.ll
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 1, %1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 

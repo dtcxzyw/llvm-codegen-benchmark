@@ -762,20 +762,6 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; linux/optimized/nf_conntrack_core.ll
-; openblas/optimized/dtbrfs.c.ll
-; php/optimized/crypt_sha512.ll
-; velox/optimized/AsyncDataCache.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp samesign ugt i64 %0, %3
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
@@ -784,6 +770,19 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = zext nneg i32 %2 to i64
   %4 = icmp ule i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/nf_conntrack_core.ll
+; openblas/optimized/dtbrfs.c.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.smax.i32(i32 %1, i32 4096)
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -822,17 +821,6 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 1)
   %3 = zext nneg i32 %2 to i64
   %4 = icmp samesign ult i64 %0, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; luau/optimized/lstrlib.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
-entry:
-  %2 = call noundef range(i32 0, -2147483648) i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

@@ -535,31 +535,6 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
-; hermes/optimized/Date.cpp.ll
-; icu/optimized/decimfmt.ll
-; opencv/optimized/erfilter.cpp.ll
-; openjdk/optimized/MaskFill.ll
-; openusd/optimized/sparseValueWriter.cpp.ll
-; postgres/optimized/float.ll
-; postgres/optimized/geo_ops.ll
-; proj/optimized/gie.cpp.ll
-; ruby/optimized/complex.ll
-; velox/optimized/MapZipWith.cpp.ll
-; xgboost/optimized/iterative_dmatrix.cc.ll
-; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
-; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
-; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000e(i1 %0, double %1) #0 {
-entry:
-  %2 = fcmp ord double %1, 0.000000e+00
-  %3 = and i1 %2, %0
-  ret i1 %3
-}
-
 ; 160 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -936,6 +911,30 @@ define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 1.000000e+00
   %3 = and i1 %0, %2
+  ret i1 %3
+}
+
+; 15 occurrences:
+; hermes/optimized/Date.cpp.ll
+; icu/optimized/decimfmt.ll
+; opencv/optimized/erfilter.cpp.ll
+; openjdk/optimized/MaskFill.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; postgres/optimized/float.ll
+; postgres/optimized/geo_ops.ll
+; proj/optimized/gie.cpp.ll
+; velox/optimized/MapZipWith.cpp.ll
+; xgboost/optimized/iterative_dmatrix.cc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000e(i1 %0, double %1) #0 {
+entry:
+  %2 = fcmp ord double %1, 0.000000e+00
+  %3 = and i1 %2, %0
   ret i1 %3
 }
 

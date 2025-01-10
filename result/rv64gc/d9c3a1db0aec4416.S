@@ -44,12 +44,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	slli	a0, a0, 8
 	seqz	a0, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
-	slli	a1, a1, 6
-	or	a0, a0, a1
-	sext.w	a0, a0
-	sltiu	a0, a0, -1
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 40
 	or	a0, a0, a1

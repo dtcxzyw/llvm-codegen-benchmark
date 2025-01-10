@@ -106,7 +106,7 @@ entry:
   ret i32 %4
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -146,7 +146,6 @@ entry:
 ; luau/optimized/ldo.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/perf_affine2d.cpp.ll

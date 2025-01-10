@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; clamav/optimized/egg.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -19,6 +19,7 @@
 ; linux/optimized/exec.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
+; linux/optimized/net.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll

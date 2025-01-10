@@ -1,7 +1,7 @@
 
-%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
-%struct.rtree_leaf_elm_s.3660061 = type { %struct.atomic_p_t.3660062 }
-%struct.atomic_p_t.3660062 = type { ptr }
+%"struct.V3NumberData::ValueAndX.2754125" = type { i32, i32 }
+%struct.rtree_leaf_elm_s.3660011 = type { %struct.atomic_p_t.3660012 }
+%struct.atomic_p_t.3660012 = type { ptr }
 
 ; 4 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -60,7 +60,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 5
   %5 = and i64 %4, 134217727
-  %6 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2754125", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = lshr exact i64 %3, 12
   %5 = and i64 %4, 262143
-  %6 = getelementptr nusw nuw %struct.rtree_leaf_elm_s.3660061, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.rtree_leaf_elm_s.3660011, ptr %0, i64 %5
   ret ptr %6
 }
 

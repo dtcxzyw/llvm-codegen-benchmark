@@ -35,7 +35,8 @@ entry:
   ret i64 %7
 }
 
-; 54 occurrences:
+; 55 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
 ; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
 ; zed-rs/optimized/0ndq4firz8eetu3jvgre1the4.ll
@@ -101,8 +102,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i64 %1, ptr %2) #0 {
@@ -112,6 +112,19 @@ entry:
   %5 = lshr exact i64 %4, 3
   %6 = add i64 %0, %5
   %7 = add i64 %6, 1
+  ret i64 %7
+}
+
+; 1 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005a(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub nuw i64 %1, %3
+  %5 = lshr exact i64 %4, 1
+  %6 = add nuw i64 %5, %0
+  %7 = add nuw i64 %6, 63
   ret i64 %7
 }
 

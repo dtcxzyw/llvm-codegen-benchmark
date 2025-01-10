@@ -1,12 +1,12 @@
 
-%"class.std::unordered_set.3105044" = type { %"class.std::_Hashtable.3105045" }
-%"class.std::_Hashtable.3105045" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3105046", i64, %"struct.std::__detail::_Prime_rehash_policy.3105047", ptr }
-%"struct.std::__detail::_Hash_node_base.3105046" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.3105047" = type { float, i64 }
-%"struct.faiss::OperatingPoint.3659195" = type { double, double, %"class.std::__cxx11::basic_string.3659181", i64 }
-%"class.std::__cxx11::basic_string.3659181" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659182", i64, %union.anon.3659183 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659182" = type { ptr }
-%union.anon.3659183 = type { i64, [8 x i8] }
+%"class.std::unordered_set.3105010" = type { %"class.std::_Hashtable.3105011" }
+%"class.std::_Hashtable.3105011" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3105012", i64, %"struct.std::__detail::_Prime_rehash_policy.3105013", ptr }
+%"struct.std::__detail::_Hash_node_base.3105012" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.3105013" = type { float, i64 }
+%"struct.faiss::OperatingPoint.3659145" = type { double, double, %"class.std::__cxx11::basic_string.3659131", i64 }
+%"class.std::__cxx11::basic_string.3659131" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659132", i64, %union.anon.3659133 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659132" = type { ptr }
+%union.anon.3659133 = type { i64, [8 x i8] }
 
 ; 71 occurrences:
 ; crow/optimized/example.cpp.ll
@@ -162,7 +162,7 @@ define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1023
   %4 = and i64 %3, 1023
-  %5 = getelementptr nuw %"class.std::unordered_set.3105044", ptr %1, i64 %4, i32 0, i32 5
+  %5 = getelementptr nuw %"class.std::unordered_set.3105010", ptr %1, i64 %4, i32 0, i32 5
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -189,7 +189,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"struct.faiss::OperatingPoint.3659195", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.faiss::OperatingPoint.3659145", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 56
   %7 = icmp eq ptr %6, %0
   ret i1 %7

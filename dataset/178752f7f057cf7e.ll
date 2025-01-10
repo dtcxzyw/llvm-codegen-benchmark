@@ -1,7 +1,7 @@
 
-%"class.metaspace::FreeChunkList.2731051" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2731052", [4 x i8] }>
-%"class.metaspace::AbstractCounter.2731052" = type { i32 }
-%struct.flag_bit_t.3057357 = type { i32, ptr, i32, i64, i64, ptr, i64, ptr, i64 }
+%"class.metaspace::FreeChunkList.2731017" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2731018", [4 x i8] }>
+%"class.metaspace::AbstractCounter.2731018" = type { i32 }
+%struct.flag_bit_t.3057323 = type { i32, ptr, i32, i64, i64, ptr, i64, ptr, i64 }
 
 ; 11 occurrences:
 ; abc/optimized/sfmLib.c.ll
@@ -19,7 +19,7 @@
 define ptr @func000000000000000b(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr %"class.metaspace::FreeChunkList.2731051", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"class.metaspace::FreeChunkList.2731017", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -53,7 +53,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr nusw %struct.flag_bit_t.3057357, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.flag_bit_t.3057323, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }

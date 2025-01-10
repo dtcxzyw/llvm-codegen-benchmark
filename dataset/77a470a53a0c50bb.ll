@@ -1,5 +1,5 @@
 
-; 685 occurrences:
+; 686 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -513,6 +513,7 @@
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/tcg.c.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
@@ -786,7 +787,7 @@ entry:
   ret i32 %2
 }
 
-; 553 occurrences:
+; 554 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -1138,6 +1139,7 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; ozz-animation/optimized/sampling_job.cc.ll

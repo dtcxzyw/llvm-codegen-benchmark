@@ -1,17 +1,17 @@
 
-%struct.IOVAMapping.2707794 = type { ptr, i64, i64 }
-%"struct.ncnn::custom_layer_registry_entry.2749800" = type { ptr, ptr, ptr, ptr }
-%struct._zval_struct.2790528 = type { %union._zend_value.2790538, %union.anon.2790539, %union.anon.2.2790540 }
-%union._zend_value.2790538 = type { i64 }
-%union.anon.2790539 = type { i32 }
-%union.anon.2.2790540 = type { i32 }
-%"class.std::vector.0.2833588" = type { %"struct.std::_Vector_base.1.2833589" }
-%"struct.std::_Vector_base.1.2833589" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833590" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833590" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833591" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833591" = type { ptr, ptr, ptr }
-%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067" = type { i32, i64 }
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.IOVAMapping.2707760 = type { ptr, i64, i64 }
+%"struct.ncnn::custom_layer_registry_entry.2749766" = type { ptr, ptr, ptr, ptr }
+%struct._zval_struct.2790494 = type { %union._zend_value.2790504, %union.anon.2790505, %union.anon.2.2790506 }
+%union._zend_value.2790504 = type { i64 }
+%union.anon.2790505 = type { i32 }
+%union.anon.2.2790506 = type { i32 }
+%"class.std::vector.0.2833554" = type { %"struct.std::_Vector_base.1.2833555" }
+%"struct.std::_Vector_base.1.2833555" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833556" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833556" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833557" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833557" = type { ptr, ptr, ptr }
+%"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434033" = type { i32, i64 }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 27 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -198,7 +198,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.IOVAMapping.2707794, ptr %1, i64 %4
+  %5 = getelementptr %struct.IOVAMapping.2707760, ptr %1, i64 %4
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -209,7 +209,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.ncnn::custom_layer_registry_entry.2749800", ptr %1, i64 %3
+  %4 = getelementptr %"struct.ncnn::custom_layer_registry_entry.2749766", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   %6 = icmp eq ptr %0, %5
   ret i1 %6
@@ -230,7 +230,7 @@ define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct._zval_struct.2790528, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct._zval_struct.2790494, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -276,15 +276,16 @@ entry:
 define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.0.2833588", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::vector.0.2833554", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 24
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; icu/optimized/parse.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
@@ -319,20 +320,19 @@ entry:
 define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434067", ptr %1, i64 %3
+  %4 = getelementptr %"struct.Darts::DoubleArrayImpl<void, void, int, void>::result_pair_type.3434033", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 12
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; libjpeg-turbo/optimized/jcphuff.c.ll
+; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.3680875, ptr %1, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3680825, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 304
   %6 = icmp ult ptr %0, %5
   ret i1 %6
@@ -345,7 +345,7 @@ define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.lua_TValue.3680875, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.lua_TValue.3680825, ptr %1, i64 %4
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -360,18 +360,6 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/brisk.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

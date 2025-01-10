@@ -16,11 +16,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; arrow/optimized/trie.cc.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; libquic/optimized/quic_framer.cc.ll
+; lief/optimized/psa_crypto.c.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll

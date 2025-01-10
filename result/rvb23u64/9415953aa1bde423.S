@@ -23,11 +23,6 @@ func0000000000000009:                   # @func0000000000000009
 	divu	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	sext.w	a2, a2
-	divu	a1, a1, a2
-	add	a0, a0, a1
-	ret
 func0000000000000002:                   # @func0000000000000002
 	zext.w	a2, a2
 	divu	a1, a1, a2

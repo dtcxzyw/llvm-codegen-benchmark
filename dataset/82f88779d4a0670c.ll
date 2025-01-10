@@ -1,10 +1,10 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
-%struct.FuncTypeEntry.2748662 = type { i32, ptr }
-%struct.SEntry.2748811 = type { ptr, ptr }
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
-%struct.NS_ATT.3879048 = type { i64, i64, ptr }
-%struct.NS_ATT.3943974 = type { i64, i64, ptr }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
+%struct.FuncTypeEntry.2748628 = type { i32, ptr }
+%struct.SEntry.2748777 = type { ptr, ptr }
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
+%struct.NS_ATT.3878998 = type { i64, i64, ptr }
+%struct.NS_ATT.3943924 = type { i64, i64, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/drm_ioctl.ll
@@ -16,7 +16,7 @@ entry:
   %4 = add nsw i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %6
+  %7 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -266,7 +266,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748662, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748628, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -280,7 +280,7 @@ entry:
   %4 = add nsw i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.SEntry.2748811, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.SEntry.2748777, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -296,7 +296,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::SDValue.3150307", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::SDValue.3150273", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -323,7 +323,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.NS_ATT.3879048, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.NS_ATT.3878998, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -336,7 +336,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.NS_ATT.3943974, ptr %0, i64 %6
+  %7 = getelementptr %struct.NS_ATT.3943924, ptr %0, i64 %6
   ret ptr %7
 }
 

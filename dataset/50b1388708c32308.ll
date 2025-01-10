@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 92 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; boost/optimized/to_chars.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -59,6 +59,8 @@
 ; openjdk/optimized/zMark.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; openmpi/optimized/osc_rdma_comm.ll
+; openssl/optimized/libssl-lib-s3_lib.ll
+; openssl/optimized/libssl-shlib-s3_lib.ll
 ; qemu/optimized/block_qed.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_vfio_spapr.c.ll
@@ -99,7 +101,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; clamav/optimized/regexec.c.ll
 ; hermes/optimized/regexec.c.ll
@@ -111,8 +113,6 @@ entry:
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/regexec.c.ll
 ; openmpi/optimized/osc_rdma_comm.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
@@ -124,7 +124,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

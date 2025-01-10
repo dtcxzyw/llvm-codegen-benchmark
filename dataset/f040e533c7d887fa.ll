@@ -60,6 +60,18 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; git/optimized/sha256.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = and i32 %3, 63
+  %5 = icmp eq i32 %4, 0
+  ret i1 %5
+}
+
 ; 7 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; openspiel/optimized/Par.cpp.ll

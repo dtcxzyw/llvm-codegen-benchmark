@@ -13,11 +13,10 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
 ; cmake/optimized/curl_ntlm_core.c.ll
 ; curl/optimized/libcurl_la-curl_ntlm_core.ll
-; lz4/optimized/lz4hc.c.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

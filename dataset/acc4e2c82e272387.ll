@@ -1,5 +1,5 @@
 
-%struct.BackwardMatch.3843312 = type { i32, i32 }
+%struct.BackwardMatch.3843262 = type { i32, i32 }
 
 ; 3 occurrences:
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
@@ -58,8 +58,8 @@ define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 256
-  %5 = getelementptr %struct.BackwardMatch.3843312, ptr %0, i64 %1
-  %6 = getelementptr %struct.BackwardMatch.3843312, ptr %5, i64 %4
+  %5 = getelementptr %struct.BackwardMatch.3843262, ptr %0, i64 %1
+  %6 = getelementptr %struct.BackwardMatch.3843262, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -512
   ret ptr %7
 }

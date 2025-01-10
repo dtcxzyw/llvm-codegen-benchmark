@@ -1,6 +1,6 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
 
 ; 1214 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -1221,7 +1221,7 @@
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %2
+  %3 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

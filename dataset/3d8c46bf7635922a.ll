@@ -1,5 +1,5 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/hash.ll
@@ -9,7 +9,7 @@ entry:
   %2 = add i64 %1, 24
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

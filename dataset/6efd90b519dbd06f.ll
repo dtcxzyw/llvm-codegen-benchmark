@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/superGate.c.ll
 ; gromacs/optimized/check.cpp.ll
@@ -13,7 +13,6 @@
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; icu/optimized/mlbe.ll
 ; icu/optimized/msgfmt.ll
-; linux/optimized/scsi_logging.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; openusd/optimized/json.cpp.ll
 ; postgres/optimized/ts_parse.ll
@@ -211,9 +210,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; ocio/optimized/FileFormatHDL.cpp.ll
-; pocketpy/optimized/collections.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind

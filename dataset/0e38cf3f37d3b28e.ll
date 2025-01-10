@@ -1,14 +1,12 @@
 
-%class.aiVector2t.2825654 = type { double, double }
-%union.ListCell.3652357 = type { ptr }
+%class.aiVector2t.2825620 = type { double, double }
+%union.ListCell.3652323 = type { ptr }
 
-; 7 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/vsprintf.ll
 ; openblas/optimized/dhgeqz.c.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; ruby/optimized/ruby.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
@@ -238,20 +236,18 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; graphviz/optimized/adjust.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; lua/optimized/ldebug.ll
-; lua/optimized/lstrlib.ll
 ; luajit/optimized/lib_math.ll
 ; luajit/optimized/lib_math_dyn.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/minilua.ll
-; luau/optimized/lstrlib.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/url.ll
 ; redis/optimized/lvm.ll
@@ -274,7 +270,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.aiVector2t.2825654, ptr %1, i64 %2
+  %3 = getelementptr %class.aiVector2t.2825620, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = icmp eq ptr %4, %0
   ret i1 %5
@@ -368,7 +364,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3652357, ptr %1, i64 %2
+  %3 = getelementptr %union.ListCell.3652323, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = icmp eq ptr %4, %0
   ret i1 %5

@@ -13,6 +13,12 @@ func0000000000000006:                   # @func0000000000000006
 	setle	%al
 	andb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	orl	%edx, %esi
+	cmpl	$4, %esi
+	setb	%al
+	andb	%dil, %al
+	retq
 func000000000000002c:                   # @func000000000000002c
 	orl	%edx, %esi
 	setne	%al

@@ -1,5 +1,5 @@
 
-; 502 occurrences:
+; 503 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/crc.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -79,6 +79,7 @@
 ; entt/optimized/sigh_mixin.cpp.ll
 ; entt/optimized/sparse_set.cpp.ll
 ; entt/optimized/storage.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/IndexIVFPQFastScan.cpp.ll

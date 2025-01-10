@@ -1,5 +1,5 @@
 
-%"class.gmx::BasicVector.74.3364659" = type { [3 x float] }
+%"class.gmx::BasicVector.74.3364625" = type { [3 x float] }
 
 ; 3 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -71,7 +71,7 @@ entry:
   %3 = mul i32 %2, 5
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.gmx::BasicVector.74.3364659", ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr %"class.gmx::BasicVector.74.3364625", ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 

@@ -11,6 +11,18 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; qemu/optimized/block_vvfat.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = sub i64 %3, %1
+  %5 = shl i64 %4, 9
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 8 occurrences:
 ; glslang/optimized/linkValidate.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll

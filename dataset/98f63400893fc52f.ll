@@ -1,6 +1,6 @@
 
-%class.SwitchRange.2747980 = type { i32, i32, i32, float }
-%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
+%class.SwitchRange.2747946 = type { i32, i32, i32, float }
+%"struct.V3NumberData::ValueAndX.2754125" = type { i32, i32 }
 
 ; 6 occurrences:
 ; opencv/optimized/dxt.cpp.ll
@@ -28,7 +28,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %class.SwitchRange.2747980, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %class.SwitchRange.2747946, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -40,7 +40,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.SwitchRange.2747980, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.SwitchRange.2747946, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }
@@ -54,7 +54,7 @@ entry:
   %2 = add nsw i32 %1, 31
   %3 = sdiv i32 %2, 32
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %4
+  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2754125", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }

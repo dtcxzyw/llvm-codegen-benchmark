@@ -46,12 +46,6 @@ func000000000000022a:                   # @func000000000000022a
 	cmpl	%edx, %edi
 	setg	%al
 	retq
-func0000000000000167:                   # @func0000000000000167
-	shrq	$32, %rdx
-	addl	%esi, %edi
-	cmpl	%edx, %edi
-	setle	%al
-	retq
 func0000000000000161:                   # @func0000000000000161
 	shrq	$32, %rdx
 	addl	%esi, %edi

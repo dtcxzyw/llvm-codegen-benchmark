@@ -1,7 +1,7 @@
 
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
 
 ; 1202 occurrences:
 ; abc/optimized/Glucose.cpp.ll
@@ -1812,7 +1812,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 -120
-  %4 = getelementptr nusw [5 x %struct.anon.2710339], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [5 x %struct.anon.2710305], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

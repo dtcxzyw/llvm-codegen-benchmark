@@ -775,9 +775,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:

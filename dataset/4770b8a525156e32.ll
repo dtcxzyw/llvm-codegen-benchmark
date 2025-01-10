@@ -53,11 +53,10 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; arrow/optimized/diff.cc.ll
 ; cvc5/optimized/cnf_stream.cpp.ll
-; darktable/optimized/introspection_colorchecker.c.ll
 ; freetype/optimized/psaux.c.ll
 ; ipopt/optimized/IpCompoundSymMatrix.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
@@ -555,11 +554,22 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
+  ret ptr %4
+}
+
+; 1 occurrences:
+; llvm/optimized/blake3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 6
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 64
   ret ptr %4
 }
 

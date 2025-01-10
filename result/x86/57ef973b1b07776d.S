@@ -12,7 +12,7 @@ func0000000000000078:                   # @func0000000000000078
 	retq
 func0000000000000058:                   # @func0000000000000058
 	lzcntl	%esi, %eax
-	movb	$26, %cl
+	movb	$30, %cl
 	subb	%al, %cl
 	shrxq	%rcx, %rdi, %rax
 	retq

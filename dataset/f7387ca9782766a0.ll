@@ -1,8 +1,7 @@
 
-%"class.llvm::MCInstrDesc.3170318" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3170284" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
-; 8 occurrences:
-; freetype/optimized/pshinter.c.ll
+; 7 occurrences:
 ; graphviz/optimized/textspan_lut.c.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; linux/optimized/mmap.ll
@@ -32,7 +31,7 @@ entry:
   %3 = select i1 %2, i64 -1871, i64 -1482
   %4 = select i1 %2, i64 -1860, i64 -1471
   %5 = select i1 %1, i64 %4, i64 %3
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3170318", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3170284", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
 
 ; 4 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
@@ -12,7 +12,7 @@ entry:
   %2 = add nsw i32 %1, -54
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = add i32 %1, -55
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

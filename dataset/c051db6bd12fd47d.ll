@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 21 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
@@ -42,7 +42,7 @@ entry:
   %3 = and i64 %1, 4294967295
   %4 = icmp eq i64 %1, %2
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %5
+  %6 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %5
   ret ptr %6
 }
 

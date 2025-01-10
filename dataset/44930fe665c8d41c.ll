@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; c3c/optimized/llvm_codegen_debug_info.c.ll
@@ -13,7 +13,6 @@
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; cpython/optimized/_xxinterpchannelsmodule.ll
 ; cpython/optimized/compile.ll
-; cpython/optimized/pystrtod.ll
 ; darktable/optimized/export.c.ll
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -72,7 +71,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/ifDelay.c.ll
@@ -89,7 +88,6 @@ entry:
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luau/optimized/lstrlib.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/ciMethod.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll

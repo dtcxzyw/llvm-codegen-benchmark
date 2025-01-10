@@ -48,7 +48,7 @@ func000000000000000a:                   # @func000000000000000a
 	andl	$1073741823, %eax               # imm = 0x3FFFFFFF
 	addl	$-4, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	leal	3(%rdi), %eax
 	andl	$1020, %eax                     # imm = 0x3FC
 	addl	$-2, %eax

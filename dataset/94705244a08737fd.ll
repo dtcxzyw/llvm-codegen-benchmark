@@ -1297,7 +1297,7 @@ entry:
   ret i32 %3
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/utilCex.c.ll
@@ -1330,6 +1330,7 @@ entry:
 ; linux/optimized/services.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
@@ -2365,7 +2366,7 @@ entry:
   ret i32 %3
 }
 
-; 223 occurrences:
+; 222 occurrences:
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/saigSimMv.c.ll
 ; boost/optimized/async.ll
@@ -2508,7 +2509,6 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; luau/optimized/IrTranslation.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -2680,7 +2680,47 @@ entry:
   ret i32 %3
 }
 
-; 54 occurrences:
+; 31 occurrences:
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaPf.c.ll
+; cpython/optimized/difradix2.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; hyperscan/optimized/limex_simd384.c.ll
+; hyperscan/optimized/limex_simd512.c.ll
+; jq/optimized/decNumber.ll
+; linux/optimized/i915_gem_mman.ll
+; linux/optimized/intel_pps.ll
+; linux/optimized/r8169_main.ll
+; linux/optimized/sch_api.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/tcp_timer.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; luajit/optimized/lj_strscan.ll
+; luajit/optimized/lj_strscan_dyn.ll
+; opencv/optimized/scansegment.cpp.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; sqlite/optimized/sqlite3.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-nordic_ble.c.ll
+; wireshark/optimized/packet-rtp-midi.c.ll
+; wireshark/optimized/packet-rtsp.c.ll
+; wireshark/optimized/packet-sip.c.ll
+; wolfssl/optimized/internal.c.ll
+; yosys/optimized/mutate.ll
+; z3/optimized/dl_finite_product_relation.cpp.ll
+; z3/optimized/dl_sieve_relation.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = sub nuw nsw i32 %2, %0
+  ret i32 %3
+}
+
+; 55 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/mioUtils.c.ll
@@ -2702,6 +2742,7 @@ entry:
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/ciTypeFlow.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -2754,45 +2795,6 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sub nuw i32 %2, %0
-  ret i32 %3
-}
-
-; 30 occurrences:
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaPf.c.ll
-; cpython/optimized/difradix2.ll
-; darktable/optimized/introspection_colorchecker.c.ll
-; hyperscan/optimized/limex_simd384.c.ll
-; hyperscan/optimized/limex_simd512.c.ll
-; jq/optimized/decNumber.ll
-; linux/optimized/i915_gem_mman.ll
-; linux/optimized/intel_pps.ll
-; linux/optimized/r8169_main.ll
-; linux/optimized/sch_api.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/tcp_timer.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; luajit/optimized/lj_strscan.ll
-; luajit/optimized/lj_strscan_dyn.ll
-; opencv/optimized/scansegment.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-nordic_ble.c.ll
-; wireshark/optimized/packet-rtp-midi.c.ll
-; wireshark/optimized/packet-rtsp.c.ll
-; wireshark/optimized/packet-sip.c.ll
-; wolfssl/optimized/internal.c.ll
-; yosys/optimized/mutate.ll
-; z3/optimized/dl_finite_product_relation.cpp.ll
-; z3/optimized/dl_sieve_relation.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 2
-  %3 = sub nuw nsw i32 %2, %0
   ret i32 %3
 }
 

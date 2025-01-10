@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 54 occurrences:
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/fhoj0ycmzgl7mm8.ll
@@ -21,20 +21,14 @@
 ; wasmtime-rs/optimized/35t0vcavp8gy3o68.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
-; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
-; zed-rs/optimized/0wjif0du0ry5xj140bn8jrpv8.ll
-; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
-; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
 ; zed-rs/optimized/2gkjh80bnq0s3nveklufvkafu.ll
 ; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
 ; zed-rs/optimized/3vybcocwv8yrsy0injuj4w5r9.ll
 ; zed-rs/optimized/43g83plj67uz6i3ger74cqqgy.ll
 ; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
-; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
 ; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
 ; zed-rs/optimized/5owdgsmfxxef4srab3humtsy7.ll
-; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
 ; zed-rs/optimized/65od2e11tbtl7gt1ig9f3i8el.ll
 ; zed-rs/optimized/6dpdeoevshjmotiif23bteoz7.ll
 ; zed-rs/optimized/6g3lj5acpcf238l82f7t8nwvg.ll
@@ -50,7 +44,6 @@
 ; zed-rs/optimized/a8jdixv6mu99htoibqz10zfto.ll
 ; zed-rs/optimized/abtvulclots5u0wyf3l8ipflx.ll
 ; zed-rs/optimized/asgo9pe6dwkxuaeqdvmvl8bpd.ll
-; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
 ; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
 ; zed-rs/optimized/bs771lfipzq1q7kt1te6w78ej.ll
 ; zed-rs/optimized/but0lbc6tfwky26d8hpjq6ud8.ll

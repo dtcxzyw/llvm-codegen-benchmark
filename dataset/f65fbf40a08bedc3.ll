@@ -1,5 +1,5 @@
 
-%struct.resource.3549589 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3549555 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; cpython/optimized/sre.ll
@@ -122,7 +122,7 @@ define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 736
-  %4 = getelementptr [11 x %struct.resource.3549589], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [11 x %struct.resource.3549555], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

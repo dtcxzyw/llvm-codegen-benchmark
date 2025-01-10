@@ -238,14 +238,6 @@ func00000000000000a8:                   # @func00000000000000a8
 	vsub.vx	v8, v8, a0
 	vmsgtu.vi	v0, v8, 3
 	ret
-func000000000000008a:                   # @func000000000000008a
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v8, v8, v10
-	li	a0, -16
-	vsub.vx	v8, v8, a0
-	li	a0, 23
-	vmsgt.vx	v0, v8, a0
-	ret
 func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v10, v8

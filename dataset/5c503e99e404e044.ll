@@ -131,11 +131,10 @@ entry:
   ret i64 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
@@ -152,9 +151,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ifDec07.c.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; redis/optimized/siphash.ll
@@ -191,7 +189,7 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -201,6 +199,7 @@ entry:
 ; linux/optimized/dmar.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
@@ -400,19 +399,6 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; icu/optimized/ucoleitr.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 %3, 56
-  %5 = or i64 %1, %4
-  %6 = or i64 %5, %0
-  ret i64 %6
-}
-
 ; 5 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
@@ -426,6 +412,18 @@ entry:
   %4 = shl i64 %3, 48
   %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; icu/optimized/ucoleitr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 %3, 48
+  %5 = or i64 %1, %4
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

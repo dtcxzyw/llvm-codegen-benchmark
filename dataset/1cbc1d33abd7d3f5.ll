@@ -1,5 +1,5 @@
 
-%struct.RARPPM_SEE2_CONTEXT.3062744 = type { i16, i8, i8 }
+%struct.RARPPM_SEE2_CONTEXT.3062710 = type { i16, i8, i8 }
 
 ; 2 occurrences:
 ; clamav/optimized/unpack.cpp.ll
@@ -8,9 +8,9 @@
 define ptr @func000000000000003f(ptr %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062744, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062710, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nuw %struct.RARPPM_SEE2_CONTEXT.3062744, ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.RARPPM_SEE2_CONTEXT.3062710, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

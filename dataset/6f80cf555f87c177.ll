@@ -1,5 +1,5 @@
 
-%"struct.llvm::DebugLocStream::List.3175069" = type { ptr, ptr, i64 }
+%"struct.llvm::DebugLocStream::List.3175035" = type { ptr, ptr, i64 }
 
 ; 66 occurrences:
 ; hyperscan/optimized/arg_checks.cpp.ll
@@ -73,7 +73,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = getelementptr nusw %"struct.llvm::DebugLocStream::List.3175069", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nusw %"struct.llvm::DebugLocStream::List.3175035", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

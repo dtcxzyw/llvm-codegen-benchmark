@@ -9,12 +9,11 @@ entry:
   ret i16 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; slurm/optimized/gres.ll
-; slurm/optimized/gres_select_util.ll
 ; spike/optimized/f16_rem.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -24,11 +23,10 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/perf_resize.cpp.ll
-; slurm/optimized/gres_sched.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000c(i64 %0, i64 %1) #0 {

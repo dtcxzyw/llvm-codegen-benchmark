@@ -1,10 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
-%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
-%union.LWLockPadded.3651208 = type { %struct.LWLock.3651209, [112 x i8] }
-%struct.LWLock.3651209 = type { i16, %struct.pg_atomic_uint32.3651210, %struct.proclist_head.3651211 }
-%struct.pg_atomic_uint32.3651210 = type { i32 }
-%struct.proclist_head.3651211 = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653" = type { i8, i8, [6 x i8] }
+%"struct.llvm::reassociate::ValueEntry.3349310" = type { i32, ptr }
 
 ; 324 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
@@ -336,7 +332,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -420,7 +416,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349310", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -446,30 +442,6 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/predicate.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
-  %6 = icmp ult ptr %0, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/predicate.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
-  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 

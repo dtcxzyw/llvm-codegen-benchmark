@@ -24,8 +24,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; openusd/optimized/decodeframe.c.ll
+; 1 occurrences:
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

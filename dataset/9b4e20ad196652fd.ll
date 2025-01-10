@@ -1,6 +1,6 @@
 
-%union.acpi_object.3540587 = type { %struct.anon.9.3540588 }
-%struct.anon.9.3540588 = type { i32, i32, i64, i32 }
+%union.acpi_object.3540553 = type { %struct.anon.9.3540554 }
+%struct.anon.9.3540554 = type { i32, i32, i64, i32 }
 
 ; 1 occurrences:
 ; git/optimized/merge-ort.ll
@@ -91,7 +91,7 @@ entry:
   %2 = mul i32 %1, 14
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 72
-  %5 = getelementptr %union.acpi_object.3540587, ptr %4, i64 %3
+  %5 = getelementptr %union.acpi_object.3540553, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
 }

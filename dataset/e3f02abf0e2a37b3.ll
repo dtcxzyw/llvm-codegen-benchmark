@@ -1,6 +1,6 @@
 
-%"class.testing::ThrowingValue.3460894" = type { i32 }
-%"class.(anonymous namespace)::RefCounted.3474826" = type { i32, ptr }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
+%"class.(anonymous namespace)::RefCounted.3474792" = type { i32, ptr }
 
 ; 11 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -32,7 +32,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = sub i64 %3, %1
-  %5 = getelementptr nusw %"class.testing::ThrowingValue.3460894", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.testing::ThrowingValue.3460860", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -45,7 +45,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr nusw %"class.(anonymous namespace)::RefCounted.3474826", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.(anonymous namespace)::RefCounted.3474792", ptr %0, i64 %4
   ret ptr %5
 }
 

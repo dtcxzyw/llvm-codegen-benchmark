@@ -1,7 +1,7 @@
 
-%struct.MapNode.2694056 = type { i16, i8, i8 }
-%struct.CmapEntry.2735425 = type { i8, i8, i8, i8, i32, float, float, float, float, float, float }
-%struct.Vec_Int_t_.2876191 = type { i32, i32, ptr }
+%struct.MapNode.2694022 = type { i16, i8, i8 }
+%struct.CmapEntry.2735391 = type { i8, i8, i8, i8, i32, float, float, float, float, float, float }
+%struct.Vec_Int_t_.2876157 = type { i32, i32, ptr }
 
 ; 5 occurrences:
 ; abc/optimized/cuddExact.c.ll
@@ -14,7 +14,7 @@ define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.MapNode.2694056, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %struct.MapNode.2694022, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -79,7 +79,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.CmapEntry.2735425, ptr %0, i64 %4, i32 3
+  %5 = getelementptr nusw %struct.CmapEntry.2735391, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -93,7 +93,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Vec_Int_t_.2876191, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct.Vec_Int_t_.2876157, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

@@ -58,10 +58,6 @@ func0000000000000005:                   # @func0000000000000005
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	sh1add	a0, a1, a0
-	sext.w	a0, a0
-	ret
 func0000000000000035:                   # @func0000000000000035
 	slli	a1, a1, 5
 	addw	a0, a0, a1
@@ -73,6 +69,10 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000037:                   # @func0000000000000037
 	slli	a1, a1, 5
 	addw	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	sh2add	a0, a1, a0
+	sext.w	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 7

@@ -35,11 +35,11 @@ func0000000000000188:                   // @func0000000000000188
                                         // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	and	w8, w2, #0x30
-	cmp	w8, #32
-	ccmp	x1, #4, #0, eq
+	lsr	w8, w2, #23
+	cmp	x1, #0
+	ccmp	w8, #20, #0, eq
 	cset	w8, eq
-	and	w0, w0, w8
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000002c:                   // @func000000000000002c

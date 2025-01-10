@@ -294,9 +294,10 @@ entry:
   ret i1 %5
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/grouper.cc.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll

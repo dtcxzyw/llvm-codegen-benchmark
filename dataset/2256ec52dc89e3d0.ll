@@ -189,8 +189,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaCof.c.ll
+; icu/optimized/collationdatawriter.ll
 ; openmpi/optimized/tm_malloc.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
@@ -331,8 +332,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-mpeg-audio.c.ll
+; 1 occurrences:
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
@@ -357,15 +357,14 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
-; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = add i32 %1, %3
-  %5 = shl nuw nsw i32 %0, 8
+  %3 = shl nuw nsw i32 %2, 7
+  %4 = add i32 %3, %1
+  %5 = shl nuw nsw i32 %0, 14
   %6 = add i32 %5, %4
   ret i32 %6
 }
@@ -415,30 +414,6 @@ entry:
   %4 = add i32 %1, %3
   %5 = shl nsw i32 %0, 1
   %6 = add i32 %5, %4
-  ret i32 %6
-}
-
-; 1 occurrences:
-; icu/optimized/swapimpl.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = add i32 %0, %3
-  %5 = shl nsw i32 %1, 1
-  %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %2, 12
-  %4 = add nuw nsw i32 %3, %0
-  %5 = shl nuw nsw i32 %1, 14
-  %6 = add nuw i32 %4, %5
   ret i32 %6
 }
 

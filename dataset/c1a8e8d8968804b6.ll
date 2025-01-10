@@ -44,7 +44,7 @@ entry:
   ret i32 %5
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -85,6 +85,7 @@ entry:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; hdf5/optimized/H5checksum.c.ll
+; icu/optimized/uresdata.ll
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/md.ll

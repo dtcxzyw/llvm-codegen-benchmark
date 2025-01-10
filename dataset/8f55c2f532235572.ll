@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; jq/optimized/builtin.ll
 ; openblas/optimized/dgedmd.c.ll
 ; postgres/optimized/interval.ll
@@ -17,9 +16,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, double %1, double %2) #0 {

@@ -1,5 +1,5 @@
 
-; 925 occurrences:
+; 923 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/absOut.c.ll
@@ -113,7 +113,6 @@
 ; cmake/optimized/fld_max.c.ll
 ; cmake/optimized/frm_data.c.ll
 ; cmake/optimized/frm_driver.c.ll
-; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/inet.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
@@ -907,7 +906,6 @@
 ; yosys/optimized/sat.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/theory_utvpi.cpp.ll
-; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_opt.c.ll
@@ -2459,7 +2457,7 @@ entry:
   ret i1 %3
 }
 
-; 787 occurrences:
+; 784 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -3110,8 +3108,6 @@ entry:
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/onepass.cc.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; redis/optimized/db.ll
@@ -3133,7 +3129,6 @@ entry:
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; stb/optimized/stb_sprintf.c.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; stockfish/optimized/search.ll
@@ -3893,7 +3888,7 @@ entry:
   ret i1 %3
 }
 
-; 934 occurrences:
+; 932 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -4669,7 +4664,6 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -4680,7 +4674,6 @@ entry:
 ; redis/optimized/ltable.ll
 ; redis/optimized/redis-cli.ll
 ; rocksdb/optimized/compaction.cc.ll
-; ruby/optimized/bignum.ll
 ; ruby/optimized/date_core.ll
 ; slurm/optimized/cbuf.ll
 ; slurm/optimized/hostlist.ll
@@ -6549,7 +6542,7 @@ entry:
   ret i1 %3
 }
 
-; 250 occurrences:
+; 252 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/darCut.c.ll
@@ -6713,6 +6706,7 @@ entry:
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/rand.cpp.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openjdk/optimized/XWindow.ll
 ; openjdk/optimized/XlibWrapper.ll
 ; openjdk/optimized/cdsConfig.ll
@@ -6730,6 +6724,7 @@ entry:
 ; openusd/optimized/crease.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/read.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -7395,7 +7390,7 @@ entry:
   ret i1 %3
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/idna.c.ll
 ; hdf5/optimized/h5dump.c.ll
@@ -7405,14 +7400,12 @@ entry:
 ; linux/optimized/xarray.ll
 ; node/optimized/idna.ll
 ; opencv/optimized/persistence.cpp.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openmpi/optimized/btl_sm_send.ll
 ; openmpi/optimized/btl_sm_sendi.ll
 ; openssl/optimized/libcrypto-lib-punycode.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
-; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/md.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -7426,10 +7419,11 @@ entry:
   ret i1 %3
 }
 
-; 259 occurrences:
+; 261 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; boost/optimized/src.ll
 ; cmake/optimized/frm_driver.c.ll
+; cmake/optimized/fse_compress.c.ll
 ; cvc5/optimized/ce_guided_single_inv.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -7686,6 +7680,7 @@ entry:
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:

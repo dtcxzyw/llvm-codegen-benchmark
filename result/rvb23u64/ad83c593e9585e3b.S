@@ -32,11 +32,6 @@ func0000000000000081:                   # @func0000000000000081
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000004ca:                   # @func00000000000004ca
-	slt	a1, a2, a1
-	slti	a0, a0, 12
-	and	a0, a0, a1
-	ret
 func0000000000000546:                   # @func0000000000000546
 	slt	a1, a2, a1
 	slti	a0, a0, 0
@@ -73,12 +68,6 @@ func0000000000000028:                   # @func0000000000000028
 	seqz	a1, a1
 	sltiu	a0, a0, 33
 	andn	a0, a1, a0
-	ret
-func00000000000000ca:                   # @func00000000000000ca
-	sub	a1, a1, a2
-	slti	a1, a1, 0
-	slti	a0, a0, 0
-	andn	a0, a0, a1
 	ret
 func0000000000000984:                   # @func0000000000000984
 	sub	a1, a1, a2
@@ -157,6 +146,12 @@ func000000000000098a:                   # @func000000000000098a
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
+	ret
+func00000000000000ca:                   # @func00000000000000ca
+	sub	a1, a1, a2
+	slti	a1, a1, 1025
+	slti	a0, a0, 25
+	andn	a0, a1, a0
 	ret
 func0000000000000146:                   # @func0000000000000146
 	sub	a1, a1, a2

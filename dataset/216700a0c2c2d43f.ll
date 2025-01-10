@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%struct.topa_entry.3553329 = type { i64 }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%struct.topa_entry.3553295 = type { i64 }
 
 ; 5 occurrences:
 ; clamav/optimized/unpack.cpp.ll
@@ -15,7 +15,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734512"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734478"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 -4056
-  %6 = getelementptr [507 x %struct.topa_entry.3553329], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [507 x %struct.topa_entry.3553295], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 1713 occurrences:
+; 1726 occurrences:
 ; abc/optimized/abcMinBase.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRr.c.ll
@@ -114,6 +114,7 @@
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/iso9660.c.ll
+; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -166,6 +167,7 @@
 ; darktable/optimized/FileWriter.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -423,6 +425,7 @@
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/pkcs5.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
@@ -567,6 +570,7 @@
 ; linux/optimized/pcm_native.ll
 ; linux/optimized/platform.ll
 ; linux/optimized/power.ll
+; linux/optimized/printk.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/property.ll
 ; linux/optimized/protocol.ll
@@ -878,6 +882,7 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -929,6 +934,7 @@
 ; node/optimized/fs.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
+; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/14m30vbbwzpy4dn0.ll
 ; ockam-rs/optimized/1jxqq0c8ppka0dgc.ll
@@ -1210,6 +1216,7 @@
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; qemu/optimized/hw_usb_dev-storage.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
@@ -1230,6 +1237,7 @@
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/Recast.cpp.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
@@ -1428,6 +1436,7 @@
 ; stockfish/optimized/tbprobe.ll
 ; sundials/optimized/arkode_butcher.c.ll
 ; tev/optimized/ThreadPool.cpp.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
@@ -1492,6 +1501,7 @@
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-http2.c.ll
 ; wireshark/optimized/packet-http3.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-ipx.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
@@ -1501,6 +1511,7 @@
 ; wireshark/optimized/packet-ldap.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-metamako.c.ll
+; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-mq-pcf.c.ll
@@ -1519,6 +1530,7 @@
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
+; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-sapms.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
@@ -1555,6 +1567,7 @@
 ; wolfssl/optimized/hmac.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls.c.ll

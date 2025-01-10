@@ -1,6 +1,6 @@
 
-%struct._zend_op.2793452 = type { ptr, %union._znode_op.2793461, %union._znode_op.2793461, %union._znode_op.2793461, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793461 = type { i32 }
+%struct._zend_op.2793418 = type { ptr, %union._znode_op.2793427, %union._znode_op.2793427, %union._znode_op.2793427, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793427 = type { i32 }
 
 ; 53 occurrences:
 ; abc/optimized/abcRec3.c.ll
@@ -62,7 +62,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct._zend_op.2793452, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct._zend_op.2793418, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

@@ -1,5 +1,5 @@
 
-; 625 occurrences:
+; 624 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -246,7 +246,6 @@
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll

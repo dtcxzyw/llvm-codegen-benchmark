@@ -31,9 +31,3 @@ func000000000000003a:                   # @func000000000000003a
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func000000000000003e:                   # @func000000000000003e
-	movzwl	%dx, %eax
-	shll	$12, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq

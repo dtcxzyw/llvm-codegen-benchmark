@@ -1,5 +1,5 @@
 
-; 266 occurrences:
+; 265 occurrences:
 ; actix-rs/optimized/1e8u217hm6qvrsw6.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -167,7 +167,6 @@
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll

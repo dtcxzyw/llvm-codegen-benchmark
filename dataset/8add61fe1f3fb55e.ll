@@ -1,13 +1,13 @@
 
-%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
-%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
-%"struct.mold::elf::ElfShdr.563.2636428" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429" }
-%"class.mold::LittleEndian.561.2636429" = type { [8 x i8] }
-%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
-%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
-%struct.H5S_hyper_dim_t.3054948 = type { i64, i64, i64, i64 }
-%"class.llvm::MCOperandInfo.3149242" = type { i16, i8, i8, i16 }
-%class.QCPGraphData.3451166 = type { double, double }
+%"struct.mold::elf::ElfShdr.555.2636391" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392" }
+%"class.mold::LittleEndian.551.2636392" = type { [4 x i8] }
+%"struct.mold::elf::ElfShdr.563.2636395" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396" }
+%"class.mold::LittleEndian.561.2636396" = type { [8 x i8] }
+%struct.Str_Mux_t_.2877096 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877095] }
+%struct.Str_Edg_t_.2877095 = type { i32, i32, i32, i32 }
+%struct.H5S_hyper_dim_t.3054914 = type { i64, i64, i64, i64 }
+%"class.llvm::MCOperandInfo.3149208" = type { i16, i8, i8, i16 }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 30 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
@@ -45,7 +45,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %3, i32 4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636391", ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 
@@ -74,7 +74,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636428", ptr %4, i64 %3, i32 4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636395", ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 
@@ -86,8 +86,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.Str_Mux_t_.2877130, ptr %4, i64 %3, i32 2
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877096, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.Str_Mux_t_.2877096, ptr %4, i64 %3, i32 2
   ret ptr %5
 }
 
@@ -104,7 +104,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct.H5S_hyper_dim_t.3054948, ptr %4, i64 %3, i32 2
+  %5 = getelementptr nusw nuw %struct.H5S_hyper_dim_t.3054914, ptr %4, i64 %3, i32 2
   ret ptr %5
 }
 
@@ -114,8 +114,8 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3149242", ptr %0, i64 %1
-  %5 = getelementptr %"class.llvm::MCOperandInfo.3149242", ptr %4, i64 %3, i32 2
+  %4 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3149208", ptr %0, i64 %1
+  %5 = getelementptr %"class.llvm::MCOperandInfo.3149208", ptr %4, i64 %3, i32 2
   ret ptr %5
 }
 
@@ -125,8 +125,8 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %1
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %1
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

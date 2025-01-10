@@ -48,6 +48,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; folly/optimized/SpookyHashV1.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 8
+  %4 = add nuw i64 %3, %0
+  ret i64 %4
+}
+
 ; 195 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; cmake/optimized/fse_decompress.c.ll

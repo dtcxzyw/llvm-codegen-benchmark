@@ -1,3 +1,10 @@
+func0000000000000024:                   # @func0000000000000024
+	cmpb	$32, %sil
+	sete	%cl
+	cmpl	$-95, %edi
+	setb	%al
+	orb	%cl, %al
+	retq
 func000000000000018c:                   # @func000000000000018c
 	cmpb	$35, %sil
 	setne	%cl
@@ -66,13 +73,6 @@ func0000000000000186:                   # @func0000000000000186
 	setne	%cl
 	testl	%edi, %edi
 	sets	%al
-	orb	%cl, %al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	cmpb	$1, %sil
-	sete	%cl
-	cmpl	$126, %edi
-	setb	%al
 	orb	%cl, %al
 	retq
 func0000000000000084:                   # @func0000000000000084

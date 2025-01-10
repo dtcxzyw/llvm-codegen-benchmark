@@ -1,6 +1,6 @@
 
-%class.aiVector2t.2824097 = type { float, float }
-%struct.Point.3654376 = type { double, double }
+%class.aiVector2t.2824063 = type { float, float }
+%struct.Point.3654342 = type { double, double }
 
 ; 3 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr %class.aiVector2t.2824097, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %class.aiVector2t.2824063, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr %struct.Point.3654376, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.Point.3654342, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

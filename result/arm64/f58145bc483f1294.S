@@ -20,10 +20,9 @@ func000000000000003f:                   // @func000000000000003f
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	tst	w2, #0x1
-	mov	w8, #96                         // =0x60
-	mov	w9, #128                        // =0x80
-	csel	x8, x9, x8, ne
-	add	x8, x8, x1
-	add	x0, x8, x0, lsl #4
+	mov	w8, #2079                       // =0x81f
+	csel	x8, xzr, x8, ne
+	add	x8, x0, x8
+	add	x0, x8, x1, lsl #2
 	ret
                                         // -- End function

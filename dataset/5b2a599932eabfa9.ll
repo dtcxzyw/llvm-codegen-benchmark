@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2877220 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877186 = type <{ i64, i32 }>
 
 ; 22 occurrences:
 ; abc/optimized/abcDfs.c.ll
@@ -41,7 +41,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877220, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877186, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, -2
   %6 = sub i64 %5, %0

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -41,6 +41,7 @@
 ; wireshark/optimized/packet-gsm_bsslap.c.ll
 ; wireshark/optimized/packet-ipx.c.ll
 ; wireshark/optimized/packet-reload.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-uftp4.c.ll
 ; wireshark/optimized/packet-uftp5.c.ll

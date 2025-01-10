@@ -1,5 +1,5 @@
 
-; 818 occurrences:
+; 817 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -128,7 +128,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btTriangleMesh.ll
 ; c3c/optimized/context.c.ll
-; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; cmake/optimized/divsufsort.c.ll

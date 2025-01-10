@@ -1,8 +1,8 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
 
 ; 15 occurrences:
 ; cpython/optimized/basearith.ll
@@ -319,7 +319,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 80
-  %3 = getelementptr nusw nuw %"struct.std::pair.2601858", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.2601825", ptr %0, i64 %2
   ret ptr %3
 }
 

@@ -1,8 +1,8 @@
 
-%"class.mitsuba::filesystem::path.2603450" = type <{ %"class.std::__1::vector.2603413", i8, [7 x i8] }>
-%"class.std::__1::vector.2603413" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603414" }
-%"class.std::__1::__compressed_pair.55.2603414" = type { %"struct.std::__1::__compressed_pair_elem.56.2603415" }
-%"struct.std::__1::__compressed_pair_elem.56.2603415" = type { ptr }
+%"class.mitsuba::filesystem::path.2603417" = type <{ %"class.std::__1::vector.2603380", i8, [7 x i8] }>
+%"class.std::__1::vector.2603380" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603381" }
+%"class.std::__1::__compressed_pair.55.2603381" = type { %"struct.std::__1::__compressed_pair_elem.56.2603382" }
+%"struct.std::__1::__compressed_pair_elem.56.2603382" = type { ptr }
 
 ; 3 occurrences:
 ; linux/optimized/nf_conntrack_sip.ll
@@ -49,7 +49,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.mitsuba::filesystem::path.2603450", ptr %0, i64 %1
+  %3 = getelementptr nusw %"class.mitsuba::filesystem::path.2603417", ptr %0, i64 %1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %2, %4
   %6 = getelementptr nusw i8, ptr %3, i64 %5

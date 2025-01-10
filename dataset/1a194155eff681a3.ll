@@ -77,7 +77,6 @@
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
-; hyperscan/optimized/ng_violet.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/package.ll
@@ -128,6 +127,7 @@
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_carith.ll

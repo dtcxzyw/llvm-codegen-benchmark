@@ -1,5 +1,5 @@
 
-%"struct.Assimp::MDC::CompressedVertex.2825087" = type { i8, i8, i8, i8 }
+%"struct.Assimp::MDC::CompressedVertex.2825053" = type { i8, i8, i8, i8 }
 
 ; 8 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
@@ -55,7 +55,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.Assimp::MDC::CompressedVertex.2825087", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDC::CompressedVertex.2825053", ptr %0, i64 %5
   ret ptr %6
 }
 

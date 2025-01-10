@@ -148,6 +148,11 @@ func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+func000000000000006c:                   # @func000000000000006c
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
 func0000000000000065:                   # @func0000000000000065
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -157,11 +162,6 @@ func000000000000002b:                   # @func000000000000002b
 	add	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1
-	ret
-func000000000000006c:                   # @func000000000000006c
-	add	a1, a1, a2
-	xor	a0, a0, a1
-	snez	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
 	add	a1, a1, a2

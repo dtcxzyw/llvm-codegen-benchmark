@@ -15,7 +15,7 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 16
+	li	a0, 75
 	vminu.vx	v8, v8, a0
 	vmsltu.vv	v0, v12, v8
 	ret

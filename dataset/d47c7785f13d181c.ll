@@ -1,5 +1,5 @@
 
-%"class.llvm::MDOperand.3259686" = type { ptr }
+%"class.llvm::MDOperand.3259652" = type { ptr }
 
 ; 6 occurrences:
 ; linux/optimized/libata-scsi.ll
@@ -45,7 +45,7 @@ define ptr @func0000000000000027(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 31
   %3 = select i1 %2, i64 4, i64 3
-  %4 = getelementptr nusw nuw %"class.llvm::MDOperand.3259686", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MDOperand.3259652", ptr %0, i64 %3
   ret ptr %4
 }
 

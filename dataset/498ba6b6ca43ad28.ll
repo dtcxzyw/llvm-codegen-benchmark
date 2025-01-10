@@ -1,5 +1,5 @@
 
-%struct.BackwardMatch.3843312 = type { i32, i32 }
+%struct.BackwardMatch.3843262 = type { i32, i32 }
 
 ; 145 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -213,7 +213,7 @@ define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 0, i64 256
-  %4 = getelementptr %struct.BackwardMatch.3843312, ptr %0, i64 %3
+  %4 = getelementptr %struct.BackwardMatch.3843262, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

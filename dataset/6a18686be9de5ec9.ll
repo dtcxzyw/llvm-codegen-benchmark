@@ -1,5 +1,5 @@
 
-; 215 occurrences:
+; 214 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/instantiate_cpp_exprgrammar.ll
@@ -137,7 +137,6 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll

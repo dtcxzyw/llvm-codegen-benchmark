@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 275 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
@@ -335,7 +335,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3181429", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = ashr i64 %6, 7

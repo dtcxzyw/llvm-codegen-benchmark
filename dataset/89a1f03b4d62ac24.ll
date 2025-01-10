@@ -50,8 +50,7 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
+; 13 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll

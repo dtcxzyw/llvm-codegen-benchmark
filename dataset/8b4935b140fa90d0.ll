@@ -1,7 +1,7 @@
 
-%"struct.duckdb::string_t.2962917" = type { %union.anon.73.2962918 }
-%union.anon.73.2962918 = type { %struct.anon.2962919 }
-%struct.anon.2962919 = type { i32, [4 x i8], ptr }
+%"struct.duckdb::string_t.2962883" = type { %union.anon.73.2962884 }
+%union.anon.73.2962884 = type { %struct.anon.2962885 }
+%struct.anon.2962885 = type { i32, [4 x i8], ptr }
 
 ; 77 occurrences:
 ; lief/optimized/File.cpp.ll
@@ -98,7 +98,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr %"struct.duckdb::string_t.2962917", ptr %0, i64 %4, i32 0, i32 0, i32 1
+  %5 = getelementptr %"struct.duckdb::string_t.2962883", ptr %0, i64 %4, i32 0, i32 0, i32 1
   ret ptr %5
 }
 

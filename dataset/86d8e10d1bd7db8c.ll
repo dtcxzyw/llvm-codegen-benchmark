@@ -47,9 +47,8 @@ define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, -8
-  %4 = sub nsw i32 %0, %3
-  %5 = icmp sgt i32 %4, 7
-  ret i1 %5
+  %4 = icmp sgt i32 %0, %3
+  ret i1 %4
 }
 
 ; 9 occurrences:

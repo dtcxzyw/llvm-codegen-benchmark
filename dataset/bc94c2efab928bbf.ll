@@ -10,9 +10,10 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; clamav/optimized/lzxd.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -22,6 +23,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; php/optimized/hash_gost.ll
 ; portaudio/optimized/pa_converters.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:

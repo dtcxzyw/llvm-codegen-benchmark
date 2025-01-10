@@ -54,14 +54,6 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
-	cmpl	$1073741823, %esi               # imm = 0x3FFFFFFF
-	movl	$1073741823, %eax               # imm = 0x3FFFFFFF
-	cmovbl	%esi, %eax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func00000000000000aa:                   # @func00000000000000aa
 	cmpl	$1200, %esi                     # imm = 0x4B0
 	movl	$1200, %eax                     # imm = 0x4B0
@@ -69,4 +61,12 @@ func00000000000000aa:                   # @func00000000000000aa
 	addq	$50, %rdi
 	cmpq	%rax, %rdi
 	setg	%al
+	retq
+func0000000000000088:                   # @func0000000000000088
+	cmpl	$255, %esi
+	movl	$255, %eax
+	cmovbl	%esi, %eax
+	addq	$5, %rdi
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

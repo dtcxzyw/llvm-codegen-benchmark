@@ -228,8 +228,9 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/escape.cpp.ll
+; linux/optimized/printk.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind

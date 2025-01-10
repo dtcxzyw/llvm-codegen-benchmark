@@ -334,13 +334,15 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; 4 occurrences:
+; linux/optimized/pcmcia_resource.ll
+; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext nneg i8 %1 to i64
+  %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %0, -7
   %5 = or i64 %3, %4
@@ -359,16 +361,14 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; linux/optimized/pcmcia_resource.ll
-; llvm/optimized/Dominators.cpp.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
+; 1 occurrences:
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
+define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
 entry:
-  %2 = zext i8 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = and i64 %0, -5
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw nsw i64 %2, 17
+  %4 = and i64 %0, -32769
   %5 = or i64 %4, %3
   ret i64 %5
 }

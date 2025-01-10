@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/memory_pool.cc.ll
@@ -31,6 +31,7 @@
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexIVFAdditiveQuantizerFastScan.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_demo.cpp.ll

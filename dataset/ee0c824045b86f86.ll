@@ -1,5 +1,5 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
 
 ; 8 occurrences:
 ; linux/optimized/inet_hashtables.ll
@@ -16,7 +16,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %5
+  %6 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %5
   ret ptr %6
 }
 

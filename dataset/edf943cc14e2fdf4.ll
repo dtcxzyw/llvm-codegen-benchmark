@@ -1,5 +1,5 @@
 
-; 179 occurrences:
+; 189 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/buffered.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -83,6 +83,8 @@
 ; clamav/optimized/qsort.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstdmt_compress.c.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; cpython/optimized/_bz2module.ll
 ; cpython/optimized/_collectionsmodule.ll
@@ -118,6 +120,7 @@
 ; linux/optimized/neighbour.ll
 ; linux/optimized/read_write.ll
 ; linux/optimized/shmem.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -137,6 +140,7 @@
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; opencv/optimized/persistence_base64_encoding.cpp.ll
 ; openjdk/optimized/convertnode.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; openmpi/optimized/ad_read_coll.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -170,7 +174,10 @@
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; qemu/optimized/util_aio-posix.c.ll
 ; quantlib/optimized/date.ll
+; raylib/optimized/rcore.c.ll
+; ruby/optimized/encoding.ll
 ; ruby/optimized/pack.ll
+; ruby/optimized/sprintf.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
 ; ruby/optimized/transcode.ll
@@ -178,7 +185,10 @@
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
+; wireshark/optimized/blf.c.ll
 ; xgboost/optimized/stats.cc.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -190,7 +200,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 163 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/per_thread_sem_test.cc.ll
 ; abseil-cpp/optimized/sysinfo.cc.ll
 ; arrow/optimized/buffered.cc.ll
@@ -285,6 +295,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; libjpeg-turbo/optimized/md5hl.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/addrconf.ll
+; linux/optimized/vc_screen.ll
 ; llvm/optimized/ExponentialBackoff.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -329,6 +340,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openjdk/optimized/jmemmgr.ll
 ; openjdk/optimized/ps_core.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll
@@ -340,7 +352,6 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; openmpi/optimized/ad_write_str.ll
 ; openmpi/optimized/ad_write_str_naive.ll
 ; osqp/optimized/amd_2.c.ll
-; php/optimized/pack.ll
 ; portaudio/optimized/pa_ringbuffer.c.ll
 ; postgres/optimized/inv_api.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
@@ -349,16 +360,18 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; redis/optimized/cluster_legacy.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/stringio.ll
 ; sentencepiece/optimized/stringpiece.cc.ll
 ; slurm/optimized/job_mgr.ll
+; sqlite/optimized/sqlite3.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = call i64 @llvm.smin.i64(i64 %0, i64 %3)
+  %4 = tail call i64 @llvm.smin.i64(i64 %3, i64 %0)
   ret i64 %4
 }
 

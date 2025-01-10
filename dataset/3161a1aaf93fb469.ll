@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll

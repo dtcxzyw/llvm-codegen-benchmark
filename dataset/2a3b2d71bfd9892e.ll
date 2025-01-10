@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; freetype/optimized/ftstroke.c.ll
 ; linux/optimized/dma-iommu.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
@@ -12,7 +12,6 @@
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {

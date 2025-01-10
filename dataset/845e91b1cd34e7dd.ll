@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 7 occurrences:
 ; libquic/optimized/pem_lib.c.ll
@@ -58,8 +58,8 @@ define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 23
   %4 = ashr i64 %3, 63
-  %5 = getelementptr %struct.TCGTemp.2707225, ptr %1, i64 %4
-  %6 = getelementptr %struct.TCGTemp.2707225, ptr %5, i64 %0, i32 3
+  %5 = getelementptr %struct.TCGTemp.2707191, ptr %1, i64 %4
+  %6 = getelementptr %struct.TCGTemp.2707191, ptr %5, i64 %0, i32 3
   ret ptr %6
 }
 

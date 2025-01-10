@@ -18,14 +18,6 @@ func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	retq
-func0000000000000017:                   # @func0000000000000017
-	movq	%rdi, %rax
-	subl	%esi, %eax
-	retq
-func000000000000001b:                   # @func000000000000001b
-	movq	%rdi, %rax
-	subl	%esi, %eax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	movq	%rdi, %rax
 	subl	%esi, %eax
@@ -63,6 +55,10 @@ func0000000000000005:                   # @func0000000000000005
 	subl	%esi, %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
+func0000000000000017:                   # @func0000000000000017
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	retq

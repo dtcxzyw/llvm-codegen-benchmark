@@ -1,6 +1,6 @@
 
-%"class.re2::StringPiece.2795662" = type { ptr, i64 }
-%struct.nbnxn_cj_t.3365531 = type { i32, i32 }
+%"class.re2::StringPiece.2795628" = type { ptr, i64 }
+%struct.nbnxn_cj_t.3365497 = type { i32, i32 }
 
 ; 11 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -77,7 +77,7 @@ entry:
   %4 = zext nneg i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %"class.re2::StringPiece.2795662", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"class.re2::StringPiece.2795628", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -90,7 +90,7 @@ entry:
   %4 = zext nneg i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr %struct.nbnxn_cj_t.3365531, ptr %6, i64 %5
+  %7 = getelementptr %struct.nbnxn_cj_t.3365497, ptr %6, i64 %5
   ret ptr %7
 }
 

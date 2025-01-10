@@ -1,5 +1,5 @@
 
-%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
+%struct.dx_map_entry.3547978 = type { i32, i16, i16 }
 
 ; 1 occurrences:
 ; php/optimized/pass3.ll
@@ -124,8 +124,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 -8
-  %4 = getelementptr %struct.dx_map_entry.3548012, ptr %3, i64 %0
-  %5 = getelementptr %struct.dx_map_entry.3548012, ptr %1, i64 %2
+  %4 = getelementptr %struct.dx_map_entry.3547978, ptr %3, i64 %0
+  %5 = getelementptr %struct.dx_map_entry.3547978, ptr %1, i64 %2
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }

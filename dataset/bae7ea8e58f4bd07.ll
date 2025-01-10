@@ -1,6 +1,6 @@
 
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"struct.boost::container::dtl::pair.2685178" = type { i32, i32 }
 
 ; 3 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
@@ -45,7 +45,7 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.mold::LittleEndian.2635853", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.mold::LittleEndian.2635820", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -154,7 +154,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 16
-  %4 = getelementptr %"struct.boost::container::dtl::pair.2685211", ptr %0, i64 %1
+  %4 = getelementptr %"struct.boost::container::dtl::pair.2685178", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

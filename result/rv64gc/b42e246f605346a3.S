@@ -118,3 +118,11 @@ func0000000000000074:                   # @func0000000000000074
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
 	ret
+func0000000000000079:                   # @func0000000000000079
+	bltu	a1, a2, .LBB16_2
+	mv	a1, a2
+.LBB16_2:                               # %entry
+	addi	a0, a0, 1
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret

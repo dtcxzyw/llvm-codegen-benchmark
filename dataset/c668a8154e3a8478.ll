@@ -572,7 +572,7 @@ entry:
   ret i1 %3
 }
 
-; 494 occurrences:
+; 493 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -669,7 +669,6 @@ entry:
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftcache.c.ll
-; freetype/optimized/ftstroke.c.ll
 ; git/optimized/diff-no-index.ll
 ; git/optimized/match-trees.ll
 ; git/optimized/revision.ll

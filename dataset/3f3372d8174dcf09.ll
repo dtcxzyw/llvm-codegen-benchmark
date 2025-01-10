@@ -1,5 +1,5 @@
 
-; 583 occurrences:
+; 582 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -380,7 +380,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Merge.cc.ll
 ; php/optimized/phpdbg_btree.ll
-; php/optimized/zend_alloc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/tsquery_gist.ll

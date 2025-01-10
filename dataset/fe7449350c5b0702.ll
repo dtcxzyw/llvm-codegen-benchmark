@@ -675,14 +675,13 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddBddIte.c.ll
 ; arrow/optimized/util.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/cfield.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/fops.ll
-; postgres/optimized/inet_net_pton.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; redis/optimized/hdr_histogram.ll
 ; ruby/optimized/string.ll
@@ -3460,8 +3459,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; tinympc/optimized/tiny_api.cpp.ll
+; 1 occurrences:
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002b(i64 %0, i64 %1) #0 {

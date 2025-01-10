@@ -60,7 +60,7 @@ entry:
   ret i64 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/sha256.c.ll
@@ -69,6 +69,7 @@ entry:
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; lief/optimized/ccm.c.ll
 ; lief/optimized/gcm.c.ll
+; linux/optimized/devio.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_ttm.ll

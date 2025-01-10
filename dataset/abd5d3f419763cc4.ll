@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 1 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
@@ -29,7 +29,7 @@ define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }

@@ -142,3 +142,12 @@ func0000000000000074:                   // @func0000000000000074
 	cset	w0, lo
 	ret
                                         // -- End function
+func0000000000000079:                   // @func0000000000000079
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	add	x9, x0, #1
+	csel	x8, x1, x2, lo
+	cmp	x9, x8
+	cset	w0, hs
+	ret
+                                        // -- End function

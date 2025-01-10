@@ -41,11 +41,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; git/optimized/merge-tree.ll
 ; openmpi/optimized/opal_convertor.ll
 ; yosys/optimized/maccmap.ll
@@ -53,7 +52,7 @@ entry:
 define i32 @func000000000000000f(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw nsw i32 65536, %2
+  %3 = shl nuw nsw i32 1, %2
   %4 = select i1 %0, i32 %3, i32 0
   ret i32 %4
 }

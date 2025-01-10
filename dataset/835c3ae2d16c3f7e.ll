@@ -1,5 +1,5 @@
 
-; 200 occurrences:
+; 201 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -59,6 +59,7 @@
 ; libuv/optimized/linux.c.ll
 ; libwebp/optimized/rescaler.c.ll
 ; linux/optimized/bitmap.ll
+; linux/optimized/blk-map.ll
 ; linux/optimized/find_bit.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/intel_lrc.ll

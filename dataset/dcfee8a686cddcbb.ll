@@ -1,5 +1,5 @@
 
-; 493 occurrences:
+; 492 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -101,7 +101,6 @@
 ; jq/optimized/decNumber.ll
 ; jq/optimized/jv_dtoa.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libpng/optimized/png.c.ll
@@ -528,7 +527,7 @@ entry:
   ret i64 %3
 }
 
-; 576 occurrences:
+; 577 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFraig.c.ll
@@ -711,6 +710,7 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -2364,7 +2364,7 @@ entry:
   ret i64 %3
 }
 
-; 488 occurrences:
+; 489 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
 ; abc/optimized/giaBidec.c.ll
@@ -2433,6 +2433,7 @@ entry:
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; libpng/optimized/pngmem.c.ll
 ; libpng/optimized/pngwutil.c.ll

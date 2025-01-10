@@ -128,9 +128,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/hfsplus.c.ll
-; linux/optimized/printk.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000054(i32 %0, i16 %1) #0 {
@@ -141,10 +140,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/route.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i16 %1) #0 {

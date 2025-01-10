@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 22 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -19,9 +19,6 @@
 ; linux/optimized/scatterlist.ll
 ; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/multirangetypes.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/libvduse.c.ll
-; qemu/optimized/libvhost-user.c.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll

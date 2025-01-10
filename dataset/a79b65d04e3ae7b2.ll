@@ -227,12 +227,13 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; hermes/optimized/TypeInference.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
+; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; php/optimized/zend_jit.ll
 ; verilator/optimized/V3Const__gen.cpp.ll

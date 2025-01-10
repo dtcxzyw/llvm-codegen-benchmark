@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	sarq	$30, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+func000000000000000e:                   # @func000000000000000e
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	addq	%rsi, %rax
 	sarq	$32, %rax

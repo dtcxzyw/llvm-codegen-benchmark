@@ -24,7 +24,7 @@ entry:
   ret i1 %3
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -46,6 +46,7 @@ entry:
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; mimalloc/optimized/init.c.ll
@@ -117,7 +118,7 @@ entry:
   ret i1 %3
 }
 
-; 84 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -135,7 +136,6 @@ entry:
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/ue2string.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll

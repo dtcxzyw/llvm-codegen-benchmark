@@ -452,7 +452,7 @@ entry:
   ret i1 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/mainReal.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -472,7 +472,6 @@ entry:
 ; luajit/optimized/lj_cparse_dyn.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/verifier.ll
 ; postgres/optimized/controldata.ll
 ; postgres/optimized/localtime.ll
@@ -882,7 +881,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; git/optimized/diff.ll
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/rbnf.ll

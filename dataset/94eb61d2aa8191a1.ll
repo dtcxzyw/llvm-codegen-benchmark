@@ -1,9 +1,9 @@
 
-%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
-%struct.anon.21.2601264 = type { ptr, i64 }
-%"class.re2::Prog::Inst.2601887" = type { i32, %union.anon.43.2601888 }
-%union.anon.43.2601888 = type { i32 }
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%union.iseq_inline_storage_entry.2601230 = type { %struct.anon.21.2601231 }
+%struct.anon.21.2601231 = type { ptr, i64 }
+%"class.re2::Prog::Inst.2601854" = type { i32, %union.anon.43.2601855 }
+%union.anon.43.2601855 = type { i32 }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
 ; 31 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -40,7 +40,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %1, i64 %2
+  %3 = getelementptr %union.iseq_inline_storage_entry.2601230, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = ashr exact i64 %5, 3
@@ -912,7 +912,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601887", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601854", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = ashr exact i64 %5, 1
@@ -1187,7 +1187,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.28.2602074", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = ashr exact i64 %5, 4

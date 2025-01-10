@@ -1,6 +1,6 @@
 
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%struct.block_q2_K.3720231 = type { [16 x i8], [64 x i8], i16, i16 }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%struct.block_q2_K.3720181 = type { [16 x i8], [64 x i8], i16, i16 }
 
 ; 7 occurrences:
 ; abc/optimized/abcIfif.c.ll
@@ -119,7 +119,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 8
-  %4 = getelementptr %struct.direntry_t.2705800, ptr %0, i64 %1
+  %4 = getelementptr %struct.direntry_t.2705766, ptr %0, i64 %1
   %5 = getelementptr [11 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -179,7 +179,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = getelementptr nusw nuw %struct.block_q2_K.3720231, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct.block_q2_K.3720181, ptr %0, i64 %1
   %5 = getelementptr nusw [16 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

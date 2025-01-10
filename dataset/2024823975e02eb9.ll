@@ -3345,7 +3345,7 @@ entry:
   ret i64 %3
 }
 
-; 2360 occurrences:
+; 2359 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -4060,7 +4060,6 @@ entry:
 ; linux/optimized/readahead.ll
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rmap.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/shm.ll

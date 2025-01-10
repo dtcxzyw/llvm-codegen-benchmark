@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; oiio/optimized/pnmoutput.cpp.ll
+; php/optimized/pack.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {

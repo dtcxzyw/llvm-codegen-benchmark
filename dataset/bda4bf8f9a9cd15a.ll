@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 98 occurrences:
 ; abc/optimized/llb2Flow.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -69,6 +69,7 @@
 ; opencv/optimized/warpfield.cpp.ll
 ; openmpi/optimized/ad_testfs_seek.ll
 ; openmpi/optimized/flatten.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; openusd/optimized/pathExpressionEval.cpp.ll
@@ -623,7 +624,7 @@ entry:
   ret i1 %3
 }
 
-; 824 occurrences:
+; 826 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -1065,6 +1066,7 @@ entry:
 ; openssl/optimized/openssl-bin-dgst.ll
 ; openssl/optimized/openssl-bin-mac.ll
 ; openusd/optimized/bufferSpec.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/layerStack.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
@@ -1131,6 +1133,7 @@ entry:
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres_select_filter.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/tbprobe.ll
@@ -1544,7 +1547,7 @@ entry:
   ret i1 %3
 }
 
-; 2768 occurrences:
+; 2769 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCore.c.ll
@@ -3261,6 +3264,7 @@ entry:
 ; openspiel/optimized/get_all_infostates.cc.ll
 ; openspiel/optimized/gin_rummy.cc.ll
 ; openspiel/optimized/gin_rummy_utils.cc.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/hearts.cc.ll
 ; openspiel/optimized/hex.cc.ll
@@ -4321,7 +4325,7 @@ entry:
   ret i1 %3
 }
 
-; 7243 occurrences:
+; 7244 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -10333,6 +10337,7 @@ entry:
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
+; qemu/optimized/cache.ll
 ; qemu/optimized/hw_9pfs_9p-xattr-user.c.ll
 ; qemu/optimized/hw_9pfs_9p-xattr.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
@@ -11573,7 +11578,7 @@ entry:
   ret i1 %3
 }
 
-; 2171 occurrences:
+; 2174 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -12278,6 +12283,7 @@ entry:
 ; gromacs/optimized/qmmmoptions.cpp.ll
 ; gromacs/optimized/sasa.cpp.ll
 ; gromacs/optimized/scattering-debye.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
 ; gromacs/optimized/simulatoralgorithm.cpp.ll
@@ -13229,6 +13235,7 @@ entry:
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; quantlib/optimized/accountingengine.ll
 ; quantlib/optimized/alphafinder.ll
@@ -13336,6 +13343,7 @@ entry:
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
 ; sentencepiece/optimized/sentencepiece_trainer.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/spank.ll
 ; soc-simulator/optimized/verilated.ll

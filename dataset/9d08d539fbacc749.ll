@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:

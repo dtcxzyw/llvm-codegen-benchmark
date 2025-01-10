@@ -1,8 +1,8 @@
 
-%"class.std::vector.3719673" = type { %"struct.std::_Vector_base.3719674" }
-%"struct.std::_Vector_base.3719674" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3719675" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3719675" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3719676" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3719676" = type { ptr, ptr, ptr }
+%"class.std::vector.3719623" = type { %"struct.std::_Vector_base.3719624" }
+%"struct.std::_Vector_base.3719624" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3719625" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3719625" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3719626" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3719626" = type { ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -44,7 +44,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = getelementptr [2 x %"class.std::vector.3719673"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [2 x %"class.std::vector.3719623"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

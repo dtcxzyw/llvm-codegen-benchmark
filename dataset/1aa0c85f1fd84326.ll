@@ -16,7 +16,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 96 occurrences:
+; 95 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/xar.c.ll
@@ -65,7 +65,6 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Path.cpp.ll

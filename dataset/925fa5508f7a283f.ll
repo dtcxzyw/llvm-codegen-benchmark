@@ -1,8 +1,8 @@
 
-%"struct.OT::VarRegionAxis.2729548" = type { %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549" }
-%"struct.OT::HBFixed.163.2729549" = type { %"struct.OT::IntType.148.2729550" }
-%"struct.OT::IntType.148.2729550" = type { %struct.BEInt.149.2729551 }
-%struct.BEInt.149.2729551 = type { [2 x i8] }
+%"struct.OT::VarRegionAxis.2729514" = type { %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515" }
+%"struct.OT::HBFixed.163.2729515" = type { %"struct.OT::IntType.148.2729516" }
+%"struct.OT::IntType.148.2729516" = type { %struct.BEInt.149.2729517 }
+%struct.BEInt.149.2729517 = type { [2 x i8] }
 
 ; 4 occurrences:
 ; oiio/optimized/rlaoutput.cpp.ll
@@ -487,7 +487,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729548", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729514", ptr %0, i64 %4
   ret ptr %5
 }
 

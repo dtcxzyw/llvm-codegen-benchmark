@@ -81,7 +81,7 @@ entry:
   ret i1 %4
 }
 
-; 101 occurrences:
+; 100 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -113,7 +113,6 @@ entry:
 ; jq/optimized/regexec.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libquic/optimized/time.cc.ll
 ; linux/optimized/mutex.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/srcutree.ll
@@ -612,13 +611,12 @@ entry:
   ret i1 %5
 }
 
-; 68 occurrences:
+; 54 occurrences:
 ; casadi/optimized/cvodes_interface.cpp.ll
 ; casadi/optimized/idas_interface.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; ceres/optimized/manifold.cc.ll
@@ -651,35 +649,22 @@ entry:
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
 ; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
 ; git/optimized/files-backend.ll
 ; git/optimized/packfile.ll
 ; git/optimized/unpack-objects.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_draw_sw_mask.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; php/optimized/array.ll
-; php/optimized/tm2unixtime.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {

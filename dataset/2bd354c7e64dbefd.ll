@@ -1,7 +1,7 @@
 
-%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
-%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.hermes::vm::GCHermesValueBase.3085326" = type { %"class.hermes::vm::HermesValue32.3085325" }
+%"class.hermes::vm::HermesValue32.3085325" = type { i32 }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 97 occurrences:
 ; assimp/optimized/XFileParser.cpp.ll
@@ -268,7 +268,7 @@ define ptr @func0000000000000070(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085360", ptr %3, i64 %2
+  %4 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085326", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -196
   ret ptr %5
 }
@@ -280,7 +280,7 @@ define ptr @func000000000000002f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -67072
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %3, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   ret ptr %5
 }

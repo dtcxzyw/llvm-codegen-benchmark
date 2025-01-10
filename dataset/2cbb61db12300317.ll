@@ -1,5 +1,5 @@
 
-%"struct.(anonymous namespace)::ValuePair.3899211" = type { i32, i32 }
+%"struct.(anonymous namespace)::ValuePair.3899161" = type { i32, i32 }
 
 ; 8 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -29,7 +29,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %1, %3
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899211", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899161", ptr %0, i64 %5
   ret ptr %6
 }
 

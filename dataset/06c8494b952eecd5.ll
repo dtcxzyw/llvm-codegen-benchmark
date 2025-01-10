@@ -1,5 +1,5 @@
 
-; 366 occurrences:
+; 365 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/giaDfs.c.ll
@@ -94,7 +94,6 @@
 ; delta-rs/optimized/3rg86k0wb5au4lo8.ll
 ; delta-rs/optimized/4jpyf52a2nk6q4dy.ll
 ; delta-rs/optimized/4uexgcs2m8ycm9lg.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/irfg8spzfp3yea1.ll
 ; diesel-rs/optimized/152idtvtmysvk2sx.ll
 ; diesel-rs/optimized/1e9xgs6bol3gaqxq.ll

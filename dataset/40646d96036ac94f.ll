@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3309293" = type { i32 }
+%"class.clang::SourceLocation.3309259" = type { i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_acpi_core.c.ll
@@ -14,7 +14,7 @@ entry:
   ret ptr %7
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; llvm/optimized/UDTLayout.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -22,10 +22,6 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -58,8 +54,8 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.clang::SourceLocation.3309293", ptr %0, i64 %1
-  %7 = getelementptr nusw %"class.clang::SourceLocation.3309293", ptr %6, i64 %5
+  %6 = getelementptr nusw %"class.clang::SourceLocation.3309259", ptr %0, i64 %1
+  %7 = getelementptr nusw %"class.clang::SourceLocation.3309259", ptr %6, i64 %5
   ret ptr %7
 }
 

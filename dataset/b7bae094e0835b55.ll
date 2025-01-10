@@ -1,18 +1,18 @@
 
-%"class.rocksdb::Slice.2625615" = type { ptr, i64 }
-%struct.VuVirtq.2706746 = type { %struct.VuRing.2706747, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706748 }
-%struct.VuRing.2706747 = type { i32, ptr, ptr, ptr, i64, i32 }
-%struct.vhost_vring_addr.2706748 = type { i32, i32, i64, i64, i64, i64 }
-%"struct.btSoftBody::Node.2819528" = type <{ %"struct.btSoftBody::Feature.2819529", %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2819523, %class.btMatrix3x3.2819526, %class.btMatrix3x3.2819526, [4 x i8] }>
-%"struct.btSoftBody::Feature.2819529" = type { %"struct.btSoftBody::Element.2819530", ptr }
-%"struct.btSoftBody::Element.2819530" = type { ptr }
-%class.btVector3.2819523 = type { [4 x float] }
-%class.btMatrix3x3.2819526 = type { [3 x %class.btVector3.2819523] }
-%"class.QuantLib::Interpolation.2859789" = type { %"class.QuantLib::Extrapolator.base.2859790", %"class.boost::shared_ptr.35.2859791" }
-%"class.QuantLib::Extrapolator.base.2859790" = type <{ ptr, i8 }>
-%"class.boost::shared_ptr.35.2859791" = type { ptr, %"class.boost::detail::shared_count.2859771" }
-%"class.boost::detail::shared_count.2859771" = type { ptr }
-%struct._PyCoLineInstrumentationData.3988294 = type { i8, i8 }
+%"class.rocksdb::Slice.2625582" = type { ptr, i64 }
+%struct.VuVirtq.2706712 = type { %struct.VuRing.2706713, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706714 }
+%struct.VuRing.2706713 = type { i32, ptr, ptr, ptr, i64, i32 }
+%struct.vhost_vring_addr.2706714 = type { i32, i32, i64, i64, i64, i64 }
+%"struct.btSoftBody::Node.2819494" = type <{ %"struct.btSoftBody::Feature.2819495", %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2819489, %class.btMatrix3x3.2819492, %class.btMatrix3x3.2819492, [4 x i8] }>
+%"struct.btSoftBody::Feature.2819495" = type { %"struct.btSoftBody::Element.2819496", ptr }
+%"struct.btSoftBody::Element.2819496" = type { ptr }
+%class.btVector3.2819489 = type { [4 x float] }
+%class.btMatrix3x3.2819492 = type { [3 x %class.btVector3.2819489] }
+%"class.QuantLib::Interpolation.2859755" = type { %"class.QuantLib::Extrapolator.base.2859756", %"class.boost::shared_ptr.35.2859757" }
+%"class.QuantLib::Extrapolator.base.2859756" = type <{ ptr, i8 }>
+%"class.boost::shared_ptr.35.2859757" = type { ptr, %"class.boost::detail::shared_count.2859737" }
+%"class.boost::detail::shared_count.2859737" = type { ptr }
+%struct._PyCoLineInstrumentationData.3988244 = type { i8, i8 }
 
 ; 122 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
@@ -141,7 +141,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = getelementptr nusw %"class.rocksdb::Slice.2625615", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"class.rocksdb::Slice.2625582", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -164,7 +164,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr %struct.VuVirtq.2706746, ptr %0, i64 %2, i32 14
+  %3 = getelementptr %struct.VuVirtq.2706712, ptr %0, i64 %2, i32 14
   ret ptr %3
 }
 
@@ -184,7 +184,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw %"struct.btSoftBody::Node.2819528", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.btSoftBody::Node.2819494", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -195,7 +195,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = getelementptr nusw nuw %"class.QuantLib::Interpolation.2859789", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %"class.QuantLib::Interpolation.2859755", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -205,7 +205,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr %struct._PyCoLineInstrumentationData.3988294, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct._PyCoLineInstrumentationData.3988244, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

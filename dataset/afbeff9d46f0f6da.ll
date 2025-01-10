@@ -1,6 +1,6 @@
 
-%"class.glslang::TConstUnion.2911511" = type <{ %union.anon.0.2911512, i32, [4 x i8] }>
-%union.anon.0.2911512 = type { i64 }
+%"class.glslang::TConstUnion.2911477" = type <{ %union.anon.0.2911478, i32, [4 x i8] }>
+%union.anon.0.2911478 = type { i64 }
 
 ; 9 occurrences:
 ; gromacs/optimized/gmx_anaeig.cpp.ll
@@ -42,7 +42,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.glslang::TConstUnion.2911511", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.glslang::TConstUnion.2911477", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

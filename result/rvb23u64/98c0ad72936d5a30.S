@@ -24,3 +24,9 @@ func00000000000000df:                   # @func00000000000000df
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func000000000000005d:                   # @func000000000000005d
+	addi	a2, a2, -1
+	srliw	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret

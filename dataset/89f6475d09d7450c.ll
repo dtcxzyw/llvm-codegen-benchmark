@@ -1,5 +1,5 @@
 
-; 253 occurrences:
+; 252 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -77,7 +77,6 @@
 ; hermes/optimized/Executor.cpp.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
-; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/traversal.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_native.c.ll

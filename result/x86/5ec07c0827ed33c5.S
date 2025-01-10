@@ -22,6 +22,13 @@ func0000000000000118:                   # @func0000000000000118
 	setb	%al
 	orb	%dl, %al
 	retq
+func0000000000000058:                   # @func0000000000000058
+	testb	$8, %dl
+	sete	%cl
+	cmpl	%esi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
 func0000000000000050:                   # @func0000000000000050
 	testb	$127, %dl
 	sete	%cl

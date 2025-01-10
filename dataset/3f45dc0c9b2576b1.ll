@@ -221,5 +221,16 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; linux/optimized/i915_gem_shmem.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = sub i32 %4, %0
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

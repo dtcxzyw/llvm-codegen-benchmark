@@ -6,6 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	decl	%edi
 	movzwl	%di, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	decl	%edi
+	movzwl	%di, %eax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	decl	%edi
 	movzwl	%di, %eax

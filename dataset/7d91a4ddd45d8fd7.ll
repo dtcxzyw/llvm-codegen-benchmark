@@ -1,10 +1,12 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; rocksdb/optimized/thread_status_impl.cc.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; Function Attrs: nounwind

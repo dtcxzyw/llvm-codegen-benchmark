@@ -12,10 +12,9 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
-; php/optimized/dce.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {

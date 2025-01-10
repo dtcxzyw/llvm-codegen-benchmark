@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 195 occurrences:
 ; hermes/optimized/JSProxy.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -109,6 +109,7 @@
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll

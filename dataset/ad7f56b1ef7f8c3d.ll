@@ -176,7 +176,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 200 occurrences:
+; 201 occurrences:
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/MMDImporter.cpp.ll
@@ -310,6 +310,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/superword.ll
+; openjdk/optimized/type.ll
 ; openspiel/optimized/phantom_go.cc.ll
 ; openssl/optimized/openssl-bin-passwd.ll
 ; openusd/optimized/openexr-c.c.ll

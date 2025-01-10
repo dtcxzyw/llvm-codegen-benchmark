@@ -63,8 +63,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; abc/optimized/dauNonDsd.c.ll
+; 1 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {

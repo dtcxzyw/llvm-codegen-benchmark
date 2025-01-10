@@ -13,7 +13,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 87 occurrences:
+; 88 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -60,6 +60,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; linux/optimized/slub.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/xhci-mem.ll
+; linux/optimized/xstate.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll

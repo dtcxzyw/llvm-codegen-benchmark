@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 115 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -29,6 +29,8 @@
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oniguruma/optimized/regexec.ll

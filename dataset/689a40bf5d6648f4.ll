@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; cpython/optimized/_heapqmodule.ll
@@ -19,7 +19,6 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; openssl/optimized/libdefault-lib-file_store.ll
 ; openssl/optimized/loader_attic-dso-e_loader_attic.ll
-; php/optimized/ascmagic.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/reorderbuffer.ll
 ; qemu/optimized/block_qcow2.c.ll

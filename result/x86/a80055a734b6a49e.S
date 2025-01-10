@@ -14,7 +14,7 @@ func000000000000000e:                   # @func000000000000000e
 	imulq	%rdx, %rsi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	imulq	%rdx, %rsi
 	leaq	(%rdi,%rsi,4), %rax
 	retq

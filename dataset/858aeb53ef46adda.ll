@@ -1,5 +1,5 @@
 
-%struct.YGValue.2705306 = type { float, i32 }
+%struct.YGValue.2705272 = type { float, i32 }
 
 ; 25 occurrences:
 ; abc/optimized/giaResub.c.ll
@@ -33,7 +33,7 @@ entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 624
-  %5 = getelementptr nusw nuw [2 x %struct.YGValue.2705306], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %struct.YGValue.2705272], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

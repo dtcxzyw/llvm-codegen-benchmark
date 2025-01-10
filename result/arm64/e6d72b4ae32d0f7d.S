@@ -61,15 +61,6 @@ func0000000000000002:                   // @func0000000000000002
 	orr	x0, x8, x9
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
-// %bb.0:                               // %entry
-	orr	x8, x0, x2, lsl #56
-	tst	w1, #0x1
-	mov	w9, #11                         // =0xb
-	cinc	x9, x9, eq
-	orr	x0, x8, x9
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	orr	x8, x0, x2, lsl #32

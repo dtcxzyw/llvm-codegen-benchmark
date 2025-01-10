@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2829405 = type { float, float, float }
+%class.aiVector3t.2829371 = type { float, float, float }
 
 ; 656 occurrences:
 ; abc/optimized/acecCover.c.ll
@@ -876,7 +876,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.aiVector3t.2829405, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.aiVector3t.2829371, ptr %0, i64 %3
   ret ptr %4
 }
 

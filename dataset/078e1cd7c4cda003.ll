@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; grpc/optimized/event_log.cc.ll
@@ -55,6 +55,7 @@
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/nms.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/zend_inference.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; re2/optimized/prefilter_tree.cc.ll

@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 204 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -178,6 +178,7 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

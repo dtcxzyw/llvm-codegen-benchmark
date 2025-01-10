@@ -1,5 +1,5 @@
 
-; 369 occurrences:
+; 367 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -181,7 +181,6 @@
 ; oiio/optimized/softimageinput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
-; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openjdk/optimized/awt_InputMethod.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/chaitin.ll
@@ -264,7 +263,6 @@
 ; slurm/optimized/gpu_nvml.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/gres_ctld.ll
-; slurm/optimized/gres_sched.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/gres_sock_list.ll
 ; slurm/optimized/job_mgr.ll
@@ -408,7 +406,7 @@ entry:
   ret i1 %3
 }
 
-; 580 occurrences:
+; 575 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -496,9 +494,6 @@ entry:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jq/optimized/execute.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -900,8 +895,6 @@ entry:
 ; re2/optimized/set.cc.ll
 ; re2/optimized/simplify.cc.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; rust-analyzer-rs/optimized/47txxwz9tojfkorr.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
@@ -1412,7 +1405,7 @@ entry:
   ret i1 %3
 }
 
-; 296 occurrences:
+; 295 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -1635,7 +1628,6 @@ entry:
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; serde-rs-json/optimized/19be4mv19oulzif3.ll
-; slurm/optimized/gres_select_util.ll
 ; slurm/optimized/numa.ll
 ; spike/optimized/vmsgtu_vi.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
@@ -1958,7 +1950,7 @@ entry:
   ret i1 %3
 }
 
-; 23 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; boost/optimized/src.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -1966,9 +1958,6 @@ entry:
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; lief/optimized/ResourcesParser.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
@@ -1980,8 +1969,6 @@ entry:
 ; postgres/optimized/nbtsort.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/regcomp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
@@ -1990,7 +1977,7 @@ entry:
   ret i1 %3
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -2008,6 +1995,7 @@ entry:
 ; lvgl/optimized/lv_binfont_loader.ll
 ; lvgl/optimized/lv_obj.ll
 ; lvgl/optimized/lv_obj_style.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; php/optimized/cdf.ll
 ; postgres/optimized/help.ll
 ; postgres/optimized/nbtdedup.ll

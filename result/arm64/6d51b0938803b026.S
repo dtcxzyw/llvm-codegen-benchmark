@@ -110,3 +110,11 @@ func0000000000000046:                   // @func0000000000000046
 	cset	w0, lt
 	ret
                                         // -- End function
+func00000000000000c6:                   // @func00000000000000c6
+// %bb.0:                               // %entry
+	cmp	w2, w1
+	csel	w8, w2, w1, lt
+	cmp	w0, w8
+	cset	w0, lt
+	ret
+                                        // -- End function

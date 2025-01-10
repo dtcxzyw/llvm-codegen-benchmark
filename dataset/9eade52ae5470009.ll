@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/rs.cpp.ll

@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3184941" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3184907" = type { ptr, ptr, ptr, ptr }
 
 ; 31 occurrences:
 ; arrow/optimized/message.cc.ll
@@ -49,9 +49,9 @@ entry:
 define ptr @func000000000000003b(ptr %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3184941", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3184907", ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3184941", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3184907", ptr %4, i64 %5
   ret ptr %6
 }
 

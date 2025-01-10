@@ -23,7 +23,7 @@ func0000000000000009:                   # @func0000000000000009
 	andq	%rdi, %rax
 	orq	%rsi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func0000000000000006:                   # @func0000000000000006
 	movzbl	%sil, %eax
 	addl	%eax, %eax
 	andq	$-7, %rdi
@@ -35,9 +35,9 @@ func000000000000000d:                   # @func000000000000000d
 	bzhiq	%rax, %rdi, %rax
 	orq	%rsi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func000000000000000e:                   # @func000000000000000e
 	movzbl	%sil, %eax
-	shll	$2, %eax
-	andq	$-5, %rdi
+	shll	$17, %eax
+	andq	$-32769, %rdi                   # imm = 0xFFFF7FFF
 	orq	%rdi, %rax
 	retq

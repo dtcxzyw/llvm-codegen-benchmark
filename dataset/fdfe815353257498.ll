@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; assimp/optimized/unzip.c.ll
 ; linux/optimized/iov_iter.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll

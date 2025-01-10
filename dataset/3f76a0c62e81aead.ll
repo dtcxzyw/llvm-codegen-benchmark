@@ -1,12 +1,15 @@
 
-; 40 occurrences:
+; 46 occurrences:
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
+; darktable/optimized/history.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; git/optimized/diffcore-rename.ll
+; git/optimized/merge-ort.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -29,9 +32,12 @@
 ; openjdk/optimized/check_code.ll
 ; openmpi/optimized/ad_aggregate.ll
 ; openmpi/optimized/fbtl_posix_preadv.ll
+; openspiel/optimized/TransTableL.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; php/optimized/zend_compile.ll
 ; postgres/optimized/array_typanalyze.ll
+; postgres/optimized/regexp.ll
+; qemu/optimized/block_vvfat.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/ltable.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll

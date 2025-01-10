@@ -1,8 +1,8 @@
 
-%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
-%class.symbol.3613505 = type { ptr }
-%struct.lua_TValue.3660795 = type { %union.Value.3660796, i32 }
-%union.Value.3660796 = type { ptr }
+%"class.clang::NestedNameSpecifierLoc.3182668" = type { ptr, ptr }
+%class.symbol.3613471 = type { ptr }
+%struct.lua_TValue.3660745 = type { %union.Value.3660746, i32 }
+%union.Value.3660746 = type { ptr }
 
 ; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -46,7 +46,7 @@ define ptr @func00000000000000ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 20
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182668", ptr %0, i64 %1
   %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7
@@ -117,7 +117,7 @@ define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.symbol.3613471, ptr %0, i64 %1
   %6 = getelementptr ptr, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
@@ -142,8 +142,8 @@ define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 23
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.lua_TValue.3660795, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %struct.lua_TValue.3660795, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %struct.lua_TValue.3660745, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %struct.lua_TValue.3660745, ptr %5, i64 %4
   %7 = getelementptr nusw i8, ptr %6, i64 -16
   ret ptr %7
 }

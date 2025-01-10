@@ -1,5 +1,5 @@
 
-; 252 occurrences:
+; 251 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
@@ -105,7 +105,6 @@
 ; llvm/optimized/StmtProfile.cpp.ll
 ; llvm/optimized/TargetSchedule.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luajit/optimized/lj_ctype.ll

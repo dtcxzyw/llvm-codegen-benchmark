@@ -192,7 +192,7 @@ entry:
   ret i32 %4
 }
 
-; 344 occurrences:
+; 345 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; boost/optimized/src.ll
@@ -448,6 +448,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; postgres/optimized/pg_proc.ll
 ; postgres/optimized/regress.ll
+; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/util_qsp.c.ll
 ; quickjs/optimized/libregexp.ll
 ; recastnavigation/optimized/Tests_Alloc.cpp.ll
@@ -658,11 +659,12 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
 ; lief/optimized/ecp_curves.c.ll
 ; lief/optimized/psa_crypto_rsa.c.ll
 ; linux/optimized/slub.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -1008,9 +1010,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; libevent/optimized/evutil_rand.c.ll
+; linux/optimized/i915_gem_shmem.ll
 ; llvm/optimized/APInt.cpp.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; Function Attrs: nounwind

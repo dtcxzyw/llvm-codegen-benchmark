@@ -1,6 +1,6 @@
 
-%struct.cli_bc_type.3062303 = type { i32, ptr, i32, i32, i32 }
-%struct.bio_vec.3540561 = type { ptr, i32, i32 }
+%struct.cli_bc_type.3062269 = type { i32, ptr, i32, i32, i32 }
+%struct.bio_vec.3540527 = type { ptr, i32, i32 }
 
 ; 20 occurrences:
 ; clamav/optimized/bytecode.c.ll
@@ -29,7 +29,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967231
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nuw %struct.cli_bc_type.3062303, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.cli_bc_type.3062269, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -41,7 +41,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.bio_vec.3540561, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct.bio_vec.3540527, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

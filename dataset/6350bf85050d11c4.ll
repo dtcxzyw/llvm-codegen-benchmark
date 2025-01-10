@@ -78,17 +78,4 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %0, %4
-  %6 = zext nneg i32 %1 to i64
-  %7 = icmp samesign ult i64 %5, %6
-  ret i1 %7
-}
-
 attributes #0 = { nounwind }

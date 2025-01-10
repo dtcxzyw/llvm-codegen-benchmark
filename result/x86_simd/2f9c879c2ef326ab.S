@@ -19,12 +19,12 @@ func000000000000000e:                   # @func000000000000000e
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	65536                           # 0x10000
+	.long	1                               # 0x1
 func000000000000000f:                   # @func000000000000000f
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm1, %xmm0
-	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [65536,65536,65536,65536]
+	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpsllvd	%xmm0, %xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

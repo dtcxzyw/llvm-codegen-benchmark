@@ -116,6 +116,24 @@ func0000000000000101:                   // @func0000000000000101
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000044:                   // @func0000000000000044
+// %bb.0:                               // %entry
+	mov	x8, #-15                        // =0xfffffffffffffff1
+	add	x9, x1, x0
+	movk	x8, #32767, lsl #48
+	add	x9, x9, #17
+	cmp	x9, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	add	x8, x1, #17
+	orr	x8, x8, x0
+	cmp	x8, #0
+	cset	w0, eq
+	ret
+                                        // -- End function
 func00000000000001f4:                   // @func00000000000001f4
 // %bb.0:                               // %entry
 	add	x8, x1, x0
@@ -312,24 +330,6 @@ func0000000000000086:                   // @func0000000000000086
 	add	x8, x8, #16
 	lsr	x0, x8, #63
                                         // kill: def $w0 killed $w0 killed $x0
-	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	add	x8, x1, #17
-	orr	x8, x0, x8
-	cmp	x8, #0
-	cset	w0, eq
-	ret
-                                        // -- End function
-func0000000000000044:                   // @func0000000000000044
-// %bb.0:                               // %entry
-	mov	x8, #-15                        // =0xfffffffffffffff1
-	add	x9, x1, x0
-	movk	x8, #32767, lsl #48
-	add	x9, x9, #17
-	cmp	x9, x8
-	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024

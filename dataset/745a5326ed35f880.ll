@@ -32,7 +32,7 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
@@ -51,6 +51,7 @@ entry:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/block_vpc.c.ll
 ; qemu/optimized/system_physmem.c.ll

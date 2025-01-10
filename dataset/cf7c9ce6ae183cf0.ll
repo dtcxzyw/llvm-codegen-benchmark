@@ -1,5 +1,6 @@
 
-; 5331 occurrences:
+; 5343 occurrences:
+; abc/optimized/cmd.c.ll
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -1072,6 +1073,7 @@
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
+; flac/optimized/stream_encoder.c.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; flatbuffers/optimized/idl_gen_go.cpp.ll
@@ -1235,6 +1237,7 @@
 ; git/optimized/ewah_bitmap.ll
 ; git/optimized/fsck.ll
 ; git/optimized/grep.ll
+; git/optimized/line-log.ll
 ; git/optimized/list-objects-filter-options.ll
 ; git/optimized/list-objects-filter.ll
 ; git/optimized/log.ll
@@ -1522,6 +1525,7 @@
 ; gromacs/optimized/scattering-debye.cpp.ll
 ; gromacs/optimized/selection.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
@@ -2279,6 +2283,7 @@
 ; llvm/optimized/SymbolSize.cpp.ll
 ; llvm/optimized/Taint.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetRegistry.cpp.ll
 ; llvm/optimized/TensorSpec.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
@@ -3071,6 +3076,7 @@
 ; nori/optimized/textbox.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_wcsstr.c.ll
+; nuttx/optimized/mempool_multiple.c.ll
 ; nuttx/optimized/serial.c.ll
 ; ocio/optimized/AllocationTransform.cpp.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
@@ -3484,6 +3490,7 @@
 ; openexr/optimized/ImfMultiPartInputFile.cpp.ll
 ; openexr/optimized/ImfMultiPartOutputFile.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
 ; openexr/optimized/chunk.c.ll
@@ -3983,6 +3990,7 @@
 ; postgres/optimized/typcache.ll
 ; postgres/optimized/vacuumparallel.ll
 ; postgres/optimized/varbit.ll
+; postgres/optimized/varlena.ll
 ; postgres/optimized/visibilitymap.ll
 ; postgres/optimized/walreceiverfuncs.ll
 ; postgres/optimized/walsender.ll
@@ -4097,6 +4105,7 @@
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_blkdebug.c.ll
+; qemu/optimized/block_cloop.c.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_mirror.c.ll
@@ -4116,6 +4125,7 @@
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
+; qemu/optimized/linux-user_main.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/system_dirtylimit.c.ll
 ; qemu/optimized/system_memory.c.ll
@@ -4453,6 +4463,8 @@
 ; slurm/optimized/common_jag.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/gres_ctld.ll
+; slurm/optimized/gres_filter.ll
+; slurm/optimized/gres_sched.ll
 ; slurm/optimized/gres_select_filter.ll
 ; slurm/optimized/gres_select_util.ll
 ; slurm/optimized/gres_sock_list.ll

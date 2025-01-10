@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 85 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -76,7 +76,6 @@
 ; postgres/optimized/typcache.ll
 ; postgres/optimized/vacuumlazy.ll
 ; postgres/optimized/xlog.ll
-; qemu/optimized/chardev_char-socket.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; redis/optimized/networking.ll

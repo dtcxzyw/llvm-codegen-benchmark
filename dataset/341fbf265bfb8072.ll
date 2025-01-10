@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3660943 = type { %union.Value.3660945, i32 }
-%union.Value.3660945 = type { ptr }
+%struct.lua_TValue.3660893 = type { %union.Value.3660895, i32 }
+%union.Value.3660895 = type { ptr }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5B.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.lua_TValue.3660943, ptr %0, i64 %5
+  %6 = getelementptr %struct.lua_TValue.3660893, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

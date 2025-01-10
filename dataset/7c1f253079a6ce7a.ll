@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -72,7 +72,6 @@
 ; wireshark/optimized/packet-dis.c.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; wireshark/optimized/packet-m2tp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind

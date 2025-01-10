@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 177 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -276,7 +276,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

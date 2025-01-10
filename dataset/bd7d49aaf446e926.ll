@@ -1,5 +1,5 @@
 
-; 6909 occurrences:
+; 6910 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -4967,6 +4967,7 @@
 ; openjdk/optimized/SctpChannelImpl.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/tstrings.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_io_coll.ll
@@ -7467,7 +7468,7 @@ entry:
   ret i64 %3
 }
 
-; 1270 occurrences:
+; 1272 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb3Image.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -8226,6 +8227,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -8574,6 +8576,7 @@ entry:
 ; rocksdb/optimized/write_prepared_txn.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; ruby/optimized/array.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/sprintf.ll
@@ -8741,8 +8744,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = add i64 %0, %2
+  %2 = ashr exact i64 %1, 32
+  %3 = add i64 %2, %0
   ret i64 %3
 }
 

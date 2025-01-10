@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 209 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -71,6 +71,8 @@
 ; hyperscan/optimized/shufti.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/decNumber.ll
+; icu/optimized/ucnv_u8.ll
+; icu/optimized/ucnvmbcs.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
@@ -215,7 +217,7 @@ entry:
   ret i1 %3
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
@@ -265,7 +267,6 @@ entry:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/ui_cursor.c.ll
-; ruby/optimized/regexec.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll

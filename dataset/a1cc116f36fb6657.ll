@@ -1,9 +1,9 @@
 
-%struct._Bucket.2793443 = type { %struct._zval_struct.2793413, i64, ptr }
-%struct._zval_struct.2793413 = type { %union._zend_value.2793423, %union.anon.2793424, %union.anon.2.2793425 }
-%union._zend_value.2793423 = type { i64 }
-%union.anon.2793424 = type { i32 }
-%union.anon.2.2793425 = type { i32 }
+%struct._Bucket.2793409 = type { %struct._zval_struct.2793379, i64, ptr }
+%struct._zval_struct.2793379 = type { %union._zend_value.2793389, %union.anon.2793390, %union.anon.2.2793391 }
+%union._zend_value.2793389 = type { i64 }
+%union.anon.2793390 = type { i32 }
+%union.anon.2.2793391 = type { i32 }
 
 ; 30 occurrences:
 ; abc/optimized/wlcSim.c.ll
@@ -205,7 +205,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._Bucket.2793443, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._Bucket.2793409, ptr %0, i64 %5
   ret ptr %6
 }
 

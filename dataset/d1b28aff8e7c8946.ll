@@ -1,6 +1,7 @@
 
-%"class.clang::Token.3326696" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
-%struct.ext4_extent_idx.3555769 = type { i32, i32, i16, i16 }
+%"class.clang::Token.3326662" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
+%struct.ext4_extent_idx.3555735 = type { i32, i32, i16, i16 }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 12 occurrences:
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
@@ -218,7 +219,7 @@ entry:
 define i1 @func0000000000000561(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.clang::Token.3326696", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.clang::Token.3326662", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 24
   %6 = icmp eq ptr %0, %5
   ret i1 %6
@@ -268,9 +269,21 @@ entry:
 define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 12
-  %4 = getelementptr %struct.ext4_extent_idx.3555769, ptr %3, i64 %1
+  %4 = getelementptr %struct.ext4_extent_idx.3555735, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -12
   %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000609(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 7
+  %4 = getelementptr %"class.ZXing::Trit.3649621", ptr %3, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 -7
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 

@@ -49,12 +49,6 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000002:                   # @func0000000000000002
 	leaq	23(,%rdi,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	leaq	23(,%rdi,8), %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	leaq	23(,%rdi,8), %rax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	leaq	20988(,%rdi,4), %rax
 	retq

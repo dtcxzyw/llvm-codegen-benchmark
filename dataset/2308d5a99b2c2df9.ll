@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -18,6 +18,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5system.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/access.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_modes.ll

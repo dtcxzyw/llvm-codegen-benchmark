@@ -1,17 +1,11 @@
-func000000000000000c:                   # @func000000000000000c
+func0000000000000001:                   # @func0000000000000001
 	andl	$32, %edx
 	orq	%rsi, %rdx
 	testq	%rdi, %rdx
-	setne	%al
+	sete	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
 	andq	$-49, %rdx
-	orq	%rsi, %rdx
-	testq	%rdx, %rdi
-	sete	%al
-	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$7, %edx
 	orq	%rsi, %rdx
 	testq	%rdx, %rdi
 	sete	%al

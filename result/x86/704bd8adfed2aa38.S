@@ -10,15 +10,15 @@ func0000000000000001:                   # @func0000000000000001
 	cmovel	%ecx, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	xorl	%ecx, %ecx
 	xorl	%eax, %eax
-	cmpl	$2, %esi
+	testl	%esi, %esi
 	sete	%al
-	movl	$578, %edx                      # imm = 0x242
-	cmovnel	%ecx, %edx
-	addl	%eax, %eax
-	testb	$1, %dil
+	leal	15(%rax,%rax,2), %ecx
+	movl	$12, %edx
+	movl	$18, %eax
 	cmovel	%edx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax

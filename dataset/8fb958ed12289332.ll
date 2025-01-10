@@ -12,12 +12,11 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/path.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll

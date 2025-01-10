@@ -1,39 +1,39 @@
 
-%"struct.re2::PrefilterTree::Entry.2602102" = type { i32, %"class.std::vector.0.2602103", %"class.std::vector.0.2602103" }
-%"class.std::vector.0.2602103" = type { %"struct.std::_Vector_base.1.2602104" }
-%"struct.std::_Vector_base.1.2602104" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602105" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602106" = type { ptr, ptr, ptr }
-%"struct.rocksdb::BufferInfo.2613152" = type { %"class.rocksdb::AlignedBuffer.2613153", i64, i64, i8, ptr, %"class.std::function.182.2613116", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2613153" = type { i64, %"class.std::unique_ptr.186.2613120", i64, i64, ptr }
-%"class.std::unique_ptr.186.2613120" = type { %"struct.std::__uniq_ptr_data.187.2613121" }
-%"struct.std::__uniq_ptr_data.187.2613121" = type { %"class.std::__uniq_ptr_impl.188.2613122" }
-%"class.std::__uniq_ptr_impl.188.2613122" = type { %"class.std::tuple.189.2613123" }
-%"class.std::tuple.189.2613123" = type { %"struct.std::_Tuple_impl.190.2613124" }
-%"struct.std::_Tuple_impl.190.2613124" = type { %"struct.std::_Head_base.135.2613084" }
-%"struct.std::_Head_base.135.2613084" = type { ptr }
-%"class.std::function.182.2613116" = type { %"class.std::_Function_base.2613117", ptr }
-%"class.std::_Function_base.2613117" = type { %"union.std::_Any_data.2613118", ptr }
-%"union.std::_Any_data.2613118" = type { %"union.std::_Nocopy_types.2613119" }
-%"union.std::_Nocopy_types.2613119" = type { { i64, i64 } }
-%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
-%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
-%struct.QuorumChildRequest.2705819 = type { ptr, %struct.QEMUIOVector.2705820, ptr, i32, ptr }
-%struct.QEMUIOVector.2705820 = type { ptr, i32, %union.anon.16.2705821 }
-%union.anon.16.2705821 = type { %struct.anon.17.2705822 }
-%struct.anon.17.2705822 = type { i32, %struct.iovec.2705823 }
-%struct.iovec.2705823 = type { ptr, i64 }
-%struct.FlatRange.2708358 = type { ptr, i64, %struct.AddrRange.2708359, i8, i8, i8, i8, i8 }
-%struct.AddrRange.2708359 = type { i128, i128 }
-%"struct.llvm::RegUnitSet.3327857" = type { %"class.std::__cxx11::basic_string.3327673", %"class.std::vector.142.3327858", i32, i32 }
-%"class.std::__cxx11::basic_string.3327673" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3327674", i64, %union.anon.3327675 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3327674" = type { ptr }
-%union.anon.3327675 = type { i64, [8 x i8] }
-%"class.std::vector.142.3327858" = type { %"struct.std::_Vector_base.143.3327859" }
-%"struct.std::_Vector_base.143.3327859" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3327860" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3327860" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3327861" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3327861" = type { ptr, ptr, ptr }
+%"struct.re2::PrefilterTree::Entry.2602069" = type { i32, %"class.std::vector.0.2602070", %"class.std::vector.0.2602070" }
+%"class.std::vector.0.2602070" = type { %"struct.std::_Vector_base.1.2602071" }
+%"struct.std::_Vector_base.1.2602071" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2602072" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2602073" = type { ptr, ptr, ptr }
+%"struct.rocksdb::BufferInfo.2613119" = type { %"class.rocksdb::AlignedBuffer.2613120", i64, i64, i8, ptr, %"class.std::function.182.2613083", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2613120" = type { i64, %"class.std::unique_ptr.186.2613087", i64, i64, ptr }
+%"class.std::unique_ptr.186.2613087" = type { %"struct.std::__uniq_ptr_data.187.2613088" }
+%"struct.std::__uniq_ptr_data.187.2613088" = type { %"class.std::__uniq_ptr_impl.188.2613089" }
+%"class.std::__uniq_ptr_impl.188.2613089" = type { %"class.std::tuple.189.2613090" }
+%"class.std::tuple.189.2613090" = type { %"struct.std::_Tuple_impl.190.2613091" }
+%"struct.std::_Tuple_impl.190.2613091" = type { %"struct.std::_Head_base.135.2613051" }
+%"struct.std::_Head_base.135.2613051" = type { ptr }
+%"class.std::function.182.2613083" = type { %"class.std::_Function_base.2613084", ptr }
+%"class.std::_Function_base.2613084" = type { %"union.std::_Any_data.2613085", ptr }
+%"union.std::_Any_data.2613085" = type { %"union.std::_Nocopy_types.2613086" }
+%"union.std::_Nocopy_types.2613086" = type { { i64, i64 } }
+%"struct.rocksdb::FdWithKeyRange.2615345" = type { %"struct.rocksdb::FileDescriptor.2615346", ptr, %"class.rocksdb::Slice.2615314", %"class.rocksdb::Slice.2615314" }
+%"struct.rocksdb::FileDescriptor.2615346" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615314" = type { ptr, i64 }
+%struct.QuorumChildRequest.2705785 = type { ptr, %struct.QEMUIOVector.2705786, ptr, i32, ptr }
+%struct.QEMUIOVector.2705786 = type { ptr, i32, %union.anon.16.2705787 }
+%union.anon.16.2705787 = type { %struct.anon.17.2705788 }
+%struct.anon.17.2705788 = type { i32, %struct.iovec.2705789 }
+%struct.iovec.2705789 = type { ptr, i64 }
+%struct.FlatRange.2708324 = type { ptr, i64, %struct.AddrRange.2708325, i8, i8, i8, i8, i8 }
+%struct.AddrRange.2708325 = type { i128, i128 }
+%"struct.llvm::RegUnitSet.3327823" = type { %"class.std::__cxx11::basic_string.3327639", %"class.std::vector.142.3327824", i32, i32 }
+%"class.std::__cxx11::basic_string.3327639" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3327640", i64, %union.anon.3327641 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3327640" = type { ptr }
+%union.anon.3327641 = type { i64, [8 x i8] }
+%"class.std::vector.142.3327824" = type { %"struct.std::_Vector_base.143.3327825" }
+%"struct.std::_Vector_base.143.3327825" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3327826" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.3327826" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3327827" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.3327827" = type { ptr, ptr, ptr }
 
 ; 559 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -598,7 +598,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.re2::PrefilterTree::Entry.2602102", ptr %0, i64 %1, i32 1, i32 0, i32 0, i32 0, i32 1
+  %2 = getelementptr %"struct.re2::PrefilterTree::Entry.2602069", ptr %0, i64 %1, i32 1, i32 0, i32 0, i32 0, i32 1
   ret ptr %2
 }
 
@@ -1067,7 +1067,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nuw %"struct.rocksdb::BufferInfo.2613152", ptr %0, i64 %1, i32 5, i32 0, i32 1
+  %2 = getelementptr nuw %"struct.rocksdb::BufferInfo.2613119", ptr %0, i64 %1, i32 5, i32 0, i32 1
   ret ptr %2
 }
 
@@ -1081,7 +1081,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.rocksdb::FdWithKeyRange.2615378", ptr %0, i64 %1, i32 2, i32 1
+  %2 = getelementptr %"struct.rocksdb::FdWithKeyRange.2615345", ptr %0, i64 %1, i32 2, i32 1
   ret ptr %2
 }
 
@@ -1126,7 +1126,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.QuorumChildRequest.2705819, ptr %0, i64 %1, i32 1, i32 1
+  %2 = getelementptr %struct.QuorumChildRequest.2705785, ptr %0, i64 %1, i32 1, i32 1
   ret ptr %2
 }
 
@@ -1136,7 +1136,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.FlatRange.2708358, ptr %0, i64 %1, i32 2, i32 1
+  %2 = getelementptr %struct.FlatRange.2708324, ptr %0, i64 %1, i32 2, i32 1
   ret ptr %2
 }
 
@@ -1148,7 +1148,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.llvm::RegUnitSet.3327857", ptr %0, i64 %1, i32 1, i32 0, i32 0, i32 0, i32 1
+  %2 = getelementptr %"struct.llvm::RegUnitSet.3327823", ptr %0, i64 %1, i32 1, i32 0, i32 0, i32 0, i32 1
   ret ptr %2
 }
 

@@ -1,13 +1,11 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; coreutils-rs/optimized/4kegmj2upwa8iiok.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; hermes/optimized/APInt.cpp.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
-; llvm/optimized/APInt.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meshlab/optimized/miniz.c.ll

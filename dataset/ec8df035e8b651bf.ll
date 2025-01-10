@@ -1,8 +1,8 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; darktable/optimized/tiff.c.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
@@ -21,6 +21,7 @@
 ; jq/optimized/euc_kr.ll
 ; jq/optimized/euc_tw.ll
 ; jq/optimized/sjis.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; nuttx/optimized/mm_free.c.ll
 ; oniguruma/optimized/big5.ll
 ; oniguruma/optimized/euc_jp.ll
@@ -47,7 +48,7 @@ entry:
   ret ptr %5
 }
 
-; 173 occurrences:
+; 170 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -192,9 +193,6 @@ entry:
 ; protobuf/optimized/string_field_lite.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/untyped_message.cc.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/libvduse.c.ll
-; qemu/optimized/libvhost-user.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -225,8 +223,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -514,20 +512,17 @@ entry:
   ret ptr %5
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; ockam-rs/optimized/274k60s1efyiyv8u.ll
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; openssl/optimized/libcommon-lib-tls_pad.ll
-; openssl/optimized/libcrypto-lib-sha1dgst.ll
-; openssl/optimized/libcrypto-shlib-sha1dgst.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
 ; php/optimized/zend_inference.ll
 ; ropey-rs/optimized/q87dnuin1j2jq4x.ll

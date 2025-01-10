@@ -1,5 +1,5 @@
 
-; 5904 occurrences:
+; 5900 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1067,7 +1067,6 @@
 ; darktable/optimized/latex.c.ll
 ; darktable/optimized/metadata_view.c.ll
 ; darktable/optimized/modulegroups.c.ll
-; darktable/optimized/recentcollect.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; darktable/optimized/tagging.c.ll
 ; darktable/optimized/tiff.c.ll
@@ -1690,7 +1689,6 @@
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/collationweights.ll
 ; icu/optimized/csdetect.ll
@@ -1799,7 +1797,6 @@
 ; icu/optimized/tmutfmt.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/transreg.ll
-; icu/optimized/tridpars.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/tzgnames.ll
 ; icu/optimized/tznames_impl.ll
@@ -1852,7 +1849,6 @@
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/unistr_cnv.ll
 ; icu/optimized/units_converter.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/unormcmp.ll
 ; icu/optimized/uprintf.ll
 ; icu/optimized/uprops.ll
@@ -5911,7 +5907,7 @@ entry:
   ret i32 %2
 }
 
-; 7543 occurrences:
+; 7544 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -13455,6 +13451,7 @@ entry:
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -14400,7 +14397,7 @@ entry:
   ret i32 %2
 }
 
-; 482 occurrences:
+; 485 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/amapPerm.c.ll
@@ -14595,11 +14592,14 @@ entry:
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luau/optimized/CodeGenX64.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_image.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/inventory.cpp.ll

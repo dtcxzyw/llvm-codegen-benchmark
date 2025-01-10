@@ -15,7 +15,7 @@ entry:
   ret i8 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -29,7 +29,6 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/ctr.c.ll
 ; libquic/optimized/pkcs8.c.ll
-; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/pkcs12.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mixbox/optimized/mixbox.ll

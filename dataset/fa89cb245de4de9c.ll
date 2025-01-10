@@ -21,9 +21,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
-; cpython/optimized/unicodeobject.ll
 ; libquic/optimized/bssl_shim.cc.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll

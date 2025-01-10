@@ -1,11 +1,13 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/dchChoice.c.ll
 ; abc/optimized/fraCore.c.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

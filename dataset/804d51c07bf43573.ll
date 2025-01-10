@@ -1,7 +1,7 @@
 
-%struct.btSymmetricSpatialDyad.2818507 = type { %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504 }
-%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
-%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSymmetricSpatialDyad.2818473 = type { %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470 }
+%class.btMatrix3x3.2818470 = type { [3 x %class.btVector3.2818465] }
+%class.btVector3.2818465 = type { [4 x float] }
 
 ; 9 occurrences:
 ; cpython/optimized/bytesobject.ll
@@ -1278,7 +1278,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 192
-  %3 = getelementptr %struct.btSymmetricSpatialDyad.2818507, ptr %2, i64 %1
+  %3 = getelementptr %struct.btSymmetricSpatialDyad.2818473, ptr %2, i64 %1
   ret ptr %3
 }
 

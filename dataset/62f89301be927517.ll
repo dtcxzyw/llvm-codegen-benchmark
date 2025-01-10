@@ -1,5 +1,5 @@
 
-%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677" = type { i32, i32, i32, i32 }
+%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768643" = type { i32, i32, i32, i32 }
 
 ; 21 occurrences:
 ; boost/optimized/to_chars.ll
@@ -59,7 +59,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw nuw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768643", ptr %0, i64 %4
   ret ptr %5
 }
 

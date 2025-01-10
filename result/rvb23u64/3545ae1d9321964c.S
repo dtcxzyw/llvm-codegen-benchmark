@@ -1,4 +1,4 @@
-func0000000000000107:                   # @func0000000000000107
+func0000000000000106:                   # @func0000000000000106
 	addi	a2, a2, 1
 	xor	a1, a1, a2
 	czero.eqz	a1, a2, a1
@@ -16,13 +16,6 @@ func000000000000002a:                   # @func000000000000002a
 	slt	a1, a1, a2
 	czero.nez	a1, a2, a1
 	sh3add	a0, a1, a0
-	ret
-func0000000000000106:                   # @func0000000000000106
-	addi	a2, a2, 1
-	xor	a1, a1, a2
-	czero.eqz	a1, a2, a1
-	sh1add	a1, a1, a1
-	sh2add	a0, a1, a0
 	ret
 func0000000000000187:                   # @func0000000000000187
 	addi	a2, a2, 1

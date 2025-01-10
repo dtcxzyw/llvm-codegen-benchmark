@@ -43,7 +43,9 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/wlcReadVer.c.ll
 ; duckdb/optimized/boolean_operators.cpp.ll
 ; llvm/optimized/InstCombineMulDivRem.cpp.ll
 ; llvm/optimized/RecordVisitor.cpp.ll
@@ -57,7 +59,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ne i8 %2, 0
+  %3 = icmp ne i8 %2, 92
   %4 = select i1 %0, i1 %3, i1 %1
   ret i1 %4
 }

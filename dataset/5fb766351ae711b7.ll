@@ -1,6 +1,6 @@
 
-%struct.Gla_Obj_t_.2876719 = type { i32, i32, [4 x i32], %struct.Vec_Int_t_.2876720 }
-%struct.Vec_Int_t_.2876720 = type { i32, i32, ptr }
+%struct.Gla_Obj_t_.2876685 = type { i32, i32, [4 x i32], %struct.Vec_Int_t_.2876686 }
+%struct.Vec_Int_t_.2876686 = type { i32, i32, ptr }
 
 ; 13 occurrences:
 ; abc/optimized/absGlaOld.c.ll
@@ -21,7 +21,7 @@ define ptr @func000000000000005f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr %struct.Gla_Obj_t_.2876719, ptr %1, i64 %3, i32 2, i64 %4
+  %5 = getelementptr %struct.Gla_Obj_t_.2876685, ptr %1, i64 %3, i32 2, i64 %4
   ret ptr %5
 }
 

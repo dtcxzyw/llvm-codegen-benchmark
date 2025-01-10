@@ -1,12 +1,12 @@
 
-%struct.page.3540562 = type { i64, %union.anon.14.3540563, %union.anon.22.3540564, %struct.atomic_t.3540544, [8 x i8] }
-%union.anon.14.3540563 = type { %struct.anon.15.3540565 }
-%struct.anon.15.3540565 = type { %union.anon.16.3540566, ptr, %union.anon.18.3540567, i64 }
-%union.anon.16.3540566 = type { %struct.list_head.3540539 }
-%struct.list_head.3540539 = type { ptr, ptr }
-%union.anon.18.3540567 = type { i64 }
-%union.anon.22.3540564 = type { %struct.atomic_t.3540544 }
-%struct.atomic_t.3540544 = type { i32 }
+%struct.page.3540528 = type { i64, %union.anon.14.3540529, %union.anon.22.3540530, %struct.atomic_t.3540510, [8 x i8] }
+%union.anon.14.3540529 = type { %struct.anon.15.3540531 }
+%struct.anon.15.3540531 = type { %union.anon.16.3540532, ptr, %union.anon.18.3540533, i64 }
+%union.anon.16.3540532 = type { %struct.list_head.3540505 }
+%struct.list_head.3540505 = type { ptr, ptr }
+%union.anon.18.3540533 = type { i64 }
+%union.anon.22.3540530 = type { %struct.atomic_t.3540510 }
+%struct.atomic_t.3540510 = type { i32 }
 
 ; 3 occurrences:
 ; jq/optimized/jv.ll
@@ -33,7 +33,7 @@ define i64 @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 12
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.page.3540562, ptr %1, i64 %4
+  %5 = getelementptr %struct.page.3540528, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

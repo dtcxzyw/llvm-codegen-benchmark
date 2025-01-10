@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/DeclSpec.cpp.ll
@@ -7,6 +7,8 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; lvgl/optimized/lv_draw_buf.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 39 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -9,7 +9,6 @@
 ; lief/optimized/aes.c.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/sky2.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/jvmtiTagMap.ll
 ; openspiel/optimized/chess.cc.ll
@@ -22,7 +21,6 @@
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/sunpkd810.ll
 ; spike/optimized/sunpkd820.ll
 ; spike/optimized/sunpkd830.ll

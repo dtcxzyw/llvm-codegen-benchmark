@@ -175,7 +175,6 @@
 ; clamav/optimized/regcomp.c.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/strfn.cpp.ll
-; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/cmCTestHandlerCommand.cxx.ll
@@ -1561,6 +1560,7 @@
 ; openssl/optimized/libcrypto-shlib-ess_lib.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-x509_v3.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-decode_der2key.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll

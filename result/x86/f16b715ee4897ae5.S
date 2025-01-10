@@ -12,13 +12,6 @@ func0000000000000302:                   # @func0000000000000302
 	setne	%al
 	orb	%cl, %al
 	retq
-func00000000000001c2:                   # @func00000000000001c2
-	testb	$-4, %dl
-	sete	%cl
-	cmpl	%esi, %edi
-	setle	%al
-	orb	%cl, %al
-	retq
 func0000000000000298:                   # @func0000000000000298
 	testl	$511, %edx                      # imm = 0x1FF
 	setne	%cl
@@ -80,6 +73,13 @@ func0000000000000054:                   # @func0000000000000054
 	sete	%cl
 	cmpl	%esi, %edi
 	setg	%al
+	orb	%cl, %al
+	retq
+func00000000000001c2:                   # @func00000000000001c2
+	testb	$1, %dl
+	sete	%cl
+	cmpl	%esi, %edi
+	setle	%al
 	orb	%cl, %al
 	retq
 func000000000000004a:                   # @func000000000000004a

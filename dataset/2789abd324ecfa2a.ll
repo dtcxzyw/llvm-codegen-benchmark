@@ -1,23 +1,4 @@
 
-; 10 occurrences:
-; abc/optimized/dauNonDsd.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; ceres/optimized/polynomial.cc.ll
-; linux/optimized/intel_dp_aux.ll
-; nuklear/optimized/unity.c.ll
-; openblas/optimized/cblas_dgemmt.c.ll
-; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/dsbgst.c.ll
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i64 %0 to i32
-  %3 = sub i32 %1, %2
-  ret i32 %3
-}
-
 ; 206 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
@@ -233,26 +214,23 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; abc/optimized/luckyFast16.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/pdf.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; linux/optimized/intel_dp_aux.ll
-; linux/optimized/vc_screen.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
@@ -297,10 +275,18 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; assimp/optimized/unzip.c.ll
+; 9 occurrences:
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/ifDec08.c.ll
+; abc/optimized/ifDec10.c.ll
+; ceres/optimized/polynomial.cc.ll
+; linux/optimized/intel_dp_aux.ll
+; nuklear/optimized/unity.c.ll
+; openblas/optimized/cblas_dgemmt.c.ll
+; openblas/optimized/dgemmt.c.ll
+; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %1, %2

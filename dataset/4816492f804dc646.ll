@@ -1,5 +1,5 @@
 
-%"struct.std::pair.278.3078512" = type { double, ptr }
+%"struct.std::pair.278.3078478" = type { double, ptr }
 
 ; 2 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -24,7 +24,7 @@ entry:
   %2 = add nsw i64 %1, 8589934591
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nuw %"struct.std::pair.278.3078512", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.std::pair.278.3078478", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -22,7 +22,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/pystrtod.ll
 ; lua/optimized/ltm.ll
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind

@@ -1,23 +1,23 @@
 
-%"class.rocksdb::Slice.2625460" = type { ptr, i64 }
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
-%union.anon.2802904 = type { i64, [8 x i8] }
-%"class.QuantLib::Array.2844508" = type { %"class.std::unique_ptr.2844509", i64 }
-%"class.std::unique_ptr.2844509" = type { %"struct.std::__uniq_ptr_data.2844510" }
-%"struct.std::__uniq_ptr_data.2844510" = type { %"class.std::__uniq_ptr_impl.2844511" }
-%"class.std::__uniq_ptr_impl.2844511" = type { %"class.std::tuple.2844512" }
-%"class.std::tuple.2844512" = type { %"struct.std::_Tuple_impl.2844513" }
-%"struct.std::_Tuple_impl.2844513" = type { %"struct.std::_Head_base.21.2844514" }
-%"struct.std::_Head_base.21.2844514" = type { ptr }
+%"class.rocksdb::Slice.2625427" = type { ptr, i64 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"class.std::__cxx11::basic_string.2802868" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869", i64, %union.anon.2802870 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869" = type { ptr }
+%union.anon.2802870 = type { i64, [8 x i8] }
+%"class.QuantLib::Array.2844474" = type { %"class.std::unique_ptr.2844475", i64 }
+%"class.std::unique_ptr.2844475" = type { %"struct.std::__uniq_ptr_data.2844476" }
+%"struct.std::__uniq_ptr_data.2844476" = type { %"class.std::__uniq_ptr_impl.2844477" }
+%"class.std::__uniq_ptr_impl.2844477" = type { %"class.std::tuple.2844478" }
+%"class.std::tuple.2844478" = type { %"struct.std::_Tuple_impl.2844479" }
+%"struct.std::_Tuple_impl.2844479" = type { %"struct.std::_Head_base.21.2844480" }
+%"struct.std::_Head_base.21.2844480" = type { ptr }
 
 ; 12 occurrences:
 ; casadi/optimized/sundials_band.c.ll
@@ -41,40 +41,7 @@ entry:
   ret ptr %5
 }
 
-; 12 occurrences:
-; cmake/optimized/cmExprParser.cxx.ll
-; glslang/optimized/glslang_tab.cpp.ll
-; graphviz/optimized/exparse.c.ll
-; gromacs/optimized/parser.cpp.ll
-; openusd/optimized/restoration.c.ll
-; php/optimized/string.ll
-; php/optimized/url_scanner_ex.ll
-; ruby/optimized/ripper.ll
-; ruby/optimized/utf8_mac.ll
-; verilator/optimized/V3ParseGrammar.cpp.ll
-; yosys/optimized/rtlil_parser.tab.ll
-; yosys/optimized/verilog_parser.tab.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 2
-  %4 = sub nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %1, -1
-  %4 = getelementptr i8, ptr %0, i64 %2
-  %5 = getelementptr i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 52 occurrences:
+; 53 occurrences:
 ; clamav/optimized/upack.c.ll
 ; cpython/optimized/itertoolsmodule.ll
 ; csmith/optimized/FactMgr.cpp.ll
@@ -124,6 +91,7 @@ entry:
 ; qemu/optimized/util_mmap-alloc.c.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/regexec.ll
+; ruby/optimized/transcode.ll
 ; spike/optimized/sim.ll
 ; xgboost/optimized/adapter.cc.ll
 ; xgboost/optimized/data.cc.ll
@@ -133,6 +101,39 @@ entry:
   %3 = add i64 %2, 1
   %4 = sub i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 12 occurrences:
+; cmake/optimized/cmExprParser.cxx.ll
+; glslang/optimized/glslang_tab.cpp.ll
+; graphviz/optimized/exparse.c.ll
+; gromacs/optimized/parser.cpp.ll
+; openusd/optimized/restoration.c.ll
+; php/optimized/string.ll
+; php/optimized/url_scanner_ex.ll
+; ruby/optimized/ripper.ll
+; ruby/optimized/utf8_mac.ll
+; verilator/optimized/V3ParseGrammar.cpp.ll
+; yosys/optimized/rtlil_parser.tab.ll
+; yosys/optimized/verilog_parser.tab.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 2
+  %4 = sub nsw i64 %3, %1
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %1, -1
+  %4 = getelementptr i8, ptr %0, i64 %2
+  %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -317,7 +318,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr nusw %"class.rocksdb::Slice.2625460", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.rocksdb::Slice.2625427", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -334,7 +335,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = sub nuw i64 %3, %1
-  %5 = getelementptr nusw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -489,7 +490,7 @@ define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nuw i64 %3, %1
-  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802868", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -580,14 +581,13 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %4 = getelementptr %"class.QuantLib::Array.2844508", ptr %0, i64 %2
-  %5 = getelementptr %"class.QuantLib::Array.2844508", ptr %4, i64 %3
+  %4 = getelementptr %"class.QuantLib::Array.2844474", ptr %0, i64 %2
+  %5 = getelementptr %"class.QuantLib::Array.2844474", ptr %4, i64 %3
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; boost/optimized/approximately_equals.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; quantlib/optimized/lmfixedvolmodel.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {

@@ -280,7 +280,7 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
@@ -290,7 +290,6 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; openblas/optimized/dlansf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; spike/optimized/kdmbb.ll
@@ -438,7 +437,7 @@ entry:
   ret i32 %3
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; ceres/optimized/dense_sparse_matrix.cc.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
@@ -483,6 +482,7 @@ entry:
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/fast_norm.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
@@ -512,9 +512,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

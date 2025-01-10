@@ -1,6 +1,6 @@
 
-%class.relocInfo.2733766 = type { i16 }
-%"class.llvm::Use.3154084" = type { ptr, ptr, ptr, ptr }
+%class.relocInfo.2733732 = type { i16 }
+%"class.llvm::Use.3154050" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
@@ -8,7 +8,7 @@
 define i64 @func0000000000000079(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 30
-  %4 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 1
@@ -44,7 +44,7 @@ entry:
 define i64 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3154084", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3154050", ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 5

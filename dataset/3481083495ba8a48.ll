@@ -1,10 +1,10 @@
 
-%struct.edid.3531786 = type { [8 x i8], [2 x i8], [2 x i8], i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, %struct.est_timings.3531787, [8 x %struct.std_timing.3531788], [4 x %struct.detailed_timing.3531789], i8, i8 }
-%struct.est_timings.3531787 = type { i8, i8, i8 }
-%struct.std_timing.3531788 = type { i8, i8 }
-%struct.detailed_timing.3531789 = type { i16, %union.anon.3531790 }
-%union.anon.3531790 = type { %struct.detailed_pixel_timing.3531791 }
-%struct.detailed_pixel_timing.3531791 = type { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 }
+%struct.edid.3531752 = type { [8 x i8], [2 x i8], [2 x i8], i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, %struct.est_timings.3531753, [8 x %struct.std_timing.3531754], [4 x %struct.detailed_timing.3531755], i8, i8 }
+%struct.est_timings.3531753 = type { i8, i8, i8 }
+%struct.std_timing.3531754 = type { i8, i8 }
+%struct.detailed_timing.3531755 = type { i16, %union.anon.3531756 }
+%union.anon.3531756 = type { %struct.detailed_pixel_timing.3531757 }
+%struct.detailed_pixel_timing.3531757 = type { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 }
 
 ; 3 occurrences:
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
@@ -221,7 +221,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.edid.3531786, ptr %1, i64 %3, i32 0, i64 5
+  %4 = getelementptr %struct.edid.3531752, ptr %1, i64 %3, i32 0, i64 5
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6

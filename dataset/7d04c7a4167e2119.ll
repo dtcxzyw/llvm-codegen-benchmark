@@ -34,7 +34,7 @@ entry:
   ret i32 %4
 }
 
-; 421 occurrences:
+; 419 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -129,7 +129,6 @@ entry:
 ; brotli/optimized/huffman.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/mszipd.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/decompress.c.ll
@@ -429,7 +428,6 @@ entry:
 ; wireshark/optimized/str_util.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
-; yosys/optimized/ezsat.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
@@ -1236,7 +1234,7 @@ entry:
   ret i32 %4
 }
 
-; 160 occurrences:
+; 161 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -1396,6 +1394,7 @@ entry:
 ; spike/optimized/dtm.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; yosys/optimized/ezsat.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

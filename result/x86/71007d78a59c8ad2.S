@@ -20,6 +20,13 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	$1, %edi
 	sete	%al
 	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	subl	%esi, %edi
+	cmovbl	%eax, %edi
+	cmpl	$2, %edi
+	setae	%al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	subl	%esi, %edi
@@ -27,24 +34,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %edi
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	subl	%esi, %edi
-	cmovbl	%eax, %edi
-	cmpl	$4, %edi
-	setae	%al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpl	%esi, %edi
 	seta	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
-	xorl	%eax, %eax
-	subl	%esi, %edi
-	cmovael	%edi, %eax
-	shrl	$31, %eax
-	retq
-func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	subl	%esi, %edi
 	cmovael	%edi, %eax

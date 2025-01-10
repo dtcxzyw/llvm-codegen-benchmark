@@ -335,7 +335,7 @@ func0000000000000148:                   # @func0000000000000148
 func0000000000000194:                   # @func0000000000000194
 	cmpl	%edx, %esi
 	setne	%cl
-	cmpl	$48, %edi
+	cmpl	$52, %edi
 	setb	%al
 	orb	%cl, %al
 	retq

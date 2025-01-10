@@ -13,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -22,6 +22,7 @@ entry:
 ; gromacs/optimized/enxio.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; icu/optimized/number_longnames.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; lief/optimized/constant_time.c.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/net.ll
@@ -121,6 +122,25 @@ entry:
   ret i32 %5
 }
 
+; 9 occurrences:
+; abc/optimized/cuddSubsetSP.c.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/trace_probe.ll
+; llvm/optimized/AArch64SLSHardening.cpp.ll
+; openjdk/optimized/jdmarker.ll
+; openmpi/optimized/mpiext_affinity_str.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; z3/optimized/intblast_solver.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = icmp eq i32 %1, 238
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; clamav/optimized/getopt.c.ll
@@ -131,23 +151,6 @@ entry:
   %.not = icmp eq i32 %1, 0
   %4 = select i1 %.not, i32 %3, i32 %0
   ret i32 %4
-}
-
-; 7 occurrences:
-; abc/optimized/cuddSubsetSP.c.ll
-; linux/optimized/trace_probe.ll
-; llvm/optimized/AArch64SLSHardening.cpp.ll
-; openmpi/optimized/mpiext_affinity_str.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
-; z3/optimized/intblast_solver.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp eq i32 %1, 0
-  %5 = select i1 %4, i32 %0, i32 %3
-  ret i32 %5
 }
 
 ; 4 occurrences:

@@ -83,8 +83,7 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
-; casadi/optimized/integrator.cpp.ll
+; 15 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
@@ -119,24 +118,6 @@ entry:
   %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw nsw i64 %1, 2
   %6 = add nuw i64 %4, %5
-  ret i64 %6
-}
-
-; 7 occurrences:
-; abc/optimized/cuddTable.c.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000d5(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 760
-  %4 = add nsw i64 %3, %0
-  %5 = shl nsw i64 %1, 3
-  %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 
@@ -223,7 +204,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hyperscan/optimized/castlecompile.cpp.ll
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
@@ -232,6 +214,23 @@ entry:
   %4 = add i64 %3, %0
   %5 = shl nuw nsw i64 %1, 1
   %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 6 occurrences:
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000d5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 2
+  %4 = add nsw i64 %1, %3
+  %5 = shl nsw i64 %0, 1
+  %6 = add nsw i64 %5, %4
   ret i64 %6
 }
 

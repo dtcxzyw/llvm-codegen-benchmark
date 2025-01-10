@@ -324,7 +324,6 @@
 ; entt/optimized/meta_utility.cpp.ll
 ; entt/optimized/poly.cpp.ll
 ; entt/optimized/scheduler.cpp.ll
-; faiss/optimized/index_factory.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; flatbuffers/optimized/cpp_generator.cc.ll
@@ -2251,6 +2250,7 @@
 ; wasmtime-rs/optimized/4krmo5yuqbsteeuo.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/59ibd2hl72nblwc1.ll

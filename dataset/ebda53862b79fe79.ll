@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -10,6 +10,7 @@
 ; clamav/optimized/str.c.ll
 ; darktable/optimized/camera.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
+; git/optimized/commit-graph.ll
 ; hdf5/optimized/H5Tconv_vlen.c.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ISel.cpp.ll

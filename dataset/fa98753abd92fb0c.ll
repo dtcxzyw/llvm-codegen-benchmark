@@ -1,5 +1,5 @@
 
-%"class.ue2::graph_detail::vertex_descriptor.3847775" = type { ptr, i64 }
+%"class.ue2::graph_detail::vertex_descriptor.3847725" = type { ptr, i64 }
 
 ; 2 occurrences:
 ; postgres/optimized/pl_scanner.ll
@@ -34,7 +34,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000098c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.ue2::graph_detail::vertex_descriptor.3847775", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.ue2::graph_detail::vertex_descriptor.3847725", ptr %1, i64 %2
   %4 = icmp ne ptr %3, %0
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4

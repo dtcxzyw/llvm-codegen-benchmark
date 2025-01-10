@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; cmake/optimized/rhash.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -25,7 +25,6 @@
 ; openjdk/optimized/g1FromCardCache.ll
 ; postgres/optimized/execTuples.ll
 ; protobuf/optimized/arena.cc.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

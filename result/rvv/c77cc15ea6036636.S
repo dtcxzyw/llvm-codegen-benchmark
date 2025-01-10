@@ -281,6 +281,11 @@ func0000000000000026:                   # @func0000000000000026
 	li	a0, 40
 	vmslt.vx	v0, v8, a0
 	ret
+func00000000000000ac:                   # @func00000000000000ac
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v8, v10, v8
+	vmsne.vi	v0, v8, 0
+	ret
 func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8

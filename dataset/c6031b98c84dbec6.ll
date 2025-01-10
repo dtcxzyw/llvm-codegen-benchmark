@@ -1,5 +1,5 @@
 
-; 1170 occurrences:
+; 1171 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -743,6 +743,7 @@
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/grayscale_bitmap.cpp.ll
 ; opencv/optimized/perf_norm.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/system.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/Any3Byte.ll

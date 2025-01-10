@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -28,7 +28,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734512"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734478"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

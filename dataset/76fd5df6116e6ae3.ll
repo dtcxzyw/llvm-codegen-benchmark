@@ -932,8 +932,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; abc/optimized/dauNonDsd.c.ll
+; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind

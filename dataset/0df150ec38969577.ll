@@ -1,6 +1,6 @@
 
-%struct.Mio_Cell2_t_.2876010 = type { ptr, ptr, i32, float, i64, i64, i32, [6 x i32], ptr }
-%struct.Au_Obj_t_.2878087 = type { i64, [2 x i32] }
+%struct.Mio_Cell2_t_.2875976 = type { ptr, ptr, i32, float, i64, i64, i32, [6 x i32], ptr }
+%struct.Au_Obj_t_.2878053 = type { i64, [2 x i32] }
 
 ; 5 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -13,7 +13,7 @@ define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048575
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %struct.Mio_Cell2_t_.2876010, ptr %1, i64 %4, i32 7, i64 %0
+  %5 = getelementptr nuw %struct.Mio_Cell2_t_.2875976, ptr %1, i64 %4, i32 7, i64 %0
   ret ptr %5
 }
 
@@ -25,7 +25,7 @@ define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.Au_Obj_t_.2878087, ptr %1, i64 %4, i32 1, i64 %0
+  %5 = getelementptr %struct.Au_Obj_t_.2878053, ptr %1, i64 %4, i32 1, i64 %0
   ret ptr %5
 }
 

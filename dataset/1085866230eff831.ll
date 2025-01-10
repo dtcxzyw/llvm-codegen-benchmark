@@ -1,5 +1,5 @@
 
-%"struct.std::pair.55.2909098" = type { i32, i32 }
+%"struct.std::pair.55.2909064" = type { i32, i32 }
 
 ; 3 occurrences:
 ; gromacs/optimized/grid.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.std::pair.55.2909098", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.std::pair.55.2909064", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -33,9 +33,3 @@ func00000000000000e1:                   # @func00000000000000e1
 	testb	$4, %dil
 	sete	%al
 	retq
-func00000000000002c1:                   # @func00000000000002c1
-	xorl	%eax, %eax
-	retq
-func00000000000002e1:                   # @func00000000000002e1
-	xorl	%eax, %eax
-	retq

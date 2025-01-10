@@ -1,13 +1,13 @@
 
-%"struct.folly::symbolizer::SymbolizedFrame.2683664" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683665", %"class.std::shared_ptr.2683666" }
-%"struct.folly::symbolizer::LocationInfo.2683665" = type { i8, i8, %"class.folly::symbolizer::Path.2683667", %"class.folly::symbolizer::Path.2683667", i64 }
-%"class.folly::symbolizer::Path.2683667" = type { %"class.folly::Range.2683668", %"class.folly::Range.2683668", %"class.folly::Range.2683668" }
-%"class.folly::Range.2683668" = type { ptr, ptr }
-%"class.std::shared_ptr.2683666" = type { %"class.std::__shared_ptr.2683669" }
-%"class.std::__shared_ptr.2683669" = type { ptr, %"class.std::__shared_count.2683670" }
-%"class.std::__shared_count.2683670" = type { ptr }
+%"struct.folly::symbolizer::SymbolizedFrame.2683631" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683632", %"class.std::shared_ptr.2683633" }
+%"struct.folly::symbolizer::LocationInfo.2683632" = type { i8, i8, %"class.folly::symbolizer::Path.2683634", %"class.folly::symbolizer::Path.2683634", i64 }
+%"class.folly::symbolizer::Path.2683634" = type { %"class.folly::Range.2683635", %"class.folly::Range.2683635", %"class.folly::Range.2683635" }
+%"class.folly::Range.2683635" = type { ptr, ptr }
+%"class.std::shared_ptr.2683633" = type { %"class.std::__shared_ptr.2683636" }
+%"class.std::__shared_ptr.2683636" = type { ptr, %"class.std::__shared_count.2683637" }
+%"class.std::__shared_count.2683637" = type { ptr }
 
-; 424 occurrences:
+; 420 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -70,7 +70,6 @@
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; duckdb/optimized/ub_duckdb_func_generic.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; faiss/optimized/distances_simd.cpp.ll
@@ -176,8 +175,6 @@
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libquic/optimized/cast.c.ll
 ; libquic/optimized/curve25519.c.ll
-; libquic/optimized/digest.cc.ll
-; libquic/optimized/digest_test.cc.ll
 ; libquic/optimized/error_correction.c.ll
 ; libquic/optimized/newhope.c.ll
 ; libquic/optimized/p256-x86_64.c.ll
@@ -211,7 +208,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; node/optimized/libnode.node_http_parser.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/FileFormatVF.cpp.ll
@@ -440,11 +436,15 @@ entry:
   ret ptr %3
 }
 
-; 16 occurrences:
+; 24 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_func_generic.cpp.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
@@ -452,8 +452,12 @@ entry:
 ; git/optimized/hash-lookup.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; libquic/optimized/digest.cc.ll
+; libquic/optimized/digest_test.cc.ll
+; node/optimized/libnode.node_http_parser.ll
 ; php/optimized/random.ll
 ; php/optimized/string.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
@@ -461,7 +465,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683664"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683631"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

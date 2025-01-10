@@ -503,7 +503,6 @@
 ; node/optimized/libnode.Protocol.ll
 ; node/optimized/simdutf.ll
 ; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/fs_select.c.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -559,6 +558,7 @@
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; openexr/optimized/ImfLut.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
@@ -831,7 +831,7 @@ entry:
   ret i32 %3
 }
 
-; 125 occurrences:
+; 124 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -842,6 +842,7 @@ entry:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bdcDec.c.ll
+; abc/optimized/cnfMap.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -909,7 +910,6 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/persistence.cpp.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/os.ll
@@ -918,7 +918,6 @@ entry:
 ; openmpi/optimized/btl_sm_sendi.ll
 ; openssl/optimized/libcrypto-lib-pcy_tree.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/image.ll
@@ -965,7 +964,7 @@ entry:
   ret i32 %3
 }
 
-; 795 occurrences:
+; 797 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -1701,6 +1700,7 @@ entry:
 ; wireshark/optimized/packet-pdcp-nr.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-ppi.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rf4ce-profile.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
@@ -1711,6 +1711,7 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-s101.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-sml.c.ll
 ; wireshark/optimized/packet-smpp.c.ll
 ; wireshark/optimized/packet-sna.c.ll

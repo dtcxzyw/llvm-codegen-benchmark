@@ -603,7 +603,7 @@ entry:
   ret i32 %3
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -637,6 +637,7 @@ entry:
 ; minetest/optimized/touchscreengui.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlarrd.c.ll
+; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; openusd/optimized/warped_motion.c.ll
 ; stb/optimized/stb_truetype.c.ll

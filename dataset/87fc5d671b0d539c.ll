@@ -18,12 +18,11 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; libquic/optimized/file_posix.cc.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/control.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/intel_cdclk.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/ASTContext.cpp.ll

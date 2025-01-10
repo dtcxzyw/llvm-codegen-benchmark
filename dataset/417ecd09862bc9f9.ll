@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcLatch.c.ll
@@ -25,7 +25,6 @@
 ; clamav/optimized/unpack.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; openjdk/optimized/synchronizer.ll
 ; php/optimized/hash_gost.ll

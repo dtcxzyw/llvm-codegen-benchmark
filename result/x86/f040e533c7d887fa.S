@@ -17,6 +17,11 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$31, %sil
 	setne	%al
 	retq
+func0000000000000181:                   # @func0000000000000181
+	addl	%edi, %esi
+	testb	$63, %sil
+	sete	%al
+	retq
 func00000000000001e1:                   # @func00000000000001e1
 	addw	%si, %di
 	setns	%al

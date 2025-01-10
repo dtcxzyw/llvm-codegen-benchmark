@@ -1,9 +1,9 @@
 
-%class.G1MMUTrackerElem.2732404 = type { double, double }
-%"class.std::vector.10.3611958" = type { %"struct.std::_Vector_base.11.3611959" }
-%"struct.std::_Vector_base.11.3611959" = type { %"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl.3611960" }
-%"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl.3611960" = type { %"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl_data.3611961" }
-%"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl_data.3611961" = type { ptr, ptr, ptr }
+%class.G1MMUTrackerElem.2732370 = type { double, double }
+%"class.std::vector.10.3611924" = type { %"struct.std::_Vector_base.11.3611925" }
+%"struct.std::_Vector_base.11.3611925" = type { %"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl.3611926" }
+%"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl.3611926" = type { %"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl_data.3611927" }
+%"struct.std::_Vector_base<nanogui::Alignment, std::allocator<nanogui::Alignment>>::_Vector_impl_data.3611927" = type { ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -15,7 +15,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = srem i32 %3, 64
   %5 = sext i32 %4 to i64
-  %6 = getelementptr [64 x %class.G1MMUTrackerElem.2732404], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr [64 x %class.G1MMUTrackerElem.2732370], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -28,7 +28,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr [2 x %"class.std::vector.10.3611958"], ptr %0, i64 0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  %6 = getelementptr [2 x %"class.std::vector.10.3611924"], ptr %0, i64 0, i64 %5, i32 0, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

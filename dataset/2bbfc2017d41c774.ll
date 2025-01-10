@@ -327,11 +327,10 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; boost/optimized/process.ll
 ; boost/optimized/target.ll
 ; clamav/optimized/pdf.c.ll
-; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll

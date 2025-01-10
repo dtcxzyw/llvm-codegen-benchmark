@@ -1,18 +1,4 @@
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000f5(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = add nsw i64 %0, %4
-  %6 = shl nuw nsw i64 %1, 1
-  %7 = add nsw i64 %5, %6
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; qemu/optimized/hw_net_e1000.c.ll
 ; Function Attrs: nounwind
@@ -22,21 +8,6 @@ entry:
   %4 = shl nuw nsw i64 %3, 4
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw i64 %1, 32
-  %7 = add i64 %5, %6
-  ret i64 %7
-}
-
-; 3 occurrences:
-; hermes/optimized/RuntimeModule.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000f0(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = add i64 %0, %4
-  %6 = shl nuw nsw i64 %1, 4
   %7 = add i64 %5, %6
   ret i64 %7
 }
@@ -68,6 +39,20 @@ entry:
   ret i64 %7
 }
 
+; 2 occurrences:
+; hermes/optimized/RuntimeModule.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000f0(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = add i64 %0, %4
+  %6 = shl nuw nsw i64 %1, 4
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
 ; 4 occurrences:
 ; hyperscan/optimized/scratch.c.ll
 ; linux/optimized/virtio_ring.ll
@@ -81,19 +66,6 @@ entry:
   %5 = add nuw nsw i64 %4, %0
   %6 = shl nuw nsw i64 %1, 4
   %7 = add nuw nsw i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/SourceManager.cpp.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000cc(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = add i64 %1, %4
-  %6 = shl nuw nsw i64 %0, 4
-  %7 = add i64 %6, %5
   ret i64 %7
 }
 

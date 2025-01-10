@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3139227" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3139193" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 8 occurrences:
 ; linux/optimized/ahci.ll
@@ -184,7 +184,7 @@ define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 12
   %3 = select i1 %2, i64 -4622, i64 -4623
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3139227", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3139193", ptr %0, i64 %3
   ret ptr %4
 }
 

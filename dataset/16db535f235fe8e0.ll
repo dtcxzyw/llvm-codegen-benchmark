@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
-; llvm/optimized/CGObjCMac.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; openspiel/optimized/dark_chess.cc.ll

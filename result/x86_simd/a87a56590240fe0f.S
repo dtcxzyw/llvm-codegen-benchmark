@@ -39,14 +39,6 @@ func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
-	vpmovqd	%ymm2, %xmm2
-	vpminsd	%xmm2, %xmm1, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpaddd	%xmm2, %xmm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
 func000000000000032a:                   # @func000000000000032a
 	vpmovqd	%ymm2, %xmm2
 	vpminsd	%xmm2, %xmm1, %xmm1

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
 ; php/optimized/pcre2_study.ll

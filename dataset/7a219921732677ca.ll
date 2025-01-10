@@ -1,13 +1,13 @@
 
-%class.ItemPartColor.2694342 = type <{ %"class.irr::video::SColor.2694338", %"class.irr::video::SColor.2694338", i8, i8, [2 x i8] }>
-%"class.irr::video::SColor.2694338" = type { i32 }
-%class.aiVector3t.2822608 = type { float, float, float }
-%"struct.vcpkg::SectionTableHeader.2864717" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
-%"class.std::vector.14.2908984" = type { %"struct.std::_Vector_base.15.2908985" }
-%"struct.std::_Vector_base.15.2908985" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" = type { ptr, ptr, ptr }
-%"struct.llvm::WinEH::Instruction.3142490" = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%class.ItemPartColor.2694308 = type <{ %"class.irr::video::SColor.2694304", %"class.irr::video::SColor.2694304", i8, i8, [2 x i8] }>
+%"class.irr::video::SColor.2694304" = type { i32 }
+%class.aiVector3t.2822574 = type { float, float, float }
+%"struct.vcpkg::SectionTableHeader.2864683" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
+%"class.std::vector.14.2908950" = type { %"struct.std::_Vector_base.15.2908951" }
+%"struct.std::_Vector_base.15.2908951" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" = type { ptr, ptr, ptr }
+%"struct.llvm::WinEH::Instruction.3142456" = type <{ ptr, i32, i32, i32, [4 x i8] }>
 
 ; 163 occurrences:
 ; arrow/optimized/bridge.cc.ll
@@ -178,8 +178,8 @@ define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %class.ItemPartColor.2694342, ptr %3, i64 %.neg
-  %5 = getelementptr %class.ItemPartColor.2694342, ptr %4, i64 %2
+  %4 = getelementptr %class.ItemPartColor.2694308, ptr %3, i64 %.neg
+  %5 = getelementptr %class.ItemPartColor.2694308, ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -244,8 +244,8 @@ define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %class.aiVector3t.2822608, ptr %3, i64 %.neg
-  %5 = getelementptr %class.aiVector3t.2822608, ptr %4, i64 %2
+  %4 = getelementptr %class.aiVector3t.2822574, ptr %3, i64 %.neg
+  %5 = getelementptr %class.aiVector3t.2822574, ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -260,8 +260,8 @@ define ptr @func0000000000000078(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -40
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %4, i64 %2
+  %4 = getelementptr %"struct.vcpkg::SectionTableHeader.2864683", ptr %3, i64 %.neg
+  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864683", ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -272,8 +272,8 @@ define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -24
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"class.std::vector.14.2908984", ptr %3, i64 %.neg
-  %5 = getelementptr %"class.std::vector.14.2908984", ptr %4, i64 %2
+  %4 = getelementptr %"class.std::vector.14.2908950", ptr %3, i64 %.neg
+  %5 = getelementptr %"class.std::vector.14.2908950", ptr %4, i64 %2
   ret ptr %5
 }
 
@@ -284,8 +284,8 @@ define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -24
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.llvm::WinEH::Instruction.3142490", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.llvm::WinEH::Instruction.3142490", ptr %4, i64 %2
+  %4 = getelementptr %"struct.llvm::WinEH::Instruction.3142456", ptr %3, i64 %.neg
+  %5 = getelementptr %"struct.llvm::WinEH::Instruction.3142456", ptr %4, i64 %2
   ret ptr %5
 }
 

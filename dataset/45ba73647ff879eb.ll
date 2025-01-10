@@ -1,6 +1,6 @@
 
-%"class.open_spiel::twixt::Cell.3486352" = type { i32, i32, i32, [8 x %struct.Position.3486342], [2 x [2 x i8]] }
-%struct.Position.3486342 = type { i32, i32 }
+%"class.open_spiel::twixt::Cell.3486318" = type { i32, i32, i32, [8 x %struct.Position.3486308], [2 x [2 x i8]] }
+%struct.Position.3486308 = type { i32, i32 }
 
 ; 17 occurrences:
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -25,7 +25,7 @@ define ptr @func0000000000000090(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 1
-  %5 = getelementptr %"class.open_spiel::twixt::Cell.3486352", ptr %0, i64 %1, i32 4, i64 0, i64 1
+  %5 = getelementptr %"class.open_spiel::twixt::Cell.3486318", ptr %0, i64 %1, i32 4, i64 0, i64 1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

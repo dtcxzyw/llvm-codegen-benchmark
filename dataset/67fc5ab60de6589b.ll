@@ -1,6 +1,10 @@
 
-; 1 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -10,14 +14,10 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {

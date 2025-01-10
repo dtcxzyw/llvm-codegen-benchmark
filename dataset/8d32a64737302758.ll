@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 63 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/MD3Loader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; c3c/optimized/llvm_codegen_instr.c.ll
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/qopen.cpp.ll
 ; clamav/optimized/qsort.c.ll
@@ -19,6 +20,8 @@
 ; cvc5/optimized/ite_utilities.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
+; git/optimized/apply.ll
+; git/optimized/parallel-checkout.ll
 ; gromacs/optimized/deflate.c.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; libquic/optimized/deflate.c.ll
@@ -43,6 +46,7 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.node_buffer.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; openjdk/optimized/metaspace.ll

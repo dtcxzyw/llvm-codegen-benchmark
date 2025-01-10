@@ -64,6 +64,12 @@ func0000000000000068:                   # @func0000000000000068
 	seta	%al
 	orb	%dil, %al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	addq	$-7, %rdx
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq
 func000000000000004c:                   # @func000000000000004c
 	addq	$-6, %rdx
 	cmpq	%rdx, %rsi

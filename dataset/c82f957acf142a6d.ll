@@ -303,7 +303,7 @@ entry:
   ret i64 %7
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -352,6 +352,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -553,7 +554,7 @@ entry:
   ret i64 %7
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; linux/optimized/alps.ll
@@ -572,7 +573,6 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/xprop.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -738,19 +738,6 @@ entry:
   %5 = zext i8 %1 to i64
   %6 = shl nuw nsw i64 %5, 16
   %7 = or i64 %6, %4
-  ret i64 %7
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-ptp.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000005f(i64 %0, i8 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %3, %0
-  %5 = zext nneg i8 %1 to i64
-  %6 = shl nuw nsw i64 %5, 48
-  %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
 

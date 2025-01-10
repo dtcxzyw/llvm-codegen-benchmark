@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/BreakableToken.cpp.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
 ; openssl/optimized/libssl-shlib-quic_rstream.ll
@@ -8,6 +8,7 @@
 ; redis/optimized/t_hash.ll
 ; redis/optimized/t_set.ll
 ; redis/optimized/t_zset.ll
+; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:

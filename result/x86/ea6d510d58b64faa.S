@@ -185,10 +185,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	cmpq	$2, %rsi
 	setae	%al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
-	cmpq	%rdi, %rsi
-	setge	%al
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	cmpq	%rdi, %rsi
 	sete	%al

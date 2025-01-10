@@ -1,5 +1,5 @@
 
-; 1068 occurrences:
+; 1067 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -792,7 +792,6 @@
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; php/optimized/array.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/basic_functions.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/dfa_pass.ll

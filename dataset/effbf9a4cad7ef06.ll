@@ -44,29 +44,7 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
-; abseil-cpp/optimized/float_conversion.cc.ll
-; abseil-cpp/optimized/generators_test.cc.ll
-; abseil-cpp/optimized/int128_test.cc.ll
-; abseil-cpp/optimized/numbers.cc.ll
-; abseil-cpp/optimized/pcg_engine_test.cc.ll
-; libquic/optimized/p256-64.c.ll
-; php/optimized/engine_pcgoneseq128xslrr64.ll
-; qemu/optimized/optimize.c.ll
-; qemu/optimized/system_memory.c.ll
-; qemu/optimized/util_host-utils.c.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = add i128 %1, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc nuw i128 %4 to i64
-  %6 = add i64 %0, %5
-  ret i64 %6
-}
-
-; 74 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -140,11 +118,34 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000048(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
+  %4 = lshr i128 %3, 64
+  %5 = trunc nuw i128 %4 to i64
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
+; 11 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; abseil-cpp/optimized/generators_test.cc.ll
+; abseil-cpp/optimized/int128_test.cc.ll
+; abseil-cpp/optimized/numbers.cc.ll
+; abseil-cpp/optimized/pcg_engine_test.cc.ll
+; libquic/optimized/p256-64.c.ll
+; php/optimized/engine_pcgoneseq128xslrr64.ll
+; qemu/optimized/optimize.c.ll
+; qemu/optimized/system_memory.c.ll
+; qemu/optimized/util_host-utils.c.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = add i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   %6 = add i64 %0, %5

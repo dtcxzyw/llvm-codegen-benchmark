@@ -184,7 +184,7 @@ entry:
   ret i64 %3
 }
 
-; 173 occurrences:
+; 172 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
@@ -238,7 +238,6 @@ entry:
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll

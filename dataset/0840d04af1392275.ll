@@ -135,8 +135,9 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; c3c/optimized/sema_initializers.c.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; Function Attrs: nounwind

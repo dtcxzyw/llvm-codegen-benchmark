@@ -67,3 +67,15 @@ func000000000000006c:                   # @func000000000000006c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI7_0:
+	.quad	1                               # 0x1
+.LCPI7_1:
+	.quad	9223372036854775804             # 0x7ffffffffffffffc
+func0000000000000048:                   # @func0000000000000048
+	vpandq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpandq	.LCPI7_1(%rip){1to4}, %ymm1, %ymm1
+	vpcmpnleuq	%ymm1, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

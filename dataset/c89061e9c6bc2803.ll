@@ -1,5 +1,5 @@
 
-%class.XForwardingEntry.2734592 = type { i64 }
+%class.XForwardingEntry.2734558 = type { i64 }
 
 ; 7 occurrences:
 ; linux/optimized/binfmt_elf.ll
@@ -52,7 +52,7 @@ define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 136
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %class.XForwardingEntry.2734592, ptr %3, i64 %0
+  %4 = getelementptr nusw %class.XForwardingEntry.2734558, ptr %3, i64 %0
   ret ptr %4
 }
 

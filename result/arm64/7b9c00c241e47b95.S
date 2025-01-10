@@ -38,6 +38,15 @@ func00000000000001e1:                   // @func00000000000001e1
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000061:                   // @func0000000000000061
+// %bb.0:                               // %entry
+	lsr	x8, x1, #3
+	add	w9, w0, #1
+	and	w8, w8, #0x7ffffffc
+	cmp	w9, w8
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000000204:                   // @func0000000000000204
 // %bb.0:                               // %entry
 	lsr	x8, x1, #3

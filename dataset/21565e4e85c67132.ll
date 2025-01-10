@@ -28,12 +28,13 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; icu/optimized/swapimpl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -69,8 +70,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; icu/optimized/swapimpl.ll
+; 1 occurrences:
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

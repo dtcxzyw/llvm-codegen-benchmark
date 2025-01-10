@@ -49,19 +49,4 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; linux/optimized/select.ll
-; php/optimized/zend_alloc.ll
-; slurm/optimized/bitstring.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 63
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nsw i64 -1, %3
-  %5 = xor i64 %4, -1
-  %6 = and i64 %0, %5
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

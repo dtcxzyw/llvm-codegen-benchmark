@@ -1,7 +1,7 @@
 
-%"class.clang::APValue.3170594" = type { i32, [4 x i8], %"struct.llvm::AlignedCharArrayUnion.3170595" }
-%"struct.llvm::AlignedCharArrayUnion.3170595" = type { [64 x i8] }
-%"class.llvm::Use.3190219" = type { ptr, ptr, ptr, ptr }
+%"class.clang::APValue.3170560" = type { i32, [4 x i8], %"struct.llvm::AlignedCharArrayUnion.3170561" }
+%"struct.llvm::AlignedCharArrayUnion.3170561" = type { [64 x i8] }
+%"class.llvm::Use.3190185" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -29,7 +29,7 @@ entry:
   %2 = icmp eq i32 %1, 524288
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw nuw %"class.clang::APValue.3170594", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.clang::APValue.3170560", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -42,7 +42,7 @@ entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 -64
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3190219", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3190185", ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -1,11 +1,13 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; hdf5/optimized/H5Aint.c.ll
 ; hermes/optimized/Path.cpp.ll
 ; linux/optimized/profile.ll
 ; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
 ; llvm/optimized/Path.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openusd/optimized/path.cpp.ll
 ; php/optimized/softmagic.ll
 ; ruby/optimized/regcomp.ll

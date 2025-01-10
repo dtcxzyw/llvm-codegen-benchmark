@@ -1,11 +1,11 @@
 
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.Nf_Mat_t_.2876015 = type { i32, %struct.Nf_Cfg_t_.2876016, i32, float }
-%struct.Nf_Cfg_t_.2876016 = type { i32 }
-%struct.version_info.2884833 = type { %struct.object_id.2884826, i16 }
-%struct.object_id.2884826 = type { [32 x i8], i32 }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.Nf_Mat_t_.2875981 = type { i32, %struct.Nf_Cfg_t_.2875982, i32, float }
+%struct.Nf_Cfg_t_.2875982 = type { i32 }
+%struct.version_info.2884799 = type { %struct.object_id.2884792, i16 }
+%struct.object_id.2884792 = type { [32 x i8], i32 }
 
 ; 3 occurrences:
 ; jq/optimized/jv.ll
@@ -14,7 +14,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %1, i64 0, i64 %2
   %4 = icmp eq i32 %0, -1
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -25,7 +25,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000006a(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [2 x [2 x %struct.Nf_Mat_t_.2876015]], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [2 x [2 x %struct.Nf_Mat_t_.2875981]], ptr %1, i64 0, i64 %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5
@@ -52,7 +52,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000061(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [3 x %struct.version_info.2884833], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [3 x %struct.version_info.2884799], ptr %1, i64 0, i64 %2
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

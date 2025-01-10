@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.long	512                             # 0x200
 .LCPI0_1:
-	.long	7680                            # 0x1e00
-.LCPI0_2:
 	.long	253952                          # 0x3e000
+.LCPI0_2:
+	.long	7680                            # 0x1e00
 func0000000000000001:                   # @func0000000000000001
-	vpslld	$13, %ymm1, %ymm1
-	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpslld	$13, %ymm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

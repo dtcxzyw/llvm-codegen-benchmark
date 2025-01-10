@@ -1,6 +1,6 @@
 
-%struct.hb_glyph_info_t.2742027 = type { i32, i32, i32, %union._hb_var_int_t.2742028, %union._hb_var_int_t.2742028 }
-%union._hb_var_int_t.2742028 = type { i32 }
+%struct.hb_glyph_info_t.2741993 = type { i32, i32, i32, %union._hb_var_int_t.2741994, %union._hb_var_int_t.2741994 }
+%union._hb_var_int_t.2741994 = type { i32 }
 
 ; 4 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
@@ -12,8 +12,8 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 2)
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2742027, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2742027, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2741993, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2741993, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -1,6 +1,6 @@
 
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
-%struct.P256_POINT_AFFINE.2634391 = type { [4 x i64], [4 x i64] }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
+%struct.P256_POINT_AFFINE.2634358 = type { [4 x i64], [4 x i64] }
 
 ; 23 occurrences:
 ; abc/optimized/acecBo.c.ll
@@ -32,7 +32,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw [16 x %struct.P256_POINT.2634394], ptr %5, i64 %0
+  %6 = getelementptr nusw [16 x %struct.P256_POINT.2634361], ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -61,7 +61,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw [64 x %struct.P256_POINT_AFFINE.2634391], ptr %5, i64 %0
+  %6 = getelementptr nusw nuw [64 x %struct.P256_POINT_AFFINE.2634358], ptr %5, i64 %0
   ret ptr %6
 }
 

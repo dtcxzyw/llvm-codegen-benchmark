@@ -1977,32 +1977,18 @@ entry:
   ret i64 %2
 }
 
-; 30 occurrences:
+; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = sdiv i64 %0, 2
+  %2 = shl nuw i64 %1, 3
+  ret i64 %2
+}
+
+; 6 occurrences:
 ; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -2012,17 +1998,7 @@ entry:
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = sdiv i64 %0, 4
-  %2 = shl nuw nsw i64 %1, 7
-  ret i64 %2
-}
-
-; 1 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0) #0 {
-entry:
-  %1 = sdiv i64 %0, 2
-  %2 = shl nuw i64 %1, 3
+  %2 = shl nuw nsw i64 %1, 2
   ret i64 %2
 }
 

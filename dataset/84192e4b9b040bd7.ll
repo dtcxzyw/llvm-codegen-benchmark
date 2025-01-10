@@ -1,5 +1,5 @@
 
-; 263 occurrences:
+; 262 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -24,7 +24,6 @@
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; git/optimized/diffcore-delta.ll

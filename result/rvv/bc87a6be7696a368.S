@@ -11,15 +11,16 @@ func000000000000018f:                   # @func000000000000018f
 	vadd.vi	v8, v8, 9
 	ret
 func000000000000002f:                   # @func000000000000002f
-	vsetivli	zero, 8, e32, m2, ta, mu
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 166
-	vmseq.vx	v0, v10, a0
+	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v14, v10, 1, v0
 	vmv1r.v	v0, v12
-	vadd.vi	v8, v8, 4, v0.t
-	vadd.vv	v8, v8, v10
+	vmerge.vim	v10, v10, 1, v0
+	vsub.vv	v8, v8, v10
+	vadd.vv	v8, v8, v14
+	vadd.vi	v8, v8, 2
 	ret
 func000000000000014f:                   # @func000000000000014f
 	vsetivli	zero, 8, e32, m2, ta, ma

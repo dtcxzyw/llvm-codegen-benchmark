@@ -1,7 +1,6 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll

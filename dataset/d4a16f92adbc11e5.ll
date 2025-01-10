@@ -37,11 +37,12 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/DynamicTypeChecker.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
+; luau/optimized/isocline.c.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {

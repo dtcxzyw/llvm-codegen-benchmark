@@ -520,7 +520,7 @@ entry:
   ret ptr %5
 }
 
-; 117 occurrences:
+; 121 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/wlnRetime.c.ll
@@ -638,6 +638,10 @@ entry:
 ; rocksdb/optimized/hash.cc.ll
 ; snappy/optimized/snappy.cc.ll
 ; velox/optimized/CompactRow.cpp.ll
+; zfp/optimized/encode4d.c.ll
+; zfp/optimized/encode4f.c.ll
+; zfp/optimized/encode4i.c.ll
+; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -664,7 +668,7 @@ entry:
   ret ptr %5
 }
 
-; 91 occurrences:
+; 94 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/key_hash.cc.ll
 ; clamav/optimized/7zIn.c.ll
@@ -677,6 +681,7 @@ entry:
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; llama.cpp/optimized/ggml.c.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -756,6 +761,8 @@ entry:
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
 ; spike/optimized/vector_unit.ll
 ; tokio-rs/optimized/58zica37k9qw0rn.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -765,7 +772,7 @@ entry:
   ret ptr %5
 }
 
-; 98 occurrences:
+; 95 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/key_hash.cc.ll
@@ -779,7 +786,6 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libzmq/optimized/radix_tree.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; php/optimized/hash_xxhash.ll
 ; ring-rs/optimized/4prppzcttbsz5zvc.ll
@@ -862,8 +868,6 @@ entry:
 ; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
 ; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
-; zfp/optimized/encode3d.c.ll
-; zfp/optimized/encode3l.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1133,7 +1137,7 @@ entry:
   ret ptr %5
 }
 
-; 233 occurrences:
+; 236 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
@@ -1305,6 +1309,9 @@ entry:
 ; postgres/optimized/spgxlog.ll
 ; qdrant-rs/optimized/1sx1pjpbst7gikiv.ll
 ; qemu/optimized/hw_display_ati.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/libvduse.c.ll
+; qemu/optimized/libvhost-user.c.ll
 ; raylib/optimized/raudio.c.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
@@ -1481,7 +1488,7 @@ entry:
   ret ptr %5
 }
 
-; 143 occurrences:
+; 144 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -1618,6 +1625,7 @@ entry:
 ; postgres/optimized/execExpr.ll
 ; postgres/optimized/execTuples.ll
 ; postgres/optimized/extended_stats.ll
+; postgres/optimized/slru.ll
 ; postgres/optimized/twophase.ll
 ; raylib/optimized/rcore.c.ll
 ; stb/optimized/stb_connected_components.c.ll

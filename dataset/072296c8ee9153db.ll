@@ -229,11 +229,10 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
-; luau/optimized/lstrlib.cpp.ll
 ; qemu/optimized/hw_usb_dev-hub.c.ll
 ; regex-rs/optimized/154fzydpihuymjog.ll
 ; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
@@ -608,25 +607,13 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; hermes/optimized/JSObject.cpp.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/repeat.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = xor i32 %0, -1
-  %3 = add i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/mls.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/services.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; nori/optimized/block.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; sundials/optimized/cvode.c.ll
@@ -637,6 +624,19 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = sub i32 %2, %0
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 3 occurrences:
+; hermes/optimized/JSObject.cpp.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/repeat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %0, -1
+  %3 = add i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
@@ -662,7 +662,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 63
+  %2 = add nuw nsw i32 %1, 64
   %3 = sub nuw nsw i32 %2, %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

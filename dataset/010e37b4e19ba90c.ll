@@ -606,8 +606,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; hyperscan/optimized/repeat.c.ll
+; 2 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

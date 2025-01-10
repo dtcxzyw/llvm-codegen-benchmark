@@ -18,9 +18,8 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/threadpool.c.ll
-; git/optimized/line-log.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libuv/optimized/threadpool.c.ll
 ; linux/optimized/drm_gem_shmem_helper.ll

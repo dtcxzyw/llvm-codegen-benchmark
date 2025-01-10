@@ -1,5 +1,5 @@
 
-; 197 occurrences:
+; 185 occurrences:
 ; actix-rs/optimized/190uhijawk1lki5o.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
@@ -9,7 +9,6 @@
 ; actix-rs/optimized/4jhdfltpo4mtv2bi.ll
 ; actix-rs/optimized/4pry3bojy1efv3uz.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
-; coreutils-rs/optimized/1ks0bjj5pmsh3du4.ll
 ; coreutils-rs/optimized/1rno21l8yxg9vs0k.ll
 ; coreutils-rs/optimized/1w8bjqmsfkf0ntfz.ll
 ; coreutils-rs/optimized/24fsrxguu05stlu0.ll
@@ -43,15 +42,9 @@
 ; diesel-rs/optimized/1d6yrclfdvavot4r.ll
 ; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
 ; diesel-rs/optimized/1hskzwx2vflsavf7.ll
-; diesel-rs/optimized/1pu1gypvn16sk7jj.ll
-; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
 ; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
-; diesel-rs/optimized/3hbywg7swws1iy6v.ll
 ; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
 ; diesel-rs/optimized/3nv3xphjbq527f6u.ll
-; diesel-rs/optimized/3nydn42x30kj4j9q.ll
-; diesel-rs/optimized/3rjno8am3tsn5qrm.ll
-; diesel-rs/optimized/46661qc4yjpbja0f.ll
 ; diesel-rs/optimized/gepqftqgym352s.ll
 ; egg-rs/optimized/208b1a9t1vdfvafq.ll
 ; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
@@ -124,7 +117,6 @@
 ; rust-analyzer-rs/optimized/2xc4k213s11rexpc.ll
 ; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
-; rust-analyzer-rs/optimized/39wpokevyhxzb05g.ll
 ; rust-analyzer-rs/optimized/3bcyxdd3fm70gs30.ll
 ; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
@@ -175,7 +167,6 @@
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/1aeertcmltcg0pmp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1g9fzsxu6f987i7p.ll
 ; wasmtime-rs/optimized/1swth1h1xb2uamky.ll
 ; wasmtime-rs/optimized/26njb8b27j72a4cj.ll
 ; wasmtime-rs/optimized/2v0w4wom426siltx.ll
@@ -187,15 +178,12 @@
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
-; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
-; wasmtime-rs/optimized/4xi420g2tcwi30s2.ll
 ; wasmtime-rs/optimized/fhugawvdzmyefe9.ll
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
 ; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
-; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

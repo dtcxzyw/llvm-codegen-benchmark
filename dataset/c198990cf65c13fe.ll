@@ -154,13 +154,11 @@ entry:
   ret ptr %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; just-rs/optimized/53slus9exfz9w045.ll
-; libquic/optimized/digest_test.cc.ll
 ; libquic/optimized/rand.cc.ll
 ; meilisearch-rs/optimized/7ttx3vegu0k1psi.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
-; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
@@ -193,11 +191,7 @@ entry:
   ret ptr %3
 }
 
-; 8 occurrences:
-; abc/optimized/abc.c.ll
-; libquic/optimized/digest.cc.ll
-; libquic/optimized/digest_test.cc.ll
-; node/optimized/libnode.node_http_parser.ll
+; 4 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
@@ -210,12 +204,16 @@ entry:
   ret ptr %3
 }
 
-; 10 occurrences:
+; 14 occurrences:
+; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; libquic/optimized/digest.cc.ll
+; libquic/optimized/digest_test.cc.ll
 ; llvm/optimized/blake3.c.ll
+; node/optimized/libnode.node_http_parser.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
@@ -229,11 +227,10 @@ entry:
   ret ptr %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
-; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
@@ -243,14 +240,27 @@ entry:
   ret ptr %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; llvm/optimized/blake3.c.ll
+; openblas/optimized/dgetrf_parallel.c.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = getelementptr nusw [18 x i16], ptr %0, i64 0, i64 %2
+  ret ptr %3
+}
+
+; 2 occurrences:
+; libquic/optimized/digest_test.cc.ll
+; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 %1, 1
+  %3 = getelementptr nusw [129 x i8], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

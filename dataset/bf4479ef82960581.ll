@@ -1,5 +1,5 @@
 
-; 1400 occurrences:
+; 1397 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcNtbdd.c.ll
@@ -459,8 +459,6 @@
 ; llvm/optimized/DemandedBits.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/FunctionImportUtils.cpp.ll
@@ -531,7 +529,6 @@
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

@@ -55,12 +55,11 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/calendar.ll
-; linux/optimized/gup.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

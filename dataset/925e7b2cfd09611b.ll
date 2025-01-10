@@ -1,5 +1,5 @@
 
-; 480 occurrences:
+; 478 occurrences:
 ; abc/optimized/inflate.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -50,7 +50,6 @@
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
 ; coreutils-rs/optimized/20v11r4bpq9cscu.ll
@@ -477,7 +476,6 @@
 ; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
 ; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zlib/optimized/inflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind

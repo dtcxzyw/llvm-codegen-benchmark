@@ -1,9 +1,11 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; icu/optimized/number_simple.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {

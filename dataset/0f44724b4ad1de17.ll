@@ -1,8 +1,8 @@
 
-%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
-%"struct.std::array.2683308" = type { [14 x i8] }
-%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2683274" = type { %"struct.std::array.2683275", i8, i8, %"struct.std::array.53.2683276" }
+%"struct.std::array.2683275" = type { [14 x i8] }
+%"struct.std::array.53.2683276" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683234"] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
 
 ; 19 occurrences:
 ; linux/optimized/fault.ll
@@ -59,7 +59,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 22
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2683274", ptr %0, i64 %4
   ret ptr %5
 }
 

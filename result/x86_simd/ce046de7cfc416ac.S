@@ -141,37 +141,49 @@ func0000000000000182:                   # @func0000000000000182
 	vzeroupper
 	retq
 .LCPI14_0:
-	.long	1                               # 0x1
+	.long	2                               # 0x2
 .LCPI14_1:
 	.quad	1                               # 0x1
-func000000000000018c:                   # @func000000000000018c
+func0000000000000282:                   # @func0000000000000282
 	vpmovqd	%ymm1, %xmm1
-	vpcmpltd	.LCPI14_0(%rip){1to4}, %xmm1, %k0
-	vpcmpltq	.LCPI14_1(%rip){1to4}, %ymm0, %k1
-	korw	%k1, %k0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI15_0:
-	.long	8                               # 0x8
-.LCPI15_1:
-	.quad	32                              # 0x20
-func000000000000028c:                   # @func000000000000028c
-	vpmovqd	%ymm1, %xmm1
-	vpcmpgtd	.LCPI15_0(%rip){1to4}, %xmm1, %k0
-	vpcmpltq	.LCPI15_1(%rip){1to4}, %ymm0, %k1
+	vpcmpgtd	.LCPI14_0(%rip){1to4}, %xmm1, %k0
+	vpcmpeqq	.LCPI14_1(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI15_0:
+	.long	1                               # 0x1
+.LCPI15_1:
+	.quad	1                               # 0x1
+func000000000000018c:                   # @func000000000000018c
+	vpmovqd	%ymm1, %xmm1
+	vpcmpltd	.LCPI15_0(%rip){1to4}, %xmm1, %k0
+	vpcmpltq	.LCPI15_1(%rip){1to4}, %ymm0, %k1
+	korw	%k1, %k0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 .LCPI16_0:
-	.long	86399                           # 0x1517f
+	.long	8                               # 0x8
 .LCPI16_1:
+	.quad	32                              # 0x20
+func000000000000028c:                   # @func000000000000028c
+	vpmovqd	%ymm1, %xmm1
+	vpcmpgtd	.LCPI16_0(%rip){1to4}, %xmm1, %k0
+	vpcmpltq	.LCPI16_1(%rip){1to4}, %ymm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI17_0:
+	.long	86399                           # 0x1517f
+.LCPI17_1:
 	.quad	1999999999                      # 0x773593ff
 func0000000000000210:                   # @func0000000000000210
 	vpmovqd	%ymm1, %xmm1
-	vpcmpnleud	.LCPI16_0(%rip){1to4}, %xmm1, %k0
-	vpcmpnleuq	.LCPI16_1(%rip){1to4}, %ymm0, %k1
+	vpcmpnleud	.LCPI17_0(%rip){1to4}, %xmm1, %k0
+	vpcmpnleuq	.LCPI17_1(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

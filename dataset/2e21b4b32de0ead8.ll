@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 64 occurrences:
 ; boost/optimized/async.ll
 ; boost/optimized/default_formatter_factory.ll
 ; boost/optimized/exit_code.ll
@@ -53,7 +53,6 @@
 ; wireshark/optimized/packet-fcip.c.ll
 ; wireshark/optimized/packet-http2.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; zstd/optimized/fse_compress.c.ll

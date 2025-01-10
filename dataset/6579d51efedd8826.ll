@@ -33,11 +33,10 @@ entry:
   ret i64 %4
 }
 
-; 68 occurrences:
+; 62 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/vba_extract.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/deflate.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -50,9 +49,6 @@ entry:
 ; icu/optimized/ucmndata.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/nls_base.ll
@@ -77,8 +73,6 @@ entry:
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/system_qtest.c.ll
 ; qemu/optimized/ui_input-barrier.c.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
 ; slurm/optimized/common_topo.ll
 ; spike/optimized/kcras16.ll

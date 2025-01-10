@@ -9,3 +9,8 @@ func0000000000000036:                   # @func0000000000000036
 	andi	a1, a1, 255
 	sub	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	addi	a1, a1, 135
+	andi	a1, a1, -16
+	sub	a0, a0, a1
+	ret

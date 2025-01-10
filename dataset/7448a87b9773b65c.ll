@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/sha256.cpp.ll
 ; cmake/optimized/archive_read_support_filter_rpm.c.ll
@@ -7,12 +7,14 @@
 ; git/optimized/archive-tar.ll
 ; grpc/optimized/frame_handler.cc.ll
 ; linux/optimized/tty_audit.ll
+; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-quic_sstream.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/stream.c.ll
+; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; spike/optimized/sim.ll
 ; Function Attrs: nounwind

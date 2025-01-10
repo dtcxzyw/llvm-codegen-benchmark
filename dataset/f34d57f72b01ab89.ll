@@ -1,27 +1,4 @@
 
-; 11 occurrences:
-; graphviz/optimized/sfprint.c.ll
-; gromacs/optimized/runner.cpp.ll
-; hermes/optimized/dtoa.c.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; nanosvg/optimized/nanosvg.ll
-; opencv/optimized/facemarkLBF.cpp.ll
-; opencv/optimized/local_optimization.cpp.ll
-; php/optimized/zend_strtod.ll
-; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = icmp sge i32 %0, %2
-  ret i1 %3
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smax.i32(i32, i32) #1
-
 ; 5 occurrences:
 ; cpython/optimized/dtoa.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -37,6 +14,9 @@ entry:
   ret i1 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smax.i32(i32, i32) #1
+
 ; 2 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
@@ -49,9 +29,27 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; git/optimized/notes-merge.ll
-; luau/optimized/lstrlib.cpp.ll
+; 10 occurrences:
+; graphviz/optimized/sfprint.c.ll
+; gromacs/optimized/runner.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; minetest/optimized/COpenGLDriver.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; opencv/optimized/local_optimization.cpp.ll
+; php/optimized/zend_strtod.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 1)
+  %3 = sub nsw i32 %0, %2
+  %4 = icmp sgt i32 %3, 1
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/openssl-bin-s_server.ll
 ; Function Attrs: nounwind

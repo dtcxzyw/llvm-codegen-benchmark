@@ -1,18 +1,18 @@
 
-%"struct.std::__1::pair.61.2609501" = type { %"class.std::__1::basic_string.2609306", %"class.mitsuba::ref.40.2609363" }
-%"class.std::__1::basic_string.2609306" = type { %"class.std::__1::__compressed_pair.25.2609307" }
-%"class.std::__1::__compressed_pair.25.2609307" = type { %"struct.std::__1::__compressed_pair_elem.26.2609308" }
-%"struct.std::__1::__compressed_pair_elem.26.2609308" = type { %"struct.std::__1::basic_string<char>::__rep.2609309" }
-%"struct.std::__1::basic_string<char>::__rep.2609309" = type { %union.anon.2609310 }
-%union.anon.2609310 = type { %"struct.std::__1::basic_string<char>::__long.2609311" }
-%"struct.std::__1::basic_string<char>::__long.2609311" = type { %struct.anon.27.2609312, i64, ptr }
-%struct.anon.27.2609312 = type { i64 }
-%"class.mitsuba::ref.40.2609363" = type { ptr }
-%"class.std::__cxx11::basic_string.3072192" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072194", i64, %union.anon.3072195 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072194" = type { ptr }
-%union.anon.3072195 = type { i64, [8 x i8] }
-%"struct.cv::SimpleBlobDetectorImpl::Center.3786282" = type { %"class.cv::Point_.13.3786283", double, double }
-%"class.cv::Point_.13.3786283" = type { double, double }
+%"struct.std::__1::pair.61.2609468" = type { %"class.std::__1::basic_string.2609273", %"class.mitsuba::ref.40.2609330" }
+%"class.std::__1::basic_string.2609273" = type { %"class.std::__1::__compressed_pair.25.2609274" }
+%"class.std::__1::__compressed_pair.25.2609274" = type { %"struct.std::__1::__compressed_pair_elem.26.2609275" }
+%"struct.std::__1::__compressed_pair_elem.26.2609275" = type { %"struct.std::__1::basic_string<char>::__rep.2609276" }
+%"struct.std::__1::basic_string<char>::__rep.2609276" = type { %union.anon.2609277 }
+%union.anon.2609277 = type { %"struct.std::__1::basic_string<char>::__long.2609278" }
+%"struct.std::__1::basic_string<char>::__long.2609278" = type { %struct.anon.27.2609279, i64, ptr }
+%struct.anon.27.2609279 = type { i64 }
+%"class.mitsuba::ref.40.2609330" = type { ptr }
+%"class.std::__cxx11::basic_string.3072158" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072160", i64, %union.anon.3072161 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3072160" = type { ptr }
+%union.anon.3072161 = type { i64, [8 x i8] }
+%"struct.cv::SimpleBlobDetectorImpl::Center.3786232" = type { %"class.cv::Point_.13.3786233", double, double }
+%"class.cv::Point_.13.3786233" = type { double, double }
 
 ; 7 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -28,7 +28,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr %"struct.std::__1::pair.61.2609501", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::__1::pair.61.2609468", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
@@ -42,7 +42,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr %"struct.std::__1::pair.61.2609501", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::__1::pair.61.2609468", ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 32
   ret ptr %7
 }
@@ -56,7 +56,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 2
-  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3072192", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.3072158", ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 32
   ret ptr %7
 }
@@ -110,7 +110,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr %"struct.cv::SimpleBlobDetectorImpl::Center.3786282", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr %"struct.cv::SimpleBlobDetectorImpl::Center.3786232", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 

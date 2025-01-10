@@ -1,9 +1,9 @@
 
-%"struct.Yosys::RTLIL::SigBit.3134179" = type <{ ptr, %union.anon.86.3134180, [4 x i8] }>
-%union.anon.86.3134180 = type { i32 }
-%"struct.ozz::math::Transform.3655404" = type { %"struct.ozz::math::Float3.3655405", %"struct.ozz::math::Quaternion.3655406", %"struct.ozz::math::Float3.3655405" }
-%"struct.ozz::math::Quaternion.3655406" = type { float, float, float, float }
-%"struct.ozz::math::Float3.3655405" = type { float, float, float }
+%"struct.Yosys::RTLIL::SigBit.3134145" = type <{ ptr, %union.anon.86.3134146, [4 x i8] }>
+%union.anon.86.3134146 = type { i32 }
+%"struct.ozz::math::Transform.3655370" = type { %"struct.ozz::math::Float3.3655371", %"struct.ozz::math::Quaternion.3655372", %"struct.ozz::math::Float3.3655371" }
+%"struct.ozz::math::Quaternion.3655372" = type { float, float, float, float }
+%"struct.ozz::math::Float3.3655371" = type { float, float, float }
 
 ; 1 occurrences:
 ; folly/optimized/Elf.cpp.ll
@@ -146,7 +146,7 @@ define ptr @func00000000000000db(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %2, 5
   %3 = getelementptr i8, ptr %0, i64 %.idx
-  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3134179", ptr %3, i64 %1, i32 1
+  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3134145", ptr %3, i64 %1, i32 1
   ret ptr %4
 }
 
@@ -167,7 +167,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.ozz::math::Transform.3655404", ptr %0, i64 %1
+  %3 = getelementptr %"struct.ozz::math::Transform.3655370", ptr %0, i64 %1
   %.idx = mul i64 %2, 160
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4

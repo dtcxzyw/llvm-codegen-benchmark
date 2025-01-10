@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -102,6 +102,7 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-udp.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/sctp_assoc_analyse_dialog.cpp.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll

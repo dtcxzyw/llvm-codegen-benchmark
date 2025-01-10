@@ -1,5 +1,5 @@
 
-%"struct.ncnn::PreCalc.2749334" = type { i32, i32, i32, i32, float, float, float, float }
+%"struct.ncnn::PreCalc.2749300" = type { i32, i32, i32, i32, float, float, float, float }
 
 ; 5 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
@@ -13,7 +13,7 @@ entry:
   %3 = fptosi float %2 to i32
   %4 = sext i32 %3 to i64
   %5 = mul i64 %1, %4
-  %6 = getelementptr %"struct.ncnn::PreCalc.2749334", ptr %0, i64 %5
+  %6 = getelementptr %"struct.ncnn::PreCalc.2749300", ptr %0, i64 %5
   ret ptr %6
 }
 

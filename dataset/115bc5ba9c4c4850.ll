@@ -1,19 +1,19 @@
 
-%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
-%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
-%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
-%struct.QTailQLink.2706558 = type { ptr, ptr }
-%struct.zone.3540695 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3540687, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3540696, [11 x %struct.free_area.3540697], i64, %struct.spinlock.3540698, [28 x i8], %struct.cacheline_padding.3540696, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3540696, [10 x %struct.atomic64_t.3540687], [6 x %struct.atomic64_t.3540687] }
-%struct.atomic64_t.3540687 = type { i64 }
-%struct.free_area.3540697 = type { [4 x %struct.list_head.3540670], i64 }
-%struct.list_head.3540670 = type { ptr, ptr }
-%struct.spinlock.3540698 = type { %union.anon.23.3540699 }
-%union.anon.23.3540699 = type { %struct.raw_spinlock.3540688 }
-%struct.raw_spinlock.3540688 = type { %struct.qspinlock.3540690 }
-%struct.qspinlock.3540690 = type { %union.anon.24.3540691 }
-%union.anon.24.3540691 = type { %struct.atomic_t.3540664 }
-%struct.atomic_t.3540664 = type { i32 }
-%struct.cacheline_padding.3540696 = type { [0 x i8] }
+%struct.OHCIPort.2706526 = type { %struct.USBPort.2706527, i32 }
+%struct.USBPort.2706527 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706528 }
+%union.anon.5.2706528 = type { %struct.QTailQLink.2706524 }
+%struct.QTailQLink.2706524 = type { ptr, ptr }
+%struct.zone.3540661 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3540653, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3540662, [11 x %struct.free_area.3540663], i64, %struct.spinlock.3540664, [28 x i8], %struct.cacheline_padding.3540662, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3540662, [10 x %struct.atomic64_t.3540653], [6 x %struct.atomic64_t.3540653] }
+%struct.atomic64_t.3540653 = type { i64 }
+%struct.free_area.3540663 = type { [4 x %struct.list_head.3540636], i64 }
+%struct.list_head.3540636 = type { ptr, ptr }
+%struct.spinlock.3540664 = type { %union.anon.23.3540665 }
+%union.anon.23.3540665 = type { %struct.raw_spinlock.3540654 }
+%struct.raw_spinlock.3540654 = type { %struct.qspinlock.3540656 }
+%struct.qspinlock.3540656 = type { %union.anon.24.3540657 }
+%union.anon.24.3540657 = type { %struct.atomic_t.3540630 }
+%struct.atomic_t.3540630 = type { i32 }
+%struct.cacheline_padding.3540662 = type { [0 x i8] }
 
 ; 24 occurrences:
 ; cpython/optimized/optimizer.ll
@@ -1204,7 +1204,7 @@ entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
   %4 = getelementptr nusw nuw i8, ptr %0, i64 600
-  %5 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [15 x %struct.OHCIPort.2706526], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -1242,7 +1242,7 @@ entry:
   %2 = lshr i64 %1, 56
   %3 = and i64 %2, 3
   %4 = getelementptr i8, ptr %0, i64 -13440
-  %5 = getelementptr [4 x %struct.zone.3540695], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [4 x %struct.zone.3540661], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

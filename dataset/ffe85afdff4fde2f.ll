@@ -1,7 +1,7 @@
 
-%"struct.Yosys::hashlib::pool<Yosys::RTLIL::Module *>::entry_t.3124101" = type <{ ptr, i32, [4 x i8] }>
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%"struct.Yosys::hashlib::pool<Yosys::RTLIL::Module *>::entry_t.3124067" = type <{ ptr, i32, [4 x i8] }>
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
@@ -64,7 +64,7 @@ define ptr @func000000000000008f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"struct.Yosys::hashlib::pool<Yosys::RTLIL::Module *>::entry_t.3124101", ptr %0, i64 %3
+  %4 = getelementptr %"struct.Yosys::hashlib::pool<Yosys::RTLIL::Module *>::entry_t.3124067", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -107,7 +107,7 @@ define ptr @func000000000000008c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct.lua_TValue.3680875, ptr %0, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3680825, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }

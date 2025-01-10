@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
@@ -86,7 +84,7 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -96,14 +94,13 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; protobuf/optimized/map_field.cc.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
+  %4 = shl nuw nsw i64 %3, 1
   %5 = add i64 %0, %1
   %6 = add i64 %5, %4
   ret i64 %6
@@ -134,30 +131,16 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; postgres/optimized/slru.ll
+; 2 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000070(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000072(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 52
   %5 = add i64 %0, %1
-  %6 = add i64 %5, %4
-  ret i64 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/SourceManager.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = add i64 %0, %1
-  %6 = add i64 %4, %5
+  %6 = add nuw i64 %5, %4
   ret i64 %6
 }
 
@@ -170,6 +153,19 @@ entry:
   %4 = shl nuw i64 %3, 32
   %5 = add i64 %0, %1
   %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; postgres/optimized/slru.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000070(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = add i64 %0, %1
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 

@@ -77,9 +77,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
+; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {

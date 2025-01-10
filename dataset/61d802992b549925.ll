@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; postgres/optimized/regexec.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; yosys/optimized/extract_counter.ll
 ; Function Attrs: nounwind

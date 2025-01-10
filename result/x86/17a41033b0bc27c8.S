@@ -122,6 +122,12 @@ func0000000000000704:                   # @func0000000000000704
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
+func0000000000000064:                   # @func0000000000000064
+	leaq	24(%rdx,%rsi), %rax
+	incq	%rdi
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
 func000000000000076c:                   # @func000000000000076c
 	leaq	16(%rdx,%rsi), %rax
 	incq	%rdi
@@ -152,12 +158,6 @@ func0000000000000641:                   # @func0000000000000641
 	addq	$-4, %rdi
 	cmpq	%rax, %rdi
 	sete	%al
-	retq
-func0000000000000064:                   # @func0000000000000064
-	leaq	2(%rdx,%rsi), %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	setb	%al
 	retq
 func0000000000000609:                   # @func0000000000000609
 	imulq	$2624, %rsi, %rax               # imm = 0xA40

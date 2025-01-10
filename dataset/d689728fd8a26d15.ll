@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
-%"class.hermes::vm::HermesValue.3081023" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3080988" = type { %"class.hermes::vm::HermesValue.3080989" }
+%"class.hermes::vm::HermesValue.3080989" = type { i64 }
 
 ; 24 occurrences:
 ; boost/optimized/url_base.ll
@@ -47,7 +47,7 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 -56
-  %6 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3080988", ptr %5, i64 %4
   ret ptr %6
 }
 

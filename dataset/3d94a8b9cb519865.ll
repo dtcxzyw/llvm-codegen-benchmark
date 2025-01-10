@@ -1,5 +1,5 @@
 
-; 692 occurrences:
+; 691 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -216,7 +216,6 @@
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll

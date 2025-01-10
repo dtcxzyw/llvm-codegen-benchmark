@@ -35,7 +35,7 @@ func0000000000000167:                   # @func0000000000000167
 	sext.w	a3, a0
 	sext.w	a2, a2
 	subw	a0, a0, a1
-	minu	a0, a2, a0
+	minu	a0, a0, a2
 	addw	a0, a0, a1
 	slt	a0, a3, a0
 	xori	a0, a0, 1

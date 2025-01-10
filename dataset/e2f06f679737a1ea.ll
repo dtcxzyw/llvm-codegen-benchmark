@@ -1,5 +1,5 @@
 
-%"class.Dependencies::DepValue.2731383" = type { i32 }
+%"class.Dependencies::DepValue.2731349" = type { i32 }
 
 ; 3 occurrences:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
@@ -43,8 +43,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = getelementptr %"class.Dependencies::DepValue.2731383", ptr %0, i64 %1
-  %5 = getelementptr %"class.Dependencies::DepValue.2731383", ptr %4, i64 %3
+  %4 = getelementptr %"class.Dependencies::DepValue.2731349", ptr %0, i64 %1
+  %5 = getelementptr %"class.Dependencies::DepValue.2731349", ptr %4, i64 %3
   ret ptr %5
 }
 

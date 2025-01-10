@@ -1,5 +1,5 @@
 
-; 2688 occurrences:
+; 2687 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -36,7 +36,6 @@
 ; arrow/optimized/builder_base.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/io_util.cc.ll
@@ -730,6 +729,7 @@
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
@@ -1156,7 +1156,6 @@
 ; nlohmann_json/optimized/unit-unicode5.cpp.ll
 ; node/optimized/libnode.node_file.ll
 ; node/optimized/libnode.node_perf.ll
-; node/optimized/simdutf.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/canvas.cpp.ll
 ; nori/optimized/checkbox.cpp.ll
@@ -2754,7 +2753,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -2769,7 +2768,6 @@ entry:
 ; linux/optimized/pasid.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
@@ -3618,7 +3616,7 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -3644,6 +3642,7 @@ entry:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; lvgl/optimized/lv_image.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -3670,7 +3669,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/unzip.c.ll
 ; icu/optimized/ucoleitr.ll
@@ -3679,7 +3678,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

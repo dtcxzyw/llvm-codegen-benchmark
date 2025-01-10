@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 108 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/cutCut.c.ll
 ; abc/optimized/dauEnum.c.ll
@@ -71,6 +71,8 @@
 ; openmpi/optimized/pmix_bitmap.ll
 ; openspiel/optimized/pig.cc.ll
 ; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openusd/optimized/read.c.ll
 ; pocketpy/optimized/obj.cpp.ll
 ; postgres/optimized/arrayfuncs.ll

@@ -1,7 +1,7 @@
 
-%"struct.(anonymous namespace)::FormatKeys.2684357" = type { %"class.folly::Range.2684358", i64, i64 }
-%"class.folly::Range.2684358" = type { ptr, ptr }
-%struct.BuiltinEntry.3205476 = type { i32, i32 }
+%"struct.(anonymous namespace)::FormatKeys.2684324" = type { %"class.folly::Range.2684325", i64, i64 }
+%"class.folly::Range.2684325" = type { ptr, ptr }
+%struct.BuiltinEntry.3205442 = type { i32, i32 }
 
 ; 7 occurrences:
 ; boost/optimized/xml_grammar.ll
@@ -108,7 +108,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.(anonymous namespace)::FormatKeys.2684357", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.(anonymous namespace)::FormatKeys.2684324", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = select i1 %0, ptr %4, ptr %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
@@ -120,7 +120,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.BuiltinEntry.3205476, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.BuiltinEntry.3205442, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = select i1 %0, ptr %4, ptr %1
   %6 = getelementptr i8, ptr %5, i64 4

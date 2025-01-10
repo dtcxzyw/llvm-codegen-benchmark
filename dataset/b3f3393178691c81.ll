@@ -1,6 +1,6 @@
 
-%"struct.llvm::detail::DenseMapPair.552.3214405" = type { %"struct.std::pair.553.3214406" }
-%"struct.std::pair.553.3214406" = type { ptr, ptr }
+%"struct.llvm::detail::DenseMapPair.552.3214371" = type { %"struct.std::pair.553.3214372" }
+%"struct.std::pair.553.3214372" = type { ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/rootResolver.ll
@@ -60,7 +60,7 @@ define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.552.3214405", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.552.3214371", ptr %0, i64 %1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }

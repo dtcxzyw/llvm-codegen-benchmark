@@ -15,51 +15,18 @@ func0000000000000013:                   # @func0000000000000013
 	li	a1, 112
 	add	a0, a0, a1
 	ret
-func000000000000001f:                   # @func000000000000001f
-	fmv.d.x	fa5, zero
-	feq.d	a1, fa0, fa5
-	beqz	a1, .LBB2_2
-	li	a1, 24
+.LCPI2_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func000000000000001b:                   # @func000000000000001b
+	lui	a1, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a1)
+	flt.d	a2, fa0, fa5
+	lui	a1, 65
+	bnez	a2, .LBB2_2
+	addiw	a1, a1, -1704
 	add	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a1, 16
-	add	a0, a0, a1
-	ret
-func000000000000000f:                   # @func000000000000000f
-	fmv.d.x	fa5, zero
-	fle.d	a1, fa5, fa0
-	beqz	a1, .LBB3_2
-	li	a1, 32
-	add	a0, a0, a1
-	ret
-.LBB3_2:
-	li	a1, 24
-	add	a0, a0, a1
-	ret
-.LCPI4_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func000000000000001b:                   # @func000000000000001b
-	lui	a1, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a1)
-	flt.d	a2, fa0, fa5
-	lui	a1, 65
-	bnez	a2, .LBB4_2
-	addiw	a1, a1, -1704
-	add	a0, a0, a1
-	ret
-.LBB4_2:
-	addiw	a1, a1, -1712
-	add	a0, a0, a1
-	ret
-func0000000000000007:                   # @func0000000000000007
-	feq.d	a2, fa0, fa0
-	lui	a1, 65
-	beqz	a2, .LBB5_2
-	addiw	a1, a1, -1704
-	add	a0, a0, a1
-	ret
-.LBB5_2:
 	addiw	a1, a1, -1712
 	add	a0, a0, a1
 	ret

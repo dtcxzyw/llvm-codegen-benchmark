@@ -1,6 +1,6 @@
 
-%struct.anon.14.2601710 = type { ptr, ptr }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%struct.anon.14.2601677 = type { ptr, ptr }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/vm_trace.ll
@@ -10,7 +10,7 @@ entry:
   %2 = call range(i32 0, 32) i32 @llvm.ctlz.i32(i32 range(i32 1, 0) %1, i1 true)
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [32 x %struct.anon.14.2601710], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [32 x %struct.anon.14.2601677], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -43,7 +43,7 @@ entry:
   %2 = tail call i32 @llvm.ctlz.i32(i32 %1, i1 true), !range !0
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

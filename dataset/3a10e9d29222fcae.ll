@@ -370,7 +370,7 @@ entry:
   ret i32 %3
 }
 
-; 1638 occurrences:
+; 1637 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcRefactor.c.ll
@@ -419,7 +419,6 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/OptimizeMeshes.cpp.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
@@ -2074,7 +2073,6 @@ entry:
 ; casadi/optimized/cs_etree.c.ll
 ; cmake/optimized/System.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
-; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; git/optimized/revision.ll
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
@@ -2088,6 +2086,7 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_gmbus.ll
 ; linux/optimized/journal.ll
+; linux/optimized/net.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/x_tables.ll
 ; linux/optimized/xprtsock.ll

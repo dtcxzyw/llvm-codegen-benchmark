@@ -38,9 +38,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/maze.c.ll
+; openblas/optimized/dlarre.c.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; sundials/optimized/arkode_mristep.c.ll
 ; Function Attrs: nounwind

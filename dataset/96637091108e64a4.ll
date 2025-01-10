@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/filtering.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/Expr.cpp.ll

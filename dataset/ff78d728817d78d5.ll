@@ -1,18 +1,18 @@
 
-%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
-%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
-%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
+%"class.std::__1::tuple.2603517" = type { %"struct.std::__1::__tuple_impl.2603518" }
+%"struct.std::__1::__tuple_impl.2603518" = type <{ %"class.std::__1::__tuple_leaf.2603519", %"class.std::__1::__tuple_leaf.170.2603520", %"class.std::__1::__tuple_leaf.171.2603521", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603519" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603520" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::__tuple_leaf.171.2603521" = type { i8 }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456" = type { i32, i32, i32 }
+%class.QModelIndex.3438231 = type { i32, i32, i64, ptr }
 
 ; 73 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -94,7 +94,7 @@ entry:
   %2 = udiv exact i64 %1, 56
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw nuw %"class.std::__1::tuple.2603550", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__1::tuple.2603517", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -125,7 +125,7 @@ entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw nuw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -138,7 +138,7 @@ entry:
   %2 = udiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %4
+  %5 = getelementptr %class.QModelIndex.3438231, ptr %0, i64 %4
   ret ptr %5
 }
 

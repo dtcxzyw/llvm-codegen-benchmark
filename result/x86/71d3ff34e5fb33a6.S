@@ -144,18 +144,6 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$5, %rsi
 	addq	%rsi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	shlq	$9, %rdx
-	leaq	(%rdx,%rdi), %rax
-	shlq	$5, %rsi
-	addq	%rsi, %rax
-	retq
-func000000000000000e:                   # @func000000000000000e
-	shlq	$7, %rdx
-	leaq	(%rdx,%rdi), %rax
-	shlq	$5, %rsi
-	addq	%rsi, %rax
-	retq
 func0000000000000020:                   # @func0000000000000020
 	shlq	$4, %rdx
 	addq	%rdi, %rdx
@@ -166,10 +154,6 @@ func000000000000008e:                   # @func000000000000008e
 	leaq	(%rdx,%rdi), %rax
 	shlq	$5, %rsi
 	addq	%rsi, %rax
-	retq
-func000000000000007f:                   # @func000000000000007f
-	leaq	(%rdi,%rdx,4), %rax
-	leaq	(%rax,%rsi,4), %rax
 	retq
 func000000000000005e:                   # @func000000000000005e
 	leaq	(%rdi,%rdx,8), %rax

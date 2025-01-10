@@ -221,15 +221,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/control.ll
-; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = shl nuw i32 %0, 1
-  %4 = select i1 %2, i32 0, i32 %3
+  %3 = shl nuw i32 %0, 23
+  %4 = select i1 %2, i32 25165824, i32 %3
   ret i32 %4
 }
 

@@ -1,12 +1,12 @@
 
-%"class.clang::DesignatedInitExpr::Designator.3182703" = type { i32, %union.anon.853.3182704 }
-%union.anon.853.3182704 = type { %"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182705" }
-%"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182705" = type { i64, %"class.clang::SourceLocation.3182706", %"class.clang::SourceLocation.3182706" }
-%"class.clang::SourceLocation.3182706" = type { i32 }
-%"class.llvm::MachineOperand.3184385" = type { i32, %union.anon.274.3184386, ptr, %"union.llvm::MachineOperand::ContentsUnion.3184387" }
-%union.anon.274.3184386 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3184387" = type { %"class.llvm::ArrayRef.275.3184388" }
-%"class.llvm::ArrayRef.275.3184388" = type { ptr, i64 }
+%"class.clang::DesignatedInitExpr::Designator.3182669" = type { i32, %union.anon.853.3182670 }
+%union.anon.853.3182670 = type { %"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182671" }
+%"struct.clang::DesignatedInitExpr::Designator::FieldDesignatorInfo.3182671" = type { i64, %"class.clang::SourceLocation.3182672", %"class.clang::SourceLocation.3182672" }
+%"class.clang::SourceLocation.3182672" = type { i32 }
+%"class.llvm::MachineOperand.3184351" = type { i32, %union.anon.274.3184352, ptr, %"union.llvm::MachineOperand::ContentsUnion.3184353" }
+%union.anon.274.3184352 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3184353" = type { %"class.llvm::ArrayRef.275.3184354" }
+%"class.llvm::ArrayRef.275.3184354" = type { ptr, i64 }
 
 ; 2 occurrences:
 ; lightgbm/optimized/sample_strategy.cpp.ll
@@ -42,9 +42,9 @@ entry:
 define i1 @func00000000000007e1(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182703", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182669", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 24
-  %6 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182703", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.clang::DesignatedInitExpr::Designator.3182669", ptr %0, i64 %1
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -61,9 +61,9 @@ entry:
 define i1 @func00000000000007c1(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MachineOperand.3184351", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  %6 = getelementptr nusw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.llvm::MachineOperand.3184351", ptr %0, i64 %1
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }

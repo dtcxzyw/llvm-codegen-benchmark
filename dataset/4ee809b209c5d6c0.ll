@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3085531" = type { %"class.hermes::vm::HermesValue.3085532" }
-%"class.hermes::vm::HermesValue.3085532" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3085497" = type { %"class.hermes::vm::HermesValue.3085498" }
+%"class.hermes::vm::HermesValue.3085498" = type { i64 }
 
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
@@ -50,7 +50,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085531", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085497", ptr %0, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }

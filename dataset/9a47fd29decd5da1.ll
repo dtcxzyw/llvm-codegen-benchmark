@@ -41,7 +41,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 29 occurrences:
+; 30 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -71,6 +71,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
 ; slurm/optimized/cbuf.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

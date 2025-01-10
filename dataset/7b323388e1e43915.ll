@@ -1,5 +1,5 @@
 
-%struct.iovec.2804990 = type { ptr, i64 }
+%struct.iovec.2804956 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -35,8 +35,8 @@ define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.iovec.2804990, ptr %0, i64 %4
-  %6 = getelementptr %struct.iovec.2804990, ptr %5, i64 %1
+  %5 = getelementptr %struct.iovec.2804956, ptr %0, i64 %4
+  %6 = getelementptr %struct.iovec.2804956, ptr %5, i64 %1
   ret ptr %6
 }
 

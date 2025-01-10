@@ -386,7 +386,7 @@ entry:
   ret i64 %3
 }
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/casCore.c.ll
 ; abc/optimized/cuddExport.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
@@ -472,7 +472,6 @@ entry:
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/collectedHeap.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openspiel/optimized/colored_trails.cc.ll

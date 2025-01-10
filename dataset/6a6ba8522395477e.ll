@@ -1,5 +1,5 @@
 
-%struct.SortTuple.3653185 = type { ptr, i64, i8, i32 }
+%struct.SortTuple.3653151 = type { ptr, i64, i8, i32 }
 
 ; 2 occurrences:
 ; clamav/optimized/qsort.c.ll
@@ -40,7 +40,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i32 %1, 0
   %.idx = select i1 %4, i64 0, i64 %3
-  %5 = getelementptr %struct.SortTuple.3653185, ptr %0, i64 %.idx
+  %5 = getelementptr %struct.SortTuple.3653151, ptr %0, i64 %.idx
   ret ptr %5
 }
 

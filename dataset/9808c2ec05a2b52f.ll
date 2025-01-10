@@ -654,7 +654,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smax.i64(i64, i64) #1
 
-; 106 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/kernel_timeout.cc.ll
 ; arrow/optimized/builder_run_end.cc.ll
 ; arrow/optimized/compare.cc.ll
@@ -670,7 +670,6 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 ; casadi/optimized/kinsol_direct.c.ll
 ; casadi/optimized/linear_interpolant.cpp.ll
 ; casadi/optimized/sundials_band.c.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -730,7 +729,6 @@ declare i64 @llvm.smax.i64(i64, i64) #1
 ; openjdk/optimized/os_linux.ll
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/streams.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; redis/optimized/expire.ll
 ; redis/optimized/module.ll
 ; redis/optimized/rdb.ll

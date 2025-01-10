@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -11,7 +11,6 @@
 ; folly/optimized/ThreadedExecutor.cpp.ll
 ; folly/optimized/TimedDrivableExecutor.cpp.ll
 ; lief/optimized/File.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll

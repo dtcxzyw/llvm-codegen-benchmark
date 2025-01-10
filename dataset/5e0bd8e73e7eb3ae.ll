@@ -25,6 +25,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 3
+  %4 = icmp slt i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 5 occurrences:
 ; linux/optimized/ialloc.ll
 ; linux/optimized/keyctl.ll

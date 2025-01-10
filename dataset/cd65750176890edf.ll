@@ -1,21 +1,21 @@
 
-%struct.rb_shape.2601294 = type { ptr, i64, i32, i32, i8, i8, i32, ptr }
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
-%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
-%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
-%struct.GdkRectangle.2734060 = type { i32, i32, i32, i32 }
-%"struct.std::pair.3449273" = type { i32, i32 }
+%struct.rb_shape.2601261 = type { ptr, i64, i32, i32, i8, i8, i32, ptr }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
+%"class.std::__1::tuple.2603517" = type { %"struct.std::__1::__tuple_impl.2603518" }
+%"struct.std::__1::__tuple_impl.2603518" = type <{ %"class.std::__1::__tuple_leaf.2603519", %"class.std::__1::__tuple_leaf.170.2603520", %"class.std::__1::__tuple_leaf.171.2603521", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603519" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603520" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::__tuple_leaf.171.2603521" = type { i8 }
+%struct.GdkRectangle.2734026 = type { i32, i32, i32, i32 }
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 113 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -208,7 +208,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = getelementptr %struct.rb_shape.2601294, ptr %0, i64 %2, i32 4
+  %3 = getelementptr %struct.rb_shape.2601261, ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -1624,7 +1624,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 33
-  %3 = getelementptr nuw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nuw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -1828,7 +1828,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr %"class.std::__1::tuple.2603550", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"class.std::__1::tuple.2603517", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
 }
 
@@ -1887,7 +1887,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
-  %3 = getelementptr nuw %struct.GdkRectangle.2734060, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nuw %struct.GdkRectangle.2734026, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -1898,7 +1898,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

@@ -1,11 +1,11 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2607775" = type { i32, i32, i32, %union.anon.6.2607777, i32, i32, i32, i32 }
-%union.anon.6.2607777 = type { i32 }
-%struct.ge_cached.2634118 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
-%struct.rx_pkt_history_st.2634601 = type { %struct.ossl_list_st_uint_set.2634602, i64 }
-%struct.ossl_list_st_uint_set.2634602 = type { ptr, ptr, i64 }
-%struct.transaction.2705455 = type { i32, i16, i16, [8 x i8] }
-%struct.SCC2698Block.2707066 = type { i8, i8 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2607742" = type { i32, i32, i32, %union.anon.6.2607744, i32, i32, i32, i32 }
+%union.anon.6.2607744 = type { i32 }
+%struct.ge_cached.2634085 = type { [10 x i32], [10 x i32], [10 x i32], [10 x i32] }
+%struct.rx_pkt_history_st.2634568 = type { %struct.ossl_list_st_uint_set.2634569, i64 }
+%struct.ossl_list_st_uint_set.2634569 = type { ptr, ptr, i64 }
+%struct.transaction.2705421 = type { i32, i16, i16, [8 x i8] }
+%struct.SCC2698Block.2707032 = type { i8, i8 }
 
 ; 80 occurrences:
 ; abc/optimized/abcGen.c.ll
@@ -92,7 +92,7 @@
 define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nuw [1 x %"struct.asmjit::_abi_1_10::RATiedReg.2607775"], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr nuw [1 x %"struct.asmjit::_abi_1_10::RATiedReg.2607742"], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -144,7 +144,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr nuw [8 x %struct.ge_cached.2634118], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [8 x %struct.ge_cached.2634085], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -157,7 +157,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [3 x %struct.rx_pkt_history_st.2634601], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  %3 = getelementptr [3 x %struct.rx_pkt_history_st.2634568], ptr %0, i64 0, i64 %2, i32 0, i32 2
   ret ptr %3
 }
 
@@ -221,7 +221,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr [4 x %struct.transaction.2705455], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [4 x %struct.transaction.2705421], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -250,7 +250,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr [4 x %struct.SCC2698Block.2707066], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [4 x %struct.SCC2698Block.2707032], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

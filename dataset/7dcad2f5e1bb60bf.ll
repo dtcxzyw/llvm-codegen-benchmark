@@ -1,5 +1,5 @@
 
-; 831 occurrences:
+; 845 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -41,6 +41,7 @@
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/7zStream.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/fmap.c.ll
@@ -161,12 +162,16 @@
 ; hermes/optimized/raw_ostream.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
 ; jemalloc/optimized/buf_writer.ll
 ; jemalloc/optimized/buf_writer.pic.ll
 ; jemalloc/optimized/buf_writer.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; libevent/optimized/buffer.c.ll
 ; libevent/optimized/http.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
@@ -277,6 +282,8 @@
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/datagram.ll
+; linux/optimized/deflate.ll
+; linux/optimized/devio.ll
 ; linux/optimized/dm-kcopyd.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/e820.ll
@@ -284,6 +291,7 @@
 ; linux/optimized/fatent.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/filter.ll
+; linux/optimized/gup.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_shmem.ll
@@ -563,10 +571,12 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/read.c.ll
 ; openusd/optimized/stream.c.ll
+; php/optimized/KeccakSponge.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/crypt_sha512.ll
 ; php/optimized/streams.ll
 ; portaudio/optimized/pa_process.c.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; postgres/optimized/backup_manifest.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/bbstreamer_tar.ll
@@ -634,6 +644,8 @@
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/linenoise.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/replication.ll
@@ -808,6 +820,8 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; wireshark/optimized/blf.c.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/uat_load.c.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; xgboost/optimized/c_api.cc.ll
@@ -842,9 +856,13 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 335 occurrences:
+; 340 occurrences:
+; abc/optimized/gzlib.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; clamav/optimized/tnef.c.ll
+; cmake/optimized/gzlib.c.ll
+; cmake/optimized/gzwrite.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; cpython/optimized/obmalloc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -1178,6 +1196,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1434,7 +1453,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; freetype/optimized/type1cid.c.ll
@@ -1451,6 +1470,7 @@ entry:
 ; linux/optimized/swapfile.ll
 ; linux/optimized/tables.ll
 ; linux/optimized/vc_screen.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; php/optimized/string.ll

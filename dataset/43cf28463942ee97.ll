@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -27,7 +27,6 @@
 ; graphviz/optimized/strmatch.c.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll
-; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/traversal.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/ushape.ll
@@ -100,7 +99,7 @@ entry:
   ret i32 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; cpython/optimized/sre.ll
@@ -139,7 +138,6 @@ entry:
 ; openusd/optimized/reformat.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_core_numa.c.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/t_string.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll

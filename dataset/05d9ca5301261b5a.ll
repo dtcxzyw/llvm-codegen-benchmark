@@ -1,20 +1,20 @@
 
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%struct.b3Contact4Data.2817673 = type { [4 x %class.b3Vector3.2817674], %class.b3Vector3.2817674, i16, i16, i32, i32, i32, i32, i32, i32, i32 }
-%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
-%union.anon.34.2817675 = type { [4 x float] }
-%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
-%struct.gmx_moltype_t.3371853 = type { ptr, %struct.t_atoms.3371854, %"struct.std::array.3371855", %"class.gmx::ListOfLists.3371856" }
-%struct.t_atoms.3371854 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
-%"struct.std::array.3371855" = type { [94 x %struct.InteractionList.3371857] }
-%struct.InteractionList.3371857 = type { %"class.std::vector.50.3371858" }
-%"class.std::vector.50.3371858" = type { %"struct.std::_Vector_base.51.3371859" }
-%"struct.std::_Vector_base.51.3371859" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" = type { ptr, ptr, ptr }
-%"class.gmx::ListOfLists.3371856" = type { %"class.std::vector.50.3371858", %"class.std::vector.50.3371858" }
-%"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820778" = type { [3 x %class.Polynomial.17.3820760] }
-%class.Polynomial.17.3820760 = type { [3 x double] }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%struct.b3Contact4Data.2817639 = type { [4 x %class.b3Vector3.2817640], %class.b3Vector3.2817640, i16, i16, i32, i32, i32, i32, i32, i32, i32 }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
+%struct.Abc_IffObj_t_.2876931 = type { [7 x float] }
+%struct.gmx_moltype_t.3371819 = type { ptr, %struct.t_atoms.3371820, %"struct.std::array.3371821", %"class.gmx::ListOfLists.3371822" }
+%struct.t_atoms.3371820 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
+%"struct.std::array.3371821" = type { [94 x %struct.InteractionList.3371823] }
+%struct.InteractionList.3371823 = type { %"class.std::vector.50.3371824" }
+%"class.std::vector.50.3371824" = type { %"struct.std::_Vector_base.51.3371825" }
+%"struct.std::_Vector_base.51.3371825" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371826" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371826" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371827" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371827" = type { ptr, ptr, ptr }
+%"class.gmx::ListOfLists.3371822" = type { %"class.std::vector.50.3371824", %"class.std::vector.50.3371824" }
+%"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820728" = type { [3 x %class.Polynomial.17.3820710] }
+%class.Polynomial.17.3820710 = type { [3 x double] }
 
 ; 3 occurrences:
 ; linux/optimized/uncore_snbep.ll
@@ -24,7 +24,7 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.direntry_t.2705800, ptr %1, i64 %3
+  %4 = getelementptr %struct.direntry_t.2705766, ptr %1, i64 %3
   %5 = getelementptr [11 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -86,8 +86,8 @@ entry:
 define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.b3Contact4Data.2817673, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw [4 x %class.b3Vector3.2817674], ptr %4, i64 0, i64 %0
+  %4 = getelementptr nusw %struct.b3Contact4Data.2817639, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw [4 x %class.b3Vector3.2817640], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -105,7 +105,7 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876965, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876931, ptr %1, i64 %3
   %5 = getelementptr nusw [7 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -119,8 +119,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.gmx_moltype_t.3371853, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw [94 x %struct.InteractionList.3371857], ptr %4, i64 0, i64 %0
+  %4 = getelementptr %struct.gmx_moltype_t.3371819, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw [94 x %struct.InteractionList.3371823], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -130,8 +130,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820778", ptr %1, i64 %3
-  %5 = getelementptr nusw [3 x %class.Polynomial.17.3820760], ptr %4, i64 0, i64 %0
+  %4 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820728", ptr %1, i64 %3
+  %5 = getelementptr nusw [3 x %class.Polynomial.17.3820710], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

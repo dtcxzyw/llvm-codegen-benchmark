@@ -17,15 +17,6 @@ func000000000000008c:                   // @func000000000000008c
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000146:                   // @func0000000000000146
-// %bb.0:                               // %entry
-	sxtb	w8, w0
-	sxtb	w9, w2
-	cmp	w8, w1, sxtb
-	ccmp	w9, #0, #8, lt
-	cset	w0, ge
-	ret
-                                        // -- End function
 func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
 	sxtb	w8, w0
@@ -34,6 +25,15 @@ func00000000000000ca:                   // @func00000000000000ca
 	cmp	w8, #0
 	ccmp	w10, w9, #0, ge
 	cset	w0, lt
+	ret
+                                        // -- End function
+func0000000000000146:                   // @func0000000000000146
+// %bb.0:                               // %entry
+	sxtb	w8, w0
+	sxtb	w9, w2
+	cmp	w8, w1, sxtb
+	ccmp	w9, #0, #8, lt
+	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024

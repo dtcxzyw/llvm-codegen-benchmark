@@ -1,11 +1,11 @@
 
-%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
-%struct.GuestFD.2706729 = type { i32, %union.anon.2706730 }
-%union.anon.2706730 = type { %struct.anon.2706731 }
-%struct.anon.2706731 = type { ptr, i64, i64 }
-%class.OopMapBlock.2740101 = type { i32, i32 }
-%union.TValue.3680757 = type { i64 }
-%"class.icu_75::DayPeriodRules.3717349" = type { i8, i8, [24 x i32] }
+%struct.redblack_node.2601262 = type { i64, ptr, i32, i32 }
+%struct.GuestFD.2706695 = type { i32, %union.anon.2706696 }
+%union.anon.2706696 = type { %struct.anon.2706697 }
+%struct.anon.2706697 = type { ptr, i64, i64 }
+%class.OopMapBlock.2740067 = type { i32, i32 }
+%union.TValue.3680707 = type { i64 }
+%"class.icu_75::DayPeriodRules.3717299" = type { i8, i8, [24 x i32] }
 
 ; 2 occurrences:
 ; ruby/optimized/shape.ll
@@ -14,7 +14,7 @@
 define ptr @func0000000000000001(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2601295, ptr %1, i64 %3
+  %4 = getelementptr %struct.redblack_node.2601262, ptr %1, i64 %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6
@@ -28,7 +28,7 @@ entry:
 define ptr @func0000000000000081(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.GuestFD.2706729, ptr %1, i64 %3
+  %4 = getelementptr %struct.GuestFD.2706695, ptr %1, i64 %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6
@@ -60,7 +60,7 @@ entry:
 define ptr @func0000000000000061(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.OopMapBlock.2740101, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %class.OopMapBlock.2740067, ptr %1, i64 %3
   %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6
@@ -87,7 +87,7 @@ entry:
 define ptr @func00000000000000e4(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %union.TValue.3680757, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %union.TValue.3680707, ptr %1, i64 %3
   %5 = icmp ult i32 %0, 65536
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6
@@ -100,7 +100,7 @@ entry:
 define ptr @func00000000000000e1(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.icu_75::DayPeriodRules.3717349", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.icu_75::DayPeriodRules.3717299", ptr %1, i64 %3
   %5 = icmp eq i32 %0, -1
   %6 = select i1 %5, ptr null, ptr %4
   ret ptr %6

@@ -1,26 +1,26 @@
 
-%"struct.rocksdb::FSReadRequest.2629025" = type { i64, i64, ptr, %"class.rocksdb::Slice.2629015", %"class.rocksdb::IOStatus.2628992", %"class.std::unique_ptr.44.2629026" }
-%"class.rocksdb::Slice.2629015" = type { ptr, i64 }
-%"class.rocksdb::IOStatus.2628992" = type { %"class.rocksdb::Status.2628993" }
-%"class.rocksdb::Status.2628993" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2628994" }
-%"class.std::unique_ptr.2628994" = type { %"struct.std::__uniq_ptr_data.2628995" }
-%"struct.std::__uniq_ptr_data.2628995" = type { %"class.std::__uniq_ptr_impl.2628996" }
-%"class.std::__uniq_ptr_impl.2628996" = type { %"class.std::tuple.2628997" }
-%"class.std::tuple.2628997" = type { %"struct.std::_Tuple_impl.2628998" }
-%"struct.std::_Tuple_impl.2628998" = type { %"struct.std::_Head_base.1.2628999" }
-%"struct.std::_Head_base.1.2628999" = type { ptr }
-%"class.std::unique_ptr.44.2629026" = type { %"struct.std::__uniq_ptr_data.45.2629027" }
-%"struct.std::__uniq_ptr_data.45.2629027" = type { %"class.std::__uniq_ptr_impl.46.2629028" }
-%"class.std::__uniq_ptr_impl.46.2629028" = type { %"class.std::tuple.47.2629029" }
-%"class.std::tuple.47.2629029" = type { %"struct.std::_Tuple_impl.48.2629030" }
-%"struct.std::_Tuple_impl.48.2629030" = type { %"struct.std::_Tuple_impl.49.2629031", %"struct.std::_Head_base.51.2629032" }
-%"struct.std::_Tuple_impl.49.2629031" = type { %"struct.std::_Head_base.50.2629033" }
-%"struct.std::_Head_base.50.2629033" = type { %"class.std::function.2629034" }
-%"class.std::function.2629034" = type { %"class.std::_Function_base.2629035", ptr }
-%"class.std::_Function_base.2629035" = type { %"union.std::_Any_data.2629036", ptr }
-%"union.std::_Any_data.2629036" = type { %"union.std::_Nocopy_types.2629037" }
-%"union.std::_Nocopy_types.2629037" = type { { i64, i64 } }
-%"struct.std::_Head_base.51.2629032" = type { ptr }
+%"struct.rocksdb::FSReadRequest.2628992" = type { i64, i64, ptr, %"class.rocksdb::Slice.2628982", %"class.rocksdb::IOStatus.2628959", %"class.std::unique_ptr.44.2628993" }
+%"class.rocksdb::Slice.2628982" = type { ptr, i64 }
+%"class.rocksdb::IOStatus.2628959" = type { %"class.rocksdb::Status.2628960" }
+%"class.rocksdb::Status.2628960" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2628961" }
+%"class.std::unique_ptr.2628961" = type { %"struct.std::__uniq_ptr_data.2628962" }
+%"struct.std::__uniq_ptr_data.2628962" = type { %"class.std::__uniq_ptr_impl.2628963" }
+%"class.std::__uniq_ptr_impl.2628963" = type { %"class.std::tuple.2628964" }
+%"class.std::tuple.2628964" = type { %"struct.std::_Tuple_impl.2628965" }
+%"struct.std::_Tuple_impl.2628965" = type { %"struct.std::_Head_base.1.2628966" }
+%"struct.std::_Head_base.1.2628966" = type { ptr }
+%"class.std::unique_ptr.44.2628993" = type { %"struct.std::__uniq_ptr_data.45.2628994" }
+%"struct.std::__uniq_ptr_data.45.2628994" = type { %"class.std::__uniq_ptr_impl.46.2628995" }
+%"class.std::__uniq_ptr_impl.46.2628995" = type { %"class.std::tuple.47.2628996" }
+%"class.std::tuple.47.2628996" = type { %"struct.std::_Tuple_impl.48.2628997" }
+%"struct.std::_Tuple_impl.48.2628997" = type { %"struct.std::_Tuple_impl.49.2628998", %"struct.std::_Head_base.51.2628999" }
+%"struct.std::_Tuple_impl.49.2628998" = type { %"struct.std::_Head_base.50.2629000" }
+%"struct.std::_Head_base.50.2629000" = type { %"class.std::function.2629001" }
+%"class.std::function.2629001" = type { %"class.std::_Function_base.2629002", ptr }
+%"class.std::_Function_base.2629002" = type { %"union.std::_Any_data.2629003", ptr }
+%"union.std::_Any_data.2629003" = type { %"union.std::_Nocopy_types.2629004" }
+%"union.std::_Nocopy_types.2629004" = type { { i64, i64 } }
+%"struct.std::_Head_base.51.2628999" = type { ptr }
 
 ; 1 occurrences:
 ; rocksdb/optimized/random_access_file_reader.cc.ll
@@ -28,8 +28,8 @@
 define ptr @func000000000000000b(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %"struct.rocksdb::FSReadRequest.2629025", ptr %0, i64 %1
-  %5 = getelementptr %"struct.rocksdb::FSReadRequest.2629025", ptr %4, i64 %3, i32 4
+  %4 = getelementptr %"struct.rocksdb::FSReadRequest.2628992", ptr %0, i64 %1
+  %5 = getelementptr %"struct.rocksdb::FSReadRequest.2628992", ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 

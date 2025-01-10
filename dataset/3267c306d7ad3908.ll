@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 86 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -20,8 +20,6 @@
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
-; llvm/optimized/APFixedPoint.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll

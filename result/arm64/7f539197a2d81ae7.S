@@ -1,11 +1,3 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	sub	x9, x1, #1
-	mov	w8, #1                          // =0x1
-	cmp	x0, x9
-	cinc	w0, w8, ne
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	sub	x8, x1, #1

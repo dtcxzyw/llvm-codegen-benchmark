@@ -12,7 +12,7 @@ func000000000000007f:                   # @func000000000000007f
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 8
 	ret
-func0000000000000070:                   # @func0000000000000070
+func0000000000000072:                   # @func0000000000000072
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	li	a0, 52

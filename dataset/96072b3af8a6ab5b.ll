@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; git/optimized/strbuf.ll
 ; opencv/optimized/matrix_wrap.cpp.ll

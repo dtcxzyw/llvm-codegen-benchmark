@@ -1,5 +1,5 @@
 
-%"struct.open_spiel::chess::Piece.3479215" = type { i8, i8 }
+%"struct.open_spiel::chess::Piece.3479181" = type { i8, i8 }
 
 ; 4 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -26,7 +26,7 @@ entry:
   %4 = zext nneg i16 %3 to i32
   %5 = add nuw nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479215"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [64 x %"struct.open_spiel::chess::Piece.3479181"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

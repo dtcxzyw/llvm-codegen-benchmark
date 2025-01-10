@@ -254,6 +254,14 @@ func000000000000008a:                   # @func000000000000008a
 	setge	%al
 	andb	%cl, %al
 	retq
+func00000000000000c1:                   # @func00000000000000c1
+	cmpl	$255, %edx
+	setl	%cl
+	andb	%dil, %cl
+	testl	%esi, %esi
+	sete	%al
+	andb	%cl, %al
+	retq
 func0000000000000086:                   # @func0000000000000086
 	cmpl	$3, %edx
 	setb	%cl

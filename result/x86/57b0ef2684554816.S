@@ -12,10 +12,6 @@ func0000000000000054:                   # @func0000000000000054
 	addl	%esi, %edi
 	leal	-1(%rdi,%rdx,2), %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	addl	%esi, %edi
-	leal	-1(%rdi,%rdx,2), %eax
-	retq
 func0000000000000041:                   # @func0000000000000041
 	addl	%esi, %edi
 	leal	10000(%rdi,%rdx,2), %eax
@@ -28,6 +24,10 @@ func0000000000000055:                   # @func0000000000000055
 	shll	$12, %edx
 	addl	%esi, %edi
 	leal	-57344(%rdx,%rdi), %eax
+	retq
+func0000000000000040:                   # @func0000000000000040
+	addl	%esi, %edi
+	leal	-1(%rdi,%rdx,2), %eax
 	retq
 func00000000000000c0:                   # @func00000000000000c0
 	addl	%esi, %edi

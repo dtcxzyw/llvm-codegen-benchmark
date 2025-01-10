@@ -7713,7 +7713,7 @@ entry:
   ret i32 %1
 }
 
-; 5011 occurrences:
+; 5005 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -7732,10 +7732,7 @@ entry:
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cnfWrite.c.ll
@@ -8462,7 +8459,6 @@ entry:
 ; git/optimized/range-diff.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/ref-filter.ll
-; git/optimized/refs.ll
 ; git/optimized/remote-curl.ll
 ; git/optimized/show-branch.ll
 ; git/optimized/submodule--helper.ll
@@ -10603,7 +10599,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-x_name.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
@@ -11268,7 +11263,6 @@ entry:
 ; ruby/optimized/prism.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/re.ll
-; ruby/optimized/regexec.ll
 ; ruby/optimized/regexp.ll
 ; ruby/optimized/ruby.ll
 ; ruby/optimized/sprintf.ll

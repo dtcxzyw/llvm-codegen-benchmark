@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.461.3082118" = type { %"class.hermes::vm::HermesValue.3081990" }
-%"class.hermes::vm::HermesValue.3081990" = type { i64 }
-%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
-%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
+%"class.hermes::vm::GCHermesValueBase.461.3082084" = type { %"class.hermes::vm::HermesValue.3081956" }
+%"class.hermes::vm::HermesValue.3081956" = type { i64 }
+%union.acpi_object.3547831 = type { %struct.anon.8.3547832 }
+%struct.anon.8.3547832 = type { i32, i32, i64, i32 }
 
 ; 36 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -60,6 +60,21 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/binfmt_elf.ll
+; linux/optimized/compat_binfmt_elf.ll
+; linux/optimized/drm_hdcp_helper.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 544
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2176
   ret ptr %5
 }
 
@@ -201,7 +216,7 @@ entry:
   %2 = mul nuw i32 %1, 3
   %3 = add nuw i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.461.3082118", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.461.3082084", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -229,20 +244,6 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; linux/optimized/binfmt_elf.ll
-; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/drm_hdcp_helper.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 24
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 16
-  ret ptr %5
-}
-
 ; 2 occurrences:
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; linux/optimized/apple.ll
@@ -252,7 +253,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %4
+  %5 = getelementptr %union.acpi_object.3547831, ptr %0, i64 %4
   ret ptr %5
 }
 

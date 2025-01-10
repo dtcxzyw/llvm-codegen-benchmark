@@ -1,10 +1,10 @@
 
-%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
-%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
-%"class.hermes::vm::SymbolID.3078638" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
-%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
-%union.anon.3.3078640 = type { i32 }
+%"struct.std::pair.3078601" = type { %"class.hermes::vm::GCSymbolID.3078602", %"struct.hermes::vm::NamedPropertyDescriptor.3078603" }
+%"class.hermes::vm::GCSymbolID.3078602" = type { %"class.hermes::vm::SymbolID.3078604" }
+%"class.hermes::vm::SymbolID.3078604" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078603" = type { %"struct.hermes::vm::PropertyDescriptor.3078605" }
+%"struct.hermes::vm::PropertyDescriptor.3078605" = type { %union.anon.3.3078606, i32 }
+%union.anon.3.3078606 = type { i32 }
 
 ; 29 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -294,7 +294,7 @@ define i64 @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.std::pair.3078635", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3078601", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

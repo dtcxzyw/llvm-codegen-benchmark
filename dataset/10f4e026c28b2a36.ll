@@ -188,7 +188,7 @@ entry:
   ret i32 %5
 }
 
-; 77 occurrences:
+; 76 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -226,7 +226,6 @@ entry:
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlcGraft.c.ll
 ; casadi/optimized/cs_util.c.ll
-; clamav/optimized/dlp.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll

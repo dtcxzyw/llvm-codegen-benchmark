@@ -1,6 +1,6 @@
 
-%struct.extCard.3484972 = type { i32, i32, i32 }
-%struct.nfs4_string.3541666 = type { i32, ptr }
+%struct.extCard.3484938 = type { i32, i32, i32 }
+%struct.nfs4_string.3541632 = type { i32, ptr }
 
 ; 7 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -32,7 +32,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 112
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = sext i32 %0 to i64
-  %6 = getelementptr nusw [4 x %struct.extCard.3484972], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw [4 x %struct.extCard.3484938], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 8400
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = sext i32 %0 to i64
-  %6 = getelementptr [512 x %struct.nfs4_string.3541666], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [512 x %struct.nfs4_string.3541632], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -152,8 +152,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; cmake/optimized/cmString.cxx.ll
+; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {

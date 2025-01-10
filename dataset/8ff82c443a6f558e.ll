@@ -1,5 +1,5 @@
 
-%struct.CPpmd_State.3878271 = type { i8, i8, i16, i16 }
+%struct.CPpmd_State.3878221 = type { i8, i8, i16, i16 }
 
 ; 3 occurrences:
 ; hyperscan/optimized/mcclellan.c.ll
@@ -50,7 +50,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw nuw %struct.CPpmd_State.3878271, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.CPpmd_State.3878221, ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 6
   ret ptr %7
 }

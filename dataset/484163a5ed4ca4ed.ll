@@ -1,6 +1,6 @@
 
-%union.anon.273.3569421 = type { %"struct.cvc5::internal::Minisat::Lit.3569420" }
-%"struct.cvc5::internal::Minisat::Lit.3569420" = type { i32 }
+%union.anon.273.3569387 = type { %"struct.cvc5::internal::Minisat::Lit.3569386" }
+%"struct.cvc5::internal::Minisat::Lit.3569386" = type { i32 }
 
 ; 25 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -68,7 +68,7 @@ entry:
   %2 = lshr i32 %1, 5
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw nuw [0 x %union.anon.273.3569421], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [0 x %union.anon.273.3569387], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,15 +1,15 @@
 
-%"struct.std::pair.138.2821352" = type { %"struct.flatbuffers::Value.2821351", ptr }
-%"struct.flatbuffers::Value.2821351" = type <{ %"struct.flatbuffers::Type.2821344", %"class.std::__cxx11::basic_string.2821336", i16, [6 x i8] }>
-%"struct.flatbuffers::Type.2821344" = type <{ i32, i32, ptr, ptr, i16, [6 x i8] }>
-%"class.std::__cxx11::basic_string.2821336" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2821338", i64, %union.anon.2821339 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2821338" = type { ptr }
-%union.anon.2821339 = type { i64, [8 x i8] }
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
+%"struct.std::pair.138.2821318" = type { %"struct.flatbuffers::Value.2821317", ptr }
+%"struct.flatbuffers::Value.2821317" = type <{ %"struct.flatbuffers::Type.2821310", %"class.std::__cxx11::basic_string.2821302", i16, [6 x i8] }>
+%"struct.flatbuffers::Type.2821310" = type <{ i32, i32, ptr, ptr, i16, [6 x i8] }>
+%"class.std::__cxx11::basic_string.2821302" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2821304", i64, %union.anon.2821305 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2821304" = type { ptr }
+%union.anon.2821305 = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
 
 ; 3 occurrences:
 ; linux/optimized/namei.ll
@@ -207,7 +207,7 @@ entry:
 define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr nusw %"struct.std::pair.138.2821352", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.std::pair.138.2821318", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -80
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -246,7 +246,7 @@ entry:
 define i1 @func0000000000000341(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %1, i64 %3
+  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -40
   %6 = icmp eq ptr %5, %4
   ret i1 %6

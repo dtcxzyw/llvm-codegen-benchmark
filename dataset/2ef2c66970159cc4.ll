@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
@@ -132,6 +132,7 @@
 ; postgres/optimized/scan.ll
 ; postgres/optimized/tsvector_parser.ll
 ; qemu/optimized/fdt_ro.c.ll
+; qemu/optimized/hw_usb_core.c.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/vm.ll
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
@@ -223,7 +224,7 @@ entry:
   ret i1 %5
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; cmake/optimized/x86.c.ll
 ; cpython/optimized/longobject.ll
@@ -273,6 +274,7 @@ entry:
 ; minetest/optimized/mg_ore.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/block_mean_hash.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -304,13 +306,14 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/scatterwalk.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -356,7 +359,7 @@ entry:
   ret i1 %5
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/gzread.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -417,6 +420,7 @@ entry:
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openusd/optimized/aom_scale.c.ll
 ; php/optimized/zend_jit.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/background_thread.ll
 ; redis/optimized/background_thread.sym.ll
@@ -927,11 +931,13 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/url_parse.cc.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; minetest/optimized/guiEditBox.cpp.ll
 ; openjdk/optimized/hb-ot-math.ll
+; php/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -2342,7 +2348,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/fraigFeed.c.ll
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswSweep.c.ll
@@ -2365,7 +2371,6 @@ entry:
 ; openspiel/optimized/y.cc.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
@@ -2377,11 +2382,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; icu/optimized/string_segment.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001a4(i32 %0, i32 %1, i64 %2) #0 {
 entry:

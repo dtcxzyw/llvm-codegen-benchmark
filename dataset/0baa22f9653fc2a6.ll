@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2612206" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207", i64, %union.anon.2612208 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207" = type { ptr }
-%union.anon.2612208 = type { i64, [8 x i8] }
-%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
+%"class.std::__cxx11::basic_string.2612173" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174", i64, %union.anon.2612175 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174" = type { ptr }
+%union.anon.2612175 = type { i64, [8 x i8] }
+%struct.CommandTagBehavior.3652146 = type { ptr, i8, i8, i8, i8 }
 
 ; 374 occurrences:
 ; abc/optimized/saigSwitch.c.ll
@@ -1273,7 +1273,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 4
-  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612206", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612173", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1294,7 +1294,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr i64 %4, 5
-  %6 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %5
+  %6 = getelementptr %struct.CommandTagBehavior.3652146, ptr %0, i64 %5
   ret ptr %6
 }
 

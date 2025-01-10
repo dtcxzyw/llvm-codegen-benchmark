@@ -1,6 +1,6 @@
 
-%struct.aiFace.2823562 = type { i32, ptr }
-%struct.posix_acl_xattr_entry.3548205 = type { i16, i16, i32 }
+%struct.aiFace.2823528 = type { i32, ptr }
+%struct.posix_acl_xattr_entry.3548171 = type { i16, i16, i32 }
 
 ; 9 occurrences:
 ; abc/optimized/utilSort.c.ll
@@ -46,7 +46,7 @@ define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %struct.aiFace.2823562, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.aiFace.2823528, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -152,7 +152,7 @@ define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %struct.posix_acl_xattr_entry.3548205, ptr %1, i64 %4
+  %5 = getelementptr %struct.posix_acl_xattr_entry.3548171, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7

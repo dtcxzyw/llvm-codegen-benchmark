@@ -37,7 +37,7 @@ entry:
   ret ptr %5
 }
 
-; 141 occurrences:
+; 138 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; boost/optimized/src.ll
@@ -120,8 +120,6 @@ entry:
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/attachListener_posix.ll
 ; openjdk/optimized/pngread.ll
 ; openmpi/optimized/mpl_env.ll
 ; openssl/optimized/libcrypto-lib-conf_def.ll
@@ -132,7 +130,6 @@ entry:
 ; proj/optimized/param.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
-; stb/optimized/stb_sprintf.c.ll
 ; turborepo-rs/optimized/5x6vf5oc1gv1cmh03slcaf29a.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
@@ -188,7 +185,7 @@ entry:
   ret ptr %5
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -216,6 +213,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; lua/optimized/lbaselib.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
+; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; openjdk/optimized/attachListener_posix.ll
 ; openjdk/optimized/jvmciCodeInstaller_x86.ll
@@ -226,6 +224,7 @@ entry:
 ; php/optimized/array.ll
 ; slurm/optimized/env.ll
 ; spike/optimized/interactive.ll
+; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i1 %2) #0 {
 entry:

@@ -1,9 +1,10 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; libquic/optimized/cfb64ede.c.ll
+; libwebp/optimized/vp8_dec.c.ll
 ; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll

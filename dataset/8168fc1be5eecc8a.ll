@@ -124,7 +124,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 24 occurrences:
+; 23 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -133,7 +133,6 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/property.ll
 ; linux/optimized/sbitmap.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; openjdk/optimized/pngrutil.ll
@@ -177,7 +176,7 @@ entry:
   ret i1 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/sclBufSize.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -231,6 +230,7 @@ entry:
 ; wireshark/optimized/opcua.c.ll
 ; wireshark/optimized/packet-dcerpc-mapi.c.ll
 ; wireshark/optimized/packet-giop.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
@@ -391,8 +391,18 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/scatterwalk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ugt i64 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; pocketpy/optimized/collections.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {

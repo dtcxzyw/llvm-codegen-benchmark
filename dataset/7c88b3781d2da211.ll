@@ -1,5 +1,5 @@
 
-; 16078 occurrences:
+; 16075 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -121,7 +121,6 @@
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cmd.c.ll
-; abc/optimized/cmdApi.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cnfPost.c.ll
 ; abc/optimized/cnfUtil.c.ll
@@ -1461,7 +1460,6 @@
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/lzma_encoder_presets.c.ll
 ; cmake/optimized/mime.c.ll
 ; cmake/optimized/mprintf.c.ll
@@ -2576,6 +2574,7 @@
 ; git/optimized/checkout.ll
 ; git/optimized/clean.ll
 ; git/optimized/clone.ll
+; git/optimized/column.ll
 ; git/optimized/combine-diff.ll
 ; git/optimized/commit-reach.ll
 ; git/optimized/commit.ll
@@ -4365,7 +4364,6 @@
 ; libquic/optimized/tasn_dec.c.ll
 ; libquic/optimized/tasn_enc.c.ll
 ; libquic/optimized/tcp_cubic_sender_base.cc.ll
-; libquic/optimized/time.cc.ll
 ; libquic/optimized/time_posix.cc.ll
 ; libquic/optimized/tls_record.c.ll
 ; libquic/optimized/trees.c.ll
@@ -13050,7 +13048,6 @@
 ; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
 ; slurm/optimized/dbd_conn.ll
 ; slurm/optimized/dist_tasks.ll
-; slurm/optimized/eio.ll
 ; slurm/optimized/env.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/eval_nodes_block.ll

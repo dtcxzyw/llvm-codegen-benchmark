@@ -1,5 +1,5 @@
 
-%struct.ParallelHashJoinBatchAccessor.3652777 = type { ptr, i64, i64, i64, i64, i64, i8, i8, i8, ptr, ptr }
+%struct.ParallelHashJoinBatchAccessor.3652743 = type { ptr, i64, i64, i64, i64, i64, i8, i8, i8, ptr, ptr }
 
 ; 9 occurrences:
 ; abc/optimized/cnfCut.c.ll
@@ -42,7 +42,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = srem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.ParallelHashJoinBatchAccessor.3652777, ptr %0, i64 %5
+  %6 = getelementptr %struct.ParallelHashJoinBatchAccessor.3652743, ptr %0, i64 %5
   ret ptr %6
 }
 

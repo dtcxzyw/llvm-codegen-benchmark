@@ -26,20 +26,6 @@ func0000000000000052:                   // @func0000000000000052
 	csel	w0, w8, w1, lt
 	ret
                                         // -- End function
-func0000000000000062:                   // @func0000000000000062
-// %bb.0:                               // %entry
-	add	w8, w0, w2
-	cmp	w8, w1
-	csel	w0, w8, w1, lt
-	ret
-                                        // -- End function
-func000000000000007a:                   // @func000000000000007a
-// %bb.0:                               // %entry
-	add	w8, w0, w2
-	cmp	w8, w1
-	csel	w0, w8, w1, lt
-	ret
-                                        // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
 	add	w8, w0, w2

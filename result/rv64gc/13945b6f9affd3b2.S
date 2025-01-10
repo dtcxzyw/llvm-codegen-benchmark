@@ -1,3 +1,9 @@
+func0000000000000024:                   # @func0000000000000024
+	andi	a1, a1, 255
+	slliw	a0, a0, 8
+	or	a0, a0, a1
+	sltiu	a0, a0, 128
+	ret
 func00000000000000e1:                   # @func00000000000000e1
 	andi	a1, a1, 255
 	slliw	a0, a0, 8
@@ -69,12 +75,6 @@ func00000000000001ac:                   # @func00000000000001ac
 	slliw	a0, a0, 24
 	or	a0, a0, a1
 	snez	a0, a0
-	ret
-func0000000000000024:                   # @func0000000000000024
-	andi	a1, a1, 255
-	slliw	a0, a0, 8
-	or	a0, a0, a1
-	sltiu	a0, a0, 128
 	ret
 func0000000000000126:                   # @func0000000000000126
 	andi	a1, a1, 255

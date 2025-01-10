@@ -1,12 +1,12 @@
 
-%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
-%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
-%struct.BEInt.156.2734510 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
-%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
+%"struct.OT::MathValueRecord.2734473" = type { %"struct.OT::IntType.155.2734474", %"struct.OT::OffsetTo.157.2734475" }
+%"struct.OT::IntType.155.2734474" = type { %struct.BEInt.156.2734476 }
+%struct.BEInt.156.2734476 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734475" = type { %"struct.OT::Offset.2734477" }
+%"struct.OT::Offset.2734477" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -147,9 +147,9 @@ entry:
 define ptr @func00000000000001bf(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2
-  %4 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734473", ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nuw %"struct.OT::MathValueRecord.2734507", ptr %4, i64 %5, i32 0, i32 0, i32 0, i64 1
+  %6 = getelementptr nuw %"struct.OT::MathValueRecord.2734473", ptr %4, i64 %5, i32 0, i32 0, i32 0, i64 1
   ret ptr %6
 }
 
@@ -202,9 +202,9 @@ entry:
 define ptr @func000000000000012f(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3213948", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3213914", ptr %3, i64 %0
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nuw %"class.llvm::Use.3213948", ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %"class.llvm::Use.3213914", ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

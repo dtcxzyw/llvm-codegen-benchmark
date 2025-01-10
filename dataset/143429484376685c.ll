@@ -40,7 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -50,6 +50,7 @@ entry:
 ; csmith/optimized/Block.cpp.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/cut_log.cpp.ll
+; git/optimized/writer.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -122,8 +123,9 @@ entry:
   ret i64 %5
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/bblif.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/io_collada.cpp.ll
@@ -195,30 +197,6 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 1
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; git/optimized/writer.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

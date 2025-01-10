@@ -67,7 +67,7 @@ entry:
   %1 = sdiv i64 %0, 256
   %2 = tail call i64 @llvm.smin.i64(i64 %1, i64 320)
   %3 = tail call i64 @llvm.smax.i64(i64 %2, i64 8)
-  %4 = and i64 %3, 9223372036854775800
+  %4 = and i64 %3, 504
   ret i64 %4
 }
 

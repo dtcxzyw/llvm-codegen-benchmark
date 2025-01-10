@@ -52,7 +52,7 @@ entry:
   ret i64 %5
 }
 
-; 803 occurrences:
+; 802 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -89,7 +89,6 @@ entry:
 ; casadi/optimized/cvodes_bandpre.c.ll
 ; casadi/optimized/cvodes_bbdpre.c.ll
 ; casadi/optimized/cvodes_direct.c.ll
-; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/kinsol_direct.c.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -1131,7 +1130,7 @@ entry:
   ret i64 %5
 }
 
-; 69 occurrences:
+; 64 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/bspline.cpp.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
@@ -1156,9 +1155,6 @@ entry:
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; icu/optimized/genrb.ll
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
@@ -1191,8 +1187,6 @@ entry:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quickjs/optimized/quickjs.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/large.ll
@@ -1367,8 +1361,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 16 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; boost/optimized/approximately_equals.ll
@@ -1388,7 +1381,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 760
+  %3 = add nuw nsw i64 %2, 23
   %4 = add nsw i64 %3, %1
   %5 = add nsw i64 %4, %0
   ret i64 %5
@@ -1628,6 +1621,26 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
+  %4 = add nuw i64 %3, %1
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 10 occurrences:
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -4096
   %4 = add nuw i64 %3, %1
   %5 = add i64 %4, %0
   ret i64 %5

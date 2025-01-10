@@ -35,13 +35,6 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
-	addq	$8191, %rsi                     # imm = 0x1FFF
-	andq	$-8192, %rsi                    # imm = 0xE000
-	decq	%rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
 func0000000000000041:                   # @func0000000000000041
 	decq	%rsi
 	movb	$63, %al

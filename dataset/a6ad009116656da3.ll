@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/dchSim.c.ll
@@ -42,7 +42,6 @@
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/regexec.ll
 ; protobuf/optimized/field_comparator.cc.ll
 ; qemu/optimized/net_can_can_core.c.ll
 ; qemu/optimized/tcg.c.ll

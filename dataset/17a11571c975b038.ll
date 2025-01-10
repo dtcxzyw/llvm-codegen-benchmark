@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/sundials_band.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -10,6 +10,7 @@
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/pegen.ll
 ; cpython/optimized/suggestions.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/hugetlb.ll

@@ -20,14 +20,6 @@ func0000000000000086:                   # @func0000000000000086
 	min	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000106:                   # @func0000000000000106
-	sext.w	a0, a0
-	sext.w	a1, a1
-	srli	a2, a2, 3
-	sext.w	a2, a2
-	min	a1, a1, a2
-	slt	a0, a0, a1
-	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -52,12 +44,4 @@ func000000000000008b:                   # @func000000000000008b
 	min	a1, a2, a1
 	slt	a0, a0, a1
 	xori	a0, a0, 1
-	ret
-func000000000000010a:                   # @func000000000000010a
-	sext.w	a0, a0
-	sext.w	a1, a1
-	srli	a2, a2, 1
-	sext.w	a2, a2
-	min	a1, a1, a2
-	slt	a0, a1, a0
 	ret

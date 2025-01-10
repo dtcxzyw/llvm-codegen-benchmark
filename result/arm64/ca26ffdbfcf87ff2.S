@@ -20,6 +20,17 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
+func0000000000000088:                   // @func0000000000000088
+// %bb.0:                               // %entry
+	cmp	w1, w2
+	mov	w9, #51712                      // =0xca00
+	csel	w8, w1, w2, lo
+	movk	w9, #15258, lsl #16
+	mul	x8, x0, x8
+	cmp	x8, x9
+	cset	w0, hi
+	ret
+                                        // -- End function
 func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
 	cmp	w1, w2

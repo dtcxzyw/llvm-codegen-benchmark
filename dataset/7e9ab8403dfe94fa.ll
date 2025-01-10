@@ -1,6 +1,6 @@
 
-%"struct.llvm::detail::DenseMapPair.3167213" = type { %"struct.std::pair.3167214" }
-%"struct.std::pair.3167214" = type { ptr, ptr }
+%"struct.llvm::detail::DenseMapPair.3167179" = type { %"struct.std::pair.3167180" }
+%"struct.std::pair.3167180" = type { ptr, ptr }
 
 ; 2 occurrences:
 ; llvm/optimized/LoopPeel.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000003(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %.idx = select i1 %0, i64 %3, i64 0
-  %4 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3167213", ptr %1, i64 %.idx
+  %4 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3167179", ptr %1, i64 %.idx
   ret ptr %4
 }
 

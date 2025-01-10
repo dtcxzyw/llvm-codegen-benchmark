@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -14,6 +14,7 @@
 ; opencv/optimized/simpleflow.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/zend_API.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind

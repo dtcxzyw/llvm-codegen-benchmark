@@ -1,5 +1,5 @@
 
-%"class.clang::Token.3326696" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
+%"class.clang::Token.3326662" = type <{ i32, i32, ptr, i16, i16, [4 x i8] }>
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -100,7 +100,7 @@ entry:
 define i64 @func00000000000000ac(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.clang::Token.3326696", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.clang::Token.3326662", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 24
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; icu/optimized/ucnv_u8.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {

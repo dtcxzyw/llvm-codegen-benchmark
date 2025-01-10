@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 3 occurrences:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openvdb/optimized/points.cc.ll

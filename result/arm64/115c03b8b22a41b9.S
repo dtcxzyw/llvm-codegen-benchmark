@@ -47,13 +47,6 @@ func0000000000000038:                   // @func0000000000000038
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000035:                   // @func0000000000000035
-// %bb.0:                               // %entry
-	and	w8, w1, #0xfe
-	cmp	w0, w8, lsr #1
-	cset	w0, ls
-	ret
-                                        // -- End function
 func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
 	and	w8, w1, #0xe0

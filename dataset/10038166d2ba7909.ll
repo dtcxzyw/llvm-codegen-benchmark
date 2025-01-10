@@ -63,8 +63,9 @@ entry:
 define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sgt i32 %0, %2
-  ret i1 %3
+  %3 = sub nsw i32 %0, %2
+  %4 = icmp sgt i32 %3, 127
+  ret i1 %4
 }
 
 ; 10 occurrences:

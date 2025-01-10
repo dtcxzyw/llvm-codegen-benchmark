@@ -1,6 +1,6 @@
 
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
-%struct.i915_reg_t.3553298 = type { i32 }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
+%struct.i915_reg_t.3553264 = type { i32 }
 
 ; 3 occurrences:
 ; linux/optimized/nfs4xdr.ll
@@ -10,7 +10,7 @@
 define ptr @func000000000000019c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 48
-  %4 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr [8 x i64], ptr %5, i64 0, i64 %6
@@ -63,7 +63,7 @@ entry:
   %3 = getelementptr i8, ptr %2, i64 60
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = zext i32 %0 to i64
-  %6 = getelementptr [20 x %struct.i915_reg_t.3553298], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [20 x %struct.i915_reg_t.3553264], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

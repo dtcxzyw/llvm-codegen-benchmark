@@ -7,10 +7,6 @@ func0000000000000138:                   # @func0000000000000138
 	cmpl	$213447717, %esi                # imm = 0xCB8F425
 	setae	%al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
-	addl	%edi, %esi
-	setns	%al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	addl	%edi, %esi
 	testl	%esi, %esi
@@ -177,6 +173,10 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000186:                   # @func0000000000000186
 	leal	(%rsi,%rdi), %eax
 	shrl	$31, %eax
+	retq
+func00000000000001aa:                   # @func00000000000001aa
+	addl	%edi, %esi
+	setns	%al
 	retq
 func00000000000001a8:                   # @func00000000000001a8
 	addl	%edi, %esi

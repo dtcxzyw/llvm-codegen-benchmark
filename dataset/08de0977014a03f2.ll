@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -8,6 +8,8 @@
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind

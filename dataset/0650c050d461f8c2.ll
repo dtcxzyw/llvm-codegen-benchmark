@@ -1,4 +1,25 @@
 
+; 9 occurrences:
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 408
+  %7 = getelementptr nusw nuw [3 x i64], ptr %6, i64 0, i64 %5
+  ret ptr %7
+}
+
 ; 2 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
@@ -27,25 +48,6 @@ entry:
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 24
   %7 = getelementptr [3 x i64], ptr %6, i64 0, i64 %5
-  ret ptr %7
-}
-
-; 7 occurrences:
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 2
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %7 = getelementptr nusw nuw [3 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

@@ -42,29 +42,6 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; redis/optimized/dict.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.umax.i32(i32 %1, i32 4)
-  %3 = zext i32 %2 to i64
-  %4 = icmp ugt i64 %0, %3
-  ret i1 %4
-}
-
-; 2 occurrences:
-; opencv/optimized/eltwise_layer.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.umax.i32(i32 %1, i32 3)
-  %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %0, %3
-  ret i1 %4
-}
-
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 

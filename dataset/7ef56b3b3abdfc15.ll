@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2876867 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876833 = type <{ i64, i32 }>
 
 ; 2 occurrences:
 ; linux/optimized/siphash.ll
@@ -57,7 +57,7 @@ define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876867, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2876833, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

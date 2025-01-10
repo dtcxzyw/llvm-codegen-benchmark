@@ -1,5 +1,5 @@
 
-%struct.hb_pair_t.2730715 = type { i32, i32 }
+%struct.hb_pair_t.2730681 = type { i32, i32 }
 
 ; 22 occurrences:
 ; brotli/optimized/encode.c.ll
@@ -57,7 +57,7 @@ entry:
   %4 = and i32 %3, 3840
   %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.hb_pair_t.2730715, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.hb_pair_t.2730681, ptr %0, i64 %6
   ret ptr %7
 }
 

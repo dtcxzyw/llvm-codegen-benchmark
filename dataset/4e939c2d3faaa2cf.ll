@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 17 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
@@ -69,8 +69,8 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %1
-  %7 = getelementptr %class.QCPGraphData.3451166, ptr %6, i64 %5
+  %6 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %1
+  %7 = getelementptr %class.QCPGraphData.3451132, ptr %6, i64 %5
   ret ptr %7
 }
 

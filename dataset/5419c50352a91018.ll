@@ -1,5 +1,5 @@
 
-%struct.software_node.3553102 = type { ptr, ptr, ptr }
+%struct.software_node.3553068 = type { ptr, ptr, ptr }
 
 ; 15 occurrences:
 ; abc/optimized/giaKf.c.ll
@@ -137,7 +137,7 @@ entry:
   %.idx = mul nuw nsw i64 %3, 552
   %4 = getelementptr i8, ptr %1, i64 248
   %5 = getelementptr i8, ptr %4, i64 %.idx
-  %6 = getelementptr %struct.software_node.3553102, ptr %5, i64 %0
+  %6 = getelementptr %struct.software_node.3553068, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -218,10 +218,9 @@ entry:
   ret i32 %4
 }
 
-; 209 occurrences:
+; 208 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/saigSimMv.c.ll

@@ -95,10 +95,3 @@ func00000000000000fa:                   # @func00000000000000fa
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000fe:                   # @func00000000000000fe
-	sh1add	a2, a2, a2
-	slli	a1, a1, 14
-	slli	a2, a2, 13
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret

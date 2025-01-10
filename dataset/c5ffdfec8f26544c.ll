@@ -1,5 +1,5 @@
 
-; 237 occurrences:
+; 234 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcHie.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -87,7 +87,6 @@
 ; linux/optimized/dm.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/hsu.ll
-; linux/optimized/hub.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_display.ll
@@ -101,8 +100,6 @@
 ; linux/optimized/pci-quirks.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/realtek.ll
-; linux/optimized/svc4proc.ll
-; linux/optimized/svcproc.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/vmscan.ll

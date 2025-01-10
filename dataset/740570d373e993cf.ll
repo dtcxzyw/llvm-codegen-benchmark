@@ -1,12 +1,12 @@
 
-%"class.std::tuple.793.3379770" = type { %"struct.std::_Tuple_impl.794.3379771" }
-%"struct.std::_Tuple_impl.794.3379771" = type { %"struct.std::_Tuple_impl.504.3379726", %"struct.std::_Head_base.795.3379772" }
-%"struct.std::_Tuple_impl.504.3379726" = type { %"struct.std::_Head_base.505.3379728" }
-%"struct.std::_Head_base.505.3379728" = type { i64 }
-%"struct.std::_Head_base.795.3379772" = type { %"class.nblib::QuarticAngle.3379767" }
-%"class.nblib::QuarticAngle.3379767" = type { %"struct.std::array.778.3379768", %"struct.nblib::StrongType.779.3379769" }
-%"struct.std::array.778.3379768" = type { [5 x float] }
-%"struct.nblib::StrongType.779.3379769" = type { float }
+%"class.std::tuple.793.3379736" = type { %"struct.std::_Tuple_impl.794.3379737" }
+%"struct.std::_Tuple_impl.794.3379737" = type { %"struct.std::_Tuple_impl.504.3379692", %"struct.std::_Head_base.795.3379738" }
+%"struct.std::_Tuple_impl.504.3379692" = type { %"struct.std::_Head_base.505.3379694" }
+%"struct.std::_Head_base.505.3379694" = type { i64 }
+%"struct.std::_Head_base.795.3379738" = type { %"class.nblib::QuarticAngle.3379733" }
+%"class.nblib::QuarticAngle.3379733" = type { %"struct.std::array.778.3379734", %"struct.nblib::StrongType.779.3379735" }
+%"struct.std::array.778.3379734" = type { [5 x float] }
+%"struct.nblib::StrongType.779.3379735" = type { float }
 
 ; 1 occurrences:
 ; gromacs/optimized/topology.cpp.ll
@@ -14,7 +14,7 @@
 define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %"class.std::tuple.793.3379770", ptr %1, i64 %3, i32 0, i32 1
+  %4 = getelementptr %"class.std::tuple.793.3379736", ptr %1, i64 %3, i32 0, i32 1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }

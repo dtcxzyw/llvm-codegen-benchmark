@@ -139,6 +139,18 @@ entry:
 }
 
 ; 1 occurrences:
+; hyperscan/optimized/castlecompile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 56
+  %4 = add i64 %0, %3
+  %5 = shl nuw nsw i64 %1, 3
+  %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000f0(i64 %0, i64 %1, i64 %2) #0 {

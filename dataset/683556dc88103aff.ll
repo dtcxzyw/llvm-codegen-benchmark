@@ -571,7 +571,7 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
@@ -581,7 +581,6 @@ entry:
 ; coreutils-rs/optimized/4cobss4bncibjvnb.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; git/optimized/column.ll
 ; git/optimized/line-log.ll
 ; glog/optimized/vlog_is_on.cc.ll
 ; grpc/optimized/alts_frame_protector.cc.ll

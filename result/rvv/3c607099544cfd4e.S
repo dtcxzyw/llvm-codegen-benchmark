@@ -10,12 +10,6 @@ func000000000000000f:                   # @func000000000000000f
 	vsub.vv	v8, v12, v8
 	vsll.vi	v8, v8, 2
 	ret
-func0000000000000000:                   # @func0000000000000000
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vsub.vv	v8, v12, v8
-	vsll.vi	v8, v8, 9
-	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
@@ -27,6 +21,12 @@ func0000000000000007:                   # @func0000000000000007
 	vsext.vf2	v12, v10
 	vsub.vv	v8, v12, v8
 	vsll.vi	v8, v8, 3
+	ret
+func0000000000000000:                   # @func0000000000000000
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsext.vf2	v12, v10
+	vsub.vv	v8, v12, v8
+	vsll.vi	v8, v8, 12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma

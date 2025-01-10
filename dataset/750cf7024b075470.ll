@@ -1,6 +1,6 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914" = type { i8, [7 x i8] }
 
 ; 8 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -163,14 +163,13 @@ entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %5, i64 %1
-  %7 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137915", ptr %5, i64 %1
+  %7 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914", ptr %6, i64 %0
   ret ptr %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {

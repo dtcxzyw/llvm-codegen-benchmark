@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 159 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -150,6 +150,7 @@
 ; wireshark/optimized/packet-pdcp-lte.c.ll
 ; wireshark/optimized/packet-pdcp-nr.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
+; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; yosys/optimized/Solver.ll
@@ -211,7 +212,7 @@ entry:
   ret i32 %5
 }
 
-; 86 occurrences:
+; 85 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -274,7 +275,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll

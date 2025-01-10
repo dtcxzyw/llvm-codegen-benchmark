@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 3 occurrences:
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
@@ -23,8 +23,8 @@ define ptr @func0000000000000140(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %1
-  %6 = getelementptr %class.QCPGraphData.3451166, ptr %5, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %1
+  %6 = getelementptr %class.QCPGraphData.3451132, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

@@ -1,11 +1,11 @@
 
-%"class.casadi::Matrix.3927125" = type { [8 x i8], %"class.casadi::Sparsity.3927126", %"class.std::vector.3927127" }
-%"class.casadi::Sparsity.3927126" = type { %"class.casadi::SharedObject.3927128" }
-%"class.casadi::SharedObject.3927128" = type { ptr }
-%"class.std::vector.3927127" = type { %"struct.std::_Vector_base.3927129" }
-%"struct.std::_Vector_base.3927129" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" }
-%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" }
-%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" = type { ptr, ptr, ptr }
+%"class.casadi::Matrix.3927075" = type { [8 x i8], %"class.casadi::Sparsity.3927076", %"class.std::vector.3927077" }
+%"class.casadi::Sparsity.3927076" = type { %"class.casadi::SharedObject.3927078" }
+%"class.casadi::SharedObject.3927078" = type { ptr }
+%"class.std::vector.3927077" = type { %"struct.std::_Vector_base.3927079" }
+%"struct.std::_Vector_base.3927079" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927080" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927080" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927081" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927081" = type { ptr, ptr, ptr }
 
 ; 9 occurrences:
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
@@ -31,7 +31,7 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %"class.casadi::Matrix.3927125", ptr %0, i64 %3, i32 2, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.casadi::Matrix.3927075", ptr %0, i64 %3, i32 2, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 

@@ -17,21 +17,12 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000001481:                   # @func0000000000001481
-	vpcmpleud	%ymm2, %ymm1, %k1
-	vpcmpltud	%ymm2, %ymm1, %k2
-	vptestmd	%ymm0, %ymm0, %k0 {%k1}
-	vptestnmd	%ymm0, %ymm0, %k1 {%k2}
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
+.LCPI2_0:
 	.long	1                               # 0x1
 func00000000000028c1:                   # @func00000000000028c1
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpcmpgtd	%ymm1, %ymm2, %k2
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpcmpneqd	%ymm1, %ymm0, %k0 {%k1}
 	vpcmpeqd	%ymm1, %ymm0, %k1 {%k2}
 	korb	%k0, %k1, %k0

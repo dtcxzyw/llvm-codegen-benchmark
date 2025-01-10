@@ -1,5 +1,5 @@
 
-%"class.llvm::MDOperand.3296882" = type { ptr }
+%"class.llvm::MDOperand.3296848" = type { ptr }
 
 ; 2 occurrences:
 ; git/optimized/object.ll
@@ -42,7 +42,7 @@ entry:
   %4 = icmp ult i32 %3, %1
   %5 = select i1 %4, i32 %3, i32 0
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MDOperand.3296882", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MDOperand.3296848", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -50,14 +50,13 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; cpython/optimized/cfield.ll
 ; cpython/optimized/syslogmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; flac/optimized/lpc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/libata-core.ll

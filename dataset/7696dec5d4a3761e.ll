@@ -2,10 +2,8 @@
 ; 48 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
-; boost/optimized/approximately_equals.ll
 ; boost/optimized/default_formatter_factory.ll
 ; boost/optimized/text_file_backend.ll
-; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/proof_node_to_sexpr.cpp.ll
 ; git/optimized/convert.ll
 ; gromacs/optimized/autocorr.cpp.ll
@@ -43,6 +41,8 @@
 ; openjdk/optimized/vm_version_x86.ll
 ; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-ec_lib.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; qemu/optimized/crypto_tlssession.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll

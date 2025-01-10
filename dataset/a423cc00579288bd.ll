@@ -1,5 +1,5 @@
 
-%struct.topa_entry.3553329 = type { i64 }
+%struct.topa_entry.3553295 = type { i64 }
 
 ; 16 occurrences:
 ; cmake/optimized/archive_rb.c.ll
@@ -52,7 +52,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4096
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr [507 x %struct.topa_entry.3553329], ptr %3, i64 0, i64 %0
+  %4 = getelementptr [507 x %struct.topa_entry.3553295], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 

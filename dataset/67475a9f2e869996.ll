@@ -1,9 +1,10 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; boost/optimized/to_chars.ll
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; git/optimized/diff.ll
+; hyperscan/optimized/repeat.c.ll
 ; lief/optimized/x509_crt.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

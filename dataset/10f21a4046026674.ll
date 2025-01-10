@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; draco/optimized/symbol_encoding.cc.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; graphviz/optimized/excontext.c.ll
 ; linux/optimized/namei_msdos.ll
 ; ruby/optimized/regexec.ll
+; ruby/optimized/transcode.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {

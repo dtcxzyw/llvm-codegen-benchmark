@@ -22,10 +22,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cpython/optimized/mpdecimal.ll
-; freetype/optimized/psaux.c.ll
 ; icu/optimized/astro.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0, i8 %1) #0 {

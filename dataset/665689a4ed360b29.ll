@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2631296" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631297", i64, %union.anon.2631298 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631297" = type { ptr }
-%union.anon.2631298 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2631263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631264", i64, %union.anon.2631265 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2631264" = type { ptr }
+%union.anon.2631265 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/thread.ll
@@ -46,7 +46,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.umin.i64(i64 %1, i64 16)
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2631296", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2631263", ptr %0, i64 %3
   ret ptr %4
 }
 

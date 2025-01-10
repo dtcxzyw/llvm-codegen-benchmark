@@ -40,10 +40,3 @@ func00000000000001ff:                   // @func00000000000001ff
 	add	x0, x8, #2
 	ret
                                         // -- End function
-func00000000000001bf:                   // @func00000000000001bf
-// %bb.0:                               // %entry
-	add	x8, x0, x1, lsl #2
-	add	x8, x8, x2, lsl #2
-	add	x0, x8, #2
-	ret
-                                        // -- End function

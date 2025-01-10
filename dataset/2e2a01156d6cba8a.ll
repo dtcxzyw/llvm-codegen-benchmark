@@ -1,16 +1,16 @@
 
-%"struct.rapidjson::GenericMember.2749222" = type { %"class.rapidjson::GenericValue.2749211", %"class.rapidjson::GenericValue.2749211" }
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
-%struct.page.3544300 = type { i64, %union.anon.4.3544301, %union.anon.12.3544302, %struct.atomic_t.3544262, [8 x i8] }
-%union.anon.4.3544301 = type { %struct.anon.5.3544303 }
-%struct.anon.5.3544303 = type { %union.anon.6.3544304, ptr, %union.anon.8.3544305, i64 }
-%union.anon.6.3544304 = type { %struct.list_head.3544269 }
-%struct.list_head.3544269 = type { ptr, ptr }
-%union.anon.8.3544305 = type { i64 }
-%union.anon.12.3544302 = type { %struct.atomic_t.3544262 }
-%struct.atomic_t.3544262 = type { i32 }
+%"struct.rapidjson::GenericMember.2749188" = type { %"class.rapidjson::GenericValue.2749177", %"class.rapidjson::GenericValue.2749177" }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
+%struct.page.3544266 = type { i64, %union.anon.4.3544267, %union.anon.12.3544268, %struct.atomic_t.3544228, [8 x i8] }
+%union.anon.4.3544267 = type { %struct.anon.5.3544269 }
+%struct.anon.5.3544269 = type { %union.anon.6.3544270, ptr, %union.anon.8.3544271, i64 }
+%union.anon.6.3544270 = type { %struct.list_head.3544235 }
+%struct.list_head.3544235 = type { ptr, ptr }
+%union.anon.8.3544271 = type { i64 }
+%union.anon.12.3544268 = type { %struct.atomic_t.3544228 }
+%struct.atomic_t.3544228 = type { i32 }
 
 ; 165 occurrences:
 ; abc/optimized/giaUtil.c.ll
@@ -503,7 +503,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749222", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749188", ptr %3, i64 %1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -530,7 +530,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3544300, ptr %3, i64 %1
+  %4 = getelementptr %struct.page.3544266, ptr %3, i64 %1
   %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }

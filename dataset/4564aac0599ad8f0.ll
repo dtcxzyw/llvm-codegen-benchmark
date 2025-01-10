@@ -1,5 +1,5 @@
 
-; 933 occurrences:
+; 930 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -676,10 +676,8 @@
 ; openspiel/optimized/pathfinding.cc.ll
 ; openspiel/optimized/y.cc.ll
 ; openssl/optimized/libcrypto-lib-bf_readbuff.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; openssl/optimized/libtestutil-lib-provider.ll
 ; openssl/optimized/pbelutest-bin-pbelutest.ll
@@ -782,7 +780,6 @@
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
@@ -1184,7 +1181,7 @@ entry:
   ret i1 %4
 }
 
-; 2071 occurrences:
+; 2070 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -2394,7 +2391,6 @@ entry:
 ; openjdk/optimized/X11Renderer.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/addnode.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; openjdk/optimized/ciMethod.ll
@@ -4415,7 +4411,7 @@ entry:
   ret i1 %4
 }
 
-; 463 occurrences:
+; 464 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -4740,6 +4736,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/ziplist.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
@@ -4887,7 +4884,7 @@ entry:
   ret i1 %4
 }
 
-; 104 occurrences:
+; 103 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -4897,7 +4894,6 @@ entry:
 ; boost/optimized/get_turns_areal_areal.ll
 ; boost/optimized/within_pointlike_geometry.ll
 ; cvc5/optimized/inst_match_generator_multi_linear.cpp.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -5670,12 +5666,13 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaSatLE.c.ll
 ; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/filtering.c.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/maple_tree.ll
 ; meshlab/optimized/cleanfilter.cpp.ll

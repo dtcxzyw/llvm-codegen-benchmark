@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; git/optimized/add.ll
 ; git/optimized/checkout.ll
@@ -15,7 +15,6 @@
 ; git/optimized/update-index.ll
 ; git/optimized/wt-status.ll
 ; gromacs/optimized/tpi.cpp.ll
-; hwloc/optimized/topology-linux.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/ushape.ll
 ; libwebp/optimized/histogram_enc.c.ll
@@ -33,7 +32,6 @@
 ; openmpi/optimized/pml_ob1_accelerator.ll
 ; openssl/optimized/libssl-lib-extensions.ll
 ; openssl/optimized/libssl-shlib-extensions.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/shift_jis.ll
 ; ruby/optimized/windows_31j.ll

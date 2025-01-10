@@ -492,7 +492,7 @@ entry:
   ret i32 %2
 }
 
-; 171 occurrences:
+; 170 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -650,7 +650,6 @@ entry:
 ; wireshark/optimized/packet-ucp.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wireshark/optimized/packet-usb-com.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/packet-xip.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll

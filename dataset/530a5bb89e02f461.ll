@@ -1,5 +1,5 @@
 
-%"struct.rocksdb::Unsigned128.2620889" = type { i64, i64 }
+%"struct.rocksdb::Unsigned128.2620856" = type { i64, i64 }
 
 ; 1 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -9,7 +9,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620856", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = lshr i64 %2, 32
   %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620856", ptr %0, i64 %5
   ret ptr %6
 }
 

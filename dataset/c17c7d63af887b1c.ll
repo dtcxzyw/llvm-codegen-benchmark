@@ -39,6 +39,8 @@ entry:
 }
 
 ; 56 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; libquic/optimized/reliable_quic_stream.cc.ll
 ; linux/optimized/rwsem.ll
@@ -89,8 +91,6 @@ entry:
 ; quantlib/optimized/lmmdriftcalculator.ll
 ; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; ruby/optimized/class.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll

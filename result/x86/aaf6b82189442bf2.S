@@ -36,6 +36,3 @@ func0000000000000009:                   # @func0000000000000009
 	movl	$-1, %ecx
 	shlxl	%eax, %ecx, %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	blsil	%edi, %eax
-	retq

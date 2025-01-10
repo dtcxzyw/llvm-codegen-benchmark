@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {

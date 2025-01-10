@@ -1,12 +1,12 @@
 
-%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586" = type { %"struct.std::atomic.2776319", %"struct.std::atomic.111.2776389" }
-%"struct.std::atomic.2776319" = type { %"struct.std::__atomic_base.2776332" }
-%"struct.std::__atomic_base.2776332" = type { i64 }
-%"struct.std::atomic.111.2776389" = type { %"struct.std::__atomic_base.112.2776390" }
-%"struct.std::__atomic_base.112.2776390" = type { ptr }
-%struct.mstate_aux.3851939 = type { i32, i32, i16, i32 }
-%struct.ED_.3881841 = type { i32, %struct.FT_Vector_.3881842, i8 }
-%struct.FT_Vector_.3881842 = type { i64, i64 }
+%"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776552" = type { %"struct.std::atomic.2776285", %"struct.std::atomic.111.2776355" }
+%"struct.std::atomic.2776285" = type { %"struct.std::__atomic_base.2776298" }
+%"struct.std::__atomic_base.2776298" = type { i64 }
+%"struct.std::atomic.111.2776355" = type { %"struct.std::__atomic_base.112.2776356" }
+%"struct.std::__atomic_base.112.2776356" = type { ptr }
+%struct.mstate_aux.3851889 = type { i32, i32, i16, i32 }
+%struct.ED_.3881791 = type { i32, %struct.FT_Vector_.3881792, i8 }
+%struct.FT_Vector_.3881792 = type { i64, i64 }
 
 ; 24 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
@@ -272,7 +272,7 @@ define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776586", ptr %4, i64 %0, i32 1
+  %5 = getelementptr %"struct.moodycamel::ConcurrentQueue<easylog::record_t>::ImplicitProducer::BlockIndexEntry.2776552", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -331,7 +331,7 @@ define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -16
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %struct.mstate_aux.3851939, ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %struct.mstate_aux.3851889, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -341,8 +341,8 @@ entry:
 define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %struct.ED_.3881841, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %struct.ED_.3881841, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct.ED_.3881791, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %struct.ED_.3881791, ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -32
   ret ptr %6
 }

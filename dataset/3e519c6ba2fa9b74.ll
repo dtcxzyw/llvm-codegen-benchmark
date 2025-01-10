@@ -424,7 +424,7 @@ entry:
   ret i32 %5
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/exorCubes.c.ll
@@ -453,6 +453,7 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; openblas/optimized/dtgevc.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/gms.cpp.ll

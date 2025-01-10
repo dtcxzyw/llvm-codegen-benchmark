@@ -1,10 +1,12 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/ifTune.c.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/chaitin.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
@@ -17,14 +19,12 @@ entry:
   ret i64 %7
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/netlabel_kapi.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:

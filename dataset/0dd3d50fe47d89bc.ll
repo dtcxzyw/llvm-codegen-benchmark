@@ -1,6 +1,6 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
-%struct.stbir__contributors.3790120 = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
+%struct.stbir__contributors.3790070 = type { i32, i32 }
 
 ; 10 occurrences:
 ; cmake/optimized/cmFortranLexer.cxx.ll
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000141(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = icmp eq ptr %4, %0
   ret i1 %5
@@ -92,7 +92,7 @@ entry:
 define i1 @func0000000000000149(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %struct.stbir__contributors.3790120, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.stbir__contributors.3790070, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = icmp uge ptr %4, %0
   ret i1 %5

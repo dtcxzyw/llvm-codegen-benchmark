@@ -57,21 +57,5 @@ entry:
   ret { i64, i1 } %4
 }
 
-; 5 occurrences:
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define { i64, i1 } @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 5
-  %2 = add i64 %1, 32
-  %3 = add i64 %0, 17
-  %4 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %2, i64 %3)
-  ret { i64, i1 } %4
-}
-
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

@@ -22,7 +22,7 @@ func0000000000000130:                   # @func0000000000000130
 	imulq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000020:                   # @func0000000000000020
+func0000000000000120:                   # @func0000000000000120
 	movq	%rdx, %rax
 	movq	%rsi, %rdx
 	movabsq	$1844674407370955161, %rcx      # imm = 0x1999999999999999

@@ -551,6 +551,16 @@ func000000000000298a:                   # @func000000000000298a
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
+func00000000000018c1:                   # @func00000000000018c1
+	sext.w	a0, a0
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slti	a2, a2, 255
+	slti	a1, a1, 255
+	and	a1, a1, a2
+	seqz	a0, a0
+	and	a0, a0, a1
+	ret
 func0000000000001886:                   # @func0000000000001886
 	sext.w	a0, a0
 	sext.w	a1, a1

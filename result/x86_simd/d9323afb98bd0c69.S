@@ -46,11 +46,11 @@ func000000000000003f:                   # @func000000000000003f
 	.byte	12                              # 0xc
 	.byte	3                               # 0x3
 	.byte	14                              # 0xe
-func000000000000003d:                   # @func000000000000003d
+func000000000000003b:                   # @func000000000000003b
 	vpmovsxbd	.LCPI2_1(%rip), %ymm3   # ymm3 = [0,8,1,10,2,12,3,14]
 	vpermi2d	%ymm1, %ymm2, %ymm3
-	vpsllq	$40, %ymm0, %ymm0
-	vpor	%ymm3, %ymm0, %ymm0
+	vpsllq	$48, %ymm0, %ymm0
+	vpor	%ymm0, %ymm3, %ymm0
 	retq
 .LCPI3_0:
 	.long	0                               # 0x0
@@ -70,9 +70,9 @@ func000000000000003d:                   # @func000000000000003d
 	.byte	12                              # 0xc
 	.byte	3                               # 0x3
 	.byte	14                              # 0xe
-func000000000000003b:                   # @func000000000000003b
+func000000000000003d:                   # @func000000000000003d
 	vpmovsxbd	.LCPI3_1(%rip), %ymm3   # ymm3 = [0,8,1,10,2,12,3,14]
 	vpermi2d	%ymm1, %ymm2, %ymm3
 	vpsllq	$48, %ymm0, %ymm0
-	vpor	%ymm0, %ymm3, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
 	retq

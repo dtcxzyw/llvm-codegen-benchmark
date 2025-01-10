@@ -96,7 +96,7 @@ entry:
   ret i1 %4
 }
 
-; 105 occurrences:
+; 107 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -186,6 +186,8 @@ entry:
 ; slurm/optimized/slurm_opt.ll
 ; slurm/optimized/step_mgr.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; wireshark/optimized/packet-enip.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll

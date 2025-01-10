@@ -1,6 +1,7 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcRec3.c.ll
+; cpython/optimized/unicodeobject.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll

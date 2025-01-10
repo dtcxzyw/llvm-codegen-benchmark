@@ -69,16 +69,17 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/open.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 24
-  %3 = and i64 %2, 1572864
-  %4 = or i64 %0, %3
-  %5 = or i64 %4, 2
+  %2 = lshr i64 %1, 16
+  %3 = and i64 %2, 6442450944
+  %4 = or i64 %3, %0
+  %5 = or i64 %4, 512
   ret i64 %5
 }
 

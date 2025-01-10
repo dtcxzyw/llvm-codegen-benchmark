@@ -1,5 +1,5 @@
 
-%"class.llvm::Attribute.3332310" = type { ptr }
+%"class.llvm::Attribute.3332276" = type { ptr }
 
 ; 7 occurrences:
 ; clamav/optimized/mew.c.ll
@@ -43,8 +43,8 @@ define i64 @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 56
-  %5 = getelementptr nusw nuw %"class.llvm::Attribute.3332310", ptr %4, i64 %3
-  %6 = getelementptr nusw %"class.llvm::Attribute.3332310", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.llvm::Attribute.3332276", ptr %4, i64 %3
+  %6 = getelementptr nusw %"class.llvm::Attribute.3332276", ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

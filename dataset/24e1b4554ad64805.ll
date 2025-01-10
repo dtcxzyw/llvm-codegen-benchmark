@@ -1,6 +1,6 @@
 
-%union.acpi_object.3531128 = type { %struct.anon.8.3531129 }
-%struct.anon.8.3531129 = type { i32, i32, i64, i32 }
+%union.acpi_object.3531094 = type { %struct.anon.8.3531095 }
+%struct.anon.8.3531095 = type { i32, i32, i64, i32 }
 
 ; 2 occurrences:
 ; cpython/optimized/sre.ll
@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 24
-  %6 = getelementptr %union.acpi_object.3531128, ptr %5, i64 %4
+  %6 = getelementptr %union.acpi_object.3531094, ptr %5, i64 %4
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }

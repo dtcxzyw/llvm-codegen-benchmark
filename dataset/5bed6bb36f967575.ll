@@ -1,5 +1,5 @@
 
-; 336 occurrences:
+; 335 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -37,7 +37,6 @@
 ; g2o/optimized/edge_se3_expmap.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_pointxyz.cpp.ll
-; g2o/optimized/edge_se3_pointxyz_depth.cpp.ll
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
 ; g2o/optimized/types_icp.cpp.ll

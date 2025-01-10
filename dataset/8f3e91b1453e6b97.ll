@@ -41,13 +41,11 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, float %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 355 occurrences:
+; 356 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absUtil.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/compress.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/exorBits.c.ll
 ; abc/optimized/exorLink.c.ll
@@ -363,7 +364,7 @@ entry:
   ret i32 %4
 }
 
-; 183 occurrences:
+; 184 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/extraBddKmap.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -384,6 +385,7 @@ entry:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/hashing.cc.ll
+; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll

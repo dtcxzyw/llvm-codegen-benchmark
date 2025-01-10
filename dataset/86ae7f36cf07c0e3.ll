@@ -1,6 +1,6 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
+%class.aiVector3t.2823125 = type { double, double, double }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
 
 ; 65 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
@@ -105,7 +105,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %5
+  %6 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -140,7 +140,7 @@ entry:
   %3 = add nsw i64 %2, 3
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 1, i64 %4
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3188737", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3188703", ptr %0, i64 %5
   ret ptr %6
 }
 

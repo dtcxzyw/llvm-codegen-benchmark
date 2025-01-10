@@ -22,38 +22,38 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-.LCPI3_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func000000000000000e:                   # @func000000000000000e
-	vucomisd	.LCPI3_0(%rip), %xmm0
-	setb	%al
+func0000000000000002:                   # @func0000000000000002
+	vucomisd	%xmm0, %xmm0
+	setp	%al
 	orb	%dil, %al
 	retq
 .LCPI4_0:
-	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
-func0000000000000006:                   # @func0000000000000006
+	.quad	0x7ff0000000000000              # double +Inf
+func000000000000000e:                   # @func000000000000000e
 	vucomisd	.LCPI4_0(%rip), %xmm0
 	setb	%al
 	orb	%dil, %al
 	retq
 .LCPI5_0:
-	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
-func000000000000001a:                   # @func000000000000001a
-	vmovsd	.LCPI5_0(%rip), %xmm1           # xmm1 = [9.2233720368547758E+18,0.0E+0]
-	vucomisd	%xmm0, %xmm1
-	setbe	%al
+	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
+func0000000000000006:                   # @func0000000000000006
+	vucomisd	.LCPI5_0(%rip), %xmm0
+	setb	%al
 	orb	%dil, %al
 	retq
 .LCPI6_0:
 	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
-func0000000000000018:                   # @func0000000000000018
-	vucomisd	.LCPI6_0(%rip), %xmm0
-	setae	%al
+func000000000000001a:                   # @func000000000000001a
+	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [9.2233720368547758E+18,0.0E+0]
+	vucomisd	%xmm0, %xmm1
+	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
-	vucomisd	%xmm0, %xmm0
-	setp	%al
+.LCPI7_0:
+	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
+func0000000000000018:                   # @func0000000000000018
+	vucomisd	.LCPI7_0(%rip), %xmm0
+	setae	%al
 	orb	%dil, %al
 	retq
 func0000000000000014:                   # @func0000000000000014

@@ -1,13 +1,13 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"struct.mold::elf::ElfRel.2637475" = type { %"class.mold::LittleEndian.2637474", i8, %"class.mold::LittleEndian.417.2637476", %"class.mold::LittleEndian.418.2637477" }
-%"class.mold::LittleEndian.2637474" = type { [4 x i8] }
-%"class.mold::LittleEndian.417.2637476" = type { [3 x i8] }
-%"class.mold::LittleEndian.418.2637477" = type { [4 x i8] }
-%struct.VFIOMSIVector.2708537 = type { %struct.EventNotifier.2708538, %struct.EventNotifier.2708538, ptr, i32, i8 }
-%struct.EventNotifier.2708538 = type { i32, i32, i8 }
-%"struct.RunTimeClassInfo::RTLoaderConstraint.2730954" = type { i32, i8, i8 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"struct.mold::elf::ElfRel.2637442" = type { %"class.mold::LittleEndian.2637441", i8, %"class.mold::LittleEndian.417.2637443", %"class.mold::LittleEndian.418.2637444" }
+%"class.mold::LittleEndian.2637441" = type { [4 x i8] }
+%"class.mold::LittleEndian.417.2637443" = type { [3 x i8] }
+%"class.mold::LittleEndian.418.2637444" = type { [4 x i8] }
+%struct.VFIOMSIVector.2708503 = type { %struct.EventNotifier.2708504, %struct.EventNotifier.2708504, ptr, i32, i8 }
+%struct.EventNotifier.2708504 = type { i32, i32, i8 }
+%"struct.RunTimeClassInfo::RTLoaderConstraint.2730920" = type { i32, i8, i8 }
 
 ; 137 occurrences:
 ; arrow/optimized/builder.cc.ll
@@ -2030,8 +2030,8 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -2729,7 +2729,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637475", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637442", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -2754,7 +2754,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.VFIOMSIVector.2708537, ptr %1, i64 %3
+  %4 = getelementptr %struct.VFIOMSIVector.2708503, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -2779,7 +2779,7 @@ define ptr @func0000000000000013(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730954", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTLoaderConstraint.2730920", ptr %4, i64 %0
   ret ptr %5
 }
 

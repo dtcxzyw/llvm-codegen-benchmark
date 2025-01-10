@@ -22,14 +22,6 @@ func000000000000000c:                   // @func000000000000000c
 	add	w0, w8, #400
 	ret
                                         // -- End function
-func000000000000000d:                   // @func000000000000000d
-// %bb.0:                               // %entry
-	and	w8, w2, #0x3c
-	orr	w8, w8, w0
-	add	w8, w1, w8
-	sub	w0, w8, #32
-	ret
-                                        // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	and	w8, w2, #0x7c0

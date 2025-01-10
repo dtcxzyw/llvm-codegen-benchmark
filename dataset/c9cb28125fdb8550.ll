@@ -195,7 +195,7 @@ entry:
   ret i32 %5
 }
 
-; 1230 occurrences:
+; 1229 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -579,7 +579,6 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll

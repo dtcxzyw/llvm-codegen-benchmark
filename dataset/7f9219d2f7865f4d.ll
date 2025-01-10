@@ -1,7 +1,7 @@
 
-%struct.ExprList_item.3662248 = type { ptr, ptr, %struct.anon.24.3662249, %union.anon.25.3662250 }
-%struct.anon.24.3662249 = type <{ i8, i16, i8 }>
-%union.anon.25.3662250 = type { i32 }
+%struct.ExprList_item.3662198 = type { ptr, ptr, %struct.anon.24.3662199, %union.anon.25.3662200 }
+%struct.anon.24.3662199 = type <{ i8, i16, i8 }>
+%union.anon.25.3662200 = type { i32 }
 
 ; 1 occurrences:
 ; openusd/optimized/decodemv.c.ll
@@ -285,7 +285,7 @@ define ptr @func000000000000005f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nuw [1 x %struct.ExprList_item.3662248], ptr %0, i64 0, i64 %3, i32 2, i32 1
+  %4 = getelementptr nuw [1 x %struct.ExprList_item.3662198], ptr %0, i64 0, i64 %3, i32 2, i32 1
   ret ptr %4
 }
 

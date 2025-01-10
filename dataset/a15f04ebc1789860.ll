@@ -1,5 +1,5 @@
 
-%"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824548" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
+%"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824498" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -41,7 +41,7 @@ define i1 @func0000000000000fe4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824548", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824498", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = icmp ult ptr %6, %5
   ret i1 %7

@@ -251,7 +251,7 @@ entry:
   ret i1 %5
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
@@ -295,7 +295,6 @@ entry:
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/optimize.c.ll
 ; slurm/optimized/topology_tree.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll

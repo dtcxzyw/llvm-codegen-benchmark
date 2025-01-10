@@ -1,5 +1,5 @@
 
-; 12353 occurrences:
+; 12351 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -2265,7 +2265,6 @@
 ; hdf5/optimized/H5Plapl.c.ll
 ; hdf5/optimized/H5Pocpl.c.ll
 ; hdf5/optimized/H5Rint.c.ll
-; hdf5/optimized/H5SL.c.ll
 ; hdf5/optimized/H5SMcache.c.ll
 ; hdf5/optimized/H5SMmessage.c.ll
 ; hdf5/optimized/H5Sall.c.ll
@@ -9725,7 +9724,6 @@
 ; slurm/optimized/launch.ll
 ; slurm/optimized/mgr.ll
 ; slurm/optimized/plugin.ll
-; slurm/optimized/preempt.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; slurm/optimized/prep_slurmctld.ll
 ; slurm/optimized/reservation.ll
@@ -12360,7 +12358,7 @@ entry:
   ret i32 %1
 }
 
-; 1216 occurrences:
+; 1212 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -12617,7 +12615,6 @@ entry:
 ; jq/optimized/main.ll
 ; libevent/optimized/bufferevent_openssl.c.ll
 ; libevent/optimized/evdns.c.ll
-; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libjpeg-turbo/optimized/wrbmp.c.ll
@@ -13226,9 +13223,6 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; php/optimized/KeccakSponge.ll

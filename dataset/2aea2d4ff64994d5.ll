@@ -1,7 +1,7 @@
 
-%"class.clang::QualType.3192275" = type { %"class.llvm::PointerIntPair.3192276" }
-%"class.llvm::PointerIntPair.3192276" = type { %"struct.llvm::detail::PunnedPointer.3192277" }
-%"struct.llvm::detail::PunnedPointer.3192277" = type { [8 x i8] }
+%"class.clang::QualType.3192241" = type { %"class.llvm::PointerIntPair.3192242" }
+%"class.llvm::PointerIntPair.3192242" = type { %"struct.llvm::detail::PunnedPointer.3192243" }
+%"struct.llvm::detail::PunnedPointer.3192243" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
@@ -82,7 +82,7 @@ entry:
   %3 = and i32 %2, 127
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 48
-  %6 = getelementptr nusw nuw %"class.clang::QualType.3192275", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3192241", ptr %5, i64 %4
   %7 = icmp ne ptr %6, %0
   ret i1 %7
 }

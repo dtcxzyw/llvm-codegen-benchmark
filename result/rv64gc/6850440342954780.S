@@ -54,39 +54,39 @@ func00000000000000ca:                   # @func00000000000000ca
 .LBB6_2:                                # %entry
 	sgtz	a0, a0
 	ret
-func00000000000000c6:                   # @func00000000000000c6
-	sext.w	a0, a0
-	sext.w	a1, a1
-	blt	a1, a0, .LBB7_2
-	mv	a1, a0
-.LBB7_2:                                # %entry
-	slti	a0, a1, 6
-	ret
 func00000000000000e6:                   # @func00000000000000e6
 	sext.w	a0, a0
 	sext.w	a1, a1
-	blt	a0, a1, .LBB8_2
+	blt	a0, a1, .LBB7_2
 	mv	a0, a1
-.LBB8_2:                                # %entry
+.LBB7_2:                                # %entry
 	slti	a0, a0, 1
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	sext.w	a1, a1
-	blt	a1, a0, .LBB9_2
+	blt	a1, a0, .LBB8_2
 	mv	a1, a0
-.LBB9_2:                                # %entry
+.LBB8_2:                                # %entry
 	slti	a0, a1, 0
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
 	sext.w	a1, a1
-	blt	a0, a1, .LBB10_2
+	blt	a0, a1, .LBB9_2
 	mv	a0, a1
-.LBB10_2:                               # %entry
+.LBB9_2:                                # %entry
 	sltiu	a0, a0, 66
 	xori	a0, a0, 1
+	ret
+func00000000000000c6:                   # @func00000000000000c6
+	sext.w	a0, a0
+	sext.w	a1, a1
+	blt	a1, a0, .LBB10_2
+	mv	a1, a0
+.LBB10_2:                               # %entry
+	slti	a0, a1, 0
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a0, a0

@@ -17,8 +17,8 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	-8(%rdx), %eax
-	cmpl	%eax, %esi
-	cmovbl	%esi, %eax
+	leal	-2(%rdx), %eax
+	cmpl	%esi, %eax
+	cmovael	%esi, %eax
 	addl	%edi, %eax
 	retq

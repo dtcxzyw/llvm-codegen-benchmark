@@ -1,9 +1,9 @@
 
-%struct._zval_struct.2792479 = type { %union._zend_value.2792489, %union.anon.2792490, %union.anon.2.2792491 }
-%union._zend_value.2792489 = type { i64 }
-%union.anon.2792490 = type { i32 }
-%union.anon.2.2792491 = type { i32 }
-%"class.draco::IndexType.113.3086516" = type { i32 }
+%struct._zval_struct.2792445 = type { %union._zend_value.2792455, %union.anon.2792456, %union.anon.2.2792457 }
+%union._zend_value.2792455 = type { i64 }
+%union.anon.2792456 = type { i32 }
+%union.anon.2.2792457 = type { i32 }
+%"class.draco::IndexType.113.3086482" = type { i32 }
 
 ; 1 occurrences:
 ; php/optimized/sqlite3.ll
@@ -14,7 +14,7 @@ entry:
   %3 = select i1 %.not, i32 0, i32 2
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._zval_struct.2792479, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._zval_struct.2792445, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %4 = select i1 %3, i32 2, i32 -1
   %5 = add i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.draco::IndexType.113.3086516", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.draco::IndexType.113.3086482", ptr %0, i64 %6
   ret ptr %7
 }
 

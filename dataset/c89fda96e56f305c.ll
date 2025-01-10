@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%class.symbol.3613505 = type { ptr }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%class.symbol.3613471 = type { ptr }
 
 ; 140 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -148,8 +148,8 @@
 define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %1
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %4, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -229,7 +229,7 @@ define ptr @func00000000000000fc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %1
+  %5 = getelementptr nusw nuw %class.symbol.3613471, ptr %4, i64 %1
   %6 = getelementptr ptr, ptr %5, i64 %0
   ret ptr %6
 }

@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
-%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
-%union.anon.2619710 = type { i64, [8 x i8] }
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
+%"struct.rocksdb::TableReader::Anchor.2619962" = type { %"class.std::__cxx11::basic_string.2619675", i64 }
+%"class.std::__cxx11::basic_string.2619675" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676", i64, %union.anon.2619677 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676" = type { ptr }
+%union.anon.2619677 = type { i64, [8 x i8] }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
 
 ; 219 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -231,7 +231,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %.neg = sdiv exact i64 %4, -40
-  %5 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %0, i64 %.neg
+  %5 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619962", ptr %0, i64 %.neg
   ret ptr %5
 }
 
@@ -414,7 +414,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %.neg = sdiv exact i64 %4, -12
-  %5 = getelementptr %"class.irr::core::vector3d.2691815", ptr %0, i64 %.neg
+  %5 = getelementptr %"class.irr::core::vector3d.2691781", ptr %0, i64 %.neg
   %6 = getelementptr i8, ptr %5, i64 96
   ret ptr %6
 }

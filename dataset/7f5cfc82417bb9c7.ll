@@ -75,12 +75,12 @@ entry:
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = ashr exact i64 %0, 32
-  %6 = icmp samesign ult i64 %5, %4
+  %6 = icmp slt i64 %5, %4
   ret i1 %6
 }
 

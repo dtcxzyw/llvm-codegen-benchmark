@@ -1,10 +1,10 @@
 
-%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
-%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
-%"struct.OT::LookupRecord.2736982" = type { %"struct.OT::IntType.139.2736869", %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.Gia_Obj_t_.2877117 = type <{ i64, i32 }>
+%"struct.mold::elf::ElfShdr.555.2636391" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392" }
+%"class.mold::LittleEndian.551.2636392" = type { [4 x i8] }
+%"struct.OT::LookupRecord.2736948" = type { %"struct.OT::IntType.139.2736835", %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.Gia_Obj_t_.2877083 = type <{ i64, i32 }>
 
 ; 38 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -50,7 +50,7 @@ define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %0, i32 4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636391", ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 
@@ -67,7 +67,7 @@ define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.OT::LookupRecord.2736982", ptr %4, i64 %0, i32 1
+  %5 = getelementptr nusw nuw %"struct.OT::LookupRecord.2736948", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -79,8 +79,8 @@ entry:
 define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877117, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877117, ptr %4, i64 %0, i32 1
+  %4 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877083, ptr %1, i64 %3
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877083, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::SymbolAux.2658317" = type { %"struct.mold::elf::SymbolAux.572.2658318", i32 }
-%"struct.mold::elf::SymbolAux.572.2658318" = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%"struct.mold::elf::SymbolAux.2658284" = type { %"struct.mold::elf::SymbolAux.572.2658285", i32 }
+%"struct.mold::elf::SymbolAux.572.2658285" = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 17 occurrences:
 ; cvc5/optimized/conjecture_generator.cpp.ll
@@ -27,7 +27,7 @@ entry:
   %3 = shl i64 %2, 32
   %4 = add i64 %3, 4294967296
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw %"struct.mold::elf::SymbolAux.2658317", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::SymbolAux.2658284", ptr %0, i64 %5
   ret ptr %6
 }
 

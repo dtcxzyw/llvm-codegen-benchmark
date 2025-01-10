@@ -1,17 +1,13 @@
 
-; 25 occurrences:
+; 21 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; cpython/optimized/crt.ll
 ; cvc5/optimized/theory_bv.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; linux/optimized/eventfd.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; lua/optimized/llex.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll

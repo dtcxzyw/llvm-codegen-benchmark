@@ -1,11 +1,10 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/xfrm_user.ll
 ; minetest/optimized/servermap.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/constantPool.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll

@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
 
 ; 113 occurrences:
 ; coreutils-rs/optimized/12z6icc2yyeo0v0b.ll
@@ -243,7 +243,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3168219", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = and i64 %0, -128
   %6 = getelementptr i8, ptr %4, i64 %5

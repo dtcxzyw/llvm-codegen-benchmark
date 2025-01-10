@@ -10,6 +10,12 @@ func0000000000000019:                   # @func0000000000000019
 	vpsllq	$2, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
+func000000000000007d:                   # @func000000000000007d
+	vpsllq	$52, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpsllq	$36, %ymm1, %ymm1
+	vpor	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000039:                   # @func0000000000000039
 	vpsllq	$52, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0

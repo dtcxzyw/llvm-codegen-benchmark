@@ -73,8 +73,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; jq/optimized/jv_parse.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:

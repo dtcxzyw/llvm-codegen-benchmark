@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_var.2790519 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
+%struct._zend_ssa_var.2790485 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
 
 ; 2 occurrences:
 ; ozz-animation/optimized/animation_optimizer.cc.ll
@@ -10,7 +10,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %struct._zend_ssa_var.2790519, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct._zend_ssa_var.2790485, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%"class.mitsuba::ref.101.2603164" = type { ptr }
+%"class.mitsuba::ref.101.2603131" = type { ptr }
 
 ; 2 occurrences:
 ; ruby/optimized/date_strftime.ll
@@ -44,7 +44,7 @@ entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.mitsuba::ref.101.2603164", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.mitsuba::ref.101.2603131", ptr %0, i64 %5
   ret ptr %6
 }
 

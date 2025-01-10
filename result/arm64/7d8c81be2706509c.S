@@ -51,13 +51,6 @@ func0000000000000052:                   // @func0000000000000052
 	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
-func0000000000000053:                   // @func0000000000000053
-// %bb.0:                               // %entry
-	cmp	w2, #7
-	csinc	w8, w1, wzr, hs
-	add	x0, x0, w8, sxtw #3
-	ret
-                                        // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	cmp	w2, #7

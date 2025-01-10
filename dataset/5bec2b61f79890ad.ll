@@ -1,10 +1,10 @@
 
-%"class.ObjectLookup::ObjectEntry.2729645" = type <{ ptr, i32, [4 x i8] }>
-%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
-%"struct.faiss::OperatingPoint.3659195" = type { double, double, %"class.std::__cxx11::basic_string.3659181", i64 }
-%"class.std::__cxx11::basic_string.3659181" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659182", i64, %union.anon.3659183 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659182" = type { ptr }
-%union.anon.3659183 = type { i64, [8 x i8] }
+%"class.ObjectLookup::ObjectEntry.2729611" = type <{ ptr, i32, [4 x i8] }>
+%"struct.V3NumberData::ValueAndX.2754125" = type { i32, i32 }
+%"struct.faiss::OperatingPoint.3659145" = type { double, double, %"class.std::__cxx11::basic_string.3659131", i64 }
+%"class.std::__cxx11::basic_string.3659131" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659132", i64, %union.anon.3659133 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3659132" = type { ptr }
+%union.anon.3659133 = type { i64, [8 x i8] }
 
 ; 7 occurrences:
 ; hdf5/optimized/H5Tinit_float.c.ll
@@ -21,7 +21,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = lshr i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.ObjectLookup::ObjectEntry.2729645", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.ObjectLookup::ObjectEntry.2729611", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = add nsw i32 %3, %1
   %5 = lshr i32 %4, 5
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2754125", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -115,7 +115,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = lshr i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.faiss::OperatingPoint.3659195", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.faiss::OperatingPoint.3659145", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -843,12 +843,13 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_func_map_nested.cpp.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; lief/optimized/constant_time.c.ll
 ; linux/optimized/maple_tree.ll
+; linux/optimized/scsi_logging.ll
 ; linux/optimized/seq_buf.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/gather_layer.cpp.ll
@@ -1123,6 +1124,22 @@ entry:
   ret i1 %5
 }
 
+; 6 occurrences:
+; g2o/optimized/vertex_ellipse.cpp.ll
+; linux/optimized/aio.ll
+; llama.cpp/optimized/ggml.c.ll
+; luau/optimized/isocline.c.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; redis/optimized/bitops.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sge i64 %1, %2
+  %4 = icmp slt i64 %0, 0
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; boost/optimized/src.ll
 ; Function Attrs: nounwind
@@ -1301,12 +1318,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; casadi/optimized/sundials_dense.c.ll
 ; gromacs/optimized/tng_io.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; sundials/optimized/sundials_dense.c.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000196(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -1399,22 +1415,6 @@ define i1 @func0000000000000070(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -9223372036854775808
   %4 = icmp samesign ugt i64 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 6 occurrences:
-; g2o/optimized/vertex_ellipse.cpp.ll
-; linux/optimized/aio.ll
-; llama.cpp/optimized/ggml.c.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; redis/optimized/bitops.ll
-; tinympc/optimized/tiny_api.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sge i64 %1, %2
-  %4 = icmp slt i64 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
 }

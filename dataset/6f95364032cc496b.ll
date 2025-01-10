@@ -1,10 +1,10 @@
 
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
-%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549", i32, i32 }
-%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549" = type { ptr, [40 x i8] }
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515", i32, i32 }
+%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515" = type { ptr, [40 x i8] }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 24 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
@@ -127,7 +127,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2792291, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
@@ -156,7 +156,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -56
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
@@ -171,7 +171,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.JSShapeProperty.3435093, ptr %1, i64 %3
+  %4 = getelementptr %struct.JSShapeProperty.3435059, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0

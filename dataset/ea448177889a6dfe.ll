@@ -11,11 +11,9 @@ entry:
   ret i16 %5
 }
 
-; 5 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 3 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i64 %1) #0 {

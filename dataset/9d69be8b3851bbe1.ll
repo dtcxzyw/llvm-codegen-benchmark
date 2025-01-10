@@ -116,7 +116,7 @@ entry:
   ret i1 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; arrow/optimized/UriCommon.c.ll
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/pathfn.cpp.ll
@@ -146,7 +146,6 @@ entry:
 ; quantlib/optimized/taiwan.ll
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
-; redis/optimized/lbaselib.ll
 ; slurm/optimized/hostlist.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; yosys/optimized/muxpack.ll

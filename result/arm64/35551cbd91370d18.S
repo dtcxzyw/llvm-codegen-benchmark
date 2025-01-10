@@ -15,3 +15,11 @@ func0000000000000002:                   // @func0000000000000002
 	sub	x0, x8, #32
 	ret
                                         // -- End function
+func0000000000000022:                   // @func0000000000000022
+// %bb.0:                               // %entry
+	and	x8, x2, #0x7
+	sub	x8, x1, x8
+	add	x8, x0, x8
+	sub	x0, x8, #32
+	ret
+                                        // -- End function

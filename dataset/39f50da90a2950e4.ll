@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; darktable/optimized/MosDecoder.cpp.ll
@@ -14,6 +14,8 @@
 ; openssl/optimized/libssl-lib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
 ; protobuf/optimized/printer.cc.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
@@ -27,7 +29,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 177 occurrences:
+; 178 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/usage.cc.ll
 ; boost/optimized/algorithm.ll
@@ -130,6 +132,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; folly/optimized/UniqueInstance.cpp.ll
 ; grpc/optimized/alts_frame_protector.cc.ll
 ; grpc/optimized/http_proxy_mapper.cc.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/base.ll
 ; linux/optimized/ksysfs.ll
@@ -214,10 +217,11 @@ entry:
   ret i1 %5
 }
 
-; 578 occurrences:
+; 581 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/usage.cc.ll
+; assimp/optimized/unzip.c.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/area.ll
@@ -315,6 +319,7 @@ entry:
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; clamav/optimized/Bcj2.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/rawread.cpp.ll
 ; clamav/optimized/textnorm.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
@@ -453,6 +458,7 @@ entry:
 ; linux/optimized/dm-kcopyd.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/xprtsock.ll
 ; linux/optimized/zstd_decompress.ll
@@ -1221,10 +1227,11 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/sis.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -1557,8 +1564,11 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 12 occurrences:
 ; darktable/optimized/MosDecoder.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/profile.ll
 ; minetest/optimized/ban.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll

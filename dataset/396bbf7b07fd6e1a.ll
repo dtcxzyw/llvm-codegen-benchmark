@@ -1,9 +1,9 @@
 
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%struct.Nf_Obj_t_.2876014 = type { [2 x [2 x %struct.Nf_Mat_t_.2876015]] }
-%struct.Nf_Mat_t_.2876015 = type { i32, %struct.Nf_Cfg_t_.2876016, i32, float }
-%struct.Nf_Cfg_t_.2876016 = type { i32 }
-%"struct.std::array.39.3193502" = type { [2 x i32] }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%struct.Nf_Obj_t_.2875980 = type { [2 x [2 x %struct.Nf_Mat_t_.2875981]] }
+%struct.Nf_Mat_t_.2875981 = type { i32, %struct.Nf_Cfg_t_.2875982, i32, float }
+%struct.Nf_Cfg_t_.2875982 = type { i32 }
+%"struct.std::array.39.3193468" = type { [2 x i32] }
 
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
@@ -11,7 +11,7 @@
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.direntry_t.2705800, ptr %0, i64 %3
+  %4 = getelementptr %struct.direntry_t.2705766, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr [11 x i8], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -37,9 +37,9 @@ entry:
 define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Nf_Obj_t_.2876014, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Nf_Obj_t_.2875980, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw [2 x [2 x %struct.Nf_Mat_t_.2876015]], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [2 x [2 x %struct.Nf_Mat_t_.2875981]], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.std::array.39.3193502", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.std::array.39.3193468", ptr %0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr nusw nuw [2 x i32], ptr %4, i64 0, i64 %5
   ret ptr %6

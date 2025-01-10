@@ -1,18 +1,18 @@
 
-%struct.rb_size_pool_struct.2601024 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2601025, %struct.rb_heap_struct.2601025 }
-%struct.rb_heap_struct.2601025 = type { ptr, %struct.ccan_list_head.2601026, ptr, ptr, i64, ptr, i64, i64 }
-%struct.ccan_list_head.2601026 = type { %struct.ccan_list_node.2601027 }
-%struct.ccan_list_node.2601027 = type { ptr, ptr }
-%"class.asmjit::_abi_1_10::ZoneVector.4.2603647" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" }
-%"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" = type { ptr, i32, i32 }
-%"class.std::deque.2622471" = type { %"class.std::_Deque_base.2622472" }
-%"class.std::_Deque_base.2622472" = type { %"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl.2622473" }
-%"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl.2622473" = type { %"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl_data.2622474" }
-%"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl_data.2622474" = type { ptr, i64, %"struct.std::_Deque_iterator.2622475", %"struct.std::_Deque_iterator.2622475" }
-%"struct.std::_Deque_iterator.2622475" = type { ptr, ptr, ptr, ptr }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.VuDevRegion.2706745 = type { i64, i64, i64, i64, i64 }
-%"union.std::aligned_storage<16, 8>::type.2800765" = type { [16 x i8] }
+%struct.rb_size_pool_struct.2600991 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2600992, %struct.rb_heap_struct.2600992 }
+%struct.rb_heap_struct.2600992 = type { ptr, %struct.ccan_list_head.2600993, ptr, ptr, i64, ptr, i64, i64 }
+%struct.ccan_list_head.2600993 = type { %struct.ccan_list_node.2600994 }
+%struct.ccan_list_node.2600994 = type { ptr, ptr }
+%"class.asmjit::_abi_1_10::ZoneVector.4.2603614" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" }
+%"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" = type { ptr, i32, i32 }
+%"class.std::deque.2622438" = type { %"class.std::_Deque_base.2622439" }
+%"class.std::_Deque_base.2622439" = type { %"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl.2622440" }
+%"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl.2622440" = type { %"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl_data.2622441" }
+%"struct.std::_Deque_base<rocksdb::GenericRateLimiter::Req *, std::allocator<rocksdb::GenericRateLimiter::Req *>>::_Deque_impl_data.2622441" = type { ptr, i64, %"struct.std::_Deque_iterator.2622442", %"struct.std::_Deque_iterator.2622442" }
+%"struct.std::_Deque_iterator.2622442" = type { ptr, ptr, ptr, ptr }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.VuDevRegion.2706711 = type { i64, i64, i64, i64, i64 }
+%"union.std::aligned_storage<16, 8>::type.2800731" = type { [16 x i8] }
 
 ; 132 occurrences:
 ; cpython/optimized/lexer.ll
@@ -151,7 +151,7 @@
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr [5 x %struct.rb_size_pool_struct.2601024], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [5 x %struct.rb_size_pool_struct.2600991], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   ret ptr %4
 }
@@ -518,7 +518,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603647"], ptr %0, i64 0, i64 %2, i32 0, i32 2
+  %3 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603614"], ptr %0, i64 0, i64 %2, i32 0, i32 2
   ret ptr %3
 }
 
@@ -931,7 +931,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nuw [4 x %"class.std::deque.2622471"], ptr %0, i64 0, i64 %2, i32 0, i32 0, i32 0, i32 3
+  %3 = getelementptr nuw [4 x %"class.std::deque.2622438"], ptr %0, i64 0, i64 %2, i32 0, i32 0, i32 0, i32 3
   ret ptr %3
 }
 
@@ -943,7 +943,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }
@@ -956,7 +956,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr [32 x %struct.VuDevRegion.2706745], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [32 x %struct.VuDevRegion.2706711], ptr %0, i64 0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 40
   ret ptr %4
 }
@@ -999,7 +999,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800765"], ptr %0, i64 0, i64 %2, i32 0, i64 8
+  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800731"], ptr %0, i64 0, i64 %2, i32 0, i64 8
   ret ptr %3
 }
 
@@ -1041,7 +1041,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800765"], ptr %0, i64 0, i64 %2, i32 0, i64 8
+  %3 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800731"], ptr %0, i64 0, i64 %2, i32 0, i64 8
   ret ptr %3
 }
 

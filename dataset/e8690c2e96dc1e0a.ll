@@ -1,5 +1,5 @@
 
-; 2860 occurrences:
+; 2861 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcMiter.c.ll
@@ -1133,6 +1133,7 @@
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/ScoreboardHazardRecognizer.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -2868,7 +2869,7 @@ entry:
   ret i1 %3
 }
 
-; 2298 occurrences:
+; 2297 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -2914,7 +2915,6 @@ entry:
 ; chibicc/optimized/parse.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/clamsubmit.c.ll
-; clamav/optimized/mbox.c.ll
 ; clamav/optimized/message.c.ll
 ; clamav/optimized/regexec.c.ll
 ; clamav/optimized/rtf.c.ll

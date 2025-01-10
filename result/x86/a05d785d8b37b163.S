@@ -15,6 +15,12 @@ func00000000000001f4:                   # @func00000000000001f4
 	setb	%al
 	orb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	addl	%esi, %edx
+	cmpl	$8, %edx
+	setb	%al
+	orb	%dil, %al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edx
 	sete	%al

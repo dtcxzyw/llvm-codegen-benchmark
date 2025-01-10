@@ -1,7 +1,7 @@
 
-%class.relocInfo.2733766 = type { i16 }
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
-%struct.posix_acl_xattr_entry.3548205 = type { i16, i16, i32 }
+%class.relocInfo.2733732 = type { i16 }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
+%struct.posix_acl_xattr_entry.3548171 = type { i16, i16, i32 }
 
 ; 7 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -203,7 +203,7 @@ entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 16777215
   %4 = getelementptr nusw nuw i8, ptr %0, i64 30
-  %5 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -309,7 +309,7 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %5 = getelementptr %struct.JSShapeProperty.3435093, ptr %4, i64 %3
+  %5 = getelementptr %struct.JSShapeProperty.3435059, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -321,7 +321,7 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr %struct.posix_acl_xattr_entry.3548205, ptr %4, i64 %3
+  %5 = getelementptr %struct.posix_acl_xattr_entry.3548171, ptr %4, i64 %3
   ret ptr %5
 }
 

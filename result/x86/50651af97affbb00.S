@@ -17,11 +17,6 @@ func00000000000000f0:                   # @func00000000000000f0
 	leaq	(%rsi,%rax,8), %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func00000000000000f5:                   # @func00000000000000f5
-	movl	%edx, %eax
-	leaq	(%rsi,%rax,8), %rax
-	leaq	760(%rdi,%rax), %rax
-	retq
 func00000000000001ff:                   # @func00000000000001ff
 	movl	%edx, %eax
 	leaq	(%rsi,%rax,4), %rax

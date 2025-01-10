@@ -1,5 +1,5 @@
 
-; 486 occurrences:
+; 485 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -322,7 +322,6 @@
 ; openusd/optimized/collisionGroup.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll

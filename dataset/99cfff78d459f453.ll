@@ -1,5 +1,5 @@
 
-; 22499 occurrences:
+; 22498 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -12243,7 +12243,6 @@
 ; oniguruma/optimized/utf16_le.ll
 ; oniguruma/optimized/utf8.ll
 ; openblas/optimized/dgemm_beta.c.ll
-; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dgemm_thread_nn.c.ll
 ; openblas/optimized/dgemm_thread_nt.c.ll
 ; openblas/optimized/dgemm_thread_tn.c.ll
@@ -22506,7 +22505,7 @@ entry:
   ret i64 %2
 }
 
-; 6755 occurrences:
+; 6754 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -23273,7 +23272,6 @@ entry:
 ; clamav/optimized/pathfn.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pe.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
 ; clamav/optimized/recvol.cpp.ll

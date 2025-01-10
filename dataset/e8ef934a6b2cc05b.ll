@@ -1,12 +1,12 @@
 
-%"class.boost::intrusive::list.2684294" = type { %"class.boost::intrusive::list_impl.2684295" }
-%"class.boost::intrusive::list_impl.2684295" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" = type { %"struct.boost::intrusive::detail::default_header_holder.2684298" }
-%"struct.boost::intrusive::detail::default_header_holder.2684298" = type { %"struct.boost::intrusive::list_node.2684299" }
-%"struct.boost::intrusive::list_node.2684299" = type { ptr, ptr }
-%union.qoi_rgba_t.2729473 = type { i32 }
-%struct.e1000_shadow_ram.3538596 = type { i16, i8 }
+%"class.boost::intrusive::list.2684261" = type { %"class.boost::intrusive::list_impl.2684262" }
+%"class.boost::intrusive::list_impl.2684262" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" = type { %"struct.boost::intrusive::detail::default_header_holder.2684265" }
+%"struct.boost::intrusive::detail::default_header_holder.2684265" = type { %"struct.boost::intrusive::list_node.2684266" }
+%"struct.boost::intrusive::list_node.2684266" = type { ptr, ptr }
+%union.qoi_rgba_t.2729439 = type { i32 }
+%struct.e1000_shadow_ram.3538562 = type { i16, i8 }
 
 ; 23 occurrences:
 ; boost/optimized/copy_segment_point.ll
@@ -51,7 +51,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 255
-  %5 = getelementptr nusw nuw [256 x %"class.boost::intrusive::list.2684294"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %"class.boost::intrusive::list.2684261"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -81,7 +81,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 63
-  %5 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729473], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729439], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -119,7 +119,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3538596], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3538562], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; freetype/optimized/ftstroke.c.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
@@ -42,6 +42,7 @@
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; openjdk/optimized/library_call.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/node.cpp.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/regexec.ll
@@ -59,7 +60,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -92,6 +93,7 @@ entry:
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; nlohmann_json/optimized/unit-byte_container_with_subtype.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/path.cpp.ll
 ; qemu/optimized/scsi_utils.c.ll

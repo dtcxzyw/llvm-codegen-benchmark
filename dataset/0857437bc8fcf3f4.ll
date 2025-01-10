@@ -493,17 +493,6 @@ entry:
 }
 
 ; 1 occurrences:
-; libwebp/optimized/huffman_encode_utils.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %0, -276
-  %4 = add i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i32 %1) #0 {

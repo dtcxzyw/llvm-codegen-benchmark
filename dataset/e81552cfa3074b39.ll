@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -48,9 +48,6 @@
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll

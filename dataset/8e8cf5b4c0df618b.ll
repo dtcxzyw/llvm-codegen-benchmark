@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3291703" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3291669" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 46 occurrences:
 ; arrow/optimized/UriFile.c.ll
@@ -83,7 +83,7 @@ define ptr @func0000000000000002(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = select i1 %3, i64 -4858, i64 -4857
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3291703", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3291669", ptr %0, i64 %4
   ret ptr %5
 }
 

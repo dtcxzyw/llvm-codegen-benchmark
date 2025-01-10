@@ -27,6 +27,19 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -5
+  %4 = icmp eq i32 %3, 1
+  %5 = or i1 %0, %4
+  %6 = icmp ne i64 %1, 0
+  %7 = and i1 %5, %6
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; linux/optimized/link_watch.ll
 ; nuttx/optimized/lib_lgamma.c.ll
@@ -38,6 +51,23 @@ entry:
   %5 = or i1 %4, %1
   %6 = icmp eq i64 %0, 0
   %7 = and i1 %6, %5
+  ret i1 %7
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000318(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 64
+  %4 = icmp ne i32 %3, 0
+  %5 = or i1 %4, %0
+  %6 = icmp ne i64 %1, 0
+  %7 = and i1 %5, %6
   ret i1 %7
 }
 

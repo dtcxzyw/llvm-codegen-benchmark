@@ -18,19 +18,13 @@ func0000000000000294:                   # @func0000000000000294
 .LBB0_4:                                # %entry
 	ret
 func0000000000000021:                   # @func0000000000000021
-	andi	a1, a0, 3
-	li	a0, 2
-	li	a2, 1
-	beq	a1, a0, .LBB1_2
-	li	a0, 1
-	beq	a1, a2, .LBB1_3
-	j	.LBB1_4
-.LBB1_2:
-	li	a0, 3
-	bne	a1, a2, .LBB1_4
-.LBB1_3:                                # %entry
-	li	a0, 2
-.LBB1_4:                                # %entry
+	andi	a0, a0, 7
+	addi	a1, a0, -1
+	seqz	a0, a0
+	snez	a1, a1
+	addi	a1, a1, 1
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret
 func0000000000000181:                   # @func0000000000000181
 	lui	a1, 15

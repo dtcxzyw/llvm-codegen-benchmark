@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.210.3141205" = type { %"struct.std::__uniq_ptr_data.211.3141206" }
-%"struct.std::__uniq_ptr_data.211.3141206" = type { %"class.std::__uniq_ptr_impl.212.3141207" }
-%"class.std::__uniq_ptr_impl.212.3141207" = type { %"class.std::tuple.213.3141208" }
-%"class.std::tuple.213.3141208" = type { %"struct.std::_Tuple_impl.214.3141209" }
-%"struct.std::_Tuple_impl.214.3141209" = type { %"struct.std::_Head_base.217.3141210" }
-%"struct.std::_Head_base.217.3141210" = type { ptr }
+%"class.std::unique_ptr.210.3141171" = type { %"struct.std::__uniq_ptr_data.211.3141172" }
+%"struct.std::__uniq_ptr_data.211.3141172" = type { %"class.std::__uniq_ptr_impl.212.3141173" }
+%"class.std::__uniq_ptr_impl.212.3141173" = type { %"class.std::tuple.213.3141174" }
+%"class.std::tuple.213.3141174" = type { %"struct.std::_Tuple_impl.214.3141175" }
+%"struct.std::_Tuple_impl.214.3141175" = type { %"struct.std::_Head_base.217.3141176" }
+%"struct.std::_Head_base.217.3141176" = type { ptr }
 
 ; 1 occurrences:
 ; clamav/optimized/explode.c.ll
@@ -28,7 +28,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.std::unique_ptr.210.3141205", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::unique_ptr.210.3141171", ptr %0, i64 %5
   ret ptr %6
 }
 

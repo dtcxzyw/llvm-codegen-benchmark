@@ -1,5 +1,5 @@
 
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
 
 ; 5 occurrences:
 ; abc/optimized/dauCanon.c.ll
@@ -36,7 +36,7 @@ entry:
 define ptr @func0000000000000010(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 16
-  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %3, i64 %0
+  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %3, i64 %0
   %5 = ashr exact i64 %1, 28
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

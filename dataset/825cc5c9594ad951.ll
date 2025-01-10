@@ -1,6 +1,6 @@
 
-%struct.ItemPointerData.3651323 = type { %struct.BlockIdData.3651324, i16 }
-%struct.BlockIdData.3651324 = type { i16, i16 }
+%struct.ItemPointerData.3651289 = type { %struct.BlockIdData.3651290, i16 }
+%struct.BlockIdData.3651290 = type { i16, i16 }
 
 ; 5 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -45,7 +45,7 @@ entry:
   %3 = and i16 %2, 4095
   %4 = zext nneg i16 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr %struct.ItemPointerData.3651323, ptr %5, i64 %4
+  %6 = getelementptr %struct.ItemPointerData.3651289, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 -6
   ret ptr %7
 }

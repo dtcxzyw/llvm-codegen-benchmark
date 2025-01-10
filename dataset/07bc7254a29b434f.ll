@@ -1,5 +1,5 @@
 
-; 1706 occurrences:
+; 1708 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -186,6 +186,7 @@
 ; cmake/optimized/fld_def.c.ll
 ; cmake/optimized/http2.c.ll
 ; cmake/optimized/mprintf.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/strcase.c.ll
 ; cmake/optimized/testSystemTools.cxx.ll
@@ -260,6 +261,7 @@
 ; curl/optimized/libcurl_la-easy.ll
 ; curl/optimized/libcurl_la-escape.ll
 ; curl/optimized/libcurl_la-mprintf.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; curl/optimized/libcurl_la-smtp.ll
 ; curl/optimized/libcurl_la-strcase.ll

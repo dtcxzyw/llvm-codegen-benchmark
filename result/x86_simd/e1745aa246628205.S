@@ -119,14 +119,14 @@ func0000000000000004:                   # @func0000000000000004
 	vzeroupper
 	retq
 .LCPI5_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
 	.zero	1
 	.zero	1
 	.zero	1
@@ -136,7 +136,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	1
 	.zero	1
 .LCPI5_1:
-	.zero	4,3
+	.zero	4,7
 func0000000000000005:                   # @func0000000000000005
 	vpmovdb	%ymm1, %xmm1
 	vpternlogd	$248, .LCPI5_1(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)

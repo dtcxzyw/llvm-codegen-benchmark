@@ -46,6 +46,28 @@ entry:
   ret i32 %5
 }
 
+; 12 occurrences:
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/ifDec07.c.ll
+; abc/optimized/ioReadPla.c.ll
+; abc/optimized/rsbDec6.c.ll
+; gromacs/optimized/sim_util.cpp.ll
+; linux/optimized/intel_bios.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; openjdk/optimized/javaClasses.ll
+; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
+; spike/optimized/processor.ll
+; spike/optimized/spike.ll
+; wireshark/optimized/packet-scte35.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 7
+  %4 = select i1 %1, i32 %3, i32 %2
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
@@ -101,27 +123,6 @@ entry:
   %3 = add nsw i32 %2, -2
   %4 = select i1 %1, i32 %3, i32 %2
   %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 11 occurrences:
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/ifDec07.c.ll
-; abc/optimized/ioReadPla.c.ll
-; abc/optimized/rsbDec6.c.ll
-; gromacs/optimized/sim_util.cpp.ll
-; linux/optimized/intel_bios.ll
-; llvm/optimized/MCWin64EH.cpp.ll
-; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
-; spike/optimized/processor.ll
-; spike/optimized/spike.ll
-; wireshark/optimized/packet-scte35.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 10
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

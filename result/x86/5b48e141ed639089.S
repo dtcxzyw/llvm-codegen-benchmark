@@ -2,10 +2,6 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	%esi, %edi
 	setle	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
-	cmpl	%esi, %edi
-	setge	%al
-	retq
 func0000000000000021:                   # @func0000000000000021
 	cmpl	%esi, %edi
 	sete	%al
@@ -34,6 +30,10 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	subl	%esi, %eax
 	shrl	$31, %eax
+	retq
+func000000000000002a:                   # @func000000000000002a
+	cmpl	%esi, %edi
+	setg	%al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	subl	%esi, %edi

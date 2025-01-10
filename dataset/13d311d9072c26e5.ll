@@ -1,8 +1,8 @@
 
-%struct.b3ContactConstraint4.2819027 = type { %class.b3Vector3.2819013, [4 x %class.b3Vector3.2819013], %class.b3Vector3.2819013, [4 x float], [4 x float], [4 x float], [2 x float], [2 x float], i32, i32, i32, i32 }
-%class.b3Vector3.2819013 = type { %union.anon.2819014 }
-%union.anon.2819014 = type { [4 x float] }
-%struct.FmgrInfo.3655115 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
+%struct.b3ContactConstraint4.2818993 = type { %class.b3Vector3.2818979, [4 x %class.b3Vector3.2818979], %class.b3Vector3.2818979, [4 x float], [4 x float], [4 x float], [2 x float], [2 x float], i32, i32, i32, i32 }
+%class.b3Vector3.2818979 = type { %union.anon.2818980 }
+%union.anon.2818980 = type { [4 x float] }
+%struct.FmgrInfo.3655081 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; ruby/optimized/vm.ll
@@ -99,7 +99,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.b3ContactConstraint4.2819027, ptr %0, i64 %5, i32 10
+  %6 = getelementptr %struct.b3ContactConstraint4.2818993, ptr %0, i64 %5, i32 10
   ret ptr %6
 }
 
@@ -116,9 +116,10 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; clamav/optimized/manager.c.ll
 ; gromacs/optimized/bwlzh.c.ll
+; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -164,7 +165,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.FmgrInfo.3655115, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.FmgrInfo.3655081, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%struct.fwdb_wmm_ac.3550741 = type { i8, i8, i16 }
+%struct.fwdb_wmm_ac.3550707 = type { i8, i8, i16 }
 
 ; 2 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -57,7 +57,7 @@ define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [4 x %struct.fwdb_wmm_ac.3550741], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [4 x %struct.fwdb_wmm_ac.3550707], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwrite.c.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; zstd/optimized/zstd_compress.c.ll

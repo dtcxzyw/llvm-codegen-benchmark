@@ -99,9 +99,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/index-pack.ll
-; git/optimized/read-cache.ll
 ; gromacs/optimized/xtc3.c.ll
 ; icu/optimized/number_formatimpl.ll
 ; openjdk/optimized/superword.ll
@@ -148,18 +147,6 @@ define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp sgt i32 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openusd/optimized/decodeframe.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = icmp ne i32 %0, 0
   %4 = select i1 %3, i1 %2, i1 false
   %5 = zext i1 %4 to i32
   ret i32 %5

@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.2752218" = type { %"struct.std::__uniq_ptr_data.2752219" }
-%"struct.std::__uniq_ptr_data.2752219" = type { %"class.std::__uniq_ptr_impl.2752220" }
-%"class.std::__uniq_ptr_impl.2752220" = type { %"class.std::tuple.2752221" }
-%"class.std::tuple.2752221" = type { %"struct.std::_Tuple_impl.2752222" }
-%"struct.std::_Tuple_impl.2752222" = type { %"struct.std::_Head_base.97.2752223" }
-%"struct.std::_Head_base.97.2752223" = type { ptr }
+%"class.std::unique_ptr.2752184" = type { %"struct.std::__uniq_ptr_data.2752185" }
+%"struct.std::__uniq_ptr_data.2752185" = type { %"class.std::__uniq_ptr_impl.2752186" }
+%"class.std::__uniq_ptr_impl.2752186" = type { %"class.std::tuple.2752187" }
+%"class.std::tuple.2752187" = type { %"struct.std::_Tuple_impl.2752188" }
+%"struct.std::_Tuple_impl.2752188" = type { %"struct.std::_Head_base.97.2752189" }
+%"struct.std::_Head_base.97.2752189" = type { ptr }
 
 ; 9 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
@@ -22,7 +22,7 @@ entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = add nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.std::unique_ptr.2752218", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::unique_ptr.2752184", ptr %0, i64 %5
   ret ptr %6
 }
 

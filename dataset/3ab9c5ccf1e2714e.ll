@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2876114 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876080 = type <{ i64, i32 }>
 
 ; 6 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
@@ -18,7 +18,7 @@ entry:
   ret ptr %6
 }
 
-; 128 occurrences:
+; 129 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -147,6 +147,7 @@ entry:
 ; node/optimized/libnode.crypto_aes.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -233,8 +234,8 @@ define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876114, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct.Gia_Obj_t_.2876114, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876080, ptr %0, i64 %1
+  %6 = getelementptr nusw %struct.Gia_Obj_t_.2876080, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -126,8 +126,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/updategroupscog.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i64 %0, i64 %1) #0 {

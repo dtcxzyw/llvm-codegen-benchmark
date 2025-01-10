@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/llb2Flow.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -48,6 +48,7 @@
 ; opencv/optimized/warpfield.cpp.ll
 ; openmpi/optimized/ad_testfs_seek.ll
 ; openmpi/optimized/flatten.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -80,7 +81,7 @@ entry:
   ret i1 %4
 }
 
-; 526 occurrences:
+; 528 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -295,6 +296,7 @@ entry:
 ; openssl/optimized/openssl-bin-dgst.ll
 ; openssl/optimized/openssl-bin-mac.ll
 ; openusd/optimized/bufferSpec.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/patchTable.cpp.ll
@@ -348,6 +350,7 @@ entry:
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres_select_filter.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/ImageLoader.cpp.ll
@@ -616,7 +619,7 @@ entry:
   ret i1 %4
 }
 
-; 208 occurrences:
+; 209 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abseil-cpp/optimized/charconv_parse_test.cc.ll
@@ -768,6 +771,7 @@ entry:
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -1311,7 +1315,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 53 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
@@ -1322,6 +1326,7 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/setup.ll
 ; git/optimized/wt-status.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/intel-gtt.ll
@@ -1348,9 +1353,11 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; postgres/optimized/fe-protocol3.ll
 ; protobuf/optimized/descriptor.cc.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll
 ; sentencepiece/optimized/sentencepiece_trainer.cc.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/spank.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -1371,7 +1378,7 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -1405,6 +1412,7 @@ entry:
 ; openusd/optimized/patchTree.cpp.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; php/optimized/glob_wrapper.ll
+; qemu/optimized/cache.ll
 ; qemu/optimized/hw_9pfs_9p-xattr-user.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/read.ll

@@ -1,5 +1,5 @@
 
-%struct.lz_match.2747992 = type { i16, i16 }
+%struct.lz_match.2747958 = type { i16, i16 }
 
 ; 6 occurrences:
 ; hyperscan/optimized/fdr.c.ll
@@ -66,7 +66,7 @@ define i64 @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr nusw i8, ptr %0, i64 -4
-  %4 = getelementptr nusw %struct.lz_match.2747992, ptr %3, i64 %2
+  %4 = getelementptr nusw %struct.lz_match.2747958, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

@@ -1,5 +1,5 @@
 
-%struct.Indirect.3530524 = type { ptr, i32, ptr }
+%struct.Indirect.3530490 = type { ptr, i32, ptr }
 
 ; 2 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
@@ -126,7 +126,7 @@ define i64 @func0000000000000040(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -24
-  %5 = getelementptr %struct.Indirect.3530524, ptr %4, i64 %3
+  %5 = getelementptr %struct.Indirect.3530490, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

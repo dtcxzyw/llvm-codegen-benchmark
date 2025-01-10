@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
@@ -7,6 +7,8 @@
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

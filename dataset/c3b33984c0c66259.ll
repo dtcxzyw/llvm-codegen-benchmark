@@ -1,6 +1,10 @@
 
-; 2 occurrences:
+; 6 occurrences:
+; linux/optimized/vsprintf.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; raylib/optimized/rcore.c.ll
+; ruby/optimized/encoding.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
@@ -19,8 +23,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; clamav/optimized/cabd.c.ll
 ; linux/optimized/addrconf.ll
 ; openmpi/optimized/ad_write_coll.ll
-; php/optimized/pack.ll
 ; postgres/optimized/inv_api.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:

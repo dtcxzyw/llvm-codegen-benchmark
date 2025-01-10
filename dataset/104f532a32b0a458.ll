@@ -1,6 +1,6 @@
 
-%struct.anon.14.2601710 = type { ptr, ptr }
-%"struct.std::array.0.2873389" = type { [2 x i32] }
+%struct.anon.14.2601677 = type { ptr, ptr }
+%"struct.std::array.0.2873355" = type { [2 x i32] }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_char_ipoctal232.c.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [32 x %struct.anon.14.2601710], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [32 x %struct.anon.14.2601677], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -26,7 +26,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [3 x %"struct.std::array.0.2873389"], ptr %0, i64 0, i64 %3, i32 0, i64 1
+  %4 = getelementptr nuw [3 x %"struct.std::array.0.2873355"], ptr %0, i64 0, i64 %3, i32 0, i64 1
   ret ptr %4
 }
 

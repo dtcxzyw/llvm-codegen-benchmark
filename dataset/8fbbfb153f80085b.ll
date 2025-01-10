@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.29.2625758" = type { %"struct.std::__atomic_base.30.2625759" }
-%"struct.std::__atomic_base.30.2625759" = type { ptr }
+%"struct.std::atomic.29.2625725" = type { %"struct.std::__atomic_base.30.2625726" }
+%"struct.std::__atomic_base.30.2625726" = type { ptr }
 
 ; 550 occurrences:
 ; abc/optimized/giaEmbed.c.ll
@@ -2105,7 +2105,7 @@ define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = getelementptr nusw i8, ptr %0, i64 -8
-  %4 = getelementptr nusw %"struct.std::atomic.29.2625758", ptr %3, i64 %2
+  %4 = getelementptr nusw %"struct.std::atomic.29.2625725", ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -280,7 +280,7 @@ entry:
   ret i1 %5
 }
 
-; 234 occurrences:
+; 236 occurrences:
 ; abc/optimized/lpkAbcDsd.c.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; boost/optimized/get_turn_info.ll
@@ -298,9 +298,11 @@ entry:
 ; clamav/optimized/clamconf.c.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cmPolicies.cxx.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll

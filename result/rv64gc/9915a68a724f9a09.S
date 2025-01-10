@@ -9,12 +9,12 @@ func0000000000000057:                   # @func0000000000000057
 	add	a0, a0, a2
 	slli	a0, a0, 3
 	ret
-func0000000000000010:                   # @func0000000000000010
-	srli	a3, a2, 63
-	add	a2, a2, a3
-	srli	a2, a2, 1
-	add	a0, a0, a1
+func0000000000000020:                   # @func0000000000000020
+	add	a1, a1, a2
+	srli	a2, a0, 63
 	add	a0, a0, a2
+	srli	a0, a0, 1
+	add	a0, a0, a1
 	slli	a0, a0, 1
 	ret
 .LCPI2_0:
@@ -30,13 +30,13 @@ func0000000000000034:                   # @func0000000000000034
 	add	a0, a0, a2
 	slli	a0, a0, 32
 	ret
-func0000000000000014:                   # @func0000000000000014
-	srai	a3, a2, 63
-	srli	a3, a3, 62
-	add	a2, a2, a3
-	srli	a2, a2, 2
-	add	a0, a0, a1
+func0000000000000024:                   # @func0000000000000024
+	add	a1, a1, a2
+	srai	a2, a0, 63
+	srli	a2, a2, 62
 	add	a0, a0, a2
+	srli	a0, a0, 2
+	add	a0, a0, a1
 	slli	a0, a0, 2
 	ret
 func0000000000000040:                   # @func0000000000000040
@@ -57,6 +57,15 @@ func0000000000000021:                   # @func0000000000000021
 	srli	a0, a0, 1
 	sub	a0, a1, a0
 	slli	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	srai	a3, a2, 63
+	srli	a3, a3, 58
+	add	a2, a2, a3
+	srli	a2, a2, 6
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slli	a0, a0, 32
 	ret
 func0000000000000054:                   # @func0000000000000054
 	srai	a2, a2, 3

@@ -1,5 +1,5 @@
 
-; 269 occurrences:
+; 268 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; arrow/optimized/utf8.cc.ll
 ; boost/optimized/test_codecvt.ll
@@ -105,7 +105,6 @@
 ; linux/optimized/namei.ll
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/printk.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/smpboot.ll
@@ -476,7 +475,7 @@ entry:
   ret i16 %2
 }
 
-; 411 occurrences:
+; 410 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaCof.c.ll
@@ -636,7 +635,6 @@ entry:
 ; linux/optimized/xfrm_state.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll

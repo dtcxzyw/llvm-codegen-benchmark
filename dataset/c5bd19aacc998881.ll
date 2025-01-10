@@ -96,8 +96,9 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/print_settings.c.ll
+; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; velox/optimized/DenseHll.cpp.ll

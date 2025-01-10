@@ -1,5 +1,5 @@
 
-%struct.quic_pp_cipher.3436945 = type { ptr, [12 x i8] }
+%struct.quic_pp_cipher.3436911 = type { ptr, [12 x i8] }
 
 ; 1 occurrences:
 ; luau/optimized/IrRegAllocA64.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %4 = select i1 %3, i64 208, i64 288
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
-  %7 = getelementptr [2 x %struct.quic_pp_cipher.3436945], ptr %6, i64 0, i64 %0
+  %7 = getelementptr [2 x %struct.quic_pp_cipher.3436911], ptr %6, i64 0, i64 %0
   ret ptr %7
 }
 

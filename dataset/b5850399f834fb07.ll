@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 172 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/exor.c.ll
@@ -21,7 +21,6 @@
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/ftp.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; coremark/optimized/core_matrix.c.ll
 ; cpython/optimized/longobject.ll
@@ -171,7 +170,6 @@
 ; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind

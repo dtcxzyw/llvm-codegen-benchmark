@@ -1,5 +1,5 @@
 
-%struct.cvEMDEdge.3769351 = type { float, i32, ptr, ptr, ptr }
+%struct.cvEMDEdge.3769301 = type { float, i32, ptr, ptr, ptr }
 
 ; 202 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -224,7 +224,7 @@ entry:
   %4 = sext i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr %struct.cvEMDEdge.3769351, ptr %6, i64 %5
+  %7 = getelementptr %struct.cvEMDEdge.3769301, ptr %6, i64 %5
   ret ptr %7
 }
 

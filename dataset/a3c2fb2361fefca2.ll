@@ -222,8 +222,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
+; libevent/optimized/event.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:

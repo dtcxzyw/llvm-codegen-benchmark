@@ -1,7 +1,7 @@
 
-%struct.btSolverConstraint.2817833 = type { %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, float, float, float, float, float, float, float, float, float, %union.anon.24.2817835, i32, i32, i32, i32 }
-%class.btVector3.2817834 = type { [4 x float] }
-%union.anon.24.2817835 = type { ptr }
+%struct.btSolverConstraint.2817799 = type { %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, %class.btVector3.2817800, float, float, float, float, float, float, float, float, float, %union.anon.24.2817801, i32, i32, i32, i32 }
+%class.btVector3.2817800 = type { [4 x float] }
+%union.anon.24.2817801 = type { ptr }
 
 ; 8 occurrences:
 ; abc/optimized/dauDsd.c.ll
@@ -112,20 +112,7 @@ define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %struct.btSolverConstraint.2817833, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 3 occurrences:
-; abc/optimized/dauNonDsd.c.ll
-; openusd/optimized/cdef.c.ll
-; yosys/optimized/sim.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.btSolverConstraint.2817799, ptr %0, i64 %4
   ret ptr %5
 }
 

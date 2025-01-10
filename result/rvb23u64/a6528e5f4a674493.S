@@ -21,6 +21,15 @@ func0000000000000004:                   # @func0000000000000004
 	seqz	a0, a0
 	xori	a0, a0, 9
 	ret
+func000000000000000a:                   # @func000000000000000a
+	add	a0, a0, a1
+	li	a1, 2
+	slti	a0, a0, 0
+	czero.nez	a0, a1, a0
+	li	a1, -1
+	srli	a1, a1, 1
+	add	a0, a0, a1
+	ret
 func0000000000000078:                   # @func0000000000000078
 	add	a0, a0, a1
 	srli	a0, a0, 53

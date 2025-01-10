@@ -14,7 +14,7 @@ func0000000000000020:                   # @func0000000000000020
 	leaq	(%rdi,%rax,8), %rax
 	leaq	(%rax,%rsi,8), %rax
 	retq
-func00000000000000c0:                   # @func00000000000000c0
+func0000000000000000:                   # @func0000000000000000
 	leaq	3(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax

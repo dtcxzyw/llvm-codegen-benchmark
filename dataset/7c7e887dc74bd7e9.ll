@@ -1,13 +1,13 @@
 
-%"class.rocksdb::Slice.2615127" = type { ptr, i64 }
-%"class.std::vector.13.2851001" = type { %"struct.std::_Vector_base.14.2851002" }
-%"struct.std::_Vector_base.14.2851002" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2851003" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2851003" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2851004" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2851004" = type { ptr, ptr, ptr }
-%"class.std::vector.312.3063267" = type { %"struct.std::_Vector_base.313.3063268" }
-%"struct.std::_Vector_base.313.3063268" = type { %"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl.3063269" }
-%"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl.3063269" = type { %"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl_data.3063270" }
-%"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl_data.3063270" = type { ptr, ptr, ptr }
+%"class.rocksdb::Slice.2615094" = type { ptr, i64 }
+%"class.std::vector.13.2850967" = type { %"struct.std::_Vector_base.14.2850968" }
+%"struct.std::_Vector_base.14.2850968" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2850969" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2850969" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2850970" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2850970" = type { ptr, ptr, ptr }
+%"class.std::vector.312.3063233" = type { %"struct.std::_Vector_base.313.3063234" }
+%"struct.std::_Vector_base.313.3063234" = type { %"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl.3063235" }
+%"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl.3063235" = type { %"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl_data.3063236" }
+%"struct.std::_Vector_base<tf::Segment, std::allocator<tf::Segment>>::_Vector_impl_data.3063236" = type { ptr, ptr, ptr }
 
 ; 46 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -62,7 +62,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr %"class.rocksdb::Slice.2615127", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.rocksdb::Slice.2615094", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -144,7 +144,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr nuw %"class.std::vector.13.2851001", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  %6 = getelementptr nuw %"class.std::vector.13.2850967", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
   ret ptr %6
 }
 
@@ -194,7 +194,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr %"class.std::vector.312.3063267", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
+  %6 = getelementptr %"class.std::vector.312.3063233", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

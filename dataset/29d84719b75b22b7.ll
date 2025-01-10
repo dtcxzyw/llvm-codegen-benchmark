@@ -1,17 +1,17 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
-%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
-%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::__shared_count.2612196" = type { ptr }
-%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
-%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
-%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::shared_ptr.160.2817487" = type { %"class.std::__shared_ptr.161.2817488" }
-%"class.std::__shared_ptr.161.2817488" = type { ptr, %"class.std::__shared_count.2817364" }
-%"class.std::__shared_count.2817364" = type { ptr }
-%"struct.Yosys::RTLIL::SigBit.3129946" = type <{ ptr, %union.anon.205.3129947, [4 x i8] }>
-%union.anon.205.3129947 = type { i32 }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176" = type { %"class.std::shared_ptr.2.2612164", i8, %"class.std::shared_ptr.2612161", i64, i64, i64, %"class.std::shared_ptr.372.2612177" }
+%"class.std::shared_ptr.2.2612164" = type { %"class.std::__shared_ptr.3.2612165" }
+%"class.std::__shared_ptr.3.2612165" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::__shared_count.2612163" = type { ptr }
+%"class.std::shared_ptr.2612161" = type { %"class.std::__shared_ptr.2612162" }
+%"class.std::__shared_ptr.2612162" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::shared_ptr.372.2612177" = type { %"class.std::__shared_ptr.373.2612178" }
+%"class.std::__shared_ptr.373.2612178" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::shared_ptr.160.2817453" = type { %"class.std::__shared_ptr.161.2817454" }
+%"class.std::__shared_ptr.161.2817454" = type { ptr, %"class.std::__shared_count.2817330" }
+%"class.std::__shared_count.2817330" = type { ptr }
+%"struct.Yosys::RTLIL::SigBit.3129912" = type <{ ptr, %union.anon.205.3129913, [4 x i8] }>
+%union.anon.205.3129913 = type { i32 }
 
 ; 21 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
@@ -38,9 +38,9 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %0, i64 %2
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -80
-  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %4, i64 %1
+  %5 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -640
   ret ptr %6
 }
@@ -78,7 +78,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::shared_ptr.160.2817487", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::shared_ptr.160.2817453", ptr %0, i64 %2
   %.idx = shl i64 %1, 4
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = getelementptr i8, ptr %4, i64 %.idx
@@ -165,7 +165,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129946", ptr %0, i64 %2
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3129912", ptr %0, i64 %2
   %.idx = shl i64 %1, 4
   %4 = getelementptr i8, ptr %3, i64 24
   %5 = getelementptr i8, ptr %4, i64 %.idx

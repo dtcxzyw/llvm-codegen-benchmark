@@ -18,10 +18,6 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rdx, %rsi
 	shlxq	%rdi, %rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	imulq	%rdx, %rsi
-	shlxq	%rdi, %rsi, %rax
-	retq
 func000000000000000e:                   # @func000000000000000e
 	imulq	%rdx, %rsi
 	shlxq	%rdi, %rsi, %rax

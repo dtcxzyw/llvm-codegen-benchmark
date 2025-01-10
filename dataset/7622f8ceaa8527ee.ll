@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2934154 = type { %union.Value.2934155, [1 x i32], i32 }
-%union.Value.2934155 = type { ptr }
+%struct.lua_TValue.2934120 = type { %union.Value.2934121, [1 x i32], i32 }
+%union.Value.2934121 = type { ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -35,9 +35,9 @@ entry:
 define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %1
-  %4 = getelementptr nusw %struct.lua_TValue.2934154, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.lua_TValue.2934120, ptr %0, i64 %3
   %5 = sext i32 %2 to i64
-  %6 = getelementptr %struct.lua_TValue.2934154, ptr %4, i64 %5
+  %6 = getelementptr %struct.lua_TValue.2934120, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

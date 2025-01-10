@@ -1,5 +1,5 @@
 
-%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
+%"struct.llvm::reassociate::ValueEntry.3349310" = type { i32, ptr }
 
 ; 94 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
@@ -107,9 +107,8 @@ entry:
   ret i64 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaCof.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_clause_proof.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
@@ -118,10 +117,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
+  %3 = and i32 %2, 2147483647
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -133,8 +132,8 @@ define i64 @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349310", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349310", ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

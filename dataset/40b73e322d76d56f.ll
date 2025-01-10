@@ -1,5 +1,5 @@
 
-%struct.dtPoly.3108532 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
+%struct.dtPoly.3108498 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
 
 ; 2 occurrences:
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
@@ -24,7 +24,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 100
   %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw nuw %struct.dtPoly.3108532, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %struct.dtPoly.3108498, ptr %6, i64 %0
   ret ptr %7
 }
 

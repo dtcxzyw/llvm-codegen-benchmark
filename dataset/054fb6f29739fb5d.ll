@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/mmap.ll
 ; llvm/optimized/Mangle.cpp.ll

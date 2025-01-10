@@ -1,9 +1,9 @@
 
-%"struct.std::pair.1638.3037776" = type { %"class.boost::geometry::model::point.357.3037507", %"class.__gnu_cxx::__normal_iterator.1625.3037777" }
-%"class.boost::geometry::model::point.357.3037507" = type { [2 x double] }
-%"class.__gnu_cxx::__normal_iterator.1625.3037777" = type { ptr }
-%"struct.std::pair.1185.3175192" = type { %"class.llvm::StringRef.3174809", ptr }
-%"class.llvm::StringRef.3174809" = type { ptr, i64 }
+%"struct.std::pair.1638.3037742" = type { %"class.boost::geometry::model::point.357.3037473", %"class.__gnu_cxx::__normal_iterator.1625.3037743" }
+%"class.boost::geometry::model::point.357.3037473" = type { [2 x double] }
+%"class.__gnu_cxx::__normal_iterator.1625.3037743" = type { ptr }
+%"struct.std::pair.1185.3175158" = type { %"class.llvm::StringRef.3174775", ptr }
+%"class.llvm::StringRef.3174775" = type { ptr, i64 }
 
 ; 9 occurrences:
 ; boost/optimized/within_pointlike_geometry.ll
@@ -20,7 +20,7 @@ define ptr @func00000000000000bb(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 24
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.1638.3037776", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.1638.3037742", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -33,7 +33,7 @@ define ptr @func00000000000000bf(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 24
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.1185.3175192", ptr %0, i64 %3
+  %4 = getelementptr %"struct.std::pair.1185.3175158", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }

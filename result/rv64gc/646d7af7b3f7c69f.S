@@ -14,7 +14,7 @@ func000000000000007a:                   # @func000000000000007a
 	andi	a1, a1, 255
 	slli	a1, a1, 1
 	add	a0, a0, a1
-	srliw	a0, a0, 3
+	srliw	a0, a0, 4
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	srliw	a0, a0, 12

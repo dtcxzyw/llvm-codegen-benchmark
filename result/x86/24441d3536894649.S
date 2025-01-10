@@ -37,10 +37,3 @@ func00000000000000fa:                   # @func00000000000000fa
 	addl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000fe:                   # @func00000000000000fe
-	leal	(%rdx,%rdx,2), %eax
-	shll	$13, %eax
-	shll	$12, %esi
-	addl	%esi, %eax
-	addl	%edi, %eax
-	retq

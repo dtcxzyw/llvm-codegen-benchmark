@@ -12,3 +12,10 @@ func0000000000000000:                   # @func0000000000000000
 .LBB1_2:                                # %entry
 	neg	a0, a0
 	ret
+func0000000000000011:                   # @func0000000000000011
+	sub	a1, a1, a2
+	bltu	a1, a0, .LBB2_2
+	mv	a1, a0
+.LBB2_2:                                # %entry
+	neg	a0, a1
+	ret

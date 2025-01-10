@@ -155,7 +155,7 @@ entry:
   ret i32 %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -194,7 +194,6 @@ entry:
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
@@ -223,7 +222,7 @@ entry:
   ret i32 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/ifDec75.c.ll
@@ -243,7 +242,6 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/runtime.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openusd/optimized/reconintra.c.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-btsap.c.ll

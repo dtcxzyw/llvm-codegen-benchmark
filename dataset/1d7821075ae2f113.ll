@@ -917,7 +917,7 @@ entry:
   ret i1 %3
 }
 
-; 837 occurrences:
+; 832 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -1068,9 +1068,6 @@ entry:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jq/optimized/decNumber.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libpng/optimized/pngget.c.ll
@@ -1553,8 +1550,6 @@ entry:
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
@@ -1763,7 +1758,7 @@ entry:
   ret i1 %3
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -1857,7 +1852,6 @@ entry:
 ; wireshark/optimized/packet-extreme.c.ll
 ; wireshark/optimized/packet-netlink.c.ll
 ; wireshark/optimized/packet-pnrp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-someip-sd.c.ll

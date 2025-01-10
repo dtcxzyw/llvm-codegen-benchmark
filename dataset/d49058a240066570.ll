@@ -1,7 +1,9 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/_ssl.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; node/optimized/libnode.crypto_context.ll
 ; node/optimized/libnode.node.ll
 ; openssl/optimized/cipherlist_test-bin-cipherlist_test.ll

@@ -1,12 +1,11 @@
 
-; 186 occurrences:
+; 185 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/src.ll
 ; brotli/optimized/bit_cost.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cpio.c.ll

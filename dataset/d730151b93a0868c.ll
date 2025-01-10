@@ -1,5 +1,5 @@
 
-; 1576 occurrences:
+; 1603 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -191,9 +191,18 @@
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
+; coreutils-rs/optimized/28bc720kv1ca2ji3.ll
+; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; coreutils-rs/optimized/2nqetp4aeyokg7z8.ll
+; coreutils-rs/optimized/2qo70e4zd6mgrgtt.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
+; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
+; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
+; coreutils-rs/optimized/4ebr33npwdm3i540.ll
+; coreutils-rs/optimized/5362q9qekdi7amtn.ll
+; coreutils-rs/optimized/5bynua1et0hks54.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/bltinmodule.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -233,7 +242,9 @@
 ; darktable/optimized/print_settings.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/tyvgsemgcx0yw30.ll
+; diesel-rs/optimized/4sfj60patc6ec44s.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; draco/optimized/float_points_tree_encoder.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -402,7 +413,6 @@
 ; hyperscan/optimized/rose_in_util.cpp.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
 ; hyperscan/optimized/stream.c.ll
-; hyperscan/optimized/ue2string.cpp.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/decNumber.ll
@@ -426,12 +436,14 @@
 ; jq/optimized/decNumber.ll
 ; jq/optimized/regerror.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
+; just-rs/optimized/2sotx4bdu006z307.ll
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
 ; libevent/optimized/bufferevent_filter.c.ll
 ; libevent/optimized/http.c.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/quic_unacked_packet_map.cc.ll
 ; libwebp/optimized/buffer_dec.c.ll
@@ -635,6 +647,7 @@
 ; llvm/optimized/SSAUpdaterBulk.cpp.ll
 ; llvm/optimized/SampleProf.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
@@ -1274,6 +1287,7 @@
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
@@ -1287,6 +1301,7 @@
 ; regex-rs/optimized/gbxkn0az9l87aop.ll
 ; ripgrep-rs/optimized/4m87zogkrnv5oa3v.ll
 ; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
+; ripgrep-rs/optimized/n2o0pbfhrfss8aa.ll
 ; rocksdb/optimized/arena_wrapped_db_iter.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
@@ -1316,21 +1331,30 @@
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
+; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/2o0d131ok2fe9kmx.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
+; rust-analyzer-rs/optimized/3fxp92r9t1x66wd0.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; rust-analyzer-rs/optimized/3zpu2xhafenr2db0.ll
 ; rust-analyzer-rs/optimized/4gpbylzxf192izgm.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
+; rust-analyzer-rs/optimized/4jvd7t10e7ozxalq.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
+; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/56mi9mdna0u3odv5.ll
 ; rust-analyzer-rs/optimized/59dl6i7wymyjqg05.ll
 ; rust-analyzer-rs/optimized/5djmpgt9ghwflvfq.ll
+; rust-analyzer-rs/optimized/9ipmi6my0zkv4p.ll
+; rust-analyzer-rs/optimized/bdopwa51jybvqli.ll
 ; rust-analyzer-rs/optimized/m5y7tkywgbwlx2e.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; sentencepiece/optimized/bpe_model.cc.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/builder.cc.ll
@@ -1378,6 +1402,7 @@
 ; tree-sitter-rs/optimized/3akexam875pc2p1h.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
+; tree-sitter-rs/optimized/sw0aazrl08me20d.ll
 ; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
 ; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
@@ -1385,6 +1410,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; typst-rs/optimized/avdrw26ojy6f9qt.ll
 ; typst-rs/optimized/x7jq6ogp3t9ef5k.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -1407,6 +1433,7 @@
 ; wasmtime-rs/optimized/142pswrf9m1eqg4t.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/1e75qbimt8rfvrit.ll
+; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll

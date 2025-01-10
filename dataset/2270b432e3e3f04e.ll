@@ -364,8 +364,11 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; boost/optimized/to_chars.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {

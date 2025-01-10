@@ -1,5 +1,5 @@
 
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
@@ -10,7 +10,7 @@ entry:
   %3 = and i64 %2, 63
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr [16 x %struct.P256_POINT.2634394], ptr %5, i64 %0, i64 0, i32 1
+  %6 = getelementptr [16 x %struct.P256_POINT.2634361], ptr %5, i64 %0, i64 0, i32 1
   ret ptr %6
 }
 

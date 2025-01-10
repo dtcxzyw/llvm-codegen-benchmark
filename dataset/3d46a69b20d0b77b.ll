@@ -1,6 +1,6 @@
 
-%"class.cv::Point_.3765933" = type { float, float }
-%struct.pointf_s.3884924 = type { double, double }
+%"class.cv::Point_.3765883" = type { float, float }
+%struct.pointf_s.3884874 = type { double, double }
 
 ; 2 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -92,9 +92,13 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000d0(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -261,7 +265,7 @@ define ptr @func00000000000000d3(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul nsw i64 %3, %1
-  %5 = getelementptr %"class.cv::Point_.3765933", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Point_.3765883", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -284,7 +288,7 @@ define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = mul i64 %1, %3
-  %5 = getelementptr %struct.pointf_s.3884924, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.pointf_s.3884874, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

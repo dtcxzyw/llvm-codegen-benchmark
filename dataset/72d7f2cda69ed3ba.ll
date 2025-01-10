@@ -22,8 +22,9 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/vfs_inode.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; qemu/optimized/target_riscv_translate.c.ll
@@ -119,19 +120,6 @@ entry:
   %5 = and i32 %4, 1835008
   %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = shl nuw nsw i32 %3, 1
-  %5 = and i32 %4, 32
-  %6 = or i32 %1, %5
-  %7 = or i32 %6, %0
   ret i32 %7
 }
 

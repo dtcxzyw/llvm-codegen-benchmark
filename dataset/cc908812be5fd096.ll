@@ -63,13 +63,12 @@ entry:
   ret i64 %5
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
 ; boost/optimized/collator.ll
 ; c3c/optimized/diagnostics.c.ll
-; clamav/optimized/dll.cpp.ll
 ; cmake/optimized/zdict.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; freetype/optimized/sfnt.c.ll

@@ -1,7 +1,7 @@
 
-%"class.asmjit::_abi_1_10::RALiveSpan.2603635" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603636", %"struct.asmjit::_abi_1_10::LiveRegData.2603637" }
-%"struct.asmjit::_abi_1_10::RALiveInterval.2603636" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::LiveRegData.2603637" = type { i32 }
+%"class.asmjit::_abi_1_10::RALiveSpan.2603602" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603603", %"struct.asmjit::_abi_1_10::LiveRegData.2603604" }
+%"struct.asmjit::_abi_1_10::RALiveInterval.2603603" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::LiveRegData.2603604" = type { i32 }
 
 ; 20 occurrences:
 ; clamav/optimized/mew.c.ll
@@ -28,7 +28,7 @@
 define i64 @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603635", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603602", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, -12
   ret i64 %5

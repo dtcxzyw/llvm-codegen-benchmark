@@ -1,5 +1,5 @@
 
-; 5069 occurrences:
+; 5070 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -877,6 +877,7 @@
 ; git/optimized/daemon.ll
 ; git/optimized/diff-lib.ll
 ; git/optimized/diff.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/dir.ll
 ; git/optimized/fast-import.ll
 ; git/optimized/fsck.ll
@@ -5077,7 +5078,7 @@ entry:
   ret ptr %3
 }
 
-; 5834 occurrences:
+; 5832 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -6396,7 +6397,6 @@ entry:
 ; git/optimized/diff-delta.ll
 ; git/optimized/diff-lib.ll
 ; git/optimized/diff.ll
-; git/optimized/diffcore-delta.ll
 ; git/optimized/dir.ll
 ; git/optimized/fast-import.ll
 ; git/optimized/kwset.ll
@@ -9049,7 +9049,6 @@ entry:
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/inherits.cpp.ll
@@ -13059,7 +13058,7 @@ entry:
   ret ptr %3
 }
 
-; 4280 occurrences:
+; 4282 occurrences:
 ; abc/optimized/abcCheck.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -14679,6 +14678,7 @@ entry:
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libahci.ll
+; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/lz4_decompress.ll
@@ -15946,6 +15946,7 @@ entry:
 ; php/optimized/phar.ll
 ; php/optimized/php_cli_server.ll
 ; php/optimized/php_ini.ll
+; php/optimized/php_pcre.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/phpdbg_btree.ll
 ; php/optimized/phpdbg_prompt.ll

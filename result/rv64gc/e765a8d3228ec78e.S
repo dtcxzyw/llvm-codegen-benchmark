@@ -34,3 +34,10 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
+func000000000000002d:                   # @func000000000000002d
+	sext.w	a2, a0
+	bltu	a1, a2, .LBB3_2
+	mv	a1, a2
+.LBB3_2:                                # %entry
+	subw	a0, a0, a1
+	ret

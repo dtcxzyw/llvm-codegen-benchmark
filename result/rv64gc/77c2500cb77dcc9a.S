@@ -15,3 +15,8 @@ func00000000000002a4:                   # @func00000000000002a4
 	srli	a0, a0, 12
 	seqz	a0, a0
 	ret
+func00000000000000a8:                   # @func00000000000000a8
+	sext.w	a0, a0
+	addi	a0, a0, -19
+	sltiu	a0, a0, -15
+	ret

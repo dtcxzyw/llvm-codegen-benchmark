@@ -1,7 +1,7 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%struct.PhysPageEntry.2709868 = type { i32 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%struct.PhysPageEntry.2709834 = type { i32 }
 
 ; 2 occurrences:
 ; linux/optimized/filter.ll
@@ -10,9 +10,9 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %3
   %5 = and i64 %1, 4294967295
-  %6 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %5
+  %6 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -128,9 +128,9 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [512 x %struct.PhysPageEntry.2709868], ptr %0, i64 %3
+  %4 = getelementptr [512 x %struct.PhysPageEntry.2709834], ptr %0, i64 %3
   %5 = and i64 %1, 511
-  %6 = getelementptr %struct.PhysPageEntry.2709868, ptr %4, i64 %5
+  %6 = getelementptr %struct.PhysPageEntry.2709834, ptr %4, i64 %5
   ret ptr %6
 }
 

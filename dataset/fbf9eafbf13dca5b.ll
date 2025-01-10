@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -12,7 +12,6 @@
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_CommonUtils.ll
 ; redis/optimized/t_zset.ll
 ; spike/optimized/s_mul128MTo256M.ll
-; spike/optimized/s_subM.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:

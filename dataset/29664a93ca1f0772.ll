@@ -1,5 +1,5 @@
 
-; 613 occurrences:
+; 614 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -242,6 +242,7 @@
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/timeout.ll
+; linux/optimized/trace_output.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
@@ -642,13 +643,11 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 14 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/udp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll

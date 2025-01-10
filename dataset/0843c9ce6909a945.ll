@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/ivyHaig.c.ll
@@ -60,6 +60,8 @@ entry:
 ; opencv/optimized/cv2_numpy.cpp.ll
 ; opencv/optimized/grfmt_png.cpp.ll
 ; openjdk/optimized/net_util.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; qemu/optimized/hw_usb_core.c.ll
@@ -68,11 +70,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, 3
-  %2 = icmp eq i32 %1, 2
-  %3 = select i1 %2, i32 3, i32 1
-  %4 = icmp eq i32 %1, 1
-  %5 = select i1 %4, i32 2, i32 %3
+  %1 = and i32 %0, 7
+  %2 = icmp eq i32 %1, 1
+  %3 = select i1 %2, i32 1, i32 2
+  %4 = icmp eq i32 %1, 0
+  %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
 

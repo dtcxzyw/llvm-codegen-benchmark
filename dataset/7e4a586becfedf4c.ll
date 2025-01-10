@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3554398 = type { i32, i8 }
+%struct.alps_nibble_commands.3554364 = type { i32, i8 }
 
 ; 3 occurrences:
 ; libpng/optimized/pngrtran.c.ll
@@ -35,7 +35,7 @@ define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.alps_nibble_commands.3554364, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

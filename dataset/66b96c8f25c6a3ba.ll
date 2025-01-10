@@ -1,5 +1,5 @@
 
-%union.qoi_rgba_t.2729473 = type { i32 }
+%union.qoi_rgba_t.2729439 = type { i32 }
 
 ; 4 occurrences:
 ; pbrt-v4/optimized/image.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %4 = mul nuw nsw i64 %3, 11
   %5 = add nuw nsw i64 %1, %4
   %6 = and i64 %5, 63
-  %7 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729473], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [64 x %union.qoi_rgba_t.2729439], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

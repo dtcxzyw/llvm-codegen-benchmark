@@ -1,7 +1,7 @@
 
-%struct.name_entry.2884835 = type { %struct.object_id.2884826, ptr, i32, i32 }
-%struct.object_id.2884826 = type { [32 x i8], i32 }
-%struct.code.3057945 = type { i8, i8, i16 }
+%struct.name_entry.2884801 = type { %struct.object_id.2884792, ptr, i32, i32 }
+%struct.object_id.2884792 = type { [32 x i8], i32 }
+%struct.code.3057911 = type { i8, i8, i16 }
 
 ; 2 occurrences:
 ; abc/optimized/dauTree.c.ll
@@ -38,7 +38,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %struct.name_entry.2884835, ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %struct.name_entry.2884801, ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 
@@ -54,7 +54,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.code.3057945, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.code.3057911, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

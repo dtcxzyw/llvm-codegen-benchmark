@@ -1,11 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	addl	%eax, %eax
-	testb	$1, %sil
-	movl	$2, %ecx
-	cmovel	%ecx, %eax
-	cmpl	$14, %edi
+	cmpl	$1116, %edx                     # imm = 0x45C
+	movl	$98, %eax
+	movl	$35, %ecx
 	cmovnel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq

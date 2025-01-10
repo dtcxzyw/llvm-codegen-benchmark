@@ -46,20 +46,6 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	$1, %edx
 	sete	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
-	cmpl	%edx, %esi
-	cmovll	%esi, %edx
-	addl	%edi, %edx
-	cmpl	$9, %edx
-	setl	%al
-	retq
-func000000000000008a:                   # @func000000000000008a
-	cmpl	%edx, %esi
-	cmovll	%esi, %edx
-	addl	%edi, %edx
-	testl	%edx, %edx
-	setg	%al
-	retq
 func0000000000000024:                   # @func0000000000000024
 	cmpl	%edx, %esi
 	cmovll	%esi, %edx

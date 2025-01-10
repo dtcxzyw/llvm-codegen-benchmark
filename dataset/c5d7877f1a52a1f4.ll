@@ -1,13 +1,13 @@
 
-%struct.qht_bucket.2708813 = type { %struct.QemuSpin.2708814, %struct.QemuSeqLock.2708815, [4 x i32], [4 x ptr], ptr }
-%struct.QemuSpin.2708814 = type { i32 }
-%struct.QemuSeqLock.2708815 = type { i32 }
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%class.XNMethodTableEntry.2731703 = type { i64 }
-%"struct.std::pair.87.2930392" = type { i32, i32 }
-%struct.prb_desc.3551378 = type { %struct.atomic64_t.3551379, %struct.prb_data_blk_lpos.3551380 }
-%struct.atomic64_t.3551379 = type { i64 }
-%struct.prb_data_blk_lpos.3551380 = type { i64, i64 }
+%struct.qht_bucket.2708779 = type { %struct.QemuSpin.2708780, %struct.QemuSeqLock.2708781, [4 x i32], [4 x ptr], ptr }
+%struct.QemuSpin.2708780 = type { i32 }
+%struct.QemuSeqLock.2708781 = type { i32 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%class.XNMethodTableEntry.2731669 = type { i64 }
+%"struct.std::pair.87.2930358" = type { i32, i32 }
+%struct.prb_desc.3551344 = type { %struct.atomic64_t.3551345, %struct.prb_data_blk_lpos.3551346 }
+%struct.atomic64_t.3551345 = type { i64 }
+%struct.prb_data_blk_lpos.3551346 = type { i64, i64 }
 
 ; 3 occurrences:
 ; linux/optimized/balloc.ll
@@ -19,7 +19,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.qht_bucket.2708813, ptr %0, i64 %5
+  %6 = getelementptr %struct.qht_bucket.2708779, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -101,7 +101,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add i64 %1, 4294967295
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw nuw %class.XNMethodTableEntry.2731703, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.XNMethodTableEntry.2731669, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -134,7 +134,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, 2147483647
   %5 = and i64 %4, %3
-  %6 = getelementptr nusw nuw %"struct.std::pair.87.2930392", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.87.2930358", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -158,7 +158,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %5
+  %6 = getelementptr %struct.prb_desc.3551344, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -170,7 +170,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add i64 %1, 1
   %5 = and i64 %4, %3
-  %6 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %5
+  %6 = getelementptr %struct.prb_desc.3551344, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -88,13 +88,13 @@ func000000000000006a:                   # @func000000000000006a
 	testq	%rsi, %rsi
 	cmovnsq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	leaq	-7(%rdx), %rax
-	cmpq	$7, %rsi
-	cmovlq	%rdi, %rax
-	retq
 func0000000000000058:                   # @func0000000000000058
 	leaq	-8(%rdx), %rax
 	cmpq	$2, %rsi
 	cmovaeq	%rdi, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	leaq	-8(%rdx), %rax
+	testq	%rsi, %rsi
+	cmovleq	%rdi, %rax
 	retq

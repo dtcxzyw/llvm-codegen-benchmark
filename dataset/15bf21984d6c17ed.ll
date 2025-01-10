@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 3 occurrences:
 ; git/optimized/commit-graph.ll
@@ -135,7 +135,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw i64 %1, 1
   %5 = mul i64 %4, %3
-  %6 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %5
+  %6 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %5
   ret ptr %6
 }
 

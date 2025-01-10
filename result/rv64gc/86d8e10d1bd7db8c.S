@@ -19,11 +19,10 @@ func000000000000020a:                   # @func000000000000020a
 	xori	a0, a0, 1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
+	sext.w	a0, a0
 	slli	a1, a1, 3
-	subw	a0, a0, a1
-	addiw	a0, a0, 8
-	slti	a0, a0, 8
-	xori	a0, a0, 1
+	addiw	a1, a1, -8
+	slt	a0, a1, a0
 	ret
 func0000000000000301:                   # @func0000000000000301
 	slli	a1, a1, 6

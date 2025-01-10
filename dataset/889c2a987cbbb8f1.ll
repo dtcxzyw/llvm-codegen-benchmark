@@ -70,8 +70,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/MCELFStreamer.cpp.ll
+; 2 occurrences:
 ; openjdk/optimized/arraycopynode.ll
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind

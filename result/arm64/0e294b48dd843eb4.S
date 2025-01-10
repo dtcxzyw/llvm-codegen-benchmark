@@ -20,3 +20,10 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x0, w8, sxtw #4
 	ret
                                         // -- End function
+func0000000000000012:                   // @func0000000000000012
+// %bb.0:                               // %entry
+	mov	w8, #49                         // =0x31
+	madd	w8, w2, w8, w1
+	add	x0, x0, w8, sxtw #3
+	ret
+                                        // -- End function

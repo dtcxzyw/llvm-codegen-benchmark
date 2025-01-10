@@ -1,12 +1,13 @@
 .LCPI0_0:
-	.long	2147483646                      # 0x7ffffffe
+	.long	63                              # 0x3f
 .LCPI0_1:
-	.long	2                               # 0x2
+	.long	268435392                       # 0xfffffc0
+.LCPI0_2:
+	.long	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
-	vpmaxud	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpmaxud	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	255                             # 0xff

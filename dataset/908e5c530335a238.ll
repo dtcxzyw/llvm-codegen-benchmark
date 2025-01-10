@@ -1,5 +1,5 @@
 
-; 1742 occurrences:
+; 1743 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -1479,6 +1479,7 @@
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtext.c.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/prog.cc.ll

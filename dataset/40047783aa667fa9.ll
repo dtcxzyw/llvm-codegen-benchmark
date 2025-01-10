@@ -1,7 +1,8 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; flatbuffers/optimized/idl_gen_json_schema.cpp.ll
 ; git/optimized/ipc-unix-socket.ll
 ; gromacs/optimized/surfacearea.cpp.ll

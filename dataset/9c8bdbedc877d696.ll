@@ -24,12 +24,11 @@ entry:
   ret i16 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/aspm.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/packet-tibia.c.ll

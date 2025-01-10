@@ -1,7 +1,7 @@
 
-%struct.pm_lex_mode.2600869 = type { i32, %union.anon.2600870, ptr }
-%union.anon.2600870 = type { %struct.anon.3.2600871 }
-%struct.anon.3.2600871 = type { ptr, i64, i32, i32, ptr, i64 }
+%struct.pm_lex_mode.2600836 = type { i32, %union.anon.2600837, ptr }
+%union.anon.2600837 = type { %struct.anon.3.2600838 }
+%struct.anon.3.2600838 = type { ptr, i64, i32, i32, ptr, i64 }
 
 ; 15 occurrences:
 ; box2d/optimized/b2_polygon_shape.cpp.ll
@@ -36,7 +36,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %4 = getelementptr [4 x %struct.pm_lex_mode.2600869], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [4 x %struct.pm_lex_mode.2600836], ptr %3, i64 0, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }

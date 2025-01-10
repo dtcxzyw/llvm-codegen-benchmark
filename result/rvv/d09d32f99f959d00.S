@@ -1,9 +1,3 @@
-func000000000000012a:                   # @func000000000000012a
-	li	a0, 32
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v9, v10, a0
-	vmslt.vv	v0, v9, v8
-	ret
 func0000000000000126:                   # @func0000000000000126
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -34,6 +28,12 @@ func0000000000000204:                   # @func0000000000000204
 	vnsrl.wi	v9, v10, 1
 	vsub.vv	v8, v8, v9
 	vmsleu.vi	v0, v8, 7
+	ret
+func000000000000012a:                   # @func000000000000012a
+	li	a0, 32
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wx	v9, v10, a0
+	vmsle.vv	v0, v9, v8
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e32, m1, ta, ma

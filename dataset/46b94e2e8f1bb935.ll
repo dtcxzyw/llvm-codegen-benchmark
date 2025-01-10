@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -8,6 +8,7 @@
 ; cpython/optimized/mpdecimal.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll

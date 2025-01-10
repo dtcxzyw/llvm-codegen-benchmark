@@ -1,5 +1,5 @@
 
-; 1026 occurrences:
+; 1024 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -406,7 +406,6 @@
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/liolib.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lib_ffi.ll
@@ -723,7 +722,6 @@
 ; openusd/optimized/pxrRenderTerminalHelper.cpp.ll
 ; openusd/optimized/pxrSampleFilterAdapter.cpp.ll
 ; openusd/optimized/reconinter.c.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/references.cpp.ll
 ; openusd/optimized/relationship.cpp.ll
 ; openusd/optimized/renderSettingsAdapter.cpp.ll
@@ -1128,7 +1126,6 @@ entry:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/getpath.ll
 ; cpython/optimized/posixmodule.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/semaphore.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/unicodeobject.ll
@@ -1522,6 +1519,7 @@ entry:
 ; qemu/optimized/system_runstate.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/tcg.c.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rtext.c.ll
 ; redis/optimized/aof.ll
@@ -1774,7 +1772,7 @@ entry:
   ret i1 %4
 }
 
-; 593 occurrences:
+; 595 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -1834,6 +1832,7 @@ entry:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/gzread.c.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
@@ -2256,6 +2255,7 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/hw_vfio_display.c.ll
 ; qemu/optimized/migration_migration.c.ll
@@ -2377,7 +2377,7 @@ entry:
   ret i1 %4
 }
 
-; 497 occurrences:
+; 498 occurrences:
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acecPo.c.ll
@@ -2494,6 +2494,7 @@ entry:
 ; hermes/optimized/gtest-all.cc.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
+; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/topology-x86.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; icu/optimized/basictz.ll
@@ -3950,7 +3951,7 @@ entry:
   ret i1 %4
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/ifDec07.c.ll
@@ -4029,6 +4030,7 @@ entry:
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/packet-grpc.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
@@ -4674,7 +4676,7 @@ entry:
   ret i1 %4
 }
 
-; 113 occurrences:
+; 112 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -4741,7 +4743,6 @@ entry:
 ; nori/optimized/parser.cpp.ll
 ; opencv/optimized/cloning_gui.cpp.ll
 ; openjdk/optimized/Net.ll
-; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/net_util_md.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openssl/optimized/openssl-bin-s_client.ll
@@ -5545,7 +5546,7 @@ entry:
   ret i1 %4
 }
 
-; 138 occurrences:
+; 136 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
@@ -5568,8 +5569,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
 ; git/optimized/combine-diff.ll
 ; git/optimized/commit-reach.ll
 ; git/optimized/csum-file.ll

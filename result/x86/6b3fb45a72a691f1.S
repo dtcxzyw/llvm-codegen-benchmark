@@ -24,6 +24,10 @@ func000000000000006b:                   # @func000000000000006b
 	leal	-2(%rdi,%rdi), %eax
 	shlq	$3, %rax
 	retq
+func000000000000007f:                   # @func000000000000007f
+	shll	$4, %edi
+	leal	64(%rdi), %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	shll	$4, %edi
 	leal	-16(%rdi), %eax
@@ -31,10 +35,6 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	576(,%rdi,8), %eax
-	shlq	$32, %rax
-	retq
-func000000000000007f:                   # @func000000000000007f
-	leal	80(,%rdi,8), %eax
 	shlq	$32, %rax
 	retq
 func000000000000006f:                   # @func000000000000006f

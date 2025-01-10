@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/tcp.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1, i32 %2) #0 {

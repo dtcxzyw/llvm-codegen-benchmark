@@ -32,16 +32,15 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; freetype/optimized/type1.c.ll
+; git/optimized/merge-ort.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/dlaqtr.c.ll
-; openblas/optimized/sasum_k.c.ll
 ; opencv/optimized/fast_norm.cpp.ll
 ; openjdk/optimized/compilerDefinitions.ll
 ; postgres/optimized/int.ll
@@ -77,14 +76,12 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cmake/optimized/cmFileCopier.cxx.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/swiotlb.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; rocksdb/optimized/block_based_table_builder.cc.ll
-; slurm/optimized/step_mgr.ll
 ; z3/optimized/api_rcf.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
@@ -154,8 +151,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
+; 4 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/source_s_countLeadingZeros64.c.ll
@@ -204,8 +200,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
-; clamav/optimized/extract.cpp.ll
+; 17 occurrences:
 ; clamav/optimized/output.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; grpc/optimized/chttp2_transport.cc.ll
@@ -215,8 +210,6 @@ entry:
 ; lua/optimized/lua.ll
 ; ncnn/optimized/cpu.cpp.ll
 ; nuttx/optimized/lib_memsostream.c.ll
-; openblas/optimized/dasum_k.c.ll
-; openblas/optimized/sasum_k.c.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll

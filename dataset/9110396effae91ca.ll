@@ -57,7 +57,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -74,7 +74,6 @@ entry:
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; openexr/optimized/ImfImage.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
 ; openusd/optimized/exception.cpp.ll

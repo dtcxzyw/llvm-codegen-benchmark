@@ -210,12 +210,10 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; folly/optimized/Dump.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
@@ -314,10 +312,7 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
+; 1 occurrences:
 ; ockam-rs/optimized/2whckd326lu2ah2i.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000b(i64 %0, i64 %1) #0 {

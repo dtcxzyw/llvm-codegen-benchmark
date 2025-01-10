@@ -44,6 +44,6 @@ func0000000000000001:                   # @func0000000000000001
 	bnez	a0, .LBB5_2
 	mv	a1, a2
 .LBB5_2:                                # %entry
-	slli	a0, a1, 2
-	addiw	a0, a0, -3
+	slli	a0, a1, 3
+	addiw	a0, a0, -1
 	ret

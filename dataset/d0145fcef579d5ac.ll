@@ -1,26 +1,4 @@
 
-; 12 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; linux/optimized/tcp_input.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; php/optimized/ir.ll
-; php/optimized/zend_hash.ll
-; php/optimized/zend_inheritance.ll
-; php/optimized/zend_persist.ll
-; qemu/optimized/block_vmdk.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = add i64 %0, %2
-  %4 = shl nuw i64 %3, 1
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
@@ -31,6 +9,27 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 %2, 48
   %4 = shl nuw nsw i64 %0, 32
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 10 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/tcp_input.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; php/optimized/ir.ll
+; php/optimized/zend_hash.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_persist.ll
+; qemu/optimized/block_vmdk.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 9
+  %4 = shl nuw nsw i64 %0, 2
   %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }

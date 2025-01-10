@@ -149,7 +149,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.umax.i64(i64 range(i64 0, 4294967319) %1, i64 32736)
+  %2 = call i64 @llvm.umax.i64(i64 range(i64 16, 4294967319) %1, i64 32736)
   %3 = add nuw nsw i64 %2, 32
   %4 = add i64 %3, %0
   ret i64 %4

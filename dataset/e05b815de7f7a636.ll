@@ -1,5 +1,34 @@
 
-; 76 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
+; libwebp/optimized/sharpyuv_gamma.c.ll
+; mitsuba3/optimized/x86instapi.cpp.ll
+; proxygen/optimized/Huffman.cpp.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; ruby/optimized/bignum.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -20
+  %3 = lshr i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_equalizer.c.ll
+; linux/optimized/sidtab.ll
+; openusd/optimized/grain_synthesis.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = lshr i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 75 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -72,44 +101,15 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; ruby/optimized/bignum.ll
 ; spike/optimized/srl32_u.ll
 ; spike/optimized/srli32_u.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -20
+  %2 = add nsw i32 %1, -1
   %3 = lshr i32 %0, %2
   %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 5 occurrences:
-; boost/optimized/to_chars.ll
-; libwebp/optimized/sharpyuv_gamma.c.ll
-; mitsuba3/optimized/x86instapi.cpp.ll
-; proxygen/optimized/Huffman.cpp.ll
-; qemu/optimized/target_riscv_translate.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -12
-  %3 = lshr i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; darktable/optimized/introspection_equalizer.c.ll
-; linux/optimized/sidtab.ll
-; openusd/optimized/grain_synthesis.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -1
-  %3 = lshr i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

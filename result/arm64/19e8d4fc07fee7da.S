@@ -28,8 +28,8 @@ func000000000000000d:                   // @func000000000000000d
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	add	x8, x0, x1, lsl #4
-	and	x0, x8, #0xfffffffffffffe00
+	add	x8, x0, x1, lsl #3
+	and	x0, x8, #0xfffffffffffffff8
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b

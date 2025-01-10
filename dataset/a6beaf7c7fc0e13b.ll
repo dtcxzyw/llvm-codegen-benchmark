@@ -252,8 +252,7 @@ entry:
   ret ptr %3
 }
 
-; 87 occurrences:
-; llvm/optimized/ADCE.cpp.ll
+; 86 occurrences:
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll

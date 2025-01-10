@@ -1,8 +1,3 @@
-func00000000000003aa:                   # @func00000000000003aa
-	shrq	%rsi
-	addl	%edi, %esi
-	setns	%al
-	retq
 func0000000000000126:                   # @func0000000000000126
 	shrq	$32, %rsi
 	leal	(%rsi,%rdi), %eax

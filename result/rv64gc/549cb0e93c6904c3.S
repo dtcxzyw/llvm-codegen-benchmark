@@ -139,13 +139,23 @@ func0000000000000038:                   # @func0000000000000038
 .LBB14_2:                               # %entry
 	sltu	a0, a1, a0
 	ret
-func0000000000000025:                   # @func0000000000000025
+func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB15_2
 	mv	a1, a2
 .LBB15_2:                               # %entry
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+func0000000000000025:                   # @func0000000000000025
+	sext.w	a2, a2
+	sext.w	a1, a1
+	sext.w	a0, a0
+	bltu	a1, a2, .LBB16_2
+	mv	a1, a2
+.LBB16_2:                               # %entry
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -153,9 +163,9 @@ func0000000000000029:                   # @func0000000000000029
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bltu	a1, a2, .LBB16_2
+	bltu	a1, a2, .LBB17_2
 	mv	a1, a2
-.LBB16_2:                               # %entry
+.LBB17_2:                               # %entry
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -163,8 +173,8 @@ func0000000000000026:                   # @func0000000000000026
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bltu	a1, a2, .LBB17_2
+	bltu	a1, a2, .LBB18_2
 	mv	a1, a2
-.LBB17_2:                               # %entry
+.LBB18_2:                               # %entry
 	slt	a0, a0, a1
 	ret

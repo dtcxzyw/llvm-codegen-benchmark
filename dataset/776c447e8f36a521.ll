@@ -1,26 +1,26 @@
 
-%"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088781" = type { %"class.OpenImageIO_v2_6_0::ImageSpec.3088765", %"class.OpenImageIO_v2_6_0::ImageSpec.3088765", i8, i8, i8, %"class.std::vector.10.3088782", i32, i32, i32, ptr }
-%"class.OpenImageIO_v2_6_0::ImageSpec.3088765" = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %"struct.OpenImageIO_v2_6_0::TypeDesc.3088706", %"class.std::vector.3088766", %"class.std::vector.0.3088733", i32, i32, i8, %"class.OpenImageIO_v2_6_0::ParamValueList.3088767" }
-%"struct.OpenImageIO_v2_6_0::TypeDesc.3088706" = type { i8, i8, i8, i8, i32 }
-%"class.std::vector.3088766" = type { %"struct.std::_Vector_base.3088768" }
-%"struct.std::_Vector_base.3088768" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088769" }
-%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088769" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088770" }
-%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088770" = type { ptr, ptr, ptr }
-%"class.std::vector.0.3088733" = type { %"struct.std::_Vector_base.1.3088734" }
-%"struct.std::_Vector_base.1.3088734" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088735" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088735" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088736" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088736" = type { ptr, ptr, ptr }
-%"class.OpenImageIO_v2_6_0::ParamValueList.3088767" = type { %"class.std::vector.5.3088771" }
-%"class.std::vector.5.3088771" = type { %"struct.std::_Vector_base.6.3088772" }
-%"struct.std::_Vector_base.6.3088772" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088773" }
-%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088773" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088774" }
-%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088774" = type { ptr, ptr, ptr }
-%"class.std::vector.10.3088782" = type { %"struct.std::_Vector_base.11.3088783" }
-%"struct.std::_Vector_base.11.3088783" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088784" }
-%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088784" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088785" }
-%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088785" = type { ptr, ptr, ptr }
-%"struct.Yosys::hashlib::dict<char *, int, Yosys::hashlib::hash_cstr_ops>::entry_t.3108796" = type { %"struct.std::pair.195.3108797", i32, [4 x i8] }
-%"struct.std::pair.195.3108797" = type <{ ptr, i32, [4 x i8] }>
+%"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088747" = type { %"class.OpenImageIO_v2_6_0::ImageSpec.3088731", %"class.OpenImageIO_v2_6_0::ImageSpec.3088731", i8, i8, i8, %"class.std::vector.10.3088748", i32, i32, i32, ptr }
+%"class.OpenImageIO_v2_6_0::ImageSpec.3088731" = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, %"struct.OpenImageIO_v2_6_0::TypeDesc.3088672", %"class.std::vector.3088732", %"class.std::vector.0.3088699", i32, i32, i8, %"class.OpenImageIO_v2_6_0::ParamValueList.3088733" }
+%"struct.OpenImageIO_v2_6_0::TypeDesc.3088672" = type { i8, i8, i8, i8, i32 }
+%"class.std::vector.3088732" = type { %"struct.std::_Vector_base.3088734" }
+%"struct.std::_Vector_base.3088734" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088735" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl.3088735" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088736" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::TypeDesc, std::allocator<OpenImageIO_v2_6_0::TypeDesc>>::_Vector_impl_data.3088736" = type { ptr, ptr, ptr }
+%"class.std::vector.0.3088699" = type { %"struct.std::_Vector_base.1.3088700" }
+%"struct.std::_Vector_base.1.3088700" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088701" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.3088701" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088702" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.3088702" = type { ptr, ptr, ptr }
+%"class.OpenImageIO_v2_6_0::ParamValueList.3088733" = type { %"class.std::vector.5.3088737" }
+%"class.std::vector.5.3088737" = type { %"struct.std::_Vector_base.6.3088738" }
+%"struct.std::_Vector_base.6.3088738" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088739" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl.3088739" = type { %"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088740" }
+%"struct.std::_Vector_base<OpenImageIO_v2_6_0::ParamValue, std::allocator<OpenImageIO_v2_6_0::ParamValue>>::_Vector_impl_data.3088740" = type { ptr, ptr, ptr }
+%"class.std::vector.10.3088748" = type { %"struct.std::_Vector_base.11.3088749" }
+%"struct.std::_Vector_base.11.3088749" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088750" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3088750" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088751" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3088751" = type { ptr, ptr, ptr }
+%"struct.Yosys::hashlib::dict<char *, int, Yosys::hashlib::hash_cstr_ops>::entry_t.3108762" = type { %"struct.std::pair.195.3108763", i32, [4 x i8] }
+%"struct.std::pair.195.3108763" = type <{ ptr, i32, [4 x i8] }>
 
 ; 6 occurrences:
 ; oiio/optimized/imagecache.cpp.ll
@@ -35,7 +35,7 @@ entry:
   %2 = sdiv exact i64 %1, 376
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088781", ptr %0, i64 %4
+  %5 = getelementptr %"struct.OpenImageIO_v2_6_0::pvt::ImageCacheFile::LevelInfo.3088747", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -376
   ret ptr %6
 }
@@ -268,7 +268,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.Yosys::hashlib::dict<char *, int, Yosys::hashlib::hash_cstr_ops>::entry_t.3108796", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.Yosys::hashlib::dict<char *, int, Yosys::hashlib::hash_cstr_ops>::entry_t.3108762", ptr %0, i64 %5
   ret ptr %6
 }
 

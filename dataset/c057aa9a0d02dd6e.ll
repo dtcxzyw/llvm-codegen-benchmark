@@ -1,9 +1,8 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/filtering.c.ll
 ; linux/optimized/yenta_socket.ll
-; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll

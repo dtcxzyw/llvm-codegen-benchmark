@@ -6,6 +6,14 @@ func00000000000000b0:                   // @func00000000000000b0
 	sub	w0, w8, #130
 	ret
                                         // -- End function
+func00000000000000bf:                   // @func00000000000000bf
+// %bb.0:                               // %entry
+	cmp	w2, #273
+	cinc	w8, w1, eq
+	add	w8, w8, w0
+	add	w0, w8, #2
+	ret
+                                        // -- End function
 func00000000000000bd:                   // @func00000000000000bd
 // %bb.0:                               // %entry
 	cmp	w2, #0
@@ -37,14 +45,6 @@ func000000000000063f:                   // @func000000000000063f
 	cinc	w8, w1, ne
 	add	w8, w8, w0
 	add	w0, w8, #2
-	ret
-                                        // -- End function
-func00000000000000bf:                   // @func00000000000000bf
-// %bb.0:                               // %entry
-	cmp	w2, #6
-	cinc	w8, w1, eq
-	add	w8, w0, w8
-	add	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000043d:                   // @func000000000000043d

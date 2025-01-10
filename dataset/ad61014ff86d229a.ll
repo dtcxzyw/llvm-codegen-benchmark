@@ -1,5 +1,5 @@
 
-; 598 occurrences:
+; 601 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -278,6 +278,7 @@
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairs.cpp.ll
+; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
@@ -512,6 +513,7 @@
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
 ; openjdk/optimized/os.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/coll_sm_barrier.ll
 ; openmpi/optimized/comm.ll
 ; openmpi/optimized/mpl_argstr.ll
@@ -524,6 +526,7 @@
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/cfl.c.ll
+; openusd/optimized/convolve.c.ll
 ; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
@@ -736,7 +739,7 @@ entry:
   ret ptr %4
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -790,7 +793,6 @@ entry:
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -938,7 +940,7 @@ entry:
   ret ptr %4
 }
 
-; 93 occurrences:
+; 88 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -949,7 +951,6 @@ entry:
 ; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/sfmLib.c.ll
-; arrow/optimized/UriParse.c.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -973,8 +974,6 @@ entry:
 ; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; git/optimized/record.ll
-; gromacs/optimized/partition.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; ncnn/optimized/concat_x86.cpp.ll
 ; ncnn/optimized/concat_x86_avx.cpp.ll
@@ -1017,10 +1016,8 @@ entry:
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/mlib_ImageLookUp_64.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/oware_board.cc.ll
-; openusd/optimized/convolve.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/testHioAvif.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -1037,7 +1034,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

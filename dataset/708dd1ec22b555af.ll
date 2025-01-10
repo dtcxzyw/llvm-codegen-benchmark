@@ -1,27 +1,30 @@
 
-; 2 occurrences:
-; opencv/optimized/dxt.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = shl nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i64, ptr %1, i64 %5
+  %6 = getelementptr nusw i64, ptr %1, i64 %5
   %7 = getelementptr nusw nuw i64, ptr %6, i64 %0
   ret ptr %7
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; freetype/optimized/sfnt.c.ll
+; miniaudio/optimized/unity.c.ll
+; opencv/optimized/aruco_dictionary.cpp.ll
+; openexr/optimized/ImfIDManifest.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = shl nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i64, ptr %1, i64 %5
+  %6 = getelementptr nusw i64, ptr %1, i64 %5
   %7 = getelementptr nusw i64, ptr %6, i64 %0
   ret ptr %7
 }
@@ -39,22 +42,6 @@ entry:
   %5 = sext i32 %4 to i64
   %6 = getelementptr float, ptr %1, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %0
-  ret ptr %7
-}
-
-; 4 occurrences:
-; freetype/optimized/sfnt.c.ll
-; miniaudio/optimized/unity.c.ll
-; opencv/optimized/aruco_dictionary.cpp.ll
-; openexr/optimized/ImfIDManifest.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sdiv i32 %2, 8
-  %4 = shl nsw i32 %3, 1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

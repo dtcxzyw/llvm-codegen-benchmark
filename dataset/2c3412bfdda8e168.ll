@@ -11,13 +11,14 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/SimplifyCFG.cpp.ll
 ; libquic/optimized/quic_session.cc.ll
 ; libquic/optimized/quic_spdy_session.cc.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BasicBlock.cpp.ll
+; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/ObjCARCContract.cpp.ll

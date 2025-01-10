@@ -1,6 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
-	andl	%edx, %esi
-	andl	%edi, %esi
-	andl	$1, %esi
-	leal	(%rsi,%rsi), %eax
+	testb	$1, %dil
+	movl	$98, %eax
+	movl	$35, %ecx
+	cmovel	%ecx, %eax
+	testb	$1, %dl
+	cmovel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
 	retq

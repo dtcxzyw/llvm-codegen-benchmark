@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::DynamicPattern.2639935" = type <{ %"class.std::basic_string_view.2639862", %"class.std::basic_string_view.2639862", i8, [7 x i8] }>
-%"class.std::basic_string_view.2639862" = type { i64, ptr }
+%"struct.mold::elf::DynamicPattern.2639902" = type <{ %"class.std::basic_string_view.2639829", %"class.std::basic_string_view.2639829", i8, [7 x i8] }>
+%"class.std::basic_string_view.2639829" = type { i64, ptr }
 
 ; 126 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -132,11 +132,11 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000046(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639902", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = sdiv exact i64 %5, -40
-  %7 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639902", ptr %0, i64 %6
   ret ptr %7
 }
 

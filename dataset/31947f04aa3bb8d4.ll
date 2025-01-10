@@ -1,5 +1,5 @@
 
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
 
 ; 2 occurrences:
 ; cmake/optimized/nghttp2_map.c.ll
@@ -11,7 +11,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %1, 1
   %6 = and i64 %5, %4
-  %7 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -75,8 +75,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/repeat.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
@@ -123,8 +124,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 10 occurrences:
 ; linux/optimized/blk-mq-tag.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; miniaudio/optimized/unity.c.ll

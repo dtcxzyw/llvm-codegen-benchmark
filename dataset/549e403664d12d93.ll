@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -13,6 +13,7 @@
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; eastl/optimized/TestFixedSet.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
@@ -124,7 +125,7 @@ entry:
   ret ptr %7
 }
 
-; 53 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -142,7 +143,6 @@ entry:
 ; cvc5/optimized/cut_log.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

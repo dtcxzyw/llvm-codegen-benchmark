@@ -91,14 +91,20 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 13 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:

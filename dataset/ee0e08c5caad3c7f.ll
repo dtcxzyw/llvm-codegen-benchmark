@@ -1,9 +1,9 @@
 
-%"class.llvm::MachineOperand.3149279" = type { i32, %union.anon.152.3149280, ptr, %"union.llvm::MachineOperand::ContentsUnion.3149281" }
-%union.anon.152.3149280 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3149281" = type { %"class.llvm::ArrayRef.153.3149282" }
-%"class.llvm::ArrayRef.153.3149282" = type { ptr, i64 }
-%"class.llvm::MCInstrDesc.3291703" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MachineOperand.3149245" = type { i32, %union.anon.152.3149246, ptr, %"union.llvm::MachineOperand::ContentsUnion.3149247" }
+%union.anon.152.3149246 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3149247" = type { %"class.llvm::ArrayRef.153.3149248" }
+%"class.llvm::ArrayRef.153.3149248" = type { ptr, i64 }
+%"class.llvm::MCInstrDesc.3291669" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 1 occurrences:
 ; abc/optimized/kitDsd.c.ll
@@ -26,7 +26,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 19
   %4 = select i1 %3, i64 1, i64 %1
-  %5 = getelementptr nusw nuw %"class.llvm::MachineOperand.3149279", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::MachineOperand.3149245", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -56,7 +56,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 4865
   %4 = select i1 %3, i64 -4853, i64 %1
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3291703", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3291669", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -98,23 +98,6 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; clamav/optimized/yara_exec.c.ll
-; git/optimized/ewah_bitmap.ll
-; graphviz/optimized/mincross.c.ll
-; qemu/optimized/block_vvfat.c.ll
-; velox/optimized/MmapAllocator.cpp.ll
-; wireshark/optimized/packet_list.cpp.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 9
-  ret i64 %4
-}
-
 ; 28 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -179,6 +162,22 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 %2, %0
   %4 = shl nuw nsw i64 %3, 3
+  ret i64 %4
+}
+
+; 6 occurrences:
+; clamav/optimized/yara_exec.c.ll
+; git/optimized/ewah_bitmap.ll
+; graphviz/optimized/mincross.c.ll
+; velox/optimized/MmapAllocator.cpp.ll
+; wireshark/optimized/packet_list.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = shl i64 %3, 12
   ret i64 %4
 }
 

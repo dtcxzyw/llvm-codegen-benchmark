@@ -425,7 +425,7 @@ entry:
   ret i64 %3
 }
 
-; 84 occurrences:
+; 86 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
@@ -451,6 +451,7 @@ entry:
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/buffered_write.ll
 ; linux/optimized/datagram.ll
+; linux/optimized/devio.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/i915_gem.ll
@@ -494,6 +495,7 @@ entry:
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; redis/optimized/jemalloc.ll

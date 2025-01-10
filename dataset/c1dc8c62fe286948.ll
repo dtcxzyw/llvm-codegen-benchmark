@@ -1,5 +1,5 @@
 
-%struct.resource.3532026 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3531992 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 412 occurrences:
 ; abc/optimized/amapMatch.c.ll
@@ -480,7 +480,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 736
-  %4 = getelementptr [11 x %struct.resource.3532026], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [11 x %struct.resource.3531992], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

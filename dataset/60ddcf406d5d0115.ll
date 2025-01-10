@@ -1,5 +1,5 @@
 
-; 313 occurrences:
+; 312 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/giaCof.c.ll
@@ -50,7 +50,6 @@
 ; gromacs/optimized/poscalc.cpp.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; hermes/optimized/dtoa.c.ll
-; hwloc/optimized/topology-linux.ll
 ; icu/optimized/umutablecptrie.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -323,7 +322,7 @@ entry:
   ret i1 %5
 }
 
-; 590 occurrences:
+; 588 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
@@ -345,7 +344,6 @@ entry:
 ; curl/optimized/libcurl_la-http.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/apply.ll
 ; git/optimized/checkout-index.ll
 ; git/optimized/dir.ll
@@ -831,7 +829,6 @@ entry:
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/util_osdep.c.ll
 ; quickjs/optimized/libbf.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; redis/optimized/ae.ll
@@ -1005,7 +1002,7 @@ entry:
   ret i1 %5
 }
 
-; 477 occurrences:
+; 476 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -1029,7 +1026,6 @@ entry:
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cmake/optimized/stream.c.ll

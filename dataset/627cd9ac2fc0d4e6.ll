@@ -1,5 +1,5 @@
 
-%"struct.std::atomic.79.3085138" = type { i8 }
+%"struct.std::atomic.79.3085104" = type { i8 }
 
 ; 1 occurrences:
 ; ruby/optimized/hash.ll
@@ -29,7 +29,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8191
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw nuw [8192 x %"struct.std::atomic.79.3085138"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [8192 x %"struct.std::atomic.79.3085104"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

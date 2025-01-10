@@ -321,12 +321,3 @@ func00000000000018c8:                   // @func00000000000018c8
 	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000294c:                   // @func000000000000294c
-// %bb.0:                               // %entry
-	cmp	w1, #254
-	mov	w8, #254                        // =0xfe
-	ccmp	w2, w8, #0, le
-	ccmp	w0, #0, #0, le
-	cset	w0, ne
-	ret
-                                        // -- End function

@@ -3,11 +3,6 @@ func0000000000000008:                   # @func0000000000000008
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	movl	$256, %eax                      # imm = 0x100
-	shlxl	%esi, %eax, %eax
-	addl	%edi, %eax
-	retq
 func000000000000003d:                   # @func000000000000003d
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
@@ -34,6 +29,11 @@ func0000000000000019:                   # @func0000000000000019
 	addl	%edi, %eax
 	retq
 func000000000000003b:                   # @func000000000000003b
+	movl	$1, %eax
+	shlxl	%esi, %eax, %eax
+	addl	%edi, %eax
+	retq
+func000000000000003f:                   # @func000000000000003f
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax

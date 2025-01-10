@@ -17,6 +17,6 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000005:                   # @func0000000000000005
 	addl	%edx, %esi
 	movslq	%esi, %rax
-	shlq	$4, %rax
+	shlq	$31, %rax
 	addq	%rdi, %rax
 	retq

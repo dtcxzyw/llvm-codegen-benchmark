@@ -1,5 +1,5 @@
 
-; 3524 occurrences:
+; 3523 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator.cc.ll
@@ -1191,7 +1191,6 @@
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
 ; llvm/optimized/MemoryBuffer.cpp.ll
 ; llvm/optimized/MemoryBuiltins.cpp.ll

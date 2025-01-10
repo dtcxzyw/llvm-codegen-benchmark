@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
@@ -11,6 +11,7 @@
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestLruCache.cpp.ll
 ; eastl/optimized/TestStringHashMap.cpp.ll
+; git/optimized/parallel-checkout.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mempolicy.ll

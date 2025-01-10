@@ -1,5 +1,5 @@
 
-; 527 occurrences:
+; 513 occurrences:
 ; actix-rs/optimized/190uhijawk1lki5o.ll
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
@@ -16,7 +16,6 @@
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; cmake/optimized/gzread.c.ll
 ; cmake/optimized/gzwrite.c.ll
-; coreutils-rs/optimized/1ks0bjj5pmsh3du4.ll
 ; coreutils-rs/optimized/1rno21l8yxg9vs0k.ll
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -60,17 +59,10 @@
 ; diesel-rs/optimized/1d6yrclfdvavot4r.ll
 ; diesel-rs/optimized/1d8pgoqwu3bzfya4.ll
 ; diesel-rs/optimized/1hskzwx2vflsavf7.ll
-; diesel-rs/optimized/1pu1gypvn16sk7jj.ll
-; diesel-rs/optimized/1zhqdyjorbzdhypm.ll
 ; diesel-rs/optimized/2sf6u3r7os1bcdld.ll
-; diesel-rs/optimized/3hbywg7swws1iy6v.ll
 ; diesel-rs/optimized/3iqa5s4rcitpn2nv.ll
 ; diesel-rs/optimized/3nv3xphjbq527f6u.ll
-; diesel-rs/optimized/3nydn42x30kj4j9q.ll
-; diesel-rs/optimized/3rjno8am3tsn5qrm.ll
-; diesel-rs/optimized/46661qc4yjpbja0f.ll
 ; diesel-rs/optimized/gepqftqgym352s.ll
-; egg-rs/optimized/208b1a9t1vdfvafq.ll
 ; hdf5/optimized/H5Dcompact.c.ll
 ; hdf5/optimized/H5Dcontig.c.ll
 ; hdf5/optimized/H5Defl.c.ll
@@ -214,7 +206,6 @@
 ; rust-analyzer-rs/optimized/2xc4k213s11rexpc.ll
 ; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
-; rust-analyzer-rs/optimized/39wpokevyhxzb05g.ll
 ; rust-analyzer-rs/optimized/3bcyxdd3fm70gs30.ll
 ; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
@@ -287,7 +278,6 @@
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/1aeertcmltcg0pmp.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
-; wasmtime-rs/optimized/1g9fzsxu6f987i7p.ll
 ; wasmtime-rs/optimized/1n98gc3fnn7orta.ll
 ; wasmtime-rs/optimized/1swth1h1xb2uamky.ll
 ; wasmtime-rs/optimized/23neptoqrjc3q5dx.ll
@@ -305,7 +295,6 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4h5bgqikkccha0kk.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
-; wasmtime-rs/optimized/4m5zcpduwo4in0sh.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
@@ -337,7 +326,6 @@
 ; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
 ; zed-rs/optimized/1kvfz4vxu123bq0qsauyrtl3j.ll
 ; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
-; zed-rs/optimized/1wpmjzbycj91s3t7c45lurwzs.ll
 ; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
 ; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
@@ -439,7 +427,6 @@
 ; zed-rs/optimized/8zogyz7vs6pnjn0mpvvdxdnfr.ll
 ; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
-; zed-rs/optimized/9by7xbrgipxjyx0u6qobo1s7j.ll
 ; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
 ; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
 ; zed-rs/optimized/9hlwt18nr4jd7z0ubrvgn7np1.ll
@@ -523,7 +510,6 @@
 ; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
 ; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
-; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
 ; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; zlib/optimized/gzread.c.ll
 ; zlib/optimized/gzwrite.c.ll

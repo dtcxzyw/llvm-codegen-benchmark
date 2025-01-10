@@ -1,5 +1,5 @@
 
-%"struct.std::pair.340.2970183" = type { i32, i64 }
+%"struct.std::pair.340.2970149" = type { i32, i64 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -12,10 +12,8 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
+; 1 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
@@ -25,8 +23,10 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; clamav/optimized/pdf.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1) #0 {
 entry:
@@ -54,44 +54,44 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add nuw nsw i64 %2, 2
-  %4 = getelementptr nusw nuw [31 x %"struct.std::pair.340.2970183"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [31 x %"struct.std::pair.340.2970149"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; libquic/optimized/digest.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = getelementptr nusw nuw [4228 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [4228 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = add nuw nsw i64 %2, 4
-  %4 = getelementptr nusw nuw [258 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [258 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = add nsw i64 %2, 2
-  %4 = getelementptr nusw nuw [258 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [258 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

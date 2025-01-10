@@ -23,6 +23,11 @@ func0000000000000098:                   # @func0000000000000098
 	leaq	11(%rdi,%rsi,4), %rax
 	andq	$-4, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	addq	%rdx, %rdi
+	leaq	135(%rdi,%rsi,8), %rax
+	andq	$-8, %rax
+	retq
 func0000000000000044:                   # @func0000000000000044
 	addl	%edi, %edx
 	leal	(%rdx,%rsi,8), %eax

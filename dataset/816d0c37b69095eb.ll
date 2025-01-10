@@ -1,5 +1,5 @@
 
-; 289 occurrences:
+; 288 occurrences:
 ; boost/optimized/static_string.ll
 ; cpython/optimized/_decimal.ll
 ; cpython/optimized/arraymodule.ll
@@ -51,7 +51,6 @@
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_printk.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; php/optimized/php_pcre.ll
 ; postgres/optimized/backend_status.ll
 ; postgres/optimized/base64.ll
 ; postgres/optimized/base64_shlib.ll

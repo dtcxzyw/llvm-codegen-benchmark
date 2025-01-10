@@ -43,7 +43,3 @@ func0000000000000017:                   # @func0000000000000017
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	movslq	%esi, %rax
-	leaq	(%rdi,%rax,4), %rax
-	retq

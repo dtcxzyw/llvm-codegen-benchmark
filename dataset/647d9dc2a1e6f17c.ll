@@ -1,8 +1,8 @@
 
-%"struct.std::atomic.405.2635844" = type { %"struct.std::__atomic_base.406.2635847" }
-%"struct.std::__atomic_base.406.2635847" = type { ptr }
-%"struct.std::atomic.614.2638952" = type { %"struct.std::__atomic_base.615.2638954" }
-%"struct.std::__atomic_base.615.2638954" = type { ptr }
+%"struct.std::atomic.405.2635811" = type { %"struct.std::__atomic_base.406.2635814" }
+%"struct.std::__atomic_base.406.2635814" = type { ptr }
+%"struct.std::atomic.614.2638919" = type { %"struct.std::__atomic_base.615.2638921" }
+%"struct.std::__atomic_base.615.2638921" = type { ptr }
 
 ; 266 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
@@ -276,7 +276,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = call noundef range(i64 0, 65) i64 @llvm.ctlz.i64(i64 %1, i1 true)
   %3 = xor i64 %2, 63
-  %4 = getelementptr nusw nuw %"struct.std::atomic.405.2635844", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::atomic.405.2635811", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -309,7 +309,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = tail call range(i64 0, 65) i64 @llvm.ctlz.i64(i64 %1, i1 true)
   %3 = xor i64 %2, 63
-  %4 = getelementptr nusw nuw %"struct.std::atomic.614.2638952", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::atomic.614.2638919", ptr %0, i64 %3
   ret ptr %4
 }
 

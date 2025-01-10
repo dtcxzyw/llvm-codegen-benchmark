@@ -1,11 +1,11 @@
 
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
-%struct.MemoryRegionSection.2709870 = type { i128, ptr, ptr, i64, i64, i8, i8, i8 }
-%struct.b3Int4.2819369 = type { %union.anon.33.2819370 }
-%union.anon.33.2819370 = type { %struct.anon.34.2819371 }
-%struct.anon.34.2819371 = type { i32, i32, i32, i32 }
-%struct.aiFace.2828605 = type { i32, ptr }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
+%struct.MemoryRegionSection.2709836 = type { i128, ptr, ptr, i64, i64, i8, i8, i8 }
+%struct.b3Int4.2819335 = type { %union.anon.33.2819336 }
+%union.anon.33.2819336 = type { %struct.anon.34.2819337 }
+%struct.anon.34.2819337 = type { i32, i32, i32, i32 }
+%struct.aiFace.2828571 = type { i32, ptr }
 
 ; 95 occurrences:
 ; abc/optimized/covMinEsop.c.ll
@@ -457,7 +457,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -508,7 +508,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.MemoryRegionSection.2709870, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.MemoryRegionSection.2709836, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -526,7 +526,7 @@ define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.b3Int4.2819369, ptr %0, i64 %3, i32 0, i32 0, i32 1
+  %4 = getelementptr %struct.b3Int4.2819335, ptr %0, i64 %3, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -545,7 +545,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw %struct.aiFace.2828605, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %struct.aiFace.2828571, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

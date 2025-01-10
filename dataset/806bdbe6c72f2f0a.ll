@@ -1,8 +1,8 @@
 
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
 
 ; 60 occurrences:
 ; abc/optimized/darPrec.c.ll
@@ -72,7 +72,7 @@ entry:
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
-  %7 = getelementptr nusw %struct._StackType.2710345, ptr %5, i64 %6
+  %7 = getelementptr nusw %struct._StackType.2710311, ptr %5, i64 %6
   ret ptr %7
 }
 

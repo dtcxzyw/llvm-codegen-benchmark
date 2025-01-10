@@ -1,5 +1,5 @@
 
-%"class.llvm::SDValue.3325927" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDValue.3325893" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; clamav/optimized/wwunpack.c.ll
@@ -24,7 +24,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::SDValue.3325927", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::SDValue.3325893", ptr %0, i64 %6
   ret ptr %7
 }
 

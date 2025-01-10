@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; ruby/optimized/string.ll
 ; spike/optimized/srli32_u.ll
 ; Function Attrs: nounwind

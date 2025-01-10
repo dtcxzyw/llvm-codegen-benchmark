@@ -1,5 +1,5 @@
 
-%class.StatElement.2740428 = type <{ i32, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, i16, i16, [2 x i8] }>
+%class.StatElement.2740394 = type <{ i32, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, i16, i16, [2 x i8] }>
 
 ; 4 occurrences:
 ; linux/optimized/vt.ll
@@ -28,7 +28,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %class.StatElement.2740428, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.StatElement.2740394, ptr %0, i64 %4
   ret ptr %5
 }
 

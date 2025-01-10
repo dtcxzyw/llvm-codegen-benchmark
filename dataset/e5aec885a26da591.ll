@@ -81,13 +81,14 @@ entry:
   ret i16 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; openusd/optimized/alpha.c.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/reformat.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

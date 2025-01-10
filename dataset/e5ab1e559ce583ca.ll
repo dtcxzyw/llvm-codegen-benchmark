@@ -73,6 +73,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %.not = icmp eq i32 %2, 2
+  %3 = select i1 %.not, i64 6, i64 %1
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/hrtimer.ll
 ; Function Attrs: nounwind

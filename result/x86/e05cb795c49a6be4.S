@@ -10,9 +10,3 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	shlq	$3, %rdi
-	leaq	(%rdi,%rdi,4), %rax
-	cmpq	$-15, %rax
-	setb	%al
-	retq

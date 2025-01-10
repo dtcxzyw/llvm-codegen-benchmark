@@ -1,6 +1,6 @@
 
-%struct.rb_shape.2601294 = type { ptr, i64, i32, i32, i8, i8, i32, ptr }
-%"class.llvm::Use.3161295" = type { ptr, ptr, ptr, ptr }
+%struct.rb_shape.2601261 = type { ptr, i64, i32, i32, i8, i8, i32, ptr }
+%"class.llvm::Use.3161261" = type { ptr, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; linux/optimized/ldt.ll
@@ -10,7 +10,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.rb_shape.2601294, ptr %0, i64 %1
+  %2 = getelementptr %struct.rb_shape.2601261, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = or i64 %3, 1
   ret i64 %4
@@ -43,7 +43,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"class.llvm::Use.3161295", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"class.llvm::Use.3161261", ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = or disjoint i64 %3, 3
   ret i64 %4

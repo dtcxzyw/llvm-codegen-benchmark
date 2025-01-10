@@ -24,11 +24,3 @@ func0000000000000084:                   // @func0000000000000084
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000008c:                   // @func000000000000008c
-// %bb.0:                               // %entry
-	cmp	w2, #64
-	csinv	x8, x1, xzr, lo
-	tst	x0, x8
-	cset	w0, ne
-	ret
-                                        // -- End function

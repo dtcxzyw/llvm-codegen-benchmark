@@ -301,10 +301,9 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/urlapi.c.ll
 ; coreutils-rs/optimized/4tt85gim3dxp9l65.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-urlapi.ll
 ; git/optimized/archive-zip.ll
 ; git/optimized/pretty.ll

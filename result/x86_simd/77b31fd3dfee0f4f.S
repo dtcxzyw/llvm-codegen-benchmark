@@ -39,3 +39,15 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI4_0:
+	.quad	3                               # 0x3
+.LCPI4_1:
+	.long	2                               # 0x2
+func0000000000000d8c:                   # @func0000000000000d8c
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpcmpneqq	.LCPI4_0(%rip){1to4}, %ymm1, %k0
+	vpcmpneqd	.LCPI4_1(%rip){1to4}, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

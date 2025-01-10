@@ -118,6 +118,15 @@ func0000000000000586:                   // @func0000000000000586
 	cset	w0, ne
 	ret
                                         // -- End function
+func0000000000000484:                   // @func0000000000000484
+// %bb.0:                               // %entry
+	and	w8, w0, #0xff
+	sub	w9, w1, #58
+	cmp	w8, #230
+	ccmn	w9, #10, #2, lo
+	cset	w0, lo
+	ret
+                                        // -- End function
 func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	tst	w0, #0xff

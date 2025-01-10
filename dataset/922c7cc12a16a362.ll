@@ -548,12 +548,11 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
-; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:

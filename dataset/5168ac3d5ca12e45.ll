@@ -1,5 +1,5 @@
 
-; 837 occurrences:
+; 836 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcFunc.c.ll
@@ -643,7 +643,6 @@
 ; opencv/optimized/matchers.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openexr/optimized/chunk.c.ll
@@ -845,7 +844,7 @@ entry:
   ret i64 %2
 }
 
-; 654 occurrences:
+; 650 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcFraig.c.ll
@@ -1110,8 +1109,6 @@ entry:
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/Disasm.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -1124,7 +1121,6 @@ entry:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/MSFCommon.cpp.ll
@@ -1159,7 +1155,6 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll

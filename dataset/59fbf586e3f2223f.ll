@@ -1,22 +1,22 @@
 
-%"struct.folly::detail::SingleElementQueue.2691228" = type { %"union.std::aligned_storage<112, 16>::type.2691092", %"struct.folly::detail::TurnSequencer.2691229", [12 x i8] }
-%"union.std::aligned_storage<112, 16>::type.2691092" = type { [112 x i8] }
-%"struct.folly::detail::TurnSequencer.2691229" = type { %"struct.std::atomic.33.2691037" }
-%"struct.std::atomic.33.2691037" = type { %"struct.std::__atomic_base.34.2691038" }
-%"struct.std::__atomic_base.34.2691038" = type { i32 }
-%class.aiVector2t.2825654 = type { double, double }
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
-%"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165834" = type { i64, i64, i64, i8, double, i64, i64, i64, i64 }
-%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
-%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
-%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
-%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
-%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
-%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
-%"struct.std::_Head_base.386.3474879" = type { ptr }
+%"struct.folly::detail::SingleElementQueue.2691194" = type { %"union.std::aligned_storage<112, 16>::type.2691058", %"struct.folly::detail::TurnSequencer.2691195", [12 x i8] }
+%"union.std::aligned_storage<112, 16>::type.2691058" = type { [112 x i8] }
+%"struct.folly::detail::TurnSequencer.2691195" = type { %"struct.std::atomic.33.2691003" }
+%"struct.std::atomic.33.2691003" = type { %"struct.std::__atomic_base.34.2691004" }
+%"struct.std::__atomic_base.34.2691004" = type { i32 }
+%class.aiVector2t.2825620 = type { double, double }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
+%"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800" = type { i64, i64, i64, i8, double, i64, i64, i64, i64 }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474839" = type { %"class.std::unique_ptr.379.3474840" }
+%"class.std::unique_ptr.379.3474840" = type { %"struct.std::__uniq_ptr_data.380.3474841" }
+%"struct.std::__uniq_ptr_data.380.3474841" = type { %"class.std::__uniq_ptr_impl.381.3474842" }
+%"class.std::__uniq_ptr_impl.381.3474842" = type { %"class.std::tuple.382.3474843" }
+%"class.std::tuple.382.3474843" = type { %"struct.std::_Tuple_impl.383.3474844" }
+%"struct.std::_Tuple_impl.383.3474844" = type { %"struct.std::_Head_base.386.3474845" }
+%"struct.std::_Head_base.386.3474845" = type { ptr }
 
 ; 606 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -629,8 +629,10 @@
 define i1 @func00000000000007e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
-  ret i1 %4
+  %4 = getelementptr i8, ptr %3, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
 }
 
 ; 62 occurrences:
@@ -742,8 +744,10 @@ entry:
 define i1 @func0000000000000364(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
-  ret i1 %4
+  %4 = getelementptr i8, ptr %3, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
 }
 
 ; 18 occurrences:
@@ -841,7 +845,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::detail::SingleElementQueue.2691228", ptr %1, i64 %2
+  %3 = getelementptr %"struct.folly::detail::SingleElementQueue.2691194", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 256
   %5 = getelementptr nusw nuw i8, ptr %0, i64 128
   %6 = icmp eq ptr %5, %4
@@ -932,7 +936,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.aiVector2t.2825654, ptr %1, i64 %2
+  %3 = getelementptr %class.aiVector2t.2825620, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = getelementptr nusw i8, ptr %0, i64 -16
   %6 = icmp eq ptr %5, %4
@@ -996,7 +1000,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.boost::json::value.2995760", ptr %1, i64 %2
+  %3 = getelementptr %"class.boost::json::value.2995726", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
   %5 = getelementptr nusw i8, ptr %0, i64 -24
   %6 = icmp eq ptr %5, %4
@@ -1009,8 +1013,10 @@ entry:
 define i1 @func00000000000003e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr ptr, ptr %1, i64 %2
-  %4 = icmp ult ptr %0, %3
-  ret i1 %4
+  %4 = getelementptr i8, ptr %3, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
 }
 
 ; 4 occurrences:
@@ -1101,7 +1107,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000261(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165834", ptr %1, i64 %2
+  %3 = getelementptr %"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 288
   %5 = getelementptr nusw nuw i8, ptr %0, i64 72
   %6 = icmp eq ptr %5, %4
@@ -1137,7 +1143,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000304(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %1, i64 %2
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = getelementptr i8, ptr %0, i64 -8
   %6 = icmp ult ptr %5, %4
@@ -1149,7 +1155,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000344(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %1, i64 %2
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = icmp ult ptr %5, %4

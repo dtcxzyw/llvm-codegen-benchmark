@@ -214,8 +214,9 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/absRef.c.ll
+; abc/optimized/cuddTable.c.ll
 ; cpython/optimized/obmalloc.ll
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -356,7 +357,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; hdf5/optimized/H5FAcache.c.ll
@@ -370,6 +371,7 @@ entry:
 ; postgres/optimized/nbtpage.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/544b63jf571x6ld1.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
@@ -408,8 +410,7 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-ppc32.cc.ll

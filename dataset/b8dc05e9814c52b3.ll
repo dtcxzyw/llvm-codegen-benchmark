@@ -1,5 +1,5 @@
 
-%struct.resource.3549589 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3549555 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; cpython/optimized/sre.ll
@@ -88,7 +88,7 @@ entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
   %4 = getelementptr i8, ptr %0, i64 736
-  %5 = getelementptr [11 x %struct.resource.3549589], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [11 x %struct.resource.3549555], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

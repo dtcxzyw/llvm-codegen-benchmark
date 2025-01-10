@@ -1,5 +1,6 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800" = type { i64, i64, i64, i8, double, i64, i64, i64, i64 }
 
 ; 78 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -85,7 +86,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -132,7 +133,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -148,6 +149,17 @@ entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nsw i64 %2, -1
   %4 = getelementptr { i64, { i16, i8, [1 x i8] }, [2 x i16] }, ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; llvm/optimized/SampleProfileInference.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 1
+  %3 = add nsw i64 %2, 2
+  %4 = getelementptr nusw %"struct.(anonymous namespace)::MinCostMaxFlow::Node.3165800", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 

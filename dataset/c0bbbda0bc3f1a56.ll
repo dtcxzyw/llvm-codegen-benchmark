@@ -1,27 +1,28 @@
 
-%struct.NSVGattrib.2600672 = type { [64 x i8], [6 x float], i32, i32, float, float, float, [64 x i8], [64 x i8], float, float, [8 x float], i32, i8, i8, float, i8, float, i32, float, float, i8, i8, i8 }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.fast_forward_char_data.2795027 = type { i8, i8, [5 x i8] }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
-%"struct.Stockfish::(anonymous namespace)::PairsData.2878289" = type { i8, i8, i8, i32, i64, i64, ptr, ptr, ptr, i32, ptr, i64, ptr, %"class.std::vector.38.2878290", %"class.std::vector.43.2878291", [7 x i32], [8 x i64], [8 x i32], [4 x i16] }
-%"class.std::vector.38.2878290" = type { %"struct.std::_Vector_base.39.2878292" }
-%"struct.std::_Vector_base.39.2878292" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2878293" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2878293" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2878294" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2878294" = type { ptr, ptr, ptr }
-%"class.std::vector.43.2878291" = type { %"struct.std::_Vector_base.44.2878295" }
-%"struct.std::_Vector_base.44.2878295" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.2878296" }
-%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.2878296" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.2878297" }
-%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.2878297" = type { ptr, ptr, ptr }
-%struct.nmv_component.3400041 = type { [12 x i16], [2 x [5 x i16]], [5 x i16], [3 x i16], [3 x i16], [3 x i16], [3 x i16], [10 x [3 x i16]] }
-%struct.xia_row.3451638 = type { %struct.xia_xid.3451639, %union.anon.3451640 }
-%struct.xia_xid.3451639 = type { i32, [5 x i32] }
-%union.anon.3451640 = type { i32 }
-%struct.movePlyType.3484973 = type { [14 x %struct.moveType.3484969], i32, i32 }
-%struct.moveType.3484969 = type { i32, i32, i32, i32 }
+%struct.NSVGattrib.2600639 = type { [64 x i8], [6 x float], i32, i32, float, float, float, [64 x i8], [64 x i8], float, float, [8 x float], i32, i8, i8, float, i8, float, i32, float, float, i8, i8, i8 }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
+%struct.Ifn_ThData_t_.2876086 = type { ptr, [64 x i64], [10 x i64], i32, i32, i32, i32, i32, i32, i64 }
+%"struct.Stockfish::(anonymous namespace)::PairsData.2878255" = type { i8, i8, i8, i32, i64, i64, ptr, ptr, ptr, i32, ptr, i64, ptr, %"class.std::vector.38.2878256", %"class.std::vector.43.2878257", [7 x i32], [8 x i64], [8 x i32], [4 x i16] }
+%"class.std::vector.38.2878256" = type { %"struct.std::_Vector_base.39.2878258" }
+%"struct.std::_Vector_base.39.2878258" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2878259" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.2878259" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2878260" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.2878260" = type { ptr, ptr, ptr }
+%"class.std::vector.43.2878257" = type { %"struct.std::_Vector_base.44.2878261" }
+%"struct.std::_Vector_base.44.2878261" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.2878262" }
+%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.2878262" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.2878263" }
+%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.2878263" = type { ptr, ptr, ptr }
+%struct.nmv_component.3400007 = type { [12 x i16], [2 x [5 x i16]], [5 x i16], [3 x i16], [3 x i16], [3 x i16], [3 x i16], [10 x [3 x i16]] }
+%struct.xia_row.3451604 = type { %struct.xia_xid.3451605, %union.anon.3451606 }
+%struct.xia_xid.3451605 = type { i32, [5 x i32] }
+%union.anon.3451606 = type { i32 }
+%struct.movePlyType.3484939 = type { [14 x %struct.moveType.3484935], i32, i32 }
+%struct.moveType.3484935 = type { i32, i32, i32, i32 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; nanosvg/optimized/nanosvg.ll
+; php/optimized/pcre2_jit_compile.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rust-analyzer-rs/optimized/2z8yitblr1xxwxav.ll
@@ -63,7 +64,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [128 x %struct.NSVGattrib.2600672], ptr %1, i64 0, i64 %2, i32 8
+  %3 = getelementptr [128 x %struct.NSVGattrib.2600639], ptr %1, i64 0, i64 %2, i32 8
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   ret ptr %4
 }
@@ -74,7 +75,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
@@ -91,12 +92,38 @@ entry:
   ret ptr %5
 }
 
-; 24 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; linux/optimized/page_alloc.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; linux/optimized/skl_watermark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2, i64 1
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 4 occurrences:
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2, i64 1
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 23 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; freetype/optimized/autofit.c.ll
 ; libquic/optimized/curve25519.c.ll
-; php/optimized/pcre2_jit_compile.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
@@ -119,35 +146,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw [12 x %struct.fast_forward_char_data.2795027], ptr %1, i64 0, i64 %2, i32 2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
-  ret ptr %4
-}
-
-; 5 occurrences:
-; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_tonecurve.c.ll
-; linux/optimized/page_alloc.ll
-; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/skl_watermark.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2, i64 1
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
-  ret ptr %4
-}
-
-; 4 occurrences:
-; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_tonecurve.c.ll
-; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2, i64 1
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr nuw [100 x %struct.Ifn_ThData_t_.2876086], ptr %1, i64 0, i64 %2, i32 1
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -173,7 +173,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw [4 x %"struct.Stockfish::(anonymous namespace)::PairsData.2878289"], ptr %1, i64 0, i64 %2, i32 18, i64 2
+  %3 = getelementptr nuw [4 x %"struct.Stockfish::(anonymous namespace)::PairsData.2878255"], ptr %1, i64 0, i64 %2, i32 18, i64 2
   %4 = getelementptr nusw i16, ptr %3, i64 %0
   ret ptr %4
 }
@@ -196,7 +196,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [2 x %struct.nmv_component.3400041], ptr %1, i64 0, i64 %2, i32 1, i64 0, i64 4
+  %3 = getelementptr [2 x %struct.nmv_component.3400007], ptr %1, i64 0, i64 %2, i32 1, i64 0, i64 4
   %4 = getelementptr i8, ptr %3, i64 %0
   ret ptr %4
 }
@@ -210,7 +210,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [9 x %struct.xia_row.3451638], ptr %1, i64 0, i64 %2, i32 1
+  %3 = getelementptr [9 x %struct.xia_row.3451604], ptr %1, i64 0, i64 %2, i32 1
   %4 = getelementptr i8, ptr %3, i64 %0
   ret ptr %4
 }
@@ -220,7 +220,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [13 x [4 x %struct.movePlyType.3484973]], ptr %1, i64 0, i64 %2, i64 1
+  %3 = getelementptr [13 x [4 x %struct.movePlyType.3484939]], ptr %1, i64 0, i64 %2, i64 1
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   ret ptr %4
 }

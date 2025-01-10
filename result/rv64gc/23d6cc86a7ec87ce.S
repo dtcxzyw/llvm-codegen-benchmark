@@ -100,15 +100,14 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a0, a2, 8
 .LBB17_2:                               # %entry
 	ret
-func0000000000000006:                   # @func0000000000000006
-	li	a3, 7
-	blt	a1, a3, .LBB18_2
-	addi	a0, a2, -7
-.LBB18_2:                               # %entry
-	ret
 func0000000000000058:                   # @func0000000000000058
 	li	a3, 1
-	bltu	a3, a1, .LBB19_2
+	bltu	a3, a1, .LBB18_2
+	addi	a0, a2, -8
+.LBB18_2:                               # %entry
+	ret
+func0000000000000006:                   # @func0000000000000006
+	blez	a1, .LBB19_2
 	addi	a0, a2, -8
 .LBB19_2:                               # %entry
 	ret

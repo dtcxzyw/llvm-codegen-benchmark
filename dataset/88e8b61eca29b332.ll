@@ -522,10 +522,9 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:

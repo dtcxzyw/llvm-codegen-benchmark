@@ -1,11 +1,3 @@
-func0000000000000acc:                   // @func0000000000000acc
-// %bb.0:                               // %entry
-	add	w8, w1, w2
-	cmp	w8, #0
-	ccmp	w8, w0, #0, ge
-	cset	w0, ge
-	ret
-                                        // -- End function
 func0000000000000a8c:                   // @func0000000000000a8c
 // %bb.0:                               // %entry
 	add	w8, w1, w2

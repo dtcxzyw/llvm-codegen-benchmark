@@ -1,5 +1,5 @@
 
-; 532 occurrences:
+; 529 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -229,7 +229,6 @@
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/CodeGenInstruction.cpp.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
@@ -316,7 +315,6 @@
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
-; node/optimized/simdutf.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
@@ -460,7 +458,6 @@
 ; rust-analyzer-rs/optimized/563918kfdqef84tz.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/aes64ds.ll
@@ -559,7 +556,7 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -568,7 +565,6 @@ entry:
 ; libsodium/optimized/libsodium_la-hash_sha512_cp.ll
 ; linux/optimized/dmar.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/imageDecompressor.ll
 ; openjdk/optimized/shenandoahMark.ll
@@ -592,7 +588,7 @@ entry:
   ret i64 %5
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/sscSim.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -610,7 +606,6 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/imageDecompressor.ll
@@ -739,7 +734,7 @@ entry:
   ret i64 %5
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; boost/optimized/from_chars.ll
@@ -766,7 +761,6 @@ entry:
 ; linux/optimized/badblocks.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; openssl/optimized/libcrypto-lib-ct_oct.ll
 ; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openssl/optimized/libssl-lib-dtls_meth.ll
@@ -868,10 +862,11 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; cpython/optimized/pyhash.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/BranchProbability.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; lvgl/optimized/lv_image.ll

@@ -1,5 +1,5 @@
 
-%struct.pgd_t.3530390 = type { i64 }
+%struct.pgd_t.3530356 = type { i64 }
 
 ; 39 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
@@ -245,7 +245,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.pgd_t.3530390, ptr %0, i64 %1
+  %2 = getelementptr %struct.pgd_t.3530356, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 2048
   %5 = icmp eq i64 %4, 0

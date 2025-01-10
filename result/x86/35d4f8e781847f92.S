@@ -153,13 +153,6 @@ func0000000000000298:                   # @func0000000000000298
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	cmpq	$2216, %rdx                     # imm = 0x8A8
-	sete	%cl
-	cmpl	%esi, %edi
-	setb	%al
-	orb	%cl, %al
-	retq
 func0000000000000282:                   # @func0000000000000282
 	cmpl	%edx, %esi
 	setg	%cl

@@ -232,6 +232,12 @@ func00000000000000f5:                   # @func00000000000000f5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
 	ret
+func000000000000006c:                   # @func000000000000006c
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vwaddu.wv	v10, v10, v12
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vv	v0, v10, v8
+	ret
 func00000000000000a8:                   # @func00000000000000a8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
@@ -279,12 +285,6 @@ func0000000000000065:                   # @func0000000000000065
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
-	ret
-func000000000000006c:                   # @func000000000000006c
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v12
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsne.vv	v0, v10, v8
 	ret
 func0000000000000089:                   # @func0000000000000089
 	vsetivli	zero, 4, e32, m1, ta, ma

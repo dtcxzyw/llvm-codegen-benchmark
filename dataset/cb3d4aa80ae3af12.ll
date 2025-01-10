@@ -1,10 +1,10 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"struct.OT::VarRegionAxis.2729548" = type { %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549" }
-%"struct.OT::HBFixed.163.2729549" = type { %"struct.OT::IntType.148.2729550" }
-%"struct.OT::IntType.148.2729550" = type { %struct.BEInt.149.2729551 }
-%struct.BEInt.149.2729551 = type { [2 x i8] }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"struct.OT::VarRegionAxis.2729514" = type { %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515" }
+%"struct.OT::HBFixed.163.2729515" = type { %"struct.OT::IntType.148.2729516" }
+%"struct.OT::IntType.148.2729516" = type { %struct.BEInt.149.2729517 }
+%struct.BEInt.149.2729517 = type { [2 x i8] }
 
 ; 95 occurrences:
 ; cmake/optimized/fse_compress.c.ll
@@ -107,8 +107,8 @@ define ptr @func00000000000001ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 76
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %4, i64 %3
-  %6 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %0, i32 2
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %4, i64 %3
+  %6 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %5, i64 %0, i32 2
   ret ptr %6
 }
 
@@ -141,8 +141,8 @@ define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729548", ptr %4, i64 %3
-  %6 = getelementptr nuw %"struct.OT::VarRegionAxis.2729548", ptr %5, i64 %0, i32 1
+  %5 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729514", ptr %4, i64 %3
+  %6 = getelementptr nuw %"struct.OT::VarRegionAxis.2729514", ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

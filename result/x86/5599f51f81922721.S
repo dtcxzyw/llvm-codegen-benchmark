@@ -98,15 +98,15 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	movslq	%edx, %rax
+	leaq	-7(%rsi,%rax), %rax
+	cmpq	%rax, %rdi
+	setae	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%edx, %rax
 	leaq	-1(%rsi,%rax), %rax
 	cmpq	%rax, %rdi
 	setne	%al
-	retq
-func00000000000001c8:                   # @func00000000000001c8
-	movslq	%edx, %rax
-	leaq	-1(%rsi,%rax), %rax
-	cmpq	%rax, %rdi
-	seta	%al
 	retq

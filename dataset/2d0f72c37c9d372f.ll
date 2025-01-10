@@ -1,7 +1,7 @@
 
-%struct.TimedAverageWindow.2709913 = type { i64, i64, i64, i64, i64 }
-%struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822251 = type { ptr, ptr, i32 }
-%struct.ssh_peer_data.3453394 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
+%struct.TimedAverageWindow.2709879 = type { i64, i64, i64, i64, i64 }
+%struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822217 = type { ptr, ptr, i32 }
+%struct.ssh_peer_data.3453360 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
 
 ; 12 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -20,7 +20,7 @@
 define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr [2 x %struct.TimedAverageWindow.2709913], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr [2 x %struct.TimedAverageWindow.2709879], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 
@@ -91,7 +91,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822251], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [2 x %struct.FLAC__EntropyCodingMethod_PartitionedRiceContents.2822217], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -102,7 +102,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr [2 x %struct.ssh_peer_data.3453394], ptr %0, i64 0, i64 %2, i32 10, i64 1
+  %3 = getelementptr [2 x %struct.ssh_peer_data.3453360], ptr %0, i64 0, i64 %2, i32 10, i64 1
   ret ptr %3
 }
 

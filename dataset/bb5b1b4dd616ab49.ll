@@ -144,13 +144,12 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; nori/optimized/screen.cpp.ll
-; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
@@ -242,7 +241,7 @@ entry:
   ret i32 %3
 }
 
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcNtk.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -261,9 +260,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; lvgl/optimized/lv_obj_draw.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
@@ -305,8 +302,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; meshlab/optimized/filter_colorproc.cpp.ll
+; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {

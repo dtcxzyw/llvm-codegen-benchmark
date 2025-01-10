@@ -105,17 +105,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/inet_connection_sock.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i8 %1) #0 {
-entry:
-  %2 = lshr i8 %1, 1
-  %3 = zext nneg i8 %2 to i32
-  %4 = icmp samesign ule i32 %0, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; linux/optimized/printk.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000027(i32 %0, i8 %1) #0 {

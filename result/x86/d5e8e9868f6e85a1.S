@@ -4,6 +4,12 @@ func0000000000000036:                   # @func0000000000000036
 	shlq	$2, %rsi
 	subq	%rsi, %rax
 	retq
+func0000000000000016:                   # @func0000000000000016
+	movq	%rdi, %rax
+	shll	$2, %esi
+	shlq	$2, %rsi
+	subq	%rsi, %rax
+	retq
 func0000000000000076:                   # @func0000000000000076
 	movq	%rdi, %rax
 	shll	$4, %esi

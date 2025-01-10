@@ -22,12 +22,6 @@ func0000000000000046:                   # @func0000000000000046
 	cmpl	%eax, %edi
 	setl	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	orl	%edx, %esi
-	movzwl	%si, %eax
-	cmpl	%eax, %edi
-	setl	%al
-	retq
 func0000000000000044:                   # @func0000000000000044
 	orl	%edx, %esi
 	movzwl	%si, %eax

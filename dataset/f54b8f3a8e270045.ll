@@ -52,13 +52,22 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; openusd/optimized/av1_loopfilter.c.ll
+; 1 occurrences:
 ; openusd/optimized/reconintra.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 16, %1
+  %3 = icmp sge i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; openusd/optimized/av1_loopfilter.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 16, %1
+  %2 = lshr i32 32, %1
   %3 = icmp slt i32 %0, %2
   ret i1 %3
 }

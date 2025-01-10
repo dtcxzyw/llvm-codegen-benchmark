@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 121 occurrences:
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/node_hash_set_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
@@ -75,7 +75,6 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
-; ruby/optimized/error.ll
 ; ruby/optimized/time.ll
 ; slurm/optimized/job_mgr.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
@@ -972,7 +971,7 @@ entry:
   ret i64 %3
 }
 
-; 84 occurrences:
+; 86 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/strtod.cc.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
@@ -1007,9 +1006,11 @@ entry:
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yyjson/optimized/yyjson.c.ll

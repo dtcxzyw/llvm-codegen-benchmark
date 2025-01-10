@@ -3,8 +3,3 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, 33
 	ret
-func0000000000000004:                   # @func0000000000000004
-	slli	a1, a0, 5
-	add	a0, a0, a1
-	addi	a0, a0, 49
-	ret

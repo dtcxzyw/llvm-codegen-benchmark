@@ -42,17 +42,3 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 5
 .LBB3_2:                                # %entry
 	ret
-func000000000000000c:                   # @func000000000000000c
-	andi	a2, a2, 1
-	bnez	a2, .LBB4_2
-	li	a2, 12
-	bnez	a1, .LBB4_3
-	j	.LBB4_4
-.LBB4_2:
-	li	a2, 18
-	beqz	a1, .LBB4_4
-.LBB4_3:                                # %entry
-	mv	a2, a0
-.LBB4_4:                                # %entry
-	mv	a0, a2
-	ret

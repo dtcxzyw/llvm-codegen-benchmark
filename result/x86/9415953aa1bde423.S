@@ -33,13 +33,6 @@ func0000000000000009:                   # @func0000000000000009
 	divq	%rcx
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movq	%rsi, %rax
-	movl	%edx, %ecx
-	xorl	%edx, %edx
-	divq	%rcx
-	addq	%rdi, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax
 	movl	%edx, %ecx

@@ -68,11 +68,3 @@ func000000000000008c:                   # @func000000000000008c
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI9_0:
-	.long	1                               # 0x1
-func0000000000000101:                   # @func0000000000000101
-	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm0, %k1
-	vptestnmd	%ymm2, %ymm1, %k0 {%k1}
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

@@ -47,13 +47,6 @@ func0000000000000052:                   # @func0000000000000052
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000053:                   # @func0000000000000053
-	cmpl	$7, %edx
-	movl	$1, %eax
-	cmovael	%esi, %eax
-	cltq
-	leaq	(%rdi,%rax,8), %rax
-	retq
 func000000000000001b:                   # @func000000000000001b
 	cmpl	$7, %edx
 	movl	$1, %eax

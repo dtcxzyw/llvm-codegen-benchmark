@@ -25,3 +25,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	addl	%esi, %edi
 	sete	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	negl	%esi
+	cmpl	%esi, %edi
+	seta	%al
+	retq

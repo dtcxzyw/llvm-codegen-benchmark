@@ -1,6 +1,6 @@
 
-%struct.smvt_control.2635513 = type { i32, i32 }
-%struct.iovec.2690185 = type { ptr, i64 }
+%struct.smvt_control.2635480 = type { i32, i32 }
+%struct.iovec.2690151 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; ruby/optimized/compile.ll
@@ -194,7 +194,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.smvt_control.2635513, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.smvt_control.2635480, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -213,7 +213,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.iovec.2690185, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.iovec.2690151, ptr %0, i64 %5
   ret ptr %6
 }
 

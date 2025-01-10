@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 12 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -43,7 +43,7 @@ define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 32776
-  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, 1125899902648320
   ret i64 %6

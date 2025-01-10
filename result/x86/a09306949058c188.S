@@ -12,11 +12,3 @@ func0000000000000010:                   # @func0000000000000010
 	shlxl	%eax, %esi, %eax
 	addl	%edi, %eax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	testl	%edx, %edx
-	setne	%al
-	addb	%al, %al
-	incb	%al
-	shlxl	%eax, %esi, %eax
-	addl	%edi, %eax
-	retq

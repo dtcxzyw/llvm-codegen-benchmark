@@ -1,9 +1,7 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; git/optimized/diff.ll
-; git/optimized/dir.ll
 ; gromacs/optimized/forcetable.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libquic/optimized/bio_mem.c.ll
 ; libquic/optimized/histogram.cc.ll
@@ -31,16 +29,11 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; clamav/optimized/LzmaDec.c.ll
-; linux/optimized/gup.ll
-; linux/optimized/scm.ll
+; 5 occurrences:
 ; minetest/optimized/texturesource.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/scale_layer.cpp.ll
-; postgres/optimized/backend_status.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {

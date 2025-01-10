@@ -3,15 +3,15 @@ func0000000000000010:                   # @func0000000000000010
 	andq	%rsi, %rdx
 	leaq	15(%rdi,%rdx), %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	negq	%rdx
+	andq	%rsi, %rdx
+	leaq	17(%rdi,%rdx), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	negq	%rdx
 	andq	%rsi, %rdx
 	leaq	-1(%rdi,%rdx), %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	negq	%rdx
-	andq	%rdi, %rdx
-	leaq	17(%rsi,%rdx), %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	negq	%rdx

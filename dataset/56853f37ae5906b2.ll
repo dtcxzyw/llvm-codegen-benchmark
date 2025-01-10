@@ -1,5 +1,5 @@
 
-%"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730106" = type { i32, i32, i32 }
+%"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730072" = type { i32, i32, i32 }
 
 ; 39 occurrences:
 ; clamav/optimized/ishield.c.ll
@@ -47,7 +47,7 @@ entry:
   %3 = and i32 %2, 1073741823
   %4 = urem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730106", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, unsigned int, true>::item_t.2730072", ptr %0, i64 %5
   ret ptr %6
 }
 

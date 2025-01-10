@@ -46,20 +46,20 @@ func0000000000000030:                   # @func0000000000000030
 	zext.w	a0, a0
 	vadd.vx	v8, v8, a0
 	ret
-func00000000000000dd:                   # @func00000000000000dd
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 3
-	vsll.vi	v8, v8, 6
-	vadd.vv	v8, v10, v8
-	li	a0, 760
-	vadd.vx	v8, v8, a0
-	ret
 func00000000000000ff:                   # @func00000000000000ff
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
 	vsll.vi	v8, v8, 4
 	vadd.vv	v8, v10, v8
 	li	a0, 32
+	vadd.vx	v8, v8, a0
+	ret
+func00000000000000dd:                   # @func00000000000000dd
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 2
+	vsll.vi	v8, v8, 3
+	vadd.vv	v8, v10, v8
+	li	a0, 64
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000010:                   # @func0000000000000010

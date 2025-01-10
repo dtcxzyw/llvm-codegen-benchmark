@@ -1,7 +1,7 @@
 
-%"class.openvdb::v11_0::math::Vec3.236.2716960" = type { %"class.openvdb::v11_0::math::Tuple.237.2716961" }
-%"class.openvdb::v11_0::math::Tuple.237.2716961" = type { [3 x float] }
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"class.openvdb::v11_0::math::Vec3.236.2716926" = type { %"class.openvdb::v11_0::math::Tuple.237.2716927" }
+%"class.openvdb::v11_0::math::Tuple.237.2716927" = type { [3 x float] }
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
 ; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -13,7 +13,7 @@
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"class.openvdb::v11_0::math::Vec3.236.2716960", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.openvdb::v11_0::math::Vec3.236.2716926", ptr %1, i64 %3
   %5 = getelementptr nusw nuw [3 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -49,7 +49,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 7
-  %4 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %1, i64 %3
+  %4 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %1, i64 %3
   %5 = getelementptr [128 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

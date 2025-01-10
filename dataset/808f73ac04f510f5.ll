@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.2734158" = type { %struct.BEInt.2734159 }
-%struct.BEInt.2734159 = type { [4 x i8] }
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%"struct.OT::IntType.2734124" = type { %struct.BEInt.2734125 }
+%struct.BEInt.2734125 = type { [4 x i8] }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 23 occurrences:
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
@@ -53,7 +53,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
   %5 = and i64 %4, 1073741823
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.2734158", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.2734124", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -68,7 +68,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr %struct.lua_TValue.3680875, ptr %0, i64 %5
+  %6 = getelementptr %struct.lua_TValue.3680825, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/rlaoutput.cpp.ll

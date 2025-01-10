@@ -35,7 +35,7 @@ entry:
   ret ptr %4
 }
 
-; 202 occurrences:
+; 201 occurrences:
 ; abc/optimized/mapperRefs.c.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -110,7 +110,6 @@ entry:
 ; openjdk/optimized/verifier.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; openusd/optimized/reconintra.c.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

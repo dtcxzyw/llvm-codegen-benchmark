@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 146 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -47,7 +47,6 @@
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; darktable/optimized/KdcDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll

@@ -1,5 +1,5 @@
 
-; 129 occurrences:
+; 131 occurrences:
 ; abc/optimized/abcFxu.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/ioWriteDot.c.ll
@@ -98,6 +98,8 @@
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll

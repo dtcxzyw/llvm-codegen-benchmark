@@ -1,5 +1,5 @@
 
-%struct.ImVec2.3454338 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 10 occurrences:
 ; hermes/optimized/SegmentedArray.cpp.ll
@@ -137,7 +137,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %0, i64 %4
   ret ptr %5
 }
 

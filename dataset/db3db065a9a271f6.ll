@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; qemu/optimized/backends_tpm_tpm_util.c.ll
+; redis/optimized/dict.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

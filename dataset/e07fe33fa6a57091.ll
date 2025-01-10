@@ -1,6 +1,6 @@
 
-%struct._zend_op.2793452 = type { ptr, %union._znode_op.2793461, %union._znode_op.2793461, %union._znode_op.2793461, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793461 = type { i32 }
+%struct._zend_op.2793418 = type { ptr, %union._znode_op.2793427, %union._znode_op.2793427, %union._znode_op.2793427, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793427 = type { i32 }
 
 ; 7 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -16,7 +16,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw %struct._zend_op.2793452, ptr %5, i64 %4
+  %6 = getelementptr nusw %struct._zend_op.2793418, ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

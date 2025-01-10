@@ -38,7 +38,7 @@ entry:
   ret i32 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; boost/optimized/src.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -53,6 +53,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/parse_manifest.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -239,11 +240,10 @@ entry:
   ret i32 %5
 }
 
-; 203 occurrences:
+; 202 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/giaIso2.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll

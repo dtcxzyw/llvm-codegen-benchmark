@@ -1,5 +1,5 @@
 
-; 133 occurrences:
+; 135 occurrences:
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/signal.ll
@@ -77,7 +77,9 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; ruby/optimized/compile.ll

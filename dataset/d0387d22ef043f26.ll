@@ -1,5 +1,5 @@
 
-; 685 occurrences:
+; 683 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcAuto.c.ll
@@ -153,7 +153,6 @@
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/zip.c.ll
 ; hwloc/optimized/topology-linux.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/csrmbcs.ll
@@ -454,7 +453,6 @@
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/model.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; opencv/optimized/normalize_bbox_layer.cpp.ll
@@ -739,12 +737,11 @@ entry:
   ret i32 %4
 }
 
-; 294 occurrences:
+; 288 occurrences:
 ; abc/optimized/exor.c.ll
 ; abc/optimized/extraBddCas.c.ll
 ; abc/optimized/gzread.c.ll
 ; bullet3/optimized/btMiniSDF.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/readdb.c.ll
@@ -785,7 +782,6 @@ entry:
 ; git/optimized/diff.ll
 ; git/optimized/fmt-merge-msg.ll
 ; git/optimized/hash-lookup.ll
-; git/optimized/line-log.ll
 ; git/optimized/pack-revindex.ll
 ; git/optimized/packfile.ll
 ; graphviz/optimized/visibility.c.ll
@@ -812,7 +808,6 @@ entry:
 ; libquic/optimized/spdy_framer.cc.ll
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gup.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_cx0_phy.ll
@@ -825,7 +820,6 @@ entry:
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/rx.ll
-; linux/optimized/scm.ll
 ; linux/optimized/selftests.ll
 ; linux/optimized/sysctl_net_ipv4.ll
 ; linux/optimized/tg3.ll
@@ -904,7 +898,6 @@ entry:
 ; php/optimized/url.ll
 ; php/optimized/zend_gc.ll
 ; postgres/optimized/arrayfuncs.ll
-; postgres/optimized/backend_status.ll
 ; postgres/optimized/copyfromparse.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
@@ -930,7 +923,6 @@ entry:
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/libvhost-user.c.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; qemu/optimized/user.c.ll

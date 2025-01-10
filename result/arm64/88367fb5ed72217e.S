@@ -111,14 +111,6 @@ func0000000000000026:                   // @func0000000000000026
 	and	w0, w0, w8
 	ret
                                         // -- End function
-func0000000000000061:                   // @func0000000000000061
-// %bb.0:                               // %entry
-	add	x8, x1, x2
-	cmp	x8, #3
-	cset	w8, eq
-	and	w0, w0, w8
-	ret
-                                        // -- End function
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	mov	x9, #1                          // =0x1

@@ -1,16 +1,16 @@
 
-%"class.std::unique_ptr.56.3092400" = type { %"struct.std::__uniq_ptr_data.57.3092401" }
-%"struct.std::__uniq_ptr_data.57.3092401" = type { %"class.std::__uniq_ptr_impl.58.3092402" }
-%"class.std::__uniq_ptr_impl.58.3092402" = type { %"class.std::tuple.59.3092403" }
-%"class.std::tuple.59.3092403" = type { %"struct.std::_Tuple_impl.60.3092404" }
-%"struct.std::_Tuple_impl.60.3092404" = type { %"struct.std::_Head_base.63.3092405" }
-%"struct.std::_Head_base.63.3092405" = type { ptr }
-%"struct.Yosys::RTLIL::SigBit.3115142" = type <{ ptr, %union.anon.538.3115143, [4 x i8] }>
-%union.anon.538.3115143 = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428361" = type { i8, double, double, %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347", %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347" }
-%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428347" = type { %"union.std::aligned_storage<8, 8>::type.3428348", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428349" }
-%"union.std::aligned_storage<8, 8>::type.3428348" = type { [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428349" = type { ptr }
+%"class.std::unique_ptr.56.3092366" = type { %"struct.std::__uniq_ptr_data.57.3092367" }
+%"struct.std::__uniq_ptr_data.57.3092367" = type { %"class.std::__uniq_ptr_impl.58.3092368" }
+%"class.std::__uniq_ptr_impl.58.3092368" = type { %"class.std::tuple.59.3092369" }
+%"class.std::tuple.59.3092369" = type { %"struct.std::_Tuple_impl.60.3092370" }
+%"struct.std::_Tuple_impl.60.3092370" = type { %"struct.std::_Head_base.63.3092371" }
+%"struct.std::_Head_base.63.3092371" = type { ptr }
+%"struct.Yosys::RTLIL::SigBit.3115108" = type <{ ptr, %union.anon.538.3115109, [4 x i8] }>
+%union.anon.538.3115109 = type { i32 }
+%"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428327" = type { i8, double, double, %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428313", %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428313" }
+%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3428313" = type { %"union.std::aligned_storage<8, 8>::type.3428314", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428315" }
+%"union.std::aligned_storage<8, 8>::type.3428314" = type { [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3428315" = type { ptr }
 
 ; 25 occurrences:
 ; quantlib/optimized/fdm2dblackscholesop.ll
@@ -69,7 +69,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000361(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::unique_ptr.56.3092400", ptr %1, i64 %2
+  %3 = getelementptr %"class.std::unique_ptr.56.3092366", ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -92,7 +92,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115142", ptr %1, i64 %2
+  %3 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115108", ptr %1, i64 %2
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
@@ -102,7 +102,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428361", ptr %1, i64 %2, i32 3
+  %3 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::TsValueSample.3428327", ptr %1, i64 %2, i32 3
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }

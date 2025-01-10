@@ -36,17 +36,4 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; opencv/optimized/demosaicing.cpp.ll
-; openusd/optimized/restoration.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = or disjoint i32 %2, 3
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
-  ret ptr %5
-}
-
 attributes #0 = { nounwind }

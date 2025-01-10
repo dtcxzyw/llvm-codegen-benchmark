@@ -1,9 +1,9 @@
 
-%"class.std::__cxx11::basic_string.2612206" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207", i64, %union.anon.2612208 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207" = type { ptr }
-%union.anon.2612208 = type { i64, [8 x i8] }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%"struct.rawspeed::Spline<>::Segment.2873472" = type { double, double, double, double }
+%"class.std::__cxx11::basic_string.2612173" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174", i64, %union.anon.2612175 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174" = type { ptr }
+%union.anon.2612175 = type { i64, [8 x i8] }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"struct.rawspeed::Spline<>::Segment.2873438" = type { double, double, double, double }
 
 ; 50 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -60,7 +60,7 @@
 define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612206", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612173", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -368,7 +368,7 @@ entry:
 define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2612206", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2612173", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -407,12 +407,19 @@ entry:
 define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %1, i64 %3
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 234 occurrences:
+; 256 occurrences:
+; abseil-cpp/optimized/sequence_lock_test.cc.ll
+; arrow/optimized/data.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/problem_impl.cc.ll
+; draco/optimized/corner_table.cc.ll
+; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; draco/optimized/point_cloud_encoder.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -431,7 +438,8 @@ entry:
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
-; gromacs/optimized/specbond.cpp.ll
+; git/optimized/unpack-trees.ll
+; gromacs/optimized/grid.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -502,7 +510,13 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
+; lightgbm/optimized/metadata.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; meshlab/optimized/apss.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/packing.cpp.ll
+; meshlab/optimized/rimls.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -574,6 +588,12 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; opencv/optimized/ann_mlp.cpp.ll
+; opencv/optimized/svm.cpp.ll
+; openusd/optimized/fvarLevel.cpp.ll
+; openusd/optimized/level.cpp.ll
+; openusd/optimized/topologyRefinerFactory.cpp.ll
+; pocketpy/optimized/vm.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -647,11 +667,13 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -688,7 +710,7 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/ioJson.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -699,6 +721,7 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -720,7 +743,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/diff.ll
 ; openjdk/optimized/codeBuffer.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -735,62 +759,28 @@ entry:
 }
 
 ; 1 occurrences:
-; openjdk/optimized/UnixOperatingSystem.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %0, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873472", ptr %1, i64 %3
+  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873438", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 23 occurrences:
-; abseil-cpp/optimized/sequence_lock_test.cc.ll
-; arrow/optimized/data.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/problem_impl.cc.ll
-; draco/optimized/corner_table.cc.ll
-; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
-; draco/optimized/point_cloud_encoder.cc.ll
-; git/optimized/unpack-trees.ll
-; gromacs/optimized/grid.cpp.ll
-; lightgbm/optimized/metadata.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; meshlab/optimized/apss.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/packing.cpp.ll
-; meshlab/optimized/rimls.cpp.ll
-; opencv/optimized/ann_mlp.cpp.ll
-; opencv/optimized/svm.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
-; openusd/optimized/level.cpp.ll
-; openusd/optimized/topologyRefinerFactory.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
-; yosys/optimized/mem.ll
-; yosys/optimized/memory_bram.ll
+; 1 occurrences:
+; gromacs/optimized/specbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
+; 2 occurrences:
 ; linux/optimized/string_helpers.ll
 ; wireshark/optimized/protobuf_lang_tree.c.ll
 ; Function Attrs: nounwind
@@ -832,17 +822,6 @@ entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = icmp ule ptr %0, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

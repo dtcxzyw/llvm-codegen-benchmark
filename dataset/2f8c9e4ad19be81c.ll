@@ -148,7 +148,7 @@ entry:
   ret i64 %2
 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -191,6 +191,7 @@ entry:
 ; pcg-cpp/optimized/cppref-sample.cpp.ll
 ; protobuf/optimized/parser.cc.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
+; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/block_based_table_builder.cc.ll

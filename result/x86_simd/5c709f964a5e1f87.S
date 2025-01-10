@@ -63,10 +63,10 @@ func0000000000000041:                   # @func0000000000000041
 	.zero	1
 	.zero	1
 .LCPI1_1:
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
 	.zero	1
 	.zero	1
 	.zero	1

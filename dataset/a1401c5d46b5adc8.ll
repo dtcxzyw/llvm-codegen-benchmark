@@ -34,7 +34,7 @@ entry:
   ret i32 %6
 }
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -74,7 +74,6 @@ entry:
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll

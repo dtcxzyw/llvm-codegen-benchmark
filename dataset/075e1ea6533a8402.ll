@@ -1,5 +1,5 @@
 
-; 3152 occurrences:
+; 3151 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -59,7 +59,6 @@
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/io_util.cc.ll
@@ -3160,7 +3159,7 @@ entry:
   ret i64 %3
 }
 
-; 1343 occurrences:
+; 1342 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -4478,7 +4477,6 @@ entry:
 ; redis/optimized/siphash.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
-; ruby/optimized/bignum.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/random.ll
@@ -4512,7 +4510,7 @@ entry:
   ret i64 %3
 }
 
-; 399 occurrences:
+; 400 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
@@ -4900,6 +4898,7 @@ entry:
 ; redis/optimized/db.ll
 ; redis/optimized/siphash.ll
 ; rocksdb/optimized/clock_cache.cc.ll
+; ruby/optimized/bignum.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
 ; slurm/optimized/backfill.ll
@@ -4920,7 +4919,7 @@ entry:
   ret i64 %3
 }
 
-; 919 occurrences:
+; 920 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -5574,6 +5573,7 @@ entry:
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
 ; opencv/optimized/intelligent_scissors.cpp.ll
 ; opencv/optimized/kernels_imgproc.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll

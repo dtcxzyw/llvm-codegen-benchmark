@@ -1,7 +1,7 @@
 
-%"class.ue2::CharReach.3849988" = type { %"class.ue2::bitfield.3849989" }
-%"class.ue2::bitfield.3849989" = type { %"struct.std::array.26.3849990" }
-%"struct.std::array.26.3849990" = type { [4 x i64] }
+%"class.ue2::CharReach.3849938" = type { %"class.ue2::bitfield.3849939" }
+%"class.ue2::bitfield.3849939" = type { %"struct.std::array.26.3849940" }
+%"struct.std::array.26.3849940" = type { [4 x i64] }
 
 ; 96 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
@@ -170,7 +170,7 @@ entry:
 define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"class.ue2::CharReach.3849988", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.ue2::CharReach.3849938", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }

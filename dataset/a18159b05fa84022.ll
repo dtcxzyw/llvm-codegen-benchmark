@@ -1,8 +1,8 @@
 
-%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
-%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
-%union.anon.2619710 = type { i64, [8 x i8] }
+%"struct.rocksdb::TableReader::Anchor.2619962" = type { %"class.std::__cxx11::basic_string.2619675", i64 }
+%"class.std::__cxx11::basic_string.2619675" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676", i64, %union.anon.2619677 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676" = type { ptr }
+%union.anon.2619677 = type { i64, [8 x i8] }
 
 ; 380 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
@@ -388,7 +388,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619962", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = udiv exact i64 %5, 40

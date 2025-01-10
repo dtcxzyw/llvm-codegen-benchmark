@@ -1,7 +1,7 @@
 
-%"struct.std::pair.2757165" = type { ptr, i64 }
-%"struct.std::pair.3449273" = type { i32, i32 }
-%class.QCPGraphData.3451166 = type { double, double }
+%"struct.std::pair.2757131" = type { ptr, i64 }
+%"struct.std::pair.3449239" = type { i32, i32 }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 226 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -396,7 +396,7 @@ entry:
   %4 = ashr exact i64 %3, 4
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = getelementptr nusw nuw %"struct.std::pair.2757165", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::pair.2757131", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -410,7 +410,7 @@ entry:
   %4 = ashr exact i64 %3, 3
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %6
+  %7 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -423,7 +423,7 @@ entry:
   %4 = ashr exact i64 %3, 4
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %6
+  %7 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %6
   ret ptr %7
 }
 

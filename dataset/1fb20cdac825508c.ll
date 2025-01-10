@@ -11,7 +11,8 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; abc/optimized/cmdApi.c.ll
 ; boost/optimized/within.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/shapes.c.ll

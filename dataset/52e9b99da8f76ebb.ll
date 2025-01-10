@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2789443 = type { %union._zend_value.2789451, %union.anon.4.2789452, %union.anon.7.2789453 }
-%union._zend_value.2789451 = type { i64 }
-%union.anon.4.2789452 = type { i32 }
-%union.anon.7.2789453 = type { i32 }
+%struct._zval_struct.2789409 = type { %union._zend_value.2789417, %union.anon.4.2789418, %union.anon.7.2789419 }
+%union._zend_value.2789417 = type { i64 }
+%union.anon.4.2789418 = type { i32 }
+%union.anon.7.2789419 = type { i32 }
 
 ; 40 occurrences:
 ; abc/optimized/amapLiberty.c.ll
@@ -61,7 +61,7 @@ define ptr @func000000000000000a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw %struct._zval_struct.2789443, ptr %4, i64 %0
+  %5 = getelementptr nusw %struct._zval_struct.2789409, ptr %4, i64 %0
   ret ptr %5
 }
 

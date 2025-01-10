@@ -1,9 +1,9 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427461" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427462", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427463" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427462" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427464" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427464" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427463" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427465" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427465" = type { i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427427" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427428", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427429" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427428" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427430" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427430" = type { i32 }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427429" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427431" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427431" = type { i32 }
 
 ; 32 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -66,7 +66,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = udiv i64 %1, %3
-  %5 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427461", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427427", ptr %0, i64 %4
   ret ptr %5
 }
 

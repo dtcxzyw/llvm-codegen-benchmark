@@ -23,3 +23,10 @@ func000000000000000a:                   # @func000000000000000a
 	testl	$536870912, %esi                # imm = 0x20000000
 	sete	%al
 	retq
+func0000000000000006:                   # @func0000000000000006
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	shll	$3, %esi
+	cmpl	$2, %esi
+	setl	%al
+	retq

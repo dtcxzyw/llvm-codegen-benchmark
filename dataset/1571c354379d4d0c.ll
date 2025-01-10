@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2794585 = type { %struct.anon.2794586, %union.anon.5.2794587 }
-%struct.anon.2794586 = type { %union.anon.2794588, %union.anon.4.2794589 }
-%union.anon.2794588 = type { i32 }
-%union.anon.4.2794589 = type { i32 }
-%union.anon.5.2794587 = type { %union._ir_val.2794590 }
-%union._ir_val.2794590 = type { double }
+%struct._ir_insn.2794551 = type { %struct.anon.2794552, %union.anon.5.2794553 }
+%struct.anon.2794552 = type { %union.anon.2794554, %union.anon.4.2794555 }
+%union.anon.2794554 = type { i32 }
+%union.anon.4.2794555 = type { i32 }
+%union.anon.5.2794553 = type { %union._ir_val.2794556 }
+%union._ir_val.2794556 = type { double }
 
 ; 2 occurrences:
 ; linux/optimized/nl80211.ll
@@ -29,7 +29,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = lshr i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._ir_insn.2794585, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct._ir_insn.2794551, ptr %0, i64 %5
   ret ptr %6
 }
 

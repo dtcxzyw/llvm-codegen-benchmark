@@ -33,13 +33,6 @@ func0000000000000027:                   // @func0000000000000027
 	sub	w0, w8, w9
 	ret
                                         // -- End function
-func0000000000000025:                   // @func0000000000000025
-// %bb.0:                               // %entry
-	mov	w8, #26                         // =0x1a
-	clz	w9, w0
-	sub	w0, w8, w9
-	ret
-                                        // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
 	mov	w8, #31                         // =0x1f

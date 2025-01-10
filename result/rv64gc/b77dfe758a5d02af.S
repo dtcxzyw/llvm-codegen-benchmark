@@ -35,21 +35,12 @@ func000000000000002a:                   # @func000000000000002a
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func000000000000006a:                   # @func000000000000006a
-	sext.w	a2, a2
-	sext.w	a1, a1
-	sext.w	a0, a0
-	bltu	a1, a2, .LBB4_2
-	mv	a1, a2
-.LBB4_2:                                # %entry
-	slt	a0, a0, a1
-	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a2, a2
 	sext.w	a1, a1
-	bltu	a1, a2, .LBB5_2
+	bltu	a1, a2, .LBB4_2
 	mv	a1, a2
-.LBB5_2:                                # %entry
+.LBB4_2:                                # %entry
 	subw	a1, a1, a0
 	sltiu	a0, a1, 64
 	ret

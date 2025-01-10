@@ -1,4 +1,18 @@
 
+; 1 occurrences:
+; php/optimized/softmagic.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i64
+  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
 ; 52 occurrences:
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -61,8 +75,20 @@ entry:
   ret i1 %4
 }
 
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umin.i64(i64, i64) #1
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
 
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

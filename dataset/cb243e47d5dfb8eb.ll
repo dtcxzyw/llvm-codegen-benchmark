@@ -1,5 +1,5 @@
 
-; 2030 occurrences:
+; 2032 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -402,6 +402,7 @@
 ; hdf5/optimized/H5Z.c.ll
 ; hdf5/optimized/h5diff_attr.c.ll
 ; hdf5/optimized/h5dump_xml.c.ll
+; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/PerfEventsLinux.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
@@ -649,7 +650,6 @@
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -1166,6 +1166,7 @@
 ; openssl/optimized/bntest-bin-bntest.ll
 ; openssl/optimized/endecode_test-bin-endecode_test.ll
 ; openssl/optimized/libcrypto-lib-asn_mstbl.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-ccm128.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
 ; openssl/optimized/libcrypto-lib-ctr128.ll
@@ -1176,6 +1177,7 @@
 ; openssl/optimized/libcrypto-lib-tasn_dec.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
 ; openssl/optimized/libcrypto-shlib-asn_mstbl.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
 ; openssl/optimized/libcrypto-shlib-cfb128.ll
 ; openssl/optimized/libcrypto-shlib-ctr128.ll
@@ -2038,7 +2040,7 @@ entry:
   ret i1 %3
 }
 
-; 381 occurrences:
+; 380 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaEra.c.ll
@@ -2315,7 +2317,6 @@ entry:
 ; php/optimized/string.ll
 ; php/optimized/url.ll
 ; php/optimized/xml.ll
-; php/optimized/zend_accelerator_blacklist.ll
 ; php/optimized/zend_execute.ll
 ; postgres/optimized/auth.ll
 ; postgres/optimized/basebackup.ll
@@ -2428,7 +2429,7 @@ entry:
   ret i1 %3
 }
 
-; 2240 occurrences:
+; 2238 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -2683,7 +2684,6 @@ entry:
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/inflate.c.ll
 ; cmake/optimized/transfer.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/15uwc3zyhqyhtivg.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
@@ -4662,7 +4662,6 @@ entry:
 ; zed-rs/optimized/f2qsfrlgh226gsylx7h444e9w.ll
 ; zed-rs/optimized/f469d60j02m82fffhoomy2lb4.ll
 ; zlib/optimized/inflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -5902,7 +5901,7 @@ entry:
   ret i1 %3
 }
 
-; 128 occurrences:
+; 129 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -6006,6 +6005,7 @@ entry:
 ; php/optimized/phpdbg.ll
 ; php/optimized/scanf.ll
 ; php/optimized/tm2unixtime.ll
+; php/optimized/zend_accelerator_blacklist.ll
 ; postgres/optimized/nodeWindowAgg.ll
 ; proxygen/optimized/SessionPool.cpp.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll

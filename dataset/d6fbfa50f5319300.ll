@@ -2895,7 +2895,7 @@ entry:
   ret i64 %1
 }
 
-; 4251 occurrences:
+; 4246 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/darPrec.c.ll
@@ -3587,9 +3587,6 @@ entry:
 ; jemalloc/optimized/ctl.ll
 ; jemalloc/optimized/ctl.pic.ll
 ; jemalloc/optimized/ctl.sym.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
@@ -5926,8 +5923,6 @@ entry:
 ; redis/optimized/geo.ll
 ; redis/optimized/hiredis.ll
 ; redis/optimized/hyperloglog.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/latency.ll
 ; redis/optimized/listpack.ll
 ; redis/optimized/lolwut.ll

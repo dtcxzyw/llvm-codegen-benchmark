@@ -34,7 +34,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/DXILEmitter.cpp.ll
 ; Function Attrs: nounwind

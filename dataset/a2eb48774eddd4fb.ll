@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/utrie_swap.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:

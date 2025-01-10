@@ -1,12 +1,14 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; linux/optimized/gup.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/backends_tpm_tpm_util.c.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/dict.ll
 ; soc-simulator/optimized/verilated.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind

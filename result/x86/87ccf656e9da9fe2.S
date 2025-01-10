@@ -24,10 +24,10 @@ func000000000000000a:                   # @func000000000000000a
 	cmovnel	%esi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
 	testl	%edx, %edx
-	movl	$12, %ecx
-	movl	$18, %eax
-	cmovel	%ecx, %eax
+	sete	%al
+	leal	15(%rax,%rax,2), %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq

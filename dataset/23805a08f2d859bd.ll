@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 168 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -74,6 +74,7 @@
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -176,7 +177,7 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -193,7 +194,6 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/TargetPassConfig.cpp.ll
 ; llvm/optimized/X86MCAsmInfo.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll

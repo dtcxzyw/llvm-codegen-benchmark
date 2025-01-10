@@ -1,7 +1,7 @@
 
-%"class.gmx::AnalysisDataValue.3375220" = type { float, float, %"class.gmx::FlagsTemplate.3375221" }
-%"class.gmx::FlagsTemplate.3375221" = type { i64 }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"class.gmx::AnalysisDataValue.3375186" = type { float, float, %"class.gmx::FlagsTemplate.3375187" }
+%"class.gmx::FlagsTemplate.3375187" = type { i64 }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 5 occurrences:
 ; cpython/optimized/xmlparse.ll
@@ -300,23 +300,10 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.gmx::AnalysisDataValue.3375220", ptr %0, i64 %3
+  %4 = getelementptr %"class.gmx::AnalysisDataValue.3375186", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %"class.gmx::AnalysisDataValue.3375220", ptr %4, i64 %5, i32 2
+  %6 = getelementptr %"class.gmx::AnalysisDataValue.3375186", ptr %4, i64 %5, i32 2
   ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
 }
 
 ; 1 occurrences:
@@ -351,9 +338,9 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

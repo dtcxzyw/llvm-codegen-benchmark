@@ -14,6 +14,13 @@ func0000000000000013:                   # @func0000000000000013
 	srli	a1, a1, 30
 	add	a0, a0, a1
 	ret
+func000000000000007c:                   # @func000000000000007c
+	li	a2, 544
+	mulw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2047
+	addi	a0, a0, 129
+	ret
 func000000000000002c:                   # @func000000000000002c
 	li	a2, 544
 	mulw	a1, a1, a2
@@ -59,13 +66,6 @@ func0000000000000068:                   # @func0000000000000068
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
-	ret
-func000000000000007c:                   # @func000000000000007c
-	slli	a2, a1, 3
-	slli	a1, a1, 5
-	subw	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 16
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a1, 1

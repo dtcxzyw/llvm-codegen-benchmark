@@ -1,7 +1,7 @@
 
-%struct.stbcc__clump.3100977 = type { %union.stbcc__global_clumpid.3100978, i8, i8, i8, i8 }
-%union.stbcc__global_clumpid.3100978 = type { %struct.anon.3100979 }
-%struct.anon.3100979 = type { i32 }
+%struct.stbcc__clump.3100943 = type { %union.stbcc__global_clumpid.3100944, i8, i8, i8, i8 }
+%union.stbcc__global_clumpid.3100944 = type { %struct.anon.3100945 }
+%struct.anon.3100945 = type { i32 }
 
 ; 26 occurrences:
 ; abc/optimized/decompress.c.ll
@@ -48,7 +48,7 @@ entry:
   %2 = and i16 %1, 4095
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100977], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [512 x %struct.stbcc__clump.3100943], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

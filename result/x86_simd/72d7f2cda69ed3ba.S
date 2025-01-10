@@ -83,34 +83,26 @@ func000000000000001b:                   # @func000000000000001b
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI7_0:
-	.long	32                              # 0x20
-func000000000000000c:                   # @func000000000000000c
-	vpaddw	%xmm2, %xmm2, %xmm2
-	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
-	vpandd	.LCPI7_0(%rip){1to8}, %ymm2, %ymm2
-	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
-	retq
-.LCPI8_0:
 	.long	134217728                       # 0x8000000
 func0000000000000002:                   # @func0000000000000002
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
 	vpslld	$18, %ymm2, %ymm2
-	vpandd	.LCPI8_0(%rip){1to8}, %ymm2, %ymm2
+	vpandd	.LCPI7_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
-.LCPI9_0:
+.LCPI8_0:
 	.long	536805376                       # 0x1fff0000
 func000000000000000b:                   # @func000000000000000b
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
 	vpslld	$16, %ymm2, %ymm2
-	vpandd	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
+	vpandd	.LCPI8_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
 	retq
-.LCPI10_0:
+.LCPI9_0:
 	.long	4096                            # 0x1000
 func000000000000001c:                   # @func000000000000001c
 	vpsllw	$12, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero,xmm2[4],zero,xmm2[5],zero,xmm2[6],zero,xmm2[7],zero
-	vpandd	.LCPI10_0(%rip){1to8}, %ymm2, %ymm2
+	vpandd	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

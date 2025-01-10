@@ -60,15 +60,13 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddq	%ymm0, %ymm2, %ymm0
 	retq
 .LCPI6_0:
-	.quad	96                              # 0x60
-.LCPI6_1:
-	.quad	128                             # 0x80
+	.quad	-2                              # 0xfffffffffffffffe
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
-	vpbroadcastq	.LCPI6_0(%rip), %ymm2   # ymm2 = [96,96,96,96]
-	vpbroadcastq	.LCPI6_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [128,128,128,128]
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpbroadcastq	.LCPI6_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
+	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI7_0:

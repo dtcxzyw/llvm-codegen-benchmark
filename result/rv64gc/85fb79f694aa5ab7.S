@@ -17,6 +17,17 @@ func0000000000000278:                   # @func0000000000000278
 	srli	a0, a0, 32
 	sltu	a0, a0, a1
 	ret
+func000000000000006c:                   # @func000000000000006c
+	slli	a2, a2, 32
+	slli	a1, a1, 32
+	slli	a0, a0, 32
+	srli	a2, a2, 32
+	srli	a1, a1, 32
+	add	a1, a1, a2
+	srli	a0, a0, 32
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
 func0000000000000274:                   # @func0000000000000274
 	sext.w	a2, a2
 	slli	a1, a1, 32

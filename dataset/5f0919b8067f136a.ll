@@ -86,11 +86,10 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; git/optimized/merge-tree.ll
 ; icu/optimized/collationdata.ll
 ; lief/optimized/psa_crypto.c.ll
@@ -119,7 +118,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 65536, %1
+  %2 = shl nuw nsw i32 1, %1
   %3 = select i1 %0, i32 %2, i32 0
   ret i32 %3
 }

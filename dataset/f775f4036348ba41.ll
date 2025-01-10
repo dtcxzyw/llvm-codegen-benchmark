@@ -1,6 +1,6 @@
 
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
 
 ; 348 occurrences:
 ; abc/optimized/aigPack.c.ll
@@ -2375,7 +2375,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %3
   ret ptr %4
 }
 

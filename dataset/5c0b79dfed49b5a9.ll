@@ -75,7 +75,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; boost/optimized/src.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -83,7 +83,6 @@ entry:
 ; hdf5/optimized/H5Ocache.c.ll
 ; hdf5/optimized/H5Otest.c.ll
 ; linux/optimized/filemap.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll

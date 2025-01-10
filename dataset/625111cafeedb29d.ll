@@ -69,8 +69,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaEmbed.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind

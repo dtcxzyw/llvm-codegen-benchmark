@@ -1,14 +1,14 @@
 
-%struct.NSVGgradientStop.2600676 = type { i32, float }
-%struct.pm_lex_mode.2600869 = type { i32, %union.anon.2600870, ptr }
-%union.anon.2600870 = type { %struct.anon.3.2600871 }
-%struct.anon.3.2600871 = type { ptr, i64, i32, i32, ptr, i64 }
-%"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615560" = type { i32, i32, i32, i32 }
-%struct.vlan_header.2705955 = type { i16, i16 }
-%struct.CurveAnchorPoint.2872013 = type { float, float }
-%struct.bio_vec.3540840 = type { ptr, i32, i32 }
-%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
-%union.RelptrFreePageBtree.3653937 = type { ptr }
+%struct.NSVGgradientStop.2600643 = type { i32, float }
+%struct.pm_lex_mode.2600836 = type { i32, %union.anon.2600837, ptr }
+%union.anon.2600837 = type { %struct.anon.3.2600838 }
+%struct.anon.3.2600838 = type { ptr, i64, i32, i32, ptr, i64 }
+%"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615527" = type { i32, i32, i32, i32 }
+%struct.vlan_header.2705921 = type { i16, i16 }
+%struct.CurveAnchorPoint.2871979 = type { float, float }
+%struct.bio_vec.3540806 = type { ptr, i32, i32 }
+%struct.FreePageBtreeInternalKey.3653902 = type { i64, %union.RelptrFreePageBtree.3653903 }
+%union.RelptrFreePageBtree.3653903 = type { ptr }
 
 ; 208 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
@@ -224,7 +224,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 40
-  %4 = getelementptr nusw nuw [1 x %struct.NSVGgradientStop.2600676], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [1 x %struct.NSVGgradientStop.2600643], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -252,7 +252,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %4 = getelementptr [4 x %struct.pm_lex_mode.2600869], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [4 x %struct.pm_lex_mode.2600836], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -746,7 +746,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615560"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [32 x %"struct.rocksdb::FilePickerMultiGet::FilePickerContext.2615527"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1407,7 +1407,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 14
-  %4 = getelementptr [2 x %struct.vlan_header.2705955], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [2 x %struct.vlan_header.2705921], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1460,7 +1460,7 @@ define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 24
-  %4 = getelementptr nusw [20 x %struct.CurveAnchorPoint.2872013], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [20 x %struct.CurveAnchorPoint.2871979], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1533,7 +1533,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = getelementptr i8, ptr %0, i64 -272
-  %4 = getelementptr [17 x %struct.bio_vec.3540840], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [17 x %struct.bio_vec.3540806], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1559,7 +1559,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %4 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1570,7 +1570,7 @@ define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 23
-  %4 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

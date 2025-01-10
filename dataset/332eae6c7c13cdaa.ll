@@ -35,19 +35,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; abc/optimized/giaFanout.c.ll
-; abc/optimized/giaMf.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add i32 %0, %2
-  %4 = add i32 %3, -1
-  %5 = icmp ult i32 %4, 15
-  ret i1 %5
-}
-
 ; 5 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -60,6 +47,18 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, %0
   %4 = add nsw i32 %3, 999
+  %5 = icmp ult i32 %4, 15
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abc/optimized/giaFanout.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = add i32 %0, %2
+  %4 = add i32 %3, -1
   %5 = icmp ult i32 %4, 15
   ret i1 %5
 }

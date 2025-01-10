@@ -19,7 +19,7 @@ entry:
   ret i1 %6
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
@@ -28,7 +28,6 @@ entry:
 ; double_conversion/optimized/strtod.cc.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; git/optimized/line-log.ll
-; git/optimized/parallel-checkout.ll
 ; glslang/optimized/parseConst.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/gmx_confrms.cpp.ll

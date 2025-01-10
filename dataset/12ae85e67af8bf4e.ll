@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
@@ -16,6 +16,7 @@
 ; rust-analyzer-rs/optimized/1lra012089cno2qn.ll
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
+; slurm/optimized/gres_filter.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll

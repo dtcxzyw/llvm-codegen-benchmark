@@ -415,7 +415,8 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

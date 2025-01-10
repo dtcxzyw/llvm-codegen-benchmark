@@ -21,7 +21,7 @@ entry:
   ret i1 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -44,6 +44,7 @@ entry:
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -138,7 +139,7 @@ entry:
   ret i1 %5
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
@@ -149,7 +150,6 @@ entry:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
 ; git/optimized/line-log.ll
-; git/optimized/parallel-checkout.ll
 ; glslang/optimized/parseConst.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/gmx_confrms.cpp.ll

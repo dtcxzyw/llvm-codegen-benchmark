@@ -1300,7 +1300,7 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -1313,6 +1313,7 @@ entry:
 ; openjdk/optimized/check_classname.ll
 ; openjdk/optimized/nmethod.ll
 ; pbrt-v4/optimized/gui.cpp.ll
+; postgres/optimized/inet_net_pton.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; ruby/optimized/io.ll
 ; sqlite/optimized/sqlite3.ll

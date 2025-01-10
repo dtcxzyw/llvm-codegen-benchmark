@@ -1,5 +1,5 @@
 
-%"class.mitsuba::ref.9.2605639" = type { ptr }
+%"class.mitsuba::ref.9.2605606" = type { ptr }
 
 ; 3 occurrences:
 ; cvc5/optimized/sequences_rewriter.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %"class.mitsuba::ref.9.2605639"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %"class.mitsuba::ref.9.2605606"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

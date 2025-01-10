@@ -1,40 +1,40 @@
 
-%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
-%"struct.std::array.2683308" = type { [14 x i8] }
-%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"struct.folly::f14::detail::F14Chunk.2684259" = type { %"struct.std::array.59.2684260", i8, i8, %"struct.std::array.60.2684261" }
-%"struct.std::array.59.2684260" = type { [14 x i8] }
-%"struct.std::array.60.2684261" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684258"] }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
-%struct.AHCIDevice.2709088 = type { %struct.IDEDMA.2709089, %struct.IDEBus.2709090, i32, i32, i32, %struct.AHCIPortRegs.2709091, ptr, ptr, ptr, ptr, i8, i32, i8, ptr, [32 x %struct.NCQTransferState.2709092], %struct.MemReentrancyGuard.2709093 }
-%struct.IDEDMA.2709089 = type { ptr, %struct.QEMUIOVector.2709094, ptr }
-%struct.QEMUIOVector.2709094 = type { ptr, i32, %union.anon.3.2709095 }
-%union.anon.3.2709095 = type { %struct.anon.4.2709096 }
-%struct.anon.4.2709096 = type { i32, %struct.iovec.2709097 }
-%struct.iovec.2709097 = type { ptr, i64 }
-%struct.IDEBus.2709090 = type { %struct.BusState.2709098, ptr, ptr, [2 x %struct.IDEState.2709099], ptr, i32, i32, ptr, i8, i8, ptr, i32, i8, i64, i32, %struct.PortioList.2709100, %struct.PortioList.2709100, ptr }
-%struct.BusState.2709098 = type { %struct.Object.2709101, ptr, ptr, ptr, i32, i8, i8, i32, %union.BusChildHead.2709102, %struct.BusStateEntry.2709103, %struct.ResettableState.2709104 }
-%struct.Object.2709101 = type { ptr, ptr, ptr, i32, ptr }
-%union.BusChildHead.2709102 = type { %struct.QTailQLink.2709086 }
-%struct.QTailQLink.2709086 = type { ptr, ptr }
-%struct.BusStateEntry.2709103 = type { ptr, ptr }
-%struct.ResettableState.2709104 = type { i32, i8, i8 }
-%struct.IDEState.2709099 = type { ptr, i8, i32, i32, i32, i32, i32, i32, i32, i64, i32, i32, [512 x i8], i32, [21 x i8], [41 x i8], i64, i8, i8, i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, [9 x i8], %struct.unreported_events.2709105, i8, i8, i8, i8, i8, i32, i32, i32, i32, i32, i32, %struct.BlockAcctCookie.2709106, ptr, %struct.QEMUIOVector.2709094, %struct.anon.6.2709107, i64, i32, %struct.QEMUSGList.2709108, i32, ptr, ptr, ptr, ptr, i32, i32, i32, i8, ptr, i32, i8, i32, ptr, i32, i32, i8, i8, i32, i8, ptr, i32 }
-%struct.unreported_events.2709105 = type { i8, i8 }
-%struct.BlockAcctCookie.2709106 = type { i64, i64, i32 }
-%struct.anon.6.2709107 = type { ptr }
-%struct.QEMUSGList.2709108 = type { ptr, i32, i32, i64, ptr, ptr }
-%struct.PortioList.2709100 = type { ptr, ptr, ptr, i32, ptr, ptr, ptr, i8 }
-%struct.AHCIPortRegs.2709091 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
-%struct.NCQTransferState.2709092 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709108, %struct.BlockAcctCookie.2709106, i32, i64, i8, i8, i8, i8, i8 }
-%struct.MemReentrancyGuard.2709093 = type { i8 }
-%"class.duckdb::Node.2951520" = type { %"class.duckdb::IndexPointer.2951521" }
-%"class.duckdb::IndexPointer.2951521" = type { i64 }
-%union.Floor.3100915 = type { %struct.Floor1.3100916 }
-%struct.Floor1.3100916 = type { i8, [32 x i8], [16 x i8], [16 x i8], [16 x i8], [16 x [8 x i16]], [250 x i16], [250 x i8], [250 x [2 x i8]], i8, i8, i32 }
-%struct.bio_vec.3531526 = type { ptr, i32, i32 }
-%struct.bio_vec.3540840 = type { ptr, i32, i32 }
+%"struct.folly::f14::detail::F14Chunk.2683274" = type { %"struct.std::array.2683275", i8, i8, %"struct.std::array.53.2683276" }
+%"struct.std::array.2683275" = type { [14 x i8] }
+%"struct.std::array.53.2683276" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683234"] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2684226" = type { %"struct.std::array.59.2684227", i8, i8, %"struct.std::array.60.2684228" }
+%"struct.std::array.59.2684227" = type { [14 x i8] }
+%"struct.std::array.60.2684228" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684225"] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
+%struct.AHCIDevice.2709054 = type { %struct.IDEDMA.2709055, %struct.IDEBus.2709056, i32, i32, i32, %struct.AHCIPortRegs.2709057, ptr, ptr, ptr, ptr, i8, i32, i8, ptr, [32 x %struct.NCQTransferState.2709058], %struct.MemReentrancyGuard.2709059 }
+%struct.IDEDMA.2709055 = type { ptr, %struct.QEMUIOVector.2709060, ptr }
+%struct.QEMUIOVector.2709060 = type { ptr, i32, %union.anon.3.2709061 }
+%union.anon.3.2709061 = type { %struct.anon.4.2709062 }
+%struct.anon.4.2709062 = type { i32, %struct.iovec.2709063 }
+%struct.iovec.2709063 = type { ptr, i64 }
+%struct.IDEBus.2709056 = type { %struct.BusState.2709064, ptr, ptr, [2 x %struct.IDEState.2709065], ptr, i32, i32, ptr, i8, i8, ptr, i32, i8, i64, i32, %struct.PortioList.2709066, %struct.PortioList.2709066, ptr }
+%struct.BusState.2709064 = type { %struct.Object.2709067, ptr, ptr, ptr, i32, i8, i8, i32, %union.BusChildHead.2709068, %struct.BusStateEntry.2709069, %struct.ResettableState.2709070 }
+%struct.Object.2709067 = type { ptr, ptr, ptr, i32, ptr }
+%union.BusChildHead.2709068 = type { %struct.QTailQLink.2709052 }
+%struct.QTailQLink.2709052 = type { ptr, ptr }
+%struct.BusStateEntry.2709069 = type { ptr, ptr }
+%struct.ResettableState.2709070 = type { i32, i8, i8 }
+%struct.IDEState.2709065 = type { ptr, i8, i32, i32, i32, i32, i32, i32, i32, i64, i32, i32, [512 x i8], i32, [21 x i8], [41 x i8], i64, i8, i8, i32, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, [9 x i8], %struct.unreported_events.2709071, i8, i8, i8, i8, i8, i32, i32, i32, i32, i32, i32, %struct.BlockAcctCookie.2709072, ptr, %struct.QEMUIOVector.2709060, %struct.anon.6.2709073, i64, i32, %struct.QEMUSGList.2709074, i32, ptr, ptr, ptr, ptr, i32, i32, i32, i8, ptr, i32, i8, i32, ptr, i32, i32, i8, i8, i32, i8, ptr, i32 }
+%struct.unreported_events.2709071 = type { i8, i8 }
+%struct.BlockAcctCookie.2709072 = type { i64, i64, i32 }
+%struct.anon.6.2709073 = type { ptr }
+%struct.QEMUSGList.2709074 = type { ptr, i32, i32, i64, ptr, ptr }
+%struct.PortioList.2709066 = type { ptr, ptr, ptr, i32, ptr, ptr, ptr, i8 }
+%struct.AHCIPortRegs.2709057 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.NCQTransferState.2709058 = type { ptr, ptr, ptr, %struct.QEMUSGList.2709074, %struct.BlockAcctCookie.2709072, i32, i64, i8, i8, i8, i8, i8 }
+%struct.MemReentrancyGuard.2709059 = type { i8 }
+%"class.duckdb::Node.2951486" = type { %"class.duckdb::IndexPointer.2951487" }
+%"class.duckdb::IndexPointer.2951487" = type { i64 }
+%union.Floor.3100881 = type { %struct.Floor1.3100882 }
+%struct.Floor1.3100882 = type { i8, [32 x i8], [16 x i8], [16 x i8], [16 x i8], [16 x [8 x i16]], [250 x i16], [250 x i8], [250 x [2 x i8]], i8, i8, i32 }
+%struct.bio_vec.3531492 = type { ptr, i32, i32 }
+%struct.bio_vec.3540806 = type { ptr, i32, i32 }
 
 ; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
@@ -51,9 +51,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000005f(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2683307", ptr %1, i64 %2, i32 3
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2683274", ptr %1, i64 %2, i32 3
   %4 = zext nneg i8 %0 to i64
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -70,9 +70,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007f(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2684259", ptr %1, i64 %2, i32 3
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2684226", ptr %1, i64 %2, i32 3
   %4 = zext nneg i8 %0 to i64
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -83,7 +83,7 @@ entry:
 define ptr @func000000000000001c(i8 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i8 %0 to i64
-  %4 = getelementptr %struct.AHCIDevice.2709088, ptr %1, i64 %2, i32 14, i64 %3
+  %4 = getelementptr %struct.AHCIDevice.2709054, ptr %1, i64 %2, i32 14, i64 %3
   ret ptr %4
 }
 
@@ -95,7 +95,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 264
   %5 = zext i8 %0 to i64
-  %6 = getelementptr nusw nuw [48 x %"class.duckdb::Node.2951520"], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [48 x %"class.duckdb::Node.2951486"], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -116,7 +116,7 @@ entry:
 define ptr @func000000000000006f(i8 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext i8 %0 to i64
-  %4 = getelementptr nuw %union.Floor.3100915, ptr %1, i64 %2, i32 0, i32 6, i64 %3
+  %4 = getelementptr nuw %union.Floor.3100881, ptr %1, i64 %2, i32 0, i32 6, i64 %3
   ret ptr %4
 }
 
@@ -132,7 +132,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = zext i8 %0 to i64
-  %6 = getelementptr [17 x %struct.bio_vec.3531526], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [17 x %struct.bio_vec.3531492], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -144,7 +144,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -272
   %5 = zext i8 %0 to i64
-  %6 = getelementptr [17 x %struct.bio_vec.3540840], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [17 x %struct.bio_vec.3540806], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 

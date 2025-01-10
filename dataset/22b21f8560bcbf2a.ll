@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3257801" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3257767" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/re.ll
@@ -179,9 +179,9 @@ entry:
 define ptr @func0000000000000012(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -32
-  %4 = getelementptr %"class.llvm::Use.3191562", ptr %3, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3191528", ptr %3, i64 %0
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %"class.llvm::Use.3191562", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3191528", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -191,9 +191,9 @@ entry:
 define ptr @func0000000000000092(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -56
-  %4 = getelementptr %"class.llvm::Use.3257801", ptr %3, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3257767", ptr %3, i64 %0
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %"class.llvm::Use.3257801", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3257767", ptr %4, i64 %5
   ret ptr %6
 }
 

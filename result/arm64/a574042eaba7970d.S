@@ -1,7 +1,7 @@
 func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
 	cmn	w2, #1
-	csinv	w8, w1, wzr, ne
+	csinc	w8, w1, wzr, ne
 	cmp	w0, w8
 	cset	w0, gt
 	ret

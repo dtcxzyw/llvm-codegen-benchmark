@@ -1,7 +1,7 @@
 
-%struct.stbi__huffman.3100960 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
-%struct.rcLayerRegion.3108530 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
-%struct.HistogramLiteral.3843297 = type { [256 x i32], i64, double }
+%struct.stbi__huffman.3100926 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
+%struct.rcLayerRegion.3108496 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
+%struct.HistogramLiteral.3843247 = type { [256 x i32], i64, double }
 
 ; 6 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -14,7 +14,7 @@
 define ptr @func000000000000001f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw %struct.stbi__huffman.3100960, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.stbi__huffman.3100926, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [512 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -27,7 +27,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw nuw %struct.rcLayerRegion.3108530, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.rcLayerRegion.3108496, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [63 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -49,7 +49,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.HistogramLiteral.3843297, ptr %1, i64 %3
+  %4 = getelementptr %struct.HistogramLiteral.3843247, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [256 x i32], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

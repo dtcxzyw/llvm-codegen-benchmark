@@ -51,4 +51,15 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; linux/optimized/rtmutex_api.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0) #0 {
+entry:
+  %1 = freeze i64 %0
+  %2 = icmp sgt i64 %1, -1
+  %3 = select i1 %2, i64 8, i64 16
+  ret i64 %3
+}
+
 attributes #0 = { nounwind }

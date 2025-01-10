@@ -1,9 +1,9 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.529.2721629" = type { %union.anon.530.2721630 }
-%union.anon.530.2721630 = type <{ ptr, [8 x i8] }>
-%struct.relRanksType.3487799 = type { [15 x [4 x %struct.absRankType.3487798]] }
-%struct.absRankType.3487798 = type { i8, i8 }
-%struct.SpGistLastUsedPage.3654355 = type { i32, i32 }
+%"class.openvdb::v11_0::tree::NodeUnion.529.2721595" = type { %union.anon.530.2721596 }
+%union.anon.530.2721596 = type <{ ptr, [8 x i8] }>
+%struct.relRanksType.3487765 = type { [15 x [4 x %struct.absRankType.3487764]] }
+%struct.absRankType.3487764 = type { i8, i8 }
+%struct.SpGistLastUsedPage.3654321 = type { i32, i32 }
 
 ; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -19,7 +19,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.529.2721629"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [32768 x %"class.openvdb::v11_0::tree::NodeUnion.529.2721595"], ptr %0, i64 0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
@@ -43,7 +43,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw [8192 x %struct.relRanksType.3487799], ptr %0, i64 0, i64 %4, i32 0, i64 1
+  %5 = getelementptr nuw [8192 x %struct.relRanksType.3487765], ptr %0, i64 0, i64 %4, i32 0, i64 1
   ret ptr %5
 }
 
@@ -54,7 +54,7 @@ define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.3654355], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [8 x %struct.SpGistLastUsedPage.3654321], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

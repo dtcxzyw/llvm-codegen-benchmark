@@ -103,8 +103,3 @@ func000000000000004b:                   # @func000000000000004b
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
-	cmpl	%edx, %esi
-	setl	%al
-	orb	%dil, %al
-	retq

@@ -37,8 +37,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 28 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll

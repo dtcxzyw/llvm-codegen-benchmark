@@ -1,18 +1,18 @@
 
-%"struct.llvh::detail::DenseMapPair.296.3075967" = type { %"struct.std::pair.297.3075968" }
-%"struct.std::pair.297.3075968" = type { i32, %"class.std::vector.164.3075969" }
-%"class.std::vector.164.3075969" = type { %"struct.std::_Vector_base.165.3075970" }
-%"struct.std::_Vector_base.165.3075970" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" = type { ptr, ptr, ptr }
-%"class.llvh::detail::DenseSetPair.3082320" = type { i32 }
-%"class.llvm::detail::DenseSetPair.3143525" = type { i16 }
-%"struct.llvm::detail::DenseMapPair.706.3161405" = type { %"struct.std::pair.707.3161406" }
-%"struct.std::pair.707.3161406" = type { i32, ptr }
-%"class.llvm::detail::DenseSetPair.3193639" = type { i16 }
-%"struct.llvm::detail::DenseMapPair.3251978" = type { %"struct.std::pair.3251979" }
-%"struct.std::pair.3251979" = type { %"class.llvm::MCRegister.3251977", i32 }
-%"class.llvm::MCRegister.3251977" = type { i32 }
+%"struct.llvh::detail::DenseMapPair.296.3075933" = type { %"struct.std::pair.297.3075934" }
+%"struct.std::pair.297.3075934" = type { i32, %"class.std::vector.164.3075935" }
+%"class.std::vector.164.3075935" = type { %"struct.std::_Vector_base.165.3075936" }
+%"struct.std::_Vector_base.165.3075936" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075937" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075937" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075938" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075938" = type { ptr, ptr, ptr }
+%"class.llvh::detail::DenseSetPair.3082286" = type { i32 }
+%"class.llvm::detail::DenseSetPair.3143491" = type { i16 }
+%"struct.llvm::detail::DenseMapPair.706.3161371" = type { %"struct.std::pair.707.3161372" }
+%"struct.std::pair.707.3161372" = type { i32, ptr }
+%"class.llvm::detail::DenseSetPair.3193605" = type { i16 }
+%"struct.llvm::detail::DenseMapPair.3251944" = type { %"struct.std::pair.3251945" }
+%"struct.std::pair.3251945" = type { %"class.llvm::MCRegister.3251943", i32 }
+%"class.llvm::MCRegister.3251943" = type { i32 }
 
 ; 303 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -325,7 +325,7 @@ entry:
   %4 = mul i32 %1, 37
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.296.3075967", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.296.3075933", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -345,7 +345,7 @@ entry:
   %4 = mul nuw nsw i32 %1, 37
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvh::detail::DenseSetPair.3082320", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvh::detail::DenseSetPair.3082286", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -375,7 +375,7 @@ entry:
   %4 = add i32 %1, 2147483647
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.3143525", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.3143491", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -391,7 +391,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.706.3161405", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.706.3161371", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -405,7 +405,7 @@ entry:
   %4 = mul nsw i32 %1, 37
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.3193639", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.3193605", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -418,7 +418,7 @@ entry:
   %4 = add i32 %1, -1
   %5 = and i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3251978", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3251944", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -1,6 +1,6 @@
 
-%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791401 = type { i32 }
+%struct._zend_op.2791358 = type { ptr, %union._znode_op.2791367, %union._znode_op.2791367, %union._znode_op.2791367, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791367 = type { i32 }
 
 ; 22 occurrences:
 ; abc/optimized/giaMf.c.ll
@@ -126,7 +126,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

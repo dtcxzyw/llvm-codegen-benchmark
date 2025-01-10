@@ -1,8 +1,3 @@
-func000000000000000f:                   # @func000000000000000f
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	leaq	32(%rdi,%rax,4), %rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	movslq	%edx, %rax
 	addq	%rsi, %rax

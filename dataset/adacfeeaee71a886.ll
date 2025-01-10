@@ -631,7 +631,7 @@ entry:
   ret i1 %4
 }
 
-; 147 occurrences:
+; 145 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/encode.c.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -760,14 +760,12 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/spell.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/migration_vmstate.c.ll
-; raylib/optimized/raudio.c.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
@@ -895,15 +893,13 @@ entry:
   ret i1 %4
 }
 
-; 86 occurrences:
+; 84 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/commit-graph.ll
 ; git/optimized/midx.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/convert_c.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; raylib/optimized/raudio.c.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll

@@ -927,7 +927,7 @@ entry:
   ret i1 %3
 }
 
-; 212 occurrences:
+; 213 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
@@ -1046,6 +1046,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/pg_aggregate.ll
 ; postgres/optimized/regcomp.ll
+; postgres/optimized/regexec.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/wparser_def.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -1377,7 +1378,7 @@ entry:
   ret i1 %3
 }
 
-; 365 occurrences:
+; 364 occurrences:
 ; abc/optimized/compress.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -1439,7 +1440,6 @@ entry:
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
-; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -3140,8 +3140,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; linux/optimized/inet_connection_sock.ll
+; 1 occurrences:
 ; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000035(i32 %0, i8 %1) #0 {

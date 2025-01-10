@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; cpython/optimized/textio.ll
 ; folly/optimized/RangeCommon.cpp.ll
@@ -34,7 +34,6 @@
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i8 %1) #0 {
 entry:

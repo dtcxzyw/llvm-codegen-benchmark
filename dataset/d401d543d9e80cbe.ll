@@ -1,4 +1,6 @@
 
+%struct.fwdb_wmm_ac.3550707 = type { i8, i8, i16 }
+
 ; 12 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -19,19 +21,6 @@ entry:
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -1
-  ret ptr %6
-}
-
-; 2 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
-; linux/optimized/reg.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
 }
 
@@ -72,6 +61,18 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/reg.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr %struct.fwdb_wmm_ac.3550707, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
 }
 

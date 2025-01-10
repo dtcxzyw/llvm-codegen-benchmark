@@ -1,18 +1,18 @@
 
-%struct.rb_code_location_struct.2600702 = type { %struct.rb_code_position_struct.2600703, %struct.rb_code_position_struct.2600703 }
-%struct.rb_code_position_struct.2600703 = type { i32, i32 }
-%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
-%struct.rb_code_position_struct.2601677 = type { i32, i32 }
-%"struct.std::pair.256.3322046" = type { %"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321998", %"class.std::__cxx11::basic_string.3321941" }
-%"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321998" = type { %"class.std::__cxx11::basic_string.3321941", i32, i32, i32, %"class.std::__cxx11::basic_string.3321941", %"class.std::__cxx11::basic_string.3321941", %"class.std::__cxx11::basic_string.3321941" }
-%"class.std::__cxx11::basic_string.3321941" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321942", i64, %union.anon.3321943 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321942" = type { ptr }
-%union.anon.3321943 = type { i64, [8 x i8] }
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
-%union.StackValue.3713429 = type { %struct.TValue.3713430 }
-%struct.TValue.3713430 = type { %union.Value.3713431, i8 }
-%union.Value.3713431 = type { ptr }
+%struct.rb_code_location_struct.2600669 = type { %struct.rb_code_position_struct.2600670, %struct.rb_code_position_struct.2600670 }
+%struct.rb_code_position_struct.2600670 = type { i32, i32 }
+%struct.rb_code_location_struct.2601643 = type { %struct.rb_code_position_struct.2601644, %struct.rb_code_position_struct.2601644 }
+%struct.rb_code_position_struct.2601644 = type { i32, i32 }
+%"struct.std::pair.256.3322012" = type { %"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321964", %"class.std::__cxx11::basic_string.3321907" }
+%"struct.clang::driver::toolchains::Generic_GCC::GCCVersion.3321964" = type { %"class.std::__cxx11::basic_string.3321907", i32, i32, i32, %"class.std::__cxx11::basic_string.3321907", %"class.std::__cxx11::basic_string.3321907", %"class.std::__cxx11::basic_string.3321907" }
+%"class.std::__cxx11::basic_string.3321907" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321908", i64, %union.anon.3321909 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3321908" = type { ptr }
+%union.anon.3321909 = type { i64, [8 x i8] }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
+%union.StackValue.3713379 = type { %struct.TValue.3713380 }
+%struct.TValue.3713380 = type { %union.Value.3713381, i8 }
+%union.Value.3713381 = type { ptr }
 
 ; 45 occurrences:
 ; cpython/optimized/listobject.ll
@@ -64,7 +64,7 @@
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr %struct.rb_code_location_struct.2600702, ptr %0, i64 %2
+  %3 = getelementptr %struct.rb_code_location_struct.2600669, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   ret ptr %4
 }
@@ -93,7 +93,7 @@ entry:
   ret ptr %4
 }
 
-; 425 occurrences:
+; 426 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bblif.c.ll
@@ -165,6 +165,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
@@ -523,12 +524,12 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw %struct.rb_code_location_struct.2601676, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.rb_code_location_struct.2601643, ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   ret ptr %4
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; cmake/optimized/archive_string.c.ll
@@ -555,6 +556,7 @@ entry:
 ; mitsuba3/optimized/moment.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
+; openjdk/optimized/attachListener_posix.ll
 ; openssl/optimized/libcrypto-lib-packet.ll
 ; openssl/optimized/libcrypto-shlib-packet.ll
 ; openssl/optimized/libssl-shlib-packet.ll
@@ -2311,17 +2313,6 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
-; openjdk/optimized/attachListener_posix.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 3101, %1
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  ret ptr %4
-}
-
 ; 136 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; boost/optimized/algorithm.ll
@@ -2528,17 +2519,16 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; boost/optimized/to_chars.ll
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 16, %1
+  %2 = sub nsw i64 0, %1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   ret ptr %4
 }
 
@@ -2575,7 +2565,7 @@ entry:
 define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 -2, %1
-  %3 = getelementptr nusw %"struct.std::pair.256.3322046", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.std::pair.256.3322012", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -176
   ret ptr %4
 }
@@ -2588,7 +2578,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 -3, %1
-  %3 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -2598,7 +2588,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
-  %3 = getelementptr nusw nuw %union.StackValue.3713429, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %union.StackValue.3713379, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }

@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3160178" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3160144" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-sha1dgst.ll
@@ -53,9 +53,9 @@ define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3160178", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3160144", ptr %0, i64 %4
   %6 = and i64 %1, 4294967295
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3160178", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3160144", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -68,7 +68,7 @@ define ptr @func0000000000000058(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3181429", ptr %0, i64 %4
   %6 = and i64 %1, -128
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7

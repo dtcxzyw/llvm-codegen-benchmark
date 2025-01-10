@@ -1,5 +1,5 @@
 
-; 1668 occurrences:
+; 1669 occurrences:
 ; abc/optimized/amapRead.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddPriority.c.ll
@@ -23,6 +23,7 @@
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/compressed_tuple_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
+; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll

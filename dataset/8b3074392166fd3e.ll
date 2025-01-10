@@ -1,12 +1,12 @@
 
-%struct.TransformedInitCapture.3208279 = type { %"class.clang::SourceLocation.3207699", %"class.llvm::SmallVector.2779.3208280" }
-%"class.clang::SourceLocation.3207699" = type { i32 }
-%"class.llvm::SmallVector.2779.3208280" = type { %"class.llvm::SmallVectorImpl.2780.3208281", %"struct.llvm::SmallVectorStorage.2783.3208282" }
-%"class.llvm::SmallVectorImpl.2780.3208281" = type { %"class.llvm::SmallVectorTemplateBase.2781.3208283" }
-%"class.llvm::SmallVectorTemplateBase.2781.3208283" = type { %"class.llvm::SmallVectorTemplateCommon.2782.3208284" }
-%"class.llvm::SmallVectorTemplateCommon.2782.3208284" = type { %"class.llvm::SmallVectorBase.3207696" }
-%"class.llvm::SmallVectorBase.3207696" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.2783.3208282" = type { [64 x i8] }
+%struct.TransformedInitCapture.3208245 = type { %"class.clang::SourceLocation.3207665", %"class.llvm::SmallVector.2779.3208246" }
+%"class.clang::SourceLocation.3207665" = type { i32 }
+%"class.llvm::SmallVector.2779.3208246" = type { %"class.llvm::SmallVectorImpl.2780.3208247", %"struct.llvm::SmallVectorStorage.2783.3208248" }
+%"class.llvm::SmallVectorImpl.2780.3208247" = type { %"class.llvm::SmallVectorTemplateBase.2781.3208249" }
+%"class.llvm::SmallVectorTemplateBase.2781.3208249" = type { %"class.llvm::SmallVectorTemplateCommon.2782.3208250" }
+%"class.llvm::SmallVectorTemplateCommon.2782.3208250" = type { %"class.llvm::SmallVectorBase.3207662" }
+%"class.llvm::SmallVectorBase.3207662" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.2783.3208248" = type { [64 x i8] }
 
 ; 6 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -90,7 +90,7 @@ entry:
 define i1 @func0000000000000341(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = getelementptr nusw %struct.TransformedInitCapture.3208279, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.TransformedInitCapture.3208245, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -88
   %6 = icmp eq ptr %4, %5
   ret i1 %6

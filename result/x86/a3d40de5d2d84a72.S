@@ -4,21 +4,15 @@ func0000000000000051:                   # @func0000000000000051
 	cmpq	%rcx, %rdx
 	cmoval	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movl	%esi, %eax
-	movl	%edi, %ecx
-	cmpq	%rcx, %rdx
-	cmoval	%edi, %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%esi, %eax
-	movl	%edi, %ecx
-	cmpq	%rcx, %rdx
-	cmovll	%edi, %eax
-	retq
 func0000000000000055:                   # @func0000000000000055
 	movl	%esi, %eax
 	movl	%edi, %ecx
 	cmpq	%rcx, %rdx
 	cmovgl	%edi, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%esi, %eax
+	movl	%edi, %ecx
+	cmpq	%rcx, %rdx
+	cmoval	%edi, %eax
 	retq

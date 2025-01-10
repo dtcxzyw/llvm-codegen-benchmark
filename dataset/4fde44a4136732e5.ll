@@ -1,7 +1,7 @@
 
-%"struct.AAT::Entry.2736969" = type { %"struct.OT::IntType.139.2736869", %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
+%"struct.AAT::Entry.2736935" = type { %"struct.OT::IntType.139.2736835", %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; linux/optimized/ip_tunnel.ll
@@ -40,7 +40,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nuw %"struct.AAT::Entry.2736969", ptr %4, i64 %3, i32 0, i32 0, i32 0, i64 1
+  %5 = getelementptr nuw %"struct.AAT::Entry.2736935", ptr %4, i64 %3, i32 0, i32 0, i32 0, i64 1
   ret ptr %5
 }
 

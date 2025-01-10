@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/sky2.ll
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; stockfish/optimized/search.ll

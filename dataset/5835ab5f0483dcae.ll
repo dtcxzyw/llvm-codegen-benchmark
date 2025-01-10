@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveUtils.ll
 ; openjdk/optimized/g1AllocRegion.ll
@@ -16,7 +16,6 @@
 ; openjdk/optimized/xPageAllocator.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/xUncommitter.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; openjdk/optimized/zStat.ll

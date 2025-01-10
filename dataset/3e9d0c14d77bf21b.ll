@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 28 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -8,7 +8,6 @@
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; lief/optimized/aes.c.ll
 ; linux/optimized/dmar.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openusd/optimized/gamma.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -17,7 +16,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/sunpkd810.ll
 ; spike/optimized/sunpkd820.ll
 ; spike/optimized/sunpkd830.ll
@@ -108,10 +106,9 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/sky2.ll
 ; openjdk/optimized/jvmtiTagMap.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000006f(i64 %0, i16 %1, i64 %2) #0 {
 entry:

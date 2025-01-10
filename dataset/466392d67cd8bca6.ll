@@ -137,9 +137,8 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; brotli/optimized/metablock.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/ftbase.c.ll

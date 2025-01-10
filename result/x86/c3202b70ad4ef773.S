@@ -1,8 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	testl	%edx, %edx
-	sete	%al
-	andb	%dil, %sil
-	andb	%al, %sil
-	movzbl	%sil, %eax
-	addl	%eax, %eax
+	testb	$1, %dil
+	movl	$98, %eax
+	movl	$35, %ecx
+	cmovel	%ecx, %eax
+	cmpl	$167772160, %edx                # imm = 0xA000000
+	cmovnel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
 	retq

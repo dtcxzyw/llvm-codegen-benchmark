@@ -1,10 +1,12 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000002:                   # @func0000000000000002
+	andb	$1, %dil
 	shrq	$32, %rsi
 	xorl	%eax, %eax
-	testb	$1, %dil
-	cmovel	%esi, %eax
+	negb	%dil
+	sbbl	%eax, %eax
+	orl	%esi, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000006:                   # @func0000000000000006
 	shrq	$32, %rsi
 	xorl	%eax, %eax
 	testb	$1, %dil

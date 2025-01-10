@@ -1,10 +1,10 @@
 
-%"struct.mold::elf::ElfRel.2642810" = type { %"class.mold::BigEndian.317.2642676", %"class.mold::BigEndian.2642674", %"class.mold::BigEndian.458.2642811", i8, %"class.mold::BigEndian.459.2642812" }
-%"class.mold::BigEndian.317.2642676" = type { [8 x i8] }
-%"class.mold::BigEndian.2642674" = type { [4 x i8] }
-%"class.mold::BigEndian.458.2642811" = type { [3 x i8] }
-%"class.mold::BigEndian.459.2642812" = type { [8 x i8] }
-%struct.Elf64_Sym.2684877 = type { i32, i8, i8, i16, i64, i64 }
+%"struct.mold::elf::ElfRel.2642777" = type { %"class.mold::BigEndian.317.2642643", %"class.mold::BigEndian.2642641", %"class.mold::BigEndian.458.2642778", i8, %"class.mold::BigEndian.459.2642779" }
+%"class.mold::BigEndian.317.2642643" = type { [8 x i8] }
+%"class.mold::BigEndian.2642641" = type { [4 x i8] }
+%"class.mold::BigEndian.458.2642778" = type { [3 x i8] }
+%"class.mold::BigEndian.459.2642779" = type { [8 x i8] }
+%struct.Elf64_Sym.2684844 = type { i32, i8, i8, i16, i64, i64 }
 
 ; 13 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -24,7 +24,7 @@
 define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642810", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642777", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -36,7 +36,7 @@ entry:
 define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 24
-  %4 = getelementptr nusw nuw %struct.Elf64_Sym.2684877, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.Elf64_Sym.2684844, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp ult ptr %5, %4
   ret i1 %6

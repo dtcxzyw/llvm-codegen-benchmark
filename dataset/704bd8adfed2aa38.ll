@@ -35,16 +35,17 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; boost/optimized/mapped_file.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
-  %.not = icmp eq i32 %1, 2
-  %2 = select i1 %.not, i32 2, i32 0
-  %3 = select i1 %.not, i32 578, i32 0
-  %4 = select i1 %0, i32 %2, i32 %3
+  %.not = icmp eq i32 %1, 0
+  %2 = select i1 %.not, i32 18, i32 15
+  %3 = select i1 %.not, i32 12, i32 18
+  %4 = select i1 %0, i32 %3, i32 %2
   ret i32 %4
 }
 

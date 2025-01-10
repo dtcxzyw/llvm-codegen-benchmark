@@ -110,12 +110,6 @@ func000000000000007d:                   // @func000000000000007d
 	orr	x0, x8, x0, lsl #48
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
-// %bb.0:                               // %entry
-	orr	w8, w2, w1
-	orr	x0, x0, x8, lsl #56
-	ret
-                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
@@ -135,5 +129,12 @@ func0000000000000028:                   // @func0000000000000028
                                         // kill: def $w2 killed $w2 def $x2
 	orr	x8, x1, x2, lsl #32
 	orr	x0, x8, x0, lsl #4
+	ret
+                                        // -- End function
+func0000000000000078:                   // @func0000000000000078
+// %bb.0:                               // %entry
+                                        // kill: def $w2 killed $w2 def $x2
+	orr	x8, x0, x2, lsl #48
+	orr	x0, x8, x1, lsl #56
 	ret
                                         // -- End function

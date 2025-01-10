@@ -15,10 +15,9 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 1
-	li	a3, -32
-	slli	a0, a0, 4
+	lui	a3, 1
+	addiw	a3, a3, -2017
 	czero.nez	a2, a3, a2
-	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 128
+	sh2add	a0, a1, a0
 	ret

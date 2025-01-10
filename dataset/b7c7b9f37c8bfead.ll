@@ -1,8 +1,8 @@
 
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
-%struct.rt6_exception_bucket.3548545 = type { %struct.hlist_head.3548442, i32 }
-%struct.hlist_head.3548442 = type { ptr }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
+%struct.rt6_exception_bucket.3548511 = type { %struct.hlist_head.3548408, i32 }
+%struct.hlist_head.3548408 = type { ptr }
 
 ; 1 occurrences:
 ; re2/optimized/compile.cc.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 4294967297
   %3 = lshr i64 %2, 33
-  %4 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.re2::Prog::Inst.2601688", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -55,7 +55,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 7046029254386353131
   %3 = lshr i64 %2, 54
-  %4 = getelementptr %struct.rt6_exception_bucket.3548545, ptr %0, i64 %3
+  %4 = getelementptr %struct.rt6_exception_bucket.3548511, ptr %0, i64 %3
   ret ptr %4
 }
 

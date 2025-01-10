@@ -1,8 +1,8 @@
 
-%"struct.facebook::velox::Timestamp.2813643" = type { i64, i64 }
-%struct.BT_QUANTIZED_BVH_NODE.2818145 = type { [3 x i16], [3 x i16], i32 }
-%struct.FmgrInfo.3653068 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
-%struct.Color.3789981 = type { i8, i8, i8, i8 }
+%"struct.facebook::velox::Timestamp.2813609" = type { i64, i64 }
+%struct.BT_QUANTIZED_BVH_NODE.2818111 = type { [3 x i16], [3 x i16], i32 }
+%struct.FmgrInfo.3653034 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
+%struct.Color.3789931 = type { i8, i8, i8, i8 }
 
 ; 5 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -106,7 +106,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.facebook::velox::Timestamp.2813643", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"struct.facebook::velox::Timestamp.2813609", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -120,7 +120,7 @@ entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.BT_QUANTIZED_BVH_NODE.2818145, ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr %struct.BT_QUANTIZED_BVH_NODE.2818111, ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 
@@ -229,7 +229,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.FmgrInfo.3653068, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.FmgrInfo.3653034, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -254,7 +254,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.Color.3789981, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.Color.3789931, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

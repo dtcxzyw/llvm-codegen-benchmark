@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

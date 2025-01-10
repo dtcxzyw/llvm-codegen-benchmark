@@ -315,11 +315,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000001aa:                   # @func00000000000001aa
-	vpcmpnltq	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0

@@ -218,7 +218,7 @@ entry:
   ret i64 %6
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; boost/optimized/area.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/smb.c.ll
@@ -260,6 +260,7 @@ entry:
 ; postgres/optimized/quote.ll
 ; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/log_buffer.cc.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(ptr %0, ptr %1) #0 {
 entry:

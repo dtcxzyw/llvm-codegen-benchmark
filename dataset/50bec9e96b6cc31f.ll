@@ -73,11 +73,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/pdrTsim2.c.ll
-; libevent/optimized/event.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:

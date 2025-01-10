@@ -44,7 +44,7 @@ entry:
   ret i1 %3
 }
 
-; 1856 occurrences:
+; 1857 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/utilNam.c.ll
@@ -1084,7 +1084,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -1526,6 +1525,8 @@ entry:
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
 ; postgres/optimized/walmethods.ll
+; proj/optimized/cct.cpp.ll
+; proj/optimized/gie.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/descriptor.cc.ll

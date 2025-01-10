@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = mul i64 %2, 96
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 3
-  %6 = getelementptr %class.aiVector3t.2823159, ptr %4, i64 %5
+  %6 = getelementptr %class.aiVector3t.2823125, ptr %4, i64 %5
   ret ptr %6
 }
 

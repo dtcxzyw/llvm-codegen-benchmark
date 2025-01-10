@@ -35,7 +35,3 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpleud	%ymm1, %ymm0, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
-func000000000000000c:                   # @func000000000000000c
-	vpcmpeqd	%ymm1, %ymm0, %k1
-	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
-	retq

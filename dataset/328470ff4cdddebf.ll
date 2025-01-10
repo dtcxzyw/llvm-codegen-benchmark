@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/FindInvalidDataProcess.cpp.ll
@@ -30,6 +30,7 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/scdf.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll

@@ -3,7 +3,7 @@
 .LCPI0_1:
 	.quad	8                               # 0x8
 .LCPI0_2:
-	.quad	9223372036854775800             # 0x7ffffffffffffff8
+	.quad	504                             # 0x1f8
 func0000000000000000:                   # @func0000000000000000
 	vpsraq	$63, %ymm0, %ymm1
 	vpsrlq	$56, %ymm1, %ymm1

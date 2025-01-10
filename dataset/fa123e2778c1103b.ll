@@ -1,8 +1,8 @@
 
-%struct.code.2877665 = type { i8, i8, i16 }
-%struct.UT_hash_bucket.3054026 = type { ptr, i32, i32 }
-%struct.list_head.3435077 = type { ptr, ptr }
-%struct.code.3535564 = type { i8, i8, i16 }
+%struct.code.2877631 = type { i8, i8, i16 }
+%struct.UT_hash_bucket.3053992 = type { ptr, i32, i32 }
+%struct.list_head.3435043 = type { ptr, ptr }
+%struct.code.3535530 = type { i8, i8, i16 }
 
 ; 6 occurrences:
 ; abc/optimized/inftrees.c.ll
@@ -17,7 +17,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.code.2877665, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %struct.code.2877631, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -33,7 +33,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.UT_hash_bucket.3054026, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %struct.UT_hash_bucket.3053992, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3435077, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.list_head.3435043, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.code.3535564, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.code.3535530, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

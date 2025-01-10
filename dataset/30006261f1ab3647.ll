@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll

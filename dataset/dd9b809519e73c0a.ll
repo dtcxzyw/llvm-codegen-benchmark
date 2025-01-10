@@ -1,11 +1,10 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; linux/optimized/calibrate.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
@@ -208,18 +207,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; redis/optimized/redis-check-aof.ll
-; wireshark/optimized/packet-x11.c.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 3
-  %3 = icmp eq i32 %2, %0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -262,6 +249,17 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1047040
   %3 = icmp ult i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; redis/optimized/redis-check-aof.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = icmp eq i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

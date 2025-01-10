@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -11,6 +11,7 @@
 ; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll

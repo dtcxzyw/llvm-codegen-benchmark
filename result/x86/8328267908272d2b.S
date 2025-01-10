@@ -4,15 +4,3 @@ func0000000000000006:                   # @func0000000000000006
 	cmovgel	%esi, %eax
 	cltq
 	retq
-func000000000000000a:                   # @func000000000000000a
-	movslq	%edi, %rax
-	cmpq	%rax, %rdx
-	cmovlel	%esi, %eax
-	cltq
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movslq	%edi, %rax
-	cmpq	%rax, %rdx
-	cmovbel	%esi, %eax
-	cltq
-	retq

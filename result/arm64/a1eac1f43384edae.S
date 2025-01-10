@@ -21,10 +21,8 @@ func0000000000000001:                   // @func0000000000000001
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	x8, #-15                        // =0xfffffffffffffff1
-	add	x9, x0, x1
-	movk	x8, #32767, lsl #48
-	cmp	x9, x8
+	add	x8, x0, x1
+	cmp	x8, #2
 	cset	w0, lo
 	ret
                                         // -- End function

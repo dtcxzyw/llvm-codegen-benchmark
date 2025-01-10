@@ -25,8 +25,7 @@ entry:
   ret i1 %6
 }
 
-; 23 occurrences:
-; llvm/optimized/AArch64CallingConvention.cpp.ll
+; 22 occurrences:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll

@@ -38,8 +38,3 @@ func000000000000001f:                   # @func000000000000001f
 	shlxl	%esi, %eax, %eax
 	addl	%edi, %eax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	addl	%edi, %eax
-	retq

@@ -1,27 +1,27 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2684645" = type <{ %"struct.std::atomic.10.2684642", %"struct.std::atomic.67.2684649", i32, [4 x i8] }>
-%"struct.std::atomic.10.2684642" = type { %"struct.std::__atomic_base.11.2684651" }
-%"struct.std::__atomic_base.11.2684651" = type { i64 }
-%"struct.std::atomic.67.2684649" = type { %"class.std::thread::id.2684650" }
-%"class.std::thread::id.2684650" = type { i64 }
-%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
-%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
-%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
-%struct.QTailQLink.2706558 = type { ptr, ptr }
-%struct.Vmxnet3TxqDescr.2708029 = type { %struct.Vmxnet3Ring.2708030, %struct.Vmxnet3Ring.2708030, i8, i64, %struct.UPT1_TxStats.2708031 }
-%struct.Vmxnet3Ring.2708030 = type { i64, i32, i32, i32, i8 }
-%struct.UPT1_TxStats.2708031 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PrimTable<pxrInternal_v0_24__pxrReserved__::TfToken>::_MapAndMutex.3414460" = type { %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::robin_map.3414461", %"class.tbb::detail::d1::spin_mutex.3414451", [7 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::robin_map.3414461" = type { %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::robin_hash.3414462" }
-%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::robin_hash.3414462" = type <{ %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::rh::power_of_two_growth_policy.3414463", %"class.std::vector.3414464", ptr, i64, i64, i64, float, float, i8, i8, [6 x i8] }>
-%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::rh::power_of_two_growth_policy.3414463" = type { i64 }
-%"class.std::vector.3414464" = type { %"struct.std::_Vector_base.3414465" }
-%"struct.std::_Vector_base.3414465" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl.3414466" }
-%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl.3414466" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl_data.3414467" }
-%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl_data.3414467" = type { ptr, ptr, ptr }
-%"class.tbb::detail::d1::spin_mutex.3414451" = type { %"struct.std::atomic.19.3414446" }
-%"struct.std::atomic.19.3414446" = type { %"struct.std::__atomic_base.20.3414447" }
-%"struct.std::__atomic_base.20.3414447" = type { i8 }
+%"class.folly::hazptr_detail::shared_head_only_list.2684612" = type <{ %"struct.std::atomic.10.2684609", %"struct.std::atomic.67.2684616", i32, [4 x i8] }>
+%"struct.std::atomic.10.2684609" = type { %"struct.std::__atomic_base.11.2684618" }
+%"struct.std::__atomic_base.11.2684618" = type { i64 }
+%"struct.std::atomic.67.2684616" = type { %"class.std::thread::id.2684617" }
+%"class.std::thread::id.2684617" = type { i64 }
+%struct.OHCIPort.2706526 = type { %struct.USBPort.2706527, i32 }
+%struct.USBPort.2706527 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706528 }
+%union.anon.5.2706528 = type { %struct.QTailQLink.2706524 }
+%struct.QTailQLink.2706524 = type { ptr, ptr }
+%struct.Vmxnet3TxqDescr.2707995 = type { %struct.Vmxnet3Ring.2707996, %struct.Vmxnet3Ring.2707996, i8, i64, %struct.UPT1_TxStats.2707997 }
+%struct.Vmxnet3Ring.2707996 = type { i64, i32, i32, i32, i8 }
+%struct.UPT1_TxStats.2707997 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
+%"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PrimTable<pxrInternal_v0_24__pxrReserved__::TfToken>::_MapAndMutex.3414426" = type { %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::robin_map.3414427", %"class.tbb::detail::d1::spin_mutex.3414417", [7 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::robin_map.3414427" = type { %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::robin_hash.3414428" }
+%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::robin_hash.3414428" = type <{ %"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::rh::power_of_two_growth_policy.3414429", %"class.std::vector.3414430", ptr, i64, i64, i64, float, float, i8, i8, [6 x i8] }>
+%"class.pxrInternal_v0_24__pxrReserved__::pxr_tsl::rh::power_of_two_growth_policy.3414429" = type { i64 }
+%"class.std::vector.3414430" = type { %"struct.std::_Vector_base.3414431" }
+%"struct.std::_Vector_base.3414431" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl.3414432" }
+%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl.3414432" = type { %"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl_data.3414433" }
+%"struct.std::_Vector_base<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>, std::allocator<pxrInternal_v0_24__pxrReserved__::pxr_tsl::detail_robin_hash::bucket_entry<std::pair<pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_ParentAnd<pxrInternal_v0_24__pxrReserved__::TfToken>, pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle>, true>>>::_Vector_impl_data.3414433" = type { ptr, ptr, ptr }
+%"class.tbb::detail::d1::spin_mutex.3414417" = type { %"struct.std::atomic.19.3414412" }
+%"struct.std::atomic.19.3414412" = type { %"struct.std::__atomic_base.20.3414413" }
+%"struct.std::__atomic_base.20.3414413" = type { i8 }
 
 ; 270 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -299,7 +299,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
   %3 = and i64 %2, 7
-  %4 = getelementptr nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2684645"], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2684612"], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -310,7 +310,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [15 x %struct.OHCIPort.2706526], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -328,7 +328,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
-  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2708029], ptr %0, i64 0, i64 %3, i32 0, i32 3
+  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2707995], ptr %0, i64 0, i64 %3, i32 0, i32 3
   ret ptr %4
 }
 
@@ -340,7 +340,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 7
-  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2708029], ptr %0, i64 0, i64 %3, i32 0, i32 4
+  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2707995], ptr %0, i64 0, i64 %3, i32 0, i32 4
   ret ptr %4
 }
 
@@ -362,7 +362,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 56
   %3 = and i64 %2, 127
-  %4 = getelementptr [128 x %"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PrimTable<pxrInternal_v0_24__pxrReserved__::TfToken>::_MapAndMutex.3414460"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 3
+  %4 = getelementptr [128 x %"struct.pxrInternal_v0_24__pxrReserved__::(anonymous namespace)::_PrimTable<pxrInternal_v0_24__pxrReserved__::TfToken>::_MapAndMutex.3414426"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 3
   ret ptr %4
 }
 

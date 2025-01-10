@@ -30,7 +30,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 152 occurrences:
+; 153 occurrences:
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/inflate.c.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -41,6 +41,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; arrow/optimized/grouper.cc.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/inflate64.c.ll
+; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fse_compress.c.ll

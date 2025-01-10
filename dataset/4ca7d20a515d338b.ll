@@ -1,6 +1,6 @@
 
-%"class.(anonymous namespace)::NonSwappableInstance.3475238" = type { %"class.absl::test_internal::BaseCountedInstance.base.3474954", [3 x i8] }
-%"class.absl::test_internal::BaseCountedInstance.base.3474954" = type <{ i32, i8 }>
+%"class.(anonymous namespace)::NonSwappableInstance.3475204" = type { %"class.absl::test_internal::BaseCountedInstance.base.3474920", [3 x i8] }
+%"class.absl::test_internal::BaseCountedInstance.base.3474920" = type <{ i32, i8 }>
 
 ; 2 occurrences:
 ; linux/optimized/compaction.ll
@@ -36,7 +36,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw nuw %"class.(anonymous namespace)::NonSwappableInstance.3475238", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.(anonymous namespace)::NonSwappableInstance.3475204", ptr %0, i64 %4
   ret ptr %5
 }
 

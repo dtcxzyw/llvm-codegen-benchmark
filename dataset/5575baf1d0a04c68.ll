@@ -196,12 +196,9 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/bwlzh.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {

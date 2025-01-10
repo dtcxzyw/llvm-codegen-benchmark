@@ -1842,7 +1842,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; git/optimized/date.ll
 ; icu/optimized/collationbuilder.ll
@@ -1856,6 +1856,7 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; memcached/optimized/memcached_debug-slabs.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; postgres/optimized/tsvector.ll
@@ -1892,7 +1893,8 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; arrow/optimized/builder_primitive.cc.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/others.c.ll

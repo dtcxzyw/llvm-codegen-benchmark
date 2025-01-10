@@ -1,5 +1,5 @@
 
-%struct.software_node.3553102 = type { ptr, ptr, ptr }
+%struct.software_node.3553068 = type { ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -64,7 +64,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.software_node.3553102, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.software_node.3553068, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

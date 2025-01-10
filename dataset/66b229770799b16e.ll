@@ -27,7 +27,7 @@ entry:
   ret i64 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/obmalloc.ll
 ; glog/optimized/symbolize.cc.ll
@@ -36,7 +36,6 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/User.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; miniaudio/optimized/unity.c.ll

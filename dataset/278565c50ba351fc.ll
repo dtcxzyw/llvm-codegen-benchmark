@@ -1,13 +1,13 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%struct.Elf64_Shdr.2600898 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"class.mold::LittleEndian.2666054" = type { [4 x i8] }
-%"struct.RunTimeClassInfo::RTVerifierConstraint.2730952" = type { i32, i32 }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%struct.Elf64_Shdr.2600865 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"class.mold::LittleEndian.2666021" = type { [4 x i8] }
+%"struct.RunTimeClassInfo::RTVerifierConstraint.2730918" = type { i32, i32 }
 
 ; 414 occurrences:
 ; abc/optimized/abcDetect.c.ll
@@ -427,8 +427,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.yyalloc.2600711, ptr %1, i64 %2
-  %4 = getelementptr %union.YYSTYPE.2600710, ptr %3, i64 %0
+  %3 = getelementptr %union.yyalloc.2600678, ptr %1, i64 %2
+  %4 = getelementptr %union.YYSTYPE.2600677, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -871,11 +871,11 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr %struct.Elf64_Shdr.2600898, ptr %3, i64 %0, i32 1
+  %4 = getelementptr %struct.Elf64_Shdr.2600865, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 
-; 140 occurrences:
+; 145 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -904,6 +904,7 @@ entry:
 ; graphviz/optimized/grammar.c.ll
 ; graphviz/optimized/htmlparse.c.ll
 ; gromacs/optimized/mdoutf.cpp.ll
+; gromacs/optimized/wall.cpp.ll
 ; hdf5/optimized/H5LTparse.c.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -985,22 +986,26 @@ entry:
 ; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
 ; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
 ; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
 ; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
 ; zed-rs/optimized/2ki47jl401le7d880vult9vcg.ll
 ; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
 ; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
 ; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
 ; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
 ; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
 ; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
 ; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
 ; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
 ; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
 ; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
 ; zed-rs/optimized/9veql5nv8njiwoukz29yvwhob.ll
 ; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
@@ -1019,8 +1024,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %union.yyalloc.2601680, ptr %1, i64 %2
-  %4 = getelementptr nusw %union.YYSTYPE.2601679, ptr %3, i64 %0
+  %3 = getelementptr nusw %union.yyalloc.2601647, ptr %1, i64 %2
+  %4 = getelementptr nusw %union.YYSTYPE.2601646, ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -1862,7 +1867,7 @@ entry:
   ret ptr %5
 }
 
-; 593 occurrences:
+; 594 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -2044,6 +2049,7 @@ entry:
 ; meshlab/optimized/radianceScalingRenderer.cpp.ll
 ; meshlab/optimized/render_raster.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; minetest/optimized/CBillboardSceneNode.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
@@ -3023,12 +3029,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %1, i64 %2
-  %4 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %3, i64 %0, i32 2
+  %3 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %1, i64 %2
+  %4 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %3, i64 %0, i32 2
   ret ptr %4
 }
 
-; 296 occurrences:
+; 287 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cuddCache.c.ll
@@ -3229,7 +3235,6 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -3297,25 +3302,17 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/polynomial.cpp.ll
-; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
 ; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
 ; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; zed-rs/optimized/1cpj87wsqkxbe2geqt8ug0aw9.ll
-; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
 ; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; zed-rs/optimized/2yt2vm9z2vbxih768weso8evd.ll
-; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
 ; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
-; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; zed-rs/optimized/5mrql99db5sil2ntw6vc8xwm4.ll
 ; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
-; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
 ; zed-rs/optimized/b6uky6p5knfjtl24nerxiq7a4.ll
-; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; zed-rs/optimized/cxlqmmvav043ysf0ch7gnqa6v.ll
 ; zed-rs/optimized/d0whdpjvgd1qxjh8s9itwdzf0.ll
 ; zed-rs/optimized/e4huo4knej864yphleo1svzpt.ll
@@ -3334,7 +3331,7 @@ entry:
   ret ptr %5
 }
 
-; 46 occurrences:
+; 36 occurrences:
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -3353,7 +3350,6 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; freetype/optimized/sdf.c.ll
-; gromacs/optimized/wall.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; lief/optimized/rsa.c.ll
@@ -3371,15 +3367,6 @@ entry:
 ; xgboost/optimized/charconv.cc.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; z3/optimized/goal2sat.cpp.ll
-; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
-; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
-; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
-; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
-; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
-; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
-; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
@@ -3390,7 +3377,7 @@ entry:
   ret ptr %5
 }
 
-; 382 occurrences:
+; 384 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
@@ -3765,6 +3752,8 @@ entry:
 ; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zfp/optimized/encode3d.c.ll
+; zfp/optimized/encode3l.c.ll
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
@@ -3782,7 +3771,7 @@ entry:
   ret ptr %5
 }
 
-; 185 occurrences:
+; 184 occurrences:
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/deflate.c.ll
@@ -3883,7 +3872,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_pss.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
-; openusd/optimized/decodetxb.c.ll
 ; php/optimized/apprentice.ll
 ; postgres/optimized/oracle_compat.ll
 ; qemu/optimized/hw_usb_core.c.ll
@@ -4018,7 +4006,7 @@ entry:
   ret ptr %5
 }
 
-; 175 occurrences:
+; 179 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/ioUtil.c.ll
 ; abc/optimized/sfmArea.c.ll
@@ -4152,11 +4140,13 @@ entry:
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
 ; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
 ; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
 ; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
 ; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
 ; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
 ; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
@@ -4166,9 +4156,11 @@ entry:
 ; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; zed-rs/optimized/583y325aopre8a32cz1ntgg8y.ll
 ; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
 ; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
 ; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
 ; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
 ; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
 ; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
 ; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
@@ -4203,7 +4195,7 @@ entry:
   ret ptr %5
 }
 
-; 77 occurrences:
+; 69 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -4271,21 +4263,13 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
-; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
-; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
-; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
-; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
-; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
-; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
-; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
-; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
 ; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw %"class.mold::LittleEndian.2666054", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.mold::LittleEndian.2666021", ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
@@ -4773,7 +4757,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730952", ptr %3, i64 %0, i32 1
+  %4 = getelementptr nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730918", ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 

@@ -1,10 +1,3 @@
-func0000000000000021:                   # @func0000000000000021
-	decq	%rsi
-	xorl	%eax, %eax
-	cmpq	%rsi, %rdi
-	setne	%al
-	incl	%eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	decq	%rsi
 	xorl	%eax, %eax

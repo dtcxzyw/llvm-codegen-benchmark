@@ -155,14 +155,6 @@ func0000000000000298:                   // @func0000000000000298
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000048:                   // @func0000000000000048
-// %bb.0:                               // %entry
-	cmp	w0, w1
-	mov	w8, #2216                       // =0x8a8
-	ccmp	x2, x8, #4, hs
-	cset	w0, eq
-	ret
-                                        // -- End function
 func0000000000000282:                   // @func0000000000000282
 // %bb.0:                               // %entry
 	cmp	x0, #0

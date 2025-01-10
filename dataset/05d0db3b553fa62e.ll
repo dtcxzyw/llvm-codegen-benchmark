@@ -1,5 +1,5 @@
 
-%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
+%class.QModelIndex.3438231 = type { i32, i32, i64, ptr }
 
 ; 774 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -919,7 +919,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %2
+  %3 = getelementptr %class.QModelIndex.3438231, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -48
   ret ptr %4
 }

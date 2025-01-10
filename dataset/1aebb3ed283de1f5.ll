@@ -43,6 +43,20 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; llvm/optimized/OpenMPClause.cpp.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = add nuw nsw i64 %2, 7
+  %4 = add nuw nsw i64 %3, %0
+  %5 = and i64 %4, 137438953464
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind

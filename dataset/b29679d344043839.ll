@@ -20,7 +20,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umax.i64(i64, i64) #1
 
-; 75 occurrences:
+; 77 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -37,6 +37,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
+; git/optimized/commit-graph.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; hdf5/optimized/H5HL.c.ll
 ; linux/optimized/compaction.ll
@@ -48,6 +49,7 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; llvm/optimized/PPLexerChange.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; openusd/optimized/json.cpp.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll

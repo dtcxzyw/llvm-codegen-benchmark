@@ -7,6 +7,11 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	shlq	$5, %rdx
+	addq	%rsi, %rdx
+	leaq	(%rdx,%rdi,2), %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	leaq	(%rsi,%rdx,4), %rax
 	addq	%rdi, %rax

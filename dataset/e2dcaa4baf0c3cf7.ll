@@ -1,5 +1,5 @@
 
-; 592 occurrences:
+; 593 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -94,6 +94,7 @@
 ; git/optimized/diff-delta.ll
 ; git/optimized/diff.ll
 ; git/optimized/ewah_bitmap.ll
+; git/optimized/sequencer.ll
 ; git/optimized/strbuf.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll

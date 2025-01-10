@@ -1,7 +1,7 @@
 
-%struct.RARPPM_SEE2_CONTEXT.3062744 = type { i16, i8, i8 }
-%"class.llvm::SDUse.3150383" = type { %"class.llvm::SDValue.3150307", ptr, ptr, ptr }
-%"class.llvm::SDValue.3150307" = type <{ ptr, i32, [4 x i8] }>
+%struct.RARPPM_SEE2_CONTEXT.3062710 = type { i16, i8, i8 }
+%"class.llvm::SDUse.3150349" = type { %"class.llvm::SDValue.3150273", ptr, ptr, ptr }
+%"class.llvm::SDValue.3150273" = type <{ ptr, i32, [4 x i8] }>
 
 ; 3 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
@@ -13,7 +13,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = icmp samesign ugt i32 %1, %3
   %5 = select i1 %4, i64 2, i64 0
-  %6 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062744, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.RARPPM_SEE2_CONTEXT.3062710, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i64 0, i64 2
-  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3150383", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::SDUse.3150349", ptr %0, i64 %5
   ret ptr %6
 }
 

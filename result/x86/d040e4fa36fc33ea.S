@@ -7,7 +7,7 @@ func000000000000002a:                   # @func000000000000002a
 	retq
 func0000000000000026:                   # @func0000000000000026
 	movswl	%si, %eax
-	addl	$2, %eax
+	incl	%eax
 	movswl	%di, %ecx
 	cmpl	%ecx, %eax
 	setl	%al

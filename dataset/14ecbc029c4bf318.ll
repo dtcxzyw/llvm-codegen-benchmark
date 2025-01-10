@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/autoit.c.ll
@@ -15,6 +15,7 @@
 ; lief/optimized/des.c.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/host.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -89,19 +90,6 @@ entry:
   %3 = xor i32 %1, %2
   %4 = lshr i32 %3, 24
   %5 = xor i32 %0, %4
-  ret i32 %5
-}
-
-; 3 occurrences:
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = xor i32 %1, %2
-  %4 = lshr exact i32 %3, 24
-  %5 = xor i32 %4, %0
   ret i32 %5
 }
 

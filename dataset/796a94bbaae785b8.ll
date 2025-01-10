@@ -190,7 +190,7 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/StiDecoder.cpp.ll
@@ -202,7 +202,6 @@ entry:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; postgres/optimized/spell.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000014a(i1 %0, i32 %1, i32 %2) #0 {
 entry:

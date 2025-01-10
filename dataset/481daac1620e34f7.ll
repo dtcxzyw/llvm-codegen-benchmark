@@ -373,7 +373,7 @@ entry:
   ret i64 %6
 }
 
-; 3996 occurrences:
+; 3999 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDar.c.ll
@@ -1301,6 +1301,7 @@ entry:
 ; git/optimized/receive-pack.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/sequencer.ll
+; git/optimized/show-ref.ll
 ; git/optimized/tag.ll
 ; git/optimized/tree-walk.ll
 ; git/optimized/unpack-trees.ll
@@ -1555,6 +1556,7 @@ entry:
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; libevent/optimized/buffer.c.ll
 ; libevent/optimized/evdns.c.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
@@ -3518,6 +3520,7 @@ entry:
 ; php/optimized/zip.ll
 ; pocketpy/optimized/io.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
+; pocketpy/optimized/str.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/grids.cpp.ll
@@ -4380,7 +4383,7 @@ entry:
   ret i64 %6
 }
 
-; 966 occurrences:
+; 962 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absIter.c.ll
@@ -4692,11 +4695,9 @@ entry:
 ; git/optimized/packed-backend.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/replace.ll
-; git/optimized/show-ref.ll
 ; git/optimized/trailer.ll
 ; git/optimized/utf8.ll
 ; glog/optimized/signalhandler.cc.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; gromacs/optimized/inffast.c.ll
 ; gromacs/optimized/inftrees.c.ll
@@ -4738,7 +4739,6 @@ entry:
 ; icu/optimized/ustrtrns.ll
 ; jq/optimized/jv.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/gzwrite.c.ll
@@ -5134,7 +5134,6 @@ entry:
 ; php/optimized/zend_opcode.ll
 ; php/optimized/zend_optimizer.ll
 ; php/optimized/zend_ssa.ll
-; pocketpy/optimized/str.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field.cc.ll

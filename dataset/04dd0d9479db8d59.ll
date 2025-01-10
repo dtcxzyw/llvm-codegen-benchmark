@@ -1,5 +1,5 @@
 
-; 262 occurrences:
+; 261 occurrences:
 ; actix-rs/optimized/13h928g7964mzia7.ll
 ; actix-rs/optimized/17gccfd4i2cipdks.ll
 ; actix-rs/optimized/1e8u217hm6qvrsw6.ll
@@ -146,7 +146,6 @@
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/p11_crypt.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/pcre2_compile.ll
 ; qdrant-rs/optimized/1tmihqgw6mdvoma8.ll
 ; qdrant-rs/optimized/3ddd67hs3wvoza7g.ll

@@ -80,6 +80,15 @@ func0000000000000068:                   // @func0000000000000068
 	cset	w0, hi
 	ret
                                         // -- End function
+func0000000000000069:                   // @func0000000000000069
+// %bb.0:                               // %entry
+	add	x8, x1, w2, sxtw
+	add	x9, x0, #1
+	sub	x8, x8, #7
+	cmp	x9, x8
+	cset	w0, hs
+	ret
+                                        // -- End function
 func0000000000000561:                   // @func0000000000000561
 // %bb.0:                               // %entry
 	add	x8, x1, w2, sxtw

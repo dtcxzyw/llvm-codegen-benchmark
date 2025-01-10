@@ -20,6 +20,14 @@ func00000000000000a2:                   # @func00000000000000a2
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+func0000000000000020:                   # @func0000000000000020
+	vpslld	$4, %ymm2, %ymm2
+	vpor	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpsrld	$16, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1

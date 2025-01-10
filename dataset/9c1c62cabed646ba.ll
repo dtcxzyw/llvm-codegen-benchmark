@@ -1,5 +1,5 @@
 
-; 1335 occurrences:
+; 1345 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/ascii.cc.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
@@ -32,6 +32,7 @@
 ; arrow/optimized/string.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; assimp/optimized/MD3Loader.cpp.ll
+; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/alloc_lib.ll
@@ -146,6 +147,7 @@
 ; clamav/optimized/7zStream.c.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -174,6 +176,7 @@
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/lz_decoder.c.ll
 ; cmake/optimized/lzma2_encoder.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/mime.c.ll
 ; cmake/optimized/nghttp2_buf.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
@@ -473,6 +476,8 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rpc_pipe.ll
 ; linux/optimized/scatterlist.ll
+; linux/optimized/scatterwalk.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/sparse-vmemmap.ll
@@ -486,6 +491,7 @@
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vmcore.ll
+; linux/optimized/vsprintf.ll
 ; linux/optimized/xprtsock.ll
 ; linux/optimized/xz_dec_bcj.ll
 ; linux/optimized/xz_dec_lzma2.ll
@@ -886,6 +892,7 @@
 ; nuttx/optimized/circbuf.c.ll
 ; nuttx/optimized/lib_libfread_unlocked.c.ll
 ; nuttx/optimized/lib_libfwrite.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/mm_realloc.c.ll
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
@@ -1013,6 +1020,7 @@
 ; pbrt-v4/optimized/filters.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
+; php/optimized/KeccakSponge.ll
 ; php/optimized/html_document.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/php_http_parser.ll
@@ -1101,6 +1109,8 @@
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/quicklist.ll
 ; redis/optimized/rio.ll
@@ -1346,7 +1356,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 462 occurrences:
+; 469 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -1527,11 +1537,16 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; grpc/optimized/xds_route_config.cc.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hermes/optimized/zip.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; jsonnet/optimized/vm.cpp.ll
+; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/ripemd_test.cc.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; libquic/optimized/string16.cc.ll
@@ -1701,12 +1716,14 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; node/optimized/libnode.node_buffer.ll
 ; node/optimized/libnode.queue.ll
 ; nuttx/optimized/fs_procfsutil.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
+; openjdk/optimized/pngrutil.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openusd/optimized/io.c.ll
 ; openusd/optimized/read.c.ll
@@ -2427,7 +2444,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/deflate.c.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/src.ll
@@ -2443,6 +2460,7 @@ entry:
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libquic/optimized/cmac_test.cc.ll
 ; libquic/optimized/deflate.c.ll
+; lief/optimized/ssl_msg.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/iov_iter.ll
@@ -2471,7 +2489,7 @@ entry:
   ret i64 %4
 }
 
-; 75 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; bdwgc/optimized/cordxtra.c.ll
 ; brotli/optimized/backward_references.c.ll
@@ -2489,6 +2507,7 @@ entry:
 ; git/optimized/packfile.ll
 ; hdf5/optimized/H5D.c.ll
 ; libevent/optimized/buffer.c.ll
+; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/i915_gem_shmem.ll
@@ -2529,6 +2548,7 @@ entry:
 ; mold/optimized/linker-script.cc.SPARC64.cc.ll
 ; mold/optimized/linker-script.cc.X86_64.cc.ll
 ; node/optimized/libnode.node_buffer.ll
+; openjdk/optimized/pngrutil.ll
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/phar.ll

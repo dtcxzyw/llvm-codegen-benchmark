@@ -1,5 +1,5 @@
 
-; 887 occurrences:
+; 885 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -77,6 +77,7 @@
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/compile.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/posixmodule.ll
@@ -91,7 +92,6 @@
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_blurs.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -259,7 +259,6 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -678,7 +677,6 @@
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/aof.ll
 ; redis/optimized/cluster.ll

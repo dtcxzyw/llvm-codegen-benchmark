@@ -1,47 +1,71 @@
 
-%"class.std::reference_wrapper.479.2963746" = type { ptr }
-%"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116250" = type <{ %"struct.std::pair.3116249", i32, [4 x i8] }>
-%"struct.std::pair.3116249" = type { %"struct.Yosys::RTLIL::IdString.3116149", %"struct.Yosys::RTLIL::Const.3116244" }
-%"struct.Yosys::RTLIL::IdString.3116149" = type { i32 }
-%"struct.Yosys::RTLIL::Const.3116244" = type { i32, %"class.std::vector.188.3116245" }
-%"class.std::vector.188.3116245" = type { %"struct.std::_Vector_base.189.3116246" }
-%"struct.std::_Vector_base.189.3116246" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116247" }
-%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116247" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116248" }
-%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116248" = type { ptr, ptr, ptr }
-%"struct.Yosys::MemRd.3126372" = type { %"struct.Yosys::RTLIL::AttrObject.3126327", i8, ptr, i32, i8, i8, i8, %"struct.Yosys::RTLIL::Const.3126318", %"struct.Yosys::RTLIL::Const.3126318", %"struct.Yosys::RTLIL::Const.3126318", %"class.std::vector.693.3126297", %"class.std::vector.693.3126297", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152", %"struct.Yosys::RTLIL::SigSpec.3126152" }
-%"struct.Yosys::RTLIL::AttrObject.3126327" = type { %"class.Yosys::hashlib::dict.68.3126331" }
-%"class.Yosys::hashlib::dict.68.3126331" = type <{ %"class.std::vector.3.3126136", %"class.std::vector.69.3126332", %"struct.Yosys::hashlib::hash_ops.42.3126191", [7 x i8] }>
-%"class.std::vector.3.3126136" = type { %"struct.std::_Vector_base.4.3126137" }
-%"struct.std::_Vector_base.4.3126137" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126138" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126138" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126139" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126139" = type { ptr, ptr, ptr }
-%"class.std::vector.69.3126332" = type { %"struct.std::_Vector_base.70.3126333" }
-%"struct.std::_Vector_base.70.3126333" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126334" }
-%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126334" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126335" }
-%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126335" = type { ptr, ptr, ptr }
-%"struct.Yosys::hashlib::hash_ops.42.3126191" = type { i8 }
-%"struct.Yosys::RTLIL::Const.3126318" = type { i32, %"class.std::vector.606.3126319" }
-%"class.std::vector.606.3126319" = type { %"struct.std::_Vector_base.607.3126320" }
-%"struct.std::_Vector_base.607.3126320" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126321" }
-%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126321" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126322" }
-%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126322" = type { ptr, ptr, ptr }
-%"class.std::vector.693.3126297" = type { %"struct.std::_Bvector_base.3126298" }
-%"struct.std::_Bvector_base.3126298" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126299" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126299" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126300" }
-%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126300" = type { %"struct.std::_Bit_iterator.3126301", %"struct.std::_Bit_iterator.3126301", ptr }
-%"struct.std::_Bit_iterator.3126301" = type { %"struct.std::_Bit_iterator_base.base.3126302", [4 x i8] }
-%"struct.std::_Bit_iterator_base.base.3126302" = type <{ ptr, i32 }>
-%"struct.Yosys::RTLIL::SigSpec.3126152" = type { i32, i64, %"class.std::vector.276.3126153", %"class.std::vector.281.3126154" }
-%"class.std::vector.276.3126153" = type { %"struct.std::_Vector_base.277.3126155" }
-%"struct.std::_Vector_base.277.3126155" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126156" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126156" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126157" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126157" = type { ptr, ptr, ptr }
-%"class.std::vector.281.3126154" = type { %"struct.std::_Vector_base.282.3126158" }
-%"struct.std::_Vector_base.282.3126158" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126159" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126159" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126160" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126160" = type { ptr, ptr, ptr }
+%"class.std::reference_wrapper.479.2963712" = type { ptr }
+%"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116216" = type <{ %"struct.std::pair.3116215", i32, [4 x i8] }>
+%"struct.std::pair.3116215" = type { %"struct.Yosys::RTLIL::IdString.3116115", %"struct.Yosys::RTLIL::Const.3116210" }
+%"struct.Yosys::RTLIL::IdString.3116115" = type { i32 }
+%"struct.Yosys::RTLIL::Const.3116210" = type { i32, %"class.std::vector.188.3116211" }
+%"class.std::vector.188.3116211" = type { %"struct.std::_Vector_base.189.3116212" }
+%"struct.std::_Vector_base.189.3116212" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116213" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3116213" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116214" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3116214" = type { ptr, ptr, ptr }
+%"struct.Yosys::MemRd.3126338" = type { %"struct.Yosys::RTLIL::AttrObject.3126293", i8, ptr, i32, i8, i8, i8, %"struct.Yosys::RTLIL::Const.3126284", %"struct.Yosys::RTLIL::Const.3126284", %"struct.Yosys::RTLIL::Const.3126284", %"class.std::vector.693.3126263", %"class.std::vector.693.3126263", %"struct.Yosys::RTLIL::SigSpec.3126118", %"struct.Yosys::RTLIL::SigSpec.3126118", %"struct.Yosys::RTLIL::SigSpec.3126118", %"struct.Yosys::RTLIL::SigSpec.3126118", %"struct.Yosys::RTLIL::SigSpec.3126118", %"struct.Yosys::RTLIL::SigSpec.3126118" }
+%"struct.Yosys::RTLIL::AttrObject.3126293" = type { %"class.Yosys::hashlib::dict.68.3126297" }
+%"class.Yosys::hashlib::dict.68.3126297" = type <{ %"class.std::vector.3.3126102", %"class.std::vector.69.3126298", %"struct.Yosys::hashlib::hash_ops.42.3126157", [7 x i8] }>
+%"class.std::vector.3.3126102" = type { %"struct.std::_Vector_base.4.3126103" }
+%"struct.std::_Vector_base.4.3126103" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126104" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3126104" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126105" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3126105" = type { ptr, ptr, ptr }
+%"class.std::vector.69.3126298" = type { %"struct.std::_Vector_base.70.3126299" }
+%"struct.std::_Vector_base.70.3126299" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126300" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl.3126300" = type { %"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126301" }
+%"struct.std::_Vector_base<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t, std::allocator<Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t>>::_Vector_impl_data.3126301" = type { ptr, ptr, ptr }
+%"struct.Yosys::hashlib::hash_ops.42.3126157" = type { i8 }
+%"struct.Yosys::RTLIL::Const.3126284" = type { i32, %"class.std::vector.606.3126285" }
+%"class.std::vector.606.3126285" = type { %"struct.std::_Vector_base.607.3126286" }
+%"struct.std::_Vector_base.607.3126286" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126287" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl.3126287" = type { %"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126288" }
+%"struct.std::_Vector_base<Yosys::RTLIL::State, std::allocator<Yosys::RTLIL::State>>::_Vector_impl_data.3126288" = type { ptr, ptr, ptr }
+%"class.std::vector.693.3126263" = type { %"struct.std::_Bvector_base.3126264" }
+%"struct.std::_Bvector_base.3126264" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126265" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl.3126265" = type { %"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126266" }
+%"struct.std::_Bvector_base<std::allocator<bool>>::_Bvector_impl_data.3126266" = type { %"struct.std::_Bit_iterator.3126267", %"struct.std::_Bit_iterator.3126267", ptr }
+%"struct.std::_Bit_iterator.3126267" = type { %"struct.std::_Bit_iterator_base.base.3126268", [4 x i8] }
+%"struct.std::_Bit_iterator_base.base.3126268" = type <{ ptr, i32 }>
+%"struct.Yosys::RTLIL::SigSpec.3126118" = type { i32, i64, %"class.std::vector.276.3126119", %"class.std::vector.281.3126120" }
+%"class.std::vector.276.3126119" = type { %"struct.std::_Vector_base.277.3126121" }
+%"struct.std::_Vector_base.277.3126121" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126122" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3126122" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126123" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3126123" = type { ptr, ptr, ptr }
+%"class.std::vector.281.3126120" = type { %"struct.std::_Vector_base.282.3126124" }
+%"struct.std::_Vector_base.282.3126124" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126125" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3126125" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126126" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3126126" = type { ptr, ptr, ptr }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
-; 11 occurrences:
+; 12 occurrences:
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/gram.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
+; postgres/optimized/preproc.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; ruby/optimized/parse.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i16, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -2
+  %5 = getelementptr i8, ptr %0, i64 -2
+  %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 12 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -52,6 +76,7 @@
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; postgres/optimized/gindatapage.ll
+; postgres/optimized/predicate.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
@@ -213,7 +238,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000561(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.std::reference_wrapper.479.2963746", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.std::reference_wrapper.479.2963712", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = icmp eq ptr %4, %5
@@ -258,18 +283,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 4
-  %5 = getelementptr i8, ptr %0, i64 -12
-  %6 = icmp ugt ptr %4, %5
-  ret i1 %6
-}
-
 ; 6 occurrences:
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; yosys/optimized/connwrappers.ll
@@ -280,19 +293,18 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000005e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116250", ptr %1, i64 %2, i32 0, i32 1, i32 1
+  %3 = getelementptr %"struct.Yosys::hashlib::dict<Yosys::RTLIL::IdString, Yosys::RTLIL::Const>::entry_t.3116216", ptr %1, i64 %2, i32 0, i32 1, i32 1
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = icmp eq ptr %3, %4
   ret i1 %5
 }
 
-; 2 occurrences:
-; hyperscan/optimized/limex_compile.cpp.ll
+; 1 occurrences:
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.Yosys::MemRd.3126372", ptr %1, i64 %2, i32 7, i32 1
+  %3 = getelementptr nuw %"struct.Yosys::MemRd.3126338", ptr %1, i64 %2, i32 7, i32 1
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = icmp eq ptr %3, %4
   ret i1 %5
@@ -363,6 +375,18 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = getelementptr nusw i8, ptr %0, i64 -1
   %6 = icmp ne ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.ZXing::Trit.3649621", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 7
+  %5 = getelementptr i8, ptr %0, i64 -7
+  %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
 

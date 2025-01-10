@@ -1,60 +1,5 @@
 
-; 43 occurrences:
-; abc/optimized/cuddTable.c.ll
-; abseil-cpp/optimized/charconv_bigint.cc.ll
-; clamav/optimized/lzxd.c.ll
-; glog/optimized/logging_unittest.cc.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
-; linux/optimized/datagram.ll
-; linux/optimized/filter.ll
-; linux/optimized/i9xx_wm.ll
-; linux/optimized/nlattr.ll
-; linux/optimized/ohci-hcd.ll
-; linux/optimized/page-writeback.ll
-; linux/optimized/percpu.ll
-; linux/optimized/raw.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/tcp_input.ll
-; linux/optimized/trans_virtio.ll
-; linux/optimized/tx.ll
-; linux/optimized/xhci-ring.ll
-; llama.cpp/optimized/sampling.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/copyfromparse.ll
-; postgres/optimized/tablesync.ll
-; qemu/optimized/block_parallels.c.ll
-; qemu/optimized/chardev_testdev.c.ll
-; qemu/optimized/hw_ide_core.c.ll
-; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_usb_dev-serial.c.ll
-; qemu/optimized/linux-user_elfload.c.ll
-; qemu/optimized/migration_xbzrle.c.ll
-; qemu/optimized/ui_console.c.ll
-; qemu/optimized/ui_vnc.c.ll
-; rocksdb/optimized/testutil.cc.ll
-; ruby/optimized/io.ll
-; stb/optimized/stb_sprintf.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; wireshark/optimized/packet-rtmpt.c.ll
-; wireshark/optimized/reassemble.c.ll
-; z3/optimized/dl_sparse_table.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
-  %3 = sub i32 %0, %2
-  ret i32 %3
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
-; 99 occurrences:
+; 98 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/lzxd.c.ll
@@ -145,7 +90,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; raylib/optimized/raudio.c.ll
 ; re2/optimized/re2.cc.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
-; ruby/optimized/io.ll
 ; slurm/optimized/cbuf.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/ByteStream.cpp.ll
@@ -157,8 +101,62 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %2 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
   %3 = sub nsw i32 %0, %2
+  ret i32 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 42 occurrences:
+; abc/optimized/cuddTable.c.ll
+; abseil-cpp/optimized/charconv_bigint.cc.ll
+; clamav/optimized/lzxd.c.ll
+; glog/optimized/logging_unittest.cc.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; linux/optimized/datagram.ll
+; linux/optimized/filter.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/nlattr.ll
+; linux/optimized/ohci-hcd.ll
+; linux/optimized/page-writeback.ll
+; linux/optimized/percpu.ll
+; linux/optimized/raw.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/trans_virtio.ll
+; linux/optimized/tx.ll
+; linux/optimized/xhci-ring.ll
+; llama.cpp/optimized/sampling.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/copyfromparse.ll
+; postgres/optimized/tablesync.ll
+; qemu/optimized/block_parallels.c.ll
+; qemu/optimized/chardev_testdev.c.ll
+; qemu/optimized/hw_ide_core.c.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; qemu/optimized/hw_usb_dev-serial.c.ll
+; qemu/optimized/linux-user_elfload.c.ll
+; qemu/optimized/migration_xbzrle.c.ll
+; qemu/optimized/ui_console.c.ll
+; qemu/optimized/ui_vnc.c.ll
+; rocksdb/optimized/testutil.cc.ll
+; stb/optimized/stb_sprintf.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; wireshark/optimized/reassemble.c.ll
+; z3/optimized/dl_sparse_table.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
+  %3 = sub i32 %0, %2
   ret i32 %3
 }
 

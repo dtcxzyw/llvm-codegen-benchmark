@@ -1,9 +1,9 @@
 
-%"struct.irr::scene::SB3dTexture.2698346" = type <{ %"class.std::__cxx11::basic_string.2698341", i32, i32, float, float, float, float, float, [4 x i8] }>
-%"class.std::__cxx11::basic_string.2698341" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2698342", i64, %union.anon.2698343 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2698342" = type { ptr }
-%union.anon.2698343 = type { i64, [8 x i8] }
-%union.nested_table.3552713 = type { ptr }
+%"struct.irr::scene::SB3dTexture.2698312" = type <{ %"class.std::__cxx11::basic_string.2698307", i32, i32, float, float, float, float, float, [4 x i8] }>
+%"class.std::__cxx11::basic_string.2698307" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2698308", i64, %union.anon.2698309 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2698308" = type { ptr }
+%union.anon.2698309 = type { i64, [8 x i8] }
+%union.nested_table.3552679 = type { ptr }
 
 ; 139 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
@@ -149,7 +149,7 @@
 define ptr @func0000000000000003(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.irr::scene::SB3dTexture.2698346", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::SB3dTexture.2698312", ptr %1, i64 %3
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }
@@ -198,7 +198,7 @@ entry:
 define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.nested_table.3552713, ptr %1, i64 %3
+  %4 = getelementptr %union.nested_table.3552679, ptr %1, i64 %3
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }

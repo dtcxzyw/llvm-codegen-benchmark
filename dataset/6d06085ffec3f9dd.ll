@@ -58,7 +58,7 @@ define i64 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 23
   %2 = and i64 %1, -16
-  %3 = tail call i64 @llvm.umax.i64(i64 range(i64 0, -105) %2, i64 256)
+  %3 = tail call i64 @llvm.umax.i64(i64 range(i64 16, -105) %2, i64 256)
   ret i64 %3
 }
 

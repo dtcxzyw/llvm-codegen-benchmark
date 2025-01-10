@@ -1,5 +1,5 @@
 
-; 240 occurrences:
+; 241 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/sscClass.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -23,6 +23,7 @@
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
+; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-doh.ll
 ; cvc5/optimized/infer_bounds.cpp.ll
 ; cvc5/optimized/sine_solver.cpp.ll

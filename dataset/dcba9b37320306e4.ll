@@ -1,5 +1,5 @@
 
-; 799 occurrences:
+; 801 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -71,6 +71,7 @@
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/packlibs.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/sigtool.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -389,6 +390,7 @@
 ; wireshark/optimized/packet-ismacryp.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-ltp.c.ll
+; wireshark/optimized/packet-mpeg-audio.c.ll
 ; wireshark/optimized/packet-ms-mms.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-oran.c.ll
@@ -991,7 +993,7 @@ entry:
   ret i32 %3
 }
 
-; 165 occurrences:
+; 166 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -1140,6 +1142,7 @@ entry:
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
@@ -1446,7 +1449,7 @@ entry:
   ret i32 %3
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -1487,6 +1490,7 @@ entry:
 ; qemu/optimized/block_vhdx-log.c.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:

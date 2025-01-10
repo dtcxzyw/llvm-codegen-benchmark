@@ -1,5 +1,5 @@
 
-; 1947 occurrences:
+; 1946 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDress3.c.ll
@@ -1068,7 +1068,6 @@
 ; linux/optimized/nl80211.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/printk_ringbuffer.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/seq_file.ll
@@ -5462,7 +5461,7 @@ entry:
   ret i32 %2
 }
 
-; 1498 occurrences:
+; 1497 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absVta.c.ll
@@ -5496,7 +5495,6 @@ entry:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/log_format.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
-; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/status.cc.ll
 ; abseil-cpp/optimized/status_test.cc.ll

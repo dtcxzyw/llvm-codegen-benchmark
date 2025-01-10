@@ -15,14 +15,6 @@ func0000000000000010:                   // @func0000000000000010
 	sub	w0, w8, #5
 	ret
                                         // -- End function
-func000000000000006d:                   // @func000000000000006d
-// %bb.0:                               // %entry
-	ubfiz	w8, w2, #2, #4
-	orr	w8, w8, w0
-	add	w8, w1, w8
-	sub	w0, w8, #32
-	ret
-                                        // -- End function
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	ubfiz	w8, w2, #8, #5

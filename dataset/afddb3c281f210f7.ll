@@ -1,7 +1,7 @@
 
-%"class.cv::Mat.3720525" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3720526", %"struct.cv::MatStep.3720527" }
-%"struct.cv::MatSize.3720526" = type { ptr }
-%"struct.cv::MatStep.3720527" = type { ptr, [2 x i64] }
+%"class.cv::Mat.3720475" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3720476", %"struct.cv::MatStep.3720477" }
+%"struct.cv::MatSize.3720476" = type { ptr }
+%"struct.cv::MatStep.3720477" = type { ptr, [2 x i64] }
 
 ; 11 occurrences:
 ; clamav/optimized/pe_icons.c.ll
@@ -76,7 +76,7 @@ entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.cv::Mat.3720525", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::Mat.3720475", ptr %0, i64 %5
   ret ptr %6
 }
 

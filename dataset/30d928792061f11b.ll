@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3747481" = type { float, float }
+%"class.cv::Point_.3747431" = type { float, float }
 
 ; 12 occurrences:
 ; abc/optimized/deflate.c.ll
@@ -69,8 +69,8 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4294967296
   %4 = ashr i64 %3, 32
-  %5 = getelementptr nusw nuw %"class.cv::Point_.3747481", ptr %0, i64 %1
-  %6 = getelementptr nusw %"class.cv::Point_.3747481", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %"class.cv::Point_.3747431", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.cv::Point_.3747431", ptr %5, i64 %4
   ret ptr %6
 }
 

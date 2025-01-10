@@ -1,5 +1,5 @@
 
-; 7882 occurrences:
+; 7870 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1717,7 +1717,6 @@
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/ji6jbkbato2odt0.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
@@ -2367,7 +2366,6 @@
 ; hyperscan/optimized/rose_in_util.cpp.ll
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/ue2string.cpp.ll
-; icu/optimized/alphaindex.ll
 ; icu/optimized/appendable.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/bytestream.ll
@@ -2384,7 +2382,6 @@
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/collationrootelements.ll
 ; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/csrucode.ll
@@ -2404,7 +2401,6 @@
 ; icu/optimized/edits.ll
 ; icu/optimized/emojiprops.ll
 ; icu/optimized/erarules.ll
-; icu/optimized/filteredbrk.ll
 ; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/filterrb.ll
 ; icu/optimized/flagparser.ll
@@ -2448,20 +2444,16 @@
 ; icu/optimized/package.ll
 ; icu/optimized/parse.ll
 ; icu/optimized/persncal.ll
-; icu/optimized/plurfmt.ll
 ; icu/optimized/ppucd.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/punycode.ll
 ; icu/optimized/putil.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/rbbitblb.ll
-; icu/optimized/rbnf.ll
-; icu/optimized/rbt_rule.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/scrptrun.ll
-; icu/optimized/selfmt.ll
 ; icu/optimized/simpleformatter.ll
 ; icu/optimized/simpletz.ll
 ; icu/optimized/smpdtfmt.ll
@@ -2473,9 +2465,6 @@
 ; icu/optimized/timezone.ll
 ; icu/optimized/toolutil.ll
 ; icu/optimized/transreg.ll
-; icu/optimized/tridpars.ll
-; icu/optimized/tzfmt.ll
-; icu/optimized/tzgnames.ll
 ; icu/optimized/tznames_impl.ll
 ; icu/optimized/tzrule.ll
 ; icu/optimized/ubidi.ll
@@ -2523,7 +2512,6 @@
 ; icu/optimized/uscript.ll
 ; icu/optimized/usearch.ll
 ; icu/optimized/ushape.ll
-; icu/optimized/uspoof_conf.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/ustr.ll
 ; icu/optimized/ustring.ll

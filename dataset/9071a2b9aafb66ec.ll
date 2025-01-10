@@ -1,8 +1,8 @@
 
-%"struct.OT::MathGlyphVariantRecord.2734517" = type { %"struct.OT::HBGlyphID16.2734518", %"struct.OT::IntType.2734512" }
-%"struct.OT::HBGlyphID16.2734518" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
+%"struct.OT::MathGlyphVariantRecord.2734483" = type { %"struct.OT::HBGlyphID16.2734484", %"struct.OT::IntType.2734478" }
+%"struct.OT::HBGlyphID16.2734484" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
 
 ; 90 occurrences:
 ; abc/optimized/cuddCompose.c.ll
@@ -219,7 +219,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734517", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734483", ptr %0, i64 %4
   ret ptr %5
 }
 

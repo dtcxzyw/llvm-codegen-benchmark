@@ -14,7 +14,7 @@ entry:
   ret i32 %6
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; bullet3/optimized/b3Solver.ll
 ; cpython/optimized/floatobject.ll
@@ -35,7 +35,6 @@ entry:
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll

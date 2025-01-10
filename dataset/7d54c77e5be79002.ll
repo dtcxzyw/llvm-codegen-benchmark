@@ -52,7 +52,7 @@ entry:
   ret i64 %5
 }
 
-; 54 occurrences:
+; 56 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -98,6 +98,8 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/xdiffi.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll

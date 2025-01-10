@@ -1,5 +1,5 @@
 
-; 1056 occurrences:
+; 1057 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -1032,6 +1032,7 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -1066,7 +1067,7 @@ entry:
   ret i32 %5
 }
 
-; 289 occurrences:
+; 288 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -1351,7 +1352,6 @@ entry:
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; llvm/optimized/X86PadShortFunction.cpp.ll
 ; llvm/optimized/X86PreTileConfig.cpp.ll

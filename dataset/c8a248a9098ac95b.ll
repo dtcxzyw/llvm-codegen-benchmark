@@ -444,7 +444,7 @@ entry:
   ret i32 %7
 }
 
-; 72 occurrences:
+; 70 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; arrow/optimized/utf8.cc.ll
 ; clamav/optimized/Bra.c.ll
@@ -482,7 +482,6 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -490,7 +489,6 @@ entry:
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/Ushort4444Argb.ll
 ; openjdk/optimized/Ushort555Rgb.ll
@@ -528,9 +526,8 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_color.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; spike/optimized/debug_module.ll

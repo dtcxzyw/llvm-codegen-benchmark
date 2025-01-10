@@ -49,11 +49,3 @@ func00000000000000fa:                   # @func00000000000000fa
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func00000000000000fe:                   # @func00000000000000fe
-	slli	a3, a2, 13
-	slli	a2, a2, 15
-	slli	a1, a1, 12
-	subw	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret

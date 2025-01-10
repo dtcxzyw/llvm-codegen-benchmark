@@ -1,5 +1,5 @@
 
-%struct.lz_match.2747992 = type { i16, i16 }
+%struct.lz_match.2747958 = type { i16, i16 }
 
 ; 17 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -246,7 +246,7 @@ entry:
 define i64 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -4
-  %4 = getelementptr nusw %struct.lz_match.2747992, ptr %3, i64 %1
+  %4 = getelementptr nusw %struct.lz_match.2747958, ptr %3, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %6, %5

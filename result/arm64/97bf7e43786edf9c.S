@@ -16,3 +16,14 @@ func0000000000000004:                   // @func0000000000000004
 	madd	x1, x11, x8, x10
 	ret
                                         // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	mov	x8, #-7378697629483820647       // =0x9999999999999999
+	orr	x9, x0, x2
+	orr	x11, x1, x3
+	movk	x8, #6553, lsl #48
+	umulh	x10, x9, x8
+	mul	x0, x9, x8
+	madd	x1, x11, x8, x10
+	ret
+                                        // -- End function

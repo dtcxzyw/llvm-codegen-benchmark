@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/utilNam.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; wireshark/optimized/packet-h264.c.ll
@@ -155,8 +156,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; icu/optimized/gencnvex.ll
+; icu/optimized/swapimpl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -164,18 +166,6 @@ entry:
   %4 = shl i32 %3, 1
   %5 = add nsw i32 %0, 128
   %6 = add i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; icu/optimized/swapimpl.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = shl i32 %3, 1
-  %5 = add nsw i32 %0, 128
-  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

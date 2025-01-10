@@ -2,7 +2,7 @@ func0000000000000130:                   // @func0000000000000130
 // %bb.0:                               // %entry
 	add	x8, x1, w2, uxtw
 	add	x8, x8, x0, lsl #2
-	sub	x0, x8, #540
+	sub	x0, x8, #524
 	ret
                                         // -- End function
 func00000000000001ff:                   // @func00000000000001ff

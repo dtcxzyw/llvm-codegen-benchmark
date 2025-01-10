@@ -22,13 +22,13 @@ func0000000000000041:                   # @func0000000000000041
 .LCPI2_0:
 	.quad	536870912                       # 0x20000000
 .LCPI2_1:
-	.long	18                              # 0x12
+	.long	15                              # 0xf
 .LCPI2_2:
-	.long	12                              # 0xc
+	.long	18                              # 0x12
 func000000000000000c:                   # @func000000000000000c
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
-	vpbroadcastd	.LCPI2_1(%rip), %xmm0   # xmm0 = [18,18,18,18]
-	vpbroadcastd	.LCPI2_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [12,12,12,12]
+	vpbroadcastd	.LCPI2_1(%rip), %xmm0   # xmm0 = [15,15,15,15]
+	vpbroadcastd	.LCPI2_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [18,18,18,18]
 	vzeroupper
 	retq
 .LCPI3_0:

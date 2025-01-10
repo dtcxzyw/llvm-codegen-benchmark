@@ -1,8 +1,8 @@
 
-%"class.std::vector.60.3360661" = type { %"struct.std::_Vector_base.61.3360686" }
-%"struct.std::_Vector_base.61.3360686" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3360687" }
-%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3360687" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3360688" }
-%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3360688" = type { ptr, ptr, ptr }
+%"class.std::vector.60.3360627" = type { %"struct.std::_Vector_base.61.3360652" }
+%"struct.std::_Vector_base.61.3360652" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3360653" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl.3360653" = type { %"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3360654" }
+%"struct.std::_Vector_base<float, std::allocator<float>>::_Vector_impl_data.3360654" = type { ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; gromacs/optimized/enerdata_utils.cpp.ll
@@ -16,7 +16,7 @@ define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i64 2, i64 1
-  %4 = getelementptr nusw nuw [5 x %"class.std::vector.60.3360661"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [5 x %"class.std::vector.60.3360627"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

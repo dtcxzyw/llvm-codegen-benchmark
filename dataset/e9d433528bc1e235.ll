@@ -1,9 +1,9 @@
 
-%"struct.drjit::Array.57.2602654" = type { %"struct.drjit::StaticArrayImpl.58.2602655" }
-%"struct.drjit::StaticArrayImpl.58.2602655" = type { <4 x float> }
-%struct.NvmeSecCtrlEntry.2708941 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
-%class.btVector3.2819523 = type { [4 x float] }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
+%"struct.drjit::Array.57.2602621" = type { %"struct.drjit::StaticArrayImpl.58.2602622" }
+%"struct.drjit::StaticArrayImpl.58.2602622" = type { <4 x float> }
+%struct.NvmeSecCtrlEntry.2708907 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
+%class.btVector3.2819489 = type { [4 x float] }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
 
 ; 54 occurrences:
 ; abc/optimized/abcIfif.c.ll
@@ -68,8 +68,7 @@ entry:
   ret ptr %4
 }
 
-; 315 occurrences:
-; abc/optimized/abc.c.ll
+; 310 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -129,7 +128,6 @@ entry:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -230,14 +228,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openspiel/optimized/DealerPar.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openusd/optimized/cdef.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -285,7 +281,6 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; tinyrenderer/optimized/main.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
@@ -387,12 +382,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [4 x %"struct.drjit::Array.57.2602654"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [4 x %"struct.drjit::Array.57.2602621"], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw nuw float, ptr %3, i64 %0
   ret ptr %4
 }
 
-; 211 occurrences:
+; 218 occurrences:
+; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
@@ -410,6 +406,7 @@ entry:
 ; coreutils-rs/optimized/2xf0tcanjahg0sla.ll
 ; coreutils-rs/optimized/5d0bhe82sp4etblu.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -433,15 +430,18 @@ entry:
 ; ockam-rs/optimized/2odlvw84qikntvno.ll
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
 ; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/metaspaceArena.ll
 ; openspiel/optimized/DealerPar.cpp.ll
+; openusd/optimized/cdef.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; pyo3-rs/optimized/36bd5489ry9qsmb9.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; regex-rs/optimized/gbxkn0az9l87aop.ll
 ; ripgrep-rs/optimized/1fbennvriruc2bmt.ll
@@ -483,6 +483,8 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; syn/optimized/4llvvcm7ykus6q9g.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
 ; tls-rs/optimized/2c05x43dk4j7ivkd.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
@@ -627,12 +629,47 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708941], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708907], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   ret ptr %4
 }
 
-; 29 occurrences:
+; 26 occurrences:
+; abc/optimized/nwkTiming.c.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/headers.c.ll
+; cmake/optimized/ntlm.c.ll
+; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; curl/optimized/libcurl_la-headers.ll
+; curl/optimized/libcurl_la-ntlm.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; icu/optimized/ppucd.ll
+; libjpeg-turbo/optimized/jcmaster.c.ll
+; mimalloc/optimized/segment.c.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/jcmaster.ll
+; openjdk/optimized/logOutput.ll
+; openspiel/optimized/DealerPar.cpp.ll
+; openspiel/optimized/Moves.cpp.ll
+; php/optimized/zend_compile.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw [10 x [64 x i32]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw i32, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 24 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -645,17 +682,12 @@ entry:
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/ter_db.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; imgui/optimized/imgui.cpp.ll
-; libjpeg-turbo/optimized/jcmaster.c.ll
 ; libpng/optimized/pngpread.c.ll
 ; mimalloc/optimized/alloc-aligned.c.ll
 ; mimalloc/optimized/alloc.c.ll
 ; mimalloc/optimized/heap.c.ll
 ; opencv/optimized/hough.cpp.ll
-; openjdk/optimized/jcmaster.ll
-; openjdk/optimized/logOutput.ll
 ; openjdk/optimized/pngpread.ll
 ; openspiel/optimized/Par.cpp.ll
 ; php/optimized/string.ll
@@ -665,34 +697,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [10 x [64 x i32]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw i32, ptr %3, i64 %0
-  ret ptr %4
-}
-
-; 18 occurrences:
-; abc/optimized/nwkTiming.c.ll
-; bullet3/optimized/b3Generic6DofConstraint.ll
-; bullet3/optimized/btGeneric6DofConstraint.ll
-; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; cmake/optimized/headers.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
-; curl/optimized/libcurl_la-headers.ll
-; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_tonecurve.c.ll
-; icu/optimized/ppucd.ll
-; mimalloc/optimized/segment.c.ll
-; nuklear/optimized/unity.c.ll
-; openspiel/optimized/DealerPar.cpp.ll
-; openspiel/optimized/Moves.cpp.ll
-; php/optimized/zend_compile.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw [1 x i8], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [8 x i8], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   ret ptr %4
 }
@@ -709,20 +714,21 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [3 x %class.btVector3.2819489], ptr %1, i64 0, i64 %2
   %4 = getelementptr float, ptr %3, i64 %0
   ret ptr %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
+; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -732,8 +738,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   ret ptr %4
 }
 

@@ -44,8 +44,7 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 10 occurrences:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; libwebp/optimized/frame_dec.c.ll
@@ -53,11 +52,9 @@ entry:
 ; linux/optimized/proc_sysctl.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; oiio/optimized/Codec.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/vmIntrinsics.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; postgres/optimized/slru.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:

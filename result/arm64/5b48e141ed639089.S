@@ -4,12 +4,6 @@ func0000000000000026:                   // @func0000000000000026
 	cset	w0, le
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
-	cmp	w0, w1
-	cset	w0, ge
-	ret
-                                        // -- End function
 func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	cmp	w0, w1
@@ -51,6 +45,12 @@ func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	sub	w8, w0, w1
 	lsr	w0, w8, #31
+	ret
+                                        // -- End function
+func000000000000002a:                   // @func000000000000002a
+// %bb.0:                               // %entry
+	cmp	w0, w1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014

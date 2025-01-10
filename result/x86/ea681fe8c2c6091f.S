@@ -34,3 +34,9 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
+func00000000000001a4:                   # @func00000000000001a4
+	cmpl	%edx, %esi
+	cmovbl	%esi, %edx
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq

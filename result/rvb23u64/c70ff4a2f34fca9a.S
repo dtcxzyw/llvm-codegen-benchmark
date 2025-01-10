@@ -6,8 +6,7 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
-	lui	a3, 16
-	sllw	a2, a3, a2
+	bset	a2, zero, a2
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret

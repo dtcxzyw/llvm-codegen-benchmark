@@ -1,5 +1,5 @@
 
-%"struct.V3NumberData::ValueAndX.2752186" = type { i32, i32 }
+%"struct.V3NumberData::ValueAndX.2752152" = type { i32, i32 }
 
 ; 3 occurrences:
 ; linux/optimized/lzo1x_compress.ll
@@ -45,7 +45,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = call range(i64 0, 65) i64 @llvm.cttz.i64(i64 %1, i1 true)
   %3 = lshr i64 %2, 5
-  %4 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2752186", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.V3NumberData::ValueAndX.2752152", ptr %0, i64 %3
   ret ptr %4
 }
 

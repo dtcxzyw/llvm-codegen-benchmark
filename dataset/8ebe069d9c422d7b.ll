@@ -1,5 +1,5 @@
 
-%struct.Mio_Cell2_t_.2876906 = type { ptr, ptr, i32, float, i64, i64, i32, [6 x i32], ptr }
+%struct.Mio_Cell2_t_.2876872 = type { ptr, ptr, i32, float, i64, i64, i32, [6 x i32], ptr }
 
 ; 118 occurrences:
 ; oiio/optimized/argparse.cpp.ll
@@ -135,7 +135,7 @@ entry:
 define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr nusw %struct.Mio_Cell2_t_.2876906, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.Mio_Cell2_t_.2876872, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }

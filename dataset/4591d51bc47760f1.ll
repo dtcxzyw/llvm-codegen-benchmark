@@ -1,11 +1,11 @@
 
-%struct.NSVGpoint.2600673 = type { float, float, float, float, float, float, float, i8 }
-%struct.UnsetAddr.2600852 = type { i32, ptr }
-%struct.pm_constant_t.2600929 = type { ptr, i64 }
-%struct.raw_extension_st.2633842 = type { %struct.PACKET.2633843, i32, i32, i32, i64 }
-%struct.PACKET.2633843 = type { ptr, i64 }
+%struct.NSVGpoint.2600640 = type { float, float, float, float, float, float, float, i8 }
+%struct.UnsetAddr.2600819 = type { i32, ptr }
+%struct.pm_constant_t.2600896 = type { ptr, i64 }
+%struct.raw_extension_st.2633809 = type { %struct.PACKET.2633810, i32, i32, i32, i64 }
+%struct.PACKET.2633810 = type { ptr, i64 }
 
-; 1069 occurrences:
+; 1068 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcBalance.c.ll
@@ -319,7 +319,6 @@
 ; linux/optimized/hid-pidff.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hub.ll
-; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/indirect.ll
@@ -1079,7 +1078,7 @@
 define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.NSVGpoint.2600673, ptr %0, i64 %2
+  %3 = getelementptr %struct.NSVGpoint.2600640, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   ret ptr %4
 }
@@ -1483,7 +1482,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.UnsetAddr.2600852, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.UnsetAddr.2600819, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -4257,7 +4256,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.pm_constant_t.2600929, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.pm_constant_t.2600896, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -7626,7 +7625,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.raw_extension_st.2633842, ptr %0, i64 %2, i32 0, i32 1
+  %3 = getelementptr %struct.raw_extension_st.2633809, ptr %0, i64 %2, i32 0, i32 1
   ret ptr %3
 }
 

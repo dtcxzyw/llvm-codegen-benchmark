@@ -1,5 +1,5 @@
 
-; 354 occurrences:
+; 353 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -248,7 +248,6 @@
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/random.ll
 ; ruby/optimized/string.ll
-; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/mmu.ll
@@ -1109,7 +1108,7 @@ entry:
   ret i64 %3
 }
 
-; 169 occurrences:
+; 168 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec16.c.ll
 ; arrow/optimized/align_util.cc.ll
@@ -1151,7 +1150,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; git/optimized/xhistogram.ll
 ; git/optimized/xprepare.ll
 ; gromacs/optimized/biasstate.cpp.ll

@@ -20,9 +20,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll

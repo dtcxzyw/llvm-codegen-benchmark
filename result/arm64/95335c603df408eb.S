@@ -199,12 +199,12 @@ func0000000000000084:                   // @func0000000000000084
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000181:                   // @func0000000000000181
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	add	x8, x1, x2
 	sub	x9, x0, #1
 	cmp	x9, x8
-	cset	w0, eq
+	cset	w0, ne
 	ret
                                         // -- End function
 func00000000000000a1:                   // @func00000000000000a1
@@ -277,6 +277,14 @@ func0000000000000184:                   // @func0000000000000184
 	add	x9, x0, #1
 	cmp	x9, x8
 	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000181:                   // @func0000000000000181
+// %bb.0:                               // %entry
+	add	x8, x1, x2
+	add	x9, x0, #1
+	cmp	x9, x8
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024

@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
-	xorl	%eax, %eax
-	cmpl	$6, %esi
-	cmovnel	%edi, %eax
+	movl	%edi, %eax
+	testl	%esi, %esi
+	cmovel	%esi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax

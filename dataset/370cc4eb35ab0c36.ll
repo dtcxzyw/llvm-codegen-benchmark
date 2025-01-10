@@ -1,9 +1,8 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; openjdk/optimized/compilationMemoryStatistic.ll
 ; openjdk/optimized/systemDictionary.ll

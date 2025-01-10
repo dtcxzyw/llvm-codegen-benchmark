@@ -203,6 +203,12 @@ func00000000000002d4:                   # @func00000000000002d4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+func00000000000002cc:                   # @func00000000000002cc
+	slt	a1, a1, a2
+	xori	a1, a1, 1
+	slti	a0, a0, 0
+	or	a0, a0, a1
+	ret
 func0000000000000062:                   # @func0000000000000062
 	addi	a2, a2, -2
 	xor	a0, a0, a1
@@ -330,12 +336,6 @@ func0000000000000070:                   # @func0000000000000070
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2
-	ret
-func00000000000002cc:                   # @func00000000000002cc
-	slt	a1, a1, a2
-	xori	a1, a1, 1
-	slti	a0, a0, 0
-	or	a0, a0, a1
 	ret
 func0000000000000670:                   # @func0000000000000670
 	sltu	a1, a1, a2

@@ -1,6 +1,6 @@
 
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
-%"class.irr::core::vector3d.2702987" = type { float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955" = type { float, %"class.irr::core::vector3d.2702953" }
+%"class.irr::core::vector3d.2702953" = type { float, float, float }
 
 ; 10 occurrences:
 ; linux/optimized/datagram.ll
@@ -144,9 +144,9 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %4, i64 %5
+  %6 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %4, i64 %5
   ret ptr %6
 }
 

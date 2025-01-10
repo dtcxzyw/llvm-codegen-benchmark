@@ -604,7 +604,7 @@ entry:
   ret i8 %2
 }
 
-; 295 occurrences:
+; 296 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -781,6 +781,7 @@ entry:
 ; recastnavigation/optimized/Tests_RecastFilter.cpp.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll

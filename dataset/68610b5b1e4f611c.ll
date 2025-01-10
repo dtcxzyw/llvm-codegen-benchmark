@@ -112,13 +112,12 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; icu/optimized/ustdio.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {

@@ -12,9 +12,10 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:

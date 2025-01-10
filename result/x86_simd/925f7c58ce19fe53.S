@@ -41,25 +41,9 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI3_0:
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-	.short	11                              # 0xb
-.LCPI3_1:
-	.long	11                              # 0xb
-func0000000000000023:                   # @func0000000000000023
-	vpcmpnltuw	.LCPI3_0(%rip), %xmm1, %k1
-	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	retq
-.LCPI4_0:
 	.long	4294967284                      # 0xfffffff4
 func0000000000000009:                   # @func0000000000000009
 	vptestmw	%xmm1, %xmm1, %k1
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

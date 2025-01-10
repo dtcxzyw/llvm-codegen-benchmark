@@ -27,13 +27,13 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8388608
   %4 = lshr i32 %3, %1
   %5 = or i32 %4, %0
   %6 = trunc nuw i32 %5 to i16
-  %7 = add i16 %6, 1
+  %7 = add nuw i16 %6, 1
   ret i16 %7
 }
 

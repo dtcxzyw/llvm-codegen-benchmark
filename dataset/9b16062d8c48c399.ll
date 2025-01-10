@@ -117,12 +117,11 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; cpython/optimized/compile.ll
 ; git/optimized/diff.ll
 ; git/optimized/fmt-merge-msg.ll
 ; git/optimized/packfile.ll
-; linux/optimized/scm.ll
 ; linux/optimized/vc_screen.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -131,19 +130,17 @@ entry:
 ; openblas/optimized/dtgevc.c.ll
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; php/optimized/fastcgi.ll
-; postgres/optimized/backend_status.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/regexp.ll
 ; postgres/optimized/tsrank.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; wireshark/optimized/column_list_model.cpp.ll
 ; wireshark/optimized/filter_list_model.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 16
+  %3 = add i32 %2, 8192
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = sext i32 %4 to i64
   ret i64 %5

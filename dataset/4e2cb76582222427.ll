@@ -2154,7 +2154,7 @@ entry:
   ret i1 %2
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -2179,6 +2179,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; opencc/optimized/tail.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wireshark/optimized/byte_view_text.cpp.ll

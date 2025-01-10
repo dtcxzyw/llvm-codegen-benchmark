@@ -1,5 +1,5 @@
 
-%struct.rlimit.3536714 = type { i64, i64 }
+%struct.rlimit.3536680 = type { i64, i64 }
 
 ; 18 occurrences:
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
@@ -35,7 +35,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr [16 x %struct.rlimit.3536714], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [16 x %struct.rlimit.3536680], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

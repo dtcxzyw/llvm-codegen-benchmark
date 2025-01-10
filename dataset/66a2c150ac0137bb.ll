@@ -1,5 +1,5 @@
 
-; 3911 occurrences:
+; 3913 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -2549,11 +2549,13 @@
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_lib.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
+; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; openssl/optimized/libtestutil-lib-opt.ll
@@ -3919,7 +3921,7 @@ entry:
   ret i1 %3
 }
 
-; 750 occurrences:
+; 747 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -4077,7 +4079,6 @@ entry:
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_misc_opt.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
@@ -4474,8 +4475,6 @@ entry:
 ; openmpi/optimized/pmix_bitmap.ll
 ; openspiel/optimized/combinatorics.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
 ; openusd/optimized/collisionGroup.cpp.ll
 ; openusd/optimized/env.cpp.ll

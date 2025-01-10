@@ -1,17 +1,17 @@
 
-%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
-%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
-%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
-%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
-%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
-%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
-%"struct.std::_Head_base.386.3474879" = type { ptr }
-%struct.rwlock_t.3551795 = type { %struct.qrwlock.3551796 }
-%struct.qrwlock.3551796 = type { %union.anon.2.3551797, %struct.qspinlock.3551786 }
-%union.anon.2.3551797 = type { %struct.atomic_t.3551773 }
-%struct.atomic_t.3551773 = type { i32 }
-%struct.qspinlock.3551786 = type { %union.anon.3551787 }
-%union.anon.3551787 = type { %struct.atomic_t.3551773 }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474839" = type { %"class.std::unique_ptr.379.3474840" }
+%"class.std::unique_ptr.379.3474840" = type { %"struct.std::__uniq_ptr_data.380.3474841" }
+%"struct.std::__uniq_ptr_data.380.3474841" = type { %"class.std::__uniq_ptr_impl.381.3474842" }
+%"class.std::__uniq_ptr_impl.381.3474842" = type { %"class.std::tuple.382.3474843" }
+%"class.std::tuple.382.3474843" = type { %"struct.std::_Tuple_impl.383.3474844" }
+%"struct.std::_Tuple_impl.383.3474844" = type { %"struct.std::_Head_base.386.3474845" }
+%"struct.std::_Head_base.386.3474845" = type { ptr }
+%struct.rwlock_t.3551761 = type { %struct.qrwlock.3551762 }
+%struct.qrwlock.3551762 = type { %union.anon.2.3551763, %struct.qspinlock.3551752 }
+%union.anon.2.3551763 = type { %struct.atomic_t.3551739 }
+%struct.atomic_t.3551739 = type { i32 }
+%struct.qspinlock.3551752 = type { %union.anon.3551753 }
+%union.anon.3551753 = type { %struct.atomic_t.3551739 }
 
 ; 2 occurrences:
 ; ruby/optimized/thread.ll
@@ -306,8 +306,8 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %0, i64 %1
-  %4 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %3, i64 %.neg
+  %3 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %0, i64 %1
+  %4 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -329,7 +329,7 @@ define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2
   %4 = sub nuw i64 %1, %3
-  %5 = getelementptr %struct.rwlock_t.3551795, ptr %0, i64 %4
+  %5 = getelementptr %struct.rwlock_t.3551761, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
-%"class.hermes::vm::HermesValue.3076856" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076821" = type { %"class.hermes::vm::HermesValue.3076822" }
+%"class.hermes::vm::HermesValue.3076822" = type { i64 }
 
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
@@ -213,7 +213,7 @@ entry:
 define i1 @func0000000000000761(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076821", ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp eq ptr %4, %5
   ret i1 %6

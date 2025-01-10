@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:

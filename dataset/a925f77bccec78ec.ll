@@ -222,7 +222,7 @@ entry:
   ret i32 %4
 }
 
-; 163 occurrences:
+; 165 occurrences:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -238,6 +238,7 @@ entry:
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/doh.c.ll
 ; cmake/optimized/x86.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/instrumentation.ll
@@ -385,6 +386,7 @@ entry:
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/shregmap.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -394,7 +396,7 @@ entry:
   ret i32 %4
 }
 
-; 41 occurrences:
+; 38 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
@@ -418,12 +420,9 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/utf16_le.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/ui_vnc.c.ll

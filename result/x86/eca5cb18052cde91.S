@@ -5,13 +5,6 @@ func0000000000000174:                   # @func0000000000000174
 	cmpl	%eax, %edi
 	setb	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
-	orl	%edx, %esi
-	movzwl	%si, %eax
-	addl	$-3, %edi
-	cmpl	%eax, %edi
-	setl	%al
-	retq
 func0000000000000106:                   # @func0000000000000106
 	orl	%edx, %esi
 	movzwl	%si, %eax

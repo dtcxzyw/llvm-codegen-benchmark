@@ -260,12 +260,6 @@ func00000000000001f8:                   // @func00000000000001f8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001aa:                   // @func00000000000001aa
-// %bb.0:                               // %entry
-	cmp	x1, x0
-	cset	w0, ge
-	ret
-                                        // -- End function
 func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
 	cmp	x1, x0

@@ -115,10 +115,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
-; linux/optimized/set_memory.ll
 ; opencv/optimized/resize.cpp.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll

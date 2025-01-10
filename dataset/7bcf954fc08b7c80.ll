@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/af_netlink.ll
-; llama.cpp/optimized/ggml.c.ll
 ; lvgl/optimized/lv_buttonmatrix.ll
 ; openusd/optimized/decodetxb.c.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll

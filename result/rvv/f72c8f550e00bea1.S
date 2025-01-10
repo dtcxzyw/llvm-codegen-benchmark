@@ -105,13 +105,13 @@ func0000000000000018:                   # @func0000000000000018
 	vand.vi	v8, v8, -4
 	vmsne.vi	v0, v8, 4
 	ret
-func0000000000000031:                   # @func0000000000000031
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v8, 3
-	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 3
+	ret
+func0000000000000031:                   # @func0000000000000031
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v0, v8, 8
 	ret
 func000000000000007c:                   # @func000000000000007c
 	vsetivli	zero, 4, e64, m2, ta, ma

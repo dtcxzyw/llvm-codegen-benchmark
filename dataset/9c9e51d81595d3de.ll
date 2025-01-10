@@ -1,7 +1,7 @@
 
-%"struct.std::atomic.6.2601890" = type { %"struct.std::__atomic_base.7.2601891" }
-%"struct.std::__atomic_base.7.2601891" = type { ptr }
-%struct.CurveAnchorPoint.2874017 = type { float, float }
+%"struct.std::atomic.6.2601857" = type { %"struct.std::__atomic_base.7.2601858" }
+%"struct.std::__atomic_base.7.2601858" = type { ptr }
+%struct.CurveAnchorPoint.2873983 = type { float, float }
 
 ; 109 occurrences:
 ; cpython/optimized/_zoneinfo.ll
@@ -1059,7 +1059,7 @@ define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw nuw [0 x %"struct.std::atomic.6.2601890"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [0 x %"struct.std::atomic.6.2601857"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -1554,7 +1554,7 @@ define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 24
-  %4 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2874017], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [20 x %struct.CurveAnchorPoint.2873983], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

@@ -1,6 +1,6 @@
 
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%"struct.net::HpackHuffmanTable::DecodeEntry.3061345" = type { i8, i8, i16 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%"struct.net::HpackHuffmanTable::DecodeEntry.3061311" = type { i8, i8, i16 }
 
 ; 8 occurrences:
 ; abc/optimized/cloud.c.ll
@@ -16,7 +16,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -28,7 +28,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.3061345", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.net::HpackHuffmanTable::DecodeEntry.3061311", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

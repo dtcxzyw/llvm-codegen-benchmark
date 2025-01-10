@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	126                             # 0x7e
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000ca:                   # @func00000000000000ca
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [126,126,126,126,126,126,126,126]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpsrlvd	%ymm2, %ymm1, %ymm1

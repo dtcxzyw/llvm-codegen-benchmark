@@ -209,9 +209,8 @@ entry:
   ret i64 %2
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; abseil-cpp/optimized/escaping.cc.ll
-; arrow/optimized/decimal.cc.ll
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/Base64.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -290,7 +289,8 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; arrow/optimized/decimal.cc.ll
 ; cmake/optimized/mime.c.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; curl/optimized/libcurl_la-mime.ll

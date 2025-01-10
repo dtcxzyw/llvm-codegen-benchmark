@@ -166,3 +166,10 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+func00000000000000f8:                   # @func00000000000000f8
+	vpsrlq	$3, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpcmpnleuq	%ymm0, %ymm1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

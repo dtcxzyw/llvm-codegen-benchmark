@@ -1,6 +1,6 @@
 
-%struct.hlist_head.3535820 = type { ptr }
-%struct.hlist_nulls_head.3558355 = type { ptr }
+%struct.hlist_head.3535786 = type { ptr }
+%struct.hlist_nulls_head.3558321 = type { ptr }
 
 ; 3 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
@@ -61,7 +61,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %struct.hlist_head.3535820, ptr %0, i64 %5
+  %6 = getelementptr %struct.hlist_head.3535786, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %struct.hlist_nulls_head.3558355, ptr %0, i64 %5
+  %6 = getelementptr %struct.hlist_nulls_head.3558321, ptr %0, i64 %5
   ret ptr %6
 }
 

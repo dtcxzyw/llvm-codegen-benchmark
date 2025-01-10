@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; assimp/optimized/ProcessHelper.cpp.ll
+; libpng/optimized/png.c.ll
+; linux/optimized/xhci-mem.ll
+; wireshark/optimized/packet-ieee80211-prism.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 3
+  %3 = select i1 %2, i32 65792, i32 256
+  %4 = shl nuw nsw i32 %3, %0
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; Function Attrs: nounwind
@@ -10,26 +24,14 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; libpng/optimized/png.c.ll
-; linux/optimized/xhci-mem.ll
-; wireshark/optimized/packet-ieee80211-prism.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 2, i32 3
-  %4 = shl nuw nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/dauNonDsd.c.ll
 ; linux/optimized/intel_tc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = select i1 %2, i32 3, i32 12
+  %3 = select i1 %2, i32 1, i32 3
   %4 = shl i32 %3, %0
   ret i32 %4
 }

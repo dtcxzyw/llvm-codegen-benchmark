@@ -16,12 +16,3 @@ func0000000000000010:                   // @func0000000000000010
 	add	w0, w0, w8
 	ret
                                         // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	mov	w8, #3                          // =0x3
-	cmp	w2, #0
-	csinc	w8, w8, wzr, ne
-	lsl	w8, w1, w8
-	add	w0, w0, w8
-	ret
-                                        // -- End function

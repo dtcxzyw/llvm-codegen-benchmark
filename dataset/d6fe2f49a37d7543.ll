@@ -52,11 +52,11 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 14
   %3 = or disjoint i32 %2, 16079
-  %4 = sub nsw i32 %0, %3
+  %4 = sub nuw nsw i32 %0, %3
   ret i32 %4
 }
 

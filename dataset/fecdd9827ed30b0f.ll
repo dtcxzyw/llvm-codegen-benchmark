@@ -36,55 +36,7 @@ entry:
   ret ptr %6
 }
 
-; 37 occurrences:
-; abc/optimized/giaEmbed.c.ll
-; abc/optimized/giaGlitch.c.ll
-; abc/optimized/giaStr.c.ll
-; abc/optimized/luckyFast16.c.ll
-; arrow/optimized/feather.cc.ll
-; arrow/optimized/metadata_internal.cc.ll
-; arrow/optimized/reader.cc.ll
-; cmake/optimized/zstd_decompress_block.c.ll
-; draco/optimized/sequential_integer_attribute_encoder.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
-; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
-; flatbuffers/optimized/binary_annotator.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
-; flatbuffers/optimized/reflection.cpp.ll
-; icu/optimized/rematch.ll
-; icu/optimized/uresdata.ll
-; icu/optimized/ustring.ll
-; libwebp/optimized/backward_references_enc.c.ll
-; lightgbm/optimized/train_share_states.cpp.ll
-; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
-; lz4/optimized/lz4.c.ll
-; oiio/optimized/exroutput.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
-; opencv/optimized/tflite_importer.cpp.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-rsa_oaep.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
-; openusd/optimized/lz4.cpp.ll
-; php/optimized/fastcgi.ll
-; spike/optimized/fdt_sw.ll
-; wolfssl/optimized/rsa.c.ll
-; zstd/optimized/zstd_decompress_block.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 136 occurrences:
+; 138 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -185,10 +137,12 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; openusd/optimized/restoration.c.ll
@@ -227,6 +181,52 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 35 occurrences:
+; abc/optimized/giaEmbed.c.ll
+; abc/optimized/giaGlitch.c.ll
+; abc/optimized/giaStr.c.ll
+; abc/optimized/luckyFast16.c.ll
+; arrow/optimized/feather.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; arrow/optimized/reader.cc.ll
+; cmake/optimized/zstd_decompress_block.c.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
+; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
+; flatbuffers/optimized/binary_annotator.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; icu/optimized/rematch.ll
+; icu/optimized/uresdata.ll
+; icu/optimized/ustring.ll
+; libwebp/optimized/backward_references_enc.c.ll
+; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lz4/optimized/lz4.c.ll
+; oiio/optimized/exroutput.cpp.ll
+; opencv/optimized/oilpainting.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
+; openssl/optimized/libcrypto-lib-rsa_oaep.ll
+; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/fastcgi.ll
+; spike/optimized/fdt_sw.ll
+; wolfssl/optimized/rsa.c.ll
+; zstd/optimized/zstd_decompress_block.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }

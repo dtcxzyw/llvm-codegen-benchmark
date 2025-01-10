@@ -16,6 +16,15 @@ func0000000000000008:                   // @func0000000000000008
 	sub	w0, w8, #4
 	ret
                                         // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	sub	w9, w0, w1
+	mov	w8, #11                         // =0xb
+	cmp	w9, #11
+	csel	w8, w9, w8, lt
+	sub	w0, w8, #7
+	ret
+                                        // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
 	sub	w9, w0, w1

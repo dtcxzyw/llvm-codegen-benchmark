@@ -34,12 +34,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
-	shrl	$9, %edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
-	retq
 func0000000000000081:                   # @func0000000000000081
 	shrl	$9, %edx
 	addq	%rsi, %rdx
@@ -63,10 +57,4 @@ func00000000000000f8:                   # @func00000000000000f8
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	seta	%al
-	retq
-func00000000000000e6:                   # @func00000000000000e6
-	shrl	%edx
-	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setl	%al
 	retq

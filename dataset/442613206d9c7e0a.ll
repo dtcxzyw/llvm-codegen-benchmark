@@ -1,26 +1,26 @@
 
-%"class.asmjit::_abi_1_10::RALiveSpans.2603649" = type { %"class.asmjit::_abi_1_10::ZoneVector.28.2603650" }
-%"class.asmjit::_abi_1_10::ZoneVector.28.2603650" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" }
-%"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" = type { ptr, i32, i32 }
-%"struct.rocksdb::BufferInfo.2627093" = type { %"class.rocksdb::AlignedBuffer.2627094", i64, i64, i8, ptr, %"class.std::function.2.2627095", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2627094" = type { i64, %"class.std::unique_ptr.2627096", i64, i64, ptr }
-%"class.std::unique_ptr.2627096" = type { %"struct.std::__uniq_ptr_data.2627097" }
-%"struct.std::__uniq_ptr_data.2627097" = type { %"class.std::__uniq_ptr_impl.2627098" }
-%"class.std::__uniq_ptr_impl.2627098" = type { %"class.std::tuple.2627099" }
-%"class.std::tuple.2627099" = type { %"struct.std::_Tuple_impl.2627100" }
-%"struct.std::_Tuple_impl.2627100" = type { %"struct.std::_Head_base.1.2627101" }
-%"struct.std::_Head_base.1.2627101" = type { ptr }
-%"class.std::function.2.2627095" = type { %"class.std::_Function_base.2627102", ptr }
-%"class.std::_Function_base.2627102" = type { %"union.std::_Any_data.2627103", ptr }
-%"union.std::_Any_data.2627103" = type { %"union.std::_Nocopy_types.2627104" }
-%"union.std::_Nocopy_types.2627104" = type { { i64, i64 } }
-%struct.watch_list.2876306 = type { i32, i32, i32, ptr }
-%struct.ipv6_saddr_score.3535936 = type { i32, i32, ptr, [1 x i64], i32, i32 }
-%struct.BufferDesc.3654188 = type { %struct.buftag.3654186, i32, %struct.pg_atomic_uint32.3654189, i32, i32, %struct.LWLock.3654190 }
-%struct.buftag.3654186 = type { i32, i32, i32, i32, i32 }
-%struct.pg_atomic_uint32.3654189 = type { i32 }
-%struct.LWLock.3654190 = type { i16, %struct.pg_atomic_uint32.3654189, %struct.proclist_head.3654191 }
-%struct.proclist_head.3654191 = type { i32, i32 }
+%"class.asmjit::_abi_1_10::RALiveSpans.2603616" = type { %"class.asmjit::_abi_1_10::ZoneVector.28.2603617" }
+%"class.asmjit::_abi_1_10::ZoneVector.28.2603617" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" }
+%"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" = type { ptr, i32, i32 }
+%"struct.rocksdb::BufferInfo.2627060" = type { %"class.rocksdb::AlignedBuffer.2627061", i64, i64, i8, ptr, %"class.std::function.2.2627062", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2627061" = type { i64, %"class.std::unique_ptr.2627063", i64, i64, ptr }
+%"class.std::unique_ptr.2627063" = type { %"struct.std::__uniq_ptr_data.2627064" }
+%"struct.std::__uniq_ptr_data.2627064" = type { %"class.std::__uniq_ptr_impl.2627065" }
+%"class.std::__uniq_ptr_impl.2627065" = type { %"class.std::tuple.2627066" }
+%"class.std::tuple.2627066" = type { %"struct.std::_Tuple_impl.2627067" }
+%"struct.std::_Tuple_impl.2627067" = type { %"struct.std::_Head_base.1.2627068" }
+%"struct.std::_Head_base.1.2627068" = type { ptr }
+%"class.std::function.2.2627062" = type { %"class.std::_Function_base.2627069", ptr }
+%"class.std::_Function_base.2627069" = type { %"union.std::_Any_data.2627070", ptr }
+%"union.std::_Any_data.2627070" = type { %"union.std::_Nocopy_types.2627071" }
+%"union.std::_Nocopy_types.2627071" = type { { i64, i64 } }
+%struct.watch_list.2876272 = type { i32, i32, i32, ptr }
+%struct.ipv6_saddr_score.3535902 = type { i32, i32, ptr, [1 x i64], i32, i32 }
+%struct.BufferDesc.3654154 = type { %struct.buftag.3654152, i32, %struct.pg_atomic_uint32.3654155, i32, i32, %struct.LWLock.3654156 }
+%struct.buftag.3654152 = type { i32, i32, i32, i32, i32 }
+%struct.pg_atomic_uint32.3654155 = type { i32 }
+%struct.LWLock.3654156 = type { i16, %struct.pg_atomic_uint32.3654155, %struct.proclist_head.3654157 }
+%struct.proclist_head.3654157 = type { i32, i32 }
 
 ; 53 occurrences:
 ; boost/optimized/to_chars.ll
@@ -81,7 +81,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw %"class.asmjit::_abi_1_10::RALiveSpans.2603649", ptr %0, i64 %3, i32 0, i32 0, i32 1
+  %4 = getelementptr nuw %"class.asmjit::_abi_1_10::RALiveSpans.2603616", ptr %0, i64 %3, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -95,7 +95,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"struct.rocksdb::BufferInfo.2627093", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nuw %"struct.rocksdb::BufferInfo.2627060", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -124,7 +124,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.watch_list.2876306, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.watch_list.2876272, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -137,7 +137,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ipv6_saddr_score.3535936, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.ipv6_saddr_score.3535902, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -148,7 +148,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.BufferDesc.3654188, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.BufferDesc.3654154, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -159,7 +159,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.BufferDesc.3654188, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.BufferDesc.3654154, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

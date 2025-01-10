@@ -15644,7 +15644,7 @@ entry:
   ret i1 %1
 }
 
-; 5553 occurrences:
+; 5555 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
@@ -18116,6 +18116,7 @@ entry:
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/verifier.ll
 ; openjdk/optimized/vmError.ll
+; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zRemembered.ll
 ; openmpi/optimized/bml_r2.ll
 ; openmpi/optimized/btl_base_am_rdma.ll
@@ -20156,6 +20157,7 @@ entry:
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/ffmerge.ll
 ; yosys/optimized/firrtl.ll
+; yosys/optimized/flatten.ll
 ; yosys/optimized/flowmap.ll
 ; yosys/optimized/fmcombine.ll
 ; yosys/optimized/fmt.ll

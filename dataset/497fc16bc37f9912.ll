@@ -313,8 +313,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
-; darktable/optimized/Cr2Decompressor.cpp.ll
+; 24 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll

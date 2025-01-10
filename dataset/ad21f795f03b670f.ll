@@ -1,12 +1,12 @@
 
-%struct.page.3531285 = type { i64, %union.anon.6.3531286, %union.anon.14.3531287, %struct.atomic_t.3531288, [8 x i8] }
-%union.anon.6.3531286 = type { %struct.anon.7.3531289 }
-%struct.anon.7.3531289 = type { %union.anon.8.3531290, ptr, %union.anon.10.3531291, i64 }
-%union.anon.8.3531290 = type { %struct.list_head.3531292 }
-%struct.list_head.3531292 = type { ptr, ptr }
-%union.anon.10.3531291 = type { i64 }
-%union.anon.14.3531287 = type { %struct.atomic_t.3531288 }
-%struct.atomic_t.3531288 = type { i32 }
+%struct.page.3531251 = type { i64, %union.anon.6.3531252, %union.anon.14.3531253, %struct.atomic_t.3531254, [8 x i8] }
+%union.anon.6.3531252 = type { %struct.anon.7.3531255 }
+%struct.anon.7.3531255 = type { %union.anon.8.3531256, ptr, %union.anon.10.3531257, i64 }
+%union.anon.8.3531256 = type { %struct.list_head.3531258 }
+%struct.list_head.3531258 = type { ptr, ptr }
+%union.anon.10.3531257 = type { i64 }
+%union.anon.14.3531253 = type { %struct.atomic_t.3531254 }
+%struct.atomic_t.3531254 = type { i32 }
 
 ; 3 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -119,7 +119,7 @@ entry:
   %3 = add i64 %2, 2147483648
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 12
-  %6 = getelementptr %struct.page.3531285, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3531251, ptr %0, i64 %5
   ret ptr %6
 }
 

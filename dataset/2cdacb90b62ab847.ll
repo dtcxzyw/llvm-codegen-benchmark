@@ -71,7 +71,7 @@ entry:
   %4 = sub nsw i64 %1, %3
   %5 = sdiv i64 %4, 2
   %6 = sdiv i64 %0, 2
-  %7 = add nsw i64 %5, %6
+  %7 = add nsw i64 %6, %5
   ret i64 %7
 }
 

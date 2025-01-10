@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/hdrfilm.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
-entry:
-  %2 = zext nneg i32 %0 to i64
-  %3 = icmp eq i64 %1, %2
-  %4 = select i1 %3, i32 %0, i32 8
-  ret i32 %4
-}
-
 ; 22 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; cpython/optimized/pystrhex.ll
@@ -49,18 +38,6 @@ define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
   %3 = icmp samesign ugt i64 %1, %2
-  %4 = select i1 %3, i32 %0, i32 -1
-  ret i32 %4
-}
-
-; 2 occurrences:
-; assimp/optimized/unzip.c.ll
-; linux/optimized/xprtsock.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = zext i32 %0 to i64
-  %3 = icmp eq i64 %1, %2
   %4 = select i1 %3, i32 %0, i32 -1
   ret i32 %4
 }

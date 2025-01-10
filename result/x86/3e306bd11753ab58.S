@@ -29,11 +29,6 @@ func000000000000001b:                   # @func000000000000001b
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	subq	%rdx, %rdi
-	movl	%esi, %eax
-	addq	%rdi, %rax
-	retq
 func0000000000000023:                   # @func0000000000000023
 	subq	%rdx, %rdi
 	movl	%esi, %eax

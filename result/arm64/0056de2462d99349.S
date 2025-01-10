@@ -29,6 +29,13 @@ func0000000000000002:                   // @func0000000000000002
 	sub	x0, x0, x8, lsl #7
 	ret
                                         // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	mov	x8, #-16                        // =0xfffffffffffffff0
+	bic	x8, x8, x1
+	add	x0, x0, x8
+	ret
+                                        // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	and	x8, x1, #0x7
@@ -40,12 +47,5 @@ func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	and	x8, x1, #0xfffffffffffffff8
 	sub	x0, x0, x8
-	ret
-                                        // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
-	and	x8, x1, #0xf8
-	sub	x8, x0, x8
-	sub	x0, x8, #8
 	ret
                                         // -- End function

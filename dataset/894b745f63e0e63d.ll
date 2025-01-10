@@ -96,7 +96,8 @@ entry:
   ret i64 %5
 }
 
-; 42 occurrences:
+; 43 occurrences:
+; faiss/optimized/lattice_Zn.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -144,18 +145,6 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = shl nuw i64 1, %2
-  %4 = xor i64 %3, -1
-  %5 = and i64 %0, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; faiss/optimized/lattice_Zn.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
-entry:
-  %2 = xor i64 %1, 63
-  %3 = shl nuw nsw i64 1, %2
   %4 = xor i64 %3, -1
   %5 = and i64 %0, %4
   ret i64 %5

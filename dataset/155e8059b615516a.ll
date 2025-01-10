@@ -282,7 +282,7 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
@@ -290,7 +290,6 @@ entry:
 ; g2o/optimized/edge_se3_calib.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; git/optimized/sequencer.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll

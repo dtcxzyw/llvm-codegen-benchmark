@@ -49,20 +49,6 @@ func0000000000000021:                   # @func0000000000000021
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func00000000000000a6:                   # @func00000000000000a6
-	sext.w	a2, a2
-	sext.w	a1, a1
-	min	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 9
-	ret
-func000000000000008a:                   # @func000000000000008a
-	sext.w	a2, a2
-	sext.w	a1, a1
-	min	a1, a1, a2
-	addw	a0, a0, a1
-	sgtz	a0, a0
-	ret
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a2, a2
 	sext.w	a1, a1

@@ -17,8 +17,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; grpc/optimized/posix_endpoint.cc.ll
+; 1 occurrences:
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {

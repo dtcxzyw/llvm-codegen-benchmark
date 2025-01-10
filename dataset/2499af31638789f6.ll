@@ -1,15 +1,15 @@
 
-%struct.rb_size_pool_struct.2601024 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2601025, %struct.rb_heap_struct.2601025 }
-%struct.rb_heap_struct.2601025 = type { ptr, %struct.ccan_list_head.2601026, ptr, ptr, i64, ptr, i64, i64 }
-%struct.ccan_list_head.2601026 = type { %struct.ccan_list_node.2601027 }
-%struct.ccan_list_node.2601027 = type { ptr, ptr }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.VuDevRegion.2706745 = type { i64, i64, i64, i64, i64 }
-%struct.ata_queued_cmd.3549587 = type { ptr, ptr, ptr, ptr, %struct.ata_taskfile.3549584, [16 x i8], i64, i32, i32, i32, i32, i32, i32, i32, i32, i32, %struct.scatterlist.3549588, ptr, ptr, i32, i32, %struct.ata_taskfile.3549584, ptr, ptr, ptr }
-%struct.scatterlist.3549588 = type { i64, i32, i32, i64, i32, i32 }
-%struct.ata_taskfile.3549584 = type { i64, i8, i8, i8, i8, i8, i8, i8, %union.anon.3549585, i8, i8, i8, i8, i8, %union.anon.0.3549586, i32 }
-%union.anon.3549585 = type { i8 }
-%union.anon.0.3549586 = type { i8 }
+%struct.rb_size_pool_struct.2600991 = type { i16, i64, i64, i64, i64, i64, i64, i64, i64, i64, %struct.rb_heap_struct.2600992, %struct.rb_heap_struct.2600992 }
+%struct.rb_heap_struct.2600992 = type { ptr, %struct.ccan_list_head.2600993, ptr, ptr, i64, ptr, i64, i64 }
+%struct.ccan_list_head.2600993 = type { %struct.ccan_list_node.2600994 }
+%struct.ccan_list_node.2600994 = type { ptr, ptr }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.VuDevRegion.2706711 = type { i64, i64, i64, i64, i64 }
+%struct.ata_queued_cmd.3549553 = type { ptr, ptr, ptr, ptr, %struct.ata_taskfile.3549550, [16 x i8], i64, i32, i32, i32, i32, i32, i32, i32, i32, i32, %struct.scatterlist.3549554, ptr, ptr, i32, i32, %struct.ata_taskfile.3549550, ptr, ptr, ptr }
+%struct.scatterlist.3549554 = type { i64, i32, i32, i64, i32, i32 }
+%struct.ata_taskfile.3549550 = type { i64, i8, i8, i8, i8, i8, i8, i8, %union.anon.3549551, i8, i8, i8, i8, i8, %union.anon.0.3549552, i32 }
+%union.anon.3549551 = type { i8 }
+%union.anon.0.3549552 = type { i8 }
 
 ; 110 occurrences:
 ; cpython/optimized/lexer.ll
@@ -127,7 +127,7 @@ define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %4 = getelementptr [5 x %struct.rb_size_pool_struct.2601024], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [5 x %struct.rb_size_pool_struct.2600991], ptr %3, i64 0, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -552,7 +552,7 @@ define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -585,7 +585,7 @@ define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr [32 x %struct.VuDevRegion.2706745], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [32 x %struct.VuDevRegion.2706711], ptr %3, i64 0, i64 %2
   %5 = getelementptr i8, ptr %4, i64 40
   ret ptr %5
 }
@@ -695,7 +695,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 120
-  %4 = getelementptr [33 x %struct.ata_queued_cmd.3549587], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [33 x %struct.ata_queued_cmd.3549553], ptr %3, i64 0, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   ret ptr %5
 }

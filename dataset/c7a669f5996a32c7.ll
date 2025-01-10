@@ -1,5 +1,5 @@
 
-%union.TValue.3680757 = type { i64 }
+%union.TValue.3680707 = type { i64 }
 
 ; 11 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -166,7 +166,7 @@ entry:
 define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %union.TValue.3680757, ptr %1, i64 %3
+  %4 = getelementptr nusw %union.TValue.3680707, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }

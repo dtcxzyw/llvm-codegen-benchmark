@@ -6,14 +6,6 @@ func0000000000000174:                   // @func0000000000000174
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
-// %bb.0:                               // %entry
-	orr	w8, w1, w2
-	sub	w9, w0, #3
-	cmp	w9, w8, uxth
-	cset	w0, lt
-	ret
-                                        // -- End function
 func0000000000000106:                   // @func0000000000000106
 // %bb.0:                               // %entry
 	orr	w8, w1, w2

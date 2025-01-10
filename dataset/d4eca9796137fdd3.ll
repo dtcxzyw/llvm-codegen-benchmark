@@ -1,5 +1,5 @@
 
-%"class.clang::NestedNameSpecifierLoc.3187997" = type { ptr, ptr }
+%"class.clang::NestedNameSpecifierLoc.3187963" = type { ptr, ptr }
 
 ; 10 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -36,7 +36,7 @@ define ptr @func000000000000007f(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
-  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187997", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187963", ptr %4, i64 %0
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7

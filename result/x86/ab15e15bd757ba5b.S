@@ -13,9 +13,3 @@ func0000000000000007:                   # @func0000000000000007
 	cmovnel	%eax, %ecx
 	leal	(%rcx,%rsi,8), %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	shll	$16, %esi
-	andl	$536805376, %esi                # imm = 0x1FFF0000
-	shll	$31, %edi
-	leal	(%rdi,%rsi), %eax
-	retq

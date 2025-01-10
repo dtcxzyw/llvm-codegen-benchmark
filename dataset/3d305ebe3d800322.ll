@@ -1,5 +1,20 @@
 
-%struct.m384.3850196 = type { <2 x i64>, <2 x i64>, <2 x i64> }
+%struct.m384.3850146 = type { <2 x i64>, <2 x i64>, <2 x i64> }
+
+; 3 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; linux/optimized/binfmt_elf.ll
+; linux/optimized/compat_binfmt_elf.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001f0(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %2, 544
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %1, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2176
+  %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -63,7 +78,7 @@ entry:
   %4 = add i32 %3, 1536
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw %struct.m384.3850196, ptr %6, i64 %0
+  %7 = getelementptr nusw %struct.m384.3850146, ptr %6, i64 %0
   ret ptr %7
 }
 

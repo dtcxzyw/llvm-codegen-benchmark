@@ -93,18 +93,6 @@ func000000000000010c:                   # @func000000000000010c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000194:                   # @func0000000000000194
-	lui	a1, 512
-	li	a2, 27
-	addiw	a1, a1, -2048
-	and	a1, a1, a0
-	srli	a0, a0, 16
-	slli	a2, a2, 11
-	xor	a1, a1, a2
-	snez	a1, a1
-	sltiu	a0, a0, 17
-	and	a0, a0, a1
-	ret
 func0000000000000081:                   # @func0000000000000081
 	andi	a1, a0, 257
 	srli	a0, a0, 61

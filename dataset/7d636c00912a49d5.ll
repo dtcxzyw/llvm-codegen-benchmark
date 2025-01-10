@@ -26,9 +26,8 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind

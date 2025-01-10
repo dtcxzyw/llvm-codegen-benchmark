@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/luckyFast16.c.ll
+; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
@@ -31,6 +32,7 @@
 ; qemu/optimized/tcg-op.c.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/regexp.cc.ll
+; soc-simulator/optimized/verilated.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

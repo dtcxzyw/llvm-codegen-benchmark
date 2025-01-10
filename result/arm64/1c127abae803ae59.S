@@ -46,14 +46,6 @@ func00000000000000f4:                   // @func00000000000000f4
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
-	lsr	w8, w2, #9
-	add	x8, x1, x8
-	cmp	x8, x0
-	cset	w0, gt
-	ret
-                                        // -- End function
 func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
 	lsr	w8, w2, #9
@@ -84,13 +76,5 @@ func00000000000000f8:                   // @func00000000000000f8
 	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, hi
-	ret
-                                        // -- End function
-func00000000000000e6:                   // @func00000000000000e6
-// %bb.0:                               // %entry
-	lsr	w8, w2, #1
-	add	x8, x1, x8
-	cmp	x8, x0
-	cset	w0, lt
 	ret
                                         // -- End function

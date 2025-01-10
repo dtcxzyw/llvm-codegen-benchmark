@@ -126,7 +126,7 @@ entry:
   ret i1 %5
 }
 
-; 90 occurrences:
+; 89 occurrences:
 ; clamav/optimized/png.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; icu/optimized/reslist.ll
@@ -214,7 +214,6 @@ entry:
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/partbounds.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/file_access.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind

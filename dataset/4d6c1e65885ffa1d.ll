@@ -1,7 +1,7 @@
 
-%"class.clang::DeclAccessPair.3170611" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3170612" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3170612" = type { %struct.anon.3170613 }
-%struct.anon.3170613 = type { [8 x i8] }
+%"class.clang::DeclAccessPair.3170577" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3170578" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3170578" = type { %struct.anon.3170579 }
+%struct.anon.3170579 = type { [8 x i8] }
 
 ; 3 occurrences:
 ; postgres/optimized/oracle_compat.ll
@@ -32,7 +32,7 @@ entry:
   %4 = select i1 %3, i64 64, i64 80
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3170611", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3170577", ptr %5, i64 %6
   ret ptr %7
 }
 

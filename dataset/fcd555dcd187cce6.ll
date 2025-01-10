@@ -1,5 +1,5 @@
 
-; 3257 occurrences:
+; 3258 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -85,9 +85,6 @@
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaMini.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/hopBalance.c.ll
@@ -367,6 +364,7 @@
 ; cpython/optimized/_posixsubprocess.ll
 ; cpython/optimized/_testbuffer.ll
 ; cpython/optimized/compile.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/gcmodule.ll
 ; cpython/optimized/import.ll
@@ -513,6 +511,7 @@
 ; freetype/optimized/truetype.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
+; git/optimized/advice.ll
 ; git/optimized/am.ll
 ; git/optimized/apply.ll
 ; git/optimized/archive.ll
@@ -934,6 +933,7 @@
 ; linux/optimized/blktrace.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/bugs.ll
+; linux/optimized/build_policy.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/calipso.ll
@@ -1300,6 +1300,7 @@
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/LoopVersioningLICM.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/M68k.cpp.ll
@@ -3265,7 +3266,7 @@ entry:
   ret i1 %3
 }
 
-; 2508 occurrences:
+; 2512 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -3473,6 +3474,7 @@ entry:
 ; cmake/optimized/signal.c.ll
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/1jbxberfc5l4jlu4.ll
@@ -4976,6 +4978,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-conf_def.ll
 ; openssl/optimized/libcrypto-lib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-mdc2dgst.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-lib-rand_pool.ll
@@ -4987,6 +4990,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-conf_def.ll
 ; openssl/optimized/libcrypto-shlib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-mdc2dgst.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-rand_pool.ll
@@ -5762,6 +5766,7 @@ entry:
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -5782,7 +5787,7 @@ entry:
   ret i1 %3
 }
 
-; 585 occurrences:
+; 584 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcProve.c.ll
@@ -5811,7 +5816,6 @@ entry:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/posixmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-cf-socket.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-parsedate.ll
@@ -6376,7 +6380,7 @@ entry:
   ret i1 %3
 }
 
-; 1286 occurrences:
+; 1284 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -7114,9 +7118,7 @@ entry:
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dhseqr.c.ll
-; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlasd3.c.ll
-; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorbdb2.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
@@ -7671,7 +7673,7 @@ entry:
   ret i1 %3
 }
 
-; 585 occurrences:
+; 586 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -8146,6 +8148,7 @@ entry:
 ; rocksdb/optimized/partitioned_index_iterator.cc.ll
 ; rocksdb/optimized/partitioned_index_reader.cc.ll
 ; ruby/optimized/encoding.ll
+; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/regenc.ll
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/unicode.ll

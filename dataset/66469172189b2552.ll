@@ -69,6 +69,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; openjdk/optimized/awt_ImagingLib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ult i32 %3, 4
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
 ; 13 occurrences:
 ; abc/optimized/giaPat.c.ll
 ; cmake/optimized/zstd_lazy.c.ll

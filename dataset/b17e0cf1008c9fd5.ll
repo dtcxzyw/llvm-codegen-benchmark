@@ -1,5 +1,5 @@
 
-; 3299 occurrences:
+; 3300 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -2221,12 +2221,14 @@
 ; openssl/optimized/libdefault-lib-drbg.ll
 ; openssl/optimized/libdefault-lib-kbkdf.ll
 ; openssl/optimized/libssl-lib-dtls_meth.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
@@ -2298,7 +2300,6 @@
 ; openusd/optimized/pointInstancer.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/shaderProperty.cpp.ll
 ; openusd/optimized/skelRootAdapter.cpp.ll
@@ -3504,7 +3505,7 @@ entry:
   ret i32 %2
 }
 
-; 592 occurrences:
+; 574 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -3787,39 +3788,23 @@ entry:
 ; gromacs/optimized/mdebin_bar.cpp.ll
 ; grpc/optimized/posix_endpoint.cc.ll
 ; hdf5/optimized/H5PT.c.ll
-; icu/optimized/alphaindex.ll
 ; icu/optimized/characterproperties.ll
 ; icu/optimized/chnsecal.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
 ; icu/optimized/collationsettings.ll
-; icu/optimized/dtptngen.ll
-; icu/optimized/filteredbrk.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/japancal.ll
 ; icu/optimized/localeprioritylist.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/nfrule.ll
-; icu/optimized/number_longnames.ll
-; icu/optimized/numfmt.ll
-; icu/optimized/plurfmt.ll
 ; icu/optimized/punycode.ll
-; icu/optimized/rbnf.ll
-; icu/optimized/rbt_rule.ll
-; icu/optimized/reslist.ll
-; icu/optimized/selfmt.ll
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/stringpiece.ll
-; icu/optimized/timezone.ll
-; icu/optimized/tridpars.ll
-; icu/optimized/tzfmt.ll
-; icu/optimized/tzgnames.ll
 ; icu/optimized/ucbuf.ll
-; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/ucnvscsu.ll
 ; icu/optimized/ucol_swp.ll
 ; icu/optimized/uniset.ll
@@ -3827,8 +3812,6 @@ entry:
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/unistr_cnv.ll
-; icu/optimized/units_router.ll
-; icu/optimized/uspoof_conf.ll
 ; icu/optimized/ustr.ll
 ; icu/optimized/vtzone.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -4996,7 +4979,7 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/bmcICheck.c.ll
 ; clamav/optimized/file.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -5010,6 +4993,7 @@ entry:
 ; linux/optimized/alps.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/pipe.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvj.c.ll

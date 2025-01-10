@@ -185,12 +185,11 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll

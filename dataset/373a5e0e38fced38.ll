@@ -1,6 +1,5 @@
 
-; 24 occurrences:
-; clamav/optimized/autoit.c.ll
+; 23 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; fmt/optimized/chrono-test.cc.ll

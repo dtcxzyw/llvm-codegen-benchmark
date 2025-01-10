@@ -1,7 +1,7 @@
 
-%"class.Gluco2::vec.12.2876064" = type { ptr, i32, i32 }
-%struct.Vec_Int_t_.2877265 = type { i32, i32, ptr }
-%struct.bf_t.3435173 = type { ptr, i32, i64, i64, ptr }
+%"class.Gluco2::vec.12.2876030" = type { ptr, i32, i32 }
+%struct.Vec_Int_t_.2877231 = type { i32, i32, ptr }
+%struct.bf_t.3435139 = type { ptr, i32, i64, i64, ptr }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -28,7 +28,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.Gluco2::vec.12.2876064", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.Gluco2::vec.12.2876030", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -40,7 +40,7 @@ define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.Vec_Int_t_.2877265, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.Vec_Int_t_.2877231, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -54,7 +54,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.bf_t.3435173, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.bf_t.3435139, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 

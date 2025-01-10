@@ -13,8 +13,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 3 occurrences:
+; 5 occurrences:
 ; clamav/optimized/cabd.c.ll
+; clamav/optimized/lzxd.c.ll
+; clamav/optimized/mszipd.c.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; Function Attrs: nounwind
@@ -23,6 +25,19 @@ entry:
   %3 = call i64 @llvm.smin.i64(i64 %1, i64 %2)
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/indirect.ll
+; openjdk/optimized/zip_util.ll
+; slurm/optimized/bitstring.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.smin.i64(i64 %1, i64 %2)
+  %4 = trunc i64 %3 to i32
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -37,7 +52,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; casadi/optimized/kinsol.c.ll
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll

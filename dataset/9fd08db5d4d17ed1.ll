@@ -334,6 +334,34 @@ entry:
   ret i32 %4
 }
 
+; 18 occurrences:
+; abc/optimized/giaTtopt.cpp.ll
+; abseil-cpp/optimized/charconv.cc.ll
+; abseil-cpp/optimized/float_conversion.cc.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; gromacs/optimized/forcetable.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; php/optimized/crypt_sha512.ll
+; sqlite/optimized/sqlite3.ll
+; wolfssl/optimized/sp_int.c.ll
+; xgboost/optimized/charconv.cc.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = xor i32 %2, -1
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; graphviz/optimized/partition.c.ll
 ; proxygen/optimized/Logging.cpp.ll
@@ -412,33 +440,6 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %0, %2
   %4 = add i32 %3, -3
-  ret i32 %4
-}
-
-; 17 occurrences:
-; abc/optimized/giaTtopt.cpp.ll
-; abseil-cpp/optimized/charconv.cc.ll
-; abseil-cpp/optimized/float_conversion.cc.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; gromacs/optimized/forcetable.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; opencv/optimized/edge_drawing.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; wolfssl/optimized/sp_int.c.ll
-; xgboost/optimized/charconv.cc.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = add nsw i32 %3, -6
   ret i32 %4
 }
 

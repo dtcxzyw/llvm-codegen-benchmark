@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/typedesc.cpp.ll

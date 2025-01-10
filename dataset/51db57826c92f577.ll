@@ -1,5 +1,5 @@
 
-; 367 occurrences:
+; 370 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -38,9 +38,12 @@
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/DivRemPairs.cpp.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
+; luau/optimized/TableShape.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/classFileParser.ll

@@ -63,12 +63,21 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI7_0:
+func0000000000000007:                   # @func0000000000000007
+	vpslld	$31, %xmm1, %xmm1
+	vpmovd2m	%xmm1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vmovdqa64	%ymm1, %ymm2 {%k1}
+	vpcmpleq	%ymm0, %ymm2, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI8_0:
 	.quad	1                               # 0x1
 func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpbroadcastq	.LCPI7_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1,1,1,1]
+	vpbroadcastq	.LCPI8_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [1,1,1,1]
 	vpcmpnleuq	%ymm0, %ymm2, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

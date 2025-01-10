@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
+; linux/optimized/hub.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i1 %0, i8 %1, i32 %2) #0 {
 entry:

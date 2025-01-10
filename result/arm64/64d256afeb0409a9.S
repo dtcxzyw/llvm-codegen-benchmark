@@ -28,6 +28,6 @@ func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	tst	w2, #0x10000
 	csel	x8, x1, xzr, eq
-	add	x0, x8, x0
+	add	x0, x0, x8
 	ret
                                         // -- End function

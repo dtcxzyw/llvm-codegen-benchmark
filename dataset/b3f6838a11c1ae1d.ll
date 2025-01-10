@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; boost/optimized/process.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/io_utils.cpp.ll
@@ -22,7 +22,6 @@
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
 ; re2/optimized/compile.cc.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; spike/optimized/s_sub256M.ll
 ; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll

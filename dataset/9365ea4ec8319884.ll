@@ -1,8 +1,8 @@
 
-%"struct.OT::Layout::Common::RangeRecord.2734528" = type { %"struct.OT::HBGlyphID16.2734518", %"struct.OT::HBGlyphID16.2734518", %"struct.OT::IntType.2734512" }
-%"struct.OT::HBGlyphID16.2734518" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
+%"struct.OT::Layout::Common::RangeRecord.2734494" = type { %"struct.OT::HBGlyphID16.2734484", %"struct.OT::HBGlyphID16.2734484", %"struct.OT::IntType.2734478" }
+%"struct.OT::HBGlyphID16.2734484" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
 
 ; 13 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -25,7 +25,7 @@ entry:
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %7 = getelementptr nusw nuw %"struct.OT::Layout::Common::RangeRecord.2734528", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"struct.OT::Layout::Common::RangeRecord.2734494", ptr %6, i64 %5
   ret ptr %7
 }
 

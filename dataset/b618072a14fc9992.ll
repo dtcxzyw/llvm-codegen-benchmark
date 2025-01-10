@@ -1,6 +1,6 @@
 
-%"struct.std::pair.292.2614730" = type <{ i64, i32, [4 x i8] }>
-%"class.QuantLib::Date.2835313" = type { i64 }
+%"struct.std::pair.292.2614697" = type <{ i64, i32, [4 x i8] }>
+%"class.QuantLib::Date.2835279" = type { i64 }
 
 ; 5 occurrences:
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
@@ -12,7 +12,7 @@
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"struct.std::pair.292.2614730", ptr %3, i64 %1
+  %4 = getelementptr %"struct.std::pair.292.2614697", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -38,7 +38,7 @@ entry:
 define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"class.QuantLib::Date.2835313", ptr %3, i64 %1
+  %4 = getelementptr %"class.QuantLib::Date.2835279", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -49,7 +49,7 @@ entry:
 define ptr @func0000000000000054(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr %"class.QuantLib::Date.2835313", ptr %3, i64 %1
+  %4 = getelementptr %"class.QuantLib::Date.2835279", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }

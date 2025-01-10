@@ -15,6 +15,6 @@ func0000000000000007:                   # @func0000000000000007
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 func0000000000000004:                   # @func0000000000000004
-	vpsrlq	$12, %ymm2, %ymm2
+	vpsrlq	$14, %ymm2, %ymm2
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

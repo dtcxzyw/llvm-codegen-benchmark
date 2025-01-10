@@ -1,5 +1,5 @@
 
-; 907 occurrences:
+; 906 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -818,7 +818,6 @@
 ; velox/optimized/ArrayShuffle.cpp.ll
 ; velox/optimized/Utils.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; xgboost/optimized/gbtree.cc.ll

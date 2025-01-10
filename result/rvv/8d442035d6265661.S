@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	bseti	a0, zero, 39
+	bseti	a0, zero, 43
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12

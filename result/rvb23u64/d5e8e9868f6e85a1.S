@@ -3,6 +3,11 @@ func0000000000000036:                   # @func0000000000000036
 	slli	a1, a1, 2
 	sub	a0, a0, a1
 	ret
+func0000000000000016:                   # @func0000000000000016
+	slliw	a1, a1, 2
+	slli	a1, a1, 2
+	sub	a0, a0, a1
+	ret
 func0000000000000076:                   # @func0000000000000076
 	slliw	a1, a1, 4
 	sub	a0, a0, a1

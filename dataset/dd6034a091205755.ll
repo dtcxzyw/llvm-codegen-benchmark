@@ -338,7 +338,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -355,13 +355,15 @@ entry:
 ; openjdk/optimized/hb-map.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 0, i32 %0
   %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw nsw i64 12, %4
+  %5 = shl nuw nsw i64 1, %4
   ret i64 %5
 }
 

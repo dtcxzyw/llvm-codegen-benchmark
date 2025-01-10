@@ -1,5 +1,5 @@
 
-%"struct.facebook::velox::Timestamp.2817489" = type { i64, i64 }
+%"struct.facebook::velox::Timestamp.2817455" = type { i64, i64 }
 
 ; 41 occurrences:
 ; git/optimized/unpack-trees.ll
@@ -68,9 +68,9 @@ entry:
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.facebook::velox::Timestamp.2817489", ptr %0, i64 %1
+  %4 = getelementptr %"struct.facebook::velox::Timestamp.2817455", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -16
-  %6 = getelementptr %"struct.facebook::velox::Timestamp.2817489", ptr %5, i64 %3
+  %6 = getelementptr %"struct.facebook::velox::Timestamp.2817455", ptr %5, i64 %3
   ret ptr %6
 }
 

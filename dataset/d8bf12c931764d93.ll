@@ -1,11 +1,10 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; graphviz/optimized/shortest.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; linux/optimized/vc_screen.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/inet_cidr_ntop.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll

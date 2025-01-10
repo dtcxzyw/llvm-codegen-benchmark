@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; brotli/optimized/transform.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -12,7 +12,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; lvgl/optimized/lv_draw_sw_img.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-font.ll
@@ -69,11 +68,8 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:

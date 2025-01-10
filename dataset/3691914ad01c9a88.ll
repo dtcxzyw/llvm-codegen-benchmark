@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 232 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/decompress.c.ll
@@ -173,7 +173,6 @@
 ; php/optimized/ir.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/network.ll

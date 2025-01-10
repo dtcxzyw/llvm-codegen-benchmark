@@ -1,12 +1,9 @@
 func0000000000000021:                   # @func0000000000000021
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	li	a1, 267
-	bne	a0, a1, .LBB0_2
-	li	a0, 1024
-	ret
-.LBB0_2:
-	addi	a0, a0, -204
-	snez	a0, a0
-	slli	a0, a0, 5
+	andi	a0, a0, 7
+	addi	a1, a0, -1
+	seqz	a0, a0
+	snez	a1, a1
+	addi	a1, a1, 1
+	addi	a0, a0, -1
+	and	a0, a0, a1
 	ret

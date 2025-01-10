@@ -1890,7 +1890,7 @@ entry:
   ret i64 %3
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -1918,7 +1918,6 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; php/optimized/zend_alloc.ll
 ; ruby/optimized/sprintf.ll
-; stockfish/optimized/tbprobe.ll
 ; yosys/optimized/future.ll
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
@@ -2084,7 +2083,7 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; boost/optimized/cmdline.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
@@ -2093,6 +2092,7 @@ entry:
 ; llvm/optimized/OptRSTEmitter.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0) #0 {
 entry:

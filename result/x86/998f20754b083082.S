@@ -16,3 +16,9 @@ func000000000000008a:                   # @func000000000000008a
 	cmpl	%esi, %edx
 	setg	%al
 	retq
+func0000000000000201:                   # @func0000000000000201
+	cmpl	%edx, %edi
+	cmovll	%edi, %edx
+	cmpl	%esi, %edx
+	sete	%al
+	retq

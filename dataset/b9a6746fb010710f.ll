@@ -53,7 +53,7 @@ entry:
   ret i1 %6
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; boost/optimized/to_chars.ll
 ; cmake/optimized/xmltok.c.ll
@@ -83,7 +83,6 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; ruby/optimized/dir.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/sprintf.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
@@ -446,17 +445,13 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstdmt_compress.c.ll
+; 6 occurrences:
 ; jq/optimized/regexec.ll
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; oniguruma/optimized/regexec.ll
 ; php/optimized/phpdbg_help.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1, ptr %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 232 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/sscClass.c.ll
@@ -36,7 +36,6 @@
 ; linux/optimized/tree.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/virtgpu_vq.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll

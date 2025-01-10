@@ -8,6 +8,11 @@ func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
+func000000000000001a:                   # @func000000000000001a
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 1
+	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a2, a2, 1
 	sh2add	a1, a1, a1

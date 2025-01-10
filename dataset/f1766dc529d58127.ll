@@ -1,7 +1,10 @@
 
-; 20 occurrences:
+; 24 occurrences:
+; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/ole2_extract.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -16,6 +19,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; openssl/optimized/libcrypto-lib-bss_bio.ll
 ; openssl/optimized/libcrypto-shlib-bss_bio.ll
+; php/optimized/KeccakSponge.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; redis/optimized/arena.ll
@@ -32,10 +36,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; git/optimized/ewah_rlw.ll
 ; node/optimized/libnode.node_buffer.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
@@ -63,7 +68,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/qsort.c.ll
 ; clamav/optimized/recvol.cpp.ll
@@ -85,6 +90,7 @@ entry:
 ; llvm/optimized/LinePrinter.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/persistence.cpp.ll
 ; portaudio/optimized/pa_process.c.ll
@@ -141,7 +147,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lief/optimized/ssl_msg.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
@@ -161,6 +168,18 @@ entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %0)
   %5 = trunc nuw i64 %4 to i32
+  ret i32 %5
+}
+
+; 2 occurrences:
+; libpng/optimized/pngrutil.c.ll
+; openjdk/optimized/pngrutil.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %0)
+  %5 = trunc nuw nsw i64 %4 to i32
   ret i32 %5
 }
 
@@ -213,9 +232,12 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/qopen.cpp.ll
 ; linux/optimized/filemap.ll
+; linux/optimized/scatterwalk.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/swiotlb.ll
 ; opencv/optimized/persistence.cpp.ll
 ; postgres/optimized/bbstreamer_tar.ll

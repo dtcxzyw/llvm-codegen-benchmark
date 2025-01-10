@@ -62,14 +62,13 @@ entry:
   ret i8 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; gromacs/optimized/readir.cpp.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/number_mapper.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/tcp_output.ll

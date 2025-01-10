@@ -1,8 +1,3 @@
-func000000000000012a:                   # @func000000000000012a
-	sext.w	a0, a0
-	srai	a1, a1, 32
-	slt	a0, a1, a0
-	ret
 func0000000000000126:                   # @func0000000000000126
 	sext.w	a0, a0
 	srai	a1, a1, 32
@@ -28,6 +23,12 @@ func0000000000000204:                   # @func0000000000000204
 	srli	a1, a1, 1
 	subw	a0, a0, a1
 	sltiu	a0, a0, 8
+	ret
+func000000000000012a:                   # @func000000000000012a
+	sext.w	a0, a0
+	srai	a1, a1, 32
+	slt	a0, a0, a1
+	xori	a0, a0, 1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srli	a1, a1, 1

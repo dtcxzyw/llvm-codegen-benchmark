@@ -2665,7 +2665,7 @@ entry:
   ret i1 %4
 }
 
-; 1301 occurrences:
+; 1300 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -2887,7 +2887,6 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/bugreport.ll
 ; git/optimized/clean.ll
-; git/optimized/column.ll
 ; git/optimized/commit.ll
 ; git/optimized/daemon.ll
 ; git/optimized/delta-islands.ll
@@ -6637,7 +6636,7 @@ entry:
   ret i1 %4
 }
 
-; 432 occurrences:
+; 431 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
@@ -6698,7 +6697,6 @@ entry:
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll

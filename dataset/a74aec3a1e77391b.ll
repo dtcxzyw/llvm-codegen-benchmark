@@ -1,7 +1,7 @@
 
-%struct.CSN_DESCR.3451618 = type { i16, i16, %union.anon.3451619, i64, i32, ptr, ptr, i32, ptr, ptr, ptr }
-%union.anon.3451619 = type { ptr }
-%struct.RangeBound.3651819 = type { i64, i8, i8, i8 }
+%struct.CSN_DESCR.3451584 = type { i16, i16, %union.anon.3451585, i64, i32, ptr, ptr, i32, ptr, ptr, ptr }
+%union.anon.3451585 = type { ptr }
+%struct.RangeBound.3651785 = type { i64, i8, i8, i8 }
 
 ; 5 occurrences:
 ; mitsuba3/optimized/rgb2spec.c.ll
@@ -59,7 +59,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.CSN_DESCR.3451618, ptr %0, i64 %4
+  %5 = getelementptr %struct.CSN_DESCR.3451584, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -71,7 +71,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.RangeBound.3651819, ptr %0, i64 %4
+  %5 = getelementptr %struct.RangeBound.3651785, ptr %0, i64 %4
   ret ptr %5
 }
 

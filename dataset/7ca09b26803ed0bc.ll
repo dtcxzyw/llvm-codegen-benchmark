@@ -25,15 +25,16 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openmpi/optimized/pml_cm.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2147483647
-  %3 = icmp eq i32 %2, 2146435072
+  %2 = and i32 %1, 63
+  %3 = icmp eq i32 %2, 0
   %4 = trunc i64 %0 to i32
   %5 = icmp ne i32 %4, 0
   %6 = and i1 %5, %3

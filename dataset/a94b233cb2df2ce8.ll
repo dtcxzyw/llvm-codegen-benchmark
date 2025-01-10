@@ -1,5 +1,5 @@
 
-%"class.WasmEdge::LLVM::Value.2763231" = type { ptr }
+%"class.WasmEdge::LLVM::Value.2763197" = type { ptr }
 
 ; 21 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -30,7 +30,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = xor i64 %1, -1
-  %7 = getelementptr %"class.WasmEdge::LLVM::Value.2763231", ptr %5, i64 %6
+  %7 = getelementptr %"class.WasmEdge::LLVM::Value.2763197", ptr %5, i64 %6
   ret ptr %7
 }
 

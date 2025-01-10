@@ -25,19 +25,6 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; darktable/optimized/introspection_cacorrectrgb.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
 ; 3 occurrences:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
@@ -100,6 +87,18 @@ entry:
 define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_cacorrectrgb.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = getelementptr i8, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4

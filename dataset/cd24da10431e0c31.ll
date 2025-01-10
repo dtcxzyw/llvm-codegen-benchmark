@@ -68,13 +68,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
+  %3 = add nsw i32 %2, 65536
   %4 = add nuw nsw i32 %3, %1
   %5 = lshr i32 %4, %0
   ret i32 %5

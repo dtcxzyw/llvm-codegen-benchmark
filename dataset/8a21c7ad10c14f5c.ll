@@ -1,5 +1,5 @@
 
-%struct.be128.3558475 = type { i64, i64 }
+%struct.be128.3558441 = type { i64, i64 }
 
 ; 11 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -57,7 +57,7 @@ entry:
   %3 = and i64 %2, -32
   %4 = inttoptr i64 %3 to ptr
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr %struct.be128.3558475, ptr %4, i64 %5
+  %6 = getelementptr %struct.be128.3558441, ptr %4, i64 %5
   ret ptr %6
 }
 

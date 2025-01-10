@@ -42,7 +42,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 func0000000000000018:                   # @func0000000000000018
 	imull	%edx, %esi
-	cmpl	$64, %esi
+	cmpl	$1, %esi
 	setne	%al
 	orb	%dil, %al
 	retq

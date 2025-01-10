@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcCexTools.c.ll
@@ -26,6 +26,7 @@
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/lucky.c.ll
 ; abc/optimized/luckyFast16.c.ll
+; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/mpmPre.c.ll

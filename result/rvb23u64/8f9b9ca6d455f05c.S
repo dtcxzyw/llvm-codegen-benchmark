@@ -1,10 +1,3 @@
-func0000000000000028:                   # @func0000000000000028
-	andi	a0, a0, 255
-	sext.w	a2, a2
-	czero.eqz	a1, a1, a2
-	andi	a1, a1, 255
-	sltu	a0, a1, a0
-	ret
 func00000000000000c8:                   # @func00000000000000c8
 	andi	a0, a0, 255
 	sext.w	a2, a2

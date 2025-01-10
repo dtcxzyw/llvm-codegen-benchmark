@@ -1,5 +1,5 @@
 
-; 454 occurrences:
+; 455 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcAttach.c.ll
@@ -316,6 +316,7 @@
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/tcg.c.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/parse.ll
@@ -464,7 +465,7 @@ entry:
   ret i1 %5
 }
 
-; 314 occurrences:
+; 315 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/array_base.cc.ll
@@ -697,6 +698,7 @@ entry:
 ; openssl/optimized/openssl-bin-rehash.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_dfa_match.ll

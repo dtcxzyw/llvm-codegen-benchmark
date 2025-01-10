@@ -1,6 +1,5 @@
 
-; 54 occurrences:
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; 41 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -32,27 +31,15 @@
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
 ; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i1 %0, i64 %1) #0 {

@@ -1,9 +1,7 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; glslang/optimized/Constant.cpp.ll
 ; linux/optimized/8250_port.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind

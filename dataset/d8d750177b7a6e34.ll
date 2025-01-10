@@ -110,7 +110,7 @@ entry:
   ret i64 %4
 }
 
-; 121 occurrences:
+; 120 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -230,7 +230,6 @@ entry:
 ; ruby/optimized/vm.ll
 ; slurm/optimized/reservation.ll
 ; spike/optimized/csrs.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {

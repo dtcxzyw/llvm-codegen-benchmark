@@ -509,7 +509,7 @@ entry:
   ret i64 %2
 }
 
-; 2467 occurrences:
+; 2469 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1267,7 +1267,9 @@ entry:
 ; darktable/optimized/filtering.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; darktable/optimized/lut3dgmic.cpp.ll
 ; draco/optimized/options.cc.ll
@@ -4559,7 +4561,7 @@ entry:
   ret i64 %2
 }
 
-; 110 occurrences:
+; 114 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/fraigUtil.c.ll
@@ -4611,6 +4613,10 @@ entry:
 ; llvm/optimized/Stmt.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openblas/optimized/dbdsvdx.c.ll

@@ -119,14 +119,14 @@ func000000000000002b:                   // @func000000000000002b
 	madd	x0, x2, x8, x9
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	mov	w8, #24                         // =0x18
-	add	x9, x0, x1, lsl #3
+	mov	w8, #288                        // =0x120
+	add	x9, x0, x1, lsl #1
 	madd	x0, x2, x8, x9
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #24                         // =0x18
 	add	x9, x0, x1, lsl #3

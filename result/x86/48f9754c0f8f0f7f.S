@@ -43,11 +43,3 @@ func000000000000058c:                   # @func000000000000058c
 	orq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000108:                   # @func0000000000000108
-	orq	%rdx, %rsi
-	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
-	seta	%cl
-	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF
-	seta	%al
-	orb	%cl, %al
-	retq

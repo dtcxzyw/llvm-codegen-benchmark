@@ -1,6 +1,6 @@
 
-%"class.absl::debian2::string_view.2602139" = type { ptr, i64 }
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%"class.absl::debian2::string_view.2602106" = type { ptr, i64 }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
 
 ; 2 occurrences:
 ; luau/optimized/CodeGenX64.cpp.ll
@@ -9,7 +9,7 @@
 define ptr @func000000000000002f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %"class.absl::debian2::string_view.2602139", ptr %0, i64 %2
+  %3 = getelementptr %"class.absl::debian2::string_view.2602106", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -768
   ret ptr %4
 }
@@ -57,7 +57,7 @@ entry:
 define ptr @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %2
+  %3 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -576
   ret ptr %4
 }

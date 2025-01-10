@@ -48,19 +48,14 @@ entry:
   ret i1 %2
 }
 
-; 39 occurrences:
+; 34 occurrences:
 ; crow/optimized/example_ws.cpp.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; gromacs/optimized/pme_solve.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
-; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; linux/optimized/intel_dpll.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openjdk/optimized/hb-ot-cff1-table.ll
-; openjdk/optimized/hb-ot-cff2-table.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/13cccnalsixxllfg.ll

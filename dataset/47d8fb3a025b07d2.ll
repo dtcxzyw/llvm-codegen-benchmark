@@ -718,9 +718,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:

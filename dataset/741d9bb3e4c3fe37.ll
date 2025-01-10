@@ -3856,14 +3856,13 @@ entry:
   ret i64 %3
 }
 
-; 127 occurrences:
+; 126 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; diesel-rs/optimized/4l2dlnns3xjar0un.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -3992,7 +3991,7 @@ entry:
   ret i64 %3
 }
 
-; 126 occurrences:
+; 127 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/X3DGeoHelper.cpp.ll
@@ -4006,6 +4005,7 @@ entry:
 ; cvc5/optimized/sygus_grammar_norm.cpp.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
 ; glog/optimized/symbolize.cc.ll
 ; gromacs/optimized/gmx_bar.cpp.ll

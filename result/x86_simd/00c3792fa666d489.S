@@ -1,7 +1,7 @@
-func00000000000000cc:                   # @func00000000000000cc
+func00000000000000c1:                   # @func00000000000000c1
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
-	vptestmq	%ymm0, %ymm1, %k0
+	vptestnmq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

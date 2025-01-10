@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -20,6 +20,8 @@
 ; freetype/optimized/type1cid.c.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/posix-timers.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; postgres/optimized/fe-connect.ll

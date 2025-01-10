@@ -6,11 +6,11 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000007:                   # @func0000000000000007
 	vaddps	%zmm2, %zmm1, %zmm1
 	vaddps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpeqps	%zmm1, %zmm0, %k0
+	vcmpneqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -48,11 +48,11 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000008:                   # @func0000000000000008
 	vaddps	%zmm2, %zmm1, %zmm1
-	vaddps	%zmm1, %zmm0, %zmm0
+	vaddps	%zmm0, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpneqps	%zmm1, %zmm0, %k0
+	vcmpeqps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,5 +1,5 @@
 
-; 3736 occurrences:
+; 3730 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
@@ -280,12 +280,10 @@
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
-; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/kinsol_direct.c.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
-; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; casadi/optimized/slice.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -3028,10 +3026,6 @@
 ; snappy/optimized/snappy.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; soc-simulator/optimized/verilated.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/c_j.ll
@@ -3744,7 +3738,7 @@ entry:
   ret i64 %4
 }
 
-; 1361 occurrences:
+; 1363 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -3890,6 +3884,7 @@ entry:
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/archive_read.c.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -3907,6 +3902,7 @@ entry:
 ; cmake/optimized/cmWorkerPool.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cmake/optimized/json_reader.cpp.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/progress.c.ll
@@ -5114,7 +5110,7 @@ entry:
   ret i64 %4
 }
 
-; 869 occurrences:
+; 870 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
@@ -5165,6 +5161,7 @@ entry:
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
+; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -7135,7 +7132,7 @@ entry:
   ret i64 %4
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
@@ -7178,6 +7175,7 @@ entry:
 ; mold/optimized/arch-sh4.cc.ll
 ; nlohmann_json/optimized/unit-constructor1.cpp.ll
 ; nlohmann_json/optimized/unit-hash.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/zip_util.ll
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
@@ -7644,7 +7642,7 @@ entry:
   ret i64 %4
 }
 
-; 267 occurrences:
+; 277 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
@@ -7688,6 +7686,12 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -7882,7 +7886,11 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libbf.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
 ; redis/optimized/fpconv_dtoa.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spike/optimized/f128_sqrt.ll
@@ -7938,7 +7946,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; cpython/optimized/gcmodule.ll
@@ -7953,6 +7961,10 @@ entry:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll

@@ -1,14 +1,14 @@
-func0000000000000181:                   # @func0000000000000181
-	testb	$15, %dl
-	setne	%cl
-	testl	%esi, %esi
+func0000000000000021:                   # @func0000000000000021
+	testl	%edx, %edx
+	setns	%cl
+	cmpl	$167772160, %esi                # imm = 0xA000000
 	sete	%al
 	andb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	testl	$524288, %edx                   # imm = 0x80000
-	sete	%cl
+func0000000000000181:                   # @func0000000000000181
+	testb	$15, %dl
+	setne	%cl
 	testl	%esi, %esi
 	sete	%al
 	andb	%cl, %al

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; cmake/optimized/archive_read_support_format_ar.c.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/xmltok.c.ll
@@ -9,6 +9,7 @@
 ; graphviz/optimized/gv2gxl.c.ll
 ; graphviz/optimized/write.c.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
+; postgres/optimized/formatting.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/encoding.ll
 ; ruby/optimized/error.ll

@@ -52,14 +52,6 @@ func0000000000000108:                   # @func0000000000000108
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
-func0000000000000181:                   # @func0000000000000181
-	li	a3, -1
-	bne	a2, a3, .LBB8_2
-	lui	a1, 131072
-.LBB8_2:                                # %entry
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
 func0000000000000081:                   # @func0000000000000081
 	sltiu	a2, a2, 2
 	neg	a2, a2
@@ -75,9 +67,9 @@ func0000000000000086:                   # @func0000000000000086
 	ret
 func0000000000000098:                   # @func0000000000000098
 	li	a3, 4
-	bltu	a2, a3, .LBB11_2
+	bltu	a2, a3, .LBB10_2
 	li	a1, 5
-.LBB11_2:                               # %entry
+.LBB10_2:                               # %entry
 	sltu	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c

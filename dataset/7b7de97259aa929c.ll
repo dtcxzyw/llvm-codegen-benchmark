@@ -1,8 +1,8 @@
 
-%"struct.c4::yml::NodeData.2774943" = type { %"struct.c4::yml::NodeType.2774944", %"struct.c4::yml::NodeScalar.2774945", %"struct.c4::yml::NodeScalar.2774945", i64, i64, i64, i64, i64 }
-%"struct.c4::yml::NodeType.2774944" = type { i64 }
-%"struct.c4::yml::NodeScalar.2774945" = type { %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941" }
-%"struct.c4::basic_substring.0.2774941" = type { ptr, i64 }
+%"struct.c4::yml::NodeData.2774909" = type { %"struct.c4::yml::NodeType.2774910", %"struct.c4::yml::NodeScalar.2774911", %"struct.c4::yml::NodeScalar.2774911", i64, i64, i64, i64, i64 }
+%"struct.c4::yml::NodeType.2774910" = type { i64 }
+%"struct.c4::yml::NodeScalar.2774911" = type { %"struct.c4::basic_substring.0.2774907", %"struct.c4::basic_substring.0.2774907", %"struct.c4::basic_substring.0.2774907" }
+%"struct.c4::basic_substring.0.2774907" = type { ptr, i64 }
 
 ; 6 occurrences:
 ; c3c/optimized/file_utils.c.ll
@@ -31,10 +31,9 @@ entry:
   ret ptr %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; boost/optimized/ipv6_address.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
-; eastl/optimized/EAMemory.cpp.ll
 ; folly/optimized/RecordIO.cpp.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -47,7 +46,8 @@ entry:
   ret ptr %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; eastl/optimized/EAMemory.cpp.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -65,7 +65,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 0, i64 %1
-  %4 = getelementptr nusw %"struct.c4::yml::NodeData.2774943", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.c4::yml::NodeData.2774909", ptr %0, i64 %3
   ret ptr %4
 }
 

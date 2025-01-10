@@ -62,14 +62,14 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, -2
 	zext.w	a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
-	not	a0, a0
-	addw	a0, a0, a1
-	ret
 func0000000000000010:                   # @func0000000000000010
 	subw	a1, a1, a0
 	addi	a1, a1, 1
 	zext.w	a0, a1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	not	a0, a0
+	addw	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	subw	a1, a1, a0
@@ -77,7 +77,7 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000001f:                   # @func000000000000001f
 	subw	a1, a1, a0
-	addiw	a0, a1, 63
+	addiw	a0, a1, 64
 	ret
 func000000000000000f:                   # @func000000000000000f
 	subw	a0, a1, a0

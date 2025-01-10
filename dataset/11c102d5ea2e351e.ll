@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; lvgl/optimized/lv_draw_arc.ll
@@ -13,8 +13,6 @@
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rshapes.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll

@@ -1,5 +1,5 @@
 
-; 1862 occurrences:
+; 1863 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/trees.c.ll
@@ -947,6 +947,7 @@
 ; lz4/optimized/lz4hc.c.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -2147,7 +2148,7 @@ entry:
   ret i64 %3
 }
 
-; 443 occurrences:
+; 444 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
@@ -2178,6 +2179,7 @@ entry:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/archive_read.c.ll
+; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/http.c.ll
@@ -2888,7 +2890,7 @@ entry:
   ret i64 %3
 }
 
-; 73 occurrences:
+; 71 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -2960,8 +2962,6 @@ entry:
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/Timestamp.cpp.ll
-; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
-; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -3452,7 +3452,7 @@ entry:
   ret i64 %3
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; abseil-cpp/optimized/no_destructor_test.cc.ll
@@ -3462,6 +3462,7 @@ entry:
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/obmalloc.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; gromacs/optimized/dssp.cpp.ll
 ; hdf5/optimized/H5FDlog.c.ll

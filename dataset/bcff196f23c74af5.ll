@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; ruby/optimized/regcomp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll

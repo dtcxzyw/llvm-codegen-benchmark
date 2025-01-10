@@ -1,10 +1,11 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openmpi/optimized/libprrte_la-prte_dt_print_fns.ll
 ; openmpi/optimized/ras_base_allocate.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; verilator/optimized/V3ActiveTop.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; wireshark/optimized/manuf_dialog.cpp.ll

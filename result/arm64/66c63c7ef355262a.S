@@ -47,11 +47,11 @@ func000000000000002c:                   // @func000000000000002c
                                         // -- End function
 func0000000000000186:                   // @func0000000000000186
 // %bb.0:                               // %entry
-	sxtb	w9, w0
-	cmp	w1, #0
-	mov	w8, #100                        // =0x64
-	ccmp	w9, #0, #0, ne
-	mov	w9, #68                         // =0x44
+	mov	w8, #8192                       // =0x2000
+	tst	w1, #0xff
+	mov	w9, #60                         // =0x3c
+	ccmp	w0, w8, #0, ne
+	mov	w8, #63                         // =0x3f
 	csel	w0, w9, w8, lt
 	ret
                                         // -- End function

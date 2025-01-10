@@ -1,6 +1,6 @@
 
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 5 occurrences:
 ; openblas/optimized/dbdsqr.c.ll
@@ -18,7 +18,7 @@ entry:
   ret ptr %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -40,6 +40,7 @@ entry:
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openusd/optimized/convolve.c.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
@@ -52,13 +53,12 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/pooling_x86.cpp.ll
 ; ncnn/optimized/pooling_x86_avx.cpp.ll
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling_x86_fma.cpp.ll
-; openusd/optimized/convolve.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
@@ -92,7 +92,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %4
   ret ptr %5
 }
 

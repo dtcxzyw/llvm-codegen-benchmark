@@ -1,5 +1,5 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
+%"struct.CFF::number_t.2732152" = type { double }
 
 ; 7 occurrences:
 ; cpython/optimized/hamt.ll
@@ -33,7 +33,7 @@ entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

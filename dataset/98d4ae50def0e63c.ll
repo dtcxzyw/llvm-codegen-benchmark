@@ -1,6 +1,6 @@
 
-%struct._zend_op.2793452 = type { ptr, %union._znode_op.2793461, %union._znode_op.2793461, %union._znode_op.2793461, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793461 = type { i32 }
+%struct._zend_op.2793418 = type { ptr, %union._znode_op.2793427, %union._znode_op.2793427, %union._znode_op.2793427, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793427 = type { i32 }
 
 ; 2 occurrences:
 ; libdeflate/optimized/deflate_decompress.c.ll
@@ -27,7 +27,7 @@ define i64 @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw %struct._zend_op.2793452, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct._zend_op.2793418, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

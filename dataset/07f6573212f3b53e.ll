@@ -1,4 +1,22 @@
 
+; 6 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGException.cpp.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000421(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 167772160
+  %4 = icmp eq i64 %1, 0
+  %5 = and i1 %4, %3
+  %6 = icmp eq i32 %0, 1116
+  %7 = and i1 %5, %6
+  ret i1 %7
+}
+
 ; 2 occurrences:
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -9,22 +27,6 @@ entry:
   %4 = icmp eq i32 %1, 1
   %5 = and i1 %4, %3
   %6 = icmp eq i32 %0, 127
-  %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 4 occurrences:
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CGException.cpp.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000421(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 250609664
-  %4 = icmp eq i64 %1, 16
-  %5 = and i1 %4, %3
-  %6 = icmp eq i32 %0, 8
   %7 = and i1 %6, %5
   ret i1 %7
 }

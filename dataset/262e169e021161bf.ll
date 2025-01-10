@@ -1,5 +1,5 @@
 
-; 334 occurrences:
+; 333 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; clamav/optimized/list.cpp.ll
@@ -154,7 +154,6 @@
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
 ; nori/optimized/screen.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -365,10 +364,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
-; linux/optimized/trace_output.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
 entry:

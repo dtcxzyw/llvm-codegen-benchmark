@@ -1,12 +1,12 @@
 
-%struct.page.3540562 = type { i64, %union.anon.14.3540563, %union.anon.22.3540564, %struct.atomic_t.3540544, [8 x i8] }
-%union.anon.14.3540563 = type { %struct.anon.15.3540565 }
-%struct.anon.15.3540565 = type { %union.anon.16.3540566, ptr, %union.anon.18.3540567, i64 }
-%union.anon.16.3540566 = type { %struct.list_head.3540539 }
-%struct.list_head.3540539 = type { ptr, ptr }
-%union.anon.18.3540567 = type { i64 }
-%union.anon.22.3540564 = type { %struct.atomic_t.3540544 }
-%struct.atomic_t.3540544 = type { i32 }
+%struct.page.3540528 = type { i64, %union.anon.14.3540529, %union.anon.22.3540530, %struct.atomic_t.3540510, [8 x i8] }
+%union.anon.14.3540529 = type { %struct.anon.15.3540531 }
+%struct.anon.15.3540531 = type { %union.anon.16.3540532, ptr, %union.anon.18.3540533, i64 }
+%union.anon.16.3540532 = type { %struct.list_head.3540505 }
+%struct.list_head.3540505 = type { ptr, ptr }
+%union.anon.18.3540533 = type { i64 }
+%union.anon.22.3540530 = type { %struct.atomic_t.3540510 }
+%struct.atomic_t.3540510 = type { i32 }
 
 ; 2 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
@@ -68,7 +68,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 12
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.page.3540562, ptr %0, i64 %5
+  %6 = getelementptr %struct.page.3540528, ptr %0, i64 %5
   ret ptr %6
 }
 

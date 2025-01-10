@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/hid-apple.ll
 ; linux/optimized/hid-input.ll
+; postgres/optimized/regexec.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/internal.c.ll

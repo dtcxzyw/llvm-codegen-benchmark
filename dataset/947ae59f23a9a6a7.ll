@@ -26,13 +26,15 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; php/optimized/avifinfo.ll
 ; quickjs/optimized/libregexp.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:

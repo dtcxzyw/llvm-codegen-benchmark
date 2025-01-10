@@ -1,10 +1,10 @@
 
-%struct.Expr_.2748329 = type { ptr, %union.SourceSpan.2748330, i16, %union.anon.29.2748331 }
-%union.SourceSpan.2748330 = type { i64 }
-%union.anon.29.2748331 = type { %struct.ExprAnySwitch.2748332 }
-%struct.ExprAnySwitch.2748332 = type { i8, %union.anon.31.2748333 }
-%union.anon.31.2748333 = type { %struct.anon.32.2748334 }
-%struct.anon.32.2748334 = type { ptr, %union.SourceSpan.2748330, ptr }
+%struct.Expr_.2748295 = type { ptr, %union.SourceSpan.2748296, i16, %union.anon.29.2748297 }
+%union.SourceSpan.2748296 = type { i64 }
+%union.anon.29.2748297 = type { %struct.ExprAnySwitch.2748298 }
+%struct.ExprAnySwitch.2748298 = type { i8, %union.anon.31.2748299 }
+%union.anon.31.2748299 = type { %struct.anon.32.2748300 }
+%struct.anon.32.2748300 = type { ptr, %union.SourceSpan.2748296, ptr }
 
 ; 2 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
@@ -12,7 +12,7 @@
 ; Function Attrs: nounwind
 define ptr @func00000000000001e1(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Expr_.2748329, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Expr_.2748295, ptr %1, i64 %2
   %4 = select i1 %0, ptr null, ptr %3
   %5 = icmp eq ptr %4, null
   %6 = getelementptr nusw nuw i8, ptr %4, i64 24

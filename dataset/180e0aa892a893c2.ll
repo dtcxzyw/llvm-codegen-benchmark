@@ -1,14 +1,14 @@
 
-%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
-%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
-%"struct.mold::elf::ElfShdr.563.2636428" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429" }
-%"class.mold::LittleEndian.561.2636429" = type { [8 x i8] }
-%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
-%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
-%union.anon.2790010 = type { i32 }
-%union.anon.4.2790011 = type { i32 }
-%union.anon.5.2790009 = type { %union._ir_val.2790012 }
-%union._ir_val.2790012 = type { double }
+%"struct.mold::elf::ElfShdr.555.2636391" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392" }
+%"class.mold::LittleEndian.551.2636392" = type { [4 x i8] }
+%"struct.mold::elf::ElfShdr.563.2636395" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396" }
+%"class.mold::LittleEndian.561.2636396" = type { [8 x i8] }
+%struct._ir_insn.2789973 = type { %struct.anon.2789974, %union.anon.5.2789975 }
+%struct.anon.2789974 = type { %union.anon.2789976, %union.anon.4.2789977 }
+%union.anon.2789976 = type { i32 }
+%union.anon.4.2789977 = type { i32 }
+%union.anon.5.2789975 = type { %union._ir_val.2789978 }
+%union._ir_val.2789978 = type { double }
 
 ; 67 occurrences:
 ; boost/optimized/static_string.ll
@@ -202,7 +202,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636391", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -335,7 +335,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636428", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636395", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -437,8 +437,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %struct._ir_insn.2790007, ptr %4, i64 %3
+  %4 = getelementptr nusw %struct._ir_insn.2789973, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct._ir_insn.2789973, ptr %4, i64 %3
   ret ptr %5
 }
 

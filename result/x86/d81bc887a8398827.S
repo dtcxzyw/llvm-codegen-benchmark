@@ -40,6 +40,14 @@ func0000000000000181:                   # @func0000000000000181
 	andb	%sil, %al
 	andb	%cl, %al
 	retq
+func0000000000000021:                   # @func0000000000000021
+	testq	%rdx, %rdx
+	sete	%cl
+	andb	%dil, %cl
+	cmpl	$1116, %esi                     # imm = 0x45C
+	sete	%al
+	andb	%cl, %al
+	retq
 func0000000000000081:                   # @func0000000000000081
 	cmpq	$-256, %rdx
 	setb	%cl
@@ -54,14 +62,6 @@ func0000000000000184:                   # @func0000000000000184
 	andb	%dil, %cl
 	cmpl	$8, %esi
 	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	testq	%rdx, %rdx
-	sete	%cl
-	andb	%dil, %cl
-	testl	%esi, %esi
-	sete	%al
 	andb	%cl, %al
 	retq
 func0000000000000188:                   # @func0000000000000188

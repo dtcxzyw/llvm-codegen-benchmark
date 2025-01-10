@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
@@ -24,6 +24,7 @@
 ; qemu/optimized/tcg-op.c.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/regexp.cc.ll
+; soc-simulator/optimized/verilated.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

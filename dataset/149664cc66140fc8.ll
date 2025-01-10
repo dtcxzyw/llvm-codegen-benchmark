@@ -1,5 +1,5 @@
 
-; 421 occurrences:
+; 422 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -366,6 +366,7 @@
 ; postgres/optimized/regress.ll
 ; postgres/optimized/rowtypes.ll
 ; postgres/optimized/sinvaladt.ll
+; postgres/optimized/slru.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/spgscan.ll
@@ -430,7 +431,7 @@ entry:
   ret ptr %4
 }
 
-; 253 occurrences:
+; 255 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -666,6 +667,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; stockfish/optimized/tbprobe.ll
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
@@ -684,6 +686,7 @@ entry:
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; zstd/optimized/fse_decompress.c.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
@@ -763,7 +766,7 @@ entry:
   ret ptr %4
 }
 
-; 80 occurrences:
+; 77 occurrences:
 ; ceres/optimized/c_api.cc.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/dense_sparse_matrix.cc.ll
@@ -788,10 +791,8 @@ entry:
 ; gromacs/optimized/statepropagatordata.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
 ; ipopt/optimized/SensMetadataMeasurement.ll
-; jq/optimized/regexec.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
-; oniguruma/optimized/regexec.ll
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/arg_layer.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
@@ -843,7 +844,6 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
@@ -853,7 +853,7 @@ entry:
   ret ptr %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abseil-cpp/optimized/cordz_info_test.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -866,7 +866,6 @@ entry:
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/lpsolver.cpp.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:

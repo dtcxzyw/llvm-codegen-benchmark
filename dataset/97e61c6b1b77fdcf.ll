@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 14 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; cpython/optimized/_randommodule.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -10,9 +10,6 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; php/optimized/engine_mt19937.ll
 ; ruby/optimized/random.ll
 ; spike/optimized/aes64dsm.ll

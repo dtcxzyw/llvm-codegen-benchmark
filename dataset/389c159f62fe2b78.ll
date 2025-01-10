@@ -1,20 +1,20 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%"class.std::__1::tuple.2602961" = type { %"struct.std::__1::__tuple_impl.2602962" }
-%"struct.std::__1::__tuple_impl.2602962" = type <{ %"class.std::__1::__tuple_leaf.2602963", %"class.std::__1::__tuple_leaf.50.2602964", %"class.std::__1::__tuple_leaf.51.2602965", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2602963" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::basic_string.2602914" = type { %"class.std::__1::__compressed_pair.1.2602915" }
-%"class.std::__1::__compressed_pair.1.2602915" = type { %"struct.std::__1::__compressed_pair_elem.2.2602916" }
-%"struct.std::__1::__compressed_pair_elem.2.2602916" = type { %"struct.std::__1::basic_string<char>::__rep.2602917" }
-%"struct.std::__1::basic_string<char>::__rep.2602917" = type { %union.anon.2602918 }
-%union.anon.2602918 = type { %"struct.std::__1::basic_string<char>::__long.2602919" }
-%"struct.std::__1::basic_string<char>::__long.2602919" = type { %struct.anon.3.2602920, i64, ptr }
-%struct.anon.3.2602920 = type { i64 }
-%"class.std::__1::__tuple_leaf.50.2602964" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::__tuple_leaf.51.2602965" = type { i8 }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%"class.std::__1::tuple.2602928" = type { %"struct.std::__1::__tuple_impl.2602929" }
+%"struct.std::__1::__tuple_impl.2602929" = type <{ %"class.std::__1::__tuple_leaf.2602930", %"class.std::__1::__tuple_leaf.50.2602931", %"class.std::__1::__tuple_leaf.51.2602932", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2602930" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::basic_string.2602881" = type { %"class.std::__1::__compressed_pair.1.2602882" }
+%"class.std::__1::__compressed_pair.1.2602882" = type { %"struct.std::__1::__compressed_pair_elem.2.2602883" }
+%"struct.std::__1::__compressed_pair_elem.2.2602883" = type { %"struct.std::__1::basic_string<char>::__rep.2602884" }
+%"struct.std::__1::basic_string<char>::__rep.2602884" = type { %union.anon.2602885 }
+%union.anon.2602885 = type { %"struct.std::__1::basic_string<char>::__long.2602886" }
+%"struct.std::__1::basic_string<char>::__long.2602886" = type { %struct.anon.3.2602887, i64, ptr }
+%struct.anon.3.2602887 = type { i64 }
+%"class.std::__1::__tuple_leaf.50.2602931" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::__tuple_leaf.51.2602932" = type { i8 }
 
 ; 6 occurrences:
 ; arrow/optimized/diff.cc.ll
@@ -27,8 +27,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %1
-  %5 = getelementptr %union.yyalloc.2600711, ptr %4, i64 %3
+  %4 = getelementptr %union.yyalloc.2600678, ptr %0, i64 %1
+  %5 = getelementptr %union.yyalloc.2600678, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -40,8 +40,8 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %1
-  %5 = getelementptr nusw %union.yyalloc.2601680, ptr %4, i64 %3
+  %4 = getelementptr nusw %union.yyalloc.2601647, ptr %0, i64 %1
+  %5 = getelementptr nusw %union.yyalloc.2601647, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -115,7 +115,7 @@ define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -56
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.std::__1::tuple.2602961", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.std::__1::tuple.2602928", ptr %4, i64 %3
   ret ptr %5
 }
 

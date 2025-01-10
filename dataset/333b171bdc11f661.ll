@@ -30,6 +30,19 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; linux/optimized/xz_dec_lzma2.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; linux/optimized/iov_iter.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -39,18 +52,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
   %5 = add i64 %4, %3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
-  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 

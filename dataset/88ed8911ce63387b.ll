@@ -1,6 +1,6 @@
 
-%struct.in6_addr.3530600 = type { %union.anon.24.3530601 }
-%union.anon.24.3530601 = type { [4 x i32] }
+%struct.in6_addr.3530566 = type { %union.anon.24.3530567 }
+%union.anon.24.3530567 = type { [4 x i32] }
 
 ; 3 occurrences:
 ; nghttp2/optimized/nghttp2_option.c.ll
@@ -39,7 +39,7 @@ entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr %struct.in6_addr.3530600, ptr %4, i64 %3
+  %5 = getelementptr %struct.in6_addr.3530566, ptr %4, i64 %3
   ret ptr %5
 }
 

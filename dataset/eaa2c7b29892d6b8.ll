@@ -1,7 +1,7 @@
 
-%"class.asmjit::_abi_1_10::RALiveSpan.2603635" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603636", %"struct.asmjit::_abi_1_10::LiveRegData.2603637" }
-%"struct.asmjit::_abi_1_10::RALiveInterval.2603636" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::LiveRegData.2603637" = type { i32 }
+%"class.asmjit::_abi_1_10::RALiveSpan.2603602" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603603", %"struct.asmjit::_abi_1_10::LiveRegData.2603604" }
+%"struct.asmjit::_abi_1_10::RALiveInterval.2603603" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::LiveRegData.2603604" = type { i32 }
 
 ; 31 occurrences:
 ; clamav/optimized/upx.c.ll
@@ -44,9 +44,8 @@ entry:
   ret i64 %4
 }
 
-; 144 occurrences:
+; 143 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; boost/optimized/static_string.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -192,14 +191,15 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603635", ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603602", ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %3, -12
   ret i64 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/petite.c.ll

@@ -2258,7 +2258,7 @@ entry:
   ret i64 %3
 }
 
-; 495 occurrences:
+; 494 occurrences:
 ; abc/optimized/cmdUtils.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -2562,7 +2562,6 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oniguruma/optimized/regexec.ll
-; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dtrsm_kernel_RT.c.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
@@ -2762,7 +2761,7 @@ entry:
   ret i64 %3
 }
 
-; 634 occurrences:
+; 635 occurrences:
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; abseil-cpp/optimized/fnmatch.cc.ll
 ; abseil-cpp/optimized/log_entry_test.cc.ll
@@ -2818,6 +2817,7 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/alloc_lib.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/async.ll
 ; boost/optimized/async_fut.ll
@@ -3405,7 +3405,7 @@ entry:
   ret i64 %3
 }
 
-; 402 occurrences:
+; 403 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -3604,6 +3604,7 @@ entry:
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; nghttp2/optimized/sfparse.c.ll
 ; oiio/optimized/benchmark.cpp.ll
+; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
@@ -4590,7 +4591,7 @@ entry:
   ret i64 %3
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -4602,6 +4603,7 @@ entry:
 ; boost/optimized/read_graphviz_new.ll
 ; boost/optimized/work_stealing.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
+; cpython/optimized/pystrtod.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll

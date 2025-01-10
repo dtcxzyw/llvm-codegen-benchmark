@@ -1,5 +1,5 @@
 
-; 2616 occurrences:
+; 2613 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -636,7 +636,6 @@
 ; icu/optimized/rbbirb.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/smpdtfmt.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/ubidiln.ll
@@ -2315,7 +2314,6 @@
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-mmse.c.ll
 ; wireshark/optimized/packet-mongo.c.ll
-; wireshark/optimized/packet-mpeg-audio.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wireshark/optimized/packet-mpeg-dsmcc.c.ll
 ; wireshark/optimized/packet-mq.c.ll
@@ -2560,7 +2558,6 @@
 ; z3/optimized/spacer_ind_lemma_generalizer.cpp.ll
 ; z3/optimized/substitution.cpp.ll
 ; z3/optimized/theory_array_base.cpp.ll
-; z3/optimized/theory_array_full.cpp.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
@@ -2624,7 +2621,7 @@ entry:
   ret i32 %4
 }
 
-; 616 occurrences:
+; 615 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -2884,7 +2881,6 @@ entry:
 ; linux/optimized/tg3.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/vht.ll
-; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xfrm_user.ll
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/yenta_socket.ll
@@ -2951,7 +2947,6 @@ entry:
 ; ncnn/optimized/modelbin.cpp.ll
 ; node/optimized/simdutf.ll
 ; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/unicode.ll
 ; openblas/optimized/dgedmd.c.ll
 ; opencv/optimized/FilterTIG.cpp.ll
@@ -3196,6 +3191,7 @@ entry:
 ; wireshark/optimized/packet-sccp.c.ll
 ; wireshark/optimized/packet-shim6.c.ll
 ; wireshark/optimized/packet-sll.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tacacs.c.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; wireshark/optimized/packet-tls.c.ll
@@ -3249,7 +3245,7 @@ entry:
   ret i32 %4
 }
 
-; 1423 occurrences:
+; 1424 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -3313,6 +3309,7 @@ entry:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBound.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaEdge.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -4726,7 +4723,7 @@ entry:
   ret i32 %4
 }
 
-; 282 occurrences:
+; 283 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -4740,6 +4737,7 @@ entry:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ioReadAiger.c.ll
@@ -5371,7 +5369,7 @@ entry:
   ret i32 %4
 }
 
-; 410 occurrences:
+; 412 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefs.c.ll
@@ -5393,6 +5391,7 @@ entry:
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaFanout.c.ll
@@ -5533,6 +5532,7 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
 ; icu/optimized/calendar.ll
+; icu/optimized/collationdatawriter.ll
 ; icu/optimized/dictbe.ll
 ; icu/optimized/gencnvex.ll
 ; icu/optimized/numrange_impl.ll
@@ -5857,7 +5857,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/giaHash.c.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
@@ -5868,7 +5868,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; redis/optimized/rdb.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-icep.c.ll

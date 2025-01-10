@@ -1,18 +1,18 @@
 
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
-%struct.flow_action_entry.3533033 = type { i32, i32, i64, i64, i32, ptr, ptr, %union.anon.31.3533034, ptr }
-%union.anon.31.3533034 = type { %struct.anon.37.3533035 }
-%struct.anon.37.3533035 = type { i32, i64, i64, i32, i16, i64, i64, i32, %struct.anon.38.3533036, %struct.anon.38.3533036 }
-%struct.anon.38.3533036 = type { i32, i32 }
-%struct.skl_plane_wm.3534310 = type { [8 x %struct.skl_wm_level.3534311], [8 x %struct.skl_wm_level.3534311], %struct.skl_wm_level.3534311, %struct.anon.58.3534312, i8 }
-%struct.skl_wm_level.3534311 = type { i16, i16, i8, i8, i8, i8 }
-%struct.anon.58.3534312 = type { %struct.skl_wm_level.3534311, %struct.skl_wm_level.3534311 }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
-%struct.mi_page_s.4024222 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024223, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024223 = type { i8 }
-%struct.mi_page_s.4024255 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024256, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024256 = type { i8 }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
+%struct.flow_action_entry.3532999 = type { i32, i32, i64, i64, i32, ptr, ptr, %union.anon.31.3533000, ptr }
+%union.anon.31.3533000 = type { %struct.anon.37.3533001 }
+%struct.anon.37.3533001 = type { i32, i64, i64, i32, i16, i64, i64, i32, %struct.anon.38.3533002, %struct.anon.38.3533002 }
+%struct.anon.38.3533002 = type { i32, i32 }
+%struct.skl_plane_wm.3534276 = type { [8 x %struct.skl_wm_level.3534277], [8 x %struct.skl_wm_level.3534277], %struct.skl_wm_level.3534277, %struct.anon.58.3534278, i8 }
+%struct.skl_wm_level.3534277 = type { i16, i16, i8, i8, i8, i8 }
+%struct.anon.58.3534278 = type { %struct.skl_wm_level.3534277, %struct.skl_wm_level.3534277 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
+%struct.mi_page_s.4024172 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024173, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024173 = type { i8 }
+%struct.mi_page_s.4024205 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024206, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024206 = type { i8 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -20,8 +20,8 @@
 define ptr @func00000000000000e0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -32,8 +32,8 @@ entry:
 define ptr @func00000000000000e2(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -56
   ret ptr %6
 }
@@ -44,8 +44,8 @@ entry:
 define ptr @func00000000000000ef(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr nuw %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0, i32 1
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr nuw %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -73,8 +73,8 @@ entry:
 define ptr @func00000000000000eb(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0, i32 1
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -84,8 +84,8 @@ entry:
 define ptr @func00000000000000e8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr nusw %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -127,8 +127,8 @@ entry:
 define ptr @func00000000000000c3(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr [0 x %struct.flow_action_entry.3533033], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.flow_action_entry.3533033, ptr %4, i64 %0, i32 4
+  %4 = getelementptr [0 x %struct.flow_action_entry.3532999], ptr %3, i64 0, i64 %1
+  %5 = getelementptr %struct.flow_action_entry.3532999, ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 
@@ -138,7 +138,7 @@ entry:
 define ptr @func00000000000000cf(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2790
-  %4 = getelementptr [8 x %struct.skl_plane_wm.3534310], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [8 x %struct.skl_plane_wm.3534276], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 5
   ret ptr %6
@@ -150,7 +150,7 @@ entry:
 define ptr @func00000000000000c0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %3, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 14
   ret ptr %6
@@ -162,7 +162,7 @@ entry:
 define ptr @func00000000000000f8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024222], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024172], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 14
   ret ptr %6
@@ -176,7 +176,7 @@ entry:
 define ptr @func00000000000000fb(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024222], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024172], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 28
   ret ptr %6
@@ -188,8 +188,8 @@ entry:
 define ptr @func00000000000000ea(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 264
-  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024255], ptr %3, i64 0, i64 %1
-  %5 = getelementptr nusw %struct.mi_page_s.4024255, ptr %4, i64 %0
+  %4 = getelementptr nusw [513 x %struct.mi_page_s.4024205], ptr %3, i64 0, i64 %1
+  %5 = getelementptr nusw %struct.mi_page_s.4024205, ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -80
   ret ptr %6
 }

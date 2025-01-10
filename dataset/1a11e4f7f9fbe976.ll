@@ -37,9 +37,10 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; Function Attrs: nounwind

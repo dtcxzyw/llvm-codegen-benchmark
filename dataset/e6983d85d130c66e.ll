@@ -434,7 +434,7 @@ entry:
   ret i32 %3
 }
 
-; 869 occurrences:
+; 868 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -911,7 +911,6 @@ entry:
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll

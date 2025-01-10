@@ -2784,7 +2784,7 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcScorr.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -2794,6 +2794,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; glslang/optimized/linkValidate.cpp.ll
+; libevent/optimized/event.c.ll
 ; linux/optimized/intel_dp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll

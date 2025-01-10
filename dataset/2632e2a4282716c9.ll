@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; opencv/optimized/charuco.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll

@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 206 occurrences:
 ; actix-rs/optimized/1xpd5itwjglolvjs.ll
 ; actix-rs/optimized/38w83wyqv1thu0n9.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
@@ -37,7 +37,6 @@
 ; libquic/optimized/x509_vfy.c.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/Float2Int.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll

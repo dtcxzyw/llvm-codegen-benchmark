@@ -1,5 +1,5 @@
 
-%struct.TestObject.3895455 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.TestObject.3895405 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
@@ -83,7 +83,7 @@ entry:
   %2 = add nsw i64 %1, 7
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %struct.TestObject.3895455, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.TestObject.3895405, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

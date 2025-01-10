@@ -1,22 +1,22 @@
 
-%struct.ssl_mac_buf_st.2633660 = type { ptr, i32 }
-%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
-%union.anon.2802904 = type { i64, [8 x i8] }
-%struct.ieee80211_sband_iftype_data.3543204 = type <{ i16, %struct.ieee80211_sta_he_cap.3543205, %struct.ieee80211_he_6ghz_capa.3543206, %struct.ieee80211_sta_eht_cap.3543207, %struct.anon.144.3543208 }>
-%struct.ieee80211_sta_he_cap.3543205 = type <{ i8, %struct.ieee80211_he_cap_elem.3543209, %struct.ieee80211_he_mcs_nss_supp.3543210, [25 x i8] }>
-%struct.ieee80211_he_cap_elem.3543209 = type { [6 x i8], [11 x i8] }
-%struct.ieee80211_he_mcs_nss_supp.3543210 = type { i16, i16, i16, i16, i16, i16 }
-%struct.ieee80211_he_6ghz_capa.3543206 = type { i16 }
-%struct.ieee80211_sta_eht_cap.3543207 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3543211, %struct.ieee80211_eht_mcs_nss_supp.3543212, [32 x i8] }
-%struct.ieee80211_eht_cap_elem_fixed.3543211 = type { [2 x i8], [9 x i8] }
-%struct.ieee80211_eht_mcs_nss_supp.3543212 = type { %union.anon.105.3543213 }
-%union.anon.105.3543213 = type { %struct.anon.108.3543214 }
-%struct.anon.108.3543214 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215 }
-%struct.ieee80211_eht_mcs_nss_supp_bw.3543215 = type { %union.anon.109.3543216 }
-%union.anon.109.3543216 = type { %struct.anon.110.3543217 }
-%struct.anon.110.3543217 = type { i8, i8, i8 }
-%struct.anon.144.3543208 = type { ptr, i32 }
+%struct.ssl_mac_buf_st.2633627 = type { ptr, i32 }
+%"class.std::__cxx11::basic_string.2802868" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869", i64, %union.anon.2802870 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802869" = type { ptr }
+%union.anon.2802870 = type { i64, [8 x i8] }
+%struct.ieee80211_sband_iftype_data.3543170 = type <{ i16, %struct.ieee80211_sta_he_cap.3543171, %struct.ieee80211_he_6ghz_capa.3543172, %struct.ieee80211_sta_eht_cap.3543173, %struct.anon.144.3543174 }>
+%struct.ieee80211_sta_he_cap.3543171 = type <{ i8, %struct.ieee80211_he_cap_elem.3543175, %struct.ieee80211_he_mcs_nss_supp.3543176, [25 x i8] }>
+%struct.ieee80211_he_cap_elem.3543175 = type { [6 x i8], [11 x i8] }
+%struct.ieee80211_he_mcs_nss_supp.3543176 = type { i16, i16, i16, i16, i16, i16 }
+%struct.ieee80211_he_6ghz_capa.3543172 = type { i16 }
+%struct.ieee80211_sta_eht_cap.3543173 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3543177, %struct.ieee80211_eht_mcs_nss_supp.3543178, [32 x i8] }
+%struct.ieee80211_eht_cap_elem_fixed.3543177 = type { [2 x i8], [9 x i8] }
+%struct.ieee80211_eht_mcs_nss_supp.3543178 = type { %union.anon.105.3543179 }
+%union.anon.105.3543179 = type { %struct.anon.108.3543180 }
+%struct.anon.108.3543180 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3543181, %struct.ieee80211_eht_mcs_nss_supp_bw.3543181, %struct.ieee80211_eht_mcs_nss_supp_bw.3543181 }
+%struct.ieee80211_eht_mcs_nss_supp_bw.3543181 = type { %union.anon.109.3543182 }
+%union.anon.109.3543182 = type { %struct.anon.110.3543183 }
+%struct.anon.110.3543183 = type { i8, i8, i8 }
+%struct.anon.144.3543174 = type { ptr, i32 }
 
 ; 14 occurrences:
 ; casadi/optimized/codegen_usage.cpp.ll
@@ -36,7 +36,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ssl_mac_buf_st.2633660, ptr %1, i64 %2, i32 1
+  %3 = getelementptr %struct.ssl_mac_buf_st.2633627, ptr %1, i64 %2, i32 1
   %4 = select i1 %0, ptr null, ptr %3
   ret ptr %4
 }
@@ -128,7 +128,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802868", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = select i1 %0, ptr null, ptr %4
   ret ptr %5
@@ -186,7 +186,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3543204, ptr %1, i64 %2, i32 1
+  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3543170, ptr %1, i64 %2, i32 1
   %4 = select i1 %0, ptr null, ptr %3
   ret ptr %4
 }

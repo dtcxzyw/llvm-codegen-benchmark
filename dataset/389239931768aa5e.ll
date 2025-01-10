@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/OgreStructs.cpp.ll
@@ -10,7 +10,6 @@
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
 ; coreutils-rs/optimized/2ph6t6nh0hmjeejh.ll
-; cpython/optimized/action_helpers.ll
 ; cpython/optimized/cmathmodule.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll

@@ -58,16 +58,6 @@ func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	li	a3, 258
-	sub	a3, a3, a2
-	czero.nez	a2, a3, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
-	sext.w	a0, a0
-	seqz	a0, a0
-	ret
 func0000000000000061:                   # @func0000000000000061
 	andi	a0, a0, 1
 	li	a3, 32
@@ -97,6 +87,15 @@ func0000000000000074:                   # @func0000000000000074
 	or	a0, a0, a2
 	sext.w	a0, a0
 	sltiu	a0, a0, 6
+	ret
+func0000000000000001:                   # @func0000000000000001
+	andi	a0, a0, 1
+	neg	a2, a2
+	czero.nez	a2, a2, a0
+	czero.eqz	a0, a1, a0
+	or	a0, a0, a2
+	sext.w	a0, a0
+	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a0, a0, 1

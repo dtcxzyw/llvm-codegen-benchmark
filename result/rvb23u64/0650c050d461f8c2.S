@@ -1,3 +1,10 @@
+func000000000000003f:                   # @func000000000000003f
+	sext.w	a2, a2
+	czero.eqz	a1, a1, a2
+	sext.w	a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 408
+	ret
 func000000000000002f:                   # @func000000000000002f
 	sext.w	a2, a2
 	li	a3, 16
@@ -17,14 +24,6 @@ func000000000000003c:                   # @func000000000000003c
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 24
-	ret
-func000000000000003f:                   # @func000000000000003f
-	sext.w	a2, a2
-	addi	a2, a2, -2
-	czero.eqz	a1, a1, a2
-	sext.w	a1, a1
-	sh3add	a0, a1, a0
-	addi	a0, a0, 64
 	ret
 func000000000000008f:                   # @func000000000000008f
 	sext.w	a2, a2

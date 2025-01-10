@@ -30,8 +30,3 @@ func000000000000000c:                   # @func000000000000000c
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000017:                   # @func0000000000000017
-	movzbl	%sil, %eax
-	subq	%rax, %rdi
-	leaq	23(%rdi), %rax
-	retq

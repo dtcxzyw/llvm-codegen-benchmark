@@ -1,6 +1,6 @@
 
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
 
 ; 79 occurrences:
 ; arrow/optimized/hdfs.cc.ll
@@ -346,7 +346,7 @@ entry:
   ret ptr %5
 }
 
-; 109 occurrences:
+; 110 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/topology.ll
@@ -367,6 +367,7 @@ entry:
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/fmt-merge-msg.ll
 ; icu/optimized/package.ll
+; icu/optimized/pkgitems.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -500,7 +501,7 @@ entry:
   ret ptr %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/verFormula.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -509,7 +510,6 @@ entry:
 ; git/optimized/ref-filter.ll
 ; gromacs/optimized/deflate.c.ll
 ; icu/optimized/gencnval.ll
-; icu/optimized/pkgitems.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/deflate.c.ll
@@ -546,7 +546,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }

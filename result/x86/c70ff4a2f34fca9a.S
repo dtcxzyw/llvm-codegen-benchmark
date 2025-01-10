@@ -7,7 +7,7 @@ func0000000000000009:                   # @func0000000000000009
 	addl	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	movl	$65536, %eax                    # imm = 0x10000
+	movl	$1, %eax
 	shlxl	%edx, %eax, %ecx
 	xorl	%eax, %eax
 	testb	$1, %sil

@@ -1,24 +1,4 @@
 
-; 7 occurrences:
-; folly/optimized/AsyncSocket.cpp.ll
-; ockam-rs/optimized/111eznecj9pn2lkp.ll
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 3
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
-
 ; 63 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -92,6 +72,9 @@ entry:
   ret i1 %4
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
+
 ; 1 occurrences:
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; Function Attrs: nounwind
@@ -100,21 +83,6 @@ entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 2147483646
-  ret i1 %4
-}
-
-; 5 occurrences:
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 5
-  %3 = add i64 %2, %0
-  %4 = icmp ult i64 %3, 9223372036854775793
   ret i1 %4
 }
 

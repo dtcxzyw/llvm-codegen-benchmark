@@ -1,5 +1,5 @@
 
-; 1309 occurrences:
+; 1310 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -197,6 +197,7 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -1318,7 +1319,7 @@ entry:
   ret ptr %5
 }
 
-; 178 occurrences:
+; 177 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
@@ -1496,7 +1497,6 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -1634,7 +1634,7 @@ entry:
   ret ptr %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; linux/optimized/agg-tx.ll
@@ -1659,7 +1659,6 @@ entry:
 ; rust-analyzer-rs/optimized/3e2k9rvojvac5ok5.ll
 ; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:

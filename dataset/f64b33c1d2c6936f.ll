@@ -179,9 +179,8 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; git/optimized/cat-file.ll
 ; git/optimized/url.ll
 ; graphviz/optimized/write.c.ll
@@ -208,7 +207,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/StiDecoder.cpp.ll
@@ -222,7 +221,6 @@ entry:
 ; openjdk/optimized/gtk3_interface.ll
 ; postgres/optimized/spell.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i32 %2) #0 {
 entry:

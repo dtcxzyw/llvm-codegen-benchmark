@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; abc/optimized/giaMinLut.c.ll
+; 4 occurrences:
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
@@ -15,7 +14,8 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; hdf5/optimized/h5diff_array.c.ll

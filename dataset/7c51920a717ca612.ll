@@ -1,7 +1,6 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; clamav/optimized/clamdcom.c.ll
-; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/output.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
@@ -26,14 +25,13 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; mitsuba3/optimized/rgb2spec.c.ll
 ; opencv/optimized/downhill_simplex.cpp.ll
 ; openjdk/optimized/jchuff.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/reedsolomon.c.ll
@@ -46,12 +44,10 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 16 occurrences:
 ; clamav/optimized/htmlnorm.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/prefilter.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/runtime.c.ll
 ; linux/optimized/swiotlb.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
@@ -59,7 +55,6 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; oiio/optimized/exif.cpp.ll
-; php/optimized/KeccakSponge.ll
 ; rocksdb/optimized/jemalloc_nodump_allocator.cc.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; rocksdb/optimized/skiplistrep.cc.ll
@@ -75,8 +70,7 @@ entry:
   ret i64 %5
 }
 
-; 40 occurrences:
-; c3c/optimized/llvm_codegen_instr.c.ll
+; 38 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -106,7 +100,6 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; slurm/optimized/KeccakSponge.ll
-; slurm/optimized/backfill.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/intblast_solver.cpp.ll

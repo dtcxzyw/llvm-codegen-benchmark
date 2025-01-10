@@ -1,18 +1,19 @@
+func0000000000000424:                   // @func0000000000000424
+// %bb.0:                               // %entry
+	sub	w9, w1, #127
+	mov	w8, #32                         // =0x20
+	and	w10, w0, #0xff
+	cmn	w9, #95
+	ccmp	w10, w8, #4, hs
+	cset	w0, eq
+	ret
+                                        // -- End function
 func000000000000054c:                   // @func000000000000054c
 // %bb.0:                               // %entry
 	sxtb	w8, w0
 	cmp	w1, #1
 	ccmp	w8, #0, #0, eq
 	cset	w0, ge
-	ret
-                                        // -- End function
-func0000000000000424:                   // @func0000000000000424
-// %bb.0:                               // %entry
-	sub	w8, w1, #129
-	and	w9, w0, #0xff
-	cmp	w8, #126
-	ccmp	w9, #1, #4, hs
-	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000484:                   // @func0000000000000484

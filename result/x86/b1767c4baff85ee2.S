@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	leal	8(%rdi), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	andl	$63, %edi
+	andl	$7, %edi
 	leal	1(%rdi), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006

@@ -45,8 +45,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; 1 occurrences:
 ; openusd/optimized/resize.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i64 %1, i64 %2) #0 {

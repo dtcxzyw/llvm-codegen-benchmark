@@ -16,9 +16,10 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; llvm/optimized/Function.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i8 %0, i32 %1, i32 %2) #0 {
 entry:

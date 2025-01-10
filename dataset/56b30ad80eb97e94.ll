@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/DefaultLogger.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
@@ -25,7 +25,6 @@
 ; linux/optimized/i2c-core-acpi.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/route.ll
 ; linux/optimized/slub.ll

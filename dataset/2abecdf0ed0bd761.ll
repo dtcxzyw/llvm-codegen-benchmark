@@ -1,5 +1,5 @@
 
-%struct.FSE_symbolCompressionTransform.3496729 = type { i32, i32 }
+%struct.FSE_symbolCompressionTransform.3496695 = type { i32, i32 }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5HFhuge.c.ll
@@ -38,7 +38,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = getelementptr nusw i32, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nuw %struct.FSE_symbolCompressionTransform.3496729, ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.FSE_symbolCompressionTransform.3496695, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

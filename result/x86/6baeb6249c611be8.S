@@ -1,7 +1,3 @@
-func0000000000000546:                   # @func0000000000000546
-	cmpl	%esi, %edi
-	setl	%al
-	retq
 func000000000000058c:                   # @func000000000000058c
 	subl	%esi, %edi
 	setne	%cl

@@ -53,12 +53,10 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; icu/optimized/package.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/seg6.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/jquant2.ll
 ; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-diameter.c.ll
@@ -80,6 +78,17 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, -2
   %3 = sub nsw i32 %0, %2
+  ret i32 %3
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 16079
+  %3 = sub nuw nsw i32 %0, %2
   ret i32 %3
 }
 

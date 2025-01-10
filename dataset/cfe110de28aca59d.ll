@@ -1,5 +1,5 @@
 
-; 6397 occurrences:
+; 6400 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -717,6 +717,7 @@
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/noproxy.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/pipe.c.ll
 ; cmake/optimized/rhash.c.ll
 ; cmake/optimized/select.c.ll
@@ -787,6 +788,7 @@
 ; curl/optimized/libcurl_la-headers.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; curl/optimized/libcurl_la-noproxy.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; curl/optimized/libcurl_la-select.ll
 ; curl/optimized/libcurl_la-transfer.ll
@@ -3729,6 +3731,7 @@
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/system.cpp.ll
@@ -4901,6 +4904,7 @@
 ; quantlib/optimized/sobolrsg.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -5840,7 +5844,6 @@
 ; wireshark/optimized/usbdump.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
-; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/md5.c.ll

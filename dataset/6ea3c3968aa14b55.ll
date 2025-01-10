@@ -1,6 +1,6 @@
 
-%"class.rocksdb::Slice.2629824" = type { ptr, i64 }
-%"struct.arrow::io::ReadRange.3800818" = type { i64, i64 }
+%"class.rocksdb::Slice.2629791" = type { ptr, i64 }
+%"struct.arrow::io::ReadRange.3800768" = type { i64, i64 }
 
 ; 33 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -43,7 +43,7 @@ entry:
   %4 = ashr exact i64 %2, 2
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw %"class.rocksdb::Slice.2629824", ptr %6, i64 %5
+  %7 = getelementptr nusw %"class.rocksdb::Slice.2629791", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -69,7 +69,7 @@ entry:
   %4 = ashr exact i64 %2, 4
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr %"struct.arrow::io::ReadRange.3800818", ptr %6, i64 %5
+  %7 = getelementptr %"struct.arrow::io::ReadRange.3800768", ptr %6, i64 %5
   ret ptr %7
 }
 

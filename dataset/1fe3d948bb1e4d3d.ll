@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 92 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -32,7 +32,6 @@
 ; libquic/optimized/ctr.c.ll
 ; libquic/optimized/pkcs8.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
-; libzmq/optimized/xpub.cpp.ll
 ; lief/optimized/pkcs12.c.ll
 ; linux/optimized/decompress_bunzip2.ll
 ; linux/optimized/evgpeblk.ll

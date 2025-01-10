@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 127 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -12,6 +12,7 @@
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2eifmygohquvvuy.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
+; cpython/optimized/unicodeobject.ll
 ; delta-rs/optimized/3yt47vxpbp4b5dih.ll
 ; delta-rs/optimized/ji6jbkbato2odt0.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -135,7 +136,7 @@ entry:
   ret i1 %4
 }
 
-; 197 occurrences:
+; 194 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaDecs.c.ll
@@ -156,7 +157,6 @@ entry:
 ; cmake/optimized/formdata.c.ll
 ; coreutils-rs/optimized/2pqvixtdp9wizsl2.ll
 ; cpython/optimized/suggestions.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-altsvc.ll
 ; curl/optimized/libcurl_la-formdata.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -264,10 +264,8 @@ entry:
 ; openjdk/optimized/xVirtualMemory.ll
 ; openjdk/optimized/zVirtualMemory.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/openssl-bin-pkcs8.ll
 ; openvdb/optimized/FastSweeping.cc.ll

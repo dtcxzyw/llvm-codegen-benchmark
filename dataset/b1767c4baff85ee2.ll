@@ -41,8 +41,7 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
-; git/optimized/sha256.ll
+; 26 occurrences:
 ; linux/optimized/ndisc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; spike/optimized/vl1re16_v.ll
@@ -73,7 +72,7 @@ entry:
 define i32 @func000000000000000f(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = and i32 %1, 63
+  %2 = and i32 %1, 7
   %3 = add nuw nsw i32 %2, 1
   ret i32 %3
 }

@@ -1,5 +1,5 @@
 
-; 2161 occurrences:
+; 2162 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -885,7 +885,9 @@
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
+; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
+; minetest/optimized/treegen.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; msdfgen/optimized/Scanline.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -1297,7 +1299,6 @@
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
 ; opencv/optimized/kernels_core.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/kuhn_munkres.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/layer.cpp.ll

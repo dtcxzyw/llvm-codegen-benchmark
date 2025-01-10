@@ -12,16 +12,15 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/sbdSat.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; openjdk/optimized/dependencies.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = icmp sle i32 %1, %3
-  %5 = or i1 %0, %4
+  %5 = or i1 %4, %0
   ret i1 %5
 }
 

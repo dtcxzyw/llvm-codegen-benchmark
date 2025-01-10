@@ -1,7 +1,7 @@
 
-%struct.yyStackEntry.3662209 = type { i16, i16, %union.YYMINORTYPE.3662207 }
-%union.YYMINORTYPE.3662207 = type { %struct.Token.3662177 }
-%struct.Token.3662177 = type { ptr, i32 }
+%struct.yyStackEntry.3662159 = type { i16, i16, %union.YYMINORTYPE.3662157 }
+%union.YYMINORTYPE.3662157 = type { %struct.Token.3662127 }
+%struct.Token.3662127 = type { ptr, i32 }
 
 ; 11 occurrences:
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -36,7 +36,7 @@ entry:
   %3 = shl i32 %2, 1
   %4 = add i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.yyStackEntry.3662209, ptr %0, i64 %5
+  %6 = getelementptr %struct.yyStackEntry.3662159, ptr %0, i64 %5
   ret ptr %6
 }
 

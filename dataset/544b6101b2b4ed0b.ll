@@ -12,11 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cvc5/optimized/theory_bv.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/nfs4proc.ll

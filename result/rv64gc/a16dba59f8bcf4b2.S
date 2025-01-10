@@ -7,6 +7,12 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
+func00000000000001f0:                   # @func00000000000001f0
+	li	a2, 544
+	mulw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 1652
+	ret
 func00000000000000b0:                   # @func00000000000000b0
 	li	a2, 544
 	mulw	a1, a1, a2

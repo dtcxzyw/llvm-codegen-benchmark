@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.98.3332165" = type { %"struct.std::__uniq_ptr_data.99.3332166" }
-%"struct.std::__uniq_ptr_data.99.3332166" = type { %"class.std::__uniq_ptr_impl.100.3332167" }
-%"class.std::__uniq_ptr_impl.100.3332167" = type { %"class.std::tuple.101.3332168" }
-%"class.std::tuple.101.3332168" = type { %"struct.std::_Tuple_impl.102.3332169" }
-%"struct.std::_Tuple_impl.102.3332169" = type { %"struct.std::_Head_base.105.3332170" }
-%"struct.std::_Head_base.105.3332170" = type { ptr }
+%"class.std::unique_ptr.98.3332131" = type { %"struct.std::__uniq_ptr_data.99.3332132" }
+%"struct.std::__uniq_ptr_data.99.3332132" = type { %"class.std::__uniq_ptr_impl.100.3332133" }
+%"class.std::__uniq_ptr_impl.100.3332133" = type { %"class.std::tuple.101.3332134" }
+%"class.std::tuple.101.3332134" = type { %"struct.std::_Tuple_impl.102.3332135" }
+%"struct.std::_Tuple_impl.102.3332135" = type { %"struct.std::_Head_base.105.3332136" }
+%"struct.std::_Head_base.105.3332136" = type { ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_dev-audio.c.ll
@@ -26,7 +26,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = add i8 %2, -2
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw nuw [3 x %"class.std::unique_ptr.98.3332165"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x %"class.std::unique_ptr.98.3332131"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

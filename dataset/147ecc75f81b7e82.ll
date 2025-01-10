@@ -1,5 +1,5 @@
 
-%struct.ahci_sg.3531733 = type { i32, i32, i32, i32 }
+%struct.ahci_sg.3531699 = type { i32, i32, i32, i32 }
 
 ; 6 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -28,7 +28,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 128
-  %7 = getelementptr %struct.ahci_sg.3531733, ptr %6, i64 %0
+  %7 = getelementptr %struct.ahci_sg.3531699, ptr %6, i64 %0
   ret ptr %7
 }
 

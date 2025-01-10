@@ -2778,7 +2778,7 @@ entry:
   ret i32 %3
 }
 
-; 278 occurrences:
+; 281 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -3002,6 +3002,8 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/imageDecompressor.ll
 ; openjdk/optimized/relocator.ll
@@ -3017,6 +3019,7 @@ entry:
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/mapFunction.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; ozz-animation/optimized/local_to_model_job.cc.ll
 ; php/optimized/conv.ll

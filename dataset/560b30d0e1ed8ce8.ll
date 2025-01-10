@@ -2402,11 +2402,10 @@ entry:
   ret i64 %2
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; cpython/optimized/dictobject.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/idr.ll

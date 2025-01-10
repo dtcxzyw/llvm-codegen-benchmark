@@ -1,5 +1,5 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
 
 ; 5 occurrences:
 ; linux/optimized/blk-core.ll
@@ -14,7 +14,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %0 to ptr
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  %6 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %5, i64 0, i64 %3
+  %6 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %5, i64 0, i64 %3
   ret ptr %6
 }
 

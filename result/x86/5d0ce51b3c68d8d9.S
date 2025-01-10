@@ -25,16 +25,17 @@ func0000000000000028:                   # @func0000000000000028
 	addl	%edi, %eax
 	cltq
 	retq
-func0000000000000005:                   # @func0000000000000005
-	testl	%edx, %edx
-	cmovel	%edx, %esi
-	addl	%edi, %esi
-	movslq	%esi, %rax
-	retq
 func0000000000000051:                   # @func0000000000000051
 	cmpl	$67, %edx
 	movl	$-16, %eax
 	cmovael	%esi, %eax
+	addl	%edi, %eax
+	cltq
+	retq
+func0000000000000005:                   # @func0000000000000005
+	cmpl	$2, %edx
+	movl	$14, %eax
+	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	cltq
 	retq

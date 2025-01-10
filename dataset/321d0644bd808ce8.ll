@@ -1,5 +1,5 @@
 
-%"class.tbb::detail::d1::blocked_range.2635870" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2635837" = type { i64, i64, i64 }
 
 ; 247 occurrences:
 ; brotli/optimized/static_dict.c.ll
@@ -255,7 +255,7 @@ entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635870", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635837", ptr %4, i64 %3
   ret ptr %5
 }
 

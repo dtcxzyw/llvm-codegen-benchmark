@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -52,23 +52,6 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; darktable/optimized/IiqDecoder.cpp.ll
-; icu/optimized/collationbuilder.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/SVEIntrinsicOpts.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000302(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 9223372036854775792
-  %4 = icmp eq i64 %3, 16
-  %5 = icmp ne i32 %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; abc/optimized/fraSat.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -102,6 +85,22 @@ entry:
   %3 = and i64 %2, 2305843005455597567
   %4 = icmp eq i64 %3, 2305843005455597567
   %5 = icmp sge i32 %0, %1
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 5 occurrences:
+; icu/optimized/collationbuilder.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/LegalizeDAG.cpp.ll
+; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/SVEIntrinsicOpts.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000302(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967296
+  %4 = icmp eq i64 %3, 0
+  %5 = icmp ne i32 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }

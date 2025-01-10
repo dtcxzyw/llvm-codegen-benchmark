@@ -1,9 +1,9 @@
 
-%"struct.tbb::detail::d0::padded.2635915" = type { %"struct.tbb::detail::d0::padded_base.base.2635916", [7 x i8] }
-%"struct.tbb::detail::d0::padded_base.base.2635916" = type { %"struct.tbb::detail::d1::ets_element.base.2635917", [112 x i8] }
-%"struct.tbb::detail::d1::ets_element.base.2635917" = type { %"class.tbb::detail::d0::aligned_space.2635909", i8 }
-%"class.tbb::detail::d0::aligned_space.2635909" = type { [8 x i8] }
-%struct.pte_t.3530392 = type { i64 }
+%"struct.tbb::detail::d0::padded.2635882" = type { %"struct.tbb::detail::d0::padded_base.base.2635883", [7 x i8] }
+%"struct.tbb::detail::d0::padded_base.base.2635883" = type { %"struct.tbb::detail::d1::ets_element.base.2635884", [112 x i8] }
+%"struct.tbb::detail::d1::ets_element.base.2635884" = type { %"class.tbb::detail::d0::aligned_space.2635876", i8 }
+%"class.tbb::detail::d0::aligned_space.2635876" = type { [8 x i8] }
+%struct.pte_t.3530358 = type { i64 }
 
 ; 144 occurrences:
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
@@ -155,7 +155,7 @@ define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635915", ptr %3, i64 %2
+  %4 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635882", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -392,7 +392,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 511
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.pte_t.3530392, ptr %3, i64 %2
+  %4 = getelementptr %struct.pte_t.3530358, ptr %3, i64 %2
   ret ptr %4
 }
 

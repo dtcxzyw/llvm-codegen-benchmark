@@ -1,5 +1,5 @@
 
-; 418 occurrences:
+; 417 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
@@ -187,7 +187,6 @@
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/TextStubV5.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/arap.cpp.ll

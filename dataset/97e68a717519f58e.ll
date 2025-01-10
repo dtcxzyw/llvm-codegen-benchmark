@@ -1218,7 +1218,7 @@ entry:
   ret ptr %3
 }
 
-; 1715 occurrences:
+; 1714 occurrences:
 ; abc/optimized/sfmLib.c.ll
 ; abseil-cpp/optimized/memory_test.cc.ll
 ; actix-rs/optimized/1a89q5mj3jl9opyq.ll
@@ -1879,7 +1879,6 @@ entry:
 ; llvm/optimized/TGParser.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; llvm/optimized/TargetInfo.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/TransAPIUses.cpp.ll

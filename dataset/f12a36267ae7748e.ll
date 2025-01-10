@@ -1,13 +1,13 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.3489309" = type { %"struct.std::pair.35.3489310" }
-%"struct.std::pair.35.3489310" = type { i64, %"struct.std::pair.23.3489311" }
-%"struct.std::pair.23.3489311" = type { double, %"class.std::unique_ptr.25.3489312" }
-%"class.std::unique_ptr.25.3489312" = type { %"struct.std::__uniq_ptr_data.26.3489313" }
-%"struct.std::__uniq_ptr_data.26.3489313" = type { %"class.std::__uniq_ptr_impl.27.3489314" }
-%"class.std::__uniq_ptr_impl.27.3489314" = type { %"class.std::tuple.28.3489315" }
-%"class.std::tuple.28.3489315" = type { %"struct.std::_Tuple_impl.29.3489316" }
-%"struct.std::_Tuple_impl.29.3489316" = type { %"struct.std::_Head_base.32.3489317" }
-%"struct.std::_Head_base.32.3489317" = type { ptr }
+%"union.absl::debian2::container_internal::map_slot_type.3489275" = type { %"struct.std::pair.35.3489276" }
+%"struct.std::pair.35.3489276" = type { i64, %"struct.std::pair.23.3489277" }
+%"struct.std::pair.23.3489277" = type { double, %"class.std::unique_ptr.25.3489278" }
+%"class.std::unique_ptr.25.3489278" = type { %"struct.std::__uniq_ptr_data.26.3489279" }
+%"struct.std::__uniq_ptr_data.26.3489279" = type { %"class.std::__uniq_ptr_impl.27.3489280" }
+%"class.std::__uniq_ptr_impl.27.3489280" = type { %"class.std::tuple.28.3489281" }
+%"class.std::tuple.28.3489281" = type { %"struct.std::_Tuple_impl.29.3489282" }
+%"struct.std::_Tuple_impl.29.3489282" = type { %"struct.std::_Head_base.32.3489283" }
+%"struct.std::_Head_base.32.3489283" = type { ptr }
 
 ; 20 occurrences:
 ; freetype/optimized/truetype.c.ll
@@ -98,8 +98,8 @@ entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %5, i64 %4
-  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.3489275", ptr %5, i64 %4
+  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.3489275", ptr %6, i64 %0
   ret ptr %7
 }
 

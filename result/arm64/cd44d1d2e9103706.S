@@ -5,6 +5,13 @@ func000000000000000a:                   // @func000000000000000a
 	lsl	x0, x8, #32
 	ret
                                         // -- End function
+func000000000000001f:                   // @func000000000000001f
+// %bb.0:                               // %entry
+	add	w8, w0, #1
+	and	w8, w8, #0x7ffffffe
+	ubfiz	x0, x8, #2, #32
+	ret
+                                        // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	add	w8, w0, #1
@@ -30,13 +37,6 @@ func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	add	w8, w0, #1
 	lsl	x0, x8, #48
-	ret
-                                        // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	add	w8, w0, #511
-	and	w8, w8, #0x3ffffe00
-	ubfiz	x0, x8, #3, #32
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002

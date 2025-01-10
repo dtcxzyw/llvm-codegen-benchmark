@@ -24,7 +24,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/bmcCexCut.c.ll
@@ -48,6 +48,7 @@ entry:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lua/optimized/ldebug.ll
 ; openjdk/optimized/cmsalpha.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind

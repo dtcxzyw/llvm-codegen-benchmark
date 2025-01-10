@@ -1,5 +1,5 @@
 
-; 525 occurrences:
+; 526 occurrences:
 ; abc/optimized/rwrUtil.c.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -192,6 +192,7 @@
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll

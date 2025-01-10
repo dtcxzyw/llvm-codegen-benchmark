@@ -113,8 +113,7 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 5 occurrences:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
@@ -131,8 +130,7 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 2 occurrences:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
@@ -146,11 +144,12 @@ entry:
   ret i64 %7
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; lief/optimized/Builder.cpp.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
@@ -180,19 +179,6 @@ entry:
   %5 = shl nuw nsw i64 %4, 62
   %6 = or i64 %5, %1
   %7 = or disjoint i64 %6, %0
-  ret i64 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 128
-  %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw i64 %4, 56
-  %6 = or i64 %1, %5
-  %7 = or i64 %6, %0
   ret i64 %7
 }
 

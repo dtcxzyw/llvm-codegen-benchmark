@@ -102,14 +102,6 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
-// %bb.0:                               // %entry
-	sub	x8, x0, x1
-                                        // kill: def $w2 killed $w2 def $x2
-	cmp	x8, w2, uxth
-	cset	w0, lo
-	ret
-                                        // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	sub	x8, x0, x1

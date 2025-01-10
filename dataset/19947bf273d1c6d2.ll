@@ -403,7 +403,7 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; graphviz/optimized/tlayout.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
@@ -417,6 +417,7 @@ entry:
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; proj/optimized/adams.cpp.ll
+; proj/optimized/grids.cpp.ll
 ; proj/optimized/imoll.cpp.ll
 ; proj/optimized/imoll_o.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

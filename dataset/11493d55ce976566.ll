@@ -1,14 +1,14 @@
 
-%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
-%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
-%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
-%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
-%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
-%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
-%struct.anon.12.2606011 = type { i64 }
-%"struct.mold::elf::ElfShdr.2637203" = type { %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.3.2637186" }
-%"class.mold::LittleEndian.2637169" = type { [4 x i8] }
-%"class.mold::LittleEndian.3.2637186" = type { [8 x i8] }
+%"class.std::__1::basic_string.2605972" = type { %"class.std::__1::__compressed_pair.10.2605973" }
+%"class.std::__1::__compressed_pair.10.2605973" = type { %"struct.std::__1::__compressed_pair_elem.11.2605974" }
+%"struct.std::__1::__compressed_pair_elem.11.2605974" = type { %"struct.std::__1::basic_string<char>::__rep.2605975" }
+%"struct.std::__1::basic_string<char>::__rep.2605975" = type { %union.anon.2605976 }
+%union.anon.2605976 = type { %"struct.std::__1::basic_string<char>::__long.2605977" }
+%"struct.std::__1::basic_string<char>::__long.2605977" = type { %struct.anon.12.2605978, i64, ptr }
+%struct.anon.12.2605978 = type { i64 }
+%"struct.mold::elf::ElfShdr.2637170" = type { %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.3.2637153" }
+%"class.mold::LittleEndian.2637136" = type { [4 x i8] }
+%"class.mold::LittleEndian.3.2637153" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr %"class.std::__1::basic_string.2606005", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::__1::basic_string.2605972", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -202,7 +202,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.2637203", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.2637170", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -415,7 +415,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cmake/optimized/cmCursesLongMessageForm.cxx.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; openblas/optimized/utest_main.c.ll
 ; Function Attrs: nounwind
@@ -433,17 +434,6 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; cmake/optimized/cmCursesLongMessageForm.cxx.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5

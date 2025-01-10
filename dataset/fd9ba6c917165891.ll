@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; oiio/optimized/exif.cpp.ll

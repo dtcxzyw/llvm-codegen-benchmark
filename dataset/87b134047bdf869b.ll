@@ -1,5 +1,6 @@
 
-; 81 occurrences:
+; 82 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; boost/optimized/to_chars.ll
@@ -91,8 +92,7 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 53 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sscSim.c.ll

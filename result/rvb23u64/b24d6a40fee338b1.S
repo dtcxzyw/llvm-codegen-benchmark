@@ -8,8 +8,3 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
-func0000000000000033:                   # @func0000000000000033
-	sub	a2, a2, a1
-	add	a0, a0, a2
-	addi	a0, a0, 10
-	ret

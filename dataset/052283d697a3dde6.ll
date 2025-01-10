@@ -1,14 +1,14 @@
 
-%"class.std::optional.661.3290297" = type { %"struct.std::_Optional_base.662.3290298" }
-%"struct.std::_Optional_base.662.3290298" = type { %"struct.std::_Optional_payload.664.3290299" }
-%"struct.std::_Optional_payload.664.3290299" = type { %"struct.std::_Optional_payload.base.668.3290300", [7 x i8] }
-%"struct.std::_Optional_payload.base.668.3290300" = type { %"struct.std::_Optional_payload_base.base.667.3290301" }
-%"struct.std::_Optional_payload_base.base.667.3290301" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302", i8 }
-%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302" = type { %"struct.llvm::object::VersionEntry.3290273" }
-%"struct.llvm::object::VersionEntry.3290273" = type <{ %"class.std::__cxx11::basic_string.3290204", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.3290204" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205", i64, %union.anon.45.3290206 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205" = type { ptr }
-%union.anon.45.3290206 = type { i64, [8 x i8] }
+%"class.std::optional.661.3290263" = type { %"struct.std::_Optional_base.662.3290264" }
+%"struct.std::_Optional_base.662.3290264" = type { %"struct.std::_Optional_payload.664.3290265" }
+%"struct.std::_Optional_payload.664.3290265" = type { %"struct.std::_Optional_payload.base.668.3290266", [7 x i8] }
+%"struct.std::_Optional_payload.base.668.3290266" = type { %"struct.std::_Optional_payload_base.base.667.3290267" }
+%"struct.std::_Optional_payload_base.base.667.3290267" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290268", i8 }
+%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290268" = type { %"struct.llvm::object::VersionEntry.3290239" }
+%"struct.llvm::object::VersionEntry.3290239" = type <{ %"class.std::__cxx11::basic_string.3290170", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.3290170" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290171", i64, %union.anon.45.3290172 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290171" = type { ptr }
+%union.anon.45.3290172 = type { i64, [8 x i8] }
 
 ; 1 occurrences:
 ; assimp/optimized/NDOLoader.cpp.ll
@@ -139,7 +139,7 @@ entry:
 define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::optional.661.3290297", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::optional.661.3290263", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 48
   %6 = icmp eq ptr %5, %0
   ret i1 %6

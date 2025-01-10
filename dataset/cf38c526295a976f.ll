@@ -1,8 +1,7 @@
 
-; 1870 occurrences:
+; 1868 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
-; abc/optimized/cuddApa.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -747,7 +746,6 @@
 ; oniguruma/optimized/utf16_le.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/contours.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/infer_single_roi.cpp.ll
 ; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
@@ -1878,7 +1876,7 @@ entry:
   ret i1 %3
 }
 
-; 318 occurrences:
+; 319 occurrences:
 ; abc/optimized/bacNtk.c.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -2084,6 +2082,7 @@ entry:
 ; php/optimized/parse_date.ll
 ; php/optimized/parse_iso_intervals.ll
 ; pocketpy/optimized/expr.cpp.ll
+; postgres/optimized/formatting.ll
 ; postgres/optimized/hba.ll
 ; postgres/optimized/ruleutils.ll
 ; protobuf/optimized/csharp_field_base.cc.ll

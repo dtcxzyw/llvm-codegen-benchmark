@@ -166,11 +166,12 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
+; proj/optimized/grids.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(double %0, double %1) #0 {

@@ -1,5 +1,5 @@
 
-; 2014 occurrences:
+; 2018 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -36,8 +36,12 @@
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaEsop.c.ll
 ; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaPack.c.ll
 ; abc/optimized/giaPat2.c.ll
+; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaSatEdge.c.ll
@@ -908,6 +912,7 @@
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
+; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarrj.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstebz.c.ll
@@ -1690,7 +1695,6 @@
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
@@ -2022,7 +2026,7 @@ entry:
   ret i1 %3
 }
 
-; 4648 occurrences:
+; 4642 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -2382,7 +2386,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
-; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
@@ -2456,7 +2459,6 @@ entry:
 ; cmake/optimized/vtls.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -3203,7 +3205,6 @@ entry:
 ; libuv/optimized/fs.c.ll
 ; libuv/optimized/inet.c.ll
 ; libuv/optimized/linux.c.ll
-; libwebp/optimized/anim_encode.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/bit_reader_utils.c.ll
 ; libwebp/optimized/cwebp.c.ll
@@ -5043,7 +5044,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
 ; openssl/optimized/libcrypto-lib-by_file.ll
 ; openssl/optimized/libcrypto-lib-dh_ameth.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-evp_key.ll
 ; openssl/optimized/libcrypto-lib-evp_rand.ll
 ; openssl/optimized/libcrypto-lib-exchange.ll
@@ -5062,7 +5062,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
 ; openssl/optimized/libcrypto-shlib-by_file.ll
 ; openssl/optimized/libcrypto-shlib-dh_ameth.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-evp_key.ll
 ; openssl/optimized/libcrypto-shlib-evp_rand.ll
 ; openssl/optimized/libcrypto-shlib-exchange.ll
@@ -6655,7 +6654,6 @@ entry:
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
@@ -10544,7 +10542,7 @@ entry:
   ret i1 %3
 }
 
-; 459 occurrences:
+; 460 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcBmci.c.ll
@@ -10570,6 +10568,7 @@ entry:
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/modsupport.ll
 ; cpython/optimized/semaphore.ll
+; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -11012,7 +11011,7 @@ entry:
   ret i1 %3
 }
 
-; 360 occurrences:
+; 361 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -11038,6 +11037,7 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/inflate.c.ll
 ; hdf5/optimized/H5Opline.c.ll
+; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Host.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/gtest-all.cc.ll

@@ -1,6 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
 
 ; 163 occurrences:
 ; abc/optimized/cutCut.c.ll
@@ -172,8 +172,8 @@ entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 76
-  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %4
-  %7 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %6, i64 %0
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %5, i64 %4
+  %7 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %6, i64 %0
   ret ptr %7
 }
 

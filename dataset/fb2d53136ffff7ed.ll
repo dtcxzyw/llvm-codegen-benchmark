@@ -1,5 +1,5 @@
 
-; 436 occurrences:
+; 439 occurrences:
 ; abc/optimized/decPrint.c.ll
 ; abc/optimized/giaGen.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
@@ -150,6 +150,7 @@
 ; linux/optimized/smpboot.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/trans_fd.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
@@ -307,6 +308,8 @@
 ; openmpi/optimized/libmpi_mpit_profile_la-category_get_cvars.ll
 ; openmpi/optimized/libmpi_mpit_profile_la-category_get_pvars.ll
 ; openmpi/optimized/pml_ob1_rdma.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/openssl-bin-asn1parse.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll

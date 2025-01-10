@@ -13,8 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 3 occurrences:
 ; git/optimized/progress.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/vlv_dsi_pll.ll

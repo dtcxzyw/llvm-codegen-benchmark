@@ -1,6 +1,6 @@
 
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -83,7 +83,7 @@ entry:
   %3 = and i64 %2, -33554432
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr nusw nuw i8, ptr %4, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

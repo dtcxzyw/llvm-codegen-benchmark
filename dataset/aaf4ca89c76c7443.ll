@@ -1,6 +1,6 @@
 
-%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
-%union.RelptrFreePageBtree.3653937 = type { ptr }
+%struct.FreePageBtreeInternalKey.3653902 = type { i64, %union.RelptrFreePageBtree.3653903 }
+%union.RelptrFreePageBtree.3653903 = type { ptr }
 
 ; 3 occurrences:
 ; hyperscan/optimized/trufflecompile.cpp.ll
@@ -35,7 +35,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653902], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,11 +1,24 @@
 
+; 3 occurrences:
+; linux/optimized/hooks.ll
+; php/optimized/crypt_blowfish.ll
+; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 9
+  %3 = and i32 %2, 65536
+  %4 = and i32 %3, %0
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; php/optimized/crypt_blowfish.ll
 ; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 9
+  %2 = shl nuw nsw i32 %1, 15
   %3 = and i32 %2, 65536
   %4 = and i32 %3, %0
   ret i32 %4
@@ -18,18 +31,6 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2147483646
-  %4 = and i32 %0, %3
-  ret i32 %4
-}
-
-; 2 occurrences:
-; linux/optimized/hooks.ll
-; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = and i32 %2, -66
   %4 = and i32 %0, %3
   ret i32 %4
 }

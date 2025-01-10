@@ -13,3 +13,8 @@ func000000000000006a:                   # @func000000000000006a
 	andq	$-4096, %rsi                    # imm = 0xF000
 	leaq	-4096(%rdi,%rsi), %rax
 	retq
+func000000000000007e:                   # @func000000000000007e
+	subq	%rdx, %rdi
+	movl	%esi, %eax
+	leaq	-8(%rdi,%rax), %rax
+	retq

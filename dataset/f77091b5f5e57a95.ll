@@ -97,7 +97,7 @@ entry:
   ret i16 %2
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -136,6 +136,7 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll

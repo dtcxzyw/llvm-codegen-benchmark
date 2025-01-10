@@ -213,10 +213,9 @@ entry:
   ret i64 %5
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; diesel-rs/optimized/4l2dlnns3xjar0un.ll
 ; egg-rs/optimized/3vlwzyp0day7srdg.ll
 ; html5ever-rs/optimized/4f0kix4z793pb47k.ll
@@ -380,11 +379,12 @@ entry:
   ret i64 %5
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/18drj88gqh6dyxft.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll

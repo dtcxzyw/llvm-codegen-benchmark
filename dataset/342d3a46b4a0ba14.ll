@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/cnfCut.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; arrow/optimized/builder_union.cc.ll
@@ -18,7 +18,6 @@
 ; spike/optimized/s_mulAddF64.ll
 ; spike/optimized/s_subMagsF64.ll
 ; sqlite/optimized/sqlite3.ll
-; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; z3/optimized/dl_util.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0) #0 {
@@ -28,7 +27,7 @@ entry:
   ret i64 %2
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
@@ -76,6 +75,7 @@ entry:
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; wasmedge/optimized/refInstr.cpp.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
 ; zed-rs/optimized/0xndi28ix0yt0nu3xetyijo50.ll

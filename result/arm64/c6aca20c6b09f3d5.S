@@ -3,7 +3,7 @@ func000000000000000f:                   // @func000000000000000f
 	tst	w1, #0x1
 	csel	x8, xzr, x2, ne
 	add	x8, x0, x8, lsl #3
-	add	x0, x8, #1160
+	add	x0, x8, #264
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c

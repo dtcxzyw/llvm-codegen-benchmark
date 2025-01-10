@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 150 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; boost/optimized/from_chars.ll
@@ -125,6 +125,7 @@
 ; php/optimized/pack.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/parse_iso_intervals.ll
+; postgres/optimized/formatting.ll
 ; protobuf/optimized/csharp_field_base.cc.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll

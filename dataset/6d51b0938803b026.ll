@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 181 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -181,7 +181,6 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -908,6 +907,17 @@ define i1 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = call i32 @llvm.smin.i32(i32 %1, i32 %3)
+  %5 = icmp slt i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; pocketpy/optimized/collections.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = icmp slt i32 %0, %4
   ret i1 %5
 }

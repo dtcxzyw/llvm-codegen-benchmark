@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; llvm/optimized/WinException.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
@@ -21,6 +21,8 @@ entry:
 ; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; opencv/optimized/torch_importer.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000026(i32 %0, i64 %1) #0 {

@@ -9,9 +9,8 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	retq
 func0000000000000041:                   # @func0000000000000041
-	leaq	(%rdx,%rdx,8), %rax
-	leaq	(%rsi,%rax,8), %rax
-	cmpq	%rax, %rdi
+	addq	%rdx, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001

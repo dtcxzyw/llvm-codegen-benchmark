@@ -92,8 +92,7 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 1 occurrences:
 ; linux/optimized/sd.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000010c(i1 %0, i32 %1, i64 %2) #0 {

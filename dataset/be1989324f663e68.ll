@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000401(i32 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 261 occurrences:
+; 260 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -87,7 +87,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -591,7 +590,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -601,6 +600,7 @@ entry:
 ; flac/optimized/bitreader.c.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000038(i64 %0, i32 %1) #0 {

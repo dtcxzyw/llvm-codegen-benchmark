@@ -1,5 +1,5 @@
 
-%struct.ext4_extent_idx.3555769 = type { i32, i32, i16, i16 }
+%struct.ext4_extent_idx.3555735 = type { i32, i32, i16, i16 }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuationFreezeThaw.ll
@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ext4_extent_idx.3555769, ptr %1, i64 %2
+  %3 = getelementptr %struct.ext4_extent_idx.3555735, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

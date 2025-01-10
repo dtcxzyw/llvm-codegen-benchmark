@@ -62,13 +62,13 @@ func000000000000000c:                   # @func000000000000000c
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI6_0:
-	.long	4                               # 0x4
+	.long	8192                            # 0x2000
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpslld	$4, %ymm2, %ymm1
+	vpslld	$20, %ymm2, %ymm1
 	vpord	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI7_0:
 	.long	1073741824                      # 0x40000000

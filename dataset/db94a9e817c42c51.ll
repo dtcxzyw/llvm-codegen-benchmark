@@ -3,7 +3,6 @@
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; clamav/optimized/regcomp.c.ll
-; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; cmake/optimized/strcase.c.ll
 ; coreutils-rs/optimized/1rc3oz70a7y5cjew.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
@@ -96,6 +95,7 @@
 ; openjdk/optimized/vtableStubs.ll
 ; openmpi/optimized/op_base_functions.ll
 ; openspiel/optimized/catch_test.cc.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; openusd/optimized/path.cpp.ll
@@ -347,7 +347,6 @@ entry:
 ; lvgl/optimized/lv_label.ll
 ; lvgl/optimized/lv_textarea.ll
 ; minetest/optimized/filesys.cpp.ll
-; minetest/optimized/reflowscan.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nlohmann_json/optimized/unit-byte_container_with_subtype.cpp.ll
@@ -362,6 +361,7 @@ entry:
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; openjdk/optimized/library_call.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/node.cpp.ll
 ; openusd/optimized/pred_common.c.ll
 ; php/optimized/pcre2_jit_compile.ll

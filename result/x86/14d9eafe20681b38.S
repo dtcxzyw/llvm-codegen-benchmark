@@ -10,6 +10,13 @@ func00000000000000a1:                   # @func00000000000000a1
 	addq	%rdx, %rdi
 	sete	%al
 	retq
+func0000000000000145:                   # @func0000000000000145
+	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+	subq	%rdx, %rax
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	setbe	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	negq	%rdx
 	addq	%rsi, %rdi
@@ -58,13 +65,6 @@ func00000000000001aa:                   # @func00000000000001aa
 	addq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	setg	%al
-	retq
-func0000000000000145:                   # @func0000000000000145
-	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
-	subq	%rdx, %rax
-	addq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	setbe	%al
 	retq
 func0000000000000048:                   # @func0000000000000048
 	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000

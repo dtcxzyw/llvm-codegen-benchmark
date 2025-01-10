@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 42 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; boost/optimized/approximately_equals.ll
@@ -19,16 +19,23 @@
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
 ; opencv/optimized/lda.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/jpegdecoder.ll
 ; openjdk/optimized/zRemembered.ll
 ; openmpi/optimized/ad_io_coll.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/zic.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/sprintf.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; spike/optimized/sclip16.ll
 ; spike/optimized/sclip32.ll
 ; spike/optimized/sclip8.ll
@@ -444,23 +451,6 @@ entry:
   %2 = shl i64 %1, 30
   %3 = ashr i64 %2, 32
   %4 = icmp ult i64 %3, %0
-  ret i1 %4
-}
-
-; 7 occurrences:
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 

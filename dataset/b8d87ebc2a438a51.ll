@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/difradix2.ll
 ; linux/optimized/drm_dp_helper.ll
@@ -19,8 +20,7 @@ entry:
   ret i32 %6
 }
 
-; 103 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 102 occurrences:
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

@@ -2001,7 +2001,7 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -2026,6 +2026,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; opencc/optimized/tail.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/extcap_options_dialog.cpp.ll

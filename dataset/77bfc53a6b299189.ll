@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; faiss/optimized/IndexIVFPQR.cpp.ll
@@ -15,6 +15,7 @@
 ; ruby/optimized/gc.ll
 ; slurm/optimized/gres.ll
 ; slurm/optimized/gres_select_filter.ll
+; slurm/optimized/gres_select_util.ll
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
@@ -44,6 +45,17 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = tail call noundef i64 @llvm.umax.i64(i64 %0, i64 %3)
+  ret i64 %4
+}
+
+; 2 occurrences:
+; draco/optimized/ply_reader.cc.ll
+; opencv/optimized/array.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = tail call i64 @llvm.umax.i64(i64 %0, i64 %3)
   ret i64 %4
 }
 

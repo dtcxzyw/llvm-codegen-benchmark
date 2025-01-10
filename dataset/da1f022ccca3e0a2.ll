@@ -78,18 +78,6 @@ entry:
 }
 
 ; 1 occurrences:
-; protobuf/optimized/unparser.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nuw i64 %1, 1
-  %5 = icmp eq i64 %4, %3
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; cpython/optimized/_testbuffer.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {

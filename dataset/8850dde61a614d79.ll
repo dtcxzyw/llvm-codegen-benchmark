@@ -1,13 +1,13 @@
 
-%"class.folly::Range.2684593" = type { ptr, ptr }
-%"class.std::__cxx11::basic_string.2901378" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379", i64, %union.anon.2901380 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901379" = type { ptr }
-%union.anon.2901380 = type { i64, [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3414235" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3414236", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3414237" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3414236" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3414238" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3414238" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3414237" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3414239" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3414239" = type { i32 }
+%"class.folly::Range.2684560" = type { ptr, ptr }
+%"class.std::__cxx11::basic_string.2901344" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901345", i64, %union.anon.2901346 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2901345" = type { ptr }
+%union.anon.2901346 = type { i64, [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3414201" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3414202", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3414203" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3414202" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3414204" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3414204" = type { i32 }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.1.3414203" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3414205" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3414205" = type { i32 }
 
 ; 35 occurrences:
 ; assimp/optimized/BlenderModifier.cpp.ll
@@ -52,7 +52,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = ashr exact i64 %4, 4
   %6 = sub nsw i64 %5, %1
-  %7 = getelementptr nusw %"class.folly::Range.2684593", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.folly::Range.2684560", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -79,7 +79,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = ashr exact i64 %4, 5
   %6 = sub i64 %5, %1
-  %7 = getelementptr nusw %"class.std::__cxx11::basic_string.2901378", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.std::__cxx11::basic_string.2901344", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -111,7 +111,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = ashr exact i64 %4, 3
   %6 = sub nuw i64 %5, %1
-  %7 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3414235", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3414201", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -103,15 +103,14 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; llvm/optimized/AArch64CallingConvention.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 8
+  %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
   %5 = icmp ne i64 %1, 0
   %6 = and i1 %5, %0

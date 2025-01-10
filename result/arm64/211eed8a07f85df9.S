@@ -1,3 +1,14 @@
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	fabs	d0, d0
+	mov	x8, #9218868437227405311        // =0x7fefffffffffffff
+	and	w9, w1, w0
+	fmov	d1, x8
+	fcmp	d0, d1
+	cset	w8, ls
+	and	w0, w8, w9
+	ret
+                                        // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	fabs	d0, d0

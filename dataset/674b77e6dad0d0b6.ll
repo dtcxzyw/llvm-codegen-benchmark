@@ -1,5 +1,5 @@
 
-; 368 occurrences:
+; 367 occurrences:
 ; abc/optimized/exorList.c.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -83,7 +83,6 @@
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -375,7 +374,7 @@ entry:
   ret i16 %2
 }
 
-; 814 occurrences:
+; 813 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/exorList.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -833,7 +832,6 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/ImfInputFile.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openexr/optimized/internal_pxr24.c.ll
@@ -1268,7 +1266,7 @@ entry:
   ret i16 %2
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; clamav/optimized/unarj.c.ll
 ; coremark/optimized/core_list_join.c.ll
@@ -1283,6 +1281,7 @@ entry:
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; openexr/optimized/ImfInputFile.cpp.ll
 ; postgres/optimized/numutils.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll

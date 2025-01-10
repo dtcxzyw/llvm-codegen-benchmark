@@ -53,8 +53,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/Stmt.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i1 %2) #0 {

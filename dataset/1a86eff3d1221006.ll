@@ -1,8 +1,9 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cpython/optimized/bytearrayobject.ll
+; cpython/optimized/pystrtod.ll
 ; cpython/optimized/unicodeobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll

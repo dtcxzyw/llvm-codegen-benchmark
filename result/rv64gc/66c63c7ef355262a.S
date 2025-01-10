@@ -52,15 +52,15 @@ func000000000000002c:                   # @func000000000000002c
 	li	a0, 1
 	ret
 func0000000000000186:                   # @func0000000000000186
-	slli	a0, a0, 56
-	sext.w	a1, a1
-	srai	a0, a0, 56
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	lui	a2, 2
 	snez	a1, a1
-	slti	a0, a0, 0
+	slt	a0, a0, a2
 	and	a0, a0, a1
 	bnez	a0, .LBB5_2
-	li	a0, 100
+	li	a0, 63
 	ret
 .LBB5_2:
-	li	a0, 68
+	li	a0, 60
 	ret

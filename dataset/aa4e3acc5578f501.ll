@@ -1,6 +1,5 @@
 
-; 40 occurrences:
-; darktable/optimized/history.c.ll
+; 37 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/kwset.ll
 ; jq/optimized/regexec.ll
@@ -19,12 +18,10 @@
 ; openssl/optimized/libcrypto-shlib-bf_lbuf.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_language_scanner.ll
-; postgres/optimized/regexp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/implicit_weak_message.cc.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; quickjs/optimized/libbf.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/lvm.ll
 ; ruby/optimized/array.ll
@@ -49,7 +46,7 @@ entry:
   ret i1 %5
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
@@ -76,7 +73,6 @@ entry:
 ; icu/optimized/package.ll
 ; icu/optimized/uloc_tag.ll
 ; jq/optimized/regexec.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
@@ -98,7 +94,6 @@ entry:
 ; opencv/optimized/tensor.pb.cc.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
-; openjdk/optimized/splashscreen_impl.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; pbrt-v4/optimized/string.cpp.ll
@@ -243,7 +238,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; arrow/optimized/message.cc.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/raster.c.ll
@@ -265,7 +260,6 @@ entry:
 ; redis/optimized/replication.ll
 ; redis/optimized/timeout.ll
 ; ruby/optimized/array.ll
-; sqlite/optimized/sqlite3.ll
 ; sundials/optimized/cvodea.c.ll
 ; sundials/optimized/idaa.c.ll
 ; Function Attrs: nounwind
@@ -418,7 +412,7 @@ entry:
   ret i1 %5
 }
 
-; 90 occurrences:
+; 89 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; boost/optimized/conversion.ll
 ; boost/optimized/test_filebuf.ll
@@ -470,7 +464,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; nuttx/optimized/lib_memoutstream.c.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -549,14 +542,13 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; git/optimized/record.ll
 ; linux/optimized/devio.ll
 ; node/optimized/libnode.node_file.ll
-; nuttx/optimized/lib_meminstream.c.ll
 ; openjdk/optimized/collectedHeap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {

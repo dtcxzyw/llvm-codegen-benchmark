@@ -1,5 +1,5 @@
 
-%"struct.xgboost::Entry.3885907" = type { i32, float }
+%"struct.xgboost::Entry.3885857" = type { i32, float }
 
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cache.c.ll
@@ -70,7 +70,7 @@ define i64 @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = mul i64 %1, %3
-  %5 = getelementptr %"struct.xgboost::Entry.3885907", ptr %0, i64 %4
+  %5 = getelementptr %"struct.xgboost::Entry.3885857", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

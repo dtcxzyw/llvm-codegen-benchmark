@@ -88,6 +88,16 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vcmpeq_uqpd	%zmm3, %zmm1, %k0
+	vcmpeq_uqpd	%zmm4, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k1
+	vpsllw	$7, %xmm0, %xmm0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000034:                   # @func0000000000000034
 	vcmpnltpd	%zmm3, %zmm1, %k0
 	vcmpnltpd	%zmm4, %zmm2, %k1

@@ -1,5 +1,5 @@
 
-%struct.atomic64_t.3538380 = type { i64 }
+%struct.atomic64_t.3538346 = type { i64 }
 
 ; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -23,7 +23,7 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = or disjoint i64 %2, 256
-  %4 = getelementptr [512 x %struct.atomic64_t.3538380], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [512 x %struct.atomic64_t.3538346], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

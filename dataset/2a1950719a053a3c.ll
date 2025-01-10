@@ -1,8 +1,8 @@
 
-%struct.rb_ensure_entry.2601447 = type { i64, ptr, i64 }
-%struct.Map_TimeStruct_t_.2877423 = type { float, float, float }
-%struct.code_ent.3062551 = type { ptr, i16, i8, i8 }
-%"class.cv::Complex.3752634" = type { double, double }
+%struct.rb_ensure_entry.2601414 = type { i64, ptr, i64 }
+%struct.Map_TimeStruct_t_.2877389 = type { float, float, float }
+%struct.code_ent.3062517 = type { ptr, i16, i8, i8 }
+%"class.cv::Complex.3752584" = type { double, double }
 
 ; 9 occurrences:
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -18,7 +18,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = getelementptr %struct.rb_ensure_entry.2601447, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.rb_ensure_entry.2601414, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -48,7 +48,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr nuw %struct.Map_TimeStruct_t_.2877423, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nuw %struct.Map_TimeStruct_t_.2877389, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -58,7 +58,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = getelementptr nusw nuw %struct.code_ent.3062551, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct.code_ent.3062517, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   ret ptr %4
 }
@@ -80,7 +80,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = getelementptr %"class.cv::Complex.3752634", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"class.cv::Complex.3752584", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

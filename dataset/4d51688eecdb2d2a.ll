@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/ls-tree.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -10,6 +10,8 @@
 ; openjdk/optimized/runtime.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; rocksdb/optimized/thread_status_impl.cc.ll
 ; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind

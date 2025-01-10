@@ -43,7 +43,7 @@ func0000000000000004:                   // @func0000000000000004
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ubfx	x8, x1, #3, #32
+	ubfx	x8, x1, #3, #31
 	mul	x0, x0, x8
 	ret
                                         // -- End function

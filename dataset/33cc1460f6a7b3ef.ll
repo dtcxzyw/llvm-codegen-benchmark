@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/printk.ll
 ; linux/optimized/sky2.ll
 ; minetest/optimized/database.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -11,12 +12,11 @@ entry:
   ret i16 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/nfrule.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libquic/optimized/poly.c.ll
-; linux/optimized/printk.ll
 ; openjdk/optimized/jquant2.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind

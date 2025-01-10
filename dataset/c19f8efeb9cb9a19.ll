@@ -30,7 +30,7 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; cmake/optimized/cmExportInstallAndroidMKGenerator.cxx.ll
@@ -52,6 +52,7 @@ entry:
 ; openusd/optimized/meshGeneratorBase.cpp.ll
 ; openusd/optimized/refinerFactory.cpp.ll
 ; openusd/optimized/simplify.cpp.ll
+; php/optimized/ascmagic.ll
 ; ruby/optimized/date_parse.ll
 ; ruby/optimized/regexec.ll
 ; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll

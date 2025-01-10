@@ -1,9 +1,9 @@
 
-%"class.folly::Range.2685458" = type { ptr, ptr }
-%"class.colvarmodule::rvector.3372141" = type { double, double, double }
-%"class.std::shared_ptr.39.3802655" = type { %"class.std::__shared_ptr.40.3802656" }
-%"class.std::__shared_ptr.40.3802656" = type { ptr, %"class.std::__shared_count.3802606" }
-%"class.std::__shared_count.3802606" = type { ptr }
+%"class.folly::Range.2685425" = type { ptr, ptr }
+%"class.colvarmodule::rvector.3372107" = type { double, double, double }
+%"class.std::shared_ptr.39.3802605" = type { %"class.std::__shared_ptr.40.3802606" }
+%"class.std::__shared_ptr.40.3802606" = type { ptr, %"class.std::__shared_count.3802556" }
+%"class.std::__shared_count.3802556" = type { ptr }
 
 ; 3 occurrences:
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
@@ -32,7 +32,7 @@ entry:
   %3 = icmp samesign ult i64 %2, 50
   %4 = select i1 %3, i64 0, i64 8
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %"class.folly::Range.2685458", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.folly::Range.2685425", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 16, i64 0
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.colvarmodule::rvector.3372141", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.colvarmodule::rvector.3372107", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -93,8 +93,8 @@ define ptr @func000000000000004e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = select i1 %3, i64 0, i64 2
-  %5 = getelementptr nusw nuw %"class.std::shared_ptr.39.3802655", ptr %1, i64 %4
-  %6 = getelementptr nusw %"class.std::shared_ptr.39.3802655", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.std::shared_ptr.39.3802605", ptr %1, i64 %4
+  %6 = getelementptr nusw %"class.std::shared_ptr.39.3802605", ptr %5, i64 %0
   ret ptr %6
 }
 

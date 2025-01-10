@@ -18,15 +18,6 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 34
 	sub	a0, a0, a1
 	ret
-func000000000000001f:                   # @func000000000000001f
-	sext.w	a0, a0
-	bgtz	a0, .LBB2_2
-	li	a0, 1
-.LBB2_2:                                # %entry
-	addi	a0, a0, 4
-	li	a1, 544
-	mul	a0, a0, a1
-	ret
 func0000000000000003:                   # @func0000000000000003
 	sraiw	a1, a0, 31
 	or	a0, a0, a1

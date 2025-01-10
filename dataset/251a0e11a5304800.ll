@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; luajit/optimized/lj_ctype.ll
+; luajit/optimized/lj_ctype_dyn.ll
+; ruby/optimized/complex.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000142(double %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %1, -1
+  %3 = fcmp uno double %0, 0.000000e+00
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; luau/optimized/Transpiler.cpp.ll
 ; ruby/optimized/sprintf.ll
@@ -11,7 +24,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; openjdk/optimized/zDirector.ll
 ; rocksdb/optimized/cf_options.cc.ll
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
 ; Function Attrs: nounwind
@@ -88,18 +102,6 @@ define i1 @func0000000000000148(double %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 1
   %3 = fcmp ogt double %0, 5.000000e-01
-  %4 = or i1 %3, %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_ctype.ll
-; luajit/optimized/lj_ctype_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000142(double %0, i64 %1) #0 {
-entry:
-  %2 = icmp sgt i64 %1, -1
-  %3 = fcmp uno double %0, 0.000000e+00
   %4 = or i1 %3, %2
   ret i1 %4
 }

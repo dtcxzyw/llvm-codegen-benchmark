@@ -29,7 +29,6 @@
 ; cpython/optimized/_cursesmodule.ll
 ; darktable/optimized/geotagging.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; flac/optimized/main.c.ll
@@ -98,6 +97,7 @@
 ; llvm/optimized/TextStubCommon.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/YAMLRemarkSerializer.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll

@@ -15,7 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/eventpoll.ll
@@ -34,6 +34,7 @@ entry:
 ; openmpi/optimized/pml_cm.ll
 ; postgres/optimized/signalfuncs.ll
 ; postgres/optimized/spell.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; ruby/optimized/zlib.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
@@ -797,7 +798,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hwmon.ll
 ; llvm/optimized/IRMover.cpp.ll

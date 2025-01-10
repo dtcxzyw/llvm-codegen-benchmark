@@ -1,18 +1,22 @@
 
-; 7 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/io_json.cpp.ll
 ; nuttx/optimized/fs_procfsutil.c.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; postgres/optimized/gindatapage.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %0, 8192
-  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %2)
+  %3 = add i64 %0, -1
+  %4 = call i64 @llvm.umin.i64(i64 %3, i64 %2)
   ret i64 %4
 }
 

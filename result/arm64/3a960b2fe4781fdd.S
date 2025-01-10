@@ -6,6 +6,14 @@ func0000000000000026:                   // @func0000000000000026
 	and	w0, w0, w8
 	ret
                                         // -- End function
+func0000000000000104:                   // @func0000000000000104
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	cmp	w8, #1, lsl #12                 // =4096
+	cset	w8, lo
+	and	w0, w0, w8
+	ret
+                                        // -- End function
 func00000000000001aa:                   // @func00000000000001aa
 // %bb.0:                               // %entry
 	add	w8, w1, w2

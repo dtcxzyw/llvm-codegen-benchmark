@@ -5,12 +5,6 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$5000000, %rax                  # imm = 0x4C4B40
 	setae	%al
 	retq
-func00000000000002a6:                   # @func00000000000002a6
-	imulq	$1000, %rdx, %rax               # imm = 0x3E8
-	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setle	%al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	imulq	$1000, %rdx, %rax               # imm = 0x3E8
 	addq	%rsi, %rax
@@ -39,4 +33,13 @@ func00000000000002aa:                   # @func00000000000002aa
 	subq	%rdi, %rdx
 	cmpq	$1025, %rdx                     # imm = 0x401
 	setge	%al
+	retq
+func00000000000002a6:                   # @func00000000000002a6
+	leaq	(%rdx,%rdx), %rax
+	shlq	$5, %rdx
+	subq	%rax, %rdx
+	addq	%rsi, %rdx
+	subq	%rdi, %rdx
+	cmpq	$-1075, %rdx                    # imm = 0xFBCD
+	setl	%al
 	retq

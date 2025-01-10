@@ -38,9 +38,3 @@ func0000000000000006:                   # @func0000000000000006
 	bseti	a1, a1, 28
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000000:                   # @func0000000000000000
-	andi	a0, a0, 1
-	ori	a1, a1, -8
-	slli	a1, a1, 28
-	czero.eqz	a0, a1, a0
-	ret

@@ -1,10 +1,10 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
-%"class.irr::core::vector3d.2702987" = type { float, float, float }
-%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2792334 = type { i32 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955" = type { float, %"class.irr::core::vector3d.2702953" }
+%"class.irr::core::vector3d.2702953" = type { float, float, float }
+%struct._zend_op.2792291 = type { ptr, %union._znode_op.2792300, %union._znode_op.2792300, %union._znode_op.2792300, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792300 = type { i32 }
 
 ; 8 occurrences:
 ; linux/optimized/kprobes.ll
@@ -19,8 +19,8 @@
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %1, i64 %3
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %0
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %1, i64 %3
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -85,8 +85,8 @@ entry:
 define i64 @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %1, i64 %3
-  %5 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %1, i64 %3
+  %5 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -152,7 +152,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2792291, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

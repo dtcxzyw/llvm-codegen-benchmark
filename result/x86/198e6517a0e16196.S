@@ -6,11 +6,6 @@ func0000000000000081:                   # @func0000000000000081
 	cmpl	$9, %edi
 	sete	%al
 	retq
-func000000000000018c:                   # @func000000000000018c
-	decl	%edi
-	cmpl	$-2, %edi
-	setb	%al
-	retq
 func0000000000000141:                   # @func0000000000000141
 	testl	%edi, %edi
 	sete	%al

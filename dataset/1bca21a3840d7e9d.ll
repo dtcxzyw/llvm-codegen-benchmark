@@ -36,12 +36,10 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
@@ -57,12 +55,14 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/scrptrun.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/array_selfuncs.ll

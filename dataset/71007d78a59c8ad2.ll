@@ -54,12 +54,16 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 13 occurrences:
+; 19 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/ip_output.ll
+; linux/optimized/mballoc.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; oiio/optimized/iptc.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/md.ll
 ; postgres/optimized/snprintf.ll
 ; postgres/optimized/snprintf_shlib.ll
@@ -67,6 +71,8 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; quickjs/optimized/quickjs.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-awdl.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
@@ -96,17 +102,8 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-mpeg-descriptor.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %1)
-  %3 = icmp ult i32 %2, 3
-  ret i1 %3
-}
-
-; 8 occurrences:
+; 9 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-netlink.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/asn.c.ll
@@ -119,7 +116,17 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %1)
-  %3 = icmp ugt i32 %2, 3
+  %3 = icmp ugt i32 %2, 1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-mpeg-descriptor.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %1)
+  %3 = icmp ult i32 %2, 3
   ret i1 %3
 }
 
@@ -170,16 +177,6 @@ entry:
 ; linux/optimized/kfifo.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %1)
-  %3 = icmp slt i32 %2, 0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; linux/optimized/mballoc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %1)
   %3 = icmp slt i32 %2, 0

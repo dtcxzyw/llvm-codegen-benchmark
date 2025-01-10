@@ -30,7 +30,7 @@ entry:
   ret i64 %4
 }
 
-; 468 occurrences:
+; 469 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/solver_api.c.ll
@@ -192,6 +192,7 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/irqdesc.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -877,7 +878,7 @@ entry:
   ret i64 %4
 }
 
-; 419 occurrences:
+; 418 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -903,7 +904,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/content_encoding.c.ll
 ; cmake/optimized/fastcover.c.ll
-; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll

@@ -262,7 +262,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 94 occurrences:
+; 93 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; bullet3/optimized/b3OverlappingPairCache.ll
 ; ceres/optimized/visibility.cc.ll
@@ -306,7 +306,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll

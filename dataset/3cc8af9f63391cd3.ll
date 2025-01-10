@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; luau/optimized/lstrlib.cpp.ll
+; 3 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -17,6 +16,19 @@ entry:
 declare i32 @llvm.smax.i32(i32, i32) #1
 
 ; 3 occurrences:
+; luau/optimized/lstrlib.cpp.ll
+; opencv/optimized/lsc.cpp.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.smax.i32(i32 %1, i32 1)
+  %3 = add nuw i32 %0, 1
+  %4 = sub i32 %3, %2
+  ret i32 %4
+}
+
+; 3 occurrences:
 ; cpython/optimized/dtoa.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; postgres/optimized/parse_func.ll
@@ -25,18 +37,6 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add i32 %0, 1
-  %4 = sub i32 %3, %2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; opencv/optimized/lsc.cpp.ll
-; stb/optimized/stb_image_resize2.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = add nuw i32 %0, 1
   %4 = sub i32 %3, %2
   ret i32 %4
 }

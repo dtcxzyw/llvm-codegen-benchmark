@@ -1,7 +1,7 @@
 
-%struct.conversation_element.3449322 = type { i32, %union.anon.3449323 }
-%union.anon.3449323 = type { %struct._address.3449321 }
-%struct._address.3449321 = type { i32, i32, ptr, ptr }
+%struct.conversation_element.3449288 = type { i32, %union.anon.3449289 }
+%union.anon.3449289 = type { %struct._address.3449287 }
+%struct._address.3449287 = type { i32, i32, ptr, ptr }
 
 ; 65 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
@@ -513,7 +513,7 @@ entry:
   %2 = and i32 %1, 16
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i64 2, i64 1
-  %4 = getelementptr %struct.conversation_element.3449322, ptr %0, i64 %3
+  %4 = getelementptr %struct.conversation_element.3449288, ptr %0, i64 %3
   ret ptr %4
 }
 

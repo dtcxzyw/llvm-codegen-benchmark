@@ -33,12 +33,11 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/gif.c.ll
 ; flac/optimized/picture.c.ll
 ; openjdk/optimized/dgif_lib.ll
 ; wireshark/optimized/file-gif.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i8 %0) #0 {
 entry:

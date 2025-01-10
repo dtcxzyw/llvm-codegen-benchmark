@@ -1,5 +1,5 @@
 
-; 4679 occurrences:
+; 4680 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -674,6 +674,7 @@
 ; git/optimized/hashmap.ll
 ; git/optimized/hex.ll
 ; git/optimized/http-push.ll
+; git/optimized/line-log.ll
 ; git/optimized/list-objects-filter.ll
 ; git/optimized/log.ll
 ; git/optimized/notes.ll

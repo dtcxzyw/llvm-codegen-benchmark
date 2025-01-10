@@ -124,8 +124,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; llvm/optimized/ADCE.cpp.ll
+; 7 occurrences:
 ; llvm/optimized/ConstantFold.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/GCOVProfiling.cpp.ll

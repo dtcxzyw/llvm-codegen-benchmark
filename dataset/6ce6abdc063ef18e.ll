@@ -24,9 +24,8 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/absGlaOld.c.ll
-; abc/optimized/bacBlast.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaIso3.c.ll
 ; linux/optimized/uncore_snb.ll

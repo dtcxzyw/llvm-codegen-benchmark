@@ -1,5 +1,5 @@
 
-; 1010 occurrences:
+; 1011 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -854,6 +854,7 @@
 ; pbrt-v4/optimized/materials.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/parser.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
@@ -4568,7 +4569,7 @@ entry:
   ret i1 %1
 }
 
-; 133 occurrences:
+; 134 occurrences:
 ; abc/optimized/abc.c.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -4657,6 +4658,7 @@ entry:
 ; minetest/optimized/mapgen_valleys.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll

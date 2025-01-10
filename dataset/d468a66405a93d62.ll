@@ -1,8 +1,10 @@
 
-; 111 occurrences:
+; 114 occurrences:
+; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; arrow/optimized/value_parsing.cc.ll
+; clamav/optimized/strfn.cpp.ll
 ; clap-rs/optimized/thb07xvb2pkztra.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -28,6 +30,7 @@
 ; ockam-rs/optimized/2odlvw84qikntvno.ll
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
 ; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; opencv/optimized/dxt.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; regex-rs/optimized/gbxkn0az9l87aop.ll
@@ -120,18 +123,15 @@ entry:
   ret ptr %5
 }
 
-; 75 occurrences:
-; abc/optimized/giaMinLut.c.ll
+; 72 occurrences:
 ; boost/optimized/from_chars.ll
 ; boost/optimized/src.ll
-; clamav/optimized/strfn.cpp.ll
 ; coreutils-rs/optimized/450bow9j8399x84k.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; ockam-rs/optimized/2btxi82q4wq22oyk.ll
 ; ockam-rs/optimized/5cw0qvsxmpswa08s.ll
-; opencv/optimized/dxt.cpp.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
@@ -205,13 +205,9 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
-; clamav/optimized/strfn.cpp.ll
-; cmake/optimized/filter_encoder.c.ll
+; 2 occurrences:
 ; cmake/optimized/http1.c.ll
 ; curl/optimized/libcurl_la-http1.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; gromacs/optimized/mdoutf.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -221,7 +217,11 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 19 occurrences:
+; clamav/optimized/strfn.cpp.ll
+; cmake/optimized/filter_encoder.c.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; gromacs/optimized/mdoutf.cpp.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/spl_directory.ll
 ; php/optimized/var_unserializer.ll

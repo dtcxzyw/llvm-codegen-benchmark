@@ -25,9 +25,8 @@ entry:
   ret i1 %5
 }
 
-; 196 occurrences:
+; 195 occurrences:
 ; abc/optimized/giaMinLut.c.ll
-; cpython/optimized/dtoa.ll
 ; git/optimized/statinfo.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/reflection.cpp.ll
@@ -777,13 +776,12 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/giaRetime.c.ll
 ; abc/optimized/saigRetFwd.c.ll
 ; darktable/optimized/RawImage.cpp.ll
-; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; libwebp/optimized/lossless.c.ll
@@ -1198,13 +1196,12 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/gmx_confrms.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; libquic/optimized/base64.c.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/hid-core.ll
-; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; openmpi/optimized/sharedfp_individual_collaborate_data.ll

@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
 
 ; 61 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -80,7 +80,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %1, i64 %3
+  %4 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6

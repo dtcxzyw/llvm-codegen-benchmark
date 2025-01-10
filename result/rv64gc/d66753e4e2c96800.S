@@ -15,12 +15,3 @@ func0000000000000042:                   # @func0000000000000042
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000196:                   # @func0000000000000196
-	sext.w	a2, a2
-	sext.w	a1, a1
-	slti	a3, a1, 0
-	slt	a1, a1, a2
-	or	a0, a0, a3
-	xori	a1, a1, 1
-	or	a0, a0, a1
-	ret

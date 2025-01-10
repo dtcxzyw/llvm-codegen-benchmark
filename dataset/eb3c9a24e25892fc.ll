@@ -1,12 +1,11 @@
 
-%struct.tls_rl_record_st.2633441 = type { i32, i32, i64, i64, i64, ptr, ptr, ptr, i16, [8 x i8] }
-%struct.TCGTemp.2708295 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"struct.zmq::command_t.3454530" = type { ptr, i32, %"union.zmq::command_t::args_t.3454531", [24 x i8] }
-%"union.zmq::command_t::args_t.3454531" = type { %struct.anon.19.3454532 }
-%struct.anon.19.3454532 = type { i64, ptr, ptr }
-%struct.WordEntry.3654110 = type { i32 }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%struct.TCGTemp.2708261 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"struct.zmq::command_t.3454496" = type { ptr, i32, %"union.zmq::command_t::args_t.3454497", [24 x i8] }
+%"union.zmq::command_t::args_t.3454497" = type { %struct.anon.19.3454498 }
+%struct.anon.19.3454498 = type { i64, ptr, ptr }
+%struct.WordEntry.3654076 = type { i32 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 3 occurrences:
 ; linux/optimized/intel_gt_buffer_pool.ll
@@ -20,7 +19,7 @@ entry:
   ret i1 %4
 }
 
-; 117 occurrences:
+; 116 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; clamav/optimized/hash.cpp.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -41,7 +40,6 @@ entry:
 ; minetest/optimized/inputhandler.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/linearcurve.cpp.ll
-; mitsuba3/optimized/obj.cpp.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/bundle.ll
 ; nix/optimized/eval-cache.ll
@@ -146,13 +144,14 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; hdf5/optimized/H5Cint.c.ll
 ; libzmq/optimized/mailbox.cpp.ll
 ; libzmq/optimized/mailbox_safe.cpp.ll
+; mitsuba3/optimized/obj.cpp.ll
 ; openssl/optimized/libssl-lib-tls_common.ll
 ; openssl/optimized/libssl-shlib-tls_common.ll
 ; openusd/optimized/retainedDataSource.cpp.ll
@@ -162,7 +161,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [32 x %struct.tls_rl_record_st.2633441], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [1025 x i8], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
@@ -211,7 +210,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [512 x %struct.TCGTemp.2708295], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [512 x %struct.TCGTemp.2708261], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
@@ -257,7 +256,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3454530"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [16 x %"struct.zmq::command_t.3454496"], ptr %1, i64 0, i64 %2
   %4 = icmp ne ptr %0, %3
   ret i1 %4
 }
@@ -268,7 +267,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.WordEntry.3654110], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [0 x %struct.WordEntry.3654076], ptr %1, i64 0, i64 %2
   %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
@@ -290,7 +289,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %1, i64 0, i64 %2
   %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }

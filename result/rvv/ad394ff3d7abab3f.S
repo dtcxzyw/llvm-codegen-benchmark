@@ -28,7 +28,7 @@ func0000000000000302:                   # @func0000000000000302
 	ret
 func0000000000000318:                   # @func0000000000000318
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v0, v10
 	ret

@@ -1,9 +1,9 @@
 
-%"struct.llvm::DebugLocStream::List.3175069" = type { ptr, ptr, i64 }
-%"struct.ue2::TriggerInfo.3848165" = type { i8, i32, i32 }
-%"struct.ue2::(anonymous namespace)::RoseMergeCandidate.3854984" = type { %"struct.ue2::left_id.3854857", %"struct.ue2::left_id.3854857", i32, i32, i32, i32 }
-%"struct.ue2::left_id.3854857" = type { ptr, ptr, ptr, ptr, %"class.ue2::depth.3854858", %"class.ue2::depth.3854858" }
-%"class.ue2::depth.3854858" = type { i32 }
+%"struct.llvm::DebugLocStream::List.3175035" = type { ptr, ptr, i64 }
+%"struct.ue2::TriggerInfo.3848115" = type { i8, i32, i32 }
+%"struct.ue2::(anonymous namespace)::RoseMergeCandidate.3854934" = type { %"struct.ue2::left_id.3854807", %"struct.ue2::left_id.3854807", i32, i32, i32, i32 }
+%"struct.ue2::left_id.3854807" = type { ptr, ptr, ptr, ptr, %"class.ue2::depth.3854808", %"class.ue2::depth.3854808" }
+%"class.ue2::depth.3854808" = type { i32 }
 
 ; 66 occurrences:
 ; hyperscan/optimized/arg_checks.cpp.ll
@@ -76,7 +76,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
-  %3 = getelementptr nusw %"struct.llvm::DebugLocStream::List.3175069", ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw %"struct.llvm::DebugLocStream::List.3175035", ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -92,7 +92,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr nusw %"struct.ue2::TriggerInfo.3848165", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.ue2::TriggerInfo.3848115", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -102,7 +102,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr nusw nuw %"struct.ue2::(anonymous namespace)::RoseMergeCandidate.3854984", ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw nuw %"struct.ue2::(anonymous namespace)::RoseMergeCandidate.3854934", ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

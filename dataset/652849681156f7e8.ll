@@ -1,10 +1,10 @@
 
-%"struct.mold::elf::ElfSym.2637541" = type { %"class.mold::LittleEndian.250.2637538", i16, %"class.mold::LittleEndian.2637542", %"class.mold::LittleEndian.251.2637539", %"class.mold::LittleEndian.251.2637539" }
-%"class.mold::LittleEndian.250.2637538" = type { [4 x i8] }
-%"class.mold::LittleEndian.2637542" = type { [2 x i8] }
-%"class.mold::LittleEndian.251.2637539" = type { [8 x i8] }
-%"struct.mold::elf::DynamicPattern.2639935" = type <{ %"class.std::basic_string_view.2639862", %"class.std::basic_string_view.2639862", i8, [7 x i8] }>
-%"class.std::basic_string_view.2639862" = type { i64, ptr }
+%"struct.mold::elf::ElfSym.2637508" = type { %"class.mold::LittleEndian.250.2637505", i16, %"class.mold::LittleEndian.2637509", %"class.mold::LittleEndian.251.2637506", %"class.mold::LittleEndian.251.2637506" }
+%"class.mold::LittleEndian.250.2637505" = type { [4 x i8] }
+%"class.mold::LittleEndian.2637509" = type { [2 x i8] }
+%"class.mold::LittleEndian.251.2637506" = type { [8 x i8] }
+%"struct.mold::elf::DynamicPattern.2639902" = type <{ %"class.std::basic_string_view.2639829", %"class.std::basic_string_view.2639829", i8, [7 x i8] }>
+%"class.std::basic_string_view.2639829" = type { i64, ptr }
 
 ; 23 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -157,7 +157,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfSym.2637541", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfSym.2637508", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, 6
@@ -554,7 +554,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639902", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = sdiv exact i64 %5, -40

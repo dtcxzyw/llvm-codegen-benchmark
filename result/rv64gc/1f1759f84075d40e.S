@@ -1,3 +1,9 @@
+func0000000000000001:                   # @func0000000000000001
+	slli	a0, a0, 2
+	addi	a0, a0, 19
+	andi	a0, a0, -16
+	neg	a0, a0
+	ret
 func000000000000003d:                   # @func000000000000003d
 	slli	a0, a0, 3
 	lui	a1, 524288
@@ -10,17 +16,5 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 3
 	addi	a0, a0, 63
 	andi	a0, a0, -64
-	neg	a0, a0
-	ret
-func0000000000000029:                   # @func0000000000000029
-	slli	a0, a0, 3
-	addi	a0, a0, 15
-	andi	a0, a0, -16
-	neg	a0, a0
-	ret
-func0000000000000001:                   # @func0000000000000001
-	slli	a0, a0, 2
-	addi	a0, a0, 19
-	andi	a0, a0, -16
 	neg	a0, a0
 	ret

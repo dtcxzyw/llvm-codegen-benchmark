@@ -190,21 +190,6 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
-; opencv/optimized/dls.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = call i32 @llvm.smin.i32(i32 range(i32 -2147483648, 31) %2, i32 range(i32 -2147483648, 30) %0)
-  %4 = icmp slt i32 %3, 6
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; abc/optimized/absVta.c.ll
 ; Function Attrs: nounwind
@@ -235,6 +220,17 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.smin.i32(i32 %0, i32 %2)
   %4 = icmp ugt i32 %3, 65
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/dls.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 %0)
+  %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
 

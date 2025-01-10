@@ -1,6 +1,6 @@
 
-%class.aiVector3t.2824470 = type { float, float, float }
-%class.QCPGraphData.3451166 = type { double, double }
+%class.aiVector3t.2824436 = type { float, float, float }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 3 occurrences:
 ; openspiel/optimized/twixtboard.cc.ll
@@ -53,7 +53,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %class.aiVector3t.2824470, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %class.aiVector3t.2824436, ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, i64 24, i64 16
   ret i64 %5
@@ -64,7 +64,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %2
+  %3 = getelementptr %class.QCPGraphData.3451132, ptr %1, i64 %2
   %4 = icmp eq ptr %0, %3
   %5 = select i1 %4, i64 0, i64 -16
   ret i64 %5

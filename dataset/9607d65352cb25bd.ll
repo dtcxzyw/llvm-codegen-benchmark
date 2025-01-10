@@ -14,6 +14,18 @@ entry:
   ret i64 %3
 }
 
+; 3 occurrences:
+; libquic/optimized/poly1305_vec.c.ll
+; qemu/optimized/util_host-utils.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
+entry:
+  %2 = add i128 %0, %1
+  %3 = trunc i128 %2 to i64
+  ret i64 %3
+}
+
 ; 8 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -29,18 +41,6 @@ entry:
   %2 = add i128 %0, %1
   %3 = trunc i128 %2 to i64
   ret i64 %3
-}
-
-; 2 occurrences:
-; libquic/optimized/poly1305_vec.c.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i128 %0, i128 %1) #0 {
-entry:
-  %2 = and i128 %1, 18446744073709551608
-  %3 = add nuw i128 %2, %0
-  %4 = trunc i128 %3 to i64
-  ret i64 %4
 }
 
 ; 3 occurrences:

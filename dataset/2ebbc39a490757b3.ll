@@ -1,5 +1,5 @@
 
-; 165 occurrences:
+; 166 occurrences:
 ; hermes/optimized/Exceptions.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
@@ -37,6 +37,7 @@
 ; llvm/optimized/CloneModule.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll

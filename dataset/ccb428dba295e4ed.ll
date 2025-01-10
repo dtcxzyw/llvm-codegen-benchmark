@@ -1,5 +1,5 @@
 
-%"class.boost::geometry::model::point.2986995" = type { [2 x double] }
+%"class.boost::geometry::model::point.2986961" = type { [2 x double] }
 
 ; 6 occurrences:
 ; boost/optimized/area_sph_geo.ll
@@ -14,7 +14,7 @@ entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 576460752303423487)
   %4 = icmp ult i64 %1, %2
   %5 = select i1 %4, i64 576460752303423487, i64 %3
-  %6 = getelementptr nusw nuw %"class.boost::geometry::model::point.2986995", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.boost::geometry::model::point.2986961", ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

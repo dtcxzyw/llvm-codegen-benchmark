@@ -1,5 +1,5 @@
 
-%struct.track.3549521 = type { i64, i32, i32, i32, i64 }
+%struct.track.3549487 = type { i64, i32, i32, i32, i64 }
 
 ; 2 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -88,7 +88,7 @@ define i64 @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.track.3549521, ptr %4, i64 %3
+  %5 = getelementptr %struct.track.3549487, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = add i64 %6, 2147483648
   ret i64 %7

@@ -28,6 +28,12 @@ func0000000000000011:                   // @func0000000000000011
 	add	x0, x8, x0
 	ret
                                         // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	madd	x8, x1, x2, x1
+	add	x0, x0, x8
+	ret
+                                        // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
 	madd	x8, x1, x2, x1

@@ -76,7 +76,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -88,6 +88,7 @@ entry:
 ; openjdk/optimized/symbol.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/tsvector_op.ll
+; raylib/optimized/rcore.c.ll
 ; slurm/optimized/cbuf.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -119,14 +120,13 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; git/optimized/sideband.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; opencv/optimized/quality.cpp.ll
-; raylib/optimized/rcore.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {

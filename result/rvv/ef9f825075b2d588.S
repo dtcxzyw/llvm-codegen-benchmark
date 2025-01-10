@@ -14,18 +14,19 @@ func00000000000001a4:                   # @func00000000000001a4
 	li	a0, 384
 	vmsltu.vx	v0, v10, a0
 	ret
+func0000000000000004:                   # @func0000000000000004
+	li	a0, 49
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	li	a0, 33
+	vmacc.vx	v10, a0, v8
+	li	a0, -29
+	srli	a0, a0, 1
+	vmsltu.vx	v0, v10, a0
+	ret
 func00000000000000ac:                   # @func00000000000000ac
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v0, v8, -3
-	ret
-func0000000000000004:                   # @func0000000000000004
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 3
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	vadd.vx	v8, v8, a0
-	bseti	a0, zero, 32
-	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, -1
@@ -75,12 +76,4 @@ func0000000000000084:                   # @func0000000000000084
 func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 12
-	ret
-.LCPI11_0:
-	.quad	558992244657865199              # 0x7c1f07c1f07c1ef
-func0000000000000021:                   # @func0000000000000021
-	lui	a0, %hi(.LCPI11_0)
-	ld	a0, %lo(.LCPI11_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v0, v8, a0
 	ret

@@ -1,8 +1,8 @@
 
-%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
+%"class.rapidjson::GenericMember.2825502" = type { %"class.rapidjson::GenericValue.2825277", %"class.rapidjson::GenericValue.2825277" }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
 
 ; 6 occurrences:
 ; luajit/optimized/lj_debug.ll
@@ -44,7 +44,7 @@ define ptr @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %"class.rapidjson::GenericMember.2825536", ptr %2, i64 %3
+  %4 = getelementptr %"class.rapidjson::GenericMember.2825502", ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }

@@ -26,10 +26,11 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/vlv_dsi.ll
 ; lvgl/optimized/lv_binfont_loader.ll
+; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007e(i32 %0, i32 %1, i32 %2) #0 {
 entry:

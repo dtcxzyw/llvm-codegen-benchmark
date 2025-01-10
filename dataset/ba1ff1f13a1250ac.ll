@@ -1,5 +1,5 @@
 
-%struct.mask_type.2733818 = type { i32, ptr }
+%struct.mask_type.2733784 = type { i32, ptr }
 
 ; 4 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -11,7 +11,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.mask_type.2733818, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.mask_type.2733784, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

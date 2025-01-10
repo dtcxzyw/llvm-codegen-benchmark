@@ -13,8 +13,9 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; wireshark/optimized/packet-gryphon.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
@@ -23,7 +24,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw nsw i32 %0, %1
   %5 = add nuw nsw i32 %4, %3
-  %6 = shl nuw nsw i32 %5, 1
+  %6 = shl nuw nsw i32 %5, 2
   ret i32 %6
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.6.2601890" = type { %"struct.std::__atomic_base.7.2601891" }
-%"struct.std::__atomic_base.7.2601891" = type { ptr }
+%"struct.std::atomic.6.2601857" = type { %"struct.std::__atomic_base.7.2601858" }
+%"struct.std::__atomic_base.7.2601858" = type { ptr }
 
 ; 151 occurrences:
 ; cpython/optimized/_zoneinfo.ll
@@ -2004,7 +2004,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = getelementptr nusw nuw [0 x %"struct.std::atomic.6.2601890"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [0 x %"struct.std::atomic.6.2601857"], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

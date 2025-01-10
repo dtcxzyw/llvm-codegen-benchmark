@@ -10,14 +10,14 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	$3, %eax
-	subl	%esi, %eax
-	cltq
-	leaq	(%rdi,%rax,4), %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	$14, %eax
+	subl	%esi, %eax
+	cltq
+	addq	%rdi, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	$16, %eax
 	subl	%esi, %eax
 	cltq
 	addq	%rdi, %rax

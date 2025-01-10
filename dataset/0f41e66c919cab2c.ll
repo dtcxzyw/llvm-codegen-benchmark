@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 123 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absOldSim.c.ll
@@ -14,8 +14,10 @@
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/ftp.c.ll
+; cmake/optimized/openssl.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; curl/optimized/libcurl_la-ftp.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; cvc5/optimized/cegis_unif.cpp.ll
 ; flac/optimized/format.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -57,7 +59,6 @@
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/EHPersonalities.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
@@ -154,8 +155,7 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 51 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/UriRecompose.c.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -172,7 +172,6 @@ entry:
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/svclock.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/waitq.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll

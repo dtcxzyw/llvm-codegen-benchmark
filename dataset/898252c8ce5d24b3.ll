@@ -1,10 +1,9 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/gausstransform.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/stitching_detailed.cpp.ll

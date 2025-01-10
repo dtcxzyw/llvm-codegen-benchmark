@@ -117,7 +117,7 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; libquic/optimized/spdy_headers_block_parser.cc.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
@@ -128,7 +128,6 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; qemu/optimized/block_dmg.c.ll
 ; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/fw_cfg.c.ll
 ; velox/optimized/CompactRowSerializer.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; yosys/optimized/aigerparse.ll

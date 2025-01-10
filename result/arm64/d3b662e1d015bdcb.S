@@ -44,9 +44,3 @@ func000000000000001c:                   // @func000000000000001c
 	add	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-	and	w8, w1, #0x7fffffff
-	add	w0, w8, w0
-	ret
-                                        // -- End function

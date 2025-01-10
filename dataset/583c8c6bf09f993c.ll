@@ -4800,29 +4800,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
-; cpython/optimized/mpdecimal.ll
-; yalantinglibs/optimized/channel.cpp.ll
-; yalantinglibs/optimized/chat_room.cpp.ll
-; yalantinglibs/optimized/client_pool.cpp.ll
-; yalantinglibs/optimized/client_pools.cpp.ll
-; yalantinglibs/optimized/concurrent_clients.cpp.ll
-; yalantinglibs/optimized/data_gen.cpp.ll
-; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/file_client.cpp.ll
-; yalantinglibs/optimized/file_server.cpp.ll
-; yalantinglibs/optimized/rpc_service.cpp.ll
-; yalantinglibs/optimized/server.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = sdiv i64 %3, 32
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 105 occurrences:
+; 75 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -4859,6 +4837,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cpython/optimized/mpdecimal.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
@@ -4872,8 +4851,6 @@ entry:
 ; g2o/optimized/solver_dense.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
-; hwloc/optimized/lstopo-lstopo.ll
-; hwloc/optimized/lstopo_no_graphics-lstopo.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -4887,6 +4864,30 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/chat_room.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
+; yalantinglibs/optimized/concurrent_clients.cpp.ll
+; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/file_client.cpp.ll
+; yalantinglibs/optimized/file_server.cpp.ll
+; yalantinglibs/optimized/rpc_service.cpp.ll
+; yalantinglibs/optimized/server.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv i64 %3, 32
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
+; 42 occurrences:
+; hwloc/optimized/lstopo-lstopo.ll
+; hwloc/optimized/lstopo_no_graphics-lstopo.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -4925,7 +4926,6 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/TraceContext.cpp.ll
 ; Function Attrs: nounwind
@@ -4937,14 +4937,17 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; arrow/optimized/diff.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
 ; clamav/optimized/mew.c.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dgemm_thread_nn.c.ll
 ; openblas/optimized/dgemm_thread_nt.c.ll
 ; openblas/optimized/dgemm_thread_tn.c.ll

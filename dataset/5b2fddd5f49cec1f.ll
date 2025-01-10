@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.2612206" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207", i64, %union.anon.2612208 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612207" = type { ptr }
-%union.anon.2612208 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2612173" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174", i64, %union.anon.2612175 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2612174" = type { ptr }
+%union.anon.2612175 = type { i64, [8 x i8] }
 
 ; 370 occurrences:
 ; abc/optimized/saigSwitch.c.ll
@@ -1270,7 +1270,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = ashr exact i64 %5, 4
-  %7 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612206", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2612173", ptr %0, i64 %6
   ret ptr %7
 }
 

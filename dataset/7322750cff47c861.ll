@@ -34,7 +34,7 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cpython/optimized/optimizer_analysis.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/intel_color.ll
@@ -42,7 +42,6 @@ entry:
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/pci.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; meilisearch-rs/optimized/1onj4gqrvchfzpwo.ll

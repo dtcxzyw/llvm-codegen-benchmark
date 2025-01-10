@@ -722,7 +722,7 @@ entry:
   ret i32 %2
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -750,7 +750,6 @@ entry:
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/baseio.cpp.ll

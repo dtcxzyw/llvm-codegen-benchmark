@@ -172,11 +172,6 @@ func0000000000000086:                   # @func0000000000000086
 	addiw	a0, a0, 64
 	slt	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
-	zext.h	a1, a1
-	addiw	a0, a0, -40
-	sltu	a0, a0, a1
-	ret
 func000000000000000c:                   # @func000000000000000c
 	zext.h	a1, a1
 	addiw	a0, a0, -12
@@ -232,6 +227,11 @@ func0000000000000079:                   # @func0000000000000079
 	addiw	a0, a0, 1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	zext.h	a1, a1
+	addiw	a0, a0, -1
+	sltu	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	zext.h	a1, a1

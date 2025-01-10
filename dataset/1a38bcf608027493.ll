@@ -1,6 +1,6 @@
 
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
-%"class.irr::core::vector3d.2702987" = type { float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955" = type { float, %"class.irr::core::vector3d.2702953" }
+%"class.irr::core::vector3d.2702953" = type { float, float, float }
 
 ; 152 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -164,7 +164,7 @@ entry:
   ret i64 %5
 }
 
-; 206 occurrences:
+; 203 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -200,7 +200,6 @@ entry:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; g2o/optimized/structure_only.cpp.ll
 ; glog/optimized/signalhandler.cc.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
@@ -333,7 +332,6 @@ entry:
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
-; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
@@ -354,7 +352,6 @@ entry:
 ; sentencepiece/optimized/model_interface.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/fdt_rw.ll
-; stb/optimized/stb_sprintf.c.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
@@ -1356,7 +1353,7 @@ entry:
   ret i64 %5
 }
 
-; 279 occurrences:
+; 280 occurrences:
 ; boost/optimized/url_base.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/petite.c.ll
@@ -1560,6 +1557,7 @@ entry:
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
+; stb/optimized/stb_sprintf.c.ll
 ; tev/optimized/main.cpp.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
@@ -1750,8 +1748,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %1, i64 %2
-  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %3, i64 %0
+  %3 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %1, i64 %2
+  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

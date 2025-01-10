@@ -1,31 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/unicode.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003e1(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 7
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 1, %2
-  %4 = and i64 %3, 106102737862656
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; openjdk/optimized/jvmtiEventController.ll
-; php/optimized/metaphone.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -47
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, -2749786749764
-  %5 = icmp ne i64 %4, 0
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; php/optimized/metaphone.ll
 ; wireshark/optimized/packet-obex.c.ll
@@ -56,15 +29,6 @@ entry:
   %4 = and i64 %3, 147
   %5 = icmp eq i64 %4, 0
   ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/set_memory.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003ec(i32 %0) #0 {
-entry:
-  %1 = icmp ugt i32 %0, 8
-  ret i1 %1
 }
 
 ; 1 occurrences:

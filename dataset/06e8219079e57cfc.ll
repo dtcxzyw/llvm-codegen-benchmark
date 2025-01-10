@@ -1,10 +1,10 @@
 
-%"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::Job.3205080" = type { ptr, %"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::EvalResult.3205072", i32, [4 x i8], %"class.(anonymous namespace)::SpeculativeEvaluationRAII.3205081" }
-%"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::EvalResult.3205072" = type <{ %"class.clang::APValue.3204791", i8, [7 x i8] }>
-%"class.clang::APValue.3204791" = type { i32, [4 x i8], %"struct.llvm::AlignedCharArrayUnion.3204792" }
-%"struct.llvm::AlignedCharArrayUnion.3204792" = type { [64 x i8] }
-%"class.(anonymous namespace)::SpeculativeEvaluationRAII.3205081" = type <{ ptr, %"struct.clang::Expr::EvalStatus.3204790", i32, [4 x i8] }>
-%"struct.clang::Expr::EvalStatus.3204790" = type { i8, i8, ptr }
+%"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::Job.3205046" = type { ptr, %"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::EvalResult.3205038", i32, [4 x i8], %"class.(anonymous namespace)::SpeculativeEvaluationRAII.3205047" }
+%"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::EvalResult.3205038" = type <{ %"class.clang::APValue.3204757", i8, [7 x i8] }>
+%"class.clang::APValue.3204757" = type { i32, [4 x i8], %"struct.llvm::AlignedCharArrayUnion.3204758" }
+%"struct.llvm::AlignedCharArrayUnion.3204758" = type { [64 x i8] }
+%"class.(anonymous namespace)::SpeculativeEvaluationRAII.3205047" = type <{ ptr, %"struct.clang::Expr::EvalStatus.3204756", i32, [4 x i8] }>
+%"struct.clang::Expr::EvalStatus.3204756" = type { i8, i8, ptr }
 
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
@@ -18,17 +18,15 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/lzo1x_compress.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -8
-  %5 = getelementptr i8, ptr %1, i64 8
+  %4 = getelementptr i8, ptr %3, i64 680
+  %5 = getelementptr i8, ptr %1, i64 668
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
@@ -75,7 +73,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::Job.3205080", ptr %0, i64 %2
+  %3 = getelementptr %"struct.(anonymous namespace)::DataRecursiveIntBinOpEvaluator::Job.3205046", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 128
   %5 = getelementptr nusw i8, ptr %1, i64 -128
   %6 = icmp eq ptr %4, %5

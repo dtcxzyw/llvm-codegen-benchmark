@@ -19,11 +19,3 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	$5, %esi
-	movl	$4, %eax
-	cmovael	%esi, %eax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq

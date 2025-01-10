@@ -18,10 +18,3 @@ func000000000000000b:                   # @func000000000000000b
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movl	%edi, %eax
-	shrq	$26, %rdx
-	andl	$67108864, %edx                 # imm = 0x4000000
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq

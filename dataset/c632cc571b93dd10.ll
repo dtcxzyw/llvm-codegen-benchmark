@@ -1,6 +1,6 @@
 
-%"class.boost::shared_ptr.29.2841526" = type { ptr, %"class.boost::detail::shared_count.2841522" }
-%"class.boost::detail::shared_count.2841522" = type { ptr }
+%"class.boost::shared_ptr.29.2841492" = type { ptr, %"class.boost::detail::shared_count.2841488" }
+%"class.boost::detail::shared_count.2841488" = type { ptr }
 
 ; 5 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -34,7 +34,7 @@ entry:
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = tail call i32 @llvm.smax.i32(i32 %4, i32 0)
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.boost::shared_ptr.29.2841526", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.boost::shared_ptr.29.2841492", ptr %0, i64 %6
   ret ptr %7
 }
 

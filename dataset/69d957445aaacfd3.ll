@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; clamav/optimized/Bra.c.ll
@@ -31,7 +31,6 @@
 ; minetest/optimized/wieldmesh.cpp.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/EncodingSupport.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -269,11 +268,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i32 %1) #0 {

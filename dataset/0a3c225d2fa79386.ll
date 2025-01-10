@@ -15,11 +15,13 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 33 occurrences:
+; 38 occurrences:
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/kfifo.ll
@@ -38,6 +40,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/cap_v4l.cpp.ll
+; php/optimized/KeccakSponge.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -47,6 +51,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
@@ -66,6 +71,17 @@ entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = tail call noundef i64 @llvm.umin.i64(i64 %0, i64 %4)
+  ret i64 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/SourceErrorManager.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = call noundef i64 @llvm.umin.i64(i64 %4, i64 %0)
   ret i64 %5
 }
 

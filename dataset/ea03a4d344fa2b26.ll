@@ -1357,6 +1357,7 @@
 ; graphviz/optimized/sfprint.c.ll
 ; graphviz/optimized/sfvscanf.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
@@ -1371,7 +1372,6 @@
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/cpuinfo.cpp.ll
 ; gromacs/optimized/deflate.c.ll
-; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/dlaebz.cpp.ll
 ; gromacs/optimized/dlasrt.cpp.ll
@@ -12789,6 +12789,7 @@ entry:
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/gss_generic_token.ll
+; linux/optimized/gup.ll
 ; linux/optimized/hash.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hidraw.ll
@@ -13978,7 +13979,6 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; qemu/optimized/hw_scsi_virtio-scsi.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_vfio_common.c.ll
 ; qemu/optimized/hw_vfio_container.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
@@ -15277,7 +15277,7 @@ entry:
   ret i1 %1
 }
 
-; 2631 occurrences:
+; 2632 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcBm.c.ll
@@ -17482,6 +17482,7 @@ entry:
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_tulip.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/job.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -21180,7 +21181,7 @@ entry:
   ret i1 %1
 }
 
-; 138 occurrences:
+; 137 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/cnfUtil.c.ll
@@ -21211,7 +21212,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; glslang/optimized/PpScanner.cpp.ll
 ; gromacs/optimized/convertGmxToNblib.cpp.ll
-; gromacs/optimized/nbnxm_setup.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5HFhuge.c.ll

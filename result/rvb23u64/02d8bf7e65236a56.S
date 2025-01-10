@@ -18,12 +18,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func00000000000000f8:                   # @func00000000000000f8
-	slli	a2, a2, 33
-	srli	a2, a2, 33
-	add.uw	a1, a1, a2
-	sltu	a0, a0, a1
-	ret
 func00000000000000f4:                   # @func00000000000000f4
 	slli	a2, a2, 33
 	srli	a2, a2, 33

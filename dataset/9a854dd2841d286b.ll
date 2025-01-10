@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/build_policy.ll
+; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; postgres/optimized/brin.ll
 ; proj/optimized/grids.cpp.ll

@@ -1,5 +1,5 @@
 
-; 459 occurrences:
+; 460 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; boost/optimized/area.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -309,6 +309,7 @@
 ; openssl/optimized/libcrypto-shlib-params_from_text.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/dns.ll
+; php/optimized/pack.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll

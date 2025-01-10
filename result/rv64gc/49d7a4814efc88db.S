@@ -8,12 +8,11 @@ func0000000000000000:                   # @func0000000000000000
 .LBB0_2:                                # %entry
 	ret
 func000000000000000e:                   # @func000000000000000e
-	lui	a2, 2
+	li	a2, 64
 	subw	a1, a2, a1
-	bltu	a1, a0, .LBB1_2
-	mv	a1, a0
-.LBB1_2:                                # %entry
+	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
+.LBB1_2:                                # %entry
 	ret
 func0000000000000006:                   # @func0000000000000006
 	negw	a1, a1

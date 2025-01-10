@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaSweep.c.ll
@@ -21,6 +21,7 @@
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
+; icu/optimized/swapimpl.ll
 ; libquic/optimized/pem_lib.c.ll
 ; linux/optimized/inline.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
@@ -557,7 +558,7 @@ entry:
   ret i64 %4
 }
 
-; 268 occurrences:
+; 267 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigFrames.c.ll
@@ -649,7 +650,6 @@ entry:
 ; icu/optimized/propname.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/rbbirb.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnv_err.ll
 ; icu/optimized/ucnvsel.ll
 ; icu/optimized/unesctrn.ll

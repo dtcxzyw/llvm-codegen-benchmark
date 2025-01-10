@@ -1,10 +1,11 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; cvc5/optimized/arith_utilities.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; git/optimized/convert.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
+; glslang/optimized/Intermediate.cpp.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll

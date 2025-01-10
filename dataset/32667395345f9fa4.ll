@@ -18,9 +18,7 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
-; clamav/optimized/oabd.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
+; 20 occurrences:
 ; git/optimized/diffcore-pickaxe.ll
 ; linux/optimized/base.ll
 ; linux/optimized/blk-lib.ll
@@ -34,7 +32,6 @@ entry:
 ; memcached/optimized/memcached_debug-storage.ll
 ; openssl/optimized/bio_dgram_test-bin-bio_dgram_test.ll
 ; openssl/optimized/libdefault-lib-drbg_ctr.ll
-; qemu/optimized/block_qcow.c.ll
 ; ruby/optimized/io.ll
 ; sentencepiece/optimized/bpe_model.cc.ll
 ; sentencepiece/optimized/char_model.cc.ll
@@ -50,48 +47,6 @@ entry:
   ret i1 %3
 }
 
-; 33 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; freetype/optimized/psaux.c.ll
-; freetype/optimized/pshinter.c.ll
-; lvgl/optimized/lv_draw_sw_box_shadow.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
-; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
-; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
-; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; openblas/optimized/dgemm_thread_nn.c.ll
-; openblas/optimized/dgemm_thread_nt.c.ll
-; openblas/optimized/dgemm_thread_tn.c.ll
-; openblas/optimized/dgemm_thread_tt.c.ll
-; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsymm_thread_LL.c.ll
-; openblas/optimized/dsymm_thread_LU.c.ll
-; openblas/optimized/dsymm_thread_RL.c.ll
-; openblas/optimized/dsymm_thread_RU.c.ll
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
-; opencv/optimized/staticSaliencyFineGrained.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
-; qemu/optimized/ui_input.c.ll
-; ruby/optimized/io.ll
-; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
-; spike/optimized/kmsda.ll
-; spike/optimized/kmsxda.ll
-; wireshark/optimized/dot11decrypt_gcmp.c.ll
-; z3/optimized/mpz.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = icmp sle i64 %0, %2
-  ret i1 %3
-}
-
 ; 3 occurrences:
 ; postgres/optimized/mbprint.ll
 ; re2/optimized/parse.cc.ll
@@ -104,35 +59,10 @@ entry:
   ret i1 %3
 }
 
-; 78 occurrences:
+; 53 occurrences:
 ; arrow/optimized/hdfs.cc.ll
 ; brotli/optimized/huffman.c.ll
-; ceres/optimized/block_sparse_matrix.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
-; clamav/optimized/cabd.c.ll
 ; clamav/optimized/file.cpp.ll
-; clamav/optimized/mszipd.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/sdf.c.ll
@@ -189,6 +119,48 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = icmp sgt i64 %0, %2
   ret i1 %3
+}
+
+; 32 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; freetype/optimized/psaux.c.ll
+; freetype/optimized/pshinter.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
+; openblas/optimized/dgemm_thread_nn.c.ll
+; openblas/optimized/dgemm_thread_nt.c.ll
+; openblas/optimized/dgemm_thread_tn.c.ll
+; openblas/optimized/dgemm_thread_tt.c.ll
+; openblas/optimized/dsbgst.c.ll
+; openblas/optimized/dsymm_thread_LL.c.ll
+; openblas/optimized/dsymm_thread_LU.c.ll
+; openblas/optimized/dsymm_thread_RL.c.ll
+; openblas/optimized/dsymm_thread_RU.c.ll
+; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; opencv/optimized/staticSaliencyFineGrained.cpp.ll
+; openjdk/optimized/TransformHelper.ll
+; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
+; qemu/optimized/ui_input.c.ll
+; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
+; spike/optimized/kmsda.ll
+; spike/optimized/kmsxda.ll
+; wireshark/optimized/dot11decrypt_gcmp.c.ll
+; z3/optimized/mpz.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub nsw i64 %0, %2
+  %4 = icmp slt i64 %3, 4
+  ret i1 %4
 }
 
 ; 16 occurrences:
@@ -317,7 +289,7 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -333,8 +305,6 @@ entry:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/mszipd.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll

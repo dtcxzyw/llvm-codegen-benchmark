@@ -10,7 +10,7 @@ func000000000000002a:                   # @func000000000000002a
 	addq	%rdi, %rax
 	sarq	%rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000020:                   # @func0000000000000020
 	leaq	3(%rdi), %rax
 	testq	%rdi, %rdi
 	cmovnsq	%rdi, %rax

@@ -34,9 +34,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/sswCnf.c.ll
-; linux/optimized/vc_screen.ll
 ; meshlab/optimized/miniz.c.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind

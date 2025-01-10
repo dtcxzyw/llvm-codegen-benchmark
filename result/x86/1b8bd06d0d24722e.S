@@ -1,25 +1,16 @@
+func0000000000000006:                   # @func0000000000000006
+	testl	%esi, %esi
+	sets	%al
+	andb	%dil, %al
+	retq
 func0000000000000021:                   # @func0000000000000021
 	movl	%edx, %eax
 	sarl	$31, %eax
 	andnl	%edx, %eax, %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
-	cmpl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	sete	%al
-	retq
-func0000000000000006:                   # @func0000000000000006
-	testl	%esi, %esi
-	sets	%al
-	andb	%dil, %al
-	retq
-func000000000000002a:                   # @func000000000000002a
-	movl	%edx, %eax
-	sarl	$31, %eax
-	andnl	%edx, %eax, %eax
-	testb	$1, %dil
-	cmovnel	%esi, %eax
 	testl	%eax, %eax
-	setg	%al
+	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpl	$2, %edx

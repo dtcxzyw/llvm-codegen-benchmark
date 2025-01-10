@@ -121,7 +121,7 @@ entry:
   ret i32 %6
 }
 
-; 129 occurrences:
+; 130 occurrences:
 ; abc/optimized/bblif.c.ll
 ; assimp/optimized/STLLoader.cpp.ll
 ; brotli/optimized/compress_fragment.c.ll
@@ -156,6 +156,7 @@ entry:
 ; git/optimized/apply.ll
 ; git/optimized/credential.ll
 ; git/optimized/sequencer.ll
+; git/optimized/show-ref.ll
 ; grpc/optimized/parsing.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
@@ -261,7 +262,7 @@ entry:
   ret i32 %6
 }
 
-; 74 occurrences:
+; 71 occurrences:
 ; abc/optimized/inffast.c.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; boost/optimized/options_description.ll
@@ -278,13 +279,11 @@ entry:
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/inffast.c.ll
 ; cmake/optimized/zdict.c.ll
-; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; git/optimized/fmt-merge-msg.ll
-; git/optimized/show-ref.ll
 ; gromacs/optimized/inffast.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -331,7 +330,6 @@ entry:
 ; yosys/optimized/lz4.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/zdict.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll

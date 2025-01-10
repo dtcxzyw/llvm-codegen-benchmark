@@ -54,16 +54,3 @@ func0000000000000018:                   # @func0000000000000018
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
-	.long	12                              # 0xc
-.LCPI4_1:
-	.long	18                              # 0x12
-func000000000000000c:                   # @func000000000000000c
-	vpslld	$31, %xmm2, %xmm2
-	vpmovd2m	%xmm2, %k1
-	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [12,12,12,12]
-	vpbroadcastd	.LCPI4_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [18,18,18,18]
-	vptestnmq	%ymm1, %ymm1, %k1
-	vmovdqa32	%xmm2, %xmm0 {%k1}
-	vzeroupper
-	retq

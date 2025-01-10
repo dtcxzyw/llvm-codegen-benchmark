@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3140259" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3140225" = type { ptr, ptr, ptr, ptr }
 
 ; 5 occurrences:
 ; folly/optimized/Base64SWAR.cpp.ll
@@ -94,7 +94,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = getelementptr %"class.llvm::Use.3140259", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"class.llvm::Use.3140225", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

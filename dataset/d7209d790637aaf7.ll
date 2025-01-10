@@ -20,6 +20,18 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; slurm/optimized/bitstring.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 63
+  %3 = and i32 %2, -64
+  %4 = trunc i64 %0 to i32
+  %5 = icmp sgt i32 %3, %4
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; linux/optimized/filter.ll
 ; linux/optimized/ip6_output.ll

@@ -43,11 +43,6 @@ func000000000000003f:                   # @func000000000000003f
 	sh3add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000001e:                   # @func000000000000001e
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 64
-	ret
 func000000000000003b:                   # @func000000000000003b
 	sub	a1, a1, a2
 	add	a0, a0, a1
@@ -70,10 +65,9 @@ func0000000000000003:                   # @func0000000000000003
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001f:                   # @func000000000000001f
+func000000000000001e:                   # @func000000000000001e
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 16
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sub	a1, a1, a2
@@ -91,6 +85,11 @@ func0000000000000013:                   # @func0000000000000013
 	sub	a1, a1, a2
 	slli	a0, a0, 5
 	add	a0, a0, a1
+	ret
+func000000000000001f:                   # @func000000000000001f
+	slli	a2, a2, 1
+	sub	a1, a1, a2
+	sh1add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sub	a1, a1, a2

@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 136 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -9,7 +9,6 @@
 ; cmake/optimized/stream.c.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
 ; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/colvarcomp_protein.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll

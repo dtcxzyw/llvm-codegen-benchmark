@@ -1,5 +1,5 @@
 
-; 480 occurrences:
+; 481 occurrences:
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -208,6 +208,7 @@
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
 ; llvm/optimized/YAMLRemarkSerializer.cpp.ll

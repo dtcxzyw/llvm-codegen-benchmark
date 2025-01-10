@@ -11,6 +11,13 @@ func0000000000000057:                   // @func0000000000000057
 	add	x0, x0, w8, uxtw #2
 	ret
                                         // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	add	x8, x1, w2, sxtw
+	and	x8, x8, #0xfffffffffffffff0
+	add	x0, x0, x8
+	ret
+                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	sbfx	x9, x2, #61, #1

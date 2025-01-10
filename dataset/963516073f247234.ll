@@ -29,16 +29,14 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/satSolver2.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; hermes/optimized/Metadata.cpp.ll
 ; icu/optimized/collationdatabuilder.ll
 ; linux/optimized/hda_codec.ll
 ; postgres/optimized/bufpage.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
 ; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:

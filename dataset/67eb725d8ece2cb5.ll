@@ -1,5 +1,5 @@
 
-; 1222 occurrences:
+; 1217 occurrences:
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/inftrees.c.ll
 ; abc/optimized/trees.c.ll
@@ -208,7 +208,6 @@
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationiterator.ll
-; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; icu/optimized/double-conversion-string-to-double.ll
@@ -224,7 +223,6 @@
 ; icu/optimized/numfmt.ll
 ; icu/optimized/plurfmt.ll
 ; icu/optimized/rbbitblb.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_rule.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/rle.ll
@@ -253,7 +251,6 @@
 ; icu/optimized/unesctrn.ll
 ; icu/optimized/uniset.ll
 ; icu/optimized/unistr_case.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/usearch.ll
 ; icu/optimized/uspoof_conf.ll
 ; icu/optimized/ustrtrns.ll
@@ -728,9 +725,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/conductor.cpp.ll
-; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/roughconductor.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/main.cc.ALPHA.cc.ll
 ; mold/optimized/main.cc.ARM32.cc.ll
 ; mold/optimized/main.cc.ARM64.cc.ll
@@ -1229,7 +1224,7 @@ entry:
   ret i8 %1
 }
 
-; 802 occurrences:
+; 800 occurrences:
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -1610,8 +1605,6 @@ entry:
 ; minetest/optimized/gameui.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -2039,7 +2032,7 @@ entry:
   ret i8 %1
 }
 
-; 293 occurrences:
+; 294 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -2226,6 +2219,7 @@ entry:
 ; opencv/optimized/convert.dispatch.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openjdk/optimized/compilerEvent.ll
 ; openjdk/optimized/jfrStringPool.ll
 ; openjdk/optimized/jfrThreadLocal.ll

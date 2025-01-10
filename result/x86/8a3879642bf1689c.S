@@ -1,11 +1,11 @@
-func0000000000000030:                   # @func0000000000000030
-	leaq	4095(%rdx,%rsi), %rax
-	andq	$-4096, %rax                    # imm = 0xF000
-	addq	%rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	7(%rdx,%rsi), %rax
 	andq	$-8, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	leaq	4095(%rdx,%rsi), %rax
+	andq	$-4096, %rax                    # imm = 0xF000
 	addq	%rdi, %rax
 	retq
 func000000000000003c:                   # @func000000000000003c

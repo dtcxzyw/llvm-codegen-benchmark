@@ -42,10 +42,11 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; gromacs/optimized/tpi.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

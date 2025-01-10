@@ -1,5 +1,5 @@
 
-%"struct.xgboost::Entry.3888745" = type { i32, float }
+%"struct.xgboost::Entry.3888695" = type { i32, float }
 
 ; 1 occurrences:
 ; ruby/optimized/regexec.ll
@@ -89,7 +89,7 @@ define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 5
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.xgboost::Entry.3888745", ptr %1, i64 %4
+  %5 = getelementptr nusw %"struct.xgboost::Entry.3888695", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

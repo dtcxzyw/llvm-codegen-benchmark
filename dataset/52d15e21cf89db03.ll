@@ -16,12 +16,11 @@ entry:
   ret i8 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; linux/optimized/hdmi.ll
 ; llvm/optimized/Architecture.cpp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
-; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/nbtinsert.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll

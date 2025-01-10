@@ -1,7 +1,7 @@
 
-%class.symbol.3613505 = type { ptr }
+%class.symbol.3613471 = type { ptr }
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcQuant.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -33,6 +33,7 @@
 ; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucnv_bld.ll
+; icu/optimized/uresdata.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libevent/optimized/event_tagging.c.ll
 ; libquic/optimized/strike_register.cc.ll
@@ -265,7 +266,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.symbol.3613471, ptr %0, i64 %1
   %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }

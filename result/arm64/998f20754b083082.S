@@ -22,3 +22,11 @@ func000000000000008a:                   // @func000000000000008a
 	cset	w0, gt
 	ret
                                         // -- End function
+func0000000000000201:                   // @func0000000000000201
+// %bb.0:                               // %entry
+	cmp	w0, w2
+	csel	w8, w0, w2, lt
+	cmp	w8, w1
+	cset	w0, eq
+	ret
+                                        // -- End function

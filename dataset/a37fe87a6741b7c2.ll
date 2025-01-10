@@ -377,7 +377,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; clamav/optimized/matcher.c.ll
@@ -397,7 +397,6 @@ entry:
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll

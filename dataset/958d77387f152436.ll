@@ -1,5 +1,5 @@
 
-; 394 occurrences:
+; 395 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -279,6 +279,7 @@
 ; openssl/optimized/quic_record_test-bin-quic_record_test.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/reconintra.c.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
 ; php/optimized/pcre2_auto_possess.ll

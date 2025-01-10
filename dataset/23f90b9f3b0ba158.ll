@@ -2775,7 +2775,7 @@ entry:
   ret i1 %4
 }
 
-; 452 occurrences:
+; 451 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -2783,7 +2783,6 @@ entry:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecSolveG.c.ll
-; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/fraSec.c.ll
 ; abc/optimized/fraigMan.c.ll
@@ -3886,7 +3885,7 @@ entry:
   ret i1 %4
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; c3c/optimized/c_abi_x64.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/extract.cpp.ll
@@ -3952,7 +3951,6 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/svmsgd.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/relocator.ll
 ; openspiel/optimized/othello.cc.ll
@@ -4109,7 +4107,7 @@ entry:
   ret i1 %4
 }
 
-; 573 occurrences:
+; 577 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -4132,7 +4130,11 @@ entry:
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaEsop.c.ll
 ; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaPat2.c.ll
+; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSatEdge.c.ll
 ; abc/optimized/giaSatLut.c.ll
@@ -4374,6 +4376,7 @@ entry:
 ; oiio/optimized/exroutput.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; oniguruma/optimized/unicode.ll
+; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
@@ -4569,7 +4572,6 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
@@ -5034,7 +5036,7 @@ entry:
   ret i1 %4
 }
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; assimp/optimized/IQMImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -5126,7 +5128,6 @@ entry:
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; wireshark/optimized/packet-someip.c.ll
-; wolfssl/optimized/api.c.ll
 ; z3/optimized/nla_grobner.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; zlib/optimized/inftrees.c.ll
@@ -6428,7 +6429,7 @@ entry:
   ret i1 %4
 }
 
-; 95 occurrences:
+; 96 occurrences:
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/giaIso.c.ll
 ; arrow/optimized/UriQuery.c.ll
@@ -6436,6 +6437,7 @@ entry:
 ; bullet3/optimized/btPolyhedralContactClipping.ll
 ; cmake/optimized/ftp.c.ll
 ; cpython/optimized/dtoa.ll
+; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; darktable/optimized/live_view.c.ll
 ; darktable/optimized/tagging.c.ll

@@ -1,21 +1,5 @@
 
 ; 6 occurrences:
-; abc/optimized/giaFrames.c.ll
-; linux/optimized/vc_screen.ll
-; miniaudio/optimized/unity.c.ll
-; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
-; raylib/optimized/raudio.c.ll
-; ruby/optimized/io.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %3, %1
-  %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 6 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -99,8 +83,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; assimp/optimized/unzip.c.ll
+; 3 occurrences:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
@@ -146,6 +129,20 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = icmp sgt i64 %4, %0
+  ret i1 %5
+}
+
+; 4 occurrences:
+; abc/optimized/giaFrames.c.ll
+; miniaudio/optimized/unity.c.ll
+; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %3, %1
+  %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
 

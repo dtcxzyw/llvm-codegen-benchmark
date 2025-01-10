@@ -64,12 +64,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func00000000000001e1:                   # @func00000000000001e1
-	subl	%edx, %esi
-	incl	%esi
-	cmpq	%rsi, %rdi
-	sete	%al
-	retq
 func0000000000000019:                   # @func0000000000000019
 	subl	%edx, %esi
 	incl	%esi

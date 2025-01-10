@@ -6,6 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	leal	16(%rdi,%rsi,8), %eax
 	andl	$-8, %eax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	leaq	7(%rdi,%rsi,4), %rcx
+	movabsq	$137438953464, %rax             # imm = 0x1FFFFFFFF8
+	andq	%rcx, %rax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	leal	19(%rdi,%rsi,2), %eax
 	retq

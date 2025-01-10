@@ -1,8 +1,6 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; brotli/optimized/transform.c.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind

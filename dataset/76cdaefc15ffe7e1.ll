@@ -88,10 +88,11 @@ entry:
   ret i64 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; cvc5/optimized/cut_log.cpp.ll
+; git/optimized/writer.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

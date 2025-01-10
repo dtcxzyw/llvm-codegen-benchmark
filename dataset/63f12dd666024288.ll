@@ -149,18 +149,6 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = shl nuw nsw i64 %0, 1
-  %5 = sub nsw i64 %4, %3
-  ret i64 %5
-}
-
 ; 3 occurrences:
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -237,17 +225,6 @@ entry:
   %3 = add i64 %1, %2
   %4 = shl nuw nsw i64 %0, 25
   %5 = sub i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/jidctint.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = shl nsw i64 %0, 13
-  %5 = sub nsw i64 %4, %3
   ret i64 %5
 }
 

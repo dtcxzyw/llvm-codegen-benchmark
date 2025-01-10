@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::ElfSym.2639726" = type { %"class.mold::LittleEndian.250.2639724", %"class.mold::LittleEndian.250.2639724", %"class.mold::LittleEndian.250.2639724", i16, %"class.mold::LittleEndian.2639727" }
-%"class.mold::LittleEndian.250.2639724" = type { [4 x i8] }
-%"class.mold::LittleEndian.2639727" = type { [2 x i8] }
+%"struct.mold::elf::ElfSym.2639693" = type { %"class.mold::LittleEndian.250.2639691", %"class.mold::LittleEndian.250.2639691", %"class.mold::LittleEndian.250.2639691", i16, %"class.mold::LittleEndian.2639694" }
+%"class.mold::LittleEndian.250.2639691" = type { [4 x i8] }
+%"class.mold::LittleEndian.2639694" = type { [2 x i8] }
 
 ; 20 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
@@ -30,7 +30,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nuw %"struct.mold::elf::ElfSym.2639726", ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %"struct.mold::elf::ElfSym.2639693", ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 

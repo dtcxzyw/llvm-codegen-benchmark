@@ -15,12 +15,9 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/amapMerge.c.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

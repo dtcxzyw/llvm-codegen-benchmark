@@ -19,6 +19,13 @@ func000000000000016a:                   # @func000000000000016a
 	setg	%al
 	andb	%cl, %al
 	retq
+func0000000000000c2a:                   # @func0000000000000c2a
+	cmpl	%esi, %edi
+	sete	%cl
+	testl	%edi, %edi
+	setg	%al
+	andb	%cl, %al
+	retq
 func00000000000000ca:                   # @func00000000000000ca
 	cmpl	%esi, %edi
 	setl	%cl
@@ -38,6 +45,13 @@ func000000000000002a:                   # @func000000000000002a
 	sete	%cl
 	testl	%edi, %edi
 	setns	%al
+	andb	%cl, %al
+	retq
+func0000000000000cea:                   # @func0000000000000cea
+	cmpl	%esi, %edi
+	setle	%cl
+	testl	%edi, %edi
+	setg	%al
 	andb	%cl, %al
 	retq
 func000000000000010c:                   # @func000000000000010c

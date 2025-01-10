@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; redis/optimized/dict.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; vcpkg/optimized/system.process.cpp.ll
 ; wireshark/optimized/packet-scsi-osd.c.ll

@@ -1,10 +1,10 @@
 
-%struct.hrtimer_clock_base.3549034 = type { ptr, i32, i32, %struct.seqcount_raw_spinlock.3549038, ptr, %struct.timerqueue_head.3549039, ptr, i64 }
-%struct.seqcount_raw_spinlock.3549038 = type { %struct.seqcount.3549040 }
-%struct.seqcount.3549040 = type { i32 }
-%struct.timerqueue_head.3549039 = type { %struct.rb_root_cached.3549041 }
-%struct.rb_root_cached.3549041 = type { %struct.rb_root.3549042, ptr }
-%struct.rb_root.3549042 = type { ptr }
+%struct.hrtimer_clock_base.3549000 = type { ptr, i32, i32, %struct.seqcount_raw_spinlock.3549004, ptr, %struct.timerqueue_head.3549005, ptr, i64 }
+%struct.seqcount_raw_spinlock.3549004 = type { %struct.seqcount.3549006 }
+%struct.seqcount.3549006 = type { i32 }
+%struct.timerqueue_head.3549005 = type { %struct.rb_root_cached.3549007 }
+%struct.rb_root_cached.3549007 = type { %struct.rb_root.3549008, ptr }
+%struct.rb_root.3549008 = type { ptr }
 
 ; 4 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -47,7 +47,7 @@ entry:
   %3 = and i32 %2, 4
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr [8 x %struct.hrtimer_clock_base.3549034], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [8 x %struct.hrtimer_clock_base.3549000], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

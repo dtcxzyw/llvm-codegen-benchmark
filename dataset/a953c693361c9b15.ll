@@ -1,7 +1,7 @@
 
-%struct.code.2876040 = type { i8, i8, i16 }
-%struct.FSE_decode_t.3496638 = type { i16, i8, i8 }
-%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
+%struct.code.2876006 = type { i8, i8, i16 }
+%struct.FSE_decode_t.3496604 = type { i16, i8, i8 }
+%struct.FSE_decode_t.3533469 = type { i16, i8, i8 }
 
 ; 8 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -17,7 +17,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw %struct.code.2876040, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw nuw %struct.code.2876006, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -29,7 +29,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add i64 %1, %3
-  %5 = getelementptr nusw %struct.FSE_decode_t.3496638, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %struct.FSE_decode_t.3496604, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -41,7 +41,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw i64 %1, %3
-  %5 = getelementptr nusw %struct.FSE_decode_t.3496638, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %struct.FSE_decode_t.3496604, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -52,7 +52,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add i64 %1, %3
-  %5 = getelementptr %struct.FSE_decode_t.3533503, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.FSE_decode_t.3533469, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -63,7 +63,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = add nuw i64 %1, %3
-  %5 = getelementptr %struct.FSE_decode_t.3533503, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.FSE_decode_t.3533469, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

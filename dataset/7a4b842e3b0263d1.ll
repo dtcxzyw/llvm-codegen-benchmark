@@ -1,5 +1,5 @@
 
-; 1337 occurrences:
+; 1338 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/sclLiberty.c.ll
@@ -1068,6 +1068,7 @@
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/transcode.ll
 ; ruby/optimized/util.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll

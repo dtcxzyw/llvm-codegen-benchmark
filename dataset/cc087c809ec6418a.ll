@@ -1,15 +1,12 @@
 
-%"class.llvm::Use.3335894" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3335860" = type { ptr, ptr, ptr, ptr }
 
-; 8 occurrences:
+; 5 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/reg.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/libvduse.c.ll
-; qemu/optimized/libvhost-user.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -136,7 +133,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 5
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = and i64 %1, 4294967295
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3335894", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3335860", ptr %4, i64 %5
   ret ptr %6
 }
 

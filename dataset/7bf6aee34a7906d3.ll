@@ -1,5 +1,5 @@
 
-; 13446 occurrences:
+; 13460 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -88,6 +88,7 @@
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/cecSweep.c.ll
 ; abc/optimized/cecSynth.c.ll
+; abc/optimized/cmd.c.ll
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/cmdHist.c.ll
 ; abc/optimized/cmdPlugin.c.ll
@@ -1119,6 +1120,7 @@
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/netcode.c.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/openioc.c.ll
 ; clamav/optimized/others.c.ll
 ; clamav/optimized/pathfn.cpp.ll
@@ -3117,6 +3119,7 @@
 ; gromacs/optimized/selelem.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/setup.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
@@ -7001,14 +7004,17 @@
 ; nuttx/optimized/lib_fputs.c.ll
 ; nuttx/optimized/lib_gmtimer.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; nuttx/optimized/lib_wcslcat.c.ll
 ; nuttx/optimized/lib_wcslcpy.c.ll
 ; nuttx/optimized/lib_wcslen.c.ll
 ; nuttx/optimized/lib_wcsstr.c.ll
 ; nuttx/optimized/losetup.c.ll
+; nuttx/optimized/mempool_multiple.c.ll
 ; nuttx/optimized/serial.c.ll
 ; nuttx/optimized/task_setup.c.ll
+; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/AllocationOp.cpp.ll
 ; ocio/optimized/AllocationTransform.cpp.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
@@ -8159,6 +8165,7 @@
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/compileBroker.ll
+; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/constantTable.ll
@@ -8377,6 +8384,7 @@
 ; openjdk/optimized/zRemembered.ll
 ; openjdk/optimized/zStoreBarrierBuffer.ll
 ; openjdk/optimized/zVerify.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_aggregate.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
@@ -9471,6 +9479,7 @@
 ; postgres/optimized/auth.ll
 ; postgres/optimized/autoinc.ll
 ; postgres/optimized/autovacuum.ll
+; postgres/optimized/backend_status.ll
 ; postgres/optimized/backup_manifest.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/bbstreamer_file.ll
@@ -9480,6 +9489,7 @@
 ; postgres/optimized/bootscanner.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_minmax_multi.ll
+; postgres/optimized/buffile.ll
 ; postgres/optimized/cash.ll
 ; postgres/optimized/checkpointer.ll
 ; postgres/optimized/command.ll
@@ -9681,6 +9691,7 @@
 ; postgres/optimized/wstrncmp.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xloginsert.ll
+; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xml.ll
 ; postgres/optimized/zic.ll
 ; proj/optimized/4D_api.cpp.ll
@@ -9946,8 +9957,10 @@
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_usb_combined-packet.c.ll
+; qemu/optimized/hw_usb_core.c.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -9958,6 +9971,7 @@
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/libvhost-user.c.ll
 ; qemu/optimized/linux-user_fd-trans.c.ll
+; qemu/optimized/linux-user_main.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/migration_block.c.ll

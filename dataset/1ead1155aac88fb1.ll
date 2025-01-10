@@ -1,5 +1,5 @@
 
-; 1782 occurrences:
+; 1780 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -212,7 +212,6 @@
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/file.cpp.ll
 ; clamav/optimized/htmlnorm.c.ll
-; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
@@ -221,7 +220,6 @@
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -1790,7 +1788,7 @@ entry:
   ret i64 %3
 }
 
-; 1441 occurrences:
+; 1440 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -2312,7 +2310,6 @@ entry:
 ; luau/optimized/main.cpp.ll
 ; lvgl/optimized/lv_sprintf_builtin.ll
 ; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-restart.ll

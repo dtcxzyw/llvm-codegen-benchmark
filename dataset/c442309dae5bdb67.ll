@@ -1,5 +1,5 @@
 
-%"struct.vcpkg::SectionTableHeader.2864717" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
+%"struct.vcpkg::SectionTableHeader.2864683" = type { [8 x i8], i32, i32, i32, i32, i32, i32, i16, i16, i32 }
 
 ; 30 occurrences:
 ; boost/optimized/static_string.ll
@@ -79,7 +79,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864717", ptr %0, i64 %4
+  %5 = getelementptr %"struct.vcpkg::SectionTableHeader.2864683", ptr %0, i64 %4
   ret ptr %5
 }
 

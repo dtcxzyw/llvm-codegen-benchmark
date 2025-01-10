@@ -223,8 +223,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
-; clamav/optimized/xlm_extract.c.ll
+; 10 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; linux/optimized/ematch.ll
 ; wireshark/optimized/dot11decrypt.c.ll

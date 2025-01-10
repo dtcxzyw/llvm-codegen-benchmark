@@ -1,7 +1,9 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/ng_violet.cpp.ll
+; linux/optimized/gup.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
+; qemu/optimized/ahci.c.ll
 ; qemu/optimized/net_checksum.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {

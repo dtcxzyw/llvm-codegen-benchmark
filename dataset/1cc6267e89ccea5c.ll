@@ -1,5 +1,5 @@
 
-; 203 occurrences:
+; 205 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -28,6 +28,7 @@
 ; llvm/optimized/CompilerInstance.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -103,6 +104,7 @@
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -606,18 +608,6 @@ entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ugt i64 %0, 4294967295
   %4 = and i1 %2, %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/nls_base.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000194(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 2095104
-  %2 = icmp ne i64 %1, 55296
-  %3 = icmp samesign ult i64 %0, 1114112
-  %4 = and i1 %3, %2
   ret i1 %4
 }
 

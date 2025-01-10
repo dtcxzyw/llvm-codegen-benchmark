@@ -1,13 +1,10 @@
 
-; 30 occurrences:
+; 25 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; icu/optimized/usprep.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -27,8 +24,6 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {

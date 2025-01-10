@@ -62,3 +62,8 @@ func000000000000000e:                   # @func000000000000000e
 	setnp	%al
 	andb	%dil, %al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	vucomisd	%xmm1, %xmm0
+	sete	%al
+	andb	%dil, %al
+	retq

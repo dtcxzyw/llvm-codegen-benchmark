@@ -63,7 +63,8 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -79,16 +80,15 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = lshr i32 %3, 17
-  %5 = and i32 %4, 1
+  %4 = lshr i32 %3, 21
+  %5 = and i32 %4, 4
   %6 = or i32 %0, %1
   %7 = or i32 %6, %5
   ret i32 %7

@@ -49,7 +49,7 @@ entry:
   ret i64 %3
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -87,7 +87,6 @@ entry:
 ; luajit/optimized/lj_str_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
-; lvgl/optimized/lv_style.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll

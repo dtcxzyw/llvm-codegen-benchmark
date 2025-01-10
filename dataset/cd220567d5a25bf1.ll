@@ -1,6 +1,6 @@
 
-%"struct.google::protobuf::internal::SortItem.2780354" = type { i32, ptr }
-%"struct.google::protobuf::internal::SortItem.199.2780356" = type { i32, ptr }
+%"struct.google::protobuf::internal::SortItem.2780320" = type { i32, ptr }
+%"struct.google::protobuf::internal::SortItem.199.2780322" = type { i32, ptr }
 
 ; 3 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -11,7 +11,7 @@ define ptr @func000000000000016f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nuw %"struct.google::protobuf::internal::SortItem.2780354", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.google::protobuf::internal::SortItem.2780320", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -24,7 +24,7 @@ define ptr @func000000000000012f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nuw %"struct.google::protobuf::internal::SortItem.199.2780356", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.google::protobuf::internal::SortItem.199.2780322", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
 
 ; 1 occurrences:
 ; rocksdb/optimized/version_set.cc.ll
@@ -8,7 +8,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 4
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 50)
-  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3
   ret ptr %4
 }
 

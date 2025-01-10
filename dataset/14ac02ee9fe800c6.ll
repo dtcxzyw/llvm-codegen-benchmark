@@ -94,8 +94,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; linux/optimized/vlv_dsi.ll
+; 3 occurrences:
 ; openusd/optimized/loopfilter.c.ll
 ; verilator/optimized/V3Hasher.cpp.ll
 ; wireshark/optimized/packet-cip.c.ll

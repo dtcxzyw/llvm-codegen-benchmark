@@ -48,12 +48,6 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	andl	$63, %esi
-	incq	%rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
 func0000000000000024:                   # @func0000000000000024
 	movl	%esi, %eax
 	decq	%rax
@@ -107,4 +101,10 @@ func0000000000000068:                   # @func0000000000000068
 	addq	$4, %rsi
 	cmpq	%rdi, %rsi
 	seta	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	movl	%esi, %eax
+	addq	$4, %rax
+	cmpq	%rdi, %rax
+	setb	%al
 	retq

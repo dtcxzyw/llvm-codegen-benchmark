@@ -1,5 +1,5 @@
 
-%struct.NvmeFdpEvent.2708956 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
+%struct.NvmeFdpEvent.2708922 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
 
 ; 3 occurrences:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -11,7 +11,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 8700, i64 4656
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr [63 x %struct.NvmeFdpEvent.2708956], ptr %5, i64 0, i64 %0
+  %6 = getelementptr [63 x %struct.NvmeFdpEvent.2708922], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

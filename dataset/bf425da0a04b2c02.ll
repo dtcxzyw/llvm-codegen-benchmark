@@ -14,11 +14,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/metadata_view.c.ll
 ; gromacs/optimized/ter_db.cpp.ll
 ; openjdk/optimized/loopopts.ll
-; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:

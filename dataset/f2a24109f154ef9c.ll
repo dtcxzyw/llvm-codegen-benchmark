@@ -1,6 +1,6 @@
 
-%struct.hb_glyph_info_t.2742027 = type { i32, i32, i32, %union._hb_var_int_t.2742028, %union._hb_var_int_t.2742028 }
-%union._hb_var_int_t.2742028 = type { i32 }
+%struct.hb_glyph_info_t.2741993 = type { i32, i32, i32, %union._hb_var_int_t.2741994, %union._hb_var_int_t.2741994 }
+%union._hb_var_int_t.2741994 = type { i32 }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -14,8 +14,8 @@ entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 2)
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2742027, ptr %0, i64 %1
-  %7 = getelementptr nusw %struct.hb_glyph_info_t.2742027, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw %struct.hb_glyph_info_t.2741993, ptr %0, i64 %1
+  %7 = getelementptr nusw %struct.hb_glyph_info_t.2741993, ptr %6, i64 %5
   ret ptr %7
 }
 

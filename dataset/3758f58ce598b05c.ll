@@ -1,10 +1,10 @@
 
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::MCOperandInfo.3251961" = type { i16, i8, i8, i16 }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCOperandInfo.3251927" = type { i16, i8, i8, i16 }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -192,7 +192,7 @@ entry:
 define ptr @func00000000000000e3(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 10
-  %4 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %3, i64 %1
+  %4 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 2
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
@@ -233,7 +233,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 6
-  %6 = getelementptr %"struct.OT::IntType.139.2736869", ptr %5, i64 %0
+  %6 = getelementptr %"struct.OT::IntType.139.2736835", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -497,9 +497,9 @@ entry:
 define ptr @func00000000000000bf(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -67072
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  %6 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3251961", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3251927", ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,4 +1,20 @@
 
+; 6 occurrences:
+; freetype/optimized/sfnt.c.ll
+; linux/optimized/e1000_main.ll
+; linux/optimized/netdev.ll
+; linux/optimized/page.ll
+; llvm/optimized/Sanitizers.cpp.ll
+; verilator/optimized/V3SplitVar.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %2, 49152
+  %4 = icmp eq i64 %1, 0
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
 ; 174 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
@@ -178,21 +194,6 @@
 define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
-  %4 = icmp eq i64 %1, 0
-  %5 = select i1 %4, i64 %0, i64 %3
-  ret i64 %5
-}
-
-; 5 occurrences:
-; freetype/optimized/sfnt.c.ll
-; linux/optimized/e1000_main.ll
-; linux/optimized/netdev.ll
-; linux/optimized/page.ll
-; llvm/optimized/Sanitizers.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or i64 %2, 17034360127488
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5

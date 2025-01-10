@@ -1,5 +1,5 @@
 
-; 2191 occurrences:
+; 2190 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -2111,7 +2111,6 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/test.c.ll
 ; xgboost/optimized/data.cc.ll
-; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/tree_model.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll

@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076197" = type { %"class.hermes::vm::HermesValue32.3076198" }
-%"class.hermes::vm::HermesValue32.3076198" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076163" = type { %"class.hermes::vm::HermesValue32.3076164" }
+%"class.hermes::vm::HermesValue32.3076164" = type { i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_char_cadence_uart.c.ll
@@ -58,7 +58,7 @@ entry:
   %4 = and i32 %3, 1023
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3076197"], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3076163"], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

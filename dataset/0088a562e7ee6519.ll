@@ -1,12 +1,31 @@
 
-; 86 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bss_mem.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 95 occurrences:
+; assimp/optimized/unzip.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hdf5/optimized/H5FDonion.c.ll
+; hermes/optimized/zip.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/blk-iolatency.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/dm-kcopyd.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/tty_buffer.ll
@@ -36,6 +55,8 @@
 ; llvm/optimized/SymbolStream.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/chat.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -74,6 +95,7 @@
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; mold/optimized/input-sections.cc.SPARC64.cc.ll
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
+; openjdk/optimized/jdmarker.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/backends_tpm_tpm_util.c.ll
@@ -84,6 +106,8 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/dict.ll
+; slurm/optimized/step_mgr.ll
 ; soc-simulator/optimized/verilated.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind
@@ -95,12 +119,10 @@ entry:
   ret i1 %4
 }
 
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umin.i64(i64, i64) #1
-
-; 23 occurrences:
+; 25 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/sis.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -120,6 +142,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; mold/optimized/icf.cc.SH4.cc.ll
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
+; openjdk/optimized/jdmarker.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; Function Attrs: nounwind
@@ -161,6 +184,20 @@ entry:
   ret i1 %4
 }
 
+; 4 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = icmp samesign eq i64 %3, 0
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -174,13 +211,16 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/n_tty.ll
+; linux/optimized/serial_core.ll
 ; llvm/optimized/MachineLICM.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
@@ -216,8 +256,9 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/aio.ll
+; linux/optimized/gup.ll
 ; llvm/optimized/Signals.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i64 %0, i32 %1) #0 {

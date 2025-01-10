@@ -1,6 +1,6 @@
 
-%struct.code.2877196 = type { i8, i8, i16 }
-%struct.code.3550467 = type { i8, i8, i16 }
+%struct.code.2877162 = type { i8, i8, i16 }
+%struct.code.3550433 = type { i8, i8, i16 }
 
 ; 8 occurrences:
 ; abc/optimized/inflate.c.ll
@@ -18,7 +18,7 @@ entry:
   %4 = xor i32 %3, -1
   %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.code.2877196, ptr %0, i64 %6, i32 1
+  %7 = getelementptr nusw nuw %struct.code.2877162, ptr %0, i64 %6, i32 1
   ret ptr %7
 }
 
@@ -31,7 +31,7 @@ entry:
   %4 = xor i32 %3, -1
   %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.code.3550467, ptr %0, i64 %6, i32 1
+  %7 = getelementptr %struct.code.3550433, ptr %0, i64 %6, i32 1
   ret ptr %7
 }
 

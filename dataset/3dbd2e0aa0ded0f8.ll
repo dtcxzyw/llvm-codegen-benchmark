@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; abc/optimized/giaCSat3.c.ll
+; 9 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_levels.c.ll
@@ -19,8 +18,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
 ; icu/optimized/indiancal.ll
@@ -31,7 +31,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add nsw i32 %2, 432
+  %3 = add nsw i32 %2, 416
   %4 = add nsw i32 %3, %0
   ret i32 %4
 }

@@ -1,7 +1,8 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/_hashopenssl.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/_ssl.ll
@@ -9,6 +10,7 @@
 ; cpython/optimized/_testclinic.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/posixmodule.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll

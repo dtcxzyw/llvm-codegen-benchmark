@@ -50,17 +50,11 @@ func0000000000000054:                   # @func0000000000000054
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
-func0000000000000198:                   # @func0000000000000198
-	vpmovd2m	%ymm1, %k1
-	vptestmd	%ymm0, %ymm0, %k0 {%k1}
-	vpmovm2d	%k0, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
-	retq
-.LCPI9_0:
+.LCPI8_0:
 	.long	65535                           # 0xffff
 func0000000000000210:                   # @func0000000000000210
 	vpminud	%ymm1, %ymm0, %ymm0
-	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm0, %k0
+	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

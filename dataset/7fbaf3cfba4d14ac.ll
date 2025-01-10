@@ -1,7 +1,7 @@
 
-%"class.clang::OMPClauseMappableExprCommon::MappableComponent.3142471" = type { %"class.llvm::PointerIntPair.3114.3142472", ptr }
-%"class.llvm::PointerIntPair.3114.3142472" = type { %"struct.llvm::detail::PunnedPointer.3115.3142473" }
-%"struct.llvm::detail::PunnedPointer.3115.3142473" = type { [8 x i8] }
+%"class.clang::OMPClauseMappableExprCommon::MappableComponent.3142437" = type { %"class.llvm::PointerIntPair.3114.3142438", ptr }
+%"class.llvm::PointerIntPair.3114.3142438" = type { %"struct.llvm::detail::PunnedPointer.3115.3142439" }
+%"struct.llvm::detail::PunnedPointer.3115.3142439" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; php/optimized/ir_emit.ll
@@ -25,7 +25,7 @@ entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw nuw %"class.clang::OMPClauseMappableExprCommon::MappableComponent.3142471", ptr %5, i64 %1
+  %6 = getelementptr nusw nuw %"class.clang::OMPClauseMappableExprCommon::MappableComponent.3142437", ptr %5, i64 %1
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2825657 = type { double, double, double }
+%class.aiVector3t.2825623 = type { double, double, double }
 
 ; 103 occurrences:
 ; boost/optimized/algorithm.ll
@@ -120,7 +120,7 @@ entry:
 define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub nsw i64 %2, %1
-  %3 = getelementptr nusw %class.aiVector3t.2825657, ptr %0, i64 %.neg
+  %3 = getelementptr nusw %class.aiVector3t.2825623, ptr %0, i64 %.neg
   %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   ret ptr %4
 }

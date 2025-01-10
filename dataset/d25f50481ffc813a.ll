@@ -45,12 +45,11 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; git/optimized/apply.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/hebrwcal.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

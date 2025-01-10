@@ -251,7 +251,7 @@ entry:
   ret i32 %4
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; assimp/optimized/zip.c.ll
@@ -291,7 +291,6 @@ entry:
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/tcg.c.ll
 ; redis/optimized/acl.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll

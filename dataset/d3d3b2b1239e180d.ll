@@ -1,5 +1,5 @@
 
-%struct.dx_entry.3548008 = type { i32, i32 }
+%struct.dx_entry.3547974 = type { i32, i32 }
 
 ; 9 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
@@ -90,7 +90,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.dx_entry.3548008, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.dx_entry.3547974, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 

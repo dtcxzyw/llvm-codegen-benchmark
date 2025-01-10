@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/intel_sdvo.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; stb/optimized/stb_dxt.c.ll
 ; wireshark/optimized/packet-opus.c.ll
 ; Function Attrs: nounwind
@@ -53,18 +52,17 @@ entry:
   ret i16 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; wireshark/optimized/packet-xra.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001f(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = shl nuw nsw i16 %2, 10
-  %4 = add nuw nsw i16 %0, %3
+  %3 = shl nuw nsw i16 %2, 5
+  %4 = add nuw nsw i16 %3, %0
   ret i16 %4
 }
 

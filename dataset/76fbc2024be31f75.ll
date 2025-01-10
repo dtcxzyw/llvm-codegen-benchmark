@@ -1,6 +1,6 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
-%class.QCPCurveData.3451174 = type { double, double, double }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456" = type { i32, i32, i32 }
+%class.QCPCurveData.3451140 = type { double, double, double }
 
 ; 44 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -53,7 +53,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 12
   %5 = or i64 %4, 1
-  %6 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %5
+  %6 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -24
   ret ptr %7
 }
@@ -66,7 +66,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = udiv exact i64 %3, 24
   %5 = or i64 %4, 1
-  %6 = getelementptr %class.QCPCurveData.3451174, ptr %0, i64 %5
+  %6 = getelementptr %class.QCPCurveData.3451140, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -48
   ret ptr %7
 }

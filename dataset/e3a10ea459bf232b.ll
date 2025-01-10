@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; postgres/optimized/gistbuildbuffers.ll
 ; postgres/optimized/hash_xlog.ll
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtsearch.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:

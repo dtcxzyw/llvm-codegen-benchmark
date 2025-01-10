@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 63 occurrences:
 ; boost/optimized/copy_segment_point.ll
 ; boost/optimized/sort_by_side.ll
 ; boost/optimized/sort_by_side_basic.ll
@@ -12,7 +12,6 @@
 ; cmake/optimized/lzma_decoder.c.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/obmalloc.ll
-; cpython/optimized/pystrtod.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/ds.ll
@@ -72,7 +71,7 @@ entry:
   ret ptr %4
 }
 
-; 295 occurrences:
+; 294 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/alloc_lib.ll
 ; boost/optimized/area.ll
@@ -150,7 +149,6 @@ entry:
 ; clamav/optimized/phishcheck.c.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cmake/optimized/MD5.c.ll
-; cmake/optimized/file.c.ll
 ; cmake/optimized/http_proxy.c.ll
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-http_proxy.ll
@@ -376,7 +374,7 @@ entry:
   ret ptr %4
 }
 
-; 1028 occurrences:
+; 1029 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -445,6 +443,7 @@ entry:
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
 ; cmake/optimized/cmWorkerPool.cxx.ll
 ; cmake/optimized/content_stream.cpp.ll
+; cmake/optimized/file.c.ll
 ; cmake/optimized/io.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/session.cpp.ll

@@ -27,19 +27,6 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
-; ocio/optimized/Lut1DOpData.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw i64 %2, 3
-  %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 96
-  ret ptr %6
-}
-
 ; 6 occurrences:
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
@@ -83,6 +70,18 @@ entry:
   %4 = getelementptr float, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -12
+  ret ptr %6
+}
+
+; 1 occurrences:
+; ocio/optimized/Lut1DOpData.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %2, 12
+  %4 = getelementptr float, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 12
   ret ptr %6
 }
 

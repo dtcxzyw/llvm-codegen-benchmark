@@ -28,6 +28,12 @@ func0000000000000001:                   // @func0000000000000001
 	orr	x0, x8, x0
 	ret
                                         // -- End function
+func000000000000001d:                   // @func000000000000001d
+// %bb.0:                               // %entry
+	add	x8, x1, x2, lsl #52
+	orr	x0, x8, x0
+	ret
+                                        // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #52

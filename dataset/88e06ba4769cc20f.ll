@@ -16,14 +16,13 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = shl nsw i32 %3, 1
+  %4 = shl nsw i32 %3, 2
   %5 = trunc i64 %1 to i32
   %6 = add i32 %0, %5
   %7 = add i32 %6, %4

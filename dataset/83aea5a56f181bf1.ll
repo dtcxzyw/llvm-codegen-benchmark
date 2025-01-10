@@ -1,6 +1,6 @@
 
-%struct._zend_op.2794568 = type { ptr, %union._znode_op.2794577, %union._znode_op.2794577, %union._znode_op.2794577, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2794577 = type { i32 }
+%struct._zend_op.2794534 = type { ptr, %union._znode_op.2794543, %union._znode_op.2794543, %union._znode_op.2794543, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2794543 = type { i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
@@ -19,7 +19,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct._zend_op.2794568, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct._zend_op.2794534, ptr %0, i64 %1
   %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = trunc i64 %4 to i32

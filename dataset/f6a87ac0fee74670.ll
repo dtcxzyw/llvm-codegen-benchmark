@@ -1,6 +1,6 @@
 
-%"class.llvm::MCOperand.3265790" = type { i8, %union.anon.3265791 }
-%union.anon.3265791 = type { i64 }
+%"class.llvm::MCOperand.3265756" = type { i8, %union.anon.3265757 }
+%union.anon.3265757 = type { i64 }
 
 ; 4 occurrences:
 ; linux/optimized/ip_sockglue.ll
@@ -39,7 +39,7 @@ define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"class.llvm::MCOperand.3265790", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MCOperand.3265756", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

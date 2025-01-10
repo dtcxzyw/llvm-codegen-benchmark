@@ -1,5 +1,5 @@
 
-; 403 occurrences:
+; 402 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -357,7 +357,6 @@
 ; ruby/optimized/time.ll
 ; ruby/optimized/transcode.ll
 ; ruby/optimized/util.ll
-; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll

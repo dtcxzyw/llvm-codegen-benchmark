@@ -40,3 +40,10 @@ func0000000000000301:                   # @func0000000000000301
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v10, v12
 	ret
+func0000000000000021:                   # @func0000000000000021
+	li	a0, 3
+	slli	a0, a0, 33
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
+	vmseq.vi	v0, v8, 0
+	ret

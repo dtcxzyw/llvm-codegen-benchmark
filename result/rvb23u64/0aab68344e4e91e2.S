@@ -14,20 +14,6 @@ func000000000000000b:                   # @func000000000000000b
 	sh3add	a1, a2, a1
 	sh3add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	srliw	a3, a2, 31
-	addw	a2, a2, a3
-	srli	a2, a2, 1
-	sh3add	a1, a2, a1
-	sh3add	a0, a0, a1
-	ret
-func000000000000000e:                   # @func000000000000000e
-	srliw	a3, a2, 31
-	addw	a2, a2, a3
-	srli	a2, a2, 1
-	sh3add	a1, a2, a1
-	sh3add	a0, a0, a1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sraiw	a3, a2, 31
 	srliw	a3, a3, 29

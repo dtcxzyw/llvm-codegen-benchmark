@@ -1,18 +1,18 @@
 
-%struct.MapNode.2701095 = type { i16, i8, i8 }
-%struct.iovec.2710123 = type { ptr, i64 }
-%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
-%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
-%"class.llvm::MachineOperand.3149279" = type { i32, %union.anon.152.3149280, ptr, %"union.llvm::MachineOperand::ContentsUnion.3149281" }
-%union.anon.152.3149280 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3149281" = type { %"class.llvm::ArrayRef.153.3149282" }
-%"class.llvm::ArrayRef.153.3149282" = type { ptr, i64 }
-%"class.llvm::MachineOperand.3200600" = type { i32, %union.anon.365.3200601, ptr, %"union.llvm::MachineOperand::ContentsUnion.3200602" }
-%union.anon.365.3200601 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3200602" = type { %"class.llvm::ArrayRef.366.3200603" }
-%"class.llvm::ArrayRef.366.3200603" = type { ptr, i64 }
+%struct.MapNode.2701061 = type { i16, i8, i8 }
+%struct.iovec.2710089 = type { ptr, i64 }
+%"class.hermes::vm::GCHermesValueBase.3085326" = type { %"class.hermes::vm::HermesValue32.3085325" }
+%"class.hermes::vm::HermesValue32.3085325" = type { i32 }
+%"class.llvm::MachineOperand.3149245" = type { i32, %union.anon.152.3149246, ptr, %"union.llvm::MachineOperand::ContentsUnion.3149247" }
+%union.anon.152.3149246 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3149247" = type { %"class.llvm::ArrayRef.153.3149248" }
+%"class.llvm::ArrayRef.153.3149248" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3200566" = type { i32, %union.anon.365.3200567, ptr, %"union.llvm::MachineOperand::ContentsUnion.3200568" }
+%union.anon.365.3200567 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3200568" = type { %"class.llvm::ArrayRef.366.3200569" }
+%"class.llvm::ArrayRef.366.3200569" = type { ptr, i64 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; abc/optimized/deflate.c.ll
 ; boost/optimized/message.ll
 ; clamav/optimized/clamd.c.ll
@@ -64,6 +64,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; quantlib/optimized/bspline.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
 ; redis/optimized/zipmap.ll
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/asn.c.ll
@@ -107,7 +108,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.MapNode.2701095, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2701061, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -118,7 +119,7 @@ define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.iovec.2710123, ptr %0, i64 %4
+  %5 = getelementptr %struct.iovec.2710089, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16368
   ret ptr %6
 }
@@ -205,7 +206,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3085360", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3085326", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -218,7 +219,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw nsw i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3149279", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3149245", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -230,7 +231,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = add nsw i32 %3, 3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200600", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200566", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -243,7 +244,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200600", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3200566", ptr %0, i64 %5
   ret ptr %6
 }
 

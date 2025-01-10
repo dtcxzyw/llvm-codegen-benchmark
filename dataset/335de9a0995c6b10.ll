@@ -1,6 +1,6 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
-%"struct.(anonymous namespace)::ValuePair.3899211" = type { i32, i32 }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819" = type { i64, i64 }
+%"struct.(anonymous namespace)::ValuePair.3899161" = type { i32, i32 }
 
 ; 4 occurrences:
 ; eastl/optimized/TestExtra.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626819", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = add i64 %1, %3
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899211", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899161", ptr %0, i64 %6
   ret ptr %7
 }
 

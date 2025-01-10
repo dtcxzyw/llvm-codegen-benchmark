@@ -14,14 +14,6 @@ func000000000000001b:                   # @func000000000000001b
 	shlq	$47, %rax
 	orq	%rdx, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	shlq	$56, %rdx
-	orq	%rdi, %rdx
-	andl	$1, %esi
-	movl	$12, %eax
-	subq	%rsi, %rax
-	orq	%rdx, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edx, %ecx
 	shlq	$8, %rcx

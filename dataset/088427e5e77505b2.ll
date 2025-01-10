@@ -311,11 +311,10 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/json.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:

@@ -34,7 +34,7 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 24 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/cpio.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -42,10 +42,6 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/tree.ll
@@ -59,7 +55,6 @@ entry:
 ; postgres/optimized/rewriteheap.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; wireshark/optimized/packet-smb.c.ll

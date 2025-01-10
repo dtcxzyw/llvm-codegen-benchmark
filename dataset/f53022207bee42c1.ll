@@ -1,5 +1,5 @@
 
-; 1435 occurrences:
+; 1434 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abseil-cpp/optimized/bind.cc.ll
@@ -173,7 +173,6 @@
 ; glslang/optimized/SymbolTable.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/checkpointdata.cpp.ll

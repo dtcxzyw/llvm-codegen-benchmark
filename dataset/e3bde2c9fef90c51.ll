@@ -1,5 +1,5 @@
 
-%struct.dx_entry.3548008 = type { i32, i32 }
+%struct.dx_entry.3547974 = type { i32, i32 }
 
 ; 9 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -53,7 +53,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 %1, %4
-  %6 = getelementptr %struct.dx_entry.3548008, ptr %0, i64 %5
+  %6 = getelementptr %struct.dx_entry.3547974, ptr %0, i64 %5
   ret ptr %6
 }
 

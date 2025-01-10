@@ -1,9 +1,9 @@
 
-%struct.fast_forward_char_data.2795027 = type { i8, i8, [5 x i8] }
-%struct.lzma_filter_info_s.3871363 = type { i64, ptr, ptr }
+%struct.fast_forward_char_data.2794993 = type { i8, i8, [5 x i8] }
 
-; 6 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; cmake/optimized/filter_common.c.ll
 ; hdf5/optimized/H5Eint.c.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
@@ -31,10 +31,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr nuw [12 x %struct.fast_forward_char_data.2795027], ptr %0, i64 0, i64 %3, i32 2
+  %4 = getelementptr [12 x %struct.fast_forward_char_data.2794993], ptr %0, i64 0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -56,16 +56,6 @@ define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = getelementptr [0 x { { { i64, ptr, {} }, i64 }, i64 }], ptr %0, i64 0, i64 %3, i32 0, i32 1
-  ret ptr %4
-}
-
-; 1 occurrences:
-; cmake/optimized/filter_common.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = getelementptr nuw [5 x %struct.lzma_filter_info_s.3871363], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -23,4 +23,17 @@ entry:
   ret i8 %3
 }
 
+; 3 occurrences:
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
+; nix/optimized/mercurial.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = freeze i64 %0
+  %2 = icmp eq i64 %1, -1
+  %3 = zext i1 %2 to i8
+  ret i8 %3
+}
+
 attributes #0 = { nounwind }

@@ -1,6 +1,6 @@
 
-%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
-%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
+%"class.base::ManualConstructor.3060079" = type { %"class.base::AlignedMemory.3060080" }
+%"class.base::AlignedMemory.3060080" = type { [16 x i8] }
 
 ; 2 occurrences:
 ; git/optimized/apply.ll
@@ -29,7 +29,7 @@ entry:
   %4 = shl i64 %3, 28
   %5 = ashr i64 %4, 32
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060113"], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060079"], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

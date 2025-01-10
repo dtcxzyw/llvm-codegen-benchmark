@@ -140,7 +140,7 @@ entry:
   ret i64 %3
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/benchmark_fstream.ll
 ; boost/optimized/test_filebuf.ll
@@ -170,7 +170,6 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll

@@ -1,10 +1,10 @@
 
-%"class.easylog::record_t.2776466" = type { %"class.std::chrono::time_point.2776467", i32, i32, %"class.std::__cxx11::basic_string.2776354", %"class.std::__cxx11::basic_string.2776354" }
-%"class.std::chrono::time_point.2776467" = type { %"class.std::chrono::duration.2776440" }
-%"class.std::chrono::duration.2776440" = type { i64 }
-%"class.std::__cxx11::basic_string.2776354" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362", i64, %union.anon.76.2776363 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362" = type { ptr }
-%union.anon.76.2776363 = type { i64, [8 x i8] }
+%"class.easylog::record_t.2776432" = type { %"class.std::chrono::time_point.2776433", i32, i32, %"class.std::__cxx11::basic_string.2776320", %"class.std::__cxx11::basic_string.2776320" }
+%"class.std::chrono::time_point.2776433" = type { %"class.std::chrono::duration.2776406" }
+%"class.std::chrono::duration.2776406" = type { i64 }
+%"class.std::__cxx11::basic_string.2776320" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776328", i64, %union.anon.76.2776329 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776328" = type { ptr }
+%union.anon.76.2776329 = type { i64, [8 x i8] }
 
 ; 93 occurrences:
 ; openjdk/optimized/archiveHeapLoader.ll
@@ -165,7 +165,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nuw %"class.easylog::record_t.2776466", ptr %3, i64 %1, i32 4, i32 2
+  %4 = getelementptr nuw %"class.easylog::record_t.2776432", ptr %3, i64 %1, i32 4, i32 2
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

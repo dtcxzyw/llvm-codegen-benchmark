@@ -1,6 +1,5 @@
 
-; 318 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 316 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -317,7 +316,6 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:

@@ -1,12 +1,24 @@
 
-; 9 occurrences:
+; 21 occurrences:
+; clamav/optimized/oabd.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
+; git/optimized/remote-curl.ll
 ; linux/optimized/hidraw.ll
+; linux/optimized/scm.ll
 ; linux/optimized/tcp_output.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; oiio/optimized/hdrinput.cpp.ll
+; openjdk/optimized/compileLog.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; postgres/optimized/backend_status.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; velox/optimized/Filter.cpp.ll
 ; xgboost/optimized/numeric.cc.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-%struct._HufDec.3395209 = type { i32, i32, ptr }
+%struct._HufDec.3395175 = type { i32, i32, ptr }
 
 ; 2 occurrences:
 ; hyperscan/optimized/goughcompile.cpp.ll
@@ -22,7 +22,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %1, %2
   %4 = and i64 %3, 16383
-  %5 = getelementptr nusw nuw %struct._HufDec.3395209, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct._HufDec.3395175, ptr %0, i64 %4
   ret ptr %5
 }
 

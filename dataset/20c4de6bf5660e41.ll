@@ -270,7 +270,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/encode_internal_avx2.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -292,6 +292,7 @@ entry:
 ; mimalloc/optimized/page.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; php/optimized/block_pass.ll
+; php/optimized/dce.ll
 ; php/optimized/zend_dfg.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll

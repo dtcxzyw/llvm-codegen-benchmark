@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 53 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -29,9 +29,6 @@
 ; openssl/optimized/libcrypto-lib-property.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
 ; openssl/optimized/libdefault-lib-test_rng.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; php/optimized/engine_mt19937.ll
 ; pocketpy/optimized/random.cpp.ll
 ; recastnavigation/optimized/DetourNode.cpp.ll

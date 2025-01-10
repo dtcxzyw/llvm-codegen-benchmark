@@ -89,44 +89,6 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
-; darktable/optimized/RawImage.cpp.ll
-; darktable/optimized/amaze.cc.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/lmmin.cpp.ll
-; libpng/optimized/pngrtran.c.ll
-; linux/optimized/consolemap.ll
-; linux/optimized/intel_guc_ads.ll
-; linux/optimized/tcp_input.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
-; lodepng/optimized/lodepng_util.cpp.ll
-; openjdk/optimized/pngrtran.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
-; openusd/optimized/testHioImage.cpp.ll
-; php/optimized/ir.ll
-; php/optimized/zend_hash.ll
-; php/optimized/zend_inheritance.ll
-; php/optimized/zend_persist.ll
-; qemu/optimized/block_vmdk.c.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_connected_components.c.ll
-; stb/optimized/stb_image_write.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-ntlmssp.c.ll
-; z3/optimized/mam.cpp.ll
-; z3/optimized/q_mam.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = shl nuw i64 %2, 1
-  ret i64 %3
-}
-
 ; 3 occurrences:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
@@ -140,10 +102,9 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/idas_interface.cpp.ll
-; casadi/optimized/qrqp.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/DeclObjC.cpp.ll
@@ -182,6 +143,43 @@ define i64 @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 12
   %3 = shl i64 %0, 22
+  %4 = add nuw nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 27 occurrences:
+; darktable/optimized/RawImage.cpp.ll
+; darktable/optimized/amaze.cc.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/lmmin.cpp.ll
+; libpng/optimized/pngrtran.c.ll
+; linux/optimized/consolemap.ll
+; linux/optimized/intel_guc_ads.ll
+; linux/optimized/tcp_input.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; openjdk/optimized/pngrtran.ll
+; openusd/optimized/testHioImage.cpp.ll
+; php/optimized/ir.ll
+; php/optimized/zend_hash.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_persist.ll
+; qemu/optimized/block_vmdk.c.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_connected_components.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/packet-ntlmssp.c.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 9
+  %3 = shl nuw nsw i64 %0, 2
   %4 = add nuw nsw i64 %3, %2
   ret i64 %4
 }
@@ -355,6 +353,80 @@ define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = shl nuw nsw i64 %0, 3
+  %4 = add i64 %3, %2
+  ret i64 %4
+}
+
+; 64 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 1
+  %3 = shl nsw i64 %0, 2
   %4 = add i64 %3, %2
   ret i64 %4
 }

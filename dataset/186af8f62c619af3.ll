@@ -1,52 +1,65 @@
 
-%"struct.rocksdb::DBImpl::FlushRequest.2621404" = type { i32, %"class.std::unordered_map.474.2621405" }
-%"class.std::unordered_map.474.2621405" = type { %"class.std::_Hashtable.475.2621406" }
-%"class.std::_Hashtable.475.2621406" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2621155", i64, %"struct.std::__detail::_Prime_rehash_policy.2621156", ptr }
-%"struct.std::__detail::_Hash_node_base.2621155" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2621156" = type { float, i64 }
-%"struct.jsonnet::internal::(anonymous namespace)::Frame.2775395" = type { i32, ptr, %"struct.jsonnet::internal::LocationRange.2775332", i8, %"struct.jsonnet::internal::(anonymous namespace)::Value.2775297", %"struct.jsonnet::internal::(anonymous namespace)::Value.2775297", %"class.__gnu_cxx::__normal_iterator.2775396", %"class.std::map.131.2775362", i32, %"class.std::map.123.2775353", %"class.std::vector.136.2775377", %"class.std::__cxx11::basic_string.58.2775329", i8, %"class.std::__cxx11::basic_string.2775292", ptr, ptr, i32, %"class.std::map.123.2775353" }
-%"struct.jsonnet::internal::LocationRange.2775332" = type { %"class.std::__cxx11::basic_string.2775292", %"struct.jsonnet::internal::Location.2775333", %"struct.jsonnet::internal::Location.2775333" }
-%"struct.jsonnet::internal::Location.2775333" = type { i64, i64 }
-%"struct.jsonnet::internal::(anonymous namespace)::Value.2775297" = type { i32, %union.anon.19.2775309 }
-%union.anon.19.2775309 = type { ptr }
-%"class.__gnu_cxx::__normal_iterator.2775396" = type { ptr }
-%"class.std::map.131.2775362" = type { %"class.std::_Rb_tree.132.2775363" }
-%"class.std::_Rb_tree.132.2775363" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775364" }
-%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775364" = type { %"struct.std::_Rb_tree_key_compare.128.2775356", %"struct.std::_Rb_tree_header.2775275" }
-%"struct.std::_Rb_tree_key_compare.128.2775356" = type { %"struct.std::less.129.2775357" }
-%"struct.std::less.129.2775357" = type { i8 }
-%"struct.std::_Rb_tree_header.2775275" = type { %"struct.std::_Rb_tree_node_base.2775277", i64 }
-%"struct.std::_Rb_tree_node_base.2775277" = type { i32, ptr, ptr, ptr }
-%"class.std::vector.136.2775377" = type { %"struct.std::_Vector_base.137.2775378" }
-%"struct.std::_Vector_base.137.2775378" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2775379" }
-%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2775379" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2775380" }
-%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2775380" = type { ptr, ptr, ptr }
-%"class.std::__cxx11::basic_string.58.2775329" = type { %"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2775330", i64, %union.anon.62.2775331 }
-%"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2775330" = type { ptr }
-%union.anon.62.2775331 = type { i64, [8 x i8] }
-%"class.std::__cxx11::basic_string.2775292" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2775293", i64, %union.anon.2775294 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2775293" = type { ptr }
-%union.anon.2775294 = type { i64, [8 x i8] }
-%"class.std::map.123.2775353" = type { %"class.std::_Rb_tree.124.2775354" }
-%"class.std::_Rb_tree.124.2775354" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775355" }
-%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775355" = type { %"struct.std::_Rb_tree_key_compare.128.2775356", %"struct.std::_Rb_tree_header.2775275" }
-%"class.clang::ImplicitConversionSequence.3336748" = type { i32, [4 x i8], %"class.clang::QualType.3336720", %union.anon.415.3336749 }
-%"class.clang::QualType.3336720" = type { %"class.llvm::PointerIntPair.3336729" }
-%"class.llvm::PointerIntPair.3336729" = type { %"struct.llvm::detail::PunnedPointer.3336730" }
-%"struct.llvm::detail::PunnedPointer.3336730" = type { [8 x i8] }
-%union.anon.415.3336749 = type { %"struct.clang::UserDefinedConversionSequence.3336750" }
-%"struct.clang::UserDefinedConversionSequence.3336750" = type { %"class.clang::StandardConversionSequence.3336747", i8, %"class.clang::StandardConversionSequence.3336747", ptr, %"class.clang::DeclAccessPair.3336735" }
-%"class.clang::StandardConversionSequence.3336747" = type { i64, ptr, [3 x ptr], ptr, %"class.clang::DeclAccessPair.3336735" }
-%"class.clang::DeclAccessPair.3336735" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3336736" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3336736" = type { %struct.anon.3336737 }
-%struct.anon.3336737 = type { [8 x i8] }
+%"struct.rocksdb::DBImpl::FlushRequest.2621371" = type { i32, %"class.std::unordered_map.474.2621372" }
+%"class.std::unordered_map.474.2621372" = type { %"class.std::_Hashtable.475.2621373" }
+%"class.std::_Hashtable.475.2621373" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2621122", i64, %"struct.std::__detail::_Prime_rehash_policy.2621123", ptr }
+%"struct.std::__detail::_Hash_node_base.2621122" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2621123" = type { float, i64 }
+%"struct.jsonnet::internal::(anonymous namespace)::Frame.2775361" = type { i32, ptr, %"struct.jsonnet::internal::LocationRange.2775298", i8, %"struct.jsonnet::internal::(anonymous namespace)::Value.2775263", %"struct.jsonnet::internal::(anonymous namespace)::Value.2775263", %"class.__gnu_cxx::__normal_iterator.2775362", %"class.std::map.131.2775328", i32, %"class.std::map.123.2775319", %"class.std::vector.136.2775343", %"class.std::__cxx11::basic_string.58.2775295", i8, %"class.std::__cxx11::basic_string.2775258", ptr, ptr, i32, %"class.std::map.123.2775319" }
+%"struct.jsonnet::internal::LocationRange.2775298" = type { %"class.std::__cxx11::basic_string.2775258", %"struct.jsonnet::internal::Location.2775299", %"struct.jsonnet::internal::Location.2775299" }
+%"struct.jsonnet::internal::Location.2775299" = type { i64, i64 }
+%"struct.jsonnet::internal::(anonymous namespace)::Value.2775263" = type { i32, %union.anon.19.2775275 }
+%union.anon.19.2775275 = type { ptr }
+%"class.__gnu_cxx::__normal_iterator.2775362" = type { ptr }
+%"class.std::map.131.2775328" = type { %"class.std::_Rb_tree.132.2775329" }
+%"class.std::_Rb_tree.132.2775329" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775330" }
+%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapSimpleObject::Field>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775330" = type { %"struct.std::_Rb_tree_key_compare.128.2775322", %"struct.std::_Rb_tree_header.2775241" }
+%"struct.std::_Rb_tree_key_compare.128.2775322" = type { %"struct.std::less.129.2775323" }
+%"struct.std::less.129.2775323" = type { i8 }
+%"struct.std::_Rb_tree_header.2775241" = type { %"struct.std::_Rb_tree_node_base.2775243", i64 }
+%"struct.std::_Rb_tree_node_base.2775243" = type { i32, ptr, ptr, ptr }
+%"class.std::vector.136.2775343" = type { %"struct.std::_Vector_base.137.2775344" }
+%"struct.std::_Vector_base.137.2775344" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2775345" }
+%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl.2775345" = type { %"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2775346" }
+%"struct.std::_Vector_base<jsonnet::internal::(anonymous namespace)::HeapThunk *, std::allocator<jsonnet::internal::(anonymous namespace)::HeapThunk *>>::_Vector_impl_data.2775346" = type { ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.58.2775295" = type { %"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2775296", i64, %union.anon.62.2775297 }
+%"struct.std::__cxx11::basic_string<char32_t>::_Alloc_hider.2775296" = type { ptr }
+%union.anon.62.2775297 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.2775258" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2775259", i64, %union.anon.2775260 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2775259" = type { ptr }
+%union.anon.2775260 = type { i64, [8 x i8] }
+%"class.std::map.123.2775319" = type { %"class.std::_Rb_tree.124.2775320" }
+%"class.std::_Rb_tree.124.2775320" = type { %"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775321" }
+%"struct.std::_Rb_tree<const jsonnet::internal::Identifier *, std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>, std::_Select1st<std::pair<const jsonnet::internal::Identifier *const, jsonnet::internal::(anonymous namespace)::HeapThunk *>>, std::less<const jsonnet::internal::Identifier *>>::_Rb_tree_impl.2775321" = type { %"struct.std::_Rb_tree_key_compare.128.2775322", %"struct.std::_Rb_tree_header.2775241" }
+%"class.clang::ImplicitConversionSequence.3336714" = type { i32, [4 x i8], %"class.clang::QualType.3336686", %union.anon.415.3336715 }
+%"class.clang::QualType.3336686" = type { %"class.llvm::PointerIntPair.3336695" }
+%"class.llvm::PointerIntPair.3336695" = type { %"struct.llvm::detail::PunnedPointer.3336696" }
+%"struct.llvm::detail::PunnedPointer.3336696" = type { [8 x i8] }
+%union.anon.415.3336715 = type { %"struct.clang::UserDefinedConversionSequence.3336716" }
+%"struct.clang::UserDefinedConversionSequence.3336716" = type { %"class.clang::StandardConversionSequence.3336713", i8, %"class.clang::StandardConversionSequence.3336713", ptr, %"class.clang::DeclAccessPair.3336701" }
+%"class.clang::StandardConversionSequence.3336713" = type { i64, ptr, [3 x ptr], ptr, %"class.clang::DeclAccessPair.3336701" }
+%"class.clang::DeclAccessPair.3336701" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3336702" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3336702" = type { %struct.anon.3336703 }
+%struct.anon.3336703 = type { [8 x i8] }
+
+; 4 occurrences:
+; postgres/optimized/gram.ll
+; postgres/optimized/pl_gram.ll
+; postgres/optimized/preproc.ll
+; ruby/optimized/parse.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000208(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i16, ptr %1, i64 %2
+  %4 = icmp ugt ptr %0, %3
+  ret i1 %4
+}
 
 ; 1 occurrences:
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::DBImpl::FlushRequest.2621404", ptr %1, i64 %2
+  %3 = getelementptr %"struct.rocksdb::DBImpl::FlushRequest.2621371", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -57,7 +70,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.jsonnet::internal::(anonymous namespace)::Frame.2775395", ptr %1, i64 %2
+  %3 = getelementptr %"struct.jsonnet::internal::(anonymous namespace)::Frame.2775361", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -40
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -110,7 +123,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.clang::ImplicitConversionSequence.3336748", ptr %1, i64 %2
+  %3 = getelementptr %"class.clang::ImplicitConversionSequence.3336714", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 200
   %5 = icmp eq ptr %0, %4
   ret i1 %5
@@ -146,6 +159,21 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 -4
   %5 = icmp eq ptr %0, %4
   ret i1 %5
+}
+
+; 6 occurrences:
+; postgres/optimized/bootparse.ll
+; postgres/optimized/exprparse.ll
+; postgres/optimized/jsonpath_gram.ll
+; postgres/optimized/repl_gram.ll
+; postgres/optimized/specparse.ll
+; postgres/optimized/syncrep_gram.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = icmp ugt ptr %0, %3
+  ret i1 %4
 }
 
 ; 1 occurrences:

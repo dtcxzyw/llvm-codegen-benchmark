@@ -34,9 +34,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 86 occurrences:
+; 82 occurrences:
 ; abc/optimized/acbFunc.c.ll
-; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -45,13 +44,10 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/extraBddMisc.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaSplit.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/plaSimple.c.ll
-; abc/optimized/sbdCut.c.ll
 ; ceres/optimized/program.cc.ll
 ; clamav/optimized/recvol.cpp.ll
 ; cmake/optimized/cmMakefile.cxx.ll

@@ -1,52 +1,52 @@
 
-%"class.rocksdb::clock_cache::ClockCacheShard.2630088" = type <{ %"class.rocksdb::CacheShardBase.2630089", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2630090", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2.2630068", [52 x i8] }>
-%"class.rocksdb::CacheShardBase.2630089" = type { i32 }
-%"class.rocksdb::clock_cache::FixedHyperClockTable.2630090" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2630091", i32, i64, i64, %"class.std::unique_ptr.2630092" }
-%"class.rocksdb::clock_cache::BaseClockTable.base.2630091" = type { %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", [40 x i8], %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", [40 x i8], i32, ptr, ptr, ptr }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.std::unique_ptr.2630092" = type { %"struct.std::__uniq_ptr_data.2630093" }
-%"struct.std::__uniq_ptr_data.2630093" = type { %"class.std::__uniq_ptr_impl.2630094" }
-%"class.std::__uniq_ptr_impl.2630094" = type { %"class.std::tuple.2630095" }
-%"class.std::tuple.2630095" = type { %"struct.std::_Tuple_impl.2630096" }
-%"struct.std::_Tuple_impl.2630096" = type { %"struct.std::_Head_base.1.2630097" }
-%"struct.std::_Head_base.1.2630097" = type { ptr }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"class.rocksdb::RelaxedAtomic.2.2630068" = type { %"struct.std::atomic.3.2630073" }
-%"struct.std::atomic.3.2630073" = type { %"struct.std::__atomic_base.4.2630074" }
-%"struct.std::__atomic_base.4.2630074" = type { i32 }
-%struct.io_uring_cqe.2706985 = type { i64, i32, i32 }
-%struct.code.2876641 = type { i8, i8, i16 }
-%"struct.llvm::detail::DenseMapPair.3160798" = type { %"struct.std::pair.1657.3160799" }
-%"struct.std::pair.1657.3160799" = type { %"class.(anonymous namespace)::CatchHandlerType.3160800", ptr }
-%"class.(anonymous namespace)::CatchHandlerType.3160800" = type { %"class.clang::QualType.3160553", i8, [7 x i8] }
-%"class.clang::QualType.3160553" = type { %"class.llvm::PointerIntPair.3160554" }
-%"class.llvm::PointerIntPair.3160554" = type { %"struct.llvm::detail::PunnedPointer.3160555" }
-%"struct.llvm::detail::PunnedPointer.3160555" = type { [8 x i8] }
-%"struct.llvm::detail::DenseMapPair.3182479" = type { %"struct.std::pair.base.3182480", [4 x i8] }
-%"struct.std::pair.base.3182480" = type <{ %"class.llvm::ValueMapCallbackVH.3182481", %"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182482" }>
-%"class.llvm::ValueMapCallbackVH.3182481" = type { %"class.llvm::CallbackVH.3182483", ptr }
-%"class.llvm::CallbackVH.3182483" = type { ptr, %"class.llvm::ValueHandleBase.3182484" }
-%"class.llvm::ValueHandleBase.3182484" = type { %"class.llvm::PointerIntPair.3182485", ptr, ptr }
-%"class.llvm::PointerIntPair.3182485" = type { %"struct.llvm::detail::PunnedPointer.3182486" }
-%"struct.llvm::detail::PunnedPointer.3182486" = type { [8 x i8] }
-%"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182482" = type <{ i32, i32, i8, [3 x i8] }>
-%struct.netlink_table.3533751 = type { %struct.rhashtable.3533752, %struct.hlist_head.3533695, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, i32 }
-%struct.rhashtable.3533752 = type { ptr, i32, i32, %struct.rhashtable_params.3533745, i8, %struct.work_struct.3533684, %struct.mutex.3533723, %struct.spinlock.3533675, %struct.atomic_t.3533656 }
-%struct.rhashtable_params.3533745 = type { i16, i16, i16, i16, i32, i16, i8, ptr, ptr, ptr }
-%struct.work_struct.3533684 = type { %struct.atomic64_t.3533688, %struct.list_head.3533662, ptr }
-%struct.atomic64_t.3533688 = type { i64 }
-%struct.list_head.3533662 = type { ptr, ptr }
-%struct.mutex.3533723 = type { %struct.atomic64_t.3533688, %struct.raw_spinlock.3533677, %struct.optimistic_spin_queue.3533690, %struct.list_head.3533662 }
-%struct.raw_spinlock.3533677 = type { %struct.qspinlock.3533672 }
-%struct.qspinlock.3533672 = type { %union.anon.6.3533673 }
-%union.anon.6.3533673 = type { %struct.atomic_t.3533656 }
-%struct.optimistic_spin_queue.3533690 = type { %struct.atomic_t.3533656 }
-%struct.spinlock.3533675 = type { %union.anon.34.3533676 }
-%union.anon.34.3533676 = type { %struct.raw_spinlock.3533677 }
-%struct.atomic_t.3533656 = type { i32 }
-%struct.hlist_head.3533695 = type { ptr }
+%"class.rocksdb::clock_cache::ClockCacheShard.2630055" = type <{ %"class.rocksdb::CacheShardBase.2630056", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2630057", %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2.2630035", [52 x i8] }>
+%"class.rocksdb::CacheShardBase.2630056" = type { i32 }
+%"class.rocksdb::clock_cache::FixedHyperClockTable.2630057" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2630058", i32, i64, i64, %"class.std::unique_ptr.2630059" }
+%"class.rocksdb::clock_cache::BaseClockTable.base.2630058" = type { %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2630037", [40 x i8], %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036", [40 x i8], i32, ptr, ptr, ptr }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.std::unique_ptr.2630059" = type { %"struct.std::__uniq_ptr_data.2630060" }
+%"struct.std::__uniq_ptr_data.2630060" = type { %"class.std::__uniq_ptr_impl.2630061" }
+%"class.std::__uniq_ptr_impl.2630061" = type { %"class.std::tuple.2630062" }
+%"class.std::tuple.2630062" = type { %"struct.std::_Tuple_impl.2630063" }
+%"struct.std::_Tuple_impl.2630063" = type { %"struct.std::_Head_base.1.2630064" }
+%"struct.std::_Head_base.1.2630064" = type { ptr }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"class.rocksdb::RelaxedAtomic.2.2630035" = type { %"struct.std::atomic.3.2630040" }
+%"struct.std::atomic.3.2630040" = type { %"struct.std::__atomic_base.4.2630041" }
+%"struct.std::__atomic_base.4.2630041" = type { i32 }
+%struct.io_uring_cqe.2706951 = type { i64, i32, i32 }
+%struct.code.2876607 = type { i8, i8, i16 }
+%"struct.llvm::detail::DenseMapPair.3160764" = type { %"struct.std::pair.1657.3160765" }
+%"struct.std::pair.1657.3160765" = type { %"class.(anonymous namespace)::CatchHandlerType.3160766", ptr }
+%"class.(anonymous namespace)::CatchHandlerType.3160766" = type { %"class.clang::QualType.3160519", i8, [7 x i8] }
+%"class.clang::QualType.3160519" = type { %"class.llvm::PointerIntPair.3160520" }
+%"class.llvm::PointerIntPair.3160520" = type { %"struct.llvm::detail::PunnedPointer.3160521" }
+%"struct.llvm::detail::PunnedPointer.3160521" = type { [8 x i8] }
+%"struct.llvm::detail::DenseMapPair.3182445" = type { %"struct.std::pair.base.3182446", [4 x i8] }
+%"struct.std::pair.base.3182446" = type <{ %"class.llvm::ValueMapCallbackVH.3182447", %"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182448" }>
+%"class.llvm::ValueMapCallbackVH.3182447" = type { %"class.llvm::CallbackVH.3182449", ptr }
+%"class.llvm::CallbackVH.3182449" = type { ptr, %"class.llvm::ValueHandleBase.3182450" }
+%"class.llvm::ValueHandleBase.3182450" = type { %"class.llvm::PointerIntPair.3182451", ptr, ptr }
+%"class.llvm::PointerIntPair.3182451" = type { %"struct.llvm::detail::PunnedPointer.3182452" }
+%"struct.llvm::detail::PunnedPointer.3182452" = type { [8 x i8] }
+%"struct.(anonymous namespace)::(anonymous namespace)::ShapeInfo.3182448" = type <{ i32, i32, i8, [3 x i8] }>
+%struct.netlink_table.3533717 = type { %struct.rhashtable.3533718, %struct.hlist_head.3533661, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, i32 }
+%struct.rhashtable.3533718 = type { ptr, i32, i32, %struct.rhashtable_params.3533711, i8, %struct.work_struct.3533650, %struct.mutex.3533689, %struct.spinlock.3533641, %struct.atomic_t.3533622 }
+%struct.rhashtable_params.3533711 = type { i16, i16, i16, i16, i32, i16, i8, ptr, ptr, ptr }
+%struct.work_struct.3533650 = type { %struct.atomic64_t.3533654, %struct.list_head.3533628, ptr }
+%struct.atomic64_t.3533654 = type { i64 }
+%struct.list_head.3533628 = type { ptr, ptr }
+%struct.mutex.3533689 = type { %struct.atomic64_t.3533654, %struct.raw_spinlock.3533643, %struct.optimistic_spin_queue.3533656, %struct.list_head.3533628 }
+%struct.raw_spinlock.3533643 = type { %struct.qspinlock.3533638 }
+%struct.qspinlock.3533638 = type { %union.anon.6.3533639 }
+%union.anon.6.3533639 = type { %struct.atomic_t.3533622 }
+%struct.optimistic_spin_queue.3533656 = type { %struct.atomic_t.3533622 }
+%struct.spinlock.3533641 = type { %union.anon.34.3533642 }
+%union.anon.34.3533642 = type { %struct.raw_spinlock.3533643 }
+%struct.atomic_t.3533622 = type { i32 }
+%struct.hlist_head.3533661 = type { ptr }
 
 ; 373 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -427,7 +427,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %"class.rocksdb::clock_cache::ClockCacheShard.2630088", ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %"class.rocksdb::clock_cache::ClockCacheShard.2630055", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -457,7 +457,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.io_uring_cqe.2706985, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.io_uring_cqe.2706951, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -613,7 +613,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %struct.code.2876641, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.code.2876607, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -629,7 +629,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"struct.llvm::detail::DenseMapPair.3160798", ptr %0, i64 %4, i32 0, i32 0, i32 1
+  %5 = getelementptr %"struct.llvm::detail::DenseMapPair.3160764", ptr %0, i64 %4, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -640,7 +640,7 @@ define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.llvm::detail::DenseMapPair.3182479", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 1, i32 2
+  %5 = getelementptr %"struct.llvm::detail::DenseMapPair.3182445", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 1, i32 2
   ret ptr %5
 }
 
@@ -655,7 +655,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.netlink_table.3533751, ptr %0, i64 %4, i32 10
+  %5 = getelementptr %struct.netlink_table.3533717, ptr %0, i64 %4, i32 10
   ret ptr %5
 }
 

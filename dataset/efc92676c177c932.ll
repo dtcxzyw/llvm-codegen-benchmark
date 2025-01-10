@@ -331,7 +331,7 @@ entry:
   ret i1 %4
 }
 
-; 210 occurrences:
+; 211 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; arrow/optimized/encode_internal.cc.ll
@@ -391,6 +391,7 @@ entry:
 ; git/optimized/replay.ll
 ; git/optimized/rev-parse.ll
 ; git/optimized/submodule--helper.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/gvmap.c.ll
 ; gromacs/optimized/index.cpp.ll
 ; grpc/optimized/error_utils.cc.ll
@@ -676,7 +677,7 @@ entry:
   ret i1 %4
 }
 
-; 149 occurrences:
+; 147 occurrences:
 ; abc/optimized/pdrCore.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/utilIsop.c.ll
@@ -776,10 +777,8 @@ entry:
 ; openmpi/optimized/pmix_mca_base_var.ll
 ; openmpi/optimized/tm_solution.ll
 ; openmpi/optimized/tm_thread_pool.ll
-; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-lib-sparse_array.ll
-; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-sparse_array.ll
 ; openssl/optimized/openssl-bin-dgst.ll

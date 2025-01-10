@@ -64,15 +64,17 @@ entry:
   ret ptr %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
+; jq/optimized/regexec.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
+; oniguruma/optimized/regexec.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; openmpi/optimized/ompi_datatype_args.ll
@@ -90,19 +92,6 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 2 occurrences:
-; jq/optimized/regexec.ll
-; oniguruma/optimized/regexec.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = shl nsw i64 %2, 3
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 5120
   ret ptr %5
 }
 

@@ -426,34 +426,6 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
-; boost/optimized/numeric.ll
-; bullet3/optimized/btMiniSDF.ll
-; bullet3/optimized/btMultiBody.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; libwebp/optimized/alpha_processing_sse2.c.ll
-; linux/optimized/recovery.ll
-; minetest/optimized/treegen.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; ncnn/optimized/layernorm_x86_avx.cpp.ll
-; ncnn/optimized/layernorm_x86_avx512.cpp.ll
-; ncnn/optimized/layernorm_x86_fma.cpp.ll
-; openjdk/optimized/c1_RangeCheckElimination.ll
-; openjdk/optimized/loopTransform.ll
-; proxygen/optimized/Window.cpp.ll
-; raylib/optimized/raudio.c.ll
-; velox/optimized/FirstLastValue.cpp.ll
-; velox/optimized/IsNull.cpp.ll
-; velox/optimized/Not.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or disjoint i32 %1, -6
-  %3 = icmp sgt i32 %2, %0
-  ret i1 %3
-}
-
 ; 12 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; icu/optimized/uset.ll
@@ -655,6 +627,33 @@ define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = icmp ult i32 %2, %0
+  ret i1 %3
+}
+
+; 18 occurrences:
+; boost/optimized/numeric.ll
+; bullet3/optimized/btMiniSDF.ll
+; bullet3/optimized/btMultiBody.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; libwebp/optimized/alpha_processing_sse2.c.ll
+; linux/optimized/recovery.ll
+; miniaudio/optimized/unity.c.ll
+; ncnn/optimized/layernorm_x86_avx.cpp.ll
+; ncnn/optimized/layernorm_x86_avx512.cpp.ll
+; ncnn/optimized/layernorm_x86_fma.cpp.ll
+; openjdk/optimized/c1_RangeCheckElimination.ll
+; openjdk/optimized/loopTransform.ll
+; proxygen/optimized/Window.cpp.ll
+; raylib/optimized/raudio.c.ll
+; velox/optimized/FirstLastValue.cpp.ll
+; velox/optimized/IsNull.cpp.ll
+; velox/optimized/Not.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, -2147483648
+  %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 

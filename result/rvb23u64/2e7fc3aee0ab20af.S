@@ -113,6 +113,13 @@ func0000000000000586:                   # @func0000000000000586
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
+func0000000000000484:                   # @func0000000000000484
+	andi	a0, a0, 255
+	addiw	a1, a1, -58
+	sltiu	a1, a1, -10
+	sltiu	a0, a0, 230
+	and	a0, a0, a1
+	ret
 func000000000000018c:                   # @func000000000000018c
 	andi	a0, a0, 255
 	sext.w	a1, a1

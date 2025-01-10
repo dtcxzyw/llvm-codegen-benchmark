@@ -1,5 +1,5 @@
 
-; 472 occurrences:
+; 464 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -112,24 +112,18 @@
 ; icu/optimized/appendable.ll
 ; icu/optimized/brkeng.ll
 ; icu/optimized/collationbuilder.ll
-; icu/optimized/collationdatabuilder.ll
-; icu/optimized/collationruleparser.ll
 ; icu/optimized/datefmt.ll
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/filterednormalizer2.ll
-; icu/optimized/nfrule.ll
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/number_capi.ll
 ; icu/optimized/plurrule.ll
 ; icu/optimized/quant.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_rule.ll
-; icu/optimized/reslist.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/uniset.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/uprops.ll
 ; icu/optimized/uresbund.ll
 ; icu/optimized/usearch.ll
@@ -186,7 +180,6 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; lua/optimized/lparser.ll
 ; luau/optimized/Compiler.test.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
@@ -203,7 +196,6 @@
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/object_properties.cpp.ll
 ; minetest/optimized/particles.cpp.ll
-; minetest/optimized/reflowscan.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
 ; mini-lsm-rs/optimized/4c6shhrwpfde8fun.ll
@@ -480,7 +472,7 @@ entry:
   ret i8 %2
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -508,7 +500,6 @@ entry:
 ; llvm/optimized/SemaBoundsSafety.cpp.ll
 ; llvm/optimized/SemaOpenACC.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; nix/optimized/remote-store.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
@@ -544,7 +535,7 @@ entry:
   ret i8 %2
 }
 
-; 798 occurrences:
+; 797 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -670,7 +661,6 @@ entry:
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hermes/optimized/gmock-all.cc.ll
 ; hyperscan/optimized/ng_util.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/basictz.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/csrsbcs.ll
@@ -1460,12 +1450,11 @@ entry:
   ret i8 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/ucnv_u8.ll
-; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll

@@ -1,16 +1,16 @@
 
-%"struct.Stockfish::Search::RootMove.2878603" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2878597" }
-%"class.std::vector.2878597" = type { %"struct.std::_Vector_base.2878598" }
-%"struct.std::_Vector_base.2878598" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" = type { ptr, ptr, ptr }
-%"struct.llvm::opt::OptTable::Info.3149860" = type { %"class.llvm::ArrayRef.0.3149861", %"class.llvm::StringLiteral.3149862", ptr, %"struct.std::array.3149863", ptr, i32, i8, i8, i32, i32, i16, i16, ptr, ptr }
-%"class.llvm::ArrayRef.0.3149861" = type { ptr, i64 }
-%"class.llvm::StringLiteral.3149862" = type { %"class.llvm::StringRef.3149864" }
-%"class.llvm::StringRef.3149864" = type { ptr, i64 }
-%"struct.std::array.3149863" = type { [1 x %"struct.std::pair.3149865"] }
-%"struct.std::pair.3149865" = type { %"struct.std::array.1.3149866", ptr }
-%"struct.std::array.1.3149866" = type { [2 x i32] }
+%"struct.Stockfish::Search::RootMove.2878569" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2878563" }
+%"class.std::vector.2878563" = type { %"struct.std::_Vector_base.2878564" }
+%"struct.std::_Vector_base.2878564" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878565" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878565" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878566" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878566" = type { ptr, ptr, ptr }
+%"struct.llvm::opt::OptTable::Info.3149826" = type { %"class.llvm::ArrayRef.0.3149827", %"class.llvm::StringLiteral.3149828", ptr, %"struct.std::array.3149829", ptr, i32, i8, i8, i32, i32, i16, i16, ptr, ptr }
+%"class.llvm::ArrayRef.0.3149827" = type { ptr, i64 }
+%"class.llvm::StringLiteral.3149828" = type { %"class.llvm::StringRef.3149830" }
+%"class.llvm::StringRef.3149830" = type { ptr, i64 }
+%"struct.std::array.3149829" = type { [1 x %"struct.std::pair.3149831"] }
+%"struct.std::pair.3149831" = type { %"struct.std::array.1.3149832", ptr }
+%"struct.std::array.1.3149832" = type { [2 x i32] }
 
 ; 12 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -76,7 +76,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2878603", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2878569", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4
@@ -91,7 +91,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.llvm::opt::OptTable::Info.3149860", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.llvm::opt::OptTable::Info.3149826", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %5, %4

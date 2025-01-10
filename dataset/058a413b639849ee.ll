@@ -125,7 +125,7 @@ entry:
   ret i1 %5
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/iterative_refiner.cc.ll
 ; ceres/optimized/line_search_minimizer.cc.ll
@@ -148,6 +148,7 @@ entry:
 ; ockam-rs/optimized/2odlvw84qikntvno.ll
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
 ; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; php/optimized/pack.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ripgrep-rs/optimized/1fbennvriruc2bmt.ll

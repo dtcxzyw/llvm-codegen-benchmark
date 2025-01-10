@@ -1,12 +1,10 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; ruby/optimized/rational.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {

@@ -3,6 +3,11 @@ func00000000000001c0:                   # @func00000000000001c0
 	addq	%rdi, %rax
 	leaq	4(%rax,%rsi,2), %rax
 	retq
+func00000000000001f0:                   # @func00000000000001f0
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	leaq	2176(%rax,%rsi,4), %rax
+	retq
 func00000000000000f0:                   # @func00000000000000f0
 	movslq	%edx, %rax
 	addq	%rdi, %rax

@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::NameType.2637081" = type <{ %"class.std::basic_string_view.2637082", i32, i8, [3 x i8] }>
-%"class.std::basic_string_view.2637082" = type { i64, ptr }
-%class.aiVector3t.2828902 = type { double, double, double }
+%"struct.mold::elf::NameType.2637048" = type <{ %"class.std::basic_string_view.2637049", i32, i8, [3 x i8] }>
+%"class.std::basic_string_view.2637049" = type { i64, ptr }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 92 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -99,7 +99,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.mold::elf::NameType.2637081", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.mold::elf::NameType.2637048", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sdiv exact i64 %5, 24
@@ -367,7 +367,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mold::elf::NameType.2637081", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::NameType.2637048", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sdiv exact i64 %5, 24
@@ -384,7 +384,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.aiVector3t.2828902, ptr %1, i64 %2
+  %3 = getelementptr %class.aiVector3t.2828868, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sdiv exact i64 %5, 24

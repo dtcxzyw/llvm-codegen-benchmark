@@ -1,5 +1,5 @@
 
-; 276 occurrences:
+; 277 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -272,6 +272,7 @@
 ; spike/optimized/srai32_u.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_vorbis.c.ll
+; stockfish/optimized/tbprobe.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; wireshark/optimized/lemon.c.ll
@@ -319,7 +320,7 @@ entry:
   ret i64 %3
 }
 
-; 248 occurrences:
+; 247 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -553,7 +554,6 @@ entry:
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; stockfish/optimized/tbprobe.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll

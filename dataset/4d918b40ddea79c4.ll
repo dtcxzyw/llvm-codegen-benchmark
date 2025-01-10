@@ -1,8 +1,7 @@
 
-; 679 occurrences:
+; 662 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/ivyFastMap.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -25,12 +24,10 @@
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/matcher-ac.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; clamav/optimized/tiff.c.ll
 ; clamav/optimized/unarj.c.ll
 ; clamav/optimized/vba_extract.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; cmake/optimized/deflate.c.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -56,7 +53,6 @@
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
@@ -120,9 +116,6 @@
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; libevent/optimized/bufferevent.c.ll
 ; libevent/optimized/evmap.c.ll
 ; libevent/optimized/select.c.ll
@@ -137,7 +130,6 @@
 ; libquic/optimized/string_util.cc.ll
 ; libwebp/optimized/histogram_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/agg-rx.ll
@@ -194,7 +186,6 @@
 ; linux/optimized/vht.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xhci-hub.ll
-; linux/optimized/xstate.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -311,7 +302,6 @@
 ; minetest/optimized/player.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/treegen.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mold/optimized/main.cc.ALPHA.cc.ll
 ; mold/optimized/main.cc.ARM32.cc.ll
@@ -498,8 +488,6 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/ruby.ll
@@ -511,8 +499,6 @@
 ; slurm/optimized/common_topo.ll
 ; slurm/optimized/dbd_conn.ll
 ; slurm/optimized/gres_filter.ll
-; slurm/optimized/gres_sched.ll
-; slurm/optimized/gres_select_util.ll
 ; slurm/optimized/info_job.ll
 ; slurm/optimized/info_node.ll
 ; slurm/optimized/job_mgr.ll
@@ -623,8 +609,6 @@
 ; wireshark/optimized/packet-kdsp.c.ll
 ; wireshark/optimized/packet-kingfisher.c.ll
 ; wireshark/optimized/packet-mbtcp.c.ll
-; wireshark/optimized/packet-moldudp.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-openflow_v5.c.ll
 ; wireshark/optimized/packet-openflow_v6.c.ll
@@ -633,7 +617,6 @@
 ; wireshark/optimized/packet-p_mul.c.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; wireshark/optimized/packet-ppcap.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rdm.c.ll
 ; wireshark/optimized/packet-rdpudp.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll

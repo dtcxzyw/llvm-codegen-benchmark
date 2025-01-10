@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 39 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; clamav/optimized/regex_suffix.c.ll
@@ -9,7 +9,6 @@
 ; faiss/optimized/hamming.cpp.ll
 ; graphviz/optimized/sgd.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/deflate.c.ll
@@ -29,10 +28,8 @@
 ; openssl/optimized/libcrypto-lib-curve448.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
-; openusd/optimized/reconintra.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; postgres/optimized/varlena.ll
 ; postgres/optimized/visibilitymap.ll

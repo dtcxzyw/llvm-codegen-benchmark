@@ -1,6 +1,6 @@
 
-%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
-%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
+%"class.base::ManualConstructor.3060079" = type { %"class.base::AlignedMemory.3060080" }
+%"class.base::AlignedMemory.3060080" = type { [16 x i8] }
 
 ; 2 occurrences:
 ; opencv/optimized/datastructs.cpp.ll
@@ -70,7 +70,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000006a(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3060113", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.base::ManualConstructor.3060079", ptr %1, i64 %2
   %4 = icmp sgt i32 %0, -1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

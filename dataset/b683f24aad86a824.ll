@@ -1,9 +1,9 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%struct.dtLink.3108391 = type { i32, i32, i8, i8, i8, i8 }
-%struct.dtBVNode.3108536 = type { [3 x i16], [3 x i16], i32 }
-%"class.cv::Complex.13.3754032" = type { float, float }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%struct.dtLink.3108357 = type { i32, i32, i8, i8, i8, i8 }
+%struct.dtBVNode.3108502 = type { [3 x i16], [3 x i16], i32 }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 4 occurrences:
 ; git/optimized/diffcore-rename.ll
@@ -29,8 +29,8 @@ define ptr @func0000000000000060(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2818499, ptr %1, i64 %4
-  %6 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %5, i64 %0
+  %5 = getelementptr nusw %class.btVector3.2818465, ptr %1, i64 %4
+  %6 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 32
   ret ptr %7
 }
@@ -52,8 +52,8 @@ define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2818499, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.btSpatialMotionVector.2818501, ptr %5, i64 %0, i32 0, i32 0, i64 2
+  %5 = getelementptr nusw %class.btVector3.2818465, ptr %1, i64 %4
+  %6 = getelementptr nuw %struct.btSpatialMotionVector.2818467, ptr %5, i64 %0, i32 0, i32 0, i64 2
   ret ptr %6
 }
 
@@ -92,7 +92,7 @@ entry:
   %3 = shl i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.dtLink.3108391, ptr %5, i64 %0
+  %6 = getelementptr %struct.dtLink.3108357, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
@@ -105,7 +105,7 @@ entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.dtBVNode.3108536, ptr %5, i64 %0, i32 1
+  %6 = getelementptr nuw %struct.dtBVNode.3108502, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -187,8 +187,8 @@ define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %1, i64 %4
-  %6 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %5, i64 %0, i32 1
+  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %1, i64 %4
+  %6 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

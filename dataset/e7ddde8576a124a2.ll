@@ -1,5 +1,5 @@
 
-; 5703 occurrences:
+; 5702 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -2115,7 +2115,6 @@
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
 ; llvm/optimized/DXILResource.cpp.ll
 ; llvm/optimized/DataExtractor.cpp.ll
-; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
@@ -5711,7 +5710,7 @@ entry:
   ret i64 %2
 }
 
-; 601 occurrences:
+; 603 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bdcDec.c.ll
@@ -6072,6 +6071,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_realpath.c.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; openjdk/optimized/arguments.ll
@@ -6225,6 +6225,7 @@ entry:
 ; ruby/optimized/variable.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
+; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; vcpkg/optimized/export.prefab.cpp.ll

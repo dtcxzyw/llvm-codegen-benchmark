@@ -1,5 +1,5 @@
 
-; 956 occurrences:
+; 955 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -717,7 +717,6 @@
 ; pcg-cpp/optimized/spew.cpp.ll
 ; php/optimized/dtoa.ll
 ; php/optimized/phpdbg_btree.ll
-; php/optimized/zend_alloc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll

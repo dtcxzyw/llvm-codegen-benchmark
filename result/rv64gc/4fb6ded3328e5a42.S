@@ -21,11 +21,6 @@ func0000000000000060:                   # @func0000000000000060
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
-func000000000000007f:                   # @func000000000000007f
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 32
-	ret
 func000000000000006e:                   # @func000000000000006e
 	sub	a1, a1, a2
 	add	a0, a0, a1

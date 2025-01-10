@@ -20,8 +20,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 1 occurrences:
 ; linux/optimized/hw_breakpoint.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {

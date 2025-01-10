@@ -105,12 +105,11 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; boost/optimized/text_file_backend.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ustring.ll
-; linux/optimized/pci.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/virtio_ring.ll
 ; linux/optimized/x_tables.ll

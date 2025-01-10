@@ -147,10 +147,9 @@ entry:
   ret i1 %5
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; clamav/optimized/pe.c.ll
-; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; freetype/optimized/smooth.c.ll

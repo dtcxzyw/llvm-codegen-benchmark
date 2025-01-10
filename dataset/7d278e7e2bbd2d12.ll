@@ -1,5 +1,5 @@
 
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
 
 ; 24 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -206,8 +206,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002f(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %1, i64 %0
-  %3 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %2, i64 %0, i32 1
+  %2 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %1, i64 %0
+  %3 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %2, i64 %0, i32 1
   ret ptr %3
 }
 

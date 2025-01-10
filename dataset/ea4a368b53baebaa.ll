@@ -23,7 +23,8 @@ entry:
   ret i64 %6
 }
 
-; 60 occurrences:
+; 61 occurrences:
+; casadi/optimized/integrator.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/bytearrayobject.ll

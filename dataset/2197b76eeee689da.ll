@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -9,7 +9,6 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/memnode.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
-; xgboost/optimized/json.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -18,7 +17,7 @@ entry:
   ret ptr %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
@@ -29,6 +28,7 @@ entry:
 ; openblas/optimized/dsymm_outcopy.c.ll
 ; openjdk/optimized/jfrCheckpointWriter.ll
 ; sentencepiece/optimized/builder.cc.ll
+; xgboost/optimized/json.cc.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {

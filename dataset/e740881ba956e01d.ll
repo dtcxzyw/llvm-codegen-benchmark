@@ -12,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
@@ -46,7 +46,6 @@ entry:
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; postgres/optimized/localtime.ll
-; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/packet-sabp.c.ll
 ; yosys/optimized/SimpSolver.ll

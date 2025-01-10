@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; clamav/optimized/pdf.c.ll
@@ -115,6 +115,7 @@
 ; pyo3-rs/optimized/23tgpgxnh0x411j4.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; ruby/optimized/hash.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
 ; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll

@@ -43,6 +43,8 @@ func0000000000000b61:                   # @func0000000000000b61
 func0000000000000b64:                   # @func0000000000000b64
 	slli	a2, a2, 6
 	add	a1, a1, a2
+	addi	a1, a1, 64
+	addi	a0, a0, 64
 	sltu	a0, a0, a1
 	ret
 func0000000000001fe4:                   # @func0000000000001fe4

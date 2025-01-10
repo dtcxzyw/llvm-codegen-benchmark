@@ -15,18 +15,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; openspiel/optimized/goofspiel.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %1, %3
-  %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %0, %5
-  ret i32 %6
-}
-
 ; 4 occurrences:
 ; opencv/optimized/datablock.cpp.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll

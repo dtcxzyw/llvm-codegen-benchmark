@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
 
 ; 5 occurrences:
 ; freetype/optimized/sfnt.c.ll
@@ -14,7 +14,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.2742031", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.2741997", ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }

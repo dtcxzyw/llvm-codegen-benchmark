@@ -52,14 +52,14 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
-	li	a0, 63
+func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v14, v12, a0
-	vadd.vv	v12, v12, v14
-	vsra.vi	v12, v12, 1
-	vadd.vv	v8, v8, v10
+	vadd.vv	v10, v10, v12
+	li	a0, 63
+	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
+	vsra.vi	v8, v8, 1
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -95,14 +95,15 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vv	v8, v8, v10
 	vmacc.vx	v8, a0, v12
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
-	vsrl.vx	v12, v8, a0
-	vadd.vv	v8, v8, v12
-	vsra.vi	v8, v8, 1
-	vadd.vv	v8, v8, v10
+	vsra.vi	v8, v8, 3
+	lui	a0, 349525
+	addiw	a0, a0, 1365
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	vmadd.vx	v8, a0, v10
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma

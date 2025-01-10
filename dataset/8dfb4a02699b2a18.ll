@@ -1,5 +1,57 @@
 
-; 70 occurrences:
+; 29 occurrences:
+; cmake/optimized/cmDocumentationFormatter.cxx.ll
+; cpython/optimized/unicodeobject.ll
+; csmith/optimized/PartialExpander.cpp.ll
+; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; mitsuba3/optimized/aov.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; mitsuba3/optimized/class.cpp.ll
+; mitsuba3/optimized/filesystem.cpp.ll
+; mitsuba3/optimized/logger.cpp.ll
+; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
+; mitsuba3/optimized/moment.cpp.ll
+; mitsuba3/optimized/plugin.cpp.ll
+; mitsuba3/optimized/xml.cpp.ll
+; tev/optimized/Channel.cpp.ll
+; tev/optimized/ClipboardImageLoader.cpp.ll
+; tev/optimized/Common.cpp.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/ExrImageLoader.cpp.ll
+; tev/optimized/HelpWindow.cpp.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; tev/optimized/Ipc.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; tev/optimized/StbiImageLoader.cpp.ll
+; tev/optimized/UberShader.cpp.ll
+; tev/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000041(i64 %0) #0 {
+entry:
+  %1 = add nuw i64 %0, 1
+  %2 = icmp eq i64 %0, 23
+  %3 = select i1 %2, i64 25, i64 %1
+  ret i64 %3
+}
+
+; 3 occurrences:
+; mitsuba3/optimized/codeholder.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, 32
+  %2 = icmp ult i64 %0, 8096
+  %3 = select i1 %2, i64 8096, i64 %1
+  ret i64 %3
+}
+
+; 45 occurrences:
 ; boost/optimized/src.ll
 ; boost/optimized/url_view_base.ll
 ; cmake/optimized/lzma2_encoder.c.ll
@@ -20,16 +72,6 @@
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; minetest/optimized/filesys.cpp.ll
-; mitsuba3/optimized/aov.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
-; mitsuba3/optimized/class.cpp.ll
-; mitsuba3/optimized/filesystem.cpp.ll
-; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/measured.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/moment.cpp.ll
-; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/xml.cpp.ll
 ; node/optimized/libnode.bindingdata.ll
 ; node/optimized/libnode.node_http2.ll
 ; node/optimized/libnode.node_wasi.ll
@@ -53,42 +95,14 @@
 ; rust-analyzer-rs/optimized/4edzq05522y1zalf.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
-; tev/optimized/Channel.cpp.ll
-; tev/optimized/ClipboardImageLoader.cpp.ll
-; tev/optimized/Common.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; tev/optimized/HelpWindow.cpp.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
-; tev/optimized/Ipc.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/QoiImageLoader.cpp.ll
-; tev/optimized/StbiImageLoader.cpp.ll
-; tev/optimized/UberShader.cpp.ll
-; tev/optimized/main.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 1
-  %2 = icmp eq i64 %0, 23
-  %3 = select i1 %2, i64 25, i64 %1
-  ret i64 %3
-}
-
-; 3 occurrences:
-; mitsuba3/optimized/codeholder.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, 32
-  %2 = icmp ult i64 %0, 8096
-  %3 = select i1 %2, i64 8096, i64 %1
+  %1 = add i64 %0, 2
+  %2 = icmp eq i64 %0, 0
+  %3 = select i1 %2, i64 0, i64 %1
   ret i64 %3
 }
 
@@ -165,18 +179,6 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
-; cmake/optimized/cmDocumentationFormatter.cxx.ll
-; cpython/optimized/unicodeobject.ll
-; csmith/optimized/PartialExpander.cpp.ll
-; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000041(i64 %0) #0 {
-entry:
-  %1 = call i64 @llvm.uadd.sat.i64(i64 %0, i64 1)
-  ret i64 %1
-}
-
 ; 1 occurrences:
 ; freetype/optimized/ftlzw.c.ll
 ; Function Attrs: nounwind
@@ -186,9 +188,6 @@ entry:
   %2 = add nuw nsw i64 %1, 4
   ret i64 %2
 }
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.uadd.sat.i64(i64, i64) #1
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1

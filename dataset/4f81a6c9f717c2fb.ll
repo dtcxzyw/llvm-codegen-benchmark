@@ -871,7 +871,7 @@ entry:
   ret i1 %5
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -899,7 +899,6 @@ entry:
 ; hdf5/optimized/H5Cint.c.ll
 ; libwebp/optimized/webp_dec.c.ll
 ; lief/optimized/bignum.c.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/set_memory.ll
 ; luau/optimized/Compiler.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll

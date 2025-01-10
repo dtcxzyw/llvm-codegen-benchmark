@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
-%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
-%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
-%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
-%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
+%"struct.rocksdb::CacheAlignedWrapper.2615938" = type { %"class.rocksdb::port::Mutex.2615939", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615939" = type { %union.pthread_mutex_t.2615940 }
+%union.pthread_mutex_t.2615940 = type { %struct.__pthread_mutex_s.2615941 }
+%struct.__pthread_mutex_s.2615941 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615942 }
+%struct.__pthread_internal_list.2615942 = type { ptr, ptr }
 
 ; 175 occurrences:
 ; abc/optimized/giaSimBase.c.ll
@@ -221,8 +221,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %1
-  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %4, i64 %3
+  %4 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615938", ptr %0, i64 %1
+  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615938", ptr %4, i64 %3
   ret ptr %5
 }
 

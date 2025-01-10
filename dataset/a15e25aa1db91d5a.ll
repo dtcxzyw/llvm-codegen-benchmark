@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 153 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -33,7 +33,6 @@
 ; linux/optimized/vt.ll
 ; linux/optimized/x_tables.ll
 ; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/AnyByte.ll
 ; openjdk/optimized/BufImgSurfaceData.ll

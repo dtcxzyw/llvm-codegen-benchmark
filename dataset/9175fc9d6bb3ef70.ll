@@ -1,6 +1,6 @@
 
-%struct.pme_grid_comm_t.3371159 = type { i32, i32, i32, i32, i32, i32, i32 }
-%struct.snode.3885102 = type { i32, i32, ptr, ptr, i16, i16, [2 x ptr], ptr, i32, i8 }
+%struct.pme_grid_comm_t.3371125 = type { i32, i32, i32, i32, i32, i32, i32 }
+%struct.snode.3885052 = type { i32, i32, ptr, ptr, i16, i16, [2 x ptr], ptr, i32, i8 }
 
 ; 14 occurrences:
 ; openjdk/optimized/FourByteAbgr.ll
@@ -47,7 +47,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.pme_grid_comm_t.3371159, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.pme_grid_comm_t.3371125, ptr %1, i64 %2
   %.idx = select i1 %0, i64 0, i64 12
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4
@@ -71,7 +71,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.snode.3885102, ptr %1, i64 %2
+  %3 = getelementptr %struct.snode.3885052, ptr %1, i64 %2
   %.idx = select i1 %0, i64 0, i64 64
   %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4

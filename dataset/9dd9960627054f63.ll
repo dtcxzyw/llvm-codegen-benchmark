@@ -103,8 +103,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/metaspace.ll
+; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -1,18 +1,18 @@
 
-%struct.netdev_queue.3557095 = type { ptr, %struct.netdevice_tracker.3557096, ptr, ptr, %struct.kobject.3557097, i32, i64, %struct.atomic64_t.3557088, ptr, ptr, %struct.spinlock.3557056, i32, i64, i64, [40 x i8], %struct.dql.3557098 }
-%struct.netdevice_tracker.3557096 = type {}
-%struct.kobject.3557097 = type { ptr, %struct.list_head.3557051, ptr, ptr, ptr, ptr, %struct.kref.3557099, i8 }
-%struct.list_head.3557051 = type { ptr, ptr }
-%struct.kref.3557099 = type { %struct.refcount_struct.3557100 }
-%struct.refcount_struct.3557100 = type { %struct.atomic_t.3557037 }
-%struct.atomic_t.3557037 = type { i32 }
-%struct.atomic64_t.3557088 = type { i64 }
-%struct.spinlock.3557056 = type { %union.anon.0.3557064 }
-%union.anon.0.3557064 = type { %struct.raw_spinlock.3557065 }
-%struct.raw_spinlock.3557065 = type { %struct.qspinlock.3557066 }
-%struct.qspinlock.3557066 = type { %union.anon.1.3557067 }
-%union.anon.1.3557067 = type { %struct.atomic_t.3557037 }
-%struct.dql.3557098 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
+%struct.netdev_queue.3557061 = type { ptr, %struct.netdevice_tracker.3557062, ptr, ptr, %struct.kobject.3557063, i32, i64, %struct.atomic64_t.3557054, ptr, ptr, %struct.spinlock.3557022, i32, i64, i64, [40 x i8], %struct.dql.3557064 }
+%struct.netdevice_tracker.3557062 = type {}
+%struct.kobject.3557063 = type { ptr, %struct.list_head.3557017, ptr, ptr, ptr, ptr, %struct.kref.3557065, i8 }
+%struct.list_head.3557017 = type { ptr, ptr }
+%struct.kref.3557065 = type { %struct.refcount_struct.3557066 }
+%struct.refcount_struct.3557066 = type { %struct.atomic_t.3557003 }
+%struct.atomic_t.3557003 = type { i32 }
+%struct.atomic64_t.3557054 = type { i64 }
+%struct.spinlock.3557022 = type { %union.anon.0.3557030 }
+%union.anon.0.3557030 = type { %struct.raw_spinlock.3557031 }
+%struct.raw_spinlock.3557031 = type { %struct.qspinlock.3557032 }
+%struct.qspinlock.3557032 = type { %union.anon.1.3557033 }
+%union.anon.1.3557033 = type { %struct.atomic_t.3557003 }
+%struct.dql.3557064 = type { i32, i32, i32, [52 x i8], i32, i32, i32, i32, i32, i32, i64, i32, i32, i32, [20 x i8] }
 
 ; 1 occurrences:
 ; openjdk/optimized/numberSeq.ll
@@ -92,7 +92,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.netdev_queue.3557095, ptr %0, i64 %4
+  %5 = getelementptr %struct.netdev_queue.3557061, ptr %0, i64 %4
   ret ptr %5
 }
 

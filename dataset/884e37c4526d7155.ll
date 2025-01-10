@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -19,6 +19,7 @@
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll

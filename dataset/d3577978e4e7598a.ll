@@ -1,6 +1,6 @@
 
-%struct._zend_basic_block.2794704 = type { ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [2 x i32] }
-%union.ListCell.3652360 = type { ptr }
+%struct._zend_basic_block.2794670 = type { ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [2 x i32] }
+%union.ListCell.3652326 = type { ptr }
 
 ; 6 occurrences:
 ; clamav/optimized/qtmd.c.ll
@@ -67,7 +67,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_basic_block.2794704, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_basic_block.2794670, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = shl i64 %5, 26
@@ -105,7 +105,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3652360, ptr %1, i64 %2
+  %3 = getelementptr %union.ListCell.3652326, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = shl i64 %5, 29

@@ -96,3 +96,23 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI11_0:
+	.quad	1032                            # 0x408
+func00000000000002a8:                   # @func00000000000002a8
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsllq	$2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI11_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI12_0:
+	.quad	65536                           # 0x10000
+func00000000000003aa:                   # @func00000000000003aa
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpcmpgtq	.LCPI12_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq

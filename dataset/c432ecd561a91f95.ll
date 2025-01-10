@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3276260" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3276226" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 12 occurrences:
 ; cvc5/optimized/printer.cpp.ll
@@ -74,7 +74,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, 0
   %5 = select i1 %4, i64 -1465, i64 -6861
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3276260", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3276226", ptr %0, i64 %5
   ret ptr %6
 }
 

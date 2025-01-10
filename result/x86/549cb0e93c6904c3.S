@@ -88,6 +88,12 @@ func0000000000000038:                   # @func0000000000000038
 	cmpl	%edx, %edi
 	seta	%al
 	retq
+func000000000000000b:                   # @func000000000000000b
+	cmpl	%edx, %esi
+	cmovbl	%esi, %edx
+	cmpl	%edx, %edi
+	setge	%al
+	retq
 func0000000000000025:                   # @func0000000000000025
 	cmpl	%edx, %esi
 	cmovbl	%esi, %edx

@@ -1,7 +1,7 @@
 
-%struct.testl_st.2634489 = type { i32, %struct.anon.2634490, %struct.anon.0.2634491 }
-%struct.anon.2634490 = type { ptr, ptr }
-%struct.anon.0.2634491 = type { ptr, ptr }
+%struct.testl_st.2634456 = type { i32, %struct.anon.2634457, %struct.anon.0.2634458 }
+%struct.anon.2634457 = type { ptr, ptr }
+%struct.anon.0.2634458 = type { ptr, ptr }
 
 ; 12 occurrences:
 ; cpython/optimized/hashtable.ll
@@ -142,7 +142,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.testl_st.2634489, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.testl_st.2634456, ptr %1, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5

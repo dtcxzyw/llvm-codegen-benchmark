@@ -1,5 +1,5 @@
 
-%struct.resource.3546544 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3546510 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -304,7 +304,7 @@ define ptr @func0000000000000060(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp samesign ugt i32 %1, 2
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr [11 x %struct.resource.3546544], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [11 x %struct.resource.3546510], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

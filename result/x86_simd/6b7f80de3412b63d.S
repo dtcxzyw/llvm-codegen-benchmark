@@ -104,11 +104,27 @@ func0000000000000003:                   # @func0000000000000003
 	.zero	1
 	.zero	1
 .LCPI2_1:
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_2:
 	.byte	17                              # 0x11
 func0000000000000002:                   # @func0000000000000002
 	vptestnmd	%ymm0, %ymm0, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpbroadcastb	.LCPI2_1(%rip), %xmm0   # xmm0 = [17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17]
-	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vpbroadcastb	.LCPI2_2(%rip), %xmm0   # xmm0 = [17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17]
+	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [63,63,63,63,63,63,63,63,u,u,u,u,u,u,u,u]
 	vzeroupper
 	retq

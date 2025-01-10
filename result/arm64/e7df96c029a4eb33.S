@@ -16,15 +16,6 @@ func0000000000002ce1:                   // @func0000000000002ce1
 	csel	w0, w9, w8, eq
 	ret
                                         // -- End function
-func0000000000001481:                   // @func0000000000001481
-// %bb.0:                               // %entry
-	cmp	w1, w2
-	cset	w8, ls
-	cset	w9, lo
-	cmp	w0, #0
-	csel	w0, w9, w8, eq
-	ret
-                                        // -- End function
 func00000000000028c1:                   // @func00000000000028c1
 // %bb.0:                               // %entry
 	cmp	w1, w2

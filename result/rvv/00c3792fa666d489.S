@@ -1,9 +1,9 @@
-func00000000000000cc:                   # @func00000000000000cc
+func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
 	vor.vv	v10, v12, v10
 	vand.vv	v8, v10, v8
-	vmsne.vi	v0, v8, 0
+	vmseq.vi	v0, v8, 0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 32

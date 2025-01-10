@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; git/optimized/date.ll
 ; git/optimized/dir.ll
 ; git/optimized/name-hash.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; msdfgen/optimized/main.cpp.ll
 ; postgres/optimized/zic.ll
-; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-edonkey.c.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind

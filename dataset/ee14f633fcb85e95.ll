@@ -1,6 +1,6 @@
 
-%class.checked_int64.3634402 = type { i64 }
-%"class.ZXing::Trit.3649655" = type { i8 }
+%class.checked_int64.3634368 = type { i64 }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 55 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
@@ -174,8 +174,8 @@ define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 -2, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.checked_int64.3634402, ptr %0, i64 %1
-  %6 = getelementptr nusw %class.checked_int64.3634402, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %class.checked_int64.3634368, ptr %0, i64 %1
+  %6 = getelementptr nusw %class.checked_int64.3634368, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -186,8 +186,8 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %1
-  %6 = getelementptr nusw %"class.ZXing::Trit.3649655", ptr %5, i64 %4
+  %5 = getelementptr %"class.ZXing::Trit.3649621", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.ZXing::Trit.3649621", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -198,8 +198,8 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %1
-  %6 = getelementptr nusw %"class.ZXing::Trit.3649655", ptr %5, i64 %4
+  %5 = getelementptr %"class.ZXing::Trit.3649621", ptr %0, i64 %1
+  %6 = getelementptr nusw %"class.ZXing::Trit.3649621", ptr %5, i64 %4
   ret ptr %6
 }
 

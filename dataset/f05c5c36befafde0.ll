@@ -1,5 +1,5 @@
 
-%struct.bb_commit.2883685 = type { ptr, ptr, ptr, i8, i32 }
+%struct.bb_commit.2883651 = type { ptr, ptr, ptr, i8, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/regexec.ll
@@ -180,7 +180,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.bb_commit.2883685, ptr %0, i64 %4, i32 4
+  %5 = getelementptr %struct.bb_commit.2883651, ptr %0, i64 %4, i32 4
   ret ptr %5
 }
 

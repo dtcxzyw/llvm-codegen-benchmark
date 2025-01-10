@@ -139,16 +139,4 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/utrie2.ll
-; linux/optimized/vlv_dsi.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i32 1, i32 3
-  %4 = shl nuw nsw i32 %1, %3
-  %5 = add nuw nsw i32 %0, %4
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

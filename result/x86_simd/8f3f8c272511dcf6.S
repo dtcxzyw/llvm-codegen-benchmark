@@ -50,6 +50,12 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
+func00000000000000ea:                   # @func00000000000000ea
+	vpmovqd	%ymm2, %xmm2
+	vpmaxsd	%xmm1, %xmm0, %xmm0
+	vpcmpgtd	%xmm2, %xmm0, %xmm0
+	vzeroupper
+	retq
 func000000000000008a:                   # @func000000000000008a
 	vpmovqd	%ymm2, %xmm2
 	vpmaxsd	%xmm1, %xmm0, %xmm0

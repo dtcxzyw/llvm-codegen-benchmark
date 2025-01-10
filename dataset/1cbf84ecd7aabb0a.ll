@@ -1,8 +1,8 @@
 
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
 
 ; 43 occurrences:
 ; llvm/optimized/CoverageMappingReader.cpp.ll
@@ -73,7 +73,7 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %5, i64 %6
   ret ptr %7
 }
 

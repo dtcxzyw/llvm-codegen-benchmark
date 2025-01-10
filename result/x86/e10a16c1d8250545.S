@@ -92,9 +92,8 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	retq
 func0000000000000074:                   # @func0000000000000074
-	subq	%rdx, %rsi
-	movabsq	$9223372036854775552, %rax      # imm = 0x7FFFFFFFFFFFFF00
-	andq	%rsi, %rax
+	subl	%edx, %esi
+	movzwl	%si, %eax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

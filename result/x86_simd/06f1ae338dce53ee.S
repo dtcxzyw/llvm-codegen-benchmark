@@ -41,20 +41,3 @@ func0000000000000000:                   # @func0000000000000000
 	vmovd	.LCPI0_3(%rip), %xmm1           # xmm1 = [12,6,3,1,0,0,0,0,0,0,0,0,0,0,0,0]
 	vpshufb	%xmm0, %xmm1, %xmm0
 	retq
-.LCPI1_0:
-	.zero	16,15
-.LCPI1_1:
-	.long	1                               # 0x1
-	.long	0                               # 0x0
-	.long	0                               # 0x0
-	.long	0                               # 0x0
-.LCPI1_2:
-	.zero	4,15
-.LCPI1_3:
-	.byte	1                               # 0x1
-	.byte	0                               # 0x0
-func0000000000000002:                   # @func0000000000000002
-	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
-	vpmovsxbq	.LCPI1_3(%rip), %xmm1   # xmm1 = [1,0]
-	vpshufb	%xmm0, %xmm1, %xmm0
-	retq

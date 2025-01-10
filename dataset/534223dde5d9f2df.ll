@@ -606,6 +606,17 @@ entry:
 }
 
 ; 1 occurrences:
+; abc/optimized/giaBalAig.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nsw i64 %2, -1
+  %4 = icmp sgt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; postgres/optimized/spgtextproc.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
@@ -617,6 +628,17 @@ entry:
 }
 
 ; 1 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nuw nsw i64 %2, 1
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; hyperscan/optimized/ng_fuzzy.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000079(i64 %0, i32 %1) #0 {
@@ -624,6 +646,17 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp samesign uge i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/ftbitmap.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add nuw nsw i64 %2, -9223372036854775744
+  %4 = icmp sgt i64 %3, %0
   ret i1 %4
 }
 

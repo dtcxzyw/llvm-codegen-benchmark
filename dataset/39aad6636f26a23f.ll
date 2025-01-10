@@ -317,8 +317,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {

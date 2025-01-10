@@ -205,9 +205,8 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/acecCore.c.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll

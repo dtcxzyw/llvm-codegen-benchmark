@@ -1,7 +1,7 @@
 
-%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
-%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
-%"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081" = type { ptr, ptr }
+%struct.XHCIInterrupter.2706931 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706916], i32, i32 }
+%struct.XHCIEvent.2706916 = type { i32, i32, i64, i32, i32, i8, i8 }
+%"struct.tf::ObjectPool<tf::Node>::Blocklist.3063047" = type { ptr, ptr }
 
 ; 3 occurrences:
 ; postgres/optimized/extension.ll
@@ -28,11 +28,12 @@ define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %0, i64 0, i64 %3, i32 6
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706931], ptr %0, i64 0, i64 %3, i32 6
   ret ptr %4
 }
 
-; 46 occurrences:
+; 47 occurrences:
+; openspiel/optimized/Par.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/chess_board.cc.ll
@@ -84,7 +85,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.3063081"], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [5 x %"struct.tf::ObjectPool<tf::Node>::Blocklist.3063047"], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

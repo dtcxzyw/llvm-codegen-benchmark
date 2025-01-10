@@ -1,5 +1,5 @@
 
-; 358 occurrences:
+; 359 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -152,6 +152,7 @@
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/trace_output.ll
 ; linux/optimized/util.ll
 ; linux/optimized/vht.ll
 ; linux/optimized/vlv_dsi.ll

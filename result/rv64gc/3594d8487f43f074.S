@@ -16,12 +16,6 @@ func0000000000000064:                   # @func0000000000000064
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
-	slli	a2, a2, 48
-	srli	a2, a2, 48
-	mul	a1, a1, a2
-	sltu	a0, a1, a0
-	ret
 func0000000000000068:                   # @func0000000000000068
 	slli	a2, a2, 48
 	srli	a2, a2, 48

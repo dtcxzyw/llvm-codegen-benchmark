@@ -110,13 +110,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
-	addq	$8191, %rsi                     # imm = 0x1FFF
-	andq	$-8192, %rsi                    # imm = 0xE000
-	decq	%rdi
-	cmpq	%rsi, %rdi
-	setb	%al
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	decq	%rsi
 	andq	$-8, %rsi

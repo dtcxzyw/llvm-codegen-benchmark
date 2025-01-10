@@ -1,5 +1,5 @@
 
-; 4132 occurrences:
+; 4133 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcCheck.c.ll
@@ -1332,6 +1332,7 @@
 ; linux/optimized/unwind_orc.ll
 ; linux/optimized/util.ll
 ; linux/optimized/vars.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_input.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vma.ll
@@ -9257,18 +9258,22 @@ entry:
   ret i32 %2
 }
 
-; 425 occurrences:
+; 429 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/acbMfs.c.ll
+; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/fraClass.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaMf.c.ll
 ; abc/optimized/hopBalance.c.ll
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/ivyBalance.c.ll
 ; abc/optimized/llb4Cex.c.ll
+; abc/optimized/sbdCut.c.ll
 ; abc/optimized/timBox.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -10743,7 +10748,7 @@ entry:
   ret i32 %2
 }
 
-; 1336 occurrences:
+; 1337 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
@@ -10770,7 +10775,6 @@ entry:
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/dtoa.ll
-; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -10877,6 +10881,7 @@ entry:
 ; libwebp/optimized/syntax_enc.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/build_policy.ll
+; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlme.ll
@@ -11937,6 +11942,7 @@ entry:
 ; postgres/optimized/tuplesortvariants.ll
 ; postgres/optimized/walreceiver.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
+; qemu/optimized/ahci.c.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -12436,7 +12442,7 @@ entry:
   ret i32 %2
 }
 
-; 297 occurrences:
+; 298 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -12727,6 +12733,7 @@ entry:
 ; llvm/optimized/X86PadShortFunction.cpp.ll
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/timestamp.ll

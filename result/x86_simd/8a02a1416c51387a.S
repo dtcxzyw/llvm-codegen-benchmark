@@ -88,13 +88,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000007:                   # @func0000000000000007
-	vpmovdb	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpaddb	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI8_0:
+.LCPI7_0:
 	.byte	4                               # 0x4
 	.byte	4                               # 0x4
 	.byte	4                               # 0x4
@@ -113,10 +107,10 @@ func0000000000000007:                   # @func0000000000000007
 	.zero	1
 func0000000000000008:                   # @func0000000000000008
 	vpmovdb	%ymm0, %xmm0
-	vpaddb	.LCPI8_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI7_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI9_0:
+.LCPI8_0:
 	.byte	225                             # 0xe1
 	.byte	225                             # 0xe1
 	.byte	225                             # 0xe1
@@ -134,6 +128,28 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	1
 	.zero	1
 func0000000000000006:                   # @func0000000000000006
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI8_0(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.byte	249                             # 0xf9
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000007:                   # @func0000000000000007
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI9_0(%rip), %xmm0, %xmm0
 	vzeroupper

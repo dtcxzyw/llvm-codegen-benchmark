@@ -1,7 +1,7 @@
 
-%"struct.mitsuba::Point.2604586" = type { %"struct.drjit::StaticArrayImpl.29.2604587" }
-%"struct.drjit::StaticArrayImpl.29.2604587" = type { %"struct.drjit::StaticArrayImpl.30.2604588" }
-%"struct.drjit::StaticArrayImpl.30.2604588" = type { <4 x float> }
+%"struct.mitsuba::Point.2604553" = type { %"struct.drjit::StaticArrayImpl.29.2604554" }
+%"struct.drjit::StaticArrayImpl.29.2604554" = type { %"struct.drjit::StaticArrayImpl.30.2604555" }
+%"struct.drjit::StaticArrayImpl.30.2604555" = type { <4 x float> }
 
 ; 7 occurrences:
 ; assimp/optimized/RawLoader.cpp.ll
@@ -17,7 +17,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = udiv i32 %2, 100
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.mitsuba::Point.2604586", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.mitsuba::Point.2604553", ptr %0, i64 %4
   ret ptr %5
 }
 

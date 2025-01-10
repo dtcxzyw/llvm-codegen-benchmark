@@ -19,18 +19,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/MachineInstr.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000014c(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, 0
-  %4 = icmp ne i64 %1, 0
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %0, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; llvm/optimized/AMDGPU.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {

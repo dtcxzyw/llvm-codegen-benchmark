@@ -352,13 +352,3 @@ func00000000000018c8:                   # @func00000000000018c8
 	setae	%al
 	orb	%cl, %al
 	retq
-func000000000000294c:                   # @func000000000000294c
-	cmpl	$255, %edx
-	setge	%al
-	cmpl	$255, %esi
-	setge	%cl
-	orb	%al, %cl
-	testl	%edi, %edi
-	setne	%al
-	orb	%cl, %al
-	retq

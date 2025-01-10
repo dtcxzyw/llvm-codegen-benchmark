@@ -24,10 +24,10 @@ func0000000000000181:                   # @func0000000000000181
 	andb	%cl, %al
 	retq
 func0000000000000021:                   # @func0000000000000021
-	testb	$7, %dl
-	sete	%cl
+	testl	%edx, %edx
+	setns	%cl
 	andb	%dil, %cl
-	testl	%esi, %esi
+	cmpl	$1116, %esi                     # imm = 0x45C
 	sete	%al
 	andb	%cl, %al
 	retq

@@ -36,8 +36,7 @@ entry:
   ret i32 %6
 }
 
-; 18 occurrences:
-; abc/optimized/wlnNtk.c.ll
+; 17 occurrences:
 ; assimp/optimized/Importer.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll

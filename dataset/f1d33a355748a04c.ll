@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/irq.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind

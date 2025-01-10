@@ -30,13 +30,14 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:

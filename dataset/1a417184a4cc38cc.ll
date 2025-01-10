@@ -1,5 +1,5 @@
 
-; 271 occurrences:
+; 266 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
@@ -14,7 +14,6 @@
 ; boost/optimized/numeric.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; clamav/optimized/oabd.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
 ; clamav/optimized/recvol.cpp.ll
@@ -53,7 +52,6 @@
 ; git/optimized/diffcore-pickaxe.ll
 ; git/optimized/reader.ll
 ; git/optimized/record.ll
-; git/optimized/remote-curl.ll
 ; git/optimized/stack.ll
 ; git/optimized/string-list.ll
 ; git/optimized/utf8.ll
@@ -93,7 +91,6 @@
 ; linux/optimized/ntp.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/scm.ll
 ; linux/optimized/scsi_logging.ll
 ; linux/optimized/select.ll
 ; linux/optimized/timekeeping.ll
@@ -207,7 +204,6 @@
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_io_uring.c.ll
-; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/gdbstub.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -217,7 +213,6 @@
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/linux-user_linuxload.c.ll
-; qemu/optimized/linux-user_syscall.c.ll
 ; qemu/optimized/region.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quantlib/optimized/lossdistribution.ll
@@ -279,7 +274,7 @@ entry:
   ret i64 %3
 }
 
-; 863 occurrences:
+; 858 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acecPool.c.ll
@@ -423,16 +418,12 @@ entry:
 ; ceres/optimized/single_linkage_clustering.cc.ll
 ; ceres/optimized/visibility.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
-; clamav/optimized/cabd.c.ll
 ; clamav/optimized/file.cpp.ll
 ; clamav/optimized/filefn.cpp.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/optparser.c.ll
 ; clamav/optimized/rdwrfn.cpp.ll
 ; clamav/optimized/recvol.cpp.ll
 ; clamav/optimized/yara_grammar.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/cmCommandArgumentParserHelper.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -858,7 +849,6 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/parser.cpp.ll
 ; nori/optimized/textbox.cpp.ll
-; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll

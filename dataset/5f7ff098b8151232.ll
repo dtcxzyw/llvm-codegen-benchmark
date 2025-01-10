@@ -1,5 +1,5 @@
 
-; 2573 occurrences:
+; 2574 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -2193,6 +2193,7 @@
 ; quest/optimized/QuEST_cpu.c.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -2580,7 +2581,7 @@ entry:
   ret i32 %1
 }
 
-; 1394 occurrences:
+; 1393 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -2756,7 +2757,6 @@ entry:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/PlyExporter.cpp.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/zip.c.ll

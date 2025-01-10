@@ -24,7 +24,7 @@ entry:
   ret i64 %6
 }
 
-; 316 occurrences:
+; 317 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -115,6 +115,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
@@ -369,7 +370,7 @@ entry:
   ret i64 %6
 }
 
-; 90 occurrences:
+; 91 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -445,6 +446,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -470,11 +472,10 @@ entry:
   ret i64 %6
 }
 
-; 69 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; folly/optimized/IPAddressV6.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -531,7 +532,6 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
@@ -602,10 +602,9 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; draco/optimized/hash_utils.cc.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; luau/optimized/isocline.c.ll
 ; openjdk/optimized/java.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind

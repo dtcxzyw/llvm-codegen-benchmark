@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -8,7 +8,6 @@
 ; linux/optimized/util.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; postgres/optimized/ginbulk.ll
-; yosys/optimized/ezsat.ll
 ; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/divsufsort.c.ll

@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 177 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -135,6 +135,7 @@
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/cmslut.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/jccoefct.ll

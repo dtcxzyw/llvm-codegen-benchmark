@@ -12,11 +12,11 @@ func0000000000000003:                   # @func0000000000000003
 	vpternlogq	$248, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI2_0:
-	.quad	268435456                       # 0x10000000
+	.quad	103079215104                    # 0x1800000000
 func0000000000000004:                   # @func0000000000000004
-	vpsrlq	$13, %ymm2, %ymm2
-	vpor	%ymm2, %ymm0, %ymm0
-	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	vpsrlq	$15, %ymm2, %ymm2
+	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI3_0:
 	.quad	2047                            # 0x7ff

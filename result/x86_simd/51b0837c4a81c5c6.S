@@ -17,11 +17,20 @@ func0000000000000008:                   # @func0000000000000008
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.long	16384                           # 0x4000
+	.long	11                              # 0xb
 .LCPI2_1:
-	.long	13                              # 0xd
-func000000000000000d:                   # @func000000000000000d
+	.long	4294967289                      # 0xfffffff9
+func0000000000000001:                   # @func0000000000000001
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpminsd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
+	retq
+.LCPI3_0:
+	.long	16384                           # 0x4000
+.LCPI3_1:
+	.long	13                              # 0xd
+func000000000000000d:                   # @func000000000000000d
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpminsd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq

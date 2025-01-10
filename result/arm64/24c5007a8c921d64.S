@@ -91,27 +91,19 @@ func00000000000001ea:                   // @func00000000000001ea
 	add	x0, x8, #8
 	ret
                                         // -- End function
-func0000000000000186:                   // @func0000000000000186
-// %bb.0:                               // %entry
-	add	x8, x2, #7
-	sub	x9, x1, #7
-	cmp	x0, #7
-	csel	x0, x9, x8, lt
-	ret
-                                        // -- End function
-func0000000000000066:                   // @func0000000000000066
-// %bb.0:                               // %entry
-	sub	x8, x2, #7
-	add	x9, x1, #7
-	cmp	x0, #7
-	csel	x0, x9, x8, lt
-	ret
-                                        // -- End function
 func00000000000001e4:                   // @func00000000000001e4
 // %bb.0:                               // %entry
 	add	x8, x2, #232
 	add	x9, x1, #8
 	cmp	x0, #3
 	csel	x0, x9, x8, lo
+	ret
+                                        // -- End function
+func0000000000000066:                   // @func0000000000000066
+// %bb.0:                               // %entry
+	sub	x8, x2, #8
+	add	x9, x1, #1544
+	cmp	x0, #1
+	csel	x0, x9, x8, lt
 	ret
                                         // -- End function

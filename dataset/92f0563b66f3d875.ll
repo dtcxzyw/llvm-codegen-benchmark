@@ -28,7 +28,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 30 occurrences:
+; 29 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
@@ -53,7 +53,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/outlier_rejection.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll

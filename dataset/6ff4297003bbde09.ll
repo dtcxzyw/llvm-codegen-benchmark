@@ -3410,7 +3410,7 @@ entry:
   ret i32 %2
 }
 
-; 524 occurrences:
+; 525 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/amapOutput.c.ll
@@ -3458,6 +3458,7 @@ entry:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; folly/optimized/json.cpp.ll
 ; freetype/optimized/sfnt.c.ll

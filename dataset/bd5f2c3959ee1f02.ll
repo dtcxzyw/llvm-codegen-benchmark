@@ -1,8 +1,8 @@
 
-%"struct.folly::threadlocal_detail::ElementWrapper.2683350" = type { ptr, %union.anon.144.2683351, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" }
-%union.anon.144.2683351 = type { ptr }
-%"struct.folly::threadlocal_detail::ThreadEntryNode.2683352" = type { i32, ptr, ptr, ptr }
-%struct.rv_opcode_data.2707215 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
+%"struct.folly::threadlocal_detail::ElementWrapper.2683317" = type { ptr, %union.anon.144.2683318, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2683319" }
+%union.anon.144.2683318 = type { ptr }
+%"struct.folly::threadlocal_detail::ThreadEntryNode.2683319" = type { i32, ptr, ptr, ptr }
+%struct.rv_opcode_data.2707181 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
 
 ; 171 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -181,7 +181,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.folly::threadlocal_detail::ElementWrapper.2683350", ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw nuw %"struct.folly::threadlocal_detail::ElementWrapper.2683317", ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -203,7 +203,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.rv_opcode_data.2707215, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.rv_opcode_data.2707181, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

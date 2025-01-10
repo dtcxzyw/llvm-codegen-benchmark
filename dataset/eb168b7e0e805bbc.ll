@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -53,7 +53,6 @@
 ; openusd/optimized/faceVertex.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; slurm/optimized/eio.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

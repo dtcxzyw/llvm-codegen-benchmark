@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 29 occurrences:
 ; clamav/optimized/mbr.c.ll
 ; cmake/optimized/lz_encoder.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -12,9 +12,12 @@
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; postgres/optimized/reorderbuffer.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/libvduse.c.ll

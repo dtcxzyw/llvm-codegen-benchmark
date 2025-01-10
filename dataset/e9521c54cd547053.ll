@@ -1,5 +1,5 @@
 
-; 683 occurrences:
+; 682 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -140,7 +140,6 @@
 ; libquic/optimized/prtime.cc.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; linux/optimized/alps.ll

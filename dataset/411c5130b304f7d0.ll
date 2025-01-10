@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 378 occurrences:
+; 379 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcMesh.c.ll
@@ -320,6 +320,7 @@ entry:
 ; postgres/optimized/pgstat.ll
 ; postgres/optimized/relfilenumbermap.ll
 ; postgres/optimized/slot.ll
+; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/spgutils.ll
 ; postgres/optimized/xlogutils.ll
 ; proj/optimized/c_api.cpp.ll

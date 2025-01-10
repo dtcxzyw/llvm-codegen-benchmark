@@ -51,7 +51,7 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; assimp/optimized/zip.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -82,6 +82,7 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-turbocell.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/tvbuff_lznt1.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i16 %1) #0 {
@@ -441,7 +442,7 @@ entry:
   ret i32 %4
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -514,7 +515,6 @@ entry:
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:

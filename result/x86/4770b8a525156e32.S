@@ -82,9 +82,13 @@ func0000000000000030:                   # @func0000000000000030
 	shlq	$7, %rsi
 	leaq	128(%rdi,%rsi), %rax
 	retq
-func0000000000000033:                   # @func0000000000000033
+func0000000000000032:                   # @func0000000000000032
 	shlq	$5, %rsi
 	leaq	32(%rdi,%rsi), %rax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	shlq	$6, %rsi
+	leaq	64(%rdi,%rsi), %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	leaq	-4(%rdi,%rsi,4), %rax

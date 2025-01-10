@@ -1,167 +1,4 @@
 
-; 151 occurrences:
-; abc/optimized/cuddAnneal.c.ll
-; abc/optimized/cuddExact.c.ll
-; brotli/optimized/decode.c.ll
-; ceres/optimized/covariance_impl.cc.ll
-; cpython/optimized/blob.ll
-; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/dlascl.cpp.ll
-; gromacs/optimized/grid.cpp.ll
-; gromacs/optimized/slascl.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
-; kcp/optimized/ikcp.ll
-; libwebp/optimized/frame_dec.c.ll
-; lightgbm/optimized/bin.cpp.ll
-; lightgbm/optimized/network.cpp.ll
-; linux/optimized/af_unix.ll
-; linux/optimized/datagram.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_dp.ll
-; linux/optimized/ip6_output.ll
-; linux/optimized/ip_output.ll
-; linux/optimized/mballoc.ll
-; linux/optimized/netconsole.ll
-; linux/optimized/ohci-hcd.ll
-; linux/optimized/page-writeback.ll
-; linux/optimized/percpu.ll
-; linux/optimized/raw.ll
-; linux/optimized/seq_buf.ll
-; linux/optimized/seq_memory.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/tcp.ll
-; linux/optimized/tcp_input.ll
-; linux/optimized/tcp_output.ll
-; linux/optimized/tx.ll
-; linux/optimized/uhci-hcd.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
-; lvgl/optimized/lv_draw_sw_mask.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/chat.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; ncnn/optimized/crop.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
-; nuttx/optimized/lib_memsistream.c.ll
-; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/dlaqp3rk.c.ll
-; openblas/optimized/dlaqr5.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorgtsqr_row.c.ll
-; openblas/optimized/dpbtrf.c.ll
-; openblas/optimized/dsbgst.c.ll
-; opencv/optimized/camshiftdemo.cpp.ll
-; opencv/optimized/cascadedetect.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/copy.cpp.ll
-; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/detection_based_tracker.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/exposure_compensate.cpp.ll
-; opencv/optimized/face_detection_mtcnn.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
-; opencv/optimized/gapi_core_perf_tests.cpp.ll
-; opencv/optimized/gfluidbackend.cpp.ll
-; opencv/optimized/gfluidbuffer.cpp.ll
-; opencv/optimized/gnnparsers.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; opencv/optimized/nms.cpp.ll
-; opencv/optimized/security_barrier_camera.cpp.ll
-; opencv/optimized/select3dobj.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; opencv/optimized/tr_icdar_benchmark.cpp.ll
-; opencv/optimized/tracker_goturn.cpp.ll
-; opencv/optimized/wbdetector.cpp.ll
-; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
-; openexr/optimized/ImfEnvmap.cpp.ll
-; openexr/optimized/ImfOutputFile.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; openjdk/optimized/convertnode.ll
-; openjdk/optimized/imageioJPEG.ll
-; openjdk/optimized/mlib_ImageConv_16nw.ll
-; openjdk/optimized/mlib_ImageConv_32nw.ll
-; openjdk/optimized/mlib_ImageConv_8nw.ll
-; openjdk/optimized/mlib_ImageConv_D64nw.ll
-; openjdk/optimized/mlib_ImageConv_F32nw.ll
-; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; openspiel/optimized/DealerPar.cpp.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/mvref_common.c.ll
-; openusd/optimized/restoration.c.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/checkpointer.ll
-; postgres/optimized/copyfrom.ll
-; postgres/optimized/copyfromparse.ll
-; postgres/optimized/fd.ll
-; postgres/optimized/formatting.ll
-; postgres/optimized/heapam.ll
-; postgres/optimized/inv_api.ll
-; postgres/optimized/localbuf.ll
-; postgres/optimized/spgtextproc.ll
-; postgres/optimized/tablesync.ll
-; qemu/optimized/block_parallels.c.ll
-; qemu/optimized/block_qcow2-cluster.c.ll
-; qemu/optimized/hw_ide_atapi.c.ll
-; qemu/optimized/hw_ide_core.c.ll
-; qemu/optimized/ui_console-vc.c.ll
-; qemu/optimized/ui_console.c.ll
-; qemu/optimized/ui_vnc-enc-tight.c.ll
-; raylib/optimized/raudio.c.ll
-; ruby/optimized/io.ll
-; slurm/optimized/cbuf.ll
-; tev/optimized/ImageViewer.cpp.ll
-; velox/optimized/LeadLag.cpp.ll
-; velox/optimized/StreamArena.cpp.ll
-; wireshark/optimized/mate_runtime.c.ll
-; wireshark/optimized/packet-ber.c.ll
-; wireshark/optimized/packet-bgp.c.ll
-; wireshark/optimized/packet-ftp.c.ll
-; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
-; wireshark/optimized/packet-rtmpt.c.ll
-; wireshark/optimized/packet-s5066sis.c.ll
-; wireshark/optimized/packet-smb.c.ll
-; wireshark/optimized/packet-udp.c.ll
-; wireshark/optimized/tvbparse.c.ll
-; wireshark/optimized/vwr.c.ll
-; yosys/optimized/shregmap.ll
-; yosys/optimized/splitcells.ll
-; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
-; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
-; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = call i32 @llvm.smin.i32(i32 %3, i32 %0)
-  ret i32 %4
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
 ; 261 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/fraigFeed.c.ll
@@ -429,6 +266,168 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %0)
+  ret i32 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 150 occurrences:
+; abc/optimized/cuddAnneal.c.ll
+; abc/optimized/cuddExact.c.ll
+; brotli/optimized/decode.c.ll
+; ceres/optimized/covariance_impl.cc.ll
+; cpython/optimized/blob.ll
+; darktable/optimized/introspection_highlights.c.ll
+; gromacs/optimized/dlascl.cpp.ll
+; gromacs/optimized/grid.cpp.ll
+; gromacs/optimized/slascl.cpp.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; kcp/optimized/ikcp.ll
+; libwebp/optimized/frame_dec.c.ll
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/network.cpp.ll
+; linux/optimized/af_unix.ll
+; linux/optimized/datagram.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/intel_dp.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/ip_output.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/netconsole.ll
+; linux/optimized/ohci-hcd.ll
+; linux/optimized/page-writeback.ll
+; linux/optimized/percpu.ll
+; linux/optimized/raw.ll
+; linux/optimized/seq_buf.ll
+; linux/optimized/seq_memory.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/tcp.ll
+; linux/optimized/tcp_input.ll
+; linux/optimized/tcp_output.ll
+; linux/optimized/tx.ll
+; linux/optimized/uhci-hcd.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; minetest/optimized/chat.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; ncnn/optimized/crop.cpp.ll
+; ncnn/optimized/gemm_x86.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; nuttx/optimized/lib_memsistream.c.ll
+; oiio/optimized/texturesys.cpp.ll
+; openblas/optimized/dlaqp3rk.c.ll
+; openblas/optimized/dlaqr5.c.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; openblas/optimized/dorgtsqr_row.c.ll
+; openblas/optimized/dpbtrf.c.ll
+; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/camshiftdemo.cpp.ll
+; opencv/optimized/cascadedetect.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/copy.cpp.ll
+; opencv/optimized/datastructs.cpp.ll
+; opencv/optimized/detection_based_tracker.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/exposure_compensate.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/gapi_core_perf_tests.cpp.ll
+; opencv/optimized/gfluidbackend.cpp.ll
+; opencv/optimized/gfluidbuffer.cpp.ll
+; opencv/optimized/gnnparsers.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; opencv/optimized/nms.cpp.ll
+; opencv/optimized/security_barrier_camera.cpp.ll
+; opencv/optimized/select3dobj.cpp.ll
+; opencv/optimized/stereobm.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; opencv/optimized/tr_icdar_benchmark.cpp.ll
+; opencv/optimized/tracker_goturn.cpp.ll
+; opencv/optimized/wbdetector.cpp.ll
+; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
+; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
+; openexr/optimized/ImfEnvmap.cpp.ll
+; openexr/optimized/ImfOutputFile.cpp.ll
+; openjdk/optimized/TransformHelper.ll
+; openjdk/optimized/convertnode.ll
+; openjdk/optimized/imageioJPEG.ll
+; openjdk/optimized/mlib_ImageConv_16nw.ll
+; openjdk/optimized/mlib_ImageConv_32nw.ll
+; openjdk/optimized/mlib_ImageConv_8nw.ll
+; openjdk/optimized/mlib_ImageConv_D64nw.ll
+; openjdk/optimized/mlib_ImageConv_F32nw.ll
+; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; openspiel/optimized/DealerPar.cpp.ll
+; openusd/optimized/json.cpp.ll
+; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/restoration.c.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/checkpointer.ll
+; postgres/optimized/copyfrom.ll
+; postgres/optimized/copyfromparse.ll
+; postgres/optimized/fd.ll
+; postgres/optimized/formatting.ll
+; postgres/optimized/heapam.ll
+; postgres/optimized/inv_api.ll
+; postgres/optimized/localbuf.ll
+; postgres/optimized/spgtextproc.ll
+; postgres/optimized/tablesync.ll
+; qemu/optimized/block_parallels.c.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/hw_ide_atapi.c.ll
+; qemu/optimized/hw_ide_core.c.ll
+; qemu/optimized/ui_console-vc.c.ll
+; qemu/optimized/ui_console.c.ll
+; qemu/optimized/ui_vnc-enc-tight.c.ll
+; raylib/optimized/raudio.c.ll
+; slurm/optimized/cbuf.ll
+; tev/optimized/ImageViewer.cpp.ll
+; velox/optimized/LeadLag.cpp.ll
+; velox/optimized/StreamArena.cpp.ll
+; wireshark/optimized/mate_runtime.c.ll
+; wireshark/optimized/packet-ber.c.ll
+; wireshark/optimized/packet-bgp.c.ll
+; wireshark/optimized/packet-ftp.c.ll
+; wireshark/optimized/packet-lapdm.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; wireshark/optimized/packet-s5066sis.c.ll
+; wireshark/optimized/packet-smb.c.ll
+; wireshark/optimized/packet-udp.c.ll
+; wireshark/optimized/tvbparse.c.ll
+; wireshark/optimized/vwr.c.ll
+; yosys/optimized/shregmap.ll
+; yosys/optimized/splitcells.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %3)
   ret i32 %4
 }
 

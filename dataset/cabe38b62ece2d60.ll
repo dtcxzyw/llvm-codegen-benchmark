@@ -1,11 +1,9 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaRetime.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigRetFwd.c.ll
-; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/recentcollect.c.ll
 ; gromacs/optimized/ebin.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; icu/optimized/dictbe.ll
@@ -134,7 +132,7 @@ entry:
   ret i1 %5
 }
 
-; 138 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -145,6 +143,7 @@ entry:
 ; boost/optimized/get_turns.ll
 ; clamav/optimized/dmg.c.ll
 ; cmake/optimized/deflate.c.ll
+; cpython/optimized/dtoa.ll
 ; csmith/optimized/StatementFor.cpp.ll
 ; cvc5/optimized/rewrite_atom.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -417,7 +416,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/cutNode.c.ll
 ; clamav/optimized/unzip.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -427,6 +426,7 @@ entry:
 ; llvm/optimized/ProcessImplicitDefs.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/mlib_ImageAffine.ll
 ; openjdk/optimized/mulnode.ll
@@ -451,12 +451,13 @@ entry:
   ret i1 %5
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
+; cpython/optimized/dtoa.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll

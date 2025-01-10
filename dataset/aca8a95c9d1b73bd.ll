@@ -1,5 +1,5 @@
 
-%class.MemRegion.2735546 = type { ptr, i64 }
+%class.MemRegion.2735512 = type { ptr, i64 }
 
 ; 9 occurrences:
 ; bullet3/optimized/b3DynamicBvh.ll
@@ -42,7 +42,7 @@ define ptr @func0000000000000063(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %class.MemRegion.2735546], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %class.MemRegion.2735512], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 15973 occurrences:
+; 15977 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -201,10 +201,8 @@
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaPat.c.ll
 ; abc/optimized/giaPat2.c.ll
-; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaScl.c.ll
@@ -1521,6 +1519,7 @@
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -2727,6 +2726,7 @@
 ; git/optimized/abspath.ll
 ; git/optimized/add-interactive.ll
 ; git/optimized/add-patch.ll
+; git/optimized/advice.ll
 ; git/optimized/am.ll
 ; git/optimized/apply.ll
 ; git/optimized/archive-tar.ll
@@ -4018,6 +4018,7 @@
 ; icu/optimized/olsontz.ll
 ; icu/optimized/package.ll
 ; icu/optimized/parse.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/pkg_genc.ll
 ; icu/optimized/pkg_gencmn.ll
 ; icu/optimized/pkgdata.ll
@@ -6830,6 +6831,7 @@
 ; logos-rs/optimized/f8j7k4fzt8jpxp1.ll
 ; logos-rs/optimized/r8lrmz9t8pnb4ov.ll
 ; lua/optimized/lcode.ll
+; lua/optimized/ldebug.ll
 ; lua/optimized/lgc.ll
 ; lua/optimized/lobject.ll
 ; lua/optimized/lstrlib.ll
@@ -10271,6 +10273,7 @@
 ; openssl/optimized/libcrypto-lib-ecx_backend.ll
 ; openssl/optimized/libcrypto-lib-ecx_meth.ll
 ; openssl/optimized/libcrypto-lib-encoder_meth.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-ess_lib.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-lib-evp_fetch.ll
@@ -10399,6 +10402,7 @@
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
 ; openssl/optimized/libcrypto-shlib-ecx_meth.ll
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-ess_lib.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_fetch.ll
@@ -12402,7 +12406,6 @@
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
@@ -15913,6 +15916,7 @@
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_decompress.c.ll

@@ -202,6 +202,18 @@ entry:
 }
 
 ; 1 occurrences:
+; faiss/optimized/AutoTune.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000282(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp sgt i32 %2, 2
+  %4 = icmp eq i64 %0, 1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i64 %0, i64 %1) #0 {

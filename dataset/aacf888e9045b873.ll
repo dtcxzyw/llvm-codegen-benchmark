@@ -1,5 +1,5 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::pxr_half::half.3388112" = type { i16 }
+%"class.pxrInternal_v0_24__pxrReserved__::pxr_half::half.3388078" = type { i16 }
 
 ; 1 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
@@ -108,7 +108,7 @@ entry:
   %4 = add i32 %3, 1
   %5 = mul i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::pxr_half::half.3388112", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::pxr_half::half.3388078", ptr %0, i64 %6
   ret ptr %7
 }
 

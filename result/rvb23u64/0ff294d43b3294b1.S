@@ -3,11 +3,6 @@ func0000000000000006:                   # @func0000000000000006
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func00000000000000a6:                   # @func00000000000000a6
-	sext.w	a2, a2
-	sub	a0, a0, a1
-	slt	a0, a0, a2
-	ret
 func0000000000000086:                   # @func0000000000000086
 	sext.w	a2, a2
 	sub	a0, a0, a1
@@ -105,11 +100,6 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
-func00000000000000d8:                   # @func00000000000000d8
-	sext.w	a2, a2
-	sub	a0, a0, a1
-	sltu	a0, a2, a0
-	ret
 func0000000000000024:                   # @func0000000000000024
 	zext.w	a2, a2
 	sub	a0, a0, a1
@@ -124,11 +114,6 @@ func000000000000000a:                   # @func000000000000000a
 	zext.w	a2, a2
 	sub	a0, a0, a1
 	slt	a0, a2, a0
-	ret
-func00000000000000a4:                   # @func00000000000000a4
-	sext.w	a2, a2
-	sub	a0, a0, a1
-	sltu	a0, a0, a2
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a2, a2
@@ -172,15 +157,15 @@ func00000000000000aa:                   # @func00000000000000aa
 	sub	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
-	sext.w	a2, a2
-	sub	a0, a0, a1
-	sltu	a0, a2, a0
-	ret
 func0000000000000028:                   # @func0000000000000028
 	zext.w	a2, a2
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
+	ret
+func00000000000000a6:                   # @func00000000000000a6
+	sext.w	a2, a2
+	sub	a0, a0, a1
+	slt	a0, a0, a2
 	ret
 func0000000000000045:                   # @func0000000000000045
 	zext.w	a2, a2
@@ -193,6 +178,11 @@ func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	xori	a0, a0, 1
+	ret
+func00000000000000a4:                   # @func00000000000000a4
+	sext.w	a2, a2
+	sub	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 func0000000000000098:                   # @func0000000000000098
 	sext.w	a2, a2

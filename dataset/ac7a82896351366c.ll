@@ -68,6 +68,18 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/scsi_logging.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -3
+  %4 = icmp ugt i64 %0, %3
+  %5 = icmp eq i64 %1, 0
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {

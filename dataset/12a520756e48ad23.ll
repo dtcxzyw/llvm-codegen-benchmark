@@ -1,14 +1,14 @@
 
-%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791401 = type { i32 }
-%"class.std::tuple.2824823" = type { %"struct.std::_Tuple_impl.2824824" }
-%"struct.std::_Tuple_impl.2824824" = type { %"struct.std::_Tuple_impl.87.2824819", %"struct.std::_Head_base.90.2824825" }
-%"struct.std::_Tuple_impl.87.2824819" = type { %"struct.std::_Tuple_impl.88.2824820", %"struct.std::_Head_base.89.2824821" }
-%"struct.std::_Tuple_impl.88.2824820" = type { %"struct.std::_Head_base.2824822" }
-%"struct.std::_Head_base.2824822" = type { i64 }
-%"struct.std::_Head_base.89.2824821" = type { %class.aiVector3t.2824802 }
-%class.aiVector3t.2824802 = type { double, double, double }
-%"struct.std::_Head_base.90.2824825" = type { i64 }
+%struct._zend_op.2791358 = type { ptr, %union._znode_op.2791367, %union._znode_op.2791367, %union._znode_op.2791367, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791367 = type { i32 }
+%"class.std::tuple.2824789" = type { %"struct.std::_Tuple_impl.2824790" }
+%"struct.std::_Tuple_impl.2824790" = type { %"struct.std::_Tuple_impl.87.2824785", %"struct.std::_Head_base.90.2824791" }
+%"struct.std::_Tuple_impl.87.2824785" = type { %"struct.std::_Tuple_impl.88.2824786", %"struct.std::_Head_base.89.2824787" }
+%"struct.std::_Tuple_impl.88.2824786" = type { %"struct.std::_Head_base.2824788" }
+%"struct.std::_Head_base.2824788" = type { i64 }
+%"struct.std::_Head_base.89.2824787" = type { %class.aiVector3t.2824768 }
+%class.aiVector3t.2824768 = type { double, double, double }
+%"struct.std::_Head_base.90.2824791" = type { i64 }
 
 ; 318 occurrences:
 ; abc/optimized/deflate.c.ll
@@ -922,9 +922,10 @@ entry:
   ret i64 %7
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; cmake/optimized/entropy_common.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/Pragma.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -952,8 +953,7 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/AsmLexer.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -962,7 +962,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
@@ -979,7 +979,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::tuple.2824823", ptr %1, i64 %2
+  %3 = getelementptr %"class.std::tuple.2824789", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64

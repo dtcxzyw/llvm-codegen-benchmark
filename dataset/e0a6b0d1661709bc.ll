@@ -1,5 +1,5 @@
 
-; 7728 occurrences:
+; 7726 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -2598,7 +2598,6 @@
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/ExecutionDomainFix.cpp.ll
@@ -3022,7 +3021,6 @@
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll

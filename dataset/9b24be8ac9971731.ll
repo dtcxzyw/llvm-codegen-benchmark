@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/dstebz.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openspiel/optimized/goofspiel.cc.ll
 ; velox/optimized/NthValue.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i64 %1, i32 %2) #0 {

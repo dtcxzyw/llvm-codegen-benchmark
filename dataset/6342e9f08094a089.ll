@@ -1,10 +1,12 @@
 
-; 5669 occurrences:
+; 5672 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose2.cpp.ll
+; abc/optimized/SimpSolver.cpp.ll
+; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -567,6 +569,7 @@
 ; clamav/optimized/unpack.cpp.ll
 ; clamav/optimized/vba_extract.c.ll
 ; clamav/optimized/www.c.ll
+; clamav/optimized/xlm_extract.c.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/rh1bh36cvgkzipt.ll
 ; cmake/optimized/MD5.c.ll
@@ -698,6 +701,7 @@
 ; csmith/optimized/Filter.cpp.ll
 ; curl/optimized/libcurl_la-mime.ll
 ; curl/optimized/libcurl_la-ntlm.ll
+; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -4941,7 +4945,6 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; slurm/optimized/acct_gather_energy.ll
-; slurm/optimized/bitstring.ll
 ; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/gres_select_filter.ll

@@ -1,5 +1,5 @@
 
-; 878 occurrences:
+; 882 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaIso2.c.ll
@@ -546,6 +546,8 @@
 ; oiio/optimized/ustring.cpp.ll
 ; openblas/optimized/daxpy_k.c.ll
 ; openblas/optimized/ddot_k.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
@@ -560,6 +562,8 @@
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
@@ -886,7 +890,7 @@ entry:
   ret i64 %2
 }
 
-; 1990 occurrences:
+; 1986 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -2061,14 +2065,10 @@ entry:
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/printinfo.cpp.ll
 ; openblas/optimized/dgemm_beta.c.ll
-; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/dgemm_small_kernel_b0_tn.c.ll
-; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemm_small_kernel_tn.c.ll
 ; openblas/optimized/dscal_k.c.ll
 ; openblas/optimized/sgemm_beta.c.ll
-; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
-; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; openblas/optimized/sscal_k.c.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/Logos.cpp.ll

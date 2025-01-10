@@ -17,11 +17,3 @@ func000000000000028a:                   # @func000000000000028a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000002aa:                   # @func00000000000002aa
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpsubd	%ymm3, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

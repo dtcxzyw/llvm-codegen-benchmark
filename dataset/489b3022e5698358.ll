@@ -1,6 +1,6 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
-%class.QCPGraphData.3451166 = type { double, double }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 158 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -316,7 +316,7 @@ entry:
   %2 = ashr i64 %1, 3
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -342,7 +342,7 @@ entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %4
   ret ptr %5
 }
 

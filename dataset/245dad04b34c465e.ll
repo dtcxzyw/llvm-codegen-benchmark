@@ -108,21 +108,17 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
-; abseil-cpp/optimized/charconv_bigint.cc.ll
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 4 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
 ; double_conversion/optimized/double-to-string.cc.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/double-to-string.cc.ll
-; sqlite/optimized/sqlite3.ll
-; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
-; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw [121 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [121 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -139,14 +135,18 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
-; openusd/optimized/decodemv.c.ll
+; 5 occurrences:
+; abseil-cpp/optimized/charconv_bigint.cc.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw [8 x [8 x i16]], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [30 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

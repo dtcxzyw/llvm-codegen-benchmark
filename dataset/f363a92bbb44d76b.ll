@@ -1,5 +1,5 @@
 
-; 2421 occurrences:
+; 2420 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -29,7 +29,6 @@
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
@@ -646,6 +645,7 @@
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
@@ -967,7 +967,6 @@
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; node/optimized/libnode.node_file.ll
-; node/optimized/simdutf.ll
 ; nori/optimized/button.cpp.ll
 ; nori/optimized/canvas.cpp.ll
 ; nori/optimized/checkbox.cpp.ll
@@ -2534,7 +2533,7 @@ entry:
   ret i64 %4
 }
 
-; 256 occurrences:
+; 258 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/darLib.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
@@ -2689,6 +2688,7 @@ entry:
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; node/optimized/simdutf.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/cap_v4l.cpp.ll
@@ -2745,6 +2745,7 @@ entry:
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; syn/optimized/19z3k5eqgbxjiezn.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll

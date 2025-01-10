@@ -1,7 +1,7 @@
 
-%struct.Mmr_Fixed_t_.2877738 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2877739, %struct.Vec_Int_t_.2877740 }
-%struct.Vec_Ptr_t_.2877739 = type { i32, i32, ptr }
-%struct.Vec_Int_t_.2877740 = type { i32, i32, ptr }
+%struct.Mmr_Fixed_t_.2877704 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2877705, %struct.Vec_Int_t_.2877706 }
+%struct.Vec_Ptr_t_.2877705 = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2877706 = type { i32, i32, ptr }
 
 ; 23 occurrences:
 ; hermes/optimized/Array.cpp.ll
@@ -156,7 +156,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw nuw %struct.Mmr_Fixed_t_.2877738, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %struct.Mmr_Fixed_t_.2877704, ptr %5, i64 %4
   ret ptr %6
 }
 

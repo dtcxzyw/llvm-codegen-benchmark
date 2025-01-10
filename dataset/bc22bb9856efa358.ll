@@ -1,5 +1,5 @@
 
-; 147 occurrences:
+; 146 occurrences:
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -128,7 +128,6 @@
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/blifparse.ll

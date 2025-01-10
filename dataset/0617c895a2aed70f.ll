@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2876024 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2875990 = type <{ i64, i32 }>
 
 ; 1 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -38,8 +38,8 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = sub nsw i64 0, %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %0, i64 %5
-  %7 = getelementptr nusw %struct.Gia_Obj_t_.2876024, ptr %6, i64 %4
+  %6 = getelementptr nusw %struct.Gia_Obj_t_.2875990, ptr %0, i64 %5
+  %7 = getelementptr nusw %struct.Gia_Obj_t_.2875990, ptr %6, i64 %4
   ret ptr %7
 }
 

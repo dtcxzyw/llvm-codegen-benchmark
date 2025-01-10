@@ -87,9 +87,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; gromacs/optimized/grid.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i64 %2) #0 {
 entry:

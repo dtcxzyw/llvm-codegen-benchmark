@@ -29,6 +29,23 @@ entry:
   ret i32 %4
 }
 
+; 7 occurrences:
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaPf.c.ll
+; cpython/optimized/difradix2.ll
+; hyperscan/optimized/limex_simd384.c.ll
+; hyperscan/optimized/limex_simd512.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; wireshark/optimized/packet-rtp-midi.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 63
+  %3 = add nuw nsw i32 %0, 1
+  %4 = sub nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 11 occurrences:
 ; bullet3/optimized/btDantzigLCP.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
@@ -70,22 +87,6 @@ entry:
   %2 = and i32 %1, -4
   %3 = add nsw i32 %0, -4
   %4 = sub i32 %3, %2
-  ret i32 %4
-}
-
-; 6 occurrences:
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaPf.c.ll
-; cpython/optimized/difradix2.ll
-; hyperscan/optimized/limex_simd384.c.ll
-; hyperscan/optimized/limex_simd512.c.ll
-; wireshark/optimized/packet-rtp-midi.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 32
-  %3 = add nuw nsw i32 %0, 97
-  %4 = sub nuw nsw i32 %3, %2
   ret i32 %4
 }
 

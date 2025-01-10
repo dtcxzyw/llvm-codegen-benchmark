@@ -1,11 +1,10 @@
 
-; 193 occurrences:
+; 192 occurrences:
 ; abc/optimized/fxuCreate.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/retDelay.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
-; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; boost/optimized/area.ll
 ; boost/optimized/area_geo.ll

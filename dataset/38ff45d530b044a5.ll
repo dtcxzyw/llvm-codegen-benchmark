@@ -53,7 +53,7 @@ entry:
   ret i64 %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/aigPartSat.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/saigRetMin.c.ll
@@ -113,7 +113,6 @@ entry:
 ; redis/optimized/memtest.ll
 ; ruby/optimized/vm.ll
 ; slurm/optimized/reservation.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

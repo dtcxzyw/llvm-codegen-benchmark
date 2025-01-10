@@ -1,5 +1,5 @@
 
-; 190 occurrences:
+; 189 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -28,7 +28,6 @@
 ; faiss/optimized/InvertedLists.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
-; git/optimized/line-log.ll
 ; git/optimized/remote.ll
 ; gromacs/optimized/coder.c.ll
 ; gromacs/optimized/pbcmethods.cpp.ll

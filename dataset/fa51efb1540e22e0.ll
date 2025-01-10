@@ -80,9 +80,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_bw.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; re2/optimized/prog.cc.ll
 ; re2/optimized/regexp.cc.ll
 ; slurm/optimized/step_mgr.ll

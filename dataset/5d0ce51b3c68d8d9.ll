@@ -63,23 +63,6 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
-; icu/optimized/ucnvsel.ll
-; openblas/optimized/dstedc.c.ll
-; openmpi/optimized/ad_aggregate_new.ll
-; openspiel/optimized/tiny_bridge.cc.ll
-; openusd/optimized/reconintra.c.ll
-; redis/optimized/hdr_histogram.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
 ; 2 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
@@ -88,6 +71,22 @@ define i64 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp samesign ult i32 %2, 67
   %4 = select i1 %3, i32 -16, i32 %1
+  %5 = add nsw i32 %0, %4
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 5 occurrences:
+; icu/optimized/ucnvsel.ll
+; openblas/optimized/dstedc.c.ll
+; openmpi/optimized/ad_aggregate_new.ll
+; openspiel/optimized/tiny_bridge.cc.ll
+; redis/optimized/hdr_histogram.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 2
+  %4 = select i1 %3, i32 14, i32 %1
   %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifTune.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -7,6 +7,7 @@
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; libquic/optimized/modp_b64.cc.ll
+; libquic/optimized/t1_lib.c.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/timekeeping.ll
 ; luau/optimized/lnumprint.cpp.ll

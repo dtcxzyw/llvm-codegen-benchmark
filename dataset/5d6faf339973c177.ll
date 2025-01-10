@@ -38,13 +38,12 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; hermes/optimized/InstSimplify.cpp.ll
 ; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/pci.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll

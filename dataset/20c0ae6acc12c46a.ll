@@ -90,16 +90,15 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; openmpi/optimized/coll_base_barrier.ll
 ; openmpi/optimized/nbc_iallreduce.ll
-; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = icmp sgt i32 %1, 0
+  %4 = icmp sgt i32 %1, 1
   %5 = select i1 %3, i1 %4, i1 false
   %6 = and i1 %5, %0
   ret i1 %6

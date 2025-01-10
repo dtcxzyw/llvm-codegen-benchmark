@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
-%union.Value.3660450 = type { ptr }
+%struct.lua_TValue.3660399 = type { %union.Value.3660400, i32 }
+%union.Value.3660400 = type { ptr }
 
 ; 3 occurrences:
 ; boost/optimized/static_string.ll
@@ -414,7 +414,7 @@ define i1 @func00000000000001e8(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw %struct.lua_TValue.3660449, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.lua_TValue.3660399, ptr %4, i64 %3
   %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }

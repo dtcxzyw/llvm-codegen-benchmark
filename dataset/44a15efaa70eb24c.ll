@@ -12,11 +12,12 @@ entry:
   ret i64 %5
 }
 
-; 106 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; darktable/optimized/MosDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; libquic/optimized/a_d2i_fp.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll

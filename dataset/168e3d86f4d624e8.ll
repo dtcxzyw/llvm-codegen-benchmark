@@ -1,5 +1,5 @@
 
-%"class.asio::detail::op_queue.147.2776500" = type { ptr, ptr }
+%"class.asio::detail::op_queue.147.2776466" = type { ptr, ptr }
 
 ; 37 occurrences:
 ; boost/optimized/async.ll
@@ -43,7 +43,7 @@
 define ptr @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776500"], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776466"], ptr %1, i64 0, i64 %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6

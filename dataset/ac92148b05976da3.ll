@@ -1,5 +1,5 @@
 
-; 238 occurrences:
+; 240 occurrences:
 ; boost/optimized/benchmark_fstream.ll
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/test_filebuf.ll
@@ -192,6 +192,8 @@
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
+; openblas/optimized/dasum_k.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; openmpi/optimized/ad_read_coll.ll
@@ -249,7 +251,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 149 occurrences:
+; 151 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/buffered.cc.ll
@@ -363,6 +365,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; minetest/optimized/profilergraph.cpp.ll
 ; node/optimized/libnode.js_stream.ll
 ; node/optimized/libnode.node_http2.ll
+; openblas/optimized/dasum_k.c.ll
 ; openblas/optimized/dtbmv_thread_NLN.c.ll
 ; openblas/optimized/dtbmv_thread_NLU.c.ll
 ; openblas/optimized/dtbmv_thread_NUN.c.ll
@@ -371,6 +374,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; openblas/optimized/dtbmv_thread_TLU.c.ll
 ; openblas/optimized/dtbmv_thread_TUN.c.ll
 ; openblas/optimized/dtbmv_thread_TUU.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll

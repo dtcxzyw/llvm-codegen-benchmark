@@ -1,26 +1,26 @@
 
-%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
-%"struct.std::array.2683308" = type { [14 x i8] }
-%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%struct.hb_bit_page_t.2733381 = type { i32, %struct.hb_vector_size_t.2733382 }
-%struct.hb_vector_size_t.2733382 = type { [8 x i64] }
-%"struct.folly::f14::detail::F14Chunk.2797843" = type { %"struct.std::array.2797844", i8, i8, %"struct.std::array.206.2797845", [2 x i8] }
-%"struct.std::array.2797844" = type { [14 x i8] }
-%"struct.std::array.206.2797845" = type { [14 x %"union.std::aligned_storage<1, 1>::type.2797846"] }
-%"union.std::aligned_storage<1, 1>::type.2797846" = type { [1 x i8] }
-%struct.PGPROC.3651854 = type { %struct.dlist_node.3651855, ptr, ptr, i32, %struct.Latch.3651856, i32, i32, i32, i32, %struct.anon.3651857, i32, i32, i32, i8, i8, i8, i8, %struct.proclist_node.3651858, %struct.proclist_node.3651858, ptr, ptr, i32, i32, %struct.pg_atomic_uint64.3651859, i32, i8, i64, i32, %struct.dlist_node.3651855, [16 x %struct.dlist_head.3651860], %struct.XidCacheStatus.3651853, %struct.XidCache.3651861, i8, %struct.pg_atomic_uint32.3651862, i32, i32, i8, %struct.pg_atomic_uint32.3651862, i32, i32, i64, i64, %struct.LWLock.3651863, i64, [16 x i32], i8, i32, ptr, %struct.dlist_head.3651860, %struct.dlist_node.3651855 }
-%struct.Latch.3651856 = type { i32, i32, i8, i32 }
-%struct.anon.3651857 = type { i32, i32 }
-%struct.proclist_node.3651858 = type { i32, i32 }
-%struct.pg_atomic_uint64.3651859 = type { i64 }
-%struct.XidCacheStatus.3651853 = type { i8, i8 }
-%struct.XidCache.3651861 = type { [64 x i32] }
-%struct.pg_atomic_uint32.3651862 = type { i32 }
-%struct.LWLock.3651863 = type { i16, %struct.pg_atomic_uint32.3651862, %struct.proclist_head.3651864 }
-%struct.proclist_head.3651864 = type { i32, i32 }
-%struct.dlist_head.3651860 = type { %struct.dlist_node.3651855 }
-%struct.dlist_node.3651855 = type { ptr, ptr }
+%"struct.folly::f14::detail::F14Chunk.2683274" = type { %"struct.std::array.2683275", i8, i8, %"struct.std::array.53.2683276" }
+%"struct.std::array.2683275" = type { [14 x i8] }
+%"struct.std::array.53.2683276" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683234"] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%struct.hb_bit_page_t.2733347 = type { i32, %struct.hb_vector_size_t.2733348 }
+%struct.hb_vector_size_t.2733348 = type { [8 x i64] }
+%"struct.folly::f14::detail::F14Chunk.2797809" = type { %"struct.std::array.2797810", i8, i8, %"struct.std::array.206.2797811", [2 x i8] }
+%"struct.std::array.2797810" = type { [14 x i8] }
+%"struct.std::array.206.2797811" = type { [14 x %"union.std::aligned_storage<1, 1>::type.2797812"] }
+%"union.std::aligned_storage<1, 1>::type.2797812" = type { [1 x i8] }
+%struct.PGPROC.3651820 = type { %struct.dlist_node.3651821, ptr, ptr, i32, %struct.Latch.3651822, i32, i32, i32, i32, %struct.anon.3651823, i32, i32, i32, i8, i8, i8, i8, %struct.proclist_node.3651824, %struct.proclist_node.3651824, ptr, ptr, i32, i32, %struct.pg_atomic_uint64.3651825, i32, i8, i64, i32, %struct.dlist_node.3651821, [16 x %struct.dlist_head.3651826], %struct.XidCacheStatus.3651819, %struct.XidCache.3651827, i8, %struct.pg_atomic_uint32.3651828, i32, i32, i8, %struct.pg_atomic_uint32.3651828, i32, i32, i64, i64, %struct.LWLock.3651829, i64, [16 x i32], i8, i32, ptr, %struct.dlist_head.3651826, %struct.dlist_node.3651821 }
+%struct.Latch.3651822 = type { i32, i32, i8, i32 }
+%struct.anon.3651823 = type { i32, i32 }
+%struct.proclist_node.3651824 = type { i32, i32 }
+%struct.pg_atomic_uint64.3651825 = type { i64 }
+%struct.XidCacheStatus.3651819 = type { i8, i8 }
+%struct.XidCache.3651827 = type { [64 x i32] }
+%struct.pg_atomic_uint32.3651828 = type { i32 }
+%struct.LWLock.3651829 = type { i16, %struct.pg_atomic_uint32.3651828, %struct.proclist_head.3651830 }
+%struct.proclist_head.3651830 = type { i32, i32 }
+%struct.dlist_head.3651826 = type { %struct.dlist_node.3651821 }
+%struct.dlist_node.3651821 = type { ptr, ptr }
 
 ; 44 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -71,8 +71,8 @@
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %0, i64 %1, i32 3
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2683274", ptr %0, i64 %1, i32 3
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -89,7 +89,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733381, ptr %0, i64 %1, i32 1
+  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733347, ptr %0, i64 %1, i32 1
   %5 = getelementptr nusw nuw [8 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -104,7 +104,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733381, ptr %0, i64 %1, i32 1
+  %4 = getelementptr nusw nuw %struct.hb_bit_page_t.2733347, ptr %0, i64 %1, i32 1
   %5 = getelementptr nusw nuw [8 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -116,8 +116,8 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2797843", ptr %0, i64 %1, i32 3
-  %5 = getelementptr nusw [14 x %"union.std::aligned_storage<1, 1>::type.2797846"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2797809", ptr %0, i64 %1, i32 3
+  %5 = getelementptr nusw [14 x %"union.std::aligned_storage<1, 1>::type.2797812"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -127,7 +127,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr %struct.PGPROC.3651854, ptr %0, i64 %1, i32 31
+  %4 = getelementptr %struct.PGPROC.3651820, ptr %0, i64 %1, i32 31
   %5 = getelementptr [64 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

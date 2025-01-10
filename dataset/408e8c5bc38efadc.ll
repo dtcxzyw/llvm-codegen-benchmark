@@ -70,7 +70,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 134 occurrences:
+; 138 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/llb2Flow.c.ll
@@ -100,8 +100,10 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; luajit/optimized/lib_string_dyn.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_span.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
+; nori/optimized/nanovg.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -175,7 +177,6 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
@@ -184,11 +185,14 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; openspiel/optimized/cards.cc.ll
 ; openusd/optimized/reconinter.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/fe-trace.ll
 ; raylib/optimized/raudio.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-dhcpv6.c.ll

@@ -1,5 +1,5 @@
 
-%class.G1MMUTrackerElem.2732404 = type { double, double }
+%class.G1MMUTrackerElem.2732370 = type { double, double }
 
 ; 3 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -12,7 +12,7 @@ entry:
   %4 = srem i32 %3, 64
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %7 = getelementptr nusw [64 x %class.G1MMUTrackerElem.2732404], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw [64 x %class.G1MMUTrackerElem.2732370], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

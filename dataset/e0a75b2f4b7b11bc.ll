@@ -1,9 +1,9 @@
 
-%"class.std::bitset.2750576" = type { %"struct.std::_Base_bitset.2750577" }
-%"struct.std::_Base_bitset.2750577" = type { [2 x i64] }
-%struct.flow_dissector_mpls_lse.3532966 = type { i32 }
-%"class.cv::Vec.26.3727766" = type { %"class.cv::Matx.27.3727767" }
-%"class.cv::Matx.27.3727767" = type { [3 x float] }
+%"class.std::bitset.2750542" = type { %"struct.std::_Base_bitset.2750543" }
+%"struct.std::_Base_bitset.2750543" = type { [2 x i64] }
+%struct.flow_dissector_mpls_lse.3532932 = type { i32 }
+%"class.cv::Vec.26.3727716" = type { %"class.cv::Matx.27.3727717" }
+%"class.cv::Matx.27.3727717" = type { [3 x float] }
 
 ; 13 occurrences:
 ; gromacs/optimized/vcm.cpp.ll
@@ -23,7 +23,7 @@
 define ptr @func000000000000000f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::bitset.2750576", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::bitset.2750542", ptr %1, i64 %3
   %5 = getelementptr nusw nuw [2 x i64], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -36,7 +36,7 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr [7 x %struct.flow_dissector_mpls_lse.3532966], ptr %4, i64 0, i64 %0
+  %5 = getelementptr [7 x %struct.flow_dissector_mpls_lse.3532932], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -46,7 +46,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"class.cv::Vec.26.3727766", ptr %1, i64 %3
+  %4 = getelementptr %"class.cv::Vec.26.3727716", ptr %1, i64 %3
   %5 = getelementptr nusw nuw [3 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

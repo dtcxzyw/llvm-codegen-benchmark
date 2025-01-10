@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/uhci-hcd.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll

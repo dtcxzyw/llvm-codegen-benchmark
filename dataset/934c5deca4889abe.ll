@@ -20,7 +20,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -33,7 +33,6 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-var.ll
-; php/optimized/pcre2_compile.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
@@ -44,12 +43,11 @@ entry:
   ret i32 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/modulegroups.c.ll
 ; git/optimized/connected.ll
 ; git/optimized/convert.ll
 ; git/optimized/gpg-interface.ll
@@ -80,7 +78,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -90,6 +88,7 @@ entry:
 ; linux/optimized/ibss.ll
 ; openblas/optimized/utest_main.c.ll
 ; opencv/optimized/brightedges.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; redis/optimized/util.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind

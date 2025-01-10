@@ -1,6 +1,6 @@
 
-%class.rcTempVector.1.3108600 = type { %class.rcVectorBase.2.3108601 }
-%class.rcVectorBase.2.3108601 = type { i64, i64, ptr }
+%class.rcTempVector.1.3108566 = type { %class.rcVectorBase.2.3108567 }
+%class.rcVectorBase.2.3108567 = type { i64, i64, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [8 x %class.rcTempVector.1.3108600], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [8 x %class.rcTempVector.1.3108566], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

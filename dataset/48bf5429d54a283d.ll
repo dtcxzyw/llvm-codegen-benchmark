@@ -151,8 +151,9 @@ entry:
   ret ptr %7
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/kitSop.c.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -288,19 +289,6 @@ entry:
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   %6 = sext i32 %0 to i64
   %7 = getelementptr double, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(i32 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -1
-  %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

@@ -406,7 +406,8 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; slurm/optimized/cron.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {

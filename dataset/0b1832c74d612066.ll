@@ -70,15 +70,4 @@ entry:
   ret i128 %4
 }
 
-; 1 occurrences:
-; libquic/optimized/p256-64.c.ll
-; Function Attrs: nounwind
-define i128 @func000000000000000c(i128 %0, i128 %1) #0 {
-entry:
-  %2 = shl i128 %1, 1
-  %3 = add nuw nsw i128 %0, 18446744069414584320
-  %4 = add i128 %3, %2
-  ret i128 %4
-}
-
 attributes #0 = { nounwind }

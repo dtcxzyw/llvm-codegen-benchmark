@@ -15,18 +15,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; hdf5/optimized/H5B2int.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 1
-  %3 = and i32 %2, 65535
-  %4 = xor i32 %3, -1
-  %5 = add i32 %0, %4
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/sparse.ll
 ; linux/optimized/xz_dec_bcj.ll

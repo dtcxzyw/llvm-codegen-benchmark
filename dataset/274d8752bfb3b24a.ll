@@ -1,5 +1,5 @@
 
-%struct.NvmeFdpEvent.2708956 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
+%struct.NvmeFdpEvent.2708922 = type <{ i8, i8, i16, i64, i32, [2 x i64], i16, i8, [5 x i8], [3 x i64] }>
 
 ; 292 occurrences:
 ; arrow/optimized/key_map.cc.ll
@@ -486,7 +486,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 63, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.NvmeFdpEvent.2708956, ptr %0, i64 %3
+  %4 = getelementptr %struct.NvmeFdpEvent.2708922, ptr %0, i64 %3
   ret ptr %4
 }
 

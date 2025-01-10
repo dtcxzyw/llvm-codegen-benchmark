@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 201 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
@@ -17,7 +17,6 @@
 ; double_conversion/optimized/string-to-double.cc.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll

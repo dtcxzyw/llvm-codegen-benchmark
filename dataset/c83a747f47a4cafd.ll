@@ -1,5 +1,5 @@
 
-%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
+%struct.drm_color_lut.3530975 = type { i16, i16, i16, i16 }
 
 ; 55 occurrences:
 ; abc/optimized/abcPart.c.ll
@@ -95,7 +95,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %4
+  %5 = getelementptr %struct.drm_color_lut.3530975, ptr %0, i64 %4
   ret ptr %5
 }
 

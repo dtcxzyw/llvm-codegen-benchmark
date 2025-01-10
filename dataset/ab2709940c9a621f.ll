@@ -1,18 +1,18 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%"struct.std::pair.44.3290133" = type { i64, %"class.llvm::SmallVector.0.3290069" }
-%"class.llvm::SmallVector.0.3290069" = type { %"class.llvm::SmallVectorImpl.1.3290071", %"struct.llvm::SmallVectorStorage.4.3290072" }
-%"class.llvm::SmallVectorImpl.1.3290071" = type { %"class.llvm::SmallVectorTemplateBase.2.3290073" }
-%"class.llvm::SmallVectorTemplateBase.2.3290073" = type { %"class.llvm::SmallVectorTemplateCommon.3.3290074" }
-%"class.llvm::SmallVectorTemplateCommon.3.3290074" = type { %"class.llvm::SmallVectorBase.3290067" }
-%"class.llvm::SmallVectorBase.3290067" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.4.3290072" = type { [48 x i8] }
-%"class.llvm::MachineOperand.3348886" = type { i32, %union.anon.181.3348887, ptr, %"union.llvm::MachineOperand::ContentsUnion.3348888" }
-%union.anon.181.3348887 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3348888" = type { %"class.llvm::ArrayRef.3348889" }
-%"class.llvm::ArrayRef.3348889" = type { ptr, i64 }
-%"struct.cv::ximgproc::Ellipse.3748037" = type { ptr, %"class.cv::Point_.3748004", float, float, float, float }
-%"class.cv::Point_.3748004" = type { float, float }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"struct.std::pair.44.3290099" = type { i64, %"class.llvm::SmallVector.0.3290035" }
+%"class.llvm::SmallVector.0.3290035" = type { %"class.llvm::SmallVectorImpl.1.3290037", %"struct.llvm::SmallVectorStorage.4.3290038" }
+%"class.llvm::SmallVectorImpl.1.3290037" = type { %"class.llvm::SmallVectorTemplateBase.2.3290039" }
+%"class.llvm::SmallVectorTemplateBase.2.3290039" = type { %"class.llvm::SmallVectorTemplateCommon.3.3290040" }
+%"class.llvm::SmallVectorTemplateCommon.3.3290040" = type { %"class.llvm::SmallVectorBase.3290033" }
+%"class.llvm::SmallVectorBase.3290033" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.4.3290038" = type { [48 x i8] }
+%"class.llvm::MachineOperand.3348852" = type { i32, %union.anon.181.3348853, ptr, %"union.llvm::MachineOperand::ContentsUnion.3348854" }
+%union.anon.181.3348853 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3348854" = type { %"class.llvm::ArrayRef.3348855" }
+%"class.llvm::ArrayRef.3348855" = type { ptr, i64 }
+%"struct.cv::ximgproc::Ellipse.3747987" = type { ptr, %"class.cv::Point_.3747954", float, float, float, float }
+%"class.cv::Point_.3747954" = type { float, float }
 
 ; 78 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -98,7 +98,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -146,7 +146,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -186,7 +186,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.std::pair.44.3290133", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.std::pair.44.3290099", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -197,7 +197,7 @@ define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw %"class.llvm::MachineOperand.3348886", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.llvm::MachineOperand.3348852", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -211,7 +211,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw %"struct.cv::ximgproc::Ellipse.3748037", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.cv::ximgproc::Ellipse.3747987", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

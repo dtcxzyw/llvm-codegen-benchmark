@@ -1,6 +1,6 @@
 
-%"class.sat::literal.3627548" = type { i32 }
-%union.ListCell.3652869 = type { ptr }
+%"class.sat::literal.3627514" = type { i32 }
+%union.ListCell.3652835 = type { ptr }
 
 ; 2 occurrences:
 ; abc/optimized/cbaBlast.c.ll
@@ -51,7 +51,7 @@ entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.sat::literal.3627548", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.sat::literal.3627514", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.ListCell.3652869, ptr %0, i64 %4
+  %5 = getelementptr %union.ListCell.3652835, ptr %0, i64 %4
   ret ptr %5
 }
 

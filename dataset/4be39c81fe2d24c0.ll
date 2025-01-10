@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::DynamicPattern.2639935" = type <{ %"class.std::basic_string_view.2639862", %"class.std::basic_string_view.2639862", i8, [7 x i8] }>
-%"class.std::basic_string_view.2639862" = type { i64, ptr }
+%"struct.mold::elf::DynamicPattern.2639902" = type <{ %"class.std::basic_string_view.2639829", %"class.std::basic_string_view.2639829", i8, [7 x i8] }>
+%"class.std::basic_string_view.2639829" = type { i64, ptr }
 
 ; 60 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -67,7 +67,7 @@
 define i1 @func00000000000002c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -40
-  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639935", ptr %1, i64 %.neg
+  %3 = getelementptr nusw %"struct.mold::elf::DynamicPattern.2639902", ptr %1, i64 %.neg
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }

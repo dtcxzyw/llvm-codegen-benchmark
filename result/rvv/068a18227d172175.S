@@ -38,8 +38,3 @@ func0000000000000008:                   # @func0000000000000008
 	vsrl.vi	v9, v9, 1
 	vmsltu.vv	v0, v8, v9
 	ret
-func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vsrl.vi	v9, v9, 1
-	vmsleu.vv	v0, v8, v9
-	ret

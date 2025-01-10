@@ -1,5 +1,5 @@
 
-%class.relocInfo.2733766 = type { i16 }
+%class.relocInfo.2733732 = type { i16 }
 
 ; 31 occurrences:
 ; cmake/optimized/cmTestGenerator.cxx.ll
@@ -69,7 +69,7 @@ define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16777215
   %3 = getelementptr nusw nuw i8, ptr %0, i64 30
-  %4 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

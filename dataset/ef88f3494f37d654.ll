@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
 
 ; 23 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
@@ -51,7 +51,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %1, i64 %3
+  %4 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6

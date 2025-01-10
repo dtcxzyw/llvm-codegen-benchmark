@@ -1,16 +1,16 @@
 
-%"class.clang::TemplateArgumentLoc.3137889" = type { %"class.clang::TemplateArgument.3137890", %"struct.clang::TemplateArgumentLocInfo.3137891" }
-%"class.clang::TemplateArgument.3137890" = type { %union.anon.672.3137892 }
-%union.anon.672.3137892 = type { %"struct.clang::TemplateArgument::DA.3137893" }
-%"struct.clang::TemplateArgument::DA.3137893" = type { i32, ptr, ptr }
-%"struct.clang::TemplateArgumentLocInfo.3137891" = type { %"class.llvm::PointerUnion.686.3137894" }
-%"class.llvm::PointerUnion.686.3137894" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.687.3137895" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.687.3137895" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.688.3137896" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.688.3137896" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.689.3137897" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.689.3137897" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.690.3137898" }
-%"class.llvm::pointer_union_detail::PointerUnionMembers.690.3137898" = type { %"class.llvm::PointerIntPair.691.3137899" }
-%"class.llvm::PointerIntPair.691.3137899" = type { %"struct.llvm::detail::PunnedPointer.3.3137900" }
-%"struct.llvm::detail::PunnedPointer.3.3137900" = type { [8 x i8] }
+%"class.clang::TemplateArgumentLoc.3137855" = type { %"class.clang::TemplateArgument.3137856", %"struct.clang::TemplateArgumentLocInfo.3137857" }
+%"class.clang::TemplateArgument.3137856" = type { %union.anon.672.3137858 }
+%union.anon.672.3137858 = type { %"struct.clang::TemplateArgument::DA.3137859" }
+%"struct.clang::TemplateArgument::DA.3137859" = type { i32, ptr, ptr }
+%"struct.clang::TemplateArgumentLocInfo.3137857" = type { %"class.llvm::PointerUnion.686.3137860" }
+%"class.llvm::PointerUnion.686.3137860" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.687.3137861" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.687.3137861" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.688.3137862" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.688.3137862" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.689.3137863" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.689.3137863" = type { %"class.llvm::pointer_union_detail::PointerUnionMembers.690.3137864" }
+%"class.llvm::pointer_union_detail::PointerUnionMembers.690.3137864" = type { %"class.llvm::PointerIntPair.691.3137865" }
+%"class.llvm::PointerIntPair.691.3137865" = type { %"struct.llvm::detail::PunnedPointer.3.3137866" }
+%"struct.llvm::detail::PunnedPointer.3.3137866" = type { [8 x i8] }
 
 ; 99 occurrences:
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
@@ -237,7 +237,7 @@ define ptr @func000000000000000f(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = select i1 %1, ptr null, ptr %3
-  %5 = getelementptr nusw nuw %"class.clang::TemplateArgumentLoc.3137889", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.clang::TemplateArgumentLoc.3137855", ptr %4, i64 %0
   ret ptr %5
 }
 

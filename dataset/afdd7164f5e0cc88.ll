@@ -1,5 +1,5 @@
 
-; 1112 occurrences:
+; 1111 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -319,7 +319,6 @@
 ; linux/optimized/buffer.ll
 ; linux/optimized/ccm.ll
 ; linux/optimized/d_path.ll
-; linux/optimized/devio.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/entropy_common.ll
@@ -1120,7 +1119,7 @@ entry:
   ret i64 %2
 }
 
-; 627 occurrences:
+; 626 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -1385,7 +1384,6 @@ entry:
 ; luau/optimized/ldebug.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; lvgl/optimized/lv_draw_sw_mask.ll
-; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -1756,7 +1754,7 @@ entry:
   ret i64 %2
 }
 
-; 237 occurrences:
+; 236 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -1818,7 +1816,6 @@ entry:
 ; lief/optimized/ecjpake.c.ll
 ; linux/optimized/blake2s.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/blk-map.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/buildid.ll
 ; linux/optimized/compress.ll

@@ -8,9 +8,8 @@ func0000000000000008:                   // @func0000000000000008
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
-	cmn	x0, #1
-	mov	w9, #536870912                  // =0x20000000
-	csel	x0, x9, x8, eq
+	cmp	x0, #0
+	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

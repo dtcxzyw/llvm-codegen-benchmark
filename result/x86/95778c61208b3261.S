@@ -10,10 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	andq	$-16385, %rsi                   # imm = 0xBFFF
-	xorl	%ecx, %ecx
-	testb	$1, %dil
-	movl	$49152, %eax                    # imm = 0xC000
-	cmovneq	%rcx, %rax
-	orq	%rsi, %rax
+	andl	$1, %esi
+	shll	$11, %esi
+	andq	$-1040187393, %rdi              # imm = 0xC1FFFFFF
+	orq	%rsi, %rdi
+	leaq	33554432(%rdi), %rax
 	retq

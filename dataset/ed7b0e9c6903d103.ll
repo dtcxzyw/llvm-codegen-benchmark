@@ -1,9 +1,9 @@
 
-%"struct.duckdb_moodycamel::ConcurrentQueue<duckdb::BufferEvictionNode>::ImplicitProducer::BlockIndexEntry.2947740" = type { %"struct.std::atomic.3.2947731", %"struct.std::atomic.66.2947734" }
-%"struct.std::atomic.3.2947731" = type { %"struct.std::__atomic_base.4.2947735" }
-%"struct.std::__atomic_base.4.2947735" = type { i64 }
-%"struct.std::atomic.66.2947734" = type { %"struct.std::__atomic_base.67.2947737" }
-%"struct.std::__atomic_base.67.2947737" = type { ptr }
+%"struct.duckdb_moodycamel::ConcurrentQueue<duckdb::BufferEvictionNode>::ImplicitProducer::BlockIndexEntry.2947706" = type { %"struct.std::atomic.3.2947697", %"struct.std::atomic.66.2947700" }
+%"struct.std::atomic.3.2947697" = type { %"struct.std::__atomic_base.4.2947701" }
+%"struct.std::__atomic_base.4.2947701" = type { i64 }
+%"struct.std::atomic.66.2947700" = type { %"struct.std::__atomic_base.67.2947703" }
+%"struct.std::__atomic_base.67.2947703" = type { ptr }
 
 ; 2 occurrences:
 ; openssl/optimized/libcommon-lib-tls_pad.ll
@@ -39,7 +39,7 @@ entry:
   %3 = and i64 %2, 7
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
-  %6 = getelementptr nusw %"struct.duckdb_moodycamel::ConcurrentQueue<duckdb::BufferEvictionNode>::ImplicitProducer::BlockIndexEntry.2947740", ptr %4, i64 %5
+  %6 = getelementptr nusw %"struct.duckdb_moodycamel::ConcurrentQueue<duckdb::BufferEvictionNode>::ImplicitProducer::BlockIndexEntry.2947706", ptr %4, i64 %5
   ret ptr %6
 }
 

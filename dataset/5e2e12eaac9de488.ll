@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3184542" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3184508" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 384 occurrences:
 ; abc/optimized/abc.c.ll
@@ -598,7 +598,7 @@ define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp slt i8 %1, 0
   %3 = select i1 %2, i64 -14, i64 -13
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3184542", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3184508", ptr %0, i64 %3
   ret ptr %4
 }
 

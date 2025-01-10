@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3227940" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3227906" = type { ptr, ptr, ptr, ptr }
 
 ; 12 occurrences:
 ; hyperscan/optimized/block.c.ll
@@ -82,7 +82,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
   %5 = getelementptr nusw i8, ptr %1, i64 -24
-  %6 = getelementptr nusw %"class.llvm::Use.3227940", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.llvm::Use.3227906", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }

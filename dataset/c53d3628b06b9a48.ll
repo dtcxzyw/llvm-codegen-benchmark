@@ -1,5 +1,5 @@
 
-; 1952 occurrences:
+; 1953 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -375,6 +375,7 @@
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
 ; git/optimized/bloom.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/read-cache.ll
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -6522,7 +6523,7 @@ entry:
   ret i64 %2
 }
 
-; 568 occurrences:
+; 550 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/epd.c.ll
@@ -6775,24 +6776,6 @@ entry:
 ; mold/optimized/mapfile.cc.SH4.cc.ll
 ; mold/optimized/mapfile.cc.SPARC64.cc.ll
 ; mold/optimized/mapfile.cc.X86_64.cc.ll
-; mold/optimized/output-chunks.cc.ALPHA.cc.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; msgpack/optimized/class_intrusive.cpp.ll

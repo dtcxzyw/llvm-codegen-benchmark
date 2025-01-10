@@ -332,7 +332,6 @@
 ; cpython/optimized/pegen_errors.ll
 ; cpython/optimized/pyexpat.ll
 ; cpython/optimized/pystrhex.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/string_parser.ll
 ; cpython/optimized/symtable.ll
@@ -1276,7 +1275,6 @@
 ; linux/optimized/regcache-rbtree.ll
 ; linux/optimized/rhashtable.ll
 ; linux/optimized/rpcb_clnt.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/runtime.ll
 ; linux/optimized/rw.ll
@@ -2455,6 +2453,7 @@
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-ssl_cert.ll
@@ -2469,6 +2468,7 @@
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_cert.ll
@@ -3739,7 +3739,7 @@ entry:
   ret i64 %1
 }
 
-; 2170 occurrences:
+; 2171 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -4524,6 +4524,7 @@ entry:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; icu/optimized/filterrb.ll
 ; icu/optimized/udbgutil.ll
+; icu/optimized/uresdata.ll
 ; ipopt/optimized/IpDenseVector.ll
 ; ipopt/optimized/IpMa27TSolverInterface.ll
 ; ipopt/optimized/IpOptionsList.ll

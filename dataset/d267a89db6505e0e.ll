@@ -930,7 +930,7 @@ entry:
   ret ptr %4
 }
 
-; 208 occurrences:
+; 210 occurrences:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
@@ -1135,6 +1135,8 @@ entry:
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
+; quantlib/optimized/lmmdriftcalculator.ll
+; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll

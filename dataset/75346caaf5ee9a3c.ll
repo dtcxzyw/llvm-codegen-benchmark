@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 2 occurrences:
 ; luajit/optimized/buildvm.ll
@@ -55,7 +55,7 @@ define ptr @func0000000000000033(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 -3, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -66,7 +66,7 @@ define ptr @func0000000000000030(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 -3, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }

@@ -16,9 +16,9 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/zDirector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = trunc i8 %2 to i1
+  %3 = trunc nuw i8 %2 to i1
   %4 = icmp ugt i32 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5

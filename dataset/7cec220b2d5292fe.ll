@@ -14,19 +14,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; abc/optimized/giaMinLut.c.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000012a(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = icmp sgt i32 %1, %3
-  %5 = and i1 %0, %4
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; Function Attrs: nounwind
@@ -37,6 +24,17 @@ entry:
   %5 = icmp eq i32 %4, 2
   %6 = and i1 %0, %5
   ret i1 %6
+}
+
+; 1 occurrences:
+; abc/optimized/giaMinLut.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000012a(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = icmp sgt i32 %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
 }
 
 ; 1 occurrences:

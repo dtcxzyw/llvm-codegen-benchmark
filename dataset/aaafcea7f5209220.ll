@@ -35,7 +35,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; nuttx/optimized/lib_memoutstream.c.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; redis/optimized/networking.ll
@@ -49,9 +50,10 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/ewah_rlw.ll
 ; nuttx/optimized/fs_procfsutil.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/ui_vnc-jobs.c.ll
 ; sentencepiece/optimized/sentencepiece_processor.cc.ll

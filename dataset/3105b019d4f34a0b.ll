@@ -22,6 +22,18 @@ entry:
 }
 
 ; 2 occurrences:
+; abc/optimized/giaTtopt.cpp.ll
+; php/optimized/crypt_sha512.ll
+; Function Attrs: nounwind
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %.neg = add i32 %2, 1
+  %3 = icmp eq i32 %0, %.neg
+  ret i1 %3
+}
+
+; 2 occurrences:
 ; proxygen/optimized/Logging.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
@@ -32,17 +44,6 @@ entry:
   %4 = add i32 %3, 1
   %5 = icmp ult i32 %4, 3
   ret i1 %5
-}
-
-; 1 occurrences:
-; abc/optimized/giaTtopt.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = sub nsw i32 %0, %2
-  %4 = icmp eq i32 %3, 37
-  ret i1 %4
 }
 
 ; 1 occurrences:

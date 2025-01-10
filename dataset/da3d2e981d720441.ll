@@ -1,5 +1,5 @@
 
-; 624 occurrences:
+; 625 occurrences:
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaMinLut.c.ll
@@ -485,6 +485,7 @@
 ; openssl/optimized/libcommon-lib-tls_pad.ll
 ; openssl/optimized/libdefault-lib-kmac_prov.ll
 ; openssl/optimized/libssl-shlib-tls_pad.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/sceneGlobalsSceneIndex.cpp.ll
@@ -633,7 +634,7 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
@@ -656,6 +657,7 @@ entry:
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openspiel/optimized/spiel.cc.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; ruby/optimized/prism.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -2021,10 +2023,11 @@ entry:
   ret i1 %4
 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/grouper.cc.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll

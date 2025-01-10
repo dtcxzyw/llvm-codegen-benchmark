@@ -33,12 +33,13 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; hdf5/optimized/H5Spoint.c.ll
 ; libquic/optimized/dsa.c.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll

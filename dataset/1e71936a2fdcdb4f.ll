@@ -882,7 +882,7 @@ entry:
   ret i1 %2
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/transfer.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -907,7 +907,6 @@ entry:
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/xt_tcpudp.ll
 ; linux/optimized/zstd_decompress.ll

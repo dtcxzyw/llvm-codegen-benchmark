@@ -22,7 +22,7 @@ entry:
   ret i32 %5
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -52,7 +52,6 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll

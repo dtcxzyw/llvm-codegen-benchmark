@@ -6,7 +6,7 @@ func0000000000000007:                   // @func0000000000000007
 	add	x0, x0, x8, lsl #2
 	ret
                                         // -- End function
-func0000000000000053:                   // @func0000000000000053
+func0000000000000052:                   // @func0000000000000052
 // %bb.0:                               // %entry
 	cmp	x2, #4
 	csel	x8, xzr, x1, lo

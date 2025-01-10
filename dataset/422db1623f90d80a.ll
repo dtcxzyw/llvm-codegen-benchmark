@@ -256,9 +256,10 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; lief/optimized/constant_time.c.ll
+; linux/optimized/rtmutex_api.ll
 ; llvm/optimized/MCDXContainerWriter.cpp.ll
 ; llvm/optimized/OSTargets.cpp.ll
 ; velox/optimized/JsonType.cpp.ll

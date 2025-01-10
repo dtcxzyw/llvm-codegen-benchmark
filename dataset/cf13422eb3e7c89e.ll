@@ -1,5 +1,19 @@
 
 ; 3 occurrences:
+; jq/optimized/gb18030.ll
+; oniguruma/optimized/gb18030.ll
+; ruby/optimized/raddrinfo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000424(i8 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -127
+  %3 = icmp ult i32 %2, -95
+  %4 = icmp eq i8 %0, 32
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; libquic/optimized/obj.c.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
@@ -10,19 +24,6 @@ entry:
   %3 = icmp sgt i8 %0, -1
   %4 = select i1 %2, i1 true, i1 %3
   ret i1 %4
-}
-
-; 2 occurrences:
-; jq/optimized/gb18030.ll
-; oniguruma/optimized/gb18030.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000424(i8 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -129
-  %3 = icmp ult i32 %2, 126
-  %4 = icmp eq i8 %0, 1
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
 }
 
 ; 3 occurrences:

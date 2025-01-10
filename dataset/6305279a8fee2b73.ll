@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 221 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acecCore.c.ll
@@ -63,7 +63,6 @@
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grabcut.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll

@@ -7,6 +7,15 @@ func0000000000000000:                   // @func0000000000000000
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
+	movk	x8, #43691
+	umulh	x8, x0, x8
+	lsr	x0, x8, #1
+                                        // kill: def $w0 killed $w0 killed $x0
+	ret
+                                        // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mov	x9, #62915                      // =0xf5c3
@@ -16,15 +25,6 @@ func0000000000000003:                   // @func0000000000000003
 	movk	x9, #10485, lsl #48
 	umulh	x8, x8, x9
 	lsr	x0, x8, #2
-                                        // kill: def $w0 killed $w0 killed $x0
-	ret
-                                        // -- End function
-func0000000000000002:                   // @func0000000000000002
-// %bb.0:                               // %entry
-	mov	x8, #-9187201950435737472       // =0x8080808080808080
-	movk	x8, #32897
-	umulh	x8, x0, x8
-	lsr	x0, x8, #7
                                         // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

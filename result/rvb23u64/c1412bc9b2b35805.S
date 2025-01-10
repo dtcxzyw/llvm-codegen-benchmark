@@ -18,6 +18,12 @@ func0000000000000034:                   # @func0000000000000034
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
+func0000000000000002:                   # @func0000000000000002
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
 func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addi	a0, a0, 15
@@ -27,12 +33,6 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000015:                   # @func0000000000000015
 	add	a0, a0, a1
 	addi	a0, a0, 5
-	neg	a1, a1
-	and	a0, a0, a1
-	ret
-func0000000000000002:                   # @func0000000000000002
-	add	a0, a0, a1
-	addi	a0, a0, -1
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

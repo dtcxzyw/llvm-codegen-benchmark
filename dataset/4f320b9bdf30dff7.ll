@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; linux/optimized/ksysfs.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; Function Attrs: nounwind

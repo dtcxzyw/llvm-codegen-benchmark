@@ -1,7 +1,7 @@
 
-%class.CellTypeState.2731841 = type { i32 }
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
-%class.QCPBarsData.3451180 = type { double, double }
+%class.CellTypeState.2731807 = type { i32 }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
+%class.QCPBarsData.3451146 = type { double, double }
 
 ; 22 occurrences:
 ; abc/optimized/wlcBlast.c.ll
@@ -30,16 +30,17 @@
 define ptr @func0000000000000060(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.CellTypeState.2731841, ptr %0, i64 %3
+  %4 = getelementptr nusw %class.CellTypeState.2731807, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.CellTypeState.2731841, ptr %4, i64 %5
+  %6 = getelementptr %class.CellTypeState.2731807, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -4
   ret ptr %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; freetype/optimized/sdf.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/unistr.ll
 ; lightgbm/optimized/sample_strategy.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
@@ -72,9 +73,9 @@ entry:
 define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -118,9 +119,9 @@ entry:
 define ptr @func0000000000000043(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPBarsData.3451180, ptr %0, i64 %3
+  %4 = getelementptr %class.QCPBarsData.3451146, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.QCPBarsData.3451180, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %class.QCPBarsData.3451146, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -137,19 +138,6 @@ entry:
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
-  ret ptr %7
-}
-
-; 1 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 -8
   ret ptr %7
 }
 

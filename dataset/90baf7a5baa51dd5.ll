@@ -1,5 +1,5 @@
 
-%"struct.rawspeed::Spline<>::Segment.2873472" = type { double, double, double, double }
+%"struct.rawspeed::Spline<>::Segment.2873438" = type { double, double, double, double }
 
 ; 9 occurrences:
 ; abc/optimized/amapLiberty.c.ll
@@ -22,10 +22,11 @@ entry:
   ret i1 %7
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -44,26 +45,13 @@ entry:
 }
 
 ; 1 occurrences:
-; openjdk/optimized/UnixOperatingSystem.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003e4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %7 = icmp ult ptr %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873472", ptr %1, i64 %4
+  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873438", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 256
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -129,20 +117,6 @@ entry:
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %0, i64 1
   %7 = icmp ult ptr %6, %5
-  ret i1 %7
-}
-
-; 2 occurrences:
-; opencv/optimized/matrix_transform.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003e1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 30
-  %4 = ashr exact i64 %3, 30
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
 

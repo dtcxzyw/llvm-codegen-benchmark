@@ -1,6 +1,6 @@
 
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 29 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
@@ -52,7 +52,7 @@ entry:
   %4 = mul i32 %3, %2
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %6
   ret ptr %7
 }
 

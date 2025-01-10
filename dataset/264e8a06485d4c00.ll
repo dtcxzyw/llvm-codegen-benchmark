@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; postgres/optimized/formatting.ll
+; 1 occurrences:
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i8 %1) #0 {

@@ -1,8 +1,8 @@
 
-%"struct.glslang::TArraySize.2911912" = type { i32, ptr }
-%"class.cv::face::FacemarkLBF::BBox.3735356" = type { double, double, double, double, double, double, double, double }
+%"struct.glslang::TArraySize.2911878" = type { i32, ptr }
+%"class.cv::face::FacemarkLBF::BBox.3735306" = type { double, double, double, double, double, double, double, double }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
@@ -23,6 +23,7 @@
 ; openmpi/optimized/coll_base_reduce_scatter.ll
 ; openmpi/optimized/common_ompio_file_write.ll
 ; ruby/optimized/function.ll
+; slurm/optimized/file_functions.ll
 ; slurm/optimized/gres_ctld.ll
 ; slurm/optimized/parse_config.ll
 ; slurm/optimized/parse_time.ll
@@ -88,7 +89,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.glslang::TArraySize.2911912", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.glslang::TArraySize.2911878", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -101,7 +102,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.cv::face::FacemarkLBF::BBox.3735356", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.cv::face::FacemarkLBF::BBox.3735306", ptr %0, i64 %5
   ret ptr %6
 }
 

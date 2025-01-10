@@ -72,6 +72,17 @@ func0000000000000101:                   # @func0000000000000101
 	cmpq	$-2, %rdi
 	sete	%al
 	retq
+func0000000000000044:                   # @func0000000000000044
+	leaq	17(%rsi,%rdi), %rax
+	movabsq	$9223372036854775793, %rcx      # imm = 0x7FFFFFFFFFFFFFF1
+	cmpq	%rcx, %rax
+	setb	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	addq	$17, %rsi
+	orq	%rdi, %rsi
+	sete	%al
+	retq
 func00000000000001f4:                   # @func00000000000001f4
 	leaq	1(%rsi,%rdi), %rax
 	cmpq	$12, %rax
@@ -193,17 +204,6 @@ func0000000000000194:                   # @func0000000000000194
 func0000000000000086:                   # @func0000000000000086
 	leaq	16(%rsi,%rdi), %rax
 	shrq	$63, %rax
-	retq
-func0000000000000041:                   # @func0000000000000041
-	addq	$17, %rsi
-	orq	%rdi, %rsi
-	sete	%al
-	retq
-func0000000000000044:                   # @func0000000000000044
-	leaq	17(%rsi,%rdi), %rax
-	movabsq	$9223372036854775793, %rcx      # imm = 0x7FFFFFFFFFFFFFF1
-	cmpq	%rcx, %rax
-	setb	%al
 	retq
 func0000000000000024:                   # @func0000000000000024
 	addq	%rsi, %rdi

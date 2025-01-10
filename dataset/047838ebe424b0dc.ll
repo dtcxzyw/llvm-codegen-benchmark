@@ -1,5 +1,5 @@
 
-%"class.std::complex.3743354" = type { { float, float } }
+%"class.std::complex.3743304" = type { { float, float } }
 
 ; 1 occurrences:
 ; clamav/optimized/vba_extract.c.ll
@@ -33,7 +33,7 @@ entry:
 define ptr @func000000000000015b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"class.std::complex.3743354", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::complex.3743304", ptr %0, i64 %1
   %.idx = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %4, i64 -4
   %6 = getelementptr i8, ptr %5, i64 %.idx

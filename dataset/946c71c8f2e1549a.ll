@@ -1,44 +1,5 @@
 
-; 29 occurrences:
-; abc/optimized/dauNpn2.c.ll
-; clamav/optimized/hashtab.c.ll
-; hdf5/optimized/H5Fquery.c.ll
-; icu/optimized/genmbcs.ll
-; linux/optimized/blk-map.ll
-; linux/optimized/blk-merge.ll
-; linux/optimized/drm_client_modeset.ll
-; linux/optimized/intel_gt_irq.ll
-; linux/optimized/intel_hotplug.ll
-; linux/optimized/sg.ll
-; llvm/optimized/AArch64Disassembler.cpp.ll
-; llvm/optimized/MCAssembler.cpp.ll
-; llvm/optimized/RISCVDisassembler.cpp.ll
-; openjdk/optimized/cardTableRS.ll
-; openjdk/optimized/ciMethodData.ll
-; openjdk/optimized/lcm.ll
-; openjdk/optimized/matcher.ll
-; openjdk/optimized/universe.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
-; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; sqlite/optimized/sqlite3.ll
-; verilator/optimized/V3Const__gen.cpp.ll
-; verilator/optimized/V3Number.cpp.ll
-; verilator/optimized/V3Width.cpp.ll
-; wireshark/optimized/k12.c.ll
-; z3/optimized/mpz.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = and i64 %0, %2
-  %4 = icmp ne i64 %3, 0
-  ret i1 %4
-}
-
-; 111 occurrences:
+; 113 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/nghttp2_map.c.ll
@@ -116,6 +77,8 @@ entry:
 ; openjdk/optimized/psOldGen.ll
 ; openjdk/optimized/tenuredGeneration.ll
 ; openmpi/optimized/opal_datatype_dump.ll
+; openssl/optimized/libssl-lib-s3_lib.ll
+; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openusd/optimized/changeTracker.cpp.ll
 ; openvdb/optimized/Queue.cc.ll
 ; php/optimized/php_reflection.ll
@@ -159,7 +122,7 @@ entry:
   ret i1 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; cpython/optimized/compile.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; grpc/optimized/compression_internal.cc.ll
@@ -193,7 +156,6 @@ entry:
 ; llvm/optimized/DWARFContext.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -211,6 +173,43 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
+; 27 occurrences:
+; abc/optimized/dauNpn2.c.ll
+; clamav/optimized/hashtab.c.ll
+; hdf5/optimized/H5Fquery.c.ll
+; icu/optimized/genmbcs.ll
+; linux/optimized/blk-map.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/drm_client_modeset.ll
+; linux/optimized/intel_gt_irq.ll
+; linux/optimized/intel_hotplug.ll
+; linux/optimized/sg.ll
+; llvm/optimized/AArch64Disassembler.cpp.ll
+; llvm/optimized/MCAssembler.cpp.ll
+; llvm/optimized/RISCVDisassembler.cpp.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/ciMethodData.ll
+; openjdk/optimized/lcm.ll
+; openjdk/optimized/matcher.ll
+; openjdk/optimized/universe.ll
+; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; sqlite/optimized/sqlite3.ll
+; verilator/optimized/V3Const__gen.cpp.ll
+; verilator/optimized/V3Number.cpp.ll
+; verilator/optimized/V3Width.cpp.ll
+; wireshark/optimized/k12.c.ll
+; z3/optimized/mpz.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = and i64 %0, %2
+  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

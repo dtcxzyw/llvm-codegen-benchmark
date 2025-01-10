@@ -10,8 +10,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; qemu/optimized/target_riscv_pmp.c.ll

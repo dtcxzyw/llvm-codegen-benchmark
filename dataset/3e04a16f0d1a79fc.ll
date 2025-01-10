@@ -1,5 +1,5 @@
 
-%class.QCPBarsData.3451180 = type { double, double }
+%class.QCPBarsData.3451146 = type { double, double }
 
 ; 3 occurrences:
 ; abc/optimized/giaEnable.c.ll
@@ -35,7 +35,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QCPBarsData.3451180, ptr %0, i64 %3
+  %4 = getelementptr %class.QCPBarsData.3451146, ptr %0, i64 %3
   %5 = inttoptr i64 %1 to ptr
   %6 = icmp eq ptr %4, %5
   ret i1 %6

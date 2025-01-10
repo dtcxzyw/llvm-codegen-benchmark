@@ -75,3 +75,10 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
+func0000000000000312:                   # @func0000000000000312
+	addq	$16, %rdx
+	addq	$16, %rsi
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq

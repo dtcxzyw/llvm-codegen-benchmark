@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; arrow/optimized/buffered.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/message.cc.ll
@@ -10,6 +10,7 @@
 ; casadi/optimized/slice.cpp.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; cmake/optimized/archive_read_support_format_ar.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/transfer.c.ll
@@ -52,13 +53,14 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 27 occurrences:
+; 28 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cpython/optimized/_collectionsmodule.ll

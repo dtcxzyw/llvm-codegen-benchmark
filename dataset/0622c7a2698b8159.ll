@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.48.2721810" = type { %"struct.std::__uniq_ptr_data.49.2721811" }
-%"struct.std::__uniq_ptr_data.49.2721811" = type { %"class.std::__uniq_ptr_impl.50.2721812" }
-%"class.std::__uniq_ptr_impl.50.2721812" = type { %"class.std::tuple.51.2721813" }
-%"class.std::tuple.51.2721813" = type { %"struct.std::_Tuple_impl.52.2721814" }
-%"struct.std::_Tuple_impl.52.2721814" = type { %"struct.std::_Head_base.55.2721815" }
-%"struct.std::_Head_base.55.2721815" = type { ptr }
+%"class.std::unique_ptr.48.2721776" = type { %"struct.std::__uniq_ptr_data.49.2721777" }
+%"struct.std::__uniq_ptr_data.49.2721777" = type { %"class.std::__uniq_ptr_impl.50.2721778" }
+%"class.std::__uniq_ptr_impl.50.2721778" = type { %"class.std::tuple.51.2721779" }
+%"class.std::tuple.51.2721779" = type { %"struct.std::_Tuple_impl.52.2721780" }
+%"struct.std::_Tuple_impl.52.2721780" = type { %"struct.std::_Head_base.55.2721781" }
+%"struct.std::_Head_base.55.2721781" = type { ptr }
 
 ; 13 occurrences:
 ; cvc5/optimized/eq_proof.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.std::unique_ptr.48.2721810", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::unique_ptr.48.2721776", ptr %0, i64 %5
   ret ptr %6
 }
 

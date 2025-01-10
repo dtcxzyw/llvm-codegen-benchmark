@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
@@ -10,7 +10,7 @@ entry:
   %2 = icmp eq i32 %1, 7
   %3 = select i1 %2, i32 2, i32 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

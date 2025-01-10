@@ -183,11 +183,10 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/giaSweep.c.ll
-; git/optimized/column.ll
 ; graphviz/optimized/triang.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll

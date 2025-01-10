@@ -1,6 +1,6 @@
 
-%struct.ge_precomp.3058453 = type { [10 x i32], [10 x i32], [10 x i32] }
-%struct.HistogramLiteral.3843262 = type { [256 x i32], i64, double }
+%struct.ge_precomp.3058419 = type { [10 x i32], [10 x i32], [10 x i32] }
+%struct.HistogramLiteral.3843212 = type { [256 x i32], i64, double }
 
 ; 6 occurrences:
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
@@ -47,7 +47,7 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw [15 x %struct.ge_precomp.3058453], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [15 x %struct.ge_precomp.3058419], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i32, ptr %4, i64 %0
   ret ptr %5
 }
@@ -70,7 +70,7 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = getelementptr [256 x i32], ptr %1, i64 0, i64 %3
-  %5 = getelementptr %struct.HistogramLiteral.3843262, ptr %4, i64 %0
+  %5 = getelementptr %struct.HistogramLiteral.3843212, ptr %4, i64 %0
   ret ptr %5
 }
 

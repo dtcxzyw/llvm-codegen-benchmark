@@ -24,8 +24,10 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; opencv/optimized/opencv-caffe.pb.cc.ll
+; postgres/optimized/inv_api.ll
+; postgres/optimized/zic.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -33,12 +35,12 @@ entry:
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = sext i32 %0 to i64
-  %5 = icmp samesign ult i64 %3, %4
+  %5 = icmp slt i64 %3, %4
   ret i1 %5
 }
 
@@ -62,19 +64,6 @@ define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = sext i32 %0 to i64
-  %5 = icmp slt i64 %3, %4
-  ret i1 %5
-}
-
-; 2 occurrences:
-; postgres/optimized/inv_api.ll
-; postgres/optimized/zic.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
   %4 = sext i32 %0 to i64
   %5 = icmp slt i64 %3, %4
   ret i1 %5

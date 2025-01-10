@@ -1,5 +1,5 @@
 
-; 520 occurrences:
+; 521 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -46,6 +46,7 @@
 ; ceres/optimized/dense_qr.cc.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/signal.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
@@ -995,7 +996,7 @@ entry:
   ret i64 %3
 }
 
-; 1380 occurrences:
+; 1381 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -1974,6 +1975,7 @@ entry:
 ; qemu/optimized/hw_misc_edu.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/nbd_client.c.ll

@@ -213,7 +213,7 @@ entry:
   ret i32 %4
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
@@ -249,7 +249,6 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ctype.ll

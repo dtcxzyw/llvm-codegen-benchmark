@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/cnfMap.c.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
@@ -10,6 +10,7 @@
 ; git/optimized/packfile.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; hyperscan/optimized/prefilter.cpp.ll
+; libjpeg-turbo/optimized/jdmarker.c.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/blk-iocost.ll
@@ -127,7 +128,7 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
@@ -136,6 +137,7 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
+; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/superword.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; wireshark/optimized/packet-thrift.c.ll
@@ -149,7 +151,7 @@ entry:
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
-  %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 1)
+  %2 = tail call i32 @llvm.umax.i32(i32 %1, i32 12)
   ret i32 %2
 }
 

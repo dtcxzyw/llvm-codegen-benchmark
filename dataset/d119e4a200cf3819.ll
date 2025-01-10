@@ -1,5 +1,5 @@
 
-%struct.nodeElt_s.3496676 = type { i32, i16, i8, i8 }
+%struct.nodeElt_s.3496642 = type { i32, i16, i8, i8 }
 
 ; 1 occurrences:
 ; abc/optimized/acbPush.c.ll
@@ -22,7 +22,7 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.nodeElt_s.3496676, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.nodeElt_s.3496642, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 29
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 4

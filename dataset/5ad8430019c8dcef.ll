@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653" = type { i8, i8, [6 x i8] }
 
 ; 304 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
@@ -311,7 +311,7 @@ define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7

@@ -2261,7 +2261,7 @@ entry:
   ret i64 %5
 }
 
-; 328 occurrences:
+; 329 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -2533,6 +2533,7 @@ entry:
 ; ruby/optimized/variable.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
+; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wireshark/optimized/about_dialog.cpp.ll
 ; wireshark/optimized/address_types.c.ll

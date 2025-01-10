@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -27,7 +27,6 @@
 ; linux/optimized/sky2.ll
 ; linux/optimized/xhci-mem.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -65,7 +64,7 @@ entry:
   ret i32 %5
 }
 
-; 91 occurrences:
+; 92 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -82,6 +81,7 @@ entry:
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationdatawriter.ll
 ; icu/optimized/gencnvex.ll
+; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnvsel.ll
 ; libquic/optimized/mul.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
@@ -166,14 +166,14 @@ entry:
   ret i32 %5
 }
 
-; 152 occurrences:
+; 151 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/nwkMerge.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/Importer.cpp.ll
@@ -205,7 +205,6 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpvcompile.cpp.ll
 ; icu/optimized/genmbcs.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/unames.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
@@ -419,7 +418,7 @@ entry:
   ret i32 %5
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/Bra.c.ll
@@ -456,7 +455,6 @@ entry:
 ; verilator/optimized/V3Hasher.cpp.ll
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
-; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; wireshark/optimized/packet-fbzero.c.ll
 ; wireshark/optimized/packet-linx.c.ll
@@ -487,10 +485,9 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/ivySeq.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; icu/optimized/swapimpl.ll
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -506,9 +503,10 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/giaAiger.c.ll
+; icu/optimized/collationdatawriter.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
@@ -549,9 +547,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
+; icu/optimized/swapimpl.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; zxing/optimized/ODWriterHelper.cpp.ll
@@ -675,7 +675,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/bwlzh.c.ll
 ; hdf5/optimized/H5checksum.c.ll
 ; linux/optimized/ebitmap.ll
@@ -683,7 +683,6 @@ entry:
 ; oiio/optimized/hashes.cpp.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/packet-mpeg-audio.c.ll
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
@@ -694,9 +693,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hdf5/optimized/H5Tinit_float.c.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -728,8 +726,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; icu/optimized/swapimpl.ll
+; 4 occurrences:
 ; nori/optimized/tabwidget.cpp.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; raylib/optimized/rtext.c.ll

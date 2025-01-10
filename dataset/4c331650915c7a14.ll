@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::HistogramStat.2625928" = type { %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", %"struct.std::atomic.2625929", [109 x %"struct.std::atomic.2625929"], i64 }
-%"struct.std::atomic.2625929" = type { %"struct.std::__atomic_base.2625930" }
-%"struct.std::__atomic_base.2625930" = type { i64 }
-%"class.openvdb::v11_0::math::Vec3.233.2712056" = type { %"class.openvdb::v11_0::math::Tuple.234.2712057" }
-%"class.openvdb::v11_0::math::Tuple.234.2712057" = type { [3 x i32] }
-%class.aiVector3t.2828902 = type { double, double, double }
-%"class.cv::Point_.3732832" = type { float, float }
-%"class.cv::Point_.3746786" = type { i32, i32 }
+%"struct.rocksdb::HistogramStat.2625895" = type { %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", %"struct.std::atomic.2625896", [109 x %"struct.std::atomic.2625896"], i64 }
+%"struct.std::atomic.2625896" = type { %"struct.std::__atomic_base.2625897" }
+%"struct.std::__atomic_base.2625897" = type { i64 }
+%"class.openvdb::v11_0::math::Vec3.233.2712022" = type { %"class.openvdb::v11_0::math::Tuple.234.2712023" }
+%"class.openvdb::v11_0::math::Tuple.234.2712023" = type { [3 x i32] }
+%class.aiVector3t.2828868 = type { double, double, double }
+%"class.cv::Point_.3732782" = type { float, float }
+%"class.cv::Point_.3746736" = type { i32, i32 }
 
 ; 14 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -27,7 +27,7 @@
 define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr %"struct.rocksdb::HistogramStat.2625928", ptr %0, i64 %3, i32 5
+  %4 = getelementptr %"struct.rocksdb::HistogramStat.2625895", ptr %0, i64 %3, i32 5
   ret ptr %4
 }
 
@@ -73,7 +73,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr nuw %"class.openvdb::v11_0::math::Vec3.233.2712056", ptr %0, i64 %3, i32 0, i32 0, i64 2
+  %4 = getelementptr nuw %"class.openvdb::v11_0::math::Vec3.233.2712022", ptr %0, i64 %3, i32 0, i32 0, i64 2
   ret ptr %4
 }
 
@@ -97,7 +97,8 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/dsdTree.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
@@ -117,12 +118,11 @@ entry:
 define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 79 occurrences:
-; abc/optimized/dsdTree.c.ll
+; 78 occurrences:
 ; lief/optimized/File.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -205,8 +205,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 1, i64 %2
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 -8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
   ret ptr %5
 }
 
@@ -216,7 +216,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr %"class.cv::Point_.3732832", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3732782", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -226,7 +226,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr %"class.cv::Point_.3746786", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3746736", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

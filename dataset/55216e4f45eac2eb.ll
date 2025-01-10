@@ -980,7 +980,7 @@ entry:
   ret i32 %4
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -988,7 +988,6 @@ entry:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/utilCex.c.ll
 ; abc/optimized/wlcAbc.c.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_lazy.c.ll

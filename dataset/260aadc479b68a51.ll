@@ -1,5 +1,5 @@
 
-%class.btVector3.2819692 = type { [4 x float] }
+%class.btVector3.2819658 = type { [4 x float] }
 
 ; 4 occurrences:
 ; bullet3/optimized/btConvexShape.ll
@@ -10,7 +10,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.smax.i64(i64 %1, i64 0)
-  %3 = getelementptr nuw %class.btVector3.2819692, ptr %0, i64 %2, i32 0, i64 1
+  %3 = getelementptr nuw %class.btVector3.2819658, ptr %0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 

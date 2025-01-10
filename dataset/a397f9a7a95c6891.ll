@@ -1,5 +1,5 @@
 
-; 256 occurrences:
+; 253 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -41,7 +41,6 @@
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationdatabuilder.ll
-; icu/optimized/collationruleparser.ll
 ; icu/optimized/collationsets.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/extradata.ll
@@ -51,7 +50,6 @@
 ; icu/optimized/number_longnames.ll
 ; icu/optimized/numfmt.ll
 ; icu/optimized/plurfmt.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_rule.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/selfmt.ll
@@ -68,7 +66,6 @@
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/uniset.ll
 ; icu/optimized/unistr_case.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/uspoof_conf.ll
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/vtzone.ll

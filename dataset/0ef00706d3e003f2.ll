@@ -1,11 +1,11 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
-%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
-%"class.std::thread::id.2636053" = type { i64 }
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%struct.prb_desc.3551378 = type { %struct.atomic64_t.3551379, %struct.prb_data_blk_lpos.3551380 }
-%struct.atomic64_t.3551379 = type { i64 }
-%struct.prb_data_blk_lpos.3551380 = type { i64, i64 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021" = type { %"struct.std::atomic.742.2636022", ptr }
+%"struct.std::atomic.742.2636022" = type { %"class.std::thread::id.2636020" }
+%"class.std::thread::id.2636020" = type { i64 }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%struct.prb_desc.3551344 = type { %struct.atomic64_t.3551345, %struct.prb_data_blk_lpos.3551346 }
+%struct.atomic64_t.3551345 = type { i64 }
+%struct.prb_data_blk_lpos.3551346 = type { i64, i64 }
 
 ; 185 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -1070,7 +1070,7 @@ entry:
   ret ptr %5
 }
 
-; 281 occurrences:
+; 282 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -1254,6 +1254,7 @@ entry:
 ; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
 ; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll
+; spike/optimized/memif.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
@@ -1609,7 +1610,7 @@ entry:
   ret ptr %5
 }
 
-; 224 occurrences:
+; 223 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
@@ -1833,13 +1834,12 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
-; spike/optimized/memif.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2022,7 +2022,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2033,7 +2033,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %4
+  %5 = getelementptr %struct.prb_desc.3551344, ptr %0, i64 %4
   ret ptr %5
 }
 

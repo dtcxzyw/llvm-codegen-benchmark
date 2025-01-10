@@ -12,10 +12,9 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/kapi.ll
 ; linux/optimized/percpu.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; opencv/optimized/gms.cpp.ll

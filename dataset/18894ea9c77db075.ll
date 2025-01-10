@@ -50,7 +50,7 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; flac/optimized/lpc.c.ll
@@ -65,7 +65,6 @@ entry:
 ; quantlib/optimized/lmdif.ll
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/mpz.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:

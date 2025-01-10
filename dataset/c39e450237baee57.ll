@@ -1,6 +1,6 @@
 
-%struct._zend_op.2791343 = type { ptr, %union._znode_op.2791344, %union._znode_op.2791344, %union._znode_op.2791344, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791344 = type { i32 }
+%struct._zend_op.2791309 = type { ptr, %union._znode_op.2791310, %union._znode_op.2791310, %union._znode_op.2791310, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791310 = type { i32 }
 
 ; 3 occurrences:
 ; openjdk/optimized/methodData.ll
@@ -33,7 +33,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._zend_op.2791343, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct._zend_op.2791309, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = lshr exact i64 %5, 5

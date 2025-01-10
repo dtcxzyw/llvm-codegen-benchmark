@@ -2166,7 +2166,7 @@ entry:
   ret i64 %2
 }
 
-; 442 occurrences:
+; 441 occurrences:
 ; abc/optimized/cmd.c.ll
 ; abc/optimized/mapperRefs.c.ll
 ; abc/optimized/msatSolverCore.c.ll
@@ -2223,7 +2223,6 @@ entry:
 ; freetype/optimized/winfnt.c.ll
 ; git/optimized/hashmap.ll
 ; git/optimized/pack-objects.ll
-; git/optimized/parallel-checkout.ll
 ; git/optimized/pathspec.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/tree-diff.ll

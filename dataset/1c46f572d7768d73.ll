@@ -1,9 +1,9 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
-%struct._conversation_item_t.3446047 = type { ptr, %struct._address.3446048, %struct._address.3446048, i32, i32, i32, i32, i64, i64, i64, i64, i64, i64, i64, i64, %struct.nstime_t.3446049, %struct.nstime_t.3446049, %struct.nstime_t.3446049, i32 }
-%struct._address.3446048 = type { i32, i32, ptr, ptr }
-%struct.nstime_t.3446049 = type { i64, i32 }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
+%struct._conversation_item_t.3446013 = type { ptr, %struct._address.3446014, %struct._address.3446014, i32, i32, i32, i32, i64, i64, i64, i64, i64, i64, i64, i64, %struct.nstime_t.3446015, %struct.nstime_t.3446015, %struct.nstime_t.3446015, i32 }
+%struct._address.3446014 = type { i32, i32, ptr, ptr }
+%struct.nstime_t.3446015 = type { i64, i32 }
 
 ; 17 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
@@ -41,7 +41,7 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -32, i64 0
-  %4 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 31
   ret ptr %6
@@ -94,7 +94,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8, i64 32
-  %4 = getelementptr %struct._conversation_item_t.3446047, ptr %0, i64 %1
+  %4 = getelementptr %struct._conversation_item_t.3446013, ptr %0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6

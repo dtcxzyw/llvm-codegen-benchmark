@@ -1,14 +1,14 @@
 
-%"struct.Stockfish::Search::RootMove.2878603" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2878597" }
-%"class.std::vector.2878597" = type { %"struct.std::_Vector_base.2878598" }
-%"struct.std::_Vector_base.2878598" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878599" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" }
-%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878600" = type { ptr, ptr, ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395548" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549", i32, i32 }
-%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395549" = type { ptr, [40 x i8] }
-%"class.cv::KeyPoint.3731923" = type { %"class.cv::Point_.3731924", float, float, float, i32, i32 }
-%"class.cv::Point_.3731924" = type { float, float }
+%"struct.Stockfish::Search::RootMove.2878569" = type { i32, i32, i32, i32, i8, i8, i32, i32, i32, %"class.std::vector.2878563" }
+%"class.std::vector.2878563" = type { %"struct.std::_Vector_base.2878564" }
+%"struct.std::_Vector_base.2878564" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878565" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl.2878565" = type { %"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878566" }
+%"struct.std::_Vector_base<Stockfish::Move, std::allocator<Stockfish::Move>>::_Vector_impl_data.2878566" = type { ptr, ptr, ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfSmallVector.3395514" = type { %"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515", i32, i32 }
+%"union.pxrInternal_v0_24__pxrReserved__::TfSmallVectorBase::_DataUnion.3395515" = type { ptr, [40 x i8] }
+%"class.cv::KeyPoint.3731873" = type { %"class.cv::Point_.3731874", float, float, float, i32, i32 }
+%"class.cv::Point_.3731874" = type { float, float }
 
 ; 5 occurrences:
 ; linux/optimized/intel_display_power.ll
@@ -181,7 +181,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000058a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2878603", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.Stockfish::Search::RootMove.2878569", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 56
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -303,7 +303,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000060a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395547", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::HdDataSourceLocator.3395513", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -56
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -369,7 +369,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000706(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.cv::KeyPoint.3731923", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.cv::KeyPoint.3731873", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -28
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -382,7 +382,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000070a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.cv::KeyPoint.3731923", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.cv::KeyPoint.3731873", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -28
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

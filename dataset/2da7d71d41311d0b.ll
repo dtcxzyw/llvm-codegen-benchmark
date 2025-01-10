@@ -407,7 +407,7 @@ entry:
   ret i8 %3
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; boost/optimized/async.ll
 ; boost/optimized/async_fut.ll
@@ -416,7 +416,6 @@ entry:
 ; clamav/optimized/bytecode_vm.c.ll
 ; fmt/optimized/core-test.cc.ll
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/device_pm.ll
 ; llvm/optimized/BlockFrequency.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll

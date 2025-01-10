@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu_debugfs.ll
+; minetest/optimized/content_cao.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -11,7 +12,7 @@
 define i8 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = tail call i32 @llvm.umax.i32(i32 %0, i32 %2)
+  %3 = call i32 @llvm.umax.i32(i32 %0, i32 %2)
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -19,7 +20,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 2 occurrences:
+; 3 occurrences:
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind

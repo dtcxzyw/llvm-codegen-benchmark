@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 2 occurrences:
 ; folly/optimized/dynamic.cpp.ll
@@ -51,7 +51,7 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32776
-  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

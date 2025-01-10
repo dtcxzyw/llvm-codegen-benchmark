@@ -28,12 +28,6 @@ func000000000000000a:                   // @func000000000000000a
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	asr	w8, w1, #5
-	add	x0, x0, w8, sxtw #2
-	ret
-                                        // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 killed $x1 def $x1
@@ -51,12 +45,5 @@ func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	asr	w8, w1, #3
 	add	x0, x0, w8, sxtw
-	ret
-                                        // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	asr	w8, w1, #1
-	mov	w9, #24                         // =0x18
-	smaddl	x0, w8, w9, x0
 	ret
                                         // -- End function

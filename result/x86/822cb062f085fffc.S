@@ -70,12 +70,6 @@ func0000000000000064:                   # @func0000000000000064
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movslq	%edx, %rax
 	shlq	$5, %rax
@@ -88,4 +82,10 @@ func0000000000000069:                   # @func0000000000000069
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setae	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movslq	%edx, %rax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	sete	%al
 	retq

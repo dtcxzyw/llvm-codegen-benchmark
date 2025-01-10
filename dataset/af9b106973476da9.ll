@@ -398,7 +398,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; freetype/optimized/psnames.c.ll
 ; hermes/optimized/BytecodeStream.cpp.ll
@@ -407,6 +407,7 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/intel_backlight.ll
+; linux/optimized/intel_cdclk.ll
 ; linux/optimized/lzo1x_compress.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll

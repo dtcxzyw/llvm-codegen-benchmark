@@ -1,5 +1,5 @@
 
-; 754 occurrences:
+; 756 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcTiming.c.ll
@@ -730,6 +730,8 @@
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll

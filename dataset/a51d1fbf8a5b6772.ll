@@ -1,8 +1,8 @@
 
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
 
 ; 25 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -128,7 +128,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = and i64 %2, -2
-  %4 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %3
   ret ptr %4
 }
 

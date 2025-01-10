@@ -1,8 +1,10 @@
 
-%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
-%union.ListCell.3651460 = type { ptr }
+%"struct.boost::container::dtl::pair.2685178" = type { i32, i32 }
+%"class.ZXing::Trit.3649621" = type { i8 }
+%union.ListCell.3651426 = type { ptr }
+%union.TValue.3680588 = type { i64 }
 
-; 122 occurrences:
+; 123 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
@@ -115,6 +117,7 @@
 ; postgres/optimized/gram.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
 ; postgres/optimized/preproc.ll
 ; postgres/optimized/repl_gram.ll
 ; postgres/optimized/specparse.ll
@@ -134,7 +137,7 @@ entry:
   ret i1 %5
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -202,6 +205,7 @@ entry:
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/parse_cte.ll
 ; postgres/optimized/parse_target.ll
+; postgres/optimized/predicate.ll
 ; postgres/optimized/ruleutils.ll
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/varlena.ll
@@ -226,8 +230,9 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/cbaBlast.c.ll
+; clamav/optimized/filefn.cpp.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; git/optimized/kwset.ll
 ; glslang/optimized/glslang_tab.cpp.ll
@@ -868,7 +873,7 @@ entry:
   ret i1 %5
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -899,7 +904,9 @@ entry:
 ; openjdk/optimized/virtualMemoryTracker.ll
 ; re2/optimized/onepass.cc.ll
 ; recastnavigation/optimized/fastlz.c.ll
+; slurm/optimized/affinity.ll
 ; slurm/optimized/bitstring.ll
+; slurm/optimized/numa.ll
 ; slurm/optimized/schedutils.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
@@ -1232,7 +1239,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.2685211", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.2685178", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = icmp eq ptr %4, %0
   ret i1 %5
@@ -1715,34 +1722,6 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; freetype/optimized/ftstroke.c.ll
-; luajit/optimized/lib_buffer.ll
-; luajit/optimized/lib_buffer_dyn.ll
-; opencv/optimized/chessboard.cpp.ll
-; slurm/optimized/affinity.ll
-; slurm/optimized/numa.ll
-; tomlplusplus/optimized/toml.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = icmp ult ptr %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; clamav/optimized/filefn.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c8(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i32, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -4
-  %5 = icmp ugt ptr %4, %0
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; llvm/optimized/CloneDetection.cpp.ll
 ; yosys/optimized/lz4.ll
@@ -1803,6 +1782,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; postgres/optimized/tsvector_op.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.ZXing::Trit.3649621", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 7
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
 ; 11 occurrences:
 ; luajit/optimized/minilua.ll
 ; postgres/optimized/explain.ll
@@ -1818,19 +1809,23 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3651460, ptr %1, i64 %2
+  %3 = getelementptr %union.ListCell.3651426, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 
-; 1 occurrences:
-; postgres/optimized/tsvector_op.ll
+; 5 occurrences:
+; freetype/optimized/ftstroke.c.ll
+; luajit/optimized/lib_buffer.ll
+; luajit/optimized/lib_buffer_dyn.ll
+; opencv/optimized/chessboard.cpp.ll
+; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 2
+  %3 = getelementptr nusw nuw %union.TValue.3680588, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }

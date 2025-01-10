@@ -859,7 +859,7 @@ entry:
   ret i32 %4
 }
 
-; 404 occurrences:
+; 405 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -991,6 +991,7 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; hwloc/optimized/bitmap.ll
 ; icu/optimized/coleitr.ll
+; icu/optimized/number_affixutils.ll
 ; icu/optimized/ubidiln.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -1563,7 +1564,7 @@ entry:
   ret i32 %4
 }
 
-; 208 occurrences:
+; 207 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/acbAbc.c.ll
@@ -1764,7 +1765,6 @@ entry:
 ; slurm/optimized/eval_nodes_tree.ll
 ; slurm/optimized/io.ll
 ; slurm/optimized/job_mgr.ll
-; slurm/optimized/step_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; sundials/optimized/arkode_arkstep.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

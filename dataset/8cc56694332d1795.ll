@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
@@ -20,7 +20,6 @@
 ; lua/optimized/lapi.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
-; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/euc_jp.ll
 ; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/jvmtiImpl.ll

@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; nuttx/optimized/lib_memoutstream.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -51,12 +50,11 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; git/optimized/record.ll
-; nuttx/optimized/lib_meminstream.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -101,18 +99,6 @@ entry:
   %4 = sub i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/regexp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = sext i32 %1 to i64
-  %6 = icmp sgt i64 %4, %5
   ret i1 %6
 }
 

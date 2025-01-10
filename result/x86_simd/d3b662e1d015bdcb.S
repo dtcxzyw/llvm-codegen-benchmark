@@ -81,11 +81,3 @@ func000000000000001c:                   # @func000000000000001c
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI8_0:
-	.long	2147483647                      # 0x7fffffff
-func0000000000000013:                   # @func0000000000000013
-	vpandd	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq

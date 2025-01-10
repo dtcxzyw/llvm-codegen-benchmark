@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/luckySwap.c.ll
 ; abseil-cpp/optimized/crc.cc.ll
 ; actix-rs/optimized/188iedib5veo0ne9.ll
@@ -18,6 +18,7 @@
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; libquic/optimized/gcm.c.ll
 ; linux/optimized/af_unix.ll
+; luau/optimized/TableShape.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; opencv/optimized/rho.cpp.ll

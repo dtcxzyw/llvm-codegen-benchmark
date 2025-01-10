@@ -28,8 +28,3 @@ func000000000000003a:                   # @func000000000000003a
 	vpaddw	%ymm0, %ymm1, %ymm0
 	vpaddw	%ymm0, %ymm2, %ymm0
 	retq
-func000000000000003e:                   # @func000000000000003e
-	vpsllw	$4, %ymm2, %ymm2
-	vpaddw	%ymm0, %ymm1, %ymm0
-	vpaddw	%ymm0, %ymm2, %ymm0
-	retq

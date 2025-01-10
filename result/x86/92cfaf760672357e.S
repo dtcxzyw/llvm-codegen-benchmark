@@ -61,6 +61,13 @@ func00000000000000f5:                   # @func00000000000000f5
 	cmpq	%rdi, %rcx
 	setbe	%al
 	retq
+func000000000000006c:                   # @func000000000000006c
+	movl	%edx, %eax
+	movl	%esi, %ecx
+	addq	%rax, %rcx
+	cmpq	%rdi, %rcx
+	setne	%al
+	retq
 func0000000000000174:                   # @func0000000000000174
 	movl	%edx, %eax
 	movl	%esi, %ecx

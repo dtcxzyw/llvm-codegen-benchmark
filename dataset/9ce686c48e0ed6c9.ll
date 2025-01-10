@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
-%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
-%union.anon.2790010 = type { i32 }
-%union.anon.4.2790011 = type { i32 }
-%union.anon.5.2790009 = type { %union._ir_val.2790012 }
-%union._ir_val.2790012 = type { double }
+%struct._ir_insn.2789973 = type { %struct.anon.2789974, %union.anon.5.2789975 }
+%struct.anon.2789974 = type { %union.anon.2789976, %union.anon.4.2789977 }
+%union.anon.2789976 = type { i32 }
+%union.anon.4.2789977 = type { i32 }
+%union.anon.5.2789975 = type { %union._ir_val.2789978 }
+%union._ir_val.2789978 = type { double }
 
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
@@ -52,9 +52,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007b(ptr %0, i64 %1, i16 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %1
+  %3 = getelementptr nusw %struct._ir_insn.2789973, ptr %0, i64 %1
   %4 = sext i16 %2 to i64
-  %5 = getelementptr %struct._ir_insn.2790007, ptr %3, i64 %4
+  %5 = getelementptr %struct._ir_insn.2789973, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }

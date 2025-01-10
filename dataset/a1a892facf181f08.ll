@@ -10,10 +10,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
-; faiss/optimized/AutoTune.cpp.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {

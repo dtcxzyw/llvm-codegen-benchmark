@@ -95,7 +95,7 @@ entry:
   ret i32 %3
 }
 
-; 539 occurrences:
+; 533 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -166,7 +166,6 @@ entry:
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/easy.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; curl/optimized/libcurl_la-easy.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -203,10 +202,6 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Path.cpp.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libevent/optimized/listener.c.ll
 ; libpng/optimized/pngread.c.ll
@@ -633,7 +628,6 @@ entry:
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

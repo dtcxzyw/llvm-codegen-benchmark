@@ -10,9 +10,10 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; hwloc/optimized/hwloc-bind.ll
+; hwloc/optimized/topology-linux.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/tzfmt.ll
 ; libwebp/optimized/vp8l_dec.c.ll

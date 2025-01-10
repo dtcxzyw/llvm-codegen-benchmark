@@ -1,5 +1,5 @@
 
-; 973 occurrences:
+; 972 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -157,7 +157,6 @@
 ; flac/optimized/operations_shorthand_vorbiscomment.c.ll
 ; fmt/optimized/std-test.cc.ll
 ; freetype/optimized/cff.c.ll
-; freetype/optimized/pfr.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll

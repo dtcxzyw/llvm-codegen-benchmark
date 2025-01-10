@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcFault.c.ll
+; abc/optimized/cuddTable.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; openssl/optimized/libssl-lib-s3_enc.ll

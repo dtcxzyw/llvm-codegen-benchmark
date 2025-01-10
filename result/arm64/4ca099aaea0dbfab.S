@@ -6,10 +6,3 @@ func000000000000000e:                   // @func000000000000000e
 	add	x0, x0, w8, sxtw #2
 	ret
                                         // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	add	w8, w1, w1, lsl #1
-	orr	w8, w8, #0x3
-	add	x0, x0, w8, sxtw #2
-	ret
-                                        // -- End function

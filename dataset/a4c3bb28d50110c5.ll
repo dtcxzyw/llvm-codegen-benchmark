@@ -17,12 +17,11 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/OgreStructs.cpp.ll
 ; boost/optimized/from_chars.ll
 ; boost/optimized/src.ll
-; cpython/optimized/action_helpers.ll
 ; glslang/optimized/Pp.cpp.ll
 ; linux/optimized/itimer.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll

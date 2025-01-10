@@ -14,9 +14,10 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/process_vm_access.ll
 ; linux/optimized/scatterlist.ll
+; linux/optimized/vc_screen.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll

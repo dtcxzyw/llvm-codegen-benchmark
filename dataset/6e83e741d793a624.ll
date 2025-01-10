@@ -1,5 +1,5 @@
 
-; 431 occurrences:
+; 432 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -133,6 +133,7 @@
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/AnalyzerStatsChecker.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
@@ -441,7 +442,7 @@ entry:
   ret i32 %6
 }
 
-; 200 occurrences:
+; 198 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -527,7 +528,6 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -538,7 +538,6 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
-; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
@@ -806,7 +805,7 @@ entry:
   ret i32 %6
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -820,6 +819,7 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/vfs_inode.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -909,11 +909,10 @@ entry:
   ret i32 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; lief/optimized/des.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_psr.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll

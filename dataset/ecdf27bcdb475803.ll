@@ -1,6 +1,6 @@
 
-%"class.llvm::MCInstrDesc.3141250" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::MCOperandInfo.3141253" = type { i16, i8, i8, i16 }
+%"class.llvm::MCInstrDesc.3141216" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCOperandInfo.3141219" = type { i16, i8, i8, i16 }
 
 ; 12 occurrences:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
@@ -19,9 +19,9 @@
 define ptr @func00000000000000ff(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3141250", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3141216", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  %6 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3141253", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3141219", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 10
   ret ptr %7
 }

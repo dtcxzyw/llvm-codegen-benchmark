@@ -1,17 +1,15 @@
 
-%"struct.OT::HBGlyphID16.2742086" = type { %"struct.OT::IntType.2742031" }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
-%class.btVector3.2819523 = type { [4 x float] }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
-%struct.skl_plane_wm.3534310 = type { [8 x %struct.skl_wm_level.3534311], [8 x %struct.skl_wm_level.3534311], %struct.skl_wm_level.3534311, %struct.anon.58.3534312, i8 }
-%struct.skl_wm_level.3534311 = type { i16, i16, i8, i8, i8, i8 }
-%struct.anon.58.3534312 = type { %struct.skl_wm_level.3534311, %struct.skl_wm_level.3534311 }
-%"struct.cv::CircleData.3731276" = type { double, i32, i64 }
-%struct.mi_page_s.4024222 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024223, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024223 = type { i8 }
-%struct.mi_page_s.4024255 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024256, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024256 = type { i8 }
+%"struct.OT::HBGlyphID16.2742052" = type { %"struct.OT::IntType.2741997" }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
+%class.btVector3.2819489 = type { [4 x float] }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
+%struct.skl_plane_wm.3534276 = type { [8 x %struct.skl_wm_level.3534277], [8 x %struct.skl_wm_level.3534277], %struct.skl_wm_level.3534277, %struct.anon.58.3534278, i8 }
+%struct.skl_wm_level.3534277 = type { i16, i16, i8, i8, i8, i8 }
+%struct.anon.58.3534278 = type { %struct.skl_wm_level.3534277, %struct.skl_wm_level.3534277 }
+%"struct.cv::CircleData.3731226" = type { double, i32, i64 }
+%struct.mi_page_s.4024172 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024173, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024173 = type { i8 }
 
 ; 1 occurrences:
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
@@ -23,11 +21,10 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
-; openspiel/optimized/DealerPar.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
@@ -35,8 +32,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2742086"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nuw %"struct.OT::HBGlyphID16.2742086", ptr %3, i64 %0, i32 0, i32 0, i32 0, i64 1
+  %3 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2742052"], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nuw %"struct.OT::HBGlyphID16.2742052", ptr %3, i64 %0, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -47,16 +44,17 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [3 x %class.btVector3.2819523], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [3 x %class.btVector3.2819489], ptr %1, i64 0, i64 %2
   %4 = getelementptr float, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
+; openspiel/optimized/DealerPar.cpp.ll
 ; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
 ; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
 ; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
@@ -78,8 +76,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -93,8 +91,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0, i32 1
+  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 
@@ -104,8 +102,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -117,8 +115,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000022(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -56
   ret ptr %5
 }
@@ -130,8 +128,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873179, ptr %3, i64 %0
+  %3 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873145, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
@@ -161,7 +159,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [8 x %struct.skl_plane_wm.3534310], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [8 x %struct.skl_plane_wm.3534276], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = getelementptr nusw nuw i8, ptr %4, i64 5
   ret ptr %5
@@ -175,18 +173,19 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [100 x %"struct.cv::CircleData.3731276"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr %"struct.cv::CircleData.3731276", ptr %3, i64 %0, i32 1
+  %3 = getelementptr nusw nuw [100 x %"struct.cv::CircleData.3731226"], ptr %1, i64 0, i64 %2
+  %4 = getelementptr %"struct.cv::CircleData.3731226", ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
+; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [16 x i8], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [16 x i8], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = getelementptr nusw i8, ptr %4, i64 -4
   ret ptr %5
@@ -197,20 +196,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024222], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024172], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 14
-  ret ptr %5
-}
-
-; 1 occurrences:
-; mimalloc/optimized/segment.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw [513 x %struct.mi_page_s.4024255], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw %struct.mi_page_s.4024255, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %4, i64 -80
   ret ptr %5
 }
 

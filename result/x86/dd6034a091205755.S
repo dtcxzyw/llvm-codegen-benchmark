@@ -8,7 +8,7 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000f:                   # @func000000000000000f
 	testl	%esi, %esi
 	cmovel	%esi, %edi
-	movl	$12, %eax
+	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

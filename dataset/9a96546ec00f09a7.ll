@@ -1,5 +1,5 @@
 
-%class.relocInfo.2733766 = type { i16 }
+%class.relocInfo.2733732 = type { i16 }
 
 ; 113 occurrences:
 ; abc/optimized/solver.c.ll
@@ -149,7 +149,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 8
   %6 = and i64 %5, 16777215
-  %7 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %0, i64 %6
   ret ptr %7
 }
 

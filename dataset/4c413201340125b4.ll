@@ -26,7 +26,8 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; openjdk/optimized/instanceStackChunkKlass.ll
 ; openusd/optimized/warped_motion.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll

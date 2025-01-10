@@ -92,7 +92,7 @@ entry:
   ret i64 %2
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; boost/optimized/area_geo.ll
@@ -125,9 +125,6 @@ entry:
 ; ripgrep-rs/optimized/rwbxp5vay147miz.ll
 ; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
-; typst-rs/optimized/1c2qpu6zljc8gscz.ll
-; typst-rs/optimized/377uk5tkmxagdt0q.ll
-; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/pcapio.c.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
@@ -153,7 +150,7 @@ entry:
   ret i64 %2
 }
 
-; 342 occurrences:
+; 346 occurrences:
 ; assimp/optimized/Compression.cpp.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -369,6 +366,10 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; typst-rs/optimized/1c2qpu6zljc8gscz.ll
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll

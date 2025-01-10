@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/ls-tree.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -12,6 +12,8 @@
 ; openjdk/optimized/runtime.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; php/optimized/ir_emit.ll
 ; rocksdb/optimized/thread_status_impl.cc.ll
 ; wireshark/optimized/packet-osmo_trx.c.ll

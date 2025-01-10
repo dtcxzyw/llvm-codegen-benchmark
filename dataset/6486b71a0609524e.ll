@@ -57,4 +57,19 @@ entry:
   ret i32 %6
 }
 
+; 3 occurrences:
+; linux/optimized/net.ll
+; luau/optimized/main.cpp.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 240
+  %3 = icmp eq i32 %2, 224
+  %4 = select i1 %3, i32 15, i32 7
+  %.not = icmp eq i32 %0, 192
+  %5 = select i1 %.not, i32 31, i32 %4
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

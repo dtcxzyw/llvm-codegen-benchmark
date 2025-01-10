@@ -22,13 +22,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; cmake/optimized/fse_compress.c.ll
+; 4 occurrences:
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openssl/optimized/libcrypto-lib-provider_core.ll
 ; openssl/optimized/libcrypto-shlib-provider_core.ll
-; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:

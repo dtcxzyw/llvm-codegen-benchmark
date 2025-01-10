@@ -27,6 +27,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = tail call i32 @llvm.smin.i32(i32 %2, i32 11)
+  %4 = add nsw i32 %3, -7
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; libwebp/optimized/iterator_enc.c.ll
 ; wolfssl/optimized/internal.c.ll

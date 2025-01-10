@@ -1,5 +1,5 @@
 
-; 453 occurrences:
+; 450 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/absGla.c.ll
@@ -110,7 +110,6 @@
 ; jq/optimized/regcomp.ll
 ; jq/optimized/regparse.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/v3_utl.c.ll
 ; libwebp/optimized/anim_decode.c.ll
@@ -272,7 +271,6 @@
 ; redis/optimized/luac.ll
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/compile.ll
-; ruby/optimized/complex.ll
 ; ruby/optimized/cont.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/symbol.ll
@@ -368,7 +366,6 @@
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-atalk.c.ll
-; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; wireshark/optimized/packet-dbus.c.ll

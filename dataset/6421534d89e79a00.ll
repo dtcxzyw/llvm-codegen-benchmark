@@ -1,17 +1,17 @@
 
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.ImVec2.3454247 = type { float, float }
-%struct.skl_plane_wm.3534310 = type { [8 x %struct.skl_wm_level.3534311], [8 x %struct.skl_wm_level.3534311], %struct.skl_wm_level.3534311, %struct.anon.58.3534312, i8 }
-%struct.skl_wm_level.3534311 = type { i16, i16, i8, i8, i8, i8 }
-%struct.anon.58.3534312 = type { %struct.skl_wm_level.3534311, %struct.skl_wm_level.3534311 }
-%struct.snd_interval.3536592 = type { i32, i32, i8 }
-%struct.mdio_bus_stats.3549566 = type { %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_sync.3549568 }
-%struct.u64_stats_t.3549567 = type { %struct.local64_t.3549569 }
-%struct.local64_t.3549569 = type { %struct.local_t.3549570 }
-%struct.local_t.3549570 = type { %struct.atomic64_t.3549571 }
-%struct.atomic64_t.3549571 = type { i64 }
-%struct.u64_stats_sync.3549568 = type {}
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.ImVec2.3454213 = type { float, float }
+%struct.skl_plane_wm.3534276 = type { [8 x %struct.skl_wm_level.3534277], [8 x %struct.skl_wm_level.3534277], %struct.skl_wm_level.3534277, %struct.anon.58.3534278, i8 }
+%struct.skl_wm_level.3534277 = type { i16, i16, i8, i8, i8, i8 }
+%struct.anon.58.3534278 = type { %struct.skl_wm_level.3534277, %struct.skl_wm_level.3534277 }
+%struct.snd_interval.3536558 = type { i32, i32, i8 }
+%struct.mdio_bus_stats.3549532 = type { %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_sync.3549534 }
+%struct.u64_stats_t.3549533 = type { %struct.local64_t.3549535 }
+%struct.local64_t.3549535 = type { %struct.local_t.3549536 }
+%struct.local_t.3549536 = type { %struct.atomic64_t.3549537 }
+%struct.atomic64_t.3549537 = type { i64 }
+%struct.u64_stats_sync.3549534 = type {}
 
 ; 7 occurrences:
 ; linux/optimized/io_uring.ll
@@ -45,8 +45,8 @@ define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %4, i64 0, i64 %3
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %4, i64 0, i64 %3
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -76,7 +76,7 @@ define ptr @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 984
-  %5 = getelementptr nusw nuw [2 x %struct.ImVec2.3454247], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [2 x %struct.ImVec2.3454213], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw float, ptr %5, i64 %0
   ret ptr %6
 }
@@ -88,7 +88,7 @@ define ptr @func0000000000000033(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 2790
-  %5 = getelementptr [8 x %struct.skl_plane_wm.3534310], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [8 x %struct.skl_plane_wm.3534276], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -101,7 +101,7 @@ define ptr @func0000000000000073(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 260
-  %5 = getelementptr [12 x %struct.snd_interval.3536592], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [12 x %struct.snd_interval.3536558], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -113,7 +113,7 @@ define ptr @func0000000000000040(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -1072
-  %5 = getelementptr [32 x %struct.mdio_bus_stats.3549566], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [32 x %struct.mdio_bus_stats.3549532], ptr %4, i64 0, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }

@@ -4,13 +4,13 @@ func0000000000000030:                   // @func0000000000000030
 	sub	x0, x8, w1, uxtw
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
+func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, w1, uxtw
 	ret
                                         // -- End function
-func000000000000000d:                   // @func000000000000000d
+func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, w1, uxtw

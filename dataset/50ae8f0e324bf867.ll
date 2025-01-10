@@ -70,8 +70,7 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; icu/optimized/number_decimalquantity.ll
+; 4 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll

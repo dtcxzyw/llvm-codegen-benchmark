@@ -1,5 +1,5 @@
 
-; 262 occurrences:
+; 264 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
@@ -128,7 +128,9 @@
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahMark.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/sha2.ll
@@ -317,7 +319,7 @@ entry:
   ret i1 %2
 }
 
-; 38 occurrences:
+; 36 occurrences:
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/SymbolTable.cpp.ll
@@ -345,8 +347,6 @@ entry:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
-; openssl/optimized/libssl-lib-quic_channel.ll
-; openssl/optimized/libssl-shlib-quic_channel.ll
 ; php/optimized/hash_sha.ll
 ; postgres/optimized/sha2.ll
 ; postgres/optimized/sha2_shlib.ll

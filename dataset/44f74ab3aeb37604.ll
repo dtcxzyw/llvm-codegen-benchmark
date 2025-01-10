@@ -1,8 +1,7 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; abc/optimized/cecClass.c.ll
 ; c3c/optimized/parse_stmt.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -22,7 +21,6 @@
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; re2/optimized/prog.cc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:

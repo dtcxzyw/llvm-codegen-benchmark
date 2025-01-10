@@ -392,7 +392,8 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -602,8 +603,7 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 5 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
 ; postgres/optimized/snapmgr.ll

@@ -19,6 +19,6 @@ func0000000000000003:                   // @func0000000000000003
 	mov	w8, w1
 	cmp	x0, x8
 	csel	x8, x0, x8, lo
-	lsl	x0, x8, #3
+	lsl	x0, x8, #2
 	ret
                                         // -- End function

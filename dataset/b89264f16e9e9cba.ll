@@ -1,23 +1,23 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
-%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
-%"struct.std::__atomic_base.2624846" = type { i64 }
-%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
-%"class.rocksdb::Histogram.2624847" = type { ptr }
-%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
-%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
-%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
-%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
-%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
-%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
-%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
-%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
-%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
-%union.anon.6.3535215 = type { %struct.list_head.3535195 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%union.anon.8.3535216 = type { i64 }
-%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624810" = type { [216 x %"struct.std::atomic.51.2624811"], [61 x %"class.rocksdb::HistogramImpl.2624812"], [24 x i8] }
+%"struct.std::atomic.51.2624811" = type { %"struct.std::__atomic_base.2624813" }
+%"struct.std::__atomic_base.2624813" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624812" = type { %"class.rocksdb::Histogram.2624814", %"struct.rocksdb::HistogramStat.2624815", %"class.std::mutex.2624816" }
+%"class.rocksdb::Histogram.2624814" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624815" = type { %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", [109 x %"struct.std::atomic.51.2624811"], i64 }
+%"class.std::mutex.2624816" = type { %"class.std::__mutex_base.2624817" }
+%"class.std::__mutex_base.2624817" = type { %union.pthread_mutex_t.2624818 }
+%union.pthread_mutex_t.2624818 = type { %struct.__pthread_mutex_s.2624819 }
+%struct.__pthread_mutex_s.2624819 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624820 }
+%struct.__pthread_internal_list.2624820 = type { ptr, ptr }
+%struct.page.3535177 = type { i64, %union.anon.4.3535178, %union.anon.12.3535179, %struct.atomic_t.3535145, [8 x i8] }
+%union.anon.4.3535178 = type { %struct.anon.5.3535180 }
+%struct.anon.5.3535180 = type { %union.anon.6.3535181, ptr, %union.anon.8.3535182, i64 }
+%union.anon.6.3535181 = type { %struct.list_head.3535161 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%union.anon.8.3535182 = type { i64 }
+%union.anon.12.3535179 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
 
 ; 14 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624810", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -622,7 +622,7 @@ define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
-  %4 = getelementptr %struct.page.3535211, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3535177, ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -1,7 +1,7 @@
 
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
 
 ; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -35,7 +35,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 281474976710655
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw nuw %"class.rapidjson::GenericValue.2749211", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.rapidjson::GenericValue.2749177", ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 14
   ret ptr %6
 }
@@ -48,7 +48,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 281474976710655
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr %"class.rapidjson::GenericValue.2749211", ptr %4, i64 %0, i32 0, i32 0, i32 2
+  %5 = getelementptr %"class.rapidjson::GenericValue.2749177", ptr %4, i64 %0, i32 0, i32 0, i32 2
   ret ptr %5
 }
 

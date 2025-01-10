@@ -1,7 +1,7 @@
 
-%"class.boost::container::pmr::pool_data_t.3038812" = type { %"class.boost::container::pmr::block_slist_base.3038813", %"struct.boost::container::pmr::slist_node.3038814", i64 }
-%"class.boost::container::pmr::block_slist_base.3038813" = type { %"struct.boost::container::pmr::slist_node.3038814" }
-%"struct.boost::container::pmr::slist_node.3038814" = type { ptr }
+%"class.boost::container::pmr::pool_data_t.3038778" = type { %"class.boost::container::pmr::block_slist_base.3038779", %"struct.boost::container::pmr::slist_node.3038780", i64 }
+%"class.boost::container::pmr::block_slist_base.3038779" = type { %"struct.boost::container::pmr::slist_node.3038780" }
+%"struct.boost::container::pmr::slist_node.3038780" = type { ptr }
 
 ; 3 occurrences:
 ; boost/optimized/pool_resource.ll
@@ -12,7 +12,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = tail call range(i64 0, 65) i64 @llvm.ctlz.i64(i64 %1, i1 false)
   %3 = sub nuw nsw i64 60, %2
-  %4 = getelementptr nusw nuw %"class.boost::container::pmr::pool_data_t.3038812", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.boost::container::pmr::pool_data_t.3038778", ptr %0, i64 %3
   ret ptr %4
 }
 

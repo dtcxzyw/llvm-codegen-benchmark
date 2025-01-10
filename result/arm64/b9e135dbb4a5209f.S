@@ -28,10 +28,3 @@ func000000000000000a:                   // @func000000000000000a
 	mvn	x0, x8
 	ret
                                         // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	orr	x8, x1, x2, lsl #48
-	orr	x8, x8, x0
-	mvn	x0, x8
-	ret
-                                        // -- End function

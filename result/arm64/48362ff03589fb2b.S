@@ -56,10 +56,9 @@ func000000000000000d:                   // @func000000000000000d
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	tst	w2, #0x1
-	mov	w8, #96                         // =0x60
-	mov	w9, #128                        // =0x80
-	csel	x8, x9, x8, ne
-	add	x9, x0, x1
+	mov	x8, #-2                         // =0xfffffffffffffffe
+	add	x9, x1, x0
+	cinc	x8, x8, eq
 	add	x0, x9, x8
 	ret
                                         // -- End function

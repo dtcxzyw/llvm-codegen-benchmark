@@ -1684,7 +1684,7 @@ entry:
   ret i64 %3
 }
 
-; 242 occurrences:
+; 241 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -1749,7 +1749,6 @@ entry:
 ; libquic/optimized/time_posix.cc.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
-; libwebp/optimized/huffman_encode_utils.c.ll
 ; libzmq/optimized/mailbox_safe.cpp.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/array.ll

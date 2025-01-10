@@ -1244,6 +1244,22 @@ entry:
   ret i64 %5
 }
 
+; 6 occurrences:
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; nlohmann_json/optimized/unit-constructor1.cpp.ll
+; nlohmann_json/optimized/unit-hash.cpp.ll
+; openjdk/optimized/zip_util.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = add nuw nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 11 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -1261,21 +1277,6 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 5 occurrences:
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
-; nlohmann_json/optimized/unit-constructor1.cpp.ll
-; nlohmann_json/optimized/unit-hash.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 4
-  %4 = add nuw nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5
 }

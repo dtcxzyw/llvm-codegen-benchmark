@@ -1,8 +1,8 @@
 
-%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
-%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%"struct.mold::elf::ElfShdr.555.2636391" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392" }
+%"class.mold::LittleEndian.551.2636392" = type { [4 x i8] }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 59 occurrences:
 ; arrow/optimized/feather.cc.ll
@@ -70,7 +70,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636391", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -132,9 +132,9 @@ entry:
 define ptr @func0000000000000020(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr %struct.JSValue.3435081, ptr %4, i64 %5
+  %6 = getelementptr %struct.JSValue.3435047, ptr %4, i64 %5
   ret ptr %6
 }
 

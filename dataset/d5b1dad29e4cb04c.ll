@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; git/optimized/streaming.ll
 ; linux/optimized/hvc_console.ll
 ; openssl/optimized/libcrypto-lib-cmac.ll
@@ -9,6 +9,8 @@
 ; postgres/optimized/logtape.ll
 ; postgres/optimized/pqcomm.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -21,6 +23,20 @@ entry:
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 3 occurrences:
+; git/optimized/remote-curl.ll
+; nuttx/optimized/lib_meminstream.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
+  %5 = trunc i64 %4 to i32
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
 
 ; 1 occurrences:
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll

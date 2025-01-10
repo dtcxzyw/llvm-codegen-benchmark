@@ -14,7 +14,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmseq.vi	v12, v10, 0
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
-	vmseq.vi	v10, v8, 8
+	li	a0, 16
+	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 func0000000000000181:                   # @func0000000000000181

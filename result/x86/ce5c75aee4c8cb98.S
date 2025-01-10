@@ -194,12 +194,6 @@ func0000000000000149:                   # @func0000000000000149
 	cmpq	%rsi, %rdi
 	setae	%al
 	retq
-func00000000000001c9:                   # @func00000000000001c9
-	addq	%rdx, %rsi
-	addq	$-4, %rdi
-	cmpq	%rsi, %rdi
-	setae	%al
-	retq
 func000000000000018c:                   # @func000000000000018c
 	addq	%rdx, %rsi
 	addq	$8, %rdi

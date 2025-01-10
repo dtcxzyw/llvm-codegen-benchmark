@@ -127,7 +127,7 @@ entry:
   ret i32 %3
 }
 
-; 200 occurrences:
+; 201 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -224,6 +224,7 @@ entry:
 ; minetest/optimized/mapgen_flat.cpp.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
+; minetest/optimized/servermap.cpp.ll
 ; msdfgen/optimized/Scanline.cpp.ll
 ; ncnn/optimized/einsum.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
@@ -336,12 +337,13 @@ entry:
   ret i32 %3
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/cmdStarter.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
+; clamav/optimized/matcher-ac.c.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; icu/optimized/unames.ll
 ; icu/optimized/uvectr32.ll

@@ -1,5 +1,5 @@
 
-; 200 occurrences:
+; 198 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/cuddTable.c.ll
@@ -17,7 +17,6 @@
 ; abc/optimized/wlcBlast.c.ll
 ; boost/optimized/alloc_lib.ll
 ; ceres/optimized/polynomial.cc.ll
-; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rs.cpp.ll
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -199,7 +198,6 @@
 ; zstd/optimized/huf_decompress.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
@@ -1438,7 +1436,7 @@ entry:
   ret i64 %3
 }
 
-; 779 occurrences:
+; 780 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/encode_internal.cc.ll
@@ -1508,6 +1506,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

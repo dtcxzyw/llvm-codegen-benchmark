@@ -32,7 +32,7 @@ entry:
   ret i64 %4
 }
 
-; 796 occurrences:
+; 795 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -225,7 +225,6 @@ entry:
 ; linux/optimized/tcp.ll
 ; linux/optimized/truncate.ll
 ; linux/optimized/write.ll
-; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll

@@ -24,9 +24,9 @@ func000000000000020a:                   // @func000000000000020a
                                         // -- End function
 func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	sub	w8, w0, w1, lsl #3
-	add	w8, w8, #8
-	cmp	w8, #7
+	lsl	w8, w1, #3
+	sub	w8, w8, #8
+	cmp	w0, w8
 	cset	w0, gt
 	ret
                                         // -- End function

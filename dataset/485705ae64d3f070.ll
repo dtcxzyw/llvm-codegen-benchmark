@@ -1,8 +1,8 @@
 
-%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%"struct.folly::Subprocess::Pipe.2685236" = type <{ %"class.folly::File.2685228", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685228" = type <{ i32, i8, [3 x i8] }>
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 27 occurrences:
 ; abc/optimized/abcHieGia.c.ll
@@ -37,7 +37,7 @@ define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %1, i64 %4
+  %5 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685236", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -66,7 +66,7 @@ define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 28
   %4 = ashr i64 %3, 32
-  %5 = getelementptr nusw %struct.lua_TValue.3680875, ptr %1, i64 %4
+  %5 = getelementptr nusw %struct.lua_TValue.3680825, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

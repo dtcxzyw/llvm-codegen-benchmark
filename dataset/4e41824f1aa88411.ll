@@ -59,13 +59,14 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; postgres/optimized/md.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 131072, %1
+  %2 = sub nuw nsw i32 8, %1
   %3 = call i32 @llvm.usub.sat.i32(i32 %0, i32 %2)
   ret i32 %3
 }

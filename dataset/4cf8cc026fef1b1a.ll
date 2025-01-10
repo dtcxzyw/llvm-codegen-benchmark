@@ -1,8 +1,8 @@
 
-%class.btVector3.2819204 = type { [4 x float] }
-%"struct.std::pair.3181474" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.3181475" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3181475" = type { %struct.anon.3181476 }
-%struct.anon.3181476 = type { [4 x i8] }
+%class.btVector3.2819170 = type { [4 x float] }
+%"struct.std::pair.3181440" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.3181441" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3181441" = type { %struct.anon.3181442 }
+%struct.anon.3181442 = type { [4 x i8] }
 
 ; 6 occurrences:
 ; git/optimized/object.ll
@@ -49,7 +49,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw nuw %class.btVector3.2819204, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.btVector3.2819170, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = add nuw i32 %2, 2
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 4294967295
-  %6 = getelementptr nusw nuw %"struct.std::pair.3181474", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.3181440", ptr %0, i64 %5
   ret ptr %6
 }
 

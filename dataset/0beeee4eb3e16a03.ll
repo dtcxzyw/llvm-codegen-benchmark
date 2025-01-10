@@ -1,11 +1,12 @@
 
-; 370 occurrences:
+; 371 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/acecPa.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/aigTsim.c.ll
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -378,8 +379,7 @@ entry:
   ret i32 %4
 }
 
-; 122 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 121 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; cxxopts/optimized/example.cpp.ll

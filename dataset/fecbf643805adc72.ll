@@ -1,13 +1,13 @@
 
-%struct.dtOffMeshConnection.3108551 = type { [6 x float], float, i16, i8, i8, i32 }
-%"struct.llvm::wasm::WasmGlobal.3323323" = type { i32, %"struct.llvm::wasm::WasmGlobalType.3323324", %"struct.llvm::wasm::WasmInitExpr.3323325", %"class.llvm::StringRef.3323277", i32, i32 }
-%"struct.llvm::wasm::WasmGlobalType.3323324" = type { i8, i8 }
-%"struct.llvm::wasm::WasmInitExpr.3323325" = type { i8, %"struct.llvm::wasm::WasmInitExprMVP.3323326", %"class.llvm::ArrayRef.3323286" }
-%"struct.llvm::wasm::WasmInitExprMVP.3323326" = type { i8, %union.anon.120.3323327 }
-%union.anon.120.3323327 = type { i64 }
-%"class.llvm::ArrayRef.3323286" = type { ptr, i64 }
-%"class.llvm::StringRef.3323277" = type { ptr, i64 }
-%"struct.llvm::wasm::WasmTag.3323322" = type { i32, i32, %"class.llvm::StringRef.3323277" }
+%struct.dtOffMeshConnection.3108517 = type { [6 x float], float, i16, i8, i8, i32 }
+%"struct.llvm::wasm::WasmGlobal.3323289" = type { i32, %"struct.llvm::wasm::WasmGlobalType.3323290", %"struct.llvm::wasm::WasmInitExpr.3323291", %"class.llvm::StringRef.3323243", i32, i32 }
+%"struct.llvm::wasm::WasmGlobalType.3323290" = type { i8, i8 }
+%"struct.llvm::wasm::WasmInitExpr.3323291" = type { i8, %"struct.llvm::wasm::WasmInitExprMVP.3323292", %"class.llvm::ArrayRef.3323252" }
+%"struct.llvm::wasm::WasmInitExprMVP.3323292" = type { i8, %union.anon.120.3323293 }
+%union.anon.120.3323293 = type { i64 }
+%"class.llvm::ArrayRef.3323252" = type { ptr, i64 }
+%"class.llvm::StringRef.3323243" = type { ptr, i64 }
+%"struct.llvm::wasm::WasmTag.3323288" = type { i32, i32, %"class.llvm::StringRef.3323243" }
 
 ; 8 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -24,7 +24,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.dtOffMeshConnection.3108551, ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr nuw %struct.dtOffMeshConnection.3108517, ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nuw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"struct.llvm::wasm::WasmGlobal.3323323", ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %"struct.llvm::wasm::WasmGlobal.3323289", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"struct.llvm::wasm::WasmTag.3323322", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"struct.llvm::wasm::WasmTag.3323288", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

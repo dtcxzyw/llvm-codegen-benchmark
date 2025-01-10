@@ -1,5 +1,5 @@
 
-%struct.hb_atomic_int_t.2742257 = type { i32 }
+%struct.hb_atomic_int_t.2742223 = type { i32 }
 
 ; 3 occurrences:
 ; linux/optimized/pt.ll
@@ -25,7 +25,7 @@ entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw nuw [256 x %struct.hb_atomic_int_t.2742257], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [256 x %struct.hb_atomic_int_t.2742223], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

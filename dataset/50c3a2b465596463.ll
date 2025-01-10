@@ -15,10 +15,9 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/sre.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
-; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind

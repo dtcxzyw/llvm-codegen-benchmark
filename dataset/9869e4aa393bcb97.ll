@@ -1,9 +1,9 @@
 
-%"class.std::basic_string_view.2635833" = type { i64, ptr }
-%struct.NodeInfo.2705929 = type { i64, ptr, i8, i8, i8, i16, [128 x i8] }
-%struct.rv_opcode_data.2707215 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
-%struct.Odc_Obj_t_.2876286 = type { i16, i16, i16, i16, i32, i32 }
-%"struct.Stockfish::(anonymous namespace)::LR.2878321" = type { [3 x i8] }
+%"class.std::basic_string_view.2635800" = type { i64, ptr }
+%struct.NodeInfo.2705895 = type { i64, ptr, i8, i8, i8, i16, [128 x i8] }
+%struct.rv_opcode_data.2707181 = type { ptr, i32, ptr, ptr, i16, i16, i16, i16 }
+%struct.Odc_Obj_t_.2876252 = type { i16, i16, i16, i16, i32, i32 }
+%"struct.Stockfish::(anonymous namespace)::LR.2878287" = type { [3 x i8] }
 
 ; 147 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -614,7 +614,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nuw %"class.std::basic_string_view.2635833", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nuw %"class.std::basic_string_view.2635800", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -729,7 +729,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr %struct.NodeInfo.2705929, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.NodeInfo.2705895, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -900,7 +900,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.rv_opcode_data.2707215, ptr %0, i64 %2, i32 6
+  %3 = getelementptr %struct.rv_opcode_data.2707181, ptr %0, i64 %2, i32 6
   ret ptr %3
 }
 
@@ -921,7 +921,7 @@ entry:
 define ptr @func000000000000001c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr %struct.Odc_Obj_t_.2876286, ptr %0, i64 %2, i32 3
+  %3 = getelementptr %struct.Odc_Obj_t_.2876252, ptr %0, i64 %2, i32 3
   ret ptr %3
 }
 
@@ -947,7 +947,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %"struct.Stockfish::(anonymous namespace)::LR.2878321", ptr %0, i64 %2, i32 0, i64 1
+  %3 = getelementptr %"struct.Stockfish::(anonymous namespace)::LR.2878287", ptr %0, i64 %2, i32 0, i64 1
   ret ptr %3
 }
 

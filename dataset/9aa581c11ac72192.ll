@@ -52,7 +52,8 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -67,8 +68,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 3 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sscSim.c.ll
 ; arrow/optimized/crc32.cc.ll

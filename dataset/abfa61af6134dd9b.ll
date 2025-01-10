@@ -1,9 +1,9 @@
 
-%"struct.mold::elf::ElfRel.2637827" = type { %"class.mold::LittleEndian.2637826", i8, %"class.mold::LittleEndian.406.2637828" }
-%"class.mold::LittleEndian.2637826" = type { [4 x i8] }
-%"class.mold::LittleEndian.406.2637828" = type { [3 x i8] }
-%"struct.std::pair.3280201" = type { i32, i32 }
-%struct.ImVec2.3454338 = type { float, float }
+%"struct.mold::elf::ElfRel.2637794" = type { %"class.mold::LittleEndian.2637793", i8, %"class.mold::LittleEndian.406.2637795" }
+%"class.mold::LittleEndian.2637793" = type { [4 x i8] }
+%"class.mold::LittleEndian.406.2637795" = type { [3 x i8] }
+%"struct.std::pair.3280167" = type { i32, i32 }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 49 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
@@ -77,7 +77,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637827", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637794", ptr %0, i64 %3
   %5 = shl i64 %1, 3
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -312,7 +312,7 @@ entry:
 define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3280167", ptr %0, i64 %3
   %5 = shl nsw i64 %1, 3
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -351,7 +351,7 @@ entry:
 define ptr @func0000000000000053(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %3
+  %4 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %3
   %.idx = shl nsw i64 %1, 5
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %.idx
   ret ptr %5

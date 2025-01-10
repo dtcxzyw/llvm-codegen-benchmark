@@ -515,8 +515,7 @@ entry:
   ret i64 %5
 }
 
-; 86 occurrences:
-; arrow/optimized/compare_internal_avx2.cc.ll
+; 85 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll

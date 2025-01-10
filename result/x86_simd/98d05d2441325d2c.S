@@ -65,11 +65,12 @@ func000000000000000d:                   # @func000000000000000d
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI10_0:
+	.quad	1073741824                      # 0x40000000
 func000000000000001d:                   # @func000000000000001d
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI11_0:
 	.quad	3                               # 0x3

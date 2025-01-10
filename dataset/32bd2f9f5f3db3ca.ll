@@ -52,10 +52,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll

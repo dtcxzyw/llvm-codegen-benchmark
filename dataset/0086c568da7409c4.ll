@@ -1,16 +1,16 @@
 
-%"class.std::vector.14.2908984" = type { %"struct.std::_Vector_base.15.2908985" }
-%"struct.std::_Vector_base.15.2908985" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908986" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908987" = type { ptr, ptr, ptr }
-%"class.duckdb::unique_ptr.1737.2965502" = type { %"class.std::unique_ptr.1738.2965503" }
-%"class.std::unique_ptr.1738.2965503" = type { %"struct.std::__uniq_ptr_data.1739.2965504" }
-%"struct.std::__uniq_ptr_data.1739.2965504" = type { %"class.std::__uniq_ptr_impl.1740.2965505" }
-%"class.std::__uniq_ptr_impl.1740.2965505" = type { %"class.std::tuple.1741.2965506" }
-%"class.std::tuple.1741.2965506" = type { %"struct.std::_Tuple_impl.1742.2965507" }
-%"struct.std::_Tuple_impl.1742.2965507" = type { %"struct.std::_Head_base.1745.2965508" }
-%"struct.std::_Head_base.1745.2965508" = type { ptr }
-%struct.pointf_s.3884849 = type { double, double }
+%"class.std::vector.14.2908950" = type { %"struct.std::_Vector_base.15.2908951" }
+%"struct.std::_Vector_base.15.2908951" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2908952" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2908953" = type { ptr, ptr, ptr }
+%"class.duckdb::unique_ptr.1737.2965468" = type { %"class.std::unique_ptr.1738.2965469" }
+%"class.std::unique_ptr.1738.2965469" = type { %"struct.std::__uniq_ptr_data.1739.2965470" }
+%"struct.std::__uniq_ptr_data.1739.2965470" = type { %"class.std::__uniq_ptr_impl.1740.2965471" }
+%"class.std::__uniq_ptr_impl.1740.2965471" = type { %"class.std::tuple.1741.2965472" }
+%"class.std::tuple.1741.2965472" = type { %"struct.std::_Tuple_impl.1742.2965473" }
+%"struct.std::_Tuple_impl.1742.2965473" = type { %"struct.std::_Head_base.1745.2965474" }
+%"struct.std::_Head_base.1745.2965474" = type { ptr }
+%struct.pointf_s.3884799 = type { double, double }
 
 ; 10 occurrences:
 ; git/optimized/diff.ll
@@ -73,7 +73,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw %"class.std::vector.14.2908984", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::vector.14.2908950", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -86,7 +86,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw nuw %"class.duckdb::unique_ptr.1737.2965502", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.duckdb::unique_ptr.1737.2965468", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -172,7 +172,7 @@ entry:
   %3 = add i32 %2, -2
   %4 = sext i32 %3 to i64
   %5 = sub nsw i64 %4, %1
-  %6 = getelementptr nusw %struct.pointf_s.3884849, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.pointf_s.3884799, ptr %0, i64 %5
   ret ptr %6
 }
 

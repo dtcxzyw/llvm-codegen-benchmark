@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/image_enc.c.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind

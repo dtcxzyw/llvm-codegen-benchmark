@@ -1,6 +1,6 @@
 
-%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
-%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
+%struct.XHCIInterrupter.2706931 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706916], i32, i32 }
+%struct.XHCIEvent.2706916 = type { i32, i32, i64, i32, i32, i8, i8 }
 
 ; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -25,7 +25,7 @@ entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw nuw i8, ptr %0, i64 29928
-  %5 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [16 x %struct.XHCIInterrupter.2706931], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

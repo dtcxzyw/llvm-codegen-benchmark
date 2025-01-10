@@ -1,39 +1,39 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
-%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
-%"struct.std::__atomic_base.2624846" = type { i64 }
-%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
-%"class.rocksdb::Histogram.2624847" = type { ptr }
-%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
-%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
-%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
-%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
-%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
-%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%class.RegMask.2732334 = type { %union.anon.2732335, i32, i32 }
-%union.anon.2732335 = type { [11 x i64] }
-%"struct.Stockfish::Stats.18.2878588" = type { %"struct.std::array.19.2878589" }
-%"struct.std::array.19.2878589" = type { [64 x %"class.Stockfish::StatsEntry.20.2878590"] }
-%"class.Stockfish::StatsEntry.20.2878590" = type { %"struct.Stockfish::Stats.21.2878591" }
-%"struct.Stockfish::Stats.21.2878591" = type { %"struct.std::array.22.2878592" }
-%"struct.std::array.22.2878592" = type { [16 x %"struct.Stockfish::Stats.23.2878593"] }
-%"struct.Stockfish::Stats.23.2878593" = type { %"struct.std::array.24.2878594" }
-%"struct.std::array.24.2878594" = type { [64 x %"class.Stockfish::StatsEntry.25.2878595"] }
-%"class.Stockfish::StatsEntry.25.2878595" = type { i16 }
-%"struct.Octree<float>::_SlabValues.3820722" = type { [2 x %"struct.Octree<float>::_XSliceValues.3820723"], [2 x %"struct.Octree<float>::_SliceValues.3820724"] }
-%"struct.Octree<float>::_XSliceValues.3820723" = type { %"struct.SortedTreeNodes::XSliceTableData.3820725", ptr, ptr, ptr, ptr, %"class.std::unordered_map.3820726", %"class.std::unordered_map.446.3820727", %"class.std::unordered_map.460.3820728", i32, i32 }
-%"struct.SortedTreeNodes::XSliceTableData.3820725" = type { ptr, ptr, i32, i32, i32, i32, ptr, ptr }
-%"class.std::unordered_map.3820726" = type { %"class.std::_Hashtable.3820729" }
-%"class.std::_Hashtable.3820729" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820730", i64, %"struct.std::__detail::_Prime_rehash_policy.3820731", ptr }
-%"struct.std::__detail::_Hash_node_base.3820730" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.3820731" = type { float, i64 }
-%"class.std::unordered_map.446.3820727" = type { %"class.std::_Hashtable.447.3820732" }
-%"class.std::_Hashtable.447.3820732" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820730", i64, %"struct.std::__detail::_Prime_rehash_policy.3820731", ptr }
-%"class.std::unordered_map.460.3820728" = type { %"class.std::_Hashtable.461.3820733" }
-%"class.std::_Hashtable.461.3820733" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820730", i64, %"struct.std::__detail::_Prime_rehash_policy.3820731", ptr }
-%"struct.Octree<float>::_SliceValues.3820724" = type { %"struct.SortedTreeNodes::SliceTableData.3820734", ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %"class.std::unordered_map.3820726", %"class.std::unordered_map.446.3820727", %"class.std::unordered_map.460.3820728", i32, i32, i32, i32 }
-%"struct.SortedTreeNodes::SliceTableData.3820734" = type { ptr, ptr, ptr, i32, i32, i32, i32, i32, ptr, ptr, ptr }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624810" = type { [216 x %"struct.std::atomic.51.2624811"], [61 x %"class.rocksdb::HistogramImpl.2624812"], [24 x i8] }
+%"struct.std::atomic.51.2624811" = type { %"struct.std::__atomic_base.2624813" }
+%"struct.std::__atomic_base.2624813" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624812" = type { %"class.rocksdb::Histogram.2624814", %"struct.rocksdb::HistogramStat.2624815", %"class.std::mutex.2624816" }
+%"class.rocksdb::Histogram.2624814" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624815" = type { %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", [109 x %"struct.std::atomic.51.2624811"], i64 }
+%"class.std::mutex.2624816" = type { %"class.std::__mutex_base.2624817" }
+%"class.std::__mutex_base.2624817" = type { %union.pthread_mutex_t.2624818 }
+%union.pthread_mutex_t.2624818 = type { %struct.__pthread_mutex_s.2624819 }
+%struct.__pthread_mutex_s.2624819 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624820 }
+%struct.__pthread_internal_list.2624820 = type { ptr, ptr }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%class.RegMask.2732300 = type { %union.anon.2732301, i32, i32 }
+%union.anon.2732301 = type { [11 x i64] }
+%"struct.Stockfish::Stats.18.2878554" = type { %"struct.std::array.19.2878555" }
+%"struct.std::array.19.2878555" = type { [64 x %"class.Stockfish::StatsEntry.20.2878556"] }
+%"class.Stockfish::StatsEntry.20.2878556" = type { %"struct.Stockfish::Stats.21.2878557" }
+%"struct.Stockfish::Stats.21.2878557" = type { %"struct.std::array.22.2878558" }
+%"struct.std::array.22.2878558" = type { [16 x %"struct.Stockfish::Stats.23.2878559"] }
+%"struct.Stockfish::Stats.23.2878559" = type { %"struct.std::array.24.2878560" }
+%"struct.std::array.24.2878560" = type { [64 x %"class.Stockfish::StatsEntry.25.2878561"] }
+%"class.Stockfish::StatsEntry.25.2878561" = type { i16 }
+%"struct.Octree<float>::_SlabValues.3820672" = type { [2 x %"struct.Octree<float>::_XSliceValues.3820673"], [2 x %"struct.Octree<float>::_SliceValues.3820674"] }
+%"struct.Octree<float>::_XSliceValues.3820673" = type { %"struct.SortedTreeNodes::XSliceTableData.3820675", ptr, ptr, ptr, ptr, %"class.std::unordered_map.3820676", %"class.std::unordered_map.446.3820677", %"class.std::unordered_map.460.3820678", i32, i32 }
+%"struct.SortedTreeNodes::XSliceTableData.3820675" = type { ptr, ptr, i32, i32, i32, i32, ptr, ptr }
+%"class.std::unordered_map.3820676" = type { %"class.std::_Hashtable.3820679" }
+%"class.std::_Hashtable.3820679" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820680", i64, %"struct.std::__detail::_Prime_rehash_policy.3820681", ptr }
+%"struct.std::__detail::_Hash_node_base.3820680" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.3820681" = type { float, i64 }
+%"class.std::unordered_map.446.3820677" = type { %"class.std::_Hashtable.447.3820682" }
+%"class.std::_Hashtable.447.3820682" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820680", i64, %"struct.std::__detail::_Prime_rehash_policy.3820681", ptr }
+%"class.std::unordered_map.460.3820678" = type { %"class.std::_Hashtable.461.3820683" }
+%"class.std::_Hashtable.461.3820683" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3820680", i64, %"struct.std::__detail::_Prime_rehash_policy.3820681", ptr }
+%"struct.Octree<float>::_SliceValues.3820674" = type { %"struct.SortedTreeNodes::SliceTableData.3820684", ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %"class.std::unordered_map.3820676", %"class.std::unordered_map.446.3820677", %"class.std::unordered_map.460.3820678", i32, i32, i32, i32 }
+%"struct.SortedTreeNodes::SliceTableData.3820684" = type { ptr, ptr, ptr, i32, i32, i32, i32, i32, ptr, ptr, ptr }
 
 ; 11 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -51,8 +51,8 @@
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw [216 x %"struct.std::atomic.51.2624844"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624810", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw [216 x %"struct.std::atomic.51.2624811"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -88,8 +88,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw [216 x %"struct.std::atomic.51.2624844"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624810", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw [216 x %"struct.std::atomic.51.2624811"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -156,7 +156,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.direntry_t.2705800, ptr %0, i64 %1
+  %4 = getelementptr %struct.direntry_t.2705766, ptr %0, i64 %1
   %5 = getelementptr [11 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -184,7 +184,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %class.RegMask.2732334, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %class.RegMask.2732300, ptr %0, i64 %1
   %5 = getelementptr nusw nuw [11 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -197,7 +197,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw [16 x %"struct.Stockfish::Stats.18.2878588"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [16 x %"struct.Stockfish::Stats.18.2878554"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -207,8 +207,8 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"struct.Octree<float>::_SlabValues.3820722", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw [2 x %"struct.Octree<float>::_XSliceValues.3820723"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr %"struct.Octree<float>::_SlabValues.3820672", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw [2 x %"struct.Octree<float>::_XSliceValues.3820673"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

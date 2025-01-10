@@ -320,14 +320,13 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; cmake/optimized/zdict.c.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; hermes/optimized/dtoa.c.ll
-; icu/optimized/number_decimalquantity.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll

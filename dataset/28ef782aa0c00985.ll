@@ -23,7 +23,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/ip6_output.ll
 ; qemu/optimized/migration_xbzrle.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
@@ -74,8 +75,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; 2 occurrences:
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; ozz-animation/optimized/stream.cc.ll
 ; Function Attrs: nounwind

@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3154084" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3321779" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3154050" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3321745" = type { ptr, ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -56,10 +56,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000009a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3154084", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3154050", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = sub nsw i64 0, %0
-  %6 = getelementptr nusw %"class.llvm::Use.3154084", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3154050", ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }
@@ -69,7 +69,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000008a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3321779", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3321745", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = sub i64 0, %0
   %6 = getelementptr nusw i8, ptr %4, i64 %5

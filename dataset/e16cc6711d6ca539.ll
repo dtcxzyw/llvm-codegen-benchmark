@@ -489,4 +489,16 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e6(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %1, 1
+  %5 = add nuw nsw i64 %4, %3
+  %6 = icmp slt i64 %5, %0
+  ret i1 %6
+}
+
 attributes #0 = { nounwind }

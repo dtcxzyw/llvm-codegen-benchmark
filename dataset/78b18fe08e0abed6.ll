@@ -25,10 +25,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; darktable/optimized/introspection_atrous.c.ll
-; git/optimized/parallel-checkout.ll
 ; linux/optimized/intel_rps.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; Function Attrs: nounwind

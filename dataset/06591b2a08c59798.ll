@@ -1,11 +1,11 @@
 
-%"struct.CFF::FDSelect3_4_Range.2742334" = type { %"struct.OT::IntType.2742259", %"struct.OT::IntType.162.2742291" }
-%"struct.OT::IntType.2742259" = type { %struct.BEInt.2742261 }
-%struct.BEInt.2742261 = type { [2 x i8] }
-%"struct.OT::IntType.162.2742291" = type { %struct.BEInt.163.2742292 }
-%struct.BEInt.163.2742292 = type { i8 }
-%struct.FormData_pg_attribute.3655060 = type { i32, %struct.nameData.3655061, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
-%struct.nameData.3655061 = type { [64 x i8] }
+%"struct.CFF::FDSelect3_4_Range.2742300" = type { %"struct.OT::IntType.2742225", %"struct.OT::IntType.162.2742257" }
+%"struct.OT::IntType.2742225" = type { %struct.BEInt.2742227 }
+%struct.BEInt.2742227 = type { [2 x i8] }
+%"struct.OT::IntType.162.2742257" = type { %struct.BEInt.163.2742258 }
+%struct.BEInt.163.2742258 = type { i8 }
+%struct.FormData_pg_attribute.3655026 = type { i32, %struct.nameData.3655027, i32, i16, i16, i32, i32, i16, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i16, i32 }
+%struct.nameData.3655027 = type { [64 x i8] }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -20,7 +20,7 @@ entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %6 = getelementptr nusw nuw [1 x %"struct.CFF::FDSelect3_4_Range.2742334"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.CFF::FDSelect3_4_Range.2742300"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr [0 x %struct.FormData_pg_attribute.3655060], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [0 x %struct.FormData_pg_attribute.3655026], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -1,19 +1,19 @@
 
-%struct._zend_ssa_op.2792342 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
-%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
-%"class.hermes::vm::HermesValue.3076856" = type { i64 }
-%"class.std::optional.661.3290297" = type { %"struct.std::_Optional_base.662.3290298" }
-%"struct.std::_Optional_base.662.3290298" = type { %"struct.std::_Optional_payload.664.3290299" }
-%"struct.std::_Optional_payload.664.3290299" = type { %"struct.std::_Optional_payload.base.668.3290300", [7 x i8] }
-%"struct.std::_Optional_payload.base.668.3290300" = type { %"struct.std::_Optional_payload_base.base.667.3290301" }
-%"struct.std::_Optional_payload_base.base.667.3290301" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302", i8 }
-%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290302" = type { %"struct.llvm::object::VersionEntry.3290273" }
-%"struct.llvm::object::VersionEntry.3290273" = type <{ %"class.std::__cxx11::basic_string.3290204", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.3290204" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205", i64, %union.anon.45.3290206 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290205" = type { ptr }
-%union.anon.45.3290206 = type { i64, [8 x i8] }
-%struct.mi_page_s.4024255 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024256, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024256 = type { i8 }
+%struct._zend_ssa_op.2792308 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%"class.hermes::vm::GCHermesValueBase.3076821" = type { %"class.hermes::vm::HermesValue.3076822" }
+%"class.hermes::vm::HermesValue.3076822" = type { i64 }
+%"class.std::optional.661.3290263" = type { %"struct.std::_Optional_base.662.3290264" }
+%"struct.std::_Optional_base.662.3290264" = type { %"struct.std::_Optional_payload.664.3290265" }
+%"struct.std::_Optional_payload.664.3290265" = type { %"struct.std::_Optional_payload.base.668.3290266", [7 x i8] }
+%"struct.std::_Optional_payload.base.668.3290266" = type { %"struct.std::_Optional_payload_base.base.667.3290267" }
+%"struct.std::_Optional_payload_base.base.667.3290267" = type { %"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290268", i8 }
+%"union.std::_Optional_payload_base<llvm::object::VersionEntry>::_Storage.3290268" = type { %"struct.llvm::object::VersionEntry.3290239" }
+%"struct.llvm::object::VersionEntry.3290239" = type <{ %"class.std::__cxx11::basic_string.3290170", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.3290170" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290171", i64, %union.anon.45.3290172 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3290171" = type { ptr }
+%union.anon.45.3290172 = type { i64, [8 x i8] }
+%struct.mi_page_s.4024205 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024206, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024206 = type { i8 }
 
 ; 9 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -119,7 +119,7 @@ entry:
 define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_ssa_op.2792342, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_ssa_op.2792308, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 36
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -269,7 +269,7 @@ entry:
 define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076821", ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -283,7 +283,7 @@ entry:
 define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::optional.661.3290297", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::optional.661.3290263", ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -48
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -351,7 +351,7 @@ entry:
 define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.mi_page_s.4024255, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.mi_page_s.4024205, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 264
   %6 = icmp ult ptr %4, %5
   ret i1 %6

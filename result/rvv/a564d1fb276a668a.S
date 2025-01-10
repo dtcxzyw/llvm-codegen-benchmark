@@ -24,15 +24,6 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 400
 	vadd.vx	v8, v8, a0
 	ret
-func000000000000000d:                   # @func000000000000000d
-	li	a0, 60
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
-	vadd.vv	v8, v10, v8
-	li	a0, -32
-	vadd.vx	v8, v8, a0
-	ret
 func000000000000000f:                   # @func000000000000000f
 	li	a0, 1984
 	vsetivli	zero, 8, e32, m2, ta, ma

@@ -8,6 +8,12 @@ func000000000000018d:                   # @func000000000000018d
 	sbbl	$-1, %edi
 	leal	-1(%rdi), %eax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	xorl	%eax, %eax
+	cmpl	$166, %esi
+	sete	%al
+	leal	4(%rdi,%rax), %eax
+	retq
 func0000000000000085:                   # @func0000000000000085
 	movl	%edi, %eax
 	cmpl	$3, %esi
@@ -45,12 +51,6 @@ func0000000000000184:                   # @func0000000000000184
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	setne	%al
-	leal	1(%rdi,%rax), %eax
-	retq
-func000000000000002f:                   # @func000000000000002f
-	xorl	%eax, %eax
-	cmpl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	sete	%al
 	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000025:                   # @func0000000000000025

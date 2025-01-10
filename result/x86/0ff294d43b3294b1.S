@@ -4,12 +4,6 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
-	movl	%edx, %eax
-	subq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
 func0000000000000086:                   # @func0000000000000086
 	movl	%edx, %eax
 	subq	%rsi, %rdi
@@ -118,12 +112,6 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
-	movl	%edx, %eax
-	subq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func0000000000000024:                   # @func0000000000000024
 	movl	%edx, %eax
 	subq	%rsi, %rdi
@@ -141,12 +129,6 @@ func000000000000000a:                   # @func000000000000000a
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	setg	%al
-	retq
-func00000000000000a4:                   # @func00000000000000a4
-	movl	%edx, %eax
-	subq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	setb	%al
 	retq
 func00000000000000a8:                   # @func00000000000000a8
 	movl	%edx, %eax
@@ -196,17 +178,17 @@ func00000000000000aa:                   # @func00000000000000aa
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
-	movl	%edx, %eax
-	subq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
 func0000000000000028:                   # @func0000000000000028
 	movl	%edx, %eax
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
+	retq
+func00000000000000a6:                   # @func00000000000000a6
+	movl	%edx, %eax
+	subq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
 func0000000000000045:                   # @func0000000000000045
 	movl	%edx, %eax
@@ -219,6 +201,12 @@ func000000000000000b:                   # @func000000000000000b
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	setge	%al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	movl	%edx, %eax
+	subq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000098:                   # @func0000000000000098
 	movl	%edx, %eax

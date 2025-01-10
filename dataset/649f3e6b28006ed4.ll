@@ -1,7 +1,7 @@
 
-%struct.ar_table_pair_struct.2601574 = type { i64, i64 }
-%"class.asmjit::_abi_1_10::ZoneVector.4.2603647" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" }
-%"class.asmjit::_abi_1_10::ZoneVectorBase.2603629" = type { ptr, i32, i32 }
+%struct.ar_table_pair_struct.2601541 = type { i64, i64 }
+%"class.asmjit::_abi_1_10::ZoneVector.4.2603614" = type { %"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" }
+%"class.asmjit::_abi_1_10::ZoneVectorBase.2603596" = type { ptr, i32, i32 }
 
 ; 5 occurrences:
 ; linux/optimized/io-wq.ll
@@ -15,7 +15,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601574], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [8 x %struct.ar_table_pair_struct.2601541], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603647"], ptr %0, i64 0, i64 %4, i32 0, i32 2
+  %5 = getelementptr nuw [4 x %"class.asmjit::_abi_1_10::ZoneVector.4.2603614"], ptr %0, i64 0, i64 %4, i32 0, i32 2
   ret ptr %5
 }
 

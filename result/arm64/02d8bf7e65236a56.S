@@ -22,14 +22,6 @@ func00000000000001f8:                   // @func00000000000001f8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
-// %bb.0:                               // %entry
-	and	w8, w2, #0x7fffffff
-	add	x8, x8, w1, uxtw
-	cmp	x8, x0
-	cset	w0, hi
-	ret
-                                        // -- End function
 func00000000000000f4:                   // @func00000000000000f4
 // %bb.0:                               // %entry
 	and	w8, w2, #0x7fffffff

@@ -1043,13 +1043,14 @@ entry:
   ret ptr %4
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; darktable/optimized/lut3dgmic.cpp.ll
 ; gromacs/optimized/dbdsqr.cpp.ll

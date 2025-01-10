@@ -41,18 +41,18 @@ func0000000000000030:                   // @func0000000000000030
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func00000000000000dd:                   // @func00000000000000dd
-// %bb.0:                               // %entry
-	lsl	x8, x0, #6
-	add	x8, x8, x1, lsl #3
-	add	x0, x8, #760
-	ret
-                                        // -- End function
 func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	lsl	x8, x1, #3
 	add	x8, x8, x0, lsl #4
 	add	x0, x8, #32
+	ret
+                                        // -- End function
+func00000000000000dd:                   // @func00000000000000dd
+// %bb.0:                               // %entry
+	lsl	x8, x1, #2
+	add	x8, x8, x0, lsl #3
+	add	x0, x8, #64
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010

@@ -1,6 +1,6 @@
 
-%"class.rocksdb::Slice.2625615" = type { ptr, i64 }
-%struct.orc_entry.3548730 = type { i16, i16, i16 }
+%"class.rocksdb::Slice.2625582" = type { ptr, i64 }
+%struct.orc_entry.3548696 = type { i16, i16, i16 }
 
 ; 28 occurrences:
 ; hyperscan/optimized/arg_checks.cpp.ll
@@ -37,7 +37,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr nusw %"class.rocksdb::Slice.2625615", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw %"class.rocksdb::Slice.2625582", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 2
-  %6 = getelementptr %struct.orc_entry.3548730, ptr %0, i64 %5, i32 2
+  %6 = getelementptr %struct.orc_entry.3548696, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

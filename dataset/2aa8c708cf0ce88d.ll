@@ -1,6 +1,6 @@
 
-%struct.GC_ms_entry.2705283 = type { ptr, %union.word_ptr_ao_u.2705284 }
-%union.word_ptr_ao_u.2705284 = type { i64 }
+%struct.GC_ms_entry.2705249 = type { ptr, %union.word_ptr_ao_u.2705250 }
+%union.word_ptr_ao_u.2705250 = type { i64 }
 
 ; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -13,7 +13,7 @@ define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %struct.GC_ms_entry.2705283, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.GC_ms_entry.2705249, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

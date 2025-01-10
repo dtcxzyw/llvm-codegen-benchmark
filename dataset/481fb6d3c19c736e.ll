@@ -27,8 +27,7 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 3 occurrences:
 ; linux/optimized/intel_dpll.ll
 ; openexr/optimized/preview.c.ll
 ; openusd/optimized/openexr-c.c.ll

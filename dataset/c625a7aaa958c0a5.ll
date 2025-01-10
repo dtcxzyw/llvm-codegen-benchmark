@@ -1,11 +1,12 @@
 
-%struct.gmx_domdec_zone_size.3356930 = type { %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881", %"class.gmx::BasicVector.102.3356881" }
-%"class.gmx::BasicVector.102.3356881" = type { [3 x float] }
-%struct.intel_excl_states.3533270 = type { [64 x i32], i8 }
+%struct.gmx_domdec_zone_size.3356896 = type { %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847", %"class.gmx::BasicVector.102.3356847" }
+%"class.gmx::BasicVector.102.3356847" = type { [3 x float] }
+%struct.intel_excl_states.3533236 = type { [64 x i32], i8 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/partition.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; tinyrenderer/optimized/main.cpp.ll
@@ -14,7 +15,7 @@
 define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [8 x %struct.gmx_domdec_zone_size.3356930], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [8 x %struct.gmx_domdec_zone_size.3356896], ptr %0, i64 0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw [3 x float], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -26,7 +27,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [2 x %struct.intel_excl_states.3533270], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [2 x %struct.intel_excl_states.3533236], ptr %0, i64 0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr [64 x i32], ptr %4, i64 0, i64 %5
   ret ptr %6

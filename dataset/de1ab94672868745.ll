@@ -1,10 +1,10 @@
 
-%struct.H5E_entry_t.3055251 = type { i8, %struct.H5E_error2_t.3055253 }
-%struct.H5E_error2_t.3055253 = type { i64, i64, i64, i32, ptr, ptr, ptr }
-%"struct.OT::OffsetTo.437.3883539" = type { %"struct.OT::Offset.3883536" }
-%"struct.OT::Offset.3883536" = type { %"struct.OT::IntType.3883421" }
-%"struct.OT::IntType.3883421" = type { %struct.BEInt.3883422 }
-%struct.BEInt.3883422 = type { [2 x i8] }
+%struct.H5E_entry_t.3055217 = type { i8, %struct.H5E_error2_t.3055219 }
+%struct.H5E_error2_t.3055219 = type { i64, i64, i64, i32, ptr, ptr, ptr }
+%"struct.OT::OffsetTo.437.3883489" = type { %"struct.OT::Offset.3883486" }
+%"struct.OT::Offset.3883486" = type { %"struct.OT::IntType.3883371" }
+%"struct.OT::IntType.3883371" = type { %struct.BEInt.3883372 }
+%struct.BEInt.3883372 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/signal.ll
@@ -49,12 +49,11 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = getelementptr nusw [32 x %struct.H5E_entry_t.3055251], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [32 x %struct.H5E_entry_t.3055217], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 5 occurrences:
-; arrow/optimized/basic_decimal.cc.ll
+; 4 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -106,13 +105,24 @@ entry:
 }
 
 ; 1 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nuw nsw i64 %1, %3
+  %5 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.437.3883539"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.437.3883489"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

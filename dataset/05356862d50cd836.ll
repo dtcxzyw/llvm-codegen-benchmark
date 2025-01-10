@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libquic/optimized/url_parse_file.cc.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_32nw.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll

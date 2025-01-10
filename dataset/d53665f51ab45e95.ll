@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/System.c.ll
 ; cmake/optimized/cmGeneratorExpressionNode.cxx.ll
 ; freetype/optimized/psaux.c.ll
@@ -17,7 +17,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
-; openusd/optimized/childrenUtils.cpp.ll
 ; php/optimized/array.ll
 ; php/optimized/var.ll
 ; php/optimized/var_unserializer.ll

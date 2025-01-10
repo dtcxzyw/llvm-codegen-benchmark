@@ -1,6 +1,6 @@
 
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::MCOperandInfo.3251961" = type { i16, i8, i8, i16 }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCOperandInfo.3251927" = type { i16, i8, i8, i16 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
@@ -8,10 +8,10 @@
 define ptr @func000000000000016f(i16 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -67072
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   %6 = zext i16 %0 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3251961", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MCOperandInfo.3251927", ptr %5, i64 %6
   ret ptr %7
 }
 

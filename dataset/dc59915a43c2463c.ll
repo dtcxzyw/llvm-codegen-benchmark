@@ -1,5 +1,5 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
 
 ; 4 occurrences:
 ; casadi/optimized/tinyxml2.cpp.ll
@@ -10,7 +10,7 @@
 define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.umin.i64(i64 %2, i64 50)
-  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }

@@ -459,13 +459,15 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 38 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/fse_decompress.c.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; spike/optimized/f64_div.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
@@ -499,9 +501,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 4
+  %2 = shl nuw nsw i64 %1, 3
   %3 = add i64 %2, %0
-  %4 = and i64 %3, -512
+  %4 = and i64 %3, -8
   ret i64 %4
 }
 

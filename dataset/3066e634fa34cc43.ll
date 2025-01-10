@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 83 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/list.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/slub.ll

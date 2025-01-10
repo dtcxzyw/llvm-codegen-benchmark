@@ -37,6 +37,21 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; abc/optimized/bmcMaj.c.ll
+; openjdk/optimized/javaClasses.ll
+; wireshark/optimized/packet-capwap.c.ll
+; wireshark/optimized/packet-iuup.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 166
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %0, %3
+  %5 = add nuw nsw i32 %4, 4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
@@ -132,20 +147,6 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = add nsw i32 %0, %3
   %5 = add i32 %4, 1
-  ret i32 %5
-}
-
-; 3 occurrences:
-; abc/optimized/bmcMaj.c.ll
-; wireshark/optimized/packet-capwap.c.ll
-; wireshark/optimized/packet-iuup.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 2147483647
-  %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
-  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 

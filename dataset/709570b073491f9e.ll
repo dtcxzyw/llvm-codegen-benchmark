@@ -131,23 +131,6 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
-; delta-rs/optimized/47qjbhol909h8zu7.ll
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
-; miniaudio/optimized/unity.c.ll
-; postgres/optimized/dsa.ll
-; qemu/optimized/block_vdi.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0) #0 {
-entry:
-  %1 = shl nuw nsw i64 %0, 2
-  %2 = add nuw nsw i64 %1, 511
-  %3 = and i64 %2, 8589934080
-  %4 = icmp eq i64 %3, 0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; ncnn/optimized/modelbin.cpp.ll
 ; Function Attrs: nounwind
@@ -188,27 +171,6 @@ entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, -64
   %4 = icmp ugt i64 %3, 9223372036854775680
-  ret i1 %4
-}
-
-; 1 occurrences:
-; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0) #0 {
-entry:
-  ret i1 false
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001ec(i64 %0) #0 {
-entry:
-  %1 = shl nuw nsw i64 %0, 2
-  %2 = add nuw nsw i64 %1, 7
-  %3 = and i64 %2, 34359738360
-  %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 

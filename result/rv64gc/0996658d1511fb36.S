@@ -46,11 +46,18 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a2
 	snez	a0, a0
 	ret
+func0000000000000007:                   # @func0000000000000007
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	or	a1, a1, a2
+	slt	a0, a0, a1
+	xori	a0, a0, 1
+	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 1
-	beqz	a1, .LBB7_2
+	beqz	a1, .LBB8_2
 	li	a2, 1
-.LBB7_2:                                # %entry
+.LBB8_2:                                # %entry
 	sltu	a0, a0, a2
 	ret
 func0000000000000009:                   # @func0000000000000009

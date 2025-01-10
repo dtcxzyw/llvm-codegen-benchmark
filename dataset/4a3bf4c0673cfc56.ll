@@ -1,6 +1,6 @@
 
-%struct.bio_vec.3557265 = type { ptr, i32, i32 }
-%struct.list_head.3557319 = type { ptr, ptr }
+%struct.bio_vec.3557231 = type { ptr, i32, i32 }
+%struct.list_head.3557285 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr [17 x %struct.bio_vec.3557265], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [17 x %struct.bio_vec.3557231], ptr %1, i64 0, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -43,7 +43,7 @@ entry:
 define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = getelementptr [4 x %struct.list_head.3557319], ptr %1, i64 0, i64 %3
+  %4 = getelementptr [4 x %struct.list_head.3557285], ptr %1, i64 0, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

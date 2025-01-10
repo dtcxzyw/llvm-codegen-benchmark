@@ -53,4 +53,16 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 32
+  %2 = ashr exact i64 %1, 32
+  %3 = add nsw i64 %2, -19
+  %4 = icmp ult i64 %3, -15
+  ret i1 %4
+}
+
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 1798 occurrences:
+; 1796 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/casDec.c.ll
@@ -1082,13 +1082,11 @@
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
 ; openssl/optimized/libssl-lib-quic_srtm.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-quic_rstream.ll
 ; openssl/optimized/libssl-shlib-quic_srtm.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; openssl/optimized/openssl-bin-pkcs8.ll
@@ -5408,7 +5406,7 @@ entry:
   ret i1 %3
 }
 
-; 291 occurrences:
+; 292 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -5437,6 +5435,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

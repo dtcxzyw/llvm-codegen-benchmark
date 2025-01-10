@@ -453,8 +453,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; linux/optimized/compat_binfmt_elf.ll
+; 3 occurrences:
 ; openexr/optimized/attributes.c.ll
 ; openmpi/optimized/coll_basic_alltoallv.ll
 ; openusd/optimized/openexr-c.c.ll

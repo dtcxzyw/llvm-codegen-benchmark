@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.159.2621608" = type { %"struct.std::__atomic_base.160.2621609" }
-%"struct.std::__atomic_base.160.2621609" = type { ptr }
+%"struct.std::atomic.159.2621575" = type { %"struct.std::__atomic_base.160.2621576" }
+%"struct.std::__atomic_base.160.2621576" = type { ptr }
 
 ; 106 occurrences:
 ; cpython/optimized/bltinmodule.ll
@@ -299,7 +299,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw [1 x %"struct.std::atomic.159.2621608"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [1 x %"struct.std::atomic.159.2621575"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

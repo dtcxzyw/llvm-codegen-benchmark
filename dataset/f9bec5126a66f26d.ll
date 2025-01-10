@@ -1433,7 +1433,7 @@ entry:
   ret i1 %4
 }
 
-; 140 occurrences:
+; 141 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaScript.c.ll
@@ -1520,6 +1520,7 @@ entry:
 ; openmpi/optimized/tm_topology.ll
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
 ; pbrt-v4/optimized/display.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
@@ -2397,6 +2398,21 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; graphviz/optimized/multispline.c.ll
+; libwebp/optimized/alpha_processing_sse2.c.ll
+; opencv/optimized/matrix_transform.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a6(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nsw i32 %0, 1
+  %4 = icmp slt i32 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
@@ -2570,9 +2586,11 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
+; openblas/optimized/dasum_k.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
@@ -2958,20 +2976,6 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %0, 6
   %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
-; 4 occurrences:
-; graphviz/optimized/multispline.c.ll
-; libwebp/optimized/alpha_processing_sse2.c.ll
-; opencv/optimized/matrix_transform.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %0, -4
-  %4 = icmp slt i32 %3, %2
   ret i1 %4
 }
 

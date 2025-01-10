@@ -11,11 +11,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:

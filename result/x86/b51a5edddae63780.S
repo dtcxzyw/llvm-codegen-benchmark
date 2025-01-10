@@ -37,8 +37,8 @@ func0000000000000121:                   # @func0000000000000121
 func0000000000000167:                   # @func0000000000000167
 	movl	%edi, %eax
 	subl	%esi, %eax
-	cmpl	%eax, %edx
-	cmovbl	%edx, %eax
+	cmpl	%edx, %eax
+	cmovael	%edx, %eax
 	addl	%esi, %eax
 	cmpl	%edi, %eax
 	setle	%al

@@ -30,7 +30,8 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -46,6 +47,7 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
 ; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:

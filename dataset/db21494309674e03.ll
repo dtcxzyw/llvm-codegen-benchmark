@@ -1,8 +1,8 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
-%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
-%"struct.rawspeed::IiqDecoder::IiqOffset.2873439" = type { i32, i32 }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%struct.Entry.2663510 = type { %"class.mold::LittleEndian.2663445", %"class.mold::LittleEndian.2663445" }
+%"class.mold::LittleEndian.2663445" = type { [4 x i8] }
+%"struct.rawspeed::IiqDecoder::IiqOffset.2873405" = type { i32, i32 }
 
 ; 60 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -70,7 +70,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -91,7 +91,7 @@ define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %struct.Entry.2663543, ptr %0, i64 %3
+  %4 = getelementptr %struct.Entry.2663510, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -158,7 +158,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.rawspeed::IiqDecoder::IiqOffset.2873439", ptr %0, i64 %3
+  %4 = getelementptr %"struct.rawspeed::IiqDecoder::IiqOffset.2873405", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

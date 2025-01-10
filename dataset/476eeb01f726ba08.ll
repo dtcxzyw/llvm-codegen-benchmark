@@ -1,5 +1,5 @@
 
-%"class.irr::video::SColor.2693410" = type { i32 }
+%"class.irr::video::SColor.2693376" = type { i32 }
 
 ; 16 occurrences:
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
@@ -148,7 +148,7 @@ define ptr @func0000000000000007(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = getelementptr nusw nuw %"class.irr::video::SColor.2693410", ptr %4, i64 %0
+  %5 = getelementptr nusw nuw %"class.irr::video::SColor.2693376", ptr %4, i64 %0
   ret ptr %5
 }
 

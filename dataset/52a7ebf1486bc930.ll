@@ -1,12 +1,11 @@
 
-; 201 occurrences:
+; 200 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; llvm/optimized/AArch64PostSelectOptimize.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll

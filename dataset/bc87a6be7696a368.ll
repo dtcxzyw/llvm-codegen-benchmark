@@ -12,17 +12,16 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; openjdk/optimized/javaClasses.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; yosys/optimized/mutate.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000002f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 166
+  %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = select i1 %1, i32 4, i32 0
+  %5 = select i1 %1, i32 1, i32 2
   %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7

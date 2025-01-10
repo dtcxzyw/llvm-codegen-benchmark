@@ -1,5 +1,5 @@
 
-; 1030 occurrences:
+; 1029 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -144,7 +144,6 @@
 ; c3c/optimized/context.c.ll
 ; casadi/optimized/cs_dmperm.c.ll
 ; casadi/optimized/idas.c.ll
-; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
@@ -1038,7 +1037,7 @@ entry:
   ret i1 %3
 }
 
-; 130 occurrences:
+; 131 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
@@ -1089,6 +1088,7 @@ entry:
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/diffcore-rotate.ll
 ; git/optimized/rev-parse.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -1177,7 +1177,7 @@ entry:
   ret i1 %3
 }
 
-; 3559 occurrences:
+; 3560 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
@@ -1515,6 +1515,7 @@ entry:
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/msexpand.c.ll
 ; clamav/optimized/mszipd.c.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -4745,7 +4746,7 @@ entry:
   ret i1 %3
 }
 
-; 357 occurrences:
+; 360 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
@@ -4824,9 +4825,11 @@ entry:
 ; jemalloc/optimized/ctl.sym.ll
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
+; libpng/optimized/pngpread.c.ll
 ; libquic/optimized/a_object.c.ll
 ; linux/optimized/acpi-dma.ll
 ; linux/optimized/balloc.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/drm_plane.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/inline.ll
@@ -4978,6 +4981,7 @@ entry:
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; openjdk/optimized/g1HeapRegionManager.ll
 ; openjdk/optimized/node.ll
+; openjdk/optimized/pngpread.ll
 ; openjdk/optimized/vmatree.ll
 ; openjdk/optimized/waitBarrier_generic.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
@@ -5294,7 +5298,7 @@ entry:
   ret i1 %3
 }
 
-; 1617 occurrences:
+; 1618 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -5469,6 +5473,7 @@ entry:
 ; bullet3/optimized/gim_contact.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/whereami.c.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -6920,7 +6925,7 @@ entry:
   ret i1 %3
 }
 
-; 1181 occurrences:
+; 1183 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -7646,6 +7651,7 @@ entry:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/whitebox.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_io_coll.ll
 ; openmpi/optimized/btl_base_am_rdma.ll
 ; openmpi/optimized/fbtl_posix_preadv.ll
@@ -7886,6 +7892,7 @@ entry:
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
 ; slurm/optimized/acct_gather_profile.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/core_array.ll
 ; slurm/optimized/fname.ll
 ; slurm/optimized/gang.ll
@@ -8110,12 +8117,14 @@ entry:
   ret i1 %3
 }
 
-; 150 occurrences:
+; 153 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; c3c/optimized/diagnostics.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/filtering.c.ll
+; cmake/optimized/deflate.c.ll
 ; cmake/optimized/gzread.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -8260,6 +8269,7 @@ entry:
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zlib/optimized/deflate.c.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
@@ -9287,7 +9297,7 @@ entry:
   ret i1 %3
 }
 
-; 270 occurrences:
+; 272 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -9465,6 +9475,8 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/ColorSpaceSet.cpp.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
+; openblas/optimized/dasum_k.c.ll
+; openblas/optimized/sasum_k.c.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
@@ -11303,10 +11315,9 @@ entry:
   ret i1 %3
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; csmith/optimized/Type.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
-; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; gromacs/optimized/gmx_confrms.cpp.ll
@@ -11460,7 +11471,7 @@ entry:
   ret i1 %3
 }
 
-; 133 occurrences:
+; 135 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/giaBalLut.c.ll
@@ -11479,6 +11490,7 @@ entry:
 ; faiss/optimized/IndexBinaryHash.cpp.ll
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/multispline.c.ll
 ; gromacs/optimized/xtc2.c.ll
 ; icu/optimized/ubidi.ll
@@ -11487,6 +11499,7 @@ entry:
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/intel_dpll.ll
+; linux/optimized/ip6_output.ll
 ; linux/optimized/kprobes.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
@@ -11888,7 +11901,7 @@ entry:
   ret i1 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; clamav/optimized/libmspack.c.ll
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -11910,6 +11923,7 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_obj_tree.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
@@ -12135,7 +12149,8 @@ entry:
   ret i1 %3
 }
 
-; 46 occurrences:
+; 47 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -12375,6 +12390,16 @@ define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp ne i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000067(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 

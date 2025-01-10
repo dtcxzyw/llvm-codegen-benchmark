@@ -60,9 +60,11 @@ entry:
   ret i32 %2
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_progress_bar.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/icl_dsi.ll

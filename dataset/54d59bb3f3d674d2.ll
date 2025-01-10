@@ -86,8 +86,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/guiHyperText.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000012b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -372,6 +373,17 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = icmp sgt i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/keypoint.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002b(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub nsw i32 %3, %1
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 

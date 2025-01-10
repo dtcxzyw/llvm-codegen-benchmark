@@ -140,7 +140,7 @@ entry:
   ret i1 %4
 }
 
-; 319 occurrences:
+; 318 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -449,7 +449,6 @@ entry:
 ; wireshark/optimized/packet-xip.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; wolfssl/optimized/internal.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll

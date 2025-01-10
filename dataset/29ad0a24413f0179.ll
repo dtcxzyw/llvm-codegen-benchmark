@@ -551,7 +551,7 @@ entry:
   ret i64 %2
 }
 
-; 2076 occurrences:
+; 2075 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -973,7 +973,6 @@ entry:
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
 ; libquic/optimized/div.c.ll
 ; libquic/optimized/dtls_record.c.ll

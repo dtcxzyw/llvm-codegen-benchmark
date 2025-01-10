@@ -1,5 +1,6 @@
 func00000000000007e4:                   # @func00000000000007e4
-	leaq	(%rsi,%rdx,8), %rax
+	leaq	8(%rsi,%rdx,8), %rax
+	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
@@ -9,7 +10,8 @@ func00000000000007e1:                   # @func00000000000007e1
 	sete	%al
 	retq
 func0000000000000364:                   # @func0000000000000364
-	leaq	(%rsi,%rdx,8), %rax
+	leaq	8(%rsi,%rdx,8), %rax
+	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
@@ -88,7 +90,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	sete	%al
 	retq
 func00000000000003e4:                   # @func00000000000003e4
-	leaq	(%rsi,%rdx,8), %rax
+	leaq	8(%rsi,%rdx,8), %rax
+	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

@@ -29,12 +29,12 @@ func0000000000000088:                   # @func0000000000000088
 .LCPI2_0:
 	.quad	0x7fffffffffffffff              # double NaN
 .LCPI2_1:
-	.quad	0x402921fb54442d18              # double 12.566370614359172
-func0000000000000055:                   # @func0000000000000055
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+func0000000000000022:                   # @func0000000000000022
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
-	vmovsd	.LCPI2_1(%rip), %xmm2           # xmm2 = [1.2566370614359172E+1,0.0E+0]
-	vcmpnlepd	%xmm2, %xmm0, %k0
-	vcmpnlepd	%xmm2, %xmm1, %k1
+	vmovsd	.LCPI2_1(%rip), %xmm2           # xmm2 = [2.2204460492503131E-16,0.0E+0]
+	vcmpltpd	%xmm2, %xmm0, %k0
+	vcmpltpd	%xmm2, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	orb	%dil, %al
@@ -42,25 +42,12 @@ func0000000000000055:                   # @func0000000000000055
 .LCPI3_0:
 	.quad	0x7fffffffffffffff              # double NaN
 .LCPI3_1:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
-func0000000000000022:                   # @func0000000000000022
-	vandpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm1
-	vmovsd	.LCPI3_1(%rip), %xmm2           # xmm2 = [2.2204460492503131E-16,0.0E+0]
-	vcmpltpd	%xmm2, %xmm0, %k0
-	vcmpltpd	%xmm2, %xmm1, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
-	orb	%dil, %al
-	retq
-.LCPI4_0:
-	.quad	0x7fffffffffffffff              # double NaN
-.LCPI4_1:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func00000000000000a2:                   # @func00000000000000a2
-	vandpd	.LCPI4_0(%rip){1to2}, %xmm1, %xmm1
+	vandpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmplepd	%xmm2, %xmm0, %k0
-	vmovsd	.LCPI4_1(%rip), %xmm0           # xmm0 = [9.9999999999999995E-7,0.0E+0]
+	vmovsd	.LCPI3_1(%rip), %xmm0           # xmm0 = [9.9999999999999995E-7,0.0E+0]
 	vcmpltpd	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax

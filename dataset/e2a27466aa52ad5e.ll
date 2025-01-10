@@ -1090,12 +1090,11 @@ entry:
   ret i32 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/focaltech.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_reset.ll
 ; linux/optimized/lifebook.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/scsi_transport_spi.ll

@@ -1,6 +1,6 @@
 
-%"struct.mold::elf::ElfShdr.570.2636431" = type { %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432", %"class.mold::BigEndian.2636432" }
-%"class.mold::BigEndian.2636432" = type { [4 x i8] }
+%"struct.mold::elf::ElfShdr.570.2636398" = type { %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399", %"class.mold::BigEndian.2636399" }
+%"class.mold::BigEndian.2636399" = type { [4 x i8] }
 
 ; 39 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -47,7 +47,7 @@ define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = tail call noundef i16 @llvm.bswap.i16(i16 %1)
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636431", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.570.2636398", ptr %0, i64 %3
   ret ptr %4
 }
 

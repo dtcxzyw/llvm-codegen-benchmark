@@ -140,7 +140,7 @@ entry:
   ret i8 %2
 }
 
-; 92 occurrences:
+; 91 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/crtmgr.c.ll
@@ -220,7 +220,6 @@ entry:
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/4krmo5yuqbsteeuo.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -336,12 +335,11 @@ entry:
   ret i8 %2
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; boost/optimized/init_from_settings.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
-; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; git/optimized/index-pack.ll
@@ -429,25 +427,6 @@ entry:
   ret i8 %2
 }
 
-; 10 occurrences:
-; abc/optimized/cswCut.c.ll
-; freetype/optimized/type1cid.c.ll
-; llvm/optimized/ASTContext.cpp.ll
-; minetest/optimized/servermap.cpp.ll
-; opencv/optimized/moments.cpp.ll
-; proxygen/optimized/http_parser_cpp.cpp.ll
-; redis/optimized/geohash_helper.ll
-; wireshark/optimized/erf.c.ll
-; wireshark/optimized/packet-c1222.c.ll
-; wolfssl/optimized/asn.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000007(i32 %0) #0 {
-entry:
-  %1 = trunc i32 %0 to i8
-  %2 = add i8 %1, -1
-  ret i8 %2
-}
-
 ; 7 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/ip_options.ll
@@ -484,6 +463,24 @@ define i8 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = add i8 %1, -31
+  ret i8 %2
+}
+
+; 9 occurrences:
+; abc/optimized/cswCut.c.ll
+; freetype/optimized/type1cid.c.ll
+; llvm/optimized/ASTContext.cpp.ll
+; opencv/optimized/moments.cpp.ll
+; proxygen/optimized/http_parser_cpp.cpp.ll
+; redis/optimized/geohash_helper.ll
+; wireshark/optimized/erf.c.ll
+; wireshark/optimized/packet-c1222.c.ll
+; wolfssl/optimized/asn.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i8
+  %2 = add i8 %1, -7
   ret i8 %2
 }
 

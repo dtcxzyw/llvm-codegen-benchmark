@@ -87,7 +87,7 @@ entry:
 }
 
 ; 4 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll

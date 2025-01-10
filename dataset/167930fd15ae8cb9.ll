@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
-%"class.hermes::vm::HermesValue.3076856" = type { i64 }
-%"struct.std::atomic.25.3673878" = type { %"struct.std::__atomic_base.26.3673879" }
-%"struct.std::__atomic_base.26.3673879" = type { ptr }
+%"class.hermes::vm::GCHermesValueBase.3076821" = type { %"class.hermes::vm::HermesValue.3076822" }
+%"class.hermes::vm::HermesValue.3076822" = type { i64 }
+%"struct.std::atomic.25.3673828" = type { %"struct.std::__atomic_base.26.3673829" }
+%"struct.std::__atomic_base.26.3673829" = type { ptr }
 
 ; 2 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -85,7 +85,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076821", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -109,7 +109,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 16
-  %6 = getelementptr nusw nuw %"struct.std::atomic.25.3673878", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.std::atomic.25.3673828", ptr %5, i64 %0
   ret ptr %6
 }
 

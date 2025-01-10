@@ -1,35 +1,17 @@
 
-%struct.Answer.2705487 = type { i8, i8 }
+%struct.Answer.2705453 = type { i8, i8 }
 
-; 9 occurrences:
-; gromacs/optimized/swapcoords.cpp.ll
-; meshlab/optimized/decorate_background.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; mitsuba3/optimized/rgb2spec_opt.cpp.ll
-; nori/optimized/layout.cpp.ll
-; openjdk/optimized/ifnode.ll
-; openmpi/optimized/coll_base_bcast.ll
-; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
-  %3 = srem i32 %2, 3
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw [3 x double], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 51 occurrences:
+; 57 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
 ; glslang/optimized/hlslTokenStream.cpp.ll
+; gromacs/optimized/swapcoords.cpp.ll
 ; hdf5/optimized/H5Cint.c.ll
 ; icu/optimized/usc_impl.ll
 ; imgui/optimized/imgui.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/decorate_background.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -58,8 +40,11 @@ entry:
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
+; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; opencv/optimized/pose_3d.cpp.ll
+; openjdk/optimized/ifnode.ll
+; openmpi/optimized/coll_base_bcast.ll
 ; openmpi/optimized/common_ompio_print_queue.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/havannah.cc.ll
@@ -71,15 +56,16 @@ entry:
 ; openssl/optimized/libcrypto-shlib-err_blocks.ll
 ; openssl/optimized/libcrypto-shlib-err_save.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = srem i32 %2, 16
+  %3 = srem i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw [16 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [3 x double], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -95,7 +81,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = srem i32 %2, 128
   %4 = sext i32 %3 to i64
-  %5 = getelementptr [128 x %struct.Answer.2705487], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [128 x %struct.Answer.2705453], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

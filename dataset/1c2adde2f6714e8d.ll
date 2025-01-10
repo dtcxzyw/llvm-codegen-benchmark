@@ -24,8 +24,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/recovery.ll
+; lz4/optimized/lz4hc.c.ll
 ; postgres/optimized/copyfromparse.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind

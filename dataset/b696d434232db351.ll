@@ -1,5 +1,5 @@
 
-; 328 occurrences:
+; 327 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -9,7 +9,6 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll

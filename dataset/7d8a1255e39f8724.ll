@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; libdeflate/optimized/deflate_compress.c.ll
-; openusd/optimized/openexr-c.c.ll
-; ruby/optimized/complex.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
-  %3 = and i1 %0, %2
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
 ; 160 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/cnfPost.c.ll
@@ -357,6 +344,18 @@ entry:
 define i32 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
+  %3 = and i1 %0, %2
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; libdeflate/optimized/deflate_compress.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 65536
   %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4

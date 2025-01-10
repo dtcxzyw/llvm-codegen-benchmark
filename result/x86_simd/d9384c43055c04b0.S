@@ -10,6 +10,12 @@ func000000000000001d:                   # @func000000000000001d
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
+func0000000000000004:                   # @func0000000000000004
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpor	%ymm0, %ymm1, %ymm0
+	vpmovdw	%ymm0, %xmm0
+	vzeroupper
+	retq
 func000000000000001e:                   # @func000000000000001e
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

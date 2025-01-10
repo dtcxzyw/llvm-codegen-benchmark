@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; libwebp/optimized/vp8_dec.c.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
@@ -39,19 +40,6 @@ entry:
   %4 = shl nuw i32 %3, %1
   %5 = or i32 %0, %4
   %6 = trunc i32 %5 to i8
-  ret i8 %6
-}
-
-; 2 occurrences:
-; libwebp/optimized/vp8_dec.c.ll
-; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
-; Function Attrs: nounwind
-define i8 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 1
-  %4 = shl nuw nsw i32 %3, %1
-  %5 = or i32 %4, %0
-  %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 

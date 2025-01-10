@@ -1,17 +1,17 @@
 
-%"struct.rocksdb::BufferInfo.2613152" = type { %"class.rocksdb::AlignedBuffer.2613153", i64, i64, i8, ptr, %"class.std::function.182.2613116", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2613153" = type { i64, %"class.std::unique_ptr.186.2613120", i64, i64, ptr }
-%"class.std::unique_ptr.186.2613120" = type { %"struct.std::__uniq_ptr_data.187.2613121" }
-%"struct.std::__uniq_ptr_data.187.2613121" = type { %"class.std::__uniq_ptr_impl.188.2613122" }
-%"class.std::__uniq_ptr_impl.188.2613122" = type { %"class.std::tuple.189.2613123" }
-%"class.std::tuple.189.2613123" = type { %"struct.std::_Tuple_impl.190.2613124" }
-%"struct.std::_Tuple_impl.190.2613124" = type { %"struct.std::_Head_base.135.2613084" }
-%"struct.std::_Head_base.135.2613084" = type { ptr }
-%"class.std::function.182.2613116" = type { %"class.std::_Function_base.2613117", ptr }
-%"class.std::_Function_base.2613117" = type { %"union.std::_Any_data.2613118", ptr }
-%"union.std::_Any_data.2613118" = type { %"union.std::_Nocopy_types.2613119" }
-%"union.std::_Nocopy_types.2613119" = type { { i64, i64 } }
-%struct.ResultRelInfo.3653154 = type { i32, i32, ptr, i32, ptr, ptr, i16, ptr, ptr, ptr, ptr, i8, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, ptr, i8, ptr, ptr, ptr, ptr }
+%"struct.rocksdb::BufferInfo.2613119" = type { %"class.rocksdb::AlignedBuffer.2613120", i64, i64, i8, ptr, %"class.std::function.182.2613083", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2613120" = type { i64, %"class.std::unique_ptr.186.2613087", i64, i64, ptr }
+%"class.std::unique_ptr.186.2613087" = type { %"struct.std::__uniq_ptr_data.187.2613088" }
+%"struct.std::__uniq_ptr_data.187.2613088" = type { %"class.std::__uniq_ptr_impl.188.2613089" }
+%"class.std::__uniq_ptr_impl.188.2613089" = type { %"class.std::tuple.189.2613090" }
+%"class.std::tuple.189.2613090" = type { %"struct.std::_Tuple_impl.190.2613091" }
+%"struct.std::_Tuple_impl.190.2613091" = type { %"struct.std::_Head_base.135.2613051" }
+%"struct.std::_Head_base.135.2613051" = type { ptr }
+%"class.std::function.182.2613083" = type { %"class.std::_Function_base.2613084", ptr }
+%"class.std::_Function_base.2613084" = type { %"union.std::_Any_data.2613085", ptr }
+%"union.std::_Any_data.2613085" = type { %"union.std::_Nocopy_types.2613086" }
+%"union.std::_Nocopy_types.2613086" = type { { i64, i64 } }
+%struct.ResultRelInfo.3653120 = type { i32, i32, ptr, i32, ptr, ptr, i16, ptr, ptr, ptr, ptr, i8, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, ptr, i8, ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; rocksdb/optimized/block_based_table_reader.cc.ll
@@ -22,7 +22,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 48, i64 24
-  %5 = getelementptr nusw nuw %"struct.rocksdb::BufferInfo.2613152", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.rocksdb::BufferInfo.2613119", ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -96,7 +96,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 272, i64 280
-  %5 = getelementptr %struct.ResultRelInfo.3653154, ptr %0, i64 %1
+  %5 = getelementptr %struct.ResultRelInfo.3653120, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }

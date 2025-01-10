@@ -1,5 +1,5 @@
 
-%struct.PhysPageEntry.2709868 = type { i32 }
+%struct.PhysPageEntry.2709834 = type { i32 }
 
 ; 22 occurrences:
 ; linux/optimized/fault.ll
@@ -45,7 +45,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
   %5 = and i64 %4, 511
-  %6 = getelementptr %struct.PhysPageEntry.2709868, ptr %0, i64 %5
+  %6 = getelementptr %struct.PhysPageEntry.2709834, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-%struct.code.2877665 = type { i8, i8, i16 }
+%struct.code.2877631 = type { i8, i8, i16 }
 
 ; 4 occurrences:
 ; libdeflate/optimized/deflate_decompress.c.ll
@@ -55,7 +55,7 @@ entry:
   %3 = xor i32 %notmask, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.code.2877665, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2877631, ptr %0, i64 %5
   ret ptr %6
 }
 

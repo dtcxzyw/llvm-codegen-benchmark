@@ -31,3 +31,11 @@ func00000000000000df:                   // @func00000000000000df
 	add	x0, x9, x8
 	ret
                                         // -- End function
+func000000000000005d:                   // @func000000000000005d
+// %bb.0:                               // %entry
+	sub	w8, w2, #1
+	add	x9, x1, x0
+	lsr	w8, w8, #1
+	add	x0, x9, x8
+	ret
+                                        // -- End function

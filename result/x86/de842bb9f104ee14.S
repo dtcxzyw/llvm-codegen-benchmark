@@ -107,11 +107,11 @@ func000000000000046c:                   # @func000000000000046c
 	orq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000861:                   # @func0000000000000861
+func000000000000086c:                   # @func000000000000086c
 	cmpq	$16384, %rsi                    # imm = 0x4000
 	sbbq	$-1, %rdi
 	cmpq	$3, %rdi
-	sete	%al
+	setne	%al
 	retq
 func0000000000000c44:                   # @func0000000000000c44
 	xorl	%eax, %eax

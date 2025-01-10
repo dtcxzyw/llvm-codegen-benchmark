@@ -17,10 +17,10 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	ret
 func0000000000000058:                   # @func0000000000000058
-	li	a2, 16
+	li	a2, 75
 	sext.w	a1, a1
 	bltu	a0, a2, .LBB2_2
-	li	a0, 16
+	li	a0, 75
 .LBB2_2:                                # %entry
 	sltu	a0, a1, a0
 	ret

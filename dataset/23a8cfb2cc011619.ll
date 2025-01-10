@@ -70,7 +70,8 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; abc/optimized/bmcMaj.c.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; graphviz/optimized/graph_generator.c.ll
@@ -82,7 +83,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
-  %3 = add nsw i32 %2, -1
+  %3 = add nsw i32 %2, -2
   ret i32 %3
 }
 

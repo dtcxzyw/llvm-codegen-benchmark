@@ -1,6 +1,6 @@
 
-%struct.Lf_Plc_t_.2877720 = type { i32 }
-%struct.ssh_peer_data.3453394 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
+%struct.Lf_Plc_t_.2877686 = type { i32 }
+%struct.ssh_peer_data.3453360 = type { i32, i32, i32, i32, i32, i32, ptr, [2 x ptr], ptr, i32, [2 x ptr], ptr, [2 x ptr], ptr, i32, i32, i32, ptr, ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, ptr, [12 x i8], [48 x i8], i32, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; abc/optimized/amapMatch.c.ll
@@ -38,7 +38,7 @@ entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 24
-  %6 = getelementptr nusw nuw [2 x %struct.Lf_Plc_t_.2877720], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [2 x %struct.Lf_Plc_t_.2877686], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr [2 x %struct.ssh_peer_data.3453394], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [2 x %struct.ssh_peer_data.3453360], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -13,11 +13,6 @@ func000000000000003d:                   # @func000000000000003d
 	movl	$5, %eax
 	subq	%rdi, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	movq	%rdi, %rax
-	notq	%rax
-	shlq	$5, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	(,%rdi,8), %rax
 	negq	%rax

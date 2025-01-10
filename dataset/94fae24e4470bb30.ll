@@ -28,7 +28,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; cpython/optimized/pystrtod.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; slurm/optimized/reservation.ll

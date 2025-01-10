@@ -1,14 +1,14 @@
 
-%"class.WasmEdge::Variant.2766589" = type { %"union.WasmEdge::VariadicUnion.2766590" }
-%"union.WasmEdge::VariadicUnion.2766590" = type { %"union.WasmEdge::VariadicUnion.0.2766591" }
-%"union.WasmEdge::VariadicUnion.0.2766591" = type { %"union.WasmEdge::VariadicUnion.1.2766592" }
-%"union.WasmEdge::VariadicUnion.1.2766592" = type { %"union.WasmEdge::VariadicUnion.2.2766593" }
-%"union.WasmEdge::VariadicUnion.2.2766593" = type { %"union.WasmEdge::VariadicUnion.3.2766594" }
-%"union.WasmEdge::VariadicUnion.3.2766594" = type { %"union.WasmEdge::VariadicUnion.4.2766595" }
-%"union.WasmEdge::VariadicUnion.4.2766595" = type { %"union.WasmEdge::VariadicUnion.5.2766596" }
-%"union.WasmEdge::VariadicUnion.5.2766596" = type { i128 }
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%"class.WasmEdge::Variant.2766555" = type { %"union.WasmEdge::VariadicUnion.2766556" }
+%"union.WasmEdge::VariadicUnion.2766556" = type { %"union.WasmEdge::VariadicUnion.0.2766557" }
+%"union.WasmEdge::VariadicUnion.0.2766557" = type { %"union.WasmEdge::VariadicUnion.1.2766558" }
+%"union.WasmEdge::VariadicUnion.1.2766558" = type { %"union.WasmEdge::VariadicUnion.2.2766559" }
+%"union.WasmEdge::VariadicUnion.2.2766559" = type { %"union.WasmEdge::VariadicUnion.3.2766560" }
+%"union.WasmEdge::VariadicUnion.3.2766560" = type { %"union.WasmEdge::VariadicUnion.4.2766561" }
+%"union.WasmEdge::VariadicUnion.4.2766561" = type { %"union.WasmEdge::VariadicUnion.5.2766562" }
+%"union.WasmEdge::VariadicUnion.5.2766562" = type { i128 }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 14 occurrences:
 ; clamav/optimized/packlibs.c.ll
@@ -90,7 +90,7 @@ define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.WasmEdge::Variant.2766589", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::Variant.2766555", ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -193,7 +193,7 @@ define i1 @func00000000000002cc(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3157992", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3157958", ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
@@ -292,7 +292,7 @@ define i1 @func000000000000028c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %union._Py_CODEUNIT.3974162, ptr %1, i64 %4
+  %5 = getelementptr %union._Py_CODEUNIT.3974112, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }

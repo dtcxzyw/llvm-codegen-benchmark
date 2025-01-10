@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; grpc/optimized/uri_parser.cc.ll
 ; lief/optimized/constant_time.c.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
@@ -33,9 +33,11 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; nix/optimized/shared.ll
+; openjdk/optimized/jdmarker.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/util_keyval.c.ll
+; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -133,6 +135,17 @@ entry:
   %2 = add i64 %1, -1
   %3 = tail call noundef i64 @llvm.umin.i64(i64 %2, i64 %0)
   %4 = icmp eq i64 %3, 1
+  ret i1 %4
+}
+
+; 1 occurrences:
+; openjdk/optimized/jdmarker.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -32
+  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %0)
+  %4 = icmp samesign ult i64 %3, 14
   ret i1 %4
 }
 

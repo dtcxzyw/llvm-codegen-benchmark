@@ -108,6 +108,11 @@ func0000000000000108:                   # @func0000000000000108
 	cmpl	%edx, %edi
 	seta	%al
 	retq
+func0000000000000188:                   # @func0000000000000188
+	subl	%esi, %edi
+	cmpl	%edx, %edi
+	seta	%al
+	retq
 func00000000000000aa:                   # @func00000000000000aa
 	subl	%esi, %edi
 	cmpl	%edx, %edi
@@ -137,11 +142,6 @@ func0000000000000024:                   # @func0000000000000024
 	subl	%esi, %edi
 	cmpl	%edx, %edi
 	setb	%al
-	retq
-func0000000000000188:                   # @func0000000000000188
-	subl	%esi, %edi
-	cmpl	%edx, %edi
-	seta	%al
 	retq
 func0000000000000186:                   # @func0000000000000186
 	subl	%esi, %edi

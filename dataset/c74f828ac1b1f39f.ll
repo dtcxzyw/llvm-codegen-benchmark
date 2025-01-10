@@ -206,20 +206,21 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; icu/optimized/ubidiln.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
+; slurm/optimized/bitstring.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %0, 3
+  %3 = and i32 %0, -64
   %4 = icmp sgt i32 %3, %2
   ret i1 %4
 }

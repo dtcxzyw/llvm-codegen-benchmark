@@ -1,12 +1,12 @@
 
-%struct.hb_glyph_info_t.2735113 = type { i32, i32, i32, %union._hb_var_int_t.2735114, %union._hb_var_int_t.2735114 }
-%union._hb_var_int_t.2735114 = type { i32 }
-%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSymmetricSpatialDyad.2818507 = type { %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504 }
-%struct.sqlite3_value.3662169 = type { %union.MemValue.3662170, ptr, i32, i16, i8, i8, ptr, i32, i32, ptr, ptr }
-%union.MemValue.3662170 = type { double }
-%"class.cv::Complex.3752634" = type { double, double }
+%struct.hb_glyph_info_t.2735079 = type { i32, i32, i32, %union._hb_var_int_t.2735080, %union._hb_var_int_t.2735080 }
+%union._hb_var_int_t.2735080 = type { i32 }
+%class.btMatrix3x3.2818470 = type { [3 x %class.btVector3.2818465] }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSymmetricSpatialDyad.2818473 = type { %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470 }
+%struct.sqlite3_value.3662119 = type { %union.MemValue.3662120, ptr, i32, i16, i8, i8, ptr, i32, i32, ptr, ptr }
+%union.MemValue.3662120 = type { double }
+%"class.cv::Complex.3752584" = type { double, double }
 
 ; 1 occurrences:
 ; openssl/optimized/evp_test-bin-evp_test.ll
@@ -92,9 +92,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000df(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735113, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735079, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = getelementptr %struct.hb_glyph_info_t.2735113, ptr %4, i64 %0
+  %5 = getelementptr %struct.hb_glyph_info_t.2735079, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -117,9 +117,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.btMatrix3x3.2818504, ptr %1, i64 %2
+  %3 = getelementptr %class.btMatrix3x3.2818470, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 192
-  %5 = getelementptr %struct.btSymmetricSpatialDyad.2818507, ptr %4, i64 %0
+  %5 = getelementptr %struct.btSymmetricSpatialDyad.2818473, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -299,9 +299,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000bf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.sqlite3_value.3662169, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct.sqlite3_value.3662119, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 112
-  %5 = getelementptr %struct.sqlite3_value.3662169, ptr %4, i64 %0
+  %5 = getelementptr %struct.sqlite3_value.3662119, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -335,9 +335,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000009e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.cv::Complex.3752634", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.cv::Complex.3752584", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
-  %5 = getelementptr %"class.cv::Complex.3752634", ptr %4, i64 %0
+  %5 = getelementptr %"class.cv::Complex.3752584", ptr %4, i64 %0
   ret ptr %5
 }
 

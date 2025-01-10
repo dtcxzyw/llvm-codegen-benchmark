@@ -1,8 +1,8 @@
 
-%"class.asio::detail::op_queue.147.2776500" = type { ptr, ptr }
-%struct.cache_bin_s.3714714 = type { ptr, %struct.cache_bin_stats_s.3714715, i16, i16, i16, %struct.cache_bin_info_s.3714716 }
-%struct.cache_bin_stats_s.3714715 = type { i64 }
-%struct.cache_bin_info_s.3714716 = type { i16 }
+%"class.asio::detail::op_queue.147.2776466" = type { ptr, ptr }
+%struct.cache_bin_s.3714664 = type { ptr, %struct.cache_bin_stats_s.3714665, i16, i16, i16, %struct.cache_bin_info_s.3714666 }
+%struct.cache_bin_stats_s.3714665 = type { i64 }
+%struct.cache_bin_info_s.3714666 = type { i16 }
 
 ; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
@@ -59,7 +59,7 @@ entry:
 define ptr @func00000000000001c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 112
-  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776500"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776466"], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -73,7 +73,7 @@ entry:
 define ptr @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw [73 x %struct.cache_bin_s.3714714], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [73 x %struct.cache_bin_s.3714664], ptr %3, i64 0, i64 %1
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6

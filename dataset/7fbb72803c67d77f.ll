@@ -21,7 +21,7 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/dir.ll
 ; linux/optimized/page_alloc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -29,6 +29,7 @@ entry:
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/TargetSchedule.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; postgres/optimized/heapam.ll

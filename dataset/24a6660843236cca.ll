@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000566(i32 %0, i32 %1, i32 %2) #0 {
 entry:

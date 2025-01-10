@@ -3,15 +3,16 @@ func0000000000000484:                   # @func0000000000000484
 	addiw	a0, a0, 1
 	sltiu	a0, a0, 3
 	ret
+func00000000000006a1:                   # @func00000000000006a1
+	sext.w	a0, a0
+	addiw	a1, a1, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
 func0000000000000084:                   # @func0000000000000084
 	subw	a0, a0, a1
 	addiw	a0, a0, 1
 	sltiu	a0, a0, 3
-	ret
-func00000000000006a1:                   # @func00000000000006a1
-	subw	a0, a0, a1
-	addi	a0, a0, -37
-	seqz	a0, a0
 	ret
 func0000000000000406:                   # @func0000000000000406
 	subw	a0, a0, a1

@@ -378,7 +378,7 @@ entry:
   ret ptr %3
 }
 
-; 7163 occurrences:
+; 7161 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -1996,7 +1996,6 @@ entry:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/dtstrhash.c.ll
 ; graphviz/optimized/edge.c.ll
-; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/exeval.c.ll
 ; graphviz/optimized/fastgr.c.ll
@@ -5185,7 +5184,6 @@ entry:
 ; openusd/optimized/fileIO.cpp.ll
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/flattenUtils.cpp.ll
-; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/function.cpp.ll
 ; openusd/optimized/glslfx.cpp.ll
 ; openusd/optimized/glslfxConfig.cpp.ll

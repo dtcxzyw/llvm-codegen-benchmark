@@ -12,6 +12,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmovll	%edi, %eax
 	addl	$-4, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	subl	%esi, %edi
+	cmpl	$11, %edi
+	movl	$11, %eax
+	cmovll	%edi, %eax
+	addl	$-7, %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	subl	%esi, %edi
 	cmpl	$16384, %edi                    # imm = 0x4000

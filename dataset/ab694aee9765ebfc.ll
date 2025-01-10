@@ -1,8 +1,8 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
-%struct._zend_brk_cont_element.2791373 = type { i32, i32, i32, i32, i8 }
-%struct.lcid_drb_mapping_t.3449485 = type { i32, i32, i32, i32 }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
+%struct._zend_brk_cont_element.2791339 = type { i32, i32, i32, i32, i8 }
+%struct.lcid_drb_mapping_t.3449451 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/ruby.ll
@@ -68,7 +68,7 @@ define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 103
   %4 = select i1 %3, i64 -32, i64 0
-  %5 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -86,7 +86,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -2
   %4 = select i1 %3, i64 8, i64 4
-  %5 = getelementptr nusw %struct._zend_brk_cont_element.2791373, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct._zend_brk_cont_element.2791339, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -138,7 +138,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 8, i64 12
-  %5 = getelementptr %struct.lcid_drb_mapping_t.3449485, ptr %0, i64 %1
+  %5 = getelementptr %struct.lcid_drb_mapping_t.3449451, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }

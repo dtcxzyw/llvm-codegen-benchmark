@@ -5,8 +5,8 @@ func0000000000000401:                   # @func0000000000000401
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	leaq	-8(%rdi,%rdx), %rax
-	addq	$8, %rsi
+	leaq	680(%rdi,%rdx), %rax
+	addq	$668, %rsi                      # imm = 0x29C
 	cmpq	%rsi, %rax
 	setb	%al
 	retq

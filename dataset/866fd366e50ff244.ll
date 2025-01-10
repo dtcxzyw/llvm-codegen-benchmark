@@ -21,19 +21,6 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
-; abc/optimized/cuddTable.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000375(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 760
-  %5 = shl nsw i64 %1, 6
-  %6 = add nsw i64 %4, %5
-  %7 = add nsw i64 %6, %0
-  ret i64 %7
-}
-
 ; 5 occurrences:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; luajit/optimized/minilua.ll

@@ -22,7 +22,7 @@ entry:
   ret i32 %4
 }
 
-; 166 occurrences:
+; 167 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -32,6 +32,7 @@ entry:
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/utilNam.c.ll
 ; abc/optimized/wlcNtk.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -587,13 +588,14 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; gromacs/optimized/compute_io.cpp.ll
 ; icu/optimized/gencnvex.ll
 ; icu/optimized/store.ll
+; icu/optimized/swapimpl.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/intel_dp_mst.ll
 ; opencv/optimized/fast_gemm.cpp.ll
@@ -658,12 +660,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/utrie.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; Function Attrs: nounwind

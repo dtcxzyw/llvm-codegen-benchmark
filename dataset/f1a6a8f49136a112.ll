@@ -1,7 +1,7 @@
 
-%"struct.std::atomic.405.2635844" = type { %"struct.std::__atomic_base.406.2635847" }
-%"struct.std::__atomic_base.406.2635847" = type { ptr }
-%struct.GCRef.3680589 = type { i64 }
+%"struct.std::atomic.405.2635811" = type { %"struct.std::__atomic_base.406.2635814" }
+%"struct.std::__atomic_base.406.2635814" = type { ptr }
+%struct.GCRef.3680539 = type { i64 }
 
 ; 176 occurrences:
 ; llvm/optimized/AccelTable.cpp.ll
@@ -185,7 +185,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw nuw %"struct.std::atomic.405.2635844", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.std::atomic.405.2635811", ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -199,7 +199,7 @@ define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw %struct.GCRef.3680589, ptr %3, i64 %2
+  %4 = getelementptr nusw %struct.GCRef.3680539, ptr %3, i64 %2
   ret ptr %4
 }
 

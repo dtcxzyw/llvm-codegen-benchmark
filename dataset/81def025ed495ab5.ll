@@ -1,11 +1,11 @@
 
-%class.IndexSet.2740318 = type { i32, i32, ptr, [16 x ptr], i32, ptr }
-%struct.spinlock.3545406 = type { %union.anon.9.3545407 }
-%union.anon.9.3545407 = type { %struct.raw_spinlock.3545408 }
-%struct.raw_spinlock.3545408 = type { %struct.qspinlock.3545409 }
-%struct.qspinlock.3545409 = type { %union.anon.10.3545410 }
-%union.anon.10.3545410 = type { %struct.atomic_t.3545411 }
-%struct.atomic_t.3545411 = type { i32 }
+%class.IndexSet.2740284 = type { i32, i32, ptr, [16 x ptr], i32, ptr }
+%struct.spinlock.3545372 = type { %union.anon.9.3545373 }
+%union.anon.9.3545373 = type { %struct.raw_spinlock.3545374 }
+%struct.raw_spinlock.3545374 = type { %struct.qspinlock.3545375 }
+%struct.qspinlock.3545375 = type { %union.anon.10.3545376 }
+%union.anon.10.3545376 = type { %struct.atomic_t.3545377 }
+%struct.atomic_t.3545377 = type { i32 }
 
 ; 17 occurrences:
 ; brotli/optimized/cluster.c.ll
@@ -30,7 +30,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umax.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.IndexSet.2740318, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.IndexSet.2740284, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -60,7 +60,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.umax.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.spinlock.3545406, ptr %0, i64 %4
+  %5 = getelementptr %struct.spinlock.3545372, ptr %0, i64 %4
   ret ptr %5
 }
 

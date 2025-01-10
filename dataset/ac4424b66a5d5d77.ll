@@ -1,7 +1,7 @@
 
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
-%struct.skl_wm_level.3534311 = type { i16, i16, i8, i8, i8, i8 }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
+%struct.skl_wm_level.3534277 = type { i16, i16, i8, i8, i8, i8 }
 
 ; 2 occurrences:
 ; folly/optimized/ThreadedExecutor.cpp.ll
@@ -10,7 +10,7 @@
 define ptr @func00000000000000fa(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -16
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
@@ -36,7 +36,7 @@ entry:
   %.idx = mul i64 %1, 160
   %3 = getelementptr i8, ptr %2, i64 12
   %4 = getelementptr i8, ptr %3, i64 %.idx
-  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -169,7 +169,7 @@ entry:
   %.idx = mul i64 %1, 154
   %3 = getelementptr i8, ptr %2, i64 1620
   %4 = getelementptr i8, ptr %3, i64 %.idx
-  %5 = getelementptr %struct.skl_wm_level.3534311, ptr %4, i64 %0
+  %5 = getelementptr %struct.skl_wm_level.3534277, ptr %4, i64 %0
   ret ptr %5
 }
 

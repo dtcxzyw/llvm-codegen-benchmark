@@ -1,8 +1,8 @@
-func00000000000000cc:                   // @func00000000000000cc
+func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
 	orr	x8, x1, x2, lsl #1
 	tst	x8, x0
-	cset	w0, ne
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c

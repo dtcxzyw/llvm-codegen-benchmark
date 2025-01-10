@@ -203,7 +203,7 @@ entry:
   ret i32 %2
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
 ; abseil-cpp/optimized/crc_memcpy_test.cc.ll
@@ -229,6 +229,7 @@ entry:
 ; linux/optimized/fib_frontend.ll
 ; linux/optimized/fib_trie.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -267,9 +268,8 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll

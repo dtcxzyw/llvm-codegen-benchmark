@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; c3c/optimized/diagnostics.c.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll

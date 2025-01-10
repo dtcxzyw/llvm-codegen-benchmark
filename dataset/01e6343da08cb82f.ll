@@ -1,5 +1,5 @@
 
-; 289 occurrences:
+; 290 occurrences:
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
@@ -218,6 +218,7 @@
 ; qemu/optimized/block_blklogwrites.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/ast.ll
+; ruby/optimized/gc.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/object.ll
 ; ruby/optimized/yjit.ll
@@ -293,8 +294,8 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
-  %3 = icmp eq i64 %2, 7
-  %4 = select i1 %3, i64 %0, i64 4
+  %3 = icmp eq i64 %2, 20
+  %4 = select i1 %3, i64 %0, i64 0
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -15,6 +15,7 @@
 ; crow/optimized/helloworld.cpp.ll
 ; git/optimized/transport.ll
 ; hdf5/optimized/H5system.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/ip_tunnel_core.ll

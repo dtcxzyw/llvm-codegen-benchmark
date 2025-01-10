@@ -1,5 +1,5 @@
 
-; 502 occurrences:
+; 501 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -436,7 +436,6 @@
 ; redis/optimized/t_list.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/io.ll
 ; ruby/optimized/pm_newline_list.ll
 ; ruby/optimized/symbol.ll
 ; ruby/optimized/util.ll

@@ -1,10 +1,10 @@
 
-%struct.sidtab_entry.3537164 = type { i32, i32, %struct.context.3537165, ptr, %struct.hlist_node.3537166 }
-%struct.context.3537165 = type { i32, i32, i32, i32, %struct.mls_range.3537167, ptr }
-%struct.mls_range.3537167 = type { [2 x %struct.mls_level.3537168] }
-%struct.mls_level.3537168 = type { i32, %struct.ebitmap.3537169 }
-%struct.ebitmap.3537169 = type { ptr, i32 }
-%struct.hlist_node.3537166 = type { ptr, ptr }
+%struct.sidtab_entry.3537130 = type { i32, i32, %struct.context.3537131, ptr, %struct.hlist_node.3537132 }
+%struct.context.3537131 = type { i32, i32, i32, i32, %struct.mls_range.3537133, ptr }
+%struct.mls_range.3537133 = type { [2 x %struct.mls_level.3537134] }
+%struct.mls_level.3537134 = type { i32, %struct.ebitmap.3537135 }
+%struct.ebitmap.3537135 = type { ptr, i32 }
+%struct.hlist_node.3537132 = type { ptr, ptr }
 
 ; 29 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -66,7 +66,7 @@ entry:
   %2 = add i32 %1, -28
   %3 = urem i32 %2, 39
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [39 x %struct.sidtab_entry.3537164], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [39 x %struct.sidtab_entry.3537130], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%struct.list_head.3535195 = type { ptr, ptr }
+%struct.list_head.3535161 = type { ptr, ptr }
 
 ; 1 occurrences:
 ; stockfish/optimized/evaluate_nnue.ll
@@ -37,7 +37,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %7 = getelementptr [12 x %struct.list_head.3535195], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [12 x %struct.list_head.3535161], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

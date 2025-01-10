@@ -1,17 +1,17 @@
 
-%union.anon.2.2633407 = type { [16 x i64] }
-%struct.NvmeSecCtrlEntry.2708941 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
-%struct.tg3_napi.3545810 = type { %struct.napi_struct.3545795, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3545811, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
-%struct.napi_struct.3545795 = type { %struct.list_head.3545767, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3545798], ptr, %struct.list_head.3545767, i32, i32, %struct.hrtimer.3545799, ptr, %struct.list_head.3545767, %struct.hlist_node.3545800, i32 }
-%struct.gro_list.3545798 = type { %struct.list_head.3545767, i32 }
-%struct.hrtimer.3545799 = type { %struct.timerqueue_node.3545801, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3545801 = type { %struct.rb_node.3545802, i64 }
-%struct.rb_node.3545802 = type { i64, ptr, ptr }
-%struct.list_head.3545767 = type { ptr, ptr }
-%struct.hlist_node.3545800 = type { ptr, ptr }
-%struct.tg3_rx_prodring_set.3545811 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
+%union.anon.2.2633374 = type { [16 x i64] }
+%struct.NvmeSecCtrlEntry.2708907 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
+%struct.tg3_napi.3545776 = type { %struct.napi_struct.3545761, ptr, ptr, i32, i32, i32, i32, i32, [12 x i8], i32, i32, i32, ptr, %struct.tg3_rx_prodring_set.3545777, ptr, i64, [24 x i8], i32, i32, i32, i32, i32, ptr, ptr, i64, i64, i64, i64, [16 x i8], i32, [36 x i8] }
+%struct.napi_struct.3545761 = type { %struct.list_head.3545733, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3545764], ptr, %struct.list_head.3545733, i32, i32, %struct.hrtimer.3545765, ptr, %struct.list_head.3545733, %struct.hlist_node.3545766, i32 }
+%struct.gro_list.3545764 = type { %struct.list_head.3545733, i32 }
+%struct.hrtimer.3545765 = type { %struct.timerqueue_node.3545767, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3545767 = type { %struct.rb_node.3545768, i64 }
+%struct.rb_node.3545768 = type { i64, ptr, ptr }
+%struct.list_head.3545733 = type { ptr, ptr }
+%struct.hlist_node.3545766 = type { ptr, ptr }
+%struct.tg3_rx_prodring_set.3545777 = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, i64, i64 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -20,8 +20,6 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; tinyrenderer/optimized/main.cpp.ll
-; tinyrenderer/optimized/our_gl.cpp.ll
 ; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
 ; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
@@ -32,17 +30,19 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 60, i64 124
-  %4 = getelementptr nusw nuw [8 x %union.anon.2.2633407], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [8 x %union.anon.2.2633374], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/metaspaceArena.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/1xbg7k9kapo8ag7l.ll
 ; wasmtime-rs/optimized/3tddp02mhmdocq2m.ll
@@ -80,7 +80,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 10, i64 12
-  %4 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708941], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708907], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -102,7 +102,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 704
-  %4 = getelementptr [5 x %struct.tg3_napi.3545810], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [5 x %struct.tg3_napi.3545776], ptr %0, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

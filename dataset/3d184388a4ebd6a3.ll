@@ -1,6 +1,6 @@
 
-%"class.clang::Qualifiers.3142438" = type { i64 }
-%"class.clang::FunctionEffect.3142439" = type { i8 }
+%"class.clang::Qualifiers.3142404" = type { i64 }
+%"class.clang::FunctionEffect.3142405" = type { i8 }
 
 ; 7 occurrences:
 ; openjdk/optimized/barrierSetNMethod_x86.ll
@@ -66,8 +66,8 @@ entry:
 define i64 @func000000000000001f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142404", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142405", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

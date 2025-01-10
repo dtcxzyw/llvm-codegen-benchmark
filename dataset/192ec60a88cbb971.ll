@@ -1,5 +1,5 @@
 
-; 12599 occurrences:
+; 12601 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -57,6 +57,7 @@
 ; abc/optimized/cuddAddIte.c.ll
 ; abc/optimized/cuddAndAbs.c.ll
 ; abc/optimized/cuddApa.c.ll
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -2402,6 +2403,7 @@
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/dthash.c.ll
 ; graphviz/optimized/edge_distinct_coloring.c.ll
+; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/excontext.c.ll
 ; graphviz/optimized/exeval.c.ll

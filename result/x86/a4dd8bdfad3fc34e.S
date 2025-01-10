@@ -27,7 +27,7 @@ func000000000000004c:                   # @func000000000000004c
 	movl	$4294966296, %eax               # imm = 0xFFFFFC18
 	imulq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000048:                   # @func0000000000000048
 	movabsq	$1844674407370955161, %rax      # imm = 0x1999999999999999
 	imulq	%rax, %rsi
 	movq	%rdi, %rdx

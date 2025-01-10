@@ -10,3 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 	subq	%rdx, %rsi
 	leaq	-32(%rdi,%rsi), %rax
 	retq
+func0000000000000022:                   # @func0000000000000022
+	andl	$7, %edx
+	subq	%rdx, %rsi
+	leaq	-32(%rdi,%rsi), %rax
+	retq

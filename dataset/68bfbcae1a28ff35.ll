@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2877287 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877253 = type <{ i64, i32 }>
 
 ; 8 occurrences:
 ; abc/optimized/giaCex.c.ll
@@ -15,7 +15,7 @@ define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877287, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877253, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

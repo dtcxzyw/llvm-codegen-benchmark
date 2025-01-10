@@ -41,16 +41,6 @@ func000000000000001d:                   # @func000000000000001d
 	li	a0, 128
 	vor.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000007:                   # @func0000000000000007
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v12, v12, 4
-	vmseq.vi	v0, v10, 0
-	vor.vv	v8, v8, v12
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vxor.vi	v10, v10, 3
-	vor.vv	v8, v10, v8
-	ret
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v12, 1

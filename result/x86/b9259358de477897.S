@@ -5,7 +5,8 @@ func00000000000007e4:                   # @func00000000000007e4
 	shrq	%rdx
 	addq	%rax, %rdx
 	andq	$-4, %rdx
-	leaq	(%rsi,%rdx,2), %rax
+	leaq	8(%rsi,%rdx,2), %rax
+	addq	$8, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

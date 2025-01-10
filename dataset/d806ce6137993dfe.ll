@@ -345,6 +345,26 @@ entry:
   ret i1 %5
 }
 
+; 9 occurrences:
+; arrow/optimized/feather.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_blurs.c.ll
+; darktable/optimized/introspection_sharpen.c.ll
+; darktable/optimized/introspection_spots.c.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
+; mitsuba3/optimized/ralocal.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
 ; 11 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -598,25 +618,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 64
   %5 = icmp samesign ugt i64 %4, %3
-  ret i1 %5
-}
-
-; 8 occurrences:
-; arrow/optimized/feather.cc.ll
-; arrow/optimized/metadata_internal.cc.ll
-; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_blurs.c.ll
-; darktable/optimized/introspection_sharpen.c.ll
-; darktable/optimized/introspection_spots.c.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
-; flatbuffers/optimized/reflection.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw i64 %0, 1
-  %5 = icmp eq i64 %4, %3
   ret i1 %5
 }
 

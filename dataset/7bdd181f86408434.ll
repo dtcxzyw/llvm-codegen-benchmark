@@ -80,7 +80,7 @@ entry:
   ret i64 %3
 }
 
-; 249 occurrences:
+; 248 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/adler32.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -184,7 +184,6 @@ entry:
 ; llvm/optimized/DeclTemplate.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
@@ -450,7 +449,6 @@ entry:
 ; arrow/optimized/builder_base.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/float16.cc.ll
@@ -802,7 +800,6 @@ entry:
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; hyperscan/optimized/tamaramacompile.cpp.ll
@@ -1122,6 +1119,7 @@ entry:
 ; llvm/optimized/InlineSpiller.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
 ; llvm/optimized/InterferenceCache.cpp.ll
@@ -1224,6 +1222,7 @@ entry:
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
@@ -4088,7 +4087,7 @@ entry:
   ret i64 %3
 }
 
-; 2096 occurrences:
+; 2095 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -5958,7 +5957,6 @@ entry:
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
-; velox/optimized/Filter.cpp.ll
 ; velox/optimized/FromUnixTime.cpp.ll
 ; velox/optimized/FromUtf8.cpp.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
@@ -6925,7 +6923,7 @@ entry:
   ret i64 %3
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaAgi.c.ll
@@ -6960,7 +6958,6 @@ entry:
 ; luajit/optimized/lj_meta_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencv/optimized/trace.cpp.ll
@@ -7003,6 +7000,7 @@ entry:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/unzip.c.ll
@@ -7039,7 +7037,6 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll

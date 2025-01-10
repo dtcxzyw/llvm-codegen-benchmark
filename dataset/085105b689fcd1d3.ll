@@ -1,9 +1,7 @@
 
-%"struct.OT::IntType.144.2736952" = type { %struct.BEInt.145.2736953 }
-%struct.BEInt.145.2736953 = type { [2 x i8] }
-%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
+%struct.scatterlist.3540805 = type { i64, i32, i32, i64, i32, i32 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; abc/optimized/plaSimple.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -42,6 +40,8 @@
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/quant_common.c.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
@@ -55,8 +55,8 @@
 define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %1, i64 1073741823, i64 %3
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::IntType.144.2736952"], ptr %0, i64 0, i64 %4
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [3 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -107,7 +107,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr [19 x %struct.scatterlist.3540839], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [19 x %struct.scatterlist.3540805], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

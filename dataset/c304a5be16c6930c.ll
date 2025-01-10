@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/threadaffinity.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
@@ -10,19 +10,13 @@
 ; linux/optimized/ehci-dbgp.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/socket.cpp.ll
-; nori/optimized/bitmap.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
 ; opencv/optimized/signal_resample.cpp.ll
 ; openjdk/optimized/debugInfoRec.ll
 ; openspiel/optimized/backgammon.cc.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/scontrol.ll
 ; stb/optimized/stb_image_write.c.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-dlt.c.ll
 ; wireshark/optimized/packet-transum.c.ll
 ; Function Attrs: nounwind

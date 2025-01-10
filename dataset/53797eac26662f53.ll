@@ -1,10 +1,10 @@
 
-%"struct.CFF::FDSelect3_4_Range.2732201" = type { %"struct.OT::IntType.8.2732202", %"struct.OT::IntType.2732199" }
-%"struct.OT::IntType.8.2732202" = type { %struct.BEInt.9.2732203 }
-%struct.BEInt.9.2732203 = type { [2 x i8] }
-%"struct.OT::IntType.2732199" = type { %struct.BEInt.2732200 }
-%struct.BEInt.2732200 = type { i8 }
-%struct.ItemIdData.3653742 = type { i32 }
+%"struct.CFF::FDSelect3_4_Range.2732167" = type { %"struct.OT::IntType.8.2732168", %"struct.OT::IntType.2732165" }
+%"struct.OT::IntType.8.2732168" = type { %struct.BEInt.9.2732169 }
+%struct.BEInt.9.2732169 = type { [2 x i8] }
+%"struct.OT::IntType.2732165" = type { %struct.BEInt.2732166 }
+%struct.BEInt.2732166 = type { i8 }
+%struct.ItemIdData.3653708 = type { i32 }
 
 ; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -24,7 +24,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 3
-  %6 = getelementptr nusw nuw [1 x %"struct.CFF::FDSelect3_4_Range.2732201"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.CFF::FDSelect3_4_Range.2732167"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr [0 x %struct.ItemIdData.3653742], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [0 x %struct.ItemIdData.3653708], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

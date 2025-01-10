@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; linux/optimized/drm_ioctl.ll
+; minetest/optimized/treegen.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
@@ -15,8 +16,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
-  %2 = or disjoint i32 %1, 1
-  %3 = call i32 @llvm.smax.i32(i32 %0, i32 %2)
+  %2 = or disjoint i32 %1, -6
+  %3 = call i32 @llvm.smax.i32(i32 %2, i32 %0)
   ret i32 %3
 }
 

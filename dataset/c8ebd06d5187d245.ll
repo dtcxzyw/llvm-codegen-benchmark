@@ -1,6 +1,6 @@
 
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"union.std::aligned_storage<1, 1>::type.2797846" = type { [1 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"union.std::aligned_storage<1, 1>::type.2797812" = type { [1 x i8] }
 
 ; 45 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -52,7 +52,7 @@
 define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -106,7 +106,7 @@ entry:
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -118,7 +118,7 @@ entry:
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<1, 1>::type.2797846"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<1, 1>::type.2797812"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

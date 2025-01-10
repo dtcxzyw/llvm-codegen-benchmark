@@ -120,6 +120,16 @@ entry:
 }
 
 ; 1 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.smin.i64(i64 %1, i64 %2)
+  %4 = icmp eq i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; cpython/optimized/_collectionsmodule.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {

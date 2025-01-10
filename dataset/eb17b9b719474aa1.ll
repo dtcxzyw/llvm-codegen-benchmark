@@ -1,5 +1,5 @@
 
-%union.ListCell.3653176 = type { ptr }
+%union.ListCell.3653142 = type { ptr }
 
 ; 26 occurrences:
 ; cpython/optimized/ceval.ll
@@ -285,7 +285,7 @@ entry:
   ret ptr %6
 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/fraLcr.c.ll
 ; abc/optimized/mvcDivide.c.ll
@@ -353,6 +353,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openusd/optimized/restoration.c.ll
 ; php/optimized/pdo.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/hiredis.ll
@@ -400,22 +401,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; bdwgc/optimized/gc.c.ll
-; git/optimized/xutils.ll
-; opencv/optimized/genericgfpoly.cpp.ll
-; openusd/optimized/patchMap.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, %3
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 106 occurrences:
+; 108 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/giaEnable.c.ll
@@ -447,6 +433,7 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; git/optimized/apply.ll
+; git/optimized/xutils.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/gmlscan.c.ll
 ; graphviz/optimized/scan.c.ll
@@ -465,6 +452,7 @@ entry:
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlasdq.c.ll
@@ -782,19 +770,7 @@ entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %union.ListCell.3653176, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %1, %3
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
+  %6 = getelementptr %union.ListCell.3653142, ptr %0, i64 %5
   ret ptr %6
 }
 

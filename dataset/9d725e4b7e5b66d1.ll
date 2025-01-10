@@ -101,10 +101,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; gromacs/optimized/lincs.cpp.ll
-; openblas/optimized/dlarrd.c.ll
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {

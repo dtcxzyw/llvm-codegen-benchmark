@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; boost/optimized/get_turns_areal_areal.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/md.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/xhci-ring.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; lvgl/optimized/lv_span.ll

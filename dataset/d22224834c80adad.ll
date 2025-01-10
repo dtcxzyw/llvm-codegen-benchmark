@@ -1,6 +1,6 @@
 
-%"struct.std::pair.141.2683557" = type { i64, i64 }
-%"struct.std::pair.108.2801231" = type { i64, i64 }
+%"struct.std::pair.141.2683524" = type { i64, i64 }
+%"struct.std::pair.108.2801197" = type { i64, i64 }
 
 ; 7 occurrences:
 ; boost/optimized/matches_relation_factory.ll
@@ -15,7 +15,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw nuw %"struct.std::pair.141.2683557", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.std::pair.141.2683524", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -27,7 +27,7 @@ define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw %"struct.std::pair.108.2801231", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.std::pair.108.2801197", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

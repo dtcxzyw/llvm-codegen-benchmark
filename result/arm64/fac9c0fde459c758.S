@@ -1,10 +1,3 @@
-func000000000000014a:                   // @func000000000000014a
-// %bb.0:                               // %entry
-	subs	w8, w0, w1
-	ccmp	w8, #0, #4, gt
-	cset	w0, gt
-	ret
-                                        // -- End function
 func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
 	mov	w8, #1048576                    // =0x100000

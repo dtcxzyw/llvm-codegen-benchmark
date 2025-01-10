@@ -25,10 +25,6 @@ func000000000000002b:                   # @func000000000000002b
 	shlq	$4, %rax
 	leaq	48(%rdi,%rax), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	addq	%rdx, %rsi
-	leaq	32(%rdi,%rsi,4), %rax
-	retq
 func0000000000000028:                   # @func0000000000000028
 	addq	%rdx, %rsi
 	shlq	$4, %rsi

@@ -11,8 +11,9 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/pme.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; Function Attrs: nounwind

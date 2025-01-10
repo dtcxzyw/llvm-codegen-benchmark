@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; graphviz/optimized/shortest.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; openjdk/optimized/xMark.ll

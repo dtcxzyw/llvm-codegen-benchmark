@@ -1,11 +1,11 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
-%"class.clang::QualType.3192275" = type { %"class.llvm::PointerIntPair.3192276" }
-%"class.llvm::PointerIntPair.3192276" = type { %"struct.llvm::detail::PunnedPointer.3192277" }
-%"struct.llvm::detail::PunnedPointer.3192277" = type { [8 x i8] }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
+%"class.clang::QualType.3192241" = type { %"class.llvm::PointerIntPair.3192242" }
+%"class.llvm::PointerIntPair.3192242" = type { %"struct.llvm::detail::PunnedPointer.3192243" }
+%"struct.llvm::detail::PunnedPointer.3192243" = type { [8 x i8] }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 15 occurrences:
 ; freetype/optimized/pfr.c.ll
@@ -28,7 +28,7 @@ define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %4, i64 %3
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -179,7 +179,7 @@ define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 48
-  %5 = getelementptr nusw nuw %"class.clang::QualType.3192275", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.clang::QualType.3192241", ptr %4, i64 %3
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
@@ -281,7 +281,7 @@ define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 264
-  %5 = getelementptr %struct.mi_page_s.3949290, ptr %4, i64 %3
+  %5 = getelementptr %struct.mi_page_s.3949240, ptr %4, i64 %3
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }

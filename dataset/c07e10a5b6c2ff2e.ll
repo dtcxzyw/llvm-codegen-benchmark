@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -68,7 +68,6 @@
 ; linux/optimized/iface.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -200,8 +199,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/vm_version_x86.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007c(i64 %0, i64 %1, i32 %2) #0 {
@@ -297,8 +295,7 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
+; 2 occurrences:
 ; redis/optimized/siphash.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
@@ -325,7 +322,8 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_image.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007d(i64 %0, i64 %1, i32 %2) #0 {
@@ -335,20 +333,6 @@ entry:
   %5 = or disjoint i64 %4, %1
   %6 = shl nuw i64 %0, 48
   %7 = or disjoint i64 %6, %5
-  ret i64 %7
-}
-
-; 2 occurrences:
-; llvm/optimized/InstrProfWriter.cpp.ll
-; redis/optimized/siphash.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 56
-  %5 = or i64 %0, %4
-  %6 = shl nuw i64 %1, 56
-  %7 = or i64 %5, %6
   ret i64 %7
 }
 
@@ -392,6 +376,19 @@ entry:
   %5 = or disjoint i64 %4, %1
   %6 = shl i64 %0, 4
   %7 = or i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; redis/optimized/siphash.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 48
+  %5 = or i64 %0, %4
+  %6 = shl nuw i64 %1, 56
+  %7 = or i64 %5, %6
   ret i64 %7
 }
 

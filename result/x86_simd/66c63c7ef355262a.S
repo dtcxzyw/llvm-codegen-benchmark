@@ -84,12 +84,14 @@ func000000000000002c:                   # @func000000000000002c
 	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq
 .LCPI5_0:
-	.long	100                             # 0x64
+	.long	8192                            # 0x2000
 .LCPI5_1:
-	.long	68                              # 0x44
+	.long	63                              # 0x3f
+.LCPI5_2:
+	.long	60                              # 0x3c
 func0000000000000186:                   # @func0000000000000186
-	vpmovb2m	%xmm0, %k1
-	vptestmd	%ymm1, %ymm1, %k1 {%k1}
-	vpbroadcastd	.LCPI5_0(%rip), %ymm0   # ymm0 = [100,100,100,100,100,100,100,100]
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [68,68,68,68,68,68,68,68]
+	vptestmb	%xmm1, %xmm1, %k1
+	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm0, %k1 {%k1}
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0   # ymm0 = [63,63,63,63,63,63,63,63]
+	vpbroadcastd	.LCPI5_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [60,60,60,60,60,60,60,60]
 	retq

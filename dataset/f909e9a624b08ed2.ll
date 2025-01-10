@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 20 occurrences:
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
@@ -38,7 +38,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.aiVector3t.2828902, ptr %1, i64 %2
+  %3 = getelementptr %class.aiVector3t.2828868, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sdiv exact i64 %5, 24

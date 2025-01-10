@@ -14,6 +14,7 @@ func0000000000000005:                   # @func0000000000000005
 	orq	%rdi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leaq	(,%rsi,8), %rax
+	movq	%rsi, %rax
+	shlq	$6, %rax
 	orq	%rdi, %rax
 	retq

@@ -1,5 +1,5 @@
 
-%union.TValue.3680640 = type { i64 }
+%union.TValue.3680590 = type { i64 }
 
 ; 3 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
@@ -50,7 +50,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw nuw %union.TValue.3680640, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %union.TValue.3680590, ptr %0, i64 %5
   ret ptr %6
 }
 

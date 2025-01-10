@@ -1,5 +1,5 @@
 
-%"class.re2::StringPiece.2795662" = type { ptr, i64 }
+%"class.re2::StringPiece.2795628" = type { ptr, i64 }
 
 ; 18 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -92,8 +92,8 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
   %5 = call i64 @llvm.umax.i64(i64 %1, i64 %4)
-  %6 = getelementptr %"class.re2::StringPiece.2795662", ptr %0, i64 %5
-  %7 = getelementptr %"class.re2::StringPiece.2795662", ptr %6, i64 %1
+  %6 = getelementptr %"class.re2::StringPiece.2795628", ptr %0, i64 %5
+  %7 = getelementptr %"class.re2::StringPiece.2795628", ptr %6, i64 %1
   ret ptr %7
 }
 

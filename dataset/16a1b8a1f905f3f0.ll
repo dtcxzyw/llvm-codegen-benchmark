@@ -62,10 +62,9 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rijndael.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libquic/optimized/blowfish.c.ll
 ; libquic/optimized/des.c.ll
 ; lief/optimized/RichHeader.cpp.ll

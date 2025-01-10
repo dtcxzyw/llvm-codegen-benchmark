@@ -1,5 +1,5 @@
 
-%"class.std::basic_string_view.3465135" = type { i64, ptr }
+%"class.std::basic_string_view.3465101" = type { i64, ptr }
 
 ; 9 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -68,7 +68,7 @@ entry:
 define ptr @func0000000000000017(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = getelementptr %"class.std::basic_string_view.3465135", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::basic_string_view.3465101", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -768
   ret ptr %4
 }

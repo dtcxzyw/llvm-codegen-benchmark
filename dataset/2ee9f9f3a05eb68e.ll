@@ -1,7 +1,7 @@
 
-%"struct.llvm::detail::DenseMapPair.255.3140006" = type { %"struct.std::pair.base.258.3140007", [4 x i8] }
-%"struct.std::pair.base.258.3140007" = type <{ %"class.clang::FileEntryRef.3139904", i32 }>
-%"class.clang::FileEntryRef.3139904" = type { ptr }
+%"struct.llvm::detail::DenseMapPair.255.3139972" = type { %"struct.std::pair.base.258.3139973", [4 x i8] }
+%"struct.std::pair.base.258.3139973" = type <{ %"class.clang::FileEntryRef.3139870", i32 }>
+%"class.clang::FileEntryRef.3139870" = type { ptr }
 
 ; 18 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -84,7 +84,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000c21(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.255.3140006", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.255.3139972", ptr %1, i64 %2
   %4 = icmp eq ptr %0, %3
   %5 = icmp eq ptr %0, null
   %6 = select i1 %5, i1 true, i1 %4

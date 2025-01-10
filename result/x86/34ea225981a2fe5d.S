@@ -68,3 +68,15 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rdi, %rsi
 	setne	%al
 	retq
+func00000000000002a8:                   # @func00000000000002a8
+	addq	%rdx, %rsi
+	leaq	(%rdi,%rsi,4), %rax
+	cmpq	$1033, %rax                     # imm = 0x409
+	setae	%al
+	retq
+func00000000000003aa:                   # @func00000000000003aa
+	addq	%rdx, %rsi
+	leaq	(%rdi,%rsi,2), %rax
+	cmpq	$65537, %rax                    # imm = 0x10001
+	setge	%al
+	retq

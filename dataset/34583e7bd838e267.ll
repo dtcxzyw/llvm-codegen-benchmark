@@ -1,6 +1,6 @@
 
-%union.e1000_rx_desc_packet_split.3531527 = type { %struct.anon.80.3531528 }
-%struct.anon.80.3531528 = type { [4 x i64] }
+%union.e1000_rx_desc_packet_split.3531493 = type { %struct.anon.80.3531494 }
+%struct.anon.80.3531494 = type { [4 x i64] }
 
 ; 1 occurrences:
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
@@ -39,7 +39,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.e1000_rx_desc_packet_split.3531527, ptr %0, i64 %3
+  %4 = getelementptr %union.e1000_rx_desc_packet_split.3531493, ptr %0, i64 %3
   %5 = add nuw nsw i64 %1, 1
   %6 = getelementptr [4 x i64], ptr %4, i64 0, i64 %5
   ret ptr %6

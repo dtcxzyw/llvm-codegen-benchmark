@@ -118,3 +118,13 @@ func000000000000000e:                   # @func000000000000000e
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000009:                   # @func0000000000000009
+	vpsllw	$7, %xmm0, %xmm0
+	vpxor	%xmm5, %xmm5, %xmm5
+	vcmpeq_uqpd	%zmm3, %zmm1, %k0
+	vcmpeq_uqpd	%zmm4, %zmm2, %k1
+	kunpckbw	%k0, %k1, %k1
+	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

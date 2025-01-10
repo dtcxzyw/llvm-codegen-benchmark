@@ -1,5 +1,5 @@
 
-%"class.std::complex.3095238" = type { { float, float } }
+%"class.std::complex.3095204" = type { { float, float } }
 
 ; 2 occurrences:
 ; darktable/optimized/avif.c.ll
@@ -81,7 +81,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = mul i64 %3, %1
-  %5 = getelementptr %"class.std::complex.3095238", ptr %0, i64 %4, i32 0, i32 1
+  %5 = getelementptr %"class.std::complex.3095204", ptr %0, i64 %4, i32 0, i32 1
   ret ptr %5
 }
 

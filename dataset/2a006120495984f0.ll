@@ -1,5 +1,5 @@
 
-; 3121 occurrences:
+; 3141 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -136,7 +136,6 @@
 ; abc/optimized/giaStg.c.ll
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaSupps.c.ll
-; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/giaTranStoch.c.ll
 ; abc/optimized/giaTruth.c.ll
@@ -702,6 +701,7 @@
 ; hwloc/optimized/lstopo-lstopo-cairo.ll
 ; hwloc/optimized/topology-linux.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
+; icu/optimized/alphaindex.ll
 ; icu/optimized/bmpset.ll
 ; icu/optimized/bytestream.ll
 ; icu/optimized/bytestriebuilder.ll
@@ -711,6 +711,8 @@
 ; icu/optimized/collationfastlatinbuilder.ll
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
+; icu/optimized/collationruleparser.ll
+; icu/optimized/collationsets.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/csr2022.ll
 ; icu/optimized/csrmbcs.ll
@@ -719,30 +721,43 @@
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/edits.ll
+; icu/optimized/filteredbrk.ll
 ; icu/optimized/filterednormalizer2.ll
 ; icu/optimized/format.ll
 ; icu/optimized/genrb.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/locdispnames.ll
+; icu/optimized/msgfmt.ll
 ; icu/optimized/nfrs.ll
+; icu/optimized/nfrule.ll
 ; icu/optimized/normalizer2.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/number_formatimpl.ll
+; icu/optimized/number_longnames.ll
 ; icu/optimized/number_mapper.ll
+; icu/optimized/numfmt.ll
 ; icu/optimized/plurfmt.ll
 ; icu/optimized/plurrule.ll
 ; icu/optimized/rbbiscan.ll
 ; icu/optimized/rbbitblb.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_pars.ll
+; icu/optimized/rbt_rule.ll
 ; icu/optimized/rbt_set.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/rematch.ll
+; icu/optimized/reslist.ll
 ; icu/optimized/rulebasedcollator.ll
+; icu/optimized/selfmt.ll
+; icu/optimized/smpdtfmt.ll
 ; icu/optimized/sprintf.ll
 ; icu/optimized/stringtriebuilder.ll
+; icu/optimized/timezone.ll
 ; icu/optimized/toolutil.ll
+; icu/optimized/tridpars.ll
+; icu/optimized/tzfmt.ll
+; icu/optimized/tzgnames.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/uchriter.ll
@@ -754,9 +769,13 @@
 ; icu/optimized/uloc.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/unifiedcache.ll
+; icu/optimized/uniset.ll
+; icu/optimized/unistr.ll
+; icu/optimized/units_router.ll
 ; icu/optimized/uregex.ll
 ; icu/optimized/uresbund.ll
 ; icu/optimized/usearch.ll
+; icu/optimized/uspoof_conf.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/ustring.ll
 ; icu/optimized/utext.ll
@@ -764,6 +783,7 @@
 ; icu/optimized/utrie2_builder.ll
 ; icu/optimized/uvectr32.ll
 ; icu/optimized/uvectr64.ll
+; icu/optimized/vtzone.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -3131,7 +3151,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 195 occurrences:
+; 194 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRefactor.c.ll
@@ -3175,7 +3195,6 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abc/optimized/plaMan.c.ll
-; abc/optimized/sbdPath.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclLibUtil.c.ll

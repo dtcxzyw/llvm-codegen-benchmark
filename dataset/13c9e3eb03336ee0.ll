@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3204428" = type { i32 }
+%"class.clang::SourceLocation.3204394" = type { i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/strftime.ll
@@ -103,7 +103,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.clang::SourceLocation.3204428", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.clang::SourceLocation.3204394", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = xor i64 %4, -1
   %6 = ptrtoint ptr %0 to i64

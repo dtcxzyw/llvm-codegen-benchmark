@@ -49,11 +49,3 @@ func000000000000058c:                   // @func000000000000058c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000108:                   // @func0000000000000108
-// %bb.0:                               // %entry
-	orr	x8, x1, x2
-	orr	x8, x0, x8
-	tst	x8, #0xffffffff80000000
-	cset	w0, ne
-	ret
-                                        // -- End function

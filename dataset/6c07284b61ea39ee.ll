@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/future.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -8,7 +8,6 @@
 ; cmake/optimized/deflate.c.ll
 ; duckdb/optimized/ub_duckdb_operator_helper.cpp.ll
 ; duckdb/optimized/ub_duckdb_transformer_statement.cpp.ll
-; faiss/optimized/index_factory.cpp.ll
 ; git/optimized/commit-graph.ll
 ; git/optimized/merge-ort.ll
 ; git/optimized/range-diff.ll

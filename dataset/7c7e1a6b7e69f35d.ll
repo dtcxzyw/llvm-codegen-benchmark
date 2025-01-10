@@ -198,7 +198,7 @@ entry:
   ret i32 %3
 }
 
-; 464 occurrences:
+; 461 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCascade.c.ll
@@ -474,7 +474,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-cms_env.ll
 ; openssl/optimized/libcrypto-lib-decoder_meth.ll
 ; openssl/optimized/libcrypto-lib-encoder_meth.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-evp_fetch.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-pmeth_lib.ll
@@ -484,7 +483,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-cms_env.ll
 ; openssl/optimized/libcrypto-shlib-decoder_meth.ll
 ; openssl/optimized/libcrypto-shlib-encoder_meth.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-evp_fetch.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
 ; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
@@ -649,7 +647,6 @@ entry:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
-; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; wireshark/optimized/packet.c.ll
 ; wireshark/optimized/reassemble.c.ll
@@ -732,7 +729,7 @@ entry:
   ret i32 %3
 }
 
-; 180 occurrences:
+; 178 occurrences:
 ; abc/optimized/absPth.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -838,7 +835,6 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/uregex.ll
 ; jq/optimized/jv_dtoa.ll
-; libevent/optimized/event.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/rescaler_utils.c.ll
@@ -846,7 +842,6 @@ entry:
 ; lightgbm/optimized/linkers_socket.cpp.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/rtmutex_api.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
@@ -1117,7 +1112,7 @@ entry:
   ret i32 %3
 }
 
-; 294 occurrences:
+; 293 occurrences:
 ; actix-rs/optimized/1h8rqhjcnbkmnywj.ll
 ; boost/optimized/to_chars.ll
 ; brotli/optimized/encode.c.ll
@@ -1140,7 +1135,6 @@ entry:
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
-; hdf5/optimized/H5SL.c.ll
 ; hermes/optimized/MD5.cpp.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; libjpeg-turbo/optimized/md5.c.ll
@@ -1473,8 +1467,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; linux/optimized/inet_connection_sock.ll
+; 3 occurrences:
 ; minetest/optimized/tool.cpp.ll
 ; opencv/optimized/brightedges.cpp.ll
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll

@@ -7,6 +7,9 @@ func00000000000000de:                   # @func00000000000000de
 func000000000000000a:                   # @func000000000000000a
 	leaq	-9(%rdi,%rdx), %rax
 	retq
+func000000000000008f:                   # @func000000000000008f
+	leaq	-32(%rdi,%rdx), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	leaq	-32(%rdi,%rdx), %rax
 	retq

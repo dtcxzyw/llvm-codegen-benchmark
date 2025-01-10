@@ -1,10 +1,10 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
-%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
-%"class.std::thread::id.2636053" = type { i64 }
-%struct.FSE_decode_t.3496612 = type { i16, i8, i8 }
-%struct.HUF_DElt.3496613 = type { i8, i8 }
-%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021" = type { %"struct.std::atomic.742.2636022", ptr }
+%"struct.std::atomic.742.2636022" = type { %"class.std::thread::id.2636020" }
+%"class.std::thread::id.2636020" = type { i64 }
+%struct.FSE_decode_t.3496578 = type { i16, i8, i8 }
+%struct.HUF_DElt.3496579 = type { i8, i8 }
+%struct.FSE_decode_t.3533469 = type { i16, i8, i8 }
 
 ; 158 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
@@ -170,7 +170,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -191,7 +191,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %5 = getelementptr %struct.FSE_decode_t.3496612, ptr %4, i64 %3
+  %5 = getelementptr %struct.FSE_decode_t.3496578, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -202,7 +202,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %5 = getelementptr nusw nuw %struct.HUF_DElt.3496613, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.HUF_DElt.3496579, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -214,7 +214,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr %struct.FSE_decode_t.3533503, ptr %4, i64 %3
+  %5 = getelementptr %struct.FSE_decode_t.3533469, ptr %4, i64 %3
   ret ptr %5
 }
 

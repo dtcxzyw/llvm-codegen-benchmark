@@ -1,9 +1,9 @@
 
-%struct._zend_op.2794740 = type { ptr, %union._znode_op.2794749, %union._znode_op.2794749, %union._znode_op.2794749, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2794749 = type { i32 }
-%"class.clang::QualType.3147807" = type { %"class.llvm::PointerIntPair.3147809" }
-%"class.llvm::PointerIntPair.3147809" = type { %"struct.llvm::detail::PunnedPointer.3147810" }
-%"struct.llvm::detail::PunnedPointer.3147810" = type { [8 x i8] }
+%struct._zend_op.2794706 = type { ptr, %union._znode_op.2794715, %union._znode_op.2794715, %union._znode_op.2794715, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2794715 = type { i32 }
+%"class.clang::QualType.3147773" = type { %"class.llvm::PointerIntPair.3147775" }
+%"class.llvm::PointerIntPair.3147775" = type { %"struct.llvm::detail::PunnedPointer.3147776" }
+%"struct.llvm::detail::PunnedPointer.3147776" = type { [8 x i8] }
 
 ; 8 occurrences:
 ; hermes/optimized/Statistic.cpp.ll
@@ -34,7 +34,7 @@ entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct._zend_op.2794740, ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %struct._zend_op.2794706, ptr %1, i64 %5
   %7 = icmp ult ptr %6, %0
   ret i1 %7
 }
@@ -51,7 +51,7 @@ entry:
   %3 = lshr i32 %2, 19
   %4 = and i32 %3, 127
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.clang::QualType.3147807", ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::QualType.3147773", ptr %1, i64 %5
   %7 = icmp eq ptr %6, %0
   ret i1 %7
 }

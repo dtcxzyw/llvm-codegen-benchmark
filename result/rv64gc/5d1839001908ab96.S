@@ -58,18 +58,10 @@ func000000000000000b:                   # @func000000000000000b
 	xori	a0, a0, 1
 	ret
 .LCPI7_0:
-	.quad	0xbff0000000000000              # double -1
-func000000000000000c:                   # @func000000000000000c
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fadd.d	fa5, fa1, fa5
-	fle.d	a0, fa5, fa0
-	ret
-.LCPI8_0:
 	.quad	0x4076800000000000              # double 360
 func000000000000000d:                   # @func000000000000000d
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, %hi(.LCPI7_0)
+	fld	fa5, %lo(.LCPI7_0)(a0)
 	fadd.d	fa5, fa1, fa5
 	flt.d	a0, fa0, fa5
 	xori	a0, a0, 1

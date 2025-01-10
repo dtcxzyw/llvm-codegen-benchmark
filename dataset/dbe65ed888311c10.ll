@@ -617,11 +617,10 @@ entry:
   ret i1 %4
 }
 
-; 372 occurrences:
+; 371 occurrences:
 ; abc/optimized/abc.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; chibicc/optimized/parse.ll
-; clamav/optimized/mbox.c.ll
 ; clamav/optimized/message.c.ll
 ; clamav/optimized/rtf.c.ll
 ; clamav/optimized/scanner.c.ll

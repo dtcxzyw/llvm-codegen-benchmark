@@ -65,10 +65,10 @@ func0000000000000034:                   # @func0000000000000034
 	leaq	(%rdi,%rax,4), %rax
 	retq
 func0000000000000017:                   # @func0000000000000017
-	decl	%edx
+	incl	%edx
 	imull	%esi, %edx
 	movslq	%edx, %rax
-	leaq	(%rdi,%rax,2), %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	incl	%edx

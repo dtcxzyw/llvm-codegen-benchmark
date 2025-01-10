@@ -724,7 +724,7 @@ entry:
   ret i32 %2
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; clamav/optimized/clamfi.c.ll
 ; cvc5/optimized/monomial.cpp.ll
@@ -736,7 +736,6 @@ entry:
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; php/optimized/ascmagic.ll
 ; qemu/optimized/qobject_block-qdict.c.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll

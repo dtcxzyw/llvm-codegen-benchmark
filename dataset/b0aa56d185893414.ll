@@ -1,5 +1,5 @@
 
-%struct.BSplineElementCoefficients.3820759 = type { [3 x i32] }
+%struct.BSplineElementCoefficients.3820709 = type { [3 x i32] }
 
 ; 47 occurrences:
 ; abc/optimized/bacWriteBlif.c.ll
@@ -88,9 +88,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = getelementptr %struct.BSplineElementCoefficients.3820759, ptr %0, i64 %1
+  %3 = getelementptr %struct.BSplineElementCoefficients.3820709, ptr %0, i64 %1
   %4 = sext i32 %2 to i64
-  %5 = getelementptr %struct.BSplineElementCoefficients.3820759, ptr %3, i64 %4
+  %5 = getelementptr %struct.BSplineElementCoefficients.3820709, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -12
   ret ptr %6
 }

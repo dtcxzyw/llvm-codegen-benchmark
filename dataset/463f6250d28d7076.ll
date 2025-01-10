@@ -57141,7 +57141,7 @@ entry:
   ret ptr %1
 }
 
-; 13633 occurrences:
+; 13634 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -57169,6 +57169,7 @@ entry:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcFx.c.ll
+; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaReadVer.c.ll

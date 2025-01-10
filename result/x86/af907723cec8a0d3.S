@@ -4,7 +4,7 @@ func0000000000000005:                   # @func0000000000000005
 	negq	%rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	shll	$3, %edi
+	shll	$2, %edi
 	movslq	%edi, %rax
 	negq	%rax
 	retq

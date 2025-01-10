@@ -151,18 +151,18 @@ func000000000000020c:                   # @func000000000000020c
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000001c2:                   # @func00000000000001c2
-	cmpl	%edx, %esi
-	setle	%cl
-	testl	%edi, %edi
-	sete	%al
-	orb	%cl, %al
-	retq
 func00000000000002c8:                   # @func00000000000002c8
 	cmpl	%edx, %esi
 	setge	%cl
 	cmpl	$65536, %edi                    # imm = 0x10000
 	setb	%al
+	orb	%cl, %al
+	retq
+func0000000000000196:                   # @func0000000000000196
+	testl	%edx, %edx
+	setle	%cl
+	cmpl	%esi, %edi
+	setge	%al
 	orb	%cl, %al
 	retq
 func0000000000000298:                   # @func0000000000000298
@@ -277,13 +277,6 @@ func0000000000000282:                   # @func0000000000000282
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000196:                   # @func0000000000000196
-	testl	%edx, %edx
-	setle	%cl
-	cmpl	%esi, %edi
-	setge	%al
-	orb	%cl, %al
-	retq
 func0000000000000198:                   # @func0000000000000198
 	cmpl	%edx, %esi
 	setl	%cl
@@ -352,6 +345,13 @@ func00000000000001c8:                   # @func00000000000001c8
 	setle	%cl
 	cmpl	$16777216, %edi                 # imm = 0x1000000
 	setb	%al
+	orb	%cl, %al
+	retq
+func00000000000001c2:                   # @func00000000000001c2
+	cmpl	%edx, %esi
+	setle	%cl
+	testl	%edi, %edi
+	sete	%al
 	orb	%cl, %al
 	retq
 func000000000000004a:                   # @func000000000000004a
@@ -480,6 +480,13 @@ func00000000000001a8:                   # @func00000000000001a8
 	setb	%al
 	orb	%cl, %al
 	retq
+func0000000000000328:                   # @func0000000000000328
+	cmpl	%edx, %esi
+	setne	%cl
+	cmpl	$48, %edi
+	setb	%al
+	orb	%cl, %al
+	retq
 func00000000000002d4:                   # @func00000000000002d4
 	cmpl	%edx, %esi
 	setge	%cl
@@ -576,12 +583,5 @@ func000000000000064c:                   # @func000000000000064c
 	setae	%cl
 	testl	%edi, %edi
 	setle	%al
-	orb	%cl, %al
-	retq
-func00000000000002b0:                   # @func00000000000002b0
-	cmpl	%edx, %esi
-	setg	%cl
-	cmpl	$57671681, %edi                 # imm = 0x3700001
-	setae	%al
 	orb	%cl, %al
 	retq

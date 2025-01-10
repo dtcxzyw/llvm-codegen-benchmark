@@ -24,7 +24,7 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpsllq	$5, %ymm0, %ymm0
+	vpsllq	$3, %ymm0, %ymm0
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
@@ -37,22 +37,17 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastq	.LCPI6_0(%rip), %ymm1   # ymm1 = [1244,1244,1244,1244]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
-	vpsllq	$5, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubq	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI8_0:
+.LCPI7_0:
 	.quad	6                               # 0x6
 func000000000000000b:                   # @func000000000000000b
 	vpaddq	%ymm0, %ymm0, %ymm0
-	vpbroadcastq	.LCPI8_0(%rip), %ymm1   # ymm1 = [6,6,6,6]
+	vpbroadcastq	.LCPI7_0(%rip), %ymm1   # ymm1 = [6,6,6,6]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI9_0:
+.LCPI8_0:
 	.quad	64                              # 0x40
 func0000000000000001:                   # @func0000000000000001
 	vpsllq	$3, %ymm0, %ymm0
-	vpbroadcastq	.LCPI9_0(%rip), %ymm1   # ymm1 = [64,64,64,64]
+	vpbroadcastq	.LCPI8_0(%rip), %ymm1   # ymm1 = [64,64,64,64]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

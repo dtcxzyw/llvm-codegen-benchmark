@@ -1,5 +1,5 @@
 
-; 2603 occurrences:
+; 2605 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -274,7 +274,6 @@
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/longobject.ll
@@ -317,8 +316,11 @@
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -1852,6 +1854,7 @@
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/genericgf.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
@@ -2586,7 +2589,6 @@
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll

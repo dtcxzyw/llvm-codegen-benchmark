@@ -55,10 +55,11 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; cmake/optimized/inflate.c.ll
+; git/optimized/parallel-checkout.ll
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; gromacs/optimized/inflate.c.ll
 ; libquic/optimized/inflate.c.ll

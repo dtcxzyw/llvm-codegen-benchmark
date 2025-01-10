@@ -33,13 +33,14 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hwloc/optimized/topology-xml.ll
 ; icu/optimized/utrie2_builder.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; linux/optimized/fib_trie.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lua/optimized/ldebug.ll
 ; msdfgen/optimized/shape-description.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(i8 %0, i32 %1, i32 %2) #0 {
@@ -361,10 +362,11 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/longobject.ll
 ; icu/optimized/n2builder.ll
 ; linux/optimized/ndisc.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; postgres/optimized/utilities.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000282(i8 %0, i32 %1, i32 %2) #0 {
@@ -438,6 +440,17 @@ define i1 @func000000000000030c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp slt i32 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000298(i8 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, %2
+  %4 = icmp ne i8 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
 }

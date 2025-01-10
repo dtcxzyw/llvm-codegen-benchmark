@@ -1,7 +1,7 @@
 
-%struct.level_info.2793981 = type { i32, i32, i32, i32 }
-%struct.cli_bc_type.3062303 = type { i32, ptr, i32, i32, i32 }
-%struct.ext4_ext_path.3555768 = type { i64, i16, i16, ptr, ptr, ptr, ptr }
+%struct.level_info.2793947 = type { i32, i32, i32, i32 }
+%struct.cli_bc_type.3062269 = type { i32, ptr, i32, i32, i32 }
+%struct.ext4_ext_path.3555734 = type { i64, i16, i16, ptr, ptr, ptr, ptr }
 
 ; 19 occurrences:
 ; freetype/optimized/cff.c.ll
@@ -29,7 +29,7 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.level_info.2793981, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.level_info.2793947, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -91,7 +91,7 @@ entry:
 define ptr @func000000000000002f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.cli_bc_type.3062303, ptr %0, i64 %2
+  %3 = getelementptr %struct.cli_bc_type.3062269, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -2080
   ret ptr %4
 }
@@ -118,7 +118,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %struct.ext4_ext_path.3555768, ptr %0, i64 %2
+  %3 = getelementptr %struct.ext4_ext_path.3555734, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -48
   ret ptr %4
 }

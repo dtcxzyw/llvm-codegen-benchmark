@@ -19,19 +19,15 @@ func000000000000003d:                   # @func000000000000003d
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [5,5,5,5]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000009:                   # @func0000000000000009
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpsllq	$5, %ymm0, %ymm0
-	retq
 func0000000000000001:                   # @func0000000000000001
 	vpsllq	$3, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.quad	1498                            # 0x5da
 func000000000000003f:                   # @func000000000000003f
 	vpaddq	%ymm0, %ymm0, %ymm0
-	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [1498,1498,1498,1498]
+	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [1498,1498,1498,1498]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

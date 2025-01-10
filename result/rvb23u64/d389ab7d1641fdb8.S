@@ -30,6 +30,13 @@ func0000000000000030:                   # @func0000000000000030
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
+func0000000000000032:                   # @func0000000000000032
+	sext.w	a2, a2
+	sext.w	a1, a1
+	xor	a1, a1, a2
+	snez	a1, a1
+	and	a0, a0, a1
+	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
 	sext.w	a2, a2
@@ -86,13 +93,6 @@ func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	and	a0, a0, a1
-	ret
-func0000000000000032:                   # @func0000000000000032
-	sext.w	a2, a2
-	sext.w	a1, a1
-	xor	a1, a1, a2
-	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024

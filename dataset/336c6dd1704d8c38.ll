@@ -429,7 +429,7 @@ entry:
   ret i1 %2
 }
 
-; 123 occurrences:
+; 122 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; arrow/optimized/tz.cpp.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
@@ -513,7 +513,6 @@ entry:
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueTypes.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll

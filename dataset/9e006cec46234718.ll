@@ -1,6 +1,6 @@
 
-%union.e1000_rx_desc_extended.3531524 = type { %struct.anon.39.3531525 }
-%struct.anon.39.3531525 = type { i64, i64 }
+%union.e1000_rx_desc_extended.3531490 = type { %struct.anon.39.3531491 }
+%struct.anon.39.3531491 = type { i64, i64 }
 
 ; 4 occurrences:
 ; git/optimized/object.ll
@@ -41,7 +41,7 @@ entry:
   %4 = icmp eq i32 %3, %1
   %5 = select i1 %4, i32 0, i32 %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %union.e1000_rx_desc_extended.3531524, ptr %0, i64 %6
+  %7 = getelementptr %union.e1000_rx_desc_extended.3531490, ptr %0, i64 %6
   ret ptr %7
 }
 

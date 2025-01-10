@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3187482" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3187448" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194121" = type { ptr, ptr, ptr, ptr }
 
 ; 15 occurrences:
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
@@ -37,9 +37,9 @@ entry:
 define ptr @func00000000000000bb(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %1
-  %4 = getelementptr nusw %"class.llvm::Use.3187482", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3187448", ptr %0, i64 %3
   %5 = sext i32 %2 to i64
-  %6 = getelementptr %"class.llvm::Use.3187482", ptr %4, i64 %5
+  %6 = getelementptr %"class.llvm::Use.3187448", ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
@@ -52,8 +52,8 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %"class.llvm::Use.3194155", ptr %0, i64 %5
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %6, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3194121", ptr %0, i64 %5
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3194121", ptr %6, i64 %4
   ret ptr %7
 }
 

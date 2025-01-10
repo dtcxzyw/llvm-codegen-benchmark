@@ -589,7 +589,7 @@ entry:
   ret i32 %2
 }
 
-; 237 occurrences:
+; 236 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -668,7 +668,6 @@ entry:
 ; libquic/optimized/hpack_huffman_decoder.cc.ll
 ; libquic/optimized/time_posix.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/devio.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll

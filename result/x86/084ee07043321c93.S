@@ -15,23 +15,6 @@ func0000000000000021:                   # @func0000000000000021
 	leal	(%rax,%rax,8), %eax
 	cmovnel	%ecx, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
-	cmpl	$2, %edi
-	sete	%al
-	andb	%sil, %al
-	movzbl	%al, %eax
-	shll	$8, %eax
-	retq
-func000000000000018c:                   # @func000000000000018c
-	shrq	$61, %rsi
-	xorl	%eax, %eax
-	testl	%edi, %edi
-	sete	%al
-	leal	15(%rax,%rax,2), %ecx
-	testb	$1, %sil
-	movl	$18, %eax
-	cmovnel	%ecx, %eax
-	retq
 func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	testl	$2048, %esi                     # imm = 0x800

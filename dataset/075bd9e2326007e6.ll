@@ -1,5 +1,5 @@
 
-; 1266 occurrences:
+; 1263 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/decompress.c.ll
@@ -44,7 +44,6 @@
 ; clamav/optimized/rawread.cpp.ll
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -621,8 +620,6 @@
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll

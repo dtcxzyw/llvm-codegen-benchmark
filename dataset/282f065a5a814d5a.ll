@@ -1,12 +1,9 @@
 
-; 7 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 4 occurrences:
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/proc_sysctl.ll
-; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/vmIntrinsics.ll
 ; openmpi/optimized/ompi_datatype_args.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -18,9 +15,8 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; luau/optimized/lgc.cpp.ll
-; postgres/optimized/slru.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:

@@ -1,9 +1,9 @@
 
-%union.OSSL_PARAM_ALIGNED_BLOCK.2634101 = type { double }
-%"class.std::vector.3483398" = type { %"struct.std::_Vector_base.3483399" }
-%"struct.std::_Vector_base.3483399" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483400" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483400" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483401" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483401" = type { ptr, ptr, ptr }
+%union.OSSL_PARAM_ALIGNED_BLOCK.2634068 = type { double }
+%"class.std::vector.3483364" = type { %"struct.std::_Vector_base.3483365" }
+%"struct.std::_Vector_base.3483365" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483366" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3483366" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483367" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3483367" = type { ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; cmake/optimized/MD5.c.ll
@@ -17,8 +17,7 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
-; cpython/optimized/pystrtod.ll
+; 15 occurrences:
 ; linux/optimized/ds.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/libahci.ll
@@ -232,7 +231,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = getelementptr nusw %union.OSSL_PARAM_ALIGNED_BLOCK.2634101, ptr %0, i64 %4
+  %5 = getelementptr nusw %union.OSSL_PARAM_ALIGNED_BLOCK.2634068, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -346,7 +345,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = getelementptr nusw nuw %"class.std::vector.3483398", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::vector.3483364", ptr %0, i64 %4
   ret ptr %5
 }
 

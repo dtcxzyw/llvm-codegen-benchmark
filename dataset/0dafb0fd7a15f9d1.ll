@@ -70,9 +70,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/write.ll
-; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:

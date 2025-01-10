@@ -74,6 +74,14 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
+func0000000000000029:                   # @func0000000000000029
+	addi	a2, a2, -7
+	addi	a1, a1, -4
+	sltu	a0, a0, a2
+	xori	a0, a0, 1
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
 func0000000000000021:                   # @func0000000000000021
 	addi	a2, a2, 2
 	binvi	a1, a1, 63

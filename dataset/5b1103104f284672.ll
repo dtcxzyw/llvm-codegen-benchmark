@@ -36,7 +36,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/Bra86.c.ll
@@ -70,7 +70,6 @@ entry:
 ; openjdk/optimized/verifier.ll
 ; openusd/optimized/decodemv.c.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; postgres/optimized/formatting.ll
 ; proj/optimized/metadata.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll

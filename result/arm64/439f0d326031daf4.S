@@ -23,7 +23,7 @@ func0000000000000005:                   // @func0000000000000005
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mvn	x8, x0
-	lsl	x0, x8, #5
+	lsl	x0, x8, #3
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
@@ -36,11 +36,6 @@ func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	mov	w8, #1244                       // =0x4dc
 	sub	x0, x8, x0, lsl #2
-	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	neg	x0, x0, lsl #5
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b

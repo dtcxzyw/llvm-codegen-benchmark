@@ -1,11 +1,11 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
-%struct.DdNode.2876289 = type { i32, i32, ptr, %union.anon.2876290, i64 }
-%union.anon.2876290 = type { %struct.DdChildren.2876291 }
-%struct.DdChildren.2876291 = type { ptr, ptr }
-%struct.DdCache.2877286 = type { ptr, ptr, i64, ptr, i32 }
-%"class.(anonymous namespace)::NonSwappableInstance.3475238" = type { %"class.absl::test_internal::BaseCountedInstance.base.3474954", [3 x i8] }
-%"class.absl::test_internal::BaseCountedInstance.base.3474954" = type <{ i32, i8 }>
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
+%struct.DdNode.2876255 = type { i32, i32, ptr, %union.anon.2876256, i64 }
+%union.anon.2876256 = type { %struct.DdChildren.2876257 }
+%struct.DdChildren.2876257 = type { ptr, ptr }
+%struct.DdCache.2877252 = type { ptr, ptr, i64, ptr, i32 }
+%"class.(anonymous namespace)::NonSwappableInstance.3475204" = type { %"class.absl::test_internal::BaseCountedInstance.base.3474920", [3 x i8] }
+%"class.absl::test_internal::BaseCountedInstance.base.3474920" = type <{ i32, i8 }>
 
 ; 602 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -646,8 +646,8 @@ entry:
 define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %3
-  %5 = getelementptr %struct.GC_hblk_s.2705275, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %1, i64 %3
+  %5 = getelementptr %struct.GC_hblk_s.2705241, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 4096
   ret ptr %6
 }
@@ -663,7 +663,7 @@ define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
-  %5 = getelementptr nuw %struct.DdNode.2876289, ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %struct.DdNode.2876255, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -680,7 +680,7 @@ define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
-  %5 = getelementptr %struct.DdCache.2877286, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.DdCache.2877252, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -739,8 +739,8 @@ entry:
 define ptr @func000000000000007b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr nusw nuw %"class.(anonymous namespace)::NonSwappableInstance.3475238", ptr %1, i64 %3
-  %5 = getelementptr %"class.(anonymous namespace)::NonSwappableInstance.3475238", ptr %4, i64 %0, i32 0, i32 1
+  %4 = getelementptr nusw nuw %"class.(anonymous namespace)::NonSwappableInstance.3475204", ptr %1, i64 %3
+  %5 = getelementptr %"class.(anonymous namespace)::NonSwappableInstance.3475204", ptr %4, i64 %0, i32 0, i32 1
   ret ptr %5
 }
 

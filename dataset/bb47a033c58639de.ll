@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/DIEHash.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll

@@ -1,9 +1,9 @@
 
-%"class.mitsuba::filesystem::path.2603450" = type <{ %"class.std::__1::vector.2603413", i8, [7 x i8] }>
-%"class.std::__1::vector.2603413" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603414" }
-%"class.std::__1::__compressed_pair.55.2603414" = type { %"struct.std::__1::__compressed_pair_elem.56.2603415" }
-%"struct.std::__1::__compressed_pair_elem.56.2603415" = type { ptr }
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%"class.mitsuba::filesystem::path.2603417" = type <{ %"class.std::__1::vector.2603380", i8, [7 x i8] }>
+%"class.std::__1::vector.2603380" = type { ptr, ptr, %"class.std::__1::__compressed_pair.55.2603381" }
+%"class.std::__1::__compressed_pair.55.2603381" = type { %"struct.std::__1::__compressed_pair_elem.56.2603382" }
+%"struct.std::__1::__compressed_pair_elem.56.2603382" = type { ptr }
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
 ; 319 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -330,7 +330,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw %"class.mitsuba::filesystem::path.2603450", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.mitsuba::filesystem::path.2603417", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -366,7 +366,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 7
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %4
+  %5 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %0, i64 %4
   ret ptr %5
 }
 

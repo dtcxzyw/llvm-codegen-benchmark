@@ -3,11 +3,6 @@ func0000000000000070:                   # @func0000000000000070
 	subq	%rsi, %rdi
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	movl	%edx, %eax
-	subq	%rsi, %rdi
-	leaq	(%rdi,%rax,2), %rax
-	retq
 func0000000000000020:                   # @func0000000000000020
 	shlq	$32, %rdx
 	subq	%rsi, %rdi

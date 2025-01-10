@@ -31,22 +31,12 @@ func0000000000000568:                   # @func0000000000000568
 	addi	a1, a1, 32
 	sltu	a0, a0, a1
 	ret
-func00000000000005c1:                   # @func00000000000005c1
+func0000000000000541:                   # @func0000000000000541
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	sh1add	a1, a2, a2
 	sh3add	a1, a1, a0
 	addi	a1, a1, -24
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000541:                   # @func0000000000000541
-	li	a3, 304
-	mul	a1, a1, a3
-	add	a0, a0, a1
-	mul	a2, a2, a3
-	add	a2, a2, a0
-	addi	a1, a2, -304
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

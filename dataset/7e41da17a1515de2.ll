@@ -222,19 +222,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; postgres/optimized/varlena.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
-entry:
-  %2 = tail call i32 @llvm.umin.i32(i32 %1, i32 1073741823)
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, 1
-  %5 = icmp ugt i64 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; opencv/optimized/termination.cpp.ll
 ; Function Attrs: nounwind
@@ -244,6 +231,18 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, 50
   %5 = icmp sgt i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.umin.i32(i32 %1, i32 255)
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %0, 5
+  %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }
 

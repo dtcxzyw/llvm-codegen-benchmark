@@ -341,7 +341,7 @@ func0000000000000148:                   // @func0000000000000148
                                         // -- End function
 func0000000000000194:                   // @func0000000000000194
 // %bb.0:                               // %entry
-	cmp	w0, #48
+	cmp	w0, #52
 	ccmp	w1, w2, #0, hs
 	cset	w0, ne
 	ret

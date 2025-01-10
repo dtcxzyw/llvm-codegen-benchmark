@@ -1,8 +1,10 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/angle.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/camera_calibration.cpp.ll
 ; sentencepiece/optimized/builder.cc.ll
@@ -10,7 +12,7 @@
 define i32 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 3
+  %4 = ashr exact i64 %3, 5
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 %0)
   %6 = trunc i64 %5 to i32
   ret i32 %6

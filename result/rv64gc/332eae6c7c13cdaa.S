@@ -10,16 +10,16 @@ func0000000000000284:                   # @func0000000000000284
 	addiw	a0, a0, -1
 	sltiu	a0, a0, 15
 	ret
-func0000000000000204:                   # @func0000000000000204
-	slli	a1, a1, 1
-	add	a0, a0, a1
-	addiw	a0, a0, -1
-	sltiu	a0, a0, 15
-	ret
 func00000000000002a4:                   # @func00000000000002a4
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addiw	a0, a0, 999
+	sltiu	a0, a0, 15
+	ret
+func0000000000000204:                   # @func0000000000000204
+	slli	a1, a1, 1
+	add	a0, a0, a1
+	addiw	a0, a0, -1
 	sltiu	a0, a0, 15
 	ret
 func00000000000000a4:                   # @func00000000000000a4

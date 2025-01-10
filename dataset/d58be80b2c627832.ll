@@ -1,6 +1,6 @@
 
-%class.mpz.3616116 = type { i32, i8, ptr }
-%"class.ZXing::Trit.3649655" = type { i8 }
+%class.mpz.3616082 = type { i32, i8, ptr }
+%"class.ZXing::Trit.3649621" = type { i8 }
 
 ; 2 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -117,7 +117,7 @@ entry:
   %4 = add i32 %3, -1
   %5 = mul i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %class.mpz.3616116, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %class.mpz.3616082, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -130,7 +130,7 @@ entry:
   %4 = add i32 %3, 1
   %5 = mul i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %"class.ZXing::Trit.3649655", ptr %0, i64 %6
+  %7 = getelementptr %"class.ZXing::Trit.3649621", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -1,6 +1,9 @@
 
-; 1 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
+; lz4/optimized/lz4hc.c.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

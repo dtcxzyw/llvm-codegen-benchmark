@@ -183,8 +183,7 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
-; icu/optimized/alphaindex.ll
+; 29 occurrences:
 ; icu/optimized/caniter.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationruleparser.ll
@@ -193,36 +192,25 @@ entry:
 ; icu/optimized/dtfmtsym.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/esctrn.ll
-; icu/optimized/filteredbrk.ll
 ; icu/optimized/locutil.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfrule.ll
 ; icu/optimized/nfsubs.ll
-; icu/optimized/number_longnames.ll
-; icu/optimized/numfmt.ll
 ; icu/optimized/plurfmt.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_pars.ll
-; icu/optimized/rbt_rule.ll
 ; icu/optimized/region.ll
 ; icu/optimized/reslist.ll
-; icu/optimized/selfmt.ll
 ; icu/optimized/servlk.ll
 ; icu/optimized/smpdtfmt.ll
-; icu/optimized/timezone.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/transreg.ll
 ; icu/optimized/tridpars.ll
-; icu/optimized/tzfmt.ll
-; icu/optimized/tzgnames.ll
-; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/uniset.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/uprops.ll
-; icu/optimized/uspoof_conf.ll
 ; icu/optimized/vtzone.ll
 ; icu/optimized/xmlparser.ll
 ; Function Attrs: nounwind

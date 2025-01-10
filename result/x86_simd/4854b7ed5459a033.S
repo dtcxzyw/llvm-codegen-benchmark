@@ -69,14 +69,3 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
-.LCPI5_0:
-	.quad	96                              # 0x60
-.LCPI5_1:
-	.quad	128                             # 0x80
-func0000000000000015:                   # @func0000000000000015
-	vptestnmb	%xmm2, %xmm2, %k1
-	vpbroadcastq	.LCPI5_0(%rip), %ymm2   # ymm2 = [96,96,96,96]
-	vpbroadcastq	.LCPI5_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [128,128,128,128]
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	retq

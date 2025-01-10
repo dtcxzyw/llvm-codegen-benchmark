@@ -1,9 +1,9 @@
 
-%struct.vhost_virtqueue.2705977 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, %struct.EventNotifier.2705978, ptr }
-%struct.EventNotifier.2705978 = type { i32, i32, i8 }
-%struct.OnigMatchParamStruct.2710352 = type { i32, i64, i64, ptr, ptr, ptr, i32, ptr, i32 }
-%"class.btConvexHullComputer::Edge.2817933" = type { i32, i32, i32 }
-%struct.Gia_Obj_t_.2876669 = type <{ i64, i32 }>
+%struct.vhost_virtqueue.2705943 = type { i32, i32, ptr, ptr, ptr, i32, i64, i32, i64, i32, i64, i32, %struct.EventNotifier.2705944, %struct.EventNotifier.2705944, %struct.EventNotifier.2705944, ptr }
+%struct.EventNotifier.2705944 = type { i32, i32, i8 }
+%struct.OnigMatchParamStruct.2710318 = type { i32, i64, i64, ptr, ptr, ptr, i32, ptr, i32 }
+%"class.btConvexHullComputer::Edge.2817899" = type { i32, i32, i32 }
+%struct.Gia_Obj_t_.2876635 = type <{ i64, i32 }>
 
 ; 2 occurrences:
 ; qemu/optimized/hw_virtio_vhost.c.ll
@@ -12,8 +12,8 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.vhost_virtqueue.2705977, ptr %1, i64 %3
-  %5 = getelementptr %struct.vhost_virtqueue.2705977, ptr %4, i64 %0, i32 12
+  %4 = getelementptr %struct.vhost_virtqueue.2705943, ptr %1, i64 %3
+  %5 = getelementptr %struct.vhost_virtqueue.2705943, ptr %4, i64 %0, i32 12
   ret ptr %5
 }
 
@@ -39,7 +39,7 @@ define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %struct.OnigMatchParamStruct.2710352, ptr %4, i64 %0, i32 7
+  %5 = getelementptr nusw nuw %struct.OnigMatchParamStruct.2710318, ptr %4, i64 %0, i32 7
   ret ptr %5
 }
 
@@ -141,8 +141,8 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %1, i64 %3
-  %5 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %4, i64 %0, i32 2
+  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %1, i64 %3
+  %5 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %4, i64 %0, i32 2
   ret ptr %5
 }
 
@@ -154,8 +154,8 @@ entry:
 define ptr @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876669, ptr %1, i64 %3
-  %5 = getelementptr %struct.Gia_Obj_t_.2876669, ptr %4, i64 %0, i32 1
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2876635, ptr %1, i64 %3
+  %5 = getelementptr %struct.Gia_Obj_t_.2876635, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

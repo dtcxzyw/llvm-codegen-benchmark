@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/trace_uprobe.ll
 ; postgres/optimized/ts_parse.ll
 ; postgres/optimized/tsquery.ll
 ; postgres/optimized/tsvector.ll
-; qemu/optimized/block_vvfat.c.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {

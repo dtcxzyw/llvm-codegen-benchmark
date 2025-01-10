@@ -1,7 +1,7 @@
 
-%class.BasicObjectLock.2744930 = type { %class.BasicLock.2744931, ptr }
-%class.BasicLock.2744931 = type { %class.markWord.2744932 }
-%class.markWord.2744932 = type { i64 }
+%class.BasicObjectLock.2744896 = type { %class.BasicLock.2744897, ptr }
+%class.BasicLock.2744897 = type { %class.markWord.2744898 }
+%class.markWord.2744898 = type { i64 }
 
 ; 13 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -23,7 +23,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %class.BasicObjectLock.2744930, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.BasicObjectLock.2744896, ptr %0, i64 %5
   %7 = getelementptr nusw i64, ptr %6, i64 %4
   ret ptr %7
 }

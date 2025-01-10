@@ -1,7 +1,7 @@
 
-%"struct.asmjit::_abi_1_10::Operand_.2604140" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604128", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2604128" = type { i32 }
-%struct.erf_ehdr.3438196 = type { i64 }
+%"struct.asmjit::_abi_1_10::Operand_.2604107" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604095", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2604095" = type { i32 }
+%struct.erf_ehdr.3438162 = type { i64 }
 
 ; 15 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
@@ -26,7 +26,7 @@ entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %6 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604140"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604107"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -72,7 +72,7 @@ entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr [16 x %struct.erf_ehdr.3438196], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [16 x %struct.erf_ehdr.3438162], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

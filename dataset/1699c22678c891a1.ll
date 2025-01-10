@@ -338,6 +338,16 @@ entry:
   ret i1 %3
 }
 
+; 1 occurrences:
+; llvm/optimized/MCELFStreamer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i8 %1, -1
+  %3 = icmp ne i8 %0, %2
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll

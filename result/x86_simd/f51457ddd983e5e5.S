@@ -44,25 +44,3 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.quad	0x7fffffffffffffff              # double NaN
-.LCPI2_1:
-	.quad	0x402921fb54442d18              # double 12.566370614359172
-func0000000000000055:                   # @func0000000000000055
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k0
-	vbroadcastsd	.LCPI2_0(%rip), %zmm0   # zmm0 = [NaN,NaN,NaN,NaN,NaN,NaN,NaN,NaN]
-	vandpd	%zmm0, %zmm4, %zmm4
-	vandpd	%zmm0, %zmm3, %zmm0
-	vbroadcastsd	.LCPI2_1(%rip), %zmm3   # zmm3 = [1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1,1.2566370614359172E+1]
-	vcmpnlepd	%zmm3, %zmm0, %k1
-	vcmpnlepd	%zmm3, %zmm4, %k2
-	kunpckbw	%k1, %k2, %k1
-	vcmpnlepd	%zmm3, %zmm1, %k2
-	vcmpnlepd	%zmm3, %zmm2, %k3
-	kunpckbw	%k2, %k3, %k2
-	korw	%k0, %k2, %k0
-	korw	%k1, %k0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

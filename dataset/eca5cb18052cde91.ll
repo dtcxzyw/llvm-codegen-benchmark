@@ -15,18 +15,6 @@ entry:
 }
 
 ; 1 occurrences:
-; clamav/optimized/xlm_extract.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = or i16 %1, %2
-  %4 = zext i16 %3 to i32
-  %5 = add nsw i32 %0, -3
-  %6 = icmp slt i32 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000106(i32 %0, i16 %1, i16 %2) #0 {

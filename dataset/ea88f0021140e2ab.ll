@@ -1,14 +1,10 @@
 
-; 31 occurrences:
+; 26 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/cpio.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ich8lan.ll
@@ -26,7 +22,6 @@
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_scsi_esp.c.ll
 ; quickjs/optimized/libunicode.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll

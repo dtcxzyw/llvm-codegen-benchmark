@@ -1,15 +1,15 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
-%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
-%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
-%"struct.std::__atomic_base.108.2637633" = type { i64 }
-%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
-%"struct.std::__atomic_base.110.2637634" = type { ptr }
-%"struct.pb2bv_tactic::imp::monomial.3628799" = type { %class.rational.3628800, %"struct.pb2bv_tactic::imp::lit.3628801" }
-%class.rational.3628800 = type { %class.mpq.3628802 }
-%class.mpq.3628802 = type { %class.mpz.3628803, %class.mpz.3628803 }
-%class.mpz.3628803 = type { i32, i8, ptr }
-%"struct.pb2bv_tactic::imp::lit.3628801" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637597", %"struct.std::atomic.109.2637598" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637597" = type { %"struct.std::atomic.107.2637599" }
+%"struct.std::atomic.107.2637599" = type { %"struct.std::__atomic_base.108.2637600" }
+%"struct.std::__atomic_base.108.2637600" = type { i64 }
+%"struct.std::atomic.109.2637598" = type { %"struct.std::__atomic_base.110.2637601" }
+%"struct.std::__atomic_base.110.2637601" = type { ptr }
+%"struct.pb2bv_tactic::imp::monomial.3628765" = type { %class.rational.3628766, %"struct.pb2bv_tactic::imp::lit.3628767" }
+%class.rational.3628766 = type { %class.mpq.3628768 }
+%class.mpq.3628768 = type { %class.mpz.3628769, %class.mpz.3628769 }
+%class.mpz.3628769 = type { i32, i8, ptr }
+%"struct.pb2bv_tactic::imp::lit.3628767" = type { ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/date_parse.ll
@@ -114,7 +114,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = sub i64 %1, %3
-  %5 = getelementptr %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -205,7 +205,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775806
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -216,7 +216,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw %"struct.pb2bv_tactic::imp::monomial.3628799", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.pb2bv_tactic::imp::monomial.3628765", ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 40
   ret ptr %6
 }

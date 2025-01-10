@@ -1,6 +1,6 @@
 
-%"class.clang::detail::CXXOperatorIdName.3162592" = type { i32, ptr }
-%"class.clang::detail::CXXOperatorIdName.3224061" = type { i32, ptr }
+%"class.clang::detail::CXXOperatorIdName.3162558" = type { i32, ptr }
+%"class.clang::detail::CXXOperatorIdName.3224027" = type { i32, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/rhashtable.ll
@@ -43,7 +43,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 17384
-  %3 = getelementptr nusw [46 x %"class.clang::detail::CXXOperatorIdName.3162592"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw [46 x %"class.clang::detail::CXXOperatorIdName.3162558"], ptr %2, i64 0, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = or disjoint i64 %4, 6
   ret i64 %5
@@ -58,7 +58,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 17384
-  %3 = getelementptr nusw nuw [46 x %"class.clang::detail::CXXOperatorIdName.3224061"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [46 x %"class.clang::detail::CXXOperatorIdName.3224027"], ptr %2, i64 0, i64 %0
   %4 = ptrtoint ptr %3 to i64
   %5 = or disjoint i64 %4, 6
   ret i64 %5

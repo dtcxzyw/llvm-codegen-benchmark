@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; hermes/optimized/zip.c.ll
@@ -34,6 +34,7 @@
 ; protobuf/optimized/import_writer.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/cache.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; slurm/optimized/gres_ctld.ll
 ; slurm/optimized/slurm_protocol_defs.ll

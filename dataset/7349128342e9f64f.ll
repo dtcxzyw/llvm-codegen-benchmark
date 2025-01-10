@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; git/optimized/kwset.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
@@ -10,7 +10,6 @@
 ; oiio/optimized/hdrinput.cpp.ll
 ; opencv/optimized/rgbe.cpp.ll
 ; ruby/optimized/regexec.ll
-; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i8 %2) #0 {
@@ -303,17 +302,6 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = sub nsw i64 %0, %1
   %5 = icmp slt i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cmake/optimized/archive_read_support_filter_uu.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i64
-  %4 = sub nsw i64 %0, %1
-  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 

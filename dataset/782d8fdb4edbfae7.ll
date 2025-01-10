@@ -286,6 +286,18 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; git/optimized/bitmap.ll
+; git/optimized/line-log.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 %0)
+  %4 = shl nuw nsw i64 %3, 4
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; git/optimized/midx.ll
 ; Function Attrs: nounwind
@@ -297,23 +309,13 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; git/optimized/bitmap.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = tail call i64 @llvm.umax.i64(i64 %0, i64 %2)
-  %4 = shl nuw nsw i64 %3, 3
-  ret i64 %4
-}
-
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/cmddata.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; grpc/optimized/parser.cc.ll
 ; libevent/optimized/event.c.ll
 ; libquic/optimized/quic_packet_creator.cc.ll
+; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

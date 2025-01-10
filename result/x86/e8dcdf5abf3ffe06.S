@@ -1,11 +1,8 @@
-func0000000000000001:                   # @func0000000000000001
-	andb	$1, %dil
-	xorl	%eax, %eax
-	negb	%dil
-	sbbl	%eax, %eax
-	orl	%esi, %eax
-	movl	$1, %ecx
-	subl	%edx, %ecx
-	cmpl	%ecx, %eax
-	sete	%al
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %sil
+	movl	$1, %eax
+	cmovel	%edx, %eax
+	leal	4(%rdi,%rax), %eax
+	cmpl	$128, %eax
+	setb	%al
 	retq

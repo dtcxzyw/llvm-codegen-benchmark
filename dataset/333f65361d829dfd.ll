@@ -574,14 +574,13 @@ entry:
   ret i1 %3
 }
 
-; 504 occurrences:
+; 503 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll

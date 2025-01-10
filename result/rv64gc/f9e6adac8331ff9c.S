@@ -6,6 +6,14 @@ func000000000000002d:                   # @func000000000000002d
 	subw	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000028:                   # @func0000000000000028
+	addw	a1, a1, a2
+	bgtz	a1, .LBB1_2
+	li	a1, 1
+.LBB1_2:                                # %entry
+	subw	a0, a0, a1
+	addiw	a0, a0, 1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	addw	a1, a1, a2
 	sgtz	a2, a1
@@ -16,9 +24,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addw	a1, a1, a2
-	bgtz	a1, .LBB2_2
+	bgtz	a1, .LBB3_2
 	li	a1, 1
-.LBB2_2:                                # %entry
+.LBB3_2:                                # %entry
 	subw	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

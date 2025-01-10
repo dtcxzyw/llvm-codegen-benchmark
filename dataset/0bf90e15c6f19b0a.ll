@@ -1,6 +1,6 @@
 
-%"class.pbrt::Point3.3645166" = type { %"class.pbrt::Tuple3.3645167" }
-%"class.pbrt::Tuple3.3645167" = type { float, float, float }
+%"class.pbrt::Point3.3645132" = type { %"class.pbrt::Tuple3.3645133" }
+%"class.pbrt::Tuple3.3645133" = type { float, float, float }
 
 ; 4 occurrences:
 ; clamav/optimized/mbox.c.ll
@@ -66,7 +66,7 @@ define ptr @func000000000000001f(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = getelementptr nuw %"class.pbrt::Point3.3645166", ptr %4, i64 %0, i32 0, i32 2
+  %5 = getelementptr nuw %"class.pbrt::Point3.3645132", ptr %4, i64 %0, i32 0, i32 2
   ret ptr %5
 }
 
@@ -81,7 +81,7 @@ define ptr @func0000000000000010(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr %1, ptr %2
-  %5 = getelementptr %"class.pbrt::Point3.3645166", ptr %4, i64 %0
+  %5 = getelementptr %"class.pbrt::Point3.3645132", ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -12
   ret ptr %6
 }

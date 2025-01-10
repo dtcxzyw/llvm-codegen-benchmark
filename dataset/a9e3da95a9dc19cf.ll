@@ -1,6 +1,6 @@
 
-%struct.SCC2698Channel.2707064 = type { ptr, %struct.CharBackend.2707065, i8, [2 x i8], i8, i8, [3 x i8], i8, i8 }
-%struct.CharBackend.2707065 = type { ptr, ptr, ptr, ptr, ptr, ptr, i32, i32 }
+%struct.SCC2698Channel.2707030 = type { ptr, %struct.CharBackend.2707031, i8, [2 x i8], i8, i8, [3 x i8], i8, i8 }
+%struct.CharBackend.2707031 = type { ptr, ptr, ptr, ptr, ptr, ptr, i32, i32 }
 
 ; 4 occurrences:
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -32,7 +32,7 @@ entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 176
-  %5 = getelementptr [8 x %struct.SCC2698Channel.2707064], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [8 x %struct.SCC2698Channel.2707030], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%struct.Point.3654376 = type { double, double }
+%struct.Point.3654342 = type { double, double }
 
 ; 4 occurrences:
 ; libevent/optimized/evdns.c.ll
@@ -26,7 +26,7 @@ entry:
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.Point.3654376, ptr %0, i64 %6
+  %7 = getelementptr %struct.Point.3654342, ptr %0, i64 %6
   ret ptr %7
 }
 

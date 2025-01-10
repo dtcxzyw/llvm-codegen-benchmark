@@ -1,5 +1,5 @@
 
-; 680 occurrences:
+; 689 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -134,6 +134,7 @@
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-conncache.ll
 ; curl/optimized/libcurl_la-progress.ll
+; darktable/optimized/history.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
@@ -175,7 +176,9 @@
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/add-patch.ll
 ; git/optimized/diff.ll
+; git/optimized/diffcore-rename.ll
 ; git/optimized/gc.ll
+; git/optimized/merge-ort.ll
 ; git/optimized/pack-write.ll
 ; git/optimized/xdiffi.ll
 ; glslang/optimized/Constant.cpp.ll
@@ -378,6 +381,8 @@
 ; openmpi/optimized/onesided_aggregation.ll
 ; openmpi/optimized/op_base_functions.ll
 ; openmpi/optimized/opal_datatype_add.ll
+; openspiel/optimized/TransTableL.cpp.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openusd/optimized/integerCoding.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
@@ -401,11 +406,13 @@
 ; postgres/optimized/cash.ll
 ; postgres/optimized/checkpointer.ll
 ; postgres/optimized/date.ll
+; postgres/optimized/inet_net_pton.ll
 ; postgres/optimized/int8.ll
 ; postgres/optimized/nodeWindowAgg.ll
 ; postgres/optimized/pg_backup_archiver.ll
 ; postgres/optimized/pgbench.ll
 ; postgres/optimized/reconstruct.ll
+; postgres/optimized/regexp.ll
 ; postgres/optimized/zic.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -417,6 +424,7 @@
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/block_quorum.c.ll
 ; qemu/optimized/block_vmdk.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/qobject_block-qdict.c.ll
 ; qemu/optimized/system_dirtylimit.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -456,6 +464,7 @@
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/date_core.ll
+; ruby/optimized/io.ll
 ; ruby/optimized/marshal.ll
 ; ruby/optimized/memory_view.ll
 ; ruby/optimized/process.ll

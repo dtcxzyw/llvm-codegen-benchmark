@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/fxuSelect.c.ll
 ; abc/optimized/giaResub.c.ll
 ; flac/optimized/encode.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; linux/optimized/percpu.ll

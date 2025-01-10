@@ -35,10 +35,9 @@ entry:
   ret i64 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
-; boost/optimized/alloc_lib.ll
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
 ; boost/optimized/instantiate_re2c_lexer.ll
@@ -99,7 +98,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; velox/optimized/Split.cpp.ll

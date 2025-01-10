@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
 
 ; 13 occurrences:
 ; cpython/optimized/_datetimemodule.ll
@@ -96,7 +96,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 31
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

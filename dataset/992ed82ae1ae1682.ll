@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 73 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/TiffIFD.cpp.ll
@@ -67,6 +67,7 @@
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/OpenSSLCertUtils.cpp.ll
 ; folly/optimized/OpenSSLUtils.cpp.ll
+; linux/optimized/libata-core.ll
 ; minetest/optimized/httpfetch.cpp.ll
 ; minetest/optimized/mesh_generator_thread.cpp.ll
 ; minetest/optimized/shader.cpp.ll
@@ -158,9 +159,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
-; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:

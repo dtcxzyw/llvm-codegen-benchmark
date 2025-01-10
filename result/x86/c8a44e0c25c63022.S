@@ -60,6 +60,11 @@ func0000000000000074:                   # @func0000000000000074
 	cmpl	$255, %esi
 	setb	%al
 	retq
+func0000000000000078:                   # @func0000000000000078
+	subl	%edi, %esi
+	cmpl	$2, %esi
+	setae	%al
+	retq
 func00000000000000e1:                   # @func00000000000000e1
 	subl	%edi, %esi
 	cmpl	$4096, %esi                     # imm = 0x1000
@@ -90,7 +95,7 @@ func000000000000006c:                   # @func000000000000006c
 func00000000000000aa:                   # @func00000000000000aa
 	movl	%esi, %eax
 	subq	%rdi, %rax
-	cmpq	$-1, %rax
+	cmpq	$2, %rax
 	setge	%al
 	retq
 func000000000000002c:                   # @func000000000000002c
@@ -109,11 +114,6 @@ func000000000000000a:                   # @func000000000000000a
 	subq	%rdi, %rax
 	testq	%rax, %rax
 	setg	%al
-	retq
-func0000000000000078:                   # @func0000000000000078
-	subl	%edi, %esi
-	cmpl	$2, %esi
-	setae	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%esi, %eax

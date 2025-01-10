@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 97 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; crow/optimized/example.cpp.ll
@@ -43,6 +43,7 @@
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

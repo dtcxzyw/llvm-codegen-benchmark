@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
@@ -11,7 +11,6 @@
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
 ; clamav/optimized/hashtab.c.ll
 ; cmake/optimized/deflate.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cpython/optimized/longobject.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/lz77.c.ll
@@ -42,7 +41,6 @@
 ; wolfssl/optimized/rsa.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; zlib/optimized/deflate.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

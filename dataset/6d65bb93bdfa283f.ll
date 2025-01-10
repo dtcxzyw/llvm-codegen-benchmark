@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
 ; coreutils-rs/optimized/2ph6t6nh0hmjeejh.ll
-; cpython/optimized/action_helpers.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; diesel-rs/optimized/2nqojkvzec127ieh.ll
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll

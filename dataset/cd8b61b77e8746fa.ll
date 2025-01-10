@@ -1,5 +1,5 @@
 
-%struct.bts_phys.3539772 = type { ptr, i64, i64, i64 }
+%struct.bts_phys.3539738 = type { ptr, i64, i64, i64 }
 
 ; 12 occurrences:
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -80,7 +80,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr [0 x %struct.bts_phys.3539772], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.bts_phys.3539738], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

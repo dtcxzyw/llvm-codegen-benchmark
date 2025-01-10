@@ -8,6 +8,11 @@ func000000000000000c:                   # @func000000000000000c
 	vpsllq	$8, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
+func000000000000000e:                   # @func000000000000000e
+	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
+	vpsllq	$8, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
 func000000000000000f:                   # @func000000000000000f
 	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
 	vpsllq	$2, %ymm1, %ymm1

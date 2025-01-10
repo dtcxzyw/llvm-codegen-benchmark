@@ -1,5 +1,5 @@
 
-; 460 occurrences:
+; 461 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -353,6 +353,7 @@
 ; postgres/optimized/typcache.ll
 ; postgres/optimized/vacuumparallel.ll
 ; postgres/optimized/varbit.ll
+; postgres/optimized/varlena.ll
 ; postgres/optimized/visibilitymap.ll
 ; postgres/optimized/walreceiverfuncs.ll
 ; postgres/optimized/walsender.ll
@@ -608,7 +609,7 @@ entry:
   ret i64 %3
 }
 
-; 121 occurrences:
+; 122 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -659,6 +660,7 @@ entry:
 ; folly/optimized/json_patch.cpp.ll
 ; git/optimized/bitmap.ll
 ; git/optimized/commit-graph.ll
+; git/optimized/line-log.ll
 ; git/optimized/pretty.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll

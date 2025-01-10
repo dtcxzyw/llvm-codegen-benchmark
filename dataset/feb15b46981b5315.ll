@@ -1,9 +1,7 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; clamav/optimized/special.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; ruby/optimized/thread.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
 entry:

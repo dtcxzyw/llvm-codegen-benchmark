@@ -1,8 +1,8 @@
 
-%"class.mold::LittleEndian.2666054" = type { [4 x i8] }
-%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
-%union.Value.2923858 = type { ptr }
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%"class.mold::LittleEndian.2666021" = type { [4 x i8] }
+%struct.lua_TValue.2923823 = type { %union.Value.2923824, [1 x i32], i32 }
+%union.Value.2923824 = type { ptr }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 115 occurrences:
 ; abc/optimized/giaMf.c.ll
@@ -312,7 +312,7 @@ entry:
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2666054", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2666021", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -357,10 +357,10 @@ entry:
 define ptr @func00000000000000fc(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.lua_TValue.2923823, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr %struct.lua_TValue.2923857, ptr %5, i64 %6
+  %7 = getelementptr %struct.lua_TValue.2923823, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -397,7 +397,7 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 48
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr %struct.bio_vec.3550063, ptr %5, i64 %6
+  %7 = getelementptr %struct.bio_vec.3550029, ptr %5, i64 %6
   ret ptr %7
 }
 

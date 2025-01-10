@@ -1,8 +1,10 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; icu/optimized/number_simple.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000087(ptr %0, i32 %1) #0 {

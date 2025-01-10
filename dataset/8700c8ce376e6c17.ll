@@ -662,7 +662,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/ivyMulti.c.ll
 ; clamav/optimized/pe.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -677,12 +677,10 @@ entry:
 ; gromacs/optimized/localtopologychecker.cpp.ll
 ; icu/optimized/ucmstate.ll
 ; lvgl/optimized/lv_table.ll
-; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/multiheadattention.cpp.ll
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; proxygen/optimized/QPACKDecoder.cpp.ll
-; raylib/optimized/raudio.c.ll
 ; slurm/optimized/pack.ll
 ; yosys/optimized/simplemap.ll
 ; Function Attrs: nounwind
@@ -730,7 +728,7 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -740,11 +738,8 @@ entry:
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.crypto_cipher.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
@@ -755,12 +750,10 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/packet-http3.c.ll
 ; Function Attrs: nounwind
@@ -809,10 +802,8 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; linux/optimized/build_policy.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0, i32 %1) #0 {

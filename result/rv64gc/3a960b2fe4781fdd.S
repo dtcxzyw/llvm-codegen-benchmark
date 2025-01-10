@@ -3,6 +3,12 @@ func0000000000000026:                   # @func0000000000000026
 	slti	a1, a1, 22
 	and	a0, a0, a1
 	ret
+func0000000000000104:                   # @func0000000000000104
+	add	a1, a1, a2
+	srliw	a1, a1, 12
+	seqz	a1, a1
+	and	a0, a0, a1
+	ret
 func00000000000001aa:                   # @func00000000000001aa
 	addw	a1, a1, a2
 	slti	a1, a1, 0

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/kwajd.c.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/DbiStream.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lvgl/optimized/lv_binfont_loader.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stackMapTable.ll

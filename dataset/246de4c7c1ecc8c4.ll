@@ -1,6 +1,6 @@
 
-%"struct.pxrInternal_v0_24__pxrReserved__::HgiMipInfo.3393890" = type { i64, %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3393891", i64 }
-%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3393891" = type { [3 x i32] }
+%"struct.pxrInternal_v0_24__pxrReserved__::HgiMipInfo.3393856" = type { i64, %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3393857", i64 }
+%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3393857" = type { [3 x i32] }
 
 ; 3 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -37,7 +37,22 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::HgiMipInfo.3393890", ptr %0, i64 %4
+  %5 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::HgiMipInfo.3393856", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

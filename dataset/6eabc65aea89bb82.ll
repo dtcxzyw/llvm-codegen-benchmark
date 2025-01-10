@@ -1,5 +1,5 @@
 
-%struct.ImVec2.3454338 = type { float, float }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 9 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
@@ -95,8 +95,8 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %5
-  %7 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %6, i64 %4
+  %6 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %6, i64 %4
   ret ptr %7
 }
 

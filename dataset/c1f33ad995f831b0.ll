@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 146 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -143,6 +143,7 @@
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind

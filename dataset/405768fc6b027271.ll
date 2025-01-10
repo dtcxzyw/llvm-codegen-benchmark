@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -8,7 +8,6 @@
 ; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/ucase.ll
-; icu/optimized/ushape.ll
 ; libevent/optimized/http.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/af_inet6.ll
@@ -61,7 +60,7 @@ entry:
   ret i1 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; cmake/optimized/fty_int.c.ll
 ; cmake/optimized/fty_ipv4.c.ll
@@ -78,7 +77,6 @@ entry:
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/pci.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll

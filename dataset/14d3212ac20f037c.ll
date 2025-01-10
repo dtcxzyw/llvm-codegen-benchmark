@@ -543,8 +543,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 2 occurrences:
 ; linux/optimized/sparse-vmemmap.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; Function Attrs: nounwind
@@ -575,6 +574,17 @@ entry:
   %3 = lshr i64 %2, 6
   %4 = add nsw i64 %3, %1
   %5 = icmp eq i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr exact i64 %2, 3
+  %4 = add nuw nsw i64 %3, %1
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 

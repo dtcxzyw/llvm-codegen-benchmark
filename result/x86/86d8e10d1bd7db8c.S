@@ -20,11 +20,9 @@ func000000000000020a:                   # @func000000000000020a
 	setge	%al
 	retq
 func00000000000000aa:                   # @func00000000000000aa
-	shll	$3, %esi
-	subl	%esi, %edi
-	addl	$8, %edi
-	cmpl	$8, %edi
-	setge	%al
+	leal	-8(,%rsi,8), %eax
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func0000000000000301:                   # @func0000000000000301
 	shll	$6, %esi

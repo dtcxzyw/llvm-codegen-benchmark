@@ -18,10 +18,3 @@ func000000000000000b:                   # @func000000000000000b
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpternlogd	$86, %ymm2, %ymm1, %ymm0 # ymm0 = ymm2 ^ (ymm0 | ymm1)
 	retq
-.LCPI3_0:
-	.long	4                               # 0x4
-func0000000000000003:                   # @func0000000000000003
-	vpslld	$4, %ymm2, %ymm2
-	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogd	$86, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = mem ^ (ymm0 | ymm1)
-	retq

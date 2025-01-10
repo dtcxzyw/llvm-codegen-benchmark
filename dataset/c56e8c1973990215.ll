@@ -1,5 +1,5 @@
 
-%struct.rect2.2777360 = type { i32, i32, i32, i32 }
+%struct.rect2.2777326 = type { i32, i32, i32, i32 }
 
 ; 3 occurrences:
 ; freetype/optimized/pcf.c.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.umin.i32(i32 %1, i32 65536)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.rect2.2777360, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.rect2.2777326, ptr %0, i64 %3
   ret ptr %4
 }
 

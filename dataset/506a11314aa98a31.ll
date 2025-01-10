@@ -1,9 +1,9 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
-%struct.pid_entry.3535419 = type { ptr, i32, i16, ptr, ptr, %union.proc_op.3535420 }
-%union.proc_op.3535420 = type { ptr }
-%union.ListCell.3651460 = type { ptr }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
+%struct.pid_entry.3535385 = type { ptr, i32, i16, ptr, ptr, %union.proc_op.3535386 }
+%union.proc_op.3535386 = type { ptr }
+%union.ListCell.3651426 = type { ptr }
 
 ; 2 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
@@ -12,8 +12,8 @@
 define i1 @func00000000000007e4(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   %7 = icmp ult ptr %6, %4
   ret i1 %7
@@ -60,8 +60,8 @@ entry:
 define i1 @func0000000000000804(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.pid_entry.3535419, ptr %0, i64 %3
-  %5 = getelementptr %struct.pid_entry.3535419, ptr %0, i64 %1
+  %4 = getelementptr %struct.pid_entry.3535385, ptr %0, i64 %3
+  %5 = getelementptr %struct.pid_entry.3535385, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -80
   %7 = icmp ult ptr %6, %4
   ret i1 %7
@@ -106,8 +106,8 @@ entry:
 define i1 @func0000000000000809(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %union.ListCell.3651460, ptr %0, i64 %3
-  %5 = getelementptr %union.ListCell.3651460, ptr %0, i64 %1
+  %4 = getelementptr %union.ListCell.3651426, ptr %0, i64 %3
+  %5 = getelementptr %union.ListCell.3651426, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
   %7 = icmp uge ptr %6, %4
   ret i1 %7

@@ -1,5 +1,5 @@
 
-%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
+%"struct.llvm::reassociate::ValueEntry.3349310" = type { i32, ptr }
 
 ; 18 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -38,7 +38,7 @@ define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349310", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

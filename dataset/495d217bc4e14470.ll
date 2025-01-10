@@ -1,11 +1,12 @@
 
-; 38 occurrences:
+; 40 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cpython/optimized/lexer.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/dlasdq.cpp.ll
 ; gromacs/optimized/slasdq.cpp.ll
+; hwloc/optimized/hwloc-bind.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -35,6 +36,7 @@
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; openjdk/optimized/jcmaster.ll
+; openssl/optimized/openssl-bin-x509.ll
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -106,7 +108,7 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/sequencer.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -116,6 +118,7 @@ entry:
 ; openjdk/optimized/jni.ll
 ; php/optimized/pcre2_match.ll
 ; raylib/optimized/rtext.c.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {

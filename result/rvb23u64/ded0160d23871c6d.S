@@ -27,14 +27,6 @@ func000000000000028c:                   # @func000000000000028c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000581:                   # @func0000000000000581
-	andi	a0, a0, 255
-	sext.w	a2, a2
-	xor	a1, a1, a2
-	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
-	ret
 func0000000000000684:                   # @func0000000000000684
 	andi	a0, a0, 255
 	sext.w	a2, a2

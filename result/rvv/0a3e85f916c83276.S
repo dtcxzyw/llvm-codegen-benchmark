@@ -6,6 +6,15 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 16
 	vadd.vx	v8, v8, a0
 	ret
+func0000000000000002:                   # @func0000000000000002
+	li	a0, 39
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vand.vi	v10, v10, -16
+	vadd.vv	v8, v8, v10
+	li	a0, 17
+	vadd.vx	v8, v8, a0
+	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -88,15 +97,6 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 15
-	vand.vi	v10, v10, -16
-	vadd.vv	v8, v8, v10
-	li	a0, 17
-	vadd.vx	v8, v8, a0
-	ret
-func0000000000000002:                   # @func0000000000000002
-	li	a0, 19
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
 	vand.vi	v10, v10, -16
 	vadd.vv	v8, v8, v10
 	li	a0, 17

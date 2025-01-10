@@ -1,7 +1,7 @@
 
-%struct.HDAAudioStream.2709235 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709236, %union.anon.0.2709237, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
-%struct.audsettings.2709236 = type { i32, i32, i32, i32 }
-%union.anon.0.2709237 = type { ptr }
+%struct.HDAAudioStream.2709201 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709202, %union.anon.0.2709203, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
+%struct.audsettings.2709202 = type { i32, i32, i32, i32 }
+%union.anon.0.2709203 = type { ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_audio_hda-codec.c.ll
@@ -9,7 +9,7 @@
 define ptr @func0000000000000033(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 216
-  %4 = getelementptr %struct.HDAAudioStream.2709235, ptr %3, i64 %0
+  %4 = getelementptr %struct.HDAAudioStream.2709201, ptr %3, i64 %0
   %5 = select i1 %1, i64 36, i64 32
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6

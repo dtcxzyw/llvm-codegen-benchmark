@@ -30,11 +30,6 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$63, %esi
 	setb	%al
 	retq
-func0000000000000126:                   # @func0000000000000126
-	incl	%esi
-	cmpl	%edi, %esi
-	setl	%al
-	retq
 func00000000000000aa:                   # @func00000000000000aa
 	addl	$-13, %esi
 	cmpl	%edi, %esi

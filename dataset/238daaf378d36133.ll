@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -32,7 +32,6 @@
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/PPCaching.cpp.ll
-; lua/optimized/ldebug.ll
 ; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/accum.cpp.ll

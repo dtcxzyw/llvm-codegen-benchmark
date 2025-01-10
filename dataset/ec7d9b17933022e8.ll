@@ -1,7 +1,7 @@
 
-%"struct.duckdb::string_t.2962917" = type { %union.anon.73.2962918 }
-%union.anon.73.2962918 = type { %struct.anon.2962919 }
-%struct.anon.2962919 = type { i32, [4 x i8], ptr }
+%"struct.duckdb::string_t.2962883" = type { %union.anon.73.2962884 }
+%union.anon.73.2962884 = type { %struct.anon.2962885 }
+%struct.anon.2962885 = type { i32, [4 x i8], ptr }
 
 ; 2 occurrences:
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
@@ -129,7 +129,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw %"struct.duckdb::string_t.2962917", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.duckdb::string_t.2962883", ptr %0, i64 %4
   ret ptr %5
 }
 

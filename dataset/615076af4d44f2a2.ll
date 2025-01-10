@@ -1,5 +1,40 @@
 
-%"class.boost::thread_specific_ptr.3044669" = type { ptr }
+%"class.boost::thread_specific_ptr.3044635" = type { ptr }
+
+; 24 occurrences:
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; draco/optimized/obj_decoder.cc.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
+; llvm/optimized/InstrProfReader.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LiveIntervalUnion.cpp.ll
+; llvm/optimized/NativeSession.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw nuw [3 x i64], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
 
 ; 2 occurrences:
 ; clamav/optimized/timefn.cpp.ll
@@ -39,40 +74,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [5 x %"class.boost::thread_specific_ptr.3044669"], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 22 occurrences:
-; actix-rs/optimized/22x16e3cd4musvfe.ll
-; actix-rs/optimized/559mdouync0xx14h.ll
-; actix-rs/optimized/u8tt4f5khiooymn.ll
-; draco/optimized/obj_decoder.cc.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DWARFVerifier.cpp.ll
-; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LiveIntervalUnion.cpp.ll
-; llvm/optimized/NativeSession.cpp.ll
-; llvm/optimized/SplitKit.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 64
-  %4 = select i1 %3, i32 0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [16 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [5 x %"class.boost::thread_specific_ptr.3044635"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

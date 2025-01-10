@@ -1,36 +1,36 @@
 
-%"struct.rocksdb::CompactionInputFiles.2615152" = type { i32, %"class.std::vector.47.2615153", %"class.std::vector.531.2615154" }
-%"class.std::vector.47.2615153" = type { %"struct.std::_Vector_base.48.2615155" }
-%"struct.std::_Vector_base.48.2615155" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615156" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615156" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615157" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615157" = type { ptr, ptr, ptr }
-%"class.std::vector.531.2615154" = type { %"struct.std::_Vector_base.532.2615158" }
-%"struct.std::_Vector_base.532.2615158" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2615159" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2615159" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2615160" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2615160" = type { ptr, ptr, ptr }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
-%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
-%"struct.rocksdb::SstFileMetaData.2623963" = type { %"struct.rocksdb::FileStorageInfo.2623964", i64, i64, %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937", i64, i8, i64, i64, i64, i64, i64, i64, %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937" }
-%"struct.rocksdb::FileStorageInfo.2623964" = type { %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937", i64, i32, i64, i8, %"class.std::__cxx11::basic_string.2623937", %"class.std::__cxx11::basic_string.2623937" }
-%"class.std::__cxx11::basic_string.2623937" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2623938", i64, %union.anon.2623939 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2623938" = type { ptr }
-%union.anon.2623939 = type { i64, [8 x i8] }
-%"struct.mold::elf::ElfRel.2637204" = type { %"class.mold::LittleEndian.3.2637186", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.2637169", %"class.mold::LittleEndian.245.2637205" }
-%"class.mold::LittleEndian.3.2637186" = type { [8 x i8] }
-%"class.mold::LittleEndian.2637169" = type { [4 x i8] }
-%"class.mold::LittleEndian.245.2637205" = type { [8 x i8] }
-%"struct.mold::elf::ElfSym.2638306" = type { %"class.mold::LittleEndian.2638307", %"class.mold::LittleEndian.2638307", %"class.mold::LittleEndian.2638307", i16, %"class.mold::LittleEndian.320.2638308" }
-%"class.mold::LittleEndian.2638307" = type { [4 x i8] }
-%"class.mold::LittleEndian.320.2638308" = type { [2 x i8] }
-%"struct.mold::elf::ElfRel.2647466" = type { %"class.mold::LittleEndian.2647451", i8, %"class.mold::LittleEndian.3.2647467" }
-%"class.mold::LittleEndian.2647451" = type { [4 x i8] }
-%"class.mold::LittleEndian.3.2647467" = type { [3 x i8] }
-%struct.hunk.2884460 = type { i64, i64, i64, i64, i64, i64, i32, %struct.hunk_header.2884461 }
-%struct.hunk_header.2884461 = type { i64, i64, i64, i64, i64, i64, i64, i64, i8 }
+%"struct.rocksdb::CompactionInputFiles.2615119" = type { i32, %"class.std::vector.47.2615120", %"class.std::vector.531.2615121" }
+%"class.std::vector.47.2615120" = type { %"struct.std::_Vector_base.48.2615122" }
+%"struct.std::_Vector_base.48.2615122" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615123" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2615123" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615124" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2615124" = type { ptr, ptr, ptr }
+%"class.std::vector.531.2615121" = type { %"struct.std::_Vector_base.532.2615125" }
+%"struct.std::_Vector_base.532.2615125" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2615126" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2615126" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2615127" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2615127" = type { ptr, ptr, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"struct.rocksdb::FdWithKeyRange.2615345" = type { %"struct.rocksdb::FileDescriptor.2615346", ptr, %"class.rocksdb::Slice.2615314", %"class.rocksdb::Slice.2615314" }
+%"struct.rocksdb::FileDescriptor.2615346" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615314" = type { ptr, i64 }
+%"struct.rocksdb::SstFileMetaData.2623930" = type { %"struct.rocksdb::FileStorageInfo.2623931", i64, i64, %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904", i64, i8, i64, i64, i64, i64, i64, i64, %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904" }
+%"struct.rocksdb::FileStorageInfo.2623931" = type { %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904", i64, i32, i64, i8, %"class.std::__cxx11::basic_string.2623904", %"class.std::__cxx11::basic_string.2623904" }
+%"class.std::__cxx11::basic_string.2623904" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2623905", i64, %union.anon.2623906 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2623905" = type { ptr }
+%union.anon.2623906 = type { i64, [8 x i8] }
+%"struct.mold::elf::ElfRel.2637171" = type { %"class.mold::LittleEndian.3.2637153", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.2637136", %"class.mold::LittleEndian.245.2637172" }
+%"class.mold::LittleEndian.3.2637153" = type { [8 x i8] }
+%"class.mold::LittleEndian.2637136" = type { [4 x i8] }
+%"class.mold::LittleEndian.245.2637172" = type { [8 x i8] }
+%"struct.mold::elf::ElfSym.2638273" = type { %"class.mold::LittleEndian.2638274", %"class.mold::LittleEndian.2638274", %"class.mold::LittleEndian.2638274", i16, %"class.mold::LittleEndian.320.2638275" }
+%"class.mold::LittleEndian.2638274" = type { [4 x i8] }
+%"class.mold::LittleEndian.320.2638275" = type { [2 x i8] }
+%"struct.mold::elf::ElfRel.2647433" = type { %"class.mold::LittleEndian.2647418", i8, %"class.mold::LittleEndian.3.2647434" }
+%"class.mold::LittleEndian.2647418" = type { [4 x i8] }
+%"class.mold::LittleEndian.3.2647434" = type { [3 x i8] }
+%struct.hunk.2884426 = type { i64, i64, i64, i64, i64, i64, i32, %struct.hunk_header.2884427 }
+%struct.hunk_header.2884427 = type { i64, i64, i64, i64, i64, i64, i64, i64, i8 }
 
-; 145 occurrences:
+; 146 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddReorder.c.ll
@@ -136,6 +136,7 @@
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; llvm/optimized/DIEHash.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/ltable.cpp.ll
@@ -180,7 +181,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2615152", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2615119", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -357,7 +358,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -396,7 +397,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %0, i64 %2, i32 2
+  %3 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2615345", ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -459,7 +460,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -650,7 +651,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = getelementptr nusw nuw %"struct.rocksdb::SstFileMetaData.2623963", ptr %0, i64 %2, i32 4
+  %3 = getelementptr nusw nuw %"struct.rocksdb::SstFileMetaData.2623930", ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -736,7 +737,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637204", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2637171", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -776,7 +777,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr %"struct.mold::elf::ElfSym.2638306", ptr %0, i64 %2, i32 4
+  %3 = getelementptr %"struct.mold::elf::ElfSym.2638273", ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -792,7 +793,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2647466", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2647433", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -888,7 +889,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = getelementptr nusw nuw %struct.hunk.2884460, ptr %0, i64 %2, i32 6
+  %3 = getelementptr nusw nuw %struct.hunk.2884426, ptr %0, i64 %2, i32 6
   ret ptr %3
 }
 

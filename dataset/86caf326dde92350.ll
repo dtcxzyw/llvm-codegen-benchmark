@@ -16,9 +16,10 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/insn-eval.ll
 ; postgres/optimized/walsummary.ll
 ; Function Attrs: nounwind

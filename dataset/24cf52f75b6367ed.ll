@@ -1,5 +1,5 @@
 
-; 316 occurrences:
+; 317 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -97,6 +97,7 @@
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/combine-diff.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/parse-options.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/xdot.c.ll

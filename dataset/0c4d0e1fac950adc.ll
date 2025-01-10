@@ -1,5 +1,5 @@
 
-; 1222 occurrences:
+; 1221 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcIvy.c.ll
@@ -510,7 +510,6 @@
 ; luau/optimized/Simplify.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
 ; luau/optimized/Subtyping.test.cpp.ll
-; luau/optimized/TableShape.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll

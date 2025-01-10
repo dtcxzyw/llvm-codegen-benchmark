@@ -1,7 +1,7 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%struct.dtLink.3108391 = type { i32, i32, i8, i8, i8, i8 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%struct.dtLink.3108357 = type { i32, i32, i8, i8, i8, i8 }
 
 ; 34 occurrences:
 ; abc/optimized/fraClass.c.ll
@@ -58,9 +58,9 @@ define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
-  %7 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %5, i64 %6
+  %7 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -88,7 +88,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
-  %7 = getelementptr %struct.dtLink.3108391, ptr %5, i64 %6
+  %7 = getelementptr %struct.dtLink.3108357, ptr %5, i64 %6
   ret ptr %7
 }
 

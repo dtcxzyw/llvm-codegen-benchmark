@@ -1,6 +1,6 @@
 
-%struct.acpi_gpe_event_info.3547711 = type { %union.acpi_gpe_dispatch_info.3547712, ptr, i8, i8, i8, i8 }
-%union.acpi_gpe_dispatch_info.3547712 = type { ptr }
+%struct.acpi_gpe_event_info.3547677 = type { %union.acpi_gpe_dispatch_info.3547678, ptr, i8, i8, i8, i8 }
+%union.acpi_gpe_dispatch_info.3547678 = type { ptr }
 
 ; 1 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -20,8 +20,8 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967288
-  %4 = getelementptr %struct.acpi_gpe_event_info.3547711, ptr %0, i64 %1
-  %5 = getelementptr %struct.acpi_gpe_event_info.3547711, ptr %4, i64 %3, i32 2
+  %4 = getelementptr %struct.acpi_gpe_event_info.3547677, ptr %0, i64 %1
+  %5 = getelementptr %struct.acpi_gpe_event_info.3547677, ptr %4, i64 %3, i32 2
   ret ptr %5
 }
 

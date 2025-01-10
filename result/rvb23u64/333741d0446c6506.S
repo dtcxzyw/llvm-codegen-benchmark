@@ -162,11 +162,6 @@ func0000000000000068:                   # @func0000000000000068
 	mulw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000048:                   # @func0000000000000048
-	mul	a1, a1, a2
-	zext.w	a1, a1
-	sltu	a0, a1, a0
-	ret
 func0000000000000084:                   # @func0000000000000084
 	mul	a1, a1, a2
 	zext.w	a1, a1

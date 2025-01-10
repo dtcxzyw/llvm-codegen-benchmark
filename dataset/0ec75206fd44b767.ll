@@ -38,17 +38,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; proj/optimized/gnom.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(double %0, double %1) #0 {
-entry:
-  %2 = call double @llvm.fabs.f64(double %1)
-  %3 = fcmp ult double %2, %0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; graphviz/optimized/xlayout.c.ll
 ; proj/optimized/geodesic.c.ll

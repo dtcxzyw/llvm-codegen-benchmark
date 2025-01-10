@@ -1390,7 +1390,7 @@ entry:
   ret i1 %4
 }
 
-; 549 occurrences:
+; 550 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMesh.c.ll
@@ -1723,6 +1723,7 @@ entry:
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstebz.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/block_mean_hash.cpp.ll
@@ -3280,7 +3281,7 @@ entry:
   ret i1 %4
 }
 
-; 982 occurrences:
+; 981 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -4087,7 +4088,6 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
@@ -4271,7 +4271,7 @@ entry:
   ret i1 %4
 }
 
-; 868 occurrences:
+; 869 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMerge.c.ll
@@ -4389,6 +4389,7 @@ entry:
 ; cmake/optimized/xmlparse.c.ll
 ; coremark/optimized/core_matrix.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
+; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -5223,6 +5224,7 @@ entry:
 ; openmpi/optimized/tm_tree.ll
 ; openssl/optimized/dtlstest-bin-dtlstest.ll
 ; openusd/optimized/decodemv.c.ll
+; openusd/optimized/reconintra.c.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; raylib/optimized/rcore.c.ll
@@ -5232,7 +5234,6 @@ entry:
 ; velox/optimized/ElementAt.cpp.ll
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; velox/optimized/Slice.cpp.ll
-; verilator/optimized/V3Number.cpp.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
@@ -6427,7 +6428,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; graphviz/optimized/constraint.c.ll
@@ -6438,6 +6439,7 @@ entry:
 ; postgres/optimized/spell.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/sequence_diagram.cpp.ll
+; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -6446,8 +6448,9 @@ entry:
   ret i1 %4
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
+; clamav/optimized/mew.c.ll
 ; cvc5/optimized/sygus_enumerator.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -6566,7 +6569,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddZddGroup.c.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
@@ -6584,6 +6587,7 @@ entry:
 ; opencv/optimized/imgwarp.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/reconintra.c.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/fd.ll
 ; postgres/optimized/heapam.ll
@@ -6602,7 +6606,7 @@ entry:
   ret i1 %4
 }
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/ifTruth.c.ll
@@ -6620,7 +6624,6 @@ entry:
 ; icu/optimized/umutablecptrie.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libpng/optimized/pngrtran.c.ll
-; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/blk-map.ll
@@ -7336,7 +7339,7 @@ entry:
   ret i1 %4
 }
 
-; 277 occurrences:
+; 278 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/rpo.c.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -7535,6 +7538,7 @@ entry:
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; php/optimized/pcre2_compile.ll
 ; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/reservation.ll
 ; slurm/optimized/step_mgr.ll

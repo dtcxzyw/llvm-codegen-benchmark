@@ -1,6 +1,6 @@
 
-%"class.llvm::APInt.3150312" = type <{ %union.anon.360.3150313, i32, [4 x i8] }>
-%union.anon.360.3150313 = type { i64 }
+%"class.llvm::APInt.3150278" = type <{ %union.anon.360.3150279, i32, [4 x i8] }>
+%union.anon.360.3150279 = type { i64 }
 
 ; 6 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -29,7 +29,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::APInt.3150312", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %"class.llvm::APInt.3150278", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

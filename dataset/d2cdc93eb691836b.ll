@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/ioReadBlifMv.c.ll
@@ -14,7 +14,6 @@
 ; lua/optimized/lapi.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
-; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/jvmtiImpl.ll
 ; openssl/optimized/openssl-bin-s_server.ll
 ; php/optimized/pcre2_compile.ll

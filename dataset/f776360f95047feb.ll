@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llama.cpp/optimized/train.cpp.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll

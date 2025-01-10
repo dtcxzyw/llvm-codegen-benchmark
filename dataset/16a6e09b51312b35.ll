@@ -63,7 +63,7 @@ entry:
   ret i64 %4
 }
 
-; 239 occurrences:
+; 238 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; boost/optimized/static_string.ll
@@ -109,7 +109,6 @@ entry:
 ; linux/optimized/string.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll

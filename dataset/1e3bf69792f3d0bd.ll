@@ -1,12 +1,12 @@
 
-%struct._ir_insn.2789327 = type { %struct.anon.2789328, %union.anon.5.2789329 }
-%struct.anon.2789328 = type { %union.anon.2789330, %union.anon.4.2789331 }
-%union.anon.2789330 = type { i32 }
-%union.anon.4.2789331 = type { i32 }
-%union.anon.5.2789329 = type { %union._ir_val.2789332 }
-%union._ir_val.2789332 = type { double }
-%"struct.facebook::velox::StringView.2795660" = type { i32, [4 x i8], %union.anon.51.2795661 }
-%union.anon.51.2795661 = type { ptr }
+%struct._ir_insn.2789293 = type { %struct.anon.2789294, %union.anon.5.2789295 }
+%struct.anon.2789294 = type { %union.anon.2789296, %union.anon.4.2789297 }
+%union.anon.2789296 = type { i32 }
+%union.anon.4.2789297 = type { i32 }
+%union.anon.5.2789295 = type { %union._ir_val.2789298 }
+%union._ir_val.2789298 = type { double }
+%"struct.facebook::velox::StringView.2795626" = type { i32, [4 x i8], %union.anon.51.2795627 }
+%union.anon.51.2795627 = type { ptr }
 
 ; 8 occurrences:
 ; openjdk/optimized/bootstrapInfo.ll
@@ -38,7 +38,7 @@ entry:
   %3 = shl nuw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct._ir_insn.2789327, ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr %struct._ir_insn.2789293, ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -50,7 +50,7 @@ entry:
   %3 = shl nsw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.facebook::velox::StringView.2795660", ptr %0, i64 %5, i32 2
+  %6 = getelementptr %"struct.facebook::velox::StringView.2795626", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = shl nsw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.facebook::velox::StringView.2795660", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"struct.facebook::velox::StringView.2795626", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

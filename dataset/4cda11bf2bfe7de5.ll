@@ -1,6 +1,6 @@
 
-%struct.OnigCacheOpcode.2601213 = type { ptr, i64, i32, i64, i64, i32, ptr }
-%"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588068" = type { i64, i64 }
+%struct.OnigCacheOpcode.2601180 = type { ptr, i64, i32, i64, i64, i32, ptr }
+%"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588034" = type { i64, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/_posixsubprocess.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = sdiv i64 %3, 2
-  %5 = getelementptr %struct.OnigCacheOpcode.2601213, ptr %0, i64 %4
+  %5 = getelementptr %struct.OnigCacheOpcode.2601180, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -426,7 +426,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = sdiv i64 %3, 2
-  %5 = getelementptr %"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588068", ptr %0, i64 %4
+  %5 = getelementptr %"struct.grpc_core::(anonymous namespace)::RingHash::Ring::RingEntry.3588034", ptr %0, i64 %4
   ret ptr %5
 }
 

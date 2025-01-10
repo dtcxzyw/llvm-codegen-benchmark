@@ -229,6 +229,13 @@ func000000000000030c:                   # @func000000000000030c
 	setl	%al
 	orb	%cl, %al
 	retq
+func0000000000000298:                   # @func0000000000000298
+	cmpl	%edx, %esi
+	setg	%cl
+	testb	%dil, %dil
+	setne	%al
+	orb	%cl, %al
+	retq
 func0000000000000312:                   # @func0000000000000312
 	testb	%dl, %dl
 	setne	%cl

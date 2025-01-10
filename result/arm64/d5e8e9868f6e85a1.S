@@ -4,6 +4,12 @@ func0000000000000036:                   // @func0000000000000036
 	sub	x0, x0, w8, uxtw #2
 	ret
                                         // -- End function
+func0000000000000016:                   // @func0000000000000016
+// %bb.0:                               // %entry
+	lsl	w8, w1, #2
+	sub	x0, x0, w8, uxtw #2
+	ret
+                                        // -- End function
 func0000000000000076:                   // @func0000000000000076
 // %bb.0:                               // %entry
 	lsl	w8, w1, #4

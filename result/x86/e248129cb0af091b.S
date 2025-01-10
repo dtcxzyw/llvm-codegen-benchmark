@@ -1,3 +1,8 @@
+func000000000000000d:                   # @func000000000000000d
+	notl	%esi
+	orq	$-64, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	andq	$-4096, %rsi                    # imm = 0xF000
 	subq	%rsi, %rdi

@@ -1,6 +1,6 @@
 
-%struct.Index.3080678 = type <{ i64, %"class.llvh::StringRef.3080641", i32, [4 x i8] }>
-%"class.llvh::StringRef.3080641" = type { ptr, i64 }
+%struct.Index.3080644 = type <{ i64, %"class.llvh::StringRef.3080607", i32, [4 x i8] }>
+%"class.llvh::StringRef.3080607" = type { ptr, i64 }
 
 ; 4 occurrences:
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -38,7 +38,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.usub.sat.i64(i64 %1, i64 %2)
   %4 = sub i64 0, %3
-  %5 = getelementptr nusw %struct.Index.3080678, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.Index.3080644, ptr %0, i64 %4
   ret ptr %5
 }
 

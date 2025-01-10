@@ -36,7 +36,7 @@ entry:
   ret i64 %3
 }
 
-; 544 occurrences:
+; 543 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -78,7 +78,6 @@ entry:
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/fileio.ll
 ; cpython/optimized/marshal.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-doh.ll
 ; curl/optimized/libcurl_la-http1.ll
@@ -639,7 +638,7 @@ entry:
   ret i64 %3
 }
 
-; 110 occurrences:
+; 111 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -656,6 +655,7 @@ entry:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cpython/optimized/binascii.ll
 ; cpython/optimized/obmalloc.ll
+; cpython/optimized/pystrtod.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/bitreader.c.ll
 ; gromacs/optimized/enerdata_utils.cpp.ll
@@ -785,8 +785,9 @@ entry:
   ret i64 %3
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; clamav/optimized/lzwdec.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cpython/optimized/_functoolsmodule.ll
 ; diesel-rs/optimized/4dmkc4an6cvf22v6.ll
@@ -833,6 +834,7 @@ entry:
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:

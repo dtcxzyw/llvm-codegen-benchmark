@@ -1,11 +1,11 @@
 
-%"class.QuantLib::Matrix.2833734" = type { %"class.std::unique_ptr.2833723", i64, i64 }
-%"class.std::unique_ptr.2833723" = type { %"struct.std::__uniq_ptr_data.2833724" }
-%"struct.std::__uniq_ptr_data.2833724" = type { %"class.std::__uniq_ptr_impl.2833725" }
-%"class.std::__uniq_ptr_impl.2833725" = type { %"class.std::tuple.2833726" }
-%"class.std::tuple.2833726" = type { %"struct.std::_Tuple_impl.2833727" }
-%"struct.std::_Tuple_impl.2833727" = type { %"struct.std::_Head_base.4.2833728" }
-%"struct.std::_Head_base.4.2833728" = type { ptr }
+%"class.QuantLib::Matrix.2833700" = type { %"class.std::unique_ptr.2833689", i64, i64 }
+%"class.std::unique_ptr.2833689" = type { %"struct.std::__uniq_ptr_data.2833690" }
+%"struct.std::__uniq_ptr_data.2833690" = type { %"class.std::__uniq_ptr_impl.2833691" }
+%"class.std::__uniq_ptr_impl.2833691" = type { %"class.std::tuple.2833692" }
+%"class.std::tuple.2833692" = type { %"struct.std::_Tuple_impl.2833693" }
+%"struct.std::_Tuple_impl.2833693" = type { %"struct.std::_Head_base.4.2833694" }
+%"struct.std::_Head_base.4.2833694" = type { ptr }
 
 ; 9 occurrences:
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
@@ -28,10 +28,11 @@ entry:
   ret i64 %7
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/biasstate.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -48,7 +49,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = ashr exact i64 %4, 3
-  %6 = getelementptr nusw nuw %"class.QuantLib::Matrix.2833734", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.QuantLib::Matrix.2833700", ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

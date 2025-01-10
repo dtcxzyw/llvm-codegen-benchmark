@@ -1,32 +1,32 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
-%"struct.(anonymous namespace)::CompressInstEmitter::CompressPat.3246328" = type <{ %"class.llvm::CodeGenInstruction.3246303", %"class.llvm::CodeGenInstruction.3246303", %"class.std::vector.3246307", %"class.llvm::IndexedMap.3246319", %"class.llvm::IndexedMap.3246319", i8, [7 x i8] }>
-%"class.llvm::CodeGenInstruction.3246303" = type <{ ptr, %"class.llvm::StringRef.3246304", %"class.std::__cxx11::basic_string.3246305", %"class.llvm::CGIOperandList.3246306", %"class.std::vector.3246307", %"class.std::vector.3246307", i64, %"class.std::__cxx11::basic_string.3246305", i8, [7 x i8], ptr, i32, [4 x i8] }>
-%"class.llvm::StringRef.3246304" = type { ptr, i64 }
-%"class.llvm::CGIOperandList.3246306" = type <{ ptr, i32, [4 x i8], %"class.std::vector.92.3246308", %"class.llvm::StringMap.97.3246309", i8, i8, i8, [5 x i8] }>
-%"class.std::vector.92.3246308" = type { %"struct.std::_Vector_base.93.3246310" }
-%"struct.std::_Vector_base.93.3246310" = type { %"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl.3246311" }
-%"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl.3246311" = type { %"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl_data.3246312" }
-%"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl_data.3246312" = type { ptr, ptr, ptr }
-%"class.llvm::StringMap.97.3246309" = type { %"class.llvm::StringMapImpl.3246313" }
-%"class.llvm::StringMapImpl.3246313" = type { ptr, i32, i32, i32, i32 }
-%"class.std::__cxx11::basic_string.3246305" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3246317", i64, %union.anon.3246318 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3246317" = type { ptr }
-%union.anon.3246318 = type { i64, [8 x i8] }
-%"class.std::vector.3246307" = type { %"struct.std::_Vector_base.3246314" }
-%"struct.std::_Vector_base.3246314" = type { %"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl.3246315" }
-%"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl.3246315" = type { %"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl_data.3246316" }
-%"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl_data.3246316" = type { ptr, ptr, ptr }
-%"class.llvm::IndexedMap.3246319" = type <{ %"class.llvm::SmallVector.98.3246320", %"struct.(anonymous namespace)::CompressInstEmitter::OpData.3246321", [8 x i8] }>
-%"class.llvm::SmallVector.98.3246320" = type { %"class.llvm::SmallVectorImpl.99.3246322" }
-%"class.llvm::SmallVectorImpl.99.3246322" = type { %"class.llvm::SmallVectorTemplateBase.100.3246323" }
-%"class.llvm::SmallVectorTemplateBase.100.3246323" = type { %"class.llvm::SmallVectorTemplateCommon.101.3246324" }
-%"class.llvm::SmallVectorTemplateCommon.101.3246324" = type { %"class.llvm::SmallVectorBase.3246325" }
-%"class.llvm::SmallVectorBase.3246325" = type { ptr, i32, i32 }
-%"struct.(anonymous namespace)::CompressInstEmitter::OpData.3246321" = type <{ i32, [4 x i8], %union.anon.103.3246326, i32, [4 x i8] }>
-%union.anon.103.3246326 = type { i64 }
-%class.QMap.3440656 = type { %"class.QtPrivate::QExplicitlySharedDataPointerV2.3440657" }
-%"class.QtPrivate::QExplicitlySharedDataPointerV2.3440657" = type { ptr }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
+%"struct.(anonymous namespace)::CompressInstEmitter::CompressPat.3246294" = type <{ %"class.llvm::CodeGenInstruction.3246269", %"class.llvm::CodeGenInstruction.3246269", %"class.std::vector.3246273", %"class.llvm::IndexedMap.3246285", %"class.llvm::IndexedMap.3246285", i8, [7 x i8] }>
+%"class.llvm::CodeGenInstruction.3246269" = type <{ ptr, %"class.llvm::StringRef.3246270", %"class.std::__cxx11::basic_string.3246271", %"class.llvm::CGIOperandList.3246272", %"class.std::vector.3246273", %"class.std::vector.3246273", i64, %"class.std::__cxx11::basic_string.3246271", i8, [7 x i8], ptr, i32, [4 x i8] }>
+%"class.llvm::StringRef.3246270" = type { ptr, i64 }
+%"class.llvm::CGIOperandList.3246272" = type <{ ptr, i32, [4 x i8], %"class.std::vector.92.3246274", %"class.llvm::StringMap.97.3246275", i8, i8, i8, [5 x i8] }>
+%"class.std::vector.92.3246274" = type { %"struct.std::_Vector_base.93.3246276" }
+%"struct.std::_Vector_base.93.3246276" = type { %"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl.3246277" }
+%"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl.3246277" = type { %"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl_data.3246278" }
+%"struct.std::_Vector_base<llvm::CGIOperandList::OperandInfo, std::allocator<llvm::CGIOperandList::OperandInfo>>::_Vector_impl_data.3246278" = type { ptr, ptr, ptr }
+%"class.llvm::StringMap.97.3246275" = type { %"class.llvm::StringMapImpl.3246279" }
+%"class.llvm::StringMapImpl.3246279" = type { ptr, i32, i32, i32, i32 }
+%"class.std::__cxx11::basic_string.3246271" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3246283", i64, %union.anon.3246284 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3246283" = type { ptr }
+%union.anon.3246284 = type { i64, [8 x i8] }
+%"class.std::vector.3246273" = type { %"struct.std::_Vector_base.3246280" }
+%"struct.std::_Vector_base.3246280" = type { %"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl.3246281" }
+%"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl.3246281" = type { %"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl_data.3246282" }
+%"struct.std::_Vector_base<llvm::Record *, std::allocator<llvm::Record *>>::_Vector_impl_data.3246282" = type { ptr, ptr, ptr }
+%"class.llvm::IndexedMap.3246285" = type <{ %"class.llvm::SmallVector.98.3246286", %"struct.(anonymous namespace)::CompressInstEmitter::OpData.3246287", [8 x i8] }>
+%"class.llvm::SmallVector.98.3246286" = type { %"class.llvm::SmallVectorImpl.99.3246288" }
+%"class.llvm::SmallVectorImpl.99.3246288" = type { %"class.llvm::SmallVectorTemplateBase.100.3246289" }
+%"class.llvm::SmallVectorTemplateBase.100.3246289" = type { %"class.llvm::SmallVectorTemplateCommon.101.3246290" }
+%"class.llvm::SmallVectorTemplateCommon.101.3246290" = type { %"class.llvm::SmallVectorBase.3246291" }
+%"class.llvm::SmallVectorBase.3246291" = type { ptr, i32, i32 }
+%"struct.(anonymous namespace)::CompressInstEmitter::OpData.3246287" = type <{ i32, [4 x i8], %union.anon.103.3246292, i32, [4 x i8] }>
+%union.anon.103.3246292 = type { i64 }
+%class.QMap.3440622 = type { %"class.QtPrivate::QExplicitlySharedDataPointerV2.3440623" }
+%"class.QtPrivate::QExplicitlySharedDataPointerV2.3440623" = type { ptr }
 
 ; 370 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -402,7 +402,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000004a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.std::pair.28.2602107", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::pair.28.2602074", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -420,7 +420,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::CompressInstEmitter::CompressPat.3246328", ptr %0, i64 %2
+  %3 = getelementptr %"struct.(anonymous namespace)::CompressInstEmitter::CompressPat.3246294", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -434,7 +434,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QMap.3440656, ptr %0, i64 %2
+  %3 = getelementptr %class.QMap.3440622, ptr %0, i64 %2
   ret ptr %3
 }
 

@@ -1,6 +1,6 @@
 
-%class.ObjArrayTask.2737269 = type <{ ptr, i32, [4 x i8] }>
-%struct.tg3_tx_ring_info.3545823 = type { ptr, i64, i8 }
+%class.ObjArrayTask.2737235 = type <{ ptr, i32, [4 x i8] }>
+%struct.tg3_tx_ring_info.3545789 = type { ptr, i64, i8 }
 
 ; 3 occurrences:
 ; hyperscan/optimized/goughcompile.cpp.ll
@@ -30,7 +30,7 @@ entry:
   %2 = add i32 %1, 131071
   %3 = and i32 %2, 131071
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %class.ObjArrayTask.2737269, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %class.ObjArrayTask.2737235, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -105,7 +105,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.tg3_tx_ring_info.3545823, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.tg3_tx_ring_info.3545789, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -117,7 +117,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.tg3_tx_ring_info.3545823, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.tg3_tx_ring_info.3545789, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

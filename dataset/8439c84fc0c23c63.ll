@@ -20,7 +20,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/date.ll
@@ -35,7 +35,6 @@ entry:
 ; nuttx/optimized/lib_dayofweek.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/libunicode.ll
-; redis/optimized/dict.ll
 ; snappy/optimized/snappy.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/busmaster.c.ll

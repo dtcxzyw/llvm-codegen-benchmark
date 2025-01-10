@@ -1,5 +1,5 @@
 
-; 1487 occurrences:
+; 1485 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -1166,7 +1166,6 @@
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
 ; openssl/optimized/libssl-lib-quic_trace.ll
@@ -1174,7 +1173,6 @@
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
-; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
 ; openssl/optimized/libssl-shlib-quic_record_tx.ll
 ; openssl/optimized/libssl-shlib-quic_trace.ll

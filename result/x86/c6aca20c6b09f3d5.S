@@ -2,7 +2,7 @@ func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
-	leaq	1160(%rdi,%rax,8), %rax
+	leaq	264(%rdi,%rax,8), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax

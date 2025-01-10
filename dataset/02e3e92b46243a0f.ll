@@ -1,10 +1,10 @@
 
-%struct._zend_op.2789991 = type { ptr, %union._znode_op.2790000, %union._znode_op.2790000, %union._znode_op.2790000, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790000 = type { i32 }
-%"class.llvm::Use.3154084" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
-%"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319981" = type { %"class.llvm::StringRef.3319847", ptr, %"class.llvm::StringRef.3319847", %"class.llvm::StringRef.3319847", i32, i8, ptr }
-%"class.llvm::StringRef.3319847" = type { ptr, i64 }
+%struct._zend_op.2789957 = type { ptr, %union._znode_op.2789966, %union._znode_op.2789966, %union._znode_op.2789966, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789966 = type { i32 }
+%"class.llvm::Use.3154050" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
+%"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319947" = type { %"class.llvm::StringRef.3319813", ptr, %"class.llvm::StringRef.3319813", %"class.llvm::StringRef.3319813", i32, i8, ptr }
+%"class.llvm::StringRef.3319813" = type { ptr, i64 }
 
 ; 10 occurrences:
 ; clamav/optimized/autoit.c.ll
@@ -126,7 +126,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789991, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789957, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
@@ -155,9 +155,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3154084", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3154050", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3154084", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3154050", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -168,7 +168,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3168219", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
@@ -199,7 +199,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319981", ptr %1, i64 %2
+  %3 = getelementptr %"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319947", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 72
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64

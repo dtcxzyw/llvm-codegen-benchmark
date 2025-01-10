@@ -102,8 +102,7 @@ entry:
   ret i1 %5
 }
 
-; 140 occurrences:
-; abc/optimized/cuddApa.c.ll
+; 139 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/sbdCut2.c.ll
 ; abc/optimized/sfmDec.c.ll

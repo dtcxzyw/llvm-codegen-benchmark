@@ -1,21 +1,21 @@
 
-%"class.std::__1::tuple.2602961" = type { %"struct.std::__1::__tuple_impl.2602962" }
-%"struct.std::__1::__tuple_impl.2602962" = type <{ %"class.std::__1::__tuple_leaf.2602963", %"class.std::__1::__tuple_leaf.50.2602964", %"class.std::__1::__tuple_leaf.51.2602965", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2602963" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::basic_string.2602914" = type { %"class.std::__1::__compressed_pair.1.2602915" }
-%"class.std::__1::__compressed_pair.1.2602915" = type { %"struct.std::__1::__compressed_pair_elem.2.2602916" }
-%"struct.std::__1::__compressed_pair_elem.2.2602916" = type { %"struct.std::__1::basic_string<char>::__rep.2602917" }
-%"struct.std::__1::basic_string<char>::__rep.2602917" = type { %union.anon.2602918 }
-%union.anon.2602918 = type { %"struct.std::__1::basic_string<char>::__long.2602919" }
-%"struct.std::__1::basic_string<char>::__long.2602919" = type { %struct.anon.3.2602920, i64, ptr }
-%struct.anon.3.2602920 = type { i64 }
-%"class.std::__1::__tuple_leaf.50.2602964" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::__tuple_leaf.51.2602965" = type { i8 }
-%"struct.mold::elf::ElfRel.2635966" = type { %"class.mold::LittleEndian.3.2635854", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.295.2635967" }
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%"class.mold::LittleEndian.295.2635967" = type { [8 x i8] }
-%struct.IOVAMapping.2707794 = type { ptr, i64, i64 }
+%"class.std::__1::tuple.2602928" = type { %"struct.std::__1::__tuple_impl.2602929" }
+%"struct.std::__1::__tuple_impl.2602929" = type <{ %"class.std::__1::__tuple_leaf.2602930", %"class.std::__1::__tuple_leaf.50.2602931", %"class.std::__1::__tuple_leaf.51.2602932", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2602930" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::basic_string.2602881" = type { %"class.std::__1::__compressed_pair.1.2602882" }
+%"class.std::__1::__compressed_pair.1.2602882" = type { %"struct.std::__1::__compressed_pair_elem.2.2602883" }
+%"struct.std::__1::__compressed_pair_elem.2.2602883" = type { %"struct.std::__1::basic_string<char>::__rep.2602884" }
+%"struct.std::__1::basic_string<char>::__rep.2602884" = type { %union.anon.2602885 }
+%union.anon.2602885 = type { %"struct.std::__1::basic_string<char>::__long.2602886" }
+%"struct.std::__1::basic_string<char>::__long.2602886" = type { %struct.anon.3.2602887, i64, ptr }
+%struct.anon.3.2602887 = type { i64 }
+%"class.std::__1::__tuple_leaf.50.2602931" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::__tuple_leaf.51.2602932" = type { i8 }
+%"struct.mold::elf::ElfRel.2635933" = type { %"class.mold::LittleEndian.3.2635821", %"class.mold::LittleEndian.2635820", %"class.mold::LittleEndian.2635820", %"class.mold::LittleEndian.295.2635934" }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%"class.mold::LittleEndian.295.2635934" = type { [8 x i8] }
+%struct.IOVAMapping.2707760 = type { ptr, i64, i64 }
 
 ; 587 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -611,7 +611,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, -56
-  %6 = getelementptr nusw %"class.std::__1::tuple.2602961", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::__1::tuple.2602928", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1262,7 +1262,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv i64 %4, 48
-  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2635966", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2635933", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1280,7 +1280,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv i64 %4, 48
-  %6 = getelementptr %struct.IOVAMapping.2707794, ptr %0, i64 %5
+  %6 = getelementptr %struct.IOVAMapping.2707760, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,21 +1,21 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%"class.std::__1::tuple.2602961" = type { %"struct.std::__1::__tuple_impl.2602962" }
-%"struct.std::__1::__tuple_impl.2602962" = type <{ %"class.std::__1::__tuple_leaf.2602963", %"class.std::__1::__tuple_leaf.50.2602964", %"class.std::__1::__tuple_leaf.51.2602965", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2602963" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::basic_string.2602914" = type { %"class.std::__1::__compressed_pair.1.2602915" }
-%"class.std::__1::__compressed_pair.1.2602915" = type { %"struct.std::__1::__compressed_pair_elem.2.2602916" }
-%"struct.std::__1::__compressed_pair_elem.2.2602916" = type { %"struct.std::__1::basic_string<char>::__rep.2602917" }
-%"struct.std::__1::basic_string<char>::__rep.2602917" = type { %union.anon.2602918 }
-%union.anon.2602918 = type { %"struct.std::__1::basic_string<char>::__long.2602919" }
-%"struct.std::__1::basic_string<char>::__long.2602919" = type { %struct.anon.3.2602920, i64, ptr }
-%struct.anon.3.2602920 = type { i64 }
-%"class.std::__1::__tuple_leaf.50.2602964" = type { %"class.std::__1::basic_string.2602914" }
-%"class.std::__1::__tuple_leaf.51.2602965" = type { i8 }
-%"class.std::reference_wrapper.2688895" = type { ptr }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%"class.std::__1::tuple.2602928" = type { %"struct.std::__1::__tuple_impl.2602929" }
+%"struct.std::__1::__tuple_impl.2602929" = type <{ %"class.std::__1::__tuple_leaf.2602930", %"class.std::__1::__tuple_leaf.50.2602931", %"class.std::__1::__tuple_leaf.51.2602932", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2602930" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::basic_string.2602881" = type { %"class.std::__1::__compressed_pair.1.2602882" }
+%"class.std::__1::__compressed_pair.1.2602882" = type { %"struct.std::__1::__compressed_pair_elem.2.2602883" }
+%"struct.std::__1::__compressed_pair_elem.2.2602883" = type { %"struct.std::__1::basic_string<char>::__rep.2602884" }
+%"struct.std::__1::basic_string<char>::__rep.2602884" = type { %union.anon.2602885 }
+%union.anon.2602885 = type { %"struct.std::__1::basic_string<char>::__long.2602886" }
+%"struct.std::__1::basic_string<char>::__long.2602886" = type { %struct.anon.3.2602887, i64, ptr }
+%struct.anon.3.2602887 = type { i64 }
+%"class.std::__1::__tuple_leaf.50.2602931" = type { %"class.std::__1::basic_string.2602881" }
+%"class.std::__1::__tuple_leaf.51.2602932" = type { i8 }
+%"class.std::reference_wrapper.2688861" = type { ptr }
 
 ; 47 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -69,11 +69,11 @@
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 16
-  %3 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %2
+  %3 = getelementptr %union.yyalloc.2600678, ptr %0, i64 %2
   ret ptr %3
 }
 
-; 1988 occurrences:
+; 1994 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -958,13 +958,17 @@ entry:
 ; meshlab/optimized/transferfunction.cpp.ll
 ; minetest/optimized/CFileList.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
+; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/CMeshCache.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/l_server.cpp.ll
 ; minetest/optimized/mesh_compare.cpp.ll
+; minetest/optimized/mg_biome.cpp.ll
+; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/sound.cpp.ll
@@ -1880,6 +1884,8 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; xgboost/optimized/auc.cc.ll
 ; xgboost/optimized/context.cc.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/learner.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/quantile_obj.cc.ll
@@ -2066,7 +2072,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 16
-  %3 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %2
+  %3 = getelementptr nusw %union.yyalloc.2601647, ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -2743,7 +2749,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, -56
-  %3 = getelementptr nusw %"class.std::__1::tuple.2602961", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.std::__1::tuple.2602928", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -3284,7 +3290,7 @@ entry:
   ret ptr %3
 }
 
-; 83 occurrences:
+; 77 occurrences:
 ; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -3293,10 +3299,7 @@ entry:
 ; cvc5/optimized/theory_preprocessor.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
@@ -3306,8 +3309,6 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/CIrrDeviceSDL.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; nix/optimized/binary-cache-store.ll
@@ -3366,13 +3367,12 @@ entry:
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 2
-  %3 = getelementptr nusw nuw %"class.std::reference_wrapper.2688895", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::reference_wrapper.2688861", ptr %0, i64 %2
   ret ptr %3
 }
 

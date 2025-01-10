@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -7,7 +7,6 @@
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
-; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll

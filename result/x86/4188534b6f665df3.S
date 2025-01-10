@@ -6,6 +6,10 @@ func0000000000000013:                   # @func0000000000000013
 	leal	(%rsi,%rsi,2), %eax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
+func000000000000007c:                   # @func000000000000007c
+	imull	$544, %esi, %eax                # imm = 0x220
+	leaq	2176(%rdi,%rax), %rax
+	retq
 func000000000000002c:                   # @func000000000000002c
 	imull	$544, %esi, %eax                # imm = 0x220
 	cltq
@@ -32,11 +36,6 @@ func0000000000000068:                   # @func0000000000000068
 	leal	(%rsi,%rsi,2), %eax
 	leal	-6144(,%rax,4), %eax
 	addq	%rdi, %rax
-	retq
-func000000000000007c:                   # @func000000000000007c
-	shll	$3, %esi
-	leal	(%rsi,%rsi,2), %eax
-	leaq	16(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	1(%rsi,%rsi,2), %eax

@@ -16,10 +16,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 4 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_censorize.c.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

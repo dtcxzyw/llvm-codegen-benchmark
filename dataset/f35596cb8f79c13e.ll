@@ -13,15 +13,4 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; node/optimized/libnode.node_http_parser.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = or i1 %3, %0
-  %5 = select i1 %4, i64 16, i64 24
-  ret i64 %5
-}
-
 attributes #0 = { nounwind }

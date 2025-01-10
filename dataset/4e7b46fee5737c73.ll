@@ -1,5 +1,5 @@
 
-%"struct.llvm::RawInstrProf::VTableProfileData.3191947" = type { i64, i32, i32 }
+%"struct.llvm::RawInstrProf::VTableProfileData.3191913" = type { i64, i32, i32 }
 
 ; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -86,7 +86,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = and i64 %3, 7
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.llvm::RawInstrProf::VTableProfileData.3191947", ptr %5, i64 %0
+  %6 = getelementptr nusw %"struct.llvm::RawInstrProf::VTableProfileData.3191913", ptr %5, i64 %0
   ret ptr %6
 }
 

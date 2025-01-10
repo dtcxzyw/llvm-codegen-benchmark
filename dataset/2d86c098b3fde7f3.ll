@@ -1,6 +1,6 @@
 
-%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
-%"struct.QHashPrivate::Span.3440140" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
+%struct.GC_hblk_s.2705241 = type { [4096 x i8] }
+%"struct.QHashPrivate::Span.3440106" = type <{ [128 x i8], ptr, i8, i8, [6 x i8] }>
 
 ; 259 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -267,7 +267,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = lshr i64 %3, 12
-  %5 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.GC_hblk_s.2705241, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -305,7 +305,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = lshr i64 %3, 7
-  %5 = getelementptr %"struct.QHashPrivate::Span.3440140", ptr %0, i64 %4
+  %5 = getelementptr %"struct.QHashPrivate::Span.3440106", ptr %0, i64 %4
   ret ptr %5
 }
 

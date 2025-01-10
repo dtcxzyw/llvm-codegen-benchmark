@@ -10,9 +10,8 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; flac/optimized/lpc.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i32 %1) #0 {

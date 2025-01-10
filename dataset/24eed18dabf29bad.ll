@@ -1,9 +1,9 @@
 
-%"struct.drjit::Array.2602678" = type { %"struct.drjit::StaticArrayImpl.1.2602679" }
-%"struct.drjit::StaticArrayImpl.1.2602679" = type { <4 x float> }
-%struct.NvmeSecCtrlEntry.2708941 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
-%struct.CDSFileMapRegion.2730725 = type { i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, i64, i64, i64, ptr }
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
+%"struct.drjit::Array.2602645" = type { %"struct.drjit::StaticArrayImpl.1.2602646" }
+%"struct.drjit::StaticArrayImpl.1.2602646" = type { <4 x float> }
+%struct.NvmeSecCtrlEntry.2708907 = type { i16, i16, i8, [3 x i8], i16, i16, i16, [18 x i8] }
+%struct.CDSFileMapRegion.2730691 = type { i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, i64, i64, i64, ptr }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
 
 ; 30 occurrences:
 ; cpython/optimized/_collectionsmodule.ll
@@ -108,7 +108,7 @@ entry:
 define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw [4 x %"struct.drjit::Array.2602678"], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [4 x %"struct.drjit::Array.2602645"], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw float, ptr %4, i64 %0
   ret ptr %5
 }
@@ -140,7 +140,7 @@ entry:
 define ptr @func0000000000000033(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 27800
-  %4 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708941], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [127 x %struct.NvmeSecCtrlEntry.2708907], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -174,7 +174,7 @@ entry:
 define ptr @func000000000000003b(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 24
-  %4 = getelementptr nusw [4 x %struct.CDSFileMapRegion.2730725], ptr %3, i64 0, i64 %1
+  %4 = getelementptr nusw [4 x %struct.CDSFileMapRegion.2730691], ptr %3, i64 0, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -228,8 +228,8 @@ entry:
 define ptr @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %3, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %3, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %0
   ret ptr %5
 }
 

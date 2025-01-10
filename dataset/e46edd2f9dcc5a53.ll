@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; libwebp/optimized/tiffdec.c.ll
 ; linux/optimized/drm_plane.ll
 ; linux/optimized/intel_gt.ll
-; linux/optimized/tcp_input.ll
 ; linux/optimized/virtio_ring.ll
 ; ruby/optimized/symbol.ll
 ; spike/optimized/vghsh_vv.ll

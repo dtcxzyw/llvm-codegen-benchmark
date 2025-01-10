@@ -1,5 +1,5 @@
 
-%"struct.facebook::velox::Timestamp.2817489" = type { i64, i64 }
+%"struct.facebook::velox::Timestamp.2817455" = type { i64, i64 }
 
 ; 12 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
@@ -62,7 +62,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.facebook::velox::Timestamp.2817489", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.facebook::velox::Timestamp.2817455", ptr %0, i64 %5
   ret ptr %6
 }
 

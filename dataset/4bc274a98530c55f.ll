@@ -1,5 +1,5 @@
 
-; 17695 occurrences:
+; 17688 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchDiv.c.ll
@@ -162,6 +162,7 @@
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cmd.c.ll
+; abc/optimized/cmdApi.c.ll
 ; abc/optimized/cmdHist.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfPost.c.ll
@@ -1591,7 +1592,6 @@
 ; cmake/optimized/cmStringCommand.cxx.ll
 ; cmake/optimized/cmStringReplaceHelper.cxx.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
-; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetPropCommandBase.cxx.ll
 ; cmake/optimized/cmTryRunCommand.cxx.ll
 ; cmake/optimized/cmUnsetCommand.cxx.ll
@@ -1687,7 +1687,6 @@
 ; cmake/optimized/xxhash.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -3049,7 +3048,6 @@
 ; git/optimized/clean.ll
 ; git/optimized/clone.ll
 ; git/optimized/color.ll
-; git/optimized/column.ll
 ; git/optimized/combine-diff.ll
 ; git/optimized/commit-graph.ll
 ; git/optimized/commit.ll
@@ -4833,8 +4831,6 @@
 ; lief/optimized/RelocationEntry.cpp.ll
 ; lief/optimized/RelocationFixup.cpp.ll
 ; lief/optimized/RelocationObject.cpp.ll
-; lief/optimized/RelocationSizes.cpp.ll
-; lief/optimized/RelocationStrings.cpp.ll
 ; lief/optimized/Repro.cpp.ll
 ; lief/optimized/ResourceAccelerator.cpp.ll
 ; lief/optimized/ResourceDialog.cpp.ll
@@ -5773,7 +5769,6 @@
 ; llvm/optimized/AArch64FalkorHWPFFix.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
 ; llvm/optimized/AArch64GlobalsTagging.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -6622,7 +6617,6 @@
 ; llvm/optimized/MachineLICM.cpp.ll
 ; llvm/optimized/MachineLateInstrsCleanup.cpp.ll
 ; llvm/optimized/MachineLoopInfo.cpp.ll
-; llvm/optimized/MachineModuleSlotTracker.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachineOutliner.cpp.ll
 ; llvm/optimized/MachinePassManager.cpp.ll
@@ -7319,7 +7313,6 @@
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
 ; llvm/optimized/X86AvoidTrailingCall.cpp.ll
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
@@ -7334,7 +7327,6 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; llvm/optimized/X86FastTileConfig.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
@@ -7410,6 +7402,7 @@
 ; logos-rs/optimized/l82l31q4dxfnso7.ll
 ; lua/optimized/lapi.ll
 ; lua/optimized/lbaselib.ll
+; lua/optimized/ldebug.ll
 ; lua/optimized/lgc.ll
 ; lua/optimized/liolib.ll
 ; lua/optimized/llex.ll
@@ -10337,6 +10330,7 @@
 ; openjdk/optimized/zBarrierSetC1.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetRuntime.ll
+; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zGeneration.ll
 ; openjdk/optimized/zHeap.ll
 ; openjdk/optimized/zHeapIterator.ll
@@ -11984,7 +11978,6 @@
 ; php/optimized/apprentice.ll
 ; php/optimized/array.ll
 ; php/optimized/array_obj.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/avifinfo.ll
 ; php/optimized/avl.ll
 ; php/optimized/basic_functions.ll
@@ -15552,6 +15545,7 @@
 ; wireshark/optimized/packet-ax25.c.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-beep.c.ll
+; wireshark/optimized/packet-bencode.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-bpdu.c.ll
@@ -17637,7 +17631,6 @@
 ; zstd/optimized/xxhash.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_decompress.c.ll

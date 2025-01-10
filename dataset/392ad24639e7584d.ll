@@ -1,5 +1,5 @@
 
-%class.symbol.3621678 = type { ptr }
+%class.symbol.3621644 = type { ptr }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -77,7 +77,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 80
   %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
-  %6 = getelementptr %class.symbol.3621678, ptr %5, i64 %0
+  %6 = getelementptr %class.symbol.3621644, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }

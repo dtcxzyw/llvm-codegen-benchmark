@@ -31,3 +31,12 @@ func000000000000000a:                   // @func000000000000000a
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	lsl	w8, w8, #3
+	cmp	w8, #2
+	cset	w0, lt
+	ret
+                                        // -- End function

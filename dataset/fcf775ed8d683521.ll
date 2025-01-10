@@ -694,9 +694,10 @@ entry:
   ret i1 %3
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; clamav/optimized/matcher-ac.c.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hyperscan/optimized/rose_build_groups.cpp.ll
@@ -826,7 +827,8 @@ entry:
   ret i1 %3
 }
 
-; 46 occurrences:
+; 47 occurrences:
+; clamav/optimized/matcher-ac.c.ll
 ; hyperscan/optimized/rose_build_groups.cpp.ll
 ; icu/optimized/n2builder.ll
 ; icu/optimized/norms.ll
@@ -943,6 +945,19 @@ entry:
   ret i1 %3
 }
 
+; 4 occurrences:
+; clamav/optimized/matcher-ac.c.ll
+; llvm/optimized/EvalEmitter.cpp.ll
+; llvm/optimized/Interp.cpp.ll
+; regex-rs/optimized/6f4i3c8223u3bmw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i32 %1 to i8
+  %3 = icmp ule i8 %0, %2
+  ret i1 %3
+}
+
 ; 3 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -952,18 +967,6 @@ define i1 @func0000000000000074(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = icmp samesign ult i8 %0, %2
-  ret i1 %3
-}
-
-; 3 occurrences:
-; llvm/optimized/EvalEmitter.cpp.ll
-; llvm/optimized/Interp.cpp.ll
-; regex-rs/optimized/6f4i3c8223u3bmw.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i32 %1 to i8
-  %3 = icmp ule i8 %0, %2
   ret i1 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 40 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/autoit.c.ll
 ; cpython/optimized/_randommodule.ll
@@ -36,9 +36,6 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; opencv/optimized/rand.cpp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; php/optimized/engine_mt19937.ll
 ; ruby/optimized/random.ll
 ; spike/optimized/aes64dsm.ll

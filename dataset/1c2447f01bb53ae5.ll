@@ -1,8 +1,8 @@
 
-%"struct.std::pair.2749024" = type { i32, i32 }
-%"struct.std::pair.1185.3175192" = type { %"class.llvm::StringRef.3174809", ptr }
-%"class.llvm::StringRef.3174809" = type { ptr, i64 }
-%"struct.std::pair.3449273" = type { i32, i32 }
+%"struct.std::pair.2748990" = type { i32, i32 }
+%"struct.std::pair.1185.3175158" = type { %"class.llvm::StringRef.3174775", ptr }
+%"class.llvm::StringRef.3174775" = type { ptr, i64 }
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 71 occurrences:
 ; boost/optimized/within_pointlike_geometry.ll
@@ -80,7 +80,7 @@
 define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr %"struct.std::pair.2749024", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::pair.2748990", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }
@@ -94,7 +94,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr %"struct.std::pair.1185.3175192", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::pair.1185.3175158", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   ret ptr %4
 }
@@ -106,7 +106,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }

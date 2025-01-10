@@ -73,7 +73,7 @@ entry:
   ret i1 %3
 }
 
-; 3228 occurrences:
+; 3227 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -1539,7 +1539,6 @@ entry:
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/Taint.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
@@ -4421,7 +4420,7 @@ entry:
   ret i1 %3
 }
 
-; 428 occurrences:
+; 436 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -4445,6 +4444,7 @@ entry:
 ; cpython/optimized/sre.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -4662,6 +4662,7 @@ entry:
 ; opencv/optimized/intersection.cpp.ll
 ; opencv/optimized/lda.cpp.ll
 ; opencv/optimized/nms.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/jpegdecoder.ll
 ; openjdk/optimized/zRemembered.ll
 ; openmpi/optimized/ad_io_coll.ll
@@ -4683,8 +4684,12 @@ entry:
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector.ll
 ; postgres/optimized/zic.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/padding_optimizer.cc.ll
+; protobuf/optimized/parse_context.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
 ; qemu/optimized/block_io.c.ll
@@ -4698,6 +4703,8 @@ entry:
 ; ruby/optimized/array.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/sprintf.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; spike/optimized/sclip16.ll
 ; spike/optimized/sclip32.ll
 ; spike/optimized/sclip8.ll
@@ -9332,7 +9339,7 @@ entry:
   ret i1 %3
 }
 
-; 61 occurrences:
+; 54 occurrences:
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -9381,15 +9388,8 @@ entry:
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/sky.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/parallel_impl.cpp.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll

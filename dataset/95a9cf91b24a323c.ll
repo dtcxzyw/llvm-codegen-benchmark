@@ -1,9 +1,9 @@
 
-%"struct.hb_bit_set_t::page_map_t.2730116" = type { i32, i32 }
-%struct.Dec_Node_t_.2876220 = type { %struct.Dec_Edge_t_.2876221, %struct.Dec_Edge_t_.2876221, %union.anon.1.2876222, i32 }
-%struct.Dec_Edge_t_.2876221 = type { i32 }
-%union.anon.1.2876222 = type { ptr }
-%struct.memblock_region.3537144 = type { i64, i64, i32, i32 }
+%"struct.hb_bit_set_t::page_map_t.2730082" = type { i32, i32 }
+%struct.Dec_Node_t_.2876186 = type { %struct.Dec_Edge_t_.2876187, %struct.Dec_Edge_t_.2876187, %union.anon.1.2876188, i32 }
+%struct.Dec_Edge_t_.2876187 = type { i32 }
+%union.anon.1.2876188 = type { ptr }
+%struct.memblock_region.3537110 = type { i64, i64, i32, i32 }
 
 ; 66 occurrences:
 ; abc/optimized/abcRestruct.c.ll
@@ -77,7 +77,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.hb_bit_set_t::page_map_t.2730116", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.hb_bit_set_t::page_map_t.2730082", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -88,7 +88,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Dec_Node_t_.2876220, ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw nuw %struct.Dec_Node_t_.2876186, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -100,7 +100,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.memblock_region.3537144, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.memblock_region.3537110, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

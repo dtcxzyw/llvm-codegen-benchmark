@@ -1,5 +1,5 @@
 
-; 349 occurrences:
+; 350 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/deflate.c.ll
@@ -231,6 +231,7 @@
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/freak.cpp.ll
+; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -357,7 +358,7 @@ entry:
   ret i32 %3
 }
 
-; 115 occurrences:
+; 116 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -429,6 +430,7 @@ entry:
 ; openjdk/optimized/countbitsnode.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/methodHandles.ll
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
@@ -481,7 +483,7 @@ entry:
   ret i32 %3
 }
 
-; 174 occurrences:
+; 175 occurrences:
 ; abseil-cpp/optimized/clock_test.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -616,6 +618,7 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/busmaster.c.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-aprs.c.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll

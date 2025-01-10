@@ -10,7 +10,8 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

@@ -1,5 +1,5 @@
 
-; 271 occurrences:
+; 272 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -155,6 +155,7 @@
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; minetest/optimized/fontengine.cpp.ll
@@ -493,7 +494,7 @@ entry:
   ret i64 %3
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; arrow/optimized/float16.cc.ll
 ; boost/optimized/alloc_lib.ll
@@ -530,6 +531,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0__Slow.ll
 ; spike/optimized/csrs.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind

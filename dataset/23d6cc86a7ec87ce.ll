@@ -461,7 +461,7 @@ entry:
   ret ptr %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; boost/optimized/copy_segment_point.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
@@ -488,7 +488,6 @@ entry:
 ; zed-rs/optimized/133fnc559z66t9e19x3ipw478.ll
 ; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
 ; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000066(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -1189,18 +1188,6 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; casadi/optimized/integrator.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 -7
-  %4 = icmp slt i64 %1, 7
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; Function Attrs: nounwind
@@ -1208,6 +1195,17 @@ define ptr @func0000000000000058(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -8
   %4 = icmp samesign ugt i64 %1, 1
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; casadi/optimized/integrator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 -8
+  %4 = icmp slt i64 %1, 1
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }

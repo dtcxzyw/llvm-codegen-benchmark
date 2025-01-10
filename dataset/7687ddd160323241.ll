@@ -458,7 +458,7 @@ entry:
   ret i32 %6
 }
 
-; 1174 occurrences:
+; 1173 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/timDump.c.ll
@@ -828,7 +828,6 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll

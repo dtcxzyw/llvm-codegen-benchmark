@@ -1,5 +1,5 @@
 
-%struct.dtPoly.3108532 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
+%struct.dtPoly.3108498 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
 
 ; 12 occurrences:
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -50,7 +50,7 @@ entry:
   %3 = mul i32 %2, 12
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.dtPoly.3108532, ptr %5, i64 %0, i32 4
+  %6 = getelementptr nuw %struct.dtPoly.3108498, ptr %5, i64 %0, i32 4
   ret ptr %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = mul i32 %2, 12
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.dtPoly.3108532, ptr %5, i64 %0, i32 4
+  %6 = getelementptr %struct.dtPoly.3108498, ptr %5, i64 %0, i32 4
   ret ptr %6
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,7 +15,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -39,7 +39,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %5, i64 %4
   ret ptr %6
 }
 

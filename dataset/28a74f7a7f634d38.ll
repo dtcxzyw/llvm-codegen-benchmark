@@ -1,25 +1,13 @@
 
-%"struct.Assimp::SMD::Vertex.2829156" = type { %class.aiVector3t.2829157, %class.aiVector3t.2829157, %class.aiVector3t.2829157, i32, %"class.std::vector.45.2829149" }
-%class.aiVector3t.2829157 = type { float, float, float }
-%"class.std::vector.45.2829149" = type { %"struct.std::_Vector_base.46.2829150" }
-%"struct.std::_Vector_base.46.2829150" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829151" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829151" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829152" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829152" = type { ptr, ptr, ptr }
-%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
+%"struct.Assimp::SMD::Vertex.2829122" = type { %class.aiVector3t.2829123, %class.aiVector3t.2829123, %class.aiVector3t.2829123, i32, %"class.std::vector.45.2829115" }
+%class.aiVector3t.2829123 = type { float, float, float }
+%"class.std::vector.45.2829115" = type { %"struct.std::_Vector_base.46.2829116" }
+%"struct.std::_Vector_base.46.2829116" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829117" }
+%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829117" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829118" }
+%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829118" = type { ptr, ptr, ptr }
+%struct.scatterlist.3540805 = type { i64, i32, i32, i64, i32, i32 }
 
-; 1 occurrences:
-; assimp/optimized/SMDLoader.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 -192
-  %6 = getelementptr nusw nuw [3 x %"struct.Assimp::SMD::Vertex.2829156"], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 15 occurrences:
+; 17 occurrences:
 ; boost/optimized/collator.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
@@ -33,15 +21,29 @@ entry:
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = select i1 %1, i64 8, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 648
-  %6 = getelementptr nusw nuw [24 x ptr], ptr %5, i64 0, i64 %4
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw [3 x i32], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; assimp/optimized/SMDLoader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 0, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -192
+  %6 = getelementptr nusw nuw [3 x %"struct.Assimp::SMD::Vertex.2829122"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -87,7 +89,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr [19 x %struct.scatterlist.3540839], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [19 x %struct.scatterlist.3540805], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

@@ -35,12 +35,11 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; boost/optimized/to_chars.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; freetype/optimized/smooth.c.ll
-; git/optimized/mv.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; icu/optimized/hebrwcal.ll
 ; linux/optimized/gss_generic_token.ll
@@ -194,21 +193,10 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; rocksdb/optimized/compaction_picker.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000126(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = icmp slt i32 %2, %0
-  ret i1 %3
-}
-
-; 50 occurrences:
+; 49 occurrences:
 ; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; eastl/optimized/EATextUtil.cpp.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; gromacs/optimized/binsearch.cpp.ll
 ; hermes/optimized/Number.cpp.ll
 ; icu/optimized/collationkeys.ll

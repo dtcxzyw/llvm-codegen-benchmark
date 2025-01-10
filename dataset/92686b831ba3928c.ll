@@ -419,8 +419,7 @@ entry:
   ret i1 %4
 }
 
-; 72 occurrences:
-; abc/optimized/cmdApi.c.ll
+; 71 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; boost/optimized/buffer_piece_border.ll
 ; boost/optimized/within.ll
@@ -525,8 +524,7 @@ entry:
   ret i1 %4
 }
 
-; 132 occurrences:
-; abc/optimized/cmdApi.c.ll
+; 131 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll

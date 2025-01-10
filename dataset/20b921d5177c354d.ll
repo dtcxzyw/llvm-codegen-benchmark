@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/pata_amd.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; ruby/optimized/iso_8859_4.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll

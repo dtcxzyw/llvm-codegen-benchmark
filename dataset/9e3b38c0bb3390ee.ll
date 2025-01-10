@@ -213,7 +213,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/ivyOper.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; freetype/optimized/sfnt.c.ll
@@ -227,6 +227,7 @@ entry:
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/isa_parser.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

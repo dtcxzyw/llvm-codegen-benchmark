@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2827677 = type { float, float, float }
+%class.aiVector3t.2827643 = type { float, float, float }
 
 ; 3 occurrences:
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = freeze i32 %2
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %class.aiVector3t.2827677, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.aiVector3t.2827643, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 395 occurrences:
+; 394 occurrences:
 ; abseil-cpp/optimized/str_format_test.cc.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
@@ -175,7 +175,6 @@
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Path.cpp.ll

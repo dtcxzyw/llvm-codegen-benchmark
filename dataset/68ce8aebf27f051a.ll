@@ -1,11 +1,11 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
-%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
-%struct.dtPoly.3108532 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
+%class.itableOffsetEntry.2747717 = type <{ ptr, i32, [4 x i8] }>
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
+%struct.dtPoly.3108498 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
 
 ; 101 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -284,8 +284,8 @@ entry:
 define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 76
-  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %3, i64 %1
-  %5 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %4, i64 %0, i32 2
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %3, i64 %1
+  %5 = getelementptr nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %4, i64 %0, i32 2
   ret ptr %5
 }
 
@@ -373,7 +373,7 @@ define ptr @func00000000000000eb(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 64
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr [16 x %struct.P256_POINT.2634394], ptr %4, i64 %0, i64 0, i32 1
+  %5 = getelementptr [16 x %struct.P256_POINT.2634361], ptr %4, i64 %0, i64 0, i32 1
   ret ptr %5
 }
 
@@ -502,7 +502,7 @@ define ptr @func00000000000000e0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = getelementptr nusw i64, ptr %3, i64 %1
-  %5 = getelementptr %class.itableOffsetEntry.2747751, ptr %4, i64 %0
+  %5 = getelementptr %class.itableOffsetEntry.2747717, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
 }
@@ -530,8 +530,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 16
-  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %3, i64 %1
-  %5 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %4, i64 %0, i32 3
+  %4 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %3, i64 %1
+  %5 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %4, i64 %0, i32 3
   ret ptr %5
 }
 
@@ -662,7 +662,7 @@ define ptr @func00000000000000ef(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 100
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nuw %struct.dtPoly.3108532, ptr %4, i64 %0, i32 4
+  %5 = getelementptr nuw %struct.dtPoly.3108498, ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 
@@ -677,8 +677,8 @@ entry:
 define ptr @func00000000000000a0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3241632", ptr %3, i64 %1
-  %5 = getelementptr %"class.llvm::Use.3241632", ptr %4, i64 %0
+  %4 = getelementptr nusw %"class.llvm::Use.3241598", ptr %3, i64 %1
+  %5 = getelementptr %"class.llvm::Use.3241598", ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -32
   ret ptr %6
 }

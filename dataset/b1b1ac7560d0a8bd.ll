@@ -1,6 +1,6 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
-%"struct.Assimp::LWO::Key.2828881" = type <{ double, float, i32, [5 x float], [4 x i8] }>
+%class.aiVector3t.2823125 = type { double, double, double }
+%"struct.Assimp::LWO::Key.2828847" = type <{ double, float, i32, [5 x float], [4 x i8] }>
 
 ; 1 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -39,7 +39,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
   %4 = mul i64 %3, %1
-  %5 = getelementptr nusw nuw %class.aiVector3t.2823159, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.aiVector3t.2823125, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -53,7 +53,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 40
   %4 = mul i64 %3, %1
-  %5 = getelementptr nusw %"struct.Assimp::LWO::Key.2828881", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.Assimp::LWO::Key.2828847", ptr %0, i64 %4
   ret ptr %5
 }
 

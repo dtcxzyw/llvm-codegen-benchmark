@@ -1,10 +1,10 @@
 .LCPI0_0:
-	.long	1048576                         # 0x100000
+	.long	31744                           # 0x7c00
 func000000000000003f:                   # @func000000000000003f
-	vpslld	$19, %ymm2, %ymm2
-	vpslld	$19, %ymm1, %ymm1
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
+	vpslld	$4, %ymm2, %ymm2
+	vpslld	$10, %ymm1, %ymm1
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
 	retq
 .LCPI1_0:
 	.long	3840                            # 0xf00

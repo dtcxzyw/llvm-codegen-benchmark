@@ -1,5 +1,5 @@
 
-%struct.be128.3558475 = type { i64, i64 }
+%struct.be128.3558441 = type { i64, i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/history.c.ll
@@ -33,7 +33,7 @@ define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [256 x %struct.be128.3558475], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [256 x %struct.be128.3558441], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 10 occurrences:
 ; cpython/optimized/bytearrayobject.ll
@@ -95,7 +95,7 @@ entry:
 define i1 @func00000000000000e8(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -133,7 +133,7 @@ entry:
 define i1 @func0000000000000068(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }

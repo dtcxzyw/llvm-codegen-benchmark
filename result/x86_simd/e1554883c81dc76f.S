@@ -113,6 +113,15 @@ func0000000000000088:                   # @func0000000000000088
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI13_0:
+	.quad	40                              # 0x28
+func00000000000001c8:                   # @func00000000000001c8
+	vpmullq	.LCPI13_0(%rip){1to4}, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpnleuq	%ymm2, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func00000000000001a1:                   # @func00000000000001a1
 	vpaddq	%ymm2, %ymm2, %ymm3
 	vpaddq	%ymm2, %ymm3, %ymm2

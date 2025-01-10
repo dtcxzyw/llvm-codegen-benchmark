@@ -86,9 +86,8 @@ func0000000000000078:                   # @func0000000000000078
 .LBB14_2:                               # %entry
 	ret
 func0000000000000006:                   # @func0000000000000006
-	li	a3, 7
-	bge	a1, a3, .LBB15_2
-	addi	a0, a2, -7
+	bgez	a1, .LBB15_2
+	addi	a0, a2, 16
 .LBB15_2:                               # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004

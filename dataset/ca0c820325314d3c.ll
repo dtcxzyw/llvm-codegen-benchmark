@@ -1,15 +1,15 @@
 
-%"class.boost::json::key_value_pair.2995791" = type { %"class.boost::json::value.2995760", ptr, i32, i32 }
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
-%"struct.std::pair.3078635" = type { %"class.hermes::vm::GCSymbolID.3078636", %"struct.hermes::vm::NamedPropertyDescriptor.3078637" }
-%"class.hermes::vm::GCSymbolID.3078636" = type { %"class.hermes::vm::SymbolID.3078638" }
-%"class.hermes::vm::SymbolID.3078638" = type { i32 }
-%"struct.hermes::vm::NamedPropertyDescriptor.3078637" = type { %"struct.hermes::vm::PropertyDescriptor.3078639" }
-%"struct.hermes::vm::PropertyDescriptor.3078639" = type { %union.anon.3.3078640, i32 }
-%union.anon.3.3078640 = type { i32 }
+%"class.boost::json::key_value_pair.2995757" = type { %"class.boost::json::value.2995726", ptr, i32, i32 }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
+%"struct.std::pair.3078601" = type { %"class.hermes::vm::GCSymbolID.3078602", %"struct.hermes::vm::NamedPropertyDescriptor.3078603" }
+%"class.hermes::vm::GCSymbolID.3078602" = type { %"class.hermes::vm::SymbolID.3078604" }
+%"class.hermes::vm::SymbolID.3078604" = type { i32 }
+%"struct.hermes::vm::NamedPropertyDescriptor.3078603" = type { %"struct.hermes::vm::PropertyDescriptor.3078605" }
+%"struct.hermes::vm::PropertyDescriptor.3078605" = type { %union.anon.3.3078606, i32 }
+%union.anon.3.3078606 = type { i32 }
 
 ; 2 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -42,7 +42,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw %"class.boost::json::key_value_pair.2995791", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.boost::json::key_value_pair.2995757", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -55,7 +55,7 @@ entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 28
-  %5 = getelementptr nusw nuw %"struct.std::pair.3078635", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.std::pair.3078601", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

@@ -1,5 +1,5 @@
 
-%struct.FreePageBtreeLeafKey.3653935 = type { i64, i64 }
+%struct.FreePageBtreeLeafKey.3653901 = type { i64, i64 }
 
 ; 18 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
@@ -36,7 +36,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = add i64 %0, -1
-  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653935], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [254 x %struct.FreePageBtreeLeafKey.3653901], ptr %1, i64 0, i64 %2
   %4 = icmp eq i64 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

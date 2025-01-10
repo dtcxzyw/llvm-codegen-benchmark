@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3170955" = type { ptr, ptr, ptr, ptr }
-%struct.PagetableEntry.3653389 = type { i32, i8, i8, i8, [5 x i64] }
+%"class.llvm::Use.3170921" = type { ptr, ptr, ptr, ptr }
+%struct.PagetableEntry.3653355 = type { i32, i8, i8, i8, [5 x i64] }
 
 ; 25 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -48,7 +48,7 @@ define ptr @func000000000000001a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw %"class.llvm::Use.3170955", ptr %4, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3170921", ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -32
   ret ptr %6
 }
@@ -72,7 +72,7 @@ define ptr @func0000000000000013(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr %struct.PagetableEntry.3653389, ptr %4, i64 %0, i32 4
+  %5 = getelementptr %struct.PagetableEntry.3653355, ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 

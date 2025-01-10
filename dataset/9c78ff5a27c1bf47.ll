@@ -1,8 +1,7 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/BodyFarm.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll

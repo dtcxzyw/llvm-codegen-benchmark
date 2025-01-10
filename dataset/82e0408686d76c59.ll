@@ -86,8 +86,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 15 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; lief/optimized/CoreAuxv.cpp.ll
 ; lief/optimized/CorePrStatus.cpp.ll
@@ -102,7 +101,6 @@ entry:
 ; lief/optimized/X86Feature.cpp.ll
 ; lief/optimized/X86ISA.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i64 %0, i1 %1) #0 {
@@ -185,9 +183,11 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i64 %0, i1 %1) #0 {
 entry:

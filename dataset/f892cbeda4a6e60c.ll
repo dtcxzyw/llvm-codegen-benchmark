@@ -84,7 +84,8 @@ entry:
   ret i1 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; lz4/optimized/lz4hc.c.ll
 ; wireshark/optimized/astringlist_list_model.cpp.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; wireshark/optimized/extcap_options_dialog.cpp.ll

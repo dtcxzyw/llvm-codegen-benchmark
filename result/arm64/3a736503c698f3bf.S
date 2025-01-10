@@ -26,7 +26,7 @@ func0000000000000009:                   // @func0000000000000009
 	orr	x0, x8, x1, lsl #63
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	ubfiz	x8, x1, #1, #8
@@ -40,11 +40,11 @@ func000000000000000d:                   // @func000000000000000d
 	bfi	x0, x1, #63, #1
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
+func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	ubfiz	x8, x1, #2, #8
-	and	x9, x0, #0xfffffffffffffffb
+	ubfiz	x8, x1, #17, #8
+	and	x9, x0, #0xffffffffffff7fff
 	orr	x0, x9, x8
 	ret
                                         // -- End function

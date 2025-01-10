@@ -41,6 +41,20 @@ entry:
   ret i64 %7
 }
 
+; 2 occurrences:
+; hdf5/optimized/H5Gstab.c.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 7
+  %4 = add nuw nsw i64 %3, %1
+  %5 = and i64 %4, 1016
+  %6 = add nuw nsw i64 %0, 8
+  %7 = add nuw nsw i64 %6, %5
+  ret i64 %7
+}
+
 ; 3 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -79,6 +93,32 @@ entry:
   %5 = and i64 %4, -32
   %6 = add i64 %0, 15
   %7 = add i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000f0(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 31
+  %4 = add nuw nsw i64 %3, %1
+  %5 = and i64 %4, 4503599627370464
+  %6 = add i64 %0, 15
+  %7 = add i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; cmake/optimized/index_hash.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 7
+  %4 = add i64 %3, %1
+  %5 = and i64 %4, -4
+  %6 = add nuw i64 %0, 24
+  %7 = add nuw i64 %6, %5
   ret i64 %7
 }
 

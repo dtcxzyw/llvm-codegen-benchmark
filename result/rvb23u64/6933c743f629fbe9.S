@@ -33,17 +33,6 @@ func00000000000002d8:                   # @func00000000000002d8
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000302:                   # @func0000000000000302
-	sext.w	a1, a1
-	sext.w	a0, a0
-	andi	a2, a2, -16
-	bclri	a2, a2, 63
-	xor	a0, a0, a1
-	addi	a2, a2, -16
-	seqz	a1, a2
-	snez	a0, a0
-	or	a0, a0, a1
-	ret
 func0000000000000142:                   # @func0000000000000142
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -78,6 +67,15 @@ func00000000000002c2:                   # @func00000000000002c2
 	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
+	ret
+func0000000000000302:                   # @func0000000000000302
+	sext.w	a1, a1
+	sext.w	a0, a0
+	not	a2, a2
+	bexti	a2, a2, 32
+	xor	a0, a0, a1
+	snez	a0, a0
+	or	a0, a0, a2
 	ret
 func0000000000000242:                   # @func0000000000000242
 	sext.w	a1, a1

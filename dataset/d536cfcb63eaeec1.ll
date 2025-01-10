@@ -1,15 +1,15 @@
 
-%struct.VuVirtq.2706746 = type { %struct.VuRing.2706747, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706748 }
-%struct.VuRing.2706747 = type { i32, ptr, ptr, ptr, i64, i32 }
-%struct.vhost_vring_addr.2706748 = type { i32, i32, i64, i64, i64, i64 }
-%struct.CacheSet.2708850 = type { ptr, ptr, i64, ptr }
-%"struct.btSoftBody::Node.2819528" = type <{ %"struct.btSoftBody::Feature.2819529", %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, %class.btVector3.2819523, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2819523, %class.btMatrix3x3.2819526, %class.btMatrix3x3.2819526, [4 x i8] }>
-%"struct.btSoftBody::Feature.2819529" = type { %"struct.btSoftBody::Element.2819530", ptr }
-%"struct.btSoftBody::Element.2819530" = type { ptr }
-%class.btVector3.2819523 = type { [4 x float] }
-%class.btMatrix3x3.2819526 = type { [3 x %class.btVector3.2819523] }
-%struct.Column.3662203 = type { ptr, i8, i8, i8, i8, i16, i16 }
-%struct._PyCoLineInstrumentationData.3988294 = type { i8, i8 }
+%struct.VuVirtq.2706712 = type { %struct.VuRing.2706713, ptr, ptr, i16, i64, i16, i16, i16, i16, i8, i8, i32, ptr, i32, i32, i32, i32, i8, %struct.vhost_vring_addr.2706714 }
+%struct.VuRing.2706713 = type { i32, ptr, ptr, ptr, i64, i32 }
+%struct.vhost_vring_addr.2706714 = type { i32, i32, i64, i64, i64, i64 }
+%struct.CacheSet.2708816 = type { ptr, ptr, i64, ptr }
+%"struct.btSoftBody::Node.2819494" = type <{ %"struct.btSoftBody::Feature.2819495", %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, %class.btVector3.2819489, float, float, ptr, i32, i8, [3 x i8], i32, %class.btVector3.2819489, %class.btMatrix3x3.2819492, %class.btMatrix3x3.2819492, [4 x i8] }>
+%"struct.btSoftBody::Feature.2819495" = type { %"struct.btSoftBody::Element.2819496", ptr }
+%"struct.btSoftBody::Element.2819496" = type { ptr }
+%class.btVector3.2819489 = type { [4 x float] }
+%class.btMatrix3x3.2819492 = type { [3 x %class.btVector3.2819489] }
+%struct.Column.3662153 = type { ptr, i8, i8, i8, i8, i16, i16 }
+%struct._PyCoLineInstrumentationData.3988244 = type { i8, i8 }
 
 ; 9 occurrences:
 ; abc/optimized/giaUtil.c.ll
@@ -26,7 +26,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.VuVirtq.2706746, ptr %0, i64 %3, i32 14
+  %4 = getelementptr %struct.VuVirtq.2706712, ptr %0, i64 %3, i32 14
   ret ptr %4
 }
 
@@ -109,7 +109,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %struct.CacheSet.2708850, ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw %struct.CacheSet.2708816, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -122,7 +122,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 24
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %"struct.btSoftBody::Node.2819528", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.btSoftBody::Node.2819494", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -133,7 +133,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 16
   %3 = ashr exact i64 %2, 16
-  %4 = getelementptr nusw nuw %struct.Column.3662203, ptr %0, i64 %3, i32 6
+  %4 = getelementptr nusw nuw %struct.Column.3662153, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 
@@ -144,7 +144,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct._PyCoLineInstrumentationData.3988294, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct._PyCoLineInstrumentationData.3988244, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

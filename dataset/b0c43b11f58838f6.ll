@@ -146,7 +146,7 @@ entry:
   ret i32 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
@@ -159,7 +159,6 @@ entry:
 ; linux/optimized/intel_pmdemand.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/map.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll

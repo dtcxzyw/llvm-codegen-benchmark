@@ -66,17 +66,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; php/optimized/tm2unixtime.ll
-; Function Attrs: nounwind
-define i1 @func00000000000004ca(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %1, %2
-  %4 = icmp slt i64 %0, 12
-  %5 = and i1 %3, %4
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; php/optimized/array.ll
@@ -89,7 +78,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 35 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/manifold.cc.ll
@@ -122,12 +111,9 @@ entry:
 ; g2o/optimized/edge_se3_calib.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
-; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; php/optimized/array.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000054a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -187,19 +173,6 @@ entry:
   %4 = icmp eq i64 %3, 32
   %5 = icmp ugt i64 %0, 32
   %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 2 occurrences:
-; libquic/optimized/time.cc.ll
-; protobuf/optimized/arena.cc.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = icmp sgt i64 %3, -1
-  %5 = icmp slt i64 %0, 0
-  %6 = and i1 %4, %5
   ret i1 %6
 }
 
@@ -352,6 +325,18 @@ entry:
   %4 = icmp sgt i64 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
+}
+
+; 1 occurrences:
+; protobuf/optimized/arena.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp slt i64 %3, 1025
+  %5 = icmp sgt i64 %0, 24
+  %6 = and i1 %5, %4
+  ret i1 %6
 }
 
 ; 1 occurrences:

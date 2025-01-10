@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 116 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -31,7 +31,6 @@
 ; cvc5/optimized/theory_bv.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; folly/optimized/Conv.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; graphviz/optimized/textspan_lut.c.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; gromacs/optimized/tng_io.c.ll

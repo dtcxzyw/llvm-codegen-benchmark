@@ -21,14 +21,14 @@ func000000000000006d:                   // @func000000000000006d
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
 	cmn	x2, x4
 	adc	x8, x3, x5
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000048:                   // @func0000000000000048
+func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	cmn	x2, x4
 	adc	x8, x3, x5

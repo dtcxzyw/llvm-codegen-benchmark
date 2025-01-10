@@ -46,7 +46,7 @@ func0000000000000028:                   # @func0000000000000028
 	notq	%rsi
 	leaq	-1(%rdi,%rsi), %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000015:                   # @func0000000000000015
 	subq	%rsi, %rdi
 	leaq	-8(%rdi), %rax
 	retq

@@ -10,8 +10,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; linux/optimized/pci.ll
+; 4 occurrences:
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll

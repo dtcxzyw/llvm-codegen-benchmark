@@ -1,10 +1,8 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%struct.ExtensionBlock.2730989 = type { i32, ptr, i32 }
-%struct.btSupportVector.2818722 = type { %class.btVector3.2818718, %class.btVector3.2818718, %class.btVector3.2818718 }
-%class.btVector3.2818718 = type { [4 x float] }
-%struct.Vec_Int_t_.2876104 = type { i32, i32, ptr }
-%struct.ext4_ext_path.3555768 = type { i64, i16, i16, ptr, ptr, ptr, ptr }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%struct.ExtensionBlock.2730955 = type { i32, ptr, i32 }
+%struct.Vec_Int_t_.2876070 = type { i32, i32, ptr }
+%struct.ext4_ext_path.3555734 = type { i64, i16, i16, ptr, ptr, ptr, ptr }
 
 ; 63 occurrences:
 ; cpython/optimized/ceval.ll
@@ -75,7 +73,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -136,7 +134,7 @@ entry:
   ret ptr %5
 }
 
-; 218 occurrences:
+; 220 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -156,6 +154,7 @@ entry:
 ; bullet3/optimized/btConvexHullComputer.ll
 ; bullet3/optimized/btDbvt.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btHashedSimplePairCache.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -165,6 +164,7 @@ entry:
 ; cvc5/optimized/Solver.cc.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/smooth.c.ll
+; git/optimized/xutils.ll
 ; graphviz/optimized/flat.c.ll
 ; graphviz/optimized/multispline.c.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
@@ -359,7 +359,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.ExtensionBlock.2730989, ptr %0, i64 %2
+  %3 = getelementptr %struct.ExtensionBlock.2730955, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
   ret ptr %4
 }
@@ -428,7 +428,7 @@ entry:
   ret ptr %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -446,6 +446,7 @@ entry:
 ; libwebp/optimized/histogram_enc.c.ll
 ; linux/optimized/tx.ll
 ; luajit/optimized/minilua.ll
+; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; quickjs/optimized/quickjs.ll
@@ -732,18 +733,6 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; bullet3/optimized/btGjkPairDetector.ll
-; git/optimized/xutils.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.btSupportVector.2818722, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 56
-  ret ptr %4
-}
-
 ; 101 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -850,7 +839,7 @@ entry:
 define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.Vec_Int_t_.2876104, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.Vec_Int_t_.2876070, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -911,7 +900,7 @@ define ptr @func0000000000000023(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ext4_ext_path.3555768, ptr %0, i64 %3, i32 6
+  %4 = getelementptr %struct.ext4_ext_path.3555734, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 

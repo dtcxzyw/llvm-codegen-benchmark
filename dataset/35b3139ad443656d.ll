@@ -1,9 +1,9 @@
 
-%"class.std::vector.3.2908777" = type { %"struct.std::_Vector_base.4.2908778" }
-%"struct.std::_Vector_base.4.2908778" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2908779" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2908779" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2908780" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2908780" = type { ptr, ptr, ptr }
-%struct._wsp_pdu_t.3440967 = type { ptr, i32 }
+%"class.std::vector.3.2908743" = type { %"struct.std::_Vector_base.4.2908744" }
+%"struct.std::_Vector_base.4.2908744" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2908745" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.2908745" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2908746" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.2908746" = type { ptr, ptr, ptr }
+%struct._wsp_pdu_t.3440933 = type { ptr, i32 }
 
 ; 3 occurrences:
 ; darktable/optimized/amaze.cc.ll
@@ -148,8 +148,8 @@ entry:
 define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.3.2908777", ptr %0, i64 %1
-  %5 = getelementptr %"class.std::vector.3.2908777", ptr %4, i64 %3, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.std::vector.3.2908743", ptr %0, i64 %1
+  %5 = getelementptr %"class.std::vector.3.2908743", ptr %4, i64 %3, i32 0, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -184,8 +184,8 @@ entry:
 define ptr @func0000000000000073(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct._wsp_pdu_t.3440967, ptr %0, i64 %1
-  %5 = getelementptr %struct._wsp_pdu_t.3440967, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %struct._wsp_pdu_t.3440933, ptr %0, i64 %1
+  %5 = getelementptr %struct._wsp_pdu_t.3440933, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

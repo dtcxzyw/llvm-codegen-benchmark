@@ -19,6 +19,11 @@ func0000000000000075:                   # @func0000000000000075
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a1, a1, 30
+	slliw	a0, a0, 2
+	sltu	a0, a0, a1
+	ret
 func0000000000000061:                   # @func0000000000000061
 	lui	a2, 262144
 	addiw	a2, a2, -8

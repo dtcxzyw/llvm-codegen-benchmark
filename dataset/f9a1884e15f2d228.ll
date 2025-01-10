@@ -1,5 +1,5 @@
 
-%struct.aiString.2822552 = type { i32, [1024 x i8] }
+%struct.aiString.2822518 = type { i32, [1024 x i8] }
 
 ; 6 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
@@ -13,7 +13,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.aiString.2822552, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.aiString.2822518, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

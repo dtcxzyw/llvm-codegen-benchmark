@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; graphviz/optimized/pack.c.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
@@ -21,9 +20,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; darktable/optimized/darktable.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll

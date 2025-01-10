@@ -1,13 +1,3 @@
-func0000000000000021:                   // @func0000000000000021
-// %bb.0:                               // %entry
-	bic	w8, w2, w2, asr #31
-	tst	w0, #0x1
-	mov	w9, #2147483647                 // =0x7fffffff
-	csel	w8, w1, w8, ne
-	cmp	w8, w9
-	cset	w0, eq
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	cmp	w1, #0
@@ -15,13 +5,13 @@ func0000000000000006:                   // @func0000000000000006
 	and	w0, w0, w8
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	bic	w8, w2, w2, asr #31
 	tst	w0, #0x1
 	csel	w8, w1, w8, ne
 	cmp	w8, #0
-	cset	w0, gt
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

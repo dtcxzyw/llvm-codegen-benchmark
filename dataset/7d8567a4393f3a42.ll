@@ -1,9 +1,9 @@
 
-%"struct.folly::relaxed_atomic.2689758" = type { %"struct.folly::detail::relaxed_atomic_integral_base.2689759" }
-%"struct.folly::detail::relaxed_atomic_integral_base.2689759" = type { %"struct.folly::detail::relaxed_atomic_base.2689760" }
-%"struct.folly::detail::relaxed_atomic_base.2689760" = type { %"struct.std::atomic.2689761" }
-%"struct.std::atomic.2689761" = type { %"struct.std::__atomic_base.2689762" }
-%"struct.std::__atomic_base.2689762" = type { i8 }
+%"struct.folly::relaxed_atomic.2689724" = type { %"struct.folly::detail::relaxed_atomic_integral_base.2689725" }
+%"struct.folly::detail::relaxed_atomic_integral_base.2689725" = type { %"struct.folly::detail::relaxed_atomic_base.2689726" }
+%"struct.folly::detail::relaxed_atomic_base.2689726" = type { %"struct.std::atomic.2689727" }
+%"struct.std::atomic.2689727" = type { %"struct.std::__atomic_base.2689728" }
+%"struct.std::__atomic_base.2689728" = type { i8 }
 
 ; 54 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -97,7 +97,7 @@ define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 -1, i64 %3
-  %5 = getelementptr nusw %"struct.folly::relaxed_atomic.2689758", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.folly::relaxed_atomic.2689724", ptr %0, i64 %4
   ret ptr %5
 }
 

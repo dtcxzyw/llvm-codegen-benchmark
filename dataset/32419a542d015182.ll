@@ -1,5 +1,5 @@
 
-; 1493 occurrences:
+; 1494 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/cecPat.c.ll
@@ -303,6 +303,7 @@
 ; cpython/optimized/odictobject.ll
 ; cpython/optimized/pegen_errors.ll
 ; cpython/optimized/posixmodule.ll
+; cpython/optimized/pystrtod.ll
 ; cpython/optimized/selectmodule.ll
 ; cpython/optimized/socketmodule.ll
 ; cpython/optimized/stringio.ll

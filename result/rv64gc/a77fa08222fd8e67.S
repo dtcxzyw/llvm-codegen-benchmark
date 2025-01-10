@@ -49,11 +49,6 @@ func0000000000000003:                   # @func0000000000000003
 	sub	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func000000000000000e:                   # @func000000000000000e
-	sub	a0, a0, a1
-	addi	a0, a0, 2047
-	addi	a0, a0, 1053
-	ret
 func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a1
 	addi	a0, a0, 28
@@ -80,7 +75,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000001f:                   # @func000000000000001f
 	sub	a0, a0, a1
-	addi	a0, a0, 32
+	addi	a0, a0, 1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sub	a0, a0, a1

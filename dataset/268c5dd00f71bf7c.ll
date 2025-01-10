@@ -1,10 +1,10 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
-%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
+%struct.mstate_aux.3855306 = type { i32, i32, i16, i32 }
 
 ; 16 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -71,9 +71,9 @@ entry:
 define ptr @func000000000000006f(i64 %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 16
-  %4 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -222,7 +222,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -64
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.mstate_aux.3855306, ptr %4, i64 %5
   ret ptr %6
 }
 

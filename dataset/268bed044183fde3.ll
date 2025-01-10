@@ -204,14 +204,13 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaTsim.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/nls_base.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind

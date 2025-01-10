@@ -1,8 +1,3 @@
-func000000000000012a:                   # @func000000000000012a
-	shrq	$32, %rsi
-	cmpl	%esi, %edi
-	setg	%al
-	retq
 func0000000000000126:                   # @func0000000000000126
 	shrq	$32, %rsi
 	cmpl	%esi, %edi
@@ -31,6 +26,11 @@ func0000000000000204:                   # @func0000000000000204
 	subl	%esi, %edi
 	cmpl	$8, %edi
 	setb	%al
+	retq
+func000000000000012a:                   # @func000000000000012a
+	shrq	$32, %rsi
+	cmpl	%esi, %edi
+	setge	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	shrq	%rsi

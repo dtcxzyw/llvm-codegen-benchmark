@@ -15,12 +15,13 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; minetest/optimized/CImage.cpp.ll
 ; mitsuba3/optimized/envmap.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,6 +1,6 @@
 
-%"class.std::basic_string_view.2932452" = type { i64, ptr }
-%union._Py_CODEUNIT.3967078 = type { i16 }
+%"class.std::basic_string_view.2932418" = type { i64, ptr }
+%union._Py_CODEUNIT.3967028 = type { i16 }
 
 ; 4 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
@@ -25,7 +25,7 @@ entry:
 define ptr @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = getelementptr nusw nuw %"class.std::basic_string_view.2932452", ptr null, i64 %1
+  %2 = getelementptr nusw nuw %"class.std::basic_string_view.2932418", ptr null, i64 %1
   ret ptr %2
 }
 
@@ -35,7 +35,7 @@ entry:
 define ptr @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
-  %2 = getelementptr %union._Py_CODEUNIT.3967078, ptr null, i64 %1
+  %2 = getelementptr %union._Py_CODEUNIT.3967028, ptr null, i64 %1
   ret ptr %2
 }
 

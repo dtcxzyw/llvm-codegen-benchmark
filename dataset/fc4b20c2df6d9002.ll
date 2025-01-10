@@ -248,12 +248,8 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/sbdCut.c.ll
 ; glslang/optimized/Constant.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll

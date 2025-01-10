@@ -1,7 +1,7 @@
 
-%"class.cv::Point_.3750231" = type { float, float }
-%"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768624" = type { %"class.cv::Point3_.3768623", i32, i64, i64 }
-%"class.cv::Point3_.3768623" = type { float, float, float }
+%"class.cv::Point_.3750181" = type { float, float }
+%"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768574" = type { %"class.cv::Point3_.3768573", i32, i64, i64 }
+%"class.cv::Point3_.3768573" = type { float, float, float }
 
 ; 2 occurrences:
 ; gromacs/optimized/mtop_util.cpp.ll
@@ -84,7 +84,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = mul nsw i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cv::Point_.3750231", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cv::Point_.3750181", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -111,7 +111,7 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = mul i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768624", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cv::bgsegm::(anonymous namespace)::BackgroundSampleGSOC.3768574", ptr %0, i64 %6
   ret ptr %7
 }
 

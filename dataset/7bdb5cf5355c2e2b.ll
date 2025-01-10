@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll

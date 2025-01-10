@@ -168,11 +168,6 @@ func0000000000000068:                   # @func0000000000000068
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	imull	%edx, %esi
-	cmpq	%rsi, %rdi
-	seta	%al
-	retq
 func0000000000000084:                   # @func0000000000000084
 	imull	%edx, %esi
 	cmpq	%rsi, %rdi

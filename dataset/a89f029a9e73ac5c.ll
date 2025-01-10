@@ -1,8 +1,8 @@
 
-%"struct.rocksdb::BlockCacheLookupContext.2613155" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613069", i64, i64, %"class.std::__cxx11::basic_string.2613069", i8, [7 x i8] }>
-%"class.std::__cxx11::basic_string.2613069" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070", i64, %union.anon.2613071 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613070" = type { ptr }
-%union.anon.2613071 = type { i64, [8 x i8] }
+%"struct.rocksdb::BlockCacheLookupContext.2613122" = type <{ i8, i8, i8, i8, [4 x i8], i64, %"class.std::__cxx11::basic_string.2613036", i64, i64, %"class.std::__cxx11::basic_string.2613036", i8, [7 x i8] }>
+%"class.std::__cxx11::basic_string.2613036" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037", i64, %union.anon.2613038 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2613037" = type { ptr }
+%union.anon.2613038 = type { i64, [8 x i8] }
 
 ; 48 occurrences:
 ; abc/optimized/utilIsop.c.ll
@@ -61,7 +61,7 @@ entry:
   ret ptr %4
 }
 
-; 344 occurrences:
+; 345 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -254,6 +254,7 @@ entry:
 ; lvgl/optimized/lv_draw_sw_transform.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/5avg215hrxp5j19q.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
@@ -409,7 +410,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613155", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::BlockCacheLookupContext.2613122", ptr %1, i64 %2
   %4 = select i1 %0, ptr null, ptr %3
   ret ptr %4
 }

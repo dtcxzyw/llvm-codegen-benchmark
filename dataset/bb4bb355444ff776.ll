@@ -1,6 +1,6 @@
 
-%struct.relRanksType.3487799 = type { [15 x [4 x %struct.absRankType.3487798]] }
-%struct.absRankType.3487798 = type { i8, i8 }
+%struct.relRanksType.3487765 = type { [15 x [4 x %struct.absRankType.3487764]] }
+%struct.absRankType.3487764 = type { i8, i8 }
 
 ; 9 occurrences:
 ; abc/optimized/amapMatch.c.ll
@@ -41,7 +41,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [8192 x %struct.relRanksType.3487799], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8192 x %struct.relRanksType.3487765], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

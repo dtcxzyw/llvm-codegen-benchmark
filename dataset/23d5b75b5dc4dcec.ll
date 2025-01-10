@@ -176,7 +176,7 @@ entry:
   ret i32 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -207,7 +207,6 @@ entry:
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spgvacuum.ll
 ; qemu/optimized/net_colo.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll

@@ -1,9 +1,3 @@
-func0000000000000075:                   # @func0000000000000075
-	movslq	%edx, %rax
-	shlq	$6, %rax
-	addq	%rsi, %rax
-	leaq	760(%rdi,%rax), %rax
-	retq
 func0000000000000055:                   # @func0000000000000055
 	movslq	%edx, %rax
 	shlq	$4, %rax

@@ -1,5 +1,5 @@
 
-%"class.btAxisSweep3Internal<unsigned short>::Edge.2819245" = type { i16, i16 }
+%"class.btAxisSweep3Internal<unsigned short>::Edge.2819211" = type { i16, i16 }
 
 ; 2 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
@@ -9,7 +9,7 @@ define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.btAxisSweep3Internal<unsigned short>::Edge.2819245", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.btAxisSweep3Internal<unsigned short>::Edge.2819211", ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -1,11 +1,3 @@
-func0000000000000acc:                   # @func0000000000000acc
-	addl	%edx, %esi
-	cmpl	%edi, %esi
-	setge	%cl
-	testl	%esi, %esi
-	sets	%al
-	orb	%cl, %al
-	retq
 func0000000000000a8c:                   # @func0000000000000a8c
 	addl	%edx, %esi
 	cmpl	$-3, %esi

@@ -143,9 +143,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openusd/optimized/decodemv.c.ll
-; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:

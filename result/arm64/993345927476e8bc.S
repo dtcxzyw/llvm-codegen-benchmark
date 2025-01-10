@@ -22,7 +22,7 @@ func000000000000003c:                   // @func000000000000003c
 	add	x0, x0, w8, uxtw #2
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
 	lsr	w8, w1, #29
 	add	x0, x0, x8, lsl #52
@@ -32,5 +32,12 @@ func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	lsr	w8, w1, #31
 	add	x0, x0, x8, lsl #63
+	ret
+                                        // -- End function
+func000000000000001c:                   // @func000000000000001c
+// %bb.0:                               // %entry
+	lsr	w8, w1, #2
+	and	w8, w8, #0x3ffffffe
+	add	x0, x0, x8
 	ret
                                         // -- End function

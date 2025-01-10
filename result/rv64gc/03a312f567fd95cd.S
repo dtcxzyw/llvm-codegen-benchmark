@@ -15,27 +15,19 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a1, a1
 	seqz	a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
-	andi	a0, a0, 1
-	beqz	a0, .LBB2_2
-	srli	a1, a2, 3
-.LBB2_2:                                # %entry
-	sext.w	a1, a1
-	slti	a0, a1, 1
-	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a0, a0, 1
-	beqz	a0, .LBB3_2
+	beqz	a0, .LBB2_2
 	srli	a1, a2, 32
-.LBB3_2:                                # %entry
+.LBB2_2:                                # %entry
 	sext.w	a1, a1
 	seqz	a0, a1
 	ret
 func0000000000000086:                   # @func0000000000000086
 	andi	a0, a0, 1
-	beqz	a0, .LBB4_2
+	beqz	a0, .LBB3_2
 	srli	a1, a2, 2
-.LBB4_2:                                # %entry
+.LBB3_2:                                # %entry
 	sext.w	a1, a1
 	slti	a0, a1, 0
 	ret

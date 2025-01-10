@@ -21,7 +21,7 @@ func0000000000000003:                   # @func0000000000000003
 	leaq	15(%rdi), %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	movl	$2, %eax
+	movl	$4, %eax
 	subq	%rsi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq

@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; qemu/optimized/block_vvfat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 %2, %0
+  %4 = shl i32 %3, 4
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll

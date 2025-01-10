@@ -1,8 +1,0 @@
-func0000000000000b08:                   # @func0000000000000b08
-	vptestnmd	%ymm1, %ymm1, %k1
-	vptestmd	%ymm0, %ymm0, %k0 {%k1}
-	vpcmpltud	%ymm1, %ymm0, %k1
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

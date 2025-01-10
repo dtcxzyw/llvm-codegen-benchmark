@@ -5,8 +5,8 @@
 ; llvm/optimized/SemaOverload.cpp.ll
 ; luau/optimized/IrCallWrapperX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
-; minetest/optimized/reflowscan.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
+; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openusd/optimized/pred_common.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; yoga/optimized/Node.cpp.ll
@@ -21,8 +21,7 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
-; clap-rs/optimized/4bajo035z6e1d4qz.ll
+; 53 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll

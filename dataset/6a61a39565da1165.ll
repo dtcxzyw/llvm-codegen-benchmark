@@ -1,5 +1,5 @@
 
-%"struct.rocksdb::LevelFilesBrief.2615437" = type { i64, ptr }
+%"struct.rocksdb::LevelFilesBrief.2615404" = type { i64, ptr }
 
 ; 131 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -556,7 +556,7 @@ entry:
   %4 = tail call i64 @llvm.umax.i64(i64 %1, i64 %3)
   %5 = add nuw nsw i64 %4, %1
   %6 = tail call i64 @llvm.umin.i64(i64 %5, i64 576460752303423487)
-  %7 = getelementptr nusw nuw %"struct.rocksdb::LevelFilesBrief.2615437", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.rocksdb::LevelFilesBrief.2615404", ptr %0, i64 %6
   ret ptr %7
 }
 

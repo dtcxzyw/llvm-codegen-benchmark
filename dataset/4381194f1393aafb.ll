@@ -923,9 +923,10 @@ entry:
   ret i1 %2
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cpython/optimized/assemble.ll
+; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/packfile.ll
 ; git/optimized/unix-socket.ll

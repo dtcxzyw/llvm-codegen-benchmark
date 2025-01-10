@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_progress_bar.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -10,9 +12,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 100)
+  %1 = tail call i32 @llvm.smin.i32(i32 %0, i32 49)
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
-  %3 = shl nuw nsw i32 %2, 1
+  %3 = shl nuw nsw i32 %2, 3
   ret i32 %3
 }
 

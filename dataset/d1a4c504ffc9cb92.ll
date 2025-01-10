@@ -103,9 +103,10 @@ entry:
   ret i64 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/dictionary.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; git/optimized/sequencer.ll
 ; gromacs/optimized/biasgrid.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

@@ -3,11 +3,6 @@ func000000000000001a:                   # @func000000000000001a
 	andq	$-64, %rsi
 	leaq	64(%rdi,%rsi), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
-	subq	%rdx, %rdi
-	andq	$-64, %rsi
-	leaq	64(%rdi,%rsi), %rax
-	retq
 func000000000000003e:                   # @func000000000000003e
 	subq	%rdx, %rdi
 	andq	$-64, %rsi
@@ -38,4 +33,9 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rdx, %rdi
 	andq	$-4096, %rsi                    # imm = 0xF000
 	leaq	1(%rdi,%rsi), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	subq	%rdx, %rdi
+	movl	%esi, %eax
+	addq	%rdi, %rax
 	retq

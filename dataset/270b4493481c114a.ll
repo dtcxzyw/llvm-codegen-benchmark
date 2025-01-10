@@ -66,7 +66,7 @@ define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = tail call i64 @llvm.smin.i64(i64 %0, i64 320)
   %2 = tail call i64 @llvm.smax.i64(i64 %1, i64 8)
-  %3 = and i64 %2, 9223372036854775800
+  %3 = and i64 %2, 504
   ret i64 %3
 }
 

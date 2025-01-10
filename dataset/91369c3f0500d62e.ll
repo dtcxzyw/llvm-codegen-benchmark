@@ -1,6 +1,6 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.837.2717377" = type { %union.anon.838.2717378 }
-%union.anon.838.2717378 = type { ptr }
+%"class.openvdb::v11_0::tree::NodeUnion.837.2717343" = type { %union.anon.838.2717344 }
+%union.anon.838.2717344 = type { ptr }
 
 ; 12 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -34,7 +34,7 @@ define ptr @func000000000000005b(ptr %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw %"class.openvdb::v11_0::tree::NodeUnion.837.2717377", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.openvdb::v11_0::tree::NodeUnion.837.2717343", ptr %0, i64 %4
   ret ptr %5
 }
 

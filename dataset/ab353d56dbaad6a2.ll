@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::ConcurrentArena::Shard.2625629" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625630", ptr, %"struct.std::atomic.2625631" }
-%"class.rocksdb::SpinMutex.2625630" = type { %"struct.std::atomic.94.2625632" }
-%"struct.std::atomic.94.2625632" = type { %"struct.std::__atomic_base.95.2625633" }
-%"struct.std::__atomic_base.95.2625633" = type { i8 }
-%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
-%"struct.std::__atomic_base.2625634" = type { i64 }
-%struct.ZSTD_seqSymbol.3550254 = type { i16, i8, i8, i32 }
-%struct.RoseLongLitHashEntry.3854681 = type { i32, i32 }
+%"struct.rocksdb::ConcurrentArena::Shard.2625596" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625597", ptr, %"struct.std::atomic.2625598" }
+%"class.rocksdb::SpinMutex.2625597" = type { %"struct.std::atomic.94.2625599" }
+%"struct.std::atomic.94.2625599" = type { %"struct.std::__atomic_base.95.2625600" }
+%"struct.std::__atomic_base.95.2625600" = type { i8 }
+%"struct.std::atomic.2625598" = type { %"struct.std::__atomic_base.2625601" }
+%"struct.std::__atomic_base.2625601" = type { i64 }
+%struct.ZSTD_seqSymbol.3550220 = type { i16, i8, i8, i32 }
+%struct.RoseLongLitHashEntry.3854631 = type { i32, i32 }
 
 ; 28 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -42,7 +42,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr nuw %"struct.rocksdb::ConcurrentArena::Shard.2625629", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.rocksdb::ConcurrentArena::Shard.2625596", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -54,7 +54,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr %struct.ZSTD_seqSymbol.3550254, ptr %0, i64 %4, i32 3
+  %5 = getelementptr %struct.ZSTD_seqSymbol.3550220, ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 
@@ -65,7 +65,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, 4294967295
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3854681, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.RoseLongLitHashEntry.3854631, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -4
   ret ptr %6
 }

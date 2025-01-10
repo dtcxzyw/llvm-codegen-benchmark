@@ -41,9 +41,8 @@ entry:
   ret i64 %7
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

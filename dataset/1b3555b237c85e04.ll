@@ -1,5 +1,5 @@
 
-%struct.YGValue.2705306 = type { float, i32 }
+%struct.YGValue.2705272 = type { float, i32 }
 
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
@@ -8,7 +8,7 @@ define ptr @func00000000000000a3(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %struct.YGValue.2705306], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %struct.YGValue.2705272], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

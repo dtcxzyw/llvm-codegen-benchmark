@@ -10,6 +10,13 @@ func0000000000000278:                   # @func0000000000000278
 	zext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
+func000000000000006c:                   # @func000000000000006c
+	zext.w	a2, a2
+	add.uw	a1, a1, a2
+	zext.w	a0, a0
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
 func0000000000000274:                   # @func0000000000000274
 	sext.w	a2, a2
 	add.uw	a1, a1, a2

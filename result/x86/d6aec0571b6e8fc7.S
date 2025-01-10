@@ -92,15 +92,15 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	cmpq	%rsi, %rdi
-	cmovbq	%rdi, %rsi
-	cmpq	$8, %rsi
-	setb	%al
-	retq
 func0000000000000011:                   # @func0000000000000011
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
 	testq	%rsi, %rsi
 	sete	%al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	cmpq	%rsi, %rdi
+	cmovbq	%rdi, %rsi
+	cmpq	$8, %rsi
+	setb	%al
 	retq

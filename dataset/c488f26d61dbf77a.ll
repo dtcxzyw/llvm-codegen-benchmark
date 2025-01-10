@@ -35,10 +35,9 @@ entry:
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/spell.ll
 ; raylib/optimized/rtextures.c.ll

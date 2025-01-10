@@ -1,5 +1,5 @@
 
-; 238 occurrences:
+; 237 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -139,7 +139,6 @@
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll

@@ -787,7 +787,7 @@ entry:
   ret i32 %2
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/cutPre22.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -800,7 +800,6 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftbbox.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
-; lvgl/optimized/lv_tlsf.ll
 ; openusd/optimized/warped_motion.c.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

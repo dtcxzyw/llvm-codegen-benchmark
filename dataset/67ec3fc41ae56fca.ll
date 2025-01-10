@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/yenta_socket.ll
 ; lvgl/optimized/lv_label.ll
@@ -24,18 +25,6 @@ entry:
   %4 = and i8 %3, 4
   %5 = or disjoint i8 %0, %1
   %6 = or i8 %5, %4
-  ret i8 %6
-}
-
-; 1 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000b(i8 %0, i8 %1, i32 %2) #0 {
-entry:
-  %3 = trunc nuw i32 %2 to i8
-  %4 = and i8 %3, 3
-  %5 = or disjoint i8 %0, %1
-  %6 = or disjoint i8 %5, %4
   ret i8 %6
 }
 

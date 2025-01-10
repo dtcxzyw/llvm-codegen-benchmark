@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 169 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaCSat.c.ll
@@ -19,7 +19,6 @@
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; git/optimized/record.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll

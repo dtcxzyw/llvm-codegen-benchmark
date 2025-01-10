@@ -1,7 +1,7 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
 
 ; 207 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
@@ -346,7 +346,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = select i1 %1, ptr null, ptr %2
-  %4 = getelementptr nusw nuw %"struct.OT::HBFixed.2730714", ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %"struct.OT::HBFixed.2730680", ptr %3, i64 %0
   ret ptr %4
 }
 

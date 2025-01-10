@@ -32,7 +32,7 @@ entry:
   ret i1 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -49,7 +49,6 @@ entry:
 ; lvgl/optimized/lv_chart.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; postgres/optimized/check.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/unicode.ll

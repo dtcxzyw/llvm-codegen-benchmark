@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 4 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %2 = and i16 %1, 48
   %3 = icmp eq i16 %2, 48
   %4 = select i1 %3, i64 57, i64 47
-  %5 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

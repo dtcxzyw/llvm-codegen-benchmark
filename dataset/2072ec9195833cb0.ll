@@ -1,12 +1,12 @@
 
-%union.anon.2.2633407 = type { [16 x i64] }
-%struct.igb_tx.2705958 = type { [2 x %struct.e1000_adv_tx_context_desc.2705959], i32, i32, i8, i8, ptr }
-%struct.e1000_adv_tx_context_desc.2705959 = type { i32, i32, i32, i32 }
-%union.CPUTLBEntry.2707265 = type { %struct.anon.2.2707267 }
-%struct.anon.2.2707267 = type { i64, i64, i64, i64 }
-%"struct.std::array.102.2872896" = type { [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.2872897"] }
-%"struct.rawspeed::(anonymous namespace)::int_pair.2872897" = type { i32, i32 }
-%struct.stbi__huffman.3399138 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
+%union.anon.2.2633374 = type { [16 x i64] }
+%struct.igb_tx.2705924 = type { [2 x %struct.e1000_adv_tx_context_desc.2705925], i32, i32, i8, i8, ptr }
+%struct.e1000_adv_tx_context_desc.2705925 = type { i32, i32, i32, i32 }
+%union.CPUTLBEntry.2707231 = type { %struct.anon.2.2707233 }
+%struct.anon.2.2707233 = type { i64, i64, i64, i64 }
+%"struct.std::array.102.2872862" = type { [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.2872863"] }
+%"struct.rawspeed::(anonymous namespace)::int_pair.2872863" = type { i32, i32 }
+%struct.stbi__huffman.3399104 = type { [512 x i8], [256 x i16], [256 x i8], [257 x i8], [18 x i32], [17 x i32] }
 
 ; 16 occurrences:
 ; bullet3/optimized/b3GjkEpa.ll
@@ -29,7 +29,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [8 x %union.anon.2.2633407], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw nuw [8 x %union.anon.2.2633374], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw [128 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -44,8 +44,8 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [16 x %struct.igb_tx.2705958], ptr %0, i64 0, i64 %1
-  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705959], ptr %4, i64 0, i64 %3
+  %4 = getelementptr [16 x %struct.igb_tx.2705924], ptr %0, i64 0, i64 %1
+  %5 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705925], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -56,7 +56,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %union.CPUTLBEntry.2707265], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [8 x %union.CPUTLBEntry.2707231], ptr %0, i64 0, i64 %1
   %5 = getelementptr [4 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -73,8 +73,8 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %"struct.std::array.102.2872896"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.2872897"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %"struct.std::array.102.2872862"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw [41 x %"struct.rawspeed::(anonymous namespace)::int_pair.2872863"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -87,7 +87,7 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x %struct.stbi__huffman.3399138], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw [4 x %struct.stbi__huffman.3399104], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw [512 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

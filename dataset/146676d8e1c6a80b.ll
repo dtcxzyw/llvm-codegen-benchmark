@@ -1,5 +1,5 @@
 
-; 334 occurrences:
+; 333 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -291,7 +291,6 @@
 ; opencv/optimized/emd_new.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/optical_flow_io.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/tree.cpp.ll

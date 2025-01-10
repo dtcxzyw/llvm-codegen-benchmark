@@ -51,6 +51,12 @@ func0000000000000002:                   # @func0000000000000002
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret
+func000000000000000f:                   # @func000000000000000f
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	sub	a0, a0, a1
+	sub	a0, a0, a2
+	ret
 func0000000000000005:                   # @func0000000000000005
 	slli	a2, a2, 32
 	srli	a2, a2, 32
@@ -74,12 +80,6 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001e:                   # @func000000000000001e
 	sext.w	a2, a2
-	sub	a0, a0, a1
-	sub	a0, a0, a2
-	ret
-func000000000000000f:                   # @func000000000000000f
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret

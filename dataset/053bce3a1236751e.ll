@@ -14,6 +14,7 @@
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/extraBddThresh.c.ll
@@ -28,6 +29,7 @@
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
+; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -106,8 +108,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; ruby/optimized/euc_jp.ll
@@ -156,14 +156,9 @@ entry:
   ret ptr %5
 }
 
-; 35 occurrences:
+; 30 occurrences:
 ; abc/optimized/abcSymm.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/ifDec75.c.ll
-; abc/optimized/rsbDec6.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll

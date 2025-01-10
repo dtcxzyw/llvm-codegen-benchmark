@@ -1,15 +1,15 @@
 
-%"struct.irr::SJoystickInfo.2697560" = type <{ i8, [7 x i8], %"class.irr::core::string.2697561", i32, i32, i32, [4 x i8] }>
-%"class.irr::core::string.2697561" = type { %"class.std::__cxx11::basic_string.2697500" }
-%"class.std::__cxx11::basic_string.2697500" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2697501", i64, %union.anon.2697502 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2697501" = type { ptr }
-%union.anon.2697502 = type { i64, [8 x i8] }
-%"struct.ceres::internal::CompressedList.3526940" = type { %"struct.ceres::internal::Block.3526941", %"class.std::vector.8.3526942", i32, i32 }
-%"struct.ceres::internal::Block.3526941" = type { i32, i32 }
-%"class.std::vector.8.3526942" = type { %"struct.std::_Vector_base.9.3526943" }
-%"struct.std::_Vector_base.9.3526943" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526944" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526944" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526945" }
-%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526945" = type { ptr, ptr, ptr }
+%"struct.irr::SJoystickInfo.2697526" = type <{ i8, [7 x i8], %"class.irr::core::string.2697527", i32, i32, i32, [4 x i8] }>
+%"class.irr::core::string.2697527" = type { %"class.std::__cxx11::basic_string.2697466" }
+%"class.std::__cxx11::basic_string.2697466" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2697467", i64, %union.anon.2697468 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2697467" = type { ptr }
+%union.anon.2697468 = type { i64, [8 x i8] }
+%"struct.ceres::internal::CompressedList.3526906" = type { %"struct.ceres::internal::Block.3526907", %"class.std::vector.8.3526908", i32, i32 }
+%"struct.ceres::internal::Block.3526907" = type { i32, i32 }
+%"class.std::vector.8.3526908" = type { %"struct.std::_Vector_base.9.3526909" }
+%"struct.std::_Vector_base.9.3526909" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526910" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl.3526910" = type { %"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526911" }
+%"struct.std::_Vector_base<ceres::internal::Cell, std::allocator<ceres::internal::Cell>>::_Vector_impl_data.3526911" = type { ptr, ptr, ptr }
 
 ; 41 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
@@ -60,7 +60,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 56
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw nuw %"struct.irr::SJoystickInfo.2697560", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.irr::SJoystickInfo.2697526", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -76,7 +76,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 40
   %6 = and i64 %5, 2147483647
-  %7 = getelementptr %"struct.ceres::internal::CompressedList.3526940", ptr %0, i64 %6
+  %7 = getelementptr %"struct.ceres::internal::CompressedList.3526906", ptr %0, i64 %6
   ret ptr %7
 }
 

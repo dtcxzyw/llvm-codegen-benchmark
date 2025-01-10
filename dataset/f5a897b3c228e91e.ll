@@ -1,22 +1,22 @@
 
-%struct.pm_options_scope.2601139 = type { i64, ptr }
-%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
-%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
-%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
-%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
-%"class.QuantLib::Array.2855169" = type { %"class.std::unique_ptr.2855170", i64 }
-%"class.std::unique_ptr.2855170" = type { %"struct.std::__uniq_ptr_data.2855171" }
-%"struct.std::__uniq_ptr_data.2855171" = type { %"class.std::__uniq_ptr_impl.2855172" }
-%"class.std::__uniq_ptr_impl.2855172" = type { %"class.std::tuple.2855173" }
-%"class.std::tuple.2855173" = type { %"struct.std::_Tuple_impl.2855174" }
-%"struct.std::_Tuple_impl.2855174" = type { %"struct.std::_Head_base.28.2855175" }
-%"struct.std::_Head_base.28.2855175" = type { ptr }
-%"struct.std::pair.53.3484889" = type { i64, double }
+%struct.pm_options_scope.2601106 = type { i64, ptr }
+%"struct.rocksdb::CompactionInputFiles.2623924" = type { i32, %"class.std::vector.0.2623911", %"class.std::vector.8.2623925" }
+%"class.std::vector.0.2623911" = type { %"struct.std::_Vector_base.1.2623912" }
+%"struct.std::_Vector_base.1.2623912" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623925" = type { %"struct.std::_Vector_base.9.2623926" }
+%"struct.std::_Vector_base.9.2623926" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" = type { ptr, ptr, ptr }
+%"class.QuantLib::Array.2855135" = type { %"class.std::unique_ptr.2855136", i64 }
+%"class.std::unique_ptr.2855136" = type { %"struct.std::__uniq_ptr_data.2855137" }
+%"struct.std::__uniq_ptr_data.2855137" = type { %"class.std::__uniq_ptr_impl.2855138" }
+%"class.std::__uniq_ptr_impl.2855138" = type { %"class.std::tuple.2855139" }
+%"class.std::tuple.2855139" = type { %"struct.std::_Tuple_impl.2855140" }
+%"struct.std::_Tuple_impl.2855140" = type { %"struct.std::_Head_base.28.2855141" }
+%"struct.std::_Head_base.28.2855141" = type { ptr }
+%"struct.std::pair.53.3484855" = type { i64, double }
 
 ; 12 occurrences:
 ; abc/optimized/wlcBlast.c.ll
@@ -52,7 +52,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.pm_options_scope.2601139, ptr %0, i64 %5
+  %6 = getelementptr %struct.pm_options_scope.2601106, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -89,7 +89,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623924", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -119,7 +119,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.QuantLib::Array.2855169", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.QuantLib::Array.2855135", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -214,7 +214,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.std::pair.53.3484889", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.53.3484855", ptr %0, i64 %5
   ret ptr %6
 }
 

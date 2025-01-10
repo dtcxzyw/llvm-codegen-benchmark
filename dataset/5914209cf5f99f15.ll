@@ -1,5 +1,5 @@
 
-; 5711 occurrences:
+; 5720 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -414,6 +414,7 @@
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
+; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/38w83wyqv1thu0n9.ll
@@ -876,9 +877,11 @@
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
 ; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
+; delta-rs/optimized/1kqybwbo4z39nain.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
+; delta-rs/optimized/2fjmxjbhgng2mk02.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
 ; delta-rs/optimized/3bt5fggny0b8h5sp.ll
 ; delta-rs/optimized/3e84m8xk6w9g4bb2.ll
@@ -2862,12 +2865,14 @@
 ; ocio/optimized/MatrixOpData.cpp.ll
 ; ocio/optimized/OpHelpers.cpp.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
+; ockam-rs/optimized/111eznecj9pn2lkp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/13hx4edwj16k9wur.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
 ; ockam-rs/optimized/1jnbxr9i8m0nukdf.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
+; ockam-rs/optimized/1pv5gnbequqkl6bi.ll
 ; ockam-rs/optimized/1w1enrqpm17pnxjo.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; ockam-rs/optimized/1ztake8eabyohrmo.ll
@@ -2886,6 +2891,7 @@
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; ockam-rs/optimized/2odlvw84qikntvno.ll
 ; ockam-rs/optimized/2r89va29k151cr5y.ll
+; ockam-rs/optimized/2tygv1xclgfmwb14.ll
 ; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
 ; ockam-rs/optimized/3338fs93o3rrdtsg.ll
@@ -2893,6 +2899,7 @@
 ; ockam-rs/optimized/3d0wri7d19ar4clk.ll
 ; ockam-rs/optimized/3lzw4pdvs3xdx5ez.ll
 ; ockam-rs/optimized/3mmfh9oxbbu2kjan.ll
+; ockam-rs/optimized/3mx5f5nie5moube.ll
 ; ockam-rs/optimized/3olxpk8c0rzc0zqf.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
@@ -2909,11 +2916,15 @@
 ; ockam-rs/optimized/4ie0aygpnuk5bzdx.ll
 ; ockam-rs/optimized/4jyxbm4i1a8dsfue.ll
 ; ockam-rs/optimized/4muscr8i25faa6zl.ll
+; ockam-rs/optimized/4mxoiw4m4s1rw29y.ll
 ; ockam-rs/optimized/4op0lm10vgcgt7cp.ll
+; ockam-rs/optimized/4r08vyqwrxt6fmz0.ll
 ; ockam-rs/optimized/4t3y03rrak2rtjym.ll
 ; ockam-rs/optimized/548tb0vgebzwk35z.ll
+; ockam-rs/optimized/59645ou3p4wsm5oz.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; ockam-rs/optimized/5vujqays29wv7do.ll
+; ockam-rs/optimized/7hitgxreqt236i.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; ockam-rs/optimized/i22eb1mfvlgesy1.ll
@@ -4635,7 +4646,6 @@
 ; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; turborepo-rs/optimized/4npj4wsmg2ap1thdgni5ygdc7.ll
 ; turborepo-rs/optimized/4w2esflvo3af23i5beiirhnry.ll
-; turborepo-rs/optimized/5acbtdg9xgmdrsj5fdxgf9kjz.ll
 ; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; turborepo-rs/optimized/5x6vf5oc1gv1cmh03slcaf29a.ll
 ; turborepo-rs/optimized/68uz0ms18epwru7402hblucwm.ll
@@ -4787,6 +4797,7 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/6ly84hjssnlljzr.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; wasmtime-rs/optimized/hmb8tiwife399k7.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
@@ -5264,7 +5275,6 @@
 ; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
 ; zed-rs/optimized/50rz8txij07gq3asz3v1w7m4v.ll
 ; zed-rs/optimized/52fdgwishgvnm2xp3qe1w9ai6.ll
-; zed-rs/optimized/53uecthum8cknzmllu2n03rw6.ll
 ; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
 ; zed-rs/optimized/555un0i8pogz0vv4zcck9n117.ll
 ; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
@@ -5547,7 +5557,6 @@
 ; zed-rs/optimized/bulzqzpztuyt0ftkoermh5378.ll
 ; zed-rs/optimized/but0lbc6tfwky26d8hpjq6ud8.ll
 ; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
-; zed-rs/optimized/bwqq233pic9g42d5tme8mthrz.ll
 ; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
 ; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
 ; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
@@ -8980,7 +8989,7 @@ entry:
   ret i64 %1
 }
 
-; 7811 occurrences:
+; 7812 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -14815,6 +14824,7 @@ entry:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/cluster_legacy.ll
+; redis/optimized/dict.ll
 ; redis/optimized/evict.ll
 ; redis/optimized/geo.ll
 ; redis/optimized/hdr_histogram.ll

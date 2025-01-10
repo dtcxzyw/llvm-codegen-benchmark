@@ -1,14 +1,14 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
-%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
-%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
-%union.anon.2860585 = type { i64, [8 x i8] }
-%"class.icu_75::UnicodeString.3716504" = type { %"class.icu_75::Replaceable.3716505", %"union.icu_75::UnicodeString::StackBufferOrFields.3716506" }
-%"class.icu_75::Replaceable.3716505" = type { %"class.icu_75::UObject.3716507" }
-%"class.icu_75::UObject.3716507" = type { ptr }
-%"union.icu_75::UnicodeString::StackBufferOrFields.3716506" = type { %struct.anon.0.3716508, [32 x i8] }
-%struct.anon.0.3716508 = type { i16, i32, i32, ptr }
+%"union.absl::debian2::container_internal::map_slot_type.2860579" = type { %"struct.std::pair.2860580" }
+%"struct.std::pair.2860580" = type { i32, %"class.std::__cxx11::basic_string.2860549" }
+%"class.std::__cxx11::basic_string.2860549" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550", i64, %union.anon.2860551 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860550" = type { ptr }
+%union.anon.2860551 = type { i64, [8 x i8] }
+%"class.icu_75::UnicodeString.3716454" = type { %"class.icu_75::Replaceable.3716455", %"union.icu_75::UnicodeString::StackBufferOrFields.3716456" }
+%"class.icu_75::Replaceable.3716455" = type { %"class.icu_75::UObject.3716457" }
+%"class.icu_75::UObject.3716457" = type { ptr }
+%"union.icu_75::UnicodeString::StackBufferOrFields.3716456" = type { %struct.anon.0.3716458, [32 x i8] }
+%struct.anon.0.3716458 = type { i16, i32, i32, ptr }
 
 ; 2 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -68,7 +68,7 @@ define i1 @func00000000000003c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 16
   %4 = sext i32 %2 to i64
-  %5 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %3, i64 %4
+  %5 = getelementptr %"union.absl::debian2::container_internal::map_slot_type.2860579", ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -40
   %7 = icmp eq ptr %0, %6
   ret i1 %7
@@ -96,7 +96,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %6 = getelementptr nusw %"class.icu_75::UnicodeString.3716504", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.icu_75::UnicodeString.3716454", ptr %5, i64 %4
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

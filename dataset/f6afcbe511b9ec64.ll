@@ -180,7 +180,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; cpython/optimized/longobject.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -194,7 +194,6 @@ entry:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; lief/optimized/bignum.c.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll

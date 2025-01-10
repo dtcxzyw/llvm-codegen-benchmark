@@ -23,6 +23,16 @@ func0000000000000015:                   # @func0000000000000015
 	orl	%esi, %eax
 	leal	-1(%rdi,%rax), %eax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	movzbl	%dl, %eax
+	orl	%esi, %eax
+	leal	-32(%rdi,%rax), %eax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	movzbl	%dl, %eax
+	orl	%esi, %eax
+	leal	-1(%rdi,%rax), %eax
+	retq
 func000000000000001d:                   # @func000000000000001d
 	movzbl	%dl, %eax
 	orl	%esi, %eax

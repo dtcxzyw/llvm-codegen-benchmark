@@ -20,10 +20,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; php/optimized/url.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {

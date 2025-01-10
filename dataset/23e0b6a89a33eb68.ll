@@ -1,5 +1,5 @@
 
-%"class.WasmEdge::AST::TagType.2774144" = type { i32, ptr }
+%"class.WasmEdge::AST::TagType.2774110" = type { i32, ptr }
 
 ; 57 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -62,7 +62,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000068(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.WasmEdge::AST::TagType.2774144", ptr %2, i64 %1
+  %3 = getelementptr nusw nuw %"class.WasmEdge::AST::TagType.2774110", ptr %2, i64 %1
   %4 = icmp ugt i64 %0, %1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

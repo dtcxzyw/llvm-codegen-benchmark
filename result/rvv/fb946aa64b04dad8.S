@@ -23,13 +23,6 @@ func0000000000000181:                   # @func0000000000000181
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v10, v12
 	ret
-func0000000000000084:                   # @func0000000000000084
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vv	v10, v10, v12
-	vmsleu.vi	v12, v10, 3
-	vmsleu.vi	v10, v8, 3
-	vmand.mm	v0, v10, v12
-	ret
 func000000000000058c:                   # @func000000000000058c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12

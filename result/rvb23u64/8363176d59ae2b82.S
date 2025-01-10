@@ -21,7 +21,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 15
 	ret
 func0000000000000006:                   # @func0000000000000006
-	li	a2, 2
+	li	a2, 4
 	sub	a2, a2, a1
 	sh2add	a0, a2, a0
 	ret

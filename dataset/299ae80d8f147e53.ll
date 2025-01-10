@@ -1,6 +1,6 @@
 
-%"class.llvm::APInt.3214275" = type <{ %union.anon.3214276, i32, [4 x i8] }>
-%union.anon.3214276 = type { i64 }
+%"class.llvm::APInt.3214241" = type <{ %union.anon.3214242, i32, [4 x i8] }>
+%union.anon.3214242 = type { i64 }
 
 ; 9 occurrences:
 ; eastl/optimized/hashtable.cpp.ll
@@ -27,7 +27,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::APInt.3214275", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::APInt.3214241", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = select i1 %0, ptr %1, ptr %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8

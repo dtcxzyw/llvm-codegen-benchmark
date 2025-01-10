@@ -1,5 +1,5 @@
 
-; 226 occurrences:
+; 228 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; boost/optimized/buffer_piece_border.ll
@@ -106,6 +106,7 @@
 ; minetest/optimized/localplayer.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/innerproduct_x86.cpp.ll
@@ -149,6 +150,7 @@
 ; proxygen/optimized/HTTPSessionBase.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
 ; quantlib/optimized/austria.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/china.ll

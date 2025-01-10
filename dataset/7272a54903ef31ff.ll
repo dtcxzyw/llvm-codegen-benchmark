@@ -1,5 +1,5 @@
 
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 21 occurrences:
 ; abc/optimized/giaSimBase.c.ll
@@ -81,8 +81,8 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %1, i64 %5
-  %7 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %6, i64 %0
+  %6 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %1, i64 %5
+  %7 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %6, i64 %0
   ret ptr %7
 }
 

@@ -1,11 +1,11 @@
 
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
-%"struct.RunTimeClassInfo::RTVerifierConstraint.2730952" = type { i32, i32 }
-%struct.zend_shared_segment_shm.2792752 = type { %struct._zend_shared_segment.2792753, i32 }
-%struct._zend_shared_segment.2792753 = type { i64, i64, i64, ptr }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
+%"struct.RunTimeClassInfo::RTVerifierConstraint.2730918" = type { i32, i32 }
+%struct.zend_shared_segment_shm.2792718 = type { %struct._zend_shared_segment.2792719, i32 }
+%struct._zend_shared_segment.2792719 = type { i64, i64, i64, ptr }
 
 ; 66 occurrences:
 ; abc/optimized/darPrec.c.ll
@@ -80,7 +80,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw %struct._StackType.2710345, ptr %5, i64 %0
+  %6 = getelementptr nusw %struct._StackType.2710311, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -93,7 +93,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730952", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.RunTimeClassInfo::RTVerifierConstraint.2730918", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -209,7 +209,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %struct.zend_shared_segment_shm.2792752, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %struct.zend_shared_segment_shm.2792718, ptr %5, i64 %0
   ret ptr %6
 }
 

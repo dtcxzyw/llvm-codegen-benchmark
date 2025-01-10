@@ -1,10 +1,10 @@
 
-%"class.std::__cxx11::basic_string.2624164" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624165", i64, %union.anon.2624166 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624165" = type { ptr }
-%union.anon.2624166 = type { i64, [8 x i8] }
-%struct.MapNode.2699889 = type { i16, i8, i8 }
+%"class.std::__cxx11::basic_string.2624131" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624132", i64, %union.anon.2624133 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624132" = type { ptr }
+%union.anon.2624133 = type { i64, [8 x i8] }
+%struct.MapNode.2699855 = type { i16, i8, i8 }
 
-; 1490 occurrences:
+; 1491 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -319,6 +319,7 @@
 ; g2o/optimized/sparse_helper.cpp.ll
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/read-cache.ll
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -1504,7 +1505,7 @@ entry:
   ret ptr %4
 }
 
-; 561 occurrences:
+; 560 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -1621,7 +1622,6 @@ entry:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
-; git/optimized/diffcore-delta.ll
 ; git/optimized/graph.ll
 ; git/optimized/log.ll
 ; git/optimized/merge-ort.ll
@@ -3627,7 +3627,7 @@ entry:
   ret ptr %4
 }
 
-; 93 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -3708,7 +3708,6 @@ entry:
 ; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
 ; velox/optimized/ArraySort.cpp.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; z3/optimized/array_rewriter.cpp.ll
 ; z3/optimized/euf_ac_plugin.cpp.ll
 ; z3/optimized/maxlex.cpp.ll
@@ -3726,7 +3725,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2624164", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2624131", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -3811,11 +3810,11 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2624164", ptr %0, i64 %3
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2624131", ptr %0, i64 %3
   ret ptr %4
 }
 
-; 217 occurrences:
+; 216 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifCache.c.ll
@@ -3838,7 +3837,6 @@ entry:
 ; draco/optimized/hash_utils.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
-; eastl/optimized/TestHeap.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; git/optimized/bloom.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
@@ -4038,7 +4036,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 8
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw nuw %struct.MapNode.2699889, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.MapNode.2699855, ptr %0, i64 %3
   ret ptr %4
 }
 

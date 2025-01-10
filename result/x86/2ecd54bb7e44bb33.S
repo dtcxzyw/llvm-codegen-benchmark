@@ -10,6 +10,12 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rsi, %rcx
 	cmovaeq	%rcx, %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	leaq	1(%rdi), %rcx
+	xorl	%eax, %eax
+	subq	%rsi, %rcx
+	cmovaeq	%rcx, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	-1(%rdi), %rcx
 	xorl	%eax, %eax

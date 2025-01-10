@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; hermes/optimized/Executor.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -20,6 +20,7 @@
 ; ripgrep-rs/optimized/550obkm57k6tj1vm.ll
 ; sqlite/optimized/sqlite3.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {

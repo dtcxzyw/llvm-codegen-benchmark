@@ -138,14 +138,15 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = icmp ne i32 %3, 64
-  %5 = or i1 %4, %0
+  %4 = icmp ne i32 %3, 1
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

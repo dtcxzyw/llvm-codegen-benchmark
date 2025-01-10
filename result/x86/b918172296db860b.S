@@ -15,6 +15,12 @@ func000000000000000b:                   # @func000000000000000b
 	movslq	%esi, %rax
 	leaq	4(%rdi,%rax,4), %rax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	notl	%edx
+	addl	%esi, %edx
+	movslq	%edx, %rax
+	leaq	1(%rdi,%rax), %rax
+	retq
 func000000000000005b:                   # @func000000000000005b
 	subl	%edx, %esi
 	movslq	%esi, %rax

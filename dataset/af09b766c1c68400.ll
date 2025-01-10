@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
+; git/optimized/line-log.ll
 ; grpc/optimized/hpack_encoder_table.cc.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/IdentifierTable.cpp.ll

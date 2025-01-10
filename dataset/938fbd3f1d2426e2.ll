@@ -1,5 +1,5 @@
 
-; 2728 occurrences:
+; 2729 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -504,6 +504,7 @@
 ; eastl/optimized/TestArray.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -34683,7 +34684,7 @@ entry:
   ret i1 %2
 }
 
-; 5386 occurrences:
+; 5385 occurrences:
 ; abc/optimized/aigDup.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApprox.c.ll
@@ -34827,7 +34828,6 @@ entry:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/OgreStructs.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
@@ -40077,7 +40077,7 @@ entry:
   ret i1 %2
 }
 
-; 1428 occurrences:
+; 1429 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
@@ -40149,6 +40149,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/cff.c.ll
+; freetype/optimized/pfr.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/psnames.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -41513,7 +41514,7 @@ entry:
   ret i1 %2
 }
 
-; 520 occurrences:
+; 521 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/from_chars.ll
@@ -41535,6 +41536,7 @@ entry:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll

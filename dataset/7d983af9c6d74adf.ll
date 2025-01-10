@@ -52,6 +52,19 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 4
+  %4 = or disjoint i32 %0, %3
+  %5 = shl i32 %1, 14
+  %6 = add i32 %4, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; icu/optimized/genmbcs.ll
 ; Function Attrs: nounwind

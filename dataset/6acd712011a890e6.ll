@@ -1,9 +1,9 @@
 
-%"struct.llvh::detail::DenseMapPair.3077008" = type { %"struct.std::pair.225.3077009" }
-%"struct.std::pair.225.3077009" = type { %"class.hermes::vm::SymbolID.3077003", i32 }
-%"class.hermes::vm::SymbolID.3077003" = type { i32 }
-%"class.llvm::ElementCount.3140325" = type { %"class.llvm::details::FixedOrScalableQuantity.base.3140326", [3 x i8] }
-%"class.llvm::details::FixedOrScalableQuantity.base.3140326" = type <{ i32, i8 }>
+%"struct.llvh::detail::DenseMapPair.3076974" = type { %"struct.std::pair.225.3076975" }
+%"struct.std::pair.225.3076975" = type { %"class.hermes::vm::SymbolID.3076969", i32 }
+%"class.hermes::vm::SymbolID.3076969" = type { i32 }
+%"class.llvm::ElementCount.3140291" = type { %"class.llvm::details::FixedOrScalableQuantity.base.3140292", [3 x i8] }
+%"class.llvm::details::FixedOrScalableQuantity.base.3140292" = type <{ i32, i8 }>
 
 ; 1 occurrences:
 ; ruby/optimized/pack.ll
@@ -56,7 +56,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func00000000000000c2(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3077008", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3076974", ptr %1, i64 %2
   %4 = icmp eq ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
@@ -71,7 +71,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000098(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::ElementCount.3140325", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.llvm::ElementCount.3140291", ptr %1, i64 %2
   %4 = icmp ne ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5

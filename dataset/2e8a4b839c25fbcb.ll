@@ -1,5 +1,5 @@
 
-%struct.hb_pair_t.2730715 = type { i32, i32 }
+%struct.hb_pair_t.2730681 = type { i32, i32 }
 
 ; 26 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -66,7 +66,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %struct.hb_pair_t.2730715, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.hb_pair_t.2730681, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

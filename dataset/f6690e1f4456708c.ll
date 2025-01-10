@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3554398 = type { i32, i8 }
+%struct.alps_nibble_commands.3554364 = type { i32, i8 }
 
 ; 4 occurrences:
 ; icu/optimized/normalizer2impl.ll
@@ -26,7 +26,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %6
+  %7 = getelementptr %struct.alps_nibble_commands.3554364, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -779,13 +779,14 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; boost/optimized/alloc_lib.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/drm_buddy.ll
 ; linux/optimized/hugetlb.ll
 ; nuttx/optimized/mm_realloc.c.ll
+; php/optimized/pcre2_jit_compile.ll
 ; velox/optimized/Allocation.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {

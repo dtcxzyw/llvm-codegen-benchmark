@@ -52,12 +52,14 @@ entry:
   ret i1 %2
 }
 
-; 77 occurrences:
+; 79 occurrences:
 ; boost/optimized/to_chars.ll
+; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/reg.ll
+; llvm/optimized/APInt.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll

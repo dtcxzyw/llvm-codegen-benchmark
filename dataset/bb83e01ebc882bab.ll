@@ -1,5 +1,5 @@
 
-; 133 occurrences:
+; 135 occurrences:
 ; boost/optimized/to_chars.ll
 ; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -10,6 +10,7 @@
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -93,6 +94,7 @@
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; qemu/optimized/block.c.ll
+; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll

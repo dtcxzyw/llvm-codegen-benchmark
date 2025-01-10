@@ -1,20 +1,20 @@
 
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
-%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
-%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
-%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
-%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
-%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
-%struct.anon.12.2606011 = type { i64 }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::basic_string.2605972" = type { %"class.std::__1::__compressed_pair.10.2605973" }
+%"class.std::__1::__compressed_pair.10.2605973" = type { %"struct.std::__1::__compressed_pair_elem.11.2605974" }
+%"struct.std::__1::__compressed_pair_elem.11.2605974" = type { %"struct.std::__1::basic_string<char>::__rep.2605975" }
+%"struct.std::__1::basic_string<char>::__rep.2605975" = type { %union.anon.2605976 }
+%union.anon.2605976 = type { %"struct.std::__1::basic_string<char>::__long.2605977" }
+%"struct.std::__1::basic_string<char>::__long.2605977" = type { %struct.anon.12.2605978, i64, ptr }
+%struct.anon.12.2605978 = type { i64 }
 
-; 367 occurrences:
+; 366 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; boost/optimized/approximately_equals.ll
@@ -156,7 +156,6 @@
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_eth.c.ll
 ; qemu/optimized/util_qemu-option.c.ll
 ; quantlib/optimized/fdmvppstartlimitstepcondition.ll
@@ -390,7 +389,7 @@ entry:
   ret ptr %4
 }
 
-; 2032 occurrences:
+; 2038 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -769,6 +768,8 @@ entry:
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/MemoryMapping.cpp.ll
+; folly/optimized/SpookyHashV1.cpp.ll
+; folly/optimized/SpookyHashV2.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
@@ -890,6 +891,7 @@ entry:
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
 ; libquic/optimized/aead_test.cc.ll
 ; libquic/optimized/asn1_lib.c.ll
+; libquic/optimized/bio_test.cc.ll
 ; libquic/optimized/cbb.c.ll
 ; libquic/optimized/client.cc.ll
 ; libquic/optimized/common_cert_set.cc.ll
@@ -909,6 +911,7 @@ entry:
 ; lief/optimized/SegmentCommand.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; lief/optimized/chacha20.c.ll
+; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -1604,6 +1607,7 @@ entry:
 ; openssl/optimized/libssl-lib-quic_sstream.ll
 ; openssl/optimized/libssl-shlib-quic_sstream.ll
 ; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/av1_dx_iface.c.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
@@ -1682,6 +1686,7 @@ entry:
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; regex-rs/optimized/gbxkn0az9l87aop.ll
 ; regex-rs/optimized/mw6ona3r0wpdmlf.ll
+; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
 ; ring-rs/optimized/4gu90fp46fobkewp.ll
 ; ring-rs/optimized/59ovxrvz4t1wjyjr.ll
@@ -2633,7 +2638,7 @@ entry:
   ret ptr %4
 }
 
-; 858 occurrences:
+; 861 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
@@ -2744,6 +2749,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
 ; cvc5/optimized/cadical.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -3327,6 +3333,7 @@ entry:
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/valueUtils.cpp.ll
 ; openusd/optimized/yv12config.c.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -3405,6 +3412,7 @@ entry:
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
+; verilator/optimized/V3ParseGrammar.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
 ; wasmedge/optimized/canon.cpp.ll
@@ -3500,7 +3508,7 @@ entry:
   ret ptr %4
 }
 
-; 302 occurrences:
+; 295 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -3631,8 +3639,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; duckdb/optimized/ub_duckdb_function.cpp.ll
-; folly/optimized/SpookyHashV1.cpp.ll
-; folly/optimized/SpookyHashV2.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; gromacs/optimized/angle.cpp.ll
@@ -3662,10 +3668,7 @@ entry:
 ; hermes/optimized/SourceMapGenerator.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; jsonnet/optimized/rapidyaml.cpp.ll
-; libquic/optimized/bio_test.cc.ll
 ; libzmq/optimized/radix_tree.cpp.ll
-; lief/optimized/hmac_drbg.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; llvm/optimized/CTagsEmitter.cpp.ll
@@ -3743,7 +3746,6 @@ entry:
 ; openexr/optimized/context.c.ll
 ; openjdk/optimized/jpegdecoder.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
-; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/categoriesSchema.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/layer.cpp.ll
@@ -3767,7 +3769,6 @@ entry:
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; quantlib/optimized/squarerootandersen.ll
 ; re2/optimized/re2.cc.ll
-; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
@@ -4571,12 +4572,12 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__1::basic_string.2603405", ptr %0, i64 %1
-  %4 = getelementptr %"class.std::__1::basic_string.2603405", ptr %3, i64 %2
+  %3 = getelementptr %"class.std::__1::basic_string.2603372", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__1::basic_string.2603372", ptr %3, i64 %2
   ret ptr %4
 }
 
-; 265 occurrences:
+; 262 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/caching.cc.ll
@@ -4641,7 +4642,6 @@ entry:
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; cmake/optimized/SystemTools.cxx.ll
-; cmake/optimized/cmDependsJavaParser.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
 ; cmake/optimized/cmNinjaNormalTargetGenerator.cxx.ll
@@ -4790,7 +4790,6 @@ entry:
 ; openusd/optimized/sphericalJoint.cpp.ll
 ; openusd/optimized/subset.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
-; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/validationRegistry.cpp.ll
 ; openusd/optimized/var.cpp.ll
 ; openusd/optimized/visibilityAPI.cpp.ll
@@ -4833,7 +4832,6 @@ entry:
 ; velox/optimized/SsdFile.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
-; verilator/optimized/V3ParseGrammar.cpp.ll
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/ezsat.ll
 ; yosys/optimized/mem.ll
@@ -4845,8 +4843,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__1::basic_string.2606005", ptr %0, i64 %1
-  %4 = getelementptr %"class.std::__1::basic_string.2606005", ptr %3, i64 %2
+  %3 = getelementptr %"class.std::__1::basic_string.2605972", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__1::basic_string.2605972", ptr %3, i64 %2
   ret ptr %4
 }
 

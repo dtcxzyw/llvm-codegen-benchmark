@@ -1,7 +1,7 @@
 
-%"class.llvm::MCInstrDesc.3294652" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%"class.llvm::MCInstrDesc.3294618" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 268 occurrences:
 ; actix-rs/optimized/190uhijawk1lki5o.ll
@@ -424,7 +424,7 @@ define ptr @func0000000000000018(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::MCInstrDesc.3294652", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.llvm::MCInstrDesc.3294618", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -442,7 +442,7 @@ define ptr @func0000000000000010(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -458,7 +458,7 @@ define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

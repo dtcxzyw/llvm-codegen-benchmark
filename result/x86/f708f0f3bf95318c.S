@@ -28,3 +28,27 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdi, %rax
 	cmovaeq	%rdi, %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq
+func000000000000003b:                   # @func000000000000003b
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	cmpq	%rdi, %rax
+	cmovaeq	%rdi, %rax
+	retq

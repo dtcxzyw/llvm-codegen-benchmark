@@ -1,7 +1,7 @@
 
-%"class.clang::DeclAccessPair.3188098" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3188099" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3188099" = type { %struct.anon.2269.3188100 }
-%struct.anon.2269.3188100 = type { [8 x i8] }
+%"class.clang::DeclAccessPair.3188064" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3188065" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3188065" = type { %struct.anon.2269.3188066 }
+%struct.anon.2269.3188066 = type { [8 x i8] }
 
 ; 5 occurrences:
 ; hyperscan/optimized/castlecompile.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3188098", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3188064", ptr %5, i64 %6
   ret ptr %7
 }
 

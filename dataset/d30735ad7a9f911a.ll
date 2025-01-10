@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/float16.cc.ll
@@ -22,6 +22,7 @@
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/HLSL.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
@@ -65,7 +66,7 @@ entry:
   ret i1 %5
 }
 
-; 162 occurrences:
+; 163 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -126,6 +127,7 @@ entry:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
 ; llvm/optimized/CGDeclCXX.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll

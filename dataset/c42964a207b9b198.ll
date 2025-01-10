@@ -1,13 +1,13 @@
 
-%struct.NSVGattrib.2600672 = type { [64 x i8], [6 x float], i32, i32, float, float, float, [64 x i8], [64 x i8], float, float, [8 x float], i32, i8, i8, float, i8, float, i32, float, float, i8, i8, i8 }
-%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
-%"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.2608692" = type { i8, i8, [6 x i8] }
-%struct.chunk_info.2633451 = type { %struct.ossl_quic_frame_stream_st.2633452, i64, [2 x %struct.ossl_qtx_iovec_st.2633453], i64, i32 }
-%struct.ossl_quic_frame_stream_st.2633452 = type { i64, i64, i64, ptr, i8 }
-%struct.ossl_qtx_iovec_st.2633453 = type { ptr, i64 }
-%"struct.Moves::trackType.3484970" = type { i32, i32, [4 x i32], [4 x i32], %struct.trickDataType.3484971, [4 x %struct.extCard.3484972], [4 x i32], [4 x [4 x i32]], [4 x i32] }
-%struct.trickDataType.3484971 = type { [4 x i32], i32, i32, i32, i32, i32 }
-%struct.extCard.3484972 = type { i32, i32, i32 }
+%struct.NSVGattrib.2600639 = type { [64 x i8], [6 x float], i32, i32, float, float, float, [64 x i8], [64 x i8], float, float, [8 x float], i32, i8, i8, float, i8, float, i32, float, float, i8, i8, i8 }
+%struct.succ_dict_block.2601233 = type { i32, i64, [8 x i64] }
+%"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.2608659" = type { i8, i8, [6 x i8] }
+%struct.chunk_info.2633418 = type { %struct.ossl_quic_frame_stream_st.2633419, i64, [2 x %struct.ossl_qtx_iovec_st.2633420], i64, i32 }
+%struct.ossl_quic_frame_stream_st.2633419 = type { i64, i64, i64, ptr, i8 }
+%struct.ossl_qtx_iovec_st.2633420 = type { ptr, i64 }
+%"struct.Moves::trackType.3484936" = type { i32, i32, [4 x i32], [4 x i32], %struct.trickDataType.3484937, [4 x %struct.extCard.3484938], [4 x i32], [4 x [4 x i32]], [4 x i32] }
+%struct.trickDataType.3484937 = type { [4 x i32], i32, i32, i32, i32, i32 }
+%struct.extCard.3484938 = type { i32, i32, i32 }
 
 ; 23 occurrences:
 ; abc/optimized/bmcMaj.c.ll
@@ -36,7 +36,7 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [128 x %struct.NSVGattrib.2600672], ptr %1, i64 0, i64 %2, i32 11, i64 %0
+  %3 = getelementptr [128 x %struct.NSVGattrib.2600639], ptr %1, i64 0, i64 %2, i32 11, i64 %0
   ret ptr %3
 }
 
@@ -68,7 +68,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %1, i64 0, i64 %2
+  %3 = getelementptr [0 x %struct.succ_dict_block.2601233], ptr %1, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = getelementptr [8 x i64], ptr %4, i64 0, i64 %0
   ret ptr %5
@@ -128,14 +128,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw [0 x %"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.2608692"], ptr %1, i64 0, i64 %2, i32 2, i64 %0
+  %3 = getelementptr nuw [0 x %"struct.asmjit::_abi_1_10::x86::InstDB::RWInfo.2608659"], ptr %1, i64 0, i64 %2, i32 2, i64 %0
   ret ptr %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; assimp/optimized/zip.c.ll
-; eastl/optimized/EASprintfOrdered.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; hdf5/optimized/h5import.c.ll
 ; hermes/optimized/zip.c.ll
@@ -151,7 +150,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [2 x %struct.chunk_info.2633451], ptr %1, i64 0, i64 %2, i32 2, i64 %0
+  %3 = getelementptr [2 x %struct.chunk_info.2633418], ptr %1, i64 0, i64 %2, i32 2, i64 %0
   ret ptr %3
 }
 
@@ -164,7 +163,8 @@ entry:
   ret ptr %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; eastl/optimized/EASprintfOrdered.cpp.ll
 ; llama.cpp/optimized/ggml-backend.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -177,7 +177,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [13 x %"struct.Moves::trackType.3484970"], ptr %1, i64 0, i64 %2, i32 5, i64 %0
+  %3 = getelementptr [13 x %"struct.Moves::trackType.3484936"], ptr %1, i64 0, i64 %2, i32 5, i64 %0
   ret ptr %3
 }
 

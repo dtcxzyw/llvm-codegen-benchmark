@@ -10,7 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a0, 1
-	li	a0, 12
+	li	a0, 1
 	bnez	a2, .LBB1_2
 	sll	a0, a0, a1
 .LBB1_2:                                # %entry

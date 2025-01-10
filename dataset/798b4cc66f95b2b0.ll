@@ -40,11 +40,10 @@ entry:
   ret i64 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
-; icu/optimized/swapimpl.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openusd/optimized/reconintra.c.ll

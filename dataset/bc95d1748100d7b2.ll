@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.280.2912174" = type { %"struct.std::__atomic_base.281.2912175" }
-%"struct.std::__atomic_base.281.2912175" = type { i32 }
+%"struct.std::atomic.280.2912140" = type { %"struct.std::__atomic_base.281.2912141" }
+%"struct.std::__atomic_base.281.2912141" = type { i32 }
 
 ; 67 occurrences:
 ; cmake/optimized/content_encoding.c.ll
@@ -242,7 +242,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr %"struct.std::atomic.280.2912174", ptr %0, i64 %2
+  %3 = getelementptr %"struct.std::atomic.280.2912140", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -4
   ret ptr %4
 }

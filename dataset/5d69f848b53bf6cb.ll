@@ -1,5 +1,5 @@
 
-%struct.stbtt_vertex.3063030 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
+%struct.stbtt_vertex.3062996 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
 
 ; 6 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = shl nuw i16 %2, 1
   %4 = zext i16 %3 to i64
   %5 = add nuw nsw i64 %1, %4
-  %6 = getelementptr nusw nuw %struct.stbtt_vertex.3063030, ptr %0, i64 %5, i32 6
+  %6 = getelementptr nusw nuw %struct.stbtt_vertex.3062996, ptr %0, i64 %5, i32 6
   ret ptr %6
 }
 

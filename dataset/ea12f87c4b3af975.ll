@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 9 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -83,12 +83,13 @@ entry:
   ret ptr %5
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/spin.c.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
 ; clamav/optimized/wwunpack.c.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
@@ -445,7 +446,7 @@ define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

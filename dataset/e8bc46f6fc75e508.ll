@@ -1,5 +1,5 @@
 
-; 1084 occurrences:
+; 1083 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -248,7 +248,6 @@
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; curl/optimized/libcurl_la-cf-socket.ll
-; curl/optimized/libcurl_la-rtsp.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; curl/optimized/libcurl_la-smb.ll
 ; cvc5/optimized/safe_print.cpp.ll

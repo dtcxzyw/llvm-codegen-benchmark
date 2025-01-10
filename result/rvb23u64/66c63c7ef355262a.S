@@ -47,12 +47,13 @@ func000000000000002c:                   # @func000000000000002c
 	addi	a0, a0, 1
 	ret
 func0000000000000186:                   # @func0000000000000186
-	sext.b	a0, a0
-	sext.w	a1, a1
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	lui	a2, 2
 	snez	a1, a1
-	slti	a0, a0, 0
+	slt	a0, a0, a2
 	and	a0, a0, a1
-	li	a1, 32
+	li	a1, 3
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 68
+	addi	a0, a0, 60
 	ret

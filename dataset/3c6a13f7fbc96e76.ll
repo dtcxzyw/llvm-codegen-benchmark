@@ -1,10 +1,12 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/hw-me.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
@@ -16,7 +18,7 @@ entry:
   ret i32 %4
 }
 
-; 130 occurrences:
+; 128 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -139,8 +141,6 @@ entry:
 ; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/syncookies.ll
 ; llvm/optimized/Instructions.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luajit/optimized/lj_record.ll

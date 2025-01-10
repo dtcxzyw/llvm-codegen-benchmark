@@ -30,11 +30,12 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abseil-cpp/optimized/demangle.cc.ll
 ; git/optimized/xutils.ll
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -52,18 +53,6 @@ entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/demangle.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

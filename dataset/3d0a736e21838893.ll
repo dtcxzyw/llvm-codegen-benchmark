@@ -267,11 +267,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; icu/optimized/ucasemap.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i8 %2) #0 {
 entry:

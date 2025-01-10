@@ -14,26 +14,6 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
-; abc/optimized/fraClau.c.ll
-; abc/optimized/ioReadPla.c.ll
-; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; icu/optimized/rbbitblb.ll
-; icu/optimized/string_segment.ll
-; opencv/optimized/hybrid_binarizer.cpp.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = icmp slt i32 %3, %1
-  %5 = icmp eq i32 %0, 0
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; folly/optimized/SharedMutex.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
@@ -221,6 +201,24 @@ entry:
   %3 = add nuw nsw i32 %2, 48
   %4 = icmp samesign ugt i32 %3, %1
   %5 = icmp ult i32 %0, 10
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 7 occurrences:
+; abc/optimized/fraClau.c.ll
+; abc/optimized/ioReadPla.c.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; icu/optimized/rbbitblb.ll
+; icu/optimized/string_segment.ll
+; opencv/optimized/hybrid_binarizer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000cc1(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = icmp slt i32 %3, %1
+  %5 = icmp eq i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

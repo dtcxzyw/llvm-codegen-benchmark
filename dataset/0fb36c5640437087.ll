@@ -548,7 +548,7 @@ entry:
   ret i1 %4
 }
 
-; 393 occurrences:
+; 391 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -570,7 +570,6 @@ entry:
 ; casadi/optimized/qrqp.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; ceres/optimized/polynomial.cc.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; coreutils-rs/optimized/1ks0bjj5pmsh3du4.ll
@@ -939,7 +938,6 @@ entry:
 ; zed-rs/optimized/esas3ubizu9r0ao68kvh5d7vx.ll
 ; zed-rs/optimized/f2on42re1vwqfvihm5s1p3ljw.ll
 ; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
@@ -1137,12 +1135,14 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; casadi/optimized/dae_builder_internal.cpp.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; libquic/optimized/convert.c.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000006c(i64 %0, i1 %1) #0 {
 entry:

@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
+; linux/optimized/svcsock.ll
+; php/optimized/pack.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp slt i32 %1, 0
+  %5 = select i1 %4, i64 %0, i64 %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; zfp/optimized/zfp.c.ll
@@ -65,18 +78,6 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp slt i32 %1, 0
-  %5 = select i1 %4, i64 %0, i64 %3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; delta-rs/optimized/1rw3q64nilk4jthd.ll
-; linux/optimized/svcsock.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
   %4 = icmp slt i32 %1, 0
   %5 = select i1 %4, i64 %0, i64 %3
   ret i64 %5

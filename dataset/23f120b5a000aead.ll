@@ -31,8 +31,7 @@ entry:
   ret i32 %6
 }
 
-; 36 occurrences:
-; abc/optimized/giaMf.c.ll
+; 35 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/move_extent.ll

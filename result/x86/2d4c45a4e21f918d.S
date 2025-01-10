@@ -13,3 +13,8 @@ func0000000000000050:                   # @func0000000000000050
 	shrq	$3, %rsi
 	leaq	1(%rdi,%rsi), %rax
 	retq
+func000000000000005a:                   # @func000000000000005a
+	subq	%rdx, %rsi
+	shrq	%rsi
+	leaq	63(%rsi,%rdi), %rax
+	retq

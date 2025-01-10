@@ -354,7 +354,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -364,6 +364,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; postgres/optimized/dynahash.ll
 ; quantlib/optimized/coterminalswapcurvestate.ll
 ; quantlib/optimized/curvestate.ll
 ; quantlib/optimized/lmmdriftcalculator.ll

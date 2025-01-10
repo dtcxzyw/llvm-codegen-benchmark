@@ -1,5 +1,5 @@
 
-; 1077 occurrences:
+; 1079 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -406,6 +406,7 @@
 ; git/optimized/commit-graph.ll
 ; git/optimized/log.ll
 ; git/optimized/packfile.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/pretty.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -725,6 +726,7 @@
 ; opencv/optimized/elementwise_layers.cpp.ll
 ; opencv/optimized/grid_sampler.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/perspective_transform.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -1085,11 +1087,12 @@ entry:
   ret i1 %3
 }
 
-; 121 occurrences:
+; 122 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -1215,7 +1218,7 @@ entry:
   ret i1 %3
 }
 
-; 3559 occurrences:
+; 3562 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -1414,6 +1417,7 @@ entry:
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
+; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/nvector_serial.c.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sundials_nvector.c.ll
@@ -2082,6 +2086,7 @@ entry:
 ; git/optimized/midx.ll
 ; git/optimized/object-name.ll
 ; git/optimized/packfile.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/pretty.ll
 ; git/optimized/read-cache.ll
@@ -4298,6 +4303,7 @@ entry:
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/strutil.cc.ll
+; slurm/optimized/backfill.ll
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/file_functions.ll
 ; slurm/optimized/gang.ll
@@ -4783,7 +4789,7 @@ entry:
   ret i1 %3
 }
 
-; 312 occurrences:
+; 313 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -4981,6 +4987,7 @@ entry:
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/dirstream.ll
 ; php/optimized/filter.ll
+; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phar.ll
 ; postgres/optimized/fd.ll
 ; proxygen/optimized/HPACKCodec.cpp.ll
@@ -5104,7 +5111,7 @@ entry:
   ret i1 %3
 }
 
-; 1011 occurrences:
+; 1012 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -5282,6 +5289,7 @@ entry:
 ; html5ever-rs/optimized/3yf7dd26qc4nc3nw.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
+; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/35i0bcsvqttn7s2s.ll
@@ -6351,7 +6359,7 @@ entry:
   ret i1 %3
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; boost/optimized/pipe.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -6429,6 +6437,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; quickjs/optimized/quickjs.ll
+; slurm/optimized/backfill.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/tcp.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; quantlib/optimized/getcovariance.ll
@@ -25,7 +26,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 97 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/zip.c.ll
@@ -40,6 +41,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/system_test1.ll
 ; boost/optimized/system_test2.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/scanners.c.ll
 ; clamav/optimized/secpassword.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -57,6 +59,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; faiss/optimized/clone_index.cpp.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; git/optimized/object-file.ll
+; git/optimized/remote-curl.ll
 ; gromacs/optimized/manyautocorrelation.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/hidraw.ll
@@ -71,10 +74,12 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; llvm/optimized/HeaderIncludes.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; node/optimized/libnode.node_buffer.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; oiio/optimized/hdrinput.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -86,12 +91,20 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/tree.cpp.ll
+; openjdk/optimized/compileLog.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/spectrum.cpp.ll
+; postgres/optimized/backend_status.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_desc-msos.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/migration_block-dirty-bitmap.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/cmswapcurvestate.ll
@@ -247,9 +260,10 @@ entry:
   ret i64 %3
 }
 
-; 41 occurrences:
+; 48 occurrences:
 ; boost/optimized/pool_resource.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/dll.cpp.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
@@ -261,7 +275,11 @@ entry:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; lief/optimized/ecp_curves.c.ll
+; linux/optimized/gup.ll
 ; linux/optimized/ptp_chardev.ll
 ; linux/optimized/swnode.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -286,6 +304,8 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
 ; wireshark/optimized/traffic_tab.cpp.ll

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 30 occurrences:
 ; cpython/optimized/_ssl.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -22,6 +22,8 @@
 ; openjdk/optimized/UnixNativeDispatcher.ll
 ; openjdk/optimized/jvmtiGetLoadedClasses.ll
 ; openmpi/optimized/part_persist.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; qemu/optimized/monitor_hmp.c.ll
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; quantlib/optimized/svd.ll

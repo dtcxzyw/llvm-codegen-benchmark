@@ -1,5 +1,5 @@
 
-%struct.dx_entry.3548008 = type { i32, i32 }
+%struct.dx_entry.3547974 = type { i32, i32 }
 
 ; 12 occurrences:
 ; assimp/optimized/XFileParser.cpp.ll
@@ -91,7 +91,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.dx_entry.3548008, ptr %0, i64 %1
+  %2 = getelementptr %struct.dx_entry.3547974, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -8
   %4 = getelementptr i8, ptr %0, i64 8
   %5 = icmp ugt ptr %4, %3

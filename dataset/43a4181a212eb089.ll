@@ -12,7 +12,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 248 occurrences:
+; 249 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -110,6 +110,7 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; cmake/optimized/archive_read_support_format_ar.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll

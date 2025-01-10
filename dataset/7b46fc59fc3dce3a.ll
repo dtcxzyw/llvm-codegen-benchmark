@@ -1,6 +1,6 @@
 
-%struct.AVxWorker.3388635 = type { ptr, i32, ptr, ptr, ptr, ptr, i32 }
-%struct.JSShapeProperty.3435093 = type { i32, i32 }
+%struct.AVxWorker.3388601 = type { ptr, i32, ptr, ptr, ptr, ptr, i32 }
+%struct.JSShapeProperty.3435059 = type { i32, i32 }
 
 ; 2 occurrences:
 ; clamav/optimized/filestr.cpp.ll
@@ -21,7 +21,7 @@ entry:
 define ptr @func000000000000005f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.AVxWorker.3388635, ptr %0, i64 %2
+  %3 = getelementptr %struct.AVxWorker.3388601, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   ret ptr %4
 }
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.JSShapeProperty.3435093, ptr %0, i64 %2
+  %3 = getelementptr %struct.JSShapeProperty.3435059, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -4
   ret ptr %4
 }
@@ -43,7 +43,7 @@ entry:
 define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.JSShapeProperty.3435093, ptr %0, i64 %2
+  %3 = getelementptr %struct.JSShapeProperty.3435059, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -4
   ret ptr %4
 }

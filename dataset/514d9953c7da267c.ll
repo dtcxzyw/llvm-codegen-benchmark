@@ -39,8 +39,9 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/dll.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll

@@ -1,10 +1,10 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%struct.ChatFormattedLine.2693933 = type <{ %"class.std::vector.5.2693929", i8, [7 x i8] }>
-%"class.std::vector.5.2693929" = type { %"struct.std::_Vector_base.6.2693930" }
-%"struct.std::_Vector_base.6.2693930" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" = type { ptr, ptr, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%struct.ChatFormattedLine.2693899 = type <{ %"class.std::vector.5.2693895", i8, [7 x i8] }>
+%"class.std::vector.5.2693895" = type { %"struct.std::_Vector_base.6.2693896" }
+%"struct.std::_Vector_base.6.2693896" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693897" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693897" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693898" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693898" = type { ptr, ptr, ptr }
 
 ; 110 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -121,7 +121,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -175,7 +175,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -200,7 +200,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw nuw %struct.ChatFormattedLine.2693933, ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw nuw %struct.ChatFormattedLine.2693899, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

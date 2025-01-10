@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; folly/optimized/Conv.cpp.ll
@@ -24,6 +24,7 @@
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-ipx.c.ll
 ; wireshark/optimized/packet-reload.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/AZDetector.cpp.ll

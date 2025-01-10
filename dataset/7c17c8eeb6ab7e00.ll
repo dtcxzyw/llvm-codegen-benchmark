@@ -353,7 +353,7 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_liquify.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/osageinit.c.ll
@@ -370,7 +370,6 @@ entry:
 ; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
 ; slurm/optimized/slurmdb_defs.ll
 ; soc-simulator/optimized/verilated.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind

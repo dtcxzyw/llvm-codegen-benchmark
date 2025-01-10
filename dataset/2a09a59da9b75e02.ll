@@ -1,6 +1,6 @@
 
-%"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319981" = type { %"class.llvm::StringRef.3319847", ptr, %"class.llvm::StringRef.3319847", %"class.llvm::StringRef.3319847", i32, i8, ptr }
-%"class.llvm::StringRef.3319847" = type { ptr, i64 }
+%"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319947" = type { %"class.llvm::StringRef.3319813", ptr, %"class.llvm::StringRef.3319813", %"class.llvm::StringRef.3319813", i32, i8, ptr }
+%"class.llvm::StringRef.3319813" = type { ptr, i64 }
 
 ; 3 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -39,7 +39,7 @@ entry:
 define ptr @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319981", ptr %1, i64 %3
+  %4 = getelementptr %"struct.(anonymous namespace)::MatchableInfo::AsmOperand.3319947", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 72
   %6 = mul nuw nsw i64 %0, 288
   %7 = getelementptr i8, ptr %5, i64 %6

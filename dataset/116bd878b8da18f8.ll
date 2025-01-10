@@ -1,8 +1,8 @@
 
-%"class.llvm::detail::DenseSetPair.581.3157501" = type { %"struct.llvm::ValueInfo.3157498" }
-%"struct.llvm::ValueInfo.3157498" = type { %"class.llvm::PointerIntPair.522.3157499" }
-%"class.llvm::PointerIntPair.522.3157499" = type { %"struct.llvm::detail::PunnedPointer.523.3157500" }
-%"struct.llvm::detail::PunnedPointer.523.3157500" = type { [8 x i8] }
+%"class.llvm::detail::DenseSetPair.581.3157467" = type { %"struct.llvm::ValueInfo.3157464" }
+%"struct.llvm::ValueInfo.3157464" = type { %"class.llvm::PointerIntPair.522.3157465" }
+%"class.llvm::PointerIntPair.522.3157465" = type { %"struct.llvm::detail::PunnedPointer.523.3157466" }
+%"struct.llvm::detail::PunnedPointer.523.3157466" = type { [8 x i8] }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -45,7 +45,7 @@ entry:
   %4 = and i32 %3, -8
   %5 = and i32 %4, %1
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.581.3157501", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::detail::DenseSetPair.581.3157467", ptr %0, i64 %6
   ret ptr %7
 }
 

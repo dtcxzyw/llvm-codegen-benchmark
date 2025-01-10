@@ -12,7 +12,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 187 occurrences:
+; 194 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/pool_urbg.cc.ll
@@ -27,6 +27,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/bufq.c.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
+; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/nghttp2_buf.c.ll
 ; cmake/optimized/sha256.c.ll
 ; cmake/optimized/stream.c.ll
@@ -68,16 +69,20 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; lief/optimized/ccm.c.ll
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/blk-lib.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/early_ioremap.ll
+; linux/optimized/gup.ll
 ; linux/optimized/i915_gem.ll
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_scatterlist.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/ip6_output.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/message.ll
@@ -155,6 +160,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; openusd/optimized/read.c.ll
 ; openusd/optimized/stream.c.ll
 ; php/optimized/streams.ll
+; portaudio/optimized/pa_sndio.c.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/logtape.ll
 ; postgres/optimized/pg_backup_tar.ll
@@ -199,6 +205,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; velox/optimized/File.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -207,7 +214,7 @@ entry:
   ret i1 %2
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -235,6 +242,7 @@ entry:
 ; redis/optimized/t_hash.ll
 ; redis/optimized/t_set.ll
 ; redis/optimized/t_zset.ll
+; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:

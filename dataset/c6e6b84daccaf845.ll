@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_var.2789897 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
+%struct._zend_ssa_var.2789863 = type { i32, i32, i32, i32, ptr, ptr, ptr, i8 }
 
 ; 103 occurrences:
 ; abc/optimized/abc.c.ll
@@ -109,7 +109,7 @@
 define i64 @func0000000000000011(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_ssa_var.2789897, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct._zend_ssa_var.2789863, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, 48

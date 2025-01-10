@@ -1,9 +1,9 @@
 
-%"struct.LightGBM::Tree::PathElement.2907705" = type { i32, double, double, double }
-%struct.token.3062475 = type { %union.anon.3062476, i32, i32 }
-%union.anon.3062476 = type { ptr }
-%struct.fwdb_wmm_ac.3550741 = type { i8, i8, i16 }
-%struct.PyDictUnicodeEntry.3997082 = type { ptr, ptr }
+%"struct.LightGBM::Tree::PathElement.2907671" = type { i32, double, double, double }
+%struct.token.3062441 = type { %union.anon.3062442, i32, i32 }
+%union.anon.3062442 = type { ptr }
+%struct.fwdb_wmm_ac.3550707 = type { i8, i8, i16 }
+%struct.PyDictUnicodeEntry.3997032 = type { ptr, ptr }
 
 ; 10 occurrences:
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
@@ -45,8 +45,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907705", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907705", ptr %4, i64 %3, i32 3
+  %4 = getelementptr nusw %"struct.LightGBM::Tree::PathElement.2907671", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.LightGBM::Tree::PathElement.2907671", ptr %4, i64 %3, i32 3
   ret ptr %5
 }
 
@@ -56,8 +56,8 @@ entry:
 define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
-  %4 = getelementptr nusw %struct.token.3062475, ptr %0, i64 %1
-  %5 = getelementptr nusw %struct.token.3062475, ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw %struct.token.3062441, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.token.3062441, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -68,7 +68,7 @@ define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.fwdb_wmm_ac.3550741, ptr %4, i64 %3, i32 1
+  %5 = getelementptr %struct.fwdb_wmm_ac.3550707, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -79,7 +79,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr %struct.PyDictUnicodeEntry.3997082, ptr %4, i64 %3, i32 1
+  %5 = getelementptr %struct.PyDictUnicodeEntry.3997032, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

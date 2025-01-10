@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -14,7 +14,6 @@
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zBarrier.ll
 ; openjdk/optimized/zMark.ll
-; php/optimized/zend_alloc.ll
 ; qemu/optimized/migration_ram.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

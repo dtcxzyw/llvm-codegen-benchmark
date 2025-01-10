@@ -12,7 +12,7 @@ func000000000000001d:                   # @func000000000000001d
 	orl	%edx, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	andl	$128, %edx
+	andl	$224, %edx
 	leal	(,%rdx,8), %eax
 	orl	%esi, %edi
 	orl	%edi, %eax

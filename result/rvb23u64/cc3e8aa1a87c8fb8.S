@@ -18,3 +18,8 @@ func000000000000001c:                   # @func000000000000001c
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func000000000000001d:                   # @func000000000000001d
+	srliw	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret

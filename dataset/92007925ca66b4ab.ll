@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/DeclCXX.cpp.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i1 %2) #0 {

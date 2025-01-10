@@ -4,6 +4,12 @@ func0000000000000026:                   # @func0000000000000026
 	setl	%al
 	andb	%dil, %al
 	retq
+func0000000000000104:                   # @func0000000000000104
+	addl	%esi, %edx
+	cmpl	$4096, %edx                     # imm = 0x1000
+	setb	%al
+	andb	%dil, %al
+	retq
 func00000000000001aa:                   # @func00000000000001aa
 	addl	%esi, %edx
 	setns	%al

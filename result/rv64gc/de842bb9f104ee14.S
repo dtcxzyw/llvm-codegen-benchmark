@@ -97,12 +97,12 @@ func000000000000046c:                   # @func000000000000046c
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000861:                   # @func0000000000000861
+func000000000000086c:                   # @func000000000000086c
 	srli	a1, a1, 14
 	snez	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, -3
-	seqz	a0, a0
+	snez	a0, a0
 	ret
 func0000000000000c44:                   # @func0000000000000c44
 	addi	a1, a1, -7

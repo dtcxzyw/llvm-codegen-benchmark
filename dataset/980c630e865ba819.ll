@@ -2326,8 +2326,9 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; folly/optimized/String.cpp.ll
+; git/optimized/ewah_bitmap.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/journal.ll

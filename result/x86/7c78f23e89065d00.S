@@ -53,3 +53,12 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$3, %eax
 	setae	%al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	andl	$1, %edx
+	movl	$2, %eax
+	subl	%edx, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	cmpl	$1, %eax
+	setne	%al
+	retq

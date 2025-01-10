@@ -370,7 +370,7 @@ entry:
   ret i64 %6
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -392,6 +392,7 @@ entry:
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
+; git/optimized/writer.ll
 ; grpc/optimized/client_channel.cc.ll
 ; hyperscan/optimized/fdr.c.ll
 ; luau/optimized/ConstraintGenerator.cpp.ll
@@ -432,7 +433,7 @@ entry:
   ret i64 %6
 }
 
-; 110 occurrences:
+; 109 occurrences:
 ; boost/optimized/numeric.ll
 ; boost/optimized/parser_utils.ll
 ; boost/optimized/to_chars.ll
@@ -457,7 +458,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; git/optimized/writer.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll

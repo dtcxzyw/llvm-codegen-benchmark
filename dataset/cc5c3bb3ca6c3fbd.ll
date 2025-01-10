@@ -1,6 +1,6 @@
 
-%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989" = type { float, %"class.irr::core::vector3d.2702987" }
-%"class.irr::core::vector3d.2702987" = type { float, float, float }
+%"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955" = type { float, %"class.irr::core::vector3d.2702953" }
+%"class.irr::core::vector3d.2702953" = type { float, float, float }
 
 ; 4 occurrences:
 ; abc/optimized/cecSatG3.c.ll
@@ -12,7 +12,7 @@ define i64 @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702989", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SPositionKey.2702955", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

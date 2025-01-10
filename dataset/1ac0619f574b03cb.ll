@@ -1,8 +1,8 @@
 
-%"class.std::vector.2690952" = type { %"struct.std::_Vector_base.2690953" }
-%"struct.std::_Vector_base.2690953" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690954" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" }
-%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690955" = type { ptr, ptr, ptr }
+%"class.std::vector.2690918" = type { %"struct.std::_Vector_base.2690919" }
+%"struct.std::_Vector_base.2690919" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl.2690920" = type { %"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" }
+%"struct.std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char>>>::_Vector_impl_data.2690921" = type { ptr, ptr, ptr }
 
 ; 103 occurrences:
 ; cpython/optimized/_collectionsmodule.ll
@@ -1553,7 +1553,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = getelementptr nusw i8, ptr %0, i64 -96
-  %4 = getelementptr nusw nuw [2 x %"class.std::vector.2690952"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [2 x %"class.std::vector.2690918"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

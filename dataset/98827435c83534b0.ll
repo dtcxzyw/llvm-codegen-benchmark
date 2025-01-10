@@ -1,16 +1,16 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
-%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
-%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
-%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
-%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
-%struct.hlist_nulls_head.3558355 = type { ptr }
-%"class.eastl::basic_string.128.3897401" = type { %"class.eastl::compressed_pair.129.3897402" }
-%"class.eastl::compressed_pair.129.3897402" = type { %"class.eastl::compressed_pair_imp.130.3897403" }
-%"class.eastl::compressed_pair_imp.130.3897403" = type { %"struct.eastl::basic_string<char>::Layout.3897404" }
-%"struct.eastl::basic_string<char>::Layout.3897404" = type { %union.anon.131.3897405 }
-%union.anon.131.3897405 = type { %"struct.eastl::basic_string<char>::HeapLayout.3897390" }
-%"struct.eastl::basic_string<char>::HeapLayout.3897390" = type { ptr, i64, i64 }
+%"struct.rocksdb::CacheAlignedWrapper.2615938" = type { %"class.rocksdb::port::Mutex.2615939", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615939" = type { %union.pthread_mutex_t.2615940 }
+%union.pthread_mutex_t.2615940 = type { %struct.__pthread_mutex_s.2615941 }
+%struct.__pthread_mutex_s.2615941 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615942 }
+%struct.__pthread_internal_list.2615942 = type { ptr, ptr }
+%struct.hlist_nulls_head.3558321 = type { ptr }
+%"class.eastl::basic_string.128.3897351" = type { %"class.eastl::compressed_pair.129.3897352" }
+%"class.eastl::compressed_pair.129.3897352" = type { %"class.eastl::compressed_pair_imp.130.3897353" }
+%"class.eastl::compressed_pair_imp.130.3897353" = type { %"struct.eastl::basic_string<char>::Layout.3897354" }
+%"struct.eastl::basic_string<char>::Layout.3897354" = type { %union.anon.131.3897355 }
+%union.anon.131.3897355 = type { %"struct.eastl::basic_string<char>::HeapLayout.3897340" }
+%"struct.eastl::basic_string<char>::HeapLayout.3897340" = type { ptr, i64, i64 }
 
 ; 8 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
@@ -27,7 +27,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %5
+  %6 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615938", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -78,7 +78,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = getelementptr %struct.hlist_nulls_head.3558355, ptr %0, i64 %5
+  %6 = getelementptr %struct.hlist_nulls_head.3558321, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = and i64 %2, 1073741823
   %4 = mul nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = getelementptr nusw nuw %"class.eastl::basic_string.128.3897401", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.eastl::basic_string.128.3897351", ptr %0, i64 %5
   ret ptr %6
 }
 

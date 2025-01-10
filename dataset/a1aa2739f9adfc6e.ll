@@ -1,16 +1,16 @@
 
-%"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825553" = type { ptr, i32, i32 }
-%"class.boost::shared_ptr.83.2852607" = type { ptr, %"class.boost::detail::shared_count.2852599" }
-%"class.boost::detail::shared_count.2852599" = type { ptr }
-%struct.Gia_Obj_t_.2876250 = type <{ i64, i32 }>
-%struct.page.3534732 = type { i64, %union.anon.9.3534733, %union.anon.17.3534734, %struct.atomic_t.3534696, [8 x i8] }
-%union.anon.9.3534733 = type { %struct.anon.10.3534735 }
-%struct.anon.10.3534735 = type { %union.anon.11.3534736, ptr, %union.anon.13.3534737, i64 }
-%union.anon.11.3534736 = type { %struct.list_head.3534700 }
-%struct.list_head.3534700 = type { ptr, ptr }
-%union.anon.13.3534737 = type { i64 }
-%union.anon.17.3534734 = type { %struct.atomic_t.3534696 }
-%struct.atomic_t.3534696 = type { i32 }
+%"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825519" = type { ptr, i32, i32 }
+%"class.boost::shared_ptr.83.2852573" = type { ptr, %"class.boost::detail::shared_count.2852565" }
+%"class.boost::detail::shared_count.2852565" = type { ptr }
+%struct.Gia_Obj_t_.2876216 = type <{ i64, i32 }>
+%struct.page.3534698 = type { i64, %union.anon.9.3534699, %union.anon.17.3534700, %struct.atomic_t.3534662, [8 x i8] }
+%union.anon.9.3534699 = type { %struct.anon.10.3534701 }
+%struct.anon.10.3534701 = type { %union.anon.11.3534702, ptr, %union.anon.13.3534703, i64 }
+%union.anon.11.3534702 = type { %struct.list_head.3534666 }
+%struct.list_head.3534666 = type { ptr, ptr }
+%union.anon.13.3534703 = type { i64 }
+%union.anon.17.3534700 = type { %struct.atomic_t.3534662 }
+%struct.atomic_t.3534662 = type { i32 }
 
 ; 6 occurrences:
 ; cjson/optimized/cJSON.c.ll
@@ -59,7 +59,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825553", ptr %1, i64 %2
+  %3 = getelementptr %"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825519", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -73,7 +73,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.boost::shared_ptr.83.2852607", ptr %1, i64 %2
+  %3 = getelementptr %"class.boost::shared_ptr.83.2852573", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -87,7 +87,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Gia_Obj_t_.2876250, ptr %1, i64 %2
+  %3 = getelementptr %struct.Gia_Obj_t_.2876216, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -100,7 +100,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.page.3534732, ptr %1, i64 %2
+  %3 = getelementptr %struct.page.3534698, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -64
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

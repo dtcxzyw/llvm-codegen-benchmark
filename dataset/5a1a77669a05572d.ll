@@ -17,6 +17,7 @@
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_json.ll
 ; cpython/optimized/_pickle.ll
+; cpython/optimized/pystrtod.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -69,7 +70,6 @@
 ; linux/optimized/rx.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sg.ll
-; linux/optimized/vc_screen.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll

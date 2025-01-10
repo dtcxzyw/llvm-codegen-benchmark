@@ -17,14 +17,18 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a0, 1
 	sext.w	a1, a1
-	addi	a1, a1, -2
-	seqz	a0, a1
-	bnez	a2, .LBB1_2
-	negw	a0, a0
-	andi	a0, a0, 578
-	ret
+	li	a0, 18
+	beqz	a1, .LBB1_2
+	li	a1, 15
+	beqz	a2, .LBB1_3
+	j	.LBB1_4
 .LBB1_2:
-	slli	a0, a0, 1
+	li	a0, 12
+	li	a1, 18
+	bnez	a2, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a0, a1
+.LBB1_4:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a2, a1

@@ -1,3 +1,9 @@
+func000000000000000f:                   # @func000000000000000f
+	shrl	$20, %esi
+	andl	$63, %esi
+	subl	%esi, %edi
+	leal	1(%rdi), %eax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	shrl	$3, %esi
 	andl	$7, %esi
@@ -15,10 +21,4 @@ func000000000000000d:                   # @func000000000000000d
 	andl	$63, %esi
 	subl	%esi, %edi
 	leal	32(%rdi), %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	shrl	$4, %esi
-	andl	$15, %esi
-	subl	%esi, %edi
-	leal	1(%rdi), %eax
 	retq

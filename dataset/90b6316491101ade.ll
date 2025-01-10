@@ -1,10 +1,10 @@
 
-%union.yyalloc.2792424 = type { %struct._phpdbg_param.2792421 }
-%struct._phpdbg_param.2792421 = type { i32, i64, i64, %struct.anon.2792422, %struct.anon.0.2792423, ptr, i64, ptr, ptr }
-%struct.anon.2792422 = type { ptr, i64 }
-%struct.anon.0.2792423 = type { ptr, ptr }
-%union.yyalloc.3651302 = type { %union.YYSTYPE.3651301 }
-%union.YYSTYPE.3651301 = type { i64 }
+%union.yyalloc.2792390 = type { %struct._phpdbg_param.2792387 }
+%struct._phpdbg_param.2792387 = type { i32, i64, i64, %struct.anon.2792388, %struct.anon.0.2792389, ptr, i64, ptr, ptr }
+%struct.anon.2792388 = type { ptr, i64 }
+%struct.anon.0.2792389 = type { ptr, ptr }
+%union.yyalloc.3651268 = type { %union.YYSTYPE.3651267 }
+%union.YYSTYPE.3651267 = type { i64 }
 
 ; 9 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
@@ -23,7 +23,7 @@ entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 10000)
   %4 = add nsw i64 %3, 87
   %5 = sdiv i64 %4, 88
-  %6 = getelementptr nusw %union.yyalloc.2792424, ptr %0, i64 %5
+  %6 = getelementptr nusw %union.yyalloc.2792390, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 10000)
   %4 = add nsw i64 %3, 7
   %5 = sdiv i64 %4, 8
-  %6 = getelementptr %union.yyalloc.3651302, ptr %0, i64 %5
+  %6 = getelementptr %union.yyalloc.3651268, ptr %0, i64 %5
   ret ptr %6
 }
 

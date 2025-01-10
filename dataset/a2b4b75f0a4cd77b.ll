@@ -234,10 +234,11 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/upack.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/coder.c.ll
 ; libevent/optimized/event_tagging.c.ll
@@ -248,6 +249,7 @@ entry:
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/fstapi.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {

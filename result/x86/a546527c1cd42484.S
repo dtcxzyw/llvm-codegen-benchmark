@@ -39,3 +39,10 @@ func0000000000000129:                   # @func0000000000000129
 	setae	%al
 	andb	%cl, %al
 	retq
+func0000000000000128:                   # @func0000000000000128
+	cmpq	%rdi, %rdx
+	setae	%cl
+	cmpq	%rsi, %rdi
+	seta	%al
+	andb	%cl, %al
+	retq

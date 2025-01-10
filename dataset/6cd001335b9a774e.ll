@@ -2737,16 +2737,13 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Geometry.cpp.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; assimp/optimized/XmlSerializer.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; php/optimized/zend_jit.ll

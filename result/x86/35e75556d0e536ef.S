@@ -74,9 +74,9 @@ func0000000000000078:                   # @func0000000000000078
 	cmovbq	%rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	leaq	-7(%rdx), %rax
-	cmpq	$7, %rsi
-	cmovgeq	%rdi, %rax
+	leaq	16(%rdx), %rax
+	testq	%rsi, %rsi
+	cmovnsq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	-27(%rdx), %rax

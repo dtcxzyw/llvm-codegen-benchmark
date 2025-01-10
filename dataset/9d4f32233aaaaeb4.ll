@@ -316,11 +316,12 @@ entry:
   ret i1 %4
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/grouper.cc.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll

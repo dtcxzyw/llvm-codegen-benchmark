@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/unzip.c.ll
@@ -53,7 +53,6 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/cluster_legacy.ll
-; redis/optimized/dict.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/prism.ll
@@ -162,7 +161,7 @@ entry:
   ret i1 %5
 }
 
-; 105 occurrences:
+; 106 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; clamav/optimized/pe.c.ll
@@ -199,6 +198,7 @@ entry:
 ; darktable/optimized/ThreefrDecoder.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; grpc/optimized/hpack_encoder_table.cc.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
@@ -290,7 +290,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; cmake/optimized/cmGlobalNinjaGenerator.cxx.ll
 ; hyperscan/optimized/repeat.c.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -298,13 +298,11 @@ entry:
 ; luau/optimized/Normalize.cpp.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
-; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openmpi/optimized/btl_sm_sendi.ll
 ; openmpi/optimized/libmpi_c_profile_la-unpack.ll
 ; postgres/optimized/ruleutils.ll
 ; postgres/optimized/spell.ll
-; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/memtable_list.cc.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
@@ -673,7 +671,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; darktable/optimized/AbstractDngDecompressor.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
@@ -704,13 +702,11 @@ entry:
 ; linux/optimized/bio.ll
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/MSFCommon.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/fdt_sw.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -800,7 +796,7 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -832,7 +828,6 @@ entry:
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
@@ -924,6 +919,18 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; wireshark/optimized/packet-acn.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = icmp ne i64 %4, %3
   ret i1 %5
 }
 
@@ -1193,28 +1200,6 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = icmp sle i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; quickjs/optimized/quickjs-libc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %0, %1
-  %5 = icmp samesign ult i64 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-acn.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %0, %1
-  %5 = icmp ne i64 %4, %3
   ret i1 %5
 }
 

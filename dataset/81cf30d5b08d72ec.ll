@@ -1,5 +1,5 @@
 
-; 435 occurrences:
+; 433 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/aigRepr.c.ll
@@ -121,7 +121,6 @@
 ; hdf5/optimized/H5VLint.c.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
@@ -377,7 +376,6 @@
 ; ruby/optimized/process.ll
 ; ruby/optimized/ractor.ll
 ; ruby/optimized/range.ll
-; ruby/optimized/rational.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/ripper.ll
@@ -443,7 +441,7 @@ entry:
   ret i32 %2
 }
 
-; 339 occurrences:
+; 333 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/acecTree.c.ll
@@ -494,10 +492,8 @@ entry:
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/testDirectory.cxx.ll
-; cpython/optimized/_threadmodule.ll
 ; cpython/optimized/_weakref.ll
 ; cpython/optimized/dictobject.ll
 ; cpython/optimized/longobject.ll
@@ -698,12 +694,9 @@ entry:
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
 ; openssl/optimized/tls13secretstest-bin-packet.ll
 ; openusd/optimized/read.c.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/cdf_time.ll
 ; php/optimized/ir_perf.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/zend_alloc.ll
-; php/optimized/zend_execute.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; portaudio/optimized/pa_process.c.ll
 ; postgres/optimized/aclchk.ll
@@ -711,11 +704,9 @@ entry:
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/audio_wavaudio.c.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
-; qemu/optimized/hw_virtio_virtio-balloon.c.ll
 ; qemu/optimized/util_async.c.ll
 ; qemu/optimized/util_buffer.c.ll
 ; qemu/optimized/util_qdist.c.ll
-; qemu/optimized/util_thread-context.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/cluster_legacy.ll
@@ -749,6 +740,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/slurmdb_defs.ll
+; slurm/optimized/step_mgr.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/interactive.ll
 ; sqlite/optimized/sqlite3.ll
@@ -987,13 +979,12 @@ entry:
   ret i32 %2
 }
 
-; 142 occurrences:
+; 140 occurrences:
 ; abc/optimized/fraLcr.c.ll
 ; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/long.ll
 ; cpython/optimized/longobject.ll
-; darktable/optimized/timeline.c.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -1102,7 +1093,6 @@ entry:
 ; redis/optimized/listpack.ll
 ; redis/optimized/ziplist.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll

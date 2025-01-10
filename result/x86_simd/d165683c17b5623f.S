@@ -4,6 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
+func0000000000000084:                   # @func0000000000000084
+	vpmovqd	%ymm2, %xmm2
+	vpminud	%xmm1, %xmm0, %xmm0
+	vpcmpltud	%xmm2, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000054:                   # @func0000000000000054
 	vpmovqd	%ymm2, %xmm2
 	vpminud	%xmm1, %xmm0, %xmm0

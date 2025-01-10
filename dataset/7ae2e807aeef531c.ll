@@ -1,10 +1,9 @@
 
-; 229 occurrences:
+; 226 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -53,12 +52,12 @@
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/integrator.cpp.ll
-; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -123,7 +122,6 @@
 ; linux/optimized/pagelist.ll
 ; linux/optimized/rwsem.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/vfs_file.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/write.ll
@@ -191,7 +189,6 @@
 ; ozz-animation/optimized/track.cc.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
-; pbrt-v4/optimized/media.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; php/optimized/mod_files.ll
 ; pybind11/optimized/test_class.cpp.ll
@@ -322,8 +319,7 @@ entry:
   ret i64 %5
 }
 
-; 690 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 687 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -809,7 +805,6 @@ entry:
 ; opencv/optimized/multicalib.cpp.ll
 ; opencv/optimized/object_detection.cpp.ll
 ; opencv/optimized/regtree.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
@@ -885,7 +880,6 @@ entry:
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
-; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/nfa.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -1022,7 +1016,7 @@ entry:
   ret i64 %5
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -1039,7 +1033,6 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/User.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; mimalloc/optimized/segment.c.ll
@@ -1398,7 +1391,7 @@ entry:
   ret i64 %5
 }
 
-; 73 occurrences:
+; 69 occurrences:
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; casadi/optimized/cvodes_bandpre.c.ll
@@ -1459,10 +1452,6 @@ entry:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/htif_pthread.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
@@ -1644,6 +1633,20 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 53
+  %4 = add i64 %1, %3
+  %5 = add nuw i64 %4, %0
+  ret i64 %5
+}
+
 ; 9 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
@@ -1712,6 +1715,17 @@ entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; casadi/optimized/nlpsol.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = add nsw i64 %1, %3
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 

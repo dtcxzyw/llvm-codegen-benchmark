@@ -1,19 +1,20 @@
 
-%"struct.GUITable::Cell.2703225" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703211", i8, i32 }
-%"class.irr::video::SColor.2703211" = type { i32 }
-%"class.gmx::BasicVector.3373276" = type { [3 x float] }
-%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
-%"class.cv::Mat.3735326" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3735327", %"struct.cv::MatStep.3735328" }
-%"struct.cv::MatSize.3735327" = type { ptr }
-%"struct.cv::MatStep.3735328" = type { ptr, [2 x i64] }
+%"struct.GUITable::Cell.2703191" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703177", i8, i32 }
+%"class.irr::video::SColor.2703177" = type { i32 }
+%"class.gmx::BasicVector.3373242" = type { [3 x float] }
+%struct.JSVarDef.3435063 = type { i32, i32, i32, i32 }
+%"class.cv::Mat.3735276" = type { i32, i32, i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, %"struct.cv::MatSize.3735277", %"struct.cv::MatStep.3735278" }
+%"struct.cv::MatSize.3735277" = type { ptr }
+%"struct.cv::MatStep.3735278" = type { ptr, [2 x i64] }
 
-; 23 occurrences:
+; 24 occurrences:
 ; linux/optimized/rx.ll
 ; nuttx/optimized/lib_fmemopen.c.ll
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dggglm.c.ll
+; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openjdk/optimized/ostream.ll
 ; php/optimized/phpdbg_frame.ll
@@ -41,7 +42,7 @@ entry:
   ret ptr %6
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -103,6 +104,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; redis/optimized/hiredis.ll
+; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -213,15 +215,20 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 7 occurrences:
+; darktable/optimized/introspection_colorequal.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
+; freetype/optimized/sdf.c.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -2
   ret ptr %6
 }
@@ -431,7 +438,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.GUITable::Cell.2703225", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"struct.GUITable::Cell.2703191", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -673,22 +680,6 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; darktable/optimized/introspection_colorequal.c.ll
-; freetype/optimized/sdf.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 -4
-  ret ptr %6
-}
-
 ; 3 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; slurm/optimized/pmi1.ll
@@ -713,20 +704,8 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.gmx::BasicVector.3373276", ptr %0, i64 %4, i32 0, i64 1
+  %5 = getelementptr %"class.gmx::BasicVector.3373242", ptr %0, i64 %4, i32 0, i64 1
   ret ptr %5
-}
-
-; 1 occurrences:
-; openusd/optimized/decodetxb.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
-  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -736,20 +715,8 @@ define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.JSVarDef.3435063, ptr %0, i64 %4, i32 1
   ret ptr %5
-}
-
-; 1 occurrences:
-; wolfssl/optimized/api.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 1
-  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -772,7 +739,7 @@ define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.cv::Mat.3735326", ptr %0, i64 %4, i32 2
+  %5 = getelementptr %"class.cv::Mat.3735276", ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 

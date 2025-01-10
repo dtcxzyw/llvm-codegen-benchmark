@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
-%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
-%union.anon.2790010 = type { i32 }
-%union.anon.4.2790011 = type { i32 }
-%union.anon.5.2790009 = type { %union._ir_val.2790012 }
-%union._ir_val.2790012 = type { double }
+%struct._ir_insn.2789973 = type { %struct.anon.2789974, %union.anon.5.2789975 }
+%struct.anon.2789974 = type { %union.anon.2789976, %union.anon.4.2789977 }
+%union.anon.2789976 = type { i32 }
+%union.anon.4.2789977 = type { i32 }
+%union.anon.5.2789975 = type { %union._ir_val.2789978 }
+%union._ir_val.2789978 = type { double }
 
 ; 3 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
@@ -93,9 +93,9 @@ entry:
 define ptr @func000000000000001b(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct._ir_insn.2789973, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw nuw %struct._ir_insn.2790007, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct._ir_insn.2789973, ptr %4, i64 %5
   ret ptr %6
 }
 

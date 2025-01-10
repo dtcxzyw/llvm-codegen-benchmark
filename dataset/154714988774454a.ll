@@ -80,7 +80,7 @@ entry:
   ret ptr %5
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -113,7 +113,6 @@ entry:
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openjdk/optimized/pngrtran.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/dce.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; php/optimized/parse_tz.ll
 ; php/optimized/zend_persist.ll

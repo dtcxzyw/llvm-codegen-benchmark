@@ -1,5 +1,5 @@
 
-%"struct.cv::GMM.3761203" = type { float, float }
+%"struct.cv::GMM.3761153" = type { float, float }
 
 ; 14 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
@@ -104,6 +104,24 @@ entry:
   ret ptr %6
 }
 
+; 7 occurrences:
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; openusd/optimized/cdef.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %5 = mul nuw nsw i64 %1, 288
+  %6 = getelementptr i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
 ; 4 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_4_3.cc.ll
@@ -119,23 +137,6 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw double, ptr %0, i64 %3
-  %5 = mul nuw nsw i64 %1, 24
-  %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
@@ -143,7 +144,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.cv::GMM.3761203", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.cv::GMM.3761153", ptr %0, i64 %3
   %5 = mul i64 %1, 12
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

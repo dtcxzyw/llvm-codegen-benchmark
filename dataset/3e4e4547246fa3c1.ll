@@ -65,7 +65,7 @@ entry:
   ret i8 %2
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; boost/optimized/instantiate_re2c_lexer.ll
 ; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -96,7 +96,6 @@ entry:
 ; tev/optimized/StbiImageLoader.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {

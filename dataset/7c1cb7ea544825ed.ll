@@ -243,16 +243,12 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
-; abc/optimized/acec2Mult.c.ll
+; 23 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/bmcCexTools.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/plaSimple.c.ll
-; abc/optimized/sbdCut.c.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
 ; glslang/optimized/ShaderLang.cpp.ll

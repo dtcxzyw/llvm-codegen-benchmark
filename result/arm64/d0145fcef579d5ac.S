@@ -1,14 +1,15 @@
-func000000000000003f:                   // @func000000000000003f
-// %bb.0:                               // %entry
-	add	x8, x0, w1, uxtw
-	lsl	x0, x8, #1
-	ret
-                                        // -- End function
 func000000000000006f:                   // @func000000000000006f
 // %bb.0:                               // %entry
 	lsl	x8, x0, #32
                                         // kill: def $w1 killed $w1 def $x1
 	add	x0, x8, x1, lsl #48
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	ubfiz	x8, x1, #9, #32
+	add	x0, x8, x0, lsl #2
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d

@@ -1,30 +1,30 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
-%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
-%"struct.std::__atomic_base.2624846" = type { i64 }
-%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
-%"class.rocksdb::Histogram.2624847" = type { ptr }
-%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
-%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
-%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
-%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
-%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
-%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
-%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
-%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
-%"struct.std::__atomic_base.108.2637633" = type { i64 }
-%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
-%"struct.std::__atomic_base.110.2637634" = type { ptr }
-%"class.std::complex.2839348" = type { { double, double } }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624810" = type { [216 x %"struct.std::atomic.51.2624811"], [61 x %"class.rocksdb::HistogramImpl.2624812"], [24 x i8] }
+%"struct.std::atomic.51.2624811" = type { %"struct.std::__atomic_base.2624813" }
+%"struct.std::__atomic_base.2624813" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624812" = type { %"class.rocksdb::Histogram.2624814", %"struct.rocksdb::HistogramStat.2624815", %"class.std::mutex.2624816" }
+%"class.rocksdb::Histogram.2624814" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624815" = type { %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", %"struct.std::atomic.51.2624811", [109 x %"struct.std::atomic.51.2624811"], i64 }
+%"class.std::mutex.2624816" = type { %"class.std::__mutex_base.2624817" }
+%"class.std::__mutex_base.2624817" = type { %union.pthread_mutex_t.2624818 }
+%union.pthread_mutex_t.2624818 = type { %struct.__pthread_mutex_s.2624819 }
+%struct.__pthread_mutex_s.2624819 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624820 }
+%struct.__pthread_internal_list.2624820 = type { ptr, ptr }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637597", %"struct.std::atomic.109.2637598" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637597" = type { %"struct.std::atomic.107.2637599" }
+%"struct.std::atomic.107.2637599" = type { %"struct.std::__atomic_base.108.2637600" }
+%"struct.std::__atomic_base.108.2637600" = type { i64 }
+%"struct.std::atomic.109.2637598" = type { %"struct.std::__atomic_base.110.2637601" }
+%"struct.std::__atomic_base.110.2637601" = type { ptr }
+%"class.std::complex.2839314" = type { { double, double } }
 
 ; 19 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
@@ -50,7 +50,7 @@
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624810", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -65,7 +65,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %2
+  %3 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -685,7 +685,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = getelementptr nusw nuw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -728,7 +728,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw nuw %"class.std::complex.2839348", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::complex.2839314", ptr %0, i64 %2
   ret ptr %3
 }
 

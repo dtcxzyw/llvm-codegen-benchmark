@@ -43,12 +43,13 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/save_mesh_attributes_dialog.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll

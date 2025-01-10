@@ -1,6 +1,6 @@
 
-%struct.hb_glyph_info_t.2737182 = type { i32, i32, i32, %union._hb_var_int_t.2737183, %union._hb_var_int_t.2737183 }
-%union._hb_var_int_t.2737183 = type { i32 }
+%struct.hb_glyph_info_t.2737148 = type { i32, i32, i32, %union._hb_var_int_t.2737149, %union._hb_var_int_t.2737149 }
+%union._hb_var_int_t.2737149 = type { i32 }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -26,9 +26,9 @@ define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737182, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737148, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 20
-  %7 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737182, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw %struct.hb_glyph_info_t.2737148, ptr %6, i64 %4
   ret ptr %7
 }
 

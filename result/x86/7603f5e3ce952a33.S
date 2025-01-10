@@ -50,11 +50,6 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	$127, %rdi
 	seta	%al
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movzbl	%sil, %eax
-	cmpq	%rax, %rdi
-	sete	%al
-	retq
 func00000000000000a4:                   # @func00000000000000a4
 	movzbl	%sil, %eax
 	subq	%rax, %rdi

@@ -114,8 +114,7 @@ entry:
   ret i1 %5
 }
 
-; 35 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 33 occurrences:
 ; linux/optimized/compress.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -148,7 +147,6 @@ entry:
 ; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
 ; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
 ; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {

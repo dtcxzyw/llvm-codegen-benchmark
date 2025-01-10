@@ -361,10 +361,11 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
 ; meshlab/optimized/arap.cpp.ll

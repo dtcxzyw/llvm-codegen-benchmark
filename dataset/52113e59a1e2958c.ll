@@ -1,6 +1,6 @@
 
-%"struct.llvm::support::detail::packed_endian_specific_integral.3166923" = type { %struct.anon.3166924 }
-%struct.anon.3166924 = type { [4 x i8] }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3166889" = type { %struct.anon.3166890 }
+%struct.anon.3166890 = type { [4 x i8] }
 
 ; 105 occurrences:
 ; boost/optimized/algorithm.ll
@@ -336,7 +336,7 @@ entry:
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = select i1 %0, i64 %2, i64 0
-  %3 = getelementptr nusw nuw %"struct.llvm::support::detail::packed_endian_specific_integral.3166923", ptr %1, i64 %.idx
+  %3 = getelementptr nusw nuw %"struct.llvm::support::detail::packed_endian_specific_integral.3166889", ptr %1, i64 %.idx
   ret ptr %3
 }
 

@@ -3,11 +3,6 @@ func00000000000003ff:                   # @func00000000000003ff
 	sh3add	a0, a1, a0
 	addi	a0, a0, 352
 	ret
-func00000000000003d5:                   # @func00000000000003d5
-	sh3add	a0, a2, a0
-	sh3add	a0, a1, a0
-	addi	a0, a0, 760
-	ret
 func0000000000000144:                   # @func0000000000000144
 	sh3add	a0, a2, a0
 	sh1add	a0, a1, a0

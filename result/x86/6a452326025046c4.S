@@ -62,10 +62,3 @@ func000000000000008c:                   # @func000000000000008c
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000101:                   # @func0000000000000101
-	testl	%edx, %esi
-	sete	%cl
-	cmpl	$2, %edi
-	setae	%al
-	andb	%cl, %al
-	retq

@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
 
 ; 41 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
@@ -48,7 +48,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 12
   %4 = tail call i64 @llvm.umax.i64(i64 %3, i64 %1)
-  %5 = getelementptr %"class.irr::core::vector3d.2691815", ptr %0, i64 %4
+  %5 = getelementptr %"class.irr::core::vector3d.2691781", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %2
   ret ptr %6
 }

@@ -5,6 +5,12 @@ func0000000000000187:                   # @func0000000000000187
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
+func0000000000000186:                   # @func0000000000000186
+	addiw	a1, a1, 1
+	addi	a2, a1, -3
+	czero.eqz	a1, a1, a2
+	sh3add	a0, a1, a0
+	ret
 func0000000000000028:                   # @func0000000000000028
 	addiw	a1, a1, 1
 	slti	a2, a1, 12

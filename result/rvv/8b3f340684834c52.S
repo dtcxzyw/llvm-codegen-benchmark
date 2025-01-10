@@ -11,8 +11,3 @@ func000000000000028a:                   # @func000000000000028a
 	vsub.vv	v8, v10, v8
 	vmsgt.vi	v0, v8, 0
 	ret
-func00000000000002aa:                   # @func00000000000002aa
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmadd.vv	v10, v12, v10
-	vmslt.vv	v0, v8, v10
-	ret

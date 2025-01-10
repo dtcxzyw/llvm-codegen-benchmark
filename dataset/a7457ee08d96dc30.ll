@@ -1,5 +1,5 @@
 
-%struct.uv_buf_t.2822028 = type { ptr, i64 }
+%struct.uv_buf_t.2821994 = type { ptr, i64 }
 
 ; 3 occurrences:
 ; cmake/optimized/stream.c.ll
@@ -9,7 +9,7 @@
 define i64 @func0000000000000019(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw nuw %struct.uv_buf_t.2822028, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.uv_buf_t.2821994, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = lshr exact i64 %6, 4

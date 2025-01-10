@@ -1,5 +1,5 @@
 
-%"class.folly::Promise.2688641" = type { i8, ptr }
+%"class.folly::Promise.2688607" = type { i8, ptr }
 
 ; 7 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -57,7 +57,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = and i64 %0, 4294967295
-  %5 = getelementptr nusw nuw %"class.folly::Promise.2688641", ptr %3, i64 %4
+  %5 = getelementptr nusw nuw %"class.folly::Promise.2688607", ptr %3, i64 %4
   ret ptr %5
 }
 

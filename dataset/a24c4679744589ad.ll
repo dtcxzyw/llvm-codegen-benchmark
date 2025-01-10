@@ -1,14 +1,14 @@
 
-%struct.WorldSpec.2702813 = type { %"class.std::__cxx11::basic_string.2702755", %"class.std::__cxx11::basic_string.2702755", %"class.std::__cxx11::basic_string.2702755" }
-%"class.std::__cxx11::basic_string.2702755" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702756", i64, %union.anon.2702757 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702756" = type { ptr }
-%union.anon.2702757 = type { i64, [8 x i8] }
-%struct.hb_glyph_info_t.2735113 = type { i32, i32, i32, %union._hb_var_int_t.2735114, %union._hb_var_int_t.2735114 }
-%union._hb_var_int_t.2735114 = type { i32 }
-%struct.hb_glyph_info_t.2738145 = type { i32, i32, i32, %union._hb_var_int_t.2738146, %union._hb_var_int_t.2738146 }
-%union._hb_var_int_t.2738146 = type { i32 }
-%"struct.llvh::detail::DenseMapPair.3080927" = type { %"struct.std::pair.102.3080928" }
-%"struct.std::pair.102.3080928" = type { i32, i32 }
+%struct.WorldSpec.2702779 = type { %"class.std::__cxx11::basic_string.2702721", %"class.std::__cxx11::basic_string.2702721", %"class.std::__cxx11::basic_string.2702721" }
+%"class.std::__cxx11::basic_string.2702721" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702722", i64, %union.anon.2702723 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702722" = type { ptr }
+%union.anon.2702723 = type { i64, [8 x i8] }
+%struct.hb_glyph_info_t.2735079 = type { i32, i32, i32, %union._hb_var_int_t.2735080, %union._hb_var_int_t.2735080 }
+%union._hb_var_int_t.2735080 = type { i32 }
+%struct.hb_glyph_info_t.2738111 = type { i32, i32, i32, %union._hb_var_int_t.2738112, %union._hb_var_int_t.2738112 }
+%union._hb_var_int_t.2738112 = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3080893" = type { %"struct.std::pair.102.3080894" }
+%"struct.std::pair.102.3080894" = type { i32, i32 }
 
 ; 7 occurrences:
 ; linux/optimized/virtio_net.ll
@@ -223,7 +223,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.WorldSpec.2702813, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.WorldSpec.2702779, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -250,7 +250,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735113, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735079, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -275,7 +275,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2738145, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2738111, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -324,7 +324,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080927", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080893", ptr %0, i64 %4
   ret ptr %5
 }
 

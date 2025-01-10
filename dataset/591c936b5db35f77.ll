@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_weld_joint.cpp.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; mitsuba3/optimized/disk.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
+; mitsuba3/optimized/mesh.cpp.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; Function Attrs: nounwind

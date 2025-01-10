@@ -82,7 +82,7 @@ entry:
   ret i64 %3
 }
 
-; 601 occurrences:
+; 602 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
@@ -495,6 +495,7 @@ entry:
 ; rocksdb/optimized/statistics.cc.ll
 ; ruby/optimized/ast.ll
 ; ruby/optimized/date_core.ll
+; ruby/optimized/gc.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/object.ll
 ; ruby/optimized/ruby.ll
@@ -1837,10 +1838,11 @@ entry:
   ret i64 %3
 }
 
-; 96 occurrences:
+; 97 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
 ; cpython/optimized/_functoolsmodule.ll
+; cpython/optimized/unicodeobject.ll
 ; crow/optimized/example_cookies.cpp.ll
 ; crow/optimized/example_session.cpp.ll
 ; llvm/optimized/DWARFDebugAddr.cpp.ll

@@ -66,7 +66,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -74,7 +74,6 @@ entry:
 ; hdf5/optimized/H5Oalloc.c.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/serial_core.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; quickjs/optimized/quickjs.ll
@@ -172,18 +171,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; libpng/optimized/pngrutil.c.ll
-; openjdk/optimized/pngrutil.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
-  %5 = icmp ult i64 %4, %0
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -197,7 +184,7 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -210,7 +197,6 @@ entry:
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/i915_vma_resource.ll
 ; linux/optimized/vgacon.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; lvgl/optimized/lv_text.ll

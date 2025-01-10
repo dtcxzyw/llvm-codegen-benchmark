@@ -1,5 +1,5 @@
 
-%"struct.drjit::divisor.2602697" = type <{ i32, i32, i8 }>
+%"struct.drjit::divisor.2602664" = type <{ i32, i32, i8 }>
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -25,7 +25,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 2, %1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 80
-  %4 = getelementptr nusw nuw [3 x %"struct.drjit::divisor.2602697"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [3 x %"struct.drjit::divisor.2602664"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

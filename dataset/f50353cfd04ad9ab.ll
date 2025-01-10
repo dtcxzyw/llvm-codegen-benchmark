@@ -264,21 +264,6 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
-; boost/optimized/matches_relation_factory.ll
-; boost/optimized/read_graphviz_new.ll
-; luau/optimized/lstrlib.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = ptrtoint ptr %1 to i64
-  %5 = sub i64 %4, %3
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 1
-  ret ptr %7
-}
-
 ; 2 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/path_traits.ll
@@ -290,6 +275,20 @@ entry:
   %5 = sub i64 %4, %3
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 4
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 

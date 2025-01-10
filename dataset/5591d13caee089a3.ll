@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; lvgl/optimized/lv_style.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/resize.cpp.ll

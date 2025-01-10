@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/wlcNtk.c.ll
+; abc/optimized/wlnNtk.c.ll
 ; assimp/optimized/Importer.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; libquic/optimized/prtime.cc.ll

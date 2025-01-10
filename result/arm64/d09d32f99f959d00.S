@@ -1,10 +1,3 @@
-func000000000000012a:                   // @func000000000000012a
-// %bb.0:                               // %entry
-	lsr	x8, x1, #32
-	cmp	w0, w8
-	cset	w0, gt
-	ret
-                                        // -- End function
 func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
 	lsr	x8, x1, #32
@@ -42,6 +35,13 @@ func0000000000000204:                   // @func0000000000000204
 	sub	w8, w0, w8
 	cmp	w8, #8
 	cset	w0, lo
+	ret
+                                        // -- End function
+func000000000000012a:                   // @func000000000000012a
+// %bb.0:                               // %entry
+	lsr	x8, x1, #32
+	cmp	w0, w8
+	cset	w0, ge
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

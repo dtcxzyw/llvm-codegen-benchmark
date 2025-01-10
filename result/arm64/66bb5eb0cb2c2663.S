@@ -37,13 +37,3 @@ func000000000000003c:                   // @func000000000000003c
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000015:                   // @func0000000000000015
-// %bb.0:                               // %entry
-	mov	w8, #96                         // =0x60
-	tst	w1, #0x1
-	mov	w9, #128                        // =0x80
-	csel	x8, x9, x8, ne
-	add	x8, x8, x2, lsl #4
-	add	x0, x0, x8
-	ret
-                                        // -- End function

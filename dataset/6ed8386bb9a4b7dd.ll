@@ -1,5 +1,5 @@
 
-; 2150 occurrences:
+; 2151 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -634,6 +634,7 @@
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DWARFVerifier.cpp.ll
 ; llvm/optimized/DbiModuleList.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -2393,7 +2394,7 @@ entry:
   ret i1 %2
 }
 
-; 477 occurrences:
+; 476 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
@@ -2855,7 +2856,6 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-xmcp.c.ll
 ; wireshark/optimized/packet-xti.c.ll
@@ -3621,7 +3621,7 @@ entry:
   ret i1 %2
 }
 
-; 149 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/48duj8tg7v09rmpe.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -3674,7 +3674,6 @@ entry:
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DAGISelMatcher.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/Interp.cpp.ll

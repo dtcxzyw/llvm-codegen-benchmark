@@ -1,7 +1,7 @@
 
-%struct.P256_POINT.2634394 = type { [4 x i64], [4 x i64], [4 x i64] }
-%"class.llvm::Use.3213948" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3241632" = type { ptr, ptr, ptr, ptr }
+%struct.P256_POINT.2634361 = type { [4 x i64], [4 x i64], [4 x i64] }
+%"class.llvm::Use.3213914" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3241598" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/moment.cpp.ll
@@ -25,7 +25,7 @@ entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw nuw i8, ptr %1, i64 64
   %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr [16 x %struct.P256_POINT.2634394], ptr %5, i64 %0, i64 0, i32 1
+  %6 = getelementptr [16 x %struct.P256_POINT.2634361], ptr %5, i64 %0, i64 0, i32 1
   ret ptr %6
 }
 
@@ -77,8 +77,8 @@ define ptr @func00000000000001af(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3213948", ptr %4, i64 %3
-  %6 = getelementptr nuw %"class.llvm::Use.3213948", ptr %5, i64 %0, i32 1
+  %5 = getelementptr nusw %"class.llvm::Use.3213914", ptr %4, i64 %3
+  %6 = getelementptr nuw %"class.llvm::Use.3213914", ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -91,8 +91,8 @@ define ptr @func00000000000001a0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3241632", ptr %4, i64 %3
-  %6 = getelementptr %"class.llvm::Use.3241632", ptr %5, i64 %0
+  %5 = getelementptr nusw %"class.llvm::Use.3241598", ptr %4, i64 %3
+  %6 = getelementptr %"class.llvm::Use.3241598", ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }

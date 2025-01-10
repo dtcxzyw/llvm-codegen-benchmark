@@ -80,7 +80,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; faiss/optimized/distances_simd.cpp.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; git/optimized/checkout.ll
@@ -94,6 +94,7 @@ entry:
 ; pocketpy/optimized/lexer.cpp.ll
 ; postgres/optimized/dt_common.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

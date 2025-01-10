@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/easy.c.ll
@@ -27,7 +27,6 @@
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/UnreachableBlockElim.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll

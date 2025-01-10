@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/readdb.c.ll
@@ -9,7 +9,6 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; freetype/optimized/psaux.c.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; icu/optimized/escapesrc.ll
 ; llvm/optimized/CommandLine.cpp.ll

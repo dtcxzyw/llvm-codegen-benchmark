@@ -4,12 +4,6 @@ func0000000000000002:                   # @func0000000000000002
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leal	1(%rdx), %eax
-	shrl	%esi
-	testb	$1, %dil
-	cmovnel	%esi, %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	-4190208(%rdx), %eax
 	shrl	$3, %esi

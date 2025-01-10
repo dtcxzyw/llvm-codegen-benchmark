@@ -856,21 +856,6 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; icu/optimized/vtzone.ll
-; linux/optimized/cdrom.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; wireshark/optimized/packet-ocp1.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -292
-  %3 = icmp ult i32 %2, 96
-  %4 = icmp slt i32 %0, 3
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
@@ -928,6 +913,20 @@ entry:
   %3 = icmp sgt i32 %0, 1022
   %4 = or i1 %3, %2
   ret i1 %4
+}
+
+; 3 occurrences:
+; icu/optimized/vtzone.ll
+; linux/optimized/cdrom.ll
+; wireshark/optimized/packet-ocp1.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 1
+  %3 = icmp ult i32 %2, 9
+  %4 = icmp slt i32 %0, 11
+  %5 = or i1 %4, %3
+  ret i1 %5
 }
 
 ; 1 occurrences:

@@ -66,11 +66,11 @@ func000000000000000a:                   # @func000000000000000a
 	minu	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
-	minu	a0, a0, a1
-	sltiu	a0, a0, 8
-	ret
 func0000000000000011:                   # @func0000000000000011
 	minu	a0, a0, a1
 	seqz	a0, a0
+	ret
+func0000000000000034:                   # @func0000000000000034
+	minu	a0, a0, a1
+	sltiu	a0, a0, 8
 	ret

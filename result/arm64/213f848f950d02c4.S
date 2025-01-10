@@ -244,6 +244,13 @@ func00000000000002d4:                   // @func00000000000002d4
 	cset	w0, ge
 	ret
                                         // -- End function
+func00000000000002cc:                   // @func00000000000002cc
+// %bb.0:                               // %entry
+	cmp	x0, #0
+	ccmp	x1, x2, #0, ge
+	cset	w0, ge
+	ret
+                                        // -- End function
 func0000000000000062:                   // @func0000000000000062
 // %bb.0:                               // %entry
 	cmp	x0, x1
@@ -387,13 +394,6 @@ func0000000000000070:                   // @func0000000000000070
 	mov	x8, #-9223372036854775808       // =0x8000000000000000
 	ccmp	x2, x8, #4, ls
 	cset	w0, eq
-	ret
-                                        // -- End function
-func00000000000002cc:                   // @func00000000000002cc
-// %bb.0:                               // %entry
-	cmp	x0, #0
-	ccmp	x1, x2, #0, ge
-	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000670:                   // @func0000000000000670

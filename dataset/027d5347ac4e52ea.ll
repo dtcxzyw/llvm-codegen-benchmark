@@ -75,10 +75,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:

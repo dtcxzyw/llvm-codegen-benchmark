@@ -90,12 +90,10 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 3 occurrences:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -12,11 +12,6 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000001c1:                   // @func00000000000001c1
-// %bb.0:                               // %entry
-	mov	w0, #0                          // =0x0
-	ret
-                                        // -- End function
 func00000000000001f4:                   // @func00000000000001f4
 // %bb.0:                               // %entry
 	mov	w8, #20077                      // =0x4e6d

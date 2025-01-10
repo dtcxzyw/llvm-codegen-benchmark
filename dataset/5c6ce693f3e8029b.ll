@@ -1,9 +1,9 @@
 
-%struct.HDAAudioStream.2709235 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709236, %union.anon.0.2709237, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
-%struct.audsettings.2709236 = type { i32, i32, i32, i32 }
-%union.anon.0.2709237 = type { ptr }
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3257801" = type { ptr, ptr, ptr, ptr }
+%struct.HDAAudioStream.2709201 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709202, %union.anon.0.2709203, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
+%struct.audsettings.2709202 = type { i32, i32, i32, i32 }
+%union.anon.0.2709203 = type { ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3257767" = type { ptr, ptr, ptr, ptr }
 
 ; 293 occurrences:
 ; abc/optimized/bmcMaj.c.ll
@@ -2393,7 +2393,7 @@ entry:
 define ptr @func0000000000000033(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 216
-  %4 = getelementptr %struct.HDAAudioStream.2709235, ptr %3, i64 %1
+  %4 = getelementptr %struct.HDAAudioStream.2709201, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -2722,7 +2722,7 @@ entry:
 define ptr @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3181429", ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %0
   ret ptr %5
 }
@@ -2734,8 +2734,8 @@ entry:
 define ptr @func0000000000000022(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -56
-  %4 = getelementptr %"class.llvm::Use.3257801", ptr %3, i64 %1
-  %5 = getelementptr nusw %"class.llvm::Use.3257801", ptr %4, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3257767", ptr %3, i64 %1
+  %5 = getelementptr nusw %"class.llvm::Use.3257767", ptr %4, i64 %0
   ret ptr %5
 }
 

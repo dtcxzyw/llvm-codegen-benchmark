@@ -54,26 +54,6 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; clamav/optimized/clamdcom.c.ll
-; linux/optimized/pci-sysfs.ll
-; llvm/optimized/MachineDominators.cpp.ll
-; llvm/optimized/MachinePostDominators.cpp.ll
-; lz4/optimized/lz4hc.c.ll
-; openblas/optimized/dlatrs3.c.ll
-; postgres/optimized/data.ll
-; qemu/optimized/ahci.c.ll
-; raylib/optimized/rmodels.c.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add i32 %4, 2147483647
-  ret i32 %5
-}
-
 ; 5 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -86,6 +66,25 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = add i32 %4, -1
+  ret i32 %5
+}
+
+; 9 occurrences:
+; clamav/optimized/clamdcom.c.ll
+; linux/optimized/pci-sysfs.ll
+; llvm/optimized/MachineDominators.cpp.ll
+; llvm/optimized/MachinePostDominators.cpp.ll
+; lz4/optimized/lz4hc.c.ll
+; openblas/optimized/dlatrs3.c.ll
+; postgres/optimized/data.ll
+; raylib/optimized/rmodels.c.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = add i32 %4, 4
   ret i32 %5
 }
 

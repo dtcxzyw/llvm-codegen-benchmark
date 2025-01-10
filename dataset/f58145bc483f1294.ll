@@ -12,9 +12,10 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -25,16 +26,15 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 128, i64 96
-  %4 = add nsw i64 %3, %1
-  %5 = shl nsw i64 %0, 4
-  %6 = add nsw i64 %5, %4
+  %3 = select i1 %2, i64 0, i64 2079
+  %4 = add nsw i64 %0, %3
+  %5 = shl nsw i64 %1, 2
+  %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 

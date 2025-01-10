@@ -1,5 +1,5 @@
 
-%struct.pgv.3552362 = type { ptr }
+%struct.pgv.3552328 = type { ptr }
 
 ; 4 occurrences:
 ; cmake/optimized/inftrees.c.ll
@@ -64,7 +64,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.pgv.3552362, ptr %0, i64 %5
+  %6 = getelementptr %struct.pgv.3552328, ptr %0, i64 %5
   ret ptr %6
 }
 

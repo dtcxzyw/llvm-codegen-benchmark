@@ -85,7 +85,7 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; boost/optimized/convex_hull_multi.ll
@@ -116,7 +116,6 @@ entry:
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openspiel/optimized/System.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll

@@ -33,7 +33,7 @@ entry:
   ret i1 %6
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/pystrhex.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
@@ -52,6 +52,7 @@ entry:
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/block_mean_hash.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll

@@ -1,7 +1,6 @@
 
-%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
-%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
-%struct.NVGglyphPosition.3611349 = type { ptr, float, float, float }
+%"class.base::ManualConstructor.3060079" = type { %"class.base::AlignedMemory.3060080" }
+%"class.base::AlignedMemory.3060080" = type { [16 x i8] }
 
 ; 57 occurrences:
 ; cpython/optimized/dictobject.ll
@@ -70,74 +69,18 @@ entry:
   ret ptr %4
 }
 
-; 53 occurrences:
+; 243 occurrences:
+; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/blocksort.c.ll
+; abc/optimized/compress.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/giaMinLut.c.ll
+; abc/optimized/lpkCut.c.ll
+; abc/optimized/trees.c.ll
 ; clamav/optimized/extinfo.cpp.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/blocksort.c.ll
-; eastl/optimized/EAScanfCore.cpp.ll
-; git/optimized/diff.ll
-; gromacs/optimized/biasstate.cpp.ll
-; gromacs/optimized/nbsearch.cpp.ll
-; hermes/optimized/MicrosoftDemangle.cpp.ll
-; icu/optimized/brkiter.ll
-; icu/optimized/package.ll
-; jq/optimized/euc_jp.ll
-; jq/optimized/sjis.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/intersection.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/seam_remover.cpp.ll
-; mitsuba3/optimized/rgb2spec_opt.cpp.ll
-; oniguruma/optimized/euc_jp.ll
-; oniguruma/optimized/sjis.ll
-; openblas/optimized/dpbtrf.c.ll
-; opencv/optimized/mser.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openjdk/optimized/TimeZone_md.ll
-; openjdk/optimized/UnixNativeDispatcher.ll
-; openjdk/optimized/bootstrapInfo.ll
-; openjdk/optimized/childproc.ll
-; openjdk/optimized/sharedRuntimeTrig.ll
-; openmpi/optimized/fs_base_get_parent_dir.ll
-; openspiel/optimized/Par.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
-; openusd/optimized/mvref_common.c.ll
-; php/optimized/document.ll
-; php/optimized/php_xmlreader.ll
-; raylib/optimized/rmodels.c.ll
-; redis/optimized/redis-cli.ll
-; slurm/optimized/spank.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw [3 x double], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 212 occurrences:
-; abc/optimized/abcHieNew.c.ll
-; abc/optimized/compress.c.ll
-; abc/optimized/lpkCut.c.ll
-; abc/optimized/trees.c.ll
 ; cmake/optimized/trees.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -246,7 +189,9 @@ entry:
 ; cvc5/optimized/type_node.cpp.ll
 ; darktable/optimized/metadata.c.ll
 ; draco/optimized/float_points_tree_encoder.cc.ll
+; eastl/optimized/EAScanfCore.cpp.ll
 ; git/optimized/apply.ll
+; git/optimized/diff.ll
 ; git/optimized/fsmonitor.ll
 ; git/optimized/object-name.ll
 ; git/optimized/update-index.ll
@@ -255,6 +200,8 @@ entry:
 ; gromacs/optimized/trees.c.ll
 ; grpc/optimized/party.cc.ll
 ; hdf5/optimized/sio_engine.c.ll
+; hermes/optimized/MicrosoftDemangle.cpp.ll
+; icu/optimized/brkiter.ll
 ; icu/optimized/ctest.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ucnvisci.ll
@@ -264,6 +211,7 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
@@ -275,13 +223,25 @@ entry:
 ; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/intersection.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
+; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; nuttx/optimized/fs_foreachinode.c.ll
+; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/cv2_convert.cpp.ll
+; opencv/optimized/mser.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; openjdk/optimized/TimeZone_md.ll
+; openjdk/optimized/UnixNativeDispatcher.ll
+; openjdk/optimized/bootstrapInfo.ll
+; openjdk/optimized/childproc.ll
 ; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/sharedRuntimeTrig.ll
+; openmpi/optimized/fs_base_get_parent_dir.ll
+; openspiel/optimized/Par.cpp.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openspiel/optimized/SolveBoard.cpp.ll
@@ -299,13 +259,19 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openusd/optimized/decoder.c.ll
+; openusd/optimized/mvref_common.c.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; php/optimized/document.ll
 ; php/optimized/network.ll
+; php/optimized/php_xmlreader.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/untyped_message.cc.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rmodels.c.ll
+; redis/optimized/redis-cli.ll
+; slurm/optimized/spank.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -344,6 +310,7 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
+; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/wc_port.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
@@ -351,7 +318,21 @@ define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw [24 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [3 x double], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 4 occurrences:
+; jq/optimized/euc_jp.ll
+; jq/optimized/sjis.ll
+; oniguruma/optimized/euc_jp.ll
+; oniguruma/optimized/sjis.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw nuw [32 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -367,7 +348,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060113"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060079"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -384,7 +365,7 @@ entry:
   ret ptr %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
@@ -397,35 +378,13 @@ entry:
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; cvc5/optimized/theory_model_builder.cpp.ll
+; nori/optimized/textarea.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw [0 x ptr], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; nori/optimized/textarea.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 32
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw [1025 x %struct.NVGglyphPosition.3611349], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 2 occurrences:
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 30
-  %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

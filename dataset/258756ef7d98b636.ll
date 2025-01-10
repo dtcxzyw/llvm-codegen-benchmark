@@ -1,5 +1,5 @@
 
-; 2867 occurrences:
+; 2872 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -247,6 +247,7 @@
 ; clamav/optimized/scanner.c.ll
 ; clamav/optimized/untar.c.ll
 ; clamav/optimized/unzip.c.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; clap-rs/optimized/thb07xvb2pkztra.ll
@@ -783,6 +784,7 @@
 ; hyperscan/optimized/ng_som_util.cpp.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
@@ -981,7 +983,6 @@
 ; linux/optimized/ip6_flowlabel.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/keyctl.ll
 ; linux/optimized/mballoc.ll
@@ -1003,6 +1004,7 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rmap.ll
 ; linux/optimized/rsrc.ll
+; linux/optimized/rtmutex_api.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/set_memory.ll
@@ -1019,6 +1021,7 @@
 ; linux/optimized/tlb.ll
 ; linux/optimized/trans_fd.ll
 ; linux/optimized/usblp.ll
+; linux/optimized/vc_screen.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vmalloc.ll
@@ -1917,8 +1920,10 @@
 ; openssl/optimized/libcrypto-shlib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-sha3.ll
 ; openssl/optimized/libssl-lib-quic_ackm.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; openssl/optimized/openssl-bin-asn1parse.ll
 ; openusd/optimized/avif_obu.c.ll

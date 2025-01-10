@@ -1,6 +1,6 @@
 
-%struct.contour_point_t.2730685 = type { float, float, i8, i8 }
-%"class.cv::Point_.3737589" = type { float, float }
+%struct.contour_point_t.2730651 = type { float, float, i8, i8 }
+%"class.cv::Point_.3737539" = type { float, float }
 
 ; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,7 +15,7 @@ entry:
   %3 = add i64 %2, 4294967292
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw nuw %struct.contour_point_t.2730685, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.contour_point_t.2730651, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw nuw %"class.cv::Point_.3737589", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::Point_.3737539", ptr %0, i64 %5
   ret ptr %6
 }
 

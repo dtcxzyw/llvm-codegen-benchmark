@@ -23,33 +23,12 @@ entry:
   ret i32 %2
 }
 
-; 1 occurrences:
-; llvm/optimized/X86FloatingPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -1
-  %2 = and i32 %0, %1
-  ret i32 %2
-}
-
 ; 3 occurrences:
 ; cvc5/optimized/theory_id.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -1
-  %2 = and i32 %0, %1
-  ret i32 %2
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1
   %2 = and i32 %0, %1

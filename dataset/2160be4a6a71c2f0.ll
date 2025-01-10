@@ -56,11 +56,10 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TargetPassConfig.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/ripper.ll

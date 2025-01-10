@@ -404,7 +404,8 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
 ; hdf5/optimized/H5Fcwfs.c.ll

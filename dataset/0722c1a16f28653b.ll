@@ -1,5 +1,5 @@
 
-%"class.clang::SourceLocation.3309293" = type { i32 }
+%"class.clang::SourceLocation.3309259" = type { i32 }
 
 ; 145 occurrences:
 ; abc/optimized/abc.c.ll
@@ -246,7 +246,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = add nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.clang::SourceLocation.3309293", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.clang::SourceLocation.3309259", ptr %0, i64 %5
   ret ptr %6
 }
 

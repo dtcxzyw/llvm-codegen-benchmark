@@ -1,10 +1,10 @@
 
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
-%"class.casadi::MX.3923517" = type { %"class.casadi::SharedObject.3923516" }
-%"class.casadi::SharedObject.3923516" = type { ptr }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
+%"class.casadi::MX.3923467" = type { %"class.casadi::SharedObject.3923466" }
+%"class.casadi::SharedObject.3923466" = type { ptr }
 
 ; 3 occurrences:
 ; assimp/optimized/clipper.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %3, 1
   %5 = mul i64 %1, %4
-  %6 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, 1
   %5 = mul i64 %4, %1
-  %6 = getelementptr nusw %"class.casadi::MX.3923517", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.casadi::MX.3923467", ptr %0, i64 %5
   ret ptr %6
 }
 

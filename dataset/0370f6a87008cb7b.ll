@@ -67,14 +67,13 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; folly/optimized/Request.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; hdf5/optimized/H5HFdblock.c.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/readahead.ll
 ; llvm/optimized/DWARFDie.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

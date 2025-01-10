@@ -1,10 +1,12 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
@@ -17,11 +19,25 @@ entry:
   ret i64 %6
 }
 
-; 14 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = shl nuw nsw i64 %4, 1
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 15 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; qemu/optimized/block_bochs.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll

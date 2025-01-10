@@ -1,5 +1,5 @@
 
-%struct.pmp_entry_t.2710180 = type { i64, i8 }
+%struct.pmp_entry_t.2710146 = type { i64, i8 }
 
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_pmp.c.ll
@@ -10,7 +10,7 @@ entry:
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 7824
-  %7 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %6, i64 0, i64 %5
+  %7 = getelementptr [16 x %struct.pmp_entry_t.2710146], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

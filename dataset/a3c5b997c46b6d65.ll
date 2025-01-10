@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
-%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%"struct.rawspeed::Spline<>::Segment.2873472" = type { double, double, double, double }
+%"struct.rocksdb::FdWithKeyRange.2615345" = type { %"struct.rocksdb::FileDescriptor.2615346", ptr, %"class.rocksdb::Slice.2615314", %"class.rocksdb::Slice.2615314" }
+%"struct.rocksdb::FileDescriptor.2615346" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615314" = type { ptr, i64 }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"struct.rawspeed::Spline<>::Segment.2873438" = type { double, double, double, double }
 
 ; 33 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
@@ -91,7 +91,7 @@ entry:
 define i1 @func0000000000000361(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2615345", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 80
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -107,24 +107,28 @@ entry:
 define i1 @func0000000000000261(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %1, i64 %3
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 6 occurrences:
+; 10 occurrences:
+; abseil-cpp/optimized/sequence_lock_test.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/printf-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/Singleton.cpp.ll
+; git/optimized/unpack-trees.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -143,11 +147,12 @@ entry:
   ret i1 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -167,24 +172,12 @@ entry:
 }
 
 ; 1 occurrences:
-; openjdk/optimized/UnixOperatingSystem.ll
-; Function Attrs: nounwind
-define i1 @func00000000000003e4(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %6 = icmp ult ptr %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873472", ptr %1, i64 %3
+  %4 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873438", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 256
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -200,21 +193,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
-  ret i1 %6
-}
-
-; 4 occurrences:
-; abseil-cpp/optimized/sequence_lock_test.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; git/optimized/unpack-trees.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 

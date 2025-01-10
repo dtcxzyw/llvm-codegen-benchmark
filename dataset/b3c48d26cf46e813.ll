@@ -1,23 +1,4 @@
 
-; 2 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
-entry:
-  %1 = icmp ugt i64 %0, 60
-  ret i1 %1
-}
-
-; 2 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0) #0 {
-entry:
-  ret i1 false
-}
-
 ; 5 occurrences:
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll

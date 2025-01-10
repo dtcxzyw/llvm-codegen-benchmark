@@ -1,5 +1,5 @@
 
-; 3277 occurrences:
+; 3293 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -220,10 +220,17 @@
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/canonical_views_clustering.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
 ; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -584,7 +591,13 @@
 ; freetype/optimized/smooth.c.ll
 ; freetype/optimized/truetype.c.ll
 ; freetype/optimized/type1cid.c.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
 ; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; g2o/optimized/hyper_dijkstra.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
@@ -1360,6 +1373,7 @@
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -1379,6 +1393,7 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
@@ -2534,6 +2549,7 @@
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; proxygen/optimized/ZlibStreamDecompressor.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; qemu/optimized/accel_tcg_icount-common.c.ll
@@ -3969,26 +3985,16 @@ entry:
   ret i64 %4
 }
 
-; 112 occurrences:
+; 83 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
-; ceres/optimized/dense_normal_cholesky_solver.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/gradient_checker.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
-; ceres/optimized/manifold.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
 ; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -4022,19 +4028,8 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; freetype/optimized/autofit.c.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_euler.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/muParserTokenReader.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
@@ -4042,18 +4037,12 @@ entry:
 ; libquic/optimized/quic_crypto_client_config.cc.ll
 ; libquic/optimized/quic_header_list.cc.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
-; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
@@ -4077,10 +4066,8 @@ entry:
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; proj/optimized/isea.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rust-analyzer-rs/optimized/2rmfmj0e763aielg.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {

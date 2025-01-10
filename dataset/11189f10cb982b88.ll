@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; gromacs/optimized/partition.cpp.ll
 ; libwebp/optimized/io_dec.c.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openmpi/optimized/ompi_datatype_args.ll

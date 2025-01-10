@@ -30,14 +30,19 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 15 occurrences:
 ; c3c/optimized/target.c.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; php/optimized/pcre2_dfa_match.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; yosys/optimized/fstapi.ll
@@ -50,7 +55,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -64,6 +69,8 @@ entry:
 ; php/optimized/cdf_time.ll
 ; postgres/optimized/pgstat_io.ll
 ; rocksdb/optimized/version_edit_handler.cc.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:

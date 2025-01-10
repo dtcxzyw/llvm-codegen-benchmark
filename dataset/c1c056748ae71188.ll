@@ -1,7 +1,7 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%struct.dtLink.3108391 = type { i32, i32, i8, i8, i8, i8 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%struct.dtLink.3108357 = type { i32, i32, i8, i8, i8, i8 }
 
 ; 35 occurrences:
 ; abc/optimized/blocksort.c.ll
@@ -49,7 +49,7 @@ entry:
   ret ptr %6
 }
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cecIso.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -134,6 +134,7 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/cpuKernel.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -167,104 +168,7 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
-; ncnn/optimized/lstm_x86_avx512.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; opencv/optimized/dxt.cpp.ll
-; openjdk/optimized/mlib_ImageLookUp_64.ll
-; openjdk/optimized/mlib_c_ImageLookUp_f.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 4 occurrences:
-; darktable/optimized/introspection_retouch.c.ll
-; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 6 occurrences:
-; abc/optimized/abcExact.c.ll
-; miniaudio/optimized/unity.c.ll
-; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; openjdk/optimized/mlib_ImageScanPoly.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = getelementptr nusw ptr, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 25 occurrences:
-; abc/optimized/aigRet.c.ll
-; abc/optimized/ioReadBaf.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/kernel_ref.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
-; ncnn/optimized/prelu_x86_avx.cpp.ll
-; ncnn/optimized/prelu_x86_avx512.cpp.ll
-; ncnn/optimized/prelu_x86_fma.cpp.ll
-; openblas/optimized/dbdsqr.c.ll
-; opencv/optimized/bitmatrixparser.cpp.ll
-; opencv/optimized/box_filter.dispatch.cpp.ll
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/restoration.c.ll
-; stb/optimized/stb_image_write.c.ll
-; yosys/optimized/rtlil.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 4
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr float, ptr %1, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/fraClass.c.ll
 ; casadi/optimized/cs_amd.c.ll
 ; casadi/optimized/cs_counts.c.ll
@@ -306,6 +210,7 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/coll_sm_barrier.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
@@ -315,10 +220,93 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 %2, 2
+  %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = getelementptr nusw float, ptr %5, i64 %0
+  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 5 occurrences:
+; ncnn/optimized/lstm_x86_avx512.cpp.ll
+; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; openjdk/optimized/mlib_ImageLookUp_64.ll
+; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 4 occurrences:
+; darktable/optimized/introspection_retouch.c.ll
+; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
+; abc/optimized/abcExact.c.ll
+; miniaudio/optimized/unity.c.ll
+; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; openjdk/optimized/mlib_ImageScanPoly.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw ptr, ptr %1, i64 %4
+  %6 = getelementptr nusw ptr, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 24 occurrences:
+; abc/optimized/aigRet.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/kernel_ref.cpp.ll
+; libwebp/optimized/sharpyuv.c.ll
+; ncnn/optimized/prelu_x86_avx.cpp.ll
+; ncnn/optimized/prelu_x86_avx512.cpp.ll
+; ncnn/optimized/prelu_x86_fma.cpp.ll
+; openblas/optimized/dbdsqr.c.ll
+; opencv/optimized/bitmatrixparser.cpp.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/restoration.c.ll
+; stb/optimized/stb_image_write.c.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 4
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr float, ptr %1, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -331,8 +319,8 @@ define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %class.btVector3.2818499, ptr %1, i64 %4
-  %6 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %5, i64 %0
+  %5 = getelementptr nusw %class.btVector3.2818465, ptr %1, i64 %4
+  %6 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -344,7 +332,7 @@ entry:
   %3 = shl i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.dtLink.3108391, ptr %5, i64 %0
+  %6 = getelementptr %struct.dtLink.3108357, ptr %5, i64 %0
   ret ptr %6
 }
 

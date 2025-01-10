@@ -1,19 +1,19 @@
 
-%"class.std::unique_ptr.2677787" = type { %"struct.std::__uniq_ptr_data.2677788" }
-%"struct.std::__uniq_ptr_data.2677788" = type { %"class.std::__uniq_ptr_impl.2677789" }
-%"class.std::__uniq_ptr_impl.2677789" = type { %"class.std::tuple.33.2677790" }
-%"class.std::tuple.33.2677790" = type { %"struct.std::_Tuple_impl.34.2677791" }
-%"struct.std::_Tuple_impl.34.2677791" = type { %"struct.std::_Head_base.37.2677792" }
-%"struct.std::_Head_base.37.2677792" = type { ptr }
-%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
-%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
-%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
-%union.anon.6.3535215 = type { %struct.list_head.3535195 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%union.anon.8.3535216 = type { i64 }
-%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
-%struct.pmd_t.3551456 = type { i64 }
+%"class.std::unique_ptr.2677754" = type { %"struct.std::__uniq_ptr_data.2677755" }
+%"struct.std::__uniq_ptr_data.2677755" = type { %"class.std::__uniq_ptr_impl.2677756" }
+%"class.std::__uniq_ptr_impl.2677756" = type { %"class.std::tuple.33.2677757" }
+%"class.std::tuple.33.2677757" = type { %"struct.std::_Tuple_impl.34.2677758" }
+%"struct.std::_Tuple_impl.34.2677758" = type { %"struct.std::_Head_base.37.2677759" }
+%"struct.std::_Head_base.37.2677759" = type { ptr }
+%struct.page.3535177 = type { i64, %union.anon.4.3535178, %union.anon.12.3535179, %struct.atomic_t.3535145, [8 x i8] }
+%union.anon.4.3535178 = type { %struct.anon.5.3535180 }
+%struct.anon.5.3535180 = type { %union.anon.6.3535181, ptr, %union.anon.8.3535182, i64 }
+%union.anon.6.3535181 = type { %struct.list_head.3535161 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%union.anon.8.3535182 = type { i64 }
+%union.anon.12.3535179 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
+%struct.pmd_t.3551422 = type { i64 }
 
 ; 144 occurrences:
 ; fmt/optimized/xchar-test.cc.ll
@@ -234,7 +234,7 @@ entry:
 define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %"class.std::unique_ptr.2677787", ptr %2, i64 %1
+  %3 = getelementptr %"class.std::unique_ptr.2677754", ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
@@ -263,7 +263,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %struct.page.3535211, ptr %2, i64 %1
+  %3 = getelementptr %struct.page.3535177, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -64
   ret ptr %4
 }
@@ -274,7 +274,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %struct.pmd_t.3551456, ptr %2, i64 %1
+  %3 = getelementptr %struct.pmd_t.3551422, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }

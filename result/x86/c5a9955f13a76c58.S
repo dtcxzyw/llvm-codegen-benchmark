@@ -96,13 +96,6 @@ func00000000000001d8:                   # @func00000000000001d8
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000024a:                   # @func000000000000024a
-	cmpl	%edx, %edi
-	setae	%cl
-	cmpl	%esi, %edi
-	setbe	%al
-	orb	%cl, %al
-	retq
 func000000000000018c:                   # @func000000000000018c
 	cmpl	%edx, %edi
 	setl	%cl

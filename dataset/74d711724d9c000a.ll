@@ -137,8 +137,9 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/udataswp.ll
 ; llvm/optimized/FastISel.cpp.ll

@@ -1,6 +1,5 @@
 
-; 32 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 29 occurrences:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/quant_enc.c.ll
@@ -9,7 +8,6 @@
 ; linux/optimized/proc_sysctl.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/Any4Byte.ll
 ; openjdk/optimized/AnyInt.ll
 ; openjdk/optimized/AnyShort.ll
@@ -30,7 +28,6 @@
 ; openjdk/optimized/vmIntrinsics.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; php/optimized/zend_inference.ll
-; quickjs/optimized/quickjs.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {

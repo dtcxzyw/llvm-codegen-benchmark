@@ -1,18 +1,18 @@
 
-%"class.easylog::record_t.2776466" = type { %"class.std::chrono::time_point.2776467", i32, i32, %"class.std::__cxx11::basic_string.2776354", %"class.std::__cxx11::basic_string.2776354" }
-%"class.std::chrono::time_point.2776467" = type { %"class.std::chrono::duration.2776440" }
-%"class.std::chrono::duration.2776440" = type { i64 }
-%"class.std::__cxx11::basic_string.2776354" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362", i64, %union.anon.76.2776363 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776362" = type { ptr }
-%union.anon.76.2776363 = type { i64, [8 x i8] }
-%struct.page.3538520 = type { i64, %union.anon.36.3538521, %union.anon.44.3538522, %struct.atomic_t.3538474, [8 x i8] }
-%union.anon.36.3538521 = type { %struct.anon.37.3538523 }
-%struct.anon.37.3538523 = type { %union.anon.38.3538524, ptr, %union.anon.40.3538525, i64 }
-%union.anon.38.3538524 = type { %struct.list_head.3538489 }
-%struct.list_head.3538489 = type { ptr, ptr }
-%union.anon.40.3538525 = type { i64 }
-%union.anon.44.3538522 = type { %struct.atomic_t.3538474 }
-%struct.atomic_t.3538474 = type { i32 }
+%"class.easylog::record_t.2776432" = type { %"class.std::chrono::time_point.2776433", i32, i32, %"class.std::__cxx11::basic_string.2776320", %"class.std::__cxx11::basic_string.2776320" }
+%"class.std::chrono::time_point.2776433" = type { %"class.std::chrono::duration.2776406" }
+%"class.std::chrono::duration.2776406" = type { i64 }
+%"class.std::__cxx11::basic_string.2776320" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776328", i64, %union.anon.76.2776329 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2776328" = type { ptr }
+%union.anon.76.2776329 = type { i64, [8 x i8] }
+%struct.page.3538486 = type { i64, %union.anon.36.3538487, %union.anon.44.3538488, %struct.atomic_t.3538440, [8 x i8] }
+%union.anon.36.3538487 = type { %struct.anon.37.3538489 }
+%struct.anon.37.3538489 = type { %union.anon.38.3538490, ptr, %union.anon.40.3538491, i64 }
+%union.anon.38.3538490 = type { %struct.list_head.3538455 }
+%struct.list_head.3538455 = type { ptr, ptr }
+%union.anon.40.3538491 = type { i64 }
+%union.anon.44.3538488 = type { %struct.atomic_t.3538440 }
+%struct.atomic_t.3538440 = type { i32 }
 
 ; 34 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -54,7 +54,7 @@ define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nuw %"class.easylog::record_t.2776466", ptr %3, i64 %2, i32 4
+  %4 = getelementptr nuw %"class.easylog::record_t.2776432", ptr %3, i64 %2, i32 4
   ret ptr %4
 }
 
@@ -68,7 +68,7 @@ define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1099511627775
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3538520, ptr %3, i64 %2, i32 1
+  %4 = getelementptr %struct.page.3538486, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -84,7 +84,7 @@ define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1099511627775
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.page.3538520, ptr %3, i64 %2
+  %4 = getelementptr %struct.page.3538486, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 72
   ret ptr %5
 }

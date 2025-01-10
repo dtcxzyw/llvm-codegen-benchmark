@@ -1,10 +1,13 @@
 
-%struct.TCGCallArgumentLoc.2707233 = type { i32 }
-%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
-%union.anon.34.2817675 = type { [4 x float] }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
+%struct.TCGCallArgumentLoc.2707199 = type { i32 }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
+%struct.combine_diff_parent.2883414 = type { i8, i32, %struct.object_id.2883412, %struct.strbuf.2883415 }
+%struct.object_id.2883412 = type { [32 x i8], i32 }
+%struct.strbuf.2883415 = type { i64, i64, ptr }
 
-; 24 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
@@ -13,6 +16,7 @@
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; icu/optimized/ucmstate.ll
@@ -20,10 +24,12 @@
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/filemap.ll
 ; openspiel/optimized/DealerPar.cpp.ll
+; openusd/optimized/cdef.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
@@ -60,26 +66,12 @@ entry:
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [14 x %struct.TCGCallArgumentLoc.2707233], ptr %1, i64 0, i64 %3
-  %5 = getelementptr %struct.TCGCallArgumentLoc.2707233, ptr %4, i64 %0
+  %4 = getelementptr [14 x %struct.TCGCallArgumentLoc.2707199], ptr %1, i64 0, i64 %3
+  %5 = getelementptr %struct.TCGCallArgumentLoc.2707199, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 4 occurrences:
-; git/optimized/tree-diff.ll
-; libjpeg-turbo/optimized/jcmaster.c.ll
-; openjdk/optimized/jcmaster.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [10 x [64 x i32]], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 13 occurrences:
+; 16 occurrences:
 ; abc/optimized/nwkTiming.c.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
@@ -88,21 +80,24 @@ entry:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; icu/optimized/ppucd.ll
+; libjpeg-turbo/optimized/jcmaster.c.ll
 ; nuklear/optimized/unity.c.ll
+; openjdk/optimized/jcmaster.ll
 ; openspiel/optimized/DealerPar.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; php/optimized/zend_compile.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [1 x ptr], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw [10 x [64 x i32]], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw i32, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 24 occurrences:
+; 20 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -123,29 +118,26 @@ entry:
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; darktable/optimized/introspection_retouch.c.ll
-; openspiel/optimized/DealerPar.cpp.ll
-; openusd/optimized/cdef.c.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817640], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw nuw float, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
+; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %3
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %0
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %3
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -156,8 +148,8 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %0
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -170,19 +162,19 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %0
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %0
   ret ptr %5
 }
 
 ; 1 occurrences:
-; openusd/optimized/cdef.c.ll
+; git/optimized/tree-diff.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw [19296 x i16], ptr %1, i64 0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw [0 x %struct.combine_diff_parent.2883414], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

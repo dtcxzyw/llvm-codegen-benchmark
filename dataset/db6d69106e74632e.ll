@@ -1,5 +1,5 @@
 
-%"struct.OpenImageIO_v2_6_0::TypeDesc.3100582" = type { i8, i8, i8, i8, i32 }
+%"struct.OpenImageIO_v2_6_0::TypeDesc.3100548" = type { i8, i8, i8, i8, i32 }
 
 ; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -20,8 +20,8 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i64
-  %4 = getelementptr %"struct.OpenImageIO_v2_6_0::TypeDesc.3100582", ptr %1, i64 %3
-  %5 = getelementptr %"struct.OpenImageIO_v2_6_0::TypeDesc.3100582", ptr %4, i64 %0, i32 1
+  %4 = getelementptr %"struct.OpenImageIO_v2_6_0::TypeDesc.3100548", ptr %1, i64 %3
+  %5 = getelementptr %"struct.OpenImageIO_v2_6_0::TypeDesc.3100548", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

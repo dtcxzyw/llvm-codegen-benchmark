@@ -594,7 +594,7 @@ entry:
   ret i64 %2
 }
 
-; 644 occurrences:
+; 648 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -965,6 +965,10 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/thread.cpp.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/canny.cpp.ll
@@ -1257,7 +1261,7 @@ entry:
   ret i64 %2
 }
 
-; 137 occurrences:
+; 138 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/ree_util.cc.ll
 ; assimp/optimized/COBLoader.cpp.ll
@@ -1360,6 +1364,7 @@ entry:
 ; mold/optimized/multi-glob.cc.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
+; openblas/optimized/dgemm_itcopy.c.ll
 ; openblas/optimized/dlaswp_minus.c.ll
 ; openblas/optimized/dlaswp_ncopy.c.ll
 ; openblas/optimized/dlaswp_plus.c.ll
@@ -1722,7 +1727,7 @@ entry:
   ret i64 %2
 }
 
-; 353 occurrences:
+; 352 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -1973,7 +1978,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dgemm_itcopy.c.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/graph_simplifier.cpp.ll

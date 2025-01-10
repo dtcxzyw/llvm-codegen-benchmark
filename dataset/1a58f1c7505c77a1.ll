@@ -1,5 +1,5 @@
 
-%struct.Answer.2705487 = type { i8, i8 }
+%struct.Answer.2705453 = type { i8, i8 }
 
 ; 56 occurrences:
 ; abc/optimized/cecSim.c.ll
@@ -79,7 +79,7 @@ entry:
   %2 = srem i32 %1, 128
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 74720
-  %5 = getelementptr [128 x %struct.Answer.2705487], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [128 x %struct.Answer.2705453], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

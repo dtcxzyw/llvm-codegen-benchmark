@@ -50,7 +50,7 @@ entry:
   ret i64 %5
 }
 
-; 118 occurrences:
+; 117 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -152,7 +152,6 @@ entry:
 ; openjdk/optimized/jdmaster.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; openspiel/optimized/backgammon.cc.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/spell.ll

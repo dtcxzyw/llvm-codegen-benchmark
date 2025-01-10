@@ -96,10 +96,3 @@ func00000000000000fa:                   // @func00000000000000fa
 	add	w0, w8, w1, lsl #12
 	ret
                                         // -- End function
-func00000000000000fe:                   // @func00000000000000fe
-// %bb.0:                               // %entry
-	mov	w8, #24576                      // =0x6000
-	madd	w8, w2, w8, w0
-	add	w0, w8, w1, lsl #14
-	ret
-                                        // -- End function

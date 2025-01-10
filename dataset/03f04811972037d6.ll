@@ -1,13 +1,11 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind

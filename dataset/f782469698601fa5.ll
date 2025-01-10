@@ -1,13 +1,13 @@
 
-%struct.USBEndpoint.2708164 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708165 }
-%union.anon.0.2708165 = type { %struct.QTailQLink.2708166 }
-%struct.QTailQLink.2708166 = type { ptr, ptr }
-%struct._zend_arg_info.2789883 = type { ptr, %struct.zend_type.2789884, ptr }
-%struct.zend_type.2789884 = type { ptr, i32 }
-%struct.H5S_hyper_dim_t.3054948 = type { i64, i64, i64, i64 }
-%"class.clang::DeclAccessPair.3137956" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137957" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3137957" = type { %struct.anon.3137958 }
-%struct.anon.3137958 = type { [8 x i8] }
+%struct.USBEndpoint.2708130 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708131 }
+%union.anon.0.2708131 = type { %struct.QTailQLink.2708132 }
+%struct.QTailQLink.2708132 = type { ptr, ptr }
+%struct._zend_arg_info.2789849 = type { ptr, %struct.zend_type.2789850, ptr }
+%struct.zend_type.2789850 = type { ptr, i32 }
+%struct.H5S_hyper_dim_t.3054914 = type { i64, i64, i64, i64 }
+%"class.clang::DeclAccessPair.3137922" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137923" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3137923" = type { %struct.anon.3137924 }
+%struct.anon.3137924 = type { [8 x i8] }
 
 ; 4 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
@@ -20,7 +20,7 @@ entry:
   %3 = icmp eq i32 %2, 105
   %4 = select i1 %3, i64 4432, i64 5032
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.USBEndpoint.2708164, ptr %5, i64 %0
+  %6 = getelementptr %struct.USBEndpoint.2708130, ptr %5, i64 %0
   %7 = getelementptr i8, ptr %6, i64 -40
   ret ptr %7
 }
@@ -49,7 +49,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 -32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct._zend_arg_info.2789883, ptr %5, i64 %0, i32 1
+  %6 = getelementptr nuw %struct._zend_arg_info.2789849, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i64 8, i64 1032
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.H5S_hyper_dim_t.3054948, ptr %5, i64 %0, i32 2
+  %6 = getelementptr nuw %struct.H5S_hyper_dim_t.3054914, ptr %5, i64 %0, i32 2
   ret ptr %6
 }
 
@@ -160,7 +160,7 @@ entry:
   %3 = icmp eq i32 %2, 25
   %4 = select i1 %3, i64 64, i64 80
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137956", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137922", ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7
 }

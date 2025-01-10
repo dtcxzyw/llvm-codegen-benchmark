@@ -4,10 +4,6 @@ func0000000000000028:                   # @func0000000000000028
 	sltiu	a0, a1, 16
 	xori	a0, a0, 1
 	ret
-func0000000000000026:                   # @func0000000000000026
-	min	a1, a1, a2
-	slt	a0, a1, a0
-	ret
 func000000000000002a:                   # @func000000000000002a
 	min	a1, a1, a2
 	slt	a0, a0, a1

@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifCut.c.ll
@@ -44,9 +44,7 @@
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
-; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
-; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; php/optimized/hash_sha.ll
 ; php/optimized/zend_alloc.ll

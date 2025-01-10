@@ -1,5 +1,5 @@
 
-; 3161 occurrences:
+; 3160 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -1419,7 +1419,6 @@
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/Taint.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
@@ -4135,7 +4134,7 @@ entry:
   ret i1 %6
 }
 
-; 391 occurrences:
+; 392 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/span_test.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -4153,6 +4152,7 @@ entry:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/sre.ll
 ; draco/optimized/symbol_encoding.cc.ll
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll

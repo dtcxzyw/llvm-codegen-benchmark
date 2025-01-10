@@ -1,8 +1,7 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -109,12 +108,13 @@ entry:
   ret i64 %2
 }
 
-; 337 occurrences:
+; 338 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; boost/optimized/monotonic_buffer_resource.ll
 ; eastl/optimized/TestBitVector.cpp.ll
+; faiss/optimized/lattice_Zn.cpp.ll
 ; hyperscan/optimized/charreach.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll

@@ -32,11 +32,10 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000021(i32 %0, i8 %1) #0 {

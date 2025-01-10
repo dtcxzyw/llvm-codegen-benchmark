@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2877299 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877265 = type <{ i64, i32 }>
 
 ; 2 occurrences:
 ; ruby/optimized/gc.ll
@@ -105,7 +105,7 @@ define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 536870911
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.Gia_Obj_t_.2877299, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.Gia_Obj_t_.2877265, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

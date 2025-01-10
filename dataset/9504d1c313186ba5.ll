@@ -13,8 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 4 occurrences:
 ; linux/optimized/intel_dpll.ll
 ; openexr/optimized/preview.c.ll
 ; openjdk/optimized/jmemmgr.ll

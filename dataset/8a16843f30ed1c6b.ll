@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::FdWithKeyRange.2615378" = type { %"struct.rocksdb::FileDescriptor.2615379", ptr, %"class.rocksdb::Slice.2615347", %"class.rocksdb::Slice.2615347" }
-%"struct.rocksdb::FileDescriptor.2615379" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2615347" = type { ptr, i64 }
+%"struct.rocksdb::FdWithKeyRange.2615345" = type { %"struct.rocksdb::FileDescriptor.2615346", ptr, %"class.rocksdb::Slice.2615314", %"class.rocksdb::Slice.2615314" }
+%"struct.rocksdb::FileDescriptor.2615346" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2615314" = type { ptr, i64 }
 
 ; 495 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -503,7 +503,7 @@
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615378", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2615345", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = select i1 %0, ptr %1, ptr %5
   ret ptr %6

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/deflate.c.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; cmake/optimized/deflate.c.ll
@@ -14,6 +14,8 @@
 ; openmpi/optimized/nbc_ireduce.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/detokenize.c.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; zlib/optimized/deflate.c.ll
@@ -22,7 +24,7 @@
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = select i1 %0, i32 32, i32 %2
+  %3 = select i1 %0, i32 1, i32 %2
   ret i32 %3
 }
 

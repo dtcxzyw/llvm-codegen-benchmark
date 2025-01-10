@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
-	leaq	(%rsi,%rdx,2), %rax
-	cmpq	%rdi, %rax
+	addq	%rdx, %rsi
+	cmpq	%rdi, %rsi
 	seta	%al
 	retq
 func0000000000000004:                   # @func0000000000000004

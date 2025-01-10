@@ -1,5 +1,5 @@
 
-; 668 occurrences:
+; 667 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -178,7 +178,6 @@
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/sorml2.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
-; grpc/optimized/posix_endpoint.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

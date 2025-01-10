@@ -625,7 +625,7 @@ entry:
   ret i1 %4
 }
 
-; 297 occurrences:
+; 298 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -785,6 +785,7 @@ entry:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/data.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/imagecut.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/npr.cpp.ll
@@ -1874,7 +1875,7 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcScorr.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -1896,6 +1897,7 @@ entry:
 ; openblas/optimized/dlaqr3.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; opencv/optimized/descriptor.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Fp.ll
 ; openjdk/optimized/mlib_c_ImageConvClearEdge.ll
 ; openjdk/optimized/mlib_c_ImageConvCopyEdge.ll
@@ -2183,6 +2185,22 @@ entry:
   ret i1 %4
 }
 
+; 7 occurrences:
+; clamav/optimized/mew.c.ll
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; wireshark/optimized/file-blf.c.ll
+; wolfssl/optimized/asn.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = icmp ule i32 %0, %3
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; clamav/optimized/swf.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -2225,21 +2243,6 @@ define i1 @func000000000000004b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp sge i32 %0, %3
-  ret i1 %4
-}
-
-; 6 occurrences:
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_lazy.c.ll
-; wireshark/optimized/file-blf.c.ll
-; wolfssl/optimized/asn.c.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 

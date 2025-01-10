@@ -110,7 +110,7 @@ func0000000000000058:                   # @func0000000000000058
 	and	a1, a1, a3
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	li	a2, 26
+	li	a2, 30
 	subw	a2, a2, a1
 	srl	a0, a0, a2
 	ret

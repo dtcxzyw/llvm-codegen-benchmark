@@ -14,8 +14,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 
-; 51 occurrences:
-; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
+; 49 occurrences:
 ; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
 ; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
 ; zed-rs/optimized/0jp4fusyq9xykq21rvyb30mp5.ll
@@ -44,7 +43,6 @@ declare { i64, i1 } @llvm.umul.with.overflow.i64(i64, i64) #1
 ; zed-rs/optimized/7dlcu72xy2qwyr8vttt104wn3.ll
 ; zed-rs/optimized/7v472zdqnk6m560xtqo5n2d2r.ll
 ; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
-; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
 ; zed-rs/optimized/8zogyz7vs6pnjn0mpvvdxdnfr.ll
 ; zed-rs/optimized/9kjcdkl0h4le3fai44smqnljl.ll
 ; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll

@@ -15,6 +15,25 @@ entry:
   ret i64 %4
 }
 
+; 8 occurrences:
+; abc/optimized/SimpSolver.cpp.ll
+; abc/optimized/SimpSolver2.cpp.ll
+; cvc5/optimized/SimpSolver.cc.ll
+; linux/optimized/nf_conntrack_core.ll
+; nori/optimized/nanovg.c.ll
+; opencv/optimized/convolution.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/SimpSolver.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 1
+  %2 = and i32 %1, 2147483646
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; abc/optimized/aigShow.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -66,21 +85,6 @@ entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 48
-  ret i64 %4
-}
-
-; 4 occurrences:
-; linux/optimized/nf_conntrack_core.ll
-; nori/optimized/nanovg.c.ll
-; opencv/optimized/convolution.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 511
-  %2 = and i32 %1, 1073741312
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
   ret i64 %4
 }
 

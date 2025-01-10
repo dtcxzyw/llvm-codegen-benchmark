@@ -10,9 +10,3 @@ func0000000000000017:                   # @func0000000000000017
 	cmovbl	%esi, %edx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	decl	%edx
-	cmpl	%edx, %esi
-	cmovbl	%esi, %edx
-	leaq	(%rdi,%rdx,4), %rax
-	retq

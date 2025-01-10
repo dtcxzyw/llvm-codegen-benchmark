@@ -54,13 +54,6 @@ func0000000000000108:                   # @func0000000000000108
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
-	cmpq	$-1, %rdx
-	movl	$536870912, %eax                # imm = 0x20000000
-	cmovneq	%rsi, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
 func0000000000000081:                   # @func0000000000000081
 	xorl	%eax, %eax
 	cmpq	$2, %rdx

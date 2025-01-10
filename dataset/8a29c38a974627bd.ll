@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 131 occurrences:
 ; abc/optimized/wlnRetime.c.ll
 ; boost/optimized/parser_utils.ll
 ; bullet3/optimized/btGjkPairDetector.ll
@@ -8,6 +8,7 @@
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_json.ll
 ; cpython/optimized/_pickle.ll
+; cpython/optimized/pystrtod.ll
 ; cpython/optimized/unicodeobject.ll
 ; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; glog/optimized/signalhandler_unittest.cc.ll

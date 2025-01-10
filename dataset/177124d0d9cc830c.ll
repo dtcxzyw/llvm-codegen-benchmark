@@ -48,7 +48,7 @@ entry:
   ret i32 %2
 }
 
-; 210 occurrences:
+; 209 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
@@ -117,7 +117,6 @@ entry:
 ; icu/optimized/putil.ll
 ; icu/optimized/uconv.ll
 ; icu/optimized/uinvchar.ll
-; icu/optimized/ushape.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll

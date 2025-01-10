@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; postgres/optimized/regexp.ll
+; 1 occurrences:
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
@@ -18,39 +17,6 @@ define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = icmp slt i64 %4, %0
-  ret i1 %5
-}
-
-; 23 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_spots.c.ll
-; freetype/optimized/pshinter.c.ll
-; freetype/optimized/sdf.c.ll
-; llama.cpp/optimized/train.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; openblas/optimized/dsbgst.c.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/conv_depthwise.cpp.ll
-; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/disparity_filters.cpp.ll
-; openexr/optimized/chunk.c.ll
-; openjdk/optimized/jvmciCodeInstaller.ll
-; openjdk/optimized/parse2.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; openusd/optimized/openexr-c.c.ll
-; php/optimized/tm2unixtime.ll
-; ruby/optimized/io.ll
-; yosys/optimized/ezsat.ll
-; yosys/optimized/simplify.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = sub nsw i64 %1, %3
   %5 = icmp slt i64 %4, %0
   ret i1 %5
 }
@@ -87,10 +53,9 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; nuttx/optimized/lib_memoutstream.c.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/pathExpressionEval.cpp.ll
 ; qemu/optimized/hw_usb_desc.c.ll
@@ -199,6 +164,38 @@ entry:
   ret i1 %5
 }
 
+; 22 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_spots.c.ll
+; freetype/optimized/pshinter.c.ll
+; freetype/optimized/sdf.c.ll
+; llama.cpp/optimized/train.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; opencv/optimized/conv_depthwise.cpp.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/disparity_filters.cpp.ll
+; openexr/optimized/chunk.c.ll
+; openjdk/optimized/jvmciCodeInstaller.ll
+; openjdk/optimized/parse2.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/tm2unixtime.ll
+; yosys/optimized/ezsat.ll
+; yosys/optimized/simplify.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 %1, %3
+  %5 = icmp slt i64 %4, %0
+  ret i1 %5
+}
+
 ; 7 occurrences:
 ; darktable/optimized/introspection_spots.c.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -246,12 +243,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; git/optimized/record.ll
-; nuttx/optimized/lib_meminstream.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
 entry:

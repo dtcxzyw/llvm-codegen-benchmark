@@ -1,5 +1,5 @@
 
-%struct.TestObject.3899234 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.TestObject.3899184 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 5 occurrences:
 ; bullet3/optimized/btConvexHull.ll
@@ -62,7 +62,7 @@ entry:
   %3 = add nsw i64 %2, -114
   %4 = icmp ult i64 %3, 26
   %5 = select i1 %4, i64 11, i64 %1
-  %6 = getelementptr nusw nuw %struct.TestObject.3899234, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.TestObject.3899184, ptr %0, i64 %5
   ret ptr %6
 }
 

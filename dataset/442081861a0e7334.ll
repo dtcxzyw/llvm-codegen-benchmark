@@ -1,5 +1,5 @@
 
-; 428 occurrences:
+; 427 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/message.cc.ll
@@ -277,7 +277,6 @@
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/methodData.ll
-; openjdk/optimized/shenandoahFullGC.ll
 ; openmpi/optimized/coll_base_util.ll
 ; openmpi/optimized/copy.ll
 ; openmpi/optimized/group_init.ll

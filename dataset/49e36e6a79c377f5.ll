@@ -1,6 +1,6 @@
 
-%struct.stbtt_vertex.3063030 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
-%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
+%struct.stbtt_vertex.3062996 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
+%struct.JSVarDef.3435063 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
@@ -31,7 +31,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.stbtt_vertex.3063030, ptr %0, i64 %5, i32 6
+  %6 = getelementptr %struct.stbtt_vertex.3062996, ptr %0, i64 %5, i32 6
   ret ptr %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.stbtt_vertex.3063030, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.stbtt_vertex.3062996, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 14
   ret ptr %7
 }
@@ -61,7 +61,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = add nuw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.JSVarDef.3435063, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

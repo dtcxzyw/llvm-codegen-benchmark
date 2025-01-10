@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3304206" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3304172" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -50,8 +50,8 @@ entry:
   %3 = and i32 %2, 255
   %4 = icmp eq i32 %3, 7
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::Use.3304206", ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3304206", ptr %6, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3304172", ptr %0, i64 %1
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3304172", ptr %6, i64 %5
   ret ptr %7
 }
 

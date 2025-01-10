@@ -1,7 +1,7 @@
 
-%"class.std::shared_ptr.16.2689440" = type { %"class.std::__shared_ptr.17.2689441" }
-%"class.std::__shared_ptr.17.2689441" = type { ptr, %"class.std::__shared_count.2689405" }
-%"class.std::__shared_count.2689405" = type { ptr }
+%"class.std::shared_ptr.16.2689406" = type { %"class.std::__shared_ptr.17.2689407" }
+%"class.std::__shared_ptr.17.2689407" = type { ptr, %"class.std::__shared_count.2689371" }
+%"class.std::__shared_count.2689371" = type { ptr }
 
 ; 5 occurrences:
 ; entt/optimized/helper.cpp.ll
@@ -13,7 +13,7 @@
 define i64 @func0000000000000019(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4611686018427387903
-  %4 = getelementptr nusw nuw %"class.std::shared_ptr.16.2689440", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::shared_ptr.16.2689406", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = ashr exact i64 %6, 4

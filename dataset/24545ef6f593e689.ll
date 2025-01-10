@@ -1,6 +1,6 @@
 
-%struct.PendingWriteback.3651956 = type { %struct.buftag.3651957 }
-%struct.buftag.3651957 = type { i32, i32, i32, i32, i32 }
+%struct.PendingWriteback.3651922 = type { %struct.buftag.3651923 }
+%struct.buftag.3651923 = type { i32, i32, i32, i32, i32 }
 
 ; 4 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
@@ -42,9 +42,9 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %struct.PendingWriteback.3651956, ptr %0, i64 %3
+  %4 = getelementptr %struct.PendingWriteback.3651922, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr %struct.PendingWriteback.3651956, ptr %4, i64 %5
+  %6 = getelementptr %struct.PendingWriteback.3651922, ptr %4, i64 %5
   ret ptr %6
 }
 

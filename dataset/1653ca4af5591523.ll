@@ -193,14 +193,13 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; hyperscan/optimized/ComponentClass.cpp.ll
 ; linux/optimized/idr.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
-; postgres/optimized/varlena.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind

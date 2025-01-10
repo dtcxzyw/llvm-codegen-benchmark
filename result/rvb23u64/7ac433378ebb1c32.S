@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	slli	a1, a1, 59
-	addi	a0, a0, 512
+	addi	a1, a1, 512
 	li	a2, 15
-	srli	a1, a1, 46
+	slli	a0, a0, 59
 	slli	a2, a2, 9
-	and	a0, a0, a2
+	and	a1, a1, a2
+	srli	a0, a0, 46
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

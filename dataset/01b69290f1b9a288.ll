@@ -10,10 +10,11 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/recovery.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/interpreter.ll
 ; openjdk/optimized/templateInterpreter.ll
 ; openjdk/optimized/vmError.ll

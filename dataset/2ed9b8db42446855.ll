@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 12 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
@@ -51,7 +51,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 28
   %5 = ashr i64 %4, 32
-  %6 = getelementptr nusw %struct.lua_TValue.3680875, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.lua_TValue.3680825, ptr %0, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

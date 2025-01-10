@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -7,6 +7,7 @@
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; opencv/optimized/keypoint.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll

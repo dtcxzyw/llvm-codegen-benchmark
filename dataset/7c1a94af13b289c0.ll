@@ -199,7 +199,7 @@ entry:
   ret i1 %5
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/row_internal.cc.ll
 ; arrow/optimized/type.cc.ll
@@ -237,6 +237,7 @@ entry:
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; pocketpy/optimized/random.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll

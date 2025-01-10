@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; clamav/optimized/dlp.c.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -19,6 +19,7 @@
 ; linux/optimized/irq.ll
 ; linux/optimized/netlabel_domainhash.ll
 ; linux/optimized/rx.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll

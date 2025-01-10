@@ -1,8 +1,8 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 5 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 100
-  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700202], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700168], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -104,7 +104,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add nsw i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -116,7 +116,7 @@ entry:
   %3 = add i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -128,7 +128,7 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 264
-  %6 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

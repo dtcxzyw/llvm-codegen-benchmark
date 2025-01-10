@@ -215,7 +215,7 @@ entry:
   ret i64 %6
 }
 
-; 70 occurrences:
+; 71 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -255,6 +255,7 @@ entry:
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll

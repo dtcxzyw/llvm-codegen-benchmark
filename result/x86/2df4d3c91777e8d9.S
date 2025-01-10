@@ -5,12 +5,6 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$16, %rdx
 	setae	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
-	cmpq	%rdx, %rsi
-	cmovlq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setl	%al
-	retq
 func000000000000002a:                   # @func000000000000002a
 	cmpq	%rdx, %rsi
 	cmovlq	%rsi, %rdx

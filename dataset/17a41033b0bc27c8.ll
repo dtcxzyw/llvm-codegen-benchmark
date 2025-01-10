@@ -1,67 +1,67 @@
 
-%"struct.rocksdb::VersionBuilder::Rep::LevelState.2615255" = type { %"class.std::unordered_set.2615256", %"class.std::unordered_map.362.2615257" }
-%"class.std::unordered_set.2615256" = type { %"class.std::_Hashtable.349.2615258" }
-%"class.std::_Hashtable.349.2615258" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615259", i64, %"struct.std::__detail::_Prime_rehash_policy.2615260", ptr }
-%"struct.std::__detail::_Hash_node_base.2615259" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2615260" = type { float, i64 }
-%"class.std::unordered_map.362.2615257" = type { %"class.std::_Hashtable.363.2615261" }
-%"class.std::_Hashtable.363.2615261" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615259", i64, %"struct.std::__detail::_Prime_rehash_policy.2615260", ptr }
-%"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617334" = type { %"class.std::__cxx11::list.79.2617335" }
-%"class.std::__cxx11::list.79.2617335" = type { %"class.std::__cxx11::_List_base.80.2617336" }
-%"class.std::__cxx11::_List_base.80.2617336" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617337" }
-%"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617337" = type { %"struct.std::__detail::_List_node_header.2617338" }
-%"struct.std::__detail::_List_node_header.2617338" = type { %"struct.std::__detail::_List_node_base.2617339", i64 }
-%"struct.std::__detail::_List_node_base.2617339" = type { ptr, ptr }
-%"class.rocksdb::Status.2631545" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2631546" }
-%"class.std::unique_ptr.2631546" = type { %"struct.std::__uniq_ptr_data.2631547" }
-%"struct.std::__uniq_ptr_data.2631547" = type { %"class.std::__uniq_ptr_impl.2631548" }
-%"class.std::__uniq_ptr_impl.2631548" = type { %"class.std::tuple.2631549" }
-%"class.std::tuple.2631549" = type { %"struct.std::_Tuple_impl.2631550" }
-%"struct.std::_Tuple_impl.2631550" = type { %"struct.std::_Head_base.1.2631551" }
-%"struct.std::_Head_base.1.2631551" = type { ptr }
-%struct.TempRow.2703215 = type { i32, i32, i32, i32, %"class.std::vector.48.2703216", %"class.std::vector.53.2703217" }
-%"class.std::vector.48.2703216" = type { %"struct.std::_Vector_base.49.2703218" }
-%"struct.std::_Vector_base.49.2703218" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" = type { ptr, ptr, ptr }
-%"class.std::vector.53.2703217" = type { %"struct.std::_Vector_base.54.2703221" }
-%"struct.std::_Vector_base.54.2703221" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" = type { ptr, ptr, ptr }
-%"class.hermes::vm::PinnedHermesValue.3085840" = type { %"class.hermes::vm::HermesValue.3085841" }
-%"class.hermes::vm::HermesValue.3085841" = type { i64 }
-%"class.llvm::Use.3157596" = type { ptr, ptr, ptr, ptr }
-%struct.ata_device.3531598 = type { ptr, i32, i32, i64, ptr, ptr, ptr, i32, %struct.device.3531595, i64, i64, i32, i64, i8, i8, i8, i32, i32, i32, i32, i32, i32, i32, i16, i16, i16, [42 x i8], %union.anon.11.3531617, [8 x i8], [20 x i8], [64 x i8], i32, i32, i32, i32, ptr, [512 x i8], i32, %struct.ata_ering.3531618, [56 x i8] }
-%struct.device.3531595 = type { %struct.kobject.3531599, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3531600, %struct.dev_links_info.3531601, %struct.dev_pm_info.3531602, ptr, %struct.dev_msi_info.3531603, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3531559, ptr, %struct.dev_archdata.3531604, ptr, ptr, i32, i32, i32, %struct.spinlock.3531590, %struct.list_head.3531559, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
-%struct.kobject.3531599 = type { ptr, %struct.list_head.3531559, ptr, ptr, ptr, ptr, %struct.kref.3531605, i8 }
-%struct.kref.3531605 = type { %struct.refcount_struct.3531606 }
-%struct.refcount_struct.3531606 = type { %struct.atomic_t.3531553 }
-%struct.atomic_t.3531553 = type { i32 }
-%struct.mutex.3531600 = type { %struct.atomic64_t.3531607, %struct.raw_spinlock.3531580, %struct.optimistic_spin_queue.3531608, %struct.list_head.3531559 }
-%struct.atomic64_t.3531607 = type { i64 }
-%struct.raw_spinlock.3531580 = type { %struct.qspinlock.3531581 }
-%struct.qspinlock.3531581 = type { %union.anon.7.3531582 }
-%union.anon.7.3531582 = type { %struct.atomic_t.3531553 }
-%struct.optimistic_spin_queue.3531608 = type { %struct.atomic_t.3531553 }
-%struct.dev_links_info.3531601 = type { %struct.list_head.3531559, %struct.list_head.3531559, %struct.list_head.3531559, i32 }
-%struct.dev_pm_info.3531602 = type { %struct.pm_message.3531609, i16, i32, %struct.spinlock.3531590, %struct.list_head.3531559, %struct.completion.3531610, ptr, i8, %struct.hrtimer.3531611, i64, %struct.work_struct.3531612, %struct.wait_queue_head.3531613, ptr, %struct.atomic_t.3531553, %struct.atomic_t.3531553, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
-%struct.pm_message.3531609 = type { i32 }
-%struct.completion.3531610 = type { i32, %struct.swait_queue_head.3531614 }
-%struct.swait_queue_head.3531614 = type { %struct.raw_spinlock.3531580, %struct.list_head.3531559 }
-%struct.hrtimer.3531611 = type { %struct.timerqueue_node.3531615, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3531615 = type { %struct.rb_node.3531616, i64 }
-%struct.rb_node.3531616 = type { i64, ptr, ptr }
-%struct.work_struct.3531612 = type { %struct.atomic64_t.3531607, %struct.list_head.3531559, ptr }
-%struct.wait_queue_head.3531613 = type { %struct.spinlock.3531590, %struct.list_head.3531559 }
-%struct.dev_msi_info.3531603 = type { ptr, ptr }
-%struct.dev_archdata.3531604 = type {}
-%struct.spinlock.3531590 = type { %union.anon.10.3531591 }
-%union.anon.10.3531591 = type { %struct.raw_spinlock.3531580 }
-%struct.list_head.3531559 = type { ptr, ptr }
-%union.anon.11.3531617 = type { [128 x i32] }
-%struct.ata_ering.3531618 = type { i32, [32 x %struct.ata_ering_entry.3531619] }
-%struct.ata_ering_entry.3531619 = type { i32, i32, i64 }
-%struct.sortedSymbol_t.3543338 = type { i8 }
+%"struct.rocksdb::VersionBuilder::Rep::LevelState.2615222" = type { %"class.std::unordered_set.2615223", %"class.std::unordered_map.362.2615224" }
+%"class.std::unordered_set.2615223" = type { %"class.std::_Hashtable.349.2615225" }
+%"class.std::_Hashtable.349.2615225" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615226", i64, %"struct.std::__detail::_Prime_rehash_policy.2615227", ptr }
+%"struct.std::__detail::_Hash_node_base.2615226" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2615227" = type { float, i64 }
+%"class.std::unordered_map.362.2615224" = type { %"class.std::_Hashtable.363.2615228" }
+%"class.std::_Hashtable.363.2615228" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2615226", i64, %"struct.std::__detail::_Prime_rehash_policy.2615227", ptr }
+%"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617301" = type { %"class.std::__cxx11::list.79.2617302" }
+%"class.std::__cxx11::list.79.2617302" = type { %"class.std::__cxx11::_List_base.80.2617303" }
+%"class.std::__cxx11::_List_base.80.2617303" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617304" }
+%"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617304" = type { %"struct.std::__detail::_List_node_header.2617305" }
+%"struct.std::__detail::_List_node_header.2617305" = type { %"struct.std::__detail::_List_node_base.2617306", i64 }
+%"struct.std::__detail::_List_node_base.2617306" = type { ptr, ptr }
+%"class.rocksdb::Status.2631512" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2631513" }
+%"class.std::unique_ptr.2631513" = type { %"struct.std::__uniq_ptr_data.2631514" }
+%"struct.std::__uniq_ptr_data.2631514" = type { %"class.std::__uniq_ptr_impl.2631515" }
+%"class.std::__uniq_ptr_impl.2631515" = type { %"class.std::tuple.2631516" }
+%"class.std::tuple.2631516" = type { %"struct.std::_Tuple_impl.2631517" }
+%"struct.std::_Tuple_impl.2631517" = type { %"struct.std::_Head_base.1.2631518" }
+%"struct.std::_Head_base.1.2631518" = type { ptr }
+%struct.TempRow.2703181 = type { i32, i32, i32, i32, %"class.std::vector.48.2703182", %"class.std::vector.53.2703183" }
+%"class.std::vector.48.2703182" = type { %"struct.std::_Vector_base.49.2703184" }
+%"struct.std::_Vector_base.49.2703184" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" = type { ptr, ptr, ptr }
+%"class.std::vector.53.2703183" = type { %"struct.std::_Vector_base.54.2703187" }
+%"struct.std::_Vector_base.54.2703187" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" = type { ptr, ptr, ptr }
+%"class.hermes::vm::PinnedHermesValue.3085806" = type { %"class.hermes::vm::HermesValue.3085807" }
+%"class.hermes::vm::HermesValue.3085807" = type { i64 }
+%"class.llvm::Use.3157562" = type { ptr, ptr, ptr, ptr }
+%struct.ata_device.3531564 = type { ptr, i32, i32, i64, ptr, ptr, ptr, i32, %struct.device.3531561, i64, i64, i32, i64, i8, i8, i8, i32, i32, i32, i32, i32, i32, i32, i16, i16, i16, [42 x i8], %union.anon.11.3531583, [8 x i8], [20 x i8], [64 x i8], i32, i32, i32, i32, ptr, [512 x i8], i32, %struct.ata_ering.3531584, [56 x i8] }
+%struct.device.3531561 = type { %struct.kobject.3531565, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3531566, %struct.dev_links_info.3531567, %struct.dev_pm_info.3531568, ptr, %struct.dev_msi_info.3531569, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3531525, ptr, %struct.dev_archdata.3531570, ptr, ptr, i32, i32, i32, %struct.spinlock.3531556, %struct.list_head.3531525, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
+%struct.kobject.3531565 = type { ptr, %struct.list_head.3531525, ptr, ptr, ptr, ptr, %struct.kref.3531571, i8 }
+%struct.kref.3531571 = type { %struct.refcount_struct.3531572 }
+%struct.refcount_struct.3531572 = type { %struct.atomic_t.3531519 }
+%struct.atomic_t.3531519 = type { i32 }
+%struct.mutex.3531566 = type { %struct.atomic64_t.3531573, %struct.raw_spinlock.3531546, %struct.optimistic_spin_queue.3531574, %struct.list_head.3531525 }
+%struct.atomic64_t.3531573 = type { i64 }
+%struct.raw_spinlock.3531546 = type { %struct.qspinlock.3531547 }
+%struct.qspinlock.3531547 = type { %union.anon.7.3531548 }
+%union.anon.7.3531548 = type { %struct.atomic_t.3531519 }
+%struct.optimistic_spin_queue.3531574 = type { %struct.atomic_t.3531519 }
+%struct.dev_links_info.3531567 = type { %struct.list_head.3531525, %struct.list_head.3531525, %struct.list_head.3531525, i32 }
+%struct.dev_pm_info.3531568 = type { %struct.pm_message.3531575, i16, i32, %struct.spinlock.3531556, %struct.list_head.3531525, %struct.completion.3531576, ptr, i8, %struct.hrtimer.3531577, i64, %struct.work_struct.3531578, %struct.wait_queue_head.3531579, ptr, %struct.atomic_t.3531519, %struct.atomic_t.3531519, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
+%struct.pm_message.3531575 = type { i32 }
+%struct.completion.3531576 = type { i32, %struct.swait_queue_head.3531580 }
+%struct.swait_queue_head.3531580 = type { %struct.raw_spinlock.3531546, %struct.list_head.3531525 }
+%struct.hrtimer.3531577 = type { %struct.timerqueue_node.3531581, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3531581 = type { %struct.rb_node.3531582, i64 }
+%struct.rb_node.3531582 = type { i64, ptr, ptr }
+%struct.work_struct.3531578 = type { %struct.atomic64_t.3531573, %struct.list_head.3531525, ptr }
+%struct.wait_queue_head.3531579 = type { %struct.spinlock.3531556, %struct.list_head.3531525 }
+%struct.dev_msi_info.3531569 = type { ptr, ptr }
+%struct.dev_archdata.3531570 = type {}
+%struct.spinlock.3531556 = type { %union.anon.10.3531557 }
+%union.anon.10.3531557 = type { %struct.raw_spinlock.3531546 }
+%struct.list_head.3531525 = type { ptr, ptr }
+%union.anon.11.3531583 = type { [128 x i32] }
+%struct.ata_ering.3531584 = type { i32, [32 x %struct.ata_ering_entry.3531585] }
+%struct.ata_ering_entry.3531585 = type { i32, i32, i64 }
+%struct.sortedSymbol_t.3543304 = type { i8 }
 
 ; 16 occurrences:
 ; cpython/optimized/codeobject.ll
@@ -105,11 +105,12 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/indirect.ll
+; linux/optimized/libata-core.ll
 ; linux/optimized/psargs.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; postgres/optimized/data.ll
@@ -387,7 +388,7 @@ entry:
 define i1 @func0000000000000761(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw %"struct.rocksdb::VersionBuilder::Rep::LevelState.2615255", ptr %3, i64 %1
+  %4 = getelementptr nusw %"struct.rocksdb::VersionBuilder::Rep::LevelState.2615222", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 112
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -884,7 +885,7 @@ entry:
 define i1 @func00000000000007e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617334", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617301", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -899,7 +900,7 @@ entry:
 define i1 @func0000000000000161(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
-  %4 = getelementptr nusw %"class.rocksdb::Status.2631545", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.rocksdb::Status.2631512", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -969,7 +970,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw %struct.TempRow.2703215, ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %struct.TempRow.2703181, ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 64
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1260,6 +1261,21 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; hyperscan/optimized/castle.c.ll
+; php/optimized/php_pcre.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 24
+  %4 = getelementptr i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
 ; 18 occurrences:
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
@@ -1312,7 +1328,7 @@ entry:
 define i1 @func0000000000000541(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -56
-  %4 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085840", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085806", ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1329,7 +1345,7 @@ entry:
 define i1 @func0000000000000561(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3157596", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3157562", ptr %3, i64 %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1359,27 +1375,13 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/divsufsort.c.ll
-; hyperscan/optimized/castle.c.ll
-; zstd/optimized/divsufsort.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 2
-  %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
-  %6 = icmp ult ptr %5, %4
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000609(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 1152
-  %4 = getelementptr %struct.ata_device.3531598, ptr %3, i64 %1
+  %4 = getelementptr %struct.ata_device.3531564, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %0, i64 2624
   %6 = icmp uge ptr %5, %4
   ret i1 %6
@@ -1394,7 +1396,7 @@ entry:
 define i1 @func0000000000000601(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 736
-  %4 = getelementptr %struct.sortedSymbol_t.3543338, ptr %3, i64 %1
+  %4 = getelementptr %struct.sortedSymbol_t.3543304, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %0, i64 1
   %6 = icmp eq ptr %5, %4
   ret i1 %6

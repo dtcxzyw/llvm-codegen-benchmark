@@ -1,5 +1,5 @@
 
-%struct.lv_color32_t.3074632 = type { i8, i8, i8, i8 }
+%struct.lv_color32_t.3074598 = type { i8, i8, i8, i8 }
 
 ; 3 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -84,7 +84,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.lv_color32_t.3074632, ptr %5, i64 %0, i32 3
+  %6 = getelementptr %struct.lv_color32_t.3074598, ptr %5, i64 %0, i32 3
   ret ptr %6
 }
 

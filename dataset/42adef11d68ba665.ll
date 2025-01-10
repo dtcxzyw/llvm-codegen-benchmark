@@ -1,7 +1,7 @@
 
-%"struct.re2::WalkState.2601763" = type { ptr, i32, %"struct.re2::Frag.2601723", %"struct.re2::Frag.2601723", %"struct.re2::Frag.2601723", ptr }
-%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
-%"struct.re2::PatchList.2601724" = type { i32, i32 }
+%"struct.re2::WalkState.2601730" = type { ptr, i32, %"struct.re2::Frag.2601690", %"struct.re2::Frag.2601690", %"struct.re2::Frag.2601690", ptr }
+%"struct.re2::Frag.2601690" = type <{ i32, %"struct.re2::PatchList.2601691", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601691" = type { i32, i32 }
 
 ; 160 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -168,7 +168,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 7
-  %3 = getelementptr nusw nuw %"struct.re2::WalkState.2601763", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.re2::WalkState.2601730", ptr %0, i64 %2
   ret ptr %3
 }
 

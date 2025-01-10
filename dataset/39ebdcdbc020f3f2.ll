@@ -282,11 +282,10 @@ entry:
   ret i1 %3
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; lvgl/optimized/lv_chart.ll

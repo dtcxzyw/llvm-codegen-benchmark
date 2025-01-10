@@ -1,9 +1,9 @@
 
-%"struct.duckdb::LogicalType.2970815" = type { i8, i8, %"class.std::shared_ptr.2970818" }
-%"class.std::shared_ptr.2970818" = type { %"class.std::__shared_ptr.2970819" }
-%"class.std::__shared_ptr.2970819" = type { ptr, %"class.std::__shared_count.2970820" }
-%"class.std::__shared_count.2970820" = type { ptr }
-%"class.llvm::SDValue.3186381" = type <{ ptr, i32, [4 x i8] }>
+%"struct.duckdb::LogicalType.2970781" = type { i8, i8, %"class.std::shared_ptr.2970784" }
+%"class.std::shared_ptr.2970784" = type { %"class.std::__shared_ptr.2970785" }
+%"class.std::__shared_ptr.2970785" = type { ptr, %"class.std::__shared_count.2970786" }
+%"class.std::__shared_count.2970786" = type { ptr }
+%"class.llvm::SDValue.3186347" = type <{ ptr, i32, [4 x i8] }>
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_physical_plan.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = sdiv exact i64 %1, 24
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr nusw %"struct.duckdb::LogicalType.2970815", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.duckdb::LogicalType.2970781", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = sdiv exact i64 %1, 40
   %5 = sub nuw nsw i64 %4, %3
-  %6 = getelementptr nusw %"class.llvm::SDValue.3186381", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::SDValue.3186347", ptr %0, i64 %5
   ret ptr %6
 }
 

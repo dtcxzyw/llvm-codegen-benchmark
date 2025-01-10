@@ -210,12 +210,6 @@ func0000000000000104:                   # @func0000000000000104
 	sltiu	a0, a0, 246
 	or	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
-	andi	a0, a0, 255
-	slti	a1, a1, 1
-	seqz	a0, a0
-	or	a0, a0, a1
-	ret
 func000000000000002a:                   # @func000000000000002a
 	slli	a0, a0, 56
 	srai	a0, a0, 56

@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; casadi/optimized/kinsol.c.ll
 ; hermes/optimized/UTF16Stream.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll

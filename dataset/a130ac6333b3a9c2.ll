@@ -1,6 +1,6 @@
 
-%union.acpi_object.3540587 = type { %struct.anon.9.3540588 }
-%struct.anon.9.3540588 = type { i32, i32, i64, i32 }
+%union.acpi_object.3540553 = type { %struct.anon.9.3540554 }
+%struct.anon.9.3540554 = type { i32, i32, i64, i32 }
 
 ; 8 occurrences:
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -255,11 +255,12 @@ entry:
   ret ptr %5
 }
 
-; 163 occurrences:
+; 167 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/extraUtilCube.c.ll
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaMini.c.ll
+; bullet3/optimized/btBoxBoxDetector.ll
 ; casadi/optimized/cs_counts.c.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; graphviz/optimized/multispline.c.ll
@@ -395,6 +396,9 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
 ; openspiel/optimized/spades.cc.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
@@ -477,22 +481,6 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; bullet3/optimized/btBoxBoxDetector.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; openusd/optimized/loopPatchBuilder.cpp.ll
-; openusd/optimized/restoration.c.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
-  ret ptr %5
-}
-
 ; 2 occurrences:
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -527,7 +515,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 14
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.3540587, ptr %0, i64 %3, i32 0, i32 2
+  %4 = getelementptr %union.acpi_object.3540553, ptr %0, i64 %3, i32 0, i32 2
   ret ptr %4
 }
 

@@ -1,9 +1,3 @@
-func0000000000000546:                   // @func0000000000000546
-// %bb.0:                               // %entry
-	cmp	w0, w1
-	cset	w0, lt
-	ret
-                                        // -- End function
 func000000000000058c:                   // @func000000000000058c
 // %bb.0:                               // %entry
 	subs	w8, w0, w1

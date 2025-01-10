@@ -406,12 +406,11 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/set_memory.ll
 ; opencv/optimized/resize.cpp.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll

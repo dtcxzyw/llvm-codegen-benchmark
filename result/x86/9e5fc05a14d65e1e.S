@@ -28,6 +28,12 @@ func0000000000000003:                   # @func0000000000000003
 	subq	%rcx, %rdi
 	cmovaeq	%rdi, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	movl	%esi, %ecx
+	xorl	%eax, %eax
+	subq	%rcx, %rdi
+	cmovaeq	%rdi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %ecx
 	xorl	%eax, %eax

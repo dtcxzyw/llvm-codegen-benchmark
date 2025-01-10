@@ -1,12 +1,12 @@
 
-%struct.page.3538520 = type { i64, %union.anon.36.3538521, %union.anon.44.3538522, %struct.atomic_t.3538474, [8 x i8] }
-%union.anon.36.3538521 = type { %struct.anon.37.3538523 }
-%struct.anon.37.3538523 = type { %union.anon.38.3538524, ptr, %union.anon.40.3538525, i64 }
-%union.anon.38.3538524 = type { %struct.list_head.3538489 }
-%struct.list_head.3538489 = type { ptr, ptr }
-%union.anon.40.3538525 = type { i64 }
-%union.anon.44.3538522 = type { %struct.atomic_t.3538474 }
-%struct.atomic_t.3538474 = type { i32 }
+%struct.page.3538486 = type { i64, %union.anon.36.3538487, %union.anon.44.3538488, %struct.atomic_t.3538440, [8 x i8] }
+%union.anon.36.3538487 = type { %struct.anon.37.3538489 }
+%struct.anon.37.3538489 = type { %union.anon.38.3538490, ptr, %union.anon.40.3538491, i64 }
+%union.anon.38.3538490 = type { %struct.list_head.3538455 }
+%struct.list_head.3538455 = type { ptr, ptr }
+%union.anon.40.3538491 = type { i64 }
+%union.anon.44.3538488 = type { %struct.atomic_t.3538440 }
+%struct.atomic_t.3538440 = type { i32 }
 
 ; 17 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
@@ -47,7 +47,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 1099511627775
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.page.3538520, ptr %4, i64 %3, i32 1
+  %5 = getelementptr %struct.page.3538486, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -63,7 +63,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 1099511627775
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.page.3538520, ptr %4, i64 %3
+  %5 = getelementptr %struct.page.3538486, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 72
   ret ptr %6
 }

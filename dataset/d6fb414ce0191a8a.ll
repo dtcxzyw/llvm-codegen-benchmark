@@ -1,6 +1,6 @@
 
-%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
-%struct.ImVec2.3454338 = type { float, float }
+%"struct.boost::container::dtl::pair.2685178" = type { i32, i32 }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 1 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
@@ -9,7 +9,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = or disjoint i64 %3, 16
-  %5 = getelementptr %"struct.boost::container::dtl::pair.2685211", ptr %0, i64 %1
+  %5 = getelementptr %"struct.boost::container::dtl::pair.2685178", ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -216,8 +216,8 @@ define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = or disjoint i64 %3, 1
-  %5 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %struct.ImVec2.3454338, ptr %5, i64 %4
+  %5 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %struct.ImVec2.3454304, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -1,7 +1,7 @@
 
-%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
-%"class.vcg::TexCoord2.3838464" = type <{ [1 x %"class.vcg::Point2.126.3838465"], [1 x i16], [2 x i8] }>
-%"class.vcg::Point2.126.3838465" = type { [2 x float] }
+%class.btRotationalLimitMotor2.2818830 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%"class.vcg::TexCoord2.3838414" = type <{ [1 x %"class.vcg::Point2.126.3838415"], [1 x i16], [2 x i8] }>
+%"class.vcg::Point2.126.3838415" = type { [2 x float] }
 
 ; 55 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -64,7 +64,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %4, i32 21
+  %5 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818830], ptr %0, i64 0, i64 %4, i32 21
   ret ptr %5
 }
 
@@ -75,7 +75,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 2, i64 %1
-  %5 = getelementptr [3 x %"class.vcg::TexCoord2.3838464"], ptr %0, i64 0, i64 %4, i32 0, i64 0, i32 0, i64 1
+  %5 = getelementptr [3 x %"class.vcg::TexCoord2.3838414"], ptr %0, i64 0, i64 %4, i32 0, i64 0, i32 0, i64 1
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-%"class.draco::IndexType.29.3086539" = type { i32 }
+%"class.draco::IndexType.29.3086505" = type { i32 }
 
 ; 2 occurrences:
 ; draco/optimized/corner_table.cc.ll
@@ -10,7 +10,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = freeze i32 %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.draco::IndexType.29.3086539", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.draco::IndexType.29.3086505", ptr %0, i64 %5
   ret ptr %6
 }
 

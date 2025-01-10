@@ -1,5 +1,5 @@
 
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
 
 ; 517 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -673,7 +673,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 3
   %3 = or i64 %2, 1
-  %4 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %0, i64 %3
+  %4 = getelementptr %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

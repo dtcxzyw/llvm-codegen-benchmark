@@ -1,5 +1,5 @@
 
-; 470 occurrences:
+; 473 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/absGla.c.ll
@@ -160,7 +160,6 @@
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/loop.ll
-; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/oom_kill.ll
 ; linux/optimized/osl.ll
@@ -349,7 +348,11 @@
 ; openssl/optimized/libcrypto-shlib-ecx_backend.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openssl/optimized/openssl-bin-enc.ll

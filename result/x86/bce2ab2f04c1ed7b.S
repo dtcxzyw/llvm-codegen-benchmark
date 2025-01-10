@@ -40,12 +40,6 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
-	shlq	$2, %rdx
-	cmpq	%rsi, %rdx
-	setl	%al
-	andb	%dil, %al
-	retq
 func0000000000000061:                   # @func0000000000000061
 	shlq	$32, %rdx
 	cmpq	%rsi, %rdx
@@ -62,6 +56,12 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdx, %rdx
 	cmpq	%rsi, %rdx
 	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000026:                   # @func0000000000000026
+	shlq	$2, %rdx
+	cmpq	%rsi, %rdx
+	setl	%al
 	andb	%dil, %al
 	retq
 func000000000000002c:                   # @func000000000000002c

@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/scanners.c.ll
 ; hermes/optimized/zip.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll

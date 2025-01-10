@@ -148,11 +148,11 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func000000000000018c:                   # @func000000000000018c
 	addq	%rdx, %rsi
 	decq	%rdi
 	cmpq	%rsi, %rdi
-	sete	%al
+	setne	%al
 	retq
 func00000000000000a1:                   # @func00000000000000a1
 	addq	%rdx, %rsi
@@ -207,6 +207,12 @@ func0000000000000184:                   # @func0000000000000184
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
+	retq
+func0000000000000181:                   # @func0000000000000181
+	addq	%rdx, %rsi
+	incq	%rdi
+	cmpq	%rsi, %rdi
+	sete	%al
 	retq
 func0000000000000024:                   # @func0000000000000024
 	addq	%rdx, %rsi

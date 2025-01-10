@@ -1,8 +1,8 @@
 
-%struct.CalloutData.2710338 = type { i32, [5 x %struct.anon.2710339] }
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
+%struct.CalloutData.2710304 = type { i32, [5 x %struct.anon.2710305] }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
 
 ; 16 occurrences:
 ; linux/optimized/datagram.ll
@@ -38,7 +38,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.CalloutData.2710338, ptr %1, i64 %2
+  %3 = getelementptr %struct.CalloutData.2710304, ptr %1, i64 %2
   %4 = sext i32 %0 to i64
   %.idx = mul nsw i64 %4, 24
   %5 = getelementptr i8, ptr %3, i64 -112

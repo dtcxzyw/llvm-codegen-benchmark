@@ -1,9 +1,9 @@
 
-%"struct.std::pair.2867287" = type { %"class.std::__cxx11::basic_string.2867231", %"struct.vcpkg::Path.2867288" }
-%"class.std::__cxx11::basic_string.2867231" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867232", i64, %union.anon.0.2867233 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867232" = type { ptr }
-%union.anon.0.2867233 = type { i64, [8 x i8] }
-%"struct.vcpkg::Path.2867288" = type { %"class.std::__cxx11::basic_string.2867231" }
+%"struct.std::pair.2867253" = type { %"class.std::__cxx11::basic_string.2867197", %"struct.vcpkg::Path.2867254" }
+%"class.std::__cxx11::basic_string.2867197" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867198", i64, %union.anon.0.2867199 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867198" = type { ptr }
+%union.anon.0.2867199 = type { i64, [8 x i8] }
+%"struct.vcpkg::Path.2867254" = type { %"class.std::__cxx11::basic_string.2867197" }
 
 ; 129 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -140,8 +140,8 @@ define i64 @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"struct.std::pair.2867287", ptr %0, i64 %1
-  %6 = getelementptr nusw %"struct.std::pair.2867287", ptr %5, i64 %4
+  %5 = getelementptr nusw %"struct.std::pair.2867253", ptr %0, i64 %1
+  %6 = getelementptr nusw %"struct.std::pair.2867253", ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

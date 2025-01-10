@@ -13,16 +13,15 @@ entry:
   ret i128 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
-; libquic/optimized/p256-64.c.ll
-; php/optimized/engine_pcgoneseq128xslrr64.ll
-; qemu/optimized/system_memory.c.ll
+; libquic/optimized/poly1305_vec.c.ll
 ; qemu/optimized/util_host-utils.c.ll
+; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i128 @func0000000000000010(i64 %0, i128 %1, i128 %2) #0 {
+define i128 @func0000000000000090(i64 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = add i128 %1, %2
+  %3 = add nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   %6 = add i64 %0, %5
@@ -30,14 +29,15 @@ entry:
   ret i128 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
-; libquic/optimized/poly1305_vec.c.ll
-; quickjs/optimized/libbf.ll
+; libquic/optimized/p256-64.c.ll
+; php/optimized/engine_pcgoneseq128xslrr64.ll
+; qemu/optimized/system_memory.c.ll
 ; Function Attrs: nounwind
-define i128 @func0000000000000090(i64 %0, i128 %1, i128 %2) #0 {
+define i128 @func0000000000000010(i64 %0, i128 %1, i128 %2) #0 {
 entry:
-  %3 = add nuw i128 %1, %2
+  %3 = add i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   %6 = add i64 %0, %5

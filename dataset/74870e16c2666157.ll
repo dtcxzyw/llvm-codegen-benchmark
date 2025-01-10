@@ -1,5 +1,5 @@
 
-; 827 occurrences:
+; 828 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigDup.c.ll
 ; abc/optimized/aigRepr.c.ll
@@ -399,6 +399,7 @@
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; llvm/optimized/xxhash.cpp.ll
+; luau/optimized/TableShape.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll

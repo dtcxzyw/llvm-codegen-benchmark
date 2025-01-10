@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3747481" = type { float, float }
+%"class.cv::Point_.3747431" = type { float, float }
 
 ; 6 occurrences:
 ; abc/optimized/deflate.c.ll
@@ -53,8 +53,8 @@ entry:
   %3 = add i64 %2, -4294967296
   %4 = ashr i64 %3, 32
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.cv::Point_.3747481", ptr %0, i64 %5
-  %7 = getelementptr nusw %"class.cv::Point_.3747481", ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %"class.cv::Point_.3747431", ptr %0, i64 %5
+  %7 = getelementptr nusw %"class.cv::Point_.3747431", ptr %6, i64 %4
   ret ptr %7
 }
 

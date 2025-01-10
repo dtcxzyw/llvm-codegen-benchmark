@@ -19,3 +19,8 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rsi, %rdi
 	addq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andl	$1, %edx
+	orq	%rsi, %rdi
+	leaq	(%rdi,%rdx), %rax
+	retq

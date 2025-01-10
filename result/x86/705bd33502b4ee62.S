@@ -6,11 +6,15 @@ func0000000000000024:                   # @func0000000000000024
 	testl	%edi, %edi
 	setns	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
-	movq	%rdi, %rax
-	shrl	$31, %eax
-	retq
 func0000000000000026:                   # @func0000000000000026
+	testl	%edi, %edi
+	setle	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	testl	%edi, %edi
+	setg	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdi, %rax
 	shrl	$31, %eax
 	retq
@@ -18,10 +22,6 @@ func00000000000000a6:                   # @func00000000000000a6
 	movq	%rdi, %rax
 	shrq	$62, %rax
 	andl	$1, %eax
-	retq
-func000000000000002a:                   # @func000000000000002a
-	cmpl	$8388609, %edi                  # imm = 0x800001
-	setge	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rdi, %rax

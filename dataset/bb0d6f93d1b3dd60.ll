@@ -63,11 +63,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
-; linux/optimized/compat_binfmt_elf.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:

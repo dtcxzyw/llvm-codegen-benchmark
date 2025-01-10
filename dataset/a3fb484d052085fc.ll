@@ -1,18 +1,4 @@
 
-; 4 occurrences:
-; postgres/optimized/gram.ll
-; postgres/optimized/pl_gram.ll
-; postgres/optimized/preproc.ll
-; ruby/optimized/parse.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000288(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 2
-  %5 = icmp ugt ptr %0, %4
-  ret i1 %5
-}
-
 ; 15 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/bspline.cpp.ll

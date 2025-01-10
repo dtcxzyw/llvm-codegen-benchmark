@@ -63,21 +63,6 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; assimp/optimized/ProcessHelper.cpp.ll
-; icu/optimized/collationdata.ll
-; lief/optimized/psa_crypto.c.ll
-; linux/optimized/82571.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 65536, %1
-  %3 = icmp eq i32 %0, 3
-  %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
-}
-
 ; 2 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -87,6 +72,20 @@ entry:
   %2 = shl i32 255, %1
   %3 = icmp sgt i32 %0, 5
   %4 = select i1 %3, i32 %2, i32 255
+  ret i32 %4
+}
+
+; 4 occurrences:
+; icu/optimized/collationdata.ll
+; lief/optimized/psa_crypto.c.ll
+; linux/optimized/82571.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 1, %1
+  %3 = icmp eq i32 %0, 8192
+  %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
 

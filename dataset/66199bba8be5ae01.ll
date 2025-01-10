@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dchChoice.c.ll
@@ -16,6 +16,8 @@
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; mold/optimized/arch-sparc64.cc.ll
 ; openjdk/optimized/classFileParser.ll
 ; pbrt-v4/optimized/camera.cpp.ll

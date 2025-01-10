@@ -264,7 +264,7 @@ entry:
   ret i1 %4
 }
 
-; 135 occurrences:
+; 134 occurrences:
 ; abc/optimized/saigRetStep.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -306,7 +306,6 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DWARFDebugAranges.cpp.ll
 ; llvm/optimized/ELFAsmParser.cpp.ll
@@ -434,7 +433,7 @@ entry:
   ret i1 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
@@ -447,7 +446,6 @@ entry:
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/MCObjectStreamer.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
-; luau/optimized/isocline.c.ll
 ; openjdk/optimized/addnode.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; sqlite/optimized/sqlite3.ll
@@ -473,6 +471,16 @@ define i1 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 3, i64 %2
   %4 = icmp ne i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; luau/optimized/isocline.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 -1, i64 %2
+  %4 = icmp sle i64 %3, %0
   ret i1 %4
 }
 

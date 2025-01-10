@@ -545,7 +545,7 @@ entry:
   ret i1 %3
 }
 
-; 64 occurrences:
+; 65 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -559,6 +559,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hwloc/optimized/topology-xml.ll
 ; icu/optimized/double-conversion-string-to-double.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/udataswp.ll
 ; icu/optimized/uts46.ll

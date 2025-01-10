@@ -8,5 +8,5 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%esi, %edi
-	leal	-1(%rdi), %eax
+	leal	-2(%rdi), %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 732 occurrences:
+; 731 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -692,7 +692,6 @@
 ; re2/optimized/re2.cc.ll
 ; redis/optimized/linenoise.ll
 ; rocksdb/optimized/testutil.cc.ll
-; ruby/optimized/io.ll
 ; ruby/optimized/string.ll
 ; sentencepiece/optimized/model_interface.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll

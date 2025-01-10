@@ -35,8 +35,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; abc/optimized/dauNonDsd.c.ll
+; 3 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; qemu/optimized/tcg.c.ll
@@ -49,9 +48,8 @@ entry:
   ret i32 %5
 }
 
-; 358 occurrences:
+; 356 occurrences:
 ; cmake/optimized/easy.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; curl/optimized/libcurl_la-easy.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
@@ -407,7 +405,6 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/text_import.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:

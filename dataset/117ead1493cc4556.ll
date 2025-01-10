@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; openjdk/optimized/jquant1.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {

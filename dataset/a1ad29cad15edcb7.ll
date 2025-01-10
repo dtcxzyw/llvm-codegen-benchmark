@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.217.3063212" = type { %"struct.std::__atomic_base.218.3063213" }
-%"struct.std::__atomic_base.218.3063213" = type { ptr }
+%"struct.std::atomic.217.3063178" = type { %"struct.std::__atomic_base.218.3063179" }
+%"struct.std::__atomic_base.218.3063179" = type { ptr }
 
 ; 6 occurrences:
 ; luau/optimized/ConstraintGenerator.cpp.ll
@@ -84,7 +84,7 @@ entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, -1
   %5 = and i64 %1, %4
-  %6 = getelementptr nusw %"struct.std::atomic.217.3063212", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.std::atomic.217.3063178", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/cast.cc.ll
@@ -19,8 +19,6 @@
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
 ; ncnn/optimized/innerproduct_x86.cpp.ll
-; openssl/optimized/libssl-lib-s3_lib.ll
-; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openusd/optimized/decodemv.c.ll
 ; proj/optimized/4D_api.cpp.ll
 ; rocksdb/optimized/log_writer.cc.ll

@@ -11,7 +11,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; casadi/optimized/integrator.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
 ; Function Attrs: nounwind

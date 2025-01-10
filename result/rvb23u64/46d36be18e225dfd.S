@@ -17,20 +17,11 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000030:                   # @func0000000000000030
-	srai	a3, a2, 63
-	srli	a3, a3, 62
-	add	a2, a2, a3
-	srli	a2, a2, 2
-	slli	a2, a2, 7
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
-.LCPI3_0:
+.LCPI2_0:
 	.quad	-3689348814741897216            # 0xcccccccccccd0000
 func0000000000000040:                   # @func0000000000000040
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	srli	a2, a2, 4
 	mul	a2, a2, a3
 	add	a0, a0, a1

@@ -1,9 +1,9 @@
 
-%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::MachineOperand.3184385" = type { i32, %union.anon.274.3184386, ptr, %"union.llvm::MachineOperand::ContentsUnion.3184387" }
-%union.anon.274.3184386 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3184387" = type { %"class.llvm::ArrayRef.275.3184388" }
-%"class.llvm::ArrayRef.275.3184388" = type { ptr, i64 }
+%"class.llvm::Use.3138384" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::MachineOperand.3184351" = type { i32, %union.anon.274.3184352, ptr, %"union.llvm::MachineOperand::ContentsUnion.3184353" }
+%union.anon.274.3184352 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3184353" = type { %"class.llvm::ArrayRef.275.3184354" }
+%"class.llvm::ArrayRef.275.3184354" = type { ptr, i64 }
 
 ; 10 occurrences:
 ; libquic/optimized/v3_utl.c.ll
@@ -143,35 +143,7 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; glog/optimized/signalhandler.cc.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; openjdk/optimized/attachListener_posix.ll
-; z3/optimized/nnf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000764(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = icmp ult ptr %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/cardTableRS.ll
-; Function Attrs: nounwind
-define i1 @func00000000000005c4(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = icmp ult ptr %5, %4
-  ret i1 %6
-}
-
-; 64 occurrences:
+; 65 occurrences:
 ; lightgbm/optimized/network.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
@@ -234,13 +206,26 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
+; openjdk/optimized/attachListener_posix.ll
 ; openjdk/optimized/nmethod.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000544(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -16
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/cardTableRS.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c4(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
@@ -336,6 +321,21 @@ entry:
 }
 
 ; 4 occurrences:
+; glog/optimized/signalhandler.cc.ll
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; z3/optimized/nnf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000764(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 4 occurrences:
 ; eastl/optimized/TestExtra.cpp.ll
 ; llvm/optimized/AliasAnalysis.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -343,9 +343,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000541(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.llvm::Use.3138418", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.llvm::Use.3138384", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -32
-  %5 = getelementptr nusw %"class.llvm::Use.3138418", ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.llvm::Use.3138384", ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -384,9 +384,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000007c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.llvm::MachineOperand.3184351", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
-  %5 = getelementptr nusw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.llvm::MachineOperand.3184351", ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -18,7 +18,6 @@
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
-; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll

@@ -14,16 +14,11 @@ func0000000000000294:                   # @func0000000000000294
 	or	a0, a0, a2
 	ret
 func0000000000000021:                   # @func0000000000000021
-	andi	a0, a0, 3
-	li	a1, -2
-	addi	a2, a0, -2
-	czero.eqz	a1, a1, a2
-	li	a2, 2
-	addi	a0, a0, -1
-	addi	a1, a1, 3
-	czero.nez	a2, a2, a0
+	andi	a0, a0, 7
+	addi	a1, a0, -1
+	snez	a1, a1
+	addi	a1, a1, 1
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
 	ret
 func0000000000000181:                   # @func0000000000000181
 	lui	a1, 15

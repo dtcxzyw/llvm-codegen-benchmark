@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
 ; openjdk/optimized/xMark.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
@@ -23,11 +24,11 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 13
-  %4 = and i64 %3, 8388608
-  %5 = or i64 %0, %4
-  %6 = and i64 %1, 268435456
-  %7 = or i64 %5, %6
+  %3 = lshr i64 %2, 15
+  %4 = and i64 %3, 274877906944
+  %5 = or i64 %1, %4
+  %6 = and i64 %0, 103079215104
+  %7 = or i64 %6, %5
   ret i64 %7
 }
 

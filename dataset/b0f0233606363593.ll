@@ -275,7 +275,7 @@ entry:
   ret i32 %6
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
@@ -291,7 +291,6 @@ entry:
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll

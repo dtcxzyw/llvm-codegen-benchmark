@@ -1,5 +1,5 @@
 
-%struct.deflate_optimum_node.2747994 = type { i32, i32 }
+%struct.deflate_optimum_node.2747960 = type { i32, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/date_strptime.ll
@@ -22,7 +22,7 @@ entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %struct.deflate_optimum_node.2747994, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct.deflate_optimum_node.2747960, ptr %4, i64 %5
   ret ptr %6
 }
 

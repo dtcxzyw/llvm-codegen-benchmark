@@ -81,6 +81,21 @@ entry:
   ret i64 %4
 }
 
+; 5 occurrences:
+; cpython/optimized/hamt.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; luau/optimized/IrRegAllocA64.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; postgres/optimized/tsvector.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007f(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 4
+  %2 = add i32 %1, 64
+  %3 = zext i32 %2 to i64
+  ret i64 %3
+}
+
 ; 4 occurrences:
 ; llvm/optimized/Archive.cpp.ll
 ; luau/optimized/EmitBuiltinsX64.cpp.ll
@@ -106,21 +121,6 @@ entry:
   %2 = add nsw i32 %1, 576
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
-  ret i64 %4
-}
-
-; 4 occurrences:
-; cpython/optimized/hamt.ll
-; luau/optimized/IrRegAllocA64.cpp.ll
-; opencv/optimized/geometry.cpp.ll
-; postgres/optimized/tsvector.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007f(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 %0, 3
-  %2 = add nuw nsw i32 %1, 80
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 32
   ret i64 %4
 }
 

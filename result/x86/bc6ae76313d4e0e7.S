@@ -118,6 +118,14 @@ func0000000000000024:                   # @func0000000000000024
 	cmpl	$65, %eax
 	setb	%al
 	retq
+func000000000000002c:                   # @func000000000000002c
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovel	%edx, %eax
+	addl	%edi, %eax
+	cmpl	$1, %eax
+	setne	%al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
 	testb	$1, %sil

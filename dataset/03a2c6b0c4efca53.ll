@@ -1,8 +1,6 @@
 
-; 2865 occurrences:
+; 2862 occurrences:
 ; abc/optimized/FxchMan.c.ll
-; abc/optimized/SimpSolver.cpp.ll
-; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -2117,7 +2115,6 @@
 ; opencv/optimized/scatter_layer.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; opencv/optimized/tracking_online_mil.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -2192,6 +2189,7 @@
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/superword.ll
 ; openjdk/optimized/synchronizer.ll
+; openjdk/optimized/type.ll
 ; openjdk/optimized/verifier.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openjdk/optimized/xLiveMap.ll
@@ -2755,7 +2753,6 @@
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; yosys/optimized/BigUnsigned.ll
-; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/fsm_expand.ll
 ; yosys/optimized/fsm_extract.ll

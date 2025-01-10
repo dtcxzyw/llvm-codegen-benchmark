@@ -1,5 +1,5 @@
 
-; 1224 occurrences:
+; 1225 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -901,6 +901,7 @@
 ; openusd/optimized/aggregateTreeBuilder.cpp.ll
 ; openusd/optimized/assetLocalization.cpp.ll
 ; openusd/optimized/changes.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/copyUtils.cpp.ll
 ; openusd/optimized/dataBuffer.cpp.ll
 ; openusd/optimized/env.cpp.ll

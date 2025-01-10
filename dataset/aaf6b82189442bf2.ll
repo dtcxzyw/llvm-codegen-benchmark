@@ -130,15 +130,5 @@ entry:
   ret i32 %2
 }
 
-; 1 occurrences:
-; llvm/optimized/X86FloatingPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %neg = sub i32 0, %0
-  %1 = and i32 %0, %neg
-  ret i32 %1
-}
-
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

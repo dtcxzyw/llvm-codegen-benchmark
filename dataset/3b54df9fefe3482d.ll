@@ -1,6 +1,6 @@
 
-%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
-%class.QPointF.3820929 = type { double, double }
+%class.btRotationalLimitMotor2.2818830 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%class.QPointF.3820879 = type { double, double }
 
 ; 15 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -24,7 +24,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %5, i32 21
+  %6 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818830], ptr %0, i64 0, i64 %5, i32 21
   ret ptr %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = add i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 2, i64 %4
-  %6 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %5, i32 21
+  %6 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818830], ptr %0, i64 0, i64 %5, i32 21
   ret ptr %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nuw [3 x %class.QPointF.3820929], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr nuw [3 x %class.QPointF.3820879], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 

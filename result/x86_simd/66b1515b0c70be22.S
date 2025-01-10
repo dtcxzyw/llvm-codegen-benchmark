@@ -49,12 +49,3 @@ func0000000000000041:                   # @func0000000000000041
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000318:                   # @func0000000000000318
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k0
-	vptestmd	%ymm2, %ymm2, %k1
-	korb	%k0, %k1, %k1
-	vptestmw	%xmm1, %xmm1, %k0 {%k1}
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq

@@ -1,6 +1,6 @@
 
-%"struct.OpenSubdiv::v3_6_0::Osd::PatchArray.3389320" = type { %"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389321", %"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389321", i32, i32, i32, i32 }
-%"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389321" = type { i32 }
+%"struct.OpenSubdiv::v3_6_0::Osd::PatchArray.3389286" = type { %"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389287", %"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389287", i32, i32, i32, i32 }
+%"class.OpenSubdiv::v3_6_0::Far::PatchDescriptor.3389287" = type { i32 }
 
 ; 22 occurrences:
 ; abc/optimized/bmcMaj.c.ll
@@ -43,7 +43,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.OpenSubdiv::v3_6_0::Osd::PatchArray.3389320", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.OpenSubdiv::v3_6_0::Osd::PatchArray.3389286", ptr %0, i64 %3
   %5 = xor i64 %1, 4
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6

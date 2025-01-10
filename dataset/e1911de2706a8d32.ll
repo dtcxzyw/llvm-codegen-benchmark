@@ -39,6 +39,7 @@
 ; cmake/optimized/ia64.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/obmalloc.ll
+; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmlparse.ll
 ; cvc5/optimized/proof_circuit_propagator.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -462,7 +463,6 @@
 ; php/optimized/array.ll
 ; php/optimized/hash_tiger.ll
 ; php/optimized/phpdbg_btree.ll
-; php/optimized/zend_alloc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll

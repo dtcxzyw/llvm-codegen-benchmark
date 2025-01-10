@@ -1,6 +1,6 @@
 
-%class.XMarkStripe.2733578 = type { %class.XStackList.0.2733579, [56 x i8], %class.XStackList.0.2733579, [56 x i8] }
-%class.XStackList.0.2733579 = type { ptr }
+%class.XMarkStripe.2733544 = type { %class.XStackList.0.2733545, [56 x i8], %class.XStackList.0.2733545, [56 x i8] }
+%class.XStackList.0.2733545 = type { ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/xMark.ll
@@ -9,7 +9,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr nusw nuw [16 x %class.XMarkStripe.2733578], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [16 x %class.XMarkStripe.2733544], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

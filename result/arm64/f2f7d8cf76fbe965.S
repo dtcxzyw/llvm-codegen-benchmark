@@ -51,15 +51,6 @@ func0000000000000000:                   // @func0000000000000000
 	add	x0, x0, x8, lsl #4
 	ret
                                         // -- End function
-func000000000000000c:                   // @func000000000000000c
-// %bb.0:                               // %entry
-	add	x8, x1, #3
-	cmp	x1, #0
-	csel	x8, x8, x1, lt
-	lsr	x8, x8, #2
-	add	x0, x0, x8, lsl #7
-	ret
-                                        // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	add	x8, x1, #3

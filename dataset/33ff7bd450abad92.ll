@@ -1,6 +1,9 @@
 
-; 1 occurrences:
+%struct.recurse_cache.2791197 = type { ptr, i32 }
+
+; 2 occurrences:
 ; icu/optimized/ucnvscsu.ll
+; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000009a(ptr %0, i32 %1) #0 {
 entry:
@@ -8,7 +11,7 @@ entry:
   %3 = icmp slt i32 %1, 1
   %4 = select i1 %3, i32 7, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [8 x %struct.recurse_cache.2791197], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

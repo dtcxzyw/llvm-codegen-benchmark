@@ -1,13 +1,13 @@
 
-%struct.vfio_region_sparse_mmap_area.2707559 = type { i64, i64 }
-%struct.CalloutData.2710338 = type { i32, [5 x %struct.anon.2710339] }
-%struct.anon.2710339 = type { i32, %union.OnigValue.2710340 }
-%union.OnigValue.2710340 = type { %struct.anon.0.2710341 }
-%struct.anon.0.2710341 = type { ptr, ptr }
-%"class.btAxisSweep3Internal<unsigned int>::Handle.2819244" = type { %struct.btBroadphaseProxy.base.2819242, [3 x i32], [3 x i32], ptr }
-%struct.btBroadphaseProxy.base.2819242 = type <{ ptr, i32, i32, i32, %class.btVector3.2819243, %class.btVector3.2819243 }>
-%class.btVector3.2819243 = type { [4 x float] }
-%struct.Au_Obj_t_.2878087 = type { i64, [2 x i32] }
+%struct.vfio_region_sparse_mmap_area.2707525 = type { i64, i64 }
+%struct.CalloutData.2710304 = type { i32, [5 x %struct.anon.2710305] }
+%struct.anon.2710305 = type { i32, %union.OnigValue.2710306 }
+%union.OnigValue.2710306 = type { %struct.anon.0.2710307 }
+%struct.anon.0.2710307 = type { ptr, ptr }
+%"class.btAxisSweep3Internal<unsigned int>::Handle.2819210" = type { %struct.btBroadphaseProxy.base.2819208, [3 x i32], [3 x i32], ptr }
+%struct.btBroadphaseProxy.base.2819208 = type <{ ptr, i32, i32, i32, %class.btVector3.2819209, %class.btVector3.2819209 }>
+%class.btVector3.2819209 = type { [4 x float] }
+%struct.Au_Obj_t_.2878053 = type { i64, [2 x i32] }
 
 ; 7 occurrences:
 ; linux/optimized/datagram.ll
@@ -24,7 +24,7 @@ entry:
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   %6 = sext i32 %0 to i64
-  %7 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.2707559], ptr %5, i64 0, i64 %6
+  %7 = getelementptr [0 x %struct.vfio_region_sparse_mmap_area.2707525], ptr %5, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -35,10 +35,10 @@ entry:
 define ptr @func0000000000000042(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.CalloutData.2710338, ptr %1, i64 %3
+  %4 = getelementptr %struct.CalloutData.2710304, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -120
   %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw [5 x %struct.anon.2710339], ptr %5, i64 0, i64 %6
+  %7 = getelementptr nusw [5 x %struct.anon.2710305], ptr %5, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -56,7 +56,7 @@ define ptr @func000000000000003e(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sext i32 %0 to i64
-  %5 = getelementptr %"class.btAxisSweep3Internal<unsigned int>::Handle.2819244", ptr %1, i64 %3, i32 1, i64 %4
+  %5 = getelementptr %"class.btAxisSweep3Internal<unsigned int>::Handle.2819210", ptr %1, i64 %3, i32 1, i64 %4
   ret ptr %5
 }
 
@@ -68,7 +68,7 @@ define ptr @func000000000000007e(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sext i32 %0 to i64
-  %5 = getelementptr %struct.Au_Obj_t_.2878087, ptr %1, i64 %3, i32 1, i64 %4
+  %5 = getelementptr %struct.Au_Obj_t_.2878053, ptr %1, i64 %3, i32 1, i64 %4
   ret ptr %5
 }
 

@@ -612,7 +612,7 @@ entry:
   ret i32 %3
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -628,6 +628,7 @@ entry:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bdcDec.c.ll
+; abc/optimized/cnfMap.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll

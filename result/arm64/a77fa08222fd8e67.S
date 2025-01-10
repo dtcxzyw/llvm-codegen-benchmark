@@ -66,12 +66,6 @@ func0000000000000003:                   // @func0000000000000003
 	add	x0, x8, #24
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
-// %bb.0:                               // %entry
-	sub	x8, x0, x1
-	add	x0, x8, #3100
-	ret
-                                        // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
@@ -107,7 +101,7 @@ func0000000000000008:                   // @func0000000000000008
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
-	add	x0, x8, #32
+	add	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030

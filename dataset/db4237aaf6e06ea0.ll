@@ -24,8 +24,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 1 occurrences:
+; 2 occurrences:
 ; ninja/optimized/build.cc.ll
+; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:

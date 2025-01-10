@@ -1,4 +1,24 @@
 
+; 10 occurrences:
+; clap-rs/optimized/5651dp9k16h53y8x.ll
+; gromacs/optimized/dataframe.cpp.ll
+; libwebp/optimized/frame_dec.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
+; ozz-animation/optimized/animation.cc.ll
+; wasmtime-rs/optimized/3flv1664rwe55t82.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = icmp eq i64 %0, 0
+  %5 = select i1 %4, ptr undef, ptr %3
+  ret ptr %5
+}
+
 ; 2 occurrences:
 ; postgres/optimized/spi.ll
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
@@ -30,25 +50,6 @@ entry:
 define ptr @func0000000000000061(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = icmp eq i64 %0, 0
-  %5 = select i1 %4, ptr null, ptr %3
-  ret ptr %5
-}
-
-; 9 occurrences:
-; clap-rs/optimized/5651dp9k16h53y8x.ll
-; gromacs/optimized/dataframe.cpp.ll
-; libwebp/optimized/frame_dec.c.ll
-; libwebp/optimized/webp_enc.c.ll
-; ozz-animation/optimized/animation.cc.ll
-; wasmtime-rs/optimized/3flv1664rwe55t82.ll
-; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
-; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
-; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = icmp eq i64 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

@@ -10,7 +10,7 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; cvc5/optimized/Solver.cc.ll
@@ -23,6 +23,7 @@ entry:
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/perf_msd.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
+; recastnavigation/optimized/ConvexVolumeTool.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind

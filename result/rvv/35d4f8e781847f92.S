@@ -167,15 +167,6 @@ func0000000000000298:                   # @func0000000000000298
 	vmsne.vi	v11, v8, 0
 	vmor.mm	v0, v11, v10
 	ret
-func0000000000000048:                   # @func0000000000000048
-	lui	a0, 1
-	addiw	a0, a0, -1880
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vv	v8, v8, v9
-	vmor.mm	v0, v8, v12
-	ret
 func0000000000000282:                   # @func0000000000000282
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmslt.vv	v10, v11, v10

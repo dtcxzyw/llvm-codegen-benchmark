@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; git/optimized/ewah_bitmap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = or i64 %1, -8589934592
+  %3 = add nuw i64 %0, 8589934592
+  %4 = and i64 %3, %2
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -6,7 +17,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, -8589934592
-  %3 = add i64 %0, 8589934592
+  %3 = add i64 %0, -8589934592
   %4 = and i64 %3, %2
   ret i64 %4
 }

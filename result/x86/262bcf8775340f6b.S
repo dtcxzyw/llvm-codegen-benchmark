@@ -11,7 +11,7 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdx, %rcx
 	movq	%rcx, %rdx
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000001e:                   # @func000000000000001e
 	movq	%rdx, %rcx
 	orq	%rsi, %rcx
 	movabsq	$1844674407370955161, %rsi      # imm = 0x1999999999999999

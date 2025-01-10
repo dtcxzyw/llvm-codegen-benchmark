@@ -28,8 +28,3 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 4
 	add	a0, a0, a2
 	ret
-func0000000000000017:                   # @func0000000000000017
-	andi	a1, a1, 255
-	sub	a0, a0, a1
-	addi	a0, a0, 23
-	ret

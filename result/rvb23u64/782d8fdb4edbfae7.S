@@ -18,15 +18,15 @@ func0000000000000002:                   # @func0000000000000002
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
+func000000000000001b:                   # @func000000000000001b
+	addi	a1, a1, 1
+	maxu	a0, a1, a0
+	slli	a0, a0, 4
+	ret
 func0000000000000012:                   # @func0000000000000012
 	addi	a1, a1, 1
 	maxu	a0, a0, a1
 	slli	a0, a0, 6
-	ret
-func000000000000001b:                   # @func000000000000001b
-	addi	a1, a1, 1
-	maxu	a0, a0, a1
-	slli	a0, a0, 3
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, 1

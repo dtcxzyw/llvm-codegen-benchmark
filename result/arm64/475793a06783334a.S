@@ -62,14 +62,6 @@ func000000000000022a:                   // @func000000000000022a
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000167:                   // @func0000000000000167
-// %bb.0:                               // %entry
-	lsr	x8, x2, #32
-	add	w9, w0, w1
-	cmp	w9, w8
-	cset	w0, le
-	ret
-                                        // -- End function
 func0000000000000161:                   // @func0000000000000161
 // %bb.0:                               // %entry
 	lsr	x8, x2, #32

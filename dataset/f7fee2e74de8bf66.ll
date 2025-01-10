@@ -284,12 +284,13 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/build_policy.ll
+; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll

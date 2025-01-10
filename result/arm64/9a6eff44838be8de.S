@@ -33,13 +33,6 @@ func000000000000001d:                   // @func000000000000001d
 	orr	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	and	w8, w2, #0x80
-	orr	x8, x1, x8, lsl #56
-	orr	x0, x8, x0
-	ret
-                                        // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	and	w8, w2, #0xffff0000

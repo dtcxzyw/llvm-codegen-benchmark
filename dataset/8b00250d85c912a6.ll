@@ -34,9 +34,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/StringUtils.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/smmdriftcalculator.ll

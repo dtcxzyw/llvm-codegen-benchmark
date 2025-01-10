@@ -23,11 +23,3 @@ func0000000000000084:                   # @func0000000000000084
 	addiw	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
-	li	a0, 64
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsltu.vx	v0, v12, a0
-	vsetvli	zero, zero, e64, m2, ta, mu
-	vand.vv	v8, v8, v10, v0.t
-	vmsne.vi	v0, v8, 0
-	ret

@@ -1,5 +1,5 @@
 
-%struct.bts_phys.3539772 = type { ptr, i64, i64, i64 }
+%struct.bts_phys.3539738 = type { ptr, i64, i64, i64 }
 
 ; 2 occurrences:
 ; clamav/optimized/unpack.cpp.ll
@@ -22,7 +22,7 @@ entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext i32 %4 to i64
-  %6 = getelementptr [0 x %struct.bts_phys.3539772], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [0 x %struct.bts_phys.3539738], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

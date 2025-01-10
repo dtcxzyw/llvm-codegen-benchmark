@@ -21,17 +21,6 @@ func0000000000002ce1:                   # @func0000000000002ce1
 	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000001481:                   # @func0000000000001481
-	sext.w	a0, a0
-	sext.w	a1, a1
-	sext.w	a2, a2
-	sltu	a3, a2, a1
-	sltu	a1, a1, a2
-	xori	a2, a3, 1
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	ret
 func00000000000028c1:                   # @func00000000000028c1
 	sext.w	a0, a0
 	sext.w	a1, a1

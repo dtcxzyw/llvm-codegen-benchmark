@@ -78,6 +78,17 @@ entry:
   ret ptr %4
 }
 
+; 1 occurrences:
+; postgres/optimized/dynahash.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 3
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
 ; 2 occurrences:
 ; postgres/optimized/brin.ll
 ; postgres/optimized/extended_stats.ll

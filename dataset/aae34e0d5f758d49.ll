@@ -101,10 +101,9 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0, i1 %1) #0 {

@@ -1,5 +1,5 @@
 
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
 
 ; 1 occurrences:
 ; c3c/optimized/diagnostics.c.ll
@@ -24,7 +24,7 @@ entry:
   %4 = ashr exact i64 %3, 28
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 16
-  %7 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %6, i64 %0
+  %7 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %6, i64 %0
   ret ptr %7
 }
 

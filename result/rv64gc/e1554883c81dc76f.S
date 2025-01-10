@@ -85,6 +85,12 @@ func0000000000000088:                   # @func0000000000000088
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
+func00000000000001c8:                   # @func00000000000001c8
+	li	a3, 40
+	mul	a2, a2, a3
+	add	a0, a0, a1
+	sltu	a0, a2, a0
+	ret
 func00000000000001a1:                   # @func00000000000001a1
 	slli	a3, a2, 1
 	add	a2, a2, a3

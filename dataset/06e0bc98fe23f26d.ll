@@ -1,6 +1,6 @@
 
-%struct.PhysPageEntry.2709868 = type { i32 }
-%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
+%struct.PhysPageEntry.2709834 = type { i32 }
+%"class.clang::NestedNameSpecifierLoc.3182668" = type { ptr, ptr }
 
 ; 32 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -187,9 +187,9 @@ define ptr @func0000000000000030(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [512 x %struct.PhysPageEntry.2709868], ptr %0, i64 %4
+  %5 = getelementptr [512 x %struct.PhysPageEntry.2709834], ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr %struct.PhysPageEntry.2709868, ptr %5, i64 %6
+  %7 = getelementptr %struct.PhysPageEntry.2709834, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -216,7 +216,7 @@ define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 18
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182668", ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7

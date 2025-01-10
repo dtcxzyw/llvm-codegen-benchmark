@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/sha1.c.ll
 ; git/optimized/sha1.ll
-; git/optimized/sha256.ll
 ; lief/optimized/sha512.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {

@@ -399,9 +399,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:

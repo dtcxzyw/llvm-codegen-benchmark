@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%class.symbol.3613505 = type { ptr }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%class.symbol.3613471 = type { ptr }
 
 ; 10 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
@@ -36,8 +36,8 @@ entry:
 define ptr @func00000000000000ef(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
   %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
@@ -254,7 +254,7 @@ define ptr @func000000000000007c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %class.symbol.3613471, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr ptr, ptr %5, i64 %6
   ret ptr %7

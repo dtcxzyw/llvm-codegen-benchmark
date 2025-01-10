@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/cecClass.c.ll
 ; git/optimized/archive-zip.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/shenandoahBarrierSetAssembler_x86.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
@@ -49,13 +48,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 4 occurrences:
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/Distro.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:

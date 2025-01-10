@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
 
 ; 15 occurrences:
 ; cpython/optimized/frame.ll
@@ -83,7 +83,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %2, i64 0, i64 %0
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -150,7 +150,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %2, i64 0, i64 %0
+  %3 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %2, i64 0, i64 %0
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

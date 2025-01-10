@@ -1,8 +1,8 @@
 
-%"struct.llvm::SwitchCG::CaseCluster.3151944" = type <{ i32, [4 x i8], ptr, ptr, %union.anon.1312.3151945, %"class.llvm::BranchProbability.3151919", [4 x i8] }>
-%union.anon.1312.3151945 = type { ptr }
-%"class.llvm::BranchProbability.3151919" = type { i32 }
-%struct.codel_vars.3548782 = type { i32, i32, i8, i16, i32, i32, i32 }
+%"struct.llvm::SwitchCG::CaseCluster.3151910" = type <{ i32, [4 x i8], ptr, ptr, %union.anon.1312.3151911, %"class.llvm::BranchProbability.3151885", [4 x i8] }>
+%union.anon.1312.3151911 = type { ptr }
+%"class.llvm::BranchProbability.3151885" = type { i32 }
+%struct.codel_vars.3548748 = type { i32, i32, i8, i16, i32, i32, i32 }
 
 ; 28 occurrences:
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -59,7 +59,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = sdiv exact i64 %5, -40
-  %7 = getelementptr nusw %"struct.llvm::SwitchCG::CaseCluster.3151944", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.llvm::SwitchCG::CaseCluster.3151910", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -72,7 +72,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = sdiv exact i64 %5, 56
-  %7 = getelementptr %struct.codel_vars.3548782, ptr %0, i64 %6
+  %7 = getelementptr %struct.codel_vars.3548748, ptr %0, i64 %6
   ret ptr %7
 }
 

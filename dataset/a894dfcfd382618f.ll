@@ -233,7 +233,7 @@ entry:
   ret i1 %6
 }
 
-; 139 occurrences:
+; 140 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -299,6 +299,7 @@ entry:
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -447,7 +448,7 @@ entry:
   ret i1 %6
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/io.c.ll
 ; abc/optimized/pdrInv.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -463,7 +464,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll

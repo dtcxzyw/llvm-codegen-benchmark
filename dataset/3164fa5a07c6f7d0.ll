@@ -1,9 +1,9 @@
 
-%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394" = type { %"class.folly::SaturatingSemaphore.2683338", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683339" }
-%"class.folly::SaturatingSemaphore.2683338" = type { %"struct.std::atomic.20.2683271" }
-%"struct.std::atomic.20.2683271" = type { %"struct.std::__atomic_base.21.2683272" }
-%"struct.std::__atomic_base.21.2683272" = type { i32 }
-%"union.std::aligned_storage<64, 16>::type.2683339" = type { [64 x i8] }
+%"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683361" = type { %"class.folly::SaturatingSemaphore.2683305", [12 x i8], %"union.std::aligned_storage<64, 16>::type.2683306" }
+%"class.folly::SaturatingSemaphore.2683305" = type { %"struct.std::atomic.20.2683238" }
+%"struct.std::atomic.20.2683238" = type { %"struct.std::__atomic_base.21.2683239" }
+%"struct.std::__atomic_base.21.2683239" = type { i32 }
+%"union.std::aligned_storage<64, 16>::type.2683306" = type { [64 x i8] }
 
 ; 65 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -216,7 +216,7 @@ define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 128
-  %4 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683394"], ptr %3, i64 0, i64 %0
+  %4 = getelementptr nusw nuw [256 x %"class.folly::UnboundedQueue<folly::Function<std::shared_ptr<folly::observer_detail::Core> ()>, false, true, true>::Entry.2683361"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 

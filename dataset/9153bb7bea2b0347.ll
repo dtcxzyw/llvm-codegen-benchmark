@@ -22,10 +22,11 @@ entry:
   ret i1 %5
 }
 
-; 126 occurrences:
+; 129 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
+; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cutCut.c.ll
 ; abc/optimized/dauEnum.c.ll
 ; abc/optimized/sclLibUtil.c.ll
@@ -107,6 +108,8 @@ entry:
 ; openmpi/optimized/pmix_bitmap.ll
 ; openspiel/optimized/pig.cc.ll
 ; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; openusd/optimized/read.c.ll
@@ -465,7 +468,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; assimp/optimized/zip.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -484,7 +487,6 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; php/optimized/KeccakSponge.ll
-; pocketpy/optimized/collections.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll

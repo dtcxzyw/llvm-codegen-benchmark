@@ -1,5 +1,5 @@
 
-; 15679 occurrences:
+; 15676 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1129,7 +1129,6 @@
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/egg.c.ll
 ; clamav/optimized/elf.c.ll
-; clamav/optimized/entconv.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/extinfo.cpp.ll
 ; clamav/optimized/extract.cpp.ll
@@ -2248,7 +2247,6 @@
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
-; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
@@ -3613,7 +3611,6 @@
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
@@ -15687,7 +15684,7 @@ entry:
   ret i1 %2
 }
 
-; 4429 occurrences:
+; 4431 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDar.c.ll
@@ -16153,6 +16150,7 @@ entry:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
 ; cmake/optimized/core.c.ll
@@ -16247,7 +16245,6 @@ entry:
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -16262,7 +16259,6 @@ entry:
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
-; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
@@ -16730,6 +16726,7 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/formatted_string_builder.ll
+; icu/optimized/gregocal.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/locdistance.ll
 ; icu/optimized/normalizer2impl.ll
@@ -19465,6 +19462,7 @@ entry:
 ; quantlib/optimized/sweden.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/libbf.ll
+; quickjs/optimized/libregexp.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
@@ -19871,6 +19869,7 @@ entry:
 ; wireshark/optimized/packet-pldm.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
 ; wireshark/optimized/packet-ppi.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-raknet.c.ll
 ; wireshark/optimized/packet-rdpudp.c.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -20125,7 +20124,7 @@ entry:
   ret i1 %2
 }
 
-; 1393 occurrences:
+; 1391 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -21303,8 +21302,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
-; openssl/optimized/libssl-lib-quic_channel.ll
-; openssl/optimized/libssl-shlib-quic_channel.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
@@ -21527,7 +21524,7 @@ entry:
   ret i1 %2
 }
 
-; 713 occurrences:
+; 712 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cutPre22.c.ll
@@ -21737,7 +21734,6 @@ entry:
 ; lief/optimized/TrieNode.cpp.ll
 ; lief/optimized/Type.cpp.ll
 ; lief/optimized/VectorStream.cpp.ll
-; lief/optimized/ecp.c.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_aead.c.ll

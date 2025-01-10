@@ -14,7 +14,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; hyperscan/optimized/castlecompile.cpp.ll
 ; linux/optimized/keyring.ll
 ; llvm/optimized/Expr.cpp.ll
 ; minetest/optimized/servermap.cpp.ll

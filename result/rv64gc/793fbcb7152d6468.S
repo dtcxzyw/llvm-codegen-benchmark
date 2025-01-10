@@ -1,9 +1,3 @@
-func0000000000000088:                   # @func0000000000000088
-	slli	a2, a2, 1
-	add	a1, a1, a2
-	addi	a1, a1, 2
-	sltu	a0, a1, a0
-	ret
 func0000000000000181:                   # @func0000000000000181
 	slli	a2, a2, 2
 	add	a1, a1, a2

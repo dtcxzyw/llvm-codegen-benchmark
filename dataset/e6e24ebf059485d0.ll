@@ -47,6 +47,18 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/Scalarizer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp eq i64 %0, %3
+  %5 = icmp ne ptr %1, null
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000194(i64 %0, ptr %1, i32 %2) #0 {

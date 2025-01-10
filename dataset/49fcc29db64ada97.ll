@@ -527,7 +527,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; casadi/optimized/sundials_dense.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_read.c.ll
@@ -538,7 +538,6 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; ruby/optimized/ripper.ll
 ; sundials/optimized/sundials_dense.c.ll
-; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:

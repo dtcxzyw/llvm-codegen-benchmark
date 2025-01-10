@@ -48,7 +48,7 @@ entry:
   ret i64 %6
 }
 
-; 1155 occurrences:
+; 1157 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -210,6 +210,7 @@ entry:
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
+; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/solve_VPSC.cpp.ll
 ; gromacs/optimized/distribute.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
@@ -940,6 +941,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/javaThread.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/psParallelCompact.ll
@@ -1214,7 +1216,7 @@ entry:
   ret i64 %6
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; assimp/optimized/Subdivision.cpp.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
@@ -1242,7 +1244,6 @@ entry:
 ; opencv/optimized/trainFacemark.cpp.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/javaThread.ll
 ; openspiel/optimized/external_sampling_mccfr.cc.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; openspiel/optimized/outcome_sampling_mccfr.cc.ll

@@ -1510,7 +1510,7 @@ entry:
   ret i32 %4
 }
 
-; 796 occurrences:
+; 795 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -1838,7 +1838,6 @@ entry:
 ; linux/optimized/xfrm_input.ll
 ; llama.cpp/optimized/console.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll

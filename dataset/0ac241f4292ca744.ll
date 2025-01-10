@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/1iagj3aecrejld8d.ll
 ; opencv/optimized/orb.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/59ibd2hl72nblwc1.ll
 ; Function Attrs: nounwind

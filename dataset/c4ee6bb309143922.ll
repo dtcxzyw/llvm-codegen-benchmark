@@ -1,14 +1,14 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%"struct.duckdb::TupleSniffing.2960203" = type { i64, i64, i8, %"class.duckdb::vector.16.2960204" }
-%"class.duckdb::vector.16.2960204" = type { %"class.std::vector.17.2960205" }
-%"class.std::vector.17.2960205" = type { %"struct.std::_Vector_base.18.2960206" }
-%"struct.std::_Vector_base.18.2960206" = type { %"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl.2960207" }
-%"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl.2960207" = type { %"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl_data.2960208" }
-%"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl_data.2960208" = type { ptr, ptr, ptr }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%"struct.duckdb::TupleSniffing.2960169" = type { i64, i64, i8, %"class.duckdb::vector.16.2960170" }
+%"class.duckdb::vector.16.2960170" = type { %"class.std::vector.17.2960171" }
+%"class.std::vector.17.2960171" = type { %"struct.std::_Vector_base.18.2960172" }
+%"struct.std::_Vector_base.18.2960172" = type { %"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl.2960173" }
+%"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl.2960173" = type { %"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl_data.2960174" }
+%"struct.std::_Vector_base<duckdb::Value, std::allocator<duckdb::Value>>::_Vector_impl_data.2960174" = type { ptr, ptr, ptr }
 
 ; 17 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -32,8 +32,8 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr %union.yyalloc.2600711, ptr %1, i64 %3
-  %5 = getelementptr %union.yyalloc.2600711, ptr %4, i64 %0
+  %4 = getelementptr %union.yyalloc.2600678, ptr %1, i64 %3
+  %5 = getelementptr %union.yyalloc.2600678, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -564,8 +564,8 @@ entry:
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 16
-  %4 = getelementptr nusw %union.yyalloc.2601680, ptr %1, i64 %3
-  %5 = getelementptr nusw %union.yyalloc.2601680, ptr %4, i64 %0
+  %4 = getelementptr nusw %union.yyalloc.2601647, ptr %1, i64 %3
+  %5 = getelementptr nusw %union.yyalloc.2601647, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -715,8 +715,8 @@ entry:
 define ptr @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, -48
-  %4 = getelementptr %"struct.duckdb::TupleSniffing.2960203", ptr %1, i64 %3
-  %5 = getelementptr %"struct.duckdb::TupleSniffing.2960203", ptr %4, i64 %0
+  %4 = getelementptr %"struct.duckdb::TupleSniffing.2960169", ptr %1, i64 %3
+  %5 = getelementptr %"struct.duckdb::TupleSniffing.2960169", ptr %4, i64 %0
   ret ptr %5
 }
 

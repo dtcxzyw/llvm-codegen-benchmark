@@ -53,7 +53,7 @@ entry:
   ret i32 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; faiss/optimized/IndexLattice.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
@@ -81,6 +81,7 @@ entry:
 ; pbrt-v4/optimized/stats.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
@@ -392,10 +393,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; openspiel/optimized/clobber.cc.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000037(i32 %0, i32 %1, i64 %2) #0 {

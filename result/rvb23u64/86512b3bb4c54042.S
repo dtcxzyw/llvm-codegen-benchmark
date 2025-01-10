@@ -65,3 +65,8 @@ func000000000000000b:                   # @func000000000000000b
 	andi	a0, a0, -4
 	bclri	a0, a0, 63
 	ret
+func0000000000000008:                   # @func0000000000000008
+	add	a0, a0, a1
+	addi	a0, a0, 63
+	andi	a0, a0, -64
+	ret

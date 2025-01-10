@@ -1,13 +1,12 @@
 
-%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
-%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
+%"class.base::ManualConstructor.3060079" = type { %"class.base::AlignedMemory.3060080" }
+%"class.base::AlignedMemory.3060080" = type { [16 x i8] }
 
-; 5 occurrences:
+; 4 occurrences:
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/sjis.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/sjis.ll
-; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -19,9 +18,10 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; git/optimized/apply.ll
 ; icu/optimized/package.ll
+; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -47,7 +47,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 28
   %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060113"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060079"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -76,20 +76,6 @@ entry:
   %5 = shl i64 %4, 30
   %6 = ashr i64 %5, 32
   %7 = getelementptr [14 x i32], ptr %0, i64 0, i64 %6
-  ret ptr %7
-}
-
-; 2 occurrences:
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = shl i64 %4, 30
-  %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

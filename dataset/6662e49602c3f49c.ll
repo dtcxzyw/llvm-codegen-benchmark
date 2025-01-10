@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector3d.70.2693019" = type { i16, i16, i16 }
+%"class.irr::core::vector3d.70.2692985" = type { i16, i16, i16 }
 
 ; 7 occurrences:
 ; meshlab/optimized/filter_ao.cpp.ll
@@ -15,7 +15,7 @@ entry:
   %3 = sdiv exact i64 %2, 6
   %4 = add nsw i64 %3, 2
   %5 = udiv i64 %1, %4
-  %6 = getelementptr nusw %"class.irr::core::vector3d.70.2693019", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.irr::core::vector3d.70.2692985", ptr %0, i64 %5
   ret ptr %6
 }
 

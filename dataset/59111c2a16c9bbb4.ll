@@ -1,6 +1,6 @@
 
-%class.QString.3437070 = type { %struct.QArrayDataPointer.3437071 }
-%struct.QArrayDataPointer.3437071 = type { ptr, ptr, i64 }
+%class.QString.3437036 = type { %struct.QArrayDataPointer.3437037 }
+%struct.QArrayDataPointer.3437037 = type { ptr, ptr, i64 }
 
 ; 22 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -157,8 +157,8 @@ declare i64 @llvm.smin.i64(i64, i64) #1
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %2, i64 0)
-  %4 = getelementptr %class.QString.3437070, ptr %0, i64 %1
-  %5 = getelementptr %class.QString.3437070, ptr %4, i64 %3
+  %4 = getelementptr %class.QString.3437036, ptr %0, i64 %1
+  %5 = getelementptr %class.QString.3437036, ptr %4, i64 %3
   ret ptr %5
 }
 

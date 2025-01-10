@@ -1,4 +1,6 @@
 
+%"class.ZXing::Trit.3649621" = type { i8 }
+
 ; 3 occurrences:
 ; ropey-rs/optimized/21bl6c983bdkzf7g.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
@@ -10,6 +12,18 @@ entry:
   %3 = getelementptr ptr, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -8
   %5 = icmp eq ptr %2, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 7
+  %3 = getelementptr %"class.ZXing::Trit.3649621", ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -7
+  %5 = icmp ult ptr %2, %4
   ret i1 %5
 }
 

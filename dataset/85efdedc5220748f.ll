@@ -1,6 +1,6 @@
 
-%class.aiVector3t.2824802 = type { double, double, double }
-%class.aiVector3t.2828902 = type { double, double, double }
+%class.aiVector3t.2824768 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
 
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahFullGC.ll
@@ -39,7 +39,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr nusw nuw %class.aiVector3t.2824802, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.aiVector3t.2824768, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %5
+  %6 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %5
   ret ptr %6
 }
 

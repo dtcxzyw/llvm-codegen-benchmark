@@ -1,27 +1,27 @@
 
-%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
-%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
-%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
-%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
-%"class.folly::test::DSchedTimestamp.2685533" = type { i64 }
-%"class.std::shared_ptr.16.2689440" = type { %"class.std::__shared_ptr.17.2689441" }
-%"class.std::__shared_ptr.17.2689441" = type { ptr, %"class.std::__shared_count.2689405" }
-%"class.std::__shared_count.2689405" = type { ptr }
-%"class.QuantLib::Array.2844508" = type { %"class.std::unique_ptr.2844509", i64 }
-%"class.std::unique_ptr.2844509" = type { %"struct.std::__uniq_ptr_data.2844510" }
-%"struct.std::__uniq_ptr_data.2844510" = type { %"class.std::__uniq_ptr_impl.2844511" }
-%"class.std::__uniq_ptr_impl.2844511" = type { %"class.std::tuple.2844512" }
-%"class.std::tuple.2844512" = type { %"struct.std::_Tuple_impl.2844513" }
-%"struct.std::_Tuple_impl.2844513" = type { %"struct.std::_Head_base.21.2844514" }
-%"struct.std::_Head_base.21.2844514" = type { ptr }
-%union.TValue.3680591 = type { i64 }
-%"class.ue2::graph_detail::vertex_descriptor.3852076" = type { ptr, i64 }
+%"struct.rocksdb::CompactionInputFiles.2623924" = type { i32, %"class.std::vector.0.2623911", %"class.std::vector.8.2623925" }
+%"class.std::vector.0.2623911" = type { %"struct.std::_Vector_base.1.2623912" }
+%"struct.std::_Vector_base.1.2623912" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623925" = type { %"struct.std::_Vector_base.9.2623926" }
+%"struct.std::_Vector_base.9.2623926" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" = type { ptr, ptr, ptr }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
+%"class.folly::test::DSchedTimestamp.2685500" = type { i64 }
+%"class.std::shared_ptr.16.2689406" = type { %"class.std::__shared_ptr.17.2689407" }
+%"class.std::__shared_ptr.17.2689407" = type { ptr, %"class.std::__shared_count.2689371" }
+%"class.std::__shared_count.2689371" = type { ptr }
+%"class.QuantLib::Array.2844474" = type { %"class.std::unique_ptr.2844475", i64 }
+%"class.std::unique_ptr.2844475" = type { %"struct.std::__uniq_ptr_data.2844476" }
+%"struct.std::__uniq_ptr_data.2844476" = type { %"class.std::__uniq_ptr_impl.2844477" }
+%"class.std::__uniq_ptr_impl.2844477" = type { %"class.std::tuple.2844478" }
+%"class.std::tuple.2844478" = type { %"struct.std::_Tuple_impl.2844479" }
+%"struct.std::_Tuple_impl.2844479" = type { %"struct.std::_Head_base.21.2844480" }
+%"struct.std::_Head_base.21.2844480" = type { ptr }
+%union.TValue.3680541 = type { i64 }
+%"class.ue2::graph_detail::vertex_descriptor.3852026" = type { ptr, i64 }
 
 ; 3 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
@@ -2385,7 +2385,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623924", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2413,7 +2413,7 @@ define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %0, i64 %4
+  %5 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2498,7 +2498,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nuw i64 %1, %3
-  %5 = getelementptr nusw nuw %"class.folly::test::DSchedTimestamp.2685533", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.folly::test::DSchedTimestamp.2685500", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2631,7 +2631,7 @@ define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw %"class.std::shared_ptr.16.2689440", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.std::shared_ptr.16.2689406", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2642,7 +2642,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw nuw %"class.QuantLib::Array.2844508", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.QuantLib::Array.2844474", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2666,7 +2666,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 3
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %union.TValue.3680591, ptr %0, i64 %4
+  %5 = getelementptr %union.TValue.3680541, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2678,7 +2678,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub i64 %1, %3
-  %5 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852076", ptr %0, i64 %4
+  %5 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852026", ptr %0, i64 %4
   ret ptr %5
 }
 

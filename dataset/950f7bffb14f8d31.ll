@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 229 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkSets.c.ll
@@ -11,6 +11,7 @@
 ; hwloc/optimized/topology-x86.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/collationbuilder.ll
+; icu/optimized/ucnvmbcs.ll
 ; jq/optimized/gb18030.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/eeepc-laptop.ll

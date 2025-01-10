@@ -61,6 +61,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; linux/optimized/ip6_output.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = trunc nuw nsw i64 %0 to i32
+  %5 = call i32 @llvm.smin.i32(i32 %4, i32 %3)
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll

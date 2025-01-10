@@ -1,6 +1,6 @@
 
-%"class.std::complex.2839348" = type { { double, double } }
-%"class.cv::Point_.3773497" = type { float, float }
+%"class.std::complex.2839314" = type { { double, double } }
+%"class.cv::Point_.3773447" = type { float, float }
 
 ; 3 occurrences:
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %3 = shl i64 %2, 1
   %4 = and i64 %1, 1
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw %"class.std::complex.2839348", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::complex.2839314", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -74,7 +74,7 @@ entry:
   %3 = shl nuw i64 %2, 2
   %4 = and i64 %1, 3
   %5 = or disjoint i64 %4, %3
-  %6 = getelementptr nusw %"class.cv::Point_.3773497", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.cv::Point_.3773447", ptr %0, i64 %5
   ret ptr %6
 }
 

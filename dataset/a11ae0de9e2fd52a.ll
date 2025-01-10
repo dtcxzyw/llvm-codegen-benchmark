@@ -123,17 +123,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
-  %2 = shl i64 8, %1
-  %3 = icmp eq i32 %0, 2
-  %4 = select i1 %3, i64 6, i64 %2
+  %2 = shl i64 4, %1
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }
 

@@ -391,7 +391,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -411,6 +411,7 @@ entry:
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
+; raylib/optimized/rcore.c.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
@@ -499,46 +500,6 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/kitHop.c.ll
-; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
-; ceres/optimized/eigensparse.cc.ll
-; ceres/optimized/reorder_program.cc.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_slam2d_linear.cpp.ll
-; lvgl/optimized/lv_roller.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; opencv/optimized/distransform.cpp.ll
-; openspiel/optimized/quoridor.cc.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/image.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; pbrt-v4/optimized/integrator.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
-; pbrt-v4/optimized/pspec.cpp.ll
-; pbrt-v4/optimized/stats.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = shl nsw i32 %2, 1
-  %4 = add i32 %0, %3
-  ret i32 %4
-}
-
 ; 6 occurrences:
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/giaEra.c.ll
@@ -578,6 +539,45 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 5
   %4 = add nuw nsw i32 %3, %0
+  ret i32 %4
+}
+
+; 29 occurrences:
+; abc/optimized/giaLf.c.ll
+; abc/optimized/kitHop.c.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
+; ceres/optimized/reorder_program.cc.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_slam2d_linear.cpp.ll
+; lvgl/optimized/lv_roller.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; openspiel/optimized/quoridor.cc.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/image.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrator.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/mipmap.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
+; pbrt-v4/optimized/stats.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nsw i32 %2, 2
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

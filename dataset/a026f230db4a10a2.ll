@@ -207,14 +207,13 @@ entry:
   ret i1 %2
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; boost/optimized/rational.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; openusd/optimized/decodemv.c.ll

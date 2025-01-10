@@ -1,6 +1,6 @@
 
-%"struct.cv::ChessBoardCorner.3765959" = type { %"class.cv::Point_.3765933", i32, i32, [4 x ptr] }
-%"class.cv::Point_.3765933" = type { float, float }
+%"struct.cv::ChessBoardCorner.3765909" = type { %"class.cv::Point_.3765883", i32, i32, [4 x ptr] }
+%"class.cv::Point_.3765883" = type { float, float }
 
 ; 3 occurrences:
 ; bullet3/optimized/gim_contact.ll
@@ -561,7 +561,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.cv::ChessBoardCorner.3765959", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.cv::ChessBoardCorner.3765909", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

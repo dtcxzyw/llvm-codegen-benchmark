@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -39,6 +39,7 @@
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll

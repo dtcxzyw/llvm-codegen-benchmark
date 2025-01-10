@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 122 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -83,6 +83,7 @@
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstebz.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/block_mean_hash.cpp.ll
@@ -383,7 +384,7 @@ entry:
   ret i1 %5
 }
 
-; 294 occurrences:
+; 295 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -578,6 +579,7 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
@@ -1437,17 +1439,6 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %0, %1
   %5 = icmp ule i32 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; darktable/optimized/Cr2Decompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000167(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %0, %1
-  %5 = icmp sle i32 %4, %3
   ret i1 %5
 }
 

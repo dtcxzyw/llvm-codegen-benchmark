@@ -99,7 +99,7 @@ entry:
   ret i1 %5
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddSymmetry.c.ll
@@ -136,6 +136,7 @@ entry:
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; openblas/optimized/dlaed0.c.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/imagecut.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; postgres/optimized/array_selfuncs.ll

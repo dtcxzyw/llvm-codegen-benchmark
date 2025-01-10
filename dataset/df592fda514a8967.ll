@@ -107,17 +107,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; abc/optimized/dauNonDsd.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw i32 2, %2
-  %4 = select i1 %1, i32 0, i32 %3
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
-}
-
 ; 8 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
@@ -133,17 +122,6 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = select i1 %1, i32 0, i32 %3
   %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/intel_psr.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 4, %2
-  %4 = select i1 %1, i32 4, i32 %3
-  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

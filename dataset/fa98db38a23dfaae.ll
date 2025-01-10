@@ -1,5 +1,5 @@
 
-; 2118 occurrences:
+; 2119 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -225,6 +225,7 @@
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_decimal.ll
 ; cpython/optimized/_functoolsmodule.ll
+; cpython/optimized/_json.ll
 ; cpython/optimized/_localemodule.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/_randommodule.ll

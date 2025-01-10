@@ -1443,7 +1443,7 @@ entry:
   ret i32 %2
 }
 
-; 440 occurrences:
+; 441 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -1479,6 +1479,7 @@ entry:
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/light_array.cc.ll
+; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/rational.ll
 ; brotli/optimized/compress_fragment.c.ll

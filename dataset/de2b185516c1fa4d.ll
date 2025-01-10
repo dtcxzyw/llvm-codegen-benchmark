@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::PinnedHermesValue.3076947" = type { %"class.hermes::vm::HermesValue.3076948" }
-%"class.hermes::vm::HermesValue.3076948" = type { i64 }
-%"class.clang::SourceLocation.3309293" = type { i32 }
-%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
+%"class.hermes::vm::PinnedHermesValue.3076913" = type { %"class.hermes::vm::HermesValue.3076914" }
+%"class.hermes::vm::HermesValue.3076914" = type { i64 }
+%"class.clang::SourceLocation.3309259" = type { i32 }
+%struct.dx_map_entry.3547978 = type { i32, i16, i16 }
 
 ; 2 occurrences:
 ; linux/optimized/nf_conntrack_sip.ll
@@ -53,7 +53,7 @@ define i1 @func0000000000000341(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3076947", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3076913", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %0, i64 -8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -66,7 +66,7 @@ define i1 @func0000000000000b41(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.clang::SourceLocation.3309293", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.clang::SourceLocation.3309259", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %0, i64 -4
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -79,7 +79,7 @@ define i1 @func0000000000000a04(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.dx_map_entry.3548012, ptr %1, i64 %4
+  %5 = getelementptr %struct.dx_map_entry.3547978, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %0, i64 -8
   %7 = icmp ult ptr %6, %5
   ret i1 %7

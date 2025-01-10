@@ -1,5 +1,5 @@
 
-%class.symbol.3613505 = type { ptr }
+%class.symbol.3613471 = type { ptr }
 
 ; 10 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
@@ -420,7 +420,7 @@ entry:
 define ptr @func000000000000003c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw nuw %class.symbol.3613505, ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %class.symbol.3613471, ptr %3, i64 %1
   %5 = getelementptr ptr, ptr %4, i64 %0
   ret ptr %5
 }

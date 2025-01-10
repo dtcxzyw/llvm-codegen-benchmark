@@ -1,5 +1,5 @@
 
-%class.btVector3.2819692 = type { [4 x float] }
+%class.btVector3.2819658 = type { [4 x float] }
 
 ; 8 occurrences:
 ; assimp/optimized/shapes.cc.ll
@@ -15,7 +15,7 @@ define ptr @func0000000000000003(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = select i1 %1, i64 2, i64 %3
-  %5 = getelementptr nusw nuw %class.btVector3.2819692, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.btVector3.2819658, ptr %0, i64 %4
   ret ptr %5
 }
 

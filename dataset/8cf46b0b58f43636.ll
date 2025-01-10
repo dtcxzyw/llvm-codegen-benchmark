@@ -147,10 +147,11 @@ entry:
   ret i32 %2
 }
 
-; 878 occurrences:
+; 879 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/ifCut.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/Analysis.cpp.ll

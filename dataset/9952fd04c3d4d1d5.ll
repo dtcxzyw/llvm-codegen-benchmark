@@ -28,8 +28,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 5 occurrences:
 ; linux/optimized/intel_backlight.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/jmemmgr.ll
@@ -44,8 +43,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
+; 3 occurrences:
 ; linux/optimized/resize.ll
 ; openjdk/optimized/jmemmgr.ll
 ; spike/optimized/umin32.ll
@@ -58,16 +56,28 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; freetype/optimized/sdf.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = call i32 @llvm.umin.i32(i32 %1, i32 %2)
+  %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext nneg i32 %3 to i64
   %5 = mul nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
+  %4 = zext nneg i32 %3 to i64
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 

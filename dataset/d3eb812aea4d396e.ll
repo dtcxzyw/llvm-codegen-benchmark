@@ -1,9 +1,9 @@
 
-%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
-%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
+%"struct.rocksdb::FdWithKeyRange.2614326" = type { %"struct.rocksdb::FileDescriptor.2614327", ptr, %"class.rocksdb::Slice.2614306", %"class.rocksdb::Slice.2614306" }
+%"struct.rocksdb::FileDescriptor.2614327" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614306" = type { ptr, i64 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cpython/optimized/listobject.ll
@@ -67,7 +67,6 @@
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/context.cc.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -867,7 +866,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614326", ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = select i1 %0, ptr %4, ptr %1
   ret ptr %5

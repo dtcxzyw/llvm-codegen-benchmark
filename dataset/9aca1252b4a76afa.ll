@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; miniaudio/optimized/unity.c.ll
+; openusd/optimized/restoration.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind

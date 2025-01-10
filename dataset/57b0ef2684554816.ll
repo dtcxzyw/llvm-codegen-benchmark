@@ -41,19 +41,6 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; abc/optimized/giaMf.c.ll
-; llvm/optimized/HotColdSplitting.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 1
-  %4 = add i32 %0, %1
-  %5 = add i32 %4, %3
-  %6 = add i32 %5, -1
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; Function Attrs: nounwind
@@ -88,6 +75,18 @@ entry:
   %4 = add nsw i32 %0, %1
   %5 = add nsw i32 %4, %3
   %6 = add nsw i32 %5, -57344
+  ret i32 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/HotColdSplitting.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 1
+  %4 = add i32 %0, %1
+  %5 = add i32 %4, %3
+  %6 = add i32 %5, -1
   ret i32 %6
 }
 

@@ -1,10 +1,10 @@
 
-%"struct.OT::LookupRecord.2736982" = type { %"struct.OT::IntType.139.2736869", %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.dtPoly.3108532 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
-%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
-%struct.PyDictUnicodeEntry.3967079 = type { ptr, ptr }
+%"struct.OT::LookupRecord.2736948" = type { %"struct.OT::IntType.139.2736835", %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.dtPoly.3108498 = type { i32, [6 x i16], [6 x i16], i16, i8, i8 }
+%struct.mstate_aux.3855306 = type { i32, i32, i16, i32 }
+%struct.PyDictUnicodeEntry.3967029 = type { ptr, ptr }
 
 ; 16 occurrences:
 ; cmake/optimized/fse_compress.c.ll
@@ -28,7 +28,7 @@ define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %"struct.OT::LookupRecord.2736982", ptr %4, i64 %0, i32 1
+  %5 = getelementptr nusw nuw %"struct.OT::LookupRecord.2736948", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -43,7 +43,7 @@ define ptr @func000000000000003b(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 100
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %struct.dtPoly.3108532, ptr %4, i64 %0, i32 4
+  %5 = getelementptr nusw nuw %struct.dtPoly.3108498, ptr %4, i64 %0, i32 4
   ret ptr %5
 }
 
@@ -54,7 +54,7 @@ define ptr @func000000000000002f(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -64
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %4, i64 %0, i32 3
+  %5 = getelementptr nusw nuw %struct.mstate_aux.3855306, ptr %4, i64 %0, i32 3
   ret ptr %5
 }
 
@@ -66,7 +66,7 @@ define ptr @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = getelementptr %struct.PyDictUnicodeEntry.3967079, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.PyDictUnicodeEntry.3967029, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

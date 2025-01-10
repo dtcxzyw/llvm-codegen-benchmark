@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 1 occurrences:
 ; qemu/optimized/fdt_ro.c.ll
@@ -88,7 +88,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }

@@ -90,20 +90,18 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 4 occurrences:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 4
-  %4 = select i1 %1, i32 4, i32 0
+  %3 = shl i32 %2, 20
+  %4 = select i1 %1, i32 8192, i32 0
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %0, %5
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 

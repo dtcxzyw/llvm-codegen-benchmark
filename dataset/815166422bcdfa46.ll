@@ -3165,7 +3165,7 @@ entry:
   ret i32 %2
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; boost/optimized/to_chars.ll
 ; clamav/optimized/unsp.c.ll
 ; git/optimized/archive-zip.ll
@@ -3182,7 +3182,6 @@ entry:
 ; linux/optimized/hub.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_backlight.ll
-; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_combo_phy.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_display_irq.ll

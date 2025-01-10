@@ -472,8 +472,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; cpython/optimized/pystrtod.ll
+; 8 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; openjdk/optimized/X11Renderer.ll

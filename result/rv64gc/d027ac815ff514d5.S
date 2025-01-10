@@ -42,3 +42,9 @@ func0000000000001fe1:                   # @func0000000000001fe1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
+func0000000000001869:                   # @func0000000000001869
+	add	a1, a1, a2
+	addi	a0, a0, 1
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret

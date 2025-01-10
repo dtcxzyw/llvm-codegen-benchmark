@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 42 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; boost/optimized/environment.ll
 ; clamav/optimized/scanners.c.ll
@@ -7,6 +7,9 @@
 ; darktable/optimized/MosDecoder.cpp.ll
 ; hdf5/optimized/H5Aint.c.ll
 ; hermes/optimized/Path.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/profile.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -26,12 +29,16 @@
 ; minetest/optimized/mods.cpp.ll
 ; minetest/optimized/porting.cpp.ll
 ; minetest/optimized/server.cpp.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libssl-lib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
 ; openusd/optimized/path.cpp.ll
 ; php/optimized/softmagic.ll
 ; protobuf/optimized/printer.cc.ll
 ; qemu/optimized/util_iov.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; ruby/optimized/regcomp.ll
 ; slurm/optimized/acct_policy.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
@@ -46,7 +53,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 1921 occurrences:
+; 1934 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -191,6 +198,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/write_dsv.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; clamav/optimized/Bcj2.c.ll
+; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/rawread.cpp.ll
 ; clamav/optimized/scanners.c.ll
 ; clamav/optimized/textnorm.c.ll
@@ -414,6 +422,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
+; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -423,6 +432,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -530,6 +540,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/aio.ll
 ; linux/optimized/base.ll
 ; linux/optimized/blk-iolatency.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/dm-kcopyd.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/filemap.ll
@@ -544,6 +555,8 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/page.ll
 ; linux/optimized/ptp_chardev.ll
 ; linux/optimized/readahead.ll
+; linux/optimized/scsi_logging.ll
+; linux/optimized/serial_core.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/tsc.ll
 ; linux/optimized/tty_buffer.ll
@@ -1010,10 +1023,13 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; luau/optimized/TypeVar.test.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
@@ -1509,6 +1525,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/compilerOracle.ll
+; openjdk/optimized/jdmarker.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
 ; openmpi/optimized/opal_copy_functions.ll
 ; openmpi/optimized/opal_datatype_position.ll
@@ -1694,6 +1711,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/cluster.ll
+; redis/optimized/dict.ll
 ; redis/optimized/sds.ll
 ; rocksdb/optimized/block_builder.cc.ll
 ; rocksdb/optimized/bytesxor.cc.ll
@@ -1715,6 +1733,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; slurm/optimized/acct_policy.ll
 ; slurm/optimized/gres_ctld.ll
 ; slurm/optimized/gres_select_filter.ll
+; slurm/optimized/step_mgr.ll
 ; soc-simulator/optimized/verilated.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -1887,6 +1906,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/ftype-bytes.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; xgboost/optimized/adaptive.cc.ll
@@ -3265,7 +3285,7 @@ entry:
   ret i1 %3
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -3278,6 +3298,7 @@ entry:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; folly/optimized/String.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/inline.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/TargetInfo.cpp.ll
@@ -3302,6 +3323,7 @@ entry:
 ; mold/optimized/icf.cc.SPARC64.cc.ll
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; opencv/optimized/copy.cpp.ll
+; openjdk/optimized/jdmarker.ll
 ; php/optimized/softmagic.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-scsi-osd.c.ll
@@ -3429,7 +3451,7 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; boost/optimized/static_string.ll
@@ -3438,7 +3460,9 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; hermes/optimized/Host.cpp.ll
+; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; linux/optimized/aio.ll
+; linux/optimized/gup.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/kdebugfs.ll
@@ -3608,6 +3632,20 @@ entry:
   ret i1 %3
 }
 
+; 5 occurrences:
+; assimp/optimized/zip.c.ll
+; boost/optimized/static_string.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
+  %3 = icmp samesign eq i64 %2, 0
+  ret i1 %3
+}
+
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -3616,16 +3654,6 @@ define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.umin.i64(i64 %0, i64 %1)
   %3 = icmp samesign ult i64 %2, 8
-  ret i1 %3
-}
-
-; 1 occurrences:
-; boost/optimized/static_string.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = tail call i64 @llvm.umin.i64(i64 %0, i64 %1)
-  %3 = icmp samesign eq i64 %2, 0
   ret i1 %3
 }
 

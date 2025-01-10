@@ -17,95 +17,95 @@ func0000000000000302:                   # @func0000000000000302
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	252                             # 0xfc
-func00000000000001c2:                   # @func00000000000001c2
-	vptestnmd	.LCPI2_0(%rip){1to8}, %ymm2, %k0
-	vpcmpled	%ymm1, %ymm0, %k1
-	korb	%k1, %k0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
 	.long	511                             # 0x1ff
 func0000000000000298:                   # @func0000000000000298
-	vptestmd	.LCPI3_0(%rip){1to8}, %ymm2, %k0
+	vptestmd	.LCPI2_0(%rip){1to8}, %ymm2, %k0
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
+.LCPI3_0:
 	.long	2048                            # 0x800
 func0000000000000318:                   # @func0000000000000318
-	vptestmd	.LCPI4_0(%rip){1to8}, %ymm2, %k0
+	vptestmd	.LCPI3_0(%rip){1to8}, %ymm2, %k0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	16                              # 0x10
 func0000000000000052:                   # @func0000000000000052
-	vptestnmd	.LCPI5_0(%rip){1to8}, %ymm2, %k0
+	vptestnmd	.LCPI4_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnltud	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
+.LCPI5_0:
 	.long	4                               # 0x4
 func0000000000000258:                   # @func0000000000000258
-	vptestmd	.LCPI6_0(%rip){1to8}, %ymm2, %k0
+	vptestmd	.LCPI5_0(%rip){1to8}, %ymm2, %k0
+	vpcmpnltud	%ymm1, %ymm0, %k1
+	korb	%k1, %k0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
+	.long	1073741824                      # 0x40000000
+func0000000000000242:                   # @func0000000000000242
+	vptestnmd	.LCPI6_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnltud	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	1073741824                      # 0x40000000
-func0000000000000242:                   # @func0000000000000242
+	.long	1024                            # 0x400
+func0000000000000056:                   # @func0000000000000056
 	vptestnmd	.LCPI7_0(%rip){1to8}, %ymm2, %k0
-	vpcmpnltud	%ymm1, %ymm0, %k1
-	korb	%k1, %k0, %k0
+	vpcmpnltd	%ymm1, %ymm0, %k1
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
 	.long	1024                            # 0x400
-func0000000000000056:                   # @func0000000000000056
-	vptestnmd	.LCPI8_0(%rip){1to8}, %ymm2, %k0
+func0000000000000316:                   # @func0000000000000316
+	vptestmd	.LCPI8_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI9_0:
-	.long	1024                            # 0x400
-func0000000000000316:                   # @func0000000000000316
-	vptestmd	.LCPI9_0(%rip){1to8}, %ymm2, %k0
-	vpcmpnltd	%ymm1, %ymm0, %k1
+	.long	2146435072                      # 0x7ff00000
+.LCPI9_1:
+	.long	57671680                        # 0x3700000
+func0000000000000614:                   # @func0000000000000614
+	vpandd	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpgtd	.LCPI9_1(%rip){1to8}, %ymm2, %k0
+	vpcmpgtd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI10_0:
-	.long	2146435072                      # 0x7ff00000
-.LCPI10_1:
-	.long	57671680                        # 0x3700000
-func0000000000000614:                   # @func0000000000000614
-	vpandd	.LCPI10_0(%rip){1to8}, %ymm2, %ymm2
-	vpcmpgtd	.LCPI10_1(%rip){1to8}, %ymm2, %k0
+	.long	32                              # 0x20
+func0000000000000054:                   # @func0000000000000054
+	vptestnmd	.LCPI10_0(%rip){1to8}, %ymm2, %k0
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI11_0:
-	.long	32                              # 0x20
-func0000000000000054:                   # @func0000000000000054
+	.long	1                               # 0x1
+func00000000000001c2:                   # @func00000000000001c2
 	vptestnmd	.LCPI11_0(%rip){1to8}, %ymm2, %k0
-	vpcmpgtd	%ymm1, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	vpcmpled	%ymm1, %ymm0, %k1
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

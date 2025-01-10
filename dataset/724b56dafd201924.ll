@@ -1,8 +1,8 @@
 
-%struct.iovec.2690185 = type { ptr, i64 }
-%struct._zend_op.2793229 = type { ptr, %union._znode_op.2793230, %union._znode_op.2793230, %union._znode_op.2793230, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793230 = type { i32 }
-%"class.cv::Point3_.3768623" = type { float, float, float }
+%struct.iovec.2690151 = type { ptr, i64 }
+%struct._zend_op.2793195 = type { ptr, %union._znode_op.2793196, %union._znode_op.2793196, %union._znode_op.2793196, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793196 = type { i32 }
+%"class.cv::Point3_.3768573" = type { float, float, float }
 
 ; 4 occurrences:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -15,7 +15,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct.iovec.2690185, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.iovec.2690151, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %struct._zend_op.2793229, ptr %0, i64 %5, i32 6
+  %6 = getelementptr nuw %struct._zend_op.2793195, ptr %0, i64 %5, i32 6
   ret ptr %6
 }
 
@@ -201,7 +201,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = add i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %"class.cv::Point3_.3768623", ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %"class.cv::Point3_.3768573", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

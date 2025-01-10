@@ -1,5 +1,6 @@
 
-; 181 occurrences:
+; 183 occurrences:
+; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; boost/optimized/buffer_piece_border.ll
@@ -120,6 +121,7 @@
 ; php/optimized/astro.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/costsize.ll
+; postgres/optimized/float.ll
 ; postgres/optimized/tsrank.ll
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/adams.cpp.ll

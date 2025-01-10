@@ -891,7 +891,6 @@
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/FrontendActions.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/GTestChecker.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
@@ -2124,6 +2123,7 @@
 ; ruby/optimized/pointer.ll
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/transcode.ll
 ; ruby/optimized/util.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll

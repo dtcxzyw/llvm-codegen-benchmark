@@ -99,6 +99,12 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
+func00000000000000e4:                   # @func00000000000000e4
+	shlq	$4, %rdx
+	addq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq
 func00000000000000c4:                   # @func00000000000000c4
 	leaq	(%rsi,%rdx,4), %rax
 	cmpq	%rax, %rdi

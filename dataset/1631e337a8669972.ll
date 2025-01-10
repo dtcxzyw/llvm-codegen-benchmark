@@ -1,6 +1,6 @@
 
-%struct.triangle_t.3884784 = type { i32, [3 x %struct.tedge_t.3884785] }
-%struct.tedge_t.3884785 = type { ptr, ptr, i64 }
+%struct.triangle_t.3884734 = type { i32, [3 x %struct.tedge_t.3884735] }
+%struct.tedge_t.3884735 = type { ptr, ptr, i64 }
 
 ; 2 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -69,7 +69,7 @@ define ptr @func00000000000001df(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 24
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.triangle_t.3884784, ptr %0, i64 %1, i32 1
+  %5 = getelementptr %struct.triangle_t.3884734, ptr %0, i64 %1, i32 1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }

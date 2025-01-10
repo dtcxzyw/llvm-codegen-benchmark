@@ -1,8 +1,8 @@
 
-%"class.llvm::MachineOperand.3241953" = type { i32, %union.anon.361.3241954, ptr, %"union.llvm::MachineOperand::ContentsUnion.3241955" }
-%union.anon.361.3241954 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3241955" = type { %"class.llvm::ArrayRef.362.3241956" }
-%"class.llvm::ArrayRef.362.3241956" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3241919" = type { i32, %union.anon.361.3241920, ptr, %"union.llvm::MachineOperand::ContentsUnion.3241921" }
+%union.anon.361.3241920 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3241921" = type { %"class.llvm::ArrayRef.362.3241922" }
+%"class.llvm::ArrayRef.362.3241922" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -69,7 +69,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func00000000000000d8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.llvm::MachineOperand.3241953", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.llvm::MachineOperand.3241919", ptr %1, i64 %2
   %4 = icmp ne ptr %3, %0
   %5 = zext i1 %4 to i8
   ret i8 %5

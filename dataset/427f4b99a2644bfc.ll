@@ -1,7 +1,6 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -19,7 +18,6 @@
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; z3/optimized/mpfx.cpp.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; eastl/optimized/EASprintfOrdered.cpp.ll
 ; openjdk/optimized/c1_FpuStackSim_x86.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind
@@ -24,39 +25,16 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; opencv/optimized/scansegment.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 256
-  %4 = sub i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw [513 x i32], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; sundials/optimized/idas.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, 1
+  %3 = add i32 %2, 256
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [6 x ptr], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; eastl/optimized/EASprintfOrdered.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -48
-  %4 = sub nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw [10 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [513 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -312,7 +312,7 @@ entry:
   ret i64 %7
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -367,6 +367,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -444,7 +445,7 @@ entry:
   ret i64 %7
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DataLayout.cpp.ll
@@ -464,7 +465,6 @@ entry:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind

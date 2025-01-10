@@ -15,9 +15,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/CallLowering.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:

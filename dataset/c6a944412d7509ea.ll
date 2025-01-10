@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -19,6 +19,7 @@
 ; openjdk/optimized/jdhuff.ll
 ; openjdk/optimized/jdphuff.ll
 ; ruby/optimized/bignum.ll
+; soc-simulator/optimized/verilated.ll
 ; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

@@ -1,5 +1,5 @@
 
-%struct.resource.3546544 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3546510 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -274,7 +274,7 @@ entry:
   %2 = icmp samesign ugt i32 %1, 2
   %3 = select i1 %2, i64 2, i64 0
   %4 = getelementptr nusw nuw i8, ptr %0, i64 920
-  %5 = getelementptr [11 x %struct.resource.3546544], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [11 x %struct.resource.3546510], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

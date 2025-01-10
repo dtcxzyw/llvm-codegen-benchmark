@@ -23,11 +23,3 @@ func0000000000000003:                   # @func0000000000000003
 .LBB2_2:                                # %entry
 	or	a0, a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
-	lui	a3, 524288
-	slli	a1, a1, 63
-	or	a2, a2, a3
-	srai	a1, a1, 63
-	and	a1, a1, a2
-	or	a0, a0, a1
-	ret

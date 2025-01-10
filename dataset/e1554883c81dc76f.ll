@@ -166,10 +166,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -383,6 +382,17 @@ define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 100
   %4 = add i64 %0, %1
+  %5 = icmp ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c8(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 40
+  %4 = add nuw i64 %0, %1
   %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }

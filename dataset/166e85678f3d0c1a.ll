@@ -1,7 +1,7 @@
 
-%"class.llvm::Use.3138497" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3187482" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3187448" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194121" = type { ptr, ptr, ptr, ptr }
 
 ; 129 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -139,7 +139,7 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3138497", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3138463", ptr %0, i64 %1
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %5
   ret ptr %7
 }
@@ -150,9 +150,9 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
-  %4 = getelementptr nusw %"class.llvm::Use.3187482", ptr %0, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3187448", ptr %0, i64 %1
   %5 = zext nneg i32 %3 to i64
-  %6 = getelementptr %"class.llvm::Use.3187482", ptr %4, i64 %5
+  %6 = getelementptr %"class.llvm::Use.3187448", ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
@@ -165,8 +165,8 @@ entry:
   %3 = and i32 %2, 134217727
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::Use.3194155", ptr %0, i64 %1
-  %7 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %6, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3194121", ptr %0, i64 %1
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3194121", ptr %6, i64 %5
   ret ptr %7
 }
 

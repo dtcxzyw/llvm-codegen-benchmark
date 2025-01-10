@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 109 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/resFilter.c.ll
 ; boost/optimized/get_turn_info.ll
@@ -87,7 +87,6 @@
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/vectorization.ll
 ; openspiel/optimized/TransTableL.cpp.ll
-; openssl/optimized/openssl-bin-x509.ll
 ; openusd/optimized/av1_inv_txfm1d.c.ll
 ; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll

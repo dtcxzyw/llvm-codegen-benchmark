@@ -1,5 +1,5 @@
 
-%struct.dt_iop_colorreconstruct_Lab_t.2874538 = type { float, float, float, float }
+%struct.dt_iop_colorreconstruct_Lab_t.2874504 = type { float, float, float, float }
 
 ; 1 occurrences:
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -22,8 +22,8 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = sext i32 %1 to i64
-  %5 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %0, i64 %4
-  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874538, ptr %5, i64 %3
+  %5 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %0, i64 %4
+  %6 = getelementptr %struct.dt_iop_colorreconstruct_Lab_t.2874504, ptr %5, i64 %3
   ret ptr %6
 }
 

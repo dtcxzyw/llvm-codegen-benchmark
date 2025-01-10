@@ -36,11 +36,11 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	andi	a0, a0, 1
 	beqz	a2, .LBB3_2
-	li	a2, 18
+	li	a2, 15
 	beqz	a0, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a2, 12
+	li	a2, 18
 	bnez	a0, .LBB3_4
 .LBB3_3:                                # %entry
 	mv	a1, a2

@@ -29,17 +29,16 @@ func0000000000000007:                   # @func0000000000000007
 	movabsq	$-2635249153387078802, %rax     # imm = 0xDB6DB6DB6DB6DB6E
 	imulq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leaq	3(%rdi), %rax
-	testq	%rdi, %rdi
-	cmovnsq	%rdi, %rax
-	shlq	$5, %rax
-	andq	$-128, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rdi, %rax
 	shrq	$63, %rax
 	addq	%rdi, %rax
 	shlq	$2, %rax
 	andq	$-8, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	leaq	3(%rdi), %rax
+	testq	%rdi, %rdi
+	cmovnsq	%rdi, %rax
+	andq	$-4, %rax
 	retq

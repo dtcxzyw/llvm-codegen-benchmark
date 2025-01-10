@@ -10,8 +10,7 @@ entry:
   ret i32 %5
 }
 
-; 12 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
+; 11 occurrences:
 ; lief/optimized/RichHeader.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll

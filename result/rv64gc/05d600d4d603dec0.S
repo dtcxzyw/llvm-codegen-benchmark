@@ -7,14 +7,6 @@ func000000000000000b:                   # @func000000000000000b
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000000f:                   # @func000000000000000f
-	slli	a1, a1, 56
-	srai	a1, a1, 56
-	li	a2, 76
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 56
 	srai	a1, a1, 56

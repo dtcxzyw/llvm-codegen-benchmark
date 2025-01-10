@@ -14,9 +14,12 @@ func0000000000000029:                   # @func0000000000000029
 	leaq	(%rdi,%rax,8), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
+	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
-	movl	$49152, %eax                    # imm = 0xC000
-	cmoveq	%rsi, %rax
-	andq	$-16385, %rdi                   # imm = 0xBFFF
-	orq	%rdi, %rax
+	setne	%cl
+	shlq	$35, %rcx
+	movabsq	$-42331734548481, %rax          # imm = 0xFFFFD97FDFFFDFFF
+	andq	%rdi, %rax
+	orq	%rcx, %rax
+	orq	$536870912, %rax                # imm = 0x20000000
 	retq

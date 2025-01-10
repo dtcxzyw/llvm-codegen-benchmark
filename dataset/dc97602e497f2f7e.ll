@@ -25,7 +25,8 @@ entry:
   ret ptr %2
 }
 
-; 197 occurrences:
+; 199 occurrences:
+; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -102,6 +103,7 @@ entry:
 ; opencv/optimized/age_gender_emotion_recognition.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/FourByteAbgrPre.ll
 ; openjdk/optimized/IntArgb.ll

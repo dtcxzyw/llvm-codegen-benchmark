@@ -11,7 +11,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -25,6 +25,8 @@ entry:
 ; linux/optimized/slub.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; openssl/optimized/openssl-bin-dgst.ll
 ; php/optimized/pass1.ll
 ; postgres/optimized/parse_target.ll

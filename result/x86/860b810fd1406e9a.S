@@ -52,12 +52,12 @@ func000000000000002c:                   # @func000000000000002c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000c7:                   # @func00000000000000c7
 	testq	%rdx, %rdx
 	movq	$-1, %rax
 	cmovgq	%rsi, %rax
 	cmpq	%rdi, %rax
-	setg	%al
+	setle	%al
 	retq
 func0000000000000288:                   # @func0000000000000288
 	cmpq	$23, %rdx

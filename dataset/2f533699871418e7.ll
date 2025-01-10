@@ -107,9 +107,11 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
+; libpng/optimized/pngrutil.c.ll
+; openjdk/optimized/pngrutil.ll
 ; php/optimized/phar.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/tar.ll
@@ -119,7 +121,19 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  ret i64 %5
+}
+
+; 2 occurrences:
+; libpng/optimized/pngrutil.c.ll
+; openjdk/optimized/pngrutil.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nuw i64 %1, %3
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
   ret i64 %5
 }
 
@@ -185,8 +199,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/pdf.c.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/Format.cpp.ll

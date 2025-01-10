@@ -238,7 +238,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
@@ -247,14 +247,13 @@ entry:
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; quickjs/optimized/libbf.ll
-; quickjs/optimized/quickjs.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 128, i64 96
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %0, %4
+  %3 = select i1 %2, i64 -2, i64 -1
+  %4 = add nsw i64 %1, %3
+  %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 

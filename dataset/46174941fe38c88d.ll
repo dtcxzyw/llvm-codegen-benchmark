@@ -1,6 +1,6 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
 
 ; 9 occurrences:
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -18,7 +18,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 1
   %5 = add nuw nsw i64 %4, %1
-  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700168], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

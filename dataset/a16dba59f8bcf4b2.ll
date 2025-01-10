@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.461.3082118" = type { %"class.hermes::vm::HermesValue.3081990" }
-%"class.hermes::vm::HermesValue.3081990" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.461.3082084" = type { %"class.hermes::vm::HermesValue.3081956" }
+%"class.hermes::vm::HermesValue.3081956" = type { i64 }
 
 ; 3 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -14,6 +14,19 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001f0(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 544
+  %3 = getelementptr i8, ptr %0, i64 -524
+  %4 = zext nneg i32 %2 to i64
+  %5 = getelementptr i8, ptr %3, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 2176
   ret ptr %6
 }
 
@@ -40,7 +53,7 @@ entry:
   %3 = add nuw i32 %2, 2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.461.3082118", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.461.3082084", ptr %5, i64 %4
   ret ptr %6
 }
 

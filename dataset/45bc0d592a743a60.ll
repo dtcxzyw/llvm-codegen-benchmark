@@ -1,9 +1,9 @@
 
-%struct.tx_pkt_history_st.2634599 = type { %struct.ossl_list_st_tx_history.2634600, ptr, i64, i64 }
-%struct.ossl_list_st_tx_history.2634600 = type { ptr, ptr, i64 }
-%struct.rx_pkt_history_st.2634601 = type { %struct.ossl_list_st_uint_set.2634602, i64 }
-%struct.ossl_list_st_uint_set.2634602 = type { ptr, ptr, i64 }
-%struct.NvmeLBAF.2707817 = type { i16, i8, i8 }
+%struct.tx_pkt_history_st.2634566 = type { %struct.ossl_list_st_tx_history.2634567, ptr, i64, i64 }
+%struct.ossl_list_st_tx_history.2634567 = type { ptr, ptr, i64 }
+%struct.rx_pkt_history_st.2634568 = type { %struct.ossl_list_st_uint_set.2634569, i64 }
+%struct.ossl_list_st_uint_set.2634569 = type { ptr, ptr, i64 }
+%struct.NvmeLBAF.2707783 = type { i16, i8, i8 }
 
 ; 18 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
@@ -29,7 +29,7 @@ define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nuw [3 x %struct.tx_pkt_history_st.2634599], ptr %0, i64 0, i64 %3, i32 2
+  %4 = getelementptr nuw [3 x %struct.tx_pkt_history_st.2634566], ptr %0, i64 0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -43,7 +43,7 @@ define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [3 x %struct.rx_pkt_history_st.2634601], ptr %0, i64 0, i64 %3, i32 0, i32 2
+  %4 = getelementptr [3 x %struct.rx_pkt_history_st.2634568], ptr %0, i64 0, i64 %3, i32 0, i32 2
   ret ptr %4
 }
 
@@ -57,7 +57,7 @@ define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [64 x %struct.NvmeLBAF.2707817], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [64 x %struct.NvmeLBAF.2707783], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

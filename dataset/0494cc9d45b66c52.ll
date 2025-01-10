@@ -1,5 +1,5 @@
 
-%struct.Point.3654376 = type { double, double }
+%struct.Point.3654342 = type { double, double }
 
 ; 4 occurrences:
 ; abc/optimized/saigPhase.c.ll
@@ -22,7 +22,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [0 x %struct.Point.3654376], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.Point.3654342], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

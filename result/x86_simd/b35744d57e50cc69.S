@@ -1,12 +1,3 @@
-func0000000000000000:                   # @func0000000000000000
-	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vpmovqd	%ymm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpaddd	%xmm2, %xmm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
-	vzeroupper
-	retq
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -16,23 +7,13 @@ func000000000000000c:                   # @func000000000000000c
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
+.LCPI1_0:
 	.long	2                               # 0x2
 func000000000000000f:                   # @func000000000000000f
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm0
-	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
-	.long	4294967264                      # 0xffffffe0
-func0000000000000002:                   # @func0000000000000002
-	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vpmovqd	%ymm2, %xmm0
-	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm1 {%k1}
+	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq

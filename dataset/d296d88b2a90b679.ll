@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3170318" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3170284" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 65 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -100,7 +100,7 @@ entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 2094
   %4 = select i1 %3, i64 -588, i64 -629
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3170318", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3170284", ptr %0, i64 %4
   ret ptr %5
 }
 

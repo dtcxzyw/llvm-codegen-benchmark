@@ -39,16 +39,17 @@ func000000000000002c:                   # @func000000000000002c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
-	sext.w	a1, a1
-	max	a1, a1, zero
-	sltu	a0, a1, a0
-	ret
 func0000000000000025:                   # @func0000000000000025
 	sext.w	a1, a1
 	max	a1, a1, zero
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
+	ret
+func0000000000000038:                   # @func0000000000000038
+	sext.w	a1, a1
+	lui	a2, 1
+	max	a1, a1, a2
+	sltu	a0, a1, a0
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
@@ -67,11 +68,6 @@ func0000000000000034:                   # @func0000000000000034
 	sext.w	a1, a1
 	li	a2, 1
 	max	a1, a1, a2
-	sltu	a0, a0, a1
-	ret
-func0000000000000064:                   # @func0000000000000064
-	sext.w	a1, a1
-	max	a1, a1, zero
 	sltu	a0, a0, a1
 	ret
 func0000000000000078:                   # @func0000000000000078

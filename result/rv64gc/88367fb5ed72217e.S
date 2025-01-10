@@ -80,17 +80,11 @@ func0000000000000026:                   # @func0000000000000026
 	slti	a1, a1, 0
 	and	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
-	add	a1, a1, a2
-	addi	a1, a1, -3
-	seqz	a1, a1
-	and	a0, a0, a1
-	ret
-.LCPI15_0:
+.LCPI14_0:
 	.quad	1000000000000000001             # 0xde0b6b3a7640001
 func0000000000000044:                   # @func0000000000000044
-	lui	a3, %hi(.LCPI15_0)
-	ld	a3, %lo(.LCPI15_0)(a3)
+	lui	a3, %hi(.LCPI14_0)
+	ld	a3, %lo(.LCPI14_0)(a3)
 	add	a1, a1, a2
 	sltu	a1, a1, a3
 	and	a0, a0, a1

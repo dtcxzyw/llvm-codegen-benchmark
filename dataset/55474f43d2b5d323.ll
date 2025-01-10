@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; coreutils-rs/optimized/30f5bptmhm0gvo6i.ll
 ; coreutils-rs/optimized/50z74lntrf1cjp27.ll
 ; coreutils-rs/optimized/5csmbnxbvn5bvzoy.ll
@@ -28,7 +28,6 @@
 ; rust-analyzer-rs/optimized/4mz36mxu8r0g7zqk.ll
 ; rust-analyzer-rs/optimized/4oth7q7qz5x90ygj.ll
 ; rust-analyzer-rs/optimized/5tc27igfpd8lxn0.ll
-; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
 ; rust-analyzer-rs/optimized/oyyql3r86m1ry5s.ll
 ; rust-analyzer-rs/optimized/vccy6rg1lgzb14e.ll

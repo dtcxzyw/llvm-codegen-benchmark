@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDfs.c.ll
@@ -44,6 +44,7 @@
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/vlv_dsi.ll
+; linux/optimized/xstate.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/RISCV.cpp.ll

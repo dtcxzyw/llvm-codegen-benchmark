@@ -120,7 +120,7 @@ entry:
 ; 20 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
-; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; git/optimized/pathspec.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

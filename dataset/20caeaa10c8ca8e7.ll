@@ -1,5 +1,5 @@
 
-; 1681 occurrences:
+; 1687 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -377,13 +377,14 @@
 ; graphviz/optimized/sfprint.c.ll
 ; graphviz/optimized/stress.c.ll
 ; graphviz/optimized/util.c.ll
+; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; gromacs/optimized/cstringutil.cpp.ll
-; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/fft5d.cpp.ll
@@ -1083,6 +1084,7 @@
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/barrierSetC2.ll
+; openjdk/optimized/bfsClosure.ll
 ; openjdk/optimized/block.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/c1_Canonicalizer.ll
@@ -1098,9 +1100,11 @@
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/dfsClosure.ll
 ; openjdk/optimized/dither.ll
 ; openjdk/optimized/domgraph.ll
 ; openjdk/optimized/dwarf.ll
+; openjdk/optimized/edge.ll
 ; openjdk/optimized/error_messages.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1RemSet.ll
@@ -1112,6 +1116,7 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-shaper-hebrew.ll
 ; openjdk/optimized/hb-set.ll
+; openjdk/optimized/heapShared.ll
 ; openjdk/optimized/img_colors.ll
 ; openjdk/optimized/jdmaster.ll
 ; openjdk/optimized/jfrOSInterface.ll
@@ -1144,6 +1149,7 @@
 ; openjdk/optimized/shenandoahReferenceProcessor.ll
 ; openjdk/optimized/shenandoahSupport.ll
 ; openjdk/optimized/signature.ll
+; openjdk/optimized/stackChunkOop.ll
 ; openjdk/optimized/standardHandlers.ll
 ; openjdk/optimized/superword.ll
 ; openjdk/optimized/type.ll
@@ -1689,7 +1695,7 @@ entry:
   ret i64 %2
 }
 
-; 2408 occurrences:
+; 2409 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/Options.cpp.ll
@@ -1900,6 +1906,7 @@ entry:
 ; abc/optimized/simSupp.c.ll
 ; abc/optimized/superGate.c.ll
 ; abc/optimized/utilIsop.c.ll
+; abc/optimized/utilSort.c.ll
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -4188,7 +4195,6 @@ entry:
 ; abc/optimized/sswClass.c.ll
 ; abc/optimized/timMan.c.ll
 ; abc/optimized/trees.c.ll
-; abc/optimized/utilSort.c.ll
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNdr.c.ll
@@ -4200,6 +4206,7 @@ entry:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -12811,7 +12818,7 @@ entry:
   ret i64 %2
 }
 
-; 1157 occurrences:
+; 1156 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -13831,7 +13838,6 @@ entry:
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
 ; rayon-rs/optimized/1j5m2t9gtbur4l2z.ll

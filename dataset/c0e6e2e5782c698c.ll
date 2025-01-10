@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/alloc_lib.ll
 ; boost/optimized/dump_ssse3.ll
 ; libdeflate/optimized/crc32.c.ll
 ; luajit/optimized/lj_alloc.ll

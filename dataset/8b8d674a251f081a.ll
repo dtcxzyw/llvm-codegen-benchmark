@@ -1,9 +1,9 @@
 
-%"struct.faiss::nndescent::Neighbor.3659151" = type <{ i32, float, i8, [3 x i8] }>
-%"class.std::unordered_set.3887627" = type { %"class.std::_Hashtable.3887628" }
-%"class.std::_Hashtable.3887628" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3887629", i64, %"struct.std::__detail::_Prime_rehash_policy.3887630", ptr }
-%"struct.std::__detail::_Hash_node_base.3887629" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.3887630" = type { float, i64 }
+%"struct.faiss::nndescent::Neighbor.3659101" = type <{ i32, float, i8, [3 x i8] }>
+%"class.std::unordered_set.3887577" = type { %"class.std::_Hashtable.3887578" }
+%"class.std::_Hashtable.3887578" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.3887579", i64, %"struct.std::__detail::_Prime_rehash_policy.3887580", ptr }
+%"struct.std::__detail::_Hash_node_base.3887579" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.3887580" = type { float, i64 }
 
 ; 2 occurrences:
 ; abc/optimized/wlcBlast.c.ll
@@ -28,7 +28,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.faiss::nndescent::Neighbor.3659151", ptr %0, i64 %4
+  %5 = getelementptr %"struct.faiss::nndescent::Neighbor.3659101", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 12
   ret ptr %6
 }
@@ -52,7 +52,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %1, i32 %2)
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"class.std::unordered_set.3887627", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::unordered_set.3887577", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 56
   ret ptr %6
 }

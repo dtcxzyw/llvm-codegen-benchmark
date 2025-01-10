@@ -43,10 +43,11 @@ entry:
   ret i16 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; eastl/optimized/string.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; miniaudio/optimized/unity.c.ll

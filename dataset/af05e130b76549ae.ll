@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
-%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074963" = type { %"class.hermes::vm::HermesValue.3074964" }
+%"class.hermes::vm::HermesValue.3074964" = type { i64 }
 
 ; 3 occurrences:
 ; abc/optimized/wlcBlast.c.ll
@@ -24,7 +24,7 @@ entry:
   %3 = icmp ult i32 %1, 4097
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074963", ptr %0, i64 %5
   ret ptr %6
 }
 

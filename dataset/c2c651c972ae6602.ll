@@ -1,17 +1,17 @@
 
-%struct.LuaNode.2938891 = type { %struct.lua_TValue.2938889, %struct.TKey.2938892 }
-%struct.lua_TValue.2938889 = type { %union.Value.2938890, [1 x i32], i32 }
-%union.Value.2938890 = type { ptr }
-%struct.TKey.2938892 = type { %union.Value.2938890, [1 x i32], i32 }
-%"struct.llvh::detail::DenseMapPair.296.3075967" = type { %"struct.std::pair.297.3075968" }
-%"struct.std::pair.297.3075968" = type { i32, %"class.std::vector.164.3075969" }
-%"class.std::vector.164.3075969" = type { %"struct.std::_Vector_base.165.3075970" }
-%"struct.std::_Vector_base.165.3075970" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" = type { ptr, ptr, ptr }
-%"class.llvh::detail::DenseSetPair.3082320" = type { i32 }
-%"struct.llvm::detail::DenseMapPair.706.3161405" = type { %"struct.std::pair.707.3161406" }
-%"struct.std::pair.707.3161406" = type { i32, ptr }
+%struct.LuaNode.2938857 = type { %struct.lua_TValue.2938855, %struct.TKey.2938858 }
+%struct.lua_TValue.2938855 = type { %union.Value.2938856, [1 x i32], i32 }
+%union.Value.2938856 = type { ptr }
+%struct.TKey.2938858 = type { %union.Value.2938856, [1 x i32], i32 }
+%"struct.llvh::detail::DenseMapPair.296.3075933" = type { %"struct.std::pair.297.3075934" }
+%"struct.std::pair.297.3075934" = type { i32, %"class.std::vector.164.3075935" }
+%"class.std::vector.164.3075935" = type { %"struct.std::_Vector_base.165.3075936" }
+%"struct.std::_Vector_base.165.3075936" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075937" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075937" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075938" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075938" = type { ptr, ptr, ptr }
+%"class.llvh::detail::DenseSetPair.3082286" = type { i32 }
+%"struct.llvm::detail::DenseMapPair.706.3161371" = type { %"struct.std::pair.707.3161372" }
+%"struct.std::pair.707.3161372" = type { i32, ptr }
 
 ; 2 occurrences:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
@@ -22,7 +22,7 @@ entry:
   %3 = mul i32 %2, 1540483477
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.LuaNode.2938891, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.LuaNode.2938857, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -336,7 +336,7 @@ entry:
   %3 = mul i32 %2, 37
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.296.3075967", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.296.3075933", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -367,7 +367,7 @@ entry:
   %3 = mul nuw nsw i32 %2, 37
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.llvh::detail::DenseSetPair.3082320", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvh::detail::DenseSetPair.3082286", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -382,7 +382,7 @@ entry:
   %3 = mul nsw i32 %2, 37
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.706.3161405", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.706.3161371", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -69,17 +69,6 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; llvm/optimized/X86FloatingPoint.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %neg = sub i32 0, %0
-  %1 = and i32 %0, %neg
-  %2 = xor i32 %1, -1
-  ret i32 %2
-}
-
 ; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

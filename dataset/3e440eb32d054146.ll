@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -17,7 +17,6 @@
 ; double_conversion/optimized/string-to-double.cc.ll
 ; draco/optimized/mesh_cleanup.cc.ll
 ; hyperscan/optimized/limex_64.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/cpuset.ll
@@ -56,16 +55,13 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; git/optimized/combine-diff.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/xstate.ll
-; php/optimized/zend_alloc.ll
-; qemu/optimized/hw_virtio_virtio-balloon.c.ll
-; qemu/optimized/util_thread-context.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 213 occurrences:
+; 215 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -37,6 +37,7 @@
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; clap-rs/optimized/ms9r2ilwmkwzn0d.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; coreutils-rs/optimized/95am6mm2qmrbtl3.ll
 ; cpython/optimized/preconfig.ll
@@ -213,6 +214,7 @@
 ; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
 ; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

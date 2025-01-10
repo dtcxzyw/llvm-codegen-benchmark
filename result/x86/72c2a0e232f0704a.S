@@ -22,7 +22,7 @@ func0000000000000548:                   # @func0000000000000548
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000764:                   # @func0000000000000764
+func0000000000000544:                   # @func0000000000000544
 	leaq	-1(%rdi,%rdx), %rax
 	addq	%rdi, %rsi
 	cmpq	%rax, %rsi
@@ -30,12 +30,6 @@ func0000000000000764:                   # @func0000000000000764
 	retq
 func00000000000005c4:                   # @func00000000000005c4
 	leaq	1(%rdi,%rdx), %rax
-	addq	%rdi, %rsi
-	cmpq	%rax, %rsi
-	setb	%al
-	retq
-func0000000000000544:                   # @func0000000000000544
-	leaq	-16(%rdi,%rdx), %rax
 	addq	%rdi, %rsi
 	cmpq	%rax, %rsi
 	setb	%al
@@ -63,6 +57,12 @@ func0000000000000068:                   # @func0000000000000068
 	addq	%rdi, %rsi
 	cmpq	%rax, %rsi
 	seta	%al
+	retq
+func0000000000000764:                   # @func0000000000000764
+	leaq	-1(%rdi,%rdx), %rax
+	addq	%rdi, %rsi
+	cmpq	%rax, %rsi
+	setb	%al
 	retq
 func0000000000000541:                   # @func0000000000000541
 	shlq	$5, %rdx

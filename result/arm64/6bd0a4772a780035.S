@@ -24,15 +24,6 @@ func000000000000002c:                   // @func000000000000002c
 	csel	w0, w8, wzr, ne
 	ret
                                         // -- End function
-func000000000000018c:                   // @func000000000000018c
-// %bb.0:                               // %entry
-	cmp	w1, #0
-	mov	w8, #18                         // =0x12
-	mov	w9, #15                         // =0xf
-	ccmp	x0, #0, #4, ne
-	csel	w0, w9, w8, ne
-	ret
-                                        // -- End function
 func000000000000010c:                   // @func000000000000010c
 // %bb.0:                               // %entry
 	lsr	x9, x1, #32
@@ -66,5 +57,14 @@ func0000000000000084:                   // @func0000000000000084
 	ccmp	x0, x8, #2, lo
 	mov	w8, #4                          // =0x4
 	csel	w0, w8, wzr, lo
+	ret
+                                        // -- End function
+func000000000000018c:                   // @func000000000000018c
+// %bb.0:                               // %entry
+	cmp	x1, #0
+	mov	w8, #5                          // =0x5
+	mov	w9, #8                          // =0x8
+	ccmp	w0, #2, #4, ne
+	csel	w0, w9, w8, ne
 	ret
                                         // -- End function

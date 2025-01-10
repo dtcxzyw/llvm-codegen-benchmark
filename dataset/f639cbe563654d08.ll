@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector2d.2702129" = type { i32, i32 }
+%"class.irr::core::vector2d.2702095" = type { i32, i32 }
 
 ; 19 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -27,7 +27,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.irr::core::vector2d.2702129", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.irr::core::vector2d.2702095", ptr %0, i64 %5
   ret ptr %6
 }
 

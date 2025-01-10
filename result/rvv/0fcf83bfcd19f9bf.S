@@ -100,10 +100,3 @@ func00000000000000fa:                   # @func00000000000000fa
 	vsll.vi	v10, v10, 12
 	vadd.vv	v8, v8, v10
 	ret
-func00000000000000fe:                   # @func00000000000000fe
-	lui	a0, 6
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v12
-	vsll.vi	v10, v10, 14
-	vadd.vv	v8, v8, v10
-	ret

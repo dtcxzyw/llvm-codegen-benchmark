@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 78 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -67,6 +67,7 @@
 ; wireshark/optimized/packet-ospf.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tacacs.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-uftp4.c.ll

@@ -1,19 +1,19 @@
 
-%"class.std::function.2636149" = type { %"class.std::_Function_base.2636150", ptr }
-%"class.std::_Function_base.2636150" = type { %"union.std::_Any_data.2636151", ptr }
-%"union.std::_Any_data.2636151" = type { %"union.std::_Nocopy_types.2636152" }
-%"union.std::_Nocopy_types.2636152" = type { { i64, i64 } }
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
-%"class.gmx::BasicVector.3361322" = type { [3 x float] }
-%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
-%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
-%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
-%union.anon.6.3535215 = type { %struct.list_head.3535195 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%union.anon.8.3535216 = type { i64 }
-%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
+%"class.std::function.2636116" = type { %"class.std::_Function_base.2636117", ptr }
+%"class.std::_Function_base.2636117" = type { %"union.std::_Any_data.2636118", ptr }
+%"union.std::_Any_data.2636118" = type { %"union.std::_Nocopy_types.2636119" }
+%"union.std::_Nocopy_types.2636119" = type { { i64, i64 } }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372" = type { i8, [7 x i8] }
+%"class.gmx::BasicVector.3361288" = type { [3 x float] }
+%struct.page.3535177 = type { i64, %union.anon.4.3535178, %union.anon.12.3535179, %struct.atomic_t.3535145, [8 x i8] }
+%union.anon.4.3535178 = type { %struct.anon.5.3535180 }
+%struct.anon.5.3535180 = type { %union.anon.6.3535181, ptr, %union.anon.8.3535182, i64 }
+%union.anon.6.3535181 = type { %struct.list_head.3535161 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%union.anon.8.3535182 = type { i64 }
+%union.anon.12.3535179 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
 
 ; 28 occurrences:
 ; mold/optimized/main.cc.ALPHA.cc.ll
@@ -48,8 +48,8 @@
 define ptr @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.std::function.2636149", ptr %3, i64 %1
-  %5 = getelementptr %"class.std::function.2636149", ptr %4, i64 %0, i32 0, i32 1
+  %4 = getelementptr nusw %"class.std::function.2636116", ptr %3, i64 %1
+  %5 = getelementptr %"class.std::function.2636116", ptr %4, i64 %0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -123,8 +123,8 @@ entry:
 define ptr @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142373", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142372", ptr %4, i64 %0
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -135,8 +135,8 @@ entry:
 define ptr @func000000000000002f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.gmx::BasicVector.3361322", ptr %3, i64 %1
-  %5 = getelementptr nuw %"class.gmx::BasicVector.3361322", ptr %4, i64 %0, i32 0, i64 1
+  %4 = getelementptr nusw %"class.gmx::BasicVector.3361288", ptr %3, i64 %1
+  %5 = getelementptr nuw %"class.gmx::BasicVector.3361288", ptr %4, i64 %0, i32 0, i64 1
   ret ptr %5
 }
 
@@ -150,8 +150,8 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3535211, ptr %3, i64 %1
-  %5 = getelementptr %struct.page.3535211, ptr %4, i64 %0
+  %4 = getelementptr %struct.page.3535177, ptr %3, i64 %1
+  %5 = getelementptr %struct.page.3535177, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }

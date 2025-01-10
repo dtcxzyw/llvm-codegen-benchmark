@@ -1,5 +1,5 @@
 
-; 353 occurrences:
+; 352 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -133,7 +133,6 @@
 ; icu/optimized/decNumber.ll
 ; icu/optimized/esctrn.ll
 ; icu/optimized/reslist.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/uloc_tag.ll
@@ -1791,7 +1790,7 @@ entry:
   ret i1 %4
 }
 
-; 749 occurrences:
+; 750 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -1950,6 +1949,7 @@ entry:
 ; icu/optimized/reldtfmt.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/smpdtfmt.ll
+; icu/optimized/swapimpl.ll
 ; icu/optimized/tzfmt.ll
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/ucnv2022.ll
@@ -4578,8 +4578,7 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
-; clamav/optimized/mew.c.ll
+; 19 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; linux/optimized/af_packet.ll

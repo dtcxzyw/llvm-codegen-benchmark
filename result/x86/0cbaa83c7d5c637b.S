@@ -21,10 +21,3 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	setb	%al
 	retq
-func000000000000008c:                   # @func000000000000008c
-	cmpl	$64, %edx
-	movq	$-1, %rax
-	cmovbq	%rsi, %rax
-	testq	%rax, %rdi
-	setne	%al
-	retq

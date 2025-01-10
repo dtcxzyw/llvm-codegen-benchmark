@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.548.2613202" = type { %"struct.std::__atomic_base.549.2613203" }
-%"struct.std::__atomic_base.549.2613203" = type { i32 }
+%"struct.std::atomic.548.2613169" = type { %"struct.std::__atomic_base.549.2613170" }
+%"struct.std::__atomic_base.549.2613170" = type { i32 }
 
 ; 37 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
@@ -45,7 +45,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.std::atomic.548.2613202", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.std::atomic.548.2613169", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734151" = type { i32, i32, %struct.face_table_info_t.2734152 }
-%struct.face_table_info_t.2734152 = type { ptr, i32 }
+%"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734117" = type { i32, i32, %struct.face_table_info_t.2734118 }
+%struct.face_table_info_t.2734118 = type { ptr, i32 }
 
 ; 9 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -17,7 +17,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = urem i32 194747424, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734151", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734117", ptr %0, i64 %3
   ret ptr %4
 }
 

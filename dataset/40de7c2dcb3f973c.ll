@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/verifier.ll
 ; ruby/optimized/transcode.ll
@@ -168,11 +167,10 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
 ; wireshark/optimized/packet-rtpproxy.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000014c(i8 %0, i32 %1, i32 %2) #0 {

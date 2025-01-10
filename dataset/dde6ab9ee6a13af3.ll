@@ -36,8 +36,7 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; cmake/optimized/archive_read_support_format_zip.c.ll
+; 3 occurrences:
 ; linux/optimized/scsi_error.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; qemu/optimized/migration_ram.c.ll

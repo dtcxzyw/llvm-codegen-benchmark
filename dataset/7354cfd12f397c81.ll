@@ -372,7 +372,7 @@ entry:
   ret i32 %4
 }
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
@@ -452,7 +452,6 @@ entry:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
 ; lvgl/optimized/lv_indev_scroll.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -515,7 +514,7 @@ entry:
   ret i32 %4
 }
 
-; 256 occurrences:
+; 253 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/inftrees.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -528,7 +527,6 @@ entry:
 ; boost/optimized/message.ll
 ; c3c/optimized/diagnostics.c.ll
 ; clamav/optimized/clamdcom.c.ll
-; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/macho.c.ll
 ; clamav/optimized/petite.c.ll
@@ -588,7 +586,6 @@ entry:
 ; linux/optimized/bitset.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/gup.ll
 ; linux/optimized/inftrees.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ip6_output.ll
@@ -688,7 +685,6 @@ entry:
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/varlena.ll
 ; postgres/optimized/varsup.ll
-; qemu/optimized/ahci.c.ll
 ; quantlib/optimized/svd.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/raudio.c.ll

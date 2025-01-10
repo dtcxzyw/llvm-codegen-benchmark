@@ -1,12 +1,12 @@
 
-%struct.deflate_optimum_node.2747994 = type { i32, i32 }
-%struct.list_head.3531716 = type { ptr, ptr }
-%struct.ve_node.3549928 = type { %struct.rb_node.3549929, i32 }
-%struct.rb_node.3549929 = type { i64, ptr, ptr }
-%struct.WordEntry.3654110 = type { i32 }
-%"struct.nix::Attr.3687030" = type { %"class.nix::Symbol.3687031", %"class.nix::PosIdx.3686595", ptr }
-%"class.nix::Symbol.3687031" = type { i32 }
-%"class.nix::PosIdx.3686595" = type { i32 }
+%struct.deflate_optimum_node.2747960 = type { i32, i32 }
+%struct.list_head.3531682 = type { ptr, ptr }
+%struct.ve_node.3549894 = type { %struct.rb_node.3549895, i32 }
+%struct.rb_node.3549895 = type { i64, ptr, ptr }
+%struct.WordEntry.3654076 = type { i32 }
+%"struct.nix::Attr.3686980" = type { %"class.nix::Symbol.3686981", %"class.nix::PosIdx.3686545", ptr }
+%"class.nix::Symbol.3686981" = type { i32 }
+%"class.nix::PosIdx.3686545" = type { i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
@@ -46,7 +46,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 6532420
-  %5 = getelementptr nusw nuw [305000 x %struct.deflate_optimum_node.2747994], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [305000 x %struct.deflate_optimum_node.2747960], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -112,7 +112,7 @@ define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 48
-  %5 = getelementptr [4 x %struct.list_head.3531716], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [4 x %struct.list_head.3531682], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -128,7 +128,7 @@ define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 48
-  %5 = getelementptr [4 x %struct.list_head.3531716], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [4 x %struct.list_head.3531682], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -140,7 +140,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 64
-  %5 = getelementptr [27 x %struct.ve_node.3549928], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [27 x %struct.ve_node.3549894], ptr %4, i64 0, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -152,7 +152,7 @@ define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr [0 x %struct.WordEntry.3654110], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [0 x %struct.WordEntry.3654076], ptr %4, i64 0, i64 %3
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -165,7 +165,7 @@ define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw [0 x %"struct.nix::Attr.3687030"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [0 x %"struct.nix::Attr.3686980"], ptr %4, i64 0, i64 %3
   %6 = icmp ne ptr %0, %5
   ret i1 %6
 }

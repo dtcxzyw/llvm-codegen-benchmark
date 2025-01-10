@@ -346,7 +346,7 @@ entry:
   ret i32 %2
 }
 
-; 253 occurrences:
+; 252 occurrences:
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcNpnSave.c.ll
@@ -421,7 +421,6 @@ entry:
 ; assimp/optimized/AssbinLoader.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/PlyExporter.cpp.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; brotli/optimized/metablock.c.ll
 ; bullet3/optimized/b3GjkEpa.ll
@@ -760,13 +759,14 @@ entry:
   ret i32 %2
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
+; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll

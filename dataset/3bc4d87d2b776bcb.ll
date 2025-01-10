@@ -1,5 +1,5 @@
 
-%struct.JOB_RES_SOCKET_t.3055904 = type { i32, ptr }
+%struct.JOB_RES_SOCKET_t.3055870 = type { i32, ptr }
 
 ; 4 occurrences:
 ; miniaudio/optimized/unity.c.ll
@@ -12,7 +12,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = udiv i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.JOB_RES_SOCKET_t.3055904, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.JOB_RES_SOCKET_t.3055870, ptr %0, i64 %5
   ret ptr %6
 }
 

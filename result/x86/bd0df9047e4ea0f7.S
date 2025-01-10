@@ -17,13 +17,3 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-268435457, %esi               # imm = 0xEFFFFFFF
 	orl	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	%edi, %ecx
-	andl	$16, %ecx
-	shll	$3, %ecx
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmovnel	%ecx, %eax
-	andl	$8, %edi
-	orl	%edi, %eax
-	retq

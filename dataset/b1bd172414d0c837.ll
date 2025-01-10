@@ -13,7 +13,7 @@ entry:
   ret i1 %6
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; gromacs/optimized/inputrec.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
@@ -26,6 +26,8 @@ entry:
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; postgres/optimized/arrayfuncs.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll

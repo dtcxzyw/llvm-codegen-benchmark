@@ -338,7 +338,7 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -361,14 +361,16 @@ entry:
 ; openjdk/optimized/hb-map.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = shl nuw nsw i64 12, %2
-  %4 = select i1 %0, i64 12, i64 %3
+  %3 = shl nuw nsw i64 1, %2
+  %4 = select i1 %0, i64 1, i64 %3
   ret i64 %4
 }
 

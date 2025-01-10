@@ -1,5 +1,5 @@
 
-; 929 occurrences:
+; 927 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -71,7 +71,6 @@
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
-; darktable/optimized/recentcollect.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
@@ -766,7 +765,6 @@
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/parse.cc.ll
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; redis/optimized/db.ll
@@ -937,7 +935,7 @@ entry:
   ret i1 %4
 }
 
-; 1467 occurrences:
+; 1468 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -1127,6 +1125,7 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/marshal.ll
 ; cpython/optimized/optimizer.ll
 ; cpython/optimized/preconfig.ll
@@ -1508,7 +1507,6 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; lua/optimized/ldebug.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -1640,6 +1638,7 @@ entry:
 ; openjdk/optimized/X11Color.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/addnode.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/cmsalpha.ll
 ; openjdk/optimized/divnode.ll
@@ -4449,7 +4448,7 @@ entry:
   ret i1 %4
 }
 
-; 643 occurrences:
+; 644 occurrences:
 ; abc/optimized/mtrGroup.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -4919,6 +4918,7 @@ entry:
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; llvm/optimized/XCOFF.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
 ; luajit/optimized/minilua.ll

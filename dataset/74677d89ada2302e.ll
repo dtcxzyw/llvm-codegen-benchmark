@@ -14772,7 +14772,7 @@ entry:
   ret i1 %3
 }
 
-; 235 occurrences:
+; 236 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
@@ -14959,6 +14959,7 @@ entry:
 ; postgres/optimized/pg_dump.ll
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/pl_gram.ll
+; postgres/optimized/predicate.ll
 ; postgres/optimized/preproc.ll
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/regproc.ll
@@ -15016,7 +15017,7 @@ entry:
   ret i1 %3
 }
 
-; 515 occurrences:
+; 517 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; clamav/optimized/spin.c.ll
@@ -15327,6 +15328,7 @@ entry:
 ; postgres/optimized/plancat.ll
 ; postgres/optimized/planner.ll
 ; postgres/optimized/postinit.ll
+; postgres/optimized/predicate.ll
 ; postgres/optimized/predtest.ll
 ; postgres/optimized/preptlist.ll
 ; postgres/optimized/prepunion.ll
@@ -15358,6 +15360,7 @@ entry:
 ; qemu/optimized/hw_ide_core.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
+; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/net_tap.c.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; qemu/optimized/system_memory.c.ll
@@ -16860,7 +16863,7 @@ entry:
   ret i1 %3
 }
 
-; 3423 occurrences:
+; 3427 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -16923,6 +16926,7 @@ entry:
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSatMap.c.ll
+; abc/optimized/giaSif.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUnate.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -17696,6 +17700,7 @@ entry:
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/SourceMapGenerator.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
+; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; hermes/optimized/TraceInterpreter.cpp.ll
 ; hermes/optimized/TracingRuntime.cpp.ll
@@ -18064,6 +18069,7 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/StmtOpenACC.cpp.ll
+; llvm/optimized/StringRef.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; llvm/optimized/SymbolDumper.cpp.ll
@@ -20283,6 +20289,7 @@ entry:
 ; zxing/optimized/PDFDetector.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000064(ptr %0, ptr %1) #0 {
@@ -24415,7 +24422,7 @@ entry:
   ret i1 %3
 }
 
-; 1688 occurrences:
+; 1687 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
@@ -24851,7 +24858,6 @@ entry:
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/AArch64StorePairSuppress.cpp.ll
-; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll

@@ -205,12 +205,6 @@ func0000000000000086:                   # @func0000000000000086
 	addiw	a0, a0, 64
 	slt	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	addiw	a0, a0, -40
-	sltu	a0, a0, a1
-	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 48
 	srli	a1, a1, 48
@@ -276,6 +270,12 @@ func0000000000000079:                   # @func0000000000000079
 	addiw	a0, a0, 1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	addiw	a0, a0, -1
+	sltu	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	slli	a1, a1, 48

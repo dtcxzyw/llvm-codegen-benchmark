@@ -232,7 +232,7 @@ entry:
   ret i1 %4
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; boost/optimized/buffer_piece_border.ll
 ; boost/optimized/intersection_box.ll
@@ -240,7 +240,6 @@ entry:
 ; casadi/optimized/qrqp.cpp.ll
 ; diesel-rs/optimized/1kyzuzxhcccv0umo.ll
 ; graphviz/optimized/QuadTree.c.ll
-; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/stress.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
@@ -394,16 +393,6 @@ entry:
 define i1 @func0000000000000009(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ueq double %1, %2
-  %4 = select i1 %0, i1 true, i1 %3
-  ret i1 %4
-}
-
-; 1 occurrences:
-; graphviz/optimized/dotsplines.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp one double %1, %2
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }

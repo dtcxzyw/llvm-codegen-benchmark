@@ -176,7 +176,7 @@ entry:
   ret i32 %3
 }
 
-; 231 occurrences:
+; 230 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcMinBase.c.ll
 ; abc/optimized/abcObj.c.ll
@@ -238,7 +238,6 @@ entry:
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_spots.c.ll
-; darktable/optimized/modulegroups.c.ll
 ; flac/optimized/format.c.ll
 ; flac/optimized/metadata_object.c.ll
 ; git/optimized/basics.ll
@@ -307,7 +306,6 @@ entry:
 ; llvm/optimized/SemaStmtAttr.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; lua/optimized/lapi.ll
-; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lib_debug.ll
 ; luajit/optimized/lib_debug_dyn.ll
@@ -388,6 +386,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-aoe.c.ll
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-h225.c.ll

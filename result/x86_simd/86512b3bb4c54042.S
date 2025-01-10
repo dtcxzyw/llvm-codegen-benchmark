@@ -93,3 +93,12 @@ func000000000000000b:                   # @func000000000000000b
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
 	vpandq	.LCPI10_1(%rip){1to4}, %ymm0, %ymm0
 	retq
+.LCPI11_0:
+	.quad	63                              # 0x3f
+.LCPI11_1:
+	.quad	-64                             # 0xffffffffffffffc0
+func0000000000000008:                   # @func0000000000000008
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	.LCPI11_0(%rip){1to4}, %ymm0, %ymm0
+	vpandq	.LCPI11_1(%rip){1to4}, %ymm0, %ymm0
+	retq

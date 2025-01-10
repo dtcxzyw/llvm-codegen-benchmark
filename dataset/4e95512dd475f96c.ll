@@ -179,6 +179,19 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; slurm/optimized/cron.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000641(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = sub i32 %3, %1
+  %5 = add nuw i32 %0, 1
+  %6 = icmp eq i32 %5, %4
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; Function Attrs: nounwind

@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; opencv/optimized/keypoint.cpp.ll
+; 4 occurrences:
 ; openusd/optimized/reconintra.c.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll

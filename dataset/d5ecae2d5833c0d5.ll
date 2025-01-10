@@ -1,5 +1,5 @@
 
-%struct.clusterMsgDataGossip.3662019 = type { [40 x i8], i32, i32, [46 x i8], i16, i16, i16, i16, i16 }
+%struct.clusterMsgDataGossip.3661969 = type { [40 x i8], i32, i32, [46 x i8], i16, i16, i16, i16, i16 }
 
 ; 5 occurrences:
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
@@ -21,7 +21,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [1 x %struct.clusterMsgDataGossip.3662019], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [1 x %struct.clusterMsgDataGossip.3661969], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

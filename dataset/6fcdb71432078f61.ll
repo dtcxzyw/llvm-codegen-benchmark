@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3076855" = type { %"class.hermes::vm::HermesValue.3076856" }
-%"class.hermes::vm::HermesValue.3076856" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076821" = type { %"class.hermes::vm::HermesValue.3076822" }
+%"class.hermes::vm::HermesValue.3076822" = type { i64 }
 
 ; 2 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076855", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076821", ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -12,7 +12,7 @@ entry:
   ret i64 %7
 }
 
-; 152 occurrences:
+; 151 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -69,7 +69,6 @@ entry:
 ; linux/optimized/iface.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/transport.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -176,7 +175,7 @@ entry:
   ret i64 %7
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -220,6 +219,7 @@ entry:
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -239,7 +239,7 @@ entry:
   ret i64 %7
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
@@ -268,7 +268,6 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
@@ -354,6 +353,19 @@ entry:
   %5 = or i64 %4, %3
   %6 = shl nuw nsw i64 %0, 46
   %7 = or i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/InstrProfWriter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000fd(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 54
+  %4 = shl nuw nsw i64 %1, 55
+  %5 = or disjoint i64 %4, %3
+  %6 = shl nuw i64 %0, 56
+  %7 = or disjoint i64 %6, %5
   ret i64 %7
 }
 

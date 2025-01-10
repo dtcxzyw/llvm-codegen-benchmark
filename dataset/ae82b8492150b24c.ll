@@ -1,5 +1,5 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
+%class.btVector3.2818110 = type { [4 x float] }
 
 ; 37 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -46,7 +46,7 @@ entry:
   %3 = icmp eq i64 %1, 3
   %4 = select i1 %3, i64 0, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818110], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

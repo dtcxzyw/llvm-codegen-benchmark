@@ -1,4 +1,28 @@
 
+; 14 occurrences:
+; cpython/optimized/codecs.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; flac/optimized/window.c.ll
+; linux/optimized/gup.ll
+; linux/optimized/huf_decompress.ll
+; linux/optimized/memory.ll
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/tcp.ll
+; llvm/optimized/LegalizeIntegerTypes.cpp.ll
+; qemu/optimized/block_vvfat.c.ll
+; slurm/optimized/KangarooTwelve.ll
+; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
+; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
+; wireshark/optimized/wmem_allocator_block.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = sub i32 %0, %2
+  %4 = shl i32 %3, 4
+  ret i32 %4
+}
+
 ; 6 occurrences:
 ; gromacs/optimized/grid.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
@@ -23,29 +47,6 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sub nsw i32 %0, %2
   %4 = shl nsw i32 %3, 1
-  ret i32 %4
-}
-
-; 13 occurrences:
-; cpython/optimized/codecs.ll
-; cvc5/optimized/fc_simplex.cpp.ll
-; flac/optimized/window.c.ll
-; linux/optimized/gup.ll
-; linux/optimized/huf_decompress.ll
-; linux/optimized/memory.ll
-; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/tcp.ll
-; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; slurm/optimized/KangarooTwelve.ll
-; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
-; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
-; wireshark/optimized/wmem_allocator_block.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = sub i32 %0, %2
-  %4 = shl i32 %3, 1
   ret i32 %4
 }
 

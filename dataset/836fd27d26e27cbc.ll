@@ -1,5 +1,5 @@
 
-%"class.draco::IndexType.130.3087044" = type { i32 }
+%"class.draco::IndexType.130.3087010" = type { i32 }
 
 ; 16 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -60,7 +60,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.draco::IndexType.130.3087044", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.draco::IndexType.130.3087010", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,8 +1,8 @@
 
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%struct.lv_gradient_stop_t.3074446 = type { %struct.lv_color_t.3074445, i8, i8 }
-%struct.lv_color_t.3074445 = type { i8, i8, i8 }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%struct.lv_gradient_stop_t.3074412 = type { %struct.lv_color_t.3074411, i8, i8 }
+%struct.lv_color_t.3074411 = type { i8, i8, i8 }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -40,7 +40,7 @@ entry:
   %3 = and i32 %2, 268435455
   %4 = add nsw i32 %3, -5
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = and i32 %2, 255
   %4 = add nsw i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw [2 x %struct.lv_gradient_stop_t.3074446], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [2 x %struct.lv_gradient_stop_t.3074412], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

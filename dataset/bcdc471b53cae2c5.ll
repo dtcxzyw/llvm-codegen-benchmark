@@ -1,6 +1,6 @@
 
-%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
-%struct.ConvexVolume.3108435 = type { [36 x float], float, float, i32, i32 }
+%class.itableOffsetEntry.2747717 = type <{ ptr, i32, [4 x i8] }>
+%struct.ConvexVolume.3108401 = type { [36 x float], float, float, i32, i32 }
 
 ; 3 occurrences:
 ; linux/optimized/intel_bios.ll
@@ -101,7 +101,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = getelementptr nusw i64, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.itableOffsetEntry.2747751, ptr %4, i64 %5
+  %6 = getelementptr %class.itableOffsetEntry.2747717, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }
@@ -112,7 +112,7 @@ entry:
 define ptr @func00000000000000fb(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 9348
-  %4 = getelementptr nusw nuw %struct.ConvexVolume.3108435, ptr %3, i64 %0
+  %4 = getelementptr nusw nuw %struct.ConvexVolume.3108401, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw float, ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8

@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; hyperscan/optimized/gough.c.ll
 ; libevent/optimized/evdns.c.ll
 ; linux/optimized/rx.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {

@@ -79,8 +79,9 @@ func0000000000000546:                   # @func0000000000000546
 	orb	%cl, %al
 	retq
 func0000000000000426:                   # @func0000000000000426
-	cmpq	%rdx, %rsi
-	setle	%cl
+	subq	%rdx, %rsi
+	cmpq	$5, %rsi
+	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al

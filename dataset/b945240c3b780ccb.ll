@@ -1,12 +1,12 @@
 
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3434319" = type { %union.anon.4.3434320, i8, i8, i8, i8, i32, ptr }
-%union.anon.4.3434320 = type { i64 }
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" = type { %union.anon.8.3671434, i8, i8, i8, i8, i32, ptr }
-%union.anon.8.3671434 = type { i64 }
-%union.IRIns.3680915 = type { %struct.GCRef.3680916 }
-%struct.GCRef.3680916 = type { i64 }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434284" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3434285" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3434285" = type { %union.anon.4.3434286, i8, i8, i8, i8, i32, ptr }
+%union.anon.4.3434286 = type { i64 }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671382" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671383" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3671383" = type { %union.anon.8.3671384, i8, i8, i8, i8, i32, ptr }
+%union.anon.8.3671384 = type { i64 }
+%union.IRIns.3680865 = type { %struct.GCRef.3680866 }
+%struct.GCRef.3680866 = type { i64 }
 
 ; 76 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -126,7 +126,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434318", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3434284", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -176,7 +176,7 @@ entry:
 define i1 @func00000000000003e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671382", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = icmp eq ptr %4, %5
   ret i1 %6
@@ -189,7 +189,7 @@ entry:
 define i1 @func0000000000000161(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %union.IRIns.3680915, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %union.IRIns.3680865, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp eq ptr %4, %5
   ret i1 %6

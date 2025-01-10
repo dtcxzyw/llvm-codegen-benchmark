@@ -26,7 +26,7 @@ entry:
   ret i64 %3
 }
 
-; 294 occurrences:
+; 293 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/caching.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -283,7 +283,6 @@ entry:
 ; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openusd/optimized/clipSet.cpp.ll
-; php/optimized/pack.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/padding_optimizer.cc.ll

@@ -1,9 +1,10 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; boost/optimized/operations.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/multi.c.ll
 ; cpython/optimized/floatobject.ll
 ; curl/optimized/libcurl_la-multi.ll

@@ -1,5 +1,5 @@
 
-%"struct.facebook::velox::BaseVector::CopyRange.2800610" = type { i32, i32, i32 }
+%"struct.facebook::velox::BaseVector::CopyRange.2800576" = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = tail call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.facebook::velox::BaseVector::CopyRange.2800610", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.facebook::velox::BaseVector::CopyRange.2800576", ptr %0, i64 %5
   ret ptr %6
 }
 

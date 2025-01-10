@@ -1,5 +1,5 @@
 
-; 1072 occurrences:
+; 1073 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -1035,6 +1035,7 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -1325,7 +1326,7 @@ entry:
   ret i32 %3
 }
 
-; 299 occurrences:
+; 298 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; c3c/optimized/bigint.c.ll
@@ -1614,7 +1615,6 @@ entry:
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; llvm/optimized/X86FastPreTileConfig.cpp.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; llvm/optimized/X86PadShortFunction.cpp.ll
 ; llvm/optimized/X86PreTileConfig.cpp.ll

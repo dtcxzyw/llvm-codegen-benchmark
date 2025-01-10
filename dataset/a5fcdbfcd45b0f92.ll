@@ -1,9 +1,9 @@
 
-%struct.inflate_huft_s.3062597 = type { %union.anon.3062598, i16 }
-%union.anon.3062598 = type { %struct.anon.3062599 }
-%struct.anon.3062599 = type { i8, i8 }
-%struct.i915_gem_proto_engine.3538703 = type { i32, ptr, i32, i32, ptr, %struct.intel_sseu.3538704 }
-%struct.intel_sseu.3538704 = type { i8, i8, i8, i8 }
+%struct.inflate_huft_s.3062563 = type { %union.anon.3062564, i16 }
+%union.anon.3062564 = type { %struct.anon.3062565 }
+%struct.anon.3062565 = type { i8, i8 }
+%struct.i915_gem_proto_engine.3538669 = type { i32, ptr, i32, i32, ptr, %struct.intel_sseu.3538670 }
+%struct.intel_sseu.3538670 = type { i8, i8, i8, i8 }
 
 ; 2 occurrences:
 ; clamav/optimized/infblock.c.ll
@@ -13,7 +13,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr nusw nuw %struct.inflate_huft_s.3062597, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.inflate_huft_s.3062563, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -32,7 +32,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, %3
-  %5 = getelementptr %struct.i915_gem_proto_engine.3538703, ptr %0, i64 %4
+  %5 = getelementptr %struct.i915_gem_proto_engine.3538669, ptr %0, i64 %4
   ret ptr %5
 }
 

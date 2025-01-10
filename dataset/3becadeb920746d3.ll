@@ -785,7 +785,7 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/acecBo.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -798,7 +798,6 @@ entry:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_sprite.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll

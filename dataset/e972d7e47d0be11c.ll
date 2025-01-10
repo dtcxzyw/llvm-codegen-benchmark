@@ -1,20 +1,20 @@
 
-%struct.rb_id_item.2600909 = type { i32, i32, i64 }
-%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
-%"class.rocksdb::lru_cache::LRUCacheShard.2612862" = type { %"class.rocksdb::CacheShardBase.2612863", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2612864", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2612865", i64, i64, %"class.rocksdb::port::Mutex.2612866", ptr }
-%"class.rocksdb::CacheShardBase.2612863" = type { i32 }
-%"struct.rocksdb::lru_cache::LRUHandle.2612864" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
-%"class.rocksdb::lru_cache::LRUHandleTable.2612865" = type { i32, %"class.std::unique_ptr.2612867", i32, i32, ptr }
-%"class.std::unique_ptr.2612867" = type { %"struct.std::__uniq_ptr_data.2612868" }
-%"struct.std::__uniq_ptr_data.2612868" = type { %"class.std::__uniq_ptr_impl.2612869" }
-%"class.std::__uniq_ptr_impl.2612869" = type { %"class.std::tuple.2612870" }
-%"class.std::tuple.2612870" = type { %"struct.std::_Tuple_impl.2612871" }
-%"struct.std::_Tuple_impl.2612871" = type { %"struct.std::_Head_base.1.2612872" }
-%"struct.std::_Head_base.1.2612872" = type { ptr }
-%"class.rocksdb::port::Mutex.2612866" = type { %union.pthread_mutex_t.2612873 }
-%union.pthread_mutex_t.2612873 = type { %struct.__pthread_mutex_s.2612874 }
-%struct.__pthread_mutex_s.2612874 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2612875 }
-%struct.__pthread_internal_list.2612875 = type { ptr, ptr }
+%struct.rb_id_item.2600876 = type { i32, i32, i64 }
+%struct.pm_constant_pool_bucket_t.2600897 = type { i32, i32 }
+%"class.rocksdb::lru_cache::LRUCacheShard.2612829" = type { %"class.rocksdb::CacheShardBase.2612830", i64, i64, i64, i8, double, double, double, double, %"struct.rocksdb::lru_cache::LRUHandle.2612831", ptr, ptr, %"class.rocksdb::lru_cache::LRUHandleTable.2612832", i64, i64, %"class.rocksdb::port::Mutex.2612833", ptr }
+%"class.rocksdb::CacheShardBase.2612830" = type { i32 }
+%"struct.rocksdb::lru_cache::LRUHandle.2612831" = type { ptr, ptr, ptr, ptr, ptr, i64, i64, i32, i32, i8, i8, [1 x i8] }
+%"class.rocksdb::lru_cache::LRUHandleTable.2612832" = type { i32, %"class.std::unique_ptr.2612834", i32, i32, ptr }
+%"class.std::unique_ptr.2612834" = type { %"struct.std::__uniq_ptr_data.2612835" }
+%"struct.std::__uniq_ptr_data.2612835" = type { %"class.std::__uniq_ptr_impl.2612836" }
+%"class.std::__uniq_ptr_impl.2612836" = type { %"class.std::tuple.2612837" }
+%"class.std::tuple.2612837" = type { %"struct.std::_Tuple_impl.2612838" }
+%"struct.std::_Tuple_impl.2612838" = type { %"struct.std::_Head_base.1.2612839" }
+%"struct.std::_Head_base.1.2612839" = type { ptr }
+%"class.rocksdb::port::Mutex.2612833" = type { %union.pthread_mutex_t.2612840 }
+%union.pthread_mutex_t.2612840 = type { %struct.__pthread_mutex_s.2612841 }
+%struct.__pthread_mutex_s.2612841 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2612842 }
+%struct.__pthread_internal_list.2612842 = type { ptr, ptr }
 
 ; 25 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -47,7 +47,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.rb_id_item.2600909, ptr %0, i64 %4
+  %5 = getelementptr %struct.rb_id_item.2600876, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -116,7 +116,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %4
+  %5 = getelementptr %struct.pm_constant_pool_bucket_t.2600897, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1734,7 +1734,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.rocksdb::lru_cache::LRUCacheShard.2612862", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.rocksdb::lru_cache::LRUCacheShard.2612829", ptr %0, i64 %4
   ret ptr %5
 }
 

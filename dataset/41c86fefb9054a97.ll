@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/tcp.ll
+; postgres/optimized/xlogreader.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; Function Attrs: nounwind
@@ -16,7 +17,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 41 occurrences:
+; 53 occurrences:
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/async.ll
 ; boost/optimized/async_fut.ll
@@ -28,10 +29,12 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/spawn.ll
 ; boost/optimized/system_test1.ll
 ; boost/optimized/system_test2.ll
+; clamav/optimized/oabd.c.ll
 ; clamav/optimized/scanners.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; git/optimized/object-file.ll
+; git/optimized/remote-curl.ll
 ; gromacs/optimized/manyautocorrelation.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/hidraw.ll
@@ -41,16 +44,26 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/trace_events.ll
+; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; nuttx/optimized/lib_meminstream.c.ll
 ; oiio/optimized/hdrinput.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
+; openjdk/optimized/compileLog.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; postgres/optimized/backend_status.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
+; qemu/optimized/chardev_char-socket.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_desc-msos.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/cmswapcurvestate.ll
 ; slurm/optimized/gres_ctld.ll

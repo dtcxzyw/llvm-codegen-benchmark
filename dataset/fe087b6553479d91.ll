@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; lvgl/optimized/lv_image.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -302,10 +303,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; linux/optimized/io_pgtable.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -319,9 +319,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; arrow/optimized/float16.cc.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {

@@ -1,8 +1,8 @@
 
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
-%struct.grpc_slice.3598431 = type { ptr, %"union.grpc_slice::grpc_slice_data.3598432" }
-%"union.grpc_slice::grpc_slice_data.3598432" = type { %"struct.grpc_slice::grpc_slice_data::grpc_slice_refcounted.3598433", [8 x i8] }
-%"struct.grpc_slice::grpc_slice_data::grpc_slice_refcounted.3598433" = type { i64, ptr }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
+%struct.grpc_slice.3598397 = type { ptr, %"union.grpc_slice::grpc_slice_data.3598398" }
+%"union.grpc_slice::grpc_slice_data.3598398" = type { %"struct.grpc_slice::grpc_slice_data::grpc_slice_refcounted.3598399", [8 x i8] }
+%"struct.grpc_slice::grpc_slice_data::grpc_slice_refcounted.3598399" = type { i64, ptr }
 
 ; 17 occurrences:
 ; clamav/optimized/upack.c.ll
@@ -144,7 +144,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = zext i8 %0 to i64
-  %6 = getelementptr %struct.bio_vec.3550063, ptr %4, i64 %5
+  %6 = getelementptr %struct.bio_vec.3550029, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -153,7 +153,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.grpc_slice.3598431, ptr %1, i64 %2
+  %3 = getelementptr %struct.grpc_slice.3598397, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -23
   %5 = zext i8 %0 to i64
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5

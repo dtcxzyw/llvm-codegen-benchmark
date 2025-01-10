@@ -1,7 +1,7 @@
 
-%"union.absl::lts_20230802::container_internal::map_slot_type.677.3665823" = type { %"struct.std::pair.198.3665822" }
-%"struct.std::pair.198.3665822" = type { %"struct.std::pair.137.3665780", ptr }
-%"struct.std::pair.137.3665780" = type <{ ptr, i32, [4 x i8] }>
+%"union.absl::lts_20230802::container_internal::map_slot_type.677.3665773" = type { %"struct.std::pair.198.3665772" }
+%"struct.std::pair.198.3665772" = type { %"struct.std::pair.137.3665730", ptr }
+%"struct.std::pair.137.3665730" = type <{ ptr, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; openjdk/optimized/zip_util.ll
@@ -83,9 +83,9 @@ define ptr @func000000000000007e(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw %"union.absl::lts_20230802::container_internal::map_slot_type.677.3665823", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"union.absl::lts_20230802::container_internal::map_slot_type.677.3665773", ptr %4, i64 %3
   %6 = sext i32 %0 to i64
-  %7 = getelementptr nusw %"union.absl::lts_20230802::container_internal::map_slot_type.677.3665823", ptr %5, i64 %6
+  %7 = getelementptr nusw %"union.absl::lts_20230802::container_internal::map_slot_type.677.3665773", ptr %5, i64 %6
   ret ptr %7
 }
 

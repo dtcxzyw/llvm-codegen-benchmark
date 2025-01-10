@@ -1,8 +1,8 @@
 
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
-%struct.dt_iop_colorzones_node_t.2874016 = type { float, float }
-%struct.WordEntry.3651816 = type { i32 }
-%"struct.cv::CircleData.3731276" = type { double, i32, i64 }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
+%struct.dt_iop_colorzones_node_t.2873982 = type { float, float }
+%struct.WordEntry.3651782 = type { i32 }
+%"struct.cv::CircleData.3731226" = type { double, i32, i64 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_tonecurve.c.ll
@@ -10,8 +10,8 @@
 define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -24,8 +24,8 @@ entry:
 define ptr @func0000000000000060(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -36,8 +36,8 @@ entry:
 define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2874016]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nuw %struct.dt_iop_colorzones_node_t.2874016, ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_colorzones_node_t.2873982]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nuw %struct.dt_iop_colorzones_node_t.2873982, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 
@@ -63,7 +63,7 @@ entry:
 define ptr @func0000000000000043(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [0 x %struct.WordEntry.3651816], ptr %0, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.WordEntry.3651782], ptr %0, i64 0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
@@ -75,8 +75,8 @@ entry:
 define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [100 x %"struct.cv::CircleData.3731276"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nuw %"struct.cv::CircleData.3731276", ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw nuw [100 x %"struct.cv::CircleData.3731226"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nuw %"struct.cv::CircleData.3731226", ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

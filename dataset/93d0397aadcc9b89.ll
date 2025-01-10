@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
 ; 330 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -336,7 +336,7 @@
 define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.28.2602074", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

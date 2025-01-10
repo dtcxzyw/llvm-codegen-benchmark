@@ -97,7 +97,7 @@ entry:
   ret i1 %3
 }
 
-; 699 occurrences:
+; 698 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -311,7 +311,6 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/memory.ll
 ; linux/optimized/n_tty.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -4222,9 +4221,8 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/mmapmodule.ll
-; postgres/optimized/buffile.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
 ; rocksdb/optimized/log_writer.cc.ll
@@ -4363,7 +4361,7 @@ entry:
   ret i1 %3
 }
 
-; 30 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/1rfb1t3n8679w74r.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -4386,9 +4384,6 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
-; typst-rs/optimized/1c2qpu6zljc8gscz.ll
-; typst-rs/optimized/377uk5tkmxagdt0q.ll
-; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
 ; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
@@ -4427,7 +4422,7 @@ entry:
   ret i1 %3
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; boost/optimized/process.ll
 ; boost/optimized/target.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
@@ -4473,7 +4468,6 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; protobuf/optimized/wire_format_lite.cc.ll
 ; qemu/optimized/block_block-copy.c.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; unicode-normalization-rs/optimized/2dhzw0mhmvlvodqn.ll
@@ -4614,7 +4608,7 @@ entry:
   ret i1 %3
 }
 
-; 71 occurrences:
+; 75 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; boost/optimized/work_stealing.ll
@@ -4683,6 +4677,10 @@ entry:
 ; rust-analyzer-rs/optimized/59dl6i7wymyjqg05.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; rust-analyzer-rs/optimized/sjwv4e3g2r9o4x0.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; typst-rs/optimized/1c2qpu6zljc8gscz.ll
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; yosys/optimized/freduce.ll

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; cmake/optimized/fs.c.ll
 ; jq/optimized/regparse.ll
 ; libuv/optimized/fs.c.ll
@@ -8,6 +8,7 @@
 ; node/optimized/fs.ll
 ; oniguruma/optimized/regparse.ll
 ; opencv/optimized/convolution.cpp.ll
+; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/mca_base_var_group.ll
 ; openmpi/optimized/pmix_mca_base_var_group.ll
 ; stockfish/optimized/search.ll

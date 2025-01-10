@@ -1,9 +1,9 @@
 
-%"struct.mold::elf::VersionPattern.2640461" = type <{ %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", i16, i8, [5 x i8] }>
-%"class.std::basic_string_view.2640338" = type { i64, ptr }
-%struct.aiVectorKey.2824937 = type <{ double, %class.aiVector3t.2824908, [4 x i8] }>
-%class.aiVector3t.2824908 = type { float, float, float }
-%struct.codel_vars.3548782 = type { i32, i32, i8, i16, i32, i32, i32 }
+%"struct.mold::elf::VersionPattern.2640428" = type <{ %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", %"class.std::basic_string_view.2640305", i16, i8, [5 x i8] }>
+%"class.std::basic_string_view.2640305" = type { i64, ptr }
+%struct.aiVectorKey.2824903 = type <{ double, %class.aiVector3t.2824874, [4 x i8] }>
+%class.aiVector3t.2824874 = type { float, float, float }
+%struct.codel_vars.3548748 = type { i32, i32, i8, i16, i32, i32, i32 }
 
 ; 21 occurrences:
 ; hyperscan/optimized/rose_build_add.cpp.ll
@@ -31,7 +31,7 @@
 define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640461", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640428", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 56
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -59,7 +59,7 @@ entry:
 define i1 @func0000000000000361(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 44
-  %4 = getelementptr nusw %struct.aiVectorKey.2824937, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct.aiVectorKey.2824903, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -89,7 +89,7 @@ entry:
 define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 56
-  %4 = getelementptr %struct.codel_vars.3548782, ptr %1, i64 %3
+  %4 = getelementptr %struct.codel_vars.3548748, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 -96
   %6 = icmp eq ptr %5, %4
   ret i1 %6

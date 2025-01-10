@@ -23,10 +23,10 @@ func0000000000000003:                   # @func0000000000000003
 	cmovgel	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	cmpl	$255, %edi
-	movl	$255, %eax
-	cmovll	%edi, %eax
-	movl	%eax, %ecx
-	sarl	$31, %ecx
-	andnl	%eax, %ecx, %eax
+	cmpl	$512, %edi                      # imm = 0x200
+	movl	$512, %ecx                      # imm = 0x200
+	cmovll	%edi, %ecx
+	cmpl	$5, %ecx
+	movl	$4, %eax
+	cmovgel	%ecx, %eax
 	retq

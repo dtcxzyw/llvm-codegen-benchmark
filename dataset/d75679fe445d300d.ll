@@ -128,9 +128,8 @@ entry:
   ret i16 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/sky2.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/cavegen.cpp.ll

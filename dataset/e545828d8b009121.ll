@@ -1,14 +1,10 @@
 
-; 24 occurrences:
+; 19 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/cpio.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ich8lan.ll
 ; openmpi/optimized/ethtool.ll
@@ -21,7 +17,6 @@
 ; postgres/optimized/rewriteheap.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind

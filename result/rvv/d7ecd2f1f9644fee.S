@@ -51,9 +51,10 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsll.vi	v10, v10, 4
-	vor.vi	v10, v10, 4, v0.t
-	vor.vv	v8, v8, v10
+	vsll.vi	v10, v10, 20
+	lui	a0, 2
+	vor.vx	v10, v10, a0, v0.t
+	vor.vv	v8, v10, v8
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma

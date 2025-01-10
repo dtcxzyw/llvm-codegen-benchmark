@@ -4,14 +4,6 @@ func0000000000000050:                   # @func0000000000000050
 	vpsllq	$9, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI1_0:
-	.quad	-512                            # 0xfffffffffffffe00
-func000000000000003c:                   # @func000000000000003c
-	vpsllq	$9, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	retq
 func0000000000000030:                   # @func0000000000000030
 	vpsrlq	$9, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

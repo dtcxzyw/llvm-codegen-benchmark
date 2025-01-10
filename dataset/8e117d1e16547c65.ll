@@ -28,8 +28,9 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; boost/optimized/to_chars.ll
+; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; linux/optimized/generic-radix-tree.ll
 ; openssl/optimized/libcrypto-lib-mem_sec.ll

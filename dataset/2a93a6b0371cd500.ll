@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
-; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -29,6 +28,17 @@ entry:
   %5 = sub i64 20, %0
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
+}
+
+; 1 occurrences:
+; typst-rs/optimized/377uk5tkmxagdt0q.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %0, -12
+  %4 = sub i64 %2, %1
+  %5 = icmp ult i64 %3, %4
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

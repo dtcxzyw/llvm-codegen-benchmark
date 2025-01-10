@@ -34,6 +34,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; llvm/optimized/SampleProfileInference.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; opencv/optimized/version.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 3
+  %3 = icmp eq i64 %0, %2
+  %4 = freeze i1 %3
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; lua/optimized/lvm.ll
 ; Function Attrs: nounwind
@@ -41,18 +54,6 @@ define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = icmp ne i64 %0, %2
-  %4 = freeze i1 %3
-  ret i1 %4
-}
-
-; 2 occurrences:
-; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/version.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

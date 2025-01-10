@@ -30,18 +30,12 @@ func000000000000002a:                   # @func000000000000002a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000006a:                   # @func000000000000006a
-	vpminud	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	64                              # 0x40
 func0000000000000064:                   # @func0000000000000064
 	vpminud	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
-	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm0, %k0
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

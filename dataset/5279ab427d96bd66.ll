@@ -36,5 +36,15 @@ entry:
   ret i32 %3
 }
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call noundef i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %3 = call noundef i32 @llvm.smin.i32(i32 %2, i32 0)
+  ret i32 %3
+}
+
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

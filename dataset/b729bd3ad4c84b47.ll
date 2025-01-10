@@ -1,15 +1,18 @@
 
-%"class.irr::video::SMaterial.2691812" = type <{ [4 x %"class.irr::video::SMaterialLayer.2691813"], i32, %"class.irr::video::SColor.2691814", %"class.irr::video::SColor.2691814", %"class.irr::video::SColor.2691814", %"class.irr::video::SColor.2691814", float, float, float, i8, i8, i16, float, float, float, i16, [6 x i8] }>
-%"class.irr::video::SMaterialLayer.2691813" = type { ptr, i16, i32, i32, i8, i8, ptr }
-%"class.irr::video::SColor.2691814" = type { i32 }
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct.NVMeRequest.2707815 = type { ptr, ptr, i32, ptr, i64, i32 }
-%struct.s_mmfile.2884333 = type { ptr, i64 }
+%"class.irr::video::SMaterial.2691778" = type <{ [4 x %"class.irr::video::SMaterialLayer.2691779"], i32, %"class.irr::video::SColor.2691780", %"class.irr::video::SColor.2691780", %"class.irr::video::SColor.2691780", %"class.irr::video::SColor.2691780", float, float, float, i8, i8, i16, float, float, float, i16, [6 x i8] }>
+%"class.irr::video::SMaterialLayer.2691779" = type { ptr, i16, i32, i32, i8, i8, ptr }
+%"class.irr::video::SColor.2691780" = type { i32 }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct.NVMeRequest.2707781 = type { ptr, ptr, i32, ptr, i64, i32 }
 
-; 18 occurrences:
+; 26 occurrences:
 ; bullet3/optimized/btPersistentManifold.ll
+; clamav/optimized/rijndael.cpp.ll
+; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; eastl/optimized/EASprintfOrdered.cpp.ll
+; git/optimized/rerere.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; icu/optimized/dtptngen.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -18,19 +21,23 @@
 ; lua/optimized/lstrlib.ll
 ; minetest/optimized/sky.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; opencv/optimized/datastructs.cpp.ll
+; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_hexwave.c.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/VectorPool.cpp.ll
+; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [12 x %"class.irr::video::SMaterial.2691812"], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [12 x %"class.irr::video::SMaterial.2691778"], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -80,7 +87,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -105,7 +112,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr [127 x %struct.NVMeRequest.2707815], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [127 x %struct.NVMeRequest.2707781], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -120,24 +127,6 @@ entry:
   %4 = getelementptr [250 x i8], ptr %0, i64 0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 3
   ret ptr %5
-}
-
-; 8 occurrences:
-; clamav/optimized/rijndael.cpp.ll
-; cmake/optimized/divsufsort.c.ll
-; eastl/optimized/EASprintfOrdered.cpp.ll
-; git/optimized/rerere.ll
-; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/face_detection_mtcnn.cpp.ll
-; stb/optimized/stb_hexwave.c.ll
-; zstd/optimized/divsufsort.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nuw [3 x %struct.s_mmfile.2884333], ptr %0, i64 0, i64 %3, i32 1
-  ret ptr %4
 }
 
 ; 10 occurrences:

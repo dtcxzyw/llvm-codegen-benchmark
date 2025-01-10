@@ -56,11 +56,10 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; hdf5/optimized/H5Dchunk.c.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/intel_dpll.ll
 ; miniaudio/optimized/unity.c.ll
@@ -429,7 +428,8 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; oiio/optimized/strutil.cpp.ll

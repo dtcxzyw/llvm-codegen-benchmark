@@ -214,6 +214,12 @@ func000000000000006c:                   # @func000000000000006c
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
+func0000000000000067:                   # @func0000000000000067
+	vpmovqd	%ymm1, %xmm1
+	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq
 func000000000000002c:                   # @func000000000000002c
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0

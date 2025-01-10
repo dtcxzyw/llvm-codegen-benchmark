@@ -19,6 +19,13 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rax, %rdi
 	cmovbq	%rdi, %rax
 	retq
+func000000000000001a:                   # @func000000000000001a
+	movl	%edx, %eax
+	subq	%rax, %rdi
+	movl	%esi, %eax
+	cmpq	%rax, %rdi
+	cmovbq	%rdi, %rax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	movl	%edx, %eax
 	subq	%rax, %rsi

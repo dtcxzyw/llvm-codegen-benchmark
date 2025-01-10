@@ -1,11 +1,13 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; icu/optimized/number_simple.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; opencv/optimized/epnp.cpp.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/ray.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; zxing/optimized/QRCodecMode.cpp.ll

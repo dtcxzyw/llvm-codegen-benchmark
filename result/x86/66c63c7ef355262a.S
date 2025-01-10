@@ -43,12 +43,11 @@ func000000000000002c:                   # @func000000000000002c
 	cmovel	%ecx, %eax
 	retq
 func0000000000000186:                   # @func0000000000000186
-	xorl	%ecx, %ecx
-	testl	%esi, %esi
-	sete	%cl
-	shll	$5, %ecx
-	orl	$68, %ecx
-	testb	%dil, %dil
-	movl	$100, %eax
-	cmovsl	%ecx, %eax
+	xorl	%eax, %eax
+	testb	%sil, %sil
+	sete	%al
+	cmpl	$8192, %edi                     # imm = 0x2000
+	leal	60(%rax,%rax,2), %ecx
+	movl	$63, %eax
+	cmovll	%ecx, %eax
 	retq

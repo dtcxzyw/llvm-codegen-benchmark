@@ -16,9 +16,10 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/cecClass.c.ll
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/giaTsim.c.ll

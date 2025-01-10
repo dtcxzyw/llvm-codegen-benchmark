@@ -1,7 +1,8 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/absVta.c.ll
 ; boost/optimized/operations.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
 ; hermes/optimized/JSParserImpl.cpp.ll

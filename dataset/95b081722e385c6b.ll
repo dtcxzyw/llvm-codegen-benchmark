@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; icu/optimized/number_grouping.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/hda_codec.ll
@@ -9,8 +9,6 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/bignum.ll
-; slurm/optimized/gres_sched.ll
-; slurm/optimized/gres_select_util.ll
 ; spike/optimized/clz16.ll
 ; spike/optimized/vmerge_vxm.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll

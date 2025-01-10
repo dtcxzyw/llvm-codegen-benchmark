@@ -10,8 +10,8 @@ func0000000000000401:                   // @func0000000000000401
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	add	x8, x0, x2
-	add	x9, x1, #8
-	sub	x8, x8, #8
+	add	x9, x1, #668
+	add	x8, x8, #680
 	cmp	x8, x9
 	cset	w0, lo
 	ret

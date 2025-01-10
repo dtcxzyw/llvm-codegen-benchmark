@@ -39,6 +39,20 @@ entry:
 }
 
 ; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 4
+  %4 = or disjoint i32 %1, %3
+  %5 = add i32 %4, %0
+  %6 = lshr i32 %5, 16
+  %7 = trunc i32 %6 to i8
+  ret i8 %7
+}
+
+; 2 occurrences:
 ; opencv/optimized/decoded_bit_stream_parser.cpp.ll
 ; zxing/optimized/QRDecoder.cpp.ll
 ; Function Attrs: nounwind

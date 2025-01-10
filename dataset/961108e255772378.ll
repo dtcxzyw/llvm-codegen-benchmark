@@ -1,7 +1,7 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
-%struct.rank_t.3884892 = type { i32, ptr, i32, ptr, double, double, double, double, i8, i8, i32, ptr }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
+%struct.rank_t.3884842 = type { i32, ptr, i32, ptr, double, double, double, double, i8, i8, i32, ptr }
 
 ; 2 occurrences:
 ; php/optimized/zend_inference.ll
@@ -11,7 +11,7 @@ define ptr @func000000000000007b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 103
   %4 = select i1 %3, i64 -32, i64 0
-  %5 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 31
   ret ptr %7
@@ -49,7 +49,7 @@ define ptr @func0000000000000043(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 -80, i64 -160
-  %5 = getelementptr %struct.rank_t.3884892, ptr %0, i64 %1
+  %5 = getelementptr %struct.rank_t.3884842, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7

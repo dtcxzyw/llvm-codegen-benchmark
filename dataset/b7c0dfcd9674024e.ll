@@ -13,8 +13,7 @@ entry:
   ret i8 %5
 }
 
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 1 occurrences:
 ; spike/optimized/triggers.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0, i32 %1) #0 {

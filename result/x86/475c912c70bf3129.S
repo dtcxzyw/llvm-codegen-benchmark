@@ -1,6 +1,6 @@
 func0000000000000081:                   # @func0000000000000081
-	leal	-9(%rsi), %eax
-	cmpl	$2, %eax
+	leal	-1(%rsi), %eax
+	cmpl	$4, %eax
 	setb	%cl
 	cmpl	%esi, %edi
 	sete	%al

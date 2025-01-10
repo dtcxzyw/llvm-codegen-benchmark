@@ -29,9 +29,9 @@ func000000000000000d:                   # @func000000000000000d
 	srli	a0, a0, 32
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a1, a1, 4
+	slli	a1, a1, 3
 	add	a0, a0, a1
-	andi	a0, a0, -512
+	andi	a0, a0, -8
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 1

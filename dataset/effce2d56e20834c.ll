@@ -38,9 +38,11 @@ entry:
   ret i8 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; clamav/optimized/lzxd.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; portaudio/optimized/pa_converters.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -24,9 +24,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 3 occurrences:
+; 2 occurrences:
 ; draco/optimized/attribute_octahedron_transform.cc.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

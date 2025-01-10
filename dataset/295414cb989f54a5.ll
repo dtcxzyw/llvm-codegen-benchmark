@@ -1,4 +1,21 @@
 
+; 4 occurrences:
+; linux/optimized/vc_screen.ll
+; qemu/optimized/block_io.c.ll
+; qemu/optimized/hw_ide_ahci.c.ll
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %3, %1
+  %5 = tail call i64 @llvm.smin.i64(i64 %4, i64 %0)
+  ret i64 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
 ; 7 occurrences:
 ; cmake/optimized/pingpong.c.ll
 ; curl/optimized/libcurl_la-pingpong.ll
@@ -11,21 +28,6 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub nsw i64 %3, %1
-  %5 = call i64 @llvm.smin.i64(i64 %4, i64 %0)
-  ret i64 %5
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.smin.i64(i64, i64) #1
-
-; 2 occurrences:
-; qemu/optimized/block_io.c.ll
-; qemu/optimized/hw_ide_ahci.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %3, %1
   %5 = call i64 @llvm.smin.i64(i64 %4, i64 %0)
   ret i64 %5

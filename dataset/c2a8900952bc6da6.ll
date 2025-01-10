@@ -4297,7 +4297,7 @@ entry:
   ret i32 %1
 }
 
-; 4623 occurrences:
+; 4622 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -7488,7 +7488,6 @@ entry:
 ; redis/optimized/async.ll
 ; redis/optimized/bitops.ll
 ; redis/optimized/cluster_legacy.ll
-; redis/optimized/dict.ll
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; redis/optimized/hyperloglog.ll

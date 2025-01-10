@@ -1,8 +1,8 @@
 
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -27,7 +27,7 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ashr i64 %1, 32
-  %6 = getelementptr nusw %struct._StackType.2710345, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct._StackType.2710311, ptr %4, i64 %5
   ret ptr %6
 }
 

@@ -1,18 +1,18 @@
 
-%struct.XHCIPort.2706966 = type { ptr, i32, i32, ptr, i32, [20 x i8], %struct.MemoryRegion.2706967 }
-%struct.MemoryRegion.2706967 = type { %struct.Object.2706968, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, ptr, ptr, ptr, i32, i128, i64, ptr, i64, i8, i8, i8, i8, i8, ptr, i64, i32, %union.anon.2.2706969, %union.anon.3.2706970, %union.anon.4.2706971, ptr, i32, ptr, ptr, i8 }
-%struct.Object.2706968 = type { ptr, ptr, ptr, i32, ptr }
-%union.anon.2.2706969 = type { %struct.QTailQLink.2706972 }
-%struct.QTailQLink.2706972 = type { ptr, ptr }
-%union.anon.3.2706970 = type { %struct.QTailQLink.2706972 }
-%union.anon.4.2706971 = type { %struct.QTailQLink.2706972 }
-%struct.pmp_addr_t.2710181 = type { i64, i64 }
-%struct.char_spec.3062557 = type { ptr, i8, i8, i8, i8 }
-%"struct.std::pair.3143180" = type { %"class.llvm::SlotIndex.3143181", %"class.llvm::SlotIndex.3143181" }
-%"class.llvm::SlotIndex.3143181" = type { %"class.llvm::PointerIntPair.3143182" }
-%"class.llvm::PointerIntPair.3143182" = type { %"struct.llvm::detail::PunnedPointer.3143183" }
-%"struct.llvm::detail::PunnedPointer.3143183" = type { [8 x i8] }
-%struct.intel_wm_level.3545524 = type { i8, i32, i32, i32, i32 }
+%struct.XHCIPort.2706932 = type { ptr, i32, i32, ptr, i32, [20 x i8], %struct.MemoryRegion.2706933 }
+%struct.MemoryRegion.2706933 = type { %struct.Object.2706934, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, ptr, ptr, ptr, i32, i128, i64, ptr, i64, i8, i8, i8, i8, i8, ptr, i64, i32, %union.anon.2.2706935, %union.anon.3.2706936, %union.anon.4.2706937, ptr, i32, ptr, ptr, i8 }
+%struct.Object.2706934 = type { ptr, ptr, ptr, i32, ptr }
+%union.anon.2.2706935 = type { %struct.QTailQLink.2706938 }
+%struct.QTailQLink.2706938 = type { ptr, ptr }
+%union.anon.3.2706936 = type { %struct.QTailQLink.2706938 }
+%union.anon.4.2706937 = type { %struct.QTailQLink.2706938 }
+%struct.pmp_addr_t.2710147 = type { i64, i64 }
+%struct.char_spec.3062523 = type { ptr, i8, i8, i8, i8 }
+%"struct.std::pair.3143146" = type { %"class.llvm::SlotIndex.3143147", %"class.llvm::SlotIndex.3143147" }
+%"class.llvm::SlotIndex.3143147" = type { %"class.llvm::PointerIntPair.3143148" }
+%"class.llvm::PointerIntPair.3143148" = type { %"struct.llvm::detail::PunnedPointer.3143149" }
+%"struct.llvm::detail::PunnedPointer.3143149" = type { [8 x i8] }
+%struct.intel_wm_level.3545490 = type { i8, i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -22,7 +22,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr [30 x %struct.XHCIPort.2706966], ptr %0, i64 0, i64 %5, i32 2
+  %6 = getelementptr [30 x %struct.XHCIPort.2706932], ptr %0, i64 0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.pmp_addr_t.2710181], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr [16 x %struct.pmp_addr_t.2710147], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw [255 x %struct.char_spec.3062557], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr nuw [255 x %struct.char_spec.3062523], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -75,7 +75,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw [9 x %"struct.std::pair.3143180"], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr nuw [9 x %"struct.std::pair.3143146"], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -87,7 +87,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [5 x %struct.intel_wm_level.3545524], ptr %0, i64 0, i64 %5, i32 1
+  %6 = getelementptr [5 x %struct.intel_wm_level.3545490], ptr %0, i64 0, i64 %5, i32 1
   ret ptr %6
 }
 

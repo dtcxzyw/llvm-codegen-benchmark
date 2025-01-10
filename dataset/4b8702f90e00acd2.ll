@@ -117,9 +117,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; folly/optimized/AsyncBase.cpp.ll
 ; jq/optimized/decNumber.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:

@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; cpython/optimized/unicodeobject.ll
+; 10 occurrences:
 ; gromacs/optimized/autocorr.cpp.ll
 ; libquic/optimized/t_req.c.ll
 ; libquic/optimized/t_x509.c.ll

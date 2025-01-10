@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3765933" = type { float, float }
+%"class.cv::Point_.3765883" = type { float, float }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
@@ -76,7 +76,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = mul nsw i64 %4, %3
-  %6 = getelementptr %"class.cv::Point_.3765933", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.cv::Point_.3765883", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

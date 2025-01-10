@@ -13,9 +13,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/syslogmodule.ll
-; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; Function Attrs: nounwind

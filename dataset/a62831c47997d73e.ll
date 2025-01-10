@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; arrow/optimized/buffered.cc.ll
 ; cmake/optimized/connect.c.ll
 ; cpython/optimized/_bz2module.ll
@@ -35,7 +35,6 @@
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
 ; openssl/optimized/libcrypto-shlib-bss_conn.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; php/optimized/pack.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/be-fsstubs.ll
 ; postgres/optimized/pgbench.ll

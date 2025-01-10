@@ -4932,6 +4932,7 @@ entry:
 ; abc/optimized/fraInd.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBound.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -5249,7 +5250,6 @@ entry:
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/simpleformatter.ll
 ; icu/optimized/simpletz.ll
-; icu/optimized/swapimpl.ll
 ; icu/optimized/tznames_impl.ll
 ; icu/optimized/ucharstrieiterator.ll
 ; icu/optimized/ucnv_err.ll
@@ -7510,7 +7510,7 @@ entry:
   ret i32 %3
 }
 
-; 252 occurrences:
+; 250 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -7717,8 +7717,6 @@ entry:
 ; quickjs/optimized/libunicode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/lcode.ll
@@ -8553,7 +8551,7 @@ entry:
   ret i32 %3
 }
 
-; 188 occurrences:
+; 187 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -8739,7 +8737,6 @@ entry:
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-pppoe.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind

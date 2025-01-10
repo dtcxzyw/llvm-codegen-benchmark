@@ -321,7 +321,7 @@ entry:
   ret i32 %4
 }
 
-; 338 occurrences:
+; 339 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -627,6 +627,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
@@ -1094,7 +1095,7 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/absDup.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
@@ -1102,7 +1103,6 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openspiel/optimized/clobber.cc.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {

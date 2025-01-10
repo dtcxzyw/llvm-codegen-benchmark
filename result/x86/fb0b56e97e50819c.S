@@ -5,13 +5,6 @@ func0000000000000039:                   # @func0000000000000039
 	setle	%al
 	addl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	movslq	%edx, %rcx
-	xorl	%eax, %eax
-	cmpq	%rcx, %rsi
-	sete	%al
-	addl	%edi, %eax
-	retq
 func0000000000000059:                   # @func0000000000000059
 	movslq	%edx, %rcx
 	xorl	%eax, %eax

@@ -1,5 +1,5 @@
 
-; 568 occurrences:
+; 569 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -498,6 +498,7 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/busmaster.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; wireshark/optimized/packet-cemi.c.ll

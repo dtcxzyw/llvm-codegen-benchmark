@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3170955" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3170921" = type { ptr, ptr, ptr, ptr }
 
 ; 27 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
@@ -37,6 +37,19 @@ entry:
   %5 = zext i32 %1 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -88,7 +101,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.llvm::Use.3170955", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3170921", ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }

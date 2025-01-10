@@ -48,6 +48,12 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
+func0000000000000641:                   # @func0000000000000641
+	sext.w	a0, a0
+	subw	a2, a2, a1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
 func0000000000000288:                   # @func0000000000000288
 	li	a3, -2
 	subw	a3, a3, a0

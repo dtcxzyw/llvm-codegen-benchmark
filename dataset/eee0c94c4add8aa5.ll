@@ -1,5 +1,5 @@
 
-%struct.CacheSet.2708850 = type { ptr, ptr, i64, ptr }
+%struct.CacheSet.2708816 = type { ptr, ptr, i64, ptr }
 
 ; 17 occurrences:
 ; cmake/optimized/fse_compress.c.ll
@@ -115,7 +115,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
-  %5 = getelementptr nusw %struct.CacheSet.2708850, ptr %0, i64 %4
+  %5 = getelementptr nusw %struct.CacheSet.2708816, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -26,11 +26,18 @@ func0000000000000013:                   // @func0000000000000013
 	orr	x0, x8, x1, lsl #34
 	ret
                                         // -- End function
+func000000000000000b:                   // @func000000000000000b
+// %bb.0:                               // %entry
+	mov	w8, w2
+	orr	x8, x0, x8
+	orr	x0, x8, x1, lsl #48
+	ret
+                                        // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
 	mov	w8, w2
 	orr	x8, x1, x8
-	orr	x0, x8, x0, lsl #40
+	orr	x0, x8, x0, lsl #48
 	ret
                                         // -- End function
 func0000000000000019:                   // @func0000000000000019
@@ -45,12 +52,5 @@ func000000000000001b:                   // @func000000000000001b
 	mov	w8, w2
 	orr	x8, x0, x8
 	orr	x0, x8, x1, lsl #32
-	ret
-                                        // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	mov	w8, w2
-	orr	x8, x0, x8
-	orr	x0, x8, x1, lsl #48
 	ret
                                         // -- End function

@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/dma-fence.ll
-; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -21,10 +20,9 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; libquic/optimized/a_mbstr.c.ll
 ; linux/optimized/virtio_net.ll
-; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll

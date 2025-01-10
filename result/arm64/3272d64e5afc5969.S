@@ -40,9 +40,3 @@ func000000000000000c:                   // @func000000000000000c
 	and	w0, w8, #0x1f
 	ret
                                         // -- End function
-func000000000000000f:                   // @func000000000000000f
-// %bb.0:                               // %entry
-	sub	w8, w0, w1
-	and	w0, w8, #0xffff
-	ret
-                                        // -- End function

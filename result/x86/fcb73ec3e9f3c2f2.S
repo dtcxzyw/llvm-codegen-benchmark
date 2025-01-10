@@ -13,15 +13,15 @@ func000000000000000d:                   # @func000000000000000d
 	cmovnel	%esi, %edx
 	leal	1(%rdx), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	testb	$1, %dil
-	cmovnel	%esi, %edx
-	leal	2147483647(%rdx), %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	testb	$1, %dil
 	cmovnel	%esi, %edx
 	leal	-1(%rdx), %eax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	testb	$1, %dil
+	cmovnel	%esi, %edx
+	leal	4(%rdx), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil

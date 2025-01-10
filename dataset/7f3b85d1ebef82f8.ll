@@ -1,5 +1,5 @@
 
-; 1021 occurrences:
+; 1019 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -929,9 +929,7 @@
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/pcre2_compile.ll

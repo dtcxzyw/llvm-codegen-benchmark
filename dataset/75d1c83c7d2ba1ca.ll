@@ -54,7 +54,7 @@ entry:
   ret i64 %5
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -63,7 +63,6 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; git/optimized/record.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/iface.ll

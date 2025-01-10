@@ -1,17 +1,12 @@
 
-; 80 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcSop.c.ll
-; clamav/optimized/lzxd.c.ll
-; clamav/optimized/oabd.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; freetype/optimized/truetype.c.ll
-; git/optimized/remote-curl.ll
-; git/optimized/sequencer.ll
 ; graphviz/optimized/multispline.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/rematch.ll
@@ -20,13 +15,10 @@
 ; libquic/optimized/x509name.c.ll
 ; linux/optimized/base.ll
 ; linux/optimized/inotify_user.ll
-; linux/optimized/ip6_output.ll
 ; linux/optimized/parser.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/scm.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/thermal_sysfs.ll
-; linux/optimized/vsprintf.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
@@ -40,8 +32,6 @@
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; nuttx/optimized/lib_meminstream.c.ll
-; nuttx/optimized/wd_start.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -54,27 +44,13 @@
 ; opencv/optimized/thresh.cpp.ll
 ; opencv/optimized/tr_icdar_benchmark.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; openjdk/optimized/compileLog.ll
 ; openjdk/optimized/convertnode.ll
-; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_nfs_write.ll
 ; openssl/optimized/libcrypto-lib-dso_dlfcn.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
 ; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/relationshipSpec.cpp.ll
-; postgres/optimized/backend_status.ll
-; postgres/optimized/buffile.ll
-; postgres/optimized/varlena.ll
 ; proxygen/optimized/RendezvousHash.cpp.ll
-; qemu/optimized/block_qcow.c.ll
-; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/chardev_char-socket.c.ll
-; qemu/optimized/hw_usb_core.c.ll
-; qemu/optimized/hw_usb_desc-msos.c.ll
-; qemu/optimized/hw_usb_dev-network.c.ll
-; qemu/optimized/linux-user_syscall.c.ll
-; ruby/optimized/init.ll
-; ruby/optimized/io.ll
 ; ruby/optimized/regcomp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll
@@ -89,7 +65,7 @@ entry:
   ret i64 %5
 }
 
-; 106 occurrences:
+; 104 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDsd.c.ll
@@ -139,7 +115,6 @@ entry:
 ; bullet3/optimized/btMultiSphereShape.ll
 ; bullet3/optimized/btPolyhedralConvexShape.ll
 ; casadi/optimized/cvodes.c.ll
-; clamav/optimized/mszipd.c.ll
 ; cvc5/optimized/Solver.cc.ll
 ; graphviz/optimized/lu.c.ll
 ; graphviz/optimized/matrix_ops.c.ll
@@ -158,7 +133,6 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; libwebp/optimized/palette.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; linux/optimized/memory.ll
 ; linux/optimized/scsi_proc.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
 
 ; 8 occurrences:
 ; freetype/optimized/pfr.c.ll
@@ -17,7 +17,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 1
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %5, i64 %4
   %7 = icmp ugt ptr %6, %0
   ret i1 %7
 }

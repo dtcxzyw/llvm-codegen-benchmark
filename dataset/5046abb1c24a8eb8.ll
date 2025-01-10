@@ -114,10 +114,11 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
+; assimp/optimized/ProcessHelper.cpp.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/metablock.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
@@ -179,7 +180,8 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 39 occurrences:
+; abc/optimized/luckyFast6.c.ll
 ; boost/optimized/alloc_lib.ll
 ; brotli/optimized/metablock.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll

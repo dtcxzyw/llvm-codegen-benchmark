@@ -21,7 +21,7 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
+; 44 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -59,6 +59,8 @@ entry:
 ; opencv/optimized/grfmt_png.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openmpi/optimized/odls_base_default_fns.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/hw_usb_core.c.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/time.ll

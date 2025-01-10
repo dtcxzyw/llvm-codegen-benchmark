@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; opencv/optimized/orb.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

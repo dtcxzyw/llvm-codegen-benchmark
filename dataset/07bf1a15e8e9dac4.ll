@@ -2300,7 +2300,7 @@ entry:
   ret i64 %3
 }
 
-; 418 occurrences:
+; 415 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -2360,6 +2360,7 @@ entry:
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; hyperscan/optimized/behaviour.cpp.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/decNumber.ll
@@ -2622,11 +2623,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/cm_jalt.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_div.ll
@@ -5162,7 +5159,7 @@ entry:
   ret i64 %3
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -5181,6 +5178,7 @@ entry:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; c3c/optimized/lexer.c.ll
+; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -5342,6 +5340,63 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
+  %3 = add nuw i64 %2, %0
+  ret i64 %3
+}
+
+; 48 occurrences:
+; cmake/optimized/fse_decompress.c.ll
+; cpython/optimized/gcmodule.ll
+; cpython/optimized/sysmodule.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; faiss/optimized/hamming.cpp.ll
+; folly/optimized/SpookyHashV1.cpp.ll
+; hermes/optimized/hbc-attribute.cpp.ll
+; hyperscan/optimized/trufflecompile.cpp.ll
+; libwebp/optimized/buffer_dec.c.ll
+; linux/optimized/fse_decompress.ll
+; llvm/optimized/DIExpressionOptimizer.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; luajit/optimized/lj_gc.ll
+; luajit/optimized/lj_gc_dyn.ll
+; protobuf/optimized/generated_enum_util.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; snappy/optimized/snappy.cc.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
+; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
+; softposit-rs/optimized/4kf6wfleft5henpt.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zstd/optimized/fse_decompress.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 8
   %3 = add nuw i64 %2, %0
   ret i64 %3
 }
@@ -5523,59 +5578,6 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
-  %3 = add nuw i64 %2, %0
-  ret i64 %3
-}
-
-; 44 occurrences:
-; cmake/optimized/fse_decompress.c.ll
-; cpython/optimized/gcmodule.ll
-; cpython/optimized/sysmodule.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; faiss/optimized/hamming.cpp.ll
-; hermes/optimized/hbc-attribute.cpp.ll
-; hyperscan/optimized/trufflecompile.cpp.ll
-; libwebp/optimized/buffer_dec.c.ll
-; linux/optimized/fse_decompress.ll
-; llvm/optimized/DIExpressionOptimizer.cpp.ll
-; llvm/optimized/DwarfExpression.cpp.ll
-; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/JumpThreading.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; luajit/optimized/lj_gc.ll
-; luajit/optimized/lj_gc_dyn.ll
-; protobuf/optimized/generated_enum_util.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; snappy/optimized/snappy.cc.ll
-; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
-; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
-; softposit-rs/optimized/4kf6wfleft5henpt.ll
-; softposit-rs/optimized/8mae6k72v4zmmji.ll
-; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
-; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
-; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
-; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
-; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
-; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
-; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
-; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
-; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
-; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
-; zstd/optimized/fse_decompress.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 2
   %3 = add nuw i64 %2, %0
   ret i64 %3
 }

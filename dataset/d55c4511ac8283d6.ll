@@ -1,6 +1,6 @@
 
-%class.MeshTriangle.2699019 = type { ptr, i16, i16, i16, %"class.irr::core::vector3d.42.2699012", float }
-%"class.irr::core::vector3d.42.2699012" = type { float, float, float }
+%class.MeshTriangle.2698985 = type { ptr, i16, i16, i16, %"class.irr::core::vector3d.42.2698978", float }
+%"class.irr::core::vector3d.42.2698978" = type { float, float, float }
 
 ; 5 occurrences:
 ; assimp/optimized/X3DGeoHelper.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 1
   %5 = udiv i64 %4, 3
-  %6 = getelementptr nusw nuw %class.MeshTriangle.2699019, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.MeshTriangle.2698985, ptr %0, i64 %5
   ret ptr %6
 }
 

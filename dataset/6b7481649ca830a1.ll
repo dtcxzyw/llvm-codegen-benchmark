@@ -27,14 +27,13 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; hdf5/optimized/H5HFhuge.c.ll
 ; libwebp/optimized/dec.c.ll
 ; libwebp/optimized/enc.c.ll
 ; libwebp/optimized/enc_sse2.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
-; openusd/optimized/loopfilter.c.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {

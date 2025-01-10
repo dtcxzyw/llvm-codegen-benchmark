@@ -1,13 +1,11 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; linux/optimized/sky2.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/ginget.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/lanalyzer.c.ll

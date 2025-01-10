@@ -524,7 +524,7 @@ entry:
   ret i32 %2
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; clamav/optimized/XzDec.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -554,7 +554,6 @@ entry:
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/printk.ll
 ; linux/optimized/skl_scaler.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll

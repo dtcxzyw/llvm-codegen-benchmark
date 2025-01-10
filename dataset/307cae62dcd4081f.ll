@@ -20,12 +20,13 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/inftrees.c.ll
 ; gromacs/optimized/inftrees.c.ll
 ; libquic/optimized/inftrees.c.ll
+; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/inftrees.ll
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/mlme.ll

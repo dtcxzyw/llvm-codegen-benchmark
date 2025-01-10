@@ -52,21 +52,7 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; faiss/optimized/lattice_Zn.cpp.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 235 occurrences:
+; 237 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -261,9 +247,11 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/yv12extend.c.ll

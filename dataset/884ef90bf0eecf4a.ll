@@ -1,18 +1,18 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%class.CellTypeState.2731841 = type { i32 }
-%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
-%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
-%struct.Elf64_Shdr.2902191 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%"struct.duckdb::string_t.2955629" = type { %union.anon.295.2955630 }
-%union.anon.295.2955630 = type { %struct.anon.2955631 }
-%struct.anon.2955631 = type { i32, [4 x i8], ptr }
-%struct.ImVec2.3454338 = type { float, float }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%class.CellTypeState.2731807 = type { i32 }
+%struct.Str_Mux_t_.2877096 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877095] }
+%struct.Str_Edg_t_.2877095 = type { i32, i32, i32, i32 }
+%struct.Elf64_Shdr.2902157 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%"struct.duckdb::string_t.2955595" = type { %union.anon.295.2955596 }
+%union.anon.295.2955596 = type { %struct.anon.2955597 }
+%struct.anon.2955597 = type { i32, [4 x i8], ptr }
+%struct.ImVec2.3454304 = type { float, float }
 
 ; 12 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
@@ -31,8 +31,8 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3, i32 0, i32 1
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %3, i32 0, i32 1
   ret ptr %5
 }
 
@@ -444,7 +444,7 @@ define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -12
   ret ptr %6
 }
@@ -632,17 +632,16 @@ entry:
 define ptr @func0000000000000060(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %class.CellTypeState.2731841, ptr %0, i64 %1
-  %5 = getelementptr %class.CellTypeState.2731841, ptr %4, i64 %3
+  %4 = getelementptr nusw %class.CellTypeState.2731807, ptr %0, i64 %1
+  %5 = getelementptr %class.CellTypeState.2731807, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/IFCUtil.cpp.ll
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
 ; draco/optimized/rans_bit_decoder.cc.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; lz4/optimized/lz4.c.ll
@@ -768,8 +767,8 @@ entry:
 define ptr @func000000000000006c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %0, i64 %1
-  %5 = getelementptr %struct.Str_Mux_t_.2877130, ptr %4, i64 %3, i32 4, i64 0, i32 2
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877096, ptr %0, i64 %1
+  %5 = getelementptr %struct.Str_Mux_t_.2877096, ptr %4, i64 %3, i32 4, i64 0, i32 2
   ret ptr %5
 }
 
@@ -808,7 +807,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nuw %struct.Elf64_Shdr.2902191, ptr %4, i64 %3, i32 4
+  %5 = getelementptr nuw %struct.Elf64_Shdr.2902157, ptr %4, i64 %3, i32 4
   ret ptr %5
 }
 
@@ -836,7 +835,7 @@ entry:
 define ptr @func0000000000000020(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.duckdb::string_t.2955629", ptr %0, i64 %1
+  %4 = getelementptr nusw %"struct.duckdb::string_t.2955595", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
@@ -866,8 +865,8 @@ entry:
 define ptr @func000000000000004f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %1
-  %5 = getelementptr nuw %struct.ImVec2.3454338, ptr %4, i64 %3, i32 1
+  %4 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %1
+  %5 = getelementptr nuw %struct.ImVec2.3454304, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

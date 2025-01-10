@@ -42,10 +42,11 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-tns.c.ll
 ; Function Attrs: nounwind

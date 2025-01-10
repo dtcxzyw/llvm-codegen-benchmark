@@ -1,10 +1,11 @@
 
-; 129 occurrences:
+; 131 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/text_file_backend.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; cpython/optimized/_asynciomodule.ll
@@ -42,6 +43,7 @@
 ; cpython/optimized/textio.ll
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/zlibmodule.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll

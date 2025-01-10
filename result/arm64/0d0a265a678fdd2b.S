@@ -14,7 +14,7 @@ func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
 	add	x8, x2, x2, lsr #63
 	add	x8, x1, x8, lsr #1
-	add	x8, x8, x0
+	add	x8, x0, x8
 	lsl	x0, x8, #1
 	ret
                                         // -- End function
@@ -24,7 +24,7 @@ func0000000000000014:                   // @func0000000000000014
 	cmp	x2, #0
 	csel	x8, x8, x2, lt
 	add	x8, x1, x8, lsr #2
-	add	x8, x8, x0
+	add	x8, x0, x8
 	lsl	x0, x8, #2
 	ret
                                         // -- End function

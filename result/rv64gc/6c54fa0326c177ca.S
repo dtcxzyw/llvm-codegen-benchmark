@@ -34,15 +34,9 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a1
 	addi	a0, a0, 3
 	ret
-func0000000000000017:                   # @func0000000000000017
+func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 48
 	srli	a1, a1, 45
 	add	a0, a0, a1
 	addi	a0, a0, -520
-	ret
-func0000000000000016:                   # @func0000000000000016
-	slli	a1, a1, 48
-	srli	a1, a1, 46
-	add	a0, a0, a1
-	addi	a0, a0, -4
 	ret

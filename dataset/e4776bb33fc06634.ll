@@ -1,5 +1,5 @@
 
-; 970 occurrences:
+; 971 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -239,6 +239,7 @@
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestRandom.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
+; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexBinaryHash.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll

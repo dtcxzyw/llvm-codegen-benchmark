@@ -1,11 +1,11 @@
 
-%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
-%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
-%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
-%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
-%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
-%"struct.std::_Head_base.48.2612583" = type { ptr }
-%struct.pmp_entry_t.2710180 = type { i64, i8 }
+%"class.std::unique_ptr.41.2612545" = type { %"struct.std::__uniq_ptr_data.42.2612546" }
+%"struct.std::__uniq_ptr_data.42.2612546" = type { %"class.std::__uniq_ptr_impl.43.2612547" }
+%"class.std::__uniq_ptr_impl.43.2612547" = type { %"class.std::tuple.44.2612548" }
+%"class.std::tuple.44.2612548" = type { %"struct.std::_Tuple_impl.45.2612549" }
+%"struct.std::_Tuple_impl.45.2612549" = type { %"struct.std::_Head_base.48.2612550" }
+%"struct.std::_Head_base.48.2612550" = type { ptr }
+%struct.pmp_entry_t.2710146 = type { i64, i8 }
 
 ; 78 occurrences:
 ; abc/optimized/amapMerge.c.ll
@@ -226,7 +226,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612545"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -283,7 +283,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [16 x %struct.pmp_entry_t.2710146], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

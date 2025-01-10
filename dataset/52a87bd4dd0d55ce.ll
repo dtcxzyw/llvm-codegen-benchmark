@@ -1,8 +1,8 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
-%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957" = type { float, %"class.irr::core::quaternion.2702954" }
+%"class.irr::core::quaternion.2702954" = type { float, float, float, float }
 
 ; 10 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -19,8 +19,8 @@
 define i64 @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -76,14 +76,13 @@ entry:
   ret i64 %6
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/unsp.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
@@ -100,8 +99,8 @@ entry:
 define i64 @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702957", ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

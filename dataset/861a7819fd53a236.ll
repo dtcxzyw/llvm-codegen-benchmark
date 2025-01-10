@@ -68,7 +68,7 @@ entry:
   ret i1 %4
 }
 
-; 191 occurrences:
+; 190 occurrences:
 ; abc/optimized/mainReal.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; boost/optimized/get_turn_info.ll
@@ -197,7 +197,6 @@ entry:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; openjdk/optimized/ad_x86.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/linkResolver.ll
 ; openjdk/optimized/signals_posix.ll

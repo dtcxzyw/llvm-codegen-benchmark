@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%"class.llvm::Use.3157958" = type { ptr, ptr, ptr, ptr }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 4 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -71,7 +71,7 @@ define i1 @func0000000000000341(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -24
-  %5 = getelementptr nusw %"class.llvm::Use.3157992", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3157958", ptr %4, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -138,7 +138,7 @@ define i1 @func000000000000020c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 4
-  %5 = getelementptr %union._Py_CODEUNIT.3974162, ptr %4, i64 %3
+  %5 = getelementptr %union._Py_CODEUNIT.3974112, ptr %4, i64 %3
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }

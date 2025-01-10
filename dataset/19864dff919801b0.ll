@@ -16,7 +16,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 27 occurrences:
+; 26 occurrences:
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/btMultiSphereShape.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
@@ -24,7 +24,6 @@ declare i32 @llvm.smax.i32(i32, i32) #1
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; grpc/optimized/chttp2_transport.cc.ll

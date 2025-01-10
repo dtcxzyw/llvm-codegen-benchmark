@@ -1,8 +1,3 @@
-func00000000000001d5:                   # @func00000000000001d5
-	shlq	$6, %rdx
-	addq	%rsi, %rdx
-	leaq	760(%rdx,%rdi,8), %rax
-	retq
 func0000000000000110:                   # @func0000000000000110
 	shlq	$4, %rdx
 	addq	%rsi, %rdx

@@ -185,21 +185,6 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; git/optimized/parallel-checkout.ll
-; nuttx/optimized/lib_libvscanf.c.ll
-; opencv/optimized/binary_descriptor_matcher.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000554(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp samesign ult i64 %0, %3
-  %5 = icmp sgt i32 %1, 0
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; Function Attrs: nounwind
@@ -259,6 +244,20 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = icmp eq i64 %0, %3
   %5 = icmp eq i32 %1, 1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; nuttx/optimized/lib_libvscanf.c.ll
+; opencv/optimized/binary_descriptor_matcher.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000554(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = icmp samesign ult i64 %0, %3
+  %5 = icmp sgt i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

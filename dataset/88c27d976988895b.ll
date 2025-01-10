@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3251926" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 8 occurrences:
 ; cpython/optimized/unicodeobject.ll
@@ -663,7 +663,7 @@ entry:
   ret ptr %4
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; freetype/optimized/truetype.c.ll
 ; icu/optimized/collationfastlatin.ll
@@ -696,6 +696,7 @@ entry:
 ; postgres/optimized/hashovfl.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/pruneheap.ll
+; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/spgxlog.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/k12.c.ll
@@ -737,7 +738,7 @@ define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -67072
-  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251926", ptr %3, i64 %2
   ret ptr %4
 }
 

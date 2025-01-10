@@ -23,9 +23,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hdf5/optimized/H5FDonion_index.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:

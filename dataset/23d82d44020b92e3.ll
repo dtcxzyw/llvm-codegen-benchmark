@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; portaudio/optimized/pa_sndio.c.ll
 ; qemu/optimized/audio_audio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {

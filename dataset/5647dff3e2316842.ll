@@ -1,7 +1,7 @@
 
-%struct.aiString.2829528 = type { i32, [1024 x i8] }
-%"struct.llvh::detail::DenseMapPair.3080927" = type { %"struct.std::pair.102.3080928" }
-%"struct.std::pair.102.3080928" = type { i32, i32 }
+%struct.aiString.2829494 = type { i32, [1024 x i8] }
+%"struct.llvh::detail::DenseMapPair.3080893" = type { %"struct.std::pair.102.3080894" }
+%"struct.std::pair.102.3080894" = type { i32, i32 }
 
 ; 1 occurrences:
 ; php/optimized/zend_language_scanner.ll
@@ -24,7 +24,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.aiString.2829528, ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %struct.aiString.2829494, ptr %1, i64 %5
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
@@ -47,7 +47,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080927", ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080893", ptr %1, i64 %5
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

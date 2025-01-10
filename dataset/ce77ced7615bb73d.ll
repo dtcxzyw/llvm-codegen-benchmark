@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 5 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -37,9 +37,9 @@ entry:
 define i64 @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -24
-  %4 = getelementptr nusw %"class.llvm::Use.3181463", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3181429", ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -32
-  %6 = getelementptr nusw %"class.llvm::Use.3181463", ptr %5, i64 %0
+  %6 = getelementptr nusw %"class.llvm::Use.3181429", ptr %5, i64 %0
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

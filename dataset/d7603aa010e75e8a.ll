@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 96 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/zip.c.ll
 ; boost/optimized/matches_relation_factory.ll
@@ -93,7 +93,6 @@
 ; wireshark/optimized/packet-mp2t.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
 ; wireshark/optimized/packet-packetbb.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
 ; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll

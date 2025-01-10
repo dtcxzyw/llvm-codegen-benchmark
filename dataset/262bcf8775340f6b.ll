@@ -29,11 +29,11 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i128 @func000000000000001c(i128 %0, i128 %1) #0 {
+define i128 @func000000000000001e(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 64
   %3 = or disjoint i128 %2, %0
-  %4 = mul i128 %3, 1844674407370955161
+  %4 = mul nuw i128 %3, 1844674407370955161
   ret i128 %4
 }
 

@@ -1,12 +1,11 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; opencv/optimized/csrt.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/fourier_descriptors_demo.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; opencv/optimized/stitching_detailed.cpp.ll

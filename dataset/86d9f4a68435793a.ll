@@ -170,7 +170,7 @@ entry:
   ret i32 %5
 }
 
-; 1518 occurrences:
+; 1517 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -666,7 +666,6 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
@@ -2311,7 +2310,7 @@ entry:
   ret i32 %5
 }
 
-; 258 occurrences:
+; 256 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -2321,7 +2320,6 @@ entry:
 ; abc/optimized/rwrLib.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; clamav/optimized/bytecode_api.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/xlabels.c.ll
@@ -2568,7 +2566,6 @@ entry:
 ; wireshark/optimized/text_import.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {

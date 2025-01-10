@@ -1,5 +1,5 @@
 
-%struct.hlist_head.3532539 = type { ptr }
+%struct.hlist_head.3532505 = type { ptr }
 
 ; 8 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
@@ -31,7 +31,7 @@ entry:
   %2 = mul i32 %1, 1640531527
   %3 = lshr i32 %2, 25
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [128 x %struct.hlist_head.3532539], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [128 x %struct.hlist_head.3532505], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

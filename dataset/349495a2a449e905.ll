@@ -1,5 +1,5 @@
 
-; 1182 occurrences:
+; 1185 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -880,6 +880,7 @@
 ; postgres/optimized/regerror.ll
 ; postgres/optimized/relfilenumbermap.ll
 ; postgres/optimized/slot.ll
+; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/spgutils.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/typecmds.ll
@@ -978,6 +979,8 @@
 ; taskflow/optimized/parallel_for.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
@@ -1190,7 +1193,7 @@ entry:
   ret i1 %4
 }
 
-; 142 occurrences:
+; 141 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -1282,7 +1285,6 @@ entry:
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
-; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/filemap.ll
 ; openjdk/optimized/parse2.ll
 ; openjdk/optimized/pngtrans.ll
@@ -1612,7 +1614,6 @@ entry:
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/port_util.cc.ll
 ; libwebp/optimized/extras.c.ll
-; lief/optimized/CoreAuxv.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/act_api.ll
 ; linux/optimized/cmdline.ll
@@ -1716,6 +1717,7 @@ entry:
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/five-point.cpp.ll
 ; opencv/optimized/grid_sampler.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
@@ -2142,6 +2144,7 @@ entry:
 ; abc/optimized/utilSort.c.ll
 ; c3c/optimized/c_abi_riscv.c.ll
 ; c3c/optimized/sema_builtins.c.ll
+; clamav/optimized/mew.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/recvol.cpp.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -2184,7 +2187,6 @@ entry:
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
-; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; snappy/optimized/snappy.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btle.c.ll
@@ -2211,7 +2213,7 @@ entry:
   ret i1 %4
 }
 
-; 543 occurrences:
+; 544 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcBm.c.ll
@@ -2430,6 +2432,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lua/optimized/ldebug.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luau/optimized/Analyze.cpp.ll
@@ -2763,7 +2766,7 @@ entry:
   ret i1 %4
 }
 
-; 716 occurrences:
+; 717 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcGen.c.ll
@@ -3262,6 +3265,7 @@ entry:
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; opencv/optimized/greyscale_luminance_source.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
@@ -3488,7 +3492,7 @@ entry:
   ret i1 %4
 }
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -3496,7 +3500,6 @@ entry:
 ; c3c/optimized/sema_casts.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/hashtab.c.ll
-; clamav/optimized/mew.c.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/json_writer.cpp.ll
@@ -3631,7 +3634,7 @@ entry:
   ret i1 %4
 }
 
-; 260 occurrences:
+; 258 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -3690,8 +3693,6 @@ entry:
 ; libquic/optimized/constant_time_test.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; libwebp/optimized/backward_references_enc.c.ll
-; lief/optimized/RelocationSizes.cpp.ll
-; lief/optimized/RelocationStrings.cpp.ll
 ; lief/optimized/ecp_curves.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/af_netlink.ll
@@ -3900,7 +3901,7 @@ entry:
   ret i1 %4
 }
 
-; 315 occurrences:
+; 316 occurrences:
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/abcScorr.c.ll
 ; abc/optimized/cuddAPI.c.ll
@@ -4073,6 +4074,7 @@ entry:
 ; opencv/optimized/termination.cpp.ll
 ; opencv/optimized/tsdf.cpp.ll
 ; opencv/optimized/unicomblock.cpp.ll
+; openjdk/optimized/SpanClipRenderer.ll
 ; openjdk/optimized/c1_Optimizer.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/classFileParser.ll
@@ -4345,12 +4347,11 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/ifTruth.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libpng/optimized/pngtrans.c.ll
 ; linux/optimized/acpi_pm.ll

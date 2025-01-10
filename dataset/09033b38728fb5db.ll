@@ -362,7 +362,7 @@ entry:
   ret i64 %5
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -423,6 +423,7 @@ entry:
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
+; wireshark/optimized/packet-ptp.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -502,7 +503,7 @@ entry:
   ret i64 %5
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
@@ -532,7 +533,6 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-mysql.c.ll
-; wireshark/optimized/packet-ptp.c.ll
 ; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind

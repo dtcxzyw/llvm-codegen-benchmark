@@ -7,6 +7,15 @@ func0000000000000c2c:                   # @func0000000000000c2c
 	setne	%al
 	orb	%cl, %al
 	retq
+func0000000000001c2c:                   # @func0000000000001c2c
+	movl	%edx, %eax
+	incq	%rsi
+	cmpq	%rax, %rsi
+	sete	%cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
 func0000000000001f21:                   # @func0000000000001f21
 	movl	%edx, %eax
 	incq	%rsi
@@ -32,15 +41,6 @@ func0000000000001c21:                   # @func0000000000001c21
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000001c2c:                   # @func0000000000001c2c
-	movl	%edx, %eax
-	incq	%rsi
-	cmpq	%rax, %rsi
-	sete	%cl
-	testl	%edi, %edi
-	setne	%al
 	orb	%cl, %al
 	retq
 func0000000000001088:                   # @func0000000000001088

@@ -308,7 +308,7 @@ entry:
   ret i1 %4
 }
 
-; 426 occurrences:
+; 425 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -349,7 +349,6 @@ entry:
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abc/optimized/trees.c.ll
-; abc/optimized/utilSort.c.ll
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnWlc.c.ll
@@ -1012,6 +1011,7 @@ entry:
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmTim.c.ll
 ; abc/optimized/superGate.c.ll
+; abc/optimized/utilSort.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcNdr.c.ll
@@ -1073,7 +1073,6 @@ entry:
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; git/optimized/column.ll
 ; git/optimized/commit-reach.ll
 ; git/optimized/replace.ll
 ; graphviz/optimized/constrained_majorization.c.ll
@@ -4515,7 +4514,7 @@ entry:
   ret i1 %4
 }
 
-; 143 occurrences:
+; 141 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -4524,7 +4523,6 @@ entry:
 ; boost/optimized/message.ll
 ; boost/optimized/to_chars.ll
 ; clamav/optimized/Bra.c.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/doh.c.ll
@@ -4575,7 +4573,6 @@ entry:
 ; linux/optimized/clocksource.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/dm-table.ll
-; linux/optimized/gup.ll
 ; linux/optimized/intel_hdcp_gsc.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/mpicoder.ll
@@ -4970,7 +4967,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; git/optimized/column.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libpng/optimized/pngwutil.c.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll

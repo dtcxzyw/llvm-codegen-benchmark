@@ -65,21 +65,15 @@ func00000000000001ea:                   # @func00000000000001ea
 	cmovsq	%rdx, %rsi
 	leaq	8(%rsi), %rax
 	retq
-func0000000000000186:                   # @func0000000000000186
-	leaq	7(%rdx), %rax
-	leaq	-7(%rsi), %rcx
-	cmpq	$7, %rdi
-	cmovlq	%rcx, %rax
-	retq
-func0000000000000066:                   # @func0000000000000066
-	leaq	-7(%rdx), %rax
-	leaq	7(%rsi), %rcx
-	cmpq	$7, %rdi
-	cmovlq	%rcx, %rax
-	retq
 func00000000000001e4:                   # @func00000000000001e4
 	leaq	232(%rdx), %rax
 	leaq	8(%rsi), %rcx
 	cmpq	$3, %rdi
 	cmovbq	%rcx, %rax
+	retq
+func0000000000000066:                   # @func0000000000000066
+	leaq	-8(%rdx), %rax
+	leaq	1544(%rsi), %rcx
+	testq	%rdi, %rdi
+	cmovleq	%rcx, %rax
 	retq

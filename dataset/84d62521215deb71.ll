@@ -285,14 +285,13 @@ entry:
   ret ptr %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openmpi/optimized/ompi_datatype_args.ll

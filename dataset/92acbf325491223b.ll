@@ -751,7 +751,7 @@ entry:
   ret ptr %4
 }
 
-; 144 occurrences:
+; 145 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
@@ -808,6 +808,7 @@ entry:
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; turborepo-rs/optimized/23ss0grgxg9blsvwmau315piq.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -943,9 +944,10 @@ entry:
   ret ptr %4
 }
 
-; 110 occurrences:
+; 134 occurrences:
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/wlnRead.c.ll
+; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -956,6 +958,7 @@ entry:
 ; ceres/optimized/schur_eliminator_2_3_d.cc.ll
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
+; coreutils-rs/optimized/2y94il9ncyebrpt0.ll
 ; coreutils-rs/optimized/3l08u1tfq6vahgiy.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -965,6 +968,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
 ; delta-rs/optimized/1hj0ksbtyfwxzh2n.ll
+; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/3r9vx3p2jzork50q.ll
 ; delta-rs/optimized/3w98mau10rb6qf7d.ll
 ; delta-rs/optimized/43rqrp2cinp33t64.ll
@@ -991,11 +995,13 @@ entry:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; html5ever-rs/optimized/1mf2h4bh94yx6is.ll
+; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/2du585cd6kvsz0m5.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/ml_selection_buffers.cpp.ll
@@ -1015,6 +1021,7 @@ entry:
 ; ockam-rs/optimized/13hx4edwj16k9wur.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
 ; ockam-rs/optimized/2n0s7h3mrzul4f05.ll
+; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/3p4fr10p6ul1vv1o.ll
 ; ockam-rs/optimized/548tb0vgebzwk35z.ll
 ; oiio/optimized/hdrinput.cpp.ll
@@ -1035,31 +1042,49 @@ entry:
 ; regex-rs/optimized/4dth5ncaqumdqgby.ll
 ; ripgrep-rs/optimized/kiwlvuwlry6renb.ll
 ; rust-analyzer-rs/optimized/16ss3ngd5xjxotkj.ll
+; rust-analyzer-rs/optimized/1d113v6a3epuvh5y.ll
+; rust-analyzer-rs/optimized/2025sm42y7i6frv5.ll
+; rust-analyzer-rs/optimized/2fcy4m9e2fxieax4.ll
 ; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
+; rust-analyzer-rs/optimized/3ezpsp4ix1xt5gp1.ll
+; rust-analyzer-rs/optimized/4dy7ijwwbie8y9pm.ll
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
+; rust-analyzer-rs/optimized/ax17c37uj31hhic.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; tree-sitter-rs/optimized/r2wcjjxpw45z4gt.ll
 ; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/06rtve3sizrg126ldkmgb72ea.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
 ; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
 ; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
 ; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
 ; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4dosr1o8lu0ztcoospq0oxi0c.ll
+; zed-rs/optimized/4gafs7cnqueum1wf7b8eca1yl.ll
 ; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
 ; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/7dlcu72xy2qwyr8vttt104wn3.ll
+; zed-rs/optimized/7v472zdqnk6m560xtqo5n2d2r.ll
 ; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
 ; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9py7mumimdtfbsy7tbvb0jpih.ll
+; zed-rs/optimized/b8xkvrb4shexown6t10tlhuh9.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/di66y7a5lci7qvst4agi7dhs8.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 152
+  %2 = mul i64 %1, -96
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 20
+  %4 = getelementptr i8, ptr %3, i64 -96
   ret ptr %4
 }
 
@@ -1287,11 +1312,10 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; quantlib/optimized/cmsmarket.ll
 ; quantlib/optimized/tapcorrelations.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
@@ -1435,18 +1459,6 @@ entry:
   %2 = mul nuw nsw i64 %1, 12
   %3 = getelementptr nuw i8, ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
-  ret ptr %4
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 3
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 2
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-; 183 occurrences:
+; 181 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -98,7 +98,6 @@
 ; oiio/optimized/targainput.cpp.ll
 ; oniguruma/optimized/unicode.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dlarrd.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -129,7 +128,6 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
-; postgres/optimized/formatting.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; postgres/optimized/like_support.ll
 ; proxygen/optimized/RFC2616.cpp.ll

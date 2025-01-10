@@ -41,8 +41,9 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003c(i32 %0, i8 %1, i8 %2) #0 {
 entry:

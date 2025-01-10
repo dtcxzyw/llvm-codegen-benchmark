@@ -1,6 +1,6 @@
 
-%struct.code.2876641 = type { i8, i8, i16 }
-%"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.3627123" = type { ptr, ptr }
+%struct.code.2876607 = type { i8, i8, i16 }
+%"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.3627089" = type { ptr, ptr }
 
 ; 33 occurrences:
 ; abc/optimized/absUtil.c.ll
@@ -42,7 +42,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.code.2876641, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.code.2876607, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -83,7 +83,7 @@ entry:
   %3 = xor i32 %2, -1252372727
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.3627123", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.chashtable<smt::enode *, smt::cg_table::cg_comm_hash, smt::cg_table::cg_comm_eq>::cell.3627089", ptr %0, i64 %5
   ret ptr %6
 }
 

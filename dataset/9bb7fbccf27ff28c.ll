@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; icu/optimized/rulebasedcollator.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -19,6 +19,8 @@
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
+; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_channel.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; qemu/optimized/hw_core_loader.c.ll

@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll
-; openusd/optimized/variableExpressionParser.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll

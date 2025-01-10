@@ -12,7 +12,6 @@ func0000000000000008:                   # @func0000000000000008
 	vmin.vx	v8, v8, a0
 	li	a0, 8
 	vmax.vx	v8, v8, a0
-	li	a0, -15
-	srli	a0, a0, 1
+	li	a0, 504
 	vand.vx	v8, v8, a0
 	ret

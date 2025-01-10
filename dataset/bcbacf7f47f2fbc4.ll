@@ -1653,7 +1653,7 @@ entry:
   ret i8 %2
 }
 
-; 1134 occurrences:
+; 1133 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -1909,7 +1909,6 @@ entry:
 ; icu/optimized/transreg.ll
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/ucharstrieiterator.ll
-; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/ucol.ll
 ; icu/optimized/uiter.ll
 ; icu/optimized/uniset.ll

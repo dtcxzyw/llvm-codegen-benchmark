@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; bullet3/optimized/b3OverlappingPairCache.ll
 ; ceres/optimized/visibility.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
@@ -12,7 +12,6 @@
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/stitching_detailed.cpp.ll

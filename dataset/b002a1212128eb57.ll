@@ -1,11 +1,11 @@
 
-%"class.folly::Range.2685458" = type { ptr, ptr }
-%struct.USBEndpoint.2708164 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708165 }
-%union.anon.0.2708165 = type { %struct.QTailQLink.2708166 }
-%struct.QTailQLink.2708166 = type { ptr, ptr }
-%struct._zend_arg_info.2789883 = type { ptr, %struct.zend_type.2789884, ptr }
-%struct.zend_type.2789884 = type { ptr, i32 }
-%struct.tcp_sack_block.3551109 = type { i32, i32 }
+%"class.folly::Range.2685425" = type { ptr, ptr }
+%struct.USBEndpoint.2708130 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708131 }
+%union.anon.0.2708131 = type { %struct.QTailQLink.2708132 }
+%struct.QTailQLink.2708132 = type { ptr, ptr }
+%struct._zend_arg_info.2789849 = type { ptr, %struct.zend_type.2789850, ptr }
+%struct.zend_type.2789850 = type { ptr, i32 }
+%struct.tcp_sack_block.3551075 = type { i32, i32 }
 
 ; 88 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
@@ -114,7 +114,7 @@ define ptr @func000000000000003b(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 8
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr %"class.folly::Range.2685458", ptr %4, i64 %0, i32 1
+  %5 = getelementptr %"class.folly::Range.2685425", ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -133,7 +133,7 @@ define ptr @func0000000000000030(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4432, i64 5032
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr %struct.USBEndpoint.2708164, ptr %4, i64 %0
+  %5 = getelementptr %struct.USBEndpoint.2708130, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 -40
   ret ptr %6
 }
@@ -160,7 +160,7 @@ define ptr @func000000000000002f(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 -32
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nuw %struct._zend_arg_info.2789883, ptr %4, i64 %0, i32 1
+  %5 = getelementptr nuw %struct._zend_arg_info.2789849, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
@@ -223,7 +223,7 @@ define ptr @func0000000000000033(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 2072, i64 2064
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr %struct.tcp_sack_block.3551109, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %struct.tcp_sack_block.3551075, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 

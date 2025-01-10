@@ -44,7 +44,7 @@ entry:
   ret i8 %3
 }
 
-; 166 occurrences:
+; 167 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -89,6 +89,7 @@ entry:
 ; libwebp/optimized/syntax_enc.c.ll
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/vp8_dec.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/hexdump.ll

@@ -34,7 +34,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; icu/optimized/uscanf_p.ll
 ; libevent/optimized/buffer.c.ll
@@ -48,6 +48,7 @@ entry:
 ; postgres/optimized/varbit.ll
 ; redis/optimized/util.ll
 ; ruby/optimized/marshal.ll
+; slurm/optimized/bitstring.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
@@ -122,7 +123,7 @@ entry:
   ret i1 %5
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
@@ -152,6 +153,7 @@ entry:
 ; openmpi/optimized/pml_ob1.ll
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; openspiel/optimized/twixtboard.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; php/optimized/SAPI.ll
 ; postgres/optimized/namespace.ll
 ; postgres/optimized/predicate.ll
@@ -410,6 +412,18 @@ entry:
 }
 
 ; 2 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; wireshark/optimized/file-elf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = icmp ugt i32 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; hermes/optimized/ASTBuilder.cpp.ll
 ; Function Attrs: nounwind
@@ -476,17 +490,6 @@ define i1 @func000000000000006c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp ne i32 %1, %3
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/file-elf.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

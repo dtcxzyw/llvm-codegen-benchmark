@@ -1,14 +1,14 @@
 
-%struct.page.3534732 = type { i64, %union.anon.9.3534733, %union.anon.17.3534734, %struct.atomic_t.3534696, [8 x i8] }
-%union.anon.9.3534733 = type { %struct.anon.10.3534735 }
-%struct.anon.10.3534735 = type { %union.anon.11.3534736, ptr, %union.anon.13.3534737, i64 }
-%union.anon.11.3534736 = type { %struct.list_head.3534700 }
-%struct.list_head.3534700 = type { ptr, ptr }
-%union.anon.13.3534737 = type { i64 }
-%union.anon.17.3534734 = type { %struct.atomic_t.3534696 }
-%struct.atomic_t.3534696 = type { i32 }
+%struct.page.3534698 = type { i64, %union.anon.9.3534699, %union.anon.17.3534700, %struct.atomic_t.3534662, [8 x i8] }
+%union.anon.9.3534699 = type { %struct.anon.10.3534701 }
+%struct.anon.10.3534701 = type { %union.anon.11.3534702, ptr, %union.anon.13.3534703, i64 }
+%union.anon.11.3534702 = type { %struct.list_head.3534666 }
+%struct.list_head.3534666 = type { ptr, ptr }
+%union.anon.13.3534703 = type { i64 }
+%union.anon.17.3534700 = type { %struct.atomic_t.3534662 }
+%struct.atomic_t.3534662 = type { i32 }
 
-; 13 occurrences:
+; 241 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -18,34 +18,6 @@
 ; ceres/optimized/problem_impl.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; openjdk/optimized/relocator.ll
-; openspiel/optimized/tarok.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
-}
-
-; 2 occurrences:
-; openjdk/optimized/relocator.ll
-; spike/optimized/fdt_rw.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = ptrtoint ptr %5 to i64
-  ret i64 %6
-}
-
-; 228 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -60,6 +32,7 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -131,6 +104,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -202,6 +176,8 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openjdk/optimized/relocator.ll
+; openspiel/optimized/tarok.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -275,11 +251,24 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; openjdk/optimized/relocator.ll
+; spike/optimized/fdt_rw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -305,7 +294,7 @@ define i64 @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.page.3534732, ptr %0, i64 %4
+  %5 = getelementptr %struct.page.3534698, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

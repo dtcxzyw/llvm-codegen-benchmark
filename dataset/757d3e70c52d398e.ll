@@ -1,8 +1,8 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::SdfAssetPath.3386697" = type { %"class.std::__cxx11::basic_string.3386662", %"class.std::__cxx11::basic_string.3386662" }
-%"class.std::__cxx11::basic_string.3386662" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3386663", i64, %union.anon.42.3386664 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3386663" = type { ptr }
-%union.anon.42.3386664 = type { i64, [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::SdfAssetPath.3386663" = type { %"class.std::__cxx11::basic_string.3386628", %"class.std::__cxx11::basic_string.3386628" }
+%"class.std::__cxx11::basic_string.3386628" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3386629", i64, %union.anon.42.3386630 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3386629" = type { ptr }
+%union.anon.42.3386630 = type { i64, [8 x i8] }
 
 ; 6 occurrences:
 ; lightgbm/optimized/gbdt_prediction.cpp.ll
@@ -30,7 +30,7 @@ define ptr @func000000000000000b(ptr %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::SdfAssetPath.3386697", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::SdfAssetPath.3386663", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

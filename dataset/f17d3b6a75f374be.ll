@@ -1,5 +1,5 @@
 
-%struct.bio_vec.3550063 = type { ptr, i32, i32 }
+%struct.bio_vec.3550029 = type { ptr, i32, i32 }
 
 ; 7 occurrences:
 ; clamav/optimized/upack.c.ll
@@ -87,7 +87,7 @@ entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 48
   %5 = zext i8 %0 to i64
-  %6 = getelementptr %struct.bio_vec.3550063, ptr %4, i64 %5
+  %6 = getelementptr %struct.bio_vec.3550029, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }

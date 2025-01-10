@@ -142,3 +142,9 @@ func0000000000000021:                   # @func0000000000000021
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
+func00000000000000f8:                   # @func00000000000000f8
+	shrq	$3, %rdx
+	addq	%rsi, %rdx
+	cmpq	%rdi, %rdx
+	seta	%al
+	retq

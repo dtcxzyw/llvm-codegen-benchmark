@@ -1,5 +1,5 @@
 
-%"class.llvm::Attribute.3332310" = type { ptr }
+%"class.llvm::Attribute.3332276" = type { ptr }
 
 ; 48 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
@@ -156,8 +156,8 @@ define ptr @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 56
-  %5 = getelementptr nusw nuw %"class.llvm::Attribute.3332310", ptr %4, i64 %1
-  %6 = getelementptr nusw %"class.llvm::Attribute.3332310", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.llvm::Attribute.3332276", ptr %4, i64 %1
+  %6 = getelementptr nusw %"class.llvm::Attribute.3332276", ptr %5, i64 %0
   ret ptr %6
 }
 

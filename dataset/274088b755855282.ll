@@ -1,6 +1,6 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialForceVector.2818505 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialForceVector.2818471 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
 
 ; 6 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -45,10 +45,10 @@ entry:
 define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.btVector3.2818499, ptr %0, i64 %3
+  %4 = getelementptr %class.btVector3.2818465, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   %6 = sext i32 %1 to i64
-  %7 = getelementptr nusw %struct.btSpatialForceVector.2818505, ptr %5, i64 %6
+  %7 = getelementptr nusw %struct.btSpatialForceVector.2818471, ptr %5, i64 %6
   ret ptr %7
 }
 

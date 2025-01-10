@@ -4,6 +4,13 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
+func0000000000000064:                   # @func0000000000000064
+	leaq	7(%rdi,%rsi), %rax
+	addq	$7, %rdi
+	addq	$-7, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	32(%rdi,%rsi), %rax
 	addq	$32, %rdi

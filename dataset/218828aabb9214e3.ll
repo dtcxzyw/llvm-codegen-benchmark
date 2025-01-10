@@ -1,12 +1,12 @@
 
-%struct.page.3534732 = type { i64, %union.anon.9.3534733, %union.anon.17.3534734, %struct.atomic_t.3534696, [8 x i8] }
-%union.anon.9.3534733 = type { %struct.anon.10.3534735 }
-%struct.anon.10.3534735 = type { %union.anon.11.3534736, ptr, %union.anon.13.3534737, i64 }
-%union.anon.11.3534736 = type { %struct.list_head.3534700 }
-%struct.list_head.3534700 = type { ptr, ptr }
-%union.anon.13.3534737 = type { i64 }
-%union.anon.17.3534734 = type { %struct.atomic_t.3534696 }
-%struct.atomic_t.3534696 = type { i32 }
+%struct.page.3534698 = type { i64, %union.anon.9.3534699, %union.anon.17.3534700, %struct.atomic_t.3534662, [8 x i8] }
+%union.anon.9.3534699 = type { %struct.anon.10.3534701 }
+%struct.anon.10.3534701 = type { %union.anon.11.3534702, ptr, %union.anon.13.3534703, i64 }
+%union.anon.11.3534702 = type { %struct.list_head.3534666 }
+%struct.list_head.3534666 = type { ptr, ptr }
+%union.anon.13.3534703 = type { i64 }
+%union.anon.17.3534700 = type { %struct.atomic_t.3534662 }
+%struct.atomic_t.3534662 = type { i32 }
 
 ; 12 occurrences:
 ; abc/optimized/absVta.c.ll
@@ -38,7 +38,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.page.3534732, ptr %1, i64 %3
+  %4 = getelementptr %struct.page.3534698, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = shl i64 %6, 6

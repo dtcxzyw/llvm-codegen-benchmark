@@ -80,7 +80,7 @@ entry:
   ret i32 %4
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -146,7 +146,6 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
-; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/ProcessImpl_md.ll
 ; openjdk/optimized/debugInit.ll
 ; openjdk/optimized/nativeInst_x86.ll

@@ -1,8 +1,8 @@
 
-%"class.std::vector.248.2638986" = type { %"struct.std::_Vector_base.249.2638987" }
-%"struct.std::_Vector_base.249.2638987" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638988" }
-%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638988" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638989" }
-%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638989" = type { ptr, ptr, ptr }
+%"class.std::vector.248.2638953" = type { %"struct.std::_Vector_base.249.2638954" }
+%"struct.std::_Vector_base.249.2638954" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638955" }
+%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl.2638955" = type { %"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638956" }
+%"struct.std::_Vector_base<std::array<unsigned char, 16>, std::allocator<std::array<unsigned char, 16>>>::_Vector_impl_data.2638956" = type { ptr, ptr, ptr }
 
 ; 36 occurrences:
 ; boost/optimized/matches_relation_factory.ll
@@ -46,7 +46,7 @@ define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw %"class.std::vector.248.2638986", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::vector.248.2638953", ptr %0, i64 %3
   ret ptr %4
 }
 

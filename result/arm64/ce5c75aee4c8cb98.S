@@ -254,14 +254,6 @@ func0000000000000149:                   // @func0000000000000149
 	cset	w0, hs
 	ret
                                         // -- End function
-func00000000000001c9:                   // @func00000000000001c9
-// %bb.0:                               // %entry
-	add	x8, x1, x2
-	sub	x9, x0, #4
-	cmp	x9, x8
-	cset	w0, hs
-	ret
-                                        // -- End function
 func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
 	add	x8, x1, x2

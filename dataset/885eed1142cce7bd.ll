@@ -1,47 +1,47 @@
 
-%"class.rocksdb::clock_cache::ClockCacheShard.2630088" = type <{ %"class.rocksdb::CacheShardBase.2630089", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2630090", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2.2630068", [52 x i8] }>
-%"class.rocksdb::CacheShardBase.2630089" = type { i32 }
-%"class.rocksdb::clock_cache::FixedHyperClockTable.2630090" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2630091", i32, i64, i64, %"class.std::unique_ptr.2630092" }
-%"class.rocksdb::clock_cache::BaseClockTable.base.2630091" = type { %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", %"class.rocksdb::RelaxedAtomic.2630070", [40 x i8], %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069", [40 x i8], i32, ptr, ptr, ptr }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.std::unique_ptr.2630092" = type { %"struct.std::__uniq_ptr_data.2630093" }
-%"struct.std::__uniq_ptr_data.2630093" = type { %"class.std::__uniq_ptr_impl.2630094" }
-%"class.std::__uniq_ptr_impl.2630094" = type { %"class.std::tuple.2630095" }
-%"class.std::tuple.2630095" = type { %"struct.std::_Tuple_impl.2630096" }
-%"struct.std::_Tuple_impl.2630096" = type { %"struct.std::_Head_base.1.2630097" }
-%"struct.std::_Head_base.1.2630097" = type { ptr }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"class.rocksdb::RelaxedAtomic.2.2630068" = type { %"struct.std::atomic.3.2630073" }
-%"struct.std::atomic.3.2630073" = type { %"struct.std::__atomic_base.4.2630074" }
-%"struct.std::__atomic_base.4.2630074" = type { i32 }
-%"struct.G1RegionMarkStatsCache::G1RegionMarkStatsCacheEntry.2744627" = type { i32, %struct.G1RegionMarkStats.2744626 }
-%struct.G1RegionMarkStats.2744626 = type { i64 }
-%struct.code.2876641 = type { i8, i8, i16 }
-%"struct.llvm::detail::DenseMapPair.3160798" = type { %"struct.std::pair.1657.3160799" }
-%"struct.std::pair.1657.3160799" = type { %"class.(anonymous namespace)::CatchHandlerType.3160800", ptr }
-%"class.(anonymous namespace)::CatchHandlerType.3160800" = type { %"class.clang::QualType.3160553", i8, [7 x i8] }
-%"class.clang::QualType.3160553" = type { %"class.llvm::PointerIntPair.3160554" }
-%"class.llvm::PointerIntPair.3160554" = type { %"struct.llvm::detail::PunnedPointer.3160555" }
-%"struct.llvm::detail::PunnedPointer.3160555" = type { [8 x i8] }
-%struct.netlink_table.3533751 = type { %struct.rhashtable.3533752, %struct.hlist_head.3533695, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, i32 }
-%struct.rhashtable.3533752 = type { ptr, i32, i32, %struct.rhashtable_params.3533745, i8, %struct.work_struct.3533684, %struct.mutex.3533723, %struct.spinlock.3533675, %struct.atomic_t.3533656 }
-%struct.rhashtable_params.3533745 = type { i16, i16, i16, i16, i32, i16, i8, ptr, ptr, ptr }
-%struct.work_struct.3533684 = type { %struct.atomic64_t.3533688, %struct.list_head.3533662, ptr }
-%struct.atomic64_t.3533688 = type { i64 }
-%struct.list_head.3533662 = type { ptr, ptr }
-%struct.mutex.3533723 = type { %struct.atomic64_t.3533688, %struct.raw_spinlock.3533677, %struct.optimistic_spin_queue.3533690, %struct.list_head.3533662 }
-%struct.raw_spinlock.3533677 = type { %struct.qspinlock.3533672 }
-%struct.qspinlock.3533672 = type { %union.anon.6.3533673 }
-%union.anon.6.3533673 = type { %struct.atomic_t.3533656 }
-%struct.optimistic_spin_queue.3533690 = type { %struct.atomic_t.3533656 }
-%struct.spinlock.3533675 = type { %union.anon.34.3533676 }
-%union.anon.34.3533676 = type { %struct.raw_spinlock.3533677 }
-%struct.atomic_t.3533656 = type { i32 }
-%struct.hlist_head.3533695 = type { ptr }
-%struct.PgStat_SnapshotEntry.3651786 = type { %struct.PgStat_HashKey.3651783, i8, ptr }
-%struct.PgStat_HashKey.3651783 = type { i32, i32, i32 }
+%"class.rocksdb::clock_cache::ClockCacheShard.2630055" = type <{ %"class.rocksdb::CacheShardBase.2630056", [60 x i8], %"class.rocksdb::clock_cache::FixedHyperClockTable.2630057", %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2.2630035", [52 x i8] }>
+%"class.rocksdb::CacheShardBase.2630056" = type { i32 }
+%"class.rocksdb::clock_cache::FixedHyperClockTable.2630057" = type { %"class.rocksdb::clock_cache::BaseClockTable.base.2630058", i32, i64, i64, %"class.std::unique_ptr.2630059" }
+%"class.rocksdb::clock_cache::BaseClockTable.base.2630058" = type { %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2630037", %"class.rocksdb::RelaxedAtomic.2630037", [40 x i8], %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036", [40 x i8], i32, ptr, ptr, ptr }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.std::unique_ptr.2630059" = type { %"struct.std::__uniq_ptr_data.2630060" }
+%"struct.std::__uniq_ptr_data.2630060" = type { %"class.std::__uniq_ptr_impl.2630061" }
+%"class.std::__uniq_ptr_impl.2630061" = type { %"class.std::tuple.2630062" }
+%"class.std::tuple.2630062" = type { %"struct.std::_Tuple_impl.2630063" }
+%"struct.std::_Tuple_impl.2630063" = type { %"struct.std::_Head_base.1.2630064" }
+%"struct.std::_Head_base.1.2630064" = type { ptr }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"class.rocksdb::RelaxedAtomic.2.2630035" = type { %"struct.std::atomic.3.2630040" }
+%"struct.std::atomic.3.2630040" = type { %"struct.std::__atomic_base.4.2630041" }
+%"struct.std::__atomic_base.4.2630041" = type { i32 }
+%"struct.G1RegionMarkStatsCache::G1RegionMarkStatsCacheEntry.2744593" = type { i32, %struct.G1RegionMarkStats.2744592 }
+%struct.G1RegionMarkStats.2744592 = type { i64 }
+%struct.code.2876607 = type { i8, i8, i16 }
+%"struct.llvm::detail::DenseMapPair.3160764" = type { %"struct.std::pair.1657.3160765" }
+%"struct.std::pair.1657.3160765" = type { %"class.(anonymous namespace)::CatchHandlerType.3160766", ptr }
+%"class.(anonymous namespace)::CatchHandlerType.3160766" = type { %"class.clang::QualType.3160519", i8, [7 x i8] }
+%"class.clang::QualType.3160519" = type { %"class.llvm::PointerIntPair.3160520" }
+%"class.llvm::PointerIntPair.3160520" = type { %"struct.llvm::detail::PunnedPointer.3160521" }
+%"struct.llvm::detail::PunnedPointer.3160521" = type { [8 x i8] }
+%struct.netlink_table.3533717 = type { %struct.rhashtable.3533718, %struct.hlist_head.3533661, ptr, i32, i32, ptr, ptr, ptr, ptr, ptr, i32 }
+%struct.rhashtable.3533718 = type { ptr, i32, i32, %struct.rhashtable_params.3533711, i8, %struct.work_struct.3533650, %struct.mutex.3533689, %struct.spinlock.3533641, %struct.atomic_t.3533622 }
+%struct.rhashtable_params.3533711 = type { i16, i16, i16, i16, i32, i16, i8, ptr, ptr, ptr }
+%struct.work_struct.3533650 = type { %struct.atomic64_t.3533654, %struct.list_head.3533628, ptr }
+%struct.atomic64_t.3533654 = type { i64 }
+%struct.list_head.3533628 = type { ptr, ptr }
+%struct.mutex.3533689 = type { %struct.atomic64_t.3533654, %struct.raw_spinlock.3533643, %struct.optimistic_spin_queue.3533656, %struct.list_head.3533628 }
+%struct.raw_spinlock.3533643 = type { %struct.qspinlock.3533638 }
+%struct.qspinlock.3533638 = type { %union.anon.6.3533639 }
+%union.anon.6.3533639 = type { %struct.atomic_t.3533622 }
+%struct.optimistic_spin_queue.3533656 = type { %struct.atomic_t.3533622 }
+%struct.spinlock.3533641 = type { %union.anon.34.3533642 }
+%union.anon.34.3533642 = type { %struct.raw_spinlock.3533643 }
+%struct.atomic_t.3533622 = type { i32 }
+%struct.hlist_head.3533661 = type { ptr }
+%struct.PgStat_SnapshotEntry.3651752 = type { %struct.PgStat_HashKey.3651749, i8, ptr }
+%struct.PgStat_HashKey.3651749 = type { i32, i32, i32 }
 
 ; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -52,7 +52,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.rocksdb::clock_cache::ClockCacheShard.2630088", ptr %0, i64 %5, i32 2
+  %6 = getelementptr nuw %"class.rocksdb::clock_cache::ClockCacheShard.2630055", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -196,7 +196,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.G1RegionMarkStatsCache::G1RegionMarkStatsCacheEntry.2744627", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.G1RegionMarkStatsCache::G1RegionMarkStatsCacheEntry.2744593", ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
@@ -217,7 +217,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nuw %struct.code.2876641, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.code.2876607, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -231,7 +231,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3160798", ptr %0, i64 %5, i32 0, i32 0, i32 1
+  %6 = getelementptr %"struct.llvm::detail::DenseMapPair.3160764", ptr %0, i64 %5, i32 0, i32 0, i32 1
   ret ptr %6
 }
 
@@ -246,7 +246,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.netlink_table.3533751, ptr %0, i64 %5, i32 10
+  %6 = getelementptr %struct.netlink_table.3533717, ptr %0, i64 %5, i32 10
   ret ptr %6
 }
 
@@ -260,7 +260,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.PgStat_SnapshotEntry.3651786, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.PgStat_SnapshotEntry.3651752, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

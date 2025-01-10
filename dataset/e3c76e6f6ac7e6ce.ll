@@ -931,7 +931,7 @@ entry:
   ret i32 %4
 }
 
-; 323 occurrences:
+; 324 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -1109,6 +1109,7 @@ entry:
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
@@ -2537,7 +2538,7 @@ entry:
   ret i32 %4
 }
 
-; 105 occurrences:
+; 104 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cbaBlast.c.ll
@@ -2630,7 +2631,6 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; slurm/optimized/dist_tasks.ll
 ; slurm/optimized/gres.ll
@@ -2734,7 +2734,7 @@ entry:
   ret i32 %4
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -2795,6 +2795,7 @@ entry:
 ; pbrt-v4/optimized/media.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/Recast.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/lolwut.ll
 ; slurm/optimized/dist_tasks.ll

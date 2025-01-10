@@ -58,6 +58,18 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; git/optimized/column.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp ne i64 %1, %4
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
 ; 4 occurrences:
 ; hdf5/optimized/H5EAhdr.c.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll

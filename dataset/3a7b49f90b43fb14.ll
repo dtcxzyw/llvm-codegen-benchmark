@@ -1,12 +1,11 @@
 
-; 3 occurrences:
-; minetest/optimized/clientiface.cpp.ll
+; 2 occurrences:
 ; minetest/optimized/map.cpp.ll
 ; opencv/optimized/fast_score.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = call i16 @llvm.smin.i16(i16 %1, i16 %2)
+  %3 = tail call i16 @llvm.smin.i16(i16 %1, i16 %2)
   %4 = sext i16 %3 to i32
   %5 = icmp slt i32 %0, %4
   ret i1 %5

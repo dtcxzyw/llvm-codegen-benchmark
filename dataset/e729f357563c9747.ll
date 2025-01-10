@@ -1,6 +1,6 @@
 
-%struct.WordEntry.3654801 = type { i32 }
-%struct.Run.3719341 = type { i32, i32, i32 }
+%struct.WordEntry.3654767 = type { i32 }
+%struct.Run.3719291 = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; gromacs/optimized/dlasrt.cpp.ll
@@ -26,7 +26,7 @@ entry:
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr %struct.WordEntry.3654801, ptr %6, i64 %5
+  %7 = getelementptr %struct.WordEntry.3654767, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 -8
-  %7 = getelementptr %struct.Run.3719341, ptr %6, i64 %5
+  %7 = getelementptr %struct.Run.3719291, ptr %6, i64 %5
   ret ptr %7
 }
 

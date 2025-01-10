@@ -15,6 +15,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; libquic/optimized/poly1305_vec.c.ll
+; qemu/optimized/util_host-utils.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i128 %0, i128 %1) #0 {
+entry:
+  %2 = and i128 %1, 18446744073709551615
+  %3 = add nuw i128 %0, %2
+  %4 = lshr i128 %3, 64
+  %5 = trunc nuw i128 %4 to i64
+  ret i64 %5
+}
+
 ; 17 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -38,18 +51,6 @@ define i64 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 18446744073709551615
   %3 = add i128 %0, %2
-  %4 = lshr i128 %3, 64
-  %5 = trunc nuw i128 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
-; libquic/optimized/poly1305_vec.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000012(i128 %0, i128 %1) #0 {
-entry:
-  %2 = and i128 %1, 18446744073709551608
-  %3 = add nuw i128 %2, %0
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5

@@ -30,11 +30,3 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rdi, %rax
-	movl	%edx, %ecx
-	xorl	%edx, %edx
-	divq	%rsi
-	cmpq	%rcx, %rdx
-	setb	%al
-	retq

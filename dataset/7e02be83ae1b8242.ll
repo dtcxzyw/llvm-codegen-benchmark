@@ -28,7 +28,7 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; linux/optimized/xt_policy.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
@@ -36,7 +36,6 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; yosys/optimized/celledges.ll
 ; Function Attrs: nounwind
@@ -117,7 +116,7 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/pe.c.ll
@@ -140,7 +139,6 @@ entry:
 ; wireshark/optimized/packet-gsm_a_bssmap.c.ll
 ; wireshark/optimized/packet-iax2.c.ll
 ; wireshark/optimized/packet-iperf.c.ll
-; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/internal.c.ll

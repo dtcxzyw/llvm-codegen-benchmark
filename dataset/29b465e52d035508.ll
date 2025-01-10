@@ -293,9 +293,8 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll

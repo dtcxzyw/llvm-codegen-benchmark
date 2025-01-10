@@ -119,12 +119,13 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; brotli/optimized/decode.c.ll
+; cpython/optimized/unicodeobject.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll

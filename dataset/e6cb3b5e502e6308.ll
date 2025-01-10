@@ -108,6 +108,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 7
+  %4 = zext nneg i32 %0 to i64
+  %5 = mul i64 %3, %4
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/magnitude.cpp.ll

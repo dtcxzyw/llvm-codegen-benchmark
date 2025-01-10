@@ -28,7 +28,7 @@ entry:
   ret i32 %2
 }
 
-; 34 occurrences:
+; 31 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/cipso_ipv4.ll
@@ -42,11 +42,8 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
-; openusd/optimized/openexr-c.c.ll
 ; php/optimized/ir_emit.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll

@@ -1,6 +1,6 @@
 
-%struct.HdrEntry.2644644 = type { %"class.mold::BigEndian.467.2644645", %"class.mold::BigEndian.467.2644645" }
-%"class.mold::BigEndian.467.2644645" = type { [4 x i8] }
+%struct.HdrEntry.2644611 = type { %"class.mold::BigEndian.467.2644612", %"class.mold::BigEndian.467.2644612" }
+%"class.mold::BigEndian.467.2644612" = type { [4 x i8] }
 
 ; 4 occurrences:
 ; faiss/optimized/NSG.cpp.ll
@@ -46,7 +46,7 @@ define ptr @func000000000000005b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw nuw %struct.HdrEntry.2644644, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.HdrEntry.2644611, ptr %0, i64 %4
   ret ptr %5
 }
 

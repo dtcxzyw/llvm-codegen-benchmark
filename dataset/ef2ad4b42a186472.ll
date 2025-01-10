@@ -30,7 +30,7 @@ entry:
   ret i8 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; openusd/optimized/aom_integer.c.ll
@@ -39,6 +39,7 @@ entry:
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

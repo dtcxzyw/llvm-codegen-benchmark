@@ -1,8 +1,8 @@
 
-%"class.llvm::MCInstrDesc.3158503" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3321779" = type { ptr, ptr, ptr, ptr }
-%"class.sat::literal.3631586" = type { i32 }
+%"class.llvm::MCInstrDesc.3158469" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3321745" = type { ptr, ptr, ptr, ptr }
+%"class.sat::literal.3631552" = type { i32 }
 
 ; 2 occurrences:
 ; ruby/optimized/vm.ll
@@ -39,7 +39,8 @@ entry:
   ret ptr %7
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
@@ -99,9 +100,9 @@ define ptr @func000000000000016f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3158503", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3158469", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 32
-  %7 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3158503", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3158469", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -113,7 +114,7 @@ define ptr @func000000000000016c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3168219", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
@@ -127,7 +128,7 @@ define ptr @func000000000000016a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3321779", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3321745", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
@@ -155,9 +156,9 @@ define ptr @func000000000000006b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.sat::literal.3631586", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.sat::literal.3631552", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -4
-  %7 = getelementptr nusw nuw %"class.sat::literal.3631586", ptr %6, i64 %0
+  %7 = getelementptr nusw nuw %"class.sat::literal.3631552", ptr %6, i64 %0
   ret ptr %7
 }
 

@@ -46,16 +46,3 @@ func000000000000003c:                   # @func000000000000003c
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
-	andi	a1, a1, 1
-	slli	a2, a2, 4
-	bnez	a1, .LBB4_2
-	li	a1, 96
-	add	a1, a1, a2
-	add	a0, a0, a1
-	ret
-.LBB4_2:
-	li	a1, 128
-	add	a1, a1, a2
-	add	a0, a0, a1
-	ret

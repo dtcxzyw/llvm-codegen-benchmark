@@ -102,7 +102,7 @@ entry:
   ret i1 %4
 }
 
-; 1343 occurrences:
+; 1344 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -570,6 +570,7 @@ entry:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3yt47vxpbp4b5dih.ll
+; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/ji6jbkbato2odt0.ll
 ; draco/optimized/point_attribute.cc.ll
 ; duckdb/optimized/comparison_operators.cpp.ll

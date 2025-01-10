@@ -1,5 +1,5 @@
 
-%struct.pm_constant_t.2600929 = type { ptr, i64 }
+%struct.pm_constant_t.2600896 = type { ptr, i64 }
 
 ; 22 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
@@ -2019,7 +2019,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1073741823
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.pm_constant_t.2600929, ptr %0, i64 %3
+  %4 = getelementptr %struct.pm_constant_t.2600896, ptr %0, i64 %3
   ret ptr %4
 }
 

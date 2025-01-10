@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; cmake/optimized/fse_compress.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
-; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; minetest/optimized/mapgen_flat.cpp.ll
@@ -33,8 +32,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
-; abc/optimized/ivyFastMap.c.ll
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll

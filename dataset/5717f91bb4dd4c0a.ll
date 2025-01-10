@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 212 occurrences:
 ; abc/optimized/abcFxu.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/ioWriteDot.c.ll
@@ -108,6 +108,8 @@
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; freetype/optimized/pshinter.c.ll
 ; graphviz/optimized/gc.c.ll
 ; icu/optimized/collationcompare.ll

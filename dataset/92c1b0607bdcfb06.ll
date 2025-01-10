@@ -1,8 +1,8 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%class.symbol.3612719 = type { ptr }
-%class.symbol.3613505 = type { ptr }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%class.symbol.3612685 = type { ptr }
+%class.symbol.3613471 = type { ptr }
 
 ; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -14,8 +14,8 @@ define ptr @func00000000000001ff(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %3, i64 %4
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %3, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %5, i64 %4
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
@@ -176,7 +176,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = zext i32 %1 to i64
   %5 = getelementptr nusw nuw ptr, ptr %3, i64 %4
-  %6 = getelementptr nusw nuw %class.symbol.3612719, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %class.symbol.3612685, ptr %5, i64 %4
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
   ret ptr %7
 }
@@ -233,7 +233,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 80
   %4 = zext i32 %1 to i64
   %5 = getelementptr nusw nuw ptr, ptr %3, i64 %4
-  %6 = getelementptr nusw nuw %class.symbol.3613505, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %class.symbol.3613471, ptr %5, i64 %4
   %7 = getelementptr ptr, ptr %6, i64 %0
   ret ptr %7
 }

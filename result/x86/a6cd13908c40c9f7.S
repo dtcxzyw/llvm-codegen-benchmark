@@ -58,12 +58,6 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	subq	%rdx, %rsi
-	shlq	$3, %rsi
-	cmpq	%rdi, %rsi
-	setg	%al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	subq	%rdx, %rsi
 	shlq	$3, %rsi

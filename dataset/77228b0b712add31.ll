@@ -1,26 +1,26 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
-%"class.openvdb::v11_0::math::Vec3.934.2710784" = type { %"class.openvdb::v11_0::math::Tuple.935.2710785" }
-%"class.openvdb::v11_0::math::Tuple.935.2710785" = type { [3 x %"class.openvdb::v11_0::math::internal::half.2710702"] }
-%"class.openvdb::v11_0::math::internal::half.2710702" = type { i16 }
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
-%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
-%"class.WasmEdge::Variant.2764046" = type { %"union.WasmEdge::VariadicUnion.2764047" }
-%"union.WasmEdge::VariadicUnion.2764047" = type { %"union.WasmEdge::VariadicUnion.37.2764048" }
-%"union.WasmEdge::VariadicUnion.37.2764048" = type { %"union.WasmEdge::VariadicUnion.38.2764049" }
-%"union.WasmEdge::VariadicUnion.38.2764049" = type { %"union.WasmEdge::VariadicUnion.39.2764050" }
-%"union.WasmEdge::VariadicUnion.39.2764050" = type { %"union.WasmEdge::VariadicUnion.40.2764051" }
-%"union.WasmEdge::VariadicUnion.40.2764051" = type { %"union.WasmEdge::VariadicUnion.41.2764052" }
-%"union.WasmEdge::VariadicUnion.41.2764052" = type { %"union.WasmEdge::VariadicUnion.42.2764053" }
-%"union.WasmEdge::VariadicUnion.42.2764053" = type { i128 }
-%"class.WasmEdge::AST::Instruction.2769671" = type <{ %"union.WasmEdge::AST::Instruction::Inner.2769672", i32, i32, %struct.anon.59.2769673, [7 x i8] }>
-%"union.WasmEdge::AST::Instruction::Inner.2769672" = type { i128 }
-%struct.anon.59.2769673 = type { i8 }
-%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791401 = type { i32 }
-%struct.scsi_lun.3542285 = type { [8 x i8] }
-%union.ListCell.3651460 = type { ptr }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653" = type { i8, i8, [6 x i8] }
+%"class.openvdb::v11_0::math::Vec3.934.2710750" = type { %"class.openvdb::v11_0::math::Tuple.935.2710751" }
+%"class.openvdb::v11_0::math::Tuple.935.2710751" = type { [3 x %"class.openvdb::v11_0::math::internal::half.2710668"] }
+%"class.openvdb::v11_0::math::internal::half.2710668" = type { i16 }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
+%"struct.V3NumberData::ValueAndX.2750095" = type { i32, i32 }
+%"class.WasmEdge::Variant.2764012" = type { %"union.WasmEdge::VariadicUnion.2764013" }
+%"union.WasmEdge::VariadicUnion.2764013" = type { %"union.WasmEdge::VariadicUnion.37.2764014" }
+%"union.WasmEdge::VariadicUnion.37.2764014" = type { %"union.WasmEdge::VariadicUnion.38.2764015" }
+%"union.WasmEdge::VariadicUnion.38.2764015" = type { %"union.WasmEdge::VariadicUnion.39.2764016" }
+%"union.WasmEdge::VariadicUnion.39.2764016" = type { %"union.WasmEdge::VariadicUnion.40.2764017" }
+%"union.WasmEdge::VariadicUnion.40.2764017" = type { %"union.WasmEdge::VariadicUnion.41.2764018" }
+%"union.WasmEdge::VariadicUnion.41.2764018" = type { %"union.WasmEdge::VariadicUnion.42.2764019" }
+%"union.WasmEdge::VariadicUnion.42.2764019" = type { i128 }
+%"class.WasmEdge::AST::Instruction.2769637" = type <{ %"union.WasmEdge::AST::Instruction::Inner.2769638", i32, i32, %struct.anon.59.2769639, [7 x i8] }>
+%"union.WasmEdge::AST::Instruction::Inner.2769638" = type { i128 }
+%struct.anon.59.2769639 = type { i8 }
+%struct._zend_op.2791358 = type { ptr, %union._znode_op.2791367, %union._znode_op.2791367, %union._znode_op.2791367, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791367 = type { i32 }
+%struct.scsi_lun.3542251 = type { [8 x i8] }
+%union.ListCell.3651426 = type { ptr }
 
 ; 11 occurrences:
 ; linux/optimized/base.ll
@@ -97,7 +97,7 @@ entry:
   ret i1 %6
 }
 
-; 2386 occurrences:
+; 2381 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -155,10 +155,8 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; assimp/optimized/zip.c.ll
 ; boost/optimized/src.ll
 ; bullet3/optimized/btAxisSweep3.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -303,7 +301,6 @@ entry:
 ; hermes/optimized/repl.cpp.ll
 ; hermes/optimized/rust-api.cpp.ll
 ; hermes/optimized/synth.cpp.ll
-; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
@@ -1558,8 +1555,6 @@ entry:
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
@@ -3227,7 +3222,7 @@ entry:
 define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -3299,7 +3294,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.934.2710784", ptr %1, i64 %3
+  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.934.2710750", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 6
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -4100,7 +4095,7 @@ entry:
 define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
@@ -4187,7 +4182,7 @@ entry:
 define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %3
+  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2750095", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -4246,7 +4241,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.WasmEdge::Variant.2764046", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.WasmEdge::Variant.2764012", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -4266,7 +4261,7 @@ entry:
 define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.WasmEdge::AST::Instruction.2769671", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.WasmEdge::AST::Instruction.2769637", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -32
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
@@ -4282,7 +4277,7 @@ entry:
 define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2791358, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -32
   %6 = icmp ult ptr %5, %4
   ret i1 %6
@@ -4713,7 +4708,7 @@ entry:
 define i1 @func0000000000000208(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.scsi_lun.3542285, ptr %1, i64 %3
+  %4 = getelementptr %struct.scsi_lun.3542251, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 8
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
@@ -4725,7 +4720,7 @@ entry:
 define i1 @func0000000000000209(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %union.ListCell.3651460, ptr %1, i64 %3
+  %4 = getelementptr %union.ListCell.3651426, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 8
   %6 = icmp uge ptr %5, %4
   ret i1 %6

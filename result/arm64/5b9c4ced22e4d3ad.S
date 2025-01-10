@@ -92,8 +92,9 @@ func0000000000000546:                   // @func0000000000000546
                                         // -- End function
 func0000000000000426:                   // @func0000000000000426
 // %bb.0:                               // %entry
-	cmp	x1, x2
-	ccmp	w0, #0, #4, gt
+	sub	x8, x1, x2
+	cmp	x8, #5
+	ccmp	w0, #0, #4, ge
 	cset	w0, eq
 	ret
                                         // -- End function

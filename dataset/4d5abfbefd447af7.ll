@@ -1,15 +1,16 @@
 
-%"class.draco::IndexType.132.3087969" = type { i32 }
-%struct.ItemIdData.3652641 = type { i32 }
+%"class.draco::IndexType.132.3087935" = type { i32 }
+%struct.ItemIdData.3652607 = type { i32 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; re2/optimized/prog.cc.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = select i1 %1, i64 9, i64 %3
-  %5 = getelementptr nusw nuw [10 x i16], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [10 x i16], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -46,7 +47,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw nuw [3 x %"class.draco::IndexType.132.3087969"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [3 x %"class.draco::IndexType.132.3087935"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -57,7 +58,7 @@ define ptr @func0000000000000006(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 2, i64 %3
-  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087969"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087935"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -74,17 +75,6 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %2, 1
-  %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw [0 x ptr], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
 ; 3 occurrences:
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/nbtdedup.ll
@@ -94,7 +84,7 @@ define ptr @func0000000000000004(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 -1, i64 %3
-  %5 = getelementptr [0 x %struct.ItemIdData.3652641], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.ItemIdData.3652607], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

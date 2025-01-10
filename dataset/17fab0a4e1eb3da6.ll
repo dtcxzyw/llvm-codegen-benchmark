@@ -1,7 +1,7 @@
 
-%struct.aiFace.2825500 = type { i32, ptr }
-%struct.Amap_Pin_t_.2877322 = type { ptr, i32, double, double, double, double, double, double, double }
-%struct.hlist_head.3550203 = type { ptr }
+%struct.aiFace.2825466 = type { i32, ptr }
+%struct.Amap_Pin_t_.2877288 = type { ptr, i32, double, double, double, double, double, double, double }
+%struct.hlist_head.3550169 = type { ptr }
 
 ; 7 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -17,7 +17,7 @@ entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %6 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %struct.aiFace.2825466, ptr %5, i64 %4
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
@@ -32,7 +32,7 @@ entry:
   %3 = lshr i32 %2, 24
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 64
-  %6 = getelementptr nusw nuw %struct.Amap_Pin_t_.2877322, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %struct.Amap_Pin_t_.2877288, ptr %5, i64 %4
   %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
@@ -45,7 +45,7 @@ entry:
   %3 = lshr i32 %2, 22
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 112
-  %6 = getelementptr %struct.hlist_head.3550203, ptr %5, i64 %4
+  %6 = getelementptr %struct.hlist_head.3550169, ptr %5, i64 %4
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

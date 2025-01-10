@@ -1,6 +1,6 @@
 
-%"class.llvm::SDUse.3276506" = type { %"class.llvm::SDValue.3276492", ptr, ptr, ptr }
-%"class.llvm::SDValue.3276492" = type <{ ptr, i32, [4 x i8] }>
+%"class.llvm::SDUse.3276472" = type { %"class.llvm::SDValue.3276458", ptr, ptr, ptr }
+%"class.llvm::SDValue.3276458" = type <{ ptr, i32, [4 x i8] }>
 
 ; 3 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 10785
   %4 = select i1 %3, i64 1, i64 2
-  %5 = getelementptr nusw nuw %"class.llvm::SDUse.3276506", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::SDUse.3276472", ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 40
   ret ptr %6
 }

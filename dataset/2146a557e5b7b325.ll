@@ -578,8 +578,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 2 occurrences:
 ; openusd/optimized/rprimCollection.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
@@ -591,10 +590,11 @@ entry:
   ret i64 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; abseil-cpp/optimized/no_destructor_test.cc.ll
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
 ; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
 ; zed-rs/optimized/0ndq4firz8eetu3jvgre1the4.ll
@@ -666,6 +666,17 @@ entry:
   %2 = lshr exact i64 %1, 1
   %3 = add nuw i64 %2, %0
   %4 = add nuw i64 %3, 63
+  ret i64 %4
+}
+
+; 1 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 3
+  %3 = add nuw nsw i64 %2, %0
+  %4 = add nuw nsw i64 %3, 63
   ret i64 %4
 }
 

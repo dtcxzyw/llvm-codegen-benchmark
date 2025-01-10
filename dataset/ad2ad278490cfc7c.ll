@@ -1,7 +1,7 @@
 
-%"struct.OT::HBFixed.2730714" = type { %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
+%"struct.OT::HBFixed.2730680" = type { %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
 
 ; 11 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -18,7 +18,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000061(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.OT::HBFixed.2730714", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.OT::HBFixed.2730680", ptr %1, i64 %2
   %4 = icmp eq i8 %0, 0
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

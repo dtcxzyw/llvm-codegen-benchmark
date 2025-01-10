@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpp-httplib/optimized/httplib.cc.ll
 ; duckdb/optimized/ub_duckdb_main_extension.cpp.ll
 ; eastl/optimized/EAMain.cpp.ll
@@ -7,6 +7,7 @@
 ; hyperscan/optimized/crc32.c.ll
 ; openexr/optimized/ImfRle.cpp.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:

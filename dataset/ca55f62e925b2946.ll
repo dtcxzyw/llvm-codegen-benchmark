@@ -130,41 +130,6 @@ entry:
   ret i1 %3
 }
 
-; 28 occurrences:
-; zed-rs/optimized/0pbj35jdb0n0bb6blyk493qkr.ll
-; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
-; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
-; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
-; zed-rs/optimized/27vlvcehd5fwhym4kjj7notsh.ll
-; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
-; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
-; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
-; zed-rs/optimized/3p631vu9oxnxxo7ycky8j4ebp.ll
-; zed-rs/optimized/54arwywyn44uhdmfvofjwixkx.ll
-; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
-; zed-rs/optimized/5bbqzb8q5kgxioclo37bxny1o.ll
-; zed-rs/optimized/5uzqbdqe1c2211uhbr477llbz.ll
-; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
-; zed-rs/optimized/7upr0o9ppxwcohq9brd8pyu8y.ll
-; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
-; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
-; zed-rs/optimized/8wv9z8bsh382qkns7z2j1g5g5.ll
-; zed-rs/optimized/95avnjj492qn9kfp6atrvkp2o.ll
-; zed-rs/optimized/axxbjhn7tbipaimusvotj6onb.ll
-; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
-; zed-rs/optimized/bpfch6rcllnvcfn46n7uygw1d.ll
-; zed-rs/optimized/cxppv5uyg2fe82gyndrbhshb4.ll
-; zed-rs/optimized/d5b8zvtgw734y7w1gjv52oafa.ll
-; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
-; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
-; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
-; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0) #0 {
-entry:
-  ret i1 false
-}
-
 ; 3 occurrences:
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; eastl/optimized/TestMap.cpp.ll

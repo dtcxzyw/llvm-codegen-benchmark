@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -14,14 +14,19 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
+; 12 occurrences:
 ; clamav/optimized/matcher-bm.c.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; openusd/optimized/lz4.cpp.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(i64 %0, ptr %1, i16 %2) #0 {
 entry:
@@ -62,8 +67,8 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.JSValue.3435081, ptr %1, i64 %4
-  %6 = getelementptr %struct.JSValue.3435081, ptr %5, i64 %0
+  %5 = getelementptr %struct.JSValue.3435047, ptr %1, i64 %4
+  %6 = getelementptr %struct.JSValue.3435047, ptr %5, i64 %0
   ret ptr %6
 }
 

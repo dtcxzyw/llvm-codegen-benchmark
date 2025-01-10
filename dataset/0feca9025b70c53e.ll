@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 174 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -153,8 +153,6 @@
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; openssl/optimized/libcrypto-lib-rc2_cbc.ll
@@ -185,7 +183,7 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -211,6 +209,8 @@ entry:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll

@@ -26,13 +26,6 @@ func000000000000001f:                   // @func000000000000001f
 	sub	w0, w8, w9
 	ret
                                         // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	mov	w8, #26                         // =0x1a
-	clz	w9, w0
-	sub	w0, w8, w9
-	ret
-                                        // -- End function
 func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
 	mov	w8, #31                         // =0x1f
@@ -62,6 +55,13 @@ func0000000000000002:                   // @func0000000000000002
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	mov	w8, #30                         // =0x1e
+	clz	w9, w0
+	sub	w0, w8, w9
+	ret
+                                        // -- End function
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	mov	w8, #30                         // =0x1e
 	clz	w9, w0

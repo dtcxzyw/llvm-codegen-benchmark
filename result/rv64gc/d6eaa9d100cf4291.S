@@ -1,3 +1,11 @@
+func0000000000000024:                   # @func0000000000000024
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	addi	a1, a1, -32
+	seqz	a1, a1
+	sltiu	a0, a0, -95
+	or	a0, a0, a1
+	ret
 func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	andi	a1, a1, 255
@@ -75,14 +83,6 @@ func0000000000000186:                   # @func0000000000000186
 	andi	a1, a1, 255
 	snez	a1, a1
 	slti	a0, a0, 0
-	or	a0, a0, a1
-	ret
-func0000000000000024:                   # @func0000000000000024
-	sext.w	a0, a0
-	andi	a1, a1, 255
-	addi	a1, a1, -1
-	seqz	a1, a1
-	sltiu	a0, a0, 126
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084

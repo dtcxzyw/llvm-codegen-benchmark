@@ -1,14 +1,14 @@
 
-%class.aiVector2t.2825654 = type { double, double }
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
-%class.aiVector3t.2828902 = type { double, double, double }
-%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820" = type { %"struct.std::atomic.3063608" }
-%"struct.std::atomic.3063608" = type { %"struct.std::__atomic_base.3063610" }
-%"struct.std::__atomic_base.3063610" = type { i64 }
-%struct.pointf_s.3884924 = type { double, double }
+%class.aiVector2t.2825620 = type { double, double }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
+%class.aiVector3t.2828868 = type { double, double, double }
+%"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786" = type { %"struct.std::atomic.3063574" }
+%"struct.std::atomic.3063574" = type { %"struct.std::__atomic_base.3063576" }
+%"struct.std::__atomic_base.3063576" = type { i64 }
+%struct.pointf_s.3884874 = type { double, double }
 
 ; 45 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -73,7 +73,7 @@ define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw %class.aiVector2t.2825654, ptr %0, i64 %4
+  %5 = getelementptr nusw %class.aiVector2t.2825620, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -85,7 +85,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -96,7 +96,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %4
+  %5 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -107,7 +107,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %4
+  %5 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -153,7 +153,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063820", ptr %0, i64 %4
+  %5 = getelementptr %"struct.tf::ScalablePipeline<__gnu_cxx::__normal_iterator<tf::Pipe<> *, std::vector<tf::Pipe<>>>>::Line.3063786", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -175,7 +175,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = urem i64 %3, %1
-  %5 = getelementptr %struct.pointf_s.3884924, ptr %0, i64 %4
+  %5 = getelementptr %struct.pointf_s.3884874, ptr %0, i64 %4
   ret ptr %5
 }
 

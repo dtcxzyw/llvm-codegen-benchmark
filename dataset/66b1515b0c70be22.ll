@@ -38,20 +38,4 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000318(i1 %0, i16 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
-  %5 = icmp ne i16 %1, 0
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
 attributes #0 = { nounwind }

@@ -13,13 +13,6 @@ func0000000000000138:                   // @func0000000000000138
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000001aa:                   // @func00000000000001aa
-// %bb.0:                               // %entry
-	add	w8, w0, w1
-	mvn	w8, w8
-	lsr	w0, w8, #31
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	add	w8, w0, w1
@@ -266,6 +259,13 @@ func00000000000000c4:                   // @func00000000000000c4
 func0000000000000186:                   // @func0000000000000186
 // %bb.0:                               // %entry
 	add	w8, w0, w1
+	lsr	w0, w8, #31
+	ret
+                                        // -- End function
+func00000000000001aa:                   // @func00000000000001aa
+// %bb.0:                               // %entry
+	add	w8, w0, w1
+	mvn	w8, w8
 	lsr	w0, w8, #31
 	ret
                                         // -- End function

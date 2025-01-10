@@ -108,11 +108,3 @@ func00000000000000fa:                   # @func00000000000000fa
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
-.LCPI14_0:
-	.long	24576                           # 0x6000
-func00000000000000fe:                   # @func00000000000000fe
-	vpmulld	.LCPI14_0(%rip){1to8}, %ymm2, %ymm2
-	vpslld	$14, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	retq

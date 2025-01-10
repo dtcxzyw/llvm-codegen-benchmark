@@ -4,17 +4,17 @@ func0000000000000061:                   # @func0000000000000061
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
-	movsbl	%sil, %eax
-	decl	%edi
-	cmpl	%eax, %edi
-	setg	%al
-	retq
 func0000000000000066:                   # @func0000000000000066
 	movsbl	%sil, %eax
 	incl	%edi
 	cmpl	%eax, %edi
 	setl	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	movsbl	%sil, %eax
+	decl	%edi
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func0000000000000078:                   # @func0000000000000078
 	movsbl	%sil, %eax

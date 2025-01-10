@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 15 occurrences:
 ; brotli/optimized/utf8_util.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -8,6 +8,9 @@
 ; luau/optimized/isocline.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/simdutf.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; php/optimized/html.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/utf_16_32.ll

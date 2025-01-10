@@ -1,9 +1,3 @@
-func00000000000000a6:                   # @func00000000000000a6
-	movl	%edx, %eax
-	subq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setl	%al
-	retq
 func00000000000000a1:                   # @func00000000000000a1
 	movl	%edx, %eax
 	subq	%rsi, %rax
@@ -45,6 +39,12 @@ func00000000000000aa:                   # @func00000000000000aa
 	subq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setg	%al
+	retq
+func00000000000000a6:                   # @func00000000000000a6
+	movl	%edx, %eax
+	subq	%rsi, %rax
+	cmpq	%rdi, %rax
+	setl	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %eax

@@ -66,7 +66,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/timefn.cpp.ll
 ; lief/optimized/constant_time.c.ll
 ; oiio/optimized/ddsinput.cpp.ll

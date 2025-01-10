@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; linux/optimized/page.ll
+; verilator/optimized/V3SplitVar.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 65536
+  %4 = icmp eq i64 %3, 0
+  %5 = or i64 %1, 49152
+  %6 = select i1 %4, i64 %0, i64 %5
+  ret i64 %6
+}
+
 ; 118 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
@@ -124,18 +137,6 @@ entry:
   %3 = and i64 %2, 16
   %4 = icmp eq i64 %3, 0
   %5 = or disjoint i64 %1, 2
-  %6 = select i1 %4, i64 %0, i64 %5
-  ret i64 %6
-}
-
-; 1 occurrences:
-; linux/optimized/page.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 2048
-  %4 = icmp eq i64 %3, 0
-  %5 = or i64 %1, 128
   %6 = select i1 %4, i64 %0, i64 %5
   ret i64 %6
 }

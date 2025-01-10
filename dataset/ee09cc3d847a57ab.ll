@@ -1,7 +1,7 @@
 
-%union.YYSTYPE.2601679 = type { i64 }
-%union.YYSTYPE.3651457 = type { %union.core_YYSTYPE.3651458 }
-%union.core_YYSTYPE.3651458 = type { ptr }
+%union.YYSTYPE.2601646 = type { i64 }
+%union.YYSTYPE.3651423 = type { %union.core_YYSTYPE.3651424 }
+%union.core_YYSTYPE.3651424 = type { ptr }
 
 ; 12 occurrences:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -22,7 +22,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %union.YYSTYPE.2601679, ptr %0, i64 %4
+  %5 = getelementptr nusw %union.YYSTYPE.2601646, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -34,7 +34,7 @@ entry:
   %2 = sext i8 %1 to i32
   %3 = sub nsw i32 1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %union.YYSTYPE.3651457, ptr %0, i64 %4
+  %5 = getelementptr %union.YYSTYPE.3651423, ptr %0, i64 %4
   ret ptr %5
 }
 

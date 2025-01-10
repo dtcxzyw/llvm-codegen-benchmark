@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; openjdk/optimized/reg_split.ll

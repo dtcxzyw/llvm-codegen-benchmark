@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3179631" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3179597" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 23 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -55,7 +55,7 @@ define ptr @func0000000000000002(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
   %4 = select i1 %3, i64 -4445, i64 -4451
-  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3179631", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::MCInstrDesc.3179597", ptr %0, i64 %4
   ret ptr %5
 }
 

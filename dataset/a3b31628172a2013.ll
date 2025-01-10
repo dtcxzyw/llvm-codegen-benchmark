@@ -1,5 +1,5 @@
 
-; 672 occurrences:
+; 671 occurrences:
 ; abc/optimized/aigScl.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/cuddSat.c.ll
@@ -570,7 +570,6 @@
 ; snappy/optimized/snappy.cc.ll
 ; spike/optimized/fdt_rw.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; stockfish/optimized/movegen.ll
 ; stockfish/optimized/search.ll
 ; tinympc/optimized/tiny_api.cpp.ll

@@ -223,7 +223,8 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; opencv/optimized/radial_variance_hash.cpp.ll
 ; redis/optimized/aof.ll

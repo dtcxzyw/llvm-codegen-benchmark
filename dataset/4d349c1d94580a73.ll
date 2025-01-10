@@ -1,55 +1,4 @@
 
-; 38 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/grid.cpp.ll
-; linux/optimized/datagram.ll
-; linux/optimized/mballoc.ll
-; linux/optimized/percpu.ll
-; linux/optimized/raw.ll
-; linux/optimized/skbuff.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; nuttx/optimized/lib_memsistream.c.ll
-; openjdk/optimized/mlib_ImageConv_16nw.ll
-; openjdk/optimized/mlib_ImageConv_32nw.ll
-; openjdk/optimized/mlib_ImageConv_8nw.ll
-; openjdk/optimized/mlib_ImageConv_D64nw.ll
-; openjdk/optimized/mlib_ImageConv_F32nw.ll
-; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/copyfromparse.ll
-; postgres/optimized/formatting.ll
-; postgres/optimized/inv_api.ll
-; postgres/optimized/tablesync.ll
-; qemu/optimized/block_parallels.c.ll
-; ruby/optimized/io.ll
-; slurm/optimized/cbuf.ll
-; wireshark/optimized/packet-rtmpt.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = call i32 @llvm.smin.i32(i32 %3, i32 %0)
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
 ; 52 occurrences:
 ; brotli/optimized/decode.c.ll
 ; ceres/optimized/cuda_block_sparse_crs_view.cc.ll
@@ -108,6 +57,56 @@ define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %0)
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.smin.i32(i32, i32) #1
+
+; 37 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; darktable/optimized/introspection_highlights.c.ll
+; gromacs/optimized/grid.cpp.ll
+; linux/optimized/datagram.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/percpu.ll
+; linux/optimized/raw.ll
+; linux/optimized/skbuff.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolution_x86_xop.cpp.ll
+; nuttx/optimized/lib_memsistream.c.ll
+; openjdk/optimized/mlib_ImageConv_16nw.ll
+; openjdk/optimized/mlib_ImageConv_32nw.ll
+; openjdk/optimized/mlib_ImageConv_8nw.ll
+; openjdk/optimized/mlib_ImageConv_D64nw.ll
+; openjdk/optimized/mlib_ImageConv_F32nw.ll
+; openjdk/optimized/mlib_ImageConv_u16nw.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; postgres/optimized/copyfromparse.ll
+; postgres/optimized/formatting.ll
+; postgres/optimized/inv_api.ll
+; postgres/optimized/tablesync.ll
+; qemu/optimized/block_parallels.c.ll
+; slurm/optimized/cbuf.ll
+; wireshark/optimized/packet-rtmpt.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = call i32 @llvm.smin.i32(i32 %0, i32 %3)
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

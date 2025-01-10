@@ -28,18 +28,6 @@ entry:
 ; 1 occurrences:
 ; libzmq/optimized/xpub.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i8 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %0, %3
-  %5 = zext i8 %1 to i32
-  %6 = icmp samesign ult i32 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; libzmq/optimized/xpub.cpp.ll
-; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32

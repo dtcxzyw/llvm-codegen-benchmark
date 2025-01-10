@@ -1,6 +1,6 @@
 
-%class.QFileInfo.3448300 = type { %class.QSharedDataPointer.38.3448301 }
-%class.QSharedDataPointer.38.3448301 = type { ptr }
+%class.QFileInfo.3448266 = type { %class.QSharedDataPointer.38.3448267 }
+%class.QSharedDataPointer.38.3448267 = type { ptr }
 
 ; 64 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -280,7 +280,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QFileInfo.3448300, ptr %1, i64 %2
+  %3 = getelementptr %class.QFileInfo.3448266, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
@@ -291,9 +291,9 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000051(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i16, ptr %1, i64 %2
+  %3 = getelementptr nusw i16, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -2
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5

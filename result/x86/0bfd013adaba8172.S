@@ -23,11 +23,3 @@ func0000000000000013:                   # @func0000000000000013
 	leaq	520(%rdi,%rax), %rax
 	cmoveq	%rcx, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	shlq	$4, %rsi
-	addq	%rdi, %rsi
-	leaq	(%rsi,%rax,8), %rax
-	retq

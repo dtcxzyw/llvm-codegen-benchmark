@@ -1,5 +1,5 @@
 
-%"struct.gmx::t_sortblock.3367072" = type { [3 x i32], i32 }
+%"struct.gmx::t_sortblock.3367038" = type { [3 x i32], i32 }
 
 ; 57 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -77,7 +77,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.gmx::t_sortblock.3367072", ptr %1, i64 %4
+  %5 = getelementptr %"struct.gmx::t_sortblock.3367038", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

@@ -48,13 +48,6 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	$4, %eax
-	subl	%edx, %eax
-	cmpl	%eax, %esi
-	setne	%al
-	orb	%dil, %al
-	retq
 func000000000000002c:                   # @func000000000000002c
 	addl	%edx, %esi
 	setne	%al

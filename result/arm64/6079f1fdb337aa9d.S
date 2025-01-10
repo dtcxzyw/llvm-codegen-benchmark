@@ -54,16 +54,6 @@ func0000000000000021:                   // @func0000000000000021
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	mov	w8, #258                        // =0x102
-	tst	w0, #0x1
-	sub	w8, w8, w2
-	csel	w8, w1, w8, ne
-	cmp	w8, #0
-	cset	w0, eq
-	ret
-                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	mov	w8, #32                         // =0x20
@@ -92,6 +82,14 @@ func0000000000000074:                   // @func0000000000000074
 	csel	w8, w1, w8, ne
 	cmp	w8, #6
 	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csneg	w8, w1, w2, ne
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000044:                   // @func0000000000000044

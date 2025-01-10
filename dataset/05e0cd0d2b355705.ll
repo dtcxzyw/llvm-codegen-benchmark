@@ -788,7 +788,6 @@ entry:
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-noe.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
@@ -797,6 +796,7 @@ entry:
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-turbocell.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
 ; wireshark/optimized/packet-wsmp.c.ll
 ; wireshark/optimized/packet-x11.c.ll

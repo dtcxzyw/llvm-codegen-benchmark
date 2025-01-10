@@ -1,5 +1,5 @@
 
-; 498 occurrences:
+; 499 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -373,6 +373,7 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/qsat.cpp.ll

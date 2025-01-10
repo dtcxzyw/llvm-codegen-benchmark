@@ -78,7 +78,7 @@ entry:
   ret i1 %5
 }
 
-; 96 occurrences:
+; 95 occurrences:
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; nori/optimized/imageview.cpp.ll
@@ -174,7 +174,6 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:

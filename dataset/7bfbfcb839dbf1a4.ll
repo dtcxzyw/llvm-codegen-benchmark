@@ -1,7 +1,7 @@
 
-%"class.facebook::velox::memory::ContiguousAllocation.2802243" = type { ptr, ptr, i64, i64 }
-%class.aiVector3t.2822608 = type { float, float, float }
-%struct.cvEMDNode.3769350 = type { [3 x i32], float, i32, i32, ptr, ptr, ptr }
+%"class.facebook::velox::memory::ContiguousAllocation.2802209" = type { ptr, ptr, i64, i64 }
+%class.aiVector3t.2822574 = type { float, float, float }
+%struct.cvEMDNode.3769300 = type { [3 x i32], float, i32, i32, ptr, ptr, ptr }
 
 ; 2 occurrences:
 ; lightgbm/optimized/dataset_loader.cpp.ll
@@ -11,8 +11,8 @@ define ptr @func000000000000001e(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -40
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %"class.facebook::velox::memory::ContiguousAllocation.2802243", ptr %0, i64 %.neg
-  %5 = getelementptr %"class.facebook::velox::memory::ContiguousAllocation.2802243", ptr %4, i64 %3
+  %4 = getelementptr %"class.facebook::velox::memory::ContiguousAllocation.2802209", ptr %0, i64 %.neg
+  %5 = getelementptr %"class.facebook::velox::memory::ContiguousAllocation.2802209", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -48,8 +48,8 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %class.aiVector3t.2822608, ptr %0, i64 %.neg
-  %5 = getelementptr %class.aiVector3t.2822608, ptr %4, i64 %3
+  %4 = getelementptr %class.aiVector3t.2822574, ptr %0, i64 %.neg
+  %5 = getelementptr %class.aiVector3t.2822574, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -61,8 +61,8 @@ define ptr @func000000000000001c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -48
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %struct.cvEMDNode.3769350, ptr %0, i64 %.neg
-  %5 = getelementptr %struct.cvEMDNode.3769350, ptr %4, i64 %3
+  %4 = getelementptr %struct.cvEMDNode.3769300, ptr %0, i64 %.neg
+  %5 = getelementptr %struct.cvEMDNode.3769300, ptr %4, i64 %3
   ret ptr %5
 }
 

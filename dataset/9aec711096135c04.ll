@@ -750,7 +750,7 @@ entry:
   ret i32 %3
 }
 
-; 122 occurrences:
+; 121 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/inflate.c.ll
@@ -865,7 +865,6 @@ entry:
 ; wireshark/optimized/packet-unistim.c.ll
 ; wireshark/optimized/tvbuff_rdp.c.ll
 ; wolfssl/optimized/internal.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll

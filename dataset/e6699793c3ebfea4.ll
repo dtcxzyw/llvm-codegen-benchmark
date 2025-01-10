@@ -16,8 +16,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 25 occurrences:
+; 29 occurrences:
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/unicode.cpp.ll
+; cmake/optimized/deflate.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
@@ -41,7 +43,9 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
+; openjdk/optimized/jdmarker.ll
 ; qemu/optimized/hw_scsi_virtio-scsi.c.ll
+; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -85,6 +89,17 @@ define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %0, -1
+  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %2)
+  ret i64 %4
+}
+
+; 1 occurrences:
+; git/optimized/sha256.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nuw nsw i64 %0, 1
   %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %2)
   ret i64 %4
 }

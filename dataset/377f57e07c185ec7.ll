@@ -1,10 +1,10 @@
 
-%"struct.OT::HBGlyphID16.2735729" = type { %"struct.OT::IntType.0.2735699" }
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
-%struct.BEInt.2742037 = type { [2 x i8] }
-%struct.mbedtls_ssl_hs_buffer.2892191 = type { i8, ptr, i64 }
+%"struct.OT::HBGlyphID16.2735695" = type { %"struct.OT::IntType.0.2735665" }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%"struct.OT::IntType.2741997" = type { %struct.BEInt.2742003 }
+%struct.BEInt.2742003 = type { [2 x i8] }
+%struct.mbedtls_ssl_hs_buffer.2892157 = type { i8, ptr, i64 }
 
 ; 4 occurrences:
 ; linux/optimized/decompress_bunzip2.ll
@@ -43,7 +43,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 20
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735729"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735695"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -63,7 +63,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 10
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735729"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::HBGlyphID16.2735695"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = sub nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %6 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2742031"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2741997"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 888
-  %6 = getelementptr nusw nuw [4 x %struct.mbedtls_ssl_hs_buffer.2892191], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [4 x %struct.mbedtls_ssl_hs_buffer.2892157], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

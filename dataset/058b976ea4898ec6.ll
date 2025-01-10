@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
 
 ; 5 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -92,7 +92,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -108,10 +108,11 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; Function Attrs: nounwind

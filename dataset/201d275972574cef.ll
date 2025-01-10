@@ -42,7 +42,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -84,6 +84,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; wireshark/optimized/packet-nvme.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind

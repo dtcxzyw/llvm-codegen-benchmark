@@ -1,9 +1,9 @@
 
-%"class.llvm::MachineOperand.3329460" = type { i32, %union.anon.145.3329461, ptr, %"union.llvm::MachineOperand::ContentsUnion.3329462" }
-%union.anon.145.3329461 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3329462" = type { %"class.llvm::ArrayRef.146.3329463" }
-%"class.llvm::ArrayRef.146.3329463" = type { ptr, i64 }
-%"class.cv::Point_.0.3732205" = type { i32, i32 }
+%"class.llvm::MachineOperand.3329426" = type { i32, %union.anon.145.3329427, ptr, %"union.llvm::MachineOperand::ContentsUnion.3329428" }
+%union.anon.145.3329427 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3329428" = type { %"class.llvm::ArrayRef.146.3329429" }
+%"class.llvm::ArrayRef.146.3329429" = type { ptr, i64 }
+%"class.cv::Point_.0.3732155" = type { i32, i32 }
 
 ; 5 occurrences:
 ; boost/optimized/to_chars.ll
@@ -41,7 +41,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3329460", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::MachineOperand.3329426", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -53,7 +53,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 %4, i64 0
-  %6 = getelementptr nusw nuw %"class.cv::Point_.0.3732205", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::Point_.0.3732155", ptr %0, i64 %5
   ret ptr %6
 }
 

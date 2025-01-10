@@ -14,12 +14,10 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/io_dec.c.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, i64 %1) #0 {

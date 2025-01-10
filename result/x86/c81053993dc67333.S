@@ -1,3 +1,9 @@
+func0000000000000000:                   # @func0000000000000000
+	movzbl	%dh, %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	shrl	$2, %eax
+	retq
 func000000000000001e:                   # @func000000000000001e
 	shrl	$5, %edx
 	andl	$63, %edx

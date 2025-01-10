@@ -458,10 +458,11 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/vht.ll
+; postgres/optimized/spgdoinsert.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
 entry:

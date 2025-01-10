@@ -1,21 +1,21 @@
 
-%struct.rb_code_location_struct.2600702 = type { %struct.rb_code_position_struct.2600703, %struct.rb_code_position_struct.2600703 }
-%struct.rb_code_position_struct.2600703 = type { i32, i32 }
-%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
-%struct.rb_code_position_struct.2601677 = type { i32, i32 }
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
-%"struct.std::array.2630050" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
-%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
-%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
-%"struct.std::__atomic_base.2630072" = type { i64 }
-%"struct.QuantLib::VolatilityBumpInstrumentJacobian::Cap.2834575" = type { i64, i64, double }
-%"class.std::vector.40.3659094" = type { %"struct.std::_Vector_base.41.3659095" }
-%"struct.std::_Vector_base.41.3659095" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.3659096" }
-%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.3659096" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.3659097" }
-%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.3659097" = type { ptr, ptr, ptr }
+%struct.rb_code_location_struct.2600669 = type { %struct.rb_code_position_struct.2600670, %struct.rb_code_position_struct.2600670 }
+%struct.rb_code_position_struct.2600670 = type { i32, i32 }
+%struct.rb_code_location_struct.2601643 = type { %struct.rb_code_position_struct.2601644, %struct.rb_code_position_struct.2601644 }
+%struct.rb_code_position_struct.2601644 = type { i32, i32 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630034", %"class.rocksdb::AcqRelAtomic.2630036", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630034" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029", %"class.rocksdb::AcqRelAtomic.2630036" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630029" = type { ptr, ptr, %"struct.std::array.2630017", i64 }
+%"struct.std::array.2630017" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630036" = type { %"class.rocksdb::RelaxedAtomic.2630037" }
+%"class.rocksdb::RelaxedAtomic.2630037" = type { %"struct.std::atomic.2630038" }
+%"struct.std::atomic.2630038" = type { %"struct.std::__atomic_base.2630039" }
+%"struct.std::__atomic_base.2630039" = type { i64 }
+%"struct.QuantLib::VolatilityBumpInstrumentJacobian::Cap.2834541" = type { i64, i64, double }
+%"class.std::vector.40.3659044" = type { %"struct.std::_Vector_base.41.3659045" }
+%"struct.std::_Vector_base.41.3659045" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.3659046" }
+%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl.3659046" = type { %"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.3659047" }
+%"struct.std::_Vector_base<unsigned char, std::allocator<unsigned char>>::_Vector_impl_data.3659047" = type { ptr, ptr, ptr }
 
 ; 8 occurrences:
 ; linux/optimized/af_inet.ll
@@ -30,7 +30,7 @@
 define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr %struct.rb_code_location_struct.2600702, ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %struct.rb_code_location_struct.2600669, ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
@@ -772,11 +772,11 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr %struct.rb_code_location_struct.2601676, ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %struct.rb_code_location_struct.2601643, ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/giaFrames.c.ll
@@ -786,6 +786,7 @@ entry:
 ; c3c/optimized/sema_name_resolution.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/cmSetCommand.cxx.ll
+; cpython/optimized/pystrtod.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/dlasq3.cpp.ll
@@ -8510,7 +8511,7 @@ entry:
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630048", ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
@@ -9470,7 +9471,7 @@ entry:
 define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = getelementptr nuw %"struct.QuantLib::VolatilityBumpInstrumentJacobian::Cap.2834575", ptr %0, i64 %3, i32 2
+  %4 = getelementptr nuw %"struct.QuantLib::VolatilityBumpInstrumentJacobian::Cap.2834541", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -9527,7 +9528,7 @@ entry:
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %"class.std::vector.40.3659094", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.std::vector.40.3659044", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 

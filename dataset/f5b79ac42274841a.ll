@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -14,7 +14,6 @@
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hyperscan/optimized/stream.c.ll
-; linux/optimized/devio.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; miniaudio/optimized/unity.c.ll

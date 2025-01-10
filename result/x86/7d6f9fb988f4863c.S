@@ -62,11 +62,3 @@ func0000000000000504:                   # @func0000000000000504
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000484:                   # @func0000000000000484
-	movl	%edx, %eax
-	cmpq	%rax, %rdi
-	setb	%cl
-	cmpq	%rsi, %rdi
-	setb	%al
-	orb	%cl, %al
-	retq

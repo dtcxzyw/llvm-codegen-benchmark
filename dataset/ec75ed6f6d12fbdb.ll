@@ -1,5 +1,5 @@
 
-; 2812 occurrences:
+; 2749 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -95,6 +95,7 @@
 ; abc/optimized/ioWriteDot.c.ll
 ; abc/optimized/ioWritePla.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
+; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/ivyUtil.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -702,7 +703,6 @@
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/collationruleparser.ll
-; icu/optimized/collationsets.ll
 ; icu/optimized/compactdecimalformat.ll
 ; icu/optimized/cstr.ll
 ; icu/optimized/currunit.ll
@@ -805,7 +805,6 @@
 ; icu/optimized/reldtfmt.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/repattrn.ll
-; icu/optimized/reslist.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/scrptrun.ll
 ; icu/optimized/selfmt.ll
@@ -819,7 +818,6 @@
 ; icu/optimized/stringpiece.ll
 ; icu/optimized/strmatch.ll
 ; icu/optimized/strrepl.ll
-; icu/optimized/timezone.ll
 ; icu/optimized/tmutfmt.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/transreg.ll
@@ -831,7 +829,6 @@
 ; icu/optimized/ubidi.ll
 ; icu/optimized/ucal.ll
 ; icu/optimized/ucasemap.ll
-; icu/optimized/ucharstriebuilder.ll
 ; icu/optimized/uchriter.ll
 ; icu/optimized/ucmndata.ll
 ; icu/optimized/ucnv.ll
@@ -876,7 +873,6 @@
 ; icu/optimized/uscanf_p.ll
 ; icu/optimized/uscript.ll
 ; icu/optimized/usearch.ll
-; icu/optimized/uspoof_conf.ll
 ; icu/optimized/usprep.ll
 ; icu/optimized/ustdio.ll
 ; icu/optimized/ustrcase.ll
@@ -954,6 +950,7 @@
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; libwebp/optimized/rescaler_utils.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; libwebp/optimized/ssim.c.ll
@@ -1293,6 +1290,7 @@
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/client.cpp.ll
+; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmedia.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
@@ -1755,7 +1753,6 @@
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
 ; opencv/optimized/infer_single_roi.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
-; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
@@ -2353,7 +2350,6 @@
 ; rocksdb/optimized/testutil.cc.ll
 ; rocksdb/optimized/threadpool_imp.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; ruby/optimized/io.ll
 ; ruby/optimized/process.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/transcode.ll
@@ -2393,32 +2389,6 @@
 ; spike/optimized/fdt_ro.ll
 ; spike/optimized/smin32.ll
 ; spike/optimized/socketif.ll
-; spike/optimized/vfwadd_vf.ll
-; spike/optimized/vfwadd_vv.ll
-; spike/optimized/vfwadd_wv.ll
-; spike/optimized/vfwcvt_f_f_v.ll
-; spike/optimized/vfwcvt_f_x_v.ll
-; spike/optimized/vfwcvt_f_xu_v.ll
-; spike/optimized/vfwcvt_rtz_x_f_v.ll
-; spike/optimized/vfwcvt_rtz_xu_f_v.ll
-; spike/optimized/vfwcvt_x_f_v.ll
-; spike/optimized/vfwcvt_xu_f_v.ll
-; spike/optimized/vfwcvtbf16_f_f_v.ll
-; spike/optimized/vfwmacc_vf.ll
-; spike/optimized/vfwmacc_vv.ll
-; spike/optimized/vfwmaccbf16_vf.ll
-; spike/optimized/vfwmaccbf16_vv.ll
-; spike/optimized/vfwmsac_vf.ll
-; spike/optimized/vfwmsac_vv.ll
-; spike/optimized/vfwmul_vf.ll
-; spike/optimized/vfwmul_vv.ll
-; spike/optimized/vfwnmacc_vf.ll
-; spike/optimized/vfwnmacc_vv.ll
-; spike/optimized/vfwnmsac_vf.ll
-; spike/optimized/vfwnmsac_vv.ll
-; spike/optimized/vfwsub_vf.ll
-; spike/optimized/vfwsub_vv.ll
-; spike/optimized/vfwsub_wv.ll
 ; spike/optimized/vloxei16_v.ll
 ; spike/optimized/vloxei32_v.ll
 ; spike/optimized/vloxei64_v.ll
@@ -2428,40 +2398,6 @@
 ; spike/optimized/vluxei64_v.ll
 ; spike/optimized/vluxei8_v.ll
 ; spike/optimized/vredmin_vs.ll
-; spike/optimized/vsext_vf2.ll
-; spike/optimized/vsext_vf4.ll
-; spike/optimized/vsext_vf8.ll
-; spike/optimized/vwadd_vv.ll
-; spike/optimized/vwadd_vx.ll
-; spike/optimized/vwadd_wv.ll
-; spike/optimized/vwaddu_vv.ll
-; spike/optimized/vwaddu_vx.ll
-; spike/optimized/vwaddu_wv.ll
-; spike/optimized/vwmacc_vv.ll
-; spike/optimized/vwmacc_vx.ll
-; spike/optimized/vwmaccsu_vv.ll
-; spike/optimized/vwmaccsu_vx.ll
-; spike/optimized/vwmaccu_vv.ll
-; spike/optimized/vwmaccu_vx.ll
-; spike/optimized/vwmaccus_vx.ll
-; spike/optimized/vwmul_vv.ll
-; spike/optimized/vwmul_vx.ll
-; spike/optimized/vwmulsu_vv.ll
-; spike/optimized/vwmulsu_vx.ll
-; spike/optimized/vwmulu_vv.ll
-; spike/optimized/vwmulu_vx.ll
-; spike/optimized/vwsll_vi.ll
-; spike/optimized/vwsll_vv.ll
-; spike/optimized/vwsll_vx.ll
-; spike/optimized/vwsub_vv.ll
-; spike/optimized/vwsub_vx.ll
-; spike/optimized/vwsub_wv.ll
-; spike/optimized/vwsubu_vv.ll
-; spike/optimized/vwsubu_vx.ll
-; spike/optimized/vwsubu_wv.ll
-; spike/optimized/vzext_vf2.ll
-; spike/optimized/vzext_vf4.ll
-; spike/optimized/vzext_vf8.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_hexwave.c.ll
@@ -2686,6 +2622,7 @@
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; wireshark/optimized/packet-mle.c.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; wireshark/optimized/packet-multipart.c.ll

@@ -26,21 +26,6 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	$536870912, %esi                # imm = 0x20000000
 	cmovnel	%edi, %eax
 	retq
-func000000000000010c:                   # @func000000000000010c
-	xorl	%eax, %eax
-	cmpl	$96, %edx
-	cmovbl	%edi, %eax
-	cmpl	$3, %esi
-	cmovll	%edi, %eax
-	retq
-func000000000000004c:                   # @func000000000000004c
-	xorl	%eax, %eax
-	negl	%edx
-	sbbl	%eax, %eax
-	orl	%edi, %eax
-	testl	%esi, %esi
-	cmovlel	%edi, %eax
-	retq
 func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
 	negl	%edx

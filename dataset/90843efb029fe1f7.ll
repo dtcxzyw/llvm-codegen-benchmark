@@ -1,5 +1,5 @@
 
-; 260 occurrences:
+; 261 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
@@ -246,6 +246,7 @@
 ; spike/optimized/spike-log-parser.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; vcpkg/optimized/tools.cpp.ll

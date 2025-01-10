@@ -1,5 +1,5 @@
 
-%"class.clang::NestedNameSpecifierLoc.3187997" = type { ptr, ptr }
+%"class.clang::NestedNameSpecifierLoc.3187963" = type { ptr, ptr }
 
 ; 1 occurrences:
 ; boost/optimized/alloc_lib.ll
@@ -35,7 +35,7 @@ define ptr @func00000000000000ff(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
-  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187997", ptr %4, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3187963", ptr %4, i64 %1
   %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 16
   ret ptr %7

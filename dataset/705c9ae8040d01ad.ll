@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; boost/optimized/rational.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; minetest/optimized/clientiface.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; postgres/optimized/execTuples.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -12,7 +13,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.smin.i32(i32 %0, i32 %1)
+  %2 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
   %3 = trunc nsw i32 %2 to i16
   ret i16 %3
 }
@@ -20,8 +21,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 28 occurrences:
+; 32 occurrences:
 ; abc/optimized/amapUniq.c.ll
+; abc/optimized/ivyFastMap.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/sfdpinit.c.ll
@@ -39,6 +41,7 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -46,14 +49,26 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/reformat.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
+; slurm/optimized/common_topo.ll
 ; slurm/optimized/gres_select_filter.ll
 ; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-moldudp64.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smin.i32(i32 %0, i32 %1)
   %3 = trunc i32 %2 to i16
+  ret i16 %3
+}
+
+; 1 occurrences:
+; libwebp/optimized/sharpyuv.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.smin.i32(i32 range(i32 -2147483648, 2147483647) %0, i32 %1)
+  %3 = trunc nuw i32 %2 to i16
   ret i16 %3
 }
 

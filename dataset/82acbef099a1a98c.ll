@@ -458,7 +458,7 @@ entry:
   ret i1 %3
 }
 
-; 923 occurrences:
+; 922 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -1338,7 +1338,6 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; yaml-cpp/optimized/emitter.cpp.ll
 ; yosys/optimized/ast.ll
-; yosys/optimized/flatten.ll
 ; yosys/optimized/genrtlil.ll
 ; yosys/optimized/shregmap.ll
 ; yosys/optimized/sim.ll

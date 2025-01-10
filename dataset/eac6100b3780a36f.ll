@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; postgres/optimized/slru.ll
+; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {

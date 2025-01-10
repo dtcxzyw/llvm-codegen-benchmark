@@ -1,5 +1,5 @@
 
-; 723 occurrences:
+; 725 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBalance.c.ll
@@ -262,6 +262,7 @@
 ; llvm/optimized/InlineAsm.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
@@ -279,6 +280,7 @@
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/Scope.cpp.ll
 ; luau/optimized/Symbol.test.cpp.ll
+; luau/optimized/TableShape.cpp.ll
 ; luau/optimized/TopoSortStatements.cpp.ll
 ; luau/optimized/TypeInfer.classes.test.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll

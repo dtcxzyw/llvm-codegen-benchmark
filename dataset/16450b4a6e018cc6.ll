@@ -1,6 +1,6 @@
 
-%struct.Vec_Int_t_.2877409 = type { i32, i32, ptr }
-%struct.sixaxis_led.3545878 = type { i8, i8, i8, i8, i8 }
+%struct.Vec_Int_t_.2877375 = type { i32, i32, ptr }
+%struct.sixaxis_led.3545844 = type { i8, i8, i8, i8, i8 }
 
 ; 1 occurrences:
 ; abc/optimized/sfmDec.c.ll
@@ -8,7 +8,7 @@
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr [2 x %struct.Vec_Int_t_.2877409], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [2 x %struct.Vec_Int_t_.2877375], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -25,7 +25,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr nuw [2 x %struct.Vec_Int_t_.2877409], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr nuw [2 x %struct.Vec_Int_t_.2877375], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -35,7 +35,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 3
-  %3 = getelementptr [4 x %struct.sixaxis_led.3545878], ptr %0, i64 0, i64 %2, i32 3
+  %3 = getelementptr [4 x %struct.sixaxis_led.3545844], ptr %0, i64 0, i64 %2, i32 3
   ret ptr %3
 }
 

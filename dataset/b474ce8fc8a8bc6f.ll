@@ -75,8 +75,9 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/satProof.c.ll
+; cmake/optimized/archive_read_support_format_cab.c.ll
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/random_uci_bot.cc.ll
 ; openspiel/optimized/tabular_q_learning.cc.ll

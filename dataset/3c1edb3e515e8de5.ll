@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2791708 = type { %union._zend_value.2791718, %union.anon.2791719, %union.anon.2.2791720 }
-%union._zend_value.2791718 = type { i64 }
-%union.anon.2791719 = type { i32 }
-%union.anon.2.2791720 = type { i32 }
+%struct._zval_struct.2791674 = type { %union._zend_value.2791684, %union.anon.2791685, %union.anon.2.2791686 }
+%union._zend_value.2791684 = type { i64 }
+%union.anon.2791685 = type { i32 }
+%union.anon.2.2791686 = type { i32 }
 
 ; 48 occurrences:
 ; annoy/optimized/annoymodule.ll
@@ -1250,7 +1250,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 80
-  %5 = getelementptr nusw nuw %struct._zval_struct.2791708, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct._zval_struct.2791674, ptr %4, i64 %3
   ret ptr %5
 }
 

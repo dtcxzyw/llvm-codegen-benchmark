@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -12,7 +12,6 @@
 ; llvm/optimized/MCMachOStreamer.cpp.ll
 ; llvm/optimized/MCWinCOFFStreamer.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; luau/optimized/isocline.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {

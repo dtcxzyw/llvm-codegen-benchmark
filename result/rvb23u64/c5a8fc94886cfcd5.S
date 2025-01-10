@@ -1,3 +1,7 @@
+func0000000000000001:                   # @func0000000000000001
+	subw	a1, a1, a0
+	slliw	a0, a1, 4
+	ret
 func000000000000006a:                   # @func000000000000006a
 	subw	a1, a1, a0
 	slli	a0, a1, 35

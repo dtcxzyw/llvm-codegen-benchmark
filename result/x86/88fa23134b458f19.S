@@ -5,8 +5,8 @@ func0000000000000000:                   # @func0000000000000000
 	cltq
 	retq
 func0000000000000002:                   # @func0000000000000002
-	testl	%edi, %edi
-	movl	$1, %eax
-	cmovlel	%edi, %eax
+	cmpl	$128, %edi
+	movl	$128, %eax
+	cmovll	%edi, %eax
 	cltq
 	retq

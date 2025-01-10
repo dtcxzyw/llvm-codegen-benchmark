@@ -17,8 +17,9 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/msexpand.c.ll
+; cpython/optimized/unicodeobject.ll
 ; gromacs/optimized/trxio.cpp.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/mempolicy.ll

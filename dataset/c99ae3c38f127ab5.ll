@@ -70,12 +70,11 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; icu/optimized/collationdatabuilder.ll
 ; jq/optimized/compile.ll
-; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/intel_ring.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll

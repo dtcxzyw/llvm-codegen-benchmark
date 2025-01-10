@@ -1,5 +1,8 @@
 
-; 1 occurrences:
+; 4 occurrences:
+; cmake/optimized/lzma_decoder.c.ll
+; libpng/optimized/pngpread.c.ll
+; openjdk/optimized/pngpread.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
@@ -12,6 +15,19 @@ entry:
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 3 occurrences:
+; clamav/optimized/qopen.cpp.ll
+; nuttx/optimized/lib_hexdumpstream.c.ll
+; php/optimized/crypt_sha512.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001aa(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = icmp sgt i32 %0, %4
+  ret i1 %5
+}
 
 ; 2 occurrences:
 ; clamav/optimized/tnef.c.ll

@@ -65,5 +65,57 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  %6 = trunc nuw nsw i64 %5 to i32
+  ret i32 %6
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  %6 = trunc nuw nsw i64 %5 to i32
+  ret i32 %6
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  %6 = trunc nuw i64 %5 to i32
+  ret i32 %6
+}
+
+; 2 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %0)
+  %6 = trunc nuw nsw i64 %5 to i32
+  ret i32 %6
+}
+
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

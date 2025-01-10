@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2822608 = type { float, float, float }
+%class.aiVector3t.2822574 = type { float, float, float }
 
 ; 7 occurrences:
 ; cpython/optimized/ceval.ll
@@ -447,7 +447,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw %class.aiVector3t.2822608, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %class.aiVector3t.2822574, ptr %0, i64 %4
   ret ptr %5
 }
 

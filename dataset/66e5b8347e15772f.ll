@@ -210,7 +210,7 @@ entry:
   ret float %3
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -235,7 +235,6 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/LoopVersioningLICM.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll

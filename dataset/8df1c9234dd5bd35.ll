@@ -1,11 +1,11 @@
 
-%struct.Expr_.2748052 = type { ptr, %union.SourceSpan.2748053, i16, %union.anon.29.2748054 }
-%union.SourceSpan.2748053 = type { i64 }
-%union.anon.29.2748054 = type { %struct.ExprAnySwitch.2748055 }
-%struct.ExprAnySwitch.2748055 = type { i8, %union.anon.31.2748056 }
-%union.anon.31.2748056 = type { %struct.anon.32.2748057 }
-%struct.anon.32.2748057 = type { ptr, %union.SourceSpan.2748053, ptr }
-%union.TValue.3680757 = type { i64 }
+%struct.Expr_.2748018 = type { ptr, %union.SourceSpan.2748019, i16, %union.anon.29.2748020 }
+%union.SourceSpan.2748019 = type { i64 }
+%union.anon.29.2748020 = type { %struct.ExprAnySwitch.2748021 }
+%struct.ExprAnySwitch.2748021 = type { i8, %union.anon.31.2748022 }
+%union.anon.31.2748022 = type { %struct.anon.32.2748023 }
+%struct.anon.32.2748023 = type { ptr, %union.SourceSpan.2748019, ptr }
+%union.TValue.3680707 = type { i64 }
 
 ; 9 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -20,7 +20,7 @@
 ; Function Attrs: nounwind
 define i1 @func0000000000000c21(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Expr_.2748052, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Expr_.2748018, ptr %1, i64 %2
   %4 = icmp eq i32 %0, 0
   %5 = icmp eq ptr %3, null
   %6 = select i1 %4, i1 true, i1 %5
@@ -73,7 +73,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000c81(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %union.TValue.3680757, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %union.TValue.3680707, ptr %1, i64 %2
   %4 = icmp ult i32 %0, 65536
   %5 = icmp eq ptr %3, null
   %6 = select i1 %4, i1 true, i1 %5

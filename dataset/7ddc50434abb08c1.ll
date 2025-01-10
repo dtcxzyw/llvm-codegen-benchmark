@@ -1,8 +1,8 @@
 
-%"class.std::shared_ptr.11.2806134" = type { %"class.std::__shared_ptr.12.2806135" }
-%"class.std::__shared_ptr.12.2806135" = type { ptr, %"class.std::__shared_count.2806094" }
-%"class.std::__shared_count.2806094" = type { ptr }
-%"class.cv::Point_.3778048" = type { float, float }
+%"class.std::shared_ptr.11.2806100" = type { %"class.std::__shared_ptr.12.2806101" }
+%"class.std::__shared_ptr.12.2806101" = type { ptr, %"class.std::__shared_count.2806060" }
+%"class.std::__shared_count.2806060" = type { ptr }
+%"class.cv::Point_.3777998" = type { float, float }
 
 ; 4 occurrences:
 ; lief/optimized/GnuHash.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = urem i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.std::shared_ptr.11.2806134", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.std::shared_ptr.11.2806100", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -55,7 +55,7 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   %5 = urem i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cv::Point_.3778048", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cv::Point_.3777998", ptr %0, i64 %6
   ret ptr %7
 }
 

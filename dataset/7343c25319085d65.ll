@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ivySeq.c.ll
@@ -20,6 +20,7 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/pcm_lib.ll
+; linux/optimized/printk.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll

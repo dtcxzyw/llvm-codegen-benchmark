@@ -124,17 +124,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; php/optimized/streams.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %.not = icmp eq i64 %2, -1
-  %3 = select i1 %.not, i64 536870912, i64 %1
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
 ; 21 occurrences:
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll

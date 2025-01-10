@@ -12,8 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
-; arrow/optimized/compare_internal_avx2.cc.ll
+; 4 occurrences:
 ; linux/optimized/siphash.ll
 ; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll

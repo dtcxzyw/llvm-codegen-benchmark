@@ -19,6 +19,13 @@ func000000000000016a:                   # @func000000000000016a
 	vmsgt.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
+func0000000000000c2a:                   # @func0000000000000c2a
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmseq.vv	v9, v8, v9
+	vmsgt.vi	v8, v8, 0
+	vmand.mm	v0, v8, v9
+	ret
 func00000000000000ca:                   # @func00000000000000ca
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
@@ -38,6 +45,13 @@ func000000000000002a:                   # @func000000000000002a
 	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v9, v8, v9
 	vmsgt.vi	v8, v8, -1
+	vmand.mm	v0, v8, v9
+	ret
+func0000000000000cea:                   # @func0000000000000cea
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmsle.vv	v9, v8, v9
+	vmsgt.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
 func000000000000010c:                   # @func000000000000010c

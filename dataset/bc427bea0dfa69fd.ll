@@ -1,10 +1,10 @@
 
-%"struct.std::pair.1266.3037703" = type { %"class.boost::geometry::model::point.3037506", %"class.__gnu_cxx::__normal_iterator.1256.3037704" }
-%"class.boost::geometry::model::point.3037506" = type { [2 x i32] }
-%"class.__gnu_cxx::__normal_iterator.1256.3037704" = type { ptr }
-%"struct.boost::container::dtl::pair.3092414" = type <{ %"class.std::thread::id.3092415", i32, [4 x i8] }>
-%"class.std::thread::id.3092415" = type { i64 }
-%union.ListCell.3653923 = type { ptr }
+%"struct.std::pair.1266.3037669" = type { %"class.boost::geometry::model::point.3037472", %"class.__gnu_cxx::__normal_iterator.1256.3037670" }
+%"class.boost::geometry::model::point.3037472" = type { [2 x i32] }
+%"class.__gnu_cxx::__normal_iterator.1256.3037670" = type { ptr }
+%"struct.boost::container::dtl::pair.3092380" = type <{ %"class.std::thread::id.3092381", i32, [4 x i8] }>
+%"class.std::thread::id.3092381" = type { i64 }
+%union.ListCell.3653889 = type { ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/nmethod.ll
@@ -38,7 +38,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::pair.1266.3037703", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::pair.1266.3037669", ptr %1, i64 %2
   %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
@@ -101,7 +101,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000098c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.3092414", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.boost::container::dtl::pair.3092380", ptr %1, i64 %2
   %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
@@ -128,7 +128,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3653923, ptr %1, i64 %2
+  %3 = getelementptr %union.ListCell.3653889, ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %4, %5

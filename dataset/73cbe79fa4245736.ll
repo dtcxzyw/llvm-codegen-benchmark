@@ -376,7 +376,7 @@ entry:
   ret i1 %5
 }
 
-; 226 occurrences:
+; 225 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/io.c.ll
@@ -423,7 +423,6 @@ entry:
 ; clamav/optimized/asn1.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cpython/optimized/lexer.ll
-; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; eastl/optimized/TestRandom.cpp.ll
 ; flac/optimized/decode.c.ll

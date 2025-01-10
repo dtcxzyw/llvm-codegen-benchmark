@@ -13,15 +13,15 @@ func000000000000002c:                   # @func000000000000002c
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
+func0000000000000021:                   # @func0000000000000021
+	addq	$3, %rsi
+	cmpq	%rsi, %rdi
+	sete	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	incq	%rsi
 	cmpq	%rsi, %rdi
 	setne	%al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	decq	%rsi
-	cmpq	%rsi, %rdi
-	sete	%al
 	retq
 func0000000000000028:                   # @func0000000000000028
 	decq	%rsi

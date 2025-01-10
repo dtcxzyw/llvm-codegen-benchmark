@@ -450,14 +450,13 @@ entry:
   ret ptr %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:

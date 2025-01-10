@@ -1,5 +1,5 @@
 
-%struct.dasm_Section.2791035 = type { ptr, ptr, i64, i32, i32, i32 }
+%struct.dasm_Section.2791001 = type { ptr, ptr, i64, i32, i32, i32 }
 
 ; 5 occurrences:
 ; cpython/optimized/ceval.ll
@@ -53,7 +53,7 @@ entry:
   %2 = ashr i32 %1, 24
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 80
-  %5 = getelementptr nusw [1 x %struct.dasm_Section.2791035], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [1 x %struct.dasm_Section.2791001], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

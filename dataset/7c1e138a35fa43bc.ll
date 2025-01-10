@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; linux/optimized/hcd.ll
 ; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; openjdk/optimized/dependencies.ll
 ; ruby/optimized/raddrinfo.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1) #0 {

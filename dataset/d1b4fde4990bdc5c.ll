@@ -1,5 +1,5 @@
 
-; 1033 occurrences:
+; 1030 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -194,6 +194,7 @@
 ; libquic/optimized/pair.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/quic_utils.cc.ll
+; libquic/optimized/t1_lib.c.ll
 ; libzmq/optimized/raw_encoder.cpp.ll
 ; libzmq/optimized/v1_encoder.cpp.ll
 ; libzmq/optimized/v2_encoder.cpp.ll
@@ -243,8 +244,6 @@
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/ExpandVariadics.cpp.ll
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
@@ -256,7 +255,6 @@
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LTOBackend.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LoopFuse.cpp.ll
 ; llvm/optimized/LoopIdiomVectorize.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
@@ -297,7 +295,6 @@
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/TargetPassConfig.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86MCAsmInfo.cpp.ll

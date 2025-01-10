@@ -1,10 +1,11 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; boost/optimized/src.ll
 ; clamav/optimized/filestr.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; git/optimized/line-log.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; postgres/optimized/reconstruct.ll

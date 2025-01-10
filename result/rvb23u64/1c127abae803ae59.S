@@ -30,11 +30,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func000000000000008a:                   # @func000000000000008a
-	srliw	a2, a2, 9
-	add	a1, a1, a2
-	slt	a0, a0, a1
-	ret
 func0000000000000081:                   # @func0000000000000081
 	srliw	a2, a2, 9
 	add	a1, a1, a2
@@ -55,9 +50,4 @@ func00000000000000f8:                   # @func00000000000000f8
 	srliw	a2, a2, 17
 	add	a1, a1, a2
 	sltu	a0, a0, a1
-	ret
-func00000000000000e6:                   # @func00000000000000e6
-	srliw	a2, a2, 1
-	add	a1, a1, a2
-	slt	a0, a1, a0
 	ret

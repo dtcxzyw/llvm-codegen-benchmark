@@ -1,5 +1,5 @@
 
-; 1369 occurrences:
+; 1341 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -338,13 +338,10 @@
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
@@ -356,7 +353,6 @@
 ; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
-; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -383,7 +379,6 @@
 ; llvm/optimized/AsmPrinterDwarf.cpp.ll
 ; llvm/optimized/BackendUtil.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; llvm/optimized/BasicBlockPathCloning.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BodyFarm.cpp.ll
@@ -471,7 +466,6 @@
 ; llvm/optimized/DereferenceChecker.cpp.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/Disasm.cpp.ll
-; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
@@ -488,12 +482,9 @@
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/FileIndexRecord.cpp.ll
-; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
 ; llvm/optimized/FoldingSet.cpp.ll
-; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
 ; llvm/optimized/FunctionPointer.cpp.ll
-; llvm/optimized/GIMatchTableExecutor.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
 ; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
@@ -503,8 +494,6 @@
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IdentifierResolver.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexDecl.cpp.ll
 ; llvm/optimized/IndexSymbol.cpp.ll
@@ -553,22 +542,17 @@
 ; llvm/optimized/MCObjectStreamer.cpp.ll
 ; llvm/optimized/MIGChecker.cpp.ll
 ; llvm/optimized/MIRCanonicalizerPass.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/MacOSXAPIChecker.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
-; llvm/optimized/MachineCSE.cpp.ll
 ; llvm/optimized/MachineCopyPropagation.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/MachineLICM.cpp.ll
-; llvm/optimized/MachineModuleSlotTracker.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineSSAUpdater.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
@@ -607,11 +591,8 @@
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
-; llvm/optimized/PrintfFormatString.cpp.ll
 ; llvm/optimized/QualTypeNames.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
@@ -643,7 +624,6 @@
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
-; llvm/optimized/ScanfFormatString.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -686,8 +666,6 @@
 ; llvm/optimized/SmartPtrModeling.cpp.ll
 ; llvm/optimized/StackAddrEscapeChecker.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
-; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
-; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/StdVariantChecker.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenACC.cpp.ll
@@ -695,7 +673,6 @@
 ; llvm/optimized/StmtProfile.cpp.ll
 ; llvm/optimized/StraightLineStrengthReduce.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
-; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
@@ -736,17 +713,12 @@
 ; llvm/optimized/ValistChecker.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
@@ -1378,7 +1350,7 @@ entry:
   ret i1 %4
 }
 
-; 2013 occurrences:
+; 1986 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -1636,7 +1608,6 @@ entry:
 ; curl/optimized/libcurl_la-setopt.ll
 ; cvc5/optimized/cardinality_class.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -1876,11 +1847,8 @@ entry:
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -1929,7 +1897,6 @@ entry:
 ; llvm/optimized/AsmPrinterDwarf.cpp.ll
 ; llvm/optimized/BackendUtil.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
-; llvm/optimized/BasicBlockPathCloning.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/BasicValueFactory.cpp.ll
 ; llvm/optimized/BinaryStreamWriter.cpp.ll
@@ -2040,7 +2007,6 @@ entry:
 ; llvm/optimized/DereferenceChecker.cpp.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/Disasm.cpp.ll
-; llvm/optimized/DwarfCompileUnit.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; llvm/optimized/DynamicTypeChecker.cpp.ll
@@ -2052,7 +2018,6 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/EvaluationResult.cpp.ll
 ; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/ExplodedGraph.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
@@ -2068,15 +2033,11 @@ entry:
 ; llvm/optimized/FileManager.cpp.ll
 ; llvm/optimized/FileRemapper.cpp.ll
 ; llvm/optimized/FixItRewriter.cpp.ll
-; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
-; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/FuchsiaHandleChecker.cpp.ll
 ; llvm/optimized/FunctionLoweringInfo.cpp.ll
 ; llvm/optimized/FunctionPointer.cpp.ll
-; llvm/optimized/GIMatchTableExecutor.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
-; llvm/optimized/GTestChecker.cpp.ll
 ; llvm/optimized/GenericTaintChecker.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
@@ -2094,7 +2055,6 @@ entry:
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IdentifierResolver.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexDecl.cpp.ll
@@ -2135,7 +2095,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
@@ -2162,16 +2121,13 @@ entry:
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MIGChecker.cpp.ll
 ; llvm/optimized/MIRCanonicalizerPass.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MIRVRegNamerUtils.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/MacOSXAPIChecker.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
-; llvm/optimized/MachineCSE.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachineLICM.cpp.ll
-; llvm/optimized/MachineModuleSlotTracker.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachinePassManager.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
@@ -2248,20 +2204,16 @@ entry:
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
-; llvm/optimized/PrintfFormatString.cpp.ll
 ; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/QualTypeNames.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -2292,7 +2244,6 @@ entry:
 ; llvm/optimized/SVals.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/Sarif.cpp.ll
-; llvm/optimized/ScanfFormatString.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/ScopeInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -2359,7 +2310,6 @@ entry:
 ; llvm/optimized/StraightLineStrengthReduce.cpp.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; llvm/optimized/SwiftCallingConv.cpp.ll
-; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
@@ -2408,7 +2358,6 @@ entry:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
@@ -2420,13 +2369,9 @@ entry:
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/WinException.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86CompressEVEX.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

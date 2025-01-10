@@ -1,16 +1,16 @@
 
-%"struct.rapidjson::GenericMember.2749222" = type { %"class.rapidjson::GenericValue.2749211", %"class.rapidjson::GenericValue.2749211" }
-%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
-%struct.page.3530296 = type { i64, %union.anon.53.3530297, %union.anon.61.3530298, %struct.atomic_t.3530299, [8 x i8] }
-%union.anon.53.3530297 = type { %struct.anon.54.3530300 }
-%struct.anon.54.3530300 = type { %union.anon.55.3530301, ptr, %union.anon.57.3530302, i64 }
-%union.anon.55.3530301 = type { %struct.list_head.3530294 }
-%struct.list_head.3530294 = type { ptr, ptr }
-%union.anon.57.3530302 = type { i64 }
-%union.anon.61.3530298 = type { %struct.atomic_t.3530299 }
-%struct.atomic_t.3530299 = type { i32 }
+%"struct.rapidjson::GenericMember.2749188" = type { %"class.rapidjson::GenericValue.2749177", %"class.rapidjson::GenericValue.2749177" }
+%"class.rapidjson::GenericValue.2749177" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749178" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749179" = type { i32, i32, ptr }
+%struct.page.3530262 = type { i64, %union.anon.53.3530263, %union.anon.61.3530264, %struct.atomic_t.3530265, [8 x i8] }
+%union.anon.53.3530263 = type { %struct.anon.54.3530266 }
+%struct.anon.54.3530266 = type { %union.anon.55.3530267, ptr, %union.anon.57.3530268, i64 }
+%union.anon.55.3530267 = type { %struct.list_head.3530260 }
+%struct.list_head.3530260 = type { ptr, ptr }
+%union.anon.57.3530268 = type { i64 }
+%union.anon.61.3530264 = type { %struct.atomic_t.3530265 }
+%struct.atomic_t.3530265 = type { i32 }
 
 ; 24 occurrences:
 ; abc/optimized/dauTree.c.ll
@@ -89,7 +89,7 @@ entry:
   %2 = and i64 %1, 281474976710655
   %3 = inttoptr i64 %2 to ptr
   %4 = zext i32 %0 to i64
-  %5 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749222", ptr %3, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749188", ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -122,7 +122,7 @@ entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
   %4 = zext i32 %0 to i64
-  %5 = getelementptr %struct.page.3530296, ptr %3, i64 %4
+  %5 = getelementptr %struct.page.3530262, ptr %3, i64 %4
   ret ptr %5
 }
 

@@ -57,33 +57,6 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; slurm/optimized/dist_tasks.ll
-; slurm/optimized/job_mgr.ll
-; slurm/optimized/read_config.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %0, %1
-  %5 = icmp samesign ugt i32 %4, %3
-  ret i1 %5
-}
-
-; 4 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; slurm/optimized/common_topo.ll
-; slurm/optimized/gres_filter.ll
-; slurm/optimized/select_cons_tres.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = mul nsw i32 %0, %1
-  %5 = icmp slt i32 %4, %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; slurm/optimized/gres_filter.ll
 ; slurm/optimized/step_mgr.ll
@@ -108,6 +81,31 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; slurm/optimized/dist_tasks.ll
+; slurm/optimized/read_config.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = mul nuw nsw i32 %0, %1
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; slurm/optimized/gres_filter.ll
+; slurm/optimized/select_cons_tres.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = mul nsw i32 %0, %1
+  %5 = icmp slt i32 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; slurm/optimized/select_linear.ll
 ; Function Attrs: nounwind
@@ -116,17 +114,6 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = mul i32 %0, %1
   %5 = icmp ult i32 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; slurm/optimized/gres_filter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = mul i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
   ret i1 %5
 }
 

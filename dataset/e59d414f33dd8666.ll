@@ -101,10 +101,9 @@ entry:
   ret i32 %3
 }
 
-; 127 occurrences:
+; 126 occurrences:
 ; boost/optimized/topology.ll
 ; clamav/optimized/explode.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/options_handler.cpp.ll

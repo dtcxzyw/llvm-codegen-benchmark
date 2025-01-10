@@ -1,18 +1,18 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
-%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
-%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::__shared_count.2612196" = type { ptr }
-%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
-%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
-%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
-%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
-%"struct.std::pair.292.2614730" = type <{ i64, i32, [4 x i8] }>
-%"class.boost::geometry::model::ring.3020902" = type { %"class.std::vector.1031.3020904" }
-%"class.std::vector.1031.3020904" = type { %"struct.std::_Vector_base.1032.3020905" }
-%"struct.std::_Vector_base.1032.3020905" = type { %"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.3020906" }
-%"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.3020906" = type { %"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.3020907" }
-%"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.3020907" = type { ptr, ptr, ptr }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176" = type { %"class.std::shared_ptr.2.2612164", i8, %"class.std::shared_ptr.2612161", i64, i64, i64, %"class.std::shared_ptr.372.2612177" }
+%"class.std::shared_ptr.2.2612164" = type { %"class.std::__shared_ptr.3.2612165" }
+%"class.std::__shared_ptr.3.2612165" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::__shared_count.2612163" = type { ptr }
+%"class.std::shared_ptr.2612161" = type { %"class.std::__shared_ptr.2612162" }
+%"class.std::__shared_ptr.2612162" = type { ptr, %"class.std::__shared_count.2612163" }
+%"class.std::shared_ptr.372.2612177" = type { %"class.std::__shared_ptr.373.2612178" }
+%"class.std::__shared_ptr.373.2612178" = type { ptr, %"class.std::__shared_count.2612163" }
+%"struct.std::pair.292.2614697" = type <{ i64, i32, [4 x i8] }>
+%"class.boost::geometry::model::ring.3020868" = type { %"class.std::vector.1031.3020870" }
+%"class.std::vector.1031.3020870" = type { %"struct.std::_Vector_base.1032.3020871" }
+%"struct.std::_Vector_base.1032.3020871" = type { %"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.3020872" }
+%"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.3020872" = type { %"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.3020873" }
+%"struct.std::_Vector_base<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<double, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.3020873" = type { ptr, ptr, ptr }
 
 ; 47 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -65,7 +65,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %2, i64 %1
+  %3 = getelementptr %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612176", ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -640
   %5 = icmp ult i64 %1, 8
   %6 = select i1 %5, ptr %0, ptr %4
@@ -252,7 +252,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"struct.std::pair.292.2614730", ptr %2, i64 %1
+  %3 = getelementptr %"struct.std::pair.292.2614697", ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -16
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
@@ -279,7 +279,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000166(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"class.boost::geometry::model::ring.3020902", ptr %2, i64 %1, i32 0, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"class.boost::geometry::model::ring.3020868", ptr %2, i64 %1, i32 0, i32 0, i32 0, i32 0, i32 1
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5

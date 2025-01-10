@@ -1,8 +1,8 @@
 
-%"class.llvm::Use.3188737" = type { ptr, ptr, ptr, ptr }
-%"class.std::__cxx11::basic_string.3864298" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864299", i64, %union.anon.3864300 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864299" = type { ptr }
-%union.anon.3864300 = type { i64, [8 x i8] }
+%"class.llvm::Use.3188703" = type { ptr, ptr, ptr, ptr }
+%"class.std::__cxx11::basic_string.3864248" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864249", i64, %union.anon.3864250 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3864249" = type { ptr }
+%union.anon.3864250 = type { i64, [8 x i8] }
 
 ; 2 occurrences:
 ; jq/optimized/utf16_le.ll
@@ -37,7 +37,7 @@ entry:
 define i1 @func000000000000034c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3188737", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3188703", ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -32
   %6 = icmp ne ptr %4, %5
   ret i1 %6
@@ -168,7 +168,7 @@ entry:
 define i1 @func00000000000003c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3864298", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.3864248", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = icmp eq ptr %4, %5
   ret i1 %6

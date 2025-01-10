@@ -1,14 +1,7 @@
 
-; 9 occurrences:
+; 2 occurrences:
 ; flac/optimized/stream_encoder.c.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/bitmap.cpp.ll
 ; openjdk/optimized/debugInfoRec.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_write.c.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:

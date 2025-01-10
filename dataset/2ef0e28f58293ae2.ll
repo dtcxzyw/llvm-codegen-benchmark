@@ -425,7 +425,7 @@ entry:
   ret i1 %4
 }
 
-; 199 occurrences:
+; 198 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; c3c/optimized/lexer.c.ll
 ; casadi/optimized/tinyxml2.cpp.ll
@@ -614,7 +614,6 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
-; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-docsis-tlv.c.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
@@ -1168,9 +1167,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/Sema.cpp.ll
 ; php/optimized/avifinfo.ll
+; postgres/optimized/formatting.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(i8 %0, i32 %1) #0 {
 entry:

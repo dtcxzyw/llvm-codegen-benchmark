@@ -730,7 +730,7 @@ entry:
   ret i32 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -752,7 +752,6 @@ entry:
 ; wireshark/optimized/packet-lorawan.c.ll
 ; wireshark/optimized/packet-ositp.c.ll
 ; wireshark/optimized/packet-rsl.c.ll
-; wireshark/optimized/packet-usb.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zcl-se.c.ll
 ; xgboost/optimized/context.cc.ll

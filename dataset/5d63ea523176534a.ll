@@ -1,10 +1,10 @@
 
-%struct._zval_struct.2792825 = type { %union._zend_value.2792826, %union.anon.2792827, %union.anon.2.2792828 }
-%union._zend_value.2792826 = type { i64 }
-%union.anon.2792827 = type { i32 }
-%union.anon.2.2792828 = type { i32 }
+%struct._zval_struct.2792791 = type { %union._zend_value.2792792, %union.anon.2792793, %union.anon.2.2792794 }
+%union._zend_value.2792792 = type { i64 }
+%union.anon.2792793 = type { i32 }
+%union.anon.2.2792794 = type { i32 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/clipper.cpp.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
@@ -68,6 +68,7 @@
 ; opencv/optimized/pooling_layer.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
+; openjdk/optimized/disassembler.ll
 ; openjdk/optimized/parse2.ll
 ; openmpi/optimized/rmaps_rank_file_lex.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
@@ -148,7 +149,7 @@ entry:
   %4 = shl i64 %3, 29
   %5 = add i64 %4, 21474836480
   %6 = ashr i64 %5, 32
-  %7 = getelementptr nusw %struct._zval_struct.2792825, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct._zval_struct.2792791, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -152,11 +152,10 @@ entry:
   ret i32 %5
 }
 
-; 224 occurrences:
+; 223 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/NFFLoader.cpp.ll
 ; clamav/optimized/bytecode.c.ll
@@ -535,7 +534,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/giaMf.c.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; nori/optimized/popupbutton.cpp.ll
 ; nuttx/optimized/lib_b16sin.c.ll

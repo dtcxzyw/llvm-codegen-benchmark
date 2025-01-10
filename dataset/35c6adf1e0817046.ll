@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3140259" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3140225" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; boost/optimized/static_string.ll
@@ -42,7 +42,7 @@ define ptr @func000000000000000a(ptr %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -32
-  %4 = getelementptr nusw %"class.llvm::Use.3140259", ptr %3, i64 %2
+  %4 = getelementptr nusw %"class.llvm::Use.3140225", ptr %3, i64 %2
   ret ptr %4
 }
 

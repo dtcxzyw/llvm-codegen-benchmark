@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; ruby/optimized/symbol.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,9 +1,9 @@
 
-%"class.pmx::PmxJoint.2828268" = type <{ %"class.std::__cxx11::basic_string.2828177", %"class.std::__cxx11::basic_string.2828177", i8, [3 x i8], %"class.pmx::PmxJointParam.2828269", [4 x i8] }>
-%"class.std::__cxx11::basic_string.2828177" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2828178", i64, %union.anon.2828179 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2828178" = type { ptr }
-%union.anon.2828179 = type { i64, [8 x i8] }
-%"class.pmx::PmxJointParam.2828269" = type { i32, i32, [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float] }
+%"class.pmx::PmxJoint.2828234" = type <{ %"class.std::__cxx11::basic_string.2828143", %"class.std::__cxx11::basic_string.2828143", i8, [3 x i8], %"class.pmx::PmxJointParam.2828235", [4 x i8] }>
+%"class.std::__cxx11::basic_string.2828143" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2828144", i64, %union.anon.2828145 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2828144" = type { ptr }
+%union.anon.2828145 = type { i64, [8 x i8] }
+%"class.pmx::PmxJointParam.2828235" = type { i32, i32, [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float], [3 x float] }
 
 ; 16 occurrences:
 ; assimp/optimized/MMDPmxParser.cpp.ll
@@ -27,7 +27,7 @@ define i1 @func0000000000000761(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw %"class.pmx::PmxJoint.2828268", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.pmx::PmxJoint.2828234", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %7 = icmp eq ptr %6, %5
   ret i1 %7

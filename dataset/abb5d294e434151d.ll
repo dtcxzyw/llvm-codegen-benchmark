@@ -159,7 +159,6 @@ entry:
 ; qemu/optimized/ui_console-vc.c.ll
 ; quickjs/optimized/libunicode.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; ruby/optimized/date_core.ll
@@ -189,6 +188,7 @@ entry:
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -243,7 +243,7 @@ entry:
   ret i32 %4
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/sbdWin.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -252,7 +252,6 @@ entry:
 ; gromacs/optimized/xtc2.c.ll
 ; hermes/optimized/regcomp.c.ll
 ; icu/optimized/collationdatabuilder.ll
-; icu/optimized/collationdatawriter.ll
 ; icu/optimized/gendict.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/n2builder.ll

@@ -1,14 +1,16 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cpython/optimized/lexer.ll
 ; gromacs/optimized/dlasdq.cpp.ll
 ; gromacs/optimized/slasdq.cpp.ll
+; hwloc/optimized/hwloc-bind.ll
 ; libjpeg-turbo/optimized/jcmaster.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openjdk/optimized/jcmaster.ll
+; openssl/optimized/openssl-bin-x509.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {

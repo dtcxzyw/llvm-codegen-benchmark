@@ -1,7 +1,7 @@
 
-%union.OSSL_PARAM_ALIGNED_BLOCK.2634101 = type { double }
-%struct.yyjson_val.3789967 = type { i64, %union.yyjson_val_uni.3789966 }
-%union.yyjson_val_uni.3789966 = type { i64 }
+%union.OSSL_PARAM_ALIGNED_BLOCK.2634068 = type { double }
+%struct.yyjson_val.3789917 = type { i64, %union.yyjson_val_uni.3789916 }
+%union.yyjson_val_uni.3789916 = type { i64 }
 
 ; 4 occurrences:
 ; linux/optimized/xhci-mem.ll
@@ -104,7 +104,18 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw %union.OSSL_PARAM_ALIGNED_BLOCK.2634101, ptr %0, i64 %4
+  %5 = getelementptr nusw %union.OSSL_PARAM_ALIGNED_BLOCK.2634068, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; php/optimized/zend_sort.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -119,6 +130,18 @@ entry:
   ret ptr %4
 }
 
+; 2 occurrences:
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 0
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = getelementptr nusw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -126,7 +149,7 @@ define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %.not = icmp eq i32 %2, 0
   %3 = select i1 %.not, i64 %1, i64 24
-  %4 = getelementptr %struct.yyjson_val.3789967, ptr %0, i64 %3
+  %4 = getelementptr %struct.yyjson_val.3789917, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -139,6 +162,17 @@ entry:
   %3 = select i1 %.not, i64 %1, i64 32
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
+}
+
+; 1 occurrences:
+; arrow/optimized/key_map.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 5
+  %4 = select i1 %3, i64 16, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

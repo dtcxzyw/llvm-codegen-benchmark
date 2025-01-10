@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194121" = type { ptr, ptr, ptr, ptr }
 
 ; 3 occurrences:
 ; llvm/optimized/LegalizeDAG.cpp.ll
@@ -21,7 +21,7 @@ define ptr @func000000000000001b(ptr %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 1, i64 2
   %3 = getelementptr nusw i8, ptr %0, i64 -96
-  %4 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"class.llvm::Use.3194121", ptr %3, i64 %2
   ret ptr %4
 }
 

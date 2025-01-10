@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/shenandoahAsserts.ll

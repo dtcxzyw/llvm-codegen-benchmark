@@ -1,5 +1,5 @@
 
-%"struct.OpenSubdiv::v3_6_0::Bfr::FaceVertex::Edge.3388592" = type <{ i32, i8, i8, i16, i16, [2 x i8] }>
+%"struct.OpenSubdiv::v3_6_0::Bfr::FaceVertex::Edge.3388558" = type <{ i32, i8, i8, i16, i16, [2 x i8] }>
 
 ; 549 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -659,7 +659,7 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 6, i64 8
-  %6 = getelementptr nusw %"struct.OpenSubdiv::v3_6_0::Bfr::FaceVertex::Edge.3388592", ptr %0, i64 %1
+  %6 = getelementptr nusw %"struct.OpenSubdiv::v3_6_0::Bfr::FaceVertex::Edge.3388558", ptr %0, i64 %1
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }

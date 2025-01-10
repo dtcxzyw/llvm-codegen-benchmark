@@ -71,9 +71,10 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; llvm/optimized/Function.cpp.ll
+; openusd/optimized/reconintra.c.ll
 ; php/optimized/pcre2_study.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll

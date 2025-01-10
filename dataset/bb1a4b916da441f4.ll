@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 129 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bacReadBlif.c.ll
 ; abc/optimized/bacReadVer.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
@@ -136,10 +137,9 @@ entry:
   ret i32 %3
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/node_bitblaster.cpp.ll
 ; darktable/optimized/histogram.c.ll

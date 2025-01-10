@@ -51,18 +51,17 @@ func00000000000000f8:                   # @func00000000000000f8
 	addi	a0, a0, 8
 	sltu	a0, a1, a0
 	ret
-func0000000000000088:                   # @func0000000000000088
-	sext.w	a1, a1
-	lui	a2, 262144
-	addiw	a2, a2, -1
-	minu	a1, a1, a2
-	addi	a0, a0, 1
-	sltu	a0, a1, a0
-	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	li	a2, 1200
 	minu	a1, a1, a2
 	addi	a0, a0, 50
 	slt	a0, a1, a0
+	ret
+func0000000000000088:                   # @func0000000000000088
+	sext.w	a1, a1
+	li	a2, 255
+	minu	a1, a1, a2
+	addi	a0, a0, 5
+	sltu	a0, a1, a0
 	ret

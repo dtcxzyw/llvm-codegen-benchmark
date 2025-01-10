@@ -40,8 +40,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
+; 1 occurrences:
 ; libquic/optimized/convert.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {

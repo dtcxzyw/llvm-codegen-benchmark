@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138384" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3238990" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/vmError.ll
@@ -97,7 +97,7 @@ entry:
 define i64 @func0000000000000031(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3138418", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3138384", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr exact i64 %6, 5
@@ -110,7 +110,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3238990", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr i64 %6, 5

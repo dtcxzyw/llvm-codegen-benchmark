@@ -1,5 +1,5 @@
 
-%class.relocInfo.2733766 = type { i16 }
+%class.relocInfo.2733732 = type { i16 }
 
 ; 9 occurrences:
 ; grpc/optimized/channel_stack.cc.ll
@@ -16,7 +16,7 @@ define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16777215
   %4 = getelementptr nusw nuw i8, ptr %1, i64 30
-  %5 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %class.relocInfo.2733732, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

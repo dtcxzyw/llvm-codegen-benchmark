@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 95 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -61,7 +61,6 @@
 ; openjdk/optimized/xPageAllocator.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/xUncommitter.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; openjdk/optimized/zStat.ll

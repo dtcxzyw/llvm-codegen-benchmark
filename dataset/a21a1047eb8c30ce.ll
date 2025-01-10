@@ -148,7 +148,7 @@ entry:
   ret i64 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; c3c/optimized/target.c.ll
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
@@ -157,6 +157,7 @@ entry:
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/perf_thining.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind

@@ -69,7 +69,7 @@ entry:
   %3 = sdiv i64 %2, 2
   %4 = sdiv i64 %1, 2
   %5 = add nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = shl i64 %6, 1
   ret i64 %7
 }
@@ -84,7 +84,7 @@ entry:
   %3 = sdiv i64 %2, 4
   %4 = sdiv i64 %1, 4
   %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = shl i64 %6, 2
   ret i64 %7
 }

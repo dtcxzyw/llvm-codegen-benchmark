@@ -1,6 +1,6 @@
 
-%struct.uv_cpu_info_s.2822094 = type { ptr, i32, %struct.uv_cpu_times_s.2822095 }
-%struct.uv_cpu_times_s.2822095 = type { i64, i64, i64, i64, i64 }
+%struct.uv_cpu_info_s.2822060 = type { ptr, i32, %struct.uv_cpu_times_s.2822061 }
+%struct.uv_cpu_times_s.2822061 = type { i64, i64, i64, i64, i64 }
 
 ; 3 occurrences:
 ; libuv/optimized/linux.c.ll
@@ -12,7 +12,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 6
   %5 = sext i32 %1 to i64
-  %6 = getelementptr nusw %struct.uv_cpu_info_s.2822094, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.uv_cpu_info_s.2822060, ptr %0, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }

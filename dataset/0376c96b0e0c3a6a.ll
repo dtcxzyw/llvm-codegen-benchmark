@@ -1,7 +1,10 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; clamav/optimized/petite.c.ll
 ; luau/optimized/isocline.c.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; ruby/optimized/utf_16_32.ll
 ; wireshark/optimized/packet-ansi_a.c.ll

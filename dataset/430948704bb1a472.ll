@@ -1,12 +1,12 @@
 
-%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
-%struct.anon.21.2601264 = type { ptr, i64 }
-%struct.ChatFormattedLine.2693933 = type <{ %"class.std::vector.5.2693929", i8, [7 x i8] }>
-%"class.std::vector.5.2693929" = type { %"struct.std::_Vector_base.6.2693930" }
-%"struct.std::_Vector_base.6.2693930" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" = type { ptr, ptr, ptr }
-%struct.code.3550467 = type { i8, i8, i16 }
+%union.iseq_inline_storage_entry.2601230 = type { %struct.anon.21.2601231 }
+%struct.anon.21.2601231 = type { ptr, i64 }
+%struct.ChatFormattedLine.2693899 = type <{ %"class.std::vector.5.2693895", i8, [7 x i8] }>
+%"class.std::vector.5.2693895" = type { %"struct.std::_Vector_base.6.2693896" }
+%"struct.std::_Vector_base.6.2693896" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693897" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693897" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693898" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693898" = type { ptr, ptr, ptr }
+%struct.code.3550433 = type { i8, i8, i16 }
 
 ; 96 occurrences:
 ; clamav/optimized/wwunpack.c.ll
@@ -110,7 +110,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %0, i64 %4
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601230, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1771,7 +1771,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.ChatFormattedLine.2693933, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.ChatFormattedLine.2693899, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2014,7 +2014,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.code.3550467, ptr %0, i64 %4
+  %5 = getelementptr %struct.code.3550433, ptr %0, i64 %4
   ret ptr %5
 }
 

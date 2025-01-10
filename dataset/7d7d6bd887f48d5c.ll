@@ -1,4 +1,76 @@
 
+; 60 occurrences:
+; arrow/optimized/bit_block_counter.cc.ll
+; arrow/optimized/diff.cc.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clamav/optimized/lzxd.c.ll
+; clamav/optimized/mszipd.c.ll
+; faiss/optimized/Clustering.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; linux/optimized/aio.ll
+; linux/optimized/vsprintf.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; nuttx/optimized/wd_start.c.ll
+; openjdk/optimized/zip_util.ll
+; openmpi/optimized/ad_nfs_write.ll
+; postgres/optimized/buffile.ll
+; qemu/optimized/block_io.c.ll
+; qemu/optimized/block_mirror.c.ll
+; qemu/optimized/block_qcow.c.ll
+; qemu/optimized/linux-user_syscall.c.ll
+; raylib/optimized/rcore.c.ll
+; ruby/optimized/array.ll
+; ruby/optimized/init.ll
+; ruby/optimized/io.ll
+; slurm/optimized/bitstring.ll
+; slurm/optimized/libfile_bcast_la-file_bcast.ll
+; spike/optimized/min.ll
+; wireshark/optimized/qcustomplot.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.smin.i64(i64 range(i64 1, 0) %0, i64 %1)
+  %3 = shl i64 %2, 32
+  ret i64 %3
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.smin.i64(i64, i64) #1
+
 ; 26 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -31,66 +103,6 @@ define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.smin.i64(i64 %0, i64 %1)
   %3 = shl nuw i64 %2, 3
-  ret i64 %3
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.smin.i64(i64, i64) #1
-
-; 48 occurrences:
-; arrow/optimized/bit_block_counter.cc.ll
-; arrow/optimized/diff.cc.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_qr.cc.ll
-; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/polynomial.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_3_3.cc.ll
-; ceres/optimized/schur_eliminator_2_3_4.cc.ll
-; ceres/optimized/schur_eliminator_2_3_6.cc.ll
-; ceres/optimized/schur_eliminator_2_3_9.cc.ll
-; ceres/optimized/schur_eliminator_2_3_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
-; ceres/optimized/schur_eliminator_3_3_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
-; faiss/optimized/Clustering.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; linux/optimized/aio.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
-; openmpi/optimized/ad_nfs_write.ll
-; qemu/optimized/block_io.c.ll
-; qemu/optimized/block_mirror.c.ll
-; ruby/optimized/array.ll
-; slurm/optimized/libfile_bcast_la-file_bcast.ll
-; spike/optimized/min.ll
-; wireshark/optimized/qcustomplot.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = tail call i64 @llvm.smin.i64(i64 %0, i64 %1)
-  %3 = shl i64 %2, 15
   ret i64 %3
 }
 

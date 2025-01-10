@@ -95,13 +95,6 @@ func00000000000001d8:                   # @func00000000000001d8
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000024a:                   # @func000000000000024a
-	vpcmpnltud	%ymm2, %ymm0, %k0
-	vpcmpleud	%ymm1, %ymm0, %k1
-	korb	%k0, %k1, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
 func000000000000018c:                   # @func000000000000018c
 	vpmaxsd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0

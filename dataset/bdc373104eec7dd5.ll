@@ -12,9 +12,8 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/noodle_engine.c.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; php/optimized/strtod.ll

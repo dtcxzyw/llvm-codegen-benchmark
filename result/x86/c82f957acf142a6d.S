@@ -138,13 +138,6 @@ func0000000000000066:                   # @func0000000000000066
 	shll	$16, %eax
 	orq	%rdx, %rax
 	retq
-func000000000000005f:                   # @func000000000000005f
-	shlq	$56, %rdx
-	orq	%rdi, %rdx
-	movzbl	%sil, %eax
-	shlq	$48, %rax
-	orq	%rdx, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movq	%rsi, %rax
 	shll	$24, %edx

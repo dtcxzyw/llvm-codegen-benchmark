@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
@@ -76,7 +76,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.lua_TValue.3680875, ptr %1, i64 %5
+  %6 = getelementptr nusw nuw %struct.lua_TValue.3680825, ptr %1, i64 %5
   %7 = icmp ult ptr %0, %6
   ret i1 %7
 }

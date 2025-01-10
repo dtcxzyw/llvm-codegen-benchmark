@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
-%struct.BEInt.143.2736968 = type { i8 }
-%struct.HuffmanTree.3895159 = type { i32, i32, i32, i32 }
+%"struct.OT::IntType.142.2736933" = type { %struct.BEInt.143.2736934 }
+%struct.BEInt.143.2736934 = type { i8 }
+%struct.HuffmanTree.3895109 = type { i32, i32, i32, i32 }
 
 ; 5 occurrences:
 ; cvc5/optimized/extended_rewrite.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.142.2736933", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -71,7 +71,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.HuffmanTree.3895159, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.HuffmanTree.3895109, ptr %0, i64 %6
   ret ptr %7
 }
 

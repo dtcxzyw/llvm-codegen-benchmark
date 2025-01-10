@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
+; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
 entry:

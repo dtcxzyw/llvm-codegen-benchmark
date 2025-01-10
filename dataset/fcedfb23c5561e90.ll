@@ -1,5 +1,5 @@
 
-%union.TValue.3680591 = type { i64 }
+%union.TValue.3680541 = type { i64 }
 
 ; 9 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
@@ -57,7 +57,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr %union.TValue.3680591, ptr %0, i64 %4
+  %5 = getelementptr %union.TValue.3680541, ptr %0, i64 %4
   ret ptr %5
 }
 

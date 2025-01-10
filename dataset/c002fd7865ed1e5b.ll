@@ -1,9 +1,12 @@
 
-; 29 occurrences:
+; 37 occurrences:
 ; cpython/optimized/longobject.ll
+; darktable/optimized/history.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/replaygain_synthesis.c.ll
+; git/optimized/diffcore-rename.ll
+; git/optimized/merge-ort.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; linux/optimized/sr.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -19,20 +22,25 @@
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openmpi/optimized/ad_aggregate_new.ll
+; openspiel/optimized/TransTableL.cpp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_compile.ll
+; postgres/optimized/inet_net_pton.ll
+; postgres/optimized/regexp.ll
 ; postgres/optimized/zic.ll
 ; qemu/optimized/block_preallocate.c.ll
 ; qemu/optimized/block_vmdk.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; redis/optimized/ltable.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
+; ruby/optimized/io.ll
 ; slurm/optimized/backfill.ll
 ; slurm/optimized/eval_nodes.ll
 ; slurm/optimized/scancel.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.smax.i64(i64 %0, i64 %1)
+  %2 = tail call i64 @llvm.smax.i64(i64 %0, i64 %1)
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }

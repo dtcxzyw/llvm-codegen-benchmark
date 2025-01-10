@@ -47,9 +47,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/maple_tree.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; php/optimized/cdf_time.ll
 ; qemu/optimized/fpu_softfloat.c.ll

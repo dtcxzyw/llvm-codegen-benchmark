@@ -21,6 +21,13 @@ func0000000000000481:                   # @func0000000000000481
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
+func0000000000000081:                   # @func0000000000000081
+	zext.h	a0, a0
+	addiw	a1, a1, -1
+	sltiu	a1, a1, 2
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
 func000000000000048c:                   # @func000000000000048c
 	zext.h	a0, a0
 	addiw	a1, a1, -97

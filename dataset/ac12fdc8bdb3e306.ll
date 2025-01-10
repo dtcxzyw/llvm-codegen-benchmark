@@ -1,11 +1,11 @@
 
-%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%struct._zval_struct.2792825 = type { %union._zend_value.2792826, %union.anon.2792827, %union.anon.2.2792828 }
-%union._zend_value.2792826 = type { i64 }
-%union.anon.2792827 = type { i32 }
-%union.anon.2.2792828 = type { i32 }
-%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
-%"class.cv::Point_.3747481" = type { float, float }
+%struct.rb_econv_elem_t.2600748 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%struct._zval_struct.2792791 = type { %union._zend_value.2792792, %union.anon.2792793, %union.anon.2.2792794 }
+%union._zend_value.2792792 = type { i64 }
+%union.anon.2792793 = type { i32 }
+%union.anon.2.2792794 = type { i32 }
+%struct.drm_color_lut.3530975 = type { i16, i16, i16, i16 }
+%"class.cv::Point_.3747431" = type { float, float }
 
 ; 3 occurrences:
 ; linux/optimized/memblock.ll
@@ -17,7 +17,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = add i64 %2, -4294967296
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %4, i32 2
+  %5 = getelementptr %struct.rb_econv_elem_t.2600748, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, 21474836480
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %struct._zval_struct.2792825, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct._zval_struct.2792791, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -111,7 +111,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, -4294967296
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.drm_color_lut.3530975, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -123,7 +123,7 @@ entry:
   %2 = shl i64 %1, 29
   %3 = add i64 %2, -8589934592
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %"class.cv::Point_.3747481", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Point_.3747431", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

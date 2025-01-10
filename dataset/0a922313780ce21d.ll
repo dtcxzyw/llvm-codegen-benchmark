@@ -175,7 +175,7 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -190,6 +190,7 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; hermes/optimized/IR.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
 ; llvm/optimized/CXXPredicates.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -381,19 +382,6 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; casadi/optimized/mx_node.cpp.ll
-; graphviz/optimized/gvgen.c.ll
-; hermes/optimized/Runtime.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, 62
-  %4 = icmp eq ptr %0, %1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
@@ -459,6 +447,18 @@ entry:
 define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
+  %4 = icmp eq ptr %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; casadi/optimized/mx_node.cpp.ll
+; graphviz/optimized/gvgen.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, 2147483647
   %4 = icmp eq ptr %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

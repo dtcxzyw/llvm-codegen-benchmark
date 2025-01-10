@@ -1,5 +1,6 @@
 
-; 92 occurrences:
+; 93 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; boost/optimized/gregorian.ll
@@ -529,7 +530,7 @@ entry:
   ret i64 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
@@ -544,7 +545,6 @@ entry:
 ; memcached/optimized/memcached_debug-items.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; memcached/optimized/memcached_debug-slabs.ll
-; openjdk/optimized/zip_util.ll
 ; redis/optimized/ziplist.ll
 ; ruby/optimized/iseq.ll
 ; stb/optimized/stb_connected_components.c.ll

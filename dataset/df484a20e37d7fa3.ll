@@ -1,7 +1,7 @@
 
-%struct.NSVGpoint.2600673 = type { float, float, float, float, float, float, float, i8 }
+%struct.NSVGpoint.2600640 = type { float, float, float, float, float, float, float, i8 }
 
-; 7721 occurrences:
+; 7719 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchDiv.c.ll
@@ -5501,7 +5501,6 @@
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-e_rc4_hmac_md5.ll
 ; openssl/optimized/libcrypto-lib-eddsa.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-lib-err_blocks.ll
 ; openssl/optimized/libcrypto-lib-f_int.ll
@@ -5571,7 +5570,6 @@
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-e_rc4_hmac_md5.ll
 ; openssl/optimized/libcrypto-shlib-eddsa.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-shlib-err_blocks.ll
 ; openssl/optimized/libcrypto-shlib-f_int.ll
@@ -10276,11 +10274,11 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.NSVGpoint.2600673, ptr %0, i64 %2
+  %3 = getelementptr %struct.NSVGpoint.2600640, ptr %0, i64 %2
   ret ptr %3
 }
 
-; 1533 occurrences:
+; 1532 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/base64.cpp.ll
@@ -10781,7 +10779,6 @@ entry:
 ; linux/optimized/rx.ll
 ; linux/optimized/sbitmap.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/scatterwalk.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sch_frag.ll
 ; linux/optimized/sch_generic.ll
@@ -11822,7 +11819,7 @@ entry:
   ret ptr %3
 }
 
-; 7447 occurrences:
+; 7445 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -11924,7 +11921,6 @@ entry:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/gzlib.c.ll
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -12521,7 +12517,6 @@ entry:
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/ftplistparser.c.ll
-; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/gzread.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/hist.c.ll

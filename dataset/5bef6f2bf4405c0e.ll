@@ -1,5 +1,5 @@
 
-%struct.aiFace.2825234 = type { i32, ptr }
+%struct.aiFace.2825200 = type { i32, ptr }
 
 ; 4 occurrences:
 ; assimp/optimized/RawLoader.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %3 = udiv i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr nusw nuw %struct.aiFace.2825234, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %struct.aiFace.2825200, ptr %5, i64 %4
   ret ptr %6
 }
 

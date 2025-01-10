@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; ruby/optimized/symbol.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

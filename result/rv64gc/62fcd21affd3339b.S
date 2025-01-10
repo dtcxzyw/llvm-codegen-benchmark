@@ -31,12 +31,6 @@ func000000000000002b:                   # @func000000000000002b
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret
-func000000000000000f:                   # @func000000000000000f
-	add	a1, a1, a2
-	slli	a1, a1, 2
-	add	a0, a0, a1
-	addi	a0, a0, 32
-	ret
 func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2
 	slli	a1, a1, 4

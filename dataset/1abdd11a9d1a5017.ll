@@ -46,9 +46,11 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_progress_bar.cpp.ll
 ; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll

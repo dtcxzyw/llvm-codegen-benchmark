@@ -1,6 +1,6 @@
 
-%struct.epoll_event.2822079 = type <{ i32, %union.epoll_data.2822080 }>
-%union.epoll_data.2822080 = type { ptr }
+%struct.epoll_event.2822045 = type <{ i32, %union.epoll_data.2822046 }>
+%union.epoll_data.2822046 = type { ptr }
 
 ; 21 occurrences:
 ; linux/optimized/af_inet.ll
@@ -84,7 +84,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [256 x %struct.epoll_event.2822079], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %struct.epoll_event.2822045], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

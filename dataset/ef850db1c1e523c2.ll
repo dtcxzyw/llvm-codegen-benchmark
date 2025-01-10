@@ -1,10 +1,10 @@
 
-%struct.CacheItem.2706813 = type { i64, i64, ptr }
-%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
-%"struct.std::pair.2923711" = type { ptr, ptr }
-%"class.tsl::detail_robin_hash::bucket_entry.318.3088727" = type { %"class.tsl::detail_robin_hash::bucket_entry_hash.3088724", i16, i8, i8, %"union.std::aligned_storage<48, 8>::type.3088728" }
-%"class.tsl::detail_robin_hash::bucket_entry_hash.3088724" = type { i32 }
-%"union.std::aligned_storage<48, 8>::type.3088728" = type { [48 x i8] }
+%struct.CacheItem.2706779 = type { i64, i64, ptr }
+%struct.nghttp2_map_bucket.2729446 = type { i32, i32, ptr }
+%"struct.std::pair.2923677" = type { ptr, ptr }
+%"class.tsl::detail_robin_hash::bucket_entry.318.3088693" = type { %"class.tsl::detail_robin_hash::bucket_entry_hash.3088690", i16, i8, i8, %"union.std::aligned_storage<48, 8>::type.3088694" }
+%"class.tsl::detail_robin_hash::bucket_entry_hash.3088690" = type { i32 }
+%"union.std::aligned_storage<48, 8>::type.3088694" = type { [48 x i8] }
 
 ; 751 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
@@ -1136,7 +1136,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr %struct.CacheItem.2706813, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.CacheItem.2706779, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -1151,7 +1151,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %4, i32 2
+  %5 = getelementptr nuw %struct.nghttp2_map_bucket.2729446, ptr %0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -1168,7 +1168,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = and i64 %1, %3
-  %5 = getelementptr nuw %"struct.std::pair.2923711", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.std::pair.2923677", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -1187,7 +1187,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = and i64 %3, %1
-  %5 = getelementptr %"class.tsl::detail_robin_hash::bucket_entry.318.3088727", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.tsl::detail_robin_hash::bucket_entry.318.3088693", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -372,6 +372,33 @@ entry:
 }
 
 ; 18 occurrences:
+; assimp/optimized/zip.c.ll
+; boost/optimized/operations.ll
+; hdf5/optimized/H5MF.c.ll
+; hermes/optimized/zip.c.ll
+; icu/optimized/number_formatimpl.ll
+; libevent/optimized/event.c.ll
+; linux/optimized/fib_semantics.ll
+; linux/optimized/r8169_main.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; ocio/optimized/FileFormatCSP.cpp.ll
+; php/optimized/ascmagic.ll
+; redis/optimized/aof.ll
+; slurm/optimized/acct_policy.ll
+; slurm/optimized/cgroup_v2.ll
+; slurm/optimized/cpu_frequency.ll
+; slurm/optimized/reservation.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -1
+  %2 = icmp ult i32 %1, -2
+  ret i1 %2
+}
+
+; 18 occurrences:
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/deflate.c.ll
@@ -397,31 +424,6 @@ entry:
   %2 = icmp ugt i32 %0, 127
   %3 = and i1 %1, %2
   ret i1 %3
-}
-
-; 17 occurrences:
-; assimp/optimized/zip.c.ll
-; boost/optimized/operations.ll
-; hdf5/optimized/H5MF.c.ll
-; hermes/optimized/zip.c.ll
-; icu/optimized/number_formatimpl.ll
-; libevent/optimized/event.c.ll
-; linux/optimized/fib_semantics.ll
-; linux/optimized/r8169_main.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; ocio/optimized/FileFormatCSP.cpp.ll
-; redis/optimized/aof.ll
-; slurm/optimized/acct_policy.ll
-; slurm/optimized/cgroup_v2.ll
-; slurm/optimized/cpu_frequency.ll
-; slurm/optimized/reservation.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
-entry:
-  %1 = icmp ne i32 %0, 4
-  ret i1 %1
 }
 
 ; 6 occurrences:

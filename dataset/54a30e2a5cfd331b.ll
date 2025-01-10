@@ -1,5 +1,5 @@
 
-%"struct.Assimp::MDC::BaseVertex.2825086" = type { i16, i16, i16, i16 }
+%"struct.Assimp::MDC::BaseVertex.2825052" = type { i16, i16, i16, i16 }
 
 ; 2 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
@@ -42,7 +42,7 @@ entry:
   %3 = shl nsw i32 %2, 2
   %4 = mul i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.Assimp::MDC::BaseVertex.2825086", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDC::BaseVertex.2825052", ptr %0, i64 %5
   ret ptr %6
 }
 

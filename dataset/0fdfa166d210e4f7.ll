@@ -118,14 +118,11 @@ entry:
   ret i64 %5
 }
 
-; 107 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; actix-rs/optimized/comsm606o4zjj7a.ll
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/integrator.cpp.ll
-; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -155,7 +152,6 @@ entry:
 ; linux/optimized/md.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/regmap-debugfs.ll
-; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/swiotlb.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
@@ -179,7 +175,6 @@ entry:
 ; ozz-animation/optimized/skeleton.cc.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
-; pbrt-v4/optimized/media.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
 ; qemu/optimized/block_qcow2.c.ll
@@ -235,7 +230,7 @@ entry:
   ret i64 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; freetype/optimized/truetype.c.ll
@@ -259,6 +254,7 @@ entry:
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ozz-animation/optimized/animation.cc.ll
@@ -276,13 +272,11 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_nist.ll
-; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
@@ -410,8 +404,7 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 25 occurrences:
 ; csmith/optimized/StringUtils.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
@@ -432,12 +425,10 @@ entry:
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; oiio/optimized/Codec.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/vmIntrinsics.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; openmpi/optimized/osc_sm_component.ll
 ; postgres/optimized/slru.ll
-; quickjs/optimized/quickjs.ll
 ; redis/optimized/lgc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
@@ -468,15 +459,15 @@ entry:
   ret i64 %5
 }
 
-; 41 occurrences:
+; 36 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
+; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
 ; icu/optimized/decNumber.ll
 ; linux/optimized/blk-merge.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -489,15 +480,10 @@ entry:
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/map_field.cc.ll
-; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/544b63jf571x6ld1.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; softposit-rs/optimized/4wrr62dd33canpwl.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/s_subMagsF16.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
@@ -549,8 +535,9 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
+; casadi/optimized/nlpsol.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -630,6 +617,20 @@ entry:
   %3 = shl i64 %2, 32
   %4 = add nuw i64 %0, %1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 4 occurrences:
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; softposit-rs/optimized/4wrr62dd33canpwl.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 52
+  %4 = add i64 %0, %1
+  %5 = add nuw i64 %4, %3
   ret i64 %5
 }
 

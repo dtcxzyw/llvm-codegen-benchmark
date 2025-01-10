@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
-%"class.hermes::vm::HermesValue.3081023" = type { i64 }
-%"class.hermes::vm::PinnedHermesValue.3085316" = type { %"class.hermes::vm::HermesValue.3085317" }
-%"class.hermes::vm::HermesValue.3085317" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3080988" = type { %"class.hermes::vm::HermesValue.3080989" }
+%"class.hermes::vm::HermesValue.3080989" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3085282" = type { %"class.hermes::vm::HermesValue.3085283" }
+%"class.hermes::vm::HermesValue.3085283" = type { i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -54,7 +54,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3080988", ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -67,7 +67,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085316", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085282", ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }

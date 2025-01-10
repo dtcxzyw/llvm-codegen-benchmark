@@ -1,5 +1,5 @@
 
-; 680 occurrences:
+; 678 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -49,7 +49,6 @@
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/cmLocalUnixMakefileGenerator3.cxx.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -443,7 +442,6 @@
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
 ; redis/optimized/cluster.ll
 ; redis/optimized/script.ll
 ; redis/optimized/sentinel.ll

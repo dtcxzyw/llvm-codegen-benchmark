@@ -1,11 +1,11 @@
 
-%struct.BLOCK.2634343 = type { [128 x i64] }
-%"struct.std::array.26.2701739" = type { [4 x i32] }
-%struct.b3Aabb.2819073 = type { %union.anon.103.2819074, %union.anon.104.2819075 }
-%union.anon.103.2819074 = type { [4 x float] }
-%union.anon.104.2819075 = type { [4 x float] }
-%struct.pci_extra_dev.3553889 = type { [4 x ptr] }
-%struct.HistogramLiteral.3843314 = type { [256 x i32], i64, double }
+%struct.BLOCK.2634310 = type { [128 x i64] }
+%"struct.std::array.26.2701705" = type { [4 x i32] }
+%struct.b3Aabb.2819039 = type { %union.anon.103.2819040, %union.anon.104.2819041 }
+%union.anon.103.2819040 = type { [4 x float] }
+%union.anon.104.2819041 = type { [4 x float] }
+%struct.pci_extra_dev.3553855 = type { [4 x ptr] }
+%struct.HistogramLiteral.3843264 = type { [256 x i32], i64, double }
 
 ; 37 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -49,7 +49,7 @@
 define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.BLOCK.2634343, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.BLOCK.2634310, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [128 x i64], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -76,7 +76,7 @@ entry:
 define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.std::array.26.2701739", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::array.26.2701705", ptr %1, i64 %3
   %5 = getelementptr nusw [4 x i32], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -119,7 +119,7 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.b3Aabb.2819073, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.b3Aabb.2819039, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [4 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -130,7 +130,7 @@ entry:
 define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.pci_extra_dev.3553889, ptr %1, i64 %3
+  %4 = getelementptr %struct.pci_extra_dev.3553855, ptr %1, i64 %3
   %5 = getelementptr [4 x ptr], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
@@ -141,7 +141,7 @@ entry:
 define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.HistogramLiteral.3843314, ptr %1, i64 %3
+  %4 = getelementptr %struct.HistogramLiteral.3843264, ptr %1, i64 %3
   %5 = getelementptr nusw nuw [256 x i32], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

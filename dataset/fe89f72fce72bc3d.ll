@@ -1,10 +1,8 @@
 
-; 21 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/sky2.ll
 ; lodepng/optimized/pngdetail.cpp.ll
-; node/optimized/simdutf.ll
 ; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/parse_manifest.ll
 ; openjdk/optimized/zip_util.ll
@@ -13,7 +11,6 @@
 ; postgres/optimized/ginget.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll

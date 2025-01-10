@@ -1,22 +1,22 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
-%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
-%struct.BEInt.156.2734510 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
-%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
-%"class.llvm::Use.3185630" = type { ptr, ptr, ptr, ptr }
-%struct.ImVec2.3454338 = type { float, float }
-%struct.track.3549521 = type { i64, i32, i32, i32, i64 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%"struct.OT::MathValueRecord.2734473" = type { %"struct.OT::IntType.155.2734474", %"struct.OT::OffsetTo.157.2734475" }
+%"struct.OT::IntType.155.2734474" = type { %struct.BEInt.156.2734476 }
+%struct.BEInt.156.2734476 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734475" = type { %"struct.OT::Offset.2734477" }
+%"struct.OT::Offset.2734477" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
+%"class.llvm::Use.3185596" = type { ptr, ptr, ptr, ptr }
+%struct.ImVec2.3454304 = type { float, float }
+%struct.track.3549487 = type { i64, i32, i32, i32, i64 }
 
 ; 3 occurrences:
 ; linux/optimized/buildid.ll
@@ -26,9 +26,9 @@
 define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %5, i32 0, i32 1
+  %6 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -244,7 +244,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %4, i64 %5
   %7 = getelementptr nusw i8, ptr %6, i64 -12
   ret ptr %7
 }
@@ -290,9 +290,9 @@ entry:
 define ptr @func00000000000000bf(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734473", ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nuw %"struct.OT::MathValueRecord.2734507", ptr %4, i64 %5, i32 0, i32 0, i32 0, i64 1
+  %6 = getelementptr nuw %"struct.OT::MathValueRecord.2734473", ptr %4, i64 %5, i32 0, i32 0, i32 0, i64 1
   ret ptr %6
 }
 
@@ -330,7 +330,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }
@@ -528,7 +528,7 @@ entry:
 define ptr @func0000000000000070(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::Use.3185630", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::Use.3185596", ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr ptr, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -8
@@ -556,9 +556,9 @@ entry:
 define ptr @func00000000000000cf(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.ImVec2.3454338, ptr %0, i64 %3
+  %4 = getelementptr %struct.ImVec2.3454304, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nuw %struct.ImVec2.3454338, ptr %4, i64 %5, i32 1
+  %6 = getelementptr nuw %struct.ImVec2.3454304, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -571,7 +571,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.track.3549521, ptr %4, i64 %5
+  %6 = getelementptr %struct.track.3549487, ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 24
   ret ptr %7
 }

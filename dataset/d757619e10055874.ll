@@ -1,5 +1,5 @@
 
-%"class.asio::detail::op_queue.147.2776500" = type { ptr, ptr }
+%"class.asio::detail::op_queue.147.2776466" = type { ptr, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
@@ -54,7 +54,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776500"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776466"], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5

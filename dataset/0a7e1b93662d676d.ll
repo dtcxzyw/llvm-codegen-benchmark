@@ -1,5 +1,5 @@
 
-; 253 occurrences:
+; 248 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -48,9 +48,6 @@
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libquic/optimized/prime.c.ll
 ; libquic/optimized/process_metrics_linux.cc.ll
@@ -200,8 +197,6 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; ruby/optimized/addr2line.ll

@@ -48,6 +48,20 @@ entry:
   ret i64 %3
 }
 
+; 4 occurrences:
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 2
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  ret i64 %3
+}
+
 ; 1 occurrences:
 ; php/optimized/der.ll
 ; Function Attrs: nounwind

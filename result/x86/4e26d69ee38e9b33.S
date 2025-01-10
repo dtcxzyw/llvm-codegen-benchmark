@@ -46,5 +46,5 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func000000000000000b:                   # @func000000000000000b
 	subq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rdi,%rsi,8), %rax
 	retq

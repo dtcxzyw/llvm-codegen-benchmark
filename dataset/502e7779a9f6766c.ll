@@ -392,7 +392,7 @@ entry:
   ret i32 %2
 }
 
-; 130 occurrences:
+; 131 occurrences:
 ; abc/optimized/cloud.c.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -491,6 +491,7 @@ entry:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/WinException.cpp.ll
+; lvgl/optimized/lv_style.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll

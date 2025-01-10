@@ -47,3 +47,10 @@ func000000000000008a:                   # @func000000000000008a
 	vmin.vv	v9, v12, v9
 	vmslt.vv	v0, v9, v8
 	ret
+func00000000000000c6:                   # @func00000000000000c6
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v12, 0
+	vnsrl.wi	v12, v10, 0
+	vmin.vv	v9, v12, v9
+	vmslt.vv	v0, v8, v9
+	ret

@@ -1,5 +1,5 @@
 
-%struct.GroupNumRemap.2600730 = type { i32 }
+%struct.GroupNumRemap.2600697 = type { i32 }
 
 ; 726 occurrences:
 ; abc/optimized/dauTree.c.ll
@@ -1020,7 +1020,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr %struct.GroupNumRemap.2600730, ptr %2, i64 %0
+  %3 = getelementptr %struct.GroupNumRemap.2600697, ptr %2, i64 %0
   ret ptr %3
 }
 

@@ -1,6 +1,6 @@
 
-%"class.metaspace::FreeChunkList.2735878" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2735879", [4 x i8] }>
-%"class.metaspace::AbstractCounter.2735879" = type { i32 }
+%"class.metaspace::FreeChunkList.2735844" = type <{ ptr, ptr, %"class.metaspace::AbstractCounter.2735845", [4 x i8] }>
+%"class.metaspace::AbstractCounter.2735845" = type { i32 }
 
 ; 17 occurrences:
 ; abc/optimized/abcDar.c.ll
@@ -25,7 +25,7 @@ define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %4 = getelementptr nusw %"class.metaspace::FreeChunkList.2735878", ptr %3, i64 %2
+  %4 = getelementptr nusw %"class.metaspace::FreeChunkList.2735844", ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -1,10 +1,3 @@
-func000000000000006e:                   // @func000000000000006e
-// %bb.0:                               // %entry
-	fcmp	d0, d0
-	ccmp	x0, #0, #0, vc
-	cset	w0, lt
-	ret
-                                        // -- End function
 func00000000000000e8:                   // @func00000000000000e8
 // %bb.0:                               // %entry
 	mov	x8, #9218868437227405312        // =0x7ff0000000000000
@@ -23,13 +16,6 @@ func000000000000014c:                   // @func000000000000014c
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000010a:                   // @func000000000000010a
-// %bb.0:                               // %entry
-	fcmp	d0, #0.0
-	ccmp	x0, #0, #8, eq
-	cset	w0, ge
-	ret
-                                        // -- End function
 func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
 	fmov	d1, #1.00000000
@@ -38,28 +24,17 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w0, ne
 	ret
                                         // -- End function
-.LCPI5_0:
+.LCPI3_0:
 	.xword	0x3fc99999a0000000              // double 0.20000000298023224
 func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	adrp	x8, .LCPI5_0
+	adrp	x8, .LCPI3_0
 	mov	w9, #3125                       // =0xc35
-	ldr	d1, [x8, :lo12:.LCPI5_0]
+	ldr	d1, [x8, :lo12:.LCPI3_0]
 	lsr	x8, x0, #5
 	fcmp	d0, d1
 	ccmp	x8, x9, #2, mi
 	cset	w0, lo
-	ret
-                                        // -- End function
-.LCPI6_0:
-	.xword	0x3cd203afa0000000              // double 1.0000000036274937E-15
-func000000000000008a:                   // @func000000000000008a
-// %bb.0:                               // %entry
-	adrp	x8, .LCPI6_0
-	ldr	d1, [x8, :lo12:.LCPI6_0]
-	fcmp	d0, d1
-	ccmp	x0, #0, #4, gt
-	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000068:                   // @func0000000000000068

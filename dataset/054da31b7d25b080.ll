@@ -1,5 +1,6 @@
 
-; 2791 occurrences:
+; 2798 occurrences:
+; abc/optimized/cmd.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -942,6 +943,7 @@
 ; gromacs/optimized/scattering-debye.cpp.ll
 ; gromacs/optimized/selection.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
@@ -1193,6 +1195,7 @@
 ; llvm/optimized/SymbolCache.cpp.ll
 ; llvm/optimized/Taint.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TensorSpec.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
@@ -1627,6 +1630,7 @@
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/main.cpp.ll
 ; nori/optimized/obj.cpp.ll
+; nuttx/optimized/mempool_multiple.c.ll
 ; ocio/optimized/AllocationTransform.cpp.ll
 ; ocio/optimized/CTFReaderHelper.cpp.ll
 ; ocio/optimized/ColorSpace.cpp.ll
@@ -2162,6 +2166,7 @@
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; qemu/optimized/linux-user_main.c.ll
 ; quantlib/optimized/accountingengine.ll
 ; quantlib/optimized/alphafinder.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
@@ -2268,6 +2273,7 @@
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; slurm/optimized/gres_filter.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/sim.ll
@@ -2362,6 +2368,7 @@
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/CoverageUtil.cpp.ll
 ; velox/optimized/DecodedVector.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/EvalCtx.cpp.ll

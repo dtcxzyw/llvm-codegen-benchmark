@@ -13,8 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
-; hyperscan/optimized/program_runtime.c.ll
+; 4 occurrences:
 ; lief/optimized/aes.c.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll

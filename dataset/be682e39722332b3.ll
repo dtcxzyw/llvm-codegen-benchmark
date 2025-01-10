@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; linux/optimized/hub.ll
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:

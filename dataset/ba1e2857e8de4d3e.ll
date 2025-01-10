@@ -631,14 +631,12 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
-; openblas/optimized/dasum_k.c.ll
-; openblas/optimized/sasum_k.c.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {

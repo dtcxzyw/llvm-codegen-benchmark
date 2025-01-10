@@ -160,7 +160,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -183,7 +183,6 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/linkstate.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openusd/optimized/cfl.c.ll

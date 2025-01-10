@@ -76,11 +76,3 @@ func0000000000000066:                   // @func0000000000000066
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
-// %bb.0:                               // %entry
-	mov	w8, #1073741824                 // =0x40000000
-	sub	x8, x8, x0
-	cmp	x8, w1, sxtw
-	cset	w0, lt
-	ret
-                                        // -- End function

@@ -22,7 +22,7 @@ func000000000000003f:                   # @func000000000000003f
 	addq	%rdx, %rsi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+func000000000000001b:                   # @func000000000000001b
 	addq	%rdx, %rsi
 	leaq	-1(%rdi,%rsi), %rax
 	retq
@@ -54,9 +54,10 @@ func000000000000003e:                   # @func000000000000003e
 	addq	%rdx, %rsi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
-	addq	%rdx, %rsi
-	leaq	-8(%rsi,%rdi,8), %rax
+func000000000000001f:                   # @func000000000000001f
+	leaq	(%rdx,%rdx,8), %rax
+	leaq	(%rsi,%rax,4), %rax
+	leaq	36(%rdi,%rax), %rax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	leaq	(%rsi,%rdx,8), %rax

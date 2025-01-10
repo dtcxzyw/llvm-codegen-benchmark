@@ -1,5 +1,5 @@
 
-; 9648 occurrences:
+; 9640 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -2196,7 +2196,6 @@
 ; icu/optimized/rbbidata.ll
 ; icu/optimized/rbbiscan.ll
 ; icu/optimized/rbbitblb.ll
-; icu/optimized/rbnf.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/rbt_rule.ll
 ; icu/optimized/rbtz.ll
@@ -2273,7 +2272,6 @@
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/units_complexconverter.ll
 ; icu/optimized/units_converter.ll
-; icu/optimized/units_router.ll
 ; icu/optimized/unorm.ll
 ; icu/optimized/unum.ll
 ; icu/optimized/uprntf_p.ll
@@ -2640,7 +2638,6 @@
 ; linux/optimized/dd.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/dev_addr_lists.ll
-; linux/optimized/device_pm.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/direct-io.ll
 ; linux/optimized/dm-stats.ll
@@ -2795,7 +2792,6 @@
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/pipe.ll
-; linux/optimized/pme.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/power-traces.ll
@@ -3842,7 +3838,6 @@
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; llvm/optimized/X86CallLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
-; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86DynAllocaExpander.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FixupBWInsts.cpp.ll
@@ -4271,7 +4266,6 @@
 ; minetest/optimized/player_sao.cpp.ll
 ; minetest/optimized/playing_sound.cpp.ll
 ; minetest/optimized/raycast.cpp.ll
-; minetest/optimized/reflowscan.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/rollback.cpp.ll
 ; minetest/optimized/s_env.cpp.ll
@@ -4352,7 +4346,6 @@
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
-; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -7788,7 +7781,6 @@
 ; spike/optimized/s_addComplCarryM.ll
 ; spike/optimized/s_addM.ll
 ; spike/optimized/s_roundPackToF128.ll
-; spike/optimized/s_sub256M.ll
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/sim.ll
 ; spike/optimized/socketif.ll

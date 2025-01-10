@@ -210,7 +210,7 @@ entry:
   ret ptr %6
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; darktable/optimized/print_settings.c.ll
@@ -236,6 +236,7 @@ entry:
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
+; openusd/optimized/restoration.c.ll
 ; php/optimized/ir.ll
 ; spike/optimized/fdt_rw.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -261,7 +262,7 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; darktable/optimized/introspection_dither.c.ll
@@ -269,7 +270,6 @@ entry:
 ; libquic/optimized/deflate.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; opencv/optimized/mser.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; redis/optimized/redis-cli.ll
 ; spike/optimized/fdt_rw.ll
 ; yosys/optimized/fstapi.ll

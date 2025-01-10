@@ -9,28 +9,28 @@ func00000000000000d7:                   # @func00000000000000d7
 	addq	%rcx, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000020:                   # @func0000000000000020
 	movq	%rdx, %rcx
 	shrq	$63, %rcx
 	addq	%rdx, %rcx
 	shrq	%rcx
-	addq	%rdi, %rcx
-	movq	%rsi, %rax
+	addq	%rsi, %rcx
+	movq	%rdi, %rax
 	shrq	$63, %rax
-	addq	%rsi, %rax
+	addq	%rdi, %rax
 	shrq	%rax
 	addq	%rcx, %rax
 	addq	%rax, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leaq	3(%rdx), %rcx
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rcx
 	shrq	$2, %rcx
-	addq	%rdi, %rcx
-	leaq	3(%rsi), %rax
-	testq	%rsi, %rsi
-	cmovnsq	%rsi, %rax
+	addq	%rsi, %rcx
+	leaq	3(%rdi), %rax
+	testq	%rdi, %rdi
+	cmovnsq	%rdi, %rax
 	shrq	$2, %rax
 	addq	%rcx, %rax
 	shlq	$2, %rax
@@ -44,6 +44,32 @@ func00000000000000c0:                   # @func00000000000000c0
 	addq	%rdx, %rax
 	addq	%rdi, %rax
 	shlq	$2, %rax
+	retq
+func0000000000000021:                   # @func0000000000000021
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	addq	%rdx, %rax
+	shrq	%rax
+	addq	%rsi, %rax
+	movq	%rdi, %rcx
+	shrq	$63, %rcx
+	addq	%rdi, %rcx
+	shrq	%rcx
+	subq	%rcx, %rax
+	addq	%rax, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	leaq	63(%rdx), %rcx
+	testq	%rdx, %rdx
+	cmovnsq	%rdx, %rcx
+	shrq	$6, %rcx
+	addl	%edi, %ecx
+	leaq	63(%rsi), %rax
+	testq	%rsi, %rsi
+	cmovnsq	%rsi, %rax
+	shrq	$6, %rax
+	addl	%ecx, %eax
+	shlq	$32, %rax
 	retq
 func00000000000000d4:                   # @func00000000000000d4
 	sarq	$3, %rdx

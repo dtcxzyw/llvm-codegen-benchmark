@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/io.c.ll
 ; abc/optimized/sswFilter.c.ll
-; openusd/optimized/reconintra.c.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {

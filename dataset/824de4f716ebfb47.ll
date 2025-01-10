@@ -14,10 +14,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
+; git/optimized/apply.ll
+; git/optimized/parallel-checkout.ll
 ; hermes/optimized/FileCheck.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll

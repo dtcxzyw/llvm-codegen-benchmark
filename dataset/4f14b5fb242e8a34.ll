@@ -1,8 +1,8 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
-%class.aiVector3t.2824802 = type { double, double, double }
-%class.aiVector3t.2828902 = type { double, double, double }
-%"class.cv::Point_.3732832" = type { float, float }
+%class.aiVector3t.2823125 = type { double, double, double }
+%class.aiVector3t.2824768 = type { double, double, double }
+%class.aiVector3t.2828868 = type { double, double, double }
+%"class.cv::Point_.3732782" = type { float, float }
 
 ; 5 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -16,7 +16,7 @@ entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %class.aiVector3t.2823125, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr nuw %class.aiVector3t.2824802, ptr %0, i64 %5, i32 1
+  %6 = getelementptr nuw %class.aiVector3t.2824768, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr %class.aiVector3t.2828902, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %class.aiVector3t.2828868, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr %"class.cv::Point_.3732832", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.cv::Point_.3732782", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

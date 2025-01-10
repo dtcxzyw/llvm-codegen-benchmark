@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/absRef.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -37,6 +37,7 @@
 ; postgres/optimized/slru.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/migration_block.c.ll
+; quickjs/optimized/quickjs.ll
 ; redis/optimized/lgc.ll
 ; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind

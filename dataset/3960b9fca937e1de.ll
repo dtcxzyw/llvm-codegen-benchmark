@@ -1,5 +1,5 @@
 
-; 2466 occurrences:
+; 2468 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -138,6 +138,7 @@
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
+; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/nvector_serial.c.ll
 ; casadi/optimized/serializing_stream.cpp.ll
 ; casadi/optimized/sundials_nvector.c.ll
@@ -617,6 +618,7 @@
 ; git/optimized/log.ll
 ; git/optimized/midx.ll
 ; git/optimized/object-name.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/pretty.ll
 ; git/optimized/read-cache.ll
@@ -2475,7 +2477,7 @@ entry:
   ret i1 %4
 }
 
-; 383 occurrences:
+; 384 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -2585,6 +2587,7 @@ entry:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/commit-graph.ll
 ; git/optimized/log.ll
+; git/optimized/parallel-checkout.ll
 ; git/optimized/pretty.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -2868,7 +2871,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -2879,7 +2882,6 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/spgutils.ll
 ; ruby/optimized/bignum.ll
 ; yalantinglibs/optimized/channel.cpp.ll

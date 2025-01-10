@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 68 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -43,6 +43,7 @@
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstebz.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll

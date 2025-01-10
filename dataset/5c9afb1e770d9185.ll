@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; llvm/optimized/SelectionDAG.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/chaitin.ll
 ; openjdk/optimized/regmask.ll
 ; Function Attrs: nounwind
@@ -40,13 +42,11 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/ebitmap.ll
 ; llvm/optimized/CodeEmitterGen.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,13 +1,13 @@
 
-%"class.gmx::BasicVector.218.3358845" = type { [3 x float] }
-%struct.page.3530296 = type { i64, %union.anon.53.3530297, %union.anon.61.3530298, %struct.atomic_t.3530299, [8 x i8] }
-%union.anon.53.3530297 = type { %struct.anon.54.3530300 }
-%struct.anon.54.3530300 = type { %union.anon.55.3530301, ptr, %union.anon.57.3530302, i64 }
-%union.anon.55.3530301 = type { %struct.list_head.3530294 }
-%struct.list_head.3530294 = type { ptr, ptr }
-%union.anon.57.3530302 = type { i64 }
-%union.anon.61.3530298 = type { %struct.atomic_t.3530299 }
-%struct.atomic_t.3530299 = type { i32 }
+%"class.gmx::BasicVector.218.3358811" = type { [3 x float] }
+%struct.page.3530262 = type { i64, %union.anon.53.3530263, %union.anon.61.3530264, %struct.atomic_t.3530265, [8 x i8] }
+%union.anon.53.3530263 = type { %struct.anon.54.3530266 }
+%struct.anon.54.3530266 = type { %union.anon.55.3530267, ptr, %union.anon.57.3530268, i64 }
+%union.anon.55.3530267 = type { %struct.list_head.3530260 }
+%struct.list_head.3530260 = type { ptr, ptr }
+%union.anon.57.3530268 = type { i64 }
+%union.anon.61.3530264 = type { %struct.atomic_t.3530265 }
+%struct.atomic_t.3530265 = type { i32 }
 
 ; 8 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
@@ -37,9 +37,9 @@ entry:
 define ptr @func000000000000001b(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw %"class.gmx::BasicVector.218.3358845", ptr %3, i64 %0
+  %4 = getelementptr nusw %"class.gmx::BasicVector.218.3358811", ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.gmx::BasicVector.218.3358845", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.gmx::BasicVector.218.3358811", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -58,7 +58,7 @@ entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.page.3530296, ptr %4, i64 %5
+  %6 = getelementptr %struct.page.3530262, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -105,9 +105,11 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i64 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,8 +1,9 @@
 
-; 92 occurrences:
+; 94 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
+; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/pdrIncr.c.ll
@@ -84,6 +85,7 @@
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/migration_block.c.ll
+; quickjs/optimized/quickjs.ll
 ; redis/optimized/lgc.ll
 ; ruby/optimized/ractor.ll
 ; ruby/optimized/time.ll

@@ -1,5 +1,5 @@
 
-; 307 occurrences:
+; 308 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
@@ -301,6 +301,7 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
 ; wireshark/optimized/erf.c.ll

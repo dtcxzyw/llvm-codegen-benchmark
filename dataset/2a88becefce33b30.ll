@@ -1,5 +1,5 @@
 
-%"class.re2::StringPiece.2795662" = type { ptr, i64 }
+%"class.re2::StringPiece.2795628" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -21,7 +21,7 @@ entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw nuw %"class.re2::StringPiece.2795662", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.re2::StringPiece.2795628", ptr %0, i64 %5
   ret ptr %6
 }
 

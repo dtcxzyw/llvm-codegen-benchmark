@@ -1,6 +1,6 @@
 
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
 
 ; 354 occurrences:
 ; cpython/optimized/_ctypes.ll
@@ -2751,7 +2751,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -112
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -2780,7 +2780,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -112
-  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

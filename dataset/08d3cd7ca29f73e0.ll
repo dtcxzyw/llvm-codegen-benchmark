@@ -15,10 +15,9 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/ioReadBaf.c.ll
-; icu/optimized/swapimpl.ll
 ; libquic/optimized/mul.c.ll
 ; openjdk/optimized/relocator.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
@@ -33,8 +32,9 @@ entry:
   ret i64 %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; icu/optimized/collationdatawriter.ll
+; icu/optimized/swapimpl.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll

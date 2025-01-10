@@ -9,6 +9,6 @@ func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	csel	x8, x1, x2, lo
-	add	x0, x0, x8, lsl #3
+	add	x0, x0, x8, lsl #12
 	ret
                                         // -- End function

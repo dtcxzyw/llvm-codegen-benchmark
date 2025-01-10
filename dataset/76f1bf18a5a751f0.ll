@@ -1,5 +1,6 @@
 
-; 25 occurrences:
+; 26 occurrences:
+; casadi/optimized/integrator.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll

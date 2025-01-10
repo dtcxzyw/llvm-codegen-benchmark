@@ -1,20 +1,5 @@
 
 ; 3 occurrences:
-; qemu/optimized/hw_virtio_virtio.c.ll
-; qemu/optimized/libvduse.c.ll
-; qemu/optimized/libvhost-user.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 7
-  %4 = and i64 %3, -8
-  %5 = shl nuw nsw i64 %1, 4
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 3 occurrences:
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/runTimeClassInfo.ll
 ; postgres/optimized/brin.ll

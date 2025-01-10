@@ -9,11 +9,6 @@ func00000000000000d0:                   # @func00000000000000d0
 	sh2add	a0, a2, a0
 	addi	a0, a0, -4
 	ret
-func00000000000000f0:                   # @func00000000000000f0
-	add	a0, a0, a1
-	sh3add	a0, a2, a0
-	addi	a0, a0, 32
-	ret
 func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a1
 	sh2add	a0, a2, a0

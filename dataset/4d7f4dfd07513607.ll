@@ -1,9 +1,5 @@
 
-%struct.deflate_optimum_node.2747994 = type { i32, i32 }
-%union.LWLockPadded.3651208 = type { %struct.LWLock.3651209, [112 x i8] }
-%struct.LWLock.3651209 = type { i16, %struct.pg_atomic_uint32.3651210, %struct.proclist_head.3651211 }
-%struct.pg_atomic_uint32.3651210 = type { i32 }
-%struct.proclist_head.3651211 = type { i32, i32 }
+%struct.deflate_optimum_node.2747960 = type { i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/ps_core.ll
@@ -66,7 +62,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.deflate_optimum_node.2747994, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.deflate_optimum_node.2747960, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -163,11 +159,10 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/fatent.ll
 ; linux/optimized/inline.ll
 ; postgres/optimized/multixact.ll
-; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
@@ -175,18 +170,6 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/predicate.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
 

@@ -60,3 +60,12 @@ func000000000000006c:                   # @func000000000000006c
 	vand.vx	v10, v10, a0
 	vmsne.vv	v0, v8, v10
 	ret
+func0000000000000048:                   # @func0000000000000048
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v12, v12, 1
+	li	a0, -7
+	vadd.vv	v8, v8, v12
+	srli	a0, a0, 1
+	vand.vx	v10, v10, a0
+	vmsltu.vv	v0, v10, v8
+	ret

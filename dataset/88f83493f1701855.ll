@@ -1,5 +1,5 @@
 
-; 292 occurrences:
+; 293 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcObj.c.ll
@@ -7,6 +7,7 @@
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/bmcBmc3.c.ll
+; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaShow.c.ll

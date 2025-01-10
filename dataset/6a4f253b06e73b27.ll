@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3191562" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3191528" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; php/optimized/string.ll
@@ -77,9 +77,9 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -32
-  %4 = getelementptr %"class.llvm::Use.3191562", ptr %3, i64 %0
+  %4 = getelementptr %"class.llvm::Use.3191528", ptr %3, i64 %0
   %5 = sub nsw i64 0, %1
-  %6 = getelementptr nusw %"class.llvm::Use.3191562", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Use.3191528", ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

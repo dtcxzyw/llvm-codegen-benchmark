@@ -59,7 +59,7 @@ entry:
   ret i8 %3
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; boost/optimized/console_buffer.ll
 ; boost/optimized/cstdio.ll
 ; boost/optimized/test_convert.ll
@@ -83,6 +83,8 @@ entry:
 ; minetest/optimized/nodedef.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/hb-ot-name.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/qobject_json-writer.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_sprintf.c.ll

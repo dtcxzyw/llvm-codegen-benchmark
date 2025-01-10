@@ -108,7 +108,7 @@ entry:
   ret i1 %6
 }
 
-; 141 occurrences:
+; 143 occurrences:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
@@ -120,9 +120,11 @@ entry:
 ; boost/optimized/sparring_partner.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; cmake/optimized/cmPolicies.cxx.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; freetype/optimized/sfnt.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll

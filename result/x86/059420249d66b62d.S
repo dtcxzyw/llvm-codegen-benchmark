@@ -1,3 +1,9 @@
+func0000000000000187:                   # @func0000000000000187
+	leal	7(%rsi), %eax
+	cmpl	$4, %edx
+	cmovnel	%esi, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	4(%rsi), %eax
 	testl	%edx, %edx

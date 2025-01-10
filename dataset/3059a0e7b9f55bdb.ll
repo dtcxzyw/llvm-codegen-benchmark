@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2823159 = type { double, double, double }
+%class.aiVector3t.2823125 = type { double, double, double }
 
 ; 10 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -101,7 +101,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %1, %2
-  %4 = getelementptr nusw nuw %class.aiVector3t.2823159, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %class.aiVector3t.2823125, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -124,16 +124,6 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; quest/optimized/QuEST_common.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %1, %2
-  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   ret ptr %4
 }
 

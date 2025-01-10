@@ -407,8 +407,9 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; boost/optimized/src.ll
+; libwebp/optimized/huffman_encode_utils.c.ll
 ; postgres/optimized/nodeIndexscan.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {

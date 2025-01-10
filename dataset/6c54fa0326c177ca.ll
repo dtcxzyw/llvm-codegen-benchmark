@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
+; icu/optimized/dtitvfmt.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
@@ -93,10 +94,9 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; boost/optimized/from_chars.ll
 ; boost/optimized/src.ll
-; icu/optimized/dtitvfmt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
@@ -133,18 +133,8 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
+; 7 occurrences:
 ; icu/optimized/alphaindex.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %2, -65
-  %4 = getelementptr nusw nuw [26 x ptr], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 6 occurrences:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -155,8 +145,8 @@ entry:
 define ptr @func0000000000000016(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw [55 x i32], ptr %0, i64 0, i64 %3
+  %3 = add nsw i64 %2, -65
+  %4 = getelementptr nusw [26 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

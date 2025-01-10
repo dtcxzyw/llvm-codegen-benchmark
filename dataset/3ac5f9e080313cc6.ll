@@ -81,10 +81,10 @@ entry:
 ; 1 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add nuw i64 %2, %0
   %4 = add i64 %3, 63
   %5 = and i64 %4, -64
   ret i64 %5
@@ -99,6 +99,18 @@ entry:
   %3 = add nuw i64 %2, %0
   %4 = add nuw i64 %3, 63
   %5 = and i64 %4, -64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 3
+  %3 = add nuw nsw i64 %2, %0
+  %4 = add nuw nsw i64 %3, 63
+  %5 = and i64 %4, 9223372036854775744
   ret i64 %5
 }
 

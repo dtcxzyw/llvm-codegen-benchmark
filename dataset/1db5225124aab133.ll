@@ -2488,17 +2488,6 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; git/optimized/diffcore-rename.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(ptr %0) #0 {
-entry:
-  %1 = ptrtoint ptr %0 to i64
-  %2 = trunc nsw i64 %1 to i32
-  ret i32 %2
-}
-
 ; 3 occurrences:
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/w9idkdfzlxavkb6.ll
@@ -2508,6 +2497,16 @@ define i32 @func0000000000000002(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = trunc nuw i64 %1 to i32
+  ret i32 %2
+}
+
+; 1 occurrences:
+; diesel-rs/optimized/3btvyztn2iiarpvf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(ptr %0) #0 {
+entry:
+  %1 = ptrtoint ptr %0 to i64
+  %2 = trunc nsw i64 %1 to i32
   ret i32 %2
 }
 

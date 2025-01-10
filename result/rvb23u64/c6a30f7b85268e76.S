@@ -199,12 +199,6 @@ func00000000000000a8:                   # @func00000000000000a8
 	sltiu	a0, a0, 4
 	xori	a0, a0, 1
 	ret
-func000000000000008a:                   # @func000000000000008a
-	sub	a0, a0, a1
-	addi	a0, a0, 16
-	slti	a0, a0, 24
-	xori	a0, a0, 1
-	ret
 func000000000000014a:                   # @func000000000000014a
 	sub	a1, a1, a0
 	slti	a0, a1, -1

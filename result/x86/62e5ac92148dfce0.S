@@ -3,15 +3,14 @@ func000000000000001b:                   # @func000000000000001b
 	addq	%rdx, %rdi
 	adcq	$0, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000012:                   # @func0000000000000012
 	movq	%rsi, %rax
 	addq	%rdx, %rdi
 	adcq	$0, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax
-	andq	$-8, %rdx
-	addq	%rdi, %rdx
+	addq	%rdx, %rdi
 	adcq	$0, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

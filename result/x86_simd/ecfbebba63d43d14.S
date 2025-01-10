@@ -24,9 +24,13 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq
+.LCPI3_0:
+	.long	512                             # 0x200
+.LCPI3_1:
+	.long	4                               # 0x4
 func0000000000000000:                   # @func0000000000000000
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpmaxsd	%ymm1, %ymm0, %ymm0
-	vpmovusdb	%ymm0, %xmm0
+	vpminsd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpmaxsd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

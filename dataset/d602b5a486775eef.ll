@@ -33,8 +33,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; opencv/optimized/softfloat.cpp.ll
+; 1 occurrences:
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {

@@ -1,5 +1,5 @@
 
-%"struct.Node_Stack::INode.2741095" = type { ptr, i32 }
+%"struct.Node_Stack::INode.2741061" = type { ptr, i32 }
 
 ; 47 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -87,7 +87,7 @@ entry:
   %4 = lshr i64 %3, 4
   %5 = add nuw nsw i64 %4, 4294967294
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741095", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741061", ptr %0, i64 %6
   ret ptr %7
 }
 

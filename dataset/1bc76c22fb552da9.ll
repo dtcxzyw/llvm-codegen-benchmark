@@ -88,9 +88,16 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 9 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; gromacs/optimized/updategroupscog.cpp.ll
+; opencv/optimized/opencv-caffe.pb.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/parse_context.cc.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -160,25 +167,6 @@ entry:
   %5 = shl i64 %4, 30
   %6 = ashr exact i64 %5, 32
   %7 = icmp eq i64 %6, %0
-  ret i1 %7
-}
-
-; 7 occurrences:
-; opencv/optimized/opencv-caffe.pb.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %3, %1
-  %5 = shl i64 %4, 32
-  %6 = ashr exact i64 %5, 32
-  %7 = icmp samesign ult i64 %6, %0
   ret i1 %7
 }
 

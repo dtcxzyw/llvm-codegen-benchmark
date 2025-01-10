@@ -117,9 +117,8 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/device_pm.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind

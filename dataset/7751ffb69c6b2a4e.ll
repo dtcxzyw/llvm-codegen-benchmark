@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; freetype/optimized/autofit.c.ll
 ; gromacs/optimized/gmx_h2order.cpp.ll
@@ -17,6 +17,8 @@
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/vectorIntrinsics.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll

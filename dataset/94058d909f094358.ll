@@ -102,7 +102,7 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; boost/optimized/src.ll
@@ -144,6 +144,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; rocksdb/optimized/slice.cc.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
@@ -193,12 +194,11 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lucky.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/xar.c.ll

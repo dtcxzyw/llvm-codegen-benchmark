@@ -1,5 +1,5 @@
 
-%union.TValue.3680609 = type { i64 }
+%union.TValue.3680559 = type { i64 }
 
 ; 249 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -917,7 +917,7 @@ define ptr @func000000000000006f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = getelementptr nusw i8, ptr %0, i64 -16
-  %4 = getelementptr nusw nuw %union.TValue.3680609, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %union.TValue.3680559, ptr %3, i64 %2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }

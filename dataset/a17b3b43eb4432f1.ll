@@ -1,6 +1,6 @@
 
-%struct.hb_bit_page_t.2733381 = type { i32, %struct.hb_vector_size_t.2733382 }
-%struct.hb_vector_size_t.2733382 = type { [8 x i64] }
+%struct.hb_bit_page_t.2733347 = type { i32, %struct.hb_vector_size_t.2733348 }
+%struct.hb_vector_size_t.2733348 = type { [8 x i64] }
 
 ; 16 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -22,7 +22,7 @@
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.hb_bit_page_t.2733381, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.hb_bit_page_t.2733347, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 64
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0

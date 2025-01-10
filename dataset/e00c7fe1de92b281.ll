@@ -80,7 +80,7 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/topology-synthetic.ll
@@ -94,6 +94,7 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; opencv/optimized/retinacolor.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
+; slurm/optimized/step_mgr.ll
 ; spike/optimized/smalda.ll
 ; spike/optimized/smaldrs.ll
 ; spike/optimized/smalds.ll

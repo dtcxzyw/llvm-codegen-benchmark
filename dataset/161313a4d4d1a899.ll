@@ -15,9 +15,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 5 occurrences:
+; 6 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; linux/optimized/sky2.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
 ; wireshark/optimized/packet-smb.c.ll

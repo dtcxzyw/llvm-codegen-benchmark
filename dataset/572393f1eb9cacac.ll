@@ -141,7 +141,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cvc5/optimized/Solver.cc.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -160,7 +160,6 @@ entry:
 ; luau/optimized/TypeInfer.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dorbdb1.c.ll
 ; opencv/optimized/application_trace.cpp.ll
 ; opencv/optimized/calibrate.cpp.ll
 ; opencv/optimized/trace.cpp.ll

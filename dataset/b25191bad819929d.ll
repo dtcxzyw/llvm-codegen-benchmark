@@ -1,7 +1,7 @@
 
-%union.Node.3713478 = type { %struct.NodeKey.3713479 }
-%struct.NodeKey.3713479 = type { %union.Value.3713477, i8, i8, i32, %union.Value.3713477 }
-%union.Value.3713477 = type { ptr }
+%union.Node.3713428 = type { %struct.NodeKey.3713429 }
+%struct.NodeKey.3713429 = type { %union.Value.3713427, i8, i8, i32, %union.Value.3713427 }
+%union.Value.3713427 = type { ptr }
 
 ; 3 occurrences:
 ; graphviz/optimized/triang.c.ll
@@ -40,7 +40,7 @@ entry:
   %4 = add i32 %3, 1
   %5 = urem i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %union.Node.3713478, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %union.Node.3713428, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -11,7 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; boost/optimized/get_turn_info.ll
 ; boost/optimized/get_turns.ll
 ; boost/optimized/get_turns_areal_areal.ll
@@ -20,6 +20,8 @@ entry:
 ; boost/optimized/sort_by_side.ll
 ; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/rangeobject.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:

@@ -209,6 +209,7 @@ entry:
 ; curl/optimized/libcurl_la-content_encoding.ll
 ; cvc5/optimized/generic_op.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; flac/optimized/replaygain_analysis.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -232,7 +233,6 @@ entry:
 ; hermes/optimized/hermes.cpp.ll
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; hyperscan/optimized/mcsheng.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
@@ -570,7 +570,7 @@ entry:
   ret ptr %4
 }
 
-; 637 occurrences:
+; 641 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -1081,6 +1081,10 @@ entry:
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; msdfgen/optimized/rasterization.cpp.ll
+; ncnn/optimized/padding_x86.cpp.ll
+; ncnn/optimized/padding_x86_avx.cpp.ll
+; ncnn/optimized/padding_x86_avx512.cpp.ll
+; ncnn/optimized/padding_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/contours.cpp.ll
@@ -1217,16 +1221,13 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
+; 1 occurrences:
 ; minetest/optimized/l_noise.cpp.ll
-; openssl/optimized/libcrypto-lib-sha1dgst.ll
-; openssl/optimized/libcrypto-shlib-sha1dgst.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = sub nsw i64 64, %2
+  %3 = sub nsw i64 2048, %2
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }

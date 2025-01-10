@@ -4933,11 +4933,12 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; boost/optimized/path.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/string.cpp.ll
+; freetype/optimized/pfr.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -5676,7 +5677,7 @@ entry:
   ret i1 %4
 }
 
-; 386 occurrences:
+; 382 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -5685,10 +5686,7 @@ entry:
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/FBXExportNode.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; assimp/optimized/XmlSerializer.cpp.ll
 ; boost/optimized/test_codecvt.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cpython/optimized/ceval_gil.ll
@@ -5995,7 +5993,6 @@ entry:
 ; xgboost/optimized/config.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
-; yosys/optimized/opt_lut.ll
 ; z3/optimized/array_model.cpp.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll

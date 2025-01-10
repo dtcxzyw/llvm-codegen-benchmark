@@ -1,6 +1,6 @@
 
-%struct.dt_lib_collect_rule_t.2874789 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, i32, i32, %struct._datetime_range_t.2874790, ptr }
-%struct._datetime_range_t.2874790 = type { i64, i64, ptr, ptr, ptr }
+%struct.dt_lib_collect_rule_t.2874755 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, i32, i32, %struct._datetime_range_t.2874756, ptr }
+%struct._datetime_range_t.2874756 = type { i64, i64, ptr, ptr, ptr }
 
 ; 33 occurrences:
 ; g2o/optimized/line3d.cpp.ll
@@ -85,7 +85,7 @@ define ptr @func000000000000001a(i64 %0, ptr %1) #0 {
 entry:
   %2 = mul nsw i64 %0, -112
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw %struct.dt_lib_collect_rule_t.2874789, ptr %3, i64 %0
+  %4 = getelementptr nusw %struct.dt_lib_collect_rule_t.2874755, ptr %3, i64 %0
   ret ptr %4
 }
 

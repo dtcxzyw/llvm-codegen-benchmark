@@ -139,7 +139,7 @@ entry:
   ret i1 %4
 }
 
-; 70 occurrences:
+; 69 occurrences:
 ; assimp/optimized/zip.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -209,7 +209,6 @@ entry:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; raylib/optimized/raudio.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:

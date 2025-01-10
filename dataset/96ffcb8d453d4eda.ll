@@ -1,13 +1,13 @@
 
-%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
-%"struct.re2::PatchList.2601724" = type { i32, i32 }
-%"struct.Assimp::Unreal::Triangle.2823399" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
-%"struct.std::pair.11.2880956" = type { %"class.folly::Range.2880942", double }
-%"class.folly::Range.2880942" = type { ptr, ptr }
-%"class.llvm::SDUse.3146036" = type { %"class.llvm::SDValue.3146037", ptr, ptr, ptr }
-%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
-%union.IRIns.3680616 = type { %struct.GCRef.3680617 }
-%struct.GCRef.3680617 = type { i64 }
+%"struct.re2::Frag.2601690" = type <{ i32, %"struct.re2::PatchList.2601691", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601691" = type { i32, i32 }
+%"struct.Assimp::Unreal::Triangle.2823365" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
+%"struct.std::pair.11.2880922" = type { %"class.folly::Range.2880908", double }
+%"class.folly::Range.2880908" = type { ptr, ptr }
+%"class.llvm::SDUse.3146002" = type { %"class.llvm::SDValue.3146003", ptr, ptr, ptr }
+%"class.llvm::SDValue.3146003" = type <{ ptr, i32, [4 x i8] }>
+%union.IRIns.3680566 = type { %struct.GCRef.3680567 }
+%struct.GCRef.3680567 = type { i64 }
 
 ; 97 occurrences:
 ; boost/optimized/static_string.ll
@@ -111,7 +111,7 @@
 define i1 @func00000000000001e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.re2::Frag.2601723", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.re2::Frag.2601690", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -155,7 +155,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2823399", ptr %1, i64 %3
+  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2823365", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 20
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -174,7 +174,7 @@ entry:
 define i1 @func00000000000003e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.std::pair.11.2880956", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.11.2880922", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -189,7 +189,7 @@ entry:
 define i1 @func00000000000001ec(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::SDUse.3146036", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::SDUse.3146002", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 40
   %6 = icmp ne ptr %5, %4
   ret i1 %6
@@ -220,7 +220,7 @@ entry:
 define i1 @func00000000000001c8(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %union.IRIns.3680616, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %union.IRIns.3680566, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -8
   %6 = icmp ugt ptr %5, %4
   ret i1 %6

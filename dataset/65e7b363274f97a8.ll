@@ -1,8 +1,8 @@
 
-%struct._zval_struct.2789124 = type { %union._zend_value.2789134, %union.anon.2789135, %union.anon.2.2789136 }
-%union._zend_value.2789134 = type { i64 }
-%union.anon.2789135 = type { i32 }
-%union.anon.2.2789136 = type { i32 }
+%struct._zval_struct.2789090 = type { %union._zend_value.2789100, %union.anon.2789101, %union.anon.2.2789102 }
+%union._zend_value.2789100 = type { i64 }
+%union.anon.2789101 = type { i32 }
+%union.anon.2.2789102 = type { i32 }
 
 ; 8 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -33,8 +33,8 @@ entry:
 define ptr @func000000000000001f(i64 %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr nusw nuw %struct._zval_struct.2789124, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw %struct._zval_struct.2789124, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct._zval_struct.2789090, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %struct._zval_struct.2789090, ptr %4, i64 %0
   ret ptr %5
 }
 

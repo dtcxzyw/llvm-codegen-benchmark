@@ -1,5 +1,5 @@
 
-%struct.tzEntry.3653360 = type { ptr, ptr, i32, i8, i32, ptr }
+%struct.tzEntry.3653326 = type { ptr, ptr, i32, i8, i32, ptr }
 
 ; 4 occurrences:
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
@@ -58,7 +58,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = ashr i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.tzEntry.3653360, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.tzEntry.3653326, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

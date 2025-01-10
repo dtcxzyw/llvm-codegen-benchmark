@@ -14,15 +14,15 @@ func000000000000001e:                   // @func000000000000001e
 	lsr	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #26                         // =0x1a
+	mov	w8, #30                         // =0x1e
 	clz	w9, w1
 	sub	w8, w8, w9
 	lsr	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000016:                   // @func0000000000000016
 // %bb.0:                               // %entry
 	mov	w8, #30                         // =0x1e
 	clz	w9, w1

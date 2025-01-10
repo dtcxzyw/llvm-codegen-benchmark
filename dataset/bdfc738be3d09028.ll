@@ -1,5 +1,5 @@
 
-; 761 occurrences:
+; 762 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; assimp/optimized/PlyParser.cpp.ll
@@ -701,6 +701,7 @@
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/file-jpeg.c.ll
 ; wireshark/optimized/observer.c.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-dpaux.c.ll

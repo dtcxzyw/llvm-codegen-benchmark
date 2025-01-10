@@ -1,16 +1,16 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
-%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079" = type { %"class.std::__cxx11::list.51.2616080" }
-%"class.std::__cxx11::list.51.2616080" = type { %"class.std::__cxx11::_List_base.52.2616081" }
-%"class.std::__cxx11::_List_base.52.2616081" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" }
-%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" = type { %"struct.std::__detail::_List_node_header.2616083" }
-%"struct.std::__detail::_List_node_header.2616083" = type { %"struct.std::__detail::_List_node_base.2616084", i64 }
-%"struct.std::__detail::_List_node_base.2616084" = type { ptr, ptr }
-%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
-%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
-%struct.hb_ot_math_glyph_variant_t.2734519 = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653" = type { i8, i8, [6 x i8] }
+%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616046" = type { %"class.std::__cxx11::list.51.2616047" }
+%"class.std::__cxx11::list.51.2616047" = type { %"class.std::__cxx11::_List_base.52.2616048" }
+%"class.std::__cxx11::_List_base.52.2616048" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616049" }
+%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616049" = type { %"struct.std::__detail::_List_node_header.2616050" }
+%"struct.std::__detail::_List_node_header.2616050" = type { %"struct.std::__detail::_List_node_base.2616051", i64 }
+%"struct.std::__detail::_List_node_base.2616051" = type { ptr, ptr }
+%struct.Entry.2663510 = type { %"class.mold::LittleEndian.2663445", %"class.mold::LittleEndian.2663445" }
+%"class.mold::LittleEndian.2663445" = type { [4 x i8] }
+%struct.hb_ot_math_glyph_variant_t.2734485 = type { i32, i32 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; clamav/optimized/packlibs.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -25,7 +25,6 @@
 ; postgres/optimized/ascii.ll
 ; postgres/optimized/auth.ll
 ; postgres/optimized/latch.ll
-; postgres/optimized/predicate.ll
 ; postgres/optimized/ruleutils.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/block_vmdk.c.ll
@@ -1117,7 +1116,7 @@ entry:
   ret i1 %5
 }
 
-; 2651 occurrences:
+; 2646 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -1192,10 +1191,8 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; assimp/optimized/zip.c.ll
 ; boost/optimized/src.ll
 ; bullet3/optimized/btAxisSweep3.ll
-; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -1417,7 +1414,6 @@ entry:
 ; hermes/optimized/require.cpp.ll
 ; hermes/optimized/rust-api.cpp.ll
 ; hermes/optimized/synth.cpp.ll
-; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_native.c.ll
@@ -2721,9 +2717,7 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sample_gpu.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; meshoptimizer/optimized/vcacheoptimizer.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
@@ -4912,7 +4906,7 @@ entry:
 define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608653", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -5327,7 +5321,7 @@ entry:
 define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616046", ptr %1, i64 %3
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
@@ -5442,7 +5436,7 @@ entry:
 define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.Entry.2663543, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.Entry.2663510, ptr %1, i64 %3
   %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
@@ -5633,7 +5627,7 @@ entry:
 define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.hb_ot_math_glyph_variant_t.2734519, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.hb_ot_math_glyph_variant_t.2734485, ptr %1, i64 %3
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
@@ -5679,11 +5673,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/ibss.ll
 ; linux/optimized/nf_conntrack_irc.ll
 ; linux/optimized/scsi_scan.ll
-; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:

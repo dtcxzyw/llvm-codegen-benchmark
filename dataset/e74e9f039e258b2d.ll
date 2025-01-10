@@ -1,7 +1,7 @@
 
-%struct.MapNode.2693048 = type { i16, i8, i8 }
-%class.QCPGraphData.3451166 = type { double, double }
-%"struct.std::pair.94.3778209" = type { float, i32 }
+%struct.MapNode.2693014 = type { i16, i8, i8 }
+%class.QCPGraphData.3451132 = type { double, double }
+%"struct.std::pair.94.3778159" = type { float, i32 }
 
 ; 1 occurrences:
 ; minetest/optimized/serverenvironment.cpp.ll
@@ -9,7 +9,7 @@
 define ptr @func000000000000005e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 48
-  %4 = getelementptr %struct.MapNode.2693048, ptr %0, i64 %1
+  %4 = getelementptr %struct.MapNode.2693014, ptr %0, i64 %1
   %5 = ashr exact i64 %3, 38
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -120,7 +120,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %1
+  %4 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %1
   %5 = ashr exact i64 %3, 28
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
@@ -132,7 +132,7 @@ entry:
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
-  %4 = getelementptr %"struct.std::pair.94.3778209", ptr %0, i64 %1
+  %4 = getelementptr %"struct.std::pair.94.3778159", ptr %0, i64 %1
   %5 = ashr exact i64 %3, 29
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

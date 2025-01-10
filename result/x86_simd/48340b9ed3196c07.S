@@ -49,12 +49,11 @@ func0000000000000026:                   # @func0000000000000026
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	4294967294                      # 0xfffffffe
-.LCPI5_1:
-	.long	2                               # 0x2
+	.long	4294967287                      # 0xfffffff7
 func0000000000000001:                   # @func0000000000000001
-	vpandd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpeqd	.LCPI5_1(%rip){1to8}, %ymm0, %k0
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [4294967287,4294967287,4294967287,4294967287,4294967287,4294967287,4294967287,4294967287]
+	vpand	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

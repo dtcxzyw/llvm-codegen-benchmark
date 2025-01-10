@@ -1,14 +1,4 @@
 
-; 1 occurrences:
-; minetest/optimized/treegen.cpp.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000005(i32 %0) #0 {
-entry:
-  %1 = trunc i32 %0 to i16
-  %2 = or i16 %1, -6
-  ret i16 %2
-}
-
 ; 2 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; luau/optimized/IrLoweringA64.cpp.ll

@@ -50,20 +50,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; abc/optimized/giaResub.c.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; openjdk/optimized/dependencies.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001c2(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 252
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp sle i32 %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 ; 8 occurrences:
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/mfsDiv.c.ll
@@ -175,7 +161,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/dtoa.ll
 ; jq/optimized/jv_dtoa.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
@@ -200,6 +187,19 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = icmp sgt i32 %0, %1
   %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; abc/optimized/giaResub.c.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c2(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = icmp eq i32 %3, 0
+  %5 = icmp sle i32 %0, %1
+  %6 = or i1 %4, %5
   ret i1 %6
 }
 

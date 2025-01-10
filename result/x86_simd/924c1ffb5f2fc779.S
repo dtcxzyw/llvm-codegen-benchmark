@@ -1,11 +1,6 @@
-.LCPI0_0:
-	.quad	7                               # 0x7
-.LCPI0_1:
-	.quad	4294967295                      # 0xffffffff
 func0000000000000003:                   # @func0000000000000003
-	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpbroadcastq	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967295,4294967295,4294967295,4294967295]
+	vptestmq	%ymm1, %ymm1, %k1
+	vpmovzxdq	%xmm0, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI1_0:
 	.quad	4                               # 0x4

@@ -1,5 +1,5 @@
 
-; 253 occurrences:
+; 251 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcLib.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -104,7 +104,6 @@
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
@@ -223,7 +222,6 @@
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
 ; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconintra.c.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_jit_compile.ll

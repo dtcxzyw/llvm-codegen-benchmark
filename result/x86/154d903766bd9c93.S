@@ -1,8 +1,3 @@
-func00000000000000aa:                   # @func00000000000000aa
-	sarl	%esi
-	addl	%edi, %esi
-	setns	%al
-	retq
 func0000000000000026:                   # @func0000000000000026
 	sarl	$16, %esi
 	addl	%edi, %esi
@@ -66,6 +61,12 @@ func00000000000000a4:                   # @func00000000000000a4
 	addl	%edi, %esi
 	cmpl	$25, %esi
 	setb	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	sarl	$24, %esi
+	addl	%edi, %esi
+	cmpl	$12, %esi
+	setge	%al
 	retq
 func0000000000000034:                   # @func0000000000000034
 	sarl	$8, %esi

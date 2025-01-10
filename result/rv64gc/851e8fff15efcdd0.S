@@ -60,13 +60,6 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 3
 	addw	a0, a0, a1
 	ret
-func000000000000018c:                   # @func000000000000018c
-	slli	a2, a2, 8
-	andi	a1, a1, 255
-	add	a0, a0, a2
-	slli	a1, a1, 8
-	addw	a0, a0, a1
-	ret
 func00000000000001cc:                   # @func00000000000001cc
 	slli	a2, a2, 7
 	andi	a1, a1, 255

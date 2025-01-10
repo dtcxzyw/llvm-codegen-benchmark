@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/dma-iommu.ll
+; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qed-cluster.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

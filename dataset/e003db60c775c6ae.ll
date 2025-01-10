@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -41,6 +41,7 @@
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/miniz.c.ll
+; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; opencv/optimized/brisk.cpp.ll

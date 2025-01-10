@@ -1,9 +1,9 @@
 
-%"class.folly::hazptr_detail::shared_head_only_list.2683239" = type <{ %"struct.std::atomic.12.2683236", %"struct.std::atomic.27.2683243", i32, [4 x i8] }>
-%"struct.std::atomic.12.2683236" = type { %"struct.std::__atomic_base.13.2683245" }
-%"struct.std::__atomic_base.13.2683245" = type { i64 }
-%"struct.std::atomic.27.2683243" = type { %"class.std::thread::id.2683244" }
-%"class.std::thread::id.2683244" = type { i64 }
+%"class.folly::hazptr_detail::shared_head_only_list.2683206" = type <{ %"struct.std::atomic.12.2683203", %"struct.std::atomic.27.2683210", i32, [4 x i8] }>
+%"struct.std::atomic.12.2683203" = type { %"struct.std::__atomic_base.13.2683212" }
+%"struct.std::__atomic_base.13.2683212" = type { i64 }
+%"struct.std::atomic.27.2683210" = type { %"class.std::thread::id.2683211" }
+%"class.std::thread::id.2683211" = type { i64 }
 
 ; 25 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -38,7 +38,7 @@ entry:
   %3 = lshr i64 %2, 8
   %4 = and i64 %3, 7
   %5 = getelementptr nusw nuw i8, ptr %0, i64 32
-  %6 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2683239"], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [8 x %"class.folly::hazptr_detail::shared_head_only_list.2683206"], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

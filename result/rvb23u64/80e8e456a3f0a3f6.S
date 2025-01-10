@@ -12,6 +12,8 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	sext.w	a0, a0
 	min	a0, a0, a1
-	andi	a0, a0, 7
+	lui	a1, 16
+	addiw	a1, a1, -4
+	and	a0, a0, a1
 	snez	a0, a0
 	ret

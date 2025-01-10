@@ -1,5 +1,5 @@
 
-; 5336 occurrences:
+; 5338 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/acbPush.c.ll
@@ -394,6 +394,7 @@
 ; cmake/optimized/session.cpp.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
@@ -5327,6 +5328,7 @@
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_lazy.c.ll

@@ -93,19 +93,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = shl nuw nsw i32 %3, 1
-  %5 = and i32 %4, 32
-  %6 = or disjoint i32 %0, %1
-  %7 = or i32 %6, %5
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0, i32 %1, i16 %2) #0 {

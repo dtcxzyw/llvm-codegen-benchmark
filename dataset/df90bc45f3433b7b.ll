@@ -1,5 +1,5 @@
 
-; 144 occurrences:
+; 143 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
@@ -64,7 +64,6 @@
 ; linux/optimized/vht.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll

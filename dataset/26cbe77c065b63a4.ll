@@ -55,9 +55,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
+; linux/optimized/intel_cdclk.ll
 ; lua/optimized/lcode.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll

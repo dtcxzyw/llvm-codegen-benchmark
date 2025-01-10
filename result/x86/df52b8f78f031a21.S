@@ -67,13 +67,6 @@ func000000000000002c:                   # @func000000000000002c
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
-	cmpl	$2, %esi
-	setae	%cl
-	cmpl	$2, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
 func000000000000008a:                   # @func000000000000008a
 	cmpl	$32, %esi
 	setb	%cl

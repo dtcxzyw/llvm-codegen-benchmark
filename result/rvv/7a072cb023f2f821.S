@@ -21,16 +21,17 @@ func0000000000000061:                   # @func0000000000000061
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
+func0000000000000041:                   # @func0000000000000041
+	li	a0, 238
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmseq.vx	v0, v9, a0
+	vnsrl.wi	v9, v10, 0
+	vmerge.vvm	v8, v9, v8, v0
+	ret
 func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmseq.vi	v0, v9, 0
 	vnsrl.wi	v8, v10, 0, v0.t
-	ret
-func0000000000000041:                   # @func0000000000000041
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v9, 0
-	vnsrl.wi	v9, v10, 0
-	vmerge.vvm	v8, v9, v8, v0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e32, m1, ta, ma

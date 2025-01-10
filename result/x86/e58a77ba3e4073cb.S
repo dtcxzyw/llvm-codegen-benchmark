@@ -23,7 +23,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
 func0000000000000004:                   # @func0000000000000004
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI2_1(%rip), %xmm0
 	seta	%al
 	retq

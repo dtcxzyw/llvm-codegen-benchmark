@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; abseil-cpp/optimized/cord_analysis.cc.ll
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; openjdk/optimized/shenandoahPacer.ll

@@ -1,15 +1,15 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
-%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
-%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
-%union.StkPtrType.2710348 = type { i64 }
-%"class.std::vector.2828386" = type { %"struct.std::_Vector_base.2828387" }
-%"struct.std::_Vector_base.2828387" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828388" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" }
-%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828389" = type { ptr, ptr, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct._StackType.2710311 = type { i32, i32, %union.anon.3.2710312 }
+%union.anon.3.2710312 = type { %struct.anon.6.2710313 }
+%struct.anon.6.2710313 = type { ptr, %union.StkPtrType.2710314, %union.StkPtrType.2710314 }
+%union.StkPtrType.2710314 = type { i64 }
+%"class.std::vector.2828352" = type { %"struct.std::_Vector_base.2828353" }
+%"struct.std::_Vector_base.2828353" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl.2828354" = type { %"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" }
+%"struct.std::_Vector_base<ClipperLib::IntPoint, std::allocator<ClipperLib::IntPoint>>::_Vector_impl_data.2828355" = type { ptr, ptr, ptr }
 
-; 524 occurrences:
+; 525 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -337,6 +337,7 @@
 ; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/keypoint.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
@@ -543,7 +544,7 @@ entry:
   ret ptr %4
 }
 
-; 1570 occurrences:
+; 1589 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDec.c.ll
@@ -855,6 +856,7 @@ entry:
 ; clamav/optimized/clamfi.c.ll
 ; clamav/optimized/client.c.ll
 ; clamav/optimized/disasm.c.ll
+; clamav/optimized/dsig.c.ll
 ; clamav/optimized/getopt.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
@@ -879,6 +881,7 @@ entry:
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/huf_compress.c.ll
+; cmake/optimized/inet.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
@@ -916,6 +919,7 @@ entry:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
+; folly/optimized/File.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
@@ -976,6 +980,7 @@ entry:
 ; git/optimized/receive-pack.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/refs.ll
+; git/optimized/remote-curl.ll
 ; git/optimized/sequencer.ll
 ; git/optimized/setup.ll
 ; git/optimized/shell.ll
@@ -1137,6 +1142,7 @@ entry:
 ; libquic/optimized/v3_ncons.c.ll
 ; libquic/optimized/v3_utl.c.ll
 ; libquic/optimized/x_name.c.ll
+; libuv/optimized/inet.c.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; lief/optimized/CodeViewPDB.cpp.ll
 ; lief/optimized/DynamicEntryArray.cpp.ll
@@ -1438,6 +1444,7 @@ entry:
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
+; node/optimized/inet.ll
 ; nori/optimized/layout.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/tabwidget.cpp.ll
@@ -1604,14 +1611,17 @@ entry:
 ; openjdk/optimized/FileSystemSupport_md.ll
 ; openjdk/optimized/InvocationAdapter.ll
 ; openjdk/optimized/JvmLauncher.ll
+; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
+; openjdk/optimized/bootstrapInfo.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_LIR.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/canonicalize_md.ll
 ; openjdk/optimized/check_code.ll
+; openjdk/optimized/childproc.ll
 ; openjdk/optimized/ciMethodBlocks.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/classFileStream.ll
@@ -1646,6 +1656,8 @@ entry:
 ; openjdk/optimized/ostream.ll
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/parse2.ll
+; openjdk/optimized/path_util.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/signature.ll
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/util.ll
@@ -1658,6 +1670,7 @@ entry:
 ; openjdk/optimized/zBarrierSetC2.ll
 ; openjdk/optimized/zPhysicalMemoryBacking_linux.ll
 ; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_read_str.ll
 ; openmpi/optimized/cb_config_list.ll
@@ -1702,6 +1715,7 @@ entry:
 ; openspiel/optimized/twixtboard.cc.ll
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-dso_dlfcn.ll
+; openssl/optimized/libcrypto-lib-err_prn.ll
 ; openssl/optimized/libcrypto-lib-http_client.ll
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
@@ -1713,6 +1727,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
+; openssl/optimized/libcrypto-shlib-err_prn.ll
 ; openssl/optimized/libcrypto-shlib-http_client.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
@@ -1728,6 +1743,7 @@ entry:
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; openssl/optimized/openssl-bin-rehash.ll
 ; openssl/optimized/openssl-bin-req.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; openusd/optimized/faceSurface.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -1830,7 +1846,9 @@ entry:
 ; redis/optimized/config.ll
 ; redis/optimized/fpconv.ll
 ; redis/optimized/redis-cli.ll
+; redis/optimized/server.ll
 ; redis/optimized/sort.ll
+; redis/optimized/zmalloc.ll
 ; rocksdb/optimized/file_indexer.cc.ll
 ; rocksdb/optimized/internal_stats.cc.ll
 ; ruby/optimized/handle.ll
@@ -1872,6 +1890,7 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
 ; slurm/optimized/acct_policy.ll
+; slurm/optimized/affinity.ll
 ; slurm/optimized/agent.ll
 ; slurm/optimized/assoc_mgr.ll
 ; slurm/optimized/auth_munge.ll
@@ -1884,6 +1903,7 @@ entry:
 ; slurm/optimized/hostlist.ll
 ; slurm/optimized/libfile_bcast_la-file_bcast.ll
 ; slurm/optimized/node_conf.ll
+; slurm/optimized/numa.ll
 ; slurm/optimized/opt.ll
 ; slurm/optimized/parse_config.ll
 ; slurm/optimized/proc_args.ll
@@ -2123,8 +2143,7 @@ entry:
   ret ptr %4
 }
 
-; 121 occurrences:
-; abc/optimized/dauMerge.c.ll
+; 83 occurrences:
 ; abc/optimized/extraUtilBitMatrix.c.ll
 ; arrow/optimized/dictionary.cc.ll
 ; arrow/optimized/record_batch.cc.ll
@@ -2138,17 +2157,11 @@ entry:
 ; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
-; clamav/optimized/dsig.c.ll
-; clamav/optimized/mbox.c.ll
-; cmake/optimized/inet.c.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
-; folly/optimized/File.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; git/optimized/apply.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; gromacs/optimized/biasgrid.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -2156,19 +2169,14 @@ entry:
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
 ; gromacs/optimized/selectioncollection.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
-; icu/optimized/pkgitems.ll
 ; ipopt/optimized/IpStdAugSystemSolver.ll
-; libuv/optimized/inet.c.ll
 ; llvm/optimized/LTO.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/c_api.cpp.ll
-; node/optimized/inet.ll
-; nori/optimized/nanovg.c.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -2186,7 +2194,6 @@ entry:
 ; opencv/optimized/motionSaliencyBinWangApr2014.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
-; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/permute_layer.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
@@ -2198,11 +2205,6 @@ entry:
 ; opencv/optimized/webcam_demo.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
-; openjdk/optimized/UnixOperatingSystem.ll
-; openjdk/optimized/bootstrapInfo.ll
-; openjdk/optimized/childproc.ll
-; openjdk/optimized/path_util.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openspiel/optimized/bargaining.cc.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/colored_trails.cc.ll
@@ -2210,17 +2212,8 @@ entry:
 ; openspiel/optimized/pathfinding.cc.ll
 ; openspiel/optimized/tarok.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openssl/optimized/libcrypto-lib-err_prn.ll
-; openssl/optimized/libcrypto-shlib-err_prn.ll
 ; openusd/optimized/patchTree.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/import2ozz_anim.cc.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/extension_set_heavy.cc.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/parse_context.cc.ll
-; protobuf/optimized/wire_format.cc.ll
 ; quantlib/optimized/cmswapcurvestate.ll
 ; quantlib/optimized/faurersg.ll
 ; quantlib/optimized/fdmextoujumpop.ll
@@ -2229,19 +2222,8 @@ entry:
 ; quantlib/optimized/lossdistribution.ll
 ; quantlib/optimized/nthorderderivativeop.ll
 ; quantlib/optimized/sparseilupreconditioner.ll
-; recastnavigation/optimized/RecastArea.cpp.ll
-; redis/optimized/server.ll
-; redis/optimized/zmalloc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; sentencepiece/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; slurm/optimized/acct_policy.ll
-; slurm/optimized/affinity.ll
-; slurm/optimized/numa.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
 ; tev/optimized/Ipc.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/blifparse.ll
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/rtlil.ll
@@ -2399,11 +2381,11 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 23
   %3 = ashr i64 %2, 63
-  %4 = getelementptr %struct.TCGTemp.2707225, ptr %0, i64 %3
+  %4 = getelementptr %struct.TCGTemp.2707191, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 96 occurrences:
+; 97 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaSpeedup.c.ll
@@ -2412,6 +2394,7 @@ entry:
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/UriRecompose.c.ll
+; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/data.cc.ll
 ; boost/optimized/init_from_settings.ll
 ; boost/optimized/record_ostream.ll
@@ -2505,11 +2488,11 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 27
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %struct._StackType.2710345, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct._StackType.2710311, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/chunked_array.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
@@ -2540,14 +2523,13 @@ entry:
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/reed_solomon_decoder.cpp.ll
-; pocketpy/optimized/vm.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw nuw %"class.std::vector.2828386", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::vector.2828352", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -2560,17 +2542,6 @@ entry:
   %2 = shl nuw i64 %1, 32
   %3 = ashr exact i64 %2, 30
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; opencv/optimized/fast_icp.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000005(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = ashr exact i64 %2, 30
-  %4 = getelementptr nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

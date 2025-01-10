@@ -26,16 +26,18 @@ func0000000000000061:                   # @func0000000000000061
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
+.LCPI4_0:
+	.long	238                             # 0xee
+func0000000000000041:                   # @func0000000000000041
+	vpmovqd	%ymm2, %xmm2
+	vpcmpeqd	.LCPI4_0(%rip){1to4}, %xmm1, %k1
+	vmovdqa32	%xmm0, %xmm2 {%k1}
+	vmovdqa	%xmm2, %xmm0
+	vzeroupper
+	retq
 func000000000000006c:                   # @func000000000000006c
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpmovqd	%ymm2, %xmm0 {%k1}
-	vzeroupper
-	retq
-func0000000000000041:                   # @func0000000000000041
-	vpmovqd	%ymm2, %xmm2
-	vptestnmd	%xmm1, %xmm1, %k1
-	vmovdqa32	%xmm0, %xmm2 {%k1}
-	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq
 func000000000000000a:                   # @func000000000000000a

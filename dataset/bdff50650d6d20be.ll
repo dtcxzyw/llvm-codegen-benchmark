@@ -33,8 +33,7 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; linux/optimized/trace_output.ll
+; 4 occurrences:
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; spike/optimized/csrs.ll

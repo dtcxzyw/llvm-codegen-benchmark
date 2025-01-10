@@ -162,7 +162,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; boost/optimized/alloc_lib.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -183,6 +183,7 @@ entry:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/block_crypto.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0__Slow.ll
+; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

@@ -33,6 +33,13 @@ func00000000000001e1:                   # @func00000000000001e1
 	cmpl	%eax, %edi
 	sete	%al
 	retq
+func0000000000000061:                   # @func0000000000000061
+	shrq	$3, %rsi
+	andl	$2147483644, %esi               # imm = 0x7FFFFFFC
+	incl	%edi
+	cmpl	%esi, %edi
+	sete	%al
+	retq
 func0000000000000204:                   # @func0000000000000204
 	shrq	$3, %rsi
 	andl	$-3, %esi

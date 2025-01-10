@@ -1,5 +1,5 @@
 
-%struct.atomic64_t.3537652 = type { i64 }
+%struct.atomic64_t.3537618 = type { i64 }
 
 ; 80 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -100,7 +100,7 @@ entry:
   %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = getelementptr %struct.atomic64_t.3537652, ptr %0, i64 %5
+  %6 = getelementptr %struct.atomic64_t.3537618, ptr %0, i64 %5
   ret ptr %6
 }
 

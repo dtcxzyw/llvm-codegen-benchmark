@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 125 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -53,7 +53,6 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CommentSema.cpp.ll
-; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll

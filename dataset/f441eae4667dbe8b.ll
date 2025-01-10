@@ -1,6 +1,6 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
 
 ; 1190 occurrences:
 ; actix-rs/optimized/17u9ijoz8shmpsbe.ll
@@ -1402,7 +1402,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %2, i32 0, i32 1
+  %3 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %2, i32 0, i32 1
   ret ptr %3
 }
 

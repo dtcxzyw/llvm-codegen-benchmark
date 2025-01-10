@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; boost/optimized/to_chars.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/io_pgtable.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll

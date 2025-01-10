@@ -1527,7 +1527,7 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; brotli/optimized/bit_cost.c.ll
 ; cpython/optimized/longobject.ll
@@ -1536,10 +1536,8 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dlansf.c.ll
 ; openjdk/optimized/psParallelCompact.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:

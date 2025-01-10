@@ -71,17 +71,15 @@ func0000000000000188:                   # @func0000000000000188
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	48                              # 0x30
+	.long	4286578688                      # 0xff800000
 .LCPI4_1:
-	.long	32                              # 0x20
-.LCPI4_2:
-	.quad	4                               # 0x4
+	.long	167772160                       # 0xa000000
 func0000000000000021:                   # @func0000000000000021
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqd	.LCPI4_1(%rip){1to4}, %xmm2, %k1
-	vpcmpeqq	.LCPI4_2(%rip){1to4}, %ymm1, %k1 {%k1}
+	vptestnmq	%ymm1, %ymm1, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

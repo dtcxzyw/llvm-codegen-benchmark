@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; openjdk/optimized/check_classname.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll

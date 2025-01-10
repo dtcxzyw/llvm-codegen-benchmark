@@ -18,6 +18,11 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$-2, %eax
 	addq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	39(%rsi), %rax
+	andq	$-16, %rax
+	addq	%rdi, %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	leaq	1(%rsi), %rcx
 	movabsq	$8589934576, %rax               # imm = 0x1FFFFFFF0
@@ -62,11 +67,6 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000009:                   # @func0000000000000009
 	leal	1(%rsi), %eax
-	addq	%rdi, %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	leaq	3(%rsi), %rax
-	andq	$-4, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006

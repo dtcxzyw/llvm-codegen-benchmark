@@ -1,9 +1,9 @@
 
-%"struct.drjit::half.2609360" = type { i16 }
-%"struct.OT::VarRegionAxis.2729548" = type { %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549" }
-%"struct.OT::HBFixed.163.2729549" = type { %"struct.OT::IntType.148.2729550" }
-%"struct.OT::IntType.148.2729550" = type { %struct.BEInt.149.2729551 }
-%struct.BEInt.149.2729551 = type { [2 x i8] }
+%"struct.drjit::half.2609327" = type { i16 }
+%"struct.OT::VarRegionAxis.2729514" = type { %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515", %"struct.OT::HBFixed.163.2729515" }
+%"struct.OT::HBFixed.163.2729515" = type { %"struct.OT::IntType.148.2729516" }
+%"struct.OT::IntType.148.2729516" = type { %struct.BEInt.149.2729517 }
+%struct.BEInt.149.2729517 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/regexec.ll
@@ -42,7 +42,7 @@ entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %6 = getelementptr nusw nuw %"struct.drjit::half.2609360", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.drjit::half.2609327", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %6 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729548", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729514", ptr %5, i64 %4
   ret ptr %6
 }
 

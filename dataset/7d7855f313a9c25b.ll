@@ -45,8 +45,7 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; cpython/optimized/pystrtod.ll
+; 1 occurrences:
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i64 %2) #0 {

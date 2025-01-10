@@ -65,11 +65,12 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; linux/optimized/flow_dissector.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
@@ -106,7 +107,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/pe.c.ll
@@ -126,6 +127,7 @@ entry:
 ; redis/optimized/zipmap.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/busmaster.c.ll
+; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-aprs.c.ll
 ; wireshark/optimized/packet-mp4ves.c.ll
 ; wireshark/optimized/packet-osi.c.ll

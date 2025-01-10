@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/_stat.ll
 ; git/optimized/fsck.ll
 ; linux/optimized/phy-c45.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
-; openusd/optimized/reconintra.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; ruby/optimized/regcomp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

@@ -1,5 +1,5 @@
 
-%"class.facebook::yoga::CompactValue.2705361" = type { i32 }
+%"class.facebook::yoga::CompactValue.2705327" = type { i32 }
 
 ; 4 occurrences:
 ; graphviz/optimized/input.c.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 3
   %3 = select i1 %2, i64 2, i64 0
-  %4 = getelementptr nusw nuw [9 x %"class.facebook::yoga::CompactValue.2705361"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [9 x %"class.facebook::yoga::CompactValue.2705327"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

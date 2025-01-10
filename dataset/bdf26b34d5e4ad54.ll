@@ -1,12 +1,12 @@
 
-%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
-%"struct.re2::PatchList.2601724" = type { i32, i32 }
-%"struct.Assimp::Unreal::Triangle.2823399" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
-%"class.llvm::SDUse.3146036" = type { %"class.llvm::SDValue.3146037", ptr, ptr, ptr }
-%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
-%struct.nfnl_callback.3545106 = type { ptr, ptr, i32, i16 }
-%union.IRIns.3680616 = type { %struct.GCRef.3680617 }
-%struct.GCRef.3680617 = type { i64 }
+%"struct.re2::Frag.2601690" = type <{ i32, %"struct.re2::PatchList.2601691", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601691" = type { i32, i32 }
+%"struct.Assimp::Unreal::Triangle.2823365" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
+%"class.llvm::SDUse.3146002" = type { %"class.llvm::SDValue.3146003", ptr, ptr, ptr }
+%"class.llvm::SDValue.3146003" = type <{ ptr, i32, [4 x i8] }>
+%struct.nfnl_callback.3545072 = type { ptr, ptr, i32, i16 }
+%union.IRIns.3680566 = type { %struct.GCRef.3680567 }
+%struct.GCRef.3680567 = type { i64 }
 
 ; 170 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -183,7 +183,7 @@
 define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.re2::Frag.2601723", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.re2::Frag.2601690", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -258,7 +258,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2823399", ptr %1, i64 %3
+  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2823365", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -273,7 +273,7 @@ entry:
 define i1 @func000000000000006c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %"class.llvm::SDUse.3146036", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.llvm::SDUse.3146002", ptr %1, i64 %3
   %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
@@ -350,7 +350,7 @@ entry:
 define i1 @func0000000000000081(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.nfnl_callback.3545106, ptr %1, i64 %3
+  %4 = getelementptr %struct.nfnl_callback.3545072, ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -363,7 +363,7 @@ entry:
 define i1 @func0000000000000068(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw nuw %union.IRIns.3680616, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %union.IRIns.3680566, ptr %1, i64 %3
   %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }

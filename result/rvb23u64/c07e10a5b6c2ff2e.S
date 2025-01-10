@@ -95,11 +95,6 @@ func000000000000007d:                   # @func000000000000007d
 	slli	a0, a0, 48
 	or	a0, a0, a1
 	ret
-func0000000000000078:                   # @func0000000000000078
-	or	a1, a1, a2
-	slli	a1, a1, 56
-	or	a0, a0, a1
-	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a2, a2, 36
 	or	a0, a0, a2
@@ -116,5 +111,11 @@ func0000000000000028:                   # @func0000000000000028
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	slli	a0, a0, 4
+	or	a0, a0, a1
+	ret
+func0000000000000078:                   # @func0000000000000078
+	slli	a2, a2, 48
+	or	a0, a0, a2
+	slli	a1, a1, 56
 	or	a0, a0, a1
 	ret

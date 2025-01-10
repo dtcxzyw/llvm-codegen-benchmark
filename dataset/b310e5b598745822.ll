@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2920887 = type { %union.Value.2920888, [1 x i32], i32 }
-%union.Value.2920888 = type { ptr }
+%struct.lua_TValue.2920853 = type { %union.Value.2920854, [1 x i32], i32 }
+%union.Value.2920854 = type { ptr }
 
 ; 6 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
@@ -49,7 +49,7 @@ entry:
   %4 = trunc i64 %3 to i32
   %5 = add i32 %1, %4
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %struct.lua_TValue.2920887, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct.lua_TValue.2920853, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -96,8 +96,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind

@@ -29,10 +29,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/CallLowering.cpp.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:

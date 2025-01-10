@@ -1,51 +1,50 @@
 
-%"struct.rocksdb::FSReadRequest.2629025" = type { i64, i64, ptr, %"class.rocksdb::Slice.2629015", %"class.rocksdb::IOStatus.2628992", %"class.std::unique_ptr.44.2629026" }
-%"class.rocksdb::Slice.2629015" = type { ptr, i64 }
-%"class.rocksdb::IOStatus.2628992" = type { %"class.rocksdb::Status.2628993" }
-%"class.rocksdb::Status.2628993" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2628994" }
-%"class.std::unique_ptr.2628994" = type { %"struct.std::__uniq_ptr_data.2628995" }
-%"struct.std::__uniq_ptr_data.2628995" = type { %"class.std::__uniq_ptr_impl.2628996" }
-%"class.std::__uniq_ptr_impl.2628996" = type { %"class.std::tuple.2628997" }
-%"class.std::tuple.2628997" = type { %"struct.std::_Tuple_impl.2628998" }
-%"struct.std::_Tuple_impl.2628998" = type { %"struct.std::_Head_base.1.2628999" }
-%"struct.std::_Head_base.1.2628999" = type { ptr }
-%"class.std::unique_ptr.44.2629026" = type { %"struct.std::__uniq_ptr_data.45.2629027" }
-%"struct.std::__uniq_ptr_data.45.2629027" = type { %"class.std::__uniq_ptr_impl.46.2629028" }
-%"class.std::__uniq_ptr_impl.46.2629028" = type { %"class.std::tuple.47.2629029" }
-%"class.std::tuple.47.2629029" = type { %"struct.std::_Tuple_impl.48.2629030" }
-%"struct.std::_Tuple_impl.48.2629030" = type { %"struct.std::_Tuple_impl.49.2629031", %"struct.std::_Head_base.51.2629032" }
-%"struct.std::_Tuple_impl.49.2629031" = type { %"struct.std::_Head_base.50.2629033" }
-%"struct.std::_Head_base.50.2629033" = type { %"class.std::function.2629034" }
-%"class.std::function.2629034" = type { %"class.std::_Function_base.2629035", ptr }
-%"class.std::_Function_base.2629035" = type { %"union.std::_Any_data.2629036", ptr }
-%"union.std::_Any_data.2629036" = type { %"union.std::_Nocopy_types.2629037" }
-%"union.std::_Nocopy_types.2629037" = type { { i64, i64 } }
-%"struct.std::_Head_base.51.2629032" = type { ptr }
-%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
-%"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943" = type <{ %"struct.mold::Atomic.446.2635944", %"struct.mold::elf::SectionFragment.2635938", i32, [4 x i8] }>
-%"struct.mold::Atomic.446.2635944" = type { %"struct.std::atomic.447.2635945" }
-%"struct.std::atomic.447.2635945" = type { %"struct.std::__atomic_base.448.2635946" }
-%"struct.std::__atomic_base.448.2635946" = type { ptr }
-%"struct.mold::elf::SectionFragment.2635938" = type <{ ptr, i32, %"struct.mold::Atomic.287.2635939", %"struct.mold::Atomic.2635940", [2 x i8] }>
-%"struct.mold::Atomic.287.2635939" = type { %"struct.std::atomic.94.2635941" }
-%"struct.std::atomic.94.2635941" = type { %"struct.std::__atomic_base.95.2635942" }
-%"struct.std::__atomic_base.95.2635942" = type { i8 }
-%"struct.mold::Atomic.2635940" = type { %"struct.std::atomic.100.2635845" }
-%"struct.std::atomic.100.2635845" = type { %"struct.std::__atomic_base.101.2635848" }
-%"struct.std::__atomic_base.101.2635848" = type { i8 }
-%struct.LangTag.2738648 = type { i32, i32 }
-%struct.Vec_Int_t_.2876211 = type { i32, i32, ptr }
-%struct.H5HF_indirect_filt_ent_t.3054550 = type { i64, i32 }
-%struct._wsp_pdu_t.3440967 = type { ptr, i32 }
+%"struct.rocksdb::FSReadRequest.2628992" = type { i64, i64, ptr, %"class.rocksdb::Slice.2628982", %"class.rocksdb::IOStatus.2628959", %"class.std::unique_ptr.44.2628993" }
+%"class.rocksdb::Slice.2628982" = type { ptr, i64 }
+%"class.rocksdb::IOStatus.2628959" = type { %"class.rocksdb::Status.2628960" }
+%"class.rocksdb::Status.2628960" = type { i8, i8, i8, i8, i8, i8, %"class.std::unique_ptr.2628961" }
+%"class.std::unique_ptr.2628961" = type { %"struct.std::__uniq_ptr_data.2628962" }
+%"struct.std::__uniq_ptr_data.2628962" = type { %"class.std::__uniq_ptr_impl.2628963" }
+%"class.std::__uniq_ptr_impl.2628963" = type { %"class.std::tuple.2628964" }
+%"class.std::tuple.2628964" = type { %"struct.std::_Tuple_impl.2628965" }
+%"struct.std::_Tuple_impl.2628965" = type { %"struct.std::_Head_base.1.2628966" }
+%"struct.std::_Head_base.1.2628966" = type { ptr }
+%"class.std::unique_ptr.44.2628993" = type { %"struct.std::__uniq_ptr_data.45.2628994" }
+%"struct.std::__uniq_ptr_data.45.2628994" = type { %"class.std::__uniq_ptr_impl.46.2628995" }
+%"class.std::__uniq_ptr_impl.46.2628995" = type { %"class.std::tuple.47.2628996" }
+%"class.std::tuple.47.2628996" = type { %"struct.std::_Tuple_impl.48.2628997" }
+%"struct.std::_Tuple_impl.48.2628997" = type { %"struct.std::_Tuple_impl.49.2628998", %"struct.std::_Head_base.51.2628999" }
+%"struct.std::_Tuple_impl.49.2628998" = type { %"struct.std::_Head_base.50.2629000" }
+%"struct.std::_Head_base.50.2629000" = type { %"class.std::function.2629001" }
+%"class.std::function.2629001" = type { %"class.std::_Function_base.2629002", ptr }
+%"class.std::_Function_base.2629002" = type { %"union.std::_Any_data.2629003", ptr }
+%"union.std::_Any_data.2629003" = type { %"union.std::_Nocopy_types.2629004" }
+%"union.std::_Nocopy_types.2629004" = type { { i64, i64 } }
+%"struct.std::_Head_base.51.2628999" = type { ptr }
+%"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007" = type <{ i32, [4 x i8], ptr, i64, i64, i8, [7 x i8] }>
+%"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635910" = type <{ %"struct.mold::Atomic.446.2635911", %"struct.mold::elf::SectionFragment.2635905", i32, [4 x i8] }>
+%"struct.mold::Atomic.446.2635911" = type { %"struct.std::atomic.447.2635912" }
+%"struct.std::atomic.447.2635912" = type { %"struct.std::__atomic_base.448.2635913" }
+%"struct.std::__atomic_base.448.2635913" = type { ptr }
+%"struct.mold::elf::SectionFragment.2635905" = type <{ ptr, i32, %"struct.mold::Atomic.287.2635906", %"struct.mold::Atomic.2635907", [2 x i8] }>
+%"struct.mold::Atomic.287.2635906" = type { %"struct.std::atomic.94.2635908" }
+%"struct.std::atomic.94.2635908" = type { %"struct.std::__atomic_base.95.2635909" }
+%"struct.std::__atomic_base.95.2635909" = type { i8 }
+%"struct.mold::Atomic.2635907" = type { %"struct.std::atomic.100.2635812" }
+%"struct.std::atomic.100.2635812" = type { %"struct.std::__atomic_base.101.2635815" }
+%"struct.std::__atomic_base.101.2635815" = type { i8 }
+%struct.LangTag.2738614 = type { i32, i32 }
+%struct.Vec_Int_t_.2876177 = type { i32, i32, ptr }
+%struct.H5HF_indirect_filt_ent_t.3054516 = type { i64, i32 }
+%struct._wsp_pdu_t.3440933 = type { ptr, i32 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cpython/optimized/file_tokenizer.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/myreadline.ll
-; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
@@ -287,8 +286,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::FSReadRequest.2629025", ptr %0, i64 %1
-  %4 = getelementptr %"struct.rocksdb::FSReadRequest.2629025", ptr %3, i64 %2, i32 4
+  %3 = getelementptr %"struct.rocksdb::FSReadRequest.2628992", ptr %0, i64 %1
+  %4 = getelementptr %"struct.rocksdb::FSReadRequest.2628992", ptr %3, i64 %2, i32 4
   ret ptr %4
 }
 
@@ -352,8 +351,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040", ptr %0, i64 %1
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630040", ptr %3, i64 %2, i32 5
+  %3 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007", ptr %0, i64 %1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::UniversalCompactionBuilder::SortedRun.2630007", ptr %3, i64 %2, i32 5
   ret ptr %4
 }
 
@@ -415,8 +414,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943", ptr %0, i64 %1
-  %4 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635943", ptr %3, i64 %2
+  %3 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635910", ptr %0, i64 %1
+  %4 = getelementptr %"struct.mold::ConcurrentMap<mold::elf::SectionFragment<mold::elf::LOONGARCH64>>::Entry.2635910", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
@@ -483,8 +482,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.LangTag.2738648, ptr %0, i64 %1
-  %4 = getelementptr %struct.LangTag.2738648, ptr %3, i64 %2, i32 1
+  %3 = getelementptr %struct.LangTag.2738614, ptr %0, i64 %1
+  %4 = getelementptr %struct.LangTag.2738614, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -722,8 +721,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.Vec_Int_t_.2876211, ptr %0, i64 %1
-  %4 = getelementptr %struct.Vec_Int_t_.2876211, ptr %3, i64 %2, i32 1
+  %3 = getelementptr %struct.Vec_Int_t_.2876177, ptr %0, i64 %1
+  %4 = getelementptr %struct.Vec_Int_t_.2876177, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -759,8 +758,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.H5HF_indirect_filt_ent_t.3054550, ptr %0, i64 %1
-  %4 = getelementptr %struct.H5HF_indirect_filt_ent_t.3054550, ptr %3, i64 %2, i32 1
+  %3 = getelementptr %struct.H5HF_indirect_filt_ent_t.3054516, ptr %0, i64 %1
+  %4 = getelementptr %struct.H5HF_indirect_filt_ent_t.3054516, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 
@@ -782,8 +781,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct._wsp_pdu_t.3440967, ptr %0, i64 %1
-  %4 = getelementptr %struct._wsp_pdu_t.3440967, ptr %3, i64 %2, i32 1
+  %3 = getelementptr %struct._wsp_pdu_t.3440933, ptr %0, i64 %1
+  %4 = getelementptr %struct._wsp_pdu_t.3440933, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 

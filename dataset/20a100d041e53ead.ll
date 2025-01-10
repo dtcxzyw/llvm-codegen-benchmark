@@ -1,5 +1,5 @@
 
-; 18907 occurrences:
+; 18904 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -3445,7 +3445,6 @@
 ; git/optimized/pack-write.ll
 ; git/optimized/packfile.ll
 ; git/optimized/pager.ll
-; git/optimized/parallel-checkout.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/path.ll
 ; git/optimized/pathspec.ll
@@ -3794,7 +3793,6 @@
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/deflate.c.ll
 ; gromacs/optimized/dens_filter.cpp.ll
-; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/dgemm.cpp.ll
 ; gromacs/optimized/dgemv.cpp.ll
 ; gromacs/optimized/dger.cpp.ll
@@ -5314,6 +5312,7 @@
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libjpeg-turbo/optimized/md5.c.ll
@@ -10021,7 +10020,6 @@
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; nuttx/optimized/lib_mbrtowc.c.ll
-; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_memsistream.c.ll
 ; nuttx/optimized/lib_memsostream.c.ll
 ; nuttx/optimized/lib_mktemp.c.ll
@@ -14037,7 +14035,6 @@
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/apprentice.ll
 ; php/optimized/array.ll
-; php/optimized/ascmagic.ll
 ; php/optimized/avifinfo.ll
 ; php/optimized/basic_functions.ll
 ; php/optimized/block_pass.ll
@@ -14493,7 +14490,6 @@
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
-; postgres/optimized/inet_net_pton.ll
 ; postgres/optimized/info.ll
 ; postgres/optimized/informix.ll
 ; postgres/optimized/inherit.ll
@@ -17655,6 +17651,7 @@
 ; wolfssl/optimized/server.c.ll
 ; wolfssl/optimized/sha.c.ll
 ; wolfssl/optimized/sha256.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/sha512.c.ll
 ; wolfssl/optimized/signature.c.ll
 ; wolfssl/optimized/sp_int.c.ll

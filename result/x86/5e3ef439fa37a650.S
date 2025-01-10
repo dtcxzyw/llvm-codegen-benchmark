@@ -67,10 +67,3 @@ func0000000000000066:                   # @func0000000000000066
 	cmpq	%rax, %rcx
 	setl	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movslq	%esi, %rax
-	movl	$1073741824, %ecx               # imm = 0x40000000
-	subq	%rdi, %rcx
-	cmpq	%rax, %rcx
-	setl	%al
-	retq

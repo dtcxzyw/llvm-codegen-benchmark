@@ -6,6 +6,13 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 32
 	vrsub.vx	v8, v8, a0
 	ret
+func0000000000000001:                   # @func0000000000000001
+	li	a0, 39
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vx	v8, v8, a0
+	vand.vi	v8, v8, -16
+	vrsub.vi	v8, v8, 0
+	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -31,14 +38,6 @@ func000000000000000d:                   # @func000000000000000d
 	vand.vx	v8, v8, a0
 	vrsub.vi	v8, v8, 0
 	ret
-func0000000000000001:                   # @func0000000000000001
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, -1
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
-	vrsub.vi	v8, v8, 0
-	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 4096
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -49,12 +48,6 @@ func000000000000000f:                   # @func000000000000000f
 	vand.vx	v8, v8, a0
 	bseti	a0, zero, 32
 	vrsub.vx	v8, v8, a0
-	ret
-func0000000000000009:                   # @func0000000000000009
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 15
-	vand.vi	v8, v8, -16
-	vrsub.vi	v8, v8, 0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, 1024

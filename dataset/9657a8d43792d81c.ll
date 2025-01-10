@@ -760,7 +760,7 @@ entry:
   ret i1 %4
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -801,6 +801,7 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lodepng/optimized/lodepng.cpp.ll
 ; lvgl/optimized/lv_bin_decoder.ll
 ; lvgl/optimized/lv_draw_sw_img.ll
 ; lvgl/optimized/lv_table.ll

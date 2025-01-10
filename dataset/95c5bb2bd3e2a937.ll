@@ -100,7 +100,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/net.ll
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind

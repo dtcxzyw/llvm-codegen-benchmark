@@ -1,5 +1,5 @@
 
-%"class.ue2::graph_detail::vertex_descriptor.3852076" = type { ptr, i64 }
+%"class.ue2::graph_detail::vertex_descriptor.3852026" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; velox/optimized/ComplexVector.cpp.ll
@@ -57,7 +57,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852076", ptr %1, i64 %3
+  %4 = getelementptr %"class.ue2::graph_detail::vertex_descriptor.3852026", ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }

@@ -31,7 +31,7 @@ func0000000000000005:                   # @func0000000000000005
 	.quad	63                              # 0x3f
 .LCPI3_1:
 	.quad	1                               # 0x1
-func0000000000000007:                   # @func0000000000000007
+func0000000000000006:                   # @func0000000000000006
 	vplzcntq	%ymm0, %ymm0
 	vpxorq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpbroadcastq	.LCPI3_1(%rip), %ymm1   # ymm1 = [1,1,1,1]

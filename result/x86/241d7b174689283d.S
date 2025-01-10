@@ -14,11 +14,6 @@ func0000000000000040:                   # @func0000000000000040
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	imull	$-1000, %edx, %eax              # imm = 0xFC18
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq
 func00000000000000ff:                   # @func00000000000000ff
 	imull	$1000, %edx, %eax               # imm = 0x3E8
 	addl	%edi, %eax

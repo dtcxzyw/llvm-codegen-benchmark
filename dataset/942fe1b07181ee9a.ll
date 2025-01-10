@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; openjdk/optimized/typeArrayKlass.ll
+; php/optimized/crypt_blowfish.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {

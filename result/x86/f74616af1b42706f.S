@@ -14,11 +14,3 @@ func0000000000000008:                   # @func0000000000000008
 	addq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rdi, %rax
-	shlq	$5, %rax
-	addq	$32, %rax
-	addq	$17, %rdi
-	addq	%rax, %rdi
-	setb	%al
-	retq

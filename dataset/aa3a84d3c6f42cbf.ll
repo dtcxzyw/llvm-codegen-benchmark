@@ -46,7 +46,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -62,7 +62,6 @@ entry:
 ; ncnn/optimized/scale_x86_fma.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:

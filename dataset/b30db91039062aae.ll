@@ -15,55 +15,12 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
-; assimp/optimized/zip.c.ll
-; clamav/optimized/XzDec.c.ll
-; hermes/optimized/zip.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; slurm/optimized/KangarooTwelve.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 258, %2
-  %4 = trunc nuw i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 3 occurrences:
-; abc/optimized/abcSop.c.ll
-; linux/optimized/devio.ll
-; linux/optimized/i915_gem_shmem.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000019(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sub nuw nsw i32 32, %2
-  %4 = trunc i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
 ; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 512, %2
-  %4 = trunc i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  %6 = zext i32 %5 to i64
-  ret i64 %6
-}
-
-; 1 occurrences:
-; linux/optimized/blk-map.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 4096, %2
   %4 = trunc i64 %1 to i32
   %5 = select i1 %0, i32 %4, i32 %3
   %6 = zext i32 %5 to i64

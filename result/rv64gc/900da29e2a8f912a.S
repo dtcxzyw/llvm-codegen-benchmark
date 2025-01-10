@@ -55,3 +55,10 @@ func000000000000000e:                   # @func000000000000000e
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
+func0000000000000009:                   # @func0000000000000009
+	flt.d	a1, fa0, fa1
+	flt.d	a2, fa1, fa0
+	or	a1, a1, a2
+	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret

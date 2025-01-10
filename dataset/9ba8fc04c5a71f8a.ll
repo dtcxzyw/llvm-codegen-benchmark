@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/archiveUtils.ll
@@ -18,7 +18,6 @@
 ; openjdk/optimized/xPageAllocator.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/xUncommitter.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; openjdk/optimized/zStat.ll

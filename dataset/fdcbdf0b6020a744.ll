@@ -1,5 +1,5 @@
 
-%struct.ZStoreBarrierEntry.2746792 = type { ptr, i64 }
+%struct.ZStoreBarrierEntry.2746758 = type { ptr, i64 }
 
 ; 2 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -38,7 +38,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -16
   %3 = lshr i64 %2, 4
-  %4 = getelementptr nusw nuw [32 x %struct.ZStoreBarrierEntry.2746792], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [32 x %struct.ZStoreBarrierEntry.2746758], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -34,6 +34,12 @@ func000000000000002f:                   # @func000000000000002f
 	imulq	%rcx, %rax
 	shlq	$3, %rax
 	retq
+func000000000000001c:                   # @func000000000000001c
+	movl	%esi, %ecx
+	movl	%edi, %eax
+	imulq	%rcx, %rax
+	shlq	$7, %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edi, %eax
 	imull	%esi, %eax

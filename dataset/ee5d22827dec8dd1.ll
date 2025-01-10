@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 171 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMerge.c.ll
@@ -80,6 +80,8 @@
 ; llvm/optimized/BypassSlowDivision.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
@@ -177,7 +179,7 @@ entry:
   ret i32 %3
 }
 
-; 390 occurrences:
+; 388 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -425,8 +427,6 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luajit/optimized/lj_ir.ll

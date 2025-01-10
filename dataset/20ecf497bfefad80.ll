@@ -1,5 +1,5 @@
 
-%"class.llvm::DenseMap.222.3201889" = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%"class.llvm::DenseMap.222.3201855" = type <{ ptr, i32, i32, i32, [4 x i8] }>
 
 ; 2 occurrences:
 ; qemu/optimized/util_cutils.c.ll
@@ -49,7 +49,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201889", ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201855", ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201889", ptr %0, i64 %5, i32 3
+  %6 = getelementptr nuw %"class.llvm::DenseMap.222.3201855", ptr %0, i64 %5, i32 3
   ret ptr %6
 }
 

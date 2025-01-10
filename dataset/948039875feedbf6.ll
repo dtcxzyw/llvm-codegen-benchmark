@@ -87,6 +87,18 @@ entry:
 }
 
 ; 2 occurrences:
+; llvm/optimized/SemaOverload.cpp.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i8 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp slt i8 %0, 1
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; Function Attrs: nounwind
@@ -94,6 +106,17 @@ define i1 @func0000000000000028(i8 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = icmp samesign ult i8 %0, 2
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; regex-rs/optimized/11vfjke4utuj478u.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i1 %1) #0 {
+entry:
+  %2 = xor i1 %1, true
+  %3 = icmp sgt i8 %0, -1
   %4 = or i1 %3, %2
   ret i1 %4
 }

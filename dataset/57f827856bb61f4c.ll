@@ -1,9 +1,9 @@
 
-%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
-%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
-%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
-%struct.aiFace.2825500 = type { i32, ptr }
-%struct.scsi_lun.3542285 = type { [8 x i8] }
+%struct.Entry.2663510 = type { %"class.mold::LittleEndian.2663445", %"class.mold::LittleEndian.2663445" }
+%"class.mold::LittleEndian.2663445" = type { [4 x i8] }
+%"struct.V3NumberData::ValueAndX.2750095" = type { i32, i32 }
+%struct.aiFace.2825466 = type { i32, ptr }
+%struct.scsi_lun.3542251 = type { [8 x i8] }
 
 ; 1 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
@@ -12,7 +12,7 @@ define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.Entry.2663543, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.Entry.2663510, ptr %1, i64 %4
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -84,7 +84,7 @@ define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %4
+  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2750095", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -134,7 +134,7 @@ define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.aiFace.2825466, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -174,7 +174,7 @@ define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.scsi_lun.3542285, ptr %1, i64 %4
+  %5 = getelementptr %struct.scsi_lun.3542251, ptr %1, i64 %4
   %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }

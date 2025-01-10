@@ -1,10 +1,12 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; cmake/optimized/lz_encoder.c.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; ruby/optimized/iseq.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i32 %1, i32 %2) #0 {
@@ -17,9 +19,24 @@ entry:
   ret i64 %7
 }
 
-; 9 occurrences:
+; 2 occurrences:
+; openssl/optimized/libcrypto-lib-bn_nist.ll
+; openssl/optimized/libcrypto-shlib-bn_nist.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = zext i32 %1 to i64
+  %5 = add nuw nsw i64 %4, %3
+  %6 = shl nuw nsw i64 %5, 1
+  %7 = add nsw i64 %0, %6
+  ret i64 %7
+}
+
+; 10 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; llvm/optimized/Preprocessor.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/libvduse.c.ll

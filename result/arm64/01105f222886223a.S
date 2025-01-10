@@ -25,15 +25,6 @@ func0000000000000086:                   // @func0000000000000086
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000106:                   // @func0000000000000106
-// %bb.0:                               // %entry
-	lsr	x8, x2, #3
-	cmp	w1, w8
-	csel	w8, w1, w8, lt
-	cmp	w0, w8
-	cset	w0, lt
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	lsr	x8, x2, #8
@@ -59,14 +50,5 @@ func000000000000008b:                   // @func000000000000008b
 	csel	w8, w8, w1, lt
 	cmp	w0, w8
 	cset	w0, ge
-	ret
-                                        // -- End function
-func000000000000010a:                   // @func000000000000010a
-// %bb.0:                               // %entry
-	lsr	x8, x2, #1
-	cmp	w1, w8
-	csel	w8, w1, w8, lt
-	cmp	w0, w8
-	cset	w0, gt
 	ret
                                         // -- End function

@@ -4,12 +4,6 @@ func000000000000000e:                   # @func000000000000000e
 	subb	%sil, %al
 	shrxq	%rax, %rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	andq	$-8, %rdi
-	movb	$26, %al
-	subb	%sil, %al
-	shrxq	%rax, %rdi, %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax

@@ -45,10 +45,12 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
 ; php/optimized/cdf_time.ll
 ; postgres/optimized/pgstat_io.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(i1 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -109,8 +111,13 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000318(i1 %0, i64 %1, i32 %2) #0 {
 entry:

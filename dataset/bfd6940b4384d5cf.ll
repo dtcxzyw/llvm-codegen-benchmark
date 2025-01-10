@@ -201,17 +201,6 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; wireshark/optimized/packet-pw-atm.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp samesign ugt i32 %1, 51
-  %3 = select i1 %2, i32 -52, i32 0
-  %4 = icmp eq i32 %3, %0
-  ret i1 %4
-}
-
 ; 3 occurrences:
 ; linux/optimized/intel_color.ll
 ; redis/optimized/db.ll

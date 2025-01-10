@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; freetype/optimized/pfr.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/slub.ll

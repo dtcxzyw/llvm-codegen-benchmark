@@ -1,5 +1,5 @@
 
-; 610 occurrences:
+; 609 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcFxu.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -564,7 +564,6 @@
 ; soc-simulator/optimized/verilated.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stockfish/optimized/bitboard.ll
 ; stockfish/optimized/position.ll

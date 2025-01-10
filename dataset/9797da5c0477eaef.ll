@@ -36,7 +36,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umax.i32(i32, i32) #1
 
-; 225 occurrences:
+; 226 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cgtAig.c.ll
@@ -108,6 +108,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; minetest/optimized/tool.cpp.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
+; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/intel64_map_region.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -187,7 +188,6 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; opencv/optimized/retinacolor.cpp.ll
-; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -216,6 +216,7 @@ declare i32 @llvm.umax.i32(i32, i32) #1
 ; raylib/optimized/rtextures.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
@@ -391,7 +392,7 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; openblas/optimized/dgelqf.c.ll
@@ -406,6 +407,7 @@ entry:
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
+; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:

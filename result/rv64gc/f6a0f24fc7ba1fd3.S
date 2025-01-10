@@ -72,10 +72,17 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000001:                   # @func0000000000000001
 	blt	a1, a2, .LBB10_2
 	mv	a1, a2
 .LBB10_2:                               # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+func0000000000000006:                   # @func0000000000000006
+	blt	a1, a2, .LBB11_2
+	mv	a1, a2
+.LBB11_2:                               # %entry
 	sub	a0, a0, a1
 	srli	a0, a0, 63
 	ret

@@ -1,7 +1,7 @@
 
-%struct.USBEndpoint.2708164 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708165 }
-%union.anon.0.2708165 = type { %struct.QTailQLink.2708166 }
-%struct.QTailQLink.2708166 = type { ptr, ptr }
+%struct.USBEndpoint.2708130 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708131 }
+%union.anon.0.2708131 = type { %struct.QTailQLink.2708132 }
+%struct.QTailQLink.2708132 = type { ptr, ptr }
 
 ; 8 occurrences:
 ; linux/optimized/blktrace.ll
@@ -39,7 +39,7 @@ entry:
   %3 = select i1 %2, i64 4432, i64 5032
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %struct.USBEndpoint.2708164, ptr %4, i64 %5
+  %6 = getelementptr %struct.USBEndpoint.2708130, ptr %4, i64 %5
   ret ptr %6
 }
 

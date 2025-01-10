@@ -695,6 +695,7 @@ entry:
 }
 
 ; 65 occurrences:
+; assimp/optimized/unzip.c.ll
 ; clamav/optimized/sis.c.ll
 ; folly/optimized/LogLevel.cpp.ll
 ; grpc/optimized/compression_filter.cc.ll
@@ -736,7 +737,6 @@ entry:
 ; regex-rs/optimized/4c1ya9idnqcg8t0f.ll
 ; ripgrep-rs/optimized/nfnpl33n8tyk5ff.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; wasmedge/optimized/executor.cpp.ll

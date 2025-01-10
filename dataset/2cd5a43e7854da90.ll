@@ -71,7 +71,7 @@ entry:
   ret i1 %7
 }
 
-; 146 occurrences:
+; 148 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/FBXExportProperty.cpp.ll
 ; boost/optimized/algorithm.ll
@@ -202,6 +202,8 @@ entry:
 ; libquic/optimized/ip_address.cc.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lua/optimized/lstrlib.ll
+; luau/optimized/lstrlib.cpp.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; opencv/optimized/contours_approx.cpp.ll

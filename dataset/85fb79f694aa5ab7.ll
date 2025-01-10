@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
@@ -26,6 +26,7 @@
 ; darktable/optimized/ThreefrDecoder.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; hermes/optimized/ScopeTransformations.cpp.ll
 ; linux/optimized/nfs4xdr.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
@@ -106,6 +107,19 @@ entry:
   ret i1 %7
 }
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = zext i32 %1 to i64
+  %5 = add nuw nsw i64 %4, %3
+  %6 = zext i32 %0 to i64
+  %7 = icmp ne i64 %5, %6
+  ret i1 %7
+}
+
 ; 3 occurrences:
 ; assimp/optimized/MD2Loader.cpp.ll
 ; assimp/optimized/MD3Loader.cpp.ll
@@ -121,13 +135,11 @@ entry:
   ret i1 %7
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:

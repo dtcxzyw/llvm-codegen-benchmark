@@ -24,14 +24,6 @@ func0000000000000181:                   // @func0000000000000181
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
-// %bb.0:                               // %entry
-	orr	w8, w1, w2
-	cmp	w0, #4
-	ccmp	w8, #4, #2, lo
-	cset	w0, lo
-	ret
-                                        // -- End function
 func000000000000058c:                   // @func000000000000058c
 // %bb.0:                               // %entry
 	orr	w8, w1, w2

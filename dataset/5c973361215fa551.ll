@@ -24,10 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/mshift.cpp.ll
 ; icu/optimized/unisetspan.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
@@ -38,10 +37,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; Function Attrs: nounwind

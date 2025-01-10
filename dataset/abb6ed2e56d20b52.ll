@@ -1,5 +1,5 @@
 
-%struct.TestObject.3895921 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
+%struct.TestObject.3895871 = type <{ i32, i8, [3 x i8], i64, i32, [4 x i8] }>
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -76,7 +76,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %struct.TestObject.3895921, ptr %1, i64 %3
+  %4 = getelementptr %struct.TestObject.3895871, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   %6 = icmp eq ptr %5, %0
   ret i1 %6

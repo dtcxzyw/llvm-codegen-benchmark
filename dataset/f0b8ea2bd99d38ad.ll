@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 21 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -14,9 +14,6 @@
 ; graphviz/optimized/xlabels.c.ll
 ; linux/optimized/tg3.ll
 ; openmpi/optimized/pmix_base_fns.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; php/optimized/hash_gost.ll
 ; spike/optimized/aes32esmi.ll
 ; spike/optimized/aes64dsm.ll

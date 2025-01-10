@@ -142,13 +142,12 @@ entry:
   ret i64 %4
 }
 
-; 106 occurrences:
+; 104 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/amapUniq.c.ll
-; abc/optimized/cuddTable.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
@@ -194,7 +193,6 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/posit.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/Any4Byte.ll

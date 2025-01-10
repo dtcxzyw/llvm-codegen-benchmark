@@ -22,28 +22,6 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/ucmstate.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 16777215
-  %3 = add nuw nsw i32 %0, %2
-  %4 = or disjoint i32 %3, -2147483648
-  ret i32 %4
-}
-
-; 1 occurrences:
-; meshlab/optimized/filter_colorproc.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65280
-  %3 = add nuw nsw i32 %0, %2
-  %4 = or i32 %3, -16777216
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

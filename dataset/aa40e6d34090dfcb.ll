@@ -1,5 +1,5 @@
 
-; 1394 occurrences:
+; 1391 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -303,7 +303,6 @@
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/TestHeap.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -335,7 +334,6 @@
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/bloom.ll
-; git/optimized/diffcore-delta.ll
 ; git/optimized/fast-import.ll
 ; git/optimized/graph.ll
 ; git/optimized/log.ll
@@ -1231,7 +1229,6 @@
 ; velox/optimized/md5.cpp.ll
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
 ; verilator/optimized/V3DfgPeephole.cpp.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
@@ -1402,7 +1399,7 @@ entry:
   ret ptr %3
 }
 
-; 1850 occurrences:
+; 1851 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -1889,6 +1886,7 @@ entry:
 ; g2o/optimized/sparse_helper.cpp.ll
 ; g2o/optimized/sparse_optimizer.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/read-cache.ll
 ; glog/optimized/logging.cc.ll
 ; glslang/optimized/SPVRemapper.cpp.ll

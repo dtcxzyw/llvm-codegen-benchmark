@@ -3,12 +3,12 @@
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add nsw i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw [11 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [11 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -24,8 +24,10 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/compress.c.ll
+; git/optimized/diff.ll
+; icu/optimized/package.ll
 ; icu/optimized/utext.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
@@ -34,19 +36,6 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw [258 x i32], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; git/optimized/diff.ll
-; icu/optimized/package.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw [71 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

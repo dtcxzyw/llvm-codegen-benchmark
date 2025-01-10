@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
-%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
-%struct.GISTENTRY.3654732 = type { i64, ptr, ptr, i16, i8 }
+%"class.hermes::vm::GCHermesValueBase.3085326" = type { %"class.hermes::vm::HermesValue32.3085325" }
+%"class.hermes::vm::HermesValue32.3085325" = type { i32 }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914" = type { i8, [7 x i8] }
+%struct.GISTENTRY.3654698 = type { i64, ptr, ptr, i16, i8 }
 
 ; 2 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
@@ -25,7 +25,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext nneg i16 %0 to i64
-  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085360", ptr %3, i64 %4
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085326", ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -123,7 +123,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext nneg i16 %0 to i64
-  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %3, i64 %4
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137914", ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -148,7 +148,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext i16 %0 to i64
-  %5 = getelementptr %struct.GISTENTRY.3654732, ptr %3, i64 %4
+  %5 = getelementptr %struct.GISTENTRY.3654698, ptr %3, i64 %4
   ret ptr %5
 }
 

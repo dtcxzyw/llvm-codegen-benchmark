@@ -56,13 +56,12 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/StandardShapes.cpp.ll
 ; hwloc/optimized/topology-synthetic.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/InterpBuiltin.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:

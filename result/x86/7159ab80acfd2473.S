@@ -22,9 +22,3 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%esi, %edi
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	testw	%dx, %dx
-	setne	%al
-	orl	%esi, %edi
-	andb	%dil, %al
-	retq

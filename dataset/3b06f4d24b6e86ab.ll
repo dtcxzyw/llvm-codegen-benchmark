@@ -1,6 +1,6 @@
 
-%"struct.Yosys::RTLIL::SigBit.3115142" = type <{ ptr, %union.anon.538.3115143, [4 x i8] }>
-%union.anon.538.3115143 = type { i32 }
+%"struct.Yosys::RTLIL::SigBit.3115108" = type <{ ptr, %union.anon.538.3115109, [4 x i8] }>
+%union.anon.538.3115109 = type { i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/pm_integer.ll
@@ -91,7 +91,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115142", ptr %0, i64 %1
+  %2 = getelementptr %"struct.Yosys::RTLIL::SigBit.3115108", ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   ret i64 %3
 }

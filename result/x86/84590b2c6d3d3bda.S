@@ -33,23 +33,9 @@ func0000000000000019:                   # @func0000000000000019
 	sarl	$31, %eax
 	andnl	%esi, %eax, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	addl	%edx, %esi
-	subl	%edi, %esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	(%rsi,%rdx), %ecx
 	subl	%edi, %ecx
 	movl	$-1, %eax
 	cmovnsl	%ecx, %eax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	addl	%edx, %esi
-	subl	%edi, %esi
-	movl	%esi, %eax
-	sarl	$31, %eax
-	andnl	%esi, %eax, %eax
 	retq

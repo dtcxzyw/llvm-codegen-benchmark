@@ -136,12 +136,11 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; linux/optimized/nlattr.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/verifier.ll
 ; slurm/optimized/gres_select_filter.ll
 ; sqlite/optimized/sqlite3.ll

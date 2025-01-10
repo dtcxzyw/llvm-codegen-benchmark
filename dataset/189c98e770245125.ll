@@ -1,5 +1,5 @@
 
-%struct.aiFace.2823001 = type { i32, ptr }
+%struct.aiFace.2822967 = type { i32, ptr }
 
 ; 6 occurrences:
 ; assimp/optimized/StandardShapes.cpp.ll
@@ -14,7 +14,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = udiv i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %struct.aiFace.2823001, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.aiFace.2822967, ptr %0, i64 %5
   ret ptr %6
 }
 

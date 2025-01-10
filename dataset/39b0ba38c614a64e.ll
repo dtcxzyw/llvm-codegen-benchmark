@@ -36,6 +36,18 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/spgdoinsert.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = icmp ult i32 %2, 2
+  %4 = icmp eq i16 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; redis/optimized/cli_common.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000048c(i16 %0, i32 %1) #0 {

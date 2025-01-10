@@ -22,16 +22,16 @@ func0000000000000061:                   // @func0000000000000061
 	csel	w0, w0, w2, eq
 	ret
                                         // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+	cmp	w1, #238
+	csel	w0, w0, w2, eq
+	ret
+                                        // -- End function
 func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	csel	w0, w2, w0, eq
-	ret
-                                        // -- End function
-func0000000000000041:                   // @func0000000000000041
-// %bb.0:                               // %entry
-	cmp	w1, #0
-	csel	w0, w0, w2, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

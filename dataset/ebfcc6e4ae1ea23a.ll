@@ -97,39 +97,6 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
-; gromacs/optimized/gmx_rms.cpp.ll
-; icu/optimized/dictbe.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
-; linux/optimized/bitmap.ll
-; opencv/optimized/geo_interpolation.cpp.ll
-; opencv/optimized/graphsegmentation.cpp.ll
-; opencv/optimized/hfs_core.cpp.ll
-; opencv/optimized/lsc.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
-; opencv/optimized/qualitybrisque.cpp.ll
-; opencv/optimized/scansegment.cpp.ll
-; opencv/optimized/slic.cpp.ll
-; openmpi/optimized/coll_basic_neighbor_allgather.ll
-; openmpi/optimized/coll_basic_neighbor_allgatherv.ll
-; openmpi/optimized/coll_basic_neighbor_alltoall.ll
-; openmpi/optimized/coll_basic_neighbor_alltoallv.ll
-; openmpi/optimized/coll_basic_neighbor_alltoallw.ll
-; openspiel/optimized/clobber.cc.ll
-; openspiel/optimized/twixtboard.cc.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; recastnavigation/optimized/Recast.cpp.ll
-; recastnavigation/optimized/RecastFilter.cpp.ll
-; ruby/optimized/bignum.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %0, %2
-  %4 = icmp sgt i32 %3, -1
-  ret i1 %4
-}
-
 ; 70 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; arrow/optimized/UriCommon.c.ll
@@ -354,10 +321,11 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; cpython/optimized/sixstep.ll
 ; git/optimized/diff.ll
+; git/optimized/remote-curl.ll
 ; libquic/optimized/mul.c.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
@@ -1000,7 +968,7 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; boost/optimized/core.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -1034,6 +1002,7 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; php/optimized/zend_language_scanner.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
@@ -1235,7 +1204,7 @@ entry:
   ret i1 %4
 }
 
-; 105 occurrences:
+; 106 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -1319,6 +1288,7 @@ entry:
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/Rewriter.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
+; slurm/optimized/KangarooTwelve.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -1448,10 +1418,13 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/ng_expr_info.cpp.ll
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; linux/optimized/seq_timer.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
@@ -1543,10 +1516,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; clamav/optimized/sis.c.ll
 ; hermes/optimized/JSArray.cpp.ll
+; hermes/optimized/zip.c.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; wireshark/optimized/packet-rlc-nr.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
@@ -1580,6 +1557,37 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, 0
+  ret i1 %4
+}
+
+; 21 occurrences:
+; gromacs/optimized/gmx_rms.cpp.ll
+; icu/optimized/dictbe.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
+; linux/optimized/bitmap.ll
+; opencv/optimized/geo_interpolation.cpp.ll
+; opencv/optimized/graphsegmentation.cpp.ll
+; opencv/optimized/hfs_core.cpp.ll
+; opencv/optimized/lsc.cpp.ll
+; opencv/optimized/oilpainting.cpp.ll
+; opencv/optimized/qualitybrisque.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; opencv/optimized/slic.cpp.ll
+; openmpi/optimized/coll_basic_neighbor_allgather.ll
+; openmpi/optimized/coll_basic_neighbor_allgatherv.ll
+; openmpi/optimized/coll_basic_neighbor_alltoall.ll
+; openmpi/optimized/coll_basic_neighbor_alltoallv.ll
+; openmpi/optimized/coll_basic_neighbor_alltoallw.ll
+; openspiel/optimized/clobber.cc.ll
+; openspiel/optimized/twixtboard.cc.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; recastnavigation/optimized/RecastFilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001aa(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
 

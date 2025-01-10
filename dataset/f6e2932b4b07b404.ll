@@ -30,8 +30,7 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
-; libzmq/optimized/xpub.cpp.ll
+; 5 occurrences:
 ; opencv/optimized/fast.cpp.ll
 ; openusd/optimized/pred_common.c.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll

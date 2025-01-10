@@ -1,5 +1,5 @@
 
-; 884 occurrences:
+; 883 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBlifMv.c.ll
@@ -593,7 +593,6 @@
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll

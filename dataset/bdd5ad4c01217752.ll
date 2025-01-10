@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; libquic/optimized/a_d2i_fp.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; sentencepiece/optimized/strutil.cc.ll

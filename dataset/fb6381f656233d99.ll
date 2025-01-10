@@ -1,15 +1,15 @@
 
-%"struct.OT::LongMetric.2730688" = type { %"struct.OT::IntType.2730689", %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.dt_iop_tonecurve_node_t.2873179 = type { float, float }
+%"struct.OT::LongMetric.2730654" = type { %"struct.OT::IntType.2730655", %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.dt_iop_tonecurve_node_t.2873145 = type { float, float }
 
 ; 11 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
@@ -27,8 +27,8 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730688"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.145.2730690", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730654"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.145.2730656", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -71,8 +71,8 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -84,7 +84,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %0, i64 0, i64 %1
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %0, i64 0, i64 %1
   %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
@@ -97,8 +97,8 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -119,8 +119,8 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -139,8 +139,8 @@ entry:
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -152,8 +152,8 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873179]], ptr %0, i64 0, i64 %1
-  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873179, ptr %4, i64 %3
+  %4 = getelementptr nusw [3 x [20 x %struct.dt_iop_tonecurve_node_t.2873145]], ptr %0, i64 0, i64 %1
+  %5 = getelementptr %struct.dt_iop_tonecurve_node_t.2873145, ptr %4, i64 %3
   ret ptr %5
 }
 

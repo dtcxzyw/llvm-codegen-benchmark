@@ -16,13 +16,15 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 6 occurrences:
+; 8 occurrences:
 ; linux/optimized/hvc_console.ll
 ; postgres/optimized/basebackup.ll
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/logtape.ll
 ; postgres/optimized/pqcomm.ll
 ; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/hw_usb_core.c.ll
+; qemu/optimized/hw_usb_dev-network.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:

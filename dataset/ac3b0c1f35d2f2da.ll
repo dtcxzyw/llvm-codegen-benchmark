@@ -234,8 +234,9 @@ entry:
   ret i64 %6
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; linux/optimized/page.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll

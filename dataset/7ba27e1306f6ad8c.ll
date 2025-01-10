@@ -34,9 +34,8 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
-; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:

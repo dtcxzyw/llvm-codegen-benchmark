@@ -1,19 +1,19 @@
+func0000000000000421:                   # @func0000000000000421
+	cmpl	$167772160, %edx                # imm = 0xA000000
+	sete	%al
+	testq	%rsi, %rsi
+	sete	%cl
+	andb	%al, %cl
+	cmpl	$1116, %edi                     # imm = 0x45C
+	sete	%al
+	andb	%cl, %al
+	retq
 func0000000000001021:                   # @func0000000000001021
 	cmpq	$-256, %rdx
 	setb	%cl
 	xorl	$1, %esi
 	xorl	$127, %edi
 	orl	%esi, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000421:                   # @func0000000000000421
-	cmpl	$250609664, %edx                # imm = 0xEF00000
-	sete	%al
-	cmpq	$16, %rsi
-	sete	%cl
-	andb	%al, %cl
-	cmpl	$8, %edi
 	sete	%al
 	andb	%cl, %al
 	retq

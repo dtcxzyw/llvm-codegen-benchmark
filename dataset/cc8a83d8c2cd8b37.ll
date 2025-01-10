@@ -1,5 +1,5 @@
 
-%struct.transaction.2705455 = type { i32, i16, i16, [8 x i8] }
+%struct.transaction.2705421 = type { i32, i16, i16, [8 x i8] }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_u2f-passthru.c.ll
@@ -10,7 +10,7 @@ entry:
   %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, 3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr [4 x %struct.transaction.2705455], ptr %0, i64 0, i64 %6
+  %7 = getelementptr [4 x %struct.transaction.2705421], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

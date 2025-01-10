@@ -1,24 +1,24 @@
 
-%union.yyalloc.2600711 = type { %union.YYSTYPE.2600710, [8 x i8] }
-%union.YYSTYPE.2600710 = type { i64 }
-%union.yyalloc.2601680 = type { %union.YYSTYPE.2601679, [8 x i8] }
-%union.YYSTYPE.2601679 = type { i64 }
-%class.btVector3.2818499 = type { [4 x float] }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586237" = type { %"class.std::function.3586238" }
-%"class.std::function.3586238" = type { %"class.std::_Function_base.3586239", ptr }
-%"class.std::_Function_base.3586239" = type { %"union.std::_Any_data.3586240", ptr }
-%"union.std::_Any_data.3586240" = type { %"union.std::_Nocopy_types.3586241" }
-%"union.std::_Nocopy_types.3586241" = type { { i64, i64 } }
-%"class.std::optional.29.3649763" = type { %"struct.std::_Optional_base.30.3649764" }
-%"struct.std::_Optional_base.30.3649764" = type { %"struct.std::_Optional_payload.32.3649765" }
-%"struct.std::_Optional_payload.32.3649765" = type { %"struct.std::_Optional_payload_base.base.34.3649766", [7 x i8] }
-%"struct.std::_Optional_payload_base.base.34.3649766" = type <{ %"union.std::_Optional_payload_base<ZXing::PointT<double>>::_Storage.3649767", i8 }>
-%"union.std::_Optional_payload_base<ZXing::PointT<double>>::_Storage.3649767" = type { %"struct.ZXing::PointT.3649753" }
-%"struct.ZXing::PointT.3649753" = type { double, double }
-%union.yyalloc.3651302 = type { %union.YYSTYPE.3651301 }
-%union.YYSTYPE.3651301 = type { i64 }
-%"class.cv::Point3_.3732153" = type { float, float, float }
+%union.yyalloc.2600678 = type { %union.YYSTYPE.2600677, [8 x i8] }
+%union.YYSTYPE.2600677 = type { i64 }
+%union.yyalloc.2601647 = type { %union.YYSTYPE.2601646, [8 x i8] }
+%union.YYSTYPE.2601646 = type { i64 }
+%class.btVector3.2818465 = type { [4 x float] }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586203" = type { %"class.std::function.3586204" }
+%"class.std::function.3586204" = type { %"class.std::_Function_base.3586205", ptr }
+%"class.std::_Function_base.3586205" = type { %"union.std::_Any_data.3586206", ptr }
+%"union.std::_Any_data.3586206" = type { %"union.std::_Nocopy_types.3586207" }
+%"union.std::_Nocopy_types.3586207" = type { { i64, i64 } }
+%"class.std::optional.29.3649729" = type { %"struct.std::_Optional_base.30.3649730" }
+%"struct.std::_Optional_base.30.3649730" = type { %"struct.std::_Optional_payload.32.3649731" }
+%"struct.std::_Optional_payload.32.3649731" = type { %"struct.std::_Optional_payload_base.base.34.3649732", [7 x i8] }
+%"struct.std::_Optional_payload_base.base.34.3649732" = type <{ %"union.std::_Optional_payload_base<ZXing::PointT<double>>::_Storage.3649733", i8 }>
+%"union.std::_Optional_payload_base<ZXing::PointT<double>>::_Storage.3649733" = type { %"struct.ZXing::PointT.3649719" }
+%"struct.ZXing::PointT.3649719" = type { double, double }
+%union.yyalloc.3651268 = type { %union.YYSTYPE.3651267 }
+%union.YYSTYPE.3651267 = type { i64 }
+%"class.cv::Point3_.3732103" = type { float, float, float }
 
 ; 6 occurrences:
 ; cpython/optimized/listobject.ll
@@ -30,8 +30,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.yyalloc.2600711, ptr %0, i64 %1
-  %4 = getelementptr %union.YYSTYPE.2600710, ptr %3, i64 %2
+  %3 = getelementptr %union.yyalloc.2600678, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.2600677, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -56,8 +56,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %union.yyalloc.2601680, ptr %0, i64 %1
-  %4 = getelementptr %union.YYSTYPE.2601679, ptr %3, i64 %2
+  %3 = getelementptr nusw %union.yyalloc.2601647, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.2601646, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -792,8 +792,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000006f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %class.btVector3.2818499, ptr %0, i64 %1
-  %4 = getelementptr %struct.btSpatialMotionVector.2818501, ptr %3, i64 %2
+  %3 = getelementptr nusw %class.btVector3.2818465, ptr %0, i64 %1
+  %4 = getelementptr %struct.btSpatialMotionVector.2818467, ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -935,8 +935,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586237", ptr %0, i64 %1
-  %4 = getelementptr %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586237", ptr %3, i64 %2
+  %3 = getelementptr nusw nuw %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586203", ptr %0, i64 %1
+  %4 = getelementptr %"struct.grpc_core::WorkSerializer::DispatchingWorkSerializer::CallbackWrapper.3586203", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }
@@ -946,8 +946,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000043(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::optional.29.3649763", ptr %0, i64 %1
-  %4 = getelementptr %"class.std::optional.29.3649763", ptr %3, i64 %2
+  %3 = getelementptr %"class.std::optional.29.3649729", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::optional.29.3649729", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -962,8 +962,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.yyalloc.3651302, ptr %0, i64 %1
-  %4 = getelementptr %union.YYSTYPE.3651301, ptr %3, i64 %2
+  %3 = getelementptr %union.yyalloc.3651268, ptr %0, i64 %1
+  %4 = getelementptr %union.YYSTYPE.3651267, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -988,7 +988,7 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"class.cv::Point3_.3732153", ptr %3, i64 %2
+  %4 = getelementptr %"class.cv::Point3_.3732103", ptr %3, i64 %2
   %5 = getelementptr i8, ptr %4, i64 124
   ret ptr %5
 }

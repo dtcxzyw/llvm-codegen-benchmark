@@ -46,6 +46,12 @@ func00000000000000f5:                   # @func00000000000000f5
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+func000000000000006c:                   # @func000000000000006c
+	zext.w	a2, a2
+	add.uw	a1, a1, a2
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
 func0000000000000174:                   # @func0000000000000174
 	sext.w	a2, a2
 	add.uw	a1, a1, a2

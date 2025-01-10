@@ -9,8 +9,7 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1
 	czero.eqz	a0, a0, a1
-	li	a1, 12
-	sll	a0, a1, a0
+	bset	a0, zero, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
 	sext.w	a1, a1

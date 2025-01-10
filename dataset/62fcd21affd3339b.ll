@@ -1,16 +1,16 @@
 
-%"class.std::map.2695442" = type { %"class.std::_Rb_tree.2695443" }
-%"class.std::_Rb_tree.2695443" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" }
-%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" = type { %"struct.std::_Rb_tree_key_compare.2695445", %"struct.std::_Rb_tree_header.2695446" }
-%"struct.std::_Rb_tree_key_compare.2695445" = type { %"struct.std::less.2695447" }
-%"struct.std::less.2695447" = type { i8 }
-%"struct.std::_Rb_tree_header.2695446" = type { %"struct.std::_Rb_tree_node_base.2695448", i64 }
-%"struct.std::_Rb_tree_node_base.2695448" = type { i32, ptr, ptr, ptr }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
-%struct.anon.1.3440501 = type { i32, i32, i32 }
-%struct.mi_page_s.3949290 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949291, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.3949291 = type { i8 }
+%"class.std::map.2695408" = type { %"class.std::_Rb_tree.2695409" }
+%"class.std::_Rb_tree.2695409" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695410" }
+%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695410" = type { %"struct.std::_Rb_tree_key_compare.2695411", %"struct.std::_Rb_tree_header.2695412" }
+%"struct.std::_Rb_tree_key_compare.2695411" = type { %"struct.std::less.2695413" }
+%"struct.std::less.2695413" = type { i8 }
+%"struct.std::_Rb_tree_header.2695412" = type { %"struct.std::_Rb_tree_node_base.2695414", i64 }
+%"struct.std::_Rb_tree_node_base.2695414" = type { i32, ptr, ptr, ptr }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
+%struct.anon.1.3440467 = type { i32, i32, i32 }
+%struct.mi_page_s.3949240 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.3949241, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.3949241 = type { i8 }
 
 ; 41 occurrences:
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
@@ -82,17 +82,18 @@ entry:
 define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nuw [12 x %"class.std::map.2695442"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 1, i32 0, i32 1
+  %4 = getelementptr nuw [12 x %"class.std::map.2695408"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 1, i32 0, i32 1
   ret ptr %4
 }
 
-; 84 occurrences:
+; 85 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/introspection_clahe.c.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
@@ -186,7 +187,7 @@ entry:
 define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = getelementptr nuw [0 x %struct.jv.2821743], ptr %0, i64 0, i64 %3, i32 4
+  %4 = getelementptr nuw [0 x %struct.jv.2821709], ptr %0, i64 0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -208,18 +209,6 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = getelementptr [0 x { { ptr, { { { [2 x i64] }, i64 }, i64, i64 } }, { { { { ptr, [1 x i64] } }, { ptr, [4 x i64] }, { ptr, [4 x i64] } } } }], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
-}
-
-; 2 occurrences:
-; darktable/optimized/introspection_clahe.c.ll
-; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = getelementptr nusw nuw [257 x i32], ptr %0, i64 0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  ret ptr %5
 }
 
 ; 6 occurrences:
@@ -286,7 +275,7 @@ entry:
 define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr [512 x %struct.anon.1.3440501], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [512 x %struct.anon.1.3440467], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -307,7 +296,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -317,7 +306,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr [513 x %struct.mi_page_s.3949290], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [513 x %struct.mi_page_s.3949240], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 

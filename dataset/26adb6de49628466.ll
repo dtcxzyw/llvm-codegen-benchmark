@@ -1,5 +1,5 @@
 
-; 4598 occurrences:
+; 4600 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1211,6 +1211,7 @@
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/gvdevice_xlib.c.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/heap.c.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/mainwindow.cpp.ll
@@ -2254,6 +2255,7 @@
 ; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/fitellipse.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
@@ -4607,7 +4609,7 @@ entry:
   ret i1 %4
 }
 
-; 904 occurrences:
+; 905 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -4903,6 +4905,7 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/sparse-index.ll
 ; git/optimized/xpatience.ll
+; graphviz/optimized/Multilevel.c.ll
 ; graphviz/optimized/SparseMatrix.c.ll
 ; graphviz/optimized/cluster.c.ll
 ; graphviz/optimized/clustering.c.ll
@@ -6940,7 +6943,7 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
@@ -6963,7 +6966,6 @@ entry:
 ; postgres/optimized/nodeHash.ll
 ; qemu/optimized/linux-user_strace.c.ll
 ; ruby/optimized/prism.ll
-; slurm/optimized/bitstring.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; velox/optimized/SsdFileTracker.cpp.ll
 ; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
@@ -7002,50 +7004,7 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
-; darktable/optimized/histogram.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_liquify.c.ll
-; faiss/optimized/sorting.cpp.ll
-; git/optimized/diff.ll
-; git/optimized/log.ll
-; git/optimized/record.ll
-; hdf5/optimized/H5FDsplitter.c.ll
-; linux/optimized/base.ll
-; linux/optimized/ds.ll
-; linux/optimized/ialloc.ll
-; linux/optimized/vars.ll
-; lz4/optimized/lz4hc.c.ll
-; memcached/optimized/memcached-slabs.ll
-; memcached/optimized/memcached_debug-slabs.ll
-; nix/optimized/lexer-tab.ll
-; opencv/optimized/onnx_importer.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
-; opencv/optimized/softmax.cpp.ll
-; opencv/optimized/trainFacemark.cpp.ll
-; openssl/optimized/libcrypto-lib-pmeth_lib.ll
-; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; php/optimized/snprintf.ll
-; php/optimized/spprintf.ll
-; qemu/optimized/gdbstub.c.ll
-; qemu/optimized/hw_vfio_pci.c.ll
-; re2/optimized/parse.cc.ll
-; ruby/optimized/bignum.ll
-; slurm/optimized/gres_select_filter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add i64 %0, -1
-  %4 = icmp ult i64 %3, %2
-  ret i1 %4
-}
-
-; 182 occurrences:
+; 181 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -7078,7 +7037,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_order.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/DirectMap.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
@@ -7237,6 +7195,46 @@ entry:
   ret i1 %4
 }
 
+; 30 occurrences:
+; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_liquify.c.ll
+; faiss/optimized/sorting.cpp.ll
+; git/optimized/diff.ll
+; git/optimized/log.ll
+; git/optimized/record.ll
+; hdf5/optimized/H5FDsplitter.c.ll
+; libwebp/optimized/alpha_dec.c.ll
+; linux/optimized/base.ll
+; linux/optimized/ds.ll
+; linux/optimized/ialloc.ll
+; linux/optimized/vars.ll
+; memcached/optimized/memcached-slabs.ll
+; memcached/optimized/memcached_debug-slabs.ll
+; nix/optimized/lexer-tab.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
+; opencv/optimized/softmax.cpp.ll
+; opencv/optimized/trainFacemark.cpp.ll
+; openssl/optimized/libcrypto-lib-pmeth_lib.ll
+; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
+; php/optimized/snprintf.ll
+; php/optimized/spprintf.ll
+; qemu/optimized/gdbstub.c.ll
+; qemu/optimized/hw_vfio_pci.c.ll
+; re2/optimized/parse.cc.ll
+; slurm/optimized/gres_select_filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add i64 %0, -1
+  %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
 ; 128 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
@@ -7375,7 +7373,7 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/openssl.c.ll
 ; curl/optimized/libcurl_la-openssl.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -7400,7 +7398,6 @@ entry:
 ; postgres/optimized/spgtextproc.ll
 ; postgres/optimized/varbit.ll
 ; protobuf/optimized/descriptor.cc.ll
-; slurm/optimized/bitstring.ll
 ; velox/optimized/CompactRowSerializer.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
@@ -7965,17 +7962,6 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = add nuw i64 %0, 1
   %4 = icmp ne i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; libwebp/optimized/alpha_dec.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add i64 %0, -1
-  %4 = icmp uge i64 %3, %2
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 689 occurrences:
+; 686 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcAig.c.ll
@@ -528,9 +528,6 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll

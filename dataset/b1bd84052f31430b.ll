@@ -1,7 +1,7 @@
 
-%"class.std::reference_wrapper.2873352" = type { ptr }
-%"class.draco::IndexType.132.3087969" = type { i32 }
-%struct.GCRef.3680589 = type { i64 }
+%"class.std::reference_wrapper.2873318" = type { ptr }
+%"class.draco::IndexType.132.3087935" = type { i32 }
+%struct.GCRef.3680539 = type { i64 }
 
 ; 91 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -107,15 +107,15 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000053(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp samesign ult i64 %2, 4
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw nuw [3 x %"class.std::reference_wrapper.2873352"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [3 x %"class.std::reference_wrapper.2873318"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; draco/optimized/obj_encoder.cc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -127,12 +127,13 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 2, i64 %1
-  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087969"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw [3 x %"class.draco::IndexType.132.3087935"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -172,7 +173,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -13
   %4 = select i1 %3, i64 35, i64 %1
-  %5 = getelementptr nusw nuw [38 x %struct.GCRef.3680589], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [38 x %struct.GCRef.3680539], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

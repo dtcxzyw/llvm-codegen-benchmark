@@ -16,11 +16,3 @@ func0000000000000001:                   # @func0000000000000001
 	vpmaxsd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI2_0:
-	.long	49                              # 0x31
-func0000000000000003:                   # @func0000000000000003
-	vpminsd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	retq

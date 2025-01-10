@@ -1,3 +1,10 @@
+func0000000000000024:                   # @func0000000000000024
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v12, v10
+	vor.vv	v8, v8, v12
+	li	a0, 128
+	vmsltu.vx	v0, v8, a0
+	ret
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
@@ -63,12 +70,6 @@ func0000000000000028:                   # @func0000000000000028
 	vor.vv	v8, v8, v12
 	li	a0, 16
 	vmsgtu.vx	v0, v8, a0
-	ret
-func0000000000000024:                   # @func0000000000000024
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
-	vmsleu.vi	v0, v8, 15
 	ret
 func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 8, e32, m2, ta, ma

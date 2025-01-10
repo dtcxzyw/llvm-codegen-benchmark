@@ -1,5 +1,5 @@
 
-; 273 occurrences:
+; 274 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/disasm.c.ll
@@ -194,6 +194,7 @@
 ; postgres/optimized/datetime.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/option.ll
+; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery_gist.ll
 ; postgres/optimized/xlogreader.ll
@@ -875,7 +876,7 @@ entry:
   ret i1 %3
 }
 
-; 86 occurrences:
+; 87 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -885,6 +886,7 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/package.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/udataswp.ll
 ; linux/optimized/fib_semantics.ll

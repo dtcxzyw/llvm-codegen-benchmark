@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 81 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/cvodes_bandpre.c.ll
@@ -51,6 +51,7 @@
 ; postgres/optimized/nodeIncrementalSort.ll
 ; postgres/optimized/postmaster.ll
 ; qemu/optimized/block_file-posix.c.ll
+; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/net_announce.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/pack.ll

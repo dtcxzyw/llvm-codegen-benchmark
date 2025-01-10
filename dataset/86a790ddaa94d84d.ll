@@ -123,6 +123,19 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; abc/optimized/mvcUtils.c.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %1, %2
+  %4 = icmp eq i32 %3, 0
+  %5 = icmp sgt i32 %0, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; Function Attrs: nounwind
@@ -157,18 +170,6 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = icmp samesign ugt i32 %0, 1
   %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp sgt i32 %0, 2
-  %6 = and i1 %4, %5
   ret i1 %6
 }
 

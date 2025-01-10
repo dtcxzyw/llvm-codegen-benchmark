@@ -1,4 +1,21 @@
 
+; 6 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openusd/optimized/openexr-c.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4286578688
+  %4 = icmp eq i64 %3, 167772160
+  %5 = and i1 %1, %4
+  %6 = and i1 %5, %0
+  ret i1 %6
+}
+
 ; 9 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -15,21 +32,6 @@ entry:
   %3 = and i64 %2, 536870911
   %4 = icmp ne i64 %3, 536870911
   %5 = and i1 %4, %1
-  %6 = and i1 %0, %5
-  ret i1 %6
-}
-
-; 4 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/internal_dwa.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 1
-  %4 = icmp eq i64 %3, 0
-  %5 = and i1 %1, %4
   %6 = and i1 %0, %5
   ret i1 %6
 }

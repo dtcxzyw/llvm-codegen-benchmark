@@ -14,9 +14,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 4 occurrences:
+; 5 occurrences:
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/rsa.c.ll
 ; node/optimized/libnode.string_decoder.ll
 ; Function Attrs: nounwind

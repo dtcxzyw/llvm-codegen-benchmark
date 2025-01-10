@@ -41,7 +41,9 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; cmake/optimized/openssl.c.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; linux/optimized/fault.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -50,10 +52,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 7
+  %3 = and i64 %2, 2147483648
   %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %0
-  %6 = icmp eq i32 %1, 0
+  %6 = icmp eq i32 %1, 1116
   %7 = and i1 %5, %6
   ret i1 %7
 }

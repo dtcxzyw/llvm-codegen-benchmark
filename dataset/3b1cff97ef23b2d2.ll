@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 362 occurrences:
+; 360 occurrences:
 ; abc/optimized/cuddCompose.c.ll
 ; abc/optimized/cuddMatMult.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
@@ -142,7 +142,6 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; hyperscan/optimized/ucp_table.cpp.ll
 ; icu/optimized/bmpset.ll
 ; jq/optimized/regcomp.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libquic/optimized/activity_tracker.cc.ll
@@ -315,7 +314,6 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; qemu/optimized/system_physmem.c.ll
 ; quantlib/optimized/seasonality.ll
 ; raylib/optimized/raudio.c.ll
-; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; slurm/optimized/gres_ctld.ll
@@ -419,7 +417,7 @@ entry:
   ret i64 %3
 }
 
-; 229 occurrences:
+; 232 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/rpo.c.ll
@@ -483,6 +481,7 @@ entry:
 ; jemalloc/optimized/arena.sym.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/d1_pkt.c.ll
 ; libquic/optimized/s3_pkt.c.ll
@@ -624,6 +623,7 @@ entry:
 ; qemu/optimized/net_net.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
+; raylib/optimized/rcore.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/listpack.ll
@@ -641,6 +641,7 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/wsgcrypt.c.ll
 ; wolfssl/optimized/hmac.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; zfp/optimized/encode4d.c.ll

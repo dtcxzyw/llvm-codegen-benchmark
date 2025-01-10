@@ -76,8 +76,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; cmake/optimized/lzma_decoder.c.ll
+; 3 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll

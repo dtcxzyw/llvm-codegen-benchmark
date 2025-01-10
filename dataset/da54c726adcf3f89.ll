@@ -1,5 +1,5 @@
 
-; 2424 occurrences:
+; 2423 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -592,7 +592,6 @@
 ; linux/optimized/blake2s.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/blk-lib.ll
-; linux/optimized/blk-map.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-rq-qos.ll
 ; linux/optimized/buffered-io.ll
@@ -2431,7 +2430,7 @@ entry:
   ret i32 %1
 }
 
-; 3530 occurrences:
+; 3528 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -3353,7 +3352,6 @@ entry:
 ; icu/optimized/unistr.ll
 ; icu/optimized/units_complexconverter.ll
 ; icu/optimized/uprntf_p.ll
-; icu/optimized/ushape.ll
 ; icu/optimized/ustdio.ll
 ; icu/optimized/ustrcase.ll
 ; icu/optimized/util.ll
@@ -4011,7 +4009,6 @@ entry:
 ; lvgl/optimized/lv_spinbox.ll
 ; lvgl/optimized/lv_table.ll
 ; lvgl/optimized/lv_theme_default.ll
-; lvgl/optimized/lv_tlsf.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -6596,7 +6593,6 @@ entry:
 ; linux/optimized/ccm.ll
 ; linux/optimized/d_path.ll
 ; linux/optimized/decompress_unlzma.ll
-; linux/optimized/devio.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/e1000_main.ll
@@ -8309,6 +8305,7 @@ entry:
 ; wireshark/optimized/packet-pcp.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-pgm.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
 ; wireshark/optimized/packet-rsvd.c.ll

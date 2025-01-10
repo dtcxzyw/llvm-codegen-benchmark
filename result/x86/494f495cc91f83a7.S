@@ -14,14 +14,6 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$1, %esi
 	addq	%rsi, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	movq	%rdi, %rax
-	movl	%edx, %ecx
-	xorl	%edx, %edx
-	divq	%rcx
-	andl	$1, %esi
-	addq	%rsi, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax
 	movl	%edx, %ecx

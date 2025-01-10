@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bdcDec.c.ll
+; abc/optimized/cnfMap.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll

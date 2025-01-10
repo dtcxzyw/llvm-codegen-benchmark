@@ -1,7 +1,7 @@
 
-%struct._zend_ssa_op.2790520 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
-%"class.pxrInternal_v0_24__pxrReserved__::GfMatrix4d.3402329" = type { %"class.pxrInternal_v0_24__pxrReserved__::GfMatrixData.3402330" }
-%"class.pxrInternal_v0_24__pxrReserved__::GfMatrixData.3402330" = type { [16 x double] }
+%struct._zend_ssa_op.2790486 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::GfMatrix4d.3402295" = type { %"class.pxrInternal_v0_24__pxrReserved__::GfMatrixData.3402296" }
+%"class.pxrInternal_v0_24__pxrReserved__::GfMatrixData.3402296" = type { [16 x double] }
 
 ; 55 occurrences:
 ; mold/optimized/arch-alpha.cc.ll
@@ -81,7 +81,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = ashr exact i64 %5, 5
-  %7 = getelementptr nusw %struct._zend_ssa_op.2790520, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct._zend_ssa_op.2790486, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -96,7 +96,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = ashr exact i64 %5, 2
-  %7 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::GfMatrix4d.3402329", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::GfMatrix4d.3402295", ptr %0, i64 %6
   ret ptr %7
 }
 

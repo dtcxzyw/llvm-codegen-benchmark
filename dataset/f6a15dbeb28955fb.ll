@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; clamav/optimized/filtering.c.ll
@@ -8,6 +8,7 @@
 ; curl/optimized/libcurl_la-cfilters.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
+; freetype/optimized/psaux.c.ll
 ; freetype/optimized/truetype.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -47,7 +48,7 @@ entry:
   ret i8 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/funcobject.ll
@@ -55,7 +56,6 @@ entry:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; freetype/optimized/psaux.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll

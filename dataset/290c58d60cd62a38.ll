@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -30,6 +30,7 @@
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Compression.cc.ll
+; php/optimized/pack.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/io.ll

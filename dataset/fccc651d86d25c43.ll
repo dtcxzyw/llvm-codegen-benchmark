@@ -1,7 +1,7 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
-%struct.anon.1.3440501 = type { i32, i32, i32 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
+%struct.anon.1.3440467 = type { i32, i32, i32 }
 
 ; 4 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -17,8 +17,7 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; abc/optimized/giaMinLut.c.ll
+; 4 occurrences:
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
 ; openssl/optimized/libssl-shlib-quic_record_rx.ll
@@ -70,7 +69,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [262144 x %struct.MinimapPixel.2700168], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -180,7 +179,8 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -212,7 +212,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, %3
-  %5 = getelementptr [512 x %struct.anon.1.3440501], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [512 x %struct.anon.1.3440467], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

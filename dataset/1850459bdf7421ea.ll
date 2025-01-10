@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/loopfilter.c.ll
 ; openusd/optimized/warped_motion.c.ll

@@ -1,5 +1,5 @@
 
-%struct.pgd_t.3558271 = type { i64 }
+%struct.pgd_t.3558237 = type { i64 }
 
 ; 77 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -96,7 +96,7 @@ define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 -1, %1
   %3 = and i64 %2, 272
-  %4 = getelementptr %struct.pgd_t.3558271, ptr %0, i64 %3
+  %4 = getelementptr %struct.pgd_t.3558237, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

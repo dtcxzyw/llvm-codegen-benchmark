@@ -35,12 +35,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmaxsd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000000d:                   # @func000000000000000d
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
 func000000000000000f:                   # @func000000000000000f
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2

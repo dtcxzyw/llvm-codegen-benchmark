@@ -1,7 +1,7 @@
 
-%"class.openvdb::v11_0::tree::NodeUnion.751.2717343" = type { %union.anon.752.2717344 }
-%union.anon.752.2717344 = type { ptr }
-%"struct.faiss::Node.3658936" = type { i32, float }
+%"class.openvdb::v11_0::tree::NodeUnion.751.2717309" = type { %union.anon.752.2717310 }
+%union.anon.752.2717310 = type { ptr }
+%"struct.faiss::Node.3658886" = type { i32, float }
 
 ; 2 occurrences:
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %4 = bitcast i32 %3 to float
   %5 = fcmp uge float %1, %4
   %6 = zext i1 %5 to i64
-  %7 = getelementptr nusw nuw %"class.openvdb::v11_0::tree::NodeUnion.751.2717343", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.openvdb::v11_0::tree::NodeUnion.751.2717309", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -26,7 +26,7 @@ entry:
   %4 = bitcast i32 %3 to float
   %5 = fcmp uge float %1, %4
   %6 = zext i1 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.faiss::Node.3658936", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.faiss::Node.3658886", ptr %0, i64 %6
   ret ptr %7
 }
 

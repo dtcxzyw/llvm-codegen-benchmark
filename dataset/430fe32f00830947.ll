@@ -1,5 +1,5 @@
 
-; 87 occurrences:
+; 91 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -10,6 +10,7 @@
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; flac/optimized/stream_encoder.c.ll
 ; git/optimized/diff.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; hdf5/optimized/H5EAhdr.c.ll
@@ -21,6 +22,7 @@
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; hyperscan/optimized/rose_build_width.cpp.ll
@@ -51,9 +53,11 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MappedBlockStream.cpp.ll
 ; llvm/optimized/MisExpect.cpp.ll
+; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
@@ -98,10 +102,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umax.i64(i64, i64) #1
 
-; 27 occurrences:
+; 30 occurrences:
 ; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; git/optimized/line-log.ll
 ; graphviz/optimized/htmltable.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/genion.cpp.ll
@@ -122,6 +127,8 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; openssl/optimized/libdefault-lib-drbg.ll
 ; postgres/optimized/regexec.ll
+; postgres/optimized/varlena.ll
+; qemu/optimized/block_cloop.c.ll
 ; qemu/optimized/block_parallels.c.ll
 ; vcpkg/optimized/commands.find.cpp.ll
 ; velox/optimized/StreamArena.cpp.ll

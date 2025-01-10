@@ -1,11 +1,11 @@
 
-%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
-%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
-%union.anon.2619710 = type { i64, [8 x i8] }
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
-%struct.GC_ms_entry.2705283 = type { ptr, %union.word_ptr_ao_u.2705284 }
-%union.word_ptr_ao_u.2705284 = type { i64 }
+%"struct.rocksdb::TableReader::Anchor.2619962" = type { %"class.std::__cxx11::basic_string.2619675", i64 }
+%"class.std::__cxx11::basic_string.2619675" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676", i64, %union.anon.2619677 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619676" = type { ptr }
+%union.anon.2619677 = type { i64, [8 x i8] }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
+%struct.GC_ms_entry.2705249 = type { ptr, %union.word_ptr_ao_u.2705250 }
+%union.word_ptr_ao_u.2705250 = type { i64 }
 
 ; 221 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
@@ -233,7 +233,7 @@
 define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -40
-  %2 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %0, i64 %.neg
+  %2 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619962", ptr %0, i64 %.neg
   ret ptr %2
 }
 
@@ -412,7 +412,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
-  %2 = getelementptr %"class.irr::core::vector3d.2691815", ptr %0, i64 %.neg
+  %2 = getelementptr %"class.irr::core::vector3d.2691781", ptr %0, i64 %.neg
   %3 = getelementptr i8, ptr %2, i64 96
   ret ptr %3
 }
@@ -426,7 +426,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %.neg = sdiv i64 %1, -2
-  %2 = getelementptr nusw %struct.GC_ms_entry.2705283, ptr %0, i64 %.neg
+  %2 = getelementptr nusw %struct.GC_ms_entry.2705249, ptr %0, i64 %.neg
   ret ptr %2
 }
 

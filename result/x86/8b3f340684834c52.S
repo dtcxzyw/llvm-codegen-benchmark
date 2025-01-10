@@ -11,9 +11,3 @@ func000000000000028a:                   # @func000000000000028a
 	testl	%edx, %edx
 	setg	%al
 	retq
-func00000000000002aa:                   # @func00000000000002aa
-	incl	%edx
-	imull	%esi, %edx
-	cmpl	%edi, %edx
-	setg	%al
-	retq

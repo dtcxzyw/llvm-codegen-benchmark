@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 80 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
@@ -74,7 +74,6 @@
 ; redis/optimized/object.ll
 ; redis/optimized/server.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
-; slurm/optimized/gres_filter.ll
 ; spike/optimized/htif_hexwriter.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll

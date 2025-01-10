@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/intel_cdclk.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {

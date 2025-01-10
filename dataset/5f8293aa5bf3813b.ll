@@ -1,34 +1,34 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
-%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
-%"struct.std::__1::pair.61.2609501" = type { %"class.std::__1::basic_string.2609306", %"class.mitsuba::ref.40.2609363" }
-%"class.std::__1::basic_string.2609306" = type { %"class.std::__1::__compressed_pair.25.2609307" }
-%"class.std::__1::__compressed_pair.25.2609307" = type { %"struct.std::__1::__compressed_pair_elem.26.2609308" }
-%"struct.std::__1::__compressed_pair_elem.26.2609308" = type { %"struct.std::__1::basic_string<char>::__rep.2609309" }
-%"struct.std::__1::basic_string<char>::__rep.2609309" = type { %union.anon.2609310 }
-%union.anon.2609310 = type { %"struct.std::__1::basic_string<char>::__long.2609311" }
-%"struct.std::__1::basic_string<char>::__long.2609311" = type { %struct.anon.27.2609312, i64, ptr }
-%struct.anon.27.2609312 = type { i64 }
-%"class.mitsuba::ref.40.2609363" = type { ptr }
-%"class.std::__cxx11::basic_string.2624164" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624165", i64, %union.anon.2624166 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624165" = type { ptr }
-%union.anon.2624166 = type { i64, [8 x i8] }
-%"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.3564145" = type { i32, i32, i32, %"class.cvc5::internal::NodeTemplate.223.3564113" }
-%"class.cvc5::internal::NodeTemplate.223.3564113" = type { ptr }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%"class.std::__1::tuple.2603517" = type { %"struct.std::__1::__tuple_impl.2603518" }
+%"struct.std::__1::__tuple_impl.2603518" = type <{ %"class.std::__1::__tuple_leaf.2603519", %"class.std::__1::__tuple_leaf.170.2603520", %"class.std::__1::__tuple_leaf.171.2603521", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603519" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603520" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::__tuple_leaf.171.2603521" = type { i8 }
+%"struct.std::__1::pair.61.2609468" = type { %"class.std::__1::basic_string.2609273", %"class.mitsuba::ref.40.2609330" }
+%"class.std::__1::basic_string.2609273" = type { %"class.std::__1::__compressed_pair.25.2609274" }
+%"class.std::__1::__compressed_pair.25.2609274" = type { %"struct.std::__1::__compressed_pair_elem.26.2609275" }
+%"struct.std::__1::__compressed_pair_elem.26.2609275" = type { %"struct.std::__1::basic_string<char>::__rep.2609276" }
+%"struct.std::__1::basic_string<char>::__rep.2609276" = type { %union.anon.2609277 }
+%union.anon.2609277 = type { %"struct.std::__1::basic_string<char>::__long.2609278" }
+%"struct.std::__1::basic_string<char>::__long.2609278" = type { %struct.anon.27.2609279, i64, ptr }
+%struct.anon.27.2609279 = type { i64 }
+%"class.mitsuba::ref.40.2609330" = type { ptr }
+%"class.std::__cxx11::basic_string.2624131" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624132", i64, %union.anon.2624133 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2624132" = type { ptr }
+%union.anon.2624133 = type { i64, [8 x i8] }
+%"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.3564111" = type { i32, i32, i32, %"class.cvc5::internal::NodeTemplate.223.3564079" }
+%"class.cvc5::internal::NodeTemplate.223.3564079" = type { ptr }
 
 ; 548 occurrences:
 ; abc/optimized/satSolver.c.ll
@@ -583,7 +583,7 @@
 define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr %"struct.std::pair.2601858", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.std::pair.2601825", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -617,11 +617,11 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr %"class.std::__1::tuple.2603550", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  %3 = getelementptr %"class.std::__1::tuple.2603517", ptr %0, i64 %2, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %3
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -717,7 +717,6 @@ entry:
 ; redis/optimized/ldo.ll
 ; redis/optimized/ltable.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; z3/optimized/euf_proof.cpp.ll
 ; z3/optimized/maxlex.cpp.ll
@@ -732,7 +731,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr nusw nuw %"struct.std::__1::pair.61.2609501", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::__1::pair.61.2609468", ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 32
   ret ptr %4
 }
@@ -750,7 +749,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = getelementptr %"class.std::__cxx11::basic_string.2624164", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::__cxx11::basic_string.2624131", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -256
   ret ptr %4
 }
@@ -819,7 +818,7 @@ entry:
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
-  %3 = getelementptr %"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.3564145", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"class.cvc5::internal::theory::eq::EqualityEngine::EqualityEdge.3564111", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

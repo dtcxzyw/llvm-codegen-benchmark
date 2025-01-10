@@ -101,10 +101,9 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
-; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000d61(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -116,7 +115,8 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; luau/optimized/lstrlib.cpp.ll
 ; nori/optimized/block.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; sundials/optimized/cvode.c.ll

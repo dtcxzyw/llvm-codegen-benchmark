@@ -1,5 +1,5 @@
 
-; 1260 occurrences:
+; 1261 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBarBuf.c.ll
 ; abc/optimized/abcCut.c.ll
@@ -259,6 +259,7 @@
 ; icu/optimized/ubidi.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ucnv_u7.ll
+; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/uregex.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; jq/optimized/gb18030.ll

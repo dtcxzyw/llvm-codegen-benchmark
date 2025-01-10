@@ -1,42 +1,42 @@
 
-%"struct.rocksdb::TypeUnit.2629811" = type { %"class.std::__cxx11::basic_string.2629794", i8, i64, i64, i64, i32, %"class.std::map.138.2629812" }
-%"class.std::__cxx11::basic_string.2629794" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629795", i64, %union.anon.3.2629796 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629795" = type { ptr }
-%union.anon.3.2629796 = type { i64, [8 x i8] }
-%"class.std::map.138.2629812" = type { %"class.std::_Rb_tree.139.2629813" }
-%"class.std::_Rb_tree.139.2629813" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, rocksdb::TraceStats>, std::_Select1st<std::pair<const unsigned int, rocksdb::TraceStats>>, std::less<unsigned int>>::_Rb_tree_impl.2629814" }
-%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, rocksdb::TraceStats>, std::_Select1st<std::pair<const unsigned int, rocksdb::TraceStats>>, std::less<unsigned int>>::_Rb_tree_impl.2629814" = type { %"struct.std::_Rb_tree_key_compare.63.2629815", %"struct.std::_Rb_tree_header.2629786" }
-%"struct.std::_Rb_tree_key_compare.63.2629815" = type { %"struct.std::less.64.2629816" }
-%"struct.std::less.64.2629816" = type { i8 }
-%"struct.std::_Rb_tree_header.2629786" = type { %"struct.std::_Rb_tree_node_base.2629788", i64 }
-%"struct.std::_Rb_tree_node_base.2629788" = type { i32, ptr, ptr, ptr }
-%struct._Point.2744407 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::TfToken.3395550" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3395551" }
-%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3395551" = type { ptr }
-%struct.drm_vblank_crtc.3536488 = type { ptr, %struct.wait_queue_head.3536489, %struct.timer_list.3536490, %struct.seqlock_t.3536491, %struct.atomic64_t.3536492, i64, %struct.atomic_t.3536480, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3536493, i8, ptr, %struct.list_head.3536494, %struct.wait_queue_head.3536489 }
-%struct.timer_list.3536490 = type { %struct.hlist_node.3536495, i64, ptr, i32 }
-%struct.hlist_node.3536495 = type { ptr, ptr }
-%struct.seqlock_t.3536491 = type { %struct.seqcount_spinlock.3536496, %struct.spinlock.3536497 }
-%struct.seqcount_spinlock.3536496 = type { %struct.seqcount.3536498 }
-%struct.seqcount.3536498 = type { i32 }
-%struct.spinlock.3536497 = type { %union.anon.0.3536499 }
-%union.anon.0.3536499 = type { %struct.raw_spinlock.3536500 }
-%struct.raw_spinlock.3536500 = type { %struct.qspinlock.3536501 }
-%struct.qspinlock.3536501 = type { %union.anon.1.3536502 }
-%union.anon.1.3536502 = type { %struct.atomic_t.3536480 }
-%struct.atomic64_t.3536492 = type { i64 }
-%struct.atomic_t.3536480 = type { i32 }
-%struct.drm_display_mode.3536493 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3536494, [32 x i8], i32, i32 }
-%struct.list_head.3536494 = type { ptr, ptr }
-%struct.wait_queue_head.3536489 = type { %struct.spinlock.3536497, %struct.list_head.3536494 }
-%struct.calipso_map_cache_bkt.3557766 = type { %struct.spinlock.3557760, i32, %struct.list_head.3557759 }
-%struct.spinlock.3557760 = type { %union.anon.3557761 }
-%union.anon.3557761 = type { %struct.raw_spinlock.3557762 }
-%struct.raw_spinlock.3557762 = type { %struct.qspinlock.3557763 }
-%struct.qspinlock.3557763 = type { %union.anon.0.3557764 }
-%union.anon.0.3557764 = type { %struct.atomic_t.3557765 }
-%struct.atomic_t.3557765 = type { i32 }
-%struct.list_head.3557759 = type { ptr, ptr }
+%"struct.rocksdb::TypeUnit.2629778" = type { %"class.std::__cxx11::basic_string.2629761", i8, i64, i64, i64, i32, %"class.std::map.138.2629779" }
+%"class.std::__cxx11::basic_string.2629761" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629762", i64, %union.anon.3.2629763 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2629762" = type { ptr }
+%union.anon.3.2629763 = type { i64, [8 x i8] }
+%"class.std::map.138.2629779" = type { %"class.std::_Rb_tree.139.2629780" }
+%"class.std::_Rb_tree.139.2629780" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, rocksdb::TraceStats>, std::_Select1st<std::pair<const unsigned int, rocksdb::TraceStats>>, std::less<unsigned int>>::_Rb_tree_impl.2629781" }
+%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, rocksdb::TraceStats>, std::_Select1st<std::pair<const unsigned int, rocksdb::TraceStats>>, std::less<unsigned int>>::_Rb_tree_impl.2629781" = type { %"struct.std::_Rb_tree_key_compare.63.2629782", %"struct.std::_Rb_tree_header.2629753" }
+%"struct.std::_Rb_tree_key_compare.63.2629782" = type { %"struct.std::less.64.2629783" }
+%"struct.std::less.64.2629783" = type { i8 }
+%"struct.std::_Rb_tree_header.2629753" = type { %"struct.std::_Rb_tree_node_base.2629755", i64 }
+%"struct.std::_Rb_tree_node_base.2629755" = type { i32, ptr, ptr, ptr }
+%struct._Point.2744373 = type { i32, i32, i8, ptr, ptr, ptr, i8, ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::TfToken.3395516" = type { %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3395517" }
+%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3395517" = type { ptr }
+%struct.drm_vblank_crtc.3536454 = type { ptr, %struct.wait_queue_head.3536455, %struct.timer_list.3536456, %struct.seqlock_t.3536457, %struct.atomic64_t.3536458, i64, %struct.atomic_t.3536446, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3536459, i8, ptr, %struct.list_head.3536460, %struct.wait_queue_head.3536455 }
+%struct.timer_list.3536456 = type { %struct.hlist_node.3536461, i64, ptr, i32 }
+%struct.hlist_node.3536461 = type { ptr, ptr }
+%struct.seqlock_t.3536457 = type { %struct.seqcount_spinlock.3536462, %struct.spinlock.3536463 }
+%struct.seqcount_spinlock.3536462 = type { %struct.seqcount.3536464 }
+%struct.seqcount.3536464 = type { i32 }
+%struct.spinlock.3536463 = type { %union.anon.0.3536465 }
+%union.anon.0.3536465 = type { %struct.raw_spinlock.3536466 }
+%struct.raw_spinlock.3536466 = type { %struct.qspinlock.3536467 }
+%struct.qspinlock.3536467 = type { %union.anon.1.3536468 }
+%union.anon.1.3536468 = type { %struct.atomic_t.3536446 }
+%struct.atomic64_t.3536458 = type { i64 }
+%struct.atomic_t.3536446 = type { i32 }
+%struct.drm_display_mode.3536459 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3536460, [32 x i8], i32, i32 }
+%struct.list_head.3536460 = type { ptr, ptr }
+%struct.wait_queue_head.3536455 = type { %struct.spinlock.3536463, %struct.list_head.3536460 }
+%struct.calipso_map_cache_bkt.3557732 = type { %struct.spinlock.3557726, i32, %struct.list_head.3557725 }
+%struct.spinlock.3557726 = type { %union.anon.3557727 }
+%union.anon.3557727 = type { %struct.raw_spinlock.3557728 }
+%struct.raw_spinlock.3557728 = type { %struct.qspinlock.3557729 }
+%struct.qspinlock.3557729 = type { %union.anon.0.3557730 }
+%union.anon.0.3557730 = type { %struct.atomic_t.3557731 }
+%struct.atomic_t.3557731 = type { i32 }
+%struct.list_head.3557725 = type { ptr, ptr }
 
 ; 94 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
@@ -137,7 +137,7 @@
 define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw %"struct.rocksdb::TypeUnit.2629811", ptr %1, i64 %3, i32 6, i32 0, i32 0, i32 1, i32 0, i32 1
+  %4 = getelementptr nuw %"struct.rocksdb::TypeUnit.2629778", ptr %1, i64 %3, i32 6, i32 0, i32 0, i32 1, i32 0, i32 1
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -241,7 +241,7 @@ entry:
   ret i1 %6
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; curl/optimized/libcurl_la-tftp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -254,6 +254,7 @@ entry:
 ; lz4/optimized/lz4.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; openusd/optimized/lz4.cpp.ll
+; postgres/optimized/predicate.ll
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
@@ -299,19 +300,18 @@ entry:
 define i1 @func00000000000003c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._Point.2744407, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct._Point.2744373, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -56
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/unsp.c.ll
 ; freetype/optimized/ftstroke.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -533,11 +533,12 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/nf_conntrack_irc.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; postgres/optimized/oracle_compat.ll
+; postgres/optimized/predicate.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000208(ptr %0, ptr %1, i32 %2) #0 {
@@ -558,7 +559,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::TfToken.3395550", ptr %1, i64 %3
+  %4 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::TfToken.3395516", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   %6 = icmp eq ptr %0, %5
   ret i1 %6
@@ -571,7 +572,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.drm_vblank_crtc.3536488, ptr %1, i64 %3, i32 16
+  %4 = getelementptr %struct.drm_vblank_crtc.3536454, ptr %1, i64 %3, i32 16
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -596,7 +597,7 @@ entry:
 define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.calipso_map_cache_bkt.3557766, ptr %1, i64 %3, i32 2
+  %4 = getelementptr %struct.calipso_map_cache_bkt.3557732, ptr %1, i64 %3, i32 2
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }

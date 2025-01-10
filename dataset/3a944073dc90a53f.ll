@@ -191,7 +191,7 @@ entry:
   ret i64 %3
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/obmalloc.ll
 ; jemalloc/optimized/arena.ll
@@ -211,6 +211,7 @@ entry:
 ; linux/optimized/read.ll
 ; linux/optimized/write.ll
 ; llvm/optimized/SROA.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/jemalloc.ll

@@ -1,11 +1,11 @@
 
-%"class.asmjit::_abi_1_10::Operand.2607746" = type { %"struct.asmjit::_abi_1_10::Operand_.2607747" }
-%"struct.asmjit::_abi_1_10::Operand_.2607747" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607743", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2607743" = type { i32 }
-%"struct.Luau::BytecodeBuilder::UserdataType.2931440" = type <{ %"class.std::__cxx11::basic_string.2931425", i32, i8, [3 x i8] }>
-%"class.std::__cxx11::basic_string.2931425" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2931430", i64, %union.anon.2931431 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2931430" = type { ptr }
-%union.anon.2931431 = type { i64, [8 x i8] }
+%"class.asmjit::_abi_1_10::Operand.2607713" = type { %"struct.asmjit::_abi_1_10::Operand_.2607714" }
+%"struct.asmjit::_abi_1_10::Operand_.2607714" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2607710", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2607710" = type { i32 }
+%"struct.Luau::BytecodeBuilder::UserdataType.2931406" = type <{ %"class.std::__cxx11::basic_string.2931391", i32, i8, [3 x i8] }>
+%"class.std::__cxx11::basic_string.2931391" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2931396", i64, %union.anon.2931397 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2931396" = type { ptr }
+%union.anon.2931397 = type { i64, [8 x i8] }
 
 ; 18 occurrences:
 ; flac/optimized/cuesheet.c.ll
@@ -32,7 +32,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::Operand.2607746", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::Operand.2607713", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -81,7 +81,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967232
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"struct.Luau::BytecodeBuilder::UserdataType.2931440", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.Luau::BytecodeBuilder::UserdataType.2931406", ptr %0, i64 %4
   ret ptr %5
 }
 

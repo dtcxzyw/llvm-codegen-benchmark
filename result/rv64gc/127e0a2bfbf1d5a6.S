@@ -39,6 +39,3 @@ func00000000000000e1:                   # @func00000000000000e1
 	andi	a0, a0, 4
 	seqz	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
-	li	a0, 0
-	ret

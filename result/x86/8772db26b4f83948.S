@@ -5,14 +5,14 @@ func0000000000000005:                   # @func0000000000000005
 	cmovbq	%rcx, %rsi
 	subq	%rsi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000008:                   # @func0000000000000008
 	movq	%rdi, %rax
 	movl	%edx, %ecx
 	cmpq	%rcx, %rsi
 	cmovbq	%rsi, %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
 	movl	%edx, %ecx
 	cmpq	%rcx, %rsi

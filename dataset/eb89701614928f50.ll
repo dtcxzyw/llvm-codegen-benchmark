@@ -1,5 +1,5 @@
 
-%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677" = type { i32, i32, i32, i32 }
+%"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768643" = type { i32, i32, i32, i32 }
 
 ; 27 occurrences:
 ; llvm/optimized/ClangASTPropertiesEmitter.cpp.ll
@@ -60,7 +60,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = getelementptr nusw nuw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768677", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.WasmEdge::AST::Instruction::JumpDescriptor.2768643", ptr %0, i64 %4
   ret ptr %5
 }
 

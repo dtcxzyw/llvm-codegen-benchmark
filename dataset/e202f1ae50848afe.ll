@@ -3444,7 +3444,7 @@ entry:
   ret i1 %2
 }
 
-; 1037 occurrences:
+; 1035 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -3746,7 +3746,6 @@ entry:
 ; llvm/optimized/ProfileSummaryInfo.cpp.ll
 ; llvm/optimized/RegAllocScore.cpp.ll
 ; lua/optimized/lmathlib.ll
-; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
@@ -4374,7 +4373,6 @@ entry:
 ; redis/optimized/t_zset.ll
 ; redis/optimized/util.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/complex.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/nextafter.ll
 ; ruby/optimized/numeric.ll
@@ -4489,7 +4487,7 @@ entry:
   ret i1 %2
 }
 
-; 129 occurrences:
+; 130 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/solver.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -4513,6 +4511,7 @@ entry:
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; graphviz/optimized/QuadTree.c.ll
 ; graphviz/optimized/arrows.c.ll
+; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/hedges.c.ll
 ; graphviz/optimized/info.c.ll
 ; graphviz/optimized/legal.c.ll
@@ -4626,7 +4625,7 @@ entry:
   ret i1 %2
 }
 
-; 349 occurrences:
+; 350 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddAddApply.c.ll
 ; abc/optimized/epd.c.ll
@@ -4764,6 +4763,7 @@ entry:
 ; llvm/optimized/RegAllocScore.cpp.ll
 ; llvm/optimized/X86FixupInstTuning.cpp.ll
 ; lua/optimized/lauxlib.ll
+; lua/optimized/ltable.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
@@ -4988,6 +4988,7 @@ entry:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; abc/optimized/cmdApi.c.ll
 ; abc/optimized/cuddAddApply.c.ll
 ; abc/optimized/cuddSubsetHB.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -5334,7 +5335,6 @@ entry:
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/gnom.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/healpix.cpp.ll
 ; proj/optimized/isea.cpp.ll
@@ -5530,11 +5530,12 @@ entry:
   ret i1 %2
 }
 
-; 679 occurrences:
+; 680 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; abc/optimized/cmdApi.c.ll
 ; abc/optimized/cuddAddApply.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/cuddGenetic.c.ll
@@ -6218,7 +6219,6 @@ entry:
 }
 
 ; 305 occurrences:
-; abc/optimized/cmdApi.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -6397,6 +6397,7 @@ entry:
 ; postgres/optimized/pgbench.ll
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
+; proj/optimized/gnom.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
@@ -6530,8 +6531,7 @@ entry:
   ret i1 %2
 }
 
-; 378 occurrences:
-; abc/optimized/cmdApi.c.ll
+; 377 occurrences:
 ; abc/optimized/cuddAddIte.c.ll
 ; abc/optimized/cuddBridge.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -6916,8 +6916,9 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; graphviz/optimized/dotsplines.c.ll
 ; nuttx/optimized/lib_ceil.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; ruby/optimized/static_literals.ll
@@ -6997,8 +6998,7 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
-; graphviz/optimized/dotsplines.c.ll
+; 1 occurrences:
 ; openjdk/optimized/cmsgmt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(double %0, double %1) #0 {

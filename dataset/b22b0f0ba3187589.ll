@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -19,9 +20,8 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; spike/optimized/csrs.ll

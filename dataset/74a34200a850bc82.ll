@@ -1,5 +1,5 @@
 
-%"class.cv::Complex.3752634" = type { double, double }
+%"class.cv::Complex.3752584" = type { double, double }
 
 ; 1 occurrences:
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -120,7 +120,7 @@ entry:
 define ptr @func000000000000006f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.cv::Complex.3752634", ptr %1, i64 %3
+  %4 = getelementptr %"class.cv::Complex.3752584", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   %6 = getelementptr nusw nuw double, ptr %5, i64 %0
   ret ptr %6

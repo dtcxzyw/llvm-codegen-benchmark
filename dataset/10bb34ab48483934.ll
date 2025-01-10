@@ -99,7 +99,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/cnfMap.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

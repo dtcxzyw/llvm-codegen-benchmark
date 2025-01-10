@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	7                               # 0x7
+	.long	65532                           # 0xfffc
 func000000000000000c:                   # @func000000000000000c
 	vpminsd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm0, %k0

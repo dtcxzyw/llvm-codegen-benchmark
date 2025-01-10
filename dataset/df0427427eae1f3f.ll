@@ -891,6 +891,7 @@
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/colxlate.c.ll
 ; graphviz/optimized/dotsplines.c.ll
+; graphviz/optimized/edges.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/excontext.c.ll
 ; graphviz/optimized/generate-constraints.cpp.ll
@@ -4528,7 +4529,6 @@
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, ptr %2) #0 {
@@ -4538,7 +4538,7 @@ entry:
   ret ptr %4
 }
 
-; 216 occurrences:
+; 215 occurrences:
 ; abc/optimized/aigScl.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -4754,7 +4754,6 @@ entry:
 ; wireshark/optimized/ws_getopt.c.ll
 ; xgboost/optimized/context.cc.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, ptr %2) #0 {
 entry:

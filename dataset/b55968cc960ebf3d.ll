@@ -14,11 +14,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
-; node/optimized/simdutf.ll
 ; postgres/optimized/pg_basebackup.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind

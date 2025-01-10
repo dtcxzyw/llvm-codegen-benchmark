@@ -38,7 +38,7 @@ entry:
   ret i1 %5
 }
 
-; 112 occurrences:
+; 111 occurrences:
 ; linux/optimized/iommu.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/sys.ll
@@ -150,7 +150,6 @@ entry:
 ; spike/optimized/vzext_vf2.ll
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:

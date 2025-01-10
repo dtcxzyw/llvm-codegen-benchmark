@@ -140,7 +140,7 @@ entry:
   ret i1 %4
 }
 
-; 174 occurrences:
+; 175 occurrences:
 ; abc/optimized/llb1Hint.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; boost/optimized/to_chars.ll
@@ -296,6 +296,7 @@ entry:
 ; ripgrep-rs/optimized/161nqe0t1jf3za47.ll
 ; ripgrep-rs/optimized/27iy5ui86mv5cpfs.ll
 ; ruby/optimized/encoding.ll
+; ruby/optimized/raddrinfo.ll
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/unicode.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
@@ -496,17 +497,6 @@ define i1 @func0000000000000046(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 16777216
   %3 = icmp slt i32 %2, 33554432
-  %4 = select i1 %3, i1 true, i1 %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-pw-atm.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -4
-  %3 = icmp samesign ult i32 %2, 48
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }

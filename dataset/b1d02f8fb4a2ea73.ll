@@ -334,6 +334,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 -7
+  %4 = icmp uge ptr %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

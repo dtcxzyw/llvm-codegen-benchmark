@@ -56,6 +56,12 @@ func0000000000000074:                   # @func0000000000000074
 	sub	a1, a1, a0
 	sltiu	a0, a1, 255
 	ret
+func0000000000000078:                   # @func0000000000000078
+	zext.w	a1, a1
+	sub	a1, a1, a0
+	sltiu	a0, a1, 2
+	xori	a0, a0, 1
+	ret
 func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a1, a1
 	sub	a1, a1, a0
@@ -88,7 +94,7 @@ func000000000000006c:                   # @func000000000000006c
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	sub	a1, a1, a0
-	slti	a0, a1, -1
+	slti	a0, a1, 2
 	xori	a0, a0, 1
 	ret
 func000000000000002c:                   # @func000000000000002c
@@ -106,12 +112,6 @@ func000000000000000a:                   # @func000000000000000a
 	zext.w	a1, a1
 	sub	a1, a1, a0
 	sgtz	a0, a1
-	ret
-func0000000000000078:                   # @func0000000000000078
-	zext.w	a1, a1
-	sub	a1, a1, a0
-	sltiu	a0, a1, 2
-	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	zext.w	a1, a1

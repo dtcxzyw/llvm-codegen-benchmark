@@ -7,7 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0
-	blez	a0, .LBB1_2
-	li	a0, 1
+	li	a1, 128
+	blt	a0, a1, .LBB1_2
+	li	a0, 128
 .LBB1_2:                                # %entry
 	ret

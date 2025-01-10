@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; ruby/optimized/strftime.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, ptr %1, i32 %2) #0 {
 entry:

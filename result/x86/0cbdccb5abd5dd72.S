@@ -13,7 +13,7 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func0000000000000041:                   # @func0000000000000041
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
@@ -38,12 +38,6 @@ func00000000000000c8:                   # @func00000000000000c8
 	cmpq	%rdx, %rdi
 	seta	%al
 	retq
-func00000000000000e4:                   # @func00000000000000e4
-	sarq	$32, %rdx
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
-	setb	%al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	sarq	$32, %rdx
 	shlq	$5, %rdx
@@ -51,9 +45,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000061:                   # @func0000000000000061
 	sarq	$32, %rdx
-	leaq	(%rsi,%rdx,8), %rax
+	leaq	(%rsi,%rdx,4), %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
@@ -80,12 +74,6 @@ func00000000000000c5:                   # @func00000000000000c5
 	addq	%rsi, %rdx
 	cmpq	%rdx, %rdi
 	setbe	%al
-	retq
-func00000000000000e8:                   # @func00000000000000e8
-	sarq	$32, %rdx
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
-	seta	%al
 	retq
 func000000000000004c:                   # @func000000000000004c
 	sarq	$32, %rdx

@@ -1,5 +1,5 @@
 
-%struct._zend_basic_block.2793233 = type { ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [2 x i32] }
+%struct._zend_basic_block.2793199 = type { ptr, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, [2 x i32] }
 
 ; 2 occurrences:
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
@@ -21,7 +21,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000041(i8 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct._zend_basic_block.2793233, ptr %1, i64 %2
+  %3 = getelementptr nusw %struct._zend_basic_block.2793199, ptr %1, i64 %2
   %4 = icmp eq i8 %0, 8
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

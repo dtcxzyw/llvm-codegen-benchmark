@@ -1,7 +1,8 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; git/optimized/apply.ll
 ; git/optimized/tree-walk.ll
+; icu/optimized/pkgitems.ll
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/demosaicing.cpp.ll

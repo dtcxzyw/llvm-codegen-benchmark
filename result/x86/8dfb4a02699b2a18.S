@@ -1,4 +1,4 @@
-func0000000000000001:                   # @func0000000000000001
+func0000000000000041:                   # @func0000000000000041
 	leaq	1(%rdi), %rcx
 	cmpq	$23, %rdi
 	movl	$25, %eax
@@ -9,6 +9,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$8096, %rdi                     # imm = 0x1FA0
 	movl	$8096, %eax                     # imm = 0x1FA0
 	cmovaeq	%rcx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	leaq	2(%rdi), %rax
+	testq	%rdi, %rdi
+	cmoveq	%rdi, %rax
 	retq
 func0000000000000021:                   # @func0000000000000021
 	subq	$1, %rdi
@@ -26,11 +31,6 @@ func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	cmpq	$2, %rdi
 	cmovneq	%rcx, %rax
-	retq
-func0000000000000041:                   # @func0000000000000041
-	incq	%rdi
-	movq	$-1, %rax
-	cmovneq	%rdi, %rax
 	retq
 func0000000000000078:                   # @func0000000000000078
 	cmpq	$65532, %rdi                    # imm = 0xFFFC

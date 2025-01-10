@@ -1,6 +1,6 @@
 
-%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
-%struct.anon.32.2601336 = type { ptr, i64 }
+%union.iseq_inline_storage_entry.2601302 = type { %struct.anon.32.2601303 }
+%struct.anon.32.2601303 = type { ptr, i64 }
 
 ; 4 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -11,8 +11,8 @@
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601302, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

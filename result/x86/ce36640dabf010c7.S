@@ -9,9 +9,9 @@ func0000000000000002:                   # @func0000000000000002
 	subq	%rsi, %rax
 	retq
 func000000000000000e:                   # @func000000000000000e
-	shlq	$5, %rsi
+	shlq	$3, %rsi
 	subq	%rsi, %rdi
-	leaq	-32(%rdi), %rax
+	leaq	-8(%rdi), %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	notq	%rsi
@@ -52,11 +52,6 @@ func0000000000000014:                   # @func0000000000000014
 	shlq	$4, %rsi
 	subq	%rsi, %rdi
 	leaq	-208(%rdi), %rax
-	retq
-func0000000000000026:                   # @func0000000000000026
-	movq	%rdi, %rax
-	shlq	$5, %rsi
-	subq	%rsi, %rax
 	retq
 func000000000000003f:                   # @func000000000000003f
 	shlq	$4, %rsi

@@ -26,10 +26,6 @@ func0000000000000061:                   # @func0000000000000061
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
-	subw	a1, a1, a2
-	sltu	a0, a1, a0
-	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a2
 	zext.w	a1, a1
@@ -46,6 +42,11 @@ func0000000000000028:                   # @func0000000000000028
 	sltu	a0, a1, a0
 	ret
 func0000000000000218:                   # @func0000000000000218
+	subw	a1, a1, a2
+	zext.w	a1, a1
+	sltu	a0, a1, a0
+	ret
+func0000000000000208:                   # @func0000000000000208
 	subw	a1, a1, a2
 	zext.w	a1, a1
 	sltu	a0, a1, a0

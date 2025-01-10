@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/regcomp.c.ll
@@ -10,7 +10,6 @@
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
-; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i8 %0, i8 %1) #0 {
 entry:

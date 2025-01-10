@@ -49,10 +49,20 @@ func00000000000007ec:                   # @func00000000000007ec
 	vzeroupper
 	retq
 .LCPI6_0:
+	.quad	1032                            # 0x408
+func00000000000002a8:                   # @func00000000000002a8
+	vpsllq	$2, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
 	.quad	2147483648                      # 0x80000000
 func000000000000050a:                   # @func000000000000050a
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vptestnmq	.LCPI6_0(%rip){1to4}, %ymm0, %k0
+	vptestnmq	.LCPI7_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

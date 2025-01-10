@@ -28,11 +28,10 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/MCELFStreamer.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind

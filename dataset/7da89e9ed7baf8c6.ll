@@ -1,6 +1,6 @@
 
-%struct.nk_text_undo_record.3063066 = type { i32, i16, i16, i16 }
-%struct.ml_effect_state.3532716 = type { ptr, i64, i32, i64, i64, i64 }
+%struct.nk_text_undo_record.3063032 = type { i32, i16, i16, i16 }
+%struct.ml_effect_state.3532682 = type { ptr, i64, i32, i64, i64, i64 }
 
 ; 7 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -14,7 +14,7 @@
 define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr [99 x %struct.nk_text_undo_record.3063066], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [99 x %struct.nk_text_undo_record.3063032], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -24,7 +24,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr [16 x %struct.ml_effect_state.3532716], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [16 x %struct.ml_effect_state.3532682], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

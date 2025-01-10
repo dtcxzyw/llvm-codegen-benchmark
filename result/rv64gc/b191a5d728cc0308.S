@@ -21,11 +21,6 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a2, -1217
 	sltu	a0, a0, a1
 	ret
-func00000000000000a6:                   # @func00000000000000a6
-	add	a1, a1, a2
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	ret
 func00000000000000f4:                   # @func00000000000000f4
 	add	a1, a1, a2
 	sub	a1, a1, a0
@@ -71,6 +66,10 @@ func0000000000000038:                   # @func0000000000000038
 	sub	a1, a1, a0
 	srli	a1, a1, 32
 	snez	a0, a1
+	ret
+func00000000000000a6:                   # @func00000000000000a6
+	add	a1, a1, a2
+	slt	a0, a1, a0
 	ret
 func00000000000000b4:                   # @func00000000000000b4
 	add	a1, a1, a2

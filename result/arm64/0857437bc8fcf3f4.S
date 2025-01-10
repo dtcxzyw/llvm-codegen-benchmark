@@ -68,13 +68,6 @@ func0000000000000013:                   // @func0000000000000013
 	add	x0, x8, w1, uxtw
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
-// %bb.0:                               // %entry
-	mov	x8, #-276                       // =0xfffffffffffffeec
-	mul	x8, x0, x8
-	add	x0, x8, w1, uxtw
-	ret
-                                        // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
 	mov	w8, #30                         // =0x1e

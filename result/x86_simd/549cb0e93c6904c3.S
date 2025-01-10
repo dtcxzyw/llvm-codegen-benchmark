@@ -88,6 +88,12 @@ func0000000000000038:                   # @func0000000000000038
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000000b:                   # @func000000000000000b
+	vpminud	%ymm2, %ymm1, %ymm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000025:                   # @func0000000000000025
 	vpminud	%ymm2, %ymm1, %ymm1
 	vpcmpleud	%ymm1, %ymm0, %k0

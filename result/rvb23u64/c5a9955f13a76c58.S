@@ -120,15 +120,6 @@ func00000000000001d8:                   # @func00000000000001d8
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000024a:                   # @func000000000000024a
-	sext.w	a1, a1
-	sext.w	a2, a2
-	sext.w	a0, a0
-	sltu	a2, a0, a2
-	sltu	a0, a1, a0
-	and	a0, a0, a2
-	xori	a0, a0, 1
-	ret
 func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	sext.w	a2, a2

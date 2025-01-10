@@ -1,27 +1,27 @@
 
-%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
-%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
-%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
-%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
-%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
-%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
-%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
-%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
-%struct.anon.12.2606011 = type { i64 }
-%struct.pq_heap_st.2633923 = type { ptr, i64 }
-%"struct.std::pair.2757165" = type { ptr, i64 }
-%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
-%"struct.std::pair.3449273" = type { i32, i32 }
+%"class.std::__1::tuple.2603517" = type { %"struct.std::__1::__tuple_impl.2603518" }
+%"struct.std::__1::__tuple_impl.2603518" = type <{ %"class.std::__1::__tuple_leaf.2603519", %"class.std::__1::__tuple_leaf.170.2603520", %"class.std::__1::__tuple_leaf.171.2603521", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603519" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603520" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::__tuple_leaf.171.2603521" = type { i8 }
+%"class.std::__1::basic_string.2605972" = type { %"class.std::__1::__compressed_pair.10.2605973" }
+%"class.std::__1::__compressed_pair.10.2605973" = type { %"struct.std::__1::__compressed_pair_elem.11.2605974" }
+%"struct.std::__1::__compressed_pair_elem.11.2605974" = type { %"struct.std::__1::basic_string<char>::__rep.2605975" }
+%"struct.std::__1::basic_string<char>::__rep.2605975" = type { %union.anon.2605976 }
+%union.anon.2605976 = type { %"struct.std::__1::basic_string<char>::__long.2605977" }
+%"struct.std::__1::basic_string<char>::__long.2605977" = type { %struct.anon.12.2605978, i64, ptr }
+%struct.anon.12.2605978 = type { i64 }
+%struct.pq_heap_st.2633890 = type { ptr, i64 }
+%"struct.std::pair.2757131" = type { ptr, i64 }
+%class.QModelIndex.3438231 = type { i32, i32, i64, ptr }
+%"struct.std::pair.3449239" = type { i32, i32 }
 
 ; 8 occurrences:
 ; linux/optimized/huf_decompress.ll
@@ -84,7 +84,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"class.std::__1::tuple.2603550", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr %"class.std::__1::tuple.2603517", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -338,7 +338,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nuw %"class.std::__1::basic_string.2606005", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr nuw %"class.std::__1::basic_string.2605972", ptr %0, i64 %3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
 }
 
@@ -358,7 +358,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nuw %struct.pq_heap_st.2633923, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %struct.pq_heap_st.2633890, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -413,7 +413,7 @@ define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr nuw %"struct.std::pair.2757165", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"struct.std::pair.2757131", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -480,7 +480,7 @@ define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.QModelIndex.3438231, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -492,7 +492,7 @@ define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -504,7 +504,7 @@ define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.3449239", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

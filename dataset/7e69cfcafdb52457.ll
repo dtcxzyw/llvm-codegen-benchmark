@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
-%class.QCPGraphData.3451166 = type { double, double }
+%"class.llvm::Use.3238990" = type { ptr, ptr, ptr, ptr }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 22 occurrences:
 ; abc/optimized/giaNf.c.ll
@@ -155,7 +155,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %2
+  %3 = getelementptr %"class.llvm::Use.3238990", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = lshr i64 %5, 5
@@ -173,7 +173,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %2
+  %3 = getelementptr %class.QCPGraphData.3451132, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = lshr exact i64 %5, 4

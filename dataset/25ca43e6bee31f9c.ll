@@ -356,7 +356,7 @@ entry:
   ret i1 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
@@ -401,7 +401,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll

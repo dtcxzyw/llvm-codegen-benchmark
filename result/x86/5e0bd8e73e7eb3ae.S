@@ -10,6 +10,12 @@ func000000000000002a:                   # @func000000000000002a
 	setg	%al
 	orb	%dil, %al
 	retq
+func0000000000000026:                   # @func0000000000000026
+	sarq	$3, %rdx
+	cmpq	%rsi, %rdx
+	setl	%al
+	orb	%dil, %al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	sarq	$5, %rdx
 	cmpq	%rsi, %rdx

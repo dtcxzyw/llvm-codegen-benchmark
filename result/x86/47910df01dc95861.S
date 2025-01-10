@@ -18,14 +18,14 @@ func000000000000000c:                   # @func000000000000000c
 	sets	%al
 	orb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testq	%rsi, %rsi
+	setns	%al
+	orb	%dil, %al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	cmpq	$2, %rsi
 	setb	%al
-	orb	%dil, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	cmpq	$43, %rsi
-	setge	%al
 	orb	%dil, %al
 	retq
 func0000000000000010:                   # @func0000000000000010

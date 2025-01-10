@@ -4,6 +4,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %esi
 	sete	%al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	addl	$63, %esi
+	andl	$-64, %esi
+	cmpl	%edi, %esi
+	setg	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	$15, %esi
 	andl	$-16, %esi

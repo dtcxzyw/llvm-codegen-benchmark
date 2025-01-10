@@ -1,6 +1,6 @@
 
-%"struct.CFF::number_t.2732186" = type { double }
-%class.XMMRegister.2733288 = type { i32 }
+%"struct.CFF::number_t.2732152" = type { double }
+%class.XMMRegister.2733254 = type { i32 }
 
 ; 12 occurrences:
 ; cpython/optimized/hamt.ll
@@ -41,7 +41,7 @@ define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732186"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2732152"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -80,7 +80,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [4 x %class.XMMRegister.2733288], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x %class.XMMRegister.2733254], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

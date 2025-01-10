@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/absOut.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -17,7 +17,6 @@
 ; abc/optimized/wlcMem.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
 ; Function Attrs: nounwind

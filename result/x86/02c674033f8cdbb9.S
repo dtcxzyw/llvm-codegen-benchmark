@@ -12,10 +12,3 @@ func00000000000000c1:                   # @func00000000000000c1
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000081:                   # @func0000000000000081
-	movl	$8, %eax
-	shlxq	%rsi, %rax, %rcx
-	cmpl	$2, %edi
-	movl	$6, %eax
-	cmovneq	%rcx, %rax
-	retq

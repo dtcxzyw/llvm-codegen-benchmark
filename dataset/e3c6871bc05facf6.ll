@@ -67,13 +67,11 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 20 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/trace_output.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/UnreachableBlockElim.cpp.ll

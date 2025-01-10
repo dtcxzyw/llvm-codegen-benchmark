@@ -36,9 +36,9 @@ func000000000000000d:                   # @func000000000000000d
 	retq
 func0000000000000005:                   # @func0000000000000005
 	andl	$1, %edx
-	shll	$5, %edx
-	addq	%rsi, %rdx
-	leaq	96(%rdi,%rdx), %rax
+	notq	%rdx
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx

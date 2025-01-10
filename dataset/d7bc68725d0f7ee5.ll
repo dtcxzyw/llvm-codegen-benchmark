@@ -1,14 +1,14 @@
 
-%class.btVector3.2818144 = type { [4 x float] }
-%"struct.duckdb::UnifiedVectorFormat.2969055" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2969056", %"struct.duckdb::SelectionVector.2969057" }
-%"struct.duckdb::ValidityMask.2969056" = type { %"struct.duckdb::TemplatedValidityMask.2969058" }
-%"struct.duckdb::TemplatedValidityMask.2969058" = type { ptr, %"class.std::shared_ptr.12.2969059", i64 }
-%"class.std::shared_ptr.12.2969059" = type { %"class.std::__shared_ptr.13.2969060" }
-%"class.std::__shared_ptr.13.2969060" = type { ptr, %"class.std::__shared_count.2969050" }
-%"class.std::__shared_count.2969050" = type { ptr }
-%"struct.duckdb::SelectionVector.2969057" = type { ptr, %"class.std::shared_ptr.18.2969061" }
-%"class.std::shared_ptr.18.2969061" = type { %"class.std::__shared_ptr.19.2969062" }
-%"class.std::__shared_ptr.19.2969062" = type { ptr, %"class.std::__shared_count.2969050" }
+%class.btVector3.2818110 = type { [4 x float] }
+%"struct.duckdb::UnifiedVectorFormat.2969021" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2969022", %"struct.duckdb::SelectionVector.2969023" }
+%"struct.duckdb::ValidityMask.2969022" = type { %"struct.duckdb::TemplatedValidityMask.2969024" }
+%"struct.duckdb::TemplatedValidityMask.2969024" = type { ptr, %"class.std::shared_ptr.12.2969025", i64 }
+%"class.std::shared_ptr.12.2969025" = type { %"class.std::__shared_ptr.13.2969026" }
+%"class.std::__shared_ptr.13.2969026" = type { ptr, %"class.std::__shared_count.2969016" }
+%"class.std::__shared_count.2969016" = type { ptr }
+%"struct.duckdb::SelectionVector.2969023" = type { ptr, %"class.std::shared_ptr.18.2969027" }
+%"class.std::shared_ptr.18.2969027" = type { %"class.std::__shared_ptr.19.2969028" }
+%"class.std::__shared_ptr.19.2969028" = type { ptr, %"class.std::__shared_count.2969016" }
 
 ; 3 occurrences:
 ; oiio/optimized/SHA1.cpp.ll
@@ -35,7 +35,7 @@ entry:
   %2 = icmp eq i64 %1, 0
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %5 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [3 x %class.btVector3.2818110], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -92,7 +92,7 @@ entry:
   %2 = icmp ne i64 %1, 104
   %3 = zext i1 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw nuw [3 x %"struct.duckdb::UnifiedVectorFormat.2969055"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [3 x %"struct.duckdb::UnifiedVectorFormat.2969021"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

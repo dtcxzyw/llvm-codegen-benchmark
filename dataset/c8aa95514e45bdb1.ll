@@ -43,13 +43,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare { i64, i1 } @llvm.uadd.with.overflow.i64(i64, i64) #1
 
-; 6 occurrences:
+; 1 occurrences:
 ; egg-rs/optimized/208b1a9t1vdfvafq.ll
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

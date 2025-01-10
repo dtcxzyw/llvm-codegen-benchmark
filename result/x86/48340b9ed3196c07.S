@@ -24,8 +24,8 @@ func0000000000000026:                   # @func0000000000000026
 	setl	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andl	$-2, %edi
-	cmpl	$2, %edi
+	notl	%edi
+	testl	$-9, %edi
 	sete	%al
 	retq
 func0000000000000038:                   # @func0000000000000038

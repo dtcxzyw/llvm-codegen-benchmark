@@ -1,27 +1,27 @@
 
-%"class.rocksdb::LRUList.2617340" = type { ptr, %"class.rocksdb::port::Mutex.2617341", ptr, ptr }
-%"class.rocksdb::port::Mutex.2617341" = type { %union.pthread_mutex_t.2617342 }
-%union.pthread_mutex_t.2617342 = type { %struct.__pthread_mutex_s.2617343 }
-%struct.__pthread_mutex_s.2617343 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2617344 }
-%struct.__pthread_internal_list.2617344 = type { ptr, ptr }
-%struct.TempRow.2703215 = type { i32, i32, i32, i32, %"class.std::vector.48.2703216", %"class.std::vector.53.2703217" }
-%"class.std::vector.48.2703216" = type { %"struct.std::_Vector_base.49.2703218" }
-%"struct.std::_Vector_base.49.2703218" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" = type { ptr, ptr, ptr }
-%"class.std::vector.53.2703217" = type { %"struct.std::_Vector_base.54.2703221" }
-%"struct.std::_Vector_base.54.2703221" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" = type { ptr, ptr, ptr }
-%struct.zend_type.2793214 = type { ptr, i32 }
-%struct.aiFace.2826175 = type { i32, ptr }
-%"class.boost::json::key_value_pair.2995791" = type { %"class.boost::json::value.2995760", ptr, i32, i32 }
-%"class.boost::json::value.2995760" = type { %union.anon.1.2995761 }
-%union.anon.1.2995761 = type { %"class.boost::json::array.2995762" }
-%"class.boost::json::array.2995762" = type { %"class.boost::json::storage_ptr.2995763", i8, ptr }
-%"class.boost::json::storage_ptr.2995763" = type { i64 }
-%"class.std::thread.3618884" = type { %"class.std::thread::id.3618885" }
-%"class.std::thread::id.3618885" = type { i64 }
+%"class.rocksdb::LRUList.2617307" = type { ptr, %"class.rocksdb::port::Mutex.2617308", ptr, ptr }
+%"class.rocksdb::port::Mutex.2617308" = type { %union.pthread_mutex_t.2617309 }
+%union.pthread_mutex_t.2617309 = type { %struct.__pthread_mutex_s.2617310 }
+%struct.__pthread_mutex_s.2617310 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2617311 }
+%struct.__pthread_internal_list.2617311 = type { ptr, ptr }
+%struct.TempRow.2703181 = type { i32, i32, i32, i32, %"class.std::vector.48.2703182", %"class.std::vector.53.2703183" }
+%"class.std::vector.48.2703182" = type { %"struct.std::_Vector_base.49.2703184" }
+%"struct.std::_Vector_base.49.2703184" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" = type { ptr, ptr, ptr }
+%"class.std::vector.53.2703183" = type { %"struct.std::_Vector_base.54.2703187" }
+%"struct.std::_Vector_base.54.2703187" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" = type { ptr, ptr, ptr }
+%struct.zend_type.2793180 = type { ptr, i32 }
+%struct.aiFace.2826141 = type { i32, ptr }
+%"class.boost::json::key_value_pair.2995757" = type { %"class.boost::json::value.2995726", ptr, i32, i32 }
+%"class.boost::json::value.2995726" = type { %union.anon.1.2995727 }
+%union.anon.1.2995727 = type { %"class.boost::json::array.2995728" }
+%"class.boost::json::array.2995728" = type { %"class.boost::json::storage_ptr.2995729", i8, ptr }
+%"class.boost::json::storage_ptr.2995729" = type { i64 }
+%"class.std::thread.3618850" = type { %"class.std::thread::id.3618851" }
+%"class.std::thread::id.3618851" = type { i64 }
 
 ; 2 occurrences:
 ; ruby/optimized/regcomp.ll
@@ -276,7 +276,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %"class.rocksdb::LRUList.2617340", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.rocksdb::LRUList.2617307", ptr %4, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -566,7 +566,7 @@ define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.TempRow.2703215, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.TempRow.2703181, ptr %4, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -597,7 +597,7 @@ define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.zend_type.2793214, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.zend_type.2793180, ptr %4, i64 %3
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -613,7 +613,7 @@ define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.aiFace.2826175, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.aiFace.2826141, ptr %4, i64 %3
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
@@ -719,7 +719,7 @@ define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw %"class.boost::json::key_value_pair.2995791", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.boost::json::key_value_pair.2995757", ptr %4, i64 %3
   %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
@@ -849,7 +849,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %"class.std::thread.3618884", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.std::thread.3618850", ptr %4, i64 %3
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

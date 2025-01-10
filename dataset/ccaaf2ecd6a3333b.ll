@@ -1,5 +1,5 @@
 
-%struct.code.2876040 = type { i8, i8, i16 }
+%struct.code.2876006 = type { i8, i8, i16 }
 
 ; 1 occurrences:
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
@@ -77,8 +77,8 @@ entry:
 define ptr @func000000000000000f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %struct.code.2876040, ptr %0, i64 %1
-  %5 = getelementptr %struct.code.2876040, ptr %4, i64 %3
+  %4 = getelementptr %struct.code.2876006, ptr %0, i64 %1
+  %5 = getelementptr %struct.code.2876006, ptr %4, i64 %3
   ret ptr %5
 }
 

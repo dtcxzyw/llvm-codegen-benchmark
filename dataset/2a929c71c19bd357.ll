@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; qemu/optimized/target_riscv_translate.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp sgt i8 %1, 0
+  %3 = icmp slt i8 %0, 1
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll

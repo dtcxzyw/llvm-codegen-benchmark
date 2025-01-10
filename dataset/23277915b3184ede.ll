@@ -18,7 +18,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
@@ -32,6 +32,7 @@ entry:
 ; linux/optimized/access.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/netlabel_domainhash.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll

@@ -1,7 +1,6 @@
 
-; 77 occurrences:
+; 76 occurrences:
 ; hyperscan/optimized/match.c.ll
-; slurm/optimized/bitstring.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll

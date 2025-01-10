@@ -1,7 +1,7 @@
 
-%"struct.GUITable::Cell.2703225" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703211", i8, i32 }
-%"class.irr::video::SColor.2703211" = type { i32 }
-%struct.colormaprange.3651829 = type { i32, i32, i32 }
+%"struct.GUITable::Cell.2703191" = type { i32, i32, i32, i32, i32, i32, %"class.irr::video::SColor.2703177", i8, i32 }
+%"class.irr::video::SColor.2703177" = type { i32 }
+%struct.colormaprange.3651795 = type { i32, i32, i32 }
 
 ; 8 occurrences:
 ; git/optimized/cache-tree.ll
@@ -19,7 +19,7 @@ entry:
   %4 = sdiv i32 %3, 2
   %5 = add nsw i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.GUITable::Cell.2703225", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.GUITable::Cell.2703191", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -51,7 +51,7 @@ entry:
   %4 = sdiv i32 %3, 2
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.colormaprange.3651829, ptr %0, i64 %6
+  %7 = getelementptr %struct.colormaprange.3651795, ptr %0, i64 %6
   ret ptr %7
 }
 

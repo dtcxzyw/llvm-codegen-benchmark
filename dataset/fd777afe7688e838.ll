@@ -1,31 +1,31 @@
 
-%"struct.folly::f14::detail::F14Chunk.151.2686301" = type { %"struct.std::array.2686281", i8, i8, %"struct.std::array.152.2686302" }
-%"struct.std::array.2686281" = type { [14 x i8] }
-%"struct.std::array.152.2686302" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2686303"] }
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.btMultibodyLink.2818498 = type { float, %class.btVector3.2818499, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %struct.btSpatialMotionVector.2818501, %struct.btSpatialMotionVector.2818501, [6 x %struct.btSpatialMotionVector.2818501], i32, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2818502, ptr, ptr, ptr, float, float, float, float, float, float }
-%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
-%class.btQuaternion.2818500 = type { %class.btQuadWord.2818503 }
-%class.btQuadWord.2818503 = type { [4 x float] }
-%class.btVector3.2818499 = type { [4 x float] }
-%class.btTransform.2818502 = type { %class.btMatrix3x3.2818504, %class.btVector3.2818499 }
-%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
-%"class.open_spiel::twixt::Cell.3486352" = type { i32, i32, i32, [8 x %struct.Position.3486342], [2 x [2 x i8]] }
-%struct.Position.3486342 = type { i32, i32 }
-%struct.ieee80211_sband_iftype_data.3543204 = type <{ i16, %struct.ieee80211_sta_he_cap.3543205, %struct.ieee80211_he_6ghz_capa.3543206, %struct.ieee80211_sta_eht_cap.3543207, %struct.anon.144.3543208 }>
-%struct.ieee80211_sta_he_cap.3543205 = type <{ i8, %struct.ieee80211_he_cap_elem.3543209, %struct.ieee80211_he_mcs_nss_supp.3543210, [25 x i8] }>
-%struct.ieee80211_he_cap_elem.3543209 = type { [6 x i8], [11 x i8] }
-%struct.ieee80211_he_mcs_nss_supp.3543210 = type { i16, i16, i16, i16, i16, i16 }
-%struct.ieee80211_he_6ghz_capa.3543206 = type { i16 }
-%struct.ieee80211_sta_eht_cap.3543207 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3543211, %struct.ieee80211_eht_mcs_nss_supp.3543212, [32 x i8] }
-%struct.ieee80211_eht_cap_elem_fixed.3543211 = type { [2 x i8], [9 x i8] }
-%struct.ieee80211_eht_mcs_nss_supp.3543212 = type { %union.anon.105.3543213 }
-%union.anon.105.3543213 = type { %struct.anon.108.3543214 }
-%struct.anon.108.3543214 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215 }
-%struct.ieee80211_eht_mcs_nss_supp_bw.3543215 = type { %union.anon.109.3543216 }
-%union.anon.109.3543216 = type { %struct.anon.110.3543217 }
-%struct.anon.110.3543217 = type { i8, i8, i8 }
-%struct.anon.144.3543208 = type { ptr, i32 }
+%"struct.folly::f14::detail::F14Chunk.151.2686267" = type { %"struct.std::array.2686247", i8, i8, %"struct.std::array.152.2686268" }
+%"struct.std::array.2686247" = type { [14 x i8] }
+%"struct.std::array.152.2686268" = type { [15 x %"union.std::aligned_storage<16, 8>::type.2686269"] }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.btMultibodyLink.2818464 = type { float, %class.btVector3.2818465, i32, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btVector3.2818465, %struct.btSpatialMotionVector.2818467, %struct.btSpatialMotionVector.2818467, [6 x %struct.btSpatialMotionVector.2818467], i32, i32, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btQuaternion.2818466, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, %class.btVector3.2818465, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2818468, ptr, ptr, ptr, float, float, float, float, float, float }
+%struct.btSpatialMotionVector.2818467 = type { %class.btVector3.2818465, %class.btVector3.2818465 }
+%class.btQuaternion.2818466 = type { %class.btQuadWord.2818469 }
+%class.btQuadWord.2818469 = type { [4 x float] }
+%class.btVector3.2818465 = type { [4 x float] }
+%class.btTransform.2818468 = type { %class.btMatrix3x3.2818470, %class.btVector3.2818465 }
+%class.btMatrix3x3.2818470 = type { [3 x %class.btVector3.2818465] }
+%"class.open_spiel::twixt::Cell.3486318" = type { i32, i32, i32, [8 x %struct.Position.3486308], [2 x [2 x i8]] }
+%struct.Position.3486308 = type { i32, i32 }
+%struct.ieee80211_sband_iftype_data.3543170 = type <{ i16, %struct.ieee80211_sta_he_cap.3543171, %struct.ieee80211_he_6ghz_capa.3543172, %struct.ieee80211_sta_eht_cap.3543173, %struct.anon.144.3543174 }>
+%struct.ieee80211_sta_he_cap.3543171 = type <{ i8, %struct.ieee80211_he_cap_elem.3543175, %struct.ieee80211_he_mcs_nss_supp.3543176, [25 x i8] }>
+%struct.ieee80211_he_cap_elem.3543175 = type { [6 x i8], [11 x i8] }
+%struct.ieee80211_he_mcs_nss_supp.3543176 = type { i16, i16, i16, i16, i16, i16 }
+%struct.ieee80211_he_6ghz_capa.3543172 = type { i16 }
+%struct.ieee80211_sta_eht_cap.3543173 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3543177, %struct.ieee80211_eht_mcs_nss_supp.3543178, [32 x i8] }
+%struct.ieee80211_eht_cap_elem_fixed.3543177 = type { [2 x i8], [9 x i8] }
+%struct.ieee80211_eht_mcs_nss_supp.3543178 = type { %union.anon.105.3543179 }
+%union.anon.105.3543179 = type { %struct.anon.108.3543180 }
+%struct.anon.108.3543180 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3543181, %struct.ieee80211_eht_mcs_nss_supp_bw.3543181, %struct.ieee80211_eht_mcs_nss_supp_bw.3543181 }
+%struct.ieee80211_eht_mcs_nss_supp_bw.3543181 = type { %union.anon.109.3543182 }
+%union.anon.109.3543182 = type { %struct.anon.110.3543183 }
+%struct.anon.110.3543183 = type { i8, i8, i8 }
+%struct.anon.144.3543174 = type { ptr, i32 }
 
 ; 3 occurrences:
 ; llvm/optimized/xxhash.cpp.ll
@@ -58,7 +58,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000b0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.151.2686301", ptr %1, i64 %2, i32 3, i32 0, i64 0, i32 0, i64 8
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.151.2686267", ptr %1, i64 %2, i32 3, i32 0, i64 0, i32 0, i64 8
   %4 = shl nuw nsw i64 %0, 4
   %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5
@@ -86,7 +86,7 @@ entry:
   ret ptr %6
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
@@ -105,6 +105,8 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; postgres/optimized/freepage.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
+; quantlib/optimized/lmmdriftcalculator.ll
+; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -250,7 +252,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func00000000000000fc(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %struct.btMultibodyLink.2818498, ptr %1, i64 %2, i32 8, i64 0, i32 1
+  %3 = getelementptr nuw %struct.btMultibodyLink.2818464, ptr %1, i64 %2, i32 8, i64 0, i32 1
   %4 = shl nuw nsw i64 %0, 5
   %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5
@@ -426,7 +428,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000090(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.open_spiel::twixt::Cell.3486352", ptr %1, i64 %2, i32 4, i64 0, i64 1
+  %3 = getelementptr %"class.open_spiel::twixt::Cell.3486318", ptr %1, i64 %2, i32 4, i64 0, i64 1
   %4 = shl nsw i64 %0, 1
   %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5
@@ -463,7 +465,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3543204, ptr %1, i64 %2, i32 1, i32 2
+  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3543170, ptr %1, i64 %2, i32 1, i32 2
   %.idx = shl i64 %0, 2
   %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4

@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; postgres/optimized/inv_api.ll
 ; qemu/optimized/block_io.c.ll
+; ruby/optimized/io.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

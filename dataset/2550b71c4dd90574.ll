@@ -1,5 +1,5 @@
 
-%struct.pcpu_block_md.3538033 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct.pcpu_block_md.3537999 = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 59 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
@@ -194,7 +194,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = ashr i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pcpu_block_md.3538033, ptr %0, i64 %4
+  %5 = getelementptr %struct.pcpu_block_md.3537999, ptr %0, i64 %4
   ret ptr %5
 }
 

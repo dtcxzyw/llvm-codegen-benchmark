@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; cpython/optimized/obmalloc.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; luajit/optimized/minilua.ll
@@ -117,21 +118,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; abc/optimized/cuddTable.c.ll
-; postgres/optimized/snapmgr.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000dd(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, 760
-  %4 = shl nsw i64 %0, 6
-  %5 = add nsw i64 %3, %4
-  ret i64 %5
-}
-
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; eastl/optimized/TestHash.cpp.ll
@@ -139,6 +126,7 @@ entry:
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprObjC.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; quickjs/optimized/libregexp.ll
@@ -151,6 +139,19 @@ entry:
   %3 = add nuw nsw i64 %2, 32
   %4 = shl nuw nsw i64 %0, 4
   %5 = add nuw nsw i64 %3, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; postgres/optimized/snapmgr.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000dd(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 2
+  %3 = add nuw nsw i64 %2, 64
+  %4 = shl nsw i64 %0, 3
+  %5 = add nsw i64 %3, %4
   ret i64 %5
 }
 

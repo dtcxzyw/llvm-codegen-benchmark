@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
@@ -17,6 +17,7 @@
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/interval.ll
 ; slurm/optimized/job_submit_pbs.ll

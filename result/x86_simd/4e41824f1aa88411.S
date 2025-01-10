@@ -31,9 +31,9 @@ func0000000000000004:                   # @func0000000000000004
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	131072                          # 0x20000
+	.long	8                               # 0x8
 func0000000000000019:                   # @func0000000000000019
-	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [131072,131072,131072,131072,131072,131072,131072,131072]
+	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [8,8,8,8,8,8,8,8]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpmaxud	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm1, %ymm0, %ymm0

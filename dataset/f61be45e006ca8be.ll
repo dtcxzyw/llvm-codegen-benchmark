@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707191 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
@@ -9,7 +9,7 @@ entry:
   %2 = lshr i32 %1, 28
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.TCGTemp.2707225, ptr %0, i64 %4
+  %5 = getelementptr %struct.TCGTemp.2707191, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

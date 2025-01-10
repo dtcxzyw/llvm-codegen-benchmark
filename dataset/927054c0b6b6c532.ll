@@ -32,10 +32,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; ruby/optimized/string.ll
-; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:

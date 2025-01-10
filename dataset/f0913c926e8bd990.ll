@@ -1,7 +1,7 @@
 
-%"struct.llvm::DataLayout::PrimitiveSpec.3298758" = type <{ i32, %"struct.llvm::Align.3298743", %"struct.llvm::Align.3298743", [2 x i8] }>
-%"struct.llvm::Align.3298743" = type { i8 }
-%class.QCPGraphData.3451166 = type { double, double }
+%"struct.llvm::DataLayout::PrimitiveSpec.3298724" = type <{ i32, %"struct.llvm::Align.3298709", %"struct.llvm::Align.3298709", [2 x i8] }>
+%"struct.llvm::Align.3298709" = type { i8 }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 17 occurrences:
 ; just-rs/optimized/23nlf67cmm9na4ci.ll
@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000106(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.llvm::DataLayout::PrimitiveSpec.3298758", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.llvm::DataLayout::PrimitiveSpec.3298724", ptr %1, i64 %2
   %4 = icmp eq ptr %0, %3
   %5 = select i1 %4, i64 -8, i64 0
   %6 = getelementptr nusw i8, ptr %0, i64 %5
@@ -60,7 +60,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QCPGraphData.3451166, ptr %1, i64 %2
+  %3 = getelementptr %class.QCPGraphData.3451132, ptr %1, i64 %2
   %4 = icmp eq ptr %0, %3
   %5 = select i1 %4, i64 0, i64 -16
   %6 = getelementptr i8, ptr %0, i64 %5

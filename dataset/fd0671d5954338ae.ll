@@ -1,12 +1,12 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
-%union.anon.32.2604138 = type { i32 }
-%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
-%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
-%struct.HDAAudioStream.2709235 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709236, %union.anon.0.2709237, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
-%struct.audsettings.2709236 = type { i32, i32, i32, i32 }
-%union.anon.0.2709237 = type { ptr }
-%struct.mstate_aux.3855356 = type { i32, i32, i16, i32 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604104" = type { i32, i32, i32, %union.anon.32.2604105, i32, i32, i32, i32 }
+%union.anon.32.2604105 = type { i32 }
+%"class.mold::LittleEndian.3.2635821" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635820" = type { [4 x i8] }
+%struct.HDAAudioStream.2709201 = type { ptr, ptr, i8, i8, i32, i32, i32, i32, i32, i8, i8, %struct.audsettings.2709202, %union.anon.0.2709203, [256 x i8], i32, [8192 x i8], i64, i64, ptr, i64 }
+%struct.audsettings.2709202 = type { i32, i32, i32, i32 }
+%union.anon.0.2709203 = type { ptr }
+%struct.mstate_aux.3855306 = type { i32, i32, i16, i32 }
 
 ; 204 occurrences:
 ; abc/optimized/cutCut.c.ll
@@ -218,8 +218,8 @@ define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 76
-  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %4, i64 %3
-  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604104", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -477,8 +477,8 @@ define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 16
-  %5 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %4, i64 %3
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635853", ptr %5, i64 %0
+  %5 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635821", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2635820", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -548,7 +548,7 @@ define ptr @func0000000000000033(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 216
-  %5 = getelementptr %struct.HDAAudioStream.2709235, ptr %4, i64 %3
+  %5 = getelementptr %struct.HDAAudioStream.2709201, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -807,7 +807,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 -64
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw nuw %struct.mstate_aux.3855356, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %struct.mstate_aux.3855306, ptr %5, i64 %0
   ret ptr %6
 }
 

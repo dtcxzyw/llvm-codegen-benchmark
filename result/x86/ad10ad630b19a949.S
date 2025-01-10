@@ -31,10 +31,10 @@ func0000000000000188:                   # @func0000000000000188
 	andb	%cl, %al
 	retq
 func0000000000000021:                   # @func0000000000000021
-	andl	$48, %edx
-	cmpl	$32, %edx
+	andl	$-8388608, %edx                 # imm = 0xFF800000
+	cmpl	$167772160, %edx                # imm = 0xA000000
 	sete	%cl
-	cmpq	$4, %rsi
+	testq	%rsi, %rsi
 	sete	%al
 	andb	%dil, %al
 	andb	%cl, %al

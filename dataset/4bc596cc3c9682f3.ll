@@ -99,7 +99,7 @@ entry:
   ret i32 %4
 }
 
-; 86 occurrences:
+; 85 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -170,7 +170,6 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/model.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openjdk/optimized/classListParser.ll
@@ -229,7 +228,7 @@ entry:
   ret i32 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -237,7 +236,6 @@ entry:
 ; cvc5/optimized/int_blaster.cpp.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; flac/optimized/stream_encoder.c.ll
-; git/optimized/line-log.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

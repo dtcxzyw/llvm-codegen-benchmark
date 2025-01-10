@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3324984" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3324950" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 16 occurrences:
 ; msgpack/optimized/asio_send_recv.cpp.ll
@@ -36,7 +36,7 @@ entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i64 -3446, i64 -3426
   %5 = select i1 %1, i64 %4, i64 -3421
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3324984", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3324950", ptr %0, i64 %5
   ret ptr %6
 }
 

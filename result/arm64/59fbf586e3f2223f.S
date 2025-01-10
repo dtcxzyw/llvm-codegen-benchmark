@@ -1,7 +1,9 @@
 func00000000000007e4:                   // @func00000000000007e4
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #3
-	cmp	x0, x8
+	add	x9, x0, #8
+	add	x8, x8, #8
+	cmp	x9, x8
 	cset	w0, lo
 	ret
                                         // -- End function
@@ -15,7 +17,9 @@ func00000000000007e1:                   // @func00000000000007e1
 func0000000000000364:                   // @func0000000000000364
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #3
-	cmp	x0, x8
+	add	x9, x0, #8
+	add	x8, x8, #8
+	cmp	x9, x8
 	cset	w0, lo
 	ret
                                         // -- End function
@@ -125,7 +129,9 @@ func00000000000001c1:                   // @func00000000000001c1
 func00000000000003e4:                   // @func00000000000003e4
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #3
-	cmp	x0, x8
+	add	x9, x0, #8
+	add	x8, x8, #8
+	cmp	x9, x8
 	cset	w0, lo
 	ret
                                         // -- End function

@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/_collectionsmodule.ll
 ; freetype/optimized/truetype.c.ll
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
+; postgres/optimized/buffile.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

@@ -173,6 +173,13 @@ func0000000000000021:                   # @func0000000000000021
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000006c:                   # @func000000000000006c
+	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpcmpneqq	%ymm2, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func00000000000000f5:                   # @func00000000000000f5
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -310,20 +317,6 @@ func00000000000000a7:                   # @func00000000000000a7
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpleq	%ymm2, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000094:                   # @func0000000000000094
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpltuq	%ymm2, %ymm0, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000006c:                   # @func000000000000006c
-	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpneqq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

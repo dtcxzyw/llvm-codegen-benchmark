@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 52 occurrences:
 ; cmake/optimized/cmArchiveWrite.cxx.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -38,7 +38,6 @@
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/crypt_sha512.ll
 ; php/optimized/fastcgi.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll

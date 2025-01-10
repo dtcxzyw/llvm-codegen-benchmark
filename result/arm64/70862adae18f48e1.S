@@ -6,6 +6,13 @@ func0000000000000003:                   // @func0000000000000003
 	sub	x0, x8, x9
 	ret
                                         // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	add	x8, x0, #39
+	and	x8, x8, #0xfffffffffffffff0
+	neg	x0, x8
+	ret
+                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	add	x8, x0, #511
@@ -29,12 +36,6 @@ func000000000000000d:                   // @func000000000000000d
 	neg	x0, x8
 	ret
                                         // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	sub	w8, w0, #1
-	neg	x0, x8
-	ret
-                                        // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #16777216                   // =0x1000000
@@ -42,13 +43,6 @@ func000000000000000f:                   // @func000000000000000f
 	add	x8, x0, x8
 	and	x8, x8, #0x7fffffff00000000
 	sub	x0, x9, x8
-	ret
-                                        // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	add	x8, x0, #15
-	and	x8, x8, #0xfffffffffffffff0
-	neg	x0, x8
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b

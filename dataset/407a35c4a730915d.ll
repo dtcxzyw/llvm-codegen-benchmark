@@ -32,7 +32,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll

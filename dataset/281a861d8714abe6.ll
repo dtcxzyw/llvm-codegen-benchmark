@@ -1,5 +1,5 @@
 
-%struct.dt_iop_basecurve_node_t.2872160 = type { float, float }
+%struct.dt_iop_basecurve_node_t.2872126 = type { float, float }
 
 ; 1 occurrences:
 ; openjdk/optimized/fieldInfo.ll
@@ -67,8 +67,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 8
-  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %4, i64 %1
-  %6 = getelementptr %struct.dt_iop_basecurve_node_t.2872160, ptr %5, i64 %3
+  %5 = getelementptr %struct.dt_iop_basecurve_node_t.2872126, ptr %4, i64 %1
+  %6 = getelementptr %struct.dt_iop_basecurve_node_t.2872126, ptr %5, i64 %3
   ret ptr %6
 }
 

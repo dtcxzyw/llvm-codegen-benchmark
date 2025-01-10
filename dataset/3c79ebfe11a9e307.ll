@@ -1,8 +1,8 @@
 
-%"struct.OT::OffsetTo.161.2729538" = type { %"struct.OT::Offset.159.2729539" }
-%"struct.OT::Offset.159.2729539" = type { %"struct.OT::IntType.152.2729540" }
-%"struct.OT::IntType.152.2729540" = type { %struct.BEInt.153.2729541 }
-%struct.BEInt.153.2729541 = type { [4 x i8] }
+%"struct.OT::OffsetTo.161.2729504" = type { %"struct.OT::Offset.159.2729505" }
+%"struct.OT::Offset.159.2729505" = type { %"struct.OT::IntType.152.2729506" }
+%"struct.OT::IntType.152.2729506" = type { %struct.BEInt.153.2729507 }
+%struct.BEInt.153.2729507 = type { [4 x i8] }
 
 ; 7 occurrences:
 ; clamav/optimized/mszipd.c.ll
@@ -19,7 +19,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %7 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.161.2729538"], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.161.2729504"], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

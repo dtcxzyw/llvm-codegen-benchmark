@@ -66,10 +66,3 @@ func000000000000008c:                   // @func000000000000008c
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000101:                   // @func0000000000000101
-// %bb.0:                               // %entry
-	tst	w1, w2
-	ccmp	w0, #1, #0, eq
-	cset	w0, hi
-	ret
-                                        // -- End function

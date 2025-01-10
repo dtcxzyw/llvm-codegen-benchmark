@@ -38,4 +38,30 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 3
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = icmp ugt i64 %0, 255
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018a(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 4415226380290
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = icmp sgt i64 %0, -9223372036854775805
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
 attributes #0 = { nounwind }

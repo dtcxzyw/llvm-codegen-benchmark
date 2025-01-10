@@ -1,5 +1,5 @@
 
-; 139 occurrences:
+; 138 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/cutTruth.c.ll
@@ -92,7 +92,6 @@
 ; openusd/optimized/fileIO_Common.cpp.ll
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; php/optimized/apprentice.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/ir_emit.ll
 ; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/initdb.ll

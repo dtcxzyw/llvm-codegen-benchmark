@@ -500,7 +500,7 @@ entry:
   ret i1 %5
 }
 
-; 91 occurrences:
+; 89 occurrences:
 ; cpython/optimized/listobject.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -584,8 +584,6 @@ entry:
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/interpolatedswaptionvolatilitycube.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; quantlib/optimized/normalclvmodel.ll
 ; quantlib/optimized/sabrvolsurface.ll
 ; quantlib/optimized/strippedoptionletadapter.ll

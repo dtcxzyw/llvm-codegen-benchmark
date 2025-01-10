@@ -1,5 +1,5 @@
 
-%struct.ml_effect_state.3532716 = type { ptr, i64, i32, i64, i64, i64 }
+%struct.ml_effect_state.3532682 = type { ptr, i64, i32, i64, i64, i64 }
 
 ; 33 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
@@ -56,7 +56,7 @@ define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr [16 x %struct.ml_effect_state.3532716], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [16 x %struct.ml_effect_state.3532682], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

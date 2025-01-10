@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194121" = type { ptr, ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; linux/optimized/8139too.ll
@@ -61,7 +61,7 @@ entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %2, 4294967288
   %4 = or disjoint i64 %3, 2
-  %5 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.llvm::Use.3194121", ptr %0, i64 %4
   ret ptr %5
 }
 

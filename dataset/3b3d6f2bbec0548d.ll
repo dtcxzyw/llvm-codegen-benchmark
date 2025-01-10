@@ -758,22 +758,19 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/drm_edid.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, -32
-  %4 = add nsw i32 %0, %3
+  %3 = add nsw i32 %2, -1
+  %4 = add nsw i32 %3, %0
   ret i32 %4
 }
 

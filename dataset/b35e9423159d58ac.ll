@@ -1,6 +1,6 @@
 
-%struct._zend_live_range.2791371 = type { i32, i32, i32 }
-%struct.Tab_Obj_t_.2877225 = type { i32, i32, i64 }
+%struct._zend_live_range.2791337 = type { i32, i32, i32 }
+%struct.Tab_Obj_t_.2877191 = type { i32, i32, i64 }
 
 ; 2 occurrences:
 ; lz4/optimized/lz4hc.c.ll
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000144(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %struct._zend_live_range.2791371, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct._zend_live_range.2791337, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -12
   %5 = icmp ult ptr %0, %4
   ret i1 %5
@@ -39,14 +39,15 @@ entry:
 define i1 @func0000000000000164(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %struct.Tab_Obj_t_.2877225, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.Tab_Obj_t_.2877191, ptr %0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libquic/optimized/fd.c.ll
+; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:

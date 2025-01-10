@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/xstate.ll
+; 4 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll

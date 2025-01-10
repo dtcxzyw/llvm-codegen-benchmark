@@ -1,7 +1,6 @@
 
-; 246 occurrences:
+; 245 occurrences:
 ; abc/optimized/aigCuts.c.ll
-; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/dauNonDsd.c.ll

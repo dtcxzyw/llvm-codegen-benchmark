@@ -13,14 +13,19 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 2 occurrences:
+; 7 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = tail call i64 @llvm.umin.i64(i64 %1, i64 %3)
+  %4 = call i64 @llvm.umin.i64(i64 %1, i64 %3)
   %5 = icmp eq i64 %0, %4
   ret i1 %5
 }

@@ -1,6 +1,6 @@
 
-%"class.mitsuba::ref.74.2602513" = type { ptr }
-%"class.boost::geometry::model::point.3015592" = type { [2 x double] }
+%"class.mitsuba::ref.74.2602480" = type { ptr }
+%"class.boost::geometry::model::point.3015558" = type { [2 x double] }
 
 ; 25 occurrences:
 ; mitsuba3/optimized/batch.cpp.ll
@@ -33,7 +33,7 @@ define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 9223372036854775800
   %4 = select i1 %3, i64 %1, i64 2305843009213693951
-  %5 = getelementptr nusw %"class.mitsuba::ref.74.2602513", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.mitsuba::ref.74.2602480", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -117,7 +117,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 9223372036854775800
   %4 = select i1 %3, i64 %1, i64 2305843009213693951
-  %5 = getelementptr nusw nuw %"class.mitsuba::ref.74.2602513", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.mitsuba::ref.74.2602480", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -223,7 +223,7 @@ define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
-  %5 = getelementptr %"class.boost::geometry::model::point.3015592", ptr %0, i64 %4
+  %5 = getelementptr %"class.boost::geometry::model::point.3015558", ptr %0, i64 %4
   ret ptr %5
 }
 

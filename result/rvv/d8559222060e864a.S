@@ -26,12 +26,6 @@ func0000000000000050:                   # @func0000000000000050
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v12, v10
 	ret
-func000000000000098c:                   # @func000000000000098c
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vv	v14, v10, v12
-	vmsle.vi	v10, v8, 0
-	vmor.mm	v0, v10, v14
-	ret
 func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12

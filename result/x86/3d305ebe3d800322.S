@@ -1,3 +1,8 @@
+func00000000000001f0:                   # @func00000000000001f0
+	imull	$544, %edx, %eax                # imm = 0x220
+	addq	%rsi, %rax
+	leaq	2176(%rdi,%rax), %rax
+	retq
 func00000000000000b0:                   # @func00000000000000b0
 	imull	$544, %edx, %eax                # imm = 0x220
 	cltq

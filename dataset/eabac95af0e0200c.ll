@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/limex_native.c.ll
 ; hyperscan/optimized/limex_simd128.c.ll
@@ -46,6 +46,7 @@
 ; llvm/optimized/ZOS.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; redis/optimized/dict.ll
 ; ruby/optimized/string.ll
 ; wireshark/optimized/to_str.c.ll
 ; xgboost/optimized/updater_approx.cc.ll

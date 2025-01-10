@@ -1,20 +1,20 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%"struct.std::pair.154.2617748" = type { %"class.std::__cxx11::basic_string.2617695", i64 }
-%"class.std::__cxx11::basic_string.2617695" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2617696", i64, %union.anon.0.2617697 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2617696" = type { ptr }
-%union.anon.0.2617697 = type { i64, [8 x i8] }
-%"struct.mold::elf::ElfRel.2642810" = type { %"class.mold::BigEndian.317.2642676", %"class.mold::BigEndian.2642674", %"class.mold::BigEndian.458.2642811", i8, %"class.mold::BigEndian.459.2642812" }
-%"class.mold::BigEndian.317.2642676" = type { [8 x i8] }
-%"class.mold::BigEndian.2642674" = type { [4 x i8] }
-%"class.mold::BigEndian.458.2642811" = type { [3 x i8] }
-%"class.mold::BigEndian.459.2642812" = type { [8 x i8] }
-%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
-%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
-%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%"struct.std::pair.154.2617715" = type { %"class.std::__cxx11::basic_string.2617662", i64 }
+%"class.std::__cxx11::basic_string.2617662" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2617663", i64, %union.anon.0.2617664 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2617663" = type { ptr }
+%union.anon.0.2617664 = type { i64, [8 x i8] }
+%"struct.mold::elf::ElfRel.2642777" = type { %"class.mold::BigEndian.317.2642643", %"class.mold::BigEndian.2642641", %"class.mold::BigEndian.458.2642778", i8, %"class.mold::BigEndian.459.2642779" }
+%"class.mold::BigEndian.317.2642643" = type { [8 x i8] }
+%"class.mold::BigEndian.2642641" = type { [4 x i8] }
+%"class.mold::BigEndian.458.2642778" = type { [3 x i8] }
+%"class.mold::BigEndian.459.2642779" = type { [8 x i8] }
+%class.TrafficTypesRowData.3443338 = type <{ i32, [4 x i8], %class.QString.3443327, i8, [7 x i8] }>
+%class.QString.3443327 = type { %struct.QArrayDataPointer.3443328 }
+%struct.QArrayDataPointer.3443328 = type { ptr, ptr, i64 }
 
 ; 71 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -92,7 +92,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 80
-  %3 = getelementptr nuw %"struct.std::pair.2601858", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nuw %"struct.std::pair.2601825", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -135,7 +135,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 80
-  %3 = getelementptr %"struct.std::pair.154.2617748", ptr %0, i64 %2, i32 1
+  %3 = getelementptr %"struct.std::pair.154.2617715", ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -155,7 +155,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 24
-  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642810", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642777", ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -24
   ret ptr %4
 }
@@ -183,7 +183,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 80
-  %3 = getelementptr %class.TrafficTypesRowData.3443372, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %class.TrafficTypesRowData.3443338, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 

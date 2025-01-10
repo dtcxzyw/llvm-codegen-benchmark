@@ -15,7 +15,7 @@ entry:
   ret i64 %3
 }
 
-; 483 occurrences:
+; 485 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -427,6 +427,8 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; ozz-animation/optimized/skeleton_builder.cc.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/zend_gc.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/pipeline.cpp.ll

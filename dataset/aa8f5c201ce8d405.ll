@@ -1,7 +1,7 @@
 
-%"struct.Node_Stack::INode.2741095" = type { ptr, i32 }
+%"struct.Node_Stack::INode.2741061" = type { ptr, i32 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
 ; crow/optimized/example_cors.cpp.ll
@@ -34,6 +34,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
@@ -124,7 +125,7 @@ entry:
   %2 = lshr i64 %1, 4
   %3 = add nuw nsw i64 %2, 4294967294
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741095", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741061", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -14,14 +14,6 @@ func0000000000000302:                   # @func0000000000000302
 	vmsne.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12
 	ret
-func00000000000001c2:                   # @func00000000000001c2
-	li	a0, 252
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
-	vmseq.vi	v14, v12, 0
-	vmsle.vv	v12, v8, v10
-	vmor.mm	v0, v14, v12
-	ret
 func0000000000000298:                   # @func0000000000000298
 	li	a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -93,6 +85,13 @@ func0000000000000054:                   # @func0000000000000054
 	vmseq.vi	v14, v12, 0
 	vmslt.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14
+	ret
+func00000000000001c2:                   # @func00000000000001c2
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vi	v12, v12, 1
+	vmseq.vi	v14, v12, 0
+	vmsle.vv	v12, v8, v10
+	vmor.mm	v0, v14, v12
 	ret
 func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 8, e32, m2, ta, ma

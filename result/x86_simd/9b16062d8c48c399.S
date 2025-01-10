@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovsxdq	%xmm1, %ymm0
 	retq
 .LCPI1_0:
-	.long	16                              # 0x10
+	.long	8192                            # 0x2000
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

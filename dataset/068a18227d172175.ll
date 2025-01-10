@@ -46,8 +46,9 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/vht.ll
 ; linux/optimized/vt.ll
@@ -98,16 +99,6 @@ define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = icmp ugt i8 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; linux/optimized/inet_connection_sock.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i8 %0, i8 %1) #0 {
-entry:
-  %2 = lshr i8 %1, 1
-  %3 = icmp uge i8 %2, %0
   ret i1 %3
 }
 

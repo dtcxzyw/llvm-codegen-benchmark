@@ -1,7 +1,7 @@
 
-%struct.GCRef.3680589 = type { i64 }
+%struct.GCRef.3680539 = type { i64 }
 
-; 102 occurrences:
+; 104 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; bullet3/optimized/btGImpactBvh.ll
@@ -58,7 +58,9 @@
 ; meshlab/optimized/shell.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; openusd/optimized/ray.cpp.ll
@@ -108,7 +110,7 @@
 define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 1160
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 264
   %5 = getelementptr nusw nuw [3 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -142,7 +144,7 @@ define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 35, i64 %2
   %4 = getelementptr nusw i8, ptr %0, i64 -304
-  %5 = getelementptr nusw nuw [38 x %struct.GCRef.3680589], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [38 x %struct.GCRef.3680539], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

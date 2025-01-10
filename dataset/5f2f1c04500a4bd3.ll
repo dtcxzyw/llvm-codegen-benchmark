@@ -1,10 +1,13 @@
 
-%"class.std::unique_ptr.334.2635786" = type { %"struct.std::__uniq_ptr_data.335.2635787" }
-%"struct.std::__uniq_ptr_data.335.2635787" = type { %"class.std::__uniq_ptr_impl.336.2635788" }
-%"class.std::__uniq_ptr_impl.336.2635788" = type { %"class.std::tuple.337.2635789" }
-%"class.std::tuple.337.2635789" = type { %"struct.std::_Tuple_impl.338.2635790" }
-%"struct.std::_Tuple_impl.338.2635790" = type { %"struct.std::_Head_base.341.2635791" }
-%"struct.std::_Head_base.341.2635791" = type { ptr }
+%"class.std::unique_ptr.334.2635753" = type { %"struct.std::__uniq_ptr_data.335.2635754" }
+%"struct.std::__uniq_ptr_data.335.2635754" = type { %"class.std::__uniq_ptr_impl.336.2635755" }
+%"class.std::__uniq_ptr_impl.336.2635755" = type { %"class.std::tuple.337.2635756" }
+%"class.std::tuple.337.2635756" = type { %"struct.std::_Tuple_impl.338.2635757" }
+%"struct.std::_Tuple_impl.338.2635757" = type { %"struct.std::_Head_base.341.2635758" }
+%"struct.std::_Head_base.341.2635758" = type { ptr }
+%"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044655" = type <{ ptr, ptr, %"class.boost::archive::version_type.3044650", %"struct.boost::archive::tracking_type.3044656", i8, [2 x i8] }>
+%"class.boost::archive::version_type.3044650" = type { i32 }
+%"struct.boost::archive::tracking_type.3044656" = type { i8 }
 
 ; 62 occurrences:
 ; arrow/optimized/builder.cc.ll
@@ -77,7 +80,7 @@ entry:
   ret ptr %3
 }
 
-; 136 occurrences:
+; 138 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -123,6 +126,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; jq/optimized/unicode.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/rdgif.c.ll
 ; libjpeg-turbo/optimized/wrppm.c.ll
@@ -175,6 +179,7 @@ entry:
 ; nuttx/optimized/serial_io.c.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
+; oniguruma/optimized/unicode.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
@@ -218,21 +223,18 @@ entry:
 define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw %"class.std::unique_ptr.334.2635786", ptr %0, i64 %2
+  %3 = getelementptr nusw %"class.std::unique_ptr.334.2635753", ptr %0, i64 %2
   ret ptr %3
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; boost/optimized/basic_iarchive.ll
-; jq/optimized/unicode.ll
-; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
-; oniguruma/optimized/unicode.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044655", ptr %0, i64 %2
   ret ptr %3
 }
 

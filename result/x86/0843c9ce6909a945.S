@@ -9,14 +9,13 @@ func0000000000000294:                   # @func0000000000000294
 	cmovael	%ecx, %eax
 	retq
 func0000000000000021:                   # @func0000000000000021
-	andl	$3, %edi
+	andl	$7, %edi
 	xorl	%eax, %eax
-	cmpl	$2, %edi
-	sete	%al
-	leal	1(%rax,%rax), %ecx
 	cmpl	$1, %edi
-	movl	$2, %eax
-	cmovnel	%ecx, %eax
+	setne	%al
+	incl	%eax
+	testl	%edi, %edi
+	cmovel	%edi, %eax
 	retq
 func0000000000000181:                   # @func0000000000000181
 	andl	$61440, %edi                    # imm = 0xF000

@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 142 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -85,6 +85,7 @@
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; nuttx/optimized/intel64_irq.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
+; opencv/optimized/subdivision2d.cpp.ll
 ; openjdk/optimized/X11FontScaler_md.ll
 ; openjdk/optimized/cmsps2.ll
 ; openjdk/optimized/freetypeScaler.ll

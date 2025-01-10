@@ -18,16 +18,6 @@ func0000000000000052:                   # @func0000000000000052
 	cmpl	%esi, %eax
 	cmovgel	%esi, %eax
 	retq
-func0000000000000062:                   # @func0000000000000062
-	leal	(%rdx,%rdi), %eax
-	cmpl	%esi, %eax
-	cmovgel	%esi, %eax
-	retq
-func000000000000007a:                   # @func000000000000007a
-	leal	(%rdx,%rdi), %eax
-	cmpl	%esi, %eax
-	cmovgel	%esi, %eax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	leal	(%rdx,%rdi), %eax
 	cmpl	%esi, %eax

@@ -36,12 +36,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	vrsub.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000074:                   # @func0000000000000074
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vrsub.vi	v8, v8, 4
-	vmsltu.vv	v0, v8, v12
-	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
@@ -104,6 +98,14 @@ func00000000000000a8:                   # @func00000000000000a8
 	li	a0, 960
 	vrsub.vx	v8, v8, a0
 	vmsltu.vv	v0, v12, v8
+	ret
+func0000000000000074:                   # @func0000000000000074
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v12, v10
+	lui	a0, 16
+	addiw	a0, a0, 39
+	vrsub.vx	v8, v8, a0
+	vmsltu.vv	v0, v8, v12
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	vsetivli	zero, 4, e64, m2, ta, ma

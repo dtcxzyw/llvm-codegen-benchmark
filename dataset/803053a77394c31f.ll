@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
-%"struct.std::__atomic_base.2625634" = type { i64 }
+%"struct.std::atomic.2625598" = type { %"struct.std::__atomic_base.2625601" }
+%"struct.std::__atomic_base.2625601" = type { i64 }
 
 ; 4 occurrences:
 ; abc/optimized/giaDup.c.ll
@@ -11,7 +11,7 @@
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = getelementptr nusw nuw %"struct.std::atomic.2625631", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::atomic.2625598", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -34,7 +34,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, %2
-  %4 = getelementptr nusw %"struct.std::atomic.2625631", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.std::atomic.2625598", ptr %0, i64 %3
   ret ptr %4
 }
 

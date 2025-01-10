@@ -61,6 +61,12 @@ func0000000000000078:                   # @func0000000000000078
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	addq	$8191, %rsi                     # imm = 0x1FFF
+	andq	$-8192, %rsi                    # imm = 0xE000
+	cmpq	%rdi, %rsi
+	seta	%al
+	retq
 func0000000000000014:                   # @func0000000000000014
 	decl	%esi
 	cmpq	%rdi, %rsi
@@ -76,12 +82,6 @@ func0000000000000024:                   # @func0000000000000024
 	andq	$-8, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al
-	retq
-func0000000000000048:                   # @func0000000000000048
-	addq	$23, %rsi
-	andq	$-16, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	incl	%esi

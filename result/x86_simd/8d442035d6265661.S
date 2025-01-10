@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.quad	549755813888                    # 0x8000000000
+	.quad	8796093022208                   # 0x80000000000
 func0000000000000041:                   # @func0000000000000041
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0

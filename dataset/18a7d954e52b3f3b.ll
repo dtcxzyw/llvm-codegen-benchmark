@@ -1,6 +1,6 @@
 
-%"struct.std::array.26.2701739" = type { [4 x i32] }
-%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
+%"struct.std::array.26.2701705" = type { [4 x i32] }
+%struct.Abc_IffObj_t_.2876931 = type { [7 x float] }
 
 ; 18 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
@@ -25,7 +25,7 @@
 define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.std::array.26.2701739", ptr %0, i64 %1
+  %4 = getelementptr nusw nuw %"struct.std::array.26.2701705", ptr %0, i64 %1
   %5 = getelementptr nusw [4 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -77,7 +77,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876965, ptr %0, i64 %1
+  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876931, ptr %0, i64 %1
   %5 = getelementptr nusw [7 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }

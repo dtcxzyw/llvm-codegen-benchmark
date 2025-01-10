@@ -1,33 +1,33 @@
 
-%"class.std::vector.2909148" = type { %"struct.std::_Vector_base.2909149" }
-%"struct.std::_Vector_base.2909149" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909150" }
-%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909150" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909151" }
-%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909151" = type { ptr, ptr, ptr }
-%"struct.clang::DeclaratorChunk.3202490" = type { i32, %"class.clang::SourceLocation.3202348", %"class.clang::SourceLocation.3202348", %"class.clang::ParsedAttributesView.3202491", %union.anon.1799.3202492 }
-%"class.clang::SourceLocation.3202348" = type { i32 }
-%"class.clang::ParsedAttributesView.3202491" = type { %"class.clang::SourceRange.3202447", %"class.llvm::SmallVector.654.3202493" }
-%"class.clang::SourceRange.3202447" = type { %"class.clang::SourceLocation.3202348", %"class.clang::SourceLocation.3202348" }
-%"class.llvm::SmallVector.654.3202493" = type { %"class.llvm::SmallVectorImpl.655.3202482", %"struct.llvm::SmallVectorStorage.658.3202494" }
-%"class.llvm::SmallVectorImpl.655.3202482" = type { %"class.llvm::SmallVectorTemplateBase.656.3202484" }
-%"class.llvm::SmallVectorTemplateBase.656.3202484" = type { %"class.llvm::SmallVectorTemplateCommon.657.3202485" }
-%"class.llvm::SmallVectorTemplateCommon.657.3202485" = type { %"class.llvm::SmallVectorBase.3202411" }
-%"class.llvm::SmallVectorBase.3202411" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.658.3202494" = type { [48 x i8] }
-%union.anon.1799.3202492 = type { %"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202495", [72 x i8] }
-%"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202495" = type { i8, ptr }
-%struct.xhci_root_port_bw_info.3534127 = type { %struct.list_head.3534128, i32, %struct.xhci_interval_bw_table.3534129 }
-%struct.list_head.3534128 = type { ptr, ptr }
-%struct.xhci_interval_bw_table.3534129 = type { i32, [16 x %struct.xhci_interval_bw.3534130], i32, i32, i32 }
-%struct.xhci_interval_bw.3534130 = type { i32, %struct.list_head.3534128, [3 x i32] }
-%"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643359" = type { i32, %class.inf_rational.3643357, %class.ptr_vector.3643360 }
-%class.inf_rational.3643357 = type { %class.rational.3643353, %class.rational.3643353 }
-%class.rational.3643353 = type { %class.mpq.3643354 }
-%class.mpq.3643354 = type { %class.mpz.3643355, %class.mpz.3643355 }
-%class.mpz.3643355 = type { i32, i8, ptr }
-%class.ptr_vector.3643360 = type { %class.vector.3643361 }
-%class.vector.3643361 = type { ptr }
-%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
-%union.Value.3680876 = type { ptr }
+%"class.std::vector.2909114" = type { %"struct.std::_Vector_base.2909115" }
+%"struct.std::_Vector_base.2909115" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909116" }
+%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl.2909116" = type { %"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909117" }
+%"struct.std::_Vector_base<unsigned char, LightGBM::Common::AlignmentAllocator<unsigned char>>::_Vector_impl_data.2909117" = type { ptr, ptr, ptr }
+%"struct.clang::DeclaratorChunk.3202456" = type { i32, %"class.clang::SourceLocation.3202314", %"class.clang::SourceLocation.3202314", %"class.clang::ParsedAttributesView.3202457", %union.anon.1799.3202458 }
+%"class.clang::SourceLocation.3202314" = type { i32 }
+%"class.clang::ParsedAttributesView.3202457" = type { %"class.clang::SourceRange.3202413", %"class.llvm::SmallVector.654.3202459" }
+%"class.clang::SourceRange.3202413" = type { %"class.clang::SourceLocation.3202314", %"class.clang::SourceLocation.3202314" }
+%"class.llvm::SmallVector.654.3202459" = type { %"class.llvm::SmallVectorImpl.655.3202448", %"struct.llvm::SmallVectorStorage.658.3202460" }
+%"class.llvm::SmallVectorImpl.655.3202448" = type { %"class.llvm::SmallVectorTemplateBase.656.3202450" }
+%"class.llvm::SmallVectorTemplateBase.656.3202450" = type { %"class.llvm::SmallVectorTemplateCommon.657.3202451" }
+%"class.llvm::SmallVectorTemplateCommon.657.3202451" = type { %"class.llvm::SmallVectorBase.3202377" }
+%"class.llvm::SmallVectorBase.3202377" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.658.3202460" = type { [48 x i8] }
+%union.anon.1799.3202458 = type { %"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202461", [72 x i8] }
+%"struct.clang::DeclaratorChunk::ArrayTypeInfo.3202461" = type { i8, ptr }
+%struct.xhci_root_port_bw_info.3534093 = type { %struct.list_head.3534094, i32, %struct.xhci_interval_bw_table.3534095 }
+%struct.list_head.3534094 = type { ptr, ptr }
+%struct.xhci_interval_bw_table.3534095 = type { i32, [16 x %struct.xhci_interval_bw.3534096], i32, i32, i32 }
+%struct.xhci_interval_bw.3534096 = type { i32, %struct.list_head.3534094, [3 x i32] }
+%"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643325" = type { i32, %class.inf_rational.3643323, %class.ptr_vector.3643326 }
+%class.inf_rational.3643323 = type { %class.rational.3643319, %class.rational.3643319 }
+%class.rational.3643319 = type { %class.mpq.3643320 }
+%class.mpq.3643320 = type { %class.mpz.3643321, %class.mpz.3643321 }
+%class.mpz.3643321 = type { i32, i8, ptr }
+%class.ptr_vector.3643326 = type { %class.vector.3643327 }
+%class.vector.3643327 = type { ptr }
+%struct.lua_TValue.3680825 = type { %union.Value.3680826, i32 }
+%union.Value.3680826 = type { ptr }
 
 ; 1 occurrences:
 ; ruby/optimized/regexec.ll
@@ -501,7 +501,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.2909148", ptr %1, i64 %3
+  %4 = getelementptr %"class.std::vector.2909114", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   %6 = icmp eq ptr %0, %5
   ret i1 %6
@@ -514,7 +514,7 @@ define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.clang::DeclaratorChunk.3202490", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.clang::DeclaratorChunk.3202456", ptr %1, i64 %4
   %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
@@ -539,7 +539,7 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.xhci_root_port_bw_info.3534127, ptr %1, i64 %4
+  %5 = getelementptr %struct.xhci_root_port_bw_info.3534093, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -551,7 +551,7 @@ define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643359", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"struct.smt::theory_dense_diff_logic<smt::mi_ext>::cell.3643325", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -563,7 +563,7 @@ entry:
 define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.lua_TValue.3680875, ptr %1, i64 %3
+  %4 = getelementptr %struct.lua_TValue.3680825, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
   %6 = icmp ult ptr %0, %5
   ret i1 %6

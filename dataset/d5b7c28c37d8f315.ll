@@ -396,8 +396,7 @@ entry:
   ret ptr %3
 }
 
-; 333 occurrences:
-; abc/optimized/cuddApprox.c.ll
+; 332 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/giaResub.c.ll

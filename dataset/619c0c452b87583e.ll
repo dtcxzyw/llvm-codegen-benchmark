@@ -1,5 +1,5 @@
 
-%class.ShenandoahEvacOOMCounter.2747877 = type { i32, [60 x i8] }
+%class.ShenandoahEvacOOMCounter.2747843 = type { i32, [60 x i8] }
 
 ; 21 occurrences:
 ; nanobind/optimized/nb_func.cpp.ll
@@ -29,7 +29,7 @@ entry:
   %3 = lshr i64 %2, 33
   %4 = xor i64 %3, %2
   %5 = and i64 %4, %1
-  %6 = getelementptr nusw %class.ShenandoahEvacOOMCounter.2747877, ptr %0, i64 %5
+  %6 = getelementptr nusw %class.ShenandoahEvacOOMCounter.2747843, ptr %0, i64 %5
   ret ptr %6
 }
 

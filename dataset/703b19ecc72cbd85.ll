@@ -11,10 +11,9 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/zlibmodule.ll
 ; git/optimized/repack.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll

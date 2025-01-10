@@ -1,5 +1,6 @@
 
-; 28 occurrences:
+; 29 occurrences:
+; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll

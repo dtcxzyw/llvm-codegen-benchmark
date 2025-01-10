@@ -1,17 +1,17 @@
 
-%"struct.c4::yml::Parser::State.2774952" = type { i32, i64, i64, %"struct.c4::basic_substring.0.2774941", i64, %"struct.c4::yml::Location.2774939", %"struct.c4::yml::Parser::LineContents.2774953", i64 }
-%"struct.c4::basic_substring.0.2774941" = type { ptr, i64 }
-%"struct.c4::yml::Location.2774939" = type { %"struct.c4::yml::LineCol.2774940", %"struct.c4::basic_substring.0.2774941" }
-%"struct.c4::yml::LineCol.2774940" = type { i64, i64, i64 }
-%"struct.c4::yml::Parser::LineContents.2774953" = type { %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941", %"struct.c4::basic_substring.0.2774941", i64 }
-%"class.clang::SourceLocation.3222848" = type { i32 }
+%"struct.c4::yml::Parser::State.2774918" = type { i32, i64, i64, %"struct.c4::basic_substring.0.2774907", i64, %"struct.c4::yml::Location.2774905", %"struct.c4::yml::Parser::LineContents.2774919", i64 }
+%"struct.c4::basic_substring.0.2774907" = type { ptr, i64 }
+%"struct.c4::yml::Location.2774905" = type { %"struct.c4::yml::LineCol.2774906", %"struct.c4::basic_substring.0.2774907" }
+%"struct.c4::yml::LineCol.2774906" = type { i64, i64, i64 }
+%"struct.c4::yml::Parser::LineContents.2774919" = type { %"struct.c4::basic_substring.0.2774907", %"struct.c4::basic_substring.0.2774907", %"struct.c4::basic_substring.0.2774907", i64 }
+%"class.clang::SourceLocation.3222814" = type { i32 }
 
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000064(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"struct.c4::yml::Parser::State.2774952", ptr %2, i64 %0
+  %3 = getelementptr %"struct.c4::yml::Parser::State.2774918", ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 -288
   %5 = getelementptr nusw nuw i8, ptr %1, i64 40
   %6 = icmp ult i64 %0, 2
@@ -170,7 +170,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000061(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr %"class.clang::SourceLocation.3222848", ptr %2, i64 %0
+  %3 = getelementptr %"class.clang::SourceLocation.3222814", ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 -4
   %5 = getelementptr nusw nuw i8, ptr %1, i64 24
   %6 = icmp eq i64 %0, 0

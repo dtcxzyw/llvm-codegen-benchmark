@@ -1,5 +1,5 @@
 
-; 514 occurrences:
+; 517 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -228,6 +229,7 @@
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/mfsResub.c.ll
+; abc/optimized/mioFunc.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -341,6 +343,7 @@
 ; icu/optimized/uitercollationiterator.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie.ll
+; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
@@ -622,7 +625,8 @@ entry:
   ret ptr %4
 }
 
-; 90 occurrences:
+; 92 occurrences:
+; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
@@ -631,6 +635,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ioJson.c.ll
 ; abc/optimized/mioParse.c.ll
+; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -722,29 +727,18 @@ entry:
   ret ptr %4
 }
 
-; 9 occurrences:
-; abc/optimized/abcAttach.c.ll
-; abc/optimized/dauTree.c.ll
-; abc/optimized/extraUtilPerm.c.ll
+; 1 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/mioFunc.c.ll
-; abc/optimized/sbdWin.c.ll
-; abc/optimized/utilIsop.c.ll
-; imgui/optimized/imgui.cpp.ll
-; libwebp/optimized/palette.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 5 occurrences:
-; abc/optimized/abcDetect.c.ll
-; abc/optimized/mioUtils.c.ll
-; abc/optimized/sfmLib.c.ll
+; 2 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; opencv/optimized/stereo_calib.cpp.ll
 ; Function Attrs: nounwind
@@ -752,7 +746,7 @@ define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   ret ptr %4
 }
 

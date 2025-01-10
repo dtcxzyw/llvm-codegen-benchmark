@@ -691,9 +691,10 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; openssl/optimized/libcrypto-lib-rand_pool.ll
 ; openssl/optimized/libcrypto-shlib-rand_pool.ll
+; qemu/optimized/block_cloop.c.ll
 ; tev/optimized/ImageButton.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {

@@ -200,3 +200,9 @@ func000000000000008c:                   # @func000000000000008c
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func000000000000004c:                   # @func000000000000004c
+	sext.w	a1, a1
+	sext.w	a2, a2
+	slt	a1, a1, a2
+	or	a0, a0, a1
+	ret

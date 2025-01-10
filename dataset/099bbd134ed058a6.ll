@@ -1,5 +1,5 @@
 
-%struct.pte_t.3530392 = type { i64 }
+%struct.pte_t.3530358 = type { i64 }
 
 ; 119 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
@@ -156,7 +156,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 511
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.pte_t.3530392, ptr %4, i64 %3
+  %5 = getelementptr %struct.pte_t.3530358, ptr %4, i64 %3
   ret ptr %5
 }
 

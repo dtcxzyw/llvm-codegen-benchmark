@@ -15,16 +15,11 @@ entry:
   ret i16 %4
 }
 
-; 9 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/autofit.c.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/CodeViewRecordIO.cpp.ll
 ; minetest/optimized/database.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i1 %0, i16 %1, i64 %2) #0 {
 entry:

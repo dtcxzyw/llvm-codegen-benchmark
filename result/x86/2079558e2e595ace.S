@@ -334,13 +334,6 @@ func0000000000000110:                   # @func0000000000000110
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
-	testl	%edx, %edx
-	setle	%cl
-	cmpq	%rsi, %rdi
-	seta	%al
-	orb	%cl, %al
-	retq
 func0000000000000054:                   # @func0000000000000054
 	testl	%edx, %edx
 	sete	%cl

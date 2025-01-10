@@ -1,6 +1,5 @@
 
-; 13 occurrences:
-; git/optimized/refs.ll
+; 12 occurrences:
 ; gromacs/optimized/sim_util.cpp.ll
 ; icu/optimized/formattedval_sbimpl.ll
 ; imgui/optimized/imgui.cpp.ll

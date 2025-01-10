@@ -28,9 +28,3 @@ func000000000000000a:                   # @func000000000000000a
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	cltq
-	leaq	(%rdi,%rax,8), %rax
-	retq

@@ -31,26 +31,49 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
+func000000000000002a:                   # @func000000000000002a
+	sext.w	a2, a2
+	sgtz	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000033:                   # @func0000000000000033
 	sext.w	a2, a2
-	beqz	a2, .LBB4_2
+	beqz	a2, .LBB5_2
 	lui	a1, 4
 	addiw	a1, a1, -1764
-.LBB4_2:                                # %entry
+.LBB5_2:                                # %entry
+	add	a0, a0, a1
+	ret
+func000000000000001a:                   # @func000000000000001a
+	sext.w	a2, a2
+	slti	a2, a2, 0
+	addi	a2, a2, -1
+	and	a1, a1, a2
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
-	beqz	a2, .LBB5_2
+	beqz	a2, .LBB7_2
 	li	a1, 24
-.LBB5_2:                                # %entry
+.LBB7_2:                                # %entry
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 func0000000000000032:                   # @func0000000000000032
 	sext.w	a2, a2
-	beqz	a2, .LBB6_2
+	beqz	a2, .LBB8_2
 	li	a1, 32
-.LBB6_2:                                # %entry
+.LBB8_2:                                # %entry
+	add	a0, a0, a1
+	ret
+func000000000000001b:                   # @func000000000000001b
+	sext.w	a2, a2
+	li	a3, 5
+	bge	a2, a3, .LBB9_2
+	li	a1, 16
+.LBB9_2:                                # %entry
 	add	a0, a0, a1
 	ret

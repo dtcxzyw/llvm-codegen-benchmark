@@ -1,5 +1,5 @@
 
-; 400 occurrences:
+; 399 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/light_array.cc.ll
@@ -118,7 +118,6 @@
 ; linux/optimized/tree.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/yenta_socket.ll
-; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll

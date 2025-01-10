@@ -110,9 +110,8 @@ entry:
   ret i32 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_vdsc.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; postgres/optimized/utf8_and_gb18030.ll

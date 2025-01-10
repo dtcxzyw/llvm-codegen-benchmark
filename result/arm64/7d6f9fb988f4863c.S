@@ -62,11 +62,3 @@ func0000000000000504:                   // @func0000000000000504
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000484:                   // @func0000000000000484
-// %bb.0:                               // %entry
-	mov	w8, w2
-	cmp	x0, x1
-	ccmp	x0, x8, #0, hs
-	cset	w0, lo
-	ret
-                                        // -- End function

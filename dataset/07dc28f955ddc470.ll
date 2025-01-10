@@ -1,11 +1,11 @@
 
-%"class.mold::LittleEndian.2666054" = type { [4 x i8] }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct._zend_op.2789890 = type { ptr, %union._znode_op.2789891, %union._znode_op.2789891, %union._znode_op.2789891, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2789891 = type { i32 }
+%"class.mold::LittleEndian.2666021" = type { [4 x i8] }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct._zend_op.2789856 = type { ptr, %union._znode_op.2789857, %union._znode_op.2789857, %union._znode_op.2789857, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2789857 = type { i32 }
 
 ; 86 occurrences:
 ; abc/optimized/wlnRead.c.ll
@@ -694,7 +694,7 @@ entry:
   ret ptr %5
 }
 
-; 511 occurrences:
+; 510 occurrences:
 ; abc/optimized/Options.cpp.ll
 ; abc/optimized/Options2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -755,7 +755,6 @@ entry:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
@@ -1709,7 +1708,7 @@ entry:
   ret ptr %5
 }
 
-; 112 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/seed_material_test.cc.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -1814,6 +1813,7 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_cts.ll
 ; php/optimized/hash_xxhash.ll
+; redis/optimized/networking.ll
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; stb/optimized/stb_image_write.c.ll
@@ -1942,7 +1942,7 @@ entry:
   ret ptr %5
 }
 
-; 278 occurrences:
+; 279 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -2039,6 +2039,7 @@ entry:
 ; darktable/optimized/introspection_dither.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -2632,10 +2633,11 @@ entry:
   ret ptr %5
 }
 
-; 153 occurrences:
+; 154 occurrences:
 ; abc/optimized/kitSop.c.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; eastl/optimized/EASprintfCore.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/Heap.cpp.ll
@@ -2973,7 +2975,7 @@ define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 4
-  %5 = getelementptr %"class.mold::LittleEndian.2666054", ptr %4, i64 %0
+  %5 = getelementptr %"class.mold::LittleEndian.2666021", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -2993,13 +2995,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 2
   %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -3023,7 +3025,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/hash_xxhash.ll
 ; raylib/optimized/rcore.c.ll
-; redis/optimized/networking.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
@@ -3034,7 +3035,7 @@ entry:
   ret ptr %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -3056,7 +3057,6 @@ entry:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openusd/optimized/restoration.c.ll
 ; postgres/optimized/network.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
@@ -3064,11 +3064,11 @@ define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 6
-  %5 = getelementptr %"struct.OT::IntType.139.2736869", ptr %4, i64 %0
+  %5 = getelementptr %"struct.OT::IntType.139.2736835", ptr %4, i64 %0
   ret ptr %5
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -3108,6 +3108,7 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
+; openusd/optimized/restoration.c.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -3122,10 +3123,9 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/lz_encoder_mf.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; git/optimized/read-cache.ll
 ; hermes/optimized/escape.cpp.ll
@@ -3141,7 +3141,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct._zend_op.2789890, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct._zend_op.2789856, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -64
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5

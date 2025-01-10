@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
@@ -46,7 +46,6 @@
 ; llvm/optimized/ToolChain.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; opencv/optimized/dtfilter_cpu.cpp.ll
-; openjdk/optimized/dependencies.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openusd/optimized/primData.cpp.ll

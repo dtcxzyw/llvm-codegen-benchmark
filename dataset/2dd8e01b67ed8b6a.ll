@@ -1,5 +1,5 @@
 
-%class.relocInfo.2746786 = type { i16 }
+%class.relocInfo.2746752 = type { i16 }
 
 ; 3 occurrences:
 ; cpython/optimized/unicodeobject.ll
@@ -11,7 +11,7 @@ entry:
   %2 = and i16 %1, 1023
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 2
-  %5 = getelementptr %class.relocInfo.2746786, ptr %4, i64 %3
+  %5 = getelementptr %class.relocInfo.2746752, ptr %4, i64 %3
   ret ptr %5
 }
 

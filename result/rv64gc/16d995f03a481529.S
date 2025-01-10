@@ -109,19 +109,19 @@ func000000000000010c:                   # @func000000000000010c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
+func00000000000000cc:                   # @func00000000000000cc
+	andi	a0, a0, 255
+	lui	a2, 3
+	addiw	a2, a2, -9
+	slt	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
+	ret
 func0000000000000286:                   # @func0000000000000286
 	slli	a0, a0, 56
 	srai	a0, a0, 56
 	sltiu	a1, a1, 19
 	slti	a0, a0, 0
-	and	a0, a0, a1
-	ret
-func00000000000000cc:                   # @func00000000000000cc
-	andi	a0, a0, 255
-	lui	a2, 2
-	addiw	a2, a2, -2
-	slt	a1, a1, a2
-	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1

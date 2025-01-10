@@ -282,7 +282,7 @@ entry:
   ret i1 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; cmake/optimized/cmList.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -290,7 +290,6 @@ entry:
 ; libquic/optimized/time.cc.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openjdk/optimized/awt_ImagingLib.ll
 ; postgres/optimized/localtime.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ruby/optimized/unicode.ll
@@ -831,7 +830,8 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; icu/optimized/timezone.ll
 ; icu/optimized/tzfmt.ll
 ; libwebp/optimized/vp8l_enc.c.ll

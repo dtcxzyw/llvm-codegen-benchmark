@@ -1,8 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
-	cmpq	$7, %rsi
-	movl	%edi, %ecx
-	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
-	cmovneq	%rcx, %rax
+	testq	%rsi, %rsi
+	movl	%edi, %eax
+	cmoveq	%rsi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	testq	%rsi, %rsi

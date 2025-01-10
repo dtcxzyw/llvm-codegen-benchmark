@@ -1,16 +1,16 @@
 
-%struct.smvt_control.2635513 = type { i32, i32 }
-%struct.iovec.2690185 = type { ptr, i64 }
-%struct.contour_point_t.2730685 = type { float, float, i8, i8 }
-%"struct.draco::rans_sym.3087878" = type { i32, i32 }
-%"class.llvm::MachineOperand.3156275" = type { i32, %union.anon.431.3156276, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156277" }
-%union.anon.431.3156276 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3156277" = type { %"class.llvm::ArrayRef.432.3156278" }
-%"class.llvm::ArrayRef.432.3156278" = type { ptr, i64 }
-%"class.llvm::MachineOperand.3162973" = type { i32, %union.anon.268.3162974, ptr, %"union.llvm::MachineOperand::ContentsUnion.3162975" }
-%union.anon.268.3162974 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3162975" = type { %"class.llvm::ArrayRef.269.3162976" }
-%"class.llvm::ArrayRef.269.3162976" = type { ptr, i64 }
+%struct.smvt_control.2635480 = type { i32, i32 }
+%struct.iovec.2690151 = type { ptr, i64 }
+%struct.contour_point_t.2730651 = type { float, float, i8, i8 }
+%"struct.draco::rans_sym.3087844" = type { i32, i32 }
+%"class.llvm::MachineOperand.3156241" = type { i32, %union.anon.431.3156242, ptr, %"union.llvm::MachineOperand::ContentsUnion.3156243" }
+%union.anon.431.3156242 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3156243" = type { %"class.llvm::ArrayRef.432.3156244" }
+%"class.llvm::ArrayRef.432.3156244" = type { ptr, i64 }
+%"class.llvm::MachineOperand.3162939" = type { i32, %union.anon.268.3162940, ptr, %"union.llvm::MachineOperand::ContentsUnion.3162941" }
+%union.anon.268.3162940 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3162941" = type { %"class.llvm::ArrayRef.269.3162942" }
+%"class.llvm::ArrayRef.269.3162942" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
@@ -35,7 +35,7 @@ entry:
   %4 = add nsw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.smvt_control.2635513, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.smvt_control.2635480, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -50,7 +50,7 @@ entry:
   %4 = add nuw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.iovec.2690185, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.iovec.2690151, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -117,7 +117,7 @@ entry:
   %4 = add i32 %1, -4
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.contour_point_t.2730685, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.contour_point_t.2730651, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -158,7 +158,7 @@ entry:
   %4 = add nuw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"struct.draco::rans_sym.3087878", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.draco::rans_sym.3087844", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -171,7 +171,7 @@ entry:
   %4 = add i32 %1, 5
   %5 = add i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156275", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3156241", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -184,7 +184,7 @@ entry:
   %4 = add nuw nsw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3162973", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::MachineOperand.3162939", ptr %0, i64 %6
   ret ptr %7
 }
 

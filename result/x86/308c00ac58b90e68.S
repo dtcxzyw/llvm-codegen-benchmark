@@ -1,3 +1,6 @@
+func000000000000023f:                   # @func000000000000023f
+	leaq	-24(%rdi,%rdx), %rax
+	retq
 func000000000000003f:                   # @func000000000000003f
 	leaq	-24(%rdi,%rdx), %rax
 	retq

@@ -13,14 +13,13 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/plaCom.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; icu/optimized/number_decimalquantity.ll
 ; linux/optimized/mballoc.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll

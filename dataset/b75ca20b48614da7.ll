@@ -1,41 +1,41 @@
 
-%"struct.rocksdb::CompactionInputFiles.2623957" = type { i32, %"class.std::vector.0.2623944", %"class.std::vector.8.2623958" }
-%"class.std::vector.0.2623944" = type { %"struct.std::_Vector_base.1.2623945" }
-%"struct.std::_Vector_base.1.2623945" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623946" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623947" = type { ptr, ptr, ptr }
-%"class.std::vector.8.2623958" = type { %"struct.std::_Vector_base.9.2623959" }
-%"struct.std::_Vector_base.9.2623959" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623960" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623961" = type { ptr, ptr, ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
-%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
-%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
-%"struct.std::__atomic_base.108.2637633" = type { i64 }
-%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
-%"struct.std::__atomic_base.110.2637634" = type { ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507" = type { %"class.tbb::detail::d1::spin_rw_mutex.2712508", %"struct.std::atomic.6.2712509" }
-%"class.tbb::detail::d1::spin_rw_mutex.2712508" = type { %"struct.std::atomic.4.2712510" }
-%"struct.std::atomic.4.2712510" = type { %"struct.std::__atomic_base.5.2712511" }
-%"struct.std::__atomic_base.5.2712511" = type { i64 }
-%"struct.std::atomic.6.2712509" = type { %"struct.std::__atomic_base.7.2712512" }
-%"struct.std::__atomic_base.7.2712512" = type { ptr }
-%struct.Str_Obj_t_.2877125 = type { i32, i32, i32, i32 }
-%struct.bitmapped_commit.2883686 = type { ptr, ptr, ptr, i32, i32, i32 }
-%struct.media_description_t.3445997 = type { i32, i32, i32, i16, i16, %struct._address.3445995, %struct.transport_media_pt_t.3445998, %union.anon.3445999 }
-%struct._address.3445995 = type { i32, i32, ptr, ptr }
-%struct.transport_media_pt_t.3445998 = type { [20 x i32], i8, ptr, i32 }
-%union.anon.3445999 = type { %struct.anon.0.3446000 }
-%struct.anon.0.3446000 = type { %struct._address.3445995, i16 }
-%"struct.(anonymous namespace)::ApproxItem.3749183" = type <{ %"class.cv::Point_.3749174", i64, i32, i8, [3 x i8] }>
-%"class.cv::Point_.3749174" = type { i32, i32 }
-%"class.casadi::Matrix.3927125" = type { [8 x i8], %"class.casadi::Sparsity.3927126", %"class.std::vector.3927127" }
-%"class.casadi::Sparsity.3927126" = type { %"class.casadi::SharedObject.3927128" }
-%"class.casadi::SharedObject.3927128" = type { ptr }
-%"class.std::vector.3927127" = type { %"struct.std::_Vector_base.3927129" }
-%"struct.std::_Vector_base.3927129" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" }
-%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927130" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" }
-%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927131" = type { ptr, ptr, ptr }
+%"struct.rocksdb::CompactionInputFiles.2623924" = type { i32, %"class.std::vector.0.2623911", %"class.std::vector.8.2623925" }
+%"class.std::vector.0.2623911" = type { %"struct.std::_Vector_base.1.2623912" }
+%"struct.std::_Vector_base.1.2623912" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2623913" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2623914" = type { ptr, ptr, ptr }
+%"class.std::vector.8.2623925" = type { %"struct.std::_Vector_base.9.2623926" }
+%"struct.std::_Vector_base.9.2623926" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2623927" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2623928" = type { ptr, ptr, ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637597", %"struct.std::atomic.109.2637598" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637597" = type { %"struct.std::atomic.107.2637599" }
+%"struct.std::atomic.107.2637599" = type { %"struct.std::__atomic_base.108.2637600" }
+%"struct.std::__atomic_base.108.2637600" = type { i64 }
+%"struct.std::atomic.109.2637598" = type { %"struct.std::__atomic_base.110.2637601" }
+%"struct.std::__atomic_base.110.2637601" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712473" = type { %"class.tbb::detail::d1::spin_rw_mutex.2712474", %"struct.std::atomic.6.2712475" }
+%"class.tbb::detail::d1::spin_rw_mutex.2712474" = type { %"struct.std::atomic.4.2712476" }
+%"struct.std::atomic.4.2712476" = type { %"struct.std::__atomic_base.5.2712477" }
+%"struct.std::__atomic_base.5.2712477" = type { i64 }
+%"struct.std::atomic.6.2712475" = type { %"struct.std::__atomic_base.7.2712478" }
+%"struct.std::__atomic_base.7.2712478" = type { ptr }
+%struct.Str_Obj_t_.2877091 = type { i32, i32, i32, i32 }
+%struct.bitmapped_commit.2883652 = type { ptr, ptr, ptr, i32, i32, i32 }
+%struct.media_description_t.3445963 = type { i32, i32, i32, i16, i16, %struct._address.3445961, %struct.transport_media_pt_t.3445964, %union.anon.3445965 }
+%struct._address.3445961 = type { i32, i32, ptr, ptr }
+%struct.transport_media_pt_t.3445964 = type { [20 x i32], i8, ptr, i32 }
+%union.anon.3445965 = type { %struct.anon.0.3445966 }
+%struct.anon.0.3445966 = type { %struct._address.3445961, i16 }
+%"struct.(anonymous namespace)::ApproxItem.3749133" = type <{ %"class.cv::Point_.3749124", i64, i32, i8, [3 x i8] }>
+%"class.cv::Point_.3749124" = type { i32, i32 }
+%"class.casadi::Matrix.3927075" = type { [8 x i8], %"class.casadi::Sparsity.3927076", %"class.std::vector.3927077" }
+%"class.casadi::Sparsity.3927076" = type { %"class.casadi::SharedObject.3927078" }
+%"class.casadi::SharedObject.3927078" = type { ptr }
+%"class.std::vector.3927077" = type { %"struct.std::_Vector_base.3927079" }
+%"struct.std::_Vector_base.3927079" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927080" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl.3927080" = type { %"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927081" }
+%"struct.std::_Vector_base<casadi::SXElem, std::allocator<casadi::SXElem>>::_Vector_impl_data.3927081" = type { ptr, ptr, ptr }
 
 ; 130 occurrences:
 ; mold/optimized/arch-alpha.cc.ll
@@ -172,7 +172,7 @@
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623957", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::CompactionInputFiles.2623924", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -269,7 +269,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -336,7 +336,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712473", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -346,7 +346,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr %struct.Str_Obj_t_.2877125, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.Str_Obj_t_.2877091, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -356,7 +356,7 @@ entry:
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr nusw nuw %struct.bitmapped_commit.2883686, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %struct.bitmapped_commit.2883652, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -366,7 +366,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %struct.media_description_t.3445997, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.media_description_t.3445963, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -376,7 +376,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr %"struct.(anonymous namespace)::ApproxItem.3749183", ptr %0, i64 %3, i32 2
+  %4 = getelementptr %"struct.(anonymous namespace)::ApproxItem.3749133", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -386,7 +386,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr nusw %"class.casadi::Matrix.3927125", ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw %"class.casadi::Matrix.3927075", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

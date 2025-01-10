@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -13,6 +13,7 @@
 ; grpc/optimized/ev_poll_posix.cc.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; jq/optimized/regerror.ll
+; linux/optimized/rtmutex_api.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; node/optimized/libnode.cleanup_queue.ll

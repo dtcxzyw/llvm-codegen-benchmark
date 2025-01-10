@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 39 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -10,20 +10,14 @@
 ; assimp/optimized/X3DImporter_Group.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
-; assimp/optimized/zip.c.ll
-; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/x86.c.ll
-; hermes/optimized/zip.c.ll
 ; icu/optimized/collationkeys.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
-; linux/optimized/blk-map.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/i915_hwmon.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/lucid.cpp.ll
@@ -38,10 +32,8 @@
 ; openjdk/optimized/ifnode.ll
 ; postgres/optimized/varlena.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/net_l2tpv3.c.ll
 ; ruby/optimized/util.ll
-; slurm/optimized/KangarooTwelve.ll
 ; stockfish/optimized/search.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-mrcpv2.c.ll
@@ -55,7 +47,7 @@ entry:
   ret i32 %4
 }
 
-; 282 occurrences:
+; 281 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -84,7 +76,6 @@ entry:
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; freetype/optimized/psaux.c.ll
-; git/optimized/remote-curl.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/decNumber.ll
@@ -346,7 +337,7 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
+; 50 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -380,13 +371,10 @@ entry:
 ; abc/optimized/wlcReadVer.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
-; git/optimized/sha256.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; linux/optimized/devio.ll
 ; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/i915_gem_shmem.ll
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; llvm/optimized/HTMLRewrite.cpp.ll
 ; lua/optimized/ldo.ll

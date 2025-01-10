@@ -197,7 +197,7 @@ entry:
   ret i64 %4
 }
 
-; 91 occurrences:
+; 89 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -278,8 +278,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll

@@ -1,11 +1,11 @@
 
-%"struct.rocksdb::ThreadPoolImpl::Impl::BGItem.2617378" = type { ptr, %"class.std::function.2617358", %"class.std::function.2617358" }
-%"class.std::function.2617358" = type { %"class.std::_Function_base.2617359", ptr }
-%"class.std::_Function_base.2617359" = type { %"union.std::_Any_data.2617360", ptr }
-%"union.std::_Any_data.2617360" = type { %"union.std::_Nocopy_types.2617361" }
-%"union.std::_Nocopy_types.2617361" = type { { i64, i64 } }
-%struct.PendingWriteback.3651956 = type { %struct.buftag.3651957 }
-%struct.buftag.3651957 = type { i32, i32, i32, i32, i32 }
+%"struct.rocksdb::ThreadPoolImpl::Impl::BGItem.2617345" = type { ptr, %"class.std::function.2617325", %"class.std::function.2617325" }
+%"class.std::function.2617325" = type { %"class.std::_Function_base.2617326", ptr }
+%"class.std::_Function_base.2617326" = type { %"union.std::_Any_data.2617327", ptr }
+%"union.std::_Any_data.2617327" = type { %"union.std::_Nocopy_types.2617328" }
+%"union.std::_Nocopy_types.2617328" = type { { i64, i64 } }
+%struct.PendingWriteback.3651922 = type { %struct.buftag.3651923 }
+%struct.buftag.3651923 = type { i32, i32, i32, i32, i32 }
 
 ; 16 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -29,7 +29,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call i64 @llvm.smin.i64(i64 %1, i64 %2)
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"struct.rocksdb::ThreadPoolImpl::Impl::BGItem.2617378", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.rocksdb::ThreadPoolImpl::Impl::BGItem.2617345", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -128,7 +128,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.smin.i64(i64 %1, i64 %2)
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.PendingWriteback.3651956, ptr %0, i64 %4
+  %5 = getelementptr %struct.PendingWriteback.3651922, ptr %0, i64 %4
   ret ptr %5
 }
 

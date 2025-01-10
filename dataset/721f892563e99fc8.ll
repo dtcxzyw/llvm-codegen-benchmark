@@ -115,10 +115,11 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/tiff.c.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; openblas/optimized/lapacke_dgesdd_work.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i32 %1) #0 {

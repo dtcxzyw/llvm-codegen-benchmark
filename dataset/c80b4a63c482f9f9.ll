@@ -114,17 +114,6 @@ entry:
 }
 
 ; 1 occurrences:
-; openjdk/optimized/loopTransform.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = shl nsw i64 %0, 2
-  %4 = icmp sgt i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
@@ -323,17 +312,6 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/inet_net_pton.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl i64 %0, 3
-  %4 = icmp sgt i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
@@ -341,17 +319,6 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %0, 1
   %4 = icmp eq i64 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; cpython/optimized/stgdict.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl i64 %0, 3
-  %4 = icmp slt i64 %3, %2
   ret i1 %4
 }
 

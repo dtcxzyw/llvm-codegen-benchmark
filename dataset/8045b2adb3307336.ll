@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; boost/optimized/src.ll
-; cpython/optimized/action_helpers.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll

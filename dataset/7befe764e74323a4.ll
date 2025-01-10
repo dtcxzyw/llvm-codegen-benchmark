@@ -1,6 +1,6 @@
 
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
-%"class.QuantLib::Date.2830831" = type { i64 }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
+%"class.QuantLib::Date.2830797" = type { i64 }
 
 ; 798 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -869,7 +869,7 @@ entry:
   %3 = ashr exact i64 %2, 4
   %4 = ashr exact i64 %1, 4
   %5 = sub nsw i64 %4, %3
-  %6 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %0, i64 %5
+  %6 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -1110,7 +1110,7 @@ entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3
   %5 = sub nuw nsw i64 %4, %3
-  %6 = getelementptr nusw nuw %"class.QuantLib::Date.2830831", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.QuantLib::Date.2830797", ptr %0, i64 %5
   ret ptr %6
 }
 

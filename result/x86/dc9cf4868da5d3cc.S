@@ -122,12 +122,6 @@ func0000000000000074:                   # @func0000000000000074
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	movl	$4096, %eax                     # imm = 0x1000
-	subl	%esi, %eax
-	cmpq	%rax, %rdi
-	setl	%al
-	retq
 func0000000000000061:                   # @func0000000000000061
 	negl	%esi
 	cmpq	%rsi, %rdi

@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 65 occurrences:
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/cbaBlast.c.ll
@@ -48,9 +48,6 @@
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
 ; openssl/optimized/sslapitest-bin-filterprov.ll
 ; openssl/optimized/threadstest-bin-threadstest.ll
-; openusd/optimized/decodeframe.c.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_match.ll
 ; postgres/optimized/mvdistinct.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; redis/optimized/anet.ll
@@ -95,7 +92,7 @@ entry:
   ret i32 %4
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/sbdWin.c.ll
@@ -107,7 +104,6 @@ entry:
 ; git/optimized/abspath.ll
 ; git/optimized/files-backend.ll
 ; git/optimized/index-pack.ll
-; git/optimized/read-cache.ll
 ; git/optimized/xdiffi.ll
 ; gromacs/optimized/xtc3.c.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
@@ -153,7 +149,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/copy_history.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -161,7 +157,6 @@ entry:
 ; git/optimized/range-diff.ll
 ; git/optimized/repack.ll
 ; linux/optimized/cdrom.ll
-; opencv/optimized/lsd.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; z3/optimized/goal2nlsat.cpp.ll
 ; Function Attrs: nounwind

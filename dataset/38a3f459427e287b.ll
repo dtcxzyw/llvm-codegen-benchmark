@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 119 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/usage_config_test.cc.ll
 ; annoy/optimized/annoymodule.ll
@@ -34,10 +34,13 @@
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; linux/optimized/compaction.ll
+; linux/optimized/deflate.ll
+; linux/optimized/devio.ll
 ; linux/optimized/early_ioremap.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/i915_gem.ll
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/initramfs.ll
@@ -52,6 +55,7 @@
 ; linux/optimized/profile.ll
 ; linux/optimized/relay.ll
 ; linux/optimized/ring_buffer.ll
+; linux/optimized/scatterwalk.ll
 ; linux/optimized/tables.ll
 ; linux/optimized/tty_audit.ll
 ; linux/optimized/usercopy_64.ll
@@ -59,6 +63,7 @@
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/xstate.ll
 ; linux/optimized/xz_dec_bcj.ll
+; linux/optimized/xz_dec_lzma2.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
@@ -111,6 +116,7 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/packet-nbt.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; Function Attrs: nounwind
@@ -124,7 +130,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 296 occurrences:
+; 313 occurrences:
+; abc/optimized/gzlib.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
@@ -239,10 +246,14 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; boost/optimized/within_sph_geo.ll
 ; boost/optimized/write_dsv.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/extinfo.cpp.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/gzlib.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cmake/optimized/sha256.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -252,6 +263,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; freetype/optimized/type1cid.c.ll
 ; git/optimized/archive-tar.ll
 ; git/optimized/pkt-line.ll
+; git/optimized/sha256.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/Path.cpp.ll
@@ -259,8 +271,11 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; hermes/optimized/TargetParser.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; hermes/optimized/zip.c.ll
-; hyperscan/optimized/noodle_engine.c.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; libpng/optimized/pngpread.c.ll
 ; libquic/optimized/cmac.c.ll
 ; libquic/optimized/pkcs8.c.ll
@@ -270,6 +285,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; lief/optimized/gcm.c.ll
 ; lief/optimized/hmac_drbg.c.ll
 ; lief/optimized/pkcs12.c.ll
+; lief/optimized/psa_crypto.c.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/ARM.cpp.ll
@@ -359,8 +375,10 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; openjdk/optimized/shenandoahFreeSet.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/json.cc.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
@@ -369,6 +387,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/path.cpp.ll
 ; openusd/optimized/stagePopulationMask.cpp.ll
+; php/optimized/KeccakSponge.ll
 ; php/optimized/crypt_sha256.ll
 ; php/optimized/softmagic.ll
 ; pocketpy/optimized/expr.cpp.ll
@@ -404,9 +423,12 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; quantlib/optimized/tapcorrelations.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/setproctitle.ll
 ; ruby/optimized/zlib.ll
 ; simdjson/optimized/simdjson.cpp.ll
+; slurm/optimized/KangarooTwelve.ll
 ; spike/optimized/devices.ll
 ; spike/optimized/mmu.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
@@ -419,6 +441,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
 ; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
@@ -429,7 +452,7 @@ entry:
   ret ptr %4
 }
 
-; 1081 occurrences:
+; 1082 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -566,6 +589,7 @@ entry:
 ; hermes/optimized/StringRef.cpp.ll
 ; hermes/optimized/TargetParser.cpp.ll
 ; hermes/optimized/Triple.cpp.ll
+; hyperscan/optimized/noodle_engine.c.ll
 ; icu/optimized/ucnv_lmb.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll

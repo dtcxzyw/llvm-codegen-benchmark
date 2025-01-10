@@ -1,6 +1,6 @@
 
-%struct.TCGCallArgumentLoc.2707233 = type { i32 }
-%"struct.node::(anonymous namespace)::StringPtr.3674565" = type { ptr, i8, i64 }
+%struct.TCGCallArgumentLoc.2707199 = type { i32 }
+%"struct.node::(anonymous namespace)::StringPtr.3674515" = type { ptr, i8, i64 }
 
 ; 7 occurrences:
 ; linux/optimized/swap.ll
@@ -16,7 +16,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = add nsw i64 %0, -1
-  %5 = getelementptr [14 x %struct.TCGCallArgumentLoc.2707233], ptr %3, i64 0, i64 %4
+  %5 = getelementptr [14 x %struct.TCGCallArgumentLoc.2707199], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -79,7 +79,7 @@ entry:
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr nusw nuw i8, ptr %2, i64 176
   %4 = add nsw i64 %0, -1
-  %5 = getelementptr nusw [32 x %"struct.node::(anonymous namespace)::StringPtr.3674565"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw [32 x %"struct.node::(anonymous namespace)::StringPtr.3674515"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 

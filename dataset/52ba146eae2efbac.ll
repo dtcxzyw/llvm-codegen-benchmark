@@ -151,7 +151,7 @@ entry:
   ret i1 %4
 }
 
-; 152 occurrences:
+; 153 occurrences:
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/area.ll
@@ -265,6 +265,7 @@ entry:
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
+; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll

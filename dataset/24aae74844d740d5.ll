@@ -1,5 +1,5 @@
 
-; 168 occurrences:
+; 169 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bmcBmcG.c.ll
@@ -74,6 +74,7 @@
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -176,7 +177,7 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/infback.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -185,7 +186,6 @@ entry:
 ; jq/optimized/regcomp.ll
 ; libquic/optimized/infback.c.ll
 ; linux/optimized/extents.ll
-; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_guc_capture.ll
 ; linux/optimized/netlabel_kapi.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll

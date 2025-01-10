@@ -1,5 +1,5 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
 
 ; 49 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -61,7 +61,7 @@ entry:
   ret i64 %6
 }
 
-; 272 occurrences:
+; 269 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; boost/optimized/area_sph_geo.ll
@@ -80,9 +80,6 @@ entry:
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/printf-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -344,7 +341,7 @@ entry:
   ret i64 %6
 }
 
-; 2288 occurrences:
+; 2289 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -863,6 +860,7 @@ entry:
 ; flatbuffers/optimized/java_generator.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/printf-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; folly/optimized/PerfScoped.cpp.ll
@@ -2636,7 +2634,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.std::pair.28.2602107", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.std::pair.28.2602074", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = ashr exact i64 %5, 4

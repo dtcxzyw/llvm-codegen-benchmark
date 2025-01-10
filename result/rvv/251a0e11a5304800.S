@@ -1,3 +1,9 @@
+func0000000000000142:                   # @func0000000000000142
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgt.vi	v12, v10, -1
+	vmfne.vv	v10, v8, v8
+	vmor.mm	v0, v10, v12
+	ret
 func000000000000014e:                   # @func000000000000014e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
@@ -12,11 +18,11 @@ func0000000000000282:                   # @func0000000000000282
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-.LCPI2_0:
+.LCPI3_0:
 	.quad	0x3f847ae147ae147b              # double 0.01
 func0000000000000024:                   # @func0000000000000024
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 4
 	vmflt.vf	v10, v8, fa5
@@ -61,12 +67,6 @@ func0000000000000148:                   # @func0000000000000148
 	vmsgt.vi	v12, v10, 1
 	fli.d	fa5, 0.5
 	vmfgt.vf	v10, v8, fa5
-	vmor.mm	v0, v10, v12
-	ret
-func0000000000000142:                   # @func0000000000000142
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgt.vi	v12, v10, -1
-	vmfne.vv	v10, v8, v8
 	vmor.mm	v0, v10, v12
 	ret
 func00000000000000d6:                   # @func00000000000000d6

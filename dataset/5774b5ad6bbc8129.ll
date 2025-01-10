@@ -171,9 +171,10 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cuddWindow.c.ll
+; abc/optimized/utilSort.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -442,8 +443,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; abc/optimized/utilSort.c.ll
+; 3 occurrences:
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/parse2.ll

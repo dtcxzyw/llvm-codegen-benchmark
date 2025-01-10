@@ -35,6 +35,11 @@ func0000000000000015:                   # @func0000000000000015
 	fle.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
+func000000000000000c:                   # @func000000000000000c
+	fmul.d	fa5, fa1, fa2
+	fabs.d	fa5, fa5
+	fle.d	a0, fa0, fa5
+	ret
 func000000000000000a:                   # @func000000000000000a
 	fmul.d	fa5, fa1, fa2
 	fabs.d	fa5, fa5

@@ -153,11 +153,6 @@ func0000000000000065:                   # @func0000000000000065
 	cmpl	%edx, %edi
 	setbe	%al
 	retq
-func0000000000000167:                   # @func0000000000000167
-	addl	%esi, %edi
-	cmpl	%edx, %edi
-	setle	%al
-	retq
 func0000000000000161:                   # @func0000000000000161
 	addl	%esi, %edi
 	cmpl	%edx, %edi

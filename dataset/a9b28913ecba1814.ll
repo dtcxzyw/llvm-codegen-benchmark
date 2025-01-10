@@ -1,8 +1,8 @@
 
-%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
-%union.anon.34.2817675 = type { [4 x float] }
-%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
-%struct.ImVec2.3454247 = type { float, float }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
+%struct.Abc_IffObj_t_.2876931 = type { [7 x float] }
+%struct.ImVec2.3454213 = type { float, float }
 
 ; 20 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -29,7 +29,7 @@
 define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817640], ptr %0, i64 0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
@@ -45,7 +45,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr [7 x float], ptr %0, i64 0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.Abc_IffObj_t_.2876965, ptr %4, i64 %5
+  %6 = getelementptr %struct.Abc_IffObj_t_.2876931, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -55,7 +55,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [2 x %struct.ImVec2.3454247], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %struct.ImVec2.3454213], ptr %0, i64 0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw float, ptr %4, i64 %5
   ret ptr %6

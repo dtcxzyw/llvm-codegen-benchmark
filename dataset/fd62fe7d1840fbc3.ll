@@ -1555,9 +1555,10 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; folly/optimized/SpookyHashV1.cpp.ll
 ; grpc/optimized/bin_decoder.cc.ll
 ; hdf5/optimized/H5Dlayout.c.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll

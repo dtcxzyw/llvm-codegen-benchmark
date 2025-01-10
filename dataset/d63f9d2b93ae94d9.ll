@@ -1,6 +1,6 @@
 
-%struct.SCC2698Channel.2707064 = type { ptr, %struct.CharBackend.2707065, i8, [2 x i8], i8, i8, [3 x i8], i8, i8 }
-%struct.CharBackend.2707065 = type { ptr, ptr, ptr, ptr, ptr, ptr, i32, i32 }
+%struct.SCC2698Channel.2707030 = type { ptr, %struct.CharBackend.2707031, i8, [2 x i8], i8, i8, [3 x i8], i8, i8 }
+%struct.CharBackend.2707031 = type { ptr, ptr, ptr, ptr, ptr, ptr, i32, i32 }
 
 ; 10 occurrences:
 ; abseil-cpp/optimized/charset_test.cc.ll
@@ -50,7 +50,7 @@ define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [8 x %struct.SCC2698Channel.2707064], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [8 x %struct.SCC2698Channel.2707030], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

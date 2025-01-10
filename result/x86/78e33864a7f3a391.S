@@ -136,11 +136,6 @@ func0000000000000006:                   # @func0000000000000006
 	subq	%rcx, %rax
 	shrq	$63, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movl	%esi, %eax
-	cmpq	%rax, %rdi
-	setne	%al
-	retq
 func000000000000008c:                   # @func000000000000008c
 	movl	%esi, %eax
 	cmpq	%rax, %rdi

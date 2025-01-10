@@ -44,19 +44,21 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/extents.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -8
-  %4 = tail call i32 @llvm.umin.i32(i32 %1, i32 %3)
+  %3 = add i32 %2, -2
+  %4 = call i32 @llvm.umin.i32(i32 %3, i32 %1)
   %5 = add i32 %4, %0
   ret i32 %5
 }

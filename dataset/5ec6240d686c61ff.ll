@@ -1,12 +1,7 @@
 
-; 7 occurrences:
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
+; 2 occurrences:
 ; lief/optimized/ResourcesParser.cpp.ll
 ; minetest/optimized/connection.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:

@@ -21381,7 +21381,6 @@ entry:
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/deflate.c.ll
-; gromacs/optimized/device_management_common.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dgemv.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
@@ -25870,6 +25869,7 @@ entry:
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/Warnings.cpp.ll
+; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/WasmException.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
@@ -36842,7 +36842,7 @@ entry:
   ret i32 %1
 }
 
-; 5514 occurrences:
+; 5511 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -38865,7 +38865,6 @@ entry:
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFAsmParser.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/EarlyIfConversion.cpp.ll
@@ -39019,7 +39018,6 @@ entry:
 ; llvm/optimized/LexicalScopes.cpp.ll
 ; llvm/optimized/LibCallsShrinkWrap.cpp.ll
 ; llvm/optimized/Lint.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LiveIntervalUnion.cpp.ll
@@ -39471,7 +39469,6 @@ entry:
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/VirtualFileSystem.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; llvm/optimized/WasmAsmParser.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
@@ -42364,7 +42361,7 @@ entry:
   ret i32 %1
 }
 
-; 12641 occurrences:
+; 12637 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -43010,7 +43007,6 @@ entry:
 ; abc/optimized/utilCex.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/utilNam.c.ll
-; abc/optimized/utilSort.c.ll
 ; abc/optimized/verCore.c.ll
 ; abc/optimized/wlcAbc.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -46673,7 +46669,6 @@ entry:
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsi_logging.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; linux/optimized/sd.ll
@@ -50804,7 +50799,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-eck_prn.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-lib-encode.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-lib-eng_cnf.ll
 ; openssl/optimized/libcrypto-lib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-lib-eng_table.ll
@@ -50965,7 +50959,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-eck_prn.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-encode.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-eng_cnf.ll
 ; openssl/optimized/libcrypto-shlib-eng_ctrl.ll
 ; openssl/optimized/libcrypto-shlib-eng_table.ll

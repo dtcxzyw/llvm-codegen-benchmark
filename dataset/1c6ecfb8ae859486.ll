@@ -17,16 +17,17 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr exact i64 %2, 21
-  %4 = or i64 %0, %3
-  %5 = and i64 %1, 1572864
-  %6 = or i64 %4, %5
-  %7 = or i64 %6, 2
+  %3 = lshr exact i64 %2, 38
+  %4 = or i64 %1, %3
+  %5 = and i64 %0, 167772160
+  %6 = or i64 %5, %4
+  %7 = or i64 %6, 4194304
   ret i64 %7
 }
 

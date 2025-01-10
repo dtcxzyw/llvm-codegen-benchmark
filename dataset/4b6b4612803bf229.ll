@@ -1,5 +1,5 @@
 
-%class.itableOffsetEntry.2747751 = type <{ ptr, i32, [4 x i8] }>
+%class.itableOffsetEntry.2747717 = type <{ ptr, i32, [4 x i8] }>
 
 ; 20 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
@@ -403,7 +403,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = getelementptr nusw i64, ptr %3, i64 %0
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %class.itableOffsetEntry.2747751, ptr %4, i64 %5
+  %6 = getelementptr %class.itableOffsetEntry.2747717, ptr %4, i64 %5
   ret ptr %6
 }
 

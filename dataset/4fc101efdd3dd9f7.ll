@@ -160,7 +160,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; arrow/optimized/double-to-string.cc.ll
@@ -172,7 +172,6 @@ entry:
 ; linux/optimized/trace_output.ll
 ; lvgl/optimized/lv_draw_image.ll
 ; openblas/optimized/dlaqr5.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; raylib/optimized/raudio.c.ll

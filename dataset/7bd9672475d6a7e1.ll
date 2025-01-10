@@ -1,5 +1,5 @@
 
-%"struct.re2::CaseFold.2601764" = type { i32, i32, i32 }
+%"struct.re2::CaseFold.2601731" = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; abc/optimized/bblif.c.ll
@@ -8,7 +8,7 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.re2::CaseFold.2601764", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.re2::CaseFold.2601731", ptr %1, i64 %2
   %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5

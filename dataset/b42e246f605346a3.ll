@@ -1,5 +1,5 @@
 
-; 261 occurrences:
+; 268 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; brotli/optimized/encode.c.ll
@@ -22,6 +22,9 @@
 ; git/optimized/add-interactive.ll
 ; grpc/optimized/ring_hash.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -95,6 +98,7 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; linux/optimized/gup.ll
 ; linux/optimized/ptp_chardev.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
@@ -234,6 +238,9 @@
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
 ; quantlib/optimized/sobolrsg.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/dict.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/t_set.ll
 ; ruby/optimized/bignum.ll
 ; soc-simulator/optimized/verilated.ll
@@ -1334,6 +1341,17 @@ entry:
   %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
   %4 = add nuw nsw i64 %0, 1
   %5 = icmp samesign ult i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/scsi_logging.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000079(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = add nuw nsw i64 %0, 1
+  %5 = icmp samesign uge i64 %4, %3
   ret i1 %5
 }
 

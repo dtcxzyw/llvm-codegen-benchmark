@@ -4,8 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	leaq	(%rsi,%rdx,2), %rax
-	cmpq	%rax, %rdi
+	addq	%rdx, %rsi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
 func0000000000000004:                   # @func0000000000000004

@@ -1,5 +1,5 @@
 
-%"struct.Assimp::MDL::Vertex_MDL4.2829408" = type { [3 x i16], i8, i8 }
+%"struct.Assimp::MDL::Vertex_MDL4.2829374" = type { [3 x i16], i8, i8 }
 
 ; 41 occurrences:
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
@@ -61,7 +61,7 @@ entry:
   %3 = mul nsw i64 %2, 12
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 36
-  %6 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %5, i64 %0
+  %6 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829374", ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -73,7 +73,7 @@ entry:
   %3 = mul nsw i64 %2, 12
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 36
-  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"struct.Assimp::MDL::Vertex_MDL4.2829374", ptr %5, i64 %0
   ret ptr %6
 }
 

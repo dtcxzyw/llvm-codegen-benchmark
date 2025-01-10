@@ -1,5 +1,5 @@
 
-; 2166 occurrences:
+; 2165 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -1388,7 +1388,6 @@
 ; openjdk/optimized/xPhysicalMemory.ll
 ; openjdk/optimized/xPhysicalMemoryBacking_linux.ll
 ; openjdk/optimized/zBarrier.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zGeneration.ll
 ; openjdk/optimized/zPhysicalMemory.ll
 ; openjdk/optimized/zPhysicalMemoryBacking_linux.ll
@@ -2441,6 +2440,7 @@ entry:
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/zDirector.ll
 ; openspiel/optimized/efg_game.cc.ll
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; php/optimized/phpdbg_utils.ll
@@ -2598,7 +2598,6 @@ entry:
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; tree-sitter-rs/optimized/hpag7w091st4k7n.ll
-; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll

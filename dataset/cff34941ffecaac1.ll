@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -13,6 +13,7 @@
 ; linux/optimized/act_api.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/tg3.ll
+; linux/optimized/trace_output.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll

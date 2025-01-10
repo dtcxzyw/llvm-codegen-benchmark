@@ -1,6 +1,6 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
 
 ; 2 occurrences:
 ; php/optimized/zend_opcode.ll
@@ -10,7 +10,7 @@ define ptr @func000000000000003b(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   %7 = getelementptr nusw nuw i8, ptr %6, i64 31
   ret ptr %7

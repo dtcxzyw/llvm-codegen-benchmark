@@ -112,16 +112,6 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000f:                   # @func000000000000000f
-	slli	a2, a2, 9
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
-func000000000000000e:                   # @func000000000000000e
-	slli	a2, a2, 7
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
 func000000000000001c:                   # @func000000000000001c
 	sh2add	a0, a2, a0
 	sh3add	a0, a0, a1

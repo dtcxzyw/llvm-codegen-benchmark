@@ -62,3 +62,10 @@ func000000000000000e:                   # @func000000000000000e
 	vmand.mm	v8, v16, v24
 	vmand.mm	v0, v0, v8
 	ret
+func0000000000000009:                   # @func0000000000000009
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vv	v24, v8, v16
+	vmflt.vv	v25, v16, v8
+	vmor.mm	v8, v25, v24
+	vmandn.mm	v0, v0, v8
+	ret

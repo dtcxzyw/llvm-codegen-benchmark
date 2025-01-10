@@ -23,14 +23,6 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000023:                   # @func0000000000000023
-	zext.h	a1, a1
-	li	a2, 11
-	sltiu	a1, a1, 11
-	czero.nez	a1, a2, a1
-	zext.h	a0, a0
-	add	a0, a0, a1
-	ret
 func0000000000000009:                   # @func0000000000000009
 	zext.h	a1, a1
 	li	a2, -12

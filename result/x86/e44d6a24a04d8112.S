@@ -22,10 +22,6 @@ func0000000000000009:                   # @func0000000000000009
 	shlxl	%eax, %ecx, %eax
 	notl	%eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	blsil	%edi, %eax
-	notl	%eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	blsil	%edi, %eax
 	notl	%eax

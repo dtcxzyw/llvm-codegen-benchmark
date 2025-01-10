@@ -200,7 +200,7 @@ entry:
   ret i32 %2
 }
 
-; 764 occurrences:
+; 757 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -558,7 +558,6 @@ entry:
 ; opencv/optimized/window_gtk.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openexr/optimized/ImfTiledRgbaFile.cpp.ll
-; openjdk/optimized/LCMS.ll
 ; openjdk/optimized/ProcessEnvironment_md.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/c1_Instruction.ll
@@ -629,9 +628,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-conf_mod.ll
 ; openssl/optimized/libcrypto-lib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-lib-decoder_pkey.ll
-; openssl/optimized/libcrypto-lib-ec_backend.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
-; openssl/optimized/libcrypto-lib-ec_lib.ll
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-lib-encoder_pkey.ll
@@ -689,9 +686,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-conf_mod.ll
 ; openssl/optimized/libcrypto-shlib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-shlib-decoder_pkey.ll
-; openssl/optimized/libcrypto-shlib-ec_backend.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
-; openssl/optimized/libcrypto-shlib-ec_lib.ll
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
@@ -762,7 +757,6 @@ entry:
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openssl/optimized/openssl-bin-cmp_mock_srv.ll
 ; openssl/optimized/openssl-bin-dgst.ll
-; openssl/optimized/openssl-bin-speed.ll
 ; openssl/optimized/packettest-bin-packettest.ll
 ; openssl/optimized/quicapitest-bin-quicapitest.ll
 ; openssl/optimized/servername_test-bin-servername_test.ll
@@ -925,7 +919,6 @@ entry:
 ; wireshark/optimized/file_access.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
-; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-bpv7.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll

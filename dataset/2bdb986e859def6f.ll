@@ -1128,8 +1128,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; git/optimized/sequencer.ll
+; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
@@ -1140,8 +1141,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; protobuf/optimized/descriptor.cc.ll
+; slurm/optimized/bitstring.ll
 ; slurm/optimized/spank.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {

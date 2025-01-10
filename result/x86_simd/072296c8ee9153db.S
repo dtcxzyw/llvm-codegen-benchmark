@@ -87,15 +87,15 @@ func0000000000000002:                   # @func0000000000000002
 	vpaddd	.LCPI13_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-func0000000000000005:                   # @func0000000000000005
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
 func0000000000000010:                   # @func0000000000000010
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+func0000000000000005:                   # @func0000000000000005
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI16_0:
@@ -106,7 +106,7 @@ func000000000000001d:                   # @func000000000000001d
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI17_0:
-	.long	63                              # 0x3f
+	.long	64                              # 0x40
 func000000000000001f:                   # @func000000000000001f
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpaddd	.LCPI17_0(%rip){1to4}, %xmm0, %xmm0

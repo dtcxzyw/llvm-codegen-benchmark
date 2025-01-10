@@ -1,5 +1,5 @@
 
-%struct.NvmeReclaimUnit.2708955 = type { i64 }
+%struct.NvmeReclaimUnit.2708921 = type { i64 }
 
 ; 3 occurrences:
 ; linux/optimized/blk-mq-sched.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr %struct.NvmeReclaimUnit.2708955, ptr %0, i64 %4
+  %5 = getelementptr %struct.NvmeReclaimUnit.2708921, ptr %0, i64 %4
   ret ptr %5
 }
 

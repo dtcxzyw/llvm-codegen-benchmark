@@ -30,6 +30,19 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000f(i16 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i16
+  %4 = shl nuw nsw i16 %3, 3
+  %5 = zext i8 %1 to i16
+  %6 = or disjoint i16 %0, %5
+  %7 = or disjoint i16 %6, %4
+  ret i16 %7
+}
+
+; 1 occurrences:
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000002c(i16 %0, i8 %1, i8 %2) #0 {

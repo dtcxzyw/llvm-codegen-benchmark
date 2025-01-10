@@ -52,11 +52,11 @@ func000000000000000a:                   # @func000000000000000a
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI7_0:
-	.quad	48                              # 0x30
+	.quad	49                              # 0x31
 func0000000000000001:                   # @func0000000000000001
-	vpmullq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpsllq	$5, %ymm0, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI8_0:
 	.quad	24                              # 0x18

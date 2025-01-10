@@ -1,8 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.3082186" = type { %"class.hermes::vm::HermesValue32.3082187" }
-%"class.hermes::vm::HermesValue32.3082187" = type { i32 }
-%"class.hermes::vm::GCHermesValueBase.3082646" = type { %"class.hermes::vm::HermesValue.3082534" }
-%"class.hermes::vm::HermesValue.3082534" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3082152" = type { %"class.hermes::vm::HermesValue32.3082153" }
+%"class.hermes::vm::HermesValue32.3082153" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3082612" = type { %"class.hermes::vm::HermesValue.3082500" }
+%"class.hermes::vm::HermesValue.3082500" = type { i64 }
 
 ; 5 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -30,7 +30,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = and i32 %4, 1023
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3082186"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3082152"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -47,7 +47,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = and i32 %4, 1023
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3082646"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [1024 x %"class.hermes::vm::GCHermesValueBase.3082612"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

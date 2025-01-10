@@ -1,5 +1,5 @@
 
-%"class.folly::TDigest::Centroid.2684471" = type { double, double }
+%"class.folly::TDigest::Centroid.2684438" = type { double, double }
 
 ; 3187 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -3370,7 +3370,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 4
   %6 = sub nsw i64 0, %5
-  %7 = getelementptr %"class.folly::TDigest::Centroid.2684471", ptr %0, i64 %6
+  %7 = getelementptr %"class.folly::TDigest::Centroid.2684438", ptr %0, i64 %6
   ret ptr %7
 }
 

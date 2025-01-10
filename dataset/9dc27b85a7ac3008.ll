@@ -1,6 +1,6 @@
 
-%"struct.llvm::SwitchCG::CaseBits.3292065" = type { i64, ptr, i32, %"class.llvm::BranchProbability.3292028" }
-%"class.llvm::BranchProbability.3292028" = type { i32 }
+%"struct.llvm::SwitchCG::CaseBits.3292031" = type { i64, ptr, i32, %"class.llvm::BranchProbability.3291994" }
+%"class.llvm::BranchProbability.3291994" = type { i32 }
 
 ; 6 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
@@ -15,7 +15,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
   %5 = call i64 @llvm.umax.i64(i64 %4, i64 1)
-  %6 = getelementptr %"struct.llvm::SwitchCG::CaseBits.3292065", ptr %0, i64 %5
+  %6 = getelementptr %"struct.llvm::SwitchCG::CaseBits.3292031", ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 %3
   ret ptr %7
 }

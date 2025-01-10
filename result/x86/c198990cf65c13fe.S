@@ -27,6 +27,9 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000006:                   # @func0000000000000006
 	leaq	(%rdi,%rsi,4), %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	leaq	(%rdi,%rsi,2), %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	leaq	(%rdi,%rsi,2), %rax
 	retq

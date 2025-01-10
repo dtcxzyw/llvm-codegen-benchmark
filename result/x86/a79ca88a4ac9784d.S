@@ -10,7 +10,7 @@ func0000000000000016:                   # @func0000000000000016
 	imulq	$504, %rdx, %rax                # imm = 0x1F8
 	addq	%rcx, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
+func0000000000000002:                   # @func0000000000000002
 	shlq	$5, %rdx
 	leaq	(%rdx,%rdx,2), %rax
 	subq	%rax, %rdi
@@ -28,11 +28,6 @@ func0000000000000013:                   # @func0000000000000013
 	leaq	(%rdi,%rax,8), %rcx
 	imulq	$480, %rdx, %rax                # imm = 0x1E0
 	addq	%rcx, %rax
-	retq
-func0000000000000002:                   # @func0000000000000002
-	leaq	(%rdx,%rdx,2), %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 func000000000000003e:                   # @func000000000000003e
 	leaq	(%rdi,%rsi,4), %rcx

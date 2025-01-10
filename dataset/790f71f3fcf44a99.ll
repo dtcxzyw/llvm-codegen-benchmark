@@ -1,9 +1,9 @@
 
-%"class.boost::geometry::model::ring.2974216" = type { %"class.std::vector.1016.2974218" }
-%"class.std::vector.1016.2974218" = type { %"struct.std::_Vector_base.1017.2974219" }
-%"struct.std::_Vector_base.1017.2974219" = type { %"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.2974220" }
-%"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.2974220" = type { %"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.2974221" }
-%"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.2974221" = type { ptr, ptr, ptr }
+%"class.boost::geometry::model::ring.2974182" = type { %"class.std::vector.1016.2974184" }
+%"class.std::vector.1016.2974184" = type { %"struct.std::_Vector_base.1017.2974185" }
+%"struct.std::_Vector_base.1017.2974185" = type { %"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.2974186" }
+%"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl.2974186" = type { %"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.2974187" }
+%"struct.std::_Vector_base<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>, std::allocator<boost::geometry::model::point<int, 2, boost::geometry::cs::cartesian>>>::_Vector_impl_data.2974187" = type { ptr, ptr, ptr }
 
 ; 9 occurrences:
 ; cpython/optimized/sre.ll
@@ -155,7 +155,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000046(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.boost::geometry::model::ring.2974216", ptr %2, i64 %1
+  %3 = getelementptr nusw %"class.boost::geometry::model::ring.2974182", ptr %2, i64 %1
   %4 = icmp slt i64 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5

@@ -126,9 +126,13 @@ func0000000000000004:                   # @func0000000000000004
 	vptestmd	%ymm1, %ymm1, %k1
 	vpslld	$3, %ymm0, %ymm0 {%k1} {z}
 	retq
+.LCPI14_0:
+	.long	25165824                        # 0x1800000
 func0000000000000006:                   # @func0000000000000006
 	vptestmd	%ymm1, %ymm1, %k1
-	vpaddd	%ymm0, %ymm0, %ymm0 {%k1} {z}
+	vpbroadcastd	.LCPI14_0(%rip), %ymm1  # ymm1 = [25165824,25165824,25165824,25165824,25165824,25165824,25165824,25165824]
+	vpslld	$23, %ymm0, %ymm1 {%k1}
+	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI15_0:
 	.long	128                             # 0x80

@@ -1,5 +1,5 @@
 
-; 716 occurrences:
+; 711 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -106,9 +106,6 @@
 ; influxdb-rs/optimized/137os9m7mkg6454u.ll
 ; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
@@ -544,8 +541,6 @@
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
@@ -834,7 +829,7 @@ entry:
   ret i64 %2
 }
 
-; 88 occurrences:
+; 87 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -842,7 +837,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

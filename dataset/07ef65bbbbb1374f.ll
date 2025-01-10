@@ -1,10 +1,11 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/drm_property.ll
+; linux/optimized/hub.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll

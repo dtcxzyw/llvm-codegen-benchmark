@@ -81,8 +81,7 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
-; abc/optimized/cuddExact.c.ll
+; 15 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/skbuff.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -98,7 +97,6 @@ entry:
 ; qemu/optimized/ui_input.c.ll
 ; wireshark/optimized/dot11decrypt_gcmp.c.ll
 ; z3/optimized/mpz.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
@@ -108,7 +106,7 @@ entry:
   ret i1 %4
 }
 
-; 125 occurrences:
+; 103 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -127,28 +125,6 @@ entry:
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/line_search_minimizer.cc.ll
 ; ceres/optimized/low_rank_inverse_hessian.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
-; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
-; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
 ; ceres/optimized/program.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll

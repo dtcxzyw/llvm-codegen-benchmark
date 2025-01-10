@@ -1,6 +1,5 @@
 
-; 45 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 43 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -28,7 +27,6 @@
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll

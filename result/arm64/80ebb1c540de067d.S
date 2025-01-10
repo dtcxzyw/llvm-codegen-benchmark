@@ -19,3 +19,11 @@ func0000000000000006:                   // @func0000000000000006
 	cinc	x0, x8, ge
 	ret
                                         // -- End function
+func000000000000000a:                   // @func000000000000000a
+// %bb.0:                               // %entry
+	mov	w8, #16                         // =0x10
+	cmp	x0, #0
+	mov	w9, #8                          // =0x8
+	csel	x0, x9, x8, ge
+	ret
+                                        // -- End function

@@ -1,7 +1,7 @@
 
-%struct.CacheItem.2706813 = type { i64, i64, ptr }
-%"class.marisa::grimoire::trie::Cache.2749025" = type { i32, i32, %"union.marisa::grimoire::trie::Cache::Union.2749026" }
-%"union.marisa::grimoire::trie::Cache::Union.2749026" = type { i32 }
+%struct.CacheItem.2706779 = type { i64, i64, ptr }
+%"class.marisa::grimoire::trie::Cache.2748991" = type { i32, i32, %"union.marisa::grimoire::trie::Cache::Union.2748992" }
+%"union.marisa::grimoire::trie::Cache::Union.2748992" = type { i32 }
 
 ; 6 occurrences:
 ; linux/optimized/i915_gem_context.ll
@@ -14,7 +14,7 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr %struct.CacheItem.2706813, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.CacheItem.2706779, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -26,7 +26,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr nusw nuw %"class.marisa::grimoire::trie::Cache.2749025", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.marisa::grimoire::trie::Cache.2748991", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -65,7 +65,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = getelementptr nusw %"class.marisa::grimoire::trie::Cache.2749025", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"class.marisa::grimoire::trie::Cache.2748991", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

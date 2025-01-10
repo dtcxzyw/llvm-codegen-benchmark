@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; clamav/optimized/special.c.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
@@ -43,7 +43,6 @@
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/testutil.cc.ll
-; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

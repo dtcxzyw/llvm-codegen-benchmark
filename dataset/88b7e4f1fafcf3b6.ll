@@ -30,10 +30,9 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaIso2.c.ll
 ; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; cpython/optimized/_datetimemodule.ll

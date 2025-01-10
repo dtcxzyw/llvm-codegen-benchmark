@@ -96,10 +96,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/CallLowering.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:

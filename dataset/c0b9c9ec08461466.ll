@@ -69,7 +69,7 @@ entry:
   ret i64 %4
 }
 
-; 102 occurrences:
+; 103 occurrences:
 ; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -77,6 +77,7 @@ entry:
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
+; git/optimized/line-log.ll
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/pack-objects.ll
 ; git/optimized/read-cache.ll

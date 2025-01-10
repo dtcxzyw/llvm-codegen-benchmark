@@ -45,6 +45,26 @@ func0000000000000768:                   # @func0000000000000768
 	addi	a0, a0, -8
 	sltu	a0, a0, a1
 	ret
+func0000000000000804:                   # @func0000000000000804
+	sext.w	a2, a2
+	slli	a2, a2, 7
+	add	a1, a1, a2
+	lui	a2, 6
+	addiw	a2, a2, 640
+	add	a1, a1, a2
+	add	a0, a0, a2
+	sltu	a0, a1, a0
+	ret
+func0000000000000808:                   # @func0000000000000808
+	sext.w	a2, a2
+	slli	a2, a2, 7
+	add	a1, a1, a2
+	lui	a2, 6
+	addiw	a2, a2, 640
+	add	a1, a1, a2
+	add	a0, a0, a2
+	sltu	a0, a0, a1
+	ret
 func0000000000000fe8:                   # @func0000000000000fe8
 	sext.w	a2, a2
 	add	a1, a1, a2

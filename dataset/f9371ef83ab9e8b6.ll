@@ -94,14 +94,12 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
-; faiss/optimized/DirectMap.cpp.ll
-; postgres/optimized/reorderbuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
+  %2 = add nuw i64 %1, 1
   %3 = and i64 %0, 2147483647
   %4 = icmp eq i64 %3, %2
   ret i1 %4
@@ -154,6 +152,18 @@ entry:
   %2 = add i64 %1, 32
   %3 = and i64 %0, -4
   %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; faiss/optimized/DirectMap.cpp.ll
+; postgres/optimized/reorderbuffer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, -88
+  %3 = and i64 %0, 2147483647
+  %4 = icmp eq i64 %3, %2
   ret i1 %4
 }
 

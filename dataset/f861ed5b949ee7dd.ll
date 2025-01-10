@@ -1,5 +1,5 @@
 
-%"union.absl::debian2::container_internal::map_slot_type.2601725" = type { i64, [8 x i8] }
+%"union.absl::debian2::container_internal::map_slot_type.2601692" = type { i64, [8 x i8] }
 
 ; 129 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -136,7 +136,7 @@ define { ptr, ptr } @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %1
   %4 = insertvalue { ptr, ptr } poison, ptr %3, 0
-  %5 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2601725", ptr %0, i64 %1
+  %5 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2601692", ptr %0, i64 %1
   %6 = insertvalue { ptr, ptr } %4, ptr %5, 1
   ret { ptr, ptr } %6
 }

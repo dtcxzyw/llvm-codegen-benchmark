@@ -32,3 +32,8 @@ func0000000000000044:                   # @func0000000000000044
 	vpmovdw	%ymm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+func0000000000000041:                   # @func0000000000000041
+	vptestnmd	%ymm0, %ymm0, %k1
+	vpmovdw	%ymm1, %xmm0 {%k1} {z}
+	vzeroupper
+	retq

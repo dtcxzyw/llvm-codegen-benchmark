@@ -132,9 +132,8 @@ entry:
   ret i32 %5
 }
 
-; 129 occurrences:
+; 128 occurrences:
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/saigSimMv.c.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll

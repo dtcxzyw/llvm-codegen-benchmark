@@ -1,5 +1,5 @@
 
-%struct.ring_info.3551191 = type { ptr, i32 }
+%struct.ring_info.3551157 = type { ptr, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/regparse.ll
@@ -130,7 +130,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 4840
-  %7 = getelementptr %struct.ring_info.3551191, ptr %6, i64 %5
+  %7 = getelementptr %struct.ring_info.3551157, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -143,7 +143,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 2536
-  %7 = getelementptr %struct.ring_info.3551191, ptr %6, i64 %5
+  %7 = getelementptr %struct.ring_info.3551157, ptr %6, i64 %5
   ret ptr %7
 }
 

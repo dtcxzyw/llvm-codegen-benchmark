@@ -8,11 +8,6 @@ func000000000000000f:                   # @func000000000000000f
 	movl	$32, %eax
 	subl	%ecx, %eax
 	retq
-func000000000000004b:                   # @func000000000000004b
-	lzcntl	%edi, %ecx
-	movl	$26, %eax
-	subl	%ecx, %eax
-	retq
 func000000000000004f:                   # @func000000000000004f
 	lzcntl	%edi, %ecx
 	movl	$26, %eax

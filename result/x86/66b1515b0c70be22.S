@@ -22,11 +22,3 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
-	testl	%edx, %edx
-	setne	%cl
-	orb	%dil, %cl
-	testw	%si, %si
-	setne	%al
-	andb	%cl, %al
-	retq

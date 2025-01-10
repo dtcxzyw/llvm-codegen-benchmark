@@ -1,7 +1,7 @@
 
-%"class.llvm::SDUse.3286993" = type { %"class.llvm::SDValue.3286982", ptr, ptr, ptr }
-%"class.llvm::SDValue.3286982" = type <{ ptr, i32, [4 x i8] }>
-%"struct.ozz::animation::internal::Float3Key.3655591" = type { [3 x i16] }
+%"class.llvm::SDUse.3286959" = type { %"class.llvm::SDValue.3286948", ptr, ptr, ptr }
+%"class.llvm::SDValue.3286948" = type <{ ptr, i32, [4 x i8] }>
+%"struct.ozz::animation::internal::Float3Key.3655557" = type { [3 x i16] }
 
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"class.llvm::SDUse.3286993", ptr %0, i64 %5, i32 0, i32 1
+  %6 = getelementptr nuw %"class.llvm::SDUse.3286959", ptr %0, i64 %5, i32 0, i32 1
   ret ptr %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nuw %"struct.ozz::animation::internal::Float3Key.3655591", ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr nuw %"struct.ozz::animation::internal::Float3Key.3655557", ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 

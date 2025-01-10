@@ -41,20 +41,27 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
+	.long	134152192                       # 0x7ff0000
+func0000000000000002:                   # @func0000000000000002
+	vpslld	$10, %ymm1, %ymm1
+	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI7_0:
 	.long	2                               # 0x2
 func0000000000000009:                   # @func0000000000000009
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI7_0:
-	.long	8                               # 0x8
-func000000000000000c:                   # @func000000000000000c
-	vpslld	$2, %ymm1, %ymm1
 	vpandd	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI8_0:
+	.long	8                               # 0x8
+func000000000000000c:                   # @func000000000000000c
+	vpslld	$2, %ymm1, %ymm1
+	vpandd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI9_0:
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	0                               # 0x0
@@ -88,13 +95,13 @@ func000000000000000c:                   # @func000000000000000c
 	.byte	28                              # 0x1c
 	.byte	128                             # 0x80
 func0000000000000008:                   # @func0000000000000008
-	vpshufb	.LCPI8_0(%rip), %ymm1, %ymm1    # ymm1 = zero,zero,ymm1[0],zero,zero,zero,ymm1[4],zero,zero,zero,ymm1[8],zero,zero,zero,ymm1[12],zero,zero,zero,ymm1[16],zero,zero,zero,ymm1[20],zero,zero,zero,ymm1[24],zero,zero,zero,ymm1[28],zero
+	vpshufb	.LCPI9_0(%rip), %ymm1, %ymm1    # ymm1 = zero,zero,ymm1[0],zero,zero,zero,ymm1[4],zero,zero,zero,ymm1[8],zero,zero,zero,ymm1[12],zero,zero,zero,ymm1[16],zero,zero,zero,ymm1[20],zero,zero,zero,ymm1[24],zero,zero,zero,ymm1[28],zero
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI9_0:
+.LCPI10_0:
 	.long	2147418112                      # 0x7fff0000
 func000000000000000a:                   # @func000000000000000a
 	vpslld	$16, %ymm1, %ymm1
-	vpandd	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
+	vpandd	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

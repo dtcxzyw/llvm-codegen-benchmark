@@ -11,7 +11,7 @@ func0000000000000187:                   // @func0000000000000187
 	lsl	x8, x2, #2
 	cmp	w1, #0
 	csel	x8, x8, xzr, eq
-	add	x0, x8, x0
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func00000000000000a9:                   // @func00000000000000a9

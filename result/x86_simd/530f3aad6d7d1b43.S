@@ -20,7 +20,6 @@ func0000000000000041:                   # @func0000000000000041
 .LCPI1_0:
 	.zero	16,7
 .LCPI1_1:
-	.byte	2                               # 0x2
 	.byte	1                               # 0x1
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -28,8 +27,9 @@ func0000000000000041:                   # @func0000000000000041
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-	.byte	2                               # 0x2
+	.byte	0                               # 0x0
 	.byte	1                               # 0x1
+	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -39,8 +39,8 @@ func0000000000000041:                   # @func0000000000000041
 .LCPI1_2:
 	.zero	4,7
 .LCPI1_3:
-	.byte	2                               # 0x2
 	.byte	1                               # 0x1
+	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0

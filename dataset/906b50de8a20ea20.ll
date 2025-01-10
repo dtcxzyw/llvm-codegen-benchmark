@@ -1195,7 +1195,7 @@ entry:
   ret i8 %2
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -1204,7 +1204,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/metadata_iterators.c.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/diff.ll
 ; git/optimized/graph.ll

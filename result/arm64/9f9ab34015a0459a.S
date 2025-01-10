@@ -12,11 +12,3 @@ func0000000000000026:                   // @func0000000000000026
 	csinc	w0, w0, w8, lt
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
-// %bb.0:                               // %entry
-	add	w8, w1, w2
-	sub	w9, w8, #1
-	cmp	w8, w0
-	csel	w0, w0, w9, gt
-	ret
-                                        // -- End function

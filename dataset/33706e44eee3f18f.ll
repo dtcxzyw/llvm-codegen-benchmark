@@ -1,5 +1,5 @@
 
-; 1346 occurrences:
+; 1344 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
@@ -274,7 +274,6 @@
 ; git/optimized/range-diff.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/record.ll
-; git/optimized/sequencer.ll
 ; git/optimized/stack.ll
 ; git/optimized/transport-helper.ll
 ; git/optimized/unpack-trees.ll
@@ -1065,7 +1064,6 @@
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/block_bochs.c.ll
 ; qemu/optimized/block_parallels.c.ll
-; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/fdt_overlay.c.ll
 ; qemu/optimized/fdt_ro.c.ll
@@ -2752,7 +2750,7 @@ entry:
   ret i32 %3
 }
 
-; 86 occurrences:
+; 83 occurrences:
 ; abc/optimized/dauEnum.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
@@ -2794,14 +2792,12 @@ entry:
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-sparc64.cc.ll
 ; node/optimized/libnode.crypto_cipher.ll
 ; nuttx/optimized/fs_files.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/essential_solver.cpp.ll
 ; opencv/optimized/letter_recog.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/motion_estimators.cpp.ll
 ; opencv/optimized/perf_resize.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -2816,7 +2812,6 @@ entry:
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
 ; pybind11/optimized/test_eigen_tensor.cpp.ll
 ; qemu/optimized/hw_pci-host_gpex-acpi.c.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/process.ll
@@ -3128,7 +3123,7 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -3155,7 +3150,6 @@ entry:
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; redis/optimized/dict.ll
 ; redis/optimized/ziplist.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
@@ -3211,7 +3205,7 @@ entry:
   ret i32 %3
 }
 
-; 31 occurrences:
+; 28 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -3229,16 +3223,13 @@ entry:
 ; luajit/optimized/lj_meta_dyn.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
-; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/context.c.ll
 ; openmpi/optimized/btl_sm_sendi.ll
 ; openusd/optimized/read.c.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/xloginsert.ll
 ; qemu/optimized/nbd_server.c.ll
-; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/raudio.c.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/packet-http3.c.ll

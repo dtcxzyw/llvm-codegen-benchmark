@@ -1,5 +1,5 @@
 
-%struct.Au_Obj_t_.2878087 = type { i64, [2 x i32] }
+%struct.Au_Obj_t_.2878053 = type { i64, [2 x i32] }
 
 ; 5 occurrences:
 ; abc/optimized/abcHieNew.c.ll
@@ -13,7 +13,7 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 4095
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.Au_Obj_t_.2878087, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.Au_Obj_t_.2878053, ptr %0, i64 %4
   ret ptr %5
 }
 

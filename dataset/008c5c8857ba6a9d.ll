@@ -1,5 +1,5 @@
 
-%struct.bio_vec.3540561 = type { ptr, i32, i32 }
+%struct.bio_vec.3540527 = type { ptr, i32, i32 }
 
 ; 75 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
@@ -116,7 +116,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.bio_vec.3540561, ptr %0, i64 %4
+  %5 = getelementptr %struct.bio_vec.3540527, ptr %0, i64 %4
   ret ptr %5
 }
 

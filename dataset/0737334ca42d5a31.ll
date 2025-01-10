@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/intel_dp.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; slurm/optimized/dist_tasks.ll
+; slurm/optimized/job_mgr.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -16,7 +17,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; freetype/optimized/pfr.c.ll
@@ -35,6 +36,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; openusd/optimized/read.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; raylib/optimized/raudio.c.ll
+; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

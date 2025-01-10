@@ -1,5 +1,5 @@
 
-%struct.resource.3532026 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3531992 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
 ; 5 occurrences:
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
@@ -67,7 +67,7 @@ define ptr @func0000000000000008(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr [11 x %struct.resource.3532026], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [11 x %struct.resource.3531992], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,6 +1,7 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abc.c.ll
+; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; cmake/optimized/archive_entry.c.ll
@@ -56,7 +57,7 @@ entry:
   ret i32 %4
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/sbdCut2.c.ll
@@ -68,7 +69,6 @@ entry:
 ; git/optimized/index-pack.ll
 ; git/optimized/log.ll
 ; git/optimized/range-diff.ll
-; git/optimized/read-cache.ll
 ; git/optimized/rebase.ll
 ; gromacs/optimized/xtc3.c.ll
 ; hdf5/optimized/H5DS.c.ll
@@ -166,8 +166,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; openusd/optimized/decodeframe.c.ll
+; 1 occurrences:
 ; yosys/optimized/test_pmgen.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {

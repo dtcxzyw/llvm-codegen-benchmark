@@ -46,13 +46,6 @@ func0000000000000008:                   // @func0000000000000008
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	mov	w8, #48                         // =0x30
-	smaddl	x8, w1, w8, x0
-	add	x0, x8, #56
-	ret
-                                        // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	add	x8, x0, w1, sxtw #4

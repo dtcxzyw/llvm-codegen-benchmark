@@ -1,3 +1,10 @@
+func0000000000000008:                   # @func0000000000000008
+	sh1add	a2, a2, a0
+	sh1add	a0, a1, a0
+	addi	a2, a2, -2
+	addi	a0, a0, -2
+	sltu	a0, a2, a0
+	ret
 func0000000000001fe4:                   # @func0000000000001fe4
 	add	a2, a2, a0
 	add	a0, a0, a1
@@ -25,6 +32,13 @@ func0000000000001764:                   # @func0000000000001764
 	addi	a2, a2, -8
 	addi	a0, a0, 3
 	sltu	a0, a0, a2
+	ret
+func0000000000001768:                   # @func0000000000001768
+	add	a2, a2, a0
+	add	a0, a0, a1
+	addi	a2, a2, -8
+	addi	a0, a0, 1
+	sltu	a0, a2, a0
 	ret
 func0000000000001561:                   # @func0000000000001561
 	add	a2, a2, a0

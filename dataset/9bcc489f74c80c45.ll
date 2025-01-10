@@ -1,26 +1,10 @@
 
-; 5 occurrences:
-; darktable/optimized/NikonDecompressor.cpp.ll
-; lvgl/optimized/lv_draw_sw_mask.ll
-; minetest/optimized/treegen.cpp.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; wireshark/optimized/packet-kdsp.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000003(i1 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = select i1 %0, i16 %1, i16 %2
-  %4 = add nuw nsw i16 %3, 1
-  ret i16 %4
-}
-
-; 17 occurrences:
+; 15 occurrences:
 ; clamav/optimized/entconv.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
-; linux/optimized/printk.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -36,6 +20,19 @@ define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %0, i16 %1, i16 %2
   %4 = add i16 %3, 1
+  ret i16 %4
+}
+
+; 4 occurrences:
+; darktable/optimized/NikonDecompressor.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wireshark/optimized/packet-kdsp.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = select i1 %0, i16 %1, i16 %2
+  %4 = add nuw nsw i16 %3, 1
   ret i16 %4
 }
 

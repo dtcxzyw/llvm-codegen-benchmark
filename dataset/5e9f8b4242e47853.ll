@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 75 occurrences:
 ; c3c/optimized/target.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -73,6 +73,7 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i8 %1) #0 {

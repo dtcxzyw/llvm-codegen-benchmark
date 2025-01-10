@@ -28,7 +28,7 @@ entry:
   ret i32 %6
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/resSim.c.ll
@@ -58,7 +58,6 @@ entry:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll

@@ -530,10 +530,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; quickjs/optimized/quickjs-libc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -13,11 +13,12 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a3
 	ret
 func0000000000000000:                   # @func0000000000000000
-	srli	a1, a1, 24
-	lui	a2, 384
+	srli	a1, a1, 16
+	li	a2, 3
+	slli	a2, a2, 31
 	and	a1, a1, a2
 	or	a0, a0, a1
-	ori	a0, a0, 2
+	ori	a0, a0, 512
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a1, a1, 52

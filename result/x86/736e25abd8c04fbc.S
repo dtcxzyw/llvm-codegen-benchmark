@@ -46,16 +46,17 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	$-1, %edi
 	setge	%al
 	retq
+func000000000000002c:                   # @func000000000000002c
+	decl	%edi
+	cmpl	$-2, %edi
+	setb	%al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	cmpl	$1114112, %edi                  # imm = 0x110000
 	setne	%cl
 	cmpl	$127, %edi
 	seta	%al
 	andb	%cl, %al
-	retq
-func000000000000002c:                   # @func000000000000002c
-	cmpl	$4, %edi
-	setne	%al
 	retq
 func000000000000014a:                   # @func000000000000014a
 	cmpl	$5, %edi

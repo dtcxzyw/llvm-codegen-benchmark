@@ -1,5 +1,5 @@
 
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
 
 ; 8 occurrences:
 ; libsodium/optimized/libsodium_la-hash_sha256_cp.ll
@@ -17,7 +17,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 15
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %5
+  %6 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -361,7 +361,8 @@ entry:
   ret i1 %4
 }
 
-; 243 occurrences:
+; 244 occurrences:
+; clamav/optimized/matcher-ac.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -613,8 +614,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
-; clamav/optimized/matcher-ac.c.ll
+; 10 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/pmsr.ll

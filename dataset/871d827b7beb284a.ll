@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/revision.ll
 ; graphviz/optimized/ccomps.c.ll
 ; linux/optimized/slab_common.ll
 ; openmpi/optimized/osc_rdma_active_target.ll
-; openspiel/optimized/goofspiel.cc.ll
 ; openssl/optimized/http_test-bin-http_test.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; Function Attrs: nounwind
@@ -107,8 +106,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; libwebp/optimized/alpha_dec.c.ll
+; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000012(i64 %0, i32 %1) #0 {

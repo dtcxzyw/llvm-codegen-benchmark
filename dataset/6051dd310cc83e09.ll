@@ -1,10 +1,10 @@
 
-%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
-%union.anon.27.2601722 = type { i32 }
-%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
-%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
+%"class.re2::Prog::Inst.2601688" = type { i32, %union.anon.27.2601689 }
+%union.anon.27.2601689 = type { i32 }
+%"class.rapidjson::GenericMember.2825502" = type { %"class.rapidjson::GenericValue.2825277", %"class.rapidjson::GenericValue.2825277" }
+%"class.rapidjson::GenericValue.2825277" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825278" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825279" = type { i32, i32, ptr }
 
 ; 78 occurrences:
 ; abc/optimized/sfmDec.c.ll
@@ -474,7 +474,7 @@ entry:
   ret ptr %4
 }
 
-; 439 occurrences:
+; 440 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcRestruct.c.ll
@@ -554,6 +554,7 @@ entry:
 ; draco/optimized/rans_bit_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/symbol_decoding.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -1768,7 +1769,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"class.re2::Prog::Inst.2601721", ptr %0, i64 %2
+  %3 = getelementptr %"class.re2::Prog::Inst.2601688", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }
@@ -5128,7 +5129,7 @@ entry:
   ret ptr %4
 }
 
-; 227 occurrences:
+; 229 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -5235,6 +5236,8 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -5383,7 +5386,7 @@ define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.rapidjson::GenericMember.2825536", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.rapidjson::GenericMember.2825502", ptr %0, i64 %3
   ret ptr %4
 }
 

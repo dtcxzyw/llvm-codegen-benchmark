@@ -1,15 +1,15 @@
 
-%struct.NetClientState.2706049 = type { ptr, i32, %union.anon.2706050, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706051 }
-%union.anon.2706050 = type { %struct.QTailQLink.2706042 }
-%struct.QTailQLink.2706042 = type { ptr, ptr }
-%union.anon.0.2706051 = type { %struct.QTailQLink.2706042 }
-%struct._zval_struct.2791858 = type { %union._zend_value.2791866, %union.anon.0.2791867, %union.anon.3.2791868 }
-%union._zend_value.2791866 = type { i64 }
-%union.anon.0.2791867 = type { i32 }
-%union.anon.3.2791868 = type { i32 }
-%struct.Mig_Obj_t_.2876713 = type { [4 x %struct.Mig_Fan_t_.2876714] }
-%struct.Mig_Fan_t_.2876714 = type { i32 }
-%struct.Gia_Obj_t_.2877299 = type <{ i64, i32 }>
+%struct.NetClientState.2706015 = type { ptr, i32, %union.anon.2706016, ptr, ptr, ptr, ptr, [256 x i8], i8, ptr, i32, i8, i32, i32, i8, i8, i8, %union.anon.0.2706017 }
+%union.anon.2706016 = type { %struct.QTailQLink.2706008 }
+%struct.QTailQLink.2706008 = type { ptr, ptr }
+%union.anon.0.2706017 = type { %struct.QTailQLink.2706008 }
+%struct._zval_struct.2791824 = type { %union._zend_value.2791832, %union.anon.0.2791833, %union.anon.3.2791834 }
+%union._zend_value.2791832 = type { i64 }
+%union.anon.0.2791833 = type { i32 }
+%union.anon.3.2791834 = type { i32 }
+%struct.Mig_Obj_t_.2876679 = type { [4 x %struct.Mig_Fan_t_.2876680] }
+%struct.Mig_Fan_t_.2876680 = type { i32 }
+%struct.Gia_Obj_t_.2877265 = type <{ i64, i32 }>
 
 ; 17 occurrences:
 ; cpython/optimized/unicodeobject.ll
@@ -57,13 +57,14 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/cookie.c.ll
 ; curl/optimized/libcurl_la-cookie.ll
 ; git/optimized/http-push.ll
 ; git/optimized/submodule.ll
 ; gromacs/optimized/mdoutf.cpp.ll
+; gromacs/optimized/wall.cpp.ll
 ; libquic/optimized/url_util.cc.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_debug.ll
@@ -132,7 +133,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = getelementptr %struct.NetClientState.2706049, ptr %0, i64 %1
+  %4 = getelementptr %struct.NetClientState.2706015, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 24
   ret ptr %6
@@ -199,8 +200,7 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
-; gromacs/optimized/wall.cpp.ll
+; 1 occurrences:
 ; php/optimized/phar_object.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
@@ -256,8 +256,8 @@ entry:
 define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct._zval_struct.2791858, ptr %0, i64 %1
-  %5 = getelementptr nusw %struct._zval_struct.2791858, ptr %4, i64 %3
+  %4 = getelementptr nusw %struct._zval_struct.2791824, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct._zval_struct.2791824, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %5, i64 48
   ret ptr %6
 }
@@ -435,8 +435,8 @@ entry:
 define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876713, ptr %0, i64 %1
-  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876713, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %struct.Mig_Obj_t_.2876679, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.Mig_Obj_t_.2876679, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }
@@ -452,8 +452,8 @@ entry:
 define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877299, ptr %0, i64 %1
-  %5 = getelementptr %struct.Gia_Obj_t_.2877299, ptr %4, i64 %3, i32 1
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877265, ptr %0, i64 %1
+  %5 = getelementptr %struct.Gia_Obj_t_.2877265, ptr %4, i64 %3, i32 1
   ret ptr %5
 }
 

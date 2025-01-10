@@ -1,5 +1,5 @@
 
-%struct.scatterlist.3532351 = type { i64, i32, i32, i64, i32, i32 }
+%struct.scatterlist.3532317 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 6 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -29,7 +29,7 @@ entry:
   %3 = tail call i32 @llvm.umin.i32(i32 %1, i32 %2)
   %4 = add i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.scatterlist.3532351, ptr %0, i64 %5
+  %6 = getelementptr %struct.scatterlist.3532317, ptr %0, i64 %5
   ret ptr %6
 }
 

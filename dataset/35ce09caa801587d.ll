@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; grpc/optimized/executor.cc.ll
@@ -11,7 +11,6 @@
 ; luau/optimized/Simplify.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
 ; luau/optimized/Subtyping.test.cpp.ll
-; luau/optimized/TableShape.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll

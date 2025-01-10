@@ -35,7 +35,8 @@ func0000000000000004:                   # @func0000000000000004
 	imulq	%rdi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	shrq	$3, %rsi
-	movl	%esi, %eax
+	movq	%rsi, %rax
+	shrq	$3, %rax
+	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	imulq	%rdi, %rax
 	retq

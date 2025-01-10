@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; hyperscan/optimized/ue2string.cpp.ll
+; 2 occurrences:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; Function Attrs: nounwind

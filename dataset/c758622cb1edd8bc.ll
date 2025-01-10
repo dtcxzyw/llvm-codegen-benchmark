@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; graphviz/optimized/excontext.c.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll

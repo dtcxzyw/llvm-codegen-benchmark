@@ -80,6 +80,20 @@ entry:
   ret ptr %7
 }
 
+; 2 occurrences:
+; git/optimized/xutils.ll
+; gromacs/optimized/bwlzh.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000056(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 2
+  %4 = add nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/bwlzh.c.ll
 ; Function Attrs: nounwind
@@ -87,19 +101,6 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 9
   %4 = add i32 %1, %3
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 4
-  ret ptr %7
-}
-
-; 1 occurrences:
-; gromacs/optimized/bwlzh.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 9
-  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 4

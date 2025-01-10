@@ -1,5 +1,5 @@
 
-%struct.ItemIdData.3653742 = type { i32 }
+%struct.ItemIdData.3653708 = type { i32 }
 
 ; 3 occurrences:
 ; cpython/optimized/obmalloc.ll
@@ -9,7 +9,7 @@
 define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 24
-  %4 = getelementptr [0 x %struct.ItemIdData.3653742], ptr %3, i64 0, i64 %1
+  %4 = getelementptr [0 x %struct.ItemIdData.3653708], ptr %3, i64 0, i64 %1
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

@@ -1,11 +1,11 @@
 
-%struct._ir_insn.2791076 = type { %struct.anon.2791077, %union.anon.5.2791078 }
-%struct.anon.2791077 = type { %union.anon.2791079, %union.anon.4.2791080 }
-%union.anon.2791079 = type { i32 }
-%union.anon.4.2791080 = type { i32 }
-%union.anon.5.2791078 = type { %union._ir_val.2791081 }
-%union._ir_val.2791081 = type { double }
-%struct.hlist_head.3550203 = type { ptr }
+%struct._ir_insn.2791042 = type { %struct.anon.2791043, %union.anon.5.2791044 }
+%struct.anon.2791043 = type { %union.anon.2791045, %union.anon.4.2791046 }
+%union.anon.2791045 = type { i32 }
+%union.anon.4.2791046 = type { i32 }
+%union.anon.5.2791044 = type { %union._ir_val.2791047 }
+%union._ir_val.2791047 = type { double }
+%struct.hlist_head.3550169 = type { ptr }
 
 ; 39 occurrences:
 ; assimp/optimized/zip.c.ll
@@ -80,7 +80,7 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %7 = getelementptr nusw nuw %struct._ir_insn.2791076, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %struct._ir_insn.2791042, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -108,7 +108,7 @@ entry:
   %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 112
-  %7 = getelementptr %struct.hlist_head.3550203, ptr %6, i64 %5
+  %7 = getelementptr %struct.hlist_head.3550169, ptr %6, i64 %5
   ret ptr %7
 }
 

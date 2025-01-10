@@ -1,5 +1,5 @@
 
-%struct.Vec_Int_t_.2877592 = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2877558 = type { i32, i32, ptr }
 
 ; 3 occurrences:
 ; abc/optimized/acecTree.c.ll
@@ -12,7 +12,7 @@ entry:
   %4 = zext i1 %3 to i32
   %5 = add nuw nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.Vec_Int_t_.2877592, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.Vec_Int_t_.2877558, ptr %0, i64 %6
   ret ptr %7
 }
 

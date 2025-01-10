@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
@@ -46,6 +46,7 @@
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll

@@ -1,7 +1,7 @@
 
-%struct.prb_desc.3551378 = type { %struct.atomic64_t.3551379, %struct.prb_data_blk_lpos.3551380 }
-%struct.atomic64_t.3551379 = type { i64 }
-%struct.prb_data_blk_lpos.3551380 = type { i64, i64 }
+%struct.prb_desc.3551344 = type { %struct.atomic64_t.3551345, %struct.prb_data_blk_lpos.3551346 }
+%struct.atomic64_t.3551345 = type { i64 }
+%struct.prb_data_blk_lpos.3551346 = type { i64, i64 }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5HFiblock.c.ll
@@ -23,7 +23,7 @@ entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.prb_desc.3551378, ptr %0, i64 %3
+  %4 = getelementptr %struct.prb_desc.3551344, ptr %0, i64 %3
   ret ptr %4
 }
 

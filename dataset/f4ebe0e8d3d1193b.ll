@@ -28,10 +28,11 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; gromacs/optimized/wall.cpp.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
+; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/jquant1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
@@ -42,10 +43,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
-; linux/optimized/vc_screen.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:

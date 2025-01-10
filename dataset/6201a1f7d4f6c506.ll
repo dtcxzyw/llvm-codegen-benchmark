@@ -6893,7 +6893,7 @@ entry:
   ret i64 %1
 }
 
-; 1417 occurrences:
+; 1416 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -6988,7 +6988,6 @@ entry:
 ; duckdb/optimized/vector_storage.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; faiss/optimized/Index2Layer.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll

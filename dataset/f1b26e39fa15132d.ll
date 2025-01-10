@@ -13,8 +13,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
+; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

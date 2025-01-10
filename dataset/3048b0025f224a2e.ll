@@ -1,5 +1,8 @@
 
-; 81 occurrences:
+; 96 occurrences:
+; abc/optimized/gzread.c.ll
+; abc/optimized/gzwrite.c.ll
+; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -34,8 +37,11 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
+; cmake/optimized/gzread.c.ll
+; cmake/optimized/gzwrite.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
@@ -53,7 +59,11 @@
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; hermes/optimized/UTF16Stream.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
+; libquic/optimized/gzread.c.ll
+; libquic/optimized/gzwrite.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
+; linux/optimized/blk-map.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -69,22 +79,27 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nuttx/optimized/lib_qsort.c.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; openmpi/optimized/ad_write_str.ll
 ; postgres/optimized/data.ll
 ; postgres/optimized/inv_api.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/block_io.c.ll
+; ruby/optimized/io.ll
 ; slurm/optimized/bitstring.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zlib/optimized/gzread.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
+  %2 = tail call i64 @llvm.smin.i64(i64 %0, i64 %1)
   %3 = and i64 %2, 4294967295
   ret i64 %3
 }

@@ -1,20 +1,20 @@
 
-%"class.boost::intrusive::list.2684294" = type { %"class.boost::intrusive::list_impl.2684295" }
-%"class.boost::intrusive::list_impl.2684295" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684296" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" }
-%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684297" = type { %"struct.boost::intrusive::detail::default_header_holder.2684298" }
-%"struct.boost::intrusive::detail::default_header_holder.2684298" = type { %"struct.boost::intrusive::list_node.2684299" }
-%"struct.boost::intrusive::list_node.2684299" = type { ptr, ptr }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
-%struct.BEInt.168.2730713 = type { i8 }
-%class.CodeSection.2733767 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, i8, i32, i8, ptr }
-%"class.clang::QualType.3192275" = type { %"class.llvm::PointerIntPair.3192276" }
-%"class.llvm::PointerIntPair.3192276" = type { %"struct.llvm::detail::PunnedPointer.3192277" }
-%"struct.llvm::detail::PunnedPointer.3192277" = type { [8 x i8] }
-%struct.prefix_code_node.3436900 = type { i16, i8, [2 x i16] }
-%union._Py_CODEUNIT.3974162 = type { i16 }
+%"class.boost::intrusive::list.2684261" = type { %"class.boost::intrusive::list_impl.2684262" }
+%"class.boost::intrusive::list_impl.2684262" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::data_t.2684263" = type { %"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" }
+%"struct.boost::intrusive::list_impl<boost::intrusive::bhtraits<folly::HHWheelTimerBase<std::chrono::duration<long, std::ratio<1, 1000>>>::Callback, boost::intrusive::list_node_traits<void *>, boost::intrusive::auto_unlink, boost::intrusive::dft_tag, 1>, unsigned long, false, void>::root_plus_size.2684264" = type { %"struct.boost::intrusive::detail::default_header_holder.2684265" }
+%"struct.boost::intrusive::detail::default_header_holder.2684265" = type { %"struct.boost::intrusive::list_node.2684266" }
+%"struct.boost::intrusive::list_node.2684266" = type { ptr, ptr }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.167.2730678" = type { %struct.BEInt.168.2730679 }
+%struct.BEInt.168.2730679 = type { i8 }
+%class.CodeSection.2733733 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i8, i8, i32, i8, ptr }
+%"class.clang::QualType.3192241" = type { %"class.llvm::PointerIntPair.3192242" }
+%"class.llvm::PointerIntPair.3192242" = type { %"struct.llvm::detail::PunnedPointer.3192243" }
+%"struct.llvm::detail::PunnedPointer.3192243" = type { [8 x i8] }
+%struct.prefix_code_node.3436866 = type { i16, i8, [2 x i16] }
+%union._Py_CODEUNIT.3974112 = type { i16 }
 
 ; 13 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -385,7 +385,7 @@ entry:
 define i1 @func00000000000001c1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw %"class.boost::intrusive::list.2684294", ptr %3, i64 %1
+  %4 = getelementptr nusw %"class.boost::intrusive::list.2684261", ptr %3, i64 %1
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -450,7 +450,7 @@ entry:
 define i1 @func00000000000001c5(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 10
-  %4 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %3, i64 %1
+  %4 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %3, i64 %1
   %5 = icmp ule ptr %4, %0
   ret i1 %5
 }
@@ -520,7 +520,7 @@ entry:
 define i1 @func00000000000001e8(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 1
-  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730678", ptr %3, i64 %1
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -598,7 +598,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr nusw nuw %class.CodeSection.2733767, ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %class.CodeSection.2733733, ptr %3, i64 %1
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -804,7 +804,7 @@ entry:
 define i1 @func00000000000001ec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 48
-  %4 = getelementptr nusw nuw %"class.clang::QualType.3192275", ptr %3, i64 %1
+  %4 = getelementptr nusw nuw %"class.clang::QualType.3192241", ptr %3, i64 %1
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -815,7 +815,7 @@ entry:
 define i1 @func0000000000000189(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr %struct.prefix_code_node.3436900, ptr %3, i64 %1
+  %4 = getelementptr %struct.prefix_code_node.3436866, ptr %3, i64 %1
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
@@ -899,7 +899,7 @@ entry:
 define i1 @func000000000000000c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 4
-  %4 = getelementptr %union._Py_CODEUNIT.3974162, ptr %3, i64 %1
+  %4 = getelementptr %union._Py_CODEUNIT.3974112, ptr %3, i64 %1
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }

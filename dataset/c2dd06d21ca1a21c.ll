@@ -1373,7 +1373,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; coremark/optimized/core_list_join.c.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -1386,7 +1386,6 @@ entry:
 ; php/optimized/tokenizer.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; sqlite/optimized/sqlite3.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -1704,6 +1703,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; verilator/optimized/V3OrderParallel.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
 ; 48 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -1762,9 +1772,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
-; abc/optimized/giaSif.c.ll
-; abc/optimized/sbdCore.c.ll
+; 11 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/common.c.ll

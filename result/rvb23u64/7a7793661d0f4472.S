@@ -42,6 +42,12 @@ func00000000000000a8:                   # @func00000000000000a8
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sub	a1, a1, a2
+	li	a2, 11
+	sub	a2, a2, a0
+	sltu	a0, a1, a2
+	ret
 func00000000000000a4:                   # @func00000000000000a4
 	sub	a1, a1, a2
 	li	a2, -1

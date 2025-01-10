@@ -33,6 +33,16 @@ entry:
   ret ptr %4
 }
 
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000008f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -32
+  ret ptr %4
+}
+
 ; 2 occurrences:
 ; boost/optimized/alloc_lib.ll
 ; boost/optimized/url_base.ll

@@ -1,5 +1,6 @@
 
-; 37 occurrences:
+; 38 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
 ; minetest/optimized/chat.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -50,7 +51,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 18 occurrences:
+; 19 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
 ; mold/optimized/icf.cc.ARM64.cc.ll
@@ -110,32 +112,8 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = sub i64 %0, %1
-  %5 = tail call noundef i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; clamav/optimized/hfsplus.c.ll
-; clamav/optimized/sis.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw i64 %1, %2
-  %4 = zext i32 %0 to i64
-  %5 = tail call i64 @llvm.umin.i64(i64 range(i64 0, 4294967296) %4, i64 %3)
-  %6 = icmp samesign ult i64 %5, 2147483648
-  ret i1 %6
-}
-
-; 11 occurrences:
+; 12 occurrences:
+; assimp/optimized/unzip.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -158,14 +136,41 @@ entry:
 }
 
 ; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub i64 %0, %1
+  %5 = tail call noundef i64 @llvm.umin.i64(i64 %4, i64 %3)
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; linux/optimized/serial_core.ll
 ; llvm/optimized/Signals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub i64 %0, %1
+  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; clamav/optimized/hfsplus.c.ll
+; clamav/optimized/sis.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000114(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = zext i32 %0 to i64
-  %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 %3)
-  %6 = icmp eq i64 %5, 0
+  %5 = tail call i64 @llvm.umin.i64(i64 range(i64 0, 4294967296) %4, i64 %3)
+  %6 = icmp samesign ult i64 %5, 2147483648
   ret i1 %6
 }
 

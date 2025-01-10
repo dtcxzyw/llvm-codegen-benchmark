@@ -1,19 +1,19 @@
 
-%struct.XHCIPort.2706966 = type { ptr, i32, i32, ptr, i32, [20 x i8], %struct.MemoryRegion.2706967 }
-%struct.MemoryRegion.2706967 = type { %struct.Object.2706968, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, ptr, ptr, ptr, i32, i128, i64, ptr, i64, i8, i8, i8, i8, i8, ptr, i64, i32, %union.anon.2.2706969, %union.anon.3.2706970, %union.anon.4.2706971, ptr, i32, ptr, ptr, i8 }
-%struct.Object.2706968 = type { ptr, ptr, ptr, i32, ptr }
-%union.anon.2.2706969 = type { %struct.QTailQLink.2706972 }
-%struct.QTailQLink.2706972 = type { ptr, ptr }
-%union.anon.3.2706970 = type { %struct.QTailQLink.2706972 }
-%union.anon.4.2706971 = type { %struct.QTailQLink.2706972 }
-%struct.pmp_addr_t.2710181 = type { i64, i64 }
-%"struct.OT::OffsetTo.619.2737021" = type { %"struct.OT::Offset.175.2736874" }
-%"struct.OT::Offset.175.2736874" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%"union.std::aligned_storage<16, 8>::type.2800765" = type { [16 x i8] }
-%struct.e1000_shadow_ram.3538596 = type { i16, i8 }
-%"struct.cv::ximgproc::ScanSegmentImpl::WSQueue.3778097" = type { i32, i32 }
+%struct.XHCIPort.2706932 = type { ptr, i32, i32, ptr, i32, [20 x i8], %struct.MemoryRegion.2706933 }
+%struct.MemoryRegion.2706933 = type { %struct.Object.2706934, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, ptr, ptr, ptr, ptr, ptr, ptr, i32, i128, i64, ptr, i64, i8, i8, i8, i8, i8, ptr, i64, i32, %union.anon.2.2706935, %union.anon.3.2706936, %union.anon.4.2706937, ptr, i32, ptr, ptr, i8 }
+%struct.Object.2706934 = type { ptr, ptr, ptr, i32, ptr }
+%union.anon.2.2706935 = type { %struct.QTailQLink.2706938 }
+%struct.QTailQLink.2706938 = type { ptr, ptr }
+%union.anon.3.2706936 = type { %struct.QTailQLink.2706938 }
+%union.anon.4.2706937 = type { %struct.QTailQLink.2706938 }
+%struct.pmp_addr_t.2710147 = type { i64, i64 }
+%"struct.OT::OffsetTo.619.2736987" = type { %"struct.OT::Offset.175.2736840" }
+%"struct.OT::Offset.175.2736840" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%"union.std::aligned_storage<16, 8>::type.2800731" = type { [16 x i8] }
+%struct.e1000_shadow_ram.3538562 = type { i16, i8 }
+%"struct.cv::ximgproc::ScanSegmentImpl::WSQueue.3778047" = type { i32, i32 }
 
 ; 7 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -40,7 +40,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr [30 x %struct.XHCIPort.2706966], ptr %0, i64 0, i64 %4, i32 2
+  %5 = getelementptr [30 x %struct.XHCIPort.2706932], ptr %0, i64 0, i64 %4, i32 2
   ret ptr %5
 }
 
@@ -51,7 +51,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.pmp_addr_t.2710181], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [16 x %struct.pmp_addr_t.2710147], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -83,7 +83,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2737021"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %"struct.OT::OffsetTo.619.2736987"], ptr %0, i64 0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -95,7 +95,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800765"], ptr %0, i64 0, i64 %4, i32 0, i64 8
+  %5 = getelementptr [15 x %"union.std::aligned_storage<16, 8>::type.2800731"], ptr %0, i64 0, i64 %4, i32 0, i64 8
   ret ptr %5
 }
 
@@ -119,7 +119,7 @@ define ptr @func0000000000000073(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3538596], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr [2048 x %struct.e1000_shadow_ram.3538562], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -132,7 +132,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw [256 x %"struct.cv::ximgproc::ScanSegmentImpl::WSQueue.3778097"], ptr %0, i64 0, i64 %4, i32 1
+  %5 = getelementptr nuw [256 x %"struct.cv::ximgproc::ScanSegmentImpl::WSQueue.3778047"], ptr %0, i64 0, i64 %4, i32 1
   ret ptr %5
 }
 

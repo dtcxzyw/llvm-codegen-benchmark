@@ -1,5 +1,5 @@
 
-; 380 occurrences:
+; 382 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -338,7 +338,9 @@
 ; openusd/optimized/fileSystem.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; postgres/optimized/autovacuum.ll
 ; postgres/optimized/postgres.ll
@@ -528,7 +530,6 @@ entry:
 ; cmake/optimized/file.c.ll
 ; cmake/optimized/setopt.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -1230,9 +1231,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-provider_conf.ll
 ; openssl/optimized/libdefault-lib-cipher_cts.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-lib-t1_enc.ll
 ; openssl/optimized/libssl-lib-tls13_enc.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-t1_enc.ll
 ; openssl/optimized/libssl-shlib-tls13_enc.ll
 ; openssl/optimized/openssl-bin-passwd.ll
@@ -1474,7 +1477,6 @@ entry:
 ; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
@@ -1528,6 +1530,30 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 65536
   %3 = select i1 %2, i64 6, i64 %0
+  ret i64 %3
+}
+
+; 15 occurrences:
+; eastl/optimized/Int128_t.cpp.ll
+; libquic/optimized/wnaf.c.ll
+; lief/optimized/CorePrStatus.cpp.ll
+; lief/optimized/LoadConfiguration.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/ResourcesManager.cpp.ll
+; lief/optimized/Signature.cpp.ll
+; linux/optimized/addrlabel.ll
+; openssl/optimized/libcrypto-lib-ec_mult.ll
+; openssl/optimized/libcrypto-shlib-ec_mult.ll
+; rocksdb/optimized/compression_context_cache.cc.ll
+; rocksdb/optimized/concurrent_arena.cc.ll
+; rocksdb/optimized/memtable.cc.ll
+; ruby/optimized/bignum.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 31
+  %3 = select i1 %2, i64 -1, i64 %0
   ret i64 %3
 }
 
@@ -1600,29 +1626,6 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 60
-  %3 = select i1 %2, i64 -1, i64 %0
-  ret i64 %3
-}
-
-; 14 occurrences:
-; eastl/optimized/Int128_t.cpp.ll
-; libquic/optimized/wnaf.c.ll
-; lief/optimized/CorePrStatus.cpp.ll
-; lief/optimized/LoadConfiguration.cpp.ll
-; lief/optimized/Note.cpp.ll
-; lief/optimized/ResourcesManager.cpp.ll
-; lief/optimized/Signature.cpp.ll
-; linux/optimized/addrlabel.ll
-; openssl/optimized/libcrypto-lib-ec_mult.ll
-; openssl/optimized/libcrypto-shlib-ec_mult.ll
-; rocksdb/optimized/compression_context_cache.cc.ll
-; rocksdb/optimized/concurrent_arena.cc.ll
-; rocksdb/optimized/memtable.cc.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp samesign ugt i32 %1, 59
   %3 = select i1 %2, i64 -1, i64 %0
   ret i64 %3
 }

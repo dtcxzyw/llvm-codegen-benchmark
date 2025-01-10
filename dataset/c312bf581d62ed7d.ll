@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; cpython/optimized/unicodeobject.ll
 ; linux/optimized/generic-radix-tree.ll
 ; php/optimized/phpdbg_btree.ll
 ; pocketpy/optimized/vm.cpp.ll

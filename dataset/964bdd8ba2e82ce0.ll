@@ -1907,7 +1907,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; boost/optimized/matches_relation_factory.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -1931,6 +1931,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000066(i64 %0, i64 %1, ptr %2) #0 {

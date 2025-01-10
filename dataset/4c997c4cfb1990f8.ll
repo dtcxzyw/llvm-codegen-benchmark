@@ -31,7 +31,7 @@ entry:
   ret i1 %5
 }
 
-; 331 occurrences:
+; 329 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -285,7 +285,6 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -308,7 +307,6 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/ElementAt.cpp.ll
 ; velox/optimized/Slice.cpp.ll
-; verilator/optimized/V3Number.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
 ; wasmedge/optimized/canon.cpp.ll

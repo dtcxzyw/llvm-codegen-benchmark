@@ -1,5 +1,5 @@
 
-; 2447 occurrences:
+; 2446 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -285,7 +285,6 @@
 ; darktable/optimized/masks.c.ll
 ; darktable/optimized/png.c.ll
 ; darktable/optimized/print_settings.c.ll
-; darktable/optimized/recentcollect.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; darktable/optimized/styles.c.ll
 ; darktable/optimized/tagging.c.ll
@@ -2691,7 +2690,7 @@ entry:
   ret i1 %3
 }
 
-; 4831 occurrences:
+; 4834 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -3089,6 +3088,7 @@ entry:
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cmake/optimized/cmPolicies.cxx.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
+; cmake/optimized/cmTarget.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/content_encoding.c.ll
 ; cmake/optimized/cookie.c.ll
@@ -6316,6 +6316,7 @@ entry:
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_dev-hub.c.ll
 ; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
@@ -7011,6 +7012,7 @@ entry:
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; wireshark/optimized/packet-pw-satop.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-radius.c.ll
 ; wireshark/optimized/packet-reload.c.ll
@@ -7531,7 +7533,7 @@ entry:
   ret i1 %3
 }
 
-; 4924 occurrences:
+; 4921 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -8061,7 +8063,6 @@ entry:
 ; cpython/optimized/odictobject.ll
 ; cpython/optimized/pegen.ll
 ; cpython/optimized/posixmodule.ll
-; cpython/optimized/pystrtod.ll
 ; cpython/optimized/semaphore.ll
 ; cpython/optimized/socketmodule.ll
 ; cpython/optimized/sre.ll
@@ -8510,7 +8511,6 @@ entry:
 ; gromacs/optimized/state.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/ter_db.cpp.ll
-; gromacs/optimized/tng_io.c.ll
 ; gromacs/optimized/topdirs.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -11079,7 +11079,6 @@ entry:
 ; openusd/optimized/pxrSampleFilterAdapter.cpp.ll
 ; openusd/optimized/read.c.ll
 ; openusd/optimized/reconinter.c.ll
-; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/references.cpp.ll
 ; openusd/optimized/refinement.cpp.ll
 ; openusd/optimized/reformat.c.ll
@@ -12464,7 +12463,7 @@ entry:
   ret i1 %3
 }
 
-; 1253 occurrences:
+; 1252 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcTiming.c.ll
@@ -12561,7 +12560,6 @@ entry:
 ; cmake/optimized/cmSetPropertyCommand.cxx.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fs.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/openssl.c.ll
 ; cmake/optimized/tcp.c.ll
@@ -13219,6 +13217,7 @@ entry:
 ; openexr/optimized/decoding.c.ll
 ; openjdk/optimized/Net.ll
 ; openjdk/optimized/X11SurfaceData.ll
+; openjdk/optimized/awt_ImagingLib.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/callnode.ll
@@ -13237,7 +13236,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-hangul.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; openjdk/optimized/hb-ucd.ll
-; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/jvmciRuntime.ll
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/location.ll

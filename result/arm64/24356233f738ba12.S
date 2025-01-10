@@ -19,6 +19,13 @@ func000000000000016a:                   // @func000000000000016a
 	cset	w0, ge
 	ret
                                         // -- End function
+func0000000000000c2a:                   // @func0000000000000c2a
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w0, w1, #0, gt
+	cset	w0, eq
+	ret
+                                        // -- End function
 func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
 	cmp	w0, #0
@@ -38,6 +45,13 @@ func000000000000002a:                   // @func000000000000002a
 	cmp	w0, #0
 	ccmp	w0, w1, #0, ge
 	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000cea:                   // @func0000000000000cea
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	ccmp	w0, w1, #0, gt
+	cset	w0, le
 	ret
                                         // -- End function
 func000000000000010c:                   // @func000000000000010c

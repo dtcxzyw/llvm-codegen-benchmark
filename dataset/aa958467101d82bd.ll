@@ -1,8 +1,9 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/extinfo.cpp.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll

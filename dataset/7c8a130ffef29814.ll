@@ -140,9 +140,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
-; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:

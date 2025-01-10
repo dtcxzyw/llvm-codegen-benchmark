@@ -491,7 +491,7 @@ entry:
   ret i1 %5
 }
 
-; 57 occurrences:
+; 55 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaBlast.c.ll
@@ -531,8 +531,6 @@ entry:
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
-; openssl/optimized/libcrypto-lib-encoder_pkey.ll
-; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; openusd/optimized/yuv_scale.c.ll
 ; php/optimized/pcre2_study.ll
 ; postgres/optimized/data.ll

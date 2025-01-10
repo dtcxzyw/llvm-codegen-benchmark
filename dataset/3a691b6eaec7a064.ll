@@ -882,10 +882,9 @@ entry:
   ret i64 %3
 }
 
-; 183 occurrences:
+; 181 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
-; abc/optimized/fraClaus.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -937,7 +936,6 @@ entry:
 ; llvm/optimized/MCSymbolELF.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/ParsePragma.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll

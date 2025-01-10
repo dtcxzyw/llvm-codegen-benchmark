@@ -50,6 +50,11 @@ func0000000000000041:                   # @func0000000000000041
 	cmpl	%edx, %edi
 	sete	%al
 	retq
+func0000000000000641:                   # @func0000000000000641
+	subl	%esi, %edx
+	cmpl	%edx, %edi
+	sete	%al
+	retq
 func0000000000000288:                   # @func0000000000000288
 	movl	$-2, %eax
 	subl	%edi, %eax

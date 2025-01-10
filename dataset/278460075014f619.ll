@@ -232,7 +232,7 @@ entry:
   ret i16 %2
 }
 
-; 440 occurrences:
+; 437 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -248,7 +248,6 @@ entry:
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/rawread.cpp.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -404,8 +403,6 @@ entry:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/cylinder.cpp.ll
-; mitsuba3/optimized/sphere.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll

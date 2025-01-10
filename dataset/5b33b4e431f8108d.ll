@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
@@ -55,16 +56,6 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = shl i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/jmemmgr.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw i64 %1, %2
   %4 = shl i64 %3, %0
   ret i64 %4
 }

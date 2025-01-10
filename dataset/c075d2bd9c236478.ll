@@ -7624,7 +7624,7 @@ entry:
   ret i8 %1
 }
 
-; 1247 occurrences:
+; 1246 occurrences:
 ; abc/optimized/abcNames.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -7990,7 +7990,6 @@ entry:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
-; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/HTMLDiagnostics.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll

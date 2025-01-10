@@ -1,38 +1,38 @@
 
-%struct.USBHubPort.2705857 = type { %struct.USBPort.2705858, i16, i16 }
-%struct.USBPort.2705858 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705859 }
-%union.anon.1.2705859 = type { %struct.QTailQLink.2705860 }
-%struct.QTailQLink.2705860 = type { ptr, ptr }
-%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct.pmp_entry_t.2710180 = type { i64, i8 }
-%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
-%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
-%struct.BEInt.156.2734510 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
-%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
-%"struct.OT::OffsetTo.253.2736566" = type { %"struct.OT::Offset.144.2736562" }
-%"struct.OT::Offset.144.2736562" = type { %"struct.OT::IntType.139.2736552" }
-%"struct.OT::IntType.139.2736552" = type { %struct.BEInt.140.2736553 }
-%struct.BEInt.140.2736553 = type { [4 x i8] }
-%"struct.OT::Offset.267.2736574" = type { %"struct.OT::IntType.2736550" }
-%"struct.OT::IntType.2736550" = type { %struct.BEInt.2736551 }
-%struct.BEInt.2736551 = type { [2 x i8] }
-%"struct.OT::Layout::Common::RangeRecord.2736871" = type { %"struct.OT::HBGlyphID16.2736872", %"struct.OT::HBGlyphID16.2736872", %"struct.OT::IntType.139.2736869" }
-%"struct.OT::HBGlyphID16.2736872" = type { %"struct.OT::IntType.139.2736869" }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
-%union.anon.14.2794583 = type { i32 }
-%struct.snd_interval.3536592 = type { i32, i32, i8 }
-%struct.sidtab_isid_entry.3537163 = type { i32, %struct.sidtab_entry.3537164 }
-%struct.sidtab_entry.3537164 = type { i32, i32, %struct.context.3537165, ptr, %struct.hlist_node.3537166 }
-%struct.context.3537165 = type { i32, i32, i32, i32, %struct.mls_range.3537167, ptr }
-%struct.mls_range.3537167 = type { [2 x %struct.mls_level.3537168] }
-%struct.mls_level.3537168 = type { i32, %struct.ebitmap.3537169 }
-%struct.ebitmap.3537169 = type { ptr, i32 }
-%struct.hlist_node.3537166 = type { ptr, ptr }
+%struct.USBHubPort.2705823 = type { %struct.USBPort.2705824, i16, i16 }
+%struct.USBPort.2705824 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.1.2705825 }
+%union.anon.1.2705825 = type { %struct.QTailQLink.2705826 }
+%struct.QTailQLink.2705826 = type { ptr, ptr }
+%struct.XHCISlot.2706926 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct.pmp_entry_t.2710146 = type { i64, i8 }
+%"struct.OT::MathValueRecord.2734473" = type { %"struct.OT::IntType.155.2734474", %"struct.OT::OffsetTo.157.2734475" }
+%"struct.OT::IntType.155.2734474" = type { %struct.BEInt.156.2734476 }
+%struct.BEInt.156.2734476 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734475" = type { %"struct.OT::Offset.2734477" }
+%"struct.OT::Offset.2734477" = type { %"struct.OT::IntType.2734478" }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
+%"struct.OT::OffsetTo.253.2736532" = type { %"struct.OT::Offset.144.2736528" }
+%"struct.OT::Offset.144.2736528" = type { %"struct.OT::IntType.139.2736518" }
+%"struct.OT::IntType.139.2736518" = type { %struct.BEInt.140.2736519 }
+%struct.BEInt.140.2736519 = type { [4 x i8] }
+%"struct.OT::Offset.267.2736540" = type { %"struct.OT::IntType.2736516" }
+%"struct.OT::IntType.2736516" = type { %struct.BEInt.2736517 }
+%struct.BEInt.2736517 = type { [2 x i8] }
+%"struct.OT::Layout::Common::RangeRecord.2736837" = type { %"struct.OT::HBGlyphID16.2736838", %"struct.OT::HBGlyphID16.2736838", %"struct.OT::IntType.139.2736835" }
+%"struct.OT::HBGlyphID16.2736838" = type { %"struct.OT::IntType.139.2736835" }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct._zend_jit_trace_stack.2794548 = type { %union.anon.14.2794549, i32 }
+%union.anon.14.2794549 = type { i32 }
+%struct.snd_interval.3536558 = type { i32, i32, i8 }
+%struct.sidtab_isid_entry.3537129 = type { i32, %struct.sidtab_entry.3537130 }
+%struct.sidtab_entry.3537130 = type { i32, i32, %struct.context.3537131, ptr, %struct.hlist_node.3537132 }
+%struct.context.3537131 = type { i32, i32, i32, i32, %struct.mls_range.3537133, ptr }
+%struct.mls_range.3537133 = type { [2 x %struct.mls_level.3537134] }
+%struct.mls_level.3537134 = type { i32, %struct.ebitmap.3537135 }
+%struct.ebitmap.3537135 = type { ptr, i32 }
+%struct.hlist_node.3537132 = type { ptr, ptr }
 
 ; 4 occurrences:
 ; qemu/optimized/hw_usb_dev-hub.c.ll
@@ -44,7 +44,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr [8 x %struct.USBHubPort.2705857], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [8 x %struct.USBHubPort.2705823], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -103,7 +103,7 @@ define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %3, i32 5
+  %4 = getelementptr [64 x %struct.XHCISlot.2706926], ptr %0, i64 0, i64 %3, i32 5
   ret ptr %4
 }
 
@@ -114,7 +114,7 @@ define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [16 x %struct.pmp_entry_t.2710146], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -150,7 +150,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [51 x %"struct.OT::MathValueRecord.2734507"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw [51 x %"struct.OT::MathValueRecord.2734473"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -164,7 +164,7 @@ define ptr @func000000000000004f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw [1 x %"struct.OT::OffsetTo.253.2736566"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw [1 x %"struct.OT::OffsetTo.253.2736532"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -195,7 +195,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nuw [1 x %"struct.OT::Offset.267.2736574"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw [1 x %"struct.OT::Offset.267.2736540"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -217,7 +217,7 @@ define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [1 x %"struct.OT::Layout::Common::RangeRecord.2736871"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw [1 x %"struct.OT::Layout::Common::RangeRecord.2736837"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -232,7 +232,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nuw [1 x %"struct.OT::Layout::Common::RangeRecord.2736871"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
+  %4 = getelementptr nuw [1 x %"struct.OT::Layout::Common::RangeRecord.2736837"], ptr %0, i64 0, i64 %3, i32 0, i32 0, i32 0, i32 0, i64 1
   ret ptr %4
 }
 
@@ -244,7 +244,7 @@ define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794582], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %struct._zend_jit_trace_stack.2794548], ptr %0, i64 0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
@@ -268,7 +268,7 @@ define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -8
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [12 x %struct.snd_interval.3536592], ptr %0, i64 0, i64 %3, i32 1
+  %4 = getelementptr [12 x %struct.snd_interval.3536558], ptr %0, i64 0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -279,7 +279,7 @@ define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [27 x %struct.sidtab_isid_entry.3537163], ptr %0, i64 0, i64 %3, i32 1, i32 2, i32 4, i32 0, i64 1
+  %4 = getelementptr [27 x %struct.sidtab_isid_entry.3537129], ptr %0, i64 0, i64 %3, i32 1, i32 2, i32 4, i32 0, i64 1
   ret ptr %4
 }
 

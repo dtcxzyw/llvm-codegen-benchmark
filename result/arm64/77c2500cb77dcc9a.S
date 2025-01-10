@@ -20,3 +20,11 @@ func00000000000002a4:                   // @func00000000000002a4
 	cset	w0, lo
 	ret
                                         // -- End function
+func00000000000000a8:                   // @func00000000000000a8
+// %bb.0:                               // %entry
+	sxtw	x8, w0
+	sub	x8, x8, #19
+	cmn	x8, #15
+	cset	w0, lo
+	ret
+                                        // -- End function

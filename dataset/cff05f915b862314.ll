@@ -1,9 +1,8 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; graphviz/optimized/memory.c.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/early_printk.ll
 ; linux/optimized/fair.ll

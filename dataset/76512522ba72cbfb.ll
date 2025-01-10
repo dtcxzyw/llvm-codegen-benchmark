@@ -1,5 +1,5 @@
 
-%struct.among.3651288 = type { i32, ptr, i32, i32, ptr }
+%struct.among.3651254 = type { i32, ptr, i32, i32, ptr }
 
 ; 5 occurrences:
 ; git/optimized/dir.ll
@@ -27,7 +27,7 @@ entry:
   %4 = ashr i32 %3, 1
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.among.3651288, ptr %0, i64 %6
+  %7 = getelementptr %struct.among.3651254, ptr %0, i64 %6
   ret ptr %7
 }
 

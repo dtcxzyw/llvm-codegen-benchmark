@@ -1,5 +1,5 @@
 
-%struct.emitted_diff_symbol.2884690 = type { ptr, i32, i32, i32, i32, i32, i32 }
+%struct.emitted_diff_symbol.2884656 = type { ptr, i32, i32, i32, i32, i32, i32 }
 
 ; 3 occurrences:
 ; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
@@ -21,7 +21,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.emitted_diff_symbol.2884690, ptr %1, i64 %2
+  %3 = getelementptr %struct.emitted_diff_symbol.2884656, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -32
   %5 = select i1 %0, ptr null, ptr %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 28

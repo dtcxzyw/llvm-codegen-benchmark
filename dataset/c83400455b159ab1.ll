@@ -1,5 +1,5 @@
 
-%"class.mold::LittleEndian.2637079" = type { [4 x i8] }
+%"class.mold::LittleEndian.2637046" = type { [4 x i8] }
 
 ; 20 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
@@ -28,7 +28,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = shl i32 %3, 1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2637079", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.2637046", ptr %0, i64 %5
   ret ptr %6
 }
 

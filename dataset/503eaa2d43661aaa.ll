@@ -30,7 +30,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; brotli/optimized/transform.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
@@ -43,9 +43,7 @@ entry:
 ; lz4/optimized/lz4frame.c.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuklear/optimized/unity.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -176,6 +174,17 @@ entry:
   %2 = shl nsw i32 %1, 12
   %3 = and i32 %2, 196608
   %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; abc/optimized/cnfMap.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 10
+  %3 = and i32 %2, 134152192
+  %4 = add nuw i32 %3, %0
   ret i32 %4
 }
 

@@ -55,8 +55,9 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/darBalance.c.ll
+; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/regexcmp.ll
@@ -110,10 +111,9 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
-; cpython/optimized/dtoa.ll
 ; linux/optimized/cipso_ipv4.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/rangetypes_gist.ll

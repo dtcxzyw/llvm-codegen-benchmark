@@ -2430,7 +2430,7 @@ entry:
   ret i32 %3
 }
 
-; 196 occurrences:
+; 197 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/amapLiberty.c.ll
@@ -2500,6 +2500,7 @@ entry:
 ; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/tf_graph_simplifier.cpp.ll
+; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/nativeInst_x86.ll
 ; openjdk/optimized/objArrayKlass.ll

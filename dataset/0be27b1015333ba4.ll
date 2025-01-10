@@ -177,7 +177,7 @@ entry:
   ret i1 %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; boost/optimized/from_chars.ll
@@ -212,7 +212,6 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; redis/optimized/redis-cli.ll
 ; soc-simulator/optimized/verilated.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
@@ -328,7 +327,7 @@ entry:
   ret i1 %5
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/introspection_liquify.c.ll
@@ -336,6 +335,7 @@ entry:
 ; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/osageinit.c.ll
 ; graphviz/optimized/pack.c.ll
+; gromacs/optimized/libxdrf.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; icu/optimized/regexcmp.ll

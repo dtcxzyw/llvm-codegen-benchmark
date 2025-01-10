@@ -1,17 +1,19 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; luajit/optimized/minilua.ll
 ; postgres/optimized/slru.ll
 ; redis/optimized/lgc.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, %3
-  %5 = shl nsw i64 %4, 4
-  %6 = add nsw i64 %0, -1
-  %7 = add nsw i64 %6, %5
+  %5 = shl nsw i64 %4, 3
+  %6 = add nsw i64 %0, 760
+  %7 = add nsw i64 %5, %6
   ret i64 %7
 }
 

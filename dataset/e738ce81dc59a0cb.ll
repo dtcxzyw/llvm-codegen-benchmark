@@ -1,6 +1,6 @@
 
-%struct.GlobalTransactionData.3654260 = type { ptr, i32, i64, i64, i64, i32, i32, i32, i8, i8, i8, [200 x i8] }
-%struct.mstate_aux.3851939 = type { i32, i32, i16, i32 }
+%struct.GlobalTransactionData.3654226 = type { ptr, i32, i64, i64, i64, i32, i32, i32, i8, i8, i8, [200 x i8] }
+%struct.mstate_aux.3851889 = type { i32, i32, i16, i32 }
 
 ; 65 occurrences:
 ; boost/optimized/matches_relation_factory.ll
@@ -163,7 +163,7 @@ entry:
   %3 = add nsw i64 %2, 23
   %4 = and i64 %3, -8
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.GlobalTransactionData.3654260, ptr %5, i64 %0, i32 1
+  %6 = getelementptr %struct.GlobalTransactionData.3654226, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -175,7 +175,7 @@ entry:
   %3 = add nuw nsw i64 %2, 387
   %4 = and i64 %3, 562949953421296
   %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.mstate_aux.3851939, ptr %5, i64 %0, i32 1
+  %6 = getelementptr nuw %struct.mstate_aux.3851889, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
@@ -187,7 +187,7 @@ entry:
   %3 = add i64 %2, 387
   %4 = and i64 %3, -16
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nuw %struct.mstate_aux.3851939, ptr %5, i64 %0, i32 1
+  %6 = getelementptr nuw %struct.mstate_aux.3851889, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

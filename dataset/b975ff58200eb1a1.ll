@@ -13,7 +13,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 78 occurrences:
+; 77 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -24,7 +24,6 @@ declare i32 @llvm.smin.i32(i32, i32) #1
 ; abc/optimized/cuddZddReord.c.ll
 ; brotli/optimized/huffman.c.ll
 ; c3c/optimized/sema_initializers.c.ll
-; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/atoms.cpp.ll

@@ -1,12 +1,12 @@
 
-%struct.Elf64_Shdr.2600898 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
-%"struct.mold::elf::ElfShdr.555.2636424" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425" }
-%"class.mold::LittleEndian.551.2636425" = type { [4 x i8] }
-%"struct.mold::elf::ElfShdr.563.2636428" = type { %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.551.2636425", %"class.mold::LittleEndian.561.2636429", %"class.mold::LittleEndian.561.2636429" }
-%"class.mold::LittleEndian.561.2636429" = type { [8 x i8] }
-%"class.btConvexHullComputer::Edge.2817933" = type { i32, i32, i32 }
-%struct.Gia_Obj_t_.2875978 = type <{ i64, i32 }>
-%struct.Gia_Obj_t_.2876590 = type <{ i64, i32 }>
+%struct.Elf64_Shdr.2600865 = type { i32, i32, i64, i64, i64, i64, i32, i32, i64, i64 }
+%"struct.mold::elf::ElfShdr.555.2636391" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392" }
+%"class.mold::LittleEndian.551.2636392" = type { [4 x i8] }
+%"struct.mold::elf::ElfShdr.563.2636395" = type { %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.551.2636392", %"class.mold::LittleEndian.561.2636396", %"class.mold::LittleEndian.561.2636396" }
+%"class.mold::LittleEndian.561.2636396" = type { [8 x i8] }
+%"class.btConvexHullComputer::Edge.2817899" = type { i32, i32, i32 }
+%struct.Gia_Obj_t_.2875944 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2876556 = type <{ i64, i32 }>
 
 ; 19 occurrences:
 ; cpython/optimized/ceval.ll
@@ -32,11 +32,11 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr %struct.Elf64_Shdr.2600898, ptr %3, i64 %0, i32 4
+  %4 = getelementptr %struct.Elf64_Shdr.2600865, ptr %3, i64 %0, i32 4
   ret ptr %4
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; gromacs/optimized/ebin.cpp.ll
@@ -98,7 +98,6 @@ entry:
 ; mold/optimized/main.cc.X86_64.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openspiel/optimized/DealerPar.cpp.ll
 ; qemu/optimized/gen-vdso.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; spike/optimized/elfloader.ll
@@ -108,7 +107,7 @@ entry:
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636424", ptr %3, i64 %0, i32 4
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.555.2636391", ptr %3, i64 %0, i32 4
   ret ptr %4
 }
 
@@ -174,7 +173,7 @@ entry:
 define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636428", ptr %3, i64 %0, i32 4
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfShdr.563.2636395", ptr %3, i64 %0, i32 4
   ret ptr %4
 }
 
@@ -335,8 +334,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %1, i64 %2
-  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817933", ptr %3, i64 %0, i32 2
+  %3 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %1, i64 %2
+  %4 = getelementptr nusw %"class.btConvexHullComputer::Edge.2817899", ptr %3, i64 %0, i32 2
   ret ptr %4
 }
 
@@ -420,8 +419,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2875978, ptr %1, i64 %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2875978, ptr %3, i64 %0, i32 1
+  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2875944, ptr %1, i64 %2
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2875944, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 
@@ -436,8 +435,8 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876590, ptr %1, i64 %2
-  %4 = getelementptr %struct.Gia_Obj_t_.2876590, ptr %3, i64 %0, i32 1
+  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876556, ptr %1, i64 %2
+  %4 = getelementptr %struct.Gia_Obj_t_.2876556, ptr %3, i64 %0, i32 1
   ret ptr %4
 }
 

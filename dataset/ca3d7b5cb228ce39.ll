@@ -1,5 +1,5 @@
 
-%struct.aiFace.2825234 = type { i32, ptr }
+%struct.aiFace.2825200 = type { i32, ptr }
 
 ; 12 occurrences:
 ; abc/optimized/abcPrint.c.ll
@@ -20,7 +20,7 @@ entry:
   %2 = udiv i32 %1, 3
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw nuw %struct.aiFace.2825234, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.aiFace.2825200, ptr %4, i64 %3
   ret ptr %5
 }
 

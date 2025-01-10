@@ -30,12 +30,13 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %1)
+  %3 = call i64 @llvm.umin.i64(i64 %2, i64 %1)
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4

@@ -29,20 +29,6 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
-; ockam-rs/optimized/37q648fnmlksdgjw.ll
-; ockam-rs/optimized/4df8gyzy0u3roc94.ll
-; ockam-rs/optimized/4t3y03rrak2rtjym.ll
-; ockam-rs/optimized/59645ou3p4wsm5oz.ll
-; ockam-rs/optimized/nrwuhm35t9aj6gm.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 5
-  %2 = sub nuw nsw i64 -32, %1
-  ret i64 %2
-}
-
 ; 6 occurrences:
 ; typst-rs/optimized/15cosas43yh9dmeo.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll

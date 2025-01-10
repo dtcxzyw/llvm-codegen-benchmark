@@ -4,13 +4,6 @@ func0000000000000014:                   // @func0000000000000014
 	add	w0, w8, w0
 	ret
                                         // -- End function
-func000000000000001f:                   // @func000000000000001f
-// %bb.0:                               // %entry
-	ubfiz	w8, w2, #3, #8
-	orr	w8, w1, w8
-	add	w0, w8, w0
-	ret
-                                        // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	orr	w8, w1, w2, lsl #8

@@ -1,7 +1,7 @@
 
-%"class.asmjit::_abi_1_10::RALiveSpan.2603635" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603636", %"struct.asmjit::_abi_1_10::LiveRegData.2603637" }
-%"struct.asmjit::_abi_1_10::RALiveInterval.2603636" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::LiveRegData.2603637" = type { i32 }
+%"class.asmjit::_abi_1_10::RALiveSpan.2603602" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603603", %"struct.asmjit::_abi_1_10::LiveRegData.2603604" }
+%"struct.asmjit::_abi_1_10::RALiveInterval.2603603" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::LiveRegData.2603604" = type { i32 }
 
 ; 5 occurrences:
 ; linux/optimized/dm-ioctl.ll
@@ -34,7 +34,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603635", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603602", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, -12
   %6 = sub i64 %5, %0

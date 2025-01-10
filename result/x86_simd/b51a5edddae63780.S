@@ -32,7 +32,7 @@ func0000000000000121:                   # @func0000000000000121
 	retq
 func0000000000000167:                   # @func0000000000000167
 	vpsubd	%ymm1, %ymm0, %ymm3
-	vpminud	%ymm3, %ymm2, %ymm2
+	vpminud	%ymm2, %ymm3, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpled	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0

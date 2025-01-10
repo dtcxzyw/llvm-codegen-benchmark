@@ -103,3 +103,10 @@ func0000000000000066:                   # @func0000000000000066
 	cmpq	%rdx, %rdi
 	setl	%al
 	retq
+func0000000000000048:                   # @func0000000000000048
+	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
+	andq	%rdx, %rax
+	addq	%rsi, %rdi
+	cmpq	%rax, %rdi
+	seta	%al
+	retq

@@ -1,6 +1,7 @@
 
-; 57 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; clamav/optimized/matcher-bm.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -12,22 +13,6 @@
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; node/optimized/libnode.node_options.ll
-; ocio/optimized/CPUProcessor.cpp.ll
-; ocio/optimized/CTFTransform.cpp.ll
-; ocio/optimized/Lut1DOpCPU.cpp.ll
-; ocio/optimized/Lut1DOpData.cpp.ll
-; openexr/optimized/ImfAcesFile.cpp.ll
-; openexr/optimized/ImfCRgbaFile.cpp.ll
-; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
-; openexr/optimized/ImfConvert.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/ImfLut.cpp.ll
-; openexr/optimized/ImfMisc.cpp.ll
-; openexr/optimized/ImfRgbaYca.cpp.ll
-; openexr/optimized/ImfScanLineInputFile.cpp.ll
-; openexr/optimized/internal_dwa.c.ll
-; openexr/optimized/pack.c.ll
-; openexr/optimized/unpack.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
@@ -37,16 +22,6 @@
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
-; openusd/optimized/openexr-c.c.ll
-; openvdb/optimized/Archive.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_substring.ll
 ; postgres/optimized/hashutil.ll
 ; postgres/optimized/utf8_and_gb18030.ll
@@ -583,13 +558,26 @@ entry:
   ret i16 %2
 }
 
-; 14 occurrences:
+; 3 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; minetest/optimized/treegen.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = trunc nsw i32 %0 to i16
+  %2 = add nuw nsw i16 %1, 1
+  ret i16 %2
+}
+
+; 15 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; libevent/optimized/evdns.c.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/ich8lan.ll
+; linux/optimized/printk.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
@@ -603,6 +591,51 @@ define i16 @func000000000000000d(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i16
   %2 = add nsw i16 %1, -4
+  ret i16 %2
+}
+
+; 36 occurrences:
+; icu/optimized/uset.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/hub.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/intel_color.ll
+; ocio/optimized/CPUProcessor.cpp.ll
+; ocio/optimized/CTFTransform.cpp.ll
+; ocio/optimized/Lut1DOpCPU.cpp.ll
+; ocio/optimized/Lut1DOpData.cpp.ll
+; opencv/optimized/color_rgb.dispatch.cpp.ll
+; openexr/optimized/ImfAcesFile.cpp.ll
+; openexr/optimized/ImfCRgbaFile.cpp.ll
+; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
+; openexr/optimized/ImfConvert.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/ImfLut.cpp.ll
+; openexr/optimized/ImfMisc.cpp.ll
+; openexr/optimized/ImfRgbaYca.cpp.ll
+; openexr/optimized/ImfScanLineInputFile.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openexr/optimized/pack.c.ll
+; openexr/optimized/unpack.c.ll
+; openusd/optimized/openexr-c.c.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/points.cc.ll
+; postgres/optimized/dsa.ll
+; postgres/optimized/file.ll
+; postgres/optimized/hashutil.ll
+; postgres/optimized/pg_checksums.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000a(i32 %0) #0 {
+entry:
+  %1 = trunc nuw i32 %0 to i16
+  %2 = add nuw i16 %1, 1
   ret i16 %2
 }
 
@@ -713,25 +746,6 @@ entry:
   ret i16 %2
 }
 
-; 10 occurrences:
-; icu/optimized/uset.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/hub.ll
-; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_color.ll
-; opencv/optimized/color_rgb.dispatch.cpp.ll
-; postgres/optimized/dsa.ll
-; postgres/optimized/file.ll
-; postgres/optimized/hashutil.ll
-; postgres/optimized/pg_checksums.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000a(i32 %0) #0 {
-entry:
-  %1 = trunc nuw i32 %0 to i16
-  %2 = add nuw i16 %1, 4096
-  ret i16 %2
-}
-
 ; 2 occurrences:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; postgres/optimized/heapam.ll
@@ -740,17 +754,6 @@ define i16 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = add nuw i16 %1, 1
-  ret i16 %2
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000007(i32 %0) #0 {
-entry:
-  %1 = trunc nsw i32 %0 to i16
-  %2 = add nuw nsw i16 %1, 9
   ret i16 %2
 }
 

@@ -17,12 +17,6 @@ func000000000000003d:                   // @func000000000000003d
 	sub	x0, x8, x0, lsl #1
 	ret
                                         // -- End function
-func0000000000000009:                   // @func0000000000000009
-// %bb.0:                               // %entry
-	mvn	x8, x0
-	lsl	x0, x8, #5
-	ret
-                                        // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	neg	x0, x0, lsl #3

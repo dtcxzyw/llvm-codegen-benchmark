@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; arrow/optimized/codegen_internal.cc.ll
@@ -22,6 +22,8 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; meshlab/optimized/baseio.cpp.ll

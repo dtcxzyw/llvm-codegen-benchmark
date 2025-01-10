@@ -1,30 +1,30 @@
 
-%"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617334" = type { %"class.std::__cxx11::list.79.2617335" }
-%"class.std::__cxx11::list.79.2617335" = type { %"class.std::__cxx11::_List_base.80.2617336" }
-%"class.std::__cxx11::_List_base.80.2617336" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617337" }
-%"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617337" = type { %"struct.std::__detail::_List_node_header.2617338" }
-%"struct.std::__detail::_List_node_header.2617338" = type { %"struct.std::__detail::_List_node_base.2617339", i64 }
-%"struct.std::__detail::_List_node_base.2617339" = type { ptr, ptr }
-%struct.TempRow.2703215 = type { i32, i32, i32, i32, %"class.std::vector.48.2703216", %"class.std::vector.53.2703217" }
-%"class.std::vector.48.2703216" = type { %"struct.std::_Vector_base.49.2703218" }
-%"struct.std::_Vector_base.49.2703218" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703219" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" }
-%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703220" = type { ptr, ptr, ptr }
-%"class.std::vector.53.2703217" = type { %"struct.std::_Vector_base.54.2703221" }
-%"struct.std::_Vector_base.54.2703221" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703222" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" }
-%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703223" = type { ptr, ptr, ptr }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%struct.zend_type.2793214 = type { ptr, i32 }
-%struct.Amap_Pin_t_.2877322 = type { ptr, i32, double, double, double, double, double, double, double }
-%struct.mirror.3544430 = type { ptr, %struct.atomic_t.3544426, i64, ptr, i64 }
-%struct.atomic_t.3544426 = type { i32 }
-%struct.posix_acl_entry.3548202 = type { i16, i16, %union.anon.3548203 }
-%union.anon.3548203 = type { %struct.kuid_t.3548204 }
-%struct.kuid_t.3548204 = type { i32 }
-%"class.std::thread.3618884" = type { %"class.std::thread::id.3618885" }
-%"class.std::thread::id.3618885" = type { i64 }
+%"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617301" = type { %"class.std::__cxx11::list.79.2617302" }
+%"class.std::__cxx11::list.79.2617302" = type { %"class.std::__cxx11::_List_base.80.2617303" }
+%"class.std::__cxx11::_List_base.80.2617303" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617304" }
+%"struct.std::__cxx11::_List_base<rocksdb::BlockInfo *, std::allocator<rocksdb::BlockInfo *>>::_List_impl.2617304" = type { %"struct.std::__detail::_List_node_header.2617305" }
+%"struct.std::__detail::_List_node_header.2617305" = type { %"struct.std::__detail::_List_node_base.2617306", i64 }
+%"struct.std::__detail::_List_node_base.2617306" = type { ptr, ptr }
+%struct.TempRow.2703181 = type { i32, i32, i32, i32, %"class.std::vector.48.2703182", %"class.std::vector.53.2703183" }
+%"class.std::vector.48.2703182" = type { %"struct.std::_Vector_base.49.2703184" }
+%"struct.std::_Vector_base.49.2703184" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl.2703185" = type { %"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" }
+%"struct.std::_Vector_base<GUITable::Cell, std::allocator<GUITable::Cell>>::_Vector_impl_data.2703186" = type { ptr, ptr, ptr }
+%"class.std::vector.53.2703183" = type { %"struct.std::_Vector_base.54.2703187" }
+%"struct.std::_Vector_base.54.2703187" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl.2703188" = type { %"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" }
+%"struct.std::_Vector_base<std::pair<irr::video::SColor, int>, std::allocator<std::pair<irr::video::SColor, int>>>::_Vector_impl_data.2703189" = type { ptr, ptr, ptr }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%struct.zend_type.2793180 = type { ptr, i32 }
+%struct.Amap_Pin_t_.2877288 = type { ptr, i32, double, double, double, double, double, double, double }
+%struct.mirror.3544396 = type { ptr, %struct.atomic_t.3544392, i64, ptr, i64 }
+%struct.atomic_t.3544392 = type { i32 }
+%struct.posix_acl_entry.3548168 = type { i16, i16, %union.anon.3548169 }
+%union.anon.3548169 = type { %struct.kuid_t.3548170 }
+%struct.kuid_t.3548170 = type { i32 }
+%"class.std::thread.3618850" = type { %"class.std::thread::id.3618851" }
+%"class.std::thread::id.3618851" = type { i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
@@ -189,7 +189,7 @@ define i1 @func00000000000007e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617334", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.rocksdb::HashTable<rocksdb::BlockInfo *, rocksdb::BlockCacheTierMetadata::Hash, rocksdb::BlockCacheTierMetadata::Equal>::Bucket.2617301", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 24
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -202,7 +202,7 @@ define i1 @func00000000000009e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.TempRow.2703215, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.TempRow.2703181, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 64
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -451,7 +451,7 @@ define i1 @func0000000000000fe1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 4
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 2
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -467,7 +467,7 @@ define i1 @func00000000000007e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %struct.zend_type.2793214, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.zend_type.2793180, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp ult ptr %6, %5
   ret i1 %7
@@ -483,7 +483,7 @@ define i1 @func0000000000000fe4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 64
-  %5 = getelementptr nusw nuw %struct.Amap_Pin_t_.2877322, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %struct.Amap_Pin_t_.2877288, ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 72
   %7 = icmp ult ptr %6, %5
   ret i1 %7
@@ -651,7 +651,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 120
-  %5 = getelementptr %struct.mirror.3544430, ptr %4, i64 %3
+  %5 = getelementptr %struct.mirror.3544396, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %0, i64 40
   %7 = icmp ult ptr %6, %5
   ret i1 %7
@@ -664,7 +664,7 @@ define i1 @func0000000000000601(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 28
-  %5 = getelementptr %struct.posix_acl_entry.3548202, ptr %4, i64 %3
+  %5 = getelementptr %struct.posix_acl_entry.3548168, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
@@ -703,7 +703,7 @@ define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw nuw %"class.std::thread.3618884", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.std::thread.3618850", ptr %4, i64 %3
   %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7

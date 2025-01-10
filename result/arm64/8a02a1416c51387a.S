@@ -33,11 +33,6 @@ func0000000000000003:                   // @func0000000000000003
 	sub	w0, w0, #1
 	ret
                                         // -- End function
-func0000000000000007:                   // @func0000000000000007
-// %bb.0:                               // %entry
-	sub	w0, w0, #1
-	ret
-                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	add	w0, w0, #4
@@ -46,6 +41,11 @@ func0000000000000008:                   // @func0000000000000008
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	sub	w0, w0, #31
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	sub	w0, w0, #7
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e

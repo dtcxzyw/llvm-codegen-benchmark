@@ -1,7 +1,9 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; clamav/optimized/cert_util.c.ll
+; cmake/optimized/openssl.c.ll
 ; cpython/optimized/_ssl.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationkeys.ll
 ; linux/optimized/nf_nat_core.ll

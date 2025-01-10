@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/mapperCreate.c.ll
@@ -7,6 +7,7 @@
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/swap_state.ll
+; linux/optimized/xstate.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; Function Attrs: nounwind

@@ -34,8 +34,8 @@ func000000000000000a:                   # @func000000000000000a
 	srli	a1, a1, 32
 	slt	a0, a1, a0
 	ret
-func000000000000036a:                   # @func000000000000036a
-	sltiu	a0, a0, 2
+func000000000000016a:                   # @func000000000000016a
+	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
 func000000000000002a:                   # @func000000000000002a
@@ -62,14 +62,6 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	srli	a0, a0, 63
-	ret
-func000000000000016a:                   # @func000000000000016a
-	slti	a0, a0, 2
-	xori	a0, a0, 1
-	ret
-func000000000000034a:                   # @func000000000000034a
-	sltiu	a0, a0, 6
-	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a1, 1

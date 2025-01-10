@@ -1,8 +1,8 @@
 
-%"class.glslang::TConstUnion.2911511" = type <{ %union.anon.0.2911512, i32, [4 x i8] }>
-%union.anon.0.2911512 = type { i64 }
-%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749" = type { i8, i8, i8, i8 }
-%struct.RangeBound.3651819 = type { i64, i8, i8, i8 }
+%"class.glslang::TConstUnion.2911477" = type <{ %union.anon.0.2911478, i32, [4 x i8] }>
+%union.anon.0.2911478 = type { i64 }
+%"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715" = type { i8, i8, i8, i8 }
+%struct.RangeBound.3651785 = type { i64, i8, i8, i8 }
 
 ; 2 occurrences:
 ; glslang/optimized/Constant.cpp.ll
@@ -13,7 +13,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = tail call i32 @llvm.smin.i32(i32 %3, i32 %1)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.glslang::TConstUnion.2911511", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"class.glslang::TConstUnion.2911477", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = add i32 %2, -1
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093749", ptr %0, i64 %5, i32 2
+  %6 = getelementptr %"struct.OpenImageIO_v2_6_0::bmp_pvt::color_table.3093715", ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 
@@ -56,7 +56,7 @@ entry:
   %3 = add nsw i32 %2, -2
   %4 = tail call i32 @llvm.smin.i32(i32 %1, i32 %3)
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.RangeBound.3651819, ptr %0, i64 %5
+  %6 = getelementptr %struct.RangeBound.3651785, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }

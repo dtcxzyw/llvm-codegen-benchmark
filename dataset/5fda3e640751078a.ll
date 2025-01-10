@@ -1,6 +1,6 @@
 
-%"class.clang::Qualifiers.3142438" = type { i64 }
-%"class.clang::FunctionEffect.3142439" = type { i8 }
+%"class.clang::Qualifiers.3142404" = type { i64 }
+%"class.clang::FunctionEffect.3142405" = type { i8 }
 
 ; 3 occurrences:
 ; bdwgc/optimized/gc.c.ll
@@ -63,8 +63,8 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142438", ptr %3, i64 %1
-  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142439", ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %"class.clang::Qualifiers.3142404", ptr %3, i64 %1
+  %5 = getelementptr nusw nuw %"class.clang::FunctionEffect.3142405", ptr %4, i64 %0
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

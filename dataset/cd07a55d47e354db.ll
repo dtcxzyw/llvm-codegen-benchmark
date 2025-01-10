@@ -1,5 +1,5 @@
 
-%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
+%"class.clang::NestedNameSpecifierLoc.3182668" = type { ptr, ptr }
 
 ; 31 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -82,7 +82,7 @@ entry:
   %3 = lshr exact i32 %2, 18
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %1, i64 32
-  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182668", ptr %5, i64 %4
   %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
   ret ptr %7
 }

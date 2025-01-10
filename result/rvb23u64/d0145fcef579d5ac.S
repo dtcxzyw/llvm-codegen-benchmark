@@ -1,11 +1,11 @@
-func000000000000003f:                   # @func000000000000003f
-	add.uw	a0, a1, a0
-	slli	a0, a0, 1
-	ret
 func000000000000006f:                   # @func000000000000006f
 	slli	a1, a1, 48
 	slli	a0, a0, 32
 	add	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	slli.uw	a1, a1, 9
+	sh2add	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
 	sh2add.uw	a0, a1, a0

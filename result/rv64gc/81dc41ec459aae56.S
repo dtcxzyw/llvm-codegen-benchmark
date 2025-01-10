@@ -48,13 +48,3 @@ func000000000000006e:                   # @func000000000000006e
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
-.LCPI5_0:
-	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000008:                   # @func0000000000000008
-	lui	a3, %hi(.LCPI5_0)
-	ld	a3, %lo(.LCPI5_0)(a3)
-	mul	a2, a2, a3
-	mulhu	a1, a1, a3
-	add	a1, a1, a2
-	add	a0, a0, a1
-	ret

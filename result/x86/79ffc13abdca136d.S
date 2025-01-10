@@ -43,13 +43,13 @@ func0000000000000009:                   # @func0000000000000009
 	sarq	$63, %rdi
 	addq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	sarq	$3, %rdx
+func000000000000001d:                   # @func000000000000001d
+	sarq	$32, %rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	sarq	$4, %rdx
+func0000000000000011:                   # @func0000000000000011
+	sarq	$3, %rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq

@@ -1,5 +1,5 @@
 
-; 500 occurrences:
+; 501 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -64,6 +64,7 @@
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/mszipd.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/process.c.ll
 ; cmake/optimized/transfer.c.ll

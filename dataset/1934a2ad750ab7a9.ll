@@ -1,13 +1,9 @@
 
-; 2932 occurrences:
+; 2925 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ivyRwr.c.ll
@@ -441,7 +437,6 @@
 ; git/optimized/range-diff.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/ref-filter.ll
-; git/optimized/refs.ll
 ; git/optimized/remote-curl.ll
 ; git/optimized/transport.ll
 ; git/optimized/unix-socket.ll
@@ -1601,7 +1596,6 @@
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
@@ -1986,7 +1980,6 @@
 ; ruby/optimized/pack.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/re.ll
-; ruby/optimized/regexec.ll
 ; ruby/optimized/thread.ll
 ; ruby/optimized/time.ll
 ; ruby/optimized/utf_16_32.ll

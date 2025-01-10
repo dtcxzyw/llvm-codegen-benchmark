@@ -1,7 +1,7 @@
 
-%"struct.OT::HBGlyphID16.2744805" = type { %"struct.OT::IntType.2744806" }
-%"struct.OT::IntType.2744806" = type { %struct.BEInt.2744807 }
-%struct.BEInt.2744807 = type { [2 x i8] }
+%"struct.OT::HBGlyphID16.2744771" = type { %"struct.OT::IntType.2744772" }
+%"struct.OT::IntType.2744772" = type { %struct.BEInt.2744773 }
+%struct.BEInt.2744773 = type { [2 x i8] }
 
 ; 9 occurrences:
 ; assimp/optimized/TargetAnimation.cpp.ll
@@ -37,7 +37,7 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = call i32 @llvm.umin.i32(i32 %3, i32 %1)
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::HBGlyphID16.2744805", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::HBGlyphID16.2744771", ptr %0, i64 %5
   ret ptr %6
 }
 

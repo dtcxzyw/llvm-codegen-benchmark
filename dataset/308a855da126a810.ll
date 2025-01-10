@@ -1,6 +1,6 @@
 
-%union.t_iparams.3364615 = type { %struct.anon.35.3364616 }
-%struct.anon.35.3364616 = type { [3 x float], [3 x float], [3 x float], [3 x float] }
+%union.t_iparams.3364581 = type { %struct.anon.35.3364582 }
+%struct.anon.35.3364582 = type { [3 x float], [3 x float], [3 x float], [3 x float] }
 
 ; 3 occurrences:
 ; abc/optimized/ivyFraig.c.ll
@@ -116,7 +116,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %union.t_iparams.3364615, ptr %0, i64 %5, i32 0, i32 0, i64 1
+  %6 = getelementptr %union.t_iparams.3364581, ptr %0, i64 %5, i32 0, i32 0, i64 1
   ret ptr %6
 }
 

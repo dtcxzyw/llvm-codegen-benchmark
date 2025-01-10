@@ -112,9 +112,3 @@ func00000000000000a6:                   # @func00000000000000a6
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func00000000000000b8:                   # @func00000000000000b8
-	movzbl	%dl, %eax
-	subq	%rsi, %rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq

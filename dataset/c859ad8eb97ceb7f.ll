@@ -1,5 +1,5 @@
 
-%class.OopMapBlock.2740101 = type { i32, i32 }
+%class.OopMapBlock.2740067 = type { i32, i32 }
 
 ; 3 occurrences:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000061(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 512
   %4 = icmp eq i32 %3, 0
-  %5 = getelementptr nusw nuw %class.OopMapBlock.2740101, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.OopMapBlock.2740067, ptr %0, i64 %1
   %6 = select i1 %4, ptr null, ptr %5
   ret ptr %6
 }

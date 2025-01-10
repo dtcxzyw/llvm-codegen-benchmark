@@ -544,7 +544,7 @@ entry:
   ret i1 %5
 }
 
-; 372 occurrences:
+; 374 occurrences:
 ; abc/optimized/saigRetMin.c.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -569,11 +569,13 @@ entry:
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/cmPolicies.cxx.ll
 ; cmake/optimized/cmake.cxx.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/unicodeobject.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/sfnt.c.ll

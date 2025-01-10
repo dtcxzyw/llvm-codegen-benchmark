@@ -1,5 +1,5 @@
 
-%"struct.icu_75::Regex8BitSet.3717144" = type { [32 x i8] }
+%"struct.icu_75::Regex8BitSet.3717094" = type { [32 x i8] }
 
 ; 7 occurrences:
 ; abc/optimized/dsdCheck.c.ll
@@ -24,7 +24,7 @@ entry:
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 16777215
-  %4 = getelementptr nusw nuw %"struct.icu_75::Regex8BitSet.3717144", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.icu_75::Regex8BitSet.3717094", ptr %1, i64 %3
   %5 = getelementptr nusw [32 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
+; php/optimized/crypt_blowfish.ll
 ; redis/optimized/ae.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/iseq.ll
@@ -68,9 +69,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/_json.ll
-; php/optimized/crypt_blowfish.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; postgres/optimized/regcomp.ll
 ; qemu/optimized/qobject_json-parser.c.ll

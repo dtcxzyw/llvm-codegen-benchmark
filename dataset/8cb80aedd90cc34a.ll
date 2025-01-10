@@ -1,5 +1,5 @@
 
-; 332 occurrences:
+; 333 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; boost/optimized/buffer_piece_border.ll
@@ -60,6 +60,7 @@
 ; harfbuzz/optimized/hb-static.cc.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/lstopo-lstopo.ll
+; hwloc/optimized/topology-linux.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll

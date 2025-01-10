@@ -1,5 +1,5 @@
 
-; 411 occurrences:
+; 412 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -65,6 +65,7 @@
 ; cmake/optimized/select.c.ll
 ; cpython/optimized/_asynciomodule.ll
 ; cpython/optimized/_codecs_iso2022.ll
+; cpython/optimized/_json.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/_testcapimodule.ll
 ; cpython/optimized/_testmultiphase.ll
@@ -419,7 +420,7 @@ entry:
   ret i32 %2
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; boost/optimized/approximately_equals.ll
@@ -448,7 +449,6 @@ entry:
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll

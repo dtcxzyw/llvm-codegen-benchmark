@@ -408,6 +408,20 @@ entry:
   ret i1 %4
 }
 
+; 4 occurrences:
+; cpython/optimized/obmalloc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; mimalloc/optimized/segment.c.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nuw nsw i64 %2, %0
+  %4 = icmp samesign ugt i64 %3, 1
+  ret i1 %4
+}
+
 ; 7 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
@@ -436,14 +450,12 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; jq/optimized/builtin.ll
 ; opencv/optimized/fast_gemm.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
@@ -474,8 +486,7 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 9 occurrences:
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; linux/optimized/intel_dp_aux.ll
@@ -490,7 +501,7 @@ define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %2, %0
-  %4 = icmp sgt i64 %3, -2
+  %4 = icmp sgt i64 %3, 1
   ret i1 %4
 }
 
@@ -527,19 +538,6 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub i64 %2, %0
   %4 = icmp sgt i64 %3, 0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/segment.c.ll
-; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub nuw nsw i64 %2, %0
-  %4 = icmp samesign ugt i64 %3, 1
   ret i1 %4
 }
 

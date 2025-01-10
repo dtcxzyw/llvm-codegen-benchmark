@@ -28,11 +28,6 @@ func0000000000000005:                   # @func0000000000000005
 	orl	%edi, %eax
 	leal	56(%rsi,%rax), %eax
 	retq
-func000000000000002d:                   # @func000000000000002d
-	movzbl	%dl, %eax
-	orl	%edi, %eax
-	leal	-32(%rsi,%rax), %eax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	movzbl	%dl, %eax
 	orl	%edi, %eax
@@ -42,11 +37,6 @@ func0000000000000011:                   # @func0000000000000011
 	movzbl	%dl, %eax
 	orl	%esi, %eax
 	leal	2(%rdi,%rax), %eax
-	retq
-func000000000000002f:                   # @func000000000000002f
-	movzbl	%dl, %eax
-	orl	%edi, %eax
-	leal	16777216(%rsi,%rax), %eax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movzbl	%dl, %eax

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_bloom.c.ll
@@ -7,8 +7,6 @@
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
-; quantlib/optimized/lmmdriftcalculator.ll
-; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {

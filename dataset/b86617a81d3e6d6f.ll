@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
@@ -24,7 +24,6 @@
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/degeneracy.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/model.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/window_gtk.cpp.ll
@@ -86,8 +85,7 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
-; git/optimized/line-log.ll
+; 27 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/flow_control.cc.ll
 ; grpc/optimized/frame_settings.cc.ll

@@ -19,14 +19,3 @@ func00000000000000a4:                   # @func00000000000000a4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.quad	1073741824                      # 0x40000000
-func0000000000000006:                   # @func0000000000000006
-	vpsubd	%xmm2, %xmm1, %xmm1
-	vpmovsxdq	%xmm1, %ymm1
-	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [1073741824,1073741824,1073741824,1073741824]
-	vpsubq	%ymm0, %ymm2, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq

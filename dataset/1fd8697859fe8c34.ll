@@ -1,5 +1,5 @@
 
-; 275 occurrences:
+; 276 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; assimp/optimized/zip.c.ll
@@ -255,6 +255,7 @@
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/dict.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; rocksdb/optimized/sst_partitioner.cc.ll
 ; slurm/optimized/acct_policy.ll

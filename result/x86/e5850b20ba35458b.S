@@ -35,17 +35,3 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
-	andl	$15, %edx
-	shll	$7, %edx
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
-	setb	%al
-	retq
-func0000000000000088:                   # @func0000000000000088
-	andl	$15, %edx
-	shll	$7, %edx
-	addq	%rsi, %rdx
-	cmpq	%rdx, %rdi
-	seta	%al
-	retq

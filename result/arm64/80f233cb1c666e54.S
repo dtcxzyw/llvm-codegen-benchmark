@@ -34,6 +34,15 @@ func0000000000000021:                   // @func0000000000000021
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	sub	x8, x1, #32
+	cmp	x8, x0
+	csel	x8, x8, x0, lo
+	cmp	x8, #14
+	cset	w0, lo
+	ret
+                                        // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	sub	x8, x1, #1

@@ -60,23 +60,22 @@ entry:
   ret i64 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
 ; libwebp/optimized/syntax_enc.c.ll
 ; lief/optimized/bignum.c.ll
+; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; php/optimized/iptc.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
-; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
-; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
+  %1 = and i64 %0, -16
   %2 = add i64 %1, %0
   ret i64 %2
 }

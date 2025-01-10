@@ -1,5 +1,5 @@
 
-; 2606 occurrences:
+; 2605 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bmcCexCut.c.ll
@@ -859,9 +859,7 @@
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/InterpBuiltin.cpp.ll
 ; llvm/optimized/IntrinsicInst.cpp.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/IvarInvalidationChecker.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
@@ -974,6 +972,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
@@ -2614,7 +2613,7 @@ entry:
   ret i1 %3
 }
 
-; 454 occurrences:
+; 453 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
@@ -2643,7 +2642,6 @@ entry:
 ; cpython/optimized/initconfig.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/suggestions.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-cookie.ll
 ; curl/optimized/libcurl_la-hostip.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -3077,7 +3075,7 @@ entry:
   ret i1 %3
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/time.cc.ll
 ; boost/optimized/area.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
@@ -3117,7 +3115,6 @@ entry:
 ; git/optimized/xdiffi.ll
 ; graphviz/optimized/gvgen.c.ll
 ; grpc/optimized/rls.cc.ll
-; hermes/optimized/Runtime.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; libquic/optimized/asn1_lib.c.ll
 ; libquic/optimized/p224-64.c.ll
@@ -3192,7 +3189,7 @@ entry:
   ret i1 %3
 }
 
-; 1134 occurrences:
+; 1136 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -3331,6 +3328,7 @@ entry:
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/openssl.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
 ; coreutils-rs/optimized/29pneogyyl9yg2r6.ll
 ; coreutils-rs/optimized/2gweyxrc85nzbrxr.ll
@@ -4327,6 +4325,7 @@ entry:
 ; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zed-rs/optimized/f469d60j02m82fffhoomy2lb4.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
@@ -4769,7 +4768,7 @@ entry:
   ret i1 %3
 }
 
-; 187 occurrences:
+; 186 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/validate.cc.ll
@@ -4784,7 +4783,6 @@ entry:
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cmake/optimized/archive_cmdline.c.ll
-; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
@@ -4965,7 +4963,7 @@ entry:
   ret i1 %3
 }
 
-; 126 occurrences:
+; 127 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; bdwgc/optimized/cordprnt.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -4998,6 +4996,7 @@ entry:
 ; freetype/optimized/ftstroke.c.ll
 ; git/optimized/packfile.ll
 ; hermes/optimized/IR.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
 ; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/bio.c.ll

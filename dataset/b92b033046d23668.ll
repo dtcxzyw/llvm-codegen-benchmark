@@ -1,12 +1,12 @@
 
-%"class.(anonymous namespace)::NotTriviallyDestructible.3474873" = type { %"class.std::unique_ptr.379.3474874" }
-%"class.std::unique_ptr.379.3474874" = type { %"struct.std::__uniq_ptr_data.380.3474875" }
-%"struct.std::__uniq_ptr_data.380.3474875" = type { %"class.std::__uniq_ptr_impl.381.3474876" }
-%"class.std::__uniq_ptr_impl.381.3474876" = type { %"class.std::tuple.382.3474877" }
-%"class.std::tuple.382.3474877" = type { %"struct.std::_Tuple_impl.383.3474878" }
-%"struct.std::_Tuple_impl.383.3474878" = type { %"struct.std::_Head_base.386.3474879" }
-%"struct.std::_Head_base.386.3474879" = type { ptr }
-%"struct.(anonymous namespace)::MovableType.3897092" = type { ptr }
+%"class.(anonymous namespace)::NotTriviallyDestructible.3474839" = type { %"class.std::unique_ptr.379.3474840" }
+%"class.std::unique_ptr.379.3474840" = type { %"struct.std::__uniq_ptr_data.380.3474841" }
+%"struct.std::__uniq_ptr_data.380.3474841" = type { %"class.std::__uniq_ptr_impl.381.3474842" }
+%"class.std::__uniq_ptr_impl.381.3474842" = type { %"class.std::tuple.382.3474843" }
+%"class.std::tuple.382.3474843" = type { %"struct.std::_Tuple_impl.383.3474844" }
+%"struct.std::_Tuple_impl.383.3474844" = type { %"struct.std::_Head_base.386.3474845" }
+%"struct.std::_Head_base.386.3474845" = type { ptr }
+%"struct.(anonymous namespace)::MovableType.3897042" = type { ptr }
 
 ; 61 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -166,7 +166,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = call i64 @llvm.umax.i64(i64 %3, i64 %1)
-  %5 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474873", ptr %0, i64 %4
+  %5 = getelementptr %"class.(anonymous namespace)::NotTriviallyDestructible.3474839", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -204,7 +204,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = call noundef i64 @llvm.umax.i64(i64 %1, i64 range(i64 -1152921504606846975, 1152921504606846977) %3)
-  %5 = getelementptr nusw %"struct.(anonymous namespace)::MovableType.3897092", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.(anonymous namespace)::MovableType.3897042", ptr %0, i64 %4
   ret ptr %5
 }
 

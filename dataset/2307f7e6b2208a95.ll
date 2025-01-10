@@ -21,7 +21,7 @@ entry:
   ret i64 %6
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; cpython/optimized/bytearrayobject.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
@@ -50,7 +50,6 @@ entry:
 ; graphviz/optimized/excontext.c.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; luajit/optimized/lj_err.ll

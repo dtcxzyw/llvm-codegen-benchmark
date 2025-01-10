@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2791076 = type { %struct.anon.2791077, %union.anon.5.2791078 }
-%struct.anon.2791077 = type { %union.anon.2791079, %union.anon.4.2791080 }
-%union.anon.2791079 = type { i32 }
-%union.anon.4.2791080 = type { i32 }
-%union.anon.5.2791078 = type { %union._ir_val.2791081 }
-%union._ir_val.2791081 = type { double }
+%struct._ir_insn.2791042 = type { %struct.anon.2791043, %union.anon.5.2791044 }
+%struct.anon.2791043 = type { %union.anon.2791045, %union.anon.4.2791046 }
+%union.anon.2791045 = type { i32 }
+%union.anon.4.2791046 = type { i32 }
+%union.anon.5.2791044 = type { %union._ir_val.2791047 }
+%union._ir_val.2791047 = type { double }
 
 ; 96 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -107,7 +107,7 @@
 define ptr @func00000000000000e6(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = zext nneg i32 %1 to i64
-  %4 = getelementptr nusw nuw %struct._ir_insn.2791076, ptr %2, i64 %3
+  %4 = getelementptr nusw nuw %struct._ir_insn.2791042, ptr %2, i64 %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6

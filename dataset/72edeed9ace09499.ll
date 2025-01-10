@@ -93,7 +93,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; boost/optimized/area.ll
 ; cpython/optimized/_cursesmodule.ll
 ; git/optimized/dir.ll
@@ -103,6 +103,7 @@ entry:
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/TargetSchedule.cpp.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; postgres/optimized/heapam.ll

@@ -1,7 +1,7 @@
 
-%struct.FWCfgEntry.2709409 = type { i32, i8, ptr, ptr, ptr, ptr }
-%"struct.std::pair.11.2880956" = type { %"class.folly::Range.2880942", double }
-%"class.folly::Range.2880942" = type { ptr, ptr }
+%struct.FWCfgEntry.2709375 = type { i32, i8, ptr, ptr, ptr, ptr }
+%"struct.std::pair.11.2880922" = type { %"class.folly::Range.2880908", double }
+%"class.folly::Range.2880908" = type { ptr, ptr }
 
 ; 3 occurrences:
 ; linux/optimized/nfnetlink.ll
@@ -12,7 +12,7 @@ define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.FWCfgEntry.2709409, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.FWCfgEntry.2709375, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -55,7 +55,7 @@ define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16383
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nuw %"struct.std::pair.11.2880956", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nuw %"struct.std::pair.11.2880922", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -17,16 +17,19 @@ func0000000000000001:                   # @func0000000000000001
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:
-	.long	2                               # 0x2
+	.long	18                              # 0x12
 .LCPI1_1:
-	.long	578                             # 0x242
+	.long	15                              # 0xf
+.LCPI1_2:
+	.long	12                              # 0xc
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %ymm0   # ymm0 = [2,2,2,2,2,2,2,2]
-	vpcmpeqd	%ymm0, %ymm1, %k2
-	vmovdqa32	%ymm0, %ymm1 {%k2} {z}
-	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [578,578,578,578,578,578,578,578]
+	vptestnmd	%ymm1, %ymm1, %k2
+	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [18,18,18,18,18,18,18,18]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm0   # ymm0 = [15,15,15,15,15,15,15,15]
+	vmovdqa32	%ymm1, %ymm0 {%k2}
+	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k2} # ymm1 {%k2} = [12,12,12,12,12,12,12,12]
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI2_0:

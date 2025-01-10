@@ -1,6 +1,6 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
 
 ; 11 occurrences:
 ; cpython/optimized/dictobject.ll
@@ -191,35 +191,7 @@ define ptr @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 -3, %2
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 18 occurrences:
-; eastl/optimized/BenchmarkAlgorithm.cpp.ll
-; eastl/optimized/BenchmarkHash.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
-; eastl/optimized/EATest.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; eastl/optimized/TestFixedString.cpp.ll
-; eastl/optimized/TestHash.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestListMap.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestVariant.cpp.ll
-; eastl/optimized/TestVector.cpp.ll
-; eastl/optimized/TestVectorMap.cpp.ll
-; eastl/optimized/TestVectorSet.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = sub nsw i64 23, %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3
   ret ptr %4
 }
 

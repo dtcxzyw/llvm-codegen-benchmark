@@ -6,12 +6,11 @@ func000000000000018f:                   # @func000000000000018f
 	addl	$9, %eax
 	retq
 func000000000000002f:                   # @func000000000000002f
-	xorl	%ecx, %ecx
-	cmpl	$166, %edx
-	sete	%cl
+	movl	%edi, %eax
 	andl	$1, %esi
-	leal	(%rdi,%rsi,4), %eax
-	addl	%ecx, %eax
+	subl	%esi, %eax
+	cmpl	$1, %edx
+	adcl	$2, %eax
 	retq
 func000000000000014f:                   # @func000000000000014f
 	xorl	%eax, %eax

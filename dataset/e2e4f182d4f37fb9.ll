@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; freetype/optimized/type42.c.ll
@@ -49,6 +49,7 @@
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
+; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll

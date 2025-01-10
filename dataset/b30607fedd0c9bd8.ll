@@ -1,5 +1,5 @@
 
-; 1481 occurrences:
+; 1482 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcNtbdd.c.ll
@@ -1126,6 +1126,7 @@
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/ascmagic.ll
 ; php/optimized/encode.ll
 ; php/optimized/image.ll
 ; php/optimized/ir_emit.ll

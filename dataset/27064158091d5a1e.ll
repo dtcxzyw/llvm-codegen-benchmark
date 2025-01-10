@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -22,6 +22,7 @@
 ; linux/optimized/tctx.ll
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/X86FloatingPoint.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/sha256.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -80,7 +81,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationkeys.ll
@@ -89,6 +90,7 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; postgres/optimized/hashpage.ll
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
@@ -102,10 +104,9 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/unsp.c.ll
 ; linux/optimized/filetable.ll
-; llvm/optimized/X86FloatingPoint.cpp.ll
 ; postgres/optimized/hashutil.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; quickjs/optimized/libbf.ll

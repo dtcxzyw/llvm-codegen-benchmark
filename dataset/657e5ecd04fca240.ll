@@ -77,18 +77,6 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; linux/optimized/sit.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub nuw nsw i64 4, %0
-  %4 = icmp samesign ult i64 %3, %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
@@ -193,6 +181,17 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 960, %0
   %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/sit.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nuw nsw i64 65575, %0
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 

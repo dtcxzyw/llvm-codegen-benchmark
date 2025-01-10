@@ -1,5 +1,5 @@
 
-%struct.WordEntry.3654801 = type { i32 }
+%struct.WordEntry.3654767 = type { i32 }
 
 ; 20 occurrences:
 ; abc/optimized/ifDec16.c.ll
@@ -70,7 +70,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %6 = getelementptr [0 x %struct.WordEntry.3654801], ptr %5, i64 0, i64 %4
+  %6 = getelementptr [0 x %struct.WordEntry.3654767], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

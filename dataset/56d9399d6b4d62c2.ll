@@ -87,7 +87,7 @@ entry:
   ret i32 %4
 }
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcCexCut.c.ll
@@ -111,7 +111,6 @@ entry:
 ; git/optimized/revision.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; hermes/optimized/zip.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; libquic/optimized/blowfish.c.ll
 ; libquic/optimized/cast.c.ll
 ; libquic/optimized/des.c.ll

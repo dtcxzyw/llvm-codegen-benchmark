@@ -281,8 +281,7 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
-; gromacs/optimized/nbnxm_setup.cpp.ll
+; 6 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

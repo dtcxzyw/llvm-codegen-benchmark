@@ -13,8 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; abc/optimized/cuddTable.c.ll
+; 5 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; openmpi/optimized/ompi_datatype_args.ll

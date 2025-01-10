@@ -345,7 +345,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; jq/optimized/jv.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; lvgl/optimized/lv_obj_tree.ll
@@ -361,7 +361,6 @@ entry:
 ; openspiel/optimized/sheriff.cc.ll
 ; openssl/optimized/libapps-lib-s_cb.ll
 ; quest/optimized/QuEST_validation.c.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind

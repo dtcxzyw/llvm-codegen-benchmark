@@ -17,17 +17,17 @@ func0000000000000013:                   # @func0000000000000013
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	4                               # 0x4
-func0000000000000000:                   # @func0000000000000000
+	.long	1                               # 0x1
+func0000000000000002:                   # @func0000000000000002
 	vpmovqd	%ymm2, %xmm2
-	vpsrld	$21, %xmm2, %xmm2
+	vpsrld	$17, %xmm2, %xmm2
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	224                             # 0xe0
-func0000000000000001:                   # @func0000000000000001
+	.long	4                               # 0x4
+func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$21, %xmm2, %xmm2
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
@@ -35,10 +35,10 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	4096                            # 0x1000
-func0000000000000002:                   # @func0000000000000002
+	.long	224                             # 0xe0
+func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
-	vpsrld	$13, %xmm2, %xmm2
+	vpsrld	$21, %xmm2, %xmm2
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper

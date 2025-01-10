@@ -62,20 +62,6 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; git/optimized/record.ll
-; qemu/optimized/hw_usb_dev-network.c.ll
-; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
-; wireshark/optimized/packet-http3.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 2048, %1
-  %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
-  ret i1 %4
-}
-
 ; 8 occurrences:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -91,6 +77,19 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
   %4 = icmp sgt i64 %0, %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; git/optimized/record.ll
+; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; wireshark/optimized/packet-http3.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 0, %1
+  %3 = sext i32 %2 to i64
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -117,19 +116,6 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; git/optimized/remote-curl.ll
-; hyperscan/optimized/program_runtime.c.ll
-; wireshark/optimized/proto.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 4, %1
-  %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %0, %3
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -139,6 +125,18 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
   %4 = icmp sge i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; hyperscan/optimized/program_runtime.c.ll
+; wireshark/optimized/proto.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 240, %1
+  %3 = sext i32 %2 to i64
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

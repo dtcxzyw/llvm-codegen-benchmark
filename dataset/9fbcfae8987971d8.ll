@@ -1,6 +1,9 @@
 
-; 3 occurrences:
+; 6 occurrences:
 ; luau/optimized/isocline.c.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; ruby/optimized/utf_16_32.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; Function Attrs: nounwind

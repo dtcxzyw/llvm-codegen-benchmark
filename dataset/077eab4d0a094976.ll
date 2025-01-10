@@ -1,5 +1,5 @@
 
-; 454 occurrences:
+; 453 occurrences:
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/UriQuery.c.ll
@@ -170,7 +170,6 @@
 ; llvm/optimized/FoldingSet.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/FrontendActions.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/GTestChecker.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
 ; llvm/optimized/GlobalTypeTableBuilder.cpp.ll

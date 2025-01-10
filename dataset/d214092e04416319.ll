@@ -1,16 +1,16 @@
 
-%"struct.Yosys::token_t.3112197" = type { i8, %"struct.Yosys::RTLIL::SigSpec.3112157" }
-%"struct.Yosys::RTLIL::SigSpec.3112157" = type { i32, i64, %"class.std::vector.124.3112158", %"class.std::vector.129.3112159" }
-%"class.std::vector.124.3112158" = type { %"struct.std::_Vector_base.125.3112160" }
-%"struct.std::_Vector_base.125.3112160" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3112161" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3112161" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3112162" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3112162" = type { ptr, ptr, ptr }
-%"class.std::vector.129.3112159" = type { %"struct.std::_Vector_base.130.3112163" }
-%"struct.std::_Vector_base.130.3112163" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3112164" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3112164" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3112165" }
-%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3112165" = type { ptr, ptr, ptr }
-%"struct.cv::hough_index.3731212" = type { i32, float, float }
-%"class.vcg::Point3.3837472" = type { [3 x float] }
+%"struct.Yosys::token_t.3112163" = type { i8, %"struct.Yosys::RTLIL::SigSpec.3112123" }
+%"struct.Yosys::RTLIL::SigSpec.3112123" = type { i32, i64, %"class.std::vector.124.3112124", %"class.std::vector.129.3112125" }
+%"class.std::vector.124.3112124" = type { %"struct.std::_Vector_base.125.3112126" }
+%"struct.std::_Vector_base.125.3112126" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3112127" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl.3112127" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3112128" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigChunk, std::allocator<Yosys::RTLIL::SigChunk>>::_Vector_impl_data.3112128" = type { ptr, ptr, ptr }
+%"class.std::vector.129.3112125" = type { %"struct.std::_Vector_base.130.3112129" }
+%"struct.std::_Vector_base.130.3112129" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3112130" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl.3112130" = type { %"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3112131" }
+%"struct.std::_Vector_base<Yosys::RTLIL::SigBit, std::allocator<Yosys::RTLIL::SigBit>>::_Vector_impl_data.3112131" = type { ptr, ptr, ptr }
+%"struct.cv::hough_index.3731162" = type { i32, float, float }
+%"class.vcg::Point3.3837422" = type { [3 x float] }
 
 ; 5 occurrences:
 ; opencv/optimized/circlesgrid.cpp.ll
@@ -24,7 +24,7 @@ entry:
   %2 = sdiv exact i64 %1, 72
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = getelementptr %"struct.Yosys::token_t.3112197", ptr %0, i64 %4
+  %5 = getelementptr %"struct.Yosys::token_t.3112163", ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -72
   ret ptr %6
 }
@@ -51,7 +51,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.cv::hough_index.3731212", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.cv::hough_index.3731162", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.vcg::Point3.3837472", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.vcg::Point3.3837422", ptr %0, i64 %5
   ret ptr %6
 }
 

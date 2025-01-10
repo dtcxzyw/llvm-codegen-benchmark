@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
@@ -13,7 +13,6 @@
 ; boost/optimized/system_test2.ll
 ; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
-; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -184,18 +183,6 @@ entry:
   %4 = add nsw i64 %1, 16
   %5 = add nsw i64 %4, %3
   %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; abc/optimized/cuddTable.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000075(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 6
-  %4 = add nuw nsw i64 %1, 760
-  %5 = add nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

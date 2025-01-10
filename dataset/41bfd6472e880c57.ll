@@ -1,5 +1,5 @@
 
-; 2788 occurrences:
+; 2786 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -2119,8 +2119,6 @@
 ; re2/optimized/bitstate.cc.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/re2.cc.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/DetourNode.cpp.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
@@ -2796,7 +2794,7 @@ entry:
   ret i1 %3
 }
 
-; 3234 occurrences:
+; 3232 occurrences:
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/extraBddMisc.c.ll
@@ -2857,7 +2855,6 @@ entry:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; assimp/optimized/OgreMaterial.cpp.ll
 ; assimp/optimized/OgreStructs.cpp.ll
-; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
 ; assimp/optimized/OptimizeGraph.cpp.ll
@@ -2869,7 +2866,6 @@ entry:
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/UniqueNameGenerator.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
-; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; assimp/optimized/ZipArchiveIOSystem.cpp.ll

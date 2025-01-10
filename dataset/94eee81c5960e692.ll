@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; lvgl/optimized/lv_obj_tree.ll
 ; opencv/optimized/charuco_detector.cpp.ll
 ; opencv/optimized/nldiffusion_functions.cpp.ll
 ; openspiel/optimized/pathfinding.cc.ll
-; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000002cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-%"class.llvm::MCInstrDesc.3294323" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.llvm::MCInstrDesc.3294289" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 10 occurrences:
 ; clamav/optimized/pdf.c.ll
@@ -45,7 +45,7 @@ entry:
   %3 = select i1 %2, i64 -18344, i64 -18335
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i64 %3, i64 -18326
-  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3294323", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::MCInstrDesc.3294289", ptr %0, i64 %5
   ret ptr %6
 }
 

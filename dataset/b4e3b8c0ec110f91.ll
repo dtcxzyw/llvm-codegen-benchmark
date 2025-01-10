@@ -1,9 +1,8 @@
 
-%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
-%struct.BEInt.1.2735703 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735665" = type { %struct.BEInt.1.2735669 }
+%struct.BEInt.1.2735669 = type { [2 x i8] }
 
-; 4 occurrences:
-; abc/optimized/bmcMaj.c.ll
+; 3 occurrences:
 ; abc/optimized/utilBridge.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
@@ -76,7 +75,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.0.2735665", ptr %0, i64 %5
   ret ptr %6
 }
 

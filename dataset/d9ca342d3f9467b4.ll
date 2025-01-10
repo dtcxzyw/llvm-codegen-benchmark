@@ -1,8 +1,8 @@
 
-%"class.ue2::bitfield.3849132" = type { %"struct.std::array.59.3849133" }
-%"struct.std::array.59.3849133" = type { [4 x i64] }
-%struct.mi_page_s.4024222 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024223, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
-%union.mi_page_flags_s.4024223 = type { i8 }
+%"class.ue2::bitfield.3849082" = type { %"struct.std::array.59.3849083" }
+%"struct.std::array.59.3849083" = type { [4 x i64] }
+%struct.mi_page_s.4024172 = type { i32, i32, i8, i16, i16, %union.mi_page_flags_s.4024173, i8, ptr, i32, i32, ptr, i64, i64, ptr, ptr, [1 x i64] }
+%union.mi_page_flags_s.4024173 = type { i8 }
 
 ; 1 occurrences:
 ; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
@@ -25,7 +25,7 @@ define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
   %4 = getelementptr [4 x i64], ptr %1, i64 0, i64 %3
-  %5 = getelementptr %"class.ue2::bitfield.3849132", ptr %4, i64 %0
+  %5 = getelementptr %"class.ue2::bitfield.3849082", ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -37,7 +37,7 @@ entry:
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 16
-  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024222], ptr %1, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [513 x %struct.mi_page_s.4024172], ptr %1, i64 0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }

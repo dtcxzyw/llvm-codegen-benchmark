@@ -1,7 +1,7 @@
 
-%"class.std::__cxx11::basic_string.6.2703189" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703190", i64, %union.anon.10.2703191 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703190" = type { ptr }
-%union.anon.10.2703191 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.6.2703155" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703156", i64, %union.anon.10.2703157 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2703156" = type { ptr }
+%union.anon.10.2703157 = type { i64, [8 x i8] }
 
 ; 12 occurrences:
 ; faiss/optimized/ProductQuantizer.cpp.ll
@@ -36,7 +36,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = mul nuw nsw i64 %1, %3
-  %5 = getelementptr %"class.std::__cxx11::basic_string.6.2703189", ptr %0, i64 %4
+  %5 = getelementptr %"class.std::__cxx11::basic_string.6.2703155", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -60,7 +60,7 @@ entry:
   ret ptr %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_system.cpp.ll
@@ -68,6 +68,7 @@ entry:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
@@ -108,10 +109,9 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; boost/optimized/instantiate_cpp_grammar.ll
 ; boost/optimized/instantiate_defined_grammar.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:

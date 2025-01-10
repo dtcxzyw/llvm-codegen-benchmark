@@ -311,8 +311,7 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; 2 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind

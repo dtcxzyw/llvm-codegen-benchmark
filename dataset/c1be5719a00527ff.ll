@@ -1,5 +1,5 @@
 
-%union.ehci_shadow.3538271 = type { ptr }
+%union.ehci_shadow.3538237 = type { ptr }
 
 ; 10 occurrences:
 ; abc/optimized/giaLf.c.ll
@@ -30,7 +30,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %union.ehci_shadow.3538271, ptr %0, i64 %5
+  %6 = getelementptr %union.ehci_shadow.3538237, ptr %0, i64 %5
   ret ptr %6
 }
 

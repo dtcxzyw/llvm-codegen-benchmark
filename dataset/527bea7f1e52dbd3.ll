@@ -15,7 +15,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 37 occurrences:
+; 38 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; cmake/optimized/sha256.c.ll
 ; cmake/optimized/sha512.c.ll
@@ -49,6 +49,7 @@ declare i64 @llvm.umin.i64(i64, i64) #1
 ; linux/optimized/vmalloc.ll
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; spike/optimized/devices.ll

@@ -1,9 +1,10 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; cmake/optimized/frm_driver.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; icu/optimized/lstmbe.ll
 ; icu/optimized/propsvec.ll

@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/qsort.c.ll
+; nuttx/optimized/lib_memoutstream.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; qemu/optimized/chardev_char-ringbuf.c.ll
 ; Function Attrs: nounwind

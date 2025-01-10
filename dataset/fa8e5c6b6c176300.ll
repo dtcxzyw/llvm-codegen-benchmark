@@ -1,5 +1,5 @@
 
-; 317 occurrences:
+; 318 occurrences:
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -113,6 +113,7 @@
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcauth_unix.ll
 ; llvm/optimized/Hash.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/blake3_portable.c.ll
@@ -322,19 +323,6 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
   %3 = lshr i32 %2, 18
-  ret i32 %3
-}
-
-; 4 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = xor i32 %0, %1
-  %3 = lshr exact i32 %2, 8
   ret i32 %3
 }
 

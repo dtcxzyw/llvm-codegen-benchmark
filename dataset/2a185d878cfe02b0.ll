@@ -9,10 +9,11 @@ entry:
   ret i1 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; icu/optimized/collationruleparser.ll
+; icu/optimized/patternprops.ll
 ; icu/optimized/rbt_pars.ll
 ; llvm/optimized/AArch64ConditionalCompares.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll

@@ -1,5 +1,5 @@
 
-; 2141 occurrences:
+; 2142 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bbrImage.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -1659,6 +1659,7 @@
 ; slurm/optimized/slurm_step_layout.ll
 ; slurm/optimized/slurmdbd_agent.ll
 ; slurm/optimized/srun.ll
+; slurm/optimized/step_mgr.ll
 ; slurm/optimized/switch_record.ll
 ; slurm/optimized/trigger_mgr.ll
 ; slurm/optimized/update_part.ll
@@ -2719,7 +2720,7 @@ entry:
   ret i16 %1
 }
 
-; 398 occurrences:
+; 394 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -2797,9 +2798,6 @@ entry:
 ; influxdb-rs/optimized/20e6y40qoje898dk.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; just-rs/optimized/23nlf67cmm9na4ci.ll
 ; libjpeg-turbo/optimized/jcparam.c.ll
@@ -2960,6 +2958,7 @@ entry:
 ; ockam-rs/optimized/x7gk0ollppq2h9y.ll
 ; openblas/optimized/drot_k.c.ll
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll
+; openexr/optimized/ImfPizCompressor.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openexr/optimized/parse_header.c.ll
 ; openjdk/optimized/jcparam.ll
@@ -3006,8 +3005,6 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/hyperloglog.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; rust-analyzer-rs/optimized/1g3jrunmnvdfsqij.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/1xvtipc3qgm9lwx0.ll

@@ -57,8 +57,3 @@ func0000000000000009:                   # @func0000000000000009
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	vucomisd	%xmm1, %xmm0
-	setne	%al
-	orb	%dil, %al
-	retq

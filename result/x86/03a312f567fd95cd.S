@@ -12,13 +12,6 @@ func0000000000000081:                   # @func0000000000000081
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	shrq	$3, %rdx
-	testb	$1, %dil
-	cmovel	%esi, %edx
-	testl	%edx, %edx
-	setle	%al
-	retq
 func0000000000000041:                   # @func0000000000000041
 	shrq	$32, %rdx
 	testb	$1, %dil

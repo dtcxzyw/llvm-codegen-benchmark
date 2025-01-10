@@ -28,6 +28,16 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; git/optimized/sha256.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, 1
+  %3 = call i64 @llvm.usub.sat.i64(i64 %2, i64 %1)
+  ret i64 %3
+}
+
 ; 12 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll

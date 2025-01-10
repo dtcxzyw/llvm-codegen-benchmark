@@ -23,7 +23,7 @@ func0000000000000061:                   # @func0000000000000061
 	vzeroupper
 	retq
 .LCPI3_0:
-	.quad	536870912                       # 0x20000000
+	.quad	16                              # 0x10
 func000000000000000c:                   # @func000000000000000c
 	vptestnmq	.LCPI3_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1}

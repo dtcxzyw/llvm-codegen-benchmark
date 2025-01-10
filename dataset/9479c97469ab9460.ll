@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::PinnedHermesValue.3085840" = type { %"class.hermes::vm::HermesValue.3085841" }
-%"class.hermes::vm::HermesValue.3085841" = type { i64 }
+%"class.hermes::vm::PinnedHermesValue.3085806" = type { %"class.hermes::vm::HermesValue.3085807" }
+%"class.hermes::vm::HermesValue.3085807" = type { i64 }
 
 ; 5 occurrences:
 ; libsodium/optimized/libsodium_la-shorthash_siphash24_ref.ll
@@ -56,7 +56,7 @@ define i1 @func0000000000000341(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085840", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3085806", ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %0, i64 -8
   %7 = icmp eq ptr %6, %5
   ret i1 %7

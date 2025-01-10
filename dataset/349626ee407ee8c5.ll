@@ -12,8 +12,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; linux/optimized/vsprintf.ll
+; 3 occurrences:
 ; llvm/optimized/SourceMgr.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; php/optimized/strtod.ll

@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 100 occurrences:
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/args_handling.ll
 ; boost/optimized/async.ll
@@ -48,6 +48,8 @@
 ; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/compile.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -56,6 +58,7 @@
 ; folly/optimized/Uri.cpp.ll
 ; hermes/optimized/UTF16Stream.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
@@ -65,6 +68,7 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; opencv/optimized/persistence_base64_encoding.cpp.ll
+; openjdk/optimized/splashscreen_impl.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; openvdb/optimized/TempFile.cc.ll
@@ -84,13 +88,18 @@
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; quantlib/optimized/date.ll
+; raylib/optimized/rcore.c.ll
+; ruby/optimized/encoding.ll
 ; ruby/optimized/pack.ll
+; ruby/optimized/sprintf.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/stringio.ll
 ; ruby/optimized/transcode.ll
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:

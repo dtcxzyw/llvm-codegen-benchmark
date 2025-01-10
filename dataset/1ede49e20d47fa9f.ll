@@ -1,7 +1,7 @@
 
-%"class.std::shared_ptr.39.3802655" = type { %"class.std::__shared_ptr.40.3802656" }
-%"class.std::__shared_ptr.40.3802656" = type { ptr, %"class.std::__shared_count.3802606" }
-%"class.std::__shared_count.3802606" = type { ptr }
+%"class.std::shared_ptr.39.3802605" = type { %"class.std::__shared_ptr.40.3802606" }
+%"class.std::__shared_ptr.40.3802606" = type { ptr, %"class.std::__shared_count.3802556" }
+%"class.std::__shared_count.3802556" = type { ptr }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
@@ -35,8 +35,8 @@ entry:
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = tail call i64 @llvm.usub.sat.i64(i64 %2, i64 2)
-  %4 = getelementptr nusw nuw %"class.std::shared_ptr.39.3802655", ptr %0, i64 %1
-  %5 = getelementptr nusw %"class.std::shared_ptr.39.3802655", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::shared_ptr.39.3802605", ptr %0, i64 %1
+  %5 = getelementptr nusw %"class.std::shared_ptr.39.3802605", ptr %4, i64 %3
   ret ptr %5
 }
 

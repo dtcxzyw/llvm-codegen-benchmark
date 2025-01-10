@@ -1,5 +1,5 @@
 
-%struct.MapNode.2699889 = type { i16, i8, i8 }
+%struct.MapNode.2699855 = type { i16, i8, i8 }
 
 ; 3 occurrences:
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = add nsw i64 %3, 240
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %struct.MapNode.2699889, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2699855, ptr %0, i64 %5
   ret ptr %6
 }
 

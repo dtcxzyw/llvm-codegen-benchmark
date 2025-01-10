@@ -163,7 +163,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/cgroup.ll
 ; linux/optimized/trace_uprobe.ll
 ; linux/optimized/vt.ll
@@ -172,7 +172,6 @@ entry:
 ; postgres/optimized/ts_parse.ll
 ; postgres/optimized/tsquery.ll
 ; postgres/optimized/tsvector.ll
-; qemu/optimized/block_vvfat.c.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/sprintf.ll
 ; ruby/optimized/string.ll
@@ -566,7 +565,7 @@ entry:
   ret i1 %5
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/builder_adaptive.cc.ll
@@ -614,7 +613,6 @@ entry:
 ; openexr/optimized/chunk.c.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/memnode.ll
-; openjdk/optimized/zip_util.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openmpi/optimized/p2p_aggregation.ll

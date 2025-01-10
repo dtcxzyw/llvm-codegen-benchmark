@@ -1,5 +1,5 @@
 
-; 340 occurrences:
+; 334 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/mapperCanon.c.ll
 ; abc/optimized/rwrEva.c.ll
@@ -44,11 +44,6 @@
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/collationdata.ll
 ; icu/optimized/collationdatabuilder.ll
@@ -262,7 +257,6 @@
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; ruby/optimized/utf_32le.ll
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/preempt_partition_prio.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -599,7 +593,6 @@ entry:
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vlv_dsi.ll
-; linux/optimized/xstate.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -696,6 +689,7 @@ entry:
 ; opencv/optimized/exif.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/out.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll

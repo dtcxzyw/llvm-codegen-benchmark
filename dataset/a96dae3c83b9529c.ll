@@ -1,5 +1,5 @@
 
-%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
+%"struct.V3NumberData::ValueAndX.2750095" = type { i32, i32 }
 
 ; 42 occurrences:
 ; verilator/optimized/V3Assert.cpp.ll
@@ -50,7 +50,7 @@ entry:
   %3 = add nuw nsw i32 %2, 31
   %4 = lshr i32 %3, 5
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %5
+  %6 = getelementptr %"struct.V3NumberData::ValueAndX.2750095", ptr %1, i64 %5
   %7 = icmp eq ptr %0, %6
   ret i1 %7
 }

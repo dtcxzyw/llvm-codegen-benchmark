@@ -1,3 +1,8 @@
+func0000000000000208:                   # @func0000000000000208
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
+	seta	%al
+	retq
 func0000000000000161:                   # @func0000000000000161
 	shlq	$6, %rdx
 	leaq	-8(%rsi,%rdx), %rax
@@ -45,6 +50,11 @@ func00000000000001e1:                   # @func00000000000001e1
 	leaq	-4(%rsi,%rdx), %rax
 	cmpq	%rax, %rdi
 	sete	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	addq	%rdx, %rsi
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	16(%rsi,%rdx), %rax

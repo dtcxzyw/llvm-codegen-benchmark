@@ -91,22 +91,6 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; clamav/optimized/xlm_extract.c.ll
-; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/packet-collectd.c.ll
-; wireshark/optimized/packet-lmp.c.ll
-; wolfssl/optimized/tls.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, -3
-  %4 = zext i16 %0 to i32
-  %5 = icmp slt i32 %3, %4
-  ret i1 %5
-}
-
 ; 11 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/unames.ll
@@ -126,6 +110,21 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i16 %0 to i32
   %5 = icmp sgt i32 %3, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; wireshark/optimized/dot11decrypt.c.ll
+; wireshark/optimized/packet-collectd.c.ll
+; wireshark/optimized/packet-lmp.c.ll
+; wolfssl/optimized/tls.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add nsw i32 %2, -42
+  %4 = zext i16 %0 to i32
+  %5 = icmp slt i32 %3, %4
   ret i1 %5
 }
 

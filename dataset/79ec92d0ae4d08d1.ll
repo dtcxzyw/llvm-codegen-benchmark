@@ -1,6 +1,6 @@
 
-%struct.aiFace.2825500 = type { i32, ptr }
-%"class.cvc5::internal::NodeTemplate.3561273" = type { ptr }
+%struct.aiFace.2825466 = type { i32, ptr }
+%"class.cvc5::internal::NodeTemplate.3561239" = type { ptr }
 
 ; 3 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
@@ -28,7 +28,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.aiFace.2825466, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = sext i1 %3 to i32
   %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3561273", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3561239", ptr %0, i64 %6
   ret ptr %7
 }
 

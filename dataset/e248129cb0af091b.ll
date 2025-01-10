@@ -1,4 +1,19 @@
 
+; 5 occurrences:
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
+; openjdk/optimized/shenandoahSimpleBitMap.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 63
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %0, %.neg
+  ret i64 %3
+}
+
 ; 11 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll

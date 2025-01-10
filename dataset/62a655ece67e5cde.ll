@@ -1,5 +1,5 @@
 
-%struct.index_record.3871493 = type { i64, i64 }
+%struct.index_record.3871443 = type { i64, i64 }
 
 ; 4 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -37,7 +37,7 @@ entry:
   %3 = lshr i64 %2, 1
   %4 = add i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %6 = getelementptr nusw [0 x %struct.index_record.3871493], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw [0 x %struct.index_record.3871443], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

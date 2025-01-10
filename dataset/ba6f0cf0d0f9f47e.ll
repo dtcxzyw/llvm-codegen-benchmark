@@ -15,8 +15,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smax.i32(i32, i32) #1
 
-; 4 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
+; 3 occurrences:
 ; postgres/optimized/trigger.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; verilator/optimized/V3Number.cpp.ll

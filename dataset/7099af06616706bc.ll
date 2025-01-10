@@ -14,12 +14,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.smin.i32(i32, i32) #1
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dlaqr5.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openusd/optimized/detokenize.c.ll

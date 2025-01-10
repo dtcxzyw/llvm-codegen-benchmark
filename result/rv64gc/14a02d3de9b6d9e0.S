@@ -1,7 +1,7 @@
-.LCPI0_0:
-	.quad	652188559272970764              # 0x90d0a0a0a0a0a0c
 func0000000000000008:                   # @func0000000000000008
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a1, 18536
+	addi	a1, a1, 5
+	slli	a1, a1, 33
+	addi	a1, a1, 12
 	srl	a0, a1, a0
 	ret

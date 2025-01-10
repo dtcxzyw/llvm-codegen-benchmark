@@ -192,7 +192,8 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/MemoryIdler.cpp.ll
 ; linux/optimized/memblock.ll
 ; llama.cpp/optimized/llama.cpp.ll

@@ -859,7 +859,7 @@ entry:
   ret i1 %3
 }
 
-; 2499 occurrences:
+; 2500 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcMiter.c.ll
@@ -1370,6 +1370,7 @@ entry:
 ; graphviz/optimized/edge_distinct_coloring.c.ll
 ; graphviz/optimized/exeval.c.ll
 ; graphviz/optimized/fmtesc.c.ll
+; graphviz/optimized/gvgetfontlist_pango.c.ll
 ; graphviz/optimized/gvmap.c.ll
 ; graphviz/optimized/gvplugin.c.ll
 ; graphviz/optimized/gvrender.c.ll

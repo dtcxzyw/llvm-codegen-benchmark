@@ -1460,7 +1460,7 @@ entry:
   ret i64 %3
 }
 
-; 299 occurrences:
+; 300 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -1708,6 +1708,7 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/codeHeapState.ll
+; openjdk/optimized/zVerify.ll
 ; openssl/optimized/libcrypto-lib-bn_word.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-bn_word.ll

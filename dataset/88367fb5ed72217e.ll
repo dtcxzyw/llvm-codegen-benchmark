@@ -237,18 +237,6 @@ entry:
 }
 
 ; 2 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = icmp eq i64 %3, 3
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind

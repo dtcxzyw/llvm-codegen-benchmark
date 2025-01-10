@@ -1,5 +1,5 @@
 
-%"class.llvm::FunctionCallee.3155605" = type { ptr, ptr }
+%"class.llvm::FunctionCallee.3155571" = type { ptr, ptr }
 
 ; 66 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -120,7 +120,7 @@ define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = call noundef range(i32 0, 33) i32 @llvm.cttz.i32(i32 %1, i1 false)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [5 x %"class.llvm::FunctionCallee.3155605"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [5 x %"class.llvm::FunctionCallee.3155571"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

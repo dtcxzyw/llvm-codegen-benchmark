@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/mpmPre.c.ll
@@ -16,6 +16,7 @@
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
+; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; wolfssl/optimized/keys.c.ll
 ; wolfssl/optimized/tls.c.ll

@@ -1,7 +1,7 @@
 
-%struct.stbir__contributors.3100930 = type { i32, i32 }
-%union.ListCell.3651460 = type { ptr }
-%struct.FT_Vector_.3881816 = type { i64, i64 }
+%struct.stbir__contributors.3100896 = type { i32, i32 }
+%union.ListCell.3651426 = type { ptr }
+%struct.FT_Vector_.3881766 = type { i64, i64 }
 
 ; 5 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
@@ -347,21 +347,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; slurm/optimized/affinity.ll
-; slurm/optimized/numa.ll
-; Function Attrs: nounwind
-define i1 @func00000000000007c4(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %6 = icmp ult ptr %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; slurm/optimized/bitstring.ll
+; slurm/optimized/numa.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000005c4(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -393,9 +382,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000104(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.stbir__contributors.3100930, ptr %0, i64 %2
+  %3 = getelementptr %struct.stbir__contributors.3100896, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
-  %5 = getelementptr nusw %struct.stbir__contributors.3100930, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.stbir__contributors.3100896, ptr %0, i64 %1
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }
@@ -562,9 +551,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %union.ListCell.3651460, ptr %0, i64 %2
+  %3 = getelementptr %union.ListCell.3651426, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
-  %5 = getelementptr %union.ListCell.3651460, ptr %0, i64 %1
+  %5 = getelementptr %union.ListCell.3651426, ptr %0, i64 %1
   %6 = icmp uge ptr %4, %5
   ret i1 %6
 }
@@ -614,9 +603,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000744(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.FT_Vector_.3881816, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %struct.FT_Vector_.3881766, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -16
-  %5 = getelementptr nusw %struct.FT_Vector_.3881816, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.FT_Vector_.3881766, ptr %0, i64 %1
   %6 = icmp ult ptr %4, %5
   ret i1 %6
 }

@@ -1,12 +1,12 @@
 
-%struct.OnigRepeatRange.2601212 = type { i32, i32 }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044689" = type <{ ptr, ptr, %"class.boost::archive::version_type.3044684", %"struct.boost::archive::tracking_type.3044690", i8, [2 x i8] }>
-%"class.boost::archive::version_type.3044684" = type { i32 }
-%"struct.boost::archive::tracking_type.3044690" = type { i8 }
-%struct.nk_text_undo_record.3063066 = type { i32, i16, i16, i16 }
-%struct.Column.3662203 = type { ptr, i8, i8, i8, i8, i16, i16 }
+%struct.OnigRepeatRange.2601179 = type { i32, i32 }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044655" = type <{ ptr, ptr, %"class.boost::archive::version_type.3044650", %"struct.boost::archive::tracking_type.3044656", i8, [2 x i8] }>
+%"class.boost::archive::version_type.3044650" = type { i32 }
+%"struct.boost::archive::tracking_type.3044656" = type { i8 }
+%struct.nk_text_undo_record.3063032 = type { i32, i16, i16, i16 }
+%struct.Column.3662153 = type { ptr, i8, i8, i8, i8, i16, i16 }
 
 ; 9 occurrences:
 ; linux/optimized/extents.ll
@@ -22,7 +22,7 @@
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct.OnigRepeatRange.2601212, ptr %0, i64 %2, i32 1
+  %3 = getelementptr %struct.OnigRepeatRange.2601179, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -119,7 +119,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.OT::IntType.2730655", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -2
   ret ptr %4
 }
@@ -131,7 +131,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nuw %"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044689", ptr %0, i64 %2, i32 4
+  %3 = getelementptr nuw %"class.boost::archive::detail::basic_iarchive_impl::cobject_id.3044655", ptr %0, i64 %2, i32 4
   ret ptr %3
 }
 
@@ -142,7 +142,7 @@ entry:
 define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw %struct.nk_text_undo_record.3063066, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct.nk_text_undo_record.3063032, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -12
   ret ptr %4
 }
@@ -153,7 +153,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct.Column.3662203, ptr %0, i64 %2, i32 5
+  %3 = getelementptr %struct.Column.3662153, ptr %0, i64 %2, i32 5
   ret ptr %3
 }
 

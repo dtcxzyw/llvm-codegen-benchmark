@@ -1,8 +1,8 @@
 
-%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
-%union.JSValueUnion.3435082 = type { double }
-%struct.nf_conn_counter.3558356 = type { %struct.atomic64_t.3558288, %struct.atomic64_t.3558288 }
-%struct.atomic64_t.3558288 = type { i64 }
+%struct.JSValue.3435047 = type { %union.JSValueUnion.3435048, i64 }
+%union.JSValueUnion.3435048 = type { double }
+%struct.nf_conn_counter.3558322 = type { %struct.atomic64_t.3558254, %struct.atomic64_t.3558254 }
+%struct.atomic64_t.3558254 = type { i64 }
 
 ; 3 occurrences:
 ; cpython/optimized/floatobject.ll
@@ -288,7 +288,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 7
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435047, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -322,7 +322,7 @@ define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr %struct.nf_conn_counter.3558356, ptr %0, i64 %3
+  %4 = getelementptr %struct.nf_conn_counter.3558322, ptr %0, i64 %3
   ret ptr %4
 }
 

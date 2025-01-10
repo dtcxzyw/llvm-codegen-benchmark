@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; linux/optimized/tcp_minisocks.ll
 ; llvm/optimized/BackendUtil.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:

@@ -833,17 +833,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/scsi_logging.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000190(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = icmp ugt i64 %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/read_write.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000054(i64 %0, i64 %1, i32 %2) #0 {

@@ -1,7 +1,7 @@
 
-%struct._zend_op.2793229 = type { ptr, %union._znode_op.2793230, %union._znode_op.2793230, %union._znode_op.2793230, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2793230 = type { i32 }
-%"class.cv::Point_.3747481" = type { float, float }
+%struct._zend_op.2793195 = type { ptr, %union._znode_op.2793196, %union._znode_op.2793196, %union._znode_op.2793196, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2793196 = type { i32 }
+%"class.cv::Point_.3747431" = type { float, float }
 
 ; 17 occurrences:
 ; abc/optimized/deflate.c.ll
@@ -25,7 +25,7 @@
 define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2793229, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2793195, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 32
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
@@ -88,9 +88,9 @@ entry:
 define ptr @func000000000000002e(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.cv::Point_.3747481", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.cv::Point_.3747431", ptr %0, i64 %3
   %5 = ashr i64 %1, 32
-  %6 = getelementptr nusw %"class.cv::Point_.3747481", ptr %4, i64 %5
+  %6 = getelementptr nusw %"class.cv::Point_.3747431", ptr %4, i64 %5
   ret ptr %6
 }
 

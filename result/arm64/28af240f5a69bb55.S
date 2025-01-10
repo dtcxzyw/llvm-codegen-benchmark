@@ -30,14 +30,6 @@ func000000000000003a:                   // @func000000000000003a
 	add	w0, w8, w0
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
-// %bb.0:                               // %entry
-	mov	w8, #24576                      // =0x6000
-	and	w9, w2, #0xffff
-	madd	w8, w9, w8, w1
-	add	w0, w8, w0
-	ret
-                                        // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	mov	w8, #-19081                     // =0xffffb577

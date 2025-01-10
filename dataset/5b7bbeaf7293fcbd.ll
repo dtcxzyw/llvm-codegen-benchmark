@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 157 occurrences:
 ; c3c/optimized/types.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; chibicc/optimized/type.ll
@@ -152,9 +152,6 @@
 ; wireshark/optimized/file-jpeg.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-dtls.c.ll
-; wireshark/optimized/packet-moldudp.c.ll
-; wireshark/optimized/packet-moldudp64.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/hmac.c.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
@@ -208,15 +205,13 @@ entry:
   ret i16 %2
 }
 
-; 70 occurrences:
+; 67 occurrences:
 ; abc/optimized/compress.c.ll
-; abc/optimized/ivyFastMap.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/trees.c.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; bullet3/optimized/btAxisSweep3.ll
-; clamav/optimized/xlm_extract.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; cmake/optimized/trees.c.ll
@@ -252,7 +247,6 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/mapgen_v7.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll

@@ -12,7 +12,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i1 %2) #0 {

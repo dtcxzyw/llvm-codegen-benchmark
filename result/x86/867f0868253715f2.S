@@ -57,7 +57,8 @@ func0000000000000fe4:                   # @func0000000000000fe4
 func00000000000007e4:                   # @func00000000000007e4
 	movslq	%edx, %rax
 	shlq	$4, %rax
-	addq	%rsi, %rax
+	leaq	16(%rsi,%rax), %rax
+	addq	$16, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

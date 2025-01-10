@@ -1,10 +1,10 @@
 
-%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
-%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
-%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
-%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
-%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
-%"struct.std::_Head_base.48.2612583" = type { ptr }
+%"class.std::unique_ptr.41.2612545" = type { %"struct.std::__uniq_ptr_data.42.2612546" }
+%"struct.std::__uniq_ptr_data.42.2612546" = type { %"class.std::__uniq_ptr_impl.43.2612547" }
+%"class.std::__uniq_ptr_impl.43.2612547" = type { %"class.std::tuple.44.2612548" }
+%"class.std::tuple.44.2612548" = type { %"struct.std::_Tuple_impl.45.2612549" }
+%"struct.std::_Tuple_impl.45.2612549" = type { %"struct.std::_Head_base.48.2612550" }
+%"struct.std::_Head_base.48.2612550" = type { ptr }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -19,7 +19,7 @@ entry:
   %4 = xor i32 %3, -1
   %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612545"], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

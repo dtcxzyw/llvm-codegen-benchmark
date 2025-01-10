@@ -30,7 +30,7 @@ func0000000000000004:                   // @func0000000000000004
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	and	w8, w1, #0x3
-	orr	w0, w0, w8
+	and	w8, w1, #0x7
+	orr	w0, w8, w0
 	ret
                                         // -- End function

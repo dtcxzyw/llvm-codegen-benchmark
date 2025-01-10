@@ -16,8 +16,8 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a2
 	ret
 func000000000000000e:                   # @func000000000000000e
-	slli	a2, a2, 18
-	bseti	a3, zero, 51
+	slli	a2, a2, 8
+	bseti	a3, zero, 62
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

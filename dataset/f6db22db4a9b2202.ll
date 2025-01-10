@@ -1361,7 +1361,7 @@ entry:
   ret ptr %4
 }
 
-; 90 occurrences:
+; 88 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/amapMerge.c.ll
@@ -1395,7 +1395,6 @@ entry:
 ; g2o/optimized/edge_se2_twopointsxy.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; jq/optimized/regexec.ll
 ; libwebp/optimized/upsampling.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -1431,7 +1430,6 @@ entry:
 ; ocio/optimized/HashUtils.cpp.ll
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; oiio/optimized/hdroutput.cpp.ll
-; oniguruma/optimized/regexec.ll
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/face_recognize.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
@@ -1777,7 +1775,7 @@ entry:
   ret ptr %4
 }
 
-; 73 occurrences:
+; 75 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaExist.c.ll
@@ -1815,6 +1813,7 @@ entry:
 ; gromacs/optimized/lincs.cpp.ll
 ; icu/optimized/uresbund.ll
 ; imgui/optimized/imgui.cpp.ll
+; jq/optimized/regexec.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/upsampling.c.ll
@@ -1828,6 +1827,7 @@ entry:
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
+; oniguruma/optimized/regexec.ll
 ; openblas/optimized/domatcopy_k_rt.c.ll
 ; openblas/optimized/dtrsm_kernel_LN.c.ll
 ; openblas/optimized/dtrsm_kernel_RT.c.ll

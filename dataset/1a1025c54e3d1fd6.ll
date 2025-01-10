@@ -1,10 +1,10 @@
 
-%"class.std::vector.1175.2629348" = type { %"struct.std::_Vector_base.1176.2629349" }
-%"struct.std::_Vector_base.1176.2629349" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2629350" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2629350" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2629351" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2629351" = type { ptr, ptr, ptr }
+%"class.std::vector.1175.2629315" = type { %"struct.std::_Vector_base.1176.2629316" }
+%"struct.std::_Vector_base.1176.2629316" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2629317" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2629317" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2629318" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2629318" = type { ptr, ptr, ptr }
 
-; 329 occurrences:
+; 330 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acbPush.c.ll
@@ -139,6 +139,7 @@
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/CFGPrinter.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -2258,7 +2259,7 @@ define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw nuw %"class.std::vector.1175.2629348", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::vector.1175.2629315", ptr %0, i64 %3
   ret ptr %4
 }
 

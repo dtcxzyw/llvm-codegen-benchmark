@@ -39,7 +39,7 @@ entry:
   ret i1 %3
 }
 
-; 278 occurrences:
+; 279 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/kitPla.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -269,6 +269,7 @@ entry:
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
 ; nori/optimized/textbox.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
 ; ocio/optimized/Config.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll

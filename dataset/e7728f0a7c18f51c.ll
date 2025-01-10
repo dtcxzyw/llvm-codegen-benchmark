@@ -1,25 +1,25 @@
 
-%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
-%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
-%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
-%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
-%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
-%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
-%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
-%struct.anon.0.2603411 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
-%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
-%"struct.std::__1::pair.61.2609501" = type { %"class.std::__1::basic_string.2609306", %"class.mitsuba::ref.40.2609363" }
-%"class.std::__1::basic_string.2609306" = type { %"class.std::__1::__compressed_pair.25.2609307" }
-%"class.std::__1::__compressed_pair.25.2609307" = type { %"struct.std::__1::__compressed_pair_elem.26.2609308" }
-%"struct.std::__1::__compressed_pair_elem.26.2609308" = type { %"struct.std::__1::basic_string<char>::__rep.2609309" }
-%"struct.std::__1::basic_string<char>::__rep.2609309" = type { %union.anon.2609310 }
-%union.anon.2609310 = type { %"struct.std::__1::basic_string<char>::__long.2609311" }
-%"struct.std::__1::basic_string<char>::__long.2609311" = type { %struct.anon.27.2609312, i64, ptr }
-%struct.anon.27.2609312 = type { i64 }
-%"class.mitsuba::ref.40.2609363" = type { ptr }
+%"class.std::__1::tuple.2603517" = type { %"struct.std::__1::__tuple_impl.2603518" }
+%"struct.std::__1::__tuple_impl.2603518" = type <{ %"class.std::__1::__tuple_leaf.2603519", %"class.std::__1::__tuple_leaf.170.2603520", %"class.std::__1::__tuple_leaf.171.2603521", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603519" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::basic_string.2603372" = type { %"class.std::__1::__compressed_pair.2603373" }
+%"class.std::__1::__compressed_pair.2603373" = type { %"struct.std::__1::__compressed_pair_elem.2603374" }
+%"struct.std::__1::__compressed_pair_elem.2603374" = type { %"struct.std::__1::basic_string<char>::__rep.2603375" }
+%"struct.std::__1::basic_string<char>::__rep.2603375" = type { %union.anon.2603376 }
+%union.anon.2603376 = type { %"struct.std::__1::basic_string<char>::__long.2603377" }
+%"struct.std::__1::basic_string<char>::__long.2603377" = type { %struct.anon.0.2603378, i64, ptr }
+%struct.anon.0.2603378 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603520" = type { %"class.std::__1::basic_string.2603372" }
+%"class.std::__1::__tuple_leaf.171.2603521" = type { i8 }
+%"struct.std::__1::pair.61.2609468" = type { %"class.std::__1::basic_string.2609273", %"class.mitsuba::ref.40.2609330" }
+%"class.std::__1::basic_string.2609273" = type { %"class.std::__1::__compressed_pair.25.2609274" }
+%"class.std::__1::__compressed_pair.25.2609274" = type { %"struct.std::__1::__compressed_pair_elem.26.2609275" }
+%"struct.std::__1::__compressed_pair_elem.26.2609275" = type { %"struct.std::__1::basic_string<char>::__rep.2609276" }
+%"struct.std::__1::basic_string<char>::__rep.2609276" = type { %union.anon.2609277 }
+%union.anon.2609277 = type { %"struct.std::__1::basic_string<char>::__long.2609278" }
+%"struct.std::__1::basic_string<char>::__long.2609278" = type { %struct.anon.27.2609279, i64, ptr }
+%struct.anon.27.2609279 = type { i64 }
+%"class.mitsuba::ref.40.2609330" = type { ptr }
 
 ; 3 occurrences:
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
@@ -48,7 +48,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"class.std::__1::tuple.2603550", ptr %1, i64 %2
+  %3 = getelementptr nusw %"class.std::__1::tuple.2603517", ptr %1, i64 %2
   %.idx = select i1 %0, i64 56, i64 0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4
@@ -76,7 +76,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %"struct.std::__1::pair.61.2609501", ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %"struct.std::__1::pair.61.2609468", ptr %1, i64 %2
   %.idx = select i1 %0, i64 32, i64 0
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %.idx
   ret ptr %4

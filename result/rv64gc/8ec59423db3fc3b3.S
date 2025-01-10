@@ -40,13 +40,6 @@ func0000000000000000:                   # @func0000000000000000
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	subw	a1, a1, a2
-	sgtz	a2, a1
-	negw	a2, a2
-	and	a1, a1, a2
-	addw	a0, a0, a1
-	ret
 func000000000000000f:                   # @func000000000000000f
 	subw	a1, a1, a2
 	sgtz	a2, a1

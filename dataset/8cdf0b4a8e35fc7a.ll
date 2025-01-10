@@ -1,14 +1,14 @@
 
-%"struct.std::pair.28.2602107" = type <{ i64, i32, [4 x i8] }>
-%"struct.std::__1::pair.61.2609501" = type { %"class.std::__1::basic_string.2609306", %"class.mitsuba::ref.40.2609363" }
-%"class.std::__1::basic_string.2609306" = type { %"class.std::__1::__compressed_pair.25.2609307" }
-%"class.std::__1::__compressed_pair.25.2609307" = type { %"struct.std::__1::__compressed_pair_elem.26.2609308" }
-%"struct.std::__1::__compressed_pair_elem.26.2609308" = type { %"struct.std::__1::basic_string<char>::__rep.2609309" }
-%"struct.std::__1::basic_string<char>::__rep.2609309" = type { %union.anon.2609310 }
-%union.anon.2609310 = type { %"struct.std::__1::basic_string<char>::__long.2609311" }
-%"struct.std::__1::basic_string<char>::__long.2609311" = type { %struct.anon.27.2609312, i64, ptr }
-%struct.anon.27.2609312 = type { i64 }
-%"class.mitsuba::ref.40.2609363" = type { ptr }
+%"struct.std::pair.28.2602074" = type <{ i64, i32, [4 x i8] }>
+%"struct.std::__1::pair.61.2609468" = type { %"class.std::__1::basic_string.2609273", %"class.mitsuba::ref.40.2609330" }
+%"class.std::__1::basic_string.2609273" = type { %"class.std::__1::__compressed_pair.25.2609274" }
+%"class.std::__1::__compressed_pair.25.2609274" = type { %"struct.std::__1::__compressed_pair_elem.26.2609275" }
+%"struct.std::__1::__compressed_pair_elem.26.2609275" = type { %"struct.std::__1::basic_string<char>::__rep.2609276" }
+%"struct.std::__1::basic_string<char>::__rep.2609276" = type { %union.anon.2609277 }
+%union.anon.2609277 = type { %"struct.std::__1::basic_string<char>::__long.2609278" }
+%"struct.std::__1::basic_string<char>::__long.2609278" = type { %struct.anon.27.2609279, i64, ptr }
+%struct.anon.27.2609279 = type { i64 }
+%"class.mitsuba::ref.40.2609330" = type { ptr }
 
 ; 258 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -276,7 +276,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw nuw %"struct.std::pair.28.2602107", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.28.2602074", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -295,7 +295,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = lshr i64 %4, 1
-  %6 = getelementptr %"struct.std::__1::pair.61.2609501", ptr %0, i64 %5
+  %6 = getelementptr %"struct.std::__1::pair.61.2609468", ptr %0, i64 %5
   ret ptr %6
 }
 

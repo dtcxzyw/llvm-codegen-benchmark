@@ -1,6 +1,6 @@
 
-%"struct.hb_bit_set_t::page_map_t.2730116" = type { i32, i32 }
-%struct.memblock_region.3537144 = type { i64, i64, i32, i32 }
+%"struct.hb_bit_set_t::page_map_t.2730082" = type { i32, i32 }
+%struct.memblock_region.3537110 = type { i64, i64, i32, i32 }
 
 ; 24 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -33,7 +33,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.hb_bit_set_t::page_map_t.2730116", ptr %0, i64 %5, i32 1
+  %6 = getelementptr nusw nuw %"struct.hb_bit_set_t::page_map_t.2730082", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.memblock_region.3537144, ptr %0, i64 %5, i32 2
+  %6 = getelementptr %struct.memblock_region.3537110, ptr %0, i64 %5, i32 2
   ret ptr %6
 }
 

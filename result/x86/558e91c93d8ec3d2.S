@@ -89,17 +89,10 @@ func0000000000000041:                   # @func0000000000000041
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
-	imull	%edx, %esi
-	movslq	%esi, %rax
-	incq	%rdi
-	cmpq	%rax, %rdi
-	seta	%al
-	retq
-func0000000000000089:                   # @func0000000000000089
+func0000000000000084:                   # @func0000000000000084
 	imull	%edx, %esi
 	movslq	%esi, %rax
 	decq	%rdi
 	cmpq	%rax, %rdi
-	setae	%al
+	setb	%al
 	retq

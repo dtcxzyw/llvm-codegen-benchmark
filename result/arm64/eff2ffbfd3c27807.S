@@ -19,7 +19,7 @@ func0000000000000061:                   // @func0000000000000061
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	tst	x2, #0x20000000
+	tst	x2, #0x10
 	csel	w0, w1, w0, eq
 	ret
                                         // -- End function

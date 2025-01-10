@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 230 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaSimBase.c.ll
@@ -190,6 +190,8 @@
 ; openjdk/optimized/loopPredicate.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bssrdf.cpp.ll

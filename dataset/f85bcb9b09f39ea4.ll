@@ -1,14 +1,14 @@
 
-%"struct.mold::elf::ElfRel.2640511" = type { %"class.mold::BigEndian.2640376", %"class.mold::BigEndian.462.2640512", i8, %"class.mold::BigEndian.463.2640513" }
-%"class.mold::BigEndian.2640376" = type { [4 x i8] }
-%"class.mold::BigEndian.462.2640512" = type { [3 x i8] }
-%"class.mold::BigEndian.463.2640513" = type { [4 x i8] }
-%"struct.mold::elf::ElfRel.2642810" = type { %"class.mold::BigEndian.317.2642676", %"class.mold::BigEndian.2642674", %"class.mold::BigEndian.458.2642811", i8, %"class.mold::BigEndian.459.2642812" }
-%"class.mold::BigEndian.317.2642676" = type { [8 x i8] }
-%"class.mold::BigEndian.2642674" = type { [4 x i8] }
-%"class.mold::BigEndian.458.2642811" = type { [3 x i8] }
-%"class.mold::BigEndian.459.2642812" = type { [8 x i8] }
-%"struct.Assimp::LWO::Key.2828881" = type <{ double, float, i32, [5 x float], [4 x i8] }>
+%"struct.mold::elf::ElfRel.2640478" = type { %"class.mold::BigEndian.2640343", %"class.mold::BigEndian.462.2640479", i8, %"class.mold::BigEndian.463.2640480" }
+%"class.mold::BigEndian.2640343" = type { [4 x i8] }
+%"class.mold::BigEndian.462.2640479" = type { [3 x i8] }
+%"class.mold::BigEndian.463.2640480" = type { [4 x i8] }
+%"struct.mold::elf::ElfRel.2642777" = type { %"class.mold::BigEndian.317.2642643", %"class.mold::BigEndian.2642641", %"class.mold::BigEndian.458.2642778", i8, %"class.mold::BigEndian.459.2642779" }
+%"class.mold::BigEndian.317.2642643" = type { [8 x i8] }
+%"class.mold::BigEndian.2642641" = type { [4 x i8] }
+%"class.mold::BigEndian.458.2642778" = type { [3 x i8] }
+%"class.mold::BigEndian.459.2642779" = type { [8 x i8] }
+%"struct.Assimp::LWO::Key.2828847" = type <{ double, float, i32, [5 x float], [4 x i8] }>
 
 ; 22 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -37,7 +37,7 @@
 define i1 @func0000000000000764(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %0, i64 %1
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640511", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2640478", ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -12
   %6 = icmp ult ptr %3, %5
   ret i1 %6
@@ -61,7 +61,7 @@ entry:
 define i1 @func0000000000000744(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642810", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.mold::elf::ElfRel.2642777", ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -24
   %6 = icmp ult ptr %3, %5
   ret i1 %6
@@ -199,7 +199,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000054c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.Assimp::LWO::Key.2828881", ptr %0, i64 %1
+  %3 = getelementptr nusw %"struct.Assimp::LWO::Key.2828847", ptr %0, i64 %1
   %4 = getelementptr nusw i8, ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -40
   %6 = icmp ne ptr %3, %5
@@ -215,7 +215,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000544(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.Assimp::LWO::Key.2828881", ptr %0, i64 %1
+  %3 = getelementptr nusw %"struct.Assimp::LWO::Key.2828847", ptr %0, i64 %1
   %4 = getelementptr nusw i8, ptr %3, i64 %2
   %5 = getelementptr nusw i8, ptr %4, i64 -80
   %6 = icmp ult ptr %3, %5

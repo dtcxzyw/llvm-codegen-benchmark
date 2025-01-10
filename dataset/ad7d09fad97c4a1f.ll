@@ -34,16 +34,15 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; linux/optimized/nf_conntrack_core.ll
-; php/optimized/crypt_sha512.ll
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 16)
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 75)
   %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }

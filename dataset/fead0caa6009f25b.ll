@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSatLE.c.ll
@@ -15,7 +15,6 @@
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_gt.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/tcp_input.ll
 ; linux/optimized/virtio_ring.ll
 ; lua/optimized/ltable.ll
 ; lvgl/optimized/lv_demo_render.ll
@@ -242,7 +241,7 @@ entry:
   ret i32 %1
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; arrow/optimized/metadata_internal.cc.ll
 ; boost/optimized/src.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -266,7 +265,6 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_xts_hw.ll
 ; php/optimized/hash_gost.ll
 ; postgres/optimized/array_userfuncs.ll
-; postgres/optimized/inet_net_pton.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll

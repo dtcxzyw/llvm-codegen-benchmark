@@ -1,5 +1,146 @@
 
-; 186 occurrences:
+; 132 occurrences:
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/abcSymm.c.ll
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauNonDsd.c.ll
+; abc/optimized/dauNpn.c.ll
+; abc/optimized/extraUtilBitMatrix.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaOf.c.ll
+; abc/optimized/giaPf.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/giaTtopt.cpp.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/ifMan.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/mioUtils.c.ll
+; abc/optimized/mpmAbc.c.ll
+; abc/optimized/mpmMan.c.ll
+; abc/optimized/mpmTruth.c.ll
+; abc/optimized/rsbDec6.c.ll
+; abc/optimized/sbdCut.c.ll
+; abc/optimized/sfmLib.c.ll
+; abc/optimized/wlcGraft.c.ll
+; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
+; clamav/optimized/unarj.c.ll
+; clamav/optimized/unpack.cpp.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; cmake/optimized/lzma_decoder.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/introspection_equalizer.c.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; faiss/optimized/AdditiveQuantizer.cpp.ll
+; faiss/optimized/IVFlib.cpp.ll
+; faiss/optimized/IndexFastScan.cpp.ll
+; faiss/optimized/IndexIVFFastScan.cpp.ll
+; faiss/optimized/IndexIVFPQ.cpp.ll
+; faiss/optimized/IndexLattice.cpp.ll
+; faiss/optimized/IndexPQ.cpp.ll
+; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; faiss/optimized/ResidualQuantizer.cpp.ll
+; faiss/optimized/hamming.cpp.ll
+; faiss/optimized/index_read.cpp.ll
+; faiss/optimized/partitioning.cpp.ll
+; freetype/optimized/truetype.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hdf5/optimized/h5tools_str.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/state_compress.c.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; libjpeg-turbo/optimized/jchuff.c.ll
+; libpng/optimized/png.c.ll
+; libpng/optimized/pngrtran.c.ll
+; libpng/optimized/pngwutil.c.ll
+; libwebp/optimized/lossless_enc.c.ll
+; libwebp/optimized/predictor_enc.c.ll
+; libwebp/optimized/sharpyuv_gamma.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; linux/optimized/balloc.ll
+; linux/optimized/blk-mq.ll
+; linux/optimized/cache.ll
+; linux/optimized/decompress_unlzma.ll
+; linux/optimized/ialloc.ll
+; linux/optimized/intel_cx0_phy.ll
+; linux/optimized/kyber-iosched.ll
+; linux/optimized/mballoc.ll
+; linux/optimized/processor_perflib.ll
+; linux/optimized/resize.ll
+; linux/optimized/sch_api.ll
+; linux/optimized/scsi_lib.ll
+; linux/optimized/sidtab.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/ELF.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
+; llvm/optimized/SwiftCallingConv.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; luau/optimized/ldebug.cpp.ll
+; lvgl/optimized/lv_math.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; mitsuba3/optimized/x86instapi.cpp.ll
+; mixbox/optimized/mixbox.ll
+; ncnn/optimized/innerproduct_x86.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
+; ncnn/optimized/innerproduct_x86_fma.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/png.ll
+; openjdk/optimized/pngrtran.ll
+; openusd/optimized/avif.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/grain_synthesis.c.ll
+; openusd/optimized/reconinter.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; php/optimized/ir.ll
+; postgres/optimized/mcv.ll
+; postgres/optimized/walsender.ll
+; protobuf/optimized/csharp_field_base.cc.ll
+; proxygen/optimized/Huffman.cpp.ll
+; qemu/optimized/hw_acpi_core.c.ll
+; qemu/optimized/target_riscv_translate.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; qemu/optimized/tcg.c.ll
+; quickjs/optimized/quickjs.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtextures.c.ll
+; rocksdb/optimized/lru_cache.cc.ll
+; ruby/optimized/bignum.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; spike/optimized/srli16.ll
+; spike/optimized/srli8.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; wireshark/optimized/packet-ipmi.c.ll
+; wireshark/optimized/tvbuff.c.ll
+; yosys/optimized/memory_map.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zxing/optimized/MCDecoder.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 185 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddLCache.c.ll
@@ -169,7 +310,6 @@
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/rdb.ll
 ; rocksdb/optimized/lru_cache.cc.ll
-; ruby/optimized/bignum.ll
 ; spike/optimized/f128_rem.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f64_rem.ll
@@ -191,146 +331,6 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
   %3 = zext i32 %2 to i64
-  ret i64 %3
-}
-
-; 131 occurrences:
-; abc/optimized/abcRec3.c.ll
-; abc/optimized/abcSymm.c.ll
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauNonDsd.c.ll
-; abc/optimized/dauNpn.c.ll
-; abc/optimized/extraUtilBitMatrix.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaCut.c.ll
-; abc/optimized/giaJf.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
-; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaTruth.c.ll
-; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/ifDsd.c.ll
-; abc/optimized/ifMan.c.ll
-; abc/optimized/ifTruth.c.ll
-; abc/optimized/mioUtils.c.ll
-; abc/optimized/mpmAbc.c.ll
-; abc/optimized/mpmMan.c.ll
-; abc/optimized/mpmTruth.c.ll
-; abc/optimized/rsbDec6.c.ll
-; abc/optimized/sbdCut.c.ll
-; abc/optimized/sfmLib.c.ll
-; abc/optimized/wlcGraft.c.ll
-; assimp/optimized/Assimp.cpp.ll
-; boost/optimized/to_chars.ll
-; clamav/optimized/unarj.c.ll
-; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/lzma_decoder.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/introspection_equalizer.c.ll
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; faiss/optimized/AdditiveQuantizer.cpp.ll
-; faiss/optimized/IVFlib.cpp.ll
-; faiss/optimized/IndexFastScan.cpp.ll
-; faiss/optimized/IndexIVFFastScan.cpp.ll
-; faiss/optimized/IndexIVFPQ.cpp.ll
-; faiss/optimized/IndexLattice.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
-; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
-; faiss/optimized/ResidualQuantizer.cpp.ll
-; faiss/optimized/hamming.cpp.ll
-; faiss/optimized/index_read.cpp.ll
-; faiss/optimized/partitioning.cpp.ll
-; freetype/optimized/truetype.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/h5tools_str.c.ll
-; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/state_compress.c.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
-; libjpeg-turbo/optimized/jchuff.c.ll
-; libpng/optimized/png.c.ll
-; libpng/optimized/pngrtran.c.ll
-; libpng/optimized/pngwutil.c.ll
-; libwebp/optimized/lossless_enc.c.ll
-; libwebp/optimized/predictor_enc.c.ll
-; libwebp/optimized/sharpyuv_gamma.c.ll
-; libwebp/optimized/vp8l_dec.c.ll
-; linux/optimized/balloc.ll
-; linux/optimized/blk-mq.ll
-; linux/optimized/cache.ll
-; linux/optimized/decompress_unlzma.ll
-; linux/optimized/ialloc.ll
-; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/kyber-iosched.ll
-; linux/optimized/mballoc.ll
-; linux/optimized/processor_perflib.ll
-; linux/optimized/resize.ll
-; linux/optimized/sch_api.ll
-; linux/optimized/scsi_lib.ll
-; linux/optimized/sidtab.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/ELF.cpp.ll
-; llvm/optimized/ELFObjectFile.cpp.ll
-; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/SwiftCallingConv.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; luau/optimized/ldebug.cpp.ll
-; lvgl/optimized/lv_math.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; mitsuba3/optimized/x86instapi.cpp.ll
-; mixbox/optimized/mixbox.ll
-; ncnn/optimized/innerproduct_x86.cpp.ll
-; ncnn/optimized/innerproduct_x86_avx.cpp.ll
-; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
-; ncnn/optimized/innerproduct_x86_fma.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-math.ll
-; openjdk/optimized/png.ll
-; openjdk/optimized/pngrtran.ll
-; openusd/optimized/avif.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/grain_synthesis.c.ll
-; openusd/optimized/reconinter.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; php/optimized/ir.ll
-; postgres/optimized/mcv.ll
-; postgres/optimized/walsender.ll
-; protobuf/optimized/csharp_field_base.cc.ll
-; proxygen/optimized/Huffman.cpp.ll
-; qemu/optimized/hw_acpi_core.c.ll
-; qemu/optimized/target_riscv_translate.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; qemu/optimized/tcg.c.ll
-; quickjs/optimized/quickjs.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
-; rocksdb/optimized/lru_cache.cc.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/srli16.ll
-; spike/optimized/srli8.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-ipmi.c.ll
-; wireshark/optimized/tvbuff.c.ll
-; yosys/optimized/memory_map.ll
-; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
-; zxing/optimized/MCDecoder.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %0, %1
-  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

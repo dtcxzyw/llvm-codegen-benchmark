@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
-; git/optimized/line-log.ll
 ; git/optimized/remote.ll
 ; gromacs/optimized/coder.c.ll
 ; hermes/optimized/HadesGC.cpp.ll

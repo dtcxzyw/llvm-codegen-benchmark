@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/tagging.c.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; openblas/optimized/dgesvdq.c.ll
+; openusd/optimized/decodeframe.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll

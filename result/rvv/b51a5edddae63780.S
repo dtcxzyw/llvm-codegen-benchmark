@@ -29,7 +29,7 @@ func0000000000000121:                   # @func0000000000000121
 func0000000000000167:                   # @func0000000000000167
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v14, v8, v10
-	vminu.vv	v12, v12, v14
+	vminu.vv	v12, v14, v12
 	vadd.vv	v10, v12, v10
 	vmsle.vv	v0, v10, v8
 	ret

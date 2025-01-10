@@ -61,13 +61,12 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 536870912
+  %3 = and i64 %2, 16
   %.not = icmp eq i64 %3, 0
   %4 = select i1 %.not, i32 %1, i32 %0
   ret i32 %4

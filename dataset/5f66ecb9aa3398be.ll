@@ -1,7 +1,7 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
-%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
-%"class.std::thread::id.2636053" = type { i64 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021" = type { %"struct.std::atomic.742.2636022", ptr }
+%"struct.std::atomic.742.2636022" = type { %"class.std::thread::id.2636020" }
+%"class.std::thread::id.2636020" = type { i64 }
 
 ; 1 occurrences:
 ; ruby/optimized/struct.ll
@@ -184,7 +184,7 @@ entry:
   %3 = add i64 %2, 1
   %4 = and i64 %3, %1
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636021", ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -89,15 +89,3 @@ func0000000000000069:                   # @func0000000000000069
 	cmpq	%rax, %rdi
 	setae	%al
 	retq
-func0000000000000065:                   # @func0000000000000065
-	movslq	%edx, %rax
-	leaq	(%rsi,%rax,2), %rax
-	cmpq	%rax, %rdi
-	setbe	%al
-	retq
-func0000000000000068:                   # @func0000000000000068
-	movslq	%edx, %rax
-	addq	%rsi, %rax
-	cmpq	%rax, %rdi
-	seta	%al
-	retq

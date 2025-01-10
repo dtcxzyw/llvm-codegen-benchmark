@@ -26,6 +26,13 @@ func000000000000084c:                   # @func000000000000084c
 	setle	%al
 	orb	%cl, %al
 	retq
+func0000000000000318:                   # @func0000000000000318
+	imull	%edx, %esi
+	xorl	$1, %esi
+	xorl	$1, %edi
+	orl	%esi, %edi
+	setne	%al
+	retq
 func0000000000000042:                   # @func0000000000000042
 	imull	%edx, %esi
 	testl	%esi, %esi
@@ -34,11 +41,27 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
+func0000000000000b02:                   # @func0000000000000b02
+	imull	%edx, %esi
+	cmpl	$140, %esi
+	sete	%cl
+	testl	%edi, %edi
+	setne	%al
+	orb	%cl, %al
+	retq
 func0000000000000048:                   # @func0000000000000048
 	imull	%edx, %esi
 	testl	%esi, %esi
 	sete	%cl
 	cmpl	$3, %edi
+	setb	%al
+	orb	%cl, %al
+	retq
+func000000000000090c:                   # @func000000000000090c
+	imull	%edx, %esi
+	testl	%esi, %esi
+	sets	%cl
+	cmpl	$-12, %edi
 	setb	%al
 	orb	%cl, %al
 	retq

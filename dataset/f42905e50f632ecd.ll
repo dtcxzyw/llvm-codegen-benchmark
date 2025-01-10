@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; bdwgc/optimized/cordbscs.c.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
@@ -12,6 +12,7 @@
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
+; git/optimized/diffcore-delta.ll
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; grpc/optimized/completion_queue.cc.ll
@@ -119,7 +120,7 @@ entry:
   ret ptr %4
 }
 
-; 183 occurrences:
+; 182 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/trees.c.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -142,7 +143,6 @@ entry:
 ; darktable/optimized/introspection_filmic.c.ll
 ; faiss/optimized/pq4_fast_scan_search_1.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
-; git/optimized/diffcore-delta.ll
 ; git/optimized/merge-ort.ll
 ; gromacs/optimized/trees.c.ll
 ; hdf5/optimized/H5Eint.c.ll

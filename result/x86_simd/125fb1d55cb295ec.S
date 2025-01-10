@@ -54,6 +54,13 @@ func00000000000001cc:                   # @func00000000000001cc
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000252:                   # @func0000000000000252
+	vpcmpnltud	%ymm2, %ymm1, %k0
+	vpcmpnltud	%ymm1, %ymm0, %k1
+	korb	%k0, %k1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000004c:                   # @func000000000000004c
 	vpcmpeqd	%ymm0, %ymm2, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1

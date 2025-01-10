@@ -395,14 +395,3 @@ func00000000000018c8:                   # @func00000000000018c8
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func000000000000294c:                   # @func000000000000294c
-	sext.w	a0, a0
-	sext.w	a1, a1
-	sext.w	a2, a2
-	slti	a2, a2, 255
-	slti	a1, a1, 255
-	and	a1, a1, a2
-	xori	a1, a1, 1
-	snez	a0, a0
-	or	a0, a0, a1
-	ret

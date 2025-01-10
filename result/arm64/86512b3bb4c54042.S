@@ -74,3 +74,10 @@ func000000000000000b:                   // @func000000000000000b
 	and	x0, x8, #0x7ffffffffffffffc
 	ret
                                         // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	add	x8, x0, x1
+	add	x8, x8, #63
+	and	x0, x8, #0xffffffffffffffc0
+	ret
+                                        // -- End function

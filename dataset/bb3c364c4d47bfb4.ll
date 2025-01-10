@@ -1240,7 +1240,7 @@ entry:
   ret i64 %3
 }
 
-; 2743 occurrences:
+; 2744 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/dauMerge.c.ll
@@ -3509,6 +3509,7 @@ entry:
 ; ruby/optimized/pm_newline_list.ll
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/string.ll
+; ruby/optimized/transcode.ll
 ; ruby/optimized/util.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll

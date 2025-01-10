@@ -1,7 +1,7 @@
 
-%"class.btAxisSweep3Internal<unsigned short>::Handle.2819241" = type { %struct.btBroadphaseProxy.base.2819242, [3 x i16], [3 x i16], ptr }
-%struct.btBroadphaseProxy.base.2819242 = type <{ ptr, i32, i32, i32, %class.btVector3.2819243, %class.btVector3.2819243 }>
-%class.btVector3.2819243 = type { [4 x float] }
+%"class.btAxisSweep3Internal<unsigned short>::Handle.2819207" = type { %struct.btBroadphaseProxy.base.2819208, [3 x i16], [3 x i16], ptr }
+%struct.btBroadphaseProxy.base.2819208 = type <{ ptr, i32, i32, i32, %class.btVector3.2819209, %class.btVector3.2819209 }>
+%class.btVector3.2819209 = type { [4 x float] }
 
 ; 14 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
@@ -23,7 +23,7 @@ define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = add i16 %2, 1
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw nuw %"class.btAxisSweep3Internal<unsigned short>::Handle.2819241", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.btAxisSweep3Internal<unsigned short>::Handle.2819207", ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }

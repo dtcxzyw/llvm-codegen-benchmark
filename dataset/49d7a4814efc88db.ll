@@ -1,13 +1,18 @@
 
-; 18 occurrences:
+; 24 occurrences:
+; assimp/optimized/zip.c.ll
+; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/sis.c.ll
 ; clamav/optimized/unarj.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
+; hermes/optimized/zip.c.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; libquic/optimized/cmac.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -18,6 +23,7 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
+; slurm/optimized/KangarooTwelve.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -30,18 +36,20 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 5 occurrences:
+; 7 occurrences:
 ; clamav/optimized/sis.c.ll
 ; cmake/optimized/sha1.c.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; git/optimized/sha256.ll
+; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/mon_bin.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sub nuw nsw i32 8192, %1
+  %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = call i64 @llvm.umin.i64(i64 range(i64 0, 4294967296) %3, i64 %0)
+  %4 = tail call i64 @llvm.umin.i64(i64 %0, i64 %3)
   ret i64 %4
 }
 

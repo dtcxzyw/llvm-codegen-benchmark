@@ -35,10 +35,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; brotli/optimized/decode.c.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
 ; postgres/optimized/spell.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

@@ -254,7 +254,7 @@ entry:
   ret i32 %3
 }
 
-; 340 occurrences:
+; 338 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -391,8 +391,6 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; nori/optimized/main.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -620,10 +618,12 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/libata-pata-timings.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; openjdk/optimized/hb-ot-layout.ll

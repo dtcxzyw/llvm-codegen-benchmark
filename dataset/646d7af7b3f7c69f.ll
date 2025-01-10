@@ -43,7 +43,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = add nuw nsw i32 %0, %3
-  %5 = lshr i32 %4, 3
+  %5 = lshr i32 %4, 4
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }

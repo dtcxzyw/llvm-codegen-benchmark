@@ -45,19 +45,18 @@ func0000000000000007:                   // @func0000000000000007
 	mul	x0, x8, x9
 	ret
                                         // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	add	x8, x0, #3
-	cmp	x0, #0
-	csel	x8, x8, x0, lt
-	lsl	x8, x8, #5
-	and	x0, x8, #0xffffffffffffff80
-	ret
-                                        // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	add	x8, x0, x0, lsr #63
 	lsl	x8, x8, #2
 	and	x0, x8, #0xfffffffffffffff8
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
+// %bb.0:                               // %entry
+	add	x8, x0, #3
+	cmp	x0, #0
+	csel	x8, x8, x0, lt
+	and	x0, x8, #0xfffffffffffffffc
 	ret
                                         // -- End function

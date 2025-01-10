@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/inflate.c.ll
 ; boost/optimized/src.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -23,7 +23,6 @@
 ; gromacs/optimized/inflate.c.ll
 ; hdf5/optimized/H5Zshuffle.c.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; libquic/optimized/inflate.c.ll
@@ -72,7 +71,7 @@ entry:
   ret ptr %6
 }
 
-; 56 occurrences:
+; 52 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -125,10 +124,6 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005e(ptr %0, i64 %1, i32 %2) #0 {
 entry:

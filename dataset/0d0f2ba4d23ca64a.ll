@@ -1,17 +1,17 @@
 
-%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079" = type { %"class.std::__cxx11::list.51.2616080" }
-%"class.std::__cxx11::list.51.2616080" = type { %"class.std::__cxx11::_List_base.52.2616081" }
-%"class.std::__cxx11::_List_base.52.2616081" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" }
-%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" = type { %"struct.std::__detail::_List_node_header.2616083" }
-%"struct.std::__detail::_List_node_header.2616083" = type { %"struct.std::__detail::_List_node_base.2616084", i64 }
-%"struct.std::__detail::_List_node_base.2616084" = type { ptr, ptr }
-%"struct.GUIFormSpecMenu::ListRingSpec.2694584" = type { %struct.InventoryLocation.2694507, %"class.std::__cxx11::basic_string.2694469" }
-%struct.InventoryLocation.2694507 = type <{ i32, [4 x i8], %"class.std::__cxx11::basic_string.2694469", %"class.irr::core::vector3d.2694508", [2 x i8] }>
-%"class.irr::core::vector3d.2694508" = type { i16, i16, i16 }
-%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
-%union.anon.2694471 = type { i64, [8 x i8] }
-%"class.cv::Point_.3778048" = type { float, float }
+%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616046" = type { %"class.std::__cxx11::list.51.2616047" }
+%"class.std::__cxx11::list.51.2616047" = type { %"class.std::__cxx11::_List_base.52.2616048" }
+%"class.std::__cxx11::_List_base.52.2616048" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616049" }
+%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616049" = type { %"struct.std::__detail::_List_node_header.2616050" }
+%"struct.std::__detail::_List_node_header.2616050" = type { %"struct.std::__detail::_List_node_base.2616051", i64 }
+%"struct.std::__detail::_List_node_base.2616051" = type { ptr, ptr }
+%"struct.GUIFormSpecMenu::ListRingSpec.2694550" = type { %struct.InventoryLocation.2694473, %"class.std::__cxx11::basic_string.2694435" }
+%struct.InventoryLocation.2694473 = type <{ i32, [4 x i8], %"class.std::__cxx11::basic_string.2694435", %"class.irr::core::vector3d.2694474", [2 x i8] }>
+%"class.irr::core::vector3d.2694474" = type { i16, i16, i16 }
+%"class.std::__cxx11::basic_string.2694435" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436", i64, %union.anon.2694437 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436" = type { ptr }
+%union.anon.2694437 = type { i64, [8 x i8] }
+%"class.cv::Point_.3777998" = type { float, float }
 
 ; 17 occurrences:
 ; clamav/optimized/connpool.c.ll
@@ -36,7 +36,7 @@ define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 1
+  %5 = getelementptr nuw %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616046", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
@@ -74,7 +74,7 @@ define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nuw %"struct.GUIFormSpecMenu::ListRingSpec.2694584", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.GUIFormSpecMenu::ListRingSpec.2694550", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -85,7 +85,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.cv::Point_.3778048", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Point_.3777998", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

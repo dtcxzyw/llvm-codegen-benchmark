@@ -58,13 +58,6 @@ func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
 	leal	(%rdx,%rax,8), %eax
 	retq
-func000000000000018c:                   # @func000000000000018c
-	shll	$8, %edx
-	movzbl	%sil, %eax
-	shll	$8, %eax
-	addl	%edx, %eax
-	addl	%edi, %eax
-	retq
 func00000000000001cc:                   # @func00000000000001cc
 	shll	$7, %edx
 	movzbl	%sil, %eax

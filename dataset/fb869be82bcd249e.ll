@@ -1,5 +1,5 @@
 
-%union._Py_CODEUNIT.3988293 = type { i16 }
+%union._Py_CODEUNIT.3988243 = type { i16 }
 
 ; 43 occurrences:
 ; abc/optimized/llb2Flow.c.ll
@@ -313,7 +313,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = getelementptr nusw nuw i8, ptr %0, i64 200
-  %4 = getelementptr %union._Py_CODEUNIT.3988293, ptr %3, i64 %2
+  %4 = getelementptr %union._Py_CODEUNIT.3988243, ptr %3, i64 %2
   ret ptr %4
 }
 

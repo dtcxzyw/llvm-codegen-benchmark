@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
-%struct.BEInt.2734513 = type { [2 x i8] }
+%"struct.OT::IntType.2734478" = type { %struct.BEInt.2734479 }
+%struct.BEInt.2734479 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -13,7 +13,7 @@ entry:
   %4 = lshr i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %7 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734512"], ptr %6, i64 0, i64 %5
+  %7 = getelementptr nusw nuw [1 x %"struct.OT::IntType.2734478"], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 

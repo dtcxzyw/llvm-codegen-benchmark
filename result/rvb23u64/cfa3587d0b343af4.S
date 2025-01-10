@@ -1,11 +1,3 @@
-func0000000000000acc:                   # @func0000000000000acc
-	sext.w	a0, a0
-	addw	a1, a1, a2
-	slt	a0, a1, a0
-	xori	a0, a0, 1
-	slti	a1, a1, 0
-	or	a0, a0, a1
-	ret
 func0000000000000a8c:                   # @func0000000000000a8c
 	sext.w	a0, a0
 	addw	a1, a1, a2

@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; php/optimized/cgi_main.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll

@@ -5,6 +5,13 @@ func0000000000000015:                   # @func0000000000000015
 	andq	$-4, %rax
 	leaq	(%rax,%rdi,2), %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	3(%rsi), %rax
+	testq	%rsi, %rsi
+	cmovnsq	%rsi, %rax
+	andq	$-4, %rax
+	leaq	(%rax,%rdi,2), %rax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi

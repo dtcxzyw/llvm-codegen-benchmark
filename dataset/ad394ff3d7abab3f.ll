@@ -93,7 +93,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or i32 %2, %1
+  %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

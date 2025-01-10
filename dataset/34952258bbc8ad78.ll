@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; assimp/optimized/unzip.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; linux/optimized/datagram.ll

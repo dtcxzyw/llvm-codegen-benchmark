@@ -24,17 +24,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; clamav/optimized/matcher-bm.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = select i1 %0, i16 %1, i16 %2
-  %4 = add i16 %3, -1
-  %5 = zext i16 %4 to i64
-  ret i64 %5
-}
-
 ; 10 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll

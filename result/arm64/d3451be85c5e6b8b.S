@@ -48,11 +48,6 @@ func000000000000000e:                   // @func000000000000000e
 	sub	w0, w0, w1
 	ret
                                         // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	sub	w0, w0, w1
-	ret
-                                        // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
 	sub	w0, w0, w1
@@ -69,6 +64,11 @@ func0000000000000007:                   // @func0000000000000007
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
+// %bb.0:                               // %entry
+	sub	w0, w0, w1
+	ret
+                                        // -- End function
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	sub	w0, w0, w1
 	ret

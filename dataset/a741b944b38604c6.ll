@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 212 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; casadi/optimized/integrator.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -69,6 +69,7 @@
 ; llvm/optimized/CloneModule.cpp.ll
 ; llvm/optimized/CodeExtractor.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
+; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/ConvergenceVerifier.cpp.ll
 ; llvm/optimized/CoroEarly.cpp.ll
 ; llvm/optimized/CoroElide.cpp.ll

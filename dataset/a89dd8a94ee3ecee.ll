@@ -1,5 +1,5 @@
 
-%struct.genl_small_ops.3552113 = type { ptr, ptr, i8, i8, i8, i8 }
+%struct.genl_small_ops.3552079 = type { ptr, ptr, i8, i8, i8, i8 }
 
 ; 5 occurrences:
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
@@ -59,7 +59,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr %struct.genl_small_ops.3552113, ptr %0, i64 %5
+  %6 = getelementptr %struct.genl_small_ops.3552079, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -245,18 +245,17 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 2
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
-  ret ptr %5
+  %.idx = shl nsw i64 %3, 6
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  ret ptr %4
 }
 
 ; 1 occurrences:

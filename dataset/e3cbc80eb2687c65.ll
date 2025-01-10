@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 81 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -128,7 +127,6 @@ entry:
 ; git/optimized/reader.ll
 ; git/optimized/record.ll
 ; grpc/optimized/hpack_parser.cc.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationcompare.ll
@@ -166,6 +164,7 @@ entry:
 ; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/DataLayout.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
@@ -310,7 +309,7 @@ entry:
   ret i64 %5
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -346,7 +345,6 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/DXContainerPSVInfo.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
@@ -407,7 +405,7 @@ entry:
   ret i64 %5
 }
 
-; 719 occurrences:
+; 720 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -702,6 +700,7 @@ entry:
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
+; luau/optimized/isocline.c.ll
 ; lvgl/optimized/lv_draw_buf.ll
 ; lvgl/optimized/lv_image.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -1149,7 +1148,7 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/sscSim.c.ll
 ; boost/optimized/from_chars.ll
 ; boost/optimized/src.ll
@@ -1157,7 +1156,6 @@ entry:
 ; icu/optimized/ucoleitr.ll
 ; linux/optimized/badblocks.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; openssl/optimized/quic-lcidm-test-bin-quic-lcidm.ll
 ; openssl/optimized/quic-srtm-test-bin-quic-srtm.ll
 ; raylib/optimized/raudio.c.ll
@@ -1253,7 +1251,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -1261,7 +1259,6 @@ entry:
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/Inflater.ll
 ; openjdk/optimized/java.ll

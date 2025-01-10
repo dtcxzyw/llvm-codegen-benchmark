@@ -1,5 +1,5 @@
 
-; 379 occurrences:
+; 378 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -345,7 +345,6 @@
 ; redis/optimized/module.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/print.ll
-; redis/optimized/rdb.ll
 ; redis/optimized/redis-cli.ll
 ; redis/optimized/sha1.ll
 ; ruby/optimized/compile.ll

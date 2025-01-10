@@ -10,7 +10,7 @@ func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	and	w8, w0, #0x7ffffffe
 	orr	w9, w1, w2
-	cmp	w8, #8
+	cmp	w8, #16
 	ccmp	w9, #0, #0, eq
 	cset	w0, eq
 	ret

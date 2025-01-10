@@ -1,5 +1,5 @@
 
-; 284 occurrences:
+; 285 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/match.cc.ll
@@ -259,6 +259,7 @@
 ; velox/optimized/SsdFile.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/3sb71uj5mon9qr9k.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; yyjson/optimized/yyjson.c.ll

@@ -7,7 +7,7 @@ func000000000000003f:                   # @func000000000000003f
 	subq	%rdx, %rsi
 	leaq	2(%rdi,%rsi,4), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
+func000000000000001b:                   # @func000000000000001b
 	subq	%rdx, %rsi
 	leaq	(,%rsi,8), %rax
 	subq	%rsi, %rax
@@ -17,9 +17,4 @@ func000000000000002b:                   # @func000000000000002b
 	subq	%rdx, %rsi
 	shlq	$5, %rsi
 	leaq	16(%rdi,%rsi), %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	subq	%rdx, %rsi
-	leaq	(%rsi,%rsi,2), %rax
-	leaq	8(%rdi,%rax,8), %rax
 	retq

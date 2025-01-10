@@ -1,5 +1,5 @@
 
-; 404 occurrences:
+; 403 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcGen.c.ll
@@ -45,7 +45,6 @@
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/bdf.c.ll
-; freetype/optimized/psaux.c.ll
 ; git/optimized/wildmatch.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; graphviz/optimized/gvrender_core_dot.c.ll

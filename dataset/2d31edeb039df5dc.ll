@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; git/optimized/merge-ort.ll
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/RawVector.cpp.ll

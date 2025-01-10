@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 193 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -110,7 +110,6 @@
 ; llvm/optimized/SemaPseudoObject.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; lua/optimized/lcode.ll
-; lua/optimized/ldebug.ll
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
@@ -341,7 +340,7 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -360,6 +359,7 @@ entry:
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lua/optimized/ldebug.ll
 ; openjdk/optimized/cmsalpha.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; minetest/optimized/treegen.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; php/optimized/avl.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -8,7 +9,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call i32 @llvm.smax.i32(i32 %0, i32 %1)
+  %2 = call i32 @llvm.smax.i32(i32 %0, i32 %1)
   %3 = trunc nsw i32 %2 to i16
   ret i16 %3
 }

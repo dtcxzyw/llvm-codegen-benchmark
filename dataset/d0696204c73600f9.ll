@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
-%union.Value.3660450 = type { ptr }
+%struct.lua_TValue.3660399 = type { %union.Value.3660400, i32 }
+%union.Value.3660400 = type { ptr }
 
 ; 21 occurrences:
 ; abc/optimized/gzread.c.ll
@@ -86,7 +86,7 @@ entry:
   %3 = sub i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr nusw %struct.lua_TValue.3660449, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.lua_TValue.3660399, ptr %0, i64 %5
   ret ptr %6
 }
 

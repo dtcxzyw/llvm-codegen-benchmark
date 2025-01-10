@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; minetest/optimized/player_sao.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {

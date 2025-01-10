@@ -1,16 +1,18 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/iov_iter.ll
+; linux/optimized/memory.ll
 ; linux/optimized/nvs.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/swiotlb.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:

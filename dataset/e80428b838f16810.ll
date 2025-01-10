@@ -1,6 +1,5 @@
 
-; 81 occurrences:
-; arrow/optimized/compare_internal_avx2.cc.ll
+; 80 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
 ; linux/optimized/siphash.ll

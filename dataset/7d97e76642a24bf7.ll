@@ -1,14 +1,15 @@
 
-%struct.MapNode.2693659 = type { i16, i8, i8 }
-%"struct.irr::video::S3DVertex2TCoords.2698351" = type { %"struct.irr::video::S3DVertex.2698352", %"class.irr::core::vector2d.2698353" }
-%"struct.irr::video::S3DVertex.2698352" = type { %"class.irr::core::vector3d.2698354", %"class.irr::core::vector3d.2698354", %"class.irr::video::SColor.2698350", %"class.irr::core::vector2d.2698353" }
-%"class.irr::core::vector3d.2698354" = type { float, float, float }
-%"class.irr::video::SColor.2698350" = type { i32 }
-%"class.irr::core::vector2d.2698353" = type { float, float }
+%struct.MapNode.2693625 = type { i16, i8, i8 }
+%"struct.irr::video::S3DVertex2TCoords.2698317" = type { %"struct.irr::video::S3DVertex.2698318", %"class.irr::core::vector2d.2698319" }
+%"struct.irr::video::S3DVertex.2698318" = type { %"class.irr::core::vector3d.2698320", %"class.irr::core::vector3d.2698320", %"class.irr::video::SColor.2698316", %"class.irr::core::vector2d.2698319" }
+%"class.irr::core::vector3d.2698320" = type { float, float, float }
+%"class.irr::video::SColor.2698316" = type { i32 }
+%"class.irr::core::vector2d.2698319" = type { float, float }
 
-; 2 occurrences:
+; 3 occurrences:
 ; folly/optimized/Subprocess.cpp.ll
 ; postgres/optimized/pg_lsn.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -27,7 +28,7 @@ entry:
   %3 = add nsw i64 %2, 240
   %4 = add nsw i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %struct.MapNode.2693659, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.MapNode.2693625, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -52,7 +53,7 @@ entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add nsw i64 %1, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw nuw %"struct.irr::video::S3DVertex2TCoords.2698351", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.irr::video::S3DVertex2TCoords.2698317", ptr %0, i64 %5
   ret ptr %6
 }
 

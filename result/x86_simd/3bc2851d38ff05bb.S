@@ -136,7 +136,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 func000000000000060c:                   # @func000000000000060c
 	vpsllq	$3, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm2, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpcmpneqq	%ymm0, %ymm1, %k0

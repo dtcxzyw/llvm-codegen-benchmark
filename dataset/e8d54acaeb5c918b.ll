@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 102 occurrences:
 ; abc/optimized/fraInd.c.ll
 ; boost/optimized/codepage.ll
 ; cmake/optimized/archive_string.c.ll
@@ -50,7 +50,6 @@
 ; llvm/optimized/LTOBackend.cpp.ll
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MergedLoadStoreMotion.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
@@ -67,7 +66,6 @@
 ; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll

@@ -6,10 +6,6 @@ func000000000000001b:                   # @func000000000000001b
 	movslq	%esi, %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	movslq	%esi, %rax
-	leaq	5120(%rdi,%rax,8), %rax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	movslq	%esi, %rax
 	leaq	8(%rdi,%rax,8), %rax

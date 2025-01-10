@@ -1,5 +1,5 @@
 
-%"struct.Assimp::MDL::Vertex_MDL4.2829408" = type { [3 x i16], i8, i8 }
+%"struct.Assimp::MDL::Vertex_MDL4.2829374" = type { [3 x i16], i8, i8 }
 
 ; 2 occurrences:
 ; postgres/optimized/inv_api.ll
@@ -110,7 +110,7 @@ define i1 @func00000000000001c5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 36
-  %5 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829374", ptr %4, i64 %3
   %6 = icmp ule ptr %5, %0
   ret i1 %6
 }
@@ -122,7 +122,7 @@ define i1 @func00000000000001c9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %1, i64 36
-  %5 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829374", ptr %4, i64 %3
   %6 = icmp uge ptr %5, %0
   ret i1 %6
 }

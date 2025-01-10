@@ -52,6 +52,13 @@ func000000000000014a:                   # @func000000000000014a
 	max	a0, a0, a1
 	sgtz	a0, a0
 	ret
+func0000000000000281:                   # @func0000000000000281
+	sext.w	a0, a0
+	sext.w	a1, a1
+	sltiu	a1, a1, 128
+	seqz	a0, a0
+	or	a0, a0, a1
+	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a1, a1
@@ -337,16 +344,6 @@ func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
 	slti	a1, a1, -5
 	sgtz	a0, a0
-	or	a0, a0, a1
-	ret
-func0000000000000281:                   # @func0000000000000281
-	sext.w	a0, a0
-	srliw	a1, a1, 16
-	li	a2, 27
-	seqz	a1, a1
-	slli	a2, a2, 11
-	xor	a0, a0, a2
-	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func00000000000000d4:                   # @func00000000000000d4

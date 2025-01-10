@@ -48,15 +48,13 @@ entry:
   ret i64 %5
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; clamav/optimized/tiff.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; flac/optimized/bitwriter.c.ll
-; git/optimized/line-log.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; hermes/optimized/SmallPtrSet.cpp.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
-; linux/optimized/gup.ll
 ; linux/optimized/swiotlb.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
@@ -64,7 +62,6 @@ entry:
 ; llvm/optimized/SmallPtrSet.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
-; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll

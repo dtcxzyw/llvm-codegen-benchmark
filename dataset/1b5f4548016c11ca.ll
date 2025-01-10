@@ -1,5 +1,5 @@
 
-; 1182 occurrences:
+; 1183 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFanio.c.ll
@@ -186,6 +186,7 @@
 ; cmake/optimized/index_decoder.c.ll
 ; cmake/optimized/index_hash.c.ll
 ; cmake/optimized/inflate.c.ll
+; cmake/optimized/openssl.c.ll
 ; cmake/optimized/pingpong.c.ll
 ; cmake/optimized/setopt.c.ll
 ; cmake/optimized/stream_decoder.c.ll
@@ -196,7 +197,6 @@
 ; cpython/optimized/difradix2.ll
 ; cpython/optimized/legacy_tracing.ll
 ; cpython/optimized/mpdecimal.ll
-; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/zlibmodule.ll
 ; csmith/optimized/PartialExpander.cpp.ll
 ; curl/optimized/libcurl_la-bufq.ll
@@ -206,6 +206,7 @@
 ; curl/optimized/libcurl_la-formdata.ll
 ; curl/optimized/libcurl_la-http.ll
 ; curl/optimized/libcurl_la-http_chunks.ll
+; curl/optimized/libcurl_la-openssl.ll
 ; curl/optimized/libcurl_la-pingpong.ll
 ; curl/optimized/libcurl_la-setopt.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll

@@ -10,13 +10,19 @@ func0000000000000024:                   // @func0000000000000024
 	lsr	w0, w8, #31
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	lsr	w0, w0, #31
-                                        // kill: def $w0 killed $w0 killed $x0
+	cmp	w0, #1
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000026:                   // @func0000000000000026
+func000000000000002a:                   // @func000000000000002a
+// %bb.0:                               // %entry
+	cmp	w0, #0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	lsr	w0, w0, #31
                                         // kill: def $w0 killed $w0 killed $x0
@@ -26,12 +32,6 @@ func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
 	ubfx	x0, x0, #62, #1
                                         // kill: def $w0 killed $w0 killed $x0
-	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
-	cmp	w0, #2048, lsl #12              // =8388608
-	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008

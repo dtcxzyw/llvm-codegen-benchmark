@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_transformer_helpers.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/addrconf.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/ohci-hcd.ll
-; quickjs/optimized/quickjs.ll
 ; redis/optimized/rdb.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll

@@ -58,18 +58,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003e(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, 24576
-  %5 = add nuw nsw i32 %1, %4
-  %6 = add nuw i32 %5, %0
-  ret i32 %6
-}
-
 ; 2 occurrences:
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/yuv.c.ll

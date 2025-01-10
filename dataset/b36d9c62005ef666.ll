@@ -1,11 +1,11 @@
 
-%"struct.rocksdb::CacheAlignedWrapper.2615971" = type { %"class.rocksdb::port::Mutex.2615972", [24 x i8] }
-%"class.rocksdb::port::Mutex.2615972" = type { %union.pthread_mutex_t.2615973 }
-%union.pthread_mutex_t.2615973 = type { %struct.__pthread_mutex_s.2615974 }
-%struct.__pthread_mutex_s.2615974 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615975 }
-%struct.__pthread_internal_list.2615975 = type { ptr, ptr }
-%"struct.rocksdb::Unsigned128.2620889" = type { i64, i64 }
-%union.OSSL_PARAM_ALIGNED_BLOCK.2633568 = type { double }
+%"struct.rocksdb::CacheAlignedWrapper.2615938" = type { %"class.rocksdb::port::Mutex.2615939", [24 x i8] }
+%"class.rocksdb::port::Mutex.2615939" = type { %union.pthread_mutex_t.2615940 }
+%union.pthread_mutex_t.2615940 = type { %struct.__pthread_mutex_s.2615941 }
+%struct.__pthread_mutex_s.2615941 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2615942 }
+%struct.__pthread_internal_list.2615942 = type { ptr, ptr }
+%"struct.rocksdb::Unsigned128.2620856" = type { i64, i64 }
+%union.OSSL_PARAM_ALIGNED_BLOCK.2633535 = type { double }
 
 ; 64 occurrences:
 ; cpython/optimized/_zoneinfo.ll
@@ -92,7 +92,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615971", ptr %0, i64 %4
+  %5 = getelementptr %"struct.rocksdb::CacheAlignedWrapper.2615938", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -117,7 +117,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620856", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -128,7 +128,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620889", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.rocksdb::Unsigned128.2620856", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -312,7 +312,7 @@ define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw nuw %union.OSSL_PARAM_ALIGNED_BLOCK.2633568, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %union.OSSL_PARAM_ALIGNED_BLOCK.2633535, ptr %0, i64 %4
   ret ptr %5
 }
 

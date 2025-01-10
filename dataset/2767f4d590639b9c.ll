@@ -404,7 +404,7 @@ entry:
   ret float %4
 }
 
-; 27 occurrences:
+; 42 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -429,6 +429,21 @@ entry:
 ; oiio/optimized/deepdata.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; openusd/optimized/nanocolor.c.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; pbrt-v4/optimized/textures.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
@@ -440,11 +455,12 @@ entry:
   ret float %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/btMLCPSolver.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pme_gather.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

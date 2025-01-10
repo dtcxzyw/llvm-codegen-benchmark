@@ -1,4 +1,41 @@
 
+; 27 occurrences:
+; clamav/optimized/chmd.c.ll
+; clamav/optimized/packlibs.c.ll
+; coreutils-rs/optimized/12183t08bisz8vo8.ll
+; freetype/optimized/sfnt.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; libpng/optimized/pngwutil.c.ll
+; libquic/optimized/bio.c.ll
+; libquic/optimized/cbs.c.ll
+; libquic/optimized/url_canon_host.cc.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-cff2-table.ll
+; openjdk/optimized/hb-ot-layout.ll
+; qemu/optimized/fdt.c.ll
+; qemu/optimized/fdt_ro.c.ll
+; qemu/optimized/fdt_rw.c.ll
+; ruby/optimized/shift_jis.ll
+; ruby/optimized/windows_31j.ll
+; spike/optimized/fdt.ll
+; spike/optimized/fdt_ro.ll
+; spike/optimized/fdt_rw.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/iptrace.c.ll
+; wireshark/optimized/k12.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = icmp ult i32 %3, 128
+  ret i1 %4
+}
+
 ; 96 occurrences:
 ; boost/optimized/ipv6_address_rule.ll
 ; clamav/optimized/cabd.c.ll
@@ -754,41 +791,6 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = or disjoint i32 %0, %2
   %4 = icmp ugt i32 %3, 16
-  ret i1 %4
-}
-
-; 25 occurrences:
-; clamav/optimized/chmd.c.ll
-; clamav/optimized/packlibs.c.ll
-; coreutils-rs/optimized/12183t08bisz8vo8.ll
-; freetype/optimized/sfnt.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; libpng/optimized/pngwutil.c.ll
-; libquic/optimized/bio.c.ll
-; libquic/optimized/cbs.c.ll
-; libquic/optimized/url_canon_host.cc.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-ot-cff2-table.ll
-; openjdk/optimized/hb-ot-layout.ll
-; qemu/optimized/fdt.c.ll
-; qemu/optimized/fdt_ro.c.ll
-; qemu/optimized/fdt_rw.c.ll
-; spike/optimized/fdt.ll
-; spike/optimized/fdt_ro.ll
-; spike/optimized/fdt_rw.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/iptrace.c.ll
-; wireshark/optimized/k12.c.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %0, %2
-  %4 = icmp ult i32 %3, 16
   ret i1 %4
 }
 

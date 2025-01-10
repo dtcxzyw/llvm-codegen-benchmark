@@ -1,11 +1,14 @@
 
-; 11 occurrences:
+; 14 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; libpng/optimized/pngpread.c.ll
+; linux/optimized/deflate.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
+; openjdk/optimized/pngpread.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; redis/optimized/arena.ll
@@ -48,9 +51,10 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; clamav/optimized/oabd.c.ll
 ; faiss/optimized/distances_simd.cpp.ll
 ; git/optimized/ewah_rlw.ll
 ; hermes/optimized/zip.c.ll
@@ -101,6 +105,24 @@ entry:
   ret i1 %5
 }
 
+; 8 occurrences:
+; cmake/optimized/deflate.c.ll
+; cmake/optimized/lzma_decoder.c.ll
+; jemalloc/optimized/arena.ll
+; jemalloc/optimized/arena.pic.ll
+; jemalloc/optimized/arena.sym.ll
+; redis/optimized/arena.ll
+; redis/optimized/arena.sym.ll
+; zlib/optimized/deflate.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw i64 %3 to i32
+  %5 = icmp ult i32 %0, %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; actix-rs/optimized/4lhybxso3b5wvh7r.ll
 ; Function Attrs: nounwind
@@ -121,6 +143,17 @@ entry:
   %3 = call i64 @llvm.umin.i64(i64 range(i64 1, 4294967296) %1, i64 %2)
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = icmp eq i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -170,18 +203,14 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; jemalloc/optimized/arena.ll
-; jemalloc/optimized/arena.pic.ll
-; jemalloc/optimized/arena.sym.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
+; 1 occurrences:
+; linux/optimized/ip6_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = tail call i64 @llvm.umin.i64(i64 %1, i64 %2)
-  %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ult i32 %0, %4
+  %3 = call i64 @llvm.umin.i64(i64 %1, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 

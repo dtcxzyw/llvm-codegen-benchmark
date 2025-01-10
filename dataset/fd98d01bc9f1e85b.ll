@@ -1,11 +1,11 @@
 
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
-%struct.NodeNeighbor.2692241 = type { %struct.MapNode.2692174, i8, %"class.irr::core::vector3d.2692140" }
-%struct.MapNode.2692174 = type { i16, i8, i8 }
-%"class.irr::core::vector3d.2692140" = type { i16, i16, i16 }
-%struct.VirtIOMMIOQueue.2707831 = type { i16, i8, [2 x i32], [2 x i32], [2 x i32] }
-%struct.minstrel_mcs_group_data.3532037 = type { i8, i8, [4 x i16], i16, [10 x %struct.minstrel_rate_stats.3532038] }
-%struct.minstrel_rate_stats.3532038 = type { i16, i16, i16, i16, i32, i32, i16, i16, i8, i8, i8 }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
+%struct.NodeNeighbor.2692207 = type { %struct.MapNode.2692140, i8, %"class.irr::core::vector3d.2692106" }
+%struct.MapNode.2692140 = type { i16, i8, i8 }
+%"class.irr::core::vector3d.2692106" = type { i16, i16, i16 }
+%struct.VirtIOMMIOQueue.2707797 = type { i16, i8, [2 x i32], [2 x i32], [2 x i32] }
+%struct.minstrel_mcs_group_data.3532003 = type { i8, i8, [4 x i16], i16, [10 x %struct.minstrel_rate_stats.3532004] }
+%struct.minstrel_rate_stats.3532004 = type { i16, i16, i16, i16, i32, i32, i16, i16, i8, i8, i8 }
 
 ; 16 occurrences:
 ; brotli/optimized/backward_references.c.ll
@@ -28,7 +28,7 @@
 define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %0, i64 0, i64 %2, i32 0, i64 8
+  %3 = getelementptr nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %0, i64 0, i64 %2, i32 0, i64 8
   ret ptr %3
 }
 
@@ -90,7 +90,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nuw [6 x %struct.NodeNeighbor.2692241], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr nuw [6 x %struct.NodeNeighbor.2692207], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 
@@ -112,7 +112,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr [1024 x %struct.VirtIOMMIOQueue.2707831], ptr %0, i64 0, i64 %2, i32 2
+  %3 = getelementptr [1024 x %struct.VirtIOMMIOQueue.2707797], ptr %0, i64 0, i64 %2, i32 2
   ret ptr %3
 }
 
@@ -124,7 +124,7 @@ entry:
 define ptr @func0000000000000013(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr [42 x %struct.minstrel_mcs_group_data.3532037], ptr %0, i64 0, i64 %2, i32 1
+  %3 = getelementptr [42 x %struct.minstrel_mcs_group_data.3532003], ptr %0, i64 0, i64 %2, i32 1
   ret ptr %3
 }
 

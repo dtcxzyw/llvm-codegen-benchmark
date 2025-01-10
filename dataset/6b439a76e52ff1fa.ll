@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 259 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/cuddUtil.c.ll
@@ -22,6 +22,7 @@
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
+; coreutils-rs/optimized/52j8pvnsrfusu9z8.ll
 ; cpython/optimized/_decimal.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-setopt.ll

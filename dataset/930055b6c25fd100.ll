@@ -1,5 +1,5 @@
 
-%struct.drmp3_L3_gr_info.3790289 = type { ptr, i16, i16, i16, i8, i8, i8, i8, i8, [3 x i8], [3 x i8], [3 x i8], i8, i8, i8, i8 }
+%struct.drmp3_L3_gr_info.3790239 = type { ptr, i16, i16, i16, i8, i8, i8, i8, i8, [3 x i8], [3 x i8], [3 x i8], i8, i8, i8, i8 }
 
 ; 49 occurrences:
 ; abc/optimized/giaEra2.c.ll
@@ -290,7 +290,7 @@ define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.drmp3_L3_gr_info.3790289, ptr %0, i64 %4, i32 7
+  %5 = getelementptr %struct.drmp3_L3_gr_info.3790239, ptr %0, i64 %4, i32 7
   ret ptr %5
 }
 

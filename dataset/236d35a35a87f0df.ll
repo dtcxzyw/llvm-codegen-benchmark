@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcCexTools.c.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lua/optimized/ldebug.ll
 ; openjdk/optimized/cmsalpha.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {

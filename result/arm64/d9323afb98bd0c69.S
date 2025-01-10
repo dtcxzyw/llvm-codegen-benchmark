@@ -12,14 +12,14 @@ func000000000000003f:                   // @func000000000000003f
 	orr	x0, x8, x0, lsl #40
 	ret
                                         // -- End function
-func000000000000003d:                   // @func000000000000003d
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	mov	w8, w2
 	orr	x8, x8, x1, lsl #32
-	orr	x0, x8, x0, lsl #40
+	orr	x0, x8, x0, lsl #48
 	ret
                                         // -- End function
-func000000000000003b:                   // @func000000000000003b
+func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
 	mov	w8, w2
 	orr	x8, x8, x1, lsl #32

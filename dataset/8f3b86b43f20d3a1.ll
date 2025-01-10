@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 142 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/fretMain.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -72,7 +72,6 @@
 ; openjdk/optimized/pngread.ll
 ; openssl/optimized/libcrypto-lib-tasn_enc.ll
 ; openssl/optimized/libcrypto-shlib-tasn_enc.ll
-; php/optimized/crypt_blowfish.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/latch.ll
 ; protobuf/optimized/descriptor.cc.ll

@@ -16,13 +16,14 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/access.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
+; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

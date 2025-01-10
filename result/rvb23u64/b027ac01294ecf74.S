@@ -34,9 +34,3 @@ func00000000000001ff:                   # @func00000000000001ff
 	sh2add	a0, a1, a0
 	sh1add	a0, a2, a0
 	ret
-func00000000000001bf:                   # @func00000000000001bf
-	slli	a2, a2, 1
-	addi	a2, a2, 1
-	sh2add	a0, a1, a0
-	sh1add	a0, a2, a0
-	ret

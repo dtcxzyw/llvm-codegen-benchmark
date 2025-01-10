@@ -1,6 +1,6 @@
 
-%struct.Str_Mux_t_.2877130 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877129] }
-%struct.Str_Edg_t_.2877129 = type { i32, i32, i32, i32 }
+%struct.Str_Mux_t_.2877096 = type { i32, i32, i32, i32, [3 x %struct.Str_Edg_t_.2877095] }
+%struct.Str_Edg_t_.2877095 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/vm.ll
@@ -38,9 +38,9 @@ entry:
 define ptr @func000000000000006b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Str_Mux_t_.2877130, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Str_Mux_t_.2877096, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.Str_Mux_t_.2877130, ptr %4, i64 %5, i32 4, i64 1
+  %6 = getelementptr %struct.Str_Mux_t_.2877096, ptr %4, i64 %5, i32 4, i64 1
   ret ptr %6
 }
 

@@ -14,3 +14,9 @@ func00000000000002a4:                   # @func00000000000002a4
 	cmpq	$4096, %rax                     # imm = 0x1000
 	setb	%al
 	retq
+func00000000000000a8:                   # @func00000000000000a8
+	movslq	%edi, %rax
+	addq	$-19, %rax
+	cmpq	$-15, %rax
+	setb	%al
+	retq

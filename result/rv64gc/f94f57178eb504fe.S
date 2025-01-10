@@ -45,7 +45,7 @@ func0000000000000004:                   # @func0000000000000004
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000002f:                   # @func000000000000002f
+func000000000000002e:                   # @func000000000000002e
 	andi	a3, a1, 1
 	slli	a1, a2, 1
 	bnez	a3, .LBB3_2

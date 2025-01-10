@@ -8,7 +8,7 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm2, %xmm2, %xmm2
+	vpslld	$2, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm2, %xmm0, %xmm0

@@ -1,7 +1,7 @@
 
-%struct.btSymmetricSpatialDyad.2818507 = type { %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504, %class.btMatrix3x3.2818504 }
-%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
-%class.btVector3.2818499 = type { [4 x float] }
+%struct.btSymmetricSpatialDyad.2818473 = type { %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470, %class.btMatrix3x3.2818470 }
+%class.btMatrix3x3.2818470 = type { [3 x %class.btVector3.2818465] }
+%class.btVector3.2818465 = type { [4 x float] }
 
 ; 24 occurrences:
 ; cpython/optimized/ceval.ll
@@ -228,7 +228,7 @@ define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 48
   %3 = sext i32 %1 to i64
-  %4 = getelementptr %struct.btSymmetricSpatialDyad.2818507, ptr %2, i64 %3
+  %4 = getelementptr %struct.btSymmetricSpatialDyad.2818473, ptr %2, i64 %3
   %5 = getelementptr i8, ptr %4, i64 144
   ret ptr %5
 }

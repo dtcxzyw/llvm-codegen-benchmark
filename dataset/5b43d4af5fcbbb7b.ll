@@ -1,5 +1,5 @@
 
-; 393 occurrences:
+; 392 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
@@ -39,7 +39,6 @@
 ; cpython/optimized/compile.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/lexer.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/justification_strategy.cpp.ll

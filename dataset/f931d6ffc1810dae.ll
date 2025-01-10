@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
 ; hyperscan/optimized/stream.c.ll

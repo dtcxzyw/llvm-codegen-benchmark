@@ -48,17 +48,17 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000009:                   # @func0000000000000009
+	vpcmpltud	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000015:                   # @func0000000000000015
 	vpcmpnleud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000019:                   # @func0000000000000019
-	vpcmpltud	%ymm1, %ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000009:                   # @func0000000000000009
 	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

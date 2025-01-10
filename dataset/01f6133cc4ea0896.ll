@@ -1,5 +1,5 @@
 
-%"class.cv::(anonymous namespace)::ufixedpoint16.3781708" = type { i16 }
+%"class.cv::(anonymous namespace)::ufixedpoint16.3781658" = type { i16 }
 
 ; 3 occurrences:
 ; cmake/optimized/divsufsort.c.ll
@@ -38,7 +38,7 @@ entry:
   %2 = call i32 @llvm.smin.i32(i32 %1, i32 0)
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781708", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cv::(anonymous namespace)::ufixedpoint16.3781658", ptr %0, i64 %4
   ret ptr %5
 }
 

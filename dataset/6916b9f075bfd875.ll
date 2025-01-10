@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -28,7 +28,6 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; sqlite/optimized/sqlite3.ll
-; wolfssl/optimized/api.c.ll
 ; yosys/optimized/dfflegalize.ll
 ; z3/optimized/model_implicant.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll

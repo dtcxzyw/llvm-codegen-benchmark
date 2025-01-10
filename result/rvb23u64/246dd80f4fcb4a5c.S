@@ -2,6 +2,10 @@ func000000000000003f:                   # @func000000000000003f
 	add.uw	a1, a2, a1
 	sh3add	a0, a1, a0
 	ret
+func000000000000003d:                   # @func000000000000003d
+	add.uw	a1, a2, a1
+	sh1add	a0, a1, a0
+	ret
 func000000000000003c:                   # @func000000000000003c
 	add.uw	a1, a2, a1
 	slli	a1, a1, 4

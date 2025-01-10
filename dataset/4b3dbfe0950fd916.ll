@@ -20,7 +20,7 @@ entry:
   ret ptr %4
 }
 
-; 662 occurrences:
+; 663 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -86,6 +86,7 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

@@ -1,6 +1,6 @@
 
-%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
-%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
+%union.acpi_object.3547831 = type { %struct.anon.8.3547832 }
+%struct.anon.8.3547832 = type { i32, i32, i64, i32 }
 
 ; 97 occurrences:
 ; clamav/optimized/mew.c.ll
@@ -481,7 +481,7 @@ define ptr @func0000000000000043(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %union.acpi_object.3547831, ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 

@@ -17,10 +17,11 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smax.i64(i64, i64) #1
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; luajit/optimized/minilua.ll
 ; oiio/optimized/thread.cpp.ll
+; openspiel/optimized/goofspiel.cc.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll

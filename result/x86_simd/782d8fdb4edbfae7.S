@@ -23,17 +23,17 @@ func0000000000000002:                   # @func0000000000000002
 	vpmaxuq	%ymm1, %ymm0, %ymm0
 	vpsllq	$3, %ymm0, %ymm0
 	retq
+func000000000000001b:                   # @func000000000000001b
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpmaxuq	%ymm0, %ymm1, %ymm0
+	vpsllq	$4, %ymm0, %ymm0
+	retq
 func0000000000000012:                   # @func0000000000000012
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmaxuq	%ymm1, %ymm0, %ymm0
 	vpsllq	$6, %ymm0, %ymm0
-	retq
-func000000000000001b:                   # @func000000000000001b
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmaxuq	%ymm1, %ymm0, %ymm0
-	vpsllq	$3, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

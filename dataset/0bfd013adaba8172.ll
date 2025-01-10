@@ -1,7 +1,6 @@
 
-%union.anon.2.2633407 = type { [16 x i64] }
-%struct.fp_dch_channel_info_t.3452137 = type { i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
-%struct.vec.1.3496520 = type { double, double }
+%union.anon.2.2633374 = type { [16 x i64] }
+%struct.fp_dch_channel_info_t.3452103 = type { i32, [64 x i32], [64 x i32], i32, [64 x i32], [64 x i32] }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -15,15 +14,17 @@ define ptr @func000000000000004f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 56
   %4 = select i1 %3, i64 60, i64 124
-  %5 = getelementptr nusw nuw [8 x %union.anon.2.2633407], ptr %0, i64 0, i64 %1
+  %5 = getelementptr nusw nuw [8 x %union.anon.2.2633374], ptr %0, i64 0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
 ; wasmtime-rs/optimized/3x26ra3en5gtspzq.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
@@ -43,20 +44,7 @@ define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 4, i64 520
-  %5 = getelementptr [128 x %struct.fp_dch_channel_info_t.3452137], ptr %0, i64 0, i64 %1
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; tinyrenderer/optimized/main.cpp.ll
-; tinyrenderer/optimized/our_gl.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw nuw [2 x %struct.vec.1.3496520], ptr %0, i64 0, i64 %1
+  %5 = getelementptr [128 x %struct.fp_dch_channel_info_t.3452103], ptr %0, i64 0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }

@@ -125,20 +125,20 @@ func000000000000010c:                   // @func000000000000010c
 	cset	w0, hi
 	ret
                                         // -- End function
+func00000000000000cc:                   // @func00000000000000cc
+// %bb.0:                               // %entry
+	mov	w8, #12279                      // =0x2ff7
+	tst	w0, #0xff
+	ccmp	x1, x8, #0, ne
+	cset	w0, lt
+	ret
+                                        // -- End function
 func0000000000000286:                   // @func0000000000000286
 // %bb.0:                               // %entry
 	sxtb	w8, w0
 	cmp	w8, #0
 	ccmp	x1, #19, #2, lt
 	cset	w0, lo
-	ret
-                                        // -- End function
-func00000000000000cc:                   // @func00000000000000cc
-// %bb.0:                               // %entry
-	mov	w8, #8190                       // =0x1ffe
-	tst	w0, #0xff
-	ccmp	x1, x8, #0, ne
-	cset	w0, lt
 	ret
                                         // -- End function
 func00000000000000c1:                   // @func00000000000000c1

@@ -1,21 +1,15 @@
-func0000000000000018:                   # @func0000000000000018
-	vpmovq2m	%ymm2, %k1
+.LCPI0_0:
+	.quad	1                               # 0x1
+func0000000000000004:                   # @func0000000000000004
+	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.quad	1                               # 0x1
-func0000000000000004:                   # @func0000000000000004
-	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpmovqd	%ymm1, %xmm0
-	vzeroupper
-	retq
-.LCPI2_0:
-	.quad	1                               # 0x1
 func0000000000000007:                   # @func0000000000000007
-	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
+	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper
@@ -29,6 +23,12 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000028:                   # @func0000000000000028
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtq	%ymm3, %ymm2, %k1
+	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vpmovqd	%ymm1, %xmm0
+	vzeroupper
+	retq
+func0000000000000018:                   # @func0000000000000018
+	vpmovq2m	%ymm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper

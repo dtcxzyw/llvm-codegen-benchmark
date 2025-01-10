@@ -1,3 +1,10 @@
+func00000000000000c6:                   # @func00000000000000c6
+	sext.b	a0, a0
+	sext.b	a1, a1
+	sgtz	a1, a1
+	slti	a0, a0, 1
+	and	a0, a0, a1
+	ret
 func0000000000000034:                   # @func0000000000000034
 	andi	a0, a0, 255
 	andi	a1, a1, 255

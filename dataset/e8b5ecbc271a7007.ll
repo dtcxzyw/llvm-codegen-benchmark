@@ -46,16 +46,21 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 10 occurrences:
+; 15 occurrences:
 ; boost/optimized/message.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cmake/optimized/zstd_compress.c.ll
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {

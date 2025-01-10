@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; boost/optimized/any_params_iter.ll
 ; boost/optimized/any_segments_iter.ll
 ; boost/optimized/format_args.ll
@@ -53,7 +53,6 @@
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/rootChunkArea.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll

@@ -1,5 +1,5 @@
 
-%class.btVector3.2818499 = type { [4 x float] }
+%class.btVector3.2818465 = type { [4 x float] }
 
 ; 3 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -8,10 +8,10 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = getelementptr nusw %class.btVector3.2818499, ptr %1, i64 %0
-  %4 = getelementptr nusw %class.btVector3.2818499, ptr %3, i64 %0
+  %3 = getelementptr nusw %class.btVector3.2818465, ptr %1, i64 %0
+  %4 = getelementptr nusw %class.btVector3.2818465, ptr %3, i64 %0
   %5 = sext i32 %2 to i64
-  %6 = getelementptr %class.btVector3.2818499, ptr %4, i64 %5
+  %6 = getelementptr %class.btVector3.2818465, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
 }

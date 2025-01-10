@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 229 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; assimp/optimized/unzip.c.ll
 ; boost/optimized/message.ll
@@ -24,6 +24,7 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; git/optimized/sha256.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -239,114 +240,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 98 occurrences:
-; arrow/optimized/kernel.cc.ll
-; boost/optimized/static_string.ll
-; brotli/optimized/compress_fragment.c.ll
-; brotli/optimized/compress_fragment_two_pass.c.ll
-; brotli/optimized/static_dict.c.ll
-; clamav/optimized/fmap.c.ll
-; cmake/optimized/cmSystemTools.cxx.ll
-; darktable/optimized/DngOpcodes.cpp.ll
-; darktable/optimized/NikonDecompressor.cpp.ll
-; darktable/optimized/PanasonicV7Decompressor.cpp.ll
-; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_colorreconstruction.c.ll
-; darktable/optimized/introspection_diffuse.c.ll
-; darktable/optimized/introspection_filmicrgb.c.ll
-; darktable/optimized/introspection_highlights.c.ll
-; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
-; faiss/optimized/hamming.cpp.ll
-; folly/optimized/DeterministicSchedule.cpp.ll
-; hermes/optimized/Path.cpp.ll
-; hyperscan/optimized/noodle_engine.c.ll
-; libquic/optimized/d1_both.c.ll
-; lief/optimized/ssl_msg.c.ll
-; linux/optimized/blk-merge.ll
-; linux/optimized/compaction.ll
-; linux/optimized/indirect.ll
-; linux/optimized/pt.ll
-; linux/optimized/scm.ll
-; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
-; llvm/optimized/CocoaConventions.cpp.ll
-; llvm/optimized/ExprMutationAnalyzer.cpp.ll
-; llvm/optimized/FormatTokenLexer.cpp.ll
-; llvm/optimized/PPDirectives.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/TypeRecordMapping.cpp.ll
-; luajit/optimized/minilua.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; openusd/optimized/sdfdump.cpp.ll
-; openusd/optimized/sdffilter.cpp.ll
-; openusd/optimized/testSdfPathThreading.cpp.ll
-; openusd/optimized/testUsdStageThreading.cpp.ll
-; openusd/optimized/usdcat.cpp.ll
-; openusd/optimized/usdtree.cpp.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
-; pbrt-v4/optimized/camera.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/math.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; pbrt-v4/optimized/spectrum.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
-; pbrt-v4/optimized/surfscatter.cpp.ll
-; postgres/optimized/varbit.ll
-; quantlib/optimized/andreasenhugevolatilityinterpl.ll
-; quantlib/optimized/convolvedstudentt.ll
-; quantlib/optimized/discounter.ll
-; quantlib/optimized/evolutiondescription.ll
-; quantlib/optimized/exponentialfittinghestonengine.ll
-; quantlib/optimized/fdm2dblackscholesop.ll
-; quantlib/optimized/fdmbatesop.ll
-; quantlib/optimized/fdmblackscholesfwdop.ll
-; quantlib/optimized/fdmblackscholesop.ll
-; quantlib/optimized/fdmcevop.ll
-; quantlib/optimized/fdmcirop.ll
-; quantlib/optimized/fdmdupire1dop.ll
-; quantlib/optimized/fdmextendedornsteinuhlenbeckop.ll
-; quantlib/optimized/fdmextoujumpop.ll
-; quantlib/optimized/fdmg2op.ll
-; quantlib/optimized/fdmhestonfwdop.ll
-; quantlib/optimized/fdmhestonhullwhiteop.ll
-; quantlib/optimized/fdmhestonop.ll
-; quantlib/optimized/fdmhullwhiteop.ll
-; quantlib/optimized/fdmklugeextouop.ll
-; quantlib/optimized/fdmlocalvolfwdop.ll
-; quantlib/optimized/fdmornsteinuhlenbeckop.ll
-; quantlib/optimized/fdmsabrop.ll
-; quantlib/optimized/fdmsquarerootfwdop.ll
-; quantlib/optimized/fdmzabrop.ll
-; quantlib/optimized/laplaceinterpolation.ll
-; quantlib/optimized/localvolrndcalculator.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/mchimalayaengine.ll
-; quantlib/optimized/pathwisediscounter.ll
-; quest/optimized/QuEST_cpu.c.ll
-; redis/optimized/expire.ll
-; redis/optimized/lstrlib.ll
-; redis/optimized/setproctitle.ll
-; ruby/optimized/vm_backtrace.ll
-; sentencepiece/optimized/stringpiece.cc.ll
-; sentencepiece/optimized/trainer_interface.cc.ll
-; spike/optimized/debug_module.ll
-; tls-rs/optimized/2xhpv4vf07do7r8g.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 1
-  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
-  ret i64 %3
-}
-
-; 440 occurrences:
+; 449 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
@@ -367,6 +261,7 @@ entry:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
 ; cjson/optimized/cJSON.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/extinfo.cpp.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -375,6 +270,7 @@ entry:
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmWindowsRegistry.cxx.ll
 ; cmake/optimized/core.c.ll
+; cmake/optimized/deflate.c.ll
 ; cmake/optimized/dynhds.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
@@ -606,6 +502,7 @@ entry:
 ; luau/optimized/lobject.cpp.ll
 ; lvgl/optimized/lv_string_builtin.ll
 ; lz4/optimized/lz4frame.c.ll
+; lz4/optimized/lz4hc.c.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/io_json.cpp.ll
@@ -696,6 +593,7 @@ entry:
 ; opencv/optimized/end_to_end_recognition.cpp.ll
 ; opencv/optimized/tr_icdar_benchmark.cpp.ll
 ; opencv/optimized/tr_svt_benchmark.cpp.ll
+; openjdk/optimized/jdmarker.ll
 ; openjdk/optimized/ps_proc.ll
 ; openmpi/optimized/pml_ob1_isend.ll
 ; openmpi/optimized/pml_ob1_progress.ll
@@ -707,7 +605,9 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ec_mult.ll
 ; openusd/optimized/resolver.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/spectrum.cpp.ll
 ; php/optimized/html.ll
 ; php/optimized/php_cli_server.ll
@@ -774,6 +674,7 @@ entry:
 ; rocksdb/optimized/write_prepared_txn.cc.ll
 ; rocksdb/optimized/write_prepared_txn_db.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
+; ruby/optimized/bignum.ll
 ; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
 ; spike/optimized/interactive.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
@@ -781,17 +682,126 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmedge/optimized/argument_parser.cpp.ll
+; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/to_str.c.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; xgboost/optimized/json.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 1
-  %3 = tail call i64 @llvm.umin.i64(i64 %2, i64 %0)
+  %2 = add i64 %1, -1
+  %3 = call i64 @llvm.umin.i64(i64 %2, i64 %0)
+  ret i64 %3
+}
+
+; 98 occurrences:
+; arrow/optimized/kernel.cc.ll
+; boost/optimized/static_string.ll
+; brotli/optimized/compress_fragment.c.ll
+; brotli/optimized/compress_fragment_two_pass.c.ll
+; brotli/optimized/static_dict.c.ll
+; clamav/optimized/fmap.c.ll
+; cmake/optimized/cmSystemTools.cxx.ll
+; darktable/optimized/DngOpcodes.cpp.ll
+; darktable/optimized/NikonDecompressor.cpp.ll
+; darktable/optimized/PanasonicV7Decompressor.cpp.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_colorreconstruction.c.ll
+; darktable/optimized/introspection_diffuse.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; faiss/optimized/hamming.cpp.ll
+; folly/optimized/DeterministicSchedule.cpp.ll
+; hermes/optimized/Path.cpp.ll
+; hyperscan/optimized/noodle_engine.c.ll
+; libquic/optimized/d1_both.c.ll
+; lief/optimized/ssl_msg.c.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/compaction.ll
+; linux/optimized/indirect.ll
+; linux/optimized/pt.ll
+; linux/optimized/scm.ll
+; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
+; llvm/optimized/CocoaConventions.cpp.ll
+; llvm/optimized/ExprMutationAnalyzer.cpp.ll
+; llvm/optimized/FormatTokenLexer.cpp.ll
+; llvm/optimized/PPDirectives.cpp.ll
+; llvm/optimized/RISCVISAInfo.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/TypeRecordMapping.cpp.ll
+; luajit/optimized/minilua.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; oiio/optimized/hdrinput.cpp.ll
+; openusd/optimized/sdfdump.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/testSdfPathThreading.cpp.ll
+; openusd/optimized/testUsdStageThreading.cpp.ll
+; openusd/optimized/usdcat.cpp.ll
+; openusd/optimized/usdtree.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/math.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/spectrum.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
+; pbrt-v4/optimized/surfscatter.cpp.ll
+; postgres/optimized/varbit.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/convolvedstudentt.ll
+; quantlib/optimized/discounter.ll
+; quantlib/optimized/evolutiondescription.ll
+; quantlib/optimized/exponentialfittinghestonengine.ll
+; quantlib/optimized/fdm2dblackscholesop.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmblackscholesfwdop.ll
+; quantlib/optimized/fdmblackscholesop.ll
+; quantlib/optimized/fdmcevop.ll
+; quantlib/optimized/fdmcirop.ll
+; quantlib/optimized/fdmdupire1dop.ll
+; quantlib/optimized/fdmextendedornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmextoujumpop.ll
+; quantlib/optimized/fdmg2op.ll
+; quantlib/optimized/fdmhestonfwdop.ll
+; quantlib/optimized/fdmhestonhullwhiteop.ll
+; quantlib/optimized/fdmhestonop.ll
+; quantlib/optimized/fdmhullwhiteop.ll
+; quantlib/optimized/fdmklugeextouop.ll
+; quantlib/optimized/fdmlocalvolfwdop.ll
+; quantlib/optimized/fdmornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmsabrop.ll
+; quantlib/optimized/fdmsquarerootfwdop.ll
+; quantlib/optimized/fdmzabrop.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/mchimalayaengine.ll
+; quantlib/optimized/pathwisediscounter.ll
+; quest/optimized/QuEST_cpu.c.ll
+; redis/optimized/expire.ll
+; redis/optimized/lstrlib.ll
+; redis/optimized/setproctitle.ll
+; ruby/optimized/vm_backtrace.ll
+; sentencepiece/optimized/stringpiece.cc.ll
+; sentencepiece/optimized/trainer_interface.cc.ll
+; spike/optimized/debug_module.ll
+; tls-rs/optimized/2xhpv4vf07do7r8g.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 1
+  %3 = tail call i64 @llvm.umin.i64(i64 %0, i64 %2)
   ret i64 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 79 occurrences:
 ; abc/optimized/aigRepr.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcBmc2.c.ll
@@ -13,7 +13,6 @@
 ; git/optimized/parse.ll
 ; git/optimized/revision.ll
 ; glslang/optimized/iomapper.cpp.ll
-; hyperscan/optimized/repeat.c.ll
 ; jq/optimized/jv.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/intel_color.ll
@@ -68,7 +67,6 @@
 ; ruby/optimized/process.ll
 ; ruby/optimized/ractor.ll
 ; ruby/optimized/range.ll
-; ruby/optimized/rational.ll
 ; ruby/optimized/ripper_init.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/strscan.ll

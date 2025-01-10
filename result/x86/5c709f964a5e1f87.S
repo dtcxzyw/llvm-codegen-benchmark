@@ -4,12 +4,9 @@ func0000000000000041:                   # @func0000000000000041
 	setae	%al
 	retq
 func000000000000004c:                   # @func000000000000004c
-	movq	%rsi, %rcx
-	movl	%edi, %eax
-	andb	$7, %cl
-	shrb	%cl, %al
-	andb	$2, %al
-	shrb	%al
+	andl	$7, %esi
+	btl	%esi, %edi
+	setb	%al
 	retq
 func000000000000014c:                   # @func000000000000014c
 	andl	$7, %esi

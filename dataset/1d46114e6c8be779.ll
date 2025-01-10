@@ -13,10 +13,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/intel_pch_refclk.ll
-; linux/optimized/rtmutex_api.ll
 ; linux/optimized/usblp.ll
 ; minetest/optimized/test_servermodmanager.cpp.ll
 ; wireshark/optimized/packet-csn1.c.ll

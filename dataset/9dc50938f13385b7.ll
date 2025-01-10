@@ -1,7 +1,7 @@
 
-%"class.cv::Complex.13.3754032" = type { float, float }
-%"struct.cv::ChessBoardCorner.3765959" = type { %"class.cv::Point_.3765933", i32, i32, [4 x ptr] }
-%"class.cv::Point_.3765933" = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
+%"struct.cv::ChessBoardCorner.3765909" = type { %"class.cv::Point_.3765883", i32, i32, [4 x ptr] }
+%"class.cv::Point_.3765883" = type { float, float }
 
 ; 12 occurrences:
 ; ncnn/optimized/interp_x86.cpp.ll
@@ -181,8 +181,8 @@ define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"class.cv::Complex.13.3754032", ptr %0, i64 %1
-  %6 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %5, i64 %4, i32 1
+  %5 = getelementptr nusw %"class.cv::Complex.13.3753982", ptr %0, i64 %1
+  %6 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 
@@ -193,8 +193,8 @@ define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %1
-  %6 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %5, i64 %4, i32 1
+  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %1
+  %6 = getelementptr nuw %"class.cv::Complex.13.3753982", ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 
@@ -205,8 +205,8 @@ define ptr @func0000000000000043(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.cv::ChessBoardCorner.3765959", ptr %0, i64 %1
-  %6 = getelementptr %"struct.cv::ChessBoardCorner.3765959", ptr %5, i64 %4, i32 1
+  %5 = getelementptr %"struct.cv::ChessBoardCorner.3765909", ptr %0, i64 %1
+  %6 = getelementptr %"struct.cv::ChessBoardCorner.3765909", ptr %5, i64 %4, i32 1
   ret ptr %6
 }
 

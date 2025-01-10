@@ -457,10 +457,9 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
 ; opencv/optimized/fast.cpp.ll

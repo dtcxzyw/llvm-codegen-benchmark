@@ -1,6 +1,6 @@
 
-%struct.TCGArgConstraint.2707243 = type <{ i40, i32 }>
-%struct.rcLayerRegion.3108530 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
+%struct.TCGArgConstraint.2707209 = type <{ i40, i32 }>
+%struct.rcLayerRegion.3108496 = type { [63 x i8], [16 x i8], i16, i16, i8, i8, i8, i8 }
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -25,9 +25,9 @@
 define ptr @func0000000000000000(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %struct.TCGArgConstraint.2707243, ptr %0, i64 %3
+  %4 = getelementptr %struct.TCGArgConstraint.2707209, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr %struct.TCGArgConstraint.2707243, ptr %4, i64 %5
+  %6 = getelementptr %struct.TCGArgConstraint.2707209, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -156,7 +156,7 @@ entry:
 define ptr @func000000000000001f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw nuw %struct.rcLayerRegion.3108530, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.rcLayerRegion.3108496, ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
   %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6

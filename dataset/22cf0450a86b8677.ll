@@ -708,7 +708,7 @@ entry:
   ret i64 %3
 }
 
-; 1295 occurrences:
+; 1296 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -1379,6 +1379,7 @@ entry:
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
 ; lvgl/optimized/lv_cache.ll
 ; lvgl/optimized/lv_fs.ll
@@ -2647,7 +2648,7 @@ entry:
   ret i64 %3
 }
 
-; 543 occurrences:
+; 542 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/fraSim.c.ll
@@ -2917,7 +2918,6 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll

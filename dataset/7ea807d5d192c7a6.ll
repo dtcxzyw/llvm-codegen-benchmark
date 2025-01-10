@@ -1,13 +1,10 @@
 
-; 36 occurrences:
+; 31 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; boost/optimized/static_string.ll
 ; clamav/optimized/unzip.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
@@ -25,8 +22,6 @@
 ; openjdk/optimized/whitebox.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; re2/optimized/simplify.cc.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/adaptive.cc.ll

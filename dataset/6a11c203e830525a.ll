@@ -1,5 +1,5 @@
 
-; 430 occurrences:
+; 431 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -165,6 +165,7 @@
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; entt/optimized/group.cpp.ll
 ; entt/optimized/observer.cpp.ll

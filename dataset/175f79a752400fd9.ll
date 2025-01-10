@@ -1,5 +1,5 @@
 
-; 278 occurrences:
+; 277 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/3ueqfq5tvn084yrz.ll
 ; arrow/optimized/decimal.cc.ll
@@ -105,7 +105,6 @@
 ; brotli/optimized/decode.c.ll
 ; casadi/optimized/getnonzeros.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
-; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
@@ -332,7 +331,7 @@ entry:
   ret i1 %5
 }
 
-; 143 occurrences:
+; 142 occurrences:
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; git/optimized/diff.ll
@@ -346,7 +345,6 @@ entry:
 ; linux/optimized/calibrate.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/setup.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll

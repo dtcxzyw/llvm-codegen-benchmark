@@ -455,7 +455,7 @@ entry:
   ret i1 %2
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; grpc/optimized/backoff.cc.ll
 ; grpc/optimized/channel_idle_filter.cc.ll
@@ -468,6 +468,7 @@ entry:
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
+; openjdk/optimized/zDirector.ll
 ; postgres/optimized/costsize.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/analytic_discr_geom_av_price.ll

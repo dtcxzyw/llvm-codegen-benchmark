@@ -30,17 +30,5 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.smin.i64(i64, i64) #1
 
-; 1 occurrences:
-; tinympc/optimized/tiny_api.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
-  %3 = sdiv i64 %2, 4
-  %4 = shl nsw i64 %3, 2
-  %5 = icmp sge i64 %4, %2
-  ret i1 %5
-}
-
 attributes #0 = { nounwind }
 attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

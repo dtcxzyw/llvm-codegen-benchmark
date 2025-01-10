@@ -442,7 +442,7 @@ entry:
   ret i64 %3
 }
 
-; 42 occurrences:
+; 44 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/cmddata.cpp.ll
@@ -455,6 +455,7 @@ entry:
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
+; git/optimized/sequencer.ll
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; grpc/optimized/alts_grpc_record_protocol_common.cc.ll
 ; grpc/optimized/parser.cc.ll
@@ -481,6 +482,7 @@ entry:
 ; openusd/optimized/noticeBatchingSceneIndex.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; postgres/optimized/regexec.ll
+; postgres/optimized/varlena.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/maxu.ll
@@ -493,13 +495,14 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; boost/optimized/approximately_equals.ll
 ; git/optimized/bitmap.ll
 ; git/optimized/diff.ll
+; git/optimized/line-log.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; Function Attrs: nounwind

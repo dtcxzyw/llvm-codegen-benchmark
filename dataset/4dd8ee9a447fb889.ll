@@ -96,8 +96,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; yosys/optimized/memlib.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
@@ -252,6 +253,17 @@ entry:
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %0, %1
   %5 = icmp slt i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 9223372036854775804
+  %4 = add nuw i64 %0, %1
+  %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }
 

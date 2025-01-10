@@ -44,8 +44,7 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
-; cpython/optimized/pystrtod.ll
+; 22 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

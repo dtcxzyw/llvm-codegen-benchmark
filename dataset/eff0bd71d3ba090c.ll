@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; icu/optimized/ucnvmbcs.ll
@@ -32,6 +32,7 @@
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
+; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/Ushort555Rgbx.ll

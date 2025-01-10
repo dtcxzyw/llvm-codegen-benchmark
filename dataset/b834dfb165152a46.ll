@@ -1,8 +1,8 @@
 
-%"class.openvdb::v11_0::math::Vec3.236.2716960" = type { %"class.openvdb::v11_0::math::Tuple.237.2716961" }
-%"class.openvdb::v11_0::math::Tuple.237.2716961" = type { [3 x float] }
-%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389" = type { i32, i32, float }
-%class.QCPCurveData.3451174 = type { double, double, double }
+%"class.openvdb::v11_0::math::Vec3.236.2716926" = type { %"class.openvdb::v11_0::math::Tuple.237.2716927" }
+%"class.openvdb::v11_0::math::Tuple.237.2716927" = type { [3 x float] }
+%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423355" = type { i32, i32, float }
+%class.QCPCurveData.3451140 = type { double, double, double }
 
 ; 29 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -40,7 +40,7 @@ entry:
   %2 = sdiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr nusw %"class.openvdb::v11_0::math::Vec3.236.2716960", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.openvdb::v11_0::math::Vec3.236.2716926", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -55,7 +55,7 @@ entry:
   %2 = sdiv i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr nusw %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389", ptr %0, i64 %4
+  %5 = getelementptr nusw %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423355", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -67,7 +67,7 @@ entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = getelementptr %class.QCPCurveData.3451174, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPCurveData.3451140, ptr %0, i64 %4
   ret ptr %5
 }
 

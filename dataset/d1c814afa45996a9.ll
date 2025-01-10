@@ -1,6 +1,6 @@
 
-%struct.MinimapPixel.2700202 = type { %struct.MapNode.2700203, i16, i16 }
-%struct.MapNode.2700203 = type { i16, i8, i8 }
+%struct.MinimapPixel.2700168 = type { %struct.MapNode.2700169, i16, i16 }
+%struct.MapNode.2700169 = type { i16, i8, i8 }
 
 ; 122 occurrences:
 ; abc/optimized/compress.c.ll
@@ -147,7 +147,7 @@ define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw [256 x %struct.MinimapPixel.2700202], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x %struct.MinimapPixel.2700168], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -165,9 +165,44 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 38 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; meshlab/optimized/TexturePainter.cpp.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/alignset.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/coordinateframe.cpp.ll
+; meshlab/optimized/cubemap.cpp.ll
+; meshlab/optimized/decorate_background.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_manipulators.cpp.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/edit_sample.cpp.ll
+; meshlab/optimized/edit_select.cpp.ll
+; meshlab/optimized/filter_camera.cpp.ll
+; meshlab/optimized/filter_color_projection.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/ml_default_decorators.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/ml_selection_buffers.cpp.ll
+; meshlab/optimized/parameters.cpp.ll
+; meshlab/optimized/shadow_mapping.cpp.ll
+; meshlab/optimized/ssao.cpp.ll
+; meshlab/optimized/trackball.cpp.ll
+; meshlab/optimized/trackmode.cpp.ll
+; meshlab/optimized/variance_shadow_mapping.cpp.ll
+; meshlab/optimized/variance_shadow_mapping_blur.cpp.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
@@ -235,51 +270,6 @@ entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw i64 %1, %3
   %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 35 occurrences:
-; meshlab/optimized/TexturePainter.cpp.ll
-; meshlab/optimized/VisibilityCheck.cpp.ll
-; meshlab/optimized/alignset.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/coordinateframe.cpp.ll
-; meshlab/optimized/cubemap.cpp.ll
-; meshlab/optimized/decorate_background.cpp.ll
-; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_manipulators.cpp.ll
-; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/edit_sample.cpp.ll
-; meshlab/optimized/edit_select.cpp.ll
-; meshlab/optimized/filter_camera.cpp.ll
-; meshlab/optimized/filter_color_projection.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/glarea.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/ml_default_decorators.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; meshlab/optimized/ml_selection_buffers.cpp.ll
-; meshlab/optimized/parameters.cpp.ll
-; meshlab/optimized/shadow_mapping.cpp.ll
-; meshlab/optimized/ssao.cpp.ll
-; meshlab/optimized/trackball.cpp.ll
-; meshlab/optimized/trackmode.cpp.ll
-; meshlab/optimized/variance_shadow_mapping.cpp.ll
-; meshlab/optimized/variance_shadow_mapping_blur.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 2
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw nuw [16 x double], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

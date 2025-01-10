@@ -122,7 +122,7 @@ entry:
   ret i16 %3
 }
 
-; 133 occurrences:
+; 132 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -131,7 +131,6 @@ entry:
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/infblock.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll

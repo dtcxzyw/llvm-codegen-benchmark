@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; cmake/optimized/cmWindowsRegistry.cxx.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -58,6 +58,7 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmedge/optimized/argument_parser.cpp.ll
+; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

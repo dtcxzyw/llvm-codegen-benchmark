@@ -1,5 +1,5 @@
 
-; 316 occurrences:
+; 312 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -61,7 +61,6 @@
 ; git/optimized/index-pack.ll
 ; git/optimized/log.ll
 ; git/optimized/range-diff.ll
-; git/optimized/read-cache.ll
 ; git/optimized/rebase.ll
 ; git/optimized/receive-pack.ll
 ; git/optimized/repack.ll
@@ -156,7 +155,6 @@
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; openexr/optimized/ImfImage.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
 ; openjdk/optimized/DefaultProxySelector.ll
@@ -232,8 +230,6 @@
 ; openusd/optimized/reconinter.c.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_match.ll
 ; postgres/optimized/gistxlog.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; postgres/optimized/mvdistinct.ll

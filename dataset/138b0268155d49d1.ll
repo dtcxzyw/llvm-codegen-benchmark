@@ -1,5 +1,5 @@
 
-%"class.irr::video::SColor.2693410" = type { i32 }
+%"class.irr::video::SColor.2693376" = type { i32 }
 
 ; 3 occurrences:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
@@ -68,7 +68,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %1, null
   %5 = select i1 %4, ptr %3, ptr %1
-  %6 = getelementptr nusw nuw %"class.irr::video::SColor.2693410", ptr %5, i64 %0
+  %6 = getelementptr nusw nuw %"class.irr::video::SColor.2693376", ptr %5, i64 %0
   ret ptr %6
 }
 

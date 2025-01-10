@@ -551,8 +551,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/zip.c.ll
+; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; hermes/optimized/zip.c.ll
 ; jq/optimized/jv_dtoa.ll

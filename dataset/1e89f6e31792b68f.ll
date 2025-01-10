@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181429" = type { ptr, ptr, ptr, ptr }
 
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -27,9 +27,9 @@ define ptr @func00000000000001aa(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -24
-  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3181429", ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -32
-  %7 = getelementptr nusw %"class.llvm::Use.3181463", ptr %6, i64 %0
+  %7 = getelementptr nusw %"class.llvm::Use.3181429", ptr %6, i64 %0
   ret ptr %7
 }
 

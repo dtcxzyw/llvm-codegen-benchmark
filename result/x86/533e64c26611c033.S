@@ -1,9 +1,3 @@
-func000000000000002a:                   # @func000000000000002a
-	andl	$1, %esi
-	orl	$-6, %esi
-	cmpl	%edi, %esi
-	setg	%al
-	retq
 func0000000000000038:                   # @func0000000000000038
 	andl	$224, %esi
 	orl	$4, %esi

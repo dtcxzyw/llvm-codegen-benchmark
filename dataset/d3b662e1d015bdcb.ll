@@ -69,12 +69,10 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; icu/optimized/ubidiln.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
@@ -89,18 +87,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483647
-  %3 = trunc i64 %0 to i32
-  %4 = add i32 %2, %3
-  ret i32 %4
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483647
   %3 = trunc i64 %0 to i32

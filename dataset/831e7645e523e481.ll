@@ -19,7 +19,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; cmake/optimized/deflate.c.ll
@@ -30,6 +30,7 @@ declare i32 @llvm.umin.i32(i32, i32) #1
 ; linux/optimized/evdev.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hidraw.ll
+; linux/optimized/vc_screen.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/ArgList.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll

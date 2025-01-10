@@ -41,30 +41,10 @@ func0000000000000058:                   # @func0000000000000058
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
-	.long	96                              # 0x60
-.LCPI4_1:
-	.long	3                               # 0x3
-func000000000000010c:                   # @func000000000000010c
-	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm2, %k0
-	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k1
-	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
-	retq
-.LCPI5_0:
-	.long	1                               # 0x1
-func000000000000004c:                   # @func000000000000004c
-	vptestnmd	%ymm2, %ymm2, %k0
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vmovdqa	%ymm1, %ymm0
-	retq
-.LCPI6_0:
 	.long	2097151                         # 0x1fffff
 func0000000000000050:                   # @func0000000000000050
 	vptestnmd	%ymm2, %ymm2, %k0
-	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm1, %k1
+	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	korb	%k0, %k1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa32	%ymm0, %ymm1 {%k1}

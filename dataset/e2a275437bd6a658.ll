@@ -1,8 +1,8 @@
 
-%"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451586" = type { %"union.std::aligned_storage<40, 8>::type.3451587" }
-%"union.std::aligned_storage<40, 8>::type.3451587" = type { [40 x i8] }
-%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
-%union.Value.3660450 = type { ptr }
+%"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451552" = type { %"union.std::aligned_storage<40, 8>::type.3451553" }
+%"union.std::aligned_storage<40, 8>::type.3451553" = type { [40 x i8] }
+%struct.lua_TValue.3660399 = type { %union.Value.3660400, i32 }
+%union.Value.3660400 = type { ptr }
 
 ; 9 occurrences:
 ; boost/optimized/static_string.ll
@@ -686,7 +686,7 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr %"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451586", ptr %1, i64 %3
+  %4 = getelementptr %"struct.QHashPrivate::Span<QCache<unsigned int, QList<QString>>::Node>::Entry.3451552", ptr %1, i64 %3
   %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
@@ -732,7 +732,7 @@ entry:
 define i1 @func0000000000000068(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw nuw %struct.lua_TValue.3660449, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %struct.lua_TValue.3660399, ptr %1, i64 %3
   %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }

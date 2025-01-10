@@ -106,8 +106,8 @@ func0000000000000078:                   // @func0000000000000078
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	x8, x2, #7
-	cmp	x1, #7
+	add	x8, x2, #16
+	cmp	x1, #0
 	csel	x0, x8, x0, lt
 	ret
                                         // -- End function

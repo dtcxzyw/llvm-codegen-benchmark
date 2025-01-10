@@ -1,12 +1,12 @@
 
-%"struct.rocksdb::LevelFilesBrief.2614445" = type { i64, ptr }
-%"struct.ncnn::custom_layer_registry_entry.2749800" = type { ptr, ptr, ptr, ptr }
-%"class.std::vector.0.2833588" = type { %"struct.std::_Vector_base.1.2833589" }
-%"struct.std::_Vector_base.1.2833589" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833590" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833590" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833591" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833591" = type { ptr, ptr, ptr }
+%"struct.rocksdb::LevelFilesBrief.2614412" = type { i64, ptr }
+%"struct.ncnn::custom_layer_registry_entry.2749766" = type { ptr, ptr, ptr, ptr }
+%"class.std::vector.0.2833554" = type { %"struct.std::_Vector_base.1.2833555" }
+%"struct.std::_Vector_base.1.2833555" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833556" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2833556" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833557" }
+%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2833557" = type { ptr, ptr, ptr }
 
-; 495 occurrences:
+; 497 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -86,6 +86,7 @@
 ; gromacs/optimized/fft5d.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/gmx_dielectric.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
@@ -95,6 +96,7 @@
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
+; gromacs/optimized/toppush.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/dbgutil.ll
@@ -1143,7 +1145,7 @@ entry:
   ret ptr %4
 }
 
-; 1620 occurrences:
+; 1630 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -1180,6 +1182,7 @@ entry:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
+; abc/optimized/acecRe.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/aigScl.c.ll
@@ -1263,6 +1266,7 @@ entry:
 ; abc/optimized/giaUnate.c.ll
 ; abc/optimized/gzwrite.c.ll
 ; abc/optimized/hopBalance.c.ll
+; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
@@ -1285,6 +1289,7 @@ entry:
 ; abc/optimized/lucky.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/mfsMan.c.ll
+; abc/optimized/mfsResub.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMap.c.ll
 ; abc/optimized/msatVec.c.ll
@@ -1296,6 +1301,7 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sclDnsize.c.ll
@@ -1355,6 +1361,7 @@ entry:
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btHashedSimplePairCache.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btMLCPSolver.ll
@@ -1531,6 +1538,7 @@ entry:
 ; git/optimized/tree-walk.ll
 ; git/optimized/xhistogram.ll
 ; git/optimized/xpatience.ll
+; git/optimized/xutils.ll
 ; glslang/optimized/Pp.cpp.ll
 ; glslang/optimized/PpAtom.cpp.ll
 ; glslang/optimized/PpScanner.cpp.ll
@@ -1837,6 +1845,7 @@ entry:
 ; icu/optimized/ucasemap.ll
 ; icu/optimized/uchriter.ll
 ; icu/optimized/ucmndata.ll
+; icu/optimized/ucnv_err.ll
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/ucnvhz.ll
 ; icu/optimized/ucnvsel.ll
@@ -1887,6 +1896,7 @@ entry:
 ; libjpeg-turbo/optimized/cjpeg.c.ll
 ; libjpeg-turbo/optimized/djpeg.c.ll
 ; libjpeg-turbo/optimized/example.c.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libjpeg-turbo/optimized/jpegtran.c.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
@@ -2017,6 +2027,7 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lua/optimized/lcode.ll
 ; lua/optimized/ldebug.ll
@@ -2499,6 +2510,7 @@ entry:
 ; openmpi/optimized/schizo_base_stubs.ll
 ; openmpi/optimized/schizo_ompi.ll
 ; openmpi/optimized/state_base_options.ll
+; openmpi/optimized/test_overhead.ll
 ; openmpi/optimized/tm_bucket.ll
 ; openmpi/optimized/tm_topology.ll
 ; openmpi/optimized/tm_tree.ll
@@ -2953,10 +2965,8 @@ entry:
   ret ptr %4
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
-; gromacs/optimized/gmx_chi.cpp.ll
-; gromacs/optimized/toppush.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
@@ -2983,23 +2993,16 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"struct.rocksdb::LevelFilesBrief.2614445", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.rocksdb::LevelFilesBrief.2614412", ptr %0, i64 %3
   ret ptr %4
 }
 
-; 97 occurrences:
+; 81 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
-; abc/optimized/acecFadds.c.ll
-; abc/optimized/acecRe.c.ll
 ; abc/optimized/bblif.c.ll
-; abc/optimized/dauMerge.c.ll
-; abc/optimized/ifDec07.c.ll
 ; abc/optimized/kitPla.c.ll
-; abc/optimized/mfsResub.c.ll
-; abc/optimized/sbdSat.c.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; boost/optimized/conversion.ll
-; bullet3/optimized/btGjkPairDetector.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
@@ -3023,18 +3026,14 @@ entry:
 ; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
 ; cmake/optimized/cpack.cxx.ll
-; git/optimized/xutils.ll
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/dlist.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
-; icu/optimized/ucnv_err.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libzmq/optimized/ctx.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -3044,7 +3043,6 @@ entry:
 ; ncnn/optimized/pooling3d.cpp.ll
 ; nix/optimized/fromTOML.ll
 ; node/optimized/libnode.node_sea.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bitarray.cpp.ll
 ; opencv/optimized/blenders.cpp.ll
@@ -3060,7 +3058,6 @@ entry:
 ; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
-; openmpi/optimized/test_overhead.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/hearts.cc.ll
@@ -3075,11 +3072,8 @@ entry:
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/svd.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; rocksdb/optimized/forward_iterator.cc.ll
-; slurm/optimized/step_mgr.ll
-; soc-simulator/optimized/verilated.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll
 ; verilator/optimized/V3GraphAcyc.cpp.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
@@ -3137,7 +3131,7 @@ entry:
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"struct.ncnn::custom_layer_registry_entry.2749800", ptr %0, i64 %2
+  %3 = getelementptr %"struct.ncnn::custom_layer_registry_entry.2749766", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 32
   ret ptr %4
 }
@@ -3149,7 +3143,7 @@ entry:
 define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %"class.std::vector.0.2833588", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::vector.0.2833554", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
   ret ptr %4
 }

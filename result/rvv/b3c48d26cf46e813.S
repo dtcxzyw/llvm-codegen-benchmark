@@ -1,12 +1,3 @@
-func0000000000000041:                   # @func0000000000000041
-	li	a0, 60
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
-	ret
-func0000000000000141:                   # @func0000000000000141
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmclr.m	v0
-	ret
 func0000000000000074:                   # @func0000000000000074
 	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma

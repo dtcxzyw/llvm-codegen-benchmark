@@ -43,3 +43,7 @@ func000000000000000b:                   # @func000000000000000b
 	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
 	andq	%rcx, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	leaq	63(%rdi,%rsi), %rax
+	andq	$-64, %rax
+	retq

@@ -901,8 +901,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
-; clamav/optimized/mew.c.ll
+; 16 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -1142,7 +1141,7 @@ entry:
   ret i1 %4
 }
 
-; 1249 occurrences:
+; 1248 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/bbrImage.c.ll
@@ -1163,7 +1162,6 @@ entry:
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/inflate64.c.ll
-; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/unzip.c.ll
@@ -2711,7 +2709,7 @@ entry:
   ret i1 %4
 }
 
-; 613 occurrences:
+; 612 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcRefactor.c.ll
@@ -2833,7 +2831,6 @@ entry:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cmake/optimized/divsufsort.c.ll

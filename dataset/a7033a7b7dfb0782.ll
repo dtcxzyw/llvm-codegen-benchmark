@@ -1,5 +1,5 @@
 
-; 2948 occurrences:
+; 2943 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -7,10 +7,6 @@
 ; abc/optimized/bacNtk.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
 ; abc/optimized/bacWriteVer.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ivyRwr.c.ll
@@ -1738,7 +1734,6 @@
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
@@ -2955,7 +2950,7 @@ entry:
   ret i8 %1
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -3024,7 +3019,6 @@ entry:
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-lapdm.c.ll
-; wireshark/optimized/packet-lapsat.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wolfssl/optimized/tls13.c.ll

@@ -55,9 +55,17 @@ func0000000000000004:                   # @func0000000000000004
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	ret
+func0000000000000044:                   # @func0000000000000044
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v10, v10, -16
+	li	a0, -29
+	vadd.vv	v8, v8, v10
+	srli	a0, a0, 1
+	vmsltu.vx	v0, v8, a0
+	ret
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v10, v10, 1
+	vand.vi	v10, v10, -16
 	vor.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 0
 	ret
@@ -68,6 +76,12 @@ func0000000000000048:                   # @func0000000000000048
 	vadd.vv	v8, v10, v8
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v10, v10, -16
+	vrsub.vi	v10, v10, 0
+	vmseq.vv	v0, v8, v10
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 1048575
@@ -108,14 +122,6 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vv	v8, v10, v8
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000001:                   # @func0000000000000001
-	li	a0, -16
-	zext.w	a0, a0
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vrsub.vi	v10, v10, 0
-	vmseq.vv	v0, v8, v10
-	ret
 func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 1
@@ -145,14 +151,6 @@ func000000000000000c:                   # @func000000000000000c
 	vand.vi	v10, v10, -8
 	vrsub.vi	v10, v10, 0
 	vmsne.vv	v0, v8, v10
-	ret
-func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v10, v10, -16
-	li	a0, -29
-	vadd.vv	v8, v10, v8
-	srli	a0, a0, 1
-	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000064:                   # @func0000000000000064
 	lui	a0, 1

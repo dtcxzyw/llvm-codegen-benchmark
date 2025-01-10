@@ -24,7 +24,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
-  %6 = and i64 %5, 4294967295
+  %6 = and i64 %5, 2147483647
   %7 = mul nsw i64 %0, %6
   ret i64 %7
 }

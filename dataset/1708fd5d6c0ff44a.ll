@@ -1,7 +1,6 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; cpython/optimized/obmalloc.ll
-; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; mold/optimized/arch-ppc64v2.cc.ll

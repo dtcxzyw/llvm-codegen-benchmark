@@ -576,7 +576,7 @@ entry:
   ret i1 %6
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/args_handling.ll
 ; boost/optimized/async.ll
@@ -613,7 +613,6 @@ entry:
 ; boost/optimized/wait.ll
 ; boost/optimized/wait_for.ll
 ; boost/optimized/wargs_cmd.ll
-; cpython/optimized/unicodeobject.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; libquic/optimized/url_canon_stdurl.cc.ll

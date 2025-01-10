@@ -2280,7 +2280,7 @@ entry:
   ret i32 %1
 }
 
-; 958 occurrences:
+; 957 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -2489,7 +2489,6 @@ entry:
 ; libwebp/optimized/lossless_enc_sse41.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll

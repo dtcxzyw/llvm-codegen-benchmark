@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 101 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/csf_converter.cc.ll
@@ -72,6 +72,9 @@
 ; postgres/optimized/xactdesc.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/dump_dump.c.ll
+; qemu/optimized/hw_virtio_virtio.c.ll
+; qemu/optimized/libvduse.c.ll
+; qemu/optimized/libvhost-user.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll

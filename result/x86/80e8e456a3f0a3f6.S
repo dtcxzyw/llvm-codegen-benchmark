@@ -8,6 +8,6 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	cmpl	%esi, %edi
 	cmovll	%edi, %esi
-	testb	$7, %sil
+	testl	$65532, %esi                    # imm = 0xFFFC
 	setne	%al
 	retq

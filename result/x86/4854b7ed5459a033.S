@@ -31,11 +31,3 @@ func00000000000000a0:                   # @func00000000000000a0
 	subq	%rax, %rsi
 	leaq	2(%rsi,%rdi), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	xorl	%eax, %eax
-	testb	%dl, %dl
-	sete	%al
-	shll	$5, %eax
-	addq	%rsi, %rax
-	leaq	96(%rdi,%rax), %rax
-	retq

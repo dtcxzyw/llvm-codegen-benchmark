@@ -1,6 +1,6 @@
 
-%"struct.WasmEdge::RefVariant.2767208" = type { <2 x i64> }
-%"class.testing::ThrowingValue.3460894" = type { i32 }
+%"struct.WasmEdge::RefVariant.2767174" = type { <2 x i64> }
+%"class.testing::ThrowingValue.3460860" = type { i32 }
 
 ; 8 occurrences:
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
@@ -54,7 +54,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %"struct.WasmEdge::RefVariant.2767208", ptr %5, i64 %1
+  %6 = getelementptr %"struct.WasmEdge::RefVariant.2767174", ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %5, i64 %1
+  %6 = getelementptr %"class.testing::ThrowingValue.3460860", ptr %5, i64 %1
   ret ptr %6
 }
 

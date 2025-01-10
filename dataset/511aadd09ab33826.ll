@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
@@ -11,6 +11,8 @@
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_Instruction.ll

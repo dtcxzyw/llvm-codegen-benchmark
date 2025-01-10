@@ -1,15 +1,15 @@
 
-%class.InteractionOfType.3378880 = type { %"class.std::vector.10.3378881", %"struct.std::array.3378868", %"class.std::__cxx11::basic_string.3378852" }
-%"class.std::vector.10.3378881" = type { %"struct.std::_Vector_base.11.3378882" }
-%"struct.std::_Vector_base.11.3378882" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378883" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378884" = type { ptr, ptr, ptr }
-%"struct.std::array.3378868" = type { [12 x float] }
-%"class.std::__cxx11::basic_string.3378852" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853", i64, %union.anon.3378854 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378853" = type { ptr }
-%union.anon.3378854 = type { i64, [8 x i8] }
+%class.InteractionOfType.3378846 = type { %"class.std::vector.10.3378847", %"struct.std::array.3378834", %"class.std::__cxx11::basic_string.3378818" }
+%"class.std::vector.10.3378847" = type { %"struct.std::_Vector_base.11.3378848" }
+%"struct.std::_Vector_base.11.3378848" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378849" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3378849" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378850" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3378850" = type { ptr, ptr, ptr }
+%"struct.std::array.3378834" = type { [12 x float] }
+%"class.std::__cxx11::basic_string.3378818" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378819", i64, %union.anon.3378820 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3378819" = type { ptr }
+%union.anon.3378820 = type { i64, [8 x i8] }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; bullet3/optimized/b3GpuSapBroadphase.ll
 ; clamav/optimized/rijndael.cpp.ll
@@ -80,6 +80,7 @@
 ; postgres/optimized/execExpr.ll
 ; postgres/optimized/execTuples.ll
 ; postgres/optimized/extended_stats.ll
+; postgres/optimized/slru.ll
 ; postgres/optimized/twophase.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
@@ -167,7 +168,7 @@ define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
-  %5 = getelementptr nusw nuw %class.InteractionOfType.3378880, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %class.InteractionOfType.3378846, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

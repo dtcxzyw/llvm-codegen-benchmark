@@ -32,7 +32,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/balloc.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InterleavedAccessPass.cpp.ll
@@ -41,7 +41,6 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/gres.ll
-; slurm/optimized/gres_filter.ll
 ; velox/optimized/ExprCompiler.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; z3/optimized/array_rewriter.cpp.ll

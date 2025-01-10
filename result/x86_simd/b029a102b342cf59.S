@@ -34,13 +34,15 @@ func0000000000000004:                   # @func0000000000000004
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
+.LCPI3_0:
+	.zero	16,92
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	kandnw	%k0, %k1, %k0
-	vptestmb	%xmm2, %xmm2, %k1 {%k1}
+	vpcmpneqb	.LCPI3_0(%rip), %xmm2, %k1 {%k1}
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

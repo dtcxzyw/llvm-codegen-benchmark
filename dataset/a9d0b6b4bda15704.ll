@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
-; abc/optimized/giaCSat3.c.ll
 ; minetest/optimized/rollback.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
@@ -17,9 +16,10 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare double @llvm.fmuladd.f64(double, double, double) #1
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaCSat3.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

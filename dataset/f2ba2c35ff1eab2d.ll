@@ -25,7 +25,7 @@ entry:
   ret i1 %5
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/recvol.cpp.ll
 ; darktable/optimized/image.c.ll
@@ -109,6 +109,7 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; ruby/optimized/string.ll
 ; spike/optimized/syscall.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; verilator/optimized/V3File.cpp.ll
 ; wireshark/optimized/copy_from_profile_button.cpp.ll
@@ -123,7 +124,7 @@ entry:
   ret i1 %5
 }
 
-; 183 occurrences:
+; 182 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -137,7 +138,6 @@ entry:
 ; clamav/optimized/scanner.c.ll
 ; cmake/optimized/netrc.c.ll
 ; cpython/optimized/lexer.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-netrc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; eastl/optimized/TestRandom.cpp.ll
@@ -316,11 +316,10 @@ entry:
   ret i1 %5
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; cmake/optimized/cmCommonTargetGenerator.cxx.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/parsedate.c.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; flac/optimized/main.c.ll

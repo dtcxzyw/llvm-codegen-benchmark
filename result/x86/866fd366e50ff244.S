@@ -3,11 +3,6 @@ func0000000000000370:                   # @func0000000000000370
 	leaq	(%rsi,%rdx,8), %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func0000000000000375:                   # @func0000000000000375
-	shlq	$6, %rsi
-	leaq	(%rsi,%rdx,8), %rax
-	leaq	760(%rdi,%rax), %rax
-	retq
 func0000000000000155:                   # @func0000000000000155
 	shlq	$4, %rsi
 	leaq	(%rsi,%rdx,4), %rax

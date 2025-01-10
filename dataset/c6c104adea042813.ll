@@ -292,10 +292,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaSatLut.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:

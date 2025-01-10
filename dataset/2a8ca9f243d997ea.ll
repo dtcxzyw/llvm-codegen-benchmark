@@ -1,6 +1,6 @@
 
-%struct.Vec_Int_t_.2876009 = type { i32, i32, ptr }
-%"class.llvm::DenseMap.222.3201889" = type <{ ptr, i32, i32, i32, [4 x i8] }>
+%struct.Vec_Int_t_.2875975 = type { i32, i32, ptr }
+%"class.llvm::DenseMap.222.3201855" = type <{ ptr, i32, i32, i32, [4 x i8] }>
 
 ; 4 occurrences:
 ; abc/optimized/giaSatMap.c.ll
@@ -70,7 +70,7 @@ define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr %struct.Vec_Int_t_.2876009, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.Vec_Int_t_.2875975, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -82,7 +82,7 @@ define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub i64 %1, %3
-  %5 = getelementptr %"class.llvm::DenseMap.222.3201889", ptr %0, i64 %4, i32 3
+  %5 = getelementptr %"class.llvm::DenseMap.222.3201855", ptr %0, i64 %4, i32 3
   ret ptr %5
 }
 

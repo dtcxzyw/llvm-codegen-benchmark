@@ -5580,7 +5580,7 @@ entry:
   ret i1 %4
 }
 
-; 1640 occurrences:
+; 1641 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -6279,6 +6279,7 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Multilib.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/OptParserEmitter.cpp.ll

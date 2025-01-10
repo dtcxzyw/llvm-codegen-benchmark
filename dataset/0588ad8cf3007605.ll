@@ -1,6 +1,6 @@
 
-%struct.lua_TValue.2934154 = type { %union.Value.2934155, [1 x i32], i32 }
-%union.Value.2934155 = type { ptr }
+%struct.lua_TValue.2934120 = type { %union.Value.2934121, [1 x i32], i32 }
+%union.Value.2934121 = type { ptr }
 
 ; 3 occurrences:
 ; luajit/optimized/minilua.ll
@@ -13,7 +13,7 @@ entry:
   %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = sub nsw i64 0, %5
-  %7 = getelementptr nusw %struct.lua_TValue.2934154, ptr %0, i64 %6
+  %7 = getelementptr nusw %struct.lua_TValue.2934120, ptr %0, i64 %6
   ret ptr %7
 }
 

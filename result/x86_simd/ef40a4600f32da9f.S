@@ -8,7 +8,7 @@ func000000000000002c:                   # @func000000000000002c
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.quad	-8                              # 0xfffffffffffffff8
+	.quad	4294967288                      # 0xfffffff8
 func0000000000000030:                   # @func0000000000000030
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$4, %ymm2, %ymm2

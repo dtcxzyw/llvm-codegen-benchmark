@@ -1,12 +1,12 @@
 
-%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
-%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
-%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
-%union.anon.6.3535215 = type { %struct.list_head.3535195 }
-%struct.list_head.3535195 = type { ptr, ptr }
-%union.anon.8.3535216 = type { i64 }
-%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
-%struct.atomic_t.3535179 = type { i32 }
+%struct.page.3535177 = type { i64, %union.anon.4.3535178, %union.anon.12.3535179, %struct.atomic_t.3535145, [8 x i8] }
+%union.anon.4.3535178 = type { %struct.anon.5.3535180 }
+%struct.anon.5.3535180 = type { %union.anon.6.3535181, ptr, %union.anon.8.3535182, i64 }
+%union.anon.6.3535181 = type { %struct.list_head.3535161 }
+%struct.list_head.3535161 = type { ptr, ptr }
+%union.anon.8.3535182 = type { i64 }
+%union.anon.12.3535179 = type { %struct.atomic_t.3535145 }
+%struct.atomic_t.3535145 = type { i32 }
 
 ; 4 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
@@ -43,7 +43,7 @@ entry:
   %2 = add i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = getelementptr %struct.page.3535211, ptr %0, i64 %4
+  %5 = getelementptr %struct.page.3535177, ptr %0, i64 %4
   ret ptr %5
 }
 

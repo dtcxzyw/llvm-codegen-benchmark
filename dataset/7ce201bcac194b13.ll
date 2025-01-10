@@ -1,5 +1,5 @@
 
-; 844 occurrences:
+; 845 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/mapperRefs.c.ll
@@ -359,6 +359,7 @@
 ; openusd/optimized/string-to-double.cc.ll
 ; openusd/optimized/token.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
+; php/optimized/ascmagic.ll
 ; php/optimized/rfc1867.ll
 ; postgres/optimized/crosstabview.ll
 ; postgres/optimized/execExprInterp.ll

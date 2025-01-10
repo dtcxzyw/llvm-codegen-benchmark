@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; actix-rs/optimized/27zn2x05lna4a2z7.ll
 ; arrow/optimized/UriFile.c.ll
 ; assimp/optimized/clipper.cpp.ll
@@ -24,6 +24,7 @@
 ; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll

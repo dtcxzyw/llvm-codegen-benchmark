@@ -1,15 +1,15 @@
 
-%struct.GC_ms_entry.2705283 = type { ptr, %union.word_ptr_ao_u.2705284 }
-%union.word_ptr_ao_u.2705284 = type { i64 }
-%"class.WasmEdge::LLVM::Value.2763231" = type { ptr }
-%struct.page.3534732 = type { i64, %union.anon.9.3534733, %union.anon.17.3534734, %struct.atomic_t.3534696, [8 x i8] }
-%union.anon.9.3534733 = type { %struct.anon.10.3534735 }
-%struct.anon.10.3534735 = type { %union.anon.11.3534736, ptr, %union.anon.13.3534737, i64 }
-%union.anon.11.3534736 = type { %struct.list_head.3534700 }
-%struct.list_head.3534700 = type { ptr, ptr }
-%union.anon.13.3534737 = type { i64 }
-%union.anon.17.3534734 = type { %struct.atomic_t.3534696 }
-%struct.atomic_t.3534696 = type { i32 }
+%struct.GC_ms_entry.2705249 = type { ptr, %union.word_ptr_ao_u.2705250 }
+%union.word_ptr_ao_u.2705250 = type { i64 }
+%"class.WasmEdge::LLVM::Value.2763197" = type { ptr }
+%struct.page.3534698 = type { i64, %union.anon.9.3534699, %union.anon.17.3534700, %struct.atomic_t.3534662, [8 x i8] }
+%union.anon.9.3534699 = type { %struct.anon.10.3534701 }
+%struct.anon.10.3534701 = type { %union.anon.11.3534702, ptr, %union.anon.13.3534703, i64 }
+%union.anon.11.3534702 = type { %struct.list_head.3534666 }
+%struct.list_head.3534666 = type { ptr, ptr }
+%union.anon.13.3534703 = type { i64 }
+%union.anon.17.3534700 = type { %struct.atomic_t.3534662 }
+%struct.atomic_t.3534662 = type { i32 }
 
 ; 5 occurrences:
 ; grpc/optimized/parser.cc.ll
@@ -114,7 +114,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.GC_ms_entry.2705283, ptr %0, i64 %1
+  %2 = getelementptr %struct.GC_ms_entry.2705249, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 16
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
@@ -134,7 +134,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %"class.WasmEdge::LLVM::Value.2763231", ptr %0, i64 %1
+  %2 = getelementptr %"class.WasmEdge::LLVM::Value.2763197", ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
@@ -209,7 +209,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr %struct.page.3534732, ptr %0, i64 %1
+  %2 = getelementptr %struct.page.3534698, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -64
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4

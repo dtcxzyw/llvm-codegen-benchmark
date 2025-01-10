@@ -42,40 +42,31 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
-; darktable/optimized/introspection_channelmixerrgb.c.ll
-; darktable/optimized/introspection_colorbalancergb.c.ll
-; darktable/optimized/introspection_denoiseprofile.c.ll
-; darktable/optimized/introspection_filmicrgb.c.ll
-; gromacs/optimized/readir.cpp.ll
-; meshoptimizer/optimized/vertexfilter.cpp.ll
+; 18 occurrences:
+; box2d/optimized/b2_weld_joint.cpp.ll
+; darktable/optimized/introspection_channelmixer.c.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; ocio/optimized/FixedFunctionOpCPU.cpp.ll
-; openusd/optimized/nanocolor.c.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
-; pbrt-v4/optimized/camera.cpp.ll
+; nuklear/optimized/unity.c.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; openjdk/optimized/img_colors.ll
+; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
+; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/primitive.cpp.ll
-; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
-; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; pbrt-v4/optimized/transform.cpp.ll
-; pbrt-v4/optimized/vecmath.cpp.ll
-; typst-rs/optimized/18i60ist7isq7y2m.ll
-; typst-rs/optimized/1ojadsqfk0rsifsx.ll
-; typst-rs/optimized/2lj01bfl72moc27l.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
+; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
+define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fadd float %0, %3
-  %5 = fcmp oeq float %4, 0.000000e+00
+  %5 = fcmp une float %4, 0.000000e+00
   ret i1 %5
 }
 
@@ -208,30 +199,46 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
-; box2d/optimized/b2_weld_joint.cpp.ll
-; darktable/optimized/introspection_channelmixer.c.ll
-; lodepng/optimized/pngdetail.cpp.ll
-; meshlab/optimized/glarea.cpp.ll
-; nuklear/optimized/unity.c.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openjdk/optimized/img_colors.ll
+; 33 occurrences:
+; darktable/optimized/introspection_channelmixerrgb.c.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
+; darktable/optimized/introspection_denoiseprofile.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; gromacs/optimized/readir.cpp.ll
+; meshoptimizer/optimized/vertexfilter.cpp.ll
+; ocio/optimized/FixedFunctionOpCPU.cpp.ll
+; openusd/optimized/nanocolor.c.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
+; pbrt-v4/optimized/bxdfs.cpp.ll
+; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/materials.cpp.ll
+; pbrt-v4/optimized/mesh.cpp.ll
+; pbrt-v4/optimized/primitive.cpp.ll
+; pbrt-v4/optimized/render.cpp.ll
+; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
+; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; raylib/optimized/rtext.c.ll
+; pbrt-v4/optimized/textures.cpp.ll
+; pbrt-v4/optimized/transform.cpp.ll
+; pbrt-v4/optimized/vecmath.cpp.ll
+; typst-rs/optimized/18i60ist7isq7y2m.ll
+; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
+define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %0, %3
-  %5 = fcmp une float %4, 0.000000e+00
+  %4 = fadd float %3, %0
+  %5 = fcmp oeq float %4, 0.000000e+00
   ret i1 %5
 }
 

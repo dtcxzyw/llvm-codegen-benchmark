@@ -1,18 +1,28 @@
 
-; 416 occurrences:
+; 438 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/dense_normal_cholesky_solver.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/manifold.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/reorder_program.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -55,10 +65,19 @@
 ; folly/optimized/SimpleSimdStringUtils.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
@@ -72,6 +91,7 @@
 ; icu/optimized/uiter.ll
 ; icu/optimized/ustrtrns.ll
 ; jsonnet/optimized/formatter.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/auditsc.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/cppc_acpi.ll
@@ -134,6 +154,7 @@
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -228,6 +249,7 @@
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
 ; stockfish/optimized/tbprobe.ll
 ; tinympc/optimized/admm.cpp.ll
+; tinympc/optimized/tiny_api.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
 ; vcpkg/optimized/ci-baseline.cpp.ll
 ; vcpkg/optimized/commands.upgrade.cpp.ll

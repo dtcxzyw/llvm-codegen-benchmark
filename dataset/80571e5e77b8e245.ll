@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; csmith/optimized/ArrayVariable.cpp.ll
-; darktable/optimized/tagging.c.ll
 ; icu/optimized/unistr.ll
 ; libquic/optimized/url_util.cc.ll
 ; linux/optimized/drm_edid.ll

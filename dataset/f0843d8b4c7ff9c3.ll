@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 89 occurrences:
 ; arrow/optimized/bit_block_counter.cc.ll
 ; cmake/optimized/cmcmd.cxx.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
@@ -37,7 +37,6 @@
 ; llvm/optimized/SystemZ.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
-; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll

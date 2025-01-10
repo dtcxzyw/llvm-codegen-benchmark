@@ -249,21 +249,6 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; cpython/optimized/longobject.ll
-; folly/optimized/HHWheelTimer.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; rocksdb/optimized/replayer_impl.cc.ll
-; spike/optimized/s_mulAddF128.ll
-; spike/optimized/s_mulAddF32.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp sle i64 %3, %0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; Function Attrs: nounwind
@@ -512,6 +497,20 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; cpython/optimized/longobject.ll
+; folly/optimized/HHWheelTimer.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; spike/optimized/s_mulAddF128.ll
+; spike/optimized/s_mulAddF32.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -619,7 +618,7 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -632,7 +631,6 @@ entry:
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
 ; libquic/optimized/time_support.c.ll
-; luau/optimized/isocline.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll

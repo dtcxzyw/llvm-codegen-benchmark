@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
-%union.anon.2694471 = type { i64, [8 x i8] }
-%"class.llvm::MCInstrDesc.3150062" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%"class.std::__cxx11::basic_string.2694435" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436", i64, %union.anon.2694437 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694436" = type { ptr }
+%union.anon.2694437 = type { i64, [8 x i8] }
+%"class.llvm::MCInstrDesc.3150028" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
 
 ; 13 occurrences:
 ; abseil-cpp/optimized/span_test.cc.ll
@@ -1697,7 +1697,7 @@ define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %2, i64 2, i64 3
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2694469", ptr %0, i64 %3
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2694435", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -1814,7 +1814,7 @@ define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i64 -1412, i64 -6827
-  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3150062", ptr %0, i64 %3
+  %4 = getelementptr nusw %"class.llvm::MCInstrDesc.3150028", ptr %0, i64 %3
   ret ptr %4
 }
 

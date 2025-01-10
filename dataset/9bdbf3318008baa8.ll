@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_op.2792342 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct._zend_ssa_op.2792308 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 4 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -10,7 +10,7 @@
 define ptr @func00000000000000c1(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
-  %3 = getelementptr nusw %struct._zend_ssa_op.2792342, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct._zend_ssa_op.2792308, ptr %0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

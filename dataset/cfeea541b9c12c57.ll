@@ -1,11 +1,9 @@
 
-; 6 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 4 occurrences:
 ; linux/optimized/compress.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; ruby/optimized/thread.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:

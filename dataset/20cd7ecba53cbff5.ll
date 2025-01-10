@@ -126,6 +126,7 @@ entry:
 ; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
+; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/mx_node.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
@@ -424,7 +425,6 @@ entry:
 ; llvm/optimized/Float2Int.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
-; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll

@@ -82,12 +82,15 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5HFsection.c.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openusd/optimized/openexr-c.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
 ; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll

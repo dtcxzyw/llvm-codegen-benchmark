@@ -205,13 +205,6 @@ func0000000000000104:                   # @func0000000000000104
 	setb	%al
 	orb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
-	testq	%rsi, %rsi
-	setle	%cl
-	testb	%dil, %dil
-	sete	%al
-	orb	%cl, %al
-	retq
 func000000000000002a:                   # @func000000000000002a
 	testq	%rsi, %rsi
 	sete	%cl

@@ -82,9 +82,10 @@ func0000000000000004:                   # @func0000000000000004
 	cmovel	%esi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	leal	(%rdi,%rdi), %eax
+	shll	$23, %edi
 	testl	%esi, %esi
-	cmovel	%esi, %eax
+	movl	$25165824, %eax                 # imm = 0x1800000
+	cmovnel	%edi, %eax
 	retq
 func0000000000000052:                   # @func0000000000000052
 	leal	(%rdi,%rdi), %ecx

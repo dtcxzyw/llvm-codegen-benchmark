@@ -52,41 +52,40 @@ func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	seqz	a0, a1
 	ret
-func0000000000000001:                   # @func0000000000000001
+func0000000000000061:                   # @func0000000000000061
 	andi	a0, a0, 1
 	bnez	a0, .LBB6_2
-	li	a1, 258
+	li	a1, 32
 	sub	a1, a1, a2
 .LBB6_2:                                # %entry
 	sext.w	a1, a1
 	seqz	a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+func000000000000006a:                   # @func000000000000006a
 	andi	a0, a0, 1
 	bnez	a0, .LBB7_2
 	li	a1, 32
 	sub	a1, a1, a2
 .LBB7_2:                                # %entry
 	sext.w	a1, a1
-	seqz	a0, a1
+	sgtz	a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func0000000000000074:                   # @func0000000000000074
 	andi	a0, a0, 1
 	bnez	a0, .LBB8_2
 	li	a1, 32
 	sub	a1, a1, a2
 .LBB8_2:                                # %entry
 	sext.w	a1, a1
-	sgtz	a0, a1
+	sltiu	a0, a1, 6
 	ret
-func0000000000000074:                   # @func0000000000000074
+func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	bnez	a0, .LBB9_2
-	li	a1, 32
-	sub	a1, a1, a2
+	neg	a1, a2
 .LBB9_2:                                # %entry
 	sext.w	a1, a1
-	sltiu	a0, a1, 6
+	seqz	a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a0, a0, 1

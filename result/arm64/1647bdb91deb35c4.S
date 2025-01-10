@@ -33,7 +33,7 @@ func0000000000000004:                   // @func0000000000000004
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	ubfx	x8, x2, #3, #32
+	ubfx	x8, x2, #3, #31
 	madd	x0, x1, x8, x0
 	ret
                                         // -- End function

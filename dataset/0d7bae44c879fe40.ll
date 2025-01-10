@@ -490,12 +490,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; nori/optimized/button.cpp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Fp.ll
 ; openjdk/optimized/mlib_c_ImageConvClearEdge.ll
 ; openjdk/optimized/mlib_c_ImageConvCopyEdge.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
+; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -1013,7 +1014,7 @@ entry:
 define i1 @func0000000000000194(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = icmp samesign ult i32 %0, 48
+  %4 = icmp samesign ult i32 %0, 52
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }

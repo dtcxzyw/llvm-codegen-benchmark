@@ -1,8 +1,9 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClaus.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/import.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_retouch.c.ll

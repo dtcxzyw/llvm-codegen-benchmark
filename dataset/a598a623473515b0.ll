@@ -42,9 +42,8 @@ entry:
   ret i32 %7
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; chibicc/optimized/tokenize.ll
-; git/optimized/writer.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/decNumber.ll
 ; libquic/optimized/s3_srvr.c.ll
@@ -87,6 +86,19 @@ define i32 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  %7 = trunc i64 %6 to i32
+  ret i32 %7
+}
+
+; 1 occurrences:
+; git/optimized/writer.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000b0(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 40
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = trunc i64 %6 to i32

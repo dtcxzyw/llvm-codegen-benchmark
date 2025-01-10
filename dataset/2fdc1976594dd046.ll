@@ -364,7 +364,7 @@ entry:
   ret i1 %5
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; boost/optimized/to_chars.ll
 ; git/optimized/sequencer.ll
@@ -382,8 +382,6 @@ entry:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/trackerKCF.cpp.ll
 ; raylib/optimized/rtextures.c.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
-; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind

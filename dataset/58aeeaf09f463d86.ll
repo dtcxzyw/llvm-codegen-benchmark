@@ -78,13 +78,17 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 10 occurrences:
 ; openblas/optimized/daxpy_k.c.ll
 ; openblas/optimized/ddot_k.c.ll
+; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dsdot_k.c.ll
 ; openblas/optimized/saxpy_k.c.ll
 ; openblas/optimized/sdsdot_k.c.ll
+; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
+; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
@@ -92,21 +96,6 @@ entry:
   %2 = add nsw i64 %1, -1
   %3 = and i64 %2, -2
   %4 = add nuw nsw i64 %3, 2
-  ret i64 %4
-}
-
-; 4 occurrences:
-; openblas/optimized/dgemm_small_kernel_b0_nn.c.ll
-; openblas/optimized/dgemm_small_kernel_nn.c.ll
-; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
-; openblas/optimized/sgemm_small_kernel_nn.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 9223372036854775792
-  %2 = add nsw i64 %1, -1
-  %3 = and i64 %2, -16
-  %4 = add i64 %3, 16
   ret i64 %4
 }
 

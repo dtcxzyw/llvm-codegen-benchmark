@@ -1,6 +1,5 @@
 
-; 25 occurrences:
-; abc/optimized/bmcMaj.c.ll
+; 24 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; cmake/optimized/mime.c.ll

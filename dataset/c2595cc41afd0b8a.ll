@@ -1,20 +1,20 @@
 
-%"struct.OT::LongMetric.2730688" = type { %"struct.OT::IntType.2730689", %"struct.OT::IntType.145.2730690" }
-%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
-%struct.BEInt.2730691 = type { [2 x i8] }
-%"struct.OT::IntType.145.2730690" = type { %struct.BEInt.146.2730692 }
-%struct.BEInt.146.2730692 = type { [2 x i8] }
-%"struct.OT::IntType.139.2736869" = type { %struct.BEInt.140.2736870 }
-%struct.BEInt.140.2736870 = type { [2 x i8] }
-%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
-%union.anon.34.2817675 = type { [4 x float] }
-%"class.gmx::BasicVector.3352761" = type { [3 x float] }
-%struct.mdio_bus_stats.3549566 = type { %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_t.3549567, %struct.u64_stats_sync.3549568 }
-%struct.u64_stats_t.3549567 = type { %struct.local64_t.3549569 }
-%struct.local64_t.3549569 = type { %struct.local_t.3549570 }
-%struct.local_t.3549570 = type { %struct.atomic64_t.3549571 }
-%struct.atomic64_t.3549571 = type { i64 }
-%struct.u64_stats_sync.3549568 = type {}
+%"struct.OT::LongMetric.2730654" = type { %"struct.OT::IntType.2730655", %"struct.OT::IntType.145.2730656" }
+%"struct.OT::IntType.2730655" = type { %struct.BEInt.2730657 }
+%struct.BEInt.2730657 = type { [2 x i8] }
+%"struct.OT::IntType.145.2730656" = type { %struct.BEInt.146.2730658 }
+%struct.BEInt.146.2730658 = type { [2 x i8] }
+%"struct.OT::IntType.139.2736835" = type { %struct.BEInt.140.2736836 }
+%struct.BEInt.140.2736836 = type { [2 x i8] }
+%class.b3Vector3.2817640 = type { %union.anon.34.2817641 }
+%union.anon.34.2817641 = type { [4 x float] }
+%"class.gmx::BasicVector.3352727" = type { [3 x float] }
+%struct.mdio_bus_stats.3549532 = type { %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_t.3549533, %struct.u64_stats_sync.3549534 }
+%struct.u64_stats_t.3549533 = type { %struct.local64_t.3549535 }
+%struct.local64_t.3549535 = type { %struct.local_t.3549536 }
+%struct.local_t.3549536 = type { %struct.atomic64_t.3549537 }
+%struct.atomic64_t.3549537 = type { i64 }
+%struct.u64_stats_sync.3549534 = type {}
 
 ; 8 occurrences:
 ; clamav/optimized/pathfn.cpp.ll
@@ -29,9 +29,9 @@
 define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730688"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::LongMetric.2730654"], ptr %0, i64 0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.145.2730690", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.145.2730656", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -46,9 +46,9 @@ entry:
 define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736869"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [1 x %"struct.OT::IntType.139.2736835"], ptr %0, i64 0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736869", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.139.2736835", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -79,7 +79,7 @@ entry:
 define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817674], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x %class.b3Vector3.2817640], ptr %0, i64 0, i64 %3
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
@@ -93,7 +93,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr [3 x float], ptr %0, i64 0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw nuw %"class.gmx::BasicVector.3352761", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"class.gmx::BasicVector.3352727", ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -143,7 +143,7 @@ entry:
 define ptr @func0000000000000020(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr [32 x %struct.mdio_bus_stats.3549566], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [32 x %struct.mdio_bus_stats.3549532], ptr %0, i64 0, i64 %3
   %5 = zext i32 %1 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

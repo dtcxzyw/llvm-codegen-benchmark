@@ -20,13 +20,23 @@ entry:
   ret i1 %3
 }
 
-; 110 occurrences:
+; 133 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
+; coreutils-rs/optimized/28bc720kv1ca2ji3.ll
+; coreutils-rs/optimized/2clh6i7rt37zjc4b.ll
+; coreutils-rs/optimized/2nqetp4aeyokg7z8.ll
+; coreutils-rs/optimized/2qo70e4zd6mgrgtt.ll
+; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
+; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
+; coreutils-rs/optimized/4ebr33npwdm3i540.ll
+; coreutils-rs/optimized/5362q9qekdi7amtn.ll
+; coreutils-rs/optimized/5bynua1et0hks54.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
+; diesel-rs/optimized/4sfj60patc6ec44s.ll
 ; faiss/optimized/index_factory.cpp.ll
 ; g2o/optimized/filesys_tools.cpp.ll
 ; glog/optimized/logging.cc.ll
@@ -35,6 +45,7 @@ entry:
 ; gromacs/optimized/readpull.cpp.ll
 ; gromacs/optimized/sm_keywords.cpp.ll
 ; grpc/optimized/writing.cc.ll
+; just-rs/optimized/2sotx4bdu006z307.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -121,9 +132,21 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; postgres/optimized/copyto.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; ripgrep-rs/optimized/n2o0pbfhrfss8aa.ll
+; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
+; rust-analyzer-rs/optimized/2gfo4qfvfsgl8tkl.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
+; rust-analyzer-rs/optimized/3fxp92r9t1x66wd0.ll
+; rust-analyzer-rs/optimized/4jvd7t10e7ozxalq.ll
+; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
+; rust-analyzer-rs/optimized/9ipmi6my0zkv4p.ll
+; rust-analyzer-rs/optimized/bdopwa51jybvqli.ll
+; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; spike/optimized/spike-log-parser.ll
+; tree-sitter-rs/optimized/sw0aazrl08me20d.ll
+; typst-rs/optimized/avdrw26ojy6f9qt.ll
 ; vcpkg/optimized/tools.cpp.ll
+; wasmtime-rs/optimized/1tgax70bn3x2nad4.ll
 ; xgboost/optimized/context.cc.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll

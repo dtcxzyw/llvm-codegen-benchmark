@@ -1,12 +1,80 @@
 
-; 242 occurrences:
+; 43 occurrences:
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/bytecode_api.c.ll
+; clamav/optimized/qopen.cpp.ll
+; clamav/optimized/sis.c.ll
+; clamav/optimized/tnef.c.ll
+; clamav/optimized/unarj.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; git/optimized/sha256.ll
+; libpng/optimized/pngrutil.c.ll
+; lief/optimized/ssl_msg.c.ll
+; lief/optimized/ssl_tls.c.ll
+; linux/optimized/blk-lib.ll
+; linux/optimized/dm.ll
+; linux/optimized/hexdump.ll
+; linux/optimized/hidraw.ll
+; linux/optimized/i915_gem_shmem.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/kfifo.ll
+; linux/optimized/mon_bin.ll
+; linux/optimized/net.ll
+; linux/optimized/scatterwalk.ll
+; linux/optimized/serial_core.ll
+; llvm/optimized/RawCommentList.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; miniaudio/optimized/unity.c.ll
+; nuttx/optimized/lib_hexdumpstream.c.ll
+; openjdk/optimized/imageioJPEG.ll
+; openjdk/optimized/pngrutil.ll
+; openssl/optimized/libcrypto-lib-bss_mem.ll
+; openssl/optimized/libcrypto-shlib-bss_mem.ll
+; php/optimized/crypt_sha512.ll
+; pocketpy/optimized/collections.cpp.ll
+; postgres/optimized/bbstreamer_tar.ll
+; qemu/optimized/block_qcow2.c.ll
+; qemu/optimized/hw_net_vmxnet3.c.ll
+; qemu/optimized/hw_usb_desc.c.ll
+; raylib/optimized/raudio.c.ll
+; ruby/optimized/io.ll
+; spike/optimized/debug_module.ll
+; wireshark/optimized/uat_load.c.ll
+; xgboost/optimized/gradient_index_page_source.cc.ll
+; xgboost/optimized/sparse_page_dmatrix.cc.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
+  %4 = trunc nuw nsw i64 %3 to i32
+  ret i32 %4
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.umin.i64(i64, i64) #1
+
+; 273 occurrences:
+; abc/optimized/gzlib.c.ll
+; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/encode.c.ll
+; clamav/optimized/LzmaDec.c.ll
+; clamav/optimized/XzDec.c.ll
+; clamav/optimized/dll.cpp.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/sis.c.ll
 ; clamav/optimized/xlm_extract.c.ll
+; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
+; cmake/optimized/archive_write_set_format_iso9660.c.ll
+; cmake/optimized/deflate.c.ll
+; cmake/optimized/gzlib.c.ll
+; cmake/optimized/gzwrite.c.ll
+; cmake/optimized/lzma_decoder.c.ll
 ; flac/optimized/encode.c.ll
+; flac/optimized/stream_encoder.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -29,6 +97,7 @@
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
+; libpng/optimized/pngpread.c.ll
 ; libquic/optimized/cmac.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -102,12 +171,16 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/decompress_unlzma.ll
+; linux/optimized/deflate.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/evdev.ll
+; linux/optimized/gup.ll
 ; linux/optimized/i915_scatterlist.ll
+; linux/optimized/idma32.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/kfifo.ll
+; linux/optimized/mballoc.ll
 ; linux/optimized/message.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/skbuff.ll
@@ -116,6 +189,7 @@
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
+; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
@@ -199,7 +273,14 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openjdk/optimized/jdmarker.ll
+; openjdk/optimized/jmemmgr.ll
+; openjdk/optimized/pngpread.ll
+; php/optimized/KeccakSponge.ll
+; portaudio/optimized/pa_sndio.c.ll
+; postgres/optimized/xlogreader.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
+; qemu/optimized/ahci.c.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/block_vdi.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -212,11 +293,14 @@
 ; qemu/optimized/hw_usb_dev-uas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/net_checksum.c.ll
+; raylib/optimized/raudio.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
-; redis/optimized/dict.ll
 ; ruby/optimized/zlib.ll
+; slurm/optimized/KangarooTwelve.ll
+; slurm/optimized/gres_filter.ll
 ; slurm/optimized/gres_select_util.ll
+; slurm/optimized/step_mgr.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -241,7 +325,10 @@
 ; tev/optimized/main.cpp.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; wireshark/optimized/file_wrappers.c.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zlib/optimized/deflate.c.ll
+; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
@@ -250,9 +337,6 @@ entry:
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umin.i64(i64, i64) #1
 
 ; 9 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
@@ -273,50 +357,19 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/vc_screen.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
-  %4 = trunc nuw nsw i64 %3 to i32
-  ret i32 %4
-}
-
-; 23 occurrences:
-; clamav/optimized/bytecode_api.c.ll
-; clamav/optimized/qopen.cpp.ll
-; clamav/optimized/sis.c.ll
-; clamav/optimized/tnef.c.ll
-; clamav/optimized/unarj.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
-; lief/optimized/ssl_tls.c.ll
-; linux/optimized/blk-lib.ll
-; linux/optimized/dm.ll
-; linux/optimized/hexdump.ll
-; linux/optimized/hidraw.ll
-; linux/optimized/kfifo.ll
-; linux/optimized/mon_bin.ll
-; llvm/optimized/RawCommentList.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; nuttx/optimized/lib_hexdumpstream.c.ll
-; postgres/optimized/bbstreamer_tar.ll
-; qemu/optimized/block_qcow2.c.ll
-; qemu/optimized/hw_net_vmxnet3.c.ll
-; spike/optimized/debug_module.ll
-; wireshark/optimized/uat_load.c.ll
-; xgboost/optimized/gradient_index_page_source.cc.ll
-; xgboost/optimized/sparse_page_dmatrix.cc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
   %3 = call i64 @llvm.umin.i64(i64 %0, i64 %2)
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4

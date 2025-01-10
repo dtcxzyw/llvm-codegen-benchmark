@@ -1,8 +1,8 @@
 
-%"class.boost::shared_ptr.29.2841526" = type { ptr, %"class.boost::detail::shared_count.2841522" }
-%"class.boost::detail::shared_count.2841522" = type { ptr }
-%"struct.Yosys::RTLIL::SigBit.3121538" = type <{ ptr, %union.anon.129.3121539, [4 x i8] }>
-%union.anon.129.3121539 = type { i32 }
+%"class.boost::shared_ptr.29.2841492" = type { ptr, %"class.boost::detail::shared_count.2841488" }
+%"class.boost::detail::shared_count.2841488" = type { ptr }
+%"struct.Yosys::RTLIL::SigBit.3121504" = type <{ ptr, %union.anon.129.3121505, [4 x i8] }>
+%union.anon.129.3121505 = type { i32 }
 
 ; 14 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -506,13 +506,12 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; boost/optimized/matches_relation_factory.ll
 ; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/bspline.cpp.ll
 ; folly/optimized/json.cpp.ll
-; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -723,7 +722,7 @@ entry:
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr %"class.boost::shared_ptr.29.2841526", ptr %0, i64 %3
+  %4 = getelementptr %"class.boost::shared_ptr.29.2841492", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }
@@ -812,6 +811,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -32
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
@@ -828,7 +838,7 @@ entry:
 define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121538", ptr %0, i64 %3
+  %4 = getelementptr %"struct.Yosys::RTLIL::SigBit.3121504", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 32
   ret ptr %5
 }

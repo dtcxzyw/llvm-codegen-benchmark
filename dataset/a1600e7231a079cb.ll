@@ -61,12 +61,10 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; jq/optimized/regparse.ll
 ; linux/optimized/hdac_device.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regparse.ll
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind

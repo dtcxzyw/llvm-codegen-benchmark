@@ -1,6 +1,6 @@
 
-%struct.acpi_gpe_event_info.3547711 = type { %union.acpi_gpe_dispatch_info.3547712, ptr, i8, i8, i8, i8 }
-%union.acpi_gpe_dispatch_info.3547712 = type { ptr }
+%struct.acpi_gpe_event_info.3547677 = type { %union.acpi_gpe_dispatch_info.3547678, ptr, i8, i8, i8, i8 }
+%union.acpi_gpe_dispatch_info.3547678 = type { ptr }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_temperature.c.ll
@@ -33,8 +33,8 @@ define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = and i64 %3, 4294967288
-  %5 = getelementptr %struct.acpi_gpe_event_info.3547711, ptr %0, i64 %1
-  %6 = getelementptr %struct.acpi_gpe_event_info.3547711, ptr %5, i64 %4
+  %5 = getelementptr %struct.acpi_gpe_event_info.3547677, ptr %0, i64 %1
+  %6 = getelementptr %struct.acpi_gpe_event_info.3547677, ptr %5, i64 %4
   ret ptr %6
 }
 

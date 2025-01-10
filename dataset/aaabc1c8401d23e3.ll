@@ -1,5 +1,5 @@
 
-%struct.CommandTagBehavior.3652180 = type { ptr, i8, i8, i8, i8 }
+%struct.CommandTagBehavior.3652146 = type { ptr, i8, i8, i8, i8 }
 
 ; 41 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
@@ -70,7 +70,7 @@ entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = ashr i64 %3, 5
-  %5 = getelementptr %struct.CommandTagBehavior.3652180, ptr %0, i64 %4
+  %5 = getelementptr %struct.CommandTagBehavior.3652146, ptr %0, i64 %4
   ret ptr %5
 }
 

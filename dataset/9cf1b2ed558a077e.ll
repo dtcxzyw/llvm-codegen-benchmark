@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::NodeTemplate.298.3570047" = type { ptr }
+%"class.cvc5::internal::NodeTemplate.298.3570013" = type { ptr }
 
 ; 1 occurrences:
 ; gromacs/optimized/observablesreducer.cpp.ll
@@ -22,7 +22,7 @@ entry:
   %3 = fptosi double %2 to i32
   %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.298.3570047", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.298.3570013", ptr %0, i64 %5
   ret ptr %6
 }
 

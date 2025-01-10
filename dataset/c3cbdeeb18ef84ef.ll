@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll

@@ -19,12 +19,6 @@ func000000000000000f:                   # @func000000000000000f
 	movzwl	%di, %ecx
 	leal	4(%rcx,%rax,4), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
-	movzwl	%di, %ecx
-	leal	11(%rcx), %eax
-	cmpw	$11, %si
-	cmovbl	%ecx, %eax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	movzwl	%di, %ecx
 	leal	-12(%rcx), %eax

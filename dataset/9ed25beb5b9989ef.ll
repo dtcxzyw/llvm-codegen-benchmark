@@ -186,10 +186,9 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openmpi/optimized/tm_mapping.ll
 ; php/optimized/pcre2_study.ll

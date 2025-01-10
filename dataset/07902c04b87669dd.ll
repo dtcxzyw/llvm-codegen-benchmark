@@ -1,5 +1,5 @@
 
-%"class.cvc5::internal::NodeTemplate.3565963" = type { ptr }
+%"class.cvc5::internal::NodeTemplate.3565929" = type { ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuationFreezeThaw.ll
@@ -76,7 +76,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = sub i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3565963", ptr %0, i64 %6
+  %7 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3565929", ptr %0, i64 %6
   ret ptr %7
 }
 

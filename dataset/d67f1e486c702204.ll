@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2825015 = type { float, float, float }
+%class.aiVector3t.2824981 = type { float, float, float }
 
 ; 2 occurrences:
 ; assimp/optimized/ASEParser.cpp.ll
@@ -10,7 +10,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nuw %class.aiVector3t.2825015, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %class.aiVector3t.2824981, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

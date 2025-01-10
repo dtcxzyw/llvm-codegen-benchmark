@@ -152,8 +152,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/pci.ll
+; 2 occurrences:
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind

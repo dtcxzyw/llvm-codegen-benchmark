@@ -1,5 +1,5 @@
 
-%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108105" = type { ptr, ptr }
 
 ; 78 occurrences:
 ; abseil-cpp/optimized/escaping.cc.ll
@@ -180,7 +180,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %1, i64 %2
+  %3 = getelementptr %"class.Catch::TestCaseHandle.3108105", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = and i64 %5, 9223372036854775792

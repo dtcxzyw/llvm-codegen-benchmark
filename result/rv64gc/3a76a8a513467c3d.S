@@ -53,13 +53,6 @@ func0000000000000054:                   # @func0000000000000054
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000198:                   # @func0000000000000198
-	sext.w	a0, a0
-	sext.w	a1, a1
-	slti	a1, a1, 0
-	snez	a0, a0
-	and	a0, a0, a1
-	ret
 func0000000000000210:                   # @func0000000000000210
 	srliw	a1, a1, 16
 	srliw	a0, a0, 16

@@ -24,9 +24,8 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cpython/optimized/longobject.ll
-; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:

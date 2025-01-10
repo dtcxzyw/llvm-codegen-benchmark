@@ -55,9 +55,3 @@ func00000000000000e1:                   # @func00000000000000e1
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000002c1:                   # @func00000000000002c1
-	vxorps	%xmm0, %xmm0, %xmm0
-	retq
-func00000000000002e1:                   # @func00000000000002e1
-	vxorps	%xmm0, %xmm0, %xmm0
-	retq

@@ -232,13 +232,12 @@ entry:
   ret i1 %5
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; graphviz/optimized/emit.c.ll
-; libquic/optimized/time.cc.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/dm-ioctl.ll
 ; linux/optimized/evdev.ll

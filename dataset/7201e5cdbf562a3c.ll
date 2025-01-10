@@ -1,5 +1,5 @@
 
-; 284 occurrences:
+; 286 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
 ; abc/optimized/cuddZddSetop.c.ll
@@ -230,6 +230,7 @@
 ; wireshark/optimized/packet-dcerpc-mapi.c.ll
 ; wireshark/optimized/packet-dcom-sysact.c.ll
 ; wireshark/optimized/packet-giop.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
@@ -241,6 +242,7 @@
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; wolfssl/optimized/sha3.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; wolfssl/optimized/tls13.c.ll
@@ -454,7 +456,7 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/aio.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/scsi_common.ll
@@ -466,6 +468,7 @@ entry:
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
+; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
@@ -557,10 +560,11 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_dp.ll
+; linux/optimized/printk.ll
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll

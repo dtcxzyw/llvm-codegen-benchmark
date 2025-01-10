@@ -1,5 +1,22 @@
 
-; 20 occurrences:
+; 8 occurrences:
+; nuklear/optimized/unity.c.ll
+; openssl/optimized/libcrypto-lib-e_aes.ll
+; openssl/optimized/libcrypto-lib-e_aria.ll
+; openssl/optimized/libcrypto-shlib-e_aes.ll
+; openssl/optimized/libcrypto-shlib-e_aria.ll
+; postgres/optimized/varlena.ll
+; slurm/optimized/hostlist.ll
+; zxing/optimized/HRI.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = trunc i64 %0 to i32
+  %3 = sub i32 %2, %1
+  ret i32 %3
+}
+
+; 19 occurrences:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
@@ -17,30 +34,10 @@
 ; openjdk/optimized/verifier.ll
 ; openusd/optimized/openexr-c.c.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
-; ruby/optimized/io.ll
 ; sentencepiece/optimized/zero_copy_stream_impl_lite.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = trunc i64 %0 to i32
-  %3 = sub i32 %2, %1
-  ret i32 %3
-}
-
-; 10 occurrences:
-; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_memoutstream.c.ll
-; openssl/optimized/libcrypto-lib-e_aes.ll
-; openssl/optimized/libcrypto-lib-e_aria.ll
-; openssl/optimized/libcrypto-shlib-e_aes.ll
-; openssl/optimized/libcrypto-shlib-e_aria.ll
-; postgres/optimized/regexp.ll
-; postgres/optimized/varlena.ll
-; slurm/optimized/hostlist.ll
-; zxing/optimized/HRI.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
   %3 = sub i32 %2, %1

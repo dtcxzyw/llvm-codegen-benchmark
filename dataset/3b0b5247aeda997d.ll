@@ -1,10 +1,11 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; luau/optimized/Lexer.cpp.ll
 ; oiio/optimized/fitsinput.cpp.ll
+; ruby/optimized/raddrinfo.ll
 ; vcpkg/optimized/configuration.cpp.ll
 ; vcpkg/optimized/json.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -14,8 +15,8 @@
 define i1 @func0000000000000024(i1 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = add nsw i32 %2, -48
-  %4 = icmp ult i32 %3, 10
+  %3 = add nsw i32 %2, -127
+  %4 = icmp ult i32 %3, -95
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

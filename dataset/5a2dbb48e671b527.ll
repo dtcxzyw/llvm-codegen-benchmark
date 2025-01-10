@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; git/optimized/cat-file.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/SemaARM.cpp.ll
 ; qemu/optimized/hw_vfio_migration.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {

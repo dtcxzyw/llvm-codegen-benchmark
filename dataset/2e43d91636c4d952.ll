@@ -1,21 +1,20 @@
 
-%"struct.drjit::Array.2602625" = type { %"struct.drjit::StaticArrayImpl.23.2602626" }
-%"struct.drjit::StaticArrayImpl.23.2602626" = type { [4 x %"struct.mitsuba::Spectrum.2602627"] }
-%"struct.mitsuba::Spectrum.2602627" = type { %"struct.drjit::StaticArrayImpl.26.2602628" }
-%"struct.drjit::StaticArrayImpl.26.2602628" = type { <4 x float> }
-%struct.igb_tx.2705958 = type { [2 x %struct.e1000_adv_tx_context_desc.2705959], i32, i32, i8, i8, ptr }
-%struct.e1000_adv_tx_context_desc.2705959 = type { i32, i32, i32, i32 }
-%"struct.rawspeed::VC5Decompressor::Channel.2871937" = type { %"struct.std::array.59.2871938" }
-%"struct.std::array.59.2871938" = type { [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871939"] }
-%"class.rawspeed::VC5Decompressor::Wavelet.2871939" = type <{ i32, i32, i16, [6 x i8], %"class.std::vector.2871940", i32, [4 x i8] }>
-%"class.std::vector.2871940" = type { %"struct.std::_Vector_base.2871941" }
-%"struct.std::_Vector_base.2871941" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871942" }
-%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871942" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871943" }
-%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871943" = type { ptr, ptr, ptr }
+%"struct.drjit::Array.2602592" = type { %"struct.drjit::StaticArrayImpl.23.2602593" }
+%"struct.drjit::StaticArrayImpl.23.2602593" = type { [4 x %"struct.mitsuba::Spectrum.2602594"] }
+%"struct.mitsuba::Spectrum.2602594" = type { %"struct.drjit::StaticArrayImpl.26.2602595" }
+%"struct.drjit::StaticArrayImpl.26.2602595" = type { <4 x float> }
+%struct.igb_tx.2705924 = type { [2 x %struct.e1000_adv_tx_context_desc.2705925], i32, i32, i8, i8, ptr }
+%struct.e1000_adv_tx_context_desc.2705925 = type { i32, i32, i32, i32 }
+%"struct.rawspeed::VC5Decompressor::Channel.2871903" = type { %"struct.std::array.59.2871904" }
+%"struct.std::array.59.2871904" = type { [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871905"] }
+%"class.rawspeed::VC5Decompressor::Wavelet.2871905" = type <{ i32, i32, i16, [6 x i8], %"class.std::vector.2871906", i32, [4 x i8] }>
+%"class.std::vector.2871906" = type { %"struct.std::_Vector_base.2871907" }
+%"struct.std::_Vector_base.2871907" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871908" }
+%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl.2871908" = type { %"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871909" }
+%"struct.std::_Vector_base<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>, std::allocator<std::unique_ptr<rawspeed::VC5Decompressor::Wavelet::AbstractBand>>>::_Vector_impl_data.2871909" = type { ptr, ptr, ptr }
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/sbdCore.c.ll
-; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -151,8 +150,8 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [4 x %"struct.drjit::Array.2602625"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw nuw [4 x %"struct.mitsuba::Spectrum.2602627"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [4 x %"struct.drjit::Array.2602592"], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [4 x %"struct.mitsuba::Spectrum.2602594"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
@@ -186,14 +185,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr [16 x %struct.igb_tx.2705958], ptr %1, i64 0, i64 %2
-  %4 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705959], ptr %3, i64 0, i64 %0
+  %3 = getelementptr [16 x %struct.igb_tx.2705924], ptr %1, i64 0, i64 %2
+  %4 = getelementptr [2 x %struct.e1000_adv_tx_context_desc.2705925], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; abc/optimized/sbdCore.c.ll
-; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; icu/optimized/rematch.ll
@@ -206,25 +204,26 @@ entry:
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; recastnavigation/optimized/InputGeom.cpp.ll
 ; stockfish/optimized/search.ll
-; tinyrenderer/optimized/main.cpp.ll
-; tinyrenderer/optimized/our_gl.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw [4 x %"struct.rawspeed::VC5Decompressor::Channel.2871937"], ptr %1, i64 0, i64 %2
-  %4 = getelementptr nusw [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871939"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw nuw [4 x %"struct.rawspeed::VC5Decompressor::Channel.2871903"], ptr %1, i64 0, i64 %2
+  %4 = getelementptr nusw [4 x %"class.rawspeed::VC5Decompressor::Wavelet.2871905"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
-; 9 occurrences:
+; 12 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
+; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; gromacs/optimized/partition.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
+; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; tinyrenderer/optimized/main.cpp.ll
+; tinyrenderer/optimized/our_gl.cpp.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
@@ -234,9 +233,10 @@ entry:
   ret ptr %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
+; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll

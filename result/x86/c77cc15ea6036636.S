@@ -194,6 +194,10 @@ func0000000000000026:                   # @func0000000000000026
 	cmpl	$40, %eax
 	setl	%al
 	retq
+func00000000000000ac:                   # @func00000000000000ac
+	addl	%esi, %edi
+	setne	%al
+	retq
 func0000000000000061:                   # @func0000000000000061
 	addl	%esi, %edi
 	cmpl	$4, %edi

@@ -1,6 +1,6 @@
 
-%struct.qnode.3536602 = type { %struct.mcs_spinlock.3536603 }
-%struct.mcs_spinlock.3536603 = type { ptr, i32, i32 }
+%struct.qnode.3536568 = type { %struct.mcs_spinlock.3536569 }
+%struct.mcs_spinlock.3536569 = type { ptr, i32, i32 }
 
 ; 44 occurrences:
 ; gromacs/optimized/calcmu.cpp.ll
@@ -219,7 +219,7 @@ define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.qnode.3536602, ptr %3, i64 %2, i32 0, i32 1
+  %4 = getelementptr %struct.qnode.3536568, ptr %3, i64 %2, i32 0, i32 1
   ret ptr %4
 }
 

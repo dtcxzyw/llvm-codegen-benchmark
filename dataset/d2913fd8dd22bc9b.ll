@@ -35,8 +35,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/store.ll
+; icu/optimized/swapimpl.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
 ; openspiel/optimized/crowd_modelling_2d.cc.ll
@@ -99,11 +100,10 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
-; icu/optimized/swapimpl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:

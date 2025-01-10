@@ -175,10 +175,6 @@ func00000000000001f8:                   # @func00000000000001f8
 	sltiu	a0, a1, 2
 	xori	a0, a0, 1
 	ret
-func00000000000001aa:                   # @func00000000000001aa
-	slt	a0, a1, a0
-	xori	a0, a0, 1
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sub	a1, a1, a0
 	seqz	a0, a1

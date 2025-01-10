@@ -1,6 +1,6 @@
 
-%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
+%"struct.folly::Subprocess::Pipe.2685236" = type <{ %"class.folly::File.2685228", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685228" = type <{ i32, i8, [3 x i8] }>
 
 ; 7 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
@@ -15,7 +15,7 @@ define i64 @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685236", ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 20
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -50,11 +50,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001e(ptr %0, i64 %1) #0 {
+define i64 @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -1
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

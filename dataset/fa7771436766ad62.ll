@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaMan.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -11,6 +11,7 @@
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/typeArrayKlass.ll
 ; openusd/optimized/loopfilter.c.ll
+; php/optimized/crypt_blowfish.ll
 ; php/optimized/zend_stream.ll
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll

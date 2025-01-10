@@ -1,3 +1,11 @@
+func00000000000001f0:                   # @func00000000000001f0
+	li	a3, 544
+	mulw	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 2047
+	addi	a0, a0, 129
+	ret
 func00000000000000b0:                   # @func00000000000000b0
 	li	a3, 544
 	mulw	a2, a2, a3

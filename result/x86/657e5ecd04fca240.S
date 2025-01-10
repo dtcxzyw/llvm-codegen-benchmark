@@ -32,12 +32,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpl	%esi, %eax
 	setb	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	movl	$4, %eax
-	subl	%edi, %eax
-	cmpl	%esi, %eax
-	setb	%al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
@@ -92,6 +86,12 @@ func00000000000000a8:                   # @func00000000000000a8
 	subq	%rdi, %rcx
 	cmpq	%rax, %rcx
 	seta	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
+	movl	$65575, %eax                    # imm = 0x10027
+	subl	%edi, %eax
+	cmpl	%esi, %eax
+	setb	%al
 	retq
 func00000000000000a4:                   # @func00000000000000a4
 	movl	%esi, %eax

@@ -28,7 +28,7 @@ func0000000000000004:                   // @func0000000000000004
 	madd	x0, x9, x8, x0
 	ret
                                         // -- End function
-func000000000000002f:                   // @func000000000000002f
+func000000000000002e:                   // @func000000000000002e
 // %bb.0:                               // %entry
 	lsl	x8, x2, #1
 	tst	w1, #0x1

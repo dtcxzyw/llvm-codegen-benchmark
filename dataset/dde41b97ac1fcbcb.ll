@@ -84,7 +84,7 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/darCut.c.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
@@ -95,6 +95,7 @@ entry:
 ; linux/optimized/dmi_scan.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/setup.ll
+; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; postgres/optimized/utf8_and_gb18030.ll

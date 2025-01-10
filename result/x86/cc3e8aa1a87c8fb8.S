@@ -18,3 +18,8 @@ func000000000000001c:                   # @func000000000000001c
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
+func000000000000001d:                   # @func000000000000001d
+	shrl	%edx
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
+	retq

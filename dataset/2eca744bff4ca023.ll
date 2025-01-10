@@ -1,5 +1,5 @@
 
-%class.QCPGraphData.3451166 = type { double, double }
+%class.QCPGraphData.3451132 = type { double, double }
 
 ; 3 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
@@ -49,7 +49,7 @@ entry:
   %2 = freeze i32 %1
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %4
+  %5 = getelementptr %class.QCPGraphData.3451132, ptr %0, i64 %4
   ret ptr %5
 }
 

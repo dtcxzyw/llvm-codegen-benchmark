@@ -25,10 +25,9 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; boost/optimized/url_base.ll
 ; cpython/optimized/typeobject.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i1 %2) #0 {

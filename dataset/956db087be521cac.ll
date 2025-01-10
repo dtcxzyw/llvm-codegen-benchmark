@@ -1,5 +1,5 @@
 
-; 623 occurrences:
+; 622 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -376,7 +376,6 @@
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/compact_vars.ll
-; php/optimized/dce.ll
 ; php/optimized/ir_sccp.ll
 ; php/optimized/optimize_temp_vars_5.ll
 ; php/optimized/pcre2_study.ll

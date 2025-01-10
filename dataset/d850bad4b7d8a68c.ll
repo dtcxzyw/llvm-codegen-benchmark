@@ -1,7 +1,7 @@
 
-%"class.llvm::SDUse.3286993" = type { %"class.llvm::SDValue.3286982", ptr, ptr, ptr }
-%"class.llvm::SDValue.3286982" = type <{ ptr, i32, [4 x i8] }>
-%struct.pgv.3552362 = type { ptr }
+%"class.llvm::SDUse.3286959" = type { %"class.llvm::SDValue.3286948", ptr, ptr, ptr }
+%"class.llvm::SDValue.3286948" = type <{ ptr, i32, [4 x i8] }>
+%struct.pgv.3552328 = type { ptr }
 
 ; 3 occurrences:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
@@ -28,7 +28,7 @@ entry:
   %4 = select i1 %3, i32 0, i32 %2
   %5 = sub i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.llvm::SDUse.3286993", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::SDUse.3286959", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = select i1 %3, i32 0, i32 %2
   %5 = sub i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %struct.pgv.3552362, ptr %0, i64 %6
+  %7 = getelementptr %struct.pgv.3552328, ptr %0, i64 %6
   ret ptr %7
 }
 

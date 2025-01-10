@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -21,6 +21,7 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stream.c.ll
 ; raylib/optimized/rtextures.c.ll
+; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

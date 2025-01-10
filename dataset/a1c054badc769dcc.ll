@@ -140,8 +140,9 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
+; git/optimized/sha256.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

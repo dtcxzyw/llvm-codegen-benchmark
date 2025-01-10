@@ -1,5 +1,5 @@
 
-%"class.cv::Complex.13.3754032" = type { float, float }
+%"class.cv::Complex.13.3753982" = type { float, float }
 
 ; 5 occurrences:
 ; abc/optimized/giaDup.c.ll
@@ -65,8 +65,8 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %1
-  %6 = getelementptr nusw nuw %"class.cv::Complex.13.3754032", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %"class.cv::Complex.13.3753982", ptr %5, i64 %4
   ret ptr %6
 }
 

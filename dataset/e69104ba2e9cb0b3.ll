@@ -1,5 +1,5 @@
 
-%"struct.gmx::HashedMap<int>::hashEntry.3352093" = type { i32, i32, i32 }
+%"struct.gmx::HashedMap<int>::hashEntry.3352059" = type { i32, i32, i32 }
 
 ; 5 occurrences:
 ; cmake/optimized/cmGeneratorExpressionParser.cxx.ll
@@ -14,7 +14,7 @@ entry:
   %3 = tail call i64 @llvm.umax.i64(i64 %2, i64 1)
   %4 = add nuw nsw i64 %3, %2
   %5 = tail call i64 @llvm.umin.i64(i64 %4, i64 768614336404564650)
-  %6 = getelementptr nusw nuw %"struct.gmx::HashedMap<int>::hashEntry.3352093", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.gmx::HashedMap<int>::hashEntry.3352059", ptr %0, i64 %5
   ret ptr %6
 }
 

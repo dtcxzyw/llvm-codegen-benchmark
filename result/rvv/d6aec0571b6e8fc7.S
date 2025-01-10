@@ -80,13 +80,13 @@ func000000000000000a:                   # @func000000000000000a
 	vminu.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 0
 	ret
-func0000000000000034:                   # @func0000000000000034
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vminu.vv	v8, v8, v10
-	vmsleu.vi	v0, v8, 7
-	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vminu.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 0
+	ret
+func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vminu.vv	v8, v8, v10
+	vmsleu.vi	v0, v8, 7
 	ret

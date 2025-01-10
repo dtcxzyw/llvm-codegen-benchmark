@@ -1,7 +1,7 @@
 
-%struct._zend_op.2791369 = type { ptr, %union._znode_op.2791370, %union._znode_op.2791370, %union._znode_op.2791370, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2791370 = type { i32 }
-%struct.FT_Vector_.3881816 = type { i64, i64 }
+%struct._zend_op.2791335 = type { ptr, %union._znode_op.2791336, %union._znode_op.2791336, %union._znode_op.2791336, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791336 = type { i32 }
+%struct.FT_Vector_.3881766 = type { i64, i64 }
 
 ; 2 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
@@ -10,9 +10,9 @@
 define i1 @func00000000000007e4(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
-  %6 = getelementptr nusw nuw %struct._zend_op.2791369, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw %struct._zend_op.2791335, ptr %0, i64 %1
   %7 = icmp ult ptr %5, %6
   ret i1 %7
 }
@@ -115,9 +115,9 @@ entry:
 define i1 @func0000000000000744(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct.FT_Vector_.3881816, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.FT_Vector_.3881766, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -16
-  %6 = getelementptr nusw %struct.FT_Vector_.3881816, ptr %0, i64 %1
+  %6 = getelementptr nusw %struct.FT_Vector_.3881766, ptr %0, i64 %1
   %7 = icmp ult ptr %5, %6
   ret i1 %7
 }

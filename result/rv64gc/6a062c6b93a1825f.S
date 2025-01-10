@@ -28,14 +28,3 @@ func0000000000000041:                   # @func0000000000000041
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a1
-	li	a2, 4
-	bltu	a2, a1, .LBB3_2
-	li	a1, 4
-.LBB3_2:                                # %entry
-	slli	a1, a1, 32
-	srli	a1, a1, 32
-	addi	a0, a0, 1
-	sltu	a0, a1, a0
-	ret

@@ -134,15 +134,15 @@ func0000000000000018:                   // @func0000000000000018
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
 	cmp	x0, #3
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000031:                   // @func0000000000000031
 // %bb.0:                               // %entry
-	cmp	x0, #3
+	cmp	x0, #8
 	cset	w0, eq
 	ret
                                         // -- End function

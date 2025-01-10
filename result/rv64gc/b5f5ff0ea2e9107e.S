@@ -29,10 +29,13 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	slli	a2, a2, 3
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	and	a1, a1, a2
-	andi	a1, a1, 128
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
+	li	a1, 128
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	slli	a2, a2, 4
+	andi	a1, a2, 128
 	or	a0, a0, a1
 	ret

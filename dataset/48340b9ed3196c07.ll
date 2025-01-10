@@ -168,14 +168,15 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; clamav/optimized/LzmaDec.c.ll
 ; linux/optimized/forcedeth.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = and i32 %0, -2
-  %2 = icmp eq i32 %1, 2
+  %1 = and i32 %0, -9
+  %2 = icmp eq i32 %1, -9
   ret i1 %2
 }
 

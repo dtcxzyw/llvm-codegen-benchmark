@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGImpactBvh.ll
@@ -14,14 +14,16 @@
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LinearScan.ll
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; postgres/optimized/execute.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp eq i64 %1, 7
+  %2 = icmp eq i64 %1, 0
   %3 = zext nneg i32 %0 to i64
-  %4 = select i1 %2, i64 4294967295, i64 %3
+  %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4
 }
 

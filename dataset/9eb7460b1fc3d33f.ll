@@ -44,20 +44,6 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; git/optimized/column.ll
-; opencv/optimized/histogramphaseunwrapping.cpp.ll
-; wireshark/optimized/lemon.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c2(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  %5 = icmp eq i64 %1, %4
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/drm_hdcp_helper.ll
@@ -132,6 +118,19 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = icmp ne i64 %1, %4
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; opencv/optimized/histogramphaseunwrapping.cpp.ll
+; wireshark/optimized/lemon.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c2(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = zext nneg i32 %3 to i64
+  %5 = icmp eq i64 %1, %4
   %6 = or i1 %0, %5
   ret i1 %6
 }

@@ -21,11 +21,6 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$5000000, %rsi                  # imm = 0x4C4B40
 	setae	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
-	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setle	%al
-	retq
 func00000000000000f4:                   # @func00000000000000f4
 	addq	%rdx, %rsi
 	subq	%rdi, %rsi
@@ -77,6 +72,11 @@ func0000000000000038:                   # @func0000000000000038
 	subq	%rdi, %rsi
 	shrq	$32, %rsi
 	setne	%al
+	retq
+func00000000000000a6:                   # @func00000000000000a6
+	addq	%rdx, %rsi
+	cmpq	%rdi, %rsi
+	setl	%al
 	retq
 func00000000000000b4:                   # @func00000000000000b4
 	addq	%rdx, %rsi

@@ -33,7 +33,8 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; openjdk/optimized/objectStartArray.ll
 ; php/optimized/zend_alloc.ll

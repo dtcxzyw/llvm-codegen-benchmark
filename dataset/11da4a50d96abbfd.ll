@@ -17,21 +17,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umin.i64(i64, i64) #1
 
-; 3 occurrences:
-; linux/optimized/compaction.ll
-; linux/optimized/scm.ll
-; llvm/optimized/PPDirectives.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = add nsw i64 %2, -4
-  %4 = call i64 @llvm.umin.i64(i64 %0, i64 %3)
-  ret i64 %4
-}
-
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
+; git/optimized/sha256.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
@@ -42,9 +30,22 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -512
-  %3 = add nuw nsw i64 %2, 512
-  %4 = call i64 @llvm.umin.i64(i64 %3, i64 %0)
+  %2 = and i64 %1, 63
+  %3 = add nuw nsw i64 %2, 1
+  %4 = tail call i64 @llvm.umin.i64(i64 %3, i64 %0)
+  ret i64 %4
+}
+
+; 3 occurrences:
+; linux/optimized/compaction.ll
+; linux/optimized/scm.ll
+; llvm/optimized/PPDirectives.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = add nsw i64 %2, -4
+  %4 = call i64 @llvm.umin.i64(i64 %0, i64 %3)
   ret i64 %4
 }
 

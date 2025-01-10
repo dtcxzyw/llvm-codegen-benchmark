@@ -1,5 +1,5 @@
 
-%"class.perf::MatType.3721742" = type { i32 }
+%"class.perf::MatType.3721692" = type { i32 }
 
 ; 12 occurrences:
 ; abc/optimized/bmcMaj.c.ll
@@ -190,7 +190,7 @@ entry:
   ret ptr %6
 }
 
-; 143 occurrences:
+; 144 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcSop.c.ll
@@ -312,6 +312,7 @@ entry:
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openusd/optimized/aom_scale.c.ll
+; openusd/optimized/convolve.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -641,20 +642,19 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/imagecut.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openusd/optimized/convolve.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
+  %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -667,7 +667,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"class.perf::MatType.3721742", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.perf::MatType.3721692", ptr %0, i64 %5
   ret ptr %6
 }
 

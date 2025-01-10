@@ -12,10 +12,3 @@ func0000000000000008:                   # @func0000000000000008
 	addq	%rdi, %rax
 	setb	%dl
 	retq
-func0000000000000004:                   # @func0000000000000004
-	leaq	17(%rdi), %rax
-	shlq	$5, %rdi
-	addq	$32, %rdi
-	addq	%rdi, %rax
-	setb	%dl
-	retq

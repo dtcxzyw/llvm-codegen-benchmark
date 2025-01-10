@@ -149,7 +149,8 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; boost/optimized/mapped_file.ll
 ; cpython/optimized/posixmodule.ll
 ; graphviz/optimized/sfvscanf.c.ll

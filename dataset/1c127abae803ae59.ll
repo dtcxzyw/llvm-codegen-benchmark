@@ -85,18 +85,6 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; linux/optimized/md-bitmap.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 9
-  %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %1, %4
-  %6 = icmp sgt i64 %5, %0
-  ret i1 %6
-}
-
 ; 5 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/blk-merge.ll
@@ -146,18 +134,6 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %1, %4
   %6 = icmp samesign ugt i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e6(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %1, %4
-  %6 = icmp slt i64 %5, %0
   ret i1 %6
 }
 

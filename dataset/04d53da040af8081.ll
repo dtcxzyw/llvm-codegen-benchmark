@@ -1,14 +1,14 @@
 
-%"struct.std::pair.2601858" = type { %"class.std::__cxx11::basic_string.2601859", ptr }
-%"class.std::__cxx11::basic_string.2601859" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860", i64, %union.anon.9.2601861 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601860" = type { ptr }
-%union.anon.9.2601861 = type { i64, [8 x i8] }
-%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
-%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403307" = type { [3 x i32] }
-%class.TrafficTypesRowData.3443372 = type <{ i32, [4 x i8], %class.QString.3443361, i8, [7 x i8] }>
-%class.QString.3443361 = type { %struct.QArrayDataPointer.3443362 }
-%struct.QArrayDataPointer.3443362 = type { ptr, ptr, i64 }
-%struct.llama_token_data.3719890 = type { i32, float, float }
+%"struct.std::pair.2601825" = type { %"class.std::__cxx11::basic_string.2601826", ptr }
+%"class.std::__cxx11::basic_string.2601826" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827", i64, %union.anon.9.2601828 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2601827" = type { ptr }
+%union.anon.9.2601828 = type { i64, [8 x i8] }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615528" = type { i64, ptr }
+%"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403273" = type { [3 x i32] }
+%class.TrafficTypesRowData.3443338 = type <{ i32, [4 x i8], %class.QString.3443327, i8, [7 x i8] }>
+%class.QString.3443327 = type { %struct.QArrayDataPointer.3443328 }
+%struct.QArrayDataPointer.3443328 = type { ptr, ptr, i64 }
+%struct.llama_token_data.3719840 = type { i32, float, float }
 
 ; 476 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -492,7 +492,7 @@ define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %"struct.std::pair.2601858", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.2601825", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -571,7 +571,7 @@ define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615528", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -597,7 +597,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403307", ptr %0, i64 %3, i32 0, i64 1
+  %4 = getelementptr nuw %"class.pxrInternal_v0_24__pxrReserved__::GfVec3i.3403273", ptr %0, i64 %3, i32 0, i64 1
   ret ptr %4
 }
 
@@ -614,7 +614,7 @@ define ptr @func0000000000000023(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %class.TrafficTypesRowData.3443372, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %class.TrafficTypesRowData.3443338, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -625,7 +625,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr %struct.llama_token_data.3719890, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.llama_token_data.3719840, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

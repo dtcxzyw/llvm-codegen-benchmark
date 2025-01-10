@@ -70,7 +70,8 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/ip6_offload.ll

@@ -39,8 +39,8 @@ func000000000000002c:                   # @func000000000000002c
 func000000000000002a:                   # @func000000000000002a
 	testl	%edx, %edx
 	setne	%cl
-	testl	%esi, %esi
-	setg	%al
+	cmpl	$2, %esi
+	setge	%al
 	andb	%cl, %al
 	andb	%dil, %al
 	retq

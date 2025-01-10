@@ -1,5 +1,5 @@
 
-; 687 occurrences:
+; 686 occurrences:
 ; abc/optimized/rwrDec.c.ll
 ; abc/optimized/rwtDec.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -202,7 +202,6 @@
 ; linux/optimized/scsi.ll
 ; linux/optimized/scsi_common.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsi_logging.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; linux/optimized/seg6.ll
@@ -1413,7 +1412,7 @@ entry:
   ret i32 %2
 }
 
-; 522 occurrences:
+; 519 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -1723,8 +1722,6 @@ entry:
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/tinyxml2.cpp.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
 ; openjdk/optimized/relocator.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
@@ -1732,7 +1729,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/json.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; pbrt-v4/optimized/parser.cpp.ll

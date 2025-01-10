@@ -123,7 +123,7 @@ entry:
   ret i32 %3
 }
 
-; 145 occurrences:
+; 148 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/deflate.c.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
@@ -236,7 +236,10 @@ entry:
 ; verilator/optimized/V3String.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-epl-profile-parser.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-wccp.c.ll
 ; wolfssl/optimized/tls13.c.ll
@@ -277,7 +280,7 @@ entry:
   ret i32 %3
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; clamav/optimized/chmd.c.ll
@@ -322,6 +325,7 @@ entry:
 ; openjdk/optimized/klass.ll
 ; php/optimized/pcre2_substitute.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
 ; sundials/optimized/arkode_butcher.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-erf.c.ll

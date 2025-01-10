@@ -1,5 +1,5 @@
 
-%struct.prefix_code_node.3436900 = type { i16, i8, [2 x i16] }
+%struct.prefix_code_node.3436866 = type { i16, i8, [2 x i16] }
 
 ; 40 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -58,7 +58,7 @@ entry:
 define i1 @func0000000000000308(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw nuw i8, ptr %2, i64 8
-  %4 = getelementptr %struct.prefix_code_node.3436900, ptr %3, i64 %1
+  %4 = getelementptr %struct.prefix_code_node.3436866, ptr %3, i64 %1
   %5 = icmp ult ptr %4, %3
   %6 = or i1 %0, %5
   ret i1 %6

@@ -1,9 +1,9 @@
 
-%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
-%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
-%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
-%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
-%union.anon.2821744 = type { ptr }
+%struct.XHCIInterrupter.2706931 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706916], i32, i32 }
+%struct.XHCIEvent.2706916 = type { i32, i32, i64, i32, i32, i8, i8 }
+%struct.object_slot.2821711 = type { i32, i32, %struct.jv.2821709, %struct.jv.2821709 }
+%struct.jv.2821709 = type { i8, i8, i16, i32, %union.anon.2821710 }
+%union.anon.2821710 = type { ptr }
 
 ; 42 occurrences:
 ; linux/optimized/cdrom.ll
@@ -295,7 +295,7 @@ define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = getelementptr nusw nuw i8, ptr %0, i64 29928
-  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706931], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -328,7 +328,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821711], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

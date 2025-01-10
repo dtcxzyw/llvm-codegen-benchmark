@@ -1,5 +1,5 @@
 
-; 12475 occurrences:
+; 12472 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDfs.c.ll
@@ -1209,7 +1209,6 @@
 ; cmake/optimized/urlapi.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -2004,7 +2003,6 @@
 ; delta-rs/optimized/511pneock729w0zl.ll
 ; delta-rs/optimized/55vh0ifmkuogw8lk.ll
 ; delta-rs/optimized/58altwavzp897k60.ll
-; delta-rs/optimized/5d242f2by7re2olg.ll
 ; delta-rs/optimized/92k1gkghnwntrq2.ll
 ; delta-rs/optimized/9gmae4ut7cf65r3.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
@@ -12417,7 +12415,6 @@
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_decompress.c.ll

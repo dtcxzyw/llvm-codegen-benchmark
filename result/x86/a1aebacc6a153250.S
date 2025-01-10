@@ -10,9 +10,3 @@ func0000000000000002:                   # @func0000000000000002
 	cmovlq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	cmpq	$8, %rsi
-	movl	$8, %eax
-	cmovlq	%rsi, %rax
-	leaq	(%rdi,%rax,8), %rax
-	retq

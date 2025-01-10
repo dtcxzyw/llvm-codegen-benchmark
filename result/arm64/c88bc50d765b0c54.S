@@ -1,10 +1,3 @@
-func00000000000000c8:                   // @func00000000000000c8
-// %bb.0:                               // %entry
-	add	x8, x1, x2
-	cmp	x8, x0
-	cset	w0, lo
-	ret
-                                        // -- End function
 func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
 	add	x8, x1, x2
@@ -17,6 +10,14 @@ func0000000000000018:                   // @func0000000000000018
 	add	x8, x1, x2
 	cmp	x8, x0
 	cset	w0, ne
+	ret
+                                        // -- End function
+func00000000000000c8:                   // @func00000000000000c8
+// %bb.0:                               // %entry
+	mov	w8, #24                         // =0x18
+	madd	x8, x2, x8, x1
+	cmp	x8, x0
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000098:                   // @func0000000000000098

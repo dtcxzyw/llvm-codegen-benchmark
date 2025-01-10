@@ -1,8 +1,8 @@
 
-%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%struct._zend_op.2790373 = type { ptr, %union._znode_op.2790382, %union._znode_op.2790382, %union._znode_op.2790382, i32, i32, i8, i8, i8, i8 }
-%union._znode_op.2790382 = type { i32 }
-%struct.lv_color32_t.3074632 = type { i8, i8, i8, i8 }
+%struct.direntry_t.2705766 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%struct._zend_op.2790339 = type { ptr, %union._znode_op.2790348, %union._znode_op.2790348, %union._znode_op.2790348, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2790348 = type { i32 }
+%struct.lv_color32_t.3074598 = type { i8, i8, i8, i8 }
 
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
@@ -12,7 +12,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.direntry_t.2705800, ptr %4, i64 %5, i32 1
+  %6 = getelementptr %struct.direntry_t.2705766, ptr %4, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -43,7 +43,7 @@ entry:
 define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw nuw %struct._zend_op.2790373, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct._zend_op.2790339, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   %7 = getelementptr nusw nuw i8, ptr %6, i64 8
@@ -137,7 +137,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
-  %6 = getelementptr %struct.lv_color32_t.3074632, ptr %4, i64 %5, i32 3
+  %6 = getelementptr %struct.lv_color32_t.3074598, ptr %4, i64 %5, i32 3
   ret ptr %6
 }
 

@@ -187,10 +187,9 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; clamav/optimized/others_common.c.ll
-; cmake/optimized/lzma_decoder.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll

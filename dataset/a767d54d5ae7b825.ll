@@ -1,10 +1,10 @@
 
-%"class.std::__cxx11::basic_string.2811822" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823", i64, %union.anon.2811824 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811823" = type { ptr }
-%union.anon.2811824 = type { i64, [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422597" = type { %"union.std::aligned_storage<8, 8>::type.3422598", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422599" }
-%"union.std::aligned_storage<8, 8>::type.3422598" = type { [8 x i8] }
-%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422599" = type { ptr }
+%"class.std::__cxx11::basic_string.2811788" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811789", i64, %union.anon.2811790 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2811789" = type { ptr }
+%union.anon.2811790 = type { i64, [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422563" = type { %"union.std::aligned_storage<8, 8>::type.3422564", %"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422565" }
+%"union.std::aligned_storage<8, 8>::type.3422564" = type { [8 x i8] }
+%"class.pxrInternal_v0_24__pxrReserved__::TfPointerAndBits.3422565" = type { ptr }
 
 ; 9 occurrences:
 ; llvm/optimized/MachineFunction.cpp.ll
@@ -80,9 +80,9 @@ entry:
 define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2811788", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 32
-  %6 = getelementptr %"class.std::__cxx11::basic_string.2811822", ptr %5, i64 %3
+  %6 = getelementptr %"class.std::__cxx11::basic_string.2811788", ptr %5, i64 %3
   ret ptr %6
 }
 
@@ -103,7 +103,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422597", ptr %0, i64 %1
+  %3 = getelementptr %"class.pxrInternal_v0_24__pxrReserved__::VtValue.3422563", ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 32
   %5 = getelementptr i8, ptr %4, i64 %2
   ret ptr %5

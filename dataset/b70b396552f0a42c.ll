@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<16, 8>::type.2686303" = type { [16 x i8] }
+%"union.std::aligned_storage<16, 8>::type.2686269" = type { [16 x i8] }
 
 ; 8 occurrences:
 ; folly/optimized/ThreadedExecutor.cpp.ll
@@ -34,7 +34,7 @@ entry:
   %2 = call noundef i32 @llvm.cttz.i32(i32 %1, i1 true), !range !0
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686303"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [15 x %"union.std::aligned_storage<16, 8>::type.2686269"], ptr %4, i64 0, i64 %3
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }

@@ -1,6 +1,6 @@
 
-%struct.v4l2_plane.3774799 = type { i32, i32, %union.anon.0.3774801, i32, [11 x i32] }
-%union.anon.0.3774801 = type { i64 }
+%struct.v4l2_plane.3774749 = type { i32, i32, %union.anon.0.3774751, i32, [11 x i32] }
+%union.anon.0.3774751 = type { i64 }
 
 ; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -63,7 +63,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 736
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw nuw [8 x %struct.v4l2_plane.3774799], ptr %5, i64 0, i64 %0
+  %6 = getelementptr nusw nuw [8 x %struct.v4l2_plane.3774749], ptr %5, i64 0, i64 %0
   ret ptr %6
 }
 

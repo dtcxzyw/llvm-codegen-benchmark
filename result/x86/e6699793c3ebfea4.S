@@ -28,6 +28,12 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rax, %rcx
 	cmovbq	%rcx, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	movl	%esi, %eax
+	leaq	1(%rdi), %rcx
+	cmpq	%rax, %rcx
+	cmovbq	%rcx, %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
 	leaq	-1(%rdi), %rcx

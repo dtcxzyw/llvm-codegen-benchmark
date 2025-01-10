@@ -24,9 +24,10 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; brotli/optimized/encode.c.ll
 ; freetype/optimized/psaux.c.ll
+; linux/optimized/vsprintf.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll

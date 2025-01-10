@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; darktable/optimized/IiqDecoder.cpp.ll
+; 13 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
@@ -261,9 +260,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
-; lief/optimized/CoreAuxv.cpp.ll
 ; sundials/optimized/sundials_logger.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000004c(i32 %0, i32 %1, i64 %2) #0 {
@@ -294,18 +292,6 @@ define i1 @func0000000000000298(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp ne i64 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; lief/optimized/RelocationSizes.cpp.ll
-; lief/optimized/RelocationStrings.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 2216
-  %4 = icmp ult i32 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

@@ -1,6 +1,6 @@
 
-%"class.marisa::Key.2749022" = type { ptr, i32, %"union.marisa::Key::Union.2749023" }
-%"union.marisa::Key::Union.2749023" = type { i32 }
+%"class.marisa::Key.2748988" = type { ptr, i32, %"union.marisa::Key::Union.2748989" }
+%"union.marisa::Key::Union.2748989" = type { i32 }
 
 ; 3 occurrences:
 ; miniaudio/optimized/unity.c.ll
@@ -11,7 +11,7 @@ define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.marisa::Key.2749022", ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw nuw %"class.marisa::Key.2748988", ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

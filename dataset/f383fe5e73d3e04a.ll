@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.30.2777666" = type { %"struct.std::__atomic_base.31.2777676" }
-%"struct.std::__atomic_base.31.2777676" = type { i64 }
+%"struct.std::atomic.30.2777632" = type { %"struct.std::__atomic_base.31.2777642" }
+%"struct.std::__atomic_base.31.2777642" = type { i64 }
 
 ; 133 occurrences:
 ; abc/optimized/mapperMatch.c.ll
@@ -154,7 +154,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 1240
-  %4 = getelementptr nusw [2 x %"struct.std::atomic.30.2777666"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [2 x %"struct.std::atomic.30.2777632"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

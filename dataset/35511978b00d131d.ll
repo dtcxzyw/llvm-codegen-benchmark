@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 67 occurrences:
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; actix-rs/optimized/3tnlvci61w0nl5yv.ll
 ; actix-rs/optimized/4qw0kfiz3ki66qyr.ll
@@ -16,7 +16,6 @@
 ; hdf5/optimized/H5HFdbg.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/dm-ioctl.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
@@ -658,6 +657,16 @@ entry:
 define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = call noundef i64 @llvm.usub.sat.i64(i64 %1, i64 %2)
+  %4 = icmp uge i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/build_policy.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = tail call i64 @llvm.usub.sat.i64(i64 %1, i64 %2)
   %4 = icmp uge i64 %3, %0
   ret i1 %4
 }

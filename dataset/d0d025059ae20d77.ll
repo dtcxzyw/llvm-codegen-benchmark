@@ -1,14 +1,12 @@
 
-; 9 occurrences:
+; 7 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; rocksdb/optimized/concurrent_arena.cc.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:

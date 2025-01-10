@@ -22,12 +22,13 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -17,6 +17,7 @@
 ; opencv/optimized/simpleflow.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/zend_API.ll
+; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
@@ -144,9 +145,8 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; boost/optimized/message.ll
-; clamav/optimized/LzmaDec.c.ll
 ; llvm/optimized/InlineAsm.cpp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll

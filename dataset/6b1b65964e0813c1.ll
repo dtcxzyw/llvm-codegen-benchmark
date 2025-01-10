@@ -1,8 +1,8 @@
 
-%"class.std::__cxx11::basic_string.2699639" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699640", i64, %union.anon.2699641 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699640" = type { ptr }
-%union.anon.2699641 = type { i64, [8 x i8] }
-%struct.XineramaScreenInfo.2731356 = type { i32, i16, i16, i16, i16 }
+%"class.std::__cxx11::basic_string.2699605" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699606", i64, %union.anon.2699607 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2699606" = type { ptr }
+%union.anon.2699607 = type { i64, [8 x i8] }
+%struct.XineramaScreenInfo.2731322 = type { i32, i16, i16, i16, i16 }
 
 ; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -18,7 +18,7 @@ define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nuw %"class.std::__cxx11::basic_string.2699639", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.std::__cxx11::basic_string.2699605", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -34,7 +34,7 @@ define ptr @func000000000000001f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nuw %struct.XineramaScreenInfo.2731356, ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %struct.XineramaScreenInfo.2731322, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.6.2735340" = type { %struct.BEInt.7.2735341 }
-%struct.BEInt.7.2735341 = type { [4 x i8] }
+%"struct.OT::IntType.6.2735306" = type { %struct.BEInt.7.2735307 }
+%struct.BEInt.7.2735307 = type { [4 x i8] }
 
 ; 1 occurrences:
 ; ruby/optimized/string.ll
@@ -115,7 +115,7 @@ entry:
   ret ptr %5
 }
 
-; 74 occurrences:
+; 73 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; clamav/optimized/infblock.c.ll
@@ -151,7 +151,6 @@ entry:
 ; php/optimized/metaphone.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_strtod.ll
-; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wolfssl/optimized/md5.c.ll
@@ -374,8 +373,9 @@ entry:
   ret ptr %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; cpython/optimized/obmalloc.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -428,7 +428,7 @@ entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 5
-  %5 = getelementptr nusw nuw %"struct.OT::IntType.6.2735340", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.6.2735306", ptr %4, i64 %3
   ret ptr %5
 }
 

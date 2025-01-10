@@ -1,8 +1,8 @@
 
-%union.anon.3109866 = type { %"struct.Minisat::Lit.3109864" }
-%"struct.Minisat::Lit.3109864" = type { i32 }
-%struct.xfrm_offload.3531723 = type { %struct.anon.80.3531724, i32, i32, i8, i8 }
-%struct.anon.80.3531724 = type { i32, i32 }
+%union.anon.3109832 = type { %"struct.Minisat::Lit.3109830" }
+%"struct.Minisat::Lit.3109830" = type { i32 }
+%struct.xfrm_offload.3531689 = type { %struct.anon.80.3531690, i32, i32, i8, i8 }
+%struct.anon.80.3531690 = type { i32, i32 }
 
 ; 1 occurrences:
 ; abc/optimized/bblif.c.ll
@@ -29,7 +29,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 4
-  %7 = getelementptr nusw [0 x %union.anon.3109866], ptr %6, i64 0, i64 %4
+  %7 = getelementptr nusw [0 x %union.anon.3109832], ptr %6, i64 0, i64 %4
   ret ptr %7
 }
 
@@ -59,7 +59,7 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %1
   %6 = getelementptr nusw nuw i8, ptr %5, i64 64
-  %7 = getelementptr [1 x %struct.xfrm_offload.3531723], ptr %6, i64 0, i64 %4
+  %7 = getelementptr [1 x %struct.xfrm_offload.3531689], ptr %6, i64 0, i64 %4
   ret ptr %7
 }
 

@@ -84,18 +84,16 @@ entry:
   ret i16 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/str.c.ll
 ; cmake/optimized/ftp.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; icu/optimized/uprntf_p.ll
 ; icu/optimized/uscanf_p.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/acct.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {

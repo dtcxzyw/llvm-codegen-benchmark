@@ -331,4 +331,18 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-shlib-quic_txp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e1(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 1, %3
+  %5 = select i1 %1, i64 1, i64 %4
+  %6 = and i64 %5, %0
+  %7 = icmp eq i64 %6, 0
+  ret i1 %7
+}
+
 attributes #0 = { nounwind }

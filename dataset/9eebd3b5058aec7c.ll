@@ -27,7 +27,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.umax.i64(i64, i64) #1
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -45,7 +45,6 @@ declare i64 @llvm.umax.i64(i64, i64) #1
 ; openssl/optimized/libssl-lib-s3_enc.ll
 ; openssl/optimized/libssl-shlib-s3_enc.ll
 ; qemu/optimized/block_parallels-ext.c.ll
-; redis/optimized/dict.ll
 ; redis/optimized/t_string.ll
 ; slurm/optimized/acct_policy.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll

@@ -51,7 +51,3 @@ func00000000000000e1:                   # @func00000000000000e1
 	vand.vi	v8, v8, 4
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmclr.m	v0
-	ret

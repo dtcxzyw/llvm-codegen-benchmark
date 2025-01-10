@@ -1,14 +1,14 @@
 
-%"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844355" = type { %"class.QuantLib::Array.2844331", %"class.QuantLib::Array.2844331", %"class.QuantLib::Array.2844331", %"class.boost::shared_ptr.86.2844330" }
-%"class.QuantLib::Array.2844331" = type { %"class.std::unique_ptr.2844332", i64 }
-%"class.std::unique_ptr.2844332" = type { %"struct.std::__uniq_ptr_data.2844333" }
-%"struct.std::__uniq_ptr_data.2844333" = type { %"class.std::__uniq_ptr_impl.2844334" }
-%"class.std::__uniq_ptr_impl.2844334" = type { %"class.std::tuple.2844335" }
-%"class.std::tuple.2844335" = type { %"struct.std::_Tuple_impl.2844336" }
-%"struct.std::_Tuple_impl.2844336" = type { %"struct.std::_Head_base.44.2844337" }
-%"struct.std::_Head_base.44.2844337" = type { ptr }
-%"class.boost::shared_ptr.86.2844330" = type { ptr, %"class.boost::detail::shared_count.2844318" }
-%"class.boost::detail::shared_count.2844318" = type { ptr }
+%"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844321" = type { %"class.QuantLib::Array.2844297", %"class.QuantLib::Array.2844297", %"class.QuantLib::Array.2844297", %"class.boost::shared_ptr.86.2844296" }
+%"class.QuantLib::Array.2844297" = type { %"class.std::unique_ptr.2844298", i64 }
+%"class.std::unique_ptr.2844298" = type { %"struct.std::__uniq_ptr_data.2844299" }
+%"struct.std::__uniq_ptr_data.2844299" = type { %"class.std::__uniq_ptr_impl.2844300" }
+%"class.std::__uniq_ptr_impl.2844300" = type { %"class.std::tuple.2844301" }
+%"class.std::tuple.2844301" = type { %"struct.std::_Tuple_impl.2844302" }
+%"struct.std::_Tuple_impl.2844302" = type { %"struct.std::_Head_base.44.2844303" }
+%"struct.std::_Head_base.44.2844303" = type { ptr }
+%"class.boost::shared_ptr.86.2844296" = type { ptr, %"class.boost::detail::shared_count.2844284" }
+%"class.boost::detail::shared_count.2844284" = type { ptr }
 
 ; 72 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
@@ -213,8 +213,7 @@ entry:
   ret ptr %5
 }
 
-; 28 occurrences:
-; hyperscan/optimized/noodle_engine.c.ll
+; 27 occurrences:
 ; llvm/optimized/CocoaConventions.cpp.ll
 ; llvm/optimized/ExprMutationAnalyzer.cpp.ll
 ; luajit/optimized/minilua.ll
@@ -281,7 +280,7 @@ define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = tail call noundef range(i64 -1152921504606846977, 1152921504606846976) i64 @llvm.umin.i64(i64 %1, i64 %3)
-  %5 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844355", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.QuantLib::AndreasenHugeVolatilityInterpl::SingleStepCalibrationResult.2844321", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -333,11 +332,12 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/kernel.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; hermes/optimized/Path.cpp.ll
+; hyperscan/optimized/noodle_engine.c.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll

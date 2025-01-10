@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; gromacs/optimized/colvarproxy.cpp.ll
 ; gromacs/optimized/colvarproxy_volmaps.cpp.ll

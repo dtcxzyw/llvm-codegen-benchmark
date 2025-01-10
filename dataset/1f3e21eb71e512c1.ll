@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; cmake/optimized/zstd_decompress.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/i8042.ll
 ; linux/optimized/insn.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/trace_output.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; luajit/optimized/lj_gc.ll

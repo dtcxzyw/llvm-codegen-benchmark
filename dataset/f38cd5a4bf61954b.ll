@@ -34,9 +34,10 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; php/optimized/mod_files.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -70,9 +71,10 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; verilator/optimized/V3Number.cpp.ll
 ; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
@@ -81,19 +83,6 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nsw i64 %3, -1
   %5 = getelementptr nusw [0 x i16], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 3 occurrences:
-; delta-rs/optimized/47qjbhol909h8zu7.ll
-; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
-; verilator/optimized/V3Number.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nsw i64 %3, -1
-  %5 = getelementptr nusw nuw [129 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -123,17 +112,6 @@ entry:
 }
 
 ; 1 occurrences:
-; php/optimized/mod_files.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = add nsw i64 %3, 1
-  %5 = getelementptr nusw nuw [4096 x i8], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 1 occurrences:
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
@@ -141,6 +119,18 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = add nuw i64 %3, 1
   %5 = getelementptr nusw [0 x i128], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nsw i64 %3, -1
+  %5 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -18,7 +18,6 @@
 ; postgres/optimized/tlist.ll
 ; postgres/optimized/walreceiver.ll
 ; postgres/optimized/zic.ll
-; raylib/optimized/rcore.c.ll
 ; ruby/optimized/ruby.ll
 ; slurm/optimized/bitstring.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -31,9 +30,8 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaSort.c.ll
-; clamav/optimized/cabd.c.ll
 ; graphviz/optimized/solve.c.ll
 ; gromacs/optimized/gmx_current.cpp.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
@@ -70,10 +68,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; git/optimized/remote-curl.ll
 ; git/optimized/rev-parse.ll
-; postgres/optimized/xlogreader.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,10 +1,3 @@
-func0000000000000acc:                   # @func0000000000000acc
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
-	vmsle.vv	v12, v8, v10
-	vmsle.vi	v8, v10, -1
-	vmor.mm	v0, v8, v12
-	ret
 func0000000000000a8c:                   # @func0000000000000a8c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12

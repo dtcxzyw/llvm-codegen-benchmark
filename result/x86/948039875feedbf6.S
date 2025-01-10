@@ -16,10 +16,22 @@ func0000000000000030:                   # @func0000000000000030
 	setae	%al
 	orb	%sil, %al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	xorb	$1, %sil
+	testb	%dil, %dil
+	setle	%al
+	orb	%sil, %al
+	retq
 func0000000000000028:                   # @func0000000000000028
 	xorb	$1, %sil
 	cmpb	$2, %dil
 	setb	%al
+	orb	%sil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorb	$1, %sil
+	testb	%dil, %dil
+	setns	%al
 	orb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008

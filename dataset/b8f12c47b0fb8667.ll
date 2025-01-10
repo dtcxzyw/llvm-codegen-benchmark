@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; cpython/optimized/obmalloc.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; luau/optimized/lgc.cpp.ll

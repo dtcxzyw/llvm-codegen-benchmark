@@ -1,6 +1,6 @@
 
-%class.aiVector3t.2829405 = type { float, float, float }
-%"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824548" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
+%class.aiVector3t.2829371 = type { float, float, float }
+%"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824498" = type <{ [2 x ptr], ptr, i32, [4 x i8] }>
 
 ; 6 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
@@ -56,7 +56,7 @@ define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %class.aiVector3t.2829405, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %class.aiVector3t.2829371, ptr %1, i64 %4
   %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
@@ -84,7 +84,7 @@ define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824548", ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %"class.vcg::tri::UpdateFlags<vcg::SMesh>::EdgeSorter.3824498", ptr %1, i64 %4
   %6 = icmp ult ptr %0, %5
   ret i1 %6
 }

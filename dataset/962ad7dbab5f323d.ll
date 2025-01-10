@@ -1,5 +1,5 @@
 
-%struct.dtMeshTile.3108389 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
+%struct.dtMeshTile.3108355 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
 
 ; 1 occurrences:
 ; php/optimized/memory.ll
@@ -68,7 +68,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw %struct.dtMeshTile.3108389, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.dtMeshTile.3108355, ptr %1, i64 %2
   %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false

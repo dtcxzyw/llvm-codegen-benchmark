@@ -1,5 +1,5 @@
 
-; 582 occurrences:
+; 583 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -39,6 +39,7 @@
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

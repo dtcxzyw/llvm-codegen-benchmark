@@ -1,5 +1,5 @@
 
-%struct.Au_Obj_t_.2878087 = type { i64, [2 x i32] }
+%struct.Au_Obj_t_.2878053 = type { i64, [2 x i32] }
 
 ; 5 occurrences:
 ; linux/optimized/iov_iter.ll
@@ -23,7 +23,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw nuw %struct.Au_Obj_t_.2878087, ptr %0, i64 %1
+  %2 = getelementptr nusw nuw %struct.Au_Obj_t_.2878053, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 1023
   %5 = sub nsw i64 0, %4
@@ -41,7 +41,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.Au_Obj_t_.2878087, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct.Au_Obj_t_.2878053, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 1023
   %5 = sub nsw i64 0, %4

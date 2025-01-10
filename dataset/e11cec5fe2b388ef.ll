@@ -1,7 +1,7 @@
 
-%struct.pm_constant_pool_bucket_t.2600930 = type { i32, i32 }
-%struct.FuncTypeEntry.2748662 = type { i32, ptr }
-%struct.SEntry.2748811 = type { ptr, ptr }
+%struct.pm_constant_pool_bucket_t.2600897 = type { i32, i32 }
+%struct.FuncTypeEntry.2748628 = type { i32, ptr }
+%struct.SEntry.2748777 = type { ptr, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/pipe.ll
@@ -13,7 +13,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr %struct.pm_constant_pool_bucket_t.2600930, ptr %0, i64 %6
+  %7 = getelementptr %struct.pm_constant_pool_bucket_t.2600897, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -30,7 +30,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748662, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.FuncTypeEntry.2748628, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -43,7 +43,7 @@ entry:
   %4 = add i32 %1, 1
   %5 = and i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw nuw %struct.SEntry.2748811, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.SEntry.2748777, ptr %0, i64 %6
   ret ptr %7
 }
 

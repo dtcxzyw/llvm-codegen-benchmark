@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 179 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/resFilter.c.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
@@ -40,6 +40,7 @@
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
+; linux/optimized/vc_screen.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -333,6 +334,18 @@ entry:
 }
 
 ; 2 occurrences:
+; luau/optimized/lstrlib.cpp.ll
+; postgres/optimized/timestamp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add nuw i32 %2, 1
+  %4 = sub i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; Function Attrs: nounwind
@@ -366,17 +379,6 @@ define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 2
-  %4 = sub i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; postgres/optimized/timestamp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, 1
   %4 = sub i32 %3, %0
   ret i32 %4
 }

@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3554398 = type { i32, i8 }
+%struct.alps_nibble_commands.3554364 = type { i32, i8 }
 
 ; 1 occurrences:
 ; linux/optimized/lz4_decompress.ll
@@ -20,7 +20,7 @@ define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.alps_nibble_commands.3554364, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -39,10 +39,3 @@ func0000000000000109:                   # @func0000000000000109
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
-	cmpq	%rsi, %rdx
-	setb	%cl
-	cmpq	%rsi, %rdi
-	setae	%al
-	orb	%cl, %al
-	retq

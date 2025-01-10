@@ -146,7 +146,7 @@ entry:
   ret i1 %5
 }
 
-; 96 occurrences:
+; 95 occurrences:
 ; boost/optimized/args_cmd.ll
 ; boost/optimized/args_handling.ll
 ; boost/optimized/async.ll
@@ -188,7 +188,6 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/assemble.ll
-; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; darktable/optimized/image.c.ll

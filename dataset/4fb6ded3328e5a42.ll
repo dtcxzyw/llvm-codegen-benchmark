@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3168253" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3168219" = type { ptr, ptr, ptr, ptr }
 
 ; 8 occurrences:
 ; cpython/optimized/unicodeobject.ll
@@ -47,8 +47,9 @@ entry:
   ret ptr %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
@@ -93,18 +94,6 @@ entry:
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
   %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007f(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 16, %2
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
-  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -285,7 +274,7 @@ entry:
 define ptr @func000000000000006c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3168253", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3168219", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6

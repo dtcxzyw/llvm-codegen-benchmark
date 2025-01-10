@@ -1,6 +1,5 @@
 
-; 36 occurrences:
-; darktable/optimized/history.c.ll
+; 34 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; git/optimized/kwset.ll
 ; jq/optimized/regexec.ll
@@ -22,7 +21,6 @@
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/implicit_weak_message.cc.ll
 ; protobuf/optimized/message_lite.cc.ll
-; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/lvm.ll
 ; ruby/optimized/parse.ll
@@ -46,7 +44,7 @@ entry:
   ret i1 %6
 }
 
-; 77 occurrences:
+; 75 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
@@ -70,7 +68,6 @@ entry:
 ; icu/optimized/package.ll
 ; icu/optimized/uloc_tag.ll
 ; jq/optimized/regexec.ll
-; linux/optimized/vsprintf.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
@@ -88,7 +85,6 @@ entry:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; opencv/optimized/tensor.pb.cc.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
-; openjdk/optimized/splashscreen_impl.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; postgres/optimized/inet_net_pton.ll

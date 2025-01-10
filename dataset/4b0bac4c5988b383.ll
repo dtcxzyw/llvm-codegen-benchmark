@@ -15,6 +15,30 @@ entry:
   ret i1 %7
 }
 
+; 12 occurrences:
+; abc/optimized/absRpm.c.ll
+; gromacs/optimized/inputrec.cpp.ll
+; icu/optimized/uts46.ll
+; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
+; openmpi/optimized/hook_comm_method_fns.ll
+; openspiel/optimized/tarok.cc.ll
+; openssl/optimized/libcrypto-lib-encoder_pkey.ll
+; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
+; postgres/optimized/arrayfuncs.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
+; verilator/optimized/V3Number.cpp.ll
+; verilator/optimized/V3Tristate.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001c2c(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %1, 1
+  %5 = icmp eq i64 %4, %3
+  %6 = icmp ne i32 %0, 0
+  %7 = select i1 %6, i1 true, i1 %5
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/forte.ll
 ; Function Attrs: nounwind
@@ -56,28 +80,6 @@ entry:
   %4 = add nuw nsw i64 %1, 1
   %5 = icmp eq i64 %4, %3
   %6 = icmp eq i32 %0, 0
-  %7 = select i1 %6, i1 true, i1 %5
-  ret i1 %7
-}
-
-; 10 occurrences:
-; abc/optimized/absRpm.c.ll
-; gromacs/optimized/inputrec.cpp.ll
-; icu/optimized/uts46.ll
-; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
-; openmpi/optimized/hook_comm_method_fns.ll
-; openspiel/optimized/tarok.cc.ll
-; postgres/optimized/arrayfuncs.ll
-; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
-; verilator/optimized/V3Number.cpp.ll
-; verilator/optimized/V3Tristate.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000001c2c(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %1, 1
-  %5 = icmp eq i64 %4, %3
-  %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
   ret i1 %7
 }

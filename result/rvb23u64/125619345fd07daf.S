@@ -10,12 +10,6 @@ func00000000000000c0:                   # @func00000000000000c0
 	sh3add	a0, a2, a0
 	addi	a0, a0, 72
 	ret
-func00000000000000f0:                   # @func00000000000000f0
-	sh1add	a2, a2, a2
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 96
-	ret
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a2, a2, a2
 	sh3add	a0, a1, a0
@@ -33,6 +27,12 @@ func0000000000000050:                   # @func0000000000000050
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
 	addi	a0, a0, -12
+	ret
+func00000000000000f0:                   # @func00000000000000f0
+	sh1add	a2, a2, a2
+	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
+	addi	a0, a0, 12
 	ret
 func0000000000000070:                   # @func0000000000000070
 	sh1add	a2, a2, a2

@@ -33,3 +33,11 @@ func000000000000000a:                   # @func000000000000000a
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
+func0000000000000006:                   # @func0000000000000006
+	andi	a0, a0, 1
+	bnez	a0, .LBB4_2
+	mv	a1, a2
+.LBB4_2:                                # %entry
+	slliw	a0, a1, 3
+	slti	a0, a0, 2
+	ret

@@ -191,10 +191,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgemm_itcopy.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -16
-  %3 = sub i64 %0, %2
+  %3 = sub nsw i64 %0, %2
   %4 = add nsw i64 %3, -24
   ret i64 %4
 }

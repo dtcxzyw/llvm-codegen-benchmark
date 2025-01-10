@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 171 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcXsim.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -90,6 +90,8 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lib_aux.ll
 ; luajit/optimized/lib_aux_dyn.ll
+; luajit/optimized/lib_string.ll
+; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; meshlab/optimized/baseio.cpp.ll

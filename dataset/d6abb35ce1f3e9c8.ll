@@ -1,5 +1,5 @@
 
-%"struct.(anonymous namespace)::CaseRange.3333327" = type { ptr, ptr, ptr }
+%"struct.(anonymous namespace)::CaseRange.3333293" = type { ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -24,7 +24,7 @@ entry:
   %2 = sdiv i64 %1, 24
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr nusw nuw %"struct.(anonymous namespace)::CaseRange.3333327", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.(anonymous namespace)::CaseRange.3333293", ptr %0, i64 %4
   ret ptr %5
 }
 

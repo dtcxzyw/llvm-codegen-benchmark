@@ -1,16 +1,16 @@
 .LCPI0_0:
-	.long	267                             # 0x10b
+	.long	7                               # 0x7
 .LCPI0_1:
-	.long	204                             # 0xcc
+	.long	1                               # 0x1
 .LCPI0_2:
-	.quad	32                              # 0x20
+	.quad	2                               # 0x2
 .LCPI0_3:
-	.quad	1024                            # 0x400
+	.quad	1                               # 0x1
 func0000000000000021:                   # @func0000000000000021
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpblendw	$170, %xmm1, %xmm0, %xmm0       # xmm0 = xmm0[0],xmm1[1],xmm0[2],xmm1[3],xmm0[4],xmm1[5],xmm0[6],xmm1[7]
-	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
-	vpcmpneqd	.LCPI0_1(%rip){1to4}, %xmm0, %k2
-	vpbroadcastq	.LCPI0_2(%rip), %ymm0 {%k2} {z} # ymm0 {%k2} {z} = [32,32,32,32]
-	vpbroadcastq	.LCPI0_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1024,1024,1024,1024]
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm0, %k1
+	vpbroadcastq	.LCPI0_2(%rip), %ymm1   # ymm1 = [2,2,2,2]
+	vpbroadcastq	.LCPI0_3(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1]
+	vptestmd	%xmm0, %xmm0, %k1
+	vmovdqa64	%ymm1, %ymm0 {%k1} {z}
 	retq

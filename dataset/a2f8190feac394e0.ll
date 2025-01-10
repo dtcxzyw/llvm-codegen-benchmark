@@ -34,9 +34,10 @@ entry:
   ret ptr %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; darktable/optimized/export.c.ll
+; git/optimized/xutils.ll
 ; imgui/optimized/imgui.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openspiel/optimized/battleship.cc.ll
@@ -124,20 +125,6 @@ entry:
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 2 occurrences:
-; git/optimized/xutils.ll
-; openusd/optimized/patchMap.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000017(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, 2
-  %5 = add nsw i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -243,13 +230,13 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000033(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000032(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

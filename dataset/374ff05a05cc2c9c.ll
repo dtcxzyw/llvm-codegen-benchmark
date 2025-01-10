@@ -1,20 +1,20 @@
 
-%struct.loopargs_st.2633793 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
-%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
-%"struct.std::array.2683308" = type { [14 x i8] }
-%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
-%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
-%"union.std::aligned_storage<8, 8>::type.2684258" = type { [8 x i8] }
-%"struct.folly::f14::detail::F14Chunk.2684259" = type { %"struct.std::array.59.2684260", i8, i8, %"struct.std::array.60.2684261" }
-%"struct.std::array.59.2684260" = type { [14 x i8] }
-%"struct.std::array.60.2684261" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684258"] }
-%struct.CPUTLBEntryFull.2707266 = type { i64, i64, %struct.MemTxAttrs.2707268, i8, i8, [3 x i8], %union.anon.3.2707269 }
-%struct.MemTxAttrs.2707268 = type { i32 }
-%union.anon.3.2707269 = type { %struct.anon.4.2707270 }
-%struct.anon.4.2707270 = type { i8, i8, i8 }
-%struct.quic_pp_cipher.3436945 = type { ptr, [12 x i8] }
-%struct.hid_report_enum.3538081 = type { i32, %struct.list_head.3538075, [256 x ptr] }
-%struct.list_head.3538075 = type { ptr, ptr }
+%struct.loopargs_st.2633760 = type { ptr, ptr, ptr, ptr, ptr, ptr, ptr, i64, i64, i64, [7 x ptr], [7 x ptr], [7 x ptr], [7 x ptr], [2 x ptr], [2 x ptr], [22 x ptr], [22 x ptr], [24 x ptr], [2 x ptr], [2 x ptr], [1 x ptr], [1 x ptr], [1 x ptr], ptr, ptr, [24 x i64], [5 x ptr], ptr, ptr, ptr, ptr, [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x ptr], [111 x i64], [111 x i64], [111 x ptr] }
+%"struct.folly::f14::detail::F14Chunk.2683274" = type { %"struct.std::array.2683275", i8, i8, %"struct.std::array.53.2683276" }
+%"struct.std::array.2683275" = type { [14 x i8] }
+%"struct.std::array.53.2683276" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683234"] }
+%"union.std::aligned_storage<8, 8>::type.2683234" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2684225" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2684226" = type { %"struct.std::array.59.2684227", i8, i8, %"struct.std::array.60.2684228" }
+%"struct.std::array.59.2684227" = type { [14 x i8] }
+%"struct.std::array.60.2684228" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2684225"] }
+%struct.CPUTLBEntryFull.2707232 = type { i64, i64, %struct.MemTxAttrs.2707234, i8, i8, [3 x i8], %union.anon.3.2707235 }
+%struct.MemTxAttrs.2707234 = type { i32 }
+%union.anon.3.2707235 = type { %struct.anon.4.2707236 }
+%struct.anon.4.2707236 = type { i8, i8, i8 }
+%struct.quic_pp_cipher.3436911 = type { ptr, [12 x i8] }
+%struct.hid_report_enum.3538047 = type { i32, %struct.list_head.3538041, [256 x ptr] }
+%struct.list_head.3538041 = type { ptr, ptr }
 
 ; 32 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
@@ -53,7 +53,7 @@
 define ptr @func000000000000006f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
-  %4 = getelementptr nuw %struct.loopargs_st.2633793, ptr %1, i64 %2, i32 10, i64 %3
+  %4 = getelementptr nuw %struct.loopargs_st.2633760, ptr %1, i64 %2, i32 10, i64 %3
   ret ptr %4
 }
 
@@ -149,9 +149,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000007f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %1, i64 %2, i32 3
+  %3 = getelementptr nuw %"struct.folly::f14::detail::F14Chunk.2683274", ptr %1, i64 %2, i32 3
   %4 = zext nneg i32 %0 to i64
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683234"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -222,7 +222,7 @@ entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %4, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -241,9 +241,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000004f(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2684259", ptr %1, i64 %2, i32 3
+  %3 = getelementptr %"struct.folly::f14::detail::F14Chunk.2684226", ptr %1, i64 %2, i32 3
   %4 = zext i32 %0 to i64
-  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684258"], ptr %3, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2684225"], ptr %3, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -260,7 +260,7 @@ entry:
 define ptr @func000000000000000c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
-  %4 = getelementptr %struct.CPUTLBEntryFull.2707266, ptr %1, i64 %2, i32 5, i64 %3
+  %4 = getelementptr %struct.CPUTLBEntryFull.2707232, ptr %1, i64 %2, i32 5, i64 %3
   ret ptr %4
 }
 
@@ -281,7 +281,7 @@ entry:
 define ptr @func000000000000001c(i32 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
-  %4 = getelementptr %struct.CPUTLBEntryFull.2707266, ptr %1, i64 %2, i32 5, i64 %3
+  %4 = getelementptr %struct.CPUTLBEntryFull.2707232, ptr %1, i64 %2, i32 5, i64 %3
   ret ptr %4
 }
 
@@ -293,7 +293,7 @@ entry:
   %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr [2 x %struct.quic_pp_cipher.3436945], ptr %4, i64 0, i64 %5
+  %6 = getelementptr [2 x %struct.quic_pp_cipher.3436911], ptr %4, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -315,7 +315,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i32 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.hid_report_enum.3538081, ptr %1, i64 %2
+  %3 = getelementptr %struct.hid_report_enum.3538047, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -2048
   %5 = zext i32 %0 to i64
   %6 = getelementptr [256 x ptr], ptr %4, i64 0, i64 %5

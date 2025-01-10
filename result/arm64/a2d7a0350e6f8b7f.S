@@ -234,13 +234,6 @@ func0000000000000104:                   // @func0000000000000104
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
-// %bb.0:                               // %entry
-	tst	w0, #0xff
-	ccmp	x1, #1, #8, ne
-	cset	w0, lt
-	ret
-                                        // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
 	sxtb	w8, w0

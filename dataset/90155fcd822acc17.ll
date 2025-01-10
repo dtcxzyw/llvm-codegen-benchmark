@@ -1,17 +1,5 @@
 
 ; 1 occurrences:
-; git/optimized/sha256.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 63
-  %3 = add nuw nsw i64 %2, 1
-  %4 = zext nneg i32 %0 to i64
-  %5 = icmp samesign ult i64 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000f8(i32 %0, i64 %1) #0 {

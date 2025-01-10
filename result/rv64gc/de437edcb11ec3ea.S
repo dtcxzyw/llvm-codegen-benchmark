@@ -5,6 +5,20 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1
 	ret
+func0000000000000044:                   # @func0000000000000044
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	li	a1, -29
+	addi	a0, a0, 17
+	srli	a1, a1, 1
+	sltu	a0, a0, a1
+	ret
+func0000000000000041:                   # @func0000000000000041
+	andi	a1, a1, -16
+	addi	a0, a0, 17
+	or	a0, a0, a1
+	seqz	a0, a0
+	ret
 func00000000000001c8:                   # @func00000000000001c8
 	andi	a0, a0, -16
 	add	a0, a0, a1
@@ -34,20 +48,6 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
 	addi	a0, a0, 7
 	srli	a0, a0, 63
-	ret
-func0000000000000044:                   # @func0000000000000044
-	andi	a0, a0, -16
-	add	a0, a0, a1
-	li	a1, -29
-	addi	a0, a0, 17
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
-	ret
-func0000000000000041:                   # @func0000000000000041
-	addi	a1, a1, 17
-	andi	a0, a0, -16
-	or	a0, a0, a1
-	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
 	andi	a0, a0, -16

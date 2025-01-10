@@ -1,45 +1,45 @@
 
-%"struct.re2::RuneRange.2601738" = type { i32, i32 }
-%"class.re2::SparseArray<int>::IndexValue.2602231" = type { i32, i32 }
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
-%struct._zval_struct.2790528 = type { %union._zend_value.2790538, %union.anon.2790539, %union.anon.2.2790540 }
-%union._zend_value.2790538 = type { i64 }
-%union.anon.2790539 = type { i32 }
-%union.anon.2.2790540 = type { i32 }
-%"class.llvm::ImmutableGraph<llvm::MachineInstr *, int>::Node.3228765" = type { ptr, ptr }
-%struct.ata_link.3531594 = type { ptr, i32, %struct.device.3531595, i32, i32, i32, i32, i32, i32, i32, i32, %struct.ata_eh_info.3531596, %struct.ata_eh_context.3531597, [32 x i8], [2 x %struct.ata_device.3531598], i64, [56 x i8] }
-%struct.device.3531595 = type { %struct.kobject.3531599, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3531600, %struct.dev_links_info.3531601, %struct.dev_pm_info.3531602, ptr, %struct.dev_msi_info.3531603, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3531559, ptr, %struct.dev_archdata.3531604, ptr, ptr, i32, i32, i32, %struct.spinlock.3531590, %struct.list_head.3531559, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
-%struct.kobject.3531599 = type { ptr, %struct.list_head.3531559, ptr, ptr, ptr, ptr, %struct.kref.3531605, i8 }
-%struct.kref.3531605 = type { %struct.refcount_struct.3531606 }
-%struct.refcount_struct.3531606 = type { %struct.atomic_t.3531553 }
-%struct.atomic_t.3531553 = type { i32 }
-%struct.mutex.3531600 = type { %struct.atomic64_t.3531607, %struct.raw_spinlock.3531580, %struct.optimistic_spin_queue.3531608, %struct.list_head.3531559 }
-%struct.atomic64_t.3531607 = type { i64 }
-%struct.raw_spinlock.3531580 = type { %struct.qspinlock.3531581 }
-%struct.qspinlock.3531581 = type { %union.anon.7.3531582 }
-%union.anon.7.3531582 = type { %struct.atomic_t.3531553 }
-%struct.optimistic_spin_queue.3531608 = type { %struct.atomic_t.3531553 }
-%struct.dev_links_info.3531601 = type { %struct.list_head.3531559, %struct.list_head.3531559, %struct.list_head.3531559, i32 }
-%struct.dev_pm_info.3531602 = type { %struct.pm_message.3531609, i16, i32, %struct.spinlock.3531590, %struct.list_head.3531559, %struct.completion.3531610, ptr, i8, %struct.hrtimer.3531611, i64, %struct.work_struct.3531612, %struct.wait_queue_head.3531613, ptr, %struct.atomic_t.3531553, %struct.atomic_t.3531553, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
-%struct.pm_message.3531609 = type { i32 }
-%struct.completion.3531610 = type { i32, %struct.swait_queue_head.3531614 }
-%struct.swait_queue_head.3531614 = type { %struct.raw_spinlock.3531580, %struct.list_head.3531559 }
-%struct.hrtimer.3531611 = type { %struct.timerqueue_node.3531615, i64, ptr, ptr, i8, i8, i8, i8 }
-%struct.timerqueue_node.3531615 = type { %struct.rb_node.3531616, i64 }
-%struct.rb_node.3531616 = type { i64, ptr, ptr }
-%struct.work_struct.3531612 = type { %struct.atomic64_t.3531607, %struct.list_head.3531559, ptr }
-%struct.wait_queue_head.3531613 = type { %struct.spinlock.3531590, %struct.list_head.3531559 }
-%struct.dev_msi_info.3531603 = type { ptr, ptr }
-%struct.dev_archdata.3531604 = type {}
-%struct.spinlock.3531590 = type { %union.anon.10.3531591 }
-%union.anon.10.3531591 = type { %struct.raw_spinlock.3531580 }
-%struct.list_head.3531559 = type { ptr, ptr }
-%struct.ata_eh_info.3531596 = type { ptr, i32, i32, i32, [2 x i32], i32, i32, [80 x i8], i32 }
-%struct.ata_eh_context.3531597 = type { %struct.ata_eh_info.3531596, [2 x i32], [2 x [8 x i32]], [2 x i32], i32, i32, i32, [2 x i8], i64 }
-%struct.ata_device.3531598 = type { ptr, i32, i32, i64, ptr, ptr, ptr, i32, %struct.device.3531595, i64, i64, i32, i64, i8, i8, i8, i32, i32, i32, i32, i32, i32, i32, i16, i16, i16, [42 x i8], %union.anon.11.3531617, [8 x i8], [20 x i8], [64 x i8], i32, i32, i32, i32, ptr, [512 x i8], i32, %struct.ata_ering.3531618, [56 x i8] }
-%union.anon.11.3531617 = type { [128 x i32] }
-%struct.ata_ering.3531618 = type { i32, [32 x %struct.ata_ering_entry.3531619] }
-%struct.ata_ering_entry.3531619 = type { i32, i32, i64 }
+%"struct.re2::RuneRange.2601705" = type { i32, i32 }
+%"class.re2::SparseArray<int>::IndexValue.2602198" = type { i32, i32 }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456" = type { i32, i32, i32 }
+%struct._zval_struct.2790494 = type { %union._zend_value.2790504, %union.anon.2790505, %union.anon.2.2790506 }
+%union._zend_value.2790504 = type { i64 }
+%union.anon.2790505 = type { i32 }
+%union.anon.2.2790506 = type { i32 }
+%"class.llvm::ImmutableGraph<llvm::MachineInstr *, int>::Node.3228731" = type { ptr, ptr }
+%struct.ata_link.3531560 = type { ptr, i32, %struct.device.3531561, i32, i32, i32, i32, i32, i32, i32, i32, %struct.ata_eh_info.3531562, %struct.ata_eh_context.3531563, [32 x i8], [2 x %struct.ata_device.3531564], i64, [56 x i8] }
+%struct.device.3531561 = type { %struct.kobject.3531565, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, %struct.mutex.3531566, %struct.dev_links_info.3531567, %struct.dev_pm_info.3531568, ptr, %struct.dev_msi_info.3531569, ptr, ptr, i64, i64, ptr, ptr, %struct.list_head.3531525, ptr, %struct.dev_archdata.3531570, ptr, ptr, i32, i32, i32, %struct.spinlock.3531556, %struct.list_head.3531525, ptr, ptr, ptr, ptr, ptr, ptr, i32, i8 }
+%struct.kobject.3531565 = type { ptr, %struct.list_head.3531525, ptr, ptr, ptr, ptr, %struct.kref.3531571, i8 }
+%struct.kref.3531571 = type { %struct.refcount_struct.3531572 }
+%struct.refcount_struct.3531572 = type { %struct.atomic_t.3531519 }
+%struct.atomic_t.3531519 = type { i32 }
+%struct.mutex.3531566 = type { %struct.atomic64_t.3531573, %struct.raw_spinlock.3531546, %struct.optimistic_spin_queue.3531574, %struct.list_head.3531525 }
+%struct.atomic64_t.3531573 = type { i64 }
+%struct.raw_spinlock.3531546 = type { %struct.qspinlock.3531547 }
+%struct.qspinlock.3531547 = type { %union.anon.7.3531548 }
+%union.anon.7.3531548 = type { %struct.atomic_t.3531519 }
+%struct.optimistic_spin_queue.3531574 = type { %struct.atomic_t.3531519 }
+%struct.dev_links_info.3531567 = type { %struct.list_head.3531525, %struct.list_head.3531525, %struct.list_head.3531525, i32 }
+%struct.dev_pm_info.3531568 = type { %struct.pm_message.3531575, i16, i32, %struct.spinlock.3531556, %struct.list_head.3531525, %struct.completion.3531576, ptr, i8, %struct.hrtimer.3531577, i64, %struct.work_struct.3531578, %struct.wait_queue_head.3531579, ptr, %struct.atomic_t.3531519, %struct.atomic_t.3531519, i16, i32, i32, i32, i32, i32, i32, i64, i64, i64, i64, ptr, ptr, ptr }
+%struct.pm_message.3531575 = type { i32 }
+%struct.completion.3531576 = type { i32, %struct.swait_queue_head.3531580 }
+%struct.swait_queue_head.3531580 = type { %struct.raw_spinlock.3531546, %struct.list_head.3531525 }
+%struct.hrtimer.3531577 = type { %struct.timerqueue_node.3531581, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3531581 = type { %struct.rb_node.3531582, i64 }
+%struct.rb_node.3531582 = type { i64, ptr, ptr }
+%struct.work_struct.3531578 = type { %struct.atomic64_t.3531573, %struct.list_head.3531525, ptr }
+%struct.wait_queue_head.3531579 = type { %struct.spinlock.3531556, %struct.list_head.3531525 }
+%struct.dev_msi_info.3531569 = type { ptr, ptr }
+%struct.dev_archdata.3531570 = type {}
+%struct.spinlock.3531556 = type { %union.anon.10.3531557 }
+%union.anon.10.3531557 = type { %struct.raw_spinlock.3531546 }
+%struct.list_head.3531525 = type { ptr, ptr }
+%struct.ata_eh_info.3531562 = type { ptr, i32, i32, i32, [2 x i32], i32, i32, [80 x i8], i32 }
+%struct.ata_eh_context.3531563 = type { %struct.ata_eh_info.3531562, [2 x i32], [2 x [8 x i32]], [2 x i32], i32, i32, i32, [2 x i8], i64 }
+%struct.ata_device.3531564 = type { ptr, i32, i32, i64, ptr, ptr, ptr, i32, %struct.device.3531561, i64, i64, i32, i64, i8, i8, i8, i32, i32, i32, i32, i32, i32, i32, i16, i16, i16, [42 x i8], %union.anon.11.3531583, [8 x i8], [20 x i8], [64 x i8], i32, i32, i32, i32, ptr, [512 x i8], i32, %struct.ata_ering.3531584, [56 x i8] }
+%union.anon.11.3531583 = type { [128 x i32] }
+%struct.ata_ering.3531584 = type { i32, [32 x %struct.ata_ering_entry.3531585] }
+%struct.ata_ering_entry.3531585 = type { i32, i32, i64 }
 
 ; 75 occurrences:
 ; cpython/optimized/dtoa.ll
@@ -142,7 +142,7 @@ entry:
   ret i1 %6
 }
 
-; 362 occurrences:
+; 366 occurrences:
 ; abc/optimized/xsatSolver.c.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -160,9 +160,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/printf-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; folly/optimized/Singleton.cpp.ll
 ; gromacs/optimized/bench_system.cpp.ll
 ; gromacs/optimized/com.cpp.ll
 ; gromacs/optimized/computemultibodycutoffs.cpp.ll
@@ -398,6 +401,7 @@ entry:
 ; openusd/optimized/testPcpMapExpression.cpp.ll
 ; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; openusd/optimized/variantSets.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ozz-animation/optimized/options.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -509,13 +513,13 @@ entry:
 define i1 @func0000000000000161(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.re2::RuneRange.2601738", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.re2::RuneRange.2601705", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 302 occurrences:
+; 308 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -550,8 +554,13 @@ entry:
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaEsop.c.ll
+; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaKf.c.ll
+; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaOf.c.ll
+; abc/optimized/giaPf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUnate.c.ll
@@ -573,6 +582,7 @@ entry:
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdLut.c.ll
 ; abc/optimized/sfmDec.c.ll
+; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -828,14 +838,8 @@ entry:
   ret i1 %6
 }
 
-; 70 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/printf-test.cc.ll
-; fmt/optimized/xchar-test.cc.ll
-; folly/optimized/Singleton.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
 ; ipopt/optimized/IpSumMatrix.ll
@@ -870,12 +874,8 @@ entry:
 ; openspiel/optimized/tabular_best_response_mdp.cc.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/editTarget.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mapExpression.cpp.ll
 ; openusd/optimized/mapFunction.cpp.ll
-; openusd/optimized/testPcpMapExpression.cpp.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; quantlib/optimized/pascaltriangle.ll
 ; re2/optimized/prog.cc.ll
@@ -903,7 +903,7 @@ entry:
 define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw nuw %"class.re2::SparseArray<int>::IndexValue.2602231", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.re2::SparseArray<int>::IndexValue.2602198", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -940,7 +940,7 @@ entry:
 define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %1, i64 %3
+  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456", ptr %1, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %0, i64 12
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1025,17 +1025,9 @@ entry:
   ret i1 %6
 }
 
-; 22 occurrences:
+; 13 occurrences:
 ; abc/optimized/fraPart.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaNf.c.ll
-; abc/optimized/giaOf.c.ll
-; abc/optimized/giaPf.c.ll
-; abc/optimized/ifDec75.c.ll
-; abc/optimized/rsbDec6.c.ll
-; abc/optimized/sfmLib.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; opencv/optimized/colored_tsdf.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll
@@ -1047,7 +1039,6 @@ entry:
 ; openexr/optimized/ImfRleCompressor.cpp.ll
 ; openexr/optimized/ImfZip.cpp.ll
 ; openjdk/optimized/zMark.ll
-; protobuf/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
@@ -1084,7 +1075,7 @@ entry:
 define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zval_struct.2790528, ptr %1, i64 %3
+  %4 = getelementptr nusw %struct._zval_struct.2790494, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %0, i64 -16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1130,7 +1121,7 @@ entry:
 define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"class.llvm::ImmutableGraph<llvm::MachineInstr *, int>::Node.3228765", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::ImmutableGraph<llvm::MachineInstr *, int>::Node.3228731", ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 16
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -1158,7 +1149,7 @@ entry:
 define i1 @func0000000000000009(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.ata_link.3531594, ptr %1, i64 %3
+  %4 = getelementptr %struct.ata_link.3531560, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 6464
   %6 = icmp uge ptr %5, %4
   ret i1 %6

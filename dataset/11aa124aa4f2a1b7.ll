@@ -1,5 +1,6 @@
 
-; 166 occurrences:
+; 167 occurrences:
+; abc/optimized/bacBlast.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; boost/optimized/matches_relation_factory.ll
@@ -295,8 +296,7 @@ entry:
   ret i1 %5
 }
 
-; 178 occurrences:
-; abc/optimized/bacBlast.c.ll
+; 177 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/sscSim.c.ll
 ; arrow/optimized/crc32.cc.ll

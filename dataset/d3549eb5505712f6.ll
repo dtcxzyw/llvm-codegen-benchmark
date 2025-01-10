@@ -479,8 +479,7 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/intel_reset.ll
+; 1 occurrences:
 ; linux/optimized/scsi_transport_spi.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000002f8(i8 %0, i8 %1) #0 {

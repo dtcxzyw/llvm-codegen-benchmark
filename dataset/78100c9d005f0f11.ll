@@ -62,7 +62,7 @@ entry:
   ret i32 %3
 }
 
-; 203 occurrences:
+; 204 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/rpo.c.ll
 ; arrow/optimized/compare.cc.ll
@@ -138,6 +138,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/reconinter.c.ll
 ; php/optimized/crypt_sha256.ll
+; pocketpy/optimized/collections.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; spike/optimized/vcompress_vm.ll

@@ -1,5 +1,5 @@
 
-%struct.deflate_optimum_node.2747994 = type { i32, i32 }
+%struct._zend_ssa_op.2792308 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 9 occurrences:
 ; darktable/optimized/introspection_diffuse.c.ll
@@ -1013,16 +1013,36 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/giaNf.c.ll
-; ceres/optimized/polynomial.cc.ll
-; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; 27 occurrences:
+; abc/optimized/dauDsd.c.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; casadi/optimized/bspline.cpp.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; darktable/optimized/SonyArw1Decompressor.cpp.ll
+; gromacs/optimized/gmx_helixorient.cpp.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; llama.cpp/optimized/ggml.c.ll
+; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
-; php/optimized/zend_inference.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
@@ -1290,38 +1310,18 @@ entry:
   ret ptr %5
 }
 
-; 25 occurrences:
-; abc/optimized/dauDsd.c.ll
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; casadi/optimized/bspline.cpp.ll
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; darktable/optimized/SonyArw1Decompressor.cpp.ll
-; gromacs/optimized/gmx_helixorient.cpp.ll
-; libdeflate/optimized/deflate_compress.c.ll
-; libwebp/optimized/webp_enc.c.ll
-; llama.cpp/optimized/ggml.c.ll
-; nuklear/optimized/unity.c.ll
-; openusd/optimized/openexr-c.c.ll
+; 5 occurrences:
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/giaNf.c.ll
+; ceres/optimized/polynomial.cc.ll
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -8
-  %5 = getelementptr nusw nuw %struct.deflate_optimum_node.2747994, ptr %4, i64 %0
+  %3 = getelementptr %struct._zend_ssa_op.2792308, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 36
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

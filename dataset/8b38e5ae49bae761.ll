@@ -1,8 +1,7 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; freetype/optimized/pshinter.c.ll
 ; graphviz/optimized/textspan_lut.c.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; gromacs/optimized/tng_io.c.ll

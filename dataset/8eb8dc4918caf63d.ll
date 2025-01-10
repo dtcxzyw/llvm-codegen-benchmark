@@ -1,5 +1,5 @@
 
-; 259 occurrences:
+; 255 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -163,8 +163,6 @@
 ; ocio/optimized/FileFormatResolveCube.cpp.ll
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; ocio/optimized/FileFormatVF.cpp.ll
-; openblas/optimized/dasum_k.c.ll
-; openblas/optimized/sasum_k.c.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/crop_and_resize_layer.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -221,9 +219,7 @@
 ; rocksdb/optimized/log_reader.cc.ll
 ; rocksdb/optimized/trace_analyzer_tool.cc.ll
 ; ruby/optimized/addr2line.ll
-; ruby/optimized/bignum.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/pm_integer.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/acct_gather_energy_ibmaem.ll
 ; spike/optimized/socketif.ll
@@ -264,6 +260,31 @@ define i32 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 24
   %2 = trunc i64 %1 to i32
+  ret i32 %2
+}
+
+; 16 occurrences:
+; abc/optimized/cuddApa.c.ll
+; abc/optimized/giaMan.c.ll
+; abseil-cpp/optimized/charconv_bigint.cc.ll
+; abseil-cpp/optimized/float_conversion.cc.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; git/optimized/hashmap.ll
+; grpc/optimized/timeout_encoding.cc.ll
+; linux/optimized/intel_backlight.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; opencv/optimized/cap_v4l.cpp.ll
+; openjdk/optimized/heapDumper.ll
+; qemu/optimized/block_vpc.c.ll
+; ruby/optimized/bignum.ll
+; ruby/optimized/pm_integer.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = udiv i64 %0, 3
+  %2 = trunc nuw i64 %1 to i32
   ret i32 %2
 }
 
@@ -316,28 +337,6 @@ define i32 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 100
   %2 = trunc nuw nsw i64 %1 to i32
-  ret i32 %2
-}
-
-; 13 occurrences:
-; abc/optimized/giaMan.c.ll
-; abseil-cpp/optimized/charconv_bigint.cc.ll
-; abseil-cpp/optimized/float_conversion.cc.ll
-; darktable/optimized/IiqDecoder.cpp.ll
-; git/optimized/hashmap.ll
-; grpc/optimized/timeout_encoding.cc.ll
-; linux/optimized/intel_backlight.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; opencv/optimized/cap_v4l.cpp.ll
-; openjdk/optimized/heapDumper.ll
-; qemu/optimized/block_vpc.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0) #0 {
-entry:
-  %1 = udiv i64 %0, 255
-  %2 = trunc nuw i64 %1 to i32
   ret i32 %2
 }
 

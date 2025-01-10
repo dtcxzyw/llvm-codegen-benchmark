@@ -17,6 +17,11 @@ func0000000000000006:                   # @func0000000000000006
 	vmin.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
+func0000000000000026:                   # @func0000000000000026
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmin.vx	v10, v10, zero
+	vmslt.vv	v0, v10, v8
+	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 49
 	vsetivli	zero, 8, e32, m2, ta, ma

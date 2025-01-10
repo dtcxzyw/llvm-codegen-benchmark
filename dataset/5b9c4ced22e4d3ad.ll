@@ -132,15 +132,17 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; arrow/optimized/basic_decimal.cc.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000426(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp sle i64 %1, %2
-  %4 = icmp eq i32 %0, 0
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
+  %3 = sub nsw i64 %1, %2
+  %4 = icmp slt i64 %3, 5
+  %5 = icmp eq i32 %0, 0
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
 }
 
 ; 1 occurrences:

@@ -1,16 +1,16 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
-%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
-%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
-%"struct.std::__atomic_base.108.2637633" = type { i64 }
-%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
-%"struct.std::__atomic_base.110.2637634" = type { ptr }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507" = type { %"class.tbb::detail::d1::spin_rw_mutex.2712508", %"struct.std::atomic.6.2712509" }
-%"class.tbb::detail::d1::spin_rw_mutex.2712508" = type { %"struct.std::atomic.4.2712510" }
-%"struct.std::atomic.4.2712510" = type { %"struct.std::__atomic_base.5.2712511" }
-%"struct.std::__atomic_base.5.2712511" = type { i64 }
-%"struct.std::atomic.6.2712509" = type { %"struct.std::__atomic_base.7.2712512" }
-%"struct.std::__atomic_base.7.2712512" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637597", %"struct.std::atomic.109.2637598" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637597" = type { %"struct.std::atomic.107.2637599" }
+%"struct.std::atomic.107.2637599" = type { %"struct.std::__atomic_base.108.2637600" }
+%"struct.std::__atomic_base.108.2637600" = type { i64 }
+%"struct.std::atomic.109.2637598" = type { %"struct.std::__atomic_base.110.2637601" }
+%"struct.std::__atomic_base.110.2637601" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712473" = type { %"class.tbb::detail::d1::spin_rw_mutex.2712474", %"struct.std::atomic.6.2712475" }
+%"class.tbb::detail::d1::spin_rw_mutex.2712474" = type { %"struct.std::atomic.4.2712476" }
+%"struct.std::atomic.4.2712476" = type { %"struct.std::__atomic_base.5.2712477" }
+%"struct.std::__atomic_base.5.2712477" = type { i64 }
+%"struct.std::atomic.6.2712475" = type { %"struct.std::__atomic_base.7.2712478" }
+%"struct.std::__atomic_base.7.2712478" = type { ptr }
 
 ; 84 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -102,7 +102,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = sub i64 %1, %3
-  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637596", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -114,7 +114,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775806
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712507", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const unsigned int, openvdb::v11_0::io::Queue::Status>>, tbb::detail::d1::spin_rw_mutex>::bucket.2712473", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

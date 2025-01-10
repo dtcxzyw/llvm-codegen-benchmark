@@ -724,18 +724,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; php/optimized/pcre2_jit_compile.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw i64 %1, 8191
-  %3 = and i64 %2, -8192
-  %4 = add i64 %0, -1
-  %5 = icmp ult i64 %4, %3
-  ret i1 %5
-}
-
 ; 14 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll

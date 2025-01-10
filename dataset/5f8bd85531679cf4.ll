@@ -40,7 +40,7 @@ entry:
   ret i1 %4
 }
 
-; 116 occurrences:
+; 108 occurrences:
 ; arrow/optimized/string.cc.ll
 ; assimp/optimized/unzip.c.ll
 ; boost/optimized/scheme.ll
@@ -85,19 +85,16 @@ entry:
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
-; nori/optimized/nanovg.c.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; openblas/optimized/dgemmt.c.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/macroArrayCopy.ll
-; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/dbcommands.ll
 ; protobuf/optimized/text_format_decode_data.cc.ll
 ; qemu/optimized/hw_pci_pci.c.ll
@@ -110,8 +107,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
@@ -120,13 +115,11 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; wasmtime-rs/optimized/4d248unwvleglo3y.ll
-; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-btle.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-gmr1_dtap.c.ll
 ; wireshark/optimized/packet-gmr1_rr.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iso7816.c.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
@@ -135,7 +128,6 @@ entry:
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-telnet.c.ll
 ; wolfssl/optimized/coding.c.ll
-; wolfssl/optimized/sha3.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
 ; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll

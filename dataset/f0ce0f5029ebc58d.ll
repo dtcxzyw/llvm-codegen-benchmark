@@ -1,5 +1,5 @@
 
-; 7122 occurrences:
+; 7120 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/AbcGlucoseCmd.cpp.ll
@@ -321,7 +321,6 @@
 ; arrow/optimized/builder_base.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/dictionary.cc.ll
@@ -6457,7 +6456,6 @@
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/4t73f85e8qqi02en.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
@@ -7568,6 +7566,7 @@ entry:
 ; clamav/optimized/www.c.ll
 ; clamav/optimized/yara_exec.c.ll
 ; clamav/optimized/yara_grammar.c.ll
+; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/adler32.c.ll
@@ -12913,7 +12912,6 @@ entry:
 ; verilator/optimized/V3Config.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
-; verilator/optimized/V3SplitVar.cpp.ll
 ; verilator/optimized/V3Task.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; postgres/optimized/slru.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/migration_block.c.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
@@ -13,7 +14,8 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 15 occurrences:
+; abc/optimized/cuddTable.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -24,7 +26,9 @@ entry:
 ; luau/optimized/lgcdebug.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; postgres/optimized/slru.ll
+; quickjs/optimized/quickjs.ll
 ; redis/optimized/lgc.ll
+; sqlite/optimized/sqlite3.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {

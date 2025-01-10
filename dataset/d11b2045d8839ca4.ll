@@ -1,5 +1,5 @@
 
-%"struct.cv::GMM.3761203" = type { float, float }
+%"struct.cv::GMM.3761153" = type { float, float }
 
 ; 7 occurrences:
 ; libquic/optimized/x509name.c.ll
@@ -61,7 +61,7 @@ entry:
   %.not = icmp eq i32 %1, %2
   %4 = select i1 %.not, i32 %3, i32 %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.cv::GMM.3761203", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.cv::GMM.3761153", ptr %0, i64 %5
   ret ptr %6
 }
 

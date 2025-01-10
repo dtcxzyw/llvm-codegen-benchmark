@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 12 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/timDump.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
@@ -7,9 +7,6 @@
 ; opencv/optimized/mathfuncs.cpp.ll
 ; openjdk/optimized/outStream.ll
 ; openjdk/optimized/vframe_hp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/packet-mbtcp.c.ll

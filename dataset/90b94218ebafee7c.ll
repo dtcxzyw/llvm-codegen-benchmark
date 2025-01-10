@@ -1,15 +1,15 @@
 
-%"class.std::__cxx11::basic_string.2760304" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323", i64, %union.anon.2760324 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323" = type { ptr }
-%union.anon.2760324 = type { i64, [8 x i8] }
-%struct.page.3550387 = type { i64, %union.anon.3550388, %union.anon.6.3550389, %struct.atomic_t.3550375, [8 x i8] }
-%union.anon.3550388 = type { %struct.anon.3550390 }
-%struct.anon.3550390 = type { %union.anon.0.3550391, ptr, %union.anon.2.3550392, i64 }
-%union.anon.0.3550391 = type { %struct.list_head.3550369 }
-%struct.list_head.3550369 = type { ptr, ptr }
-%union.anon.2.3550392 = type { i64 }
-%union.anon.6.3550389 = type { %struct.atomic_t.3550375 }
-%struct.atomic_t.3550375 = type { i32 }
+%"class.std::__cxx11::basic_string.2760270" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760289", i64, %union.anon.2760290 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760289" = type { ptr }
+%union.anon.2760290 = type { i64, [8 x i8] }
+%struct.page.3550353 = type { i64, %union.anon.3550354, %union.anon.6.3550355, %struct.atomic_t.3550341, [8 x i8] }
+%union.anon.3550354 = type { %struct.anon.3550356 }
+%struct.anon.3550356 = type { %union.anon.0.3550357, ptr, %union.anon.2.3550358, i64 }
+%union.anon.0.3550357 = type { %struct.list_head.3550335 }
+%struct.list_head.3550335 = type { ptr, ptr }
+%union.anon.2.3550358 = type { i64 }
+%union.anon.6.3550355 = type { %struct.atomic_t.3550341 }
+%struct.atomic_t.3550341 = type { i32 }
 
 ; 17 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -75,8 +75,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__cxx11::basic_string.2760304", ptr %0, i64 %1
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2760304", ptr %3, i64 %2
+  %3 = getelementptr %"class.std::__cxx11::basic_string.2760270", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2760270", ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -131,8 +131,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.page.3550387, ptr %0, i64 %1
-  %4 = getelementptr %struct.page.3550387, ptr %3, i64 %2
+  %3 = getelementptr %struct.page.3550353, ptr %0, i64 %1
+  %4 = getelementptr %struct.page.3550353, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

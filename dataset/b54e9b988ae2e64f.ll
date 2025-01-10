@@ -15,15 +15,13 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; libquic/optimized/a_d2i_fp.c.ll
-; linux/optimized/memory.ll
 ; nix/optimized/serialise.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/linux-user_uaccess.c.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
@@ -63,7 +61,7 @@ entry:
   ret i32 %2
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
@@ -75,7 +73,6 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; lvgl/optimized/lv_spinbox.ll
 ; opencv/optimized/trace.cpp.ll
-; postgres/optimized/buffile.ll
 ; qemu/optimized/hw_pci_pcie_sriov.c.ll
 ; wireshark/optimized/file_wrappers.c.ll
 ; Function Attrs: nounwind

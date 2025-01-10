@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	63                              # 0x3f
+	.long	7                               # 0x7
 func000000000000000f:                   # @func000000000000000f
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0

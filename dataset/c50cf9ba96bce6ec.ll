@@ -1,8 +1,5 @@
 
-; 8 occurrences:
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
+; 5 occurrences:
 ; lua/optimized/lapi.ll
 ; postgres/optimized/like_support.ll
 ; qemu/optimized/hw_sd_sd.c.ll
@@ -17,10 +14,8 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 15 occurrences:
 ; abc/optimized/acbUtil.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
 ; c3c/optimized/lexer.c.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; lief/optimized/ssl_ciphersuites.c.ll
@@ -33,7 +28,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_vorbis.c.ll
-; verilator/optimized/V3Fork.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind

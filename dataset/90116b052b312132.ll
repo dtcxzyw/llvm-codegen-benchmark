@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; linux/optimized/blk-merge.ll
@@ -27,6 +27,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; slurm/optimized/backfill.ll
 ; slurm/optimized/job_mgr.ll
+; slurm/optimized/job_test.ll
 ; slurm/optimized/partition_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/blf.c.ll

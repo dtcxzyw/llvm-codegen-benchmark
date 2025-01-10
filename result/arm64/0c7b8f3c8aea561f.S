@@ -5,7 +5,7 @@ func000000000000000c:                   // @func000000000000000c
 	and	w0, w8, w2
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
 	cmp	w0, w1
 	cset	w8, hi

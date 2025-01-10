@@ -12,14 +12,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; folly/optimized/IOBuf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
-entry:
-  ret i1 false
-}
-
 ; 2 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll

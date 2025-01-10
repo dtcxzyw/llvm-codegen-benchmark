@@ -63,6 +63,13 @@ func0000000000000068:                   # @func0000000000000068
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
+func0000000000000069:                   # @func0000000000000069
+	movslq	%edx, %rax
+	leaq	-7(%rsi,%rax), %rax
+	incq	%rdi
+	cmpq	%rax, %rdi
+	setae	%al
+	retq
 func0000000000000561:                   # @func0000000000000561
 	movslq	%edx, %rax
 	leaq	-1(%rsi,%rax), %rax

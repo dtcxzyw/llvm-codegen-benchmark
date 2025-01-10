@@ -1,5 +1,5 @@
 
-; 3291 occurrences:
+; 3290 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -371,7 +371,6 @@
 ; flac/optimized/main.c.ll
 ; flac/optimized/metadata.cpp.ll
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/HeapTimekeeper.cpp.ll

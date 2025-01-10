@@ -1,5 +1,5 @@
 
-%struct.AttrMissing.3655151 = type { i8, i64 }
+%struct.AttrMissing.3655117 = type { i8, i64 }
 
 ; 1 occurrences:
 ; minetest/optimized/treegen.cpp.ll
@@ -147,7 +147,7 @@ entry:
 define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr %struct.AttrMissing.3655151, ptr %0, i64 %2
+  %3 = getelementptr %struct.AttrMissing.3655117, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -12
   ret ptr %4
 }

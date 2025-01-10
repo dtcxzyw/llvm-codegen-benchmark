@@ -1,31 +1,12 @@
 
-%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
-%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
+%struct.XHCIInterrupter.2706931 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706916], i32, i32 }
+%struct.XHCIEvent.2706916 = type { i32, i32, i64, i32, i32, i8, i8 }
 
-; 23 occurrences:
-; abc/optimized/blocksort.c.ll
-; abc/optimized/cmdHist.c.ll
+; 4 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
-; cmake/optimized/blocksort.c.ll
-; git/optimized/kwset.ll
-; git/optimized/pack-write.ll
-; hermes/optimized/MicrosoftDemangle.cpp.ll
-; icu/optimized/package.ll
-; libjpeg-turbo/optimized/jchuff.c.ll
-; libquic/optimized/pem_lib.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; ocio/optimized/Lut3DOpCPU.cpp.ll
-; opencv/optimized/persistence_types.cpp.ll
-; openjdk/optimized/UnixOperatingSystem.ll
-; openjdk/optimized/childproc.ll
-; openjdk/optimized/jchuff.ll
-; php/optimized/document.ll
-; php/optimized/php_xmlreader.ll
-; redis/optimized/redis-benchmark.ll
-; slurm/optimized/spank.ll
-; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
@@ -42,16 +23,35 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr i64 %2, 32
-  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706931], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 5 occurrences:
+; 24 occurrences:
+; abc/optimized/blocksort.c.ll
+; abc/optimized/cmdHist.c.ll
+; cmake/optimized/blocksort.c.ll
 ; cvc5/optimized/relevant_domain.cpp.ll
+; git/optimized/kwset.ll
+; git/optimized/pack-write.ll
+; hermes/optimized/MicrosoftDemangle.cpp.ll
+; icu/optimized/package.ll
 ; icu/optimized/ucnvisci.ll
+; libjpeg-turbo/optimized/jchuff.c.ll
+; libquic/optimized/pem_lib.c.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; opencv/optimized/persistence_types.cpp.ll
+; openjdk/optimized/UnixOperatingSystem.ll
+; openjdk/optimized/childproc.ll
 ; openjdk/optimized/freeBlocks.ll
+; openjdk/optimized/jchuff.ll
 ; openspiel/optimized/connect_four.cc.ll
+; php/optimized/document.ll
+; php/optimized/php_xmlreader.ll
+; redis/optimized/redis-benchmark.ll
+; slurm/optimized/spank.ll
+; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
@@ -82,11 +82,11 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw nuw [4 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw [4 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -36,7 +36,3 @@ func000000000000003a:                   # @func000000000000003a
 	sh2add	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	sh2add	a1, a2, a1
-	sh3add	a0, a1, a0
-	ret

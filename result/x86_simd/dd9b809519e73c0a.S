@@ -97,15 +97,16 @@ func0000000000000098:                   # @func0000000000000098
 	vpandnd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI14_0:
-	.long	3                               # 0x3
-func00000000000000c2:                   # @func00000000000000c2
-	vpaddd	.LCPI14_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %ymm0
-	vpsrld	$31, %ymm0, %ymm0
+	.long	1                               # 0x1
+func00000000000000d6:                   # @func00000000000000d6
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %ymm0
+	vpandnd	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI15_0:
 	.long	1                               # 0x1
-func00000000000000d6:                   # @func00000000000000d6
+func0000000000000016:                   # @func0000000000000016
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %ymm0
@@ -113,25 +114,23 @@ func00000000000000d6:                   # @func00000000000000d6
 	retq
 .LCPI16_0:
 	.long	1                               # 0x1
-func0000000000000016:                   # @func0000000000000016
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %ymm0
-	vpandnd	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI17_0:
-	.long	1                               # 0x1
 func0000000000000018:                   # @func0000000000000018
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm0, %ymm1, %ymm0
-	vpandnd	.LCPI17_0(%rip){1to8}, %ymm0, %ymm0
+	vpandnd	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI18_0:
+.LCPI17_0:
 	.long	1047040                         # 0xffa00
 func0000000000000008:                   # @func0000000000000008
-	vpaddd	.LCPI18_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	.LCPI17_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq
+func00000000000000c2:                   # @func00000000000000c2
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm0, %ymm1, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

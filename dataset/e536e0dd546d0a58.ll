@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/fs.c.ll
 ; cpython/optimized/formatter_unicode.ll
 ; cpython/optimized/memoryobject.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuklear/optimized/unity.c.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/net_tap-linux.c.ll
 ; quickjs/optimized/quickjs-libc.ll

@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 69 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -15,6 +15,7 @@
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
@@ -89,11 +90,10 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll

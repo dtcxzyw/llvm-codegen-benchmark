@@ -1938,7 +1938,7 @@ entry:
   ret i64 %3
 }
 
-; 5524 occurrences:
+; 5529 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDar.c.ll
@@ -2289,6 +2289,7 @@ entry:
 ; boost/optimized/sparring_partner.ll
 ; boost/optimized/spawn.ll
 ; boost/optimized/start_dir.ll
+; boost/optimized/static_string.ll
 ; boost/optimized/sub_launcher.ll
 ; boost/optimized/system_test1.ll
 ; boost/optimized/system_test2.ll
@@ -3167,6 +3168,7 @@ entry:
 ; git/optimized/receive-pack.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/sequencer.ll
+; git/optimized/show-ref.ll
 ; git/optimized/sparse-index.ll
 ; git/optimized/strbuf.ll
 ; git/optimized/tag.ll
@@ -3545,6 +3547,7 @@ entry:
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; libevent/optimized/buffer.c.ll
 ; libevent/optimized/evdns.c.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
@@ -6182,6 +6185,7 @@ entry:
 ; php/optimized/zip.ll
 ; pocketpy/optimized/io.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
+; pocketpy/optimized/str.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/grids.cpp.ll
@@ -6437,6 +6441,7 @@ entry:
 ; rocksdb/optimized/partitioned_index_iterator.cc.ll
 ; rocksdb/optimized/partitioned_index_reader.cc.ll
 ; rocksdb/optimized/plain_table_index.cc.ll
+; rocksdb/optimized/plain_table_key_coding.cc.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/range_tree_lock_manager.cc.ll
@@ -7471,7 +7476,7 @@ entry:
   ret i64 %3
 }
 
-; 1991 occurrences:
+; 1986 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absDup.c.ll
@@ -7933,14 +7938,11 @@ entry:
 ; git/optimized/parse-options.ll
 ; git/optimized/ref-filter.ll
 ; git/optimized/replace.ll
-; git/optimized/show-ref.ll
 ; git/optimized/trailer.ll
 ; git/optimized/urlmatch.ll
 ; git/optimized/utf8.ll
 ; git/optimized/xdiff-interface.ll
-; git/optimized/xutils.ll
 ; glog/optimized/signalhandler.cc.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
@@ -8068,7 +8070,6 @@ entry:
 ; jemalloc/optimized/tcache.sym.ll
 ; jq/optimized/jv.ll
 ; libdeflate/optimized/deflate_compress.c.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -8265,6 +8266,7 @@ entry:
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
+; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
@@ -8868,7 +8870,6 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
-; openjdk/optimized/javaThread.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
@@ -8997,7 +8998,6 @@ entry:
 ; php/optimized/zend_optimizer.ll
 ; php/optimized/zend_ssa.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
-; pocketpy/optimized/str.cpp.ll
 ; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/dynamic_message.cc.ll

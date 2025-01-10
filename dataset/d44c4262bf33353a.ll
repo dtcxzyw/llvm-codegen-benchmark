@@ -456,7 +456,7 @@ entry:
   ret ptr %4
 }
 
-; 663 occurrences:
+; 662 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -817,7 +817,6 @@ entry:
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/track.cc.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/dce.ll
 ; php/optimized/ir.ll
 ; php/optimized/ir_strtab.ll
 ; php/optimized/optimize_temp_vars_5.ll

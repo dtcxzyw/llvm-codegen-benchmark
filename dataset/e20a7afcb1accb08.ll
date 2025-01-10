@@ -200,10 +200,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; cpython/optimized/listobject.ll
+; openusd/optimized/childrenUtils.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; yosys/optimized/log.ll
 ; Function Attrs: nounwind

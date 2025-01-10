@@ -1,8 +1,8 @@
 
-%class.btVector3.2819204 = type { [4 x float] }
-%"struct.std::pair.3181474" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.3181475" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.3181475" = type { %struct.anon.3181476 }
-%struct.anon.3181476 = type { [4 x i8] }
+%class.btVector3.2819170 = type { [4 x float] }
+%"struct.std::pair.3181440" = type { i32, %"struct.llvm::support::detail::packed_endian_specific_integral.3181441" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3181441" = type { %struct.anon.3181442 }
+%struct.anon.3181442 = type { [4 x i8] }
 
 ; 5 occurrences:
 ; opencv/optimized/convhull.cpp.ll
@@ -265,7 +265,7 @@ entry:
   %3 = icmp samesign ult i32 %2, 3
   %4 = select i1 %3, i32 %1, i32 0
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw nuw %class.btVector3.2819204, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %class.btVector3.2819170, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -303,7 +303,7 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw nuw %"struct.std::pair.3181474", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::pair.3181440", ptr %0, i64 %5
   ret ptr %6
 }
 

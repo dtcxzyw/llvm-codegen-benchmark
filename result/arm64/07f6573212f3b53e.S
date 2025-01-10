@@ -1,3 +1,13 @@
+func0000000000000421:                   // @func0000000000000421
+// %bb.0:                               // %entry
+	cmp	x1, #0
+	mov	w8, #167772160                  // =0xa000000
+	ccmp	w2, w8, #0, eq
+	mov	w8, #1116                       // =0x45c
+	ccmp	w0, w8, #0, eq
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000001021:                   // @func0000000000001021
 // %bb.0:                               // %entry
 	cmp	w1, #1
@@ -6,15 +16,6 @@ func0000000000001021:                   // @func0000000000001021
 	mov	x8, #-256                       // =0xffffffffffffff00
 	ccmp	x2, x8, #2, eq
 	cset	w0, lo
-	ret
-                                        // -- End function
-func0000000000000421:                   // @func0000000000000421
-// %bb.0:                               // %entry
-	cmp	x1, #16
-	mov	w8, #250609664                  // =0xef00000
-	ccmp	w2, w8, #0, eq
-	ccmp	w0, #8, #0, eq
-	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000003084:                   // @func0000000000003084

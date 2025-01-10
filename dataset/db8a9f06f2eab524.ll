@@ -1,11 +1,10 @@
 
-; 89 occurrences:
+; 87 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/resize.ll
-; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
@@ -85,7 +84,6 @@
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; openusd/optimized/vtBufferSource.cpp.ll
 ; openusd/optimized/xformCache.cpp.ll
-; raylib/optimized/raudio.c.ll
 ; xgboost/optimized/gblinear.cc.ll
 ; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll

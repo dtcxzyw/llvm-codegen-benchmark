@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; cpython/optimized/dtoa.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; graphviz/optimized/arrows.c.ll
@@ -24,7 +24,6 @@
 ; openjdk/optimized/xPageAllocator.ll
 ; openjdk/optimized/xStat.ll
 ; openjdk/optimized/xUncommitter.ll
-; openjdk/optimized/zDirector.ll
 ; openjdk/optimized/zNMethodTable.ll
 ; openjdk/optimized/zPageAllocator.ll
 ; openjdk/optimized/zStat.ll

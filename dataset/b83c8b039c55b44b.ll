@@ -60,7 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
@@ -79,7 +79,9 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
+; openssl/optimized/libssl-lib-s3_lib.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
+; openssl/optimized/libssl-shlib-s3_lib.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; slurm/optimized/bitstring.ll

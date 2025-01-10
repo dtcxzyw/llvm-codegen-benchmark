@@ -23,9 +23,3 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpternlogq	$54, %ymm1, %ymm2, %ymm0 # ymm0 = ymm2 ^ (ymm0 | ymm1)
 	retq
-func000000000000000b:                   # @func000000000000000b
-	vpsllq	$48, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogq	$86, %ymm2, %ymm1, %ymm0 # ymm0 = ymm2 ^ (ymm0 | ymm1)
-	retq

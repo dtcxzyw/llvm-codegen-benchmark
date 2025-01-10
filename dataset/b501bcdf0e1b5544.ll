@@ -57,10 +57,10 @@ entry:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = getelementptr nusw nuw [99 x float], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [99 x float], ptr %0, i64 0, i64 %2
   %4 = getelementptr nusw nuw i8, ptr %3, i64 4
   ret ptr %4
 }

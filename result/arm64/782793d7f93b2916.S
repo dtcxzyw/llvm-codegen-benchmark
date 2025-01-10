@@ -5,13 +5,6 @@ func0000000000000009:                   // @func0000000000000009
 	csel	w0, w1, w8, ne
 	ret
                                         // -- End function
-func0000000000000000:                   // @func0000000000000000
-// %bb.0:                               // %entry
-	add	w8, w2, #2
-	tst	w0, #0x1
-	csel	w0, w1, w8, ne
-	ret
-                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	sub	w8, w2, #1

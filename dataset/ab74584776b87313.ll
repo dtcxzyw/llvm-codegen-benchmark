@@ -45,6 +45,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call noundef i32 @llvm.smin.i32(i32 %1, i32 0)
+  %3 = add nsw i32 %0, -1
+  %4 = icmp sgt i32 %3, %2
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; chibicc/optimized/codegen.ll
 ; opencv/optimized/facerec_fisherfaces.cpp.ll

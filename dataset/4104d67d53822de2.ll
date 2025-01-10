@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3157596" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3157562" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
@@ -52,7 +52,7 @@ define i1 @func0000000000000b61(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.3157596", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3157562", ptr %1, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 32
   %7 = icmp eq ptr %6, %0
   ret i1 %7

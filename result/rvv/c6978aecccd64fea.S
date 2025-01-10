@@ -188,6 +188,11 @@ func000000000000006c:                   # @func000000000000006c
 	vnsrl.wi	v9, v10, 0
 	vmsne.vv	v0, v8, v9
 	ret
+func0000000000000067:                   # @func0000000000000067
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vmsle.vv	v0, v8, v9
+	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0

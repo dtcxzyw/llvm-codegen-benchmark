@@ -46,7 +46,8 @@ entry:
   ret i64 %6
 }
 
-; 54 occurrences:
+; 55 occurrences:
+; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
 ; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
 ; zed-rs/optimized/0ndq4firz8eetu3jvgre1the4.ll
@@ -111,8 +112,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; delta-rs/optimized/s2xrj2sh770tx8d.ll
+; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {

@@ -1,8 +1,8 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
-%struct.PrioritySortedBlockTransfer.2692747 = type { float, %"class.irr::core::vector3d.2692568", i16 }
-%"class.irr::core::vector3d.2692568" = type { i16, i16, i16 }
-%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456" = type { i32, i32, i32 }
+%struct.PrioritySortedBlockTransfer.2692713 = type { float, %"class.irr::core::vector3d.2692534", i16 }
+%"class.irr::core::vector3d.2692534" = type { i16, i16, i16 }
+%class.QModelIndex.3438231 = type { i32, i32, i64, ptr }
 
 ; 68 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -78,7 +78,7 @@ define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = or i64 %2, 1
-  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %3
+  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611456", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -100,7 +100,7 @@ define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = or i64 %2, 1
-  %4 = getelementptr %struct.PrioritySortedBlockTransfer.2692747, ptr %0, i64 %3
+  %4 = getelementptr %struct.PrioritySortedBlockTransfer.2692713, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -113,7 +113,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 24
   %3 = or i64 %2, 1
-  %4 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %3
+  %4 = getelementptr %class.QModelIndex.3438231, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -48
   ret ptr %5
 }

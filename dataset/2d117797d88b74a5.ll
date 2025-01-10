@@ -1,11 +1,11 @@
 
-%"struct.folly::symbolizer::SymbolizedFrame.2683664" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683665", %"class.std::shared_ptr.2683666" }
-%"struct.folly::symbolizer::LocationInfo.2683665" = type { i8, i8, %"class.folly::symbolizer::Path.2683667", %"class.folly::symbolizer::Path.2683667", i64 }
-%"class.folly::symbolizer::Path.2683667" = type { %"class.folly::Range.2683668", %"class.folly::Range.2683668", %"class.folly::Range.2683668" }
-%"class.folly::Range.2683668" = type { ptr, ptr }
-%"class.std::shared_ptr.2683666" = type { %"class.std::__shared_ptr.2683669" }
-%"class.std::__shared_ptr.2683669" = type { ptr, %"class.std::__shared_count.2683670" }
-%"class.std::__shared_count.2683670" = type { ptr }
+%"struct.folly::symbolizer::SymbolizedFrame.2683631" = type { i8, i64, ptr, %"struct.folly::symbolizer::LocationInfo.2683632", %"class.std::shared_ptr.2683633" }
+%"struct.folly::symbolizer::LocationInfo.2683632" = type { i8, i8, %"class.folly::symbolizer::Path.2683634", %"class.folly::symbolizer::Path.2683634", i64 }
+%"class.folly::symbolizer::Path.2683634" = type { %"class.folly::Range.2683635", %"class.folly::Range.2683635", %"class.folly::Range.2683635" }
+%"class.folly::Range.2683635" = type { ptr, ptr }
+%"class.std::shared_ptr.2683633" = type { %"class.std::__shared_ptr.2683636" }
+%"class.std::__shared_ptr.2683636" = type { ptr, %"class.std::__shared_count.2683637" }
+%"class.std::__shared_count.2683637" = type { ptr }
 
 ; 181 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -211,7 +211,7 @@ define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = getelementptr nusw nuw i8, ptr %0, i64 808
-  %4 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683664"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw [100 x %"struct.folly::symbolizer::SymbolizedFrame.2683631"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

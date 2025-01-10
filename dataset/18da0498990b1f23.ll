@@ -327,9 +327,8 @@ entry:
   ret ptr %5
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
 ; quantlib/optimized/capfloortermvolcurve.ll
@@ -372,7 +371,6 @@ entry:
 ; quantlib/optimized/svd.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; quantlib/optimized/zabr.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:

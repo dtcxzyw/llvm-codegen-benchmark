@@ -1,11 +1,10 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; git/optimized/cat-file.ll
 ; icu/optimized/number_patternstring.ll
 ; linux/optimized/access.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86RecognizableInstr.cpp.ll

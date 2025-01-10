@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	24                              # 0x18
+	.quad	12                              # 0xc
 .LCPI0_1:
 	.quad	15                              # 0xf
 .LCPI0_2:

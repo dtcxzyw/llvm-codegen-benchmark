@@ -1,8 +1,10 @@
 
-; 67 occurrences:
+; 75 occurrences:
 ; abc/optimized/compress.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; brotli/optimized/compound_dictionary.c.ll
+; clamav/optimized/matcher-bm.c.ll
+; darktable/optimized/IiqDecoder.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libquic/optimized/d1_pkt.c.ll
@@ -45,7 +47,10 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; recastnavigation/optimized/RecastRegion.cpp.ll
 ; slurm/optimized/backfill.ll
+; slurm/optimized/gres_filter.ll
+; slurm/optimized/job_mgr.ll
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/job_test.ll
 ; wireshark/optimized/erf.c.ll
@@ -54,10 +59,13 @@
 ; wireshark/optimized/packet-dcerpc-mapi.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
+; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-netlink.c.ll
 ; wireshark/optimized/packet-pppoe.c.ll
+; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
+; wireshark/optimized/packet-s7comm.c.ll
 ; wireshark/optimized/packet-sapms.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
@@ -78,21 +86,23 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 9 occurrences:
+; 11 occurrences:
 ; hyperscan/optimized/mcclellan.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dp.ll
+; linux/optimized/printk.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
+; qemu/optimized/hw_sd_sdhci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = tail call i32 @llvm.umin.i32(i32 %2, i32 %0)
+  %3 = call i32 @llvm.umin.i32(i32 %0, i32 %2)
   ret i32 %3
 }
 

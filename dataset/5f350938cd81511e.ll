@@ -65,7 +65,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.umin.i32(i32, i32) #1
 
-; 2 occurrences:
+; 3 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; linux/optimized/blk-map.ll
 ; mitsuba3/optimized/assembler.cpp.ll
 ; Function Attrs: nounwind
@@ -76,7 +77,7 @@ entry:
   ret i32 %2
 }
 
-; 85 occurrences:
+; 84 occurrences:
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/inline.ll
@@ -161,7 +162,6 @@ entry:
 ; php/optimized/ir_ra.ll
 ; php/optimized/ir_save.ll
 ; stockfish/optimized/tbprobe.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0) #0 {
 entry:
@@ -180,8 +180,9 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/readpage.ll
 ; openjdk/optimized/parse2.ll

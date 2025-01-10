@@ -8,8 +8,3 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	cmpw	%dx, %si
-	setne	%al
-	orb	%dil, %al
-	retq

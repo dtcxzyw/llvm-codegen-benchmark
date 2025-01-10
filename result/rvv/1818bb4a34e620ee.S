@@ -25,20 +25,20 @@ func0000000000000041:                   # @func0000000000000041
 	vmv.v.x	v8, a0
 	vsll.vv	v8, v12, v10, v0.t
 	ret
-func0000000000000061:                   # @func0000000000000061
-	lui	a0, 16
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vi	v0, v8, 3
-	vmv.v.x	v12, a0
-	vmv.v.i	v8, 0
-	vsll.vv	v8, v12, v10, v0.t
-	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 5
 	vmv.v.x	v8, a0
 	vsll.vv	v8, v8, v10, v0.t
+	ret
+func0000000000000061:                   # @func0000000000000061
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v12, 1
+	lui	a0, 2
+	vmseq.vx	v0, v8, a0
+	vmv.v.i	v8, 0
+	vsll.vv	v8, v12, v10, v0.t
 	ret
 func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, mu

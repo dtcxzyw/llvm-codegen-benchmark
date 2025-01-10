@@ -1,9 +1,3 @@
-func00000000000000f4:                   # @func00000000000000f4
-	andi	a1, a1, 63
-	addi	a1, a1, 1
-	sext.w	a0, a0
-	sltu	a0, a1, a0
-	ret
 func00000000000000f8:                   # @func00000000000000f8
 	slli	a1, a1, 32
 	lui	a2, 1

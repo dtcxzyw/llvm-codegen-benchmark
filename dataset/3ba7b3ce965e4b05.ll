@@ -1,5 +1,5 @@
 
-%"class.irr::core::vector3d.2691815" = type { float, float, float }
+%"class.irr::core::vector3d.2691781" = type { float, float, float }
 
 ; 112 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
@@ -225,7 +225,7 @@ entry:
   ret ptr %5
 }
 
-; 657 occurrences:
+; 661 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -316,6 +316,7 @@ entry:
 ; folly/optimized/GuardPageAllocator.cpp.ll
 ; folly/optimized/IOBufQueue.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/add-patch.ll
 ; git/optimized/apply.ll
 ; git/optimized/http-push.ll
@@ -326,6 +327,7 @@ entry:
 ; git/optimized/remote.ll
 ; git/optimized/submodule.ll
 ; gromacs/optimized/mdoutf.cpp.ll
+; gromacs/optimized/wall.cpp.ll
 ; grpc/optimized/event_log.cc.ll
 ; grpc/optimized/slice.cc.ll
 ; grpc/optimized/xds_routing.cc.ll
@@ -375,6 +377,7 @@ entry:
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; icu/optimized/dictbe.ll
+; icu/optimized/package.ll
 ; libevent/optimized/buffer.c.ll
 ; libquic/optimized/url_util.cc.ll
 ; lief/optimized/bignum.c.ll
@@ -751,6 +754,7 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_null.ll
 ; openssl/optimized/libdefault-lib-sha3_prov.ll
 ; openssl/optimized/libssl-shlib-packet.ll
+; openssl/optimized/modes_internal_test-bin-modes_internal_test.ll
 ; openssl/optimized/tls13secretstest-bin-packet.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; openusd/optimized/clipSet.cpp.ll
@@ -892,7 +896,7 @@ entry:
   ret ptr %5
 }
 
-; 1721 occurrences:
+; 1723 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -2127,6 +2131,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-sha512.ll
@@ -2135,6 +2140,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-sha512.ll
@@ -2637,7 +2643,7 @@ entry:
   ret ptr %5
 }
 
-; 349 occurrences:
+; 344 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absIter.c.ll
 ; abc/optimized/absOut.c.ll
@@ -2889,12 +2895,10 @@ entry:
 ; openjdk/optimized/symbol.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_read_str.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-lib-mem_sec.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-rsa_sign.ll
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sign.ll
@@ -2982,9 +2986,6 @@ entry:
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
@@ -2996,7 +2997,7 @@ entry:
   ret ptr %5
 }
 
-; 148 occurrences:
+; 144 occurrences:
 ; boost/optimized/algorithm.ll
 ; boost/optimized/approximately_equals.ll
 ; boost/optimized/area.ll
@@ -3104,9 +3105,7 @@ entry:
 ; cmake/optimized/lzma2_encoder.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; curl/optimized/libcurl_la-content_encoding.ll
-; freetype/optimized/type1cid.c.ll
 ; git/optimized/read-cache.ll
-; gromacs/optimized/wall.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/Number.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
@@ -3115,7 +3114,6 @@ entry:
 ; hermes/optimized/escape.cpp.ll
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; hyperscan/optimized/behaviour.cpp.ll
-; icu/optimized/package.ll
 ; openblas/optimized/dtrsm_ilnncopy.c.ll
 ; openblas/optimized/dtrsm_ilnucopy.c.ll
 ; openblas/optimized/dtrsm_iltncopy.c.ll
@@ -3136,7 +3134,6 @@ entry:
 ; openjdk/optimized/g1CollectedHeap.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
-; openssl/optimized/modes_internal_test-bin-modes_internal_test.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/string.ll
 ; quantlib/optimized/localvolrndcalculator.ll
@@ -3280,7 +3277,7 @@ define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 8, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw nuw %"class.irr::core::vector3d.2691815", ptr %4, i64 %3
+  %5 = getelementptr nusw nuw %"class.irr::core::vector3d.2691781", ptr %4, i64 %3
   ret ptr %5
 }
 

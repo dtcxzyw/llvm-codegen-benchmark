@@ -1,5 +1,5 @@
 
-; 220 occurrences:
+; 219 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -130,7 +130,6 @@
 ; qemu/optimized/migration_xbzrle.c.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rcore.c.ll
-; slurm/optimized/bitstring.ll
 ; soc-simulator/optimized/verilated.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll

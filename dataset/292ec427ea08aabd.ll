@@ -1,6 +1,6 @@
 
-%"class.base::ManualConstructor.3060113" = type { %"class.base::AlignedMemory.3060114" }
-%"class.base::AlignedMemory.3060114" = type { [16 x i8] }
+%"class.base::ManualConstructor.3060079" = type { %"class.base::AlignedMemory.3060080" }
+%"class.base::AlignedMemory.3060080" = type { [16 x i8] }
 
 ; 38 occurrences:
 ; linux/optimized/cdrom.ll
@@ -286,7 +286,7 @@ entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw nuw i8, ptr %0, i64 8
-  %5 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060113"], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw [10 x %"class.base::ManualConstructor.3060079"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -21,10 +21,3 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$8192, %eax                     # imm = 0x2000
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	cmpq	%rdx, %rsi
-	sete	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	xorq	$3, %rax
-	retq

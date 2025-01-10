@@ -274,9 +274,7 @@ entry:
   ret i1 %4
 }
 
-; 28 occurrences:
-; abc/optimized/mvcContain.c.ll
-; abc/optimized/mvcUtils.c.ll
+; 26 occurrences:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/drm_mode_config.ll
 ; linux/optimized/inotify_user.ll

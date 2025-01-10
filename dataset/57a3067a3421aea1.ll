@@ -1,11 +1,11 @@
 
-%struct.contour_point_t.2730685 = type { float, float, i8, i8 }
-%struct.t_partition_item.3351870 = type { float, i32 }
-%"class.std::vector.5.3434033" = type { %"struct.std::_Vector_base.6.3434034" }
-%"struct.std::_Vector_base.6.3434034" = type { %"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl.3434035" }
-%"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl.3434035" = type { %"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl_data.3434036" }
-%"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl_data.3434036" = type { ptr, ptr, ptr }
-%"class.cv::Range.3764764" = type { i32, i32 }
+%struct.contour_point_t.2730651 = type { float, float, i8, i8 }
+%struct.t_partition_item.3351836 = type { float, i32 }
+%"class.std::vector.5.3433999" = type { %"struct.std::_Vector_base.6.3434000" }
+%"struct.std::_Vector_base.6.3434000" = type { %"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl.3434001" }
+%"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl.3434001" = type { %"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl_data.3434002" }
+%"struct.std::_Vector_base<sentencepiece::unigram::Lattice::Node *, std::allocator<sentencepiece::unigram::Lattice::Node *>>::_Vector_impl_data.3434002" = type { ptr, ptr, ptr }
+%"class.cv::Range.3764714" = type { i32, i32 }
 
 ; 15 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -29,7 +29,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add nsw i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.contour_point_t.2730685, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.contour_point_t.2730651, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -64,7 +64,7 @@ entry:
   %2 = tail call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw nuw %struct.t_partition_item.3351870, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.t_partition_item.3351836, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -76,7 +76,7 @@ define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef range(i32 0, -2147483648) i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"class.std::vector.5.3434033", ptr %0, i64 %3
+  %4 = getelementptr %"class.std::vector.5.3433999", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 24
   ret ptr %5
 }
@@ -89,7 +89,7 @@ entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 0)
   %3 = add nuw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw nuw %"class.cv::Range.3764764", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.cv::Range.3764714", ptr %0, i64 %4
   ret ptr %5
 }
 

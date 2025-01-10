@@ -1,6 +1,6 @@
 
-%"class.hermes::vm::GCHermesValueBase.3082186" = type { %"class.hermes::vm::HermesValue32.3082187" }
-%"class.hermes::vm::HermesValue32.3082187" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3082152" = type { %"class.hermes::vm::HermesValue32.3082153" }
+%"class.hermes::vm::HermesValue32.3082153" = type { i32 }
 
 ; 1 occurrences:
 ; hermes/optimized/JSArray.cpp.ll
@@ -11,7 +11,7 @@ entry:
   %4 = xor i32 %1, -1
   %5 = add i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082186", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3082152", ptr %0, i64 %6
   ret ptr %7
 }
 

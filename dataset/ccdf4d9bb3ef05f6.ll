@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -34,6 +34,7 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/stream.c.ll
 ; raylib/optimized/rtextures.c.ll
+; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

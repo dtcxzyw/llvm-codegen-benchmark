@@ -24,18 +24,6 @@ entry:
   ret i16 %6
 }
 
-; 1 occurrences:
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; Function Attrs: nounwind
-define i16 @func000000000000001f(i16 %0, i16 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i16
-  %4 = shl nuw nsw i16 %3, 3
-  %5 = or disjoint i16 %1, %4
-  %6 = add nuw nsw i16 %5, %0
-  ret i16 %6
-}
-
 ; 3 occurrences:
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll

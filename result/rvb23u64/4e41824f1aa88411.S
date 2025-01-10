@@ -29,7 +29,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a0, a0
-	lui	a2, 32
+	li	a2, 8
 	subw	a2, a2, a1
 	maxu	a0, a0, a2
 	sub	a0, a0, a2

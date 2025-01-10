@@ -12,7 +12,7 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000010:                   # @func0000000000000010
 	addl	%esi, %edi
-	leal	(%rdi,%rdx,2), %eax
+	leal	(%rdi,%rdx,4), %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%esi, %edi

@@ -184,7 +184,7 @@ entry:
   ret i128 %2
 }
 
-; 241 occurrences:
+; 242 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -426,6 +426,7 @@ entry:
 ; rocksdb/optimized/hash.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000004(i128 %0) #0 {
 entry:
@@ -434,9 +435,8 @@ entry:
   ret i128 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libquic/optimized/quic_utils.cc.ll
-; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:

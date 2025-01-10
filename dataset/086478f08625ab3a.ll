@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/epoll.c.ll
-; cpython/optimized/unicodeobject.ll
 ; gromacs/optimized/trxio.cpp.ll
 ; llvm/optimized/AMDGPU.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll

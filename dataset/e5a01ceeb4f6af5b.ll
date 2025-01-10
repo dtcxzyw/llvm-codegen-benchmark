@@ -1,13 +1,10 @@
 
-; 9 occurrences:
+; 6 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/timDump.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; openjdk/optimized/outStream.ll
 ; openjdk/optimized/vframe_hp.ll
-; ozz-animation/optimized/animation.cc.ll
-; ozz-animation/optimized/raw_animation_archive.cc.ll
-; ozz-animation/optimized/raw_track.cc.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
