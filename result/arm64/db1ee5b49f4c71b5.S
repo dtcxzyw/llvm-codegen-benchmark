@@ -4,7 +4,7 @@ func0000000000000000:                   // @func0000000000000000
 	sxtw	x8, w0
 	fmov	d0, x8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
-	fmov	w0, s0
+	addv	b0, v0.8b
+	fmov	x0, d0
 	ret
                                         // -- End function

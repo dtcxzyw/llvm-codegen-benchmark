@@ -2,7 +2,7 @@ func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	fmov	s0, w1
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w0, w8
 	cset	w0, eq
@@ -12,7 +12,7 @@ func000000000000004a:                   // @func000000000000004a
 // %bb.0:                               // %entry
 	fmov	s0, w1
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w0, w8
 	cset	w0, gt
@@ -22,7 +22,7 @@ func0000000000000046:                   // @func0000000000000046
 // %bb.0:                               // %entry
 	fmov	s0, w1
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w0, w8
 	cset	w0, lt
@@ -32,7 +32,7 @@ func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	fmov	s0, w1
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w0, w8
 	cset	w0, eq

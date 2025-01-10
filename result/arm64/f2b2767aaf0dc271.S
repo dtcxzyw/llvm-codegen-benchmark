@@ -3,7 +3,7 @@ func0000000000000005:                   // @func0000000000000005
 	add	w8, w0, #1
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -12,7 +12,7 @@ func0000000000000000:                   // @func0000000000000000
 	add	w8, w0, #1
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -21,7 +21,7 @@ func0000000000000001:                   // @func0000000000000001
 	add	w8, w0, #2
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -30,7 +30,7 @@ func000000000000000d:                   // @func000000000000000d
 	add	w8, w0, #1
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -39,7 +39,7 @@ func0000000000000009:                   // @func0000000000000009
 	add	w8, w0, #1
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -48,7 +48,7 @@ func0000000000000004:                   // @func0000000000000004
 	add	w8, w0, #1
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function

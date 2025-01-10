@@ -31,7 +31,7 @@ func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w8, #31
 	cset	w0, eq
@@ -63,7 +63,7 @@ func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w8, #31
 	cset	w0, eq
@@ -73,7 +73,7 @@ func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
 	fmov	s0, w0
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w8, s0
 	cmp	w8, #3
 	cset	w0, lo

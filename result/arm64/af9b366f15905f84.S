@@ -4,7 +4,7 @@ func0000000000000000:                   // @func0000000000000000
 	csinc	w8, w0, wzr, hi
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function
@@ -15,7 +15,7 @@ func0000000000000001:                   // @func0000000000000001
 	csel	w8, w0, w8, hi
 	fmov	s0, w8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
+	addv	b0, v0.8b
 	fmov	w0, s0
 	ret
                                         // -- End function

@@ -27,8 +27,8 @@ func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	fmov	d0, x1
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
-	fmov	w8, s0
+	addv	b0, v0.8b
+	fmov	x8, d0
 	cmp	x8, #8
 	cset	w8, eq
 	and	w0, w8, w0

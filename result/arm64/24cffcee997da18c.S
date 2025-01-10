@@ -28,8 +28,8 @@ func0000000000000078:                   // @func0000000000000078
 	and	x8, x0, x1
 	fmov	d0, x8
 	cnt	v0.8b, v0.8b
-	uaddlv	h0, v0.8b
-	fmov	w8, s0
+	addv	b0, v0.8b
+	fmov	x8, d0
 	cmp	x8, #16
 	cset	w0, hi
 	ret
