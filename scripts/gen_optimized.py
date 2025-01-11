@@ -30,7 +30,7 @@ def run_llc(input_file):
         if os.path.exists(output_file):
             tmp_output += '.bench_tmp.S'
             copy_if_different = True
-        ret = subprocess.run([llc_exec, '-O3', '--frame-pointer=none'] + variants[variant] + [input_file, '-o', tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL, timeout=10.0)
+        ret = subprocess.run([llc_exec, '-O3', '-asm-verbose=false', '--frame-pointer=none'] + variants[variant] + [input_file, '-o', tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL, timeout=10.0)
         if ret.returncode != 0:
             return (input_file, 'fail')
         subprocess.check_call(['sed', '-i', """/^[ \t]*\(\.globl\|\.size\|\.type\|\.p2align\|\.text\|\.attribute\|\.file\|\.Lfunc_end\|\.section\|\.variant_cc\|\#\)/d""", tmp_output],stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
